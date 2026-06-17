@@ -1,0 +1,1025 @@
+tick_id,day,agent,region_id,initiative_kind,message,tied_to_supply,tied_to_season,tied_to_guild,tied_to_apprentice,tied_to_collapse,player_visible
+0,1,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,False,True
+1,1,Fay,roofward,none,none,False,True,False,False,False,False
+2,1,Nia,archive_quarter,none,none,False,True,True,True,False,False
+3,1,Milo,signal_ridge,none,none,False,True,True,True,False,False
+4,1,Ivo,orchard_fen,none,none,False,True,True,False,False,False
+5,1,Ari,riverbend,none,none,False,True,False,False,False,False
+6,1,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+7,1,Nia,archive_quarter,guild_repair_notice,Index Guild reduced backlog in archive_quarter.,False,True,True,True,False,True
+8,1,Milo,signal_ridge,none,none,False,True,True,True,False,False
+9,1,Ivo,orchard_fen,none,none,False,True,True,False,False,False
+10,1,Ari,riverbend,none,none,False,True,False,False,False,False
+11,1,Fay,roofward,none,none,False,True,False,False,False,False
+12,1,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+13,1,Milo,signal_ridge,none,none,False,True,True,True,False,False
+14,1,Ivo,orchard_fen,none,none,False,True,True,False,False,False
+15,1,Ari,riverbend,none,none,False,True,True,True,False,False
+16,2,Fay,roofward,none,none,False,True,False,False,False,False
+17,2,Nia,archive_quarter,none,none,False,True,False,False,False,False
+18,2,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,True,True,False,True
+19,2,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+20,2,Ari,riverbend,none,none,False,True,False,False,False,False
+21,2,Fay,roofward,none,none,False,True,False,False,False,False
+22,2,Nia,archive_quarter,none,none,False,True,False,False,False,False
+23,2,Milo,signal_ridge,none,none,False,True,True,True,False,False
+24,2,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,True,True,False,True
+25,2,Ari,riverbend,none,none,False,True,False,False,False,False
+26,2,Fay,roofward,none,none,False,True,False,False,False,False
+27,2,Nia,archive_quarter,none,none,False,True,False,False,False,False
+28,2,Milo,signal_ridge,none,none,False,True,False,False,False,False
+29,2,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+30,2,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,False,True
+31,2,Fay,roofward,none,none,False,True,True,True,False,False
+32,3,Nia,archive_quarter,none,none,False,True,False,False,False,False
+33,3,Milo,signal_ridge,none,none,False,True,False,False,False,False
+34,3,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+35,3,Ari,riverbend,none,none,False,True,False,True,False,False
+36,3,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+37,3,Nia,archive_quarter,none,none,False,True,False,False,False,False
+38,3,Milo,signal_ridge,none,none,False,True,False,False,False,False
+39,3,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+40,3,Ari,riverbend,none,none,False,True,False,True,False,False
+41,3,Fay,roofward,none,none,False,True,False,False,False,False
+42,3,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+43,3,Milo,signal_ridge,none,none,False,True,False,False,False,False
+44,3,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+45,3,Ari,riverbend,none,none,False,True,False,True,False,False
+46,3,Fay,roofward,none,none,False,True,False,False,False,False
+47,3,Nia,archive_quarter,none,none,False,True,False,False,False,False
+48,4,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+49,4,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+50,4,Ari,riverbend,none,none,False,True,False,False,False,False
+51,4,Fay,roofward,none,none,False,True,False,True,False,False
+52,4,Nia,archive_quarter,none,none,False,True,False,False,False,False
+53,4,Milo,signal_ridge,none,none,False,True,False,False,False,False
+54,4,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,False,False,False,True
+55,4,Ari,riverbend,none,none,False,True,False,False,False,False
+56,4,Fay,roofward,none,none,False,True,False,True,False,False
+57,4,Nia,archive_quarter,none,none,False,True,False,False,False,False
+58,4,Milo,signal_ridge,none,none,False,True,False,False,False,False
+59,4,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+60,4,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,False,True
+61,4,Fay,roofward,none,none,False,True,False,True,False,False
+62,4,Nia,archive_quarter,none,none,False,True,False,False,False,False
+63,4,Milo,signal_ridge,none,none,False,True,False,False,False,False
+64,5,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+65,5,Ari,riverbend,none,none,False,True,False,False,False,False
+66,5,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+67,5,Nia,archive_quarter,none,none,False,True,False,True,False,False
+68,5,Milo,signal_ridge,none,none,False,True,False,False,False,False
+69,5,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+70,5,Ari,riverbend,none,none,False,True,False,False,False,False
+71,5,Fay,roofward,none,none,False,True,False,False,False,False
+72,5,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,True,False,True
+73,5,Milo,signal_ridge,none,none,False,True,False,False,False,False
+74,5,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+75,5,Ari,riverbend,none,none,False,True,False,False,False,False
+76,5,Fay,roofward,none,none,False,True,False,False,False,False
+77,5,Nia,archive_quarter,none,none,False,True,False,True,False,False
+78,5,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+79,5,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+80,6,Fay,roofward,none,none,False,True,False,False,False,False
+81,6,Nia,archive_quarter,none,none,False,True,False,False,False,False
+82,6,Milo,signal_ridge,none,none,False,True,False,False,False,False
+83,6,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+84,6,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,False,True
+85,6,Fay,roofward,none,none,False,True,False,False,False,False
+86,6,Nia,archive_quarter,none,none,False,True,False,False,False,False
+87,6,Milo,signal_ridge,none,none,False,True,False,False,False,False
+88,6,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+89,6,Ari,riverbend,none,none,False,True,False,False,False,False
+90,6,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+91,6,Nia,archive_quarter,none,none,False,True,False,False,False,False
+92,6,Milo,signal_ridge,none,none,False,True,False,False,False,False
+93,6,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+94,6,Ari,riverbend,none,none,False,True,False,False,False,False
+95,6,Fay,roofward,none,none,False,True,False,False,False,False
+96,7,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+97,7,Milo,signal_ridge,none,none,False,True,False,False,False,False
+98,7,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+99,7,Ari,riverbend,none,none,False,True,False,True,False,False
+100,7,Fay,roofward,none,none,False,True,False,False,False,False
+101,7,Nia,archive_quarter,none,none,False,True,False,False,False,False
+102,7,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+103,7,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+104,7,Ari,riverbend,none,none,False,True,False,True,False,False
+105,7,Fay,roofward,none,none,False,True,False,False,False,False
+106,7,Nia,archive_quarter,none,none,False,True,False,False,False,False
+107,7,Milo,signal_ridge,none,none,False,True,False,False,False,False
+108,7,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,False,False,False,True
+109,7,Ari,riverbend,none,none,False,True,False,True,False,False
+110,7,Fay,roofward,none,none,False,True,False,False,False,False
+111,7,Nia,archive_quarter,none,none,False,True,False,False,False,False
+112,8,Milo,signal_ridge,none,none,False,True,False,False,False,False
+113,8,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+114,8,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,False,True
+115,8,Fay,roofward,none,none,False,True,False,True,False,False
+116,8,Nia,archive_quarter,none,none,False,True,False,False,False,False
+117,8,Milo,signal_ridge,none,none,False,True,False,False,False,False
+118,8,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+119,8,Ari,riverbend,none,none,False,True,False,False,False,False
+120,8,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,True,False,True
+121,8,Nia,archive_quarter,none,none,False,True,False,False,False,False
+122,8,Milo,signal_ridge,none,none,False,True,False,False,False,False
+123,8,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+124,8,Ari,riverbend,none,none,False,True,False,False,False,False
+125,8,Fay,roofward,none,none,False,True,False,True,False,False
+126,8,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+127,8,Milo,signal_ridge,none,none,False,True,False,False,False,False
+128,9,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+129,9,Ari,riverbend,none,none,False,True,False,False,False,False
+130,9,Fay,roofward,none,none,False,True,False,False,False,False
+131,9,Nia,archive_quarter,none,none,False,True,False,True,False,False
+132,9,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+133,9,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+134,9,Ari,riverbend,none,none,False,True,False,False,False,False
+135,9,Fay,roofward,none,none,False,True,False,False,False,False
+136,9,Nia,archive_quarter,none,none,False,True,False,True,False,False
+137,9,Milo,signal_ridge,none,none,False,True,False,False,False,False
+138,9,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,False,False,False,True
+139,9,Ari,riverbend,none,none,False,True,False,False,False,False
+140,9,Fay,roofward,none,none,False,True,False,False,False,False
+141,9,Nia,archive_quarter,none,none,False,True,False,True,False,False
+142,9,Milo,signal_ridge,none,none,False,True,False,False,False,False
+143,9,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+144,10,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,False,True
+145,10,Fay,roofward,none,none,False,True,False,False,False,False
+146,10,Nia,archive_quarter,none,none,False,True,False,False,False,False
+147,10,Milo,signal_ridge,none,none,False,True,False,True,False,False
+148,10,Ivo,orchard_fen,collapse_recovery_call,Ivo: seed pier needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+149,10,Ari,riverbend,none,none,False,True,False,False,False,False
+150,10,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+151,10,Nia,archive_quarter,none,none,False,True,False,False,False,False
+152,10,Milo,signal_ridge,none,none,False,True,False,True,False,False
+153,10,Ivo,orchard_fen,collapse_recovery_call,Ivo: seed pier needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+154,10,Ari,riverbend,none,none,False,True,False,False,False,False
+155,10,Fay,roofward,none,none,False,True,False,False,False,False
+156,10,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+157,10,Milo,signal_ridge,none,none,False,True,False,True,False,False
+158,10,Ivo,orchard_fen,collapse_recovery_call,Ivo: seed pier needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+159,10,Ari,riverbend,none,none,False,True,False,False,False,False
+160,11,Fay,roofward,none,none,False,True,False,False,False,False
+161,11,Nia,archive_quarter,none,none,False,True,False,False,False,False
+162,11,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+163,11,Ivo,orchard_fen,none,none,False,True,False,True,True,False
+164,11,Ari,riverbend,collapse_recovery_call,Ari: river mill needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+165,11,Fay,roofward,none,none,False,True,False,False,False,False
+166,11,Nia,archive_quarter,supply_route_warning,Nia: archive_quarter->orchard_fen is blocked for planks.,True,True,False,False,False,True
+167,11,Milo,signal_ridge,none,none,False,True,False,False,False,False
+168,11,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,False,True,True,True
+169,11,Ari,riverbend,collapse_recovery_call,Ari: river mill needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+170,11,Fay,roofward,none,none,False,True,False,False,False,False
+171,11,Nia,archive_quarter,none,none,False,True,False,False,False,False
+172,11,Milo,signal_ridge,none,none,False,True,False,False,False,False
+173,11,Ivo,orchard_fen,none,none,False,True,False,True,True,False
+174,11,Ari,riverbend,collapse_recovery_call,Ari: river mill needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+175,11,Fay,roofward,none,none,False,True,False,False,False,False
+176,12,Milo,signal_ridge,none,none,False,True,False,False,False,False
+177,12,Ivo,orchard_fen,none,none,False,True,True,False,True,False
+178,12,Ari,riverbend,none,none,False,True,False,False,True,False
+179,12,Fay,roofward,none,none,False,True,False,True,False,False
+180,12,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+181,12,Milo,signal_ridge,none,none,False,True,False,False,False,False
+182,12,Ivo,orchard_fen,none,none,False,True,True,False,True,False
+183,12,Ari,riverbend,none,none,False,True,False,False,True,False
+184,12,Fay,roofward,none,none,False,True,False,True,False,False
+185,12,Nia,archive_quarter,none,none,False,True,False,False,False,False
+186,12,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+187,12,Ivo,orchard_fen,none,none,False,True,True,False,True,False
+188,12,Ari,riverbend,none,none,False,True,False,False,True,False
+189,12,Fay,roofward,none,none,False,True,False,True,False,False
+190,12,Nia,archive_quarter,none,none,False,True,False,False,False,False
+191,12,Milo,signal_ridge,none,none,False,True,False,False,False,False
+192,13,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,True,False,True,True
+193,13,Ari,riverbend,none,none,False,True,False,False,True,False
+194,13,Fay,roofward,none,none,False,True,False,False,False,False
+195,13,Nia,archive_quarter,none,none,False,True,False,True,False,False
+196,13,Milo,signal_ridge,collapse_recovery_call,Milo: signal tower needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+197,13,Ivo,orchard_fen,none,none,False,True,True,False,True,False
+198,13,Ari,riverbend,supply_route_warning,Ari: riverbend->archive_quarter is blocked for thread.,True,True,False,False,True,True
+199,13,Fay,roofward,none,none,False,True,False,False,False,False
+200,13,Nia,archive_quarter,none,none,False,True,False,True,False,False
+201,13,Milo,signal_ridge,collapse_recovery_call,Milo: signal tower needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+202,13,Ivo,orchard_fen,none,none,False,True,True,False,True,False
+203,13,Ari,riverbend,none,none,False,True,False,False,True,False
+204,13,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+205,13,Nia,archive_quarter,none,none,False,True,False,True,False,False
+206,13,Milo,signal_ridge,collapse_recovery_call,Milo: signal tower needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+207,13,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+208,14,Ari,riverbend,none,none,False,True,False,False,True,False
+209,14,Fay,roofward,none,none,False,True,False,False,False,False
+210,14,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+211,14,Milo,signal_ridge,none,none,False,True,False,True,True,False
+212,14,Ivo,orchard_fen,none,none,False,True,True,False,False,False
+213,14,Ari,riverbend,none,none,False,True,False,False,True,False
+214,14,Fay,roofward,none,none,False,True,False,False,False,False
+215,14,Nia,archive_quarter,none,none,False,True,False,False,False,False
+216,14,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,True,True,True
+217,14,Ivo,orchard_fen,none,none,False,True,True,False,False,False
+218,14,Ari,riverbend,none,none,False,True,False,False,True,False
+219,14,Fay,roofward,none,none,False,True,False,False,False,False
+220,14,Nia,archive_quarter,none,none,False,True,False,False,False,False
+221,14,Milo,signal_ridge,none,none,False,True,False,True,True,False
+222,14,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,True,False,False,True
+223,14,Ari,riverbend,none,none,False,True,False,False,True,False
+224,15,Fay,roofward,none,none,False,True,False,False,False,False
+225,15,Nia,archive_quarter,none,none,False,True,False,False,False,False
+226,15,Milo,signal_ridge,none,none,False,True,True,True,False,False
+227,15,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+228,15,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under spring_rain.,False,True,False,False,True,True
+229,15,Fay,roofward,none,none,False,True,False,False,False,False
+230,15,Nia,archive_quarter,none,none,False,True,False,False,False,False
+231,15,Milo,signal_ridge,guild_repair_notice,Signal Guild reduced backlog in signal_ridge.,False,True,True,True,False,True
+232,15,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+233,15,Ari,riverbend,none,none,False,True,False,False,True,False
+234,15,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under spring_rain.,False,True,False,False,False,True
+235,15,Nia,archive_quarter,none,none,False,True,False,False,False,False
+236,15,Milo,signal_ridge,none,none,False,True,False,False,False,False
+237,15,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+238,15,Ari,riverbend,none,none,False,True,False,False,True,False
+239,15,Fay,roofward,none,none,False,True,False,False,False,False
+240,16,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under spring_rain.,False,True,False,False,False,True
+241,16,Milo,signal_ridge,none,none,False,True,False,False,False,False
+242,16,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+243,16,Ari,riverbend,none,none,False,True,False,True,True,False
+244,16,Fay,roofward,none,none,False,True,False,False,False,False
+245,16,Nia,archive_quarter,none,none,False,True,False,False,False,False
+246,16,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under spring_rain.,False,True,False,False,False,True
+247,16,Ivo,orchard_fen,none,none,False,True,True,True,False,False
+248,16,Ari,riverbend,none,none,False,True,False,True,True,False
+249,16,Fay,roofward,none,none,False,True,False,False,False,False
+250,16,Nia,archive_quarter,none,none,False,True,False,False,False,False
+251,16,Milo,signal_ridge,none,none,False,True,False,False,False,False
+252,16,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under spring_rain.,False,True,True,True,False,True
+253,16,Ari,riverbend,none,none,False,True,False,True,True,False
+254,16,Fay,roofward,none,none,False,True,False,False,False,False
+255,16,Nia,archive_quarter,none,none,False,True,False,False,False,False
+256,17,Milo,signal_ridge,none,none,False,True,False,False,False,False
+257,17,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+258,17,Ari,riverbend,none,none,False,True,False,False,True,False
+259,17,Fay,roofward,none,none,False,True,False,True,False,False
+260,17,Nia,archive_quarter,none,none,False,True,False,False,False,False
+261,17,Milo,signal_ridge,none,none,False,True,False,False,False,False
+262,17,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+263,17,Ari,riverbend,none,none,False,True,False,False,True,False
+264,17,Fay,roofward,none,none,False,True,False,True,False,False
+265,17,Nia,archive_quarter,none,none,False,True,False,False,False,False
+266,17,Milo,signal_ridge,none,none,False,True,False,False,False,False
+267,17,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+268,17,Ari,riverbend,none,none,False,True,False,False,True,False
+269,17,Fay,roofward,none,none,False,True,False,True,False,False
+270,17,Nia,archive_quarter,none,none,False,True,False,False,False,False
+271,17,Milo,signal_ridge,none,none,False,True,False,False,False,False
+272,18,Ari,riverbend,none,none,False,True,False,False,True,False
+273,18,Fay,roofward,none,none,False,True,False,False,False,False
+274,18,Nia,archive_quarter,none,none,False,True,False,False,False,False
+275,18,Milo,signal_ridge,none,none,False,True,False,True,False,False
+276,18,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+277,18,Ari,riverbend,none,none,False,True,False,False,True,False
+278,18,Fay,roofward,none,none,False,True,False,False,False,False
+279,18,Nia,archive_quarter,none,none,False,True,False,False,False,False
+280,18,Milo,signal_ridge,none,none,False,True,False,True,False,False
+281,18,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+282,18,Ari,riverbend,migration_care_notice,seeds moved toward archive_quarter under summer_dry.,False,True,False,False,True,True
+283,18,Fay,roofward,none,none,False,True,False,False,False,False
+284,18,Nia,archive_quarter,none,none,False,True,False,False,False,False
+285,18,Milo,signal_ridge,none,none,False,True,False,True,False,False
+286,18,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+287,18,Ari,riverbend,none,none,False,True,False,False,True,False
+288,19,Fay,roofward,migration_care_notice,seeds moved toward signal_ridge under summer_dry.,False,True,False,False,False,True
+289,19,Nia,archive_quarter,none,none,False,True,False,False,False,False
+290,19,Milo,signal_ridge,none,none,False,True,False,False,False,False
+291,19,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+292,19,Ari,riverbend,none,none,False,True,False,False,True,False
+293,19,Fay,roofward,none,none,False,True,False,False,False,False
+294,19,Nia,archive_quarter,none,none,False,True,False,False,False,False
+295,19,Milo,signal_ridge,none,none,False,True,False,False,False,False
+296,19,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+297,19,Ari,riverbend,none,none,False,True,False,False,True,False
+298,19,Fay,roofward,none,none,False,True,False,False,False,False
+299,19,Nia,archive_quarter,building_upgrade_notice,public kiosk upgraded to tier 2.,False,True,False,False,False,True
+300,19,Milo,signal_ridge,none,none,False,True,False,False,False,False
+301,19,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+302,19,Ari,riverbend,none,none,False,True,False,False,True,False
+303,19,Fay,roofward,none,none,False,True,False,False,False,False
+304,20,Nia,archive_quarter,none,none,False,True,False,False,False,False
+305,20,Milo,signal_ridge,none,none,False,True,False,False,False,False
+306,20,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+307,20,Ari,riverbend,none,none,False,True,False,True,True,False
+308,20,Fay,roofward,none,none,False,True,False,False,False,False
+309,20,Nia,archive_quarter,none,none,False,True,False,False,False,False
+310,20,Milo,signal_ridge,building_upgrade_notice,signal tower upgraded to tier 2.,False,True,False,False,False,True
+311,20,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+312,20,Ari,riverbend,none,none,False,True,False,True,True,False
+313,20,Fay,roofward,none,none,False,True,False,False,False,False
+314,20,Nia,archive_quarter,none,none,False,True,False,False,False,False
+315,20,Milo,signal_ridge,none,none,False,True,False,False,False,False
+316,20,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+317,20,Ari,riverbend,none,none,False,True,False,True,True,False
+318,20,Fay,roofward,none,none,False,True,False,False,False,False
+319,20,Nia,archive_quarter,none,none,False,True,False,False,False,False
+320,21,Milo,signal_ridge,none,none,False,True,False,False,False,False
+321,21,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+322,21,Ari,riverbend,none,none,False,True,False,False,True,False
+323,21,Fay,roofward,none,none,False,True,False,True,False,False
+324,21,Nia,archive_quarter,none,none,False,True,False,False,False,False
+325,21,Milo,signal_ridge,none,none,False,True,False,False,False,False
+326,21,Ivo,orchard_fen,supply_route_warning,Ivo: orchard_fen->roofward is blocked for water.,True,True,False,False,False,True
+327,21,Ari,riverbend,none,none,False,True,False,False,True,False
+328,21,Fay,roofward,none,none,False,True,False,True,False,False
+329,21,Nia,archive_quarter,none,none,False,True,False,False,False,False
+330,21,Milo,signal_ridge,migration_care_notice,seeds moved toward riverbend under summer_dry.,False,True,False,False,False,True
+331,21,Ivo,orchard_fen,building_upgrade_notice,seed pier upgraded to tier 3.,False,True,False,False,False,True
+332,21,Ari,riverbend,none,none,False,True,False,False,True,False
+333,21,Fay,roofward,none,none,False,True,False,True,False,False
+334,21,Nia,archive_quarter,none,none,False,True,False,False,False,False
+335,21,Milo,signal_ridge,none,none,False,True,False,False,False,False
+336,22,Ivo,orchard_fen,migration_care_notice,seeds moved toward roofward under summer_dry.,False,True,False,False,False,True
+337,22,Ari,riverbend,none,none,False,True,False,False,True,False
+338,22,Fay,roofward,none,none,False,True,False,False,False,False
+339,22,Nia,archive_quarter,none,none,False,True,False,True,False,False
+340,22,Milo,signal_ridge,none,none,False,True,False,False,False,False
+341,22,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+342,22,Ari,riverbend,none,none,False,True,False,False,True,False
+343,22,Fay,roofward,none,none,False,True,False,False,False,False
+344,22,Nia,archive_quarter,none,none,False,True,False,True,False,False
+345,22,Milo,signal_ridge,none,none,False,True,False,False,False,False
+346,22,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+347,22,Ari,riverbend,none,none,False,True,False,False,True,False
+348,22,Fay,roofward,none,none,False,True,False,False,False,False
+349,22,Nia,archive_quarter,none,none,False,True,False,True,False,False
+350,22,Milo,signal_ridge,supply_route_warning,Milo: signal_ridge->orchard_fen is blocked for oil.,True,True,False,False,False,True
+351,22,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+352,23,Ari,riverbend,none,none,False,True,False,False,True,False
+353,23,Fay,roofward,none,none,False,True,False,False,False,False
+354,23,Nia,archive_quarter,none,none,False,True,False,False,False,False
+355,23,Milo,signal_ridge,none,none,False,True,False,True,False,False
+356,23,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+357,23,Ari,riverbend,none,none,False,True,False,False,True,False
+358,23,Fay,roofward,building_upgrade_notice,roof cistern upgraded to tier 2.,False,True,False,False,False,True
+359,23,Nia,archive_quarter,none,none,False,True,False,False,False,False
+360,23,Milo,signal_ridge,none,none,False,True,False,True,False,False
+361,23,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+362,23,Ari,riverbend,none,none,False,True,False,False,True,False
+363,23,Fay,roofward,building_upgrade_notice,roof cistern upgraded to tier 3.,False,True,False,False,False,True
+364,23,Nia,archive_quarter,none,none,False,True,False,False,False,False
+365,23,Milo,signal_ridge,none,none,False,True,False,True,False,False
+366,23,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+367,23,Ari,riverbend,none,none,False,True,True,True,False,False
+368,24,Nia,archive_quarter,none,none,False,True,False,False,False,False
+369,24,Milo,signal_ridge,none,none,False,True,False,False,False,False
+370,24,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+371,24,Ari,riverbend,none,none,False,True,False,True,False,False
+372,24,Fay,roofward,none,none,False,True,False,False,False,False
+373,24,Nia,archive_quarter,none,none,False,True,False,False,False,False
+374,24,Milo,signal_ridge,building_upgrade_notice,signal tower upgraded to tier 3.,False,True,False,False,False,True
+375,24,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+376,24,Ari,riverbend,none,none,False,True,False,True,False,False
+377,24,Fay,roofward,none,none,False,True,False,False,False,False
+378,24,Nia,archive_quarter,migration_care_notice,seeds moved toward orchard_fen under summer_dry.,False,True,False,False,False,True
+379,24,Milo,signal_ridge,none,none,False,True,False,False,False,False
+380,24,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+381,24,Ari,riverbend,none,none,False,True,False,True,False,False
+382,24,Fay,roofward,supply_route_warning,Fay: roofward->archive_quarter is blocked for herbs.,True,True,False,False,False,True
+383,24,Nia,archive_quarter,none,none,False,True,False,False,False,False
+384,25,Milo,signal_ridge,migration_care_notice,seeds moved toward riverbend under summer_dry.,False,True,False,False,False,True
+385,25,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+386,25,Ari,riverbend,none,none,False,True,False,False,False,False
+387,25,Fay,roofward,none,none,False,True,False,True,False,False
+388,25,Nia,archive_quarter,none,none,False,True,False,False,False,False
+389,25,Milo,signal_ridge,none,none,False,True,False,False,False,False
+390,25,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+391,25,Ari,riverbend,none,none,False,True,False,False,False,False
+392,25,Fay,roofward,none,none,False,True,False,True,False,False
+393,25,Nia,archive_quarter,none,none,False,True,False,False,False,False
+394,25,Milo,signal_ridge,none,none,False,True,False,False,False,False
+395,25,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+396,25,Ari,riverbend,none,none,False,True,False,False,False,False
+397,25,Fay,roofward,apprentice_succession_notice,Lio can now carry part of Glassgarden Guild work.,False,True,False,True,False,True
+398,25,Nia,archive_quarter,none,none,False,True,False,False,False,False
+399,25,Milo,signal_ridge,none,none,False,True,False,False,False,False
+400,26,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+401,26,Ari,riverbend,none,none,False,True,False,False,False,False
+402,26,Fay,roofward,none,none,False,True,False,False,False,False
+403,26,Nia,archive_quarter,none,none,False,True,False,True,False,False
+404,26,Milo,signal_ridge,none,none,False,True,False,False,False,False
+405,26,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+406,26,Ari,riverbend,none,none,False,True,False,False,False,False
+407,26,Fay,roofward,none,none,False,True,False,False,False,False
+408,26,Nia,archive_quarter,none,none,False,True,False,True,False,False
+409,26,Milo,signal_ridge,none,none,False,True,False,False,False,False
+410,26,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+411,26,Ari,riverbend,building_upgrade_notice,river mill upgraded to tier 2.,False,True,False,False,False,True
+412,26,Fay,roofward,none,none,False,True,False,False,False,False
+413,26,Nia,archive_quarter,none,none,False,True,False,True,False,False
+414,26,Milo,signal_ridge,none,none,False,True,False,False,False,False
+415,26,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+416,27,Ari,riverbend,none,none,False,True,False,False,False,False
+417,27,Fay,roofward,none,none,False,True,False,False,False,False
+418,27,Nia,archive_quarter,none,none,False,True,False,False,False,False
+419,27,Milo,signal_ridge,none,none,False,True,False,True,False,False
+420,27,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+421,27,Ari,riverbend,none,none,False,True,False,False,False,False
+422,27,Fay,roofward,none,none,False,True,False,False,False,False
+423,27,Nia,archive_quarter,none,none,False,True,False,False,False,False
+424,27,Milo,signal_ridge,none,none,False,True,False,True,False,False
+425,27,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+426,27,Ari,riverbend,migration_care_notice,seeds moved toward archive_quarter under summer_dry.,False,True,False,False,False,True
+427,27,Fay,roofward,none,none,False,True,False,False,False,False
+428,27,Nia,archive_quarter,none,none,False,True,False,False,False,False
+429,27,Milo,signal_ridge,none,none,False,True,False,True,False,False
+430,27,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+431,27,Ari,riverbend,none,none,False,True,False,False,False,False
+432,28,Fay,roofward,migration_care_notice,seeds moved toward signal_ridge under summer_dry.,False,True,False,False,False,True
+433,28,Nia,archive_quarter,apprentice_succession_notice,Sera can now carry part of Index Guild work.,False,True,False,True,False,True
+434,28,Milo,signal_ridge,none,none,False,True,False,False,False,False
+435,28,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+436,28,Ari,riverbend,none,none,False,True,False,False,False,False
+437,28,Fay,roofward,none,none,False,True,False,False,False,False
+438,28,Nia,archive_quarter,building_upgrade_notice,public kiosk upgraded to tier 3.,False,True,False,False,False,True
+439,28,Milo,signal_ridge,none,none,False,True,False,False,False,False
+440,28,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+441,28,Ari,riverbend,none,none,False,True,False,False,False,False
+442,28,Fay,roofward,none,none,False,True,False,False,False,False
+443,28,Nia,archive_quarter,none,none,False,True,False,False,False,False
+444,28,Milo,signal_ridge,none,none,False,True,False,False,False,False
+445,28,Ivo,orchard_fen,none,none,False,True,False,True,False,False
+446,28,Ari,riverbend,none,none,False,True,False,False,False,False
+447,28,Fay,roofward,none,none,False,True,False,False,False,False
+448,29,Nia,archive_quarter,none,none,False,True,False,False,False,False
+449,29,Milo,signal_ridge,none,none,False,True,False,False,False,False
+450,29,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+451,29,Ari,riverbend,none,none,False,True,False,True,False,False
+452,29,Fay,roofward,collapse_recovery_call,Fay: roof cistern needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+453,29,Nia,archive_quarter,none,none,False,True,False,False,False,False
+454,29,Milo,signal_ridge,none,none,False,True,False,False,False,False
+455,29,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+456,29,Ari,riverbend,apprentice_succession_notice,Toma can now carry part of Bridgewright Guild work.,False,True,False,True,False,True
+457,29,Fay,roofward,collapse_recovery_call,Fay: roof cistern needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+458,29,Nia,archive_quarter,none,none,False,True,False,False,False,False
+459,29,Milo,signal_ridge,none,none,False,True,False,False,False,False
+460,29,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+461,29,Ari,riverbend,none,none,False,True,False,True,False,False
+462,29,Fay,roofward,collapse_recovery_call,Fay: roof cistern needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+463,29,Nia,archive_quarter,none,none,False,True,False,False,False,False
+464,30,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+465,30,Ari,riverbend,none,none,False,True,False,False,False,False
+466,30,Fay,roofward,none,none,False,True,False,False,True,False
+467,30,Nia,archive_quarter,none,none,False,True,False,True,False,False
+468,30,Milo,signal_ridge,none,none,False,True,False,False,False,False
+469,30,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+470,30,Ari,riverbend,building_upgrade_notice,river mill upgraded to tier 3.,False,True,False,False,False,True
+471,30,Fay,roofward,none,none,False,True,False,False,True,False
+472,30,Nia,archive_quarter,none,none,False,True,False,True,False,False
+473,30,Milo,signal_ridge,none,none,False,True,False,False,False,False
+474,30,Ivo,orchard_fen,migration_care_notice,seeds moved toward roofward under summer_dry.,False,True,False,False,False,True
+475,30,Ari,riverbend,none,none,False,True,False,False,False,False
+476,30,Fay,roofward,none,none,False,True,False,False,True,False
+477,30,Nia,archive_quarter,none,none,False,True,False,True,False,False
+478,30,Milo,signal_ridge,none,none,False,True,False,False,False,False
+479,30,Ivo,orchard_fen,none,none,False,True,False,False,False,False
+480,31,Ari,riverbend,migration_care_notice,seeds moved toward archive_quarter under summer_dry.,False,True,False,False,False,True
+481,31,Fay,roofward,none,none,False,True,False,False,True,False
+482,31,Nia,archive_quarter,none,none,False,True,False,False,False,False
+483,31,Milo,signal_ridge,apprentice_succession_notice,Ren can now carry part of Signal Guild work.,False,True,False,True,False,True
+484,31,Ivo,orchard_fen,collapse_recovery_call,Ivo: seed pier needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+485,31,Ari,riverbend,none,none,False,True,False,False,False,False
+486,31,Fay,roofward,none,none,False,True,False,False,True,False
+487,31,Nia,archive_quarter,none,none,False,True,False,False,False,False
+488,31,Milo,signal_ridge,none,none,False,True,False,True,False,False
+489,31,Ivo,orchard_fen,collapse_recovery_call,Ivo: seed pier needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+490,31,Ari,riverbend,none,none,False,True,False,False,False,False
+491,31,Fay,roofward,none,none,False,True,False,False,True,False
+492,31,Nia,archive_quarter,none,none,False,True,False,False,False,False
+493,31,Milo,signal_ridge,none,none,False,True,False,True,False,False
+494,31,Ivo,orchard_fen,collapse_recovery_call,Ivo: seed pier needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+495,31,Ari,riverbend,none,none,False,True,False,False,False,False
+496,32,Fay,roofward,none,none,False,True,False,False,True,False
+497,32,Nia,archive_quarter,none,none,False,True,False,False,False,False
+498,32,Milo,signal_ridge,none,none,False,True,False,False,False,False
+499,32,Ivo,orchard_fen,none,none,False,True,False,True,True,False
+500,32,Ari,riverbend,collapse_recovery_call,Ari: river mill needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+501,32,Fay,roofward,none,none,False,True,False,False,True,False
+502,32,Nia,archive_quarter,none,none,False,True,False,False,False,False
+503,32,Milo,signal_ridge,none,none,False,True,False,False,False,False
+504,32,Ivo,orchard_fen,none,none,False,True,False,True,True,False
+505,32,Ari,riverbend,collapse_recovery_call,Ari: river mill needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+506,32,Fay,roofward,none,none,False,True,False,False,True,False
+507,32,Nia,archive_quarter,none,none,False,True,False,False,False,False
+508,32,Milo,signal_ridge,none,none,False,True,False,False,False,False
+509,32,Ivo,orchard_fen,none,none,False,True,False,True,True,False
+510,32,Ari,riverbend,collapse_recovery_call,Ari: river mill needs guild recovery after seasonal storm pressure.,False,True,False,False,True,True
+511,32,Fay,roofward,none,none,False,True,False,False,True,False
+512,33,Nia,archive_quarter,none,none,True,True,False,False,False,False
+513,33,Milo,signal_ridge,none,none,True,True,False,False,False,False
+514,33,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+515,33,Ari,riverbend,none,none,True,True,False,True,True,False
+516,33,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,False,True,True
+517,33,Nia,archive_quarter,none,none,True,True,False,False,False,False
+518,33,Milo,signal_ridge,none,none,True,True,False,False,False,False
+519,33,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+520,33,Ari,riverbend,none,none,True,True,False,True,True,False
+521,33,Fay,roofward,none,none,True,True,False,False,True,False
+522,33,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+523,33,Milo,signal_ridge,none,none,True,True,False,False,False,False
+524,33,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+525,33,Ari,riverbend,none,none,True,True,False,True,True,False
+526,33,Fay,roofward,none,none,True,True,False,False,True,False
+527,33,Nia,archive_quarter,none,none,True,True,False,False,False,False
+528,34,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+529,34,Ivo,orchard_fen,apprentice_succession_notice,Mara can now carry part of Seed Guild work.,True,True,False,True,True,True
+530,34,Ari,riverbend,none,none,True,True,False,False,True,False
+531,34,Fay,roofward,none,none,True,True,False,True,True,False
+532,34,Nia,archive_quarter,none,none,True,True,False,False,False,False
+533,34,Milo,signal_ridge,none,none,True,True,False,False,False,False
+534,34,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,True,True
+535,34,Ari,riverbend,none,none,True,True,False,False,True,False
+536,34,Fay,roofward,none,none,True,True,False,True,True,False
+537,34,Nia,archive_quarter,none,none,True,True,False,False,False,False
+538,34,Milo,signal_ridge,none,none,True,True,False,False,False,False
+539,34,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+540,34,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,True,True
+541,34,Fay,roofward,none,none,True,True,False,True,True,False
+542,34,Nia,archive_quarter,none,none,True,True,False,False,False,False
+543,34,Milo,signal_ridge,none,none,True,True,False,False,False,False
+544,35,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+545,35,Ari,riverbend,none,none,True,True,False,False,True,False
+546,35,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,False,True,True
+547,35,Nia,archive_quarter,none,none,True,True,False,True,False,False
+548,35,Milo,signal_ridge,none,none,True,True,False,False,False,False
+549,35,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+550,35,Ari,riverbend,none,none,True,True,False,False,True,False
+551,35,Fay,roofward,none,none,True,True,False,False,True,False
+552,35,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,True,False,True
+553,35,Milo,signal_ridge,none,none,True,True,False,False,False,False
+554,35,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+555,35,Ari,riverbend,none,none,True,True,False,False,True,False
+556,35,Fay,roofward,none,none,True,True,False,False,True,False
+557,35,Nia,archive_quarter,none,none,True,True,False,True,False,False
+558,35,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+559,35,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+560,36,Fay,roofward,none,none,True,True,False,False,True,False
+561,36,Nia,archive_quarter,none,none,True,True,False,False,False,False
+562,36,Milo,signal_ridge,none,none,True,True,False,False,False,False
+563,36,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+564,36,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,True,True
+565,36,Fay,roofward,none,none,True,True,False,False,True,False
+566,36,Nia,archive_quarter,none,none,True,True,False,False,False,False
+567,36,Milo,signal_ridge,none,none,True,True,False,False,False,False
+568,36,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+569,36,Ari,riverbend,none,none,True,True,False,False,True,False
+570,36,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,False,True,True
+571,36,Nia,archive_quarter,none,none,True,True,False,False,False,False
+572,36,Milo,signal_ridge,none,none,True,True,False,False,False,False
+573,36,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+574,36,Ari,riverbend,none,none,True,True,False,False,True,False
+575,36,Fay,roofward,none,none,True,True,False,False,True,False
+576,37,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+577,37,Milo,signal_ridge,none,none,True,True,False,False,False,False
+578,37,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+579,37,Ari,riverbend,none,none,True,True,False,True,True,False
+580,37,Fay,roofward,none,none,True,True,False,False,True,False
+581,37,Nia,archive_quarter,none,none,True,True,False,False,False,False
+582,37,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+583,37,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+584,37,Ari,riverbend,none,none,True,True,False,True,True,False
+585,37,Fay,roofward,none,none,True,True,False,False,True,False
+586,37,Nia,archive_quarter,none,none,True,True,False,False,False,False
+587,37,Milo,signal_ridge,none,none,True,True,False,False,False,False
+588,37,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,True,True
+589,37,Ari,riverbend,none,none,True,True,False,True,True,False
+590,37,Fay,roofward,none,none,True,True,False,False,True,False
+591,37,Nia,archive_quarter,none,none,True,True,False,False,False,False
+592,38,Milo,signal_ridge,none,none,True,True,False,False,False,False
+593,38,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+594,38,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,True,True
+595,38,Fay,roofward,none,none,True,True,False,True,True,False
+596,38,Nia,archive_quarter,none,none,True,True,False,False,False,False
+597,38,Milo,signal_ridge,none,none,True,True,False,False,False,False
+598,38,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+599,38,Ari,riverbend,none,none,True,True,False,False,True,False
+600,38,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,True,True,True
+601,38,Nia,archive_quarter,none,none,True,True,False,False,False,False
+602,38,Milo,signal_ridge,none,none,True,True,False,False,False,False
+603,38,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+604,38,Ari,riverbend,none,none,True,True,False,False,True,False
+605,38,Fay,roofward,none,none,True,True,False,True,True,False
+606,38,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+607,38,Milo,signal_ridge,none,none,True,True,False,False,False,False
+608,39,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+609,39,Ari,riverbend,none,none,True,True,False,False,True,False
+610,39,Fay,roofward,none,none,True,True,False,False,True,False
+611,39,Nia,archive_quarter,none,none,True,True,False,True,False,False
+612,39,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+613,39,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+614,39,Ari,riverbend,none,none,True,True,False,False,True,False
+615,39,Fay,roofward,none,none,True,True,False,False,True,False
+616,39,Nia,archive_quarter,none,none,True,True,False,True,False,False
+617,39,Milo,signal_ridge,none,none,True,True,False,False,False,False
+618,39,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,True,True
+619,39,Ari,riverbend,none,none,True,True,False,False,True,False
+620,39,Fay,roofward,none,none,True,True,False,False,True,False
+621,39,Nia,archive_quarter,none,none,True,True,False,True,False,False
+622,39,Milo,signal_ridge,none,none,True,True,False,False,False,False
+623,39,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+624,40,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,True,True
+625,40,Fay,roofward,none,none,True,True,False,False,True,False
+626,40,Nia,archive_quarter,none,none,True,True,False,False,False,False
+627,40,Milo,signal_ridge,none,none,True,True,False,True,False,False
+628,40,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+629,40,Ari,riverbend,none,none,True,True,False,False,True,False
+630,40,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,False,True,True
+631,40,Nia,archive_quarter,none,none,True,True,False,False,False,False
+632,40,Milo,signal_ridge,none,none,True,True,False,True,False,False
+633,40,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+634,40,Ari,riverbend,none,none,True,True,False,False,True,False
+635,40,Fay,roofward,none,none,True,True,False,False,True,False
+636,40,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+637,40,Milo,signal_ridge,none,none,True,True,False,True,False,False
+638,40,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+639,40,Ari,riverbend,none,none,True,True,False,False,True,False
+640,41,Fay,roofward,none,none,True,True,False,False,True,False
+641,41,Nia,archive_quarter,none,none,True,True,False,False,False,False
+642,41,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+643,41,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+644,41,Ari,riverbend,none,none,True,True,False,False,True,False
+645,41,Fay,roofward,none,none,True,True,False,False,True,False
+646,41,Nia,archive_quarter,none,none,True,True,False,False,False,False
+647,41,Milo,signal_ridge,none,none,True,True,False,False,False,False
+648,41,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,True,True,True
+649,41,Ari,riverbend,none,none,True,True,False,False,True,False
+650,41,Fay,roofward,none,none,True,True,False,False,True,False
+651,41,Nia,archive_quarter,none,none,True,True,False,False,False,False
+652,41,Milo,signal_ridge,none,none,True,True,False,False,False,False
+653,41,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+654,41,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,True,True
+655,41,Fay,roofward,none,none,True,True,True,True,False,False
+656,42,Milo,signal_ridge,none,none,True,True,False,False,False,False
+657,42,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+658,42,Ari,riverbend,none,none,True,True,False,False,True,False
+659,42,Fay,roofward,none,none,True,True,False,True,False,False
+660,42,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+661,42,Milo,signal_ridge,none,none,True,True,False,False,False,False
+662,42,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+663,42,Ari,riverbend,none,none,True,True,False,False,True,False
+664,42,Fay,roofward,none,none,True,True,False,True,False,False
+665,42,Nia,archive_quarter,none,none,True,True,False,False,False,False
+666,42,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+667,42,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+668,42,Ari,riverbend,none,none,True,True,False,False,True,False
+669,42,Fay,roofward,none,none,True,True,False,True,False,False
+670,42,Nia,archive_quarter,none,none,True,True,False,False,False,False
+671,42,Milo,signal_ridge,none,none,True,True,False,False,False,False
+672,43,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,True,True
+673,43,Ari,riverbend,none,none,True,True,False,False,True,False
+674,43,Fay,roofward,none,none,True,True,True,True,False,False
+675,43,Nia,archive_quarter,none,none,True,True,False,True,False,False
+676,43,Milo,signal_ridge,none,none,True,True,False,False,False,False
+677,43,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+678,43,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,True,True
+679,43,Fay,roofward,none,none,True,True,False,False,False,False
+680,43,Nia,archive_quarter,none,none,True,True,False,True,False,False
+681,43,Milo,signal_ridge,none,none,True,True,False,False,False,False
+682,43,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+683,43,Ari,riverbend,none,none,True,True,False,False,True,False
+684,43,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,False,False,True
+685,43,Nia,archive_quarter,none,none,True,True,False,True,False,False
+686,43,Milo,signal_ridge,none,none,True,True,False,False,False,False
+687,43,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+688,44,Ari,riverbend,none,none,True,True,False,False,True,False
+689,44,Fay,roofward,none,none,True,True,False,False,False,False
+690,44,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+691,44,Milo,signal_ridge,none,none,True,True,False,True,False,False
+692,44,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+693,44,Ari,riverbend,none,none,True,True,False,False,True,False
+694,44,Fay,roofward,none,none,True,True,False,False,False,False
+695,44,Nia,archive_quarter,none,none,True,True,False,False,False,False
+696,44,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,True,False,True
+697,44,Ivo,orchard_fen,none,none,True,True,False,False,True,False
+698,44,Ari,riverbend,none,none,True,True,False,False,True,False
+699,44,Fay,roofward,none,none,True,True,False,False,False,False
+700,44,Nia,archive_quarter,none,none,True,True,False,False,False,False
+701,44,Milo,signal_ridge,none,none,True,True,False,True,False,False
+702,44,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,True,True
+703,44,Ari,riverbend,none,none,True,True,True,True,False,False
+704,45,Fay,roofward,none,none,True,True,False,False,False,False
+705,45,Nia,archive_quarter,none,none,True,True,False,False,False,False
+706,45,Milo,signal_ridge,none,none,True,True,True,True,False,False
+707,45,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+708,45,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,False,True
+709,45,Fay,roofward,none,none,True,True,False,False,False,False
+710,45,Nia,archive_quarter,none,none,True,True,False,False,False,False
+711,45,Milo,signal_ridge,none,none,True,True,False,False,False,False
+712,45,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+713,45,Ari,riverbend,none,none,True,True,False,False,False,False
+714,45,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,False,False,True
+715,45,Nia,archive_quarter,none,none,True,True,False,False,False,False
+716,45,Milo,signal_ridge,none,none,True,True,False,False,False,False
+717,45,Ivo,orchard_fen,none,none,True,True,False,True,True,False
+718,45,Ari,riverbend,none,none,True,True,False,False,False,False
+719,45,Fay,roofward,none,none,True,True,False,False,False,False
+720,46,Nia,archive_quarter,migration_care_notice,fish moved toward orchard_fen under autumn_wind.,True,True,False,False,False,True
+721,46,Milo,signal_ridge,none,none,True,True,False,False,False,False
+722,46,Ivo,orchard_fen,none,none,True,True,True,True,False,False
+723,46,Ari,riverbend,none,none,True,True,False,True,False,False
+724,46,Fay,roofward,none,none,True,True,False,False,False,False
+725,46,Nia,archive_quarter,none,none,True,True,False,False,False,False
+726,46,Milo,signal_ridge,migration_care_notice,fish moved toward riverbend under autumn_wind.,True,True,False,False,False,True
+727,46,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+728,46,Ari,riverbend,none,none,True,True,False,True,False,False
+729,46,Fay,roofward,none,none,True,True,False,False,False,False
+730,46,Nia,archive_quarter,none,none,True,True,False,False,False,False
+731,46,Milo,signal_ridge,none,none,True,True,False,False,False,False
+732,46,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,False,True
+733,46,Ari,riverbend,none,none,True,True,False,True,False,False
+734,46,Fay,roofward,none,none,True,True,False,False,False,False
+735,46,Nia,archive_quarter,guild_repair_notice,Index Guild reduced backlog in archive_quarter.,True,True,True,True,False,True
+736,47,Milo,signal_ridge,none,none,True,True,False,False,False,False
+737,47,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+738,47,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,True,True,False,True
+739,47,Fay,roofward,none,none,True,True,False,True,False,False
+740,47,Nia,archive_quarter,collapse_recovery_call,Nia: public kiosk needs guild recovery after seasonal storm pressure.,True,True,False,False,True,True
+741,47,Milo,signal_ridge,none,none,True,True,False,False,False,False
+742,47,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+743,47,Ari,riverbend,none,none,True,True,False,False,False,False
+744,47,Fay,roofward,migration_care_notice,fish moved toward signal_ridge under autumn_wind.,True,True,False,True,False,True
+745,47,Nia,archive_quarter,collapse_recovery_call,Nia: public kiosk needs guild recovery after seasonal storm pressure.,True,True,True,False,True,True
+746,47,Milo,signal_ridge,none,none,True,True,False,False,False,False
+747,47,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+748,47,Ari,riverbend,none,none,True,True,False,False,False,False
+749,47,Fay,roofward,none,none,True,True,False,True,False,False
+750,47,Nia,archive_quarter,collapse_recovery_call,Nia: public kiosk needs guild recovery after seasonal storm pressure.,True,True,True,False,True,True
+751,47,Milo,signal_ridge,none,none,True,True,True,True,False,False
+752,48,Ari,riverbend,none,none,True,True,False,False,False,False
+753,48,Fay,roofward,none,none,True,True,False,False,False,False
+754,48,Nia,archive_quarter,none,none,True,True,True,True,False,False
+755,48,Milo,signal_ridge,none,none,True,True,False,True,False,False
+756,48,Ivo,orchard_fen,migration_care_notice,fish moved toward roofward under autumn_wind.,True,True,False,False,False,True
+757,48,Ari,riverbend,none,none,True,True,False,False,False,False
+758,48,Fay,roofward,none,none,True,True,False,False,False,False
+759,48,Nia,archive_quarter,none,none,True,True,True,True,False,False
+760,48,Milo,signal_ridge,none,none,True,True,False,True,False,False
+761,48,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+762,48,Ari,riverbend,migration_care_notice,fish moved toward archive_quarter under autumn_wind.,True,True,False,False,False,True
+763,48,Fay,roofward,none,none,True,True,False,False,False,False
+764,48,Nia,archive_quarter,none,none,True,True,True,True,False,False
+765,48,Milo,signal_ridge,none,none,True,True,False,True,False,False
+766,48,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+767,48,Ari,riverbend,none,none,True,True,False,False,False,False
+768,49,Fay,roofward,migration_care_notice,oil moved toward signal_ridge under winter_cold.,True,True,False,False,False,True
+769,49,Nia,archive_quarter,none,none,True,True,False,False,False,False
+770,49,Milo,signal_ridge,guild_repair_notice,Signal Guild reduced backlog in signal_ridge.,True,True,True,True,False,True
+771,49,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+772,49,Ari,riverbend,none,none,True,True,False,False,False,False
+773,49,Fay,roofward,none,none,True,True,False,False,False,False
+774,49,Nia,archive_quarter,none,none,True,True,False,False,False,False
+775,49,Milo,signal_ridge,none,none,True,True,False,False,False,False
+776,49,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+777,49,Ari,riverbend,none,none,True,True,False,False,False,False
+778,49,Fay,roofward,none,none,True,True,False,False,False,False
+779,49,Nia,archive_quarter,none,none,True,True,False,False,False,False
+780,49,Milo,signal_ridge,none,none,True,True,False,False,False,False
+781,49,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+782,49,Ari,riverbend,supply_route_warning,Ari: riverbend->archive_quarter is blocked for planks.,True,True,False,False,False,True
+783,49,Fay,roofward,none,none,True,True,True,True,False,False
+784,50,Nia,archive_quarter,none,none,True,True,False,False,False,False
+785,50,Milo,signal_ridge,none,none,True,True,False,False,False,False
+786,50,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+787,50,Ari,riverbend,none,none,True,True,False,True,False,False
+788,50,Fay,roofward,none,none,True,True,False,False,False,False
+789,50,Nia,archive_quarter,none,none,True,True,False,False,False,False
+790,50,Milo,signal_ridge,none,none,True,True,False,False,False,False
+791,50,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+792,50,Ari,riverbend,none,none,True,True,False,True,False,False
+793,50,Fay,roofward,none,none,True,True,False,False,False,False
+794,50,Nia,archive_quarter,none,none,True,True,False,False,False,False
+795,50,Milo,signal_ridge,none,none,True,True,False,False,False,False
+796,50,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+797,50,Ari,riverbend,none,none,True,True,False,True,False,False
+798,50,Fay,roofward,none,none,True,True,False,False,False,False
+799,50,Nia,archive_quarter,none,none,True,True,True,True,False,False
+800,51,Milo,signal_ridge,none,none,True,True,False,False,False,False
+801,51,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+802,51,Ari,riverbend,none,none,True,True,True,True,False,False
+803,51,Fay,roofward,none,none,True,True,False,True,False,False
+804,51,Nia,archive_quarter,none,none,True,True,False,False,False,False
+805,51,Milo,signal_ridge,none,none,True,True,False,False,False,False
+806,51,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+807,51,Ari,riverbend,none,none,True,True,False,False,False,False
+808,51,Fay,roofward,none,none,True,True,False,True,False,False
+809,51,Nia,archive_quarter,none,none,True,True,False,False,False,False
+810,51,Milo,signal_ridge,migration_care_notice,oil moved toward riverbend under winter_cold.,True,True,False,False,False,True
+811,51,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+812,51,Ari,riverbend,none,none,True,True,False,False,False,False
+813,51,Fay,roofward,none,none,True,True,False,True,False,False
+814,51,Nia,archive_quarter,none,none,True,True,False,False,False,False
+815,51,Milo,signal_ridge,none,none,True,True,False,False,False,False
+816,52,Ivo,orchard_fen,migration_care_notice,oil moved toward roofward under winter_cold.,True,True,False,False,False,True
+817,52,Ari,riverbend,none,none,True,True,False,False,False,False
+818,52,Fay,roofward,none,none,True,True,True,True,False,False
+819,52,Nia,archive_quarter,none,none,True,True,False,True,False,False
+820,52,Milo,signal_ridge,none,none,True,True,False,False,False,False
+821,52,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+822,52,Ari,riverbend,none,none,True,True,False,False,False,False
+823,52,Fay,roofward,none,none,True,True,False,False,False,False
+824,52,Nia,archive_quarter,none,none,True,True,False,True,False,False
+825,52,Milo,signal_ridge,none,none,True,True,False,False,False,False
+826,52,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+827,52,Ari,riverbend,none,none,True,True,False,False,False,False
+828,52,Fay,roofward,none,none,True,True,False,False,False,False
+829,52,Nia,archive_quarter,none,none,True,True,False,True,False,False
+830,52,Milo,signal_ridge,none,none,True,True,False,False,False,False
+831,52,Ivo,orchard_fen,none,none,True,True,True,True,False,False
+832,53,Ari,riverbend,none,none,True,True,False,False,False,False
+833,53,Fay,roofward,none,none,True,True,False,False,False,False
+834,53,Nia,archive_quarter,none,none,True,True,True,True,False,False
+835,53,Milo,signal_ridge,none,none,True,True,False,True,False,False
+836,53,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+837,53,Ari,riverbend,none,none,True,True,False,False,False,False
+838,53,Fay,roofward,none,none,True,True,False,False,False,False
+839,53,Nia,archive_quarter,none,none,True,True,False,False,False,False
+840,53,Milo,signal_ridge,none,none,True,True,True,True,False,False
+841,53,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+842,53,Ari,riverbend,none,none,True,True,False,False,False,False
+843,53,Fay,roofward,none,none,True,True,False,False,False,False
+844,53,Nia,archive_quarter,none,none,True,True,False,False,False,False
+845,53,Milo,signal_ridge,none,none,True,True,True,True,False,False
+846,53,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+847,53,Ari,riverbend,none,none,True,True,False,False,False,False
+848,54,Nia,archive_quarter,none,none,True,True,False,False,False,False
+849,54,Milo,signal_ridge,none,none,True,True,True,False,False,False
+850,54,Ivo,orchard_fen,none,none,True,True,True,True,False,False
+851,54,Ari,riverbend,none,none,True,True,False,True,False,False
+852,54,Fay,roofward,none,none,True,True,False,False,False,False
+853,54,Nia,archive_quarter,none,none,True,True,False,False,False,False
+854,54,Milo,signal_ridge,none,none,True,True,True,False,False,False
+855,54,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+856,54,Ari,riverbend,none,none,True,True,False,True,False,False
+857,54,Fay,roofward,none,none,True,True,False,False,False,False
+858,54,Nia,archive_quarter,migration_care_notice,oil moved toward orchard_fen under winter_cold.,True,True,False,False,False,True
+859,54,Milo,signal_ridge,none,none,True,True,True,False,False,False
+860,54,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+861,54,Ari,riverbend,none,none,True,True,False,True,False,False
+862,54,Fay,roofward,none,none,True,True,False,False,False,False
+863,54,Nia,archive_quarter,none,none,True,True,False,False,False,False
+864,55,Milo,signal_ridge,migration_care_notice,oil moved toward riverbend under winter_cold.,True,True,True,False,False,True
+865,55,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+866,55,Ari,riverbend,none,none,True,True,True,True,False,False
+867,55,Fay,roofward,none,none,True,True,False,True,False,False
+868,55,Nia,archive_quarter,none,none,True,True,False,False,False,False
+869,55,Milo,signal_ridge,none,none,True,True,True,False,False,False
+870,55,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+871,55,Ari,riverbend,none,none,True,True,False,False,False,False
+872,55,Fay,roofward,none,none,True,True,False,True,False,False
+873,55,Nia,archive_quarter,none,none,True,True,False,False,False,False
+874,55,Milo,signal_ridge,none,none,True,True,True,False,False,False
+875,55,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+876,55,Ari,riverbend,none,none,True,True,False,False,False,False
+877,55,Fay,roofward,none,none,True,True,False,True,False,False
+878,55,Nia,archive_quarter,none,none,True,True,False,False,False,False
+879,55,Milo,signal_ridge,none,none,True,True,True,True,False,False
+880,56,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+881,56,Ari,riverbend,none,none,True,True,False,False,False,False
+882,56,Fay,roofward,guild_repair_notice,Glassgarden Guild reduced backlog in roofward.,True,True,True,True,False,True
+883,56,Nia,archive_quarter,none,none,True,True,False,True,False,False
+884,56,Milo,signal_ridge,none,none,True,True,True,False,False,False
+885,56,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+886,56,Ari,riverbend,none,none,True,True,False,False,False,False
+887,56,Fay,roofward,none,none,True,True,False,False,False,False
+888,56,Nia,archive_quarter,none,none,True,True,False,True,False,False
+889,56,Milo,signal_ridge,none,none,True,True,True,False,False,False
+890,56,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+891,56,Ari,riverbend,none,none,True,True,False,False,False,False
+892,56,Fay,roofward,none,none,True,True,False,False,False,False
+893,56,Nia,archive_quarter,none,none,True,True,False,True,False,False
+894,56,Milo,signal_ridge,none,none,True,True,True,False,False,False
+895,56,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+896,57,Ari,riverbend,none,none,True,True,False,False,False,False
+897,57,Fay,roofward,none,none,True,True,False,False,False,False
+898,57,Nia,archive_quarter,none,none,True,True,False,False,False,False
+899,57,Milo,signal_ridge,none,none,True,True,True,True,False,False
+900,57,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+901,57,Ari,riverbend,none,none,True,True,False,False,False,False
+902,57,Fay,roofward,none,none,True,True,False,False,False,False
+903,57,Nia,archive_quarter,none,none,True,True,False,False,False,False
+904,57,Milo,signal_ridge,none,none,True,True,True,True,False,False
+905,57,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+906,57,Ari,riverbend,migration_care_notice,oil moved toward archive_quarter under winter_cold.,True,True,False,False,False,True
+907,57,Fay,roofward,none,none,True,True,False,False,False,False
+908,57,Nia,archive_quarter,none,none,True,True,False,False,False,False
+909,57,Milo,signal_ridge,none,none,True,True,True,True,False,False
+910,57,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+911,57,Ari,riverbend,none,none,True,True,True,True,False,False
+912,58,Fay,roofward,migration_care_notice,oil moved toward signal_ridge under winter_cold.,True,True,False,False,False,True
+913,58,Nia,archive_quarter,none,none,True,True,False,False,False,False
+914,58,Milo,signal_ridge,none,none,True,True,True,True,False,False
+915,58,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+916,58,Ari,riverbend,none,none,True,True,False,False,False,False
+917,58,Fay,roofward,none,none,True,True,False,False,False,False
+918,58,Nia,archive_quarter,none,none,True,True,False,False,False,False
+919,58,Milo,signal_ridge,none,none,True,True,True,True,False,False
+920,58,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+921,58,Ari,riverbend,none,none,True,True,False,False,False,False
+922,58,Fay,roofward,none,none,True,True,False,False,False,False
+923,58,Nia,archive_quarter,none,none,True,True,False,False,False,False
+924,58,Milo,signal_ridge,guild_repair_notice,Signal Guild reduced backlog in signal_ridge.,True,True,True,True,False,True
+925,58,Ivo,orchard_fen,none,none,True,True,True,True,False,False
+926,58,Ari,riverbend,none,none,True,True,False,False,False,False
+927,58,Fay,roofward,none,none,True,True,False,False,False,False
+928,59,Nia,archive_quarter,none,none,True,True,False,False,False,False
+929,59,Milo,signal_ridge,none,none,True,True,True,False,False,False
+930,59,Ivo,orchard_fen,none,none,True,True,True,True,False,False
+931,59,Ari,riverbend,none,none,True,True,False,True,False,False
+932,59,Fay,roofward,none,none,True,True,False,False,False,False
+933,59,Nia,archive_quarter,none,none,True,True,False,False,False,False
+934,59,Milo,signal_ridge,supply_route_warning,Milo: signal_ridge->riverbend is blocked for oil.,True,True,True,False,False,True
+935,59,Ivo,orchard_fen,none,none,True,True,True,True,False,False
+936,59,Ari,riverbend,none,none,True,True,False,True,False,False
+937,59,Fay,roofward,none,none,True,True,False,False,False,False
+938,59,Nia,archive_quarter,none,none,True,True,False,False,False,False
+939,59,Milo,signal_ridge,none,none,True,True,True,False,False,False
+940,59,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+941,59,Ari,riverbend,none,none,True,True,True,True,False,False
+942,59,Fay,roofward,none,none,True,True,False,False,False,False
+943,59,Nia,archive_quarter,none,none,True,True,True,True,False,False
+944,60,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+945,60,Ari,riverbend,none,none,True,True,True,False,False,False
+946,60,Fay,roofward,none,none,True,True,True,True,False,False
+947,60,Nia,archive_quarter,none,none,True,True,False,True,False,False
+948,60,Milo,signal_ridge,none,none,True,True,True,False,False,False
+949,60,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+950,60,Ari,riverbend,none,none,True,True,True,False,False,False
+951,60,Fay,roofward,none,none,True,True,False,False,False,False
+952,60,Nia,archive_quarter,none,none,True,True,False,True,False,False
+953,60,Milo,signal_ridge,none,none,True,True,True,False,False,False
+954,60,Ivo,orchard_fen,migration_care_notice,oil moved toward roofward under winter_cold.,True,True,False,False,False,True
+955,60,Ari,riverbend,none,none,True,True,True,False,False,False
+956,60,Fay,roofward,none,none,True,True,False,False,False,False
+957,60,Nia,archive_quarter,none,none,True,True,True,True,False,False
+958,60,Milo,signal_ridge,none,none,True,True,True,False,False,False
+959,60,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+960,61,Ari,riverbend,migration_care_notice,oil moved toward archive_quarter under winter_cold.,True,True,True,False,False,True
+961,61,Fay,roofward,none,none,True,True,False,False,False,False
+962,61,Nia,archive_quarter,none,none,True,True,True,True,False,False
+963,61,Milo,signal_ridge,none,none,True,True,True,True,False,False
+964,61,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+965,61,Ari,riverbend,none,none,True,True,True,False,False,False
+966,61,Fay,roofward,supply_route_warning,Fay: roofward->signal_ridge is blocked for wire.,True,True,False,False,False,True
+967,61,Nia,archive_quarter,none,none,True,True,True,True,False,False
+968,61,Milo,signal_ridge,none,none,True,True,True,True,False,False
+969,61,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+970,61,Ari,riverbend,none,none,True,True,True,False,False,False
+971,61,Fay,roofward,none,none,True,True,False,False,False,False
+972,61,Nia,archive_quarter,none,none,True,True,False,False,False,False
+973,61,Milo,signal_ridge,none,none,True,True,True,True,False,False
+974,61,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+975,61,Ari,riverbend,none,none,True,True,True,True,False,False
+976,62,Fay,roofward,none,none,True,True,False,False,False,False
+977,62,Nia,archive_quarter,none,none,True,True,False,False,False,False
+978,62,Milo,signal_ridge,none,none,True,True,True,True,False,False
+979,62,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+980,62,Ari,riverbend,none,none,True,True,True,False,False,False
+981,62,Fay,roofward,none,none,True,True,False,False,False,False
+982,62,Nia,archive_quarter,none,none,True,True,False,False,False,False
+983,62,Milo,signal_ridge,none,none,True,True,True,True,False,False
+984,62,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+985,62,Ari,riverbend,none,none,True,True,True,False,False,False
+986,62,Fay,roofward,none,none,True,True,False,False,False,False
+987,62,Nia,archive_quarter,none,none,True,True,False,False,False,False
+988,62,Milo,signal_ridge,none,none,True,True,True,True,False,False
+989,62,Ivo,orchard_fen,none,none,True,True,False,True,False,False
+990,62,Ari,riverbend,supply_route_warning,Ari: riverbend->roofward is blocked for planks.,True,True,True,False,False,True
+991,62,Fay,roofward,none,none,True,True,True,True,False,False
+992,63,Nia,archive_quarter,none,none,True,True,False,False,False,False
+993,63,Milo,signal_ridge,none,none,True,True,True,False,False,False
+994,63,Ivo,orchard_fen,guild_repair_notice,Seed Guild reduced backlog in orchard_fen.,True,True,True,True,False,True
+995,63,Ari,riverbend,none,none,True,True,True,True,False,False
+996,63,Fay,roofward,none,none,True,True,False,False,False,False
+997,63,Nia,archive_quarter,none,none,True,True,False,False,False,False
+998,63,Milo,signal_ridge,none,none,True,True,True,False,False,False
+999,63,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+1000,63,Ari,riverbend,none,none,True,True,True,True,False,False
+1001,63,Fay,roofward,none,none,True,True,False,False,False,False
+1002,63,Nia,archive_quarter,migration_care_notice,oil moved toward orchard_fen under winter_cold.,True,True,False,False,False,True
+1003,63,Milo,signal_ridge,none,none,True,True,True,False,False,False
+1004,63,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+1005,63,Ari,riverbend,none,none,True,True,True,True,False,False
+1006,63,Fay,roofward,none,none,True,True,True,False,False,False
+1007,63,Nia,archive_quarter,none,none,True,True,False,False,False,False
+1008,64,Milo,signal_ridge,migration_care_notice,oil moved toward riverbend under winter_cold.,True,True,True,False,False,True
+1009,64,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+1010,64,Ari,riverbend,none,none,True,True,True,True,False,False
+1011,64,Fay,roofward,none,none,True,True,True,True,False,False
+1012,64,Nia,archive_quarter,none,none,True,True,False,False,False,False
+1013,64,Milo,signal_ridge,none,none,True,True,True,False,False,False
+1014,64,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+1015,64,Ari,riverbend,guild_repair_notice,Bridgewright Guild reduced backlog in riverbend.,True,True,True,True,False,True
+1016,64,Fay,roofward,none,none,True,True,True,True,False,False
+1017,64,Nia,archive_quarter,none,none,True,True,False,False,False,False
+1018,64,Milo,signal_ridge,none,none,True,True,True,False,False,False
+1019,64,Ivo,orchard_fen,none,none,True,True,False,False,False,False
+1020,64,Ari,riverbend,none,none,True,True,True,True,False,False
+1021,64,Fay,roofward,none,none,True,True,True,True,False,False
+1022,64,Nia,archive_quarter,none,none,True,True,False,False,False,False
+1023,64,Milo,signal_ridge,none,none,True,True,True,True,False,False

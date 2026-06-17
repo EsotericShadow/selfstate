@@ -1,0 +1,1025 @@
+tick_id,day,season,resource,from_region,to_region,migration_amount,ecology_before,ecology_after,migration_cause,feedback_visible,care_action
+0,1,spring_rain,fish,riverbend,archive_quarter,0.1112,0.54,0.554,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+1,1,spring_rain,fish,roofward,signal_ridge,0.11184,0.565,0.579,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+2,1,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.59,0.604,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+3,1,spring_rain,fish,signal_ridge,riverbend,0.11312,0.615,0.629,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+4,1,spring_rain,fish,orchard_fen,roofward,0.11136,0.64,0.654,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+5,1,spring_rain,fish,riverbend,archive_quarter,0.1112,0.554,0.568,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+6,1,spring_rain,fish,roofward,signal_ridge,0.11184,0.579,0.593,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+7,1,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.604,0.618,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+8,1,spring_rain,fish,signal_ridge,riverbend,0.11312,0.629,0.643,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+9,1,spring_rain,fish,orchard_fen,roofward,0.11136,0.654,0.668,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+10,1,spring_rain,fish,riverbend,archive_quarter,0.1112,0.568,0.582,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+11,1,spring_rain,fish,roofward,signal_ridge,0.11184,0.593,0.607,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+12,1,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.618,0.632,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+13,1,spring_rain,fish,signal_ridge,riverbend,0.11312,0.643,0.657,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+14,1,spring_rain,fish,orchard_fen,roofward,0.11136,0.668,0.682,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+15,1,spring_rain,fish,riverbend,archive_quarter,0.1112,0.582,0.596,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+16,2,spring_rain,fish,roofward,signal_ridge,0.11184,0.607,0.621,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+17,2,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.632,0.646,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+18,2,spring_rain,fish,signal_ridge,riverbend,0.11312,0.657,0.671,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+19,2,spring_rain,fish,orchard_fen,roofward,0.11056,0.682,0.696,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+20,2,spring_rain,fish,riverbend,archive_quarter,0.112,0.596,0.61,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+21,2,spring_rain,fish,roofward,signal_ridge,0.11184,0.621,0.635,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+22,2,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.646,0.66,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+23,2,spring_rain,fish,signal_ridge,riverbend,0.11312,0.671,0.685,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+24,2,spring_rain,fish,orchard_fen,roofward,0.11056,0.696,0.71,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+25,2,spring_rain,fish,riverbend,archive_quarter,0.112,0.61,0.624,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+26,2,spring_rain,fish,roofward,signal_ridge,0.11184,0.635,0.649,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+27,2,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.66,0.674,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+28,2,spring_rain,fish,signal_ridge,riverbend,0.11312,0.685,0.699,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+29,2,spring_rain,fish,orchard_fen,roofward,0.11056,0.71,0.724,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+30,2,spring_rain,fish,riverbend,archive_quarter,0.112,0.624,0.638,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+31,2,spring_rain,fish,roofward,signal_ridge,0.11184,0.649,0.663,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+32,3,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.674,0.688,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+33,3,spring_rain,fish,signal_ridge,riverbend,0.11312,0.699,0.713,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+34,3,spring_rain,fish,orchard_fen,roofward,0.11056,0.724,0.738,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+35,3,spring_rain,fish,riverbend,archive_quarter,0.1112,0.638,0.652,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+36,3,spring_rain,fish,roofward,signal_ridge,0.11264,0.663,0.677,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+37,3,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.688,0.702,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+38,3,spring_rain,fish,signal_ridge,riverbend,0.11312,0.713,0.727,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+39,3,spring_rain,fish,orchard_fen,roofward,0.11056,0.738,0.752,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+40,3,spring_rain,fish,riverbend,archive_quarter,0.1112,0.652,0.666,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+41,3,spring_rain,fish,roofward,signal_ridge,0.11264,0.677,0.691,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+42,3,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.702,0.716,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+43,3,spring_rain,fish,signal_ridge,riverbend,0.11312,0.727,0.741,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+44,3,spring_rain,fish,orchard_fen,roofward,0.11056,0.752,0.766,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+45,3,spring_rain,fish,riverbend,archive_quarter,0.1112,0.666,0.68,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+46,3,spring_rain,fish,roofward,signal_ridge,0.11264,0.691,0.705,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+47,3,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.716,0.73,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+48,4,spring_rain,fish,signal_ridge,riverbend,0.11312,0.741,0.755,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+49,4,spring_rain,fish,orchard_fen,roofward,0.11056,0.766,0.78,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+50,4,spring_rain,fish,riverbend,archive_quarter,0.1112,0.68,0.694,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+51,4,spring_rain,fish,roofward,signal_ridge,0.11184,0.705,0.719,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+52,4,spring_rain,fish,archive_quarter,orchard_fen,0.11328,0.73,0.744,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+53,4,spring_rain,fish,signal_ridge,riverbend,0.11312,0.755,0.769,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+54,4,spring_rain,fish,orchard_fen,roofward,0.11056,0.78,0.794,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+55,4,spring_rain,fish,riverbend,archive_quarter,0.1112,0.694,0.708,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+56,4,spring_rain,fish,roofward,signal_ridge,0.11184,0.719,0.733,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+57,4,spring_rain,fish,archive_quarter,orchard_fen,0.11328,0.744,0.758,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+58,4,spring_rain,fish,signal_ridge,riverbend,0.11312,0.769,0.783,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+59,4,spring_rain,fish,orchard_fen,roofward,0.11056,0.794,0.808,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+60,4,spring_rain,fish,riverbend,archive_quarter,0.1112,0.708,0.722,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+61,4,spring_rain,fish,roofward,signal_ridge,0.11184,0.733,0.747,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+62,4,spring_rain,fish,archive_quarter,orchard_fen,0.11328,0.758,0.772,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+63,4,spring_rain,fish,signal_ridge,riverbend,0.11312,0.783,0.797,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+64,5,spring_rain,fish,orchard_fen,roofward,0.11056,0.808,0.822,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+65,5,spring_rain,fish,riverbend,archive_quarter,0.1112,0.722,0.736,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+66,5,spring_rain,fish,roofward,signal_ridge,0.11184,0.747,0.761,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+67,5,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.772,0.786,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+68,5,spring_rain,fish,signal_ridge,riverbend,0.11392,0.797,0.811,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+69,5,spring_rain,fish,orchard_fen,roofward,0.11056,0.822,0.836,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+70,5,spring_rain,fish,riverbend,archive_quarter,0.1112,0.736,0.75,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+71,5,spring_rain,fish,roofward,signal_ridge,0.11184,0.761,0.775,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+72,5,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.786,0.8,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+73,5,spring_rain,fish,signal_ridge,riverbend,0.11392,0.811,0.825,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+74,5,spring_rain,fish,orchard_fen,roofward,0.11056,0.836,0.85,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+75,5,spring_rain,fish,riverbend,archive_quarter,0.1112,0.75,0.764,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+76,5,spring_rain,fish,roofward,signal_ridge,0.11184,0.775,0.789,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+77,5,spring_rain,fish,archive_quarter,orchard_fen,0.11248,0.8,0.814,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+78,5,spring_rain,fish,signal_ridge,riverbend,0.11392,0.825,0.839,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+79,5,spring_rain,fish,orchard_fen,roofward,0.11056,0.85,0.864,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+80,6,spring_rain,fish,roofward,signal_ridge,0.1112,0.789,0.803,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+81,6,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.814,0.828,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+82,6,spring_rain,fish,signal_ridge,riverbend,0.11248,0.839,0.853,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+83,6,spring_rain,fish,orchard_fen,roofward,0.11312,0.864,0.878,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+84,6,spring_rain,fish,riverbend,archive_quarter,0.11136,0.764,0.778,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+85,6,spring_rain,fish,roofward,signal_ridge,0.1112,0.803,0.817,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+86,6,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.828,0.842,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+87,6,spring_rain,fish,signal_ridge,riverbend,0.11248,0.853,0.867,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+88,6,spring_rain,fish,orchard_fen,roofward,0.11312,0.878,0.892,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+89,6,spring_rain,fish,riverbend,archive_quarter,0.11136,0.778,0.792,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+90,6,spring_rain,fish,roofward,signal_ridge,0.1112,0.817,0.831,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+91,6,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.842,0.856,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+92,6,spring_rain,fish,signal_ridge,riverbend,0.11248,0.867,0.881,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+93,6,spring_rain,fish,orchard_fen,roofward,0.11312,0.892,0.906,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+94,6,spring_rain,fish,riverbend,archive_quarter,0.11136,0.792,0.806,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+95,6,spring_rain,fish,roofward,signal_ridge,0.1112,0.831,0.845,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+96,7,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.856,0.87,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+97,7,spring_rain,fish,signal_ridge,riverbend,0.11248,0.881,0.895,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+98,7,spring_rain,fish,orchard_fen,roofward,0.11312,0.906,0.92,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+99,7,spring_rain,fish,riverbend,archive_quarter,0.11056,0.806,0.82,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+100,7,spring_rain,fish,roofward,signal_ridge,0.112,0.845,0.859,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+101,7,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.87,0.884,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+102,7,spring_rain,fish,signal_ridge,riverbend,0.11248,0.895,0.909,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+103,7,spring_rain,fish,orchard_fen,roofward,0.11312,0.92,0.934,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+104,7,spring_rain,fish,riverbend,archive_quarter,0.11056,0.82,0.834,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+105,7,spring_rain,fish,roofward,signal_ridge,0.112,0.859,0.873,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+106,7,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.884,0.898,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+107,7,spring_rain,fish,signal_ridge,riverbend,0.11248,0.909,0.923,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+108,7,spring_rain,fish,orchard_fen,roofward,0.11312,0.934,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+109,7,spring_rain,fish,riverbend,archive_quarter,0.11056,0.834,0.848,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+110,7,spring_rain,fish,roofward,signal_ridge,0.112,0.873,0.887,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+111,7,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.898,0.912,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+112,8,spring_rain,fish,signal_ridge,riverbend,0.11248,0.923,0.937,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+113,8,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+114,8,spring_rain,fish,riverbend,archive_quarter,0.11056,0.848,0.862,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+115,8,spring_rain,fish,roofward,signal_ridge,0.1112,0.887,0.901,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+116,8,spring_rain,fish,archive_quarter,orchard_fen,0.11264,0.912,0.926,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+117,8,spring_rain,fish,signal_ridge,riverbend,0.11248,0.937,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+118,8,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+119,8,spring_rain,fish,riverbend,archive_quarter,0.11056,0.862,0.876,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+120,8,spring_rain,fish,roofward,signal_ridge,0.1112,0.901,0.915,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+121,8,spring_rain,fish,archive_quarter,orchard_fen,0.11264,0.926,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+122,8,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+123,8,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+124,8,spring_rain,fish,riverbend,archive_quarter,0.11056,0.876,0.89,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+125,8,spring_rain,fish,roofward,signal_ridge,0.1112,0.915,0.929,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+126,8,spring_rain,fish,archive_quarter,orchard_fen,0.11264,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+127,8,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+128,9,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+129,9,spring_rain,fish,riverbend,archive_quarter,0.11056,0.89,0.904,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+130,9,spring_rain,fish,roofward,signal_ridge,0.1112,0.929,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+131,9,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+132,9,spring_rain,fish,signal_ridge,riverbend,0.11328,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+133,9,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+134,9,spring_rain,fish,riverbend,archive_quarter,0.11056,0.904,0.918,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+135,9,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+136,9,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+137,9,spring_rain,fish,signal_ridge,riverbend,0.11328,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+138,9,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+139,9,spring_rain,fish,riverbend,archive_quarter,0.11056,0.918,0.932,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+140,9,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+141,9,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+142,9,spring_rain,fish,signal_ridge,riverbend,0.11328,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+143,9,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+144,10,spring_rain,fish,riverbend,archive_quarter,0.11056,0.932,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+145,10,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+146,10,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+147,10,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+148,10,spring_rain,fish,orchard_fen,roofward,0.11392,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+149,10,spring_rain,fish,riverbend,archive_quarter,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+150,10,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+151,10,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+152,10,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+153,10,spring_rain,fish,orchard_fen,roofward,0.11392,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+154,10,spring_rain,fish,riverbend,archive_quarter,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+155,10,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+156,10,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+157,10,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+158,10,spring_rain,fish,orchard_fen,roofward,0.11392,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+159,10,spring_rain,fish,riverbend,archive_quarter,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+160,11,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+161,11,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+162,11,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+163,11,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+164,11,spring_rain,fish,riverbend,archive_quarter,0.11136,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+165,11,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+166,11,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+167,11,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+168,11,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+169,11,spring_rain,fish,riverbend,archive_quarter,0.11136,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+170,11,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+171,11,spring_rain,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+172,11,spring_rain,fish,signal_ridge,riverbend,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+173,11,spring_rain,fish,orchard_fen,roofward,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+174,11,spring_rain,fish,riverbend,archive_quarter,0.11136,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+175,11,spring_rain,fish,roofward,signal_ridge,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+176,12,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+177,12,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+178,12,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+179,12,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+180,12,spring_rain,fish,archive_quarter,orchard_fen,0.112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+181,12,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+182,12,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+183,12,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+184,12,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+185,12,spring_rain,fish,archive_quarter,orchard_fen,0.112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+186,12,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+187,12,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+188,12,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+189,12,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+190,12,spring_rain,fish,archive_quarter,orchard_fen,0.112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+191,12,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+192,13,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+193,13,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+194,13,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+195,13,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+196,13,spring_rain,fish,signal_ridge,riverbend,0.11264,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+197,13,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+198,13,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+199,13,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+200,13,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+201,13,spring_rain,fish,signal_ridge,riverbend,0.11264,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+202,13,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+203,13,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+204,13,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+205,13,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+206,13,spring_rain,fish,signal_ridge,riverbend,0.11264,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+207,13,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+208,14,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+209,14,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+210,14,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+211,14,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+212,14,spring_rain,fish,orchard_fen,roofward,0.11328,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+213,14,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+214,14,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+215,14,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+216,14,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+217,14,spring_rain,fish,orchard_fen,roofward,0.11328,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+218,14,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+219,14,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+220,14,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+221,14,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+222,14,spring_rain,fish,orchard_fen,roofward,0.11328,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+223,14,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+224,15,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+225,15,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+226,15,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+227,15,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+228,15,spring_rain,fish,riverbend,archive_quarter,0.11392,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+229,15,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+230,15,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+231,15,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+232,15,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+233,15,spring_rain,fish,riverbend,archive_quarter,0.11392,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+234,15,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+235,15,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+236,15,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+237,15,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+238,15,spring_rain,fish,riverbend,archive_quarter,0.11392,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+239,15,spring_rain,fish,roofward,signal_ridge,0.11056,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+240,16,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+241,16,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+242,16,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+243,16,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+244,16,spring_rain,fish,roofward,signal_ridge,0.11136,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+245,16,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+246,16,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+247,16,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+248,16,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+249,16,spring_rain,fish,roofward,signal_ridge,0.11136,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+250,16,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+251,16,spring_rain,fish,signal_ridge,riverbend,0.11184,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+252,16,spring_rain,fish,orchard_fen,roofward,0.11248,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+253,16,spring_rain,fish,riverbend,archive_quarter,0.11312,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+254,16,spring_rain,fish,roofward,signal_ridge,0.11136,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+255,16,spring_rain,fish,archive_quarter,orchard_fen,0.1112,0.94,0.94,spring_rain resource movement,True,open fish passage / shade seeds / ration oil
+256,17,summer_dry,seeds,signal_ridge,riverbend,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+257,17,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+258,17,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+259,17,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+260,17,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+261,17,summer_dry,seeds,signal_ridge,riverbend,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+262,17,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+263,17,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+264,17,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+265,17,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+266,17,summer_dry,seeds,signal_ridge,riverbend,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+267,17,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+268,17,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+269,17,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+270,17,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+271,17,summer_dry,seeds,signal_ridge,riverbend,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+272,18,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+273,18,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+274,18,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+275,18,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+276,18,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+277,18,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+278,18,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+279,18,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+280,18,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+281,18,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+282,18,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+283,18,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+284,18,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+285,18,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+286,18,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+287,18,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+288,19,summer_dry,seeds,roofward,signal_ridge,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+289,19,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+290,19,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+291,19,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+292,19,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+293,19,summer_dry,seeds,roofward,signal_ridge,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+294,19,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+295,19,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+296,19,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+297,19,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+298,19,summer_dry,seeds,roofward,signal_ridge,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+299,19,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+300,19,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+301,19,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+302,19,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+303,19,summer_dry,seeds,roofward,signal_ridge,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+304,20,summer_dry,seeds,archive_quarter,orchard_fen,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+305,20,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+306,20,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+307,20,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+308,20,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+309,20,summer_dry,seeds,archive_quarter,orchard_fen,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+310,20,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+311,20,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+312,20,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+313,20,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+314,20,summer_dry,seeds,archive_quarter,orchard_fen,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+315,20,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+316,20,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+317,20,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+318,20,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+319,20,summer_dry,seeds,archive_quarter,orchard_fen,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+320,21,summer_dry,seeds,signal_ridge,riverbend,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+321,21,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+322,21,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+323,21,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+324,21,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+325,21,summer_dry,seeds,signal_ridge,riverbend,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+326,21,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+327,21,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+328,21,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+329,21,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+330,21,summer_dry,seeds,signal_ridge,riverbend,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+331,21,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+332,21,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+333,21,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+334,21,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+335,21,summer_dry,seeds,signal_ridge,riverbend,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+336,22,summer_dry,seeds,orchard_fen,roofward,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+337,22,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+338,22,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+339,22,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+340,22,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+341,22,summer_dry,seeds,orchard_fen,roofward,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+342,22,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+343,22,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+344,22,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+345,22,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+346,22,summer_dry,seeds,orchard_fen,roofward,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+347,22,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+348,22,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+349,22,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+350,22,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.937,none,False,none
+351,22,summer_dry,seeds,orchard_fen,roofward,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+352,23,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+353,23,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+354,23,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+355,23,summer_dry,seeds,signal_ridge,riverbend,0.0,0.937,0.94,none,False,none
+356,23,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+357,23,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+358,23,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+359,23,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+360,23,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+361,23,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+362,23,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+363,23,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+364,23,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+365,23,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+366,23,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+367,23,summer_dry,seeds,riverbend,archive_quarter,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+368,24,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+369,24,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+370,24,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+371,24,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+372,24,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+373,24,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+374,24,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+375,24,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+376,24,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+377,24,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+378,24,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+379,24,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+380,24,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+381,24,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+382,24,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.937,none,False,none
+383,24,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+384,25,summer_dry,seeds,signal_ridge,riverbend,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+385,25,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+386,25,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+387,25,summer_dry,seeds,roofward,signal_ridge,0.0,0.937,0.94,none,False,none
+388,25,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+389,25,summer_dry,seeds,signal_ridge,riverbend,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+390,25,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+391,25,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+392,25,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+393,25,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+394,25,summer_dry,seeds,signal_ridge,riverbend,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+395,25,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+396,25,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+397,25,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+398,25,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+399,25,summer_dry,seeds,signal_ridge,riverbend,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+400,26,summer_dry,seeds,orchard_fen,roofward,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+401,26,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+402,26,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+403,26,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+404,26,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+405,26,summer_dry,seeds,orchard_fen,roofward,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+406,26,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+407,26,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+408,26,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+409,26,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+410,26,summer_dry,seeds,orchard_fen,roofward,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+411,26,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+412,26,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+413,26,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+414,26,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+415,26,summer_dry,seeds,orchard_fen,roofward,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+416,27,summer_dry,seeds,riverbend,archive_quarter,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+417,27,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+418,27,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+419,27,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+420,27,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+421,27,summer_dry,seeds,riverbend,archive_quarter,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+422,27,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+423,27,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+424,27,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+425,27,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+426,27,summer_dry,seeds,riverbend,archive_quarter,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+427,27,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+428,27,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+429,27,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+430,27,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+431,27,summer_dry,seeds,riverbend,archive_quarter,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+432,28,summer_dry,seeds,roofward,signal_ridge,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+433,28,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+434,28,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+435,28,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+436,28,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+437,28,summer_dry,seeds,roofward,signal_ridge,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+438,28,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+439,28,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+440,28,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+441,28,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+442,28,summer_dry,seeds,roofward,signal_ridge,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+443,28,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+444,28,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+445,28,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+446,28,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+447,28,summer_dry,seeds,roofward,signal_ridge,0.10432,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+448,29,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+449,29,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+450,29,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+451,29,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+452,29,summer_dry,seeds,roofward,signal_ridge,0.0,0.94,0.93,none,True,none
+453,29,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+454,29,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+455,29,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+456,29,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+457,29,summer_dry,seeds,roofward,signal_ridge,0.0,0.93,0.92,none,True,none
+458,29,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+459,29,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+460,29,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+461,29,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+462,29,summer_dry,seeds,roofward,signal_ridge,0.0,0.92,0.91,none,True,none
+463,29,summer_dry,seeds,archive_quarter,orchard_fen,0.10176,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+464,30,summer_dry,seeds,orchard_fen,roofward,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+465,30,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+466,30,summer_dry,seeds,roofward,signal_ridge,0.0,0.91,0.913,none,False,none
+467,30,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+468,30,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+469,30,summer_dry,seeds,orchard_fen,roofward,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+470,30,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+471,30,summer_dry,seeds,roofward,signal_ridge,0.0,0.913,0.916,none,False,none
+472,30,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+473,30,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+474,30,summer_dry,seeds,orchard_fen,roofward,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+475,30,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+476,30,summer_dry,seeds,roofward,signal_ridge,0.0,0.916,0.919,none,False,none
+477,30,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+478,30,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+479,30,summer_dry,seeds,orchard_fen,roofward,0.1024,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+480,31,summer_dry,seeds,riverbend,archive_quarter,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+481,31,summer_dry,seeds,roofward,signal_ridge,0.0,0.919,0.922,none,False,none
+482,31,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+483,31,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+484,31,summer_dry,seeds,orchard_fen,roofward,0.0,0.94,0.93,none,True,none
+485,31,summer_dry,seeds,riverbend,archive_quarter,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+486,31,summer_dry,seeds,roofward,signal_ridge,0.0,0.922,0.925,none,False,none
+487,31,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+488,31,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+489,31,summer_dry,seeds,orchard_fen,roofward,0.0,0.93,0.92,none,True,none
+490,31,summer_dry,seeds,riverbend,archive_quarter,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+491,31,summer_dry,seeds,roofward,signal_ridge,0.0,0.925,0.928,none,False,none
+492,31,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+493,31,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+494,31,summer_dry,seeds,orchard_fen,roofward,0.0,0.92,0.91,none,True,none
+495,31,summer_dry,seeds,riverbend,archive_quarter,0.10304,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+496,32,summer_dry,seeds,roofward,signal_ridge,0.10368,0.928,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+497,32,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+498,32,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+499,32,summer_dry,seeds,orchard_fen,roofward,0.0,0.91,0.913,none,False,none
+500,32,summer_dry,seeds,riverbend,archive_quarter,0.0,0.94,0.93,none,True,none
+501,32,summer_dry,seeds,roofward,signal_ridge,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+502,32,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+503,32,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+504,32,summer_dry,seeds,orchard_fen,roofward,0.0,0.913,0.916,none,False,none
+505,32,summer_dry,seeds,riverbend,archive_quarter,0.0,0.93,0.92,none,True,none
+506,32,summer_dry,seeds,roofward,signal_ridge,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+507,32,summer_dry,seeds,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+508,32,summer_dry,seeds,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+509,32,summer_dry,seeds,orchard_fen,roofward,0.0,0.916,0.919,none,False,none
+510,32,summer_dry,seeds,riverbend,archive_quarter,0.0,0.92,0.91,none,True,none
+511,32,summer_dry,seeds,roofward,signal_ridge,0.10368,0.94,0.94,summer_dry resource movement,True,open fish passage / shade seeds / ration oil
+512,33,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+513,33,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+514,33,autumn_wind,fish,orchard_fen,roofward,0.11184,0.919,0.927,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+515,33,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.91,0.918,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+516,33,autumn_wind,fish,roofward,signal_ridge,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+517,33,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+518,33,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+519,33,autumn_wind,fish,orchard_fen,roofward,0.11184,0.927,0.935,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+520,33,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.918,0.926,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+521,33,autumn_wind,fish,roofward,signal_ridge,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+522,33,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+523,33,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+524,33,autumn_wind,fish,orchard_fen,roofward,0.11184,0.935,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+525,33,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.926,0.934,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+526,33,autumn_wind,fish,roofward,signal_ridge,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+527,33,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+528,34,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+529,34,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+530,34,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.934,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+531,34,autumn_wind,fish,roofward,signal_ridge,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+532,34,autumn_wind,fish,archive_quarter,orchard_fen,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+533,34,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+534,34,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+535,34,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+536,34,autumn_wind,fish,roofward,signal_ridge,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+537,34,autumn_wind,fish,archive_quarter,orchard_fen,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+538,34,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+539,34,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+540,34,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+541,34,autumn_wind,fish,roofward,signal_ridge,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+542,34,autumn_wind,fish,archive_quarter,orchard_fen,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+543,34,autumn_wind,fish,signal_ridge,riverbend,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+544,35,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+545,35,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+546,35,autumn_wind,fish,roofward,signal_ridge,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+547,35,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+548,35,autumn_wind,fish,signal_ridge,riverbend,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+549,35,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+550,35,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+551,35,autumn_wind,fish,roofward,signal_ridge,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+552,35,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+553,35,autumn_wind,fish,signal_ridge,riverbend,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+554,35,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+555,35,autumn_wind,fish,riverbend,archive_quarter,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+556,35,autumn_wind,fish,roofward,signal_ridge,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+557,35,autumn_wind,fish,archive_quarter,orchard_fen,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+558,35,autumn_wind,fish,signal_ridge,riverbend,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+559,35,autumn_wind,fish,orchard_fen,roofward,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+560,36,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+561,36,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+562,36,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+563,36,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+564,36,autumn_wind,fish,riverbend,archive_quarter,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+565,36,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+566,36,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+567,36,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+568,36,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+569,36,autumn_wind,fish,riverbend,archive_quarter,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+570,36,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+571,36,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+572,36,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+573,36,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+574,36,autumn_wind,fish,riverbend,archive_quarter,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+575,36,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+576,37,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+577,37,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+578,37,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+579,37,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+580,37,autumn_wind,fish,roofward,signal_ridge,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+581,37,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+582,37,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+583,37,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+584,37,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+585,37,autumn_wind,fish,roofward,signal_ridge,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+586,37,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+587,37,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+588,37,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+589,37,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+590,37,autumn_wind,fish,roofward,signal_ridge,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+591,37,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+592,38,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+593,38,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+594,38,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+595,38,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+596,38,autumn_wind,fish,archive_quarter,orchard_fen,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+597,38,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+598,38,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+599,38,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+600,38,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+601,38,autumn_wind,fish,archive_quarter,orchard_fen,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+602,38,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+603,38,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+604,38,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+605,38,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+606,38,autumn_wind,fish,archive_quarter,orchard_fen,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+607,38,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+608,39,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+609,39,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+610,39,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+611,39,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+612,39,autumn_wind,fish,signal_ridge,riverbend,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+613,39,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+614,39,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+615,39,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+616,39,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+617,39,autumn_wind,fish,signal_ridge,riverbend,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+618,39,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+619,39,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+620,39,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+621,39,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+622,39,autumn_wind,fish,signal_ridge,riverbend,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+623,39,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+624,40,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+625,40,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+626,40,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+627,40,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+628,40,autumn_wind,fish,orchard_fen,roofward,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+629,40,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+630,40,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+631,40,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+632,40,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+633,40,autumn_wind,fish,orchard_fen,roofward,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+634,40,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+635,40,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+636,40,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+637,40,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+638,40,autumn_wind,fish,orchard_fen,roofward,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+639,40,autumn_wind,fish,riverbend,archive_quarter,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+640,41,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+641,41,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+642,41,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+643,41,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+644,41,autumn_wind,fish,riverbend,archive_quarter,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+645,41,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+646,41,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+647,41,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+648,41,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+649,41,autumn_wind,fish,riverbend,archive_quarter,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+650,41,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+651,41,autumn_wind,fish,archive_quarter,orchard_fen,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+652,41,autumn_wind,fish,signal_ridge,riverbend,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+653,41,autumn_wind,fish,orchard_fen,roofward,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+654,41,autumn_wind,fish,riverbend,archive_quarter,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+655,41,autumn_wind,fish,roofward,signal_ridge,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+656,42,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+657,42,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+658,42,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+659,42,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+660,42,autumn_wind,fish,archive_quarter,orchard_fen,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+661,42,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+662,42,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+663,42,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+664,42,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+665,42,autumn_wind,fish,archive_quarter,orchard_fen,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+666,42,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+667,42,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+668,42,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+669,42,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+670,42,autumn_wind,fish,archive_quarter,orchard_fen,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+671,42,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+672,43,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+673,43,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+674,43,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+675,43,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+676,43,autumn_wind,fish,signal_ridge,riverbend,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+677,43,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+678,43,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+679,43,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+680,43,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+681,43,autumn_wind,fish,signal_ridge,riverbend,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+682,43,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+683,43,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+684,43,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+685,43,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+686,43,autumn_wind,fish,signal_ridge,riverbend,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+687,43,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+688,44,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+689,44,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+690,44,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+691,44,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+692,44,autumn_wind,fish,orchard_fen,roofward,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+693,44,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+694,44,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+695,44,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+696,44,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+697,44,autumn_wind,fish,orchard_fen,roofward,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+698,44,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+699,44,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+700,44,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+701,44,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+702,44,autumn_wind,fish,orchard_fen,roofward,0.11136,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+703,44,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+704,45,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+705,45,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+706,45,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+707,45,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+708,45,autumn_wind,fish,riverbend,archive_quarter,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+709,45,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+710,45,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+711,45,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+712,45,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+713,45,autumn_wind,fish,riverbend,archive_quarter,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+714,45,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+715,45,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+716,45,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+717,45,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+718,45,autumn_wind,fish,riverbend,archive_quarter,0.112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+719,45,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+720,46,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+721,46,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+722,46,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+723,46,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+724,46,autumn_wind,fish,roofward,signal_ridge,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+725,46,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+726,46,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+727,46,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+728,46,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+729,46,autumn_wind,fish,roofward,signal_ridge,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+730,46,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+731,46,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+732,46,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+733,46,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+734,46,autumn_wind,fish,roofward,signal_ridge,0.11264,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+735,46,autumn_wind,fish,archive_quarter,orchard_fen,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+736,47,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+737,47,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+738,47,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+739,47,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+740,47,autumn_wind,fish,archive_quarter,orchard_fen,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+741,47,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+742,47,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+743,47,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+744,47,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+745,47,autumn_wind,fish,archive_quarter,orchard_fen,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+746,47,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+747,47,autumn_wind,fish,orchard_fen,roofward,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+748,47,autumn_wind,fish,riverbend,archive_quarter,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+749,47,autumn_wind,fish,roofward,signal_ridge,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+750,47,autumn_wind,fish,archive_quarter,orchard_fen,0.11328,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+751,47,autumn_wind,fish,signal_ridge,riverbend,0.11312,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+752,48,autumn_wind,fish,riverbend,archive_quarter,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+753,48,autumn_wind,fish,roofward,signal_ridge,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+754,48,autumn_wind,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+755,48,autumn_wind,fish,signal_ridge,riverbend,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+756,48,autumn_wind,fish,orchard_fen,roofward,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+757,48,autumn_wind,fish,riverbend,archive_quarter,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+758,48,autumn_wind,fish,roofward,signal_ridge,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+759,48,autumn_wind,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+760,48,autumn_wind,fish,signal_ridge,riverbend,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+761,48,autumn_wind,fish,orchard_fen,roofward,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+762,48,autumn_wind,fish,riverbend,archive_quarter,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+763,48,autumn_wind,fish,roofward,signal_ridge,0.1112,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+764,48,autumn_wind,fish,archive_quarter,orchard_fen,0.11184,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+765,48,autumn_wind,fish,signal_ridge,riverbend,0.11248,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+766,48,autumn_wind,fish,orchard_fen,roofward,0.11392,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+767,48,autumn_wind,fish,riverbend,archive_quarter,0.11056,0.94,0.94,autumn_wind resource movement,True,open fish passage / shade seeds / ration oil
+768,49,winter_cold,oil,roofward,signal_ridge,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+769,49,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+770,49,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+771,49,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+772,49,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+773,49,winter_cold,oil,roofward,signal_ridge,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+774,49,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+775,49,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+776,49,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+777,49,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+778,49,winter_cold,oil,roofward,signal_ridge,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+779,49,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+780,49,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+781,49,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+782,49,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.937,none,False,none
+783,49,winter_cold,oil,roofward,signal_ridge,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+784,50,winter_cold,oil,archive_quarter,orchard_fen,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+785,50,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+786,50,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+787,50,winter_cold,oil,riverbend,archive_quarter,0.0,0.937,0.94,none,False,none
+788,50,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+789,50,winter_cold,oil,archive_quarter,orchard_fen,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+790,50,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+791,50,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+792,50,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+793,50,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+794,50,winter_cold,oil,archive_quarter,orchard_fen,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+795,50,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+796,50,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+797,50,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+798,50,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+799,50,winter_cold,oil,archive_quarter,orchard_fen,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+800,51,winter_cold,oil,signal_ridge,riverbend,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+801,51,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+802,51,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+803,51,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+804,51,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+805,51,winter_cold,oil,signal_ridge,riverbend,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+806,51,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+807,51,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+808,51,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+809,51,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+810,51,winter_cold,oil,signal_ridge,riverbend,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+811,51,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+812,51,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+813,51,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+814,51,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+815,51,winter_cold,oil,signal_ridge,riverbend,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+816,52,winter_cold,oil,orchard_fen,roofward,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+817,52,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+818,52,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+819,52,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+820,52,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+821,52,winter_cold,oil,orchard_fen,roofward,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+822,52,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+823,52,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+824,52,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+825,52,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+826,52,winter_cold,oil,orchard_fen,roofward,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+827,52,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+828,52,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+829,52,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+830,52,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+831,52,winter_cold,oil,orchard_fen,roofward,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+832,53,winter_cold,oil,riverbend,archive_quarter,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+833,53,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+834,53,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+835,53,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+836,53,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+837,53,winter_cold,oil,riverbend,archive_quarter,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+838,53,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+839,53,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+840,53,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+841,53,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+842,53,winter_cold,oil,riverbend,archive_quarter,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+843,53,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+844,53,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+845,53,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+846,53,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+847,53,winter_cold,oil,riverbend,archive_quarter,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+848,54,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+849,54,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+850,54,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+851,54,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+852,54,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+853,54,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+854,54,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+855,54,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+856,54,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+857,54,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+858,54,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+859,54,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+860,54,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+861,54,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+862,54,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+863,54,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+864,55,winter_cold,oil,signal_ridge,riverbend,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+865,55,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+866,55,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+867,55,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+868,55,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+869,55,winter_cold,oil,signal_ridge,riverbend,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+870,55,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+871,55,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+872,55,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+873,55,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+874,55,winter_cold,oil,signal_ridge,riverbend,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+875,55,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+876,55,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+877,55,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+878,55,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+879,55,winter_cold,oil,signal_ridge,riverbend,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+880,56,winter_cold,oil,orchard_fen,roofward,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+881,56,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+882,56,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+883,56,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+884,56,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+885,56,winter_cold,oil,orchard_fen,roofward,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+886,56,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+887,56,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+888,56,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+889,56,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+890,56,winter_cold,oil,orchard_fen,roofward,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+891,56,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+892,56,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+893,56,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+894,56,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+895,56,winter_cold,oil,orchard_fen,roofward,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+896,57,winter_cold,oil,riverbend,archive_quarter,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+897,57,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+898,57,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+899,57,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+900,57,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+901,57,winter_cold,oil,riverbend,archive_quarter,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+902,57,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+903,57,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+904,57,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+905,57,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+906,57,winter_cold,oil,riverbend,archive_quarter,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+907,57,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+908,57,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+909,57,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+910,57,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+911,57,winter_cold,oil,riverbend,archive_quarter,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+912,58,winter_cold,oil,roofward,signal_ridge,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+913,58,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+914,58,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+915,58,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+916,58,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+917,58,winter_cold,oil,roofward,signal_ridge,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+918,58,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+919,58,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+920,58,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+921,58,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+922,58,winter_cold,oil,roofward,signal_ridge,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+923,58,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+924,58,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+925,58,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+926,58,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+927,58,winter_cold,oil,roofward,signal_ridge,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+928,59,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+929,59,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+930,59,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+931,59,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+932,59,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+933,59,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+934,59,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.937,none,False,none
+935,59,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+936,59,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+937,59,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+938,59,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+939,59,winter_cold,oil,signal_ridge,riverbend,0.0,0.937,0.94,none,False,none
+940,59,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+941,59,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+942,59,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+943,59,winter_cold,oil,archive_quarter,orchard_fen,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+944,60,winter_cold,oil,orchard_fen,roofward,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+945,60,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+946,60,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+947,60,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+948,60,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+949,60,winter_cold,oil,orchard_fen,roofward,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+950,60,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+951,60,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+952,60,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+953,60,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+954,60,winter_cold,oil,orchard_fen,roofward,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+955,60,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+956,60,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+957,60,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+958,60,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+959,60,winter_cold,oil,orchard_fen,roofward,0.10368,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+960,61,winter_cold,oil,riverbend,archive_quarter,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+961,61,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+962,61,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+963,61,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+964,61,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+965,61,winter_cold,oil,riverbend,archive_quarter,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+966,61,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.937,none,False,none
+967,61,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+968,61,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+969,61,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+970,61,winter_cold,oil,riverbend,archive_quarter,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+971,61,winter_cold,oil,roofward,signal_ridge,0.0,0.937,0.94,none,False,none
+972,61,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+973,61,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+974,61,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+975,61,winter_cold,oil,riverbend,archive_quarter,0.10432,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+976,62,winter_cold,oil,roofward,signal_ridge,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+977,62,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+978,62,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+979,62,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+980,62,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+981,62,winter_cold,oil,roofward,signal_ridge,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+982,62,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+983,62,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+984,62,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+985,62,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+986,62,winter_cold,oil,roofward,signal_ridge,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+987,62,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+988,62,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+989,62,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+990,62,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.937,none,False,none
+991,62,winter_cold,oil,roofward,signal_ridge,0.10176,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+992,63,winter_cold,oil,archive_quarter,orchard_fen,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+993,63,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+994,63,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+995,63,winter_cold,oil,riverbend,archive_quarter,0.0,0.937,0.94,none,False,none
+996,63,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+997,63,winter_cold,oil,archive_quarter,orchard_fen,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+998,63,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+999,63,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+1000,63,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+1001,63,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+1002,63,winter_cold,oil,archive_quarter,orchard_fen,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+1003,63,winter_cold,oil,signal_ridge,riverbend,0.0,0.94,0.94,none,False,none
+1004,63,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+1005,63,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+1006,63,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+1007,63,winter_cold,oil,archive_quarter,orchard_fen,0.1024,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+1008,64,winter_cold,oil,signal_ridge,riverbend,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+1009,64,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+1010,64,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+1011,64,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+1012,64,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+1013,64,winter_cold,oil,signal_ridge,riverbend,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+1014,64,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+1015,64,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+1016,64,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+1017,64,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+1018,64,winter_cold,oil,signal_ridge,riverbend,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil
+1019,64,winter_cold,oil,orchard_fen,roofward,0.0,0.94,0.94,none,False,none
+1020,64,winter_cold,oil,riverbend,archive_quarter,0.0,0.94,0.94,none,False,none
+1021,64,winter_cold,oil,roofward,signal_ridge,0.0,0.94,0.94,none,False,none
+1022,64,winter_cold,oil,archive_quarter,orchard_fen,0.0,0.94,0.94,none,False,none
+1023,64,winter_cold,oil,signal_ridge,riverbend,0.10304,0.94,0.94,winter_cold resource movement,True,open fish passage / shade seeds / ration oil

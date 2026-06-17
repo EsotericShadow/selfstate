@@ -1,0 +1,1025 @@
+tick_id,day,agent,region_id,routine_before,routine_after,trigger,routine_changed,later_visible,rollback_option
+0,1,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+1,1,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+2,1,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+3,1,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+4,1,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+5,1,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+6,1,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+7,1,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+8,1,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+9,1,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+10,1,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+11,1,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+12,1,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+13,1,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+14,1,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+15,1,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+16,2,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+17,2,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+18,2,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+19,2,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+20,2,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+21,2,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+22,2,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+23,2,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+24,2,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+25,2,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+26,2,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+27,2,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+28,2,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+29,2,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+30,2,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+31,2,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+32,3,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+33,3,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+34,3,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+35,3,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+36,3,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+37,3,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+38,3,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+39,3,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+40,3,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+41,3,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+42,3,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+43,3,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+44,3,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+45,3,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+46,3,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+47,3,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+48,4,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+49,4,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+50,4,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+51,4,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+52,4,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+53,4,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+54,4,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+55,4,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+56,4,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+57,4,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+58,4,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+59,4,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+60,4,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+61,4,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+62,4,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+63,4,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+64,5,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+65,5,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+66,5,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+67,5,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+68,5,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+69,5,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+70,5,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+71,5,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+72,5,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+73,5,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+74,5,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+75,5,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+76,5,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+77,5,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+78,5,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+79,5,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+80,6,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+81,6,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+82,6,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+83,6,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+84,6,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+85,6,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+86,6,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+87,6,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+88,6,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+89,6,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+90,6,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+91,6,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+92,6,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+93,6,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+94,6,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+95,6,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+96,7,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+97,7,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+98,7,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+99,7,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+100,7,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+101,7,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+102,7,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+103,7,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+104,7,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+105,7,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+106,7,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+107,7,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+108,7,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+109,7,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+110,7,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+111,7,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+112,8,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+113,8,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+114,8,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+115,8,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+116,8,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+117,8,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+118,8,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+119,8,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+120,8,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+121,8,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+122,8,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+123,8,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+124,8,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+125,8,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+126,8,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+127,8,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+128,9,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+129,9,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+130,9,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+131,9,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+132,9,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+133,9,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+134,9,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+135,9,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+136,9,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+137,9,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+138,9,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+139,9,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+140,9,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+141,9,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+142,9,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+143,9,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+144,10,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+145,10,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+146,10,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+147,10,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+148,10,Ivo,orchard_fen,seasonal planting,seasonal planting,collapse fallback,False,False,none
+149,10,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+150,10,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+151,10,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+152,10,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+153,10,Ivo,orchard_fen,seasonal planting,seasonal planting,collapse fallback,False,False,none
+154,10,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+155,10,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+156,10,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+157,10,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+158,10,Ivo,orchard_fen,seasonal planting,seasonal planting,collapse fallback,False,False,none
+159,10,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+160,11,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+161,11,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+162,11,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+163,11,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+164,11,Ari,riverbend,market crossing,market crossing,collapse fallback,False,False,none
+165,11,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+166,11,Nia,archive_quarter,weather notices,weather notices,supply route blocked,False,False,none
+167,11,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+168,11,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+169,11,Ari,riverbend,market crossing,market crossing,collapse fallback,False,False,none
+170,11,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+171,11,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+172,11,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+173,11,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+174,11,Ari,riverbend,market crossing,market crossing,collapse fallback,False,False,none
+175,11,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+176,12,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+177,12,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+178,12,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+179,12,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+180,12,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+181,12,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+182,12,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+183,12,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+184,12,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+185,12,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+186,12,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+187,12,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+188,12,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+189,12,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+190,12,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+191,12,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+192,13,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+193,13,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+194,13,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+195,13,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+196,13,Milo,signal_ridge,dusk signals,dusk signals,collapse fallback,False,False,none
+197,13,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+198,13,Ari,riverbend,market crossing,market crossing,supply route blocked,False,False,none
+199,13,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+200,13,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+201,13,Milo,signal_ridge,dusk signals,dusk signals,collapse fallback,False,False,none
+202,13,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+203,13,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+204,13,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+205,13,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+206,13,Milo,signal_ridge,dusk signals,dusk signals,collapse fallback,False,False,none
+207,13,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+208,14,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+209,14,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+210,14,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+211,14,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+212,14,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+213,14,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+214,14,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+215,14,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+216,14,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+217,14,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+218,14,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+219,14,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+220,14,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+221,14,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+222,14,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+223,14,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+224,15,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+225,15,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+226,15,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+227,15,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+228,15,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+229,15,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+230,15,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+231,15,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+232,15,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+233,15,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+234,15,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+235,15,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+236,15,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+237,15,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+238,15,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+239,15,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+240,16,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+241,16,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+242,16,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+243,16,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+244,16,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+245,16,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+246,16,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+247,16,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+248,16,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+249,16,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+250,16,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+251,16,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+252,16,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+253,16,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+254,16,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+255,16,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+256,17,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+257,17,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+258,17,Ari,riverbend,market crossing,market crossing,none,False,False,none
+259,17,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+260,17,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+261,17,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+262,17,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+263,17,Ari,riverbend,market crossing,market crossing,none,False,False,none
+264,17,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+265,17,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+266,17,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+267,17,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+268,17,Ari,riverbend,market crossing,market crossing,none,False,False,none
+269,17,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+270,17,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+271,17,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+272,18,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+273,18,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+274,18,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+275,18,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+276,18,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+277,18,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+278,18,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+279,18,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+280,18,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+281,18,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+282,18,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+283,18,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+284,18,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+285,18,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+286,18,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+287,18,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+288,19,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+289,19,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+290,19,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+291,19,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+292,19,Ari,riverbend,market crossing,market crossing,none,False,False,none
+293,19,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+294,19,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+295,19,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+296,19,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+297,19,Ari,riverbend,market crossing,market crossing,none,False,False,none
+298,19,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+299,19,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+300,19,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+301,19,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+302,19,Ari,riverbend,market crossing,market crossing,none,False,False,none
+303,19,Fay,roofward,greenhouse tending,greenhouse tending,seasonal migration,False,False,none
+304,20,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+305,20,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+306,20,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+307,20,Ari,riverbend,market crossing,market crossing,none,False,False,none
+308,20,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+309,20,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+310,20,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+311,20,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+312,20,Ari,riverbend,market crossing,market crossing,none,False,False,none
+313,20,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+314,20,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+315,20,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+316,20,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+317,20,Ari,riverbend,market crossing,market crossing,none,False,False,none
+318,20,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+319,20,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+320,21,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+321,21,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+322,21,Ari,riverbend,market crossing,market crossing,none,False,False,none
+323,21,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+324,21,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+325,21,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+326,21,Ivo,orchard_fen,seasonal planting,seasonal planting,supply route blocked,False,False,none
+327,21,Ari,riverbend,market crossing,market crossing,none,False,False,none
+328,21,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+329,21,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+330,21,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+331,21,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+332,21,Ari,riverbend,market crossing,market crossing,none,False,False,none
+333,21,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+334,21,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+335,21,Milo,signal_ridge,dusk signals,dusk signals,seasonal migration,False,False,none
+336,22,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+337,22,Ari,riverbend,market crossing,market crossing,none,False,False,none
+338,22,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+339,22,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+340,22,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+341,22,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+342,22,Ari,riverbend,market crossing,market crossing,none,False,False,none
+343,22,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+344,22,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+345,22,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+346,22,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+347,22,Ari,riverbend,market crossing,market crossing,none,False,False,none
+348,22,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+349,22,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+350,22,Milo,signal_ridge,dusk signals,dusk signals,supply route blocked,False,False,none
+351,22,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+352,23,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+353,23,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+354,23,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+355,23,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+356,23,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+357,23,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+358,23,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+359,23,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+360,23,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+361,23,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+362,23,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+363,23,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+364,23,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+365,23,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+366,23,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+367,23,Ari,riverbend,market crossing,market crossing,seasonal migration,False,False,none
+368,24,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+369,24,Milo,signal_ridge,dusk signals,dusk signals,none,False,False,none
+370,24,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+371,24,Ari,riverbend,market crossing,market crossing,none,False,False,none
+372,24,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+373,24,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+374,24,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,succession and upgrade,True,False,fallback to household route if collapse returns
+375,24,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+376,24,Ari,riverbend,market crossing,market crossing,none,False,False,none
+377,24,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+378,24,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+379,24,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,False,fallback to household route if collapse returns
+380,24,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+381,24,Ari,riverbend,market crossing,market crossing,none,False,False,none
+382,24,Fay,roofward,greenhouse tending,greenhouse tending,supply route blocked,False,False,none
+383,24,Nia,archive_quarter,weather notices,weather notices,seasonal migration,False,False,none
+384,25,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,False,fallback to household route if collapse returns
+385,25,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+386,25,Ari,riverbend,market crossing,market crossing,none,False,False,none
+387,25,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+388,25,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+389,25,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,False,fallback to household route if collapse returns
+390,25,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+391,25,Ari,riverbend,market crossing,market crossing,none,False,False,none
+392,25,Fay,roofward,greenhouse tending,greenhouse tending,none,False,False,none
+393,25,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+394,25,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,False,fallback to household route if collapse returns
+395,25,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+396,25,Ari,riverbend,market crossing,market crossing,none,False,False,none
+397,25,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,succession and upgrade,True,False,fallback to household route if collapse returns
+398,25,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+399,25,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,False,fallback to household route if collapse returns
+400,26,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+401,26,Ari,riverbend,market crossing,market crossing,none,False,False,none
+402,26,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+403,26,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+404,26,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+405,26,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+406,26,Ari,riverbend,market crossing,market crossing,none,False,False,none
+407,26,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+408,26,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+409,26,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+410,26,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+411,26,Ari,riverbend,market crossing,regional market crossing with Toma,succession and upgrade,True,True,fallback to household route if collapse returns
+412,26,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+413,26,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+414,26,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+415,26,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+416,27,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+417,27,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+418,27,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+419,27,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+420,27,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+421,27,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+422,27,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+423,27,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+424,27,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+425,27,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+426,27,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+427,27,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+428,27,Nia,archive_quarter,weather notices,weather notices,none,False,False,none
+429,27,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+430,27,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+431,27,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+432,28,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+433,28,Nia,archive_quarter,weather notices,regional weather notices with Sera,succession and upgrade,True,True,fallback to household route if collapse returns
+434,28,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+435,28,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+436,28,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+437,28,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+438,28,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+439,28,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+440,28,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+441,28,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+442,28,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+443,28,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+444,28,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+445,28,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+446,28,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+447,28,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+448,29,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+449,29,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+450,29,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+451,29,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+452,29,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,collapse fallback,False,True,fallback to household route if collapse returns
+453,29,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+454,29,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+455,29,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+456,29,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+457,29,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,collapse fallback,False,True,fallback to household route if collapse returns
+458,29,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+459,29,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+460,29,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+461,29,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+462,29,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,collapse fallback,False,True,fallback to household route if collapse returns
+463,29,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+464,30,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+465,30,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+466,30,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+467,30,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+468,30,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+469,30,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+470,30,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+471,30,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+472,30,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+473,30,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+474,30,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+475,30,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+476,30,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+477,30,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+478,30,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+479,30,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+480,31,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+481,31,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+482,31,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+483,31,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+484,31,Ivo,orchard_fen,seasonal planting,seasonal planting,collapse fallback,False,False,none
+485,31,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+486,31,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+487,31,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+488,31,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+489,31,Ivo,orchard_fen,seasonal planting,seasonal planting,collapse fallback,False,False,none
+490,31,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+491,31,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+492,31,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+493,31,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+494,31,Ivo,orchard_fen,seasonal planting,seasonal planting,collapse fallback,False,False,none
+495,31,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+496,32,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+497,32,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+498,32,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+499,32,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+500,32,Ari,riverbend,market crossing,regional market crossing with Toma,collapse fallback,False,True,fallback to household route if collapse returns
+501,32,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+502,32,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+503,32,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+504,32,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+505,32,Ari,riverbend,market crossing,regional market crossing with Toma,collapse fallback,False,True,fallback to household route if collapse returns
+506,32,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+507,32,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+508,32,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+509,32,Ivo,orchard_fen,seasonal planting,seasonal planting,none,False,False,none
+510,32,Ari,riverbend,market crossing,regional market crossing with Toma,collapse fallback,False,True,fallback to household route if collapse returns
+511,32,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+512,33,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+513,33,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+514,33,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+515,33,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+516,33,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+517,33,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+518,33,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+519,33,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+520,33,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+521,33,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+522,33,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+523,33,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+524,33,Ivo,orchard_fen,seasonal planting,seasonal planting,seasonal migration,False,False,none
+525,33,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+526,33,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+527,33,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+528,34,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+529,34,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,succession and upgrade,True,True,fallback to household route if collapse returns
+530,34,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+531,34,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+532,34,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+533,34,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+534,34,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+535,34,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+536,34,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+537,34,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+538,34,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+539,34,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+540,34,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+541,34,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+542,34,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+543,34,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+544,35,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+545,35,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+546,35,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+547,35,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+548,35,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+549,35,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+550,35,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+551,35,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+552,35,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+553,35,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+554,35,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+555,35,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+556,35,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+557,35,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+558,35,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+559,35,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+560,36,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+561,36,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+562,36,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+563,36,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+564,36,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+565,36,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+566,36,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+567,36,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+568,36,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+569,36,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+570,36,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+571,36,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+572,36,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+573,36,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+574,36,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+575,36,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+576,37,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+577,37,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+578,37,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+579,37,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+580,37,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+581,37,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+582,37,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+583,37,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+584,37,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+585,37,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+586,37,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+587,37,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+588,37,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+589,37,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+590,37,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+591,37,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+592,38,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+593,38,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+594,38,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+595,38,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+596,38,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+597,38,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+598,38,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+599,38,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+600,38,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+601,38,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+602,38,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+603,38,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+604,38,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+605,38,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+606,38,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+607,38,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+608,39,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+609,39,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+610,39,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+611,39,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+612,39,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+613,39,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+614,39,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+615,39,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+616,39,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+617,39,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+618,39,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+619,39,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+620,39,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+621,39,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+622,39,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+623,39,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+624,40,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+625,40,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+626,40,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+627,40,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+628,40,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+629,40,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+630,40,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+631,40,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+632,40,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+633,40,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+634,40,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+635,40,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+636,40,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+637,40,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+638,40,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+639,40,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+640,41,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+641,41,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+642,41,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+643,41,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+644,41,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+645,41,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+646,41,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+647,41,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+648,41,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+649,41,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+650,41,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+651,41,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+652,41,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+653,41,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+654,41,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+655,41,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+656,42,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+657,42,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+658,42,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+659,42,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+660,42,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+661,42,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+662,42,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+663,42,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+664,42,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+665,42,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+666,42,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+667,42,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+668,42,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+669,42,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+670,42,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+671,42,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+672,43,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+673,43,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+674,43,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+675,43,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+676,43,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+677,43,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+678,43,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+679,43,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+680,43,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+681,43,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+682,43,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+683,43,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+684,43,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+685,43,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+686,43,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+687,43,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+688,44,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+689,44,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+690,44,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+691,44,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+692,44,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+693,44,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+694,44,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+695,44,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+696,44,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+697,44,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+698,44,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+699,44,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+700,44,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+701,44,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+702,44,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+703,44,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+704,45,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+705,45,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+706,45,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+707,45,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+708,45,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+709,45,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+710,45,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+711,45,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+712,45,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+713,45,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+714,45,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+715,45,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+716,45,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+717,45,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+718,45,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+719,45,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+720,46,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+721,46,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+722,46,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+723,46,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+724,46,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+725,46,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+726,46,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+727,46,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+728,46,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+729,46,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+730,46,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+731,46,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+732,46,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+733,46,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+734,46,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+735,46,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+736,47,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+737,47,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+738,47,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+739,47,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+740,47,Nia,archive_quarter,weather notices,regional weather notices with Sera,collapse fallback,False,True,fallback to household route if collapse returns
+741,47,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+742,47,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+743,47,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+744,47,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+745,47,Nia,archive_quarter,weather notices,regional weather notices with Sera,collapse fallback,False,True,fallback to household route if collapse returns
+746,47,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+747,47,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+748,47,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+749,47,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+750,47,Nia,archive_quarter,weather notices,regional weather notices with Sera,collapse fallback,False,True,fallback to household route if collapse returns
+751,47,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+752,48,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+753,48,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+754,48,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+755,48,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+756,48,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+757,48,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+758,48,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+759,48,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+760,48,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+761,48,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+762,48,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+763,48,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+764,48,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+765,48,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+766,48,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+767,48,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+768,49,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+769,49,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+770,49,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+771,49,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+772,49,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+773,49,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+774,49,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+775,49,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+776,49,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+777,49,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+778,49,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+779,49,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+780,49,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+781,49,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+782,49,Ari,riverbend,market crossing,regional market crossing with Toma,supply route blocked,False,True,fallback to household route if collapse returns
+783,49,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+784,50,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+785,50,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+786,50,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+787,50,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+788,50,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+789,50,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+790,50,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+791,50,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+792,50,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+793,50,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+794,50,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+795,50,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+796,50,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+797,50,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+798,50,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+799,50,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+800,51,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+801,51,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+802,51,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+803,51,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+804,51,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+805,51,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+806,51,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+807,51,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+808,51,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+809,51,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+810,51,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+811,51,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+812,51,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+813,51,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+814,51,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+815,51,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+816,52,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+817,52,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+818,52,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+819,52,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+820,52,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+821,52,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+822,52,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+823,52,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+824,52,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+825,52,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+826,52,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+827,52,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+828,52,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+829,52,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+830,52,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+831,52,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+832,53,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+833,53,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+834,53,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+835,53,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+836,53,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+837,53,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+838,53,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+839,53,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+840,53,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+841,53,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+842,53,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+843,53,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+844,53,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+845,53,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+846,53,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+847,53,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+848,54,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+849,54,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+850,54,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+851,54,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+852,54,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+853,54,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+854,54,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+855,54,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+856,54,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+857,54,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+858,54,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+859,54,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+860,54,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+861,54,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+862,54,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+863,54,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+864,55,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+865,55,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+866,55,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+867,55,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+868,55,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+869,55,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+870,55,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+871,55,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+872,55,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+873,55,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+874,55,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+875,55,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+876,55,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+877,55,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+878,55,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+879,55,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+880,56,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+881,56,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+882,56,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+883,56,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+884,56,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+885,56,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+886,56,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+887,56,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+888,56,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+889,56,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+890,56,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+891,56,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+892,56,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+893,56,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+894,56,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+895,56,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+896,57,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+897,57,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+898,57,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+899,57,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+900,57,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+901,57,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+902,57,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+903,57,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+904,57,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+905,57,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+906,57,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+907,57,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+908,57,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+909,57,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+910,57,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+911,57,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+912,58,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+913,58,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+914,58,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+915,58,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+916,58,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+917,58,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+918,58,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+919,58,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+920,58,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+921,58,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+922,58,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+923,58,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+924,58,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+925,58,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+926,58,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+927,58,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+928,59,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+929,59,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+930,59,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+931,59,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+932,59,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+933,59,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+934,59,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,supply route blocked,False,True,fallback to household route if collapse returns
+935,59,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+936,59,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+937,59,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+938,59,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+939,59,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+940,59,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+941,59,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+942,59,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+943,59,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+944,60,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+945,60,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+946,60,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+947,60,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+948,60,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+949,60,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+950,60,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+951,60,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+952,60,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+953,60,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+954,60,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+955,60,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+956,60,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+957,60,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+958,60,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+959,60,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,seasonal migration,False,True,fallback to household route if collapse returns
+960,61,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+961,61,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+962,61,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+963,61,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+964,61,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+965,61,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+966,61,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,supply route blocked,False,True,fallback to household route if collapse returns
+967,61,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+968,61,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+969,61,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+970,61,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+971,61,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+972,61,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+973,61,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+974,61,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+975,61,Ari,riverbend,market crossing,regional market crossing with Toma,seasonal migration,False,True,fallback to household route if collapse returns
+976,62,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+977,62,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+978,62,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+979,62,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+980,62,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+981,62,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+982,62,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+983,62,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+984,62,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+985,62,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+986,62,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+987,62,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+988,62,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+989,62,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+990,62,Ari,riverbend,market crossing,regional market crossing with Toma,supply route blocked,False,True,fallback to household route if collapse returns
+991,62,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,seasonal migration,False,True,fallback to household route if collapse returns
+992,63,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+993,63,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+994,63,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+995,63,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+996,63,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+997,63,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+998,63,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+999,63,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+1000,63,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+1001,63,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+1002,63,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+1003,63,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,none,False,True,fallback to household route if collapse returns
+1004,63,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+1005,63,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+1006,63,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+1007,63,Nia,archive_quarter,weather notices,regional weather notices with Sera,seasonal migration,False,True,fallback to household route if collapse returns
+1008,64,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+1009,64,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+1010,64,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+1011,64,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+1012,64,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+1013,64,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+1014,64,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+1015,64,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+1016,64,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+1017,64,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+1018,64,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns
+1019,64,Ivo,orchard_fen,seasonal planting,regional seasonal planting with Mara,none,False,True,fallback to household route if collapse returns
+1020,64,Ari,riverbend,market crossing,regional market crossing with Toma,none,False,True,fallback to household route if collapse returns
+1021,64,Fay,roofward,greenhouse tending,regional greenhouse tending with Lio,none,False,True,fallback to household route if collapse returns
+1022,64,Nia,archive_quarter,weather notices,regional weather notices with Sera,none,False,True,fallback to household route if collapse returns
+1023,64,Milo,signal_ridge,dusk signals,regional dusk signals with Ren,seasonal migration,False,True,fallback to household route if collapse returns

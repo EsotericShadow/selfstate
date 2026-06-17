@@ -1,0 +1,1025 @@
+tick_id,day,season,region_id,sight_cue,sound_cue,smell_cue,temperature_cue,wetness_cue,body_cue,rhythm_marker,sensory_bound_to_region
+0,1,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+1,1,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+2,1,spring_rain,archive_quarter,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+3,1,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+4,1,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+5,1,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+6,1,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+7,1,spring_rain,archive_quarter,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+8,1,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+9,1,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+10,1,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+11,1,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+12,1,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+13,1,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+14,1,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+15,1,spring_rain,riverbend,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,ambient-rate,True
+16,2,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+17,2,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+18,2,spring_rain,signal_ridge,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+19,2,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+20,2,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+21,2,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+22,2,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+23,2,spring_rain,signal_ridge,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+24,2,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+25,2,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+26,2,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+27,2,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+28,2,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+29,2,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+30,2,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+31,2,spring_rain,roofward,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,ambient-rate,True
+32,3,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+33,3,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+34,3,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+35,3,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+36,3,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+37,3,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+38,3,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+39,3,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+40,3,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+41,3,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+42,3,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+43,3,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+44,3,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,flower-node,True
+45,3,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+46,3,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+47,3,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+48,4,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+49,4,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+50,4,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+51,4,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+52,4,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+53,4,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+54,4,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+55,4,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+56,4,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+57,4,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+58,4,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+59,4,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+60,4,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+61,4,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+62,4,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+63,4,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+64,5,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+65,5,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+66,5,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+67,5,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+68,5,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+69,5,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+70,5,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+71,5,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+72,5,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+73,5,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+74,5,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+75,5,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+76,5,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+77,5,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+78,5,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+79,5,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+80,6,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+81,6,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+82,6,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+83,6,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+84,6,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+85,6,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+86,6,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+87,6,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+88,6,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+89,6,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+90,6,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+91,6,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+92,6,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+93,6,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+94,6,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+95,6,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+96,7,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+97,7,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+98,7,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+99,7,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+100,7,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+101,7,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+102,7,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+103,7,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+104,7,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+105,7,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+106,7,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+107,7,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+108,7,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+109,7,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+110,7,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+111,7,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+112,8,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+113,8,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+114,8,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+115,8,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+116,8,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+117,8,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+118,8,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+119,8,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+120,8,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+121,8,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+122,8,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+123,8,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+124,8,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+125,8,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+126,8,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+127,8,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+128,9,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+129,9,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+130,9,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+131,9,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+132,9,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+133,9,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+134,9,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+135,9,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+136,9,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+137,9,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+138,9,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+139,9,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+140,9,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+141,9,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+142,9,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+143,9,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+144,10,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+145,10,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+146,10,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+147,10,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+148,10,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+149,10,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+150,10,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+151,10,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+152,10,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+153,10,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+154,10,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+155,10,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+156,10,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+157,10,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+158,10,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+159,10,spring_rain,riverbend,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+160,11,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+161,11,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+162,11,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+163,11,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+164,11,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+165,11,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+166,11,spring_rain,archive_quarter,waiting caravan,quiet exchange,wet river mud,mild air,soaked path,careful carrying,season-pulse,True
+167,11,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+168,11,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+169,11,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+170,11,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+171,11,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+172,11,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+173,11,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+174,11,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+175,11,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+176,12,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+177,12,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+178,12,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+179,12,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+180,12,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+181,12,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+182,12,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+183,12,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+184,12,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+185,12,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+186,12,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+187,12,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+188,12,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+189,12,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+190,12,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+191,12,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+192,13,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+193,13,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+194,13,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+195,13,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+196,13,spring_rain,signal_ridge,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+197,13,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+198,13,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,careful carrying,season-pulse,True
+199,13,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+200,13,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+201,13,spring_rain,signal_ridge,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+202,13,spring_rain,orchard_fen,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+203,13,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+204,13,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+205,13,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+206,13,spring_rain,signal_ridge,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+207,13,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,ambient-rate,True
+208,14,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+209,14,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+210,14,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+211,14,spring_rain,signal_ridge,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+212,14,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+213,14,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+214,14,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+215,14,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+216,14,spring_rain,signal_ridge,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+217,14,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+218,14,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+219,14,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+220,14,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+221,14,spring_rain,signal_ridge,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+222,14,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+223,14,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+224,15,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+225,15,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+226,15,spring_rain,signal_ridge,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+227,15,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+228,15,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+229,15,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+230,15,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+231,15,spring_rain,signal_ridge,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+232,15,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+233,15,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+234,15,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+235,15,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+236,15,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+237,15,spring_rain,orchard_fen,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+238,15,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+239,15,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+240,16,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+241,16,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+242,16,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+243,16,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+244,16,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+245,16,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+246,16,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+247,16,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,season-pulse,True
+248,16,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,flower-node,True
+249,16,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+250,16,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+251,16,spring_rain,signal_ridge,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+252,16,spring_rain,orchard_fen,moving trade tokens,guild hammers,wet river mud,mild air,soaked path,shared guild work,flower-node,True
+253,16,spring_rain,riverbend,shored route marker,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+254,16,spring_rain,roofward,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,season-pulse,True
+255,16,spring_rain,archive_quarter,moving trade tokens,quiet exchange,wet river mud,mild air,soaked path,seasonal travel pace,ambient-rate,True
+256,17,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+257,17,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+258,17,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+259,17,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+260,17,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+261,17,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+262,17,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+263,17,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+264,17,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+265,17,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+266,17,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+267,17,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+268,17,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+269,17,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+270,17,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+271,17,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+272,18,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+273,18,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+274,18,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+275,18,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+276,18,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+277,18,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+278,18,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+279,18,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+280,18,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+281,18,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+282,18,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+283,18,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+284,18,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+285,18,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+286,18,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+287,18,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+288,19,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+289,19,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+290,19,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+291,19,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+292,19,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+293,19,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+294,19,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+295,19,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+296,19,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+297,19,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+298,19,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+299,19,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+300,19,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+301,19,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+302,19,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+303,19,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+304,20,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+305,20,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+306,20,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+307,20,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+308,20,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+309,20,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+310,20,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+311,20,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+312,20,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+313,20,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+314,20,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+315,20,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+316,20,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+317,20,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+318,20,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+319,20,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+320,21,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+321,21,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+322,21,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+323,21,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+324,21,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+325,21,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+326,21,summer_dry,orchard_fen,waiting caravan,quiet exchange,dry herb dust,warm pressure,dry route,careful carrying,season-pulse,True
+327,21,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+328,21,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+329,21,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+330,21,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+331,21,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+332,21,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+333,21,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+334,21,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+335,21,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+336,22,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+337,22,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+338,22,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+339,22,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+340,22,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+341,22,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+342,22,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+343,22,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+344,22,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+345,22,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+346,22,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+347,22,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+348,22,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+349,22,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+350,22,summer_dry,signal_ridge,waiting caravan,quiet exchange,dry herb dust,warm pressure,dry route,careful carrying,season-pulse,True
+351,22,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+352,23,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+353,23,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+354,23,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+355,23,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+356,23,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+357,23,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+358,23,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+359,23,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+360,23,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+361,23,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+362,23,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+363,23,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+364,23,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+365,23,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+366,23,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+367,23,summer_dry,riverbend,moving trade tokens,guild hammers,dry herb dust,warm pressure,dry route,shared guild work,ambient-rate,True
+368,24,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+369,24,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+370,24,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+371,24,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+372,24,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+373,24,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+374,24,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+375,24,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+376,24,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+377,24,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+378,24,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+379,24,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+380,24,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+381,24,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+382,24,summer_dry,roofward,waiting caravan,quiet exchange,dry herb dust,warm pressure,dry route,careful carrying,season-pulse,True
+383,24,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+384,25,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+385,25,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+386,25,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+387,25,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+388,25,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+389,25,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+390,25,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+391,25,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+392,25,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+393,25,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+394,25,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+395,25,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+396,25,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+397,25,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+398,25,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+399,25,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+400,26,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+401,26,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+402,26,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+403,26,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+404,26,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+405,26,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+406,26,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+407,26,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+408,26,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+409,26,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+410,26,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+411,26,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+412,26,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+413,26,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+414,26,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+415,26,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+416,27,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+417,27,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+418,27,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+419,27,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+420,27,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+421,27,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+422,27,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+423,27,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+424,27,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+425,27,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+426,27,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+427,27,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+428,27,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+429,27,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+430,27,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+431,27,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+432,28,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+433,28,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+434,28,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+435,28,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+436,28,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+437,28,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+438,28,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+439,28,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+440,28,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+441,28,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+442,28,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+443,28,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+444,28,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+445,28,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+446,28,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+447,28,summer_dry,roofward,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+448,29,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+449,29,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+450,29,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+451,29,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+452,29,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+453,29,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+454,29,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+455,29,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+456,29,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+457,29,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+458,29,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+459,29,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+460,29,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+461,29,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+462,29,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+463,29,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+464,30,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+465,30,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+466,30,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+467,30,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+468,30,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+469,30,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+470,30,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+471,30,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+472,30,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+473,30,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+474,30,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+475,30,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+476,30,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+477,30,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+478,30,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+479,30,summer_dry,orchard_fen,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+480,31,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+481,31,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+482,31,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+483,31,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+484,31,summer_dry,orchard_fen,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+485,31,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+486,31,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+487,31,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+488,31,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+489,31,summer_dry,orchard_fen,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+490,31,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+491,31,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+492,31,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+493,31,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+494,31,summer_dry,orchard_fen,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+495,31,summer_dry,riverbend,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+496,32,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+497,32,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+498,32,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+499,32,summer_dry,orchard_fen,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+500,32,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+501,32,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+502,32,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+503,32,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+504,32,summer_dry,orchard_fen,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+505,32,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+506,32,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+507,32,summer_dry,archive_quarter,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+508,32,summer_dry,signal_ridge,moving trade tokens,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,flower-node,True
+509,32,summer_dry,orchard_fen,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+510,32,summer_dry,riverbend,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,season-pulse,True
+511,32,summer_dry,roofward,shored route marker,quiet exchange,dry herb dust,warm pressure,dry route,seasonal travel pace,ambient-rate,True
+512,33,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+513,33,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+514,33,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+515,33,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+516,33,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+517,33,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+518,33,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+519,33,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+520,33,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+521,33,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+522,33,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+523,33,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+524,33,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+525,33,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+526,33,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+527,33,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+528,34,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+529,34,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+530,34,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+531,34,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+532,34,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+533,34,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+534,34,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+535,34,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+536,34,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+537,34,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+538,34,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+539,34,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+540,34,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+541,34,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+542,34,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+543,34,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+544,35,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+545,35,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+546,35,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+547,35,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+548,35,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+549,35,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+550,35,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+551,35,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+552,35,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+553,35,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+554,35,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+555,35,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+556,35,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+557,35,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+558,35,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+559,35,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+560,36,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+561,36,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+562,36,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+563,36,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+564,36,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+565,36,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+566,36,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+567,36,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+568,36,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+569,36,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+570,36,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+571,36,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+572,36,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+573,36,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+574,36,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+575,36,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+576,37,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+577,37,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+578,37,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+579,37,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+580,37,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+581,37,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+582,37,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+583,37,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+584,37,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+585,37,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+586,37,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+587,37,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+588,37,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+589,37,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+590,37,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+591,37,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+592,38,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+593,38,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+594,38,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+595,38,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+596,38,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+597,38,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+598,38,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+599,38,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+600,38,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+601,38,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+602,38,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+603,38,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+604,38,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+605,38,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+606,38,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+607,38,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+608,39,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+609,39,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+610,39,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+611,39,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+612,39,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+613,39,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+614,39,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+615,39,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+616,39,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+617,39,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+618,39,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+619,39,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+620,39,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+621,39,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+622,39,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+623,39,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+624,40,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+625,40,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+626,40,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+627,40,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+628,40,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+629,40,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+630,40,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+631,40,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+632,40,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+633,40,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+634,40,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+635,40,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+636,40,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+637,40,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+638,40,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+639,40,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+640,41,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+641,41,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+642,41,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+643,41,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+644,41,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+645,41,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+646,41,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+647,41,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+648,41,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+649,41,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+650,41,autumn_wind,roofward,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+651,41,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+652,41,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+653,41,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+654,41,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+655,41,autumn_wind,roofward,waiting caravan,guild hammers,leaf mold,mild air,damp boards,shared guild work,ambient-rate,True
+656,42,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+657,42,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+658,42,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+659,42,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+660,42,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+661,42,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+662,42,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+663,42,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+664,42,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+665,42,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+666,42,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+667,42,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+668,42,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+669,42,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+670,42,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+671,42,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+672,43,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+673,43,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+674,43,autumn_wind,roofward,waiting caravan,guild hammers,leaf mold,mild air,damp boards,shared guild work,season-pulse,True
+675,43,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+676,43,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+677,43,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+678,43,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+679,43,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+680,43,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+681,43,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+682,43,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+683,43,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+684,43,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+685,43,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+686,43,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+687,43,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+688,44,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+689,44,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+690,44,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+691,44,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+692,44,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+693,44,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+694,44,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+695,44,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+696,44,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+697,44,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+698,44,autumn_wind,riverbend,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+699,44,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+700,44,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+701,44,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+702,44,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+703,44,autumn_wind,riverbend,moving trade tokens,guild hammers,leaf mold,mild air,damp boards,shared guild work,ambient-rate,True
+704,45,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+705,45,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+706,45,autumn_wind,signal_ridge,waiting caravan,guild hammers,leaf mold,mild air,damp boards,shared guild work,season-pulse,True
+707,45,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+708,45,autumn_wind,riverbend,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+709,45,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+710,45,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+711,45,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+712,45,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+713,45,autumn_wind,riverbend,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+714,45,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+715,45,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+716,45,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+717,45,autumn_wind,orchard_fen,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+718,45,autumn_wind,riverbend,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+719,45,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+720,46,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+721,46,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+722,46,autumn_wind,orchard_fen,moving trade tokens,guild hammers,leaf mold,mild air,damp boards,shared guild work,season-pulse,True
+723,46,autumn_wind,riverbend,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+724,46,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+725,46,autumn_wind,archive_quarter,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+726,46,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+727,46,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+728,46,autumn_wind,riverbend,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+729,46,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+730,46,autumn_wind,archive_quarter,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+731,46,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+732,46,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+733,46,autumn_wind,riverbend,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+734,46,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+735,46,autumn_wind,archive_quarter,moving trade tokens,guild hammers,leaf mold,mild air,damp boards,shared guild work,ambient-rate,True
+736,47,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+737,47,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+738,47,autumn_wind,riverbend,moving trade tokens,guild hammers,leaf mold,mild air,damp boards,shared guild work,season-pulse,True
+739,47,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+740,47,autumn_wind,archive_quarter,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+741,47,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+742,47,autumn_wind,orchard_fen,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+743,47,autumn_wind,riverbend,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+744,47,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+745,47,autumn_wind,archive_quarter,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+746,47,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+747,47,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+748,47,autumn_wind,riverbend,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+749,47,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+750,47,autumn_wind,archive_quarter,shored route marker,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+751,47,autumn_wind,signal_ridge,waiting caravan,guild hammers,leaf mold,mild air,damp boards,shared guild work,ambient-rate,True
+752,48,autumn_wind,riverbend,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+753,48,autumn_wind,roofward,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+754,48,autumn_wind,archive_quarter,moving trade tokens,guild hammers,leaf mold,mild air,damp boards,shared guild work,season-pulse,True
+755,48,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+756,48,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+757,48,autumn_wind,riverbend,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+758,48,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+759,48,autumn_wind,archive_quarter,waiting caravan,guild hammers,leaf mold,mild air,damp boards,shared guild work,season-pulse,True
+760,48,autumn_wind,signal_ridge,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,flower-node,True
+761,48,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+762,48,autumn_wind,riverbend,waiting caravan,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+763,48,autumn_wind,roofward,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+764,48,autumn_wind,archive_quarter,moving trade tokens,guild hammers,leaf mold,mild air,damp boards,shared guild work,flower-node,True
+765,48,autumn_wind,signal_ridge,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+766,48,autumn_wind,orchard_fen,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,season-pulse,True
+767,48,autumn_wind,riverbend,moving trade tokens,wind in route posts,leaf mold,mild air,damp boards,seasonal travel pace,ambient-rate,True
+768,49,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+769,49,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+770,49,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+771,49,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+772,49,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+773,49,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+774,49,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+775,49,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+776,49,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+777,49,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+778,49,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+779,49,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+780,49,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+781,49,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+782,49,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,careful carrying,season-pulse,True
+783,49,winter_cold,roofward,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+784,50,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+785,50,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+786,50,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+787,50,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+788,50,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+789,50,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+790,50,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+791,50,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+792,50,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+793,50,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+794,50,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+795,50,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+796,50,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+797,50,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+798,50,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+799,50,winter_cold,archive_quarter,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+800,51,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+801,51,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+802,51,winter_cold,riverbend,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+803,51,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+804,51,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+805,51,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+806,51,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+807,51,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+808,51,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+809,51,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+810,51,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+811,51,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+812,51,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+813,51,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+814,51,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+815,51,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+816,52,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+817,52,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+818,52,winter_cold,roofward,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+819,52,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+820,52,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+821,52,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+822,52,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+823,52,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+824,52,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+825,52,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+826,52,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+827,52,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+828,52,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+829,52,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+830,52,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+831,52,winter_cold,orchard_fen,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+832,53,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+833,53,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+834,53,winter_cold,archive_quarter,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+835,53,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+836,53,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+837,53,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+838,53,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+839,53,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+840,53,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+841,53,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+842,53,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+843,53,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+844,53,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+845,53,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+846,53,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+847,53,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+848,54,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+849,54,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+850,54,winter_cold,orchard_fen,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+851,54,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+852,54,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+853,54,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+854,54,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+855,54,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+856,54,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+857,54,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+858,54,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+859,54,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+860,54,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+861,54,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+862,54,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+863,54,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+864,55,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+865,55,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+866,55,winter_cold,riverbend,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+867,55,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+868,55,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+869,55,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+870,55,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+871,55,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+872,55,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+873,55,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+874,55,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+875,55,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+876,55,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+877,55,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+878,55,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+879,55,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+880,56,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+881,56,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+882,56,winter_cold,roofward,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+883,56,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+884,56,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+885,56,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+886,56,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+887,56,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+888,56,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+889,56,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+890,56,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+891,56,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+892,56,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+893,56,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+894,56,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+895,56,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+896,57,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+897,57,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+898,57,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+899,57,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+900,57,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+901,57,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+902,57,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+903,57,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+904,57,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+905,57,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+906,57,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+907,57,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+908,57,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+909,57,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+910,57,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+911,57,winter_cold,riverbend,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+912,58,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+913,58,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+914,58,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+915,58,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+916,58,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+917,58,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+918,58,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+919,58,winter_cold,signal_ridge,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+920,58,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+921,58,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+922,58,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+923,58,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+924,58,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,flower-node,True
+925,58,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+926,58,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+927,58,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+928,59,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+929,59,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+930,59,winter_cold,orchard_fen,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+931,59,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+932,59,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+933,59,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+934,59,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,careful carrying,season-pulse,True
+935,59,winter_cold,orchard_fen,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+936,59,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+937,59,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+938,59,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+939,59,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+940,59,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+941,59,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+942,59,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+943,59,winter_cold,archive_quarter,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+944,60,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+945,60,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+946,60,winter_cold,roofward,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+947,60,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+948,60,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+949,60,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+950,60,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+951,60,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+952,60,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+953,60,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+954,60,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+955,60,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+956,60,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+957,60,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+958,60,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+959,60,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+960,61,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+961,61,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+962,61,winter_cold,archive_quarter,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+963,61,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+964,61,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+965,61,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+966,61,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,careful carrying,season-pulse,True
+967,61,winter_cold,archive_quarter,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+968,61,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+969,61,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+970,61,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+971,61,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+972,61,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+973,61,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+974,61,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+975,61,winter_cold,riverbend,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+976,62,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+977,62,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+978,62,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+979,62,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+980,62,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+981,62,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+982,62,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+983,62,winter_cold,signal_ridge,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+984,62,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+985,62,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+986,62,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+987,62,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+988,62,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,flower-node,True
+989,62,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+990,62,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,careful carrying,season-pulse,True
+991,62,winter_cold,roofward,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True
+992,63,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+993,63,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+994,63,winter_cold,orchard_fen,moving trade tokens,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+995,63,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+996,63,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+997,63,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+998,63,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+999,63,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1000,63,winter_cold,riverbend,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+1001,63,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1002,63,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1003,63,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1004,63,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+1005,63,winter_cold,riverbend,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1006,63,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1007,63,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,ambient-rate,True
+1008,64,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+1009,64,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1010,64,winter_cold,riverbend,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+1011,64,winter_cold,roofward,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1012,64,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+1013,64,winter_cold,signal_ridge,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1014,64,winter_cold,orchard_fen,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1015,64,winter_cold,riverbend,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,season-pulse,True
+1016,64,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,flower-node,True
+1017,64,winter_cold,archive_quarter,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1018,64,winter_cold,signal_ridge,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1019,64,winter_cold,orchard_fen,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1020,64,winter_cold,riverbend,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,flower-node,True
+1021,64,winter_cold,roofward,waiting caravan,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1022,64,winter_cold,archive_quarter,moving trade tokens,quiet exchange,oil smoke,cold sting,damp boards,seasonal travel pace,season-pulse,True
+1023,64,winter_cold,signal_ridge,waiting caravan,guild hammers,oil smoke,cold sting,damp boards,shared guild work,ambient-rate,True

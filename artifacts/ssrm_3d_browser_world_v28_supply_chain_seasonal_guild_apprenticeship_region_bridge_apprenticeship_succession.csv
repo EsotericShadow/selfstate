@@ -1,0 +1,1025 @@
+tick_id,day,mentor,apprentice,skill_domain,apprentice_skill_before,practice_delta,apprentice_skill_after,mentor_fatigue,succession_event,inherits_responsibility,visible_teaching_marker
+0,1,Ari,Toma,Bridgewright Guild,0.22,0.002,0.222,0.281,False,practice only,Ari->Toma:0.22
+1,1,Fay,Lio,Glassgarden Guild,0.245,0.002,0.247,0.336,False,practice only,Fay->Lio:0.25
+2,1,Nia,Sera,Index Guild,0.27,0.006,0.276,0.378,False,practice only,Nia->Sera:0.28
+3,1,Milo,Ren,Signal Guild,0.295,0.006,0.301,0.408,False,practice only,Milo->Ren:0.30
+4,1,Ivo,Mara,Seed Guild,0.32,0.002,0.322,0.426,False,practice only,Ivo->Mara:0.32
+5,1,Ari,Toma,Bridgewright Guild,0.222,0.002,0.224,0.287,False,practice only,Ari->Toma:0.22
+6,1,Fay,Lio,Glassgarden Guild,0.247,0.002,0.249,0.342,False,practice only,Fay->Lio:0.25
+7,1,Nia,Sera,Index Guild,0.276,0.006,0.282,0.396,False,practice only,Nia->Sera:0.28
+8,1,Milo,Ren,Signal Guild,0.301,0.006,0.307,0.426,False,practice only,Milo->Ren:0.31
+9,1,Ivo,Mara,Seed Guild,0.322,0.002,0.324,0.432,False,practice only,Ivo->Mara:0.32
+10,1,Ari,Toma,Bridgewright Guild,0.224,0.002,0.226,0.293,False,practice only,Ari->Toma:0.23
+11,1,Fay,Lio,Glassgarden Guild,0.249,0.002,0.251,0.348,False,practice only,Fay->Lio:0.25
+12,1,Nia,Sera,Index Guild,0.282,0.002,0.284,0.402,False,practice only,Nia->Sera:0.28
+13,1,Milo,Ren,Signal Guild,0.307,0.006,0.313,0.444,False,practice only,Milo->Ren:0.31
+14,1,Ivo,Mara,Seed Guild,0.324,0.002,0.326,0.438,False,practice only,Ivo->Mara:0.33
+15,1,Ari,Toma,Bridgewright Guild,0.226,0.006,0.232,0.286,False,practice only,Ari->Toma:0.23
+16,2,Fay,Lio,Glassgarden Guild,0.251,0.002,0.253,0.329,False,practice only,Fay->Lio:0.25
+17,2,Nia,Sera,Index Guild,0.284,0.002,0.286,0.408,False,practice only,Nia->Sera:0.29
+18,2,Milo,Ren,Signal Guild,0.313,0.006,0.319,0.462,False,practice only,Milo->Ren:0.32
+19,2,Ivo,Mara,Seed Guild,0.326,0.006,0.332,0.456,False,practice only,Ivo->Mara:0.33
+20,2,Ari,Toma,Bridgewright Guild,0.232,0.002,0.234,0.292,False,practice only,Ari->Toma:0.23
+21,2,Fay,Lio,Glassgarden Guild,0.253,0.002,0.255,0.335,False,practice only,Fay->Lio:0.26
+22,2,Nia,Sera,Index Guild,0.286,0.002,0.288,0.414,False,practice only,Nia->Sera:0.29
+23,2,Milo,Ren,Signal Guild,0.319,0.006,0.325,0.48,False,practice only,Milo->Ren:0.33
+24,2,Ivo,Mara,Seed Guild,0.332,0.006,0.338,0.474,False,practice only,Ivo->Mara:0.34
+25,2,Ari,Toma,Bridgewright Guild,0.234,0.002,0.236,0.298,False,practice only,Ari->Toma:0.24
+26,2,Fay,Lio,Glassgarden Guild,0.255,0.002,0.257,0.341,False,practice only,Fay->Lio:0.26
+27,2,Nia,Sera,Index Guild,0.288,0.002,0.29,0.42,False,practice only,Nia->Sera:0.29
+28,2,Milo,Ren,Signal Guild,0.325,0.002,0.327,0.486,False,practice only,Milo->Ren:0.33
+29,2,Ivo,Mara,Seed Guild,0.338,0.006,0.344,0.492,False,practice only,Ivo->Mara:0.34
+30,2,Ari,Toma,Bridgewright Guild,0.236,0.002,0.238,0.304,False,practice only,Ari->Toma:0.24
+31,2,Fay,Lio,Glassgarden Guild,0.257,0.006,0.263,0.334,False,practice only,Fay->Lio:0.26
+32,3,Nia,Sera,Index Guild,0.29,0.002,0.292,0.401,False,practice only,Nia->Sera:0.29
+33,3,Milo,Ren,Signal Guild,0.327,0.002,0.329,0.492,False,practice only,Milo->Ren:0.33
+34,3,Ivo,Mara,Seed Guild,0.344,0.006,0.35,0.51,False,practice only,Ivo->Mara:0.35
+35,3,Ari,Toma,Bridgewright Guild,0.238,0.006,0.244,0.322,False,practice only,Ari->Toma:0.24
+36,3,Fay,Lio,Glassgarden Guild,0.263,0.002,0.265,0.34,False,practice only,Fay->Lio:0.27
+37,3,Nia,Sera,Index Guild,0.292,0.002,0.294,0.407,False,practice only,Nia->Sera:0.29
+38,3,Milo,Ren,Signal Guild,0.329,0.002,0.331,0.498,False,practice only,Milo->Ren:0.33
+39,3,Ivo,Mara,Seed Guild,0.35,0.006,0.356,0.528,False,practice only,Ivo->Mara:0.36
+40,3,Ari,Toma,Bridgewright Guild,0.244,0.006,0.25,0.34,False,practice only,Ari->Toma:0.25
+41,3,Fay,Lio,Glassgarden Guild,0.265,0.002,0.267,0.346,False,practice only,Fay->Lio:0.27
+42,3,Nia,Sera,Index Guild,0.294,0.002,0.296,0.413,False,practice only,Nia->Sera:0.30
+43,3,Milo,Ren,Signal Guild,0.331,0.002,0.333,0.504,False,practice only,Milo->Ren:0.33
+44,3,Ivo,Mara,Seed Guild,0.356,0.006,0.362,0.546,False,practice only,Ivo->Mara:0.36
+45,3,Ari,Toma,Bridgewright Guild,0.25,0.006,0.256,0.358,False,practice only,Ari->Toma:0.26
+46,3,Fay,Lio,Glassgarden Guild,0.267,0.002,0.269,0.352,False,practice only,Fay->Lio:0.27
+47,3,Nia,Sera,Index Guild,0.296,0.002,0.298,0.394,False,practice only,Nia->Sera:0.30
+48,4,Milo,Ren,Signal Guild,0.333,0.002,0.335,0.485,False,practice only,Milo->Ren:0.34
+49,4,Ivo,Mara,Seed Guild,0.362,0.002,0.364,0.552,False,practice only,Ivo->Mara:0.36
+50,4,Ari,Toma,Bridgewright Guild,0.256,0.002,0.258,0.364,False,practice only,Ari->Toma:0.26
+51,4,Fay,Lio,Glassgarden Guild,0.269,0.006,0.275,0.37,False,practice only,Fay->Lio:0.28
+52,4,Nia,Sera,Index Guild,0.298,0.002,0.3,0.4,False,practice only,Nia->Sera:0.30
+53,4,Milo,Ren,Signal Guild,0.335,0.002,0.337,0.491,False,practice only,Milo->Ren:0.34
+54,4,Ivo,Mara,Seed Guild,0.364,0.002,0.366,0.558,False,practice only,Ivo->Mara:0.37
+55,4,Ari,Toma,Bridgewright Guild,0.258,0.002,0.26,0.37,False,practice only,Ari->Toma:0.26
+56,4,Fay,Lio,Glassgarden Guild,0.275,0.006,0.281,0.388,False,practice only,Fay->Lio:0.28
+57,4,Nia,Sera,Index Guild,0.3,0.002,0.302,0.406,False,practice only,Nia->Sera:0.30
+58,4,Milo,Ren,Signal Guild,0.337,0.002,0.339,0.497,False,practice only,Milo->Ren:0.34
+59,4,Ivo,Mara,Seed Guild,0.366,0.002,0.368,0.564,False,practice only,Ivo->Mara:0.37
+60,4,Ari,Toma,Bridgewright Guild,0.26,0.002,0.262,0.376,False,practice only,Ari->Toma:0.26
+61,4,Fay,Lio,Glassgarden Guild,0.281,0.006,0.287,0.406,False,practice only,Fay->Lio:0.29
+62,4,Nia,Sera,Index Guild,0.302,0.002,0.304,0.412,False,practice only,Nia->Sera:0.30
+63,4,Milo,Ren,Signal Guild,0.339,0.002,0.341,0.478,False,practice only,Milo->Ren:0.34
+64,5,Ivo,Mara,Seed Guild,0.368,0.002,0.37,0.545,False,practice only,Ivo->Mara:0.37
+65,5,Ari,Toma,Bridgewright Guild,0.262,0.002,0.264,0.382,False,practice only,Ari->Toma:0.26
+66,5,Fay,Lio,Glassgarden Guild,0.287,0.002,0.289,0.412,False,practice only,Fay->Lio:0.29
+67,5,Nia,Sera,Index Guild,0.304,0.006,0.31,0.43,False,practice only,Nia->Sera:0.31
+68,5,Milo,Ren,Signal Guild,0.341,0.002,0.343,0.484,False,practice only,Milo->Ren:0.34
+69,5,Ivo,Mara,Seed Guild,0.37,0.002,0.372,0.551,False,practice only,Ivo->Mara:0.37
+70,5,Ari,Toma,Bridgewright Guild,0.264,0.002,0.266,0.388,False,practice only,Ari->Toma:0.27
+71,5,Fay,Lio,Glassgarden Guild,0.289,0.002,0.291,0.418,False,practice only,Fay->Lio:0.29
+72,5,Nia,Sera,Index Guild,0.31,0.006,0.316,0.448,False,practice only,Nia->Sera:0.32
+73,5,Milo,Ren,Signal Guild,0.343,0.002,0.345,0.49,False,practice only,Milo->Ren:0.35
+74,5,Ivo,Mara,Seed Guild,0.372,0.002,0.374,0.557,False,practice only,Ivo->Mara:0.37
+75,5,Ari,Toma,Bridgewright Guild,0.266,0.002,0.268,0.394,False,practice only,Ari->Toma:0.27
+76,5,Fay,Lio,Glassgarden Guild,0.291,0.002,0.293,0.424,False,practice only,Fay->Lio:0.29
+77,5,Nia,Sera,Index Guild,0.316,0.006,0.322,0.466,False,practice only,Nia->Sera:0.32
+78,5,Milo,Ren,Signal Guild,0.345,0.002,0.347,0.496,False,practice only,Milo->Ren:0.35
+79,5,Ivo,Mara,Seed Guild,0.374,0.002,0.376,0.538,False,practice only,Ivo->Mara:0.38
+80,6,Fay,Lio,Glassgarden Guild,0.293,0.002,0.295,0.405,False,practice only,Fay->Lio:0.30
+81,6,Nia,Sera,Index Guild,0.322,0.002,0.324,0.472,False,practice only,Nia->Sera:0.32
+82,6,Milo,Ren,Signal Guild,0.347,0.002,0.349,0.502,False,practice only,Milo->Ren:0.35
+83,6,Ivo,Mara,Seed Guild,0.376,0.006,0.382,0.556,False,practice only,Ivo->Mara:0.38
+84,6,Ari,Toma,Bridgewright Guild,0.268,0.002,0.27,0.4,False,practice only,Ari->Toma:0.27
+85,6,Fay,Lio,Glassgarden Guild,0.295,0.002,0.297,0.411,False,practice only,Fay->Lio:0.30
+86,6,Nia,Sera,Index Guild,0.324,0.002,0.326,0.478,False,practice only,Nia->Sera:0.33
+87,6,Milo,Ren,Signal Guild,0.349,0.002,0.351,0.508,False,practice only,Milo->Ren:0.35
+88,6,Ivo,Mara,Seed Guild,0.382,0.006,0.388,0.574,False,practice only,Ivo->Mara:0.39
+89,6,Ari,Toma,Bridgewright Guild,0.27,0.002,0.272,0.406,False,practice only,Ari->Toma:0.27
+90,6,Fay,Lio,Glassgarden Guild,0.297,0.002,0.299,0.417,False,practice only,Fay->Lio:0.30
+91,6,Nia,Sera,Index Guild,0.326,0.002,0.328,0.484,False,practice only,Nia->Sera:0.33
+92,6,Milo,Ren,Signal Guild,0.351,0.002,0.353,0.514,False,practice only,Milo->Ren:0.35
+93,6,Ivo,Mara,Seed Guild,0.388,0.006,0.394,0.592,False,practice only,Ivo->Mara:0.39
+94,6,Ari,Toma,Bridgewright Guild,0.272,0.002,0.274,0.412,False,practice only,Ari->Toma:0.27
+95,6,Fay,Lio,Glassgarden Guild,0.299,0.002,0.301,0.398,False,practice only,Fay->Lio:0.30
+96,7,Nia,Sera,Index Guild,0.328,0.002,0.33,0.465,False,practice only,Nia->Sera:0.33
+97,7,Milo,Ren,Signal Guild,0.353,0.002,0.355,0.52,False,practice only,Milo->Ren:0.36
+98,7,Ivo,Mara,Seed Guild,0.394,0.002,0.396,0.598,False,practice only,Ivo->Mara:0.40
+99,7,Ari,Toma,Bridgewright Guild,0.274,0.006,0.28,0.43,False,practice only,Ari->Toma:0.28
+100,7,Fay,Lio,Glassgarden Guild,0.301,0.002,0.303,0.404,False,practice only,Fay->Lio:0.30
+101,7,Nia,Sera,Index Guild,0.33,0.002,0.332,0.471,False,practice only,Nia->Sera:0.33
+102,7,Milo,Ren,Signal Guild,0.355,0.002,0.357,0.526,False,practice only,Milo->Ren:0.36
+103,7,Ivo,Mara,Seed Guild,0.396,0.002,0.398,0.604,False,practice only,Ivo->Mara:0.40
+104,7,Ari,Toma,Bridgewright Guild,0.28,0.006,0.286,0.448,False,practice only,Ari->Toma:0.29
+105,7,Fay,Lio,Glassgarden Guild,0.303,0.002,0.305,0.41,False,practice only,Fay->Lio:0.31
+106,7,Nia,Sera,Index Guild,0.332,0.002,0.334,0.477,False,practice only,Nia->Sera:0.33
+107,7,Milo,Ren,Signal Guild,0.357,0.002,0.359,0.532,False,practice only,Milo->Ren:0.36
+108,7,Ivo,Mara,Seed Guild,0.398,0.002,0.4,0.61,False,practice only,Ivo->Mara:0.40
+109,7,Ari,Toma,Bridgewright Guild,0.286,0.006,0.292,0.466,False,practice only,Ari->Toma:0.29
+110,7,Fay,Lio,Glassgarden Guild,0.305,0.002,0.307,0.416,False,practice only,Fay->Lio:0.31
+111,7,Nia,Sera,Index Guild,0.334,0.002,0.336,0.458,False,practice only,Nia->Sera:0.34
+112,8,Milo,Ren,Signal Guild,0.359,0.002,0.361,0.513,False,practice only,Milo->Ren:0.36
+113,8,Ivo,Mara,Seed Guild,0.4,0.002,0.402,0.616,False,practice only,Ivo->Mara:0.40
+114,8,Ari,Toma,Bridgewright Guild,0.292,0.002,0.294,0.472,False,practice only,Ari->Toma:0.29
+115,8,Fay,Lio,Glassgarden Guild,0.307,0.006,0.313,0.434,False,practice only,Fay->Lio:0.31
+116,8,Nia,Sera,Index Guild,0.336,0.002,0.338,0.464,False,practice only,Nia->Sera:0.34
+117,8,Milo,Ren,Signal Guild,0.361,0.002,0.363,0.519,False,practice only,Milo->Ren:0.36
+118,8,Ivo,Mara,Seed Guild,0.402,0.002,0.404,0.622,False,practice only,Ivo->Mara:0.40
+119,8,Ari,Toma,Bridgewright Guild,0.294,0.002,0.296,0.478,False,practice only,Ari->Toma:0.30
+120,8,Fay,Lio,Glassgarden Guild,0.313,0.006,0.319,0.452,False,practice only,Fay->Lio:0.32
+121,8,Nia,Sera,Index Guild,0.338,0.002,0.34,0.47,False,practice only,Nia->Sera:0.34
+122,8,Milo,Ren,Signal Guild,0.363,0.002,0.365,0.525,False,practice only,Milo->Ren:0.37
+123,8,Ivo,Mara,Seed Guild,0.404,0.002,0.406,0.628,False,practice only,Ivo->Mara:0.41
+124,8,Ari,Toma,Bridgewright Guild,0.296,0.002,0.298,0.484,False,practice only,Ari->Toma:0.30
+125,8,Fay,Lio,Glassgarden Guild,0.319,0.006,0.325,0.47,False,practice only,Fay->Lio:0.33
+126,8,Nia,Sera,Index Guild,0.34,0.002,0.342,0.476,False,practice only,Nia->Sera:0.34
+127,8,Milo,Ren,Signal Guild,0.365,0.002,0.367,0.506,False,practice only,Milo->Ren:0.37
+128,9,Ivo,Mara,Seed Guild,0.406,0.002,0.408,0.609,False,practice only,Ivo->Mara:0.41
+129,9,Ari,Toma,Bridgewright Guild,0.298,0.002,0.3,0.49,False,practice only,Ari->Toma:0.30
+130,9,Fay,Lio,Glassgarden Guild,0.325,0.002,0.327,0.476,False,practice only,Fay->Lio:0.33
+131,9,Nia,Sera,Index Guild,0.342,0.006,0.348,0.494,False,practice only,Nia->Sera:0.35
+132,9,Milo,Ren,Signal Guild,0.367,0.002,0.369,0.512,False,practice only,Milo->Ren:0.37
+133,9,Ivo,Mara,Seed Guild,0.408,0.002,0.41,0.615,False,practice only,Ivo->Mara:0.41
+134,9,Ari,Toma,Bridgewright Guild,0.3,0.002,0.302,0.496,False,practice only,Ari->Toma:0.30
+135,9,Fay,Lio,Glassgarden Guild,0.327,0.002,0.329,0.482,False,practice only,Fay->Lio:0.33
+136,9,Nia,Sera,Index Guild,0.348,0.006,0.354,0.512,False,practice only,Nia->Sera:0.35
+137,9,Milo,Ren,Signal Guild,0.369,0.002,0.371,0.518,False,practice only,Milo->Ren:0.37
+138,9,Ivo,Mara,Seed Guild,0.41,0.002,0.412,0.621,False,practice only,Ivo->Mara:0.41
+139,9,Ari,Toma,Bridgewright Guild,0.302,0.002,0.304,0.502,False,practice only,Ari->Toma:0.30
+140,9,Fay,Lio,Glassgarden Guild,0.329,0.002,0.331,0.488,False,practice only,Fay->Lio:0.33
+141,9,Nia,Sera,Index Guild,0.354,0.006,0.36,0.53,False,practice only,Nia->Sera:0.36
+142,9,Milo,Ren,Signal Guild,0.371,0.002,0.373,0.524,False,practice only,Milo->Ren:0.37
+143,9,Ivo,Mara,Seed Guild,0.412,0.002,0.414,0.602,False,practice only,Ivo->Mara:0.41
+144,10,Ari,Toma,Bridgewright Guild,0.304,0.002,0.306,0.483,False,practice only,Ari->Toma:0.31
+145,10,Fay,Lio,Glassgarden Guild,0.331,0.002,0.333,0.494,False,practice only,Fay->Lio:0.33
+146,10,Nia,Sera,Index Guild,0.36,0.002,0.362,0.536,False,practice only,Nia->Sera:0.36
+147,10,Milo,Ren,Signal Guild,0.373,0.006,0.379,0.542,False,practice only,Milo->Ren:0.38
+148,10,Ivo,Mara,Seed Guild,0.414,0.002,0.416,0.608,False,practice only,Ivo->Mara:0.42
+149,10,Ari,Toma,Bridgewright Guild,0.306,0.002,0.308,0.489,False,practice only,Ari->Toma:0.31
+150,10,Fay,Lio,Glassgarden Guild,0.333,0.002,0.335,0.5,False,practice only,Fay->Lio:0.34
+151,10,Nia,Sera,Index Guild,0.362,0.002,0.364,0.542,False,practice only,Nia->Sera:0.36
+152,10,Milo,Ren,Signal Guild,0.379,0.006,0.385,0.56,False,practice only,Milo->Ren:0.39
+153,10,Ivo,Mara,Seed Guild,0.416,0.002,0.418,0.614,False,practice only,Ivo->Mara:0.42
+154,10,Ari,Toma,Bridgewright Guild,0.308,0.002,0.31,0.495,False,practice only,Ari->Toma:0.31
+155,10,Fay,Lio,Glassgarden Guild,0.335,0.002,0.337,0.506,False,practice only,Fay->Lio:0.34
+156,10,Nia,Sera,Index Guild,0.364,0.002,0.366,0.548,False,practice only,Nia->Sera:0.37
+157,10,Milo,Ren,Signal Guild,0.385,0.006,0.391,0.578,False,practice only,Milo->Ren:0.39
+158,10,Ivo,Mara,Seed Guild,0.418,0.002,0.42,0.62,False,practice only,Ivo->Mara:0.42
+159,10,Ari,Toma,Bridgewright Guild,0.31,0.002,0.312,0.476,False,practice only,Ari->Toma:0.31
+160,11,Fay,Lio,Glassgarden Guild,0.337,0.002,0.339,0.487,False,practice only,Fay->Lio:0.34
+161,11,Nia,Sera,Index Guild,0.366,0.002,0.368,0.554,False,practice only,Nia->Sera:0.37
+162,11,Milo,Ren,Signal Guild,0.391,0.002,0.393,0.584,False,practice only,Milo->Ren:0.39
+163,11,Ivo,Mara,Seed Guild,0.42,0.006,0.426,0.638,False,practice only,Ivo->Mara:0.43
+164,11,Ari,Toma,Bridgewright Guild,0.312,0.002,0.314,0.482,False,practice only,Ari->Toma:0.31
+165,11,Fay,Lio,Glassgarden Guild,0.339,0.002,0.341,0.493,False,practice only,Fay->Lio:0.34
+166,11,Nia,Sera,Index Guild,0.368,0.002,0.37,0.56,False,practice only,Nia->Sera:0.37
+167,11,Milo,Ren,Signal Guild,0.393,0.002,0.395,0.59,False,practice only,Milo->Ren:0.40
+168,11,Ivo,Mara,Seed Guild,0.426,0.006,0.432,0.656,False,practice only,Ivo->Mara:0.43
+169,11,Ari,Toma,Bridgewright Guild,0.314,0.002,0.316,0.488,False,practice only,Ari->Toma:0.32
+170,11,Fay,Lio,Glassgarden Guild,0.341,0.002,0.343,0.499,False,practice only,Fay->Lio:0.34
+171,11,Nia,Sera,Index Guild,0.37,0.002,0.372,0.566,False,practice only,Nia->Sera:0.37
+172,11,Milo,Ren,Signal Guild,0.395,0.002,0.397,0.596,False,practice only,Milo->Ren:0.40
+173,11,Ivo,Mara,Seed Guild,0.432,0.006,0.438,0.674,False,practice only,Ivo->Mara:0.44
+174,11,Ari,Toma,Bridgewright Guild,0.316,0.002,0.318,0.494,False,practice only,Ari->Toma:0.32
+175,11,Fay,Lio,Glassgarden Guild,0.343,0.002,0.345,0.48,False,practice only,Fay->Lio:0.35
+176,12,Milo,Ren,Signal Guild,0.397,0.002,0.399,0.577,False,practice only,Milo->Ren:0.40
+177,12,Ivo,Mara,Seed Guild,0.438,0.002,0.44,0.68,False,practice only,Ivo->Mara:0.44
+178,12,Ari,Toma,Bridgewright Guild,0.318,0.002,0.32,0.5,False,practice only,Ari->Toma:0.32
+179,12,Fay,Lio,Glassgarden Guild,0.345,0.006,0.351,0.498,False,practice only,Fay->Lio:0.35
+180,12,Nia,Sera,Index Guild,0.372,0.002,0.374,0.572,False,practice only,Nia->Sera:0.37
+181,12,Milo,Ren,Signal Guild,0.399,0.002,0.401,0.583,False,practice only,Milo->Ren:0.40
+182,12,Ivo,Mara,Seed Guild,0.44,0.002,0.442,0.686,False,practice only,Ivo->Mara:0.44
+183,12,Ari,Toma,Bridgewright Guild,0.32,0.002,0.322,0.506,False,practice only,Ari->Toma:0.32
+184,12,Fay,Lio,Glassgarden Guild,0.351,0.006,0.357,0.516,False,practice only,Fay->Lio:0.36
+185,12,Nia,Sera,Index Guild,0.374,0.002,0.376,0.578,False,practice only,Nia->Sera:0.38
+186,12,Milo,Ren,Signal Guild,0.401,0.002,0.403,0.589,False,practice only,Milo->Ren:0.40
+187,12,Ivo,Mara,Seed Guild,0.442,0.002,0.444,0.692,False,practice only,Ivo->Mara:0.44
+188,12,Ari,Toma,Bridgewright Guild,0.322,0.002,0.324,0.512,False,practice only,Ari->Toma:0.32
+189,12,Fay,Lio,Glassgarden Guild,0.357,0.006,0.363,0.534,False,practice only,Fay->Lio:0.36
+190,12,Nia,Sera,Index Guild,0.376,0.002,0.378,0.584,False,practice only,Nia->Sera:0.38
+191,12,Milo,Ren,Signal Guild,0.403,0.002,0.405,0.57,False,practice only,Milo->Ren:0.41
+192,13,Ivo,Mara,Seed Guild,0.444,0.002,0.446,0.673,False,practice only,Ivo->Mara:0.45
+193,13,Ari,Toma,Bridgewright Guild,0.324,0.002,0.326,0.518,False,practice only,Ari->Toma:0.33
+194,13,Fay,Lio,Glassgarden Guild,0.363,0.002,0.365,0.54,False,practice only,Fay->Lio:0.37
+195,13,Nia,Sera,Index Guild,0.378,0.006,0.384,0.602,False,practice only,Nia->Sera:0.38
+196,13,Milo,Ren,Signal Guild,0.405,0.002,0.407,0.576,False,practice only,Milo->Ren:0.41
+197,13,Ivo,Mara,Seed Guild,0.446,0.002,0.448,0.679,False,practice only,Ivo->Mara:0.45
+198,13,Ari,Toma,Bridgewright Guild,0.326,0.002,0.328,0.524,False,practice only,Ari->Toma:0.33
+199,13,Fay,Lio,Glassgarden Guild,0.365,0.002,0.367,0.546,False,practice only,Fay->Lio:0.37
+200,13,Nia,Sera,Index Guild,0.384,0.006,0.39,0.62,False,practice only,Nia->Sera:0.39
+201,13,Milo,Ren,Signal Guild,0.407,0.002,0.409,0.582,False,practice only,Milo->Ren:0.41
+202,13,Ivo,Mara,Seed Guild,0.448,0.002,0.45,0.685,False,practice only,Ivo->Mara:0.45
+203,13,Ari,Toma,Bridgewright Guild,0.328,0.002,0.33,0.53,False,practice only,Ari->Toma:0.33
+204,13,Fay,Lio,Glassgarden Guild,0.367,0.002,0.369,0.552,False,practice only,Fay->Lio:0.37
+205,13,Nia,Sera,Index Guild,0.39,0.006,0.396,0.638,False,practice only,Nia->Sera:0.40
+206,13,Milo,Ren,Signal Guild,0.409,0.002,0.411,0.588,False,practice only,Milo->Ren:0.41
+207,13,Ivo,Mara,Seed Guild,0.45,0.006,0.456,0.678,False,practice only,Ivo->Mara:0.46
+208,14,Ari,Toma,Bridgewright Guild,0.33,0.002,0.332,0.511,False,practice only,Ari->Toma:0.33
+209,14,Fay,Lio,Glassgarden Guild,0.369,0.002,0.371,0.558,False,practice only,Fay->Lio:0.37
+210,14,Nia,Sera,Index Guild,0.396,0.002,0.398,0.644,False,practice only,Nia->Sera:0.40
+211,14,Milo,Ren,Signal Guild,0.411,0.006,0.417,0.606,False,practice only,Milo->Ren:0.42
+212,14,Ivo,Mara,Seed Guild,0.456,0.002,0.458,0.684,False,practice only,Ivo->Mara:0.46
+213,14,Ari,Toma,Bridgewright Guild,0.332,0.002,0.334,0.517,False,practice only,Ari->Toma:0.33
+214,14,Fay,Lio,Glassgarden Guild,0.371,0.002,0.373,0.564,False,practice only,Fay->Lio:0.37
+215,14,Nia,Sera,Index Guild,0.398,0.002,0.4,0.65,False,practice only,Nia->Sera:0.40
+216,14,Milo,Ren,Signal Guild,0.417,0.006,0.423,0.624,False,practice only,Milo->Ren:0.42
+217,14,Ivo,Mara,Seed Guild,0.458,0.002,0.46,0.69,False,practice only,Ivo->Mara:0.46
+218,14,Ari,Toma,Bridgewright Guild,0.334,0.002,0.336,0.523,False,practice only,Ari->Toma:0.34
+219,14,Fay,Lio,Glassgarden Guild,0.373,0.002,0.375,0.57,False,practice only,Fay->Lio:0.38
+220,14,Nia,Sera,Index Guild,0.4,0.002,0.402,0.656,False,practice only,Nia->Sera:0.40
+221,14,Milo,Ren,Signal Guild,0.423,0.006,0.429,0.642,False,practice only,Milo->Ren:0.43
+222,14,Ivo,Mara,Seed Guild,0.46,0.002,0.462,0.696,False,practice only,Ivo->Mara:0.46
+223,14,Ari,Toma,Bridgewright Guild,0.336,0.002,0.338,0.504,False,practice only,Ari->Toma:0.34
+224,15,Fay,Lio,Glassgarden Guild,0.375,0.002,0.377,0.551,False,practice only,Fay->Lio:0.38
+225,15,Nia,Sera,Index Guild,0.402,0.002,0.404,0.662,False,practice only,Nia->Sera:0.40
+226,15,Milo,Ren,Signal Guild,0.429,0.006,0.435,0.66,False,practice only,Milo->Ren:0.44
+227,15,Ivo,Mara,Seed Guild,0.462,0.006,0.468,0.714,False,practice only,Ivo->Mara:0.47
+228,15,Ari,Toma,Bridgewright Guild,0.338,0.002,0.34,0.51,False,practice only,Ari->Toma:0.34
+229,15,Fay,Lio,Glassgarden Guild,0.377,0.002,0.379,0.557,False,practice only,Fay->Lio:0.38
+230,15,Nia,Sera,Index Guild,0.404,0.002,0.406,0.668,False,practice only,Nia->Sera:0.41
+231,15,Milo,Ren,Signal Guild,0.435,0.006,0.441,0.678,False,practice only,Milo->Ren:0.44
+232,15,Ivo,Mara,Seed Guild,0.468,0.006,0.474,0.732,False,practice only,Ivo->Mara:0.47
+233,15,Ari,Toma,Bridgewright Guild,0.34,0.002,0.342,0.516,False,practice only,Ari->Toma:0.34
+234,15,Fay,Lio,Glassgarden Guild,0.379,0.002,0.381,0.563,False,practice only,Fay->Lio:0.38
+235,15,Nia,Sera,Index Guild,0.406,0.002,0.408,0.674,False,practice only,Nia->Sera:0.41
+236,15,Milo,Ren,Signal Guild,0.441,0.002,0.443,0.684,False,practice only,Milo->Ren:0.44
+237,15,Ivo,Mara,Seed Guild,0.474,0.006,0.48,0.75,False,practice only,Ivo->Mara:0.48
+238,15,Ari,Toma,Bridgewright Guild,0.342,0.002,0.344,0.522,False,practice only,Ari->Toma:0.34
+239,15,Fay,Lio,Glassgarden Guild,0.381,0.002,0.383,0.544,False,practice only,Fay->Lio:0.38
+240,16,Nia,Sera,Index Guild,0.408,0.002,0.41,0.655,False,practice only,Nia->Sera:0.41
+241,16,Milo,Ren,Signal Guild,0.443,0.002,0.445,0.69,False,practice only,Milo->Ren:0.45
+242,16,Ivo,Mara,Seed Guild,0.48,0.006,0.486,0.768,False,practice only,Ivo->Mara:0.49
+243,16,Ari,Toma,Bridgewright Guild,0.344,0.006,0.35,0.54,False,practice only,Ari->Toma:0.35
+244,16,Fay,Lio,Glassgarden Guild,0.383,0.002,0.385,0.55,False,practice only,Fay->Lio:0.39
+245,16,Nia,Sera,Index Guild,0.41,0.002,0.412,0.661,False,practice only,Nia->Sera:0.41
+246,16,Milo,Ren,Signal Guild,0.445,0.002,0.447,0.696,False,practice only,Milo->Ren:0.45
+247,16,Ivo,Mara,Seed Guild,0.486,0.006,0.492,0.786,False,practice only,Ivo->Mara:0.49
+248,16,Ari,Toma,Bridgewright Guild,0.35,0.006,0.356,0.558,False,practice only,Ari->Toma:0.36
+249,16,Fay,Lio,Glassgarden Guild,0.385,0.002,0.387,0.556,False,practice only,Fay->Lio:0.39
+250,16,Nia,Sera,Index Guild,0.412,0.002,0.414,0.667,False,practice only,Nia->Sera:0.41
+251,16,Milo,Ren,Signal Guild,0.447,0.002,0.449,0.702,False,practice only,Milo->Ren:0.45
+252,16,Ivo,Mara,Seed Guild,0.492,0.006,0.498,0.804,False,practice only,Ivo->Mara:0.50
+253,16,Ari,Toma,Bridgewright Guild,0.356,0.006,0.362,0.576,False,practice only,Ari->Toma:0.36
+254,16,Fay,Lio,Glassgarden Guild,0.387,0.002,0.389,0.562,False,practice only,Fay->Lio:0.39
+255,16,Nia,Sera,Index Guild,0.414,0.002,0.416,0.648,False,practice only,Nia->Sera:0.42
+256,17,Milo,Ren,Signal Guild,0.449,0.002,0.451,0.683,False,practice only,Milo->Ren:0.45
+257,17,Ivo,Mara,Seed Guild,0.498,0.002,0.5,0.81,False,practice only,Ivo->Mara:0.50
+258,17,Ari,Toma,Bridgewright Guild,0.362,0.002,0.364,0.582,False,practice only,Ari->Toma:0.36
+259,17,Fay,Lio,Glassgarden Guild,0.389,0.006,0.395,0.58,False,practice only,Fay->Lio:0.40
+260,17,Nia,Sera,Index Guild,0.416,0.002,0.418,0.654,False,practice only,Nia->Sera:0.42
+261,17,Milo,Ren,Signal Guild,0.451,0.002,0.453,0.689,False,practice only,Milo->Ren:0.45
+262,17,Ivo,Mara,Seed Guild,0.5,0.002,0.502,0.816,False,practice only,Ivo->Mara:0.50
+263,17,Ari,Toma,Bridgewright Guild,0.364,0.002,0.366,0.588,False,practice only,Ari->Toma:0.37
+264,17,Fay,Lio,Glassgarden Guild,0.395,0.006,0.401,0.598,False,practice only,Fay->Lio:0.40
+265,17,Nia,Sera,Index Guild,0.418,0.002,0.42,0.66,False,practice only,Nia->Sera:0.42
+266,17,Milo,Ren,Signal Guild,0.453,0.002,0.455,0.695,False,practice only,Milo->Ren:0.46
+267,17,Ivo,Mara,Seed Guild,0.502,0.002,0.504,0.822,False,practice only,Ivo->Mara:0.50
+268,17,Ari,Toma,Bridgewright Guild,0.366,0.002,0.368,0.594,False,practice only,Ari->Toma:0.37
+269,17,Fay,Lio,Glassgarden Guild,0.401,0.006,0.407,0.616,False,practice only,Fay->Lio:0.41
+270,17,Nia,Sera,Index Guild,0.42,0.002,0.422,0.666,False,practice only,Nia->Sera:0.42
+271,17,Milo,Ren,Signal Guild,0.455,0.002,0.457,0.676,False,practice only,Milo->Ren:0.46
+272,18,Ari,Toma,Bridgewright Guild,0.368,0.002,0.37,0.575,False,practice only,Ari->Toma:0.37
+273,18,Fay,Lio,Glassgarden Guild,0.407,0.002,0.409,0.622,False,practice only,Fay->Lio:0.41
+274,18,Nia,Sera,Index Guild,0.422,0.002,0.424,0.672,False,practice only,Nia->Sera:0.42
+275,18,Milo,Ren,Signal Guild,0.457,0.006,0.463,0.694,False,practice only,Milo->Ren:0.46
+276,18,Ivo,Mara,Seed Guild,0.504,0.002,0.506,0.828,False,practice only,Ivo->Mara:0.51
+277,18,Ari,Toma,Bridgewright Guild,0.37,0.002,0.372,0.581,False,practice only,Ari->Toma:0.37
+278,18,Fay,Lio,Glassgarden Guild,0.409,0.002,0.411,0.628,False,practice only,Fay->Lio:0.41
+279,18,Nia,Sera,Index Guild,0.424,0.002,0.426,0.678,False,practice only,Nia->Sera:0.43
+280,18,Milo,Ren,Signal Guild,0.463,0.006,0.469,0.712,False,practice only,Milo->Ren:0.47
+281,18,Ivo,Mara,Seed Guild,0.506,0.002,0.508,0.834,False,practice only,Ivo->Mara:0.51
+282,18,Ari,Toma,Bridgewright Guild,0.372,0.002,0.374,0.587,False,practice only,Ari->Toma:0.37
+283,18,Fay,Lio,Glassgarden Guild,0.411,0.002,0.413,0.634,False,practice only,Fay->Lio:0.41
+284,18,Nia,Sera,Index Guild,0.426,0.002,0.428,0.684,False,practice only,Nia->Sera:0.43
+285,18,Milo,Ren,Signal Guild,0.469,0.006,0.475,0.73,False,practice only,Milo->Ren:0.48
+286,18,Ivo,Mara,Seed Guild,0.508,0.002,0.51,0.84,False,practice only,Ivo->Mara:0.51
+287,18,Ari,Toma,Bridgewright Guild,0.374,0.002,0.376,0.568,False,practice only,Ari->Toma:0.38
+288,19,Fay,Lio,Glassgarden Guild,0.413,0.002,0.415,0.615,False,practice only,Fay->Lio:0.42
+289,19,Nia,Sera,Index Guild,0.428,0.002,0.43,0.69,False,practice only,Nia->Sera:0.43
+290,19,Milo,Ren,Signal Guild,0.475,0.002,0.477,0.736,False,practice only,Milo->Ren:0.48
+291,19,Ivo,Mara,Seed Guild,0.51,0.006,0.516,0.84,False,practice only,Ivo->Mara:0.52
+292,19,Ari,Toma,Bridgewright Guild,0.376,0.002,0.378,0.574,False,practice only,Ari->Toma:0.38
+293,19,Fay,Lio,Glassgarden Guild,0.415,0.002,0.417,0.621,False,practice only,Fay->Lio:0.42
+294,19,Nia,Sera,Index Guild,0.43,0.002,0.432,0.696,False,practice only,Nia->Sera:0.43
+295,19,Milo,Ren,Signal Guild,0.477,0.002,0.479,0.742,False,practice only,Milo->Ren:0.48
+296,19,Ivo,Mara,Seed Guild,0.516,0.006,0.522,0.84,False,practice only,Ivo->Mara:0.52
+297,19,Ari,Toma,Bridgewright Guild,0.378,0.002,0.38,0.58,False,practice only,Ari->Toma:0.38
+298,19,Fay,Lio,Glassgarden Guild,0.417,0.002,0.419,0.627,False,practice only,Fay->Lio:0.42
+299,19,Nia,Sera,Index Guild,0.432,0.002,0.434,0.702,False,practice only,Nia->Sera:0.43
+300,19,Milo,Ren,Signal Guild,0.479,0.002,0.481,0.748,False,practice only,Milo->Ren:0.48
+301,19,Ivo,Mara,Seed Guild,0.522,0.006,0.528,0.84,False,practice only,Ivo->Mara:0.53
+302,19,Ari,Toma,Bridgewright Guild,0.38,0.002,0.382,0.586,False,practice only,Ari->Toma:0.38
+303,19,Fay,Lio,Glassgarden Guild,0.419,0.002,0.421,0.608,False,practice only,Fay->Lio:0.42
+304,20,Nia,Sera,Index Guild,0.434,0.002,0.436,0.683,False,practice only,Nia->Sera:0.44
+305,20,Milo,Ren,Signal Guild,0.481,0.002,0.483,0.754,False,practice only,Milo->Ren:0.48
+306,20,Ivo,Mara,Seed Guild,0.528,0.002,0.53,0.84,False,practice only,Ivo->Mara:0.53
+307,20,Ari,Toma,Bridgewright Guild,0.382,0.006,0.388,0.604,False,practice only,Ari->Toma:0.39
+308,20,Fay,Lio,Glassgarden Guild,0.421,0.002,0.423,0.614,False,practice only,Fay->Lio:0.42
+309,20,Nia,Sera,Index Guild,0.436,0.002,0.438,0.689,False,practice only,Nia->Sera:0.44
+310,20,Milo,Ren,Signal Guild,0.483,0.002,0.485,0.76,False,practice only,Milo->Ren:0.49
+311,20,Ivo,Mara,Seed Guild,0.53,0.002,0.532,0.84,False,practice only,Ivo->Mara:0.53
+312,20,Ari,Toma,Bridgewright Guild,0.388,0.006,0.394,0.622,False,practice only,Ari->Toma:0.39
+313,20,Fay,Lio,Glassgarden Guild,0.423,0.002,0.425,0.62,False,practice only,Fay->Lio:0.43
+314,20,Nia,Sera,Index Guild,0.438,0.002,0.44,0.695,False,practice only,Nia->Sera:0.44
+315,20,Milo,Ren,Signal Guild,0.485,0.002,0.487,0.766,False,practice only,Milo->Ren:0.49
+316,20,Ivo,Mara,Seed Guild,0.532,0.002,0.534,0.84,False,practice only,Ivo->Mara:0.53
+317,20,Ari,Toma,Bridgewright Guild,0.394,0.006,0.4,0.64,False,practice only,Ari->Toma:0.40
+318,20,Fay,Lio,Glassgarden Guild,0.425,0.002,0.427,0.626,False,practice only,Fay->Lio:0.43
+319,20,Nia,Sera,Index Guild,0.44,0.002,0.442,0.676,False,practice only,Nia->Sera:0.44
+320,21,Milo,Ren,Signal Guild,0.487,0.002,0.489,0.747,False,practice only,Milo->Ren:0.49
+321,21,Ivo,Mara,Seed Guild,0.534,0.002,0.536,0.84,False,practice only,Ivo->Mara:0.54
+322,21,Ari,Toma,Bridgewright Guild,0.4,0.002,0.402,0.646,False,practice only,Ari->Toma:0.40
+323,21,Fay,Lio,Glassgarden Guild,0.427,0.006,0.433,0.644,False,practice only,Fay->Lio:0.43
+324,21,Nia,Sera,Index Guild,0.442,0.002,0.444,0.682,False,practice only,Nia->Sera:0.44
+325,21,Milo,Ren,Signal Guild,0.489,0.002,0.491,0.753,False,practice only,Milo->Ren:0.49
+326,21,Ivo,Mara,Seed Guild,0.536,0.002,0.538,0.84,False,practice only,Ivo->Mara:0.54
+327,21,Ari,Toma,Bridgewright Guild,0.402,0.002,0.404,0.652,False,practice only,Ari->Toma:0.40
+328,21,Fay,Lio,Glassgarden Guild,0.433,0.006,0.439,0.662,False,practice only,Fay->Lio:0.44
+329,21,Nia,Sera,Index Guild,0.444,0.002,0.446,0.688,False,practice only,Nia->Sera:0.45
+330,21,Milo,Ren,Signal Guild,0.491,0.002,0.493,0.759,False,practice only,Milo->Ren:0.49
+331,21,Ivo,Mara,Seed Guild,0.538,0.002,0.54,0.84,False,practice only,Ivo->Mara:0.54
+332,21,Ari,Toma,Bridgewright Guild,0.404,0.002,0.406,0.658,False,practice only,Ari->Toma:0.41
+333,21,Fay,Lio,Glassgarden Guild,0.439,0.006,0.445,0.68,False,practice only,Fay->Lio:0.45
+334,21,Nia,Sera,Index Guild,0.446,0.002,0.448,0.694,False,practice only,Nia->Sera:0.45
+335,21,Milo,Ren,Signal Guild,0.493,0.002,0.495,0.74,False,practice only,Milo->Ren:0.50
+336,22,Ivo,Mara,Seed Guild,0.54,0.002,0.542,0.821,False,practice only,Ivo->Mara:0.54
+337,22,Ari,Toma,Bridgewright Guild,0.406,0.002,0.408,0.664,False,practice only,Ari->Toma:0.41
+338,22,Fay,Lio,Glassgarden Guild,0.445,0.002,0.447,0.686,False,practice only,Fay->Lio:0.45
+339,22,Nia,Sera,Index Guild,0.448,0.006,0.454,0.712,False,practice only,Nia->Sera:0.45
+340,22,Milo,Ren,Signal Guild,0.495,0.002,0.497,0.746,False,practice only,Milo->Ren:0.50
+341,22,Ivo,Mara,Seed Guild,0.542,0.002,0.544,0.827,False,practice only,Ivo->Mara:0.54
+342,22,Ari,Toma,Bridgewright Guild,0.408,0.002,0.41,0.67,False,practice only,Ari->Toma:0.41
+343,22,Fay,Lio,Glassgarden Guild,0.447,0.002,0.449,0.692,False,practice only,Fay->Lio:0.45
+344,22,Nia,Sera,Index Guild,0.454,0.006,0.46,0.73,False,practice only,Nia->Sera:0.46
+345,22,Milo,Ren,Signal Guild,0.497,0.002,0.499,0.752,False,practice only,Milo->Ren:0.50
+346,22,Ivo,Mara,Seed Guild,0.544,0.002,0.546,0.833,False,practice only,Ivo->Mara:0.55
+347,22,Ari,Toma,Bridgewright Guild,0.41,0.002,0.412,0.676,False,practice only,Ari->Toma:0.41
+348,22,Fay,Lio,Glassgarden Guild,0.449,0.002,0.451,0.698,False,practice only,Fay->Lio:0.45
+349,22,Nia,Sera,Index Guild,0.46,0.006,0.466,0.748,False,practice only,Nia->Sera:0.47
+350,22,Milo,Ren,Signal Guild,0.499,0.002,0.501,0.758,False,practice only,Milo->Ren:0.50
+351,22,Ivo,Mara,Seed Guild,0.546,0.002,0.548,0.814,False,practice only,Ivo->Mara:0.55
+352,23,Ari,Toma,Bridgewright Guild,0.412,0.002,0.414,0.657,False,practice only,Ari->Toma:0.41
+353,23,Fay,Lio,Glassgarden Guild,0.451,0.002,0.453,0.704,False,practice only,Fay->Lio:0.45
+354,23,Nia,Sera,Index Guild,0.466,0.002,0.468,0.754,False,practice only,Nia->Sera:0.47
+355,23,Milo,Ren,Signal Guild,0.501,0.006,0.507,0.776,False,practice only,Milo->Ren:0.51
+356,23,Ivo,Mara,Seed Guild,0.548,0.002,0.55,0.82,False,practice only,Ivo->Mara:0.55
+357,23,Ari,Toma,Bridgewright Guild,0.414,0.002,0.416,0.663,False,practice only,Ari->Toma:0.42
+358,23,Fay,Lio,Glassgarden Guild,0.453,0.002,0.455,0.71,False,practice only,Fay->Lio:0.46
+359,23,Nia,Sera,Index Guild,0.468,0.002,0.47,0.76,False,practice only,Nia->Sera:0.47
+360,23,Milo,Ren,Signal Guild,0.507,0.006,0.513,0.794,False,practice only,Milo->Ren:0.51
+361,23,Ivo,Mara,Seed Guild,0.55,0.002,0.552,0.826,False,practice only,Ivo->Mara:0.55
+362,23,Ari,Toma,Bridgewright Guild,0.416,0.002,0.418,0.669,False,practice only,Ari->Toma:0.42
+363,23,Fay,Lio,Glassgarden Guild,0.455,0.002,0.457,0.716,False,practice only,Fay->Lio:0.46
+364,23,Nia,Sera,Index Guild,0.47,0.002,0.472,0.766,False,practice only,Nia->Sera:0.47
+365,23,Milo,Ren,Signal Guild,0.513,0.006,0.519,0.812,False,practice only,Milo->Ren:0.52
+366,23,Ivo,Mara,Seed Guild,0.552,0.002,0.554,0.832,False,practice only,Ivo->Mara:0.55
+367,23,Ari,Toma,Bridgewright Guild,0.418,0.006,0.424,0.662,False,practice only,Ari->Toma:0.42
+368,24,Nia,Sera,Index Guild,0.472,0.002,0.474,0.747,False,practice only,Nia->Sera:0.47
+369,24,Milo,Ren,Signal Guild,0.519,0.002,0.521,0.818,False,practice only,Milo->Ren:0.52
+370,24,Ivo,Mara,Seed Guild,0.554,0.002,0.556,0.838,False,practice only,Ivo->Mara:0.56
+371,24,Ari,Toma,Bridgewright Guild,0.424,0.006,0.43,0.68,False,practice only,Ari->Toma:0.43
+372,24,Fay,Lio,Glassgarden Guild,0.457,0.002,0.459,0.722,False,practice only,Fay->Lio:0.46
+373,24,Nia,Sera,Index Guild,0.474,0.002,0.476,0.753,False,practice only,Nia->Sera:0.48
+374,24,Milo,Ren,Signal Guild,0.521,0.002,0.523,0.824,False,practice only,Milo->Ren:0.52
+375,24,Ivo,Mara,Seed Guild,0.556,0.002,0.558,0.84,False,practice only,Ivo->Mara:0.56
+376,24,Ari,Toma,Bridgewright Guild,0.43,0.006,0.436,0.698,False,practice only,Ari->Toma:0.44
+377,24,Fay,Lio,Glassgarden Guild,0.459,0.002,0.461,0.728,False,practice only,Fay->Lio:0.46
+378,24,Nia,Sera,Index Guild,0.476,0.002,0.478,0.759,False,practice only,Nia->Sera:0.48
+379,24,Milo,Ren,Signal Guild,0.523,0.002,0.525,0.83,False,practice only,Milo->Ren:0.53
+380,24,Ivo,Mara,Seed Guild,0.558,0.002,0.56,0.84,False,practice only,Ivo->Mara:0.56
+381,24,Ari,Toma,Bridgewright Guild,0.436,0.006,0.442,0.716,False,practice only,Ari->Toma:0.44
+382,24,Fay,Lio,Glassgarden Guild,0.461,0.002,0.463,0.734,False,practice only,Fay->Lio:0.46
+383,24,Nia,Sera,Index Guild,0.478,0.002,0.48,0.74,False,practice only,Nia->Sera:0.48
+384,25,Milo,Ren,Signal Guild,0.525,0.002,0.527,0.811,False,practice only,Milo->Ren:0.53
+385,25,Ivo,Mara,Seed Guild,0.56,0.002,0.562,0.84,False,practice only,Ivo->Mara:0.56
+386,25,Ari,Toma,Bridgewright Guild,0.442,0.002,0.444,0.722,False,practice only,Ari->Toma:0.44
+387,25,Fay,Lio,Glassgarden Guild,0.463,0.006,0.469,0.752,False,practice only,Fay->Lio:0.47
+388,25,Nia,Sera,Index Guild,0.48,0.002,0.482,0.746,False,practice only,Nia->Sera:0.48
+389,25,Milo,Ren,Signal Guild,0.527,0.002,0.529,0.817,False,practice only,Milo->Ren:0.53
+390,25,Ivo,Mara,Seed Guild,0.562,0.002,0.564,0.84,False,practice only,Ivo->Mara:0.56
+391,25,Ari,Toma,Bridgewright Guild,0.444,0.002,0.446,0.728,False,practice only,Ari->Toma:0.45
+392,25,Fay,Lio,Glassgarden Guild,0.469,0.006,0.475,0.77,False,practice only,Fay->Lio:0.48
+393,25,Nia,Sera,Index Guild,0.482,0.002,0.484,0.752,False,practice only,Nia->Sera:0.48
+394,25,Milo,Ren,Signal Guild,0.529,0.002,0.531,0.823,False,practice only,Milo->Ren:0.53
+395,25,Ivo,Mara,Seed Guild,0.564,0.002,0.566,0.84,False,practice only,Ivo->Mara:0.57
+396,25,Ari,Toma,Bridgewright Guild,0.446,0.002,0.448,0.734,False,practice only,Ari->Toma:0.45
+397,25,Fay,Lio,Glassgarden Guild,0.475,0.006,0.481,0.788,True,regional repair route,Fay->Lio:0.48
+398,25,Nia,Sera,Index Guild,0.484,0.002,0.486,0.758,False,practice only,Nia->Sera:0.49
+399,25,Milo,Ren,Signal Guild,0.531,0.002,0.533,0.804,False,practice only,Milo->Ren:0.53
+400,26,Ivo,Mara,Seed Guild,0.566,0.002,0.568,0.821,False,practice only,Ivo->Mara:0.57
+401,26,Ari,Toma,Bridgewright Guild,0.448,0.002,0.45,0.74,False,practice only,Ari->Toma:0.45
+402,26,Fay,Lio,Glassgarden Guild,0.481,0.002,0.483,0.794,False,regional repair route,Fay->Lio:0.48
+403,26,Nia,Sera,Index Guild,0.486,0.006,0.492,0.776,False,practice only,Nia->Sera:0.49
+404,26,Milo,Ren,Signal Guild,0.533,0.002,0.535,0.81,False,practice only,Milo->Ren:0.54
+405,26,Ivo,Mara,Seed Guild,0.568,0.002,0.57,0.827,False,practice only,Ivo->Mara:0.57
+406,26,Ari,Toma,Bridgewright Guild,0.45,0.002,0.452,0.746,False,practice only,Ari->Toma:0.45
+407,26,Fay,Lio,Glassgarden Guild,0.483,0.002,0.485,0.8,False,regional repair route,Fay->Lio:0.49
+408,26,Nia,Sera,Index Guild,0.492,0.006,0.498,0.794,False,practice only,Nia->Sera:0.50
+409,26,Milo,Ren,Signal Guild,0.535,0.002,0.537,0.816,False,practice only,Milo->Ren:0.54
+410,26,Ivo,Mara,Seed Guild,0.57,0.002,0.572,0.833,False,practice only,Ivo->Mara:0.57
+411,26,Ari,Toma,Bridgewright Guild,0.452,0.002,0.454,0.752,False,practice only,Ari->Toma:0.45
+412,26,Fay,Lio,Glassgarden Guild,0.485,0.002,0.487,0.806,False,regional repair route,Fay->Lio:0.49
+413,26,Nia,Sera,Index Guild,0.498,0.006,0.504,0.812,False,practice only,Nia->Sera:0.50
+414,26,Milo,Ren,Signal Guild,0.537,0.002,0.539,0.822,False,practice only,Milo->Ren:0.54
+415,26,Ivo,Mara,Seed Guild,0.572,0.002,0.574,0.814,False,practice only,Ivo->Mara:0.57
+416,27,Ari,Toma,Bridgewright Guild,0.454,0.002,0.456,0.733,False,practice only,Ari->Toma:0.46
+417,27,Fay,Lio,Glassgarden Guild,0.487,0.002,0.489,0.812,False,regional repair route,Fay->Lio:0.49
+418,27,Nia,Sera,Index Guild,0.504,0.002,0.506,0.818,False,practice only,Nia->Sera:0.51
+419,27,Milo,Ren,Signal Guild,0.539,0.006,0.545,0.84,False,practice only,Milo->Ren:0.55
+420,27,Ivo,Mara,Seed Guild,0.574,0.002,0.576,0.82,False,practice only,Ivo->Mara:0.58
+421,27,Ari,Toma,Bridgewright Guild,0.456,0.002,0.458,0.739,False,practice only,Ari->Toma:0.46
+422,27,Fay,Lio,Glassgarden Guild,0.489,0.002,0.491,0.818,False,regional repair route,Fay->Lio:0.49
+423,27,Nia,Sera,Index Guild,0.506,0.002,0.508,0.824,False,practice only,Nia->Sera:0.51
+424,27,Milo,Ren,Signal Guild,0.545,0.006,0.551,0.84,False,practice only,Milo->Ren:0.55
+425,27,Ivo,Mara,Seed Guild,0.576,0.002,0.578,0.826,False,practice only,Ivo->Mara:0.58
+426,27,Ari,Toma,Bridgewright Guild,0.458,0.002,0.46,0.745,False,practice only,Ari->Toma:0.46
+427,27,Fay,Lio,Glassgarden Guild,0.491,0.002,0.493,0.824,False,regional repair route,Fay->Lio:0.49
+428,27,Nia,Sera,Index Guild,0.508,0.002,0.51,0.83,False,practice only,Nia->Sera:0.51
+429,27,Milo,Ren,Signal Guild,0.551,0.006,0.557,0.84,False,practice only,Milo->Ren:0.56
+430,27,Ivo,Mara,Seed Guild,0.578,0.002,0.58,0.832,False,practice only,Ivo->Mara:0.58
+431,27,Ari,Toma,Bridgewright Guild,0.46,0.002,0.462,0.726,False,practice only,Ari->Toma:0.46
+432,28,Fay,Lio,Glassgarden Guild,0.493,0.002,0.495,0.805,False,regional repair route,Fay->Lio:0.50
+433,28,Nia,Sera,Index Guild,0.51,0.002,0.512,0.836,True,regional repair route,Nia->Sera:0.51
+434,28,Milo,Ren,Signal Guild,0.557,0.002,0.559,0.84,False,practice only,Milo->Ren:0.56
+435,28,Ivo,Mara,Seed Guild,0.58,0.006,0.586,0.84,False,practice only,Ivo->Mara:0.59
+436,28,Ari,Toma,Bridgewright Guild,0.462,0.002,0.464,0.732,False,practice only,Ari->Toma:0.46
+437,28,Fay,Lio,Glassgarden Guild,0.495,0.002,0.497,0.811,False,regional repair route,Fay->Lio:0.50
+438,28,Nia,Sera,Index Guild,0.512,0.002,0.514,0.84,False,regional repair route,Nia->Sera:0.51
+439,28,Milo,Ren,Signal Guild,0.559,0.002,0.561,0.84,False,practice only,Milo->Ren:0.56
+440,28,Ivo,Mara,Seed Guild,0.586,0.006,0.592,0.84,False,practice only,Ivo->Mara:0.59
+441,28,Ari,Toma,Bridgewright Guild,0.464,0.002,0.466,0.738,False,practice only,Ari->Toma:0.47
+442,28,Fay,Lio,Glassgarden Guild,0.497,0.002,0.499,0.817,False,regional repair route,Fay->Lio:0.50
+443,28,Nia,Sera,Index Guild,0.514,0.002,0.516,0.84,False,regional repair route,Nia->Sera:0.52
+444,28,Milo,Ren,Signal Guild,0.561,0.002,0.563,0.84,False,practice only,Milo->Ren:0.56
+445,28,Ivo,Mara,Seed Guild,0.592,0.006,0.598,0.84,False,practice only,Ivo->Mara:0.60
+446,28,Ari,Toma,Bridgewright Guild,0.466,0.002,0.468,0.744,False,practice only,Ari->Toma:0.47
+447,28,Fay,Lio,Glassgarden Guild,0.499,0.002,0.501,0.798,False,regional repair route,Fay->Lio:0.50
+448,29,Nia,Sera,Index Guild,0.516,0.002,0.518,0.821,False,regional repair route,Nia->Sera:0.52
+449,29,Milo,Ren,Signal Guild,0.563,0.002,0.565,0.84,False,practice only,Milo->Ren:0.57
+450,29,Ivo,Mara,Seed Guild,0.598,0.002,0.6,0.84,False,practice only,Ivo->Mara:0.60
+451,29,Ari,Toma,Bridgewright Guild,0.468,0.006,0.474,0.762,False,practice only,Ari->Toma:0.47
+452,29,Fay,Lio,Glassgarden Guild,0.501,0.002,0.503,0.804,False,regional repair route,Fay->Lio:0.50
+453,29,Nia,Sera,Index Guild,0.518,0.002,0.52,0.827,False,regional repair route,Nia->Sera:0.52
+454,29,Milo,Ren,Signal Guild,0.565,0.002,0.567,0.84,False,practice only,Milo->Ren:0.57
+455,29,Ivo,Mara,Seed Guild,0.6,0.002,0.602,0.84,False,practice only,Ivo->Mara:0.60
+456,29,Ari,Toma,Bridgewright Guild,0.474,0.006,0.48,0.78,True,regional repair route,Ari->Toma:0.48
+457,29,Fay,Lio,Glassgarden Guild,0.503,0.002,0.505,0.81,False,regional repair route,Fay->Lio:0.51
+458,29,Nia,Sera,Index Guild,0.52,0.002,0.522,0.833,False,regional repair route,Nia->Sera:0.52
+459,29,Milo,Ren,Signal Guild,0.567,0.002,0.569,0.84,False,practice only,Milo->Ren:0.57
+460,29,Ivo,Mara,Seed Guild,0.602,0.002,0.604,0.84,False,practice only,Ivo->Mara:0.60
+461,29,Ari,Toma,Bridgewright Guild,0.48,0.006,0.486,0.798,False,regional repair route,Ari->Toma:0.49
+462,29,Fay,Lio,Glassgarden Guild,0.505,0.002,0.507,0.816,False,regional repair route,Fay->Lio:0.51
+463,29,Nia,Sera,Index Guild,0.522,0.002,0.524,0.814,False,regional repair route,Nia->Sera:0.52
+464,30,Ivo,Mara,Seed Guild,0.604,0.002,0.606,0.821,False,practice only,Ivo->Mara:0.61
+465,30,Ari,Toma,Bridgewright Guild,0.486,0.002,0.488,0.804,False,regional repair route,Ari->Toma:0.49
+466,30,Fay,Lio,Glassgarden Guild,0.507,0.002,0.509,0.822,False,regional repair route,Fay->Lio:0.51
+467,30,Nia,Sera,Index Guild,0.524,0.006,0.53,0.832,False,regional repair route,Nia->Sera:0.53
+468,30,Milo,Ren,Signal Guild,0.569,0.002,0.571,0.84,False,practice only,Milo->Ren:0.57
+469,30,Ivo,Mara,Seed Guild,0.606,0.002,0.608,0.827,False,practice only,Ivo->Mara:0.61
+470,30,Ari,Toma,Bridgewright Guild,0.488,0.002,0.49,0.81,False,regional repair route,Ari->Toma:0.49
+471,30,Fay,Lio,Glassgarden Guild,0.509,0.002,0.511,0.828,False,regional repair route,Fay->Lio:0.51
+472,30,Nia,Sera,Index Guild,0.53,0.006,0.536,0.84,False,regional repair route,Nia->Sera:0.54
+473,30,Milo,Ren,Signal Guild,0.571,0.002,0.573,0.84,False,practice only,Milo->Ren:0.57
+474,30,Ivo,Mara,Seed Guild,0.608,0.002,0.61,0.833,False,practice only,Ivo->Mara:0.61
+475,30,Ari,Toma,Bridgewright Guild,0.49,0.002,0.492,0.816,False,regional repair route,Ari->Toma:0.49
+476,30,Fay,Lio,Glassgarden Guild,0.511,0.002,0.513,0.834,False,regional repair route,Fay->Lio:0.51
+477,30,Nia,Sera,Index Guild,0.536,0.006,0.542,0.84,False,regional repair route,Nia->Sera:0.54
+478,30,Milo,Ren,Signal Guild,0.573,0.002,0.575,0.84,False,practice only,Milo->Ren:0.58
+479,30,Ivo,Mara,Seed Guild,0.61,0.002,0.612,0.814,False,practice only,Ivo->Mara:0.61
+480,31,Ari,Toma,Bridgewright Guild,0.492,0.002,0.494,0.797,False,regional repair route,Ari->Toma:0.49
+481,31,Fay,Lio,Glassgarden Guild,0.513,0.002,0.515,0.84,False,regional repair route,Fay->Lio:0.52
+482,31,Nia,Sera,Index Guild,0.542,0.002,0.544,0.84,False,regional repair route,Nia->Sera:0.54
+483,31,Milo,Ren,Signal Guild,0.575,0.006,0.581,0.84,True,regional repair route,Milo->Ren:0.58
+484,31,Ivo,Mara,Seed Guild,0.612,0.002,0.614,0.82,False,practice only,Ivo->Mara:0.61
+485,31,Ari,Toma,Bridgewright Guild,0.494,0.002,0.496,0.803,False,regional repair route,Ari->Toma:0.50
+486,31,Fay,Lio,Glassgarden Guild,0.515,0.002,0.517,0.84,False,regional repair route,Fay->Lio:0.52
+487,31,Nia,Sera,Index Guild,0.544,0.002,0.546,0.84,False,regional repair route,Nia->Sera:0.55
+488,31,Milo,Ren,Signal Guild,0.581,0.006,0.587,0.84,False,regional repair route,Milo->Ren:0.59
+489,31,Ivo,Mara,Seed Guild,0.614,0.002,0.616,0.826,False,practice only,Ivo->Mara:0.62
+490,31,Ari,Toma,Bridgewright Guild,0.496,0.002,0.498,0.809,False,regional repair route,Ari->Toma:0.50
+491,31,Fay,Lio,Glassgarden Guild,0.517,0.002,0.519,0.84,False,regional repair route,Fay->Lio:0.52
+492,31,Nia,Sera,Index Guild,0.546,0.002,0.548,0.84,False,regional repair route,Nia->Sera:0.55
+493,31,Milo,Ren,Signal Guild,0.587,0.006,0.593,0.84,False,regional repair route,Milo->Ren:0.59
+494,31,Ivo,Mara,Seed Guild,0.616,0.002,0.618,0.832,False,practice only,Ivo->Mara:0.62
+495,31,Ari,Toma,Bridgewright Guild,0.498,0.002,0.5,0.79,False,regional repair route,Ari->Toma:0.50
+496,32,Fay,Lio,Glassgarden Guild,0.519,0.002,0.521,0.821,False,regional repair route,Fay->Lio:0.52
+497,32,Nia,Sera,Index Guild,0.548,0.002,0.55,0.84,False,regional repair route,Nia->Sera:0.55
+498,32,Milo,Ren,Signal Guild,0.593,0.002,0.595,0.84,False,regional repair route,Milo->Ren:0.60
+499,32,Ivo,Mara,Seed Guild,0.618,0.006,0.624,0.84,False,practice only,Ivo->Mara:0.62
+500,32,Ari,Toma,Bridgewright Guild,0.5,0.002,0.502,0.796,False,regional repair route,Ari->Toma:0.50
+501,32,Fay,Lio,Glassgarden Guild,0.521,0.002,0.523,0.827,False,regional repair route,Fay->Lio:0.52
+502,32,Nia,Sera,Index Guild,0.55,0.002,0.552,0.84,False,regional repair route,Nia->Sera:0.55
+503,32,Milo,Ren,Signal Guild,0.595,0.002,0.597,0.84,False,regional repair route,Milo->Ren:0.60
+504,32,Ivo,Mara,Seed Guild,0.624,0.006,0.63,0.84,False,practice only,Ivo->Mara:0.63
+505,32,Ari,Toma,Bridgewright Guild,0.502,0.002,0.504,0.802,False,regional repair route,Ari->Toma:0.50
+506,32,Fay,Lio,Glassgarden Guild,0.523,0.002,0.525,0.833,False,regional repair route,Fay->Lio:0.53
+507,32,Nia,Sera,Index Guild,0.552,0.002,0.554,0.84,False,regional repair route,Nia->Sera:0.55
+508,32,Milo,Ren,Signal Guild,0.597,0.002,0.599,0.84,False,regional repair route,Milo->Ren:0.60
+509,32,Ivo,Mara,Seed Guild,0.63,0.006,0.636,0.84,False,practice only,Ivo->Mara:0.64
+510,32,Ari,Toma,Bridgewright Guild,0.504,0.002,0.506,0.808,False,regional repair route,Ari->Toma:0.51
+511,32,Fay,Lio,Glassgarden Guild,0.525,0.002,0.527,0.814,False,regional repair route,Fay->Lio:0.53
+512,33,Nia,Sera,Index Guild,0.554,0.002,0.556,0.821,False,regional repair route,Nia->Sera:0.56
+513,33,Milo,Ren,Signal Guild,0.599,0.002,0.601,0.84,False,regional repair route,Milo->Ren:0.60
+514,33,Ivo,Mara,Seed Guild,0.636,0.002,0.638,0.84,False,practice only,Ivo->Mara:0.64
+515,33,Ari,Toma,Bridgewright Guild,0.506,0.006,0.512,0.826,False,regional repair route,Ari->Toma:0.51
+516,33,Fay,Lio,Glassgarden Guild,0.527,0.002,0.529,0.82,False,regional repair route,Fay->Lio:0.53
+517,33,Nia,Sera,Index Guild,0.556,0.002,0.558,0.827,False,regional repair route,Nia->Sera:0.56
+518,33,Milo,Ren,Signal Guild,0.601,0.002,0.603,0.84,False,regional repair route,Milo->Ren:0.60
+519,33,Ivo,Mara,Seed Guild,0.638,0.002,0.64,0.84,False,practice only,Ivo->Mara:0.64
+520,33,Ari,Toma,Bridgewright Guild,0.512,0.006,0.518,0.84,False,regional repair route,Ari->Toma:0.52
+521,33,Fay,Lio,Glassgarden Guild,0.529,0.002,0.531,0.826,False,regional repair route,Fay->Lio:0.53
+522,33,Nia,Sera,Index Guild,0.558,0.002,0.56,0.833,False,regional repair route,Nia->Sera:0.56
+523,33,Milo,Ren,Signal Guild,0.603,0.002,0.605,0.84,False,regional repair route,Milo->Ren:0.61
+524,33,Ivo,Mara,Seed Guild,0.64,0.002,0.642,0.84,False,practice only,Ivo->Mara:0.64
+525,33,Ari,Toma,Bridgewright Guild,0.518,0.006,0.524,0.84,False,regional repair route,Ari->Toma:0.52
+526,33,Fay,Lio,Glassgarden Guild,0.531,0.002,0.533,0.832,False,regional repair route,Fay->Lio:0.53
+527,33,Nia,Sera,Index Guild,0.56,0.002,0.562,0.814,False,regional repair route,Nia->Sera:0.56
+528,34,Milo,Ren,Signal Guild,0.605,0.002,0.607,0.821,False,regional repair route,Milo->Ren:0.61
+529,34,Ivo,Mara,Seed Guild,0.642,0.002,0.644,0.84,True,regional repair route,Ivo->Mara:0.64
+530,34,Ari,Toma,Bridgewright Guild,0.524,0.002,0.526,0.84,False,regional repair route,Ari->Toma:0.53
+531,34,Fay,Lio,Glassgarden Guild,0.533,0.006,0.539,0.84,False,regional repair route,Fay->Lio:0.54
+532,34,Nia,Sera,Index Guild,0.562,0.002,0.564,0.82,False,regional repair route,Nia->Sera:0.56
+533,34,Milo,Ren,Signal Guild,0.607,0.002,0.609,0.827,False,regional repair route,Milo->Ren:0.61
+534,34,Ivo,Mara,Seed Guild,0.644,0.002,0.646,0.84,False,regional repair route,Ivo->Mara:0.65
+535,34,Ari,Toma,Bridgewright Guild,0.526,0.002,0.528,0.84,False,regional repair route,Ari->Toma:0.53
+536,34,Fay,Lio,Glassgarden Guild,0.539,0.006,0.545,0.84,False,regional repair route,Fay->Lio:0.55
+537,34,Nia,Sera,Index Guild,0.564,0.002,0.566,0.826,False,regional repair route,Nia->Sera:0.57
+538,34,Milo,Ren,Signal Guild,0.609,0.002,0.611,0.833,False,regional repair route,Milo->Ren:0.61
+539,34,Ivo,Mara,Seed Guild,0.646,0.002,0.648,0.84,False,regional repair route,Ivo->Mara:0.65
+540,34,Ari,Toma,Bridgewright Guild,0.528,0.002,0.53,0.84,False,regional repair route,Ari->Toma:0.53
+541,34,Fay,Lio,Glassgarden Guild,0.545,0.006,0.551,0.84,False,regional repair route,Fay->Lio:0.55
+542,34,Nia,Sera,Index Guild,0.566,0.002,0.568,0.832,False,regional repair route,Nia->Sera:0.57
+543,34,Milo,Ren,Signal Guild,0.611,0.002,0.613,0.814,False,regional repair route,Milo->Ren:0.61
+544,35,Ivo,Mara,Seed Guild,0.648,0.002,0.65,0.821,False,regional repair route,Ivo->Mara:0.65
+545,35,Ari,Toma,Bridgewright Guild,0.53,0.002,0.532,0.84,False,regional repair route,Ari->Toma:0.53
+546,35,Fay,Lio,Glassgarden Guild,0.551,0.002,0.553,0.84,False,regional repair route,Fay->Lio:0.55
+547,35,Nia,Sera,Index Guild,0.568,0.006,0.574,0.84,False,regional repair route,Nia->Sera:0.57
+548,35,Milo,Ren,Signal Guild,0.613,0.002,0.615,0.82,False,regional repair route,Milo->Ren:0.62
+549,35,Ivo,Mara,Seed Guild,0.65,0.002,0.652,0.827,False,regional repair route,Ivo->Mara:0.65
+550,35,Ari,Toma,Bridgewright Guild,0.532,0.002,0.534,0.84,False,regional repair route,Ari->Toma:0.53
+551,35,Fay,Lio,Glassgarden Guild,0.553,0.002,0.555,0.84,False,regional repair route,Fay->Lio:0.56
+552,35,Nia,Sera,Index Guild,0.574,0.006,0.58,0.84,False,regional repair route,Nia->Sera:0.58
+553,35,Milo,Ren,Signal Guild,0.615,0.002,0.617,0.826,False,regional repair route,Milo->Ren:0.62
+554,35,Ivo,Mara,Seed Guild,0.652,0.002,0.654,0.833,False,regional repair route,Ivo->Mara:0.65
+555,35,Ari,Toma,Bridgewright Guild,0.534,0.002,0.536,0.84,False,regional repair route,Ari->Toma:0.54
+556,35,Fay,Lio,Glassgarden Guild,0.555,0.002,0.557,0.84,False,regional repair route,Fay->Lio:0.56
+557,35,Nia,Sera,Index Guild,0.58,0.006,0.586,0.84,False,regional repair route,Nia->Sera:0.59
+558,35,Milo,Ren,Signal Guild,0.617,0.002,0.619,0.832,False,regional repair route,Milo->Ren:0.62
+559,35,Ivo,Mara,Seed Guild,0.654,0.002,0.656,0.814,False,regional repair route,Ivo->Mara:0.66
+560,36,Fay,Lio,Glassgarden Guild,0.557,0.002,0.559,0.821,False,regional repair route,Fay->Lio:0.56
+561,36,Nia,Sera,Index Guild,0.586,0.002,0.588,0.84,False,regional repair route,Nia->Sera:0.59
+562,36,Milo,Ren,Signal Guild,0.619,0.002,0.621,0.838,False,regional repair route,Milo->Ren:0.62
+563,36,Ivo,Mara,Seed Guild,0.656,0.006,0.662,0.832,False,regional repair route,Ivo->Mara:0.66
+564,36,Ari,Toma,Bridgewright Guild,0.536,0.002,0.538,0.84,False,regional repair route,Ari->Toma:0.54
+565,36,Fay,Lio,Glassgarden Guild,0.559,0.002,0.561,0.827,False,regional repair route,Fay->Lio:0.56
+566,36,Nia,Sera,Index Guild,0.588,0.002,0.59,0.84,False,regional repair route,Nia->Sera:0.59
+567,36,Milo,Ren,Signal Guild,0.621,0.002,0.623,0.84,False,regional repair route,Milo->Ren:0.62
+568,36,Ivo,Mara,Seed Guild,0.662,0.006,0.668,0.84,False,regional repair route,Ivo->Mara:0.67
+569,36,Ari,Toma,Bridgewright Guild,0.538,0.002,0.54,0.84,False,regional repair route,Ari->Toma:0.54
+570,36,Fay,Lio,Glassgarden Guild,0.561,0.002,0.563,0.833,False,regional repair route,Fay->Lio:0.56
+571,36,Nia,Sera,Index Guild,0.59,0.002,0.592,0.84,False,regional repair route,Nia->Sera:0.59
+572,36,Milo,Ren,Signal Guild,0.623,0.002,0.625,0.84,False,regional repair route,Milo->Ren:0.63
+573,36,Ivo,Mara,Seed Guild,0.668,0.006,0.674,0.84,False,regional repair route,Ivo->Mara:0.67
+574,36,Ari,Toma,Bridgewright Guild,0.54,0.002,0.542,0.84,False,regional repair route,Ari->Toma:0.54
+575,36,Fay,Lio,Glassgarden Guild,0.563,0.002,0.565,0.814,False,regional repair route,Fay->Lio:0.57
+576,37,Nia,Sera,Index Guild,0.592,0.002,0.594,0.821,False,regional repair route,Nia->Sera:0.59
+577,37,Milo,Ren,Signal Guild,0.625,0.002,0.627,0.84,False,regional repair route,Milo->Ren:0.63
+578,37,Ivo,Mara,Seed Guild,0.674,0.002,0.676,0.84,False,regional repair route,Ivo->Mara:0.68
+579,37,Ari,Toma,Bridgewright Guild,0.542,0.006,0.548,0.84,False,regional repair route,Ari->Toma:0.55
+580,37,Fay,Lio,Glassgarden Guild,0.565,0.002,0.567,0.82,False,regional repair route,Fay->Lio:0.57
+581,37,Nia,Sera,Index Guild,0.594,0.002,0.596,0.827,False,regional repair route,Nia->Sera:0.60
+582,37,Milo,Ren,Signal Guild,0.627,0.002,0.629,0.84,False,regional repair route,Milo->Ren:0.63
+583,37,Ivo,Mara,Seed Guild,0.676,0.002,0.678,0.84,False,regional repair route,Ivo->Mara:0.68
+584,37,Ari,Toma,Bridgewright Guild,0.548,0.006,0.554,0.84,False,regional repair route,Ari->Toma:0.55
+585,37,Fay,Lio,Glassgarden Guild,0.567,0.002,0.569,0.826,False,regional repair route,Fay->Lio:0.57
+586,37,Nia,Sera,Index Guild,0.596,0.002,0.598,0.833,False,regional repair route,Nia->Sera:0.60
+587,37,Milo,Ren,Signal Guild,0.629,0.002,0.631,0.84,False,regional repair route,Milo->Ren:0.63
+588,37,Ivo,Mara,Seed Guild,0.678,0.002,0.68,0.84,False,regional repair route,Ivo->Mara:0.68
+589,37,Ari,Toma,Bridgewright Guild,0.554,0.006,0.56,0.84,False,regional repair route,Ari->Toma:0.56
+590,37,Fay,Lio,Glassgarden Guild,0.569,0.002,0.571,0.832,False,regional repair route,Fay->Lio:0.57
+591,37,Nia,Sera,Index Guild,0.598,0.002,0.6,0.814,False,regional repair route,Nia->Sera:0.60
+592,38,Milo,Ren,Signal Guild,0.631,0.002,0.633,0.821,False,regional repair route,Milo->Ren:0.63
+593,38,Ivo,Mara,Seed Guild,0.68,0.002,0.682,0.84,False,regional repair route,Ivo->Mara:0.68
+594,38,Ari,Toma,Bridgewright Guild,0.56,0.002,0.562,0.84,False,regional repair route,Ari->Toma:0.56
+595,38,Fay,Lio,Glassgarden Guild,0.571,0.006,0.577,0.84,False,regional repair route,Fay->Lio:0.58
+596,38,Nia,Sera,Index Guild,0.6,0.002,0.602,0.82,False,regional repair route,Nia->Sera:0.60
+597,38,Milo,Ren,Signal Guild,0.633,0.002,0.635,0.827,False,regional repair route,Milo->Ren:0.64
+598,38,Ivo,Mara,Seed Guild,0.682,0.002,0.684,0.84,False,regional repair route,Ivo->Mara:0.68
+599,38,Ari,Toma,Bridgewright Guild,0.562,0.002,0.564,0.84,False,regional repair route,Ari->Toma:0.56
+600,38,Fay,Lio,Glassgarden Guild,0.577,0.006,0.583,0.84,False,regional repair route,Fay->Lio:0.58
+601,38,Nia,Sera,Index Guild,0.602,0.002,0.604,0.826,False,regional repair route,Nia->Sera:0.60
+602,38,Milo,Ren,Signal Guild,0.635,0.002,0.637,0.833,False,regional repair route,Milo->Ren:0.64
+603,38,Ivo,Mara,Seed Guild,0.684,0.002,0.686,0.84,False,regional repair route,Ivo->Mara:0.69
+604,38,Ari,Toma,Bridgewright Guild,0.564,0.002,0.566,0.84,False,regional repair route,Ari->Toma:0.57
+605,38,Fay,Lio,Glassgarden Guild,0.583,0.006,0.589,0.84,False,regional repair route,Fay->Lio:0.59
+606,38,Nia,Sera,Index Guild,0.604,0.002,0.606,0.832,False,regional repair route,Nia->Sera:0.61
+607,38,Milo,Ren,Signal Guild,0.637,0.002,0.639,0.814,False,regional repair route,Milo->Ren:0.64
+608,39,Ivo,Mara,Seed Guild,0.686,0.002,0.688,0.821,False,regional repair route,Ivo->Mara:0.69
+609,39,Ari,Toma,Bridgewright Guild,0.566,0.002,0.568,0.84,False,regional repair route,Ari->Toma:0.57
+610,39,Fay,Lio,Glassgarden Guild,0.589,0.002,0.591,0.84,False,regional repair route,Fay->Lio:0.59
+611,39,Nia,Sera,Index Guild,0.606,0.006,0.612,0.84,False,regional repair route,Nia->Sera:0.61
+612,39,Milo,Ren,Signal Guild,0.639,0.002,0.641,0.82,False,regional repair route,Milo->Ren:0.64
+613,39,Ivo,Mara,Seed Guild,0.688,0.002,0.69,0.827,False,regional repair route,Ivo->Mara:0.69
+614,39,Ari,Toma,Bridgewright Guild,0.568,0.002,0.57,0.84,False,regional repair route,Ari->Toma:0.57
+615,39,Fay,Lio,Glassgarden Guild,0.591,0.002,0.593,0.84,False,regional repair route,Fay->Lio:0.59
+616,39,Nia,Sera,Index Guild,0.612,0.006,0.618,0.84,False,regional repair route,Nia->Sera:0.62
+617,39,Milo,Ren,Signal Guild,0.641,0.002,0.643,0.826,False,regional repair route,Milo->Ren:0.64
+618,39,Ivo,Mara,Seed Guild,0.69,0.002,0.692,0.833,False,regional repair route,Ivo->Mara:0.69
+619,39,Ari,Toma,Bridgewright Guild,0.57,0.002,0.572,0.84,False,regional repair route,Ari->Toma:0.57
+620,39,Fay,Lio,Glassgarden Guild,0.593,0.002,0.595,0.84,False,regional repair route,Fay->Lio:0.60
+621,39,Nia,Sera,Index Guild,0.618,0.006,0.624,0.84,False,regional repair route,Nia->Sera:0.62
+622,39,Milo,Ren,Signal Guild,0.643,0.002,0.645,0.832,False,regional repair route,Milo->Ren:0.65
+623,39,Ivo,Mara,Seed Guild,0.692,0.002,0.694,0.814,False,regional repair route,Ivo->Mara:0.69
+624,40,Ari,Toma,Bridgewright Guild,0.572,0.002,0.574,0.821,False,regional repair route,Ari->Toma:0.57
+625,40,Fay,Lio,Glassgarden Guild,0.595,0.002,0.597,0.84,False,regional repair route,Fay->Lio:0.60
+626,40,Nia,Sera,Index Guild,0.624,0.002,0.626,0.84,False,regional repair route,Nia->Sera:0.63
+627,40,Milo,Ren,Signal Guild,0.645,0.006,0.651,0.84,False,regional repair route,Milo->Ren:0.65
+628,40,Ivo,Mara,Seed Guild,0.694,0.002,0.696,0.82,False,regional repair route,Ivo->Mara:0.70
+629,40,Ari,Toma,Bridgewright Guild,0.574,0.002,0.576,0.827,False,regional repair route,Ari->Toma:0.58
+630,40,Fay,Lio,Glassgarden Guild,0.597,0.002,0.599,0.84,False,regional repair route,Fay->Lio:0.60
+631,40,Nia,Sera,Index Guild,0.626,0.002,0.628,0.84,False,regional repair route,Nia->Sera:0.63
+632,40,Milo,Ren,Signal Guild,0.651,0.006,0.657,0.84,False,regional repair route,Milo->Ren:0.66
+633,40,Ivo,Mara,Seed Guild,0.696,0.002,0.698,0.826,False,regional repair route,Ivo->Mara:0.70
+634,40,Ari,Toma,Bridgewright Guild,0.576,0.002,0.578,0.833,False,regional repair route,Ari->Toma:0.58
+635,40,Fay,Lio,Glassgarden Guild,0.599,0.002,0.601,0.84,False,regional repair route,Fay->Lio:0.60
+636,40,Nia,Sera,Index Guild,0.628,0.002,0.63,0.84,False,regional repair route,Nia->Sera:0.63
+637,40,Milo,Ren,Signal Guild,0.657,0.006,0.663,0.84,False,regional repair route,Milo->Ren:0.66
+638,40,Ivo,Mara,Seed Guild,0.698,0.002,0.7,0.832,False,regional repair route,Ivo->Mara:0.70
+639,40,Ari,Toma,Bridgewright Guild,0.578,0.002,0.58,0.814,False,regional repair route,Ari->Toma:0.58
+640,41,Fay,Lio,Glassgarden Guild,0.601,0.002,0.603,0.821,False,regional repair route,Fay->Lio:0.60
+641,41,Nia,Sera,Index Guild,0.63,0.002,0.632,0.84,False,regional repair route,Nia->Sera:0.63
+642,41,Milo,Ren,Signal Guild,0.663,0.002,0.665,0.84,False,regional repair route,Milo->Ren:0.67
+643,41,Ivo,Mara,Seed Guild,0.7,0.006,0.706,0.84,False,regional repair route,Ivo->Mara:0.71
+644,41,Ari,Toma,Bridgewright Guild,0.58,0.002,0.582,0.82,False,regional repair route,Ari->Toma:0.58
+645,41,Fay,Lio,Glassgarden Guild,0.603,0.002,0.605,0.827,False,regional repair route,Fay->Lio:0.61
+646,41,Nia,Sera,Index Guild,0.632,0.002,0.634,0.84,False,regional repair route,Nia->Sera:0.63
+647,41,Milo,Ren,Signal Guild,0.665,0.002,0.667,0.84,False,regional repair route,Milo->Ren:0.67
+648,41,Ivo,Mara,Seed Guild,0.706,0.006,0.712,0.84,False,regional repair route,Ivo->Mara:0.71
+649,41,Ari,Toma,Bridgewright Guild,0.582,0.002,0.584,0.826,False,regional repair route,Ari->Toma:0.58
+650,41,Fay,Lio,Glassgarden Guild,0.605,0.002,0.607,0.833,False,regional repair route,Fay->Lio:0.61
+651,41,Nia,Sera,Index Guild,0.634,0.002,0.636,0.84,False,regional repair route,Nia->Sera:0.64
+652,41,Milo,Ren,Signal Guild,0.667,0.002,0.669,0.84,False,regional repair route,Milo->Ren:0.67
+653,41,Ivo,Mara,Seed Guild,0.712,0.006,0.718,0.84,False,regional repair route,Ivo->Mara:0.72
+654,41,Ari,Toma,Bridgewright Guild,0.584,0.002,0.586,0.832,False,regional repair route,Ari->Toma:0.59
+655,41,Fay,Lio,Glassgarden Guild,0.607,0.006,0.613,0.826,False,regional repair route,Fay->Lio:0.61
+656,42,Milo,Ren,Signal Guild,0.669,0.002,0.671,0.821,False,regional repair route,Milo->Ren:0.67
+657,42,Ivo,Mara,Seed Guild,0.718,0.002,0.72,0.84,False,regional repair route,Ivo->Mara:0.72
+658,42,Ari,Toma,Bridgewright Guild,0.586,0.002,0.588,0.838,False,regional repair route,Ari->Toma:0.59
+659,42,Fay,Lio,Glassgarden Guild,0.613,0.006,0.619,0.84,False,regional repair route,Fay->Lio:0.62
+660,42,Nia,Sera,Index Guild,0.636,0.002,0.638,0.84,False,regional repair route,Nia->Sera:0.64
+661,42,Milo,Ren,Signal Guild,0.671,0.002,0.673,0.827,False,regional repair route,Milo->Ren:0.67
+662,42,Ivo,Mara,Seed Guild,0.72,0.002,0.722,0.84,False,regional repair route,Ivo->Mara:0.72
+663,42,Ari,Toma,Bridgewright Guild,0.588,0.002,0.59,0.84,False,regional repair route,Ari->Toma:0.59
+664,42,Fay,Lio,Glassgarden Guild,0.619,0.006,0.625,0.84,False,regional repair route,Fay->Lio:0.63
+665,42,Nia,Sera,Index Guild,0.638,0.002,0.64,0.84,False,regional repair route,Nia->Sera:0.64
+666,42,Milo,Ren,Signal Guild,0.673,0.002,0.675,0.833,False,regional repair route,Milo->Ren:0.68
+667,42,Ivo,Mara,Seed Guild,0.722,0.002,0.724,0.84,False,regional repair route,Ivo->Mara:0.72
+668,42,Ari,Toma,Bridgewright Guild,0.59,0.002,0.592,0.84,False,regional repair route,Ari->Toma:0.59
+669,42,Fay,Lio,Glassgarden Guild,0.625,0.006,0.631,0.84,False,regional repair route,Fay->Lio:0.63
+670,42,Nia,Sera,Index Guild,0.64,0.002,0.642,0.84,False,regional repair route,Nia->Sera:0.64
+671,42,Milo,Ren,Signal Guild,0.675,0.002,0.677,0.814,False,regional repair route,Milo->Ren:0.68
+672,43,Ivo,Mara,Seed Guild,0.724,0.002,0.726,0.821,False,regional repair route,Ivo->Mara:0.73
+673,43,Ari,Toma,Bridgewright Guild,0.592,0.002,0.594,0.84,False,regional repair route,Ari->Toma:0.59
+674,43,Fay,Lio,Glassgarden Guild,0.631,0.006,0.637,0.84,False,regional repair route,Fay->Lio:0.64
+675,43,Nia,Sera,Index Guild,0.642,0.006,0.648,0.84,False,regional repair route,Nia->Sera:0.65
+676,43,Milo,Ren,Signal Guild,0.677,0.002,0.679,0.82,False,regional repair route,Milo->Ren:0.68
+677,43,Ivo,Mara,Seed Guild,0.726,0.002,0.728,0.827,False,regional repair route,Ivo->Mara:0.73
+678,43,Ari,Toma,Bridgewright Guild,0.594,0.002,0.596,0.84,False,regional repair route,Ari->Toma:0.60
+679,43,Fay,Lio,Glassgarden Guild,0.637,0.002,0.639,0.84,False,regional repair route,Fay->Lio:0.64
+680,43,Nia,Sera,Index Guild,0.648,0.006,0.654,0.84,False,regional repair route,Nia->Sera:0.65
+681,43,Milo,Ren,Signal Guild,0.679,0.002,0.681,0.826,False,regional repair route,Milo->Ren:0.68
+682,43,Ivo,Mara,Seed Guild,0.728,0.002,0.73,0.833,False,regional repair route,Ivo->Mara:0.73
+683,43,Ari,Toma,Bridgewright Guild,0.596,0.002,0.598,0.84,False,regional repair route,Ari->Toma:0.60
+684,43,Fay,Lio,Glassgarden Guild,0.639,0.002,0.641,0.84,False,regional repair route,Fay->Lio:0.64
+685,43,Nia,Sera,Index Guild,0.654,0.006,0.66,0.84,False,regional repair route,Nia->Sera:0.66
+686,43,Milo,Ren,Signal Guild,0.681,0.002,0.683,0.832,False,regional repair route,Milo->Ren:0.68
+687,43,Ivo,Mara,Seed Guild,0.73,0.002,0.732,0.814,False,regional repair route,Ivo->Mara:0.73
+688,44,Ari,Toma,Bridgewright Guild,0.598,0.002,0.6,0.821,False,regional repair route,Ari->Toma:0.60
+689,44,Fay,Lio,Glassgarden Guild,0.641,0.002,0.643,0.84,False,regional repair route,Fay->Lio:0.64
+690,44,Nia,Sera,Index Guild,0.66,0.002,0.662,0.84,False,regional repair route,Nia->Sera:0.66
+691,44,Milo,Ren,Signal Guild,0.683,0.006,0.689,0.84,False,regional repair route,Milo->Ren:0.69
+692,44,Ivo,Mara,Seed Guild,0.732,0.002,0.734,0.82,False,regional repair route,Ivo->Mara:0.73
+693,44,Ari,Toma,Bridgewright Guild,0.6,0.002,0.602,0.827,False,regional repair route,Ari->Toma:0.60
+694,44,Fay,Lio,Glassgarden Guild,0.643,0.002,0.645,0.84,False,regional repair route,Fay->Lio:0.65
+695,44,Nia,Sera,Index Guild,0.662,0.002,0.664,0.84,False,regional repair route,Nia->Sera:0.66
+696,44,Milo,Ren,Signal Guild,0.689,0.006,0.695,0.84,False,regional repair route,Milo->Ren:0.70
+697,44,Ivo,Mara,Seed Guild,0.734,0.002,0.736,0.826,False,regional repair route,Ivo->Mara:0.74
+698,44,Ari,Toma,Bridgewright Guild,0.602,0.002,0.604,0.833,False,regional repair route,Ari->Toma:0.60
+699,44,Fay,Lio,Glassgarden Guild,0.645,0.002,0.647,0.84,False,regional repair route,Fay->Lio:0.65
+700,44,Nia,Sera,Index Guild,0.664,0.002,0.666,0.84,False,regional repair route,Nia->Sera:0.67
+701,44,Milo,Ren,Signal Guild,0.695,0.006,0.701,0.84,False,regional repair route,Milo->Ren:0.70
+702,44,Ivo,Mara,Seed Guild,0.736,0.002,0.738,0.832,False,regional repair route,Ivo->Mara:0.74
+703,44,Ari,Toma,Bridgewright Guild,0.604,0.006,0.61,0.826,False,regional repair route,Ari->Toma:0.61
+704,45,Fay,Lio,Glassgarden Guild,0.647,0.002,0.649,0.821,False,regional repair route,Fay->Lio:0.65
+705,45,Nia,Sera,Index Guild,0.666,0.002,0.668,0.84,False,regional repair route,Nia->Sera:0.67
+706,45,Milo,Ren,Signal Guild,0.701,0.006,0.707,0.84,False,regional repair route,Milo->Ren:0.71
+707,45,Ivo,Mara,Seed Guild,0.738,0.006,0.744,0.84,False,regional repair route,Ivo->Mara:0.74
+708,45,Ari,Toma,Bridgewright Guild,0.61,0.002,0.612,0.832,False,regional repair route,Ari->Toma:0.61
+709,45,Fay,Lio,Glassgarden Guild,0.649,0.002,0.651,0.827,False,regional repair route,Fay->Lio:0.65
+710,45,Nia,Sera,Index Guild,0.668,0.002,0.67,0.84,False,regional repair route,Nia->Sera:0.67
+711,45,Milo,Ren,Signal Guild,0.707,0.002,0.709,0.84,False,regional repair route,Milo->Ren:0.71
+712,45,Ivo,Mara,Seed Guild,0.744,0.006,0.75,0.84,False,regional repair route,Ivo->Mara:0.75
+713,45,Ari,Toma,Bridgewright Guild,0.612,0.002,0.614,0.838,False,regional repair route,Ari->Toma:0.61
+714,45,Fay,Lio,Glassgarden Guild,0.651,0.002,0.653,0.833,False,regional repair route,Fay->Lio:0.65
+715,45,Nia,Sera,Index Guild,0.67,0.002,0.672,0.84,False,regional repair route,Nia->Sera:0.67
+716,45,Milo,Ren,Signal Guild,0.709,0.002,0.711,0.84,False,regional repair route,Milo->Ren:0.71
+717,45,Ivo,Mara,Seed Guild,0.75,0.006,0.756,0.84,False,regional repair route,Ivo->Mara:0.76
+718,45,Ari,Toma,Bridgewright Guild,0.614,0.002,0.616,0.84,False,regional repair route,Ari->Toma:0.62
+719,45,Fay,Lio,Glassgarden Guild,0.653,0.002,0.655,0.814,False,regional repair route,Fay->Lio:0.66
+720,46,Nia,Sera,Index Guild,0.672,0.002,0.674,0.821,False,regional repair route,Nia->Sera:0.67
+721,46,Milo,Ren,Signal Guild,0.711,0.002,0.713,0.84,False,regional repair route,Milo->Ren:0.71
+722,46,Ivo,Mara,Seed Guild,0.756,0.006,0.762,0.84,False,regional repair route,Ivo->Mara:0.76
+723,46,Ari,Toma,Bridgewright Guild,0.616,0.006,0.622,0.84,False,regional repair route,Ari->Toma:0.62
+724,46,Fay,Lio,Glassgarden Guild,0.655,0.002,0.657,0.82,False,regional repair route,Fay->Lio:0.66
+725,46,Nia,Sera,Index Guild,0.674,0.002,0.676,0.827,False,regional repair route,Nia->Sera:0.68
+726,46,Milo,Ren,Signal Guild,0.713,0.002,0.715,0.84,False,regional repair route,Milo->Ren:0.72
+727,46,Ivo,Mara,Seed Guild,0.762,0.002,0.764,0.84,False,regional repair route,Ivo->Mara:0.76
+728,46,Ari,Toma,Bridgewright Guild,0.622,0.006,0.628,0.84,False,regional repair route,Ari->Toma:0.63
+729,46,Fay,Lio,Glassgarden Guild,0.657,0.002,0.659,0.826,False,regional repair route,Fay->Lio:0.66
+730,46,Nia,Sera,Index Guild,0.676,0.002,0.678,0.833,False,regional repair route,Nia->Sera:0.68
+731,46,Milo,Ren,Signal Guild,0.715,0.002,0.717,0.84,False,regional repair route,Milo->Ren:0.72
+732,46,Ivo,Mara,Seed Guild,0.764,0.002,0.766,0.84,False,regional repair route,Ivo->Mara:0.77
+733,46,Ari,Toma,Bridgewright Guild,0.628,0.006,0.634,0.84,False,regional repair route,Ari->Toma:0.63
+734,46,Fay,Lio,Glassgarden Guild,0.659,0.002,0.661,0.832,False,regional repair route,Fay->Lio:0.66
+735,46,Nia,Sera,Index Guild,0.678,0.006,0.684,0.826,False,regional repair route,Nia->Sera:0.68
+736,47,Milo,Ren,Signal Guild,0.717,0.002,0.719,0.821,False,regional repair route,Milo->Ren:0.72
+737,47,Ivo,Mara,Seed Guild,0.766,0.002,0.768,0.84,False,regional repair route,Ivo->Mara:0.77
+738,47,Ari,Toma,Bridgewright Guild,0.634,0.006,0.64,0.84,False,regional repair route,Ari->Toma:0.64
+739,47,Fay,Lio,Glassgarden Guild,0.661,0.006,0.667,0.84,False,regional repair route,Fay->Lio:0.67
+740,47,Nia,Sera,Index Guild,0.684,0.002,0.686,0.832,False,regional repair route,Nia->Sera:0.69
+741,47,Milo,Ren,Signal Guild,0.719,0.002,0.721,0.827,False,regional repair route,Milo->Ren:0.72
+742,47,Ivo,Mara,Seed Guild,0.768,0.002,0.77,0.84,False,regional repair route,Ivo->Mara:0.77
+743,47,Ari,Toma,Bridgewright Guild,0.64,0.002,0.642,0.84,False,regional repair route,Ari->Toma:0.64
+744,47,Fay,Lio,Glassgarden Guild,0.667,0.006,0.673,0.84,False,regional repair route,Fay->Lio:0.67
+745,47,Nia,Sera,Index Guild,0.686,0.002,0.688,0.838,False,regional repair route,Nia->Sera:0.69
+746,47,Milo,Ren,Signal Guild,0.721,0.002,0.723,0.833,False,regional repair route,Milo->Ren:0.72
+747,47,Ivo,Mara,Seed Guild,0.77,0.002,0.772,0.84,False,regional repair route,Ivo->Mara:0.77
+748,47,Ari,Toma,Bridgewright Guild,0.642,0.002,0.644,0.84,False,regional repair route,Ari->Toma:0.64
+749,47,Fay,Lio,Glassgarden Guild,0.673,0.006,0.679,0.84,False,regional repair route,Fay->Lio:0.68
+750,47,Nia,Sera,Index Guild,0.688,0.002,0.69,0.84,False,regional repair route,Nia->Sera:0.69
+751,47,Milo,Ren,Signal Guild,0.723,0.006,0.729,0.826,False,regional repair route,Milo->Ren:0.73
+752,48,Ari,Toma,Bridgewright Guild,0.644,0.002,0.646,0.821,False,regional repair route,Ari->Toma:0.65
+753,48,Fay,Lio,Glassgarden Guild,0.679,0.002,0.681,0.84,False,regional repair route,Fay->Lio:0.68
+754,48,Nia,Sera,Index Guild,0.69,0.006,0.696,0.84,False,regional repair route,Nia->Sera:0.70
+755,48,Milo,Ren,Signal Guild,0.729,0.006,0.735,0.84,False,regional repair route,Milo->Ren:0.74
+756,48,Ivo,Mara,Seed Guild,0.772,0.002,0.774,0.84,False,regional repair route,Ivo->Mara:0.77
+757,48,Ari,Toma,Bridgewright Guild,0.646,0.002,0.648,0.827,False,regional repair route,Ari->Toma:0.65
+758,48,Fay,Lio,Glassgarden Guild,0.681,0.002,0.683,0.84,False,regional repair route,Fay->Lio:0.68
+759,48,Nia,Sera,Index Guild,0.696,0.006,0.702,0.84,False,regional repair route,Nia->Sera:0.70
+760,48,Milo,Ren,Signal Guild,0.735,0.006,0.741,0.84,False,regional repair route,Milo->Ren:0.74
+761,48,Ivo,Mara,Seed Guild,0.774,0.002,0.776,0.84,False,regional repair route,Ivo->Mara:0.78
+762,48,Ari,Toma,Bridgewright Guild,0.648,0.002,0.65,0.833,False,regional repair route,Ari->Toma:0.65
+763,48,Fay,Lio,Glassgarden Guild,0.683,0.002,0.685,0.84,False,regional repair route,Fay->Lio:0.69
+764,48,Nia,Sera,Index Guild,0.702,0.006,0.708,0.84,False,regional repair route,Nia->Sera:0.71
+765,48,Milo,Ren,Signal Guild,0.741,0.006,0.747,0.84,False,regional repair route,Milo->Ren:0.75
+766,48,Ivo,Mara,Seed Guild,0.776,0.002,0.778,0.84,False,regional repair route,Ivo->Mara:0.78
+767,48,Ari,Toma,Bridgewright Guild,0.65,0.002,0.652,0.814,False,regional repair route,Ari->Toma:0.65
+768,49,Fay,Lio,Glassgarden Guild,0.685,0.002,0.687,0.821,False,regional repair route,Fay->Lio:0.69
+769,49,Nia,Sera,Index Guild,0.708,0.002,0.71,0.84,False,regional repair route,Nia->Sera:0.71
+770,49,Milo,Ren,Signal Guild,0.747,0.006,0.753,0.84,False,regional repair route,Milo->Ren:0.75
+771,49,Ivo,Mara,Seed Guild,0.778,0.006,0.784,0.84,False,regional repair route,Ivo->Mara:0.78
+772,49,Ari,Toma,Bridgewright Guild,0.652,0.002,0.654,0.82,False,regional repair route,Ari->Toma:0.65
+773,49,Fay,Lio,Glassgarden Guild,0.687,0.002,0.689,0.827,False,regional repair route,Fay->Lio:0.69
+774,49,Nia,Sera,Index Guild,0.71,0.002,0.712,0.84,False,regional repair route,Nia->Sera:0.71
+775,49,Milo,Ren,Signal Guild,0.753,0.002,0.755,0.84,False,regional repair route,Milo->Ren:0.76
+776,49,Ivo,Mara,Seed Guild,0.784,0.006,0.79,0.84,False,regional repair route,Ivo->Mara:0.79
+777,49,Ari,Toma,Bridgewright Guild,0.654,0.002,0.656,0.826,False,regional repair route,Ari->Toma:0.66
+778,49,Fay,Lio,Glassgarden Guild,0.689,0.002,0.691,0.833,False,regional repair route,Fay->Lio:0.69
+779,49,Nia,Sera,Index Guild,0.712,0.002,0.714,0.84,False,regional repair route,Nia->Sera:0.71
+780,49,Milo,Ren,Signal Guild,0.755,0.002,0.757,0.84,False,regional repair route,Milo->Ren:0.76
+781,49,Ivo,Mara,Seed Guild,0.79,0.006,0.796,0.84,False,regional repair route,Ivo->Mara:0.80
+782,49,Ari,Toma,Bridgewright Guild,0.656,0.002,0.658,0.832,False,regional repair route,Ari->Toma:0.66
+783,49,Fay,Lio,Glassgarden Guild,0.691,0.006,0.697,0.826,False,regional repair route,Fay->Lio:0.70
+784,50,Nia,Sera,Index Guild,0.714,0.002,0.716,0.821,False,regional repair route,Nia->Sera:0.72
+785,50,Milo,Ren,Signal Guild,0.757,0.002,0.759,0.84,False,regional repair route,Milo->Ren:0.76
+786,50,Ivo,Mara,Seed Guild,0.796,0.002,0.798,0.84,False,regional repair route,Ivo->Mara:0.80
+787,50,Ari,Toma,Bridgewright Guild,0.658,0.006,0.664,0.84,False,regional repair route,Ari->Toma:0.66
+788,50,Fay,Lio,Glassgarden Guild,0.697,0.002,0.699,0.832,False,regional repair route,Fay->Lio:0.70
+789,50,Nia,Sera,Index Guild,0.716,0.002,0.718,0.827,False,regional repair route,Nia->Sera:0.72
+790,50,Milo,Ren,Signal Guild,0.759,0.002,0.761,0.84,False,regional repair route,Milo->Ren:0.76
+791,50,Ivo,Mara,Seed Guild,0.798,0.002,0.8,0.84,False,regional repair route,Ivo->Mara:0.80
+792,50,Ari,Toma,Bridgewright Guild,0.664,0.006,0.67,0.84,False,regional repair route,Ari->Toma:0.67
+793,50,Fay,Lio,Glassgarden Guild,0.699,0.002,0.701,0.838,False,regional repair route,Fay->Lio:0.70
+794,50,Nia,Sera,Index Guild,0.718,0.002,0.72,0.833,False,regional repair route,Nia->Sera:0.72
+795,50,Milo,Ren,Signal Guild,0.761,0.002,0.763,0.84,False,regional repair route,Milo->Ren:0.76
+796,50,Ivo,Mara,Seed Guild,0.8,0.002,0.802,0.84,False,regional repair route,Ivo->Mara:0.80
+797,50,Ari,Toma,Bridgewright Guild,0.67,0.006,0.676,0.84,False,regional repair route,Ari->Toma:0.68
+798,50,Fay,Lio,Glassgarden Guild,0.701,0.002,0.703,0.84,False,regional repair route,Fay->Lio:0.70
+799,50,Nia,Sera,Index Guild,0.72,0.006,0.726,0.826,False,regional repair route,Nia->Sera:0.73
+800,51,Milo,Ren,Signal Guild,0.763,0.002,0.765,0.821,False,regional repair route,Milo->Ren:0.77
+801,51,Ivo,Mara,Seed Guild,0.802,0.002,0.804,0.84,False,regional repair route,Ivo->Mara:0.80
+802,51,Ari,Toma,Bridgewright Guild,0.676,0.006,0.682,0.84,False,regional repair route,Ari->Toma:0.68
+803,51,Fay,Lio,Glassgarden Guild,0.703,0.006,0.709,0.84,False,regional repair route,Fay->Lio:0.71
+804,51,Nia,Sera,Index Guild,0.726,0.002,0.728,0.832,False,regional repair route,Nia->Sera:0.73
+805,51,Milo,Ren,Signal Guild,0.765,0.002,0.767,0.827,False,regional repair route,Milo->Ren:0.77
+806,51,Ivo,Mara,Seed Guild,0.804,0.002,0.806,0.84,False,regional repair route,Ivo->Mara:0.81
+807,51,Ari,Toma,Bridgewright Guild,0.682,0.002,0.684,0.84,False,regional repair route,Ari->Toma:0.68
+808,51,Fay,Lio,Glassgarden Guild,0.709,0.006,0.715,0.84,False,regional repair route,Fay->Lio:0.72
+809,51,Nia,Sera,Index Guild,0.728,0.002,0.73,0.838,False,regional repair route,Nia->Sera:0.73
+810,51,Milo,Ren,Signal Guild,0.767,0.002,0.769,0.833,False,regional repair route,Milo->Ren:0.77
+811,51,Ivo,Mara,Seed Guild,0.806,0.002,0.808,0.84,False,regional repair route,Ivo->Mara:0.81
+812,51,Ari,Toma,Bridgewright Guild,0.684,0.002,0.686,0.84,False,regional repair route,Ari->Toma:0.69
+813,51,Fay,Lio,Glassgarden Guild,0.715,0.006,0.721,0.84,False,regional repair route,Fay->Lio:0.72
+814,51,Nia,Sera,Index Guild,0.73,0.002,0.732,0.84,False,regional repair route,Nia->Sera:0.73
+815,51,Milo,Ren,Signal Guild,0.769,0.002,0.771,0.814,False,regional repair route,Milo->Ren:0.77
+816,52,Ivo,Mara,Seed Guild,0.808,0.002,0.81,0.821,False,regional repair route,Ivo->Mara:0.81
+817,52,Ari,Toma,Bridgewright Guild,0.686,0.002,0.688,0.84,False,regional repair route,Ari->Toma:0.69
+818,52,Fay,Lio,Glassgarden Guild,0.721,0.006,0.727,0.84,False,regional repair route,Fay->Lio:0.73
+819,52,Nia,Sera,Index Guild,0.732,0.006,0.738,0.84,False,regional repair route,Nia->Sera:0.74
+820,52,Milo,Ren,Signal Guild,0.771,0.002,0.773,0.82,False,regional repair route,Milo->Ren:0.77
+821,52,Ivo,Mara,Seed Guild,0.81,0.002,0.812,0.827,False,regional repair route,Ivo->Mara:0.81
+822,52,Ari,Toma,Bridgewright Guild,0.688,0.002,0.69,0.84,False,regional repair route,Ari->Toma:0.69
+823,52,Fay,Lio,Glassgarden Guild,0.727,0.002,0.729,0.84,False,regional repair route,Fay->Lio:0.73
+824,52,Nia,Sera,Index Guild,0.738,0.006,0.744,0.84,False,regional repair route,Nia->Sera:0.74
+825,52,Milo,Ren,Signal Guild,0.773,0.002,0.775,0.826,False,regional repair route,Milo->Ren:0.78
+826,52,Ivo,Mara,Seed Guild,0.812,0.002,0.814,0.833,False,regional repair route,Ivo->Mara:0.81
+827,52,Ari,Toma,Bridgewright Guild,0.69,0.002,0.692,0.84,False,regional repair route,Ari->Toma:0.69
+828,52,Fay,Lio,Glassgarden Guild,0.729,0.002,0.731,0.84,False,regional repair route,Fay->Lio:0.73
+829,52,Nia,Sera,Index Guild,0.744,0.006,0.75,0.84,False,regional repair route,Nia->Sera:0.75
+830,52,Milo,Ren,Signal Guild,0.775,0.002,0.777,0.832,False,regional repair route,Milo->Ren:0.78
+831,52,Ivo,Mara,Seed Guild,0.814,0.006,0.82,0.826,False,regional repair route,Ivo->Mara:0.82
+832,53,Ari,Toma,Bridgewright Guild,0.692,0.002,0.694,0.821,False,regional repair route,Ari->Toma:0.69
+833,53,Fay,Lio,Glassgarden Guild,0.731,0.002,0.733,0.84,False,regional repair route,Fay->Lio:0.73
+834,53,Nia,Sera,Index Guild,0.75,0.006,0.756,0.84,False,regional repair route,Nia->Sera:0.76
+835,53,Milo,Ren,Signal Guild,0.777,0.006,0.783,0.84,False,regional repair route,Milo->Ren:0.78
+836,53,Ivo,Mara,Seed Guild,0.82,0.002,0.822,0.832,False,regional repair route,Ivo->Mara:0.82
+837,53,Ari,Toma,Bridgewright Guild,0.694,0.002,0.696,0.827,False,regional repair route,Ari->Toma:0.70
+838,53,Fay,Lio,Glassgarden Guild,0.733,0.002,0.735,0.84,False,regional repair route,Fay->Lio:0.74
+839,53,Nia,Sera,Index Guild,0.756,0.002,0.758,0.84,False,regional repair route,Nia->Sera:0.76
+840,53,Milo,Ren,Signal Guild,0.783,0.006,0.789,0.84,False,regional repair route,Milo->Ren:0.79
+841,53,Ivo,Mara,Seed Guild,0.822,0.002,0.824,0.838,False,regional repair route,Ivo->Mara:0.82
+842,53,Ari,Toma,Bridgewright Guild,0.696,0.002,0.698,0.833,False,regional repair route,Ari->Toma:0.70
+843,53,Fay,Lio,Glassgarden Guild,0.735,0.002,0.737,0.84,False,regional repair route,Fay->Lio:0.74
+844,53,Nia,Sera,Index Guild,0.758,0.002,0.76,0.84,False,regional repair route,Nia->Sera:0.76
+845,53,Milo,Ren,Signal Guild,0.789,0.006,0.795,0.84,False,regional repair route,Milo->Ren:0.80
+846,53,Ivo,Mara,Seed Guild,0.824,0.002,0.826,0.84,False,regional repair route,Ivo->Mara:0.83
+847,53,Ari,Toma,Bridgewright Guild,0.698,0.002,0.7,0.814,False,regional repair route,Ari->Toma:0.70
+848,54,Nia,Sera,Index Guild,0.76,0.002,0.762,0.821,False,regional repair route,Nia->Sera:0.76
+849,54,Milo,Ren,Signal Guild,0.795,0.002,0.797,0.84,False,regional repair route,Milo->Ren:0.80
+850,54,Ivo,Mara,Seed Guild,0.826,0.006,0.832,0.84,False,regional repair route,Ivo->Mara:0.83
+851,54,Ari,Toma,Bridgewright Guild,0.7,0.006,0.706,0.832,False,regional repair route,Ari->Toma:0.71
+852,54,Fay,Lio,Glassgarden Guild,0.737,0.002,0.739,0.84,False,regional repair route,Fay->Lio:0.74
+853,54,Nia,Sera,Index Guild,0.762,0.002,0.764,0.827,False,regional repair route,Nia->Sera:0.76
+854,54,Milo,Ren,Signal Guild,0.797,0.002,0.799,0.84,False,regional repair route,Milo->Ren:0.80
+855,54,Ivo,Mara,Seed Guild,0.832,0.002,0.834,0.84,False,regional repair route,Ivo->Mara:0.83
+856,54,Ari,Toma,Bridgewright Guild,0.706,0.006,0.712,0.84,False,regional repair route,Ari->Toma:0.71
+857,54,Fay,Lio,Glassgarden Guild,0.739,0.002,0.741,0.84,False,regional repair route,Fay->Lio:0.74
+858,54,Nia,Sera,Index Guild,0.764,0.002,0.766,0.833,False,regional repair route,Nia->Sera:0.77
+859,54,Milo,Ren,Signal Guild,0.799,0.002,0.801,0.84,False,regional repair route,Milo->Ren:0.80
+860,54,Ivo,Mara,Seed Guild,0.834,0.002,0.836,0.84,False,regional repair route,Ivo->Mara:0.84
+861,54,Ari,Toma,Bridgewright Guild,0.712,0.006,0.718,0.84,False,regional repair route,Ari->Toma:0.72
+862,54,Fay,Lio,Glassgarden Guild,0.741,0.002,0.743,0.84,False,regional repair route,Fay->Lio:0.74
+863,54,Nia,Sera,Index Guild,0.766,0.002,0.768,0.814,False,regional repair route,Nia->Sera:0.77
+864,55,Milo,Ren,Signal Guild,0.801,0.002,0.803,0.821,False,regional repair route,Milo->Ren:0.80
+865,55,Ivo,Mara,Seed Guild,0.836,0.002,0.838,0.84,False,regional repair route,Ivo->Mara:0.84
+866,55,Ari,Toma,Bridgewright Guild,0.718,0.006,0.724,0.84,False,regional repair route,Ari->Toma:0.72
+867,55,Fay,Lio,Glassgarden Guild,0.743,0.006,0.749,0.84,False,regional repair route,Fay->Lio:0.75
+868,55,Nia,Sera,Index Guild,0.768,0.002,0.77,0.82,False,regional repair route,Nia->Sera:0.77
+869,55,Milo,Ren,Signal Guild,0.803,0.002,0.805,0.827,False,regional repair route,Milo->Ren:0.81
+870,55,Ivo,Mara,Seed Guild,0.838,0.002,0.84,0.84,False,regional repair route,Ivo->Mara:0.84
+871,55,Ari,Toma,Bridgewright Guild,0.724,0.002,0.726,0.84,False,regional repair route,Ari->Toma:0.73
+872,55,Fay,Lio,Glassgarden Guild,0.749,0.006,0.755,0.84,False,regional repair route,Fay->Lio:0.76
+873,55,Nia,Sera,Index Guild,0.77,0.002,0.772,0.826,False,regional repair route,Nia->Sera:0.77
+874,55,Milo,Ren,Signal Guild,0.805,0.002,0.807,0.833,False,regional repair route,Milo->Ren:0.81
+875,55,Ivo,Mara,Seed Guild,0.84,0.002,0.842,0.84,False,regional repair route,Ivo->Mara:0.84
+876,55,Ari,Toma,Bridgewright Guild,0.726,0.002,0.728,0.84,False,regional repair route,Ari->Toma:0.73
+877,55,Fay,Lio,Glassgarden Guild,0.755,0.006,0.761,0.84,False,regional repair route,Fay->Lio:0.76
+878,55,Nia,Sera,Index Guild,0.772,0.002,0.774,0.832,False,regional repair route,Nia->Sera:0.77
+879,55,Milo,Ren,Signal Guild,0.807,0.006,0.813,0.826,False,regional repair route,Milo->Ren:0.81
+880,56,Ivo,Mara,Seed Guild,0.842,0.002,0.844,0.821,False,regional repair route,Ivo->Mara:0.84
+881,56,Ari,Toma,Bridgewright Guild,0.728,0.002,0.73,0.84,False,regional repair route,Ari->Toma:0.73
+882,56,Fay,Lio,Glassgarden Guild,0.761,0.006,0.767,0.84,False,regional repair route,Fay->Lio:0.77
+883,56,Nia,Sera,Index Guild,0.774,0.006,0.78,0.84,False,regional repair route,Nia->Sera:0.78
+884,56,Milo,Ren,Signal Guild,0.813,0.002,0.815,0.832,False,regional repair route,Milo->Ren:0.82
+885,56,Ivo,Mara,Seed Guild,0.844,0.002,0.846,0.827,False,regional repair route,Ivo->Mara:0.85
+886,56,Ari,Toma,Bridgewright Guild,0.73,0.002,0.732,0.84,False,regional repair route,Ari->Toma:0.73
+887,56,Fay,Lio,Glassgarden Guild,0.767,0.002,0.769,0.84,False,regional repair route,Fay->Lio:0.77
+888,56,Nia,Sera,Index Guild,0.78,0.006,0.786,0.84,False,regional repair route,Nia->Sera:0.79
+889,56,Milo,Ren,Signal Guild,0.815,0.002,0.817,0.838,False,regional repair route,Milo->Ren:0.82
+890,56,Ivo,Mara,Seed Guild,0.846,0.002,0.848,0.833,False,regional repair route,Ivo->Mara:0.85
+891,56,Ari,Toma,Bridgewright Guild,0.732,0.002,0.734,0.84,False,regional repair route,Ari->Toma:0.73
+892,56,Fay,Lio,Glassgarden Guild,0.769,0.002,0.771,0.84,False,regional repair route,Fay->Lio:0.77
+893,56,Nia,Sera,Index Guild,0.786,0.006,0.792,0.84,False,regional repair route,Nia->Sera:0.79
+894,56,Milo,Ren,Signal Guild,0.817,0.002,0.819,0.84,False,regional repair route,Milo->Ren:0.82
+895,56,Ivo,Mara,Seed Guild,0.848,0.002,0.85,0.814,False,regional repair route,Ivo->Mara:0.85
+896,57,Ari,Toma,Bridgewright Guild,0.734,0.002,0.736,0.821,False,regional repair route,Ari->Toma:0.74
+897,57,Fay,Lio,Glassgarden Guild,0.771,0.002,0.773,0.84,False,regional repair route,Fay->Lio:0.77
+898,57,Nia,Sera,Index Guild,0.792,0.002,0.794,0.84,False,regional repair route,Nia->Sera:0.79
+899,57,Milo,Ren,Signal Guild,0.819,0.006,0.825,0.84,False,regional repair route,Milo->Ren:0.83
+900,57,Ivo,Mara,Seed Guild,0.85,0.002,0.852,0.82,False,regional repair route,Ivo->Mara:0.85
+901,57,Ari,Toma,Bridgewright Guild,0.736,0.002,0.738,0.827,False,regional repair route,Ari->Toma:0.74
+902,57,Fay,Lio,Glassgarden Guild,0.773,0.002,0.775,0.84,False,regional repair route,Fay->Lio:0.78
+903,57,Nia,Sera,Index Guild,0.794,0.002,0.796,0.84,False,regional repair route,Nia->Sera:0.80
+904,57,Milo,Ren,Signal Guild,0.825,0.006,0.831,0.84,False,regional repair route,Milo->Ren:0.83
+905,57,Ivo,Mara,Seed Guild,0.852,0.002,0.854,0.826,False,regional repair route,Ivo->Mara:0.85
+906,57,Ari,Toma,Bridgewright Guild,0.738,0.002,0.74,0.833,False,regional repair route,Ari->Toma:0.74
+907,57,Fay,Lio,Glassgarden Guild,0.775,0.002,0.777,0.84,False,regional repair route,Fay->Lio:0.78
+908,57,Nia,Sera,Index Guild,0.796,0.002,0.798,0.84,False,regional repair route,Nia->Sera:0.80
+909,57,Milo,Ren,Signal Guild,0.831,0.006,0.837,0.84,False,regional repair route,Milo->Ren:0.84
+910,57,Ivo,Mara,Seed Guild,0.854,0.002,0.856,0.832,False,regional repair route,Ivo->Mara:0.86
+911,57,Ari,Toma,Bridgewright Guild,0.74,0.006,0.746,0.826,False,regional repair route,Ari->Toma:0.75
+912,58,Fay,Lio,Glassgarden Guild,0.777,0.002,0.779,0.821,False,regional repair route,Fay->Lio:0.78
+913,58,Nia,Sera,Index Guild,0.798,0.002,0.8,0.84,False,regional repair route,Nia->Sera:0.80
+914,58,Milo,Ren,Signal Guild,0.837,0.006,0.843,0.84,False,regional repair route,Milo->Ren:0.84
+915,58,Ivo,Mara,Seed Guild,0.856,0.006,0.862,0.84,False,regional repair route,Ivo->Mara:0.86
+916,58,Ari,Toma,Bridgewright Guild,0.746,0.002,0.748,0.832,False,regional repair route,Ari->Toma:0.75
+917,58,Fay,Lio,Glassgarden Guild,0.779,0.002,0.781,0.827,False,regional repair route,Fay->Lio:0.78
+918,58,Nia,Sera,Index Guild,0.8,0.002,0.802,0.84,False,regional repair route,Nia->Sera:0.80
+919,58,Milo,Ren,Signal Guild,0.843,0.006,0.849,0.84,False,regional repair route,Milo->Ren:0.85
+920,58,Ivo,Mara,Seed Guild,0.862,0.006,0.868,0.84,False,regional repair route,Ivo->Mara:0.87
+921,58,Ari,Toma,Bridgewright Guild,0.748,0.002,0.75,0.838,False,regional repair route,Ari->Toma:0.75
+922,58,Fay,Lio,Glassgarden Guild,0.781,0.002,0.783,0.833,False,regional repair route,Fay->Lio:0.78
+923,58,Nia,Sera,Index Guild,0.802,0.002,0.804,0.84,False,regional repair route,Nia->Sera:0.80
+924,58,Milo,Ren,Signal Guild,0.849,0.006,0.855,0.84,False,regional repair route,Milo->Ren:0.86
+925,58,Ivo,Mara,Seed Guild,0.868,0.006,0.874,0.84,False,regional repair route,Ivo->Mara:0.87
+926,58,Ari,Toma,Bridgewright Guild,0.75,0.002,0.752,0.84,False,regional repair route,Ari->Toma:0.75
+927,58,Fay,Lio,Glassgarden Guild,0.783,0.002,0.785,0.814,False,regional repair route,Fay->Lio:0.79
+928,59,Nia,Sera,Index Guild,0.804,0.002,0.806,0.821,False,regional repair route,Nia->Sera:0.81
+929,59,Milo,Ren,Signal Guild,0.855,0.002,0.857,0.84,False,regional repair route,Milo->Ren:0.86
+930,59,Ivo,Mara,Seed Guild,0.874,0.006,0.88,0.84,False,regional repair route,Ivo->Mara:0.88
+931,59,Ari,Toma,Bridgewright Guild,0.752,0.006,0.758,0.84,False,regional repair route,Ari->Toma:0.76
+932,59,Fay,Lio,Glassgarden Guild,0.785,0.002,0.787,0.82,False,regional repair route,Fay->Lio:0.79
+933,59,Nia,Sera,Index Guild,0.806,0.002,0.808,0.827,False,regional repair route,Nia->Sera:0.81
+934,59,Milo,Ren,Signal Guild,0.857,0.002,0.859,0.84,False,regional repair route,Milo->Ren:0.86
+935,59,Ivo,Mara,Seed Guild,0.88,0.006,0.886,0.84,False,regional repair route,Ivo->Mara:0.89
+936,59,Ari,Toma,Bridgewright Guild,0.758,0.006,0.764,0.84,False,regional repair route,Ari->Toma:0.76
+937,59,Fay,Lio,Glassgarden Guild,0.787,0.002,0.789,0.826,False,regional repair route,Fay->Lio:0.79
+938,59,Nia,Sera,Index Guild,0.808,0.002,0.81,0.833,False,regional repair route,Nia->Sera:0.81
+939,59,Milo,Ren,Signal Guild,0.859,0.002,0.861,0.84,False,regional repair route,Milo->Ren:0.86
+940,59,Ivo,Mara,Seed Guild,0.886,0.002,0.888,0.84,False,regional repair route,Ivo->Mara:0.89
+941,59,Ari,Toma,Bridgewright Guild,0.764,0.006,0.77,0.84,False,regional repair route,Ari->Toma:0.77
+942,59,Fay,Lio,Glassgarden Guild,0.789,0.002,0.791,0.832,False,regional repair route,Fay->Lio:0.79
+943,59,Nia,Sera,Index Guild,0.81,0.006,0.816,0.826,False,regional repair route,Nia->Sera:0.82
+944,60,Ivo,Mara,Seed Guild,0.888,0.002,0.89,0.821,False,regional repair route,Ivo->Mara:0.89
+945,60,Ari,Toma,Bridgewright Guild,0.77,0.002,0.772,0.84,False,regional repair route,Ari->Toma:0.77
+946,60,Fay,Lio,Glassgarden Guild,0.791,0.006,0.797,0.84,False,regional repair route,Fay->Lio:0.80
+947,60,Nia,Sera,Index Guild,0.816,0.006,0.822,0.84,False,regional repair route,Nia->Sera:0.82
+948,60,Milo,Ren,Signal Guild,0.861,0.002,0.863,0.84,False,regional repair route,Milo->Ren:0.86
+949,60,Ivo,Mara,Seed Guild,0.89,0.002,0.892,0.827,False,regional repair route,Ivo->Mara:0.89
+950,60,Ari,Toma,Bridgewright Guild,0.772,0.002,0.774,0.84,False,regional repair route,Ari->Toma:0.77
+951,60,Fay,Lio,Glassgarden Guild,0.797,0.002,0.799,0.84,False,regional repair route,Fay->Lio:0.80
+952,60,Nia,Sera,Index Guild,0.822,0.006,0.828,0.84,False,regional repair route,Nia->Sera:0.83
+953,60,Milo,Ren,Signal Guild,0.863,0.002,0.865,0.84,False,regional repair route,Milo->Ren:0.87
+954,60,Ivo,Mara,Seed Guild,0.892,0.002,0.894,0.833,False,regional repair route,Ivo->Mara:0.89
+955,60,Ari,Toma,Bridgewright Guild,0.774,0.002,0.776,0.84,False,regional repair route,Ari->Toma:0.78
+956,60,Fay,Lio,Glassgarden Guild,0.799,0.002,0.801,0.84,False,regional repair route,Fay->Lio:0.80
+957,60,Nia,Sera,Index Guild,0.828,0.006,0.834,0.84,False,regional repair route,Nia->Sera:0.83
+958,60,Milo,Ren,Signal Guild,0.865,0.002,0.867,0.84,False,regional repair route,Milo->Ren:0.87
+959,60,Ivo,Mara,Seed Guild,0.894,0.002,0.896,0.814,False,regional repair route,Ivo->Mara:0.90
+960,61,Ari,Toma,Bridgewright Guild,0.776,0.002,0.778,0.821,False,regional repair route,Ari->Toma:0.78
+961,61,Fay,Lio,Glassgarden Guild,0.801,0.002,0.803,0.84,False,regional repair route,Fay->Lio:0.80
+962,61,Nia,Sera,Index Guild,0.834,0.006,0.84,0.84,False,regional repair route,Nia->Sera:0.84
+963,61,Milo,Ren,Signal Guild,0.867,0.006,0.873,0.84,False,regional repair route,Milo->Ren:0.87
+964,61,Ivo,Mara,Seed Guild,0.896,0.002,0.898,0.82,False,regional repair route,Ivo->Mara:0.90
+965,61,Ari,Toma,Bridgewright Guild,0.778,0.002,0.78,0.827,False,regional repair route,Ari->Toma:0.78
+966,61,Fay,Lio,Glassgarden Guild,0.803,0.002,0.805,0.84,False,regional repair route,Fay->Lio:0.81
+967,61,Nia,Sera,Index Guild,0.84,0.006,0.846,0.84,False,regional repair route,Nia->Sera:0.85
+968,61,Milo,Ren,Signal Guild,0.873,0.006,0.879,0.84,False,regional repair route,Milo->Ren:0.88
+969,61,Ivo,Mara,Seed Guild,0.898,0.002,0.9,0.826,False,regional repair route,Ivo->Mara:0.90
+970,61,Ari,Toma,Bridgewright Guild,0.78,0.002,0.782,0.833,False,regional repair route,Ari->Toma:0.78
+971,61,Fay,Lio,Glassgarden Guild,0.805,0.002,0.807,0.84,False,regional repair route,Fay->Lio:0.81
+972,61,Nia,Sera,Index Guild,0.846,0.002,0.848,0.84,False,regional repair route,Nia->Sera:0.85
+973,61,Milo,Ren,Signal Guild,0.879,0.006,0.885,0.84,False,regional repair route,Milo->Ren:0.89
+974,61,Ivo,Mara,Seed Guild,0.9,0.002,0.902,0.832,False,regional repair route,Ivo->Mara:0.90
+975,61,Ari,Toma,Bridgewright Guild,0.782,0.006,0.788,0.826,False,regional repair route,Ari->Toma:0.79
+976,62,Fay,Lio,Glassgarden Guild,0.807,0.002,0.809,0.821,False,regional repair route,Fay->Lio:0.81
+977,62,Nia,Sera,Index Guild,0.848,0.002,0.85,0.84,False,regional repair route,Nia->Sera:0.85
+978,62,Milo,Ren,Signal Guild,0.885,0.006,0.891,0.84,False,regional repair route,Milo->Ren:0.89
+979,62,Ivo,Mara,Seed Guild,0.902,0.006,0.908,0.84,False,regional repair route,Ivo->Mara:0.91
+980,62,Ari,Toma,Bridgewright Guild,0.788,0.002,0.79,0.832,False,regional repair route,Ari->Toma:0.79
+981,62,Fay,Lio,Glassgarden Guild,0.809,0.002,0.811,0.827,False,regional repair route,Fay->Lio:0.81
+982,62,Nia,Sera,Index Guild,0.85,0.002,0.852,0.84,False,regional repair route,Nia->Sera:0.85
+983,62,Milo,Ren,Signal Guild,0.891,0.006,0.897,0.84,False,regional repair route,Milo->Ren:0.90
+984,62,Ivo,Mara,Seed Guild,0.908,0.006,0.914,0.84,False,regional repair route,Ivo->Mara:0.91
+985,62,Ari,Toma,Bridgewright Guild,0.79,0.002,0.792,0.838,False,regional repair route,Ari->Toma:0.79
+986,62,Fay,Lio,Glassgarden Guild,0.811,0.002,0.813,0.833,False,regional repair route,Fay->Lio:0.81
+987,62,Nia,Sera,Index Guild,0.852,0.002,0.854,0.84,False,regional repair route,Nia->Sera:0.85
+988,62,Milo,Ren,Signal Guild,0.897,0.006,0.903,0.84,False,regional repair route,Milo->Ren:0.90
+989,62,Ivo,Mara,Seed Guild,0.914,0.006,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+990,62,Ari,Toma,Bridgewright Guild,0.792,0.002,0.794,0.84,False,regional repair route,Ari->Toma:0.79
+991,62,Fay,Lio,Glassgarden Guild,0.813,0.006,0.819,0.826,False,regional repair route,Fay->Lio:0.82
+992,63,Nia,Sera,Index Guild,0.854,0.002,0.856,0.821,False,regional repair route,Nia->Sera:0.86
+993,63,Milo,Ren,Signal Guild,0.903,0.002,0.905,0.84,False,regional repair route,Milo->Ren:0.91
+994,63,Ivo,Mara,Seed Guild,0.92,0.0,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+995,63,Ari,Toma,Bridgewright Guild,0.794,0.006,0.8,0.84,False,regional repair route,Ari->Toma:0.80
+996,63,Fay,Lio,Glassgarden Guild,0.819,0.002,0.821,0.832,False,regional repair route,Fay->Lio:0.82
+997,63,Nia,Sera,Index Guild,0.856,0.002,0.858,0.827,False,regional repair route,Nia->Sera:0.86
+998,63,Milo,Ren,Signal Guild,0.905,0.002,0.907,0.84,False,regional repair route,Milo->Ren:0.91
+999,63,Ivo,Mara,Seed Guild,0.92,0.0,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+1000,63,Ari,Toma,Bridgewright Guild,0.8,0.006,0.806,0.84,False,regional repair route,Ari->Toma:0.81
+1001,63,Fay,Lio,Glassgarden Guild,0.821,0.002,0.823,0.838,False,regional repair route,Fay->Lio:0.82
+1002,63,Nia,Sera,Index Guild,0.858,0.002,0.86,0.833,False,regional repair route,Nia->Sera:0.86
+1003,63,Milo,Ren,Signal Guild,0.907,0.002,0.909,0.84,False,regional repair route,Milo->Ren:0.91
+1004,63,Ivo,Mara,Seed Guild,0.92,0.0,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+1005,63,Ari,Toma,Bridgewright Guild,0.806,0.006,0.812,0.84,False,regional repair route,Ari->Toma:0.81
+1006,63,Fay,Lio,Glassgarden Guild,0.823,0.002,0.825,0.84,False,regional repair route,Fay->Lio:0.83
+1007,63,Nia,Sera,Index Guild,0.86,0.002,0.862,0.814,False,regional repair route,Nia->Sera:0.86
+1008,64,Milo,Ren,Signal Guild,0.909,0.002,0.911,0.821,False,regional repair route,Milo->Ren:0.91
+1009,64,Ivo,Mara,Seed Guild,0.92,0.0,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+1010,64,Ari,Toma,Bridgewright Guild,0.812,0.006,0.818,0.84,False,regional repair route,Ari->Toma:0.82
+1011,64,Fay,Lio,Glassgarden Guild,0.825,0.006,0.831,0.84,False,regional repair route,Fay->Lio:0.83
+1012,64,Nia,Sera,Index Guild,0.862,0.002,0.864,0.82,False,regional repair route,Nia->Sera:0.86
+1013,64,Milo,Ren,Signal Guild,0.911,0.002,0.913,0.827,False,regional repair route,Milo->Ren:0.91
+1014,64,Ivo,Mara,Seed Guild,0.92,0.0,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+1015,64,Ari,Toma,Bridgewright Guild,0.818,0.006,0.824,0.84,False,regional repair route,Ari->Toma:0.82
+1016,64,Fay,Lio,Glassgarden Guild,0.831,0.006,0.837,0.84,False,regional repair route,Fay->Lio:0.84
+1017,64,Nia,Sera,Index Guild,0.864,0.002,0.866,0.826,False,regional repair route,Nia->Sera:0.87
+1018,64,Milo,Ren,Signal Guild,0.913,0.002,0.915,0.833,False,regional repair route,Milo->Ren:0.92
+1019,64,Ivo,Mara,Seed Guild,0.92,0.0,0.92,0.84,False,regional repair route,Ivo->Mara:0.92
+1020,64,Ari,Toma,Bridgewright Guild,0.824,0.006,0.83,0.84,False,regional repair route,Ari->Toma:0.83
+1021,64,Fay,Lio,Glassgarden Guild,0.837,0.006,0.843,0.84,False,regional repair route,Fay->Lio:0.84
+1022,64,Nia,Sera,Index Guild,0.866,0.002,0.868,0.832,False,regional repair route,Nia->Sera:0.87
+1023,64,Milo,Ren,Signal Guild,0.915,0.005,0.92,0.826,False,regional repair route,Milo->Ren:0.92

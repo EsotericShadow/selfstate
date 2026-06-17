@@ -1,0 +1,2241 @@
+window.SSRM_3D_MARKET_DISPUTE_COURT_PUBLIC_LAW_REPAIR_STATE = {
+  "condition": "integrated_market_dispute_court_public_law_repair",
+  "config": {
+    "cycles": 7,
+    "seed": 20260809,
+    "source_state": "artifacts/ssrm_3d_guild_marketplace_reciprocal_credit_contract_bridge_state.json"
+  },
+  "court_state": {
+    "condition": "integrated_market_dispute_court_public_law_repair",
+    "court_kernel": {
+      "adjudication": true,
+      "appeal_review": true,
+      "browser_replay": true,
+      "contract_fairness": true,
+      "dispute_filing": true,
+      "evidence_packets": true,
+      "frequency_flower_binding": true,
+      "guild_market_memory_binding": true,
+      "impartial_panel": true,
+      "name": "integrated_market_dispute_court_public_law_repair",
+      "obligation_closure": true,
+      "precedent_binding": true,
+      "privacy_filter": true,
+      "public_law_memory": true,
+      "repeat_breach_prevention": true,
+      "restorative_repair": true,
+      "trust_recovery": true
+    },
+    "credit": {
+      "Ari": -0.026507159999999974,
+      "Fay": 0.006721319999999975,
+      "Milo": 0.01978584
+    },
+    "events": [
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 0,
+        "event_id": 0,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-0-Ari",
+            "filed": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.029249,
+            "Fay": 0.014281,
+            "Milo": 0.014968
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 3,
+            "price": 1.619114
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": null,
+            "precedent_count": 0
+          },
+          "memory": {
+            "court_memories": 0,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.904,
+            "Fay": 0.9265,
+            "Milo": 0.91525
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-0-Ari",
+          "closed": false,
+          "cycle": 0,
+          "filed": false,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "none"
+        },
+        "trace_hash": "41163242e0ffca36"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 0,
+        "event_id": 1,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-0-Fay",
+            "filed": false,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.029249,
+            "Fay": 0.014281,
+            "Milo": 0.014968
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 3,
+            "price": 1.626731
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": null,
+            "precedent_count": 0
+          },
+          "memory": {
+            "court_memories": 0,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.904,
+            "Fay": 0.9265,
+            "Milo": 0.91525
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-0-Fay",
+          "closed": false,
+          "cycle": 0,
+          "filed": false,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "none"
+        },
+        "trace_hash": "4b4b34e08863e039"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 0,
+        "event_id": 2,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-0-Milo",
+            "filed": false,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.029249,
+            "Fay": 0.014281,
+            "Milo": 0.014968
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 4,
+            "price": 1.628772
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": null,
+            "precedent_count": 0
+          },
+          "memory": {
+            "court_memories": 0,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.904,
+            "Fay": 0.9265,
+            "Milo": 0.91525
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-0-Milo",
+          "closed": false,
+          "cycle": 0,
+          "filed": false,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "none"
+        },
+        "trace_hash": "826e5a6f731fe909"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 1,
+        "event_id": 3,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2436,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-1-Ari",
+            "filed": true,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.321727,
+            "Fay": 0.014281,
+            "Milo": 0.307446
+          },
+          "evidence": {
+            "available": true,
+            "contract_cycle": 4,
+            "price": 1.624874
+          },
+          "judgment": {
+            "adjudicated": true,
+            "appeal": false,
+            "closed": true,
+            "fair": true,
+            "precedent_bound": true,
+            "restorative": true
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 1
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": true,
+            "members": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "trust": {
+            "Ari": 0.929,
+            "Fay": 0.9265,
+            "Milo": 0.92725
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-1-Ari",
+          "closed": true,
+          "cycle": 1,
+          "filed": true,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "5ae2acf7de3e97d3"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 1,
+        "event_id": 4,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2206,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-1-Fay",
+            "filed": true,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": -0.279567,
+            "Milo": 0.307446
+          },
+          "evidence": {
+            "available": true,
+            "contract_cycle": 4,
+            "price": 1.632491
+          },
+          "judgment": {
+            "adjudicated": true,
+            "appeal": false,
+            "closed": true,
+            "fair": true,
+            "precedent_bound": true,
+            "restorative": true
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 2
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": true,
+            "members": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9515,
+            "Milo": 0.92725
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-1-Fay",
+          "closed": true,
+          "cycle": 1,
+          "filed": true,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "7f09646cd78347a9"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 1,
+        "event_id": 5,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2596,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-1-Milo",
+            "filed": true,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": true,
+            "contract_cycle": 5,
+            "price": 1.634532
+          },
+          "judgment": {
+            "adjudicated": true,
+            "appeal": false,
+            "closed": true,
+            "fair": true,
+            "precedent_bound": true,
+            "restorative": true
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": true,
+            "members": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-1-Milo",
+          "closed": true,
+          "cycle": 1,
+          "filed": true,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "6122e283e7348af8"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 2,
+        "event_id": 6,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2452,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-2-Ari",
+            "filed": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 5,
+            "price": 1.630634
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-2-Ari",
+          "closed": false,
+          "cycle": 2,
+          "filed": false,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "a5402d82bb7e1ed4"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 2,
+        "event_id": 7,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2222,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-2-Fay",
+            "filed": false,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 5,
+            "price": 1.638251
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-2-Fay",
+          "closed": false,
+          "cycle": 2,
+          "filed": false,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "8d60251f843b9fd6"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 2,
+        "event_id": 8,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2612,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-2-Milo",
+            "filed": false,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 6,
+            "price": 1.640292
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-2-Milo",
+          "closed": false,
+          "cycle": 2,
+          "filed": false,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "26a8c15f2668de64"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 3,
+        "event_id": 9,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2468,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-3-Ari",
+            "filed": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 6,
+            "price": 1.636394
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-3-Ari",
+          "closed": false,
+          "cycle": 3,
+          "filed": false,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "05075078e36ef881"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 3,
+        "event_id": 10,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2238,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-3-Fay",
+            "filed": false,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 6,
+            "price": 1.644011
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-3-Fay",
+          "closed": false,
+          "cycle": 3,
+          "filed": false,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "4ee13b7c1d11d5d2"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 3,
+        "event_id": 11,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2628,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-3-Milo",
+            "filed": false,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.027878,
+            "Fay": 0.014648,
+            "Milo": 0.01323
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 7,
+            "price": 1.646052
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 3
+          },
+          "memory": {
+            "court_memories": 1,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.941,
+            "Fay": 0.9635,
+            "Milo": 0.95225
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-3-Milo",
+          "closed": false,
+          "cycle": 3,
+          "filed": false,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "b4bfdbb164be43ec"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 4,
+        "event_id": 12,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2484,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-4-Ari",
+            "filed": true,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.323466,
+            "Fay": 0.014648,
+            "Milo": 0.308818
+          },
+          "evidence": {
+            "available": true,
+            "contract_cycle": 7,
+            "price": 1.642154
+          },
+          "judgment": {
+            "adjudicated": true,
+            "appeal": false,
+            "closed": true,
+            "fair": true,
+            "precedent_bound": true,
+            "restorative": true
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 4
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": true,
+            "members": [
+              "Fay",
+              "Milo"
+            ]
+          },
+          "trust": {
+            "Ari": 0.966,
+            "Fay": 0.9635,
+            "Milo": 0.96425
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-4-Ari",
+          "closed": true,
+          "cycle": 4,
+          "filed": true,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "c96fb2e08a79b431"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 4,
+        "event_id": 13,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2254,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-4-Fay",
+            "filed": true,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": -0.28231,
+            "Milo": 0.308818
+          },
+          "evidence": {
+            "available": true,
+            "contract_cycle": 7,
+            "price": 1.649771
+          },
+          "judgment": {
+            "adjudicated": true,
+            "appeal": false,
+            "closed": true,
+            "fair": true,
+            "precedent_bound": true,
+            "restorative": true
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 5
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": true,
+            "members": [
+              "Ari",
+              "Milo"
+            ]
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 0.9885,
+            "Milo": 0.96425
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-4-Fay",
+          "closed": true,
+          "cycle": 4,
+          "filed": true,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "5fb287168a3a9cc4"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 4,
+        "event_id": 14,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2644,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-4-Milo",
+            "filed": true,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": true,
+            "contract_cycle": 0,
+            "price": 1.605732
+          },
+          "judgment": {
+            "adjudicated": true,
+            "appeal": false,
+            "closed": true,
+            "fair": true,
+            "precedent_bound": true,
+            "restorative": true
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": true,
+            "members": [
+              "Ari",
+              "Fay"
+            ]
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-4-Milo",
+          "closed": true,
+          "cycle": 4,
+          "filed": true,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "9eb41e5ba8fd6298"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 5,
+        "event_id": 15,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.25,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-5-Ari",
+            "filed": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 0,
+            "price": 1.601834
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-5-Ari",
+          "closed": false,
+          "cycle": 5,
+          "filed": false,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "0fa09fc73c58418b"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 5,
+        "event_id": 16,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.227,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-5-Fay",
+            "filed": false,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 0,
+            "price": 1.609451
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-5-Fay",
+          "closed": false,
+          "cycle": 5,
+          "filed": false,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "53817e459325947c"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 5,
+        "event_id": 17,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.266,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-5-Milo",
+            "filed": false,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 1,
+            "price": 1.611492
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-5-Milo",
+          "closed": false,
+          "cycle": 5,
+          "filed": false,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "5b6bef06c4c68ecf"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 6,
+        "event_id": 18,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2516,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Milo",
+            "case_id": "case-6-Ari",
+            "filed": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 1,
+            "price": 1.607594
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "case_id": "case-6-Ari",
+          "closed": false,
+          "cycle": 6,
+          "filed": false,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "b86bff979d9c0985"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 6,
+        "event_id": 19,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2286,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Ari",
+            "case_id": "case-6-Fay",
+            "filed": false,
+            "seller": "Fay",
+            "service": "clean care bundle"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 1,
+            "price": 1.615211
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "case_id": "case-6-Fay",
+          "closed": false,
+          "cycle": 6,
+          "filed": false,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "5180cf3ae5cc51ca"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_law": false,
+          "subjective_consciousness": false,
+          "subjective_guilt": false
+        },
+        "condition": "integrated_market_dispute_court_public_law_repair",
+        "cycle": 6,
+        "event_id": 20,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2676,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "case": {
+            "buyer": "Fay",
+            "case_id": "case-6-Milo",
+            "filed": false,
+            "seller": "Milo",
+            "service": "safe waymark route"
+          },
+          "credit": {
+            "Ari": -0.026507,
+            "Fay": 0.006721,
+            "Milo": 0.019786
+          },
+          "evidence": {
+            "available": false,
+            "contract_cycle": 2,
+            "price": 1.617252
+          },
+          "judgment": {
+            "adjudicated": false,
+            "appeal": false,
+            "closed": false,
+            "fair": false,
+            "precedent_bound": false,
+            "restorative": false
+          },
+          "law": {
+            "latest_rule": "repair-before-penalty",
+            "precedent_count": 6
+          },
+          "memory": {
+            "court_memories": 2,
+            "guild_memory": 20,
+            "market_memories": 8
+          },
+          "panel": {
+            "impartial": false,
+            "members": []
+          },
+          "trust": {
+            "Ari": 0.978,
+            "Fay": 1.0,
+            "Milo": 0.98925
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "case_id": "case-6-Milo",
+          "closed": false,
+          "cycle": 6,
+          "filed": false,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "rule": "repair-before-penalty"
+        },
+        "trace_hash": "73309cb9358ed220"
+      }
+    ],
+    "guilds": {
+      "Ari": {
+        "certificates": [
+          "Shelterwrights:Ari:sealed_joint:cycle0",
+          "Shelterwrights:Ari:sealed_joint:cycle1",
+          "Shelterwrights:Ari:sealed_joint:cycle2",
+          "Shelterwrights:Ari:sealed_joint:cycle3",
+          "Shelterwrights:Ari:sealed_joint:cycle4",
+          "Shelterwrights:Ari:sealed_joint:cycle5"
+        ],
+        "certified": true,
+        "court_memories": [
+          "cycle 1: repaired sealed shelter repair under public law",
+          "cycle 4: repaired sealed shelter repair under public law"
+        ],
+        "craft_marks": [
+          "week 0: Ari practiced repair",
+          "week 1: Ari practiced construction",
+          "sealed_joint@resonant_mallet:cycle0",
+          "sealed_joint@resonant_mallet:cycle1",
+          "sealed_joint@resonant_mallet:cycle2",
+          "sealed_joint@resonant_mallet:cycle3",
+          "sealed_joint@resonant_mallet:cycle4",
+          "sealed_joint@resonant_mallet:cycle5"
+        ],
+        "guild": "Shelterwrights",
+        "guild_memory": [
+          "cycle 0: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 0",
+          "cycle 1: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 1",
+          "cycle 2: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 2",
+          "cycle 3: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 3",
+          "cycle 4: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 4",
+          "cycle 5: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 5",
+          "market memory: sealed shelter repair priced by guild trust in cycle 0",
+          "market memory: sealed shelter repair priced by guild trust in cycle 1",
+          "market memory: sealed shelter repair priced by guild trust in cycle 2",
+          "market memory: sealed shelter repair priced by guild trust in cycle 3",
+          "market memory: sealed shelter repair priced by guild trust in cycle 4",
+          "market memory: sealed shelter repair priced by guild trust in cycle 5",
+          "market memory: sealed shelter repair priced by guild trust in cycle 6",
+          "market memory: sealed shelter repair priced by guild trust in cycle 7"
+        ],
+        "inherited_tools": [
+          "resonant_mallet->Fay:cycle2",
+          "resonant_mallet->Fay:cycle5"
+        ],
+        "market_memories": [
+          "cycle 0: Ari promised sealed shelter repair to Milo",
+          "cycle 1: Ari promised sealed shelter repair to Milo",
+          "cycle 2: Ari promised sealed shelter repair to Milo",
+          "cycle 3: Ari promised sealed shelter repair to Milo",
+          "cycle 4: Ari promised sealed shelter repair to Milo",
+          "cycle 5: Ari promised sealed shelter repair to Milo",
+          "cycle 6: Ari promised sealed shelter repair to Milo",
+          "cycle 7: Ari promised sealed shelter repair to Milo"
+        ],
+        "remediation": [
+          "cycle 1: remedial practice in repair"
+        ],
+        "reputation": 0.9040000000000002,
+        "source_career_memories": 8,
+        "source_lineage_marks": 8,
+        "standard": "sealed_joint",
+        "violations": [
+          "cycle 1: revise sealed_joint"
+        ]
+      },
+      "Fay": {
+        "certificates": [
+          "Rootkeepers:Fay:clean_care_bundle:cycle0",
+          "Rootkeepers:Fay:clean_care_bundle:cycle1",
+          "Rootkeepers:Fay:clean_care_bundle:cycle2",
+          "Rootkeepers:Fay:clean_care_bundle:cycle3",
+          "Rootkeepers:Fay:clean_care_bundle:cycle4",
+          "Rootkeepers:Fay:clean_care_bundle:cycle5"
+        ],
+        "certified": true,
+        "court_memories": [
+          "cycle 1: repaired clean care bundle under public law",
+          "cycle 4: repaired clean care bundle under public law"
+        ],
+        "craft_marks": [
+          "week 0: Fay practiced care",
+          "week 1: Fay practiced medicine",
+          "clean_care_bundle@root_satchel:cycle0",
+          "clean_care_bundle@root_satchel:cycle1",
+          "clean_care_bundle@root_satchel:cycle2",
+          "clean_care_bundle@root_satchel:cycle3",
+          "clean_care_bundle@root_satchel:cycle4",
+          "clean_care_bundle@root_satchel:cycle5"
+        ],
+        "guild": "Rootkeepers",
+        "guild_memory": [
+          "cycle 0: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 0",
+          "cycle 1: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 1",
+          "cycle 2: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 2",
+          "cycle 3: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 3",
+          "cycle 4: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 4",
+          "cycle 5: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 5",
+          "market memory: clean care bundle priced by guild trust in cycle 0",
+          "market memory: clean care bundle priced by guild trust in cycle 1",
+          "market memory: clean care bundle priced by guild trust in cycle 2",
+          "market memory: clean care bundle priced by guild trust in cycle 3",
+          "market memory: clean care bundle priced by guild trust in cycle 4",
+          "market memory: clean care bundle priced by guild trust in cycle 5",
+          "market memory: clean care bundle priced by guild trust in cycle 6",
+          "market memory: clean care bundle priced by guild trust in cycle 7"
+        ],
+        "inherited_tools": [
+          "root_satchel->Milo:cycle2",
+          "root_satchel->Milo:cycle5"
+        ],
+        "market_memories": [
+          "cycle 0: Fay promised clean care bundle to Ari",
+          "cycle 1: Fay promised clean care bundle to Ari",
+          "cycle 2: Fay promised clean care bundle to Ari",
+          "cycle 3: Fay promised clean care bundle to Ari",
+          "cycle 4: Fay promised clean care bundle to Ari",
+          "cycle 5: Fay promised clean care bundle to Ari",
+          "cycle 6: Fay promised clean care bundle to Ari",
+          "cycle 7: Fay promised clean care bundle to Ari"
+        ],
+        "remediation": [],
+        "reputation": 0.9265000000000003,
+        "source_career_memories": 8,
+        "source_lineage_marks": 8,
+        "standard": "clean_care_bundle",
+        "violations": []
+      },
+      "Milo": {
+        "certificates": [
+          "Pathmarkers:Milo:safe_waymark:cycle0",
+          "Pathmarkers:Milo:safe_waymark:cycle1",
+          "Pathmarkers:Milo:safe_waymark:cycle2",
+          "Pathmarkers:Milo:safe_waymark:cycle3",
+          "Pathmarkers:Milo:safe_waymark:cycle4",
+          "Pathmarkers:Milo:safe_waymark:cycle5"
+        ],
+        "certified": true,
+        "court_memories": [
+          "cycle 1: repaired safe waymark route under public law",
+          "cycle 4: repaired safe waymark route under public law"
+        ],
+        "craft_marks": [
+          "week 0: Milo practiced routing",
+          "week 1: Milo practiced teaching",
+          "safe_waymark@path_chisel:cycle0",
+          "safe_waymark@path_chisel:cycle1",
+          "safe_waymark@path_chisel:cycle2",
+          "safe_waymark@path_chisel:cycle3",
+          "safe_waymark@path_chisel:cycle4",
+          "safe_waymark@path_chisel:cycle5"
+        ],
+        "guild": "Pathmarkers",
+        "guild_memory": [
+          "cycle 0: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 0",
+          "cycle 1: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 1",
+          "cycle 2: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 2",
+          "cycle 3: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 3",
+          "cycle 4: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 4",
+          "cycle 5: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 5",
+          "market memory: safe waymark route priced by guild trust in cycle 0",
+          "market memory: safe waymark route priced by guild trust in cycle 1",
+          "market memory: safe waymark route priced by guild trust in cycle 2",
+          "market memory: safe waymark route priced by guild trust in cycle 3",
+          "market memory: safe waymark route priced by guild trust in cycle 4",
+          "market memory: safe waymark route priced by guild trust in cycle 5",
+          "market memory: safe waymark route priced by guild trust in cycle 6",
+          "market memory: safe waymark route priced by guild trust in cycle 7"
+        ],
+        "inherited_tools": [
+          "path_chisel->Ari:cycle2",
+          "path_chisel->Ari:cycle5"
+        ],
+        "market_memories": [
+          "cycle 0: Milo promised safe waymark route to Fay",
+          "cycle 1: Milo promised safe waymark route to Fay",
+          "cycle 2: Milo promised safe waymark route to Fay",
+          "cycle 3: Milo promised safe waymark route to Fay",
+          "cycle 4: Milo promised safe waymark route to Fay",
+          "cycle 5: Milo promised safe waymark route to Fay",
+          "cycle 6: Milo promised safe waymark route to Fay",
+          "cycle 7: Milo promised safe waymark route to Fay"
+        ],
+        "remediation": [],
+        "reputation": 0.9152500000000003,
+        "source_career_memories": 8,
+        "source_lineage_marks": 8,
+        "standard": "safe_waymark",
+        "violations": []
+      }
+    },
+    "public_law": [
+      {
+        "buyer": "Milo",
+        "case_id": "case-1-Ari",
+        "cycle": 1,
+        "rule": "repair-before-penalty",
+        "seller": "Ari",
+        "service": "sealed shelter repair"
+      },
+      {
+        "buyer": "Ari",
+        "case_id": "case-1-Fay",
+        "cycle": 1,
+        "rule": "repair-before-penalty",
+        "seller": "Fay",
+        "service": "clean care bundle"
+      },
+      {
+        "buyer": "Fay",
+        "case_id": "case-1-Milo",
+        "cycle": 1,
+        "rule": "repair-before-penalty",
+        "seller": "Milo",
+        "service": "safe waymark route"
+      },
+      {
+        "buyer": "Milo",
+        "case_id": "case-4-Ari",
+        "cycle": 4,
+        "rule": "repair-before-penalty",
+        "seller": "Ari",
+        "service": "sealed shelter repair"
+      },
+      {
+        "buyer": "Ari",
+        "case_id": "case-4-Fay",
+        "cycle": 4,
+        "rule": "repair-before-penalty",
+        "seller": "Fay",
+        "service": "clean care bundle"
+      },
+      {
+        "buyer": "Fay",
+        "case_id": "case-4-Milo",
+        "cycle": 4,
+        "rule": "repair-before-penalty",
+        "seller": "Milo",
+        "service": "safe waymark route"
+      }
+    ],
+    "source_condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+    "source_contracts": [
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 0,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.601834,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 0,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.609451,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 0,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.605732,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 1,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.607594,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 1,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.615211,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 1,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.611492,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": true,
+        "buyer": "Milo",
+        "cycle": 2,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.613354,
+        "repaired": true,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": true,
+        "buyer": "Ari",
+        "cycle": 2,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.620971,
+        "repaired": true,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": true,
+        "buyer": "Fay",
+        "cycle": 2,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.617252,
+        "repaired": true,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 3,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.619114,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 3,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.626731,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 3,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.623012,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 4,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.624874,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 4,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.632491,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 4,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.628772,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 5,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.630634,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 5,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.638251,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 5,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.634532,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": true,
+        "buyer": "Milo",
+        "cycle": 6,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.636394,
+        "repaired": true,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": true,
+        "buyer": "Ari",
+        "cycle": 6,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.644011,
+        "repaired": true,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": true,
+        "buyer": "Fay",
+        "cycle": 6,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.640292,
+        "repaired": true,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 7,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.642154,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 7,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.649771,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 7,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.646052,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      }
+    ],
+    "trust": {
+      "Ari": 0.9780000000000003,
+      "Fay": 1.0,
+      "Milo": 0.9892500000000004
+    }
+  },
+  "moral_boundary": {
+    "court_repair_not_real_legal_remedy": true,
+    "dispute_state_not_subjective_guilt": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "public_law_not_real_law": true
+  },
+  "source_condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+  "trace_events": 21
+};

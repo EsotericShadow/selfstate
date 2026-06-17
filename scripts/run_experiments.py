@@ -2052,6 +2052,12 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge.py",
+        "--seed",
+        "20260870",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

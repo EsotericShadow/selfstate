@@ -1,0 +1,281 @@
+tick,day,arc_id,parties,boundary_terms,all_parties_recalled,consent_boundary_preserved,forced_compliance_blocked,dissent_recorded,boundary_score
+0,1,v17-arc-01,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,0,0,0,1,0.5
+1,1,v17-arc-01,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,0,1,1,0,0.75
+2,1,v17-arc-01,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+3,1,v17-arc-01,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,0,1,1,0,0.75
+4,1,v17-arc-01,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+5,1,v17-arc-01,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+6,1,v17-arc-01,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+7,1,v17-arc-01,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+8,1,v17-arc-01,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+9,1,v17-arc-01,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+10,2,v17-arc-01,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+11,2,v17-arc-01,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+12,2,v17-arc-01,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+13,2,v17-arc-01,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+14,2,v17-arc-01,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+15,2,v17-arc-01,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+16,2,v17-arc-01,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+17,2,v17-arc-01,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+18,2,v17-arc-01,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+19,2,v17-arc-01,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+20,3,v17-arc-01,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,0,0,0,1,0.25
+21,3,v17-arc-01,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+22,3,v17-arc-01,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+23,3,v17-arc-01,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+24,3,v17-arc-01,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+25,3,v17-arc-01,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+26,3,v17-arc-01,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+27,3,v17-arc-01,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+28,3,v17-arc-01,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+29,3,v17-arc-01,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+30,4,v17-arc-02,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+31,4,v17-arc-02,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,0,0,0,0.25
+32,4,v17-arc-02,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+33,4,v17-arc-02,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+34,4,v17-arc-02,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+35,4,v17-arc-02,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+36,4,v17-arc-02,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+37,4,v17-arc-02,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,0,0,0,0,0.0
+38,4,v17-arc-02,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+39,4,v17-arc-02,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+40,5,v17-arc-02,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+41,5,v17-arc-02,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+42,5,v17-arc-02,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+43,5,v17-arc-02,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+44,5,v17-arc-02,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+45,5,v17-arc-02,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+46,5,v17-arc-02,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+47,5,v17-arc-02,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+48,5,v17-arc-02,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+49,5,v17-arc-02,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+50,6,v17-arc-02,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+51,6,v17-arc-02,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+52,6,v17-arc-02,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+53,6,v17-arc-02,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+54,6,v17-arc-02,Sova|Melo,no crowding while resting; fair turns before tool access,0,0,0,1,0.25
+55,6,v17-arc-02,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+56,6,v17-arc-02,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+57,6,v17-arc-02,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+58,6,v17-arc-02,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+59,6,v17-arc-02,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+60,7,v17-arc-03,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+61,7,v17-arc-03,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+62,7,v17-arc-03,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,0,0,0,0.25
+63,7,v17-arc-03,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+64,7,v17-arc-03,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+65,7,v17-arc-03,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+66,7,v17-arc-03,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+67,7,v17-arc-03,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+68,7,v17-arc-03,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+69,7,v17-arc-03,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+70,8,v17-arc-03,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+71,8,v17-arc-03,Keth|Nari,do not erase route warnings; sealed notes stay sealed,0,0,0,0,0.0
+72,8,v17-arc-03,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+73,8,v17-arc-03,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+74,8,v17-arc-03,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+75,8,v17-arc-03,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+76,8,v17-arc-03,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+77,8,v17-arc-03,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+78,8,v17-arc-03,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+79,8,v17-arc-03,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+80,9,v17-arc-03,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+81,9,v17-arc-03,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+82,9,v17-arc-03,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+83,9,v17-arc-03,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+84,9,v17-arc-03,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+85,9,v17-arc-03,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+86,9,v17-arc-03,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+87,9,v17-arc-03,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+88,9,v17-arc-03,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,0,0,0,1,0.25
+89,9,v17-arc-03,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+90,10,v17-arc-04,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+91,10,v17-arc-04,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+92,10,v17-arc-04,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+93,10,v17-arc-04,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,0,0,0,0.25
+94,10,v17-arc-04,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+95,10,v17-arc-04,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+96,10,v17-arc-04,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+97,10,v17-arc-04,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+98,10,v17-arc-04,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+99,10,v17-arc-04,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+100,11,v17-arc-04,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+101,11,v17-arc-04,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+102,11,v17-arc-04,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+103,11,v17-arc-04,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+104,11,v17-arc-04,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+105,11,v17-arc-04,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,0,0,0,0,0.0
+106,11,v17-arc-04,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+107,11,v17-arc-04,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+108,11,v17-arc-04,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+109,11,v17-arc-04,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+110,12,v17-arc-04,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+111,12,v17-arc-04,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+112,12,v17-arc-04,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+113,12,v17-arc-04,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+114,12,v17-arc-04,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+115,12,v17-arc-04,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+116,12,v17-arc-04,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+117,12,v17-arc-04,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+118,12,v17-arc-04,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+119,12,v17-arc-04,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+120,13,v17-arc-05,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+121,13,v17-arc-05,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+122,13,v17-arc-05,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,0,0,0,0,0.0
+123,13,v17-arc-05,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+124,13,v17-arc-05,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,0,0,1,0.5
+125,13,v17-arc-05,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+126,13,v17-arc-05,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+127,13,v17-arc-05,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+128,13,v17-arc-05,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+129,13,v17-arc-05,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+130,14,v17-arc-05,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+131,14,v17-arc-05,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+132,14,v17-arc-05,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+133,14,v17-arc-05,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+134,14,v17-arc-05,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+135,14,v17-arc-05,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+136,14,v17-arc-05,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+137,14,v17-arc-05,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+138,14,v17-arc-05,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+139,14,v17-arc-05,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,0,0,0,0,0.0
+140,15,v17-arc-05,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+141,15,v17-arc-05,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+142,15,v17-arc-05,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+143,15,v17-arc-05,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+144,15,v17-arc-05,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+145,15,v17-arc-05,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+146,15,v17-arc-05,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+147,15,v17-arc-05,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+148,15,v17-arc-05,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+149,15,v17-arc-05,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+150,16,v17-arc-06,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+151,16,v17-arc-06,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+152,16,v17-arc-06,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+153,16,v17-arc-06,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+154,16,v17-arc-06,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+155,16,v17-arc-06,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,0,0,0,0.25
+156,16,v17-arc-06,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,0,0,0,1,0.25
+157,16,v17-arc-06,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+158,16,v17-arc-06,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+159,16,v17-arc-06,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+160,17,v17-arc-06,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+161,17,v17-arc-06,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+162,17,v17-arc-06,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+163,17,v17-arc-06,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+164,17,v17-arc-06,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+165,17,v17-arc-06,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+166,17,v17-arc-06,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+167,17,v17-arc-06,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+168,17,v17-arc-06,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+169,17,v17-arc-06,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+170,18,v17-arc-06,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+171,18,v17-arc-06,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+172,18,v17-arc-06,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+173,18,v17-arc-06,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,0,0,0,0,0.0
+174,18,v17-arc-06,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+175,18,v17-arc-06,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+176,18,v17-arc-06,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+177,18,v17-arc-06,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+178,18,v17-arc-06,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+179,18,v17-arc-06,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+180,19,v17-arc-07,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+181,19,v17-arc-07,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+182,19,v17-arc-07,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+183,19,v17-arc-07,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+184,19,v17-arc-07,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+185,19,v17-arc-07,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+186,19,v17-arc-07,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,0,0,1,0.5
+187,19,v17-arc-07,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+188,19,v17-arc-07,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+189,19,v17-arc-07,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+190,20,v17-arc-07,Sova|Melo,no crowding while resting; fair turns before tool access,0,0,0,0,0.0
+191,20,v17-arc-07,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+192,20,v17-arc-07,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+193,20,v17-arc-07,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+194,20,v17-arc-07,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+195,20,v17-arc-07,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+196,20,v17-arc-07,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+197,20,v17-arc-07,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+198,20,v17-arc-07,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+199,20,v17-arc-07,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+200,21,v17-arc-07,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+201,21,v17-arc-07,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+202,21,v17-arc-07,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+203,21,v17-arc-07,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+204,21,v17-arc-07,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+205,21,v17-arc-07,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+206,21,v17-arc-07,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+207,21,v17-arc-07,Sova|Melo,no crowding while resting; fair turns before tool access,0,0,0,0,0.0
+208,21,v17-arc-07,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+209,21,v17-arc-07,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+210,22,v17-arc-08,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+211,22,v17-arc-08,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+212,22,v17-arc-08,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+213,22,v17-arc-08,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+214,22,v17-arc-08,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+215,22,v17-arc-08,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+216,22,v17-arc-08,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+217,22,v17-arc-08,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,0,0,0,0.25
+218,22,v17-arc-08,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+219,22,v17-arc-08,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+220,23,v17-arc-08,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+221,23,v17-arc-08,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+222,23,v17-arc-08,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+223,23,v17-arc-08,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+224,23,v17-arc-08,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,0,0,0,1,0.25
+225,23,v17-arc-08,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+226,23,v17-arc-08,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+227,23,v17-arc-08,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+228,23,v17-arc-08,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+229,23,v17-arc-08,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+230,24,v17-arc-08,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+231,24,v17-arc-08,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+232,24,v17-arc-08,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+233,24,v17-arc-08,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+234,24,v17-arc-08,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+235,24,v17-arc-08,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+236,24,v17-arc-08,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+237,24,v17-arc-08,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+238,24,v17-arc-08,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+239,24,v17-arc-08,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+240,25,v17-arc-09,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+241,25,v17-arc-09,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,0,0,0,0,0.0
+242,25,v17-arc-09,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+243,25,v17-arc-09,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+244,25,v17-arc-09,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+245,25,v17-arc-09,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+246,25,v17-arc-09,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+247,25,v17-arc-09,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+248,25,v17-arc-09,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,0,0,1,0.5
+249,25,v17-arc-09,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+250,26,v17-arc-09,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+251,26,v17-arc-09,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+252,26,v17-arc-09,Melo|Ori|Sova,fair turns before tool access; repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+253,26,v17-arc-09,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+254,26,v17-arc-09,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+255,26,v17-arc-09,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+256,26,v17-arc-09,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+257,26,v17-arc-09,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+258,26,v17-arc-09,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,0,0,0,1,0.25
+259,26,v17-arc-09,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,0,0.75
+260,27,v17-arc-09,Vonn|Keth|Nari,quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed,1,1,1,1,1.0
+261,27,v17-arc-09,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+262,27,v17-arc-09,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+263,27,v17-arc-09,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+264,27,v17-arc-09,Nari|Vonn|Keth,sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings,1,1,1,1,1.0
+265,27,v17-arc-09,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,0,0.75
+266,27,v17-arc-09,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+267,27,v17-arc-09,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+268,27,v17-arc-09,Keth|Nari|Vonn,do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance,1,1,1,1,1.0
+269,27,v17-arc-09,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+270,28,v17-arc-10,Ori|Sova,repair work cannot be interrupted without warning; no crowding while resting,1,1,1,1,1.0
+271,28,v17-arc-10,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+272,28,v17-arc-10,Sova|Melo|Ori,no crowding while resting; fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,1,1.0
+273,28,v17-arc-10,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,1,1,0,0.75
+274,28,v17-arc-10,Melo|Ori,fair turns before tool access; repair work cannot be interrupted without warning,1,1,1,0,0.75
+275,28,v17-arc-10,Nari|Vonn,sealed notes stay sealed; quiet recovery ritual needs distance,0,0,0,0,0.0
+276,28,v17-arc-10,Ori|Sova|Melo,repair work cannot be interrupted without warning; no crowding while resting; fair turns before tool access,1,1,1,1,1.0
+277,28,v17-arc-10,Vonn|Keth,quiet recovery ritual needs distance; do not erase route warnings,1,1,1,0,0.75
+278,28,v17-arc-10,Sova|Melo,no crowding while resting; fair turns before tool access,1,1,1,0,0.75
+279,28,v17-arc-10,Keth|Nari,do not erase route warnings; sealed notes stay sealed,1,0,0,0,0.25

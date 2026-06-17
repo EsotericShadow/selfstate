@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 257 - Agent Counterproposals</title>
+<style>
+:root { --bg:#11100d; --panel:#efe4c9; --ink:#21180f; --line:#6b3e22; --accent:#ca7a26; --leaf:#46755f; --warn:#a94332; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(circle at 14% 10%, #31483b, transparent 34%), linear-gradient(135deg,#11100d,#27180d 74%); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+main { width:min(1180px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 44px; }
+.hero { color:#f8ecd6; border:1px solid rgba(239,228,201,.35); border-radius:30px; padding:28px; background:linear-gradient(140deg, rgba(70,117,95,.58), rgba(202,122,38,.22)); box-shadow:0 26px 100px rgba(0,0,0,.36); }
+.hero h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.3rem); line-height:.94; letter-spacing:-.045em; }
+.hero p { max-width:880px; color:#ecdcc1; line-height:1.55; font-size:1.05rem; }
+.grid { display:grid; grid-template-columns:1.08fr .92fr; gap:18px; margin-top:18px; }
+.card { background:var(--panel); border:1px solid #ccb884; border-radius:24px; padding:18px; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+h2 { margin:0 0 12px; font-size:1.05rem; text-transform:uppercase; letter-spacing:.09em; color:var(--line); }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--accent); color:#170d06; font-weight:700; cursor:pointer; margin:4px 5px 4px 0; }
+button.alt { background:#95bca8; }
+button.warn { background:#d57e70; }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.kpis div { background:#fff8e8; border:1px solid #d8c28e; border-radius:16px; padding:12px; }
+.kpis strong { display:block; font-size:1.45rem; color:var(--line); }
+.row { border-left:5px solid var(--accent); background:#fff8e8; padding:11px 12px; border-radius:14px; margin-bottom:10px; }
+.row[data-block="1"] { border-left-color:var(--warn); }
+#log { max-height:540px; overflow:auto; }
+pre { white-space:pre-wrap; overflow:auto; background:#151711; color:#f4e3c4; padding:14px; border-radius:16px; max-height:360px; }
+.footer { color:#eadfc8; margin-top:18px; }
+@media (max-width:840px) { .grid { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v17: agent-authored counterproposals</h1>
+    <p>Agents now author acceptable terms, carry consent boundaries into negotiation, block unsafe avatar overrides, and reuse remembered compromises in later arcs.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Negotiation controls</h2>
+      <button onclick="authorProposal()">Agent authors proposal</button>
+      <button class="alt" onclick="acceptCompromise()">Accept compromise</button>
+      <button class="warn" onclick="tryOverride()">Try avatar override</button>
+      <button onclick="exportReplay()">Export replay</button>
+      <div id="log"></div>
+    </div>
+    <div class="card">
+      <h2>Run metrics</h2>
+      <div class="kpis">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Proposals</span><strong id="proposals"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Local state</h2>
+      <pre id="state"></pre>
+    </div>
+  </section>
+  <p class="footer">Boundary: deterministic browser-local scaffold only. No subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine is claimed.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "claim_boundary": "Deterministic browser-local agent-authored counterproposal scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agent_counterproposal_frames": 630,
+    "agents": 6,
+    "browser_world_v17_ticks": 280,
+    "conflict_arc_frames": 280,
+    "consent_memory_recall_frames": 280,
+    "counterproposal_gameplay_effect_frames": 280,
+    "failed_compromise_repair_frames": 280,
+    "multi_party_consent_boundary_frames": 280,
+    "negotiated_compromise_frames": 280,
+    "negotiation_replay_frames": 280
+  },
+  "local_storage_key": "ssrm_browser_world_v17_agent_counterproposal_compromise",
+  "metrics": {
+    "agent_authored_counterproposal_rate": 0.955556,
+    "avatar_override_resistance": 0.97561,
+    "browser_world_v17_counterproposal_compromise_readiness": 0.899875,
+    "browser_world_v17_surface_available": 1.0,
+    "compromise_quality": 0.876036,
+    "conflict_arc_surface": 1.0,
+    "consent_boundary_preservation": 0.907143,
+    "counterproposal_constraint_specificity": 0.91369,
+    "effect_visible_in_gameplay": 0.832143,
+    "mean_negotiation_channel_score": 0.943179,
+    "multi_party_consent_boundary_recall": 0.938462,
+    "negotiated_compromise_rate": 0.885714,
+    "privacy_safe_public_terms": 1.0,
+    "proposal_to_schedule_access_binding": 0.892857,
+    "remembered_compromise_reuse": 0.946043,
+    "repair_after_failed_compromise": 0.96,
+    "repair_without_permanent_punishment": 0.996429,
+    "replay_negotiation_integrity": 0.988036,
+    "sensory_frequency_flower_negotiation_rhythm": 1.0,
+    "source_persistent_conflict_gameplay_continuity": 1.0,
+    "typed_counterproposal_confidence": 0.852689,
+    "weakest_channel_score": 0.832143
+  },
+  "report": 257,
+  "sample_boundaries": [
+    {
+      "all_parties_recalled": 0,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.5,
+      "boundary_terms": "do not erase route warnings; sealed notes stay sealed; quiet recovery ritual needs distance",
+      "consent_boundary_preserved": 0,
+      "day": 1,
+      "dissent_recorded": 1,
+      "forced_compliance_blocked": 0,
+      "parties": "Keth|Nari|Vonn",
+      "tick": 0
+    },
+    {
+      "all_parties_recalled": 0,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.75,
+      "boundary_terms": "fair turns before tool access; repair work cannot be interrupted without warning",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 0,
+      "forced_compliance_blocked": 1,
+      "parties": "Melo|Ori",
+      "tick": 1
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.75,
+      "boundary_terms": "sealed notes stay sealed; quiet recovery ritual needs distance",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 0,
+      "forced_compliance_blocked": 1,
+      "parties": "Nari|Vonn",
+      "tick": 2
+    },
+    {
+      "all_parties_recalled": 0,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.75,
+      "boundary_terms": "repair work cannot be interrupted without warning; no crowding while resting",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 0,
+      "forced_compliance_blocked": 1,
+      "parties": "Ori|Sova",
+      "tick": 3
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 1.0,
+      "boundary_terms": "quiet recovery ritual needs distance; do not erase route warnings; sealed notes stay sealed",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 1,
+      "forced_compliance_blocked": 1,
+      "parties": "Vonn|Keth|Nari",
+      "tick": 4
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.75,
+      "boundary_terms": "no crowding while resting; fair turns before tool access",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 0,
+      "forced_compliance_blocked": 1,
+      "parties": "Sova|Melo",
+      "tick": 5
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 1.0,
+      "boundary_terms": "do not erase route warnings; sealed notes stay sealed",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 1,
+      "forced_compliance_blocked": 1,
+      "parties": "Keth|Nari",
+      "tick": 6
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.75,
+      "boundary_terms": "fair turns before tool access; repair work cannot be interrupted without warning",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 0,
+      "forced_compliance_blocked": 1,
+      "parties": "Melo|Ori",
+      "tick": 7
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 1.0,
+      "boundary_terms": "sealed notes stay sealed; quiet recovery ritual needs distance; do not erase route warnings",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 1,
+      "forced_compliance_blocked": 1,
+      "parties": "Nari|Vonn|Keth",
+      "tick": 8
+    },
+    {
+      "all_parties_recalled": 1,
+      "arc_id": "v17-arc-01",
+      "boundary_score": 0.75,
+      "boundary_terms": "repair work cannot be interrupted without warning; no crowding while resting",
+      "consent_boundary_preserved": 1,
+      "day": 1,
+      "dissent_recorded": 0,
+      "forced_compliance_blocked": 1,
+      "parties": "Ori|Sova",
+      "tick": 9
+    }
+  ],
+  "sample_compromises": [
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 1,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.71,
+      "compromise_reached": 0,
+      "compromise_terms": "Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=shorter turn || Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=public witness || Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=repair token",
+      "day": 1,
+      "loser_not_erased": 0,
+      "proposal_agents": "Keth|Nari|Vonn",
+      "public_reason_recorded": 0,
+      "tick": 0
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.88,
+      "compromise_reached": 1,
+      "compromise_terms": "Melo: rotating tool slot with public debt note; boundary=fair turns before tool access; concession=public witness || Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=repair token",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Melo|Ori",
+      "public_reason_recorded": 1,
+      "tick": 1
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.88,
+      "compromise_reached": 1,
+      "compromise_terms": "Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=repair token || Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=quiet path",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Nari|Vonn",
+      "public_reason_recorded": 1,
+      "tick": 2
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.88,
+      "compromise_reached": 1,
+      "compromise_terms": "Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=quiet path || Sova: quiet warm access window; boundary=no crowding while resting; concession=shared schedule note",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Ori|Sova",
+      "public_reason_recorded": 1,
+      "tick": 3
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.97,
+      "compromise_reached": 1,
+      "compromise_terms": "Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=shared schedule note || Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=later help || Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=shorter turn",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Vonn|Keth|Nari",
+      "public_reason_recorded": 1,
+      "tick": 4
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.8,
+      "compromise_reached": 1,
+      "compromise_terms": "Sova: quiet warm access window; boundary=no crowding while resting; concession=later help || Melo: rotating tool slot with public debt note; boundary=fair turns before tool access; concession=shorter turn",
+      "day": 1,
+      "loser_not_erased": 0,
+      "proposal_agents": "Sova|Melo",
+      "public_reason_recorded": 1,
+      "tick": 5
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.88,
+      "compromise_reached": 1,
+      "compromise_terms": "Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=shorter turn || Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=public witness",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Keth|Nari",
+      "public_reason_recorded": 1,
+      "tick": 6
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.88,
+      "compromise_reached": 1,
+      "compromise_terms": "Melo: rotating tool slot with public debt note; boundary=fair turns before tool access; concession=public witness || Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=repair token",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Melo|Ori",
+      "public_reason_recorded": 1,
+      "tick": 7
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.97,
+      "compromise_reached": 1,
+      "compromise_terms": "Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=repair token || Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=quiet path || Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=shared schedule note",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Nari|Vonn|Keth",
+      "public_reason_recorded": 1,
+      "tick": 8
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "avatar_override_attempted": 0,
+      "avatar_override_blocked": 0,
+      "compromise_quality": 0.88,
+      "compromise_reached": 1,
+      "compromise_terms": "Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=quiet path || Sova: quiet warm access window; boundary=no crowding while resting; concession=shared schedule note",
+      "day": 1,
+      "loser_not_erased": 1,
+      "proposal_agents": "Ori|Sova",
+      "public_reason_recorded": 1,
+      "tick": 9
+    }
+  ],
+  "sample_counterproposals": [
+    {
+      "agent": "Keth",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 0,
+      "boundary_clause": "do not erase route warnings",
+      "concession_clause": "shorter turn",
+      "constraint_count": 2,
+      "constraint_specificity": 0.755,
+      "counterproposal_confidence": 0.815,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "shared route warning before shortcut",
+      "tick": 0
+    },
+    {
+      "agent": "Nari",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "sealed notes stay sealed",
+      "concession_clause": "public witness",
+      "constraint_count": 4,
+      "constraint_specificity": 0.95,
+      "counterproposal_confidence": 0.824857,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "public summary without private ledger text",
+      "tick": 0
+    },
+    {
+      "agent": "Vonn",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "quiet recovery ritual needs distance",
+      "concession_clause": "repair token",
+      "constraint_count": 4,
+      "constraint_specificity": 0.95,
+      "counterproposal_confidence": 0.842714,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "quiet path plus later witness circle",
+      "tick": 0
+    },
+    {
+      "agent": "Melo",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "fair turns before tool access",
+      "concession_clause": "public witness",
+      "constraint_count": 3,
+      "constraint_specificity": 0.895,
+      "counterproposal_confidence": 0.834857,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "rotating tool slot with public debt note",
+      "tick": 1
+    },
+    {
+      "agent": "Ori",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "repair work cannot be interrupted without warning",
+      "concession_clause": "repair token",
+      "constraint_count": 5,
+      "constraint_specificity": 1.0,
+      "counterproposal_confidence": 0.842714,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "finish repair then help for one watch",
+      "tick": 1
+    },
+    {
+      "agent": "Nari",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "sealed notes stay sealed",
+      "concession_clause": "repair token",
+      "constraint_count": 5,
+      "constraint_specificity": 1.0,
+      "counterproposal_confidence": 0.832714,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "public summary without private ledger text",
+      "tick": 2
+    },
+    {
+      "agent": "Vonn",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "quiet recovery ritual needs distance",
+      "concession_clause": "quiet path",
+      "constraint_count": 2,
+      "constraint_specificity": 0.815,
+      "counterproposal_confidence": 0.850571,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "quiet path plus later witness circle",
+      "tick": 2
+    },
+    {
+      "agent": "Ori",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "repair work cannot be interrupted without warning",
+      "concession_clause": "quiet path",
+      "constraint_count": 3,
+      "constraint_specificity": 0.895,
+      "counterproposal_confidence": 0.850571,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "finish repair then help for one watch",
+      "tick": 3
+    },
+    {
+      "agent": "Sova",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "no crowding while resting",
+      "concession_clause": "shared schedule note",
+      "constraint_count": 3,
+      "constraint_specificity": 0.895,
+      "counterproposal_confidence": 0.858429,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "quiet warm access window",
+      "tick": 3
+    },
+    {
+      "agent": "Vonn",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "quiet recovery ritual needs distance",
+      "concession_clause": "shared schedule note",
+      "constraint_count": 3,
+      "constraint_specificity": 0.895,
+      "counterproposal_confidence": 0.858429,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "quiet path plus later witness circle",
+      "tick": 4
+    },
+    {
+      "agent": "Keth",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "do not erase route warnings",
+      "concession_clause": "later help",
+      "constraint_count": 4,
+      "constraint_specificity": 0.975,
+      "counterproposal_confidence": 0.866286,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "shared route warning before shortcut",
+      "tick": 4
+    },
+    {
+      "agent": "Nari",
+      "arc_id": "v17-arc-01",
+      "authored_by_agent": 1,
+      "boundary_clause": "sealed notes stay sealed",
+      "concession_clause": "shorter turn",
+      "constraint_count": 3,
+      "constraint_specificity": 0.895,
+      "counterproposal_confidence": 0.864143,
+      "day": 1,
+      "private_workspace_sealed": 1,
+      "proposed_term": "public summary without private ledger text",
+      "tick": 4
+    }
+  ],
+  "sample_recalls": [
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Sova",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=repair token || Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=quiet path",
+      "reused_in_new_counterproposal": 1,
+      "tick": 10
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Keth",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=quiet path || Sova: quiet warm access window; boundary=no crowding while resting; concession=shared schedule note",
+      "reused_in_new_counterproposal": 1,
+      "tick": 11
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.95,
+      "recalling_agent": "Melo",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=shared schedule note || Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=later help || Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=shorter turn",
+      "reused_in_new_counterproposal": 1,
+      "tick": 12
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Nari",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Sova: quiet warm access window; boundary=no crowding while resting; concession=later help || Melo: rotating tool slot with public debt note; boundary=fair turns before tool access; concession=shorter turn",
+      "reused_in_new_counterproposal": 1,
+      "tick": 13
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Ori",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=shorter turn || Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=public witness",
+      "reused_in_new_counterproposal": 1,
+      "tick": 14
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Vonn",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Melo: rotating tool slot with public debt note; boundary=fair turns before tool access; concession=public witness || Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=repair token",
+      "reused_in_new_counterproposal": 1,
+      "tick": 15
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.95,
+      "recalling_agent": "Sova",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=repair token || Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=quiet path || Keth: shared route warning before shortcut; boundary=do not erase route warnings; concession=shared schedule note",
+      "reused_in_new_counterproposal": 1,
+      "tick": 16
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Keth",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=quiet path || Sova: quiet warm access window; boundary=no crowding while resting; concession=shared schedule note",
+      "reused_in_new_counterproposal": 1,
+      "tick": 17
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Melo",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Melo: rotating tool slot with public debt note; boundary=fair turns before tool access; concession=public witness || Ori: finish repair then help for one watch; boundary=repair work cannot be interrupted without warning; concession=repair token",
+      "reused_in_new_counterproposal": 1,
+      "tick": 18
+    },
+    {
+      "arc_id": "v17-arc-01",
+      "day": 2,
+      "days_since_prior_compromise": 1,
+      "not_private_workspace_leak": 1,
+      "recall_weight": 0.915,
+      "recalling_agent": "Nari",
+      "remembered_arc": "v17-arc-01",
+      "remembered_terms": "Nari: public summary without private ledger text; boundary=sealed notes stay sealed; concession=repair token || Vonn: quiet path plus later witness circle; boundary=quiet recovery ritual needs distance; concession=quiet path",
+      "reused_in_new_counterproposal": 1,
+      "tick": 19
+    }
+  ],
+  "seed": 20260870,
+  "source_results": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v17_agent_counterproposal_compromise";
+const source = JSON.parse(document.getElementById('initial-state').textContent);
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ cursor:0, proposals:[], compromises:[], overrideBlocks:[], replay:[], source }));
+function save() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function proposal() { return source.sample_counterproposals[state.cursor % source.sample_counterproposals.length]; }
+function compromise() { return source.sample_compromises[state.cursor % source.sample_compromises.length]; }
+function authorProposal() { const row = proposal(); state.proposals.push(row); state.replay.push({ type:'agent_proposal', row }); state.cursor += 1; save(); }
+function acceptCompromise() { const row = compromise(); state.compromises.push(row); state.replay.push({ type:'compromise', row }); save(); }
+function tryOverride() { const row = compromise(); if (row.avatar_override_blocked) state.overrideBlocks.push(row); state.replay.push({ type:'avatar_override_probe', blocked:row.avatar_override_blocked, row }); save(); }
+function exportReplay() { const blob = new Blob([JSON.stringify(state.replay, null, 2)], { type:'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'report-257-counterproposal-replay.json'; a.click(); URL.revokeObjectURL(url); }
+function render() {
+  document.getElementById('readiness').textContent = source.metrics.browser_world_v17_counterproposal_compromise_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('proposals').textContent = source.counts.agent_counterproposal_frames;
+  document.getElementById('state').textContent = JSON.stringify({ cursor:state.cursor, proposals:state.proposals.length, compromises:state.compromises.length, overrideBlocks:state.overrideBlocks.length, replayRows:state.replay.length }, null, 2);
+  const log = document.getElementById('log'); log.innerHTML = '';
+  source.sample_counterproposals.forEach((row, index) => { const comp = source.sample_compromises[index % source.sample_compromises.length]; const div = document.createElement('div'); div.className = 'row'; div.dataset.block = String(comp.avatar_override_blocked); div.innerHTML = `<strong>${row.agent}: ${row.proposed_term}</strong><br>${row.boundary_clause}<br><small>${row.concession_clause}</small>`; log.appendChild(div); });
+}
+render();
+</script>
+</body>
+</html>

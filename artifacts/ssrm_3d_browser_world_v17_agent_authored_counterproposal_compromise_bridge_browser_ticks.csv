@@ -1,0 +1,281 @@
+tick,day,arc_id,focus_agent,agent_authored_term_visible,negotiation_pending,compromise_active,consent_boundary_active,remembered_compromise_active,sensory_frequency_hz,flower_phase,public_behavior_marker,private_workspace_sealed
+0,1,v17-arc-01,Keth,1,1,0,0,0,1.8119,70.63,authors terms and waits,1
+1,1,v17-arc-01,Melo,1,0,1,1,0,1.8022,206.147764,accepts compromise with boundary visible,1
+2,1,v17-arc-01,Nari,1,0,1,1,1,1.8372,343.655528,accepts compromise with boundary visible,1
+3,1,v17-arc-01,Ori,1,0,1,1,1,1.8722,121.163292,accepts compromise with boundary visible,1
+4,1,v17-arc-01,Vonn,1,0,1,1,0,1.9753,274.441056,accepts compromise with boundary visible,1
+5,1,v17-arc-01,Sova,1,0,1,1,1,1.935,31.93882,accepts compromise with boundary visible,1
+6,1,v17-arc-01,Keth,1,0,1,1,1,1.9772,173.686584,accepts compromise with boundary visible,1
+7,1,v17-arc-01,Melo,1,0,1,1,1,2.0122,311.194348,accepts compromise with boundary visible,1
+8,1,v17-arc-01,Nari,1,0,1,1,1,2.1153,104.472112,accepts compromise with boundary visible,1
+9,1,v17-arc-01,Ori,1,0,1,1,1,2.0822,226.209876,accepts compromise with boundary visible,1
+10,2,v17-arc-01,Sova,1,0,1,1,1,1.7852,3.71764,accepts compromise with boundary visible,1
+11,2,v17-arc-01,Keth,1,0,1,1,1,1.8193,140.695404,blocks avatar override and restates boundary,1
+12,2,v17-arc-01,Melo,1,0,1,1,1,1.9233,294.503168,accepts compromise with boundary visible,1
+13,2,v17-arc-01,Nari,1,0,1,1,1,1.8902,56.240932,accepts compromise with boundary visible,1
+14,2,v17-arc-01,Ori,1,0,1,1,1,1.9252,193.748696,accepts compromise with boundary visible,1
+15,2,v17-arc-01,Vonn,1,0,1,1,1,1.9602,331.25646,accepts compromise with boundary visible,1
+16,2,v17-arc-01,Sova,1,0,1,1,1,2.0633,124.534224,accepts compromise with boundary visible,1
+17,2,v17-arc-01,Keth,1,0,1,1,1,2.0293,245.741988,blocks avatar override and restates boundary,1
+18,2,v17-arc-01,Melo,1,0,1,1,1,2.058,19.539752,accepts compromise with boundary visible,1
+19,2,v17-arc-01,Nari,1,1,0,1,1,2.093,157.047516,authors terms and waits,1
+20,3,v17-arc-01,Vonn,1,0,1,0,1,1.8713,314.56528,accepts compromise with boundary visible,1
+21,3,v17-arc-01,Sova,1,0,1,1,1,1.8382,76.303044,accepts compromise with boundary visible,1
+22,3,v17-arc-01,Keth,1,1,0,1,1,1.857,204.270808,blocks avatar override and restates boundary,1
+23,3,v17-arc-01,Melo,1,1,0,1,0,1.8929,342.308572,authors terms and waits,1
+24,3,v17-arc-01,Nari,1,0,1,1,1,2.0113,144.596336,accepts compromise with boundary visible,1
+25,3,v17-arc-01,Ori,1,0,1,1,1,1.9782,266.3341,accepts compromise with boundary visible,1
+26,3,v17-arc-01,Vonn,1,0,1,1,1,2.0132,43.841864,accepts compromise with boundary visible,1
+27,3,v17-arc-01,Sova,1,0,1,1,1,2.0482,181.349628,accepts compromise with boundary visible,1
+28,3,v17-arc-01,Keth,1,0,1,1,1,2.1513,334.627392,accepts compromise with boundary visible,1
+29,3,v17-arc-01,Melo,1,0,1,1,1,2.1182,96.365156,accepts compromise with boundary visible,1
+30,4,v17-arc-02,Ori,1,0,1,1,1,1.8212,233.87292,accepts compromise with boundary visible,1
+31,4,v17-arc-02,Vonn,1,0,1,0,1,1.849,7.140684,accepts compromise with boundary visible,1
+32,4,v17-arc-02,Sova,1,0,1,1,1,1.9593,164.658448,accepts compromise with boundary visible,1
+33,4,v17-arc-02,Keth,1,0,1,1,1,1.9253,285.866212,blocks avatar override and restates boundary,1
+34,4,v17-arc-02,Melo,1,0,1,1,1,1.9603,63.373976,blocks avatar override and restates boundary,1
+35,4,v17-arc-02,Nari,1,0,1,1,1,1.9962,201.41174,accepts compromise with boundary visible,1
+36,4,v17-arc-02,Ori,1,0,1,1,1,2.0993,354.689504,accepts compromise with boundary visible,1
+37,4,v17-arc-02,Vonn,1,0,1,0,1,2.0662,116.427268,accepts compromise with boundary visible,1
+38,4,v17-arc-02,Sova,1,1,0,1,1,2.094,249.695032,authors terms and waits,1
+39,4,v17-arc-02,Keth,1,0,1,1,1,2.1362,31.442796,accepts compromise with boundary visible,1
+40,5,v17-arc-02,Nari,1,0,1,1,1,1.9073,184.72056,accepts compromise with boundary visible,1
+41,5,v17-arc-02,Ori,1,0,1,1,1,1.8742,306.458324,accepts compromise with boundary visible,1
+42,5,v17-arc-02,Vonn,1,0,1,1,0,1.9092,83.966088,accepts compromise with boundary visible,1
+43,5,v17-arc-02,Sova,1,0,1,1,1,1.9442,221.473852,accepts compromise with boundary visible,1
+44,5,v17-arc-02,Keth,1,0,1,1,1,2.0311,5.211616,blocks avatar override and restates boundary,1
+45,5,v17-arc-02,Melo,1,1,0,1,1,1.9953,125.35938,authors terms and waits,1
+46,5,v17-arc-02,Nari,1,1,0,1,1,2.0339,264.987144,authors terms and waits,1
+47,5,v17-arc-02,Ori,1,0,1,1,1,2.0842,51.504908,accepts compromise with boundary visible,1
+48,5,v17-arc-02,Vonn,1,0,1,1,1,2.1873,204.782672,accepts compromise with boundary visible,1
+49,5,v17-arc-02,Sova,1,0,1,1,1,2.1542,326.520436,accepts compromise with boundary visible,1
+50,6,v17-arc-02,Melo,1,0,1,1,1,1.8572,104.0282,accepts compromise with boundary visible,1
+51,6,v17-arc-02,Nari,1,0,1,1,1,1.8913,241.005964,blocks avatar override and restates boundary,1
+52,6,v17-arc-02,Ori,1,0,1,1,1,1.9953,34.813728,accepts compromise with boundary visible,1
+53,6,v17-arc-02,Vonn,1,0,1,1,1,1.9622,156.551492,accepts compromise with boundary visible,1
+54,6,v17-arc-02,Sova,1,0,1,0,1,1.9972,294.059256,accepts compromise with boundary visible,1
+55,6,v17-arc-02,Keth,1,0,1,1,1,2.0313,71.03702,blocks avatar override and restates boundary,1
+56,6,v17-arc-02,Melo,1,0,1,1,1,2.1353,224.844784,accepts compromise with boundary visible,1
+57,6,v17-arc-02,Nari,1,1,0,1,1,2.095,342.342548,authors terms and waits,1
+58,6,v17-arc-02,Ori,1,0,1,1,1,2.1372,124.090312,accepts compromise with boundary visible,1
+59,6,v17-arc-02,Vonn,1,0,1,1,1,2.1722,261.598076,accepts compromise with boundary visible,1
+60,7,v17-arc-03,Keth,1,0,1,1,1,1.9433,54.87584,accepts compromise with boundary visible,1
+61,7,v17-arc-03,Melo,1,0,1,1,0,1.9102,176.613604,accepts compromise with boundary visible,1
+62,7,v17-arc-03,Nari,1,0,1,0,1,1.9452,314.121368,accepts compromise with boundary visible,1
+63,7,v17-arc-03,Ori,1,0,1,1,1,1.9802,91.629132,accepts compromise with boundary visible,1
+64,7,v17-arc-03,Vonn,1,0,1,1,1,2.0833,244.906896,accepts compromise with boundary visible,1
+65,7,v17-arc-03,Sova,1,0,1,1,1,2.0502,6.64466,accepts compromise with boundary visible,1
+66,7,v17-arc-03,Keth,1,0,1,1,1,2.0843,143.622424,blocks avatar override and restates boundary,1
+67,7,v17-arc-03,Melo,1,0,1,1,1,2.1202,281.660188,accepts compromise with boundary visible,1
+68,7,v17-arc-03,Nari,1,0,1,1,1,2.2143,69.637952,blocks avatar override and restates boundary,1
+69,7,v17-arc-03,Ori,1,1,0,1,1,2.1749,187.665716,authors terms and waits,1
+70,8,v17-arc-03,Sova,1,0,1,1,1,1.886,329.94348,accepts compromise with boundary visible,1
+71,8,v17-arc-03,Keth,1,0,1,0,1,1.9282,111.691244,accepts compromise with boundary visible,1
+72,8,v17-arc-03,Melo,1,0,1,1,1,2.0313,264.969008,accepts compromise with boundary visible,1
+73,8,v17-arc-03,Nari,1,0,1,1,1,1.9982,26.706772,accepts compromise with boundary visible,1
+74,8,v17-arc-03,Ori,1,0,1,1,1,2.0332,164.214536,accepts compromise with boundary visible,1
+75,8,v17-arc-03,Vonn,1,0,1,1,1,2.0682,301.7223,accepts compromise with boundary visible,1
+76,8,v17-arc-03,Sova,1,1,0,1,1,2.1641,90.760064,authors terms and waits,1
+77,8,v17-arc-03,Keth,1,0,1,1,1,2.1373,216.207828,blocks avatar override and restates boundary,1
+78,8,v17-arc-03,Melo,1,0,1,1,1,2.1732,354.245592,accepts compromise with boundary visible,1
+79,8,v17-arc-03,Nari,1,0,1,1,1,2.2082,131.753356,accepts compromise with boundary visible,1
+80,9,v17-arc-03,Vonn,1,0,1,1,0,1.9793,285.03112,accepts compromise with boundary visible,1
+81,9,v17-arc-03,Sova,1,0,1,1,1,1.9462,46.768884,accepts compromise with boundary visible,1
+82,9,v17-arc-03,Keth,1,0,1,1,1,1.9812,184.276648,accepts compromise with boundary visible,1
+83,9,v17-arc-03,Melo,1,0,1,1,1,2.009,317.544412,accepts compromise with boundary visible,1
+84,9,v17-arc-03,Nari,1,0,1,1,1,2.1193,115.062176,accepts compromise with boundary visible,1
+85,9,v17-arc-03,Ori,1,0,1,1,1,2.0853,236.26994,blocks avatar override and restates boundary,1
+86,9,v17-arc-03,Vonn,1,0,1,1,1,2.1212,14.307704,accepts compromise with boundary visible,1
+87,9,v17-arc-03,Sova,1,0,1,1,1,2.1562,151.815468,accepts compromise with boundary visible,1
+88,9,v17-arc-03,Keth,1,0,1,0,1,2.2584,304.563232,blocks avatar override and restates boundary,1
+89,9,v17-arc-03,Melo,1,0,1,1,1,2.2262,66.830996,accepts compromise with boundary visible,1
+90,10,v17-arc-04,Ori,1,0,1,1,1,1.7492,204.33876,accepts compromise with boundary visible,1
+91,10,v17-arc-04,Vonn,1,1,0,1,1,1.7689,332.836524,authors terms and waits,1
+92,10,v17-arc-04,Sova,1,0,1,1,1,1.8792,130.354288,accepts compromise with boundary visible,1
+93,10,v17-arc-04,Keth,1,0,1,0,1,1.8542,256.862052,accepts compromise with boundary visible,1
+94,10,v17-arc-04,Melo,1,0,1,1,1,1.8892,34.369816,accepts compromise with boundary visible,1
+95,10,v17-arc-04,Nari,1,1,0,1,1,1.9134,165.51758,authors terms and waits,1
+96,10,v17-arc-04,Ori,1,0,1,1,1,2.0201,320.915344,accepts compromise with boundary visible,1
+97,10,v17-arc-04,Vonn,1,0,1,1,1,1.9942,86.893108,accepts compromise with boundary visible,1
+98,10,v17-arc-04,Sova,1,0,1,1,1,2.0292,224.400872,accepts compromise with boundary visible,1
+99,10,v17-arc-04,Keth,1,0,1,1,0,2.0633,1.378636,blocks avatar override and restates boundary,1
+100,11,v17-arc-04,Nari,1,0,1,1,1,1.8353,155.1864,accepts compromise with boundary visible,1
+101,11,v17-arc-04,Ori,1,0,1,1,1,1.8022,276.924164,accepts compromise with boundary visible,1
+102,11,v17-arc-04,Vonn,1,0,1,1,1,1.8363,53.901928,blocks avatar override and restates boundary,1
+103,11,v17-arc-04,Sova,1,0,1,1,1,1.8722,191.939692,accepts compromise with boundary visible,1
+104,11,v17-arc-04,Keth,1,0,1,1,1,1.9753,345.217456,accepts compromise with boundary visible,1
+105,11,v17-arc-04,Melo,1,0,1,0,1,1.9422,106.95522,accepts compromise with boundary visible,1
+106,11,v17-arc-04,Nari,1,0,1,1,1,1.9772,244.462984,accepts compromise with boundary visible,1
+107,11,v17-arc-04,Ori,1,0,1,1,1,2.0122,21.970748,accepts compromise with boundary visible,1
+108,11,v17-arc-04,Vonn,1,0,1,1,1,2.1153,175.248512,accepts compromise with boundary visible,1
+109,11,v17-arc-04,Sova,1,0,1,1,1,2.075,292.746276,accepts compromise with boundary visible,1
+110,12,v17-arc-04,Melo,1,0,1,1,1,1.7843,73.96404,blocks avatar override and restates boundary,1
+111,12,v17-arc-04,Nari,1,0,1,1,1,1.8202,212.001804,accepts compromise with boundary visible,1
+112,12,v17-arc-04,Ori,1,0,1,1,1,1.9233,5.279568,accepts compromise with boundary visible,1
+113,12,v17-arc-04,Vonn,1,0,1,1,1,1.8902,127.017332,accepts compromise with boundary visible,1
+114,12,v17-arc-04,Sova,1,1,0,1,1,1.9099,255.515096,authors terms and waits,1
+115,12,v17-arc-04,Keth,1,1,0,1,1,1.9413,30.90286,authors terms and waits,1
+116,12,v17-arc-04,Melo,1,0,1,1,1,2.0633,195.310624,accepts compromise with boundary visible,1
+117,12,v17-arc-04,Nari,1,0,1,1,1,2.0302,317.048388,accepts compromise with boundary visible,1
+118,12,v17-arc-04,Ori,1,0,1,1,0,2.0652,94.556152,accepts compromise with boundary visible,1
+119,12,v17-arc-04,Vonn,1,0,1,1,1,2.0993,231.533916,blocks avatar override and restates boundary,1
+120,13,v17-arc-05,Keth,1,0,1,1,1,1.8713,25.34168,accepts compromise with boundary visible,1
+121,13,v17-arc-05,Melo,1,0,1,1,1,1.8373,146.549444,blocks avatar override and restates boundary,1
+122,13,v17-arc-05,Nari,1,0,1,0,1,1.866,280.347208,accepts compromise with boundary visible,1
+123,13,v17-arc-05,Ori,1,0,1,1,1,1.9082,62.094972,accepts compromise with boundary visible,1
+124,13,v17-arc-05,Vonn,1,0,1,0,1,2.0113,215.372736,accepts compromise with boundary visible,1
+125,13,v17-arc-05,Sova,1,0,1,1,1,1.9782,337.1105,accepts compromise with boundary visible,1
+126,13,v17-arc-05,Keth,1,0,1,1,1,2.0132,114.618264,accepts compromise with boundary visible,1
+127,13,v17-arc-05,Melo,1,0,1,1,1,2.0482,252.126028,accepts compromise with boundary visible,1
+128,13,v17-arc-05,Nari,1,0,1,1,1,2.1513,45.403792,accepts compromise with boundary visible,1
+129,13,v17-arc-05,Ori,1,0,1,1,1,2.1182,167.141556,accepts compromise with boundary visible,1
+130,14,v17-arc-05,Sova,1,0,1,1,1,1.8212,304.64932,accepts compromise with boundary visible,1
+131,14,v17-arc-05,Keth,1,0,1,1,1,1.8562,82.157084,accepts compromise with boundary visible,1
+132,14,v17-arc-05,Melo,1,0,1,1,1,1.9584,234.904848,blocks avatar override and restates boundary,1
+133,14,v17-arc-05,Nari,1,1,0,1,1,1.919,352.932612,authors terms and waits,1
+134,14,v17-arc-05,Ori,1,0,1,1,1,1.9612,134.680376,accepts compromise with boundary visible,1
+135,14,v17-arc-05,Vonn,1,0,1,1,1,1.989,267.94814,accepts compromise with boundary visible,1
+136,14,v17-arc-05,Sova,1,0,1,1,1,2.0903,60.165904,blocks avatar override and restates boundary,1
+137,14,v17-arc-05,Keth,1,1,0,1,0,2.0509,178.193668,authors terms and waits,1
+138,14,v17-arc-05,Melo,1,1,0,1,1,2.0859,315.701432,authors terms and waits,1
+139,14,v17-arc-05,Nari,1,0,1,0,1,2.1362,102.219196,accepts compromise with boundary visible,1
+140,15,v17-arc-05,Vonn,1,0,1,1,1,1.9073,255.49696,accepts compromise with boundary visible,1
+141,15,v17-arc-05,Sova,1,0,1,1,1,1.8742,17.234724,accepts compromise with boundary visible,1
+142,15,v17-arc-05,Keth,1,0,1,1,1,1.9092,154.742488,accepts compromise with boundary visible,1
+143,15,v17-arc-05,Melo,1,0,1,1,1,1.9433,291.720252,blocks avatar override and restates boundary,1
+144,15,v17-arc-05,Nari,1,0,1,1,1,2.0473,85.528016,accepts compromise with boundary visible,1
+145,15,v17-arc-05,Ori,1,0,1,1,1,2.0142,207.26578,accepts compromise with boundary visible,1
+146,15,v17-arc-05,Vonn,1,0,1,1,1,2.0492,344.773544,accepts compromise with boundary visible,1
+147,15,v17-arc-05,Sova,1,0,1,1,1,2.0842,122.281308,accepts compromise with boundary visible,1
+148,15,v17-arc-05,Keth,1,0,1,1,1,2.1801,271.319072,accepts compromise with boundary visible,1
+149,15,v17-arc-05,Melo,1,0,1,1,1,2.1542,37.296836,accepts compromise with boundary visible,1
+150,16,v17-arc-06,Ori,1,0,1,1,1,1.8572,174.8046,accepts compromise with boundary visible,1
+151,16,v17-arc-06,Vonn,1,0,1,1,1,1.8922,312.312364,accepts compromise with boundary visible,1
+152,16,v17-arc-06,Sova,1,1,0,1,1,1.9881,101.350128,authors terms and waits,1
+153,16,v17-arc-06,Keth,1,0,1,1,1,1.9613,226.797892,blocks avatar override and restates boundary,1
+154,16,v17-arc-06,Melo,1,0,1,1,1,1.9963,4.305656,blocks avatar override and restates boundary,1
+155,16,v17-arc-06,Nari,1,0,1,0,1,2.0322,142.34342,accepts compromise with boundary visible,1
+156,16,v17-arc-06,Ori,1,0,1,0,0,2.1353,295.621184,accepts compromise with boundary visible,1
+157,16,v17-arc-06,Vonn,1,0,1,1,1,2.1022,57.358948,accepts compromise with boundary visible,1
+158,16,v17-arc-06,Sova,1,0,1,1,1,2.1372,194.866712,accepts compromise with boundary visible,1
+159,16,v17-arc-06,Keth,1,0,1,1,1,2.1722,332.374476,accepts compromise with boundary visible,1
+160,17,v17-arc-06,Nari,1,0,1,1,1,1.9352,120.88224,accepts compromise with boundary visible,1
+161,17,v17-arc-06,Ori,1,1,0,1,1,1.8949,238.380004,authors terms and waits,1
+162,17,v17-arc-06,Vonn,1,0,1,1,1,1.9452,24.897768,accepts compromise with boundary visible,1
+163,17,v17-arc-06,Sova,1,0,1,1,1,1.9802,162.405532,accepts compromise with boundary visible,1
+164,17,v17-arc-06,Keth,1,0,1,1,1,2.0833,315.683296,accepts compromise with boundary visible,1
+165,17,v17-arc-06,Melo,1,0,1,1,1,2.0493,76.89106,blocks avatar override and restates boundary,1
+166,17,v17-arc-06,Nari,1,0,1,1,1,2.0852,214.928824,accepts compromise with boundary visible,1
+167,17,v17-arc-06,Ori,1,0,1,1,1,2.1202,352.436588,accepts compromise with boundary visible,1
+168,17,v17-arc-06,Vonn,1,0,1,1,1,2.2233,145.714352,accepts compromise with boundary visible,1
+169,17,v17-arc-06,Sova,1,0,1,1,1,2.1902,267.452116,accepts compromise with boundary visible,1
+170,18,v17-arc-06,Melo,1,0,1,1,1,1.8923,44.42988,blocks avatar override and restates boundary,1
+171,18,v17-arc-06,Nari,1,1,0,1,1,1.921,178.227644,authors terms and waits,1
+172,18,v17-arc-06,Ori,1,0,1,1,1,2.0313,335.745408,accepts compromise with boundary visible,1
+173,18,v17-arc-06,Vonn,1,0,1,0,1,1.9982,97.483172,accepts compromise with boundary visible,1
+174,18,v17-arc-06,Sova,1,0,1,1,1,2.026,230.750936,accepts compromise with boundary visible,1
+175,18,v17-arc-06,Keth,1,0,1,1,0,2.0682,12.4987,accepts compromise with boundary visible,1
+176,18,v17-arc-06,Melo,1,0,1,1,1,2.1704,165.246464,blocks avatar override and restates boundary,1
+177,18,v17-arc-06,Nari,1,0,1,1,1,2.1382,287.514228,accepts compromise with boundary visible,1
+178,18,v17-arc-06,Ori,1,0,1,1,1,2.1732,65.021992,accepts compromise with boundary visible,1
+179,18,v17-arc-06,Vonn,1,0,1,1,1,2.2082,202.529756,accepts compromise with boundary visible,1
+180,19,v17-arc-07,Keth,1,0,1,1,1,1.9793,355.80752,accepts compromise with boundary visible,1
+181,19,v17-arc-07,Melo,1,0,1,1,1,1.9462,117.545284,accepts compromise with boundary visible,1
+182,19,v17-arc-07,Nari,1,0,1,1,1,1.9812,255.053048,accepts compromise with boundary visible,1
+183,19,v17-arc-07,Ori,1,1,0,1,1,2.0009,23.550812,authors terms and waits,1
+184,19,v17-arc-07,Vonn,1,0,1,1,1,2.1112,181.068576,accepts compromise with boundary visible,1
+185,19,v17-arc-07,Sova,1,0,1,1,1,2.0862,307.57634,accepts compromise with boundary visible,1
+186,19,v17-arc-07,Keth,1,0,1,0,1,2.1212,85.084104,accepts compromise with boundary visible,1
+187,19,v17-arc-07,Melo,1,0,1,1,1,2.1481,217.821868,blocks avatar override and restates boundary,1
+188,19,v17-arc-07,Nari,1,0,1,1,1,2.2593,15.869632,accepts compromise with boundary visible,1
+189,19,v17-arc-07,Ori,1,0,1,1,1,2.2262,137.607396,accepts compromise with boundary visible,1
+190,20,v17-arc-07,Sova,1,1,0,0,1,1.7384,268.75516,authors terms and waits,1
+191,20,v17-arc-07,Keth,1,0,1,1,1,1.7842,52.622924,accepts compromise with boundary visible,1
+192,20,v17-arc-07,Melo,1,0,1,1,1,1.8873,205.900688,accepts compromise with boundary visible,1
+193,20,v17-arc-07,Nari,1,0,1,1,1,1.8542,327.638452,accepts compromise with boundary visible,1
+194,20,v17-arc-07,Ori,1,0,1,1,0,1.8892,105.146216,accepts compromise with boundary visible,1
+195,20,v17-arc-07,Vonn,1,0,1,1,1,1.9242,242.65398,accepts compromise with boundary visible,1
+196,20,v17-arc-07,Sova,1,0,1,1,1,2.0273,35.931744,accepts compromise with boundary visible,1
+197,20,v17-arc-07,Keth,1,0,1,1,1,1.9942,157.669508,accepts compromise with boundary visible,1
+198,20,v17-arc-07,Melo,1,0,1,1,1,2.0283,294.647272,blocks avatar override and restates boundary,1
+199,20,v17-arc-07,Nari,1,0,1,1,1,2.0642,72.685036,accepts compromise with boundary visible,1
+200,21,v17-arc-07,Vonn,1,0,1,1,1,1.8281,221.7228,accepts compromise with boundary visible,1
+201,21,v17-arc-07,Sova,1,0,1,1,1,1.8022,347.700564,accepts compromise with boundary visible,1
+202,21,v17-arc-07,Keth,1,0,1,1,1,1.8372,125.208328,accepts compromise with boundary visible,1
+203,21,v17-arc-07,Melo,1,0,1,1,1,1.8722,262.716092,accepts compromise with boundary visible,1
+204,21,v17-arc-07,Nari,1,0,1,1,1,1.9744,55.463856,blocks avatar override and restates boundary,1
+205,21,v17-arc-07,Ori,1,0,1,1,1,1.9422,177.73162,accepts compromise with boundary visible,1
+206,21,v17-arc-07,Vonn,1,1,0,1,1,1.9619,306.229384,authors terms and waits,1
+207,21,v17-arc-07,Sova,1,1,0,0,1,1.9969,83.737148,authors terms and waits,1
+208,21,v17-arc-07,Keth,1,0,1,1,1,2.1153,246.024912,accepts compromise with boundary visible,1
+209,21,v17-arc-07,Melo,1,1,0,1,1,2.0741,2.992676,blocks avatar override and restates boundary,1
+210,22,v17-arc-08,Ori,1,0,1,1,1,1.7852,145.27044,accepts compromise with boundary visible,1
+211,22,v17-arc-08,Vonn,1,0,1,1,1,1.8202,282.778204,accepts compromise with boundary visible,1
+212,22,v17-arc-08,Sova,1,0,1,1,1,1.9233,76.055968,accepts compromise with boundary visible,1
+213,22,v17-arc-08,Keth,1,0,1,1,0,1.883,193.553732,accepts compromise with boundary visible,1
+214,22,v17-arc-08,Melo,1,0,1,1,1,1.9252,335.301496,accepts compromise with boundary visible,1
+215,22,v17-arc-08,Nari,1,0,1,1,1,1.9602,112.80926,accepts compromise with boundary visible,1
+216,22,v17-arc-08,Ori,1,0,1,1,1,2.0633,266.087024,accepts compromise with boundary visible,1
+217,22,v17-arc-08,Vonn,1,0,1,0,1,2.0302,27.824788,accepts compromise with boundary visible,1
+218,22,v17-arc-08,Sova,1,0,1,1,1,2.0652,165.332552,accepts compromise with boundary visible,1
+219,22,v17-arc-08,Keth,1,0,1,1,1,2.1002,302.840316,accepts compromise with boundary visible,1
+220,23,v17-arc-08,Nari,1,0,1,1,1,1.8704,95.58808,blocks avatar override and restates boundary,1
+221,23,v17-arc-08,Ori,1,0,1,1,1,1.8373,217.325844,blocks avatar override and restates boundary,1
+222,23,v17-arc-08,Vonn,1,0,1,1,1,1.8732,355.363608,accepts compromise with boundary visible,1
+223,23,v17-arc-08,Sova,1,0,1,1,1,1.9082,132.871372,accepts compromise with boundary visible,1
+224,23,v17-arc-08,Keth,1,0,1,0,1,2.0113,286.149136,accepts compromise with boundary visible,1
+225,23,v17-arc-08,Melo,1,0,1,1,1,1.9782,47.8869,accepts compromise with boundary visible,1
+226,23,v17-arc-08,Nari,1,0,1,1,1,2.006,181.154664,accepts compromise with boundary visible,1
+227,23,v17-arc-08,Ori,1,0,1,1,1,2.0482,322.902428,accepts compromise with boundary visible,1
+228,23,v17-arc-08,Vonn,1,1,0,1,1,2.136,107.170192,authors terms and waits,1
+229,23,v17-arc-08,Sova,1,1,0,1,1,2.1029,228.907956,authors terms and waits,1
+230,24,v17-arc-08,Melo,1,1,0,1,1,1.8023,4.29572,authors terms and waits,1
+231,24,v17-arc-08,Nari,1,0,1,1,1,1.8553,152.403484,blocks avatar override and restates boundary,1
+232,24,v17-arc-08,Ori,1,0,1,1,0,1.9593,306.211248,accepts compromise with boundary visible,1
+233,24,v17-arc-08,Vonn,1,0,1,1,1,1.9262,67.949012,accepts compromise with boundary visible,1
+234,24,v17-arc-08,Sova,1,0,1,1,1,1.9612,205.456776,accepts compromise with boundary visible,1
+235,24,v17-arc-08,Keth,1,0,1,1,1,1.9962,342.96454,accepts compromise with boundary visible,1
+236,24,v17-arc-08,Melo,1,0,1,1,1,2.0993,136.242304,accepts compromise with boundary visible,1
+237,24,v17-arc-08,Nari,1,0,1,1,1,2.0662,257.980068,accepts compromise with boundary visible,1
+238,24,v17-arc-08,Ori,1,0,1,1,1,2.1003,34.957832,blocks avatar override and restates boundary,1
+239,24,v17-arc-08,Vonn,1,0,1,1,1,2.129,168.755596,accepts compromise with boundary visible,1
+240,25,v17-arc-09,Keth,1,0,1,1,1,1.9073,326.27336,accepts compromise with boundary visible,1
+241,25,v17-arc-09,Melo,1,0,1,0,1,1.8742,88.011124,accepts compromise with boundary visible,1
+242,25,v17-arc-09,Nari,1,0,1,1,1,1.9083,224.988888,blocks avatar override and restates boundary,1
+243,25,v17-arc-09,Ori,1,0,1,1,1,1.9442,3.026652,accepts compromise with boundary visible,1
+244,25,v17-arc-09,Vonn,1,0,1,1,1,2.0473,156.304416,accepts compromise with boundary visible,1
+245,25,v17-arc-09,Sova,1,0,1,1,1,2.0142,278.04218,accepts compromise with boundary visible,1
+246,25,v17-arc-09,Keth,1,0,1,1,1,2.0492,55.549944,accepts compromise with boundary visible,1
+247,25,v17-arc-09,Melo,1,1,0,1,1,2.077,188.817708,authors terms and waits,1
+248,25,v17-arc-09,Nari,1,0,1,0,1,2.1873,346.335472,accepts compromise with boundary visible,1
+249,25,v17-arc-09,Ori,1,0,1,1,1,2.1542,108.073236,accepts compromise with boundary visible,1
+250,26,v17-arc-09,Sova,1,0,1,1,1,1.8572,245.581,accepts compromise with boundary visible,1
+251,26,v17-arc-09,Keth,1,0,1,1,0,1.8922,23.088764,accepts compromise with boundary visible,1
+252,26,v17-arc-09,Melo,1,0,1,1,1,1.98,167.356528,accepts compromise with boundary visible,1
+253,26,v17-arc-09,Nari,1,1,0,1,1,1.946,288.564292,blocks avatar override and restates boundary,1
+254,26,v17-arc-09,Ori,1,0,1,1,1,1.9972,75.612056,accepts compromise with boundary visible,1
+255,26,v17-arc-09,Vonn,1,0,1,1,1,2.0313,212.58982,blocks avatar override and restates boundary,1
+256,26,v17-arc-09,Sova,1,0,1,1,1,2.1353,6.397584,accepts compromise with boundary visible,1
+257,26,v17-arc-09,Keth,1,0,1,1,1,2.1022,128.135348,accepts compromise with boundary visible,1
+258,26,v17-arc-09,Melo,1,0,1,0,1,2.1372,265.643112,accepts compromise with boundary visible,1
+259,26,v17-arc-09,Nari,1,0,1,1,1,2.1722,43.150876,accepts compromise with boundary visible,1
+260,27,v17-arc-09,Vonn,1,0,1,1,1,1.9433,196.42864,accepts compromise with boundary visible,1
+261,27,v17-arc-09,Sova,1,0,1,1,1,1.9102,318.166404,accepts compromise with boundary visible,1
+262,27,v17-arc-09,Keth,1,0,1,1,1,1.9452,95.674168,accepts compromise with boundary visible,1
+263,27,v17-arc-09,Melo,1,0,1,1,1,1.9802,233.181932,accepts compromise with boundary visible,1
+264,27,v17-arc-09,Nari,1,0,1,1,1,2.0824,25.929696,blocks avatar override and restates boundary,1
+265,27,v17-arc-09,Ori,1,0,1,1,1,2.043,143.95746,accepts compromise with boundary visible,1
+266,27,v17-arc-09,Vonn,1,1,0,1,1,2.078,281.465224,authors terms and waits,1
+267,27,v17-arc-09,Sova,1,0,1,1,1,2.1202,63.212988,accepts compromise with boundary visible,1
+268,27,v17-arc-09,Keth,1,0,1,1,1,2.2233,216.490752,accepts compromise with boundary visible,1
+269,27,v17-arc-09,Melo,1,0,1,1,1,2.1902,338.228516,accepts compromise with boundary visible,1
+270,28,v17-arc-10,Ori,1,0,1,1,0,1.8932,115.73628,accepts compromise with boundary visible,1
+271,28,v17-arc-10,Vonn,1,0,1,1,1,1.9282,253.244044,accepts compromise with boundary visible,1
+272,28,v17-arc-10,Sova,1,0,1,1,1,2.0304,45.991808,blocks avatar override and restates boundary,1
+273,28,v17-arc-10,Keth,1,0,1,1,1,1.9982,168.259572,accepts compromise with boundary visible,1
+274,28,v17-arc-10,Melo,1,0,1,1,1,2.0332,305.767336,accepts compromise with boundary visible,1
+275,28,v17-arc-10,Nari,1,1,0,0,1,2.0484,71.6151,blocks avatar override and restates boundary,1
+276,28,v17-arc-10,Ori,1,0,1,1,1,2.1632,231.782864,accepts compromise with boundary visible,1
+277,28,v17-arc-10,Vonn,1,0,1,1,1,2.1382,358.290628,accepts compromise with boundary visible,1
+278,28,v17-arc-10,Sova,1,0,1,1,1,2.166,131.558392,accepts compromise with boundary visible,1
+279,28,v17-arc-10,Keth,1,0,1,0,1,2.2082,273.306156,accepts compromise with boundary visible,1

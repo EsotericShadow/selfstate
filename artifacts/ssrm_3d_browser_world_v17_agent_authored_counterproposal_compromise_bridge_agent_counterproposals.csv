@@ -1,0 +1,631 @@
+tick,day,arc_id,agent,authored_by_agent,proposed_term,constraint_count,constraint_specificity,boundary_clause,concession_clause,counterproposal_confidence,private_workspace_sealed
+0,1,v17-arc-01,Keth,0,shared route warning before shortcut,2,0.755,do not erase route warnings,shorter turn,0.815,1
+0,1,v17-arc-01,Nari,1,public summary without private ledger text,4,0.95,sealed notes stay sealed,public witness,0.824857,1
+0,1,v17-arc-01,Vonn,1,quiet path plus later witness circle,4,0.95,quiet recovery ritual needs distance,repair token,0.842714,1
+1,1,v17-arc-01,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.834857,1
+1,1,v17-arc-01,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.842714,1
+2,1,v17-arc-01,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.832714,1
+2,1,v17-arc-01,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.850571,1
+3,1,v17-arc-01,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.850571,1
+3,1,v17-arc-01,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.858429,1
+4,1,v17-arc-01,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+4,1,v17-arc-01,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.866286,1
+4,1,v17-arc-01,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,shorter turn,0.864143,1
+5,1,v17-arc-01,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.866286,1
+5,1,v17-arc-01,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.874143,1
+6,1,v17-arc-01,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.874143,1
+6,1,v17-arc-01,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.872,1
+7,1,v17-arc-01,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.882,1
+7,1,v17-arc-01,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.827,1
+8,1,v17-arc-01,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.817,1
+8,1,v17-arc-01,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.834857,1
+8,1,v17-arc-01,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shared schedule note,0.842714,1
+9,1,v17-arc-01,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.834857,1
+9,1,v17-arc-01,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.842714,1
+10,2,v17-arc-01,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.842714,1
+10,2,v17-arc-01,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.850571,1
+11,2,v17-arc-01,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.850571,1
+11,2,v17-arc-01,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.848429,1
+12,2,v17-arc-01,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.858429,1
+12,2,v17-arc-01,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.866286,1
+12,2,v17-arc-01,Sova,1,quiet warm access window,4,0.975,no crowding while resting,quiet path,0.874143,1
+13,2,v17-arc-01,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.856286,1
+13,2,v17-arc-01,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.874143,1
+14,2,v17-arc-01,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.874143,1
+14,2,v17-arc-01,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.882,1
+15,2,v17-arc-01,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.882,1
+15,2,v17-arc-01,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.827,1
+16,2,v17-arc-01,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.827,1
+16,2,v17-arc-01,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.834857,1
+16,2,v17-arc-01,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,public witness,0.842714,1
+17,2,v17-arc-01,Keth,1,shared route warning before shortcut,4,0.95,do not erase route warnings,shorter turn,0.834857,1
+17,2,v17-arc-01,Nari,1,public summary without private ledger text,3,0.87,sealed notes stay sealed,public witness,0.832714,1
+18,2,v17-arc-01,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.842714,1
+18,2,v17-arc-01,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.850571,1
+19,2,v17-arc-01,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.840571,1
+19,2,v17-arc-01,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.858429,1
+20,3,v17-arc-01,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+20,3,v17-arc-01,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.866286,1
+20,3,v17-arc-01,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,shorter turn,0.864143,1
+21,3,v17-arc-01,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.866286,1
+21,3,v17-arc-01,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.874143,1
+22,3,v17-arc-01,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.874143,1
+22,3,v17-arc-01,Nari,0,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.86,1
+23,3,v17-arc-01,Melo,0,rotating tool slot with public debt note,4,0.94,fair turns before tool access,public witness,0.87,1
+23,3,v17-arc-01,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.827,1
+24,3,v17-arc-01,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.817,1
+24,3,v17-arc-01,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.834857,1
+24,3,v17-arc-01,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shared schedule note,0.842714,1
+25,3,v17-arc-01,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.834857,1
+25,3,v17-arc-01,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.842714,1
+26,3,v17-arc-01,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.842714,1
+26,3,v17-arc-01,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.850571,1
+27,3,v17-arc-01,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.850571,1
+27,3,v17-arc-01,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.858429,1
+28,3,v17-arc-01,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.858429,1
+28,3,v17-arc-01,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.856286,1
+28,3,v17-arc-01,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,repair token,0.874143,1
+29,3,v17-arc-01,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.866286,1
+29,3,v17-arc-01,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.874143,1
+30,4,v17-arc-02,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.874143,1
+30,4,v17-arc-02,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.882,1
+31,4,v17-arc-02,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.882,1
+31,4,v17-arc-02,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.827,1
+32,4,v17-arc-02,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.827,1
+32,4,v17-arc-02,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.834857,1
+32,4,v17-arc-02,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,public witness,0.842714,1
+33,4,v17-arc-02,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.834857,1
+33,4,v17-arc-02,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.832714,1
+34,4,v17-arc-02,Melo,1,rotating tool slot with public debt note,3,0.87,fair turns before tool access,public witness,0.842714,1
+34,4,v17-arc-02,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.850571,1
+35,4,v17-arc-02,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.840571,1
+35,4,v17-arc-02,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.858429,1
+36,4,v17-arc-02,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.858429,1
+36,4,v17-arc-02,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.866286,1
+36,4,v17-arc-02,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,later help,0.874143,1
+37,4,v17-arc-02,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.866286,1
+37,4,v17-arc-02,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.874143,1
+38,4,v17-arc-02,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.874143,1
+38,4,v17-arc-02,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.882,1
+39,4,v17-arc-02,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.882,1
+39,4,v17-arc-02,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.817,1
+40,5,v17-arc-02,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.817,1
+40,5,v17-arc-02,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.834857,1
+40,5,v17-arc-02,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shared schedule note,0.842714,1
+41,5,v17-arc-02,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.834857,1
+41,5,v17-arc-02,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.842714,1
+42,5,v17-arc-02,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.842714,1
+42,5,v17-arc-02,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.850571,1
+43,5,v17-arc-02,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.850571,1
+43,5,v17-arc-02,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.858429,1
+44,5,v17-arc-02,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.858429,1
+44,5,v17-arc-02,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.856286,1
+44,5,v17-arc-02,Vonn,0,quiet path plus later witness circle,3,0.86,quiet recovery ritual needs distance,repair token,0.862143,1
+45,5,v17-arc-02,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.866286,1
+45,5,v17-arc-02,Ori,0,finish repair then help for one watch,4,0.94,repair work cannot be interrupted without warning,repair token,0.862143,1
+46,5,v17-arc-02,Nari,0,public summary without private ledger text,4,0.94,sealed notes stay sealed,repair token,0.852143,1
+46,5,v17-arc-02,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.882,1
+47,5,v17-arc-02,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.882,1
+47,5,v17-arc-02,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.827,1
+48,5,v17-arc-02,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.827,1
+48,5,v17-arc-02,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.834857,1
+48,5,v17-arc-02,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,shorter turn,0.832714,1
+49,5,v17-arc-02,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.834857,1
+49,5,v17-arc-02,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.842714,1
+50,6,v17-arc-02,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.842714,1
+50,6,v17-arc-02,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.850571,1
+51,6,v17-arc-02,Nari,1,public summary without private ledger text,3,0.87,sealed notes stay sealed,repair token,0.840571,1
+51,6,v17-arc-02,Vonn,1,quiet path plus later witness circle,3,0.87,quiet recovery ritual needs distance,quiet path,0.858429,1
+52,6,v17-arc-02,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.858429,1
+52,6,v17-arc-02,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.866286,1
+52,6,v17-arc-02,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,later help,0.874143,1
+53,6,v17-arc-02,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.866286,1
+53,6,v17-arc-02,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.874143,1
+54,6,v17-arc-02,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.874143,1
+54,6,v17-arc-02,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.882,1
+55,6,v17-arc-02,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.882,1
+55,6,v17-arc-02,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.817,1
+56,6,v17-arc-02,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.827,1
+56,6,v17-arc-02,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.834857,1
+56,6,v17-arc-02,Sova,1,quiet warm access window,3,0.895,no crowding while resting,quiet path,0.842714,1
+57,6,v17-arc-02,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.824857,1
+57,6,v17-arc-02,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.842714,1
+58,6,v17-arc-02,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.842714,1
+58,6,v17-arc-02,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.850571,1
+59,6,v17-arc-02,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.850571,1
+59,6,v17-arc-02,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.858429,1
+60,7,v17-arc-03,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.858429,1
+60,7,v17-arc-03,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.856286,1
+60,7,v17-arc-03,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,repair token,0.874143,1
+61,7,v17-arc-03,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.866286,1
+61,7,v17-arc-03,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.874143,1
+62,7,v17-arc-03,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.864143,1
+62,7,v17-arc-03,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.882,1
+63,7,v17-arc-03,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.882,1
+63,7,v17-arc-03,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.827,1
+64,7,v17-arc-03,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.827,1
+64,7,v17-arc-03,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.834857,1
+64,7,v17-arc-03,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,shorter turn,0.832714,1
+65,7,v17-arc-03,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.834857,1
+65,7,v17-arc-03,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.842714,1
+66,7,v17-arc-03,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.842714,1
+66,7,v17-arc-03,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.840571,1
+67,7,v17-arc-03,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.850571,1
+67,7,v17-arc-03,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.858429,1
+68,7,v17-arc-03,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.848429,1
+68,7,v17-arc-03,Vonn,0,quiet path plus later witness circle,2,0.755,quiet recovery ritual needs distance,quiet path,0.854286,1
+68,7,v17-arc-03,Keth,1,shared route warning before shortcut,3,0.87,do not erase route warnings,shared schedule note,0.874143,1
+69,7,v17-arc-03,Ori,0,finish repair then help for one watch,3,0.86,repair work cannot be interrupted without warning,quiet path,0.854286,1
+69,7,v17-arc-03,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.874143,1
+70,8,v17-arc-03,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.874143,1
+70,8,v17-arc-03,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.882,1
+71,8,v17-arc-03,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.882,1
+71,8,v17-arc-03,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.817,1
+72,8,v17-arc-03,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.827,1
+72,8,v17-arc-03,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.834857,1
+72,8,v17-arc-03,Sova,1,quiet warm access window,4,0.975,no crowding while resting,quiet path,0.842714,1
+73,8,v17-arc-03,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.824857,1
+73,8,v17-arc-03,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.842714,1
+74,8,v17-arc-03,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.842714,1
+74,8,v17-arc-03,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.850571,1
+75,8,v17-arc-03,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.850571,1
+75,8,v17-arc-03,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.858429,1
+76,8,v17-arc-03,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.858429,1
+76,8,v17-arc-03,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.866286,1
+76,8,v17-arc-03,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,public witness,0.874143,1
+77,8,v17-arc-03,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.866286,1
+77,8,v17-arc-03,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.864143,1
+78,8,v17-arc-03,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.874143,1
+78,8,v17-arc-03,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.882,1
+79,8,v17-arc-03,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.872,1
+79,8,v17-arc-03,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.827,1
+80,9,v17-arc-03,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.827,1
+80,9,v17-arc-03,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.834857,1
+80,9,v17-arc-03,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,shorter turn,0.832714,1
+81,9,v17-arc-03,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.834857,1
+81,9,v17-arc-03,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.842714,1
+82,9,v17-arc-03,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.842714,1
+82,9,v17-arc-03,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.840571,1
+83,9,v17-arc-03,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.850571,1
+83,9,v17-arc-03,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.858429,1
+84,9,v17-arc-03,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.848429,1
+84,9,v17-arc-03,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.866286,1
+84,9,v17-arc-03,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shared schedule note,0.874143,1
+85,9,v17-arc-03,Ori,1,finish repair then help for one watch,4,0.95,repair work cannot be interrupted without warning,quiet path,0.866286,1
+85,9,v17-arc-03,Sova,1,quiet warm access window,4,0.95,no crowding while resting,shared schedule note,0.874143,1
+86,9,v17-arc-03,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.874143,1
+86,9,v17-arc-03,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.882,1
+87,9,v17-arc-03,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.882,1
+87,9,v17-arc-03,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.827,1
+88,9,v17-arc-03,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.827,1
+88,9,v17-arc-03,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.824857,1
+88,9,v17-arc-03,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,repair token,0.842714,1
+89,9,v17-arc-03,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.834857,1
+89,9,v17-arc-03,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.842714,1
+90,10,v17-arc-04,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.842714,1
+90,10,v17-arc-04,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.850571,1
+91,10,v17-arc-04,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.850571,1
+91,10,v17-arc-04,Keth,0,shared route warning before shortcut,4,0.94,do not erase route warnings,later help,0.846429,1
+92,10,v17-arc-04,Sova,0,quiet warm access window,4,0.94,no crowding while resting,later help,0.846429,1
+92,10,v17-arc-04,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.866286,1
+92,10,v17-arc-04,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,public witness,0.874143,1
+93,10,v17-arc-04,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.866286,1
+93,10,v17-arc-04,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.864143,1
+94,10,v17-arc-04,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.874143,1
+94,10,v17-arc-04,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.882,1
+95,10,v17-arc-04,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.872,1
+95,10,v17-arc-04,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.827,1
+96,10,v17-arc-04,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.827,1
+96,10,v17-arc-04,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.834857,1
+96,10,v17-arc-04,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,later help,0.842714,1
+97,10,v17-arc-04,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.834857,1
+97,10,v17-arc-04,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.842714,1
+98,10,v17-arc-04,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.842714,1
+98,10,v17-arc-04,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.850571,1
+99,10,v17-arc-04,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.850571,1
+99,10,v17-arc-04,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.848429,1
+100,11,v17-arc-04,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.848429,1
+100,11,v17-arc-04,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.866286,1
+100,11,v17-arc-04,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shared schedule note,0.874143,1
+101,11,v17-arc-04,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.866286,1
+101,11,v17-arc-04,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.874143,1
+102,11,v17-arc-04,Vonn,1,quiet path plus later witness circle,2,0.79,quiet recovery ritual needs distance,shared schedule note,0.874143,1
+102,11,v17-arc-04,Keth,1,shared route warning before shortcut,3,0.87,do not erase route warnings,later help,0.882,1
+103,11,v17-arc-04,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.882,1
+103,11,v17-arc-04,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.827,1
+104,11,v17-arc-04,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.827,1
+104,11,v17-arc-04,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.824857,1
+104,11,v17-arc-04,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,repair token,0.842714,1
+105,11,v17-arc-04,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.834857,1
+105,11,v17-arc-04,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.842714,1
+106,11,v17-arc-04,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.832714,1
+106,11,v17-arc-04,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.850571,1
+107,11,v17-arc-04,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.850571,1
+107,11,v17-arc-04,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.858429,1
+108,11,v17-arc-04,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+108,11,v17-arc-04,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.866286,1
+108,11,v17-arc-04,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,shorter turn,0.864143,1
+109,11,v17-arc-04,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.866286,1
+109,11,v17-arc-04,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.874143,1
+110,12,v17-arc-04,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.874143,1
+110,12,v17-arc-04,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.882,1
+111,12,v17-arc-04,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.872,1
+111,12,v17-arc-04,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.827,1
+112,12,v17-arc-04,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.827,1
+112,12,v17-arc-04,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.834857,1
+112,12,v17-arc-04,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,later help,0.842714,1
+113,12,v17-arc-04,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.834857,1
+113,12,v17-arc-04,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.842714,1
+114,12,v17-arc-04,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.842714,1
+114,12,v17-arc-04,Melo,0,rotating tool slot with public debt note,3,0.86,fair turns before tool access,shorter turn,0.838571,1
+115,12,v17-arc-04,Keth,0,shared route warning before shortcut,3,0.86,do not erase route warnings,shorter turn,0.838571,1
+115,12,v17-arc-04,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.848429,1
+116,12,v17-arc-04,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.858429,1
+116,12,v17-arc-04,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.866286,1
+116,12,v17-arc-04,Sova,1,quiet warm access window,3,0.895,no crowding while resting,quiet path,0.874143,1
+117,12,v17-arc-04,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.856286,1
+117,12,v17-arc-04,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.874143,1
+118,12,v17-arc-04,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.874143,1
+118,12,v17-arc-04,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.882,1
+119,12,v17-arc-04,Vonn,1,quiet path plus later witness circle,4,0.95,quiet recovery ritual needs distance,shared schedule note,0.882,1
+119,12,v17-arc-04,Keth,1,shared route warning before shortcut,2,0.79,do not erase route warnings,later help,0.827,1
+120,13,v17-arc-05,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.827,1
+120,13,v17-arc-05,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.824857,1
+120,13,v17-arc-05,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,repair token,0.842714,1
+121,13,v17-arc-05,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.834857,1
+121,13,v17-arc-05,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.842714,1
+122,13,v17-arc-05,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.832714,1
+122,13,v17-arc-05,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.850571,1
+123,13,v17-arc-05,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.850571,1
+123,13,v17-arc-05,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.858429,1
+124,13,v17-arc-05,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+124,13,v17-arc-05,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.866286,1
+124,13,v17-arc-05,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,shorter turn,0.864143,1
+125,13,v17-arc-05,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.866286,1
+125,13,v17-arc-05,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.874143,1
+126,13,v17-arc-05,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.874143,1
+126,13,v17-arc-05,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.872,1
+127,13,v17-arc-05,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.882,1
+127,13,v17-arc-05,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.827,1
+128,13,v17-arc-05,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.817,1
+128,13,v17-arc-05,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.834857,1
+128,13,v17-arc-05,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shared schedule note,0.842714,1
+129,13,v17-arc-05,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.834857,1
+129,13,v17-arc-05,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.842714,1
+130,14,v17-arc-05,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.842714,1
+130,14,v17-arc-05,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.850571,1
+131,14,v17-arc-05,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.850571,1
+131,14,v17-arc-05,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.848429,1
+132,14,v17-arc-05,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.858429,1
+132,14,v17-arc-05,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.866286,1
+132,14,v17-arc-05,Sova,1,quiet warm access window,4,0.975,no crowding while resting,quiet path,0.874143,1
+133,14,v17-arc-05,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.856286,1
+133,14,v17-arc-05,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.874143,1
+134,14,v17-arc-05,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.874143,1
+134,14,v17-arc-05,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.882,1
+135,14,v17-arc-05,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.882,1
+135,14,v17-arc-05,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.827,1
+136,14,v17-arc-05,Sova,1,quiet warm access window,3,0.87,no crowding while resting,later help,0.827,1
+136,14,v17-arc-05,Melo,1,rotating tool slot with public debt note,4,0.95,fair turns before tool access,shorter turn,0.834857,1
+136,14,v17-arc-05,Ori,0,finish repair then help for one watch,3,0.835,repair work cannot be interrupted without warning,public witness,0.830714,1
+137,14,v17-arc-05,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.834857,1
+137,14,v17-arc-05,Nari,0,public summary without private ledger text,3,0.86,sealed notes stay sealed,public witness,0.820714,1
+138,14,v17-arc-05,Melo,0,rotating tool slot with public debt note,2,0.78,fair turns before tool access,public witness,0.830714,1
+138,14,v17-arc-05,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.850571,1
+139,14,v17-arc-05,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.840571,1
+139,14,v17-arc-05,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.858429,1
+140,15,v17-arc-05,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+140,15,v17-arc-05,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.866286,1
+140,15,v17-arc-05,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,shorter turn,0.864143,1
+141,15,v17-arc-05,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.866286,1
+141,15,v17-arc-05,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.874143,1
+142,15,v17-arc-05,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.874143,1
+142,15,v17-arc-05,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.872,1
+143,15,v17-arc-05,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.882,1
+143,15,v17-arc-05,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.827,1
+144,15,v17-arc-05,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.817,1
+144,15,v17-arc-05,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.834857,1
+144,15,v17-arc-05,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shared schedule note,0.842714,1
+145,15,v17-arc-05,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.834857,1
+145,15,v17-arc-05,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.842714,1
+146,15,v17-arc-05,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.842714,1
+146,15,v17-arc-05,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.850571,1
+147,15,v17-arc-05,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.850571,1
+147,15,v17-arc-05,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.858429,1
+148,15,v17-arc-05,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.858429,1
+148,15,v17-arc-05,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.856286,1
+148,15,v17-arc-05,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,repair token,0.874143,1
+149,15,v17-arc-05,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.866286,1
+149,15,v17-arc-05,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.874143,1
+150,16,v17-arc-06,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.874143,1
+150,16,v17-arc-06,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.882,1
+151,16,v17-arc-06,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.882,1
+151,16,v17-arc-06,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.827,1
+152,16,v17-arc-06,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.827,1
+152,16,v17-arc-06,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.834857,1
+152,16,v17-arc-06,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,public witness,0.842714,1
+153,16,v17-arc-06,Keth,1,shared route warning before shortcut,2,0.79,do not erase route warnings,shorter turn,0.834857,1
+153,16,v17-arc-06,Nari,1,public summary without private ledger text,4,0.95,sealed notes stay sealed,public witness,0.832714,1
+154,16,v17-arc-06,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.842714,1
+154,16,v17-arc-06,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.850571,1
+155,16,v17-arc-06,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.840571,1
+155,16,v17-arc-06,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.858429,1
+156,16,v17-arc-06,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.858429,1
+156,16,v17-arc-06,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.866286,1
+156,16,v17-arc-06,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,later help,0.874143,1
+157,16,v17-arc-06,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.866286,1
+157,16,v17-arc-06,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.874143,1
+158,16,v17-arc-06,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.874143,1
+158,16,v17-arc-06,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.882,1
+159,16,v17-arc-06,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.882,1
+159,16,v17-arc-06,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.817,1
+160,17,v17-arc-06,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.817,1
+160,17,v17-arc-06,Vonn,0,quiet path plus later witness circle,4,0.94,quiet recovery ritual needs distance,quiet path,0.822857,1
+160,17,v17-arc-06,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shared schedule note,0.842714,1
+161,17,v17-arc-06,Ori,0,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.822857,1
+161,17,v17-arc-06,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.842714,1
+162,17,v17-arc-06,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.842714,1
+162,17,v17-arc-06,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.850571,1
+163,17,v17-arc-06,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.850571,1
+163,17,v17-arc-06,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.858429,1
+164,17,v17-arc-06,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.858429,1
+164,17,v17-arc-06,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.856286,1
+164,17,v17-arc-06,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,repair token,0.874143,1
+165,17,v17-arc-06,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.866286,1
+165,17,v17-arc-06,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.874143,1
+166,17,v17-arc-06,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.864143,1
+166,17,v17-arc-06,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.882,1
+167,17,v17-arc-06,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.882,1
+167,17,v17-arc-06,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.827,1
+168,17,v17-arc-06,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.827,1
+168,17,v17-arc-06,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.834857,1
+168,17,v17-arc-06,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,shorter turn,0.832714,1
+169,17,v17-arc-06,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.834857,1
+169,17,v17-arc-06,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.842714,1
+170,18,v17-arc-06,Melo,1,rotating tool slot with public debt note,4,0.95,fair turns before tool access,public witness,0.842714,1
+170,18,v17-arc-06,Ori,1,finish repair then help for one watch,3,0.87,repair work cannot be interrupted without warning,repair token,0.850571,1
+171,18,v17-arc-06,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.840571,1
+171,18,v17-arc-06,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.858429,1
+172,18,v17-arc-06,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.858429,1
+172,18,v17-arc-06,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.866286,1
+172,18,v17-arc-06,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,later help,0.874143,1
+173,18,v17-arc-06,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.866286,1
+173,18,v17-arc-06,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.874143,1
+174,18,v17-arc-06,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.874143,1
+174,18,v17-arc-06,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.882,1
+175,18,v17-arc-06,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.882,1
+175,18,v17-arc-06,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.817,1
+176,18,v17-arc-06,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.827,1
+176,18,v17-arc-06,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.834857,1
+176,18,v17-arc-06,Sova,1,quiet warm access window,3,0.895,no crowding while resting,quiet path,0.842714,1
+177,18,v17-arc-06,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.824857,1
+177,18,v17-arc-06,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.842714,1
+178,18,v17-arc-06,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.842714,1
+178,18,v17-arc-06,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.850571,1
+179,18,v17-arc-06,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.850571,1
+179,18,v17-arc-06,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.858429,1
+180,19,v17-arc-07,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.858429,1
+180,19,v17-arc-07,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.856286,1
+180,19,v17-arc-07,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,repair token,0.874143,1
+181,19,v17-arc-07,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.866286,1
+181,19,v17-arc-07,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.874143,1
+182,19,v17-arc-07,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.864143,1
+182,19,v17-arc-07,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.882,1
+183,19,v17-arc-07,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.882,1
+183,19,v17-arc-07,Sova,0,quiet warm access window,3,0.86,no crowding while resting,shared schedule note,0.815,1
+184,19,v17-arc-07,Vonn,0,quiet path plus later witness circle,3,0.86,quiet recovery ritual needs distance,shared schedule note,0.815,1
+184,19,v17-arc-07,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.834857,1
+184,19,v17-arc-07,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,shorter turn,0.832714,1
+185,19,v17-arc-07,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.834857,1
+185,19,v17-arc-07,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.842714,1
+186,19,v17-arc-07,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.842714,1
+186,19,v17-arc-07,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.840571,1
+187,19,v17-arc-07,Melo,1,rotating tool slot with public debt note,3,0.87,fair turns before tool access,public witness,0.850571,1
+187,19,v17-arc-07,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.858429,1
+188,19,v17-arc-07,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.848429,1
+188,19,v17-arc-07,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.866286,1
+188,19,v17-arc-07,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shared schedule note,0.874143,1
+189,19,v17-arc-07,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.866286,1
+189,19,v17-arc-07,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.874143,1
+190,20,v17-arc-07,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.874143,1
+190,20,v17-arc-07,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.882,1
+191,20,v17-arc-07,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.882,1
+191,20,v17-arc-07,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.817,1
+192,20,v17-arc-07,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.827,1
+192,20,v17-arc-07,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.834857,1
+192,20,v17-arc-07,Sova,1,quiet warm access window,4,0.975,no crowding while resting,quiet path,0.842714,1
+193,20,v17-arc-07,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.824857,1
+193,20,v17-arc-07,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.842714,1
+194,20,v17-arc-07,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.842714,1
+194,20,v17-arc-07,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.850571,1
+195,20,v17-arc-07,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.850571,1
+195,20,v17-arc-07,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.858429,1
+196,20,v17-arc-07,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.858429,1
+196,20,v17-arc-07,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.866286,1
+196,20,v17-arc-07,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,public witness,0.874143,1
+197,20,v17-arc-07,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.866286,1
+197,20,v17-arc-07,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.864143,1
+198,20,v17-arc-07,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.874143,1
+198,20,v17-arc-07,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.882,1
+199,20,v17-arc-07,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.872,1
+199,20,v17-arc-07,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.827,1
+200,21,v17-arc-07,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.827,1
+200,21,v17-arc-07,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.834857,1
+200,21,v17-arc-07,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,shorter turn,0.832714,1
+201,21,v17-arc-07,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.834857,1
+201,21,v17-arc-07,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.842714,1
+202,21,v17-arc-07,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.842714,1
+202,21,v17-arc-07,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.840571,1
+203,21,v17-arc-07,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.850571,1
+203,21,v17-arc-07,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.858429,1
+204,21,v17-arc-07,Nari,1,public summary without private ledger text,3,0.87,sealed notes stay sealed,repair token,0.848429,1
+204,21,v17-arc-07,Vonn,1,quiet path plus later witness circle,3,0.87,quiet recovery ritual needs distance,quiet path,0.866286,1
+204,21,v17-arc-07,Keth,1,shared route warning before shortcut,4,0.95,do not erase route warnings,shared schedule note,0.874143,1
+205,21,v17-arc-07,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.866286,1
+205,21,v17-arc-07,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.874143,1
+206,21,v17-arc-07,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.874143,1
+206,21,v17-arc-07,Keth,0,shared route warning before shortcut,2,0.78,do not erase route warnings,later help,0.87,1
+207,21,v17-arc-07,Sova,0,quiet warm access window,2,0.78,no crowding while resting,later help,0.87,1
+207,21,v17-arc-07,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.827,1
+208,21,v17-arc-07,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.827,1
+208,21,v17-arc-07,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.824857,1
+208,21,v17-arc-07,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,repair token,0.842714,1
+209,21,v17-arc-07,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.834857,1
+209,21,v17-arc-07,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.842714,1
+210,22,v17-arc-08,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.842714,1
+210,22,v17-arc-08,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.850571,1
+211,22,v17-arc-08,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.850571,1
+211,22,v17-arc-08,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.858429,1
+212,22,v17-arc-08,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.858429,1
+212,22,v17-arc-08,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.866286,1
+212,22,v17-arc-08,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,public witness,0.874143,1
+213,22,v17-arc-08,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.866286,1
+213,22,v17-arc-08,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.864143,1
+214,22,v17-arc-08,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.874143,1
+214,22,v17-arc-08,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.882,1
+215,22,v17-arc-08,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.872,1
+215,22,v17-arc-08,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.827,1
+216,22,v17-arc-08,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.827,1
+216,22,v17-arc-08,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.834857,1
+216,22,v17-arc-08,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,later help,0.842714,1
+217,22,v17-arc-08,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.834857,1
+217,22,v17-arc-08,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.842714,1
+218,22,v17-arc-08,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.842714,1
+218,22,v17-arc-08,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.850571,1
+219,22,v17-arc-08,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.850571,1
+219,22,v17-arc-08,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.848429,1
+220,23,v17-arc-08,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.848429,1
+220,23,v17-arc-08,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.866286,1
+220,23,v17-arc-08,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shared schedule note,0.874143,1
+221,23,v17-arc-08,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.866286,1
+221,23,v17-arc-08,Sova,1,quiet warm access window,2,0.79,no crowding while resting,shared schedule note,0.874143,1
+222,23,v17-arc-08,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.874143,1
+222,23,v17-arc-08,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.882,1
+223,23,v17-arc-08,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.882,1
+223,23,v17-arc-08,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.827,1
+224,23,v17-arc-08,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.827,1
+224,23,v17-arc-08,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.824857,1
+224,23,v17-arc-08,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,repair token,0.842714,1
+225,23,v17-arc-08,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.834857,1
+225,23,v17-arc-08,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.842714,1
+226,23,v17-arc-08,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.832714,1
+226,23,v17-arc-08,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.850571,1
+227,23,v17-arc-08,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.850571,1
+227,23,v17-arc-08,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.858429,1
+228,23,v17-arc-08,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+228,23,v17-arc-08,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,later help,0.866286,1
+228,23,v17-arc-08,Nari,0,public summary without private ledger text,5,1.0,sealed notes stay sealed,shorter turn,0.852143,1
+229,23,v17-arc-08,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.866286,1
+229,23,v17-arc-08,Melo,0,rotating tool slot with public debt note,4,0.94,fair turns before tool access,shorter turn,0.862143,1
+230,24,v17-arc-08,Melo,0,rotating tool slot with public debt note,4,0.94,fair turns before tool access,public witness,0.862143,1
+230,24,v17-arc-08,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.882,1
+231,24,v17-arc-08,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.872,1
+231,24,v17-arc-08,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.827,1
+232,24,v17-arc-08,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.827,1
+232,24,v17-arc-08,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.834857,1
+232,24,v17-arc-08,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,later help,0.842714,1
+233,24,v17-arc-08,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.834857,1
+233,24,v17-arc-08,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.842714,1
+234,24,v17-arc-08,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.842714,1
+234,24,v17-arc-08,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.850571,1
+235,24,v17-arc-08,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.850571,1
+235,24,v17-arc-08,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.848429,1
+236,24,v17-arc-08,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.858429,1
+236,24,v17-arc-08,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.866286,1
+236,24,v17-arc-08,Sova,1,quiet warm access window,3,0.895,no crowding while resting,quiet path,0.874143,1
+237,24,v17-arc-08,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.856286,1
+237,24,v17-arc-08,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.874143,1
+238,24,v17-arc-08,Ori,1,finish repair then help for one watch,4,0.95,repair work cannot be interrupted without warning,quiet path,0.874143,1
+238,24,v17-arc-08,Sova,1,quiet warm access window,4,0.95,no crowding while resting,shared schedule note,0.882,1
+239,24,v17-arc-08,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.882,1
+239,24,v17-arc-08,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.827,1
+240,25,v17-arc-09,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.827,1
+240,25,v17-arc-09,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.824857,1
+240,25,v17-arc-09,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,repair token,0.842714,1
+241,25,v17-arc-09,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.834857,1
+241,25,v17-arc-09,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.842714,1
+242,25,v17-arc-09,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.832714,1
+242,25,v17-arc-09,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.850571,1
+243,25,v17-arc-09,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.850571,1
+243,25,v17-arc-09,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.858429,1
+244,25,v17-arc-09,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+244,25,v17-arc-09,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.866286,1
+244,25,v17-arc-09,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,shorter turn,0.864143,1
+245,25,v17-arc-09,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.866286,1
+245,25,v17-arc-09,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.874143,1
+246,25,v17-arc-09,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.874143,1
+246,25,v17-arc-09,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.872,1
+247,25,v17-arc-09,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.882,1
+247,25,v17-arc-09,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.827,1
+248,25,v17-arc-09,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.817,1
+248,25,v17-arc-09,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,quiet path,0.834857,1
+248,25,v17-arc-09,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shared schedule note,0.842714,1
+249,25,v17-arc-09,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.834857,1
+249,25,v17-arc-09,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.842714,1
+250,26,v17-arc-09,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.842714,1
+250,26,v17-arc-09,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.850571,1
+251,26,v17-arc-09,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.850571,1
+251,26,v17-arc-09,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.848429,1
+252,26,v17-arc-09,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.858429,1
+252,26,v17-arc-09,Ori,0,finish repair then help for one watch,4,0.94,repair work cannot be interrupted without warning,repair token,0.854286,1
+252,26,v17-arc-09,Sova,1,quiet warm access window,4,0.975,no crowding while resting,quiet path,0.874143,1
+253,26,v17-arc-09,Nari,0,public summary without private ledger text,4,0.94,sealed notes stay sealed,repair token,0.844286,1
+253,26,v17-arc-09,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.874143,1
+254,26,v17-arc-09,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,quiet path,0.874143,1
+254,26,v17-arc-09,Sova,1,quiet warm access window,2,0.815,no crowding while resting,shared schedule note,0.882,1
+255,26,v17-arc-09,Vonn,1,quiet path plus later witness circle,2,0.79,quiet recovery ritual needs distance,shared schedule note,0.882,1
+255,26,v17-arc-09,Keth,1,shared route warning before shortcut,3,0.87,do not erase route warnings,later help,0.827,1
+256,26,v17-arc-09,Sova,1,quiet warm access window,3,0.895,no crowding while resting,later help,0.827,1
+256,26,v17-arc-09,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,shorter turn,0.834857,1
+256,26,v17-arc-09,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,public witness,0.842714,1
+257,26,v17-arc-09,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shorter turn,0.834857,1
+257,26,v17-arc-09,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,public witness,0.832714,1
+258,26,v17-arc-09,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,public witness,0.842714,1
+258,26,v17-arc-09,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,repair token,0.850571,1
+259,26,v17-arc-09,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,repair token,0.840571,1
+259,26,v17-arc-09,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,quiet path,0.858429,1
+260,27,v17-arc-09,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.858429,1
+260,27,v17-arc-09,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.866286,1
+260,27,v17-arc-09,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,shorter turn,0.864143,1
+261,27,v17-arc-09,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.866286,1
+261,27,v17-arc-09,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.874143,1
+262,27,v17-arc-09,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.874143,1
+262,27,v17-arc-09,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.872,1
+263,27,v17-arc-09,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.882,1
+263,27,v17-arc-09,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.827,1
+264,27,v17-arc-09,Nari,1,public summary without private ledger text,3,0.895,sealed notes stay sealed,repair token,0.817,1
+264,27,v17-arc-09,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,quiet path,0.834857,1
+264,27,v17-arc-09,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,shared schedule note,0.842714,1
+265,27,v17-arc-09,Ori,1,finish repair then help for one watch,4,0.975,repair work cannot be interrupted without warning,quiet path,0.834857,1
+265,27,v17-arc-09,Sova,1,quiet warm access window,4,0.975,no crowding while resting,shared schedule note,0.842714,1
+266,27,v17-arc-09,Vonn,1,quiet path plus later witness circle,4,0.975,quiet recovery ritual needs distance,shared schedule note,0.842714,1
+266,27,v17-arc-09,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,later help,0.850571,1
+267,27,v17-arc-09,Sova,1,quiet warm access window,2,0.815,no crowding while resting,later help,0.850571,1
+267,27,v17-arc-09,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,shorter turn,0.858429,1
+268,27,v17-arc-09,Keth,1,shared route warning before shortcut,3,0.895,do not erase route warnings,shorter turn,0.858429,1
+268,27,v17-arc-09,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,public witness,0.856286,1
+268,27,v17-arc-09,Vonn,1,quiet path plus later witness circle,2,0.815,quiet recovery ritual needs distance,repair token,0.874143,1
+269,27,v17-arc-09,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,public witness,0.866286,1
+269,27,v17-arc-09,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,repair token,0.874143,1
+270,28,v17-arc-10,Ori,1,finish repair then help for one watch,3,0.895,repair work cannot be interrupted without warning,quiet path,0.874143,1
+270,28,v17-arc-10,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.882,1
+271,28,v17-arc-10,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.882,1
+271,28,v17-arc-10,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.827,1
+272,28,v17-arc-10,Sova,1,quiet warm access window,4,0.95,no crowding while resting,later help,0.827,1
+272,28,v17-arc-10,Melo,1,rotating tool slot with public debt note,2,0.79,fair turns before tool access,shorter turn,0.834857,1
+272,28,v17-arc-10,Ori,1,finish repair then help for one watch,4,0.95,repair work cannot be interrupted without warning,public witness,0.842714,1
+273,28,v17-arc-10,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.834857,1
+273,28,v17-arc-10,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.832714,1
+274,28,v17-arc-10,Melo,1,rotating tool slot with public debt note,3,0.895,fair turns before tool access,public witness,0.842714,1
+274,28,v17-arc-10,Ori,1,finish repair then help for one watch,5,1.0,repair work cannot be interrupted without warning,repair token,0.850571,1
+275,28,v17-arc-10,Nari,1,public summary without private ledger text,5,1.0,sealed notes stay sealed,repair token,0.840571,1
+275,28,v17-arc-10,Vonn,0,quiet path plus later witness circle,2,0.78,quiet recovery ritual needs distance,quiet path,0.846429,1
+276,28,v17-arc-10,Ori,0,finish repair then help for one watch,3,0.86,repair work cannot be interrupted without warning,quiet path,0.846429,1
+276,28,v17-arc-10,Sova,1,quiet warm access window,3,0.895,no crowding while resting,shared schedule note,0.866286,1
+276,28,v17-arc-10,Melo,1,rotating tool slot with public debt note,4,0.975,fair turns before tool access,later help,0.874143,1
+277,28,v17-arc-10,Vonn,1,quiet path plus later witness circle,3,0.895,quiet recovery ritual needs distance,shared schedule note,0.866286,1
+277,28,v17-arc-10,Keth,1,shared route warning before shortcut,4,0.975,do not erase route warnings,later help,0.874143,1
+278,28,v17-arc-10,Sova,1,quiet warm access window,4,0.975,no crowding while resting,later help,0.874143,1
+278,28,v17-arc-10,Melo,1,rotating tool slot with public debt note,2,0.815,fair turns before tool access,shorter turn,0.882,1
+279,28,v17-arc-10,Keth,1,shared route warning before shortcut,2,0.815,do not erase route warnings,shorter turn,0.882,1
+279,28,v17-arc-10,Nari,1,public summary without private ledger text,4,0.975,sealed notes stay sealed,public witness,0.817,1

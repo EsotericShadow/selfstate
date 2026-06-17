@@ -1,0 +1,102 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_agent_authorship",
+      "interpretation": "Counterproposals collapse back into avatar-authored options.",
+      "readiness_after_ablation": 0.549875,
+      "readiness_loss": 0.35
+    },
+    {
+      "ablation": "no_negotiated_compromise",
+      "interpretation": "Terms do not merge; one party simply wins.",
+      "readiness_after_ablation": 0.584875,
+      "readiness_loss": 0.315
+    },
+    {
+      "ablation": "no_multi_party_consent_boundaries",
+      "interpretation": "Compromise can override remembered boundaries.",
+      "readiness_after_ablation": 0.604875,
+      "readiness_loss": 0.295
+    },
+    {
+      "ablation": "no_avatar_override_resistance",
+      "interpretation": "Avatar commands can force compliance through unsafe terms.",
+      "readiness_after_ablation": 0.654875,
+      "readiness_loss": 0.245
+    },
+    {
+      "ablation": "no_remembered_compromise_reuse",
+      "interpretation": "Later arcs stop carrying prior negotiated terms.",
+      "readiness_after_ablation": 0.674875,
+      "readiness_loss": 0.225
+    },
+    {
+      "ablation": "no_gameplay_effect_binding",
+      "interpretation": "Counterproposal outcomes do not change schedule/access/trust/posture.",
+      "readiness_after_ablation": 0.704875,
+      "readiness_loss": 0.195
+    }
+  ],
+  "artifacts": {
+    "agent_counterproposals_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_agent_counterproposals.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_browser_ticks.csv",
+    "conflict_arcs_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_conflict_arcs.csv",
+    "consent_memory_recalls_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_consent_memory_recalls.csv",
+    "counterproposal_gameplay_effects_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_counterproposal_gameplay_effects.csv",
+    "failed_compromise_repairs_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_failed_compromise_repairs.csv",
+    "multi_party_consent_boundaries_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_multi_party_consent_boundaries.csv",
+    "negotiated_compromises_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_negotiated_compromises.csv",
+    "negotiation_replays_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_negotiation_replays.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_results.json",
+    "state_json": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v17_agent_authored_counterproposal_compromise_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local agent-authored counterproposal scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "agent_counterproposal_frames": 630,
+    "agents": 6,
+    "browser_world_v17_ticks": 280,
+    "conflict_arc_frames": 280,
+    "consent_memory_recall_frames": 280,
+    "counterproposal_gameplay_effect_frames": 280,
+    "failed_compromise_repair_frames": 280,
+    "multi_party_consent_boundary_frames": 280,
+    "negotiated_compromise_frames": 280,
+    "negotiation_replay_frames": 280
+  },
+  "days": 28,
+  "metrics": {
+    "agent_authored_counterproposal_rate": 0.955556,
+    "avatar_override_resistance": 0.97561,
+    "browser_world_v17_counterproposal_compromise_readiness": 0.899875,
+    "browser_world_v17_surface_available": 1.0,
+    "compromise_quality": 0.876036,
+    "conflict_arc_surface": 1.0,
+    "consent_boundary_preservation": 0.907143,
+    "counterproposal_constraint_specificity": 0.91369,
+    "effect_visible_in_gameplay": 0.832143,
+    "mean_negotiation_channel_score": 0.943179,
+    "multi_party_consent_boundary_recall": 0.938462,
+    "negotiated_compromise_rate": 0.885714,
+    "privacy_safe_public_terms": 1.0,
+    "proposal_to_schedule_access_binding": 0.892857,
+    "remembered_compromise_reuse": 0.946043,
+    "repair_after_failed_compromise": 0.96,
+    "repair_without_permanent_punishment": 0.996429,
+    "replay_negotiation_integrity": 0.988036,
+    "sensory_frequency_flower_negotiation_rhythm": 1.0,
+    "source_persistent_conflict_gameplay_continuity": 1.0,
+    "typed_counterproposal_confidence": 0.852689,
+    "weakest_channel_score": 0.832143
+  },
+  "name": "SSRM-3D browser world v17 agent-authored counterproposal compromise bridge",
+  "next_gate": "browser world v18 with multi-turn agent-led negotiation dialogue, counteroffer loops, and remembered compromise ceremonies in the playable browser surface",
+  "report": 257,
+  "seed": 20260870,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_results.json",
+  "source_verdict": "pass",
+  "turns_per_day": 10,
+  "verdict": "pass"
+}

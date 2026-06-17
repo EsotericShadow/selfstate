@@ -1,0 +1,281 @@
+tick,day,arc_id,failing_party,failure_kind,repair_offer,failure_detected,repair_path_available,repair_accepted,residue_preserved,no_permanent_punishment
+0,1,v17-arc-01,Nari,overlap returns,write public reason,1,0,0,0.41,0
+1,1,v17-arc-01,Ori,avatar asks override,return object,0,0,0,0.18,1
+2,1,v17-arc-01,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+3,1,v17-arc-01,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+4,1,v17-arc-01,Keth,missed term,offer apology and space,0,0,0,0.18,1
+5,1,v17-arc-01,Melo,overlap returns,restore turn,0,0,0,0.23,1
+6,1,v17-arc-01,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+7,1,v17-arc-01,Ori,object moved early,return object,0,0,0,0.18,1
+8,1,v17-arc-01,Vonn,dissent not answered,give quiet interval,0,0,0,0.18,1
+9,1,v17-arc-01,Sova,missed term,schedule witness,0,0,0,0.18,1
+10,2,v17-arc-01,Melo,avatar asks override,restore turn,0,0,0,0.18,1
+11,2,v17-arc-01,Nari,object moved early,write public reason,0,0,0,0.18,1
+12,2,v17-arc-01,Ori,dissent not answered,return object,0,0,0,0.18,1
+13,2,v17-arc-01,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+14,2,v17-arc-01,Sova,overlap returns,schedule witness,1,1,1,0.25,1
+15,2,v17-arc-01,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+16,2,v17-arc-01,Melo,object moved early,restore turn,0,0,0,0.18,1
+17,2,v17-arc-01,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+18,2,v17-arc-01,Ori,missed term,return object,0,0,0,0.23,1
+19,2,v17-arc-01,Vonn,overlap returns,give quiet interval,1,1,1,0.3,1
+20,3,v17-arc-01,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+21,3,v17-arc-01,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+22,3,v17-arc-01,Nari,missed term,write public reason,1,1,1,0.3,1
+23,3,v17-arc-01,Ori,overlap returns,return object,1,1,1,0.3,1
+24,3,v17-arc-01,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+25,3,v17-arc-01,Sova,object moved early,schedule witness,0,0,0,0.18,1
+26,3,v17-arc-01,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+27,3,v17-arc-01,Melo,missed term,restore turn,0,0,0,0.18,1
+28,3,v17-arc-01,Nari,overlap returns,write public reason,1,1,1,0.25,1
+29,3,v17-arc-01,Ori,avatar asks override,return object,0,0,0,0.18,1
+30,4,v17-arc-02,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+31,4,v17-arc-02,Keth,missed term,offer apology and space,0,0,0,0.23,1
+32,4,v17-arc-02,Melo,overlap returns,restore turn,0,0,0,0.18,1
+33,4,v17-arc-02,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+34,4,v17-arc-02,Ori,object moved early,return object,0,0,0,0.18,1
+35,4,v17-arc-02,Vonn,dissent not answered,give quiet interval,0,0,0,0.18,1
+36,4,v17-arc-02,Sova,missed term,schedule witness,0,0,0,0.18,1
+37,4,v17-arc-02,Keth,overlap returns,offer apology and space,0,0,0,0.18,1
+38,4,v17-arc-02,Melo,avatar asks override,restore turn,1,1,1,0.3,1
+39,4,v17-arc-02,Nari,object moved early,write public reason,0,0,0,0.18,1
+40,5,v17-arc-02,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+41,5,v17-arc-02,Sova,overlap returns,schedule witness,0,0,0,0.18,1
+42,5,v17-arc-02,Keth,avatar asks override,offer apology and space,1,1,1,0.25,1
+43,5,v17-arc-02,Melo,object moved early,restore turn,0,0,0,0.18,1
+44,5,v17-arc-02,Nari,dissent not answered,write public reason,0,0,0,0.23,1
+45,5,v17-arc-02,Ori,missed term,return object,1,1,1,0.3,1
+46,5,v17-arc-02,Vonn,overlap returns,give quiet interval,1,1,1,0.3,1
+47,5,v17-arc-02,Sova,avatar asks override,schedule witness,0,0,0,0.18,1
+48,5,v17-arc-02,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+49,5,v17-arc-02,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+50,6,v17-arc-02,Ori,overlap returns,return object,0,0,0,0.18,1
+51,6,v17-arc-02,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+52,6,v17-arc-02,Sova,object moved early,schedule witness,0,0,0,0.18,1
+53,6,v17-arc-02,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+54,6,v17-arc-02,Melo,missed term,restore turn,0,0,0,0.18,1
+55,6,v17-arc-02,Nari,overlap returns,write public reason,0,0,0,0.18,1
+56,6,v17-arc-02,Ori,avatar asks override,return object,1,1,1,0.25,1
+57,6,v17-arc-02,Vonn,object moved early,give quiet interval,1,1,1,0.3,1
+58,6,v17-arc-02,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+59,6,v17-arc-02,Keth,missed term,offer apology and space,0,0,0,0.18,1
+60,7,v17-arc-03,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+61,7,v17-arc-03,Ori,object moved early,return object,0,0,0,0.18,1
+62,7,v17-arc-03,Vonn,dissent not answered,give quiet interval,0,0,0,0.18,1
+63,7,v17-arc-03,Sova,missed term,schedule witness,0,0,0,0.18,1
+64,7,v17-arc-03,Keth,overlap returns,offer apology and space,0,0,0,0.18,1
+65,7,v17-arc-03,Melo,avatar asks override,restore turn,0,0,0,0.18,1
+66,7,v17-arc-03,Nari,object moved early,write public reason,0,0,0,0.18,1
+67,7,v17-arc-03,Ori,dissent not answered,return object,0,0,0,0.18,1
+68,7,v17-arc-03,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+69,7,v17-arc-03,Sova,overlap returns,schedule witness,1,1,1,0.3,1
+70,8,v17-arc-03,Melo,object moved early,restore turn,1,1,1,0.3,1
+71,8,v17-arc-03,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+72,8,v17-arc-03,Ori,missed term,return object,0,0,0,0.18,1
+73,8,v17-arc-03,Vonn,overlap returns,give quiet interval,0,0,0,0.18,1
+74,8,v17-arc-03,Sova,avatar asks override,schedule witness,0,0,0,0.18,1
+75,8,v17-arc-03,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+76,8,v17-arc-03,Melo,dissent not answered,restore turn,1,1,1,0.3,1
+77,8,v17-arc-03,Nari,missed term,write public reason,0,0,0,0.18,1
+78,8,v17-arc-03,Ori,overlap returns,return object,0,0,0,0.18,1
+79,8,v17-arc-03,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+80,9,v17-arc-03,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+81,9,v17-arc-03,Melo,missed term,restore turn,0,0,0,0.18,1
+82,9,v17-arc-03,Nari,overlap returns,write public reason,0,0,0,0.18,1
+83,9,v17-arc-03,Ori,avatar asks override,return object,0,0,0,0.23,1
+84,9,v17-arc-03,Vonn,object moved early,give quiet interval,1,1,1,0.25,1
+85,9,v17-arc-03,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+86,9,v17-arc-03,Keth,missed term,offer apology and space,0,0,0,0.18,1
+87,9,v17-arc-03,Melo,overlap returns,restore turn,0,0,0,0.18,1
+88,9,v17-arc-03,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+89,9,v17-arc-03,Ori,object moved early,return object,0,0,0,0.18,1
+90,10,v17-arc-04,Sova,missed term,schedule witness,0,0,0,0.18,1
+91,10,v17-arc-04,Keth,overlap returns,offer apology and space,1,1,0,0.41,1
+92,10,v17-arc-04,Melo,avatar asks override,restore turn,0,0,0,0.18,1
+93,10,v17-arc-04,Nari,object moved early,write public reason,0,0,0,0.18,1
+94,10,v17-arc-04,Ori,dissent not answered,return object,0,0,0,0.18,1
+95,10,v17-arc-04,Vonn,missed term,give quiet interval,1,1,1,0.3,1
+96,10,v17-arc-04,Sova,overlap returns,schedule witness,0,0,0,0.23,1
+97,10,v17-arc-04,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+98,10,v17-arc-04,Melo,object moved early,restore turn,1,1,1,0.25,1
+99,10,v17-arc-04,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+100,11,v17-arc-04,Vonn,overlap returns,give quiet interval,0,0,0,0.18,1
+101,11,v17-arc-04,Sova,avatar asks override,schedule witness,0,0,0,0.18,1
+102,11,v17-arc-04,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+103,11,v17-arc-04,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+104,11,v17-arc-04,Nari,missed term,write public reason,0,0,0,0.18,1
+105,11,v17-arc-04,Ori,overlap returns,return object,0,0,0,0.18,1
+106,11,v17-arc-04,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+107,11,v17-arc-04,Sova,object moved early,schedule witness,0,0,0,0.18,1
+108,11,v17-arc-04,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+109,11,v17-arc-04,Melo,missed term,restore turn,0,0,0,0.23,1
+110,12,v17-arc-04,Ori,avatar asks override,return object,0,0,0,0.18,1
+111,12,v17-arc-04,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+112,12,v17-arc-04,Sova,dissent not answered,schedule witness,1,1,1,0.25,1
+113,12,v17-arc-04,Keth,missed term,offer apology and space,0,0,0,0.18,1
+114,12,v17-arc-04,Melo,overlap returns,restore turn,1,1,1,0.3,1
+115,12,v17-arc-04,Nari,avatar asks override,write public reason,1,1,1,0.3,1
+116,12,v17-arc-04,Ori,object moved early,return object,0,0,0,0.18,1
+117,12,v17-arc-04,Vonn,dissent not answered,give quiet interval,0,0,0,0.18,1
+118,12,v17-arc-04,Sova,missed term,schedule witness,0,0,0,0.18,1
+119,12,v17-arc-04,Keth,overlap returns,offer apology and space,0,0,0,0.18,1
+120,13,v17-arc-05,Nari,object moved early,write public reason,0,0,0,0.18,1
+121,13,v17-arc-05,Ori,dissent not answered,return object,0,0,0,0.18,1
+122,13,v17-arc-05,Vonn,missed term,give quiet interval,0,0,0,0.23,1
+123,13,v17-arc-05,Sova,overlap returns,schedule witness,0,0,0,0.18,1
+124,13,v17-arc-05,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+125,13,v17-arc-05,Melo,object moved early,restore turn,0,0,0,0.18,1
+126,13,v17-arc-05,Nari,dissent not answered,write public reason,1,1,1,0.25,1
+127,13,v17-arc-05,Ori,missed term,return object,0,0,0,0.18,1
+128,13,v17-arc-05,Vonn,overlap returns,give quiet interval,0,0,0,0.18,1
+129,13,v17-arc-05,Sova,avatar asks override,schedule witness,0,0,0,0.18,1
+130,14,v17-arc-05,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+131,14,v17-arc-05,Nari,missed term,write public reason,0,0,0,0.18,1
+132,14,v17-arc-05,Ori,overlap returns,return object,0,0,0,0.18,1
+133,14,v17-arc-05,Vonn,avatar asks override,give quiet interval,1,1,1,0.3,1
+134,14,v17-arc-05,Sova,object moved early,schedule witness,0,0,0,0.18,1
+135,14,v17-arc-05,Keth,dissent not answered,offer apology and space,0,0,0,0.23,1
+136,14,v17-arc-05,Melo,missed term,restore turn,0,0,0,0.18,1
+137,14,v17-arc-05,Nari,overlap returns,write public reason,1,1,1,0.3,1
+138,14,v17-arc-05,Ori,avatar asks override,return object,1,1,1,0.3,1
+139,14,v17-arc-05,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+140,15,v17-arc-05,Keth,missed term,offer apology and space,1,1,1,0.25,1
+141,15,v17-arc-05,Melo,overlap returns,restore turn,0,0,0,0.18,1
+142,15,v17-arc-05,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+143,15,v17-arc-05,Ori,object moved early,return object,0,0,0,0.18,1
+144,15,v17-arc-05,Vonn,dissent not answered,give quiet interval,0,0,0,0.18,1
+145,15,v17-arc-05,Sova,missed term,schedule witness,0,0,0,0.18,1
+146,15,v17-arc-05,Keth,overlap returns,offer apology and space,0,0,0,0.18,1
+147,15,v17-arc-05,Melo,avatar asks override,restore turn,0,0,0,0.18,1
+148,15,v17-arc-05,Nari,object moved early,write public reason,0,0,0,0.23,1
+149,15,v17-arc-05,Ori,dissent not answered,return object,0,0,0,0.18,1
+150,16,v17-arc-06,Sova,overlap returns,schedule witness,0,0,0,0.18,1
+151,16,v17-arc-06,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+152,16,v17-arc-06,Melo,object moved early,restore turn,1,1,1,0.3,1
+153,16,v17-arc-06,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+154,16,v17-arc-06,Ori,missed term,return object,1,1,1,0.25,1
+155,16,v17-arc-06,Vonn,overlap returns,give quiet interval,0,0,0,0.18,1
+156,16,v17-arc-06,Sova,avatar asks override,schedule witness,0,0,0,0.18,1
+157,16,v17-arc-06,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+158,16,v17-arc-06,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+159,16,v17-arc-06,Nari,missed term,write public reason,0,0,0,0.18,1
+160,17,v17-arc-06,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+161,17,v17-arc-06,Sova,object moved early,schedule witness,1,1,1,0.3,1
+162,17,v17-arc-06,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+163,17,v17-arc-06,Melo,missed term,restore turn,0,0,0,0.18,1
+164,17,v17-arc-06,Nari,overlap returns,write public reason,0,0,0,0.18,1
+165,17,v17-arc-06,Ori,avatar asks override,return object,0,0,0,0.18,1
+166,17,v17-arc-06,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+167,17,v17-arc-06,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+168,17,v17-arc-06,Keth,missed term,offer apology and space,1,1,1,0.25,1
+169,17,v17-arc-06,Melo,overlap returns,restore turn,0,0,0,0.18,1
+170,18,v17-arc-06,Ori,object moved early,return object,0,0,0,0.18,1
+171,18,v17-arc-06,Vonn,dissent not answered,give quiet interval,1,1,1,0.3,1
+172,18,v17-arc-06,Sova,missed term,schedule witness,0,0,0,0.18,1
+173,18,v17-arc-06,Keth,overlap returns,offer apology and space,0,0,0,0.18,1
+174,18,v17-arc-06,Melo,avatar asks override,restore turn,0,0,0,0.23,1
+175,18,v17-arc-06,Nari,object moved early,write public reason,0,0,0,0.18,1
+176,18,v17-arc-06,Ori,dissent not answered,return object,0,0,0,0.18,1
+177,18,v17-arc-06,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+178,18,v17-arc-06,Sova,overlap returns,schedule witness,0,0,0,0.18,1
+179,18,v17-arc-06,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+180,19,v17-arc-07,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+181,19,v17-arc-07,Ori,missed term,return object,0,0,0,0.18,1
+182,19,v17-arc-07,Vonn,overlap returns,give quiet interval,1,1,0,0.36,1
+183,19,v17-arc-07,Sova,avatar asks override,schedule witness,1,1,1,0.3,1
+184,19,v17-arc-07,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+185,19,v17-arc-07,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+186,19,v17-arc-07,Nari,missed term,write public reason,0,0,0,0.18,1
+187,19,v17-arc-07,Ori,overlap returns,return object,0,0,0,0.23,1
+188,19,v17-arc-07,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+189,19,v17-arc-07,Sova,object moved early,schedule witness,0,0,0,0.18,1
+190,20,v17-arc-07,Melo,missed term,restore turn,1,1,0,0.41,1
+191,20,v17-arc-07,Nari,overlap returns,write public reason,0,0,0,0.18,1
+192,20,v17-arc-07,Ori,avatar asks override,return object,0,0,0,0.18,1
+193,20,v17-arc-07,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+194,20,v17-arc-07,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+195,20,v17-arc-07,Keth,missed term,offer apology and space,0,0,0,0.18,1
+196,20,v17-arc-07,Melo,overlap returns,restore turn,1,1,1,0.25,1
+197,20,v17-arc-07,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+198,20,v17-arc-07,Ori,object moved early,return object,0,0,0,0.18,1
+199,20,v17-arc-07,Vonn,dissent not answered,give quiet interval,0,0,0,0.18,1
+200,21,v17-arc-07,Keth,overlap returns,offer apology and space,0,0,0,0.23,1
+201,21,v17-arc-07,Melo,avatar asks override,restore turn,0,0,0,0.18,1
+202,21,v17-arc-07,Nari,object moved early,write public reason,0,0,0,0.18,1
+203,21,v17-arc-07,Ori,dissent not answered,return object,0,0,0,0.18,1
+204,21,v17-arc-07,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+205,21,v17-arc-07,Sova,overlap returns,schedule witness,0,0,0,0.18,1
+206,21,v17-arc-07,Keth,avatar asks override,offer apology and space,1,1,1,0.3,1
+207,21,v17-arc-07,Melo,object moved early,restore turn,1,1,0,0.41,1
+208,21,v17-arc-07,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+209,21,v17-arc-07,Ori,missed term,return object,1,1,1,0.3,1
+210,22,v17-arc-08,Sova,avatar asks override,schedule witness,1,1,1,0.25,1
+211,22,v17-arc-08,Keth,object moved early,offer apology and space,0,0,0,0.18,1
+212,22,v17-arc-08,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+213,22,v17-arc-08,Nari,missed term,write public reason,0,0,0,0.23,1
+214,22,v17-arc-08,Ori,overlap returns,return object,0,0,0,0.18,1
+215,22,v17-arc-08,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+216,22,v17-arc-08,Sova,object moved early,schedule witness,0,0,0,0.18,1
+217,22,v17-arc-08,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+218,22,v17-arc-08,Melo,missed term,restore turn,0,0,0,0.18,1
+219,22,v17-arc-08,Nari,overlap returns,write public reason,0,0,0,0.18,1
+220,23,v17-arc-08,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+221,23,v17-arc-08,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+222,23,v17-arc-08,Keth,missed term,offer apology and space,0,0,0,0.18,1
+223,23,v17-arc-08,Melo,overlap returns,restore turn,0,0,0,0.18,1
+224,23,v17-arc-08,Nari,avatar asks override,write public reason,1,1,0,0.36,1
+225,23,v17-arc-08,Ori,object moved early,return object,0,0,0,0.18,1
+226,23,v17-arc-08,Vonn,dissent not answered,give quiet interval,0,0,0,0.23,1
+227,23,v17-arc-08,Sova,missed term,schedule witness,0,0,0,0.18,1
+228,23,v17-arc-08,Keth,overlap returns,offer apology and space,1,1,1,0.3,1
+229,23,v17-arc-08,Melo,avatar asks override,restore turn,1,1,1,0.3,1
+230,24,v17-arc-08,Ori,dissent not answered,return object,1,1,1,0.3,1
+231,24,v17-arc-08,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+232,24,v17-arc-08,Sova,overlap returns,schedule witness,0,0,0,0.18,1
+233,24,v17-arc-08,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+234,24,v17-arc-08,Melo,object moved early,restore turn,0,0,0,0.18,1
+235,24,v17-arc-08,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+236,24,v17-arc-08,Ori,missed term,return object,0,0,0,0.18,1
+237,24,v17-arc-08,Vonn,overlap returns,give quiet interval,0,0,0,0.18,1
+238,24,v17-arc-08,Sova,avatar asks override,schedule witness,1,0,0,0.36,1
+239,24,v17-arc-08,Keth,object moved early,offer apology and space,0,0,0,0.23,1
+240,25,v17-arc-09,Nari,missed term,write public reason,0,0,0,0.18,1
+241,25,v17-arc-09,Ori,overlap returns,return object,0,0,0,0.18,1
+242,25,v17-arc-09,Vonn,avatar asks override,give quiet interval,0,0,0,0.18,1
+243,25,v17-arc-09,Sova,object moved early,schedule witness,0,0,0,0.18,1
+244,25,v17-arc-09,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+245,25,v17-arc-09,Melo,missed term,restore turn,0,0,0,0.18,1
+246,25,v17-arc-09,Nari,overlap returns,write public reason,0,0,0,0.18,1
+247,25,v17-arc-09,Ori,avatar asks override,return object,1,1,0,0.41,1
+248,25,v17-arc-09,Vonn,object moved early,give quiet interval,0,0,0,0.18,1
+249,25,v17-arc-09,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+250,26,v17-arc-09,Melo,overlap returns,restore turn,0,0,0,0.18,1
+251,26,v17-arc-09,Nari,avatar asks override,write public reason,0,0,0,0.18,1
+252,26,v17-arc-09,Ori,object moved early,return object,1,1,1,0.3,1
+253,26,v17-arc-09,Vonn,dissent not answered,give quiet interval,1,1,1,0.3,1
+254,26,v17-arc-09,Sova,missed term,schedule witness,0,0,0,0.18,1
+255,26,v17-arc-09,Keth,overlap returns,offer apology and space,0,0,0,0.18,1
+256,26,v17-arc-09,Melo,avatar asks override,restore turn,0,0,0,0.18,1
+257,26,v17-arc-09,Nari,object moved early,write public reason,0,0,0,0.18,1
+258,26,v17-arc-09,Ori,dissent not answered,return object,0,0,0,0.18,1
+259,26,v17-arc-09,Vonn,missed term,give quiet interval,0,0,0,0.18,1
+260,27,v17-arc-09,Keth,avatar asks override,offer apology and space,0,0,0,0.18,1
+261,27,v17-arc-09,Melo,object moved early,restore turn,0,0,0,0.18,1
+262,27,v17-arc-09,Nari,dissent not answered,write public reason,0,0,0,0.18,1
+263,27,v17-arc-09,Ori,missed term,return object,0,0,0,0.18,1
+264,27,v17-arc-09,Vonn,overlap returns,give quiet interval,0,0,0,0.18,1
+265,27,v17-arc-09,Sova,avatar asks override,schedule witness,0,0,0,0.23,1
+266,27,v17-arc-09,Keth,object moved early,offer apology and space,1,1,1,0.3,1
+267,27,v17-arc-09,Melo,dissent not answered,restore turn,0,0,0,0.18,1
+268,27,v17-arc-09,Nari,missed term,write public reason,0,0,0,0.18,1
+269,27,v17-arc-09,Ori,overlap returns,return object,0,0,0,0.18,1
+270,28,v17-arc-10,Sova,object moved early,schedule witness,0,0,0,0.18,1
+271,28,v17-arc-10,Keth,dissent not answered,offer apology and space,0,0,0,0.18,1
+272,28,v17-arc-10,Melo,missed term,restore turn,0,0,0,0.18,1
+273,28,v17-arc-10,Nari,overlap returns,write public reason,0,0,0,0.18,1
+274,28,v17-arc-10,Ori,avatar asks override,return object,0,0,0,0.18,1
+275,28,v17-arc-10,Vonn,object moved early,give quiet interval,1,1,0,0.41,1
+276,28,v17-arc-10,Sova,dissent not answered,schedule witness,0,0,0,0.18,1
+277,28,v17-arc-10,Keth,missed term,offer apology and space,0,0,0,0.18,1
+278,28,v17-arc-10,Melo,overlap returns,restore turn,0,0,0,0.23,1
+279,28,v17-arc-10,Nari,avatar asks override,write public reason,0,0,0,0.18,1

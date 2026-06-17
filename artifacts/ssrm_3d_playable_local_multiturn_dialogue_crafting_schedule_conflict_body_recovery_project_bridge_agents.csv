@@ -1,0 +1,6 @@
+agent_id,display_name,role,x,y,current_project,body_recovery_focus,dialogue_boundary,craft_skill,private_workspace_digest,frequency_hz,flower_node
+fayen,Fayen,care mediator,28.0,34.0,care kit standard,fatigue and breath recovery,posture language only,care-kit staging,sealed:fayen:multiturn-project-workspace,254.0,1
+ariq,Ariq,repair claimant,54.0,48.0,cart-safe bridge edge,pain-aware lifting,pride-safe caution,stone and chalk repair,sealed:ariq:multiturn-project-workspace,285.0,2
+nian,Nian,boundary keeper,42.0,22.0,privacy ledger grammar,control after threshold stress,object trail not body reason,digest wording,sealed:nian:multiturn-project-workspace,316.0,3
+roka,Roka,child apprentice,22.0,62.0,reed lesson tray,wetness and confidence recovery,loose reeds not tied bundle,reed sorting,sealed:roka:multiturn-project-workspace,347.0,4
+noro,Noro,material ledger keeper,70.0,58.0,shade debt review,focus after public conflict,public debt only,knot accounting,sealed:noro:multiturn-project-workspace,378.0,5

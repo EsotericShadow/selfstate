@@ -24,7 +24,7 @@ The key question becomes:
 
 Report 142 adds the first deterministic bridge toward the intended playable surface. It compresses `4096` simulated years into a deep-time prehistory and emits mature avatar-entry packets: invented native tokens, culture/technology traces, sensory-rate channels, internal workspace fields, affect/body summaries, and conversation hooks.
 
-This is still not a completed playable civilization. The bridge gives the browser viewer concrete agents to inspect and lightly question, but the next gate is live state change: player actions must alter agent attention, trust, plans, and world state, then leave an intervention trace that can be replayed and ablated.
+This is still not a completed playable civilization. Report 143 adds that first live-state bridge: player interventions alter agent attention, trust, body-affect summaries, native-token grounding, sensory resonance, world state, and replay traces. The next gate is open-ended embodied player input rather than scripted intervention templates.
 
 ## What The Testbed Can Study
 

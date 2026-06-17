@@ -1,0 +1,8 @@
+condition,steps,responding_agents,state_change_rate,workspace_update_rate,trust_gain,language_alignment,world_effect_score,sensory_resonance_score,response_specificity,trace_completeness,intervention_readiness
+integrated_live_avatar_session,18,8,0.786057,1.0,0.146257,1.0,1.0,0.59811,0.935698,1.0,0.76571
+no_workspace_updates,18,8,0.497837,0.0,0.147211,1.0,1.0,0.59811,0.755698,1.0,0.381201
+no_trust_updates,18,8,0.401813,1.0,0.002057,1.0,1.0,0.59811,0.935698,1.0,0.647186
+no_sensory_resonance,18,8,0.584018,1.0,0.122843,1.0,0.7225,0.2,0.872,1.0,0.512598
+no_language_grounding,18,8,0.594584,1.0,0.089178,0.0,1.0,0.59811,0.755698,1.0,0.388802
+no_world_effects,18,8,0.548469,1.0,0.145436,1.0,0.0,0.59811,0.935698,1.0,0.399322
+no_replay_trace,18,8,0.786257,1.0,0.14637,1.0,1.0,0.59811,0.935698,0.0,0.418005

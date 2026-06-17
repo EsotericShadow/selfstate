@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Live Avatar Intervention Bridge</title>
+  <script src="../artifacts/ssrm_3d_live_avatar_intervention_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_live_avatar_intervention_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_live_avatar_intervention_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #18211d;
+      --paper: #f5f1e4;
+      --panel: #fffdf5;
+      --line: #c7bfa7;
+      --moss: #516d58;
+      --clay: #a65934;
+      --water: #4c7f91;
+      --gold: #c99a35;
+      --violet: #6e638f;
+      --muted: #68736d;
+      --shadow: rgba(24, 33, 29, 0.20);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(115deg, rgba(81, 109, 88, 0.16), transparent 36%),
+        linear-gradient(250deg, rgba(166, 89, 52, 0.13), transparent 42%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(420px, 1fr) 420px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .stage,
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 245, 0.90);
+      box-shadow: 0 18px 40px var(--shadow);
+      overflow: hidden;
+    }
+
+    .stage {
+      display: grid;
+      grid-template-rows: auto minmax(460px, 1fr) auto;
+    }
+
+    header,
+    .meters,
+    .panel-head,
+    .controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+
+    header {
+      justify-content: space-between;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(1.25rem, 2vw, 2rem);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    .badge,
+    button {
+      border: 1px solid var(--line);
+      background: #eee5cc;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .badge {
+      padding: 6px 8px;
+    }
+
+    button {
+      min-height: 40px;
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+
+    button:hover,
+    button.active {
+      background: var(--moss);
+      color: white;
+      border-color: var(--moss);
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      display: block;
+      background:
+        linear-gradient(rgba(24, 33, 29, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24, 33, 29, 0.05) 1px, transparent 1px),
+        #ece5d0;
+      background-size: 30px 30px;
+    }
+
+    .meters {
+      border-top: 1px solid var(--line);
+      border-bottom: 0;
+    }
+
+    .meter {
+      min-width: 118px;
+      display: grid;
+      gap: 4px;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .meter strong {
+      color: var(--ink);
+      font-size: 1rem;
+    }
+
+    .panel {
+      display: grid;
+      grid-template-rows: auto auto auto minmax(240px, 1fr);
+      min-height: calc(100vh - 32px);
+    }
+
+    .agents {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .controls {
+      align-items: stretch;
+    }
+
+    .controls button {
+      flex: 1 1 42%;
+    }
+
+    .detail {
+      overflow: auto;
+      display: grid;
+      align-content: start;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 116px 1fr 44px;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.82rem;
+    }
+
+    .bar {
+      height: 8px;
+      background: #ddd3b8;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--water), var(--gold), var(--clay));
+    }
+
+    .log {
+      border-top: 1px solid var(--line);
+      background: #ece4cd;
+      overflow: auto;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    .line {
+      border-left: 3px solid var(--moss);
+      background: rgba(255, 253, 245, 0.86);
+      padding: 8px 10px;
+      line-height: 1.35;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 920px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="stage">
+      <header>
+        <h1>Live Avatar Intervention Bridge</h1>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1200" height="760"></canvas>
+      <div class="meters" id="worldMeters"></div>
+    </section>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Stateful Agent Session</h2>
+        <span class="badge" id="readiness">0.000</span>
+      </div>
+      <div class="agents" id="agents"></div>
+      <div class="controls" id="controls"></div>
+      <div class="detail" id="detail"></div>
+    </aside>
+  </main>
+
+  <script>
+    const payload = window.SSRM_3D_LIVE_AVATAR_INTERVENTION_BRIDGE_RESULTS || {};
+    const finalState = window.SSRM_3D_LIVE_AVATAR_INTERVENTION_BRIDGE_STATE || payload.final_state || {};
+    const canonicalTrace = window.SSRM_3D_LIVE_AVATAR_INTERVENTION_BRIDGE_TRACE || payload.trace || [];
+    const sourceAgents = payload.source_agents || [];
+    const interventions = [
+      ["greet", "I enter quietly and ask what your first shelter word means.", "audio"],
+      ["ask_meaning", "Teach me the danger sign near the old wet shelter.", "visual"],
+      ["offer_resource", "I bring clean water and ask where it is needed.", "wetness"],
+      ["repair", "I help repair the cold tool cache before night rain.", "thermal"],
+      ["comfort", "I notice pain and fear, then lower my voice and wait.", "pain"],
+      ["route_request", "Show me the route that your scouts trust after storms.", "vestibular"],
+      ["share_symbol", "I place a new mark and ask whether the council accepts it.", "affect"],
+      ["weather_watch", "I ask what the wet cold air means for tonight's shelter.", "olfactory"],
+      ["promise", "I promise not to take tools without a named return path.", "audio"]
+    ];
+
+    const state = {
+      world: JSON.parse(JSON.stringify(finalState.world || {
+        shared_water: 0.56,
+        tool_integrity: 0.58,
+        shelter_warmth: 0.54,
+        route_confidence: 0.48,
+        council_acceptance: 0.5,
+        danger_memory: 0.52,
+        trace_integrity: 0
+      })),
+      agents: JSON.parse(JSON.stringify(finalState.agents || {})),
+      trace: [],
+      selected: 0,
+      tick: 0
+    };
+
+    function clamp(value) {
+      return Math.max(0, Math.min(1, value));
+    }
+
+    function fmt(value) {
+      return Number(value || 0).toFixed(3);
+    }
+
+    function agentPackets() {
+      return sourceAgents.length ? sourceAgents : Object.values(state.agents);
+    }
+
+    function agentPacket(index) {
+      return agentPackets()[index] || agentPackets()[0];
+    }
+
+    function agentState(packet) {
+      const id = packet.agent_id;
+      if (!state.agents[id]) {
+        const workspace = packet.internal_workspace || {};
+        const affect = workspace.affect || {};
+        state.agents[id] = {
+          agent_id: id,
+          name: packet.name,
+          role: packet.role,
+          trust: 0.46 + (affect.attachment || 0.4) * 0.22,
+          attention: workspace.attention || "shared-field",
+          motive: workspace.motive || "wait",
+          body_state: workspace.body_state || 0.55,
+          fear: affect.fear || 0.35,
+          attachment: affect.attachment || 0.45,
+          curiosity: affect.curiosity || 0.35,
+          responses: 0
+        };
+      }
+      return state.agents[id];
+    }
+
+    function tokenFor(packet, focus) {
+      const hints = packet.translation_hints || {};
+      const match = Object.entries(hints).find(([, meaning]) => meaning === focus);
+      return match ? match[0] : (packet.native_tokens || ["ka"])[0];
+    }
+
+    function focusFor(kind) {
+      return {
+        greet: "care-or-kinship",
+        ask_meaning: "danger-or-weather-memory",
+        offer_resource: "shared-resource",
+        repair: "tool-or-route",
+        comfort: "care-or-kinship",
+        route_request: "tool-or-route",
+        share_symbol: "shared-resource",
+        weather_watch: "danger-or-weather-memory",
+        promise: "tool-or-route"
+      }[kind] || "shared-resource";
+    }
+
+    function sensory(packet, sense) {
+      const rates = packet.sensory_rates_hz || {};
+      const rate = Number(rates[sense] || 1);
+      return clamp(0.35 + (0.5 + 0.5 * Math.sin(rate * 0.41 + state.tick * 0.7)) * 0.55);
+    }
+
+    function applyWorld(kind, amount) {
+      if (kind === "offer_resource") state.world.shared_water = clamp(state.world.shared_water + amount * 0.11);
+      if (kind === "repair") {
+        state.world.tool_integrity = clamp(state.world.tool_integrity + amount * 0.10);
+        state.world.shelter_warmth = clamp(state.world.shelter_warmth + amount * 0.07);
+      }
+      if (kind === "route_request") state.world.route_confidence = clamp(state.world.route_confidence + amount * 0.09);
+      if (kind === "share_symbol") state.world.council_acceptance = clamp(state.world.council_acceptance + amount * 0.08);
+      if (kind === "weather_watch") state.world.danger_memory = clamp(state.world.danger_memory + amount * 0.08);
+      if (kind === "promise") {
+        state.world.council_acceptance = clamp(state.world.council_acceptance + amount * 0.06);
+        state.world.tool_integrity = clamp(state.world.tool_integrity + amount * 0.04);
+      }
+      state.world.trace_integrity = clamp(state.world.trace_integrity + 0.04);
+    }
+
+    function intervene(kind, utterance, sense) {
+      const packet = agentPacket(state.selected);
+      const live = agentState(packet);
+      const focus = focusFor(kind);
+      const token = tokenFor(packet, focus);
+      const resonance = sensory(packet, sense);
+      live.trust = clamp(live.trust + 0.018 + resonance * 0.026 + 0.025);
+      live.attention = focus;
+      live.motive = kind;
+      live.curiosity = clamp(live.curiosity + 0.020);
+      live.attachment = clamp(live.attachment + 0.020);
+      live.fear = clamp(live.fear - (kind === "comfort" ? 0.045 : 0.010) * resonance);
+      live.body_state = clamp(live.body_state + (kind === "weather_watch" ? 0.002 : 0.012 + resonance * 0.010));
+      live.responses += 1;
+      applyWorld(kind, resonance);
+      const response = `${live.name}: "${token}" now points toward ${focus}; I shift attention to ${live.attention}.`;
+      state.trace.unshift({ utterance, response, agent: live.name, token, resonance, focus });
+      state.tick += 1;
+      renderAll();
+    }
+
+    function renderWorldMeters() {
+      const rows = Object.entries(state.world).map(([key, value]) => `
+        <div class="meter">${key.replaceAll("_", " ")}<strong>${fmt(value)}</strong></div>
+      `);
+      document.getElementById("worldMeters").innerHTML = rows.join("");
+      const verdict = payload.verdict || {};
+      document.getElementById("verdict").textContent = verdict.verdict ? `verdict: ${verdict.verdict}` : "live local";
+      document.getElementById("readiness").textContent = fmt(verdict.full_intervention_readiness || 0);
+    }
+
+    function renderAgents() {
+      const buttons = agentPackets().slice(0, 8).map((agent, index) => {
+        const live = agentState(agent);
+        return `<button class="${index === state.selected ? "active" : ""}" data-index="${index}">${live.name}<br><small>${live.role} / ${fmt(live.trust)}</small></button>`;
+      });
+      const root = document.getElementById("agents");
+      root.innerHTML = buttons.join("");
+      root.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.selected = Number(button.dataset.index);
+          renderAll();
+        });
+      });
+    }
+
+    function renderControls() {
+      document.getElementById("controls").innerHTML = interventions.map(([kind, text, sense]) => (
+        `<button data-kind="${kind}" data-text="${text}" data-sense="${sense}">${kind.replaceAll("_", " ")}</button>`
+      )).join("");
+      document.querySelectorAll("#controls button").forEach((button) => {
+        button.addEventListener("click", () => intervene(button.dataset.kind, button.dataset.text, button.dataset.sense));
+      });
+    }
+
+    function renderDetail() {
+      const packet = agentPacket(state.selected);
+      const live = agentState(packet);
+      const bars = [
+        ["trust", live.trust],
+        ["body", live.body_state],
+        ["fear", live.fear],
+        ["attachment", live.attachment],
+        ["curiosity", live.curiosity]
+      ].map(([name, value]) => `<div class="bar-row"><span>${name}</span><div class="bar"><span style="width:${value * 100}%"></span></div><strong>${fmt(value)}</strong></div>`).join("");
+      const log = state.trace.slice(0, 8).map((row) => `<div class="line">${row.utterance}<br><strong>${row.response}</strong></div>`).join("");
+      document.getElementById("detail").innerHTML = `
+        <h2>${live.name} / ${live.role}</h2>
+        <p>attention: ${live.attention}</p>
+        <p>motive: ${live.motive}</p>
+        ${bars}
+        <h3>Intervention Trace</h3>
+        <div class="log">${log || "<div class='line'>Choose an intervention to alter state.</div>"}</div>
+      `;
+    }
+
+    function drawWorld() {
+      const canvas = document.getElementById("world");
+      const ctx = canvas.getContext("2d");
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#ece5d0";
+      ctx.fillRect(0, 0, w, h);
+      ctx.strokeStyle = "rgba(81, 109, 88, 0.34)";
+      ctx.lineWidth = 2;
+      const cx = w * 0.50;
+      const cy = h * 0.48;
+      const r = 132;
+      [[0, 0], [1, 0], [0.5, 0.866], [-0.5, 0.866], [-1, 0], [-0.5, -0.866], [0.5, -0.866]].forEach(([x, y]) => {
+        ctx.beginPath();
+        ctx.arc(cx + x * r, cy + y * r, r, 0, Math.PI * 2);
+        ctx.stroke();
+      });
+      agentPackets().slice(0, 8).forEach((packet, index) => {
+        const live = agentState(packet);
+        const px = cx + Math.cos(index / 8 * Math.PI * 2) * (170 + live.curiosity * 35);
+        const py = cy + Math.sin(index / 8 * Math.PI * 2) * (145 + live.trust * 45);
+        ctx.fillStyle = index === state.selected ? "#a65934" : "#516d58";
+        ctx.beginPath();
+        ctx.arc(px, py, 15 + live.trust * 8, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#fffdf5";
+        ctx.font = "700 13px Avenir Next, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(live.name, px, py + 4);
+      });
+      ctx.textAlign = "left";
+      ctx.fillStyle = "#18211d";
+      ctx.font = "700 22px Georgia";
+      ctx.fillText(`local interventions: ${state.trace.length}`, 32, 48);
+    }
+
+    function renderAll() {
+      renderWorldMeters();
+      renderAgents();
+      renderControls();
+      renderDetail();
+      drawWorld();
+    }
+
+    renderAll();
+  </script>
+</body>
+</html>

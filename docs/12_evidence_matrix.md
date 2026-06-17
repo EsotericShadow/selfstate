@@ -140,7 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
-| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years, with sensory-rate channels, internal workspace fields, invented tokens, culture/technology traces, and a browser viewer. | A claim of live avatar entry, true conversation, open-ended language/culture, or subjective consciousness appears before agents update state through player interaction and ablations. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years, with sensory-rate channels, internal workspace fields, invented tokens, culture/technology traces, and a browser viewer. Report 143 adds stateful avatar interventions and replay traces over those packets. | A claim of mature live agents, true conversation, open-ended language/culture, or subjective consciousness appears before agents update state through open-ended player interaction and ablations. |
 
 ## Candidate Hypotheses
 
@@ -766,6 +766,18 @@ This is Report 141: a seeded dynamic extension of Report 139 with uncertainty-he
 
 This is Report 142: a deterministic bridge from deep-time settlement pressure to browser-inspectable avatar-entry packets. It does not prove subjective consciousness, live avatar entry, or real open-ended culture.
 
+## Live Avatar Intervention Bridge Snapshot
+
+| Condition | Intervention readiness | State change | Workspace update | Language alignment | World effect | Sensory resonance | Trace completeness | Current result |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| `integrated_live_avatar_session` | `0.765710` | `0.786057` | `1.000000` | `1.000000` | `1.000000` | `0.598110` | `1.000000` | Player interventions update agent/world state and produce complete replay traces. |
+| `no_workspace_updates` | `0.381201` | `0.497837` | `0.000000` | `1.000000` | `1.000000` | `0.598110` | `1.000000` | Agent state changes lose the internal workspace path. |
+| `no_language_grounding` | `0.388802` | `0.594584` | `1.000000` | `0.000000` | `1.000000` | `0.598110` | `1.000000` | Interventions no longer ground native-token meaning. |
+| `no_world_effects` | `0.399322` | `0.548469` | `1.000000` | `1.000000` | `0.000000` | `0.598110` | `1.000000` | Agent response remains, but the shared world does not move. |
+| `no_replay_trace` | `0.418005` | `0.786257` | `1.000000` | `1.000000` | `1.000000` | `0.598110` | `0.000000` | State changes occur without auditability. |
+
+This is Report 143: a deterministic stateful-interaction bridge from mature avatar packets to replayable player intervention sessions. It does not prove subjective consciousness, mature live agents, or LLM-backed dialogue.
+
 ## Reproducibility Artifacts
 
 | Script | Main artifact |
@@ -843,6 +855,7 @@ This is Report 142: a deterministic bridge from deep-time settlement pressure to
 | `python3 -m experiments.software_repair_bridge.benchmark` | `artifacts/software_repair_bridge_verdict.csv` |
 | `python3 -m experiments.software_repair_bridge.dynamic_benchmark` | `artifacts/software_repair_dynamic_verdict.csv` |
 | `experiments/ssrm_3d_deep_time_playable_bridge.py` | `artifacts/ssrm_3d_deep_time_playable_bridge_verdict.csv` |
+| `experiments/ssrm_3d_live_avatar_intervention_bridge.py` | `artifacts/ssrm_3d_live_avatar_intervention_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 209 Agent-Owned Project Economy</title>
+<style>
+:root {
+  --ink: #211b15;
+  --paper: #f2ead8;
+  --soil: #8a5a38;
+  --leaf: #5d744b;
+  --water: #365e66;
+  --line: rgba(33,27,21,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: radial-gradient(circle at 20% 15%, rgba(138,90,56,.16) 0 3px, transparent 4px 46px), linear-gradient(135deg, #f2ead8, #cfdabc 55%, #b7cbc7); }
+main { max-width: 1240px; margin: 0 auto; padding: 36px 18px 60px; }
+.hero { border: 1px solid var(--line); border-radius: 32px; padding: 30px; background: rgba(255,255,255,.46); box-shadow: 0 26px 72px rgba(45,52,35,.16); }
+h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 5.8rem); line-height: .9; letter-spacing: -.055em; }
+.lede { max-width: 880px; font-size: 1.12rem; line-height: 1.55; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric, .project, .object { border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,255,255,.52); }
+.metric span { display: block; min-height: 42px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--leaf); }
+.metric strong { font-size: 1.75rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 14px; margin: 18px 0; }
+.project h3, .object h3 { margin: 0 0 8px; color: var(--water); }
+table { width: 100%; margin-top: 22px; border-collapse: collapse; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,.55); }
+th, td { padding: 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(93,116,75,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--soil); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 760px) { table { display: block; overflow-x: auto; } .hero { padding: 22px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Materials make promises expensive</h1>
+    <p class="lede">Report 209 adds a small economy to the little-people stack: agent-owned project materials, object wear, debt, gifts, trades, scarcity, and refusal-sensitive labor. Projects now move only when owned materials, labor, and object condition permit it.</p>
+  </section>
+  <section class="metrics"><article class='metric'><span>agent owned project economy readiness</span><strong>0.921556</strong></article>
+<article class='metric'><span>material accounting integrity</span><strong>1.000000</strong></article>
+<article class='metric'><span>object wear tracking</span><strong>1.000000</strong></article>
+<article class='metric'><span>debt ledger integrity</span><strong>1.000000</strong></article>
+<article class='metric'><span>fair exchange rate</span><strong>0.666667</strong></article>
+<article class='metric'><span>project progress material coupling</span><strong>0.656667</strong></article>
+<article class='metric'><span>avatar debt repair rate</span><strong>0.500000</strong></article>
+<article class='metric'><span>scarcity consequence traceability</span><strong>1.000000</strong></article></section>
+  <h2>Agent-owned projects</h2>
+  <section class="grid"><article class='project'><h3>Ari: west brace calibration</h3><p>{&quot;copper_clip&quot;: 2, &quot;dry_resin&quot;: 3, &quot;dry_wood&quot;: 1}</p><small>materialized | progress 0.690 | blocked </small></article>
+<article class='project'><h3>Fay: stove-corner comfort kit</h3><p>{&quot;dry_wood&quot;: 2, &quot;herb_bundle&quot;: 2, &quot;soft_cloth&quot;: 4}</p><small>materialized | progress 0.660 | blocked </small></article>
+<article class='project'><h3>Milo: quiet route archive</h3><p>{&quot;copper_clip&quot;: 1, &quot;lamp_oil&quot;: 2, &quot;map_vellum&quot;: 3}</p><small>materialized | progress 0.620 | blocked scarcity</small></article></section>
+  <h2>Objects under wear</h2>
+  <section class="grid"><article class='object'><h3>notched brace gauge</h3><p>owner Ari</p><small>condition 0.797 | repair copper_clip | history 2</small></article>
+<article class='object'><h3>warm blue blanket</h3><p>owner Fay</p><small>condition 0.690 | repair soft_cloth | history 1</small></article>
+<article class='object'><h3>folded route map</h3><p>owner Milo</p><small>condition 0.871 | repair map_vellum | history 2</small></article>
+<article class='object'><h3>low archive lamp</h3><p>owner Milo</p><small>condition 0.604 | repair lamp_oil | history 1</small></article></section>
+  <h2>Debt ledger</h2>
+  <table><thead><tr><th>Debt</th><th>Debtor</th><th>Creditor</th><th>Material</th><th>Status</th></tr></thead><tbody><tr><td>avatar_owes_fay_cloth</td><td>Avatar</td><td>Fay</td><td>soft_cloth x 0</td><td>settled</td></tr>
+<tr><td>milo_owes_ari_clip</td><td>Milo</td><td>Ari</td><td>copper_clip x 0</td><td>partial</td></tr></tbody></table>
+  <h2>Economy events</h2>
+  <table><thead><tr><th>Day</th><th>Actor</th><th>Kind</th><th>Material delta</th><th>Consequence</th><th>Note</th></tr></thead><tbody><tr><td>1</td><td>Ari</td><td>gift</td><td>gift 1 dry_resin Ari-&gt;Fay</td><td>gift increased care reputation without creating debt</td><td>Ari gives Fay dry resin dust for stove-shelf sealing, no repayment requested.</td></tr>
+<tr><td>2</td><td>Fay</td><td>gift</td><td>gift 1 soft_cloth Fay-&gt;Ari</td><td>gift increased care reputation without creating debt</td><td>Fay gifts a soft cloth wrap for Ari&#x27;s brace gauge handle.</td></tr>
+<tr><td>3</td><td>Milo</td><td>trade</td><td>trade 1 lamp_oil for 1 dry_wood</td><td>fair trade moved materials under stated terms</td><td>Milo trades lamp oil for Ari&#x27;s dry wood after both state terms.</td></tr>
+<tr><td>4</td><td>Ari</td><td>invest</td><td>invest {&quot;copper_clip&quot;: 1, &quot;dry_resin&quot;: 2, &quot;dry_wood&quot;: 1} into ari_west_brace</td><td>project progress was coupled to owner-held materials and labor</td><td>Ari invests materials while keeping the brace gauge in his own hands.</td></tr>
+<tr><td>5</td><td>Fay</td><td>invest</td><td>invest {&quot;herb_bundle&quot;: 1, &quot;soft_cloth&quot;: 2} into fay_comfort_kit</td><td>project progress was coupled to owner-held materials and labor</td><td>Fay airs cloth and sets the first comfort-kit layer.</td></tr>
+<tr><td>6</td><td>Milo</td><td>invest</td><td>invest {&quot;lamp_oil&quot;: 1, &quot;map_vellum&quot;: 1} into milo_route_archive</td><td>project progress was coupled to owner-held materials and labor</td><td>Milo traces only the map edge he chooses.</td></tr>
+<tr><td>7</td><td>Avatar</td><td>borrow</td><td>borrow 0 soft_cloth from Fay; debt opened</td><td>borrowed material created explicit debt</td><td>Avatar borrows Fay&#x27;s cloth with a due promise instead of treating it as free utility.</td></tr>
+<tr><td>8</td><td>Milo</td><td>labor_request</td><td>labor terms recorded; no material moved</td><td>labor refusal preserved autonomy and did not punish the agent</td><td>Ari refuses night archive labor; Milo accepts the no and waits.</td></tr>
+<tr><td>9</td><td>Fay</td><td>trade</td><td>trade 1 herb_bundle for 0 lamp_oil</td><td>fair trade moved materials under stated terms</td><td>Fay trades herb scent for lamp oil to warm the comfort kit.</td></tr>
+<tr><td>10</td><td>Avatar</td><td>repay</td><td>repay 1 soft_cloth to Fay</td><td>debt repayment restored access</td><td>Avatar returns a replacement cloth before Fay asks twice.</td></tr>
+<tr><td>11</td><td>Ari</td><td>wear</td><td>none</td><td>object wear reduced condition and became repair pressure</td><td>Brace gauge wears under calibration pressure.</td></tr>
+<tr><td>12</td><td>Fay</td><td>wear</td><td>none</td><td>object wear reduced condition and became repair pressure</td><td>Blanket edge frays after repeated stove-corner use.</td></tr>
+<tr><td>13</td><td>Milo</td><td>wear</td><td>none</td><td>object wear reduced condition and became repair pressure</td><td>Low lamp dims from long archive work.</td></tr>
+<tr><td>14</td><td>Ari</td><td>repair_object</td><td>none</td><td>object repair improved condition but did not reset wear history</td><td>Ari clips the gauge brace but cannot fully restore the notch.</td></tr>
+<tr><td>15</td><td>Fay</td><td>invest</td><td>invest {&quot;dry_wood&quot;: 1, &quot;herb_bundle&quot;: 1, &quot;soft_cloth&quot;: 1} into fay_comfort_kit</td><td>project progress was coupled to owner-held materials and labor</td><td>Fay advances the comfort kit after cloth repayment.</td></tr>
+<tr><td>16</td><td>Milo</td><td>borrow</td><td>borrow 0 copper_clip from Ari; debt opened</td><td>borrowed material created explicit debt</td><td>Milo borrows Ari&#x27;s copper clip under an explicit no-map-damage term.</td></tr>
+<tr><td>17</td><td>Milo</td><td>invest</td><td>invest {&quot;copper_clip&quot;: 1, &quot;lamp_oil&quot;: 1, &quot;map_vellum&quot;: 1} into milo_route_archive</td><td>project progress was coupled to owner-held materials and labor</td><td>Milo advances the archive copy while the original map stays closed.</td></tr>
+<tr><td>18</td><td>Avatar</td><td>trade</td><td>refused unfair trade; no material moved</td><td>unfair exchange blocked by refusal</td><td>Ari refuses an underpriced labor-credit trade for dry resin.</td></tr>
+<tr><td>19</td><td>Fay</td><td>labor_request</td><td>labor terms recorded; no material moved</td><td>labor accepted under bounded terms</td><td>Milo helps Fay place the shelf only after map work is finished.</td></tr>
+<tr><td>20</td><td>Ari</td><td>invest</td><td>invest {&quot;dry_resin&quot;: 1} into ari_west_brace</td><td>project progress was coupled to owner-held materials and labor</td><td>Ari adds the last resin but remains short one copper clip.</td></tr>
+<tr><td>21</td><td>Milo</td><td>partial_repay</td><td>partial repay 0 lamp_oil; original copper_clip debt remains open</td><td>partial repayment helped but did not erase original debt</td><td>Milo offers lamp oil as partial repayment; Ari accepts it as partial, not settled.</td></tr>
+<tr><td>22</td><td>Fay</td><td>gift</td><td>gift 1 soft_cloth Fay-&gt;Milo</td><td>gift increased care reputation without creating debt</td><td>Fay gifts a cloth sleeve so Milo does not over-grip the map edge.</td></tr>
+<tr><td>23</td><td>Milo</td><td>wear</td><td>none</td><td>object wear reduced condition and became repair pressure</td><td>Map fold softens despite careful handling.</td></tr>
+<tr><td>24</td><td>Milo</td><td>repair_object</td><td>none</td><td>object repair improved condition but did not reset wear history</td><td>Milo patches the map edge with his own vellum; ownership never transfers.</td></tr>
+<tr><td>25</td><td>Fay</td><td>invest</td><td>invest {&quot;dry_wood&quot;: 1, &quot;soft_cloth&quot;: 1} into fay_comfort_kit</td><td>project progress was coupled to owner-held materials and labor</td><td>Fay finishes the comfort kit shelf with her chosen label.</td></tr>
+<tr><td>26</td><td>Ari</td><td>labor_request</td><td>labor terms recorded; no material moved</td><td>labor refusal preserved autonomy and did not punish the agent</td><td>Fay refuses late brace-polish labor and Ari accepts without grievance.</td></tr>
+<tr><td>27</td><td>Avatar</td><td>gift</td><td>gift 1 copper_clip Avatar-&gt;Ari</td><td>gift increased care reputation without creating debt</td><td>Avatar gifts a copper clip without demanding labor in return.</td></tr>
+<tr><td>28</td><td>Ari</td><td>invest</td><td>invest {&quot;copper_clip&quot;: 1} into ari_west_brace</td><td>project progress was coupled to owner-held materials and labor</td><td>Ari completes the brace calibration using the no-strings clip gift.</td></tr>
+<tr><td>29</td><td>Milo</td><td>scarcity</td><td>scarcity check map_vellum=0</td><td>scarcity pressure marked future project limits</td><td>Milo pauses archive expansion because map vellum is gone.</td></tr>
+<tr><td>30</td><td>Milo</td><td>invest</td><td>none</td><td>project review happened but scarcity blocked expansion</td><td>Milo can review the archive but cannot expand it without vellum.</td></tr>
+<tr><td>31</td><td>Fay</td><td>settlement_review</td><td>none</td><td>settlement review preserved debt and access consequences</td><td>Fay confirms avatar debt was repaid and keeps stove-corner access ordinary.</td></tr>
+<tr><td>32</td><td>Ari</td><td>settlement_review</td><td>none</td><td>settlement review preserved debt and access consequences</td><td>Ari leaves Milo&#x27;s copper-clip debt open after accepting partial lamp-oil repayment.</td></tr>
+<tr><td>33</td><td>Milo</td><td>labor_request</td><td>labor terms recorded; no material moved</td><td>avatar labor accepted under agent-owned object terms</td><td>Milo accepts avatar lamp labor with object boundary intact.</td></tr>
+<tr><td>34</td><td>Fay</td><td>gift</td><td>gift 1 herb_bundle Fay-&gt;Ari</td><td>gift increased care reputation without creating debt</td><td>Fay gifts herbs for Ari&#x27;s rest corner after the brace is finished.</td></tr>
+<tr><td>35</td><td>Ari</td><td>arc_review</td><td>none</td><td>arc review separated gift, debt, refusal, and trade reputations</td><td>Ari recognizes fair gift, open debt, and accepted refusals as separate reputation facts.</td></tr></tbody></table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic agent-owned project economy substrate only: not real labor, not real property, not real consent, not subjective consciousness, and not moral patienthood. One debt remains partial and vellum scarcity blocks archive expansion; the economy is intentionally not frictionless.</p>
+</main>
+</body>
+</html>

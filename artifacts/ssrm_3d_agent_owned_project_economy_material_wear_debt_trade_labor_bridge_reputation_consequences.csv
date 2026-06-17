@@ -1,0 +1,4 @@
+agent,trust,fatigue,autonomy,inventory,reputation,public_history_count,private_workspace_digest
+Ari,1.000,0.410,0.740,"{""copper_clip"": 0, ""dry_resin"": 0, ""dry_wood"": 0, ""herb_bundle"": 1, ""lamp_oil"": 1, ""map_vellum"": 0, ""soft_cloth"": 1}","{""fair_trade"": 0.655, ""repays_debt"": 0.55, ""respects_labor_no"": 0.718}",22,sealed
+Fay,1.000,0.370,0.620,"{""copper_clip"": 0, ""dry_resin"": 1, ""dry_wood"": 0, ""herb_bundle"": 0, ""lamp_oil"": 1, ""map_vellum"": 0, ""soft_cloth"": 0}","{""fair_trade"": 0.685, ""repairs_misses"": 0.61, ""repays_debt"": 0.53, ""respects_labor_no"": 0.6980000000000001}",15,sealed
+Milo,1.000,0.450,0.790,"{""copper_clip"": 0, ""dry_resin"": 0, ""dry_wood"": 1, ""herb_bundle"": 1, ""lamp_oil"": 0, ""map_vellum"": 0, ""soft_cloth"": 0}","{""fair_trade"": 0.6900000000000001, ""protects_ownership"": 0.83, ""respects_labor_no"": 0.74}",18,sealed

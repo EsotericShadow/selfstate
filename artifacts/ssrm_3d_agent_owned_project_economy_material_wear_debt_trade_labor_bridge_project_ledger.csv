@@ -1,0 +1,4 @@
+project_id,owner,name,object_id,stage,progress,required_materials,invested_materials,labor_units,blocked_by
+ari_west_brace,Ari,west brace calibration,brace_gauge,materialized,0.690,"{""copper_clip"": 2, ""dry_resin"": 3, ""dry_wood"": 1}","{""copper_clip"": 2, ""dry_resin"": 1, ""dry_wood"": 1}",3,
+fay_comfort_kit,Fay,stove-corner comfort kit,blue_blanket,materialized,0.660,"{""dry_wood"": 2, ""herb_bundle"": 2, ""soft_cloth"": 4}","{""dry_wood"": 1, ""herb_bundle"": 1, ""soft_cloth"": 3}",3,
+milo_route_archive,Milo,quiet route archive,folded_map,materialized,0.620,"{""copper_clip"": 1, ""lamp_oil"": 2, ""map_vellum"": 3}","{""copper_clip"": 1, ""lamp_oil"": 1, ""map_vellum"": 2}",2,scarcity

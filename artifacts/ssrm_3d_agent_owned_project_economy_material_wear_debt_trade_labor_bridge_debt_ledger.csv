@@ -1,0 +1,3 @@
+debt_id,debtor,creditor,material,amount,partial_paid,opened_day,settled_day,status,reason
+avatar_owes_fay_cloth,Avatar,Fay,soft_cloth,0,1,7,10,settled,wrap the low lamp so Milo can work without glare
+milo_owes_ari_clip,Milo,Ari,copper_clip,0,0,16,,partial,hold the archive edge copy without piercing the original map

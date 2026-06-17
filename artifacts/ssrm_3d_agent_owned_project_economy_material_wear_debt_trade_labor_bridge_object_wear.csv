@@ -1,0 +1,5 @@
+object_id,owner,name,condition,wear_rate,repair_material,wear_history_count,public_notes
+brace_gauge,Ari,notched brace gauge,0.797,0.018,copper_clip,2,Brace gauge wears under calibration pressure. | Ari clips the gauge brace but cannot fully restore the notch.
+blue_blanket,Fay,warm blue blanket,0.690,0.020,soft_cloth,1,Blanket edge frays after repeated stove-corner use.
+folded_map,Milo,folded route map,0.871,0.014,map_vellum,2,Map fold softens despite careful handling. | Milo patches the map edge with his own vellum; ownership never transfers.
+low_lamp,Milo,low archive lamp,0.604,0.026,lamp_oil,1,Low lamp dims from long archive work.

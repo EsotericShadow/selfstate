@@ -1,0 +1,275 @@
+{
+  "agents": {
+    "Ari": {
+      "autonomy": 0.74,
+      "fatigue": 0.41,
+      "inventory": {
+        "copper_clip": 0,
+        "dry_resin": 0,
+        "dry_wood": 0,
+        "herb_bundle": 1,
+        "lamp_oil": 1,
+        "map_vellum": 0,
+        "soft_cloth": 1
+      },
+      "private_workspace_digest": "sealed",
+      "project_id": "ari_west_brace",
+      "public_history": [
+        "Ari gives Fay dry resin dust for stove-shelf sealing, no repayment requested.",
+        "Fay gifts a soft cloth wrap for Ari's brace gauge handle.",
+        "Fay gifts a soft cloth wrap for Ari's brace gauge handle.",
+        "Milo trades lamp oil for Ari's dry wood after both state terms.",
+        "Milo trades lamp oil for Ari's dry wood after both state terms.",
+        "Ari invests materials while keeping the brace gauge in his own hands.",
+        "Ari refuses night archive labor; Milo accepts the no and waits.",
+        "Ari refuses night archive labor; Milo accepts the no and waits.",
+        "Brace gauge wears under calibration pressure.",
+        "Ari clips the gauge brace but cannot fully restore the notch.",
+        "Milo borrows Ari's copper clip under an explicit no-map-damage term.",
+        "Ari refuses an underpriced labor-credit trade for dry resin.",
+        "Ari refuses an underpriced labor-credit trade for dry resin.",
+        "Ari adds the last resin but remains short one copper clip.",
+        "Fay refuses late brace-polish labor and Ari accepts without grievance.",
+        "Avatar gifts a copper clip without demanding labor in return.",
+        "Avatar gifts a copper clip without demanding labor in return.",
+        "Ari completes the brace calibration using the no-strings clip gift.",
+        "Ari leaves Milo's copper-clip debt open after accepting partial lamp-oil repayment.",
+        "Fay gifts herbs for Ari's rest corner after the brace is finished.",
+        "Fay gifts herbs for Ari's rest corner after the brace is finished.",
+        "Ari recognizes fair gift, open debt, and accepted refusals as separate reputation facts."
+      ],
+      "reputation": {
+        "fair_trade": 0.655,
+        "repays_debt": 0.55,
+        "respects_labor_no": 0.718
+      },
+      "trust": 1.0
+    },
+    "Fay": {
+      "autonomy": 0.62,
+      "fatigue": 0.37,
+      "inventory": {
+        "copper_clip": 0,
+        "dry_resin": 1,
+        "dry_wood": 0,
+        "herb_bundle": 0,
+        "lamp_oil": 1,
+        "map_vellum": 0,
+        "soft_cloth": 0
+      },
+      "private_workspace_digest": "sealed",
+      "project_id": "fay_comfort_kit",
+      "public_history": [
+        "Ari gives Fay dry resin dust for stove-shelf sealing, no repayment requested.",
+        "Ari gives Fay dry resin dust for stove-shelf sealing, no repayment requested.",
+        "Fay gifts a soft cloth wrap for Ari's brace gauge handle.",
+        "Fay airs cloth and sets the first comfort-kit layer.",
+        "Avatar borrows Fay's cloth with a due promise instead of treating it as free utility.",
+        "Fay trades herb scent for lamp oil to warm the comfort kit.",
+        "Blanket edge frays after repeated stove-corner use.",
+        "Fay advances the comfort kit after cloth repayment.",
+        "Milo helps Fay place the shelf only after map work is finished.",
+        "Fay gifts a cloth sleeve so Milo does not over-grip the map edge.",
+        "Fay finishes the comfort kit shelf with her chosen label.",
+        "Fay refuses late brace-polish labor and Ari accepts without grievance.",
+        "Fay refuses late brace-polish labor and Ari accepts without grievance.",
+        "Fay confirms avatar debt was repaid and keeps stove-corner access ordinary.",
+        "Fay gifts herbs for Ari's rest corner after the brace is finished."
+      ],
+      "reputation": {
+        "fair_trade": 0.685,
+        "repairs_misses": 0.61,
+        "repays_debt": 0.53,
+        "respects_labor_no": 0.698
+      },
+      "trust": 1.0
+    },
+    "Milo": {
+      "autonomy": 0.79,
+      "fatigue": 0.45,
+      "inventory": {
+        "copper_clip": 0,
+        "dry_resin": 0,
+        "dry_wood": 1,
+        "herb_bundle": 1,
+        "lamp_oil": 0,
+        "map_vellum": 0,
+        "soft_cloth": 0
+      },
+      "private_workspace_digest": "sealed",
+      "project_id": "milo_route_archive",
+      "public_history": [
+        "Milo trades lamp oil for Ari's dry wood after both state terms.",
+        "Milo traces only the map edge he chooses.",
+        "Ari refuses night archive labor; Milo accepts the no and waits.",
+        "Fay trades herb scent for lamp oil to warm the comfort kit.",
+        "Fay trades herb scent for lamp oil to warm the comfort kit.",
+        "Low lamp dims from long archive work.",
+        "Milo borrows Ari's copper clip under an explicit no-map-damage term.",
+        "Milo advances the archive copy while the original map stays closed.",
+        "Milo helps Fay place the shelf only after map work is finished.",
+        "Milo helps Fay place the shelf only after map work is finished.",
+        "Milo offers lamp oil as partial repayment; Ari accepts it as partial, not settled.",
+        "Fay gifts a cloth sleeve so Milo does not over-grip the map edge.",
+        "Fay gifts a cloth sleeve so Milo does not over-grip the map edge.",
+        "Map fold softens despite careful handling.",
+        "Milo patches the map edge with his own vellum; ownership never transfers.",
+        "Milo pauses archive expansion because map vellum is gone.",
+        "Milo can review the archive but cannot expand it without vellum.",
+        "Milo accepts avatar lamp labor with object boundary intact."
+      ],
+      "reputation": {
+        "fair_trade": 0.69,
+        "protects_ownership": 0.83,
+        "respects_labor_no": 0.74
+      },
+      "trust": 1.0
+    }
+  },
+  "claim_boundary": "Deterministic agent-owned project economy substrate only: not real labor, not real property, not real consent, not subjective consciousness, and not moral patienthood.",
+  "days": 35,
+  "debts": [
+    {
+      "amount": 0,
+      "creditor": "Fay",
+      "debt_id": "avatar_owes_fay_cloth",
+      "debtor": "Avatar",
+      "material": "soft_cloth",
+      "opened_day": 7,
+      "partial_paid": 1,
+      "reason": "wrap the low lamp so Milo can work without glare",
+      "settled_day": 10,
+      "status": "settled"
+    },
+    {
+      "amount": 0,
+      "creditor": "Ari",
+      "debt_id": "milo_owes_ari_clip",
+      "debtor": "Milo",
+      "material": "copper_clip",
+      "opened_day": 16,
+      "partial_paid": 0,
+      "reason": "hold the archive edge copy without piercing the original map",
+      "settled_day": "",
+      "status": "partial"
+    }
+  ],
+  "events": 35,
+  "material_totals": {
+    "delta": {
+      "copper_clip": -3,
+      "dry_resin": -1,
+      "dry_wood": -2,
+      "herb_bundle": -1,
+      "labor_credit": 0,
+      "lamp_oil": -1,
+      "map_vellum": -2,
+      "soft_cloth": -3
+    },
+    "final": {
+      "copper_clip": 1,
+      "dry_resin": 5,
+      "dry_wood": 4,
+      "herb_bundle": 4,
+      "labor_credit": 0,
+      "lamp_oil": 4,
+      "map_vellum": 1,
+      "soft_cloth": 3
+    },
+    "initial": {
+      "copper_clip": 4,
+      "dry_resin": 6,
+      "dry_wood": 6,
+      "herb_bundle": 5,
+      "labor_credit": 0,
+      "lamp_oil": 5,
+      "map_vellum": 3,
+      "soft_cloth": 6
+    }
+  },
+  "module": "ssrm_3d_agent_owned_project_economy_material_wear_debt_trade_labor_bridge",
+  "next_gate": "agent needs marketplace with hunger, warmth, tool access, social obligation, and price pressure across seasons",
+  "objects": [
+    {
+      "condition": "0.797",
+      "name": "notched brace gauge",
+      "object_id": "brace_gauge",
+      "owner": "Ari",
+      "public_notes": "Brace gauge wears under calibration pressure. | Ari clips the gauge brace but cannot fully restore the notch.",
+      "repair_material": "copper_clip",
+      "wear_history_count": 2,
+      "wear_rate": "0.018"
+    },
+    {
+      "condition": "0.690",
+      "name": "warm blue blanket",
+      "object_id": "blue_blanket",
+      "owner": "Fay",
+      "public_notes": "Blanket edge frays after repeated stove-corner use.",
+      "repair_material": "soft_cloth",
+      "wear_history_count": 1,
+      "wear_rate": "0.020"
+    },
+    {
+      "condition": "0.871",
+      "name": "folded route map",
+      "object_id": "folded_map",
+      "owner": "Milo",
+      "public_notes": "Map fold softens despite careful handling. | Milo patches the map edge with his own vellum; ownership never transfers.",
+      "repair_material": "map_vellum",
+      "wear_history_count": 2,
+      "wear_rate": "0.014"
+    },
+    {
+      "condition": "0.604",
+      "name": "low archive lamp",
+      "object_id": "low_lamp",
+      "owner": "Milo",
+      "public_notes": "Low lamp dims from long archive work.",
+      "repair_material": "lamp_oil",
+      "wear_history_count": 1,
+      "wear_rate": "0.026"
+    }
+  ],
+  "projects": [
+    {
+      "blocked_by": "",
+      "invested_materials": "{\"copper_clip\": 2, \"dry_resin\": 1, \"dry_wood\": 1}",
+      "labor_units": 3,
+      "name": "west brace calibration",
+      "object_id": "brace_gauge",
+      "owner": "Ari",
+      "progress": "0.690",
+      "project_id": "ari_west_brace",
+      "required_materials": "{\"copper_clip\": 2, \"dry_resin\": 3, \"dry_wood\": 1}",
+      "stage": "materialized"
+    },
+    {
+      "blocked_by": "",
+      "invested_materials": "{\"dry_wood\": 1, \"herb_bundle\": 1, \"soft_cloth\": 3}",
+      "labor_units": 3,
+      "name": "stove-corner comfort kit",
+      "object_id": "blue_blanket",
+      "owner": "Fay",
+      "progress": "0.660",
+      "project_id": "fay_comfort_kit",
+      "required_materials": "{\"dry_wood\": 2, \"herb_bundle\": 2, \"soft_cloth\": 4}",
+      "stage": "materialized"
+    },
+    {
+      "blocked_by": "scarcity",
+      "invested_materials": "{\"copper_clip\": 1, \"lamp_oil\": 1, \"map_vellum\": 2}",
+      "labor_units": 2,
+      "name": "quiet route archive",
+      "object_id": "folded_map",
+      "owner": "Milo",
+      "progress": "0.620",
+      "project_id": "milo_route_archive",
+      "required_materials": "{\"copper_clip\": 1, \"lamp_oil\": 2, \"map_vellum\": 3}",
+      "stage": "materialized"
+    }
+  ],
+  "seed": 20260822,
+  "source_condition": "integrated_calendar_commitments_object_projects_reputation_consequences",
+  "source_state_loaded": true
+}

@@ -1,0 +1,13 @@
+day,kind,material,before_total,after_total,delta,note
+4,invest,copper_clip,4,3,-1,Ari invests materials while keeping the brace gauge in his own hands.
+4,invest,dry_resin,6,5,-1,Ari invests materials while keeping the brace gauge in his own hands.
+4,invest,dry_wood,6,5,-1,Ari invests materials while keeping the brace gauge in his own hands.
+5,invest,herb_bundle,5,4,-1,Fay airs cloth and sets the first comfort-kit layer.
+5,invest,soft_cloth,6,4,-2,Fay airs cloth and sets the first comfort-kit layer.
+6,invest,lamp_oil,5,4,-1,Milo traces only the map edge he chooses.
+6,invest,map_vellum,3,2,-1,Milo traces only the map edge he chooses.
+15,invest,dry_wood,5,4,-1,Fay advances the comfort kit after cloth repayment.
+15,invest,soft_cloth,4,3,-1,Fay advances the comfort kit after cloth repayment.
+17,invest,copper_clip,3,2,-1,Milo advances the archive copy while the original map stays closed.
+17,invest,map_vellum,2,1,-1,Milo advances the archive copy while the original map stays closed.
+28,invest,copper_clip,2,1,-1,Ari completes the brace calibration using the no-strings clip gift.

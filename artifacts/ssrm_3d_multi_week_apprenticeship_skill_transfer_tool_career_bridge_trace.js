@@ -1,0 +1,2018 @@
+window.SSRM_3D_MULTI_WEEK_APPRENTICESHIP_SKILL_TRANSFER_TOOL_CAREER_TRACE = [
+  {
+    "after_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.432
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.25,
+      "fatigue": 0.406
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 0,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.242,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "repair",
+        "week": 0
+      },
+      "career": {
+        "autonomy": 0.295,
+        "fatigue": 0.432,
+        "identity_count": 2,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 1,
+        "entries": 1,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.645,
+        "before": 0.58,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.37645,
+        "lineage_marks": 1,
+        "name": "resonant_mallet",
+        "quality": 0.446776
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "repair",
+      "tool": "resonant_mallet",
+      "week": 0
+    },
+    "trace_hash": "fda7a59069dafd19",
+    "week": 0
+  },
+  {
+    "after_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.52
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.25,
+      "fatigue": 0.594
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 1,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.219,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "care",
+        "week": 0
+      },
+      "career": {
+        "autonomy": 0.295,
+        "fatigue": 0.52,
+        "identity_count": 2,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 1,
+        "entries": 1,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.645,
+        "before": 0.58,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.37645,
+        "lineage_marks": 1,
+        "name": "root_satchel",
+        "quality": 0.446776
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "care",
+      "tool": "root_satchel",
+      "week": 0
+    },
+    "trace_hash": "65dcbe7fb2b7422d",
+    "week": 0
+  },
+  {
+    "after_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.261
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.25,
+      "fatigue": 0.235
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 2,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.258,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "routing",
+        "week": 0
+      },
+      "career": {
+        "autonomy": 0.295,
+        "fatigue": 0.261,
+        "identity_count": 2,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 1,
+        "entries": 1,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.645,
+        "before": 0.58,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.37645,
+        "lineage_marks": 1,
+        "name": "path_chisel",
+        "quality": 0.446776
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "routing",
+      "tool": "path_chisel",
+      "week": 0
+    },
+    "trace_hash": "eb0a59c145fe56fa",
+    "week": 0
+  },
+  {
+    "after_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.458
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.432
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 3,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.2432,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "construction",
+        "week": 1
+      },
+      "career": {
+        "autonomy": 0.34,
+        "fatigue": 0.458,
+        "identity_count": 3,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 2,
+        "entries": 2,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.525,
+        "before": 0.46,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.4117,
+        "lineage_marks": 2,
+        "name": "resonant_mallet",
+        "quality": 0.474187
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "construction",
+      "tool": "resonant_mallet",
+      "week": 1
+    },
+    "trace_hash": "ab7e65edf5f7b801",
+    "week": 1
+  },
+  {
+    "after_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.546
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.52
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 4,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.2202,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "medicine",
+        "week": 1
+      },
+      "career": {
+        "autonomy": 0.34,
+        "fatigue": 0.546,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 2,
+        "entries": 2,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.545,
+        "before": 0.48,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.4119,
+        "lineage_marks": 2,
+        "name": "root_satchel",
+        "quality": 0.47419
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "medicine",
+      "tool": "root_satchel",
+      "week": 1
+    },
+    "trace_hash": "fb8ce8778d7f7cdb",
+    "week": 1
+  },
+  {
+    "after_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.287
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.261
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 5,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.2592,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "teaching",
+        "week": 1
+      },
+      "career": {
+        "autonomy": 0.295,
+        "fatigue": 0.287,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 2,
+        "entries": 2,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.445,
+        "before": 0.38,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.4109,
+        "lineage_marks": 2,
+        "name": "path_chisel",
+        "quality": 0.474172
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "teaching",
+      "tool": "path_chisel",
+      "week": 1
+    },
+    "trace_hash": "7f7f1531fc8036a2",
+    "week": 1
+  },
+  {
+    "after_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.484
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.458
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 6,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.2444,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "teaching",
+        "week": 2
+      },
+      "career": {
+        "autonomy": 0.34,
+        "fatigue": 0.484,
+        "identity_count": 4,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 3,
+        "entries": 3,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.3558,
+        "before": 0.28,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.0288
+      },
+      "tool": {
+        "affinity": 0.445258,
+        "lineage_marks": 3,
+        "name": "resonant_mallet",
+        "quality": 0.502201
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "teaching",
+      "tool": "resonant_mallet",
+      "week": 2
+    },
+    "trace_hash": "b5a3b88e81888df7",
+    "week": 2
+  },
+  {
+    "after_public": {
+      "autonomy": 0.385,
+      "fatigue": 0.572
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.546
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 7,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.2214,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "care",
+        "week": 2
+      },
+      "career": {
+        "autonomy": 0.385,
+        "fatigue": 0.572,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 3,
+        "entries": 3,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.71,
+        "before": 0.645,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.449,
+        "lineage_marks": 3,
+        "name": "root_satchel",
+        "quality": 0.502272
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "care",
+      "tool": "root_satchel",
+      "week": 2
+    },
+    "trace_hash": "45ae226fd04519ed",
+    "week": 2
+  },
+  {
+    "after_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.313
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.295,
+      "fatigue": 0.287
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 8,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.2604,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "routing",
+        "week": 2
+      },
+      "career": {
+        "autonomy": 0.34,
+        "fatigue": 0.313,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 3,
+        "entries": 3,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.71,
+        "before": 0.645,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.448,
+        "lineage_marks": 3,
+        "name": "path_chisel",
+        "quality": 0.502236
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "routing",
+      "tool": "path_chisel",
+      "week": 2
+    },
+    "trace_hash": "dfea876078573533",
+    "week": 2
+  },
+  {
+    "after_public": {
+      "autonomy": 0.385,
+      "fatigue": 0.51
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.484
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 9,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.2456,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "repair",
+        "week": 3
+      },
+      "career": {
+        "autonomy": 0.385,
+        "fatigue": 0.51,
+        "identity_count": 4,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 4,
+        "entries": 4,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.71,
+        "before": 0.645,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.482358,
+        "lineage_marks": 4,
+        "name": "resonant_mallet",
+        "quality": 0.530884
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "repair",
+      "tool": "resonant_mallet",
+      "week": 3
+    },
+    "trace_hash": "93c2f51106d057b7",
+    "week": 3
+  },
+  {
+    "after_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.598
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.385,
+      "fatigue": 0.572
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 10,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.2226,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "care",
+        "week": 3
+      },
+      "career": {
+        "autonomy": 0.43,
+        "fatigue": 0.598,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 4,
+        "entries": 4,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.775,
+        "before": 0.71,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.48675,
+        "lineage_marks": 4,
+        "name": "root_satchel",
+        "quality": 0.531034
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "care",
+      "tool": "root_satchel",
+      "week": 3
+    },
+    "trace_hash": "404d90e266f82430",
+    "week": 3
+  },
+  {
+    "after_public": {
+      "autonomy": 0.385,
+      "fatigue": 0.339
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.34,
+      "fatigue": 0.313
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 11,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.2616,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "routing",
+        "week": 3
+      },
+      "career": {
+        "autonomy": 0.385,
+        "fatigue": 0.339,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 4,
+        "entries": 4,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.775,
+        "before": 0.71,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.48575,
+        "lineage_marks": 4,
+        "name": "path_chisel",
+        "quality": 0.53098
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "routing",
+      "tool": "path_chisel",
+      "week": 3
+    },
+    "trace_hash": "6dd9b3975994a6cc",
+    "week": 3
+  },
+  {
+    "after_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.536
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.385,
+      "fatigue": 0.51
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 12,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.2468,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "construction",
+        "week": 4
+      },
+      "career": {
+        "autonomy": 0.43,
+        "fatigue": 0.536,
+        "identity_count": 4,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 5,
+        "entries": 5,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.59,
+        "before": 0.525,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.518258,
+        "lineage_marks": 5,
+        "name": "resonant_mallet",
+        "quality": 0.560212
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "construction",
+      "tool": "resonant_mallet",
+      "week": 4
+    },
+    "trace_hash": "c6b6104819323f28",
+    "week": 4
+  },
+  {
+    "after_public": {
+      "autonomy": 0.475,
+      "fatigue": 0.52
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.598
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 13,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.2238,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "medicine",
+        "week": 4
+      },
+      "career": {
+        "autonomy": 0.475,
+        "fatigue": 0.52,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 5,
+        "entries": 5,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.61,
+        "before": 0.545,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.52285,
+        "lineage_marks": 5,
+        "name": "root_satchel",
+        "quality": 0.560445
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "medicine",
+      "tool": "root_satchel",
+      "week": 4
+    },
+    "trace_hash": "77b7891416ad6b9e",
+    "week": 4
+  },
+  {
+    "after_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.365
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.385,
+      "fatigue": 0.339
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 14,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.2628,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "teaching",
+        "week": 4
+      },
+      "career": {
+        "autonomy": 0.43,
+        "fatigue": 0.365,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 5,
+        "entries": 5,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.51,
+        "before": 0.445,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.52085,
+        "lineage_marks": 5,
+        "name": "path_chisel",
+        "quality": 0.560355
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "teaching",
+      "tool": "path_chisel",
+      "week": 4
+    },
+    "trace_hash": "50fcddfeccc96a57",
+    "week": 4
+  },
+  {
+    "after_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.562
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.536
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 15,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.248,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "teaching",
+        "week": 5
+      },
+      "career": {
+        "autonomy": 0.43,
+        "fatigue": 0.562,
+        "identity_count": 4,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 6,
+        "entries": 6,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.4208,
+        "before": 0.3558,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.552466,
+        "lineage_marks": 6,
+        "name": "resonant_mallet",
+        "quality": 0.590157
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "teaching",
+      "tool": "resonant_mallet",
+      "week": 5
+    },
+    "trace_hash": "8a988b40c6cf5b39",
+    "week": 5
+  },
+  {
+    "after_public": {
+      "autonomy": 0.52,
+      "fatigue": 0.546
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.475,
+      "fatigue": 0.52
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 16,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.225,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "care",
+        "week": 5
+      },
+      "career": {
+        "autonomy": 0.52,
+        "fatigue": 0.546,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 6,
+        "entries": 6,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.84,
+        "before": 0.775,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.56125,
+        "lineage_marks": 6,
+        "name": "root_satchel",
+        "quality": 0.590548
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "care",
+      "tool": "root_satchel",
+      "week": 5
+    },
+    "trace_hash": "ea3f27123c2febbb",
+    "week": 5
+  },
+  {
+    "after_public": {
+      "autonomy": 0.475,
+      "fatigue": 0.391
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.365
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 17,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.264,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "routing",
+        "week": 5
+      },
+      "career": {
+        "autonomy": 0.475,
+        "fatigue": 0.391,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 6,
+        "entries": 6,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.84,
+        "before": 0.775,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.55925,
+        "lineage_marks": 6,
+        "name": "path_chisel",
+        "quality": 0.590422
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "routing",
+      "tool": "path_chisel",
+      "week": 5
+    },
+    "trace_hash": "b3746be4692a6b23",
+    "week": 5
+  },
+  {
+    "after_public": {
+      "autonomy": 0.475,
+      "fatigue": 0.588
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.43,
+      "fatigue": 0.562
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 18,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.2492,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "repair",
+        "week": 6
+      },
+      "career": {
+        "autonomy": 0.475,
+        "fatigue": 0.588,
+        "identity_count": 4,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 7,
+        "entries": 7,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.775,
+        "before": 0.71,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.590216,
+        "lineage_marks": 7,
+        "name": "resonant_mallet",
+        "quality": 0.620781
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "repair",
+      "tool": "resonant_mallet",
+      "week": 6
+    },
+    "trace_hash": "a1ef77e2779f77a4",
+    "week": 6
+  },
+  {
+    "after_public": {
+      "autonomy": 0.565,
+      "fatigue": 0.572
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.52,
+      "fatigue": 0.546
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 19,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.2262,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "care",
+        "week": 6
+      },
+      "career": {
+        "autonomy": 0.565,
+        "fatigue": 0.572,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 7,
+        "entries": 7,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.905,
+        "before": 0.84,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.6003,
+        "lineage_marks": 7,
+        "name": "root_satchel",
+        "quality": 0.621353
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "care",
+      "tool": "root_satchel",
+      "week": 6
+    },
+    "trace_hash": "1f0ba882d72a7368",
+    "week": 6
+  },
+  {
+    "after_public": {
+      "autonomy": 0.52,
+      "fatigue": 0.417
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.475,
+      "fatigue": 0.391
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 20,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.2652,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "routing",
+        "week": 6
+      },
+      "career": {
+        "autonomy": 0.52,
+        "fatigue": 0.417,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 7,
+        "entries": 7,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.905,
+        "before": 0.84,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.5983,
+        "lineage_marks": 7,
+        "name": "path_chisel",
+        "quality": 0.621191
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "routing",
+      "tool": "path_chisel",
+      "week": 6
+    },
+    "trace_hash": "cabc9ded669efeba",
+    "week": 6
+  },
+  {
+    "after_public": {
+      "autonomy": 0.52,
+      "fatigue": 0.614
+    },
+    "agent_id": "Ari",
+    "before_public": {
+      "autonomy": 0.475,
+      "fatigue": 0.588
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 21,
+    "flower_node": "work_petal",
+    "frequency_hz": 0.2504,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Fay",
+        "role_fit": true,
+        "skill": "construction",
+        "week": 7
+      },
+      "career": {
+        "autonomy": 0.52,
+        "fatigue": 0.614,
+        "identity_count": 4,
+        "role": "repair_lead"
+      },
+      "lineage": {
+        "career_memories": 8,
+        "entries": 8,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.655,
+        "before": 0.59,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.626766,
+        "lineage_marks": 8,
+        "name": "resonant_mallet",
+        "quality": 0.652062
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "flower_node": "work_petal",
+      "frequency_hz": 0.242,
+      "mentor": "Fay",
+      "pose": "practicing with mentor",
+      "skill": "construction",
+      "tool": "resonant_mallet",
+      "week": 7
+    },
+    "trace_hash": "2833522a4414c2ed",
+    "week": 7
+  },
+  {
+    "after_public": {
+      "autonomy": 0.61,
+      "fatigue": 0.598
+    },
+    "agent_id": "Fay",
+    "before_public": {
+      "autonomy": 0.565,
+      "fatigue": 0.572
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 22,
+    "flower_node": "root_rest",
+    "frequency_hz": 0.2274,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Milo",
+        "role_fit": true,
+        "skill": "medicine",
+        "week": 7
+      },
+      "career": {
+        "autonomy": 0.61,
+        "fatigue": 0.598,
+        "identity_count": 3,
+        "role": "care_steward"
+      },
+      "lineage": {
+        "career_memories": 8,
+        "entries": 8,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.675,
+        "before": 0.61,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.63705,
+        "lineage_marks": 8,
+        "name": "root_satchel",
+        "quality": 0.65282
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "flower_node": "root_rest",
+      "frequency_hz": 0.219,
+      "mentor": "Milo",
+      "pose": "practicing with mentor",
+      "skill": "medicine",
+      "tool": "root_satchel",
+      "week": 7
+    },
+    "trace_hash": "b8037140b0c20d22",
+    "week": 7
+  },
+  {
+    "after_public": {
+      "autonomy": 0.565,
+      "fatigue": 0.443
+    },
+    "agent_id": "Milo",
+    "before_public": {
+      "autonomy": 0.52,
+      "fatigue": 0.417
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_labor": false,
+      "subjective_consciousness": false,
+      "subjective_obligation": false,
+      "subjective_vocation": false
+    },
+    "condition": "integrated_multi_week_apprenticeship_skill_transfer_tool_career",
+    "event_id": 23,
+    "flower_node": "social_petal",
+    "frequency_hz": 0.2664,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "public_packets": {
+      "apprenticeship": {
+        "mentor": "Ari",
+        "role_fit": true,
+        "skill": "teaching",
+        "week": 7
+      },
+      "career": {
+        "autonomy": 0.565,
+        "fatigue": 0.443,
+        "identity_count": 3,
+        "role": "route_keeper"
+      },
+      "lineage": {
+        "career_memories": 8,
+        "entries": 8,
+        "source_schedule_memories": 18
+      },
+      "projects": {
+        "medicine_corner": {
+          "owner": "Fay",
+          "progress": 1.0
+        },
+        "water_route_markers": {
+          "owner": "Milo",
+          "progress": 1.0
+        },
+        "winter_shelter_repair": {
+          "owner": "Ari",
+          "progress": 1.0
+        }
+      },
+      "skill": {
+        "after": 0.575,
+        "before": 0.51,
+        "practice_gain": 0.047,
+        "transfer_gain": 0.018
+      },
+      "tool": {
+        "affinity": 0.63405,
+        "lineage_marks": 8,
+        "name": "path_chisel",
+        "quality": 0.652604
+      }
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "flower_node": "social_petal",
+      "frequency_hz": 0.258,
+      "mentor": "Ari",
+      "pose": "practicing with mentor",
+      "skill": "teaching",
+      "tool": "path_chisel",
+      "week": 7
+    },
+    "trace_hash": "95f07fa4d1b1a6d1",
+    "week": 7
+  }
+];

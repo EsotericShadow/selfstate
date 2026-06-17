@@ -1,0 +1,17 @@
+condition,agent_count,simulated_weeks,career_events,multi_week_apprenticeship_rate,mentor_assignment_rate,skill_practice_rate,skill_transfer_rate,tool_specialization_rate,career_identity_stability_rate,teaching_lineage_rate,craft_quality_improvement_rate,project_role_fit_rate,apprentice_autonomy_growth_rate,fatigue_learning_balance_rate,schedule_memory_binding_rate,frequency_flower_career_rhythm_rate,browser_career_replay_rate,privacy_preservation_rate,trace_integrity,apprenticeship_career_readiness
+integrated_multi_week_apprenticeship_skill_transfer_tool_career,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9925
+no_apprenticeship,3,8,24,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.708333,0.0,1.0,1.0,1.0,1.0,0.2925
+no_mentor_assignment,3,8,24,1.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.7525
+no_skill_practice,3,8,24,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.791667,1.0,1.0,1.0,1.0,1.0,1.0,0.9075
+no_skill_transfer,3,8,24,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9025
+no_tool_specialization,3,8,24,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9125
+no_career_identity,3,8,24,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9025
+no_teaching_lineage,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9225
+no_craft_quality,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9125
+no_project_role_fit,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.9225
+no_autonomy_growth,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_fatigue_learning_balance,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,0.0,1.0,1.0,1.0,1.0,1.0,0.9325
+no_schedule_memory_binding,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,0.0,1.0,1.0,1.0,1.0,0.9325
+no_frequency_flower_binding,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,0.0,1.0,1.0,1.0,0.9525
+no_browser_replay,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,0.0,1.0,1.0,0.9625
+no_privacy_filter,3,8,24,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,0.0,1.0,0.9725

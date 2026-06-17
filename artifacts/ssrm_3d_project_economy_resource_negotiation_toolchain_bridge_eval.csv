@@ -1,0 +1,14 @@
+condition,agent_count,object_count,resource_count,project_count,economy_events,resource_scarcity_binding_rate,tool_chain_completion_rate,negotiation_resolution_rate,exchange_ledger_integrity_rate,fair_allocation_rate,repair_reuse_rate,route_cost_accounting_rate,trust_price_modulation_rate,project_output_rate,resource_conservation_rate,frequency_flower_economy_binding_rate,browser_economy_replay_rate,privacy_preservation_rate,trace_integrity,project_economy_readiness
+integrated_project_economy_resource_negotiation_toolchain,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_resource_scarcity,3,6,9,3,9,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.73
+no_tool_chains,3,6,7,3,9,0.0,0.0,0.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.47
+no_negotiation,3,6,7,3,9,1.0,0.111111,0.0,1.0,1.0,0.0,1.0,1.0,0.333333,1.0,0.0,1.0,1.0,1.0,0.614444
+no_exchange_ledger,3,6,9,3,9,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_fair_allocation,3,6,9,3,9,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_repair_reuse,3,6,7,3,9,1.0,0.777778,1.0,1.0,1.0,0.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,0.841111
+no_route_cost_accounting,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_trust_price_modulation,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_project_outputs,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_frequency_flower_economy_binding,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.94
+no_replay_timeline,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.96
+no_privacy_filter,3,6,9,3,9,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.98

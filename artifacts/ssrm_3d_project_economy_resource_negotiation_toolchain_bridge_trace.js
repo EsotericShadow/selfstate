@@ -1,0 +1,1180 @@
+window.SSRM_3D_PROJECT_ECONOMY_RESOURCE_NEGOTIATION_TOOLCHAIN_TRACE = [
+  {
+    "agent_id": "Fay",
+    "allocated_resources": [
+      {
+        "requested": "reed_bundle",
+        "resource_after": {
+          "base_price": 0.42,
+          "consumed": 1,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.233,
+          "initial_stock": 1,
+          "place": "reed_wetland",
+          "produced_by_reuse": 0,
+          "resource_id": "reed_bundle",
+          "scarce": true,
+          "scarcity": "critical",
+          "stock": 0
+        },
+        "used": "reed_bundle"
+      },
+      {
+        "requested": "dry_moss",
+        "resource_after": {
+          "base_price": 0.31,
+          "consumed": 1,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.218,
+          "initial_stock": 2,
+          "place": "moss_hollow",
+          "produced_by_reuse": 0,
+          "resource_id": "dry_moss",
+          "scarce": true,
+          "scarcity": "limited",
+          "stock": 1
+        },
+        "used": "dry_moss"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.2255,
+    "event_id": 0,
+    "exchange_ledger_entry": {
+      "agent_id": "Fay",
+      "allocated": [
+        {
+          "requested": "reed_bundle",
+          "used": "reed_bundle"
+        },
+        {
+          "requested": "dry_moss",
+          "used": "dry_moss"
+        }
+      ],
+      "blocked": [],
+      "event_id": 0,
+      "ledger_id": "279e85407ae029df",
+      "price": 0.637823,
+      "route_cost": 0.0,
+      "stage": "weave_bedding",
+      "trust_modifier": 0.87373
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 0,
+        "Fay": 2,
+        "Milo": 0
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "social_petal",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate reed_bundle,dry_moss to Fay:weave_bedding",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "insulated_moss_bedding",
+    "project_output_packet": null,
+    "replay_frame": {
+      "agent_id": "Fay",
+      "allocated": [
+        {
+          "requested": "reed_bundle",
+          "used": "reed_bundle"
+        },
+        {
+          "requested": "dry_moss",
+          "used": "dry_moss"
+        }
+      ],
+      "blocked": [],
+      "event_id": 0,
+      "outputs": {},
+      "replay_index": 0,
+      "stage": "weave_bedding"
+    },
+    "required_resources": [
+      "reed_bundle",
+      "dry_moss"
+    ],
+    "reuse_packet": {
+      "consumed": [],
+      "enabled": true,
+      "produced": [
+        "reed_offcut"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.0,
+      "enabled": true,
+      "from": "moss_hollow",
+      "to": "moss_hollow"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "reed_bundle",
+        "dry_moss"
+      ],
+      "scarcity_count": 2
+    },
+    "stage": "weave_bedding",
+    "stage_complete": true,
+    "tool": "dry_cloak",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.637823,
+      "trust_modifier": 0.87373
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "allocated_resources": [
+      {
+        "requested": "clay_mass",
+        "resource_after": {
+          "base_price": 0.38,
+          "consumed": 1,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.241,
+          "initial_stock": 1,
+          "place": "clay_basin",
+          "produced_by_reuse": 0,
+          "resource_id": "clay_mass",
+          "scarce": true,
+          "scarcity": "hard",
+          "stock": 0
+        },
+        "used": "clay_mass"
+      },
+      {
+        "requested": "repair_fiber",
+        "resource_after": {
+          "base_price": 0.34,
+          "consumed": 1,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.229,
+          "initial_stock": 1,
+          "place": "reed_wetland",
+          "produced_by_reuse": 0,
+          "resource_id": "repair_fiber",
+          "scarce": true,
+          "scarcity": "hard",
+          "stock": 0
+        },
+        "used": "repair_fiber"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.235,
+    "event_id": 1,
+    "exchange_ledger_entry": {
+      "agent_id": "Ari",
+      "allocated": [
+        {
+          "requested": "clay_mass",
+          "used": "clay_mass"
+        },
+        {
+          "requested": "repair_fiber",
+          "used": "repair_fiber"
+        }
+      ],
+      "blocked": [],
+      "event_id": 1,
+      "ledger_id": "ab52b9606489a76e",
+      "price": 1.184083,
+      "route_cost": 0.624197,
+      "stage": "prepare_patch",
+      "trust_modifier": 0.880885
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 2,
+        "Fay": 2,
+        "Milo": 0
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "work_petal",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate clay_mass,repair_fiber to Ari:prepare_patch",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "durable_clay_latch",
+    "project_output_packet": null,
+    "replay_frame": {
+      "agent_id": "Ari",
+      "allocated": [
+        {
+          "requested": "clay_mass",
+          "used": "clay_mass"
+        },
+        {
+          "requested": "repair_fiber",
+          "used": "repair_fiber"
+        }
+      ],
+      "blocked": [],
+      "event_id": 1,
+      "outputs": {},
+      "replay_index": 1,
+      "stage": "prepare_patch"
+    },
+    "required_resources": [
+      "clay_mass",
+      "repair_fiber"
+    ],
+    "reuse_packet": {
+      "consumed": [],
+      "enabled": true,
+      "produced": [
+        "reed_offcut"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.624197,
+      "enabled": true,
+      "from": "hearth_vale",
+      "to": "clay_basin"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "clay_mass",
+        "repair_fiber"
+      ],
+      "scarcity_count": 2
+    },
+    "stage": "prepare_patch",
+    "stage_complete": true,
+    "tool": "clay_patch_kit",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 1.184083,
+      "trust_modifier": 0.880885
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "allocated_resources": [
+      {
+        "requested": "glass_shard",
+        "resource_after": {
+          "base_price": 0.46,
+          "consumed": 1,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.267,
+          "initial_stock": 1,
+          "place": "glass_mire",
+          "produced_by_reuse": 0,
+          "resource_id": "glass_shard",
+          "scarce": true,
+          "scarcity": "critical",
+          "stock": 0
+        },
+        "used": "glass_shard"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.267,
+    "event_id": 2,
+    "exchange_ledger_entry": {
+      "agent_id": "Milo",
+      "allocated": [
+        {
+          "requested": "glass_shard",
+          "used": "glass_shard"
+        }
+      ],
+      "blocked": [],
+      "event_id": 2,
+      "ledger_id": "742e2dd73ca2fdc5",
+      "price": 1.07482,
+      "route_cost": 0.76172,
+      "stage": "inspect_ridge",
+      "trust_modifier": 0.87976
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 2,
+        "Fay": 2,
+        "Milo": 1
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "explore_petal",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate glass_shard to Milo:inspect_ridge",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "ridge_signal_array",
+    "project_output_packet": null,
+    "replay_frame": {
+      "agent_id": "Milo",
+      "allocated": [
+        {
+          "requested": "glass_shard",
+          "used": "glass_shard"
+        }
+      ],
+      "blocked": [],
+      "event_id": 2,
+      "outputs": {},
+      "replay_index": 2,
+      "stage": "inspect_ridge"
+    },
+    "required_resources": [
+      "glass_shard"
+    ],
+    "reuse_packet": {
+      "consumed": [],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.76172,
+      "enabled": true,
+      "from": "stone_ridge",
+      "to": "glass_mire"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "glass_shard"
+      ],
+      "scarcity_count": 1
+    },
+    "stage": "inspect_ridge",
+    "stage_complete": true,
+    "tool": "glass_lens",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 1.07482,
+      "trust_modifier": 0.87976
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "allocated_resources": [
+      {
+        "requested": "ember_heat",
+        "resource_after": {
+          "base_price": 0.36,
+          "consumed": 1,
+          "flower_node": "dawn_breath",
+          "frequency_hz": 0.214,
+          "initial_stock": 2,
+          "place": "hearth_vale",
+          "produced_by_reuse": 0,
+          "resource_id": "ember_heat",
+          "scarce": true,
+          "scarcity": "limited",
+          "stock": 1
+        },
+        "used": "ember_heat"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.214,
+    "event_id": 3,
+    "exchange_ledger_entry": {
+      "agent_id": "Fay",
+      "allocated": [
+        {
+          "requested": "ember_heat",
+          "used": "ember_heat"
+        }
+      ],
+      "blocked": [],
+      "event_id": 3,
+      "ledger_id": "bdcc1f89c0764db4",
+      "price": 0.314543,
+      "route_cost": 0.0,
+      "stage": "warm_bedding",
+      "trust_modifier": 0.87373
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 2,
+        "Fay": 3,
+        "Milo": 1
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "dawn_breath",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate ember_heat to Fay:warm_bedding",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "insulated_moss_bedding",
+    "project_output_packet": null,
+    "replay_frame": {
+      "agent_id": "Fay",
+      "allocated": [
+        {
+          "requested": "ember_heat",
+          "used": "ember_heat"
+        }
+      ],
+      "blocked": [],
+      "event_id": 3,
+      "outputs": {},
+      "replay_index": 3,
+      "stage": "warm_bedding"
+    },
+    "required_resources": [
+      "ember_heat"
+    ],
+    "reuse_packet": {
+      "consumed": [],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.0,
+      "enabled": true,
+      "from": "moss_hollow",
+      "to": "moss_hollow"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "ember_heat"
+      ],
+      "scarcity_count": 1
+    },
+    "stage": "warm_bedding",
+    "stage_complete": true,
+    "tool": "ember_blanket",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.314543,
+      "trust_modifier": 0.87373
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "allocated_resources": [
+      {
+        "requested": "signal_charge",
+        "resource_after": {
+          "base_price": 0.4,
+          "consumed": 1,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "initial_stock": 1,
+          "place": "stone_ridge",
+          "produced_by_reuse": 0,
+          "resource_id": "signal_charge",
+          "scarce": true,
+          "scarcity": "hard",
+          "stock": 0
+        },
+        "used": "signal_charge"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.258,
+    "event_id": 4,
+    "exchange_ledger_entry": {
+      "agent_id": "Milo",
+      "allocated": [
+        {
+          "requested": "signal_charge",
+          "used": "signal_charge"
+        }
+      ],
+      "blocked": [],
+      "event_id": 4,
+      "ledger_id": "209cd5f80509d6e6",
+      "price": 0.351904,
+      "route_cost": 0.0,
+      "stage": "charge_signal",
+      "trust_modifier": 0.87976
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 2,
+        "Fay": 3,
+        "Milo": 2
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "social_petal",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate signal_charge to Milo:charge_signal",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "ridge_signal_array",
+    "project_output_packet": null,
+    "replay_frame": {
+      "agent_id": "Milo",
+      "allocated": [
+        {
+          "requested": "signal_charge",
+          "used": "signal_charge"
+        }
+      ],
+      "blocked": [],
+      "event_id": 4,
+      "outputs": {},
+      "replay_index": 4,
+      "stage": "charge_signal"
+    },
+    "required_resources": [
+      "signal_charge"
+    ],
+    "reuse_packet": {
+      "consumed": [],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.0,
+      "enabled": true,
+      "from": "stone_ridge",
+      "to": "stone_ridge"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "signal_charge"
+      ],
+      "scarcity_count": 1
+    },
+    "stage": "charge_signal",
+    "stage_complete": true,
+    "tool": "signal_shell",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.351904,
+      "trust_modifier": 0.87976
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "allocated_resources": [
+      {
+        "requested": "ember_heat",
+        "resource_after": {
+          "base_price": 0.36,
+          "consumed": 2,
+          "flower_node": "dawn_breath",
+          "frequency_hz": 0.214,
+          "initial_stock": 2,
+          "place": "hearth_vale",
+          "produced_by_reuse": 0,
+          "resource_id": "ember_heat",
+          "scarce": true,
+          "scarcity": "limited",
+          "stock": 0
+        },
+        "used": "ember_heat"
+      },
+      {
+        "requested": "dry_moss",
+        "resource_after": {
+          "base_price": 0.31,
+          "consumed": 2,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.218,
+          "initial_stock": 2,
+          "place": "moss_hollow",
+          "produced_by_reuse": 0,
+          "resource_id": "dry_moss",
+          "scarce": true,
+          "scarcity": "limited",
+          "stock": 0
+        },
+        "used": "dry_moss"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.216,
+    "event_id": 5,
+    "exchange_ledger_entry": {
+      "agent_id": "Ari",
+      "allocated": [
+        {
+          "requested": "ember_heat",
+          "used": "ember_heat"
+        },
+        {
+          "requested": "dry_moss",
+          "used": "dry_moss"
+        }
+      ],
+      "blocked": [],
+      "event_id": 5,
+      "ledger_id": "a9e873babff977cb",
+      "price": 0.590193,
+      "route_cost": 0.0,
+      "stage": "dry_patch",
+      "trust_modifier": 0.880885
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 4,
+        "Fay": 3,
+        "Milo": 2
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "dawn_breath",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate ember_heat,dry_moss to Ari:dry_patch",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "durable_clay_latch",
+    "project_output_packet": null,
+    "replay_frame": {
+      "agent_id": "Ari",
+      "allocated": [
+        {
+          "requested": "ember_heat",
+          "used": "ember_heat"
+        },
+        {
+          "requested": "dry_moss",
+          "used": "dry_moss"
+        }
+      ],
+      "blocked": [],
+      "event_id": 5,
+      "outputs": {},
+      "replay_index": 5,
+      "stage": "dry_patch"
+    },
+    "required_resources": [
+      "ember_heat",
+      "dry_moss"
+    ],
+    "reuse_packet": {
+      "consumed": [],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.0,
+      "enabled": true,
+      "from": "hearth_vale",
+      "to": "hearth_vale"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "ember_heat",
+        "dry_moss"
+      ],
+      "scarcity_count": 2
+    },
+    "stage": "dry_patch",
+    "stage_complete": true,
+    "tool": "dry_cloak",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.590193,
+      "trust_modifier": 0.880885
+    }
+  },
+  {
+    "agent_id": "Milo",
+    "allocated_resources": [
+      {
+        "requested": "reed_bundle",
+        "resource_after": {
+          "base_price": 0.18,
+          "consumed": 1,
+          "flower_node": "return_petal",
+          "frequency_hz": 0.236,
+          "initial_stock": 0,
+          "place": "moss_hollow",
+          "produced_by_reuse": 1,
+          "resource_id": "reed_offcut",
+          "scarce": true,
+          "scarcity": "reuse",
+          "stock": 0
+        },
+        "used": "reed_offcut"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.236,
+    "event_id": 6,
+    "exchange_ledger_entry": {
+      "agent_id": "Milo",
+      "allocated": [
+        {
+          "requested": "reed_bundle",
+          "used": "reed_offcut"
+        }
+      ],
+      "blocked": [],
+      "event_id": 6,
+      "ledger_id": "f525d781544153e6",
+      "price": 0.369499,
+      "route_cost": 0.0,
+      "stage": "mount_signal",
+      "trust_modifier": 0.87976
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 4,
+        "Fay": 3,
+        "Milo": 3
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "return_petal",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate reed_bundle to Milo:mount_signal",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "ridge_signal_array",
+    "project_output_packet": {
+      "agent_id": "Milo",
+      "created_event": 6,
+      "durability": 0.88,
+      "output_id": "route_warning_signal_ready",
+      "project_id": "ridge_signal_array"
+    },
+    "replay_frame": {
+      "agent_id": "Milo",
+      "allocated": [
+        {
+          "requested": "reed_bundle",
+          "used": "reed_offcut"
+        }
+      ],
+      "blocked": [],
+      "event_id": 6,
+      "outputs": {
+        "route_warning_signal_ready": {
+          "agent_id": "Milo",
+          "created_event": 6,
+          "durability": 0.88,
+          "output_id": "route_warning_signal_ready",
+          "project_id": "ridge_signal_array"
+        }
+      },
+      "replay_index": 6,
+      "stage": "mount_signal"
+    },
+    "required_resources": [
+      "reed_bundle"
+    ],
+    "reuse_packet": {
+      "consumed": [
+        "reed_offcut"
+      ],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.0,
+      "enabled": true,
+      "from": "stone_ridge",
+      "to": "stone_ridge"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "reed_bundle"
+      ],
+      "scarcity_count": 1
+    },
+    "stage": "mount_signal",
+    "stage_complete": true,
+    "tool": "signal_shell",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.369499,
+      "trust_modifier": 0.87976
+    }
+  },
+  {
+    "agent_id": "Ari",
+    "allocated_resources": [
+      {
+        "requested": "glass_shard",
+        "resource_after": {
+          "base_price": 0.2,
+          "consumed": 1,
+          "flower_node": "explore_petal",
+          "frequency_hz": 0.271,
+          "initial_stock": 0,
+          "place": "glass_mire",
+          "produced_by_reuse": 1,
+          "resource_id": "glass_reading",
+          "scarce": true,
+          "scarcity": "reuse",
+          "stock": 0
+        },
+        "used": "glass_reading"
+      }
+    ],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": 0.271,
+    "event_id": 7,
+    "exchange_ledger_entry": {
+      "agent_id": "Ari",
+      "allocated": [
+        {
+          "requested": "glass_shard",
+          "used": "glass_reading"
+        }
+      ],
+      "blocked": [],
+      "event_id": 7,
+      "ledger_id": "3b71f86d9dbe2919",
+      "price": 0.955053,
+      "route_cost": 0.624197,
+      "stage": "align_latch",
+      "trust_modifier": 0.880885
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 5,
+        "Fay": 3,
+        "Milo": 3
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "explore_petal",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Ari",
+        "Fay",
+        "Milo"
+      ],
+      "proposal": "allocate glass_shard to Ari:align_latch",
+      "reason": "scarce_resource_allocation"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "durable_clay_latch",
+    "project_output_packet": {
+      "agent_id": "Ari",
+      "created_event": 7,
+      "durability": 0.88,
+      "output_id": "hearth_latch_repaired",
+      "project_id": "durable_clay_latch"
+    },
+    "replay_frame": {
+      "agent_id": "Ari",
+      "allocated": [
+        {
+          "requested": "glass_shard",
+          "used": "glass_reading"
+        }
+      ],
+      "blocked": [],
+      "event_id": 7,
+      "outputs": {
+        "hearth_latch_repaired": {
+          "agent_id": "Ari",
+          "created_event": 7,
+          "durability": 0.88,
+          "output_id": "hearth_latch_repaired",
+          "project_id": "durable_clay_latch"
+        },
+        "route_warning_signal_ready": {
+          "agent_id": "Milo",
+          "created_event": 6,
+          "durability": 0.88,
+          "output_id": "route_warning_signal_ready",
+          "project_id": "ridge_signal_array"
+        }
+      },
+      "replay_index": 7,
+      "stage": "align_latch"
+    },
+    "required_resources": [
+      "glass_shard"
+    ],
+    "reuse_packet": {
+      "consumed": [
+        "reed_offcut",
+        "glass_reading"
+      ],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.624197,
+      "enabled": true,
+      "from": "hearth_vale",
+      "to": "clay_basin"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [
+        "glass_shard"
+      ],
+      "scarcity_count": 1
+    },
+    "stage": "align_latch",
+    "stage_complete": true,
+    "tool": "glass_lens",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.955053,
+      "trust_modifier": 0.880885
+    }
+  },
+  {
+    "agent_id": "Fay",
+    "allocated_resources": [],
+    "blocked_resources": [],
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "complete_playable_world": false,
+      "moral_patienthood": false,
+      "natural_language_emergence": false,
+      "subjective_consciousness": false
+    },
+    "condition": "integrated_project_economy_resource_negotiation_toolchain",
+    "economy_frequency_hz": null,
+    "event_id": 8,
+    "exchange_ledger_entry": {
+      "agent_id": "Fay",
+      "allocated": [],
+      "blocked": [],
+      "event_id": 8,
+      "ledger_id": "22db231ff52aba2a",
+      "price": 0.0,
+      "route_cost": 0.0,
+      "stage": "share_water_care",
+      "trust_modifier": 0.87373
+    },
+    "fairness_packet": {
+      "allocations": {
+        "Ari": 5,
+        "Fay": 3,
+        "Milo": 3
+      },
+      "enabled": true,
+      "fair": true
+    },
+    "flower_node": "unbound",
+    "negotiation_packet": {
+      "accepted": true,
+      "participants": [
+        "Fay"
+      ],
+      "proposal": "non_scarce_stage",
+      "reason": "available_stock"
+    },
+    "private_negotiation_hidden": true,
+    "project_id": "insulated_moss_bedding",
+    "project_output_packet": {
+      "agent_id": "Fay",
+      "created_event": 8,
+      "durability": 0.88,
+      "output_id": "dry_bedding_ready",
+      "project_id": "insulated_moss_bedding"
+    },
+    "replay_frame": {
+      "agent_id": "Fay",
+      "allocated": [],
+      "blocked": [],
+      "event_id": 8,
+      "outputs": {
+        "dry_bedding_ready": {
+          "agent_id": "Fay",
+          "created_event": 8,
+          "durability": 0.88,
+          "output_id": "dry_bedding_ready",
+          "project_id": "insulated_moss_bedding"
+        },
+        "hearth_latch_repaired": {
+          "agent_id": "Ari",
+          "created_event": 7,
+          "durability": 0.88,
+          "output_id": "hearth_latch_repaired",
+          "project_id": "durable_clay_latch"
+        },
+        "route_warning_signal_ready": {
+          "agent_id": "Milo",
+          "created_event": 6,
+          "durability": 0.88,
+          "output_id": "route_warning_signal_ready",
+          "project_id": "ridge_signal_array"
+        }
+      },
+      "replay_index": 8,
+      "stage": "share_water_care"
+    },
+    "required_resources": [],
+    "reuse_packet": {
+      "consumed": [
+        "reed_offcut",
+        "glass_reading"
+      ],
+      "enabled": true,
+      "produced": [
+        "reed_offcut",
+        "glass_reading"
+      ]
+    },
+    "route_cost_packet": {
+      "cost": 0.0,
+      "enabled": true,
+      "from": "moss_hollow",
+      "to": "moss_hollow"
+    },
+    "scarcity_packet": {
+      "enabled": true,
+      "scarce_resources": [],
+      "scarcity_count": 0
+    },
+    "stage": "share_water_care",
+    "stage_complete": true,
+    "tool": "reed_cup",
+    "trust_price_packet": {
+      "enabled": true,
+      "price": 0.0,
+      "trust_modifier": 0.87373
+    }
+  }
+];

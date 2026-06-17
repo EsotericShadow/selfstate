@@ -1,0 +1,12 @@
+condition,agent_count,decision_events,trait_stability_rate,preference_consistency_rate,differentiated_response_rate,context_sensitivity_rate,non_rigidity_rate,repeated_choice_stability_rate,preference_memory_recall_rate,temperament_behavior_coupling_rate,cross_context_identity_rate,noise_resistance_rate,readable_profile_rate,trace_integrity,temperament_preference_readiness
+integrated_temperament_preference_stability,8,512,1.0,0.529297,0.875,0.890625,1.0,0.986607,0.529297,0.988281,1.0,1.0,1.0,1.0,0.885845
+no_temperament,8,512,0.25,0.546875,0.25,0.984375,1.0,1.0,0.546875,0.984375,1.0,1.0,1.0,1.0,0.760938
+no_preferences,8,512,1.0,0.0,0.875,0.919922,1.0,0.988839,0.0,0.992188,1.0,1.0,1.0,1.0,0.788507
+no_identity_memory,8,512,1.0,0.529297,0.875,0.890625,1.0,0.986607,0.529297,0.988281,0.0,1.0,1.0,1.0,0.805845
+no_context_sensitivity,8,512,1.0,0.623047,0.875,0.0,0.375,0.892857,0.623047,0.921875,1.0,0.875,1.0,1.0,0.742174
+no_individual_differentiation,8,512,1.0,0.53125,0.2,1.0,1.0,1.0,0.53125,0.984375,1.0,1.0,1.0,1.0,0.829375
+no_preference_recall,8,512,1.0,0.0,0.875,0.890625,1.0,0.986607,0.0,0.988281,1.0,1.0,1.0,1.0,0.785279
+no_non_rigidity,8,512,1.0,0.53125,0.75,0.890625,0.0,1.0,0.53125,1.0,1.0,1.0,1.0,1.0,0.786094
+no_noise_resistance,8,512,1.0,0.539062,1.0,0.878906,1.0,0.901786,0.539062,0.841797,1.0,0.0,1.0,1.0,0.796864
+no_behavior_coupling,8,512,1.0,0.529297,0.875,0.890625,1.0,0.986607,0.529297,0.0,1.0,1.0,1.0,1.0,0.787017
+no_readable_profile,8,512,1.0,0.529297,0.875,0.890625,1.0,0.986607,0.529297,0.988281,1.0,1.0,0.0,1.0,0.825845

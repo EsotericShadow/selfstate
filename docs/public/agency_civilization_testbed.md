@@ -300,3 +300,6 @@ Report 167 adds ownership and boundary refusal: agents protect mine/consent boun
 
 
 Report 168 adds social face and reputation memory: agents distinguish public from private treatment, track audiences, update reputation, correct gossip, repair public embarrassment, and keep shame bounded with readiness `0.998250`. The next gate is individual temperament and preference stability.
+
+
+Report 169 adds temperament and preference stability: stable traits and preferences shape repeated behavior, differentiate agents, resist noise, and remain flexible across context with readiness `0.885845`. The next gate is readable ego body-language.

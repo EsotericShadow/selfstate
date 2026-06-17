@@ -698,3 +698,6 @@ Report 167 adds ownership and boundary refusal. Agents now distinguish owned obj
 
 
 Report 168 adds social face and reputation memory. Agents now distinguish public from private treatment, track audiences, update public respect and group reputation, record rumors, correct false gossip, repair public embarrassment, and keep shame bounded. This extends ego from private self-boundary into public social standing without claiming consciousness.
+
+
+Report 169 adds temperament and preference stability. Agents now face repeated shared contexts where stable temperament and preferences shape action tendencies, preference recall, differentiated behavior, identity memory, noise resistance, and non-rigid context sensitivity. The readiness is `0.885845`, intentionally lower than infrastructure bridges because this is a harder individuality claim, not a perfect scripted pass.

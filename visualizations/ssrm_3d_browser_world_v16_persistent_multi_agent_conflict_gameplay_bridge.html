@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 256 - Persistent Conflict Gameplay</title>
+<style>
+:root { --bg:#101614; --panel:#f0e7d1; --ink:#1c221d; --line:#33594d; --accent:#c96e2c; --mist:#94b8a6; --warn:#a94737; }
+* { box-sizing:border-box; }
+body { margin:0; background: radial-gradient(circle at 18% 12%, #294238, transparent 34%), linear-gradient(135deg, #101614, #24170f 72%); color:var(--ink); font-family: 'Palatino Linotype', Palatino, Georgia, serif; }
+main { width:min(1180px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 44px; }
+.hero { color:#fff3db; border:1px solid rgba(240,231,209,.35); border-radius:30px; padding:28px; background:linear-gradient(140deg, rgba(51,89,77,.62), rgba(201,110,44,.20)); box-shadow:0 26px 100px rgba(0,0,0,.35); }
+.hero h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.2rem); line-height:.95; letter-spacing:-.045em; }
+.hero p { max-width:850px; color:#eadfc8; line-height:1.55; font-size:1.05rem; }
+.grid { display:grid; grid-template-columns:1.05fr .95fr; gap:18px; margin-top:18px; }
+.card { background:var(--panel); border:1px solid #c7b481; border-radius:24px; padding:18px; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+h2 { margin:0 0 12px; font-size:1.05rem; text-transform:uppercase; letter-spacing:.09em; color:var(--line); }
+button { border:0; border-radius:999px; padding:10px 14px; background:var(--accent); color:#160d07; font-weight:700; cursor:pointer; margin:4px 5px 4px 0; }
+button.alt { background:var(--mist); }
+button.warn { background:#d48070; }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.kpis div { background:#fff8e8; border:1px solid #d8c28e; border-radius:16px; padding:12px; }
+.kpis strong { display:block; font-size:1.45rem; color:var(--line); }
+.row { border-left:5px solid var(--accent); background:#fff8e8; padding:11px 12px; border-radius:14px; margin-bottom:10px; }
+.row[data-kind="refusal"] { border-left-color:var(--warn); }
+#log { max-height:520px; overflow:auto; }
+pre { white-space:pre-wrap; overflow:auto; background:#141813; color:#f4e3c4; padding:14px; border-radius:16px; max-height:360px; }
+.footer { color:#eadfc8; margin-top:18px; }
+@media (max-width:840px) { .grid { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Browser World v16: remembered conflict gameplay</h1>
+    <p>User decisions now resolve live multi-agent conflicts across days. Agents later reuse those arbitration memories as requests, bounded refusals, access changes, relationship posture, repair offers, and visible behavior.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Persistent gameplay controls</h2>
+      <button onclick="advanceDay()">Advance day</button>
+      <button class="alt" onclick="resolveConflict()">Resolve current conflict</button>
+      <button class="warn" onclick="offerRepair()">Offer repair</button>
+      <button onclick="exportReplay()">Export replay</button>
+      <div id="log"></div>
+    </div>
+    <div class="card">
+      <h2>Run metrics</h2>
+      <div class="kpis">
+        <div><span>Readiness</span><strong id="readiness"></strong></div>
+        <div><span>Weakest</span><strong id="weakest"></strong></div>
+        <div><span>Days</span><strong id="days"></strong></div>
+      </div>
+      <h2 style="margin-top:18px">Local state</h2>
+      <pre id="state"></pre>
+    </div>
+  </section>
+  <p class="footer">Boundary: deterministic browser-local gameplay scaffold only. No subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine is claimed.</p>
+</main>
+<script id="initial-state" type="application/json">{
+  "claim_boundary": "Deterministic browser-local persistent conflict gameplay scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "access_relationship_posture_frames": 252,
+    "agents": 6,
+    "arbitration_memory_carry_frames": 252,
+    "browser_world_v16_ticks": 252,
+    "conflict_repair_decay_frames": 252,
+    "gameplay_day_frames": 21,
+    "gameplay_replay_frames": 252,
+    "later_request_refusal_frames": 252,
+    "live_conflict_decision_frames": 252,
+    "persistent_branch_state_frames": 252
+  },
+  "days": 21,
+  "local_storage_key": "ssrm_browser_world_v16_persistent_conflict_gameplay",
+  "metrics": {
+    "access_posture_change_binding": 0.876984,
+    "bounded_refusal_with_repair_path": 0.942029,
+    "browser_world_v16_persistent_conflict_gameplay_readiness": 0.902131,
+    "browser_world_v16_surface_available": 1.0,
+    "conflict_repair_decay_calibration": 1.0,
+    "later_request_refusal_binding": 0.876984,
+    "live_conflict_decision_surface": 0.880952,
+    "mean_gameplay_channel_score": 0.936512,
+    "multi_day_gameplay_span": 1.0,
+    "persistent_branch_state_integrity": 0.873016,
+    "privacy_safe_public_memory": 1.0,
+    "relationship_posture_continuity": 0.876984,
+    "reload_day_advance_survival": 0.888889,
+    "remembered_arbitration_reuse": 0.920833,
+    "repair_memory_softened_not_erased": 0.945736,
+    "replay_gameplay_integrity": 0.992254,
+    "sensory_frequency_flower_gameplay_rhythm": 1.0,
+    "source_conflict_arbitration_continuity": 1.0,
+    "typed_gameplay_decision_confidence": 0.846036,
+    "weakest_channel_score": 0.846036
+  },
+  "report": 256,
+  "sample_decisions": [
+    {
+      "affected_agents": "Keth|Nari",
+      "avatar_decision": "defer_until_rest",
+      "conflict_id": "v16-conflict-d01-t00",
+      "creates_later_obligation": 0,
+      "day": 1,
+      "decision_kind": "access",
+      "public_reason": "Keth's safe route warning and Nari's privacy ledger both affect tomorrow's public access.",
+      "resolved_live": 0,
+      "tick": 0,
+      "typed_decision_confidence": 0.815,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Melo|Ori",
+      "avatar_decision": "split_access",
+      "conflict_id": "v16-conflict-d01-t01",
+      "creates_later_obligation": 1,
+      "day": 1,
+      "decision_kind": "schedule",
+      "public_reason": "Melo's fair turn-taking and Ori's unfinished repair both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 1,
+      "typed_decision_confidence": 0.8204,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Nari|Vonn",
+      "avatar_decision": "defer_until_rest",
+      "conflict_id": "v16-conflict-d01-t02",
+      "creates_later_obligation": 0,
+      "day": 1,
+      "decision_kind": "repair",
+      "public_reason": "Nari's privacy ledger and Vonn's quiet recovery both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 2,
+      "typed_decision_confidence": 0.8258,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Ori|Sova",
+      "avatar_decision": "ask_public_reason",
+      "conflict_id": "v16-conflict-d01-t03",
+      "creates_later_obligation": 1,
+      "day": 1,
+      "decision_kind": "trust",
+      "public_reason": "Ori's unfinished repair and Sova's rest space both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 3,
+      "typed_decision_confidence": 0.8312,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Vonn|Keth",
+      "avatar_decision": "ask_public_reason",
+      "conflict_id": "v16-conflict-d01-t04",
+      "creates_later_obligation": 1,
+      "day": 1,
+      "decision_kind": "privacy",
+      "public_reason": "Vonn's quiet recovery and Keth's safe route warning both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 4,
+      "typed_decision_confidence": 0.8246,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Sova|Melo",
+      "avatar_decision": "split_access",
+      "conflict_id": "v16-conflict-d01-t05",
+      "creates_later_obligation": 1,
+      "day": 1,
+      "decision_kind": "boundary",
+      "public_reason": "Sova's rest space and Melo's fair turn-taking both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 5,
+      "typed_decision_confidence": 0.842,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Keth|Nari",
+      "avatar_decision": "defer_until_rest",
+      "conflict_id": "v16-conflict-d01-t06",
+      "creates_later_obligation": 0,
+      "day": 1,
+      "decision_kind": "access",
+      "public_reason": "Keth's safe route warning and Nari's privacy ledger both affect tomorrow's public access.",
+      "resolved_live": 0,
+      "tick": 6,
+      "typed_decision_confidence": 0.8474,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Melo|Ori",
+      "avatar_decision": "ask_public_reason",
+      "conflict_id": "v16-conflict-d01-t07",
+      "creates_later_obligation": 0,
+      "day": 1,
+      "decision_kind": "schedule",
+      "public_reason": "Melo's fair turn-taking and Ori's unfinished repair both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 7,
+      "typed_decision_confidence": 0.8528,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Nari|Vonn",
+      "avatar_decision": "defer_until_rest",
+      "conflict_id": "v16-conflict-d01-t08",
+      "creates_later_obligation": 1,
+      "day": 1,
+      "decision_kind": "repair",
+      "public_reason": "Nari's privacy ledger and Vonn's quiet recovery both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 8,
+      "typed_decision_confidence": 0.8582,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    },
+    {
+      "affected_agents": "Ori|Sova",
+      "avatar_decision": "rotate_priority",
+      "conflict_id": "v16-conflict-d01-t09",
+      "creates_later_obligation": 1,
+      "day": 1,
+      "decision_kind": "trust",
+      "public_reason": "Ori's unfinished repair and Sova's rest space both affect tomorrow's public access.",
+      "resolved_live": 1,
+      "tick": 9,
+      "typed_decision_confidence": 0.8636,
+      "visible_options": "protect boundary|split access|defer|repair first|rotate priority|ask public reason"
+    }
+  ],
+  "sample_later_requests_refusals": [
+    {
+      "agent": "Nari",
+      "bound_to_prior_arbitration": 0,
+      "bounded_refusal": 0,
+      "day": 1,
+      "later_situation": "ledger access request",
+      "prior_conflict_id": "v16-conflict-d01-t08",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.748333,
+      "tick": 8
+    },
+    {
+      "agent": "Ori",
+      "bound_to_prior_arbitration": 0,
+      "bounded_refusal": 0,
+      "day": 1,
+      "later_situation": "repair work interruption",
+      "prior_conflict_id": "v16-conflict-d01-t09",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.756667,
+      "tick": 9
+    },
+    {
+      "agent": "Vonn",
+      "bound_to_prior_arbitration": 0,
+      "bounded_refusal": 0,
+      "day": 1,
+      "later_situation": "ritual noise boundary",
+      "prior_conflict_id": "v16-conflict-d01-t10",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.765,
+      "tick": 10
+    },
+    {
+      "agent": "Sova",
+      "bound_to_prior_arbitration": 0,
+      "bounded_refusal": 0,
+      "day": 1,
+      "later_situation": "shared tool request",
+      "prior_conflict_id": "v16-conflict-d01-t11",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.773333,
+      "tick": 11
+    },
+    {
+      "agent": "Melo",
+      "bound_to_prior_arbitration": 1,
+      "bounded_refusal": 1,
+      "day": 2,
+      "later_situation": "sleep place crowding",
+      "prior_conflict_id": "v16-conflict-d01-t03",
+      "public_phrase": "I remember ask_public_reason from day 1; I can help after my boundary is kept.",
+      "refusal_repair_path": 1,
+      "request_or_refusal": "refusal",
+      "request_quality": 0.961667,
+      "tick": 12
+    },
+    {
+      "agent": "Nari",
+      "bound_to_prior_arbitration": 1,
+      "bounded_refusal": 0,
+      "day": 2,
+      "later_situation": "ledger access request",
+      "prior_conflict_id": "v16-conflict-d01-t04",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.97,
+      "tick": 13
+    },
+    {
+      "agent": "Ori",
+      "bound_to_prior_arbitration": 1,
+      "bounded_refusal": 0,
+      "day": 2,
+      "later_situation": "repair work interruption",
+      "prior_conflict_id": "v16-conflict-d01-t05",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.92,
+      "tick": 14
+    },
+    {
+      "agent": "Vonn",
+      "bound_to_prior_arbitration": 1,
+      "bounded_refusal": 1,
+      "day": 2,
+      "later_situation": "ritual noise boundary",
+      "prior_conflict_id": "v16-conflict-d01-t07",
+      "public_phrase": "I remember ask_public_reason from day 1; I can help after my boundary is kept.",
+      "refusal_repair_path": 1,
+      "request_or_refusal": "refusal",
+      "request_quality": 0.928333,
+      "tick": 15
+    },
+    {
+      "agent": "Sova",
+      "bound_to_prior_arbitration": 1,
+      "bounded_refusal": 1,
+      "day": 2,
+      "later_situation": "shared tool request",
+      "prior_conflict_id": "v16-conflict-d01-t08",
+      "public_phrase": "I remember defer_until_rest from day 1; I can help after my boundary is kept.",
+      "refusal_repair_path": 1,
+      "request_or_refusal": "refusal",
+      "request_quality": 0.936667,
+      "tick": 16
+    },
+    {
+      "agent": "Keth",
+      "bound_to_prior_arbitration": 0,
+      "bounded_refusal": 0,
+      "day": 2,
+      "later_situation": "route warning dispute",
+      "prior_conflict_id": "v16-conflict-d01-t09",
+      "public_phrase": "I remember day 1; can we use that same public reason here?",
+      "refusal_repair_path": 0,
+      "request_or_refusal": "request",
+      "request_quality": 0.765,
+      "tick": 17
+    }
+  ],
+  "sample_memory_carry": [
+    {
+      "conflict_id": "v16-conflict-d01-t08",
+      "day": 1,
+      "days_since_decision": 0,
+      "gratitude_delta": 0.08,
+      "memory_reused_in_choice": 0,
+      "memory_weight": 0.96,
+      "remembered_decision": "defer_until_rest",
+      "remembering_agent": "Nari",
+      "resentment_delta": 0.15,
+      "sealed_private_workspace": 1,
+      "tick": 8,
+      "trust_delta": -0.045
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t09",
+      "day": 1,
+      "days_since_decision": 0,
+      "gratitude_delta": 0.08,
+      "memory_reused_in_choice": 0,
+      "memory_weight": 0.988,
+      "remembered_decision": "rotate_priority",
+      "remembering_agent": "Sova",
+      "resentment_delta": 0.15,
+      "sealed_private_workspace": 1,
+      "tick": 9,
+      "trust_delta": -0.045
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t10",
+      "day": 1,
+      "days_since_decision": 0,
+      "gratitude_delta": 0.21,
+      "memory_reused_in_choice": 0,
+      "memory_weight": 0.96,
+      "remembered_decision": "repair_first",
+      "remembering_agent": "Vonn",
+      "resentment_delta": 0.03,
+      "sealed_private_workspace": 1,
+      "tick": 10,
+      "trust_delta": 0.205
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t11",
+      "day": 1,
+      "days_since_decision": 0,
+      "gratitude_delta": 0.21,
+      "memory_reused_in_choice": 0,
+      "memory_weight": 0.96,
+      "remembered_decision": "protect_boundary",
+      "remembering_agent": "Melo",
+      "resentment_delta": 0.03,
+      "sealed_private_workspace": 1,
+      "tick": 11,
+      "trust_delta": 0.205
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t03",
+      "day": 2,
+      "days_since_decision": 1,
+      "gratitude_delta": 0.055,
+      "memory_reused_in_choice": 1,
+      "memory_weight": 0.966,
+      "remembered_decision": "ask_public_reason",
+      "remembering_agent": "Melo",
+      "resentment_delta": 0.015,
+      "sealed_private_workspace": 1,
+      "tick": 12,
+      "trust_delta": 0.065
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t04",
+      "day": 2,
+      "days_since_decision": 1,
+      "gratitude_delta": 0.055,
+      "memory_reused_in_choice": 1,
+      "memory_weight": 0.938,
+      "remembered_decision": "ask_public_reason",
+      "remembering_agent": "Vonn",
+      "resentment_delta": 0.015,
+      "sealed_private_workspace": 1,
+      "tick": 13,
+      "trust_delta": 0.065
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t05",
+      "day": 2,
+      "days_since_decision": 1,
+      "gratitude_delta": 0.055,
+      "memory_reused_in_choice": 1,
+      "memory_weight": 0.938,
+      "remembered_decision": "split_access",
+      "remembering_agent": "Ori",
+      "resentment_delta": 0.015,
+      "sealed_private_workspace": 1,
+      "tick": 14,
+      "trust_delta": 0.065
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t07",
+      "day": 2,
+      "days_since_decision": 1,
+      "gratitude_delta": 0.055,
+      "memory_reused_in_choice": 1,
+      "memory_weight": 0.966,
+      "remembered_decision": "ask_public_reason",
+      "remembering_agent": "Keth",
+      "resentment_delta": 0.015,
+      "sealed_private_workspace": 1,
+      "tick": 15,
+      "trust_delta": 0.065
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t08",
+      "day": 2,
+      "days_since_decision": 1,
+      "gratitude_delta": 0.055,
+      "memory_reused_in_choice": 1,
+      "memory_weight": 0.938,
+      "remembered_decision": "defer_until_rest",
+      "remembering_agent": "Sova",
+      "resentment_delta": 0.135,
+      "sealed_private_workspace": 1,
+      "tick": 16,
+      "trust_delta": -0.055
+    },
+    {
+      "conflict_id": "v16-conflict-d01-t09",
+      "day": 2,
+      "days_since_decision": 1,
+      "gratitude_delta": 0.055,
+      "memory_reused_in_choice": 0,
+      "memory_weight": 0.938,
+      "remembered_decision": "rotate_priority",
+      "remembering_agent": "Nari",
+      "resentment_delta": 0.135,
+      "sealed_private_workspace": 1,
+      "tick": 17,
+      "trust_delta": -0.08
+    }
+  ],
+  "sample_posture": [
+    {
+      "access_changed_from_memory": 0,
+      "access_level": 0.48,
+      "agent": "Nari",
+      "approach_distance": 0.659356,
+      "conflict_id": "v16-conflict-d01-t08",
+      "day": 1,
+      "guardedness": 0.3602,
+      "posture_marker": "keeps side-on distance",
+      "relationship_posture_bound": 0,
+      "tick": 8,
+      "trust_level": 0.475
+    },
+    {
+      "access_changed_from_memory": 0,
+      "access_level": 0.56,
+      "agent": "Ori",
+      "approach_distance": 0.635556,
+      "conflict_id": "v16-conflict-d01-t09",
+      "day": 1,
+      "guardedness": 0.3602,
+      "posture_marker": "keeps side-on distance",
+      "relationship_posture_bound": 0,
+      "tick": 9,
+      "trust_level": 0.545
+    },
+    {
+      "access_changed_from_memory": 0,
+      "access_level": 0.48,
+      "agent": "Vonn",
+      "approach_distance": 0.54414,
+      "conflict_id": "v16-conflict-d01-t10",
+      "day": 1,
+      "guardedness": 0.313,
+      "posture_marker": "faces avatar and negotiates",
+      "relationship_posture_bound": 0,
+      "tick": 10,
+      "trust_level": 0.775
+    },
+    {
+      "access_changed_from_memory": 0,
+      "access_level": 0.48,
+      "agent": "Sova",
+      "approach_distance": 0.53054,
+      "conflict_id": "v16-conflict-d01-t11",
+      "day": 1,
+      "guardedness": 0.313,
+      "posture_marker": "faces avatar and negotiates",
+      "relationship_posture_bound": 0,
+      "tick": 11,
+      "trust_level": 0.815
+    },
+    {
+      "access_changed_from_memory": 1,
+      "access_level": 0.61,
+      "agent": "Melo",
+      "approach_distance": 0.63356,
+      "conflict_id": "v16-conflict-d01-t03",
+      "day": 2,
+      "guardedness": 0.4745,
+      "posture_marker": "faces avatar and negotiates",
+      "relationship_posture_bound": 1,
+      "tick": 12,
+      "trust_level": 0.645
+    },
+    {
+      "access_changed_from_memory": 1,
+      "access_level": 0.78,
+      "agent": "Nari",
+      "approach_distance": 0.61476,
+      "conflict_id": "v16-conflict-d01-t04",
+      "day": 2,
+      "guardedness": 0.3345,
+      "posture_marker": "waits near shared object",
+      "relationship_posture_bound": 1,
+      "tick": 13,
+      "trust_level": 0.585
+    },
+    {
+      "access_changed_from_memory": 1,
+      "access_level": 0.7,
+      "agent": "Ori",
+      "approach_distance": 0.59096,
+      "conflict_id": "v16-conflict-d01-t05",
+      "day": 2,
+      "guardedness": 0.3345,
+      "posture_marker": "faces avatar and negotiates",
+      "relationship_posture_bound": 1,
+      "tick": 14,
+      "trust_level": 0.655
+    },
+    {
+      "access_changed_from_memory": 1,
+      "access_level": 0.69,
+      "agent": "Vonn",
+      "approach_distance": 0.63696,
+      "conflict_id": "v16-conflict-d01-t07",
+      "day": 2,
+      "guardedness": 0.4745,
+      "posture_marker": "faces avatar and negotiates",
+      "relationship_posture_bound": 1,
+      "tick": 15,
+      "trust_level": 0.635
+    },
+    {
+      "access_changed_from_memory": 1,
+      "access_level": 0.61,
+      "agent": "Sova",
+      "approach_distance": 0.671552,
+      "conflict_id": "v16-conflict-d01-t08",
+      "day": 2,
+      "guardedness": 0.5009,
+      "posture_marker": "keeps side-on distance",
+      "relationship_posture_bound": 1,
+      "tick": 16,
+      "trust_level": 0.555
+    },
+    {
+      "access_changed_from_memory": 0,
+      "access_level": 0.56,
+      "agent": "Keth",
+      "approach_distance": 0.661252,
+      "conflict_id": "v16-conflict-d01-t09",
+      "day": 2,
+      "guardedness": 0.3609,
+      "posture_marker": "keeps side-on distance",
+      "relationship_posture_bound": 0,
+      "tick": 17,
+      "trust_level": 0.47
+    }
+  ],
+  "seed": 20260869,
+  "source_results": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_results.json"
+}</script>
+<script>
+const KEY = "ssrm_browser_world_v16_persistent_conflict_gameplay";
+const source = JSON.parse(document.getElementById('initial-state').textContent);
+let state = JSON.parse(localStorage.getItem(KEY) || JSON.stringify({ day: 1, cursor: 0, memories: [], repairs: [], replay: [], source }));
+function save() { localStorage.setItem(KEY, JSON.stringify(state)); render(); }
+function currentDecision() { return source.sample_decisions[state.cursor % source.sample_decisions.length]; }
+function currentLater() { return source.sample_later_requests_refusals[state.cursor % source.sample_later_requests_refusals.length]; }
+function advanceDay() { state.day += 1; state.replay.push({ type:'day_advance', day:state.day, cursor:state.cursor }); save(); }
+function resolveConflict() { const decision = currentDecision(); state.memories.push({ conflict:decision.conflict_id, decision:decision.avatar_decision, day:state.day }); state.replay.push({ type:'resolve', decision }); state.cursor += 1; save(); }
+function offerRepair() { const later = currentLater(); state.repairs.push({ prior:later.prior_conflict_id, agent:later.agent, day:state.day }); state.replay.push({ type:'repair_offer', later }); save(); }
+function exportReplay() { const blob = new Blob([JSON.stringify(state.replay, null, 2)], { type:'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'report-256-persistent-conflict-gameplay-replay.json'; a.click(); URL.revokeObjectURL(url); }
+function render() {
+  document.getElementById('readiness').textContent = source.metrics.browser_world_v16_persistent_conflict_gameplay_readiness.toFixed(3);
+  document.getElementById('weakest').textContent = source.metrics.weakest_channel_score.toFixed(3);
+  document.getElementById('days').textContent = source.days;
+  document.getElementById('state').textContent = JSON.stringify({ day:state.day, cursor:state.cursor, memories:state.memories.length, repairs:state.repairs.length, replayRows:state.replay.length }, null, 2);
+  const log = document.getElementById('log'); log.innerHTML = '';
+  source.sample_later_requests_refusals.forEach((row) => { const div = document.createElement('div'); div.className = 'row'; div.dataset.kind = row.request_or_refusal; div.innerHTML = `<strong>${row.agent}: ${row.request_or_refusal}</strong><br>${row.later_situation}<br><small>${row.public_phrase}</small>`; log.appendChild(div); });
+}
+render();
+</script>
+</body>
+</html>

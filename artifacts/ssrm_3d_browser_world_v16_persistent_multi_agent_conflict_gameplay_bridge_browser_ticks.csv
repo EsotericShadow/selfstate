@@ -1,0 +1,253 @@
+tick,day,focus_agent,active_conflict_id,remembered_conflict_id,user_decision_pending,later_behavior_changed,access_posture_changed,sensory_frequency_hz,flower_phase,public_behavior_marker,private_workspace_sealed
+0,1,Keth,v16-conflict-d01-t00,v16-conflict-d01-t00,1,0,0,1.524014,36.68,remembers arbitration and asks,1
+1,1,Melo,v16-conflict-d01-t01,v16-conflict-d01-t01,0,0,0,1.570966,181.362764,remembers arbitration and asks,1
+2,1,Nari,v16-conflict-d01-t02,v16-conflict-d01-t02,0,0,0,1.604014,311.490528,remembers arbitration and asks,1
+3,1,Ori,v16-conflict-d01-t03,v16-conflict-d01-t03,0,0,0,1.642166,96.788292,remembers arbitration and asks,1
+4,1,Vonn,v16-conflict-d01-t04,v16-conflict-d01-t04,0,0,0,1.682166,233.476056,remembers arbitration and asks,1
+5,1,Sova,v16-conflict-d01-t05,v16-conflict-d01-t05,0,0,0,1.730966,12.62382,remembers arbitration and asks,1
+6,1,Keth,v16-conflict-d01-t06,v16-conflict-d01-t06,1,0,0,1.764014,141.726584,remembers arbitration and asks,1
+7,1,Melo,v16-conflict-d01-t07,v16-conflict-d01-t07,0,0,0,1.802166,286.409348,remembers arbitration and asks,1
+8,1,Nari,v16-conflict-d01-t08,v16-conflict-d01-t08,0,0,0,1.844014,56.537112,remembers arbitration and asks,1
+9,1,Ori,v16-conflict-d01-t09,v16-conflict-d01-t09,0,0,0,1.892814,196.914876,remembers arbitration and asks,1
+10,1,Vonn,v16-conflict-d01-t10,v16-conflict-d01-t10,0,0,0,1.92071,343.85264,remembers arbitration and asks,1
+11,1,Sova,v16-conflict-d01-t11,v16-conflict-d01-t11,0,0,0,1.96071,123.000404,remembers arbitration and asks,1
+12,2,Melo,v16-conflict-d02-t00,v16-conflict-d01-t03,0,1,1,1.572315,270.538168,remembers arbitration and refuses with repair path,1
+13,2,Nari,v16-conflict-d02-t01,v16-conflict-d01-t04,0,1,1,1.621215,45.585932,remembers arbitration and asks,1
+14,2,Ori,v16-conflict-d02-t02,v16-conflict-d01-t05,0,1,1,1.652415,185.963696,remembers arbitration and asks,1
+15,2,Vonn,v16-conflict-d02-t03,v16-conflict-d01-t07,0,1,1,1.701115,322.65146,remembers arbitration and refuses with repair path,1
+16,2,Sova,v16-conflict-d02-t04,v16-conflict-d01-t08,0,1,1,1.734163,96.879224,remembers arbitration and refuses with repair path,1
+17,2,Keth,v16-conflict-d02-t05,v16-conflict-d01-t09,1,0,0,1.758863,230.901988,remembers arbitration and asks,1
+18,2,Melo,v16-conflict-d02-t06,v16-conflict-d01-t10,0,1,1,1.810859,20.914752,remembers arbitration and refuses with repair path,1
+19,2,Nari,v16-conflict-d02-t07,v16-conflict-d01-t11,0,1,1,1.850959,155.962516,remembers arbitration and asks,1
+20,2,Ori,v16-conflict-d02-t08,v16-conflict-d01-t01,0,1,1,1.901115,291.01028,remembers arbitration and refuses with repair path,1
+21,2,Vonn,v16-conflict-d02-t09,v16-conflict-d01-t02,0,1,1,1.934163,62.778044,remembers arbitration and refuses with repair path,1
+22,2,Sova,v16-conflict-d02-t10,v16-conflict-d01-t03,0,1,1,1.981115,206.845808,remembers arbitration and refuses with repair path,1
+23,2,Keth,v16-conflict-d02-t11,v16-conflict-d01-t04,1,1,1,2.012415,340.868572,remembers arbitration and asks,1
+24,3,Nari,v16-conflict-d03-t00,v16-conflict-d01-t05,0,1,1,1.598364,134.761336,remembers arbitration and refuses with repair path,1
+25,3,Ori,v16-conflict-d03-t01,v16-conflict-d01-t07,0,1,1,1.638464,275.1391,remembers arbitration and asks,1
+26,3,Vonn,v16-conflict-d03-t02,v16-conflict-d01-t08,0,1,1,1.680212,46.906864,remembers arbitration and refuses with repair path,1
+27,3,Sova,v16-conflict-d03-t03,v16-conflict-d01-t09,0,1,1,1.720212,186.054628,remembers arbitration and refuses with repair path,1
+28,3,Keth,v16-conflict-d03-t04,v16-conflict-d01-t10,0,1,1,1.756908,331.352392,remembers arbitration and refuses with repair path,1
+29,3,Melo,v16-conflict-d03-t05,v16-conflict-d01-t11,0,1,1,1.805708,110.090156,remembers arbitration and refuses with repair path,1
+30,3,Nari,v16-conflict-d03-t06,v16-conflict-d02-t00,0,0,0,1.816063,235.29792,remembers arbitration and asks,1
+31,3,Ori,v16-conflict-d03-t07,v16-conflict-d02-t01,0,1,1,1.889063,15.675684,remembers arbitration and asks,1
+32,3,Vonn,v16-conflict-d03-t08,v16-conflict-d02-t02,0,1,1,1.918315,157.283448,remembers arbitration and refuses with repair path,1
+33,3,Sova,v16-conflict-d03-t09,v16-conflict-d02-t03,0,1,1,1.960163,291.511212,remembers arbitration and refuses with repair path,1
+34,3,Keth,v16-conflict-d03-t10,v16-conflict-d02-t04,1,1,1,1.996959,75.783976,remembers arbitration and asks,1
+35,3,Melo,v16-conflict-d03-t11,v16-conflict-d02-t06,0,1,1,2.045659,215.54674,remembers arbitration and refuses with repair path,1
+36,4,Ori,v16-conflict-d04-t00,v16-conflict-d01-t07,0,1,1,1.624644,3.699504,remembers arbitration and refuses with repair path,1
+37,4,Vonn,v16-conflict-d04-t01,v16-conflict-d01-t08,0,1,1,1.666261,136.082268,remembers arbitration and refuses with repair path,1
+38,4,Sova,v16-conflict-d04-t02,v16-conflict-d01-t09,0,1,1,1.706261,275.230032,remembers arbitration and refuses with repair path,1
+39,4,Keth,v16-conflict-d04-t03,v16-conflict-d01-t10,0,1,1,1.752088,59.912796,remembers arbitration and asks,1
+40,4,Melo,v16-conflict-d04-t04,v16-conflict-d01-t11,1,1,1,1.783188,197.62556,remembers arbitration and refuses with repair path,1
+41,4,Nari,v16-conflict-d04-t05,v16-conflict-d02-t00,0,1,1,1.835112,324.473324,remembers arbitration and asks,1
+42,4,Ori,v16-conflict-d04-t06,v16-conflict-d02-t01,0,1,1,1.866312,104.851088,remembers arbitration and asks,1
+43,4,Vonn,v16-conflict-d04-t07,v16-conflict-d02-t02,0,0,0,1.880264,246.458852,remembers arbitration and asks,1
+44,4,Sova,v16-conflict-d04-t08,v16-conflict-d02-t03,0,1,1,1.946212,20.686616,remembers arbitration and refuses with repair path,1
+45,4,Keth,v16-conflict-d04-t09,v16-conflict-d02-t04,0,1,1,1.983008,165.98438,remembers arbitration and asks,1
+46,4,Melo,v16-conflict-d04-t10,v16-conflict-d02-t06,0,1,1,2.022908,304.722144,remembers arbitration and refuses with repair path,1
+47,4,Nari,v16-conflict-d04-t11,v16-conflict-d02-t07,0,1,1,2.066312,69.519908,remembers arbitration and asks,1
+48,5,Vonn,v16-conflict-d05-t00,v16-conflict-d01-t08,0,1,1,1.660886,226.077672,remembers arbitration and refuses with repair path,1
+49,5,Sova,v16-conflict-d05-t01,v16-conflict-d01-t09,0,1,1,1.700886,5.225436,remembers arbitration and refuses with repair path,1
+50,5,Keth,v16-conflict-d05-t02,v16-conflict-d01-t10,0,1,1,1.738368,148.4732,remembers arbitration and asks,1
+51,5,Melo,v16-conflict-d05-t03,v16-conflict-d01-t11,1,1,1,1.769468,286.185964,remembers arbitration and refuses with repair path,1
+52,5,Nari,v16-conflict-d05-t04,v16-conflict-d02-t00,0,1,1,1.821061,53.648728,remembers arbitration and refuses with repair path,1
+53,5,Ori,v16-conflict-d05-t05,v16-conflict-d02-t01,0,1,1,1.852361,194.026492,remembers arbitration and asks,1
+54,5,Vonn,v16-conflict-d05-t06,v16-conflict-d02-t02,0,1,1,1.890644,335.019256,remembers arbitration and refuses with repair path,1
+55,5,Sova,v16-conflict-d05-t07,v16-conflict-d02-t03,0,1,1,1.941061,109.86202,remembers arbitration and refuses with repair path,1
+56,5,Keth,v16-conflict-d05-t08,v16-conflict-d02-t04,0,0,0,1.953888,254.544784,remembers arbitration and asks,1
+57,5,Melo,v16-conflict-d05-t09,v16-conflict-d02-t06,1,1,1,2.017988,32.257548,remembers arbitration and refuses with repair path,1
+58,5,Nari,v16-conflict-d05-t10,v16-conflict-d02-t07,0,1,1,2.052361,158.695312,remembers arbitration and asks,1
+59,5,Ori,v16-conflict-d05-t11,v16-conflict-d02-t08,0,1,1,2.090744,303.378076,remembers arbitration and asks,1
+60,6,Sova,v16-conflict-d06-t00,v16-conflict-d01-t10,0,1,1,1.675748,101.98584,remembers arbitration and refuses with repair path,1
+61,6,Keth,v16-conflict-d06-t01,v16-conflict-d01-t11,0,1,1,1.724648,237.033604,remembers arbitration and asks,1
+62,6,Melo,v16-conflict-d06-t02,v16-conflict-d02-t00,0,1,1,1.758086,8.596368,remembers arbitration and refuses with repair path,1
+63,6,Nari,v16-conflict-d06-t03,v16-conflict-d02-t01,0,1,1,1.798186,143.644132,remembers arbitration and asks,1
+64,6,Ori,v16-conflict-d06-t04,v16-conflict-d02-t02,0,1,1,1.8367,287.711896,remembers arbitration and refuses with repair path,1
+65,6,Vonn,v16-conflict-d06-t05,v16-conflict-d02-t03,0,1,1,1.878086,60.70966,remembers arbitration and refuses with repair path,1
+66,6,Sova,v16-conflict-d06-t06,v16-conflict-d02-t04,0,1,1,1.924268,208.057424,remembers arbitration and refuses with repair path,1
+67,6,Keth,v16-conflict-d06-t07,v16-conflict-d02-t06,0,1,1,1.955568,343.105188,remembers arbitration and asks,1
+68,6,Melo,v16-conflict-d06-t08,v16-conflict-d02-t07,1,1,1,1.998086,112.617952,remembers arbitration and refuses with repair path,1
+69,6,Nari,v16-conflict-d06-t09,v16-conflict-d02-t08,0,0,0,2.0214,252.380716,remembers arbitration and asks,1
+70,6,Ori,v16-conflict-d06-t10,v16-conflict-d02-t09,0,1,1,2.075568,37.26848,remembers arbitration and asks,1
+71,6,Vonn,v16-conflict-d06-t11,v16-conflict-d02-t10,0,1,1,2.1167,169.446244,remembers arbitration and refuses with repair path,1
+72,7,Keth,v16-conflict-d07-t00,v16-conflict-d01-t11,0,1,1,1.710828,325.594008,remembers arbitration and refuses with repair path,1
+73,7,Melo,v16-conflict-d07-t01,v16-conflict-d02-t00,0,1,1,1.743855,98.796772,remembers arbitration and refuses with repair path,1
+74,7,Nari,v16-conflict-d07-t02,v16-conflict-d02-t01,1,1,1,1.792755,232.819536,remembers arbitration and asks,1
+75,7,Ori,v16-conflict-d07-t03,v16-conflict-d02-t02,0,1,1,1.8316,17.2973,remembers arbitration and asks,1
+76,7,Vonn,v16-conflict-d07-t04,v16-conflict-d02-t03,0,1,1,1.863855,150.910064,remembers arbitration and refuses with repair path,1
+77,7,Sova,v16-conflict-d07-t05,v16-conflict-d02-t04,0,1,1,1.901748,296.617828,remembers arbitration and refuses with repair path,1
+78,7,Keth,v16-conflict-d07-t06,v16-conflict-d02-t06,0,1,1,1.941848,71.665592,remembers arbitration and asks,1
+79,7,Melo,v16-conflict-d07-t07,v16-conflict-d02-t07,0,1,1,1.983855,203.843356,remembers arbitration and refuses with repair path,1
+80,7,Nari,v16-conflict-d07-t08,v16-conflict-d02-t08,0,1,1,2.0227,341.96612,remembers arbitration and refuses with repair path,1
+81,7,Ori,v16-conflict-d07-t09,v16-conflict-d02-t09,0,1,1,2.070648,125.828884,remembers arbitration and asks,1
+82,7,Vonn,v16-conflict-d07-t10,v16-conflict-d02-t10,0,0,0,2.0786,259.031648,remembers arbitration and asks,1
+83,7,Sova,v16-conflict-d07-t11,v16-conflict-d03-t00,0,1,1,2.150268,42.689412,remembers arbitration and refuses with repair path,1
+84,8,Melo,v16-conflict-d08-t00,v16-conflict-d02-t00,0,1,1,1.729624,188.997176,remembers arbitration and refuses with repair path,1
+85,8,Nari,v16-conflict-d08-t01,v16-conflict-d02-t01,1,1,1,1.769724,323.01994,remembers arbitration and asks,1
+86,8,Ori,v16-conflict-d08-t02,v16-conflict-d02-t02,0,1,1,1.8088,106.882704,remembers arbitration and asks,1
+87,8,Vonn,v16-conflict-d08-t03,v16-conflict-d02-t03,0,1,1,1.849624,241.110468,remembers arbitration and refuses with repair path,1
+88,8,Sova,v16-conflict-d08-t04,v16-conflict-d02-t04,0,1,1,1.888028,25.178232,remembers arbitration and refuses with repair path,1
+89,8,Keth,v16-conflict-d08-t05,v16-conflict-d02-t06,0,1,1,1.936928,160.225996,remembers arbitration and asks,1
+90,8,Melo,v16-conflict-d08-t06,v16-conflict-d02-t07,0,1,1,1.969624,294.04376,remembers arbitration and refuses with repair path,1
+91,8,Nari,v16-conflict-d08-t07,v16-conflict-d02-t08,1,1,1,2.0176,70.526524,remembers arbitration and asks,1
+92,8,Ori,v16-conflict-d08-t08,v16-conflict-d02-t09,0,1,1,2.048028,214.389288,remembers arbitration and refuses with repair path,1
+93,8,Vonn,v16-conflict-d08-t09,v16-conflict-d02-t10,0,1,1,2.0887,348.617052,remembers arbitration and refuses with repair path,1
+94,8,Sova,v16-conflict-d08-t10,v16-conflict-d03-t00,0,1,1,2.127748,131.249816,remembers arbitration and refuses with repair path,1
+95,8,Keth,v16-conflict-d08-t11,v16-conflict-d03-t01,0,0,0,2.143648,266.29758,remembers arbitration and asks,1
+96,9,Nari,v16-conflict-d09-t00,v16-conflict-d04-t01,0,1,1,1.521855,53.015344,remembers arbitration and refuses with repair path,1
+97,9,Ori,v16-conflict-d09-t01,v16-conflict-d04-t02,0,1,1,1.5608,196.468108,remembers arbitration and asks,1
+98,9,Vonn,v16-conflict-d09-t02,v16-conflict-d04-t03,0,1,1,1.6095,333.155872,remembers arbitration and refuses with repair path,1
+99,9,Sova,v16-conflict-d09-t03,v16-conflict-d04-t05,0,1,1,1.6407,112.303636,remembers arbitration and refuses with repair path,1
+100,9,Keth,v16-conflict-d09-t04,v16-conflict-d04-t06,0,1,1,1.679748,250.8364,remembers arbitration and refuses with repair path,1
+101,9,Melo,v16-conflict-d09-t05,v16-conflict-d04-t07,0,1,1,1.721855,23.014164,remembers arbitration and refuses with repair path,1
+102,9,Nari,v16-conflict-d09-t06,v16-conflict-d04-t08,1,1,1,1.761955,157.036928,remembers arbitration and asks,1
+103,9,Ori,v16-conflict-d09-t07,v16-conflict-d04-t09,0,1,1,1.8008,301.514692,remembers arbitration and asks,1
+104,9,Vonn,v16-conflict-d09-t08,v16-conflict-d04-t10,0,1,1,1.839748,81.687456,remembers arbitration and refuses with repair path,1
+105,9,Sova,v16-conflict-d09-t09,v16-conflict-d04-t11,0,1,1,1.879748,220.83522,remembers arbitration and refuses with repair path,1
+106,9,Keth,v16-conflict-d09-t10,v16-conflict-d05-t00,0,1,1,1.922186,348.707984,remembers arbitration and asks,1
+107,9,Melo,v16-conflict-d09-t11,v16-conflict-d05-t01,0,1,1,1.962086,127.445748,remembers arbitration and refuses with repair path,1
+108,10,Ori,v16-conflict-d10-t00,v16-conflict-d06-t01,1,0,0,1.532786,281.338512,remembers arbitration and asks,1
+109,10,Vonn,v16-conflict-d10-t01,v16-conflict-d06-t02,0,1,1,1.5867,62.741276,remembers arbitration and refuses with repair path,1
+110,10,Sova,v16-conflict-d10-t02,v16-conflict-d06-t03,0,1,1,1.625468,206.39904,remembers arbitration and refuses with repair path,1
+111,10,Keth,v16-conflict-d10-t03,v16-conflict-d06-t04,0,1,1,1.674368,341.446804,remembers arbitration and asks,1
+112,10,Melo,v16-conflict-d10-t04,v16-conflict-d06-t05,0,1,1,1.714268,120.184568,remembers arbitration and refuses with repair path,1
+113,10,Nari,v16-conflict-d10-t05,v16-conflict-d06-t06,0,1,1,1.748186,247.032332,remembers arbitration and asks,1
+114,10,Ori,v16-conflict-d10-t06,v16-conflict-d06-t07,0,1,1,1.785568,35.610096,remembers arbitration and asks,1
+115,10,Vonn,v16-conflict-d10-t07,v16-conflict-d06-t09,0,1,1,1.8267,167.78786,remembers arbitration and refuses with repair path,1
+116,10,Sova,v16-conflict-d10-t08,v16-conflict-d06-t10,0,1,1,1.865468,311.445624,remembers arbitration and refuses with repair path,1
+117,10,Keth,v16-conflict-d10-t09,v16-conflict-d06-t11,0,1,1,1.905568,86.493388,remembers arbitration and asks,1
+118,10,Melo,v16-conflict-d10-t10,v16-conflict-d07-t00,0,1,1,1.955444,220.926152,remembers arbitration and refuses with repair path,1
+119,10,Nari,v16-conflict-d10-t11,v16-conflict-d07-t01,1,1,1,1.985288,0.278916,remembers arbitration and asks,1
+120,11,Vonn,v16-conflict-d11-t00,v16-conflict-d08-t04,0,1,1,1.579988,157.86168,remembers arbitration and refuses with repair path,1
+121,11,Sova,v16-conflict-d11-t01,v16-conflict-d08-t05,0,0,0,1.598961,287.374444,remembers arbitration and asks,1
+122,11,Keth,v16-conflict-d11-t02,v16-conflict-d08-t06,0,1,1,1.660088,72.057208,remembers arbitration and asks,1
+123,11,Melo,v16-conflict-d11-t03,v16-conflict-d08-t08,0,1,1,1.694261,201.159972,remembers arbitration and refuses with repair path,1
+124,11,Nari,v16-conflict-d11-t04,v16-conflict-d08-t09,0,1,1,1.732644,340.512736,remembers arbitration and refuses with repair path,1
+125,11,Ori,v16-conflict-d11-t05,v16-conflict-d08-t10,1,1,1,1.774361,115.5605,remembers arbitration and asks,1
+126,11,Vonn,v16-conflict-d11-t06,v16-conflict-d08-t11,0,1,1,1.819988,262.908264,remembers arbitration and refuses with repair path,1
+127,11,Sova,v16-conflict-d11-t07,v16-conflict-d09-t00,0,1,1,1.854212,32.831028,remembers arbitration and refuses with repair path,1
+128,11,Keth,v16-conflict-d11-t08,v16-conflict-d09-t01,0,1,1,1.890908,178.128792,remembers arbitration and refuses with repair path,1
+129,11,Melo,v16-conflict-d11-t09,v16-conflict-d09-t02,0,1,1,1.934212,306.616556,remembers arbitration and refuses with repair path,1
+130,11,Nari,v16-conflict-d11-t10,v16-conflict-d09-t03,0,1,1,1.971008,91.91432,remembers arbitration and asks,1
+131,11,Ori,v16-conflict-d11-t11,v16-conflict-d09-t04,0,1,1,2.012464,226.962084,remembers arbitration and asks,1
+132,12,Sova,v16-conflict-d12-t00,v16-conflict-d10-t06,0,1,1,1.600212,17.369848,remembers arbitration and refuses with repair path,1
+133,12,Keth,v16-conflict-d12-t01,v16-conflict-d10-t07,0,1,1,1.640312,152.417612,remembers arbitration and asks,1
+134,12,Melo,v16-conflict-d12-t02,v16-conflict-d10-t08,0,0,0,1.656112,291.155376,remembers arbitration and asks,1
+135,12,Nari,v16-conflict-d12-t03,v16-conflict-d10-t09,0,1,1,1.717008,76.45314,remembers arbitration and asks,1
+136,12,Ori,v16-conflict-d12-t04,v16-conflict-d10-t10,1,1,1,1.758364,210.475904,remembers arbitration and refuses with repair path,1
+137,12,Vonn,v16-conflict-d12-t05,v16-conflict-d11-t00,0,1,1,1.808963,343.678668,remembers arbitration and refuses with repair path,1
+138,12,Sova,v16-conflict-d12-t06,v16-conflict-d11-t01,0,1,1,1.848963,122.826432,remembers arbitration and refuses with repair path,1
+139,12,Keth,v16-conflict-d12-t07,v16-conflict-d11-t02,0,1,1,1.878415,262.794196,remembers arbitration and asks,1
+140,12,Melo,v16-conflict-d12-t08,v16-conflict-d11-t03,0,1,1,1.918315,41.53196,remembers arbitration and refuses with repair path,1
+141,12,Nari,v16-conflict-d12-t09,v16-conflict-d11-t04,0,1,1,1.960263,171.659724,remembers arbitration and asks,1
+142,12,Ori,v16-conflict-d12-t10,v16-conflict-d11-t06,1,1,1,2.009063,311.012488,remembers arbitration and asks,1
+143,12,Vonn,v16-conflict-d12-t11,v16-conflict-d11-t07,0,1,1,2.045659,98.975252,remembers arbitration and refuses with repair path,1
+144,13,Keth,v16-conflict-d13-t00,v16-conflict-d12-t07,0,1,1,1.622859,252.663016,remembers arbitration and refuses with repair path,1
+145,13,Melo,v16-conflict-d13-t01,v16-conflict-d12-t08,0,1,1,1.666163,21.15078,remembers arbitration and refuses with repair path,1
+146,13,Nari,v16-conflict-d13-t02,v16-conflict-d12-t09,0,1,1,1.704415,161.118544,remembers arbitration and asks,1
+147,13,Ori,v16-conflict-d13-t03,v16-conflict-d12-t11,0,0,0,1.722063,296.576308,remembers arbitration and asks,1
+148,13,Vonn,v16-conflict-d13-t04,v16-conflict-d06-t00,0,1,1,1.785393,74.699072,remembers arbitration and refuses with repair path,1
+149,13,Sova,v16-conflict-d13-t05,v16-conflict-d06-t01,0,1,1,1.825393,213.846836,remembers arbitration and refuses with repair path,1
+150,13,Keth,v16-conflict-d13-t06,v16-conflict-d06-t02,0,1,1,1.8736,350.7396,remembers arbitration and asks,1
+151,13,Melo,v16-conflict-d13-t07,v16-conflict-d06-t03,0,1,1,1.904308,130.912364,remembers arbitration and refuses with repair path,1
+152,13,Nari,v16-conflict-d13-t08,v16-conflict-d06-t04,0,1,1,1.944308,265.960128,remembers arbitration and refuses with repair path,1
+153,13,Ori,v16-conflict-d13-t09,v16-conflict-d06-t05,1,1,1,1.984408,45.312892,remembers arbitration and asks,1
+154,13,Vonn,v16-conflict-d13-t10,v16-conflict-d06-t06,0,1,1,2.025393,179.745656,remembers arbitration and refuses with repair path,1
+155,13,Sova,v16-conflict-d13-t11,v16-conflict-d06-t07,0,1,1,2.073108,322.17342,remembers arbitration and refuses with repair path,1
+156,14,Melo,v16-conflict-d14-t00,v16-conflict-d07-t09,0,1,1,1.6595,114.016184,remembers arbitration and refuses with repair path,1
+157,14,Nari,v16-conflict-d14-t01,v16-conflict-d07-t10,0,1,1,1.6996,249.063948,remembers arbitration and asks,1
+158,14,Ori,v16-conflict-d14-t02,v16-conflict-d07-t11,0,1,1,1.740293,27.596712,remembers arbitration and asks,1
+159,14,Vonn,v16-conflict-d14-t03,v16-conflict-d08-t00,1,1,1,1.770028,167.564476,remembers arbitration and refuses with repair path,1
+160,14,Sova,v16-conflict-d14-t04,v16-conflict-d08-t02,0,0,0,1.7866,305.27724,remembers arbitration and asks,1
+161,14,Keth,v16-conflict-d14-t05,v16-conflict-d08-t03,0,1,1,1.8596,80.325004,remembers arbitration and asks,1
+162,14,Melo,v16-conflict-d14-t06,v16-conflict-d08-t04,0,1,1,1.890028,221.522768,remembers arbitration and refuses with repair path,1
+163,14,Nari,v16-conflict-d14-t07,v16-conflict-d08-t05,0,1,1,1.931724,351.650532,remembers arbitration and asks,1
+164,14,Ori,v16-conflict-d14-t08,v16-conflict-d08-t06,0,1,1,1.978828,136.948296,remembers arbitration and refuses with repair path,1
+165,14,Vonn,v16-conflict-d14-t09,v16-conflict-d08-t08,0,1,1,2.020424,268.71606,remembers arbitration and refuses with repair path,1
+166,14,Sova,v16-conflict-d14-t10,v16-conflict-d08-t09,0,1,1,2.0507,50.323824,remembers arbitration and refuses with repair path,1
+167,14,Keth,v16-conflict-d14-t11,v16-conflict-d08-t10,0,1,1,2.100524,182.911588,remembers arbitration and asks,1
+168,15,Nari,v16-conflict-d15-t00,v16-conflict-d09-t11,0,1,1,1.677624,336.189352,remembers arbitration and refuses with repair path,1
+169,15,Ori,v16-conflict-d15-t01,v16-conflict-d10-t01,0,1,1,1.7168,119.027116,remembers arbitration and asks,1
+170,15,Vonn,v16-conflict-d15-t02,v16-conflict-d10-t02,1,1,1,1.766655,251.61488,remembers arbitration and refuses with repair path,1
+171,15,Sova,v16-conflict-d15-t03,v16-conflict-d10-t03,0,1,1,1.7967,34.862644,remembers arbitration and refuses with repair path,1
+172,15,Keth,v16-conflict-d15-t04,v16-conflict-d10-t04,0,1,1,1.837855,166.835408,remembers arbitration and refuses with repair path,1
+173,15,Melo,v16-conflict-d15-t05,v16-conflict-d10-t05,0,0,0,1.851648,312.133172,remembers arbitration and asks,1
+174,15,Nari,v16-conflict-d15-t06,v16-conflict-d10-t06,0,1,1,1.917955,80.620936,remembers arbitration and asks,1
+175,15,Ori,v16-conflict-d15-t07,v16-conflict-d10-t07,0,1,1,1.966755,220.9987,remembers arbitration and asks,1
+176,15,Vonn,v16-conflict-d15-t08,v16-conflict-d10-t08,1,1,1,1.997855,356.661464,remembers arbitration and refuses with repair path,1
+177,15,Sova,v16-conflict-d15-t09,v16-conflict-d10-t09,0,1,1,2.035748,143.394228,remembers arbitration and refuses with repair path,1
+178,15,Keth,v16-conflict-d15-t10,v16-conflict-d10-t10,0,1,1,2.0768,274.956992,remembers arbitration and asks,1
+179,15,Melo,v16-conflict-d15-t11,v16-conflict-d11-t00,0,1,1,2.118086,50.004756,remembers arbitration and refuses with repair path,1
+180,16,Ori,v16-conflict-d16-t00,v16-conflict-d12-t00,0,1,1,1.701468,213.12252,remembers arbitration and refuses with repair path,1
+181,16,Vonn,v16-conflict-d16-t01,v16-conflict-d12-t01,0,1,1,1.750268,349.810284,remembers arbitration and refuses with repair path,1
+182,16,Sova,v16-conflict-d16-t02,v16-conflict-d12-t02,0,1,1,1.781468,128.958048,remembers arbitration and refuses with repair path,1
+183,16,Keth,v16-conflict-d16-t03,v16-conflict-d12-t03,0,1,1,1.8228,259.495812,remembers arbitration and asks,1
+184,16,Melo,v16-conflict-d16-t04,v16-conflict-d12-t05,0,1,1,1.8715,38.233576,remembers arbitration and refuses with repair path,1
+185,16,Nari,v16-conflict-d16-t05,v16-conflict-d12-t06,0,1,1,1.9028,173.28134,remembers arbitration and asks,1
+186,16,Ori,v16-conflict-d16-t06,v16-conflict-d12-t07,0,0,0,1.917368,318.169104,remembers arbitration and asks,1
+187,16,Vonn,v16-conflict-d16-t07,v16-conflict-d12-t08,1,1,1,1.984086,85.631868,remembers arbitration and refuses with repair path,1
+188,16,Sova,v16-conflict-d16-t08,v16-conflict-d12-t09,0,1,1,2.0315,229.494632,remembers arbitration and refuses with repair path,1
+189,16,Keth,v16-conflict-d16-t09,v16-conflict-d12-t11,0,1,1,2.064186,0.852396,remembers arbitration and asks,1
+190,16,Melo,v16-conflict-d16-t10,v16-conflict-d13-t00,0,1,1,2.102644,143.48516,remembers arbitration and refuses with repair path,1
+191,16,Nari,v16-conflict-d16-t11,v16-conflict-d13-t01,0,1,1,2.141288,283.862924,remembers arbitration and asks,1
+192,17,Vonn,v16-conflict-d17-t00,v16-conflict-d14-t02,0,1,1,1.737444,75.090688,remembers arbitration and refuses with repair path,1
+193,17,Sova,v16-conflict-d17-t01,v16-conflict-d14-t04,1,1,1,1.775988,218.543452,remembers arbitration and refuses with repair path,1
+194,17,Keth,v16-conflict-d17-t02,v16-conflict-d14-t05,0,1,1,1.819161,344.981216,remembers arbitration and asks,1
+195,17,Melo,v16-conflict-d17-t03,v16-conflict-d14-t06,0,1,1,1.847188,133.35398,remembers arbitration and refuses with repair path,1
+196,17,Nari,v16-conflict-d17-t04,v16-conflict-d14-t07,0,1,1,1.895988,268.401744,remembers arbitration and refuses with repair path,1
+197,17,Ori,v16-conflict-d17-t05,v16-conflict-d14-t08,0,1,1,1.937544,43.449508,remembers arbitration and asks,1
+198,17,Vonn,v16-conflict-d17-t06,v16-conflict-d14-t09,0,1,1,1.968644,180.137272,remembers arbitration and refuses with repair path,1
+199,17,Sova,v16-conflict-d17-t07,v16-conflict-d14-t10,0,0,0,1.993344,319.285036,remembers arbitration and asks,1
+200,17,Keth,v16-conflict-d17-t08,v16-conflict-d14-t11,0,1,1,2.050261,90.0278,remembers arbitration and refuses with repair path,1
+201,17,Melo,v16-conflict-d17-t09,v16-conflict-d15-t00,0,1,1,2.086908,239.425564,remembers arbitration and refuses with repair path,1
+202,17,Nari,v16-conflict-d17-t10,v16-conflict-d15-t01,0,1,1,2.127008,14.473328,remembers arbitration and asks,1
+203,17,Ori,v16-conflict-d17-t11,v16-conflict-d15-t03,0,1,1,2.170312,144.601092,remembers arbitration and asks,1
+204,18,Sova,v16-conflict-d18-t00,v16-conflict-d16-t01,1,1,1,1.522212,298.903856,remembers arbitration and refuses with repair path,1
+205,18,Keth,v16-conflict-d18-t01,v16-conflict-d16-t02,0,1,1,1.567808,85.22662,remembers arbitration and asks,1
+206,18,Melo,v16-conflict-d18-t02,v16-conflict-d16-t03,0,1,1,1.609164,218.634384,remembers arbitration and refuses with repair path,1
+207,18,Nari,v16-conflict-d18-t03,v16-conflict-d16-t04,0,1,1,1.649264,353.682148,remembers arbitration and asks,1
+208,18,Ori,v16-conflict-d18-t04,v16-conflict-d16-t05,0,1,1,1.687708,139.389912,remembers arbitration and refuses with repair path,1
+209,18,Vonn,v16-conflict-d18-t05,v16-conflict-d16-t06,0,1,1,1.722212,265.827676,remembers arbitration and refuses with repair path,1
+210,18,Sova,v16-conflict-d18-t06,v16-conflict-d16-t08,1,1,1,1.762212,43.95044,remembers arbitration and refuses with repair path,1
+211,18,Keth,v16-conflict-d18-t07,v16-conflict-d16-t09,0,1,1,1.799008,190.273204,remembers arbitration and asks,1
+212,18,Melo,v16-conflict-d18-t08,v16-conflict-d16-t10,0,0,0,1.825064,323.680968,remembers arbitration and asks,1
+213,18,Nari,v16-conflict-d18-t09,v16-conflict-d16-t11,0,1,1,1.887808,104.058732,remembers arbitration and asks,1
+214,18,Ori,v16-conflict-d18-t10,v16-conflict-d17-t00,0,1,1,1.920415,239.516496,remembers arbitration and asks,1
+215,18,Vonn,v16-conflict-d18-t11,v16-conflict-d17-t02,0,1,1,1.960315,16.20426,remembers arbitration and refuses with repair path,1
+216,19,Keth,v16-conflict-d19-t00,v16-conflict-d18-t05,0,1,1,1.553659,175.222024,remembers arbitration and refuses with repair path,1
+217,19,Melo,v16-conflict-d19-t01,v16-conflict-d18-t07,0,1,1,1.596963,303.709788,remembers arbitration and refuses with repair path,1
+218,19,Nari,v16-conflict-d19-t02,v16-conflict-d18-t08,0,1,1,1.626415,83.677552,remembers arbitration and asks,1
+219,19,Ori,v16-conflict-d19-t03,v16-conflict-d18-t09,0,1,1,1.668263,219.135316,remembers arbitration and asks,1
+220,19,Vonn,v16-conflict-d19-t04,v16-conflict-d18-t10,0,1,1,1.706315,0.74308,remembers arbitration and refuses with repair path,1
+221,19,Sova,v16-conflict-d19-t05,v16-conflict-d18-t11,1,1,1,1.753659,144.195844,remembers arbitration and refuses with repair path,1
+222,19,Keth,v16-conflict-d19-t06,v16-conflict-d12-t00,0,1,1,1.786408,274.733608,remembers arbitration and asks,1
+223,19,Melo,v16-conflict-d19-t07,v16-conflict-d12-t01,0,1,1,1.826308,53.471372,remembers arbitration and refuses with repair path,1
+224,19,Nari,v16-conflict-d19-t08,v16-conflict-d12-t02,0,1,1,1.875108,188.519136,remembers arbitration and refuses with repair path,1
+225,19,Ori,v16-conflict-d19-t09,v16-conflict-d12-t03,0,0,0,1.8826,327.4619,remembers arbitration and asks,1
+226,19,Vonn,v16-conflict-d19-t10,v16-conflict-d12-t05,0,1,1,1.9555,104.149664,remembers arbitration and refuses with repair path,1
+227,19,Sova,v16-conflict-d19-t11,v16-conflict-d12-t06,1,1,1,1.9955,242.272428,remembers arbitration and refuses with repair path,1
+228,20,Melo,v16-conflict-d20-t00,v16-conflict-d13-t06,0,1,1,1.5815,36.575192,remembers arbitration and refuses with repair path,1
+229,20,Nari,v16-conflict-d20-t01,v16-conflict-d13-t07,0,1,1,1.612408,173.057956,remembers arbitration and asks,1
+230,20,Ori,v16-conflict-d20-t02,v16-conflict-d13-t08,0,1,1,1.652408,313.43572,remembers arbitration and asks,1
+231,20,Vonn,v16-conflict-d20-t03,v16-conflict-d13-t10,0,1,1,1.692308,90.123484,remembers arbitration and refuses with repair path,1
+232,20,Sova,v16-conflict-d20-t04,v16-conflict-d13-t11,0,1,1,1.733393,225.991248,remembers arbitration and refuses with repair path,1
+233,20,Keth,v16-conflict-d20-t05,v16-conflict-d14-t00,0,1,1,1.7728,2.884012,remembers arbitration and asks,1
+234,20,Melo,v16-conflict-d20-t06,v16-conflict-d14-t01,0,1,1,1.822424,139.161776,remembers arbitration and refuses with repair path,1
+235,20,Nari,v16-conflict-d20-t07,v16-conflict-d14-t02,0,1,1,1.8528,276.66954,remembers arbitration and asks,1
+236,20,Ori,v16-conflict-d20-t08,v16-conflict-d14-t04,0,1,1,1.892028,59.507304,remembers arbitration and refuses with repair path,1
+237,20,Vonn,v16-conflict-d20-t09,v16-conflict-d14-t05,0,1,1,1.942424,191.275068,remembers arbitration and refuses with repair path,1
+238,20,Sova,v16-conflict-d20-t10,v16-conflict-d14-t06,1,0,0,1.947928,334.317832,remembers arbitration and asks,1
+239,20,Keth,v16-conflict-d20-t11,v16-conflict-d14-t07,0,1,1,2.012128,110.390596,remembers arbitration and asks,1
+240,21,Nari,v16-conflict-d21-t00,v16-conflict-d15-t09,0,1,1,1.598028,263.66836,remembers arbitration and refuses with repair path,1
+241,21,Ori,v16-conflict-d21-t01,v16-conflict-d15-t10,0,1,1,1.6388,41.586124,remembers arbitration and asks,1
+242,21,Vonn,v16-conflict-d21-t02,v16-conflict-d15-t11,0,1,1,1.678028,180.733888,remembers arbitration and refuses with repair path,1
+243,21,Sova,v16-conflict-d21-t03,v16-conflict-d16-t00,0,1,1,1.7187,317.421652,remembers arbitration and refuses with repair path,1
+244,21,Keth,v16-conflict-d21-t04,v16-conflict-d16-t01,1,1,1,1.759855,88.369416,remembers arbitration and refuses with repair path,1
+245,21,Melo,v16-conflict-d21-t05,v16-conflict-d16-t02,0,1,1,1.806548,234.69218,remembers arbitration and refuses with repair path,1
+246,21,Nari,v16-conflict-d21-t06,v16-conflict-d16-t03,0,1,1,1.8388,6.254944,remembers arbitration and asks,1
+247,21,Ori,v16-conflict-d21-t07,v16-conflict-d16-t04,0,1,1,1.8788,146.632708,remembers arbitration and asks,1
+248,21,Vonn,v16-conflict-d21-t08,v16-conflict-d16-t05,0,1,1,1.917748,286.805472,remembers arbitration and refuses with repair path,1
+249,21,Sova,v16-conflict-d21-t09,v16-conflict-d16-t06,0,1,1,1.959855,59.393236,remembers arbitration and refuses with repair path,1
+250,21,Keth,v16-conflict-d21-t10,v16-conflict-d16-t08,0,1,1,1.999955,194.441,remembers arbitration and asks,1
+251,21,Melo,v16-conflict-d21-t11,v16-conflict-d16-t09,0,0,0,2.013648,339.738764,remembers arbitration and asks,1

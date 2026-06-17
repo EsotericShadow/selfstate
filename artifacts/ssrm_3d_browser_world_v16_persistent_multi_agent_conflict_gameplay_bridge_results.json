@@ -1,0 +1,100 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_multi_day_persistence",
+      "interpretation": "Conflict choices reset each day and stop feeling like continuing social state.",
+      "readiness_after_ablation": 0.562131,
+      "readiness_loss": 0.34
+    },
+    {
+      "ablation": "no_arbitration_memory",
+      "interpretation": "Agents no longer reuse old arbitration outcomes in later requests/refusals.",
+      "readiness_after_ablation": 0.587131,
+      "readiness_loss": 0.315
+    },
+    {
+      "ablation": "no_later_refusal_binding",
+      "interpretation": "Bounded refusal becomes generic instead of tied to remembered treatment.",
+      "readiness_after_ablation": 0.632131,
+      "readiness_loss": 0.27
+    },
+    {
+      "ablation": "no_access_posture_changes",
+      "interpretation": "Trust/access/posture stop making arbitration visible in behavior.",
+      "readiness_after_ablation": 0.662131,
+      "readiness_loss": 0.24
+    },
+    {
+      "ablation": "no_repair_decay",
+      "interpretation": "Repairs either erase conflict too cleanly or leave permanent residue.",
+      "readiness_after_ablation": 0.697131,
+      "readiness_loss": 0.205
+    },
+    {
+      "ablation": "no_branch_state_survival",
+      "interpretation": "Browser-local branch state no longer survives reload/day advance into memory.",
+      "readiness_after_ablation": 0.712131,
+      "readiness_loss": 0.19
+    }
+  ],
+  "artifacts": {
+    "access_relationship_posture_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_access_relationship_posture.csv",
+    "arbitration_memory_carry_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_arbitration_memory_carry.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_browser_ticks.csv",
+    "conflict_repair_decay_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_conflict_repair_decay.csv",
+    "gameplay_days_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_gameplay_days.csv",
+    "gameplay_replay_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_gameplay_replay.csv",
+    "later_request_refusals_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_later_request_refusals.csv",
+    "live_conflict_decisions_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_live_conflict_decisions.csv",
+    "persistent_branch_states_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_persistent_branch_states.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_results.json",
+    "state_json": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v16_persistent_multi_agent_conflict_gameplay_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local persistent conflict gameplay scaffold only; no subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "access_relationship_posture_frames": 252,
+    "agents": 6,
+    "arbitration_memory_carry_frames": 252,
+    "browser_world_v16_ticks": 252,
+    "conflict_repair_decay_frames": 252,
+    "gameplay_day_frames": 21,
+    "gameplay_replay_frames": 252,
+    "later_request_refusal_frames": 252,
+    "live_conflict_decision_frames": 252,
+    "persistent_branch_state_frames": 252
+  },
+  "days": 21,
+  "metrics": {
+    "access_posture_change_binding": 0.876984,
+    "bounded_refusal_with_repair_path": 0.942029,
+    "browser_world_v16_persistent_conflict_gameplay_readiness": 0.902131,
+    "browser_world_v16_surface_available": 1.0,
+    "conflict_repair_decay_calibration": 1.0,
+    "later_request_refusal_binding": 0.876984,
+    "live_conflict_decision_surface": 0.880952,
+    "mean_gameplay_channel_score": 0.936512,
+    "multi_day_gameplay_span": 1.0,
+    "persistent_branch_state_integrity": 0.873016,
+    "privacy_safe_public_memory": 1.0,
+    "relationship_posture_continuity": 0.876984,
+    "reload_day_advance_survival": 0.888889,
+    "remembered_arbitration_reuse": 0.920833,
+    "repair_memory_softened_not_erased": 0.945736,
+    "replay_gameplay_integrity": 0.992254,
+    "sensory_frequency_flower_gameplay_rhythm": 1.0,
+    "source_conflict_arbitration_continuity": 1.0,
+    "typed_gameplay_decision_confidence": 0.846036,
+    "weakest_channel_score": 0.846036
+  },
+  "name": "SSRM-3D browser world v16 persistent multi-agent conflict gameplay bridge",
+  "next_gate": "browser world v17 with playable agent-authored counterproposals, negotiated compromise, and remembered multi-party consent boundaries across conflict arcs",
+  "report": 256,
+  "seed": 20260869,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v15_multi_agent_branch_conflict_arbitration_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 12,
+  "verdict": "pass"
+}

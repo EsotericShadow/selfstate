@@ -1,0 +1,253 @@
+tick,day,agent,conflict_id,access_level,trust_level,guardedness,approach_distance,posture_marker,access_changed_from_memory,relationship_posture_bound
+0,1,Keth,v16-conflict-d01-t00,0.48,0.48,0.3602,0.657656,keeps side-on distance,0,0
+1,1,Melo,v16-conflict-d01-t01,0.56,0.655,0.3338,0.590764,faces avatar and negotiates,0,0
+2,1,Nari,v16-conflict-d01-t02,0.48,0.475,0.3602,0.659356,keeps side-on distance,0,0
+3,1,Ori,v16-conflict-d01-t03,0.48,0.665,0.3338,0.587364,faces avatar and negotiates,0,0
+4,1,Vonn,v16-conflict-d01-t04,0.48,0.645,0.3338,0.594164,faces avatar and negotiates,0,0
+5,1,Sova,v16-conflict-d01-t05,0.56,0.685,0.3338,0.580564,faces avatar and negotiates,0,0
+6,1,Keth,v16-conflict-d01-t06,0.48,0.48,0.3602,0.657656,keeps side-on distance,0,0
+7,1,Melo,v16-conflict-d01-t07,0.48,0.655,0.3338,0.590764,faces avatar and negotiates,0,0
+8,1,Nari,v16-conflict-d01-t08,0.48,0.475,0.3602,0.659356,keeps side-on distance,0,0
+9,1,Ori,v16-conflict-d01-t09,0.56,0.545,0.3602,0.635556,keeps side-on distance,0,0
+10,1,Vonn,v16-conflict-d01-t10,0.48,0.775,0.313,0.54414,faces avatar and negotiates,0,0
+11,1,Sova,v16-conflict-d01-t11,0.48,0.815,0.313,0.53054,faces avatar and negotiates,0,0
+12,2,Melo,v16-conflict-d01-t03,0.61,0.645,0.4745,0.63356,faces avatar and negotiates,1,1
+13,2,Nari,v16-conflict-d01-t04,0.78,0.585,0.3345,0.61476,waits near shared object,1,1
+14,2,Ori,v16-conflict-d01-t05,0.7,0.655,0.3345,0.59096,faces avatar and negotiates,1,1
+15,2,Vonn,v16-conflict-d01-t07,0.69,0.635,0.4745,0.63696,faces avatar and negotiates,1,1
+16,2,Sova,v16-conflict-d01-t08,0.61,0.555,0.5009,0.671552,keeps side-on distance,1,1
+17,2,Keth,v16-conflict-d01-t09,0.56,0.47,0.3609,0.661252,keeps side-on distance,0,0
+18,2,Melo,v16-conflict-d01-t10,0.61,0.775,0.4537,0.583536,faces avatar and negotiates,1,1
+19,2,Nari,v16-conflict-d01-t11,0.7,0.715,0.3137,0.564736,faces avatar and negotiates,1,1
+20,2,Ori,v16-conflict-d01-t01,0.69,0.655,0.4745,0.63016,faces avatar and negotiates,1,1
+21,2,Vonn,v16-conflict-d01-t02,0.61,0.515,0.5009,0.685152,keeps side-on distance,1,1
+22,2,Sova,v16-conflict-d01-t03,0.69,0.675,0.4745,0.62336,faces avatar and negotiates,1,1
+23,2,Keth,v16-conflict-d01-t04,0.7,0.59,0.3345,0.61306,waits near shared object,1,1
+24,3,Nari,v16-conflict-d01-t05,0.61,0.575,0.4752,0.657556,keeps side-on distance,1,1
+25,3,Ori,v16-conflict-d01-t07,0.7,0.645,0.3352,0.594556,faces avatar and negotiates,1,1
+26,3,Vonn,v16-conflict-d01-t08,0.61,0.505,0.5016,0.688748,keeps side-on distance,1,1
+27,3,Sova,v16-conflict-d01-t09,0.61,0.545,0.5016,0.675148,keeps side-on distance,1,1
+28,3,Keth,v16-conflict-d01-t10,0.61,0.735,0.4544,0.597332,faces avatar and negotiates,1,1
+29,3,Melo,v16-conflict-d01-t11,0.69,0.765,0.4544,0.587132,faces avatar and negotiates,1,1
+30,3,Nari,v16-conflict-d02-t00,0.48,0.465,0.3609,0.662952,keeps side-on distance,0,0
+31,3,Ori,v16-conflict-d02-t01,0.78,0.535,0.3609,0.639152,keeps side-on distance,1,1
+32,3,Vonn,v16-conflict-d02-t02,0.61,0.635,0.4745,0.63696,faces avatar and negotiates,1,1
+33,3,Sova,v16-conflict-d02-t03,0.61,0.555,0.5009,0.671552,keeps side-on distance,1,1
+34,3,Keth,v16-conflict-d02-t04,0.7,0.72,0.3137,0.563036,faces avatar and negotiates,1,1
+35,3,Melo,v16-conflict-d02-t06,0.69,0.775,0.4537,0.583536,faces avatar and negotiates,1,1
+36,4,Ori,v16-conflict-d01-t07,0.61,0.62,0.4792,0.643376,keeps side-on distance,1,1
+37,4,Vonn,v16-conflict-d01-t08,0.61,0.495,0.5023,0.692344,keeps side-on distance,1,1
+38,4,Sova,v16-conflict-d01-t09,0.61,0.535,0.5023,0.678744,keeps side-on distance,1,1
+39,4,Keth,v16-conflict-d01-t10,0.78,0.71,0.3184,0.567752,faces avatar and negotiates,1,1
+40,4,Melo,v16-conflict-d01-t11,0.61,0.715,0.4584,0.605252,faces avatar and negotiates,1,1
+41,4,Nari,v16-conflict-d02-t00,0.78,0.455,0.3616,0.666548,keeps side-on distance,1,1
+42,4,Ori,v16-conflict-d02-t01,0.7,0.525,0.3616,0.642748,keeps side-on distance,1,1
+43,4,Vonn,v16-conflict-d02-t02,0.48,0.625,0.3352,0.601356,faces avatar and negotiates,0,0
+44,4,Sova,v16-conflict-d02-t03,0.61,0.545,0.5016,0.675148,keeps side-on distance,1,1
+45,4,Keth,v16-conflict-d02-t04,0.7,0.735,0.3144,0.558132,faces avatar and negotiates,1,1
+46,4,Melo,v16-conflict-d02-t06,0.61,0.765,0.4544,0.587132,faces avatar and negotiates,1,1
+47,4,Nari,v16-conflict-d02-t07,0.7,0.455,0.3616,0.666548,keeps side-on distance,1,1
+48,5,Vonn,v16-conflict-d01-t08,0.69,0.505,0.4998,0.688244,keeps side-on distance,1,1
+49,5,Sova,v16-conflict-d01-t09,0.69,0.545,0.4998,0.674644,keeps side-on distance,1,1
+50,5,Keth,v16-conflict-d01-t10,0.78,0.685,0.3224,0.577372,faces avatar and negotiates,1,1
+51,5,Melo,v16-conflict-d01-t11,0.61,0.69,0.4624,0.614872,faces avatar and negotiates,1,1
+52,5,Nari,v16-conflict-d02-t00,0.69,0.445,0.5023,0.709344,keeps side-on distance,1,1
+53,5,Ori,v16-conflict-d02-t01,0.7,0.515,0.3623,0.646344,keeps side-on distance,1,1
+54,5,Vonn,v16-conflict-d02-t02,0.61,0.6,0.4792,0.650176,keeps side-on distance,1,1
+55,5,Sova,v16-conflict-d02-t03,0.69,0.535,0.5023,0.678744,keeps side-on distance,1,1
+56,5,Keth,v16-conflict-d02-t04,0.56,0.71,0.3184,0.567752,faces avatar and negotiates,0,0
+57,5,Melo,v16-conflict-d02-t06,0.69,0.715,0.4584,0.605252,faces avatar and negotiates,1,1
+58,5,Nari,v16-conflict-d02-t07,0.7,0.445,0.3623,0.670144,keeps side-on distance,1,1
+59,5,Ori,v16-conflict-d02-t08,0.7,0.62,0.3392,0.604176,waits near shared object,1,1
+60,6,Sova,v16-conflict-d01-t10,0.61,0.72,0.4664,0.605792,faces avatar and negotiates,1,1
+61,6,Keth,v16-conflict-d01-t11,0.78,0.66,0.3264,0.586992,faces avatar and negotiates,1,1
+62,6,Melo,v16-conflict-d02-t00,0.61,0.515,0.4998,0.684844,keeps side-on distance,1,1
+63,6,Nari,v16-conflict-d02-t01,0.7,0.455,0.3598,0.666044,keeps side-on distance,1,1
+64,6,Ori,v16-conflict-d02-t02,0.61,0.615,0.48,0.6453,keeps side-on distance,1,1
+65,6,Vonn,v16-conflict-d02-t03,0.61,0.505,0.4998,0.688244,keeps side-on distance,1,1
+66,6,Sova,v16-conflict-d02-t04,0.69,0.745,0.4624,0.596172,faces avatar and negotiates,1,1
+67,6,Keth,v16-conflict-d02-t06,0.7,0.685,0.3224,0.577372,faces avatar and negotiates,1,1
+68,6,Melo,v16-conflict-d02-t07,0.61,0.49,0.4998,0.693344,keeps side-on distance,1,1
+69,6,Nari,v16-conflict-d02-t08,0.56,0.545,0.34,0.6299,waits near shared object,0,0
+70,6,Ori,v16-conflict-d02-t09,0.7,0.725,0.3224,0.563772,faces avatar and negotiates,1,1
+71,6,Vonn,v16-conflict-d02-t10,0.61,0.595,0.48,0.6521,keeps side-on distance,1,1
+72,7,Keth,v16-conflict-d01-t11,0.69,0.635,0.4704,0.635812,faces avatar and negotiates,1,1
+73,7,Melo,v16-conflict-d02-t00,0.61,0.53,0.4965,0.67882,keeps side-on distance,1,1
+74,7,Nari,v16-conflict-d02-t01,0.78,0.445,0.3565,0.66852,keeps side-on distance,1,1
+75,7,Ori,v16-conflict-d02-t02,0.78,0.615,0.34,0.6061,waits near shared object,1,1
+76,7,Vonn,v16-conflict-d02-t03,0.61,0.52,0.4965,0.68222,keeps side-on distance,1,1
+77,7,Sova,v16-conflict-d02-t04,0.61,0.72,0.4664,0.605792,faces avatar and negotiates,1,1
+78,7,Keth,v16-conflict-d02-t06,0.7,0.66,0.3264,0.586992,faces avatar and negotiates,1,1
+79,7,Melo,v16-conflict-d02-t07,0.61,0.53,0.4965,0.67882,keeps side-on distance,1,1
+80,7,Nari,v16-conflict-d02-t08,0.61,0.545,0.48,0.6691,keeps side-on distance,1,1
+81,7,Ori,v16-conflict-d02-t09,0.78,0.7,0.3264,0.573392,faces avatar and negotiates,1,1
+82,7,Vonn,v16-conflict-d02-t10,0.48,0.595,0.34,0.6129,waits near shared object,0,0
+83,7,Sova,v16-conflict-d03-t00,0.69,0.745,0.4624,0.596172,faces avatar and negotiates,1,1
+84,8,Melo,v16-conflict-d02-t00,0.61,0.545,0.4932,0.672796,keeps side-on distance,1,1
+85,8,Nari,v16-conflict-d02-t01,0.7,0.46,0.3532,0.662496,keeps side-on distance,1,1
+86,8,Ori,v16-conflict-d02-t02,0.7,0.615,0.34,0.6061,waits near shared object,1,1
+87,8,Vonn,v16-conflict-d02-t03,0.61,0.535,0.4932,0.676196,keeps side-on distance,1,1
+88,8,Sova,v16-conflict-d02-t04,0.61,0.695,0.4704,0.615412,faces avatar and negotiates,1,1
+89,8,Keth,v16-conflict-d02-t06,0.78,0.635,0.3304,0.596612,faces avatar and negotiates,1,1
+90,8,Melo,v16-conflict-d02-t07,0.61,0.545,0.4932,0.672796,keeps side-on distance,1,1
+91,8,Nari,v16-conflict-d02-t08,0.78,0.52,0.34,0.6384,waits near shared object,1,1
+92,8,Ori,v16-conflict-d02-t09,0.61,0.675,0.4704,0.622212,faces avatar and negotiates,1,1
+93,8,Vonn,v16-conflict-d02-t10,0.61,0.595,0.48,0.6521,keeps side-on distance,1,1
+94,8,Sova,v16-conflict-d03-t00,0.61,0.72,0.4664,0.605792,faces avatar and negotiates,1,1
+95,8,Keth,v16-conflict-d03-t01,0.48,0.66,0.3264,0.586992,faces avatar and negotiates,0,0
+96,9,Nari,v16-conflict-d04-t01,0.61,0.47,0.4965,0.69922,keeps side-on distance,1,1
+97,9,Ori,v16-conflict-d04-t02,0.7,0.615,0.34,0.6061,waits near shared object,1,1
+98,9,Vonn,v16-conflict-d04-t03,0.69,0.595,0.48,0.6521,keeps side-on distance,1,1
+99,9,Sova,v16-conflict-d04-t05,0.61,0.635,0.48,0.6385,faces avatar and negotiates,1,1
+100,9,Keth,v16-conflict-d04-t06,0.61,0.66,0.4664,0.626192,faces avatar and negotiates,1,1
+101,9,Melo,v16-conflict-d04-t07,0.61,0.53,0.4965,0.67882,keeps side-on distance,1,1
+102,9,Nari,v16-conflict-d04-t08,0.7,0.445,0.3565,0.66852,keeps side-on distance,1,1
+103,9,Ori,v16-conflict-d04-t09,0.7,0.615,0.34,0.6061,waits near shared object,1,1
+104,9,Vonn,v16-conflict-d04-t10,0.61,0.68,0.4664,0.619392,faces avatar and negotiates,1,1
+105,9,Sova,v16-conflict-d04-t11,0.61,0.72,0.4664,0.605792,faces avatar and negotiates,1,1
+106,9,Keth,v16-conflict-d05-t00,0.7,0.485,0.3598,0.655844,keeps side-on distance,1,1
+107,9,Melo,v16-conflict-d05-t01,0.61,0.515,0.4998,0.684844,keeps side-on distance,1,1
+108,10,Ori,v16-conflict-d06-t01,0.56,0.5,0.3598,0.650744,keeps side-on distance,0,0
+109,10,Vonn,v16-conflict-d06-t02,0.61,0.595,0.48,0.6521,keeps side-on distance,1,1
+110,10,Sova,v16-conflict-d06-t03,0.61,0.745,0.4624,0.596172,faces avatar and negotiates,1,1
+111,10,Keth,v16-conflict-d06-t04,0.78,0.685,0.3224,0.577372,faces avatar and negotiates,1,1
+112,10,Melo,v16-conflict-d06-t05,0.69,0.715,0.4624,0.606372,faces avatar and negotiates,1,1
+113,10,Nari,v16-conflict-d06-t06,0.7,0.455,0.3598,0.666044,keeps side-on distance,1,1
+114,10,Ori,v16-conflict-d06-t07,0.7,0.725,0.3224,0.563772,faces avatar and negotiates,1,1
+115,10,Vonn,v16-conflict-d06-t09,0.61,0.595,0.48,0.6521,keeps side-on distance,1,1
+116,10,Sova,v16-conflict-d06-t10,0.61,0.745,0.4624,0.596172,faces avatar and negotiates,1,1
+117,10,Keth,v16-conflict-d06-t11,0.7,0.685,0.3224,0.577372,faces avatar and negotiates,1,1
+118,10,Melo,v16-conflict-d07-t00,0.69,0.61,0.4792,0.646776,keeps side-on distance,1,1
+119,10,Nari,v16-conflict-d07-t01,0.7,0.655,0.3184,0.586452,faces avatar and negotiates,1,1
+120,11,Vonn,v16-conflict-d08-t04,0.69,0.73,0.4584,0.600152,faces avatar and negotiates,1,1
+121,11,Sova,v16-conflict-d08-t05,0.56,0.535,0.3623,0.639544,keeps side-on distance,0,0
+122,11,Keth,v16-conflict-d08-t06,0.78,0.71,0.3184,0.567752,faces avatar and negotiates,1,1
+123,11,Melo,v16-conflict-d08-t08,0.61,0.505,0.5023,0.688944,keeps side-on distance,1,1
+124,11,Nari,v16-conflict-d08-t09,0.61,0.55,0.4792,0.667176,keeps side-on distance,1,1
+125,11,Ori,v16-conflict-d08-t10,0.7,0.49,0.3623,0.654844,keeps side-on distance,1,1
+126,11,Vonn,v16-conflict-d08-t11,0.69,0.73,0.4584,0.600152,faces avatar and negotiates,1,1
+127,11,Sova,v16-conflict-d09-t00,0.61,0.545,0.5016,0.675148,keeps side-on distance,1,1
+128,11,Keth,v16-conflict-d09-t01,0.61,0.735,0.4544,0.597332,faces avatar and negotiates,1,1
+129,11,Melo,v16-conflict-d09-t02,0.61,0.515,0.5016,0.685348,keeps side-on distance,1,1
+130,11,Nari,v16-conflict-d09-t03,0.7,0.705,0.3144,0.568332,faces avatar and negotiates,1,1
+131,11,Ori,v16-conflict-d09-t04,0.7,0.645,0.3352,0.594556,faces avatar and negotiates,1,1
+132,12,Sova,v16-conflict-d10-t06,0.61,0.545,0.5016,0.675148,keeps side-on distance,1,1
+133,12,Keth,v16-conflict-d10-t07,0.7,0.485,0.3616,0.656348,keeps side-on distance,1,1
+134,12,Melo,v16-conflict-d10-t08,0.48,0.515,0.3616,0.646148,keeps side-on distance,0,0
+135,12,Nari,v16-conflict-d10-t09,0.7,0.705,0.3144,0.568332,faces avatar and negotiates,1,1
+136,12,Ori,v16-conflict-d10-t10,0.61,0.62,0.4752,0.642256,keeps side-on distance,1,1
+137,12,Vonn,v16-conflict-d11-t00,0.69,0.515,0.5009,0.685152,keeps side-on distance,1,1
+138,12,Sova,v16-conflict-d11-t01,0.69,0.555,0.5009,0.671552,keeps side-on distance,1,1
+139,12,Keth,v16-conflict-d11-t02,0.7,0.615,0.3345,0.60456,waits near shared object,1,1
+140,12,Melo,v16-conflict-d11-t03,0.61,0.645,0.4745,0.63356,faces avatar and negotiates,1,1
+141,12,Nari,v16-conflict-d11-t04,0.7,0.465,0.3609,0.662952,keeps side-on distance,1,1
+142,12,Ori,v16-conflict-d11-t06,0.78,0.51,0.3609,0.647652,keeps side-on distance,1,1
+143,12,Vonn,v16-conflict-d11-t07,0.69,0.765,0.4537,0.586936,faces avatar and negotiates,1,1
+144,13,Keth,v16-conflict-d12-t07,0.61,0.745,0.4537,0.593736,faces avatar and negotiates,1,1
+145,13,Melo,v16-conflict-d12-t08,0.61,0.525,0.5009,0.681752,keeps side-on distance,1,1
+146,13,Nari,v16-conflict-d12-t09,0.7,0.585,0.3345,0.61476,waits near shared object,1,1
+147,13,Ori,v16-conflict-d12-t11,0.48,0.535,0.3609,0.639152,keeps side-on distance,0,0
+148,13,Vonn,v16-conflict-d06-t00,0.61,0.55,0.4899,0.670172,keeps side-on distance,1,1
+149,13,Sova,v16-conflict-d06-t01,0.61,0.59,0.4899,0.656572,keeps side-on distance,1,1
+150,13,Keth,v16-conflict-d06-t02,0.78,0.575,0.34,0.6197,waits near shared object,1,1
+151,13,Melo,v16-conflict-d06-t03,0.61,0.64,0.4744,0.635232,faces avatar and negotiates,1,1
+152,13,Nari,v16-conflict-d06-t04,0.61,0.58,0.4744,0.655632,keeps side-on distance,1,1
+153,13,Ori,v16-conflict-d06-t05,0.7,0.625,0.3344,0.601132,faces avatar and negotiates,1,1
+154,13,Vonn,v16-conflict-d06-t06,0.61,0.55,0.4899,0.670172,keeps side-on distance,1,1
+155,13,Sova,v16-conflict-d06-t07,0.69,0.67,0.4744,0.625032,faces avatar and negotiates,1,1
+156,14,Melo,v16-conflict-d07-t09,0.69,0.605,0.48,0.6487,keeps side-on distance,1,1
+157,14,Nari,v16-conflict-d07-t10,0.78,0.545,0.34,0.6299,waits near shared object,1,1
+158,14,Ori,v16-conflict-d07-t11,0.78,0.57,0.3499,0.624172,waits near shared object,1,1
+159,14,Vonn,v16-conflict-d08-t00,0.61,0.63,0.4704,0.637512,faces avatar and negotiates,1,1
+160,14,Sova,v16-conflict-d08-t02,0.48,0.635,0.34,0.5993,faces avatar and negotiates,0,0
+161,14,Keth,v16-conflict-d08-t03,0.78,0.575,0.34,0.6197,waits near shared object,1,1
+162,14,Melo,v16-conflict-d08-t04,0.61,0.665,0.4704,0.625612,faces avatar and negotiates,1,1
+163,14,Nari,v16-conflict-d08-t05,0.7,0.485,0.3532,0.653996,keeps side-on distance,1,1
+164,14,Ori,v16-conflict-d08-t06,0.69,0.675,0.4704,0.622212,faces avatar and negotiates,1,1
+165,14,Vonn,v16-conflict-d08-t08,0.69,0.535,0.4932,0.676196,keeps side-on distance,1,1
+166,14,Sova,v16-conflict-d08-t09,0.61,0.635,0.48,0.6385,faces avatar and negotiates,1,1
+167,14,Keth,v16-conflict-d08-t10,0.78,0.515,0.3532,0.643796,keeps side-on distance,1,1
+168,15,Nari,v16-conflict-d09-t11,0.61,0.485,0.4932,0.693196,keeps side-on distance,1,1
+169,15,Ori,v16-conflict-d10-t01,0.7,0.615,0.34,0.6061,waits near shared object,1,1
+170,15,Vonn,v16-conflict-d10-t02,0.69,0.495,0.4965,0.69072,keeps side-on distance,1,1
+171,15,Sova,v16-conflict-d10-t03,0.61,0.635,0.48,0.6385,faces avatar and negotiates,1,1
+172,15,Keth,v16-conflict-d10-t04,0.61,0.5,0.4965,0.68902,keeps side-on distance,1,1
+173,15,Melo,v16-conflict-d10-t05,0.48,0.69,0.3264,0.576792,faces avatar and negotiates,0,0
+174,15,Nari,v16-conflict-d10-t06,0.7,0.47,0.3565,0.66002,keeps side-on distance,1,1
+175,15,Ori,v16-conflict-d10-t07,0.78,0.54,0.3565,0.63622,keeps side-on distance,1,1
+176,15,Vonn,v16-conflict-d10-t08,0.61,0.495,0.4965,0.69072,keeps side-on distance,1,1
+177,15,Sova,v16-conflict-d10-t09,0.61,0.72,0.4664,0.605792,faces avatar and negotiates,1,1
+178,15,Keth,v16-conflict-d10-t10,0.7,0.575,0.34,0.6197,waits near shared object,1,1
+179,15,Melo,v16-conflict-d11-t00,0.61,0.515,0.4998,0.684844,keeps side-on distance,1,1
+180,16,Ori,v16-conflict-d12-t00,0.61,0.725,0.4624,0.602972,faces avatar and negotiates,1,1
+181,16,Vonn,v16-conflict-d12-t01,0.69,0.705,0.4624,0.609772,faces avatar and negotiates,1,1
+182,16,Sova,v16-conflict-d12-t02,0.61,0.745,0.4624,0.596172,faces avatar and negotiates,1,1
+183,16,Keth,v16-conflict-d12-t03,0.7,0.575,0.34,0.6197,waits near shared object,1,1
+184,16,Melo,v16-conflict-d12-t05,0.69,0.605,0.48,0.6487,keeps side-on distance,1,1
+185,16,Nari,v16-conflict-d12-t06,0.7,0.545,0.34,0.6299,waits near shared object,1,1
+186,16,Ori,v16-conflict-d12-t07,0.48,0.725,0.3224,0.563772,faces avatar and negotiates,0,0
+187,16,Vonn,v16-conflict-d12-t08,0.61,0.48,0.4998,0.696744,keeps side-on distance,1,1
+188,16,Sova,v16-conflict-d12-t09,0.69,0.635,0.48,0.6385,faces avatar and negotiates,1,1
+189,16,Keth,v16-conflict-d12-t11,0.7,0.485,0.3598,0.655844,keeps side-on distance,1,1
+190,16,Melo,v16-conflict-d13-t00,0.61,0.61,0.4792,0.646776,keeps side-on distance,1,1
+191,16,Nari,v16-conflict-d13-t01,0.7,0.68,0.3184,0.577952,faces avatar and negotiates,1,1
+192,17,Vonn,v16-conflict-d14-t02,0.69,0.6,0.4792,0.650176,keeps side-on distance,1,1
+193,17,Sova,v16-conflict-d14-t04,0.69,0.745,0.4584,0.595052,faces avatar and negotiates,1,1
+194,17,Keth,v16-conflict-d14-t05,0.78,0.475,0.3623,0.659944,keeps side-on distance,1,1
+195,17,Melo,v16-conflict-d14-t06,0.61,0.74,0.4584,0.596752,faces avatar and negotiates,1,1
+196,17,Nari,v16-conflict-d14-t07,0.69,0.68,0.4584,0.617152,faces avatar and negotiates,1,1
+197,17,Ori,v16-conflict-d14-t08,0.78,0.62,0.3392,0.604176,waits near shared object,1,1
+198,17,Vonn,v16-conflict-d14-t09,0.61,0.6,0.4792,0.650176,keeps side-on distance,1,1
+199,17,Sova,v16-conflict-d14-t10,0.56,0.64,0.3392,0.597376,faces avatar and negotiates,0,0
+200,17,Keth,v16-conflict-d14-t11,0.61,0.475,0.5023,0.699144,keeps side-on distance,1,1
+201,17,Melo,v16-conflict-d15-t00,0.61,0.765,0.4544,0.587132,faces avatar and negotiates,1,1
+202,17,Nari,v16-conflict-d15-t01,0.7,0.705,0.3144,0.568332,faces avatar and negotiates,1,1
+203,17,Ori,v16-conflict-d15-t03,0.7,0.525,0.3616,0.642748,keeps side-on distance,1,1
+204,18,Sova,v16-conflict-d16-t01,0.61,0.52,0.5016,0.683648,keeps side-on distance,1,1
+205,18,Keth,v16-conflict-d16-t02,0.78,0.735,0.3144,0.558132,faces avatar and negotiates,1,1
+206,18,Melo,v16-conflict-d16-t03,0.69,0.635,0.4752,0.637156,faces avatar and negotiates,1,1
+207,18,Nari,v16-conflict-d16-t04,0.78,0.575,0.3352,0.618356,waits near shared object,1,1
+208,18,Ori,v16-conflict-d16-t05,0.69,0.775,0.4544,0.583732,faces avatar and negotiates,1,1
+209,18,Vonn,v16-conflict-d16-t06,0.61,0.505,0.5016,0.688748,keeps side-on distance,1,1
+210,18,Sova,v16-conflict-d16-t08,0.61,0.52,0.5016,0.683648,keeps side-on distance,1,1
+211,18,Keth,v16-conflict-d16-t09,0.7,0.735,0.3144,0.558132,faces avatar and negotiates,1,1
+212,18,Melo,v16-conflict-d16-t10,0.56,0.635,0.3352,0.597956,faces avatar and negotiates,0,0
+213,18,Nari,v16-conflict-d16-t11,0.78,0.705,0.3144,0.568332,faces avatar and negotiates,1,1
+214,18,Ori,v16-conflict-d17-t00,0.7,0.655,0.3345,0.59096,faces avatar and negotiates,1,1
+215,18,Vonn,v16-conflict-d17-t02,0.61,0.635,0.4745,0.63696,faces avatar and negotiates,1,1
+216,19,Keth,v16-conflict-d18-t05,0.69,0.745,0.4537,0.593736,faces avatar and negotiates,1,1
+217,19,Melo,v16-conflict-d18-t07,0.69,0.525,0.5009,0.681752,keeps side-on distance,1,1
+218,19,Nari,v16-conflict-d18-t08,0.7,0.585,0.3345,0.61476,waits near shared object,1,1
+219,19,Ori,v16-conflict-d18-t09,0.7,0.535,0.3609,0.639152,keeps side-on distance,1,1
+220,19,Vonn,v16-conflict-d18-t10,0.61,0.635,0.4745,0.63696,faces avatar and negotiates,1,1
+221,19,Sova,v16-conflict-d18-t11,0.69,0.78,0.4537,0.581836,faces avatar and negotiates,1,1
+222,19,Keth,v16-conflict-d12-t00,0.7,0.61,0.3344,0.606232,waits near shared object,1,1
+223,19,Melo,v16-conflict-d12-t01,0.61,0.64,0.4744,0.635232,faces avatar and negotiates,1,1
+224,19,Nari,v16-conflict-d12-t02,0.69,0.58,0.4744,0.655632,keeps side-on distance,1,1
+225,19,Ori,v16-conflict-d12-t03,0.48,0.615,0.34,0.6061,waits near shared object,0,0
+226,19,Vonn,v16-conflict-d12-t05,0.69,0.595,0.48,0.6521,keeps side-on distance,1,1
+227,19,Sova,v16-conflict-d12-t06,0.69,0.61,0.48,0.647,keeps side-on distance,1,1
+228,20,Melo,v16-conflict-d13-t06,0.69,0.605,0.48,0.6487,keeps side-on distance,1,1
+229,20,Nari,v16-conflict-d13-t07,0.7,0.58,0.3344,0.616432,waits near shared object,1,1
+230,20,Ori,v16-conflict-d13-t08,0.7,0.65,0.3344,0.592632,faces avatar and negotiates,1,1
+231,20,Vonn,v16-conflict-d13-t10,0.61,0.63,0.4744,0.638632,faces avatar and negotiates,1,1
+232,20,Sova,v16-conflict-d13-t11,0.61,0.59,0.4899,0.656572,keeps side-on distance,1,1
+233,20,Keth,v16-conflict-d14-t00,0.7,0.575,0.34,0.6197,waits near shared object,1,1
+234,20,Melo,v16-conflict-d14-t01,0.69,0.545,0.4932,0.672796,keeps side-on distance,1,1
+235,20,Nari,v16-conflict-d14-t02,0.7,0.545,0.34,0.6299,waits near shared object,1,1
+236,20,Ori,v16-conflict-d14-t04,0.61,0.675,0.4704,0.622212,faces avatar and negotiates,1,1
+237,20,Vonn,v16-conflict-d14-t05,0.69,0.535,0.4932,0.676196,keeps side-on distance,1,1
+238,20,Sova,v16-conflict-d14-t06,0.48,0.67,0.3304,0.584712,faces avatar and negotiates,0,0
+239,20,Keth,v16-conflict-d14-t07,0.7,0.635,0.3304,0.596612,faces avatar and negotiates,1,1
+240,21,Nari,v16-conflict-d15-t09,0.61,0.605,0.4704,0.646012,keeps side-on distance,1,1
+241,21,Ori,v16-conflict-d15-t10,0.7,0.615,0.34,0.6061,waits near shared object,1,1
+242,21,Vonn,v16-conflict-d15-t11,0.61,0.655,0.4704,0.629012,faces avatar and negotiates,1,1
+243,21,Sova,v16-conflict-d16-t00,0.61,0.635,0.48,0.6385,faces avatar and negotiates,1,1
+244,21,Keth,v16-conflict-d16-t01,0.61,0.475,0.4965,0.69752,keeps side-on distance,1,1
+245,21,Melo,v16-conflict-d16-t02,0.69,0.69,0.4664,0.615992,faces avatar and negotiates,1,1
+246,21,Nari,v16-conflict-d16-t03,0.7,0.545,0.34,0.6299,waits near shared object,1,1
+247,21,Ori,v16-conflict-d16-t04,0.7,0.615,0.34,0.6061,waits near shared object,1,1
+248,21,Vonn,v16-conflict-d16-t05,0.61,0.68,0.4664,0.619392,faces avatar and negotiates,1,1
+249,21,Sova,v16-conflict-d16-t06,0.61,0.56,0.4965,0.66862,keeps side-on distance,1,1
+250,21,Keth,v16-conflict-d16-t08,0.7,0.5,0.3565,0.64982,keeps side-on distance,1,1
+251,21,Melo,v16-conflict-d16-t09,0.48,0.69,0.3264,0.576792,faces avatar and negotiates,0,0

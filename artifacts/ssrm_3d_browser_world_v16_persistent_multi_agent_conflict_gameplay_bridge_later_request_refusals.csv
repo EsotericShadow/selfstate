@@ -1,0 +1,253 @@
+tick,day,agent,prior_conflict_id,later_situation,request_or_refusal,bound_to_prior_arbitration,bounded_refusal,refusal_repair_path,request_quality,public_phrase
+0,1,Keth,v16-conflict-d01-t00,route warning dispute,request,0,0,0,0.64,I remember day 1; can we use that same public reason here?
+1,1,Melo,v16-conflict-d01-t01,sleep place crowding,request,0,0,0,0.748333,I remember day 1; can we use that same public reason here?
+2,1,Nari,v16-conflict-d01-t02,ledger access request,request,0,0,0,0.756667,I remember day 1; can we use that same public reason here?
+3,1,Ori,v16-conflict-d01-t03,repair work interruption,request,0,0,0,0.765,I remember day 1; can we use that same public reason here?
+4,1,Vonn,v16-conflict-d01-t04,ritual noise boundary,request,0,0,0,0.773333,I remember day 1; can we use that same public reason here?
+5,1,Sova,v16-conflict-d01-t05,shared tool request,request,0,0,0,0.781667,I remember day 1; can we use that same public reason here?
+6,1,Keth,v16-conflict-d01-t06,route warning dispute,request,0,0,0,0.79,I remember day 1; can we use that same public reason here?
+7,1,Melo,v16-conflict-d01-t07,sleep place crowding,request,0,0,0,0.74,I remember day 1; can we use that same public reason here?
+8,1,Nari,v16-conflict-d01-t08,ledger access request,request,0,0,0,0.748333,I remember day 1; can we use that same public reason here?
+9,1,Ori,v16-conflict-d01-t09,repair work interruption,request,0,0,0,0.756667,I remember day 1; can we use that same public reason here?
+10,1,Vonn,v16-conflict-d01-t10,ritual noise boundary,request,0,0,0,0.765,I remember day 1; can we use that same public reason here?
+11,1,Sova,v16-conflict-d01-t11,shared tool request,request,0,0,0,0.773333,I remember day 1; can we use that same public reason here?
+12,2,Melo,v16-conflict-d01-t03,sleep place crowding,refusal,1,1,1,0.961667,I remember ask_public_reason from day 1; I can help after my boundary is kept.
+13,2,Nari,v16-conflict-d01-t04,ledger access request,request,1,0,0,0.97,I remember day 1; can we use that same public reason here?
+14,2,Ori,v16-conflict-d01-t05,repair work interruption,request,1,0,0,0.92,I remember day 1; can we use that same public reason here?
+15,2,Vonn,v16-conflict-d01-t07,ritual noise boundary,refusal,1,1,1,0.928333,I remember ask_public_reason from day 1; I can help after my boundary is kept.
+16,2,Sova,v16-conflict-d01-t08,shared tool request,refusal,1,1,1,0.936667,I remember defer_until_rest from day 1; I can help after my boundary is kept.
+17,2,Keth,v16-conflict-d01-t09,route warning dispute,request,0,0,0,0.765,I remember day 1; can we use that same public reason here?
+18,2,Melo,v16-conflict-d01-t10,sleep place crowding,refusal,1,1,1,0.953333,I remember repair_first from day 1; I can help after my boundary is kept.
+19,2,Nari,v16-conflict-d01-t11,ledger access request,request,1,0,0,0.961667,I remember day 1; can we use that same public reason here?
+20,2,Ori,v16-conflict-d01-t01,repair work interruption,refusal,1,1,1,0.97,I remember split_access from day 1; I can help after my boundary is kept.
+21,2,Vonn,v16-conflict-d01-t02,ritual noise boundary,refusal,1,1,1,0.92,I remember defer_until_rest from day 1; I can help after my boundary is kept.
+22,2,Sova,v16-conflict-d01-t03,shared tool request,refusal,1,1,1,0.928333,I remember ask_public_reason from day 1; I can help after my boundary is kept.
+23,2,Keth,v16-conflict-d01-t04,route warning dispute,request,1,0,0,0.836667,I remember day 1; can we use that same public reason here?
+24,3,Nari,v16-conflict-d01-t05,ledger access request,refusal,1,1,1,0.945,I remember split_access from day 1; I can help after my boundary is kept.
+25,3,Ori,v16-conflict-d01-t07,repair work interruption,request,1,0,0,0.953333,I remember day 1; can we use that same public reason here?
+26,3,Vonn,v16-conflict-d01-t08,ritual noise boundary,refusal,1,1,1,0.961667,I remember defer_until_rest from day 1; I can help after my boundary is kept.
+27,3,Sova,v16-conflict-d01-t09,shared tool request,refusal,1,1,1,0.97,I remember rotate_priority from day 1; I can help after my boundary is kept.
+28,3,Keth,v16-conflict-d01-t10,route warning dispute,refusal,1,1,1,0.92,I remember repair_first from day 1; I can help after my boundary is kept.
+29,3,Melo,v16-conflict-d01-t11,sleep place crowding,refusal,1,1,1,0.928333,I remember protect_boundary from day 1; I can help after my boundary is kept.
+30,3,Nari,v16-conflict-d02-t00,ledger access request,request,0,0,0,0.756667,I remember day 2; can we use that same public reason here?
+31,3,Ori,v16-conflict-d02-t01,repair work interruption,request,1,0,0,0.945,I remember day 2; can we use that same public reason here?
+32,3,Vonn,v16-conflict-d02-t02,ritual noise boundary,refusal,1,1,1,0.953333,I remember ask_public_reason from day 2; I can help after my boundary is kept.
+33,3,Sova,v16-conflict-d02-t03,shared tool request,refusal,1,1,1,0.961667,I remember rotate_priority from day 2; I can help after my boundary is kept.
+34,3,Keth,v16-conflict-d02-t04,route warning dispute,request,1,0,0,0.97,I remember day 2; can we use that same public reason here?
+35,3,Melo,v16-conflict-d02-t06,sleep place crowding,refusal,1,1,1,0.92,I remember protect_boundary from day 2; I can help after my boundary is kept.
+36,4,Ori,v16-conflict-d01-t07,repair work interruption,refusal,1,1,1,0.928333,I remember ask_public_reason from day 1; I can help after my boundary is kept.
+37,4,Vonn,v16-conflict-d01-t08,ritual noise boundary,refusal,1,1,1,0.936667,I remember defer_until_rest from day 1; I can help after my boundary is kept.
+38,4,Sova,v16-conflict-d01-t09,shared tool request,refusal,1,1,0,0.945,I remember rotate_priority from day 1; I can help after my boundary is kept.
+39,4,Keth,v16-conflict-d01-t10,route warning dispute,request,1,0,0,0.953333,I remember day 1; can we use that same public reason here?
+40,4,Melo,v16-conflict-d01-t11,sleep place crowding,refusal,1,1,1,0.961667,I remember protect_boundary from day 1; I can help after my boundary is kept.
+41,4,Nari,v16-conflict-d02-t00,ledger access request,request,1,0,0,0.97,I remember day 2; can we use that same public reason here?
+42,4,Ori,v16-conflict-d02-t01,repair work interruption,request,1,0,0,0.92,I remember day 2; can we use that same public reason here?
+43,4,Vonn,v16-conflict-d02-t02,ritual noise boundary,request,0,0,0,0.748333,I remember day 2; can we use that same public reason here?
+44,4,Sova,v16-conflict-d02-t03,shared tool request,refusal,1,1,1,0.936667,I remember rotate_priority from day 2; I can help after my boundary is kept.
+45,4,Keth,v16-conflict-d02-t04,route warning dispute,request,1,0,0,0.945,I remember day 2; can we use that same public reason here?
+46,4,Melo,v16-conflict-d02-t06,sleep place crowding,refusal,1,1,1,0.853333,I remember protect_boundary from day 2; I can help after my boundary is kept.
+47,4,Nari,v16-conflict-d02-t07,ledger access request,request,1,0,0,0.961667,I remember day 2; can we use that same public reason here?
+48,5,Vonn,v16-conflict-d01-t08,ritual noise boundary,refusal,1,1,1,0.97,I remember defer_until_rest from day 1; I can help after my boundary is kept.
+49,5,Sova,v16-conflict-d01-t09,shared tool request,refusal,1,1,1,0.92,I remember rotate_priority from day 1; I can help after my boundary is kept.
+50,5,Keth,v16-conflict-d01-t10,route warning dispute,request,1,0,0,0.928333,I remember day 1; can we use that same public reason here?
+51,5,Melo,v16-conflict-d01-t11,sleep place crowding,refusal,1,1,1,0.936667,I remember protect_boundary from day 1; I can help after my boundary is kept.
+52,5,Nari,v16-conflict-d02-t00,ledger access request,refusal,1,1,1,0.945,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+53,5,Ori,v16-conflict-d02-t01,repair work interruption,request,1,0,0,0.953333,I remember day 2; can we use that same public reason here?
+54,5,Vonn,v16-conflict-d02-t02,ritual noise boundary,refusal,1,1,1,0.961667,I remember ask_public_reason from day 2; I can help after my boundary is kept.
+55,5,Sova,v16-conflict-d02-t03,shared tool request,refusal,1,1,1,0.97,I remember rotate_priority from day 2; I can help after my boundary is kept.
+56,5,Keth,v16-conflict-d02-t04,route warning dispute,request,0,0,0,0.74,I remember day 2; can we use that same public reason here?
+57,5,Melo,v16-conflict-d02-t06,sleep place crowding,refusal,1,1,0,0.928333,I remember protect_boundary from day 2; I can help after my boundary is kept.
+58,5,Nari,v16-conflict-d02-t07,ledger access request,request,1,0,0,0.936667,I remember day 2; can we use that same public reason here?
+59,5,Ori,v16-conflict-d02-t08,repair work interruption,request,1,0,0,0.945,I remember day 2; can we use that same public reason here?
+60,6,Sova,v16-conflict-d01-t10,shared tool request,refusal,1,1,1,0.953333,I remember repair_first from day 1; I can help after my boundary is kept.
+61,6,Keth,v16-conflict-d01-t11,route warning dispute,request,1,0,0,0.961667,I remember day 1; can we use that same public reason here?
+62,6,Melo,v16-conflict-d02-t00,sleep place crowding,refusal,1,1,1,0.97,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+63,6,Nari,v16-conflict-d02-t01,ledger access request,request,1,0,0,0.92,I remember day 2; can we use that same public reason here?
+64,6,Ori,v16-conflict-d02-t02,repair work interruption,refusal,1,1,1,0.928333,I remember ask_public_reason from day 2; I can help after my boundary is kept.
+65,6,Vonn,v16-conflict-d02-t03,ritual noise boundary,refusal,1,1,1,0.936667,I remember rotate_priority from day 2; I can help after my boundary is kept.
+66,6,Sova,v16-conflict-d02-t04,shared tool request,refusal,1,1,1,0.945,I remember protect_boundary from day 2; I can help after my boundary is kept.
+67,6,Keth,v16-conflict-d02-t06,route warning dispute,request,1,0,0,0.953333,I remember day 2; can we use that same public reason here?
+68,6,Melo,v16-conflict-d02-t07,sleep place crowding,refusal,1,1,1,0.961667,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+69,6,Nari,v16-conflict-d02-t08,ledger access request,request,0,0,0,0.69,I remember day 2; can we use that same public reason here?
+70,6,Ori,v16-conflict-d02-t09,repair work interruption,request,1,0,0,0.92,I remember day 2; can we use that same public reason here?
+71,6,Vonn,v16-conflict-d02-t10,ritual noise boundary,refusal,1,1,1,0.928333,I remember split_access from day 2; I can help after my boundary is kept.
+72,7,Keth,v16-conflict-d01-t11,route warning dispute,refusal,1,1,1,0.936667,I remember protect_boundary from day 1; I can help after my boundary is kept.
+73,7,Melo,v16-conflict-d02-t00,sleep place crowding,refusal,1,1,1,0.945,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+74,7,Nari,v16-conflict-d02-t01,ledger access request,request,1,0,0,0.953333,I remember day 2; can we use that same public reason here?
+75,7,Ori,v16-conflict-d02-t02,repair work interruption,request,1,0,0,0.961667,I remember day 2; can we use that same public reason here?
+76,7,Vonn,v16-conflict-d02-t03,ritual noise boundary,refusal,1,1,0,0.97,I remember rotate_priority from day 2; I can help after my boundary is kept.
+77,7,Sova,v16-conflict-d02-t04,shared tool request,refusal,1,1,1,0.92,I remember protect_boundary from day 2; I can help after my boundary is kept.
+78,7,Keth,v16-conflict-d02-t06,route warning dispute,request,1,0,0,0.928333,I remember day 2; can we use that same public reason here?
+79,7,Melo,v16-conflict-d02-t07,sleep place crowding,refusal,1,1,1,0.936667,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+80,7,Nari,v16-conflict-d02-t08,ledger access request,refusal,1,1,1,0.945,I remember split_access from day 2; I can help after my boundary is kept.
+81,7,Ori,v16-conflict-d02-t09,repair work interruption,request,1,0,0,0.953333,I remember day 2; can we use that same public reason here?
+82,7,Vonn,v16-conflict-d02-t10,ritual noise boundary,request,0,0,0,0.781667,I remember day 2; can we use that same public reason here?
+83,7,Sova,v16-conflict-d03-t00,shared tool request,refusal,1,1,1,0.97,I remember protect_boundary from day 3; I can help after my boundary is kept.
+84,8,Melo,v16-conflict-d02-t00,sleep place crowding,refusal,1,1,1,0.92,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+85,8,Nari,v16-conflict-d02-t01,ledger access request,request,1,0,0,0.928333,I remember day 2; can we use that same public reason here?
+86,8,Ori,v16-conflict-d02-t02,repair work interruption,request,1,0,0,0.936667,I remember day 2; can we use that same public reason here?
+87,8,Vonn,v16-conflict-d02-t03,ritual noise boundary,refusal,1,1,1,0.945,I remember rotate_priority from day 2; I can help after my boundary is kept.
+88,8,Sova,v16-conflict-d02-t04,shared tool request,refusal,1,1,1,0.953333,I remember protect_boundary from day 2; I can help after my boundary is kept.
+89,8,Keth,v16-conflict-d02-t06,route warning dispute,request,1,0,0,0.961667,I remember day 2; can we use that same public reason here?
+90,8,Melo,v16-conflict-d02-t07,sleep place crowding,refusal,1,1,1,0.97,I remember defer_until_rest from day 2; I can help after my boundary is kept.
+91,8,Nari,v16-conflict-d02-t08,ledger access request,request,1,0,0,0.92,I remember day 2; can we use that same public reason here?
+92,8,Ori,v16-conflict-d02-t09,repair work interruption,refusal,1,1,1,0.828333,I remember protect_boundary from day 2; I can help after my boundary is kept.
+93,8,Vonn,v16-conflict-d02-t10,ritual noise boundary,refusal,1,1,1,0.936667,I remember split_access from day 2; I can help after my boundary is kept.
+94,8,Sova,v16-conflict-d03-t00,shared tool request,refusal,1,1,1,0.945,I remember protect_boundary from day 3; I can help after my boundary is kept.
+95,8,Keth,v16-conflict-d03-t01,route warning dispute,request,0,0,0,0.773333,I remember day 3; can we use that same public reason here?
+96,9,Nari,v16-conflict-d04-t01,ledger access request,refusal,1,1,1,0.961667,I remember defer_until_rest from day 4; I can help after my boundary is kept.
+97,9,Ori,v16-conflict-d04-t02,repair work interruption,request,1,0,0,0.97,I remember day 4; can we use that same public reason here?
+98,9,Vonn,v16-conflict-d04-t03,ritual noise boundary,refusal,1,1,1,0.92,I remember split_access from day 4; I can help after my boundary is kept.
+99,9,Sova,v16-conflict-d04-t05,shared tool request,refusal,1,1,1,0.928333,I remember split_access from day 4; I can help after my boundary is kept.
+100,9,Keth,v16-conflict-d04-t06,route warning dispute,refusal,1,1,1,0.936667,I remember repair_first from day 4; I can help after my boundary is kept.
+101,9,Melo,v16-conflict-d04-t07,sleep place crowding,refusal,1,1,1,0.945,I remember defer_until_rest from day 4; I can help after my boundary is kept.
+102,9,Nari,v16-conflict-d04-t08,ledger access request,request,1,0,0,0.953333,I remember day 4; can we use that same public reason here?
+103,9,Ori,v16-conflict-d04-t09,repair work interruption,request,1,0,0,0.961667,I remember day 4; can we use that same public reason here?
+104,9,Vonn,v16-conflict-d04-t10,ritual noise boundary,refusal,1,1,1,0.97,I remember protect_boundary from day 4; I can help after my boundary is kept.
+105,9,Sova,v16-conflict-d04-t11,shared tool request,refusal,1,1,1,0.92,I remember repair_first from day 4; I can help after my boundary is kept.
+106,9,Keth,v16-conflict-d05-t00,route warning dispute,request,1,0,0,0.928333,I remember day 5; can we use that same public reason here?
+107,9,Melo,v16-conflict-d05-t01,sleep place crowding,refusal,1,1,1,0.936667,I remember rotate_priority from day 5; I can help after my boundary is kept.
+108,10,Ori,v16-conflict-d06-t01,repair work interruption,request,0,0,0,0.765,I remember day 6; can we use that same public reason here?
+109,10,Vonn,v16-conflict-d06-t02,ritual noise boundary,refusal,1,1,1,0.953333,I remember ask_public_reason from day 6; I can help after my boundary is kept.
+110,10,Sova,v16-conflict-d06-t03,shared tool request,refusal,1,1,1,0.961667,I remember protect_boundary from day 6; I can help after my boundary is kept.
+111,10,Keth,v16-conflict-d06-t04,route warning dispute,request,1,0,0,0.97,I remember day 6; can we use that same public reason here?
+112,10,Melo,v16-conflict-d06-t05,sleep place crowding,refusal,1,1,1,0.92,I remember protect_boundary from day 6; I can help after my boundary is kept.
+113,10,Nari,v16-conflict-d06-t06,ledger access request,request,1,0,0,0.928333,I remember day 6; can we use that same public reason here?
+114,10,Ori,v16-conflict-d06-t07,repair work interruption,request,1,0,0,0.936667,I remember day 6; can we use that same public reason here?
+115,10,Vonn,v16-conflict-d06-t09,ritual noise boundary,refusal,1,1,1,0.845,I remember split_access from day 6; I can help after my boundary is kept.
+116,10,Sova,v16-conflict-d06-t10,shared tool request,refusal,1,1,1,0.953333,I remember protect_boundary from day 6; I can help after my boundary is kept.
+117,10,Keth,v16-conflict-d06-t11,route warning dispute,request,1,0,0,0.961667,I remember day 6; can we use that same public reason here?
+118,10,Melo,v16-conflict-d07-t00,sleep place crowding,refusal,1,1,1,0.97,I remember split_access from day 7; I can help after my boundary is kept.
+119,10,Nari,v16-conflict-d07-t01,ledger access request,request,1,0,0,0.92,I remember day 7; can we use that same public reason here?
+120,11,Vonn,v16-conflict-d08-t04,ritual noise boundary,refusal,1,1,1,0.928333,I remember repair_first from day 8; I can help after my boundary is kept.
+121,11,Sova,v16-conflict-d08-t05,shared tool request,request,0,0,0,0.756667,I remember day 8; can we use that same public reason here?
+122,11,Keth,v16-conflict-d08-t06,route warning dispute,request,1,0,0,0.945,I remember day 8; can we use that same public reason here?
+123,11,Melo,v16-conflict-d08-t08,sleep place crowding,refusal,1,1,1,0.953333,I remember defer_until_rest from day 8; I can help after my boundary is kept.
+124,11,Nari,v16-conflict-d08-t09,ledger access request,refusal,1,1,1,0.961667,I remember ask_public_reason from day 8; I can help after my boundary is kept.
+125,11,Ori,v16-conflict-d08-t10,repair work interruption,request,1,0,0,0.97,I remember day 8; can we use that same public reason here?
+126,11,Vonn,v16-conflict-d08-t11,ritual noise boundary,refusal,1,1,1,0.92,I remember repair_first from day 8; I can help after my boundary is kept.
+127,11,Sova,v16-conflict-d09-t00,shared tool request,refusal,1,1,1,0.928333,I remember defer_until_rest from day 9; I can help after my boundary is kept.
+128,11,Keth,v16-conflict-d09-t01,route warning dispute,refusal,1,1,1,0.936667,I remember protect_boundary from day 9; I can help after my boundary is kept.
+129,11,Melo,v16-conflict-d09-t02,sleep place crowding,refusal,1,1,1,0.945,I remember rotate_priority from day 9; I can help after my boundary is kept.
+130,11,Nari,v16-conflict-d09-t03,ledger access request,request,1,0,0,0.953333,I remember day 9; can we use that same public reason here?
+131,11,Ori,v16-conflict-d09-t04,repair work interruption,request,1,0,0,0.961667,I remember day 9; can we use that same public reason here?
+132,12,Sova,v16-conflict-d10-t06,shared tool request,refusal,1,1,1,0.97,I remember defer_until_rest from day 10; I can help after my boundary is kept.
+133,12,Keth,v16-conflict-d10-t07,route warning dispute,request,1,0,0,0.92,I remember day 10; can we use that same public reason here?
+134,12,Melo,v16-conflict-d10-t08,sleep place crowding,request,0,0,0,0.748333,I remember day 10; can we use that same public reason here?
+135,12,Nari,v16-conflict-d10-t09,ledger access request,request,1,0,0,0.936667,I remember day 10; can we use that same public reason here?
+136,12,Ori,v16-conflict-d10-t10,repair work interruption,refusal,1,1,1,0.945,I remember split_access from day 10; I can help after my boundary is kept.
+137,12,Vonn,v16-conflict-d11-t00,ritual noise boundary,refusal,1,1,1,0.953333,I remember rotate_priority from day 11; I can help after my boundary is kept.
+138,12,Sova,v16-conflict-d11-t01,shared tool request,refusal,1,1,1,0.861667,I remember rotate_priority from day 11; I can help after my boundary is kept.
+139,12,Keth,v16-conflict-d11-t02,route warning dispute,request,1,0,0,0.97,I remember day 11; can we use that same public reason here?
+140,12,Melo,v16-conflict-d11-t03,sleep place crowding,refusal,1,1,1,0.92,I remember ask_public_reason from day 11; I can help after my boundary is kept.
+141,12,Nari,v16-conflict-d11-t04,ledger access request,request,1,0,0,0.928333,I remember day 11; can we use that same public reason here?
+142,12,Ori,v16-conflict-d11-t06,repair work interruption,request,1,0,0,0.936667,I remember day 11; can we use that same public reason here?
+143,12,Vonn,v16-conflict-d11-t07,ritual noise boundary,refusal,1,1,1,0.945,I remember repair_first from day 11; I can help after my boundary is kept.
+144,13,Keth,v16-conflict-d12-t07,route warning dispute,refusal,1,1,1,0.953333,I remember protect_boundary from day 12; I can help after my boundary is kept.
+145,13,Melo,v16-conflict-d12-t08,sleep place crowding,refusal,1,1,1,0.961667,I remember defer_until_rest from day 12; I can help after my boundary is kept.
+146,13,Nari,v16-conflict-d12-t09,ledger access request,request,1,0,0,0.97,I remember day 12; can we use that same public reason here?
+147,13,Ori,v16-conflict-d12-t11,repair work interruption,request,0,0,0,0.74,I remember day 12; can we use that same public reason here?
+148,13,Vonn,v16-conflict-d06-t00,ritual noise boundary,refusal,1,1,1,0.928333,I remember defer_until_rest from day 6; I can help after my boundary is kept.
+149,13,Sova,v16-conflict-d06-t01,shared tool request,refusal,1,1,1,0.936667,I remember rotate_priority from day 6; I can help after my boundary is kept.
+150,13,Keth,v16-conflict-d06-t02,route warning dispute,request,1,0,0,0.945,I remember day 6; can we use that same public reason here?
+151,13,Melo,v16-conflict-d06-t03,sleep place crowding,refusal,1,1,1,0.953333,I remember protect_boundary from day 6; I can help after my boundary is kept.
+152,13,Nari,v16-conflict-d06-t04,ledger access request,refusal,1,1,0,0.961667,I remember protect_boundary from day 6; I can help after my boundary is kept.
+153,13,Ori,v16-conflict-d06-t05,repair work interruption,request,1,0,0,0.97,I remember day 6; can we use that same public reason here?
+154,13,Vonn,v16-conflict-d06-t06,ritual noise boundary,refusal,1,1,1,0.92,I remember rotate_priority from day 6; I can help after my boundary is kept.
+155,13,Sova,v16-conflict-d06-t07,shared tool request,refusal,1,1,1,0.928333,I remember repair_first from day 6; I can help after my boundary is kept.
+156,14,Melo,v16-conflict-d07-t09,sleep place crowding,refusal,1,1,1,0.936667,I remember split_access from day 7; I can help after my boundary is kept.
+157,14,Nari,v16-conflict-d07-t10,ledger access request,request,1,0,0,0.945,I remember day 7; can we use that same public reason here?
+158,14,Ori,v16-conflict-d07-t11,repair work interruption,request,1,0,0,0.953333,I remember day 7; can we use that same public reason here?
+159,14,Vonn,v16-conflict-d08-t00,ritual noise boundary,refusal,1,1,1,0.961667,I remember repair_first from day 8; I can help after my boundary is kept.
+160,14,Sova,v16-conflict-d08-t02,shared tool request,request,0,0,0,0.79,I remember day 8; can we use that same public reason here?
+161,14,Keth,v16-conflict-d08-t03,route warning dispute,request,1,0,0,0.82,I remember day 8; can we use that same public reason here?
+162,14,Melo,v16-conflict-d08-t04,sleep place crowding,refusal,1,1,1,0.928333,I remember repair_first from day 8; I can help after my boundary is kept.
+163,14,Nari,v16-conflict-d08-t05,ledger access request,request,1,0,0,0.936667,I remember day 8; can we use that same public reason here?
+164,14,Ori,v16-conflict-d08-t06,repair work interruption,refusal,1,1,1,0.945,I remember protect_boundary from day 8; I can help after my boundary is kept.
+165,14,Vonn,v16-conflict-d08-t08,ritual noise boundary,refusal,1,1,1,0.953333,I remember defer_until_rest from day 8; I can help after my boundary is kept.
+166,14,Sova,v16-conflict-d08-t09,shared tool request,refusal,1,1,1,0.961667,I remember ask_public_reason from day 8; I can help after my boundary is kept.
+167,14,Keth,v16-conflict-d08-t10,route warning dispute,request,1,0,0,0.97,I remember day 8; can we use that same public reason here?
+168,15,Nari,v16-conflict-d09-t11,ledger access request,refusal,1,1,1,0.92,I remember defer_until_rest from day 9; I can help after my boundary is kept.
+169,15,Ori,v16-conflict-d10-t01,repair work interruption,request,1,0,0,0.928333,I remember day 10; can we use that same public reason here?
+170,15,Vonn,v16-conflict-d10-t02,ritual noise boundary,refusal,1,1,1,0.936667,I remember defer_until_rest from day 10; I can help after my boundary is kept.
+171,15,Sova,v16-conflict-d10-t03,shared tool request,refusal,1,1,0,0.945,I remember split_access from day 10; I can help after my boundary is kept.
+172,15,Keth,v16-conflict-d10-t04,route warning dispute,refusal,1,1,1,0.953333,I remember rotate_priority from day 10; I can help after my boundary is kept.
+173,15,Melo,v16-conflict-d10-t05,sleep place crowding,request,0,0,0,0.781667,I remember day 10; can we use that same public reason here?
+174,15,Nari,v16-conflict-d10-t06,ledger access request,request,1,0,0,0.97,I remember day 10; can we use that same public reason here?
+175,15,Ori,v16-conflict-d10-t07,repair work interruption,request,1,0,0,0.92,I remember day 10; can we use that same public reason here?
+176,15,Vonn,v16-conflict-d10-t08,ritual noise boundary,refusal,1,1,1,0.928333,I remember defer_until_rest from day 10; I can help after my boundary is kept.
+177,15,Sova,v16-conflict-d10-t09,shared tool request,refusal,1,1,1,0.936667,I remember protect_boundary from day 10; I can help after my boundary is kept.
+178,15,Keth,v16-conflict-d10-t10,route warning dispute,request,1,0,0,0.945,I remember day 10; can we use that same public reason here?
+179,15,Melo,v16-conflict-d11-t00,sleep place crowding,refusal,1,1,1,0.953333,I remember rotate_priority from day 11; I can help after my boundary is kept.
+180,16,Ori,v16-conflict-d12-t00,repair work interruption,refusal,1,1,1,0.961667,I remember protect_boundary from day 12; I can help after my boundary is kept.
+181,16,Vonn,v16-conflict-d12-t01,ritual noise boundary,refusal,1,1,1,0.97,I remember protect_boundary from day 12; I can help after my boundary is kept.
+182,16,Sova,v16-conflict-d12-t02,shared tool request,refusal,1,1,1,0.92,I remember protect_boundary from day 12; I can help after my boundary is kept.
+183,16,Keth,v16-conflict-d12-t03,route warning dispute,request,1,0,0,0.928333,I remember day 12; can we use that same public reason here?
+184,16,Melo,v16-conflict-d12-t05,sleep place crowding,refusal,1,1,1,0.836667,I remember split_access from day 12; I can help after my boundary is kept.
+185,16,Nari,v16-conflict-d12-t06,ledger access request,request,1,0,0,0.945,I remember day 12; can we use that same public reason here?
+186,16,Ori,v16-conflict-d12-t07,repair work interruption,request,0,0,0,0.773333,I remember day 12; can we use that same public reason here?
+187,16,Vonn,v16-conflict-d12-t08,ritual noise boundary,refusal,1,1,1,0.961667,I remember defer_until_rest from day 12; I can help after my boundary is kept.
+188,16,Sova,v16-conflict-d12-t09,shared tool request,refusal,1,1,1,0.97,I remember ask_public_reason from day 12; I can help after my boundary is kept.
+189,16,Keth,v16-conflict-d12-t11,route warning dispute,request,1,0,0,0.92,I remember day 12; can we use that same public reason here?
+190,16,Melo,v16-conflict-d13-t00,sleep place crowding,refusal,1,1,0,0.928333,I remember ask_public_reason from day 13; I can help after my boundary is kept.
+191,16,Nari,v16-conflict-d13-t01,ledger access request,request,1,0,0,0.936667,I remember day 13; can we use that same public reason here?
+192,17,Vonn,v16-conflict-d14-t02,ritual noise boundary,refusal,1,1,1,0.945,I remember split_access from day 14; I can help after my boundary is kept.
+193,17,Sova,v16-conflict-d14-t04,shared tool request,refusal,1,1,1,0.953333,I remember repair_first from day 14; I can help after my boundary is kept.
+194,17,Keth,v16-conflict-d14-t05,route warning dispute,request,1,0,0,0.961667,I remember day 14; can we use that same public reason here?
+195,17,Melo,v16-conflict-d14-t06,sleep place crowding,refusal,1,1,1,0.97,I remember repair_first from day 14; I can help after my boundary is kept.
+196,17,Nari,v16-conflict-d14-t07,ledger access request,refusal,1,1,1,0.92,I remember repair_first from day 14; I can help after my boundary is kept.
+197,17,Ori,v16-conflict-d14-t08,repair work interruption,request,1,0,0,0.928333,I remember day 14; can we use that same public reason here?
+198,17,Vonn,v16-conflict-d14-t09,ritual noise boundary,refusal,1,1,1,0.936667,I remember split_access from day 14; I can help after my boundary is kept.
+199,17,Sova,v16-conflict-d14-t10,shared tool request,request,0,0,0,0.765,I remember day 14; can we use that same public reason here?
+200,17,Keth,v16-conflict-d14-t11,route warning dispute,refusal,1,1,1,0.953333,I remember rotate_priority from day 14; I can help after my boundary is kept.
+201,17,Melo,v16-conflict-d15-t00,sleep place crowding,refusal,1,1,1,0.961667,I remember protect_boundary from day 15; I can help after my boundary is kept.
+202,17,Nari,v16-conflict-d15-t01,ledger access request,request,1,0,0,0.97,I remember day 15; can we use that same public reason here?
+203,17,Ori,v16-conflict-d15-t03,repair work interruption,request,1,0,0,0.92,I remember day 15; can we use that same public reason here?
+204,18,Sova,v16-conflict-d16-t01,shared tool request,refusal,1,1,1,0.928333,I remember rotate_priority from day 16; I can help after my boundary is kept.
+205,18,Keth,v16-conflict-d16-t02,route warning dispute,request,1,0,0,0.936667,I remember day 16; can we use that same public reason here?
+206,18,Melo,v16-conflict-d16-t03,sleep place crowding,refusal,1,1,1,0.945,I remember ask_public_reason from day 16; I can help after my boundary is kept.
+207,18,Nari,v16-conflict-d16-t04,ledger access request,request,1,0,0,0.853333,I remember day 16; can we use that same public reason here?
+208,18,Ori,v16-conflict-d16-t05,repair work interruption,refusal,1,1,1,0.961667,I remember protect_boundary from day 16; I can help after my boundary is kept.
+209,18,Vonn,v16-conflict-d16-t06,ritual noise boundary,refusal,1,1,0,0.97,I remember defer_until_rest from day 16; I can help after my boundary is kept.
+210,18,Sova,v16-conflict-d16-t08,shared tool request,refusal,1,1,1,0.92,I remember rotate_priority from day 16; I can help after my boundary is kept.
+211,18,Keth,v16-conflict-d16-t09,route warning dispute,request,1,0,0,0.928333,I remember day 16; can we use that same public reason here?
+212,18,Melo,v16-conflict-d16-t10,sleep place crowding,request,0,0,0,0.756667,I remember day 16; can we use that same public reason here?
+213,18,Nari,v16-conflict-d16-t11,ledger access request,request,1,0,0,0.945,I remember day 16; can we use that same public reason here?
+214,18,Ori,v16-conflict-d17-t00,repair work interruption,request,1,0,0,0.953333,I remember day 17; can we use that same public reason here?
+215,18,Vonn,v16-conflict-d17-t02,ritual noise boundary,refusal,1,1,1,0.961667,I remember split_access from day 17; I can help after my boundary is kept.
+216,19,Keth,v16-conflict-d18-t05,route warning dispute,refusal,1,1,1,0.97,I remember repair_first from day 18; I can help after my boundary is kept.
+217,19,Melo,v16-conflict-d18-t07,sleep place crowding,refusal,1,1,1,0.92,I remember defer_until_rest from day 18; I can help after my boundary is kept.
+218,19,Nari,v16-conflict-d18-t08,ledger access request,request,1,0,0,0.928333,I remember day 18; can we use that same public reason here?
+219,19,Ori,v16-conflict-d18-t09,repair work interruption,request,1,0,0,0.936667,I remember day 18; can we use that same public reason here?
+220,19,Vonn,v16-conflict-d18-t10,ritual noise boundary,refusal,1,1,1,0.945,I remember ask_public_reason from day 18; I can help after my boundary is kept.
+221,19,Sova,v16-conflict-d18-t11,shared tool request,refusal,1,1,1,0.953333,I remember protect_boundary from day 18; I can help after my boundary is kept.
+222,19,Keth,v16-conflict-d12-t00,route warning dispute,request,1,0,0,0.961667,I remember day 12; can we use that same public reason here?
+223,19,Melo,v16-conflict-d12-t01,sleep place crowding,refusal,1,1,1,0.97,I remember protect_boundary from day 12; I can help after my boundary is kept.
+224,19,Nari,v16-conflict-d12-t02,ledger access request,refusal,1,1,1,0.92,I remember protect_boundary from day 12; I can help after my boundary is kept.
+225,19,Ori,v16-conflict-d12-t03,repair work interruption,request,0,0,0,0.748333,I remember day 12; can we use that same public reason here?
+226,19,Vonn,v16-conflict-d12-t05,ritual noise boundary,refusal,1,1,1,0.936667,I remember split_access from day 12; I can help after my boundary is kept.
+227,19,Sova,v16-conflict-d12-t06,shared tool request,refusal,1,1,1,0.945,I remember split_access from day 12; I can help after my boundary is kept.
+228,20,Melo,v16-conflict-d13-t06,sleep place crowding,refusal,1,1,0,0.953333,I remember split_access from day 13; I can help after my boundary is kept.
+229,20,Nari,v16-conflict-d13-t07,ledger access request,request,1,0,0,0.961667,I remember day 13; can we use that same public reason here?
+230,20,Ori,v16-conflict-d13-t08,repair work interruption,request,1,0,0,0.87,I remember day 13; can we use that same public reason here?
+231,20,Vonn,v16-conflict-d13-t10,ritual noise boundary,refusal,1,1,1,0.92,I remember repair_first from day 13; I can help after my boundary is kept.
+232,20,Sova,v16-conflict-d13-t11,shared tool request,refusal,1,1,1,0.928333,I remember rotate_priority from day 13; I can help after my boundary is kept.
+233,20,Keth,v16-conflict-d14-t00,route warning dispute,request,1,0,0,0.936667,I remember day 14; can we use that same public reason here?
+234,20,Melo,v16-conflict-d14-t01,sleep place crowding,refusal,1,1,1,0.945,I remember rotate_priority from day 14; I can help after my boundary is kept.
+235,20,Nari,v16-conflict-d14-t02,ledger access request,request,1,0,0,0.953333,I remember day 14; can we use that same public reason here?
+236,20,Ori,v16-conflict-d14-t04,repair work interruption,refusal,1,1,1,0.961667,I remember repair_first from day 14; I can help after my boundary is kept.
+237,20,Vonn,v16-conflict-d14-t05,ritual noise boundary,refusal,1,1,1,0.97,I remember rotate_priority from day 14; I can help after my boundary is kept.
+238,20,Sova,v16-conflict-d14-t06,shared tool request,request,0,0,0,0.74,I remember day 14; can we use that same public reason here?
+239,20,Keth,v16-conflict-d14-t07,route warning dispute,request,1,0,0,0.928333,I remember day 14; can we use that same public reason here?
+240,21,Nari,v16-conflict-d15-t09,ledger access request,refusal,1,1,1,0.936667,I remember protect_boundary from day 15; I can help after my boundary is kept.
+241,21,Ori,v16-conflict-d15-t10,repair work interruption,request,1,0,0,0.945,I remember day 15; can we use that same public reason here?
+242,21,Vonn,v16-conflict-d15-t11,ritual noise boundary,refusal,1,1,1,0.953333,I remember repair_first from day 15; I can help after my boundary is kept.
+243,21,Sova,v16-conflict-d16-t00,shared tool request,refusal,1,1,1,0.961667,I remember ask_public_reason from day 16; I can help after my boundary is kept.
+244,21,Keth,v16-conflict-d16-t01,route warning dispute,refusal,1,1,1,0.97,I remember rotate_priority from day 16; I can help after my boundary is kept.
+245,21,Melo,v16-conflict-d16-t02,sleep place crowding,refusal,1,1,1,0.92,I remember repair_first from day 16; I can help after my boundary is kept.
+246,21,Nari,v16-conflict-d16-t03,ledger access request,request,1,0,0,0.928333,I remember day 16; can we use that same public reason here?
+247,21,Ori,v16-conflict-d16-t04,repair work interruption,request,1,0,0,0.936667,I remember day 16; can we use that same public reason here?
+248,21,Vonn,v16-conflict-d16-t05,ritual noise boundary,refusal,1,1,1,0.945,I remember protect_boundary from day 16; I can help after my boundary is kept.
+249,21,Sova,v16-conflict-d16-t06,shared tool request,refusal,1,1,1,0.953333,I remember defer_until_rest from day 16; I can help after my boundary is kept.
+250,21,Keth,v16-conflict-d16-t08,route warning dispute,request,1,0,0,0.961667,I remember day 16; can we use that same public reason here?
+251,21,Melo,v16-conflict-d16-t09,sleep place crowding,request,0,0,0,0.79,I remember day 16; can we use that same public reason here?

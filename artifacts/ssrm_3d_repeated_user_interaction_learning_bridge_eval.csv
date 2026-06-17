@@ -1,0 +1,12 @@
+condition,agent_count,interaction_events,interaction_memory_update_rate,trust_calibration_rate,boundary_learning_rate,repair_recovery_rate,behavior_adaptation_rate,help_seeking_calibration_rate,refusal_calibration_rate,temperament_modulated_learning_rate,relationship_specificity_rate,overgeneralization_guard_rate,bounded_distress_rate,frequency_entrainment_rate,privacy_preservation_rate,replay_continuity_rate,trace_integrity,repeated_user_interaction_learning_readiness
+integrated_repeated_user_interaction_learning,8,48,1.0,1.0,1.0,1.0,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.995
+no_interaction_memory,8,48,0.0,1.0,1.0,1.0,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.915
+no_trust_update,8,48,1.0,0.0,1.0,0.833333,1.0,0.833333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.898333
+no_boundary_learning,8,48,1.0,1.0,0.0,0.833333,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.913333
+no_repair_path,8,48,1.0,1.0,1.0,0.833333,1.0,0.833333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.978333
+no_behavior_expression,8,48,1.0,1.0,1.0,1.0,0.0,0.916667,0.833333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.913333
+no_temperament_modulation,8,48,1.0,1.0,1.0,1.0,1.0,0.916667,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.925
+no_overgeneralization_guard,8,48,1.0,1.0,1.0,1.0,1.0,0.916667,1.0,1.0,0.229167,0.0,1.0,1.0,1.0,1.0,1.0,0.871042
+no_frequency_entrainment,8,48,1.0,1.0,1.0,1.0,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.935
+no_replay_continuity,8,48,1.0,1.0,1.0,1.0,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.945
+no_privacy_filter,8,48,1.0,1.0,1.0,1.0,1.0,0.916667,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.945

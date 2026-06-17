@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 172 - Repeated User-Interaction Learning Bridge</title>
+  <script src="../artifacts/ssrm_3d_repeated_user_interaction_learning_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_repeated_user_interaction_learning_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_repeated_user_interaction_learning_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #201713;
+      --muted: #6b5d53;
+      --paper: #f5eadc;
+      --panel: rgba(255, 249, 239, 0.84);
+      --line: rgba(70, 47, 33, 0.18);
+      --trust: #54705a;
+      --boundary: #a75d48;
+      --repair: #d3a34c;
+      --night: #2f4656;
+      --signal: #7d6b9c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 16% 18%, rgba(211, 163, 76, 0.24), transparent 23rem),
+        radial-gradient(circle at 82% 20%, rgba(84, 112, 90, 0.22), transparent 25rem),
+        radial-gradient(circle at 50% 92%, rgba(167, 93, 72, 0.18), transparent 29rem),
+        linear-gradient(140deg, #f5eadc 0%, #d8c39f 46%, #b8bd9c 100%);
+      font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+    }
+
+    main {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", serif;
+      font-size: clamp(2.3rem, 7vw, 5.8rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 900px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .metric-value {
+      font-size: 1.35rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .field {
+      position: relative;
+      min-height: 540px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(32, 23, 19, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(32, 23, 19, 0.07) 1px, transparent 1px),
+        rgba(255, 252, 244, 0.48);
+      background-size: 42px 42px;
+    }
+
+    .avatar {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 78px;
+      height: 78px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: radial-gradient(circle at 35% 30%, #b5a7df, var(--signal));
+      box-shadow: 0 0 0 14px rgba(125, 107, 156, 0.11), 0 20px 50px rgba(45, 37, 58, 0.20);
+      font-weight: 800;
+    }
+
+    .agent {
+      position: absolute;
+      width: 118px;
+      min-height: 118px;
+      transform: translate(-50%, -50%);
+      display: grid;
+      gap: 6px;
+      justify-items: center;
+      padding: 10px;
+      border: 1px solid rgba(73, 45, 22, 0.14);
+      border-radius: 26px;
+      background: rgba(255, 252, 244, 0.78);
+      box-shadow: 0 18px 38px rgba(75, 48, 25, 0.14);
+    }
+
+    .body {
+      width: 40px;
+      height: 48px;
+      border-radius: 48% 48% 38% 38%;
+      background: linear-gradient(160deg, var(--repair), var(--trust));
+    }
+
+    .agent.boundary .body {
+      background: linear-gradient(160deg, #d08770, var(--boundary));
+      transform: rotate(-9deg);
+    }
+
+    .agent.ritual {
+      outline: 4px solid rgba(211, 163, 76, 0.28);
+    }
+
+    .agent-name {
+      max-width: 100%;
+      color: var(--muted);
+      font-size: 0.68rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .bar {
+      width: 86px;
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(32, 23, 19, 0.11);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+    }
+
+    .trust span {
+      background: var(--trust);
+    }
+
+    .boundary-bar span {
+      background: var(--boundary);
+    }
+
+    .trace {
+      display: grid;
+      gap: 9px;
+      max-height: 540px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.46);
+    }
+
+    .event strong {
+      color: var(--night);
+    }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field {
+        min-height: 680px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Repeated user-interaction learning</h1>
+      <p class="lede">Report 172 makes repeated avatar contact matter. Agents calibrate trust, boundaries, help-seeking, refusal, repair, ritual sharing, and frequency response from a relationship-specific history without leaking private workspace state or claiming subjective consciousness.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">Avatar-specific memory</span>
+          <span class="chip">Bounded refusal</span>
+          <span class="chip">Repair path</span>
+          <span class="chip">No global distrust leak</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>The bridge rewards calibrated adaptation, not obedience. Respectful help can increase ritual sharing; unsafe pressure can produce refusal; apology can repair without erasing the memory.</p>
+        <p>The overgeneralization guard matters: a bad avatar interaction should not automatically poison unrelated relationships.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel field" id="field" aria-label="Avatar relationship learning field">
+        <div class="avatar">AV</div>
+      </article>
+      <article class="panel">
+        <h2>Recent interaction trace</h2>
+        <div class="trace" id="trace"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_REPEATED_USER_INTERACTION_LEARNING_RESULTS || {};
+    const trace = window.SSRM_3D_REPEATED_USER_INTERACTION_LEARNING_TRACE || [];
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_repeated_user_interaction_learning") || {};
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.repeated_user_interaction_learning_readiness],
+      ["trust", integrated.trust_calibration_rate],
+      ["boundaries", integrated.boundary_learning_rate],
+      ["behavior", integrated.behavior_adaptation_rate],
+      ["specificity", integrated.relationship_specificity_rate]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const latestByAgent = new Map();
+    for (const event of trace) {
+      latestByAgent.set(event.agent_id, event);
+    }
+
+    const field = document.getElementById("field");
+    [...latestByAgent.entries()].slice(0, 8).forEach(([agentId, event], index) => {
+      const trust = Number(event.trust_after || 0);
+      const boundary = Number(event.boundary_after || 0);
+      const angle = (index / Math.max(1, latestByAgent.size)) * Math.PI * 2 - Math.PI / 2;
+      const distance = 40 - trust * 13 + boundary * 8;
+      const left = 50 + Math.cos(angle) * distance;
+      const top = 50 + Math.sin(angle) * distance;
+      const node = document.createElement("div");
+      node.className = `agent${event.refuses ? " boundary" : ""}${event.shares_ritual ? " ritual" : ""}`;
+      node.style.left = `${left}%`;
+      node.style.top = `${top}%`;
+      node.innerHTML = `
+        <div class="body"></div>
+        <div class="agent-name">${agentId}</div>
+        <div class="bar trust"><span style="width: ${Math.round(trust * 100)}%"></span></div>
+        <div class="bar boundary-bar"><span style="width: ${Math.round(boundary * 100)}%"></span></div>
+      `;
+      field.appendChild(node);
+    });
+
+    document.getElementById("trace").innerHTML = trace.slice(-36).reverse().map((event) => `
+      <div class="event">
+        <strong>session ${event.session}: ${event.agent_id} / ${event.interaction_pattern}</strong>
+        <small>${event.dialogue_marker}; body ${event.body_response}; proximity ${event.proximity}</small>
+        <small>trust ${Number(event.trust_after || 0).toFixed(3)}; boundary ${Number(event.boundary_after || 0).toFixed(3)}; help ${Number(event.help_seeking || 0).toFixed(3)}; refusal ${Number(event.refusal_confidence || 0).toFixed(3)}; frequency ${Number(event.frequency_hz || 0).toFixed(3)}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

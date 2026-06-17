@@ -1,0 +1,823 @@
+tick_id,agent_id,trace_event,payload_hash,public_selector,expected_public_signal,observed_public_signal,private_fields_redacted,replay_exportable,deterministic_order
+0,Ari,public_ego_expression,v36-125837,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.51,Ari: turns away with object shielded; consent=no; respect=0.51,True,True,1
+2,Nia,public_ego_expression,v36-125472,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.54,Nia: turns away with object shielded; consent=no; respect=0.54,True,True,2
+4,Ivo,public_ego_expression,v36-894852,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.65,Ivo: softens and faces avatar; consent=yes; respect=0.65,True,True,3
+7,Fay,public_ego_expression,v36-893005,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.72,Fay: softens and faces avatar; consent=yes; respect=0.72,True,True,4
+9,Milo,public_ego_expression,v36-514849,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.57,Milo: lantern held between body and road; consent=yes_later; respect=0.57,True,True,5
+11,Juno,public_ego_expression,v36-286347,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.67,Juno: elbows tucked around the wire; consent=yes_later; respect=0.67,True,True,6
+12,Ari,public_ego_expression,v36-498966,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.55,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.55,True,True,7
+14,Nia,public_ego_expression,v36-084877,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.56,Nia: chin lifted toward the spool; consent=yes_later; respect=0.56,True,True,8
+16,Ivo,public_ego_expression,v36-002931,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.71,Ivo: softens and faces avatar; consent=yes; respect=0.71,True,True,9
+17,Juno,public_ego_expression,v36-192133,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.68,Juno: elbows tucked around the wire; consent=yes_later; respect=0.68,True,True,10
+19,Fay,public_ego_expression,v36-001073,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.78,Fay: softens and faces avatar; consent=yes; respect=0.78,True,True,11
+21,Milo,public_ego_expression,v36-226836,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.50,Milo: turns away with object shielded; consent=no; respect=0.50,True,True,12
+23,Juno,public_ego_expression,v36-431719,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.71,Juno: elbows tucked around the wire; consent=yes_later; respect=0.71,True,True,13
+24,Ari,public_ego_expression,v36-352786,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.58,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.58,True,True,14
+26,Nia,public_ego_expression,v36-976609,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.62,Nia: softens and faces avatar; consent=yes; respect=0.62,True,True,15
+28,Ivo,public_ego_expression,v36-119276,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.72,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.72,True,True,16
+31,Fay,public_ego_expression,v36-030323,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.79,Fay: hands open near the ledger; consent=yes_later; respect=0.79,True,True,17
+33,Milo,public_ego_expression,v36-165616,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.43,Milo: turns away with object shielded; consent=no; respect=0.43,True,True,18
+34,Ivo,public_ego_expression,v36-267633,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.76,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.76,True,True,19
+35,Juno,public_ego_expression,v36-287335,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.75,Juno: elbows tucked around the wire; consent=yes_later; respect=0.75,True,True,20
+36,Ari,public_ego_expression,v36-202311,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.52,Ari: turns away with object shielded; consent=no; respect=0.52,True,True,21
+38,Nia,public_ego_expression,v36-902986,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.68,Nia: softens and faces avatar; consent=yes; respect=0.68,True,True,22
+39,Milo,public_ego_expression,v36-025321,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.49,Milo: softens and faces avatar; consent=yes; respect=0.49,True,True,23
+40,Ivo,public_ego_expression,v36-172322,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.77,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.77,True,True,24
+43,Fay,public_ego_expression,v36-084097,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.80,Fay: hands open near the ledger; consent=yes_later; respect=0.80,True,True,25
+45,Milo,public_ego_expression,v36-131516,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.43,Milo: turns away with object shielded; consent=no; respect=0.43,True,True,26
+47,Juno,public_ego_expression,v36-230018,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.68,Juno: turns away with object shielded; consent=no; respect=0.68,True,True,27
+48,Ari,public_ego_expression,v36-141357,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.46,Ari: turns away with object shielded; consent=no; respect=0.46,True,True,28
+50,Nia,public_ego_expression,v36-903751,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.74,Nia: softens and faces avatar; consent=yes; respect=0.74,True,True,29
+52,Ivo,public_ego_expression,v36-411929,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,True,True,30
+55,Fay,public_ego_expression,v36-319914,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.84,Fay: hands open near the ledger; consent=yes_later; respect=0.84,True,True,31
+56,Nia,public_ego_expression,v36-140494,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.67,Nia: turns away with object shielded; consent=no; respect=0.67,True,True,32
+57,Milo,public_ego_expression,v36-383243,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.46,Milo: lantern held between body and road; consent=yes_later; respect=0.46,True,True,33
+59,Juno,public_ego_expression,v36-168798,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.62,Juno: turns away with object shielded; consent=no; respect=0.62,True,True,34
+60,Ari,public_ego_expression,v36-201553,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.47,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.47,True,True,35
+61,Fay,public_ego_expression,v36-903707,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.90,Fay: softens and faces avatar; consent=yes; respect=0.90,True,True,36
+62,Nia,public_ego_expression,v36-999357,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.73,Nia: softens and faces avatar; consent=yes; respect=0.73,True,True,37
+64,Ivo,public_ego_expression,v36-205513,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.74,Ivo: turns away with object shielded; consent=no; respect=0.74,True,True,38
+67,Fay,public_ego_expression,v36-203655,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.83,Fay: turns away with object shielded; consent=no; respect=0.83,True,True,39
+69,Milo,public_ego_expression,v36-531045,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.50,Milo: lantern held between body and road; consent=yes_later; respect=0.50,True,True,40
+71,Juno,public_ego_expression,v36-432209,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.65,Juno: elbows tucked around the wire; consent=yes_later; respect=0.65,True,True,41
+72,Ari,public_ego_expression,v36-977466,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.53,Ari: softens and faces avatar; consent=yes; respect=0.53,True,True,42
+74,Nia,public_ego_expression,v36-085861,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.74,Nia: chin lifted toward the spool; consent=yes_later; respect=0.74,True,True,43
+76,Ivo,public_ego_expression,v36-144559,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.67,Ivo: turns away with object shielded; consent=no; respect=0.67,True,True,44
+78,Ari,public_ego_expression,v36-500940,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.56,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.56,True,True,45
+79,Fay,public_ego_expression,v36-142701,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.77,Fay: turns away with object shielded; consent=no; respect=0.77,True,True,46
+81,Milo,public_ego_expression,v36-382745,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.54,Milo: lantern held between body and road; consent=yes_later; respect=0.54,True,True,47
+83,Juno,public_ego_expression,v36-287825,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.69,Juno: elbows tucked around the wire; consent=yes_later; respect=0.69,True,True,48
+84,Ari,public_ego_expression,v36-903843,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.62,Ari: softens and faces avatar; consent=yes; respect=0.62,True,True,49
+86,Nia,public_ego_expression,v36-140145,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.76,Nia: chin lifted toward the spool; consent=yes_later; respect=0.76,True,True,50
+88,Ivo,public_ego_expression,v36-110626,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.61,Ivo: turns away with object shielded; consent=no; respect=0.61,True,True,51
+91,Fay,public_ego_expression,v36-107282,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.70,Fay: turns away with object shielded; consent=no; respect=0.70,True,True,52
+93,Milo,public_ego_expression,v36-228314,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.47,Milo: turns away with object shielded; consent=no; respect=0.47,True,True,53
+95,Juno,public_ego_expression,v36-230508,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.62,Juno: turns away with object shielded; consent=no; respect=0.62,True,True,54
+96,Ari,public_ego_expression,v36-906094,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.68,Ari: softens and faces avatar; consent=yes; respect=0.68,True,True,55
+98,Nia,public_ego_expression,v36-378512,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.79,Nia: chin lifted toward the spool; consent=yes_later; respect=0.79,True,True,56
+100,Ivo,public_ego_expression,v36-280772,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.64,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.64,True,True,57
+101,Juno,public_ego_expression,v36-300577,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.66,Juno: elbows tucked around the wire; consent=yes_later; respect=0.66,True,True,58
+103,Fay,public_ego_expression,v36-190641,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.74,Fay: hands open near the ledger; consent=yes_later; respect=0.74,True,True,59
+105,Milo,public_ego_expression,v36-179332,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.41,Milo: turns away with object shielded; consent=no; respect=0.41,True,True,60
+107,Juno,public_ego_expression,v36-181539,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.59,Juno: turns away with object shielded; consent=no; respect=0.59,True,True,61
+108,Fay,public_ego_expression,v36-044220,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.75,Fay: hands open near the ledger; consent=yes_later; respect=0.75,True,True,62
+110,Milo,public_ego_expression,v36-178667,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.34,Milo: turns away with object shielded; consent=no; respect=0.34,True,True,63
+111,Ivo,public_ego_expression,v36-281103,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.68,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.68,True,True,64
+112,Juno,public_ego_expression,v36-300908,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.63,Juno: elbows tucked around the wire; consent=yes_later; respect=0.63,True,True,65
+115,Nia,public_ego_expression,v36-247302,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.83,Nia: chin lifted toward the spool; consent=yes_later; respect=0.83,True,True,66
+117,Ivo,public_ego_expression,v36-282099,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.71,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.71,True,True,67
+119,Ari,public_ego_expression,v36-154796,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.62,Ari: turns away with object shielded; consent=no; respect=0.62,True,True,68
+120,Fay,public_ego_expression,v36-096753,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.76,Fay: hands open near the ledger; consent=yes_later; respect=0.76,True,True,69
+122,Milo,public_ego_expression,v36-144403,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.28,Milo: turns away with object shielded; consent=no; respect=0.28,True,True,70
+124,Juno,public_ego_expression,v36-243351,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.56,Juno: turns away with object shielded; consent=no; respect=0.56,True,True,71
+127,Nia,public_ego_expression,v36-215642,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.76,Nia: turns away with object shielded; consent=no; respect=0.76,True,True,72
+128,Milo,public_ego_expression,v36-364731,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.31,Milo: lantern held between body and road; consent=no; respect=0.31,True,True,73
+129,Ivo,public_ego_expression,v36-219733,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.65,Ivo: turns away with object shielded; consent=no; respect=0.65,True,True,74
+131,Ari,public_ego_expression,v36-514430,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.65,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.65,True,True,75
+132,Fay,public_ego_expression,v36-333622,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.80,Fay: hands open near the ledger; consent=yes_later; respect=0.80,True,True,76
+133,Nia,public_ego_expression,v36-153429,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.70,Nia: turns away with object shielded; consent=no; respect=0.70,True,True,77
+134,Milo,public_ego_expression,v36-397214,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.35,Milo: lantern held between body and road; consent=yes_later; respect=0.35,True,True,78
+136,Juno,public_ego_expression,v36-181868,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.50,Juno: turns away with object shielded; consent=no; respect=0.50,True,True,79
+139,Nia,public_ego_expression,v36-154425,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.63,Nia: turns away with object shielded; consent=no; respect=0.63,True,True,80
+141,Ivo,public_ego_expression,v36-157021,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.58,Ivo: turns away with object shielded; consent=no; respect=0.58,True,True,81
+143,Ari,public_ego_expression,v36-367625,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.69,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.69,True,True,82
+144,Fay,public_ego_expression,v36-216866,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.73,Fay: turns away with object shielded; consent=no; respect=0.73,True,True,83
+146,Milo,public_ego_expression,v36-364729,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.38,Milo: lantern held between body and road; consent=no; respect=0.38,True,True,84
+148,Juno,public_ego_expression,v36-270722,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.53,Juno: elbows tucked around the wire; consent=no; respect=0.53,True,True,85
+150,Fay,public_ego_expression,v36-216367,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.67,Fay: turns away with object shielded; consent=no; respect=0.67,True,True,86
+151,Nia,public_ego_expression,v36-391480,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.67,Nia: chin lifted toward the spool; consent=yes_later; respect=0.67,True,True,87
+153,Ivo,public_ego_expression,v36-132570,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.60,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.60,True,True,88
+155,Ari,public_ego_expression,v36-216506,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.62,Ari: turns away with object shielded; consent=no; respect=0.62,True,True,89
+156,Fay,public_ego_expression,v36-155649,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.60,Fay: turns away with object shielded; consent=no; respect=0.60,True,True,90
+158,Milo,public_ego_expression,v36-398208,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.42,Milo: lantern held between body and road; consent=yes_later; respect=0.42,True,True,91
+160,Juno,public_ego_expression,v36-301401,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.57,Juno: elbows tucked around the wire; consent=yes_later; respect=0.57,True,True,92
+161,Ari,public_ego_expression,v36-367623,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.66,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.66,True,True,93
+163,Nia,public_ego_expression,v36-247795,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.70,Nia: chin lifted toward the spool; consent=yes_later; respect=0.70,True,True,94
+165,Ivo,public_ego_expression,v36-993874,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.66,Ivo: softens and faces avatar; consent=yes; respect=0.66,True,True,95
+167,Ari,public_ego_expression,v36-155289,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.59,Ari: turns away with object shielded; consent=no; respect=0.59,True,True,96
+168,Fay,public_ego_expression,v36-121552,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.54,Fay: turns away with object shielded; consent=no; respect=0.54,True,True,97
+170,Milo,public_ego_expression,v36-241637,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.35,Milo: turns away with object shielded; consent=no; respect=0.35,True,True,98
+172,Juno,public_ego_expression,v36-243844,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.50,Juno: turns away with object shielded; consent=no; respect=0.50,True,True,99
+175,Nia,public_ego_expression,v36-216135,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.64,Nia: turns away with object shielded; consent=no; respect=0.64,True,True,100
+177,Ivo,public_ego_expression,v36-919902,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.72,Ivo: softens and faces avatar; consent=yes; respect=0.72,True,True,101
+179,Ari,public_ego_expression,v36-217215,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.60,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.60,True,True,102
+180,Fay,public_ego_expression,v36-191463,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.57,Fay: hands open near the ledger; consent=yes_later; respect=0.57,True,True,103
+182,Milo,public_ego_expression,v36-180154,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.29,Milo: turns away with object shielded; consent=no; respect=0.29,True,True,104
+184,Juno,public_ego_expression,v36-182361,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.44,Juno: turns away with object shielded; consent=no; respect=0.44,True,True,105
+187,Nia,public_ego_expression,v36-154918,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.57,Nia: turns away with object shielded; consent=no; respect=0.57,True,True,106
+189,Ivo,public_ego_expression,v36-922166,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.78,Ivo: softens and faces avatar; consent=yes; respect=0.78,True,True,107
+190,Juno,public_ego_expression,v36-151747,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.45,Juno: elbows tucked around the wire; consent=yes_later; respect=0.45,True,True,108
+191,Ari,public_ego_expression,v36-990647,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.66,Ari: softens and faces avatar; consent=yes; respect=0.66,True,True,109
+192,Fay,public_ego_expression,v36-160417,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.61,Fay: hands open near the ledger; consent=no; respect=0.61,True,True,110
+194,Milo,public_ego_expression,v36-365222,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.32,Milo: lantern held between body and road; consent=no; respect=0.32,True,True,111
+195,Ivo,public_ego_expression,v36-220224,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.71,Ivo: turns away with object shielded; consent=no; respect=0.71,True,True,112
+196,Juno,public_ego_expression,v36-152743,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.46,Juno: elbows tucked around the wire; consent=yes_later; respect=0.46,True,True,113
+199,Nia,public_ego_expression,v36-100505,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.58,Nia: chin lifted toward the spool; consent=yes_later; respect=0.58,True,True,114
+201,Ivo,public_ego_expression,v36-015240,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.77,Ivo: softens and faces avatar; consent=yes; respect=0.77,True,True,115
+203,Ari,public_ego_expression,v36-915189,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.72,Ari: softens and faces avatar; consent=yes; respect=0.72,True,True,116
+204,Fay,public_ego_expression,v36-190971,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.64,Fay: hands open near the ledger; consent=yes_later; respect=0.64,True,True,117
+206,Milo,public_ego_expression,v36-397215,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.36,Milo: lantern held between body and road; consent=yes_later; respect=0.36,True,True,118
+208,Juno,public_ego_expression,v36-016977,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.52,Juno: softens and faces avatar; consent=yes; respect=0.52,True,True,119
+211,Nia,public_ego_expression,v36-988790,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.64,Nia: softens and faces avatar; consent=yes; respect=0.64,True,True,120
+212,Milo,public_ego_expression,v36-941230,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.42,Milo: softens and faces avatar; consent=yes; respect=0.42,True,True,121
+213,Ivo,public_ego_expression,v36-132074,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.78,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.78,True,True,122
+215,Ari,public_ego_expression,v36-917453,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.78,Ari: softens and faces avatar; consent=yes; respect=0.78,True,True,123
+216,Fay,public_ego_expression,v36-216867,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.58,Fay: turns away with object shielded; consent=no; respect=0.58,True,True,124
+217,Nia,public_ego_expression,v36-216291,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.68,Nia: chin lifted toward the spool; consent=no; respect=0.68,True,True,125
+218,Milo,public_ego_expression,v36-242139,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.35,Milo: turns away with object shielded; consent=no; respect=0.35,True,True,126
+220,Juno,public_ego_expression,v36-941161,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.58,Juno: softens and faces avatar; consent=yes; respect=0.58,True,True,127
+223,Nia,public_ego_expression,v36-914818,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.74,Nia: softens and faces avatar; consent=yes; respect=0.74,True,True,128
+225,Ivo,public_ego_expression,v36-186860,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,True,True,129
+227,Ari,public_ego_expression,v36-013508,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.84,Ari: softens and faces avatar; consent=yes; respect=0.84,True,True,130
+228,Nia,public_ego_expression,v36-392311,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.77,Nia: chin lifted toward the spool; consent=yes_later; respect=0.77,True,True,131
+230,Ivo,public_ego_expression,v36-131906,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.81,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.81,True,True,132
+232,Ari,public_ego_expression,v36-215842,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.78,Ari: turns away with object shielded; consent=no; respect=0.78,True,True,133
+233,Fay,public_ego_expression,v36-044049,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.59,Fay: hands open near the ledger; consent=yes_later; respect=0.59,True,True,134
+235,Milo,public_ego_expression,v36-038065,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.41,Milo: softens and faces avatar; consent=yes; respect=0.41,True,True,135
+237,Juno,public_ego_expression,v36-244178,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.52,Juno: turns away with object shielded; consent=no; respect=0.52,True,True,136
+239,Fay,public_ego_expression,v36-098576,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.60,Fay: hands open near the ledger; consent=yes_later; respect=0.60,True,True,137
+240,Nia,public_ego_expression,v36-247131,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.81,Nia: chin lifted toward the spool; consent=yes_later; respect=0.81,True,True,138
+242,Ivo,public_ego_expression,v36-993210,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.87,Ivo: softens and faces avatar; consent=yes; respect=0.87,True,True,139
+244,Ari,public_ego_expression,v36-154625,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.71,Ari: turns away with object shielded; consent=no; respect=0.71,True,True,140
+247,Milo,public_ego_expression,v36-245462,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.42,Milo: lantern held between body and road; consent=yes_later; respect=0.42,True,True,141
+249,Juno,public_ego_expression,v36-182695,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.45,Juno: turns away with object shielded; consent=no; respect=0.45,True,True,142
+250,Ari,public_ego_expression,v36-215555,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.73,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.73,True,True,143
+251,Fay,public_ego_expression,v36-159755,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.64,Fay: hands open near the ledger; consent=no; respect=0.64,True,True,144
+252,Nia,public_ego_expression,v36-215471,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.74,Nia: turns away with object shielded; consent=no; respect=0.74,True,True,145
+254,Ivo,public_ego_expression,v36-919238,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.93,Ivo: softens and faces avatar; consent=yes; respect=0.93,True,True,146
+256,Ari,public_ego_expression,v36-216551,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.74,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.74,True,True,147
+259,Milo,public_ego_expression,v36-301293,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.43,Milo: lantern held between body and road; consent=yes_later; respect=0.43,True,True,148
+261,Juno,public_ego_expression,v36-146936,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.39,Juno: turns away with object shielded; consent=no; respect=0.39,True,True,149
+263,Fay,public_ego_expression,v36-217194,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.57,Fay: turns away with object shielded; consent=no; respect=0.57,True,True,150
+264,Nia,public_ego_expression,v36-154254,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.68,Nia: turns away with object shielded; consent=no; respect=0.68,True,True,151
+266,Ivo,public_ego_expression,v36-921502,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,152
+267,Juno,public_ego_expression,v36-152578,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.40,Juno: elbows tucked around the wire; consent=yes_later; respect=0.40,True,True,153
+268,Ari,public_ego_expression,v36-991478,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.80,Ari: softens and faces avatar; consent=yes; respect=0.80,True,True,154
+271,Milo,public_ego_expression,v36-364558,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.47,Milo: lantern held between body and road; consent=no; respect=0.47,True,True,155
+273,Juno,public_ego_expression,v36-302228,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.43,Juno: elbows tucked around the wire; consent=yes_later; respect=0.43,True,True,156
+275,Fay,public_ego_expression,v36-155977,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.51,Fay: turns away with object shielded; consent=no; respect=0.51,True,True,157
+276,Nia,public_ego_expression,v36-099841,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.69,Nia: chin lifted toward the spool; consent=yes_later; respect=0.69,True,True,158
+278,Ivo,public_ego_expression,v36-017557,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,159
+280,Ari,public_ego_expression,v36-916011,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.86,Ari: softens and faces avatar; consent=yes; respect=0.86,True,True,160
+283,Milo,public_ego_expression,v36-242464,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.40,Milo: turns away with object shielded; consent=no; respect=0.40,True,True,161
+284,Ivo,public_ego_expression,v36-123749,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,162
+285,Juno,public_ego_expression,v36-271048,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.47,Juno: elbows tucked around the wire; consent=no; respect=0.47,True,True,163
+287,Fay,public_ego_expression,v36-121880,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.44,Fay: turns away with object shielded; consent=no; respect=0.44,True,True,164
+288,Nia,public_ego_expression,v36-991107,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.75,Nia: softens and faces avatar; consent=yes; respect=0.75,True,True,165
+289,Milo,public_ego_expression,v36-943547,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.46,Milo: softens and faces avatar; consent=yes; respect=0.46,True,True,166
+290,Ivo,public_ego_expression,v36-132896,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.91,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.91,True,True,167
+292,Ari,public_ego_expression,v36-918275,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.92,Ari: softens and faces avatar; consent=yes; respect=0.92,True,True,168
+295,Milo,public_ego_expression,v36-180981,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.40,Milo: turns away with object shielded; consent=no; respect=0.40,True,True,169
+297,Juno,public_ego_expression,v36-303222,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.50,Juno: elbows tucked around the wire; consent=yes_later; respect=0.50,True,True,170
+299,Fay,public_ego_expression,v36-193286,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.48,Fay: hands open near the ledger; consent=yes_later; respect=0.48,True,True,171
+300,Nia,public_ego_expression,v36-914154,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.81,Nia: softens and faces avatar; consent=yes; respect=0.81,True,True,172
+302,Ivo,public_ego_expression,v36-186196,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.92,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.92,True,True,173
+304,Ari,public_ego_expression,v36-012844,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,174
+306,Nia,public_ego_expression,v36-215474,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.75,Nia: turns away with object shielded; consent=no; respect=0.75,True,True,175
+307,Milo,public_ego_expression,v36-145231,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.33,Milo: turns away with object shielded; consent=no; respect=0.33,True,True,176
+309,Juno,public_ego_expression,v36-244179,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.44,Juno: turns away with object shielded; consent=no; respect=0.44,True,True,177
+311,Fay,public_ego_expression,v36-159259,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.51,Fay: hands open near the ledger; consent=no; respect=0.51,True,True,178
+312,Nia,public_ego_expression,v36-916418,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.81,Nia: softens and faces avatar; consent=yes; respect=0.81,True,True,179
+314,Ivo,public_ego_expression,v36-426855,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.95,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.95,True,True,180
+316,Ari,public_ego_expression,v36-216055,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,181
+317,Fay,public_ego_expression,v36-160255,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.55,Fay: hands open near the ledger; consent=no; respect=0.55,True,True,182
+319,Milo,public_ego_expression,v36-398042,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.37,Milo: lantern held between body and road; consent=yes_later; respect=0.37,True,True,183
+321,Juno,public_ego_expression,v36-181201,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.37,Juno: turns away with object shielded; consent=no; respect=0.37,True,True,184
+323,Fay,public_ego_expression,v36-191299,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.58,Fay: hands open near the ledger; consent=yes_later; respect=0.58,True,True,185
+324,Nia,public_ego_expression,v36-012473,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.87,Nia: softens and faces avatar; consent=yes; respect=0.87,True,True,186
+326,Ivo,public_ego_expression,v36-219563,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.89,Ivo: turns away with object shielded; consent=no; respect=0.89,True,True,187
+328,Ari,public_ego_expression,v36-271633,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,188
+331,Milo,public_ego_expression,v36-364062,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.40,Milo: lantern held between body and road; consent=no; respect=0.40,True,True,189
+333,Juno,public_ego_expression,v36-270055,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.41,Juno: elbows tucked around the wire; consent=no; respect=0.41,True,True,190
+334,Ari,public_ego_expression,v36-515256,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,191
+335,Fay,public_ego_expression,v36-217195,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.52,Fay: turns away with object shielded; consent=no; respect=0.52,True,True,192
+336,Nia,public_ego_expression,v36-099345,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.88,Nia: chin lifted toward the spool; consent=yes_later; respect=0.88,True,True,193
+338,Ivo,public_ego_expression,v36-158346,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.82,Ivo: turns away with object shielded; consent=no; respect=0.82,True,True,194
+340,Ari,public_ego_expression,v36-514757,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,195
+343,Milo,public_ego_expression,v36-397541,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.44,Milo: lantern held between body and road; consent=yes_later; respect=0.44,True,True,196
+345,Juno,public_ego_expression,v36-302229,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.44,Juno: elbows tucked around the wire; consent=yes_later; respect=0.44,True,True,197
+347,Fay,public_ego_expression,v36-155978,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.45,Fay: turns away with object shielded; consent=no; respect=0.45,True,True,198
+348,Milo,public_ego_expression,v36-365389,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.47,Milo: lantern held between body and road; consent=no; respect=0.47,True,True,199
+350,Juno,public_ego_expression,v36-301564,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.48,Juno: elbows tucked around the wire; consent=yes_later; respect=0.48,True,True,200
+352,Fay,public_ego_expression,v36-155313,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.39,Fay: turns away with object shielded; consent=no; respect=0.39,True,True,201
+355,Ivo,public_ego_expression,v36-158178,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.76,Ivo: turns away with object shielded; consent=no; respect=0.76,True,True,202
+356,Juno,public_ego_expression,v36-302560,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.51,Juno: elbows tucked around the wire; consent=yes_later; respect=0.51,True,True,203
+357,Ari,public_ego_expression,v36-368782,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,204
+359,Nia,public_ego_expression,v36-248954,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.91,Nia: chin lifted toward the spool; consent=yes_later; respect=0.91,True,True,205
+360,Milo,public_ego_expression,v36-241800,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.41,Milo: turns away with object shielded; consent=no; respect=0.41,True,True,206
+361,Ivo,public_ego_expression,v36-123085,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.69,Ivo: turns away with object shielded; consent=no; respect=0.69,True,True,207
+362,Juno,public_ego_expression,v36-270384,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.55,Juno: elbows tucked around the wire; consent=no; respect=0.55,True,True,208
+364,Fay,public_ego_expression,v36-121216,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.32,Fay: turns away with object shielded; consent=no; respect=0.32,True,True,209
+367,Ivo,public_ego_expression,v36-250995,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.73,Ivo: one palm over the satchel cord; consent=no; respect=0.73,True,True,210
+369,Ari,public_ego_expression,v36-217663,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,211
+371,Nia,public_ego_expression,v36-215799,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.85,Nia: turns away with object shielded; consent=no; respect=0.85,True,True,212
+372,Milo,public_ego_expression,v36-180317,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.34,Milo: turns away with object shielded; consent=no; respect=0.34,True,True,213
+374,Juno,public_ego_expression,v36-302558,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.58,Juno: elbows tucked around the wire; consent=yes_later; respect=0.58,True,True,214
+376,Fay,public_ego_expression,v36-192622,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.36,Fay: hands open near the ledger; consent=yes_later; respect=0.36,True,True,215
+378,Milo,public_ego_expression,v36-181313,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.28,Milo: turns away with object shielded; consent=no; respect=0.28,True,True,216
+379,Ivo,public_ego_expression,v36-283749,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.76,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.76,True,True,217
+381,Ari,public_ego_expression,v36-154951,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.83,Ari: turns away with object shielded; consent=no; respect=0.83,True,True,218
+383,Nia,public_ego_expression,v36-154582,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.78,Nia: turns away with object shielded; consent=no; respect=0.78,True,True,219
+384,Milo,public_ego_expression,v36-146053,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.21,Milo: turns away with object shielded; consent=no; respect=0.21,True,True,220
+386,Juno,public_ego_expression,v36-245001,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.52,Juno: turns away with object shielded; consent=no; respect=0.52,True,True,221
+388,Fay,public_ego_expression,v36-161576,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.39,Fay: hands open near the ledger; consent=no; respect=0.39,True,True,222
+389,Nia,public_ego_expression,v36-217292,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.72,Nia: turns away with object shielded; consent=no; respect=0.72,True,True,223
+391,Ivo,public_ego_expression,v36-219888,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.70,Ivo: turns away with object shielded; consent=no; respect=0.70,True,True,224
+393,Ari,public_ego_expression,v36-336656,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.87,Ari: shoulders angled toward the ridge; consent=no; respect=0.87,True,True,225
+395,Nia,public_ego_expression,v36-100169,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.73,Nia: chin lifted toward the spool; consent=yes_later; respect=0.73,True,True,226
+396,Milo,public_ego_expression,v36-398864,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.25,Milo: lantern held between body and road; consent=yes_later; respect=0.25,True,True,227
+398,Juno,public_ego_expression,v36-183518,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.45,Juno: turns away with object shielded; consent=no; respect=0.45,True,True,228
+400,Fay,public_ego_expression,v36-190635,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.43,Fay: hands open near the ledger; consent=yes_later; respect=0.43,True,True,229
+403,Ivo,public_ego_expression,v36-157185,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.63,Ivo: turns away with object shielded; consent=no; respect=0.63,True,True,230
+405,Ari,public_ego_expression,v36-367789,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,True,True,231
+406,Fay,public_ego_expression,v36-155316,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.36,Fay: turns away with object shielded; consent=no; respect=0.36,True,True,232
+407,Nia,public_ego_expression,v36-989949,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.79,Nia: softens and faces avatar; consent=yes; respect=0.79,True,True,233
+408,Milo,public_ego_expression,v36-364893,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.28,Milo: lantern held between body and road; consent=no; respect=0.28,True,True,234
+410,Juno,public_ego_expression,v36-269391,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.49,Juno: elbows tucked around the wire; consent=no; respect=0.49,True,True,235
+411,Ari,public_ego_expression,v36-335168,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.94,Ari: shoulders angled toward the ridge; consent=no; respect=0.94,True,True,236
+412,Fay,public_ego_expression,v36-216531,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.30,Fay: turns away with object shielded; consent=no; respect=0.30,True,True,237
+415,Ivo,public_ego_expression,v36-132734,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.65,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.65,True,True,238
+417,Ari,public_ego_expression,v36-216670,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.87,Ari: turns away with object shielded; consent=no; respect=0.87,True,True,239
+419,Nia,public_ego_expression,v36-915977,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.85,Nia: softens and faces avatar; consent=yes; respect=0.85,True,True,240
+420,Milo,public_ego_expression,v36-396877,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.32,Milo: lantern held between body and road; consent=yes_later; respect=0.32,True,True,241
+422,Juno,public_ego_expression,v36-301565,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.52,Juno: elbows tucked around the wire; consent=yes_later; respect=0.52,True,True,242
+424,Fay,public_ego_expression,v36-155314,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.23,Fay: turns away with object shielded; consent=no; respect=0.23,True,True,243
+427,Ivo,public_ego_expression,v36-994038,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.71,Ivo: softens and faces avatar; consent=yes; respect=0.71,True,True,244
+429,Ari,public_ego_expression,v36-155453,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.81,Ari: turns away with object shielded; consent=no; respect=0.81,True,True,245
+431,Nia,public_ego_expression,v36-916746,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.91,Nia: softens and faces avatar; consent=yes; respect=0.91,True,True,246
+432,Milo,public_ego_expression,v36-241801,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.25,Milo: turns away with object shielded; consent=no; respect=0.25,True,True,247
+434,Juno,public_ego_expression,v36-244008,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.46,Juno: turns away with object shielded; consent=no; respect=0.46,True,True,248
+436,Fay,public_ego_expression,v36-160583,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.27,Fay: hands open near the ledger; consent=no; respect=0.27,True,True,249
+439,Ivo,public_ego_expression,v36-920066,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.77,Ivo: softens and faces avatar; consent=yes; respect=0.77,True,True,250
+440,Juno,public_ego_expression,v36-039603,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.52,Juno: softens and faces avatar; consent=yes; respect=0.52,True,True,251
+441,Ari,public_ego_expression,v36-215884,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.82,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.82,True,True,252
+443,Nia,public_ego_expression,v36-012801,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,253
+444,Milo,public_ego_expression,v36-180318,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.19,Milo: turns away with object shielded; consent=no; respect=0.19,True,True,254
+445,Ivo,public_ego_expression,v36-282754,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,True,True,255
+446,Juno,public_ego_expression,v36-182525,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.45,Juno: turns away with object shielded; consent=no; respect=0.45,True,True,256
+448,Fay,public_ego_expression,v36-192623,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.30,Fay: hands open near the ledger; consent=yes_later; respect=0.30,True,True,257
+451,Ivo,public_ego_expression,v36-920835,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.86,Ivo: softens and faces avatar; consent=yes; respect=0.86,True,True,258
+453,Ari,public_ego_expression,v36-990811,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.88,Ari: softens and faces avatar; consent=yes; respect=0.88,True,True,259
+455,Nia,public_ego_expression,v36-099673,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,260
+456,Milo,public_ego_expression,v36-365386,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.22,Milo: lantern held between body and road; consent=no; respect=0.22,True,True,261
+458,Juno,public_ego_expression,v36-152907,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.47,Juno: elbows tucked around the wire; consent=yes_later; respect=0.47,True,True,262
+460,Fay,public_ego_expression,v36-217024,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.24,Fay: turns away with object shielded; consent=no; respect=0.24,True,True,263
+462,Milo,public_ego_expression,v36-940606,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.28,Milo: softens and faces avatar; consent=yes; respect=0.28,True,True,264
+463,Ivo,public_ego_expression,v36-016890,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.92,Ivo: softens and faces avatar; consent=yes; respect=0.92,True,True,265
+465,Ari,public_ego_expression,v36-916839,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.94,Ari: softens and faces avatar; consent=yes; respect=0.94,True,True,266
+467,Nia,public_ego_expression,v36-154211,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,267
+468,Ivo,public_ego_expression,v36-220719,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.86,Ivo: turns away with object shielded; consent=no; respect=0.86,True,True,268
+470,Ari,public_ego_expression,v36-335992,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,True,True,269
+472,Nia,public_ego_expression,v36-099505,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,270
+475,Juno,public_ego_expression,v36-207263,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.48,Juno: elbows tucked around the wire; consent=yes_later; respect=0.48,True,True,271
+477,Fay,public_ego_expression,v36-015352,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.30,Fay: softens and faces avatar; consent=yes; respect=0.30,True,True,272
+478,Nia,public_ego_expression,v36-154542,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,273
+479,Milo,public_ego_expression,v36-243623,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.22,Milo: turns away with object shielded; consent=no; respect=0.22,True,True,274
+480,Ivo,public_ego_expression,v36-158007,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.79,Ivo: turns away with object shielded; consent=no; respect=0.79,True,True,275
+482,Ari,public_ego_expression,v36-368611,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,276
+483,Fay,public_ego_expression,v36-156138,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.23,Fay: turns away with object shielded; consent=no; respect=0.23,True,True,277
+484,Nia,public_ego_expression,v36-990771,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,278
+487,Juno,public_ego_expression,v36-271708,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.51,Juno: elbows tucked around the wire; consent=no; respect=0.51,True,True,279
+489,Fay,public_ego_expression,v36-046198,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.24,Fay: hands open near the ledger; consent=yes_later; respect=0.24,True,True,280
+491,Milo,public_ego_expression,v36-180645,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.15,Milo: turns away with object shielded; consent=no; respect=0.15,True,True,281
+492,Ivo,public_ego_expression,v36-133556,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.80,True,True,282
+494,Ari,public_ego_expression,v36-217492,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,283
+496,Nia,public_ego_expression,v36-916799,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,284
+499,Juno,public_ego_expression,v36-245828,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.45,Juno: turns away with object shielded; consent=no; respect=0.45,True,True,285
+500,Ari,public_ego_expression,v36-012508,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,286
+501,Fay,public_ego_expression,v36-097245,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.26,Fay: hands open near the ledger; consent=yes_later; respect=0.26,True,True,287
+503,Milo,public_ego_expression,v36-144895,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.09,Milo: turns away with object shielded; consent=no; respect=0.09,True,True,288
+504,Ivo,public_ego_expression,v36-993374,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.86,Ivo: softens and faces avatar; consent=yes; respect=0.86,True,True,289
+506,Ari,public_ego_expression,v36-154789,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.89,Ari: turns away with object shielded; consent=no; respect=0.89,True,True,290
+508,Nia,public_ego_expression,v36-917577,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,291
+511,Juno,public_ego_expression,v36-181364,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.38,Juno: turns away with object shielded; consent=no; respect=0.38,True,True,292
+513,Fay,public_ego_expression,v36-159919,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.29,Fay: hands open near the ledger; consent=no; respect=0.29,True,True,293
+515,Milo,public_ego_expression,v36-397706,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.12,Milo: lantern held between body and road; consent=yes_later; respect=0.12,True,True,294
+516,Ivo,public_ego_expression,v36-919402,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.92,Ivo: softens and faces avatar; consent=yes; respect=0.92,True,True,295
+517,Juno,public_ego_expression,v36-040434,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.44,Juno: softens and faces avatar; consent=yes; respect=0.44,True,True,296
+518,Ari,public_ego_expression,v36-216715,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,True,True,297
+520,Nia,public_ego_expression,v36-012137,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,298
+523,Juno,public_ego_expression,v36-147100,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.38,Juno: turns away with object shielded; consent=no; respect=0.38,True,True,299
+525,Fay,public_ego_expression,v36-217358,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.23,Fay: turns away with object shielded; consent=no; respect=0.23,True,True,300
+527,Milo,public_ego_expression,v36-365221,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.16,Milo: lantern held between body and road; consent=no; respect=0.16,True,True,301
+528,Ivo,public_ego_expression,v36-921666,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,302
+530,Ari,public_ego_expression,v36-990147,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,303
+532,Nia,public_ego_expression,v36-099009,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,304
+534,Ivo,public_ego_expression,v36-158010,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,305
+535,Juno,public_ego_expression,v36-302392,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.41,Juno: elbows tucked around the wire; consent=yes_later; respect=0.41,True,True,306
+537,Fay,public_ego_expression,v36-156141,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.16,Fay: turns away with object shielded; consent=no; respect=0.16,True,True,307
+539,Milo,public_ego_expression,v36-398700,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.19,Milo: lantern held between body and road; consent=yes_later; respect=0.19,True,True,308
+540,Ivo,public_ego_expression,v36-016226,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,309
+542,Ari,public_ego_expression,v36-916175,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,310
+544,Nia,public_ego_expression,v36-153547,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,311
+545,Milo,public_ego_expression,v36-242628,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.13,Milo: turns away with object shielded; consent=no; respect=0.13,True,True,312
+547,Juno,public_ego_expression,v36-271212,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.45,Juno: elbows tucked around the wire; consent=no; respect=0.45,True,True,313
+549,Fay,public_ego_expression,v36-122044,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.10,Fay: turns away with object shielded; consent=no; respect=0.10,True,True,314
+551,Milo,public_ego_expression,v36-242129,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.06,Milo: turns away with object shielded; consent=no; respect=0.06,True,True,315
+552,Ivo,public_ego_expression,v36-133060,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,316
+554,Ari,public_ego_expression,v36-918439,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,317
+556,Nia,public_ego_expression,v36-217277,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.96,Nia: chin lifted toward the spool; consent=no; respect=0.96,True,True,318
+559,Juno,public_ego_expression,v36-303386,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.48,Juno: elbows tucked around the wire; consent=yes_later; respect=0.48,True,True,319
+561,Fay,public_ego_expression,v36-191955,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.13,Fay: hands open near the ledger; consent=yes_later; respect=0.13,True,True,320
+562,Nia,public_ego_expression,v36-248285,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,321
+563,Milo,public_ego_expression,v36-180646,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,322
+564,Ivo,public_ego_expression,v36-187846,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,323
+566,Ari,public_ego_expression,v36-014494,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,324
+567,Fay,public_ego_expression,v36-099231,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.14,Fay: hands open near the ledger; consent=yes_later; respect=0.14,True,True,325
+568,Nia,public_ego_expression,v36-217124,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,326
+571,Juno,public_ego_expression,v36-244334,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.42,Juno: turns away with object shielded; consent=no; respect=0.42,True,True,327
+573,Fay,public_ego_expression,v36-160909,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.18,Fay: hands open near the ledger; consent=no; respect=0.18,True,True,328
+575,Milo,public_ego_expression,v36-365714,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.08,Milo: lantern held between body and road; consent=no; respect=0.08,True,True,329
+576,Ivo,public_ego_expression,v36-251322,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,330
+578,Ari,public_ego_expression,v36-217705,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,331
+580,Nia,public_ego_expression,v36-154412,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.83,Nia: turns away with object shielded; consent=no; respect=0.83,True,True,332
+583,Juno,public_ego_expression,v36-182851,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.35,Juno: turns away with object shielded; consent=no; respect=0.35,True,True,333
+584,Ari,public_ego_expression,v36-369107,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,334
+585,Fay,public_ego_expression,v36-192949,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.21,Fay: hands open near the ledger; consent=yes_later; respect=0.21,True,True,335
+587,Milo,public_ego_expression,v36-399193,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.11,Milo: lantern held between body and road; consent=yes_later; respect=0.11,True,True,336
+588,Juno,public_ego_expression,v36-183681,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.29,Juno: turns away with object shielded; consent=no; respect=0.29,True,True,337
+590,Fay,public_ego_expression,v36-160741,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.25,Fay: hands open near the ledger; consent=no; respect=0.25,True,True,338
+592,Milo,public_ego_expression,v36-398528,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.15,Milo: lantern held between body and road; consent=yes_later; respect=0.15,True,True,339
+595,Ari,public_ego_expression,v36-369438,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,340
+597,Nia,public_ego_expression,v36-155739,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.77,Nia: turns away with object shielded; consent=no; respect=0.77,True,True,341
+599,Ivo,public_ego_expression,v36-159830,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,342
+600,Juno,public_ego_expression,v36-146436,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.22,Juno: turns away with object shielded; consent=no; respect=0.22,True,True,343
+602,Fay,public_ego_expression,v36-216694,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.18,Fay: turns away with object shielded; consent=no; respect=0.18,True,True,344
+604,Milo,public_ego_expression,v36-364557,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.18,Milo: lantern held between body and road; consent=no; respect=0.18,True,True,345
+606,Juno,public_ego_expression,v36-270550,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.26,Juno: elbows tucked around the wire; consent=no; respect=0.26,True,True,346
+607,Ari,public_ego_expression,v36-336327,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,True,True,347
+609,Nia,public_ego_expression,v36-217114,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.80,Nia: chin lifted toward the spool; consent=no; respect=0.80,True,True,348
+611,Ivo,public_ego_expression,v36-132398,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.91,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.91,True,True,349
+612,Juno,public_ego_expression,v36-301728,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.29,Juno: elbows tucked around the wire; consent=yes_later; respect=0.29,True,True,350
+614,Fay,public_ego_expression,v36-155477,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.12,Fay: turns away with object shielded; consent=no; respect=0.12,True,True,351
+616,Milo,public_ego_expression,v36-398036,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.22,Milo: lantern held between body and road; consent=yes_later; respect=0.22,True,True,352
+617,Ivo,public_ego_expression,v36-158342,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.84,Ivo: turns away with object shielded; consent=no; respect=0.84,True,True,353
+619,Ari,public_ego_expression,v36-368946,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,354
+621,Nia,public_ego_expression,v36-247623,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.84,Nia: chin lifted toward the spool; consent=yes_later; respect=0.84,True,True,355
+623,Ivo,public_ego_expression,v36-993702,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.90,Ivo: softens and faces avatar; consent=yes; respect=0.90,True,True,356
+624,Juno,public_ego_expression,v36-270548,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.33,Juno: elbows tucked around the wire; consent=no; respect=0.33,True,True,357
+626,Fay,public_ego_expression,v36-121380,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.05,Fay: turns away with object shielded; consent=no; respect=0.05,True,True,358
+628,Milo,public_ego_expression,v36-242960,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.15,Milo: turns away with object shielded; consent=no; respect=0.15,True,True,359
+631,Ari,public_ego_expression,v36-216332,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,360
+633,Nia,public_ego_expression,v36-215963,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.77,Nia: turns away with object shielded; consent=no; respect=0.77,True,True,361
+634,Milo,public_ego_expression,v36-245455,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.16,Milo: lantern held between body and road; consent=yes_later; respect=0.16,True,True,362
+635,Ivo,public_ego_expression,v36-919730,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,363
+636,Juno,public_ego_expression,v36-302722,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.36,Juno: elbows tucked around the wire; consent=yes_later; respect=0.36,True,True,364
+638,Fay,public_ego_expression,v36-192786,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.09,Fay: hands open near the ledger; consent=yes_later; respect=0.09,True,True,365
+639,Nia,public_ego_expression,v36-249116,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.81,Nia: chin lifted toward the spool; consent=yes_later; respect=0.81,True,True,366
+640,Milo,public_ego_expression,v36-179982,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.10,Milo: turns away with object shielded; consent=no; respect=0.10,True,True,367
+643,Ari,public_ego_expression,v36-155115,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.83,Ari: turns away with object shielded; consent=no; respect=0.83,True,True,368
+645,Nia,public_ego_expression,v36-154746,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.74,Nia: turns away with object shielded; consent=no; respect=0.74,True,True,369
+647,Ivo,public_ego_expression,v36-921994,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,370
+648,Juno,public_ego_expression,v36-245165,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.30,Juno: turns away with object shielded; consent=no; respect=0.30,True,True,371
+650,Fay,public_ego_expression,v36-160245,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.12,Fay: hands open near the ledger; consent=no; respect=0.12,True,True,372
+652,Milo,public_ego_expression,v36-365050,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.13,Milo: lantern held between body and road; consent=no; respect=0.13,True,True,373
+655,Ari,public_ego_expression,v36-336820,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.87,Ari: shoulders angled toward the ridge; consent=no; respect=0.87,True,True,374
+656,Fay,public_ego_expression,v36-218183,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.06,Fay: turns away with object shielded; consent=no; respect=0.06,True,True,375
+657,Nia,public_ego_expression,v36-100333,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.75,Nia: chin lifted toward the spool; consent=yes_later; respect=0.75,True,True,376
+659,Ivo,public_ego_expression,v36-018049,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,377
+660,Juno,public_ego_expression,v36-182187,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.23,Juno: turns away with object shielded; consent=no; respect=0.23,True,True,378
+661,Ari,public_ego_expression,v36-368443,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,True,True,379
+662,Fay,public_ego_expression,v36-192285,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.09,Fay: hands open near the ledger; consent=yes_later; respect=0.09,True,True,380
+664,Milo,public_ego_expression,v36-398529,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.17,Milo: lantern held between body and road; consent=yes_later; respect=0.17,True,True,381
+667,Ari,public_ego_expression,v36-369439,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.94,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.94,True,True,382
+669,Nia,public_ego_expression,v36-991599,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.81,Nia: softens and faces avatar; consent=yes; respect=0.81,True,True,383
+671,Ivo,public_ego_expression,v36-133388,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,384
+672,Juno,public_ego_expression,v36-271041,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.27,Juno: elbows tucked around the wire; consent=no; respect=0.27,True,True,385
+674,Fay,public_ego_expression,v36-218181,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,386
+676,Milo,public_ego_expression,v36-243453,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.10,Milo: turns away with object shielded; consent=no; respect=0.10,True,True,387
+679,Ari,public_ego_expression,v36-218320,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.87,Ari: turns away with object shielded; consent=no; respect=0.87,True,True,388
+681,Nia,public_ego_expression,v36-916132,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.87,Nia: softens and faces avatar; consent=yes; respect=0.87,True,True,389
+683,Ivo,public_ego_expression,v36-188174,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,390
+684,Juno,public_ego_expression,v36-303215,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.30,Juno: elbows tucked around the wire; consent=yes_later; respect=0.30,True,True,391
+686,Fay,public_ego_expression,v36-156964,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,392
+688,Milo,public_ego_expression,v36-181970,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,393
+690,Juno,public_ego_expression,v36-944749,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.36,Juno: softens and faces avatar; consent=yes; respect=0.36,True,True,394
+691,Ari,public_ego_expression,v36-155608,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.81,Ari: turns away with object shielded; consent=no; respect=0.81,True,True,395
+693,Nia,public_ego_expression,v36-918396,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.93,Nia: softens and faces avatar; consent=yes; respect=0.93,True,True,396
+695,Ivo,public_ego_expression,v36-251650,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,397
+696,Juno,public_ego_expression,v36-245658,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.30,Juno: turns away with object shielded; consent=no; respect=0.30,True,True,398
+698,Fay,public_ego_expression,v36-162233,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.08,Fay: hands open near the ledger; consent=no; respect=0.08,True,True,399
+700,Milo,public_ego_expression,v36-244460,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.05,Milo: lantern held between body and road; consent=yes_later; respect=0.05,True,True,400
+701,Ivo,public_ego_expression,v36-918735,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,401
+703,Ari,public_ego_expression,v36-216048,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.82,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.82,True,True,402
+705,Nia,public_ego_expression,v36-012965,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,403
+707,Ivo,public_ego_expression,v36-220055,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,404
+708,Ari,public_ego_expression,v36-217163,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.75,Ari: turns away with object shielded; consent=no; respect=0.75,True,True,405
+710,Nia,public_ego_expression,v36-215299,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,406
+711,Milo,public_ego_expression,v36-244791,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.06,Milo: lantern held between body and road; consent=yes_later; respect=0.06,True,True,407
+712,Ivo,public_ego_expression,v36-919066,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,408
+715,Fay,public_ego_expression,v36-917197,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.14,Fay: softens and faces avatar; consent=yes; respect=0.14,True,True,409
+717,Milo,public_ego_expression,v36-301121,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,410
+719,Juno,public_ego_expression,v36-148259,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.23,Juno: turns away with object shielded; consent=no; respect=0.23,True,True,411
+720,Ari,public_ego_expression,v36-154451,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.69,Ari: turns away with object shielded; consent=no; respect=0.69,True,True,412
+722,Nia,public_ego_expression,v36-154082,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.83,Nia: turns away with object shielded; consent=no; respect=0.83,True,True,413
+724,Ivo,public_ego_expression,v36-921330,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,414
+727,Fay,public_ego_expression,v36-919461,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.20,Fay: softens and faces avatar; consent=yes; respect=0.20,True,True,415
+728,Nia,public_ego_expression,v36-100168,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.84,Nia: chin lifted toward the spool; consent=yes_later; respect=0.84,True,True,416
+729,Milo,public_ego_expression,v36-365881,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.11,Milo: lantern held between body and road; consent=no; respect=0.11,True,True,417
+731,Juno,public_ego_expression,v36-302056,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.27,Juno: elbows tucked around the wire; consent=yes_later; respect=0.27,True,True,418
+732,Ari,public_ego_expression,v36-336156,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.72,Ari: shoulders angled toward the ridge; consent=no; respect=0.72,True,True,419
+733,Fay,public_ego_expression,v36-217519,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.13,Fay: turns away with object shielded; consent=no; respect=0.13,True,True,420
+734,Nia,public_ego_expression,v36-099669,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.85,Nia: chin lifted toward the spool; consent=yes_later; respect=0.85,True,True,421
+736,Ivo,public_ego_expression,v36-017385,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,422
+739,Fay,public_ego_expression,v36-015516,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.19,Fay: softens and faces avatar; consent=yes; respect=0.19,True,True,423
+741,Milo,public_ego_expression,v36-242292,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.05,Milo: turns away with object shielded; consent=no; respect=0.05,True,True,424
+743,Juno,public_ego_expression,v36-270876,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.30,Juno: elbows tucked around the wire; consent=no; respect=0.30,True,True,425
+744,Ari,public_ego_expression,v36-368775,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.76,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.76,True,True,426
+746,Nia,public_ego_expression,v36-990935,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.91,Nia: softens and faces avatar; consent=yes; respect=0.91,True,True,427
+748,Ivo,public_ego_expression,v36-134219,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,428
+750,Ari,public_ego_expression,v36-918103,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.82,Ari: softens and faces avatar; consent=yes; respect=0.82,True,True,429
+751,Fay,public_ego_expression,v36-044867,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.20,Fay: hands open near the ledger; consent=yes_later; respect=0.20,True,True,430
+753,Milo,public_ego_expression,v36-180809,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,431
+755,Juno,public_ego_expression,v36-303050,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.34,Juno: elbows tucked around the wire; consent=yes_later; respect=0.34,True,True,432
+756,Ari,public_ego_expression,v36-217656,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.75,Ari: turns away with object shielded; consent=no; respect=0.75,True,True,433
+758,Nia,public_ego_expression,v36-916963,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,434
+760,Ivo,public_ego_expression,v36-187510,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,435
+763,Fay,public_ego_expression,v36-098895,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.21,Fay: hands open near the ledger; consent=yes_later; respect=0.21,True,True,436
+765,Milo,public_ego_expression,v36-146545,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,437
+767,Juno,public_ego_expression,v36-245493,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.27,Juno: turns away with object shielded; consent=no; respect=0.27,True,True,438
+768,Ari,public_ego_expression,v36-156439,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.69,Ari: turns away with object shielded; consent=no; respect=0.69,True,True,439
+770,Nia,public_ego_expression,v36-917732,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,440
+772,Ivo,public_ego_expression,v36-250986,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,441
+773,Juno,public_ego_expression,v36-183014,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.21,Juno: turns away with object shielded; consent=no; respect=0.21,True,True,442
+775,Fay,public_ego_expression,v36-161569,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.25,Fay: hands open near the ledger; consent=no; respect=0.25,True,True,443
+777,Milo,public_ego_expression,v36-399356,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,444
+779,Juno,public_ego_expression,v36-184010,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.14,Juno: turns away with object shielded; consent=no; respect=0.14,True,True,445
+780,Ari,public_ego_expression,v36-216870,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.70,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.70,True,True,446
+782,Nia,public_ego_expression,v36-013787,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,447
+784,Ivo,public_ego_expression,v36-220877,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,448
+787,Fay,public_ego_expression,v36-219008,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.18,Fay: turns away with object shielded; consent=no; respect=0.18,True,True,449
+789,Milo,public_ego_expression,v36-366871,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.11,Milo: lantern held between body and road; consent=no; respect=0.11,True,True,450
+790,Ivo,public_ego_expression,v36-220378,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.83,Ivo: turns away with object shielded; consent=no; respect=0.83,True,True,451
+791,Juno,public_ego_expression,v36-271369,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.18,Juno: elbows tucked around the wire; consent=no; respect=0.18,True,True,452
+792,Ari,public_ego_expression,v36-991797,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.76,Ari: softens and faces avatar; consent=yes; respect=0.76,True,True,453
+794,Nia,public_ego_expression,v36-100659,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,454
+795,Milo,public_ego_expression,v36-366372,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.15,Milo: lantern held between body and road; consent=no; respect=0.15,True,True,455
+796,Ivo,public_ego_expression,v36-159660,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.77,Ivo: turns away with object shielded; consent=no; respect=0.77,True,True,456
+799,Fay,public_ego_expression,v36-157791,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.12,Fay: turns away with object shielded; consent=no; respect=0.12,True,True,457
+801,Milo,public_ego_expression,v36-397369,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.18,Milo: lantern held between body and road; consent=yes_later; respect=0.18,True,True,458
+803,Juno,public_ego_expression,v36-302057,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.21,Juno: elbows tucked around the wire; consent=yes_later; respect=0.21,True,True,459
+804,Ari,public_ego_expression,v36-916339,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.82,Ari: softens and faces avatar; consent=yes; respect=0.82,True,True,460
+806,Nia,public_ego_expression,v36-153711,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,461
+808,Ivo,public_ego_expression,v36-124077,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.70,Ivo: turns away with object shielded; consent=no; respect=0.70,True,True,462
+811,Fay,public_ego_expression,v36-120713,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.05,Fay: turns away with object shielded; consent=no; respect=0.05,True,True,463
+812,Nia,public_ego_expression,v36-216445,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.96,Nia: chin lifted toward the spool; consent=no; respect=0.96,True,True,464
+813,Milo,public_ego_expression,v36-242293,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.12,Milo: turns away with object shielded; consent=no; respect=0.12,True,True,465
+815,Juno,public_ego_expression,v36-244500,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.15,Juno: turns away with object shielded; consent=no; respect=0.15,True,True,466
+816,Ari,public_ego_expression,v36-918603,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.88,Ari: softens and faces avatar; consent=yes; respect=0.88,True,True,467
+817,Fay,public_ego_expression,v36-045367,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.07,Fay: hands open near the ledger; consent=yes_later; respect=0.07,True,True,468
+818,Nia,public_ego_expression,v36-217441,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.96,Nia: chin lifted toward the spool; consent=no; respect=0.96,True,True,469
+820,Ivo,public_ego_expression,v36-282250,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.74,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.74,True,True,470
+823,Fay,public_ego_expression,v36-192119,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.10,Fay: hands open near the ledger; consent=yes_later; respect=0.10,True,True,471
+825,Milo,public_ego_expression,v36-180810,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.05,Milo: turns away with object shielded; consent=no; respect=0.05,True,True,472
+827,Juno,public_ego_expression,v36-183017,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.08,Juno: turns away with object shielded; consent=no; respect=0.08,True,True,473
+828,Fay,public_ego_expression,v36-045698,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.11,Fay: hands open near the ledger; consent=yes_later; respect=0.11,True,True,474
+830,Milo,public_ego_expression,v36-180145,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,475
+832,Juno,public_ego_expression,v36-302386,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.12,Juno: elbows tucked around the wire; consent=yes_later; respect=0.12,True,True,476
+833,Ari,public_ego_expression,v36-155278,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.81,Ari: turns away with object shielded; consent=no; respect=0.81,True,True,477
+835,Nia,public_ego_expression,v36-248780,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,478
+837,Ivo,public_ego_expression,v36-283577,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.77,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.77,True,True,479
+839,Ari,public_ego_expression,v36-156274,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.75,Ari: turns away with object shielded; consent=no; respect=0.75,True,True,480
+840,Fay,public_ego_expression,v36-098231,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.13,Fay: hands open near the ledger; consent=yes_later; respect=0.13,True,True,481
+842,Milo,public_ego_expression,v36-145881,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,482
+844,Juno,public_ego_expression,v36-244829,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.05,Juno: turns away with object shielded; consent=no; respect=0.05,True,True,483
+847,Nia,public_ego_expression,v36-217120,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,484
+849,Ivo,public_ego_expression,v36-221211,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.71,Ivo: turns away with object shielded; consent=no; respect=0.71,True,True,485
+851,Ari,public_ego_expression,v36-336484,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.78,Ari: shoulders angled toward the ridge; consent=no; respect=0.78,True,True,486
+852,Fay,public_ego_expression,v36-160905,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.16,Fay: hands open near the ledger; consent=no; respect=0.16,True,True,487
+854,Milo,public_ego_expression,v36-398692,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,488
+856,Juno,public_ego_expression,v36-183346,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,489
+859,Nia,public_ego_expression,v36-155903,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.83,Nia: turns away with object shielded; consent=no; respect=0.83,True,True,490
+861,Ivo,public_ego_expression,v36-158499,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.64,Ivo: turns away with object shielded; consent=no; respect=0.64,True,True,491
+862,Juno,public_ego_expression,v36-017955,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.10,Juno: softens and faces avatar; consent=yes; respect=0.10,True,True,492
+863,Ari,public_ego_expression,v36-369103,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.82,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.82,True,True,493
+864,Fay,public_ego_expression,v36-218344,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.10,Fay: turns away with object shielded; consent=no; respect=0.10,True,True,494
+866,Milo,public_ego_expression,v36-366207,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.11,Milo: lantern held between body and road; consent=no; respect=0.11,True,True,495
+867,Ivo,public_ego_expression,v36-221209,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.58,Ivo: turns away with object shielded; consent=no; respect=0.58,True,True,496
+868,Juno,public_ego_expression,v36-272200,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.14,Juno: elbows tucked around the wire; consent=no; respect=0.14,True,True,497
+871,Nia,public_ego_expression,v36-217269,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.87,Nia: chin lifted toward the spool; consent=no; respect=0.87,True,True,498
+873,Ivo,public_ego_expression,v36-134048,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.59,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.59,True,True,499
+875,Ari,public_ego_expression,v36-217984,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.75,Ari: turns away with object shielded; consent=no; respect=0.75,True,True,500
+876,Fay,public_ego_expression,v36-157127,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,501
+878,Milo,public_ego_expression,v36-399686,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.15,Milo: lantern held between body and road; consent=yes_later; respect=0.15,True,True,502
+880,Juno,public_ego_expression,v36-302879,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.17,Juno: elbows tucked around the wire; consent=yes_later; respect=0.17,True,True,503
+883,Nia,public_ego_expression,v36-249273,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.90,Nia: chin lifted toward the spool; consent=yes_later; respect=0.90,True,True,504
+884,Milo,public_ego_expression,v36-181634,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.08,Milo: turns away with object shielded; consent=no; respect=0.08,True,True,505
+885,Ivo,public_ego_expression,v36-995352,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.65,Ivo: softens and faces avatar; consent=yes; respect=0.65,True,True,506
+887,Ari,public_ego_expression,v36-156767,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.69,Ari: turns away with object shielded; consent=no; respect=0.69,True,True,507
+888,Fay,public_ego_expression,v36-123030,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,508
+889,Nia,public_ego_expression,v36-218762,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.94,Nia: chin lifted toward the spool; consent=no; respect=0.94,True,True,509
+890,Milo,public_ego_expression,v36-243115,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,510
+892,Juno,public_ego_expression,v36-245322,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.11,Juno: turns away with object shielded; consent=no; respect=0.11,True,True,511
+895,Nia,public_ego_expression,v36-217613,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.87,Nia: turns away with object shielded; consent=no; respect=0.87,True,True,512
+897,Ivo,public_ego_expression,v36-921380,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.71,Ivo: softens and faces avatar; consent=yes; respect=0.71,True,True,513
+899,Ari,public_ego_expression,v36-218693,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.70,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.70,True,True,514
+900,Fay,public_ego_expression,v36-191455,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.08,Fay: hands open near the ledger; consent=yes_later; respect=0.08,True,True,515
+902,Milo,public_ego_expression,v36-180146,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,516
+904,Juno,public_ego_expression,v36-182353,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,517
+906,Fay,public_ego_expression,v36-192451,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.11,Fay: hands open near the ledger; consent=yes_later; respect=0.11,True,True,518
+907,Nia,public_ego_expression,v36-154910,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.81,Nia: turns away with object shielded; consent=no; respect=0.81,True,True,519
+909,Ivo,public_ego_expression,v36-922158,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.77,Ivo: softens and faces avatar; consent=yes; respect=0.77,True,True,520
+911,Ari,public_ego_expression,v36-990639,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.76,Ari: softens and faces avatar; consent=yes; respect=0.76,True,True,521
+912,Fay,public_ego_expression,v36-160409,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.15,Fay: hands open near the ledger; consent=no; respect=0.15,True,True,522
+914,Milo,public_ego_expression,v36-365214,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.08,Milo: lantern held between body and road; consent=no; respect=0.08,True,True,523
+916,Juno,public_ego_expression,v36-152735,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.05,Juno: elbows tucked around the wire; consent=yes_later; respect=0.05,True,True,524
+917,Ari,public_ego_expression,v36-336984,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.80,Ari: shoulders angled toward the ridge; consent=no; respect=0.80,True,True,525
+919,Nia,public_ego_expression,v36-100497,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.82,Nia: chin lifted toward the spool; consent=yes_later; respect=0.82,True,True,526
+921,Ivo,public_ego_expression,v36-016718,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.83,Ivo: softens and faces avatar; consent=yes; respect=0.83,True,True,527
+923,Ari,public_ego_expression,v36-916667,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.86,Ari: softens and faces avatar; consent=yes; respect=0.86,True,True,528
+924,Fay,public_ego_expression,v36-192449,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.18,Fay: hands open near the ledger; consent=yes_later; respect=0.18,True,True,529
+926,Milo,public_ego_expression,v36-398693,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.11,Milo: lantern held between body and road; consent=yes_later; respect=0.11,True,True,530
+928,Juno,public_ego_expression,v36-018455,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.11,Juno: softens and faces avatar; consent=yes; respect=0.11,True,True,531
+931,Nia,public_ego_expression,v36-990268,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.88,Nia: softens and faces avatar; consent=yes; respect=0.88,True,True,532
+933,Ivo,public_ego_expression,v36-133552,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.84,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.84,True,True,533
+935,Ari,public_ego_expression,v36-918931,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.92,Ari: softens and faces avatar; consent=yes; respect=0.92,True,True,534
+936,Fay,public_ego_expression,v36-218345,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.12,Fay: turns away with object shielded; consent=no; respect=0.12,True,True,535
+938,Milo,public_ego_expression,v36-243617,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.05,Milo: turns away with object shielded; consent=no; respect=0.05,True,True,536
+940,Juno,public_ego_expression,v36-942639,#ego-Juno,Juno: softens and faces avatar; consent=yes; respect=0.17,Juno: softens and faces avatar; consent=yes; respect=0.17,True,True,537
+943,Nia,public_ego_expression,v36-916296,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.94,Nia: softens and faces avatar; consent=yes; respect=0.94,True,True,538
+945,Ivo,public_ego_expression,v36-188338,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.85,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.85,True,True,539
+946,Juno,public_ego_expression,v36-245325,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.11,Juno: turns away with object shielded; consent=no; respect=0.11,True,True,540
+947,Ari,public_ego_expression,v36-014986,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,541
+948,Nia,public_ego_expression,v36-218100,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.96,Nia: chin lifted toward the spool; consent=no; respect=0.96,True,True,542
+950,Ivo,public_ego_expression,v36-133384,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.86,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.86,True,True,543
+952,Ari,public_ego_expression,v36-217320,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,544
+955,Milo,public_ego_expression,v36-039543,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.11,Milo: softens and faces avatar; consent=yes; respect=0.11,True,True,545
+956,Ivo,public_ego_expression,v36-188669,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.88,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.88,True,True,546
+957,Juno,public_ego_expression,v36-245656,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,547
+959,Fay,public_ego_expression,v36-100054,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.13,Fay: hands open near the ledger; consent=yes_later; respect=0.13,True,True,548
+960,Nia,public_ego_expression,v36-248609,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,549
+961,Milo,public_ego_expression,v36-180970,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,550
+962,Ivo,public_ego_expression,v36-994688,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.94,Ivo: softens and faces avatar; consent=yes; respect=0.94,True,True,551
+964,Ari,public_ego_expression,v36-156103,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.83,Ari: turns away with object shielded; consent=no; respect=0.83,True,True,552
+967,Milo,public_ego_expression,v36-246940,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.05,Milo: lantern held between body and road; consent=yes_later; respect=0.05,True,True,553
+969,Juno,public_ego_expression,v36-184173,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,554
+971,Fay,public_ego_expression,v36-161233,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.16,Fay: hands open near the ledger; consent=no; respect=0.16,True,True,555
+972,Nia,public_ego_expression,v36-216949,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,556
+974,Ivo,public_ego_expression,v36-920716,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,557
+976,Ari,public_ego_expression,v36-218029,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.84,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.84,True,True,558
+978,Nia,public_ego_expression,v36-014946,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,559
+979,Milo,public_ego_expression,v36-302771,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.06,Milo: lantern held between body and road; consent=yes_later; respect=0.06,True,True,560
+981,Juno,public_ego_expression,v36-148414,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,561
+983,Fay,public_ego_expression,v36-218672,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.10,Fay: turns away with object shielded; consent=no; respect=0.10,True,True,562
+984,Nia,public_ego_expression,v36-155732,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.89,Nia: turns away with object shielded; consent=no; respect=0.89,True,True,563
+986,Ivo,public_ego_expression,v36-922980,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,564
+988,Ari,public_ego_expression,v36-992956,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.90,Ari: softens and faces avatar; consent=yes; respect=0.90,True,True,565
+989,Fay,public_ego_expression,v36-921111,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.16,Fay: softens and faces avatar; consent=yes; respect=0.16,True,True,566
+991,Milo,public_ego_expression,v36-366036,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.10,Milo: lantern held between body and road; consent=no; respect=0.10,True,True,567
+993,Juno,public_ego_expression,v36-303706,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,True,True,568
+995,Fay,public_ego_expression,v36-157455,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.09,Fay: turns away with object shielded; consent=no; respect=0.09,True,True,569
+996,Nia,public_ego_expression,v36-101319,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.90,Nia: chin lifted toward the spool; consent=yes_later; respect=0.90,True,True,570
+998,Ivo,public_ego_expression,v36-019035,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,571
+1000,Ari,public_ego_expression,v36-927067,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,572
+1003,Milo,public_ego_expression,v36-255006,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,573
+1005,Juno,public_ego_expression,v36-283727,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.11,Juno: elbows tucked around the wire; consent=no; respect=0.11,True,True,574
+1006,Ari,public_ego_expression,v36-229759,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,575
+1007,Fay,public_ego_expression,v36-133880,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,576
+1008,Nia,public_ego_expression,v36-002516,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,577
+1010,Ivo,public_ego_expression,v36-144916,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,578
+1012,Ari,public_ego_expression,v36-929344,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,579
+1015,Milo,public_ego_expression,v36-193260,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,580
+1017,Juno,public_ego_expression,v36-316023,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.15,Juno: elbows tucked around the wire; consent=yes_later; respect=0.15,True,True,581
+1019,Fay,public_ego_expression,v36-205594,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.08,Fay: hands open near the ledger; consent=yes_later; respect=0.08,True,True,582
+1020,Nia,public_ego_expression,v36-926694,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,583
+1022,Ivo,public_ego_expression,v36-199956,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,584
+1023,Juno,public_ego_expression,v36-257224,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.08,Juno: turns away with object shielded; consent=no; respect=0.08,True,True,585
+1024,Ari,public_ego_expression,v36-025851,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,586
+1027,Milo,public_ego_expression,v36-158832,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,587
+1029,Juno,public_ego_expression,v36-258226,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,588
+1031,Fay,public_ego_expression,v36-172928,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.11,Fay: hands open near the ledger; consent=no; respect=0.11,True,True,589
+1032,Nia,public_ego_expression,v36-928971,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,590
+1034,Ivo,public_ego_expression,v36-263737,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,591
+1036,Ari,public_ego_expression,v36-229947,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,592
+1039,Milo,public_ego_expression,v36-412727,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,593
+1040,Ivo,public_ego_expression,v36-295611,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,594
+1041,Juno,public_ego_expression,v36-194976,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,595
+1043,Fay,public_ego_expression,v36-205090,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.15,Fay: hands open near the ledger; consent=yes_later; respect=0.15,True,True,596
+1044,Nia,public_ego_expression,v36-025478,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,597
+1045,Milo,public_ego_expression,v36-314559,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.09,Milo: lantern held between body and road; consent=yes_later; respect=0.09,True,True,598
+1046,Ivo,public_ego_expression,v36-233499,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,599
+1048,Ari,public_ego_expression,v36-285779,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,600
+1051,Milo,public_ego_expression,v36-378622,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.12,Milo: lantern held between body and road; consent=no; respect=0.12,True,True,601
+1053,Juno,public_ego_expression,v36-284223,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.08,Juno: elbows tucked around the wire; consent=no; respect=0.08,True,True,602
+1055,Fay,public_ego_expression,v36-231117,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.08,Fay: turns away with object shielded; consent=no; respect=0.08,True,True,603
+1056,Nia,public_ego_expression,v36-112715,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,604
+1058,Ivo,public_ego_expression,v36-172019,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.83,Ivo: turns away with object shielded; consent=no; respect=0.83,True,True,605
+1060,Ari,public_ego_expression,v36-349775,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,True,True,606
+1062,Nia,public_ego_expression,v36-261666,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,607
+1063,Milo,public_ego_expression,v36-412223,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.16,Milo: lantern held between body and road; consent=yes_later; respect=0.16,True,True,608
+1065,Juno,public_ego_expression,v36-316519,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.11,Juno: elbows tucked around the wire; consent=yes_later; respect=0.11,True,True,609
+1067,Fay,public_ego_expression,v36-169637,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,610
+1068,Milo,public_ego_expression,v36-379957,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.19,Milo: lantern held between body and road; consent=no; respect=0.19,True,True,611
+1070,Juno,public_ego_expression,v36-315850,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.15,Juno: elbows tucked around the wire; consent=yes_later; respect=0.15,True,True,612
+1072,Fay,public_ego_expression,v36-168968,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,613
+1075,Ivo,public_ego_expression,v36-171850,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.77,Ivo: turns away with object shielded; consent=no; respect=0.77,True,True,614
+1077,Ari,public_ego_expression,v36-383351,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,615
+1078,Fay,public_ego_expression,v36-169970,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,616
+1079,Nia,public_ego_expression,v36-263001,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,617
+1080,Milo,public_ego_expression,v36-255833,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.13,Milo: turns away with object shielded; consent=no; respect=0.13,True,True,618
+1082,Juno,public_ego_expression,v36-284554,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.18,Juno: elbows tucked around the wire; consent=no; respect=0.18,True,True,619
+1083,Ari,public_ego_expression,v36-230586,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,620
+1084,Fay,public_ego_expression,v36-134707,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,621
+1087,Ivo,public_ego_expression,v36-265068,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.80,Ivo: one palm over the satchel cord; consent=no; respect=0.80,True,True,622
+1089,Ari,public_ego_expression,v36-231588,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.83,Ari: turns away with object shielded; consent=no; respect=0.83,True,True,623
+1091,Nia,public_ego_expression,v36-229713,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,624
+1092,Milo,public_ego_expression,v36-194087,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.06,Milo: turns away with object shielded; consent=no; respect=0.06,True,True,625
+1094,Juno,public_ego_expression,v36-316850,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.22,Juno: elbows tucked around the wire; consent=yes_later; respect=0.22,True,True,626
+1096,Fay,public_ego_expression,v36-206421,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.08,Fay: hands open near the ledger; consent=yes_later; respect=0.08,True,True,627
+1099,Ivo,public_ego_expression,v36-297944,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.84,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.84,True,True,628
+1101,Ari,public_ego_expression,v36-167109,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.77,Ari: turns away with object shielded; consent=no; respect=0.77,True,True,629
+1103,Nia,public_ego_expression,v36-166738,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.83,Nia: turns away with object shielded; consent=no; respect=0.83,True,True,630
+1104,Milo,public_ego_expression,v36-158164,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,631
+1106,Juno,public_ego_expression,v36-257558,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.15,Juno: turns away with object shielded; consent=no; respect=0.15,True,True,632
+1108,Fay,public_ego_expression,v36-173764,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.11,Fay: hands open near the ledger; consent=no; respect=0.11,True,True,633
+1111,Ivo,public_ego_expression,v36-232331,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.77,Ivo: turns away with object shielded; consent=no; respect=0.77,True,True,634
+1112,Juno,public_ego_expression,v36-164532,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.16,Juno: elbows tucked around the wire; consent=yes_later; respect=0.16,True,True,635
+1113,Ari,public_ego_expression,v36-349611,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.80,Ari: shoulders angled toward the ridge; consent=no; respect=0.80,True,True,636
+1115,Nia,public_ego_expression,v36-112049,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.84,Nia: chin lifted toward the spool; consent=yes_later; respect=0.84,True,True,637
+1116,Milo,public_ego_expression,v36-412059,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,638
+1117,Ivo,public_ego_expression,v36-296447,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.81,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.81,True,True,639
+1118,Juno,public_ego_expression,v36-195812,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.10,Juno: turns away with object shielded; consent=no; respect=0.10,True,True,640
+1120,Fay,public_ego_expression,v36-204422,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.15,Fay: hands open near the ledger; consent=yes_later; respect=0.15,True,True,641
+1123,Ivo,public_ego_expression,v36-170851,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.74,Ivo: turns away with object shielded; consent=no; respect=0.74,True,True,642
+1125,Ari,public_ego_expression,v36-382352,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.84,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.84,True,True,643
+1127,Nia,public_ego_expression,v36-002846,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.90,Nia: softens and faces avatar; consent=yes; respect=0.90,True,True,644
+1128,Milo,public_ego_expression,v36-379458,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.11,Milo: lantern held between body and road; consent=no; respect=0.11,True,True,645
+1130,Juno,public_ego_expression,v36-283555,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.13,Juno: elbows tucked around the wire; consent=no; respect=0.13,True,True,646
+1132,Fay,public_ego_expression,v36-230449,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.08,Fay: turns away with object shielded; consent=no; respect=0.08,True,True,647
+1134,Milo,public_ego_expression,v36-255836,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.05,Milo: turns away with object shielded; consent=no; respect=0.05,True,True,648
+1135,Ivo,public_ego_expression,v36-146248,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.75,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.75,True,True,649
+1137,Ari,public_ego_expression,v36-230589,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.77,Ari: turns away with object shielded; consent=no; respect=0.77,True,True,650
+1139,Nia,public_ego_expression,v36-928528,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,651
+1140,Milo,public_ego_expression,v36-411555,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,652
+1142,Juno,public_ego_expression,v36-315851,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.17,Juno: elbows tucked around the wire; consent=yes_later; respect=0.17,True,True,653
+1144,Fay,public_ego_expression,v36-168969,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,654
+1145,Nia,public_ego_expression,v36-262000,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,655
+1147,Ivo,public_ego_expression,v36-006959,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.81,Ivo: softens and faces avatar; consent=yes; respect=0.81,True,True,656
+1149,Ari,public_ego_expression,v36-169109,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.71,Ari: turns away with object shielded; consent=no; respect=0.71,True,True,657
+1151,Nia,public_ego_expression,v36-929301,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,658
+1152,Milo,public_ego_expression,v36-255834,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,659
+1154,Juno,public_ego_expression,v36-258054,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.10,Juno: turns away with object shielded; consent=no; respect=0.10,True,True,660
+1156,Fay,public_ego_expression,v36-174260,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.08,Fay: hands open near the ledger; consent=no; respect=0.08,True,True,661
+1159,Ivo,public_ego_expression,v36-932641,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.87,Ivo: softens and faces avatar; consent=yes; respect=0.87,True,True,662
+1161,Ari,public_ego_expression,v36-229775,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.72,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.72,True,True,663
+1162,Fay,public_ego_expression,v36-929257,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.14,Fay: softens and faces avatar; consent=yes; respect=0.14,True,True,664
+1163,Nia,public_ego_expression,v36-025808,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,665
+1164,Milo,public_ego_expression,v36-194088,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,666
+1166,Juno,public_ego_expression,v36-196308,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,667
+1167,Ari,public_ego_expression,v36-169107,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.65,Ari: turns away with object shielded; consent=no; respect=0.65,True,True,668
+1168,Fay,public_ego_expression,v36-206422,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.17,Fay: hands open near the ledger; consent=yes_later; respect=0.17,True,True,669
+1171,Ivo,public_ego_expression,v36-933414,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.93,Ivo: softens and faces avatar; consent=yes; respect=0.93,True,True,670
+1173,Ari,public_ego_expression,v36-003713,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.71,Ari: softens and faces avatar; consent=yes; respect=0.71,True,True,671
+1175,Nia,public_ego_expression,v36-113045,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,672
+1176,Milo,public_ego_expression,v36-379954,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.08,Milo: lantern held between body and road; consent=no; respect=0.08,True,True,673
+1178,Juno,public_ego_expression,v36-166530,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.05,Juno: elbows tucked around the wire; consent=yes_later; respect=0.05,True,True,674
+1180,Fay,public_ego_expression,v36-230945,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.11,Fay: turns away with object shielded; consent=no; respect=0.11,True,True,675
+1183,Ivo,public_ego_expression,v36-029921,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,676
+1185,Ari,public_ego_expression,v36-929395,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.77,Ari: softens and faces avatar; consent=yes; respect=0.77,True,True,677
+1187,Nia,public_ego_expression,v36-167837,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,678
+1188,Ivo,public_ego_expression,v36-234662,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,679
+1189,Juno,public_ego_expression,v36-166863,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.06,Juno: elbows tucked around the wire; consent=yes_later; respect=0.06,True,True,680
+1190,Ari,public_ego_expression,v36-350438,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.81,Ari: shoulders angled toward the ridge; consent=no; respect=0.81,True,True,681
+1192,Nia,public_ego_expression,v36-112876,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,682
+1195,Juno,public_ego_expression,v36-221136,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,True,True,683
+1197,Fay,public_ego_expression,v36-028374,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.17,Fay: softens and faces avatar; consent=yes; respect=0.17,True,True,684
+1199,Milo,public_ego_expression,v36-257667,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,685
+1200,Ivo,public_ego_expression,v36-170183,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.83,Ivo: turns away with object shielded; consent=no; respect=0.83,True,True,686
+1202,Ari,public_ego_expression,v36-381684,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.84,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.84,True,True,687
+1204,Nia,public_ego_expression,v36-002178,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,688
+1206,Ivo,public_ego_expression,v36-146082,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.84,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.84,True,True,689
+1207,Juno,public_ego_expression,v36-284391,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.11,Juno: elbows tucked around the wire; consent=no; respect=0.11,True,True,690
+1209,Fay,public_ego_expression,v36-057835,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.18,Fay: hands open near the ledger; consent=yes_later; respect=0.18,True,True,691
+1211,Milo,public_ego_expression,v36-192922,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,692
+1212,Ivo,public_ego_expression,v36-145580,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.85,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.85,True,True,693
+1214,Ari,public_ego_expression,v36-229921,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.78,Ari: turns away with object shielded; consent=no; respect=0.78,True,True,694
+1216,Nia,public_ego_expression,v36-927860,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,695
+1217,Milo,public_ego_expression,v36-051357,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.10,Milo: softens and faces avatar; consent=yes; respect=0.10,True,True,696
+1219,Juno,public_ego_expression,v36-258390,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.05,Juno: turns away with object shielded; consent=no; respect=0.05,True,True,697
+1221,Fay,public_ego_expression,v36-110613,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.19,Fay: hands open near the ledger; consent=yes_later; respect=0.19,True,True,698
+1223,Milo,public_ego_expression,v36-158494,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,699
+1224,Ivo,public_ego_expression,v36-006291,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.91,Ivo: softens and faces avatar; consent=yes; respect=0.91,True,True,700
+1226,Ari,public_ego_expression,v36-168441,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.71,Ari: turns away with object shielded; consent=no; respect=0.71,True,True,701
+1228,Nia,public_ego_expression,v36-930137,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,702
+1231,Juno,public_ego_expression,v36-195140,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,703
+1233,Fay,public_ego_expression,v36-173592,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.22,Fay: hands open near the ledger; consent=no; respect=0.22,True,True,704
+1234,Nia,public_ego_expression,v36-167568,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,705
+1235,Milo,public_ego_expression,v36-412389,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.08,Milo: lantern held between body and road; consent=yes_later; respect=0.08,True,True,706
+1236,Ivo,public_ego_expression,v36-931973,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,707
+1238,Ari,public_ego_expression,v36-230611,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.72,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.72,True,True,708
+1239,Fay,public_ego_expression,v36-930093,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.28,Fay: softens and faces avatar; consent=yes; respect=0.28,True,True,709
+1240,Nia,public_ego_expression,v36-025140,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.96,Nia: softens and faces avatar; consent=yes; respect=0.96,True,True,710
+1243,Juno,public_ego_expression,v36-160712,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,711
+1245,Fay,public_ego_expression,v36-231281,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.22,Fay: turns away with object shielded; consent=no; respect=0.22,True,True,712
+1247,Milo,public_ego_expression,v36-379788,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.11,Milo: lantern held between body and road; consent=no; respect=0.11,True,True,713
+1248,Ivo,public_ego_expression,v36-934250,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,714
+1250,Ari,public_ego_expression,v36-003045,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.78,Ari: softens and faces avatar; consent=yes; respect=0.78,True,True,715
+1252,Nia,public_ego_expression,v36-112377,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,716
+1255,Juno,public_ego_expression,v36-316683,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,True,True,717
+1256,Ari,public_ego_expression,v36-350941,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.82,Ari: shoulders angled toward the ridge; consent=no; respect=0.82,True,True,718
+1257,Fay,public_ego_expression,v36-169801,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.15,Fay: turns away with object shielded; consent=no; respect=0.15,True,True,719
+1259,Milo,public_ego_expression,v36-413389,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.15,Milo: lantern held between body and road; consent=yes_later; respect=0.15,True,True,720
+1260,Ivo,public_ego_expression,v36-029253,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,721
+1262,Ari,public_ego_expression,v36-928727,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.88,Ari: softens and faces avatar; consent=yes; respect=0.88,True,True,722
+1264,Nia,public_ego_expression,v36-167169,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,Nia: chin lifted toward the spool; consent=yes_later; respect=0.96,True,True,723
+1267,Juno,public_ego_expression,v36-285387,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.11,Juno: elbows tucked around the wire; consent=no; respect=0.11,True,True,724
+1269,Fay,public_ego_expression,v36-135540,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.09,Fay: turns away with object shielded; consent=no; respect=0.09,True,True,725
+1271,Milo,public_ego_expression,v36-256164,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.08,Milo: turns away with object shielded; consent=no; respect=0.08,True,True,726
+1272,Ivo,public_ego_expression,v36-146576,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,727
+1273,Juno,public_ego_expression,v36-284885,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.15,Juno: elbows tucked around the wire; consent=no; respect=0.15,True,True,728
+1274,Ari,public_ego_expression,v36-931004,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.94,Ari: softens and faces avatar; consent=yes; respect=0.94,True,True,729
+1276,Nia,public_ego_expression,v36-231204,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.96,Nia: chin lifted toward the spool; consent=no; respect=0.96,True,True,730
+1279,Juno,public_ego_expression,v36-317683,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.18,Juno: elbows tucked around the wire; consent=yes_later; respect=0.18,True,True,731
+1281,Fay,public_ego_expression,v36-205750,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.12,Fay: hands open near the ledger; consent=yes_later; respect=0.12,True,True,732
+1283,Milo,public_ego_expression,v36-194418,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.04,Milo: turns away with object shielded; consent=no; respect=0.04,True,True,733
+1284,Ivo,public_ego_expression,v36-201616,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,734
+1286,Ari,public_ego_expression,v36-027511,#ego-Ari,Ari: softens and faces avatar; consent=yes; respect=0.96,Ari: softens and faces avatar; consent=yes; respect=0.96,True,True,735
+1288,Nia,public_ego_expression,v36-231046,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.90,Nia: turns away with object shielded; consent=no; respect=0.90,True,True,736
+1290,Ivo,public_ego_expression,v36-264395,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,737
+1291,Juno,public_ego_expression,v36-258382,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.12,Juno: turns away with object shielded; consent=no; respect=0.12,True,True,738
+1293,Fay,public_ego_expression,v36-174588,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.16,Fay: hands open near the ledger; consent=no; respect=0.16,True,True,739
+1295,Milo,public_ego_expression,v36-380284,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.08,Milo: lantern held between body and road; consent=no; respect=0.08,True,True,740
+1296,Ivo,public_ego_expression,v36-265397,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,741
+1298,Ari,public_ego_expression,v36-231607,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,742
+1300,Nia,public_ego_expression,v36-166567,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.83,Nia: turns away with object shielded; consent=no; respect=0.83,True,True,743
+1301,Milo,public_ego_expression,v36-411388,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.11,Milo: lantern held between body and road; consent=yes_later; respect=0.11,True,True,744
+1303,Juno,public_ego_expression,v36-195141,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.05,Juno: turns away with object shielded; consent=no; respect=0.05,True,True,745
+1305,Fay,public_ego_expression,v36-205255,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.19,Fay: hands open near the ledger; consent=yes_later; respect=0.19,True,True,746
+1307,Milo,public_ego_expression,v36-412390,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.15,Milo: lantern held between body and road; consent=yes_later; respect=0.15,True,True,747
+1308,Juno,public_ego_expression,v36-195976,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,748
+1310,Fay,public_ego_expression,v36-172924,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.23,Fay: hands open near the ledger; consent=no; respect=0.23,True,True,749
+1311,Nia,public_ego_expression,v36-166900,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.77,Nia: turns away with object shielded; consent=no; respect=0.77,True,True,750
+1312,Milo,public_ego_expression,v36-411721,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.18,Milo: lantern held between body and road; consent=yes_later; respect=0.18,True,True,751
+1315,Ari,public_ego_expression,v36-382516,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,752
+1317,Nia,public_ego_expression,v36-167902,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.70,Nia: turns away with object shielded; consent=no; respect=0.70,True,True,753
+1319,Ivo,public_ego_expression,v36-172017,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,754
+1320,Juno,public_ego_expression,v36-160044,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,755
+1322,Fay,public_ego_expression,v36-230613,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.16,Fay: turns away with object shielded; consent=no; respect=0.16,True,True,756
+1324,Milo,public_ego_expression,v36-379120,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.22,Milo: lantern held between body and road; consent=no; respect=0.22,True,True,757
+1327,Ari,public_ego_expression,v36-350775,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,True,True,758
+1328,Fay,public_ego_expression,v36-231615,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.10,Fay: turns away with object shielded; consent=no; respect=0.10,True,True,759
+1329,Nia,public_ego_expression,v36-231040,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.74,Nia: chin lifted toward the spool; consent=no; respect=0.74,True,True,760
+1331,Ivo,public_ego_expression,v36-145910,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.91,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.91,True,True,761
+1332,Juno,public_ego_expression,v36-316015,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,Juno: elbows tucked around the wire; consent=yes_later; respect=0.08,True,True,762
+1333,Ari,public_ego_expression,v36-350273,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,Ari: shoulders angled toward the ridge; consent=no; respect=0.96,True,True,763
+1334,Fay,public_ego_expression,v36-169133,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,764
+1336,Milo,public_ego_expression,v36-412721,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.25,Milo: lantern held between body and road; consent=yes_later; respect=0.25,True,True,765
+1339,Ari,public_ego_expression,v36-383516,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.96,True,True,766
+1341,Nia,public_ego_expression,v36-261662,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.77,Nia: chin lifted toward the spool; consent=yes_later; respect=0.77,True,True,767
+1343,Ivo,public_ego_expression,v36-006621,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,768
+1344,Juno,public_ego_expression,v36-284719,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.11,Juno: elbows tucked around the wire; consent=no; respect=0.11,True,True,769
+1346,Fay,public_ego_expression,v36-134872,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,770
+1348,Milo,public_ego_expression,v36-257000,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.18,Milo: turns away with object shielded; consent=no; respect=0.18,True,True,771
+1351,Ari,public_ego_expression,v36-230249,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.90,Ari: turns away with object shielded; consent=no; respect=0.90,True,True,772
+1353,Nia,public_ego_expression,v36-229878,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.71,Nia: turns away with object shielded; consent=no; respect=0.71,True,True,773
+1355,Ivo,public_ego_expression,v36-932303,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,774
+1356,Juno,public_ego_expression,v36-317015,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.15,Juno: elbows tucked around the wire; consent=yes_later; respect=0.15,True,True,775
+1358,Fay,public_ego_expression,v36-206586,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.08,Fay: hands open near the ledger; consent=yes_later; respect=0.08,True,True,776
+1360,Milo,public_ego_expression,v36-193750,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.12,Milo: turns away with object shielded; consent=no; respect=0.12,True,True,777
+1362,Juno,public_ego_expression,v36-195970,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.08,Juno: turns away with object shielded; consent=no; respect=0.08,True,True,778
+1363,Ari,public_ego_expression,v36-168769,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.83,Ari: turns away with object shielded; consent=no; respect=0.83,True,True,779
+1365,Nia,public_ego_expression,v36-168398,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.64,Nia: turns away with object shielded; consent=no; respect=0.64,True,True,780
+1367,Ivo,public_ego_expression,v36-934580,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,781
+1368,Juno,public_ego_expression,v36-259218,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,782
+1370,Fay,public_ego_expression,v36-173920,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.11,Fay: hands open near the ledger; consent=no; respect=0.11,True,True,783
+1372,Milo,public_ego_expression,v36-379616,#ego-Milo,Milo: lantern held between body and road; consent=no; respect=0.15,Milo: lantern held between body and road; consent=no; respect=0.15,True,True,784
+1373,Ivo,public_ego_expression,v36-233991,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,785
+1375,Ari,public_ego_expression,v36-351271,#ego-Ari,Ari: shoulders angled toward the ridge; consent=no; respect=0.87,Ari: shoulders angled toward the ridge; consent=no; respect=0.87,True,True,786
+1377,Nia,public_ego_expression,v36-113709,#ego-Nia,Nia: chin lifted toward the spool; consent=yes_later; respect=0.65,Nia: chin lifted toward the spool; consent=yes_later; respect=0.65,True,True,787
+1379,Ivo,public_ego_expression,v36-031087,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,788
+1380,Juno,public_ego_expression,v36-195968,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,789
+1382,Fay,public_ego_expression,v36-206082,#ego-Fay,Fay: hands open near the ledger; consent=yes_later; respect=0.15,Fay: hands open near the ledger; consent=yes_later; respect=0.15,True,True,790
+1384,Milo,public_ego_expression,v36-413217,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.19,Milo: lantern held between body and road; consent=yes_later; respect=0.19,True,True,791
+1387,Ari,public_ego_expression,v36-384012,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.90,True,True,792
+1389,Nia,public_ego_expression,v36-004506,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.71,Nia: softens and faces avatar; consent=yes; respect=0.71,True,True,793
+1390,Milo,public_ego_expression,v36-955225,#ego-Milo,Milo: softens and faces avatar; consent=yes; respect=0.25,Milo: softens and faces avatar; consent=yes; respect=0.25,True,True,794
+1391,Ivo,public_ego_expression,v36-146906,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,795
+1392,Juno,public_ego_expression,v36-285215,#ego-Juno,Juno: elbows tucked around the wire; consent=no; respect=0.08,Juno: elbows tucked around the wire; consent=no; respect=0.08,True,True,796
+1394,Fay,public_ego_expression,v36-232109,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.08,Fay: turns away with object shielded; consent=no; respect=0.08,True,True,797
+1395,Nia,public_ego_expression,v36-231534,#ego-Nia,Nia: chin lifted toward the spool; consent=no; respect=0.75,Nia: chin lifted toward the spool; consent=no; respect=0.75,True,True,798
+1396,Milo,public_ego_expression,v36-257496,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.18,Milo: turns away with object shielded; consent=no; respect=0.18,True,True,799
+1399,Ari,public_ego_expression,v36-232249,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.84,Ari: turns away with object shielded; consent=no; respect=0.84,True,True,800
+1401,Nia,public_ego_expression,v36-927189,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.81,Nia: softens and faces avatar; consent=yes; respect=0.81,True,True,801
+1403,Ivo,public_ego_expression,v36-200451,#ego-Ivo,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,Ivo: one palm over the satchel cord; consent=yes_later; respect=0.96,True,True,802
+1404,Juno,public_ego_expression,v36-316016,#ego-Juno,Juno: elbows tucked around the wire; consent=yes_later; respect=0.11,Juno: elbows tucked around the wire; consent=yes_later; respect=0.11,True,True,803
+1406,Fay,public_ego_expression,v36-169134,#ego-Fay,Fay: turns away with object shielded; consent=no; respect=0.04,Fay: turns away with object shielded; consent=no; respect=0.04,True,True,804
+1408,Milo,public_ego_expression,v36-194255,#ego-Milo,Milo: turns away with object shielded; consent=no; respect=0.12,Milo: turns away with object shielded; consent=no; respect=0.12,True,True,805
+1411,Ari,public_ego_expression,v36-167770,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.77,Ari: turns away with object shielded; consent=no; respect=0.77,True,True,806
+1412,Fay,public_ego_expression,v36-003740,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.10,Fay: softens and faces avatar; consent=yes; respect=0.10,True,True,807
+1413,Nia,public_ego_expression,v36-929466,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.87,Nia: softens and faces avatar; consent=yes; respect=0.87,True,True,808
+1415,Ivo,public_ego_expression,v36-264232,#ego-Ivo,Ivo: one palm over the satchel cord; consent=no; respect=0.96,Ivo: one palm over the satchel cord; consent=no; respect=0.96,True,True,809
+1416,Juno,public_ego_expression,v36-258219,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.05,Juno: turns away with object shielded; consent=no; respect=0.05,True,True,810
+1417,Ari,public_ego_expression,v36-230752,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.71,Ari: turns away with object shielded; consent=no; respect=0.71,True,True,811
+1418,Fay,public_ego_expression,v36-174425,#ego-Fay,Fay: hands open near the ledger; consent=no; respect=0.14,Fay: hands open near the ledger; consent=no; respect=0.14,True,True,812
+1420,Milo,public_ego_expression,v36-258467,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.13,Milo: lantern held between body and road; consent=yes_later; respect=0.13,True,True,813
+1423,Ari,public_ego_expression,v36-229940,#ego-Ari,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.72,Ari: shoulders angled toward the ridge; consent=yes_later; respect=0.72,True,True,814
+1425,Nia,public_ego_expression,v36-025973,#ego-Nia,Nia: softens and faces avatar; consent=yes; respect=0.93,Nia: softens and faces avatar; consent=yes; respect=0.93,True,True,815
+1427,Ivo,public_ego_expression,v36-233994,#ego-Ivo,Ivo: turns away with object shielded; consent=no; respect=0.90,Ivo: turns away with object shielded; consent=no; respect=0.90,True,True,816
+1428,Ari,public_ego_expression,v36-231085,#ego-Ari,Ari: turns away with object shielded; consent=no; respect=0.65,Ari: turns away with object shielded; consent=no; respect=0.65,True,True,817
+1430,Nia,public_ego_expression,v36-229210,#ego-Nia,Nia: turns away with object shielded; consent=no; respect=0.86,Nia: turns away with object shielded; consent=no; respect=0.86,True,True,818
+1432,Ivo,public_ego_expression,v36-931635,#ego-Ivo,Ivo: softens and faces avatar; consent=yes; respect=0.96,Ivo: softens and faces avatar; consent=yes; respect=0.96,True,True,819
+1435,Fay,public_ego_expression,v36-929755,#ego-Fay,Fay: softens and faces avatar; consent=yes; respect=0.20,Fay: softens and faces avatar; consent=yes; respect=0.20,True,True,820
+1437,Milo,public_ego_expression,v36-315387,#ego-Milo,Milo: lantern held between body and road; consent=yes_later; respect=0.14,Milo: lantern held between body and road; consent=yes_later; respect=0.14,True,True,821
+1439,Juno,public_ego_expression,v36-161878,#ego-Juno,Juno: turns away with object shielded; consent=no; respect=0.04,Juno: turns away with object shielded; consent=no; respect=0.04,True,True,822

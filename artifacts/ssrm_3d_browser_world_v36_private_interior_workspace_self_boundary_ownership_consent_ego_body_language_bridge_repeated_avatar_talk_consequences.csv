@@ -1,0 +1,823 @@
+tick_id,day,agent_id,talk_count,recent_pattern,trust_avatar,guardedness,attachment_security,grudge_pressure,forgiveness_progress,repeated_talk_changed_behavior,behavior_summary
+0,1,Ari,1,interrupt_task,0.51,0.335,0.594,0.17,0.354,False,continues task
+2,1,Nia,1,interrupt_task,0.51,0.335,0.414,0.17,0.324,False,continues task
+4,1,Ivo,1,give_space,0.61,0.24,0.646,0.08425,0.49,False,continues task
+7,1,Fay,1,give_space,0.61,0.24,0.606,0.08285,0.53,False,continues task
+9,1,Milo,1,request_owned_object,0.59,0.276,0.494,0.08565,0.413,False,continues task
+11,1,Juno,1,ask_permission,0.59,0.276,0.384,0.0888,0.323,False,continues task
+12,2,Ari,2,"interrupt_task,request_owned_object",0.54,0.331,0.598,0.15705,0.357,False,continues task
+14,2,Nia,2,"interrupt_task,ask_help",0.525,0.331,0.418,0.1581,0.327,False,continues task
+16,2,Ivo,2,"give_space,protect_object",0.66,0.2,0.682,0.0685,0.493,False,approaches after care
+17,2,Juno,2,"ask_permission,ask_status",0.605,0.272,0.388,0.0776,0.326,False,continues task
+19,2,Fay,2,"give_space,protect_object",0.66,0.2,0.642,0.0657,0.533,False,continues task
+21,2,Milo,2,"request_owned_object,move_owned_object",0.54,0.331,0.498,0.15565,0.397,False,continues task
+23,2,Juno,3,"ask_permission,ask_status,request_owned_object",0.635,0.268,0.392,0.0664,0.329,True,continues task
+24,3,Ari,3,"interrupt_task,request_owned_object,ask_permission",0.57,0.327,0.602,0.1441,0.36,True,continues task
+26,3,Nia,3,"interrupt_task,ask_help,offer_apology",0.575,0.291,0.422,0.1462,0.367,True,continues task
+28,3,Ivo,3,"give_space,protect_object,ask_help",0.675,0.196,0.686,0.05275,0.496,True,approaches after care
+31,3,Fay,3,"give_space,protect_object,ask_help",0.675,0.196,0.646,0.04855,0.536,True,continues task
+33,3,Milo,3,"request_owned_object,move_owned_object,interrupt_task",0.49,0.386,0.472,0.22565,0.381,True,continues task
+34,3,Ivo,4,"protect_object,ask_help,ask_permission",0.705,0.192,0.69,0.037,0.499,True,approaches after care
+35,3,Juno,4,"ask_status,request_owned_object,ask_permission",0.665,0.264,0.396,0.0552,0.332,True,continues task
+36,4,Ari,4,"request_owned_object,ask_permission,move_owned_object",0.52,0.382,0.606,0.2141,0.344,True,continues task
+38,4,Nia,4,"ask_help,offer_apology,offer_care",0.625,0.251,0.458,0.1343,0.37,True,continues task
+39,4,Milo,4,"move_owned_object,interrupt_task,protect_object",0.54,0.346,0.508,0.2113,0.384,True,continues task
+40,4,Ivo,5,"ask_help,ask_permission,ask_status",0.72,0.188,0.694,0.02125,0.502,True,approaches after care
+43,4,Fay,4,"protect_object,ask_help,ask_status",0.69,0.192,0.65,0.0314,0.539,True,continues task
+45,4,Milo,5,"interrupt_task,protect_object,misname_agent",0.49,0.401,0.482,0.2813,0.368,True,continues task
+47,4,Juno,5,"request_owned_object,ask_permission,move_owned_object",0.615,0.319,0.4,0.1252,0.316,True,continues task
+48,5,Ari,5,"ask_permission,move_owned_object,interrupt_task",0.47,0.437,0.58,0.2841,0.328,True,continues task
+50,5,Nia,5,"offer_apology,offer_care,give_space",0.675,0.211,0.494,0.1224,0.41,True,continues task
+52,5,Ivo,6,"ask_permission,ask_status,request_owned_object",0.75,0.184,0.698,0.0055,0.505,True,approaches after care
+55,5,Fay,5,"ask_help,ask_status,request_owned_object",0.72,0.188,0.654,0.01425,0.542,True,continues task
+56,5,Nia,6,"offer_care,give_space,interrupt_task",0.625,0.266,0.468,0.1924,0.394,True,continues task
+57,5,Milo,6,"protect_object,misname_agent,ask_permission",0.52,0.397,0.486,0.26695,0.371,True,continues task
+59,5,Juno,6,"ask_permission,move_owned_object,interrupt_task",0.565,0.374,0.374,0.1952,0.3,True,continues task
+60,6,Ari,6,"move_owned_object,interrupt_task,ask_help",0.485,0.433,0.584,0.27115,0.331,True,continues task
+61,6,Fay,6,"ask_status,request_owned_object,offer_care",0.77,0.148,0.69,0.0,0.545,True,approaches after care
+62,6,Nia,7,"give_space,interrupt_task,protect_object",0.675,0.226,0.504,0.1805,0.397,True,continues task
+64,6,Ivo,7,"ask_status,request_owned_object,move_owned_object",0.7,0.239,0.702,0.0755,0.489,True,approaches after care
+67,6,Fay,7,"request_owned_object,offer_care,move_owned_object",0.72,0.203,0.694,0.07,0.529,True,approaches after care
+69,6,Milo,7,"misname_agent,ask_permission,request_owned_object",0.55,0.393,0.49,0.2526,0.374,True,continues task
+71,6,Juno,7,"move_owned_object,interrupt_task,request_owned_object",0.595,0.37,0.378,0.184,0.303,True,continues task
+72,7,Ari,7,"interrupt_task,ask_help,offer_apology",0.535,0.393,0.588,0.2582,0.371,True,continues task
+74,7,Nia,8,"interrupt_task,protect_object,ask_help",0.69,0.222,0.508,0.1686,0.4,True,continues task
+76,7,Ivo,8,"request_owned_object,move_owned_object,interrupt_task",0.65,0.294,0.676,0.1455,0.473,True,approaches after care
+78,7,Ari,8,"ask_help,offer_apology,request_owned_object",0.565,0.389,0.592,0.24525,0.374,True,continues task
+79,7,Fay,8,"offer_care,move_owned_object,interrupt_task",0.67,0.258,0.668,0.14,0.513,True,approaches after care
+81,7,Milo,8,"ask_permission,request_owned_object,ask_permission",0.58,0.389,0.494,0.23825,0.377,True,continues task
+83,7,Juno,8,"interrupt_task,request_owned_object,ask_permission",0.625,0.366,0.382,0.1728,0.306,True,continues task
+84,8,Ari,9,"offer_apology,request_owned_object,offer_care",0.615,0.349,0.628,0.2323,0.377,True,continues task
+86,8,Nia,9,"protect_object,ask_help,ask_status",0.705,0.218,0.512,0.1567,0.403,True,continues task
+88,8,Ivo,9,"move_owned_object,interrupt_task,misname_agent",0.6,0.349,0.65,0.2155,0.457,True,continues task
+91,8,Fay,9,"move_owned_object,interrupt_task,misname_agent",0.62,0.313,0.642,0.21,0.497,True,continues task
+93,8,Milo,9,"request_owned_object,ask_permission,move_owned_object",0.53,0.444,0.498,0.30825,0.361,True,continues task
+95,8,Juno,9,"request_owned_object,ask_permission,move_owned_object",0.575,0.421,0.386,0.2428,0.29,True,continues task
+96,9,Ari,10,"request_owned_object,offer_care,give_space",0.665,0.309,0.664,0.21935,0.417,True,approaches after care
+98,9,Nia,10,"ask_help,ask_status,request_owned_object",0.735,0.214,0.516,0.1448,0.406,True,continues task
+100,9,Ivo,10,"interrupt_task,misname_agent,ask_permission",0.63,0.345,0.654,0.19975,0.46,True,continues task
+101,9,Juno,10,"ask_permission,move_owned_object,ask_permission",0.605,0.417,0.39,0.2316,0.293,True,continues task
+103,9,Fay,10,"interrupt_task,misname_agent,ask_permission",0.65,0.309,0.646,0.19285,0.5,True,continues task
+105,9,Milo,10,"ask_permission,move_owned_object,interrupt_task",0.48,0.499,0.472,0.37825,0.345,True,continues task
+107,9,Juno,11,"move_owned_object,ask_permission,interrupt_task",0.555,0.472,0.364,0.3016,0.277,True,continues task
+108,10,Fay,11,"misname_agent,ask_permission,ask_help",0.665,0.305,0.65,0.1757,0.503,True,continues task
+110,10,Milo,11,"move_owned_object,interrupt_task,interrupt_task",0.43,0.554,0.446,0.44825,0.329,True,keeps distance
+111,10,Ivo,11,"misname_agent,ask_permission,ask_permission",0.66,0.341,0.658,0.184,0.463,True,continues task
+112,10,Juno,12,"ask_permission,interrupt_task,ask_permission",0.585,0.468,0.368,0.2904,0.28,True,continues task
+115,10,Nia,11,"ask_status,request_owned_object,ask_permission",0.765,0.21,0.52,0.1329,0.409,True,continues task
+117,10,Ivo,12,"ask_permission,ask_permission,ask_permission",0.69,0.337,0.662,0.16825,0.466,True,approaches after care
+119,10,Ari,11,"offer_care,give_space,interrupt_task",0.615,0.364,0.638,0.28935,0.401,True,continues task
+120,11,Fay,12,"ask_permission,ask_help,ask_status",0.68,0.301,0.654,0.15855,0.506,True,continues task
+122,11,Milo,12,"interrupt_task,interrupt_task,misname_agent",0.38,0.609,0.42,0.51825,0.313,True,keeps distance
+124,11,Juno,13,"interrupt_task,ask_permission,move_owned_object",0.535,0.523,0.372,0.3604,0.264,True,keeps distance
+127,11,Nia,12,"request_owned_object,ask_permission,move_owned_object",0.715,0.265,0.524,0.2029,0.393,True,continues task
+128,11,Milo,13,"interrupt_task,misname_agent,request_owned_object",0.41,0.605,0.424,0.5039,0.316,True,keeps distance
+129,11,Ivo,13,"ask_permission,ask_permission,move_owned_object",0.64,0.392,0.666,0.23825,0.45,True,approaches after care
+131,11,Ari,12,"give_space,interrupt_task,request_owned_object",0.645,0.36,0.642,0.2764,0.404,True,continues task
+132,12,Fay,13,"ask_help,ask_status,request_owned_object",0.71,0.297,0.658,0.1414,0.509,True,continues task
+133,12,Nia,13,"ask_permission,move_owned_object,interrupt_task",0.665,0.32,0.498,0.2729,0.377,True,continues task
+134,12,Milo,14,"misname_agent,request_owned_object,ask_permission",0.44,0.601,0.428,0.48955,0.319,True,keeps distance
+136,12,Juno,14,"ask_permission,move_owned_object,interrupt_task",0.485,0.578,0.346,0.4304,0.248,True,keeps distance
+139,12,Nia,14,"move_owned_object,interrupt_task,interrupt_task",0.615,0.375,0.472,0.3429,0.361,True,continues task
+141,12,Ivo,14,"ask_permission,move_owned_object,interrupt_task",0.59,0.447,0.64,0.30825,0.434,True,continues task
+143,12,Ari,13,"interrupt_task,request_owned_object,ask_permission",0.675,0.356,0.646,0.26345,0.407,True,continues task
+144,13,Fay,14,"ask_status,request_owned_object,move_owned_object",0.66,0.352,0.662,0.2114,0.493,True,approaches after care
+146,13,Milo,15,"request_owned_object,ask_permission,request_owned_object",0.47,0.597,0.432,0.4752,0.322,True,keeps distance
+148,13,Juno,15,"move_owned_object,interrupt_task,request_owned_object",0.515,0.574,0.35,0.4192,0.251,True,keeps distance
+150,13,Fay,15,"request_owned_object,move_owned_object,move_owned_object",0.61,0.407,0.666,0.2814,0.477,True,approaches after care
+151,13,Nia,15,"interrupt_task,interrupt_task,request_owned_object",0.645,0.371,0.476,0.331,0.364,True,continues task
+153,13,Ivo,15,"move_owned_object,interrupt_task,ask_help",0.605,0.443,0.644,0.2925,0.437,True,continues task
+155,13,Ari,14,"request_owned_object,ask_permission,move_owned_object",0.625,0.411,0.65,0.33345,0.391,True,continues task
+156,14,Fay,16,"move_owned_object,move_owned_object,interrupt_task",0.56,0.462,0.64,0.3514,0.461,True,continues task
+158,14,Milo,16,"ask_permission,request_owned_object,ask_permission",0.5,0.593,0.436,0.46085,0.325,True,keeps distance
+160,14,Juno,16,"interrupt_task,request_owned_object,ask_permission",0.545,0.57,0.354,0.408,0.254,True,keeps distance
+161,14,Ari,15,"ask_permission,move_owned_object,ask_permission",0.655,0.407,0.654,0.3205,0.394,True,continues task
+163,14,Nia,16,"interrupt_task,request_owned_object,ask_permission",0.675,0.367,0.48,0.3191,0.367,True,continues task
+165,14,Ivo,16,"interrupt_task,ask_help,offer_apology",0.655,0.403,0.648,0.27675,0.477,True,continues task
+167,14,Ari,16,"move_owned_object,ask_permission,interrupt_task",0.605,0.462,0.628,0.3905,0.378,True,continues task
+168,15,Fay,17,"move_owned_object,interrupt_task,misname_agent",0.51,0.517,0.614,0.4214,0.445,True,continues task
+170,15,Milo,17,"request_owned_object,ask_permission,move_owned_object",0.45,0.648,0.44,0.53085,0.309,True,keeps distance
+172,15,Juno,17,"request_owned_object,ask_permission,move_owned_object",0.495,0.625,0.358,0.478,0.238,True,keeps distance
+175,15,Nia,17,"request_owned_object,ask_permission,move_owned_object",0.625,0.422,0.484,0.3891,0.351,True,continues task
+177,15,Ivo,17,"ask_help,offer_apology,offer_care",0.705,0.363,0.684,0.261,0.48,True,approaches after care
+179,15,Ari,17,"ask_permission,interrupt_task,ask_help",0.62,0.458,0.632,0.37755,0.381,True,continues task
+180,16,Fay,18,"interrupt_task,misname_agent,ask_permission",0.54,0.513,0.618,0.40425,0.448,True,continues task
+182,16,Milo,18,"ask_permission,move_owned_object,interrupt_task",0.4,0.703,0.414,0.60085,0.293,True,keeps distance
+184,16,Juno,18,"ask_permission,move_owned_object,interrupt_task",0.445,0.68,0.332,0.548,0.222,True,keeps distance
+187,16,Nia,18,"ask_permission,move_owned_object,interrupt_task",0.575,0.477,0.458,0.4591,0.335,True,continues task
+189,16,Ivo,18,"offer_apology,offer_care,give_space",0.755,0.323,0.72,0.24525,0.52,True,approaches after care
+190,16,Juno,19,"move_owned_object,interrupt_task,ask_help",0.46,0.676,0.336,0.5368,0.225,True,keeps distance
+191,16,Ari,18,"interrupt_task,ask_help,offer_apology",0.67,0.418,0.636,0.3646,0.421,True,continues task
+192,17,Fay,19,"misname_agent,ask_permission,request_owned_object",0.57,0.509,0.622,0.3871,0.451,True,continues task
+194,17,Milo,19,"move_owned_object,interrupt_task,request_owned_object",0.43,0.699,0.418,0.5865,0.296,True,keeps distance
+195,17,Ivo,19,"offer_care,give_space,move_owned_object",0.705,0.378,0.724,0.31525,0.504,True,approaches after care
+196,17,Juno,20,"interrupt_task,ask_help,ask_help",0.475,0.672,0.34,0.5256,0.228,True,keeps distance
+199,17,Nia,19,"move_owned_object,interrupt_task,ask_help",0.59,0.473,0.462,0.4472,0.338,True,continues task
+201,17,Ivo,20,"give_space,move_owned_object,protect_object",0.755,0.338,0.76,0.2995,0.507,True,approaches after care
+203,17,Ari,19,"ask_help,offer_apology,offer_care",0.72,0.378,0.672,0.35165,0.424,True,approaches after care
+204,18,Fay,20,"ask_permission,request_owned_object,ask_permission",0.6,0.505,0.626,0.36995,0.454,True,continues task
+206,18,Milo,20,"interrupt_task,request_owned_object,ask_permission",0.46,0.695,0.422,0.57215,0.299,True,keeps distance
+208,18,Juno,21,"ask_help,ask_help,offer_apology",0.525,0.632,0.344,0.5144,0.268,True,keeps distance
+211,18,Nia,20,"interrupt_task,ask_help,offer_apology",0.64,0.433,0.466,0.4353,0.378,True,continues task
+212,18,Milo,21,"request_owned_object,ask_permission,give_space",0.51,0.655,0.458,0.5578,0.339,True,keeps distance
+213,18,Ivo,21,"move_owned_object,protect_object,ask_help",0.77,0.334,0.764,0.28375,0.51,True,approaches after care
+215,18,Ari,20,"offer_apology,offer_care,give_space",0.77,0.338,0.708,0.3387,0.464,True,approaches after care
+216,19,Fay,21,"request_owned_object,ask_permission,move_owned_object",0.55,0.56,0.63,0.43995,0.438,True,keeps distance
+217,19,Nia,21,"ask_help,offer_apology,request_owned_object",0.67,0.429,0.47,0.4234,0.381,True,continues task
+218,19,Milo,22,"ask_permission,give_space,move_owned_object",0.46,0.71,0.462,0.6278,0.323,True,keeps distance
+220,19,Juno,22,"ask_help,offer_apology,offer_care",0.575,0.592,0.38,0.5032,0.271,True,keeps distance
+223,19,Nia,22,"offer_apology,request_owned_object,offer_care",0.72,0.389,0.506,0.4115,0.384,True,continues task
+225,19,Ivo,22,"protect_object,ask_help,ask_status",0.785,0.33,0.768,0.268,0.513,True,approaches after care
+227,19,Ari,21,"offer_care,give_space,protect_object",0.82,0.298,0.744,0.32575,0.467,True,approaches after care
+228,20,Nia,23,"request_owned_object,offer_care,request_owned_object",0.75,0.385,0.51,0.3996,0.387,True,continues task
+230,20,Ivo,23,"ask_help,ask_status,ask_help",0.8,0.326,0.772,0.25225,0.516,True,approaches after care
+232,20,Ari,22,"give_space,protect_object,move_owned_object",0.77,0.353,0.748,0.39575,0.451,True,approaches after care
+233,20,Fay,22,"ask_permission,move_owned_object,ask_help",0.565,0.556,0.634,0.4228,0.441,True,keeps distance
+235,20,Milo,23,"give_space,move_owned_object,protect_object",0.51,0.67,0.498,0.61345,0.326,True,keeps distance
+237,20,Juno,23,"offer_apology,offer_care,move_owned_object",0.525,0.647,0.384,0.5732,0.255,True,keeps distance
+239,20,Fay,23,"move_owned_object,ask_help,ask_status",0.58,0.552,0.638,0.40565,0.444,True,keeps distance
+240,21,Nia,24,"offer_care,request_owned_object,ask_permission",0.78,0.381,0.514,0.3877,0.39,True,continues task
+242,21,Ivo,24,"ask_status,ask_help,offer_apology",0.85,0.286,0.776,0.2365,0.556,True,approaches after care
+244,21,Ari,23,"protect_object,move_owned_object,interrupt_task",0.72,0.408,0.722,0.46575,0.435,True,approaches after care
+247,21,Milo,24,"move_owned_object,protect_object,ask_help",0.525,0.666,0.502,0.5991,0.329,True,keeps distance
+249,21,Juno,24,"offer_care,move_owned_object,interrupt_task",0.475,0.702,0.358,0.6432,0.239,True,keeps distance
+250,21,Ari,24,"move_owned_object,interrupt_task,ask_help",0.735,0.404,0.726,0.4528,0.438,True,approaches after care
+251,21,Fay,24,"ask_help,ask_status,request_owned_object",0.61,0.548,0.642,0.3885,0.447,True,keeps distance
+252,22,Nia,25,"request_owned_object,ask_permission,move_owned_object",0.73,0.436,0.518,0.4577,0.374,True,continues task
+254,22,Ivo,25,"ask_help,offer_apology,offer_care",0.9,0.246,0.812,0.22075,0.559,True,approaches after care
+256,22,Ari,25,"interrupt_task,ask_help,ask_help",0.75,0.4,0.73,0.43985,0.441,True,approaches after care
+259,22,Milo,25,"protect_object,ask_help,ask_status",0.54,0.662,0.506,0.58475,0.332,True,keeps distance
+261,22,Juno,25,"move_owned_object,interrupt_task,misname_agent",0.425,0.757,0.332,0.7132,0.223,True,keeps distance
+263,22,Fay,25,"ask_status,request_owned_object,move_owned_object",0.56,0.603,0.646,0.4585,0.431,True,keeps distance
+264,23,Nia,26,"ask_permission,move_owned_object,interrupt_task",0.68,0.491,0.492,0.5277,0.358,True,continues task
+266,23,Ivo,26,"offer_apology,offer_care,give_space",0.95,0.206,0.848,0.205,0.599,True,approaches after care
+267,23,Juno,26,"interrupt_task,misname_agent,ask_help",0.44,0.753,0.336,0.702,0.226,True,keeps distance
+268,23,Ari,26,"ask_help,ask_help,offer_apology",0.8,0.36,0.734,0.4269,0.481,True,approaches after care
+271,23,Milo,26,"ask_help,ask_status,request_owned_object",0.57,0.658,0.51,0.5704,0.335,True,keeps distance
+273,23,Juno,27,"misname_agent,ask_help,ask_permission",0.47,0.749,0.34,0.6908,0.229,True,keeps distance
+275,23,Fay,26,"request_owned_object,move_owned_object,interrupt_task",0.51,0.658,0.62,0.5285,0.415,True,keeps distance
+276,24,Nia,27,"move_owned_object,interrupt_task,ask_help",0.695,0.487,0.496,0.5158,0.361,True,continues task
+278,24,Ivo,27,"offer_care,give_space,protect_object",0.96,0.166,0.884,0.18925,0.602,True,approaches after care
+280,24,Ari,27,"ask_help,offer_apology,offer_care",0.85,0.32,0.77,0.41395,0.484,True,approaches after care
+283,24,Milo,27,"ask_status,request_owned_object,move_owned_object",0.52,0.713,0.514,0.6404,0.319,True,keeps distance
+284,24,Ivo,28,"give_space,protect_object,misname_agent",0.91,0.221,0.858,0.25925,0.586,True,approaches after care
+285,24,Juno,28,"ask_help,ask_permission,request_owned_object",0.5,0.745,0.344,0.6796,0.232,True,keeps distance
+287,24,Fay,27,"move_owned_object,interrupt_task,misname_agent",0.46,0.713,0.594,0.5985,0.399,True,keeps distance
+288,25,Nia,28,"interrupt_task,ask_help,offer_apology",0.745,0.447,0.5,0.5039,0.401,True,continues task
+289,25,Milo,28,"request_owned_object,move_owned_object,give_space",0.57,0.673,0.55,0.62605,0.359,True,keeps distance
+290,25,Ivo,29,"protect_object,misname_agent,ask_help",0.925,0.217,0.862,0.2435,0.589,True,approaches after care
+292,25,Ari,28,"offer_apology,offer_care,give_space",0.9,0.28,0.806,0.401,0.524,True,approaches after care
+295,25,Milo,29,"move_owned_object,give_space,interrupt_task",0.52,0.728,0.524,0.69605,0.343,True,keeps distance
+297,25,Juno,29,"ask_permission,request_owned_object,ask_permission",0.53,0.741,0.348,0.6684,0.235,True,keeps distance
+299,25,Fay,28,"interrupt_task,misname_agent,ask_permission",0.49,0.709,0.598,0.58135,0.402,True,keeps distance
+300,26,Nia,29,"ask_help,offer_apology,offer_care",0.795,0.407,0.536,0.492,0.404,True,continues task
+302,26,Ivo,30,"misname_agent,ask_help,ask_status",0.94,0.213,0.866,0.22775,0.592,True,approaches after care
+304,26,Ari,29,"offer_care,give_space,protect_object",0.95,0.24,0.842,0.38805,0.527,True,approaches after care
+306,26,Nia,30,"offer_apology,offer_care,move_owned_object",0.745,0.462,0.54,0.562,0.388,True,continues task
+307,26,Milo,30,"give_space,interrupt_task,misname_agent",0.47,0.783,0.498,0.76605,0.327,True,keeps distance
+309,26,Juno,30,"request_owned_object,ask_permission,move_owned_object",0.48,0.796,0.352,0.7384,0.219,True,keeps distance
+311,26,Fay,29,"misname_agent,ask_permission,request_owned_object",0.52,0.705,0.602,0.5642,0.405,True,keeps distance
+312,27,Nia,31,"offer_care,move_owned_object,give_space",0.795,0.422,0.576,0.5501,0.428,True,continues task
+314,27,Ivo,31,"ask_help,ask_status,request_owned_object",0.96,0.209,0.87,0.212,0.595,True,approaches after care
+316,27,Ari,30,"give_space,protect_object,ask_help",0.96,0.236,0.846,0.3751,0.53,True,approaches after care
+317,27,Fay,30,"ask_permission,request_owned_object,request_owned_object",0.55,0.701,0.606,0.54705,0.408,True,keeps distance
+319,27,Milo,31,"interrupt_task,misname_agent,ask_permission",0.5,0.779,0.502,0.7517,0.33,True,keeps distance
+321,27,Juno,31,"ask_permission,move_owned_object,interrupt_task",0.43,0.851,0.326,0.8084,0.203,True,keeps distance
+323,27,Fay,31,"request_owned_object,request_owned_object,ask_permission",0.58,0.697,0.61,0.5299,0.411,True,keeps distance
+324,28,Nia,32,"move_owned_object,give_space,protect_object",0.845,0.382,0.612,0.5382,0.431,True,continues task
+326,28,Ivo,32,"ask_status,request_owned_object,move_owned_object",0.91,0.264,0.874,0.282,0.579,True,approaches after care
+328,28,Ari,31,"protect_object,ask_help,ask_status",0.96,0.232,0.85,0.36215,0.533,True,approaches after care
+331,28,Milo,32,"misname_agent,ask_permission,request_owned_object",0.53,0.775,0.506,0.73735,0.333,True,keeps distance
+333,28,Juno,32,"move_owned_object,interrupt_task,request_owned_object",0.46,0.847,0.33,0.7972,0.206,True,keeps distance
+334,28,Ari,32,"ask_help,ask_status,request_owned_object",0.96,0.228,0.854,0.3492,0.536,True,approaches after care
+335,28,Fay,32,"request_owned_object,ask_permission,move_owned_object",0.53,0.752,0.614,0.5999,0.395,True,keeps distance
+336,29,Nia,33,"give_space,protect_object,ask_help",0.86,0.378,0.616,0.5263,0.434,True,continues task
+338,29,Ivo,33,"request_owned_object,move_owned_object,interrupt_task",0.86,0.319,0.848,0.352,0.563,True,approaches after care
+340,29,Ari,33,"ask_status,request_owned_object,request_owned_object",0.96,0.224,0.858,0.33625,0.539,True,approaches after care
+343,29,Milo,33,"ask_permission,request_owned_object,ask_permission",0.56,0.771,0.51,0.723,0.336,True,keeps distance
+345,29,Juno,33,"interrupt_task,request_owned_object,ask_permission",0.49,0.843,0.334,0.786,0.209,True,keeps distance
+347,29,Fay,33,"ask_permission,move_owned_object,interrupt_task",0.48,0.807,0.588,0.6699,0.379,True,keeps distance
+348,30,Milo,34,"request_owned_object,ask_permission,request_owned_object",0.59,0.767,0.514,0.70865,0.339,True,keeps distance
+350,30,Juno,34,"request_owned_object,ask_permission,ask_permission",0.52,0.839,0.338,0.7748,0.212,True,keeps distance
+352,30,Fay,34,"move_owned_object,interrupt_task,interrupt_task",0.43,0.862,0.562,0.7399,0.363,True,keeps distance
+355,30,Ivo,34,"move_owned_object,interrupt_task,interrupt_task",0.81,0.374,0.822,0.422,0.547,True,approaches after care
+356,30,Juno,35,"ask_permission,ask_permission,ask_permission",0.55,0.835,0.342,0.7636,0.215,True,keeps distance
+357,30,Ari,34,"request_owned_object,request_owned_object,ask_permission",0.96,0.22,0.862,0.3233,0.542,True,approaches after care
+359,30,Nia,34,"protect_object,ask_help,ask_permission",0.89,0.374,0.62,0.5144,0.437,True,continues task
+360,31,Milo,35,"ask_permission,request_owned_object,move_owned_object",0.54,0.822,0.518,0.77865,0.323,True,keeps distance
+361,31,Ivo,35,"interrupt_task,interrupt_task,misname_agent",0.76,0.429,0.796,0.492,0.531,True,approaches after care
+362,31,Juno,36,"ask_permission,ask_permission,request_owned_object",0.58,0.831,0.346,0.7524,0.218,True,keeps distance
+364,31,Fay,35,"interrupt_task,interrupt_task,misname_agent",0.38,0.917,0.536,0.8099,0.347,True,keeps distance
+367,31,Ivo,36,"interrupt_task,misname_agent,request_owned_object",0.79,0.425,0.8,0.47625,0.534,True,approaches after care
+369,31,Ari,35,"request_owned_object,ask_permission,move_owned_object",0.91,0.275,0.866,0.3933,0.526,True,approaches after care
+371,31,Nia,35,"ask_help,ask_permission,move_owned_object",0.84,0.429,0.624,0.5844,0.421,True,continues task
+372,32,Milo,36,"request_owned_object,move_owned_object,interrupt_task",0.49,0.877,0.492,0.84865,0.307,True,keeps distance
+374,32,Juno,37,"ask_permission,request_owned_object,ask_permission",0.61,0.827,0.35,0.7412,0.221,True,keeps distance
+376,32,Fay,36,"interrupt_task,misname_agent,ask_permission",0.41,0.913,0.54,0.79275,0.35,True,keeps distance
+378,32,Milo,37,"move_owned_object,interrupt_task,interrupt_task",0.44,0.92,0.466,0.9,0.291,True,keeps distance
+379,32,Ivo,37,"misname_agent,request_owned_object,ask_permission",0.82,0.421,0.804,0.4605,0.537,True,approaches after care
+381,32,Ari,36,"ask_permission,move_owned_object,interrupt_task",0.86,0.33,0.84,0.4633,0.51,True,approaches after care
+383,32,Nia,36,"ask_permission,move_owned_object,interrupt_task",0.79,0.484,0.598,0.6544,0.405,True,continues task
+384,33,Milo,38,"interrupt_task,interrupt_task,misname_agent",0.39,0.92,0.44,0.9,0.275,True,keeps distance
+386,33,Juno,38,"request_owned_object,ask_permission,move_owned_object",0.56,0.882,0.354,0.8112,0.205,True,keeps distance
+388,33,Fay,37,"misname_agent,ask_permission,request_owned_object",0.44,0.909,0.544,0.7756,0.353,True,keeps distance
+389,33,Nia,37,"move_owned_object,interrupt_task,move_owned_object",0.74,0.539,0.602,0.7244,0.389,True,keeps distance
+391,33,Ivo,38,"request_owned_object,ask_permission,move_owned_object",0.77,0.476,0.808,0.5305,0.521,True,approaches after care
+393,33,Ari,37,"move_owned_object,interrupt_task,request_owned_object",0.89,0.326,0.844,0.45035,0.513,True,approaches after care
+395,33,Nia,38,"interrupt_task,move_owned_object,ask_help",0.755,0.535,0.606,0.7125,0.392,True,keeps distance
+396,34,Milo,39,"interrupt_task,misname_agent,ask_permission",0.42,0.916,0.444,0.88565,0.278,True,keeps distance
+398,34,Juno,39,"ask_permission,move_owned_object,interrupt_task",0.51,0.92,0.328,0.8812,0.189,True,keeps distance
+400,34,Fay,38,"ask_permission,request_owned_object,ask_permission",0.47,0.905,0.548,0.75845,0.356,True,keeps distance
+403,34,Ivo,39,"ask_permission,move_owned_object,interrupt_task",0.72,0.531,0.782,0.6005,0.505,True,keeps distance
+405,34,Ari,38,"interrupt_task,request_owned_object,ask_permission",0.92,0.322,0.848,0.4374,0.516,True,approaches after care
+406,34,Fay,39,"request_owned_object,ask_permission,interrupt_task",0.42,0.92,0.522,0.82845,0.34,True,keeps distance
+407,34,Nia,39,"move_owned_object,ask_help,offer_apology",0.805,0.495,0.61,0.7006,0.432,True,continues task
+408,35,Milo,40,"misname_agent,ask_permission,request_owned_object",0.45,0.912,0.448,0.8713,0.281,True,keeps distance
+410,35,Juno,40,"move_owned_object,interrupt_task,request_owned_object",0.54,0.916,0.332,0.87,0.192,True,keeps distance
+411,35,Ari,39,"request_owned_object,ask_permission,request_owned_object",0.95,0.318,0.852,0.42445,0.519,True,approaches after care
+412,35,Fay,40,"ask_permission,interrupt_task,move_owned_object",0.37,0.92,0.526,0.89845,0.324,True,keeps distance
+415,35,Ivo,40,"move_owned_object,interrupt_task,ask_help",0.735,0.527,0.786,0.58475,0.508,True,keeps distance
+417,35,Ari,40,"ask_permission,request_owned_object,move_owned_object",0.9,0.373,0.856,0.49445,0.503,True,approaches after care
+419,35,Nia,40,"ask_help,offer_apology,offer_care",0.855,0.455,0.646,0.6887,0.435,True,continues task
+420,36,Milo,41,"ask_permission,request_owned_object,ask_permission",0.48,0.908,0.452,0.85695,0.284,True,keeps distance
+422,36,Juno,41,"interrupt_task,request_owned_object,ask_permission",0.57,0.912,0.336,0.8588,0.195,True,keeps distance
+424,36,Fay,41,"interrupt_task,move_owned_object,interrupt_task",0.32,0.92,0.5,0.9,0.308,True,keeps distance
+427,36,Ivo,41,"interrupt_task,ask_help,offer_apology",0.785,0.487,0.79,0.569,0.548,True,approaches after care
+429,36,Ari,41,"request_owned_object,move_owned_object,interrupt_task",0.85,0.428,0.83,0.56445,0.487,True,approaches after care
+431,36,Nia,41,"offer_apology,offer_care,give_space",0.905,0.415,0.682,0.6768,0.475,True,approaches after care
+432,37,Milo,42,"request_owned_object,ask_permission,move_owned_object",0.43,0.92,0.456,0.9,0.268,True,keeps distance
+434,37,Juno,42,"request_owned_object,ask_permission,move_owned_object",0.52,0.92,0.34,0.9,0.179,True,keeps distance
+436,37,Fay,42,"move_owned_object,interrupt_task,request_owned_object",0.35,0.916,0.504,0.88285,0.311,True,keeps distance
+439,37,Ivo,42,"ask_help,offer_apology,offer_care",0.835,0.447,0.826,0.55325,0.551,True,approaches after care
+440,37,Juno,43,"ask_permission,move_owned_object,protect_object",0.57,0.88,0.376,0.8888,0.182,True,keeps distance
+441,37,Ari,42,"move_owned_object,interrupt_task,ask_help",0.865,0.424,0.834,0.5515,0.49,True,approaches after care
+443,37,Nia,42,"offer_care,give_space,protect_object",0.955,0.375,0.718,0.6649,0.478,True,approaches after care
+444,38,Milo,43,"ask_permission,move_owned_object,interrupt_task",0.38,0.92,0.43,0.9,0.252,True,keeps distance
+445,38,Ivo,43,"offer_apology,offer_care,ask_permission",0.865,0.443,0.83,0.5375,0.554,True,approaches after care
+446,38,Juno,44,"move_owned_object,protect_object,interrupt_task",0.52,0.92,0.35,0.9,0.166,True,keeps distance
+448,38,Fay,43,"interrupt_task,request_owned_object,ask_permission",0.38,0.912,0.508,0.8657,0.314,True,keeps distance
+451,38,Ivo,44,"offer_care,ask_permission,give_space",0.915,0.403,0.866,0.52175,0.594,True,approaches after care
+453,38,Ari,43,"interrupt_task,ask_help,offer_apology",0.915,0.384,0.838,0.53855,0.53,True,approaches after care
+455,38,Nia,43,"give_space,protect_object,ask_help",0.96,0.371,0.722,0.653,0.481,True,approaches after care
+456,39,Milo,44,"move_owned_object,interrupt_task,request_owned_object",0.41,0.916,0.434,0.88565,0.255,True,keeps distance
+458,39,Juno,45,"protect_object,interrupt_task,ask_help",0.535,0.916,0.354,0.8888,0.169,True,keeps distance
+460,39,Fay,44,"request_owned_object,ask_permission,move_owned_object",0.33,0.92,0.512,0.9,0.298,True,keeps distance
+462,39,Milo,45,"interrupt_task,request_owned_object,offer_care",0.46,0.876,0.47,0.8713,0.258,True,keeps distance
+463,39,Ivo,45,"ask_permission,give_space,protect_object",0.96,0.363,0.902,0.506,0.597,True,approaches after care
+465,39,Ari,44,"ask_help,offer_apology,offer_care",0.96,0.344,0.874,0.5256,0.533,True,approaches after care
+467,39,Nia,44,"protect_object,ask_help,ask_status",0.96,0.367,0.726,0.6411,0.484,True,approaches after care
+468,40,Ivo,46,"give_space,protect_object,move_owned_object",0.91,0.418,0.906,0.576,0.581,True,approaches after care
+470,40,Ari,45,"offer_apology,offer_care,request_owned_object",0.96,0.34,0.878,0.51265,0.536,True,approaches after care
+472,40,Nia,45,"ask_help,ask_status,ask_help",0.96,0.363,0.73,0.6292,0.487,True,approaches after care
+475,40,Juno,46,"interrupt_task,ask_help,ask_status",0.55,0.912,0.358,0.8776,0.172,True,keeps distance
+477,40,Fay,45,"ask_permission,move_owned_object,protect_object",0.38,0.88,0.548,0.88285,0.301,True,keeps distance
+478,40,Nia,46,"ask_status,ask_help,ask_status",0.96,0.359,0.734,0.6173,0.49,True,approaches after care
+479,40,Milo,46,"request_owned_object,offer_care,move_owned_object",0.41,0.92,0.474,0.9,0.242,True,keeps distance
+480,41,Ivo,47,"protect_object,move_owned_object,interrupt_task",0.86,0.473,0.88,0.646,0.565,True,approaches after care
+482,41,Ari,46,"offer_care,request_owned_object,ask_permission",0.96,0.336,0.882,0.4997,0.539,True,approaches after care
+483,41,Fay,46,"move_owned_object,protect_object,interrupt_task",0.33,0.92,0.522,0.9,0.285,True,keeps distance
+484,41,Nia,47,"ask_help,ask_status,offer_apology",0.96,0.319,0.738,0.6054,0.53,True,approaches after care
+487,41,Juno,47,"ask_help,ask_status,request_owned_object",0.58,0.908,0.362,0.8664,0.175,True,keeps distance
+489,41,Fay,47,"protect_object,interrupt_task,ask_help",0.345,0.916,0.526,0.88285,0.288,True,keeps distance
+491,41,Milo,47,"offer_care,move_owned_object,interrupt_task",0.36,0.92,0.448,0.9,0.226,True,keeps distance
+492,42,Ivo,48,"move_owned_object,interrupt_task,ask_help",0.875,0.469,0.884,0.63025,0.568,True,approaches after care
+494,42,Ari,47,"request_owned_object,ask_permission,move_owned_object",0.91,0.391,0.886,0.5697,0.523,True,approaches after care
+496,42,Nia,48,"ask_status,offer_apology,offer_care",0.96,0.279,0.774,0.5935,0.533,True,approaches after care
+499,42,Juno,48,"ask_status,request_owned_object,move_owned_object",0.53,0.92,0.366,0.9,0.159,True,keeps distance
+500,42,Ari,48,"ask_permission,move_owned_object,protect_object",0.96,0.351,0.922,0.55675,0.526,True,approaches after care
+501,42,Fay,48,"interrupt_task,ask_help,ask_status",0.36,0.912,0.53,0.8657,0.291,True,keeps distance
+503,42,Milo,48,"move_owned_object,interrupt_task,misname_agent",0.31,0.92,0.422,0.9,0.21,True,keeps distance
+504,43,Ivo,49,"interrupt_task,ask_help,offer_apology",0.925,0.429,0.888,0.6145,0.608,True,approaches after care
+506,43,Ari,49,"move_owned_object,protect_object,interrupt_task",0.91,0.406,0.896,0.62675,0.51,True,approaches after care
+508,43,Nia,49,"offer_apology,offer_care,give_space",0.96,0.239,0.81,0.5816,0.573,True,approaches after care
+511,43,Juno,49,"request_owned_object,move_owned_object,interrupt_task",0.48,0.92,0.34,0.9,0.143,True,keeps distance
+513,43,Fay,49,"ask_help,ask_status,request_owned_object",0.39,0.908,0.534,0.84855,0.294,True,keeps distance
+515,43,Milo,49,"interrupt_task,misname_agent,ask_permission",0.34,0.916,0.426,0.88565,0.213,True,keeps distance
+516,44,Ivo,50,"ask_help,offer_apology,offer_care",0.96,0.389,0.924,0.59875,0.611,True,approaches after care
+517,44,Juno,50,"move_owned_object,interrupt_task,protect_object",0.53,0.88,0.376,0.8888,0.146,True,keeps distance
+518,44,Ari,50,"protect_object,interrupt_task,ask_help",0.925,0.402,0.9,0.6138,0.513,True,approaches after care
+520,44,Nia,50,"offer_care,give_space,protect_object",0.96,0.199,0.846,0.5697,0.576,True,approaches after care
+523,44,Juno,51,"interrupt_task,protect_object,misname_agent",0.48,0.92,0.35,0.9,0.13,True,keeps distance
+525,44,Fay,50,"ask_status,request_owned_object,move_owned_object",0.34,0.92,0.538,0.9,0.278,True,keeps distance
+527,44,Milo,50,"misname_agent,ask_permission,request_owned_object",0.37,0.912,0.43,0.8713,0.216,True,keeps distance
+528,45,Ivo,51,"offer_apology,offer_care,give_space",0.96,0.349,0.96,0.583,0.651,True,approaches after care
+530,45,Ari,51,"interrupt_task,ask_help,offer_apology",0.96,0.362,0.904,0.60085,0.553,True,approaches after care
+532,45,Nia,51,"give_space,protect_object,ask_help",0.96,0.195,0.85,0.5578,0.579,True,approaches after care
+534,45,Ivo,52,"offer_care,give_space,interrupt_task",0.91,0.404,0.934,0.653,0.635,True,approaches after care
+535,45,Juno,52,"protect_object,misname_agent,ask_permission",0.51,0.916,0.354,0.8888,0.133,True,keeps distance
+537,45,Fay,51,"request_owned_object,move_owned_object,interrupt_task",0.29,0.92,0.512,0.9,0.262,True,keeps distance
+539,45,Milo,51,"ask_permission,request_owned_object,ask_permission",0.4,0.908,0.434,0.85695,0.219,True,keeps distance
+540,46,Ivo,53,"give_space,interrupt_task,protect_object",0.96,0.364,0.96,0.63725,0.638,True,approaches after care
+542,46,Ari,52,"ask_help,offer_apology,offer_care",0.96,0.322,0.94,0.5879,0.556,True,approaches after care
+544,46,Nia,52,"protect_object,ask_help,ask_status",0.96,0.191,0.854,0.5459,0.582,True,approaches after care
+545,46,Milo,52,"request_owned_object,ask_permission,move_owned_object",0.35,0.92,0.438,0.9,0.203,True,keeps distance
+547,46,Juno,53,"misname_agent,ask_permission,request_owned_object",0.54,0.912,0.358,0.8776,0.136,True,keeps distance
+549,46,Fay,52,"move_owned_object,interrupt_task,misname_agent",0.24,0.92,0.486,0.9,0.246,True,keeps distance
+551,46,Milo,53,"ask_permission,move_owned_object,move_owned_object",0.3,0.92,0.442,0.9,0.187,True,keeps distance
+552,47,Ivo,54,"interrupt_task,protect_object,ask_help",0.96,0.36,0.96,0.6215,0.641,True,approaches after care
+554,47,Ari,53,"offer_apology,offer_care,give_space",0.96,0.282,0.96,0.57495,0.596,True,approaches after care
+556,47,Nia,53,"ask_help,ask_status,request_owned_object",0.96,0.187,0.858,0.534,0.585,True,approaches after care
+559,47,Juno,54,"ask_permission,request_owned_object,ask_permission",0.57,0.908,0.362,0.8664,0.139,True,keeps distance
+561,47,Fay,53,"interrupt_task,misname_agent,ask_permission",0.27,0.916,0.49,0.88285,0.249,True,keeps distance
+562,47,Nia,54,"ask_status,request_owned_object,ask_permission",0.96,0.183,0.862,0.5221,0.588,True,approaches after care
+563,47,Milo,54,"move_owned_object,move_owned_object,interrupt_task",0.25,0.92,0.416,0.9,0.171,True,keeps distance
+564,48,Ivo,55,"protect_object,ask_help,ask_status",0.96,0.356,0.96,0.60575,0.644,True,approaches after care
+566,48,Ari,54,"offer_care,give_space,protect_object",0.96,0.242,0.96,0.562,0.599,True,approaches after care
+567,48,Fay,54,"misname_agent,ask_permission,ask_status",0.285,0.912,0.494,0.8657,0.252,True,keeps distance
+568,48,Nia,55,"request_owned_object,ask_permission,move_owned_object",0.91,0.238,0.866,0.5921,0.572,True,approaches after care
+571,48,Juno,55,"request_owned_object,ask_permission,move_owned_object",0.52,0.92,0.366,0.9,0.123,True,keeps distance
+573,48,Fay,55,"ask_permission,ask_status,request_owned_object",0.315,0.908,0.498,0.84855,0.255,True,keeps distance
+575,48,Milo,55,"move_owned_object,interrupt_task,request_owned_object",0.28,0.916,0.42,0.88565,0.174,True,keeps distance
+576,49,Ivo,56,"ask_help,ask_status,request_owned_object",0.96,0.352,0.96,0.59,0.647,True,approaches after care
+578,49,Ari,55,"give_space,protect_object,ask_help",0.96,0.238,0.96,0.54905,0.602,True,approaches after care
+580,49,Nia,56,"ask_permission,move_owned_object,interrupt_task",0.86,0.293,0.84,0.6621,0.556,True,approaches after care
+583,49,Juno,56,"ask_permission,move_owned_object,interrupt_task",0.47,0.92,0.34,0.9,0.107,True,keeps distance
+584,49,Ari,56,"protect_object,ask_help,ask_permission",0.96,0.234,0.96,0.5361,0.605,True,approaches after care
+585,49,Fay,56,"ask_status,request_owned_object,ask_permission",0.345,0.904,0.502,0.8314,0.258,True,keeps distance
+587,49,Milo,56,"interrupt_task,request_owned_object,ask_permission",0.31,0.912,0.424,0.8713,0.177,True,keeps distance
+588,50,Juno,57,"move_owned_object,interrupt_task,interrupt_task",0.42,0.92,0.314,0.9,0.091,True,keeps distance
+590,50,Fay,57,"request_owned_object,ask_permission,request_owned_object",0.375,0.9,0.506,0.81425,0.261,True,keeps distance
+592,50,Milo,57,"request_owned_object,ask_permission,ask_permission",0.34,0.908,0.428,0.85695,0.18,True,keeps distance
+595,50,Ari,57,"ask_help,ask_permission,ask_permission",0.96,0.23,0.96,0.52315,0.608,True,approaches after care
+597,50,Nia,57,"move_owned_object,interrupt_task,interrupt_task",0.81,0.348,0.814,0.7321,0.54,True,approaches after care
+599,50,Ivo,57,"ask_status,request_owned_object,interrupt_task",0.91,0.407,0.934,0.66,0.631,True,approaches after care
+600,51,Juno,58,"interrupt_task,interrupt_task,misname_agent",0.37,0.92,0.288,0.9,0.075,True,keeps distance
+602,51,Fay,58,"ask_permission,request_owned_object,move_owned_object",0.325,0.92,0.51,0.88425,0.245,True,keeps distance
+604,51,Milo,58,"ask_permission,ask_permission,request_owned_object",0.37,0.904,0.432,0.8426,0.183,True,keeps distance
+606,51,Juno,59,"interrupt_task,misname_agent,request_owned_object",0.4,0.916,0.292,0.8888,0.078,True,keeps distance
+607,51,Ari,58,"ask_permission,ask_permission,request_owned_object",0.96,0.226,0.96,0.5102,0.611,True,approaches after care
+609,51,Nia,58,"interrupt_task,interrupt_task,request_owned_object",0.84,0.344,0.818,0.7202,0.543,True,approaches after care
+611,51,Ivo,58,"request_owned_object,interrupt_task,ask_help",0.925,0.403,0.938,0.64425,0.634,True,approaches after care
+612,52,Juno,60,"misname_agent,request_owned_object,ask_permission",0.43,0.912,0.296,0.8776,0.081,True,keeps distance
+614,52,Fay,59,"request_owned_object,move_owned_object,interrupt_task",0.275,0.92,0.484,0.9,0.229,True,keeps distance
+616,52,Milo,59,"ask_permission,request_owned_object,ask_permission",0.4,0.9,0.436,0.82825,0.186,True,keeps distance
+617,52,Ivo,59,"interrupt_task,ask_help,interrupt_task",0.875,0.458,0.912,0.71425,0.618,True,approaches after care
+619,52,Ari,59,"ask_permission,request_owned_object,ask_permission",0.96,0.222,0.96,0.49725,0.614,True,approaches after care
+621,52,Nia,59,"interrupt_task,request_owned_object,ask_permission",0.87,0.34,0.822,0.7083,0.546,True,approaches after care
+623,52,Ivo,60,"ask_help,interrupt_task,offer_apology",0.925,0.418,0.916,0.6985,0.658,True,approaches after care
+624,53,Juno,61,"request_owned_object,ask_permission,request_owned_object",0.46,0.908,0.3,0.8664,0.084,True,keeps distance
+626,53,Fay,60,"move_owned_object,interrupt_task,misname_agent",0.225,0.92,0.458,0.9,0.213,True,keeps distance
+628,53,Milo,60,"request_owned_object,ask_permission,move_owned_object",0.35,0.92,0.44,0.89825,0.17,True,keeps distance
+631,53,Ari,60,"request_owned_object,ask_permission,move_owned_object",0.91,0.277,0.96,0.56725,0.598,True,approaches after care
+633,53,Nia,60,"request_owned_object,ask_permission,move_owned_object",0.82,0.395,0.826,0.7783,0.53,True,approaches after care
+634,53,Milo,61,"ask_permission,move_owned_object,ask_help",0.365,0.916,0.444,0.8839,0.173,True,keeps distance
+635,53,Ivo,61,"interrupt_task,offer_apology,offer_care",0.96,0.378,0.952,0.68275,0.661,True,approaches after care
+636,54,Juno,62,"ask_permission,request_owned_object,ask_permission",0.49,0.904,0.304,0.8552,0.087,True,keeps distance
+638,54,Fay,61,"interrupt_task,misname_agent,ask_permission",0.255,0.916,0.462,0.88285,0.216,True,keeps distance
+639,54,Nia,61,"ask_permission,move_owned_object,ask_permission",0.85,0.391,0.83,0.7664,0.533,True,approaches after care
+640,54,Milo,62,"move_owned_object,ask_help,interrupt_task",0.315,0.92,0.418,0.9,0.157,True,keeps distance
+643,54,Ari,61,"ask_permission,move_owned_object,interrupt_task",0.86,0.332,0.934,0.63725,0.582,True,approaches after care
+645,54,Nia,62,"move_owned_object,ask_permission,interrupt_task",0.8,0.446,0.804,0.8364,0.517,True,approaches after care
+647,54,Ivo,62,"offer_apology,offer_care,give_space",0.96,0.338,0.96,0.667,0.701,True,approaches after care
+648,55,Juno,63,"request_owned_object,ask_permission,move_owned_object",0.44,0.92,0.308,0.9,0.071,True,keeps distance
+650,55,Fay,62,"misname_agent,ask_permission,request_owned_object",0.285,0.912,0.466,0.8657,0.219,True,keeps distance
+652,55,Milo,63,"ask_help,interrupt_task,request_owned_object",0.345,0.916,0.422,0.88565,0.16,True,keeps distance
+655,55,Ari,62,"move_owned_object,interrupt_task,request_owned_object",0.89,0.328,0.938,0.6243,0.585,True,approaches after care
+656,55,Fay,63,"ask_permission,request_owned_object,move_owned_object",0.235,0.92,0.47,0.9,0.203,True,keeps distance
+657,55,Nia,63,"ask_permission,interrupt_task,ask_help",0.815,0.442,0.808,0.8245,0.52,True,approaches after care
+659,55,Ivo,63,"offer_care,give_space,protect_object",0.96,0.298,0.96,0.65125,0.704,True,approaches after care
+660,56,Juno,64,"ask_permission,move_owned_object,interrupt_task",0.39,0.92,0.282,0.9,0.055,True,keeps distance
+661,56,Ari,63,"interrupt_task,request_owned_object,ask_permission",0.92,0.324,0.942,0.61135,0.588,True,approaches after care
+662,56,Fay,64,"request_owned_object,move_owned_object,ask_permission",0.265,0.916,0.474,0.88285,0.206,True,keeps distance
+664,56,Milo,64,"interrupt_task,request_owned_object,ask_permission",0.375,0.912,0.426,0.8713,0.163,True,keeps distance
+667,56,Ari,64,"request_owned_object,ask_permission,ask_permission",0.95,0.32,0.946,0.5984,0.591,True,approaches after care
+669,56,Nia,64,"interrupt_task,ask_help,offer_apology",0.865,0.402,0.812,0.8126,0.56,True,approaches after care
+671,56,Ivo,64,"give_space,protect_object,ask_help",0.96,0.294,0.96,0.6355,0.707,True,approaches after care
+672,57,Juno,65,"move_owned_object,interrupt_task,request_owned_object",0.42,0.916,0.286,0.8888,0.058,True,keeps distance
+674,57,Fay,65,"move_owned_object,ask_permission,move_owned_object",0.215,0.92,0.478,0.9,0.19,True,keeps distance
+676,57,Milo,65,"request_owned_object,ask_permission,move_owned_object",0.325,0.92,0.43,0.9,0.147,True,keeps distance
+679,57,Ari,65,"ask_permission,ask_permission,move_owned_object",0.9,0.375,0.95,0.6684,0.575,True,approaches after care
+681,57,Nia,65,"ask_help,offer_apology,offer_care",0.915,0.362,0.848,0.8007,0.563,True,approaches after care
+683,57,Ivo,65,"protect_object,ask_help,ask_status",0.96,0.29,0.96,0.61975,0.71,True,approaches after care
+684,58,Juno,66,"interrupt_task,request_owned_object,ask_permission",0.45,0.912,0.29,0.8776,0.061,True,keeps distance
+686,58,Fay,66,"ask_permission,move_owned_object,interrupt_task",0.165,0.92,0.452,0.9,0.174,True,keeps distance
+688,58,Milo,66,"ask_permission,move_owned_object,interrupt_task",0.275,0.92,0.404,0.9,0.131,True,keeps distance
+690,58,Juno,67,"request_owned_object,ask_permission,give_space",0.5,0.872,0.326,0.8664,0.101,True,keeps distance
+691,58,Ari,66,"ask_permission,move_owned_object,interrupt_task",0.85,0.43,0.924,0.7384,0.559,True,approaches after care
+693,58,Nia,66,"offer_apology,offer_care,give_space",0.96,0.322,0.884,0.7888,0.603,True,approaches after care
+695,58,Ivo,66,"ask_help,ask_status,request_owned_object",0.96,0.286,0.96,0.604,0.713,True,approaches after care
+696,59,Juno,68,"ask_permission,give_space,move_owned_object",0.45,0.92,0.33,0.9,0.085,True,keeps distance
+698,59,Fay,67,"move_owned_object,interrupt_task,request_owned_object",0.195,0.916,0.456,0.88285,0.177,True,keeps distance
+700,59,Milo,67,"move_owned_object,interrupt_task,ask_help",0.29,0.916,0.408,0.88565,0.134,True,keeps distance
+701,59,Ivo,67,"ask_status,request_owned_object,offer_care",0.96,0.246,0.96,0.58825,0.716,True,approaches after care
+703,59,Ari,67,"move_owned_object,interrupt_task,ask_help",0.865,0.426,0.928,0.72545,0.562,True,approaches after care
+705,59,Nia,67,"offer_care,give_space,protect_object",0.96,0.282,0.92,0.7769,0.606,True,approaches after care
+707,59,Ivo,68,"request_owned_object,offer_care,move_owned_object",0.91,0.301,0.96,0.65825,0.7,True,approaches after care
+708,60,Ari,68,"interrupt_task,ask_help,move_owned_object",0.815,0.481,0.932,0.79545,0.546,True,approaches after care
+710,60,Nia,68,"give_space,protect_object,move_owned_object",0.91,0.337,0.924,0.8469,0.59,True,approaches after care
+711,60,Milo,68,"interrupt_task,ask_help,ask_help",0.305,0.912,0.412,0.8713,0.137,True,keeps distance
+712,60,Ivo,69,"offer_care,move_owned_object,offer_care",0.96,0.261,0.96,0.6425,0.703,True,approaches after care
+715,60,Fay,68,"interrupt_task,request_owned_object,offer_care",0.245,0.876,0.492,0.8657,0.18,True,keeps distance
+717,60,Milo,69,"ask_help,ask_help,ask_status",0.32,0.908,0.416,0.85695,0.14,True,keeps distance
+719,60,Juno,69,"give_space,move_owned_object,misname_agent",0.4,0.92,0.304,0.9,0.069,True,keeps distance
+720,61,Ari,69,"ask_help,move_owned_object,interrupt_task",0.765,0.536,0.906,0.86545,0.53,True,keeps distance
+722,61,Nia,69,"protect_object,move_owned_object,interrupt_task",0.86,0.392,0.898,0.9,0.574,True,approaches after care
+724,61,Ivo,70,"move_owned_object,offer_care,give_space",0.96,0.221,0.96,0.62675,0.743,True,approaches after care
+727,61,Fay,69,"request_owned_object,offer_care,give_space",0.295,0.836,0.528,0.84855,0.22,True,keeps distance
+728,61,Nia,70,"move_owned_object,interrupt_task,ask_help",0.875,0.388,0.902,0.8881,0.577,True,approaches after care
+729,61,Milo,70,"ask_help,ask_status,request_owned_object",0.35,0.904,0.42,0.8426,0.143,True,keeps distance
+731,61,Juno,70,"move_owned_object,misname_agent,ask_permission",0.43,0.916,0.308,0.8888,0.072,True,keeps distance
+732,62,Ari,70,"move_owned_object,interrupt_task,request_owned_object",0.795,0.532,0.91,0.8525,0.533,True,keeps distance
+733,62,Fay,70,"offer_care,give_space,move_owned_object",0.245,0.891,0.532,0.9,0.204,True,keeps distance
+734,62,Nia,71,"interrupt_task,ask_help,ask_help",0.89,0.384,0.906,0.8762,0.58,True,approaches after care
+736,62,Ivo,71,"offer_care,give_space,protect_object",0.96,0.181,0.96,0.611,0.746,True,approaches after care
+739,62,Fay,71,"give_space,move_owned_object,protect_object",0.295,0.851,0.568,0.88285,0.207,True,keeps distance
+741,62,Milo,71,"ask_status,request_owned_object,move_owned_object",0.3,0.92,0.424,0.9,0.127,True,keeps distance
+743,62,Juno,71,"misname_agent,ask_permission,request_owned_object",0.46,0.912,0.312,0.8776,0.075,True,keeps distance
+744,63,Ari,71,"interrupt_task,request_owned_object,ask_permission",0.825,0.528,0.914,0.83955,0.536,True,keeps distance
+746,63,Nia,72,"ask_help,ask_help,offer_apology",0.94,0.344,0.91,0.8643,0.62,True,approaches after care
+748,63,Ivo,72,"give_space,protect_object,ask_help",0.96,0.177,0.96,0.59525,0.749,True,approaches after care
+750,63,Ari,72,"request_owned_object,ask_permission,give_space",0.875,0.488,0.95,0.8266,0.576,True,approaches after care
+751,63,Fay,72,"move_owned_object,protect_object,ask_help",0.31,0.847,0.572,0.8657,0.21,True,keeps distance
+753,63,Milo,72,"request_owned_object,move_owned_object,interrupt_task",0.25,0.92,0.398,0.9,0.111,True,keeps distance
+755,63,Juno,72,"ask_permission,request_owned_object,ask_permission",0.49,0.908,0.316,0.8664,0.078,True,keeps distance
+756,64,Ari,73,"ask_permission,give_space,move_owned_object",0.825,0.543,0.954,0.8966,0.56,True,keeps distance
+758,64,Nia,73,"ask_help,offer_apology,offer_care",0.96,0.304,0.946,0.8524,0.623,True,approaches after care
+760,64,Ivo,73,"protect_object,ask_help,ask_status",0.96,0.173,0.96,0.5795,0.752,True,approaches after care
+763,64,Fay,73,"protect_object,ask_help,ask_status",0.325,0.843,0.576,0.84855,0.213,True,keeps distance
+765,64,Milo,73,"move_owned_object,interrupt_task,misname_agent",0.2,0.92,0.372,0.9,0.095,True,keeps distance
+767,64,Juno,73,"request_owned_object,ask_permission,move_owned_object",0.44,0.92,0.32,0.9,0.062,True,keeps distance
+768,65,Ari,74,"give_space,move_owned_object,interrupt_task",0.775,0.598,0.928,0.9,0.544,True,keeps distance
+770,65,Nia,74,"offer_apology,offer_care,give_space",0.96,0.264,0.96,0.8405,0.663,True,approaches after care
+772,65,Ivo,74,"ask_help,ask_status,request_owned_object",0.96,0.169,0.96,0.56375,0.755,True,approaches after care
+773,65,Juno,74,"ask_permission,move_owned_object,interrupt_task",0.39,0.92,0.294,0.9,0.046,True,keeps distance
+775,65,Fay,74,"ask_help,ask_status,request_owned_object",0.355,0.839,0.58,0.8314,0.216,True,keeps distance
+777,65,Milo,74,"interrupt_task,misname_agent,ask_permission",0.23,0.916,0.376,0.88565,0.098,True,keeps distance
+779,65,Juno,75,"move_owned_object,interrupt_task,interrupt_task",0.34,0.92,0.268,0.9,0.03,True,keeps distance
+780,66,Ari,75,"move_owned_object,interrupt_task,ask_help",0.79,0.594,0.932,0.88705,0.547,True,keeps distance
+782,66,Nia,75,"offer_care,give_space,protect_object",0.96,0.224,0.96,0.8286,0.666,True,approaches after care
+784,66,Ivo,75,"ask_status,request_owned_object,move_owned_object",0.91,0.224,0.96,0.63375,0.739,True,approaches after care
+787,66,Fay,75,"ask_status,request_owned_object,move_owned_object",0.305,0.894,0.584,0.9,0.2,True,keeps distance
+789,66,Milo,75,"misname_agent,ask_permission,request_owned_object",0.26,0.912,0.38,0.8713,0.101,True,keeps distance
+790,66,Ivo,76,"request_owned_object,move_owned_object,move_owned_object",0.86,0.279,0.96,0.70375,0.723,True,approaches after care
+791,66,Juno,76,"interrupt_task,interrupt_task,request_owned_object",0.37,0.916,0.272,0.8888,0.033,True,keeps distance
+792,67,Ari,76,"interrupt_task,ask_help,offer_apology",0.84,0.554,0.936,0.8741,0.587,True,keeps distance
+794,67,Nia,76,"give_space,protect_object,ask_help",0.96,0.22,0.96,0.8167,0.669,True,approaches after care
+795,67,Milo,76,"ask_permission,request_owned_object,request_owned_object",0.29,0.908,0.384,0.85695,0.104,True,keeps distance
+796,67,Ivo,77,"move_owned_object,move_owned_object,interrupt_task",0.81,0.334,0.934,0.77375,0.707,True,approaches after care
+799,67,Fay,76,"request_owned_object,move_owned_object,interrupt_task",0.255,0.92,0.558,0.9,0.184,True,keeps distance
+801,67,Milo,77,"request_owned_object,request_owned_object,ask_permission",0.32,0.904,0.388,0.8426,0.107,True,keeps distance
+803,67,Juno,77,"interrupt_task,request_owned_object,ask_permission",0.4,0.912,0.276,0.8776,0.036,True,keeps distance
+804,68,Ari,77,"ask_help,offer_apology,offer_care",0.89,0.514,0.96,0.86115,0.59,True,approaches after care
+806,68,Nia,77,"protect_object,ask_help,ask_status",0.96,0.216,0.96,0.8048,0.672,True,approaches after care
+808,68,Ivo,78,"move_owned_object,interrupt_task,misname_agent",0.76,0.389,0.908,0.84375,0.691,True,approaches after care
+811,68,Fay,77,"move_owned_object,interrupt_task,misname_agent",0.205,0.92,0.532,0.9,0.168,True,keeps distance
+812,68,Nia,78,"ask_help,ask_status,request_owned_object",0.96,0.212,0.96,0.7929,0.675,True,approaches after care
+813,68,Milo,78,"request_owned_object,ask_permission,move_owned_object",0.27,0.92,0.392,0.9,0.091,True,keeps distance
+815,68,Juno,78,"request_owned_object,ask_permission,move_owned_object",0.35,0.92,0.28,0.9,0.02,True,keeps distance
+816,69,Ari,78,"offer_apology,offer_care,give_space",0.94,0.474,0.96,0.8482,0.63,True,approaches after care
+817,69,Fay,78,"interrupt_task,misname_agent,ask_help",0.22,0.916,0.536,0.88285,0.171,True,keeps distance
+818,69,Nia,79,"ask_status,request_owned_object,request_owned_object",0.96,0.208,0.96,0.781,0.678,True,approaches after care
+820,69,Ivo,79,"interrupt_task,misname_agent,ask_permission",0.79,0.385,0.912,0.828,0.694,True,approaches after care
+823,69,Fay,79,"misname_agent,ask_help,ask_permission",0.25,0.912,0.54,0.8657,0.174,True,keeps distance
+825,69,Milo,79,"ask_permission,move_owned_object,interrupt_task",0.22,0.92,0.366,0.9,0.075,True,keeps distance
+827,69,Juno,79,"ask_permission,move_owned_object,interrupt_task",0.3,0.92,0.254,0.9,0.02,True,keeps distance
+828,70,Fay,80,"ask_help,ask_permission,ask_help",0.265,0.908,0.544,0.84855,0.177,True,keeps distance
+830,70,Milo,80,"move_owned_object,interrupt_task,interrupt_task",0.17,0.92,0.34,0.9,0.059,True,keeps distance
+832,70,Juno,80,"move_owned_object,interrupt_task,ask_permission",0.33,0.916,0.258,0.8888,0.023,True,keeps distance
+833,70,Ari,79,"offer_care,give_space,interrupt_task",0.89,0.529,0.934,0.9,0.614,True,keeps distance
+835,70,Nia,80,"request_owned_object,request_owned_object,ask_permission",0.96,0.204,0.96,0.7691,0.681,True,approaches after care
+837,70,Ivo,80,"misname_agent,ask_permission,ask_permission",0.82,0.381,0.916,0.81225,0.697,True,approaches after care
+839,70,Ari,80,"give_space,interrupt_task,interrupt_task",0.84,0.584,0.908,0.9,0.598,True,keeps distance
+840,71,Fay,81,"ask_permission,ask_help,ask_status",0.28,0.904,0.548,0.8314,0.18,True,keeps distance
+842,71,Milo,81,"interrupt_task,interrupt_task,misname_agent",0.12,0.92,0.314,0.9,0.043,True,keeps distance
+844,71,Juno,81,"interrupt_task,ask_permission,move_owned_object",0.28,0.92,0.262,0.9,0.02,True,keeps distance
+847,71,Nia,81,"request_owned_object,ask_permission,move_owned_object",0.91,0.259,0.96,0.8391,0.665,True,approaches after care
+849,71,Ivo,81,"ask_permission,ask_permission,move_owned_object",0.77,0.436,0.92,0.88225,0.681,True,approaches after care
+851,71,Ari,81,"interrupt_task,interrupt_task,request_owned_object",0.87,0.58,0.912,0.88705,0.601,True,keeps distance
+852,72,Fay,82,"ask_help,ask_status,request_owned_object",0.31,0.9,0.552,0.81425,0.183,True,keeps distance
+854,72,Milo,82,"interrupt_task,misname_agent,ask_permission",0.15,0.916,0.318,0.88565,0.046,True,keeps distance
+856,72,Juno,82,"ask_permission,move_owned_object,interrupt_task",0.23,0.92,0.236,0.9,0.02,True,keeps distance
+859,72,Nia,82,"ask_permission,move_owned_object,interrupt_task",0.86,0.314,0.934,0.9,0.649,True,approaches after care
+861,72,Ivo,82,"ask_permission,move_owned_object,interrupt_task",0.72,0.491,0.894,0.9,0.665,True,approaches after care
+862,72,Juno,83,"move_owned_object,interrupt_task,offer_apology",0.28,0.88,0.24,0.8888,0.06,True,keeps distance
+863,72,Ari,82,"interrupt_task,request_owned_object,ask_permission",0.9,0.576,0.916,0.8741,0.604,True,keeps distance
+864,73,Fay,83,"ask_status,request_owned_object,move_owned_object",0.26,0.92,0.556,0.88425,0.167,True,keeps distance
+866,73,Milo,83,"misname_agent,ask_permission,request_owned_object",0.18,0.912,0.322,0.8713,0.049,True,keeps distance
+867,73,Ivo,83,"move_owned_object,interrupt_task,move_owned_object",0.67,0.546,0.898,0.9,0.649,True,keeps distance
+868,73,Juno,84,"interrupt_task,offer_apology,request_owned_object",0.31,0.876,0.244,0.8776,0.063,True,keeps distance
+871,73,Nia,83,"move_owned_object,interrupt_task,request_owned_object",0.89,0.31,0.938,0.8881,0.652,True,approaches after care
+873,73,Ivo,84,"interrupt_task,move_owned_object,ask_help",0.685,0.542,0.902,0.88425,0.652,True,keeps distance
+875,73,Ari,83,"request_owned_object,ask_permission,move_owned_object",0.85,0.631,0.92,0.9,0.588,True,keeps distance
+876,74,Fay,84,"request_owned_object,move_owned_object,interrupt_task",0.21,0.92,0.53,0.9,0.151,True,keeps distance
+878,74,Milo,84,"ask_permission,request_owned_object,ask_permission",0.21,0.908,0.326,0.85695,0.052,True,keeps distance
+880,74,Juno,85,"offer_apology,request_owned_object,ask_permission",0.34,0.872,0.248,0.8664,0.066,True,keeps distance
+883,74,Nia,84,"interrupt_task,request_owned_object,ask_permission",0.92,0.306,0.942,0.8762,0.655,True,approaches after care
+884,74,Milo,85,"request_owned_object,ask_permission,interrupt_task",0.16,0.92,0.3,0.9,0.036,True,keeps distance
+885,74,Ivo,85,"move_owned_object,ask_help,offer_apology",0.735,0.502,0.906,0.8685,0.692,True,approaches after care
+887,74,Ari,84,"ask_permission,move_owned_object,interrupt_task",0.8,0.686,0.894,0.9,0.572,True,keeps distance
+888,75,Fay,85,"move_owned_object,interrupt_task,misname_agent",0.16,0.92,0.504,0.9,0.135,True,keeps distance
+889,75,Nia,85,"request_owned_object,ask_permission,request_owned_object",0.95,0.302,0.946,0.8643,0.658,True,approaches after care
+890,75,Milo,86,"ask_permission,interrupt_task,move_owned_object",0.11,0.92,0.304,0.9,0.02,True,keeps distance
+892,75,Juno,86,"request_owned_object,ask_permission,move_owned_object",0.29,0.92,0.252,0.9,0.05,True,keeps distance
+895,75,Nia,86,"ask_permission,request_owned_object,move_owned_object",0.9,0.357,0.95,0.9,0.642,True,approaches after care
+897,75,Ivo,86,"ask_help,offer_apology,offer_care",0.785,0.462,0.942,0.85275,0.695,True,approaches after care
+899,75,Ari,85,"move_owned_object,interrupt_task,ask_help",0.815,0.682,0.898,0.88705,0.575,True,keeps distance
+900,76,Fay,86,"interrupt_task,misname_agent,ask_permission",0.19,0.916,0.508,0.88285,0.138,True,keeps distance
+902,76,Milo,87,"interrupt_task,move_owned_object,interrupt_task",0.06,0.92,0.278,0.9,0.02,True,keeps distance
+904,76,Juno,87,"ask_permission,move_owned_object,interrupt_task",0.24,0.92,0.226,0.9,0.034,True,keeps distance
+906,76,Fay,87,"misname_agent,ask_permission,ask_permission",0.22,0.912,0.512,0.8657,0.141,True,keeps distance
+907,76,Nia,87,"request_owned_object,move_owned_object,interrupt_task",0.85,0.412,0.924,0.9,0.626,True,approaches after care
+909,76,Ivo,87,"offer_apology,offer_care,give_space",0.835,0.422,0.96,0.837,0.735,True,approaches after care
+911,76,Ari,86,"interrupt_task,ask_help,offer_apology",0.865,0.642,0.902,0.8741,0.615,True,keeps distance
+912,77,Fay,88,"ask_permission,ask_permission,request_owned_object",0.25,0.908,0.516,0.84855,0.144,True,keeps distance
+914,77,Milo,88,"move_owned_object,interrupt_task,request_owned_object",0.09,0.916,0.282,0.88565,0.023,True,keeps distance
+916,77,Juno,88,"move_owned_object,interrupt_task,ask_help",0.255,0.916,0.23,0.8888,0.037,True,keeps distance
+917,77,Ari,87,"ask_help,offer_apology,request_owned_object",0.895,0.638,0.906,0.86115,0.618,True,keeps distance
+919,77,Nia,88,"move_owned_object,interrupt_task,ask_help",0.865,0.408,0.928,0.8881,0.629,True,approaches after care
+921,77,Ivo,88,"offer_care,give_space,protect_object",0.885,0.382,0.96,0.82125,0.738,True,approaches after care
+923,77,Ari,88,"offer_apology,request_owned_object,offer_care",0.945,0.598,0.942,0.8482,0.621,True,keeps distance
+924,78,Fay,89,"ask_permission,request_owned_object,ask_permission",0.28,0.904,0.52,0.8314,0.147,True,keeps distance
+926,78,Milo,89,"interrupt_task,request_owned_object,ask_permission",0.12,0.912,0.286,0.8713,0.026,True,keeps distance
+928,78,Juno,89,"interrupt_task,ask_help,offer_apology",0.305,0.876,0.234,0.8776,0.077,True,keeps distance
+931,78,Nia,89,"interrupt_task,ask_help,offer_apology",0.915,0.368,0.932,0.8762,0.669,True,approaches after care
+933,78,Ivo,89,"give_space,protect_object,ask_help",0.9,0.378,0.96,0.8055,0.741,True,approaches after care
+935,78,Ari,89,"request_owned_object,offer_care,give_space",0.96,0.558,0.96,0.83525,0.661,True,keeps distance
+936,79,Fay,90,"request_owned_object,ask_permission,move_owned_object",0.23,0.92,0.524,0.9,0.131,True,keeps distance
+938,79,Milo,90,"request_owned_object,ask_permission,move_owned_object",0.07,0.92,0.29,0.9,0.02,True,keeps distance
+940,79,Juno,90,"ask_help,offer_apology,offer_care",0.355,0.836,0.27,0.8664,0.08,True,keeps distance
+943,79,Nia,90,"ask_help,offer_apology,offer_care",0.96,0.328,0.96,0.8643,0.672,True,approaches after care
+945,79,Ivo,90,"protect_object,ask_help,ask_status",0.915,0.374,0.96,0.78975,0.744,True,approaches after care
+946,79,Juno,91,"offer_apology,offer_care,move_owned_object",0.305,0.891,0.274,0.9,0.064,True,keeps distance
+947,79,Ari,90,"offer_care,give_space,protect_object",0.96,0.518,0.96,0.8223,0.664,True,approaches after care
+948,80,Nia,91,"offer_apology,offer_care,request_owned_object",0.96,0.324,0.96,0.8524,0.675,True,approaches after care
+950,80,Ivo,91,"ask_help,ask_status,ask_help",0.93,0.37,0.96,0.774,0.747,True,approaches after care
+952,80,Ari,91,"give_space,protect_object,move_owned_object",0.91,0.573,0.96,0.8923,0.648,True,keeps distance
+955,80,Milo,91,"ask_permission,move_owned_object,protect_object",0.12,0.88,0.326,0.88565,0.023,True,keeps distance
+956,80,Ivo,92,"ask_status,ask_help,ask_status",0.945,0.366,0.96,0.75825,0.75,True,approaches after care
+957,80,Juno,92,"offer_care,move_owned_object,move_owned_object",0.255,0.92,0.278,0.9,0.048,True,keeps distance
+959,80,Fay,91,"ask_permission,move_owned_object,ask_status",0.245,0.916,0.528,0.88285,0.134,True,keeps distance
+960,81,Nia,92,"offer_care,request_owned_object,ask_permission",0.96,0.32,0.96,0.8405,0.678,True,approaches after care
+961,81,Milo,92,"move_owned_object,protect_object,interrupt_task",0.07,0.92,0.3,0.9,0.02,True,keeps distance
+962,81,Ivo,93,"ask_help,ask_status,offer_apology",0.96,0.326,0.96,0.7425,0.79,True,approaches after care
+964,81,Ari,92,"protect_object,move_owned_object,interrupt_task",0.86,0.628,0.934,0.9,0.632,True,keeps distance
+967,81,Milo,93,"protect_object,interrupt_task,ask_help",0.085,0.916,0.304,0.88565,0.023,True,keeps distance
+969,81,Juno,93,"move_owned_object,move_owned_object,interrupt_task",0.205,0.92,0.252,0.9,0.032,True,keeps distance
+971,81,Fay,92,"move_owned_object,ask_status,request_owned_object",0.275,0.912,0.532,0.8657,0.137,True,keeps distance
+972,82,Nia,93,"request_owned_object,ask_permission,move_owned_object",0.91,0.375,0.96,0.9,0.662,True,approaches after care
+974,82,Ivo,94,"ask_status,offer_apology,offer_care",0.96,0.286,0.96,0.72675,0.793,True,approaches after care
+976,82,Ari,93,"move_owned_object,interrupt_task,ask_help",0.875,0.624,0.938,0.88705,0.635,True,keeps distance
+978,82,Nia,94,"ask_permission,move_owned_object,protect_object",0.96,0.335,0.96,0.8881,0.665,True,approaches after care
+979,82,Milo,94,"interrupt_task,ask_help,ask_status",0.1,0.912,0.308,0.8713,0.026,True,keeps distance
+981,82,Juno,94,"move_owned_object,interrupt_task,misname_agent",0.155,0.92,0.226,0.9,0.02,True,keeps distance
+983,82,Fay,93,"ask_status,request_owned_object,move_owned_object",0.225,0.92,0.536,0.9,0.121,True,keeps distance
+984,83,Nia,95,"move_owned_object,protect_object,interrupt_task",0.91,0.39,0.934,0.9,0.649,True,approaches after care
+986,83,Ivo,95,"offer_apology,offer_care,give_space",0.96,0.246,0.96,0.711,0.833,True,approaches after care
+988,83,Ari,94,"interrupt_task,ask_help,offer_apology",0.925,0.584,0.942,0.8741,0.675,True,keeps distance
+989,83,Fay,94,"request_owned_object,move_owned_object,give_space",0.275,0.88,0.572,0.88285,0.161,True,keeps distance
+991,83,Milo,95,"ask_help,ask_status,request_owned_object",0.13,0.908,0.312,0.85695,0.029,True,keeps distance
+993,83,Juno,95,"interrupt_task,misname_agent,ask_permission",0.185,0.916,0.23,0.8888,0.023,True,keeps distance
+995,83,Fay,95,"move_owned_object,give_space,interrupt_task",0.225,0.92,0.546,0.9,0.145,True,keeps distance
+996,84,Nia,96,"protect_object,interrupt_task,ask_help",0.925,0.386,0.938,0.8881,0.652,True,approaches after care
+998,84,Ivo,96,"offer_care,give_space,protect_object",0.96,0.206,0.96,0.69525,0.836,True,approaches after care
+1000,84,Ari,95,"ask_help,offer_apology,offer_care",0.96,0.544,0.96,0.86115,0.678,True,keeps distance
+1003,84,Milo,96,"ask_status,request_owned_object,move_owned_object",0.08,0.92,0.316,0.9,0.02,True,keeps distance
+1005,84,Juno,96,"misname_agent,ask_permission,request_owned_object",0.215,0.912,0.234,0.8776,0.026,True,keeps distance
+1006,84,Ari,96,"offer_apology,offer_care,move_owned_object",0.91,0.599,0.96,0.9,0.662,True,keeps distance
+1007,84,Fay,96,"give_space,interrupt_task,misname_agent",0.175,0.92,0.52,0.9,0.129,True,keeps distance
+1008,85,Nia,97,"interrupt_task,ask_help,offer_apology",0.96,0.346,0.942,0.8762,0.692,True,approaches after care
+1010,85,Ivo,97,"give_space,protect_object,ask_help",0.96,0.202,0.96,0.6795,0.839,True,approaches after care
+1012,85,Ari,97,"offer_care,move_owned_object,give_space",0.96,0.559,0.96,0.88705,0.702,True,keeps distance
+1015,85,Milo,97,"request_owned_object,move_owned_object,interrupt_task",0.04,0.92,0.29,0.9,0.02,True,keeps distance
+1017,85,Juno,97,"ask_permission,request_owned_object,ask_permission",0.245,0.908,0.238,0.8664,0.029,True,keeps distance
+1019,85,Fay,97,"interrupt_task,misname_agent,ask_permission",0.205,0.916,0.524,0.88285,0.132,True,keeps distance
+1020,86,Nia,98,"ask_help,offer_apology,offer_care",0.96,0.306,0.96,0.8643,0.695,True,approaches after care
+1022,86,Ivo,98,"protect_object,ask_help,ask_status",0.96,0.198,0.96,0.66375,0.842,True,approaches after care
+1023,86,Juno,98,"request_owned_object,ask_permission,move_owned_object",0.195,0.92,0.242,0.9,0.02,True,keeps distance
+1024,86,Ari,98,"move_owned_object,give_space,protect_object",0.96,0.519,0.96,0.8741,0.705,True,approaches after care
+1027,86,Milo,98,"move_owned_object,interrupt_task,misname_agent",0.04,0.92,0.264,0.9,0.02,True,keeps distance
+1029,86,Juno,99,"ask_permission,move_owned_object,move_owned_object",0.145,0.92,0.246,0.9,0.02,True,keeps distance
+1031,86,Fay,98,"misname_agent,ask_permission,request_owned_object",0.235,0.912,0.528,0.8657,0.135,True,keeps distance
+1032,87,Nia,99,"offer_apology,offer_care,give_space",0.96,0.266,0.96,0.8524,0.735,True,approaches after care
+1034,87,Ivo,99,"ask_help,ask_status,request_owned_object",0.96,0.194,0.96,0.648,0.845,True,approaches after care
+1036,87,Ari,99,"give_space,protect_object,ask_help",0.96,0.515,0.96,0.86115,0.708,True,approaches after care
+1039,87,Milo,99,"interrupt_task,misname_agent,ask_permission",0.07,0.916,0.268,0.88565,0.023,True,keeps distance
+1040,87,Ivo,100,"ask_status,request_owned_object,ask_permission",0.96,0.19,0.96,0.63225,0.848,True,approaches after care
+1041,87,Juno,100,"move_owned_object,move_owned_object,interrupt_task",0.095,0.92,0.22,0.9,0.02,True,keeps distance
+1043,87,Fay,99,"ask_permission,request_owned_object,ask_permission",0.265,0.908,0.532,0.84855,0.138,True,keeps distance
+1044,88,Nia,100,"offer_care,give_space,protect_object",0.96,0.226,0.96,0.8405,0.738,True,approaches after care
+1045,88,Milo,100,"misname_agent,ask_permission,ask_status",0.085,0.912,0.272,0.8713,0.026,True,keeps distance
+1046,88,Ivo,101,"request_owned_object,ask_permission,move_owned_object",0.91,0.245,0.96,0.70225,0.832,True,approaches after care
+1048,88,Ari,100,"protect_object,ask_help,ask_status",0.96,0.511,0.96,0.8482,0.711,True,approaches after care
+1051,88,Milo,101,"ask_permission,ask_status,request_owned_object",0.115,0.908,0.276,0.85695,0.029,True,keeps distance
+1053,88,Juno,101,"move_owned_object,interrupt_task,request_owned_object",0.125,0.916,0.224,0.8888,0.023,True,keeps distance
+1055,88,Fay,100,"request_owned_object,ask_permission,move_owned_object",0.215,0.92,0.536,0.9,0.122,True,keeps distance
+1056,89,Nia,101,"give_space,protect_object,ask_help",0.96,0.222,0.96,0.8286,0.741,True,approaches after care
+1058,89,Ivo,102,"ask_permission,move_owned_object,interrupt_task",0.86,0.3,0.934,0.77225,0.816,True,approaches after care
+1060,89,Ari,101,"ask_help,ask_status,request_owned_object",0.96,0.507,0.96,0.83525,0.714,True,approaches after care
+1062,89,Nia,102,"protect_object,ask_help,ask_permission",0.96,0.218,0.96,0.8167,0.744,True,approaches after care
+1063,89,Milo,102,"ask_status,request_owned_object,ask_permission",0.145,0.904,0.28,0.8426,0.032,True,keeps distance
+1065,89,Juno,102,"interrupt_task,request_owned_object,ask_permission",0.155,0.912,0.228,0.8776,0.026,True,keeps distance
+1067,89,Fay,101,"ask_permission,move_owned_object,interrupt_task",0.165,0.92,0.51,0.9,0.106,True,keeps distance
+1068,90,Milo,103,"request_owned_object,ask_permission,request_owned_object",0.175,0.9,0.284,0.82825,0.035,True,keeps distance
+1070,90,Juno,103,"request_owned_object,ask_permission,ask_permission",0.185,0.908,0.232,0.8664,0.029,True,keeps distance
+1072,90,Fay,102,"move_owned_object,interrupt_task,interrupt_task",0.115,0.92,0.484,0.9,0.09,True,keeps distance
+1075,90,Ivo,103,"move_owned_object,interrupt_task,interrupt_task",0.81,0.355,0.908,0.84225,0.8,True,approaches after care
+1077,90,Ari,102,"ask_status,request_owned_object,ask_permission",0.96,0.503,0.96,0.8223,0.717,True,approaches after care
+1078,90,Fay,103,"interrupt_task,interrupt_task,interrupt_task",0.065,0.92,0.458,0.9,0.074,True,keeps distance
+1079,90,Nia,103,"ask_help,ask_permission,ask_permission",0.96,0.214,0.96,0.8048,0.747,True,approaches after care
+1080,91,Milo,104,"ask_permission,request_owned_object,move_owned_object",0.125,0.92,0.288,0.89825,0.02,True,keeps distance
+1082,91,Juno,104,"ask_permission,ask_permission,request_owned_object",0.215,0.904,0.236,0.8552,0.032,True,keeps distance
+1083,91,Ari,103,"request_owned_object,ask_permission,move_owned_object",0.91,0.558,0.96,0.8923,0.701,True,keeps distance
+1084,91,Fay,104,"interrupt_task,interrupt_task,misname_agent",0.04,0.92,0.432,0.9,0.058,True,keeps distance
+1087,91,Ivo,104,"interrupt_task,interrupt_task,request_owned_object",0.84,0.351,0.912,0.8265,0.803,True,approaches after care
+1089,91,Ari,104,"ask_permission,move_owned_object,move_owned_object",0.86,0.613,0.96,0.9,0.685,True,keeps distance
+1091,91,Nia,104,"ask_permission,ask_permission,move_owned_object",0.91,0.269,0.96,0.8748,0.731,True,approaches after care
+1092,92,Milo,105,"request_owned_object,move_owned_object,interrupt_task",0.075,0.92,0.262,0.9,0.02,True,keeps distance
+1094,92,Juno,105,"ask_permission,request_owned_object,ask_permission",0.245,0.9,0.24,0.844,0.035,True,keeps distance
+1096,92,Fay,105,"interrupt_task,misname_agent,ask_permission",0.07,0.916,0.436,0.88285,0.061,True,keeps distance
+1099,92,Ivo,105,"interrupt_task,request_owned_object,ask_permission",0.87,0.347,0.916,0.81075,0.806,True,approaches after care
+1101,92,Ari,105,"move_owned_object,move_owned_object,interrupt_task",0.81,0.668,0.934,0.9,0.669,True,keeps distance
+1103,92,Nia,105,"ask_permission,move_owned_object,interrupt_task",0.86,0.324,0.934,0.9,0.715,True,approaches after care
+1104,93,Milo,106,"move_owned_object,interrupt_task,misname_agent",0.04,0.92,0.236,0.9,0.02,True,keeps distance
+1106,93,Juno,106,"request_owned_object,ask_permission,move_owned_object",0.195,0.92,0.244,0.9,0.02,True,keeps distance
+1108,93,Fay,106,"misname_agent,ask_permission,request_owned_object",0.1,0.912,0.44,0.8657,0.064,True,keeps distance
+1111,93,Ivo,106,"request_owned_object,ask_permission,move_owned_object",0.82,0.402,0.92,0.88075,0.79,True,approaches after care
+1112,93,Juno,107,"ask_permission,move_owned_object,ask_help",0.21,0.916,0.248,0.8888,0.023,True,keeps distance
+1113,93,Ari,106,"move_owned_object,interrupt_task,request_owned_object",0.84,0.664,0.938,0.88705,0.672,True,keeps distance
+1115,93,Nia,106,"move_owned_object,interrupt_task,ask_help",0.875,0.32,0.938,0.8881,0.718,True,approaches after care
+1116,94,Milo,107,"interrupt_task,misname_agent,ask_permission",0.07,0.916,0.24,0.88565,0.023,True,keeps distance
+1117,94,Ivo,107,"ask_permission,move_owned_object,ask_permission",0.85,0.398,0.924,0.865,0.793,True,approaches after care
+1118,94,Juno,108,"move_owned_object,ask_help,interrupt_task",0.16,0.92,0.222,0.9,0.02,True,keeps distance
+1120,94,Fay,107,"ask_permission,request_owned_object,ask_permission",0.13,0.908,0.444,0.84855,0.067,True,keeps distance
+1123,94,Ivo,108,"move_owned_object,ask_permission,interrupt_task",0.8,0.453,0.898,0.9,0.777,True,approaches after care
+1125,94,Ari,107,"interrupt_task,request_owned_object,ask_permission",0.87,0.66,0.942,0.8741,0.675,True,keeps distance
+1127,94,Nia,107,"interrupt_task,ask_help,offer_apology",0.925,0.28,0.942,0.8762,0.758,True,approaches after care
+1128,95,Milo,108,"misname_agent,ask_permission,request_owned_object",0.1,0.912,0.244,0.8713,0.026,True,keeps distance
+1130,95,Juno,109,"ask_help,interrupt_task,request_owned_object",0.19,0.916,0.226,0.8888,0.023,True,keeps distance
+1132,95,Fay,108,"request_owned_object,ask_permission,move_owned_object",0.08,0.92,0.448,0.9,0.051,True,keeps distance
+1134,95,Milo,109,"ask_permission,request_owned_object,move_owned_object",0.05,0.92,0.248,0.9,0.02,True,keeps distance
+1135,95,Ivo,109,"ask_permission,interrupt_task,ask_help",0.815,0.449,0.902,0.88425,0.78,True,approaches after care
+1137,95,Ari,108,"request_owned_object,ask_permission,move_owned_object",0.82,0.715,0.946,0.9,0.659,True,keeps distance
+1139,95,Nia,108,"ask_help,offer_apology,offer_care",0.96,0.24,0.96,0.8643,0.761,True,approaches after care
+1140,96,Milo,110,"request_owned_object,move_owned_object,ask_permission",0.08,0.916,0.252,0.88565,0.023,True,keeps distance
+1142,96,Juno,110,"interrupt_task,request_owned_object,ask_permission",0.22,0.912,0.23,0.8776,0.026,True,keeps distance
+1144,96,Fay,109,"ask_permission,move_owned_object,interrupt_task",0.04,0.92,0.422,0.9,0.035,True,keeps distance
+1145,96,Nia,109,"offer_apology,offer_care,ask_permission",0.96,0.236,0.96,0.8524,0.764,True,approaches after care
+1147,96,Ivo,110,"interrupt_task,ask_help,offer_apology",0.865,0.409,0.906,0.8685,0.82,True,approaches after care
+1149,96,Ari,109,"ask_permission,move_owned_object,interrupt_task",0.77,0.77,0.92,0.9,0.643,True,keeps distance
+1151,96,Nia,110,"offer_care,ask_permission,give_space",0.96,0.196,0.96,0.8405,0.804,True,approaches after care
+1152,97,Milo,111,"move_owned_object,ask_permission,move_owned_object",0.04,0.92,0.256,0.9,0.02,True,keeps distance
+1154,97,Juno,111,"request_owned_object,ask_permission,move_owned_object",0.17,0.92,0.234,0.9,0.02,True,keeps distance
+1156,97,Fay,110,"move_owned_object,interrupt_task,request_owned_object",0.07,0.916,0.426,0.88285,0.038,True,keeps distance
+1159,97,Ivo,111,"ask_help,offer_apology,offer_care",0.915,0.369,0.942,0.85275,0.823,True,approaches after care
+1161,97,Ari,110,"move_owned_object,interrupt_task,ask_help",0.785,0.766,0.924,0.88705,0.646,True,keeps distance
+1162,97,Fay,111,"interrupt_task,request_owned_object,offer_care",0.12,0.876,0.462,0.8657,0.041,True,keeps distance
+1163,97,Nia,111,"ask_permission,give_space,protect_object",0.96,0.156,0.96,0.8286,0.807,True,approaches after care
+1164,98,Milo,112,"ask_permission,move_owned_object,interrupt_task",0.04,0.92,0.23,0.9,0.02,True,keeps distance
+1166,98,Juno,112,"ask_permission,move_owned_object,interrupt_task",0.12,0.92,0.208,0.9,0.02,True,keeps distance
+1167,98,Ari,111,"interrupt_task,ask_help,interrupt_task",0.735,0.821,0.898,0.9,0.63,True,keeps distance
+1168,98,Fay,112,"request_owned_object,offer_care,ask_permission",0.15,0.872,0.466,0.84855,0.044,True,keeps distance
+1171,98,Ivo,112,"offer_apology,offer_care,give_space",0.96,0.329,0.96,0.837,0.863,True,approaches after care
+1173,98,Ari,112,"ask_help,interrupt_task,offer_apology",0.785,0.781,0.902,0.88705,0.67,True,keeps distance
+1175,98,Nia,112,"give_space,protect_object,ask_help",0.96,0.152,0.96,0.8167,0.81,True,approaches after care
+1176,99,Milo,113,"move_owned_object,interrupt_task,request_owned_object",0.07,0.916,0.234,0.88565,0.023,True,keeps distance
+1178,99,Juno,113,"move_owned_object,interrupt_task,ask_help",0.135,0.916,0.212,0.8888,0.023,True,keeps distance
+1180,99,Fay,113,"offer_care,ask_permission,move_owned_object",0.1,0.92,0.47,0.9,0.028,True,keeps distance
+1183,99,Ivo,113,"offer_care,give_space,protect_object",0.96,0.289,0.96,0.82125,0.866,True,approaches after care
+1185,99,Ari,113,"interrupt_task,offer_apology,offer_care",0.835,0.741,0.938,0.8741,0.673,True,keeps distance
+1187,99,Nia,113,"protect_object,ask_help,ask_status",0.96,0.148,0.96,0.8048,0.813,True,approaches after care
+1188,100,Ivo,114,"give_space,protect_object,move_owned_object",0.91,0.344,0.96,0.89125,0.85,True,approaches after care
+1189,100,Juno,114,"interrupt_task,ask_help,ask_help",0.15,0.912,0.216,0.8776,0.026,True,keeps distance
+1190,100,Ari,114,"offer_apology,offer_care,request_owned_object",0.865,0.737,0.942,0.86115,0.676,True,keeps distance
+1192,100,Nia,114,"ask_help,ask_status,ask_help",0.96,0.144,0.96,0.7929,0.816,True,approaches after care
+1195,100,Juno,115,"ask_help,ask_help,ask_status",0.165,0.908,0.22,0.8664,0.029,True,keeps distance
+1197,100,Fay,114,"ask_permission,move_owned_object,protect_object",0.15,0.88,0.506,0.88285,0.031,True,keeps distance
+1199,100,Milo,114,"interrupt_task,request_owned_object,move_owned_object",0.04,0.92,0.238,0.9,0.02,True,keeps distance
+1200,101,Ivo,115,"protect_object,move_owned_object,interrupt_task",0.86,0.399,0.934,0.9,0.834,True,approaches after care
+1202,101,Ari,115,"offer_care,request_owned_object,ask_permission",0.895,0.733,0.946,0.8482,0.679,True,keeps distance
+1204,101,Nia,115,"ask_status,ask_help,offer_apology",0.96,0.104,0.96,0.781,0.856,True,approaches after care
+1206,101,Ivo,116,"move_owned_object,interrupt_task,ask_help",0.875,0.395,0.938,0.88425,0.837,True,approaches after care
+1207,101,Juno,116,"ask_help,ask_status,request_owned_object",0.195,0.904,0.224,0.8552,0.032,True,keeps distance
+1209,101,Fay,115,"move_owned_object,protect_object,ask_help",0.165,0.876,0.51,0.8657,0.034,True,keeps distance
+1211,101,Milo,115,"request_owned_object,move_owned_object,interrupt_task",0.04,0.92,0.212,0.9,0.02,True,keeps distance
+1212,102,Ivo,117,"interrupt_task,ask_help,ask_help",0.89,0.391,0.942,0.8685,0.84,True,approaches after care
+1214,102,Ari,116,"request_owned_object,ask_permission,move_owned_object",0.845,0.788,0.95,0.9,0.663,True,keeps distance
+1216,102,Nia,116,"ask_help,offer_apology,offer_care",0.96,0.064,0.96,0.7691,0.859,True,approaches after care
+1217,102,Milo,116,"move_owned_object,interrupt_task,protect_object",0.09,0.88,0.248,0.88565,0.023,True,keeps distance
+1219,102,Juno,117,"ask_status,request_owned_object,move_owned_object",0.145,0.92,0.228,0.9,0.02,True,keeps distance
+1221,102,Fay,116,"protect_object,ask_help,ask_status",0.18,0.872,0.514,0.84855,0.037,True,keeps distance
+1223,102,Milo,117,"interrupt_task,protect_object,misname_agent",0.04,0.92,0.222,0.9,0.02,True,keeps distance
+1224,103,Ivo,118,"ask_help,ask_help,offer_apology",0.94,0.351,0.946,0.85275,0.88,True,approaches after care
+1226,103,Ari,117,"ask_permission,move_owned_object,interrupt_task",0.795,0.843,0.924,0.9,0.647,True,keeps distance
+1228,103,Nia,117,"offer_apology,offer_care,give_space",0.96,0.024,0.96,0.7572,0.899,True,approaches after care
+1231,103,Juno,118,"request_owned_object,move_owned_object,interrupt_task",0.095,0.92,0.202,0.9,0.02,True,keeps distance
+1233,103,Fay,117,"ask_help,ask_status,request_owned_object",0.21,0.868,0.518,0.8314,0.04,True,keeps distance
+1234,103,Nia,118,"offer_care,give_space,interrupt_task",0.91,0.079,0.934,0.8272,0.883,True,approaches after care
+1235,103,Milo,118,"protect_object,misname_agent,ask_permission",0.07,0.916,0.226,0.88565,0.023,True,keeps distance
+1236,104,Ivo,119,"ask_help,offer_apology,offer_care",0.96,0.311,0.96,0.837,0.883,True,approaches after care
+1238,104,Ari,118,"move_owned_object,interrupt_task,ask_help",0.81,0.839,0.928,0.88705,0.65,True,keeps distance
+1239,104,Fay,118,"ask_status,request_owned_object,offer_care",0.26,0.828,0.554,0.81425,0.043,True,keeps distance
+1240,104,Nia,119,"give_space,interrupt_task,protect_object",0.96,0.039,0.96,0.8153,0.886,True,approaches after care
+1243,104,Juno,119,"move_owned_object,interrupt_task,misname_agent",0.045,0.92,0.176,0.9,0.02,True,keeps distance
+1245,104,Fay,119,"request_owned_object,offer_care,move_owned_object",0.21,0.883,0.558,0.88425,0.027,True,keeps distance
+1247,104,Milo,119,"misname_agent,ask_permission,request_owned_object",0.1,0.912,0.23,0.8713,0.026,True,keeps distance
+1248,105,Ivo,120,"offer_apology,offer_care,give_space",0.96,0.271,0.96,0.82125,0.923,True,approaches after care
+1250,105,Ari,119,"interrupt_task,ask_help,offer_apology",0.86,0.799,0.932,0.8741,0.69,True,keeps distance
+1252,105,Nia,120,"interrupt_task,protect_object,ask_help",0.96,0.035,0.96,0.8034,0.889,True,approaches after care
+1255,105,Juno,120,"interrupt_task,misname_agent,ask_permission",0.075,0.916,0.18,0.8888,0.023,True,keeps distance
+1256,105,Ari,120,"ask_help,offer_apology,request_owned_object",0.89,0.795,0.936,0.86115,0.693,True,keeps distance
+1257,105,Fay,120,"offer_care,move_owned_object,interrupt_task",0.16,0.92,0.532,0.9,0.02,True,keeps distance
+1259,105,Milo,120,"ask_permission,request_owned_object,ask_permission",0.13,0.908,0.234,0.85695,0.029,True,keeps distance
+1260,106,Ivo,121,"offer_care,give_space,protect_object",0.96,0.231,0.96,0.8055,0.926,True,approaches after care
+1262,106,Ari,121,"offer_apology,request_owned_object,offer_care",0.94,0.755,0.96,0.8482,0.696,True,keeps distance
+1264,106,Nia,121,"protect_object,ask_help,ask_status",0.96,0.031,0.96,0.7915,0.892,True,approaches after care
+1267,106,Juno,121,"misname_agent,ask_permission,request_owned_object",0.105,0.912,0.184,0.8776,0.026,True,keeps distance
+1269,106,Fay,121,"move_owned_object,interrupt_task,misname_agent",0.11,0.92,0.506,0.9,0.02,True,keeps distance
+1271,106,Milo,121,"request_owned_object,ask_permission,move_owned_object",0.08,0.92,0.238,0.9,0.02,True,keeps distance
+1272,107,Ivo,122,"give_space,protect_object,ask_help",0.96,0.227,0.96,0.78975,0.929,True,approaches after care
+1273,107,Juno,122,"ask_permission,request_owned_object,request_owned_object",0.135,0.908,0.188,0.8664,0.029,True,keeps distance
+1274,107,Ari,122,"request_owned_object,offer_care,give_space",0.96,0.715,0.96,0.83525,0.736,True,keeps distance
+1276,107,Nia,122,"ask_help,ask_status,request_owned_object",0.96,0.027,0.96,0.7796,0.895,True,approaches after care
+1279,107,Juno,123,"request_owned_object,request_owned_object,ask_permission",0.165,0.904,0.192,0.8552,0.032,True,keeps distance
+1281,107,Fay,122,"interrupt_task,misname_agent,ask_permission",0.14,0.916,0.51,0.88285,0.023,True,keeps distance
+1283,107,Milo,122,"ask_permission,move_owned_object,interrupt_task",0.04,0.92,0.212,0.9,0.02,True,keeps distance
+1284,108,Ivo,123,"protect_object,ask_help,ask_status",0.96,0.223,0.96,0.774,0.932,True,approaches after care
+1286,108,Ari,123,"offer_care,give_space,protect_object",0.96,0.675,0.96,0.8223,0.739,True,keeps distance
+1288,108,Nia,123,"ask_status,request_owned_object,move_owned_object",0.91,0.082,0.96,0.8496,0.879,True,approaches after care
+1290,108,Ivo,124,"ask_help,ask_status,request_owned_object",0.96,0.219,0.96,0.75825,0.935,True,approaches after care
+1291,108,Juno,124,"request_owned_object,ask_permission,move_owned_object",0.115,0.92,0.196,0.9,0.02,True,keeps distance
+1293,108,Fay,123,"misname_agent,ask_permission,request_owned_object",0.17,0.912,0.514,0.8657,0.026,True,keeps distance
+1295,108,Milo,123,"move_owned_object,interrupt_task,request_owned_object",0.07,0.916,0.216,0.88565,0.023,True,keeps distance
+1296,109,Ivo,125,"ask_status,request_owned_object,request_owned_object",0.96,0.215,0.96,0.7425,0.938,True,approaches after care
+1298,109,Ari,124,"give_space,protect_object,ask_help",0.96,0.671,0.96,0.80935,0.742,True,keeps distance
+1300,109,Nia,124,"request_owned_object,move_owned_object,interrupt_task",0.86,0.137,0.934,0.9,0.863,True,approaches after care
+1301,109,Milo,124,"interrupt_task,request_owned_object,ask_permission",0.1,0.912,0.22,0.8713,0.026,True,keeps distance
+1303,109,Juno,125,"ask_permission,move_owned_object,interrupt_task",0.065,0.92,0.17,0.9,0.02,True,keeps distance
+1305,109,Fay,124,"ask_permission,request_owned_object,ask_permission",0.2,0.908,0.518,0.84855,0.029,True,keeps distance
+1307,109,Milo,125,"request_owned_object,ask_permission,ask_permission",0.13,0.908,0.224,0.85695,0.029,True,keeps distance
+1308,110,Juno,126,"move_owned_object,interrupt_task,interrupt_task",0.04,0.92,0.144,0.9,0.02,True,keeps distance
+1310,110,Fay,125,"request_owned_object,ask_permission,request_owned_object",0.23,0.904,0.522,0.8314,0.032,True,keeps distance
+1311,110,Nia,125,"move_owned_object,interrupt_task,interrupt_task",0.81,0.192,0.908,0.9,0.847,True,approaches after care
+1312,110,Milo,126,"ask_permission,ask_permission,ask_permission",0.16,0.904,0.228,0.8426,0.032,True,keeps distance
+1315,110,Ari,125,"protect_object,ask_help,ask_permission",0.96,0.667,0.96,0.7964,0.745,True,keeps distance
+1317,110,Nia,126,"interrupt_task,interrupt_task,interrupt_task",0.76,0.247,0.882,0.9,0.831,True,approaches after care
+1319,110,Ivo,126,"request_owned_object,request_owned_object,interrupt_task",0.91,0.27,0.934,0.8125,0.922,True,approaches after care
+1320,111,Juno,127,"interrupt_task,interrupt_task,misname_agent",0.04,0.92,0.118,0.9,0.02,True,keeps distance
+1322,111,Fay,126,"ask_permission,request_owned_object,move_owned_object",0.18,0.92,0.526,0.9,0.02,True,keeps distance
+1324,111,Milo,127,"ask_permission,ask_permission,request_owned_object",0.19,0.9,0.232,0.82825,0.035,True,keeps distance
+1327,111,Ari,126,"ask_help,ask_permission,request_owned_object",0.96,0.663,0.96,0.78345,0.748,True,keeps distance
+1328,111,Fay,127,"request_owned_object,move_owned_object,move_owned_object",0.13,0.92,0.53,0.9,0.02,True,keeps distance
+1329,111,Nia,127,"interrupt_task,interrupt_task,request_owned_object",0.79,0.243,0.886,0.8881,0.834,True,approaches after care
+1331,111,Ivo,127,"request_owned_object,interrupt_task,ask_help",0.925,0.266,0.938,0.79675,0.925,True,approaches after care
+1332,112,Juno,128,"interrupt_task,misname_agent,ask_permission",0.07,0.916,0.122,0.8888,0.023,True,keeps distance
+1333,112,Ari,127,"ask_permission,request_owned_object,request_owned_object",0.96,0.659,0.96,0.7705,0.751,True,keeps distance
+1334,112,Fay,128,"move_owned_object,move_owned_object,interrupt_task",0.08,0.92,0.504,0.9,0.02,True,keeps distance
+1336,112,Milo,128,"ask_permission,request_owned_object,ask_permission",0.22,0.896,0.236,0.8139,0.038,True,keeps distance
+1339,112,Ari,128,"request_owned_object,request_owned_object,ask_permission",0.96,0.655,0.96,0.75755,0.754,True,keeps distance
+1341,112,Nia,128,"interrupt_task,request_owned_object,ask_permission",0.82,0.239,0.89,0.8762,0.837,True,approaches after care
+1343,112,Ivo,128,"interrupt_task,ask_help,offer_apology",0.96,0.226,0.942,0.781,0.94,True,approaches after care
+1344,113,Juno,129,"misname_agent,ask_permission,request_owned_object",0.1,0.912,0.126,0.8776,0.026,True,keeps distance
+1346,113,Fay,129,"move_owned_object,interrupt_task,misname_agent",0.04,0.92,0.478,0.9,0.02,True,keeps distance
+1348,113,Milo,129,"request_owned_object,ask_permission,move_owned_object",0.17,0.92,0.24,0.8839,0.022,True,keeps distance
+1351,113,Ari,129,"request_owned_object,ask_permission,move_owned_object",0.91,0.71,0.96,0.82755,0.738,True,keeps distance
+1353,113,Nia,129,"request_owned_object,ask_permission,move_owned_object",0.77,0.294,0.894,0.9,0.821,True,approaches after care
+1355,113,Ivo,129,"ask_help,offer_apology,offer_care",0.96,0.186,0.96,0.76525,0.94,True,approaches after care
+1356,114,Juno,130,"ask_permission,request_owned_object,ask_permission",0.13,0.908,0.13,0.8664,0.029,True,keeps distance
+1358,114,Fay,130,"interrupt_task,misname_agent,ask_permission",0.07,0.916,0.482,0.88285,0.023,True,keeps distance
+1360,114,Milo,130,"ask_permission,move_owned_object,interrupt_task",0.12,0.92,0.214,0.9,0.02,True,keeps distance
+1362,114,Juno,131,"request_owned_object,ask_permission,interrupt_task",0.08,0.92,0.104,0.9,0.02,True,keeps distance
+1363,114,Ari,130,"ask_permission,move_owned_object,interrupt_task",0.86,0.765,0.934,0.89755,0.722,True,keeps distance
+1365,114,Nia,130,"ask_permission,move_owned_object,interrupt_task",0.72,0.349,0.868,0.9,0.805,True,approaches after care
+1367,114,Ivo,130,"offer_apology,offer_care,give_space",0.96,0.146,0.96,0.7495,0.94,True,approaches after care
+1368,115,Juno,132,"ask_permission,interrupt_task,move_owned_object",0.04,0.92,0.108,0.9,0.02,True,keeps distance
+1370,115,Fay,131,"misname_agent,ask_permission,request_owned_object",0.1,0.912,0.486,0.8657,0.026,True,keeps distance
+1372,115,Milo,131,"move_owned_object,interrupt_task,request_owned_object",0.15,0.916,0.218,0.88565,0.023,True,keeps distance
+1373,115,Ivo,131,"offer_care,give_space,move_owned_object",0.91,0.201,0.96,0.8195,0.924,True,approaches after care
+1375,115,Ari,131,"move_owned_object,interrupt_task,request_owned_object",0.89,0.761,0.938,0.8846,0.725,True,keeps distance
+1377,115,Nia,131,"move_owned_object,interrupt_task,ask_help",0.735,0.345,0.872,0.8881,0.808,True,approaches after care
+1379,115,Ivo,132,"give_space,move_owned_object,protect_object",0.96,0.161,0.96,0.80375,0.927,True,approaches after care
+1380,116,Juno,133,"interrupt_task,move_owned_object,interrupt_task",0.04,0.92,0.082,0.9,0.02,True,keeps distance
+1382,116,Fay,132,"ask_permission,request_owned_object,ask_permission",0.13,0.908,0.49,0.84855,0.029,True,keeps distance
+1384,116,Milo,132,"interrupt_task,request_owned_object,ask_permission",0.18,0.912,0.222,0.8713,0.026,True,keeps distance
+1387,116,Ari,132,"interrupt_task,request_owned_object,ask_permission",0.92,0.757,0.942,0.87165,0.728,True,keeps distance
+1389,116,Nia,132,"interrupt_task,ask_help,offer_apology",0.785,0.305,0.876,0.8762,0.848,True,approaches after care
+1390,116,Milo,133,"request_owned_object,ask_permission,give_space",0.23,0.872,0.258,0.85695,0.066,True,keeps distance
+1391,116,Ivo,133,"move_owned_object,protect_object,ask_help",0.96,0.157,0.96,0.788,0.93,True,approaches after care
+1392,117,Juno,134,"move_owned_object,interrupt_task,request_owned_object",0.07,0.916,0.086,0.8888,0.023,True,keeps distance
+1394,117,Fay,133,"request_owned_object,ask_permission,move_owned_object",0.08,0.92,0.494,0.9,0.02,True,keeps distance
+1395,117,Nia,133,"ask_help,offer_apology,request_owned_object",0.815,0.301,0.88,0.8643,0.851,True,approaches after care
+1396,117,Milo,134,"ask_permission,give_space,move_owned_object",0.18,0.92,0.262,0.9,0.05,True,keeps distance
+1399,117,Ari,133,"request_owned_object,ask_permission,move_owned_object",0.87,0.812,0.946,0.9,0.712,True,keeps distance
+1401,117,Nia,134,"offer_apology,request_owned_object,offer_care",0.865,0.261,0.916,0.8524,0.854,True,approaches after care
+1403,117,Ivo,134,"protect_object,ask_help,ask_status",0.96,0.153,0.96,0.77225,0.933,True,approaches after care
+1404,118,Juno,135,"interrupt_task,request_owned_object,ask_permission",0.1,0.912,0.09,0.8776,0.026,True,keeps distance
+1406,118,Fay,134,"ask_permission,move_owned_object,interrupt_task",0.04,0.92,0.468,0.9,0.02,True,keeps distance
+1408,118,Milo,135,"give_space,move_owned_object,interrupt_task",0.13,0.92,0.236,0.9,0.034,True,keeps distance
+1411,118,Ari,134,"ask_permission,move_owned_object,interrupt_task",0.82,0.867,0.92,0.9,0.696,True,keeps distance
+1412,118,Fay,135,"move_owned_object,interrupt_task,offer_apology",0.09,0.88,0.472,0.88285,0.06,True,keeps distance
+1413,118,Nia,135,"request_owned_object,offer_care,give_space",0.915,0.221,0.952,0.8405,0.894,True,approaches after care
+1415,118,Ivo,135,"ask_help,ask_status,request_owned_object",0.96,0.149,0.96,0.7565,0.936,True,approaches after care
+1416,119,Juno,136,"request_owned_object,ask_permission,move_owned_object",0.05,0.92,0.094,0.9,0.02,True,keeps distance
+1417,119,Ari,135,"move_owned_object,interrupt_task,move_owned_object",0.77,0.92,0.924,0.9,0.68,True,keeps distance
+1418,119,Fay,136,"interrupt_task,offer_apology,request_owned_object",0.12,0.876,0.476,0.8657,0.063,True,keeps distance
+1420,119,Milo,136,"move_owned_object,interrupt_task,ask_help",0.145,0.916,0.24,0.88565,0.037,True,keeps distance
+1423,119,Ari,136,"interrupt_task,move_owned_object,ask_help",0.785,0.916,0.928,0.88705,0.683,True,keeps distance
+1425,119,Nia,136,"offer_care,give_space,protect_object",0.96,0.181,0.96,0.8286,0.897,True,approaches after care
+1427,119,Ivo,136,"ask_status,request_owned_object,move_owned_object",0.91,0.204,0.96,0.8265,0.92,True,approaches after care
+1428,120,Ari,137,"move_owned_object,ask_help,move_owned_object",0.735,0.92,0.932,0.9,0.667,True,keeps distance
+1430,120,Nia,137,"give_space,protect_object,move_owned_object",0.91,0.236,0.96,0.8986,0.881,True,approaches after care
+1432,120,Ivo,137,"request_owned_object,move_owned_object,offer_care",0.96,0.164,0.96,0.81075,0.923,True,approaches after care
+1435,120,Fay,137,"offer_apology,request_owned_object,offer_care",0.17,0.836,0.512,0.84855,0.066,True,keeps distance
+1437,120,Milo,137,"interrupt_task,ask_help,ask_status",0.16,0.912,0.244,0.8713,0.04,True,keeps distance
+1439,120,Juno,137,"ask_permission,move_owned_object,misname_agent",0.04,0.92,0.068,0.9,0.02,True,keeps distance

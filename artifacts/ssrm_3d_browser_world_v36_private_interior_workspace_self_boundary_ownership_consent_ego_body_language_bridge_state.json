@@ -1,0 +1,239 @@
+{
+  "agents": [
+    {
+      "agent_id": "Ari",
+      "attachment_need": 0.62,
+      "autonomy_need": 0.48,
+      "flower_node": "node-03",
+      "forgiveness_rate": 0.37,
+      "home_place": "riverbend room",
+      "owned_object": "cedar repair kit",
+      "promise": "keep the west route dry",
+      "public_posture": "shoulders angled toward the ridge",
+      "respect_need": 0.58,
+      "self_story_seed": "I keep the west route safe.",
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "temperature_cue": "cold spray",
+      "territoriality": 0.44
+    },
+    {
+      "agent_id": "Fay",
+      "attachment_need": 0.57,
+      "autonomy_need": 0.39,
+      "flower_node": "node-05",
+      "forgiveness_rate": 0.49,
+      "home_place": "roofward sill",
+      "owned_object": "herb ledger",
+      "promise": "finish the warm-lane ledger",
+      "public_posture": "hands open near the ledger",
+      "respect_need": 0.66,
+      "self_story_seed": "I remember who waits when I hesitate.",
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinges ticking",
+      "temperature_cue": "warm draft",
+      "territoriality": 0.32
+    },
+    {
+      "agent_id": "Nia",
+      "attachment_need": 0.44,
+      "autonomy_need": 0.64,
+      "flower_node": "node-08",
+      "forgiveness_rate": 0.34,
+      "home_place": "archive bench",
+      "owned_object": "signal spool",
+      "promise": "protect the clean signal pattern",
+      "public_posture": "chin lifted toward the spool",
+      "respect_need": 0.61,
+      "self_story_seed": "The spool is mine until I choose to show it.",
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "temperature_cue": "cool stone",
+      "territoriality": 0.58
+    },
+    {
+      "agent_id": "Milo",
+      "attachment_need": 0.49,
+      "autonomy_need": 0.67,
+      "flower_node": "node-11",
+      "forgiveness_rate": 0.41,
+      "home_place": "signal mast",
+      "owned_object": "oil lantern",
+      "promise": "keep the path visible",
+      "public_posture": "lantern held between body and road",
+      "respect_need": 0.53,
+      "self_story_seed": "I do not walk blind for anyone.",
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature_cue": "cool dusk",
+      "territoriality": 0.42
+    },
+    {
+      "agent_id": "Ivo",
+      "attachment_need": 0.61,
+      "autonomy_need": 0.46,
+      "flower_node": "node-01",
+      "forgiveness_rate": 0.45,
+      "home_place": "orchard gate",
+      "owned_object": "seed satchel",
+      "promise": "keep the seeds dry",
+      "public_posture": "one palm over the satchel cord",
+      "respect_need": 0.59,
+      "self_story_seed": "The satchel is not just cargo; it is tomorrow.",
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "temperature_cue": "damp air",
+      "territoriality": 0.51
+    },
+    {
+      "agent_id": "Juno",
+      "attachment_need": 0.38,
+      "autonomy_need": 0.71,
+      "flower_node": "node-09",
+      "forgiveness_rate": 0.32,
+      "home_place": "repair ring",
+      "owned_object": "copper wire",
+      "promise": "finish the wire without sparks",
+      "public_posture": "elbows tucked around the wire",
+      "respect_need": 0.63,
+      "self_story_seed": "My hands need room before they can be useful.",
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "temperature_cue": "warm metal",
+      "territoriality": 0.36
+    }
+  ],
+  "boundary": "Deterministic browser-local private-interior scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "ego_state": {
+    "Ari": {
+      "attachment_security": 0.9319999999999999,
+      "autonomy_pressure": 0.96,
+      "boundary_pressure": 0.94,
+      "felt_respect": 0.6520000000000004,
+      "forgiveness_progress": 0.6669999999999999,
+      "grudge_pressure": 0.9,
+      "guardedness": 0.92,
+      "self_confidence": 0.96,
+      "social_face": 0.2399999999999998,
+      "trust_avatar": 0.7349999999999998
+    },
+    "Fay": {
+      "attachment_security": 0.5119999999999997,
+      "autonomy_pressure": 0.943,
+      "boundary_pressure": 0.8559999999999999,
+      "felt_respect": 0.195,
+      "forgiveness_progress": 0.066,
+      "grudge_pressure": 0.84855,
+      "guardedness": 0.836,
+      "self_confidence": 0.96,
+      "social_face": 0.07200000000000001,
+      "trust_avatar": 0.16999999999999998
+    },
+    "Ivo": {
+      "attachment_security": 0.96,
+      "autonomy_pressure": 0.96,
+      "boundary_pressure": 0.8379999999999995,
+      "felt_respect": 0.9550000000000001,
+      "forgiveness_progress": 0.9229999999999999,
+      "grudge_pressure": 0.8107499999999993,
+      "guardedness": 0.16400000000000017,
+      "self_confidence": 0.96,
+      "social_face": 0.31399999999999983,
+      "trust_avatar": 0.96
+    },
+    "Juno": {
+      "attachment_security": 0.06799999999999984,
+      "autonomy_pressure": 0.96,
+      "boundary_pressure": 0.94,
+      "felt_respect": 0.04,
+      "forgiveness_progress": 0.02,
+      "grudge_pressure": 0.9,
+      "guardedness": 0.92,
+      "self_confidence": 0.942,
+      "social_face": 0.04,
+      "trust_avatar": 0.04
+    },
+    "Milo": {
+      "attachment_security": 0.24399999999999963,
+      "autonomy_pressure": 0.96,
+      "boundary_pressure": 0.94,
+      "felt_respect": 0.14400000000000002,
+      "forgiveness_progress": 0.04000000000000001,
+      "grudge_pressure": 0.8713000000000001,
+      "guardedness": 0.912,
+      "self_confidence": 0.96,
+      "social_face": 0.044000000000000004,
+      "trust_avatar": 0.16000000000000003
+    },
+    "Nia": {
+      "attachment_security": 0.96,
+      "autonomy_pressure": 0.96,
+      "boundary_pressure": 0.8509999999999998,
+      "felt_respect": 0.8620000000000005,
+      "forgiveness_progress": 0.8810000000000001,
+      "grudge_pressure": 0.8985999999999998,
+      "guardedness": 0.23600000000000032,
+      "self_confidence": 0.96,
+      "social_face": 0.3659999999999999,
+      "trust_avatar": 0.9099999999999999
+    }
+  },
+  "last_events": {
+    "Ari": [
+      "ask_permission",
+      "move_owned_object",
+      "interrupt_task",
+      "move_owned_object",
+      "ask_help",
+      "move_owned_object"
+    ],
+    "Fay": [
+      "ask_permission",
+      "move_owned_object",
+      "interrupt_task",
+      "offer_apology",
+      "request_owned_object",
+      "offer_care"
+    ],
+    "Ivo": [
+      "protect_object",
+      "ask_help",
+      "ask_status",
+      "request_owned_object",
+      "move_owned_object",
+      "offer_care"
+    ],
+    "Juno": [
+      "move_owned_object",
+      "interrupt_task",
+      "request_owned_object",
+      "ask_permission",
+      "move_owned_object",
+      "misname_agent"
+    ],
+    "Milo": [
+      "ask_permission",
+      "give_space",
+      "move_owned_object",
+      "interrupt_task",
+      "ask_help",
+      "ask_status"
+    ],
+    "Nia": [
+      "offer_apology",
+      "request_owned_object",
+      "offer_care",
+      "give_space",
+      "protect_object",
+      "move_owned_object"
+    ]
+  },
+  "talk_count": {
+    "Ari": 137,
+    "Fay": 137,
+    "Ivo": 137,
+    "Juno": 137,
+    "Milo": 137,
+    "Nia": 137
+  }
+}

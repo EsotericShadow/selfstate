@@ -1,0 +1,823 @@
+tick_id,day,agent_id,avatar_event,ego_wound,ego_repair,posture,gaze,distance_delta,voice_shape,movement_speed,visible_expression,expression_tied_to_ego_state
+0,1,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+2,1,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+4,1,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+7,1,Fay,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+9,1,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,normal,True,True
+11,1,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+12,2,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+14,2,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+16,2,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+17,2,Juno,ask_status,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+19,2,Fay,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+21,2,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+23,2,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+24,3,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+26,3,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+28,3,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+31,3,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+33,3,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+34,3,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+35,3,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+36,4,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+38,4,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+39,4,Milo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+40,4,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+43,4,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+45,4,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+47,4,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+48,5,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+50,5,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+52,5,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+55,5,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+56,5,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+57,5,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,normal,True,True
+59,5,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+60,6,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+61,6,Fay,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+62,6,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+64,6,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+67,6,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+69,6,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,normal,True,True
+71,6,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+72,7,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+74,7,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+76,7,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+78,7,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+79,7,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+81,7,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,normal,True,True
+83,7,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+84,8,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+86,8,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+88,8,Ivo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+91,8,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+93,8,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+95,8,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+96,9,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+98,9,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+100,9,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+101,9,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+103,9,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+105,9,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+107,9,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+108,10,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+110,10,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+111,10,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+112,10,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,normal,True,True
+115,10,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+117,10,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+119,10,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+120,11,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+122,11,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+124,11,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+127,11,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+128,11,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+129,11,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+131,11,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+132,12,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+133,12,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+134,12,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+136,12,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+139,12,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+141,12,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+143,12,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+144,13,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+146,13,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+148,13,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+150,13,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+151,13,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+153,13,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+155,13,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+156,14,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+158,14,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+160,14,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+161,14,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+163,14,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+165,14,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+167,14,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+168,15,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+170,15,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+172,15,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+175,15,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+177,15,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+179,15,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+180,16,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+182,16,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+184,16,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+187,16,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+189,16,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+190,16,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+191,16,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+192,17,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+194,17,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+195,17,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+196,17,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+199,17,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+201,17,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+203,17,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+204,18,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+206,18,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+208,18,Juno,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+211,18,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+212,18,Milo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+213,18,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+215,18,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+216,19,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+217,19,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+218,19,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+220,19,Juno,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+223,19,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+225,19,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+227,19,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+228,20,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+230,20,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+232,20,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+233,20,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+235,20,Milo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+237,20,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+239,20,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+240,21,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+242,21,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+244,21,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+247,21,Milo,ask_help,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+249,21,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+250,21,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+251,21,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,normal,True,True
+252,22,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+254,22,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+256,22,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+259,22,Milo,ask_status,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+261,22,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+263,22,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+264,23,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+266,23,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+267,23,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+268,23,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+271,23,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+273,23,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+275,23,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+276,24,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+278,24,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+280,24,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+283,24,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+284,24,Ivo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+285,24,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+287,24,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+288,25,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+289,25,Milo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+290,25,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+292,25,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+295,25,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+297,25,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+299,25,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+300,26,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+302,26,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+304,26,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+306,26,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+307,26,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+309,26,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+311,26,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+312,27,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+314,27,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+316,27,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+317,27,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+319,27,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+321,27,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+323,27,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+324,28,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+326,28,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+328,28,Ari,ask_status,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+331,28,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+333,28,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+334,28,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+335,28,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+336,29,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+338,29,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+340,29,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+343,29,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+345,29,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+347,29,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+348,30,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+350,30,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+352,30,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+355,30,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+356,30,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+357,30,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+359,30,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+360,31,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+361,31,Ivo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+362,31,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+364,31,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+367,31,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+369,31,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+371,31,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+372,32,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+374,32,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+376,32,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+378,32,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+379,32,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+381,32,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+383,32,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+384,33,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+386,33,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+388,33,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+389,33,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+391,33,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+393,33,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+395,33,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+396,34,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+398,34,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+400,34,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+403,34,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+405,34,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+406,34,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+407,34,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+408,35,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+410,35,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+411,35,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+412,35,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+415,35,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+417,35,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+419,35,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+420,36,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+422,36,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+424,36,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+427,36,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+429,36,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+431,36,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+432,37,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+434,37,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+436,37,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+439,37,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+440,37,Juno,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+441,37,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+443,37,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+444,38,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+445,38,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+446,38,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+448,38,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+451,38,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+453,38,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+455,38,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+456,39,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+458,39,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+460,39,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+462,39,Milo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+463,39,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+465,39,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+467,39,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+468,40,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+470,40,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+472,40,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+475,40,Juno,ask_status,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+477,40,Fay,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+478,40,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+479,40,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+480,41,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+482,41,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+483,41,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+484,41,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+487,41,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+489,41,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+491,41,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+492,42,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+494,42,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+496,42,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+499,42,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+500,42,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+501,42,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+503,42,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+504,43,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+506,43,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+508,43,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+511,43,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+513,43,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+515,43,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+516,44,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+517,44,Juno,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+518,44,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+520,44,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+523,44,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+525,44,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+527,44,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+528,45,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+530,45,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+532,45,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+534,45,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+535,45,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+537,45,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+539,45,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+540,46,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+542,46,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+544,46,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+545,46,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+547,46,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+549,46,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+551,46,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+552,47,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+554,47,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+556,47,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+559,47,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+561,47,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+562,47,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+563,47,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+564,48,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+566,48,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+567,48,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+568,48,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+571,48,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+573,48,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+575,48,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+576,49,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+578,49,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+580,49,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+583,49,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+584,49,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+585,49,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+587,49,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+588,50,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+590,50,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+592,50,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+595,50,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+597,50,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+599,50,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+600,51,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+602,51,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+604,51,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+606,51,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+607,51,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+609,51,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+611,51,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+612,52,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+614,52,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+616,52,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+617,52,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+619,52,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+621,52,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+623,52,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+624,53,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+626,53,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+628,53,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+631,53,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+633,53,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+634,53,Milo,ask_help,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+635,53,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+636,54,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+638,54,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+639,54,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+640,54,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+643,54,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+645,54,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+647,54,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+648,55,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+650,55,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+652,55,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+655,55,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+656,55,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+657,55,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+659,55,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+660,56,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+661,56,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+662,56,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+664,56,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+667,56,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+669,56,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+671,56,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+672,57,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+674,57,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+676,57,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+679,57,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+681,57,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+683,57,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+684,58,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+686,58,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+688,58,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+690,58,Juno,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+691,58,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+693,58,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+695,58,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+696,59,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+698,59,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+700,59,Milo,ask_help,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+701,59,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+703,59,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+705,59,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+707,59,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+708,60,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+710,60,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+711,60,Milo,ask_help,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+712,60,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+715,60,Fay,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+717,60,Milo,ask_status,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+719,60,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+720,61,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+722,61,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+724,61,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+727,61,Fay,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+728,61,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+729,61,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+731,61,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+732,62,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+733,62,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+734,62,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+736,62,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+739,62,Fay,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+741,62,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+743,62,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+744,63,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+746,63,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+748,63,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+750,63,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+751,63,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+753,63,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+755,63,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+756,64,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+758,64,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+760,64,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+763,64,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+765,64,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+767,64,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+768,65,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+770,65,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+772,65,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+773,65,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+775,65,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+777,65,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+779,65,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+780,66,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+782,66,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+784,66,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+787,66,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+789,66,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+790,66,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+791,66,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+792,67,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+794,67,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+795,67,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+796,67,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+799,67,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+801,67,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+803,67,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+804,68,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+806,68,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+808,68,Ivo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+811,68,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+812,68,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+813,68,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+815,68,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+816,69,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+817,69,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+818,69,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+820,69,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+823,69,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+825,69,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+827,69,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+828,70,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+830,70,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+832,70,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+833,70,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+835,70,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+837,70,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+839,70,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+840,71,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+842,71,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+844,71,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+847,71,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+849,71,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+851,71,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+852,72,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+854,72,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+856,72,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+859,72,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+861,72,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+862,72,Juno,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+863,72,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+864,73,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+866,73,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+867,73,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+868,73,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+871,73,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+873,73,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+875,73,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+876,74,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+878,74,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+880,74,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+883,74,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+884,74,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+885,74,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+887,74,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+888,75,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+889,75,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+890,75,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+892,75,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+895,75,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+897,75,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+899,75,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+900,76,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+902,76,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+904,76,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+906,76,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+907,76,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+909,76,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+911,76,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+912,77,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+914,77,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+916,77,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+917,77,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+919,77,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+921,77,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+923,77,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+924,78,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+926,78,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+928,78,Juno,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+931,78,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+933,78,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+935,78,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+936,79,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+938,79,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+940,79,Juno,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+943,79,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+945,79,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+946,79,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+947,79,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+948,80,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+950,80,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+952,80,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+955,80,Milo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+956,80,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+957,80,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+959,80,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+960,81,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+961,81,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+962,81,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+964,81,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+967,81,Milo,ask_help,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+969,81,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+971,81,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+972,82,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+974,82,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+976,82,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+978,82,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+979,82,Milo,ask_status,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+981,82,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+983,82,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+984,83,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+986,83,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+988,83,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+989,83,Fay,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+991,83,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+993,83,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+995,83,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+996,84,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+998,84,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1000,84,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1003,84,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1005,84,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1006,84,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1007,84,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1008,85,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1010,85,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1012,85,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1015,85,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1017,85,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1019,85,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1020,86,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1022,86,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1023,86,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1024,86,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1027,86,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1029,86,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1031,86,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1032,87,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1034,87,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1036,87,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+1039,87,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1040,87,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1041,87,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1043,87,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1044,88,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1045,88,Milo,ask_status,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1046,88,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1048,88,Ari,ask_status,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+1051,88,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1053,88,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1055,88,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1056,89,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1058,89,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1060,89,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+1062,89,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1063,89,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1065,89,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1067,89,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1068,90,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1070,90,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1072,90,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1075,90,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1077,90,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,normal,True,True
+1078,90,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1079,90,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1080,91,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1082,91,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1083,91,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1084,91,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1087,91,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1089,91,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1091,91,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1092,92,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1094,92,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1096,92,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1099,92,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1101,92,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1103,92,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1104,93,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1106,93,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1108,93,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1111,93,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1112,93,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1113,93,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1115,93,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1116,94,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1117,94,Ivo,ask_permission,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1118,94,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1120,94,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1123,94,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1125,94,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1127,94,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1128,95,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1130,95,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1132,95,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1134,95,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1135,95,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1137,95,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1139,95,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1140,96,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1142,96,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1144,96,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1145,96,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1147,96,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1149,96,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1151,96,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1152,97,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1154,97,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1156,97,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1159,97,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1161,97,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1162,97,Fay,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1163,97,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1164,98,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1166,98,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1167,98,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1168,98,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1171,98,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1173,98,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1175,98,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1176,99,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1178,99,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1180,99,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1183,99,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1185,99,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1187,99,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1188,100,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1189,100,Juno,ask_help,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1190,100,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1192,100,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1195,100,Juno,ask_status,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1197,100,Fay,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1199,100,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1200,101,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1202,101,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1204,101,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1206,101,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1207,101,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1209,101,Fay,ask_help,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1211,101,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1212,102,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1214,102,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1216,102,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1217,102,Milo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1219,102,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1221,102,Fay,ask_status,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1223,102,Milo,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1224,103,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1226,103,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1228,103,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1231,103,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1233,103,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1234,103,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1235,103,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1236,104,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1238,104,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1239,104,Fay,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1240,104,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1243,104,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1245,104,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1247,104,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1248,105,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1250,105,Ari,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1252,105,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1255,105,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1256,105,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1257,105,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1259,105,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1260,106,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1262,106,Ari,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1264,106,Nia,ask_status,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1267,106,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1269,106,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1271,106,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1272,107,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1273,107,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1274,107,Ari,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1276,107,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1279,107,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1281,107,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1283,107,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1284,108,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1286,108,Ari,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1288,108,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1290,108,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1291,108,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1293,108,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1295,108,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1296,109,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1298,109,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1300,109,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1301,109,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1303,109,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1305,109,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1307,109,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1308,110,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1310,110,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1311,110,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1312,110,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1315,110,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1317,110,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1319,110,Ivo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1320,111,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1322,111,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1324,111,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1327,111,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1328,111,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1329,111,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1331,111,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1332,112,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1333,112,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1334,112,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1336,112,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1339,112,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1341,112,Nia,ask_permission,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1343,112,Ivo,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1344,113,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1346,113,Fay,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1348,113,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1351,113,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1353,113,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1355,113,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1356,114,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1358,114,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1360,114,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1362,114,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1363,114,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1365,114,Nia,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1367,114,Ivo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1368,115,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1370,115,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1372,115,Milo,request_owned_object,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1373,115,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1375,115,Ari,request_owned_object,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1377,115,Nia,ask_help,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1379,115,Ivo,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1380,116,Juno,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1382,116,Fay,ask_permission,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1384,116,Milo,ask_permission,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1387,116,Ari,ask_permission,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1389,116,Nia,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1390,116,Milo,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1391,116,Ivo,ask_help,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1392,117,Juno,request_owned_object,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1394,117,Fay,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1395,117,Nia,request_owned_object,none,none,chin lifted toward the spool,task gaze,-0.01,steady,normal,True,True
+1396,117,Milo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1399,117,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1401,117,Nia,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1403,117,Ivo,ask_status,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1404,118,Juno,ask_permission,none,none,elbows tucked around the wire,task gaze,-0.01,steady,slower,True,True
+1406,118,Fay,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1408,118,Milo,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1411,118,Ari,interrupt_task,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1412,118,Fay,offer_apology,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1413,118,Nia,give_space,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1415,118,Ivo,request_owned_object,none,none,one palm over the satchel cord,task gaze,-0.01,steady,normal,True,True
+1416,119,Juno,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1417,119,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1418,119,Fay,request_owned_object,none,none,hands open near the ledger,task gaze,-0.01,steady,slower,True,True
+1420,119,Milo,ask_help,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1423,119,Ari,ask_help,none,none,shoulders angled toward the ridge,task gaze,-0.01,steady,slower,True,True
+1425,119,Nia,protect_object,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1427,119,Ivo,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1428,120,Ari,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True
+1430,120,Nia,move_owned_object,ownership boundary crossed,none,turns away with object shielded,side gaze,0.075,short and guarded,normal,True,True
+1432,120,Ivo,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,normal,True,True
+1435,120,Fay,offer_care,none,apology/space accepted,softens and faces avatar,direct gaze,-0.055,warmer and longer,slower,True,True
+1437,120,Milo,ask_status,none,none,lantern held between body and road,task gaze,-0.01,steady,slower,True,True
+1439,120,Juno,misname_agent,social face wound,none,turns away with object shielded,side gaze,0.075,short and guarded,slower,True,True

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Autonomous Live Agent Loop Bridge</title>
+  <script src="../artifacts/ssrm_3d_autonomous_live_agent_loop_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_autonomous_live_agent_loop_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_autonomous_live_agent_loop_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #16201d;
+      --paper: #ece1c6;
+      --panel: #fff9ea;
+      --line: #c8b377;
+      --moss: #3e6045;
+      --clay: #9d4829;
+      --blue: #3f6f82;
+      --amber: #c28b2b;
+      --black: #1f2830;
+      --muted: #677066;
+      --shadow: rgba(22, 32, 29, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 15%, rgba(194, 139, 43, 0.24), transparent 24%),
+        radial-gradient(circle at 90% 8%, rgba(63, 111, 130, 0.22), transparent 26%),
+        linear-gradient(140deg, rgba(62, 96, 69, 0.24), transparent 46%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(520px, 1fr) 440px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .stage,
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 249, 234, 0.93);
+      box-shadow: 0 20px 48px var(--shadow);
+      overflow: hidden;
+    }
+
+    .stage { display: grid; grid-template-rows: auto minmax(500px, 1fr) auto; }
+
+    header,
+    .hud,
+    .panel-head,
+    .controls,
+    .input-row,
+    .meters {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+
+    header { justify-content: space-between; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-family: Georgia, serif; font-size: clamp(1.35rem, 2.4vw, 2.35rem); }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .badge,
+    button,
+    input {
+      border: 1px solid var(--line);
+      background: #f4e8cb;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.86rem;
+    }
+
+    .badge { padding: 6px 8px; font-weight: 800; }
+    button { min-height: 40px; padding: 8px 10px; cursor: pointer; font-weight: 800; }
+    button:hover, button.active { background: var(--moss); color: #fff9ea; border-color: var(--moss); }
+    input { min-height: 44px; padding: 10px 12px; flex: 1 1 250px; background: #fffdf5; }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      display: block;
+      background:
+        linear-gradient(rgba(22, 32, 29, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(22, 32, 29, 0.05) 1px, transparent 1px),
+        #e4d7b8;
+      background-size: 34px 34px;
+    }
+
+    .hud { border-top: 1px solid var(--line); border-bottom: 0; }
+    .metric { min-width: 112px; display: grid; gap: 4px; color: var(--muted); font-size: 0.75rem; }
+    .metric strong { color: var(--ink); font-size: 1rem; }
+
+    .panel { display: grid; grid-template-rows: auto auto auto auto minmax(250px, 1fr); min-height: calc(100vh - 32px); }
+    .controls button { flex: 1 1 30%; }
+    .agents { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 12px; border-bottom: 1px solid var(--line); }
+    .detail { overflow: auto; display: grid; align-content: start; gap: 12px; padding: 14px; }
+    .bar-row { display: grid; grid-template-columns: 116px 1fr 44px; gap: 8px; align-items: center; font-size: 0.82rem; }
+    .bar { height: 8px; background: #dac697; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--blue), var(--amber), var(--clay)); }
+    .log { display: grid; gap: 8px; border-top: 1px solid var(--line); background: #e6d8b9; overflow: auto; padding: 12px; }
+    .line { border-left: 3px solid var(--moss); background: rgba(255, 249, 234, 0.88); padding: 8px 10px; font-size: 0.86rem; line-height: 1.35; }
+    .line.player { border-left-color: var(--clay); }
+
+    @media (max-width: 960px) {
+      .shell { grid-template-columns: 1fr; }
+      .panel { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="stage">
+      <header>
+        <div>
+          <h1>Autonomous Live Agent Loop</h1>
+          <p>Agents keep ticking without player rows: sensing, choosing, moving social state, and changing the world.</p>
+        </div>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1040" height="720"></canvas>
+      <section class="hud" id="hud"></section>
+    </main>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Live Loop Console</h2>
+        <span class="badge">Report 145</span>
+        <span class="badge" id="tickBadge">tick 0</span>
+      </div>
+      <div class="controls">
+        <button id="start">start</button>
+        <button id="pause">pause</button>
+        <button id="step">step</button>
+      </div>
+      <div class="agents" id="agents"></div>
+      <div class="input-row">
+        <input id="playerText" value="avatar asks who needs water before the cold rain" aria-label="Player interrupt" />
+        <button id="send">interrupt</button>
+      </div>
+      <div class="detail" id="detail"></div>
+    </aside>
+  </div>
+
+  <script>
+    const payload = window.SSRM_3D_AUTONOMOUS_LIVE_AGENT_LOOP_BRIDGE_RESULTS || { source_agents: [], final_state: { world: {}, agents: {} }, verdict: {} };
+    const generated = window.SSRM_3D_AUTONOMOUS_LIVE_AGENT_LOOP_BRIDGE_STATE || payload.final_state || { world: {}, agents: {} };
+    const packets = payload.source_agents || [];
+    const state = {
+      tick: 0,
+      running: false,
+      selected: 0,
+      world: structuredClone(generated.world || {}),
+      agents: structuredClone(generated.agents || {}),
+      log: []
+    };
+
+    const actionFocus = {
+      forage_water: "shared-resource",
+      repair_tool: "tool-or-route",
+      warm_shelter: "care-or-kinship",
+      route_scout: "tool-or-route",
+      watch_weather: "danger-or-weather-memory",
+      comfort_neighbor: "care-or-kinship",
+      teach_token: "shared-resource",
+      clean_camp: "care-or-kinship",
+      rest_body: "care-or-kinship"
+    };
+
+    function clamp(value, low = 0, high = 1) { return Math.max(low, Math.min(high, value)); }
+    function fmt(value) { return Number(value || 0).toFixed(3); }
+    function packet(index = state.selected) { return packets[index] || packets[0] || {}; }
+    function live(index = state.selected) {
+      const p = packet(index);
+      if (!state.agents[p.agent_id]) state.agents[p.agent_id] = { agent_id: p.agent_id, name: p.name, role: p.role, trust: 0.55, fatigue: 0.2, pain: 0.1, attention: "field", motive: "wait", body_state: 0.6, curiosity: 0.4, fear: 0.2, live_memory: [] };
+      return state.agents[p.agent_id];
+    }
+    function tokenFor(p, focus) {
+      const hints = p.translation_hints || {};
+      const found = Object.entries(hints).find(([, meaning]) => meaning === focus);
+      return found ? found[0] : ((p.native_tokens || ["ka"])[0]);
+    }
+    function sensory(p, sense) {
+      const rate = Number((p.sensory_rates_hz || {})[sense] || 1);
+      return clamp(0.34 + (0.5 + 0.5 * Math.sin(rate * 0.23 + state.tick * 0.19)) * 0.58);
+    }
+    function degrade() {
+      const phase = 0.5 + 0.5 * Math.sin(state.tick * 0.11);
+      state.world.flower_phase = phase;
+      state.world.weather_cold = clamp(0.28 + phase * 0.18);
+      state.world.rain_wetness = clamp(0.22 + (1 - phase) * 0.20);
+      ["shared_water", "tool_integrity", "shelter_warmth", "route_confidence", "council_acceptance", "danger_memory", "food_cache", "waste_control", "fire_heat", "language_coherence"].forEach((key) => {
+        state.world[key] = clamp((state.world[key] || 0.55) - 0.0013);
+      });
+    }
+    function chooseAction(agent) {
+      const water = 1 - (state.world.shared_water || 0.5);
+      const tool = 1 - (state.world.tool_integrity || 0.5);
+      const shelter = 1 - (state.world.shelter_warmth || 0.5) + (state.world.weather_cold || 0.3) * 0.2;
+      const route = 1 - (state.world.route_confidence || 0.5);
+      const danger = 1 - (state.world.danger_memory || 0.5) + (state.world.threat_scent || 0.2) * 0.2;
+      const social = 1 - (state.world.council_acceptance || 0.5);
+      const language = 1 - (state.world.language_coherence || 0.5);
+      const body = (agent.fatigue || 0.2) + (agent.pain || 0.1);
+      const scores = {
+        forage_water: water * 0.8,
+        repair_tool: tool * 0.85,
+        warm_shelter: shelter * 0.85,
+        route_scout: route * 0.8,
+        watch_weather: danger * 0.75,
+        comfort_neighbor: social * 0.65,
+        teach_token: language * 0.8,
+        clean_camp: (1 - (state.world.waste_control || 0.5)) * 0.8,
+        rest_body: body * 0.7
+      };
+      if (agent.role === "builder") scores.repair_tool += 0.18;
+      if (agent.role === "scout") scores.route_scout += 0.18;
+      if (agent.role === "teacher" || agent.role === "pattern_keeper") scores.teach_token += 0.18;
+      if (agent.role === "healer") scores.comfort_neighbor += 0.18;
+      return Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0];
+    }
+    function applyWorld(action, strength) {
+      if (action === "forage_water") { state.world.shared_water = clamp((state.world.shared_water || 0.5) + strength * 0.025); state.world.food_cache = clamp((state.world.food_cache || 0.5) + strength * 0.016); }
+      if (action === "repair_tool") { state.world.tool_integrity = clamp((state.world.tool_integrity || 0.5) + strength * 0.030); }
+      if (action === "warm_shelter") { state.world.shelter_warmth = clamp((state.world.shelter_warmth || 0.5) + strength * 0.027); state.world.fire_heat = clamp((state.world.fire_heat || 0.5) + strength * 0.022); }
+      if (action === "route_scout") state.world.route_confidence = clamp((state.world.route_confidence || 0.5) + strength * 0.030);
+      if (action === "watch_weather") state.world.danger_memory = clamp((state.world.danger_memory || 0.5) + strength * 0.030);
+      if (action === "comfort_neighbor") state.world.council_acceptance = clamp((state.world.council_acceptance || 0.5) + strength * 0.026);
+      if (action === "teach_token") state.world.language_coherence = clamp((state.world.language_coherence || 0.5) + strength * 0.030);
+      if (action === "clean_camp") state.world.waste_control = clamp((state.world.waste_control || 0.5) + strength * 0.030);
+      state.world.trace_integrity = clamp((state.world.trace_integrity || 0) + 0.004);
+    }
+    function tickOne() {
+      state.tick += 1;
+      degrade();
+      packets.slice(0, 8).forEach((p, index) => {
+        const interval = 1 + ((index + Math.floor(Number((p.sensory_rates_hz || {}).audio || 4))) % 3);
+        if ((state.tick + index) % interval !== 0) return;
+        const agent = live(index);
+        const action = chooseAction(agent);
+        const focus = actionFocus[action] || "shared-resource";
+        const sense = { forage_water: "wetness", repair_tool: "thermal", warm_shelter: "thermal", route_scout: "vestibular", watch_weather: "olfactory", comfort_neighbor: "affect", teach_token: "audio", clean_camp: "pain", rest_body: "pain" }[action] || "visual";
+        const strength = sensory(p, sense);
+        agent.attention = focus;
+        agent.motive = action;
+        agent.autonomous_actions = (agent.autonomous_actions || 0) + 1;
+        agent.fatigue = clamp((agent.fatigue || 0.2) + (action === "rest_body" ? -0.05 : 0.012));
+        agent.pain = clamp((agent.pain || 0.1) + (action === "rest_body" ? -0.018 : 0.002));
+        agent.body_state = clamp((agent.body_state || 0.6) + (action === "rest_body" ? 0.012 : 0.004));
+        agent.curiosity = clamp((agent.curiosity || 0.4) + 0.004);
+        applyWorld(action, strength);
+        const token = tokenFor(p, focus);
+        state.log.unshift({ type: "agent", text: `${agent.name} ${action.replaceAll("_", " ")} using ${token}`, token, action, agent: agent.name });
+      });
+      state.log = state.log.slice(0, 80);
+      renderAll();
+    }
+    function playerInterrupt() {
+      const text = document.getElementById("playerText").value.trim();
+      const p = packet();
+      const agent = live();
+      let action = "teach_token";
+      if (/water|food|store/i.test(text)) action = "forage_water";
+      if (/route|path|safe/i.test(text)) action = "route_scout";
+      if (/tool|repair|return/i.test(text)) action = "repair_tool";
+      if (/cold|shelter|fire/i.test(text)) action = "warm_shelter";
+      const focus = actionFocus[action];
+      const token = tokenFor(p, focus);
+      agent.trust = clamp((agent.trust || 0.5) + 0.02);
+      agent.attention = focus;
+      agent.motive = `avatar-response-${action}`;
+      agent.player_responses = (agent.player_responses || 0) + 1;
+      applyWorld(action, 0.55);
+      state.log.unshift({ type: "player", text: `${agent.name} answers avatar with ${token}; starts ${action.replaceAll("_", " ")}`, token, action, agent: agent.name });
+      renderAll();
+    }
+    function renderHud() {
+      const v = payload.verdict || {};
+      document.getElementById("verdict").textContent = `verdict: ${v.verdict || "local"}`;
+      document.getElementById("tickBadge").textContent = `tick ${state.tick}`;
+      const rows = [
+        ["readiness", v.full_autonomous_live_readiness || 0],
+        ["actions", v.full_autonomous_action_rate || 0],
+        ["workspace", v.full_workspace_tick_rate || 0],
+        ["world", v.full_world_state_update_rate || 0],
+        ["interrupt", v.full_player_interrupt_response_rate || 0],
+        ["trace", v.full_trace_completeness || 0]
+      ];
+      document.getElementById("hud").innerHTML = rows.map(([label, value]) => `<div class="metric">${label}<strong>${fmt(value)}</strong></div>`).join("");
+    }
+    function renderAgents() {
+      const root = document.getElementById("agents");
+      root.innerHTML = packets.slice(0, 8).map((p, index) => {
+        const agent = live(index);
+        return `<button class="${index === state.selected ? "active" : ""}" data-index="${index}">${agent.name}<br><small>${agent.role} / ${fmt(agent.trust)}</small></button>`;
+      }).join("");
+      root.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => { state.selected = Number(button.dataset.index); renderAll(); }));
+    }
+    function renderDetail() {
+      const agent = live();
+      const bars = [["trust", agent.trust], ["body", agent.body_state], ["fear", agent.fear], ["fatigue", agent.fatigue], ["curiosity", agent.curiosity]].map(([name, value]) => `<div class="bar-row"><span>${name}</span><div class="bar"><span style="width:${clamp(value) * 100}%"></span></div><strong>${fmt(value)}</strong></div>`).join("");
+      const log = state.log.slice(0, 12).map((row) => `<div class="line ${row.type === "player" ? "player" : ""}">${row.text}</div>`).join("");
+      document.getElementById("detail").innerHTML = `<h2>${agent.name} / ${agent.role}</h2><p>attention: ${agent.attention}</p><p>motive: ${agent.motive}</p>${bars}<h3>Live trace</h3><div class="log">${log || "<div class='line'>Press start or step to run autonomous ticks.</div>"}</div>`;
+    }
+    function drawWorld() {
+      const canvas = document.getElementById("world");
+      const ctx = canvas.getContext("2d");
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = "#e4d7b8";
+      ctx.fillRect(0, 0, w, h);
+      const cx = w * 0.5;
+      const cy = h * 0.52;
+      const flower = 115 + (state.world.flower_phase || 0.5) * 24;
+      ctx.strokeStyle = "rgba(62, 96, 69, 0.30)";
+      ctx.lineWidth = 2;
+      [0, 1, 2, 3, 4, 5, 6].forEach((i) => {
+        const angle = i / 6 * Math.PI * 2;
+        ctx.beginPath();
+        ctx.arc(cx + Math.cos(angle) * 92, cy + Math.sin(angle) * 92, flower, 0, Math.PI * 2);
+        ctx.stroke();
+      });
+      packets.slice(0, 8).forEach((p, index) => {
+        const agent = live(index);
+        const pos = p.position || { x: Math.cos(index / 8 * Math.PI * 2) * 8, z: Math.sin(index / 8 * Math.PI * 2) * 8 };
+        const px = cx + (pos.x || 0) * 24;
+        const py = cy + (pos.z || 0) * 24;
+        ctx.fillStyle = index === state.selected ? "#9d4829" : "#3e6045";
+        ctx.beginPath();
+        ctx.arc(px, py, 14 + (agent.trust || 0.5) * 8, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#fff9ea";
+        ctx.textAlign = "center";
+        ctx.font = "700 13px Avenir Next, sans-serif";
+        ctx.fillText(agent.name, px, py + 4);
+      });
+      ctx.fillStyle = "#16201d";
+      ctx.textAlign = "left";
+      ctx.font = "700 22px Georgia";
+      ctx.fillText(`autonomous ticks: ${state.tick}`, 32, 48);
+    }
+    function renderAll() { renderHud(); renderAgents(); renderDetail(); drawWorld(); }
+
+    let timer = null;
+    document.getElementById("start").addEventListener("click", () => { if (!timer) timer = setInterval(tickOne, 450); });
+    document.getElementById("pause").addEventListener("click", () => { clearInterval(timer); timer = null; });
+    document.getElementById("step").addEventListener("click", tickOne);
+    document.getElementById("send").addEventListener("click", playerInterrupt);
+    document.getElementById("playerText").addEventListener("keydown", (event) => { if (event.key === "Enter") playerInterrupt(); });
+    renderAll();
+  </script>
+</body>
+</html>

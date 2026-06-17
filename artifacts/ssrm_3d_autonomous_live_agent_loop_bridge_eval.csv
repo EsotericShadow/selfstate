@@ -1,0 +1,9 @@
+condition,ticks,autonomous_actions,player_interrupts,autonomous_action_rate,perception_update_rate,workspace_tick_rate,social_exchange_rate,world_state_update_rate,player_interrupt_response_rate,multi_rate_synchrony,world_homeostasis_score,trace_completeness,autonomous_live_readiness
+integrated_autonomous_live_loop,96,432,4,0.5625,1.0,0.990826,0.615741,0.752315,1.0,0.9375,0.963143,1.0,0.857642
+no_autonomous_scheduler,96,0,4,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.478498,1.0,0.22828
+no_internal_workspace,96,432,4,0.5625,1.0,0.0,0.592593,0.81713,1.0,0.881944,0.930705,1.0,0.716887
+no_sensory_bus,96,432,4,0.5625,0.0,0.990826,0.453704,1.0,1.0,0.5625,0.806598,1.0,0.703614
+no_social_exchange,96,432,4,0.5625,1.0,0.990826,0.0,0.752315,1.0,0.9375,0.963143,1.0,0.796068
+no_world_consequences,96,432,4,0.5625,1.0,0.990826,0.490741,0.0,1.0,0.645833,0.468323,1.0,0.678589
+no_player_interrupts,96,432,0,0.5625,1.0,1.0,0.615741,0.756944,0.0,0.9375,0.963274,1.0,0.739539
+no_persistent_trace,96,432,4,0.5625,1.0,0.990826,0.615741,0.752315,1.0,0.9375,0.963143,0.0,0.787642

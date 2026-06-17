@@ -26,7 +26,9 @@ Report 142 adds the first deterministic bridge toward the intended playable surf
 
 Report 143 adds the first live-state bridge: player interventions alter agent attention, trust, body-affect summaries, native-token grounding, sensory resonance, world state, and replay traces.
 
-This is still not a completed playable civilization. Report 144 adds typed embodied player input: the avatar has a body position, the local parser grounds typed text into action kinds, proximity can block actions, sensory context changes update strength, workspace memories are written, world state changes, and replay traces remain inspectable. Integrated embodied-input readiness is `0.839146`. The next gate is learned/open-ended interpretation and autonomous live-agent action rather than deterministic keyword parsing over benchmark rows.
+Report 144 adds typed embodied player input: the avatar has a body position, the local parser grounds typed text into action kinds, proximity can block actions, sensory context changes update strength, workspace memories are written, world state changes, and replay traces remain inspectable.
+
+This is still not a completed playable civilization. Report 145 adds autonomous live-agent ticks: agents keep sensing, updating internal workspaces, choosing actions, affecting body state, exchanging native tokens, repairing or degrading world variables, and responding to sparse avatar interrupts. Integrated autonomous-live readiness is `0.857642`. The next gate is richer object/task affordances and learned/open-ended interpretation rather than a deterministic bridge policy.
 
 ## What The Testbed Can Study
 

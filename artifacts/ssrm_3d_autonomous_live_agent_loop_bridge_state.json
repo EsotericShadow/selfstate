@@ -1,0 +1,5047 @@
+{
+  "condition": "integrated_autonomous_live_loop",
+  "ticks": 96,
+  "world": {
+    "shared_water": 0.9982,
+    "tool_integrity": 0.845083,
+    "shelter_warmth": 0.997754,
+    "route_confidence": 1.0,
+    "council_acceptance": 1.0,
+    "danger_memory": 1.0,
+    "food_cache": 0.9985,
+    "waste_control": 0.9958,
+    "fire_heat": 0.800888,
+    "language_coherence": 0.9952,
+    "trace_integrity": 1.0,
+    "weather_cold": 0.288403,
+    "rain_wetness": 0.410663,
+    "threat_scent": 0.0,
+    "flower_phase": 0.046686
+  },
+  "agents": {
+    "integrated_deep_time_world:00": {
+      "agent_id": "integrated_deep_time_world:00",
+      "name": "Ari",
+      "role": "scout",
+      "trust": 1.0,
+      "attention": "care-or-kinship",
+      "motive": "heard-comfort_neighbor",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8317256600463334,
+      "curiosity": 0.9717400000000005,
+      "workspace_updates": 5,
+      "language_hits": 5,
+      "responses": 5,
+      "position": {
+        "x": 8.0,
+        "z": 0.0
+      },
+      "embodied_memory": [
+        {
+          "step": 1,
+          "player_text": "walk near Ari quietly and ask what vosha means by the storm marks",
+          "kind": "ask_meaning",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 16,
+          "player_text": "tell Ari the air smells wrong and ask for storm memory",
+          "kind": "weather_watch",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "weather_watch",
+      "fatigue": 0.1469188066106786,
+      "pain": 0.0,
+      "wetness": 0.14,
+      "thermal_comfort": 0.62,
+      "workspace_ticks": 48,
+      "autonomous_actions": 48,
+      "social_exchanges": 61,
+      "player_responses": 0,
+      "live_memory": [
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 4,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 6,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 10,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 12,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 16,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 18,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 22,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 24,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 28,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 30,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 34,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 36,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 40,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 42,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 46,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 48,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "nono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 52,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 54,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 58,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 60,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 64,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 66,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 70,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 72,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 76,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 78,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 82,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 84,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 88,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 90,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 94,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "misavo"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 96,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "vosha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        }
+      ]
+    },
+    "integrated_deep_time_world:01": {
+      "agent_id": "integrated_deep_time_world:01",
+      "name": "Bo",
+      "role": "builder",
+      "trust": 1.0,
+      "attention": "danger-or-weather-memory",
+      "motive": "heard-watch_weather",
+      "body_state": 1.0,
+      "fear": 0.02930254375597095,
+      "attachment": 0.9040828462679249,
+      "curiosity": 0.7559000000000002,
+      "workspace_updates": 6,
+      "language_hits": 6,
+      "responses": 6,
+      "position": {
+        "x": 7.794,
+        "z": 4.5
+      },
+      "embodied_memory": [
+        {
+          "step": 3,
+          "player_text": "repair the cold tool cache with Bo before night rain",
+          "kind": "repair",
+          "focus": "tool-or-route",
+          "token": "vori",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 13,
+          "player_text": "patch the shelter rope while Bo checks the old cache",
+          "kind": "repair",
+          "focus": "tool-or-route",
+          "token": "vori",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 18,
+          "player_text": "promise Bo the borrowed tool comes back before dark",
+          "kind": "promise",
+          "focus": "tool-or-route",
+          "token": "vori",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "promise",
+      "fatigue": 0.27915293046776957,
+      "pain": 0.001,
+      "wetness": 0.158,
+      "thermal_comfort": 0.6,
+      "workspace_ticks": 32,
+      "autonomous_actions": 32,
+      "social_exchanges": 46,
+      "player_responses": 0,
+      "live_memory": [
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 5,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 11,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 17,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 23,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "tulen",
+          "from": "Fay",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "voeya",
+          "from": "Cy",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 29,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 35,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 41,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 47,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 53,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 59,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 65,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 71,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 77,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 83,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 89,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "vori"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 95,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        }
+      ]
+    },
+    "integrated_deep_time_world:02": {
+      "agent_id": "integrated_deep_time_world:02",
+      "name": "Cy",
+      "role": "healer",
+      "trust": 1.0,
+      "attention": "care-or-kinship",
+      "motive": "comfort_neighbor",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8086612007166091,
+      "curiosity": 0.7801000000000001,
+      "workspace_updates": 3,
+      "language_hits": 3,
+      "responses": 3,
+      "position": {
+        "x": 5.0,
+        "z": 8.66
+      },
+      "embodied_memory": [
+        {
+          "step": 11,
+          "player_text": "move close to Cy and ask which word warns of illness",
+          "kind": "ask_meaning",
+          "focus": "danger-or-weather-memory",
+          "token": "shath",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "ask_meaning",
+      "fatigue": 0.18786029388256695,
+      "pain": 0.0,
+      "wetness": 0.17600000000000002,
+      "thermal_comfort": 0.58,
+      "workspace_ticks": 96,
+      "autonomous_actions": 96,
+      "social_exchanges": 86,
+      "player_responses": 0,
+      "live_memory": [
+        {
+          "kind": "autonomous_tick",
+          "tick": 1,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 3,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 4,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 5,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 6,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 7,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 9,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 10,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 11,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 12,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 13,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 15,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 16,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 17,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 18,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 19,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 21,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "voeya"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 22,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 23,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "mieyaeya",
+          "from": "Ira",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 24,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 25,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 27,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "voeya"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 28,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 29,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 30,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 31,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "voeya"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "tulen",
+          "from": "Fay",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 33,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 34,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 35,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 36,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 37,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 39,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 40,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 41,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 42,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 43,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 45,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 46,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 47,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 48,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 49,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 51,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 52,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 53,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 54,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 55,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 57,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 58,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 59,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 60,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 61,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 63,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 64,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 65,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 66,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 67,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 69,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 70,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 71,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 72,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 73,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 75,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 76,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 77,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 78,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 79,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 81,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 82,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 83,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 84,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 85,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 87,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 88,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 89,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 90,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 91,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 93,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 94,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 95,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 96,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "eyasami"
+        }
+      ]
+    },
+    "integrated_deep_time_world:03": {
+      "agent_id": "integrated_deep_time_world:03",
+      "name": "Dee",
+      "role": "farmer",
+      "trust": 1.0,
+      "attention": "care-or-kinship",
+      "motive": "heard-comfort_neighbor",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8700640427517504,
+      "curiosity": 0.7059000000000001,
+      "workspace_updates": 4,
+      "language_hits": 4,
+      "responses": 4,
+      "position": {
+        "x": 0.0,
+        "z": 11.0
+      },
+      "embodied_memory": [
+        {
+          "step": 2,
+          "player_text": "give water to Dee and ask the council where to store it",
+          "kind": "offer_resource",
+          "focus": "shared-resource",
+          "token": "vonono",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 12,
+          "player_text": "drop the water skin near the storehouse for shared use",
+          "kind": "offer_resource",
+          "focus": "shared-resource",
+          "token": "vonono",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "offer_resource",
+      "fatigue": 0.18185849084232045,
+      "pain": 0.0,
+      "wetness": 0.194,
+      "thermal_comfort": 0.56,
+      "workspace_ticks": 50,
+      "autonomous_actions": 48,
+      "social_exchanges": 60,
+      "player_responses": 2,
+      "live_memory": [
+        {
+          "kind": "autonomous_tick",
+          "tick": 1,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 3,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 5,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 7,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 9,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 11,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 13,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 15,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 17,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "mieyaeya",
+          "from": "Ira",
+          "action": "teach_token"
+        },
+        {
+          "kind": "player_interrupt",
+          "text": "avatar asks who needs water before the cold rain",
+          "token": "vonono",
+          "action": "forage_water",
+          "tick": 18
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 19,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "voeya",
+          "from": "Cy",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 21,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 23,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 25,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 27,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 29,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 31,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 33,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 35,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 37,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 39,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 41,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 43,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 45,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 47,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 49,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 51,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 53,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 55,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 57,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 59,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 61,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 63,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 65,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "player_interrupt",
+          "text": "avatar promises to return the borrowed tool",
+          "token": "saka",
+          "action": "repair_tool",
+          "tick": 66
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 67,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 69,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 71,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 73,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 75,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 77,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 79,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 81,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 83,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 85,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 87,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 89,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 91,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 93,
+          "action": "clean_camp",
+          "focus": "care-or-kinship",
+          "token": "shatusha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 95,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "vonono"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        }
+      ]
+    },
+    "integrated_deep_time_world:04": {
+      "agent_id": "integrated_deep_time_world:04",
+      "name": "Eli",
+      "role": "guard",
+      "trust": 1.0,
+      "attention": "danger-or-weather-memory",
+      "motive": "heard-watch_weather",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8485288452020788,
+      "curiosity": 0.8399000000000002,
+      "workspace_updates": 3,
+      "language_hits": 3,
+      "responses": 3,
+      "position": {
+        "x": -6.0,
+        "z": 10.392
+      },
+      "embodied_memory": [
+        {
+          "step": 9,
+          "player_text": "promise Eli I will return the hammer to the cache",
+          "kind": "promise",
+          "focus": "tool-or-route",
+          "token": "mivo",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "promise",
+      "fatigue": 0.15859804422389068,
+      "pain": 0.0,
+      "wetness": 0.21200000000000002,
+      "thermal_comfort": 0.62,
+      "workspace_ticks": 32,
+      "autonomous_actions": 32,
+      "social_exchanges": 59,
+      "player_responses": 0,
+      "live_memory": [
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 5,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 11,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "mivo"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 17,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "mivo"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 23,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "kathth"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 29,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "kathth"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 35,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "mivo"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 41,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "kathth"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 47,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 53,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "kathth"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 59,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 65,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 71,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "kathth"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 77,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 83,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "kathth"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 89,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 95,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "mitu"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        }
+      ]
+    },
+    "integrated_deep_time_world:05": {
+      "agent_id": "integrated_deep_time_world:05",
+      "name": "Fay",
+      "role": "teacher",
+      "trust": 1.0,
+      "attention": "care-or-kinship",
+      "motive": "comfort_neighbor",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8477372337803998,
+      "curiosity": 0.9704000000000005,
+      "workspace_updates": 4,
+      "language_hits": 4,
+      "responses": 4,
+      "position": {
+        "x": -11.258,
+        "z": 6.5
+      },
+      "embodied_memory": [
+        {
+          "step": 5,
+          "player_text": "comfort Fay; lower my voice after the pain signal",
+          "kind": "comfort",
+          "focus": "care-or-kinship",
+          "token": "milenno",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 19,
+          "player_text": "comfort the frightened child near Fay without taking supplies",
+          "kind": "comfort",
+          "focus": "care-or-kinship",
+          "token": "milenno",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "comfort",
+      "fatigue": 0.15012358735033837,
+      "pain": 0.0,
+      "wetness": 0.14,
+      "thermal_comfort": 0.6,
+      "workspace_ticks": 96,
+      "autonomous_actions": 96,
+      "social_exchanges": 100,
+      "player_responses": 0,
+      "live_memory": [
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 1,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 3,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 4,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 5,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 6,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 7,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 9,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 10,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 11,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 12,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 13,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 15,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 16,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 17,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 18,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 19,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 21,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 22,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 23,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 24,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "tulen"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 25,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 27,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 28,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 29,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 30,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 31,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "repair_tool",
+          "focus": "tool-or-route",
+          "token": "tulen"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 33,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 34,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 35,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 36,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 37,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 39,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 40,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 41,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 42,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 43,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 45,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 46,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 47,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 48,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 49,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 51,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 52,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 53,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 54,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 55,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 57,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 58,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 59,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 60,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 61,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 63,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 64,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 65,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 66,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 67,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "social",
+          "token": "mieyaeya",
+          "from": "Ira",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 69,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 70,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 71,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 72,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 73,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 75,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 76,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 77,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 78,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 79,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 81,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 82,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 83,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 84,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 85,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "shalenka"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 87,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 88,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 89,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 90,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 91,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 93,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 94,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 95,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 96,
+          "action": "comfort_neighbor",
+          "focus": "care-or-kinship",
+          "token": "milenno"
+        }
+      ]
+    },
+    "integrated_deep_time_world:06": {
+      "agent_id": "integrated_deep_time_world:06",
+      "name": "Gus",
+      "role": "trader",
+      "trust": 1.0,
+      "attention": "tool-or-route",
+      "motive": "route_scout",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8360455309493804,
+      "curiosity": 0.7338000000000002,
+      "workspace_updates": 4,
+      "language_hits": 4,
+      "responses": 4,
+      "position": {
+        "x": -14.0,
+        "z": 0.0
+      },
+      "embodied_memory": [
+        {
+          "step": 6,
+          "player_text": "show Gus the trusted route after storms and loose mud",
+          "kind": "route_request",
+          "focus": "tool-or-route",
+          "token": "omno",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 17,
+          "player_text": "walk beside Gus and point to the safer ridge route",
+          "kind": "route_request",
+          "focus": "tool-or-route",
+          "token": "omno",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "route_request",
+      "fatigue": 0.14490082169002008,
+      "pain": 0.004,
+      "wetness": 0.158,
+      "thermal_comfort": 0.58,
+      "workspace_ticks": 48,
+      "autonomous_actions": 48,
+      "social_exchanges": 62,
+      "player_responses": 0,
+      "live_memory": [
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 4,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 6,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 10,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 12,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 16,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 18,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 22,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 24,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 28,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 30,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "voeya",
+          "from": "Cy",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 34,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 36,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 40,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 42,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 46,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 48,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 52,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "vori",
+          "from": "Bo",
+          "action": "repair_tool"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 54,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 58,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 60,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "social",
+          "token": "omom",
+          "from": "Ira",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 64,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 66,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 70,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 72,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 76,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 78,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 82,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 84,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 88,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 90,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "forage_water",
+          "focus": "shared-resource",
+          "token": "kamith"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 94,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "omriri"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 96,
+          "action": "route_scout",
+          "focus": "tool-or-route",
+          "token": "omno"
+        }
+      ]
+    },
+    "integrated_deep_time_world:07": {
+      "agent_id": "integrated_deep_time_world:07",
+      "name": "Ira",
+      "role": "pattern_keeper",
+      "trust": 1.0,
+      "attention": "danger-or-weather-memory",
+      "motive": "watch_weather",
+      "body_state": 1.0,
+      "fear": 0.0,
+      "attachment": 0.8284124836260316,
+      "curiosity": 0.8151000000000003,
+      "workspace_updates": 4,
+      "language_hits": 4,
+      "responses": 4,
+      "position": {
+        "x": -12.99,
+        "z": -7.5
+      },
+      "embodied_memory": [
+        {
+          "step": 7,
+          "player_text": "place a new sign near Ira and ask if the council accepts the mark",
+          "kind": "share_symbol",
+          "focus": "shared-resource",
+          "token": "mieyaeya",
+          "avatar_distance": 2.4
+        },
+        {
+          "step": 15,
+          "player_text": "ask Ira whether this scratch should become a public symbol",
+          "kind": "share_symbol",
+          "focus": "shared-resource",
+          "token": "mieyaeya",
+          "avatar_distance": 2.4
+        }
+      ],
+      "last_player_intent": "share_symbol",
+      "fatigue": 0.19181316157464745,
+      "pain": 0.0,
+      "wetness": 0.17600000000000002,
+      "thermal_comfort": 0.56,
+      "workspace_ticks": 34,
+      "autonomous_actions": 32,
+      "social_exchanges": 58,
+      "player_responses": 2,
+      "live_memory": [
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 2,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 5,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 8,
+          "action": "warm_shelter",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 11,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 14,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 17,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "mieyaeya"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 20,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 23,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "mieyaeya"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 26,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 29,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 32,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 35,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 38,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 41,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "player_interrupt",
+          "text": "avatar asks whether the old route is safe",
+          "token": "voeya",
+          "action": "route_scout",
+          "tick": 42
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 44,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 47,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 50,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 53,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "kamith",
+          "from": "Gus",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 56,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vonono",
+          "from": "Dee",
+          "action": "forage_water"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 59,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 62,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "social",
+          "token": "mitu",
+          "from": "Eli",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 65,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 68,
+          "action": "teach_token",
+          "focus": "shared-resource",
+          "token": "mieyaeya"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 71,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 74,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 77,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 80,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 83,
+          "action": "rest_body",
+          "focus": "care-or-kinship",
+          "token": "vothsha"
+        },
+        {
+          "kind": "social",
+          "token": "shalenka",
+          "from": "Fay",
+          "action": "teach_token"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 86,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 89,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "player_interrupt",
+          "text": "avatar asks what warning token belongs near the shelter",
+          "token": "mieyaeya",
+          "action": "teach_token",
+          "tick": 90
+        },
+        {
+          "kind": "social",
+          "token": "vosha",
+          "from": "Ari",
+          "action": "watch_weather"
+        },
+        {
+          "kind": "social",
+          "token": "milenno",
+          "from": "Fay",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 92,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        },
+        {
+          "kind": "social",
+          "token": "eyasami",
+          "from": "Cy",
+          "action": "comfort_neighbor"
+        },
+        {
+          "kind": "autonomous_tick",
+          "tick": 95,
+          "action": "watch_weather",
+          "focus": "danger-or-weather-memory",
+          "token": "omom"
+        }
+      ]
+    }
+  }
+}

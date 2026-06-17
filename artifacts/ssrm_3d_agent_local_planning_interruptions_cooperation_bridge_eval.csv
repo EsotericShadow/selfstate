@@ -1,0 +1,15 @@
+condition,agent_count,object_count,simulated_days,planning_ticks,planning_events,plan_generation_rate,multi_step_plan_integrity_rate,interruption_detection_rate,interruption_recovery_rate,project_dependency_resolution_rate,cooperation_event_rate,handoff_integrity_rate,route_coordination_rate,priority_replan_rate,frequency_flower_plan_binding_rate,bounded_stress_recovery_rate,browser_plan_replay_rate,privacy_preservation_rate,trace_integrity,local_planning_readiness
+integrated_agent_local_planning_interruptions_cooperation,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_plan_generation,3,6,4,24,72,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5
+no_multi_step_plan,3,6,4,24,72,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.66
+no_interruptions,3,6,4,24,72,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.75
+no_resume_after_interrupt,3,6,4,24,72,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_project_dependencies,3,6,4,24,72,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.83
+no_cooperation,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_dependency_handoff,3,6,4,24,72,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.83
+no_route_coordination,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_priority_replan,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_frequency_flower_plan_binding,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_bounded_stress_recovery,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.93
+no_replay_timeline,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95
+no_privacy_filter,3,6,4,24,72,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96

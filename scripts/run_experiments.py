@@ -1728,6 +1728,14 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_persistent_dialogue_memory_preferences_promises_trust_repair_bridge.py",
+        "--seed",
+        "20260819",
+        "--sessions",
+        "4",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

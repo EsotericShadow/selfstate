@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 206 Persistent Dialogue Memory Bridge</title>
+<style>
+:root {
+  --ink: #152017;
+  --paper: #f3ead7;
+  --moss: #617747;
+  --clay: #b8673d;
+  --water: #446c78;
+  --line: rgba(21,32,23,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: radial-gradient(circle at 20% 10%, #fff7dd 0 16%, transparent 17%), linear-gradient(135deg, #f3ead7, #d7dec8 52%, #b7c9c0); }
+main { max-width: 1180px; margin: 0 auto; padding: 36px 18px 54px; }
+.hero { border: 1px solid var(--line); border-radius: 30px; padding: 30px; background: rgba(255,255,255,.42); box-shadow: 0 24px 60px rgba(34,48,29,.18); }
+h1 { margin: 0; font-size: clamp(2.1rem, 7vw, 5.4rem); line-height: .92; letter-spacing: -.05em; }
+.lede { max-width: 850px; font-size: 1.12rem; line-height: 1.55; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.chips span { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; background: rgba(255,255,255,.35); }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric { padding: 16px; border-radius: 20px; background: rgba(255,255,255,.52); border: 1px solid var(--line); }
+.metric span { display: block; min-height: 42px; font-size: .84rem; text-transform: uppercase; letter-spacing: .08em; color: #43513b; }
+.metric strong { font-size: 1.8rem; }
+.sessions { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.session { border: 1px solid var(--line); border-radius: 24px; padding: 18px; background: rgba(255,255,255,.38); }
+.session h3 { margin: 0 0 10px; color: var(--clay); }
+table { width: 100%; margin-top: 22px; border-collapse: collapse; overflow: hidden; border-radius: 18px; background: rgba(255,255,255,.50); }
+th, td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(97,119,71,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--water); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 720px) { table { display:block; overflow-x:auto; } .hero { padding: 22px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Persistent dialogue memory across visits</h1>
+    <p class="lede">Report 206 gives tiny agents deterministic continuity across sessions: public memories, preferences, promises, consent/refusal boundaries, trust repair, and readable behavior carry forward while private workspace contents remain sealed.</p>
+    <div class="chips"><span>Ari</span><span>Fay</span><span>Milo</span></div>
+  </section>
+  <section class="metrics"><article class='metric'><span>persistent dialogue readiness</span><strong>0.990385</strong></article>
+<article class='metric'><span>persistent memory write rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>cross session recall rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>preference carryover rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>promise tracking rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>trust repair rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>refusal memory rate</span><strong>1.000000</strong></article>
+<article class='metric'><span>memory compression rate</span><strong>0.875000</strong></article></section>
+  <section class="sessions"><section class='session'><h3>Session 1: first return after typed dialogue loop</h3><p>Gabriel apologized for interrupting repair work and promised space on the next visit. | Gabriel promised to return Fay&#x27;s warm blue blanket before the next evening check-in. | Gabriel asked before touching Milo&#x27;s folded map and accepted a limited yes.</p><small>trust 0.537 -> 0.567 | privacy: private workspace not exported; only public memories and sealed digests are exposed</small></section>
+<section class='session'><h3>Session 2: promise resolution and first repair</h3><p>Gabriel fulfilled the repair-space promise and Ari&#x27;s guardedness softened. | Gabriel fulfilled Fay&#x27;s blue-blanket promise before evening check-in. | Gabriel remembered Milo&#x27;s map boundary and let Milo control the object.</p><small>trust 0.567 -> 0.667 | privacy: private workspace not exported; only public memories and sealed digests are exposed</small></section>
+<section class='session'><h3>Session 3: refusal continuity and preference carryover</h3><p>Ari refused the wet east stones; Gabriel accepted the dry west route without pressure. | Gabriel carried over Fay&#x27;s preference for the warm stove corner. | Gabriel remembered Milo&#x27;s low-voice and map-boundary preferences.</p><small>trust 0.667 -> 0.727 | privacy: private workspace not exported; only public memories and sealed digests are exposed</small></section>
+<section class='session'><h3>Session 4: multi-session reputation and stabilized trust</h3><p>Ari accepted nearby help after repeated respect for name, route, and repair boundaries. | Fay chose brief company after Gabriel remembered the ritual and asked instead of assuming. | Milo accepted help when Gabriel preserved map ownership and offered a different role.</p><small>trust 0.727 -> 0.787 | privacy: private workspace not exported; only public memories and sealed digests are exposed</small></section></section>
+  <table>
+    <thead><tr><th>Turn</th><th>Agent</th><th>Intent</th><th>Recall</th><th>Promise/boundary</th><th>Readable behavior</th></tr></thead>
+    <tbody><tr><td>1.1</td><td>Ari</td><td>apology_and_space_promise</td><td>none yet; first persisted episode</td><td>made</td><td>keeps shoulders angled away but stops retreating</td></tr>
+<tr><td>1.2</td><td>Fay</td><td>comfort_promise</td><td>none yet; first persisted episode</td><td>made</td><td>steps closer to the stove line and watches the doorway</td></tr>
+<tr><td>1.3</td><td>Milo</td><td>consent_request</td><td>none yet; first persisted episode</td><td>boundary_recorded</td><td>places one hand on the map edge and nods once</td></tr>
+<tr><td>2.1</td><td>Ari</td><td>promise_fulfillment_and_repair</td><td>prior apology and space promise from session 1</td><td>fulfilled</td><td>faces the avatar briefly, then returns to the brace without flinching</td></tr>
+<tr><td>2.2</td><td>Fay</td><td>promise_fulfillment</td><td>blue blanket promise from session 1</td><td>fulfilled</td><td>wraps the blanket around both shoulders and sits nearer</td></tr>
+<tr><td>2.3</td><td>Milo</td><td>boundary_recall</td><td>limited map consent from session 1</td><td>boundary_reaffirmed</td><td>unfolds the edge himself and keeps ownership of the map</td></tr>
+<tr><td>3.1</td><td>Ari</td><td>preference_aware_request</td><td>Ari prefers dry routes and repair-space respect</td><td>refusal_respected</td><td>leans back from the wet threshold and points west</td></tr>
+<tr><td>3.2</td><td>Fay</td><td>preference_choice</td><td>Fay likes warm places and evening check-ins</td><td>preference_carried</td><td>settles low beside the warm wall and relaxes her hands</td></tr>
+<tr><td>3.3</td><td>Milo</td><td>preference_and_boundary_recall</td><td>Milo prefers low voices near the archive shelf</td><td>preference_carried</td><td>walks half a step ahead, glancing back to confirm distance</td></tr>
+<tr><td>4.1</td><td>Ari</td><td>identity_and_boundary_recall</td><td>sessions 1-3 repair-space, dry-route, and name preferences</td><td>continuity_confirmed</td><td>stands beside the avatar instead of in front of the exit path</td></tr>
+<tr><td>4.2</td><td>Fay</td><td>relationship_continuity_choice</td><td>sessions 1-3 blue blanket, warm stove corner, evening ritual</td><td>continuity_confirmed</td><td>makes room beside the blanket instead of clutching it shut</td></tr>
+<tr><td>4.3</td><td>Milo</td><td>ownership_respecting_offer</td><td>sessions 1-3 map ownership, low voice, and consent limits</td><td>continuity_confirmed</td><td>hands over the lamp handle while keeping the folded map close</td></tr></tbody>
+  </table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic persistent dialogue-memory substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood. The bridge is a deterministic substrate for playable continuity, not a claim of real understanding, real consent, or subjective experience.</p>
+</main>
+</body>
+</html>

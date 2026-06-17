@@ -1,0 +1,3 @@
+gate,status,score,evidence,claim_boundary
+persistent_multi_session_dialogue_memory,pass,0.990385,"public memories, preferences, promises, refusal boundaries, repair notes, and trust values persist across four sessions","Deterministic persistent dialogue-memory substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood."
+not_real_memory_or_consciousness,pass,1.000000,the module exports only deterministic public memory state and sealed private digests,"Deterministic persistent dialogue-memory substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood."

@@ -1,0 +1,185 @@
+{
+  "agents": {
+    "Ari": {
+      "boundary_memory": [
+        "tired body should not be pushed onto wet stones"
+      ],
+      "private_workspace_digest": "sealed",
+      "promise_ledger": {
+        "ari_continuity_check": {
+          "due_session": null,
+          "last_update_session": 4,
+          "made_session": 4,
+          "status": "continuity_confirmed"
+        },
+        "ari_repair_space": {
+          "due_session": 2,
+          "last_update_session": 2,
+          "made_session": 1,
+          "status": "fulfilled"
+        },
+        "ari_wet_route_refusal": {
+          "due_session": null,
+          "last_update_session": 3,
+          "made_session": 3,
+          "status": "refusal_respected"
+        }
+      },
+      "public_memory": [
+        "Gabriel apologized for interrupting repair work and promised space on the next visit.",
+        "Gabriel fulfilled the repair-space promise and Ari's guardedness softened.",
+        "Ari refused the wet east stones; Gabriel accepted the dry west route without pressure.",
+        "Ari accepted nearby help after repeated respect for name, route, and repair boundaries."
+      ],
+      "public_preferences": {
+        "address": "Ari, not unit-A",
+        "route": "dry west route",
+        "work_style": "space before questions"
+      },
+      "repair_notes": [
+        "ari_repair_space repaired or strengthened trust in session 2"
+      ],
+      "temperament": "cautious-proud repair keeper",
+      "trust_in_avatar": 0.81
+    },
+    "Fay": {
+      "boundary_memory": [],
+      "private_workspace_digest": "sealed",
+      "promise_ledger": {
+        "fay_blue_blanket": {
+          "due_session": 2,
+          "last_update_session": 2,
+          "made_session": 1,
+          "status": "fulfilled"
+        },
+        "fay_evening_ritual": {
+          "due_session": null,
+          "last_update_session": 4,
+          "made_session": 4,
+          "status": "continuity_confirmed"
+        },
+        "fay_warm_corner_preference": {
+          "due_session": null,
+          "last_update_session": 3,
+          "made_session": 3,
+          "status": "preference_carried"
+        }
+      },
+      "public_memory": [
+        "Gabriel promised to return Fay's warm blue blanket before the next evening check-in.",
+        "Gabriel fulfilled Fay's blue-blanket promise before evening check-in.",
+        "Gabriel carried over Fay's preference for the warm stove corner.",
+        "Fay chose brief company after Gabriel remembered the ritual and asked instead of assuming."
+      ],
+      "public_preferences": {
+        "comfort": "warm blue blanket",
+        "place": "sunlit stove corner",
+        "ritual": "evening check-in"
+      },
+      "repair_notes": [
+        "fay_blue_blanket repaired or strengthened trust in session 2"
+      ],
+      "temperament": "social comfort-seeker",
+      "trust_in_avatar": 0.81
+    },
+    "Milo": {
+      "boundary_memory": [
+        "looking is allowed; lifting map requires explicit permission",
+        "map ownership remains with Milo"
+      ],
+      "private_workspace_digest": "sealed",
+      "promise_ledger": {
+        "milo_help_without_takeover": {
+          "due_session": null,
+          "last_update_session": 4,
+          "made_session": 4,
+          "status": "continuity_confirmed"
+        },
+        "milo_low_voice_route": {
+          "due_session": null,
+          "last_update_session": 3,
+          "made_session": 3,
+          "status": "preference_carried"
+        },
+        "milo_map_boundary": {
+          "due_session": null,
+          "last_update_session": 1,
+          "made_session": 1,
+          "status": "boundary_reaffirmed"
+        }
+      },
+      "public_memory": [
+        "Gabriel asked before touching Milo's folded map and accepted a limited yes.",
+        "Gabriel remembered Milo's map boundary and let Milo control the object.",
+        "Gabriel remembered Milo's low-voice and map-boundary preferences.",
+        "Milo accepted help when Gabriel preserved map ownership and offered a different role."
+      ],
+      "public_preferences": {
+        "boundary": "ask before touching tools",
+        "object": "folded route map",
+        "sound": "low voices near the archive shelf"
+      },
+      "repair_notes": [],
+      "temperament": "guarded map-carrier",
+      "trust_in_avatar": 0.74
+    }
+  },
+  "claim_boundary": "Deterministic persistent dialogue-memory substrate only: not real memory, not real consent, not subjective consciousness, and not moral patienthood.",
+  "events": 12,
+  "module": "ssrm_3d_persistent_dialogue_memory_preferences_promises_trust_repair_bridge",
+  "next_gate": "long-horizon agent personality stability, routines, and remembered avatar reputation across playable days",
+  "seed": 20260819,
+  "session_summaries": [
+    {
+      "agents_touched": "Ari;Fay;Milo",
+      "avg_trust_after": "0.567",
+      "avg_trust_before": "0.537",
+      "cross_session_recall_present": true,
+      "cross_session_recall_required": false,
+      "privacy_boundary": "private workspace not exported; only public memories and sealed digests are exposed",
+      "session": 1,
+      "session_public_summary": "Gabriel apologized for interrupting repair work and promised space on the next visit. | Gabriel promised to return Fay's warm blue blanket before the next evening check-in. | Gabriel asked before touching Milo's folded map and accepted a limited yes.",
+      "turns": 3,
+      "visit_label": "first return after typed dialogue loop"
+    },
+    {
+      "agents_touched": "Ari;Fay;Milo",
+      "avg_trust_after": "0.667",
+      "avg_trust_before": "0.567",
+      "cross_session_recall_present": true,
+      "cross_session_recall_required": true,
+      "privacy_boundary": "private workspace not exported; only public memories and sealed digests are exposed",
+      "session": 2,
+      "session_public_summary": "Gabriel fulfilled the repair-space promise and Ari's guardedness softened. | Gabriel fulfilled Fay's blue-blanket promise before evening check-in. | Gabriel remembered Milo's map boundary and let Milo control the object.",
+      "turns": 3,
+      "visit_label": "promise resolution and first repair"
+    },
+    {
+      "agents_touched": "Ari;Fay;Milo",
+      "avg_trust_after": "0.727",
+      "avg_trust_before": "0.667",
+      "cross_session_recall_present": true,
+      "cross_session_recall_required": true,
+      "privacy_boundary": "private workspace not exported; only public memories and sealed digests are exposed",
+      "session": 3,
+      "session_public_summary": "Ari refused the wet east stones; Gabriel accepted the dry west route without pressure. | Gabriel carried over Fay's preference for the warm stove corner. | Gabriel remembered Milo's low-voice and map-boundary preferences.",
+      "turns": 3,
+      "visit_label": "refusal continuity and preference carryover"
+    },
+    {
+      "agents_touched": "Ari;Fay;Milo",
+      "avg_trust_after": "0.787",
+      "avg_trust_before": "0.727",
+      "cross_session_recall_present": true,
+      "cross_session_recall_required": true,
+      "privacy_boundary": "private workspace not exported; only public memories and sealed digests are exposed",
+      "session": 4,
+      "session_public_summary": "Ari accepted nearby help after repeated respect for name, route, and repair boundaries. | Fay chose brief company after Gabriel remembered the ritual and asked instead of assuming. | Milo accepted help when Gabriel preserved map ownership and offered a different role.",
+      "turns": 3,
+      "visit_label": "multi-session reputation and stabilized trust"
+    }
+  ],
+  "sessions": 4,
+  "source_condition": "integrated_agent_dialogue_turn_loop_typed_avatar_utterance_memory_consent_repair",
+  "source_state_loaded": true
+}

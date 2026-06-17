@@ -1,0 +1,4 @@
+agent,credits,debt,debt_burden,hunger,warmth,tool_access,social_obligation,inventory,private_workspace_digest
+Ari,2.58,0.00,0.000,0.400,0.420,0.740,0.220,"{""care_token"": 2, ""food_ration"": 2, ""heat_wood"": 0, ""tool_hour"": 2}",sealed
+Fay,1.10,0.00,0.000,0.620,0.230,0.610,0.420,"{""care_token"": 1, ""food_ration"": 0, ""heat_wood"": 3, ""herb_bundle"": 1, ""soft_cloth"": 2}",sealed
+Milo,1.63,8.67,0.842,0.370,0.390,0.890,0.340,"{""food_ration"": 3, ""lamp_oil"": 2, ""map_vellum"": 1, ""tool_hour"": 0}",sealed

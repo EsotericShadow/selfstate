@@ -1,0 +1,7 @@
+agent,obligation,starting_count,final_social_obligation,public_history_count
+Ari,owed_help,1,0.220,8
+Ari,owed_visit,0,0.220,8
+Fay,owed_help,0,0.420,8
+Fay,owed_visit,2,0.420,8
+Milo,owed_help,1,0.340,8
+Milo,owed_visit,0,0.340,8

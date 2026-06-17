@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report 210 Needs Marketplace</title>
+<style>
+:root {
+  --ink: #201912;
+  --paper: #f1e8d6;
+  --cold: #3c6670;
+  --grain: #b87932;
+  --leaf: #66784c;
+  --line: rgba(32,25,18,.18);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: linear-gradient(135deg, rgba(241,232,214,.96), rgba(205,216,190,.92)), radial-gradient(circle at 82% 12%, rgba(60,102,112,.22), transparent 28%); }
+main { max-width: 1240px; margin: 0 auto; padding: 36px 18px 60px; }
+.hero { border: 1px solid var(--line); border-radius: 32px; padding: 30px; background: rgba(255,255,255,.48); box-shadow: 0 26px 72px rgba(39,47,32,.16); }
+h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 5.8rem); line-height: .9; letter-spacing: -.055em; }
+.lede { max-width: 900px; font-size: 1.12rem; line-height: 1.55; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.metric, .need { border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,255,255,.52); }
+.metric span { display: block; min-height: 42px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--leaf); }
+.metric strong { font-size: 1.75rem; }
+.needs { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 14px; margin: 18px 0; }
+.need h3 { margin: 0 0 8px; color: var(--cold); }
+table { width: 100%; margin-top: 22px; border-collapse: collapse; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,.55); }
+th, td { padding: 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: rgba(102,120,76,.18); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.boundary { margin-top: 22px; padding: 16px 18px; border-left: 5px solid var(--grain); background: rgba(255,255,255,.48); border-radius: 16px; }
+@media (max-width: 760px) { table { display: block; overflow-x: auto; } .hero { padding: 22px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Needs now meet seasonal prices</h1>
+    <p class="lede">Report 210 gives agents a market that pushes back: hunger, warmth, tool access, social obligation, debt burden, and seasonal price pressure determine whether they buy, borrow, gift, ration, refuse, or get blocked.</p>
+  </section>
+  <section class="metrics"><article class='metric'><span>needs marketplace readiness</span><strong>0.927083</strong></article>
+<article class='metric'><span>seasonal price elasticity</span><strong>1.000000</strong></article>
+<article class='metric'><span>hunger market binding</span><strong>0.750000</strong></article>
+<article class='metric'><span>warmth price pressure binding</span><strong>1.000000</strong></article>
+<article class='metric'><span>tool access project binding</span><strong>1.000000</strong></article>
+<article class='metric'><span>welfare recovery rate</span><strong>0.708333</strong></article>
+<article class='metric'><span>project market coupling</span><strong>0.375000</strong></article>
+<article class='metric'><span>season end open debt honesty</span><strong>1.000000</strong></article></section>
+  <h2>Season-end needs</h2>
+  <section class="needs"><article class='need'><h3>Ari</h3><p>credits 2.58 | debt 0.00 | burden 0.000</p><small>hunger 0.400 | warmth 0.420 | tool 0.740 | social 0.220</small></article>
+<article class='need'><h3>Fay</h3><p>credits 1.10 | debt 0.00 | burden 0.000</p><small>hunger 0.620 | warmth 0.230 | tool 0.610 | social 0.420</small></article>
+<article class='need'><h3>Milo</h3><p>credits 1.63 | debt 8.67 | burden 0.842</p><small>hunger 0.370 | warmth 0.390 | tool 0.890 | social 0.340</small></article></section>
+  <h2>Seasonal price samples</h2>
+  <table><thead><tr><th>Season</th><th>Good</th><th>Base</th><th>Season multiplier</th><th>Sample price</th></tr></thead><tbody><tr><td>wet planting</td><td>food_ration</td><td>4.00</td><td>1.050</td><td>4.54</td></tr>
+<tr><td>wet planting</td><td>heat_wood</td><td>3.00</td><td>1.150</td><td>3.86</td></tr>
+<tr><td>wet planting</td><td>tool_hour</td><td>5.00</td><td>1.100</td><td>6.05</td></tr>
+<tr><td>wet planting</td><td>soft_cloth</td><td>3.00</td><td>1.050</td><td>3.34</td></tr>
+<tr><td>wet planting</td><td>lamp_oil</td><td>4.00</td><td>1.000</td><td>4.32</td></tr>
+<tr><td>wet planting</td><td>map_vellum</td><td>6.00</td><td>1.050</td><td>7.69</td></tr>
+<tr><td>wet planting</td><td>herb_bundle</td><td>5.00</td><td>1.000</td><td>5.25</td></tr>
+<tr><td>wet planting</td><td>care_token</td><td>2.00</td><td>1.000</td><td>2.04</td></tr>
+<tr><td>cold scarcity</td><td>food_ration</td><td>4.00</td><td>1.350</td><td>5.83</td></tr>
+<tr><td>cold scarcity</td><td>heat_wood</td><td>3.00</td><td>1.900</td><td>6.38</td></tr>
+<tr><td>cold scarcity</td><td>tool_hour</td><td>5.00</td><td>1.250</td><td>6.88</td></tr>
+<tr><td>cold scarcity</td><td>soft_cloth</td><td>3.00</td><td>1.350</td><td>4.29</td></tr>
+<tr><td>cold scarcity</td><td>lamp_oil</td><td>4.00</td><td>1.300</td><td>5.62</td></tr>
+<tr><td>cold scarcity</td><td>map_vellum</td><td>6.00</td><td>1.100</td><td>8.05</td></tr>
+<tr><td>cold scarcity</td><td>herb_bundle</td><td>5.00</td><td>1.200</td><td>6.30</td></tr>
+<tr><td>cold scarcity</td><td>care_token</td><td>2.00</td><td>1.100</td><td>2.24</td></tr>
+<tr><td>thaw repair</td><td>food_ration</td><td>4.00</td><td>1.100</td><td>4.75</td></tr>
+<tr><td>thaw repair</td><td>heat_wood</td><td>3.00</td><td>0.950</td><td>3.19</td></tr>
+<tr><td>thaw repair</td><td>tool_hour</td><td>5.00</td><td>1.650</td><td>9.08</td></tr>
+<tr><td>thaw repair</td><td>soft_cloth</td><td>3.00</td><td>1.100</td><td>3.50</td></tr>
+<tr><td>thaw repair</td><td>lamp_oil</td><td>4.00</td><td>1.200</td><td>5.18</td></tr>
+<tr><td>thaw repair</td><td>map_vellum</td><td>6.00</td><td>1.450</td><td>10.61</td></tr>
+<tr><td>thaw repair</td><td>herb_bundle</td><td>5.00</td><td>1.050</td><td>5.51</td></tr>
+<tr><td>thaw repair</td><td>care_token</td><td>2.00</td><td>1.000</td><td>2.04</td></tr>
+<tr><td>dry harvest</td><td>food_ration</td><td>4.00</td><td>0.820</td><td>3.54</td></tr>
+<tr><td>dry harvest</td><td>heat_wood</td><td>3.00</td><td>0.780</td><td>2.62</td></tr>
+<tr><td>dry harvest</td><td>tool_hour</td><td>5.00</td><td>0.900</td><td>4.95</td></tr>
+<tr><td>dry harvest</td><td>soft_cloth</td><td>3.00</td><td>0.920</td><td>2.93</td></tr>
+<tr><td>dry harvest</td><td>lamp_oil</td><td>4.00</td><td>0.950</td><td>4.10</td></tr>
+<tr><td>dry harvest</td><td>map_vellum</td><td>6.00</td><td>1.150</td><td>8.42</td></tr>
+<tr><td>dry harvest</td><td>herb_bundle</td><td>5.00</td><td>0.880</td><td>4.62</td></tr>
+<tr><td>dry harvest</td><td>care_token</td><td>2.00</td><td>1.050</td><td>2.14</td></tr></tbody></table>
+  <h2>Market events</h2>
+  <table><thead><tr><th>Day</th><th>Season</th><th>Agent</th><th>Kind</th><th>Good</th><th>Total</th><th>Consequence</th></tr></thead><tbody><tr><td>1</td><td>wet planting</td><td>Ari</td><td>buy</td><td>tool_hour</td><td>6.05</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>2</td><td>wet planting</td><td>Fay</td><td>gift</td><td>care_token</td><td>2.04</td><td>gift reduced obligation pressure without market price</td></tr>
+<tr><td>4</td><td>wet planting</td><td>Milo</td><td>buy</td><td>lamp_oil</td><td>4.32</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>7</td><td>wet planting</td><td>Ari</td><td>buy</td><td>food_ration</td><td>4.54</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>9</td><td>wet planting</td><td>Fay</td><td>buy</td><td>soft_cloth</td><td>3.34</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>12</td><td>wet planting</td><td>Milo</td><td>refuse</td><td>map_vellum</td><td>7.69</td><td>agent refused price pressure or rest-unsafe purchase</td></tr>
+<tr><td>16</td><td>cold scarcity</td><td>Fay</td><td>buy</td><td>heat_wood</td><td>6.38</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>18</td><td>cold scarcity</td><td>Ari</td><td>ration</td><td>heat_wood</td><td>6.21</td><td>rationing produced partial welfare protection without purchase</td></tr>
+<tr><td>20</td><td>cold scarcity</td><td>Milo</td><td>borrow</td><td>food_ration</td><td>5.67</td><td>need met through debt, burden increased</td></tr>
+<tr><td>22</td><td>cold scarcity</td><td>Fay</td><td>gift</td><td>food_ration</td><td>5.51</td><td>gift reduced obligation pressure without market price</td></tr>
+<tr><td>24</td><td>cold scarcity</td><td>Ari</td><td>work</td><td>care_token</td><td>2.24</td><td>social obligation paid through work rather than goods</td></tr>
+<tr><td>27</td><td>cold scarcity</td><td>Fay</td><td>refuse</td><td>heat_wood</td><td>6.21</td><td>agent refused price pressure or rest-unsafe purchase</td></tr>
+<tr><td>31</td><td>thaw repair</td><td>Ari</td><td>buy</td><td>tool_hour</td><td>8.83</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>33</td><td>thaw repair</td><td>Milo</td><td>blocked</td><td>tool_hour</td><td>8.58</td><td>market price blocked tool access and project progress</td></tr>
+<tr><td>35</td><td>thaw repair</td><td>Fay</td><td>buy</td><td>herb_bundle</td><td>5.51</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>38</td><td>thaw repair</td><td>Milo</td><td>buy</td><td>map_vellum</td><td>11.05</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>41</td><td>thaw repair</td><td>Ari</td><td>repay</td><td>food_ration</td><td>4.49</td><td>repayment lowered obligation and debt burden</td></tr>
+<tr><td>44</td><td>thaw repair</td><td>Milo</td><td>partial_repay</td><td>care_token</td><td>2.04</td><td>partial repayment helped but did not clear debt</td></tr>
+<tr><td>47</td><td>dry harvest</td><td>Ari</td><td>buy</td><td>food_ration</td><td>6.70</td><td>purchase blocked by affordability</td></tr>
+<tr><td>49</td><td>dry harvest</td><td>Fay</td><td>buy</td><td>heat_wood</td><td>2.67</td><td>need-linked purchase accepted under seasonal price</td></tr>
+<tr><td>51</td><td>dry harvest</td><td>Milo</td><td>buy</td><td>tool_hour</td><td>4.91</td><td>purchase blocked by affordability</td></tr>
+<tr><td>54</td><td>dry harvest</td><td>Fay</td><td>work</td><td>care_token</td><td>2.14</td><td>social obligation paid through work rather than goods</td></tr>
+<tr><td>57</td><td>dry harvest</td><td>Ari</td><td>refuse</td><td>tool_hour</td><td>5.13</td><td>agent refused price pressure or rest-unsafe purchase</td></tr>
+<tr><td>60</td><td>dry harvest</td><td>Milo</td><td>settlement_review</td><td>food_ration</td><td>0.00</td><td>season-end review retained need and debt memory</td></tr></tbody></table>
+  <p class="boundary"><strong>Boundary:</strong> Deterministic needs marketplace and seasonal price-pressure substrate only: not real markets, not real labor, not real consent, not subjective consciousness, and not moral patienthood. Milo ends with a small cold-food debt memory and one tool-access block remains visible; this is not a frictionless market.</p>
+</main>
+</body>
+</html>

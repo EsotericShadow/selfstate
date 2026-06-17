@@ -1,0 +1,122 @@
+{
+  "agents": {
+    "Ari": {
+      "credits": 2.58,
+      "debt": 0.0,
+      "inventory": {
+        "care_token": 2,
+        "food_ration": 2,
+        "heat_wood": 0,
+        "tool_hour": 2
+      },
+      "needs": {
+        "hunger": 0.4,
+        "social_obligation": 0.22,
+        "tool_access": 0.74,
+        "warmth": 0.42
+      },
+      "obligations": {
+        "owed_help": 1,
+        "owed_visit": 0
+      },
+      "private_workspace_digest": "sealed",
+      "project": "west brace calibration",
+      "public_history": [
+        "Ari buys one tool hour before wet queues grow.",
+        "Ari buys food before repair fatigue raises hunger.",
+        "Ari rations heat wood instead of buying at the cold spike.",
+        "Ari repays a social help obligation with a dry-route repair check.",
+        "Ari buys a thaw-repair tool hour despite tool bottleneck pricing.",
+        "Ari repays food support through a ration transfer, lowering obligation pressure.",
+        "Ari buys harvest food while price is low and hunger can recover.",
+        "Ari refuses another cheap tool hour because rest need beats price temptation."
+      ],
+      "trust": 1.0
+    },
+    "Fay": {
+      "credits": 1.1,
+      "debt": 0.0,
+      "inventory": {
+        "care_token": 1,
+        "food_ration": 0,
+        "heat_wood": 3,
+        "herb_bundle": 1,
+        "soft_cloth": 2
+      },
+      "needs": {
+        "hunger": 0.62,
+        "social_obligation": 0.42,
+        "tool_access": 0.61,
+        "warmth": 0.23
+      },
+      "obligations": {
+        "owed_help": 0,
+        "owed_visit": 2
+      },
+      "private_workspace_digest": "sealed",
+      "project": "stove-corner comfort shelf",
+      "public_history": [
+        "Fay gives Ari a care token to keep the repair visit reciprocal.",
+        "Fay buys cloth while wet-season price is still moderate.",
+        "Fay pays cold-scarcity heat price to protect the stove ritual.",
+        "Fay gifts food to Milo after seeing debt pressure.",
+        "Fay refuses extra heat wood and accepts a colder evening blanket posture.",
+        "Fay buys herbs for a repair visit while food pressure is lower.",
+        "Fay buys cheap harvest heat wood for future ritual security.",
+        "Fay spends social energy hosting a shared repair meal."
+      ],
+      "trust": 1.0
+    },
+    "Milo": {
+      "credits": 1.63,
+      "debt": 8.67,
+      "inventory": {
+        "food_ration": 3,
+        "lamp_oil": 2,
+        "map_vellum": 1,
+        "tool_hour": 0
+      },
+      "needs": {
+        "hunger": 0.37,
+        "social_obligation": 0.34,
+        "tool_access": 0.89,
+        "warmth": 0.39
+      },
+      "obligations": {
+        "owed_help": 1,
+        "owed_visit": 0
+      },
+      "private_workspace_digest": "sealed",
+      "project": "quiet route archive",
+      "public_history": [
+        "Milo buys lamp oil for quiet archive work.",
+        "Milo refuses vellum because archive expansion can wait.",
+        "Milo borrows food at cold-scarcity price, raising debt burden.",
+        "Milo cannot buy the tool hour and archive expansion stalls.",
+        "Milo buys one vellum sheet even at thaw repair pricing because the archive is blocked.",
+        "Milo partially repays cold-season food debt with a care token, not full food value.",
+        "Milo buys cheaper harvest tool access and unblocks the archive review.",
+        "Milo ends the season fed but still carrying a small cold-food debt memory."
+      ],
+      "trust": 1.0
+    }
+  },
+  "claim_boundary": "Deterministic needs marketplace and seasonal price-pressure substrate only: not real markets, not real labor, not real consent, not subjective consciousness, and not moral patienthood.",
+  "days": 60,
+  "events": 24,
+  "module": "ssrm_3d_needs_marketplace_hunger_warmth_tool_social_price_pressure_bridge",
+  "next_gate": "seasonal body ecology with illness risk, hunger/warmth tradeoffs, communal care, and market stress on relationships",
+  "scarcity": {
+    "care_token": 0.02,
+    "food_ration": 0.07,
+    "heat_wood": 0.11,
+    "herb_bundle": 0.02,
+    "lamp_oil": 0.05,
+    "map_vellum": 0.24,
+    "soft_cloth": 0.03,
+    "tool_hour": 0.19
+  },
+  "seed": 20260823,
+  "source_condition": "integrated_agent_owned_project_economy_material_wear_debt_trade_labor",
+  "source_state_loaded": true
+}

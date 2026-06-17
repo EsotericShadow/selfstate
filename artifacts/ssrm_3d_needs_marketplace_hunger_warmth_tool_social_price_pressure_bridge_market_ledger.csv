@@ -1,0 +1,25 @@
+day,season,agent,kind,good,unit_price,total_price,price_pressure,accepted,refused,blocked,market_consequence
+1,wet planting,Ari,buy,tool_hour,6.05,6.05,0.275,True,False,False,need-linked purchase accepted under seasonal price
+2,wet planting,Fay,gift,care_token,2.04,2.04,0.107,True,False,False,gift reduced obligation pressure without market price
+4,wet planting,Milo,buy,lamp_oil,4.32,4.32,0.254,True,False,False,need-linked purchase accepted under seasonal price
+7,wet planting,Ari,buy,food_ration,4.54,4.54,0.285,True,False,False,need-linked purchase accepted under seasonal price
+9,wet planting,Fay,buy,soft_cloth,3.34,3.34,0.176,True,False,False,need-linked purchase accepted under seasonal price
+12,wet planting,Milo,refuse,map_vellum,7.69,7.69,0.606,False,True,False,agent refused price pressure or rest-unsafe purchase
+16,cold scarcity,Fay,buy,heat_wood,6.38,6.38,0.407,True,False,False,need-linked purchase accepted under seasonal price
+18,cold scarcity,Ari,ration,heat_wood,6.21,6.21,0.544,True,False,False,rationing produced partial welfare protection without purchase
+20,cold scarcity,Milo,borrow,food_ration,5.67,5.67,0.447,True,False,False,"need met through debt, burden increased"
+22,cold scarcity,Fay,gift,food_ration,5.51,5.51,0.594,True,False,False,gift reduced obligation pressure without market price
+24,cold scarcity,Ari,work,care_token,2.24,2.24,0.196,True,False,False,social obligation paid through work rather than goods
+27,cold scarcity,Fay,refuse,heat_wood,6.21,6.21,0.669,False,True,False,agent refused price pressure or rest-unsafe purchase
+31,thaw repair,Ari,buy,tool_hour,8.83,8.83,0.774,True,False,False,need-linked purchase accepted under seasonal price
+33,thaw repair,Milo,blocked,tool_hour,8.58,8.58,0.677,False,False,True,market price blocked tool access and project progress
+35,thaw repair,Fay,buy,herb_bundle,5.51,5.51,0.594,True,False,False,need-linked purchase accepted under seasonal price
+38,thaw repair,Milo,buy,map_vellum,11.05,11.05,0.871,True,False,False,need-linked purchase accepted under seasonal price
+41,thaw repair,Ari,repay,food_ration,4.49,4.49,1.740,True,False,False,repayment lowered obligation and debt burden
+44,thaw repair,Milo,partial_repay,care_token,2.04,2.04,1.252,True,False,False,partial repayment helped but did not clear debt
+47,dry harvest,Ari,buy,food_ration,3.35,6.70,2.597,False,False,True,purchase blocked by affordability
+49,dry harvest,Fay,buy,heat_wood,2.67,2.67,0.708,True,False,False,need-linked purchase accepted under seasonal price
+51,dry harvest,Milo,buy,tool_hour,4.91,4.91,3.012,False,False,True,purchase blocked by affordability
+54,dry harvest,Fay,work,care_token,2.14,2.14,1.945,True,False,False,social obligation paid through work rather than goods
+57,dry harvest,Ari,refuse,tool_hour,5.13,5.13,1.988,False,True,False,agent refused price pressure or rest-unsafe purchase
+60,dry harvest,Milo,settlement_review,food_ration,3.51,0.00,0.000,True,False,False,season-end review retained need and debt memory

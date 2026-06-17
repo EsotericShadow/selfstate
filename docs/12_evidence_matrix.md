@@ -140,7 +140,7 @@ This boundary is not evidence that selfhood exists. It defines how future langua
 | Compressed packets are sufficient for language reasoning | Packet-fed LLMs match full-world LLMs on abstract recommendation quality when the state layers are healthy. | Full-world access consistently beats packet access without control costs, implying the packet omits essential state. |
 | Simulation-distilled critics can improve LLM reasoning | A sim-distilled critic improves held-out LLM planning, repair, and cascade-avoidance tasks while ablations identify which critic matters. | LLM search plus generic reward models match or beat sim-distilled critics, or the critics only transfer simulation artifacts. |
 | Software field-experience controllers can improve coding agents | The same frontier coding LLM plus repo-trained critics improves hidden-test pass rate, regression rate, review time, CI cost, and PR acceptance on live/private repo tasks. Report 139 is the first structured toy bridge; Report 141 is its dynamic extension with held-out families and noisy multi-channel conditions. | The controller adds no value over the frontier coding LLM alone, only overfits benchmark quirks, or increases regressions/review burden. |
-| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances. Report 147 binds objects to a place graph. Report 148 adds agent-made infrastructure with material expenditure, social labor, route cost/hazard mutation, object accessibility coupling, maintenance, and trace ablations; readiness is `0.829745`. | A claim of mature live agents, true conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before navigation, affordance choice, and infrastructure projects are learned/open-ended and before agent-created route/object histories exceed deterministic bridge policies. |
+| Deep-time playable agents can be bridged from simulated prehistory | Report 142 emits deterministic avatar-entry packets after `4096` compressed years. Report 143 adds stateful avatar interventions. Report 144 adds typed embodied avatar input. Report 145 adds autonomous multi-rate live-agent ticks. Report 146 adds persistent object affordances. Report 147 binds objects to a place graph. Report 148 adds agent-made infrastructure. Report 149 adds agent-created infrastructure proposals, council arbitration, scarce budgets, maintenance debt, native-token grounding, fairness rotation, outcome feedback, and trace ablations; readiness is `0.921374`. | A claim of mature live agents, true conversation, open-ended language/culture, unscripted civilization, or subjective consciousness appears before proposal generation, navigation, affordance choice, and governance are learned/open-ended and before agent-created route/object/governance histories exceed deterministic bridge policies. |
 
 ## Candidate Hypotheses
 
@@ -861,6 +861,24 @@ This is Report 147: a deterministic bridge from object affordances to place-base
 This is Report 148: a deterministic bridge from fixed place navigation to agent-made infrastructure that mutates route and object-access histories. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
 
 
+### Report 149: SSRM-3D infrastructure proposal governance bridge
+
+| Condition | Readiness | Generated | Pressure | Conflict | Budget | Debt | Token | Fairness | Feedback | Complete | Reject | History | Trace |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `integrated_infrastructure_proposal_governance` | `0.921374` | `1.000000` | `0.299004` | `0.465278` | `1.000000` | `0.862745` | `1.000000` | `0.910448` | `1.000000` | `1.000000` | `0.441558` | `1.000000` | `1.000000` |
+| `no_agent_created_proposals` | `0.080000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` |
+| `no_conflict_priority_arbitration` | `0.868325` | `1.000000` | `0.333248` | `0.000000` | `1.000000` | `1.000000` | `1.000000` | `0.944444` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` |
+| `no_scarce_budget` | `0.327016` | `1.000000` | `0.470160` | `0.000000` | `0.000000` | `0.000000` | `1.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `0.000000` | `1.000000` |
+| `no_maintenance_debt` | `0.833741` | `1.000000` | `0.288875` | `0.479167` | `1.000000` | `0.000000` | `1.000000` | `0.927536` | `1.000000` | `1.000000` | `0.373333` | `1.000000` | `1.000000` |
+| `no_cultural_language_grounding` | `0.848481` | `1.000000` | `0.307166` | `0.458333` | `1.000000` | `0.952381` | `0.000000` | `0.939394` | `1.000000` | `1.000000` | `0.551282` | `1.000000` | `1.000000` |
+| `no_fairness_rotation` | `0.858141` | `1.000000` | `0.303863` | `0.437500` | `1.000000` | `1.000000` | `1.000000` | `0.000000` | `1.000000` | `1.000000` | `0.592593` | `1.000000` | `1.000000` |
+| `no_outcome_feedback` | `0.681599` | `1.000000` | `0.470160` | `0.375000` | `1.000000` | `0.000000` | `1.000000` | `0.925926` | `0.000000` | `0.000000` | `1.000000` | `1.000000` | `1.000000` |
+| `no_trace_replay` | `0.841374` | `1.000000` | `0.299004` | `0.465278` | `1.000000` | `0.862745` | `1.000000` | `0.910448` | `1.000000` | `1.000000` | `0.441558` | `1.000000` | `0.000000` |
+
+This is Report 149: a deterministic bridge from fixed infrastructure projects to pressure-derived proposals, priority conflict, scarce budgets, maintenance debt, role fairness, native-token grounding, and governance histories. It does not prove subjective consciousness, LLM open dialogue, complete playable worlds, unscripted civilization, or mature autonomous live agents.
+
+
+
 
 
 
@@ -948,6 +966,7 @@ This is Report 148: a deterministic bridge from fixed place navigation to agent-
 | `experiments/ssrm_3d_affordance_object_ecology_bridge.py` | `artifacts/ssrm_3d_affordance_object_ecology_bridge_verdict.csv` |
 | `experiments/ssrm_3d_place_navigation_object_bridge.py` | `artifacts/ssrm_3d_place_navigation_object_bridge_verdict.csv` |
 | `experiments/ssrm_3d_agent_made_infrastructure_bridge.py` | `artifacts/ssrm_3d_agent_made_infrastructure_bridge_verdict.csv` |
+| `experiments/ssrm_3d_infrastructure_proposal_governance_bridge.py` | `artifacts/ssrm_3d_infrastructure_proposal_governance_bridge_verdict.csv` |
 | `experiments/learned_bottleneck_discovery.py` | `artifacts/learned_bottleneck_discovery_verdict.csv` |
 | `experiments/sequence_latent_transfer.py` | `artifacts/sequence_latent_transfer_verdict.csv` |
 | `experiments/heterogeneous_attractor_precursor.py` | `artifacts/heterogeneous_attractor_precursor_verdict.csv` |

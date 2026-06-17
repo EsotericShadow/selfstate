@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Infrastructure Proposal Governance Bridge</title>
+  <script src="../artifacts/ssrm_3d_infrastructure_proposal_governance_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_infrastructure_proposal_governance_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_infrastructure_proposal_governance_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #17211d;
+      --paper: #eadfc4;
+      --panel: #fff8e9;
+      --line: #c8ae73;
+      --moss: #3f6347;
+      --clay: #994a2b;
+      --water: #3f7286;
+      --gold: #bd8929;
+      --stone: #59616f;
+      --muted: #687167;
+      --shadow: rgba(23, 33, 29, 0.22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 12%, rgba(189, 137, 41, 0.24), transparent 24%),
+        radial-gradient(circle at 86% 14%, rgba(63, 114, 134, 0.22), transparent 28%),
+        linear-gradient(140deg, rgba(63, 99, 71, 0.24), transparent 46%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+    .shell { min-height: 100vh; display: grid; grid-template-columns: minmax(580px, 1fr) 470px; gap: 16px; padding: 16px; }
+    .stage, .panel { border: 1px solid var(--line); background: rgba(255, 248, 233, 0.94); box-shadow: 0 22px 52px var(--shadow); overflow: hidden; }
+    .stage { display: grid; grid-template-rows: auto minmax(540px, 1fr) auto; }
+    header, .hud, .panel-head, .controls { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+    header { justify-content: space-between; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-family: Georgia, serif; font-size: clamp(1.35rem, 2.5vw, 2.4rem); }
+    h2 { font-size: 1rem; }
+    h3 { color: var(--muted); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .badge, button { border: 1px solid var(--line); background: #f3e5c8; color: var(--ink); font: inherit; font-size: 0.84rem; font-weight: 800; }
+    .badge { padding: 6px 8px; }
+    button { min-height: 38px; padding: 8px 10px; cursor: pointer; }
+    button:hover, button.active { background: var(--moss); color: #fff8e9; border-color: var(--moss); }
+    canvas { width: 100%; height: 100%; min-height: 540px; display: block; background: linear-gradient(rgba(23,33,29,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(23,33,29,.05) 1px, transparent 1px), #e2d2b1; background-size: 34px 34px; }
+    .hud { border-top: 1px solid var(--line); border-bottom: 0; }
+    .metric { min-width: 112px; display: grid; gap: 4px; color: var(--muted); font-size: 0.74rem; }
+    .metric strong { color: var(--ink); font-size: 1rem; }
+    .panel { display: grid; grid-template-rows: auto auto minmax(300px, 1fr); min-height: calc(100vh - 32px); }
+    .controls button { flex: 1 1 30%; }
+    .detail { overflow: auto; display: grid; align-content: start; gap: 12px; padding: 14px; }
+    .proposal-row { border: 1px solid var(--line); background: rgba(255,252,242,.82); padding: 9px; cursor: pointer; }
+    .proposal-row.active { border-color: var(--clay); box-shadow: inset 0 0 0 2px rgba(153,74,43,.20); }
+    .bar-row { display: grid; grid-template-columns: 118px 1fr 44px; gap: 8px; align-items: center; font-size: 0.80rem; }
+    .bar { height: 8px; background: #d8c394; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--water), var(--gold), var(--clay)); }
+    .log { display: grid; gap: 8px; border-top: 1px solid var(--line); background: #e4d2ad; padding: 12px; }
+    .line { border-left: 3px solid var(--moss); background: rgba(255,248,233,.9); padding: 8px 10px; font-size: 0.84rem; line-height: 1.35; }
+    @media (max-width: 980px) { .shell { grid-template-columns: 1fr; } .panel { min-height: 0; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="stage">
+      <header>
+        <div>
+          <h1>Infrastructure Proposal Governance</h1>
+          <p>Agents propose, debate, budget, reject, and complete infrastructure futures.</p>
+        </div>
+        <span class="badge" id="verdict">loading</span>
+      </header>
+      <canvas id="world" width="1120" height="760"></canvas>
+      <section class="hud" id="hud"></section>
+    </main>
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Governance Console</h2>
+        <span class="badge">Report 149</span>
+        <span class="badge" id="councilBadge">council</span>
+      </div>
+      <div class="controls">
+        <button id="prev">prev</button>
+        <button id="next">next</button>
+        <button id="toggle">show accepted</button>
+      </div>
+      <div class="detail" id="detail"></div>
+    </aside>
+  </div>
+  <script>
+    const payload = window.SSRM_3D_INFRASTRUCTURE_PROPOSAL_GOVERNANCE_BRIDGE_RESULTS || { verdict: {}, trace: [], final_state: { governance_history: [], accepted_by_role: {} } };
+    const generated = window.SSRM_3D_INFRASTRUCTURE_PROPOSAL_GOVERNANCE_BRIDGE_STATE || payload.final_state || { governance_history: [], accepted_by_role: {} };
+    const state = { selected: 0, acceptedOnly: false, councils: generated.governance_history || [], roles: generated.accepted_by_role || {} };
+    const roleColor = { scout: "#3f7286", builder: "#994a2b", healer: "#5f7d3f", farmer: "#bd8929", guard: "#59616f", teacher: "#8b5d64", trader: "#3f6347", pattern_keeper: "#7d5b34" };
+    function clamp(value, low = 0, high = 1) { return Math.max(low, Math.min(high, value)); }
+    function fmt(value) { return Number(value || 0).toFixed(3); }
+    function council() { return state.councils[state.selected] || {}; }
+    function accepted() { return council().accepted_proposals || []; }
+    function renderHud() {
+      const v = payload.verdict || {};
+      document.getElementById("verdict").textContent = `verdict: ${v.verdict || "local"}`;
+      const rows = [["readiness", v.full_proposal_governance_readiness || 0], ["generate", v.full_proposal_generation_rate || 0], ["conflict", v.full_priority_conflict_resolution_rate || 0], ["budget", v.full_scarce_budget_allocation_rate || 0], ["tokens", v.full_cultural_token_grounding_rate || 0], ["trace", v.full_trace_completeness || 0]];
+      document.getElementById("hud").innerHTML = rows.map(([label, value]) => `<div class="metric">${label}<strong>${fmt(value)}</strong></div>`).join("");
+    }
+    function renderDetail() {
+      const c = council();
+      document.getElementById("councilBadge").textContent = `council ${c.council || 0}`;
+      const proposals = state.acceptedOnly ? accepted() : accepted();
+      const main = accepted()[0] || {};
+      const bars = [["generated", (c.generated || 0) / 8], ["accepted", (c.accepted || 0) / 4], ["rejected", (c.rejected_count || 0) / 8], ["budget types", Object.keys(c.budget_remaining || {}).length / 8], ["top severity", main.severity || 0]].map(([name, value]) => `<div class="bar-row"><span>${name}</span><div class="bar"><span style="width:${clamp(value) * 100}%"></span></div><strong>${fmt(value)}</strong></div>`).join("");
+      const rows = proposals.map((p, index) => `<div class="proposal-row ${index === 0 ? "active" : ""}"><strong>${p.agent_name} / ${p.kind}</strong><br><small>${p.native_token} -> ${p.object}; score ${fmt(p.score)}; budget ${p.allocated}</small></div>`).join("");
+      const roleRows = Object.entries(state.roles).map(([role, value]) => `<div class="line"><strong>${role}</strong>: ${value} accepted proposals</div>`).join("");
+      document.getElementById("detail").innerHTML = `<h2>${c.season || "season"}</h2><p>accepted ${c.accepted || 0} of ${c.generated || 0}; rejected ${c.rejected_count || 0}</p>${bars}<h3>Accepted proposals</h3><div class="log">${rows || "<div class='line'>No accepted proposals in this council.</div>"}</div><h3>Role rotation</h3><div class="log">${roleRows}</div>`;
+    }
+    function drawWorld() {
+      const canvas = document.getElementById("world");
+      const ctx = canvas.getContext("2d");
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#e2d2b1";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+      const roles = Object.keys(state.roles);
+      roles.forEach((role, index) => {
+        const angle = index / Math.max(1, roles.length) * Math.PI * 2 - Math.PI / 2;
+        const radius = 185 + Number(state.roles[role] || 0) * 5;
+        const x = centerX + Math.cos(angle) * radius;
+        const y = centerY + Math.sin(angle) * radius;
+        ctx.strokeStyle = "rgba(23,33,29,.22)";
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(x, y);
+        ctx.stroke();
+        ctx.fillStyle = roleColor[role] || "#3f6347";
+        ctx.beginPath();
+        ctx.arc(x, y, 20 + Number(state.roles[role] || 0), 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#fff8e9";
+        ctx.font = "700 12px Avenir Next, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(role.slice(0, 6), x, y + 4);
+      });
+      const c = council();
+      accepted().forEach((p, index) => {
+        const angle = index / Math.max(1, accepted().length) * Math.PI * 2;
+        const x = centerX + Math.cos(angle) * 80;
+        const y = centerY + Math.sin(angle) * 80;
+        ctx.fillStyle = roleColor[p.role] || "#bd8929";
+        ctx.fillRect(x - 12, y - 12, 24, 24);
+      });
+      ctx.fillStyle = "#17211d";
+      ctx.font = "700 24px Georgia";
+      ctx.textAlign = "center";
+      ctx.fillText(`Council ${c.council || 0}`, centerX, centerY - 8);
+      ctx.font = "700 15px Avenir Next, sans-serif";
+      ctx.fillText(c.season || "governance", centerX, centerY + 18);
+    }
+    function renderAll() { renderHud(); renderDetail(); drawWorld(); }
+    document.getElementById("prev").addEventListener("click", () => { state.selected = Math.max(0, state.selected - 1); renderAll(); });
+    document.getElementById("next").addEventListener("click", () => { state.selected = Math.min(state.councils.length - 1, state.selected + 1); renderAll(); });
+    document.getElementById("toggle").addEventListener("click", () => { state.acceptedOnly = !state.acceptedOnly; renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>

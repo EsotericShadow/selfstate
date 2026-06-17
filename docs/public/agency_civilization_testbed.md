@@ -34,7 +34,9 @@ Report 146 adds persistent object affordances: named objects have locations, int
 
 Report 147 adds place-based object navigation: objects are bound to places, routes have terrain costs and hazards, agents plan paths, spend body state while traveling, use sensory gradients, update route memory, exchange wayfinding, and interact with objects only after arrival.
 
-This is still not a completed playable civilization. Report 148 adds agent-made infrastructure: agents spend materials and coordinate labor to build roads, drains, watch posts, signs, covered walks, channels, and route improvements that mutate route cost, route hazard, object accessibility, and maintenance histories. Infrastructure readiness is `0.829745`. The next gate is agent-created project proposals, conflict over infrastructure priorities, long-run maintenance debt, and learned/open-ended interpretation rather than deterministic bridge policies.
+Report 148 adds agent-made infrastructure: agents spend materials and coordinate labor to build roads, drains, watch posts, signs, covered walks, channels, and route improvements that mutate route cost, route hazard, object accessibility, and maintenance histories.
+
+This is still not a completed playable civilization. Report 149 adds infrastructure governance: agents create proposals from route/object/maintenance pressure, arbitrate conflict in councils, allocate scarce budgets, reject overreach, service maintenance debt, ground proposals in native tokens, rotate role fairness, and persist governance histories. Proposal-governance readiness is `0.921374`. The next gate is learned proposal generation, persistent political factions, agent disagreement over values, and avatar questioning of governance histories rather than deterministic bridge policies.
 
 ## What The Testbed Can Study
 

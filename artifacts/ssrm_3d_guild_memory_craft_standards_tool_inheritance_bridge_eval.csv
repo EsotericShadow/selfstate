@@ -1,0 +1,17 @@
+condition,agent_count,guild_cycles,guild_events,guild_memory_rate,craft_standard_definition_rate,quality_evaluation_rate,certification_rate,tool_inheritance_rate,lineage_trace_rate,apprentice_cohort_rate,standard_violation_detection_rate,remedial_training_rate,trust_reputation_binding_rate,intergenerational_memory_rate,craft_mark_persistence_rate,frequency_flower_guild_rhythm_rate,browser_guild_replay_rate,privacy_preservation_rate,trace_integrity,guild_inheritance_readiness
+integrated_guild_memory_craft_standards_tool_inheritance,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.980556
+no_guild_memory,3,6,18,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.820556
+no_craft_standards,3,6,18,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.666667,1.0,1.0,0.833333,1.0,1.0,1.0,1.0,1.0,0.803333
+no_quality_evaluation,3,6,18,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.722222,1.0,1.0,0.833333,1.0,1.0,1.0,1.0,1.0,0.807222
+no_certification,3,6,18,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.722222,1.0,1.0,0.833333,1.0,1.0,1.0,1.0,1.0,0.887222
+no_tool_inheritance,3,6,18,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.722222,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.900556
+no_lineage_trace,3,6,18,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.722222,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.910556
+no_apprentice_cohort,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.722222,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.910556
+no_violation_detection,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_remedial_training,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.920556
+no_reputation_binding,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.910556
+no_intergenerational_memory,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.900556
+no_craft_mark,3,6,18,1.0,1.0,1.0,1.0,1.0,0.666667,1.0,0.722222,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.897222
+no_frequency_flower_binding,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.940556
+no_browser_replay,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.940556
+no_privacy_filter,3,6,18,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.722222,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.950556

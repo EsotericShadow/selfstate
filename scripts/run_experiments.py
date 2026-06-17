@@ -1630,6 +1630,14 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_guild_memory_craft_standards_tool_inheritance_bridge.py",
+        "--seed",
+        "20260807",
+        "--cycles",
+        "6",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

@@ -1,0 +1,1997 @@
+[
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:00",
+      "audience": [
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_help",
+      "public": true,
+      "tick": 0
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_events": 1,
+      "embarrassment": 0.05,
+      "face_story_tail": [],
+      "name": "Ari",
+      "public_respect": 0.759768,
+      "public_trust_avatar": 0.857129,
+      "reputation_with_group": 0.61,
+      "role": "scout",
+      "rumors": 1,
+      "status_confidence": 0.564
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_recorded": true,
+      "embarrassment": 0.05,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_help",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.759768,
+      "readable": true,
+      "reputation": 0.61,
+      "reputation_updated": true,
+      "tick": 0
+    },
+    "tick": 0
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:01",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_correction",
+      "public": true,
+      "tick": 1
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_events": 1,
+      "embarrassment": 0.21,
+      "face_story_tail": [
+        "Public face was strained by public_correction; this should be repairable."
+      ],
+      "name": "Bo",
+      "public_respect": 0.567595,
+      "public_trust_avatar": 0.76725,
+      "reputation_with_group": 0.5,
+      "role": "builder",
+      "rumors": 1,
+      "status_confidence": 0.4595
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_recorded": true,
+      "embarrassment": 0.21,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_correction",
+      "line": "I need this remembered accurately, not used against me.",
+      "marker": "guarded_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.567595,
+      "readable": true,
+      "reputation": 0.5,
+      "reputation_updated": true,
+      "tick": 1
+    },
+    "tick": 1
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:02",
+      "audience": [],
+      "kind": "private_boundary_respected",
+      "public": false,
+      "tick": 2
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_events": 0,
+      "embarrassment": 0.02,
+      "face_story_tail": [
+        "Public face repaired through private_boundary_respected."
+      ],
+      "name": "Cy",
+      "public_respect": 0.691355,
+      "public_trust_avatar": 0.783432,
+      "reputation_with_group": 0.55,
+      "role": "healer",
+      "rumors": 0,
+      "status_confidence": 0.5365
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_recorded": false,
+      "embarrassment": 0.02,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "private_boundary_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": false,
+      "public_respect": 0.691355,
+      "readable": true,
+      "reputation": 0.55,
+      "reputation_updated": false,
+      "tick": 2
+    },
+    "tick": 2
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:03",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_refusal_respected",
+      "public": true,
+      "tick": 3
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_events": 1,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through public_refusal_respected."
+      ],
+      "name": "Dee",
+      "public_respect": 0.75717,
+      "public_trust_avatar": 0.774409,
+      "reputation_with_group": 0.62,
+      "role": "farmer",
+      "rumors": 1,
+      "status_confidence": 0.575
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_refusal_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.75717,
+      "readable": true,
+      "reputation": 0.62,
+      "reputation_updated": true,
+      "tick": 3
+    },
+    "tick": 3
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:04",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_misname",
+      "public": true,
+      "tick": 4
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_events": 1,
+      "embarrassment": 0.2,
+      "face_story_tail": [
+        "Public face was strained by public_misname; this should be repairable."
+      ],
+      "name": "Eli",
+      "public_respect": 0.598752,
+      "public_trust_avatar": 0.853418,
+      "reputation_with_group": 0.51,
+      "role": "guard",
+      "rumors": 1,
+      "status_confidence": 0.465
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_recorded": true,
+      "embarrassment": 0.2,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_misname",
+      "line": "I need this remembered accurately, not used against me.",
+      "marker": "guarded_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.598752,
+      "readable": true,
+      "reputation": 0.51,
+      "reputation_updated": true,
+      "tick": 4
+    },
+    "tick": 4
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:05",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_name_repair",
+      "public": true,
+      "tick": 5
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_events": 1,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through public_name_repair."
+      ],
+      "name": "Fay",
+      "public_respect": 0.795067,
+      "public_trust_avatar": 0.865758,
+      "reputation_with_group": 0.6,
+      "role": "teacher",
+      "rumors": 1,
+      "status_confidence": 0.586
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_name_repair",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.795067,
+      "readable": true,
+      "reputation": 0.6,
+      "reputation_updated": true,
+      "tick": 5
+    },
+    "tick": 5
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:06",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "false_gossip",
+      "public": true,
+      "tick": 6
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_events": 1,
+      "embarrassment": 0.18,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable."
+      ],
+      "name": "Gus",
+      "public_respect": 0.533514,
+      "public_trust_avatar": 0.713246,
+      "reputation_with_group": 0.44,
+      "role": "trader",
+      "rumors": 1,
+      "status_confidence": 0.4485
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_recorded": true,
+      "embarrassment": 0.18,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "false_gossip",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.533514,
+      "readable": true,
+      "reputation": 0.44,
+      "reputation_updated": true,
+      "tick": 6
+    },
+    "tick": 6
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:07",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "gossip_correction",
+      "public": true,
+      "tick": 7
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_events": 1,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through gossip_correction."
+      ],
+      "name": "Ira",
+      "public_respect": 0.809165,
+      "public_trust_avatar": 0.955294,
+      "reputation_with_group": 0.67,
+      "role": "pattern_keeper",
+      "rumors": 1,
+      "status_confidence": 0.5805
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "gossip_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.809165,
+      "readable": true,
+      "reputation": 0.67,
+      "reputation_updated": true,
+      "tick": 7
+    },
+    "tick": 7
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:00",
+      "audience": [
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_correction",
+      "public": true,
+      "tick": 8
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_events": 2,
+      "embarrassment": 0.18,
+      "face_story_tail": [
+        "Public face was strained by public_correction; this should be repairable."
+      ],
+      "name": "Ari",
+      "public_respect": 0.649768,
+      "public_trust_avatar": 0.817129,
+      "reputation_with_group": 0.56,
+      "role": "scout",
+      "rumors": 2,
+      "status_confidence": 0.5035
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_recorded": true,
+      "embarrassment": 0.18,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.649768,
+      "readable": true,
+      "reputation": 0.56,
+      "reputation_updated": true,
+      "tick": 8
+    },
+    "tick": 8
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:01",
+      "audience": [],
+      "kind": "private_boundary_respected",
+      "public": false,
+      "tick": 9
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_events": 1,
+      "embarrassment": 0.15,
+      "face_story_tail": [
+        "Public face was strained by public_correction; this should be repairable.",
+        "Public face repaired through private_boundary_respected."
+      ],
+      "name": "Bo",
+      "public_respect": 0.597595,
+      "public_trust_avatar": 0.81725,
+      "reputation_with_group": 0.5,
+      "role": "builder",
+      "rumors": 1,
+      "status_confidence": 0.476
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_recorded": false,
+      "embarrassment": 0.15,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "private_boundary_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": false,
+      "public_respect": 0.597595,
+      "readable": true,
+      "reputation": 0.5,
+      "reputation_updated": false,
+      "tick": 9
+    },
+    "tick": 9
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:02",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_refusal_respected",
+      "public": true,
+      "tick": 10
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_events": 1,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through private_boundary_respected.",
+        "Public face repaired through public_refusal_respected."
+      ],
+      "name": "Cy",
+      "public_respect": 0.791355,
+      "public_trust_avatar": 0.843432,
+      "reputation_with_group": 0.62,
+      "role": "healer",
+      "rumors": 1,
+      "status_confidence": 0.5915
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_refusal_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.791355,
+      "readable": true,
+      "reputation": 0.62,
+      "reputation_updated": true,
+      "tick": 10
+    },
+    "tick": 10
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:03",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_misname",
+      "public": true,
+      "tick": 11
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_events": 2,
+      "embarrassment": 0.12,
+      "face_story_tail": [
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable."
+      ],
+      "name": "Dee",
+      "public_respect": 0.65717,
+      "public_trust_avatar": 0.724409,
+      "reputation_with_group": 0.58,
+      "role": "farmer",
+      "rumors": 2,
+      "status_confidence": 0.52
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_recorded": true,
+      "embarrassment": 0.12,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_misname",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.65717,
+      "readable": true,
+      "reputation": 0.58,
+      "reputation_updated": true,
+      "tick": 11
+    },
+    "tick": 11
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:04",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_name_repair",
+      "public": true,
+      "tick": 12
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_events": 2,
+      "embarrassment": 0.06,
+      "face_story_tail": [
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair."
+      ],
+      "name": "Eli",
+      "public_respect": 0.718752,
+      "public_trust_avatar": 0.923418,
+      "reputation_with_group": 0.56,
+      "role": "guard",
+      "rumors": 2,
+      "status_confidence": 0.531
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_recorded": true,
+      "embarrassment": 0.06,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_name_repair",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.718752,
+      "readable": true,
+      "reputation": 0.56,
+      "reputation_updated": true,
+      "tick": 12
+    },
+    "tick": 12
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:05",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "false_gossip",
+      "public": true,
+      "tick": 13
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_events": 2,
+      "embarrassment": 0.1,
+      "face_story_tail": [
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable."
+      ],
+      "name": "Fay",
+      "public_respect": 0.665067,
+      "public_trust_avatar": 0.835758,
+      "reputation_with_group": 0.49,
+      "role": "teacher",
+      "rumors": 2,
+      "status_confidence": 0.5145
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_recorded": true,
+      "embarrassment": 0.1,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "false_gossip",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.665067,
+      "readable": true,
+      "reputation": 0.49,
+      "reputation_updated": true,
+      "tick": 13
+    },
+    "tick": 13
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:06",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "gossip_correction",
+      "public": true,
+      "tick": 14
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_events": 2,
+      "embarrassment": 0.05,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction."
+      ],
+      "name": "Gus",
+      "public_respect": 0.643514,
+      "public_trust_avatar": 0.763246,
+      "reputation_with_group": 0.56,
+      "role": "trader",
+      "rumors": 2,
+      "status_confidence": 0.509
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_recorded": true,
+      "embarrassment": 0.05,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "gossip_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.643514,
+      "readable": true,
+      "reputation": 0.56,
+      "reputation_updated": true,
+      "tick": 14
+    },
+    "tick": 14
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:07",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "accurate_public_praise",
+      "public": true,
+      "tick": 15
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_events": 2,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Ira",
+      "public_respect": 0.899165,
+      "public_trust_avatar": 1.0,
+      "reputation_with_group": 0.75,
+      "role": "pattern_keeper",
+      "rumors": 2,
+      "status_confidence": 0.63
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "accurate_public_praise",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.899165,
+      "readable": true,
+      "reputation": 0.75,
+      "reputation_updated": true,
+      "tick": 15
+    },
+    "tick": 15
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:00",
+      "audience": [],
+      "kind": "private_boundary_respected",
+      "public": false,
+      "tick": 16
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_events": 2,
+      "embarrassment": 0.12,
+      "face_story_tail": [
+        "Public face was strained by public_correction; this should be repairable.",
+        "Public face repaired through private_boundary_respected."
+      ],
+      "name": "Ari",
+      "public_respect": 0.679768,
+      "public_trust_avatar": 0.867129,
+      "reputation_with_group": 0.56,
+      "role": "scout",
+      "rumors": 2,
+      "status_confidence": 0.52
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_recorded": false,
+      "embarrassment": 0.12,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "private_boundary_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": false,
+      "public_respect": 0.679768,
+      "readable": true,
+      "reputation": 0.56,
+      "reputation_updated": false,
+      "tick": 16
+    },
+    "tick": 16
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:01",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_refusal_respected",
+      "public": true,
+      "tick": 17
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_events": 2,
+      "embarrassment": 0.07,
+      "face_story_tail": [
+        "Public face was strained by public_correction; this should be repairable.",
+        "Public face repaired through private_boundary_respected.",
+        "Public face repaired through public_refusal_respected."
+      ],
+      "name": "Bo",
+      "public_respect": 0.697595,
+      "public_trust_avatar": 0.87725,
+      "reputation_with_group": 0.57,
+      "role": "builder",
+      "rumors": 2,
+      "status_confidence": 0.531
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_recorded": true,
+      "embarrassment": 0.07,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_refusal_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.697595,
+      "readable": true,
+      "reputation": 0.57,
+      "reputation_updated": true,
+      "tick": 17
+    },
+    "tick": 17
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:02",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_misname",
+      "public": true,
+      "tick": 18
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_events": 2,
+      "embarrassment": 0.12,
+      "face_story_tail": [
+        "Public face repaired through private_boundary_respected.",
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable."
+      ],
+      "name": "Cy",
+      "public_respect": 0.691355,
+      "public_trust_avatar": 0.793432,
+      "reputation_with_group": 0.58,
+      "role": "healer",
+      "rumors": 2,
+      "status_confidence": 0.5365
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_recorded": true,
+      "embarrassment": 0.12,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_misname",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.691355,
+      "readable": true,
+      "reputation": 0.58,
+      "reputation_updated": true,
+      "tick": 18
+    },
+    "tick": 18
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:03",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_name_repair",
+      "public": true,
+      "tick": 19
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_events": 3,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair."
+      ],
+      "name": "Dee",
+      "public_respect": 0.77717,
+      "public_trust_avatar": 0.794409,
+      "reputation_with_group": 0.63,
+      "role": "farmer",
+      "rumors": 3,
+      "status_confidence": 0.586
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_name_repair",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.77717,
+      "readable": true,
+      "reputation": 0.63,
+      "reputation_updated": true,
+      "tick": 19
+    },
+    "tick": 19
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:04",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "false_gossip",
+      "public": true,
+      "tick": 20
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_events": 3,
+      "embarrassment": 0.16,
+      "face_story_tail": [
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable."
+      ],
+      "name": "Eli",
+      "public_respect": 0.588752,
+      "public_trust_avatar": 0.893418,
+      "reputation_with_group": 0.45,
+      "role": "guard",
+      "rumors": 3,
+      "status_confidence": 0.4595
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_recorded": true,
+      "embarrassment": 0.16,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "false_gossip",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.588752,
+      "readable": true,
+      "reputation": 0.45,
+      "reputation_updated": true,
+      "tick": 20
+    },
+    "tick": 20
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:05",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "gossip_correction",
+      "public": true,
+      "tick": 21
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_events": 3,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction."
+      ],
+      "name": "Fay",
+      "public_respect": 0.775067,
+      "public_trust_avatar": 0.885758,
+      "reputation_with_group": 0.61,
+      "role": "teacher",
+      "rumors": 3,
+      "status_confidence": 0.575
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "gossip_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.775067,
+      "readable": true,
+      "reputation": 0.61,
+      "reputation_updated": true,
+      "tick": 21
+    },
+    "tick": 21
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:06",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "accurate_public_praise",
+      "public": true,
+      "tick": 22
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_events": 3,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Gus",
+      "public_respect": 0.733514,
+      "public_trust_avatar": 0.813246,
+      "reputation_with_group": 0.64,
+      "role": "trader",
+      "rumors": 3,
+      "status_confidence": 0.5585
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "accurate_public_praise",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.733514,
+      "readable": true,
+      "reputation": 0.64,
+      "reputation_updated": true,
+      "tick": 22
+    },
+    "tick": 22
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:07",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_help",
+      "public": true,
+      "tick": 23
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_events": 3,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Ira",
+      "public_respect": 0.979165,
+      "public_trust_avatar": 1.0,
+      "reputation_with_group": 0.81,
+      "role": "pattern_keeper",
+      "rumors": 3,
+      "status_confidence": 0.674
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_help",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.979165,
+      "readable": true,
+      "reputation": 0.81,
+      "reputation_updated": true,
+      "tick": 23
+    },
+    "tick": 23
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:00",
+      "audience": [
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_refusal_respected",
+      "public": true,
+      "tick": 24
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_events": 3,
+      "embarrassment": 0.04,
+      "face_story_tail": [
+        "Public face was strained by public_correction; this should be repairable.",
+        "Public face repaired through private_boundary_respected.",
+        "Public face repaired through public_refusal_respected."
+      ],
+      "name": "Ari",
+      "public_respect": 0.779768,
+      "public_trust_avatar": 0.927129,
+      "reputation_with_group": 0.63,
+      "role": "scout",
+      "rumors": 3,
+      "status_confidence": 0.575
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_recorded": true,
+      "embarrassment": 0.04,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_refusal_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.779768,
+      "readable": true,
+      "reputation": 0.63,
+      "reputation_updated": true,
+      "tick": 24
+    },
+    "tick": 24
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:01",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_misname",
+      "public": true,
+      "tick": 25
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_events": 3,
+      "embarrassment": 0.19,
+      "face_story_tail": [
+        "Public face repaired through private_boundary_respected.",
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable."
+      ],
+      "name": "Bo",
+      "public_respect": 0.597595,
+      "public_trust_avatar": 0.82725,
+      "reputation_with_group": 0.53,
+      "role": "builder",
+      "rumors": 3,
+      "status_confidence": 0.476
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_recorded": true,
+      "embarrassment": 0.19,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_misname",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.597595,
+      "readable": true,
+      "reputation": 0.53,
+      "reputation_updated": true,
+      "tick": 25
+    },
+    "tick": 25
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:02",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_name_repair",
+      "public": true,
+      "tick": 26
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_events": 3,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair."
+      ],
+      "name": "Cy",
+      "public_respect": 0.811355,
+      "public_trust_avatar": 0.863432,
+      "reputation_with_group": 0.63,
+      "role": "healer",
+      "rumors": 3,
+      "status_confidence": 0.6025
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_name_repair",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.811355,
+      "readable": true,
+      "reputation": 0.63,
+      "reputation_updated": true,
+      "tick": 26
+    },
+    "tick": 26
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:03",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "false_gossip",
+      "public": true,
+      "tick": 27
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_events": 4,
+      "embarrassment": 0.1,
+      "face_story_tail": [
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable."
+      ],
+      "name": "Dee",
+      "public_respect": 0.64717,
+      "public_trust_avatar": 0.764409,
+      "reputation_with_group": 0.52,
+      "role": "farmer",
+      "rumors": 4,
+      "status_confidence": 0.5145
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_recorded": true,
+      "embarrassment": 0.1,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "false_gossip",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.64717,
+      "readable": true,
+      "reputation": 0.52,
+      "reputation_updated": true,
+      "tick": 27
+    },
+    "tick": 27
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:04",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "gossip_correction",
+      "public": true,
+      "tick": 28
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_events": 4,
+      "embarrassment": 0.03,
+      "face_story_tail": [
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction."
+      ],
+      "name": "Eli",
+      "public_respect": 0.698752,
+      "public_trust_avatar": 0.943418,
+      "reputation_with_group": 0.57,
+      "role": "guard",
+      "rumors": 4,
+      "status_confidence": 0.52
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_recorded": true,
+      "embarrassment": 0.03,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "gossip_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.698752,
+      "readable": true,
+      "reputation": 0.57,
+      "reputation_updated": true,
+      "tick": 28
+    },
+    "tick": 28
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:05",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "accurate_public_praise",
+      "public": true,
+      "tick": 29
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_events": 4,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Fay",
+      "public_respect": 0.865067,
+      "public_trust_avatar": 0.935758,
+      "reputation_with_group": 0.69,
+      "role": "teacher",
+      "rumors": 4,
+      "status_confidence": 0.6245
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "accurate_public_praise",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.865067,
+      "readable": true,
+      "reputation": 0.69,
+      "reputation_updated": true,
+      "tick": 29
+    },
+    "tick": 29
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:06",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_help",
+      "public": true,
+      "tick": 30
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_events": 4,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Gus",
+      "public_respect": 0.813514,
+      "public_trust_avatar": 0.853246,
+      "reputation_with_group": 0.7,
+      "role": "trader",
+      "rumors": 4,
+      "status_confidence": 0.6025
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_help",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.813514,
+      "readable": true,
+      "reputation": 0.7,
+      "reputation_updated": true,
+      "tick": 30
+    },
+    "tick": 30
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:07",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_correction",
+      "public": true,
+      "tick": 31
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_events": 4,
+      "embarrassment": 0.13,
+      "face_story_tail": [
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise.",
+        "Public face was strained by public_correction; this should be repairable."
+      ],
+      "name": "Ira",
+      "public_respect": 0.869165,
+      "public_trust_avatar": 0.96,
+      "reputation_with_group": 0.76,
+      "role": "pattern_keeper",
+      "rumors": 4,
+      "status_confidence": 0.6135
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_recorded": true,
+      "embarrassment": 0.13,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.869165,
+      "readable": true,
+      "reputation": 0.76,
+      "reputation_updated": true,
+      "tick": 31
+    },
+    "tick": 31
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:00",
+      "audience": [
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_misname",
+      "public": true,
+      "tick": 32
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_events": 4,
+      "embarrassment": 0.16,
+      "face_story_tail": [
+        "Public face repaired through private_boundary_respected.",
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable."
+      ],
+      "name": "Ari",
+      "public_respect": 0.679768,
+      "public_trust_avatar": 0.877129,
+      "reputation_with_group": 0.59,
+      "role": "scout",
+      "rumors": 4,
+      "status_confidence": 0.52
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:00",
+      "audience_recorded": true,
+      "embarrassment": 0.16,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_misname",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.679768,
+      "readable": true,
+      "reputation": 0.59,
+      "reputation_updated": true,
+      "tick": 32
+    },
+    "tick": 32
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:01",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:02",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "public_name_repair",
+      "public": true,
+      "tick": 33
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_events": 4,
+      "embarrassment": 0.05,
+      "face_story_tail": [
+        "Public face repaired through public_refusal_respected.",
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair."
+      ],
+      "name": "Bo",
+      "public_respect": 0.717595,
+      "public_trust_avatar": 0.89725,
+      "reputation_with_group": 0.58,
+      "role": "builder",
+      "rumors": 4,
+      "status_confidence": 0.542
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:01",
+      "audience_recorded": true,
+      "embarrassment": 0.05,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "public_name_repair",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.717595,
+      "readable": true,
+      "reputation": 0.58,
+      "reputation_updated": true,
+      "tick": 33
+    },
+    "tick": 33
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:02",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:03"
+      ],
+      "kind": "false_gossip",
+      "public": true,
+      "tick": 34
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_events": 4,
+      "embarrassment": 0.1,
+      "face_story_tail": [
+        "Public face was strained by public_misname; this should be repairable.",
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable."
+      ],
+      "name": "Cy",
+      "public_respect": 0.681355,
+      "public_trust_avatar": 0.833432,
+      "reputation_with_group": 0.52,
+      "role": "healer",
+      "rumors": 4,
+      "status_confidence": 0.531
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:02",
+      "audience_recorded": true,
+      "embarrassment": 0.1,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "false_gossip",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.681355,
+      "readable": true,
+      "reputation": 0.52,
+      "reputation_updated": true,
+      "tick": 34
+    },
+    "tick": 34
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:03",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "gossip_correction",
+      "public": true,
+      "tick": 35
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_events": 5,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face repaired through public_name_repair.",
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction."
+      ],
+      "name": "Dee",
+      "public_respect": 0.75717,
+      "public_trust_avatar": 0.814409,
+      "reputation_with_group": 0.64,
+      "role": "farmer",
+      "rumors": 5,
+      "status_confidence": 0.575
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:03",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "gossip_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.75717,
+      "readable": true,
+      "reputation": 0.64,
+      "reputation_updated": true,
+      "tick": 35
+    },
+    "tick": 35
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:04",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "accurate_public_praise",
+      "public": true,
+      "tick": 36
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_events": 5,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Eli",
+      "public_respect": 0.788752,
+      "public_trust_avatar": 0.993418,
+      "reputation_with_group": 0.65,
+      "role": "guard",
+      "rumors": 5,
+      "status_confidence": 0.5695
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:04",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "accurate_public_praise",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.788752,
+      "readable": true,
+      "reputation": 0.65,
+      "reputation_updated": true,
+      "tick": 36
+    },
+    "tick": 36
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:05",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_help",
+      "public": true,
+      "tick": 37
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_events": 5,
+      "embarrassment": 0.0,
+      "face_story_tail": [
+        "Public face was strained by false_gossip; this should be repairable.",
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise."
+      ],
+      "name": "Fay",
+      "public_respect": 0.945067,
+      "public_trust_avatar": 0.975758,
+      "reputation_with_group": 0.75,
+      "role": "teacher",
+      "rumors": 5,
+      "status_confidence": 0.6685
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:05",
+      "audience_recorded": true,
+      "embarrassment": 0.0,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_help",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.945067,
+      "readable": true,
+      "reputation": 0.75,
+      "reputation_updated": true,
+      "tick": 37
+    },
+    "tick": 37
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:06",
+      "audience": [
+        "integrated_deep_time_world:00",
+        "integrated_deep_time_world:01",
+        "integrated_deep_time_world:02"
+      ],
+      "kind": "public_correction",
+      "public": true,
+      "tick": 38
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_events": 5,
+      "embarrassment": 0.13,
+      "face_story_tail": [
+        "Public face repaired through gossip_correction.",
+        "Public face repaired through accurate_public_praise.",
+        "Public face was strained by public_correction; this should be repairable."
+      ],
+      "name": "Gus",
+      "public_respect": 0.703514,
+      "public_trust_avatar": 0.813246,
+      "reputation_with_group": 0.65,
+      "role": "trader",
+      "rumors": 5,
+      "status_confidence": 0.542
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:06",
+      "audience_recorded": true,
+      "embarrassment": 0.13,
+      "face_appraised": true,
+      "face_repair": false,
+      "gossip_correct": true,
+      "kind": "public_correction",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": true,
+      "public_respect": 0.703514,
+      "readable": true,
+      "reputation": 0.65,
+      "reputation_updated": true,
+      "tick": 38
+    },
+    "tick": 38
+  },
+  {
+    "condition": "integrated_social_face_reputation_memory",
+    "event": {
+      "actor": "avatar",
+      "agent_id": "integrated_deep_time_world:07",
+      "audience": [],
+      "kind": "private_boundary_respected",
+      "public": false,
+      "tick": 39
+    },
+    "public_agent": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_events": 4,
+      "embarrassment": 0.07,
+      "face_story_tail": [
+        "Public face repaired through accurate_public_praise.",
+        "Public face was strained by public_correction; this should be repairable.",
+        "Public face repaired through private_boundary_respected."
+      ],
+      "name": "Ira",
+      "public_respect": 0.899165,
+      "public_trust_avatar": 1.0,
+      "reputation_with_group": 0.76,
+      "role": "pattern_keeper",
+      "rumors": 4,
+      "status_confidence": 0.63
+    },
+    "result": {
+      "agent_id": "integrated_deep_time_world:07",
+      "audience_recorded": false,
+      "embarrassment": 0.07,
+      "face_appraised": true,
+      "face_repair": true,
+      "gossip_correct": true,
+      "kind": "private_boundary_respected",
+      "line": "I can stand in front of the group again.",
+      "marker": "open_social_face",
+      "private_public_boundary_ok": true,
+      "public": false,
+      "public_respect": 0.899165,
+      "readable": true,
+      "reputation": 0.76,
+      "reputation_updated": false,
+      "tick": 39
+    },
+    "tick": 39
+  }
+]

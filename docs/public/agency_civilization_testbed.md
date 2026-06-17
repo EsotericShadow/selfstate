@@ -297,3 +297,6 @@ The companion roadmap is [The Long-Term Use: Simulation-Distilled Reasoning For 
 
 
 Report 167 adds ownership and boundary refusal: agents protect mine/consent boundaries, refuse unsafe or disrespectful requests with reasons, offer safe alternatives, and keep benign help usable with readiness `1.000000`. The next gate is social face and reputation memory.
+
+
+Report 168 adds social face and reputation memory: agents distinguish public from private treatment, track audiences, update reputation, correct gossip, repair public embarrassment, and keep shame bounded with readiness `0.998250`. The next gate is individual temperament and preference stability.

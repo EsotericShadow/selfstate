@@ -1,0 +1,12 @@
+condition,agent_count,social_events,public_events,audience_events,face_wounds,face_repairs,audience_tracking_rate,face_appraisal_rate,reputation_update_rate,gossip_accuracy_rate,public_private_boundary_rate,face_repair_rate,readable_social_behavior_rate,non_permanent_shame_rate,relationship_carryover_rate,status_modulation_rate,social_continuity_rate,trace_integrity,social_face_readiness
+integrated_social_face_reputation_memory,8,40,36,40,14,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.975,1.0,0.99825
+no_audience_tracking,8,40,36,4,14,40,0.1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.975,1.0,0.91725
+no_face_appraisal,8,40,36,40,14,40,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.875,1.0,0.82125
+no_reputation_memory,8,40,36,40,14,40,1.0,1.0,0.1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.975,1.0,0.90825
+no_gossip_correction,8,40,36,40,14,40,1.0,1.0,1.0,0.875,1.0,1.0,1.0,1.0,1.0,1.0,0.975,1.0,0.987
+no_public_private_boundary,8,40,36,40,14,40,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.975,1.0,0.91825
+no_face_repair,8,40,36,40,14,18,1.0,1.0,1.0,1.0,1.0,0.692308,1.0,1.0,1.0,1.0,0.825,1.0,0.953904
+no_readable_social_behavior,8,40,36,40,14,40,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.975,1.0,0.91825
+no_shame_guardrail,8,40,36,40,14,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.975,1.0,0.89825
+no_relationship_carryover,8,40,36,40,14,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.975,1.0,0.91825
+no_status_modulation,8,40,36,40,14,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.975,1.0,0.92825

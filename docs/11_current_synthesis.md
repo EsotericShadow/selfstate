@@ -695,3 +695,6 @@ Report 166 adds focused ego wound and repair dynamics. Agents can register inter
 
 
 Report 167 adds ownership and boundary refusal. Agents now distinguish owned objects, home places, unfinished tasks, private memory, autonomy, and body safety; they check consent, refuse violating requests, give traceable reasons, offer safe alternatives, preserve dignity, and still accept benign or consented help. This is bounded refusal, not blanket disobedience.
+
+
+Report 168 adds social face and reputation memory. Agents now distinguish public from private treatment, track audiences, update public respect and group reputation, record rumors, correct false gossip, repair public embarrassment, and keep shame bounded. This extends ego from private self-boundary into public social standing without claiming consciousness.

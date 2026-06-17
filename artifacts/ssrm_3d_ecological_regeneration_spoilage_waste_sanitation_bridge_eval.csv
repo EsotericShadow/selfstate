@@ -1,0 +1,15 @@
+condition,node_count,simulated_days,ecology_events,regeneration_cycle_rate,spoilage_tracking_rate,waste_accumulation_rate,sanitation_action_rate,contamination_feedback_rate,water_quality_management_rate,food_cache_viability_rate,compost_reuse_rate,ecological_replan_rate,health_risk_guardrail_rate,frequency_flower_ecology_binding_rate,browser_ecology_replay_rate,privacy_preservation_rate,trace_integrity,ecological_sanitation_readiness
+integrated_ecological_regeneration_spoilage_waste_sanitation,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.945667
+no_regeneration,6,10,67,0.0,1.0,1.0,1.0,1.0,0.75,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.854
+no_spoilage,6,10,66,0.833333,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.891667
+no_waste_accumulation,6,10,65,0.833333,1.0,0.0,1.0,1.0,0.75,0.3,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.825667
+no_sanitation,6,10,63,0.833333,1.0,1.0,0.0,1.0,0.75,0.3,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.805667
+no_contamination_feedback,6,10,66,0.833333,1.0,1.0,1.0,0.0,0.75,0.4,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.823667
+no_water_quality,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.0,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.885667
+no_food_cache_viability,6,10,67,0.833333,0.75,1.0,1.0,1.0,0.75,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.859167
+no_compost_reuse,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875667
+no_ecological_replan,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.865667
+no_health_guardrail,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.865667
+no_frequency_flower_binding,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.905667
+no_replay_timeline,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.905667
+no_privacy_filter,6,10,67,0.833333,1.0,1.0,1.0,1.0,0.75,0.8,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.915667

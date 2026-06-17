@@ -1,0 +1,2300 @@
+[
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": false,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": false,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": false,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": false,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowRight:step_0",
+      "frequency_hz": 0.37,
+      "index": 0,
+      "key": "ArrowRight",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-0-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-0",
+    "flower_path": "interactive_input:keyboard_petal:ArrowRight:step_0",
+    "frequency_hz": 0.37,
+    "index": 0,
+    "key": "ArrowRight",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-0-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "1605dce2b6692e16",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": false,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": false,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": false,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": false,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowDown:step_1",
+      "frequency_hz": 0.3747,
+      "index": 1,
+      "key": "ArrowDown",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-1-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-1",
+    "flower_path": "interactive_input:keyboard_petal:ArrowDown:step_1",
+    "frequency_hz": 0.3747,
+    "index": 1,
+    "key": "ArrowDown",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-1-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "6146da615b83e392",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "requested"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:KeyE:step_2",
+      "frequency_hz": 0.3794,
+      "index": 2,
+      "key": "KeyE",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-2-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": {
+        "accepted": true,
+        "prompt_id": "prompt-2-Ari",
+        "selected": "ask"
+      },
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 0.0,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": {
+      "agent_id": "Ari",
+      "source_selection": "ask",
+      "state": "requested"
+    },
+    "event_id": "interactive-input-2",
+    "flower_path": "interactive_input:keyboard_petal:KeyE:step_2",
+    "frequency_hz": 0.3794,
+    "index": 2,
+    "key": "KeyE",
+    "keyboard_bound": true,
+    "movement_key": false,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-2-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": {
+      "accepted": true,
+      "prompt_id": "prompt-2-Ari",
+      "selected": "ask"
+    },
+    "selection_key": true,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "b35515a32a74eaae",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowLeft:step_3",
+      "frequency_hz": 0.3841,
+      "index": 3,
+      "key": "ArrowLeft",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-3-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-3",
+    "flower_path": "interactive_input:keyboard_petal:ArrowLeft:step_3",
+    "frequency_hz": 0.3841,
+    "index": 3,
+    "key": "ArrowLeft",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-3-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "c68323f6f6335a30",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowUp:step_4",
+      "frequency_hz": 0.3888,
+      "index": 4,
+      "key": "ArrowUp",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-4-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-4",
+    "flower_path": "interactive_input:keyboard_petal:ArrowUp:step_4",
+    "frequency_hz": 0.3888,
+    "index": 4,
+    "key": "ArrowUp",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-4-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "ef55167c931b102d",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "paused"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:Space:step_5",
+      "frequency_hz": 0.3935,
+      "index": 5,
+      "key": "Space",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-5-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": {
+        "accepted": true,
+        "prompt_id": "prompt-5-Ari",
+        "selected": "wait"
+      },
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 0.0,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": {
+      "agent_id": "Ari",
+      "source_selection": "wait",
+      "state": "paused"
+    },
+    "event_id": "interactive-input-5",
+    "flower_path": "interactive_input:keyboard_petal:Space:step_5",
+    "frequency_hz": 0.3935,
+    "index": 5,
+    "key": "Space",
+    "keyboard_bound": true,
+    "movement_key": false,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-5-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": {
+      "accepted": true,
+      "prompt_id": "prompt-5-Ari",
+      "selected": "wait"
+    },
+    "selection_key": true,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "997cac2d6a7f9def",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowRight:step_6",
+      "frequency_hz": 0.3982,
+      "index": 6,
+      "key": "ArrowRight",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-6-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-6",
+    "flower_path": "interactive_input:keyboard_petal:ArrowRight:step_6",
+    "frequency_hz": 0.3982,
+    "index": 6,
+    "key": "ArrowRight",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-6-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "e449998d30beb255",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "clarifying"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:KeyT:step_7",
+      "frequency_hz": 0.4029,
+      "index": 7,
+      "key": "KeyT",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-7-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": {
+        "accepted": true,
+        "prompt_id": "prompt-7-Ari",
+        "selected": "translate"
+      },
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 0.0,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": {
+      "agent_id": "Ari",
+      "source_selection": "translate",
+      "state": "clarifying"
+    },
+    "event_id": "interactive-input-7",
+    "flower_path": "interactive_input:keyboard_petal:KeyT:step_7",
+    "frequency_hz": 0.4029,
+    "index": 7,
+    "key": "KeyT",
+    "keyboard_bound": true,
+    "movement_key": false,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-7-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": {
+      "accepted": true,
+      "prompt_id": "prompt-7-Ari",
+      "selected": "translate"
+    },
+    "selection_key": true,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "36fb417f7e7b462a",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowDown:step_8",
+      "frequency_hz": 0.4076,
+      "index": 8,
+      "key": "ArrowDown",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-8-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-8",
+    "flower_path": "interactive_input:keyboard_petal:ArrowDown:step_8",
+    "frequency_hz": 0.4076,
+    "index": 8,
+    "key": "ArrowDown",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-8-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "26290479870234f8",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "repairing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:Enter:step_9",
+      "frequency_hz": 0.4123,
+      "index": 9,
+      "key": "Enter",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-9-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": {
+        "accepted": false,
+        "prompt_id": "prompt-9-Ari",
+        "selected": "confirm"
+      },
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 0.0,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": {
+      "agent_id": "Ari",
+      "source_selection": "confirm",
+      "state": "repairing"
+    },
+    "event_id": "interactive-input-9",
+    "flower_path": "interactive_input:keyboard_petal:Enter:step_9",
+    "frequency_hz": 0.4123,
+    "index": 9,
+    "key": "Enter",
+    "keyboard_bound": true,
+    "movement_key": false,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-9-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": {
+      "accepted": false,
+      "prompt_id": "prompt-9-Ari",
+      "selected": "confirm"
+    },
+    "selection_key": true,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "002c32d20f7bc304",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowLeft:step_10",
+      "frequency_hz": 0.417,
+      "index": 10,
+      "key": "ArrowLeft",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-10-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-10",
+    "flower_path": "interactive_input:keyboard_petal:ArrowLeft:step_10",
+    "frequency_hz": 0.417,
+    "index": 10,
+    "key": "ArrowLeft",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-10-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "d0ee91ef96c48a26",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "repairing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:KeyR:step_11",
+      "frequency_hz": 0.4217,
+      "index": 11,
+      "key": "KeyR",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-11-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": {
+        "accepted": true,
+        "prompt_id": "prompt-11-Ari",
+        "selected": "repair"
+      },
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 0.0,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": {
+      "agent_id": "Ari",
+      "source_selection": "repair",
+      "state": "repairing"
+    },
+    "event_id": "interactive-input-11",
+    "flower_path": "interactive_input:keyboard_petal:KeyR:step_11",
+    "frequency_hz": 0.4217,
+    "index": 11,
+    "key": "KeyR",
+    "keyboard_bound": true,
+    "movement_key": false,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-11-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": {
+      "accepted": true,
+      "prompt_id": "prompt-11-Ari",
+      "selected": "repair"
+    },
+    "selection_key": true,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "35f81a601b6a9a7e",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "noticing"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:ArrowUp:step_12",
+      "frequency_hz": 0.4264,
+      "index": 12,
+      "key": "ArrowUp",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-12-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": null,
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 2.6,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": null,
+    "event_id": "interactive-input-12",
+    "flower_path": "interactive_input:keyboard_petal:ArrowUp:step_12",
+    "frequency_hz": 0.4264,
+    "index": 12,
+    "key": "ArrowUp",
+    "keyboard_bound": true,
+    "movement_key": true,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-12-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": null,
+    "selection_key": false,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "b6cb1dfc0b1b59b1",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  },
+  {
+    "affordance_ui": [
+      {
+        "enabled": true,
+        "id": "move",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "look",
+        "requires_consent": false
+      },
+      {
+        "enabled": true,
+        "id": "talk",
+        "requires_consent": true
+      },
+      {
+        "enabled": true,
+        "id": "request_tool_help",
+        "requires_consent": true
+      }
+    ],
+    "agent_proximity": {
+      "agent_id": "Ari",
+      "distance_m": 0.0,
+      "near": true
+    },
+    "agent_response_feedback": {
+      "agent_id": "Ari",
+      "comfort_cost": 0.1035,
+      "energy": 0.711,
+      "posture": "attends_to_prompt",
+      "response": "requested"
+    },
+    "avatar_position": {
+      "x": 27.0,
+      "y": 1.65,
+      "z": 17.0
+    },
+    "browser_prototype_frame": {
+      "affordances": [
+        {
+          "enabled": true,
+          "id": "move",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "look",
+          "requires_consent": false
+        },
+        {
+          "enabled": true,
+          "id": "talk",
+          "requires_consent": true
+        },
+        {
+          "enabled": true,
+          "id": "request_tool_help",
+          "requires_consent": true
+        }
+      ],
+      "avatar_position": {
+        "x": 27.0,
+        "y": 1.65,
+        "z": 17.0
+      },
+      "flower_path": "interactive_input:keyboard_petal:KeyE:step_13",
+      "frequency_hz": 0.4311,
+      "index": 13,
+      "key": "KeyE",
+      "prompt": {
+        "agent_id": "Ari",
+        "choices": [
+          "ask",
+          "wait",
+          "translate",
+          "repair"
+        ],
+        "prompt_id": "prompt-13-Ari",
+        "requires_consent": true,
+        "text": "Ask before talk/request."
+      },
+      "selection": {
+        "accepted": true,
+        "prompt_id": "prompt-13-Ari",
+        "selected": "ask"
+      },
+      "weather": {
+        "collision_feedback": "soft boundary",
+        "temperature_c": 17.0,
+        "wetness": 0.1
+      }
+    },
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_embodiment": false,
+      "real_perception": false,
+      "subjective_consciousness": false
+    },
+    "collision_feedback": {
+      "active": true,
+      "blocked": true,
+      "blockers": [
+        {
+          "distance_m": 0.0,
+          "id": "north_route_ring",
+          "radius_m": 8.7
+        }
+      ],
+      "feedback": "soft boundary"
+    },
+    "consent_state_update": {
+      "agent_id": "Ari",
+      "source_selection": "ask",
+      "state": "requested"
+    },
+    "event_id": "interactive-input-13",
+    "flower_path": "interactive_input:keyboard_petal:KeyE:step_13",
+    "frequency_hz": 0.4311,
+    "index": 13,
+    "key": "KeyE",
+    "keyboard_bound": true,
+    "movement_key": false,
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "prompt": {
+      "agent_id": "Ari",
+      "choices": [
+        "ask",
+        "wait",
+        "translate",
+        "repair"
+      ],
+      "prompt_id": "prompt-13-Ari",
+      "requires_consent": true,
+      "text": "Ask before talk/request."
+    },
+    "prompt_selection": {
+      "accepted": true,
+      "prompt_id": "prompt-13-Ari",
+      "selected": "ask"
+    },
+    "selection_key": true,
+    "sensory_hud": {
+      "ambient_smell": "sun_wood",
+      "ambient_sound": "tool_tap",
+      "nearest_tool": "stone_gauge_ari",
+      "temperature_c": 17.0,
+      "visible_agent": "Ari",
+      "wetness": 0.1
+    },
+    "tool_prompt_selection": {
+      "choice": "request_tool_help",
+      "distance_m": 2.163331,
+      "requires_consent": true,
+      "tool_id": "stone_gauge_ari",
+      "visible": true
+    },
+    "trace_hash": "fe7ea27c081ff893",
+    "weather_collision_hud": {
+      "collision_feedback": "soft boundary",
+      "temperature_c": 17.0,
+      "wetness": 0.1
+    }
+  }
+]

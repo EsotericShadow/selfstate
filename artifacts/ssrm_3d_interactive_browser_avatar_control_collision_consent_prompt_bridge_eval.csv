@@ -1,0 +1,16 @@
+condition,input_events,keyboard_input_binding_rate,avatar_position_update_rate,collision_feedback_rate,proximity_prompt_generation_rate,prompt_selection_handling_rate,consent_state_update_rate,affordance_ui_state_rate,agent_response_feedback_rate,sensory_hud_update_rate,weather_collision_hud_rate,tool_prompt_selection_rate,private_workspace_privacy_rate,frequency_flower_input_rhythm_rate,browser_interactive_prototype_rate,trace_integrity,interactive_browser_readiness
+integrated_interactive_browser_avatar_control_collision_consent_prompt,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.994286
+no_keyboard_input,14,0.0,0.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,0.35
+no_position_update,14,1.0,0.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.904286
+no_collision_feedback,14,1.0,1.0,0.0,1.0,0.928571,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.854286
+no_proximity_prompts,14,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_prompt_selection,14,1.0,1.0,1.0,1.0,0.0,0.571429,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.885714
+no_consent_state,14,1.0,1.0,1.0,1.0,0.928571,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.914286
+no_affordance_ui,14,1.0,1.0,1.0,1.0,0.928571,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.914286
+no_agent_feedback,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.924286
+no_sensory_hud,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.864286
+no_weather_hud,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.934286
+no_tool_selection,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.944286
+no_privacy_filter,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.934286
+no_frequency_flower_binding,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.954286
+no_browser_prototype,14,1.0,1.0,1.0,1.0,0.928571,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.954286

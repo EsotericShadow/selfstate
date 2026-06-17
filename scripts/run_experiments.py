@@ -1712,6 +1712,14 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_interactive_browser_avatar_control_collision_consent_prompt_bridge.py",
+        "--seed",
+        "20260817",
+        "--inputs",
+        "14",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

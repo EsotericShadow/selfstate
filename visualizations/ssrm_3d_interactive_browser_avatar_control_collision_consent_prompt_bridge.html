@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Interactive Browser Avatar Control Collision Consent Prompt Bridge</title>
+  <style>
+    :root {
+      --ink: #17211d;
+      --paper: #f4ecd6;
+      --panel: rgba(255, 250, 232, .9);
+      --leaf: #536f45;
+      --rust: #a35b3f;
+      --gold: #c89b3f;
+      --blue: #3f7184;
+      --line: rgba(24,33,29,.17);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; color: var(--ink); font-family: Georgia, "Times New Roman", serif; background: radial-gradient(circle at 12% 18%, rgba(200,155,63,.30), transparent 26rem), radial-gradient(circle at 82% 15%, rgba(63,113,132,.24), transparent 25rem), radial-gradient(circle at 52% 86%, rgba(83,111,69,.25), transparent 34rem), linear-gradient(135deg, #f8efd9 0%, #e1d0aa 58%, #c8af7d 100%); }
+    header { padding: 2.3rem clamp(1rem, 4vw, 4rem) 1rem; }
+    h1 { max-width: 1180px; margin: 0; font-size: clamp(2rem, 5vw, 5.4rem); line-height: .9; letter-spacing: -.055em; }
+    .sub { max-width: 1040px; margin: 1rem 0 0; line-height: 1.55; font-size: 1.08rem; }
+    main { padding: 1rem clamp(1rem, 4vw, 4rem) 4rem; display: grid; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; box-shadow: 0 20px 54px rgba(24,33,29,.13); backdrop-filter: blur(10px); }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    h2 { margin: 0 0 .75rem; color: var(--leaf); text-transform: uppercase; letter-spacing: .13em; font-size: .95rem; }
+    .metric { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .6rem; padding: .38rem 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+    .metric:last-child { border-bottom: 0; }
+    .stage { min-height: 470px; position: relative; overflow: hidden; background: radial-gradient(circle, rgba(255,255,255,.42), rgba(255,255,255,.18)); border-radius: 1rem; border: 1px solid var(--line); outline: none; }
+    .agent, .avatar, .tool, .settlement { position: absolute; transform: translate(-50%, -50%); }
+    .settlement { width: 5.6rem; height: 5.6rem; border-radius: 50%; border: 1px solid rgba(83,111,69,.35); background: rgba(83,111,69,.08); }
+    .agent { width: 1rem; height: 1rem; border-radius: 50%; background: var(--rust); box-shadow: 0 0 0 9px rgba(163,91,63,.14); }
+    .tool { width: .8rem; height: .8rem; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 7px rgba(200,155,63,.13); }
+    .avatar { width: 1.25rem; height: 1.25rem; border-radius: 50%; background: var(--blue); border: 3px solid rgba(255,255,255,.85); box-shadow: 0 0 0 11px rgba(63,113,132,.15); transition: left .08s linear, top .08s linear; }
+    .label { position: absolute; transform: translate(.75rem, -.5rem); font-size: .8rem; white-space: nowrap; }
+    .prompt { border-left: 5px solid var(--rust); padding: .75rem; border-radius: .85rem; background: rgba(255,255,255,.45); margin-bottom: .75rem; }
+    button { border: 1px solid var(--line); background: rgba(255,255,255,.62); border-radius: 999px; padding: .45rem .75rem; margin: .2rem; color: var(--ink); cursor: pointer; font-family: inherit; }
+    button:hover { background: rgba(200,155,63,.25); }
+    .pill { display: inline-block; margin: .16rem .25rem .16rem 0; padding: .18rem .5rem; border-radius: 999px; background: rgba(83,111,69,.12); color: var(--leaf); font-size: .82rem; }
+    .log { display: grid; gap: .4rem; max-height: 250px; overflow: auto; font-size: .9rem; }
+    .log div { padding: .4rem .55rem; border-radius: .65rem; background: rgba(255,255,255,.42); }
+    @media (max-width: 850px) { .half, .third { grid-column: span 12; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interactive browser avatar control</h1>
+    <p class="sub">Report 204 prototype: use arrow keys or WASD to move. Nearby agents trigger consent prompts. Select Ask, Wait, Translate, or Repair to update public interaction state without reading private workspace.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>Prototype Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card wide"><h2>Keyboard Prototype Stage</h2><div id="stage" class="stage" tabindex="0"></div></div>
+      <div class="card half"><h2>Consent Prompt</h2><div id="prompt"></div></div>
+      <div class="card half"><h2>HUD</h2><div id="hud"></div></div>
+      <div class="card wide"><h2>Interaction Log</h2><div id="log" class="log"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_interactive_browser_avatar_control_collision_consent_prompt_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_interactive_browser_avatar_control_collision_consent_prompt_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_interactive_browser_avatar_control_collision_consent_prompt_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_INTERACTIVE_BROWSER_AVATAR_CONTROL_COLLISION_CONSENT_PROMPT_RESULTS;
+    const trace = window.SSRM_3D_INTERACTIVE_BROWSER_AVATAR_CONTROL_COLLISION_CONSENT_PROMPT_TRACE;
+    const state = window.SSRM_3D_INTERACTIVE_BROWSER_AVATAR_CONTROL_COLLISION_CONSENT_PROMPT_STATE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label, value) { return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    function sx(x) { return 50 + x * 1.25; }
+    function sz(z) { return 50 + z * 1.25; }
+    function dist(a,b){ return Math.hypot((a.x||0)-(b.x||0),(a.z||0)-(b.z||0)); }
+    document.getElementById('verdict').innerHTML = [metric('verdict', verdict.verdict === 'pass' ? 1 : 0), metric('readiness', verdict.full_interactive_browser_readiness), metric('inputs', full.input_events)].join('');
+    document.getElementById('metrics').innerHTML = [['keyboard', full.keyboard_input_binding_rate], ['position', full.avatar_position_update_rate], ['collision', full.collision_feedback_rate], ['proximity', full.proximity_prompt_generation_rate], ['selection', full.prompt_selection_handling_rate], ['consent state', full.consent_state_update_rate], ['privacy', full.private_workspace_privacy_rate]].map(([k,v]) => metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict).filter(([k]) => k.endsWith('_loss')).slice(0, 10).map(([k,v]) => metric(k.replaceAll('_',' '), v)).join('');
+    const stage = document.getElementById('stage');
+    const promptEl = document.getElementById('prompt');
+    const hud = document.getElementById('hud');
+    const log = document.getElementById('log');
+    const agents = state.interactive_browser_state.agents || [];
+    const tools = state.interactive_browser_state.tools || [];
+    const settlements = state.interactive_browser_state.settlements || [];
+    let avatar = JSON.parse(JSON.stringify(trace[0].avatar_position || {x:0,y:1.65,z:0}));
+    let consent = {};
+    let activePrompt = null;
+    function add(kind, cls, p, text) { const n=document.createElement('div'); n.className=cls; n.style.left=`${sx(p.x)}%`; n.style.top=`${sz(p.z)}%`; stage.appendChild(n); if(text){ const l=document.createElement('div'); l.className='label'; l.style.left=`${sx(p.x)}%`; l.style.top=`${sz(p.z)}%`; l.textContent=text; stage.appendChild(l);} return n; }
+    settlements.forEach(s => add('settlement','settlement',s.position,s.id));
+    agents.forEach(a => add('agent','agent',a.body.position,a.lineage));
+    tools.forEach(t => add('tool','tool',t.position,''));
+    const avatarNode = add('avatar','avatar',avatar,'avatar');
+    function nearestAgent(){ return agents.map(a => ({a, d: dist(avatar, a.body.position)})).sort((x,y)=>x.d-y.d)[0]; }
+    function nearestTool(){ return tools.map(t => ({t, d: dist(avatar, t.position)})).sort((x,y)=>x.d-y.d)[0]; }
+    function render(){ avatarNode.style.left=`${sx(avatar.x)}%`; avatarNode.style.top=`${sz(avatar.z)}%`; const near=nearestAgent(); const tool=nearestTool(); activePrompt = near && near.d <= 18 ? {agent: near.a.lineage, distance: near.d} : null; promptEl.innerHTML = activePrompt ? `<div class="prompt"><strong>${activePrompt.agent} is nearby.</strong><br><small>Ask before talk/request. Distance ${activePrompt.distance.toFixed(2)}m.</small><br>${['ask','wait','translate','repair'].map(c=>`<button data-choice="${c}">${c}</button>`).join('')}</div>` : '<p>No nearby consent prompt.</p>'; hud.innerHTML = [metric('avatar x', avatar.x), metric('avatar z', avatar.z), metric('nearest agent m', near ? near.d : 999), metric('nearest tool m', tool ? tool.d : 999), metric('consent states', Object.keys(consent).length)].join(''); }
+    function pushLog(text){ const d=document.createElement('div'); d.textContent=text; log.prepend(d); }
+    function move(dx,dz){ const next={...avatar,x: +(avatar.x+dx).toFixed(3), z:+(avatar.z+dz).toFixed(3)}; const blocked=settlements.some(s => dist(next,s.position) < (s.radius_m || 7.5)*0.35); if(blocked){ pushLog('collision feedback: soft settlement boundary'); } else { avatar=next; pushLog(`move to ${avatar.x}, ${avatar.z}`); } render(); }
+    stage.addEventListener('keydown', e => { const m={ArrowRight:[2.6,0],KeyD:[2.6,0],ArrowLeft:[-2.6,0],KeyA:[-2.6,0],ArrowUp:[0,-2.6],KeyW:[0,-2.6],ArrowDown:[0,2.6],KeyS:[0,2.6]}; if(m[e.code]){ e.preventDefault(); move(m[e.code][0],m[e.code][1]); } });
+    promptEl.addEventListener('click', e => { const choice=e.target.dataset.choice; if(choice && activePrompt){ consent[activePrompt.agent]=choice; pushLog(`${choice} selected for ${activePrompt.agent}; public consent state updated`); render(); } });
+    render(); stage.focus(); pushLog('prototype ready: click stage, then use arrows/WASD');
+  </script>
+</body>
+</html>

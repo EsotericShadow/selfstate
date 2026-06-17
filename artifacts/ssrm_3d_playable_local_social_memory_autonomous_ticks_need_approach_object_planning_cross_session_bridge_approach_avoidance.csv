@@ -1,0 +1,25 @@
+tick,agent_id,avatar_distance,decision,reason,movement_dx,movement_dy,coherence_score,visible_marker
+1,fayen,18.439089,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+1,ariq,12.806248,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+1,nian,16.492423,avoid,autonomy need and boundary pressure dominate,-0.033955,-0.13582,0.91,angles shoulder between avatar and private object
+1,roka,33.941125,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+2,fayen,18.439089,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+2,ariq,12.806248,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+2,nian,16.492423,avoid,autonomy need and boundary pressure dominate,-0.033955,-0.13582,0.91,angles shoulder between avatar and private object
+2,roka,33.941125,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+3,fayen,18.439089,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+3,ariq,12.806248,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+3,nian,16.492423,avoid,autonomy need and boundary pressure dominate,-0.033955,-0.13582,0.91,angles shoulder between avatar and private object
+3,roka,33.941125,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+4,fayen,18.439089,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+4,ariq,12.806248,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+4,nian,16.492423,avoid,autonomy need and boundary pressure dominate,-0.033955,-0.13582,0.91,angles shoulder between avatar and private object
+4,roka,33.941125,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+5,fayen,18.439089,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+5,ariq,12.806248,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+5,nian,16.492423,avoid,autonomy need and boundary pressure dominate,-0.033955,-0.13582,0.91,angles shoulder between avatar and private object
+5,roka,33.941125,object_plan,child learner hesitates; social and autonomy needs conflict,0.08,-0.04,0.72,looks from avatar to target object
+6,fayen,18.439089,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+6,ariq,12.806248,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object
+6,nian,16.492423,avoid,autonomy need and boundary pressure dominate,-0.033955,-0.13582,0.91,angles shoulder between avatar and private object
+6,roka,33.941125,object_plan,object need dominates current appraisal,0.08,-0.04,0.88,looks from avatar to target object

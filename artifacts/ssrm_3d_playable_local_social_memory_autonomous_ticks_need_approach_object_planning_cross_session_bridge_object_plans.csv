@@ -1,0 +1,5 @@
+plan_id,agent_id,object_id,goal,required_permission,plan_steps,completion_state,expected_debt_delta,fallback_if_blocked,private_reason_digest
+plan-fayen-herb,fayen,obj-herb,move herb basket to shade before storm,ask_before_touch,check avatar distance; request shade help; move basket; write batch note,completed,-0.04,carry public batch note only,sealed:fayen:object-plan-herb
+plan-ariq-stone,ariq,obj-stone,shift bridge stone with receipt knot,receipt_required,wait for receipt knot; brace knee; lift with avatar; log repair debt,completed,-0.07,"tap stone only, no lift",sealed:ariq:object-plan-stone
+plan-nian-flap,nian,obj-flap,guard archive flap while teaching public phrase,look_only,block private flap; offer public phrase; write boundary memory,blocked_by_boundary,0.0,teach outside sealed room,sealed:nian:object-plan-flap
+plan-roka-reed,roka,obj-reed,protect child reed bundle and offer loose reed,child_consent_required,hold bundle; check mentor path; offer loose reed after pause signal,partial,0.03,smell one loose reed,sealed:roka:object-plan-reed

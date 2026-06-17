@@ -1,0 +1,11 @@
+{
+  "autonomous_agent_tick_rate": 1.0,
+  "condition": "integrated_playable_local_social_memory_autonomous_ticks_need_approach_object_planning_cross_session",
+  "cross_session_relationship_continuity": 0.75,
+  "local_social_memory_autonomous_loop_readiness": 0.919167,
+  "next_gate": "playable local 3D autonomous social ecology with multi-agent interaction, shared object negotiation, social contagion, and durable relationship histories",
+  "object_plan_completion_rate": 0.5,
+  "private_boundary": "sealed private need/workspace digests with localStorage relationship continuity",
+  "report": 223,
+  "source_condition": "integrated_playable_local_agent_conversation_memory_object_consequence_refusal_save_restore"
+}

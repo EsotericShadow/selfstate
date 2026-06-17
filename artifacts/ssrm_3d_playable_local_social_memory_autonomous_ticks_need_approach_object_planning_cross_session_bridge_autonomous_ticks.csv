@@ -1,0 +1,25 @@
+tick,agent_id,dominant_need,action,target,trust_delta,boundary_delta,object_plan_progress,memory_written,private_workspace_digest,frequency_hz,flower_node
+1,fayen,object,advance_object_plan,obj-herb,0.0,0.0,completed,False,sealed:fayen:need-appraisal-1,155.0,1
+1,ariq,object,advance_object_plan,obj-stone,0.0,0.0,completed,False,sealed:ariq:need-appraisal-1,156.7,2
+1,nian,autonomy,avoid_avatar,private_boundary,-0.003,0.012,boundary memory reinforced,True,sealed:nian:need-appraisal-1,158.4,3
+1,roka,object,advance_object_plan,obj-reed,0.0,0.0,partial,True,sealed:roka:need-appraisal-1,160.1,4
+2,fayen,object,advance_object_plan,obj-herb,0.0,0.0,completed,False,sealed:fayen:need-appraisal-2,172.8,5
+2,ariq,object,advance_object_plan,obj-stone,0.0,0.0,completed,False,sealed:ariq:need-appraisal-2,174.5,6
+2,nian,autonomy,avoid_avatar,private_boundary,-0.003,0.012,boundary memory reinforced,True,sealed:nian:need-appraisal-2,176.2,7
+2,roka,object,advance_object_plan,obj-reed,0.0,0.0,partial,True,sealed:roka:need-appraisal-2,177.9,8
+3,fayen,object,advance_object_plan,obj-herb,0.0,0.0,completed,False,sealed:fayen:need-appraisal-3,190.6,9
+3,ariq,object,advance_object_plan,obj-stone,0.0,0.0,completed,False,sealed:ariq:need-appraisal-3,192.3,10
+3,nian,autonomy,avoid_avatar,private_boundary,-0.003,0.012,boundary memory reinforced,True,sealed:nian:need-appraisal-3,194.0,11
+3,roka,object,advance_object_plan,obj-reed,0.0,0.0,partial,True,sealed:roka:need-appraisal-3,195.7,12
+4,fayen,object,advance_object_plan,obj-herb,0.0,0.0,completed,False,sealed:fayen:need-appraisal-4,208.4,1
+4,ariq,object,advance_object_plan,obj-stone,0.0,0.0,completed,False,sealed:ariq:need-appraisal-4,210.1,2
+4,nian,autonomy,avoid_avatar,private_boundary,-0.003,0.012,boundary memory reinforced,True,sealed:nian:need-appraisal-4,211.8,3
+4,roka,object,advance_object_plan,obj-reed,0.0,0.0,partial,True,sealed:roka:need-appraisal-4,213.5,4
+5,fayen,object,advance_object_plan,obj-herb,0.0,0.0,completed,False,sealed:fayen:need-appraisal-5,226.2,5
+5,ariq,object,advance_object_plan,obj-stone,0.0,0.0,completed,False,sealed:ariq:need-appraisal-5,227.9,6
+5,nian,autonomy,avoid_avatar,private_boundary,-0.003,0.012,boundary memory reinforced,True,sealed:nian:need-appraisal-5,229.6,7
+5,roka,object,advance_object_plan,obj-reed,0.0,0.0,partial,True,sealed:roka:need-appraisal-5,231.3,8
+6,fayen,object,advance_object_plan,obj-herb,0.0,0.0,completed,False,sealed:fayen:need-appraisal-6,244.0,9
+6,ariq,object,advance_object_plan,obj-stone,0.0,0.0,completed,False,sealed:ariq:need-appraisal-6,245.7,10
+6,nian,autonomy,avoid_avatar,private_boundary,-0.003,0.012,boundary memory reinforced,True,sealed:nian:need-appraisal-6,247.4,11
+6,roka,object,advance_object_plan,obj-reed,0.0,0.0,partial,True,sealed:roka:need-appraisal-6,249.1,12

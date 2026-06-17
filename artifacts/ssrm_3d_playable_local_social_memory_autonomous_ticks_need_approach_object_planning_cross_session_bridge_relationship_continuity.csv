@@ -1,0 +1,5 @@
+continuity_id,agent_id,pre_session_memory,tick_memory_update,post_restore_memory,trust_before,trust_after_ticks,trust_after_restore,continuity_score,boundary_persistence
+cont-fayen,fayen,Avatar respected herb-care boundary last time.,Avatar helped shade herbs without asking private care names.,Fayen restores trust and repeats herb-care memory after reload.,0.68,0.73,0.73,1.0,0.92
+cont-ariq,ariq,Avatar tied a receipt knot before lifting once.,Avatar waited for receipt knot before repair lift.,Ariq restores repair trust but still guards knee boundary.,0.6,0.64,0.63,0.94,0.88
+cont-nian,nian,Avatar once asked close to the sealed flap.,Avatar stayed outside the archive flap after reminder.,Nian restores boundary memory and keeps a shorter answer style.,0.54,0.56,0.55,0.88,0.96
+cont-roka,roka,Avatar has not yet earned reed-bundle trust.,Avatar watched the reed pause signal but did not move the bundle.,Roka restores cautious distance; trust repair is incomplete.,0.46,0.49,0.47,0.76,0.91

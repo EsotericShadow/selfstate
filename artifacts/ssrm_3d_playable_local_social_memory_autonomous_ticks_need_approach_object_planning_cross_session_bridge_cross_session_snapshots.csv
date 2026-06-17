@@ -1,0 +1,5 @@
+snapshot_id,tick,saved_agents,saved_object_plans,saved_memories,local_storage_key,restore_note,export_note,continuity_verified
+cross-initial,0,4,4,4,ssrm_3d_report_223_social_loop,restore initial social tick state,"export includes agents, plans, memories, tick count",True
+cross-after-autoticks,6,4,4,8,ssrm_3d_report_223_social_loop,restore after six autonomous ticks,export includes approach/avoidance decisions,True
+cross-after-object-plans,9,4,4,11,ssrm_3d_report_223_social_loop,restore object plan progress and debt,"export includes completed, partial, blocked plans",True
+cross-after-boundary,12,4,4,14,ssrm_3d_report_223_social_loop,restore boundary pressure and refusal memory,export keeps private digests sealed,True

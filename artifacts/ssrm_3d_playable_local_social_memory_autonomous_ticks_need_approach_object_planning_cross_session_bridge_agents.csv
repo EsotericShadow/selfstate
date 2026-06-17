@@ -1,0 +1,5 @@
+agent_id,display_name,x,y,trust,boundary_pressure,social_need,rest_need,object_need,autonomy_need,target_object,current_memory,visible_behavior,private_workspace_digest,frequency_hz,flower_node
+fayen,Fayen,28,34,0.68,0.15,0.64,0.31,0.76,0.28,obj-herb,Avatar respected herb-care boundary last time.,glances between avatar and herb shade,sealed:fayen:auto-tick-workspace,144.0,2
+ariq,Ariq,54,48,0.6,0.22,0.42,0.58,0.69,0.4,obj-stone,Avatar tied a receipt knot before lifting once.,keeps weight off sore knee near bridge stone,sealed:ariq:auto-tick-workspace,177.0,5
+nian,Nian,42,22,0.54,0.41,0.35,0.27,0.44,0.82,obj-flap,Avatar once asked close to the sealed flap.,stands between avatar path and archive flap,sealed:nian:auto-tick-workspace,203.0,8
+roka,Roka,22,62,0.46,0.36,0.57,0.22,0.71,0.75,obj-reed,Avatar has not yet earned reed-bundle trust.,keeps reed bundle close and watches distance,sealed:roka:auto-tick-workspace,264.0,3

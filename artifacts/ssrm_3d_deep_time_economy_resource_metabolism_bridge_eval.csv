@@ -1,0 +1,14 @@
+condition,group_count,resource_count,simulated_years,economy_events,resource_stock_accounting_rate,extraction_cost_binding_rate,regeneration_balance_rate,waste_stream_tracking_rate,maintenance_load_rate,scarcity_feedback_rate,intergroup_exchange_rate,ecological_pressure_rate,cultural_value_binding_rate,safety_reserve_rate,frequency_metabolism_rate,bounded_depletion_rate,deep_time_continuity_rate,privacy_preservation_rate,trace_integrity,no_civilization_or_consciousness_claim_rate,deep_time_economy_resource_metabolism_readiness
+integrated_deep_time_economy_resource_metabolism,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.96
+no_resource_stocks,3,10,2400,36,0.0,1.0,0.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.81
+no_extraction_costs,3,10,2400,36,1.0,0.0,1.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.88
+no_regeneration,3,10,2400,36,1.0,1.0,0.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_waste_streams,3,10,2400,36,1.0,1.0,1.0,0.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_maintenance_metabolism,3,10,2400,36,1.0,1.0,1.0,1.0,0.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_scarcity_feedback,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,0.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.88
+no_exchange_network,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_ecological_pressure,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_cultural_value_binding,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_safety_reserve,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_frequency_metabolism,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_privacy_filter,3,10,2400,36,1.0,1.0,1.0,1.0,1.0,1.0,0.333333,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.91

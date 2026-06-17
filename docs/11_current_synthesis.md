@@ -701,3 +701,5 @@ Report 168 adds social face and reputation memory. Agents now distinguish public
 
 
 Report 169 adds temperament and preference stability. Agents now face repeated shared contexts where stable temperament and preferences shape action tendencies, preference recall, differentiated behavior, identity memory, noise resistance, and non-rigid context sensitivity. The readiness is `0.885845`, intentionally lower than infrastructure bridges because this is a harder individuality claim, not a perfect scripted pass.
+
+Report 170 adds readable ego body-language. Agents now translate private first-person body, ego, relationship, temperament, and preference state into public posture, gaze, proximity, movement speed, hesitation, startle, comfort behavior, avoidance, following, and small rituals while preserving workspace privacy. The readiness is `0.994375`; the strongest ablation is `no_readable_mapping`, which confirms that interior state does not become person-like without a readable public body.

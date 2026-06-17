@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 170 - Readable Ego Body-Language Bridge</title>
+  <script src="../artifacts/ssrm_3d_readable_ego_body_language_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_readable_ego_body_language_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_readable_ego_body_language_bridge_state.js"></script>
+  <style>
+    :root {
+      --ink: #1d1710;
+      --muted: #6b5b49;
+      --paper: #f7efdf;
+      --panel: rgba(255, 250, 238, 0.82);
+      --line: rgba(71, 52, 33, 0.18);
+      --clay: #ad6842;
+      --moss: #596b41;
+      --ember: #d39052;
+      --blue: #4d7082;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(211, 144, 82, 0.24), transparent 26rem),
+        radial-gradient(circle at 86% 16%, rgba(77, 112, 130, 0.20), transparent 28rem),
+        linear-gradient(135deg, #f7efdf 0%, #ead7b6 48%, #d6b98f 100%);
+      font-family: Georgia, "Iowan Old Style", serif;
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    header {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      max-width: 880px;
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 5.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.065em;
+    }
+
+    .lede {
+      max-width: 840px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(67, 45, 21, 0.14);
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: end;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .metric-value {
+      font-size: 1.45rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stage {
+      position: relative;
+      min-height: 430px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(89, 107, 65, 0.12) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(89, 107, 65, 0.10) 1px, transparent 1px),
+        rgba(255, 249, 236, 0.68);
+      background-size: 44px 44px;
+    }
+
+    .agent {
+      position: absolute;
+      width: 92px;
+      min-height: 116px;
+      transform: translate(-50%, -50%);
+      display: grid;
+      justify-items: center;
+      gap: 5px;
+      padding: 8px 8px 10px;
+      border: 1px solid rgba(73, 45, 22, 0.16);
+      border-radius: 24px;
+      background: rgba(255, 252, 244, 0.72);
+      box-shadow: 0 18px 38px rgba(75, 48, 25, 0.12);
+    }
+
+    .body {
+      width: 42px;
+      height: 54px;
+      border-radius: 48% 48% 38% 38%;
+      background: linear-gradient(160deg, var(--ember), var(--clay));
+      transform-origin: 50% 100%;
+      transition: transform 280ms ease, filter 280ms ease;
+    }
+
+    .head {
+      width: 34px;
+      height: 30px;
+      border-radius: 50%;
+      background: #f0c88f;
+      border: 2px solid rgba(60, 35, 17, 0.18);
+      position: relative;
+    }
+
+    .head::before,
+    .head::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--ink);
+    }
+
+    .head::before {
+      left: 9px;
+    }
+
+    .head::after {
+      right: 9px;
+    }
+
+    .agent[data-posture="protective_curl"] .body {
+      transform: rotate(8deg) scaleY(0.78);
+      filter: saturate(0.75);
+    }
+
+    .agent[data-posture="open_chest"] .body {
+      transform: scaleX(1.12) scaleY(1.04);
+      filter: saturate(1.25);
+    }
+
+    .agent[data-posture="guarded_turn"] .body {
+      transform: rotate(-12deg) scaleX(0.86);
+    }
+
+    .agent[data-proximity="approaches"] {
+      outline: 3px solid rgba(89, 107, 65, 0.28);
+    }
+
+    .agent[data-proximity="keeps_space"] {
+      outline: 3px dashed rgba(173, 104, 66, 0.30);
+    }
+
+    .agent[data-following="true"] {
+      box-shadow: 0 0 0 8px rgba(77, 112, 130, 0.12), 0 18px 38px rgba(75, 48, 25, 0.12);
+    }
+
+    .agent-name {
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+
+    .agent-state {
+      display: inline-flex;
+      max-width: 100%;
+      padding: 4px 7px;
+      border-radius: 999px;
+      color: white;
+      background: var(--moss);
+      font-size: 0.68rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .trace {
+      display: grid;
+      gap: 10px;
+      max-height: 430px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .event {
+      display: grid;
+      gap: 4px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .event strong {
+      color: var(--clay);
+    }
+
+    .event small {
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, 0.44);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 840px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stage {
+        min-height: 560px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Readable ego body language</h1>
+      <p class="lede">Report 170 maps private first-person body, ego, relationship, temperament, and preference state into visible little-body behavior. The private workspace remains hidden; posture, gaze, distance, hesitation, comfort behavior, avoidance, following, and rituals carry the signal.</p>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Corrected readiness</h2>
+        <div id="metrics"></div>
+        <div class="chips">
+          <span class="chip">No LLM calls</span>
+          <span class="chip">No consciousness claim</span>
+          <span class="chip">Private workspace hidden</span>
+          <span class="chip">Recoverable expression</span>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Interpretation</h2>
+        <p>The strongest failure is removing readable mapping: interior state still exists, but it stops becoming legible body behavior. Removing the privacy filter is also penalized because direct workspace exposure is not a valid shortcut for person-like expression.</p>
+        <p>The visual stage below uses only public expression records, not hidden workspace contents.</p>
+      </article>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="panel stage" id="stage" aria-label="Agent body-language stage"></article>
+      <article class="panel">
+        <h2>Trace sample</h2>
+        <div class="trace" id="trace"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const results = window.SSRM_3D_READABLE_EGO_BODY_LANGUAGE_RESULTS || {};
+    const trace = window.SSRM_3D_READABLE_EGO_BODY_LANGUAGE_TRACE || [];
+    const state = window.SSRM_3D_READABLE_EGO_BODY_LANGUAGE_STATE || {};
+    const verdict = results.verdict || {};
+    const integrated = (results.rows || []).find((row) => row.condition === "integrated_readable_ego_body_language") || {};
+
+    const metricItems = [
+      ["verdict", verdict.verdict || "unknown"],
+      ["readiness", integrated.readable_body_language_readiness],
+      ["posture", integrated.posture_mapping_rate],
+      ["gaze", integrated.gaze_mapping_rate],
+      ["privacy", integrated.privacy_preservation_rate],
+      ["trace", integrated.trace_integrity]
+    ];
+
+    document.getElementById("metrics").innerHTML = metricItems.map(([label, value]) => {
+      const rendered = typeof value === "number" ? value.toFixed(6) : value;
+      return `<div class="metric-row"><span class="metric-label">${label}</span><span class="metric-value">${rendered}</span></div>`;
+    }).join("");
+
+    const events = Array.isArray(trace) ? trace.filter((event) => event.condition === "integrated_readable_ego_body_language") : [];
+    const latestByAgent = new Map();
+    for (const event of events) {
+      latestByAgent.set(event.agent_id, event);
+    }
+
+    const stage = document.getElementById("stage");
+    const positions = [
+      [16, 22], [38, 18], [64, 25], [82, 42],
+      [22, 56], [48, 55], [70, 67], [36, 82]
+    ];
+
+    [...latestByAgent.entries()].slice(0, 8).forEach(([agentId, event], index) => {
+      const [left, top] = positions[index % positions.length];
+      const node = document.createElement("div");
+      node.className = "agent";
+      node.style.left = `${left}%`;
+      node.style.top = `${top}%`;
+      node.dataset.posture = event.posture || "upright";
+      node.dataset.proximity = event.proximity || "neutral_distance";
+      node.dataset.following = String(Boolean(event.following));
+      node.innerHTML = `
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="agent-name">${agentId}</div>
+        <div class="agent-state">${event.gaze || "soft_watch"} / ${event.proximity || "neutral"}</div>
+      `;
+      stage.appendChild(node);
+    });
+
+    document.getElementById("trace").innerHTML = events.slice(-28).reverse().map((event) => `
+      <div class="event">
+        <strong>${event.agent_id} in ${event.context}</strong>
+        <small>posture ${event.posture}; gaze ${event.gaze}; proximity ${event.proximity}; movement ${Number(event.movement_speed || 0).toFixed(3)}; hesitation ${Number(event.hesitation || 0).toFixed(3)}</small>
+        <small>comfort ${event.comfort_behavior}; avoidance ${event.avoidance}; following ${event.following}; privacy hidden ${event.private_workspace_hidden}</small>
+      </div>
+    `).join("");
+  </script>
+</body>
+</html>

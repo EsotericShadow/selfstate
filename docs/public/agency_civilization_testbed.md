@@ -303,3 +303,5 @@ Report 168 adds social face and reputation memory: agents distinguish public fro
 
 
 Report 169 adds temperament and preference stability: stable traits and preferences shape repeated behavior, differentiate agents, resist noise, and remain flexible across context with readiness `0.885845`. The next gate is readable ego body-language.
+
+Report 170 adds readable ego body-language: private body, ego, relationship, temperament, and preference state now appears through posture, gaze, proximity, movement speed, hesitation, startle, comfort, avoidance, following, and ritual markers while preserving private workspace boundaries with readiness `0.994375`. The next gate is daily routine and sleep/wake continuity.

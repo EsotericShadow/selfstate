@@ -1,0 +1,12 @@
+condition,agent_count,expression_events,posture_mapping_rate,gaze_mapping_rate,proximity_mapping_rate,movement_mapping_rate,hesitation_mapping_rate,comfort_avoidance_rate,ritual_expression_rate,marker_diversity_rate,privacy_preservation_rate,temporal_smoothing_rate,state_expression_coupling_rate,recovery_expression_rate,readable_mapping_rate,trace_integrity,readable_body_language_readiness
+integrated_readable_ego_body_language,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9375,1.0,1.0,0.984375,1.0,1.0,1.0,0.994375
+no_body_signal,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.8125,1.0,1.0,0.955729,1.0,1.0,1.0,0.983333
+no_ego_signal,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.1875,1.0,1.0,1.0,0.935
+no_relationship_signal,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_temperament_signal,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9375,1.0,1.0,1.0,1.0,1.0,1.0,0.995625
+no_context_signal,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9375,1.0,1.0,0.984375,1.0,1.0,1.0,0.994375
+no_marker_diversity,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.25,1.0,1.0,0.984375,1.0,1.0,1.0,0.94625
+no_privacy_filter,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9375,0.0,1.0,0.984375,1.0,1.0,1.0,0.914375
+no_temporal_smoothing,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9375,1.0,0.0,0.96875,1.0,1.0,1.0,0.923125
+no_readable_mapping,8,384,0.0,0.0,0.0,0.0,0.0,0.666667,0.0,0.0625,1.0,1.0,0.0,0.875,0.0,1.0,0.302292
+no_recovery_expression,8,384,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.875,1.0,1.0,1.0,0.875,1.0,1.0,0.9825

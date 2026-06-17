@@ -1,0 +1,114 @@
+{
+  "ablations": [
+    {
+      "ablation": "no_object_specific_dialogue",
+      "interpretation": "Prompts stop naming owned objects and collapse back to generic proximity text.",
+      "readiness_after_ablation": 0.561592,
+      "readiness_loss": 0.325
+    },
+    {
+      "ablation": "no_agent_owned_inventory_requests",
+      "interpretation": "Agents stop asking for returns, help, inspection, or distance around owned objects.",
+      "readiness_after_ablation": 0.581592,
+      "readiness_loss": 0.305
+    },
+    {
+      "ablation": "no_reaction_to_later_pathing",
+      "interpretation": "Saved reaction labels no longer change later agent movement.",
+      "readiness_after_ablation": 0.586592,
+      "readiness_loss": 0.3
+    },
+    {
+      "ablation": "no_access_gate_consequence",
+      "interpretation": "Guarded or softened reactions no longer alter access/refusal behavior.",
+      "readiness_after_ablation": 0.626592,
+      "readiness_loss": 0.26
+    },
+    {
+      "ablation": "no_agent_initiated_followup",
+      "interpretation": "Agents stop initiating later behavior from remembered reaction state.",
+      "readiness_after_ablation": 0.651592,
+      "readiness_loss": 0.235
+    },
+    {
+      "ablation": "no_consequence_storage",
+      "interpretation": "Consequence schedules and request queues cannot survive reload.",
+      "readiness_after_ablation": 0.676592,
+      "readiness_loss": 0.21
+    }
+  ],
+  "artifacts": {
+    "access_and_refusals_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_access_and_refusals.csv",
+    "agent_initiated_behaviors_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_agent_initiated_behaviors.csv",
+    "agent_owned_inventory_requests_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_agent_owned_inventory_requests.csv",
+    "browser_ticks_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_browser_ticks.csv",
+    "consequence_replays_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_consequence_replays.csv",
+    "later_scene_behaviors_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_later_scene_behaviors.csv",
+    "multi_sensory_consequences_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_multi_sensory_consequences.csv",
+    "object_specific_dialogue_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_object_specific_dialogue.csv",
+    "reaction_consequences_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_reaction_consequences.csv",
+    "reaction_memory_snapshots_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_reaction_memory_snapshots.csv",
+    "results_json": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_results.json",
+    "state_json": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_state.json",
+    "summary_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_summary.csv",
+    "verdict_csv": "artifacts/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge_verdict.csv",
+    "visualization_html": "visualizations/ssrm_3d_browser_world_v23_object_specific_dialogue_inventory_request_reaction_consequence_bridge.html"
+  },
+  "claim_boundary": "Deterministic browser-local object-specific dialogue, agent-owned inventory request, and reaction-consequence scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, or complete 3D engine.",
+  "counts": {
+    "access_and_refusal_frames": 416,
+    "agent_initiated_behavior_frames": 416,
+    "agent_owned_inventory_request_frames": 416,
+    "agents": 6,
+    "browser_world_v23_ticks": 416,
+    "consequence_replay_frames": 416,
+    "later_scene_behavior_frames": 416,
+    "multi_sensory_consequence_frames": 416,
+    "object_specific_dialogue_frames": 416,
+    "objects": 9,
+    "reaction_consequence_frames": 416,
+    "reaction_memory_snapshot_frames": 416
+  },
+  "days": 26,
+  "metrics": {
+    "access_refusal_calibration": 0.974159,
+    "agent_initiated_behavior_binding": 0.989183,
+    "agent_initiated_behavior_rate": 0.961165,
+    "agent_owned_inventory_request_rate": 0.88,
+    "agent_owned_request_resolution": 0.795673,
+    "bounded_refusal_alternative_rate": 0.947368,
+    "browser_world_v23_reaction_consequence_readiness": 0.886592,
+    "browser_world_v23_surface_available": 1.0,
+    "comfort_pain_consequence_bounds": 1.0,
+    "delayed_followup_consequence": 1.0,
+    "frequency_flower_consequence_rhythm": 1.0,
+    "later_scene_behavior_score": 0.917067,
+    "mean_consequence_channel_score": 0.95243,
+    "object_affordance_reference_rate": 0.940541,
+    "object_owner_reference_rate": 0.918919,
+    "object_specific_dialogue_binding": 0.94375,
+    "privacy_safe_consequence_state": 1.0,
+    "reaction_request_bias_count": 179.0,
+    "reaction_to_access_coupling": 0.971154,
+    "reaction_to_later_pathing_coupling": 0.949519,
+    "reaction_to_object_request_coupling": 1.0,
+    "replay_consequence_integrity": 0.943269,
+    "request_boundary_integrity": 0.875601,
+    "sensory_consequence_binding": 0.961538,
+    "source_free_move_inventory_reaction_continuity": 1.0,
+    "storage_consequence_schedule_integrity": 0.939904,
+    "visible_agent_request_count": 308.0,
+    "visible_behavior_consequence_surface": 0.949519,
+    "visible_object_dialogue_count": 370.0,
+    "visible_refusal_count": 38.0,
+    "weakest_channel_score": 0.795673
+  },
+  "name": "SSRM-3D browser world v23 object-specific dialogue inventory request reaction consequence bridge",
+  "next_gate": "browser world v24 with agent-owned tasks that persist across many scene visits, object return obligations, and delayed trust/access changes that compound over multiple days",
+  "report": 263,
+  "seed": 20260876,
+  "source_dependency": "artifacts/ssrm_3d_browser_world_v22_free_move_proximity_dialogue_inventory_reaction_bridge_results.json",
+  "source_verdict": "pass",
+  "ticks_per_day": 16,
+  "verdict": "pass"
+}

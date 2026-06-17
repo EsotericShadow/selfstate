@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Pre-Avatar Playable World Seed Spatial Ecology Avatar Lock Bridge</title>
+  <style>
+    :root {
+      --ink: #17211d;
+      --paper: #f4ecd6;
+      --panel: rgba(255, 250, 232, .88);
+      --leaf: #536f45;
+      --rust: #a35b3f;
+      --gold: #c89b3f;
+      --blue: #3f7184;
+      --line: rgba(24,33,29,.17);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(200,155,63,.30), transparent 26rem),
+        radial-gradient(circle at 82% 15%, rgba(63,113,132,.24), transparent 25rem),
+        radial-gradient(circle at 52% 86%, rgba(83,111,69,.25), transparent 34rem),
+        linear-gradient(135deg, #f8efd9 0%, #e1d0aa 58%, #c8af7d 100%);
+    }
+    header { padding: 2.3rem clamp(1rem, 4vw, 4rem) 1rem; }
+    h1 { max-width: 1180px; margin: 0; font-size: clamp(2rem, 5vw, 5.4rem); line-height: .9; letter-spacing: -.055em; }
+    .sub { max-width: 1000px; margin: 1rem 0 0; line-height: 1.55; font-size: 1.08rem; }
+    main { padding: 1rem clamp(1rem, 4vw, 4rem) 4rem; display: grid; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; box-shadow: 0 20px 54px rgba(24,33,29,.13); backdrop-filter: blur(10px); }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    h2 { margin: 0 0 .75rem; color: var(--leaf); text-transform: uppercase; letter-spacing: .13em; font-size: .95rem; }
+    .metric { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .6rem; padding: .38rem 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+    .metric:last-child { border-bottom: 0; }
+    .map { min-height: 360px; position: relative; overflow: hidden; background: radial-gradient(circle, rgba(255,255,255,.42), rgba(255,255,255,.18)); border-radius: 1rem; border: 1px solid var(--line); }
+    .node { position: absolute; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--rust); border: 3px solid rgba(255,255,255,.75); transform: translate(-50%, -50%); box-shadow: 0 0 0 10px rgba(163,91,63,.13); }
+    .label { position: absolute; transform: translate(.75rem, -.5rem); font-size: .82rem; white-space: nowrap; }
+    .events { display: grid; gap: .75rem; max-height: 680px; overflow: auto; padding-right: .25rem; }
+    .event { border-left: 5px solid var(--gold); background: rgba(255,255,255,.43); padding: .75rem; border-radius: .85rem; }
+    .event.eligible { border-color: var(--rust); }
+    .event small { display: block; color: rgba(24,33,29,.66); margin-top: .25rem; }
+    .pill { display: inline-block; margin: .16rem .25rem .16rem 0; padding: .18rem .5rem; border-radius: 999px; background: rgba(83,111,69,.12); color: var(--leaf); font-size: .82rem; }
+    code { background: rgba(24,33,29,.08); padding: .1rem .25rem; border-radius: .25rem; }
+    @media (max-width: 850px) { .half, .third { grid-column: span 12; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pre-avatar playable world seed</h1>
+    <p class="sub">Report 202 replay: deep-time settlement memory becomes spatial coordinates, embodied agents, ecological body effects, tool objects, connected routes, playable affordances, and a locked avatar spawn gate.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>World Seed Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card half"><h2>Spatial Seed Map</h2><div id="map" class="map"></div></div>
+      <div class="card half"><h2>Current Spawn Lock</h2><div id="spawn"></div></div>
+      <div class="card wide"><h2>World Seed Replay</h2><div id="events" class="events"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_PRE_AVATAR_PLAYABLE_WORLD_SEED_SPATIAL_ECOLOGY_AVATAR_LOCK_RESULTS;
+    const trace = window.SSRM_3D_PRE_AVATAR_PLAYABLE_WORLD_SEED_SPATIAL_ECOLOGY_AVATAR_LOCK_TRACE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label, value) { return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    document.getElementById('verdict').innerHTML = [
+      metric('verdict', verdict.verdict === 'pass' ? 1 : 0),
+      metric('readiness', verdict.full_playable_world_seed_readiness),
+      metric('events', full.world_seed_events),
+      metric('lineages', full.lineage_count)
+    ].join('');
+    document.getElementById('metrics').innerHTML = [
+      ['spatial settlements', full.spatial_settlement_instantiation_rate],
+      ['ecology', full.ecological_cycle_binding_rate],
+      ['embodied agents', full.embodied_agent_presence_rate],
+      ['sensory channels', full.body_sensory_channel_rate],
+      ['weather/body', full.weather_body_coupling_rate],
+      ['tool objects', full.tool_object_materialization_rate],
+      ['routes', full.route_graph_connectivity_rate],
+      ['avatar lock', full.avatar_spawn_lock_rate],
+      ['privacy', full.private_workspace_privacy_rate]
+    ].map(([k,v]) => metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict)
+      .filter(([k]) => k.endsWith('_loss'))
+      .slice(0, 10)
+      .map(([k,v]) => metric(k.replaceAll('_',' '), v)).join('');
+    const map = document.getElementById('map');
+    const seen = new Map();
+    trace.forEach(ev => { if (ev.settlement && !seen.has(ev.settlement.id)) seen.set(ev.settlement.id, ev.settlement); });
+    seen.forEach((s, id) => {
+      const x = 50 + s.position.x * 1.25;
+      const y = 50 + s.position.z * 1.25;
+      const n = document.createElement('div');
+      n.className = 'node';
+      n.style.left = `${x}%`;
+      n.style.top = `${y}%`;
+      map.appendChild(n);
+      const l = document.createElement('div');
+      l.className = 'label';
+      l.style.left = `${x}%`;
+      l.style.top = `${y}%`;
+      l.textContent = id;
+      map.appendChild(l);
+    });
+    const last = trace[trace.length - 1];
+    document.getElementById('spawn').innerHTML = [
+      metric('last gate eligible', last.avatar_spawn_lock === 'eligible_after_world_seed' ? 1 : 0),
+      metric('last body energy', last.body ? last.body.energy : 0),
+      metric('last warmth', last.body ? last.body.warmth : 0),
+      metric('last wetness', last.body ? last.body.wetness : 0),
+      metric('last frequency', last.frequency_hz || 0)
+    ].join('');
+    document.getElementById('events').innerHTML = trace.map(ev => `<article class="event ${ev.avatar_spawn_lock === 'eligible_after_world_seed' ? 'eligible' : ''}">
+      <strong>Tick ${ev.tick} / ${ev.lineage}: ${ev.settlement ? ev.settlement.id : 'no settlement'}</strong>
+      <small>${ev.ecology ? ev.ecology.weather : 'no weather'} · ${ev.ecology ? ev.ecology.resource_pressure : 'no pressure'} · ${ev.flower_path || 'unbound'}</small>
+      <span class="pill">energy ${ev.body ? ev.body.energy : 'n/a'}</span>
+      <span class="pill">warmth ${ev.body ? ev.body.warmth : 'n/a'}</span>
+      <span class="pill">tool ${ev.tool_object ? ev.tool_object.id : 'none'}</span>
+      <span class="pill">routes ${ev.route_graph ? ev.route_graph.edges.length : 0}</span>
+      <span class="pill">spawn ${ev.avatar_spawn_lock || 'none'}</span>
+      <span class="pill">private hidden ${ev.private_workspace_hidden}</span>
+    </article>`).join('');
+  </script>
+</body>
+</html>

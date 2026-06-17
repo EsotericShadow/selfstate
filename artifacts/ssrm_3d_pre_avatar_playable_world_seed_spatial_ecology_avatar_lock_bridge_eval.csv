@@ -1,0 +1,15 @@
+condition,lineage_count,world_ticks,world_seed_events,spatial_settlement_instantiation_rate,ecological_cycle_binding_rate,embodied_agent_presence_rate,body_sensory_channel_rate,weather_body_coupling_rate,tool_object_materialization_rate,route_graph_connectivity_rate,settlement_memory_spatial_binding_rate,avatar_spawn_lock_rate,playable_affordance_seed_rate,private_workspace_privacy_rate,frequency_flower_spatial_rhythm_rate,browser_world_seed_replay_rate,trace_integrity,playable_world_seed_readiness
+integrated_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_spatial_settlements,3,9,27,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,0.32
+no_ecological_cycles,3,9,27,1.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.76
+no_embodied_agents,3,9,27,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,0.63
+no_sensory_channels,3,9,27,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_weather_body_coupling,3,9,27,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_tool_objects,3,9,27,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.85
+no_route_graph,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.86
+no_settlement_memory_binding,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_avatar_spawn_lock,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.84
+no_playable_affordances,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.93
+no_privacy_filter,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.93
+no_frequency_flower_binding,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95
+no_browser_replay,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96

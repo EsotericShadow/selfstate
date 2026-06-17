@@ -1,0 +1,7949 @@
+window.SSRM_3D_PRE_AVATAR_PLAYABLE_WORLD_SEED_SPATIAL_ECOLOGY_AVATAR_LOCK_STATE = {
+  "condition": "integrated_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock",
+  "config": {
+    "seed": 20260815,
+    "source_state": "artifacts/ssrm_3d_pre_avatar_deep_time_civilization_simulator_bridge_state.json",
+    "ticks": 9
+  },
+  "moral_boundary": {
+    "avatar_spawn_lock_not_real_consent": true,
+    "body_state_not_real_embodiment": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "sensory_packet_not_real_perception": true,
+    "spatial_world_seed_not_complete_3d_gameplay": true
+  },
+  "playable_world_seed_state": {
+    "condition": "integrated_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock",
+    "events": [
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.845,
+          "fatigue": 0.192,
+          "height_m": 1.42,
+          "movement_effort": 0.3368,
+          "pain": 0.0105,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.696,
+          "wetness": 0.3
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "toolstone",
+          "smell": "cut_grain",
+          "sound": "high_wind",
+          "temperature_c": 14.0,
+          "weather": "wind_harvest",
+          "wetness": 0.3,
+          "wind": 0.66
+        },
+        "event_id": "world-seed-0-Ari",
+        "flower_path": "work_petal:Ari:seed_tick_0",
+        "frequency_hz": 0.261674,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.845,
+            "fatigue": 0.192,
+            "height_m": 1.42,
+            "movement_effort": 0.3368,
+            "pain": 0.0105,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.696,
+            "wetness": 0.3
+          },
+          "flower_path": "work_petal:Ari:seed_tick_0",
+          "frequency_hz": 0.261674,
+          "lineage": "Ari",
+          "settlement": "west_bench_cluster",
+          "tick": 0,
+          "tool": "rain_cistern_ari",
+          "weather": "wind_harvest"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cut_grain",
+            "intensity": 0.505
+          },
+          "sound": {
+            "ambient": "high_wind",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.696,
+            "celsius": 14.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.3,
+            "skin": 0.3
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers wind_harvest and toolstone through karna-vo",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 7.5
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers wind_harvest and toolstone through karna-vo",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 192
+        },
+        "source_year": 192,
+        "tick": 0,
+        "tool_object": {
+          "id": "rain_cistern_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "toolstone"
+        },
+        "trace_hash": "b749b00bb7578370",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.696,
+          "wetness_to_skin": 0.3,
+          "wind_to_effort": 0.222288
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.845,
+          "fatigue": 0.192,
+          "height_m": 1.34,
+          "movement_effort": 0.3368,
+          "pain": 0.0105,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.696,
+          "wetness": 0.3
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "toolstone",
+          "smell": "cut_grain",
+          "sound": "high_wind",
+          "temperature_c": 14.0,
+          "weather": "wind_harvest",
+          "wetness": 0.3,
+          "wind": 0.66
+        },
+        "event_id": "world-seed-0-Fay",
+        "flower_path": "work_petal:Fay:seed_tick_0",
+        "frequency_hz": 0.239674,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.845,
+            "fatigue": 0.192,
+            "height_m": 1.34,
+            "movement_effort": 0.3368,
+            "pain": 0.0105,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.696,
+            "wetness": 0.3
+          },
+          "flower_path": "work_petal:Fay:seed_tick_0",
+          "frequency_hz": 0.239674,
+          "lineage": "Fay",
+          "settlement": "west_bench_cluster",
+          "tick": 0,
+          "tool": "rain_cistern_fay",
+          "weather": "wind_harvest"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cut_grain",
+            "intensity": 0.505
+          },
+          "sound": {
+            "ambient": "high_wind",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.696,
+            "celsius": 14.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.3,
+            "skin": 0.3
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers wind_harvest and toolstone through karna-vo",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 7.5
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers wind_harvest and toolstone through karna-vo",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 192
+        },
+        "source_year": 192,
+        "tick": 0,
+        "tool_object": {
+          "id": "rain_cistern_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "toolstone"
+        },
+        "trace_hash": "648b6a11681d967f",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.696,
+          "wetness_to_skin": 0.3,
+          "wind_to_effort": 0.222288
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.851,
+          "fatigue": 0.1872,
+          "height_m": 1.38,
+          "movement_effort": 0.31088,
+          "pain": 0.063573,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.476509,
+          "wetness": 0.18
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "fiber",
+          "smell": "snow_iron",
+          "sound": "ice_crack",
+          "temperature_c": -6.0,
+          "weather": "long_frost",
+          "wetness": 0.18,
+          "wind": 0.35
+        },
+        "event_id": "world-seed-0-Milo",
+        "flower_path": "work_petal:Milo:seed_tick_0",
+        "frequency_hz": 0.281622,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.851,
+            "fatigue": 0.1872,
+            "height_m": 1.38,
+            "movement_effort": 0.31088,
+            "pain": 0.063573,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.476509,
+            "wetness": 0.18
+          },
+          "flower_path": "work_petal:Milo:seed_tick_0",
+          "frequency_hz": 0.281622,
+          "lineage": "Milo",
+          "settlement": "west_bench_cluster",
+          "tick": 0,
+          "tool": "rain_cistern_milo",
+          "weather": "long_frost"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "snow_iron",
+            "intensity": 0.463
+          },
+          "sound": {
+            "ambient": "ice_crack",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.476509,
+            "celsius": -6.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.18,
+            "skin": 0.18
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers long_frost and fiber through karsen-sen",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 7.5
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers long_frost and fiber through karsen-sen",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 192
+        },
+        "source_year": 192,
+        "tick": 0,
+        "tool_object": {
+          "id": "rain_cistern_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "fiber"
+        },
+        "trace_hash": "ea751cb47ea44586",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.476509,
+          "wetness_to_skin": 0.18,
+          "wind_to_effort": 0.108808
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.833,
+          "fatigue": 0.2122,
+          "height_m": 1.42,
+          "movement_effort": 0.32088,
+          "pain": 0.063573,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.476509,
+          "wetness": 0.18
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "fiber",
+          "smell": "snow_iron",
+          "sound": "ice_crack",
+          "temperature_c": -6.0,
+          "weather": "long_frost",
+          "wetness": 0.18,
+          "wind": 0.35
+        },
+        "event_id": "world-seed-1-Ari",
+        "flower_path": "root_rest:Ari:seed_tick_1",
+        "frequency_hz": 0.265342,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.833,
+            "fatigue": 0.2122,
+            "height_m": 1.42,
+            "movement_effort": 0.32088,
+            "pain": 0.063573,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.476509,
+            "wetness": 0.18
+          },
+          "flower_path": "root_rest:Ari:seed_tick_1",
+          "frequency_hz": 0.265342,
+          "lineage": "Ari",
+          "settlement": "root_rest_hollow",
+          "tick": 1,
+          "tool": "heat_screen_ari",
+          "weather": "long_frost"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "snow_iron",
+            "intensity": 0.463
+          },
+          "sound": {
+            "ambient": "ice_crack",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.476509,
+            "celsius": -6.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.18,
+            "skin": 0.18
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers long_frost and fiber through karsen-sen.karu1",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 7.65
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers long_frost and fiber through karsen-sen.karu1",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 384
+        },
+        "source_year": 384,
+        "tick": 1,
+        "tool_object": {
+          "id": "heat_screen_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "fiber"
+        },
+        "trace_hash": "5be900fbbcd7a69e",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.476509,
+          "wetness_to_skin": 0.18,
+          "wind_to_effort": 0.112308
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.833,
+          "fatigue": 0.2122,
+          "height_m": 1.34,
+          "movement_effort": 0.32088,
+          "pain": 0.063573,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.476509,
+          "wetness": 0.18
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "fiber",
+          "smell": "snow_iron",
+          "sound": "ice_crack",
+          "temperature_c": -6.0,
+          "weather": "long_frost",
+          "wetness": 0.18,
+          "wind": 0.35
+        },
+        "event_id": "world-seed-1-Fay",
+        "flower_path": "root_rest:Fay:seed_tick_1",
+        "frequency_hz": 0.243342,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.833,
+            "fatigue": 0.2122,
+            "height_m": 1.34,
+            "movement_effort": 0.32088,
+            "pain": 0.063573,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.476509,
+            "wetness": 0.18
+          },
+          "flower_path": "root_rest:Fay:seed_tick_1",
+          "frequency_hz": 0.243342,
+          "lineage": "Fay",
+          "settlement": "root_rest_hollow",
+          "tick": 1,
+          "tool": "heat_screen_fay",
+          "weather": "long_frost"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "snow_iron",
+            "intensity": 0.463
+          },
+          "sound": {
+            "ambient": "ice_crack",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.476509,
+            "celsius": -6.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.18,
+            "skin": 0.18
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers long_frost and fiber through karsen-sen.lumu1",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 7.65
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers long_frost and fiber through karsen-sen.lumu1",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 384
+        },
+        "source_year": 384,
+        "tick": 1,
+        "tool_object": {
+          "id": "heat_screen_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "fiber"
+        },
+        "trace_hash": "8c8e03b1baa20fb6",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.476509,
+          "wetness_to_skin": 0.18,
+          "wind_to_effort": 0.112308
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.837,
+          "fatigue": 0.209,
+          "height_m": 1.38,
+          "movement_effort": 0.3036,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "event_id": "world-seed-1-Milo",
+        "flower_path": "root_rest:Milo:seed_tick_1",
+        "frequency_hz": 0.285307,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.837,
+            "fatigue": 0.209,
+            "height_m": 1.38,
+            "movement_effort": 0.3036,
+            "pain": 0.0035,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.712,
+            "wetness": 0.1
+          },
+          "flower_path": "root_rest:Milo:seed_tick_1",
+          "frequency_hz": 0.285307,
+          "lineage": "Milo",
+          "settlement": "root_rest_hollow",
+          "tick": 1,
+          "tool": "heat_screen_milo",
+          "weather": "clear_repair"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers clear_repair and food through karna-ta.rilan1",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 7.65
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers clear_repair and food through karna-ta.rilan1",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 384
+        },
+        "source_year": 384,
+        "tick": 1,
+        "tool_object": {
+          "id": "heat_screen_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "food"
+        },
+        "trace_hash": "2b1ed6d28498bb39",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.712,
+          "wetness_to_skin": 0.1,
+          "wind_to_effort": 0.036432
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.819,
+          "fatigue": 0.234,
+          "height_m": 1.42,
+          "movement_effort": 0.3136,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "event_id": "world-seed-2-Ari",
+        "flower_path": "social_petal:Ari:seed_tick_2",
+        "frequency_hz": 0.269027,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.819,
+            "fatigue": 0.234,
+            "height_m": 1.42,
+            "movement_effort": 0.3136,
+            "pain": 0.0035,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.712,
+            "wetness": 0.1
+          },
+          "flower_path": "social_petal:Ari:seed_tick_2",
+          "frequency_hz": 0.269027,
+          "lineage": "Ari",
+          "settlement": "north_route_ring",
+          "tick": 2,
+          "tool": "stone_gauge_ari",
+          "weather": "clear_repair"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers clear_repair and food through karna-ta.karan2",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 7.8
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers clear_repair and food through karna-ta.karan2",
+          "settlement_id": "north_route_ring",
+          "source_year": 576
+        },
+        "source_year": 576,
+        "tick": 2,
+        "tool_object": {
+          "id": "stone_gauge_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "food"
+        },
+        "trace_hash": "e94e40643ee0fa1e",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.712,
+          "wetness_to_skin": 0.1,
+          "wind_to_effort": 0.037632
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.819,
+          "fatigue": 0.234,
+          "height_m": 1.34,
+          "movement_effort": 0.3136,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "event_id": "world-seed-2-Fay",
+        "flower_path": "social_petal:Fay:seed_tick_2",
+        "frequency_hz": 0.247027,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.819,
+            "fatigue": 0.234,
+            "height_m": 1.34,
+            "movement_effort": 0.3136,
+            "pain": 0.0035,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.712,
+            "wetness": 0.1
+          },
+          "flower_path": "social_petal:Fay:seed_tick_2",
+          "frequency_hz": 0.247027,
+          "lineage": "Fay",
+          "settlement": "north_route_ring",
+          "tick": 2,
+          "tool": "stone_gauge_fay",
+          "weather": "clear_repair"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers clear_repair and food through karna-ta.luman2",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 7.8
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers clear_repair and food through karna-ta.luman2",
+          "settlement_id": "north_route_ring",
+          "source_year": 576
+        },
+        "source_year": 576,
+        "tick": 2,
+        "tool_object": {
+          "id": "stone_gauge_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "food"
+        },
+        "trace_hash": "27c4d7735cf086b5",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.712,
+          "wetness_to_skin": 0.1,
+          "wind_to_effort": 0.037632
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.788,
+          "fatigue": 0.2588,
+          "height_m": 1.38,
+          "movement_effort": 0.44752,
+          "pain": 0.034745,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.624218,
+          "wetness": 0.72
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "shelter",
+          "smell": "new_moss",
+          "sound": "soft_rain",
+          "temperature_c": 9.0,
+          "weather": "wet_spring",
+          "wetness": 0.72,
+          "wind": 0.22
+        },
+        "event_id": "world-seed-2-Milo",
+        "flower_path": "social_petal:Milo:seed_tick_2",
+        "frequency_hz": 0.289295,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.788,
+            "fatigue": 0.2588,
+            "height_m": 1.38,
+            "movement_effort": 0.44752,
+            "pain": 0.034745,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.624218,
+            "wetness": 0.72
+          },
+          "flower_path": "social_petal:Milo:seed_tick_2",
+          "frequency_hz": 0.289295,
+          "lineage": "Milo",
+          "settlement": "north_route_ring",
+          "tick": 2,
+          "tool": "stone_gauge_milo",
+          "weather": "wet_spring"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "new_moss",
+            "intensity": 0.652
+          },
+          "sound": {
+            "ambient": "soft_rain",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.624218,
+            "celsius": 9.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.72,
+            "skin": 0.72
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers wet_spring and shelter through karna-vo.rilel2",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 7.8
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers wet_spring and shelter through karna-vo.rilel2",
+          "settlement_id": "north_route_ring",
+          "source_year": 576
+        },
+        "source_year": 576,
+        "tick": 2,
+        "tool_object": {
+          "id": "stone_gauge_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "shelter"
+        },
+        "trace_hash": "a5bea14189a50b1b",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.624218,
+          "wetness_to_skin": 0.72,
+          "wind_to_effort": 0.098454
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.77,
+          "fatigue": 0.2838,
+          "height_m": 1.42,
+          "movement_effort": 0.45752,
+          "pain": 0.034745,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.624218,
+          "wetness": 0.72
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "shelter",
+          "smell": "new_moss",
+          "sound": "soft_rain",
+          "temperature_c": 9.0,
+          "weather": "wet_spring",
+          "wetness": 0.72,
+          "wind": 0.22
+        },
+        "event_id": "world-seed-3-Ari",
+        "flower_path": "work_petal:Ari:seed_tick_3",
+        "frequency_hz": 0.273015,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.77,
+            "fatigue": 0.2838,
+            "height_m": 1.42,
+            "movement_effort": 0.45752,
+            "pain": 0.034745,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.624218,
+            "wetness": 0.72
+          },
+          "flower_path": "work_petal:Ari:seed_tick_3",
+          "frequency_hz": 0.273015,
+          "lineage": "Ari",
+          "settlement": "west_bench_cluster",
+          "tick": 3,
+          "tool": "fiber_loom_ari",
+          "weather": "wet_spring"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "new_moss",
+            "intensity": 0.652
+          },
+          "sound": {
+            "ambient": "soft_rain",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.624218,
+            "celsius": 9.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.72,
+            "skin": 0.72
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers wet_spring and shelter through karna-vo.karel3",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 7.95
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers wet_spring and shelter through karna-vo.karel3",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 768
+        },
+        "source_year": 768,
+        "tick": 3,
+        "tool_object": {
+          "id": "fiber_loom_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "shelter"
+        },
+        "trace_hash": "c5fc997829fab13c",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.624218,
+          "wetness_to_skin": 0.72,
+          "wind_to_effort": 0.100654
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.77,
+          "fatigue": 0.2838,
+          "height_m": 1.34,
+          "movement_effort": 0.45752,
+          "pain": 0.034745,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.624218,
+          "wetness": 0.72
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "shelter",
+          "smell": "new_moss",
+          "sound": "soft_rain",
+          "temperature_c": 9.0,
+          "weather": "wet_spring",
+          "wetness": 0.72,
+          "wind": 0.22
+        },
+        "event_id": "world-seed-3-Fay",
+        "flower_path": "work_petal:Fay:seed_tick_3",
+        "frequency_hz": 0.251015,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.77,
+            "fatigue": 0.2838,
+            "height_m": 1.34,
+            "movement_effort": 0.45752,
+            "pain": 0.034745,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.624218,
+            "wetness": 0.72
+          },
+          "flower_path": "work_petal:Fay:seed_tick_3",
+          "frequency_hz": 0.251015,
+          "lineage": "Fay",
+          "settlement": "west_bench_cluster",
+          "tick": 3,
+          "tool": "fiber_loom_fay",
+          "weather": "wet_spring"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "new_moss",
+            "intensity": 0.652
+          },
+          "sound": {
+            "ambient": "soft_rain",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.624218,
+            "celsius": 9.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.72,
+            "skin": 0.72
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers wet_spring and shelter through karna-vo.lumel3",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 7.95
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers wet_spring and shelter through karna-vo.lumel3",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 768
+        },
+        "source_year": 768,
+        "tick": 3,
+        "tool_object": {
+          "id": "fiber_loom_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "shelter"
+        },
+        "trace_hash": "267566b86539662b",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.624218,
+          "wetness_to_skin": 0.72,
+          "wind_to_effort": 0.100654
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.8,
+          "fatigue": 0.2598,
+          "height_m": 1.38,
+          "movement_effort": 0.32792,
+          "pain": 0.0042,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.7104,
+          "wetness": 0.12
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "water",
+          "smell": "dust_warm_stone",
+          "sound": "insect_buzz",
+          "temperature_c": 28.0,
+          "weather": "dry_heat",
+          "wetness": 0.12,
+          "wind": 0.18
+        },
+        "event_id": "world-seed-3-Milo",
+        "flower_path": "work_petal:Milo:seed_tick_3",
+        "frequency_hz": 0.292756,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.8,
+            "fatigue": 0.2598,
+            "height_m": 1.38,
+            "movement_effort": 0.32792,
+            "pain": 0.0042,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.7104,
+            "wetness": 0.12
+          },
+          "flower_path": "work_petal:Milo:seed_tick_3",
+          "frequency_hz": 0.292756,
+          "lineage": "Milo",
+          "settlement": "west_bench_cluster",
+          "tick": 3,
+          "tool": "fiber_loom_milo",
+          "weather": "dry_heat"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "dust_warm_stone",
+            "intensity": 0.442
+          },
+          "sound": {
+            "ambient": "insect_buzz",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.7104,
+            "celsius": 28.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.12,
+            "skin": 0.12
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers dry_heat and water through karsen-sen.rilor3",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 7.95
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers dry_heat and water through karsen-sen.rilor3",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 768
+        },
+        "source_year": 768,
+        "tick": 3,
+        "tool_object": {
+          "id": "fiber_loom_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "water"
+        },
+        "trace_hash": "e9e0a0537b82164d",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.7104,
+          "wetness_to_skin": 0.12,
+          "wind_to_effort": 0.059026
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.782,
+          "fatigue": 0.2848,
+          "height_m": 1.42,
+          "movement_effort": 0.33792,
+          "pain": 0.0042,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.7104,
+          "wetness": 0.12
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "water",
+          "smell": "dust_warm_stone",
+          "sound": "insect_buzz",
+          "temperature_c": 28.0,
+          "weather": "dry_heat",
+          "wetness": 0.12,
+          "wind": 0.18
+        },
+        "event_id": "world-seed-4-Ari",
+        "flower_path": "root_rest:Ari:seed_tick_4",
+        "frequency_hz": 0.276476,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.782,
+            "fatigue": 0.2848,
+            "height_m": 1.42,
+            "movement_effort": 0.33792,
+            "pain": 0.0042,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.7104,
+            "wetness": 0.12
+          },
+          "flower_path": "root_rest:Ari:seed_tick_4",
+          "frequency_hz": 0.276476,
+          "lineage": "Ari",
+          "settlement": "root_rest_hollow",
+          "tick": 4,
+          "tool": "grain_cache_ari",
+          "weather": "dry_heat"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "dust_warm_stone",
+            "intensity": 0.442
+          },
+          "sound": {
+            "ambient": "insect_buzz",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.7104,
+            "celsius": 28.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.12,
+            "skin": 0.12
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers dry_heat and water through karsen-sen.karor0",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 8.1
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers dry_heat and water through karsen-sen.karor0",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 960
+        },
+        "source_year": 960,
+        "tick": 4,
+        "tool_object": {
+          "id": "grain_cache_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "water"
+        },
+        "trace_hash": "d0e5954a06eaae0e",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.7104,
+          "wetness_to_skin": 0.12,
+          "wind_to_effort": 0.060826
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.782,
+          "fatigue": 0.2848,
+          "height_m": 1.34,
+          "movement_effort": 0.33792,
+          "pain": 0.0042,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.7104,
+          "wetness": 0.12
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "water",
+          "smell": "dust_warm_stone",
+          "sound": "insect_buzz",
+          "temperature_c": 28.0,
+          "weather": "dry_heat",
+          "wetness": 0.12,
+          "wind": 0.18
+        },
+        "event_id": "world-seed-4-Fay",
+        "flower_path": "root_rest:Fay:seed_tick_4",
+        "frequency_hz": 0.254476,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.782,
+            "fatigue": 0.2848,
+            "height_m": 1.34,
+            "movement_effort": 0.33792,
+            "pain": 0.0042,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.7104,
+            "wetness": 0.12
+          },
+          "flower_path": "root_rest:Fay:seed_tick_4",
+          "frequency_hz": 0.254476,
+          "lineage": "Fay",
+          "settlement": "root_rest_hollow",
+          "tick": 4,
+          "tool": "grain_cache_fay",
+          "weather": "dry_heat"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "dust_warm_stone",
+            "intensity": 0.442
+          },
+          "sound": {
+            "ambient": "insect_buzz",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.7104,
+            "celsius": 28.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.12,
+            "skin": 0.12
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers dry_heat and water through karsen-sen.lumor0",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 8.1
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers dry_heat and water through karsen-sen.lumor0",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 960
+        },
+        "source_year": 960,
+        "tick": 4,
+        "tool_object": {
+          "id": "grain_cache_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "water"
+        },
+        "trace_hash": "f15384f4e3d19e18",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.7104,
+          "wetness_to_skin": 0.12,
+          "wind_to_effort": 0.060826
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.744,
+          "fatigue": 0.3152,
+          "height_m": 1.38,
+          "movement_effort": 0.50208,
+          "pain": 0.053073,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.560509,
+          "wetness": 0.88
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "warmth",
+          "smell": "cold_clay",
+          "sound": "hard_rain",
+          "temperature_c": 5.0,
+          "weather": "cold_rain",
+          "wetness": 0.88,
+          "wind": 0.42
+        },
+        "event_id": "world-seed-4-Milo",
+        "flower_path": "root_rest:Milo:seed_tick_4",
+        "frequency_hz": 0.296804,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.744,
+            "fatigue": 0.3152,
+            "height_m": 1.38,
+            "movement_effort": 0.50208,
+            "pain": 0.053073,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.560509,
+            "wetness": 0.88
+          },
+          "flower_path": "root_rest:Milo:seed_tick_4",
+          "frequency_hz": 0.296804,
+          "lineage": "Milo",
+          "settlement": "root_rest_hollow",
+          "tick": 4,
+          "tool": "grain_cache_milo",
+          "weather": "cold_rain"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cold_clay",
+            "intensity": 0.708
+          },
+          "sound": {
+            "ambient": "hard_rain",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.560509,
+            "celsius": 5.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.88,
+            "skin": 0.88
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers cold_rain and warmth through karna-ta.rilim0",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 8.1
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers cold_rain and warmth through karna-ta.rilim0",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 960
+        },
+        "source_year": 960,
+        "tick": 4,
+        "tool_object": {
+          "id": "grain_cache_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "warmth"
+        },
+        "trace_hash": "fd39e2a06ae21c16",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.560509,
+          "wetness_to_skin": 0.88,
+          "wind_to_effort": 0.210874
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.726,
+          "fatigue": 0.3402,
+          "height_m": 1.42,
+          "movement_effort": 0.51208,
+          "pain": 0.053073,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.560509,
+          "wetness": 0.88
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "warmth",
+          "smell": "cold_clay",
+          "sound": "hard_rain",
+          "temperature_c": 5.0,
+          "weather": "cold_rain",
+          "wetness": 0.88,
+          "wind": 0.42
+        },
+        "event_id": "world-seed-5-Ari",
+        "flower_path": "social_petal:Ari:seed_tick_5",
+        "frequency_hz": 0.280524,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.726,
+            "fatigue": 0.3402,
+            "height_m": 1.42,
+            "movement_effort": 0.51208,
+            "pain": 0.053073,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.560509,
+            "wetness": 0.88
+          },
+          "flower_path": "social_petal:Ari:seed_tick_5",
+          "frequency_hz": 0.280524,
+          "lineage": "Ari",
+          "settlement": "north_route_ring",
+          "tick": 5,
+          "tool": "wind_roof_ari",
+          "weather": "cold_rain"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cold_clay",
+            "intensity": 0.708
+          },
+          "sound": {
+            "ambient": "hard_rain",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.560509,
+            "celsius": 5.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.88,
+            "skin": 0.88
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers cold_rain and warmth through karna-ta.karim1",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 8.25
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers cold_rain and warmth through karna-ta.karim1",
+          "settlement_id": "north_route_ring",
+          "source_year": 1152
+        },
+        "source_year": 1152,
+        "tick": 5,
+        "tool_object": {
+          "id": "wind_roof_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "warmth"
+        },
+        "trace_hash": "7c260cc06c9a4902",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.560509,
+          "wetness_to_skin": 0.88,
+          "wind_to_effort": 0.215074
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.726,
+          "fatigue": 0.3402,
+          "height_m": 1.34,
+          "movement_effort": 0.51208,
+          "pain": 0.053073,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.560509,
+          "wetness": 0.88
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "warmth",
+          "smell": "cold_clay",
+          "sound": "hard_rain",
+          "temperature_c": 5.0,
+          "weather": "cold_rain",
+          "wetness": 0.88,
+          "wind": 0.42
+        },
+        "event_id": "world-seed-5-Fay",
+        "flower_path": "social_petal:Fay:seed_tick_5",
+        "frequency_hz": 0.258524,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.726,
+            "fatigue": 0.3402,
+            "height_m": 1.34,
+            "movement_effort": 0.51208,
+            "pain": 0.053073,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.560509,
+            "wetness": 0.88
+          },
+          "flower_path": "social_petal:Fay:seed_tick_5",
+          "frequency_hz": 0.258524,
+          "lineage": "Fay",
+          "settlement": "north_route_ring",
+          "tick": 5,
+          "tool": "wind_roof_fay",
+          "weather": "cold_rain"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cold_clay",
+            "intensity": 0.708
+          },
+          "sound": {
+            "ambient": "hard_rain",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.560509,
+            "celsius": 5.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.88,
+            "skin": 0.88
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers cold_rain and warmth through karna-ta.lumim1",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 8.25
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers cold_rain and warmth through karna-ta.lumim1",
+          "settlement_id": "north_route_ring",
+          "source_year": 1152
+        },
+        "source_year": 1152,
+        "tick": 5,
+        "tool_object": {
+          "id": "wind_roof_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "warmth"
+        },
+        "trace_hash": "ef00944f05920e8f",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.560509,
+          "wetness_to_skin": 0.88,
+          "wind_to_effort": 0.215074
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.755,
+          "fatigue": 0.317,
+          "height_m": 1.38,
+          "movement_effort": 0.3868,
+          "pain": 0.0105,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.696,
+          "wetness": 0.3
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "toolstone",
+          "smell": "cut_grain",
+          "sound": "high_wind",
+          "temperature_c": 14.0,
+          "weather": "wind_harvest",
+          "wetness": 0.3,
+          "wind": 0.66
+        },
+        "event_id": "world-seed-5-Milo",
+        "flower_path": "social_petal:Milo:seed_tick_5",
+        "frequency_hz": 0.300274,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.755,
+            "fatigue": 0.317,
+            "height_m": 1.38,
+            "movement_effort": 0.3868,
+            "pain": 0.0105,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.696,
+            "wetness": 0.3
+          },
+          "flower_path": "social_petal:Milo:seed_tick_5",
+          "frequency_hz": 0.300274,
+          "lineage": "Milo",
+          "settlement": "north_route_ring",
+          "tick": 5,
+          "tool": "wind_roof_milo",
+          "weather": "wind_harvest"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cut_grain",
+            "intensity": 0.505
+          },
+          "sound": {
+            "ambient": "high_wind",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.696,
+            "celsius": 14.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.3,
+            "skin": 0.3
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers wind_harvest and toolstone through karna-vo.rilul1",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 8.25
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers wind_harvest and toolstone through karna-vo.rilul1",
+          "settlement_id": "north_route_ring",
+          "source_year": 1152
+        },
+        "source_year": 1152,
+        "tick": 5,
+        "tool_object": {
+          "id": "wind_roof_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "toolstone"
+        },
+        "trace_hash": "bdf987aa031a0a3f",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.696,
+          "wetness_to_skin": 0.3,
+          "wind_to_effort": 0.255288
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.737,
+          "fatigue": 0.342,
+          "height_m": 1.42,
+          "movement_effort": 0.3968,
+          "pain": 0.0105,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.696,
+          "wetness": 0.3
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "toolstone",
+          "smell": "cut_grain",
+          "sound": "high_wind",
+          "temperature_c": 14.0,
+          "weather": "wind_harvest",
+          "wetness": 0.3,
+          "wind": 0.66
+        },
+        "event_id": "world-seed-6-Ari",
+        "flower_path": "work_petal:Ari:seed_tick_6",
+        "frequency_hz": 0.283994,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.737,
+            "fatigue": 0.342,
+            "height_m": 1.42,
+            "movement_effort": 0.3968,
+            "pain": 0.0105,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.696,
+            "wetness": 0.3
+          },
+          "flower_path": "work_petal:Ari:seed_tick_6",
+          "frequency_hz": 0.283994,
+          "lineage": "Ari",
+          "settlement": "west_bench_cluster",
+          "tick": 6,
+          "tool": "rain_cistern_ari",
+          "weather": "wind_harvest"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cut_grain",
+            "intensity": 0.505
+          },
+          "sound": {
+            "ambient": "high_wind",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.696,
+            "celsius": 14.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.3,
+            "skin": 0.3
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers wind_harvest and toolstone through karna-vo.karul2",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 8.4
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers wind_harvest and toolstone through karna-vo.karul2",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 1344
+        },
+        "source_year": 1344,
+        "tick": 6,
+        "tool_object": {
+          "id": "rain_cistern_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "toolstone"
+        },
+        "trace_hash": "cd495ca1479f0cb3",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.696,
+          "wetness_to_skin": 0.3,
+          "wind_to_effort": 0.261888
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.737,
+          "fatigue": 0.342,
+          "height_m": 1.34,
+          "movement_effort": 0.3968,
+          "pain": 0.0105,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.696,
+          "wetness": 0.3
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "toolstone",
+          "smell": "cut_grain",
+          "sound": "high_wind",
+          "temperature_c": 14.0,
+          "weather": "wind_harvest",
+          "wetness": 0.3,
+          "wind": 0.66
+        },
+        "event_id": "world-seed-6-Fay",
+        "flower_path": "work_petal:Fay:seed_tick_6",
+        "frequency_hz": 0.261994,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.737,
+            "fatigue": 0.342,
+            "height_m": 1.34,
+            "movement_effort": 0.3968,
+            "pain": 0.0105,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.696,
+            "wetness": 0.3
+          },
+          "flower_path": "work_petal:Fay:seed_tick_6",
+          "frequency_hz": 0.261994,
+          "lineage": "Fay",
+          "settlement": "west_bench_cluster",
+          "tick": 6,
+          "tool": "rain_cistern_fay",
+          "weather": "wind_harvest"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "cut_grain",
+            "intensity": 0.505
+          },
+          "sound": {
+            "ambient": "high_wind",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.696,
+            "celsius": 14.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.3,
+            "skin": 0.3
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers wind_harvest and toolstone through karna-vo.lumul2",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 8.4
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers wind_harvest and toolstone through karna-vo.lumul2",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 1344
+        },
+        "source_year": 1344,
+        "tick": 6,
+        "tool_object": {
+          "id": "rain_cistern_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "toolstone"
+        },
+        "trace_hash": "1973b00270f4b146",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.696,
+          "wetness_to_skin": 0.3,
+          "wind_to_effort": 0.261888
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.743,
+          "fatigue": 0.3372,
+          "height_m": 1.38,
+          "movement_effort": 0.37088,
+          "pain": 0.063573,
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.476509,
+          "wetness": 0.18
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "fiber",
+          "smell": "snow_iron",
+          "sound": "ice_crack",
+          "temperature_c": -6.0,
+          "weather": "long_frost",
+          "wetness": 0.18,
+          "wind": 0.35
+        },
+        "event_id": "world-seed-6-Milo",
+        "flower_path": "work_petal:Milo:seed_tick_6",
+        "frequency_hz": 0.303942,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.743,
+            "fatigue": 0.3372,
+            "height_m": 1.38,
+            "movement_effort": 0.37088,
+            "pain": 0.063573,
+            "position": {
+              "flower_node": "work_petal",
+              "x": -24.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.476509,
+            "wetness": 0.18
+          },
+          "flower_path": "work_petal:Milo:seed_tick_6",
+          "frequency_hz": 0.303942,
+          "lineage": "Milo",
+          "settlement": "west_bench_cluster",
+          "tick": 6,
+          "tool": "rain_cistern_milo",
+          "weather": "long_frost"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "snow_iron",
+            "intensity": 0.463
+          },
+          "sound": {
+            "ambient": "ice_crack",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.476509,
+            "celsius": -6.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.18,
+            "skin": 0.18
+          }
+        },
+        "settlement": {
+          "id": "west_bench_cluster",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers long_frost and fiber through karsen-sen.rilsa2",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -24.0,
+            "y": 0.0,
+            "z": 9.0
+          },
+          "radius_m": 8.4
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers long_frost and fiber through karsen-sen.rilsa2",
+          "settlement_id": "west_bench_cluster",
+          "source_year": 1344
+        },
+        "source_year": 1344,
+        "tick": 6,
+        "tool_object": {
+          "id": "rain_cistern_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "work_petal",
+            "x": -22.2,
+            "y": 0.0,
+            "z": 7.8
+          },
+          "solves": "fiber"
+        },
+        "trace_hash": "5f03c7a2292c75f1",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.476509,
+          "wetness_to_skin": 0.18,
+          "wind_to_effort": 0.129808
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.725,
+          "fatigue": 0.3622,
+          "height_m": 1.42,
+          "movement_effort": 0.38088,
+          "pain": 0.063573,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.476509,
+          "wetness": 0.18
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "fiber",
+          "smell": "snow_iron",
+          "sound": "ice_crack",
+          "temperature_c": -6.0,
+          "weather": "long_frost",
+          "wetness": 0.18,
+          "wind": 0.35
+        },
+        "event_id": "world-seed-7-Ari",
+        "flower_path": "root_rest:Ari:seed_tick_7",
+        "frequency_hz": 0.287662,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.725,
+            "fatigue": 0.3622,
+            "height_m": 1.42,
+            "movement_effort": 0.38088,
+            "pain": 0.063573,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.476509,
+            "wetness": 0.18
+          },
+          "flower_path": "root_rest:Ari:seed_tick_7",
+          "frequency_hz": 0.287662,
+          "lineage": "Ari",
+          "settlement": "root_rest_hollow",
+          "tick": 7,
+          "tool": "heat_screen_ari",
+          "weather": "long_frost"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "snow_iron",
+            "intensity": 0.463
+          },
+          "sound": {
+            "ambient": "ice_crack",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.476509,
+            "celsius": -6.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.18,
+            "skin": 0.18
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers long_frost and fiber through karsen-sen.karsa3",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 8.55
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers long_frost and fiber through karsen-sen.karsa3",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 1536
+        },
+        "source_year": 1536,
+        "tick": 7,
+        "tool_object": {
+          "id": "heat_screen_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "fiber"
+        },
+        "trace_hash": "f3c0911cb96dd96e",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.476509,
+          "wetness_to_skin": 0.18,
+          "wind_to_effort": 0.133308
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.725,
+          "fatigue": 0.3622,
+          "height_m": 1.34,
+          "movement_effort": 0.38088,
+          "pain": 0.063573,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.476509,
+          "wetness": 0.18
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "fiber",
+          "smell": "snow_iron",
+          "sound": "ice_crack",
+          "temperature_c": -6.0,
+          "weather": "long_frost",
+          "wetness": 0.18,
+          "wind": 0.35
+        },
+        "event_id": "world-seed-7-Fay",
+        "flower_path": "root_rest:Fay:seed_tick_7",
+        "frequency_hz": 0.265662,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.725,
+            "fatigue": 0.3622,
+            "height_m": 1.34,
+            "movement_effort": 0.38088,
+            "pain": 0.063573,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.476509,
+            "wetness": 0.18
+          },
+          "flower_path": "root_rest:Fay:seed_tick_7",
+          "frequency_hz": 0.265662,
+          "lineage": "Fay",
+          "settlement": "root_rest_hollow",
+          "tick": 7,
+          "tool": "heat_screen_fay",
+          "weather": "long_frost"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "snow_iron",
+            "intensity": 0.463
+          },
+          "sound": {
+            "ambient": "ice_crack",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.476509,
+            "celsius": -6.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.18,
+            "skin": 0.18
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers long_frost and fiber through karsen-sen.lumsa3",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 8.55
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers long_frost and fiber through karsen-sen.lumsa3",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 1536
+        },
+        "source_year": 1536,
+        "tick": 7,
+        "tool_object": {
+          "id": "heat_screen_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "fiber"
+        },
+        "trace_hash": "596edf3a213f337f",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.476509,
+          "wetness_to_skin": 0.18,
+          "wind_to_effort": 0.133308
+        }
+      },
+      {
+        "avatar_spawn_lock": "locked_until_spatial_world_ready",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.729,
+          "fatigue": 0.359,
+          "height_m": 1.38,
+          "movement_effort": 0.3636,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "event_id": "world-seed-7-Milo",
+        "flower_path": "root_rest:Milo:seed_tick_7",
+        "frequency_hz": 0.307627,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": false,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": false,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "locked_until_spatial_world_ready",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.729,
+            "fatigue": 0.359,
+            "height_m": 1.38,
+            "movement_effort": 0.3636,
+            "pain": 0.0035,
+            "position": {
+              "flower_node": "root_rest",
+              "x": 4.0,
+              "y": -1.0,
+              "z": -18.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.712,
+            "wetness": 0.1
+          },
+          "flower_path": "root_rest:Milo:seed_tick_7",
+          "frequency_hz": 0.307627,
+          "lineage": "Milo",
+          "settlement": "root_rest_hollow",
+          "tick": 7,
+          "tool": "heat_screen_milo",
+          "weather": "clear_repair"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": {
+          "id": "root_rest_hollow",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers clear_repair and food through karna-ta.rilve3",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 4.0,
+            "y": -1.0,
+            "z": -18.0
+          },
+          "radius_m": 8.55
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers clear_repair and food through karna-ta.rilve3",
+          "settlement_id": "root_rest_hollow",
+          "source_year": 1536
+        },
+        "source_year": 1536,
+        "tick": 7,
+        "tool_object": {
+          "id": "heat_screen_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "root_rest",
+            "x": 5.8,
+            "y": -1.0,
+            "z": -19.2
+          },
+          "solves": "food"
+        },
+        "trace_hash": "59508fb3db8770a4",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.712,
+          "wetness_to_skin": 0.1,
+          "wind_to_effort": 0.043632
+        }
+      },
+      {
+        "avatar_spawn_lock": "eligible_after_world_seed",
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.711,
+          "fatigue": 0.384,
+          "height_m": 1.42,
+          "movement_effort": 0.3736,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "event_id": "world-seed-8-Ari",
+        "flower_path": "social_petal:Ari:seed_tick_8",
+        "frequency_hz": 0.291347,
+        "lineage": "Ari",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "eligible_after_world_seed",
+          "body": {
+            "agent_id": "Ari",
+            "energy": 0.711,
+            "fatigue": 0.384,
+            "height_m": 1.42,
+            "movement_effort": 0.3736,
+            "pain": 0.0035,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.72,
+            "warmth": 0.712,
+            "wetness": 0.1
+          },
+          "flower_path": "social_petal:Ari:seed_tick_8",
+          "frequency_hz": 0.291347,
+          "lineage": "Ari",
+          "settlement": "north_route_ring",
+          "tick": 8,
+          "tool": "stone_gauge_ari",
+          "weather": "clear_repair"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Ari",
+          "memory_anchor": "Ari remembers clear_repair and food through karna-ta.karve0",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 8.7
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Ari remembers clear_repair and food through karna-ta.karve0",
+          "settlement_id": "north_route_ring",
+          "source_year": 1728
+        },
+        "source_year": 1728,
+        "tick": 8,
+        "tool_object": {
+          "id": "stone_gauge_ari",
+          "lineage": "Ari",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "food"
+        },
+        "trace_hash": "df626efaa759cecc",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.712,
+          "wetness_to_skin": 0.1,
+          "wind_to_effort": 0.044832
+        }
+      },
+      {
+        "avatar_spawn_lock": "eligible_after_world_seed",
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.711,
+          "fatigue": 0.384,
+          "height_m": 1.34,
+          "movement_effort": 0.3736,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "event_id": "world-seed-8-Fay",
+        "flower_path": "social_petal:Fay:seed_tick_8",
+        "frequency_hz": 0.269347,
+        "lineage": "Fay",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "eligible_after_world_seed",
+          "body": {
+            "agent_id": "Fay",
+            "energy": 0.711,
+            "fatigue": 0.384,
+            "height_m": 1.34,
+            "movement_effort": 0.3736,
+            "pain": 0.0035,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.55,
+            "warmth": 0.712,
+            "wetness": 0.1
+          },
+          "flower_path": "social_petal:Fay:seed_tick_8",
+          "frequency_hz": 0.269347,
+          "lineage": "Fay",
+          "settlement": "north_route_ring",
+          "tick": 8,
+          "tool": "stone_gauge_fay",
+          "weather": "clear_repair"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Fay",
+          "memory_anchor": "Fay remembers clear_repair and food through karna-ta.lumve0",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 8.7
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Fay remembers clear_repair and food through karna-ta.lumve0",
+          "settlement_id": "north_route_ring",
+          "source_year": 1728
+        },
+        "source_year": 1728,
+        "tick": 8,
+        "tool_object": {
+          "id": "stone_gauge_fay",
+          "lineage": "Fay",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "food"
+        },
+        "trace_hash": "df897c04e5f5bea8",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.712,
+          "wetness_to_skin": 0.1,
+          "wind_to_effort": 0.044832
+        }
+      },
+      {
+        "avatar_spawn_lock": "eligible_after_world_seed",
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.68,
+          "fatigue": 0.4088,
+          "height_m": 1.38,
+          "movement_effort": 0.50752,
+          "pain": 0.034745,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.624218,
+          "wetness": 0.72
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "ecology": {
+          "resource_pressure": "shelter",
+          "smell": "new_moss",
+          "sound": "soft_rain",
+          "temperature_c": 9.0,
+          "weather": "wet_spring",
+          "wetness": 0.72,
+          "wind": 0.22
+        },
+        "event_id": "world-seed-8-Milo",
+        "flower_path": "social_petal:Milo:seed_tick_8",
+        "frequency_hz": 0.311615,
+        "lineage": "Milo",
+        "playable_affordances": [
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "ask_translation",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "approach_agent",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "avatar_spawn_lock": "eligible_after_world_seed",
+          "body": {
+            "agent_id": "Milo",
+            "energy": 0.68,
+            "fatigue": 0.4088,
+            "height_m": 1.38,
+            "movement_effort": 0.50752,
+            "pain": 0.034745,
+            "position": {
+              "flower_node": "social_petal",
+              "x": 27.0,
+              "y": 1.0,
+              "z": 17.0
+            },
+            "stride_m": 0.84,
+            "warmth": 0.624218,
+            "wetness": 0.72
+          },
+          "flower_path": "social_petal:Milo:seed_tick_8",
+          "frequency_hz": 0.311615,
+          "lineage": "Milo",
+          "settlement": "north_route_ring",
+          "tick": 8,
+          "tool": "stone_gauge_milo",
+          "weather": "wet_spring"
+        },
+        "route_graph": {
+          "connected": true,
+          "edges": [
+            {
+              "distance_m": 41.881,
+              "from": "north_route_ring",
+              "to": "root_rest_hollow",
+              "walkable": true
+            },
+            {
+              "distance_m": 38.897,
+              "from": "root_rest_hollow",
+              "to": "west_bench_cluster",
+              "walkable": true
+            },
+            {
+              "distance_m": 51.624,
+              "from": "west_bench_cluster",
+              "to": "north_route_ring",
+              "walkable": true
+            }
+          ],
+          "nodes": [
+            {
+              "id": "north_route_ring",
+              "position": {
+                "flower_node": "social_petal",
+                "x": 27.0,
+                "y": 1.0,
+                "z": 17.0
+              }
+            },
+            {
+              "id": "root_rest_hollow",
+              "position": {
+                "flower_node": "root_rest",
+                "x": 4.0,
+                "y": -1.0,
+                "z": -18.0
+              }
+            },
+            {
+              "id": "west_bench_cluster",
+              "position": {
+                "flower_node": "work_petal",
+                "x": -24.0,
+                "y": 0.0,
+                "z": 9.0
+              }
+            }
+          ]
+        },
+        "sensory": {
+          "smell": {
+            "ambient": "new_moss",
+            "intensity": 0.652
+          },
+          "sound": {
+            "ambient": "soft_rain",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.624218,
+            "celsius": 9.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.72,
+            "skin": 0.72
+          }
+        },
+        "settlement": {
+          "id": "north_route_ring",
+          "lineage": "Milo",
+          "memory_anchor": "Milo remembers wet_spring and shelter through karna-vo.rila0",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "radius_m": 8.7
+        },
+        "settlement_memory_binding": {
+          "memory_anchor": "Milo remembers wet_spring and shelter through karna-vo.rila0",
+          "settlement_id": "north_route_ring",
+          "source_year": 1728
+        },
+        "source_year": 1728,
+        "tick": 8,
+        "tool_object": {
+          "id": "stone_gauge_milo",
+          "lineage": "Milo",
+          "object_kind": "deep_time_tool",
+          "position": {
+            "flower_node": "social_petal",
+            "x": 28.8,
+            "y": 1.0,
+            "z": 15.8
+          },
+          "solves": "shelter"
+        },
+        "trace_hash": "c0817e76dea75e25",
+        "weather_body_coupling": {
+          "temperature_to_warmth": 0.624218,
+          "wetness_to_skin": 0.72,
+          "wind_to_effort": 0.111654
+        }
+      }
+    ],
+    "lineages": {
+      "Ari": {
+        "base_frequency": 0.257,
+        "dialect_seed": "kar",
+        "flower_node": "work_petal",
+        "identity": "workline"
+      },
+      "Fay": {
+        "base_frequency": 0.235,
+        "dialect_seed": "lum",
+        "flower_node": "root_rest",
+        "identity": "restline"
+      },
+      "Milo": {
+        "base_frequency": 0.274,
+        "dialect_seed": "ril",
+        "flower_node": "social_petal",
+        "identity": "routeline"
+      }
+    },
+    "source_condition": "integrated_pre_avatar_deep_time_civilization",
+    "source_world": {
+      "apprenticeships": {
+        "Ari": [
+          {
+            "elder": "Ari-g00",
+            "learner": "Ari-g00",
+            "teaches": "rain_cistern_ari",
+            "word": "karna-vo"
+          },
+          {
+            "elder": "Ari-g00",
+            "learner": "Ari-g01",
+            "teaches": "heat_screen_ari",
+            "word": "karsen-sen.karu1"
+          },
+          {
+            "elder": "Ari-g01",
+            "learner": "Ari-g02",
+            "teaches": "stone_gauge_ari",
+            "word": "karna-ta.karan2"
+          },
+          {
+            "elder": "Ari-g02",
+            "learner": "Ari-g03",
+            "teaches": "fiber_loom_ari",
+            "word": "karna-vo.karel3"
+          },
+          {
+            "elder": "Ari-g03",
+            "learner": "Ari-g04",
+            "teaches": "grain_cache_ari",
+            "word": "karsen-sen.karor0"
+          },
+          {
+            "elder": "Ari-g04",
+            "learner": "Ari-g05",
+            "teaches": "wind_roof_ari",
+            "word": "karna-ta.karim1"
+          },
+          {
+            "elder": "Ari-g05",
+            "learner": "Ari-g06",
+            "teaches": "rain_cistern_ari",
+            "word": "karna-vo.karul2"
+          },
+          {
+            "elder": "Ari-g06",
+            "learner": "Ari-g07",
+            "teaches": "heat_screen_ari",
+            "word": "karsen-sen.karsa3"
+          },
+          {
+            "elder": "Ari-g07",
+            "learner": "Ari-g08",
+            "teaches": "stone_gauge_ari",
+            "word": "karna-ta.karve0"
+          },
+          {
+            "elder": "Ari-g08",
+            "learner": "Ari-g09",
+            "teaches": "fiber_loom_ari",
+            "word": "karna-vo.kara1"
+          },
+          {
+            "elder": "Ari-g09",
+            "learner": "Ari-g10",
+            "teaches": "grain_cache_ari",
+            "word": "karsen-sen.kare2"
+          },
+          {
+            "elder": "Ari-g10",
+            "learner": "Ari-g11",
+            "teaches": "wind_roof_ari",
+            "word": "karna-ta.kari3"
+          },
+          {
+            "elder": "Ari-g11",
+            "learner": "Ari-g12",
+            "teaches": "rain_cistern_ari",
+            "word": "karna-vo"
+          },
+          {
+            "elder": "Ari-g12",
+            "learner": "Ari-g13",
+            "teaches": "heat_screen_ari",
+            "word": "karsen-sen.karu1"
+          },
+          {
+            "elder": "Ari-g13",
+            "learner": "Ari-g14",
+            "teaches": "stone_gauge_ari",
+            "word": "karna-ta.karan2"
+          },
+          {
+            "elder": "Ari-g14",
+            "learner": "Ari-g15",
+            "teaches": "fiber_loom_ari",
+            "word": "karna-vo.karel3"
+          },
+          {
+            "elder": "Ari-g15",
+            "learner": "Ari-g16",
+            "teaches": "grain_cache_ari",
+            "word": "karsen-sen.karor0"
+          },
+          {
+            "elder": "Ari-g16",
+            "learner": "Ari-g17",
+            "teaches": "wind_roof_ari",
+            "word": "karna-ta.karim1"
+          }
+        ],
+        "Fay": [
+          {
+            "elder": "Fay-g00",
+            "learner": "Fay-g00",
+            "teaches": "rain_cistern_fay",
+            "word": "karna-vo"
+          },
+          {
+            "elder": "Fay-g00",
+            "learner": "Fay-g01",
+            "teaches": "heat_screen_fay",
+            "word": "karsen-sen.lumu1"
+          },
+          {
+            "elder": "Fay-g01",
+            "learner": "Fay-g02",
+            "teaches": "stone_gauge_fay",
+            "word": "karna-ta.luman2"
+          },
+          {
+            "elder": "Fay-g02",
+            "learner": "Fay-g03",
+            "teaches": "fiber_loom_fay",
+            "word": "karna-vo.lumel3"
+          },
+          {
+            "elder": "Fay-g03",
+            "learner": "Fay-g04",
+            "teaches": "grain_cache_fay",
+            "word": "karsen-sen.lumor0"
+          },
+          {
+            "elder": "Fay-g04",
+            "learner": "Fay-g05",
+            "teaches": "wind_roof_fay",
+            "word": "karna-ta.lumim1"
+          },
+          {
+            "elder": "Fay-g05",
+            "learner": "Fay-g06",
+            "teaches": "rain_cistern_fay",
+            "word": "karna-vo.lumul2"
+          },
+          {
+            "elder": "Fay-g06",
+            "learner": "Fay-g07",
+            "teaches": "heat_screen_fay",
+            "word": "karsen-sen.lumsa3"
+          },
+          {
+            "elder": "Fay-g07",
+            "learner": "Fay-g08",
+            "teaches": "stone_gauge_fay",
+            "word": "karna-ta.lumve0"
+          },
+          {
+            "elder": "Fay-g08",
+            "learner": "Fay-g09",
+            "teaches": "fiber_loom_fay",
+            "word": "karna-vo.luma1"
+          },
+          {
+            "elder": "Fay-g09",
+            "learner": "Fay-g10",
+            "teaches": "grain_cache_fay",
+            "word": "karsen-sen.lume2"
+          },
+          {
+            "elder": "Fay-g10",
+            "learner": "Fay-g11",
+            "teaches": "wind_roof_fay",
+            "word": "karna-ta.lumi3"
+          },
+          {
+            "elder": "Fay-g11",
+            "learner": "Fay-g12",
+            "teaches": "rain_cistern_fay",
+            "word": "karna-vo"
+          },
+          {
+            "elder": "Fay-g12",
+            "learner": "Fay-g13",
+            "teaches": "heat_screen_fay",
+            "word": "karsen-sen.lumu1"
+          },
+          {
+            "elder": "Fay-g13",
+            "learner": "Fay-g14",
+            "teaches": "stone_gauge_fay",
+            "word": "karna-ta.luman2"
+          },
+          {
+            "elder": "Fay-g14",
+            "learner": "Fay-g15",
+            "teaches": "fiber_loom_fay",
+            "word": "karna-vo.lumel3"
+          },
+          {
+            "elder": "Fay-g15",
+            "learner": "Fay-g16",
+            "teaches": "grain_cache_fay",
+            "word": "karsen-sen.lumor0"
+          },
+          {
+            "elder": "Fay-g16",
+            "learner": "Fay-g17",
+            "teaches": "wind_roof_fay",
+            "word": "karna-ta.lumim1"
+          }
+        ],
+        "Milo": [
+          {
+            "elder": "Milo-g00",
+            "learner": "Milo-g00",
+            "teaches": "rain_cistern_milo",
+            "word": "karsen-sen"
+          },
+          {
+            "elder": "Milo-g00",
+            "learner": "Milo-g01",
+            "teaches": "heat_screen_milo",
+            "word": "karna-ta.rilan1"
+          },
+          {
+            "elder": "Milo-g01",
+            "learner": "Milo-g02",
+            "teaches": "stone_gauge_milo",
+            "word": "karna-vo.rilel2"
+          },
+          {
+            "elder": "Milo-g02",
+            "learner": "Milo-g03",
+            "teaches": "fiber_loom_milo",
+            "word": "karsen-sen.rilor3"
+          },
+          {
+            "elder": "Milo-g03",
+            "learner": "Milo-g04",
+            "teaches": "grain_cache_milo",
+            "word": "karna-ta.rilim0"
+          },
+          {
+            "elder": "Milo-g04",
+            "learner": "Milo-g05",
+            "teaches": "wind_roof_milo",
+            "word": "karna-vo.rilul1"
+          },
+          {
+            "elder": "Milo-g05",
+            "learner": "Milo-g06",
+            "teaches": "rain_cistern_milo",
+            "word": "karsen-sen.rilsa2"
+          },
+          {
+            "elder": "Milo-g06",
+            "learner": "Milo-g07",
+            "teaches": "heat_screen_milo",
+            "word": "karna-ta.rilve3"
+          },
+          {
+            "elder": "Milo-g07",
+            "learner": "Milo-g08",
+            "teaches": "stone_gauge_milo",
+            "word": "karna-vo.rila0"
+          },
+          {
+            "elder": "Milo-g08",
+            "learner": "Milo-g09",
+            "teaches": "fiber_loom_milo",
+            "word": "karsen-sen.rile1"
+          },
+          {
+            "elder": "Milo-g09",
+            "learner": "Milo-g10",
+            "teaches": "grain_cache_milo",
+            "word": "karna-ta.rili2"
+          },
+          {
+            "elder": "Milo-g10",
+            "learner": "Milo-g11",
+            "teaches": "wind_roof_milo",
+            "word": "karna-vo.rilo3"
+          },
+          {
+            "elder": "Milo-g11",
+            "learner": "Milo-g12",
+            "teaches": "rain_cistern_milo",
+            "word": "karsen-sen"
+          },
+          {
+            "elder": "Milo-g12",
+            "learner": "Milo-g13",
+            "teaches": "heat_screen_milo",
+            "word": "karna-ta.rilan1"
+          },
+          {
+            "elder": "Milo-g13",
+            "learner": "Milo-g14",
+            "teaches": "stone_gauge_milo",
+            "word": "karna-vo.rilel2"
+          },
+          {
+            "elder": "Milo-g14",
+            "learner": "Milo-g15",
+            "teaches": "fiber_loom_milo",
+            "word": "karsen-sen.rilor3"
+          },
+          {
+            "elder": "Milo-g15",
+            "learner": "Milo-g16",
+            "teaches": "grain_cache_milo",
+            "word": "karna-ta.rilim0"
+          },
+          {
+            "elder": "Milo-g16",
+            "learner": "Milo-g17",
+            "teaches": "wind_roof_milo",
+            "word": "karna-vo.rilul1"
+          }
+        ]
+      },
+      "dispute_norms": {
+        "Ari": [
+          {
+            "institution": "Ari_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Ari_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          }
+        ],
+        "Fay": [
+          {
+            "institution": "Fay_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Fay_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          }
+        ],
+        "Milo": [
+          {
+            "institution": "Milo_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_memory_council",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_tool_guild",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_care_circle",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_route_court",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_ritual_calendar",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          },
+          {
+            "institution": "Milo_settlement_assembly",
+            "norm": "repair_before_blame",
+            "source_protocol": 4
+          }
+        ]
+      },
+      "institutions": {
+        "Ari": [
+          {
+            "epoch": 0,
+            "name": "Ari_memory_council",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 192
+          },
+          {
+            "epoch": 1,
+            "name": "Ari_tool_guild",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 384
+          },
+          {
+            "epoch": 2,
+            "name": "Ari_care_circle",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 576
+          },
+          {
+            "epoch": 3,
+            "name": "Ari_route_court",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 768
+          },
+          {
+            "epoch": 4,
+            "name": "Ari_ritual_calendar",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 960
+          },
+          {
+            "epoch": 5,
+            "name": "Ari_settlement_assembly",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 1152
+          },
+          {
+            "epoch": 6,
+            "name": "Ari_memory_council",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 1344
+          },
+          {
+            "epoch": 7,
+            "name": "Ari_tool_guild",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 1536
+          },
+          {
+            "epoch": 8,
+            "name": "Ari_care_circle",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 1728
+          },
+          {
+            "epoch": 9,
+            "name": "Ari_route_court",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 1920
+          },
+          {
+            "epoch": 10,
+            "name": "Ari_ritual_calendar",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 2112
+          },
+          {
+            "epoch": 11,
+            "name": "Ari_settlement_assembly",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 2304
+          },
+          {
+            "epoch": 12,
+            "name": "Ari_memory_council",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 2496
+          },
+          {
+            "epoch": 13,
+            "name": "Ari_tool_guild",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 2688
+          },
+          {
+            "epoch": 14,
+            "name": "Ari_care_circle",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 2880
+          },
+          {
+            "epoch": 15,
+            "name": "Ari_route_court",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 3072
+          },
+          {
+            "epoch": 16,
+            "name": "Ari_ritual_calendar",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 3264
+          },
+          {
+            "epoch": 17,
+            "name": "Ari_settlement_assembly",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 3456
+          }
+        ],
+        "Fay": [
+          {
+            "epoch": 0,
+            "name": "Fay_memory_council",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 192
+          },
+          {
+            "epoch": 1,
+            "name": "Fay_tool_guild",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 384
+          },
+          {
+            "epoch": 2,
+            "name": "Fay_care_circle",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 576
+          },
+          {
+            "epoch": 3,
+            "name": "Fay_route_court",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 768
+          },
+          {
+            "epoch": 4,
+            "name": "Fay_ritual_calendar",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 960
+          },
+          {
+            "epoch": 5,
+            "name": "Fay_settlement_assembly",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 1152
+          },
+          {
+            "epoch": 6,
+            "name": "Fay_memory_council",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 1344
+          },
+          {
+            "epoch": 7,
+            "name": "Fay_tool_guild",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 1536
+          },
+          {
+            "epoch": 8,
+            "name": "Fay_care_circle",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 1728
+          },
+          {
+            "epoch": 9,
+            "name": "Fay_route_court",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 1920
+          },
+          {
+            "epoch": 10,
+            "name": "Fay_ritual_calendar",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 2112
+          },
+          {
+            "epoch": 11,
+            "name": "Fay_settlement_assembly",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 2304
+          },
+          {
+            "epoch": 12,
+            "name": "Fay_memory_council",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 2496
+          },
+          {
+            "epoch": 13,
+            "name": "Fay_tool_guild",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 2688
+          },
+          {
+            "epoch": 14,
+            "name": "Fay_care_circle",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 2880
+          },
+          {
+            "epoch": 15,
+            "name": "Fay_route_court",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 3072
+          },
+          {
+            "epoch": 16,
+            "name": "Fay_ritual_calendar",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 3264
+          },
+          {
+            "epoch": 17,
+            "name": "Fay_settlement_assembly",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 3456
+          }
+        ],
+        "Milo": [
+          {
+            "epoch": 0,
+            "name": "Milo_memory_council",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 192
+          },
+          {
+            "epoch": 1,
+            "name": "Milo_tool_guild",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 384
+          },
+          {
+            "epoch": 2,
+            "name": "Milo_care_circle",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 576
+          },
+          {
+            "epoch": 3,
+            "name": "Milo_route_court",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 768
+          },
+          {
+            "epoch": 4,
+            "name": "Milo_ritual_calendar",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 960
+          },
+          {
+            "epoch": 5,
+            "name": "Milo_settlement_assembly",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 1152
+          },
+          {
+            "epoch": 6,
+            "name": "Milo_memory_council",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 1344
+          },
+          {
+            "epoch": 7,
+            "name": "Milo_tool_guild",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 1536
+          },
+          {
+            "epoch": 8,
+            "name": "Milo_care_circle",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 1728
+          },
+          {
+            "epoch": 9,
+            "name": "Milo_route_court",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 1920
+          },
+          {
+            "epoch": 10,
+            "name": "Milo_ritual_calendar",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 2112
+          },
+          {
+            "epoch": 11,
+            "name": "Milo_settlement_assembly",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 2304
+          },
+          {
+            "epoch": 12,
+            "name": "Milo_memory_council",
+            "purpose": "coordinate borrow_owned_object during long_frost",
+            "year": 2496
+          },
+          {
+            "epoch": 13,
+            "name": "Milo_tool_guild",
+            "purpose": "coordinate enter_home_place during clear_repair",
+            "year": 2688
+          },
+          {
+            "epoch": 14,
+            "name": "Milo_care_circle",
+            "purpose": "coordinate ask_private_memory during wet_spring",
+            "year": 2880
+          },
+          {
+            "epoch": 15,
+            "name": "Milo_route_court",
+            "purpose": "coordinate borrow_owned_object during dry_heat",
+            "year": 3072
+          },
+          {
+            "epoch": 16,
+            "name": "Milo_ritual_calendar",
+            "purpose": "coordinate enter_home_place during cold_rain",
+            "year": 3264
+          },
+          {
+            "epoch": 17,
+            "name": "Milo_settlement_assembly",
+            "purpose": "coordinate ask_private_memory during wind_harvest",
+            "year": 3456
+          }
+        ]
+      },
+      "oral_histories": {
+        "Ari": [
+          {
+            "elder_line": "workline keeps karna-vo from elder speech",
+            "epoch": 0,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "workline keeps karsen-sen.karu1 from elder speech",
+            "epoch": 1,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "workline keeps karna-ta.karan2 from elder speech",
+            "epoch": 2,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "workline keeps karna-vo.karel3 from elder speech",
+            "epoch": 3,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "workline keeps karsen-sen.karor0 from elder speech",
+            "epoch": 4,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "workline keeps karna-ta.karim1 from elder speech",
+            "epoch": 5,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "workline keeps karna-vo.karul2 from elder speech",
+            "epoch": 6,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "workline keeps karsen-sen.karsa3 from elder speech",
+            "epoch": 7,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "workline keeps karna-ta.karve0 from elder speech",
+            "epoch": 8,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "workline keeps karna-vo.kara1 from elder speech",
+            "epoch": 9,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "workline keeps karsen-sen.kare2 from elder speech",
+            "epoch": 10,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "workline keeps karna-ta.kari3 from elder speech",
+            "epoch": 11,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "workline keeps karna-vo from elder speech",
+            "epoch": 12,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "workline keeps karsen-sen.karu1 from elder speech",
+            "epoch": 13,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "workline keeps karna-ta.karan2 from elder speech",
+            "epoch": 14,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "workline keeps karna-vo.karel3 from elder speech",
+            "epoch": 15,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "workline keeps karsen-sen.karor0 from elder speech",
+            "epoch": 16,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "workline keeps karna-ta.karim1 from elder speech",
+            "epoch": 17,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          }
+        ],
+        "Fay": [
+          {
+            "elder_line": "restline keeps karna-vo from elder speech",
+            "epoch": 0,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "restline keeps karsen-sen.lumu1 from elder speech",
+            "epoch": 1,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "restline keeps karna-ta.luman2 from elder speech",
+            "epoch": 2,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "restline keeps karna-vo.lumel3 from elder speech",
+            "epoch": 3,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "restline keeps karsen-sen.lumor0 from elder speech",
+            "epoch": 4,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "restline keeps karna-ta.lumim1 from elder speech",
+            "epoch": 5,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "restline keeps karna-vo.lumul2 from elder speech",
+            "epoch": 6,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "restline keeps karsen-sen.lumsa3 from elder speech",
+            "epoch": 7,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "restline keeps karna-ta.lumve0 from elder speech",
+            "epoch": 8,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "restline keeps karna-vo.luma1 from elder speech",
+            "epoch": 9,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "restline keeps karsen-sen.lume2 from elder speech",
+            "epoch": 10,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "restline keeps karna-ta.lumi3 from elder speech",
+            "epoch": 11,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "restline keeps karna-vo from elder speech",
+            "epoch": 12,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "restline keeps karsen-sen.lumu1 from elder speech",
+            "epoch": 13,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "restline keeps karna-ta.luman2 from elder speech",
+            "epoch": 14,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "restline keeps karna-vo.lumel3 from elder speech",
+            "epoch": 15,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "restline keeps karsen-sen.lumor0 from elder speech",
+            "epoch": 16,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "restline keeps karna-ta.lumim1 from elder speech",
+            "epoch": 17,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          }
+        ],
+        "Milo": [
+          {
+            "elder_line": "routeline keeps karsen-sen from elder speech",
+            "epoch": 0,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "routeline keeps karna-ta.rilan1 from elder speech",
+            "epoch": 1,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "routeline keeps karna-vo.rilel2 from elder speech",
+            "epoch": 2,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "routeline keeps karsen-sen.rilor3 from elder speech",
+            "epoch": 3,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "routeline keeps karna-ta.rilim0 from elder speech",
+            "epoch": 4,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "routeline keeps karna-vo.rilul1 from elder speech",
+            "epoch": 5,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "routeline keeps karsen-sen.rilsa2 from elder speech",
+            "epoch": 6,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "routeline keeps karna-ta.rilve3 from elder speech",
+            "epoch": 7,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "routeline keeps karna-vo.rila0 from elder speech",
+            "epoch": 8,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "routeline keeps karsen-sen.rile1 from elder speech",
+            "epoch": 9,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "routeline keeps karna-ta.rili2 from elder speech",
+            "epoch": 10,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "routeline keeps karna-vo.rilo3 from elder speech",
+            "epoch": 11,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "routeline keeps karsen-sen from elder speech",
+            "epoch": 12,
+            "ritual": "first_rain_naming",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "routeline keeps karna-ta.rilan1 from elder speech",
+            "epoch": 13,
+            "ritual": "tool_return_vow",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "routeline keeps karna-vo.rilel2 from elder speech",
+            "epoch": 14,
+            "ritual": "winter_hearth_count",
+            "settlement": "north_route_ring"
+          },
+          {
+            "elder_line": "routeline keeps karsen-sen.rilor3 from elder speech",
+            "epoch": 15,
+            "ritual": "route_opening_song",
+            "settlement": "west_bench_cluster"
+          },
+          {
+            "elder_line": "routeline keeps karna-ta.rilim0 from elder speech",
+            "epoch": 16,
+            "ritual": "repair_before_blame",
+            "settlement": "root_rest_hollow"
+          },
+          {
+            "elder_line": "routeline keeps karna-vo.rilul1 from elder speech",
+            "epoch": 17,
+            "ritual": "quiet_rest_lantern",
+            "settlement": "north_route_ring"
+          }
+        ]
+      },
+      "rituals": {
+        "Ari": [
+          {
+            "epoch": 0,
+            "name": "first_rain_naming",
+            "spoken_word": "karna-vo",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 1,
+            "name": "tool_return_vow",
+            "spoken_word": "karsen-sen.karu1",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 2,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-ta.karan2",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 3,
+            "name": "route_opening_song",
+            "spoken_word": "karna-vo.karel3",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 4,
+            "name": "repair_before_blame",
+            "spoken_word": "karsen-sen.karor0",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 5,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-ta.karim1",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 6,
+            "name": "first_rain_naming",
+            "spoken_word": "karna-vo.karul2",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 7,
+            "name": "tool_return_vow",
+            "spoken_word": "karsen-sen.karsa3",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 8,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-ta.karve0",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 9,
+            "name": "route_opening_song",
+            "spoken_word": "karna-vo.kara1",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 10,
+            "name": "repair_before_blame",
+            "spoken_word": "karsen-sen.kare2",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 11,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-ta.kari3",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 12,
+            "name": "first_rain_naming",
+            "spoken_word": "karna-vo",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 13,
+            "name": "tool_return_vow",
+            "spoken_word": "karsen-sen.karu1",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 14,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-ta.karan2",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 15,
+            "name": "route_opening_song",
+            "spoken_word": "karna-vo.karel3",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 16,
+            "name": "repair_before_blame",
+            "spoken_word": "karsen-sen.karor0",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 17,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-ta.karim1",
+            "weather": "cold_rain"
+          }
+        ],
+        "Fay": [
+          {
+            "epoch": 0,
+            "name": "first_rain_naming",
+            "spoken_word": "karna-vo",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 1,
+            "name": "tool_return_vow",
+            "spoken_word": "karsen-sen.lumu1",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 2,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-ta.luman2",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 3,
+            "name": "route_opening_song",
+            "spoken_word": "karna-vo.lumel3",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 4,
+            "name": "repair_before_blame",
+            "spoken_word": "karsen-sen.lumor0",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 5,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-ta.lumim1",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 6,
+            "name": "first_rain_naming",
+            "spoken_word": "karna-vo.lumul2",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 7,
+            "name": "tool_return_vow",
+            "spoken_word": "karsen-sen.lumsa3",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 8,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-ta.lumve0",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 9,
+            "name": "route_opening_song",
+            "spoken_word": "karna-vo.luma1",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 10,
+            "name": "repair_before_blame",
+            "spoken_word": "karsen-sen.lume2",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 11,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-ta.lumi3",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 12,
+            "name": "first_rain_naming",
+            "spoken_word": "karna-vo",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 13,
+            "name": "tool_return_vow",
+            "spoken_word": "karsen-sen.lumu1",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 14,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-ta.luman2",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 15,
+            "name": "route_opening_song",
+            "spoken_word": "karna-vo.lumel3",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 16,
+            "name": "repair_before_blame",
+            "spoken_word": "karsen-sen.lumor0",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 17,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-ta.lumim1",
+            "weather": "cold_rain"
+          }
+        ],
+        "Milo": [
+          {
+            "epoch": 0,
+            "name": "first_rain_naming",
+            "spoken_word": "karsen-sen",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 1,
+            "name": "tool_return_vow",
+            "spoken_word": "karna-ta.rilan1",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 2,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-vo.rilel2",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 3,
+            "name": "route_opening_song",
+            "spoken_word": "karsen-sen.rilor3",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 4,
+            "name": "repair_before_blame",
+            "spoken_word": "karna-ta.rilim0",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 5,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-vo.rilul1",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 6,
+            "name": "first_rain_naming",
+            "spoken_word": "karsen-sen.rilsa2",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 7,
+            "name": "tool_return_vow",
+            "spoken_word": "karna-ta.rilve3",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 8,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-vo.rila0",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 9,
+            "name": "route_opening_song",
+            "spoken_word": "karsen-sen.rile1",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 10,
+            "name": "repair_before_blame",
+            "spoken_word": "karna-ta.rili2",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 11,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-vo.rilo3",
+            "weather": "wind_harvest"
+          },
+          {
+            "epoch": 12,
+            "name": "first_rain_naming",
+            "spoken_word": "karsen-sen",
+            "weather": "long_frost"
+          },
+          {
+            "epoch": 13,
+            "name": "tool_return_vow",
+            "spoken_word": "karna-ta.rilan1",
+            "weather": "clear_repair"
+          },
+          {
+            "epoch": 14,
+            "name": "winter_hearth_count",
+            "spoken_word": "karna-vo.rilel2",
+            "weather": "wet_spring"
+          },
+          {
+            "epoch": 15,
+            "name": "route_opening_song",
+            "spoken_word": "karsen-sen.rilor3",
+            "weather": "dry_heat"
+          },
+          {
+            "epoch": 16,
+            "name": "repair_before_blame",
+            "spoken_word": "karna-ta.rilim0",
+            "weather": "cold_rain"
+          },
+          {
+            "epoch": 17,
+            "name": "quiet_rest_lantern",
+            "spoken_word": "karna-vo.rilul1",
+            "weather": "wind_harvest"
+          }
+        ]
+      },
+      "settlements": {
+        "Ari": [
+          {
+            "epoch": 0,
+            "institution_count": 1,
+            "memory": "Ari remembers wind_harvest and toolstone through karna-vo",
+            "name": "west_bench_cluster",
+            "tool_count": 1
+          },
+          {
+            "epoch": 1,
+            "institution_count": 2,
+            "memory": "Ari remembers long_frost and fiber through karsen-sen.karu1",
+            "name": "root_rest_hollow",
+            "tool_count": 2
+          },
+          {
+            "epoch": 2,
+            "institution_count": 3,
+            "memory": "Ari remembers clear_repair and food through karna-ta.karan2",
+            "name": "north_route_ring",
+            "tool_count": 3
+          },
+          {
+            "epoch": 3,
+            "institution_count": 4,
+            "memory": "Ari remembers wet_spring and shelter through karna-vo.karel3",
+            "name": "west_bench_cluster",
+            "tool_count": 4
+          },
+          {
+            "epoch": 4,
+            "institution_count": 5,
+            "memory": "Ari remembers dry_heat and water through karsen-sen.karor0",
+            "name": "root_rest_hollow",
+            "tool_count": 5
+          },
+          {
+            "epoch": 5,
+            "institution_count": 6,
+            "memory": "Ari remembers cold_rain and warmth through karna-ta.karim1",
+            "name": "north_route_ring",
+            "tool_count": 6
+          },
+          {
+            "epoch": 6,
+            "institution_count": 7,
+            "memory": "Ari remembers wind_harvest and toolstone through karna-vo.karul2",
+            "name": "west_bench_cluster",
+            "tool_count": 7
+          },
+          {
+            "epoch": 7,
+            "institution_count": 8,
+            "memory": "Ari remembers long_frost and fiber through karsen-sen.karsa3",
+            "name": "root_rest_hollow",
+            "tool_count": 8
+          },
+          {
+            "epoch": 8,
+            "institution_count": 9,
+            "memory": "Ari remembers clear_repair and food through karna-ta.karve0",
+            "name": "north_route_ring",
+            "tool_count": 9
+          },
+          {
+            "epoch": 9,
+            "institution_count": 10,
+            "memory": "Ari remembers wet_spring and shelter through karna-vo.kara1",
+            "name": "west_bench_cluster",
+            "tool_count": 10
+          },
+          {
+            "epoch": 10,
+            "institution_count": 11,
+            "memory": "Ari remembers dry_heat and water through karsen-sen.kare2",
+            "name": "root_rest_hollow",
+            "tool_count": 11
+          },
+          {
+            "epoch": 11,
+            "institution_count": 12,
+            "memory": "Ari remembers cold_rain and warmth through karna-ta.kari3",
+            "name": "north_route_ring",
+            "tool_count": 12
+          },
+          {
+            "epoch": 12,
+            "institution_count": 13,
+            "memory": "Ari remembers wind_harvest and toolstone through karna-vo",
+            "name": "west_bench_cluster",
+            "tool_count": 13
+          },
+          {
+            "epoch": 13,
+            "institution_count": 14,
+            "memory": "Ari remembers long_frost and fiber through karsen-sen.karu1",
+            "name": "root_rest_hollow",
+            "tool_count": 14
+          },
+          {
+            "epoch": 14,
+            "institution_count": 15,
+            "memory": "Ari remembers clear_repair and food through karna-ta.karan2",
+            "name": "north_route_ring",
+            "tool_count": 15
+          },
+          {
+            "epoch": 15,
+            "institution_count": 16,
+            "memory": "Ari remembers wet_spring and shelter through karna-vo.karel3",
+            "name": "west_bench_cluster",
+            "tool_count": 16
+          },
+          {
+            "epoch": 16,
+            "institution_count": 17,
+            "memory": "Ari remembers dry_heat and water through karsen-sen.karor0",
+            "name": "root_rest_hollow",
+            "tool_count": 17
+          },
+          {
+            "epoch": 17,
+            "institution_count": 18,
+            "memory": "Ari remembers cold_rain and warmth through karna-ta.karim1",
+            "name": "north_route_ring",
+            "tool_count": 18
+          }
+        ],
+        "Fay": [
+          {
+            "epoch": 0,
+            "institution_count": 1,
+            "memory": "Fay remembers wind_harvest and toolstone through karna-vo",
+            "name": "west_bench_cluster",
+            "tool_count": 1
+          },
+          {
+            "epoch": 1,
+            "institution_count": 2,
+            "memory": "Fay remembers long_frost and fiber through karsen-sen.lumu1",
+            "name": "root_rest_hollow",
+            "tool_count": 2
+          },
+          {
+            "epoch": 2,
+            "institution_count": 3,
+            "memory": "Fay remembers clear_repair and food through karna-ta.luman2",
+            "name": "north_route_ring",
+            "tool_count": 3
+          },
+          {
+            "epoch": 3,
+            "institution_count": 4,
+            "memory": "Fay remembers wet_spring and shelter through karna-vo.lumel3",
+            "name": "west_bench_cluster",
+            "tool_count": 4
+          },
+          {
+            "epoch": 4,
+            "institution_count": 5,
+            "memory": "Fay remembers dry_heat and water through karsen-sen.lumor0",
+            "name": "root_rest_hollow",
+            "tool_count": 5
+          },
+          {
+            "epoch": 5,
+            "institution_count": 6,
+            "memory": "Fay remembers cold_rain and warmth through karna-ta.lumim1",
+            "name": "north_route_ring",
+            "tool_count": 6
+          },
+          {
+            "epoch": 6,
+            "institution_count": 7,
+            "memory": "Fay remembers wind_harvest and toolstone through karna-vo.lumul2",
+            "name": "west_bench_cluster",
+            "tool_count": 7
+          },
+          {
+            "epoch": 7,
+            "institution_count": 8,
+            "memory": "Fay remembers long_frost and fiber through karsen-sen.lumsa3",
+            "name": "root_rest_hollow",
+            "tool_count": 8
+          },
+          {
+            "epoch": 8,
+            "institution_count": 9,
+            "memory": "Fay remembers clear_repair and food through karna-ta.lumve0",
+            "name": "north_route_ring",
+            "tool_count": 9
+          },
+          {
+            "epoch": 9,
+            "institution_count": 10,
+            "memory": "Fay remembers wet_spring and shelter through karna-vo.luma1",
+            "name": "west_bench_cluster",
+            "tool_count": 10
+          },
+          {
+            "epoch": 10,
+            "institution_count": 11,
+            "memory": "Fay remembers dry_heat and water through karsen-sen.lume2",
+            "name": "root_rest_hollow",
+            "tool_count": 11
+          },
+          {
+            "epoch": 11,
+            "institution_count": 12,
+            "memory": "Fay remembers cold_rain and warmth through karna-ta.lumi3",
+            "name": "north_route_ring",
+            "tool_count": 12
+          },
+          {
+            "epoch": 12,
+            "institution_count": 13,
+            "memory": "Fay remembers wind_harvest and toolstone through karna-vo",
+            "name": "west_bench_cluster",
+            "tool_count": 13
+          },
+          {
+            "epoch": 13,
+            "institution_count": 14,
+            "memory": "Fay remembers long_frost and fiber through karsen-sen.lumu1",
+            "name": "root_rest_hollow",
+            "tool_count": 14
+          },
+          {
+            "epoch": 14,
+            "institution_count": 15,
+            "memory": "Fay remembers clear_repair and food through karna-ta.luman2",
+            "name": "north_route_ring",
+            "tool_count": 15
+          },
+          {
+            "epoch": 15,
+            "institution_count": 16,
+            "memory": "Fay remembers wet_spring and shelter through karna-vo.lumel3",
+            "name": "west_bench_cluster",
+            "tool_count": 16
+          },
+          {
+            "epoch": 16,
+            "institution_count": 17,
+            "memory": "Fay remembers dry_heat and water through karsen-sen.lumor0",
+            "name": "root_rest_hollow",
+            "tool_count": 17
+          },
+          {
+            "epoch": 17,
+            "institution_count": 18,
+            "memory": "Fay remembers cold_rain and warmth through karna-ta.lumim1",
+            "name": "north_route_ring",
+            "tool_count": 18
+          }
+        ],
+        "Milo": [
+          {
+            "epoch": 0,
+            "institution_count": 1,
+            "memory": "Milo remembers long_frost and fiber through karsen-sen",
+            "name": "west_bench_cluster",
+            "tool_count": 1
+          },
+          {
+            "epoch": 1,
+            "institution_count": 2,
+            "memory": "Milo remembers clear_repair and food through karna-ta.rilan1",
+            "name": "root_rest_hollow",
+            "tool_count": 2
+          },
+          {
+            "epoch": 2,
+            "institution_count": 3,
+            "memory": "Milo remembers wet_spring and shelter through karna-vo.rilel2",
+            "name": "north_route_ring",
+            "tool_count": 3
+          },
+          {
+            "epoch": 3,
+            "institution_count": 4,
+            "memory": "Milo remembers dry_heat and water through karsen-sen.rilor3",
+            "name": "west_bench_cluster",
+            "tool_count": 4
+          },
+          {
+            "epoch": 4,
+            "institution_count": 5,
+            "memory": "Milo remembers cold_rain and warmth through karna-ta.rilim0",
+            "name": "root_rest_hollow",
+            "tool_count": 5
+          },
+          {
+            "epoch": 5,
+            "institution_count": 6,
+            "memory": "Milo remembers wind_harvest and toolstone through karna-vo.rilul1",
+            "name": "north_route_ring",
+            "tool_count": 6
+          },
+          {
+            "epoch": 6,
+            "institution_count": 7,
+            "memory": "Milo remembers long_frost and fiber through karsen-sen.rilsa2",
+            "name": "west_bench_cluster",
+            "tool_count": 7
+          },
+          {
+            "epoch": 7,
+            "institution_count": 8,
+            "memory": "Milo remembers clear_repair and food through karna-ta.rilve3",
+            "name": "root_rest_hollow",
+            "tool_count": 8
+          },
+          {
+            "epoch": 8,
+            "institution_count": 9,
+            "memory": "Milo remembers wet_spring and shelter through karna-vo.rila0",
+            "name": "north_route_ring",
+            "tool_count": 9
+          },
+          {
+            "epoch": 9,
+            "institution_count": 10,
+            "memory": "Milo remembers dry_heat and water through karsen-sen.rile1",
+            "name": "west_bench_cluster",
+            "tool_count": 10
+          },
+          {
+            "epoch": 10,
+            "institution_count": 11,
+            "memory": "Milo remembers cold_rain and warmth through karna-ta.rili2",
+            "name": "root_rest_hollow",
+            "tool_count": 11
+          },
+          {
+            "epoch": 11,
+            "institution_count": 12,
+            "memory": "Milo remembers wind_harvest and toolstone through karna-vo.rilo3",
+            "name": "north_route_ring",
+            "tool_count": 12
+          },
+          {
+            "epoch": 12,
+            "institution_count": 13,
+            "memory": "Milo remembers long_frost and fiber through karsen-sen",
+            "name": "west_bench_cluster",
+            "tool_count": 13
+          },
+          {
+            "epoch": 13,
+            "institution_count": 14,
+            "memory": "Milo remembers clear_repair and food through karna-ta.rilan1",
+            "name": "root_rest_hollow",
+            "tool_count": 14
+          },
+          {
+            "epoch": 14,
+            "institution_count": 15,
+            "memory": "Milo remembers wet_spring and shelter through karna-vo.rilel2",
+            "name": "north_route_ring",
+            "tool_count": 15
+          },
+          {
+            "epoch": 15,
+            "institution_count": 16,
+            "memory": "Milo remembers dry_heat and water through karsen-sen.rilor3",
+            "name": "west_bench_cluster",
+            "tool_count": 16
+          },
+          {
+            "epoch": 16,
+            "institution_count": 17,
+            "memory": "Milo remembers cold_rain and warmth through karna-ta.rilim0",
+            "name": "root_rest_hollow",
+            "tool_count": 17
+          },
+          {
+            "epoch": 17,
+            "institution_count": 18,
+            "memory": "Milo remembers wind_harvest and toolstone through karna-vo.rilul1",
+            "name": "north_route_ring",
+            "tool_count": 18
+          }
+        ]
+      },
+      "tools": {
+        "Ari": [
+          {
+            "epoch": 0,
+            "name": "rain_cistern_ari",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 1,
+            "name": "heat_screen_ari",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 2,
+            "name": "stone_gauge_ari",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 3,
+            "name": "fiber_loom_ari",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 4,
+            "name": "grain_cache_ari",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 5,
+            "name": "wind_roof_ari",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 6,
+            "name": "rain_cistern_ari",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 7,
+            "name": "heat_screen_ari",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 8,
+            "name": "stone_gauge_ari",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 9,
+            "name": "fiber_loom_ari",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 10,
+            "name": "grain_cache_ari",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 11,
+            "name": "wind_roof_ari",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 12,
+            "name": "rain_cistern_ari",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 13,
+            "name": "heat_screen_ari",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 14,
+            "name": "stone_gauge_ari",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 15,
+            "name": "fiber_loom_ari",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 16,
+            "name": "grain_cache_ari",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 17,
+            "name": "wind_roof_ari",
+            "requires_institution": true,
+            "solves": "warmth"
+          }
+        ],
+        "Fay": [
+          {
+            "epoch": 0,
+            "name": "rain_cistern_fay",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 1,
+            "name": "heat_screen_fay",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 2,
+            "name": "stone_gauge_fay",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 3,
+            "name": "fiber_loom_fay",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 4,
+            "name": "grain_cache_fay",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 5,
+            "name": "wind_roof_fay",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 6,
+            "name": "rain_cistern_fay",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 7,
+            "name": "heat_screen_fay",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 8,
+            "name": "stone_gauge_fay",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 9,
+            "name": "fiber_loom_fay",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 10,
+            "name": "grain_cache_fay",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 11,
+            "name": "wind_roof_fay",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 12,
+            "name": "rain_cistern_fay",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 13,
+            "name": "heat_screen_fay",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 14,
+            "name": "stone_gauge_fay",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 15,
+            "name": "fiber_loom_fay",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 16,
+            "name": "grain_cache_fay",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 17,
+            "name": "wind_roof_fay",
+            "requires_institution": true,
+            "solves": "warmth"
+          }
+        ],
+        "Milo": [
+          {
+            "epoch": 0,
+            "name": "rain_cistern_milo",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 1,
+            "name": "heat_screen_milo",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 2,
+            "name": "stone_gauge_milo",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 3,
+            "name": "fiber_loom_milo",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 4,
+            "name": "grain_cache_milo",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 5,
+            "name": "wind_roof_milo",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 6,
+            "name": "rain_cistern_milo",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 7,
+            "name": "heat_screen_milo",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 8,
+            "name": "stone_gauge_milo",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 9,
+            "name": "fiber_loom_milo",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 10,
+            "name": "grain_cache_milo",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 11,
+            "name": "wind_roof_milo",
+            "requires_institution": true,
+            "solves": "toolstone"
+          },
+          {
+            "epoch": 12,
+            "name": "rain_cistern_milo",
+            "requires_institution": true,
+            "solves": "fiber"
+          },
+          {
+            "epoch": 13,
+            "name": "heat_screen_milo",
+            "requires_institution": true,
+            "solves": "food"
+          },
+          {
+            "epoch": 14,
+            "name": "stone_gauge_milo",
+            "requires_institution": true,
+            "solves": "shelter"
+          },
+          {
+            "epoch": 15,
+            "name": "fiber_loom_milo",
+            "requires_institution": true,
+            "solves": "water"
+          },
+          {
+            "epoch": 16,
+            "name": "grain_cache_milo",
+            "requires_institution": true,
+            "solves": "warmth"
+          },
+          {
+            "epoch": 17,
+            "name": "wind_roof_milo",
+            "requires_institution": true,
+            "solves": "toolstone"
+          }
+        ]
+      }
+    },
+    "world_seed_kernel": {
+      "avatar_spawn_lock": true,
+      "browser_replay": true,
+      "ecological_cycles": true,
+      "embodied_agents": true,
+      "frequency_flower_binding": true,
+      "name": "integrated_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock",
+      "playable_affordances": true,
+      "privacy_filter": true,
+      "route_graph": true,
+      "sensory_channels": true,
+      "settlement_memory_binding": true,
+      "spatial_settlements": true,
+      "tool_objects": true,
+      "weather_body_coupling": true
+    }
+  },
+  "source_condition": "integrated_pre_avatar_deep_time_civilization",
+  "trace_events": 27
+};

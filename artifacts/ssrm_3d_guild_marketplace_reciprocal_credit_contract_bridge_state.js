@@ -1,0 +1,2212 @@
+window.SSRM_3D_GUILD_MARKETPLACE_RECIPROCAL_CREDIT_CONTRACT_STATE = {
+  "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+  "config": {
+    "cycles": 8,
+    "seed": 20260808,
+    "source_state": "artifacts/ssrm_3d_guild_memory_craft_standards_tool_inheritance_bridge_state.json"
+  },
+  "market_state": {
+    "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+    "contracts": [
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 0,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.601834,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 0,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.609451,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 0,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.605732,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 1,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.607594,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 1,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.615211,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 1,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.611492,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": true,
+        "buyer": "Milo",
+        "cycle": 2,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.613354,
+        "repaired": true,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": true,
+        "buyer": "Ari",
+        "cycle": 2,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.620971,
+        "repaired": true,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": true,
+        "buyer": "Fay",
+        "cycle": 2,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.617252,
+        "repaired": true,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 3,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.619114,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 3,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.626731,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 3,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.623012,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 4,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.624874,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 4,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.632491,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 4,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.628772,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 5,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.630634,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 5,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.638251,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 5,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.634532,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": true,
+        "buyer": "Milo",
+        "cycle": 6,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.636394,
+        "repaired": true,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": true,
+        "buyer": "Ari",
+        "cycle": 6,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.644011,
+        "repaired": true,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": true,
+        "buyer": "Fay",
+        "cycle": 6,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.640292,
+        "repaired": true,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      },
+      {
+        "breach": false,
+        "buyer": "Milo",
+        "cycle": 7,
+        "formed": true,
+        "fulfilled": true,
+        "need": "water_route_markers",
+        "price": 1.642154,
+        "repaired": false,
+        "seller": "Ari",
+        "service": "sealed shelter repair",
+        "tool": "resonant_mallet"
+      },
+      {
+        "breach": false,
+        "buyer": "Ari",
+        "cycle": 7,
+        "formed": true,
+        "fulfilled": true,
+        "need": "winter_shelter_repair",
+        "price": 1.649771,
+        "repaired": false,
+        "seller": "Fay",
+        "service": "clean care bundle",
+        "tool": "root_satchel"
+      },
+      {
+        "breach": false,
+        "buyer": "Fay",
+        "cycle": 7,
+        "formed": true,
+        "fulfilled": true,
+        "need": "medicine_corner",
+        "price": 1.646052,
+        "repaired": false,
+        "seller": "Milo",
+        "service": "safe waymark route",
+        "tool": "path_chisel"
+      }
+    ],
+    "credit": {
+      "Ari": -0.029249280000000044,
+      "Fay": 0.01428096000000001,
+      "Milo": 0.014968320000000035
+    },
+    "events": [
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 0,
+        "event_id": 0,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.242,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Milo",
+            "cycle": 0,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.601834,
+            "repaired": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.76888,
+            "Fay": 0.0,
+            "Milo": -0.76888
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 13,
+            "seller_market_memories": 1
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.778,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 0,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.601834,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "5c90dcd3a07ff8d0"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 0,
+        "event_id": 1,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.219,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Ari",
+            "cycle": 0,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.609451,
+            "repaired": false,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.003656,
+            "Fay": 0.772536,
+            "Milo": -0.76888
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 13,
+            "seller_market_memories": 1
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.8005,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 0,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.609451,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "62a2d54da37b0a47"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 0,
+        "event_id": 2,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.258,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Fay",
+            "cycle": 0,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.605732,
+            "repaired": false,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.003656,
+            "Fay": 0.001785,
+            "Milo": 0.001871
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 13,
+            "seller_market_memories": 1
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.78925,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 0,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.605732,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "b3dbeb53acf38ba7"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 1,
+        "event_id": 3,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2434,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Milo",
+            "cycle": 1,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.607594,
+            "repaired": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.767989,
+            "Fay": 0.001785,
+            "Milo": -0.769774
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 14,
+            "seller_market_memories": 2
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.796,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 1,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.607594,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "cb089b3414474f89"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 1,
+        "event_id": 4,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2204,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Ari",
+            "cycle": 1,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.615211,
+            "repaired": false,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.007312,
+            "Fay": 0.777086,
+            "Milo": -0.769774
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 14,
+            "seller_market_memories": 2
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.8185,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 1,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.615211,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "0b3d2a074c261c11"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 1,
+        "event_id": 5,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2594,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Fay",
+            "cycle": 1,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.611492,
+            "repaired": false,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.007312,
+            "Fay": 0.00357,
+            "Milo": 0.003742
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 14,
+            "seller_market_memories": 2
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.80725,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 1,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.611492,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "29ba3fbf4866e43d"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 2,
+        "event_id": 6,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2448,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": true,
+            "buyer": "Milo",
+            "cycle": 2,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.613354,
+            "repaired": true,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.767098,
+            "Fay": 0.00357,
+            "Milo": -0.770668
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 15,
+            "seller_market_memories": 3
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.814,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 2,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.613354,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "7ce71222b344eee3"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 2,
+        "event_id": 7,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2218,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": true,
+            "buyer": "Ari",
+            "cycle": 2,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.620971,
+            "repaired": true,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.010968,
+            "Fay": 0.781636,
+            "Milo": -0.770668
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 15,
+            "seller_market_memories": 3
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.8365,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 2,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.620971,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "a805523683c84117"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 2,
+        "event_id": 8,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2608,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": true,
+            "buyer": "Fay",
+            "cycle": 2,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.617252,
+            "repaired": true,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.010968,
+            "Fay": 0.005355,
+            "Milo": 0.005613
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 15,
+            "seller_market_memories": 3
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.82525,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 2,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.617252,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "eca61b022efcad9f"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 3,
+        "event_id": 9,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2462,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Milo",
+            "cycle": 3,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.619114,
+            "repaired": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.766206,
+            "Fay": 0.005355,
+            "Milo": -0.771562
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 16,
+            "seller_market_memories": 4
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.832,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 3,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.619114,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "eaf4f4b4dc6f6772"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 3,
+        "event_id": 10,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2232,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Ari",
+            "cycle": 3,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.626731,
+            "repaired": false,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.014625,
+            "Fay": 0.786186,
+            "Milo": -0.771562
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 16,
+            "seller_market_memories": 4
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.8545,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 3,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.626731,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "dfc1d3e5a0e990a7"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 3,
+        "event_id": 11,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2622,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Fay",
+            "cycle": 3,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.623012,
+            "repaired": false,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.014625,
+            "Fay": 0.00714,
+            "Milo": 0.007484
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 16,
+            "seller_market_memories": 4
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.84325,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 3,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.623012,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "a678bd684aea413c"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 4,
+        "event_id": 12,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2476,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Milo",
+            "cycle": 4,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.624874,
+            "repaired": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.765315,
+            "Fay": 0.00714,
+            "Milo": -0.772455
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 17,
+            "seller_market_memories": 5
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.85,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 4,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.624874,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "0edb165362abc704"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 4,
+        "event_id": 13,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2246,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Ari",
+            "cycle": 4,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.632491,
+            "repaired": false,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.018281,
+            "Fay": 0.790736,
+            "Milo": -0.772455
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 17,
+            "seller_market_memories": 5
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.8725,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 4,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.632491,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "25696ce0e546dcbd"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 4,
+        "event_id": 14,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2636,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Fay",
+            "cycle": 4,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.628772,
+            "repaired": false,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.018281,
+            "Fay": 0.008926,
+            "Milo": 0.009355
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 17,
+            "seller_market_memories": 5
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.86125,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 4,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.628772,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "4f91019358835fc8"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 5,
+        "event_id": 15,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.249,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Milo",
+            "cycle": 5,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.630634,
+            "repaired": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.764424,
+            "Fay": 0.008926,
+            "Milo": -0.773349
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 18,
+            "seller_market_memories": 6
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.868,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 5,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.630634,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "05fc4e276eaba480"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 5,
+        "event_id": 16,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.226,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Ari",
+            "cycle": 5,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.638251,
+            "repaired": false,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.021937,
+            "Fay": 0.795286,
+            "Milo": -0.773349
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 18,
+            "seller_market_memories": 6
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.8905,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 5,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.638251,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "831461dda90b5910"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 5,
+        "event_id": 17,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.265,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Fay",
+            "cycle": 5,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.634532,
+            "repaired": false,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.021937,
+            "Fay": 0.010711,
+            "Milo": 0.011226
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 18,
+            "seller_market_memories": 6
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.87925,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 5,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.634532,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "d8d6cc3569d36fa0"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 6,
+        "event_id": 18,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2504,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": true,
+            "buyer": "Milo",
+            "cycle": 6,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.636394,
+            "repaired": true,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.763532,
+            "Fay": 0.010711,
+            "Milo": -0.774243
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 19,
+            "seller_market_memories": 7
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.886,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 6,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.636394,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "8490f37a4e0af444"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 6,
+        "event_id": 19,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2274,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": true,
+            "buyer": "Ari",
+            "cycle": 6,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.644011,
+            "repaired": true,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.025593,
+            "Fay": 0.799836,
+            "Milo": -0.774243
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 19,
+            "seller_market_memories": 7
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.9085,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 6,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.644011,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "7eed4fc1f6528817"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 6,
+        "event_id": 20,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2664,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": true,
+            "buyer": "Fay",
+            "cycle": 6,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.640292,
+            "repaired": true,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.025593,
+            "Fay": 0.012496,
+            "Milo": 0.013097
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 19,
+            "seller_market_memories": 7
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.89725,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 6,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.640292,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "2d983f55b57df104"
+      },
+      {
+        "agent_id": "Ari",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 7,
+        "event_id": 21,
+        "flower_node": "work_petal",
+        "frequency_hz": 0.2518,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Milo",
+            "cycle": 7,
+            "formed": true,
+            "fulfilled": true,
+            "need": "water_route_markers",
+            "price": 1.642154,
+            "repaired": false,
+            "seller": "Ari",
+            "service": "sealed shelter repair",
+            "tool": "resonant_mallet"
+          },
+          "credit": {
+            "Ari": 0.762641,
+            "Fay": 0.012496,
+            "Milo": -0.775137
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Shelterwrights",
+            "service": "sealed shelter repair"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 20,
+            "seller_market_memories": 8
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.904,
+            "standard": "sealed_joint"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Ari",
+          "buyer": "Milo",
+          "cycle": 7,
+          "flower_node": "work_petal",
+          "frequency_hz": 0.242,
+          "fulfilled": true,
+          "price": 1.642154,
+          "service": "sealed shelter repair"
+        },
+        "trace_hash": "d00c7a8fcdf26174"
+      },
+      {
+        "agent_id": "Fay",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 7,
+        "event_id": 22,
+        "flower_node": "root_rest",
+        "frequency_hz": 0.2288,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Ari",
+            "cycle": 7,
+            "formed": true,
+            "fulfilled": true,
+            "need": "winter_shelter_repair",
+            "price": 1.649771,
+            "repaired": false,
+            "seller": "Fay",
+            "service": "clean care bundle",
+            "tool": "root_satchel"
+          },
+          "credit": {
+            "Ari": -0.029249,
+            "Fay": 0.804386,
+            "Milo": -0.775137
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Rootkeepers",
+            "service": "clean care bundle"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 20,
+            "seller_market_memories": 8
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.9265,
+            "standard": "clean_care_bundle"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Fay",
+          "buyer": "Ari",
+          "cycle": 7,
+          "flower_node": "root_rest",
+          "frequency_hz": 0.219,
+          "fulfilled": true,
+          "price": 1.649771,
+          "service": "clean care bundle"
+        },
+        "trace_hash": "ae39874e0367afa4"
+      },
+      {
+        "agent_id": "Milo",
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_contract": false,
+          "real_market": false,
+          "subjective_consciousness": false,
+          "subjective_obligation": false
+        },
+        "condition": "integrated_guild_marketplace_reciprocal_credit_contract",
+        "cycle": 7,
+        "event_id": 23,
+        "flower_node": "social_petal",
+        "frequency_hz": 0.2678,
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "public_packets": {
+          "contract": {
+            "breach": false,
+            "buyer": "Fay",
+            "cycle": 7,
+            "formed": true,
+            "fulfilled": true,
+            "need": "medicine_corner",
+            "price": 1.646052,
+            "repaired": false,
+            "seller": "Milo",
+            "service": "safe waymark route",
+            "tool": "path_chisel"
+          },
+          "credit": {
+            "Ari": -0.029249,
+            "Fay": 0.014281,
+            "Milo": 0.014968
+          },
+          "listing": {
+            "listed": true,
+            "seller_guild": "Pathmarkers",
+            "service": "safe waymark route"
+          },
+          "memory": {
+            "certificates": 6,
+            "guild_memory_count": 20,
+            "seller_market_memories": 8
+          },
+          "offer": {
+            "certified": true,
+            "reputation": 0.91525,
+            "standard": "safe_waymark"
+          }
+        },
+        "replay_frame": {
+          "agent_id": "Milo",
+          "buyer": "Fay",
+          "cycle": 7,
+          "flower_node": "social_petal",
+          "frequency_hz": 0.258,
+          "fulfilled": true,
+          "price": 1.646052,
+          "service": "safe waymark route"
+        },
+        "trace_hash": "39b092ecb18580f8"
+      }
+    ],
+    "guilds": {
+      "Ari": {
+        "certificates": [
+          "Shelterwrights:Ari:sealed_joint:cycle0",
+          "Shelterwrights:Ari:sealed_joint:cycle1",
+          "Shelterwrights:Ari:sealed_joint:cycle2",
+          "Shelterwrights:Ari:sealed_joint:cycle3",
+          "Shelterwrights:Ari:sealed_joint:cycle4",
+          "Shelterwrights:Ari:sealed_joint:cycle5"
+        ],
+        "certified": true,
+        "craft_marks": [
+          "week 0: Ari practiced repair",
+          "week 1: Ari practiced construction",
+          "sealed_joint@resonant_mallet:cycle0",
+          "sealed_joint@resonant_mallet:cycle1",
+          "sealed_joint@resonant_mallet:cycle2",
+          "sealed_joint@resonant_mallet:cycle3",
+          "sealed_joint@resonant_mallet:cycle4",
+          "sealed_joint@resonant_mallet:cycle5"
+        ],
+        "guild": "Shelterwrights",
+        "guild_memory": [
+          "cycle 0: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 0",
+          "cycle 1: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 1",
+          "cycle 2: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 2",
+          "cycle 3: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 3",
+          "cycle 4: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 4",
+          "cycle 5: Ari submitted sealed_joint",
+          "generation memory: Ari entrusted sealed_joint in cycle 5",
+          "market memory: sealed shelter repair priced by guild trust in cycle 0",
+          "market memory: sealed shelter repair priced by guild trust in cycle 1",
+          "market memory: sealed shelter repair priced by guild trust in cycle 2",
+          "market memory: sealed shelter repair priced by guild trust in cycle 3",
+          "market memory: sealed shelter repair priced by guild trust in cycle 4",
+          "market memory: sealed shelter repair priced by guild trust in cycle 5",
+          "market memory: sealed shelter repair priced by guild trust in cycle 6",
+          "market memory: sealed shelter repair priced by guild trust in cycle 7"
+        ],
+        "inherited_tools": [
+          "resonant_mallet->Fay:cycle2",
+          "resonant_mallet->Fay:cycle5"
+        ],
+        "market_memories": [
+          "cycle 0: Ari promised sealed shelter repair to Milo",
+          "cycle 1: Ari promised sealed shelter repair to Milo",
+          "cycle 2: Ari promised sealed shelter repair to Milo",
+          "cycle 3: Ari promised sealed shelter repair to Milo",
+          "cycle 4: Ari promised sealed shelter repair to Milo",
+          "cycle 5: Ari promised sealed shelter repair to Milo",
+          "cycle 6: Ari promised sealed shelter repair to Milo",
+          "cycle 7: Ari promised sealed shelter repair to Milo"
+        ],
+        "remediation": [
+          "cycle 1: remedial practice in repair"
+        ],
+        "reputation": 0.9040000000000002,
+        "source_career_memories": 8,
+        "source_lineage_marks": 8,
+        "standard": "sealed_joint",
+        "violations": [
+          "cycle 1: revise sealed_joint"
+        ]
+      },
+      "Fay": {
+        "certificates": [
+          "Rootkeepers:Fay:clean_care_bundle:cycle0",
+          "Rootkeepers:Fay:clean_care_bundle:cycle1",
+          "Rootkeepers:Fay:clean_care_bundle:cycle2",
+          "Rootkeepers:Fay:clean_care_bundle:cycle3",
+          "Rootkeepers:Fay:clean_care_bundle:cycle4",
+          "Rootkeepers:Fay:clean_care_bundle:cycle5"
+        ],
+        "certified": true,
+        "craft_marks": [
+          "week 0: Fay practiced care",
+          "week 1: Fay practiced medicine",
+          "clean_care_bundle@root_satchel:cycle0",
+          "clean_care_bundle@root_satchel:cycle1",
+          "clean_care_bundle@root_satchel:cycle2",
+          "clean_care_bundle@root_satchel:cycle3",
+          "clean_care_bundle@root_satchel:cycle4",
+          "clean_care_bundle@root_satchel:cycle5"
+        ],
+        "guild": "Rootkeepers",
+        "guild_memory": [
+          "cycle 0: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 0",
+          "cycle 1: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 1",
+          "cycle 2: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 2",
+          "cycle 3: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 3",
+          "cycle 4: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 4",
+          "cycle 5: Fay submitted clean_care_bundle",
+          "generation memory: Fay entrusted clean_care_bundle in cycle 5",
+          "market memory: clean care bundle priced by guild trust in cycle 0",
+          "market memory: clean care bundle priced by guild trust in cycle 1",
+          "market memory: clean care bundle priced by guild trust in cycle 2",
+          "market memory: clean care bundle priced by guild trust in cycle 3",
+          "market memory: clean care bundle priced by guild trust in cycle 4",
+          "market memory: clean care bundle priced by guild trust in cycle 5",
+          "market memory: clean care bundle priced by guild trust in cycle 6",
+          "market memory: clean care bundle priced by guild trust in cycle 7"
+        ],
+        "inherited_tools": [
+          "root_satchel->Milo:cycle2",
+          "root_satchel->Milo:cycle5"
+        ],
+        "market_memories": [
+          "cycle 0: Fay promised clean care bundle to Ari",
+          "cycle 1: Fay promised clean care bundle to Ari",
+          "cycle 2: Fay promised clean care bundle to Ari",
+          "cycle 3: Fay promised clean care bundle to Ari",
+          "cycle 4: Fay promised clean care bundle to Ari",
+          "cycle 5: Fay promised clean care bundle to Ari",
+          "cycle 6: Fay promised clean care bundle to Ari",
+          "cycle 7: Fay promised clean care bundle to Ari"
+        ],
+        "remediation": [],
+        "reputation": 0.9265000000000003,
+        "source_career_memories": 8,
+        "source_lineage_marks": 8,
+        "standard": "clean_care_bundle",
+        "violations": []
+      },
+      "Milo": {
+        "certificates": [
+          "Pathmarkers:Milo:safe_waymark:cycle0",
+          "Pathmarkers:Milo:safe_waymark:cycle1",
+          "Pathmarkers:Milo:safe_waymark:cycle2",
+          "Pathmarkers:Milo:safe_waymark:cycle3",
+          "Pathmarkers:Milo:safe_waymark:cycle4",
+          "Pathmarkers:Milo:safe_waymark:cycle5"
+        ],
+        "certified": true,
+        "craft_marks": [
+          "week 0: Milo practiced routing",
+          "week 1: Milo practiced teaching",
+          "safe_waymark@path_chisel:cycle0",
+          "safe_waymark@path_chisel:cycle1",
+          "safe_waymark@path_chisel:cycle2",
+          "safe_waymark@path_chisel:cycle3",
+          "safe_waymark@path_chisel:cycle4",
+          "safe_waymark@path_chisel:cycle5"
+        ],
+        "guild": "Pathmarkers",
+        "guild_memory": [
+          "cycle 0: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 0",
+          "cycle 1: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 1",
+          "cycle 2: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 2",
+          "cycle 3: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 3",
+          "cycle 4: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 4",
+          "cycle 5: Milo submitted safe_waymark",
+          "generation memory: Milo entrusted safe_waymark in cycle 5",
+          "market memory: safe waymark route priced by guild trust in cycle 0",
+          "market memory: safe waymark route priced by guild trust in cycle 1",
+          "market memory: safe waymark route priced by guild trust in cycle 2",
+          "market memory: safe waymark route priced by guild trust in cycle 3",
+          "market memory: safe waymark route priced by guild trust in cycle 4",
+          "market memory: safe waymark route priced by guild trust in cycle 5",
+          "market memory: safe waymark route priced by guild trust in cycle 6",
+          "market memory: safe waymark route priced by guild trust in cycle 7"
+        ],
+        "inherited_tools": [
+          "path_chisel->Ari:cycle2",
+          "path_chisel->Ari:cycle5"
+        ],
+        "market_memories": [
+          "cycle 0: Milo promised safe waymark route to Fay",
+          "cycle 1: Milo promised safe waymark route to Fay",
+          "cycle 2: Milo promised safe waymark route to Fay",
+          "cycle 3: Milo promised safe waymark route to Fay",
+          "cycle 4: Milo promised safe waymark route to Fay",
+          "cycle 5: Milo promised safe waymark route to Fay",
+          "cycle 6: Milo promised safe waymark route to Fay",
+          "cycle 7: Milo promised safe waymark route to Fay"
+        ],
+        "remediation": [],
+        "reputation": 0.9152500000000003,
+        "source_career_memories": 8,
+        "source_lineage_marks": 8,
+        "standard": "safe_waymark",
+        "violations": []
+      }
+    },
+    "market_kernel": {
+      "breach_detection": true,
+      "browser_replay": true,
+      "certified_service_offer": true,
+      "contract_formation": true,
+      "contract_fulfillment": true,
+      "cross_guild_exchange": true,
+      "debt_settlement": true,
+      "dispute_repair": true,
+      "fair_price": true,
+      "frequency_flower_binding": true,
+      "guild_memory_dependency": true,
+      "marketplace_listing": true,
+      "name": "integrated_guild_marketplace_reciprocal_credit_contract",
+      "obligation_memory": true,
+      "privacy_filter": true,
+      "reciprocal_credit": true,
+      "reputation_binding": true
+    },
+    "source_condition": "integrated_guild_memory_craft_standards_tool_inheritance",
+    "tools": {
+      "path_chisel": {
+        "lineage_marks": [
+          "week 0: Milo practiced routing",
+          "week 1: Milo practiced teaching",
+          "week 2: Milo practiced routing",
+          "week 3: Milo practiced routing",
+          "week 4: Milo practiced teaching",
+          "week 5: Milo practiced routing",
+          "week 6: Milo practiced routing",
+          "week 7: Milo practiced teaching",
+          "safe_waymark@path_chisel:cycle0",
+          "safe_waymark@path_chisel:cycle1",
+          "safe_waymark@path_chisel:cycle2",
+          "inheritance:Milo->Ari:cycle2",
+          "safe_waymark@path_chisel:cycle3",
+          "safe_waymark@path_chisel:cycle4",
+          "safe_waymark@path_chisel:cycle5",
+          "inheritance:Milo->Ari:cycle5"
+        ],
+        "owner": "Milo",
+        "quality": 0.6526039
+      },
+      "resonant_mallet": {
+        "lineage_marks": [
+          "week 0: Ari practiced repair",
+          "week 1: Ari practiced construction",
+          "week 2: Ari practiced teaching",
+          "week 3: Ari practiced repair",
+          "week 4: Ari practiced construction",
+          "week 5: Ari practiced teaching",
+          "week 6: Ari practiced repair",
+          "week 7: Ari practiced construction",
+          "sealed_joint@resonant_mallet:cycle0",
+          "sealed_joint@resonant_mallet:cycle1",
+          "sealed_joint@resonant_mallet:cycle2",
+          "inheritance:Ari->Fay:cycle2",
+          "sealed_joint@resonant_mallet:cycle3",
+          "sealed_joint@resonant_mallet:cycle4",
+          "sealed_joint@resonant_mallet:cycle5",
+          "inheritance:Ari->Fay:cycle5"
+        ],
+        "owner": "Ari",
+        "quality": 0.6520624960000001
+      },
+      "root_satchel": {
+        "lineage_marks": [
+          "week 0: Fay practiced care",
+          "week 1: Fay practiced medicine",
+          "week 2: Fay practiced care",
+          "week 3: Fay practiced care",
+          "week 4: Fay practiced medicine",
+          "week 5: Fay practiced care",
+          "week 6: Fay practiced care",
+          "week 7: Fay practiced medicine",
+          "clean_care_bundle@root_satchel:cycle0",
+          "clean_care_bundle@root_satchel:cycle1",
+          "clean_care_bundle@root_satchel:cycle2",
+          "inheritance:Fay->Milo:cycle2",
+          "clean_care_bundle@root_satchel:cycle3",
+          "clean_care_bundle@root_satchel:cycle4",
+          "clean_care_bundle@root_satchel:cycle5",
+          "inheritance:Fay->Milo:cycle5"
+        ],
+        "owner": "Fay",
+        "quality": 0.6528199
+      }
+    }
+  },
+  "moral_boundary": {
+    "contracts_not_real_legal_obligations": true,
+    "market_credit_not_real_money": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "private_workspace_not_debug_leaked": true,
+    "reputation_not_subjective_status": true
+  },
+  "source_condition": "integrated_guild_memory_craft_standards_tool_inheritance",
+  "trace_events": 24
+};

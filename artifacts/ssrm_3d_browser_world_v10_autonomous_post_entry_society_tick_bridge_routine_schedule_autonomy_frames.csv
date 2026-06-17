@@ -1,0 +1,225 @@
+tick,day,lineage,agent,schedule_before,autonomous_action,schedule_after,work_progress,delay_minutes,care_pause_minutes,avatar_required,schedule_hash
+1,1,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.24; avatar_required=false,0.238,1,0,False,17c05e6d4a6ecf17
+2,1,Routeline,Keth,Keth morning: route repair and boundary marks,work_project,work_project complete; progress=0.26; avatar_required=false,0.258,1,0,False,33ebe84477e600c4
+3,1,Marketline,Melo,Melo morning: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.27; avatar_required=false,0.269,2,0,False,5414936795fb3d6d
+4,1,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.30; avatar_required=false,0.298,2,0,False,c417fe827ee5b71e
+5,1,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.31; avatar_required=false,0.309,1,0,False,c6dfc0160091e325
+6,1,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.34; avatar_required=false,0.338,2,0,False,1ea7e160e5284757
+7,1,Hearthline,Sova,Sova midday: warm cups and public archive,boundary_review,boundary_review complete; progress=0.25; avatar_required=false,0.247,4,0,False,4af0a7eadb229d3c
+8,1,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.27; avatar_required=false,0.267,4,0,False,c1edc3269cf279dd
+9,1,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.28; avatar_required=false,0.278,4,0,False,a09118db7cb89eba
+10,1,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.32; avatar_required=false,0.316,2,0,False,4fce385c3e2ece8f
+11,1,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.33; avatar_required=false,0.327,2,0,False,6f466e42be52becc
+12,1,Rainline,Vonn,Vonn evening: weather bell and wet route warning,archive_update,archive_update complete; progress=0.36; avatar_required=false,0.356,1,0,False,ec87ec4b8edafc66
+13,1,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.27; avatar_required=false,0.265,2,0,False,c5cc554b374f5229
+14,1,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.29; avatar_required=false,0.285,2,0,False,b819228428301c03
+15,2,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.33; avatar_required=false,0.334,1,0,False,94ab2e6a368426b0
+16,2,Orchardline,Ori,Ori morning: terrace water and care pauses,share_resource,share_resource complete; progress=0.34; avatar_required=false,0.336,2,0,False,f4daccce43931f0b
+17,2,Rainline,Vonn,Vonn morning: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.37; avatar_required=false,0.374,2,0,False,e1c434d94940c01e
+18,2,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.27; avatar_required=false,0.274,4,0,False,0229d649ba83ccff
+19,2,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.29; avatar_required=false,0.294,4,0,False,6100c83720663535
+20,2,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.29; avatar_required=false,0.287,4,0,False,974951ea3c909787
+21,2,Ledgerline,Nari,Nari midday: public ledger and sealed memory,archive_update,archive_update complete; progress=0.35; avatar_required=false,0.352,1,0,False,2f8e7d28668bfd88
+22,2,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.35; avatar_required=false,0.354,1,0,False,6d0015eb76767ede
+23,2,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.39; avatar_required=false,0.392,2,0,False,6c1a23e3d70c386c
+24,2,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.29; avatar_required=false,0.292,2,0,False,634ebb12e32bdb97
+25,2,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.31; avatar_required=false,0.312,1,0,False,d447a398968fd99c
+26,2,Marketline,Melo,Melo evening: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.30; avatar_required=false,0.296,2,0,False,03cbd26cd578d702
+27,2,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.37; avatar_required=false,0.37,2,0,False,a3e616b78184fc23
+28,2,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.36; avatar_required=false,0.363,1,0,False,6a987877ac2cb123
+29,3,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.30; avatar_required=false,0.301,4,0,False,d13a6968c3d69ce7
+30,3,Routeline,Keth,Keth morning: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.32; avatar_required=false,0.321,4,0,False,5ec583752024db5a
+31,3,Marketline,Melo,Melo morning: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.31; avatar_required=false,0.305,4,0,False,ccd000626562b7c1
+32,3,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.39; avatar_required=false,0.388,2,0,False,6e32c2d7df8069c9
+33,3,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.38; avatar_required=false,0.381,2,0,False,35cf4f500474fe20
+34,3,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.41; avatar_required=false,0.41,1,0,False,f2f7ea76c6fa1a0a
+35,3,Hearthline,Sova,Sova midday: warm cups and public archive,work_project,work_project complete; progress=0.32; avatar_required=false,0.319,1,0,False,1c09d27206b346d2
+36,3,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.34; avatar_required=false,0.339,2,0,False,758b9d5d669ebd53
+37,3,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.31; avatar_required=false,0.314,2,0,False,1f74cb25981b217e
+38,3,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.41; avatar_required=false,0.406,1,0,False,9daaa3bf7f062b2a
+39,3,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.39; avatar_required=false,0.39,2,0,False,2afc22bf9f3a0be4
+40,3,Rainline,Vonn,Vonn evening: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.43; avatar_required=false,0.428,2,0,False,70040df626d3d5d8
+41,3,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.33; avatar_required=false,0.328,4,0,False,26388c8f202e5696
+42,3,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.35; avatar_required=false,0.348,4,0,False,fb4739cb2f8035be
+43,4,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.42; avatar_required=false,0.424,2,0,False,66ca3802f698f0b5
+44,4,Orchardline,Ori,Ori morning: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.41; avatar_required=false,0.408,1,0,False,474697ed333216b9
+45,4,Rainline,Vonn,Vonn morning: weather bell and wet route warning,archive_update,archive_update complete; progress=0.45; avatar_required=false,0.446,2,0,False,ba042ee01e50382c
+46,4,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.35; avatar_required=false,0.346,2,0,False,6fd95a965ac790b2
+47,4,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.37; avatar_required=false,0.366,1,0,False,118eacd75f57a6ba
+48,4,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.32; avatar_required=false,0.323,1,0,False,2730bba8fc6d54dd
+49,4,Ledgerline,Nari,Nari midday: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.44; avatar_required=false,0.442,2,0,False,4b7d38b7336d06f8
+50,4,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.42; avatar_required=false,0.417,2,0,False,def047fd570f0b9f
+51,4,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.46; avatar_required=false,0.464,1,0,False,0454fc30d8a048b6
+52,4,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.36; avatar_required=false,0.355,4,0,False,eed2402d0fe6d9cf
+53,4,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.38; avatar_required=false,0.375,4,0,False,8ffd4660bd97810b
+54,4,Marketline,Melo,Melo evening: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.33; avatar_required=false,0.332,4,0,False,11b451f0f6565702
+55,4,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.46; avatar_required=false,0.46,1,0,False,ef32833a94891f8e
+56,4,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.44; avatar_required=false,0.435,2,0,False,258542d40688dc4b
+57,5,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.37; avatar_required=false,0.373,1,0,False,3ed82b0ae4e22387
+58,5,Routeline,Keth,Keth morning: route repair and boundary marks,work_project,work_project complete; progress=0.39; avatar_required=false,0.393,2,0,False,9ee05d92b8c4e23d
+59,5,Marketline,Melo,Melo morning: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.34; avatar_required=false,0.341,2,0,False,2209093a54944bdc
+60,5,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.48; avatar_required=false,0.478,1,0,False,993fbc2d39bc90d1
+61,5,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.44; avatar_required=false,0.444,1,0,False,60dc61d5152f6f4d
+62,5,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.48; avatar_required=false,0.482,2,0,False,cada8a884abd4582
+63,5,Hearthline,Sova,Sova midday: warm cups and public archive,boundary_review,boundary_review complete; progress=0.38; avatar_required=false,0.382,4,0,False,3162f82f91714d33
+64,5,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.40; avatar_required=false,0.402,4,0,False,c5e1a7e07606ac7d
+65,5,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.35; avatar_required=false,0.35,4,0,False,6d22c33ef242edf5
+66,5,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.50; avatar_required=false,0.496,2,0,False,c7c37bafda8bb3c1
+67,5,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.46; avatar_required=false,0.462,1,0,False,00c42cfb8a2bfaa6
+68,5,Rainline,Vonn,Vonn evening: weather bell and wet route warning,archive_update,archive_update complete; progress=0.50; avatar_required=false,0.5,1,0,False,b8a25f200390d0f9
+69,5,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.40; avatar_required=false,0.4,2,0,False,215c41f3c39eaeb5
+70,5,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.42; avatar_required=false,0.42,2,0,False,6c5a4a7e04e20a59
+71,6,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.51; avatar_required=false,0.514,2,0,False,a64591ae02ad55d5
+72,6,Orchardline,Ori,Ori morning: terrace water and care pauses,share_resource,share_resource complete; progress=0.47; avatar_required=false,0.471,2,0,False,e513f4f9b15a6323
+73,6,Rainline,Vonn,Vonn morning: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.52; avatar_required=false,0.518,1,0,False,b89f03dd356e2395
+74,6,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.41; avatar_required=false,0.409,4,0,False,dd23f96ece89ed66
+75,6,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.43; avatar_required=false,0.429,4,0,False,aa3a82ea5a67fcb0
+76,6,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.36; avatar_required=false,0.359,4,0,False,557c4e4c74836071
+77,6,Ledgerline,Nari,Nari midday: public ledger and sealed memory,archive_update,archive_update complete; progress=0.53; avatar_required=false,0.532,1,0,False,f7eab897b4cba992
+78,6,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.49; avatar_required=false,0.489,2,0,False,012f000809be3308
+79,6,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.54; avatar_required=false,0.536,2,0,False,3b71b3cfcfe28c43
+80,6,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.43; avatar_required=false,0.427,1,0,False,8113ea1afb3cb6aa
+81,6,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.45; avatar_required=false,0.447,1,0,False,2d6e28e43946b73f
+82,6,Marketline,Melo,Melo evening: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.37; avatar_required=false,0.368,2,0,False,79e4754feb7260bb
+83,6,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.55; avatar_required=false,0.55,2,0,False,118ce38c0d75c4df
+84,6,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.50; avatar_required=false,0.498,1,0,False,fd537ea57034641f
+85,7,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.44; avatar_required=false,0.436,4,0,False,25578e8588226e76
+86,7,Routeline,Keth,Keth morning: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.46; avatar_required=false,0.456,4,0,False,d59a4656471c13df
+87,7,Marketline,Melo,Melo morning: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.38; avatar_required=false,0.377,4,0,False,bf10eca16c2db70f
+88,7,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.57; avatar_required=false,0.568,2,0,False,c1b7f51571e18e78
+89,7,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.52; avatar_required=false,0.516,2,0,False,646161fd519f0bac
+90,7,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.55; avatar_required=false,0.554,1,0,False,fdc56ad5aae54d63
+91,7,Hearthline,Sova,Sova midday: warm cups and public archive,work_project,work_project complete; progress=0.45; avatar_required=false,0.454,2,0,False,9a77369a74ac5335
+92,7,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.47; avatar_required=false,0.474,2,0,False,92db7838ae1777f6
+93,7,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.39; avatar_required=false,0.386,1,0,False,4015662155665e5f
+94,7,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.59; avatar_required=false,0.586,1,0,False,8e2048279979a555
+95,7,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.53; avatar_required=false,0.525,2,0,False,5f089818dded4eb8
+96,7,Rainline,Vonn,Vonn evening: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.57; avatar_required=false,0.572,2,0,False,369cb88a21341985
+97,7,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.46; avatar_required=false,0.463,4,0,False,b24ab7199ae33b27
+98,7,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.48; avatar_required=false,0.483,4,0,False,7e732f63bd51f49c
+99,8,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.60; avatar_required=false,0.604,1,0,False,bf4c3359057152e8
+100,8,Orchardline,Ori,Ori morning: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.54; avatar_required=false,0.543,1,0,False,759194dc6c4eedd6
+101,8,Rainline,Vonn,Vonn morning: weather bell and wet route warning,archive_update,archive_update complete; progress=0.59; avatar_required=false,0.59,2,0,False,d74862783a4e96fd
+102,8,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.48; avatar_required=false,0.481,2,0,False,53297419e0fb2780
+103,8,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.50; avatar_required=false,0.501,1,0,False,9f4b9b40b64e88ce
+104,8,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.40; avatar_required=false,0.395,2,0,False,36b6001fcf3bfd30
+105,8,Ledgerline,Nari,Nari midday: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.62; avatar_required=false,0.622,2,0,False,986fa0454241c77a
+106,8,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.55; avatar_required=false,0.552,1,0,False,a743664fd500e233
+107,8,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.61; avatar_required=false,0.608,1,0,False,bc0a0a7bd8d986a6
+108,8,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.49; avatar_required=false,0.49,4,0,False,b4e65e354e1ce736
+109,8,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.51; avatar_required=false,0.51,4,0,False,67e42634ba40c939
+110,8,Marketline,Melo,Melo evening: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.40; avatar_required=false,0.404,4,0,False,7de7f331b3e7bc84
+111,8,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.64; avatar_required=false,0.64,2,0,False,476d13c4626dd689
+112,8,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.57; avatar_required=false,0.57,2,0,False,aa7ed7dc4ba323a5
+113,9,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.51; avatar_required=false,0.508,1,0,False,217b506460d34f61
+114,9,Routeline,Keth,Keth morning: route repair and boundary marks,work_project,work_project complete; progress=0.53; avatar_required=false,0.528,2,0,False,6ff473922f1c4e2f
+115,9,Marketline,Melo,Melo morning: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.41; avatar_required=false,0.413,2,0,False,7e28a923eddc34fd
+116,9,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.66; avatar_required=false,0.658,1,0,False,dccf451cd462839f
+117,9,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.58; avatar_required=false,0.579,2,0,False,4c8c398fac3f6338
+118,9,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.63; avatar_required=false,0.626,2,0,False,3cbf97f10965e4ff
+119,9,Hearthline,Sova,Sova midday: warm cups and public archive,boundary_review,boundary_review complete; progress=0.52; avatar_required=false,0.517,4,0,False,e9c18522f68f1947
+120,9,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.54; avatar_required=false,0.537,4,0,False,9f60772f939d8cf4
+121,9,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.42; avatar_required=false,0.422,4,0,False,8cf1fd7e1f219724
+122,9,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.68; avatar_required=false,0.676,2,0,False,3ef3884b6dac6958
+123,9,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.60; avatar_required=false,0.597,1,0,False,515a8e24832569be
+124,9,Rainline,Vonn,Vonn evening: weather bell and wet route warning,archive_update,archive_update complete; progress=0.64; avatar_required=false,0.644,2,0,False,7adb35cbe027a5d9
+125,9,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.54; avatar_required=false,0.535,2,0,False,cee51e5b89032310
+126,9,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.56; avatar_required=false,0.555,1,0,False,9966a79f9f9ba95e
+127,10,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.69; avatar_required=false,0.694,2,0,False,bb0985a77742a92a
+128,10,Orchardline,Ori,Ori morning: terrace water and care pauses,share_resource,share_resource complete; progress=0.61; avatar_required=false,0.606,2,0,False,8764e1a76fcd71f8
+129,10,Rainline,Vonn,Vonn morning: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.66; avatar_required=false,0.662,1,0,False,73b1934b263dff51
+130,10,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.54; avatar_required=false,0.544,4,0,False,b0345180cb0e4575
+131,10,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.56; avatar_required=false,0.564,4,0,False,b8566e663e8a7af9
+132,10,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.43; avatar_required=false,0.431,4,0,False,8d78314529377a02
+133,10,Ledgerline,Nari,Nari midday: public ledger and sealed memory,archive_update,archive_update complete; progress=0.71; avatar_required=false,0.712,1,0,False,4fa1daf53387ec46
+134,10,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.62; avatar_required=false,0.624,2,0,False,00c330f633d3f1aa
+135,10,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.68; avatar_required=false,0.68,2,0,False,0b4ddfd7049ce55c
+136,10,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.56; avatar_required=false,0.562,1,0,False,36364e73a5bbf6be
+137,10,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.58; avatar_required=false,0.582,2,0,False,97c4794d54cb012a
+138,10,Marketline,Melo,Melo evening: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.44; avatar_required=false,0.44,2,0,False,9cb793874c0ca2cf
+139,10,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.73; avatar_required=false,0.73,1,0,False,4a0901d675451afa
+140,10,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.63; avatar_required=false,0.633,1,0,False,11108f1d31bf7277
+141,11,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.57; avatar_required=false,0.571,4,0,False,bc9b65f17ca7d8a4
+142,11,Routeline,Keth,Keth morning: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.59; avatar_required=false,0.591,4,0,False,08c6361edfb78a05
+143,11,Marketline,Melo,Melo morning: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.45; avatar_required=false,0.449,4,0,False,75200e7ae58fb148
+144,11,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.75; avatar_required=false,0.748,2,0,False,4e3b9062a5b08d5b
+145,11,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.65; avatar_required=false,0.651,1,0,False,1245df9be957f2e3
+146,11,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.70; avatar_required=false,0.698,1,0,False,c564bed19439ea3f
+147,11,Hearthline,Sova,Sova midday: warm cups and public archive,work_project,work_project complete; progress=0.59; avatar_required=false,0.589,2,0,False,ce54ae9963b9bf2f
+148,11,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.61; avatar_required=false,0.609,2,0,False,7619f2fa96fe23df
+149,11,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.46; avatar_required=false,0.458,1,0,False,f323da560c00ee41
+150,11,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.77; avatar_required=false,0.766,2,0,False,208b135965e2e171
+151,11,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.66; avatar_required=false,0.66,2,0,False,b00a0edf96d97ae5
+152,11,Rainline,Vonn,Vonn evening: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.72; avatar_required=false,0.716,1,0,False,98bc0e46c1ba329f
+153,11,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.60; avatar_required=false,0.598,4,0,False,b6c8f9b44f8ceb60
+154,11,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.62; avatar_required=false,0.618,4,0,False,5878a2887bd10eee
+155,12,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.78; avatar_required=false,0.784,1,0,False,54ddc6373373b993
+156,12,Orchardline,Ori,Ori morning: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.68; avatar_required=false,0.678,2,0,False,1f0eef8ef74dfe90
+157,12,Rainline,Vonn,Vonn morning: weather bell and wet route warning,archive_update,archive_update complete; progress=0.73; avatar_required=false,0.734,2,0,False,d60110940d937d5e
+158,12,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.62; avatar_required=false,0.616,1,0,False,2c53e46dffa026a2
+159,12,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.64; avatar_required=false,0.636,1,0,False,1c169b89fb2f2b95
+160,12,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.47; avatar_required=false,0.467,2,0,False,0db7ebdbde965570
+161,12,Ledgerline,Nari,Nari midday: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.80; avatar_required=false,0.802,2,0,False,291bd173496db68b
+162,12,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.69; avatar_required=false,0.687,1,0,False,62dc3e459853d1c3
+163,12,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.75; avatar_required=false,0.752,2,0,False,50c65f158b525a96
+164,12,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.63; avatar_required=false,0.625,4,0,False,2139874b3f5435f1
+165,12,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.65; avatar_required=false,0.645,4,0,False,d69400e539c8adf4
+166,12,Marketline,Melo,Melo evening: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.48; avatar_required=false,0.476,4,0,False,ae22df385dbeb315
+167,12,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.82; avatar_required=false,0.82,2,0,False,52910d35e0356d35
+168,12,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.71; avatar_required=false,0.705,2,0,False,50ef5f648db6bbe6
+169,13,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.64; avatar_required=false,0.643,2,0,False,5cb436c8f4f6211d
+170,13,Routeline,Keth,Keth morning: route repair and boundary marks,work_project,work_project complete; progress=0.66; avatar_required=false,0.663,2,0,False,f4afd81979993e2e
+171,13,Marketline,Melo,Melo morning: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.49; avatar_required=false,0.485,1,0,False,384fd57aabd2f124
+172,13,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.84; avatar_required=false,0.838,1,0,False,e319996915583bdf
+173,13,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.71; avatar_required=false,0.714,2,0,False,1c2a557b8cd5693a
+174,13,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.77; avatar_required=false,0.77,2,0,False,eec7b82be85cc934
+175,13,Hearthline,Sova,Sova midday: warm cups and public archive,boundary_review,boundary_review complete; progress=0.65; avatar_required=false,0.652,4,0,False,0c0b8cbbec1dffae
+176,13,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.67; avatar_required=false,0.672,4,0,False,70fb63c3c6dfa4c3
+177,13,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.49; avatar_required=false,0.494,4,0,False,f401df34ee61cb1e
+178,13,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=0.86; avatar_required=false,0.856,1,0,False,67346ca6d3c85b06
+179,13,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.73; avatar_required=false,0.732,1,0,False,2de2a451198a49a4
+180,13,Rainline,Vonn,Vonn evening: weather bell and wet route warning,archive_update,archive_update complete; progress=0.79; avatar_required=false,0.788,2,0,False,6a6dc58aa6c815c0
+181,13,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.67; avatar_required=false,0.67,2,0,False,aa4bd05b11865f1c
+182,13,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.69; avatar_required=false,0.69,1,0,False,9c8be13088be19d4
+183,14,Ledgerline,Nari,Nari morning: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.87; avatar_required=false,0.874,2,0,False,d6f28c3737826d0e
+184,14,Orchardline,Ori,Ori morning: terrace water and care pauses,share_resource,share_resource complete; progress=0.74; avatar_required=false,0.741,1,0,False,598cbb857a577841
+185,14,Rainline,Vonn,Vonn morning: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.81; avatar_required=false,0.806,1,0,False,5624e3f1c3fee592
+186,14,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.68; avatar_required=false,0.679,4,0,False,4ce168f3309e82d0
+187,14,Routeline,Keth,Keth midday: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.70; avatar_required=false,0.699,4,0,False,eb837f11ffaa591b
+188,14,Marketline,Melo,Melo midday: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.50; avatar_required=false,0.503,4,0,False,c419a2199930ae87
+189,14,Ledgerline,Nari,Nari midday: public ledger and sealed memory,archive_update,archive_update complete; progress=0.89; avatar_required=false,0.892,2,0,False,32d973906a57070b
+190,14,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.76; avatar_required=false,0.759,2,0,False,e626b27753f65ad8
+191,14,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.82; avatar_required=false,0.824,1,0,False,0e7a48817dba9f0f
+192,14,Hearthline,Sova,Sova evening: warm cups and public archive,work_project,work_project complete; progress=0.70; avatar_required=false,0.697,1,0,False,1d773ef673bdab73
+193,14,Routeline,Keth,Keth evening: route repair and boundary marks,work_project,work_project complete; progress=0.72; avatar_required=false,0.717,2,0,False,ddfbc4c0bd2874c1
+194,14,Marketline,Melo,Melo evening: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.51; avatar_required=false,0.512,2,0,False,71df998eef5468f9
+195,14,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.91; avatar_required=false,0.91,1,0,False,4a7f7155922da071
+196,14,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.77; avatar_required=false,0.768,2,0,False,5d6bfe89fadb6a17
+197,15,Hearthline,Sova,Sova morning: warm cups and public archive,boundary_review,boundary_review complete; progress=0.71; avatar_required=false,0.706,4,0,False,3275605a678651ac
+198,15,Routeline,Keth,Keth morning: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.73; avatar_required=false,0.726,4,0,False,499e0dfdfbdadfdf
+199,15,Marketline,Melo,Melo morning: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.52; avatar_required=false,0.521,4,0,False,a0ad0686ba0bda9f
+200,15,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.93; avatar_required=false,0.928,2,0,False,aec9677721d2a1f5
+201,15,Orchardline,Ori,Ori midday: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.79; avatar_required=false,0.786,1,0,False,ec4ebececa4f785a
+202,15,Rainline,Vonn,Vonn midday: weather bell and wet route warning,archive_update,archive_update complete; progress=0.84; avatar_required=false,0.842,2,0,False,2c949b266e125b34
+203,15,Hearthline,Sova,Sova midday: warm cups and public archive,work_project,work_project complete; progress=0.72; avatar_required=false,0.724,2,0,False,fbdf28b5eaf1684c
+204,15,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.74; avatar_required=false,0.744,1,0,False,a6a89caf475cb250
+205,15,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.53; avatar_required=false,0.53,1,0,False,dde5f7d1b9e593e5
+206,15,Ledgerline,Nari,Nari evening: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.95; avatar_required=false,0.946,2,0,False,baae81d1e6cef135
+207,15,Orchardline,Ori,Ori evening: terrace water and care pauses,share_resource,share_resource complete; progress=0.80; avatar_required=false,0.795,2,0,False,f98d14ac38987db6
+208,15,Rainline,Vonn,Vonn evening: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.86; avatar_required=false,0.86,1,0,False,e714b71bddd71903
+209,15,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.73; avatar_required=false,0.733,4,0,False,5c6211ad716187d3
+210,15,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.75; avatar_required=false,0.753,4,0,False,db0fb6d1ce68025f
+211,16,Ledgerline,Nari,Nari morning: public ledger and sealed memory,archive_update,archive_update complete; progress=0.96; avatar_required=false,0.964,1,0,False,e72ada06c15dbccf
+212,16,Orchardline,Ori,Ori morning: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.81; avatar_required=false,0.813,2,0,False,6985d705ef9deea6
+213,16,Rainline,Vonn,Vonn morning: weather bell and wet route warning,archive_update,archive_update complete; progress=0.88; avatar_required=false,0.878,2,0,False,25cb3793912d87aa
+214,16,Hearthline,Sova,Sova morning: warm cups and public archive,work_project,work_project complete; progress=0.75; avatar_required=false,0.751,1,0,False,c76be12ea89f6e6b
+215,16,Routeline,Keth,Keth midday: route repair and boundary marks,work_project,work_project complete; progress=0.77; avatar_required=false,0.771,2,0,False,b647009e2174aa83
+216,16,Marketline,Melo,Melo midday: market weights and fair exchange,agent_checkin,agent_checkin complete; progress=0.54; avatar_required=false,0.539,2,0,False,4111b0eb1ebc6fea
+217,16,Ledgerline,Nari,Nari midday: public ledger and sealed memory,maintain_tool,maintain_tool complete; progress=0.98; avatar_required=false,0.982,1,0,False,035b2fc0c2339032
+218,16,Orchardline,Ori,Ori midday: terrace water and care pauses,share_resource,share_resource complete; progress=0.82; avatar_required=false,0.822,1,0,False,fe777a78e14b0ba9
+219,16,Rainline,Vonn,Vonn midday: weather bell and wet route warning,maintain_tool,maintain_tool complete; progress=0.90; avatar_required=false,0.896,2,0,False,999c6bd4b30fae07
+220,16,Hearthline,Sova,Sova evening: warm cups and public archive,boundary_review,boundary_review complete; progress=0.76; avatar_required=false,0.76,4,0,False,1af3738cadc4a2bd
+221,16,Routeline,Keth,Keth evening: route repair and boundary marks,boundary_review,boundary_review complete; progress=0.78; avatar_required=false,0.78,4,0,False,6e9d049d65df6cce
+222,16,Marketline,Melo,Melo evening: market weights and fair exchange,weather_watch,weather_watch complete; progress=0.55; avatar_required=false,0.548,4,0,False,85187536326efe79
+223,16,Ledgerline,Nari,Nari evening: public ledger and sealed memory,archive_update,archive_update complete; progress=1.00; avatar_required=false,1.0,2,0,False,d29559f0c4db3c2b
+224,16,Orchardline,Ori,Ori evening: terrace water and care pauses,route_patrol,route_patrol complete; progress=0.84; avatar_required=false,0.84,1,0,False,aecec421a95af8aa

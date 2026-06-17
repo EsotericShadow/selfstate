@@ -1,0 +1,60 @@
+{
+  "ablations": {
+    "no_agent_agent_interactions": 0.822727,
+    "no_autonomous_ticks": 0.632727,
+    "no_avatar_idle_absent_mode": 0.712727,
+    "no_consequence_memory_carryover": 0.692727,
+    "no_needs_to_behavior": 0.742727,
+    "no_replay_save_restore": 0.852727,
+    "no_routine_autonomy": 0.772727,
+    "no_source_consequence_continuity": 0.812727,
+    "no_technology_autonomy": 0.842727,
+    "no_welfare_guardrails": 0.702727
+  },
+  "counts": {
+    "agent_agent_interaction_frames": 112,
+    "agent_need_autonomy_frames": 224,
+    "autonomous_society_tick_frames": 224,
+    "browser_world_v10_ticks": 224,
+    "consequence_memory_carry_frames": 224,
+    "replay_autonomy_frames": 224,
+    "routine_schedule_autonomy_frames": 224,
+    "technology_autonomy_frames": 112,
+    "welfare_guardrail_autonomy_frames": 224
+  },
+  "honest_limits": [
+    "This is deterministic autonomous post-entry society ticking, not subjective consciousness.",
+    "The society continues without avatar input, but policies and actions are seeded deterministic scaffolds.",
+    "No LLM is called and no autonomous natural language is provided.",
+    "Consent, welfare, and recovery are simulated functional guardrails, not real consent or moral standing.",
+    "The browser page is a playable 2D/2.5D state surface, not complete 3D physics.",
+    "Needs and discomfort are bounded control variables with recovery paths, not proof of experienced feeling.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof."
+  ],
+  "metrics": {
+    "agent_agent_interaction_continuity": 0.909091,
+    "autonomous_tick_surface": 1,
+    "avatar_idle_absent_continuity": 1.0,
+    "browser_world_v10_autonomous_society_readiness": 0.992727,
+    "browser_world_v10_surface_available": 1.0,
+    "consequence_memory_carryover": 1.0,
+    "mean_autonomy_channel_score": 0.993939,
+    "needs_to_behavior_binding": 1.0,
+    "private_workspace_boundary": 1.0,
+    "recovery_without_avatar_prompt": 1.0,
+    "replay_autonomy_integrity": 1.0,
+    "routine_autonomy_integrity": 1.0,
+    "save_restore_autonomous_continuity": 1.0,
+    "sensory_frequency_flower_binding": 1.0,
+    "source_post_entry_consequence_continuity": 1.0,
+    "technology_access_autonomy": 1.0,
+    "weakest_channel_score": 0.909091,
+    "welfare_guardrail_autonomy": 1
+  },
+  "name": "SSRM-3D Browser World v10 Autonomous Post-Entry Society Tick Bridge",
+  "next_gate": "browser world v11 with autonomous long-horizon post-entry society days, sleep/wake cycles, stored dreams/rehearsal, and avatar re-entry after absence",
+  "report": 250,
+  "seed": 20260863,
+  "source_results": "artifacts/ssrm_3d_browser_world_v9_post_entry_live_society_consequence_bridge_results.json",
+  "verdict": "pass"
+}

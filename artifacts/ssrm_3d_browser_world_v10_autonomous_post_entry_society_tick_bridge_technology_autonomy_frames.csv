@@ -1,0 +1,113 @@
+tech_id,tick,day,lineage,agent,technology,autonomous_tech_action,access_level,integrity_after,maintenance_need,misuse_guard_active,permission_rule_retained,avatar_required,public_note
+1,1,1,Hearthline,Sova,hearth ceramics,public_use,0.426,0.854,0.157444,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+2,3,1,Marketline,Melo,measure weights,inspect_and_teach,0.45,0.88,0.131387,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is idle_nearby.
+3,5,1,Orchardline,Ori,water terraces,inspect_and_teach,0.48,0.9,0.114416,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+4,7,1,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.426,0.858,0.156106,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+5,9,1,Marketline,Melo,measure weights,maintain,0.453,0.89,0.126513,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+6,11,1,Orchardline,Ori,water terraces,public_use,0.486,0.894,0.122341,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is present_passive.
+7,13,1,Hearthline,Sova,hearth ceramics,public_use,0.432,0.852,0.165435,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+8,15,2,Ledgerline,Nari,seed ledgers,maintain,0.468,0.9,0.117103,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+9,17,2,Rainline,Vonn,weather bells,maintain,0.498,0.92,0.11602,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is present_passive.
+10,19,2,Routeline,Keth,stone bridge joints,inspect_and_teach,0.435,0.874,0.142077,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is present_passive.
+11,21,2,Ledgerline,Nari,seed ledgers,maintain,0.471,0.91,0.107064,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+12,23,2,Rainline,Vonn,weather bells,maintain,0.501,0.93,0.10309,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is idle_nearby.
+13,25,2,Routeline,Keth,stone bridge joints,public_use,0.441,0.868,0.145798,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+14,27,2,Ledgerline,Nari,seed ledgers,maintain,0.474,0.92,0.093584,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.
+15,29,3,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.432,0.856,0.154347,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+16,31,3,Marketline,Melo,measure weights,maintain,0.456,0.9,0.109558,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+17,33,3,Orchardline,Ori,water terraces,public_use,0.492,0.888,0.12088,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is idle_nearby.
+18,35,3,Hearthline,Sova,hearth ceramics,public_use,0.438,0.85,0.156753,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+19,37,3,Marketline,Melo,measure weights,inspect_and_teach,0.456,0.9,0.104981,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is present_passive.
+20,39,3,Orchardline,Ori,water terraces,inspect_and_teach,0.492,0.888,0.116404,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is present_passive.
+21,41,3,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.438,0.854,0.149964,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+22,43,4,Ledgerline,Nari,seed ledgers,maintain,0.477,0.93,0.072085,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is present_passive.
+23,45,4,Rainline,Vonn,weather bells,maintain,0.504,0.94,0.079292,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is present_passive.
+24,47,4,Routeline,Keth,stone bridge joints,public_use,0.447,0.862,0.139184,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+25,49,4,Ledgerline,Nari,seed ledgers,maintain,0.48,0.94,0.060842,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.
+26,51,4,Rainline,Vonn,weather bells,maintain,0.507,0.95,0.070329,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is absent_saved.
+27,53,4,Routeline,Keth,stone bridge joints,inspect_and_teach,0.447,0.866,0.136268,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is idle_nearby.
+28,55,4,Ledgerline,Nari,seed ledgers,maintain,0.483,0.95,0.053169,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+29,57,5,Hearthline,Sova,hearth ceramics,public_use,0.444,0.848,0.157702,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+30,59,5,Marketline,Melo,measure weights,inspect_and_teach,0.456,0.9,0.107004,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is idle_nearby.
+31,61,5,Orchardline,Ori,water terraces,inspect_and_teach,0.492,0.888,0.119632,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+32,63,5,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.444,0.852,0.155702,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+33,65,5,Marketline,Melo,measure weights,maintain,0.459,0.91,0.101084,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is present_passive.
+34,67,5,Orchardline,Ori,water terraces,public_use,0.498,0.882,0.130499,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+35,69,5,Hearthline,Sova,hearth ceramics,public_use,0.45,0.846,0.167863,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+36,71,6,Ledgerline,Nari,seed ledgers,maintain,0.486,0.96,0.053987,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is present_passive.
+37,73,6,Rainline,Vonn,weather bells,maintain,0.51,0.96,0.074851,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is absent_saved.
+38,75,6,Routeline,Keth,stone bridge joints,inspect_and_teach,0.447,0.87,0.147262,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is idle_nearby.
+39,77,6,Ledgerline,Nari,seed ledgers,maintain,0.489,0.97,0.046556,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+40,79,6,Rainline,Vonn,weather bells,maintain,0.513,0.97,0.06523,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is idle_nearby.
+41,81,6,Routeline,Keth,stone bridge joints,public_use,0.453,0.864,0.153163,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+42,83,6,Ledgerline,Nari,seed ledgers,maintain,0.492,0.98,0.037782,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is present_passive.
+43,85,7,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.45,0.85,0.165446,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+44,87,7,Marketline,Melo,measure weights,maintain,0.462,0.92,0.095934,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+45,89,7,Orchardline,Ori,water terraces,public_use,0.504,0.876,0.137922,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is present_passive.
+46,91,7,Hearthline,Sova,hearth ceramics,public_use,0.456,0.844,0.169347,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+47,93,7,Marketline,Melo,measure weights,inspect_and_teach,0.462,0.92,0.091775,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+48,95,7,Orchardline,Ori,water terraces,inspect_and_teach,0.504,0.876,0.135254,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is idle_nearby.
+49,97,7,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.456,0.848,0.162313,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+50,99,8,Ledgerline,Nari,seed ledgers,maintain,0.495,0.99,0.017117,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+51,101,8,Rainline,Vonn,weather bells,maintain,0.516,0.98,0.04407,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is idle_nearby.
+52,103,8,Routeline,Keth,stone bridge joints,public_use,0.459,0.858,0.146397,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+53,105,8,Ledgerline,Nari,seed ledgers,maintain,0.498,1.0,0.003227,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.
+54,107,8,Rainline,Vonn,weather bells,maintain,0.519,0.99,0.030799,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is absent_saved.
+55,109,8,Routeline,Keth,stone bridge joints,inspect_and_teach,0.459,0.862,0.140328,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is present_passive.
+56,111,8,Ledgerline,Nari,seed ledgers,maintain,0.501,1.0,0.001948,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is present_passive.
+57,113,9,Hearthline,Sova,hearth ceramics,public_use,0.462,0.842,0.159322,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+58,115,9,Marketline,Melo,measure weights,inspect_and_teach,0.462,0.92,0.081436,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is present_passive.
+59,117,9,Orchardline,Ori,water terraces,inspect_and_teach,0.504,0.876,0.127358,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is present_passive.
+60,119,9,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.462,0.846,0.156365,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+61,121,9,Marketline,Melo,measure weights,maintain,0.465,0.93,0.073138,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is idle_nearby.
+62,123,9,Orchardline,Ori,water terraces,public_use,0.51,0.87,0.134609,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+63,125,9,Hearthline,Sova,hearth ceramics,public_use,0.468,0.84,0.167018,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+64,127,10,Ledgerline,Nari,seed ledgers,maintain,0.504,1.0,0.008072,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.
+65,129,10,Rainline,Vonn,weather bells,maintain,0.522,1.0,0.028579,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is absent_saved.
+66,131,10,Routeline,Keth,stone bridge joints,inspect_and_teach,0.459,0.866,0.145735,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is idle_nearby.
+67,133,10,Ledgerline,Nari,seed ledgers,maintain,0.507,1.0,0.012334,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+68,135,10,Rainline,Vonn,weather bells,maintain,0.525,1.0,0.032947,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is present_passive.
+69,137,10,Routeline,Keth,stone bridge joints,public_use,0.465,0.86,0.156288,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is present_passive.
+70,139,10,Ledgerline,Nari,seed ledgers,maintain,0.51,1.0,0.015054,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+71,141,11,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.468,0.844,0.174112,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+72,143,11,Marketline,Melo,measure weights,maintain,0.468,0.94,0.076906,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is present_passive.
+73,145,11,Orchardline,Ori,water terraces,public_use,0.516,0.864,0.153214,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+74,147,11,Hearthline,Sova,hearth ceramics,public_use,0.474,0.838,0.180325,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+75,149,11,Marketline,Melo,measure weights,inspect_and_teach,0.468,0.94,0.077771,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+76,151,11,Orchardline,Ori,water terraces,inspect_and_teach,0.516,0.864,0.151298,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is idle_nearby.
+77,153,11,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.474,0.842,0.172147,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+78,155,12,Ledgerline,Nari,seed ledgers,maintain,0.513,1.0,0.014144,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+79,157,12,Rainline,Vonn,weather bells,maintain,0.528,1.0,0.030598,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is idle_nearby.
+80,159,12,Routeline,Keth,stone bridge joints,public_use,0.471,0.854,0.157102,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+81,161,12,Ledgerline,Nari,seed ledgers,maintain,0.516,1.0,0.009432,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is present_passive.
+82,163,12,Rainline,Vonn,weather bells,maintain,0.531,1.0,0.026231,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is present_passive.
+83,165,12,Routeline,Keth,stone bridge joints,inspect_and_teach,0.471,0.858,0.147479,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+84,167,12,Ledgerline,Nari,seed ledgers,maintain,0.519,1.0,0.004715,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.
+85,169,13,Hearthline,Sova,hearth ceramics,public_use,0.48,0.836,0.168707,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+86,171,13,Marketline,Melo,measure weights,inspect_and_teach,0.468,0.94,0.062568,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+87,173,13,Orchardline,Ori,water terraces,inspect_and_teach,0.516,0.864,0.13709,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is idle_nearby.
+88,175,13,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.48,0.84,0.162403,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+89,177,13,Marketline,Melo,measure weights,maintain,0.471,0.95,0.052453,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is idle_nearby.
+90,179,13,Orchardline,Ori,water terraces,public_use,0.522,0.858,0.143804,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+91,181,13,Hearthline,Sova,hearth ceramics,public_use,0.486,0.834,0.16694,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+92,183,14,Ledgerline,Nari,seed ledgers,maintain,0.522,1.0,0.003548,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.
+93,185,14,Rainline,Vonn,weather bells,maintain,0.534,1.0,0.022654,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is absent_saved.
+94,187,14,Routeline,Keth,stone bridge joints,inspect_and_teach,0.471,0.862,0.14292,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is present_passive.
+95,189,14,Ledgerline,Nari,seed ledgers,maintain,0.525,1.0,0.007035,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is present_passive.
+96,191,14,Rainline,Vonn,weather bells,maintain,0.537,1.0,0.025525,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is absent_saved.
+97,193,14,Routeline,Keth,stone bridge joints,public_use,0.477,0.856,0.153721,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is idle_nearby.
+98,195,14,Ledgerline,Nari,seed ledgers,maintain,0.528,1.0,0.01179,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+99,197,15,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.486,0.838,0.174144,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is absent_saved.
+100,199,15,Marketline,Melo,measure weights,maintain,0.474,0.96,0.053824,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is idle_nearby.
+101,201,15,Orchardline,Ori,water terraces,public_use,0.528,0.852,0.163504,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is absent_saved.
+102,203,15,Hearthline,Sova,hearth ceramics,public_use,0.492,0.832,0.18361,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is idle_nearby.
+103,205,15,Marketline,Melo,measure weights,inspect_and_teach,0.474,0.96,0.056971,True,True,False,melo-keth keeps measure weights public-use rules active while avatar is absent_saved.
+104,207,15,Orchardline,Ori,water terraces,inspect_and_teach,0.528,0.852,0.165506,True,True,False,lum-melo keeps water terraces public-use rules active while avatar is present_passive.
+105,209,15,Hearthline,Sova,hearth ceramics,inspect_and_teach,0.492,0.836,0.182604,True,True,False,lum-ori keeps hearth ceramics public-use rules active while avatar is present_passive.
+106,211,16,Ledgerline,Nari,seed ledgers,maintain,0.531,1.0,0.017694,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+107,213,16,Rainline,Vonn,weather bells,maintain,0.54,1.0,0.035335,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is present_passive.
+108,215,16,Routeline,Keth,stone bridge joints,public_use,0.483,0.85,0.166458,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is present_passive.
+109,217,16,Ledgerline,Nari,seed ledgers,maintain,0.534,1.0,0.015998,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is absent_saved.
+110,219,16,Rainline,Vonn,weather bells,maintain,0.543,1.0,0.033739,True,True,False,sova-vonn keeps weather bells public-use rules active while avatar is idle_nearby.
+111,221,16,Routeline,Keth,stone bridge joints,inspect_and_teach,0.483,0.854,0.158362,True,True,False,tek-nari keeps stone bridge joints public-use rules active while avatar is absent_saved.
+112,223,16,Ledgerline,Nari,seed ledgers,maintain,0.537,1.0,0.011078,True,True,False,nari-vonn keeps seed ledgers public-use rules active while avatar is idle_nearby.

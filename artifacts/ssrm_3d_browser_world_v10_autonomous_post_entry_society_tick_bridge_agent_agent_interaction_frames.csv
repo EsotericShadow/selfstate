@@ -1,0 +1,113 @@
+interaction_id,tick,day,from_agent,to_agent,from_lineage,to_lineage,interaction_type,shared_object_or_topic,trust_delta,welfare_delta,conflict_present,repair_path_available,memory_written
+1,2,1,Keth,Nari,Routeline,Ledgerline,work_coordination,stone bridge joints with seed ledgers,0.007,0.004,False,True,Keth and Nari record work_coordination without avatar prompt.
+2,4,1,Nari,Vonn,Ledgerline,Rainline,work_coordination,seed ledgers with weather bells,0.007,0.004,False,True,Nari and Vonn record work_coordination without avatar prompt.
+3,6,1,Vonn,Keth,Rainline,Routeline,work_coordination,weather bells with stone bridge joints,0.007,0.004,False,True,Vonn and Keth record work_coordination without avatar prompt.
+4,8,1,Keth,Nari,Routeline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Nari record bounded_dispute without avatar prompt.
+5,10,1,Nari,Vonn,Ledgerline,Rainline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Vonn record teaching_memory without avatar prompt.
+6,12,1,Vonn,Keth,Rainline,Routeline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Keth record teaching_memory without avatar prompt.
+7,14,1,Keth,Nari,Routeline,Ledgerline,work_coordination,stone bridge joints with seed ledgers,0.007,0.004,False,True,Keth and Nari record work_coordination without avatar prompt.
+8,16,2,Ori,Keth,Orchardline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Keth record cooperative_care without avatar prompt.
+9,18,2,Sova,Nari,Hearthline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Nari record bounded_dispute without avatar prompt.
+10,20,2,Melo,Vonn,Marketline,Rainline,work_coordination,measure weights with weather bells,0.007,0.004,False,True,Melo and Vonn record work_coordination without avatar prompt.
+11,22,2,Ori,Keth,Orchardline,Routeline,work_coordination,water terraces with stone bridge joints,0.007,0.004,False,True,Ori and Keth record work_coordination without avatar prompt.
+12,24,2,Sova,Nari,Hearthline,Ledgerline,work_coordination,hearth ceramics with seed ledgers,0.007,0.004,False,True,Sova and Nari record work_coordination without avatar prompt.
+13,26,2,Melo,Vonn,Marketline,Rainline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Vonn record cooperative_care without avatar prompt.
+14,28,2,Ori,Keth,Orchardline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Keth record cooperative_care without avatar prompt.
+15,30,3,Keth,Vonn,Routeline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Vonn record bounded_dispute without avatar prompt.
+16,32,3,Nari,Keth,Ledgerline,Routeline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Keth record teaching_memory without avatar prompt.
+17,34,3,Vonn,Nari,Rainline,Ledgerline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Nari record teaching_memory without avatar prompt.
+18,36,3,Keth,Vonn,Routeline,Rainline,work_coordination,stone bridge joints with weather bells,0.007,0.004,False,True,Keth and Vonn record work_coordination without avatar prompt.
+19,38,3,Nari,Keth,Ledgerline,Routeline,work_coordination,seed ledgers with stone bridge joints,0.007,0.004,False,True,Nari and Keth record work_coordination without avatar prompt.
+20,40,3,Vonn,Nari,Rainline,Ledgerline,work_coordination,weather bells with seed ledgers,0.007,0.004,False,True,Vonn and Nari record work_coordination without avatar prompt.
+21,42,3,Keth,Vonn,Routeline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Vonn record bounded_dispute without avatar prompt.
+22,44,4,Ori,Nari,Orchardline,Ledgerline,work_coordination,water terraces with seed ledgers,0.007,0.004,False,True,Ori and Nari record work_coordination without avatar prompt.
+23,46,4,Sova,Vonn,Hearthline,Rainline,work_coordination,hearth ceramics with weather bells,0.007,0.004,False,True,Sova and Vonn record work_coordination without avatar prompt.
+24,48,4,Melo,Keth,Marketline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Keth record cooperative_care without avatar prompt.
+25,50,4,Ori,Nari,Orchardline,Ledgerline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Nari record cooperative_care without avatar prompt.
+26,52,4,Sova,Vonn,Hearthline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Vonn record bounded_dispute without avatar prompt.
+27,54,4,Melo,Keth,Marketline,Routeline,work_coordination,measure weights with stone bridge joints,0.007,0.004,False,True,Melo and Keth record work_coordination without avatar prompt.
+28,56,4,Ori,Nari,Orchardline,Ledgerline,work_coordination,water terraces with seed ledgers,0.007,0.004,False,True,Ori and Nari record work_coordination without avatar prompt.
+29,58,5,Keth,Keth,Routeline,Routeline,work_coordination,stone bridge joints with stone bridge joints,0.007,0.004,False,True,Keth and Keth record work_coordination without avatar prompt.
+30,60,5,Nari,Nari,Ledgerline,Ledgerline,work_coordination,seed ledgers with seed ledgers,0.007,0.004,False,True,Nari and Nari record work_coordination without avatar prompt.
+31,62,5,Vonn,Vonn,Rainline,Rainline,work_coordination,weather bells with weather bells,0.007,0.004,False,True,Vonn and Vonn record work_coordination without avatar prompt.
+32,64,5,Keth,Keth,Routeline,Routeline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Keth record bounded_dispute without avatar prompt.
+33,66,5,Nari,Nari,Ledgerline,Ledgerline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Nari record teaching_memory without avatar prompt.
+34,68,5,Vonn,Vonn,Rainline,Rainline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Vonn record teaching_memory without avatar prompt.
+35,70,5,Keth,Keth,Routeline,Routeline,work_coordination,stone bridge joints with stone bridge joints,0.007,0.004,False,True,Keth and Keth record work_coordination without avatar prompt.
+36,72,6,Ori,Vonn,Orchardline,Rainline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Vonn record cooperative_care without avatar prompt.
+37,74,6,Sova,Keth,Hearthline,Routeline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Keth record bounded_dispute without avatar prompt.
+38,76,6,Melo,Nari,Marketline,Ledgerline,work_coordination,measure weights with seed ledgers,0.007,0.004,False,True,Melo and Nari record work_coordination without avatar prompt.
+39,78,6,Ori,Vonn,Orchardline,Rainline,work_coordination,water terraces with weather bells,0.007,0.004,False,True,Ori and Vonn record work_coordination without avatar prompt.
+40,80,6,Sova,Keth,Hearthline,Routeline,work_coordination,hearth ceramics with stone bridge joints,0.007,0.004,False,True,Sova and Keth record work_coordination without avatar prompt.
+41,82,6,Melo,Nari,Marketline,Ledgerline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Nari record cooperative_care without avatar prompt.
+42,84,6,Ori,Vonn,Orchardline,Rainline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Vonn record cooperative_care without avatar prompt.
+43,86,7,Keth,Nari,Routeline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Nari record bounded_dispute without avatar prompt.
+44,88,7,Nari,Vonn,Ledgerline,Rainline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Vonn record teaching_memory without avatar prompt.
+45,90,7,Vonn,Keth,Rainline,Routeline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Keth record teaching_memory without avatar prompt.
+46,92,7,Keth,Nari,Routeline,Ledgerline,work_coordination,stone bridge joints with seed ledgers,0.007,0.004,False,True,Keth and Nari record work_coordination without avatar prompt.
+47,94,7,Nari,Vonn,Ledgerline,Rainline,work_coordination,seed ledgers with weather bells,0.007,0.004,False,True,Nari and Vonn record work_coordination without avatar prompt.
+48,96,7,Vonn,Keth,Rainline,Routeline,work_coordination,weather bells with stone bridge joints,0.007,0.004,False,True,Vonn and Keth record work_coordination without avatar prompt.
+49,98,7,Keth,Nari,Routeline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Nari record bounded_dispute without avatar prompt.
+50,100,8,Ori,Keth,Orchardline,Routeline,work_coordination,water terraces with stone bridge joints,0.007,0.004,False,True,Ori and Keth record work_coordination without avatar prompt.
+51,102,8,Sova,Nari,Hearthline,Ledgerline,work_coordination,hearth ceramics with seed ledgers,0.007,0.004,False,True,Sova and Nari record work_coordination without avatar prompt.
+52,104,8,Melo,Vonn,Marketline,Rainline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Vonn record cooperative_care without avatar prompt.
+53,106,8,Ori,Keth,Orchardline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Keth record cooperative_care without avatar prompt.
+54,108,8,Sova,Nari,Hearthline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Nari record bounded_dispute without avatar prompt.
+55,110,8,Melo,Vonn,Marketline,Rainline,work_coordination,measure weights with weather bells,0.007,0.004,False,True,Melo and Vonn record work_coordination without avatar prompt.
+56,112,8,Ori,Keth,Orchardline,Routeline,work_coordination,water terraces with stone bridge joints,0.007,0.004,False,True,Ori and Keth record work_coordination without avatar prompt.
+57,114,9,Keth,Vonn,Routeline,Rainline,work_coordination,stone bridge joints with weather bells,0.007,0.004,False,True,Keth and Vonn record work_coordination without avatar prompt.
+58,116,9,Nari,Keth,Ledgerline,Routeline,work_coordination,seed ledgers with stone bridge joints,0.007,0.004,False,True,Nari and Keth record work_coordination without avatar prompt.
+59,118,9,Vonn,Nari,Rainline,Ledgerline,work_coordination,weather bells with seed ledgers,0.007,0.004,False,True,Vonn and Nari record work_coordination without avatar prompt.
+60,120,9,Keth,Vonn,Routeline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Vonn record bounded_dispute without avatar prompt.
+61,122,9,Nari,Keth,Ledgerline,Routeline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Keth record teaching_memory without avatar prompt.
+62,124,9,Vonn,Nari,Rainline,Ledgerline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Nari record teaching_memory without avatar prompt.
+63,126,9,Keth,Vonn,Routeline,Rainline,work_coordination,stone bridge joints with weather bells,0.007,0.004,False,True,Keth and Vonn record work_coordination without avatar prompt.
+64,128,10,Ori,Nari,Orchardline,Ledgerline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Nari record cooperative_care without avatar prompt.
+65,130,10,Sova,Vonn,Hearthline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Vonn record bounded_dispute without avatar prompt.
+66,132,10,Melo,Keth,Marketline,Routeline,work_coordination,measure weights with stone bridge joints,0.007,0.004,False,True,Melo and Keth record work_coordination without avatar prompt.
+67,134,10,Ori,Nari,Orchardline,Ledgerline,work_coordination,water terraces with seed ledgers,0.007,0.004,False,True,Ori and Nari record work_coordination without avatar prompt.
+68,136,10,Sova,Vonn,Hearthline,Rainline,work_coordination,hearth ceramics with weather bells,0.007,0.004,False,True,Sova and Vonn record work_coordination without avatar prompt.
+69,138,10,Melo,Keth,Marketline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Keth record cooperative_care without avatar prompt.
+70,140,10,Ori,Nari,Orchardline,Ledgerline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Nari record cooperative_care without avatar prompt.
+71,142,11,Keth,Keth,Routeline,Routeline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Keth record bounded_dispute without avatar prompt.
+72,144,11,Nari,Nari,Ledgerline,Ledgerline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Nari record teaching_memory without avatar prompt.
+73,146,11,Vonn,Vonn,Rainline,Rainline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Vonn record teaching_memory without avatar prompt.
+74,148,11,Keth,Keth,Routeline,Routeline,work_coordination,stone bridge joints with stone bridge joints,0.007,0.004,False,True,Keth and Keth record work_coordination without avatar prompt.
+75,150,11,Nari,Nari,Ledgerline,Ledgerline,work_coordination,seed ledgers with seed ledgers,0.007,0.004,False,True,Nari and Nari record work_coordination without avatar prompt.
+76,152,11,Vonn,Vonn,Rainline,Rainline,work_coordination,weather bells with weather bells,0.007,0.004,False,True,Vonn and Vonn record work_coordination without avatar prompt.
+77,154,11,Keth,Keth,Routeline,Routeline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Keth record bounded_dispute without avatar prompt.
+78,156,12,Ori,Vonn,Orchardline,Rainline,work_coordination,water terraces with weather bells,0.007,0.004,False,True,Ori and Vonn record work_coordination without avatar prompt.
+79,158,12,Sova,Keth,Hearthline,Routeline,work_coordination,hearth ceramics with stone bridge joints,0.007,0.004,False,True,Sova and Keth record work_coordination without avatar prompt.
+80,160,12,Melo,Nari,Marketline,Ledgerline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Nari record cooperative_care without avatar prompt.
+81,162,12,Ori,Vonn,Orchardline,Rainline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Vonn record cooperative_care without avatar prompt.
+82,164,12,Sova,Keth,Hearthline,Routeline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Keth record bounded_dispute without avatar prompt.
+83,166,12,Melo,Nari,Marketline,Ledgerline,work_coordination,measure weights with seed ledgers,0.007,0.004,False,True,Melo and Nari record work_coordination without avatar prompt.
+84,168,12,Ori,Vonn,Orchardline,Rainline,work_coordination,water terraces with weather bells,0.007,0.004,False,True,Ori and Vonn record work_coordination without avatar prompt.
+85,170,13,Keth,Nari,Routeline,Ledgerline,work_coordination,stone bridge joints with seed ledgers,0.007,0.004,False,True,Keth and Nari record work_coordination without avatar prompt.
+86,172,13,Nari,Vonn,Ledgerline,Rainline,work_coordination,seed ledgers with weather bells,0.007,0.004,False,True,Nari and Vonn record work_coordination without avatar prompt.
+87,174,13,Vonn,Keth,Rainline,Routeline,work_coordination,weather bells with stone bridge joints,0.007,0.004,False,True,Vonn and Keth record work_coordination without avatar prompt.
+88,176,13,Keth,Nari,Routeline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Nari record bounded_dispute without avatar prompt.
+89,178,13,Nari,Vonn,Ledgerline,Rainline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Vonn record teaching_memory without avatar prompt.
+90,180,13,Vonn,Keth,Rainline,Routeline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Keth record teaching_memory without avatar prompt.
+91,182,13,Keth,Nari,Routeline,Ledgerline,work_coordination,stone bridge joints with seed ledgers,0.007,0.004,False,True,Keth and Nari record work_coordination without avatar prompt.
+92,184,14,Ori,Keth,Orchardline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Keth record cooperative_care without avatar prompt.
+93,186,14,Sova,Nari,Hearthline,Ledgerline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Nari record bounded_dispute without avatar prompt.
+94,188,14,Melo,Vonn,Marketline,Rainline,work_coordination,measure weights with weather bells,0.007,0.004,False,True,Melo and Vonn record work_coordination without avatar prompt.
+95,190,14,Ori,Keth,Orchardline,Routeline,work_coordination,water terraces with stone bridge joints,0.007,0.004,False,True,Ori and Keth record work_coordination without avatar prompt.
+96,192,14,Sova,Nari,Hearthline,Ledgerline,work_coordination,hearth ceramics with seed ledgers,0.007,0.004,False,True,Sova and Nari record work_coordination without avatar prompt.
+97,194,14,Melo,Vonn,Marketline,Rainline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Vonn record cooperative_care without avatar prompt.
+98,196,14,Ori,Keth,Orchardline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Keth record cooperative_care without avatar prompt.
+99,198,15,Keth,Vonn,Routeline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Vonn record bounded_dispute without avatar prompt.
+100,200,15,Nari,Keth,Ledgerline,Routeline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Nari and Keth record teaching_memory without avatar prompt.
+101,202,15,Vonn,Nari,Rainline,Ledgerline,teaching_memory,public token and archive summary,0.011,0.008,False,True,Vonn and Nari record teaching_memory without avatar prompt.
+102,204,15,Keth,Vonn,Routeline,Rainline,work_coordination,stone bridge joints with weather bells,0.007,0.004,False,True,Keth and Vonn record work_coordination without avatar prompt.
+103,206,15,Nari,Keth,Ledgerline,Routeline,work_coordination,seed ledgers with stone bridge joints,0.007,0.004,False,True,Nari and Keth record work_coordination without avatar prompt.
+104,208,15,Vonn,Nari,Rainline,Ledgerline,work_coordination,weather bells with seed ledgers,0.007,0.004,False,True,Vonn and Nari record work_coordination without avatar prompt.
+105,210,15,Keth,Vonn,Routeline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Keth and Vonn record bounded_dispute without avatar prompt.
+106,212,16,Ori,Nari,Orchardline,Ledgerline,work_coordination,water terraces with seed ledgers,0.007,0.004,False,True,Ori and Nari record work_coordination without avatar prompt.
+107,214,16,Sova,Vonn,Hearthline,Rainline,work_coordination,hearth ceramics with weather bells,0.007,0.004,False,True,Sova and Vonn record work_coordination without avatar prompt.
+108,216,16,Melo,Keth,Marketline,Routeline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Melo and Keth record cooperative_care without avatar prompt.
+109,218,16,Ori,Nari,Orchardline,Ledgerline,cooperative_care,water cup and rest timing,0.018,0.025,False,True,Ori and Nari record cooperative_care without avatar prompt.
+110,220,16,Sova,Vonn,Hearthline,Rainline,bounded_dispute,public debt and boundary wording,-0.006,-0.004,True,True,Sova and Vonn record bounded_dispute without avatar prompt.
+111,222,16,Melo,Keth,Marketline,Routeline,work_coordination,measure weights with stone bridge joints,0.007,0.004,False,True,Melo and Keth record work_coordination without avatar prompt.
+112,224,16,Ori,Nari,Orchardline,Ledgerline,work_coordination,water terraces with seed ledgers,0.007,0.004,False,True,Ori and Nari record work_coordination without avatar prompt.

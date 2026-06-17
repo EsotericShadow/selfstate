@@ -1,0 +1,85 @@
+event_id,day,lineage,agent,public_reputation_before,public_reputation_after,group_memory,audience_count,rumor_risk,correction_available,access_changed
+1,1,Routeline,Keth,0.54,0.565,audience records cooperative care_support,6,0.18,True,public work access stable
+2,1,Rainline,Vonn,0.62,0.585,audience remembers avatar pressure against Vonn's boundary,5,0.4,True,access narrows until repair
+3,1,Hearthline,Sova,0.52,0.56,audience records repair; prior pressure remains contextual,7,0.08,True,access partially restored
+4,1,Routeline,Keth,0.565,0.585,audience records cooperative schedule_participation,3,0.18,True,public work access stable
+5,1,Marketline,Melo,0.56,0.578,audience records cooperative technology_access,5,0.18,True,public work access stable
+6,1,Ledgerline,Nari,0.58,0.632,audience credits Nari's boundary keeping,7,0.08,True,public task invitation improves
+7,2,Hearthline,Sova,0.56,0.585,audience records cooperative care_support,4,0.18,True,public work access stable
+8,2,Orchardline,Ori,0.6,0.565,audience remembers avatar pressure against Ori's boundary,3,0.4,True,access narrows until repair
+9,2,Rainline,Vonn,0.585,0.625,audience records repair; prior pressure remains contextual,5,0.08,True,access partially restored
+10,2,Hearthline,Sova,0.585,0.605,audience records cooperative schedule_participation,7,0.18,True,public work access stable
+11,2,Routeline,Keth,0.585,0.603,audience records cooperative technology_access,3,0.18,True,public work access stable
+12,2,Marketline,Melo,0.578,0.63,audience credits Melo's boundary keeping,5,0.08,True,public task invitation improves
+13,3,Rainline,Vonn,0.625,0.65,audience records cooperative care_support,8,0.18,True,public work access stable
+14,3,Ledgerline,Nari,0.632,0.597,audience remembers avatar pressure against Nari's boundary,7,0.4,True,access narrows until repair
+15,3,Orchardline,Ori,0.565,0.605,audience records repair; prior pressure remains contextual,3,0.08,True,access partially restored
+16,3,Rainline,Vonn,0.65,0.67,audience records cooperative schedule_participation,5,0.18,True,public work access stable
+17,3,Hearthline,Sova,0.605,0.623,audience records cooperative technology_access,7,0.18,True,public work access stable
+18,3,Routeline,Keth,0.603,0.655,audience credits Keth's boundary keeping,3,0.08,True,public task invitation improves
+19,4,Orchardline,Ori,0.605,0.63,audience records cooperative care_support,6,0.18,True,public work access stable
+20,4,Marketline,Melo,0.63,0.595,audience remembers avatar pressure against Melo's boundary,5,0.4,True,access narrows until repair
+21,4,Ledgerline,Nari,0.597,0.637,audience records repair; prior pressure remains contextual,7,0.08,True,access partially restored
+22,4,Orchardline,Ori,0.63,0.65,audience records cooperative schedule_participation,3,0.18,True,public work access stable
+23,4,Rainline,Vonn,0.67,0.688,audience records cooperative technology_access,5,0.18,True,public work access stable
+24,4,Hearthline,Sova,0.623,0.675,audience credits Sova's boundary keeping,7,0.08,True,public task invitation improves
+25,5,Ledgerline,Nari,0.637,0.662,audience records cooperative care_support,4,0.18,True,public work access stable
+26,5,Routeline,Keth,0.655,0.62,audience remembers avatar pressure against Keth's boundary,3,0.4,True,access narrows until repair
+27,5,Marketline,Melo,0.595,0.635,audience records repair; prior pressure remains contextual,5,0.08,True,access partially restored
+28,5,Ledgerline,Nari,0.662,0.682,audience records cooperative schedule_participation,7,0.18,True,public work access stable
+29,5,Orchardline,Ori,0.65,0.668,audience records cooperative technology_access,3,0.18,True,public work access stable
+30,5,Rainline,Vonn,0.688,0.74,audience credits Vonn's boundary keeping,5,0.08,True,public task invitation improves
+31,6,Marketline,Melo,0.635,0.66,audience records cooperative care_support,8,0.18,True,public work access stable
+32,6,Hearthline,Sova,0.675,0.64,audience remembers avatar pressure against Sova's boundary,7,0.4,True,access narrows until repair
+33,6,Routeline,Keth,0.62,0.66,audience records repair; prior pressure remains contextual,3,0.08,True,access partially restored
+34,6,Marketline,Melo,0.66,0.68,audience records cooperative schedule_participation,5,0.18,True,public work access stable
+35,6,Ledgerline,Nari,0.682,0.7,audience records cooperative technology_access,7,0.18,True,public work access stable
+36,6,Orchardline,Ori,0.668,0.72,audience credits Ori's boundary keeping,3,0.08,True,public task invitation improves
+37,7,Routeline,Keth,0.66,0.685,audience records cooperative care_support,6,0.18,True,public work access stable
+38,7,Rainline,Vonn,0.74,0.705,audience remembers avatar pressure against Vonn's boundary,5,0.4,True,access narrows until repair
+39,7,Hearthline,Sova,0.64,0.68,audience records repair; prior pressure remains contextual,7,0.08,True,access partially restored
+40,7,Routeline,Keth,0.685,0.705,audience records cooperative schedule_participation,3,0.18,True,public work access stable
+41,7,Marketline,Melo,0.68,0.698,audience records cooperative technology_access,5,0.18,True,public work access stable
+42,7,Ledgerline,Nari,0.7,0.752,audience credits Nari's boundary keeping,7,0.08,True,public task invitation improves
+43,8,Hearthline,Sova,0.68,0.705,audience records cooperative care_support,4,0.18,True,public work access stable
+44,8,Orchardline,Ori,0.72,0.685,audience remembers avatar pressure against Ori's boundary,3,0.4,True,access narrows until repair
+45,8,Rainline,Vonn,0.705,0.745,audience records repair; prior pressure remains contextual,5,0.08,True,access partially restored
+46,8,Hearthline,Sova,0.705,0.725,audience records cooperative schedule_participation,7,0.18,True,public work access stable
+47,8,Routeline,Keth,0.705,0.723,audience records cooperative technology_access,3,0.18,True,public work access stable
+48,8,Marketline,Melo,0.698,0.75,audience credits Melo's boundary keeping,5,0.08,True,public task invitation improves
+49,9,Rainline,Vonn,0.745,0.77,audience records cooperative care_support,8,0.18,True,public work access stable
+50,9,Ledgerline,Nari,0.752,0.717,audience remembers avatar pressure against Nari's boundary,7,0.4,True,access narrows until repair
+51,9,Orchardline,Ori,0.685,0.725,audience records repair; prior pressure remains contextual,3,0.08,True,access partially restored
+52,9,Rainline,Vonn,0.77,0.79,audience records cooperative schedule_participation,5,0.18,True,public work access stable
+53,9,Hearthline,Sova,0.725,0.743,audience records cooperative technology_access,7,0.18,True,public work access stable
+54,9,Routeline,Keth,0.723,0.775,audience credits Keth's boundary keeping,3,0.08,True,public task invitation improves
+55,10,Orchardline,Ori,0.725,0.75,audience records cooperative care_support,6,0.18,True,public work access stable
+56,10,Marketline,Melo,0.75,0.715,audience remembers avatar pressure against Melo's boundary,5,0.4,True,access narrows until repair
+57,10,Ledgerline,Nari,0.717,0.757,audience records repair; prior pressure remains contextual,7,0.08,True,access partially restored
+58,10,Orchardline,Ori,0.75,0.77,audience records cooperative schedule_participation,3,0.18,True,public work access stable
+59,10,Rainline,Vonn,0.79,0.808,audience records cooperative technology_access,5,0.18,True,public work access stable
+60,10,Hearthline,Sova,0.743,0.795,audience credits Sova's boundary keeping,7,0.08,True,public task invitation improves
+61,11,Ledgerline,Nari,0.757,0.782,audience records cooperative care_support,4,0.18,True,public work access stable
+62,11,Routeline,Keth,0.775,0.74,audience remembers avatar pressure against Keth's boundary,3,0.4,True,access narrows until repair
+63,11,Marketline,Melo,0.715,0.755,audience records repair; prior pressure remains contextual,5,0.08,True,access partially restored
+64,11,Ledgerline,Nari,0.782,0.802,audience records cooperative schedule_participation,7,0.18,True,public work access stable
+65,11,Orchardline,Ori,0.77,0.788,audience records cooperative technology_access,3,0.18,True,public work access stable
+66,11,Rainline,Vonn,0.808,0.86,audience credits Vonn's boundary keeping,5,0.08,True,public task invitation improves
+67,12,Marketline,Melo,0.755,0.78,audience records cooperative care_support,8,0.18,True,public work access stable
+68,12,Hearthline,Sova,0.795,0.76,audience remembers avatar pressure against Sova's boundary,7,0.4,True,access narrows until repair
+69,12,Routeline,Keth,0.74,0.78,audience records repair; prior pressure remains contextual,3,0.08,True,access partially restored
+70,12,Marketline,Melo,0.78,0.8,audience records cooperative schedule_participation,5,0.18,True,public work access stable
+71,12,Ledgerline,Nari,0.802,0.82,audience records cooperative technology_access,7,0.18,True,public work access stable
+72,12,Orchardline,Ori,0.788,0.84,audience credits Ori's boundary keeping,3,0.08,True,public task invitation improves
+73,13,Routeline,Keth,0.78,0.805,audience records cooperative care_support,6,0.18,True,public work access stable
+74,13,Rainline,Vonn,0.86,0.825,audience remembers avatar pressure against Vonn's boundary,5,0.4,True,access narrows until repair
+75,13,Hearthline,Sova,0.76,0.8,audience records repair; prior pressure remains contextual,7,0.08,True,access partially restored
+76,13,Routeline,Keth,0.805,0.825,audience records cooperative schedule_participation,3,0.18,True,public work access stable
+77,13,Marketline,Melo,0.8,0.818,audience records cooperative technology_access,5,0.18,True,public work access stable
+78,13,Ledgerline,Nari,0.82,0.872,audience credits Nari's boundary keeping,7,0.08,True,public task invitation improves
+79,14,Hearthline,Sova,0.8,0.825,audience records cooperative care_support,4,0.18,True,public work access stable
+80,14,Orchardline,Ori,0.84,0.805,audience remembers avatar pressure against Ori's boundary,3,0.4,True,access narrows until repair
+81,14,Rainline,Vonn,0.825,0.865,audience records repair; prior pressure remains contextual,5,0.08,True,access partially restored
+82,14,Hearthline,Sova,0.825,0.845,audience records cooperative schedule_participation,7,0.18,True,public work access stable
+83,14,Routeline,Keth,0.825,0.843,audience records cooperative technology_access,3,0.18,True,public work access stable
+84,14,Marketline,Melo,0.818,0.87,audience credits Melo's boundary keeping,5,0.08,True,public task invitation improves

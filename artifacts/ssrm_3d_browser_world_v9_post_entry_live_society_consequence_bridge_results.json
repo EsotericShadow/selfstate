@@ -1,0 +1,60 @@
+{
+  "ablations": {
+    "no_avatar_action_consequences": 0.644807,
+    "no_frequency_flower_post_entry_rhythm": 0.924807,
+    "no_lineage_memory_mutation": 0.704807,
+    "no_overreach_repair": 0.794807,
+    "no_public_reputation": 0.814807,
+    "no_relationship_welfare_coupling": 0.674807,
+    "no_replay_save_restore": 0.834807,
+    "no_routine_schedule_mutation": 0.744807,
+    "no_source_entry_continuity": 0.784807,
+    "no_technology_access_policy": 0.804807
+  },
+  "counts": {
+    "browser_world_v9_ticks": 140,
+    "lineage_memory_update_frames": 140,
+    "post_entry_avatar_action_frames": 140,
+    "public_reputation_frames": 84,
+    "relationship_welfare_consequence_frames": 140,
+    "replay_post_entry_frames": 140,
+    "routine_schedule_update_frames": 84,
+    "technology_access_consequence_frames": 84
+  },
+  "honest_limits": [
+    "This is deterministic post-entry society consequence wiring, not subjective consciousness.",
+    "Typed acts use seeded parser routes and do not call an LLM or provide autonomous natural language.",
+    "Consent, refusal, and reputation are simulated functional boundaries, not real consent or moral standing.",
+    "Multi-day consequences are generated traces, not an open-ended civilization engine.",
+    "The browser page is a playable 2D/2.5D state surface, not complete 3D physics.",
+    "Welfare variables are bounded control states with recovery paths, not proof of experienced welfare.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof."
+  ],
+  "metrics": {
+    "avatar_action_to_world_state_binding": 1.0,
+    "browser_save_restore_consequence_integrity": 1.0,
+    "browser_world_v9_post_entry_society_readiness": 0.984807,
+    "browser_world_v9_surface_available": 1.0,
+    "frequency_flower_post_entry_rhythm": 1.0,
+    "lineage_memory_mutation_rate": 1.0,
+    "mean_post_entry_channel_score": 0.981635,
+    "multi_day_span_coverage": 1.0,
+    "overreach_repair_path": 0.928571,
+    "post_entry_consequence_surface": 1,
+    "private_workspace_boundary": 0.9,
+    "public_reputation_persistence": 1.0,
+    "relationship_welfare_coupling": 1.0,
+    "replay_persistence_integrity": 1.0,
+    "routine_schedule_mutation_integrity": 1.0,
+    "source_playable_entry_continuity": 1.0,
+    "technology_access_policy_integrity": 1.0,
+    "typed_intent_consequence_confidence": 0.877581,
+    "weakest_channel_score": 0.877581
+  },
+  "name": "SSRM-3D Browser World v9 Post-Entry Live Society Consequence Bridge",
+  "next_gate": "browser world v10 with autonomous post-entry society ticks that continue without avatar input while preserving consequence memory, needs, schedules, technology access, and welfare guardrails",
+  "report": 249,
+  "seed": 20260862,
+  "source_results": "artifacts/ssrm_3d_browser_world_v8_playable_avatar_entry_ceremony_bridge_results.json",
+  "verdict": "pass"
+}

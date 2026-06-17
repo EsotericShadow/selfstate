@@ -1,0 +1,16 @@
+condition,frame_count,playable_loop_events,avatar_movement_tick_rate,spatial_collision_guard_rate,agent_proximity_detection_rate,consent_prompt_rate,interaction_affordance_gating_rate,spawn_lock_release_rate,sensory_view_update_rate,agent_body_reaction_rate,route_navigation_rate,tool_object_interaction_prompt_rate,weather_effect_display_rate,private_workspace_privacy_rate,frequency_flower_movement_rhythm_rate,browser_playable_loop_replay_rate,trace_integrity,playable_loop_readiness
+integrated_live_browser_playable_loop_avatar_movement_collision_proximity,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_avatar_movement,12,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,0.13
+no_collision_guard,12,12,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_proximity_detection,12,12,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.77
+no_consent_prompts,12,12,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_affordance_gating,12,12,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_spawn_lock_release,12,12,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.84
+no_sensory_view_update,12,12,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_agent_body_reactions,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_route_navigation,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_tool_prompts,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_weather_display,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_privacy_filter,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.94
+no_frequency_flower_binding,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95
+no_browser_replay,12,12,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.96

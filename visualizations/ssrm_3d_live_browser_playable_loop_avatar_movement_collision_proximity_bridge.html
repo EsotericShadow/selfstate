@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D Live Browser Playable Loop Avatar Movement Collision Proximity Bridge</title>
+  <style>
+    :root {
+      --ink: #17211d;
+      --paper: #f4ecd6;
+      --panel: rgba(255, 250, 232, .88);
+      --leaf: #536f45;
+      --rust: #a35b3f;
+      --gold: #c89b3f;
+      --blue: #3f7184;
+      --line: rgba(24,33,29,.17);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(200,155,63,.30), transparent 26rem),
+        radial-gradient(circle at 82% 15%, rgba(63,113,132,.24), transparent 25rem),
+        radial-gradient(circle at 52% 86%, rgba(83,111,69,.25), transparent 34rem),
+        linear-gradient(135deg, #f8efd9 0%, #e1d0aa 58%, #c8af7d 100%);
+    }
+    header { padding: 2.3rem clamp(1rem, 4vw, 4rem) 1rem; }
+    h1 { max-width: 1180px; margin: 0; font-size: clamp(2rem, 5vw, 5.4rem); line-height: .9; letter-spacing: -.055em; }
+    .sub { max-width: 1000px; margin: 1rem 0 0; line-height: 1.55; font-size: 1.08rem; }
+    main { padding: 1rem clamp(1rem, 4vw, 4rem) 4rem; display: grid; gap: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; box-shadow: 0 20px 54px rgba(24,33,29,.13); backdrop-filter: blur(10px); }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    h2 { margin: 0 0 .75rem; color: var(--leaf); text-transform: uppercase; letter-spacing: .13em; font-size: .95rem; }
+    .metric { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .6rem; padding: .38rem 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+    .metric:last-child { border-bottom: 0; }
+    .stage { min-height: 380px; position: relative; overflow: hidden; background: radial-gradient(circle, rgba(255,255,255,.42), rgba(255,255,255,.18)); border-radius: 1rem; border: 1px solid var(--line); }
+    .agent, .avatar, .tool { position: absolute; border-radius: 50%; transform: translate(-50%, -50%); }
+    .agent { width: 1rem; height: 1rem; background: var(--rust); box-shadow: 0 0 0 9px rgba(163,91,63,.14); }
+    .tool { width: .8rem; height: .8rem; background: var(--gold); box-shadow: 0 0 0 7px rgba(200,155,63,.13); }
+    .avatar { width: 1.15rem; height: 1.15rem; background: var(--blue); border: 3px solid rgba(255,255,255,.8); box-shadow: 0 0 0 11px rgba(63,113,132,.15); }
+    .label { position: absolute; transform: translate(.75rem, -.5rem); font-size: .8rem; white-space: nowrap; }
+    .events { display: grid; gap: .75rem; max-height: 680px; overflow: auto; padding-right: .25rem; }
+    .event { border-left: 5px solid var(--gold); background: rgba(255,255,255,.43); padding: .75rem; border-radius: .85rem; }
+    .event.prompt { border-color: var(--rust); }
+    .event small { display: block; color: rgba(24,33,29,.66); margin-top: .25rem; }
+    .pill { display: inline-block; margin: .16rem .25rem .16rem 0; padding: .18rem .5rem; border-radius: 999px; background: rgba(83,111,69,.12); color: var(--leaf); font-size: .82rem; }
+    @media (max-width: 850px) { .half, .third { grid-column: span 12; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Live browser playable loop seed</h1>
+    <p class="sub">Report 203 replay: avatar movement frames over the spatial world seed, with collision guards, agent proximity, consent-aware prompts, gated affordances, sensory view updates, and spawn-lock release.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card third"><h2>Verdict</h2><div id="verdict"></div></div>
+      <div class="card third"><h2>Loop Metrics</h2><div id="metrics"></div></div>
+      <div class="card third"><h2>Ablation Losses</h2><div id="losses"></div></div>
+      <div class="card half"><h2>Loop Stage</h2><div id="stage" class="stage"></div></div>
+      <div class="card half"><h2>Current Frame</h2><div id="current"></div></div>
+      <div class="card wide"><h2>Playable Loop Replay</h2><div id="events" class="events"></div></div>
+    </section>
+  </main>
+  <script src="../artifacts/ssrm_3d_live_browser_playable_loop_avatar_movement_collision_proximity_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_live_browser_playable_loop_avatar_movement_collision_proximity_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_live_browser_playable_loop_avatar_movement_collision_proximity_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_LIVE_BROWSER_PLAYABLE_LOOP_AVATAR_MOVEMENT_COLLISION_PROXIMITY_RESULTS;
+    const trace = window.SSRM_3D_LIVE_BROWSER_PLAYABLE_LOOP_AVATAR_MOVEMENT_COLLISION_PROXIMITY_TRACE;
+    const state = window.SSRM_3D_LIVE_BROWSER_PLAYABLE_LOOP_AVATAR_MOVEMENT_COLLISION_PROXIMITY_STATE;
+    const verdict = results.verdict;
+    const full = results.rows.find(r => r.condition === verdict.full_condition);
+    function metric(label, value) { return `<div class="metric"><span>${label}</span><strong>${Number(value).toFixed(6)}</strong></div>`; }
+    function sx(x) { return 50 + x * 1.25; }
+    function sz(z) { return 50 + z * 1.25; }
+    document.getElementById('verdict').innerHTML = [metric('verdict', verdict.verdict === 'pass' ? 1 : 0), metric('readiness', verdict.full_playable_loop_readiness), metric('frames', full.frame_count), metric('events', full.playable_loop_events)].join('');
+    document.getElementById('metrics').innerHTML = [
+      ['movement', full.avatar_movement_tick_rate], ['collision', full.spatial_collision_guard_rate], ['proximity', full.agent_proximity_detection_rate], ['consent prompts', full.consent_prompt_rate], ['affordance gates', full.interaction_affordance_gating_rate], ['spawn release', full.spawn_lock_release_rate], ['sensory view', full.sensory_view_update_rate], ['privacy', full.private_workspace_privacy_rate]
+    ].map(([k,v]) => metric(k,v)).join('');
+    document.getElementById('losses').innerHTML = Object.entries(verdict).filter(([k]) => k.endsWith('_loss')).slice(0, 10).map(([k,v]) => metric(k.replaceAll('_',' '), v)).join('');
+    const stage = document.getElementById('stage');
+    (state.playable_loop_state.agents || []).forEach(a => {
+      const p = a.body.position;
+      const n = document.createElement('div'); n.className = 'agent'; n.style.left = `${sx(p.x)}%`; n.style.top = `${sz(p.z)}%`; stage.appendChild(n);
+      const l = document.createElement('div'); l.className = 'label'; l.style.left = `${sx(p.x)}%`; l.style.top = `${sz(p.z)}%`; l.textContent = a.lineage; stage.appendChild(l);
+    });
+    (state.playable_loop_state.tools || []).forEach(t => {
+      const p = t.position;
+      const n = document.createElement('div'); n.className = 'tool'; n.style.left = `${sx(p.x)}%`; n.style.top = `${sz(p.z)}%`; stage.appendChild(n);
+    });
+    trace.forEach(ev => { if (ev.avatar_position) { const n = document.createElement('div'); n.className = 'avatar'; n.style.left = `${sx(ev.avatar_position.x)}%`; n.style.top = `${sz(ev.avatar_position.z)}%`; n.style.opacity = 0.25 + ev.frame / (trace.length * 1.5); stage.appendChild(n); } });
+    const last = trace[trace.length - 1];
+    document.getElementById('current').innerHTML = [metric('spawn released', last.spawn_state === 'released_for_loop' ? 1 : 0), metric('nearest distance', last.agent_proximity ? last.agent_proximity.distance_m : 999), metric('prompt visible', last.consent_prompt ? 1 : 0), metric('affordances', last.gated_affordances ? last.gated_affordances.length : 0), metric('frequency', last.frequency_hz || 0)].join('');
+    document.getElementById('events').innerHTML = trace.map(ev => `<article class="event ${ev.consent_prompt ? 'prompt' : ''}">
+      <strong>Frame ${ev.frame}: ${ev.spawn_state}</strong>
+      <small>avatar (${ev.avatar_position ? ev.avatar_position.x : 'n/a'}, ${ev.avatar_position ? ev.avatar_position.z : 'n/a'}) · ${ev.flower_path || 'unbound'}</small>
+      <span class="pill">near ${ev.agent_proximity ? ev.agent_proximity.agent_id : 'none'}</span>
+      <span class="pill">prompt ${Boolean(ev.consent_prompt)}</span>
+      <span class="pill">collision ${ev.collision_guard ? ev.collision_guard.resolved : false}</span>
+      <span class="pill">tool ${ev.tool_prompt ? ev.tool_prompt.tool_id : 'none'}</span>
+      <span class="pill">weather ${ev.weather_display ? ev.weather_display.weather : 'none'}</span>
+      <span class="pill">private hidden ${ev.private_workspace_hidden}</span>
+    </article>`).join('');
+  </script>
+</body>
+</html>

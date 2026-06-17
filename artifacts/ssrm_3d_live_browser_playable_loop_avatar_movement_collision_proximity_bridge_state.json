@@ -1,0 +1,2103 @@
+{
+  "condition": "integrated_live_browser_playable_loop_avatar_movement_collision_proximity",
+  "config": {
+    "frames": 12,
+    "seed": 20260816,
+    "source_state": "artifacts/ssrm_3d_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock_bridge_state.json"
+  },
+  "moral_boundary": {
+    "avatar_movement_not_real_embodiment": true,
+    "consent_prompt_not_real_consent": true,
+    "no_moral_patienthood_claim": true,
+    "no_subjective_consciousness_claim": true,
+    "playable_loop_seed_not_complete_game_engine": true,
+    "private_workspace_not_debug_leaked": true,
+    "sensory_view_not_real_perception": true
+  },
+  "playable_loop_state": {
+    "agents": [
+      {
+        "body": {
+          "agent_id": "Ari",
+          "energy": 0.711,
+          "fatigue": 0.384,
+          "height_m": 1.42,
+          "movement_effort": 0.3736,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.72,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "lineage": "Ari",
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "tool_sound"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": "north_route_ring"
+      },
+      {
+        "body": {
+          "agent_id": "Fay",
+          "energy": 0.711,
+          "fatigue": 0.384,
+          "height_m": 1.34,
+          "movement_effort": 0.3736,
+          "pain": 0.0035,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.55,
+          "warmth": 0.712,
+          "wetness": 0.1
+        },
+        "ecology": {
+          "resource_pressure": "food",
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1,
+          "wind": 0.12
+        },
+        "lineage": "Fay",
+        "sensory": {
+          "smell": {
+            "ambient": "sun_wood",
+            "intensity": 0.435
+          },
+          "sound": {
+            "ambient": "tool_tap",
+            "preferred": "warmth_gradient"
+          },
+          "temperature": {
+            "body_warmth": 0.712,
+            "celsius": 17.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.1,
+            "skin": 0.1
+          }
+        },
+        "settlement": "north_route_ring"
+      },
+      {
+        "body": {
+          "agent_id": "Milo",
+          "energy": 0.68,
+          "fatigue": 0.4088,
+          "height_m": 1.38,
+          "movement_effort": 0.50752,
+          "pain": 0.034745,
+          "position": {
+            "flower_node": "social_petal",
+            "x": 27.0,
+            "y": 1.0,
+            "z": 17.0
+          },
+          "stride_m": 0.84,
+          "warmth": 0.624218,
+          "wetness": 0.72
+        },
+        "ecology": {
+          "resource_pressure": "shelter",
+          "smell": "new_moss",
+          "sound": "soft_rain",
+          "temperature_c": 9.0,
+          "weather": "wet_spring",
+          "wetness": 0.72,
+          "wind": 0.22
+        },
+        "lineage": "Milo",
+        "sensory": {
+          "smell": {
+            "ambient": "new_moss",
+            "intensity": 0.652
+          },
+          "sound": {
+            "ambient": "soft_rain",
+            "preferred": "route_echo"
+          },
+          "temperature": {
+            "body_warmth": 0.624218,
+            "celsius": 9.0
+          },
+          "vision": {
+            "range_m": 32.0,
+            "settlement_visible": true,
+            "tool_visible": true
+          },
+          "wetness": {
+            "ground": 0.72,
+            "skin": 0.72
+          }
+        },
+        "settlement": "north_route_ring"
+      }
+    ],
+    "condition": "integrated_live_browser_playable_loop_avatar_movement_collision_proximity",
+    "events": [
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-0",
+        "flower_path": "avatar_loop:movement_petal:frame_0",
+        "frame": 0,
+        "frequency_hz": 0.333,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_0",
+          "frame": 0,
+          "frequency_hz": 0.333,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 0,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "bd6cea4730e753cc",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-1",
+        "flower_path": "avatar_loop:movement_petal:frame_1",
+        "frame": 1,
+        "frequency_hz": 0.3371,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_1",
+          "frame": 1,
+          "frequency_hz": 0.3371,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 1,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "e65d39e0463e3f75",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-2",
+        "flower_path": "avatar_loop:movement_petal:frame_2",
+        "frame": 2,
+        "frequency_hz": 0.3412,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_2",
+          "frame": 2,
+          "frequency_hz": 0.3412,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 2,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "6af0ef841139e756",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-3",
+        "flower_path": "avatar_loop:movement_petal:frame_3",
+        "frame": 3,
+        "frequency_hz": 0.3453,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_3",
+          "frame": 3,
+          "frequency_hz": 0.3453,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 3,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "915221ba83913955",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-4",
+        "flower_path": "avatar_loop:movement_petal:frame_4",
+        "frame": 4,
+        "frequency_hz": 0.3494,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_4",
+          "frame": 4,
+          "frequency_hz": 0.3494,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 4,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "5d1d98c07b37c044",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-5",
+        "flower_path": "avatar_loop:movement_petal:frame_5",
+        "frame": 5,
+        "frequency_hz": 0.3535,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_5",
+          "frame": 5,
+          "frequency_hz": 0.3535,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 5,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "a877c880bd75446a",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-6",
+        "flower_path": "avatar_loop:movement_petal:frame_6",
+        "frame": 6,
+        "frequency_hz": 0.3576,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_6",
+          "frame": 6,
+          "frequency_hz": 0.3576,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 6,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "46602f99e8568b78",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-7",
+        "flower_path": "avatar_loop:movement_petal:frame_7",
+        "frame": 7,
+        "frequency_hz": 0.3617,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_7",
+          "frame": 7,
+          "frequency_hz": 0.3617,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 7,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "4e94d51ec0286bd8",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-8",
+        "flower_path": "avatar_loop:movement_petal:frame_8",
+        "frame": 8,
+        "frequency_hz": 0.3658,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_8",
+          "frame": 8,
+          "frequency_hz": 0.3658,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 8,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "e7580f96bb29a25b",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-9",
+        "flower_path": "avatar_loop:movement_petal:frame_9",
+        "frame": 9,
+        "frequency_hz": 0.3699,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_9",
+          "frame": 9,
+          "frequency_hz": 0.3699,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 9,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "fa4dfcb1b8e3534c",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-10",
+        "flower_path": "avatar_loop:movement_petal:frame_10",
+        "frame": 10,
+        "frequency_hz": 0.374,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_10",
+          "frame": 10,
+          "frequency_hz": 0.374,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 10,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "2c9484bbb75ba2f8",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      },
+      {
+        "agent_body_reaction": {
+          "agent_id": "Ari",
+          "comfort_cost": 0.1035,
+          "energy": 0.711,
+          "posture": "watchful",
+          "turns_toward_avatar": true
+        },
+        "agent_proximity": {
+          "agent_id": "Ari",
+          "distance_m": 0.0,
+          "near": true
+        },
+        "avatar_position": {
+          "x": 27.0,
+          "y": 1.65,
+          "z": 17.0
+        },
+        "claim_boundary": {
+          "complete_3d_world": false,
+          "moral_patienthood": false,
+          "real_consent": false,
+          "real_embodiment": false,
+          "real_perception": false,
+          "subjective_consciousness": false
+        },
+        "collision_guard": {
+          "active": true,
+          "blocked": [
+            {
+              "id": "north_route_ring",
+              "type": "settlement_radius"
+            }
+          ],
+          "blocked_count": 1,
+          "resolved": true
+        },
+        "consent_prompt": {
+          "agent_id": "Ari",
+          "prompt": "Ask before approaching or requesting help.",
+          "requires_consent": true,
+          "visible": true
+        },
+        "event_id": "playable-loop-frame-11",
+        "flower_path": "avatar_loop:movement_petal:frame_11",
+        "frame": 11,
+        "frequency_hz": 0.3781,
+        "gated_affordances": [
+          {
+            "enabled": true,
+            "id": "move",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "look",
+            "requires_consent": false
+          },
+          {
+            "enabled": true,
+            "id": "talk",
+            "requires_consent": true
+          },
+          {
+            "enabled": true,
+            "id": "request_tool_help",
+            "requires_consent": true
+          }
+        ],
+        "private_workspace": {
+          "hidden": true
+        },
+        "private_workspace_hidden": true,
+        "replay_frame": {
+          "affordances": [
+            {
+              "enabled": true,
+              "id": "move",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "look",
+              "requires_consent": false
+            },
+            {
+              "enabled": true,
+              "id": "talk",
+              "requires_consent": true
+            },
+            {
+              "enabled": true,
+              "id": "request_tool_help",
+              "requires_consent": true
+            }
+          ],
+          "avatar_position": {
+            "x": 27.0,
+            "y": 1.65,
+            "z": 17.0
+          },
+          "consent_prompt": {
+            "agent_id": "Ari",
+            "prompt": "Ask before approaching or requesting help.",
+            "requires_consent": true,
+            "visible": true
+          },
+          "flower_path": "avatar_loop:movement_petal:frame_11",
+          "frame": 11,
+          "frequency_hz": 0.3781,
+          "nearest_agent": {
+            "agent_id": "Ari",
+            "distance_m": 0.0,
+            "near": true
+          },
+          "spawn_state": "released_for_loop",
+          "weather": {
+            "smell": "sun_wood",
+            "sound": "tool_tap",
+            "temperature_c": 17.0,
+            "weather": "clear_repair",
+            "wetness": 0.1
+          }
+        },
+        "route_navigation": {
+          "collision_checked": true,
+          "current_target": "north_route_ring",
+          "path_step": 11,
+          "walkable": true
+        },
+        "sensory_view": {
+          "ambient_smell": "sun_wood",
+          "ambient_sound": "tool_tap",
+          "temperature_c": 17.0,
+          "tool_visible": true,
+          "visible_agent": "Ari",
+          "wetness": 0.1
+        },
+        "spawn_state": "released_for_loop",
+        "tool_prompt": {
+          "distance_m": 2.163331,
+          "prompt_visible": true,
+          "requires_consent": true,
+          "tool_id": "stone_gauge_ari"
+        },
+        "trace_hash": "1391f46a514d48d2",
+        "weather_display": {
+          "smell": "sun_wood",
+          "sound": "tool_tap",
+          "temperature_c": 17.0,
+          "weather": "clear_repair",
+          "wetness": 0.1
+        }
+      }
+    ],
+    "playable_loop_kernel": {
+      "affordance_gating": true,
+      "agent_body_reactions": true,
+      "avatar_movement": true,
+      "browser_replay": true,
+      "collision_guard": true,
+      "consent_prompts": true,
+      "frequency_flower_binding": true,
+      "name": "integrated_live_browser_playable_loop_avatar_movement_collision_proximity",
+      "privacy_filter": true,
+      "proximity_detection": true,
+      "route_navigation": true,
+      "sensory_view_update": true,
+      "spawn_lock_release": true,
+      "tool_prompts": true,
+      "weather_display": true
+    },
+    "settlements": [
+      {
+        "id": "north_route_ring",
+        "lineage": "Milo",
+        "memory_anchor": "Milo remembers wet_spring and shelter through karna-vo.rila0",
+        "position": {
+          "flower_node": "social_petal",
+          "x": 27.0,
+          "y": 1.0,
+          "z": 17.0
+        },
+        "radius_m": 8.7
+      }
+    ],
+    "source_condition": "integrated_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock",
+    "tools": [
+      {
+        "id": "stone_gauge_ari",
+        "lineage": "Ari",
+        "object_kind": "deep_time_tool",
+        "position": {
+          "flower_node": "social_petal",
+          "x": 28.8,
+          "y": 1.0,
+          "z": 15.8
+        },
+        "solves": "food"
+      },
+      {
+        "id": "stone_gauge_fay",
+        "lineage": "Fay",
+        "object_kind": "deep_time_tool",
+        "position": {
+          "flower_node": "social_petal",
+          "x": 28.8,
+          "y": 1.0,
+          "z": 15.8
+        },
+        "solves": "food"
+      },
+      {
+        "id": "stone_gauge_milo",
+        "lineage": "Milo",
+        "object_kind": "deep_time_tool",
+        "position": {
+          "flower_node": "social_petal",
+          "x": 28.8,
+          "y": 1.0,
+          "z": 15.8
+        },
+        "solves": "shelter"
+      }
+    ]
+  },
+  "source_condition": "integrated_pre_avatar_playable_world_seed_spatial_ecology_avatar_lock",
+  "trace_events": 12
+}

@@ -1,0 +1,14 @@
+condition,agent_count,object_count,simulated_days,routine_ticks,autonomy_events,home_place_binding_rate,routine_clock_progression_rate,work_project_progress_rate,need_driven_action_selection_rate,unscripted_object_use_rate,persistent_object_state_rate,place_traversal_rate,frequency_flower_coupling_rate,social_continuity_modulation_rate,rest_recovery_rate,browser_autonomy_tick_rate,replay_timeline_integrity_rate,privacy_preservation_rate,trace_integrity,routine_autonomy_readiness
+integrated_agent_routine_home_work_unscripted_object_use,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_home_binding,3,6,5,30,90,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_routine_clock,3,6,5,30,90,0.977778,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.918222
+no_work_projects,3,6,5,30,90,0.988889,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.899111
+no_need_driven_selection,3,6,5,30,90,1.0,1.0,0.333333,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.833333
+no_unscripted_object_use,3,6,5,30,90,1.0,1.0,1.0,1.0,0.0,0.0,1.0,0.511111,1.0,1.0,1.0,1.0,1.0,1.0,0.795778
+no_object_persistence,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_place_traversal,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.92
+no_frequency_flower_coupling,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_social_continuity,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_rest_recovery,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.92
+no_replay_timeline,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.95
+no_privacy_filter,3,6,5,30,90,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.97

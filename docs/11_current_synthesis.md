@@ -835,3 +835,6 @@ Report 233 extends the first-person ego layer across days 1 through 55. It adds 
 
 
 Report 234 shifts from individual ego continuity into pre-avatar civilization scaffolding. It compresses years 0 through 4181 into inspectable epochs with persistent households, markets, rituals, proto-language tokens, technology lineages, cultural norms, sensory ecology, and avatar-entry gates. The first run failed because technology lineage was scored as if primitive early epochs should already be mature; the passing version scores continuity and primitive-to-mature improvement instead.
+
+
+Report 235 turns the pre-avatar epoch scaffold into a deterministic local playable sandbox trace. It adds 35 generational agents, proto-language mutation chains, household market and ritual schedules, technology use slots, sensory/body prompts, sandbox turns, and a final witnessed avatar-entry ceremony at year 4181. The weakest channel is proto-language semantic stability, which is the right pressure point for the next playable language work.

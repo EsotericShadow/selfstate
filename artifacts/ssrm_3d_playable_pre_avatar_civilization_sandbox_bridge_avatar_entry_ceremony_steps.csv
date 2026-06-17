@@ -1,0 +1,8 @@
+ceremony_step_id,year,step_index,threshold_checked,required_value,actual_value,passed,ceremony_action,household_witness,avatar_permission_state
+ceremony_1_minimum_year,4181,1,minimum_year,3000.0,4181.0,True,seal thousand-year delay,westkeepers,entry_allowed_after_witnessed_threshold
+ceremony_2_pre_avatar_society_readiness,4181,2,pre_avatar_society_readiness,0.84,0.974744,True,read society readiness ledger,mossgarden,entry_allowed_after_witnessed_threshold
+ceremony_3_weakest_channel_score,4181,3,weakest_channel_score,0.78,0.812,True,read weakest-channel warning aloud,ledgerkin,entry_allowed_after_witnessed_threshold
+ceremony_4_proto_language_grounding,4181,4,proto_language_grounding,0.9,1.0,True,speak proto-language welcome roots,redstair,entry_allowed_after_witnessed_threshold
+ceremony_5_market_fairness,4181,5,market_fairness,0.82,0.875111,True,balance market debt bowl,wheelwright,entry_allowed_after_witnessed_threshold
+ceremony_6_ritual_continuity,4181,6,ritual_continuity,0.84,0.892,True,perform shared ritual cadence,all_households,entry_allowed_after_witnessed_threshold
+ceremony_7_sensory_ecology_binding,4181,7,sensory_ecology_binding,0.9,1.0,True,open sensory threshold without forcing contact,entry_threshold,entry_allowed_after_witnessed_threshold

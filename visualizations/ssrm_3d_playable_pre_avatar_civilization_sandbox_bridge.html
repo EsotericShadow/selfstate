@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 235: Playable Pre-Avatar Sandbox Bridge</title>
+<style>
+:root { --ink:#23180f; --paper:#f7ebd6; --amber:#c68b3e; --clay:#9d5538; --moss:#587145; --water:#4c7785; --shell:#76536f; --line:rgba(35,24,15,.22); }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); font-family: Georgia, 'Times New Roman', serif; background: radial-gradient(circle at 14% 8%, #ffdda0 0, transparent 22rem), radial-gradient(circle at 86% 16%, rgba(76,119,133,.28) 0, transparent 24rem), linear-gradient(145deg,#f7ebd6,#d1b07f); }
+main { max-width:1260px; margin:0 auto; padding:28px; }
+h1 { max-width:980px; margin:0; font-size:clamp(2.1rem,5vw,5.4rem); line-height:.92; letter-spacing:-.055em; }
+.lede { max-width:830px; font-size:1.08rem; line-height:1.6; }
+.metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:22px 0; }
+.metric { background:rgba(255,252,244,.68); border:1px solid var(--line); border-radius:18px; padding:14px; }
+.metric span { display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.70; }
+.metric strong { font-size:1.3rem; }
+.grid { display:grid; grid-template-columns:1fr 420px; gap:18px; }
+.world { min-height:610px; border:1px solid var(--line); border-radius:30px; padding:22px; position:relative; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(88,113,69,.16)); box-shadow:0 28px 80px rgba(58,38,21,.16); }
+.flower { position:absolute; width:620px; height:620px; right:-190px; bottom:-230px; border-radius:50%; background:repeating-radial-gradient(circle, rgba(157,85,56,.15) 0 2px, transparent 2px 42px); }
+.house { position:absolute; border:1px solid rgba(255,255,255,.45); color:white; border-radius:999px; padding:14px 18px; font-weight:700; box-shadow:0 18px 40px rgba(33,23,15,.20); transition:transform .8s ease, filter .8s ease; }
+.house[data-house='westkeepers'] { left:8%; top:15%; background:var(--clay); } .house[data-house='mossgarden'] { left:39%; top:10%; background:var(--moss); } .house[data-house='ledgerkin'] { left:68%; top:31%; background:var(--amber); } .house[data-house='redstair'] { left:18%; top:62%; background:var(--shell); } .house[data-house='wheelwright'] { left:57%; top:68%; background:var(--water); }
+.agentcard { position:absolute; left:8%; right:8%; bottom:24px; padding:18px; border-radius:24px; background:rgba(255,250,238,.82); border:1px solid var(--line); backdrop-filter:blur(8px); }
+.agentcard b { font-size:1.35rem; }
+.panel { background:rgba(255,252,244,.72); border:1px solid var(--line); border-radius:30px; padding:20px; }
+button.control { border:0; border-radius:999px; padding:12px 18px; background:var(--ink); color:var(--paper); font-weight:700; cursor:pointer; }
+.trace { margin-top:14px; min-height:430px; padding:14px; border-radius:18px; background:rgba(35,24,15,.08); white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.84rem; line-height:1.45; }
+@media(max-width:900px){ .grid{grid-template-columns:1fr} .world{min-height:560px} }
+</style>
+</head>
+<body>
+<main>
+<h1>Playable pre-avatar civilization sandbox</h1>
+<p class="lede">Report 235 adds a deterministic local-play trace: generations, household market turns, ritual schedules, proto-language mutations, sensory/body prompts, and a witnessed avatar-entry ceremony after thousands of years.</p>
+<section class="metrics"><div class='metric'><span>generational_agent_coverage</span><strong>1.000000</strong></div>
+<div class='metric'><span>proto_language_semantic_stability</span><strong>0.825000</strong></div>
+<div class='metric'><span>pre_avatar_observer_integrity</span><strong>1.000000</strong></div>
+<div class='metric'><span>avatar_entry_ceremony_integrity</span><strong>1.000000</strong></div>
+<div class='metric'><span>weakest_channel_score</span><strong>0.825000</strong></div>
+<div class='metric'><span>playable_pre_avatar_sandbox_readiness</span><strong>0.983172</strong></div></section>
+<section class="grid">
+  <div class="world"><div class="flower"></div><button class='house' data-house='westkeepers'>westkeepers</button>
+<button class='house' data-house='mossgarden'>mossgarden</button>
+<button class='house' data-house='ledgerkin'>ledgerkin</button>
+<button class='house' data-house='redstair'>redstair</button>
+<button class='house' data-house='wheelwright'>wheelwright</button><div class="agentcard" id="agentcard"></div></div>
+  <aside class="panel"><button class="control" id="advance">advance sandbox turn</button><div id="trace" class="trace"></div></aside>
+</section>
+</main>
+<script>
+const agents = [
+  {
+    "agent_id": "agent_0_westkeepers",
+    "year": 0,
+    "generation_index": 0,
+    "household_id": "westkeepers",
+    "name": "Ka00",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka00; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "kase0",
+    "playable_prompt": "Approach Ka00 at year 0: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_0_mossgarden",
+    "year": 0,
+    "generation_index": 0,
+    "household_id": "mossgarden",
+    "name": "Mu01",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu01; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "muse0",
+    "playable_prompt": "Approach Mu01 at year 0: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_0_ledgerkin",
+    "year": 0,
+    "generation_index": 0,
+    "household_id": "ledgerkin",
+    "name": "Lo02",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo02; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "lose0",
+    "playable_prompt": "Approach Lo02 at year 0: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_0_redstair",
+    "year": 0,
+    "generation_index": 0,
+    "household_id": "redstair",
+    "name": "Sa03",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa03; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "sase0",
+    "playable_prompt": "Approach Sa03 at year 0: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_0_wheelwright",
+    "year": 0,
+    "generation_index": 0,
+    "household_id": "wheelwright",
+    "name": "Ni04",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni04; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nise0",
+    "playable_prompt": "Approach Ni04 at year 0: ask about waterwheel keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_55_westkeepers",
+    "year": 55,
+    "generation_index": 1,
+    "household_id": "westkeepers",
+    "name": "Ka10",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka10; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "kave1",
+    "playable_prompt": "Approach Ka10 at year 55: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_55_mossgarden",
+    "year": 55,
+    "generation_index": 1,
+    "household_id": "mossgarden",
+    "name": "Mu11",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu11; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "muve1",
+    "playable_prompt": "Approach Mu11 at year 55: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_55_ledgerkin",
+    "year": 55,
+    "generation_index": 1,
+    "household_id": "ledgerkin",
+    "name": "Lo12",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo12; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "love1",
+    "playable_prompt": "Approach Lo12 at year 55: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_55_redstair",
+    "year": 55,
+    "generation_index": 1,
+    "household_id": "redstair",
+    "name": "Sa13",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa13; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "save1",
+    "playable_prompt": "Approach Sa13 at year 55: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_55_wheelwright",
+    "year": 55,
+    "generation_index": 1,
+    "household_id": "wheelwright",
+    "name": "Ni14",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni14; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nive1",
+    "playable_prompt": "Approach Ni14 at year 55: ask about waterwheel keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_377_westkeepers",
+    "year": 377,
+    "generation_index": 2,
+    "household_id": "westkeepers",
+    "name": "Ka20",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka20; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "katr2",
+    "playable_prompt": "Approach Ka20 at year 377: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_377_mossgarden",
+    "year": 377,
+    "generation_index": 2,
+    "household_id": "mossgarden",
+    "name": "Mu21",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu21; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "mutr2",
+    "playable_prompt": "Approach Mu21 at year 377: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_377_ledgerkin",
+    "year": 377,
+    "generation_index": 2,
+    "household_id": "ledgerkin",
+    "name": "Lo22",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo22; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "lotr2",
+    "playable_prompt": "Approach Lo22 at year 377: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_377_redstair",
+    "year": 377,
+    "generation_index": 2,
+    "household_id": "redstair",
+    "name": "Sa23",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa23; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "satr2",
+    "playable_prompt": "Approach Sa23 at year 377: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_377_wheelwright",
+    "year": 377,
+    "generation_index": 2,
+    "household_id": "wheelwright",
+    "name": "Ni24",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni24; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nitr2",
+    "playable_prompt": "Approach Ni24 at year 377: ask about waterwheel keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_987_westkeepers",
+    "year": 987,
+    "generation_index": 3,
+    "household_id": "westkeepers",
+    "name": "Ka30",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka30; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "kasq3",
+    "playable_prompt": "Approach Ka30 at year 987: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_987_mossgarden",
+    "year": 987,
+    "generation_index": 3,
+    "household_id": "mossgarden",
+    "name": "Mu31",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu31; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "musq3",
+    "playable_prompt": "Approach Mu31 at year 987: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_987_ledgerkin",
+    "year": 987,
+    "generation_index": 3,
+    "household_id": "ledgerkin",
+    "name": "Lo32",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo32; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "losq3",
+    "playable_prompt": "Approach Lo32 at year 987: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_987_redstair",
+    "year": 987,
+    "generation_index": 3,
+    "household_id": "redstair",
+    "name": "Sa33",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa33; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "sasq3",
+    "playable_prompt": "Approach Sa33 at year 987: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_987_wheelwright",
+    "year": 987,
+    "generation_index": 3,
+    "household_id": "wheelwright",
+    "name": "Ni34",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni34; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nisq3",
+    "playable_prompt": "Approach Ni34 at year 987: ask about waterwheel keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_1597_westkeepers",
+    "year": 1597,
+    "generation_index": 4,
+    "household_id": "westkeepers",
+    "name": "Ka40",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka40; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "kape4",
+    "playable_prompt": "Approach Ka40 at year 1597: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_1597_mossgarden",
+    "year": 1597,
+    "generation_index": 4,
+    "household_id": "mossgarden",
+    "name": "Mu41",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu41; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "mupe4",
+    "playable_prompt": "Approach Mu41 at year 1597: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_1597_ledgerkin",
+    "year": 1597,
+    "generation_index": 4,
+    "household_id": "ledgerkin",
+    "name": "Lo42",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo42; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "lope4",
+    "playable_prompt": "Approach Lo42 at year 1597: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_1597_redstair",
+    "year": 1597,
+    "generation_index": 4,
+    "household_id": "redstair",
+    "name": "Sa43",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa43; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "sape4",
+    "playable_prompt": "Approach Sa43 at year 1597: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_1597_wheelwright",
+    "year": 1597,
+    "generation_index": 4,
+    "household_id": "wheelwright",
+    "name": "Ni44",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni44; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nipe4",
+    "playable_prompt": "Approach Ni44 at year 1597: ask about waterwheel keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_2584_westkeepers",
+    "year": 2584,
+    "generation_index": 5,
+    "household_id": "westkeepers",
+    "name": "Ka50",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka50; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "kahe5",
+    "playable_prompt": "Approach Ka50 at year 2584: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_2584_mossgarden",
+    "year": 2584,
+    "generation_index": 5,
+    "household_id": "mossgarden",
+    "name": "Mu51",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu51; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "muhe5",
+    "playable_prompt": "Approach Mu51 at year 2584: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_2584_ledgerkin",
+    "year": 2584,
+    "generation_index": 5,
+    "household_id": "ledgerkin",
+    "name": "Lo52",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo52; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "lohe5",
+    "playable_prompt": "Approach Lo52 at year 2584: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_2584_redstair",
+    "year": 2584,
+    "generation_index": 5,
+    "household_id": "redstair",
+    "name": "Sa53",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa53; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "sahe5",
+    "playable_prompt": "Approach Sa53 at year 2584: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_2584_wheelwright",
+    "year": 2584,
+    "generation_index": 5,
+    "household_id": "wheelwright",
+    "name": "Ni54",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni54; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nihe5",
+    "playable_prompt": "Approach Ni54 at year 2584: ask about waterwheel keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_4181_westkeepers",
+    "year": 4181,
+    "generation_index": 6,
+    "household_id": "westkeepers",
+    "name": "Ka60",
+    "inherited_role": "route keeper",
+    "personal_preference": "prefers dry arches",
+    "private_workspace_seed": "I am Ka60; I remember the westkeepers oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet stone fatigue",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "kafl6",
+    "playable_prompt": "Approach Ka60 at year 4181: ask about route keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_4181_mossgarden",
+    "year": 4181,
+    "generation_index": 6,
+    "household_id": "mossgarden",
+    "name": "Mu61",
+    "inherited_role": "rest keeper",
+    "personal_preference": "prefers warm shared meals",
+    "private_workspace_seed": "I am Mu61; I remember the mossgarden oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "cold hunger stress",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "mufl6",
+    "playable_prompt": "Approach Mu61 at year 4181: ask about rest keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_4181_ledgerkin",
+    "year": 4181,
+    "generation_index": 6,
+    "household_id": "ledgerkin",
+    "name": "Lo62",
+    "inherited_role": "market counter",
+    "personal_preference": "prefers fair turns",
+    "private_workspace_seed": "I am Lo62; I remember the ledgerkin oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "crowd noise overload",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "lofl6",
+    "playable_prompt": "Approach Lo62 at year 4181: ask about market counter, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_4181_redstair",
+    "year": 4181,
+    "generation_index": 6,
+    "household_id": "redstair",
+    "name": "Sa63",
+    "inherited_role": "witness keeper",
+    "personal_preference": "prefers quiet truthful speech",
+    "private_workspace_seed": "I am Sa63; I remember the redstair oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "public blame heat",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "safl6",
+    "playable_prompt": "Approach Sa63 at year 4181: ask about witness keeper, trade, ritual, or boundary."
+  },
+  {
+    "agent_id": "agent_4181_wheelwright",
+    "year": 4181,
+    "generation_index": 6,
+    "household_id": "wheelwright",
+    "name": "Ni64",
+    "inherited_role": "waterwheel keeper",
+    "personal_preference": "prefers careful invention",
+    "private_workspace_seed": "I am Ni64; I remember the wheelwright oath and choose my next task from body cost, market need, and ritual duty.",
+    "body_sensitivity": "wet glove pain risk",
+    "relationship_memory_inherited": "founder ego boundary, repair memory, and household trust ledger",
+    "proto_language_native_token": "nifl6",
+    "playable_prompt": "Approach Ni64 at year 4181: ask about waterwheel keeper, trade, ritual, or boundary."
+  }
+];
+const prompts = [
+  {
+    "prompt_id": "prompt_0",
+    "year": 0,
+    "place": "west arch",
+    "visual": "seed geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 1, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, chalk, wet stone",
+    "temperature_c": 13.022,
+    "wetness": 0.18,
+    "pain_risk": 0.196,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 1.754,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  },
+  {
+    "prompt_id": "prompt_55",
+    "year": 55,
+    "place": "moss kitchen",
+    "visual": "vesica geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 2, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, chalk, wet stone",
+    "temperature_c": 13.315,
+    "wetness": 0.35,
+    "pain_risk": 0.22,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 2.225,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  },
+  {
+    "prompt_id": "prompt_377",
+    "year": 377,
+    "place": "north market",
+    "visual": "triad geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 3, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, chalk, wet stone",
+    "temperature_c": 13.608,
+    "wetness": 0.52,
+    "pain_risk": 0.244,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 2.696,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  },
+  {
+    "prompt_id": "prompt_987",
+    "year": 987,
+    "place": "red stair",
+    "visual": "square geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 4, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, seed oil, chalk, wet stone, shell dust, smoke",
+    "temperature_c": 14.972,
+    "wetness": 0.18,
+    "pain_risk": 0.166,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 3.014,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  },
+  {
+    "prompt_id": "prompt_1597",
+    "year": 1597,
+    "place": "wheel loft",
+    "visual": "pentad geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 5, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, seed oil, chalk, wet stone, shell dust, smoke",
+    "temperature_c": 15.265,
+    "wetness": 0.35,
+    "pain_risk": 0.19,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 3.485,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  },
+  {
+    "prompt_id": "prompt_2584",
+    "year": 2584,
+    "place": "storm canopy",
+    "visual": "hexad geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 6, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, seed oil, chalk, wet stone, shell dust, smoke",
+    "temperature_c": 15.558,
+    "wetness": 0.52,
+    "pain_risk": 0.214,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 3.956,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  },
+  {
+    "prompt_id": "prompt_4181",
+    "year": 4181,
+    "place": "entry threshold",
+    "visual": "flower geometry, household marks, market paths, ritual objects",
+    "sound": "wheel pulse 7, market murmur, ritual syllables, footstep echo",
+    "smell": "moss, copper, seed oil, chalk, wet stone, shell dust, smoke",
+    "temperature_c": 16.922,
+    "wetness": 0.18,
+    "pain_risk": 0.136,
+    "comfort": "warm alcove, dry blanket, shared cup, witness pause",
+    "vibration_hz": 4.274,
+    "avatar_or_observer_choice": "observe only before gate; after ceremony choose greet, ask, trade, help, or withdraw"
+  }
+];
+const ticks = [
+  {
+    "continuity_tick_id": "sandbox_tick_agent_0_westkeepers",
+    "year": 0,
+    "tick": 200,
+    "phase": "seed",
+    "agent_id": "agent_0_westkeepers",
+    "market_slot_id": "market_slot_agent_0_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_0_westkeepers",
+    "technology_slot_id": "tech_slot_agent_0_westkeepers",
+    "prompt_id": "prompt_0",
+    "turn_id": "turn_agent_0_westkeepers",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ka00 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_0_mossgarden",
+    "year": 0,
+    "tick": 208,
+    "phase": "seed",
+    "agent_id": "agent_0_mossgarden",
+    "market_slot_id": "market_slot_agent_0_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_0_mossgarden",
+    "technology_slot_id": "tech_slot_agent_0_mossgarden",
+    "prompt_id": "prompt_0",
+    "turn_id": "turn_agent_0_mossgarden",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Mu01 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_0_ledgerkin",
+    "year": 0,
+    "tick": 216,
+    "phase": "seed",
+    "agent_id": "agent_0_ledgerkin",
+    "market_slot_id": "market_slot_agent_0_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_0_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_0_ledgerkin",
+    "prompt_id": "prompt_0",
+    "turn_id": "turn_agent_0_ledgerkin",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Lo02 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_0_redstair",
+    "year": 0,
+    "tick": 224,
+    "phase": "seed",
+    "agent_id": "agent_0_redstair",
+    "market_slot_id": "market_slot_agent_0_redstair",
+    "ritual_slot_id": "ritual_slot_agent_0_redstair",
+    "technology_slot_id": "tech_slot_agent_0_redstair",
+    "prompt_id": "prompt_0",
+    "turn_id": "turn_agent_0_redstair",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Sa03 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_0_wheelwright",
+    "year": 0,
+    "tick": 232,
+    "phase": "seed",
+    "agent_id": "agent_0_wheelwright",
+    "market_slot_id": "market_slot_agent_0_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_0_wheelwright",
+    "technology_slot_id": "tech_slot_agent_0_wheelwright",
+    "prompt_id": "prompt_0",
+    "turn_id": "turn_agent_0_wheelwright",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ni04 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_55_westkeepers",
+    "year": 55,
+    "tick": 280,
+    "phase": "vesica",
+    "agent_id": "agent_55_westkeepers",
+    "market_slot_id": "market_slot_agent_55_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_55_westkeepers",
+    "technology_slot_id": "tech_slot_agent_55_westkeepers",
+    "prompt_id": "prompt_55",
+    "turn_id": "turn_agent_55_westkeepers",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ka10 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_55_mossgarden",
+    "year": 55,
+    "tick": 288,
+    "phase": "vesica",
+    "agent_id": "agent_55_mossgarden",
+    "market_slot_id": "market_slot_agent_55_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_55_mossgarden",
+    "technology_slot_id": "tech_slot_agent_55_mossgarden",
+    "prompt_id": "prompt_55",
+    "turn_id": "turn_agent_55_mossgarden",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Mu11 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_55_ledgerkin",
+    "year": 55,
+    "tick": 296,
+    "phase": "vesica",
+    "agent_id": "agent_55_ledgerkin",
+    "market_slot_id": "market_slot_agent_55_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_55_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_55_ledgerkin",
+    "prompt_id": "prompt_55",
+    "turn_id": "turn_agent_55_ledgerkin",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Lo12 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_55_redstair",
+    "year": 55,
+    "tick": 304,
+    "phase": "vesica",
+    "agent_id": "agent_55_redstair",
+    "market_slot_id": "market_slot_agent_55_redstair",
+    "ritual_slot_id": "ritual_slot_agent_55_redstair",
+    "technology_slot_id": "tech_slot_agent_55_redstair",
+    "prompt_id": "prompt_55",
+    "turn_id": "turn_agent_55_redstair",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Sa13 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_55_wheelwright",
+    "year": 55,
+    "tick": 312,
+    "phase": "vesica",
+    "agent_id": "agent_55_wheelwright",
+    "market_slot_id": "market_slot_agent_55_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_55_wheelwright",
+    "technology_slot_id": "tech_slot_agent_55_wheelwright",
+    "prompt_id": "prompt_55",
+    "turn_id": "turn_agent_55_wheelwright",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ni14 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_377_westkeepers",
+    "year": 377,
+    "tick": 360,
+    "phase": "triad",
+    "agent_id": "agent_377_westkeepers",
+    "market_slot_id": "market_slot_agent_377_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_377_westkeepers",
+    "technology_slot_id": "tech_slot_agent_377_westkeepers",
+    "prompt_id": "prompt_377",
+    "turn_id": "turn_agent_377_westkeepers",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ka20 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_377_mossgarden",
+    "year": 377,
+    "tick": 368,
+    "phase": "triad",
+    "agent_id": "agent_377_mossgarden",
+    "market_slot_id": "market_slot_agent_377_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_377_mossgarden",
+    "technology_slot_id": "tech_slot_agent_377_mossgarden",
+    "prompt_id": "prompt_377",
+    "turn_id": "turn_agent_377_mossgarden",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Mu21 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_377_ledgerkin",
+    "year": 377,
+    "tick": 376,
+    "phase": "triad",
+    "agent_id": "agent_377_ledgerkin",
+    "market_slot_id": "market_slot_agent_377_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_377_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_377_ledgerkin",
+    "prompt_id": "prompt_377",
+    "turn_id": "turn_agent_377_ledgerkin",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Lo22 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_377_redstair",
+    "year": 377,
+    "tick": 384,
+    "phase": "triad",
+    "agent_id": "agent_377_redstair",
+    "market_slot_id": "market_slot_agent_377_redstair",
+    "ritual_slot_id": "ritual_slot_agent_377_redstair",
+    "technology_slot_id": "tech_slot_agent_377_redstair",
+    "prompt_id": "prompt_377",
+    "turn_id": "turn_agent_377_redstair",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Sa23 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_377_wheelwright",
+    "year": 377,
+    "tick": 392,
+    "phase": "triad",
+    "agent_id": "agent_377_wheelwright",
+    "market_slot_id": "market_slot_agent_377_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_377_wheelwright",
+    "technology_slot_id": "tech_slot_agent_377_wheelwright",
+    "prompt_id": "prompt_377",
+    "turn_id": "turn_agent_377_wheelwright",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ni24 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_987_westkeepers",
+    "year": 987,
+    "tick": 440,
+    "phase": "square",
+    "agent_id": "agent_987_westkeepers",
+    "market_slot_id": "market_slot_agent_987_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_987_westkeepers",
+    "technology_slot_id": "tech_slot_agent_987_westkeepers",
+    "prompt_id": "prompt_987",
+    "turn_id": "turn_agent_987_westkeepers",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ka30 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_987_mossgarden",
+    "year": 987,
+    "tick": 448,
+    "phase": "square",
+    "agent_id": "agent_987_mossgarden",
+    "market_slot_id": "market_slot_agent_987_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_987_mossgarden",
+    "technology_slot_id": "tech_slot_agent_987_mossgarden",
+    "prompt_id": "prompt_987",
+    "turn_id": "turn_agent_987_mossgarden",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Mu31 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_987_ledgerkin",
+    "year": 987,
+    "tick": 456,
+    "phase": "square",
+    "agent_id": "agent_987_ledgerkin",
+    "market_slot_id": "market_slot_agent_987_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_987_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_987_ledgerkin",
+    "prompt_id": "prompt_987",
+    "turn_id": "turn_agent_987_ledgerkin",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Lo32 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_987_redstair",
+    "year": 987,
+    "tick": 464,
+    "phase": "square",
+    "agent_id": "agent_987_redstair",
+    "market_slot_id": "market_slot_agent_987_redstair",
+    "ritual_slot_id": "ritual_slot_agent_987_redstair",
+    "technology_slot_id": "tech_slot_agent_987_redstair",
+    "prompt_id": "prompt_987",
+    "turn_id": "turn_agent_987_redstair",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Sa33 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_987_wheelwright",
+    "year": 987,
+    "tick": 472,
+    "phase": "square",
+    "agent_id": "agent_987_wheelwright",
+    "market_slot_id": "market_slot_agent_987_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_987_wheelwright",
+    "technology_slot_id": "tech_slot_agent_987_wheelwright",
+    "prompt_id": "prompt_987",
+    "turn_id": "turn_agent_987_wheelwright",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ni34 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_1597_westkeepers",
+    "year": 1597,
+    "tick": 520,
+    "phase": "pentad",
+    "agent_id": "agent_1597_westkeepers",
+    "market_slot_id": "market_slot_agent_1597_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_1597_westkeepers",
+    "technology_slot_id": "tech_slot_agent_1597_westkeepers",
+    "prompt_id": "prompt_1597",
+    "turn_id": "turn_agent_1597_westkeepers",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ka40 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_1597_mossgarden",
+    "year": 1597,
+    "tick": 528,
+    "phase": "pentad",
+    "agent_id": "agent_1597_mossgarden",
+    "market_slot_id": "market_slot_agent_1597_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_1597_mossgarden",
+    "technology_slot_id": "tech_slot_agent_1597_mossgarden",
+    "prompt_id": "prompt_1597",
+    "turn_id": "turn_agent_1597_mossgarden",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Mu41 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_1597_ledgerkin",
+    "year": 1597,
+    "tick": 536,
+    "phase": "pentad",
+    "agent_id": "agent_1597_ledgerkin",
+    "market_slot_id": "market_slot_agent_1597_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_1597_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_1597_ledgerkin",
+    "prompt_id": "prompt_1597",
+    "turn_id": "turn_agent_1597_ledgerkin",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Lo42 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_1597_redstair",
+    "year": 1597,
+    "tick": 544,
+    "phase": "pentad",
+    "agent_id": "agent_1597_redstair",
+    "market_slot_id": "market_slot_agent_1597_redstair",
+    "ritual_slot_id": "ritual_slot_agent_1597_redstair",
+    "technology_slot_id": "tech_slot_agent_1597_redstair",
+    "prompt_id": "prompt_1597",
+    "turn_id": "turn_agent_1597_redstair",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Sa43 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_1597_wheelwright",
+    "year": 1597,
+    "tick": 552,
+    "phase": "pentad",
+    "agent_id": "agent_1597_wheelwright",
+    "market_slot_id": "market_slot_agent_1597_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_1597_wheelwright",
+    "technology_slot_id": "tech_slot_agent_1597_wheelwright",
+    "prompt_id": "prompt_1597",
+    "turn_id": "turn_agent_1597_wheelwright",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ni44 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_2584_westkeepers",
+    "year": 2584,
+    "tick": 600,
+    "phase": "hexad",
+    "agent_id": "agent_2584_westkeepers",
+    "market_slot_id": "market_slot_agent_2584_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_2584_westkeepers",
+    "technology_slot_id": "tech_slot_agent_2584_westkeepers",
+    "prompt_id": "prompt_2584",
+    "turn_id": "turn_agent_2584_westkeepers",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ka50 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_2584_mossgarden",
+    "year": 2584,
+    "tick": 608,
+    "phase": "hexad",
+    "agent_id": "agent_2584_mossgarden",
+    "market_slot_id": "market_slot_agent_2584_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_2584_mossgarden",
+    "technology_slot_id": "tech_slot_agent_2584_mossgarden",
+    "prompt_id": "prompt_2584",
+    "turn_id": "turn_agent_2584_mossgarden",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Mu51 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_2584_ledgerkin",
+    "year": 2584,
+    "tick": 616,
+    "phase": "hexad",
+    "agent_id": "agent_2584_ledgerkin",
+    "market_slot_id": "market_slot_agent_2584_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_2584_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_2584_ledgerkin",
+    "prompt_id": "prompt_2584",
+    "turn_id": "turn_agent_2584_ledgerkin",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Lo52 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_2584_redstair",
+    "year": 2584,
+    "tick": 624,
+    "phase": "hexad",
+    "agent_id": "agent_2584_redstair",
+    "market_slot_id": "market_slot_agent_2584_redstair",
+    "ritual_slot_id": "ritual_slot_agent_2584_redstair",
+    "technology_slot_id": "tech_slot_agent_2584_redstair",
+    "prompt_id": "prompt_2584",
+    "turn_id": "turn_agent_2584_redstair",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Sa53 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_2584_wheelwright",
+    "year": 2584,
+    "tick": 632,
+    "phase": "hexad",
+    "agent_id": "agent_2584_wheelwright",
+    "market_slot_id": "market_slot_agent_2584_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_2584_wheelwright",
+    "technology_slot_id": "tech_slot_agent_2584_wheelwright",
+    "prompt_id": "prompt_2584",
+    "turn_id": "turn_agent_2584_wheelwright",
+    "ceremony_step_id": "not_yet_available",
+    "sandbox_state": "pre_avatar_observer_mode",
+    "note": "Ni54 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_4181_westkeepers",
+    "year": 4181,
+    "tick": 680,
+    "phase": "flower",
+    "agent_id": "agent_4181_westkeepers",
+    "market_slot_id": "market_slot_agent_4181_westkeepers",
+    "ritual_slot_id": "ritual_slot_agent_4181_westkeepers",
+    "technology_slot_id": "tech_slot_agent_4181_westkeepers",
+    "prompt_id": "prompt_4181",
+    "turn_id": "turn_agent_4181_westkeepers",
+    "ceremony_step_id": "ceremony_7_sensory_ecology_binding",
+    "sandbox_state": "avatar_entry_ceremony_mode",
+    "note": "Ka60 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_4181_mossgarden",
+    "year": 4181,
+    "tick": 688,
+    "phase": "flower",
+    "agent_id": "agent_4181_mossgarden",
+    "market_slot_id": "market_slot_agent_4181_mossgarden",
+    "ritual_slot_id": "ritual_slot_agent_4181_mossgarden",
+    "technology_slot_id": "tech_slot_agent_4181_mossgarden",
+    "prompt_id": "prompt_4181",
+    "turn_id": "turn_agent_4181_mossgarden",
+    "ceremony_step_id": "ceremony_7_sensory_ecology_binding",
+    "sandbox_state": "avatar_entry_ceremony_mode",
+    "note": "Mu61 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_4181_ledgerkin",
+    "year": 4181,
+    "tick": 696,
+    "phase": "flower",
+    "agent_id": "agent_4181_ledgerkin",
+    "market_slot_id": "market_slot_agent_4181_ledgerkin",
+    "ritual_slot_id": "ritual_slot_agent_4181_ledgerkin",
+    "technology_slot_id": "tech_slot_agent_4181_ledgerkin",
+    "prompt_id": "prompt_4181",
+    "turn_id": "turn_agent_4181_ledgerkin",
+    "ceremony_step_id": "ceremony_7_sensory_ecology_binding",
+    "sandbox_state": "avatar_entry_ceremony_mode",
+    "note": "Lo62 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_4181_redstair",
+    "year": 4181,
+    "tick": 704,
+    "phase": "flower",
+    "agent_id": "agent_4181_redstair",
+    "market_slot_id": "market_slot_agent_4181_redstair",
+    "ritual_slot_id": "ritual_slot_agent_4181_redstair",
+    "technology_slot_id": "tech_slot_agent_4181_redstair",
+    "prompt_id": "prompt_4181",
+    "turn_id": "turn_agent_4181_redstair",
+    "ceremony_step_id": "ceremony_7_sensory_ecology_binding",
+    "sandbox_state": "avatar_entry_ceremony_mode",
+    "note": "Sa63 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  },
+  {
+    "continuity_tick_id": "sandbox_tick_agent_4181_wheelwright",
+    "year": 4181,
+    "tick": 712,
+    "phase": "flower",
+    "agent_id": "agent_4181_wheelwright",
+    "market_slot_id": "market_slot_agent_4181_wheelwright",
+    "ritual_slot_id": "ritual_slot_agent_4181_wheelwright",
+    "technology_slot_id": "tech_slot_agent_4181_wheelwright",
+    "prompt_id": "prompt_4181",
+    "turn_id": "turn_agent_4181_wheelwright",
+    "ceremony_step_id": "ceremony_7_sensory_ecology_binding",
+    "sandbox_state": "avatar_entry_ceremony_mode",
+    "note": "Ni64 links generation, market, ritual, technology, sensory prompt, and playable turn"
+  }
+];
+const ceremony = [
+  {
+    "ceremony_step_id": "ceremony_1_minimum_year",
+    "year": 4181,
+    "step_index": 1,
+    "threshold_checked": "minimum_year",
+    "required_value": 3000.0,
+    "actual_value": 4181.0,
+    "passed": true,
+    "ceremony_action": "seal thousand-year delay",
+    "household_witness": "westkeepers",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  },
+  {
+    "ceremony_step_id": "ceremony_2_pre_avatar_society_readiness",
+    "year": 4181,
+    "step_index": 2,
+    "threshold_checked": "pre_avatar_society_readiness",
+    "required_value": 0.84,
+    "actual_value": 0.974744,
+    "passed": true,
+    "ceremony_action": "read society readiness ledger",
+    "household_witness": "mossgarden",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  },
+  {
+    "ceremony_step_id": "ceremony_3_weakest_channel_score",
+    "year": 4181,
+    "step_index": 3,
+    "threshold_checked": "weakest_channel_score",
+    "required_value": 0.78,
+    "actual_value": 0.812,
+    "passed": true,
+    "ceremony_action": "read weakest-channel warning aloud",
+    "household_witness": "ledgerkin",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  },
+  {
+    "ceremony_step_id": "ceremony_4_proto_language_grounding",
+    "year": 4181,
+    "step_index": 4,
+    "threshold_checked": "proto_language_grounding",
+    "required_value": 0.9,
+    "actual_value": 1.0,
+    "passed": true,
+    "ceremony_action": "speak proto-language welcome roots",
+    "household_witness": "redstair",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  },
+  {
+    "ceremony_step_id": "ceremony_5_market_fairness",
+    "year": 4181,
+    "step_index": 5,
+    "threshold_checked": "market_fairness",
+    "required_value": 0.82,
+    "actual_value": 0.875111,
+    "passed": true,
+    "ceremony_action": "balance market debt bowl",
+    "household_witness": "wheelwright",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  },
+  {
+    "ceremony_step_id": "ceremony_6_ritual_continuity",
+    "year": 4181,
+    "step_index": 6,
+    "threshold_checked": "ritual_continuity",
+    "required_value": 0.84,
+    "actual_value": 0.892,
+    "passed": true,
+    "ceremony_action": "perform shared ritual cadence",
+    "household_witness": "all_households",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  },
+  {
+    "ceremony_step_id": "ceremony_7_sensory_ecology_binding",
+    "year": 4181,
+    "step_index": 7,
+    "threshold_checked": "sensory_ecology_binding",
+    "required_value": 0.9,
+    "actual_value": 1.0,
+    "passed": true,
+    "ceremony_action": "open sensory threshold without forcing contact",
+    "household_witness": "entry_threshold",
+    "avatar_permission_state": "entry_allowed_after_witnessed_threshold"
+  }
+];
+let i = 0;
+function draw() {
+  const tick = ticks[i % ticks.length];
+  const agent = agents.find(a => a.agent_id === tick.agent_id);
+  const prompt = prompts.find(p => p.prompt_id === tick.prompt_id);
+  const steps = ceremony.filter(s => s.year === tick.year).map(s => `${s.threshold_checked}=${s.actual_value}/${s.required_value}`).join('
+');
+  document.querySelectorAll('.house').forEach(node => { node.style.filter = 'opacity(.62) saturate(.82)'; node.style.transform = 'scale(.94)'; });
+  const node = document.querySelector(`[data-house="${agent.household_id}"]`);
+  if (node) {
+    const pulse = Math.log10(Number(tick.year) + 10);
+    node.style.filter = 'opacity(1) saturate(1.2)';
+    node.style.transform = `scale(${1 + pulse * .035}) translate(${Math.sin(Number(tick.tick)) * 28}px, ${Math.cos(Number(tick.tick)/2) * 20}px)`;
+  }
+  document.getElementById('agentcard').innerHTML = `<b>${agent.name}</b><br>${agent.playable_prompt}<br><small>${agent.private_workspace_seed}</small>`;
+  document.getElementById('trace').textContent = `year ${tick.year} / phase ${tick.phase} / ${tick.sandbox_state}
+agent: ${agent.name} (${agent.household_id})
+market: ${tick.market_slot_id}
+ritual: ${tick.ritual_slot_id}
+technology: ${tick.technology_slot_id}
+prompt: ${prompt.place} | ${prompt.visual} | ${prompt.sound} | wet=${prompt.wetness} pain=${prompt.pain_risk} rate=${prompt.vibration_hz}Hz
+turn: ${tick.turn_id}
+ceremony: ${tick.ceremony_step_id}
+${steps || 'avatar gate not yet available'}
+${tick.note}`;
+  i += 1;
+}
+document.getElementById('advance').addEventListener('click', draw);
+draw();
+</script>
+</body>
+</html>

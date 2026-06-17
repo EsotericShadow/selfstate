@@ -1,0 +1,961 @@
+tick_id,day,route_id,branch_a,branch_b,current_choice,branch_a_recovery,branch_b_recovery,branch_a_fatigue,branch_b_fatigue,selected_branch,contrast_visible,tradeoff_explained
+0,1,riverbend_roofward,river ford,orchard ridge detour,river ford,0.626335,0.654394,0.391652,0.486656,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+1,1,roofward_archive,glass stair,cool archive lane,glass stair,0.601255,0.631294,0.415852,0.504256,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+2,1,archive_signal,paper lane,stone kiosk path,paper lane,0.576175,0.608194,0.440052,0.521856,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+3,1,signal_orchard,dusk road,river lantern loop,dusk road,0.560335,0.588394,0.391652,0.486656,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+4,1,orchard_riverbend,fen track,market plank route,fen track,0.535255,0.565294,0.415852,0.504256,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+5,1,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.510175,0.542194,0.440052,0.521856,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+6,1,riverbend_roofward,river ford,orchard ridge detour,river ford,0.628504,0.656563,0.391652,0.486656,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+7,1,roofward_archive,glass stair,cool archive lane,cool archive lane,0.65332,0.68349,0.415258,0.503824,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+8,1,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.61606,0.64821,0.439458,0.521424,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+9,1,signal_orchard,dusk road,river lantern loop,dusk road,0.562504,0.590563,0.391652,0.486656,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+10,1,orchard_riverbend,fen track,market plank route,fen track,0.533244,0.563283,0.415852,0.504256,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+11,1,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.55006,0.58221,0.439458,0.521424,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+12,1,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.630674,0.658732,0.391652,0.486656,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+13,1,roofward_archive,glass stair,cool archive lane,cool archive lane,0.735658,0.765959,0.414664,0.503392,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+14,1,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.642122,0.674272,0.439458,0.521424,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+15,2,signal_orchard,dusk road,river lantern loop,river lantern loop,0.566514,0.598532,0.440052,0.521856,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+16,2,orchard_riverbend,fen track,market plank route,fen track,0.580389,0.608579,0.391058,0.486224,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+17,2,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.547052,0.577222,0.415258,0.503824,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+18,2,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.654742,0.68676,0.440052,0.521856,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+19,2,roofward_archive,glass stair,cool archive lane,cool archive lane,0.813309,0.841762,0.38987,0.48536,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+20,2,archive_signal,paper lane,stone kiosk path,paper lane,0.685264,0.715434,0.415258,0.503824,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+21,2,signal_orchard,dusk road,river lantern loop,river lantern loop,0.598342,0.63036,0.440052,0.521856,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+22,2,orchard_riverbend,fen track,market plank route,fen track,0.590661,0.618851,0.391058,0.486224,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+23,2,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.545144,0.575314,0.415258,0.503824,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+24,2,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.68057,0.712588,0.440052,0.521856,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+25,2,roofward_archive,glass stair,cool archive lane,cool archive lane,0.844239,0.872692,0.38987,0.48536,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+26,2,archive_signal,paper lane,stone kiosk path,paper lane,0.729431,0.759733,0.414664,0.503392,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+27,2,signal_orchard,dusk road,river lantern loop,river lantern loop,0.62417,0.656188,0.440052,0.521856,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+28,2,orchard_riverbend,fen track,market plank route,fen track,0.592933,0.621123,0.391058,0.486224,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+29,2,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.573406,0.603576,0.415258,0.503824,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+30,3,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.717478,0.747516,0.415852,0.504256,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+31,3,roofward_archive,glass stair,cool archive lane,cool archive lane,0.915085,0.94,0.437676,0.520128,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+32,3,archive_signal,paper lane,stone kiosk path,paper lane,0.776781,0.805234,0.38987,0.48536,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+33,3,signal_orchard,dusk road,river lantern loop,river lantern loop,0.653078,0.683116,0.415852,0.504256,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+34,3,orchard_riverbend,fen track,market plank route,fen track,0.63512,0.667402,0.438864,0.520992,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+35,3,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.618748,0.646938,0.391058,0.486224,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+36,3,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.751506,0.781544,0.415852,0.504256,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+37,3,roofward_archive,glass stair,cool archive lane,cool archive lane,0.92822,0.94,0.437676,0.520128,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+38,3,archive_signal,paper lane,stone kiosk path,paper lane,0.825334,0.853918,0.389276,0.484928,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+39,3,signal_orchard,dusk road,river lantern loop,river lantern loop,0.727181,0.757351,0.415258,0.503824,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+40,3,orchard_riverbend,fen track,market plank route,fen track,0.629135,0.661416,0.438864,0.520992,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+41,3,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.695285,0.723607,0.390464,0.485792,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+42,3,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.779534,0.809572,0.415852,0.504256,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+43,3,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93422,0.94,0.437676,0.520128,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+44,3,archive_signal,paper lane,stone kiosk path,paper lane,0.827914,0.856498,0.389276,0.484928,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+45,4,signal_orchard,dusk road,river lantern loop,river lantern loop,0.812599,0.84092,0.390464,0.485792,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+46,4,orchard_riverbend,fen track,market plank route,market plank route,0.672305,0.702738,0.41407,0.50296,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+47,4,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.719821,0.752103,0.438864,0.520992,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+48,4,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.818642,0.8467,0.391652,0.486656,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+49,4,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.412882,0.502096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+50,4,archive_signal,paper lane,stone kiosk path,paper lane,0.838333,0.870878,0.437676,0.520128,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+51,4,signal_orchard,dusk road,river lantern loop,river lantern loop,0.849295,0.877616,0.390464,0.485792,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+52,4,orchard_riverbend,fen track,market plank route,market plank route,0.75511,0.785675,0.413476,0.502528,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+53,4,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.792193,0.824606,0.43827,0.52056,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+54,4,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.84887,0.876928,0.391652,0.486656,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+55,4,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.412882,0.502096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+56,4,archive_signal,paper lane,stone kiosk path,paper lane,0.878628,0.911304,0.437082,0.519696,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+57,4,signal_orchard,dusk road,river lantern loop,river lantern loop,0.879991,0.908312,0.390464,0.485792,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+58,4,orchard_riverbend,fen track,market plank route,market plank route,0.83015,0.860846,0.412882,0.502096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+59,4,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.818723,0.851136,0.43827,0.52056,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+60,5,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.375988,0.475264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+61,5,archive_signal,paper lane,stone kiosk path,paper lane,0.877571,0.907276,0.400782,0.493296,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+62,5,signal_orchard,dusk road,river lantern loop,river lantern loop,0.906067,0.937358,0.426764,0.512192,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+63,5,orchard_riverbend,fen track,market plank route,market plank route,0.916043,0.94,0.375988,0.475264,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+64,5,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.863873,0.893316,0.40197,0.49416,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+65,5,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.882478,0.913506,0.427952,0.513056,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+66,5,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.375988,0.475264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+67,5,archive_signal,paper lane,stone kiosk path,paper lane,0.886163,0.915869,0.400782,0.493296,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+68,5,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.42617,0.51176,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+69,5,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.375988,0.475264,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+70,5,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.910335,0.93991,0.401376,0.493728,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+71,5,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.427358,0.512624,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+72,5,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.375988,0.475264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+73,5,archive_signal,paper lane,stone kiosk path,paper lane,0.886755,0.916461,0.400782,0.493296,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+74,5,signal_orchard,dusk road,river lantern loop,river lantern loop,0.936207,0.94,0.42617,0.51176,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+75,6,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+76,6,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.376582,0.475696,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+77,6,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.939082,0.94,0.403158,0.495024,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+78,6,roofward_archive,glass stair,cool archive lane,glass stair,0.938715,0.94,0.424388,0.510464,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+79,6,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.936503,0.94,0.375988,0.475264,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+80,6,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.40197,0.49416,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+81,6,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+82,6,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.376582,0.475696,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+83,6,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.402564,0.494592,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+84,6,roofward_archive,glass stair,cool archive lane,glass stair,0.93523,0.94,0.424388,0.510464,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+85,6,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.375988,0.475264,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+86,6,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.401376,0.493728,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+87,6,orchard_riverbend,fen track,market plank route,market plank route,0.936515,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+88,6,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.376582,0.475696,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+89,6,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.402564,0.494592,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+90,7,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.400188,0.492864,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+91,7,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.938715,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+92,7,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.377176,0.476128,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+93,7,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.400188,0.492864,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+94,7,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+95,7,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.378364,0.476992,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+96,7,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.400188,0.492864,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+97,7,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+98,7,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.376582,0.475696,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+99,7,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.400188,0.492864,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+100,7,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.936515,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+101,7,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.37777,0.47656,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+102,7,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.400188,0.492864,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+103,7,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.936515,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+104,7,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.376582,0.475696,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+105,8,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.375988,0.475264,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+106,8,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399594,0.492432,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+107,8,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.42617,0.51176,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+108,8,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.375988,0.475264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+109,8,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399594,0.492432,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+110,8,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.424982,0.510896,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+111,8,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.375988,0.475264,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+112,8,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399594,0.492432,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+113,8,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.425576,0.511328,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+114,8,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.375988,0.475264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+115,8,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399594,0.492432,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+116,8,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+117,8,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.375988,0.475264,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+118,8,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399594,0.492432,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+119,8,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.424982,0.510896,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+120,9,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.424388,0.510464,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+121,9,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+122,9,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.400188,0.492864,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+123,9,orchard_riverbend,fen track,market plank route,market plank route,0.938715,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+124,9,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+125,9,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.400782,0.493296,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+126,9,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.425101,0.510982,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+127,9,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+128,9,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399594,0.492432,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+129,9,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424388,0.510464,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+130,9,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+131,9,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.400188,0.492864,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+132,9,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.425814,0.511501,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+133,9,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+134,9,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399594,0.492432,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+135,10,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+136,10,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.436488,0.519264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+137,10,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.390226,0.485619,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+138,10,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4111,0.5008,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+139,10,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.435894,0.518832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+140,10,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388088,0.484064,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+141,10,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+142,10,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.436488,0.519264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+143,10,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.389632,0.485187,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+144,10,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.411813,0.501318,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+145,10,signal_orchard,dusk road,river lantern loop,dusk road,0.934527,0.94,0.435894,0.518832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+146,10,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.387494,0.483632,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+147,10,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+148,10,riverbend_roofward,river ford,orchard ridge detour,river ford,0.934425,0.94,0.436488,0.519264,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+149,10,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.389632,0.485187,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+150,11,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+151,11,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+152,11,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.435894,0.518832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+153,11,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+154,11,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.411694,0.501232,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+155,11,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.438032,0.520387,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+156,11,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+157,11,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+158,11,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+159,11,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+160,11,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.411694,0.501232,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+161,11,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.437438,0.519955,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+162,11,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+163,11,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+164,11,orchard_riverbend,fen track,market plank route,market plank route,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+165,12,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+166,12,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+167,12,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.413238,0.502355,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+168,12,archive_signal,paper lane,stone kiosk path,paper lane,0.936584,0.94,0.436726,0.519437,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+169,12,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+170,12,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+171,12,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+172,12,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+173,12,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.412644,0.501923,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+174,12,archive_signal,paper lane,stone kiosk path,paper lane,0.936968,0.94,0.436726,0.519437,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+175,12,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+176,12,orchard_riverbend,fen track,market plank route,market plank route,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+177,12,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+178,12,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+179,12,roofward_archive,glass stair,cool archive lane,glass stair,0.938543,0.94,0.412644,0.501923,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+180,13,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.412526,0.501837,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+181,13,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+182,13,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+183,13,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93771,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+184,13,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4353,0.5184,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+185,13,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.388444,0.484323,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+186,13,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.412526,0.501837,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+187,13,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+188,13,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+189,13,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+190,13,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+191,13,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.38785,0.483891,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+192,13,archive_signal,paper lane,stone kiosk path,paper lane,0.938564,0.94,0.412526,0.501837,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+193,13,signal_orchard,dusk road,river lantern loop,dusk road,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+194,13,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+195,14,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+196,14,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+197,14,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.43625,0.519091,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+198,14,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+199,14,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+200,14,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+201,14,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+202,14,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+203,14,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.435656,0.518659,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+204,14,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+205,14,signal_orchard,dusk road,river lantern loop,dusk road,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+206,14,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+207,14,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+208,14,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+209,14,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.435656,0.518659,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+210,15,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+211,15,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+212,15,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93837,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+213,15,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+214,15,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399356,0.492259,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+215,15,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.424626,0.510637,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+216,15,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+217,15,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+218,15,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+219,15,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+220,15,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399356,0.492259,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+221,15,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.424032,0.510205,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+222,15,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+223,15,orchard_riverbend,fen track,market plank route,market plank route,0.9349,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+224,15,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+225,16,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+226,16,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+227,16,archive_signal,paper lane,stone kiosk path,paper lane,0.939656,0.94,0.399832,0.492605,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+228,16,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93892,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+229,16,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+230,16,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+231,16,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+232,16,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+233,16,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399238,0.492173,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+234,16,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+235,16,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+236,16,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+237,16,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+238,16,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+239,16,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399238,0.492173,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+240,17,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+241,17,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+242,17,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+243,17,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+244,17,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93892,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+245,17,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.375038,0.474573,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+246,17,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+247,17,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+248,17,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+249,17,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+250,17,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+251,17,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+252,17,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+253,17,orchard_riverbend,fen track,market plank route,fen track,0.93672,0.94,0.4232,0.5096,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+254,17,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+255,18,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+256,18,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+257,18,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+258,18,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+259,18,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+260,18,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+261,18,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+262,18,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+263,18,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+264,18,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+265,18,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+266,18,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+267,18,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+268,18,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+269,18,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+270,19,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+271,19,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+272,19,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+273,19,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93892,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+274,19,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+275,19,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+276,19,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.423913,0.510118,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+277,19,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+278,19,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+279,19,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93564,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+280,19,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+281,19,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+282,19,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.424626,0.510637,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+283,19,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+284,19,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+285,20,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+286,20,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+287,20,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.389038,0.484755,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+288,20,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+289,20,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+290,20,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93098,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+291,20,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+292,20,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+293,20,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.388444,0.484323,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+294,20,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.411813,0.501318,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+295,20,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+296,20,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+297,20,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+298,20,archive_signal,paper lane,stone kiosk path,paper lane,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+299,20,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.388444,0.484323,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+300,21,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+301,21,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+302,21,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+303,21,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+304,21,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+305,21,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.436844,0.519523,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+306,21,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+307,21,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+308,21,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+309,21,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+310,21,archive_signal,paper lane,stone kiosk path,paper lane,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+311,21,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.43625,0.519091,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+312,21,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+313,21,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+314,21,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+315,22,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+316,22,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+317,22,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.41205,0.501491,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+318,22,orchard_riverbend,fen track,market plank route,market plank route,0.936584,0.94,0.436726,0.519437,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+319,22,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+320,22,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+321,22,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+322,22,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3869,0.4832,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+323,22,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.411456,0.501059,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+324,22,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.436726,0.519437,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+325,22,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+326,22,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+327,22,roofward_archive,glass stair,cool archive lane,glass stair,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+328,22,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+329,22,signal_orchard,dusk road,river lantern loop,river lantern loop,0.938748,0.94,0.411456,0.501059,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+330,23,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+331,23,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+332,23,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+333,23,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93234,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+334,23,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+335,23,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.387256,0.483459,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+336,23,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+337,23,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+338,23,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+339,23,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+340,23,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+341,23,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+342,23,orchard_riverbend,fen track,market plank route,market plank route,0.938564,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+343,23,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+344,23,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+345,24,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3869,0.4832,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+346,24,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93771,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+347,24,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+348,24,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+349,24,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+350,24,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+351,24,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+352,24,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+353,24,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+354,24,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+355,24,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+356,24,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+357,24,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+358,24,archive_signal,paper lane,stone kiosk path,paper lane,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+359,24,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+360,25,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+361,25,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+362,25,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+363,25,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+364,25,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+365,25,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424626,0.510637,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+366,25,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+367,25,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+368,25,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+369,25,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+370,25,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+371,25,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424032,0.510205,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+372,25,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+373,25,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+374,25,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+375,26,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+376,26,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+377,26,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399832,0.492605,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+378,26,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93892,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+379,26,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+380,26,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+381,26,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+382,26,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+383,26,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399238,0.492173,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+384,26,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+385,26,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+386,26,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+387,26,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+388,26,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+389,26,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399238,0.492173,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+390,27,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+391,27,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4232,0.5096,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+392,27,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+393,27,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+394,27,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+395,27,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.375038,0.474573,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+396,27,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+397,27,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+398,27,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+399,27,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+400,27,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+401,27,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+402,27,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+403,27,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+404,27,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+405,28,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+406,28,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+407,28,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+408,28,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+409,28,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+410,28,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+411,28,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+412,28,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+413,28,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+414,28,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+415,28,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+416,28,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+417,28,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+418,28,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+419,28,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+420,29,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+421,29,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+422,29,roofward_archive,glass stair,cool archive lane,cool archive lane,0.9398,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+423,29,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93892,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+424,29,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+425,29,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+426,29,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.423913,0.510118,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+427,29,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+428,29,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+429,29,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+430,29,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+431,29,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+432,29,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.424626,0.510637,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+433,29,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+434,29,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+435,30,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+436,30,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+437,30,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.389038,0.484755,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+438,30,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+439,30,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93628,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+440,30,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+441,30,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+442,30,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+443,30,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.388444,0.484323,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+444,30,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+445,30,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+446,30,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+447,30,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+448,30,orchard_riverbend,fen track,market plank route,market plank route,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+449,30,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.388444,0.484323,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+450,31,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+451,31,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+452,31,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+453,31,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+454,31,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+455,31,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.436844,0.519523,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+456,31,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+457,31,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+458,31,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+459,31,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+460,31,orchard_riverbend,fen track,market plank route,market plank route,0.93881,0.94,0.4111,0.5008,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+461,31,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.43625,0.519091,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+462,31,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+463,31,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+464,31,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+465,32,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+466,32,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+467,32,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.41205,0.501491,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+468,32,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+469,32,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+470,32,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+471,32,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+472,32,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+473,32,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.411456,0.501059,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+474,32,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.436013,0.518918,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+475,32,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+476,32,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+477,32,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+478,32,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+479,32,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.938748,0.94,0.411456,0.501059,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+480,33,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.412526,0.501837,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+481,33,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+482,33,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+483,33,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93771,0.94,0.4111,0.5008,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+484,33,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+485,33,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.387256,0.483459,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+486,33,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.412526,0.501837,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+487,33,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+488,33,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+489,33,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+490,33,orchard_riverbend,fen track,market plank route,market plank route,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+491,33,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+492,33,riverbend_roofward,river ford,orchard ridge detour,river ford,0.938564,0.94,0.412526,0.501837,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+493,33,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+494,33,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+495,34,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+496,34,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+497,34,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+498,34,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+499,34,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+500,34,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+501,34,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+502,34,orchard_riverbend,fen track,market plank route,market plank route,0.93281,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+503,34,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+504,34,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.388326,0.484237,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+505,34,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+506,34,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+507,34,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+508,34,orchard_riverbend,fen track,market plank route,market plank route,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+509,34,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+510,35,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+511,35,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+512,35,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93837,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+513,35,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+514,35,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+515,35,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.424626,0.510637,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+516,35,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+517,35,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+518,35,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+519,35,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+520,35,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+521,35,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.424032,0.510205,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+522,35,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+523,35,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+524,35,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+525,36,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+526,36,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+527,36,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399832,0.492605,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+528,36,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+529,36,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+530,36,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+531,36,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+532,36,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+533,36,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399832,0.492605,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+534,36,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+535,36,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+536,36,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+537,36,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+538,36,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+539,36,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399832,0.492605,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+540,37,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+541,37,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+542,37,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+543,37,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+544,37,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+545,37,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.375632,0.475005,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+546,37,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+547,37,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+548,37,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+549,37,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+550,37,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+551,37,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.375038,0.474573,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+552,37,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+553,37,archive_signal,paper lane,stone kiosk path,paper lane,0.93672,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+554,37,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+555,38,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+556,38,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+557,38,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.423438,0.509773,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+558,38,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+559,38,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+560,38,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+561,38,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+562,38,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+563,38,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+564,38,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+565,38,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+566,38,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+567,38,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+568,38,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+569,38,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93672,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+570,39,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+571,39,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+572,39,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+573,39,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+574,39,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+575,39,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+576,39,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+577,39,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+578,39,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+579,39,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+580,39,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+581,39,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+582,39,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+583,39,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+584,39,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+585,40,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+586,40,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+587,40,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+588,40,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+589,40,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+590,40,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+591,40,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+592,40,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+593,40,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+594,40,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+595,40,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+596,40,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+597,40,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+598,40,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+599,40,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+600,41,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+601,41,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93771,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+602,41,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+603,41,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+604,41,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+605,41,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+606,41,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+607,41,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+608,41,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+609,41,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+610,41,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+611,41,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+612,41,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+613,41,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+614,41,orchard_riverbend,fen track,market plank route,market plank route,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+615,42,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+616,42,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+617,42,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+618,42,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93683,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+619,42,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+620,42,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+621,42,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+622,42,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+623,42,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+624,42,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.436013,0.518918,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+625,42,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+626,42,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+627,42,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+628,42,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+629,42,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+630,43,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+631,43,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+632,43,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+633,43,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93234,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+634,43,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+635,43,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+636,43,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+637,43,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+638,43,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+639,43,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93715,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+640,43,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+641,43,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+642,43,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.938564,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+643,43,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+644,43,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.3869,0.4832,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+645,44,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+646,44,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+647,44,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+648,44,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+649,44,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+650,44,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+651,44,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+652,44,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+653,44,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+654,44,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+655,44,signal_orchard,dusk road,river lantern loop,dusk road,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+656,44,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+657,44,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+658,44,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+659,44,roofward_archive,glass stair,cool archive lane,glass stair,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+660,45,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+661,45,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+662,45,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93837,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+663,45,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+664,45,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+665,45,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.424626,0.510637,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+666,45,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+667,45,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+668,45,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+669,45,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+670,45,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+671,45,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.424032,0.510205,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+672,45,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+673,45,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+674,45,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+675,46,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+676,46,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+677,46,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399832,0.492605,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+678,46,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+679,46,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+680,46,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+681,46,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+682,46,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+683,46,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399238,0.492173,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+684,46,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+685,46,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+686,46,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+687,46,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93672,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+688,46,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+689,46,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399238,0.492173,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+690,47,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+691,47,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+692,47,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+693,47,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93652,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+694,47,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+695,47,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.375038,0.474573,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+696,47,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+697,47,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+698,47,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+699,47,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+700,47,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+701,47,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+702,47,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+703,47,orchard_riverbend,fen track,market plank route,market plank route,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+704,47,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+705,48,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+706,48,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+707,48,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+708,48,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+709,48,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+710,48,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+711,48,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+712,48,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+713,48,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+714,48,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+715,48,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+716,48,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+717,48,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+718,48,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+719,48,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+720,49,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+721,49,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+722,49,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+723,49,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+724,49,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+725,49,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+726,49,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+727,49,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+728,49,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+729,49,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+730,49,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+731,49,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+732,49,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+733,49,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+734,49,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+735,50,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+736,50,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+737,50,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+738,50,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+739,50,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+740,50,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+741,50,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+742,50,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+743,50,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+744,50,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+745,50,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+746,50,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+747,50,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+748,50,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+749,50,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+750,51,orchard_riverbend,fen track,market plank route,market plank route,0.93589,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+751,51,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+752,51,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+753,51,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+754,51,archive_signal,paper lane,stone kiosk path,paper lane,0.93771,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+755,51,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+756,51,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+757,51,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+758,51,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+759,51,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+760,51,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+761,51,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+762,51,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+763,51,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+764,51,riverbend_roofward,river ford,orchard ridge detour,river ford,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+765,52,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+766,52,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+767,52,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+768,52,orchard_riverbend,fen track,market plank route,market plank route,0.93683,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+769,52,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+770,52,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+771,52,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+772,52,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+773,52,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+774,52,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.436013,0.518918,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+775,52,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+776,52,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+777,52,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+778,52,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+779,52,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+780,53,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+781,53,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+782,53,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,False,direct is shorter; detour protects recovery but costs fatigue
+783,53,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+784,53,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+785,53,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+786,53,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+787,53,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+788,53,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+789,53,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+790,53,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+791,53,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+792,53,orchard_riverbend,fen track,market plank route,market plank route,0.938564,0.94,0.412526,0.501837,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+793,53,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+794,53,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+795,54,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+796,54,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+797,54,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+798,54,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+799,54,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+800,54,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+801,54,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+802,54,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+803,54,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+804,54,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.388326,0.484237,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+805,54,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93881,0.94,0.4111,0.5008,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+806,54,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+807,54,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+808,54,archive_signal,paper lane,stone kiosk path,paper lane,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+809,54,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+810,55,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+811,55,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93925,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+812,55,roofward_archive,glass stair,cool archive lane,glass stair,0.93837,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+813,55,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+814,55,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+815,55,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424626,0.510637,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+816,55,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+817,55,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+818,55,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+819,55,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+820,55,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+821,55,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.424032,0.510205,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+822,55,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+823,55,riverbend_roofward,river ford,orchard ridge detour,river ford,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+824,55,roofward_archive,glass stair,cool archive lane,glass stair,0.93672,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+825,56,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+826,56,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+827,56,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399832,0.492605,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+828,56,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93892,0.94,0.4232,0.5096,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+829,56,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+830,56,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+831,56,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+832,56,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+833,56,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399238,0.492173,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+834,56,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+835,56,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+836,56,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+837,56,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+838,56,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+839,56,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399238,0.492173,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+840,57,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+841,57,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+842,57,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+843,57,archive_signal,paper lane,stone kiosk path,paper lane,0.9398,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+844,57,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+845,57,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.375038,0.474573,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+846,57,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+847,57,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+848,57,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+849,57,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+850,57,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+851,57,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3748,0.4744,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+852,57,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+853,57,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93672,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+854,57,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+855,58,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+856,58,signal_orchard,dusk road,river lantern loop,dusk road,0.9398,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+857,58,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+858,58,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+859,58,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+860,58,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+861,58,archive_signal,paper lane,stone kiosk path,paper lane,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+862,58,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+863,58,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+864,58,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3748,0.4744,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+865,58,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+866,58,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+867,58,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+868,58,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+869,58,orchard_riverbend,fen track,market plank route,fen track,0.93672,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+870,59,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+871,59,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+872,59,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+873,59,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93892,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+874,59,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+875,59,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.399,0.492,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+876,59,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+877,59,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+878,59,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+879,59,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4232,0.5096,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+880,59,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+881,59,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+882,59,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93672,0.94,0.4232,0.5096,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+883,59,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3748,0.4744,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+884,59,roofward_archive,glass stair,cool archive lane,glass stair,0.94,0.94,0.399,0.492,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+885,60,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+886,60,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+887,60,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+888,60,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+889,60,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+890,60,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+891,60,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+892,60,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+893,60,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+894,60,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+895,60,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+896,60,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+897,60,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93881,0.94,0.4111,0.5008,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+898,60,orchard_riverbend,fen track,market plank route,fen track,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+899,60,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+900,61,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+901,61,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+902,61,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+903,61,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+904,61,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+905,61,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.93683,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+906,61,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+907,61,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+908,61,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+909,61,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+910,61,orchard_riverbend,fen track,market plank route,market plank route,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+911,61,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+912,61,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+913,61,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+914,61,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+915,62,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+916,62,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+917,62,central_repair_ring,inner repair yard,outer bell path,outer bell path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+918,62,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93683,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+919,62,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+920,62,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4111,0.5008,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+921,62,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+922,62,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+923,62,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+924,62,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+925,62,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+926,62,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+927,62,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+928,62,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+929,62,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93881,0.94,0.4111,0.5008,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+930,63,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+931,63,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+932,63,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+933,63,signal_orchard,dusk road,river lantern loop,river lantern loop,0.93771,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+934,63,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+935,63,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+936,63,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+937,63,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+938,63,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+939,63,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+940,63,orchard_riverbend,fen track,market plank route,market plank route,0.93463,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+941,63,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+942,63,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+943,63,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93463,0.94,0.4353,0.5184,branch_b_detour,False,direct is shorter; detour protects recovery but costs fatigue
+944,63,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+945,64,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+946,64,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+947,64,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+948,64,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+949,64,roofward_archive,glass stair,cool archive lane,cool archive lane,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+950,64,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+951,64,signal_orchard,dusk road,river lantern loop,river lantern loop,0.94,0.94,0.3869,0.4832,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+952,64,orchard_riverbend,fen track,market plank route,market plank route,0.94,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+953,64,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.94,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+954,64,riverbend_roofward,river ford,orchard ridge detour,orchard ridge detour,0.94,0.94,0.387613,0.483718,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+955,64,roofward_archive,glass stair,cool archive lane,cool archive lane,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+956,64,archive_signal,paper lane,stone kiosk path,stone kiosk path,0.94,0.94,0.4353,0.5184,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+957,64,signal_orchard,dusk road,river lantern loop,dusk road,0.94,0.94,0.3869,0.4832,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue
+958,64,orchard_riverbend,fen track,market plank route,market plank route,0.93881,0.94,0.4111,0.5008,branch_b_detour,True,direct is shorter; detour protects recovery but costs fatigue
+959,64,central_repair_ring,inner repair yard,outer bell path,inner repair yard,0.93463,0.94,0.4353,0.5184,branch_a_direct,True,direct is shorter; detour protects recovery but costs fatigue

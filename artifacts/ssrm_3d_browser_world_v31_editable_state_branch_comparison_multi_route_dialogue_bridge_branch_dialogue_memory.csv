@@ -1,0 +1,961 @@
+tick_id,day,agent,route_id,public_memory_key,remembered_branch,remembered_import_export,remembered_simultaneous_task,remembered_dialogue,remembered_recovery,private_workspace_sealed,replay_pointer
+0,1,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day1,river ford,imports:0 rev:1,tasks:0 debt:0.12,turn:0 kind:none,0.62,True,replay:0:riverbend_roofward
+1,1,Fay,roofward_archive,v31:Fay:roofward_archive:day1,glass stair,imports:1 rev:2,tasks:1 debt:0.10,turn:0 kind:none,0.65,True,replay:1:roofward_archive
+2,1,Nia,archive_signal,v31:Nia:archive_signal:day1,paper lane,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.62,True,replay:2:archive_signal
+3,1,Milo,signal_orchard,v31:Milo:signal_orchard:day1,dusk road,imports:0 rev:1,tasks:0 debt:0.12,turn:0 kind:none,0.56,True,replay:3:signal_orchard
+4,1,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day1,fen track,imports:0 rev:1,tasks:0 debt:0.12,turn:0 kind:none,0.53,True,replay:4:orchard_riverbend
+5,1,Juno,central_repair_ring,v31:Juno:central_repair_ring:day1,inner repair yard,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.55,True,replay:5:central_repair_ring
+6,1,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day1,river ford,imports:0 rev:1,tasks:0 debt:0.12,turn:0 kind:none,0.62,True,replay:6:riverbend_roofward
+7,1,Fay,roofward_archive,v31:Fay:roofward_archive:day1,cool archive lane,imports:2 rev:3,tasks:2 debt:0.09,turn:0 kind:none,0.73,True,replay:7:roofward_archive
+8,1,Nia,archive_signal,v31:Nia:archive_signal:day1,stone kiosk path,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.64,True,replay:8:archive_signal
+9,1,Milo,signal_orchard,v31:Milo:signal_orchard:day1,dusk road,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.57,True,replay:9:signal_orchard
+10,1,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day1,fen track,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.57,True,replay:10:orchard_riverbend
+11,1,Juno,central_repair_ring,v31:Juno:central_repair_ring:day1,inner repair yard,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.54,True,replay:11:central_repair_ring
+12,1,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day1,orchard ridge detour,imports:0 rev:1,tasks:0 debt:0.12,turn:0 kind:none,0.65,True,replay:12:riverbend_roofward
+13,1,Fay,roofward_archive,v31:Fay:roofward_archive:day1,cool archive lane,imports:2 rev:3,tasks:3 debt:0.07,turn:0 kind:none,0.81,True,replay:13:roofward_archive
+14,1,Nia,archive_signal,v31:Nia:archive_signal:day1,stone kiosk path,imports:1 rev:2,tasks:1 debt:0.10,turn:0 kind:none,0.68,True,replay:14:archive_signal
+15,2,Milo,signal_orchard,v31:Milo:signal_orchard:day2,river lantern loop,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.60,True,replay:15:signal_orchard
+16,2,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day2,fen track,imports:1 rev:2,tasks:1 debt:0.10,turn:0 kind:none,0.58,True,replay:16:orchard_riverbend
+17,2,Juno,central_repair_ring,v31:Juno:central_repair_ring:day2,inner repair yard,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.54,True,replay:17:central_repair_ring
+18,2,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day2,orchard ridge detour,imports:0 rev:1,tasks:0 debt:0.12,turn:0 kind:none,0.68,True,replay:18:riverbend_roofward
+19,2,Fay,roofward_archive,v31:Fay:roofward_archive:day2,cool archive lane,imports:2 rev:3,tasks:3 debt:0.07,turn:0 kind:none,0.84,True,replay:19:roofward_archive
+20,2,Nia,archive_signal,v31:Nia:archive_signal:day2,paper lane,imports:1 rev:2,tasks:2 debt:0.09,turn:0 kind:none,0.73,True,replay:20:archive_signal
+21,2,Milo,signal_orchard,v31:Milo:signal_orchard:day2,river lantern loop,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.62,True,replay:21:signal_orchard
+22,2,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day2,fen track,imports:1 rev:2,tasks:1 debt:0.10,turn:0 kind:none,0.59,True,replay:22:orchard_riverbend
+23,2,Juno,central_repair_ring,v31:Juno:central_repair_ring:day2,outer bell path,imports:0 rev:1,tasks:1 debt:0.10,turn:0 kind:none,0.57,True,replay:23:central_repair_ring
+24,2,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day2,orchard ridge detour,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.71,True,replay:24:riverbend_roofward
+25,2,Fay,roofward_archive,v31:Fay:roofward_archive:day2,cool archive lane,imports:2 rev:3,tasks:4 debt:0.06,turn:0 kind:none,0.91,True,replay:25:roofward_archive
+26,2,Nia,archive_signal,v31:Nia:archive_signal:day2,paper lane,imports:1 rev:2,tasks:3 debt:0.07,turn:0 kind:none,0.77,True,replay:26:archive_signal
+27,2,Milo,signal_orchard,v31:Milo:signal_orchard:day2,river lantern loop,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.65,True,replay:27:signal_orchard
+28,2,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day2,fen track,imports:1 rev:2,tasks:2 debt:0.09,turn:0 kind:none,0.63,True,replay:28:orchard_riverbend
+29,2,Juno,central_repair_ring,v31:Juno:central_repair_ring:day2,outer bell path,imports:1 rev:2,tasks:1 debt:0.10,turn:0 kind:none,0.61,True,replay:29:central_repair_ring
+30,3,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day3,orchard ridge detour,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.75,True,replay:30:riverbend_roofward
+31,3,Fay,roofward_archive,v31:Fay:roofward_archive:day3,cool archive lane,imports:2 rev:3,tasks:4 debt:0.06,turn:0 kind:none,0.93,True,replay:31:roofward_archive
+32,3,Nia,archive_signal,v31:Nia:archive_signal:day3,paper lane,imports:1 rev:2,tasks:4 debt:0.06,turn:0 kind:none,0.82,True,replay:32:archive_signal
+33,3,Milo,signal_orchard,v31:Milo:signal_orchard:day3,river lantern loop,imports:1 rev:2,tasks:1 debt:0.10,turn:0 kind:none,0.72,True,replay:33:signal_orchard
+34,3,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day3,fen track,imports:1 rev:2,tasks:2 debt:0.09,turn:0 kind:none,0.63,True,replay:34:orchard_riverbend
+35,3,Juno,central_repair_ring,v31:Juno:central_repair_ring:day3,outer bell path,imports:1 rev:2,tasks:2 debt:0.09,turn:0 kind:none,0.69,True,replay:35:central_repair_ring
+36,3,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day3,orchard ridge detour,imports:1 rev:2,tasks:0 debt:0.12,turn:0 kind:none,0.78,True,replay:36:riverbend_roofward
+37,3,Fay,roofward_archive,v31:Fay:roofward_archive:day3,cool archive lane,imports:2 rev:3,tasks:4 debt:0.06,turn:0 kind:none,0.93,True,replay:37:roofward_archive
+38,3,Nia,archive_signal,v31:Nia:archive_signal:day3,paper lane,imports:1 rev:2,tasks:4 debt:0.06,turn:0 kind:none,0.82,True,replay:38:archive_signal
+39,3,Milo,signal_orchard,v31:Milo:signal_orchard:day3,river lantern loop,imports:2 rev:3,tasks:2 debt:0.09,turn:0 kind:none,0.81,True,replay:39:signal_orchard
+40,3,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day3,fen track,imports:1 rev:2,tasks:3 debt:0.07,turn:0 kind:none,0.67,True,replay:40:orchard_riverbend
+41,3,Juno,central_repair_ring,v31:Juno:central_repair_ring:day3,outer bell path,imports:1 rev:2,tasks:2 debt:0.09,turn:0 kind:none,0.72,True,replay:41:central_repair_ring
+42,3,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day3,orchard ridge detour,imports:2 rev:3,tasks:0 debt:0.12,turn:0 kind:none,0.81,True,replay:42:riverbend_roofward
+43,3,Fay,roofward_archive,v31:Fay:roofward_archive:day3,cool archive lane,imports:2 rev:3,tasks:5 debt:0.04,turn:0 kind:none,0.94,True,replay:43:roofward_archive
+44,3,Nia,archive_signal,v31:Nia:archive_signal:day3,paper lane,imports:2 rev:3,tasks:4 debt:0.06,turn:0 kind:none,0.84,True,replay:44:archive_signal
+45,4,Milo,signal_orchard,v31:Milo:signal_orchard:day4,river lantern loop,imports:2 rev:3,tasks:2 debt:0.09,turn:0 kind:none,0.84,True,replay:45:signal_orchard
+46,4,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day4,market plank route,imports:2 rev:3,tasks:4 debt:0.06,turn:0 kind:none,0.75,True,replay:46:orchard_riverbend
+47,4,Juno,central_repair_ring,v31:Juno:central_repair_ring:day4,outer bell path,imports:1 rev:2,tasks:3 debt:0.07,turn:0 kind:none,0.79,True,replay:47:central_repair_ring
+48,4,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day4,orchard ridge detour,imports:2 rev:3,tasks:0 debt:0.12,turn:0 kind:none,0.84,True,replay:48:riverbend_roofward
+49,4,Fay,roofward_archive,v31:Fay:roofward_archive:day4,cool archive lane,imports:3 rev:4,tasks:5 debt:0.04,turn:0 kind:none,0.94,True,replay:49:roofward_archive
+50,4,Nia,archive_signal,v31:Nia:archive_signal:day4,paper lane,imports:2 rev:3,tasks:5 debt:0.04,turn:0 kind:none,0.88,True,replay:50:archive_signal
+51,4,Milo,signal_orchard,v31:Milo:signal_orchard:day4,river lantern loop,imports:2 rev:3,tasks:2 debt:0.09,turn:0 kind:none,0.87,True,replay:51:signal_orchard
+52,4,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day4,market plank route,imports:2 rev:3,tasks:5 debt:0.04,turn:0 kind:none,0.83,True,replay:52:orchard_riverbend
+53,4,Juno,central_repair_ring,v31:Juno:central_repair_ring:day4,outer bell path,imports:1 rev:2,tasks:3 debt:0.07,turn:0 kind:none,0.82,True,replay:53:central_repair_ring
+54,4,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day4,orchard ridge detour,imports:3 rev:4,tasks:0 debt:0.12,turn:0 kind:none,0.88,True,replay:54:riverbend_roofward
+55,4,Fay,roofward_archive,v31:Fay:roofward_archive:day4,cool archive lane,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:55:roofward_archive
+56,4,Nia,archive_signal,v31:Nia:archive_signal:day4,paper lane,imports:2 rev:3,tasks:5 debt:0.04,turn:0 kind:none,0.87,True,replay:56:archive_signal
+57,4,Milo,signal_orchard,v31:Milo:signal_orchard:day4,river lantern loop,imports:2 rev:3,tasks:2 debt:0.09,turn:0 kind:none,0.90,True,replay:57:signal_orchard
+58,4,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day4,market plank route,imports:2 rev:3,tasks:6 debt:0.03,turn:0 kind:none,0.91,True,replay:58:orchard_riverbend
+59,4,Juno,central_repair_ring,v31:Juno:central_repair_ring:day4,outer bell path,imports:2 rev:3,tasks:3 debt:0.07,turn:0 kind:none,0.86,True,replay:59:central_repair_ring
+60,5,Fay,roofward_archive,v31:Fay:roofward_archive:day5,glass stair,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:60:roofward_archive
+61,5,Nia,archive_signal,v31:Nia:archive_signal:day5,paper lane,imports:3 rev:4,tasks:5 debt:0.04,turn:0 kind:none,0.88,True,replay:61:archive_signal
+62,5,Milo,signal_orchard,v31:Milo:signal_orchard:day5,river lantern loop,imports:2 rev:3,tasks:3 debt:0.07,turn:0 kind:none,0.94,True,replay:62:signal_orchard
+63,5,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day5,market plank route,imports:2 rev:3,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:63:orchard_riverbend
+64,5,Juno,central_repair_ring,v31:Juno:central_repair_ring:day5,inner repair yard,imports:2 rev:3,tasks:4 debt:0.06,turn:0 kind:none,0.91,True,replay:64:central_repair_ring
+65,5,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day5,orchard ridge detour,imports:3 rev:4,tasks:1 debt:0.10,turn:0 kind:none,0.94,True,replay:65:riverbend_roofward
+66,5,Fay,roofward_archive,v31:Fay:roofward_archive:day5,glass stair,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:66:roofward_archive
+67,5,Nia,archive_signal,v31:Nia:archive_signal:day5,paper lane,imports:3 rev:4,tasks:5 debt:0.04,turn:0 kind:none,0.88,True,replay:67:archive_signal
+68,5,Milo,signal_orchard,v31:Milo:signal_orchard:day5,river lantern loop,imports:2 rev:3,tasks:3 debt:0.07,turn:0 kind:none,0.93,True,replay:68:signal_orchard
+69,5,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day5,market plank route,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:69:orchard_riverbend
+70,5,Juno,central_repair_ring,v31:Juno:central_repair_ring:day5,outer bell path,imports:3 rev:4,tasks:5 debt:0.04,turn:0 kind:none,0.94,True,replay:70:central_repair_ring
+71,5,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day5,orchard ridge detour,imports:3 rev:4,tasks:1 debt:0.10,turn:0 kind:none,0.93,True,replay:71:riverbend_roofward
+72,5,Fay,roofward_archive,v31:Fay:roofward_archive:day5,glass stair,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:72:roofward_archive
+73,5,Nia,archive_signal,v31:Nia:archive_signal:day5,paper lane,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.93,True,replay:73:archive_signal
+74,5,Milo,signal_orchard,v31:Milo:signal_orchard:day5,river lantern loop,imports:3 rev:4,tasks:3 debt:0.07,turn:0 kind:none,0.94,True,replay:74:signal_orchard
+75,6,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day6,market plank route,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:75:orchard_riverbend
+76,6,Juno,central_repair_ring,v31:Juno:central_repair_ring:day6,outer bell path,imports:4 rev:5,tasks:5 debt:0.04,turn:0 kind:none,0.94,True,replay:76:central_repair_ring
+77,6,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day6,orchard ridge detour,imports:3 rev:4,tasks:2 debt:0.09,turn:0 kind:none,0.94,True,replay:77:riverbend_roofward
+78,6,Fay,roofward_archive,v31:Fay:roofward_archive:day6,glass stair,imports:3 rev:4,tasks:6 debt:0.03,turn:1 kind:planning_followup,0.93,True,replay:78:roofward_archive
+79,6,Nia,archive_signal,v31:Nia:archive_signal:day6,stone kiosk path,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:79:archive_signal
+80,6,Milo,signal_orchard,v31:Milo:signal_orchard:day6,river lantern loop,imports:3 rev:4,tasks:4 debt:0.06,turn:0 kind:none,0.94,True,replay:80:signal_orchard
+81,6,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day6,market plank route,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.93,True,replay:81:orchard_riverbend
+82,6,Juno,central_repair_ring,v31:Juno:central_repair_ring:day6,outer bell path,imports:4 rev:5,tasks:5 debt:0.04,turn:0 kind:none,0.94,True,replay:82:central_repair_ring
+83,6,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day6,river ford,imports:3 rev:4,tasks:2 debt:0.09,turn:0 kind:none,0.94,True,replay:83:riverbend_roofward
+84,6,Fay,roofward_archive,v31:Fay:roofward_archive:day6,glass stair,imports:4 rev:5,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:84:roofward_archive
+85,6,Nia,archive_signal,v31:Nia:archive_signal:day6,stone kiosk path,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:85:archive_signal
+86,6,Milo,signal_orchard,v31:Milo:signal_orchard:day6,river lantern loop,imports:3 rev:4,tasks:4 debt:0.06,turn:1 kind:planning_followup,0.94,True,replay:86:signal_orchard
+87,6,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day6,market plank route,imports:3 rev:4,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:87:orchard_riverbend
+88,6,Juno,central_repair_ring,v31:Juno:central_repair_ring:day6,outer bell path,imports:4 rev:5,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:88:central_repair_ring
+89,6,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day6,river ford,imports:4 rev:5,tasks:2 debt:0.09,turn:0 kind:none,0.94,True,replay:89:riverbend_roofward
+90,7,Fay,roofward_archive,v31:Fay:roofward_archive:day7,glass stair,imports:4 rev:5,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:90:roofward_archive
+91,7,Nia,archive_signal,v31:Nia:archive_signal:day7,stone kiosk path,imports:4 rev:5,tasks:6 debt:0.03,turn:0 kind:none,0.94,True,replay:91:archive_signal
+92,7,Milo,signal_orchard,v31:Milo:signal_orchard:day7,river lantern loop,imports:3 rev:4,tasks:5 debt:0.04,turn:1 kind:none,0.94,True,replay:92:signal_orchard
+93,7,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day7,market plank route,imports:3 rev:4,tasks:6 debt:0.03,turn:1 kind:planning_followup,0.94,True,replay:93:orchard_riverbend
+94,7,Juno,central_repair_ring,v31:Juno:central_repair_ring:day7,outer bell path,imports:4 rev:5,tasks:6 debt:0.03,turn:0 kind:none,0.93,True,replay:94:central_repair_ring
+95,7,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day7,river ford,imports:4 rev:5,tasks:3 debt:0.07,turn:0 kind:none,0.94,True,replay:95:riverbend_roofward
+96,7,Fay,roofward_archive,v31:Fay:roofward_archive:day7,glass stair,imports:4 rev:5,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:96:roofward_archive
+97,7,Nia,archive_signal,v31:Nia:archive_signal:day7,stone kiosk path,imports:4 rev:5,tasks:6 debt:0.03,turn:0 kind:none,0.93,True,replay:97:archive_signal
+98,7,Milo,signal_orchard,v31:Milo:signal_orchard:day7,river lantern loop,imports:4 rev:5,tasks:5 debt:0.04,turn:1 kind:none,0.94,True,replay:98:signal_orchard
+99,7,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day7,market plank route,imports:4 rev:5,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:99:orchard_riverbend
+100,7,Juno,central_repair_ring,v31:Juno:central_repair_ring:day7,outer bell path,imports:4 rev:5,tasks:7 debt:0.01,turn:0 kind:none,0.94,True,replay:100:central_repair_ring
+101,7,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day7,river ford,imports:4 rev:5,tasks:3 debt:0.07,turn:1 kind:planning_followup,0.94,True,replay:101:riverbend_roofward
+102,7,Fay,roofward_archive,v31:Fay:roofward_archive:day7,glass stair,imports:4 rev:5,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:102:roofward_archive
+103,7,Nia,archive_signal,v31:Nia:archive_signal:day7,stone kiosk path,imports:4 rev:5,tasks:7 debt:0.01,turn:0 kind:none,0.94,True,replay:103:archive_signal
+104,7,Milo,signal_orchard,v31:Milo:signal_orchard:day7,river lantern loop,imports:5 rev:6,tasks:5 debt:0.04,turn:1 kind:none,0.94,True,replay:104:signal_orchard
+105,8,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day8,market plank route,imports:5 rev:6,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:105:orchard_riverbend
+106,8,Juno,central_repair_ring,v31:Juno:central_repair_ring:day8,outer bell path,imports:5 rev:6,tasks:7 debt:0.01,turn:0 kind:none,0.94,True,replay:106:central_repair_ring
+107,8,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day8,river ford,imports:4 rev:5,tasks:4 debt:0.06,turn:1 kind:none,0.94,True,replay:107:riverbend_roofward
+108,8,Fay,roofward_archive,v31:Fay:roofward_archive:day8,glass stair,imports:4 rev:5,tasks:6 debt:0.03,turn:2 kind:thanks,0.94,True,replay:108:roofward_archive
+109,8,Nia,archive_signal,v31:Nia:archive_signal:day8,stone kiosk path,imports:4 rev:5,tasks:7 debt:0.01,turn:0 kind:none,0.94,True,replay:109:archive_signal
+110,8,Milo,signal_orchard,v31:Milo:signal_orchard:day8,river lantern loop,imports:5 rev:6,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:110:signal_orchard
+111,8,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day8,market plank route,imports:5 rev:6,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:111:orchard_riverbend
+112,8,Juno,central_repair_ring,v31:Juno:central_repair_ring:day8,outer bell path,imports:5 rev:6,tasks:7 debt:0.01,turn:0 kind:none,0.94,True,replay:112:central_repair_ring
+113,8,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day8,river ford,imports:4 rev:5,tasks:5 debt:0.04,turn:1 kind:none,0.94,True,replay:113:riverbend_roofward
+114,8,Fay,roofward_archive,v31:Fay:roofward_archive:day8,glass stair,imports:5 rev:6,tasks:6 debt:0.03,turn:2 kind:none,0.94,True,replay:114:roofward_archive
+115,8,Nia,archive_signal,v31:Nia:archive_signal:day8,stone kiosk path,imports:4 rev:5,tasks:8 debt:0.00,turn:0 kind:none,0.94,True,replay:115:archive_signal
+116,8,Milo,signal_orchard,v31:Milo:signal_orchard:day8,river lantern loop,imports:5 rev:6,tasks:6 debt:0.03,turn:2 kind:planning_followup,0.94,True,replay:116:signal_orchard
+117,8,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day8,market plank route,imports:5 rev:6,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:117:orchard_riverbend
+118,8,Juno,central_repair_ring,v31:Juno:central_repair_ring:day8,outer bell path,imports:5 rev:6,tasks:8 debt:0.00,turn:0 kind:none,0.94,True,replay:118:central_repair_ring
+119,8,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day8,river ford,imports:5 rev:6,tasks:5 debt:0.04,turn:1 kind:none,0.94,True,replay:119:riverbend_roofward
+120,9,Fay,roofward_archive,v31:Fay:roofward_archive:day9,glass stair,imports:5 rev:6,tasks:7 debt:0.05,turn:2 kind:none,0.94,True,replay:120:roofward_archive
+121,9,Nia,archive_signal,v31:Nia:archive_signal:day9,stone kiosk path,imports:5 rev:6,tasks:8 debt:0.00,turn:0 kind:none,0.94,True,replay:121:archive_signal
+122,9,Milo,signal_orchard,v31:Milo:signal_orchard:day9,river lantern loop,imports:5 rev:6,tasks:7 debt:0.01,turn:2 kind:none,0.94,True,replay:122:signal_orchard
+123,9,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day9,market plank route,imports:5 rev:6,tasks:6 debt:0.03,turn:2 kind:thanks,0.94,True,replay:123:orchard_riverbend
+124,9,Juno,central_repair_ring,v31:Juno:central_repair_ring:day9,outer bell path,imports:5 rev:6,tasks:8 debt:0.00,turn:0 kind:none,0.94,True,replay:124:central_repair_ring
+125,9,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day9,river ford,imports:5 rev:6,tasks:6 debt:0.03,turn:1 kind:none,0.94,True,replay:125:riverbend_roofward
+126,9,Fay,roofward_archive,v31:Fay:roofward_archive:day9,glass stair,imports:5 rev:6,tasks:8 debt:0.07,turn:2 kind:none,0.94,True,replay:126:roofward_archive
+127,9,Nia,archive_signal,v31:Nia:archive_signal:day9,stone kiosk path,imports:5 rev:6,tasks:8 debt:0.00,turn:0 kind:none,0.94,True,replay:127:archive_signal
+128,9,Milo,signal_orchard,v31:Milo:signal_orchard:day9,river lantern loop,imports:5 rev:6,tasks:7 debt:0.01,turn:2 kind:none,0.94,True,replay:128:signal_orchard
+129,9,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day9,market plank route,imports:6 rev:7,tasks:6 debt:0.03,turn:2 kind:none,0.94,True,replay:129:orchard_riverbend
+130,9,Juno,central_repair_ring,v31:Juno:central_repair_ring:day9,outer bell path,imports:5 rev:6,tasks:9 debt:0.00,turn:0 kind:none,0.94,True,replay:130:central_repair_ring
+131,9,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day9,river ford,imports:5 rev:6,tasks:6 debt:0.03,turn:2 kind:planning_followup,0.94,True,replay:131:riverbend_roofward
+132,9,Fay,roofward_archive,v31:Fay:roofward_archive:day9,glass stair,imports:5 rev:6,tasks:9 debt:0.08,turn:2 kind:none,0.94,True,replay:132:roofward_archive
+133,9,Nia,archive_signal,v31:Nia:archive_signal:day9,stone kiosk path,imports:5 rev:6,tasks:9 debt:0.00,turn:0 kind:none,0.94,True,replay:133:archive_signal
+134,9,Milo,signal_orchard,v31:Milo:signal_orchard:day9,river lantern loop,imports:6 rev:7,tasks:7 debt:0.01,turn:2 kind:none,0.94,True,replay:134:signal_orchard
+135,10,Juno,central_repair_ring,v31:Juno:central_repair_ring:day10,outer bell path,imports:5 rev:6,tasks:9 debt:0.00,turn:0 kind:none,0.94,True,replay:135:central_repair_ring
+136,10,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day10,river ford,imports:6 rev:7,tasks:6 debt:0.03,turn:2 kind:none,0.94,True,replay:136:riverbend_roofward
+137,10,Fay,roofward_archive,v31:Fay:roofward_archive:day10,glass stair,imports:5 rev:6,tasks:10 debt:0.07,turn:2 kind:none,0.94,True,replay:137:roofward_archive
+138,10,Nia,archive_signal,v31:Nia:archive_signal:day10,stone kiosk path,imports:5 rev:6,tasks:10 debt:0.02,turn:1 kind:planning_followup,0.94,True,replay:138:archive_signal
+139,10,Milo,signal_orchard,v31:Milo:signal_orchard:day10,dusk road,imports:6 rev:7,tasks:7 debt:0.01,turn:2 kind:none,0.93,True,replay:139:signal_orchard
+140,10,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day10,market plank route,imports:6 rev:7,tasks:7 debt:0.01,turn:2 kind:none,0.94,True,replay:140:orchard_riverbend
+141,10,Juno,central_repair_ring,v31:Juno:central_repair_ring:day10,outer bell path,imports:5 rev:6,tasks:9 debt:0.00,turn:0 kind:none,0.93,True,replay:141:central_repair_ring
+142,10,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day10,river ford,imports:6 rev:7,tasks:6 debt:0.03,turn:2 kind:none,0.93,True,replay:142:riverbend_roofward
+143,10,Fay,roofward_archive,v31:Fay:roofward_archive:day10,glass stair,imports:5 rev:6,tasks:10 debt:0.07,turn:2 kind:none,0.94,True,replay:143:roofward_archive
+144,10,Nia,archive_signal,v31:Nia:archive_signal:day10,stone kiosk path,imports:6 rev:7,tasks:11 debt:0.04,turn:1 kind:none,0.94,True,replay:144:archive_signal
+145,10,Milo,signal_orchard,v31:Milo:signal_orchard:day10,dusk road,imports:6 rev:7,tasks:8 debt:0.00,turn:2 kind:none,0.94,True,replay:145:signal_orchard
+146,10,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day10,market plank route,imports:6 rev:7,tasks:7 debt:0.01,turn:3 kind:planning_followup,0.94,True,replay:146:orchard_riverbend
+147,10,Juno,central_repair_ring,v31:Juno:central_repair_ring:day10,outer bell path,imports:6 rev:7,tasks:9 debt:0.00,turn:0 kind:none,0.94,True,replay:147:central_repair_ring
+148,10,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day10,river ford,imports:6 rev:7,tasks:7 debt:0.01,turn:2 kind:none,0.94,True,replay:148:riverbend_roofward
+149,10,Fay,roofward_archive,v31:Fay:roofward_archive:day10,glass stair,imports:6 rev:7,tasks:10 debt:0.07,turn:2 kind:none,0.94,True,replay:149:roofward_archive
+150,11,Nia,archive_signal,v31:Nia:archive_signal:day11,paper lane,imports:6 rev:7,tasks:11 debt:0.04,turn:1 kind:none,0.94,True,replay:150:archive_signal
+151,11,Milo,signal_orchard,v31:Milo:signal_orchard:day11,dusk road,imports:7 rev:8,tasks:9 debt:0.00,turn:2 kind:none,0.94,True,replay:151:signal_orchard
+152,11,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day11,market plank route,imports:6 rev:7,tasks:8 debt:0.00,turn:3 kind:none,0.94,True,replay:152:orchard_riverbend
+153,11,Juno,central_repair_ring,v31:Juno:central_repair_ring:day11,outer bell path,imports:6 rev:7,tasks:9 debt:0.00,turn:1 kind:planning_followup,0.94,True,replay:153:central_repair_ring
+154,11,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day11,orchard ridge detour,imports:7 rev:8,tasks:7 debt:0.01,turn:2 kind:none,0.94,True,replay:154:riverbend_roofward
+155,11,Fay,roofward_archive,v31:Fay:roofward_archive:day11,glass stair,imports:6 rev:7,tasks:11 debt:0.05,turn:2 kind:none,0.94,True,replay:155:roofward_archive
+156,11,Nia,archive_signal,v31:Nia:archive_signal:day11,paper lane,imports:6 rev:7,tasks:11 debt:0.04,turn:1 kind:none,0.94,True,replay:156:archive_signal
+157,11,Milo,signal_orchard,v31:Milo:signal_orchard:day11,dusk road,imports:7 rev:8,tasks:10 debt:0.00,turn:2 kind:none,0.94,True,replay:157:signal_orchard
+158,11,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day11,market plank route,imports:6 rev:7,tasks:8 debt:0.00,turn:3 kind:none,0.93,True,replay:158:orchard_riverbend
+159,11,Juno,central_repair_ring,v31:Juno:central_repair_ring:day11,outer bell path,imports:7 rev:8,tasks:9 debt:0.00,turn:1 kind:none,0.94,True,replay:159:central_repair_ring
+160,11,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day11,orchard ridge detour,imports:7 rev:8,tasks:8 debt:0.00,turn:2 kind:none,0.94,True,replay:160:riverbend_roofward
+161,11,Fay,roofward_archive,v31:Fay:roofward_archive:day11,glass stair,imports:6 rev:7,tasks:11 debt:0.05,turn:3 kind:concern,0.94,True,replay:161:roofward_archive
+162,11,Nia,archive_signal,v31:Nia:archive_signal:day11,paper lane,imports:6 rev:7,tasks:11 debt:0.04,turn:1 kind:none,0.94,True,replay:162:archive_signal
+163,11,Milo,signal_orchard,v31:Milo:signal_orchard:day11,dusk road,imports:7 rev:8,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:163:signal_orchard
+164,11,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day11,market plank route,imports:7 rev:8,tasks:8 debt:0.00,turn:3 kind:none,0.94,True,replay:164:orchard_riverbend
+165,12,Juno,central_repair_ring,v31:Juno:central_repair_ring:day12,outer bell path,imports:7 rev:8,tasks:9 debt:0.00,turn:1 kind:none,0.94,True,replay:165:central_repair_ring
+166,12,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day12,orchard ridge detour,imports:8 rev:9,tasks:8 debt:0.00,turn:2 kind:none,0.94,True,replay:166:riverbend_roofward
+167,12,Fay,roofward_archive,v31:Fay:roofward_archive:day12,glass stair,imports:6 rev:7,tasks:12 debt:0.04,turn:3 kind:none,0.94,True,replay:167:roofward_archive
+168,12,Nia,archive_signal,v31:Nia:archive_signal:day12,paper lane,imports:6 rev:7,tasks:11 debt:0.04,turn:2 kind:thanks,0.94,True,replay:168:archive_signal
+169,12,Milo,signal_orchard,v31:Milo:signal_orchard:day12,dusk road,imports:7 rev:8,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:169:signal_orchard
+170,12,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day12,market plank route,imports:7 rev:8,tasks:8 debt:0.00,turn:3 kind:none,0.93,True,replay:170:orchard_riverbend
+171,12,Juno,central_repair_ring,v31:Juno:central_repair_ring:day12,outer bell path,imports:7 rev:8,tasks:9 debt:0.00,turn:1 kind:none,0.93,True,replay:171:central_repair_ring
+172,12,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day12,orchard ridge detour,imports:8 rev:9,tasks:8 debt:0.00,turn:2 kind:none,0.94,True,replay:172:riverbend_roofward
+173,12,Fay,roofward_archive,v31:Fay:roofward_archive:day12,glass stair,imports:6 rev:7,tasks:12 debt:0.04,turn:3 kind:none,0.93,True,replay:173:roofward_archive
+174,12,Nia,archive_signal,v31:Nia:archive_signal:day12,paper lane,imports:7 rev:8,tasks:11 debt:0.04,turn:2 kind:none,0.94,True,replay:174:archive_signal
+175,12,Milo,signal_orchard,v31:Milo:signal_orchard:day12,dusk road,imports:7 rev:8,tasks:12 debt:0.00,turn:2 kind:none,0.94,True,replay:175:signal_orchard
+176,12,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day12,market plank route,imports:7 rev:8,tasks:9 debt:0.00,turn:4 kind:thanks,0.94,True,replay:176:orchard_riverbend
+177,12,Juno,central_repair_ring,v31:Juno:central_repair_ring:day12,outer bell path,imports:7 rev:8,tasks:9 debt:0.00,turn:1 kind:none,0.93,True,replay:177:central_repair_ring
+178,12,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day12,orchard ridge detour,imports:8 rev:9,tasks:9 debt:0.00,turn:2 kind:none,0.94,True,replay:178:riverbend_roofward
+179,12,Fay,roofward_archive,v31:Fay:roofward_archive:day12,glass stair,imports:7 rev:8,tasks:12 debt:0.04,turn:3 kind:none,0.94,True,replay:179:roofward_archive
+180,13,Nia,archive_signal,v31:Nia:archive_signal:day13,paper lane,imports:7 rev:8,tasks:11 debt:0.04,turn:2 kind:none,0.94,True,replay:180:archive_signal
+181,13,Milo,signal_orchard,v31:Milo:signal_orchard:day13,dusk road,imports:8 rev:9,tasks:12 debt:0.00,turn:2 kind:none,0.94,True,replay:181:signal_orchard
+182,13,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day13,market plank route,imports:7 rev:8,tasks:10 debt:0.00,turn:4 kind:none,0.94,True,replay:182:orchard_riverbend
+183,13,Juno,central_repair_ring,v31:Juno:central_repair_ring:day13,outer bell path,imports:7 rev:8,tasks:10 debt:0.00,turn:2 kind:thanks,0.94,True,replay:183:central_repair_ring
+184,13,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day13,orchard ridge detour,imports:8 rev:9,tasks:9 debt:0.00,turn:2 kind:none,0.93,True,replay:184:riverbend_roofward
+185,13,Fay,roofward_archive,v31:Fay:roofward_archive:day13,glass stair,imports:7 rev:8,tasks:13 debt:0.02,turn:3 kind:none,0.94,True,replay:185:roofward_archive
+186,13,Nia,archive_signal,v31:Nia:archive_signal:day13,paper lane,imports:7 rev:8,tasks:11 debt:0.04,turn:2 kind:none,0.93,True,replay:186:archive_signal
+187,13,Milo,signal_orchard,v31:Milo:signal_orchard:day13,dusk road,imports:8 rev:9,tasks:12 debt:0.00,turn:2 kind:none,0.93,True,replay:187:signal_orchard
+188,13,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day13,market plank route,imports:7 rev:8,tasks:10 debt:0.00,turn:4 kind:none,0.94,True,replay:188:orchard_riverbend
+189,13,Juno,central_repair_ring,v31:Juno:central_repair_ring:day13,outer bell path,imports:8 rev:9,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:189:central_repair_ring
+190,13,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day13,orchard ridge detour,imports:8 rev:9,tasks:10 debt:0.00,turn:2 kind:none,0.94,True,replay:190:riverbend_roofward
+191,13,Fay,roofward_archive,v31:Fay:roofward_archive:day13,glass stair,imports:7 rev:8,tasks:13 debt:0.02,turn:4 kind:planning_followup,0.94,True,replay:191:roofward_archive
+192,13,Nia,archive_signal,v31:Nia:archive_signal:day13,paper lane,imports:7 rev:8,tasks:11 debt:0.04,turn:2 kind:none,0.93,True,replay:192:archive_signal
+193,13,Milo,signal_orchard,v31:Milo:signal_orchard:day13,dusk road,imports:8 rev:9,tasks:13 debt:0.00,turn:2 kind:none,0.94,True,replay:193:signal_orchard
+194,13,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day13,market plank route,imports:8 rev:9,tasks:10 debt:0.00,turn:4 kind:none,0.94,True,replay:194:orchard_riverbend
+195,14,Juno,central_repair_ring,v31:Juno:central_repair_ring:day14,outer bell path,imports:8 rev:9,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:195:central_repair_ring
+196,14,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day14,orchard ridge detour,imports:9 rev:10,tasks:10 debt:0.00,turn:2 kind:none,0.94,True,replay:196:riverbend_roofward
+197,14,Fay,roofward_archive,v31:Fay:roofward_archive:day14,glass stair,imports:7 rev:8,tasks:14 debt:0.01,turn:4 kind:none,0.94,True,replay:197:roofward_archive
+198,14,Nia,archive_signal,v31:Nia:archive_signal:day14,paper lane,imports:7 rev:8,tasks:11 debt:0.04,turn:3 kind:thanks,0.94,True,replay:198:archive_signal
+199,14,Milo,signal_orchard,v31:Milo:signal_orchard:day14,dusk road,imports:8 rev:9,tasks:13 debt:0.00,turn:2 kind:none,0.93,True,replay:199:signal_orchard
+200,14,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day14,market plank route,imports:8 rev:9,tasks:11 debt:0.00,turn:4 kind:none,0.94,True,replay:200:orchard_riverbend
+201,14,Juno,central_repair_ring,v31:Juno:central_repair_ring:day14,outer bell path,imports:8 rev:9,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:201:central_repair_ring
+202,14,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day14,orchard ridge detour,imports:9 rev:10,tasks:10 debt:0.00,turn:2 kind:none,0.93,True,replay:202:riverbend_roofward
+203,14,Fay,roofward_archive,v31:Fay:roofward_archive:day14,glass stair,imports:8 rev:9,tasks:14 debt:0.01,turn:4 kind:none,0.94,True,replay:203:roofward_archive
+204,14,Nia,archive_signal,v31:Nia:archive_signal:day14,paper lane,imports:8 rev:9,tasks:11 debt:0.04,turn:3 kind:none,0.94,True,replay:204:archive_signal
+205,14,Milo,signal_orchard,v31:Milo:signal_orchard:day14,dusk road,imports:8 rev:9,tasks:14 debt:0.00,turn:2 kind:none,0.94,True,replay:205:signal_orchard
+206,14,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day14,market plank route,imports:8 rev:9,tasks:11 debt:0.00,turn:5 kind:planning_followup,0.94,True,replay:206:orchard_riverbend
+207,14,Juno,central_repair_ring,v31:Juno:central_repair_ring:day14,outer bell path,imports:8 rev:9,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:207:central_repair_ring
+208,14,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day14,orchard ridge detour,imports:9 rev:10,tasks:11 debt:0.00,turn:2 kind:none,0.94,True,replay:208:riverbend_roofward
+209,14,Fay,roofward_archive,v31:Fay:roofward_archive:day14,glass stair,imports:9 rev:10,tasks:14 debt:0.01,turn:4 kind:none,0.94,True,replay:209:roofward_archive
+210,15,Milo,signal_orchard,v31:Milo:signal_orchard:day15,river lantern loop,imports:9 rev:10,tasks:14 debt:0.00,turn:2 kind:none,0.94,True,replay:210:signal_orchard
+211,15,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day15,market plank route,imports:9 rev:10,tasks:11 debt:0.00,turn:5 kind:none,0.94,True,replay:211:orchard_riverbend
+212,15,Juno,central_repair_ring,v31:Juno:central_repair_ring:day15,outer bell path,imports:8 rev:9,tasks:12 debt:0.00,turn:2 kind:none,0.94,True,replay:212:central_repair_ring
+213,15,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day15,orchard ridge detour,imports:9 rev:10,tasks:11 debt:0.00,turn:3 kind:planning_followup,0.94,True,replay:213:riverbend_roofward
+214,15,Fay,roofward_archive,v31:Fay:roofward_archive:day15,cool archive lane,imports:9 rev:10,tasks:14 debt:0.01,turn:4 kind:none,0.94,True,replay:214:roofward_archive
+215,15,Nia,archive_signal,v31:Nia:archive_signal:day15,paper lane,imports:8 rev:9,tasks:12 debt:0.02,turn:3 kind:none,0.94,True,replay:215:archive_signal
+216,15,Milo,signal_orchard,v31:Milo:signal_orchard:day15,river lantern loop,imports:9 rev:10,tasks:14 debt:0.00,turn:2 kind:none,0.94,True,replay:216:signal_orchard
+217,15,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day15,market plank route,imports:9 rev:10,tasks:11 debt:0.00,turn:5 kind:none,0.93,True,replay:217:orchard_riverbend
+218,15,Juno,central_repair_ring,v31:Juno:central_repair_ring:day15,outer bell path,imports:8 rev:9,tasks:12 debt:0.00,turn:2 kind:none,0.93,True,replay:218:central_repair_ring
+219,15,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day15,orchard ridge detour,imports:10 rev:11,tasks:11 debt:0.00,turn:3 kind:none,0.94,True,replay:219:riverbend_roofward
+220,15,Fay,roofward_archive,v31:Fay:roofward_archive:day15,cool archive lane,imports:9 rev:10,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:220:roofward_archive
+221,15,Nia,archive_signal,v31:Nia:archive_signal:day15,paper lane,imports:8 rev:9,tasks:12 debt:0.02,turn:4 kind:planning_followup,0.93,True,replay:221:archive_signal
+222,15,Milo,signal_orchard,v31:Milo:signal_orchard:day15,river lantern loop,imports:9 rev:10,tasks:14 debt:0.00,turn:2 kind:none,0.94,True,replay:222:signal_orchard
+223,15,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day15,market plank route,imports:9 rev:10,tasks:12 debt:0.00,turn:5 kind:none,0.94,True,replay:223:orchard_riverbend
+224,15,Juno,central_repair_ring,v31:Juno:central_repair_ring:day15,outer bell path,imports:9 rev:10,tasks:12 debt:0.00,turn:2 kind:none,0.94,True,replay:224:central_repair_ring
+225,16,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day16,river ford,imports:10 rev:11,tasks:12 debt:0.00,turn:3 kind:none,0.94,True,replay:225:riverbend_roofward
+226,16,Fay,roofward_archive,v31:Fay:roofward_archive:day16,cool archive lane,imports:10 rev:11,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:226:roofward_archive
+227,16,Nia,archive_signal,v31:Nia:archive_signal:day16,paper lane,imports:8 rev:9,tasks:13 debt:0.01,turn:4 kind:none,0.94,True,replay:227:archive_signal
+228,16,Milo,signal_orchard,v31:Milo:signal_orchard:day16,river lantern loop,imports:9 rev:10,tasks:14 debt:0.00,turn:3 kind:thanks,0.94,True,replay:228:signal_orchard
+229,16,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day16,fen track,imports:9 rev:10,tasks:12 debt:0.00,turn:5 kind:none,0.94,True,replay:229:orchard_riverbend
+230,16,Juno,central_repair_ring,v31:Juno:central_repair_ring:day16,outer bell path,imports:9 rev:10,tasks:13 debt:0.00,turn:2 kind:none,0.94,True,replay:230:central_repair_ring
+231,16,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day16,river ford,imports:10 rev:11,tasks:13 debt:0.00,turn:3 kind:none,0.94,True,replay:231:riverbend_roofward
+232,16,Fay,roofward_archive,v31:Fay:roofward_archive:day16,cool archive lane,imports:10 rev:11,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:232:roofward_archive
+233,16,Nia,archive_signal,v31:Nia:archive_signal:day16,paper lane,imports:8 rev:9,tasks:13 debt:0.01,turn:4 kind:none,0.94,True,replay:233:archive_signal
+234,16,Milo,signal_orchard,v31:Milo:signal_orchard:day16,river lantern loop,imports:10 rev:11,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:234:signal_orchard
+235,16,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day16,fen track,imports:9 rev:10,tasks:13 debt:0.00,turn:5 kind:none,0.94,True,replay:235:orchard_riverbend
+236,16,Juno,central_repair_ring,v31:Juno:central_repair_ring:day16,outer bell path,imports:9 rev:10,tasks:13 debt:0.00,turn:3 kind:planning_followup,0.94,True,replay:236:central_repair_ring
+237,16,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day16,river ford,imports:10 rev:11,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:237:riverbend_roofward
+238,16,Fay,roofward_archive,v31:Fay:roofward_archive:day16,cool archive lane,imports:10 rev:11,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:238:roofward_archive
+239,16,Nia,archive_signal,v31:Nia:archive_signal:day16,paper lane,imports:9 rev:10,tasks:13 debt:0.01,turn:4 kind:none,0.94,True,replay:239:archive_signal
+240,17,Milo,signal_orchard,v31:Milo:signal_orchard:day17,river lantern loop,imports:10 rev:11,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:240:signal_orchard
+241,17,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day17,fen track,imports:10 rev:11,tasks:13 debt:0.00,turn:5 kind:none,0.94,True,replay:241:orchard_riverbend
+242,17,Juno,central_repair_ring,v31:Juno:central_repair_ring:day17,outer bell path,imports:9 rev:10,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:242:central_repair_ring
+243,17,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day17,river ford,imports:10 rev:11,tasks:14 debt:0.00,turn:4 kind:planning_followup,0.94,True,replay:243:riverbend_roofward
+244,17,Fay,roofward_archive,v31:Fay:roofward_archive:day17,cool archive lane,imports:10 rev:11,tasks:16 debt:0.00,turn:4 kind:none,0.94,True,replay:244:roofward_archive
+245,17,Nia,archive_signal,v31:Nia:archive_signal:day17,paper lane,imports:9 rev:10,tasks:14 debt:0.00,turn:4 kind:none,0.94,True,replay:245:archive_signal
+246,17,Milo,signal_orchard,v31:Milo:signal_orchard:day17,river lantern loop,imports:10 rev:11,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:246:signal_orchard
+247,17,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day17,fen track,imports:10 rev:11,tasks:13 debt:0.00,turn:5 kind:none,0.93,True,replay:247:orchard_riverbend
+248,17,Juno,central_repair_ring,v31:Juno:central_repair_ring:day17,outer bell path,imports:9 rev:10,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:248:central_repair_ring
+249,17,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day17,river ford,imports:11 rev:12,tasks:14 debt:0.00,turn:4 kind:none,0.94,True,replay:249:riverbend_roofward
+250,17,Fay,roofward_archive,v31:Fay:roofward_archive:day17,cool archive lane,imports:10 rev:11,tasks:17 debt:0.00,turn:4 kind:none,0.94,True,replay:250:roofward_archive
+251,17,Nia,archive_signal,v31:Nia:archive_signal:day17,paper lane,imports:9 rev:10,tasks:14 debt:0.00,turn:5 kind:planning_followup,0.94,True,replay:251:archive_signal
+252,17,Milo,signal_orchard,v31:Milo:signal_orchard:day17,river lantern loop,imports:11 rev:12,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:252:signal_orchard
+253,17,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day17,fen track,imports:10 rev:11,tasks:14 debt:0.00,turn:5 kind:none,0.94,True,replay:253:orchard_riverbend
+254,17,Juno,central_repair_ring,v31:Juno:central_repair_ring:day17,outer bell path,imports:10 rev:11,tasks:14 debt:0.00,turn:3 kind:none,0.94,True,replay:254:central_repair_ring
+255,18,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day18,river ford,imports:11 rev:12,tasks:14 debt:0.00,turn:4 kind:none,0.94,True,replay:255:riverbend_roofward
+256,18,Fay,roofward_archive,v31:Fay:roofward_archive:day18,cool archive lane,imports:11 rev:12,tasks:17 debt:0.00,turn:4 kind:none,0.94,True,replay:256:roofward_archive
+257,18,Nia,archive_signal,v31:Nia:archive_signal:day18,paper lane,imports:9 rev:10,tasks:15 debt:0.00,turn:5 kind:none,0.94,True,replay:257:archive_signal
+258,18,Milo,signal_orchard,v31:Milo:signal_orchard:day18,river lantern loop,imports:11 rev:12,tasks:14 debt:0.00,turn:4 kind:planning_followup,0.94,True,replay:258:signal_orchard
+259,18,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day18,fen track,imports:11 rev:12,tasks:14 debt:0.00,turn:5 kind:none,0.94,True,replay:259:orchard_riverbend
+260,18,Juno,central_repair_ring,v31:Juno:central_repair_ring:day18,outer bell path,imports:10 rev:11,tasks:15 debt:0.00,turn:3 kind:none,0.94,True,replay:260:central_repair_ring
+261,18,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day18,river ford,imports:11 rev:12,tasks:14 debt:0.00,turn:4 kind:none,0.94,True,replay:261:riverbend_roofward
+262,18,Fay,roofward_archive,v31:Fay:roofward_archive:day18,cool archive lane,imports:11 rev:12,tasks:17 debt:0.00,turn:4 kind:none,0.94,True,replay:262:roofward_archive
+263,18,Nia,archive_signal,v31:Nia:archive_signal:day18,paper lane,imports:9 rev:10,tasks:16 debt:0.00,turn:5 kind:none,0.94,True,replay:263:archive_signal
+264,18,Milo,signal_orchard,v31:Milo:signal_orchard:day18,river lantern loop,imports:12 rev:13,tasks:14 debt:0.00,turn:4 kind:none,0.94,True,replay:264:signal_orchard
+265,18,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day18,fen track,imports:11 rev:12,tasks:15 debt:0.00,turn:5 kind:none,0.94,True,replay:265:orchard_riverbend
+266,18,Juno,central_repair_ring,v31:Juno:central_repair_ring:day18,outer bell path,imports:10 rev:11,tasks:15 debt:0.00,turn:4 kind:planning_followup,0.94,True,replay:266:central_repair_ring
+267,18,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day18,river ford,imports:11 rev:12,tasks:14 debt:0.00,turn:4 kind:none,0.94,True,replay:267:riverbend_roofward
+268,18,Fay,roofward_archive,v31:Fay:roofward_archive:day18,cool archive lane,imports:11 rev:12,tasks:18 debt:0.00,turn:4 kind:none,0.94,True,replay:268:roofward_archive
+269,18,Nia,archive_signal,v31:Nia:archive_signal:day18,paper lane,imports:10 rev:11,tasks:17 debt:0.00,turn:5 kind:none,0.94,True,replay:269:archive_signal
+270,19,Milo,signal_orchard,v31:Milo:signal_orchard:day19,river lantern loop,imports:12 rev:13,tasks:15 debt:0.02,turn:4 kind:none,0.94,True,replay:270:signal_orchard
+271,19,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day19,fen track,imports:12 rev:13,tasks:15 debt:0.00,turn:5 kind:none,0.94,True,replay:271:orchard_riverbend
+272,19,Juno,central_repair_ring,v31:Juno:central_repair_ring:day19,outer bell path,imports:10 rev:11,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:272:central_repair_ring
+273,19,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day19,river ford,imports:11 rev:12,tasks:14 debt:0.00,turn:5 kind:planning_followup,0.93,True,replay:273:riverbend_roofward
+274,19,Fay,roofward_archive,v31:Fay:roofward_archive:day19,cool archive lane,imports:11 rev:12,tasks:18 debt:0.00,turn:4 kind:none,0.94,True,replay:274:roofward_archive
+275,19,Nia,archive_signal,v31:Nia:archive_signal:day19,paper lane,imports:10 rev:11,tasks:18 debt:0.00,turn:5 kind:none,0.94,True,replay:275:archive_signal
+276,19,Milo,signal_orchard,v31:Milo:signal_orchard:day19,river lantern loop,imports:12 rev:13,tasks:16 debt:0.04,turn:4 kind:none,0.94,True,replay:276:signal_orchard
+277,19,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day19,fen track,imports:12 rev:13,tasks:15 debt:0.00,turn:5 kind:none,0.94,True,replay:277:orchard_riverbend
+278,19,Juno,central_repair_ring,v31:Juno:central_repair_ring:day19,outer bell path,imports:10 rev:11,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:278:central_repair_ring
+279,19,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day19,river ford,imports:11 rev:12,tasks:14 debt:0.00,turn:5 kind:none,0.92,True,replay:279:riverbend_roofward
+280,19,Fay,roofward_archive,v31:Fay:roofward_archive:day19,cool archive lane,imports:11 rev:12,tasks:19 debt:0.00,turn:4 kind:none,0.94,True,replay:280:roofward_archive
+281,19,Nia,archive_signal,v31:Nia:archive_signal:day19,paper lane,imports:10 rev:11,tasks:18 debt:0.00,turn:6 kind:planning_followup,0.94,True,replay:281:archive_signal
+282,19,Milo,signal_orchard,v31:Milo:signal_orchard:day19,river lantern loop,imports:12 rev:13,tasks:17 debt:0.05,turn:4 kind:none,0.94,True,replay:282:signal_orchard
+283,19,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day19,fen track,imports:12 rev:13,tasks:16 debt:0.00,turn:5 kind:none,0.94,True,replay:283:orchard_riverbend
+284,19,Juno,central_repair_ring,v31:Juno:central_repair_ring:day19,outer bell path,imports:11 rev:12,tasks:15 debt:0.00,turn:4 kind:none,0.94,True,replay:284:central_repair_ring
+285,20,Fay,roofward_archive,v31:Fay:roofward_archive:day20,cool archive lane,imports:11 rev:12,tasks:19 debt:0.00,turn:4 kind:none,0.94,True,replay:285:roofward_archive
+286,20,Nia,archive_signal,v31:Nia:archive_signal:day20,paper lane,imports:11 rev:12,tasks:18 debt:0.00,turn:6 kind:none,0.94,True,replay:286:archive_signal
+287,20,Milo,signal_orchard,v31:Milo:signal_orchard:day20,river lantern loop,imports:12 rev:13,tasks:18 debt:0.04,turn:4 kind:none,0.94,True,replay:287:signal_orchard
+288,20,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day20,fen track,imports:12 rev:13,tasks:17 debt:0.02,turn:6 kind:planning_followup,0.94,True,replay:288:orchard_riverbend
+289,20,Juno,central_repair_ring,v31:Juno:central_repair_ring:day20,inner repair yard,imports:11 rev:12,tasks:15 debt:0.00,turn:4 kind:none,0.93,True,replay:289:central_repair_ring
+290,20,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day20,river ford,imports:11 rev:12,tasks:15 debt:0.00,turn:5 kind:none,0.94,True,replay:290:riverbend_roofward
+291,20,Fay,roofward_archive,v31:Fay:roofward_archive:day20,cool archive lane,imports:11 rev:12,tasks:19 debt:0.00,turn:4 kind:none,0.93,True,replay:291:roofward_archive
+292,20,Nia,archive_signal,v31:Nia:archive_signal:day20,paper lane,imports:11 rev:12,tasks:18 debt:0.00,turn:6 kind:none,0.93,True,replay:292:archive_signal
+293,20,Milo,signal_orchard,v31:Milo:signal_orchard:day20,river lantern loop,imports:12 rev:13,tasks:18 debt:0.04,turn:4 kind:none,0.94,True,replay:293:signal_orchard
+294,20,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day20,fen track,imports:13 rev:14,tasks:18 debt:0.04,turn:6 kind:none,0.94,True,replay:294:orchard_riverbend
+295,20,Juno,central_repair_ring,v31:Juno:central_repair_ring:day20,inner repair yard,imports:11 rev:12,tasks:16 debt:0.00,turn:4 kind:none,0.94,True,replay:295:central_repair_ring
+296,20,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day20,river ford,imports:11 rev:12,tasks:15 debt:0.00,turn:6 kind:planning_followup,0.94,True,replay:296:riverbend_roofward
+297,20,Fay,roofward_archive,v31:Fay:roofward_archive:day20,cool archive lane,imports:11 rev:12,tasks:19 debt:0.00,turn:4 kind:none,0.93,True,replay:297:roofward_archive
+298,20,Nia,archive_signal,v31:Nia:archive_signal:day20,paper lane,imports:11 rev:12,tasks:19 debt:0.00,turn:6 kind:none,0.94,True,replay:298:archive_signal
+299,20,Milo,signal_orchard,v31:Milo:signal_orchard:day20,river lantern loop,imports:13 rev:14,tasks:18 debt:0.04,turn:4 kind:none,0.94,True,replay:299:signal_orchard
+300,21,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day21,market plank route,imports:13 rev:14,tasks:18 debt:0.04,turn:6 kind:none,0.94,True,replay:300:orchard_riverbend
+301,21,Juno,central_repair_ring,v31:Juno:central_repair_ring:day21,inner repair yard,imports:12 rev:13,tasks:17 debt:0.00,turn:4 kind:none,0.94,True,replay:301:central_repair_ring
+302,21,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day21,river ford,imports:11 rev:12,tasks:16 debt:0.00,turn:6 kind:none,0.94,True,replay:302:riverbend_roofward
+303,21,Fay,roofward_archive,v31:Fay:roofward_archive:day21,cool archive lane,imports:11 rev:12,tasks:19 debt:0.00,turn:5 kind:thanks,0.94,True,replay:303:roofward_archive
+304,21,Nia,archive_signal,v31:Nia:archive_signal:day21,paper lane,imports:11 rev:12,tasks:19 debt:0.00,turn:6 kind:none,0.93,True,replay:304:archive_signal
+305,21,Milo,signal_orchard,v31:Milo:signal_orchard:day21,river lantern loop,imports:13 rev:14,tasks:19 debt:0.02,turn:4 kind:none,0.94,True,replay:305:signal_orchard
+306,21,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day21,market plank route,imports:13 rev:14,tasks:18 debt:0.04,turn:6 kind:none,0.94,True,replay:306:orchard_riverbend
+307,21,Juno,central_repair_ring,v31:Juno:central_repair_ring:day21,inner repair yard,imports:12 rev:13,tasks:18 debt:0.00,turn:4 kind:none,0.94,True,replay:307:central_repair_ring
+308,21,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day21,orchard ridge detour,imports:12 rev:13,tasks:16 debt:0.00,turn:6 kind:none,0.94,True,replay:308:riverbend_roofward
+309,21,Fay,roofward_archive,v31:Fay:roofward_archive:day21,cool archive lane,imports:12 rev:13,tasks:19 debt:0.00,turn:5 kind:none,0.94,True,replay:309:roofward_archive
+310,21,Nia,archive_signal,v31:Nia:archive_signal:day21,paper lane,imports:11 rev:12,tasks:20 debt:0.00,turn:6 kind:none,0.94,True,replay:310:archive_signal
+311,21,Milo,signal_orchard,v31:Milo:signal_orchard:day21,river lantern loop,imports:13 rev:14,tasks:19 debt:0.02,turn:5 kind:planning_followup,0.94,True,replay:311:signal_orchard
+312,21,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day21,market plank route,imports:13 rev:14,tasks:18 debt:0.04,turn:6 kind:none,0.94,True,replay:312:orchard_riverbend
+313,21,Juno,central_repair_ring,v31:Juno:central_repair_ring:day21,inner repair yard,imports:12 rev:13,tasks:19 debt:0.00,turn:4 kind:none,0.94,True,replay:313:central_repair_ring
+314,21,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day21,orchard ridge detour,imports:13 rev:14,tasks:16 debt:0.00,turn:6 kind:none,0.94,True,replay:314:riverbend_roofward
+315,22,Fay,roofward_archive,v31:Fay:roofward_archive:day22,cool archive lane,imports:13 rev:14,tasks:19 debt:0.00,turn:5 kind:none,0.94,True,replay:315:roofward_archive
+316,22,Nia,archive_signal,v31:Nia:archive_signal:day22,paper lane,imports:12 rev:13,tasks:20 debt:0.00,turn:6 kind:none,0.94,True,replay:316:archive_signal
+317,22,Milo,signal_orchard,v31:Milo:signal_orchard:day22,river lantern loop,imports:13 rev:14,tasks:20 debt:0.01,turn:5 kind:none,0.94,True,replay:317:signal_orchard
+318,22,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day22,market plank route,imports:13 rev:14,tasks:18 debt:0.04,turn:7 kind:thanks,0.94,True,replay:318:orchard_riverbend
+319,22,Juno,central_repair_ring,v31:Juno:central_repair_ring:day22,inner repair yard,imports:12 rev:13,tasks:19 debt:0.00,turn:4 kind:none,0.94,True,replay:319:central_repair_ring
+320,22,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day22,orchard ridge detour,imports:13 rev:14,tasks:17 debt:0.00,turn:6 kind:none,0.94,True,replay:320:riverbend_roofward
+321,22,Fay,roofward_archive,v31:Fay:roofward_archive:day22,cool archive lane,imports:13 rev:14,tasks:19 debt:0.00,turn:5 kind:none,0.93,True,replay:321:roofward_archive
+322,22,Nia,archive_signal,v31:Nia:archive_signal:day22,paper lane,imports:12 rev:13,tasks:20 debt:0.00,turn:6 kind:none,0.94,True,replay:322:archive_signal
+323,22,Milo,signal_orchard,v31:Milo:signal_orchard:day22,river lantern loop,imports:13 rev:14,tasks:20 debt:0.01,turn:5 kind:none,0.93,True,replay:323:signal_orchard
+324,22,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day22,market plank route,imports:14 rev:15,tasks:18 debt:0.04,turn:7 kind:none,0.94,True,replay:324:orchard_riverbend
+325,22,Juno,central_repair_ring,v31:Juno:central_repair_ring:day22,inner repair yard,imports:12 rev:13,tasks:20 debt:0.00,turn:4 kind:none,0.94,True,replay:325:central_repair_ring
+326,22,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day22,orchard ridge detour,imports:13 rev:14,tasks:17 debt:0.00,turn:7 kind:planning_followup,0.94,True,replay:326:riverbend_roofward
+327,22,Fay,roofward_archive,v31:Fay:roofward_archive:day22,glass stair,imports:13 rev:14,tasks:19 debt:0.00,turn:5 kind:none,0.93,True,replay:327:roofward_archive
+328,22,Nia,archive_signal,v31:Nia:archive_signal:day22,paper lane,imports:12 rev:13,tasks:21 debt:0.00,turn:6 kind:none,0.94,True,replay:328:archive_signal
+329,22,Milo,signal_orchard,v31:Milo:signal_orchard:day22,river lantern loop,imports:14 rev:15,tasks:20 debt:0.01,turn:5 kind:none,0.94,True,replay:329:signal_orchard
+330,23,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day23,market plank route,imports:14 rev:15,tasks:18 debt:0.04,turn:7 kind:none,0.94,True,replay:330:orchard_riverbend
+331,23,Juno,central_repair_ring,v31:Juno:central_repair_ring:day23,inner repair yard,imports:13 rev:14,tasks:20 debt:0.00,turn:4 kind:none,0.94,True,replay:331:central_repair_ring
+332,23,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day23,orchard ridge detour,imports:13 rev:14,tasks:18 debt:0.00,turn:7 kind:none,0.94,True,replay:332:riverbend_roofward
+333,23,Fay,roofward_archive,v31:Fay:roofward_archive:day23,cool archive lane,imports:13 rev:14,tasks:19 debt:0.00,turn:6 kind:thanks,0.94,True,replay:333:roofward_archive
+334,23,Nia,archive_signal,v31:Nia:archive_signal:day23,stone kiosk path,imports:12 rev:13,tasks:21 debt:0.00,turn:6 kind:none,0.93,True,replay:334:archive_signal
+335,23,Milo,signal_orchard,v31:Milo:signal_orchard:day23,river lantern loop,imports:14 rev:15,tasks:21 debt:0.00,turn:5 kind:none,0.94,True,replay:335:signal_orchard
+336,23,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day23,market plank route,imports:14 rev:15,tasks:18 debt:0.04,turn:7 kind:none,0.93,True,replay:336:orchard_riverbend
+337,23,Juno,central_repair_ring,v31:Juno:central_repair_ring:day23,inner repair yard,imports:13 rev:14,tasks:20 debt:0.00,turn:4 kind:none,0.93,True,replay:337:central_repair_ring
+338,23,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day23,river ford,imports:13 rev:14,tasks:18 debt:0.00,turn:7 kind:none,0.94,True,replay:338:riverbend_roofward
+339,23,Fay,roofward_archive,v31:Fay:roofward_archive:day23,cool archive lane,imports:14 rev:15,tasks:19 debt:0.00,turn:6 kind:none,0.94,True,replay:339:roofward_archive
+340,23,Nia,archive_signal,v31:Nia:archive_signal:day23,stone kiosk path,imports:12 rev:13,tasks:21 debt:0.00,turn:6 kind:none,0.93,True,replay:340:archive_signal
+341,23,Milo,signal_orchard,v31:Milo:signal_orchard:day23,river lantern loop,imports:14 rev:15,tasks:21 debt:0.00,turn:6 kind:planning_followup,0.94,True,replay:341:signal_orchard
+342,23,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day23,market plank route,imports:14 rev:15,tasks:18 debt:0.04,turn:7 kind:none,0.93,True,replay:342:orchard_riverbend
+343,23,Juno,central_repair_ring,v31:Juno:central_repair_ring:day23,inner repair yard,imports:13 rev:14,tasks:21 debt:0.00,turn:4 kind:none,0.94,True,replay:343:central_repair_ring
+344,23,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day23,river ford,imports:14 rev:15,tasks:18 debt:0.00,turn:7 kind:none,0.94,True,replay:344:riverbend_roofward
+345,24,Fay,roofward_archive,v31:Fay:roofward_archive:day24,glass stair,imports:14 rev:15,tasks:19 debt:0.00,turn:6 kind:none,0.94,True,replay:345:roofward_archive
+346,24,Nia,archive_signal,v31:Nia:archive_signal:day24,stone kiosk path,imports:13 rev:14,tasks:21 debt:0.00,turn:6 kind:none,0.94,True,replay:346:archive_signal
+347,24,Milo,signal_orchard,v31:Milo:signal_orchard:day24,river lantern loop,imports:14 rev:15,tasks:22 debt:0.00,turn:6 kind:none,0.94,True,replay:347:signal_orchard
+348,24,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day24,market plank route,imports:14 rev:15,tasks:18 debt:0.04,turn:8 kind:thanks,0.94,True,replay:348:orchard_riverbend
+349,24,Juno,central_repair_ring,v31:Juno:central_repair_ring:day24,inner repair yard,imports:13 rev:14,tasks:21 debt:0.00,turn:4 kind:none,0.93,True,replay:349:central_repair_ring
+350,24,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day24,river ford,imports:14 rev:15,tasks:19 debt:0.00,turn:7 kind:none,0.94,True,replay:350:riverbend_roofward
+351,24,Fay,roofward_archive,v31:Fay:roofward_archive:day24,glass stair,imports:14 rev:15,tasks:19 debt:0.00,turn:6 kind:none,0.94,True,replay:351:roofward_archive
+352,24,Nia,archive_signal,v31:Nia:archive_signal:day24,paper lane,imports:13 rev:14,tasks:21 debt:0.00,turn:6 kind:none,0.93,True,replay:352:archive_signal
+353,24,Milo,signal_orchard,v31:Milo:signal_orchard:day24,river lantern loop,imports:14 rev:15,tasks:22 debt:0.00,turn:6 kind:none,0.93,True,replay:353:signal_orchard
+354,24,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day24,market plank route,imports:15 rev:16,tasks:18 debt:0.04,turn:8 kind:none,0.94,True,replay:354:orchard_riverbend
+355,24,Juno,central_repair_ring,v31:Juno:central_repair_ring:day24,inner repair yard,imports:13 rev:14,tasks:22 debt:0.00,turn:4 kind:none,0.94,True,replay:355:central_repair_ring
+356,24,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day24,river ford,imports:14 rev:15,tasks:20 debt:0.00,turn:8 kind:planning_followup,0.94,True,replay:356:riverbend_roofward
+357,24,Fay,roofward_archive,v31:Fay:roofward_archive:day24,glass stair,imports:15 rev:16,tasks:19 debt:0.00,turn:6 kind:none,0.94,True,replay:357:roofward_archive
+358,24,Nia,archive_signal,v31:Nia:archive_signal:day24,paper lane,imports:13 rev:14,tasks:22 debt:0.00,turn:6 kind:none,0.94,True,replay:358:archive_signal
+359,24,Milo,signal_orchard,v31:Milo:signal_orchard:day24,river lantern loop,imports:15 rev:16,tasks:22 debt:0.00,turn:6 kind:none,0.94,True,replay:359:signal_orchard
+360,25,Juno,central_repair_ring,v31:Juno:central_repair_ring:day25,inner repair yard,imports:13 rev:14,tasks:22 debt:0.00,turn:4 kind:none,0.94,True,replay:360:central_repair_ring
+361,25,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day25,river ford,imports:15 rev:16,tasks:20 debt:0.00,turn:8 kind:none,0.94,True,replay:361:riverbend_roofward
+362,25,Fay,roofward_archive,v31:Fay:roofward_archive:day25,glass stair,imports:15 rev:16,tasks:20 debt:0.00,turn:6 kind:none,0.94,True,replay:362:roofward_archive
+363,25,Nia,archive_signal,v31:Nia:archive_signal:day25,paper lane,imports:13 rev:14,tasks:22 debt:0.00,turn:7 kind:planning_followup,0.94,True,replay:363:archive_signal
+364,25,Milo,signal_orchard,v31:Milo:signal_orchard:day25,dusk road,imports:16 rev:17,tasks:22 debt:0.00,turn:6 kind:none,0.94,True,replay:364:signal_orchard
+365,25,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day25,market plank route,imports:15 rev:16,tasks:19 debt:0.02,turn:8 kind:none,0.94,True,replay:365:orchard_riverbend
+366,25,Juno,central_repair_ring,v31:Juno:central_repair_ring:day25,inner repair yard,imports:13 rev:14,tasks:22 debt:0.00,turn:4 kind:none,0.94,True,replay:366:central_repair_ring
+367,25,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day25,river ford,imports:15 rev:16,tasks:20 debt:0.00,turn:8 kind:none,0.94,True,replay:367:riverbend_roofward
+368,25,Fay,roofward_archive,v31:Fay:roofward_archive:day25,cool archive lane,imports:15 rev:16,tasks:21 debt:0.00,turn:6 kind:none,0.94,True,replay:368:roofward_archive
+369,25,Nia,archive_signal,v31:Nia:archive_signal:day25,paper lane,imports:14 rev:15,tasks:22 debt:0.00,turn:7 kind:none,0.94,True,replay:369:archive_signal
+370,25,Milo,signal_orchard,v31:Milo:signal_orchard:day25,river lantern loop,imports:16 rev:17,tasks:23 debt:0.00,turn:6 kind:none,0.94,True,replay:370:signal_orchard
+371,25,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day25,market plank route,imports:15 rev:16,tasks:19 debt:0.02,turn:9 kind:planning_followup,0.94,True,replay:371:orchard_riverbend
+372,25,Juno,central_repair_ring,v31:Juno:central_repair_ring:day25,inner repair yard,imports:13 rev:14,tasks:22 debt:0.00,turn:4 kind:none,0.94,True,replay:372:central_repair_ring
+373,25,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day25,river ford,imports:15 rev:16,tasks:21 debt:0.00,turn:8 kind:none,0.94,True,replay:373:riverbend_roofward
+374,25,Fay,roofward_archive,v31:Fay:roofward_archive:day25,cool archive lane,imports:16 rev:17,tasks:21 debt:0.00,turn:6 kind:none,0.94,True,replay:374:roofward_archive
+375,26,Nia,archive_signal,v31:Nia:archive_signal:day26,stone kiosk path,imports:14 rev:15,tasks:23 debt:0.00,turn:7 kind:none,0.94,True,replay:375:archive_signal
+376,26,Milo,signal_orchard,v31:Milo:signal_orchard:day26,river lantern loop,imports:17 rev:18,tasks:23 debt:0.00,turn:6 kind:none,0.94,True,replay:376:signal_orchard
+377,26,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day26,market plank route,imports:15 rev:16,tasks:20 debt:0.01,turn:9 kind:none,0.94,True,replay:377:orchard_riverbend
+378,26,Juno,central_repair_ring,v31:Juno:central_repair_ring:day26,inner repair yard,imports:13 rev:14,tasks:22 debt:0.00,turn:5 kind:thanks,0.94,True,replay:378:central_repair_ring
+379,26,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day26,orchard ridge detour,imports:15 rev:16,tasks:21 debt:0.00,turn:8 kind:none,0.94,True,replay:379:riverbend_roofward
+380,26,Fay,roofward_archive,v31:Fay:roofward_archive:day26,cool archive lane,imports:16 rev:17,tasks:22 debt:0.00,turn:6 kind:none,0.94,True,replay:380:roofward_archive
+381,26,Nia,archive_signal,v31:Nia:archive_signal:day26,stone kiosk path,imports:14 rev:15,tasks:24 debt:0.00,turn:7 kind:none,0.94,True,replay:381:archive_signal
+382,26,Milo,signal_orchard,v31:Milo:signal_orchard:day26,river lantern loop,imports:17 rev:18,tasks:23 debt:0.00,turn:6 kind:none,0.94,True,replay:382:signal_orchard
+383,26,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day26,market plank route,imports:15 rev:16,tasks:20 debt:0.01,turn:9 kind:none,0.94,True,replay:383:orchard_riverbend
+384,26,Juno,central_repair_ring,v31:Juno:central_repair_ring:day26,inner repair yard,imports:14 rev:15,tasks:22 debt:0.00,turn:5 kind:none,0.94,True,replay:384:central_repair_ring
+385,26,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day26,orchard ridge detour,imports:15 rev:16,tasks:22 debt:0.00,turn:8 kind:none,0.94,True,replay:385:riverbend_roofward
+386,26,Fay,roofward_archive,v31:Fay:roofward_archive:day26,cool archive lane,imports:16 rev:17,tasks:22 debt:0.00,turn:7 kind:planning_followup,0.94,True,replay:386:roofward_archive
+387,26,Nia,archive_signal,v31:Nia:archive_signal:day26,stone kiosk path,imports:14 rev:15,tasks:25 debt:0.00,turn:7 kind:none,0.94,True,replay:387:archive_signal
+388,26,Milo,signal_orchard,v31:Milo:signal_orchard:day26,river lantern loop,imports:17 rev:18,tasks:24 debt:0.00,turn:6 kind:none,0.94,True,replay:388:signal_orchard
+389,26,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day26,market plank route,imports:16 rev:17,tasks:20 debt:0.01,turn:9 kind:none,0.94,True,replay:389:orchard_riverbend
+390,27,Juno,central_repair_ring,v31:Juno:central_repair_ring:day27,inner repair yard,imports:14 rev:15,tasks:22 debt:0.00,turn:5 kind:none,0.94,True,replay:390:central_repair_ring
+391,27,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day27,orchard ridge detour,imports:16 rev:17,tasks:22 debt:0.00,turn:8 kind:none,0.94,True,replay:391:riverbend_roofward
+392,27,Fay,roofward_archive,v31:Fay:roofward_archive:day27,cool archive lane,imports:16 rev:17,tasks:23 debt:0.00,turn:7 kind:none,0.94,True,replay:392:roofward_archive
+393,27,Nia,archive_signal,v31:Nia:archive_signal:day27,stone kiosk path,imports:14 rev:15,tasks:25 debt:0.00,turn:8 kind:planning_followup,0.94,True,replay:393:archive_signal
+394,27,Milo,signal_orchard,v31:Milo:signal_orchard:day27,river lantern loop,imports:17 rev:18,tasks:25 debt:0.00,turn:6 kind:none,0.94,True,replay:394:signal_orchard
+395,27,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day27,market plank route,imports:16 rev:17,tasks:21 debt:0.00,turn:9 kind:none,0.94,True,replay:395:orchard_riverbend
+396,27,Juno,central_repair_ring,v31:Juno:central_repair_ring:day27,inner repair yard,imports:14 rev:15,tasks:22 debt:0.00,turn:5 kind:none,0.94,True,replay:396:central_repair_ring
+397,27,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day27,orchard ridge detour,imports:16 rev:17,tasks:22 debt:0.00,turn:8 kind:none,0.93,True,replay:397:riverbend_roofward
+398,27,Fay,roofward_archive,v31:Fay:roofward_archive:day27,cool archive lane,imports:16 rev:17,tasks:23 debt:0.00,turn:7 kind:none,0.94,True,replay:398:roofward_archive
+399,27,Nia,archive_signal,v31:Nia:archive_signal:day27,stone kiosk path,imports:15 rev:16,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:399:archive_signal
+400,27,Milo,signal_orchard,v31:Milo:signal_orchard:day27,river lantern loop,imports:17 rev:18,tasks:26 debt:0.00,turn:6 kind:none,0.94,True,replay:400:signal_orchard
+401,27,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day27,market plank route,imports:16 rev:17,tasks:21 debt:0.00,turn:10 kind:planning_followup,0.94,True,replay:401:orchard_riverbend
+402,27,Juno,central_repair_ring,v31:Juno:central_repair_ring:day27,inner repair yard,imports:14 rev:15,tasks:22 debt:0.00,turn:5 kind:none,0.94,True,replay:402:central_repair_ring
+403,27,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day27,orchard ridge detour,imports:16 rev:17,tasks:23 debt:0.00,turn:8 kind:none,0.94,True,replay:403:riverbend_roofward
+404,27,Fay,roofward_archive,v31:Fay:roofward_archive:day27,cool archive lane,imports:17 rev:18,tasks:23 debt:0.00,turn:7 kind:none,0.94,True,replay:404:roofward_archive
+405,28,Nia,archive_signal,v31:Nia:archive_signal:day28,stone kiosk path,imports:15 rev:16,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:405:archive_signal
+406,28,Milo,signal_orchard,v31:Milo:signal_orchard:day28,river lantern loop,imports:18 rev:19,tasks:26 debt:0.00,turn:6 kind:none,0.94,True,replay:406:signal_orchard
+407,28,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day28,market plank route,imports:16 rev:17,tasks:22 debt:0.00,turn:10 kind:none,0.94,True,replay:407:orchard_riverbend
+408,28,Juno,central_repair_ring,v31:Juno:central_repair_ring:day28,inner repair yard,imports:14 rev:15,tasks:22 debt:0.00,turn:6 kind:thanks,0.94,True,replay:408:central_repair_ring
+409,28,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day28,orchard ridge detour,imports:16 rev:17,tasks:23 debt:0.00,turn:8 kind:none,0.94,True,replay:409:riverbend_roofward
+410,28,Fay,roofward_archive,v31:Fay:roofward_archive:day28,cool archive lane,imports:17 rev:18,tasks:24 debt:0.00,turn:7 kind:none,0.94,True,replay:410:roofward_archive
+411,28,Nia,archive_signal,v31:Nia:archive_signal:day28,stone kiosk path,imports:15 rev:16,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:411:archive_signal
+412,28,Milo,signal_orchard,v31:Milo:signal_orchard:day28,river lantern loop,imports:18 rev:19,tasks:26 debt:0.00,turn:6 kind:none,0.94,True,replay:412:signal_orchard
+413,28,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day28,market plank route,imports:17 rev:18,tasks:23 debt:0.00,turn:10 kind:none,0.94,True,replay:413:orchard_riverbend
+414,28,Juno,central_repair_ring,v31:Juno:central_repair_ring:day28,inner repair yard,imports:15 rev:16,tasks:22 debt:0.00,turn:6 kind:none,0.94,True,replay:414:central_repair_ring
+415,28,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day28,orchard ridge detour,imports:16 rev:17,tasks:24 debt:0.00,turn:8 kind:none,0.94,True,replay:415:riverbend_roofward
+416,28,Fay,roofward_archive,v31:Fay:roofward_archive:day28,cool archive lane,imports:17 rev:18,tasks:24 debt:0.00,turn:8 kind:planning_followup,0.93,True,replay:416:roofward_archive
+417,28,Nia,archive_signal,v31:Nia:archive_signal:day28,stone kiosk path,imports:15 rev:16,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:417:archive_signal
+418,28,Milo,signal_orchard,v31:Milo:signal_orchard:day28,river lantern loop,imports:18 rev:19,tasks:27 debt:0.00,turn:6 kind:none,0.94,True,replay:418:signal_orchard
+419,28,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day28,market plank route,imports:18 rev:19,tasks:24 debt:0.00,turn:10 kind:none,0.94,True,replay:419:orchard_riverbend
+420,29,Juno,central_repair_ring,v31:Juno:central_repair_ring:day29,outer bell path,imports:16 rev:17,tasks:23 debt:0.02,turn:6 kind:none,0.94,True,replay:420:central_repair_ring
+421,29,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day29,orchard ridge detour,imports:17 rev:18,tasks:24 debt:0.00,turn:8 kind:none,0.94,True,replay:421:riverbend_roofward
+422,29,Fay,roofward_archive,v31:Fay:roofward_archive:day29,cool archive lane,imports:17 rev:18,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:422:roofward_archive
+423,29,Nia,archive_signal,v31:Nia:archive_signal:day29,stone kiosk path,imports:15 rev:16,tasks:25 debt:0.00,turn:9 kind:thanks,0.94,True,replay:423:archive_signal
+424,29,Milo,signal_orchard,v31:Milo:signal_orchard:day29,river lantern loop,imports:18 rev:19,tasks:27 debt:0.00,turn:6 kind:none,0.94,True,replay:424:signal_orchard
+425,29,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day29,market plank route,imports:18 rev:19,tasks:24 debt:0.00,turn:10 kind:none,0.94,True,replay:425:orchard_riverbend
+426,29,Juno,central_repair_ring,v31:Juno:central_repair_ring:day29,outer bell path,imports:16 rev:17,tasks:24 debt:0.04,turn:6 kind:none,0.94,True,replay:426:central_repair_ring
+427,29,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day29,orchard ridge detour,imports:17 rev:18,tasks:24 debt:0.00,turn:8 kind:none,0.94,True,replay:427:riverbend_roofward
+428,29,Fay,roofward_archive,v31:Fay:roofward_archive:day29,cool archive lane,imports:17 rev:18,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:428:roofward_archive
+429,29,Nia,archive_signal,v31:Nia:archive_signal:day29,stone kiosk path,imports:16 rev:17,tasks:25 debt:0.00,turn:9 kind:none,0.94,True,replay:429:archive_signal
+430,29,Milo,signal_orchard,v31:Milo:signal_orchard:day29,river lantern loop,imports:18 rev:19,tasks:28 debt:0.00,turn:6 kind:none,0.94,True,replay:430:signal_orchard
+431,29,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day29,market plank route,imports:18 rev:19,tasks:24 debt:0.00,turn:11 kind:thanks,0.94,True,replay:431:orchard_riverbend
+432,29,Juno,central_repair_ring,v31:Juno:central_repair_ring:day29,outer bell path,imports:16 rev:17,tasks:25 debt:0.05,turn:6 kind:none,0.94,True,replay:432:central_repair_ring
+433,29,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day29,orchard ridge detour,imports:17 rev:18,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:433:riverbend_roofward
+434,29,Fay,roofward_archive,v31:Fay:roofward_archive:day29,cool archive lane,imports:17 rev:18,tasks:25 debt:0.00,turn:8 kind:none,0.94,True,replay:434:roofward_archive
+435,30,Milo,signal_orchard,v31:Milo:signal_orchard:day30,river lantern loop,imports:18 rev:19,tasks:28 debt:0.00,turn:6 kind:none,0.94,True,replay:435:signal_orchard
+436,30,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day30,market plank route,imports:19 rev:20,tasks:24 debt:0.00,turn:11 kind:none,0.94,True,replay:436:orchard_riverbend
+437,30,Juno,central_repair_ring,v31:Juno:central_repair_ring:day30,outer bell path,imports:16 rev:17,tasks:26 debt:0.04,turn:6 kind:none,0.94,True,replay:437:central_repair_ring
+438,30,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day30,orchard ridge detour,imports:17 rev:18,tasks:25 debt:0.00,turn:9 kind:planning_followup,0.94,True,replay:438:riverbend_roofward
+439,30,Fay,roofward_archive,v31:Fay:roofward_archive:day30,cool archive lane,imports:17 rev:18,tasks:25 debt:0.00,turn:8 kind:none,0.93,True,replay:439:roofward_archive
+440,30,Nia,archive_signal,v31:Nia:archive_signal:day30,stone kiosk path,imports:16 rev:17,tasks:26 debt:0.00,turn:9 kind:none,0.94,True,replay:440:archive_signal
+441,30,Milo,signal_orchard,v31:Milo:signal_orchard:day30,river lantern loop,imports:18 rev:19,tasks:28 debt:0.00,turn:6 kind:none,0.93,True,replay:441:signal_orchard
+442,30,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day30,market plank route,imports:19 rev:20,tasks:24 debt:0.00,turn:11 kind:none,0.93,True,replay:442:orchard_riverbend
+443,30,Juno,central_repair_ring,v31:Juno:central_repair_ring:day30,outer bell path,imports:16 rev:17,tasks:26 debt:0.04,turn:6 kind:none,0.94,True,replay:443:central_repair_ring
+444,30,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day30,orchard ridge detour,imports:18 rev:19,tasks:25 debt:0.00,turn:9 kind:none,0.94,True,replay:444:riverbend_roofward
+445,30,Fay,roofward_archive,v31:Fay:roofward_archive:day30,cool archive lane,imports:17 rev:18,tasks:26 debt:0.00,turn:8 kind:none,0.94,True,replay:445:roofward_archive
+446,30,Nia,archive_signal,v31:Nia:archive_signal:day30,stone kiosk path,imports:16 rev:17,tasks:26 debt:0.00,turn:10 kind:planning_followup,0.94,True,replay:446:archive_signal
+447,30,Milo,signal_orchard,v31:Milo:signal_orchard:day30,river lantern loop,imports:18 rev:19,tasks:28 debt:0.00,turn:6 kind:none,0.93,True,replay:447:signal_orchard
+448,30,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day30,market plank route,imports:19 rev:20,tasks:25 debt:0.00,turn:11 kind:none,0.94,True,replay:448:orchard_riverbend
+449,30,Juno,central_repair_ring,v31:Juno:central_repair_ring:day30,outer bell path,imports:17 rev:18,tasks:26 debt:0.04,turn:6 kind:none,0.94,True,replay:449:central_repair_ring
+450,31,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day31,orchard ridge detour,imports:18 rev:19,tasks:25 debt:0.00,turn:9 kind:none,0.94,True,replay:450:riverbend_roofward
+451,31,Fay,roofward_archive,v31:Fay:roofward_archive:day31,cool archive lane,imports:18 rev:19,tasks:26 debt:0.00,turn:8 kind:none,0.94,True,replay:451:roofward_archive
+452,31,Nia,archive_signal,v31:Nia:archive_signal:day31,stone kiosk path,imports:16 rev:17,tasks:27 debt:0.00,turn:10 kind:none,0.94,True,replay:452:archive_signal
+453,31,Milo,signal_orchard,v31:Milo:signal_orchard:day31,river lantern loop,imports:18 rev:19,tasks:28 debt:0.00,turn:7 kind:thanks,0.94,True,replay:453:signal_orchard
+454,31,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day31,market plank route,imports:19 rev:20,tasks:25 debt:0.00,turn:11 kind:none,0.93,True,replay:454:orchard_riverbend
+455,31,Juno,central_repair_ring,v31:Juno:central_repair_ring:day31,outer bell path,imports:17 rev:18,tasks:27 debt:0.02,turn:6 kind:none,0.94,True,replay:455:central_repair_ring
+456,31,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day31,orchard ridge detour,imports:18 rev:19,tasks:25 debt:0.00,turn:9 kind:none,0.94,True,replay:456:riverbend_roofward
+457,31,Fay,roofward_archive,v31:Fay:roofward_archive:day31,cool archive lane,imports:18 rev:19,tasks:26 debt:0.00,turn:8 kind:none,0.93,True,replay:457:roofward_archive
+458,31,Nia,archive_signal,v31:Nia:archive_signal:day31,stone kiosk path,imports:16 rev:17,tasks:27 debt:0.00,turn:10 kind:none,0.93,True,replay:458:archive_signal
+459,31,Milo,signal_orchard,v31:Milo:signal_orchard:day31,river lantern loop,imports:19 rev:20,tasks:28 debt:0.00,turn:7 kind:none,0.94,True,replay:459:signal_orchard
+460,31,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day31,market plank route,imports:19 rev:20,tasks:26 debt:0.00,turn:11 kind:none,0.94,True,replay:460:orchard_riverbend
+461,31,Juno,central_repair_ring,v31:Juno:central_repair_ring:day31,outer bell path,imports:17 rev:18,tasks:27 debt:0.02,turn:7 kind:planning_followup,0.94,True,replay:461:central_repair_ring
+462,31,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day31,orchard ridge detour,imports:19 rev:20,tasks:25 debt:0.00,turn:9 kind:none,0.94,True,replay:462:riverbend_roofward
+463,31,Fay,roofward_archive,v31:Fay:roofward_archive:day31,cool archive lane,imports:18 rev:19,tasks:27 debt:0.00,turn:8 kind:none,0.94,True,replay:463:roofward_archive
+464,31,Nia,archive_signal,v31:Nia:archive_signal:day31,stone kiosk path,imports:17 rev:18,tasks:27 debt:0.00,turn:10 kind:none,0.94,True,replay:464:archive_signal
+465,32,Milo,signal_orchard,v31:Milo:signal_orchard:day32,river lantern loop,imports:19 rev:20,tasks:28 debt:0.00,turn:7 kind:none,0.94,True,replay:465:signal_orchard
+466,32,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day32,market plank route,imports:20 rev:21,tasks:26 debt:0.00,turn:11 kind:none,0.94,True,replay:466:orchard_riverbend
+467,32,Juno,central_repair_ring,v31:Juno:central_repair_ring:day32,outer bell path,imports:17 rev:18,tasks:28 debt:0.01,turn:7 kind:none,0.94,True,replay:467:central_repair_ring
+468,32,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day32,orchard ridge detour,imports:19 rev:20,tasks:26 debt:0.02,turn:10 kind:planning_followup,0.94,True,replay:468:riverbend_roofward
+469,32,Fay,roofward_archive,v31:Fay:roofward_archive:day32,cool archive lane,imports:19 rev:20,tasks:27 debt:0.00,turn:8 kind:none,0.94,True,replay:469:roofward_archive
+470,32,Nia,archive_signal,v31:Nia:archive_signal:day32,stone kiosk path,imports:17 rev:18,tasks:28 debt:0.00,turn:10 kind:none,0.94,True,replay:470:archive_signal
+471,32,Milo,signal_orchard,v31:Milo:signal_orchard:day32,river lantern loop,imports:19 rev:20,tasks:28 debt:0.00,turn:7 kind:none,0.93,True,replay:471:signal_orchard
+472,32,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day32,market plank route,imports:20 rev:21,tasks:26 debt:0.00,turn:11 kind:none,0.94,True,replay:472:orchard_riverbend
+473,32,Juno,central_repair_ring,v31:Juno:central_repair_ring:day32,outer bell path,imports:17 rev:18,tasks:28 debt:0.01,turn:7 kind:none,0.93,True,replay:473:central_repair_ring
+474,32,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day32,orchard ridge detour,imports:20 rev:21,tasks:27 debt:0.04,turn:10 kind:none,0.94,True,replay:474:riverbend_roofward
+475,32,Fay,roofward_archive,v31:Fay:roofward_archive:day32,cool archive lane,imports:19 rev:20,tasks:28 debt:0.00,turn:8 kind:none,0.94,True,replay:475:roofward_archive
+476,32,Nia,archive_signal,v31:Nia:archive_signal:day32,stone kiosk path,imports:17 rev:18,tasks:28 debt:0.00,turn:11 kind:planning_followup,0.94,True,replay:476:archive_signal
+477,32,Milo,signal_orchard,v31:Milo:signal_orchard:day32,river lantern loop,imports:19 rev:20,tasks:28 debt:0.00,turn:7 kind:none,0.93,True,replay:477:signal_orchard
+478,32,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day32,market plank route,imports:20 rev:21,tasks:27 debt:0.00,turn:11 kind:none,0.94,True,replay:478:orchard_riverbend
+479,32,Juno,central_repair_ring,v31:Juno:central_repair_ring:day32,outer bell path,imports:18 rev:19,tasks:28 debt:0.01,turn:7 kind:none,0.94,True,replay:479:central_repair_ring
+480,33,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day33,river ford,imports:20 rev:21,tasks:27 debt:0.04,turn:10 kind:none,0.94,True,replay:480:riverbend_roofward
+481,33,Fay,roofward_archive,v31:Fay:roofward_archive:day33,cool archive lane,imports:20 rev:21,tasks:29 debt:0.00,turn:8 kind:none,0.94,True,replay:481:roofward_archive
+482,33,Nia,archive_signal,v31:Nia:archive_signal:day33,stone kiosk path,imports:17 rev:18,tasks:29 debt:0.00,turn:11 kind:none,0.94,True,replay:482:archive_signal
+483,33,Milo,signal_orchard,v31:Milo:signal_orchard:day33,river lantern loop,imports:19 rev:20,tasks:28 debt:0.00,turn:8 kind:thanks,0.94,True,replay:483:signal_orchard
+484,33,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day33,market plank route,imports:20 rev:21,tasks:27 debt:0.00,turn:11 kind:none,0.93,True,replay:484:orchard_riverbend
+485,33,Juno,central_repair_ring,v31:Juno:central_repair_ring:day33,outer bell path,imports:18 rev:19,tasks:29 debt:0.00,turn:7 kind:none,0.94,True,replay:485:central_repair_ring
+486,33,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day33,river ford,imports:20 rev:21,tasks:27 debt:0.04,turn:10 kind:none,0.93,True,replay:486:riverbend_roofward
+487,33,Fay,roofward_archive,v31:Fay:roofward_archive:day33,cool archive lane,imports:20 rev:21,tasks:30 debt:0.00,turn:8 kind:none,0.94,True,replay:487:roofward_archive
+488,33,Nia,archive_signal,v31:Nia:archive_signal:day33,stone kiosk path,imports:17 rev:18,tasks:29 debt:0.00,turn:11 kind:none,0.94,True,replay:488:archive_signal
+489,33,Milo,signal_orchard,v31:Milo:signal_orchard:day33,river lantern loop,imports:20 rev:21,tasks:28 debt:0.00,turn:8 kind:none,0.94,True,replay:489:signal_orchard
+490,33,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day33,market plank route,imports:20 rev:21,tasks:28 debt:0.00,turn:11 kind:none,0.94,True,replay:490:orchard_riverbend
+491,33,Juno,central_repair_ring,v31:Juno:central_repair_ring:day33,outer bell path,imports:18 rev:19,tasks:29 debt:0.00,turn:8 kind:planning_followup,0.94,True,replay:491:central_repair_ring
+492,33,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day33,river ford,imports:20 rev:21,tasks:27 debt:0.04,turn:10 kind:none,0.93,True,replay:492:riverbend_roofward
+493,33,Fay,roofward_archive,v31:Fay:roofward_archive:day33,cool archive lane,imports:20 rev:21,tasks:30 debt:0.00,turn:8 kind:none,0.94,True,replay:493:roofward_archive
+494,33,Nia,archive_signal,v31:Nia:archive_signal:day33,stone kiosk path,imports:18 rev:19,tasks:29 debt:0.00,turn:11 kind:none,0.94,True,replay:494:archive_signal
+495,34,Milo,signal_orchard,v31:Milo:signal_orchard:day34,river lantern loop,imports:20 rev:21,tasks:28 debt:0.00,turn:8 kind:none,0.94,True,replay:495:signal_orchard
+496,34,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day34,market plank route,imports:20 rev:21,tasks:28 debt:0.00,turn:11 kind:none,0.93,True,replay:496:orchard_riverbend
+497,34,Juno,central_repair_ring,v31:Juno:central_repair_ring:day34,outer bell path,imports:18 rev:19,tasks:30 debt:0.00,turn:8 kind:none,0.94,True,replay:497:central_repair_ring
+498,34,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day34,river ford,imports:20 rev:21,tasks:27 debt:0.04,turn:11 kind:thanks,0.94,True,replay:498:riverbend_roofward
+499,34,Fay,roofward_archive,v31:Fay:roofward_archive:day34,cool archive lane,imports:20 rev:21,tasks:30 debt:0.00,turn:8 kind:none,0.93,True,replay:499:roofward_archive
+500,34,Nia,archive_signal,v31:Nia:archive_signal:day34,stone kiosk path,imports:18 rev:19,tasks:30 debt:0.00,turn:11 kind:none,0.94,True,replay:500:archive_signal
+501,34,Milo,signal_orchard,v31:Milo:signal_orchard:day34,river lantern loop,imports:20 rev:21,tasks:28 debt:0.00,turn:8 kind:none,0.94,True,replay:501:signal_orchard
+502,34,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day34,market plank route,imports:20 rev:21,tasks:28 debt:0.00,turn:11 kind:none,0.93,True,replay:502:orchard_riverbend
+503,34,Juno,central_repair_ring,v31:Juno:central_repair_ring:day34,outer bell path,imports:18 rev:19,tasks:30 debt:0.00,turn:8 kind:none,0.93,True,replay:503:central_repair_ring
+504,34,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day34,river ford,imports:21 rev:22,tasks:27 debt:0.04,turn:11 kind:none,0.94,True,replay:504:riverbend_roofward
+505,34,Fay,roofward_archive,v31:Fay:roofward_archive:day34,cool archive lane,imports:20 rev:21,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:505:roofward_archive
+506,34,Nia,archive_signal,v31:Nia:archive_signal:day34,stone kiosk path,imports:18 rev:19,tasks:31 debt:0.00,turn:12 kind:planning_followup,0.94,True,replay:506:archive_signal
+507,34,Milo,signal_orchard,v31:Milo:signal_orchard:day34,river lantern loop,imports:20 rev:21,tasks:28 debt:0.00,turn:8 kind:none,0.94,True,replay:507:signal_orchard
+508,34,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day34,market plank route,imports:20 rev:21,tasks:29 debt:0.00,turn:11 kind:none,0.94,True,replay:508:orchard_riverbend
+509,34,Juno,central_repair_ring,v31:Juno:central_repair_ring:day34,outer bell path,imports:19 rev:20,tasks:30 debt:0.00,turn:8 kind:none,0.94,True,replay:509:central_repair_ring
+510,35,Fay,roofward_archive,v31:Fay:roofward_archive:day35,cool archive lane,imports:20 rev:21,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:510:roofward_archive
+511,35,Nia,archive_signal,v31:Nia:archive_signal:day35,stone kiosk path,imports:19 rev:20,tasks:31 debt:0.00,turn:12 kind:none,0.94,True,replay:511:archive_signal
+512,35,Milo,signal_orchard,v31:Milo:signal_orchard:day35,river lantern loop,imports:20 rev:21,tasks:29 debt:0.00,turn:8 kind:none,0.94,True,replay:512:signal_orchard
+513,35,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day35,market plank route,imports:20 rev:21,tasks:29 debt:0.00,turn:12 kind:planning_followup,0.94,True,replay:513:orchard_riverbend
+514,35,Juno,central_repair_ring,v31:Juno:central_repair_ring:day35,outer bell path,imports:19 rev:20,tasks:30 debt:0.00,turn:8 kind:none,0.94,True,replay:514:central_repair_ring
+515,35,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day35,river ford,imports:21 rev:22,tasks:28 debt:0.02,turn:11 kind:none,0.94,True,replay:515:riverbend_roofward
+516,35,Fay,roofward_archive,v31:Fay:roofward_archive:day35,cool archive lane,imports:20 rev:21,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:516:roofward_archive
+517,35,Nia,archive_signal,v31:Nia:archive_signal:day35,stone kiosk path,imports:19 rev:20,tasks:31 debt:0.00,turn:12 kind:none,0.94,True,replay:517:archive_signal
+518,35,Milo,signal_orchard,v31:Milo:signal_orchard:day35,river lantern loop,imports:21 rev:22,tasks:30 debt:0.00,turn:8 kind:none,0.94,True,replay:518:signal_orchard
+519,35,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day35,market plank route,imports:21 rev:22,tasks:29 debt:0.00,turn:12 kind:none,0.94,True,replay:519:orchard_riverbend
+520,35,Juno,central_repair_ring,v31:Juno:central_repair_ring:day35,outer bell path,imports:19 rev:20,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:520:central_repair_ring
+521,35,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day35,river ford,imports:21 rev:22,tasks:28 debt:0.02,turn:12 kind:planning_followup,0.94,True,replay:521:riverbend_roofward
+522,35,Fay,roofward_archive,v31:Fay:roofward_archive:day35,cool archive lane,imports:20 rev:21,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:522:roofward_archive
+523,35,Nia,archive_signal,v31:Nia:archive_signal:day35,stone kiosk path,imports:19 rev:20,tasks:32 debt:0.00,turn:12 kind:none,0.94,True,replay:523:archive_signal
+524,35,Milo,signal_orchard,v31:Milo:signal_orchard:day35,river lantern loop,imports:22 rev:23,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:524:signal_orchard
+525,36,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day36,market plank route,imports:22 rev:23,tasks:30 debt:0.00,turn:12 kind:none,0.94,True,replay:525:orchard_riverbend
+526,36,Juno,central_repair_ring,v31:Juno:central_repair_ring:day36,outer bell path,imports:20 rev:21,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:526:central_repair_ring
+527,36,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day36,river ford,imports:21 rev:22,tasks:28 debt:0.02,turn:12 kind:none,0.94,True,replay:527:riverbend_roofward
+528,36,Fay,roofward_archive,v31:Fay:roofward_archive:day36,cool archive lane,imports:20 rev:21,tasks:31 debt:0.00,turn:9 kind:planning_followup,0.94,True,replay:528:roofward_archive
+529,36,Nia,archive_signal,v31:Nia:archive_signal:day36,paper lane,imports:19 rev:20,tasks:32 debt:0.00,turn:12 kind:none,0.94,True,replay:529:archive_signal
+530,36,Milo,signal_orchard,v31:Milo:signal_orchard:day36,river lantern loop,imports:22 rev:23,tasks:32 debt:0.00,turn:8 kind:none,0.94,True,replay:530:signal_orchard
+531,36,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day36,market plank route,imports:22 rev:23,tasks:31 debt:0.00,turn:12 kind:none,0.94,True,replay:531:orchard_riverbend
+532,36,Juno,central_repair_ring,v31:Juno:central_repair_ring:day36,outer bell path,imports:20 rev:21,tasks:31 debt:0.00,turn:8 kind:none,0.94,True,replay:532:central_repair_ring
+533,36,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day36,river ford,imports:21 rev:22,tasks:28 debt:0.02,turn:12 kind:none,0.94,True,replay:533:riverbend_roofward
+534,36,Fay,roofward_archive,v31:Fay:roofward_archive:day36,cool archive lane,imports:21 rev:22,tasks:31 debt:0.00,turn:9 kind:none,0.94,True,replay:534:roofward_archive
+535,36,Nia,archive_signal,v31:Nia:archive_signal:day36,paper lane,imports:19 rev:20,tasks:33 debt:0.00,turn:12 kind:none,0.94,True,replay:535:archive_signal
+536,36,Milo,signal_orchard,v31:Milo:signal_orchard:day36,river lantern loop,imports:22 rev:23,tasks:32 debt:0.00,turn:9 kind:planning_followup,0.94,True,replay:536:signal_orchard
+537,36,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day36,market plank route,imports:22 rev:23,tasks:32 debt:0.00,turn:12 kind:none,0.94,True,replay:537:orchard_riverbend
+538,36,Juno,central_repair_ring,v31:Juno:central_repair_ring:day36,outer bell path,imports:20 rev:21,tasks:32 debt:0.00,turn:8 kind:none,0.94,True,replay:538:central_repair_ring
+539,36,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day36,river ford,imports:22 rev:23,tasks:28 debt:0.02,turn:12 kind:none,0.94,True,replay:539:riverbend_roofward
+540,37,Fay,roofward_archive,v31:Fay:roofward_archive:day37,cool archive lane,imports:21 rev:22,tasks:31 debt:0.00,turn:9 kind:none,0.94,True,replay:540:roofward_archive
+541,37,Nia,archive_signal,v31:Nia:archive_signal:day37,paper lane,imports:20 rev:21,tasks:33 debt:0.00,turn:12 kind:none,0.94,True,replay:541:archive_signal
+542,37,Milo,signal_orchard,v31:Milo:signal_orchard:day37,river lantern loop,imports:22 rev:23,tasks:33 debt:0.00,turn:9 kind:none,0.94,True,replay:542:signal_orchard
+543,37,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day37,fen track,imports:22 rev:23,tasks:32 debt:0.00,turn:13 kind:planning_followup,0.94,True,replay:543:orchard_riverbend
+544,37,Juno,central_repair_ring,v31:Juno:central_repair_ring:day37,outer bell path,imports:20 rev:21,tasks:32 debt:0.00,turn:8 kind:none,0.93,True,replay:544:central_repair_ring
+545,37,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day37,river ford,imports:22 rev:23,tasks:29 debt:0.01,turn:12 kind:none,0.94,True,replay:545:riverbend_roofward
+546,37,Fay,roofward_archive,v31:Fay:roofward_archive:day37,cool archive lane,imports:21 rev:22,tasks:31 debt:0.00,turn:9 kind:none,0.94,True,replay:546:roofward_archive
+547,37,Nia,archive_signal,v31:Nia:archive_signal:day37,paper lane,imports:20 rev:21,tasks:33 debt:0.00,turn:12 kind:none,0.93,True,replay:547:archive_signal
+548,37,Milo,signal_orchard,v31:Milo:signal_orchard:day37,river lantern loop,imports:22 rev:23,tasks:33 debt:0.00,turn:9 kind:none,0.94,True,replay:548:signal_orchard
+549,37,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day37,fen track,imports:23 rev:24,tasks:32 debt:0.00,turn:13 kind:none,0.94,True,replay:549:orchard_riverbend
+550,37,Juno,central_repair_ring,v31:Juno:central_repair_ring:day37,outer bell path,imports:20 rev:21,tasks:33 debt:0.00,turn:8 kind:none,0.94,True,replay:550:central_repair_ring
+551,37,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day37,river ford,imports:22 rev:23,tasks:29 debt:0.01,turn:13 kind:planning_followup,0.94,True,replay:551:riverbend_roofward
+552,37,Fay,roofward_archive,v31:Fay:roofward_archive:day37,cool archive lane,imports:21 rev:22,tasks:31 debt:0.00,turn:9 kind:none,0.94,True,replay:552:roofward_archive
+553,37,Nia,archive_signal,v31:Nia:archive_signal:day37,paper lane,imports:20 rev:21,tasks:34 debt:0.00,turn:12 kind:none,0.94,True,replay:553:archive_signal
+554,37,Milo,signal_orchard,v31:Milo:signal_orchard:day37,river lantern loop,imports:23 rev:24,tasks:33 debt:0.00,turn:9 kind:none,0.94,True,replay:554:signal_orchard
+555,38,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day38,market plank route,imports:23 rev:24,tasks:32 debt:0.00,turn:13 kind:none,0.94,True,replay:555:orchard_riverbend
+556,38,Juno,central_repair_ring,v31:Juno:central_repair_ring:day38,inner repair yard,imports:21 rev:22,tasks:33 debt:0.00,turn:8 kind:none,0.94,True,replay:556:central_repair_ring
+557,38,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day38,river ford,imports:22 rev:23,tasks:30 debt:0.00,turn:13 kind:none,0.94,True,replay:557:riverbend_roofward
+558,38,Fay,roofward_archive,v31:Fay:roofward_archive:day38,cool archive lane,imports:21 rev:22,tasks:31 debt:0.00,turn:10 kind:thanks,0.94,True,replay:558:roofward_archive
+559,38,Nia,archive_signal,v31:Nia:archive_signal:day38,paper lane,imports:20 rev:21,tasks:34 debt:0.00,turn:12 kind:none,0.94,True,replay:559:archive_signal
+560,38,Milo,signal_orchard,v31:Milo:signal_orchard:day38,river lantern loop,imports:23 rev:24,tasks:34 debt:0.00,turn:9 kind:none,0.94,True,replay:560:signal_orchard
+561,38,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day38,market plank route,imports:23 rev:24,tasks:32 debt:0.00,turn:13 kind:none,0.94,True,replay:561:orchard_riverbend
+562,38,Juno,central_repair_ring,v31:Juno:central_repair_ring:day38,outer bell path,imports:21 rev:22,tasks:33 debt:0.00,turn:8 kind:none,0.94,True,replay:562:central_repair_ring
+563,38,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day38,river ford,imports:22 rev:23,tasks:30 debt:0.00,turn:13 kind:none,0.93,True,replay:563:riverbend_roofward
+564,38,Fay,roofward_archive,v31:Fay:roofward_archive:day38,cool archive lane,imports:22 rev:23,tasks:31 debt:0.00,turn:10 kind:none,0.94,True,replay:564:roofward_archive
+565,38,Nia,archive_signal,v31:Nia:archive_signal:day38,paper lane,imports:20 rev:21,tasks:35 debt:0.00,turn:12 kind:none,0.94,True,replay:565:archive_signal
+566,38,Milo,signal_orchard,v31:Milo:signal_orchard:day38,river lantern loop,imports:23 rev:24,tasks:34 debt:0.00,turn:10 kind:planning_followup,0.94,True,replay:566:signal_orchard
+567,38,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day38,market plank route,imports:24 rev:25,tasks:32 debt:0.00,turn:13 kind:none,0.94,True,replay:567:orchard_riverbend
+568,38,Juno,central_repair_ring,v31:Juno:central_repair_ring:day38,outer bell path,imports:21 rev:22,tasks:34 debt:0.00,turn:8 kind:none,0.94,True,replay:568:central_repair_ring
+569,38,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day38,river ford,imports:23 rev:24,tasks:30 debt:0.00,turn:13 kind:none,0.94,True,replay:569:riverbend_roofward
+570,39,Fay,roofward_archive,v31:Fay:roofward_archive:day39,cool archive lane,imports:22 rev:23,tasks:31 debt:0.00,turn:10 kind:none,0.94,True,replay:570:roofward_archive
+571,39,Nia,archive_signal,v31:Nia:archive_signal:day39,paper lane,imports:21 rev:22,tasks:35 debt:0.00,turn:12 kind:none,0.94,True,replay:571:archive_signal
+572,39,Milo,signal_orchard,v31:Milo:signal_orchard:day39,river lantern loop,imports:23 rev:24,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:572:signal_orchard
+573,39,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day39,market plank route,imports:24 rev:25,tasks:32 debt:0.00,turn:14 kind:planning_followup,0.94,True,replay:573:orchard_riverbend
+574,39,Juno,central_repair_ring,v31:Juno:central_repair_ring:day39,outer bell path,imports:22 rev:23,tasks:34 debt:0.00,turn:8 kind:none,0.94,True,replay:574:central_repair_ring
+575,39,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day39,river ford,imports:23 rev:24,tasks:31 debt:0.00,turn:13 kind:none,0.94,True,replay:575:riverbend_roofward
+576,39,Fay,roofward_archive,v31:Fay:roofward_archive:day39,cool archive lane,imports:22 rev:23,tasks:31 debt:0.00,turn:10 kind:none,0.93,True,replay:576:roofward_archive
+577,39,Nia,archive_signal,v31:Nia:archive_signal:day39,paper lane,imports:21 rev:22,tasks:35 debt:0.00,turn:12 kind:none,0.94,True,replay:577:archive_signal
+578,39,Milo,signal_orchard,v31:Milo:signal_orchard:day39,river lantern loop,imports:23 rev:24,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:578:signal_orchard
+579,39,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day39,market plank route,imports:25 rev:26,tasks:32 debt:0.00,turn:14 kind:none,0.94,True,replay:579:orchard_riverbend
+580,39,Juno,central_repair_ring,v31:Juno:central_repair_ring:day39,outer bell path,imports:22 rev:23,tasks:35 debt:0.00,turn:8 kind:none,0.94,True,replay:580:central_repair_ring
+581,39,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day39,river ford,imports:23 rev:24,tasks:31 debt:0.00,turn:14 kind:planning_followup,0.94,True,replay:581:riverbend_roofward
+582,39,Fay,roofward_archive,v31:Fay:roofward_archive:day39,cool archive lane,imports:22 rev:23,tasks:31 debt:0.00,turn:10 kind:none,0.93,True,replay:582:roofward_archive
+583,39,Nia,archive_signal,v31:Nia:archive_signal:day39,paper lane,imports:21 rev:22,tasks:36 debt:0.00,turn:12 kind:none,0.94,True,replay:583:archive_signal
+584,39,Milo,signal_orchard,v31:Milo:signal_orchard:day39,river lantern loop,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:584:signal_orchard
+585,40,Juno,central_repair_ring,v31:Juno:central_repair_ring:day40,inner repair yard,imports:22 rev:23,tasks:35 debt:0.00,turn:8 kind:none,0.94,True,replay:585:central_repair_ring
+586,40,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day40,river ford,imports:24 rev:25,tasks:32 debt:0.00,turn:14 kind:none,0.94,True,replay:586:riverbend_roofward
+587,40,Fay,roofward_archive,v31:Fay:roofward_archive:day40,cool archive lane,imports:22 rev:23,tasks:32 debt:0.00,turn:10 kind:none,0.94,True,replay:587:roofward_archive
+588,40,Nia,archive_signal,v31:Nia:archive_signal:day40,paper lane,imports:21 rev:22,tasks:36 debt:0.00,turn:13 kind:planning_followup,0.94,True,replay:588:archive_signal
+589,40,Milo,signal_orchard,v31:Milo:signal_orchard:day40,river lantern loop,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.93,True,replay:589:signal_orchard
+590,40,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day40,market plank route,imports:25 rev:26,tasks:33 debt:0.00,turn:14 kind:none,0.94,True,replay:590:orchard_riverbend
+591,40,Juno,central_repair_ring,v31:Juno:central_repair_ring:day40,inner repair yard,imports:22 rev:23,tasks:35 debt:0.00,turn:8 kind:none,0.93,True,replay:591:central_repair_ring
+592,40,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day40,river ford,imports:24 rev:25,tasks:33 debt:0.00,turn:14 kind:none,0.94,True,replay:592:riverbend_roofward
+593,40,Fay,roofward_archive,v31:Fay:roofward_archive:day40,cool archive lane,imports:22 rev:23,tasks:32 debt:0.00,turn:10 kind:none,0.94,True,replay:593:roofward_archive
+594,40,Nia,archive_signal,v31:Nia:archive_signal:day40,paper lane,imports:22 rev:23,tasks:36 debt:0.00,turn:13 kind:none,0.94,True,replay:594:archive_signal
+595,40,Milo,signal_orchard,v31:Milo:signal_orchard:day40,river lantern loop,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.93,True,replay:595:signal_orchard
+596,40,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day40,market plank route,imports:25 rev:26,tasks:33 debt:0.00,turn:15 kind:planning_followup,0.94,True,replay:596:orchard_riverbend
+597,40,Juno,central_repair_ring,v31:Juno:central_repair_ring:day40,inner repair yard,imports:22 rev:23,tasks:35 debt:0.00,turn:8 kind:none,0.93,True,replay:597:central_repair_ring
+598,40,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day40,river ford,imports:24 rev:25,tasks:34 debt:0.00,turn:14 kind:none,0.94,True,replay:598:riverbend_roofward
+599,40,Fay,roofward_archive,v31:Fay:roofward_archive:day40,cool archive lane,imports:23 rev:24,tasks:32 debt:0.00,turn:10 kind:none,0.94,True,replay:599:roofward_archive
+600,41,Nia,archive_signal,v31:Nia:archive_signal:day41,stone kiosk path,imports:22 rev:23,tasks:36 debt:0.00,turn:13 kind:none,0.94,True,replay:600:archive_signal
+601,41,Milo,signal_orchard,v31:Milo:signal_orchard:day41,river lantern loop,imports:25 rev:26,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:601:signal_orchard
+602,41,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day41,market plank route,imports:25 rev:26,tasks:34 debt:0.00,turn:15 kind:none,0.94,True,replay:602:orchard_riverbend
+603,41,Juno,central_repair_ring,v31:Juno:central_repair_ring:day41,inner repair yard,imports:22 rev:23,tasks:35 debt:0.00,turn:9 kind:thanks,0.94,True,replay:603:central_repair_ring
+604,41,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day41,orchard ridge detour,imports:24 rev:25,tasks:34 debt:0.00,turn:14 kind:none,0.93,True,replay:604:riverbend_roofward
+605,41,Fay,roofward_archive,v31:Fay:roofward_archive:day41,cool archive lane,imports:23 rev:24,tasks:33 debt:0.00,turn:10 kind:none,0.94,True,replay:605:roofward_archive
+606,41,Nia,archive_signal,v31:Nia:archive_signal:day41,stone kiosk path,imports:22 rev:23,tasks:36 debt:0.00,turn:13 kind:none,0.94,True,replay:606:archive_signal
+607,41,Milo,signal_orchard,v31:Milo:signal_orchard:day41,river lantern loop,imports:25 rev:26,tasks:35 debt:0.00,turn:10 kind:none,0.93,True,replay:607:signal_orchard
+608,41,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day41,market plank route,imports:25 rev:26,tasks:34 debt:0.00,turn:15 kind:none,0.93,True,replay:608:orchard_riverbend
+609,41,Juno,central_repair_ring,v31:Juno:central_repair_ring:day41,inner repair yard,imports:23 rev:24,tasks:35 debt:0.00,turn:9 kind:none,0.94,True,replay:609:central_repair_ring
+610,41,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day41,orchard ridge detour,imports:24 rev:25,tasks:35 debt:0.00,turn:14 kind:none,0.94,True,replay:610:riverbend_roofward
+611,41,Fay,roofward_archive,v31:Fay:roofward_archive:day41,cool archive lane,imports:23 rev:24,tasks:34 debt:0.00,turn:11 kind:planning_followup,0.94,True,replay:611:roofward_archive
+612,41,Nia,archive_signal,v31:Nia:archive_signal:day41,stone kiosk path,imports:22 rev:23,tasks:36 debt:0.00,turn:13 kind:none,0.94,True,replay:612:archive_signal
+613,41,Milo,signal_orchard,v31:Milo:signal_orchard:day41,river lantern loop,imports:25 rev:26,tasks:36 debt:0.00,turn:10 kind:none,0.94,True,replay:613:signal_orchard
+614,41,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day41,market plank route,imports:26 rev:27,tasks:34 debt:0.00,turn:15 kind:none,0.94,True,replay:614:orchard_riverbend
+615,42,Juno,central_repair_ring,v31:Juno:central_repair_ring:day42,inner repair yard,imports:23 rev:24,tasks:35 debt:0.00,turn:9 kind:none,0.94,True,replay:615:central_repair_ring
+616,42,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day42,orchard ridge detour,imports:25 rev:26,tasks:35 debt:0.00,turn:14 kind:none,0.94,True,replay:616:riverbend_roofward
+617,42,Fay,roofward_archive,v31:Fay:roofward_archive:day42,cool archive lane,imports:23 rev:24,tasks:35 debt:0.00,turn:11 kind:none,0.94,True,replay:617:roofward_archive
+618,42,Nia,archive_signal,v31:Nia:archive_signal:day42,stone kiosk path,imports:22 rev:23,tasks:37 debt:0.02,turn:14 kind:thanks,0.94,True,replay:618:archive_signal
+619,42,Milo,signal_orchard,v31:Milo:signal_orchard:day42,dusk road,imports:25 rev:26,tasks:36 debt:0.00,turn:10 kind:none,0.94,True,replay:619:signal_orchard
+620,42,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day42,market plank route,imports:26 rev:27,tasks:35 debt:0.00,turn:15 kind:none,0.94,True,replay:620:orchard_riverbend
+621,42,Juno,central_repair_ring,v31:Juno:central_repair_ring:day42,inner repair yard,imports:23 rev:24,tasks:35 debt:0.00,turn:9 kind:none,0.93,True,replay:621:central_repair_ring
+622,42,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day42,orchard ridge detour,imports:25 rev:26,tasks:35 debt:0.00,turn:14 kind:none,0.94,True,replay:622:riverbend_roofward
+623,42,Fay,roofward_archive,v31:Fay:roofward_archive:day42,cool archive lane,imports:24 rev:25,tasks:35 debt:0.00,turn:11 kind:none,0.94,True,replay:623:roofward_archive
+624,42,Nia,archive_signal,v31:Nia:archive_signal:day42,stone kiosk path,imports:23 rev:24,tasks:38 debt:0.04,turn:14 kind:none,0.94,True,replay:624:archive_signal
+625,42,Milo,signal_orchard,v31:Milo:signal_orchard:day42,dusk road,imports:25 rev:26,tasks:37 debt:0.00,turn:10 kind:none,0.94,True,replay:625:signal_orchard
+626,42,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day42,market plank route,imports:26 rev:27,tasks:35 debt:0.00,turn:16 kind:planning_followup,0.94,True,replay:626:orchard_riverbend
+627,42,Juno,central_repair_ring,v31:Juno:central_repair_ring:day42,inner repair yard,imports:23 rev:24,tasks:35 debt:0.00,turn:9 kind:none,0.93,True,replay:627:central_repair_ring
+628,42,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day42,orchard ridge detour,imports:25 rev:26,tasks:36 debt:0.00,turn:14 kind:none,0.94,True,replay:628:riverbend_roofward
+629,42,Fay,roofward_archive,v31:Fay:roofward_archive:day42,cool archive lane,imports:25 rev:26,tasks:35 debt:0.00,turn:11 kind:none,0.94,True,replay:629:roofward_archive
+630,43,Nia,archive_signal,v31:Nia:archive_signal:day43,stone kiosk path,imports:24 rev:25,tasks:38 debt:0.04,turn:14 kind:none,0.94,True,replay:630:archive_signal
+631,43,Milo,signal_orchard,v31:Milo:signal_orchard:day43,dusk road,imports:26 rev:27,tasks:38 debt:0.00,turn:10 kind:none,0.94,True,replay:631:signal_orchard
+632,43,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day43,market plank route,imports:26 rev:27,tasks:36 debt:0.00,turn:16 kind:none,0.94,True,replay:632:orchard_riverbend
+633,43,Juno,central_repair_ring,v31:Juno:central_repair_ring:day43,inner repair yard,imports:23 rev:24,tasks:35 debt:0.00,turn:10 kind:thanks,0.93,True,replay:633:central_repair_ring
+634,43,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day43,orchard ridge detour,imports:25 rev:26,tasks:36 debt:0.00,turn:14 kind:none,0.93,True,replay:634:riverbend_roofward
+635,43,Fay,roofward_archive,v31:Fay:roofward_archive:day43,cool archive lane,imports:25 rev:26,tasks:36 debt:0.00,turn:11 kind:none,0.94,True,replay:635:roofward_archive
+636,43,Nia,archive_signal,v31:Nia:archive_signal:day43,stone kiosk path,imports:24 rev:25,tasks:38 debt:0.04,turn:14 kind:none,0.93,True,replay:636:archive_signal
+637,43,Milo,signal_orchard,v31:Milo:signal_orchard:day43,dusk road,imports:26 rev:27,tasks:39 debt:0.00,turn:10 kind:none,0.94,True,replay:637:signal_orchard
+638,43,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day43,fen track,imports:26 rev:27,tasks:36 debt:0.00,turn:16 kind:none,0.94,True,replay:638:orchard_riverbend
+639,43,Juno,central_repair_ring,v31:Juno:central_repair_ring:day43,inner repair yard,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:639:central_repair_ring
+640,43,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day43,orchard ridge detour,imports:25 rev:26,tasks:37 debt:0.00,turn:14 kind:none,0.94,True,replay:640:riverbend_roofward
+641,43,Fay,roofward_archive,v31:Fay:roofward_archive:day43,cool archive lane,imports:25 rev:26,tasks:36 debt:0.00,turn:12 kind:planning_followup,0.94,True,replay:641:roofward_archive
+642,43,Nia,archive_signal,v31:Nia:archive_signal:day43,stone kiosk path,imports:24 rev:25,tasks:38 debt:0.04,turn:14 kind:none,0.93,True,replay:642:archive_signal
+643,43,Milo,signal_orchard,v31:Milo:signal_orchard:day43,dusk road,imports:26 rev:27,tasks:40 debt:0.00,turn:10 kind:none,0.94,True,replay:643:signal_orchard
+644,43,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day43,fen track,imports:27 rev:28,tasks:36 debt:0.00,turn:16 kind:none,0.94,True,replay:644:orchard_riverbend
+645,44,Juno,central_repair_ring,v31:Juno:central_repair_ring:day44,inner repair yard,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:645:central_repair_ring
+646,44,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day44,orchard ridge detour,imports:26 rev:27,tasks:37 debt:0.00,turn:14 kind:none,0.94,True,replay:646:riverbend_roofward
+647,44,Fay,roofward_archive,v31:Fay:roofward_archive:day44,cool archive lane,imports:25 rev:26,tasks:37 debt:0.00,turn:12 kind:none,0.94,True,replay:647:roofward_archive
+648,44,Nia,archive_signal,v31:Nia:archive_signal:day44,stone kiosk path,imports:24 rev:25,tasks:38 debt:0.04,turn:15 kind:thanks,0.94,True,replay:648:archive_signal
+649,44,Milo,signal_orchard,v31:Milo:signal_orchard:day44,dusk road,imports:26 rev:27,tasks:40 debt:0.00,turn:10 kind:none,0.93,True,replay:649:signal_orchard
+650,44,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day44,fen track,imports:27 rev:28,tasks:37 debt:0.00,turn:16 kind:none,0.94,True,replay:650:orchard_riverbend
+651,44,Juno,central_repair_ring,v31:Juno:central_repair_ring:day44,inner repair yard,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:651:central_repair_ring
+652,44,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day44,river ford,imports:26 rev:27,tasks:37 debt:0.00,turn:14 kind:none,0.93,True,replay:652:riverbend_roofward
+653,44,Fay,roofward_archive,v31:Fay:roofward_archive:day44,glass stair,imports:25 rev:26,tasks:37 debt:0.00,turn:12 kind:none,0.93,True,replay:653:roofward_archive
+654,44,Nia,archive_signal,v31:Nia:archive_signal:day44,stone kiosk path,imports:25 rev:26,tasks:38 debt:0.04,turn:15 kind:none,0.94,True,replay:654:archive_signal
+655,44,Milo,signal_orchard,v31:Milo:signal_orchard:day44,dusk road,imports:26 rev:27,tasks:41 debt:0.00,turn:10 kind:none,0.94,True,replay:655:signal_orchard
+656,44,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day44,fen track,imports:27 rev:28,tasks:38 debt:0.00,turn:17 kind:planning_followup,0.94,True,replay:656:orchard_riverbend
+657,44,Juno,central_repair_ring,v31:Juno:central_repair_ring:day44,inner repair yard,imports:24 rev:25,tasks:35 debt:0.00,turn:10 kind:none,0.94,True,replay:657:central_repair_ring
+658,44,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day44,river ford,imports:27 rev:28,tasks:38 debt:0.00,turn:14 kind:none,0.94,True,replay:658:riverbend_roofward
+659,44,Fay,roofward_archive,v31:Fay:roofward_archive:day44,glass stair,imports:26 rev:27,tasks:37 debt:0.00,turn:12 kind:none,0.94,True,replay:659:roofward_archive
+660,45,Milo,signal_orchard,v31:Milo:signal_orchard:day45,dusk road,imports:26 rev:27,tasks:41 debt:0.00,turn:10 kind:none,0.94,True,replay:660:signal_orchard
+661,45,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day45,fen track,imports:28 rev:29,tasks:38 debt:0.00,turn:17 kind:none,0.94,True,replay:661:orchard_riverbend
+662,45,Juno,central_repair_ring,v31:Juno:central_repair_ring:day45,inner repair yard,imports:24 rev:25,tasks:36 debt:0.00,turn:10 kind:none,0.94,True,replay:662:central_repair_ring
+663,45,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day45,river ford,imports:27 rev:28,tasks:38 debt:0.00,turn:15 kind:planning_followup,0.94,True,replay:663:riverbend_roofward
+664,45,Fay,roofward_archive,v31:Fay:roofward_archive:day45,cool archive lane,imports:26 rev:27,tasks:37 debt:0.00,turn:12 kind:none,0.94,True,replay:664:roofward_archive
+665,45,Nia,archive_signal,v31:Nia:archive_signal:day45,stone kiosk path,imports:25 rev:26,tasks:39 debt:0.02,turn:15 kind:none,0.94,True,replay:665:archive_signal
+666,45,Milo,signal_orchard,v31:Milo:signal_orchard:day45,dusk road,imports:26 rev:27,tasks:41 debt:0.00,turn:10 kind:none,0.94,True,replay:666:signal_orchard
+667,45,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day45,fen track,imports:28 rev:29,tasks:38 debt:0.00,turn:17 kind:none,0.94,True,replay:667:orchard_riverbend
+668,45,Juno,central_repair_ring,v31:Juno:central_repair_ring:day45,inner repair yard,imports:24 rev:25,tasks:37 debt:0.00,turn:10 kind:none,0.94,True,replay:668:central_repair_ring
+669,45,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day45,river ford,imports:28 rev:29,tasks:38 debt:0.00,turn:15 kind:none,0.94,True,replay:669:riverbend_roofward
+670,45,Fay,roofward_archive,v31:Fay:roofward_archive:day45,cool archive lane,imports:26 rev:27,tasks:38 debt:0.00,turn:12 kind:none,0.94,True,replay:670:roofward_archive
+671,45,Nia,archive_signal,v31:Nia:archive_signal:day45,stone kiosk path,imports:25 rev:26,tasks:39 debt:0.02,turn:16 kind:planning_followup,0.94,True,replay:671:archive_signal
+672,45,Milo,signal_orchard,v31:Milo:signal_orchard:day45,dusk road,imports:27 rev:28,tasks:41 debt:0.00,turn:10 kind:none,0.94,True,replay:672:signal_orchard
+673,45,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day45,fen track,imports:28 rev:29,tasks:39 debt:0.00,turn:17 kind:none,0.94,True,replay:673:orchard_riverbend
+674,45,Juno,central_repair_ring,v31:Juno:central_repair_ring:day45,inner repair yard,imports:25 rev:26,tasks:38 debt:0.00,turn:10 kind:none,0.94,True,replay:674:central_repair_ring
+675,46,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day46,river ford,imports:28 rev:29,tasks:38 debt:0.00,turn:15 kind:none,0.94,True,replay:675:riverbend_roofward
+676,46,Fay,roofward_archive,v31:Fay:roofward_archive:day46,cool archive lane,imports:27 rev:28,tasks:38 debt:0.00,turn:12 kind:none,0.94,True,replay:676:roofward_archive
+677,46,Nia,archive_signal,v31:Nia:archive_signal:day46,stone kiosk path,imports:25 rev:26,tasks:40 debt:0.01,turn:16 kind:none,0.94,True,replay:677:archive_signal
+678,46,Milo,signal_orchard,v31:Milo:signal_orchard:day46,dusk road,imports:27 rev:28,tasks:41 debt:0.00,turn:11 kind:planning_followup,0.94,True,replay:678:signal_orchard
+679,46,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day46,market plank route,imports:29 rev:30,tasks:39 debt:0.00,turn:17 kind:none,0.94,True,replay:679:orchard_riverbend
+680,46,Juno,central_repair_ring,v31:Juno:central_repair_ring:day46,inner repair yard,imports:25 rev:26,tasks:38 debt:0.00,turn:10 kind:none,0.94,True,replay:680:central_repair_ring
+681,46,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day46,river ford,imports:28 rev:29,tasks:38 debt:0.00,turn:15 kind:none,0.93,True,replay:681:riverbend_roofward
+682,46,Fay,roofward_archive,v31:Fay:roofward_archive:day46,cool archive lane,imports:27 rev:28,tasks:38 debt:0.00,turn:12 kind:none,0.94,True,replay:682:roofward_archive
+683,46,Nia,archive_signal,v31:Nia:archive_signal:day46,stone kiosk path,imports:25 rev:26,tasks:40 debt:0.01,turn:16 kind:none,0.94,True,replay:683:archive_signal
+684,46,Milo,signal_orchard,v31:Milo:signal_orchard:day46,dusk road,imports:28 rev:29,tasks:41 debt:0.00,turn:11 kind:none,0.94,True,replay:684:signal_orchard
+685,46,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day46,market plank route,imports:29 rev:30,tasks:40 debt:0.00,turn:17 kind:none,0.94,True,replay:685:orchard_riverbend
+686,46,Juno,central_repair_ring,v31:Juno:central_repair_ring:day46,inner repair yard,imports:25 rev:26,tasks:38 debt:0.00,turn:11 kind:thanks,0.94,True,replay:686:central_repair_ring
+687,46,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day46,river ford,imports:28 rev:29,tasks:38 debt:0.00,turn:15 kind:none,0.93,True,replay:687:riverbend_roofward
+688,46,Fay,roofward_archive,v31:Fay:roofward_archive:day46,cool archive lane,imports:27 rev:28,tasks:39 debt:0.00,turn:12 kind:none,0.94,True,replay:688:roofward_archive
+689,46,Nia,archive_signal,v31:Nia:archive_signal:day46,stone kiosk path,imports:26 rev:27,tasks:40 debt:0.01,turn:16 kind:none,0.94,True,replay:689:archive_signal
+690,47,Milo,signal_orchard,v31:Milo:signal_orchard:day47,river lantern loop,imports:28 rev:29,tasks:41 debt:0.00,turn:11 kind:none,0.94,True,replay:690:signal_orchard
+691,47,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day47,market plank route,imports:30 rev:31,tasks:40 debt:0.00,turn:17 kind:none,0.94,True,replay:691:orchard_riverbend
+692,47,Juno,central_repair_ring,v31:Juno:central_repair_ring:day47,inner repair yard,imports:25 rev:26,tasks:39 debt:0.00,turn:11 kind:none,0.94,True,replay:692:central_repair_ring
+693,47,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day47,river ford,imports:28 rev:29,tasks:38 debt:0.00,turn:16 kind:thanks,0.94,True,replay:693:riverbend_roofward
+694,47,Fay,roofward_archive,v31:Fay:roofward_archive:day47,cool archive lane,imports:27 rev:28,tasks:39 debt:0.00,turn:12 kind:none,0.93,True,replay:694:roofward_archive
+695,47,Nia,archive_signal,v31:Nia:archive_signal:day47,stone kiosk path,imports:26 rev:27,tasks:41 debt:0.00,turn:16 kind:none,0.94,True,replay:695:archive_signal
+696,47,Milo,signal_orchard,v31:Milo:signal_orchard:day47,river lantern loop,imports:28 rev:29,tasks:41 debt:0.00,turn:11 kind:none,0.94,True,replay:696:signal_orchard
+697,47,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day47,market plank route,imports:30 rev:31,tasks:40 debt:0.00,turn:17 kind:none,0.93,True,replay:697:orchard_riverbend
+698,47,Juno,central_repair_ring,v31:Juno:central_repair_ring:day47,inner repair yard,imports:25 rev:26,tasks:39 debt:0.00,turn:11 kind:none,0.94,True,replay:698:central_repair_ring
+699,47,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day47,river ford,imports:29 rev:30,tasks:38 debt:0.00,turn:16 kind:none,0.94,True,replay:699:riverbend_roofward
+700,47,Fay,roofward_archive,v31:Fay:roofward_archive:day47,cool archive lane,imports:27 rev:28,tasks:40 debt:0.00,turn:12 kind:none,0.94,True,replay:700:roofward_archive
+701,47,Nia,archive_signal,v31:Nia:archive_signal:day47,stone kiosk path,imports:26 rev:27,tasks:41 debt:0.00,turn:17 kind:planning_followup,0.94,True,replay:701:archive_signal
+702,47,Milo,signal_orchard,v31:Milo:signal_orchard:day47,river lantern loop,imports:28 rev:29,tasks:41 debt:0.00,turn:11 kind:none,0.94,True,replay:702:signal_orchard
+703,47,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day47,market plank route,imports:30 rev:31,tasks:41 debt:0.00,turn:17 kind:none,0.94,True,replay:703:orchard_riverbend
+704,47,Juno,central_repair_ring,v31:Juno:central_repair_ring:day47,inner repair yard,imports:26 rev:27,tasks:39 debt:0.00,turn:11 kind:none,0.94,True,replay:704:central_repair_ring
+705,48,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day48,river ford,imports:29 rev:30,tasks:39 debt:0.00,turn:16 kind:none,0.94,True,replay:705:riverbend_roofward
+706,48,Fay,roofward_archive,v31:Fay:roofward_archive:day48,cool archive lane,imports:28 rev:29,tasks:40 debt:0.00,turn:12 kind:none,0.94,True,replay:706:roofward_archive
+707,48,Nia,archive_signal,v31:Nia:archive_signal:day48,stone kiosk path,imports:26 rev:27,tasks:42 debt:0.00,turn:17 kind:none,0.94,True,replay:707:archive_signal
+708,48,Milo,signal_orchard,v31:Milo:signal_orchard:day48,river lantern loop,imports:28 rev:29,tasks:41 debt:0.00,turn:12 kind:thanks,0.94,True,replay:708:signal_orchard
+709,48,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day48,market plank route,imports:30 rev:31,tasks:41 debt:0.00,turn:17 kind:none,0.94,True,replay:709:orchard_riverbend
+710,48,Juno,central_repair_ring,v31:Juno:central_repair_ring:day48,inner repair yard,imports:26 rev:27,tasks:40 debt:0.00,turn:11 kind:none,0.94,True,replay:710:central_repair_ring
+711,48,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day48,river ford,imports:29 rev:30,tasks:40 debt:0.00,turn:16 kind:none,0.94,True,replay:711:riverbend_roofward
+712,48,Fay,roofward_archive,v31:Fay:roofward_archive:day48,cool archive lane,imports:28 rev:29,tasks:40 debt:0.00,turn:12 kind:none,0.94,True,replay:712:roofward_archive
+713,48,Nia,archive_signal,v31:Nia:archive_signal:day48,stone kiosk path,imports:26 rev:27,tasks:42 debt:0.00,turn:17 kind:none,0.93,True,replay:713:archive_signal
+714,48,Milo,signal_orchard,v31:Milo:signal_orchard:day48,river lantern loop,imports:29 rev:30,tasks:41 debt:0.00,turn:12 kind:none,0.94,True,replay:714:signal_orchard
+715,48,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day48,market plank route,imports:30 rev:31,tasks:42 debt:0.00,turn:17 kind:none,0.94,True,replay:715:orchard_riverbend
+716,48,Juno,central_repair_ring,v31:Juno:central_repair_ring:day48,inner repair yard,imports:26 rev:27,tasks:40 debt:0.00,turn:12 kind:planning_followup,0.94,True,replay:716:central_repair_ring
+717,48,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day48,river ford,imports:29 rev:30,tasks:41 debt:0.00,turn:16 kind:none,0.94,True,replay:717:riverbend_roofward
+718,48,Fay,roofward_archive,v31:Fay:roofward_archive:day48,cool archive lane,imports:28 rev:29,tasks:41 debt:0.00,turn:12 kind:none,0.94,True,replay:718:roofward_archive
+719,48,Nia,archive_signal,v31:Nia:archive_signal:day48,stone kiosk path,imports:27 rev:28,tasks:42 debt:0.00,turn:17 kind:none,0.94,True,replay:719:archive_signal
+720,49,Milo,signal_orchard,v31:Milo:signal_orchard:day49,river lantern loop,imports:29 rev:30,tasks:41 debt:0.00,turn:12 kind:none,0.94,True,replay:720:signal_orchard
+721,49,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day49,market plank route,imports:31 rev:32,tasks:42 debt:0.00,turn:17 kind:none,0.94,True,replay:721:orchard_riverbend
+722,49,Juno,central_repair_ring,v31:Juno:central_repair_ring:day49,inner repair yard,imports:26 rev:27,tasks:41 debt:0.00,turn:12 kind:none,0.94,True,replay:722:central_repair_ring
+723,49,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day49,river ford,imports:29 rev:30,tasks:41 debt:0.00,turn:17 kind:planning_followup,0.94,True,replay:723:riverbend_roofward
+724,49,Fay,roofward_archive,v31:Fay:roofward_archive:day49,cool archive lane,imports:28 rev:29,tasks:42 debt:0.00,turn:12 kind:none,0.94,True,replay:724:roofward_archive
+725,49,Nia,archive_signal,v31:Nia:archive_signal:day49,stone kiosk path,imports:27 rev:28,tasks:43 debt:0.00,turn:17 kind:none,0.94,True,replay:725:archive_signal
+726,49,Milo,signal_orchard,v31:Milo:signal_orchard:day49,river lantern loop,imports:29 rev:30,tasks:41 debt:0.00,turn:12 kind:none,0.93,True,replay:726:signal_orchard
+727,49,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day49,market plank route,imports:31 rev:32,tasks:42 debt:0.00,turn:17 kind:none,0.94,True,replay:727:orchard_riverbend
+728,49,Juno,central_repair_ring,v31:Juno:central_repair_ring:day49,inner repair yard,imports:27 rev:28,tasks:41 debt:0.00,turn:12 kind:none,0.94,True,replay:728:central_repair_ring
+729,49,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day49,river ford,imports:30 rev:31,tasks:41 debt:0.00,turn:17 kind:none,0.94,True,replay:729:riverbend_roofward
+730,49,Fay,roofward_archive,v31:Fay:roofward_archive:day49,cool archive lane,imports:28 rev:29,tasks:43 debt:0.00,turn:12 kind:none,0.94,True,replay:730:roofward_archive
+731,49,Nia,archive_signal,v31:Nia:archive_signal:day49,stone kiosk path,imports:27 rev:28,tasks:43 debt:0.00,turn:18 kind:planning_followup,0.94,True,replay:731:archive_signal
+732,49,Milo,signal_orchard,v31:Milo:signal_orchard:day49,river lantern loop,imports:29 rev:30,tasks:41 debt:0.00,turn:12 kind:none,0.93,True,replay:732:signal_orchard
+733,49,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day49,market plank route,imports:31 rev:32,tasks:43 debt:0.00,turn:17 kind:none,0.94,True,replay:733:orchard_riverbend
+734,49,Juno,central_repair_ring,v31:Juno:central_repair_ring:day49,outer bell path,imports:28 rev:29,tasks:41 debt:0.00,turn:12 kind:none,0.94,True,replay:734:central_repair_ring
+735,50,Fay,roofward_archive,v31:Fay:roofward_archive:day50,cool archive lane,imports:29 rev:30,tasks:43 debt:0.00,turn:12 kind:none,0.94,True,replay:735:roofward_archive
+736,50,Nia,archive_signal,v31:Nia:archive_signal:day50,stone kiosk path,imports:28 rev:29,tasks:44 debt:0.00,turn:18 kind:none,0.94,True,replay:736:archive_signal
+737,50,Milo,signal_orchard,v31:Milo:signal_orchard:day50,river lantern loop,imports:29 rev:30,tasks:42 debt:0.00,turn:12 kind:none,0.94,True,replay:737:signal_orchard
+738,50,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day50,market plank route,imports:31 rev:32,tasks:43 debt:0.00,turn:18 kind:planning_followup,0.94,True,replay:738:orchard_riverbend
+739,50,Juno,central_repair_ring,v31:Juno:central_repair_ring:day50,outer bell path,imports:28 rev:29,tasks:41 debt:0.00,turn:12 kind:none,0.93,True,replay:739:central_repair_ring
+740,50,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day50,river ford,imports:30 rev:31,tasks:42 debt:0.00,turn:17 kind:none,0.94,True,replay:740:riverbend_roofward
+741,50,Fay,roofward_archive,v31:Fay:roofward_archive:day50,cool archive lane,imports:29 rev:30,tasks:43 debt:0.00,turn:12 kind:none,0.93,True,replay:741:roofward_archive
+742,50,Nia,archive_signal,v31:Nia:archive_signal:day50,stone kiosk path,imports:28 rev:29,tasks:45 debt:0.00,turn:18 kind:none,0.94,True,replay:742:archive_signal
+743,50,Milo,signal_orchard,v31:Milo:signal_orchard:day50,river lantern loop,imports:29 rev:30,tasks:42 debt:0.00,turn:12 kind:none,0.94,True,replay:743:signal_orchard
+744,50,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day50,market plank route,imports:31 rev:32,tasks:43 debt:0.00,turn:18 kind:none,0.93,True,replay:744:orchard_riverbend
+745,50,Juno,central_repair_ring,v31:Juno:central_repair_ring:day50,outer bell path,imports:28 rev:29,tasks:42 debt:0.00,turn:12 kind:none,0.94,True,replay:745:central_repair_ring
+746,50,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day50,river ford,imports:30 rev:31,tasks:42 debt:0.00,turn:18 kind:planning_followup,0.94,True,replay:746:riverbend_roofward
+747,50,Fay,roofward_archive,v31:Fay:roofward_archive:day50,cool archive lane,imports:29 rev:30,tasks:43 debt:0.00,turn:12 kind:none,0.93,True,replay:747:roofward_archive
+748,50,Nia,archive_signal,v31:Nia:archive_signal:day50,stone kiosk path,imports:28 rev:29,tasks:45 debt:0.00,turn:18 kind:none,0.93,True,replay:748:archive_signal
+749,50,Milo,signal_orchard,v31:Milo:signal_orchard:day50,river lantern loop,imports:30 rev:31,tasks:42 debt:0.00,turn:12 kind:none,0.94,True,replay:749:signal_orchard
+750,51,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day51,market plank route,imports:31 rev:32,tasks:43 debt:0.00,turn:18 kind:none,0.94,True,replay:750:orchard_riverbend
+751,51,Juno,central_repair_ring,v31:Juno:central_repair_ring:day51,outer bell path,imports:29 rev:30,tasks:42 debt:0.00,turn:12 kind:none,0.94,True,replay:751:central_repair_ring
+752,51,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day51,river ford,imports:30 rev:31,tasks:43 debt:0.00,turn:18 kind:none,0.94,True,replay:752:riverbend_roofward
+753,51,Fay,roofward_archive,v31:Fay:roofward_archive:day51,cool archive lane,imports:29 rev:30,tasks:43 debt:0.00,turn:13 kind:thanks,0.94,True,replay:753:roofward_archive
+754,51,Nia,archive_signal,v31:Nia:archive_signal:day51,paper lane,imports:28 rev:29,tasks:45 debt:0.00,turn:18 kind:none,0.94,True,replay:754:archive_signal
+755,51,Milo,signal_orchard,v31:Milo:signal_orchard:day51,river lantern loop,imports:30 rev:31,tasks:43 debt:0.00,turn:12 kind:none,0.94,True,replay:755:signal_orchard
+756,51,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day51,market plank route,imports:31 rev:32,tasks:43 debt:0.00,turn:18 kind:none,0.94,True,replay:756:orchard_riverbend
+757,51,Juno,central_repair_ring,v31:Juno:central_repair_ring:day51,outer bell path,imports:29 rev:30,tasks:42 debt:0.00,turn:12 kind:none,0.93,True,replay:757:central_repair_ring
+758,51,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day51,river ford,imports:30 rev:31,tasks:43 debt:0.00,turn:18 kind:none,0.93,True,replay:758:riverbend_roofward
+759,51,Fay,roofward_archive,v31:Fay:roofward_archive:day51,cool archive lane,imports:30 rev:31,tasks:43 debt:0.00,turn:13 kind:none,0.94,True,replay:759:roofward_archive
+760,51,Nia,archive_signal,v31:Nia:archive_signal:day51,paper lane,imports:28 rev:29,tasks:46 debt:0.00,turn:18 kind:none,0.94,True,replay:760:archive_signal
+761,51,Milo,signal_orchard,v31:Milo:signal_orchard:day51,river lantern loop,imports:30 rev:31,tasks:44 debt:0.00,turn:13 kind:planning_followup,0.94,True,replay:761:signal_orchard
+762,51,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day51,market plank route,imports:31 rev:32,tasks:43 debt:0.00,turn:18 kind:none,0.94,True,replay:762:orchard_riverbend
+763,51,Juno,central_repair_ring,v31:Juno:central_repair_ring:day51,outer bell path,imports:29 rev:30,tasks:43 debt:0.00,turn:12 kind:none,0.94,True,replay:763:central_repair_ring
+764,51,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day51,river ford,imports:31 rev:32,tasks:43 debt:0.00,turn:18 kind:none,0.94,True,replay:764:riverbend_roofward
+765,52,Fay,roofward_archive,v31:Fay:roofward_archive:day52,cool archive lane,imports:30 rev:31,tasks:43 debt:0.00,turn:13 kind:none,0.94,True,replay:765:roofward_archive
+766,52,Nia,archive_signal,v31:Nia:archive_signal:day52,paper lane,imports:29 rev:30,tasks:46 debt:0.00,turn:18 kind:none,0.94,True,replay:766:archive_signal
+767,52,Milo,signal_orchard,v31:Milo:signal_orchard:day52,river lantern loop,imports:30 rev:31,tasks:45 debt:0.00,turn:13 kind:none,0.94,True,replay:767:signal_orchard
+768,52,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day52,market plank route,imports:31 rev:32,tasks:44 debt:0.02,turn:19 kind:thanks,0.94,True,replay:768:orchard_riverbend
+769,52,Juno,central_repair_ring,v31:Juno:central_repair_ring:day52,outer bell path,imports:29 rev:30,tasks:43 debt:0.00,turn:12 kind:none,0.94,True,replay:769:central_repair_ring
+770,52,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day52,river ford,imports:31 rev:32,tasks:44 debt:0.00,turn:18 kind:none,0.94,True,replay:770:riverbend_roofward
+771,52,Fay,roofward_archive,v31:Fay:roofward_archive:day52,cool archive lane,imports:30 rev:31,tasks:43 debt:0.00,turn:13 kind:none,0.93,True,replay:771:roofward_archive
+772,52,Nia,archive_signal,v31:Nia:archive_signal:day52,paper lane,imports:29 rev:30,tasks:46 debt:0.00,turn:18 kind:none,0.94,True,replay:772:archive_signal
+773,52,Milo,signal_orchard,v31:Milo:signal_orchard:day52,river lantern loop,imports:30 rev:31,tasks:45 debt:0.00,turn:13 kind:none,0.93,True,replay:773:signal_orchard
+774,52,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day52,market plank route,imports:32 rev:33,tasks:45 debt:0.04,turn:19 kind:none,0.94,True,replay:774:orchard_riverbend
+775,52,Juno,central_repair_ring,v31:Juno:central_repair_ring:day52,outer bell path,imports:29 rev:30,tasks:44 debt:0.00,turn:12 kind:none,0.94,True,replay:775:central_repair_ring
+776,52,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day52,river ford,imports:31 rev:32,tasks:44 debt:0.00,turn:19 kind:planning_followup,0.94,True,replay:776:riverbend_roofward
+777,52,Fay,roofward_archive,v31:Fay:roofward_archive:day52,cool archive lane,imports:31 rev:32,tasks:43 debt:0.00,turn:13 kind:none,0.94,True,replay:777:roofward_archive
+778,52,Nia,archive_signal,v31:Nia:archive_signal:day52,paper lane,imports:29 rev:30,tasks:47 debt:0.00,turn:18 kind:none,0.94,True,replay:778:archive_signal
+779,52,Milo,signal_orchard,v31:Milo:signal_orchard:day52,river lantern loop,imports:31 rev:32,tasks:45 debt:0.00,turn:13 kind:none,0.94,True,replay:779:signal_orchard
+780,53,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day53,market plank route,imports:32 rev:33,tasks:45 debt:0.04,turn:19 kind:none,0.94,True,replay:780:orchard_riverbend
+781,53,Juno,central_repair_ring,v31:Juno:central_repair_ring:day53,outer bell path,imports:30 rev:31,tasks:45 debt:0.00,turn:12 kind:none,0.94,True,replay:781:central_repair_ring
+782,53,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day53,river ford,imports:31 rev:32,tasks:44 debt:0.00,turn:19 kind:none,0.94,True,replay:782:riverbend_roofward
+783,53,Fay,roofward_archive,v31:Fay:roofward_archive:day53,cool archive lane,imports:31 rev:32,tasks:43 debt:0.00,turn:14 kind:planning_followup,0.94,True,replay:783:roofward_archive
+784,53,Nia,archive_signal,v31:Nia:archive_signal:day53,paper lane,imports:30 rev:31,tasks:47 debt:0.00,turn:18 kind:none,0.94,True,replay:784:archive_signal
+785,53,Milo,signal_orchard,v31:Milo:signal_orchard:day53,river lantern loop,imports:31 rev:32,tasks:46 debt:0.00,turn:13 kind:none,0.94,True,replay:785:signal_orchard
+786,53,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day53,market plank route,imports:32 rev:33,tasks:45 debt:0.04,turn:19 kind:none,0.93,True,replay:786:orchard_riverbend
+787,53,Juno,central_repair_ring,v31:Juno:central_repair_ring:day53,outer bell path,imports:30 rev:31,tasks:46 debt:0.00,turn:12 kind:none,0.94,True,replay:787:central_repair_ring
+788,53,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day53,river ford,imports:31 rev:32,tasks:44 debt:0.00,turn:19 kind:none,0.94,True,replay:788:riverbend_roofward
+789,53,Fay,roofward_archive,v31:Fay:roofward_archive:day53,cool archive lane,imports:32 rev:33,tasks:43 debt:0.00,turn:14 kind:none,0.94,True,replay:789:roofward_archive
+790,53,Nia,archive_signal,v31:Nia:archive_signal:day53,paper lane,imports:30 rev:31,tasks:48 debt:0.00,turn:18 kind:none,0.94,True,replay:790:archive_signal
+791,53,Milo,signal_orchard,v31:Milo:signal_orchard:day53,river lantern loop,imports:31 rev:32,tasks:46 debt:0.00,turn:14 kind:planning_followup,0.94,True,replay:791:signal_orchard
+792,53,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day53,market plank route,imports:32 rev:33,tasks:45 debt:0.04,turn:19 kind:none,0.93,True,replay:792:orchard_riverbend
+793,53,Juno,central_repair_ring,v31:Juno:central_repair_ring:day53,outer bell path,imports:30 rev:31,tasks:47 debt:0.00,turn:12 kind:none,0.94,True,replay:793:central_repair_ring
+794,53,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day53,river ford,imports:32 rev:33,tasks:44 debt:0.00,turn:19 kind:none,0.94,True,replay:794:riverbend_roofward
+795,54,Fay,roofward_archive,v31:Fay:roofward_archive:day54,glass stair,imports:32 rev:33,tasks:43 debt:0.00,turn:14 kind:none,0.94,True,replay:795:roofward_archive
+796,54,Nia,archive_signal,v31:Nia:archive_signal:day54,paper lane,imports:31 rev:32,tasks:48 debt:0.00,turn:18 kind:none,0.94,True,replay:796:archive_signal
+797,54,Milo,signal_orchard,v31:Milo:signal_orchard:day54,river lantern loop,imports:31 rev:32,tasks:47 debt:0.00,turn:14 kind:none,0.94,True,replay:797:signal_orchard
+798,54,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day54,market plank route,imports:32 rev:33,tasks:45 debt:0.04,turn:20 kind:thanks,0.94,True,replay:798:orchard_riverbend
+799,54,Juno,central_repair_ring,v31:Juno:central_repair_ring:day54,outer bell path,imports:30 rev:31,tasks:47 debt:0.00,turn:12 kind:none,0.93,True,replay:799:central_repair_ring
+800,54,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day54,river ford,imports:32 rev:33,tasks:45 debt:0.00,turn:19 kind:none,0.94,True,replay:800:riverbend_roofward
+801,54,Fay,roofward_archive,v31:Fay:roofward_archive:day54,glass stair,imports:32 rev:33,tasks:43 debt:0.00,turn:14 kind:none,0.94,True,replay:801:roofward_archive
+802,54,Nia,archive_signal,v31:Nia:archive_signal:day54,paper lane,imports:31 rev:32,tasks:48 debt:0.00,turn:18 kind:none,0.93,True,replay:802:archive_signal
+803,54,Milo,signal_orchard,v31:Milo:signal_orchard:day54,river lantern loop,imports:31 rev:32,tasks:47 debt:0.00,turn:14 kind:none,0.93,True,replay:803:signal_orchard
+804,54,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day54,market plank route,imports:33 rev:34,tasks:45 debt:0.04,turn:20 kind:none,0.94,True,replay:804:orchard_riverbend
+805,54,Juno,central_repair_ring,v31:Juno:central_repair_ring:day54,outer bell path,imports:30 rev:31,tasks:48 debt:0.00,turn:12 kind:none,0.94,True,replay:805:central_repair_ring
+806,54,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day54,river ford,imports:32 rev:33,tasks:45 debt:0.00,turn:20 kind:planning_followup,0.93,True,replay:806:riverbend_roofward
+807,54,Fay,roofward_archive,v31:Fay:roofward_archive:day54,glass stair,imports:32 rev:33,tasks:43 debt:0.00,turn:14 kind:none,0.94,True,replay:807:roofward_archive
+808,54,Nia,archive_signal,v31:Nia:archive_signal:day54,paper lane,imports:31 rev:32,tasks:49 debt:0.00,turn:18 kind:none,0.94,True,replay:808:archive_signal
+809,54,Milo,signal_orchard,v31:Milo:signal_orchard:day54,river lantern loop,imports:32 rev:33,tasks:47 debt:0.00,turn:14 kind:none,0.94,True,replay:809:signal_orchard
+810,55,Juno,central_repair_ring,v31:Juno:central_repair_ring:day55,outer bell path,imports:30 rev:31,tasks:48 debt:0.00,turn:12 kind:none,0.94,True,replay:810:central_repair_ring
+811,55,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day55,orchard ridge detour,imports:33 rev:34,tasks:45 debt:0.00,turn:20 kind:none,0.94,True,replay:811:riverbend_roofward
+812,55,Fay,roofward_archive,v31:Fay:roofward_archive:day55,glass stair,imports:32 rev:33,tasks:44 debt:0.00,turn:14 kind:none,0.94,True,replay:812:roofward_archive
+813,55,Nia,archive_signal,v31:Nia:archive_signal:day55,paper lane,imports:31 rev:32,tasks:49 debt:0.00,turn:19 kind:planning_followup,0.94,True,replay:813:archive_signal
+814,55,Milo,signal_orchard,v31:Milo:signal_orchard:day55,river lantern loop,imports:32 rev:33,tasks:47 debt:0.00,turn:14 kind:none,0.94,True,replay:814:signal_orchard
+815,55,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day55,market plank route,imports:33 rev:34,tasks:46 debt:0.02,turn:20 kind:none,0.94,True,replay:815:orchard_riverbend
+816,55,Juno,central_repair_ring,v31:Juno:central_repair_ring:day55,outer bell path,imports:30 rev:31,tasks:48 debt:0.00,turn:12 kind:none,0.94,True,replay:816:central_repair_ring
+817,55,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day55,orchard ridge detour,imports:33 rev:34,tasks:45 debt:0.00,turn:20 kind:none,0.94,True,replay:817:riverbend_roofward
+818,55,Fay,roofward_archive,v31:Fay:roofward_archive:day55,glass stair,imports:32 rev:33,tasks:44 debt:0.00,turn:14 kind:none,0.93,True,replay:818:roofward_archive
+819,55,Nia,archive_signal,v31:Nia:archive_signal:day55,paper lane,imports:32 rev:33,tasks:49 debt:0.00,turn:19 kind:none,0.94,True,replay:819:archive_signal
+820,55,Milo,signal_orchard,v31:Milo:signal_orchard:day55,river lantern loop,imports:32 rev:33,tasks:48 debt:0.00,turn:14 kind:none,0.94,True,replay:820:signal_orchard
+821,55,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day55,market plank route,imports:33 rev:34,tasks:46 debt:0.02,turn:21 kind:planning_followup,0.94,True,replay:821:orchard_riverbend
+822,55,Juno,central_repair_ring,v31:Juno:central_repair_ring:day55,outer bell path,imports:30 rev:31,tasks:48 debt:0.00,turn:12 kind:none,0.94,True,replay:822:central_repair_ring
+823,55,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day55,river ford,imports:33 rev:34,tasks:46 debt:0.00,turn:20 kind:none,0.94,True,replay:823:riverbend_roofward
+824,55,Fay,roofward_archive,v31:Fay:roofward_archive:day55,glass stair,imports:33 rev:34,tasks:44 debt:0.00,turn:14 kind:none,0.94,True,replay:824:roofward_archive
+825,56,Nia,archive_signal,v31:Nia:archive_signal:day56,stone kiosk path,imports:32 rev:33,tasks:49 debt:0.00,turn:19 kind:none,0.94,True,replay:825:archive_signal
+826,56,Milo,signal_orchard,v31:Milo:signal_orchard:day56,river lantern loop,imports:33 rev:34,tasks:48 debt:0.00,turn:14 kind:none,0.94,True,replay:826:signal_orchard
+827,56,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day56,market plank route,imports:33 rev:34,tasks:47 debt:0.01,turn:21 kind:none,0.94,True,replay:827:orchard_riverbend
+828,56,Juno,central_repair_ring,v31:Juno:central_repair_ring:day56,outer bell path,imports:30 rev:31,tasks:48 debt:0.00,turn:13 kind:thanks,0.94,True,replay:828:central_repair_ring
+829,56,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day56,orchard ridge detour,imports:33 rev:34,tasks:47 debt:0.00,turn:20 kind:none,0.94,True,replay:829:riverbend_roofward
+830,56,Fay,roofward_archive,v31:Fay:roofward_archive:day56,cool archive lane,imports:33 rev:34,tasks:45 debt:0.00,turn:14 kind:none,0.94,True,replay:830:roofward_archive
+831,56,Nia,archive_signal,v31:Nia:archive_signal:day56,stone kiosk path,imports:32 rev:33,tasks:49 debt:0.00,turn:19 kind:none,0.93,True,replay:831:archive_signal
+832,56,Milo,signal_orchard,v31:Milo:signal_orchard:day56,river lantern loop,imports:33 rev:34,tasks:48 debt:0.00,turn:14 kind:none,0.94,True,replay:832:signal_orchard
+833,56,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day56,market plank route,imports:34 rev:35,tasks:47 debt:0.01,turn:21 kind:none,0.94,True,replay:833:orchard_riverbend
+834,56,Juno,central_repair_ring,v31:Juno:central_repair_ring:day56,outer bell path,imports:31 rev:32,tasks:48 debt:0.00,turn:13 kind:none,0.94,True,replay:834:central_repair_ring
+835,56,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day56,orchard ridge detour,imports:33 rev:34,tasks:48 debt:0.00,turn:20 kind:none,0.94,True,replay:835:riverbend_roofward
+836,56,Fay,roofward_archive,v31:Fay:roofward_archive:day56,cool archive lane,imports:33 rev:34,tasks:45 debt:0.00,turn:15 kind:planning_followup,0.94,True,replay:836:roofward_archive
+837,56,Nia,archive_signal,v31:Nia:archive_signal:day56,stone kiosk path,imports:32 rev:33,tasks:49 debt:0.00,turn:19 kind:none,0.93,True,replay:837:archive_signal
+838,56,Milo,signal_orchard,v31:Milo:signal_orchard:day56,river lantern loop,imports:33 rev:34,tasks:49 debt:0.00,turn:14 kind:none,0.94,True,replay:838:signal_orchard
+839,56,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day56,market plank route,imports:35 rev:36,tasks:47 debt:0.01,turn:21 kind:none,0.94,True,replay:839:orchard_riverbend
+840,57,Juno,central_repair_ring,v31:Juno:central_repair_ring:day57,outer bell path,imports:32 rev:33,tasks:48 debt:0.00,turn:13 kind:none,0.94,True,replay:840:central_repair_ring
+841,57,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day57,orchard ridge detour,imports:34 rev:35,tasks:48 debt:0.00,turn:20 kind:none,0.94,True,replay:841:riverbend_roofward
+842,57,Fay,roofward_archive,v31:Fay:roofward_archive:day57,cool archive lane,imports:33 rev:34,tasks:46 debt:0.00,turn:15 kind:none,0.94,True,replay:842:roofward_archive
+843,57,Nia,archive_signal,v31:Nia:archive_signal:day57,paper lane,imports:32 rev:33,tasks:49 debt:0.00,turn:20 kind:thanks,0.94,True,replay:843:archive_signal
+844,57,Milo,signal_orchard,v31:Milo:signal_orchard:day57,river lantern loop,imports:33 rev:34,tasks:49 debt:0.00,turn:14 kind:none,0.93,True,replay:844:signal_orchard
+845,57,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day57,market plank route,imports:35 rev:36,tasks:48 debt:0.00,turn:21 kind:none,0.94,True,replay:845:orchard_riverbend
+846,57,Juno,central_repair_ring,v31:Juno:central_repair_ring:day57,outer bell path,imports:32 rev:33,tasks:48 debt:0.00,turn:13 kind:none,0.94,True,replay:846:central_repair_ring
+847,57,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day57,orchard ridge detour,imports:34 rev:35,tasks:48 debt:0.00,turn:20 kind:none,0.93,True,replay:847:riverbend_roofward
+848,57,Fay,roofward_archive,v31:Fay:roofward_archive:day57,glass stair,imports:33 rev:34,tasks:47 debt:0.00,turn:15 kind:none,0.94,True,replay:848:roofward_archive
+849,57,Nia,archive_signal,v31:Nia:archive_signal:day57,paper lane,imports:33 rev:34,tasks:49 debt:0.00,turn:20 kind:none,0.94,True,replay:849:archive_signal
+850,57,Milo,signal_orchard,v31:Milo:signal_orchard:day57,river lantern loop,imports:33 rev:34,tasks:49 debt:0.00,turn:14 kind:none,0.93,True,replay:850:signal_orchard
+851,57,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day57,market plank route,imports:35 rev:36,tasks:48 debt:0.00,turn:22 kind:planning_followup,0.94,True,replay:851:orchard_riverbend
+852,57,Juno,central_repair_ring,v31:Juno:central_repair_ring:day57,inner repair yard,imports:32 rev:33,tasks:48 debt:0.00,turn:13 kind:none,0.94,True,replay:852:central_repair_ring
+853,57,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day57,orchard ridge detour,imports:34 rev:35,tasks:49 debt:0.00,turn:20 kind:none,0.94,True,replay:853:riverbend_roofward
+854,57,Fay,roofward_archive,v31:Fay:roofward_archive:day57,glass stair,imports:34 rev:35,tasks:48 debt:0.00,turn:15 kind:none,0.94,True,replay:854:roofward_archive
+855,58,Nia,archive_signal,v31:Nia:archive_signal:day58,paper lane,imports:33 rev:34,tasks:50 debt:0.00,turn:20 kind:none,0.94,True,replay:855:archive_signal
+856,58,Milo,signal_orchard,v31:Milo:signal_orchard:day58,dusk road,imports:34 rev:35,tasks:49 debt:0.00,turn:14 kind:none,0.94,True,replay:856:signal_orchard
+857,58,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day58,market plank route,imports:35 rev:36,tasks:49 debt:0.00,turn:22 kind:none,0.94,True,replay:857:orchard_riverbend
+858,58,Juno,central_repair_ring,v31:Juno:central_repair_ring:day58,inner repair yard,imports:32 rev:33,tasks:48 debt:0.00,turn:14 kind:thanks,0.94,True,replay:858:central_repair_ring
+859,58,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day58,orchard ridge detour,imports:34 rev:35,tasks:49 debt:0.00,turn:20 kind:none,0.94,True,replay:859:riverbend_roofward
+860,58,Fay,roofward_archive,v31:Fay:roofward_archive:day58,glass stair,imports:34 rev:35,tasks:49 debt:0.00,turn:15 kind:none,0.94,True,replay:860:roofward_archive
+861,58,Nia,archive_signal,v31:Nia:archive_signal:day58,paper lane,imports:33 rev:34,tasks:51 debt:0.00,turn:20 kind:none,0.94,True,replay:861:archive_signal
+862,58,Milo,signal_orchard,v31:Milo:signal_orchard:day58,river lantern loop,imports:34 rev:35,tasks:49 debt:0.00,turn:14 kind:none,0.94,True,replay:862:signal_orchard
+863,58,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day58,fen track,imports:35 rev:36,tasks:49 debt:0.00,turn:22 kind:none,0.93,True,replay:863:orchard_riverbend
+864,58,Juno,central_repair_ring,v31:Juno:central_repair_ring:day58,inner repair yard,imports:33 rev:34,tasks:48 debt:0.00,turn:14 kind:none,0.94,True,replay:864:central_repair_ring
+865,58,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day58,orchard ridge detour,imports:34 rev:35,tasks:50 debt:0.00,turn:20 kind:none,0.94,True,replay:865:riverbend_roofward
+866,58,Fay,roofward_archive,v31:Fay:roofward_archive:day58,glass stair,imports:34 rev:35,tasks:49 debt:0.00,turn:16 kind:planning_followup,0.94,True,replay:866:roofward_archive
+867,58,Nia,archive_signal,v31:Nia:archive_signal:day58,stone kiosk path,imports:33 rev:34,tasks:51 debt:0.00,turn:20 kind:none,0.94,True,replay:867:archive_signal
+868,58,Milo,signal_orchard,v31:Milo:signal_orchard:day58,river lantern loop,imports:34 rev:35,tasks:50 debt:0.00,turn:14 kind:none,0.94,True,replay:868:signal_orchard
+869,58,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day58,fen track,imports:36 rev:37,tasks:49 debt:0.00,turn:22 kind:none,0.94,True,replay:869:orchard_riverbend
+870,59,Juno,central_repair_ring,v31:Juno:central_repair_ring:day59,inner repair yard,imports:33 rev:34,tasks:48 debt:0.00,turn:14 kind:none,0.94,True,replay:870:central_repair_ring
+871,59,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day59,orchard ridge detour,imports:35 rev:36,tasks:50 debt:0.00,turn:20 kind:none,0.94,True,replay:871:riverbend_roofward
+872,59,Fay,roofward_archive,v31:Fay:roofward_archive:day59,glass stair,imports:34 rev:35,tasks:50 debt:0.00,turn:16 kind:none,0.94,True,replay:872:roofward_archive
+873,59,Nia,archive_signal,v31:Nia:archive_signal:day59,stone kiosk path,imports:33 rev:34,tasks:51 debt:0.00,turn:21 kind:thanks,0.94,True,replay:873:archive_signal
+874,59,Milo,signal_orchard,v31:Milo:signal_orchard:day59,river lantern loop,imports:34 rev:35,tasks:51 debt:0.00,turn:14 kind:none,0.94,True,replay:874:signal_orchard
+875,59,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day59,market plank route,imports:37 rev:38,tasks:50 debt:0.00,turn:22 kind:none,0.94,True,replay:875:orchard_riverbend
+876,59,Juno,central_repair_ring,v31:Juno:central_repair_ring:day59,inner repair yard,imports:33 rev:34,tasks:48 debt:0.00,turn:14 kind:none,0.93,True,replay:876:central_repair_ring
+877,59,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day59,orchard ridge detour,imports:35 rev:36,tasks:50 debt:0.00,turn:20 kind:none,0.94,True,replay:877:riverbend_roofward
+878,59,Fay,roofward_archive,v31:Fay:roofward_archive:day59,glass stair,imports:34 rev:35,tasks:50 debt:0.00,turn:16 kind:none,0.94,True,replay:878:roofward_archive
+879,59,Nia,archive_signal,v31:Nia:archive_signal:day59,stone kiosk path,imports:34 rev:35,tasks:51 debt:0.00,turn:21 kind:none,0.94,True,replay:879:archive_signal
+880,59,Milo,signal_orchard,v31:Milo:signal_orchard:day59,river lantern loop,imports:34 rev:35,tasks:52 debt:0.00,turn:14 kind:none,0.94,True,replay:880:signal_orchard
+881,59,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day59,fen track,imports:37 rev:38,tasks:50 debt:0.00,turn:23 kind:planning_followup,0.94,True,replay:881:orchard_riverbend
+882,59,Juno,central_repair_ring,v31:Juno:central_repair_ring:day59,inner repair yard,imports:34 rev:35,tasks:48 debt:0.00,turn:14 kind:none,0.94,True,replay:882:central_repair_ring
+883,59,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day59,orchard ridge detour,imports:35 rev:36,tasks:51 debt:0.00,turn:20 kind:none,0.94,True,replay:883:riverbend_roofward
+884,59,Fay,roofward_archive,v31:Fay:roofward_archive:day59,glass stair,imports:35 rev:36,tasks:50 debt:0.00,turn:16 kind:none,0.94,True,replay:884:roofward_archive
+885,60,Milo,signal_orchard,v31:Milo:signal_orchard:day60,river lantern loop,imports:34 rev:35,tasks:52 debt:0.00,turn:14 kind:none,0.94,True,replay:885:signal_orchard
+886,60,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day60,fen track,imports:38 rev:39,tasks:51 debt:0.00,turn:23 kind:none,0.94,True,replay:886:orchard_riverbend
+887,60,Juno,central_repair_ring,v31:Juno:central_repair_ring:day60,outer bell path,imports:34 rev:35,tasks:49 debt:0.00,turn:14 kind:none,0.94,True,replay:887:central_repair_ring
+888,60,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day60,orchard ridge detour,imports:35 rev:36,tasks:51 debt:0.00,turn:21 kind:planning_followup,0.94,True,replay:888:riverbend_roofward
+889,60,Fay,roofward_archive,v31:Fay:roofward_archive:day60,cool archive lane,imports:36 rev:37,tasks:50 debt:0.00,turn:16 kind:none,0.94,True,replay:889:roofward_archive
+890,60,Nia,archive_signal,v31:Nia:archive_signal:day60,stone kiosk path,imports:34 rev:35,tasks:52 debt:0.00,turn:21 kind:none,0.94,True,replay:890:archive_signal
+891,60,Milo,signal_orchard,v31:Milo:signal_orchard:day60,river lantern loop,imports:34 rev:35,tasks:52 debt:0.00,turn:14 kind:none,0.93,True,replay:891:signal_orchard
+892,60,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day60,fen track,imports:38 rev:39,tasks:52 debt:0.00,turn:23 kind:none,0.94,True,replay:892:orchard_riverbend
+893,60,Juno,central_repair_ring,v31:Juno:central_repair_ring:day60,outer bell path,imports:34 rev:35,tasks:49 debt:0.00,turn:14 kind:none,0.94,True,replay:893:central_repair_ring
+894,60,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day60,orchard ridge detour,imports:36 rev:37,tasks:51 debt:0.00,turn:21 kind:none,0.94,True,replay:894:riverbend_roofward
+895,60,Fay,roofward_archive,v31:Fay:roofward_archive:day60,cool archive lane,imports:36 rev:37,tasks:51 debt:0.00,turn:16 kind:none,0.94,True,replay:895:roofward_archive
+896,60,Nia,archive_signal,v31:Nia:archive_signal:day60,stone kiosk path,imports:34 rev:35,tasks:52 debt:0.00,turn:22 kind:planning_followup,0.94,True,replay:896:archive_signal
+897,60,Milo,signal_orchard,v31:Milo:signal_orchard:day60,river lantern loop,imports:34 rev:35,tasks:52 debt:0.00,turn:14 kind:none,0.93,True,replay:897:signal_orchard
+898,60,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day60,fen track,imports:38 rev:39,tasks:53 debt:0.00,turn:23 kind:none,0.94,True,replay:898:orchard_riverbend
+899,60,Juno,central_repair_ring,v31:Juno:central_repair_ring:day60,outer bell path,imports:34 rev:35,tasks:49 debt:0.00,turn:14 kind:none,0.94,True,replay:899:central_repair_ring
+900,61,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day61,orchard ridge detour,imports:36 rev:37,tasks:51 debt:0.00,turn:21 kind:none,0.94,True,replay:900:riverbend_roofward
+901,61,Fay,roofward_archive,v31:Fay:roofward_archive:day61,cool archive lane,imports:37 rev:38,tasks:51 debt:0.00,turn:16 kind:none,0.94,True,replay:901:roofward_archive
+902,61,Nia,archive_signal,v31:Nia:archive_signal:day61,stone kiosk path,imports:34 rev:35,tasks:53 debt:0.00,turn:22 kind:none,0.94,True,replay:902:archive_signal
+903,61,Milo,signal_orchard,v31:Milo:signal_orchard:day61,river lantern loop,imports:34 rev:35,tasks:52 debt:0.00,turn:15 kind:thanks,0.94,True,replay:903:signal_orchard
+904,61,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day61,market plank route,imports:38 rev:39,tasks:53 debt:0.00,turn:23 kind:none,0.93,True,replay:904:orchard_riverbend
+905,61,Juno,central_repair_ring,v31:Juno:central_repair_ring:day61,outer bell path,imports:34 rev:35,tasks:50 debt:0.00,turn:14 kind:none,0.94,True,replay:905:central_repair_ring
+906,61,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day61,orchard ridge detour,imports:36 rev:37,tasks:51 debt:0.00,turn:21 kind:none,0.94,True,replay:906:riverbend_roofward
+907,61,Fay,roofward_archive,v31:Fay:roofward_archive:day61,cool archive lane,imports:37 rev:38,tasks:51 debt:0.00,turn:16 kind:none,0.93,True,replay:907:roofward_archive
+908,61,Nia,archive_signal,v31:Nia:archive_signal:day61,stone kiosk path,imports:34 rev:35,tasks:53 debt:0.00,turn:22 kind:none,0.93,True,replay:908:archive_signal
+909,61,Milo,signal_orchard,v31:Milo:signal_orchard:day61,river lantern loop,imports:35 rev:36,tasks:52 debt:0.00,turn:15 kind:none,0.94,True,replay:909:signal_orchard
+910,61,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day61,market plank route,imports:38 rev:39,tasks:54 debt:0.00,turn:23 kind:none,0.94,True,replay:910:orchard_riverbend
+911,61,Juno,central_repair_ring,v31:Juno:central_repair_ring:day61,outer bell path,imports:34 rev:35,tasks:51 debt:0.00,turn:15 kind:planning_followup,0.94,True,replay:911:central_repair_ring
+912,61,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day61,orchard ridge detour,imports:36 rev:37,tasks:51 debt:0.00,turn:21 kind:none,0.94,True,replay:912:riverbend_roofward
+913,61,Fay,roofward_archive,v31:Fay:roofward_archive:day61,cool archive lane,imports:37 rev:38,tasks:52 debt:0.00,turn:16 kind:none,0.94,True,replay:913:roofward_archive
+914,61,Nia,archive_signal,v31:Nia:archive_signal:day61,stone kiosk path,imports:35 rev:36,tasks:53 debt:0.00,turn:22 kind:none,0.94,True,replay:914:archive_signal
+915,62,Milo,signal_orchard,v31:Milo:signal_orchard:day62,river lantern loop,imports:35 rev:36,tasks:52 debt:0.00,turn:15 kind:none,0.94,True,replay:915:signal_orchard
+916,62,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day62,market plank route,imports:39 rev:40,tasks:54 debt:0.00,turn:23 kind:none,0.94,True,replay:916:orchard_riverbend
+917,62,Juno,central_repair_ring,v31:Juno:central_repair_ring:day62,outer bell path,imports:34 rev:35,tasks:52 debt:0.00,turn:15 kind:none,0.94,True,replay:917:central_repair_ring
+918,62,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day62,orchard ridge detour,imports:36 rev:37,tasks:51 debt:0.00,turn:22 kind:thanks,0.94,True,replay:918:riverbend_roofward
+919,62,Fay,roofward_archive,v31:Fay:roofward_archive:day62,cool archive lane,imports:37 rev:38,tasks:52 debt:0.00,turn:16 kind:none,0.94,True,replay:919:roofward_archive
+920,62,Nia,archive_signal,v31:Nia:archive_signal:day62,stone kiosk path,imports:35 rev:36,tasks:54 debt:0.00,turn:22 kind:none,0.94,True,replay:920:archive_signal
+921,62,Milo,signal_orchard,v31:Milo:signal_orchard:day62,river lantern loop,imports:35 rev:36,tasks:52 debt:0.00,turn:15 kind:none,0.93,True,replay:921:signal_orchard
+922,62,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day62,market plank route,imports:39 rev:40,tasks:54 debt:0.00,turn:23 kind:none,0.94,True,replay:922:orchard_riverbend
+923,62,Juno,central_repair_ring,v31:Juno:central_repair_ring:day62,inner repair yard,imports:34 rev:35,tasks:52 debt:0.00,turn:15 kind:none,0.93,True,replay:923:central_repair_ring
+924,62,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day62,orchard ridge detour,imports:37 rev:38,tasks:51 debt:0.00,turn:22 kind:none,0.94,True,replay:924:riverbend_roofward
+925,62,Fay,roofward_archive,v31:Fay:roofward_archive:day62,cool archive lane,imports:37 rev:38,tasks:53 debt:0.00,turn:16 kind:none,0.94,True,replay:925:roofward_archive
+926,62,Nia,archive_signal,v31:Nia:archive_signal:day62,stone kiosk path,imports:35 rev:36,tasks:54 debt:0.00,turn:23 kind:planning_followup,0.94,True,replay:926:archive_signal
+927,62,Milo,signal_orchard,v31:Milo:signal_orchard:day62,river lantern loop,imports:35 rev:36,tasks:52 debt:0.00,turn:15 kind:none,0.93,True,replay:927:signal_orchard
+928,62,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day62,market plank route,imports:39 rev:40,tasks:55 debt:0.00,turn:23 kind:none,0.94,True,replay:928:orchard_riverbend
+929,62,Juno,central_repair_ring,v31:Juno:central_repair_ring:day62,inner repair yard,imports:35 rev:36,tasks:52 debt:0.00,turn:15 kind:none,0.94,True,replay:929:central_repair_ring
+930,63,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day63,orchard ridge detour,imports:37 rev:38,tasks:51 debt:0.00,turn:22 kind:none,0.94,True,replay:930:riverbend_roofward
+931,63,Fay,roofward_archive,v31:Fay:roofward_archive:day63,cool archive lane,imports:38 rev:39,tasks:53 debt:0.00,turn:16 kind:none,0.94,True,replay:931:roofward_archive
+932,63,Nia,archive_signal,v31:Nia:archive_signal:day63,stone kiosk path,imports:35 rev:36,tasks:55 debt:0.00,turn:23 kind:none,0.94,True,replay:932:archive_signal
+933,63,Milo,signal_orchard,v31:Milo:signal_orchard:day63,river lantern loop,imports:35 rev:36,tasks:52 debt:0.00,turn:16 kind:thanks,0.94,True,replay:933:signal_orchard
+934,63,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day63,market plank route,imports:39 rev:40,tasks:55 debt:0.00,turn:23 kind:none,0.93,True,replay:934:orchard_riverbend
+935,63,Juno,central_repair_ring,v31:Juno:central_repair_ring:day63,inner repair yard,imports:35 rev:36,tasks:52 debt:0.00,turn:15 kind:none,0.94,True,replay:935:central_repair_ring
+936,63,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day63,orchard ridge detour,imports:37 rev:38,tasks:51 debt:0.00,turn:22 kind:none,0.93,True,replay:936:riverbend_roofward
+937,63,Fay,roofward_archive,v31:Fay:roofward_archive:day63,cool archive lane,imports:38 rev:39,tasks:53 debt:0.00,turn:16 kind:none,0.93,True,replay:937:roofward_archive
+938,63,Nia,archive_signal,v31:Nia:archive_signal:day63,stone kiosk path,imports:36 rev:37,tasks:55 debt:0.00,turn:23 kind:none,0.94,True,replay:938:archive_signal
+939,63,Milo,signal_orchard,v31:Milo:signal_orchard:day63,river lantern loop,imports:36 rev:37,tasks:52 debt:0.00,turn:16 kind:none,0.94,True,replay:939:signal_orchard
+940,63,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day63,market plank route,imports:39 rev:40,tasks:56 debt:0.00,turn:23 kind:none,0.94,True,replay:940:orchard_riverbend
+941,63,Juno,central_repair_ring,v31:Juno:central_repair_ring:day63,inner repair yard,imports:35 rev:36,tasks:52 debt:0.00,turn:16 kind:thanks,0.94,True,replay:941:central_repair_ring
+942,63,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day63,orchard ridge detour,imports:37 rev:38,tasks:51 debt:0.00,turn:22 kind:none,0.93,True,replay:942:riverbend_roofward
+943,63,Fay,roofward_archive,v31:Fay:roofward_archive:day63,cool archive lane,imports:38 rev:39,tasks:54 debt:0.00,turn:16 kind:none,0.94,True,replay:943:roofward_archive
+944,63,Nia,archive_signal,v31:Nia:archive_signal:day63,stone kiosk path,imports:37 rev:38,tasks:55 debt:0.00,turn:23 kind:none,0.94,True,replay:944:archive_signal
+945,64,Milo,signal_orchard,v31:Milo:signal_orchard:day64,river lantern loop,imports:37 rev:38,tasks:52 debt:0.00,turn:16 kind:none,0.94,True,replay:945:signal_orchard
+946,64,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day64,market plank route,imports:40 rev:41,tasks:56 debt:0.00,turn:23 kind:none,0.94,True,replay:946:orchard_riverbend
+947,64,Juno,central_repair_ring,v31:Juno:central_repair_ring:day64,inner repair yard,imports:35 rev:36,tasks:53 debt:0.00,turn:16 kind:none,0.94,True,replay:947:central_repair_ring
+948,64,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day64,orchard ridge detour,imports:37 rev:38,tasks:52 debt:0.02,turn:23 kind:thanks,0.94,True,replay:948:riverbend_roofward
+949,64,Fay,roofward_archive,v31:Fay:roofward_archive:day64,cool archive lane,imports:38 rev:39,tasks:54 debt:0.00,turn:16 kind:none,0.93,True,replay:949:roofward_archive
+950,64,Nia,archive_signal,v31:Nia:archive_signal:day64,stone kiosk path,imports:37 rev:38,tasks:56 debt:0.00,turn:23 kind:none,0.94,True,replay:950:archive_signal
+951,64,Milo,signal_orchard,v31:Milo:signal_orchard:day64,river lantern loop,imports:37 rev:38,tasks:52 debt:0.00,turn:16 kind:none,0.94,True,replay:951:signal_orchard
+952,64,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day64,market plank route,imports:40 rev:41,tasks:56 debt:0.00,turn:23 kind:none,0.93,True,replay:952:orchard_riverbend
+953,64,Juno,central_repair_ring,v31:Juno:central_repair_ring:day64,inner repair yard,imports:35 rev:36,tasks:53 debt:0.00,turn:16 kind:none,0.93,True,replay:953:central_repair_ring
+954,64,Ari,riverbend_roofward,v31:Ari:riverbend_roofward:day64,orchard ridge detour,imports:38 rev:39,tasks:53 debt:0.04,turn:23 kind:none,0.94,True,replay:954:riverbend_roofward
+955,64,Fay,roofward_archive,v31:Fay:roofward_archive:day64,cool archive lane,imports:38 rev:39,tasks:55 debt:0.00,turn:16 kind:none,0.94,True,replay:955:roofward_archive
+956,64,Nia,archive_signal,v31:Nia:archive_signal:day64,stone kiosk path,imports:37 rev:38,tasks:56 debt:0.00,turn:24 kind:planning_followup,0.94,True,replay:956:archive_signal
+957,64,Milo,signal_orchard,v31:Milo:signal_orchard:day64,dusk road,imports:37 rev:38,tasks:52 debt:0.00,turn:16 kind:none,0.94,True,replay:957:signal_orchard
+958,64,Ivo,orchard_riverbend,v31:Ivo:orchard_riverbend:day64,market plank route,imports:40 rev:41,tasks:57 debt:0.00,turn:23 kind:none,0.94,True,replay:958:orchard_riverbend
+959,64,Juno,central_repair_ring,v31:Juno:central_repair_ring:day64,inner repair yard,imports:36 rev:37,tasks:53 debt:0.00,turn:16 kind:none,0.94,True,replay:959:central_repair_ring

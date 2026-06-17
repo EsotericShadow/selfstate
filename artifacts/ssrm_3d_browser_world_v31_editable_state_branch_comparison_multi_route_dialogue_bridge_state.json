@@ -1,0 +1,140 @@
+{
+  "avatar_task_count": {
+    "archive_signal": 56,
+    "central_repair_ring": 53,
+    "orchard_riverbend": 57,
+    "riverbend_roofward": 53,
+    "roofward_archive": 55,
+    "signal_orchard": 52
+  },
+  "boundary": "deterministic browser-local editable-state/branch-comparison/multi-route-dialogue scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "days": 64,
+  "dialogue_turn": {
+    "archive_signal": 24,
+    "central_repair_ring": 16,
+    "orchard_riverbend": 23,
+    "riverbend_roofward": 23,
+    "roofward_archive": 16,
+    "signal_orchard": 16
+  },
+  "forecast_revision": {
+    "archive_signal": 38,
+    "central_repair_ring": 37,
+    "orchard_riverbend": 41,
+    "riverbend_roofward": 39,
+    "roofward_archive": 39,
+    "signal_orchard": 38
+  },
+  "imported_ok_count": {
+    "archive_signal": 37,
+    "central_repair_ring": 36,
+    "orchard_riverbend": 40,
+    "riverbend_roofward": 38,
+    "roofward_archive": 38,
+    "signal_orchard": 37
+  },
+  "recovery": {
+    "archive_signal": 0.93985,
+    "central_repair_ring": 0.94,
+    "orchard_riverbend": 0.94,
+    "riverbend_roofward": 0.94,
+    "roofward_archive": 0.94,
+    "signal_orchard": 0.94
+  },
+  "route_choice": {
+    "archive_signal": "stone kiosk path",
+    "central_repair_ring": "inner repair yard",
+    "orchard_riverbend": "market plank route",
+    "riverbend_roofward": "orchard ridge detour",
+    "roofward_archive": "cool archive lane",
+    "signal_orchard": "dusk road"
+  },
+  "routes": [
+    {
+      "cargo": "planks",
+      "destination": "roofward",
+      "detour_choice": "orchard ridge detour",
+      "dialogue_style": "guarded practical",
+      "direct_choice": "river ford",
+      "guild": "Bridgewright Guild",
+      "route_id": "riverbend_roofward",
+      "source": "riverbend",
+      "steward": "Ari"
+    },
+    {
+      "cargo": "herbs",
+      "destination": "archive_quarter",
+      "detour_choice": "cool archive lane",
+      "dialogue_style": "gentle boundary",
+      "direct_choice": "glass stair",
+      "guild": "Glassgarden Guild",
+      "route_id": "roofward_archive",
+      "source": "roofward",
+      "steward": "Fay"
+    },
+    {
+      "cargo": "paper",
+      "destination": "signal_ridge",
+      "detour_choice": "stone kiosk path",
+      "dialogue_style": "precise public record",
+      "direct_choice": "paper lane",
+      "guild": "Index Guild",
+      "route_id": "archive_signal",
+      "source": "archive_quarter",
+      "steward": "Nia"
+    },
+    {
+      "cargo": "oil",
+      "destination": "orchard_fen",
+      "detour_choice": "river lantern loop",
+      "dialogue_style": "short cautious",
+      "direct_choice": "dusk road",
+      "guild": "Signal Guild",
+      "route_id": "signal_orchard",
+      "source": "signal_ridge",
+      "steward": "Milo"
+    },
+    {
+      "cargo": "seeds",
+      "destination": "riverbend",
+      "detour_choice": "market plank route",
+      "dialogue_style": "seasonal practical",
+      "direct_choice": "fen track",
+      "guild": "Seed Guild",
+      "route_id": "orchard_riverbend",
+      "source": "orchard_fen",
+      "steward": "Ivo"
+    },
+    {
+      "cargo": "wire",
+      "destination": "repair_hall",
+      "detour_choice": "outer bell path",
+      "dialogue_style": "direct repair",
+      "direct_choice": "inner repair yard",
+      "guild": "Repair Circle",
+      "route_id": "central_repair_ring",
+      "source": "central_exchange",
+      "steward": "Juno"
+    }
+  ],
+  "seed": 20260884,
+  "simultaneous_debt": {
+    "archive_signal": 0.0,
+    "central_repair_ring": 0.0,
+    "orchard_riverbend": 0.0,
+    "riverbend_roofward": 0.036,
+    "roofward_archive": 0.0,
+    "signal_orchard": 0.0
+  },
+  "source_v30_next_gate": "browser world v31 with actual editable localStorage state import/export, route-control branch comparison, multi-route simultaneous caravan tasks, and later agent dialogue about avatar route decisions",
+  "source_v30_verdict": "pass",
+  "state_version": {
+    "archive_signal": 82,
+    "central_repair_ring": 95,
+    "orchard_riverbend": 86,
+    "riverbend_roofward": 81,
+    "roofward_archive": 96,
+    "signal_orchard": 96
+  },
+  "ticks_per_day": 15
+}

@@ -1,0 +1,961 @@
+tick_id,day,route_id,replay_event,state_hash,includes_editable_state,includes_import_export,includes_branch_comparison,includes_simultaneous_task,includes_agent_dialogue,includes_reload_persistence,replay_exportable
+0,1,riverbend_roofward,riverbend_roofward:river ford:v1:task0:turn0,v31-442921,True,True,True,False,False,True,True
+1,1,roofward_archive,roofward_archive:glass stair:v3:task1:turn0,v31-431894,True,True,True,True,False,False,True
+2,1,archive_signal,archive_signal:paper lane:v1:task1:turn0,v31-386750,True,False,True,True,False,False,True
+3,1,signal_orchard,signal_orchard:dusk road:v1:task0:turn0,v31-376075,True,False,True,False,False,False,True
+4,1,orchard_riverbend,orchard_riverbend:fen track:v2:task0:turn0,v31-414483,True,False,True,False,False,False,True
+5,1,central_repair_ring,central_repair_ring:inner repair yard:v1:task1:turn0,v31-542474,True,False,True,True,False,False,True
+6,1,riverbend_roofward,riverbend_roofward:river ford:v1:task0:turn0,v31-443412,True,False,True,False,False,False,True
+7,1,roofward_archive,roofward_archive:cool archive lane:v5:task2:turn0,v31-497559,True,True,True,True,False,False,True
+8,1,archive_signal,archive_signal:stone kiosk path:v2:task1:turn0,v31-461668,True,False,True,False,False,False,True
+9,1,signal_orchard,signal_orchard:dusk road:v2:task0:turn0,v31-376657,True,True,True,False,False,False,True
+10,1,orchard_riverbend,orchard_riverbend:fen track:v2:task1:turn0,v31-421990,True,False,True,True,False,False,True
+11,1,central_repair_ring,central_repair_ring:inner repair yard:v1:task1:turn0,v31-549492,True,False,True,False,False,False,True
+12,1,riverbend_roofward,riverbend_roofward:orchard ridge detour:v2:task0:turn0,v31-579831,True,False,True,False,False,False,True
+13,1,roofward_archive,roofward_archive:cool archive lane:v6:task3:turn0,v31-507815,True,False,True,True,False,False,True
+14,1,archive_signal,archive_signal:stone kiosk path:v3:task1:turn0,v31-470418,True,True,True,False,False,True,True
+15,2,signal_orchard,signal_orchard:river lantern loop:v3:task0:turn0,v31-499398,True,False,True,False,False,True,True
+16,2,orchard_riverbend,orchard_riverbend:fen track:v3:task1:turn0,v31-414722,True,True,True,False,False,False,True
+17,2,central_repair_ring,central_repair_ring:inner repair yard:v1:task1:turn0,v31-550001,True,False,True,True,False,False,True
+18,2,riverbend_roofward,riverbend_roofward:orchard ridge detour:v2:task0:turn0,v31-580058,True,False,True,False,False,False,True
+19,2,roofward_archive,roofward_archive:cool archive lane:v6:task3:turn0,v31-509107,True,False,True,False,False,False,True
+20,2,archive_signal,archive_signal:paper lane:v4:task2:turn0,v31-394199,True,False,True,True,False,False,True
+21,2,signal_orchard,signal_orchard:river lantern loop:v3:task0:turn0,v31-498898,True,False,True,False,False,False,True
+22,2,orchard_riverbend,orchard_riverbend:fen track:v3:task1:turn0,v31-421064,True,False,True,False,False,False,True
+23,2,central_repair_ring,central_repair_ring:outer bell path:v2:task1:turn0,v31-522222,True,False,True,False,False,False,True
+24,2,riverbend_roofward,riverbend_roofward:orchard ridge detour:v3:task0:turn0,v31-578390,True,True,True,False,False,False,True
+25,2,roofward_archive,roofward_archive:cool archive lane:v6:task4:turn0,v31-507524,True,False,True,True,False,False,True
+26,2,archive_signal,archive_signal:paper lane:v5:task3:turn0,v31-395415,True,False,True,True,False,False,True
+27,2,signal_orchard,signal_orchard:river lantern loop:v4:task0:turn0,v31-499220,True,False,True,False,False,False,True
+28,2,orchard_riverbend,orchard_riverbend:fen track:v3:task2:turn0,v31-422331,True,False,True,True,False,False,True
+29,2,central_repair_ring,central_repair_ring:outer bell path:v3:task1:turn0,v31-522697,True,True,True,False,False,True,True
+30,3,riverbend_roofward,riverbend_roofward:orchard ridge detour:v4:task0:turn0,v31-572655,True,False,True,False,False,True,True
+31,3,roofward_archive,roofward_archive:cool archive lane:v6:task4:turn0,v31-507788,True,True,True,False,False,False,True
+32,3,archive_signal,archive_signal:paper lane:v5:task4:turn0,v31-396757,True,False,True,True,False,False,True
+33,3,signal_orchard,signal_orchard:river lantern loop:v5:task1:turn0,v31-492028,True,False,True,True,False,False,True
+34,3,orchard_riverbend,orchard_riverbend:fen track:v4:task2:turn0,v31-422054,True,False,True,False,False,False,True
+35,3,central_repair_ring,central_repair_ring:outer bell path:v3:task2:turn0,v31-525885,True,False,True,True,False,False,True
+36,3,riverbend_roofward,riverbend_roofward:orchard ridge detour:v4:task0:turn0,v31-581352,True,False,True,False,False,False,True
+37,3,roofward_archive,roofward_archive:cool archive lane:v6:task4:turn0,v31-507898,True,False,True,False,False,False,True
+38,3,archive_signal,archive_signal:paper lane:v5:task4:turn0,v31-395788,True,False,True,False,False,False,True
+39,3,signal_orchard,signal_orchard:river lantern loop:v7:task2:turn0,v31-498445,True,True,True,True,False,False,True
+40,3,orchard_riverbend,orchard_riverbend:fen track:v4:task3:turn0,v31-422028,True,False,True,True,False,False,True
+41,3,central_repair_ring,central_repair_ring:outer bell path:v3:task2:turn0,v31-524038,True,False,True,False,False,False,True
+42,3,riverbend_roofward,riverbend_roofward:orchard ridge detour:v6:task0:turn0,v31-579110,True,True,True,False,False,False,True
+43,3,roofward_archive,roofward_archive:cool archive lane:v6:task5:turn0,v31-480343,True,False,True,True,False,False,True
+44,3,archive_signal,archive_signal:paper lane:v6:task4:turn0,v31-397093,True,True,True,False,False,True,True
+45,4,signal_orchard,signal_orchard:river lantern loop:v8:task2:turn0,v31-499872,True,False,True,False,False,True,True
+46,4,orchard_riverbend,orchard_riverbend:market plank route:v6:task4:turn0,v31-539679,True,True,True,True,False,False,True
+47,4,central_repair_ring,central_repair_ring:outer bell path:v3:task3:turn0,v31-524519,True,False,True,True,False,False,True
+48,4,riverbend_roofward,riverbend_roofward:orchard ridge detour:v6:task0:turn0,v31-580429,True,False,True,False,False,False,True
+49,4,roofward_archive,roofward_archive:cool archive lane:v8:task5:turn0,v31-481176,True,True,True,False,False,False,True
+50,4,archive_signal,archive_signal:paper lane:v6:task5:turn0,v31-396701,True,False,True,True,False,False,True
+51,4,signal_orchard,signal_orchard:river lantern loop:v8:task2:turn0,v31-499211,True,False,True,False,False,False,True
+52,4,orchard_riverbend,orchard_riverbend:market plank route:v7:task5:turn0,v31-540061,True,False,True,True,False,False,True
+53,4,central_repair_ring,central_repair_ring:outer bell path:v4:task3:turn0,v31-522908,True,False,True,False,False,False,True
+54,4,riverbend_roofward,riverbend_roofward:orchard ridge detour:v7:task0:turn0,v31-581087,True,True,True,False,False,False,True
+55,4,roofward_archive,roofward_archive:cool archive lane:v8:task6:turn0,v31-481048,True,False,True,True,False,False,True
+56,4,archive_signal,archive_signal:paper lane:v6:task5:turn0,v31-397340,True,False,True,False,False,False,True
+57,4,signal_orchard,signal_orchard:river lantern loop:v8:task2:turn0,v31-485425,True,False,True,False,False,False,True
+58,4,orchard_riverbend,orchard_riverbend:market plank route:v8:task6:turn0,v31-540792,True,False,True,True,False,True,True
+59,4,central_repair_ring,central_repair_ring:outer bell path:v5:task3:turn0,v31-525233,True,True,True,False,False,True,True
+60,5,roofward_archive,roofward_archive:glass stair:v9:task6:turn0,v31-413581,True,False,True,False,False,True,True
+61,5,archive_signal,archive_signal:paper lane:v7:task5:turn0,v31-390958,True,True,True,False,False,False,True
+62,5,signal_orchard,signal_orchard:river lantern loop:v8:task3:turn0,v31-472418,True,False,True,True,False,False,True
+63,5,orchard_riverbend,orchard_riverbend:market plank route:v8:task6:turn0,v31-540991,True,False,True,False,False,False,True
+64,5,central_repair_ring,central_repair_ring:inner repair yard:v6:task4:turn0,v31-552009,True,False,True,True,False,False,True
+65,5,riverbend_roofward,riverbend_roofward:orchard ridge detour:v7:task1:turn0,v31-552513,True,False,True,True,False,False,True
+66,5,roofward_archive,roofward_archive:glass stair:v9:task6:turn0,v31-440905,True,False,True,False,False,False,True
+67,5,archive_signal,archive_signal:paper lane:v7:task5:turn0,v31-397218,True,False,True,False,False,False,True
+68,5,signal_orchard,signal_orchard:river lantern loop:v9:task3:turn0,v31-500381,True,False,True,False,False,False,True
+69,5,orchard_riverbend,orchard_riverbend:market plank route:v9:task6:turn0,v31-513208,True,True,True,False,False,False,True
+70,5,central_repair_ring,central_repair_ring:outer bell path:v8:task5:turn0,v31-496779,True,True,True,True,False,False,True
+71,5,riverbend_roofward,riverbend_roofward:orchard ridge detour:v7:task1:turn0,v31-579620,True,False,True,False,False,False,True
+72,5,roofward_archive,roofward_archive:glass stair:v10:task6:turn0,v31-446954,True,False,True,False,False,False,True
+73,5,archive_signal,archive_signal:paper lane:v7:task6:turn0,v31-396963,True,False,True,True,False,False,True
+74,5,signal_orchard,signal_orchard:river lantern loop:v10:task3:turn0,v31-479596,True,True,True,False,False,True,True
+75,6,orchard_riverbend,orchard_riverbend:market plank route:v10:task6:turn0,v31-519769,True,False,True,False,False,True,True
+76,6,central_repair_ring,central_repair_ring:outer bell path:v9:task5:turn0,v31-497513,True,True,True,False,False,False,True
+77,6,riverbend_roofward,riverbend_roofward:orchard ridge detour:v7:task2:turn0,v31-552894,True,False,True,True,False,False,True
+78,6,roofward_archive,roofward_archive:glass stair:v10:task6:turn1,v31-446056,True,False,True,False,True,False,True
+79,6,archive_signal,archive_signal:stone kiosk path:v8:task6:turn0,v31-473081,True,False,True,False,False,False,True
+80,6,signal_orchard,signal_orchard:river lantern loop:v10:task4:turn0,v31-479468,True,False,True,True,False,False,True
+81,6,orchard_riverbend,orchard_riverbend:market plank route:v10:task6:turn0,v31-547706,True,False,True,False,False,False,True
+82,6,central_repair_ring,central_repair_ring:outer bell path:v9:task5:turn0,v31-525567,True,False,True,False,False,False,True
+83,6,riverbend_roofward,riverbend_roofward:river ford:v8:task2:turn0,v31-454047,True,False,True,False,False,False,True
+84,6,roofward_archive,roofward_archive:glass stair:v11:task6:turn1,v31-447937,True,True,True,False,False,False,True
+85,6,archive_signal,archive_signal:stone kiosk path:v8:task6:turn0,v31-472828,True,False,True,True,False,False,True
+86,6,signal_orchard,signal_orchard:river lantern loop:v10:task4:turn1,v31-479972,True,False,True,False,True,False,True
+87,6,orchard_riverbend,orchard_riverbend:market plank route:v11:task6:turn0,v31-520125,True,False,True,False,False,True,True
+88,6,central_repair_ring,central_repair_ring:outer bell path:v9:task6:turn0,v31-497890,True,False,True,True,False,False,True
+89,6,riverbend_roofward,riverbend_roofward:river ford:v9:task2:turn0,v31-427992,True,True,True,False,False,True,True
+90,7,roofward_archive,roofward_archive:glass stair:v12:task6:turn1,v31-420246,True,False,True,False,False,True,True
+91,7,archive_signal,archive_signal:stone kiosk path:v9:task6:turn0,v31-445340,True,True,True,False,False,False,True
+92,7,signal_orchard,signal_orchard:river lantern loop:v10:task5:turn1,v31-479844,True,False,True,True,False,False,True
+93,7,orchard_riverbend,orchard_riverbend:market plank route:v11:task6:turn1,v31-519872,True,False,True,False,True,False,True
+94,7,central_repair_ring,central_repair_ring:outer bell path:v10:task6:turn0,v31-532180,True,False,True,False,False,False,True
+95,7,riverbend_roofward,riverbend_roofward:river ford:v9:task3:turn0,v31-427859,True,False,True,True,False,False,True
+96,7,roofward_archive,roofward_archive:glass stair:v12:task6:turn1,v31-447529,True,False,True,False,False,False,True
+97,7,archive_signal,archive_signal:stone kiosk path:v9:task6:turn0,v31-472786,True,False,True,False,False,False,True
+98,7,signal_orchard,signal_orchard:river lantern loop:v12:task5:turn1,v31-480675,True,True,True,False,False,False,True
+99,7,orchard_riverbend,orchard_riverbend:market plank route:v12:task6:turn1,v31-520607,True,True,True,False,False,False,True
+100,7,central_repair_ring,central_repair_ring:outer bell path:v10:task7:turn0,v31-512034,True,False,True,True,False,False,True
+101,7,riverbend_roofward,riverbend_roofward:river ford:v9:task3:turn1,v31-434983,True,False,True,False,True,False,True
+102,7,roofward_archive,roofward_archive:glass stair:v13:task6:turn1,v31-454897,True,False,True,False,False,False,True
+103,7,archive_signal,archive_signal:stone kiosk path:v9:task7:turn0,v31-453223,True,False,True,True,False,False,True
+104,7,signal_orchard,signal_orchard:river lantern loop:v13:task5:turn1,v31-488424,True,True,True,False,False,True,True
+105,8,orchard_riverbend,orchard_riverbend:market plank route:v14:task6:turn1,v31-528780,True,True,True,False,False,True,True
+106,8,central_repair_ring,central_repair_ring:outer bell path:v11:task7:turn0,v31-512778,True,True,True,False,False,False,True
+107,8,riverbend_roofward,riverbend_roofward:river ford:v9:task4:turn1,v31-435614,True,False,True,True,False,False,True
+108,8,roofward_archive,roofward_archive:glass stair:v13:task6:turn2,v31-428418,True,False,True,False,True,False,True
+109,8,archive_signal,archive_signal:stone kiosk path:v10:task7:turn0,v31-487875,True,False,True,False,False,False,True
+110,8,signal_orchard,signal_orchard:river lantern loop:v13:task6:turn1,v31-488294,True,False,True,True,False,False,True
+111,8,orchard_riverbend,orchard_riverbend:market plank route:v14:task6:turn1,v31-557464,True,False,True,False,False,False,True
+112,8,central_repair_ring,central_repair_ring:outer bell path:v11:task7:turn0,v31-540978,True,False,True,False,False,False,True
+113,8,riverbend_roofward,riverbend_roofward:river ford:v10:task5:turn1,v31-441583,True,False,True,True,False,False,True
+114,8,roofward_archive,roofward_archive:glass stair:v14:task6:turn2,v31-428386,True,True,True,False,False,False,True
+115,8,archive_signal,archive_signal:stone kiosk path:v10:task8:turn0,v31-460127,True,False,True,True,False,False,True
+116,8,signal_orchard,signal_orchard:river lantern loop:v13:task6:turn2,v31-488804,True,False,True,False,True,True,True
+117,8,orchard_riverbend,orchard_riverbend:market plank route:v15:task6:turn1,v31-558080,True,False,True,False,False,False,True
+118,8,central_repair_ring,central_repair_ring:outer bell path:v11:task8:turn0,v31-513160,True,False,True,True,False,False,True
+119,8,riverbend_roofward,riverbend_roofward:river ford:v11:task5:turn1,v31-442320,True,True,True,True,False,True,True
+120,9,roofward_archive,roofward_archive:glass stair:v15:task7:turn2,v31-428356,True,False,True,True,False,True,True
+121,9,archive_signal,archive_signal:stone kiosk path:v11:task8:turn0,v31-460096,True,True,True,False,False,False,True
+122,9,signal_orchard,signal_orchard:river lantern loop:v13:task7:turn2,v31-488674,True,False,True,True,False,False,True
+123,9,orchard_riverbend,orchard_riverbend:market plank route:v15:task6:turn2,v31-528884,True,False,True,False,True,False,True
+124,9,central_repair_ring,central_repair_ring:outer bell path:v12:task8:turn0,v31-527405,True,False,True,False,False,False,True
+125,9,riverbend_roofward,riverbend_roofward:river ford:v11:task6:turn1,v31-442186,True,False,True,True,False,False,True
+126,9,roofward_archive,roofward_archive:glass stair:v15:task8:turn2,v31-428987,True,False,True,True,False,False,True
+127,9,archive_signal,archive_signal:stone kiosk path:v11:task8:turn0,v31-474571,True,False,True,False,False,False,True
+128,9,signal_orchard,signal_orchard:river lantern loop:v14:task7:turn2,v31-517323,True,False,True,False,False,False,True
+129,9,orchard_riverbend,orchard_riverbend:market plank route:v16:task6:turn2,v31-529627,True,True,True,False,False,False,True
+130,9,central_repair_ring,central_repair_ring:outer bell path:v12:task9:turn0,v31-512884,True,False,True,True,False,False,True
+131,9,riverbend_roofward,riverbend_roofward:river ford:v11:task6:turn2,v31-441930,True,False,True,False,True,False,True
+132,9,roofward_archive,roofward_archive:glass stair:v16:task9:turn2,v31-428957,True,False,True,True,False,False,True
+133,9,archive_signal,archive_signal:stone kiosk path:v11:task9:turn0,v31-460474,True,False,True,True,False,False,True
+134,9,signal_orchard,signal_orchard:river lantern loop:v15:task7:turn2,v31-489258,True,True,True,False,False,True,True
+135,10,central_repair_ring,central_repair_ring:outer bell path:v13:task9:turn0,v31-513417,True,False,True,False,False,True,True
+136,10,riverbend_roofward,riverbend_roofward:river ford:v12:task6:turn2,v31-442582,True,True,True,False,False,False,True
+137,10,roofward_archive,roofward_archive:glass stair:v16:task10:turn2,v31-434597,True,False,True,True,False,False,True
+138,10,archive_signal,archive_signal:stone kiosk path:v11:task10:turn1,v31-466234,True,False,True,True,True,False,True
+139,10,signal_orchard,signal_orchard:dusk road:v16:task7:turn2,v31-400830,True,False,True,False,False,False,True
+140,10,orchard_riverbend,orchard_riverbend:market plank route:v16:task7:turn2,v31-529159,True,False,True,True,False,False,True
+141,10,central_repair_ring,central_repair_ring:outer bell path:v13:task9:turn0,v31-534899,True,False,True,False,False,False,True
+142,10,riverbend_roofward,riverbend_roofward:river ford:v12:task6:turn2,v31-470306,True,False,True,False,False,False,True
+143,10,roofward_archive,roofward_archive:glass stair:v17:task10:turn2,v31-462030,True,False,True,False,False,False,True
+144,10,archive_signal,archive_signal:stone kiosk path:v12:task11:turn1,v31-466328,True,True,True,True,False,False,True
+145,10,signal_orchard,signal_orchard:dusk road:v16:task8:turn2,v31-374920,True,False,True,True,False,True,True
+146,10,orchard_riverbend,orchard_riverbend:market plank route:v16:task7:turn3,v31-529669,True,False,True,False,True,False,True
+147,10,central_repair_ring,central_repair_ring:outer bell path:v15:task9:turn0,v31-514013,True,True,True,False,False,False,True
+148,10,riverbend_roofward,riverbend_roofward:river ford:v12:task7:turn2,v31-442958,True,False,True,True,False,False,True
+149,10,roofward_archive,roofward_archive:glass stair:v18:task10:turn2,v31-435180,True,True,True,False,False,True,True
+150,11,archive_signal,archive_signal:paper lane:v13:task11:turn1,v31-390685,True,False,True,False,False,True,True
+151,11,signal_orchard,signal_orchard:dusk road:v17:task9:turn2,v31-374999,True,True,True,True,False,False,True
+152,11,orchard_riverbend,orchard_riverbend:market plank route:v16:task8:turn3,v31-529542,True,False,True,True,False,False,True
+153,11,central_repair_ring,central_repair_ring:outer bell path:v15:task9:turn1,v31-513757,True,False,True,False,True,False,True
+154,11,riverbend_roofward,riverbend_roofward:orchard ridge detour:v14:task7:turn2,v31-570555,True,True,True,False,False,False,True
+155,11,roofward_archive,roofward_archive:glass stair:v18:task11:turn2,v31-435046,True,False,True,True,False,False,True
+156,11,archive_signal,archive_signal:paper lane:v13:task11:turn1,v31-418774,True,False,True,False,False,False,True
+157,11,signal_orchard,signal_orchard:dusk road:v17:task10:turn2,v31-380564,True,False,True,True,False,False,True
+158,11,orchard_riverbend,orchard_riverbend:market plank route:v17:task8:turn3,v31-551786,True,False,True,False,False,False,True
+159,11,central_repair_ring,central_repair_ring:outer bell path:v16:task9:turn1,v31-514501,True,True,True,False,False,False,True
+160,11,riverbend_roofward,riverbend_roofward:orchard ridge detour:v15:task8:turn2,v31-570538,True,False,True,True,False,False,True
+161,11,roofward_archive,roofward_archive:glass stair:v18:task11:turn3,v31-462625,True,False,True,False,True,False,True
+162,11,archive_signal,archive_signal:paper lane:v14:task11:turn1,v31-418621,True,False,True,False,False,False,True
+163,11,signal_orchard,signal_orchard:dusk road:v17:task11:turn2,v31-380426,True,False,True,True,False,False,True
+164,11,orchard_riverbend,orchard_riverbend:market plank route:v18:task8:turn3,v31-530135,True,True,True,False,False,True,True
+165,12,central_repair_ring,central_repair_ring:outer bell path:v17:task9:turn1,v31-536626,True,False,True,False,False,True,True
+166,12,riverbend_roofward,riverbend_roofward:orchard ridge detour:v16:task8:turn2,v31-571285,True,True,True,False,False,False,True
+167,12,roofward_archive,roofward_archive:glass stair:v19:task12:turn3,v31-435527,True,False,True,True,False,False,True
+168,12,archive_signal,archive_signal:paper lane:v14:task11:turn2,v31-418758,True,False,True,False,True,False,True
+169,12,signal_orchard,signal_orchard:dusk road:v18:task11:turn2,v31-400290,True,False,True,False,False,False,True
+170,12,orchard_riverbend,orchard_riverbend:market plank route:v18:task8:turn3,v31-551778,True,False,True,True,False,False,True
+171,12,central_repair_ring,central_repair_ring:outer bell path:v17:task9:turn1,v31-535566,True,False,True,False,False,False,True
+172,12,riverbend_roofward,riverbend_roofward:orchard ridge detour:v16:task8:turn2,v31-592436,True,False,True,False,False,False,True
+173,12,roofward_archive,roofward_archive:glass stair:v20:task12:turn3,v31-455463,True,False,True,False,False,False,True
+174,12,archive_signal,archive_signal:paper lane:v15:task11:turn2,v31-391515,True,True,True,False,False,True,True
+175,12,signal_orchard,signal_orchard:dusk road:v18:task12:turn2,v31-380901,True,False,True,True,False,False,True
+176,12,orchard_riverbend,orchard_riverbend:market plank route:v18:task9:turn4,v31-530518,True,False,True,True,True,False,True
+177,12,central_repair_ring,central_repair_ring:outer bell path:v18:task9:turn1,v31-536184,True,False,True,False,False,False,True
+178,12,riverbend_roofward,riverbend_roofward:orchard ridge detour:v16:task9:turn2,v31-571671,True,False,True,True,False,False,True
+179,12,roofward_archive,roofward_archive:glass stair:v22:task12:turn3,v31-435269,True,True,True,False,False,True,True
+180,13,archive_signal,archive_signal:paper lane:v16:task11:turn2,v31-391362,True,False,True,False,False,True,True
+181,13,signal_orchard,signal_orchard:dusk road:v19:task12:turn2,v31-380863,True,True,True,False,False,False,True
+182,13,orchard_riverbend,orchard_riverbend:market plank route:v18:task10:turn4,v31-535797,True,False,True,True,False,False,True
+183,13,central_repair_ring,central_repair_ring:outer bell path:v18:task10:turn2,v31-519954,True,False,True,True,True,False,True
+184,13,riverbend_roofward,riverbend_roofward:orchard ridge detour:v17:task9:turn2,v31-593627,True,False,True,False,False,False,True
+185,13,roofward_archive,roofward_archive:glass stair:v22:task13:turn3,v31-435135,True,False,True,True,False,False,True
+186,13,archive_signal,archive_signal:paper lane:v17:task11:turn2,v31-419303,True,False,True,False,False,False,True
+187,13,signal_orchard,signal_orchard:dusk road:v19:task12:turn2,v31-401252,True,False,True,False,False,False,True
+188,13,orchard_riverbend,orchard_riverbend:market plank route:v19:task10:turn4,v31-557512,True,False,True,False,False,False,True
+189,13,central_repair_ring,central_repair_ring:outer bell path:v19:task11:turn2,v31-520827,True,True,True,True,False,False,True
+190,13,riverbend_roofward,riverbend_roofward:orchard ridge detour:v17:task10:turn2,v31-576921,True,False,True,True,False,False,True
+191,13,roofward_archive,roofward_archive:glass stair:v22:task13:turn4,v31-434879,True,False,True,False,True,False,True
+192,13,archive_signal,archive_signal:paper lane:v18:task11:turn2,v31-418525,True,False,True,False,False,False,True
+193,13,signal_orchard,signal_orchard:dusk road:v19:task13:turn2,v31-381235,True,False,True,True,False,False,True
+194,13,orchard_riverbend,orchard_riverbend:market plank route:v20:task10:turn4,v31-535435,True,True,True,False,False,True,True
+195,14,central_repair_ring,central_repair_ring:outer bell path:v20:task11:turn2,v31-519706,True,False,True,False,False,True,True
+196,14,riverbend_roofward,riverbend_roofward:orchard ridge detour:v18:task10:turn2,v31-583334,True,True,True,False,False,False,True
+197,14,roofward_archive,roofward_archive:glass stair:v22:task14:turn4,v31-435511,True,False,True,True,False,False,True
+198,14,archive_signal,archive_signal:paper lane:v18:task11:turn3,v31-392332,True,False,True,False,True,False,True
+199,14,signal_orchard,signal_orchard:dusk road:v20:task13:turn2,v31-401048,True,False,True,False,False,False,True
+200,14,orchard_riverbend,orchard_riverbend:market plank route:v20:task11:turn4,v31-534552,True,False,True,True,False,False,True
+201,14,central_repair_ring,central_repair_ring:outer bell path:v20:task11:turn2,v31-539638,True,False,True,False,False,False,True
+202,14,riverbend_roofward,riverbend_roofward:orchard ridge detour:v18:task10:turn2,v31-605025,True,False,True,False,False,False,True
+203,14,roofward_archive,roofward_archive:glass stair:v24:task14:turn4,v31-434827,True,True,True,False,False,True,True
+204,14,archive_signal,archive_signal:paper lane:v19:task11:turn3,v31-391538,True,True,True,False,False,False,True
+205,14,signal_orchard,signal_orchard:dusk road:v21:task14:turn2,v31-380128,True,False,True,True,False,False,True
+206,14,orchard_riverbend,orchard_riverbend:market plank route:v20:task11:turn5,v31-557665,True,False,True,False,True,False,True
+207,14,central_repair_ring,central_repair_ring:outer bell path:v21:task11:turn2,v31-540256,True,False,True,False,False,False,True
+208,14,riverbend_roofward,riverbend_roofward:orchard ridge detour:v18:task11:turn2,v31-582965,True,False,True,True,False,False,True
+209,14,roofward_archive,roofward_archive:glass stair:v25:task14:turn4,v31-440802,True,True,True,False,False,True,True
+210,15,signal_orchard,signal_orchard:river lantern loop:v23:task14:turn2,v31-500712,True,True,True,False,False,True,True
+211,15,orchard_riverbend,orchard_riverbend:market plank route:v22:task11:turn5,v31-540610,True,True,True,False,False,False,True
+212,15,central_repair_ring,central_repair_ring:outer bell path:v21:task12:turn2,v31-519099,True,False,True,True,False,False,True
+213,15,riverbend_roofward,riverbend_roofward:orchard ridge detour:v18:task11:turn3,v31-582624,True,False,True,False,True,False,True
+214,15,roofward_archive,roofward_archive:cool archive lane:v26:task14:turn4,v31-538352,True,False,True,False,False,False,True
+215,15,archive_signal,archive_signal:paper lane:v19:task12:turn3,v31-391826,True,False,True,True,False,False,True
+216,15,signal_orchard,signal_orchard:river lantern loop:v23:task14:turn2,v31-515615,True,False,True,False,False,False,True
+217,15,orchard_riverbend,orchard_riverbend:market plank route:v23:task11:turn5,v31-556077,True,True,True,False,False,False,True
+218,15,central_repair_ring,central_repair_ring:outer bell path:v22:task12:turn2,v31-533675,True,False,True,False,False,False,True
+219,15,riverbend_roofward,riverbend_roofward:orchard ridge detour:v19:task11:turn3,v31-583372,True,True,True,False,False,False,True
+220,15,roofward_archive,roofward_archive:cool archive lane:v26:task15:turn4,v31-509284,True,False,True,True,False,False,True
+221,15,archive_signal,archive_signal:paper lane:v19:task12:turn4,v31-417630,True,False,True,False,True,False,True
+222,15,signal_orchard,signal_orchard:river lantern loop:v24:task14:turn2,v31-515462,True,False,True,False,False,False,True
+223,15,orchard_riverbend,orchard_riverbend:market plank route:v24:task12:turn5,v31-541207,True,False,True,True,False,False,True
+224,15,central_repair_ring,central_repair_ring:outer bell path:v23:task12:turn2,v31-525207,True,True,True,False,False,True,True
+225,16,riverbend_roofward,riverbend_roofward:river ford:v20:task12:turn3,v31-454014,True,False,True,True,False,True,True
+226,16,roofward_archive,roofward_archive:cool archive lane:v27:task15:turn4,v31-510025,True,True,True,False,False,False,True
+227,16,archive_signal,archive_signal:paper lane:v19:task13:turn4,v31-392199,True,False,True,True,False,False,True
+228,16,signal_orchard,signal_orchard:river lantern loop:v24:task14:turn3,v31-501579,True,False,True,False,True,False,True
+229,16,orchard_riverbend,orchard_riverbend:fen track:v25:task12:turn5,v31-437165,True,False,True,False,False,False,True
+230,16,central_repair_ring,central_repair_ring:outer bell path:v24:task13:turn2,v31-525189,True,False,True,True,False,False,True
+231,16,riverbend_roofward,riverbend_roofward:river ford:v20:task13:turn3,v31-453882,True,False,True,True,False,False,True
+232,16,roofward_archive,roofward_archive:cool archive lane:v27:task15:turn4,v31-509769,True,False,True,False,False,True,True
+233,16,archive_signal,archive_signal:paper lane:v20:task13:turn4,v31-418579,True,False,True,False,False,False,True
+234,16,signal_orchard,signal_orchard:river lantern loop:v25:task14:turn3,v31-501551,True,True,True,False,False,False,True
+235,16,orchard_riverbend,orchard_riverbend:fen track:v25:task13:turn5,v31-423280,True,False,True,True,False,False,True
+236,16,central_repair_ring,central_repair_ring:outer bell path:v25:task13:turn3,v31-525807,True,False,True,False,True,False,True
+237,16,riverbend_roofward,riverbend_roofward:river ford:v21:task14:turn3,v31-454623,True,False,True,True,False,False,True
+238,16,roofward_archive,roofward_archive:cool archive lane:v27:task15:turn4,v31-524779,True,False,True,True,False,False,True
+239,16,archive_signal,archive_signal:paper lane:v21:task13:turn4,v31-396970,True,True,True,False,False,True,True
+240,17,signal_orchard,signal_orchard:river lantern loop:v26:task14:turn3,v31-501398,True,False,True,False,False,True,True
+241,17,orchard_riverbend,orchard_riverbend:fen track:v26:task13:turn5,v31-423249,True,True,True,False,False,False,True
+242,17,central_repair_ring,central_repair_ring:outer bell path:v25:task14:turn3,v31-525681,True,False,True,True,False,False,True
+243,17,riverbend_roofward,riverbend_roofward:river ford:v21:task14:turn4,v31-454367,True,False,True,False,True,False,True
+244,17,roofward_archive,roofward_archive:cool archive lane:v28:task16:turn4,v31-510257,True,False,True,True,False,False,True
+245,17,archive_signal,archive_signal:paper lane:v21:task14:turn4,v31-396834,True,False,True,True,False,False,True
+246,17,signal_orchard,signal_orchard:river lantern loop:v26:task14:turn3,v31-516032,True,False,True,False,False,False,True
+247,17,orchard_riverbend,orchard_riverbend:fen track:v26:task13:turn5,v31-436996,True,False,True,False,False,False,True
+248,17,central_repair_ring,central_repair_ring:outer bell path:v26:task14:turn3,v31-540906,True,False,True,False,False,False,True
+249,17,riverbend_roofward,riverbend_roofward:river ford:v22:task14:turn4,v31-455105,True,True,True,False,False,False,True
+250,17,roofward_archive,roofward_archive:cool archive lane:v28:task17:turn4,v31-510130,True,False,True,True,False,False,True
+251,17,archive_signal,archive_signal:paper lane:v21:task14:turn5,v31-396578,True,False,True,False,True,False,True
+252,17,signal_orchard,signal_orchard:river lantern loop:v28:task14:turn3,v31-501983,True,True,True,False,False,False,True
+253,17,orchard_riverbend,orchard_riverbend:fen track:v26:task14:turn5,v31-423625,True,False,True,True,False,False,True
+254,17,central_repair_ring,central_repair_ring:outer bell path:v27:task14:turn3,v31-526278,True,True,True,False,False,True,True
+255,18,riverbend_roofward,riverbend_roofward:river ford:v23:task14:turn4,v31-454956,True,False,True,False,False,True,True
+256,18,roofward_archive,roofward_archive:cool archive lane:v29:task17:turn4,v31-510871,True,True,True,False,False,False,True
+257,18,archive_signal,archive_signal:paper lane:v21:task15:turn5,v31-397208,True,False,True,True,False,False,True
+258,18,signal_orchard,signal_orchard:river lantern loop:v28:task14:turn4,v31-502493,True,False,True,False,True,False,True
+259,18,orchard_riverbend,orchard_riverbend:fen track:v28:task14:turn5,v31-424466,True,True,True,False,False,False,True
+260,18,central_repair_ring,central_repair_ring:outer bell path:v27:task15:turn3,v31-526152,True,False,True,True,False,False,True
+261,18,riverbend_roofward,riverbend_roofward:river ford:v23:task14:turn4,v31-454700,True,False,True,False,False,True,True
+262,18,roofward_archive,roofward_archive:cool archive lane:v29:task17:turn4,v31-524844,True,False,True,False,False,False,True
+263,18,archive_signal,archive_signal:paper lane:v22:task16:turn5,v31-397175,True,False,True,True,False,False,True
+264,18,signal_orchard,signal_orchard:river lantern loop:v29:task14:turn4,v31-502465,True,True,True,False,False,False,True
+265,18,orchard_riverbend,orchard_riverbend:fen track:v28:task15:turn5,v31-424332,True,False,True,True,False,False,True
+266,18,central_repair_ring,central_repair_ring:outer bell path:v27:task15:turn4,v31-526662,True,False,True,False,True,False,True
+267,18,riverbend_roofward,riverbend_roofward:river ford:v24:task14:turn4,v31-469282,True,False,True,False,False,False,True
+268,18,roofward_archive,roofward_archive:cool archive lane:v29:task18:turn4,v31-511254,True,False,True,True,False,False,True
+269,18,archive_signal,archive_signal:paper lane:v23:task17:turn5,v31-398025,True,True,True,True,False,True,True
+270,19,signal_orchard,signal_orchard:river lantern loop:v30:task15:turn4,v31-501512,True,False,True,True,False,True,True
+271,19,orchard_riverbend,orchard_riverbend:fen track:v29:task15:turn5,v31-424301,True,True,True,False,False,False,True
+272,19,central_repair_ring,central_repair_ring:outer bell path:v27:task15:turn4,v31-540740,True,False,True,True,False,False,True
+273,19,riverbend_roofward,riverbend_roofward:river ford:v24:task14:turn5,v31-474843,True,False,True,False,True,False,True
+274,19,roofward_archive,roofward_archive:cool archive lane:v30:task18:turn4,v31-524657,True,False,True,False,False,False,True
+275,19,archive_signal,archive_signal:paper lane:v23:task18:turn5,v31-397889,True,False,True,True,False,False,True
+276,19,signal_orchard,signal_orchard:river lantern loop:v30:task16:turn4,v31-502150,True,False,True,True,False,False,True
+277,19,orchard_riverbend,orchard_riverbend:fen track:v29:task15:turn5,v31-438562,True,False,True,False,False,False,True
+278,19,central_repair_ring,central_repair_ring:outer bell path:v28:task15:turn4,v31-541358,True,False,True,False,False,False,True
+279,19,riverbend_roofward,riverbend_roofward:river ford:v24:task14:turn5,v31-475225,True,True,True,False,False,False,True
+280,19,roofward_archive,roofward_archive:cool archive lane:v30:task19:turn4,v31-510030,True,False,True,True,False,False,True
+281,19,archive_signal,archive_signal:paper lane:v23:task18:turn6,v31-397633,True,False,True,False,True,False,True
+282,19,signal_orchard,signal_orchard:river lantern loop:v31:task17:turn4,v31-502125,True,False,True,True,False,False,True
+283,19,orchard_riverbend,orchard_riverbend:fen track:v29:task16:turn5,v31-424677,True,False,True,True,False,False,True
+284,19,central_repair_ring,central_repair_ring:outer bell path:v29:task15:turn4,v31-527003,True,True,True,False,False,True,True
+285,20,roofward_archive,roofward_archive:cool archive lane:v30:task19:turn4,v31-510455,True,False,True,False,False,True,True
+286,20,archive_signal,archive_signal:paper lane:v24:task18:turn6,v31-398278,True,True,True,False,False,False,True
+287,20,signal_orchard,signal_orchard:river lantern loop:v31:task18:turn4,v31-502678,True,False,True,True,False,False,True
+288,20,orchard_riverbend,orchard_riverbend:fen track:v29:task17:turn6,v31-425224,True,False,True,True,True,False,True
+289,20,central_repair_ring,central_repair_ring:inner repair yard:v30:task15:turn4,v31-576799,True,False,True,False,False,False,True
+290,20,riverbend_roofward,riverbend_roofward:river ford:v24:task15:turn5,v31-455098,True,False,True,True,False,True,True
+291,20,roofward_archive,roofward_archive:cool archive lane:v30:task19:turn4,v31-532098,True,False,True,False,False,False,True
+292,20,archive_signal,archive_signal:paper lane:v24:task18:turn6,v31-418219,True,False,True,False,False,False,True
+293,20,signal_orchard,signal_orchard:river lantern loop:v32:task18:turn4,v31-524805,True,False,True,False,False,False,True
+294,20,orchard_riverbend,orchard_riverbend:fen track:v30:task18:turn6,v31-424360,True,True,True,True,False,False,True
+295,20,central_repair_ring,central_repair_ring:inner repair yard:v30:task16:turn4,v31-554570,True,False,True,True,False,False,True
+296,20,riverbend_roofward,riverbend_roofward:river ford:v24:task15:turn6,v31-455608,True,False,True,False,True,False,True
+297,20,roofward_archive,roofward_archive:cool archive lane:v31:task19:turn4,v31-532713,True,False,True,False,False,False,True
+298,20,archive_signal,archive_signal:paper lane:v24:task19:turn6,v31-398652,True,False,True,True,False,False,True
+299,20,signal_orchard,signal_orchard:river lantern loop:v33:task18:turn4,v31-503263,True,True,True,False,False,True,True
+300,21,orchard_riverbend,orchard_riverbend:market plank route:v31:task18:turn6,v31-541952,True,False,True,False,False,True,True
+301,21,central_repair_ring,central_repair_ring:inner repair yard:v31:task17:turn4,v31-553926,True,True,True,True,False,False,True
+302,21,riverbend_roofward,riverbend_roofward:river ford:v24:task16:turn6,v31-454719,True,False,True,True,False,False,True
+303,21,roofward_archive,roofward_archive:cool archive lane:v31:task19:turn5,v31-509801,True,False,True,False,True,False,True
+304,21,archive_signal,archive_signal:paper lane:v24:task19:turn6,v31-418089,True,False,True,False,False,False,True
+305,21,signal_orchard,signal_orchard:river lantern loop:v33:task19:turn4,v31-502378,True,False,True,True,False,False,True
+306,21,orchard_riverbend,orchard_riverbend:market plank route:v31:task18:turn6,v31-572657,True,False,True,False,False,False,True
+307,21,central_repair_ring,central_repair_ring:inner repair yard:v31:task18:turn4,v31-554568,True,False,True,True,False,False,True
+308,21,riverbend_roofward,riverbend_roofward:orchard ridge detour:v26:task16:turn6,v31-584003,True,True,True,False,False,False,True
+309,21,roofward_archive,roofward_archive:cool archive lane:v32:task19:turn5,v31-510542,True,True,True,False,False,False,True
+310,21,archive_signal,archive_signal:paper lane:v24:task20:turn6,v31-396422,True,False,True,True,False,False,True
+311,21,signal_orchard,signal_orchard:river lantern loop:v33:task19:turn5,v31-531250,True,False,True,False,True,False,True
+312,21,orchard_riverbend,orchard_riverbend:market plank route:v32:task18:turn6,v31-572507,True,False,True,False,False,False,True
+313,21,central_repair_ring,central_repair_ring:inner repair yard:v31:task19:turn4,v31-554444,True,False,True,True,False,False,True
+314,21,riverbend_roofward,riverbend_roofward:orchard ridge detour:v27:task16:turn6,v31-583985,True,True,True,False,False,True,True
+315,22,roofward_archive,roofward_archive:cool archive lane:v34:task19:turn5,v31-510622,True,True,True,False,False,True,True
+316,22,archive_signal,archive_signal:paper lane:v25:task20:turn6,v31-397152,True,True,True,False,False,False,True
+317,22,signal_orchard,signal_orchard:river lantern loop:v33:task20:turn5,v31-501607,True,False,True,True,False,False,True
+318,22,orchard_riverbend,orchard_riverbend:market plank route:v32:task18:turn7,v31-573289,True,False,True,False,True,False,True
+319,22,central_repair_ring,central_repair_ring:inner repair yard:v32:task19:turn4,v31-555062,True,False,True,False,False,True,True
+320,22,riverbend_roofward,riverbend_roofward:orchard ridge detour:v28:task17:turn6,v31-583970,True,False,True,True,False,False,True
+321,22,roofward_archive,roofward_archive:cool archive lane:v34:task19:turn5,v31-531994,True,False,True,False,False,False,True
+322,22,archive_signal,archive_signal:paper lane:v25:task20:turn6,v31-416455,True,False,True,False,False,False,True
+323,22,signal_orchard,signal_orchard:river lantern loop:v33:task20:turn5,v31-529941,True,False,True,False,False,False,True
+324,22,orchard_riverbend,orchard_riverbend:market plank route:v33:task18:turn7,v31-542800,True,True,True,False,False,False,True
+325,22,central_repair_ring,central_repair_ring:inner repair yard:v32:task20:turn4,v31-553749,True,False,True,True,False,False,True
+326,22,riverbend_roofward,riverbend_roofward:orchard ridge detour:v29:task17:turn7,v31-584587,True,False,True,False,True,False,True
+327,22,roofward_archive,roofward_archive:glass stair:v35:task19:turn5,v31-463146,True,False,True,False,False,False,True
+328,22,archive_signal,archive_signal:paper lane:v25:task21:turn6,v31-397526,True,False,True,True,False,False,True
+329,22,signal_orchard,signal_orchard:river lantern loop:v34:task20:turn5,v31-502089,True,True,True,False,False,True,True
+330,23,orchard_riverbend,orchard_riverbend:market plank route:v34:task18:turn7,v31-542650,True,False,True,False,False,True,True
+331,23,central_repair_ring,central_repair_ring:inner repair yard:v33:task20:turn4,v31-553730,True,True,True,False,False,False,True
+332,23,riverbend_roofward,riverbend_roofward:orchard ridge detour:v29:task18:turn7,v31-584465,True,False,True,True,False,False,True
+333,23,roofward_archive,roofward_archive:cool archive lane:v36:task19:turn6,v31-510830,True,False,True,False,True,False,True
+334,23,archive_signal,archive_signal:stone kiosk path:v26:task21:turn6,v31-494290,True,False,True,False,False,False,True
+335,23,signal_orchard,signal_orchard:river lantern loop:v34:task21:turn5,v31-501961,True,False,True,True,False,False,True
+336,23,orchard_riverbend,orchard_riverbend:market plank route:v34:task18:turn7,v31-573080,True,False,True,False,False,False,True
+337,23,central_repair_ring,central_repair_ring:inner repair yard:v33:task20:turn4,v31-576345,True,False,True,False,False,False,True
+338,23,riverbend_roofward,riverbend_roofward:river ford:v30:task18:turn7,v31-475824,True,False,True,False,False,False,True
+339,23,roofward_archive,roofward_archive:cool archive lane:v38:task19:turn6,v31-511676,True,True,True,False,False,False,True
+340,23,archive_signal,archive_signal:stone kiosk path:v26:task21:turn6,v31-494034,True,False,True,True,False,False,True
+341,23,signal_orchard,signal_orchard:river lantern loop:v34:task21:turn6,v31-501705,True,False,True,False,True,False,True
+342,23,orchard_riverbend,orchard_riverbend:market plank route:v34:task18:turn7,v31-572824,True,False,True,False,False,False,True
+343,23,central_repair_ring,central_repair_ring:inner repair yard:v33:task21:turn4,v31-554116,True,False,True,True,False,False,True
+344,23,riverbend_roofward,riverbend_roofward:river ford:v31:task18:turn7,v31-455621,True,True,True,False,False,True,True
+345,24,roofward_archive,roofward_archive:glass stair:v39:task19:turn6,v31-442620,True,False,True,False,False,True,True
+346,24,archive_signal,archive_signal:stone kiosk path:v28:task21:turn6,v31-473722,True,True,True,False,False,False,True
+347,24,signal_orchard,signal_orchard:river lantern loop:v34:task22:turn6,v31-502343,True,False,True,True,False,False,True
+348,24,orchard_riverbend,orchard_riverbend:market plank route:v34:task18:turn8,v31-543414,True,False,True,False,True,True,True
+349,24,central_repair_ring,central_repair_ring:inner repair yard:v34:task21:turn4,v31-577116,True,False,True,False,False,False,True
+350,24,riverbend_roofward,riverbend_roofward:river ford:v31:task19:turn7,v31-455489,True,False,True,True,False,False,True
+351,24,roofward_archive,roofward_archive:glass stair:v39:task19:turn6,v31-462385,True,False,True,False,False,False,True
+352,24,archive_signal,archive_signal:paper lane:v29:task21:turn6,v31-418247,True,False,True,False,False,False,True
+353,24,signal_orchard,signal_orchard:river lantern loop:v35:task22:turn6,v31-523659,True,False,True,False,False,False,True
+354,24,orchard_riverbend,orchard_riverbend:market plank route:v35:task18:turn8,v31-543392,True,True,True,False,False,False,True
+355,24,central_repair_ring,central_repair_ring:inner repair yard:v34:task22:turn4,v31-554610,True,False,True,True,False,False,True
+356,24,riverbend_roofward,riverbend_roofward:river ford:v31:task20:turn8,v31-455006,True,False,True,True,True,False,True
+357,24,roofward_archive,roofward_archive:glass stair:v41:task19:turn6,v31-442258,True,True,True,False,False,False,True
+358,24,archive_signal,archive_signal:paper lane:v30:task22:turn6,v31-397602,True,False,True,True,False,False,True
+359,24,signal_orchard,signal_orchard:river lantern loop:v36:task22:turn6,v31-502928,True,True,True,False,False,True,True
+360,25,central_repair_ring,central_repair_ring:inner repair yard:v35:task22:turn4,v31-554377,True,False,True,False,False,True,True
+361,25,riverbend_roofward,riverbend_roofward:river ford:v32:task20:turn8,v31-454893,True,True,True,False,False,False,True
+362,25,roofward_archive,roofward_archive:glass stair:v41:task20:turn6,v31-440932,True,False,True,True,False,False,True
+363,25,archive_signal,archive_signal:paper lane:v30:task22:turn7,v31-397261,True,False,True,False,True,False,True
+364,25,signal_orchard,signal_orchard:dusk road:v38:task22:turn6,v31-387345,True,True,True,False,False,False,True
+365,25,orchard_riverbend,orchard_riverbend:market plank route:v35:task19:turn8,v31-543692,True,False,True,True,False,False,True
+366,25,central_repair_ring,central_repair_ring:inner repair yard:v35:task22:turn4,v31-569708,True,False,True,False,False,False,True
+367,25,riverbend_roofward,riverbend_roofward:river ford:v32:task20:turn8,v31-469107,True,False,True,False,False,False,True
+368,25,roofward_archive,roofward_archive:cool archive lane:v42:task21:turn6,v31-510539,True,False,True,True,False,False,True
+369,25,archive_signal,archive_signal:paper lane:v31:task22:turn7,v31-397991,True,True,True,False,False,False,True
+370,25,signal_orchard,signal_orchard:river lantern loop:v39:task23:turn6,v31-502893,True,False,True,True,False,False,True
+371,25,orchard_riverbend,orchard_riverbend:market plank route:v35:task19:turn9,v31-543436,True,False,True,False,True,False,True
+372,25,central_repair_ring,central_repair_ring:inner repair yard:v36:task22:turn4,v31-569560,True,False,True,False,False,False,True
+373,25,riverbend_roofward,riverbend_roofward:river ford:v32:task21:turn8,v31-455271,True,False,True,True,False,False,True
+374,25,roofward_archive,roofward_archive:cool archive lane:v43:task21:turn6,v31-510514,True,True,True,True,False,True,True
+375,26,archive_signal,archive_signal:stone kiosk path:v32:task23:turn7,v31-473748,True,False,True,True,False,True,True
+376,26,signal_orchard,signal_orchard:river lantern loop:v40:task23:turn6,v31-502703,True,True,True,False,False,False,True
+377,26,orchard_riverbend,orchard_riverbend:market plank route:v36:task20:turn9,v31-543003,True,False,True,True,False,True,True
+378,26,central_repair_ring,central_repair_ring:inner repair yard:v36:task22:turn5,v31-577067,True,False,True,False,True,False,True
+379,26,riverbend_roofward,riverbend_roofward:orchard ridge detour:v33:task21:turn8,v31-599352,True,False,True,False,False,False,True
+380,26,roofward_archive,roofward_archive:cool archive lane:v43:task22:turn6,v31-510387,True,False,True,True,False,False,True
+381,26,archive_signal,archive_signal:stone kiosk path:v32:task24:turn7,v31-473618,True,False,True,True,False,False,True
+382,26,signal_orchard,signal_orchard:river lantern loop:v40:task23:turn6,v31-516840,True,False,True,False,False,False,True
+383,26,orchard_riverbend,orchard_riverbend:market plank route:v37:task20:turn9,v31-572918,True,False,True,False,False,False,True
+384,26,central_repair_ring,central_repair_ring:inner repair yard:v37:task22:turn5,v31-555230,True,True,True,False,False,False,True
+385,26,riverbend_roofward,riverbend_roofward:orchard ridge detour:v33:task22:turn8,v31-584195,True,False,True,True,False,False,True
+386,26,roofward_archive,roofward_archive:cool archive lane:v43:task22:turn7,v31-510897,True,False,True,False,True,False,True
+387,26,archive_signal,archive_signal:stone kiosk path:v33:task25:turn7,v31-474357,True,False,True,True,False,False,True
+388,26,signal_orchard,signal_orchard:river lantern loop:v40:task24:turn6,v31-503085,True,False,True,True,False,False,True
+389,26,orchard_riverbend,orchard_riverbend:market plank route:v39:task20:turn9,v31-543703,True,True,True,False,False,True,True
+390,27,central_repair_ring,central_repair_ring:inner repair yard:v38:task22:turn5,v31-555082,True,False,True,False,False,True,True
+391,27,riverbend_roofward,riverbend_roofward:orchard ridge detour:v34:task22:turn8,v31-584177,True,True,True,False,False,False,True
+392,27,roofward_archive,roofward_archive:cool archive lane:v43:task23:turn7,v31-510770,True,False,True,True,False,False,True
+393,27,archive_signal,archive_signal:stone kiosk path:v33:task25:turn8,v31-474101,True,False,True,False,True,False,True
+394,27,signal_orchard,signal_orchard:river lantern loop:v41:task25:turn6,v31-503060,True,False,True,True,False,False,True
+395,27,orchard_riverbend,orchard_riverbend:market plank route:v39:task21:turn9,v31-543578,True,False,True,True,False,False,True
+396,27,central_repair_ring,central_repair_ring:inner repair yard:v39:task22:turn5,v31-570244,True,False,True,False,False,False,True
+397,27,riverbend_roofward,riverbend_roofward:orchard ridge detour:v34:task22:turn8,v31-599160,True,False,True,False,False,False,True
+398,27,roofward_archive,roofward_archive:cool archive lane:v44:task23:turn7,v31-525885,True,False,True,False,False,False,True
+399,27,archive_signal,archive_signal:stone kiosk path:v34:task25:turn8,v31-474837,True,True,True,False,False,False,True
+400,27,signal_orchard,signal_orchard:river lantern loop:v41:task26:turn6,v31-502175,True,False,True,True,False,False,True
+401,27,orchard_riverbend,orchard_riverbend:market plank route:v39:task21:turn10,v31-542565,True,False,True,False,True,False,True
+402,27,central_repair_ring,central_repair_ring:inner repair yard:v40:task22:turn5,v31-568366,True,False,True,False,False,False,True
+403,27,riverbend_roofward,riverbend_roofward:orchard ridge detour:v34:task23:turn8,v31-583808,True,False,True,True,False,False,True
+404,27,roofward_archive,roofward_archive:cool archive lane:v45:task23:turn7,v31-510603,True,True,True,False,False,True,True
+405,28,archive_signal,archive_signal:stone kiosk path:v35:task25:turn8,v31-473927,True,False,True,False,False,True,True
+406,28,signal_orchard,signal_orchard:river lantern loop:v42:task26:turn6,v31-502913,True,True,True,False,False,True,True
+407,28,orchard_riverbend,orchard_riverbend:market plank route:v39:task22:turn10,v31-543206,True,False,True,True,False,False,True
+408,28,central_repair_ring,central_repair_ring:inner repair yard:v40:task22:turn6,v31-554332,True,False,True,False,True,False,True
+409,28,riverbend_roofward,riverbend_roofward:orchard ridge detour:v35:task23:turn8,v31-599179,True,False,True,False,False,False,True
+410,28,roofward_archive,roofward_archive:cool archive lane:v45:task24:turn7,v31-510476,True,False,True,True,False,False,True
+411,28,archive_signal,archive_signal:stone kiosk path:v35:task25:turn8,v31-487850,True,False,True,False,False,False,True
+412,28,signal_orchard,signal_orchard:river lantern loop:v42:task26:turn6,v31-516781,True,False,True,False,False,False,True
+413,28,orchard_riverbend,orchard_riverbend:market plank route:v41:task23:turn10,v31-542466,True,True,True,True,False,False,True
+414,28,central_repair_ring,central_repair_ring:inner repair yard:v41:task22:turn6,v31-554313,True,True,True,False,False,False,True
+415,28,riverbend_roofward,riverbend_roofward:orchard ridge detour:v35:task24:turn8,v31-584303,True,False,True,True,False,False,True
+416,28,roofward_archive,roofward_archive:cool archive lane:v45:task24:turn8,v31-524944,True,False,True,False,True,False,True
+417,28,archive_signal,archive_signal:stone kiosk path:v36:task25:turn8,v31-488463,True,False,True,False,False,False,True
+418,28,signal_orchard,signal_orchard:river lantern loop:v42:task27:turn6,v31-503295,True,False,True,True,False,False,True
+419,28,orchard_riverbend,orchard_riverbend:market plank route:v42:task24:turn10,v31-543341,True,True,True,True,False,True,True
+420,29,central_repair_ring,central_repair_ring:outer bell path:v43:task23:turn6,v31-526395,True,True,True,True,False,True,True
+421,29,riverbend_roofward,riverbend_roofward:orchard ridge detour:v36:task24:turn8,v31-584285,True,True,True,False,False,False,True
+422,29,roofward_archive,roofward_archive:cool archive lane:v45:task25:turn8,v31-510859,True,False,True,True,False,False,True
+423,29,archive_signal,archive_signal:stone kiosk path:v36:task25:turn9,v31-474028,True,False,True,False,True,False,True
+424,29,signal_orchard,signal_orchard:river lantern loop:v43:task27:turn6,v31-517535,True,False,True,False,False,False,True
+425,29,orchard_riverbend,orchard_riverbend:market plank route:v42:task24:turn10,v31-557524,True,False,True,True,False,False,True
+426,29,central_repair_ring,central_repair_ring:outer bell path:v43:task24:turn6,v31-527035,True,False,True,True,False,False,True
+427,29,riverbend_roofward,riverbend_roofward:orchard ridge detour:v36:task24:turn8,v31-599830,True,False,True,False,False,False,True
+428,29,roofward_archive,roofward_archive:cool archive lane:v46:task25:turn8,v31-525703,True,False,True,False,False,False,True
+429,29,archive_signal,archive_signal:stone kiosk path:v37:task25:turn9,v31-474764,True,True,True,False,False,False,True
+430,29,signal_orchard,signal_orchard:river lantern loop:v43:task28:turn6,v31-503014,True,False,True,True,False,False,True
+431,29,orchard_riverbend,orchard_riverbend:market plank route:v42:task24:turn11,v31-542829,True,False,True,False,True,False,True
+432,29,central_repair_ring,central_repair_ring:outer bell path:v44:task25:turn6,v31-527017,True,False,True,True,False,False,True
+433,29,riverbend_roofward,riverbend_roofward:orchard ridge detour:v36:task25:turn8,v31-584673,True,False,True,True,False,False,True
+434,29,roofward_archive,roofward_archive:cool archive lane:v46:task25:turn8,v31-525447,True,True,True,False,False,True,True
+435,30,signal_orchard,signal_orchard:river lantern loop:v44:task28:turn6,v31-503542,True,False,True,False,False,True,True
+436,30,orchard_riverbend,orchard_riverbend:market plank route:v43:task24:turn11,v31-542335,True,True,True,False,False,False,True
+437,30,central_repair_ring,central_repair_ring:outer bell path:v44:task26:turn6,v31-527572,True,False,True,True,False,False,True
+438,30,riverbend_roofward,riverbend_roofward:orchard ridge detour:v36:task25:turn9,v31-585098,True,False,True,False,True,False,True
+439,30,roofward_archive,roofward_archive:cool archive lane:v47:task25:turn8,v31-533376,True,False,True,False,False,False,True
+440,30,archive_signal,archive_signal:stone kiosk path:v37:task26:turn9,v31-474293,True,False,True,True,False,False,True
+441,30,signal_orchard,signal_orchard:river lantern loop:v44:task28:turn6,v31-525024,True,False,True,False,False,False,True
+442,30,orchard_riverbend,orchard_riverbend:market plank route:v43:task24:turn11,v31-564025,True,False,True,False,False,False,True
+443,30,central_repair_ring,central_repair_ring:outer bell path:v45:task26:turn6,v31-550034,True,False,True,False,False,False,True
+444,30,riverbend_roofward,riverbend_roofward:orchard ridge detour:v37:task25:turn9,v31-585080,True,True,True,False,False,False,True
+445,30,roofward_archive,roofward_archive:cool archive lane:v47:task26:turn8,v31-511621,True,False,True,True,False,False,True
+446,30,archive_signal,archive_signal:stone kiosk path:v37:task26:turn10,v31-474803,True,False,True,False,True,False,True
+447,30,signal_orchard,signal_orchard:river lantern loop:v45:task28:turn6,v31-525637,True,False,True,False,False,False,True
+448,30,orchard_riverbend,orchard_riverbend:market plank route:v43:task25:turn11,v31-542720,True,False,True,True,False,False,True
+449,30,central_repair_ring,central_repair_ring:outer bell path:v46:task26:turn6,v31-528169,True,True,True,False,False,True,True
+450,31,riverbend_roofward,riverbend_roofward:orchard ridge detour:v38:task25:turn9,v31-584931,True,False,True,False,False,True,True
+451,31,roofward_archive,roofward_archive:cool archive lane:v48:task26:turn8,v31-511596,True,True,True,False,False,False,True
+452,31,archive_signal,archive_signal:stone kiosk path:v37:task27:turn10,v31-474673,True,False,True,True,False,False,True
+453,31,signal_orchard,signal_orchard:river lantern loop:v45:task28:turn7,v31-503643,True,False,True,False,True,False,True
+454,31,orchard_riverbend,orchard_riverbend:market plank route:v44:task25:turn11,v31-564791,True,False,True,False,False,False,True
+455,31,central_repair_ring,central_repair_ring:outer bell path:v46:task27:turn6,v31-528043,True,False,True,True,False,False,True
+456,31,riverbend_roofward,riverbend_roofward:orchard ridge detour:v38:task25:turn9,v31-607156,True,False,True,False,False,False,True
+457,31,roofward_archive,roofward_archive:cool archive lane:v48:task26:turn8,v31-534005,True,False,True,False,False,False,True
+458,31,archive_signal,archive_signal:stone kiosk path:v38:task27:turn10,v31-496437,True,False,True,False,False,False,True
+459,31,signal_orchard,signal_orchard:river lantern loop:v46:task28:turn7,v31-503255,True,True,True,False,False,False,True
+460,31,orchard_riverbend,orchard_riverbend:market plank route:v44:task26:turn11,v31-542445,True,False,True,True,False,False,True
+461,31,central_repair_ring,central_repair_ring:outer bell path:v46:task27:turn7,v31-557345,True,False,True,False,True,False,True
+462,31,riverbend_roofward,riverbend_roofward:orchard ridge detour:v40:task25:turn9,v31-583386,True,True,True,False,False,False,True
+463,31,roofward_archive,roofward_archive:cool archive lane:v48:task27:turn8,v31-511979,True,False,True,True,False,False,True
+464,31,archive_signal,archive_signal:stone kiosk path:v39:task27:turn10,v31-475256,True,True,True,False,False,True,True
+465,32,signal_orchard,signal_orchard:river lantern loop:v47:task28:turn7,v31-525375,True,False,True,False,False,True,True
+466,32,orchard_riverbend,orchard_riverbend:market plank route:v45:task26:turn11,v31-543189,True,True,True,False,False,False,True
+467,32,central_repair_ring,central_repair_ring:outer bell path:v46:task28:turn7,v31-528427,True,False,True,True,False,False,True
+468,32,riverbend_roofward,riverbend_roofward:orchard ridge detour:v40:task26:turn10,v31-584030,True,False,True,True,True,False,True
+469,32,roofward_archive,roofward_archive:cool archive lane:v50:task27:turn8,v31-510744,True,True,True,False,False,False,True
+470,32,archive_signal,archive_signal:stone kiosk path:v39:task28:turn10,v31-475126,True,False,True,True,False,False,True
+471,32,signal_orchard,signal_orchard:river lantern loop:v47:task28:turn7,v31-524315,True,False,True,False,False,False,True
+472,32,orchard_riverbend,orchard_riverbend:market plank route:v45:task26:turn11,v31-564186,True,False,True,False,False,False,True
+473,32,central_repair_ring,central_repair_ring:outer bell path:v47:task28:turn7,v31-557291,True,False,True,False,False,False,True
+474,32,riverbend_roofward,riverbend_roofward:orchard ridge detour:v41:task27:turn10,v31-584146,True,True,True,True,False,False,True
+475,32,roofward_archive,roofward_archive:cool archive lane:v50:task28:turn8,v31-510617,True,False,True,True,False,False,True
+476,32,archive_signal,archive_signal:stone kiosk path:v39:task28:turn11,v31-475636,True,False,True,False,True,False,True
+477,32,signal_orchard,signal_orchard:river lantern loop:v48:task28:turn7,v31-524928,True,False,True,False,False,False,True
+478,32,orchard_riverbend,orchard_riverbend:market plank route:v45:task27:turn11,v31-543574,True,False,True,True,False,False,True
+479,32,central_repair_ring,central_repair_ring:outer bell path:v48:task28:turn7,v31-529024,True,True,True,False,False,True,True
+480,33,riverbend_roofward,riverbend_roofward:river ford:v42:task27:turn10,v31-455548,True,False,True,False,False,True,True
+481,33,roofward_archive,roofward_archive:cool archive lane:v51:task29:turn8,v31-510721,True,True,True,True,False,False,True
+482,33,archive_signal,archive_signal:stone kiosk path:v39:task29:turn11,v31-475506,True,False,True,True,False,False,True
+483,33,signal_orchard,signal_orchard:river lantern loop:v48:task28:turn8,v31-503203,True,False,True,False,True,False,True
+484,33,orchard_riverbend,orchard_riverbend:market plank route:v46:task27:turn11,v31-565370,True,False,True,False,False,False,True
+485,33,central_repair_ring,central_repair_ring:outer bell path:v48:task29:turn7,v31-528898,True,False,True,True,False,False,True
+486,33,riverbend_roofward,riverbend_roofward:river ford:v43:task27:turn10,v31-484573,True,False,True,False,False,False,True
+487,33,roofward_archive,roofward_archive:cool archive lane:v51:task30:turn8,v31-510198,True,False,True,True,False,False,True
+488,33,archive_signal,archive_signal:stone kiosk path:v40:task29:turn11,v31-495674,True,False,True,False,False,False,True
+489,33,signal_orchard,signal_orchard:river lantern loop:v49:task28:turn8,v31-503941,True,True,True,False,False,False,True
+490,33,orchard_riverbend,orchard_riverbend:market plank route:v46:task28:turn11,v31-543299,True,False,True,True,False,False,True
+491,33,central_repair_ring,central_repair_ring:outer bell path:v48:task29:turn8,v31-528642,True,False,True,False,True,False,True
+492,33,riverbend_roofward,riverbend_roofward:river ford:v44:task27:turn10,v31-483774,True,False,True,False,False,False,True
+493,33,roofward_archive,roofward_archive:cool archive lane:v51:task30:turn8,v31-532380,True,False,True,True,False,True,True
+494,33,archive_signal,archive_signal:stone kiosk path:v41:task29:turn11,v31-475161,True,True,True,False,False,True,True
+495,34,signal_orchard,signal_orchard:river lantern loop:v50:task28:turn8,v31-502860,True,False,True,False,False,True,True
+496,34,orchard_riverbend,orchard_riverbend:market plank route:v46:task28:turn11,v31-566442,True,True,True,False,False,False,True
+497,34,central_repair_ring,central_repair_ring:outer bell path:v48:task30:turn8,v31-528111,True,False,True,True,False,False,True
+498,34,riverbend_roofward,riverbend_roofward:river ford:v44:task27:turn11,v31-456526,True,False,True,False,True,False,True
+499,34,roofward_archive,roofward_archive:cool archive lane:v52:task30:turn8,v31-532456,True,False,True,False,False,False,True
+500,34,archive_signal,archive_signal:stone kiosk path:v41:task30:turn11,v31-473139,True,False,True,True,False,False,True
+501,34,signal_orchard,signal_orchard:river lantern loop:v50:task28:turn8,v31-522638,True,False,True,False,False,False,True
+502,34,orchard_riverbend,orchard_riverbend:market plank route:v46:task28:turn11,v31-565017,True,False,True,False,False,False,True
+503,34,central_repair_ring,central_repair_ring:outer bell path:v49:task30:turn8,v31-548993,True,False,True,False,False,False,True
+504,34,riverbend_roofward,riverbend_roofward:river ford:v45:task27:turn11,v31-455741,True,True,True,False,False,False,True
+505,34,roofward_archive,roofward_archive:cool archive lane:v53:task31:turn8,v31-509778,True,False,True,True,False,False,True
+506,34,archive_signal,archive_signal:stone kiosk path:v41:task31:turn12,v31-473775,True,False,True,True,True,False,True
+507,34,signal_orchard,signal_orchard:river lantern loop:v51:task28:turn8,v31-523251,True,False,True,False,False,False,True
+508,34,orchard_riverbend,orchard_riverbend:market plank route:v46:task29:turn11,v31-543437,True,False,True,True,False,False,True
+509,34,central_repair_ring,central_repair_ring:outer bell path:v50:task30:turn8,v31-525834,True,True,True,False,False,True,True
+510,35,roofward_archive,roofward_archive:cool archive lane:v54:task31:turn8,v31-509542,True,False,True,False,False,True,True
+511,35,archive_signal,archive_signal:stone kiosk path:v43:task31:turn12,v31-472655,True,True,True,False,False,False,True
+512,35,signal_orchard,signal_orchard:river lantern loop:v51:task29:turn8,v31-502247,True,False,True,True,False,False,True
+513,35,orchard_riverbend,orchard_riverbend:market plank route:v46:task29:turn12,v31-543096,True,False,True,False,True,False,True
+514,35,central_repair_ring,central_repair_ring:outer bell path:v51:task30:turn8,v31-539935,True,False,True,False,False,False,True
+515,35,riverbend_roofward,riverbend_roofward:river ford:v45:task28:turn11,v31-456034,True,False,True,True,False,False,True
+516,35,roofward_archive,roofward_archive:cool archive lane:v54:task31:turn8,v31-524552,True,False,True,False,False,False,True
+517,35,archive_signal,archive_signal:stone kiosk path:v44:task31:turn12,v31-487182,True,False,True,False,False,False,True
+518,35,signal_orchard,signal_orchard:river lantern loop:v53:task30:turn8,v31-502063,True,True,True,True,False,False,True
+519,35,orchard_riverbend,orchard_riverbend:market plank route:v47:task29:turn12,v31-543840,True,True,True,False,False,False,True
+520,35,central_repair_ring,central_repair_ring:outer bell path:v51:task31:turn8,v31-525475,True,False,True,True,False,False,True
+521,35,riverbend_roofward,riverbend_roofward:river ford:v45:task28:turn12,v31-455778,True,False,True,False,True,False,True
+522,35,roofward_archive,roofward_archive:cool archive lane:v55:task31:turn8,v31-509901,True,False,True,False,False,True,True
+523,35,archive_signal,archive_signal:stone kiosk path:v45:task32:turn12,v31-473241,True,False,True,True,False,False,True
+524,35,signal_orchard,signal_orchard:river lantern loop:v54:task31:turn8,v31-502163,True,True,True,True,False,True,True
+525,36,orchard_riverbend,orchard_riverbend:market plank route:v49:task30:turn12,v31-542875,True,True,True,True,False,True,True
+526,36,central_repair_ring,central_repair_ring:outer bell path:v52:task31:turn8,v31-526220,True,True,True,False,False,False,True
+527,36,riverbend_roofward,riverbend_roofward:river ford:v45:task28:turn12,v31-483639,True,False,True,True,False,False,True
+528,36,roofward_archive,roofward_archive:cool archive lane:v55:task31:turn9,v31-510411,True,False,True,False,True,False,True
+529,36,archive_signal,archive_signal:paper lane:v46:task32:turn12,v31-411625,True,False,True,False,False,False,True
+530,36,signal_orchard,signal_orchard:river lantern loop:v55:task32:turn8,v31-502138,True,False,True,True,False,False,True
+531,36,orchard_riverbend,orchard_riverbend:market plank route:v49:task31:turn12,v31-542750,True,False,True,True,False,False,True
+532,36,central_repair_ring,central_repair_ring:outer bell path:v52:task31:turn8,v31-540571,True,False,True,False,False,False,True
+533,36,riverbend_roofward,riverbend_roofward:river ford:v46:task28:turn12,v31-483490,True,False,True,False,False,False,True
+534,36,roofward_archive,roofward_archive:cool archive lane:v56:task31:turn9,v31-510386,True,True,True,False,False,False,True
+535,36,archive_signal,archive_signal:paper lane:v46:task33:turn12,v31-397952,True,False,True,True,False,False,True
+536,36,signal_orchard,signal_orchard:river lantern loop:v56:task32:turn9,v31-502751,True,False,True,False,True,False,True
+537,36,orchard_riverbend,orchard_riverbend:market plank route:v50:task32:turn12,v31-542542,True,False,True,True,False,False,True
+538,36,central_repair_ring,central_repair_ring:outer bell path:v52:task32:turn8,v31-526604,True,False,True,True,False,False,True
+539,36,riverbend_roofward,riverbend_roofward:river ford:v47:task28:turn12,v31-456877,True,True,True,False,False,True,True
+540,37,roofward_archive,roofward_archive:cool archive lane:v57:task31:turn9,v31-510235,True,False,True,False,False,True,True
+541,37,archive_signal,archive_signal:paper lane:v47:task33:turn12,v31-397916,True,True,True,False,False,False,True
+542,37,signal_orchard,signal_orchard:river lantern loop:v56:task33:turn9,v31-502623,True,False,True,True,False,False,True
+543,37,orchard_riverbend,orchard_riverbend:fen track:v51:task32:turn13,v31-423929,True,False,True,False,True,False,True
+544,37,central_repair_ring,central_repair_ring:outer bell path:v53:task32:turn8,v31-540517,True,False,True,True,False,False,True
+545,37,riverbend_roofward,riverbend_roofward:river ford:v47:task29:turn12,v31-456745,True,False,True,True,False,False,True
+546,37,roofward_archive,roofward_archive:cool archive lane:v57:task31:turn9,v31-524974,True,False,True,False,False,False,True
+547,37,archive_signal,archive_signal:paper lane:v47:task33:turn12,v31-411457,True,False,True,False,False,False,True
+548,37,signal_orchard,signal_orchard:river lantern loop:v57:task33:turn9,v31-517629,True,False,True,False,False,False,True
+549,37,orchard_riverbend,orchard_riverbend:fen track:v53:task32:turn13,v31-424770,True,True,True,False,False,False,True
+550,37,central_repair_ring,central_repair_ring:outer bell path:v53:task33:turn8,v31-526330,True,False,True,True,False,False,True
+551,37,riverbend_roofward,riverbend_roofward:river ford:v47:task29:turn13,v31-456489,True,False,True,False,True,True,True
+552,37,roofward_archive,roofward_archive:cool archive lane:v58:task31:turn9,v31-524823,True,False,True,False,False,False,True
+553,37,archive_signal,archive_signal:paper lane:v47:task34:turn12,v31-398290,True,False,True,True,False,False,True
+554,37,signal_orchard,signal_orchard:river lantern loop:v58:task33:turn9,v31-503208,True,True,True,False,False,True,True
+555,38,orchard_riverbend,orchard_riverbend:market plank route:v54:task32:turn13,v31-543092,True,False,True,False,False,True,True
+556,38,central_repair_ring,central_repair_ring:inner repair yard:v55:task33:turn8,v31-555316,True,True,True,False,False,False,True
+557,38,riverbend_roofward,riverbend_roofward:river ford:v47:task30:turn13,v31-456006,True,False,True,True,False,False,True
+558,38,roofward_archive,roofward_archive:cool archive lane:v58:task31:turn10,v31-511104,True,False,True,False,True,False,True
+559,38,archive_signal,archive_signal:paper lane:v48:task34:turn12,v31-412187,True,False,True,False,False,False,True
+560,38,signal_orchard,signal_orchard:river lantern loop:v58:task34:turn9,v31-503080,True,False,True,True,False,False,True
+561,38,orchard_riverbend,orchard_riverbend:market plank route:v54:task32:turn13,v31-557550,True,False,True,False,False,False,True
+562,38,central_repair_ring,central_repair_ring:outer bell path:v56:task33:turn8,v31-541369,True,False,True,False,False,False,True
+563,38,riverbend_roofward,riverbend_roofward:river ford:v48:task30:turn13,v31-469300,True,False,True,False,False,False,True
+564,38,roofward_archive,roofward_archive:cool archive lane:v59:task31:turn10,v31-511079,True,True,True,False,False,False,True
+565,38,archive_signal,archive_signal:paper lane:v48:task35:turn12,v31-398767,True,False,True,True,False,False,True
+566,38,signal_orchard,signal_orchard:river lantern loop:v58:task34:turn10,v31-503590,True,False,True,False,True,False,True
+567,38,orchard_riverbend,orchard_riverbend:market plank route:v56:task32:turn13,v31-543686,True,True,True,False,False,False,True
+568,38,central_repair_ring,central_repair_ring:outer bell path:v57:task34:turn8,v31-527783,True,False,True,True,False,False,True
+569,38,riverbend_roofward,riverbend_roofward:river ford:v49:task30:turn13,v31-456595,True,True,True,False,False,True,True
+570,39,roofward_archive,roofward_archive:cool archive lane:v59:task31:turn10,v31-510823,True,False,True,False,False,True,True
+571,39,archive_signal,archive_signal:paper lane:v49:task35:turn12,v31-398731,True,True,True,False,False,False,True
+572,39,signal_orchard,signal_orchard:river lantern loop:v58:task35:turn10,v31-503462,True,False,True,True,False,False,True
+573,39,orchard_riverbend,orchard_riverbend:market plank route:v56:task32:turn14,v31-543430,True,False,True,False,True,False,True
+574,39,central_repair_ring,central_repair_ring:outer bell path:v59:task34:turn8,v31-527870,True,True,True,False,False,False,True
+575,39,riverbend_roofward,riverbend_roofward:river ford:v49:task31:turn13,v31-456463,True,False,True,True,False,False,True
+576,39,roofward_archive,roofward_archive:cool archive lane:v59:task31:turn10,v31-525291,True,False,True,False,False,False,True
+577,39,archive_signal,archive_signal:paper lane:v49:task35:turn12,v31-412778,True,False,True,False,False,False,True
+578,39,signal_orchard,signal_orchard:river lantern loop:v59:task35:turn10,v31-518199,True,False,True,False,False,False,True
+579,39,orchard_riverbend,orchard_riverbend:market plank route:v57:task32:turn14,v31-544174,True,True,True,False,False,False,True
+580,39,central_repair_ring,central_repair_ring:outer bell path:v59:task35:turn8,v31-527744,True,False,True,True,False,True,True
+581,39,riverbend_roofward,riverbend_roofward:river ford:v49:task31:turn14,v31-456207,True,False,True,False,True,False,True
+582,39,roofward_archive,roofward_archive:cool archive lane:v60:task31:turn10,v31-524194,True,False,True,False,False,False,True
+583,39,archive_signal,archive_signal:paper lane:v49:task36:turn12,v31-399105,True,False,True,True,False,False,True
+584,39,signal_orchard,signal_orchard:river lantern loop:v60:task35:turn10,v31-503119,True,True,True,False,False,True,True
+585,40,central_repair_ring,central_repair_ring:inner repair yard:v60:task35:turn8,v31-555443,True,False,True,False,False,True,True
+586,40,riverbend_roofward,riverbend_roofward:river ford:v50:task32:turn14,v31-456020,True,True,True,True,False,False,True
+587,40,roofward_archive,roofward_archive:cool archive lane:v60:task32:turn10,v31-510790,True,False,True,True,False,False,True
+588,40,archive_signal,archive_signal:paper lane:v49:task36:turn13,v31-399530,True,False,True,False,True,False,True
+589,40,signal_orchard,signal_orchard:river lantern loop:v60:task35:turn10,v31-525013,True,False,True,False,False,False,True
+590,40,orchard_riverbend,orchard_riverbend:market plank route:v57:task33:turn14,v31-543708,True,False,True,True,False,False,True
+591,40,central_repair_ring,central_repair_ring:inner repair yard:v60:task35:turn8,v31-577569,True,False,True,False,False,False,True
+592,40,riverbend_roofward,riverbend_roofward:river ford:v50:task33:turn14,v31-455888,True,False,True,True,False,False,True
+593,40,roofward_archive,roofward_archive:cool archive lane:v61:task32:turn10,v31-531584,True,False,True,False,False,False,True
+594,40,archive_signal,archive_signal:paper lane:v50:task36:turn13,v31-398566,True,True,True,False,False,False,True
+595,40,signal_orchard,signal_orchard:river lantern loop:v60:task35:turn10,v31-524757,True,False,True,True,False,False,True
+596,40,orchard_riverbend,orchard_riverbend:market plank route:v57:task33:turn15,v31-544218,True,False,True,False,True,False,True
+597,40,central_repair_ring,central_repair_ring:inner repair yard:v61:task35:turn8,v31-577911,True,False,True,False,False,False,True
+598,40,riverbend_roofward,riverbend_roofward:river ford:v50:task34:turn14,v31-456522,True,False,True,True,False,False,True
+599,40,roofward_archive,roofward_archive:cool archive lane:v62:task32:turn10,v31-511380,True,True,True,False,False,True,True
+600,41,archive_signal,archive_signal:stone kiosk path:v51:task36:turn13,v31-473464,True,False,True,False,False,True,True
+601,41,signal_orchard,signal_orchard:river lantern loop:v61:task35:turn10,v31-502503,True,True,True,False,False,False,True
+602,41,orchard_riverbend,orchard_riverbend:market plank route:v57:task34:turn15,v31-543336,True,False,True,True,False,False,True
+603,41,central_repair_ring,central_repair_ring:inner repair yard:v61:task35:turn9,v31-554792,True,False,True,False,True,False,True
+604,41,riverbend_roofward,riverbend_roofward:orchard ridge detour:v51:task34:turn14,v31-606789,True,False,True,False,False,False,True
+605,41,roofward_archive,roofward_archive:cool archive lane:v62:task33:turn10,v31-510496,True,False,True,True,False,False,True
+606,41,archive_signal,archive_signal:stone kiosk path:v51:task36:turn13,v31-494457,True,False,True,False,False,False,True
+607,41,signal_orchard,signal_orchard:river lantern loop:v61:task35:turn10,v31-524751,True,False,True,False,False,False,True
+608,41,orchard_riverbend,orchard_riverbend:market plank route:v57:task34:turn15,v31-565792,True,False,True,False,False,False,True
+609,41,central_repair_ring,central_repair_ring:inner repair yard:v62:task35:turn9,v31-555539,True,True,True,False,False,True,True
+610,41,riverbend_roofward,riverbend_roofward:orchard ridge detour:v51:task35:turn14,v31-583963,True,False,True,True,False,False,True
+611,41,roofward_archive,roofward_archive:cool archive lane:v62:task34:turn11,v31-510369,True,False,True,True,True,False,True
+612,41,archive_signal,archive_signal:stone kiosk path:v52:task36:turn13,v31-494304,True,False,True,False,False,False,True
+613,41,signal_orchard,signal_orchard:river lantern loop:v61:task36:turn10,v31-502885,True,False,True,True,False,False,True
+614,41,orchard_riverbend,orchard_riverbend:market plank route:v58:task34:turn15,v31-543824,True,True,True,False,False,True,True
+615,42,central_repair_ring,central_repair_ring:inner repair yard:v63:task35:turn9,v31-578324,True,False,True,False,False,True,True
+616,42,riverbend_roofward,riverbend_roofward:orchard ridge detour:v52:task35:turn14,v31-584711,True,True,True,False,False,False,True
+617,42,roofward_archive,roofward_archive:cool archive lane:v62:task35:turn11,v31-511008,True,False,True,True,False,False,True
+618,42,archive_signal,archive_signal:stone kiosk path:v52:task37:turn14,v31-474457,True,False,True,True,True,False,True
+619,42,signal_orchard,signal_orchard:dusk road:v62:task36:turn10,v31-407285,True,False,True,False,False,False,True
+620,42,orchard_riverbend,orchard_riverbend:market plank route:v58:task35:turn15,v31-543699,True,False,True,True,False,False,True
+621,42,central_repair_ring,central_repair_ring:inner repair yard:v63:task35:turn9,v31-577240,True,False,True,False,False,False,True
+622,42,riverbend_roofward,riverbend_roofward:orchard ridge detour:v52:task35:turn14,v31-606170,True,False,True,False,False,False,True
+623,42,roofward_archive,roofward_archive:cool archive lane:v64:task35:turn11,v31-511088,True,True,True,False,False,False,True
+624,42,archive_signal,archive_signal:stone kiosk path:v53:task38:turn14,v31-474553,True,True,True,True,False,False,True
+625,42,signal_orchard,signal_orchard:dusk road:v62:task37:turn10,v31-387743,True,False,True,True,False,False,True
+626,42,orchard_riverbend,orchard_riverbend:market plank route:v58:task35:turn16,v31-544209,True,False,True,False,True,False,True
+627,42,central_repair_ring,central_repair_ring:inner repair yard:v63:task35:turn9,v31-578167,True,False,True,False,False,False,True
+628,42,riverbend_roofward,riverbend_roofward:orchard ridge detour:v52:task36:turn14,v31-585099,True,False,True,True,False,False,True
+629,42,roofward_archive,roofward_archive:cool archive lane:v65:task35:turn11,v31-511829,True,True,True,False,False,True,True
+630,43,archive_signal,archive_signal:stone kiosk path:v55:task38:turn14,v31-474626,True,True,True,False,False,True,True
+631,43,signal_orchard,signal_orchard:dusk road:v63:task38:turn10,v31-387825,True,True,True,True,False,False,True
+632,43,orchard_riverbend,orchard_riverbend:market plank route:v58:task36:turn16,v31-544084,True,False,True,True,False,False,True
+633,43,central_repair_ring,central_repair_ring:inner repair yard:v63:task35:turn10,v31-577220,True,False,True,False,True,False,True
+634,43,riverbend_roofward,riverbend_roofward:orchard ridge detour:v53:task36:turn14,v31-607373,True,False,True,False,False,False,True
+635,43,roofward_archive,roofward_archive:cool archive lane:v65:task36:turn11,v31-511702,True,False,True,True,False,False,True
+636,43,archive_signal,archive_signal:stone kiosk path:v55:task38:turn14,v31-503976,True,False,True,False,False,False,True
+637,43,signal_orchard,signal_orchard:dusk road:v63:task39:turn10,v31-388454,True,False,True,True,False,False,True
+638,43,orchard_riverbend,orchard_riverbend:fen track:v59:task36:turn16,v31-426165,True,False,True,False,False,True,True
+639,43,central_repair_ring,central_repair_ring:inner repair yard:v64:task35:turn10,v31-556136,True,True,True,False,False,False,True
+640,43,riverbend_roofward,riverbend_roofward:orchard ridge detour:v53:task37:turn14,v31-584828,True,False,True,True,False,False,True
+641,43,roofward_archive,roofward_archive:cool archive lane:v65:task36:turn12,v31-511446,True,False,True,False,True,False,True
+642,43,archive_signal,archive_signal:stone kiosk path:v56:task38:turn14,v31-503823,True,False,True,False,False,False,True
+643,43,signal_orchard,signal_orchard:dusk road:v63:task40:turn10,v31-387245,True,False,True,True,False,False,True
+644,43,orchard_riverbend,orchard_riverbend:fen track:v60:task36:turn16,v31-425179,True,True,True,False,False,True,True
+645,44,central_repair_ring,central_repair_ring:inner repair yard:v65:task35:turn10,v31-555988,True,False,True,False,False,True,True
+646,44,riverbend_roofward,riverbend_roofward:orchard ridge detour:v54:task37:turn14,v31-585576,True,True,True,False,False,False,True
+647,44,roofward_archive,roofward_archive:cool archive lane:v65:task37:turn12,v31-512085,True,False,True,True,False,False,True
+648,44,archive_signal,archive_signal:stone kiosk path:v56:task38:turn15,v31-475493,True,False,True,False,True,False,True
+649,44,signal_orchard,signal_orchard:dusk road:v64:task40:turn10,v31-408147,True,False,True,False,False,False,True
+650,44,orchard_riverbend,orchard_riverbend:fen track:v60:task37:turn16,v31-425045,True,False,True,True,False,False,True
+651,44,central_repair_ring,central_repair_ring:inner repair yard:v65:task35:turn10,v31-577139,True,False,True,False,False,False,True
+652,44,riverbend_roofward,riverbend_roofward:river ford:v55:task37:turn14,v31-478002,True,False,True,False,False,False,True
+653,44,roofward_archive,roofward_archive:glass stair:v66:task37:turn12,v31-463691,True,False,True,False,False,False,True
+654,44,archive_signal,archive_signal:stone kiosk path:v57:task38:turn15,v31-475463,True,True,True,False,False,False,True
+655,44,signal_orchard,signal_orchard:dusk road:v64:task41:turn10,v31-387721,True,False,True,True,False,False,True
+656,44,orchard_riverbend,orchard_riverbend:fen track:v60:task38:turn17,v31-425677,True,False,True,True,True,False,True
+657,44,central_repair_ring,central_repair_ring:inner repair yard:v66:task35:turn10,v31-577757,True,False,True,False,False,False,True
+658,44,riverbend_roofward,riverbend_roofward:river ford:v57:task38:turn14,v31-457877,True,True,True,True,False,False,True
+659,44,roofward_archive,roofward_archive:glass stair:v67:task37:turn12,v31-443752,True,True,True,False,False,True,True
+660,45,signal_orchard,signal_orchard:dusk road:v65:task41:turn10,v31-387483,True,False,True,False,False,True,True
+661,45,orchard_riverbend,orchard_riverbend:fen track:v61:task38:turn17,v31-425561,True,True,True,False,False,False,True
+662,45,central_repair_ring,central_repair_ring:inner repair yard:v66:task36:turn10,v31-556141,True,False,True,True,False,False,True
+663,45,riverbend_roofward,riverbend_roofward:river ford:v57:task38:turn15,v31-471501,True,False,True,False,True,False,True
+664,45,roofward_archive,roofward_archive:cool archive lane:v68:task37:turn12,v31-526668,True,False,True,False,False,False,True
+665,45,archive_signal,archive_signal:stone kiosk path:v57:task39:turn15,v31-475758,True,False,True,True,False,False,True
+666,45,signal_orchard,signal_orchard:dusk road:v65:task41:turn10,v31-401423,True,False,True,False,False,False,True
+667,45,orchard_riverbend,orchard_riverbend:fen track:v61:task38:turn17,v31-426071,True,False,True,False,False,True,True
+668,45,central_repair_ring,central_repair_ring:inner repair yard:v67:task37:turn10,v31-556891,True,False,True,True,False,False,True
+669,45,riverbend_roofward,riverbend_roofward:river ford:v58:task38:turn15,v31-458274,True,True,True,False,False,False,True
+670,45,roofward_archive,roofward_archive:cool archive lane:v69:task38:turn12,v31-512417,True,False,True,True,False,False,True
+671,45,archive_signal,archive_signal:stone kiosk path:v57:task39:turn16,v31-475502,True,False,True,False,True,False,True
+672,45,signal_orchard,signal_orchard:dusk road:v67:task41:turn10,v31-388059,True,True,True,False,False,False,True
+673,45,orchard_riverbend,orchard_riverbend:fen track:v61:task39:turn17,v31-425937,True,False,True,True,False,False,True
+674,45,central_repair_ring,central_repair_ring:inner repair yard:v68:task38:turn10,v31-557004,True,True,True,True,False,True,True
+675,46,riverbend_roofward,riverbend_roofward:river ford:v59:task38:turn15,v31-458125,True,False,True,False,False,True,True
+676,46,roofward_archive,roofward_archive:cool archive lane:v70:task38:turn12,v31-512212,True,True,True,False,False,False,True
+677,46,archive_signal,archive_signal:stone kiosk path:v58:task40:turn16,v31-475106,True,False,True,True,False,False,True
+678,46,signal_orchard,signal_orchard:dusk road:v67:task41:turn11,v31-388569,True,False,True,False,True,False,True
+679,46,orchard_riverbend,orchard_riverbend:market plank route:v63:task39:turn17,v31-544214,True,True,True,False,False,False,True
+680,46,central_repair_ring,central_repair_ring:inner repair yard:v68:task38:turn10,v31-571292,True,False,True,True,False,False,True
+681,46,riverbend_roofward,riverbend_roofward:river ford:v59:task38:turn15,v31-471312,True,False,True,False,False,False,True
+682,46,roofward_archive,roofward_archive:cool archive lane:v70:task38:turn12,v31-526456,True,False,True,False,False,False,True
+683,46,archive_signal,archive_signal:stone kiosk path:v59:task40:turn16,v31-503933,True,False,True,False,False,False,True
+684,46,signal_orchard,signal_orchard:dusk road:v68:task41:turn11,v31-388532,True,True,True,False,False,False,True
+685,46,orchard_riverbend,orchard_riverbend:market plank route:v63:task40:turn17,v31-542909,True,False,True,True,False,False,True
+686,46,central_repair_ring,central_repair_ring:inner repair yard:v68:task38:turn11,v31-557258,True,False,True,False,True,False,True
+687,46,riverbend_roofward,riverbend_roofward:river ford:v60:task38:turn15,v31-476782,True,False,True,False,False,False,True
+688,46,roofward_archive,roofward_archive:cool archive lane:v70:task39:turn12,v31-512595,True,False,True,True,False,False,True
+689,46,archive_signal,archive_signal:stone kiosk path:v61:task40:turn16,v31-474864,True,True,True,False,False,True,True
+690,47,signal_orchard,signal_orchard:river lantern loop:v69:task41:turn11,v31-503988,True,False,True,False,False,True,True
+691,47,orchard_riverbend,orchard_riverbend:market plank route:v64:task40:turn17,v31-542887,True,True,True,False,False,False,True
+692,47,central_repair_ring,central_repair_ring:inner repair yard:v68:task39:turn11,v31-557134,True,False,True,True,False,False,True
+693,47,riverbend_roofward,riverbend_roofward:river ford:v60:task38:turn16,v31-477305,True,False,True,False,True,False,True
+694,47,roofward_archive,roofward_archive:cool archive lane:v71:task39:turn12,v31-526402,True,False,True,False,False,False,True
+695,47,archive_signal,archive_signal:stone kiosk path:v61:task41:turn16,v31-474734,True,False,True,True,False,False,True
+696,47,signal_orchard,signal_orchard:river lantern loop:v70:task41:turn11,v31-503673,True,False,True,False,False,True,True
+697,47,orchard_riverbend,orchard_riverbend:market plank route:v64:task40:turn17,v31-557561,True,False,True,False,False,False,True
+698,47,central_repair_ring,central_repair_ring:inner repair yard:v69:task39:turn11,v31-572573,True,False,True,False,False,False,True
+699,47,riverbend_roofward,riverbend_roofward:river ford:v61:task38:turn16,v31-456914,True,True,True,False,False,False,True
+700,47,roofward_archive,roofward_archive:cool archive lane:v71:task40:turn12,v31-510398,True,False,True,True,False,False,True
+701,47,archive_signal,archive_signal:stone kiosk path:v61:task41:turn17,v31-473721,True,False,True,False,True,False,True
+702,47,signal_orchard,signal_orchard:river lantern loop:v71:task41:turn11,v31-516887,True,False,True,False,False,False,True
+703,47,orchard_riverbend,orchard_riverbend:market plank route:v64:task41:turn17,v31-542515,True,False,True,True,False,False,True
+704,47,central_repair_ring,central_repair_ring:inner repair yard:v70:task39:turn11,v31-556003,True,True,True,False,False,True,True
+705,48,riverbend_roofward,riverbend_roofward:river ford:v62:task39:turn16,v31-456132,True,False,True,True,False,True,True
+706,48,roofward_archive,roofward_archive:cool archive lane:v72:task40:turn12,v31-511139,True,True,True,False,False,False,True
+707,48,archive_signal,archive_signal:stone kiosk path:v61:task42:turn17,v31-474357,True,False,True,True,False,False,True
+708,48,signal_orchard,signal_orchard:river lantern loop:v71:task41:turn12,v31-503273,True,False,True,False,True,False,True
+709,48,orchard_riverbend,orchard_riverbend:market plank route:v65:task41:turn17,v31-557570,True,False,True,False,False,False,True
+710,48,central_repair_ring,central_repair_ring:inner repair yard:v70:task40:turn11,v31-554690,True,False,True,True,False,False,True
+711,48,riverbend_roofward,riverbend_roofward:river ford:v62:task40:turn16,v31-454883,True,False,True,True,False,False,True
+712,48,roofward_archive,roofward_archive:cool archive lane:v72:task40:turn12,v31-525112,True,False,True,False,False,False,True
+713,48,archive_signal,archive_signal:stone kiosk path:v62:task42:turn17,v31-487853,True,False,True,False,False,False,True
+714,48,signal_orchard,signal_orchard:river lantern loop:v72:task41:turn12,v31-502119,True,True,True,False,False,False,True
+715,48,orchard_riverbend,orchard_riverbend:market plank route:v66:task42:turn17,v31-543112,True,False,True,True,False,False,True
+716,48,central_repair_ring,central_repair_ring:inner repair yard:v70:task40:turn12,v31-555200,True,False,True,False,True,False,True
+717,48,riverbend_roofward,riverbend_roofward:river ford:v63:task41:turn16,v31-455624,True,False,True,True,False,False,True
+718,48,roofward_archive,roofward_archive:cool archive lane:v72:task41:turn12,v31-511522,True,False,True,True,False,False,True
+719,48,archive_signal,archive_signal:stone kiosk path:v63:task42:turn17,v31-474940,True,True,True,False,False,True,True
+720,49,signal_orchard,signal_orchard:river lantern loop:v73:task41:turn12,v31-501966,True,False,True,False,False,True,True
+721,49,orchard_riverbend,orchard_riverbend:market plank route:v67:task42:turn17,v31-543090,True,True,True,False,False,False,True
+722,49,central_repair_ring,central_repair_ring:inner repair yard:v70:task41:turn12,v31-555076,True,False,True,True,False,False,True
+723,49,riverbend_roofward,riverbend_roofward:river ford:v63:task41:turn17,v31-455368,True,False,True,False,True,False,True
+724,49,roofward_archive,roofward_archive:cool archive lane:v73:task42:turn12,v31-511500,True,False,True,True,False,False,True
+725,49,archive_signal,archive_signal:stone kiosk path:v63:task43:turn17,v31-474810,True,False,True,True,False,True,True
+726,49,signal_orchard,signal_orchard:river lantern loop:v73:task41:turn12,v31-516331,True,False,True,False,False,False,True
+727,49,orchard_riverbend,orchard_riverbend:market plank route:v67:task42:turn17,v31-558314,True,False,True,False,False,False,True
+728,49,central_repair_ring,central_repair_ring:inner repair yard:v72:task41:turn12,v31-555931,True,True,True,False,False,False,True
+729,49,riverbend_roofward,riverbend_roofward:river ford:v64:task41:turn17,v31-456106,True,True,True,False,False,False,True
+730,49,roofward_archive,roofward_archive:cool archive lane:v73:task43:turn12,v31-511373,True,False,True,True,False,False,True
+731,49,archive_signal,archive_signal:stone kiosk path:v63:task43:turn18,v31-474554,True,False,True,False,True,False,True
+732,49,signal_orchard,signal_orchard:river lantern loop:v74:task41:turn12,v31-516178,True,False,True,False,False,False,True
+733,49,orchard_riverbend,orchard_riverbend:market plank route:v67:task43:turn17,v31-543475,True,False,True,True,False,False,True
+734,49,central_repair_ring,central_repair_ring:outer bell path:v74:task41:turn12,v31-527875,True,True,True,False,False,True,True
+735,50,roofward_archive,roofward_archive:cool archive lane:v75:task43:turn12,v31-510999,True,True,True,False,False,True,True
+736,50,archive_signal,archive_signal:stone kiosk path:v64:task44:turn18,v31-475331,True,True,True,True,False,False,True
+737,50,signal_orchard,signal_orchard:river lantern loop:v74:task42:turn12,v31-502876,True,False,True,True,False,False,True
+738,50,orchard_riverbend,orchard_riverbend:market plank route:v67:task43:turn18,v31-543900,True,False,True,False,True,False,True
+739,50,central_repair_ring,central_repair_ring:outer bell path:v75:task41:turn12,v31-550195,True,False,True,False,False,False,True
+740,50,riverbend_roofward,riverbend_roofward:river ford:v64:task42:turn17,v31-455633,True,False,True,True,False,False,True
+741,50,roofward_archive,roofward_archive:cool archive lane:v75:task43:turn12,v31-532642,True,False,True,False,False,False,True
+742,50,archive_signal,archive_signal:stone kiosk path:v64:task45:turn18,v31-475201,True,False,True,True,False,False,True
+743,50,signal_orchard,signal_orchard:river lantern loop:v75:task42:turn12,v31-523514,True,False,True,False,False,False,True
+744,50,orchard_riverbend,orchard_riverbend:market plank route:v67:task43:turn18,v31-566277,True,True,True,False,False,False,True
+745,50,central_repair_ring,central_repair_ring:outer bell path:v75:task42:turn12,v31-528282,True,False,True,True,False,False,True
+746,50,riverbend_roofward,riverbend_roofward:river ford:v64:task42:turn18,v31-456143,True,False,True,False,True,False,True
+747,50,roofward_archive,roofward_archive:cool archive lane:v76:task43:turn12,v31-533257,True,False,True,False,False,False,True
+748,50,archive_signal,archive_signal:stone kiosk path:v64:task45:turn18,v31-496862,True,False,True,True,False,False,True
+749,50,signal_orchard,signal_orchard:river lantern loop:v76:task42:turn12,v31-503461,True,True,True,False,False,True,True
+750,51,orchard_riverbend,orchard_riverbend:market plank route:v68:task43:turn18,v31-543494,True,False,True,False,False,True,True
+751,51,central_repair_ring,central_repair_ring:outer bell path:v76:task42:turn12,v31-527117,True,True,True,False,False,False,True
+752,51,riverbend_roofward,riverbend_roofward:river ford:v64:task43:turn18,v31-456011,True,False,True,True,False,False,True
+753,51,roofward_archive,roofward_archive:cool archive lane:v76:task43:turn13,v31-511102,True,False,True,False,True,False,True
+754,51,archive_signal,archive_signal:paper lane:v65:task45:turn18,v31-420415,True,False,True,False,False,True,True
+755,51,signal_orchard,signal_orchard:river lantern loop:v76:task43:turn12,v31-503333,True,False,True,True,False,False,True
+756,51,orchard_riverbend,orchard_riverbend:market plank route:v68:task43:turn18,v31-565257,True,False,True,False,False,False,True
+757,51,central_repair_ring,central_repair_ring:outer bell path:v76:task42:turn12,v31-549687,True,False,True,False,False,False,True
+758,51,riverbend_roofward,riverbend_roofward:river ford:v65:task43:turn18,v31-477461,True,False,True,False,False,False,True
+759,51,roofward_archive,roofward_archive:cool archive lane:v77:task43:turn13,v31-511843,True,True,True,False,False,False,True
+760,51,archive_signal,archive_signal:paper lane:v65:task46:turn18,v31-399578,True,False,True,True,False,False,True
+761,51,signal_orchard,signal_orchard:river lantern loop:v76:task44:turn13,v31-503205,True,False,True,True,True,False,True
+762,51,orchard_riverbend,orchard_riverbend:market plank route:v69:task43:turn18,v31-565107,True,False,True,False,False,False,True
+763,51,central_repair_ring,central_repair_ring:outer bell path:v76:task43:turn12,v31-527501,True,False,True,True,False,False,True
+764,51,riverbend_roofward,riverbend_roofward:river ford:v66:task43:turn18,v31-456600,True,True,True,False,False,True,True
+765,52,roofward_archive,roofward_archive:cool archive lane:v78:task43:turn13,v31-534130,True,False,True,False,False,True,True
+766,52,archive_signal,archive_signal:paper lane:v66:task46:turn18,v31-399254,True,True,True,False,False,False,True
+767,52,signal_orchard,signal_orchard:river lantern loop:v76:task45:turn13,v31-503843,True,False,True,True,False,False,True
+768,52,orchard_riverbend,orchard_riverbend:market plank route:v69:task44:turn19,v31-544495,True,False,True,True,True,False,True
+769,52,central_repair_ring,central_repair_ring:outer bell path:v77:task43:turn12,v31-549218,True,False,True,False,False,False,True
+770,52,riverbend_roofward,riverbend_roofward:river ford:v66:task44:turn18,v31-456468,True,False,True,True,False,False,True
+771,52,roofward_archive,roofward_archive:cool archive lane:v78:task43:turn13,v31-533064,True,False,True,False,False,False,True
+772,52,archive_signal,archive_signal:paper lane:v66:task46:turn18,v31-418557,True,False,True,False,False,False,True
+773,52,signal_orchard,signal_orchard:river lantern loop:v77:task45:turn13,v31-525428,True,False,True,False,False,False,True
+774,52,orchard_riverbend,orchard_riverbend:market plank route:v70:task45:turn19,v31-543649,True,True,True,True,False,False,True
+775,52,central_repair_ring,central_repair_ring:outer bell path:v77:task44:turn12,v31-527993,True,False,True,True,False,False,True
+776,52,riverbend_roofward,riverbend_roofward:river ford:v66:task44:turn19,v31-456978,True,False,True,False,True,False,True
+777,52,roofward_archive,roofward_archive:cool archive lane:v80:task43:turn13,v31-511336,True,True,True,False,False,False,True
+778,52,archive_signal,archive_signal:paper lane:v66:task47:turn18,v31-399628,True,False,True,True,False,False,True
+779,52,signal_orchard,signal_orchard:river lantern loop:v78:task45:turn13,v31-504428,True,True,True,False,False,True,True
+780,53,orchard_riverbend,orchard_riverbend:market plank route:v71:task45:turn19,v31-543499,True,False,True,False,False,True,True
+781,53,central_repair_ring,central_repair_ring:outer bell path:v78:task45:turn12,v31-528102,True,True,True,True,False,False,True
+782,53,riverbend_roofward,riverbend_roofward:river ford:v66:task44:turn19,v31-476897,True,False,True,True,False,False,True
+783,53,roofward_archive,roofward_archive:cool archive lane:v80:task43:turn14,v31-511080,True,False,True,False,True,True,True
+784,53,archive_signal,archive_signal:paper lane:v68:task47:turn18,v31-399695,True,True,True,False,False,False,True
+785,53,signal_orchard,signal_orchard:river lantern loop:v78:task46:turn13,v31-504300,True,False,True,True,False,False,True
+786,53,orchard_riverbend,orchard_riverbend:market plank route:v71:task45:turn19,v31-573929,True,False,True,False,False,False,True
+787,53,central_repair_ring,central_repair_ring:outer bell path:v78:task46:turn12,v31-528742,True,False,True,True,False,False,True
+788,53,riverbend_roofward,riverbend_roofward:river ford:v67:task44:turn19,v31-477514,True,False,True,False,False,False,True
+789,53,roofward_archive,roofward_archive:cool archive lane:v81:task43:turn14,v31-511821,True,True,True,False,False,False,True
+790,53,archive_signal,archive_signal:paper lane:v68:task48:turn18,v31-399559,True,False,True,True,False,False,True
+791,53,signal_orchard,signal_orchard:river lantern loop:v78:task46:turn14,v31-504044,True,False,True,False,True,False,True
+792,53,orchard_riverbend,orchard_riverbend:market plank route:v72:task45:turn19,v31-573779,True,False,True,False,False,False,True
+793,53,central_repair_ring,central_repair_ring:outer bell path:v78:task47:turn12,v31-528616,True,False,True,True,False,False,True
+794,53,riverbend_roofward,riverbend_roofward:river ford:v68:task44:turn19,v31-457311,True,True,True,False,False,True,True
+795,54,roofward_archive,roofward_archive:glass stair:v82:task43:turn14,v31-442783,True,False,True,False,False,True,True
+796,54,archive_signal,archive_signal:paper lane:v69:task48:turn18,v31-400289,True,True,True,False,False,False,True
+797,54,signal_orchard,signal_orchard:river lantern loop:v78:task47:turn14,v31-504682,True,False,True,True,False,False,True
+798,54,orchard_riverbend,orchard_riverbend:market plank route:v72:task45:turn20,v31-544369,True,False,True,False,True,False,True
+799,54,central_repair_ring,central_repair_ring:outer bell path:v79:task47:turn12,v31-551294,True,False,True,False,False,False,True
+800,54,riverbend_roofward,riverbend_roofward:river ford:v68:task45:turn19,v31-456422,True,False,True,True,False,False,True
+801,54,roofward_archive,roofward_archive:glass stair:v82:task43:turn14,v31-461791,True,False,True,False,False,False,True
+802,54,archive_signal,archive_signal:paper lane:v69:task48:turn18,v31-419726,True,False,True,False,False,False,True
+803,54,signal_orchard,signal_orchard:river lantern loop:v79:task47:turn14,v31-525241,True,False,True,False,False,False,True
+804,54,orchard_riverbend,orchard_riverbend:market plank route:v73:task45:turn20,v31-543590,True,True,True,False,False,False,True
+805,54,central_repair_ring,central_repair_ring:outer bell path:v79:task48:turn12,v31-528351,True,False,True,True,False,False,True
+806,54,riverbend_roofward,riverbend_roofward:river ford:v68:task45:turn20,v31-477765,True,False,True,False,True,False,True
+807,54,roofward_archive,roofward_archive:glass stair:v83:task43:turn14,v31-462406,True,False,True,False,False,False,True
+808,54,archive_signal,archive_signal:paper lane:v69:task49:turn18,v31-399906,True,False,True,True,False,False,True
+809,54,signal_orchard,signal_orchard:river lantern loop:v80:task47:turn14,v31-503582,True,True,True,False,False,True,True
+810,55,central_repair_ring,central_repair_ring:outer bell path:v80:task48:turn12,v31-527145,True,False,True,False,False,True,True
+811,55,riverbend_roofward,riverbend_roofward:orchard ridge detour:v70:task45:turn20,v31-584451,True,True,True,False,False,False,True
+812,55,roofward_archive,roofward_archive:glass stair:v83:task44:turn14,v31-442167,True,False,True,True,False,True,True
+813,55,archive_signal,archive_signal:paper lane:v69:task49:turn19,v31-399565,True,False,True,False,True,False,True
+814,55,signal_orchard,signal_orchard:river lantern loop:v81:task47:turn14,v31-517468,True,False,True,False,False,False,True
+815,55,orchard_riverbend,orchard_riverbend:market plank route:v73:task46:turn20,v31-543890,True,False,True,True,False,False,True
+816,55,central_repair_ring,central_repair_ring:outer bell path:v80:task48:turn12,v31-542262,True,False,True,False,False,False,True
+817,55,riverbend_roofward,riverbend_roofward:orchard ridge detour:v70:task45:turn20,v31-599715,True,False,True,False,False,False,True
+818,55,roofward_archive,roofward_archive:glass stair:v84:task44:turn14,v31-456122,True,False,True,False,False,False,True
+819,55,archive_signal,archive_signal:paper lane:v70:task49:turn19,v31-399367,True,True,True,False,False,False,True
+820,55,signal_orchard,signal_orchard:river lantern loop:v81:task48:turn14,v31-503216,True,False,True,True,False,False,True
+821,55,orchard_riverbend,orchard_riverbend:market plank route:v73:task46:turn21,v31-543634,True,False,True,False,True,False,True
+822,55,central_repair_ring,central_repair_ring:outer bell path:v81:task48:turn12,v31-542114,True,False,True,False,False,False,True
+823,55,riverbend_roofward,riverbend_roofward:river ford:v71:task46:turn20,v31-456447,True,False,True,True,False,False,True
+824,55,roofward_archive,roofward_archive:glass stair:v85:task44:turn14,v31-442751,True,True,True,False,False,True,True
+825,56,archive_signal,archive_signal:stone kiosk path:v71:task49:turn19,v31-475052,True,False,True,False,False,True,True
+826,56,signal_orchard,signal_orchard:river lantern loop:v82:task48:turn14,v31-503954,True,True,True,False,False,False,True
+827,56,orchard_riverbend,orchard_riverbend:market plank route:v73:task47:turn21,v31-544275,True,False,True,True,False,False,True
+828,56,central_repair_ring,central_repair_ring:outer bell path:v81:task48:turn13,v31-528017,True,False,True,False,True,False,True
+829,56,riverbend_roofward,riverbend_roofward:orchard ridge detour:v72:task47:turn20,v31-585697,True,False,True,True,False,False,True
+830,56,roofward_archive,roofward_archive:cool archive lane:v86:task45:turn14,v31-511628,True,False,True,True,False,False,True
+831,56,archive_signal,archive_signal:stone kiosk path:v71:task49:turn19,v31-488445,True,False,True,False,False,False,True
+832,56,signal_orchard,signal_orchard:river lantern loop:v82:task48:turn14,v31-518091,True,False,True,False,False,False,True
+833,56,orchard_riverbend,orchard_riverbend:market plank route:v75:task47:turn21,v31-544359,True,True,True,False,False,False,True
+834,56,central_repair_ring,central_repair_ring:outer bell path:v82:task48:turn13,v31-527996,True,True,True,False,False,False,True
+835,56,riverbend_roofward,riverbend_roofward:orchard ridge detour:v72:task48:turn20,v31-585575,True,False,True,True,False,False,True
+836,56,roofward_archive,roofward_archive:cool archive lane:v86:task45:turn15,v31-512138,True,False,True,False,True,False,True
+837,56,archive_signal,archive_signal:stone kiosk path:v72:task49:turn19,v31-489058,True,False,True,False,False,False,True
+838,56,signal_orchard,signal_orchard:river lantern loop:v82:task49:turn14,v31-504336,True,False,True,True,False,False,True
+839,56,orchard_riverbend,orchard_riverbend:market plank route:v76:task47:turn21,v31-545103,True,True,True,False,False,True,True
+840,57,central_repair_ring,central_repair_ring:outer bell path:v84:task48:turn13,v31-528083,True,True,True,False,False,True,True
+841,57,riverbend_roofward,riverbend_roofward:orchard ridge detour:v73:task48:turn20,v31-585557,True,True,True,False,False,True,True
+842,57,roofward_archive,roofward_archive:cool archive lane:v86:task46:turn15,v31-512011,True,False,True,True,False,False,True
+843,57,archive_signal,archive_signal:paper lane:v73:task49:turn20,v31-399418,True,False,True,False,True,False,True
+844,57,signal_orchard,signal_orchard:river lantern loop:v83:task49:turn14,v31-518038,True,False,True,False,False,False,True
+845,57,orchard_riverbend,orchard_riverbend:market plank route:v76:task48:turn21,v31-544978,True,False,True,True,False,False,True
+846,57,central_repair_ring,central_repair_ring:outer bell path:v84:task48:turn13,v31-542927,True,False,True,False,False,False,True
+847,57,riverbend_roofward,riverbend_roofward:orchard ridge detour:v73:task48:turn20,v31-600540,True,False,True,False,False,False,True
+848,57,roofward_archive,roofward_archive:glass stair:v87:task47:turn15,v31-443838,True,False,True,True,False,False,True
+849,57,archive_signal,archive_signal:paper lane:v75:task49:turn20,v31-400251,True,True,True,False,False,False,True
+850,57,signal_orchard,signal_orchard:river lantern loop:v83:task49:turn14,v31-517782,True,False,True,True,False,False,True
+851,57,orchard_riverbend,orchard_riverbend:market plank route:v76:task48:turn22,v31-544722,True,False,True,False,True,False,True
+852,57,central_repair_ring,central_repair_ring:inner repair yard:v85:task48:turn13,v31-571138,True,False,True,False,False,False,True
+853,57,riverbend_roofward,riverbend_roofward:orchard ridge detour:v73:task49:turn20,v31-585945,True,False,True,True,False,False,True
+854,57,roofward_archive,roofward_archive:glass stair:v88:task48:turn15,v31-443930,True,True,True,True,False,True,True
+855,58,archive_signal,archive_signal:paper lane:v75:task50:turn20,v31-399034,True,False,True,True,False,True,True
+856,58,signal_orchard,signal_orchard:dusk road:v85:task49:turn14,v31-389114,True,True,True,False,False,False,True
+857,58,orchard_riverbend,orchard_riverbend:market plank route:v76:task49:turn22,v31-545363,True,False,True,True,False,False,True
+858,58,central_repair_ring,central_repair_ring:inner repair yard:v85:task48:turn14,v31-571925,True,False,True,False,True,False,True
+859,58,riverbend_roofward,riverbend_roofward:orchard ridge detour:v74:task49:turn20,v31-601316,True,False,True,False,False,False,True
+860,58,roofward_archive,roofward_archive:glass stair:v88:task49:turn15,v31-443797,True,False,True,True,False,False,True
+861,58,archive_signal,archive_signal:paper lane:v75:task51:turn20,v31-398898,True,False,True,True,False,False,True
+862,58,signal_orchard,signal_orchard:river lantern loop:v86:task49:turn14,v31-518739,True,False,True,False,False,False,True
+863,58,orchard_riverbend,orchard_riverbend:fen track:v77:task49:turn22,v31-439879,True,False,True,False,False,False,True
+864,58,central_repair_ring,central_repair_ring:inner repair yard:v86:task48:turn14,v31-557085,True,True,True,False,False,False,True
+865,58,riverbend_roofward,riverbend_roofward:orchard ridge detour:v74:task50:turn20,v31-585233,True,False,True,True,False,False,True
+866,58,roofward_archive,roofward_archive:glass stair:v88:task49:turn16,v31-444307,True,False,True,False,True,False,True
+867,58,archive_signal,archive_signal:stone kiosk path:v76:task51:turn20,v31-489492,True,False,True,True,False,False,True
+868,58,signal_orchard,signal_orchard:river lantern loop:v87:task50:turn14,v31-504203,True,True,True,True,False,False,True
+869,58,orchard_riverbend,orchard_riverbend:fen track:v78:task49:turn22,v31-427377,True,True,True,False,False,True,True
+870,59,central_repair_ring,central_repair_ring:inner repair yard:v87:task48:turn14,v31-556937,True,False,True,False,False,True,True
+871,59,riverbend_roofward,riverbend_roofward:orchard ridge detour:v75:task50:turn20,v31-585215,True,True,True,False,False,False,True
+872,59,roofward_archive,roofward_archive:glass stair:v88:task50:turn16,v31-443066,True,False,True,True,False,False,True
+873,59,archive_signal,archive_signal:stone kiosk path:v76:task51:turn21,v31-475057,True,False,True,False,True,False,True
+874,59,signal_orchard,signal_orchard:river lantern loop:v87:task51:turn14,v31-504075,True,False,True,True,False,False,True
+875,59,orchard_riverbend,orchard_riverbend:market plank route:v80:task50:turn22,v31-544037,True,True,True,True,False,False,True
+876,59,central_repair_ring,central_repair_ring:inner repair yard:v87:task48:turn14,v31-571714,True,False,True,False,False,False,True
+877,59,riverbend_roofward,riverbend_roofward:orchard ridge detour:v75:task50:turn20,v31-600760,True,False,True,False,False,False,True
+878,59,roofward_archive,roofward_archive:glass stair:v89:task50:turn16,v31-457280,True,False,True,False,False,False,True
+879,59,archive_signal,archive_signal:stone kiosk path:v77:task51:turn21,v31-475793,True,True,True,False,False,False,True
+880,59,signal_orchard,signal_orchard:river lantern loop:v87:task52:turn14,v31-503947,True,False,True,True,False,False,True
+881,59,orchard_riverbend,orchard_riverbend:fen track:v81:task50:turn23,v31-425370,True,False,True,False,True,False,True
+882,59,central_repair_ring,central_repair_ring:inner repair yard:v89:task48:turn14,v31-579076,True,True,True,False,False,False,True
+883,59,riverbend_roofward,riverbend_roofward:orchard ridge detour:v75:task51:turn20,v31-585603,True,False,True,True,False,False,True
+884,59,roofward_archive,roofward_archive:glass stair:v90:task50:turn16,v31-442704,True,True,True,False,False,True,True
+885,60,signal_orchard,signal_orchard:river lantern loop:v88:task52:turn14,v31-504475,True,False,True,False,False,True,True
+886,60,orchard_riverbend,orchard_riverbend:fen track:v82:task51:turn23,v31-426142,True,True,True,True,False,False,True
+887,60,central_repair_ring,central_repair_ring:outer bell path:v90:task49:turn14,v31-529073,True,False,True,True,False,False,True
+888,60,riverbend_roofward,riverbend_roofward:orchard ridge detour:v75:task51:turn21,v31-586028,True,False,True,False,True,False,True
+889,60,roofward_archive,roofward_archive:cool archive lane:v92:task50:turn16,v31-512358,True,True,True,False,False,False,True
+890,60,archive_signal,archive_signal:stone kiosk path:v77:task52:turn21,v31-475322,True,False,True,True,False,False,True
+891,60,signal_orchard,signal_orchard:river lantern loop:v88:task52:turn14,v31-525957,True,False,True,False,False,False,True
+892,60,orchard_riverbend,orchard_riverbend:fen track:v82:task52:turn23,v31-426008,True,False,True,True,False,False,True
+893,60,central_repair_ring,central_repair_ring:outer bell path:v90:task49:turn14,v31-549916,True,False,True,False,False,False,True
+894,60,riverbend_roofward,riverbend_roofward:orchard ridge detour:v76:task51:turn21,v31-586010,True,True,True,False,False,False,True
+895,60,roofward_archive,roofward_archive:cool archive lane:v92:task51:turn16,v31-512231,True,False,True,True,False,False,True
+896,60,archive_signal,archive_signal:stone kiosk path:v77:task52:turn22,v31-475832,True,False,True,False,True,False,True
+897,60,signal_orchard,signal_orchard:river lantern loop:v89:task52:turn14,v31-526570,True,False,True,False,False,False,True
+898,60,orchard_riverbend,orchard_riverbend:fen track:v82:task53:turn23,v31-426640,True,False,True,True,False,False,True
+899,60,central_repair_ring,central_repair_ring:outer bell path:v91:task49:turn14,v31-550534,True,True,True,False,False,True,True
+900,61,riverbend_roofward,riverbend_roofward:orchard ridge detour:v77:task51:turn21,v31-585104,True,False,True,False,False,True,True
+901,61,roofward_archive,roofward_archive:cool archive lane:v93:task51:turn16,v31-511449,True,True,True,False,False,False,True
+902,61,archive_signal,archive_signal:stone kiosk path:v77:task53:turn22,v31-474945,True,False,True,True,False,False,True
+903,61,signal_orchard,signal_orchard:river lantern loop:v89:task52:turn15,v31-503819,True,False,True,False,True,False,True
+904,61,orchard_riverbend,orchard_riverbend:market plank route:v83:task53:turn23,v31-566507,True,False,True,False,False,False,True
+905,61,central_repair_ring,central_repair_ring:outer bell path:v91:task50:turn14,v31-527381,True,False,True,True,False,False,True
+906,61,riverbend_roofward,riverbend_roofward:orchard ridge detour:v77:task51:turn21,v31-607329,True,False,True,False,False,False,True
+907,61,roofward_archive,roofward_archive:cool archive lane:v93:task51:turn16,v31-533858,True,False,True,False,False,False,True
+908,61,archive_signal,archive_signal:stone kiosk path:v78:task53:turn22,v31-496709,True,False,True,False,False,False,True
+909,61,signal_orchard,signal_orchard:river lantern loop:v90:task52:turn15,v31-503629,True,True,True,False,False,False,True
+910,61,orchard_riverbend,orchard_riverbend:market plank route:v83:task54:turn23,v31-544161,True,False,True,True,False,False,True
+911,61,central_repair_ring,central_repair_ring:outer bell path:v91:task51:turn15,v31-527255,True,False,True,True,True,False,True
+912,61,riverbend_roofward,riverbend_roofward:orchard ridge detour:v77:task51:turn21,v31-607073,True,False,True,False,False,False,True
+913,61,roofward_archive,roofward_archive:cool archive lane:v93:task52:turn16,v31-511832,True,False,True,True,False,False,True
+914,61,archive_signal,archive_signal:stone kiosk path:v79:task53:turn22,v31-475528,True,True,True,False,False,True,True
+915,62,signal_orchard,signal_orchard:river lantern loop:v91:task52:turn15,v31-525749,True,False,True,False,False,True,True
+916,62,orchard_riverbend,orchard_riverbend:market plank route:v84:task54:turn23,v31-543752,True,True,True,False,False,False,True
+917,62,central_repair_ring,central_repair_ring:outer bell path:v91:task52:turn15,v31-527895,True,False,True,True,False,False,True
+918,62,riverbend_roofward,riverbend_roofward:orchard ridge detour:v77:task51:turn22,v31-609131,True,False,True,False,True,False,True
+919,62,roofward_archive,roofward_archive:cool archive lane:v94:task52:turn16,v31-533392,True,False,True,False,False,False,True
+920,62,archive_signal,archive_signal:stone kiosk path:v79:task54:turn22,v31-475398,True,False,True,True,False,False,True
+921,62,signal_orchard,signal_orchard:river lantern loop:v91:task52:turn15,v31-524689,True,False,True,False,False,False,True
+922,62,orchard_riverbend,orchard_riverbend:market plank route:v84:task54:turn23,v31-564749,True,False,True,False,False,False,True
+923,62,central_repair_ring,central_repair_ring:inner repair yard:v92:task52:turn15,v31-578272,True,False,True,False,False,False,True
+924,62,riverbend_roofward,riverbend_roofward:orchard ridge detour:v78:task51:turn22,v31-585850,True,True,True,False,False,False,True
+925,62,roofward_archive,roofward_archive:cool archive lane:v94:task53:turn16,v31-512320,True,False,True,True,False,False,True
+926,62,archive_signal,archive_signal:stone kiosk path:v79:task54:turn23,v31-475908,True,False,True,False,True,False,True
+927,62,signal_orchard,signal_orchard:river lantern loop:v92:task52:turn15,v31-525302,True,False,True,False,False,False,True
+928,62,orchard_riverbend,orchard_riverbend:market plank route:v84:task55:turn23,v31-544137,True,False,True,True,False,True,True
+929,62,central_repair_ring,central_repair_ring:inner repair yard:v93:task52:turn15,v31-556637,True,True,True,False,False,True,True
+930,63,riverbend_roofward,riverbend_roofward:orchard ridge detour:v79:task51:turn22,v31-585701,True,False,True,False,False,True,True
+931,63,roofward_archive,roofward_archive:cool archive lane:v95:task53:turn16,v31-512295,True,True,True,False,False,False,True
+932,63,archive_signal,archive_signal:stone kiosk path:v79:task55:turn23,v31-475778,True,False,True,True,False,False,True
+933,63,signal_orchard,signal_orchard:river lantern loop:v92:task52:turn16,v31-503577,True,False,True,False,True,False,True
+934,63,orchard_riverbend,orchard_riverbend:market plank route:v85:task55:turn23,v31-565933,True,False,True,False,False,False,True
+935,63,central_repair_ring,central_repair_ring:inner repair yard:v93:task52:turn15,v31-577788,True,False,True,True,False,False,True
+936,63,riverbend_roofward,riverbend_roofward:orchard ridge detour:v79:task51:turn22,v31-608915,True,False,True,False,False,False,True
+937,63,roofward_archive,roofward_archive:cool archive lane:v95:task53:turn16,v31-534433,True,False,True,False,False,False,True
+938,63,archive_signal,archive_signal:stone kiosk path:v81:task55:turn23,v31-475689,True,True,True,False,False,False,True
+939,63,signal_orchard,signal_orchard:river lantern loop:v93:task52:turn16,v31-504315,True,True,True,False,False,False,True
+940,63,orchard_riverbend,orchard_riverbend:market plank route:v85:task56:turn23,v31-543862,True,False,True,True,False,False,True
+941,63,central_repair_ring,central_repair_ring:inner repair yard:v93:task52:turn16,v31-556125,True,False,True,False,True,False,True
+942,63,riverbend_roofward,riverbend_roofward:orchard ridge detour:v80:task51:turn22,v31-607802,True,False,True,False,False,False,True
+943,63,roofward_archive,roofward_archive:cool archive lane:v95:task54:turn16,v31-512678,True,False,True,True,False,False,True
+944,63,archive_signal,archive_signal:stone kiosk path:v82:task55:turn23,v31-475659,True,True,True,False,False,True,True
+945,64,signal_orchard,signal_orchard:river lantern loop:v95:task52:turn16,v31-504390,True,True,True,False,False,True,True
+946,64,orchard_riverbend,orchard_riverbend:market plank route:v86:task56:turn23,v31-544606,True,True,True,False,False,False,True
+947,64,central_repair_ring,central_repair_ring:inner repair yard:v93:task53:turn16,v31-556767,True,False,True,True,False,False,True
+948,64,riverbend_roofward,riverbend_roofward:orchard ridge detour:v80:task52:turn23,v31-585742,True,False,True,True,True,False,True
+949,64,roofward_archive,roofward_archive:cool archive lane:v96:task54:turn16,v31-535192,True,False,True,False,False,False,True
+950,64,archive_signal,archive_signal:stone kiosk path:v82:task56:turn23,v31-475529,True,False,True,True,False,False,True
+951,64,signal_orchard,signal_orchard:river lantern loop:v95:task52:turn16,v31-524925,True,False,True,False,False,False,True
+952,64,orchard_riverbend,orchard_riverbend:market plank route:v86:task56:turn23,v31-566571,True,False,True,False,False,False,True
+953,64,central_repair_ring,central_repair_ring:inner repair yard:v94:task53:turn16,v31-578724,True,False,True,False,False,False,True
+954,64,riverbend_roofward,riverbend_roofward:orchard ridge detour:v81:task53:turn23,v31-585858,True,True,True,True,False,False,True
+955,64,roofward_archive,roofward_archive:cool archive lane:v96:task55:turn16,v31-513166,True,False,True,True,False,False,True
+956,64,archive_signal,archive_signal:stone kiosk path:v82:task56:turn24,v31-497982,True,False,True,False,True,False,True
+957,64,signal_orchard,signal_orchard:dusk road:v96:task52:turn16,v31-389120,True,False,True,False,False,True,True
+958,64,orchard_riverbend,orchard_riverbend:market plank route:v86:task57:turn23,v31-544991,True,False,True,True,False,False,True
+959,64,central_repair_ring,central_repair_ring:inner repair yard:v95:task53:turn16,v31-557366,True,True,True,False,False,True,True

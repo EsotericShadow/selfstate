@@ -1,0 +1,220 @@
+{
+  "ablations": {
+    "no_branch_comparison": 0.788185,
+    "no_editable_localstorage": 0.756185,
+    "no_import_export": 0.773185,
+    "no_later_dialogue": 0.764185,
+    "no_private_workspace_boundary": 0.797185,
+    "no_reload_persistence": 0.771185,
+    "no_simultaneous_caravans": 0.780185
+  },
+  "artifacts": {
+    "branch_dialogue_memory_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_branch_dialogue_memory.csv",
+    "branch_replays_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_branch_replays.csv",
+    "browser_ticks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_browser_ticks.csv",
+    "editable_local_storage_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_editable_local_storage.csv",
+    "later_agent_dialogue_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_later_agent_dialogue.csv",
+    "persistent_route_consequences_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_persistent_route_consequences.csv",
+    "report_md": "/Volumes/T7/Users-main/Documents/consciousness/docs/271_ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_report.md",
+    "results_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_results.json",
+    "route_branch_comparisons_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_route_branch_comparisons.csv",
+    "sensory_editable_state_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_sensory_editable_state.csv",
+    "simultaneous_caravan_tasks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_simultaneous_caravan_tasks.csv",
+    "state_import_export_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_state_import_export.csv",
+    "state_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_state.json",
+    "summary_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_summary.csv",
+    "verdict_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge_verdict.csv",
+    "visualization_html": "/Volumes/T7/Users-main/Documents/consciousness/visualizations/ssrm_3d_browser_world_v31_editable_state_branch_comparison_multi_route_dialogue_bridge.html"
+  },
+  "boundary": "deterministic browser-local editable-state/branch-comparison/multi-route-dialogue scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+  "counts": {
+    "branch_dialogue_memory": 960,
+    "branch_replays": 960,
+    "browser_ticks": 960,
+    "editable_local_storage": 960,
+    "later_agent_dialogue": 960,
+    "persistent_route_consequences": 960,
+    "route_branch_comparisons": 960,
+    "sensory_editable_state": 960,
+    "simultaneous_caravan_tasks": 960,
+    "state_import_export": 960
+  },
+  "metrics": {
+    "accepted_import_persistence": 1.0,
+    "branch_comparison_count": 960.0,
+    "branch_dialogue_memory_integrity": 1.0,
+    "branch_outcome_contrast_visibility": 1.0,
+    "branch_replay_integrity": 1.0,
+    "browser_world_v31_branch_dialogue_readiness": 0.937185,
+    "browser_world_v31_surface_available": 1.0,
+    "dialogue_references_avatar_decision": 1.0,
+    "dialogue_turn_count": 118.0,
+    "editable_localstorage_state_integrity": 1.0,
+    "editable_state_frame_count": 960.0,
+    "frequency_flower_branch_rhythm": 0.933333,
+    "import_accept_count": 226.0,
+    "import_attempt_count": 235.0,
+    "later_agent_dialogue_binding": 1.0,
+    "later_dialogue_after_branch_reload": 0.824,
+    "mean_branch_dialogue_channel_score": 0.985693,
+    "multi_route_simultaneous_task_binding": 0.956522,
+    "persisted_consequence_count": 151.0,
+    "persistent_recovery_consequence_binding": 1.0,
+    "privacy_safe_branch_dialogue_state": 1.0,
+    "reload_branch_replay_binding": 1.0,
+    "resource_conflict_count": 21.0,
+    "route_branch_comparison_coverage": 1.0,
+    "sensory_editable_state_binding": 1.0,
+    "simultaneous_task_conflict_visibility": 1.0,
+    "simultaneous_task_count": 345.0,
+    "source_live_route_continuity": 1.0,
+    "state_import_export_roundtrip": 1.0,
+    "visible_browser_editable_state_surface": 1.0,
+    "weakest_channel_score": 0.824
+  },
+  "name": "SSRM-3D browser world v31 editable state/branch comparison/multi-route dialogue bridge",
+  "next_gate": "browser world v32 with live multi-agent route dialogue choices, concurrent branch merge/rollback UI, editable world-state snapshots shared across sessions, and body-language reactions to avatar logistics decisions",
+  "report": 271,
+  "seed": 20260884,
+  "state": {
+    "avatar_task_count": {
+      "archive_signal": 56,
+      "central_repair_ring": 53,
+      "orchard_riverbend": 57,
+      "riverbend_roofward": 53,
+      "roofward_archive": 55,
+      "signal_orchard": 52
+    },
+    "boundary": "deterministic browser-local editable-state/branch-comparison/multi-route-dialogue scaffold only; no LLM call, subjective consciousness, real consent, moral patienthood, autonomous natural language, complete 3D engine, or metaphysical frequency claim",
+    "days": 64,
+    "dialogue_turn": {
+      "archive_signal": 24,
+      "central_repair_ring": 16,
+      "orchard_riverbend": 23,
+      "riverbend_roofward": 23,
+      "roofward_archive": 16,
+      "signal_orchard": 16
+    },
+    "forecast_revision": {
+      "archive_signal": 38,
+      "central_repair_ring": 37,
+      "orchard_riverbend": 41,
+      "riverbend_roofward": 39,
+      "roofward_archive": 39,
+      "signal_orchard": 38
+    },
+    "imported_ok_count": {
+      "archive_signal": 37,
+      "central_repair_ring": 36,
+      "orchard_riverbend": 40,
+      "riverbend_roofward": 38,
+      "roofward_archive": 38,
+      "signal_orchard": 37
+    },
+    "recovery": {
+      "archive_signal": 0.93985,
+      "central_repair_ring": 0.94,
+      "orchard_riverbend": 0.94,
+      "riverbend_roofward": 0.94,
+      "roofward_archive": 0.94,
+      "signal_orchard": 0.94
+    },
+    "route_choice": {
+      "archive_signal": "stone kiosk path",
+      "central_repair_ring": "inner repair yard",
+      "orchard_riverbend": "market plank route",
+      "riverbend_roofward": "orchard ridge detour",
+      "roofward_archive": "cool archive lane",
+      "signal_orchard": "dusk road"
+    },
+    "routes": [
+      {
+        "cargo": "planks",
+        "destination": "roofward",
+        "detour_choice": "orchard ridge detour",
+        "dialogue_style": "guarded practical",
+        "direct_choice": "river ford",
+        "guild": "Bridgewright Guild",
+        "route_id": "riverbend_roofward",
+        "source": "riverbend",
+        "steward": "Ari"
+      },
+      {
+        "cargo": "herbs",
+        "destination": "archive_quarter",
+        "detour_choice": "cool archive lane",
+        "dialogue_style": "gentle boundary",
+        "direct_choice": "glass stair",
+        "guild": "Glassgarden Guild",
+        "route_id": "roofward_archive",
+        "source": "roofward",
+        "steward": "Fay"
+      },
+      {
+        "cargo": "paper",
+        "destination": "signal_ridge",
+        "detour_choice": "stone kiosk path",
+        "dialogue_style": "precise public record",
+        "direct_choice": "paper lane",
+        "guild": "Index Guild",
+        "route_id": "archive_signal",
+        "source": "archive_quarter",
+        "steward": "Nia"
+      },
+      {
+        "cargo": "oil",
+        "destination": "orchard_fen",
+        "detour_choice": "river lantern loop",
+        "dialogue_style": "short cautious",
+        "direct_choice": "dusk road",
+        "guild": "Signal Guild",
+        "route_id": "signal_orchard",
+        "source": "signal_ridge",
+        "steward": "Milo"
+      },
+      {
+        "cargo": "seeds",
+        "destination": "riverbend",
+        "detour_choice": "market plank route",
+        "dialogue_style": "seasonal practical",
+        "direct_choice": "fen track",
+        "guild": "Seed Guild",
+        "route_id": "orchard_riverbend",
+        "source": "orchard_fen",
+        "steward": "Ivo"
+      },
+      {
+        "cargo": "wire",
+        "destination": "repair_hall",
+        "detour_choice": "outer bell path",
+        "dialogue_style": "direct repair",
+        "direct_choice": "inner repair yard",
+        "guild": "Repair Circle",
+        "route_id": "central_repair_ring",
+        "source": "central_exchange",
+        "steward": "Juno"
+      }
+    ],
+    "seed": 20260884,
+    "simultaneous_debt": {
+      "archive_signal": 0.0,
+      "central_repair_ring": 0.0,
+      "orchard_riverbend": 0.0,
+      "riverbend_roofward": 0.036,
+      "roofward_archive": 0.0,
+      "signal_orchard": 0.0
+    },
+    "source_v30_next_gate": "browser world v31 with actual editable localStorage state import/export, route-control branch comparison, multi-route simultaneous caravan tasks, and later agent dialogue about avatar route decisions",
+    "source_v30_verdict": "pass",
+    "state_version": {
+      "archive_signal": 82,
+      "central_repair_ring": 95,
+      "orchard_riverbend": 86,
+      "riverbend_roofward": 81,
+      "roofward_archive": 96,
+      "signal_orchard": 96
+    },
+    "ticks_per_day": 15
+  },
+  "verdict": "pass"
+}

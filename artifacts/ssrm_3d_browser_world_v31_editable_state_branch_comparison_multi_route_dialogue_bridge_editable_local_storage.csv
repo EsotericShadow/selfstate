@@ -1,0 +1,961 @@
+tick_id,day,tick,route_id,storage_key,state_version,route_choice,forecast_revision,avatar_task_count,recovery_score,editable_json_valid,mutation_source,save_button_visible
+0,1,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,1,river ford,1,0,0.622169,False,manual json editor,True
+1,1,1,roofward_archive,ssrm_v31_route_state_roofward_archive,3,glass stair,2,1,0.649989,True,manual json editor,True
+2,1,2,archive_signal,ssrm_v31_route_state_archive_signal,1,paper lane,1,1,0.615809,True,simulation tick,True
+3,1,3,signal_orchard,ssrm_v31_route_state_signal_orchard,1,dusk road,1,0,0.556169,True,simulation tick,True
+4,1,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,2,fen track,1,0,0.529989,True,manual json editor,True
+5,1,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,1,inner repair yard,1,1,0.549809,True,simulation tick,True
+6,1,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,1,river ford,1,0,0.624338,True,simulation tick,True
+7,1,7,roofward_archive,ssrm_v31_route_state_roofward_archive,5,cool archive lane,3,2,0.732251,True,manual json editor,True
+8,1,8,archive_signal,ssrm_v31_route_state_archive_signal,2,stone kiosk path,1,1,0.641871,True,manual json editor,True
+9,1,9,signal_orchard,ssrm_v31_route_state_signal_orchard,2,dusk road,2,0,0.566338,True,simulation tick,True
+10,1,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,2,fen track,1,1,0.573978,True,simulation tick,True
+11,1,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,1,inner repair yard,1,1,0.543721,True,simulation tick,True
+12,1,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,2,orchard ridge detour,1,0,0.654566,True,manual json editor,True
+13,1,13,roofward_archive,ssrm_v31_route_state_roofward_archive,6,cool archive lane,3,3,0.806747,True,manual json editor,True
+14,1,14,archive_signal,ssrm_v31_route_state_archive_signal,3,stone kiosk path,2,1,0.681933,True,simulation tick,True
+15,2,0,signal_orchard,ssrm_v31_route_state_signal_orchard,3,river lantern loop,2,0,0.598166,True,manual json editor,True
+16,2,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,3,fen track,2,1,0.58425,True,simulation tick,True
+17,2,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,1,inner repair yard,1,1,0.541813,True,simulation tick,True
+18,2,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,2,orchard ridge detour,1,0,0.680394,True,simulation tick,True
+19,2,4,roofward_archive,ssrm_v31_route_state_roofward_archive,6,cool archive lane,3,3,0.837677,True,manual json editor,True
+20,2,5,archive_signal,ssrm_v31_route_state_archive_signal,4,paper lane,2,2,0.726025,True,manual json editor,True
+21,2,6,signal_orchard,ssrm_v31_route_state_signal_orchard,3,river lantern loop,2,0,0.623994,True,simulation tick,True
+22,2,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,3,fen track,2,1,0.586522,True,simulation tick,True
+23,2,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,2,outer bell path,1,1,0.570075,True,manual json editor,True
+24,2,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,3,orchard ridge detour,2,0,0.714222,True,simulation tick,True
+25,2,10,roofward_archive,ssrm_v31_route_state_roofward_archive,6,cool archive lane,3,4,0.914607,True,simulation tick,True
+26,2,11,archive_signal,ssrm_v31_route_state_archive_signal,5,paper lane,2,3,0.770219,True,manual json editor,True
+27,2,12,signal_orchard,ssrm_v31_route_state_signal_orchard,4,river lantern loop,2,0,0.649822,True,manual json editor,True
+28,2,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,3,fen track,2,2,0.634794,True,simulation tick,True
+29,2,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,3,outer bell path,2,1,0.612337,True,simulation tick,True
+30,3,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,4,orchard ridge detour,2,0,0.74825,True,manual json editor,True
+31,3,1,roofward_archive,ssrm_v31_route_state_roofward_archive,6,cool archive lane,3,4,0.927742,True,simulation tick,True
+32,3,2,archive_signal,ssrm_v31_route_state_archive_signal,5,paper lane,2,4,0.818696,True,simulation tick,True
+33,3,3,signal_orchard,ssrm_v31_route_state_signal_orchard,5,river lantern loop,2,1,0.72385,True,manual json editor,True
+34,3,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,4,fen track,2,2,0.628808,True,manual json editor,True
+35,3,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,3,outer bell path,2,2,0.688799,True,simulation tick,True
+36,3,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,4,orchard ridge detour,2,0,0.776278,True,simulation tick,True
+37,3,7,roofward_archive,ssrm_v31_route_state_roofward_archive,6,cool archive lane,3,4,0.933742,True,simulation tick,True
+38,3,8,archive_signal,ssrm_v31_route_state_archive_signal,5,paper lane,2,4,0.821276,True,manual json editor,True
+39,3,9,signal_orchard,ssrm_v31_route_state_signal_orchard,7,river lantern loop,3,2,0.806112,True,manual json editor,True
+40,3,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,4,fen track,2,3,0.668823,True,simulation tick,True
+41,3,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,3,outer bell path,2,2,0.719495,True,simulation tick,True
+42,3,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,6,orchard ridge detour,3,0,0.812306,True,manual json editor,True
+43,3,13,roofward_archive,ssrm_v31_route_state_roofward_archive,6,cool archive lane,3,5,0.94,True,simulation tick,True
+44,3,14,archive_signal,ssrm_v31_route_state_archive_signal,6,paper lane,3,4,0.837856,True,simulation tick,True
+45,4,0,signal_orchard,ssrm_v31_route_state_signal_orchard,8,river lantern loop,3,2,0.842808,True,manual json editor,True
+46,4,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,6,market plank route,3,4,0.751553,True,manual json editor,True
+47,4,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,3,outer bell path,2,3,0.791791,True,simulation tick,True
+48,4,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,6,orchard ridge detour,3,0,0.842534,True,simulation tick,True
+49,4,4,roofward_archive,ssrm_v31_route_state_roofward_archive,8,cool archive lane,4,5,0.94,True,manual json editor,True
+50,4,5,archive_signal,ssrm_v31_route_state_archive_signal,6,paper lane,3,5,0.878075,True,simulation tick,True
+51,4,6,signal_orchard,ssrm_v31_route_state_signal_orchard,8,river lantern loop,3,2,0.873504,True,simulation tick,True
+52,4,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,7,market plank route,3,5,0.826517,True,manual json editor,True
+53,4,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,4,outer bell path,2,3,0.818321,True,manual json editor,True
+54,4,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,7,orchard ridge detour,4,0,0.880762,True,simulation tick,True
+55,4,10,roofward_archive,ssrm_v31_route_state_roofward_archive,8,cool archive lane,4,6,0.94,True,simulation tick,True
+56,4,11,archive_signal,ssrm_v31_route_state_archive_signal,6,paper lane,3,5,0.872397,True,simulation tick,True
+57,4,12,signal_orchard,ssrm_v31_route_state_signal_orchard,8,river lantern loop,3,2,0.9042,True,manual json editor,True
+58,4,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,8,market plank route,3,6,0.907715,True,manual json editor,True
+59,4,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,5,outer bell path,3,3,0.858851,True,simulation tick,True
+60,5,0,roofward_archive,ssrm_v31_route_state_roofward_archive,9,glass stair,4,6,0.94,True,manual json editor,True
+61,5,1,archive_signal,ssrm_v31_route_state_archive_signal,7,paper lane,4,5,0.88099,True,simulation tick,True
+62,5,2,signal_orchard,ssrm_v31_route_state_signal_orchard,8,river lantern loop,3,3,0.94,True,simulation tick,True
+63,5,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,8,market plank route,3,6,0.936546,True,simulation tick,True
+64,5,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,6,inner repair yard,3,4,0.905238,True,manual json editor,True
+65,5,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,7,orchard ridge detour,4,1,0.94,True,simulation tick,True
+66,5,6,roofward_archive,ssrm_v31_route_state_roofward_archive,9,glass stair,4,6,0.936546,True,simulation tick,True
+67,5,7,archive_signal,ssrm_v31_route_state_archive_signal,7,paper lane,4,5,0.881582,True,simulation tick,True
+68,5,8,signal_orchard,ssrm_v31_route_state_signal_orchard,9,river lantern loop,3,3,0.934265,True,manual json editor,True
+69,5,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,9,market plank route,4,6,0.94,True,simulation tick,True
+70,5,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,8,outer bell path,4,5,0.94,True,manual json editor,True
+71,5,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,7,orchard ridge detour,4,1,0.934211,True,simulation tick,True
+72,5,12,roofward_archive,ssrm_v31_route_state_roofward_archive,10,glass stair,4,6,0.936546,True,manual json editor,True
+73,5,13,archive_signal,ssrm_v31_route_state_archive_signal,7,paper lane,4,6,0.928174,True,simulation tick,True
+74,5,14,signal_orchard,ssrm_v31_route_state_signal_orchard,10,river lantern loop,4,3,0.94,True,simulation tick,True
+75,6,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,10,market plank route,4,6,0.94,True,manual json editor,True
+76,6,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,9,outer bell path,5,5,0.94,True,simulation tick,True
+77,6,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,7,orchard ridge detour,4,2,0.94,True,simulation tick,True
+78,6,3,roofward_archive,ssrm_v31_route_state_roofward_archive,10,glass stair,4,6,0.933061,True,simulation tick,True
+79,6,4,archive_signal,ssrm_v31_route_state_archive_signal,8,stone kiosk path,4,6,0.936546,True,manual json editor,True
+80,6,5,signal_orchard,ssrm_v31_route_state_signal_orchard,10,river lantern loop,4,4,0.94,True,simulation tick,True
+81,6,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,10,market plank route,4,6,0.934346,True,simulation tick,True
+82,6,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,9,outer bell path,5,5,0.936519,True,simulation tick,True
+83,6,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,8,river ford,4,2,0.935338,True,manual json editor,True
+84,6,9,roofward_archive,ssrm_v31_route_state_roofward_archive,11,glass stair,5,6,0.937576,True,simulation tick,True
+85,6,10,archive_signal,ssrm_v31_route_state_archive_signal,8,stone kiosk path,4,6,0.936546,True,simulation tick,True
+86,6,11,signal_orchard,ssrm_v31_route_state_signal_orchard,10,river lantern loop,4,4,0.94,True,simulation tick,True
+87,6,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,11,market plank route,4,6,0.94,True,manual json editor,True
+88,6,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,9,outer bell path,5,6,0.94,True,simulation tick,True
+89,6,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,9,river ford,5,2,0.94,True,simulation tick,True
+90,7,0,roofward_archive,ssrm_v31_route_state_roofward_archive,12,glass stair,5,6,0.94,True,manual json editor,True
+91,7,1,archive_signal,ssrm_v31_route_state_archive_signal,9,stone kiosk path,5,6,0.94,True,simulation tick,True
+92,7,2,signal_orchard,ssrm_v31_route_state_signal_orchard,10,river lantern loop,4,5,0.94,True,simulation tick,True
+93,7,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,11,market plank route,4,6,0.94,True,simulation tick,True
+94,7,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,10,outer bell path,5,6,0.934346,True,manual json editor,True
+95,7,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,9,river ford,5,3,0.94,True,simulation tick,True
+96,7,6,roofward_archive,ssrm_v31_route_state_roofward_archive,12,glass stair,5,6,0.935446,True,simulation tick,True
+97,7,7,archive_signal,ssrm_v31_route_state_archive_signal,9,stone kiosk path,5,6,0.934346,True,simulation tick,True
+98,7,8,signal_orchard,ssrm_v31_route_state_signal_orchard,12,river lantern loop,5,5,0.94,True,manual json editor,True
+99,7,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,12,market plank route,5,6,0.94,True,simulation tick,True
+100,7,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,10,outer bell path,5,7,0.94,True,simulation tick,True
+101,7,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,9,river ford,5,3,0.94,True,simulation tick,True
+102,7,12,roofward_archive,ssrm_v31_route_state_roofward_archive,13,glass stair,5,6,0.935446,True,manual json editor,True
+103,7,13,archive_signal,ssrm_v31_route_state_archive_signal,9,stone kiosk path,5,7,0.94,True,simulation tick,True
+104,7,14,signal_orchard,ssrm_v31_route_state_signal_orchard,13,river lantern loop,6,5,0.94,True,simulation tick,True
+105,8,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,14,market plank route,6,6,0.94,True,manual json editor,True
+106,8,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,11,outer bell path,6,7,0.94,True,simulation tick,True
+107,8,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,9,river ford,5,4,0.94,True,simulation tick,True
+108,8,3,roofward_archive,ssrm_v31_route_state_roofward_archive,13,glass stair,5,6,0.94,True,simulation tick,True
+109,8,4,archive_signal,ssrm_v31_route_state_archive_signal,10,stone kiosk path,5,7,0.935473,True,manual json editor,True
+110,8,5,signal_orchard,ssrm_v31_route_state_signal_orchard,13,river lantern loop,6,6,0.94,True,simulation tick,True
+111,8,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,14,market plank route,6,6,0.936546,True,simulation tick,True
+112,8,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,11,outer bell path,6,7,0.935473,True,simulation tick,True
+113,8,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,10,river ford,5,5,0.94,True,manual json editor,True
+114,8,9,roofward_archive,ssrm_v31_route_state_roofward_archive,14,glass stair,6,6,0.94,True,simulation tick,True
+115,8,10,archive_signal,ssrm_v31_route_state_archive_signal,10,stone kiosk path,5,8,0.94,True,simulation tick,True
+116,8,11,signal_orchard,ssrm_v31_route_state_signal_orchard,13,river lantern loop,6,6,0.94,True,simulation tick,True
+117,8,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,15,market plank route,6,6,0.936546,True,manual json editor,True
+118,8,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,11,outer bell path,6,8,0.94,True,simulation tick,True
+119,8,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,11,river ford,6,5,0.94,True,simulation tick,True
+120,9,0,roofward_archive,ssrm_v31_route_state_roofward_archive,15,glass stair,6,7,0.94,True,manual json editor,True
+121,9,1,archive_signal,ssrm_v31_route_state_archive_signal,11,stone kiosk path,6,8,0.94,True,simulation tick,True
+122,9,2,signal_orchard,ssrm_v31_route_state_signal_orchard,13,river lantern loop,6,7,0.94,True,simulation tick,True
+123,9,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,15,market plank route,6,6,0.94,True,simulation tick,True
+124,9,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,12,outer bell path,6,8,0.9366,True,manual json editor,True
+125,9,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,11,river ford,6,6,0.94,True,simulation tick,True
+126,9,6,roofward_archive,ssrm_v31_route_state_roofward_archive,15,glass stair,6,8,0.94,True,simulation tick,True
+127,9,7,archive_signal,ssrm_v31_route_state_archive_signal,11,stone kiosk path,6,8,0.9366,True,simulation tick,True
+128,9,8,signal_orchard,ssrm_v31_route_state_signal_orchard,14,river lantern loop,6,7,0.935473,True,manual json editor,True
+129,9,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,16,market plank route,7,6,0.94,True,simulation tick,True
+130,9,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,12,outer bell path,6,9,0.94,True,simulation tick,True
+131,9,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,11,river ford,6,6,0.94,True,simulation tick,True
+132,9,12,roofward_archive,ssrm_v31_route_state_roofward_archive,16,glass stair,6,9,0.94,True,manual json editor,True
+133,9,13,archive_signal,ssrm_v31_route_state_archive_signal,11,stone kiosk path,6,9,0.94,True,simulation tick,True
+134,9,14,signal_orchard,ssrm_v31_route_state_signal_orchard,15,river lantern loop,7,7,0.94,True,simulation tick,True
+135,10,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,13,outer bell path,6,9,0.94,True,manual json editor,True
+136,10,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,12,river ford,7,6,0.94,True,simulation tick,True
+137,10,2,roofward_archive,ssrm_v31_route_state_roofward_archive,16,glass stair,6,10,0.94,True,simulation tick,True
+138,10,3,archive_signal,ssrm_v31_route_state_archive_signal,11,stone kiosk path,6,10,0.94,True,simulation tick,True
+139,10,4,signal_orchard,ssrm_v31_route_state_signal_orchard,16,dusk road,7,7,0.933823,True,manual json editor,True
+140,10,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,16,market plank route,7,7,0.94,True,simulation tick,True
+141,10,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,13,outer bell path,6,9,0.93495,True,simulation tick,True
+142,10,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,12,river ford,7,6,0.933796,True,simulation tick,True
+143,10,8,roofward_archive,ssrm_v31_route_state_roofward_archive,17,glass stair,6,10,0.935926,True,manual json editor,True
+144,10,9,archive_signal,ssrm_v31_route_state_archive_signal,12,stone kiosk path,7,11,0.94,True,simulation tick,True
+145,10,10,signal_orchard,ssrm_v31_route_state_signal_orchard,16,dusk road,7,8,0.94,True,simulation tick,True
+146,10,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,16,market plank route,7,7,0.94,True,simulation tick,True
+147,10,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,15,outer bell path,7,9,0.94,True,manual json editor,True
+148,10,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,12,river ford,7,7,0.94,True,simulation tick,True
+149,10,14,roofward_archive,ssrm_v31_route_state_roofward_archive,18,glass stair,7,10,0.94,True,simulation tick,True
+150,11,0,archive_signal,ssrm_v31_route_state_archive_signal,13,paper lane,7,11,0.94,True,manual json editor,True
+151,11,1,signal_orchard,ssrm_v31_route_state_signal_orchard,17,dusk road,8,9,0.94,True,simulation tick,True
+152,11,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,16,market plank route,7,8,0.94,True,simulation tick,True
+153,11,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,15,outer bell path,7,9,0.94,True,simulation tick,True
+154,11,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,14,orchard ridge detour,8,7,0.94,True,manual json editor,True
+155,11,5,roofward_archive,ssrm_v31_route_state_roofward_archive,18,glass stair,7,11,0.94,True,simulation tick,True
+156,11,6,archive_signal,ssrm_v31_route_state_archive_signal,13,paper lane,7,11,0.935985,True,simulation tick,True
+157,11,7,signal_orchard,ssrm_v31_route_state_signal_orchard,17,dusk road,8,10,0.94,True,simulation tick,True
+158,11,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,17,market plank route,7,8,0.93385,True,manual json editor,True
+159,11,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,16,outer bell path,8,9,0.94,True,simulation tick,True
+160,11,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,15,orchard ridge detour,8,8,0.94,True,manual json editor,True
+161,11,11,roofward_archive,ssrm_v31_route_state_roofward_archive,18,glass stair,7,11,0.939753,True,simulation tick,True
+162,11,12,archive_signal,ssrm_v31_route_state_archive_signal,14,paper lane,7,11,0.935985,True,manual json editor,True
+163,11,13,signal_orchard,ssrm_v31_route_state_signal_orchard,17,dusk road,8,11,0.94,True,simulation tick,True
+164,11,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,18,market plank route,8,8,0.94,True,simulation tick,True
+165,12,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,17,outer bell path,8,9,0.93985,True,manual json editor,True
+166,12,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,16,orchard ridge detour,9,8,0.94,True,simulation tick,True
+167,12,2,roofward_archive,ssrm_v31_route_state_roofward_archive,19,glass stair,7,12,0.94,True,manual json editor,True
+168,12,3,archive_signal,ssrm_v31_route_state_archive_signal,14,paper lane,7,11,0.936369,True,simulation tick,True
+169,12,4,signal_orchard,ssrm_v31_route_state_signal_orchard,18,dusk road,8,11,0.93605,True,manual json editor,True
+170,12,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,18,market plank route,8,8,0.93495,True,simulation tick,True
+171,12,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,17,outer bell path,8,9,0.93385,True,simulation tick,True
+172,12,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,16,orchard ridge detour,9,8,0.93605,True,simulation tick,True
+173,12,8,roofward_archive,ssrm_v31_route_state_roofward_archive,20,glass stair,7,12,0.93488,True,manual json editor,True
+174,12,9,archive_signal,ssrm_v31_route_state_archive_signal,15,paper lane,8,11,0.94,True,simulation tick,True
+175,12,10,signal_orchard,ssrm_v31_route_state_signal_orchard,18,dusk road,8,12,0.94,True,simulation tick,True
+176,12,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,18,market plank route,8,9,0.94,True,simulation tick,True
+177,12,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,18,outer bell path,8,9,0.93385,True,manual json editor,True
+178,12,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,16,orchard ridge detour,9,9,0.94,True,simulation tick,True
+179,12,14,roofward_archive,ssrm_v31_route_state_roofward_archive,22,glass stair,8,12,0.94,True,manual json editor,True
+180,13,0,archive_signal,ssrm_v31_route_state_archive_signal,16,paper lane,8,11,0.94,True,manual json editor,True
+181,13,1,signal_orchard,ssrm_v31_route_state_signal_orchard,19,dusk road,9,12,0.94,True,simulation tick,True
+182,13,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,18,market plank route,8,10,0.94,True,simulation tick,True
+183,13,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,18,outer bell path,8,10,0.94,True,simulation tick,True
+184,13,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,17,orchard ridge detour,9,9,0.93385,True,manual json editor,True
+185,13,5,roofward_archive,ssrm_v31_route_state_roofward_archive,22,glass stair,8,13,0.94,True,simulation tick,True
+186,13,6,archive_signal,ssrm_v31_route_state_archive_signal,17,paper lane,8,11,0.934885,True,manual json editor,True
+187,13,7,signal_orchard,ssrm_v31_route_state_signal_orchard,19,dusk road,9,12,0.93385,True,simulation tick,True
+188,13,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,19,market plank route,8,10,0.93605,True,manual json editor,True
+189,13,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,19,outer bell path,9,11,0.94,True,simulation tick,True
+190,13,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,17,orchard ridge detour,9,10,0.94,True,simulation tick,True
+191,13,11,roofward_archive,ssrm_v31_route_state_roofward_archive,22,glass stair,8,13,0.94,True,simulation tick,True
+192,13,12,archive_signal,ssrm_v31_route_state_archive_signal,18,paper lane,8,11,0.933449,True,manual json editor,True
+193,13,13,signal_orchard,ssrm_v31_route_state_signal_orchard,19,dusk road,9,13,0.94,True,simulation tick,True
+194,13,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,20,market plank route,9,10,0.94,True,simulation tick,True
+195,14,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,20,outer bell path,9,11,0.94,True,manual json editor,True
+196,14,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,18,orchard ridge detour,10,10,0.94,True,simulation tick,True
+197,14,2,roofward_archive,ssrm_v31_route_state_roofward_archive,22,glass stair,8,14,0.94,True,simulation tick,True
+198,14,3,archive_signal,ssrm_v31_route_state_archive_signal,18,paper lane,8,11,0.94,True,simulation tick,True
+199,14,4,signal_orchard,ssrm_v31_route_state_signal_orchard,20,dusk road,9,13,0.93495,True,manual json editor,True
+200,14,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,20,market plank route,9,11,0.94,True,simulation tick,True
+201,14,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,20,outer bell path,9,11,0.93605,True,simulation tick,True
+202,14,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,18,orchard ridge detour,10,10,0.93495,True,simulation tick,True
+203,14,8,roofward_archive,ssrm_v31_route_state_roofward_archive,24,glass stair,9,14,0.94,True,manual json editor,True
+204,14,9,archive_signal,ssrm_v31_route_state_archive_signal,19,paper lane,9,11,0.94,True,simulation tick,True
+205,14,10,signal_orchard,ssrm_v31_route_state_signal_orchard,21,dusk road,9,14,0.94,True,manual json editor,True
+206,14,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,20,market plank route,9,11,0.93985,True,simulation tick,True
+207,14,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,21,outer bell path,9,11,0.93605,True,manual json editor,True
+208,14,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,18,orchard ridge detour,10,11,0.94,True,simulation tick,True
+209,14,14,roofward_archive,ssrm_v31_route_state_roofward_archive,25,glass stair,10,14,0.94,True,simulation tick,True
+210,15,0,signal_orchard,ssrm_v31_route_state_signal_orchard,23,river lantern loop,10,14,0.94,True,manual json editor,True
+211,15,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,22,market plank route,10,11,0.94,True,manual json editor,True
+212,15,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,21,outer bell path,9,12,0.94,True,simulation tick,True
+213,15,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,18,orchard ridge detour,10,11,0.94,True,simulation tick,True
+214,15,4,roofward_archive,ssrm_v31_route_state_roofward_archive,26,cool archive lane,10,14,0.935484,True,manual json editor,True
+215,15,5,archive_signal,ssrm_v31_route_state_archive_signal,19,paper lane,9,12,0.94,True,simulation tick,True
+216,15,6,signal_orchard,ssrm_v31_route_state_signal_orchard,23,river lantern loop,10,14,0.9366,True,simulation tick,True
+217,15,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,23,market plank route,10,11,0.9295,True,manual json editor,True
+218,15,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,22,outer bell path,9,12,0.9344,True,manual json editor,True
+219,15,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,19,orchard ridge detour,11,11,0.94,True,simulation tick,True
+220,15,10,roofward_archive,ssrm_v31_route_state_roofward_archive,26,cool archive lane,10,15,0.94,True,simulation tick,True
+221,15,11,archive_signal,ssrm_v31_route_state_archive_signal,19,paper lane,9,12,0.934362,True,simulation tick,True
+222,15,12,signal_orchard,ssrm_v31_route_state_signal_orchard,24,river lantern loop,10,14,0.9366,True,manual json editor,True
+223,15,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,24,market plank route,10,12,0.94,True,manual json editor,True
+224,15,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,23,outer bell path,10,12,0.94,True,simulation tick,True
+225,16,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,20,river ford,11,12,0.94,True,manual json editor,True
+226,16,1,roofward_archive,ssrm_v31_route_state_roofward_archive,27,cool archive lane,11,15,0.94,True,simulation tick,True
+227,16,2,archive_signal,ssrm_v31_route_state_archive_signal,19,paper lane,9,13,0.94,True,simulation tick,True
+228,16,3,signal_orchard,ssrm_v31_route_state_signal_orchard,24,river lantern loop,10,14,0.94,True,simulation tick,True
+229,16,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,25,fen track,10,12,0.9366,True,manual json editor,True
+230,16,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,24,outer bell path,10,13,0.94,True,manual json editor,True
+231,16,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,20,river ford,11,13,0.94,True,simulation tick,True
+232,16,7,roofward_archive,ssrm_v31_route_state_roofward_archive,27,cool archive lane,11,15,0.94,True,simulation tick,True
+233,16,8,archive_signal,ssrm_v31_route_state_archive_signal,20,paper lane,9,13,0.935489,True,manual json editor,True
+234,16,9,signal_orchard,ssrm_v31_route_state_signal_orchard,25,river lantern loop,11,14,0.94,True,simulation tick,True
+235,16,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,25,fen track,10,13,0.94,True,simulation tick,True
+236,16,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,25,outer bell path,10,13,0.94,True,manual json editor,True
+237,16,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,21,river ford,11,14,0.94,True,manual json editor,True
+238,16,13,roofward_archive,ssrm_v31_route_state_roofward_archive,27,cool archive lane,11,15,0.9366,True,simulation tick,True
+239,16,14,archive_signal,ssrm_v31_route_state_archive_signal,21,paper lane,10,13,0.94,True,simulation tick,True
+240,17,0,signal_orchard,ssrm_v31_route_state_signal_orchard,26,river lantern loop,11,14,0.94,True,manual json editor,True
+241,17,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,26,fen track,11,13,0.94,True,simulation tick,True
+242,17,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,25,outer bell path,10,14,0.94,True,simulation tick,True
+243,17,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,21,river ford,11,14,0.94,True,simulation tick,True
+244,17,4,roofward_archive,ssrm_v31_route_state_roofward_archive,28,cool archive lane,11,16,0.94,True,manual json editor,True
+245,17,5,archive_signal,ssrm_v31_route_state_archive_signal,21,paper lane,10,14,0.94,True,simulation tick,True
+246,17,6,signal_orchard,ssrm_v31_route_state_signal_orchard,26,river lantern loop,11,14,0.9355,True,simulation tick,True
+247,17,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,26,fen track,11,13,0.9344,True,simulation tick,True
+248,17,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,26,outer bell path,10,14,0.9366,True,manual json editor,True
+249,17,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,22,river ford,12,14,0.94,True,simulation tick,True
+250,17,10,roofward_archive,ssrm_v31_route_state_roofward_archive,28,cool archive lane,11,17,0.94,True,simulation tick,True
+251,17,11,archive_signal,ssrm_v31_route_state_archive_signal,21,paper lane,10,14,0.94,True,simulation tick,True
+252,17,12,signal_orchard,ssrm_v31_route_state_signal_orchard,28,river lantern loop,12,14,0.94,True,manual json editor,True
+253,17,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,26,fen track,11,14,0.94,True,simulation tick,True
+254,17,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,27,outer bell path,11,14,0.94,True,simulation tick,True
+255,18,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,23,river ford,12,14,0.94,True,manual json editor,True
+256,18,1,roofward_archive,ssrm_v31_route_state_roofward_archive,29,cool archive lane,12,17,0.94,True,simulation tick,True
+257,18,2,archive_signal,ssrm_v31_route_state_archive_signal,21,paper lane,10,15,0.94,True,simulation tick,True
+258,18,3,signal_orchard,ssrm_v31_route_state_signal_orchard,28,river lantern loop,12,14,0.94,True,simulation tick,True
+259,18,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,28,fen track,12,14,0.94,True,manual json editor,True
+260,18,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,27,outer bell path,11,15,0.94,True,simulation tick,True
+261,18,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,23,river ford,12,14,0.94,True,simulation tick,True
+262,18,7,roofward_archive,ssrm_v31_route_state_roofward_archive,29,cool archive lane,12,17,0.9355,True,simulation tick,True
+263,18,8,archive_signal,ssrm_v31_route_state_archive_signal,22,paper lane,10,16,0.94,True,manual json editor,True
+264,18,9,signal_orchard,ssrm_v31_route_state_signal_orchard,29,river lantern loop,13,14,0.94,True,simulation tick,True
+265,18,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,28,fen track,12,15,0.94,True,simulation tick,True
+266,18,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,27,outer bell path,11,15,0.94,True,simulation tick,True
+267,18,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,24,river ford,12,14,0.9366,True,manual json editor,True
+268,18,13,roofward_archive,ssrm_v31_route_state_roofward_archive,29,cool archive lane,12,18,0.94,True,simulation tick,True
+269,18,14,archive_signal,ssrm_v31_route_state_archive_signal,23,paper lane,11,17,0.94,True,simulation tick,True
+270,19,0,signal_orchard,ssrm_v31_route_state_signal_orchard,30,river lantern loop,13,15,0.94,True,manual json editor,True
+271,19,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,29,fen track,13,15,0.94,True,simulation tick,True
+272,19,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,27,outer bell path,11,15,0.9355,True,simulation tick,True
+273,19,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,24,river ford,12,14,0.93332,True,simulation tick,True
+274,19,4,roofward_archive,ssrm_v31_route_state_roofward_archive,30,cool archive lane,12,18,0.9366,True,manual json editor,True
+275,19,5,archive_signal,ssrm_v31_route_state_archive_signal,23,paper lane,11,18,0.94,True,simulation tick,True
+276,19,6,signal_orchard,ssrm_v31_route_state_signal_orchard,30,river lantern loop,13,16,0.94,True,simulation tick,True
+277,19,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,29,fen track,13,15,0.9366,True,simulation tick,True
+278,19,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,28,outer bell path,11,15,0.9355,True,manual json editor,True
+279,19,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,24,river ford,12,14,0.92404,True,simulation tick,True
+280,19,10,roofward_archive,ssrm_v31_route_state_roofward_archive,30,cool archive lane,12,19,0.94,True,simulation tick,True
+281,19,11,archive_signal,ssrm_v31_route_state_archive_signal,23,paper lane,11,18,0.94,True,simulation tick,True
+282,19,12,signal_orchard,ssrm_v31_route_state_signal_orchard,31,river lantern loop,13,17,0.94,True,manual json editor,True
+283,19,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,29,fen track,13,16,0.94,True,simulation tick,True
+284,19,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,29,outer bell path,12,15,0.94,True,simulation tick,True
+285,20,0,roofward_archive,ssrm_v31_route_state_roofward_archive,30,cool archive lane,12,19,0.94,True,manual json editor,True
+286,20,1,archive_signal,ssrm_v31_route_state_archive_signal,24,paper lane,12,18,0.94,True,simulation tick,True
+287,20,2,signal_orchard,ssrm_v31_route_state_signal_orchard,31,river lantern loop,13,18,0.94,True,simulation tick,True
+288,20,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,29,fen track,13,17,0.94,True,simulation tick,True
+289,20,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,30,inner repair yard,12,15,0.93385,True,manual json editor,True
+290,20,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,24,river ford,12,15,0.94,True,simulation tick,True
+291,20,6,roofward_archive,ssrm_v31_route_state_roofward_archive,30,cool archive lane,12,19,0.93495,True,simulation tick,True
+292,20,7,archive_signal,ssrm_v31_route_state_archive_signal,24,paper lane,12,18,0.93385,True,simulation tick,True
+293,20,8,signal_orchard,ssrm_v31_route_state_signal_orchard,32,river lantern loop,13,18,0.93598,True,manual json editor,True
+294,20,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,30,fen track,14,18,0.94,True,simulation tick,True
+295,20,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,30,inner repair yard,12,16,0.94,True,simulation tick,True
+296,20,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,24,river ford,12,15,0.94,True,simulation tick,True
+297,20,12,roofward_archive,ssrm_v31_route_state_roofward_archive,31,cool archive lane,12,19,0.93495,True,manual json editor,True
+298,20,13,archive_signal,ssrm_v31_route_state_archive_signal,24,paper lane,12,19,0.94,True,simulation tick,True
+299,20,14,signal_orchard,ssrm_v31_route_state_signal_orchard,33,river lantern loop,14,18,0.94,True,simulation tick,True
+300,21,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,31,market plank route,14,18,0.94,True,manual json editor,True
+301,21,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,31,inner repair yard,13,17,0.94,True,simulation tick,True
+302,21,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,24,river ford,12,16,0.94,True,simulation tick,True
+303,21,3,roofward_archive,ssrm_v31_route_state_roofward_archive,31,cool archive lane,12,19,0.94,True,simulation tick,True
+304,21,4,archive_signal,ssrm_v31_route_state_archive_signal,24,paper lane,12,19,0.93495,True,manual json editor,True
+305,21,5,signal_orchard,ssrm_v31_route_state_signal_orchard,33,river lantern loop,14,19,0.94,True,simulation tick,True
+306,21,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,31,market plank route,14,18,0.935985,True,simulation tick,True
+307,21,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,31,inner repair yard,13,18,0.94,True,simulation tick,True
+308,21,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,26,orchard ridge detour,13,16,0.94,True,manual json editor,True
+309,21,9,roofward_archive,ssrm_v31_route_state_roofward_archive,32,cool archive lane,13,19,0.94,True,simulation tick,True
+310,21,10,archive_signal,ssrm_v31_route_state_archive_signal,24,paper lane,12,20,0.94,True,simulation tick,True
+311,21,11,signal_orchard,ssrm_v31_route_state_signal_orchard,33,river lantern loop,14,19,0.939807,True,simulation tick,True
+312,21,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,32,market plank route,14,18,0.935985,True,manual json editor,True
+313,21,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,31,inner repair yard,13,19,0.94,True,simulation tick,True
+314,21,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,27,orchard ridge detour,14,16,0.94,True,simulation tick,True
+315,22,0,roofward_archive,ssrm_v31_route_state_roofward_archive,34,cool archive lane,14,19,0.94,True,manual json editor,True
+316,22,1,archive_signal,ssrm_v31_route_state_archive_signal,25,paper lane,13,20,0.94,True,simulation tick,True
+317,22,2,signal_orchard,ssrm_v31_route_state_signal_orchard,33,river lantern loop,14,20,0.94,True,simulation tick,True
+318,22,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,32,market plank route,14,18,0.939785,True,simulation tick,True
+319,22,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,32,inner repair yard,13,19,0.94,True,manual json editor,True
+320,22,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,28,orchard ridge detour,14,17,0.94,True,manual json editor,True
+321,22,6,roofward_archive,ssrm_v31_route_state_roofward_archive,34,cool archive lane,14,19,0.93385,True,simulation tick,True
+322,22,7,archive_signal,ssrm_v31_route_state_archive_signal,25,paper lane,13,20,0.93605,True,simulation tick,True
+323,22,8,signal_orchard,ssrm_v31_route_state_signal_orchard,33,river lantern loop,14,20,0.934934,True,manual json editor,True
+324,22,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,33,market plank route,15,18,0.94,True,simulation tick,True
+325,22,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,32,inner repair yard,13,20,0.94,True,simulation tick,True
+326,22,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,29,orchard ridge detour,14,17,0.94,True,manual json editor,True
+327,22,12,roofward_archive,ssrm_v31_route_state_roofward_archive,35,glass stair,14,19,0.92848,True,manual json editor,True
+328,22,13,archive_signal,ssrm_v31_route_state_archive_signal,25,paper lane,13,21,0.94,True,simulation tick,True
+329,22,14,signal_orchard,ssrm_v31_route_state_signal_orchard,34,river lantern loop,15,20,0.94,True,simulation tick,True
+330,23,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,34,market plank route,15,18,0.94,True,manual json editor,True
+331,23,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,33,inner repair yard,14,20,0.94,True,simulation tick,True
+332,23,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,29,orchard ridge detour,14,18,0.94,True,simulation tick,True
+333,23,3,roofward_archive,ssrm_v31_route_state_roofward_archive,36,cool archive lane,14,19,0.94,True,manual json editor,True
+334,23,4,archive_signal,ssrm_v31_route_state_archive_signal,26,stone kiosk path,13,21,0.93385,True,manual json editor,True
+335,23,5,signal_orchard,ssrm_v31_route_state_signal_orchard,34,river lantern loop,15,21,0.94,True,simulation tick,True
+336,23,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,34,market plank route,15,18,0.934885,True,simulation tick,True
+337,23,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,33,inner repair yard,14,20,0.93385,True,simulation tick,True
+338,23,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,30,river ford,14,18,0.93605,True,manual json editor,True
+339,23,9,roofward_archive,ssrm_v31_route_state_roofward_archive,38,cool archive lane,15,19,0.94,True,manual json editor,True
+340,23,10,archive_signal,ssrm_v31_route_state_archive_signal,26,stone kiosk path,13,21,0.93385,True,simulation tick,True
+341,23,11,signal_orchard,ssrm_v31_route_state_signal_orchard,34,river lantern loop,15,21,0.94,True,simulation tick,True
+342,23,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,34,market plank route,15,18,0.934885,True,manual json editor,True
+343,23,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,33,inner repair yard,14,21,0.94,True,simulation tick,True
+344,23,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,31,river ford,15,18,0.94,True,simulation tick,True
+345,24,0,roofward_archive,ssrm_v31_route_state_roofward_archive,39,glass stair,15,19,0.94,True,manual json editor,True
+346,24,1,archive_signal,ssrm_v31_route_state_archive_signal,28,stone kiosk path,14,21,0.94,True,manual json editor,True
+347,24,2,signal_orchard,ssrm_v31_route_state_signal_orchard,34,river lantern loop,15,22,0.94,True,simulation tick,True
+348,24,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,34,market plank route,15,18,0.94,True,simulation tick,True
+349,24,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,34,inner repair yard,14,21,0.93495,True,manual json editor,True
+350,24,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,31,river ford,15,19,0.94,True,simulation tick,True
+351,24,6,roofward_archive,ssrm_v31_route_state_roofward_archive,39,glass stair,15,19,0.93605,True,simulation tick,True
+352,24,7,archive_signal,ssrm_v31_route_state_archive_signal,29,paper lane,14,21,0.93495,True,manual json editor,True
+353,24,8,signal_orchard,ssrm_v31_route_state_signal_orchard,35,river lantern loop,15,22,0.93385,True,manual json editor,True
+354,24,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,35,market plank route,16,18,0.94,True,simulation tick,True
+355,24,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,34,inner repair yard,14,22,0.94,True,simulation tick,True
+356,24,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,31,river ford,15,20,0.94,True,simulation tick,True
+357,24,12,roofward_archive,ssrm_v31_route_state_roofward_archive,41,glass stair,16,19,0.94,True,manual json editor,True
+358,24,13,archive_signal,ssrm_v31_route_state_archive_signal,30,paper lane,14,22,0.94,True,manual json editor,True
+359,24,14,signal_orchard,ssrm_v31_route_state_signal_orchard,36,river lantern loop,16,22,0.94,True,simulation tick,True
+360,25,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,35,inner repair yard,14,22,0.94,True,manual json editor,True
+361,25,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,32,river ford,16,20,0.94,True,simulation tick,True
+362,25,2,roofward_archive,ssrm_v31_route_state_roofward_archive,41,glass stair,16,20,0.94,True,simulation tick,True
+363,25,3,archive_signal,ssrm_v31_route_state_archive_signal,30,paper lane,14,22,0.94,True,simulation tick,True
+364,25,4,signal_orchard,ssrm_v31_route_state_signal_orchard,38,dusk road,17,22,0.94,True,manual json editor,True
+365,25,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,35,market plank route,16,19,0.94,True,simulation tick,True
+366,25,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,35,inner repair yard,14,22,0.9366,True,simulation tick,True
+367,25,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,32,river ford,16,20,0.9355,True,simulation tick,True
+368,25,8,roofward_archive,ssrm_v31_route_state_roofward_archive,42,cool archive lane,16,21,0.94,True,manual json editor,True
+369,25,9,archive_signal,ssrm_v31_route_state_archive_signal,31,paper lane,15,22,0.94,True,simulation tick,True
+370,25,10,signal_orchard,ssrm_v31_route_state_signal_orchard,39,river lantern loop,17,23,0.94,True,manual json editor,True
+371,25,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,35,market plank route,16,19,0.94,True,simulation tick,True
+372,25,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,36,inner repair yard,14,22,0.9366,True,manual json editor,True
+373,25,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,32,river ford,16,21,0.94,True,simulation tick,True
+374,25,14,roofward_archive,ssrm_v31_route_state_roofward_archive,43,cool archive lane,17,21,0.94,True,simulation tick,True
+375,26,0,archive_signal,ssrm_v31_route_state_archive_signal,32,stone kiosk path,15,23,0.94,True,manual json editor,True
+376,26,1,signal_orchard,ssrm_v31_route_state_signal_orchard,40,river lantern loop,18,23,0.94,True,simulation tick,True
+377,26,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,36,market plank route,16,20,0.94,True,manual json editor,True
+378,26,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,36,inner repair yard,14,22,0.93932,True,simulation tick,True
+379,26,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,33,orchard ridge detour,16,21,0.9366,True,manual json editor,True
+380,26,5,roofward_archive,ssrm_v31_route_state_roofward_archive,43,cool archive lane,17,22,0.94,True,simulation tick,True
+381,26,6,archive_signal,ssrm_v31_route_state_archive_signal,32,stone kiosk path,15,24,0.94,True,simulation tick,True
+382,26,7,signal_orchard,ssrm_v31_route_state_signal_orchard,40,river lantern loop,18,23,0.9366,True,simulation tick,True
+383,26,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,37,market plank route,16,20,0.935489,True,manual json editor,True
+384,26,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,37,inner repair yard,15,22,0.94,True,simulation tick,True
+385,26,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,33,orchard ridge detour,16,22,0.94,True,simulation tick,True
+386,26,11,roofward_archive,ssrm_v31_route_state_roofward_archive,43,cool archive lane,17,22,0.94,True,simulation tick,True
+387,26,12,archive_signal,ssrm_v31_route_state_archive_signal,33,stone kiosk path,15,25,0.94,False,manual json editor,True
+388,26,13,signal_orchard,ssrm_v31_route_state_signal_orchard,40,river lantern loop,18,24,0.94,True,simulation tick,True
+389,26,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,39,market plank route,17,20,0.94,True,manual json editor,True
+390,27,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,38,inner repair yard,15,22,0.94,True,manual json editor,True
+391,27,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,34,orchard ridge detour,17,22,0.94,True,simulation tick,True
+392,27,2,roofward_archive,ssrm_v31_route_state_roofward_archive,43,cool archive lane,17,23,0.94,True,simulation tick,True
+393,27,3,archive_signal,ssrm_v31_route_state_archive_signal,33,stone kiosk path,15,25,0.94,True,simulation tick,True
+394,27,4,signal_orchard,ssrm_v31_route_state_signal_orchard,41,river lantern loop,18,25,0.94,True,manual json editor,True
+395,27,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,39,market plank route,17,21,0.94,True,simulation tick,True
+396,27,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,39,inner repair yard,15,22,0.9355,True,manual json editor,True
+397,27,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,34,orchard ridge detour,17,22,0.9344,True,simulation tick,True
+398,27,8,roofward_archive,ssrm_v31_route_state_roofward_archive,44,cool archive lane,17,23,0.9366,True,manual json editor,True
+399,27,9,archive_signal,ssrm_v31_route_state_archive_signal,34,stone kiosk path,16,25,0.94,True,simulation tick,True
+400,27,10,signal_orchard,ssrm_v31_route_state_signal_orchard,41,river lantern loop,18,26,0.94,True,simulation tick,True
+401,27,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,39,market plank route,17,21,0.94,True,simulation tick,True
+402,27,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,40,inner repair yard,15,22,0.9355,True,manual json editor,True
+403,27,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,34,orchard ridge detour,17,23,0.94,True,simulation tick,True
+404,27,14,roofward_archive,ssrm_v31_route_state_roofward_archive,45,cool archive lane,18,23,0.94,True,simulation tick,True
+405,28,0,archive_signal,ssrm_v31_route_state_archive_signal,35,stone kiosk path,16,25,0.94,True,manual json editor,True
+406,28,1,signal_orchard,ssrm_v31_route_state_signal_orchard,42,river lantern loop,19,26,0.94,True,simulation tick,True
+407,28,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,39,market plank route,17,22,0.94,True,simulation tick,True
+408,28,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,40,inner repair yard,15,22,0.94,True,simulation tick,True
+409,28,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,35,orchard ridge detour,17,23,0.9355,True,manual json editor,True
+410,28,5,roofward_archive,ssrm_v31_route_state_roofward_archive,45,cool archive lane,18,24,0.94,True,simulation tick,True
+411,28,6,archive_signal,ssrm_v31_route_state_archive_signal,35,stone kiosk path,16,25,0.9366,True,simulation tick,True
+412,28,7,signal_orchard,ssrm_v31_route_state_signal_orchard,42,river lantern loop,19,26,0.9355,True,simulation tick,True
+413,28,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,41,market plank route,18,23,0.94,True,manual json editor,True
+414,28,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,41,inner repair yard,16,22,0.94,True,simulation tick,True
+415,28,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,35,orchard ridge detour,17,24,0.94,True,simulation tick,True
+416,28,11,roofward_archive,ssrm_v31_route_state_roofward_archive,45,cool archive lane,18,24,0.9344,True,simulation tick,True
+417,28,12,archive_signal,ssrm_v31_route_state_archive_signal,36,stone kiosk path,16,25,0.9366,True,manual json editor,True
+418,28,13,signal_orchard,ssrm_v31_route_state_signal_orchard,42,river lantern loop,19,27,0.94,True,simulation tick,True
+419,28,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,42,market plank route,19,24,0.94,True,simulation tick,True
+420,29,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,43,outer bell path,17,23,0.94,True,manual json editor,True
+421,29,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,36,orchard ridge detour,18,24,0.94,True,simulation tick,True
+422,29,2,roofward_archive,ssrm_v31_route_state_roofward_archive,45,cool archive lane,18,25,0.94,True,simulation tick,True
+423,29,3,archive_signal,ssrm_v31_route_state_archive_signal,36,stone kiosk path,16,25,0.94,True,simulation tick,True
+424,29,4,signal_orchard,ssrm_v31_route_state_signal_orchard,43,river lantern loop,19,27,0.9366,True,manual json editor,True
+425,29,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,42,market plank route,19,24,0.9355,True,simulation tick,True
+426,29,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,43,outer bell path,17,24,0.94,True,simulation tick,True
+427,29,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,36,orchard ridge detour,18,24,0.9366,True,simulation tick,True
+428,29,8,roofward_archive,ssrm_v31_route_state_roofward_archive,46,cool archive lane,18,25,0.9355,True,manual json editor,True
+429,29,9,archive_signal,ssrm_v31_route_state_archive_signal,37,stone kiosk path,17,25,0.94,True,simulation tick,True
+430,29,10,signal_orchard,ssrm_v31_route_state_signal_orchard,43,river lantern loop,19,28,0.94,True,simulation tick,True
+431,29,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,42,market plank route,19,24,0.94,True,simulation tick,True
+432,29,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,44,outer bell path,17,25,0.94,True,manual json editor,True
+433,29,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,36,orchard ridge detour,18,25,0.94,True,simulation tick,True
+434,29,14,roofward_archive,ssrm_v31_route_state_roofward_archive,46,cool archive lane,18,25,0.9355,True,simulation tick,True
+435,30,0,signal_orchard,ssrm_v31_route_state_signal_orchard,44,river lantern loop,19,28,0.94,True,manual json editor,True
+436,30,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,43,market plank route,20,24,0.94,True,simulation tick,True
+437,30,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,44,outer bell path,17,26,0.94,True,simulation tick,True
+438,30,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,36,orchard ridge detour,18,25,0.94,True,simulation tick,True
+439,30,4,roofward_archive,ssrm_v31_route_state_roofward_archive,47,cool archive lane,18,25,0.93385,True,manual json editor,True
+440,30,5,archive_signal,ssrm_v31_route_state_archive_signal,37,stone kiosk path,17,26,0.94,True,simulation tick,True
+441,30,6,signal_orchard,ssrm_v31_route_state_signal_orchard,44,river lantern loop,19,28,0.93495,True,simulation tick,True
+442,30,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,43,market plank route,20,24,0.93385,True,simulation tick,True
+443,30,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,45,outer bell path,17,26,0.93598,True,manual json editor,True
+444,30,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,37,orchard ridge detour,19,25,0.94,True,simulation tick,True
+445,30,10,roofward_archive,ssrm_v31_route_state_roofward_archive,47,cool archive lane,18,26,0.94,True,simulation tick,True
+446,30,11,archive_signal,ssrm_v31_route_state_archive_signal,37,stone kiosk path,17,26,0.94,True,simulation tick,True
+447,30,12,signal_orchard,ssrm_v31_route_state_signal_orchard,45,river lantern loop,19,28,0.93495,True,manual json editor,True
+448,30,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,43,market plank route,20,25,0.94,True,simulation tick,True
+449,30,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,46,outer bell path,18,26,0.94,True,simulation tick,True
+450,31,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,38,orchard ridge detour,19,25,0.94,True,manual json editor,True
+451,31,1,roofward_archive,ssrm_v31_route_state_roofward_archive,48,cool archive lane,19,26,0.94,True,simulation tick,True
+452,31,2,archive_signal,ssrm_v31_route_state_archive_signal,37,stone kiosk path,17,27,0.94,True,simulation tick,True
+453,31,3,signal_orchard,ssrm_v31_route_state_signal_orchard,45,river lantern loop,19,28,0.94,True,simulation tick,True
+454,31,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,44,market plank route,20,25,0.93495,True,manual json editor,True
+455,31,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,46,outer bell path,18,27,0.94,True,simulation tick,True
+456,31,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,38,orchard ridge detour,19,25,0.93605,True,simulation tick,True
+457,31,7,roofward_archive,ssrm_v31_route_state_roofward_archive,48,cool archive lane,19,26,0.93495,True,simulation tick,True
+458,31,8,archive_signal,ssrm_v31_route_state_archive_signal,38,stone kiosk path,17,27,0.93385,True,manual json editor,True
+459,31,9,signal_orchard,ssrm_v31_route_state_signal_orchard,46,river lantern loop,20,28,0.94,True,simulation tick,True
+460,31,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,44,market plank route,20,26,0.94,True,simulation tick,True
+461,31,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,46,outer bell path,18,27,0.939807,True,simulation tick,True
+462,31,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,40,orchard ridge detour,20,25,0.94,True,manual json editor,True
+463,31,13,roofward_archive,ssrm_v31_route_state_roofward_archive,48,cool archive lane,19,27,0.94,True,simulation tick,True
+464,31,14,archive_signal,ssrm_v31_route_state_archive_signal,39,stone kiosk path,18,27,0.94,True,simulation tick,True
+465,32,0,signal_orchard,ssrm_v31_route_state_signal_orchard,47,river lantern loop,20,28,0.93985,True,manual json editor,True
+466,32,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,45,market plank route,21,26,0.94,True,simulation tick,True
+467,32,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,46,outer bell path,18,28,0.94,True,simulation tick,True
+468,32,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,40,orchard ridge detour,20,26,0.94,True,simulation tick,True
+469,32,4,roofward_archive,ssrm_v31_route_state_roofward_archive,50,cool archive lane,20,27,0.94,True,manual json editor,True
+470,32,5,archive_signal,ssrm_v31_route_state_archive_signal,39,stone kiosk path,18,28,0.94,True,simulation tick,True
+471,32,6,signal_orchard,ssrm_v31_route_state_signal_orchard,47,river lantern loop,20,28,0.93385,True,simulation tick,True
+472,32,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,45,market plank route,21,26,0.93605,True,simulation tick,True
+473,32,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,47,outer bell path,18,28,0.934934,False,manual json editor,True
+474,32,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,41,orchard ridge detour,21,27,0.94,True,simulation tick,True
+475,32,10,roofward_archive,ssrm_v31_route_state_roofward_archive,50,cool archive lane,20,28,0.94,True,simulation tick,True
+476,32,11,archive_signal,ssrm_v31_route_state_archive_signal,39,stone kiosk path,18,28,0.94,True,simulation tick,True
+477,32,12,signal_orchard,ssrm_v31_route_state_signal_orchard,48,river lantern loop,20,28,0.93385,True,manual json editor,True
+478,32,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,45,market plank route,21,27,0.94,True,simulation tick,True
+479,32,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,48,outer bell path,19,28,0.94,True,simulation tick,True
+480,33,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,42,river ford,21,27,0.94,True,manual json editor,True
+481,33,1,roofward_archive,ssrm_v31_route_state_roofward_archive,51,cool archive lane,21,29,0.94,True,simulation tick,True
+482,33,2,archive_signal,ssrm_v31_route_state_archive_signal,39,stone kiosk path,18,29,0.94,True,simulation tick,True
+483,33,3,signal_orchard,ssrm_v31_route_state_signal_orchard,48,river lantern loop,20,28,0.94,True,simulation tick,True
+484,33,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,46,market plank route,21,27,0.93385,True,manual json editor,True
+485,33,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,48,outer bell path,19,29,0.94,True,simulation tick,True
+486,33,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,43,river ford,21,27,0.934885,True,manual json editor,True
+487,33,7,roofward_archive,ssrm_v31_route_state_roofward_archive,51,cool archive lane,21,30,0.94,True,simulation tick,True
+488,33,8,archive_signal,ssrm_v31_route_state_archive_signal,40,stone kiosk path,18,29,0.93605,True,manual json editor,True
+489,33,9,signal_orchard,ssrm_v31_route_state_signal_orchard,49,river lantern loop,21,28,0.94,True,simulation tick,True
+490,33,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,46,market plank route,21,28,0.94,True,simulation tick,True
+491,33,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,48,outer bell path,19,29,0.94,True,simulation tick,True
+492,33,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,44,river ford,21,27,0.933449,True,manual json editor,True
+493,33,13,roofward_archive,ssrm_v31_route_state_roofward_archive,51,cool archive lane,21,30,0.93985,True,simulation tick,True
+494,33,14,archive_signal,ssrm_v31_route_state_archive_signal,41,stone kiosk path,19,29,0.94,True,simulation tick,True
+495,34,0,signal_orchard,ssrm_v31_route_state_signal_orchard,50,river lantern loop,21,28,0.94,True,manual json editor,True
+496,34,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,46,market plank route,21,28,0.92895,True,simulation tick,True
+497,34,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,48,outer bell path,19,30,0.94,True,simulation tick,True
+498,34,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,44,river ford,21,27,0.94,True,simulation tick,True
+499,34,4,roofward_archive,ssrm_v31_route_state_roofward_archive,52,cool archive lane,21,30,0.93495,True,manual json editor,True
+500,34,5,archive_signal,ssrm_v31_route_state_archive_signal,41,stone kiosk path,19,30,0.94,True,simulation tick,True
+501,34,6,signal_orchard,ssrm_v31_route_state_signal_orchard,50,river lantern loop,21,28,0.93605,True,simulation tick,True
+502,34,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,46,market plank route,21,28,0.93495,True,simulation tick,True
+503,34,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,49,outer bell path,19,30,0.93385,True,manual json editor,True
+504,34,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,45,river ford,22,27,0.94,True,simulation tick,True
+505,34,10,roofward_archive,ssrm_v31_route_state_roofward_archive,53,cool archive lane,21,31,0.94,True,manual json editor,True
+506,34,11,archive_signal,ssrm_v31_route_state_archive_signal,41,stone kiosk path,19,31,0.94,True,simulation tick,True
+507,34,12,signal_orchard,ssrm_v31_route_state_signal_orchard,51,river lantern loop,21,28,0.93605,True,manual json editor,True
+508,34,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,46,market plank route,21,29,0.94,True,simulation tick,True
+509,34,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,50,outer bell path,20,30,0.94,True,simulation tick,True
+510,35,0,roofward_archive,ssrm_v31_route_state_roofward_archive,54,cool archive lane,21,31,0.94,True,manual json editor,True
+511,35,1,archive_signal,ssrm_v31_route_state_archive_signal,43,stone kiosk path,20,31,0.94,True,manual json editor,True
+512,35,2,signal_orchard,ssrm_v31_route_state_signal_orchard,51,river lantern loop,21,29,0.94,True,simulation tick,True
+513,35,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,46,market plank route,21,29,0.94,True,simulation tick,True
+514,35,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,51,outer bell path,20,30,0.9355,True,manual json editor,True
+515,35,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,45,river ford,22,28,0.94,True,simulation tick,True
+516,35,6,roofward_archive,ssrm_v31_route_state_roofward_archive,54,cool archive lane,21,31,0.9366,True,simulation tick,True
+517,35,7,archive_signal,ssrm_v31_route_state_archive_signal,44,stone kiosk path,20,31,0.9355,True,manual json editor,True
+518,35,8,signal_orchard,ssrm_v31_route_state_signal_orchard,53,river lantern loop,22,30,0.94,True,manual json editor,True
+519,35,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,47,market plank route,22,29,0.94,True,simulation tick,True
+520,35,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,51,outer bell path,20,31,0.94,True,simulation tick,True
+521,35,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,45,river ford,22,28,0.94,True,simulation tick,True
+522,35,12,roofward_archive,ssrm_v31_route_state_roofward_archive,55,cool archive lane,21,31,0.94,True,manual json editor,True
+523,35,13,archive_signal,ssrm_v31_route_state_archive_signal,45,stone kiosk path,20,32,0.94,True,manual json editor,True
+524,35,14,signal_orchard,ssrm_v31_route_state_signal_orchard,54,river lantern loop,23,31,0.94,True,simulation tick,True
+525,36,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,49,market plank route,23,30,0.94,True,manual json editor,True
+526,36,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,52,outer bell path,21,31,0.94,True,simulation tick,True
+527,36,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,45,river ford,22,28,0.935462,True,simulation tick,True
+528,36,3,roofward_archive,ssrm_v31_route_state_roofward_archive,55,cool archive lane,21,31,0.94,True,simulation tick,True
+529,36,4,archive_signal,ssrm_v31_route_state_archive_signal,46,paper lane,20,32,0.9366,True,manual json editor,True
+530,36,5,signal_orchard,ssrm_v31_route_state_signal_orchard,55,river lantern loop,23,32,0.94,True,manual json editor,True
+531,36,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,49,market plank route,23,31,0.94,True,simulation tick,True
+532,36,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,52,outer bell path,21,31,0.9366,True,simulation tick,True
+533,36,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,46,river ford,22,28,0.935462,True,manual json editor,True
+534,36,9,roofward_archive,ssrm_v31_route_state_roofward_archive,56,cool archive lane,22,31,0.94,True,simulation tick,True
+535,36,10,archive_signal,ssrm_v31_route_state_archive_signal,46,paper lane,20,33,0.94,True,simulation tick,True
+536,36,11,signal_orchard,ssrm_v31_route_state_signal_orchard,56,river lantern loop,23,32,0.94,True,manual json editor,True
+537,36,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,50,market plank route,23,32,0.94,True,manual json editor,True
+538,36,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,52,outer bell path,21,32,0.94,True,simulation tick,True
+539,36,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,47,river ford,23,28,0.94,True,simulation tick,True
+540,37,0,roofward_archive,ssrm_v31_route_state_roofward_archive,57,cool archive lane,22,31,0.94,True,manual json editor,True
+541,37,1,archive_signal,ssrm_v31_route_state_archive_signal,47,paper lane,21,33,0.94,True,simulation tick,True
+542,37,2,signal_orchard,ssrm_v31_route_state_signal_orchard,56,river lantern loop,23,33,0.94,True,simulation tick,True
+543,37,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,51,fen track,23,32,0.94,True,manual json editor,True
+544,37,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,53,outer bell path,21,32,0.9344,True,manual json editor,True
+545,37,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,47,river ford,23,29,0.94,True,simulation tick,True
+546,37,6,roofward_archive,ssrm_v31_route_state_roofward_archive,57,cool archive lane,22,31,0.9355,True,simulation tick,True
+547,37,7,archive_signal,ssrm_v31_route_state_archive_signal,47,paper lane,21,33,0.9344,True,simulation tick,True
+548,37,8,signal_orchard,ssrm_v31_route_state_signal_orchard,57,river lantern loop,23,33,0.9366,True,manual json editor,True
+549,37,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,53,fen track,24,32,0.94,True,manual json editor,True
+550,37,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,53,outer bell path,21,33,0.94,True,simulation tick,True
+551,37,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,47,river ford,23,29,0.94,True,simulation tick,True
+552,37,12,roofward_archive,ssrm_v31_route_state_roofward_archive,58,cool archive lane,22,31,0.9355,True,manual json editor,True
+553,37,13,archive_signal,ssrm_v31_route_state_archive_signal,47,paper lane,21,34,0.94,True,simulation tick,True
+554,37,14,signal_orchard,ssrm_v31_route_state_signal_orchard,58,river lantern loop,24,33,0.94,True,simulation tick,True
+555,38,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,54,market plank route,24,32,0.94,True,manual json editor,True
+556,38,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,55,inner repair yard,22,33,0.94,True,manual json editor,True
+557,38,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,47,river ford,23,30,0.94,True,simulation tick,True
+558,38,3,roofward_archive,ssrm_v31_route_state_roofward_archive,58,cool archive lane,22,31,0.94,True,simulation tick,True
+559,38,4,archive_signal,ssrm_v31_route_state_archive_signal,48,paper lane,21,34,0.9355,False,manual json editor,True
+560,38,5,signal_orchard,ssrm_v31_route_state_signal_orchard,58,river lantern loop,24,34,0.94,True,simulation tick,True
+561,38,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,54,market plank route,24,32,0.9366,True,simulation tick,True
+562,38,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,56,outer bell path,22,33,0.9355,True,manual json editor,True
+563,38,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,48,river ford,23,30,0.9344,True,manual json editor,True
+564,38,9,roofward_archive,ssrm_v31_route_state_roofward_archive,59,cool archive lane,23,31,0.94,True,simulation tick,True
+565,38,10,archive_signal,ssrm_v31_route_state_archive_signal,48,paper lane,21,35,0.94,True,simulation tick,True
+566,38,11,signal_orchard,ssrm_v31_route_state_signal_orchard,58,river lantern loop,24,34,0.94,True,simulation tick,True
+567,38,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,56,market plank route,25,32,0.94,True,manual json editor,True
+568,38,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,57,outer bell path,22,34,0.94,True,manual json editor,True
+569,38,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,49,river ford,24,30,0.94,True,simulation tick,True
+570,39,0,roofward_archive,ssrm_v31_route_state_roofward_archive,59,cool archive lane,23,31,0.94,True,manual json editor,True
+571,39,1,archive_signal,ssrm_v31_route_state_archive_signal,49,paper lane,22,35,0.94,True,simulation tick,True
+572,39,2,signal_orchard,ssrm_v31_route_state_signal_orchard,58,river lantern loop,24,35,0.94,True,simulation tick,True
+573,39,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,56,market plank route,25,32,0.94,True,simulation tick,True
+574,39,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,59,outer bell path,23,34,0.94,True,manual json editor,True
+575,39,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,49,river ford,24,31,0.94,True,simulation tick,True
+576,39,6,roofward_archive,ssrm_v31_route_state_roofward_archive,59,cool archive lane,23,31,0.9344,True,simulation tick,True
+577,39,7,archive_signal,ssrm_v31_route_state_archive_signal,49,paper lane,22,35,0.9366,True,simulation tick,True
+578,39,8,signal_orchard,ssrm_v31_route_state_signal_orchard,59,river lantern loop,24,35,0.9355,True,manual json editor,True
+579,39,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,57,market plank route,26,32,0.94,True,simulation tick,True
+580,39,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,59,outer bell path,23,35,0.94,True,simulation tick,True
+581,39,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,49,river ford,24,31,0.94,True,simulation tick,True
+582,39,12,roofward_archive,ssrm_v31_route_state_roofward_archive,60,cool archive lane,23,31,0.9344,True,manual json editor,True
+583,39,13,archive_signal,ssrm_v31_route_state_archive_signal,49,paper lane,22,36,0.94,True,simulation tick,True
+584,39,14,signal_orchard,ssrm_v31_route_state_signal_orchard,60,river lantern loop,25,35,0.94,True,simulation tick,True
+585,40,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,60,inner repair yard,23,35,0.94,True,manual json editor,True
+586,40,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,50,river ford,25,32,0.94,True,simulation tick,True
+587,40,2,roofward_archive,ssrm_v31_route_state_roofward_archive,60,cool archive lane,23,32,0.94,True,simulation tick,True
+588,40,3,archive_signal,ssrm_v31_route_state_archive_signal,49,paper lane,22,36,0.94,True,simulation tick,True
+589,40,4,signal_orchard,ssrm_v31_route_state_signal_orchard,60,river lantern loop,25,35,0.93385,True,manual json editor,True
+590,40,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,57,market plank route,26,33,0.94,True,simulation tick,True
+591,40,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,60,inner repair yard,23,35,0.93495,True,simulation tick,True
+592,40,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,50,river ford,25,33,0.94,True,simulation tick,True
+593,40,8,roofward_archive,ssrm_v31_route_state_roofward_archive,61,cool archive lane,23,32,0.93605,True,manual json editor,True
+594,40,9,archive_signal,ssrm_v31_route_state_archive_signal,50,paper lane,23,36,0.94,True,simulation tick,True
+595,40,10,signal_orchard,ssrm_v31_route_state_signal_orchard,60,river lantern loop,25,35,0.93385,True,simulation tick,True
+596,40,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,57,market plank route,26,33,0.94,True,simulation tick,True
+597,40,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,61,inner repair yard,23,35,0.93376,True,manual json editor,True
+598,40,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,50,river ford,25,34,0.94,True,simulation tick,True
+599,40,14,roofward_archive,ssrm_v31_route_state_roofward_archive,62,cool archive lane,24,32,0.94,True,simulation tick,True
+600,41,0,archive_signal,ssrm_v31_route_state_archive_signal,51,stone kiosk path,23,36,0.94,True,manual json editor,True
+601,41,1,signal_orchard,ssrm_v31_route_state_signal_orchard,61,river lantern loop,26,35,0.94,True,simulation tick,True
+602,41,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,57,market plank route,26,34,0.94,True,simulation tick,True
+603,41,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,61,inner repair yard,23,35,0.94,True,simulation tick,True
+604,41,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,51,orchard ridge detour,25,34,0.93495,True,manual json editor,True
+605,41,5,roofward_archive,ssrm_v31_route_state_roofward_archive,62,cool archive lane,24,33,0.94,True,simulation tick,True
+606,41,6,archive_signal,ssrm_v31_route_state_archive_signal,51,stone kiosk path,23,36,0.93605,True,simulation tick,True
+607,41,7,signal_orchard,ssrm_v31_route_state_signal_orchard,61,river lantern loop,26,35,0.93495,True,simulation tick,True
+608,41,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,57,market plank route,26,34,0.93385,True,manual json editor,True
+609,41,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,62,inner repair yard,24,35,0.94,True,simulation tick,True
+610,41,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,51,orchard ridge detour,25,35,0.94,True,simulation tick,True
+611,41,11,roofward_archive,ssrm_v31_route_state_roofward_archive,62,cool archive lane,24,34,0.94,True,simulation tick,True
+612,41,12,archive_signal,ssrm_v31_route_state_archive_signal,52,stone kiosk path,23,36,0.93605,True,manual json editor,True
+613,41,13,signal_orchard,ssrm_v31_route_state_signal_orchard,61,river lantern loop,26,36,0.94,True,simulation tick,True
+614,41,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,58,market plank route,27,34,0.94,True,simulation tick,True
+615,42,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,63,inner repair yard,24,35,0.93985,True,manual json editor,True
+616,42,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,52,orchard ridge detour,26,35,0.94,True,simulation tick,True
+617,42,2,roofward_archive,ssrm_v31_route_state_roofward_archive,62,cool archive lane,24,35,0.94,True,simulation tick,True
+618,42,3,archive_signal,ssrm_v31_route_state_archive_signal,52,stone kiosk path,23,37,0.94,True,simulation tick,True
+619,42,4,signal_orchard,ssrm_v31_route_state_signal_orchard,62,dusk road,26,36,0.93605,True,manual json editor,True
+620,42,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,58,market plank route,27,35,0.94,True,simulation tick,True
+621,42,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,63,inner repair yard,24,35,0.93385,True,simulation tick,True
+622,42,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,52,orchard ridge detour,26,35,0.93605,True,simulation tick,True
+623,42,8,roofward_archive,ssrm_v31_route_state_roofward_archive,64,cool archive lane,25,35,0.94,True,manual json editor,True
+624,42,9,archive_signal,ssrm_v31_route_state_archive_signal,53,stone kiosk path,24,38,0.94,True,simulation tick,True
+625,42,10,signal_orchard,ssrm_v31_route_state_signal_orchard,62,dusk road,26,37,0.94,True,simulation tick,True
+626,42,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,58,market plank route,27,35,0.94,True,simulation tick,True
+627,42,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,63,inner repair yard,24,35,0.92848,True,manual json editor,True
+628,42,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,52,orchard ridge detour,26,36,0.94,True,simulation tick,True
+629,42,14,roofward_archive,ssrm_v31_route_state_roofward_archive,65,cool archive lane,26,35,0.94,True,simulation tick,True
+630,43,0,archive_signal,ssrm_v31_route_state_archive_signal,55,stone kiosk path,25,38,0.94,True,manual json editor,True
+631,43,1,signal_orchard,ssrm_v31_route_state_signal_orchard,63,dusk road,27,38,0.94,True,simulation tick,True
+632,43,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,58,market plank route,27,36,0.94,True,simulation tick,True
+633,43,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,63,inner repair yard,24,35,0.93329,True,simulation tick,True
+634,43,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,53,orchard ridge detour,26,36,0.93385,True,manual json editor,True
+635,43,5,roofward_archive,ssrm_v31_route_state_roofward_archive,65,cool archive lane,26,36,0.94,True,simulation tick,True
+636,43,6,archive_signal,ssrm_v31_route_state_archive_signal,55,stone kiosk path,25,38,0.934885,True,simulation tick,True
+637,43,7,signal_orchard,ssrm_v31_route_state_signal_orchard,63,dusk road,27,39,0.94,True,simulation tick,True
+638,43,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,59,fen track,27,36,0.94,True,manual json editor,True
+639,43,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,64,inner repair yard,25,35,0.94,True,simulation tick,True
+640,43,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,53,orchard ridge detour,26,37,0.94,True,simulation tick,True
+641,43,11,roofward_archive,ssrm_v31_route_state_roofward_archive,65,cool archive lane,26,36,0.94,True,simulation tick,True
+642,43,12,archive_signal,ssrm_v31_route_state_archive_signal,56,stone kiosk path,25,38,0.934885,True,manual json editor,True
+643,43,13,signal_orchard,ssrm_v31_route_state_signal_orchard,63,dusk road,27,40,0.94,True,simulation tick,True
+644,43,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,60,fen track,28,36,0.94,True,simulation tick,True
+645,44,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,65,inner repair yard,25,35,0.94,False,manual json editor,True
+646,44,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,54,orchard ridge detour,27,37,0.94,True,manual json editor,True
+647,44,2,roofward_archive,ssrm_v31_route_state_roofward_archive,65,cool archive lane,26,37,0.94,True,simulation tick,True
+648,44,3,archive_signal,ssrm_v31_route_state_archive_signal,56,stone kiosk path,25,38,0.94,True,simulation tick,True
+649,44,4,signal_orchard,ssrm_v31_route_state_signal_orchard,64,dusk road,27,40,0.93495,True,manual json editor,True
+650,44,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,60,fen track,28,37,0.94,True,simulation tick,True
+651,44,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,65,inner repair yard,25,35,0.93605,True,simulation tick,True
+652,44,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,55,river ford,27,37,0.93495,True,manual json editor,True
+653,44,8,roofward_archive,ssrm_v31_route_state_roofward_archive,66,glass stair,26,37,0.93385,True,manual json editor,True
+654,44,9,archive_signal,ssrm_v31_route_state_archive_signal,57,stone kiosk path,26,38,0.94,True,simulation tick,True
+655,44,10,signal_orchard,ssrm_v31_route_state_signal_orchard,64,dusk road,27,41,0.94,True,simulation tick,True
+656,44,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,60,fen track,28,38,0.94,True,simulation tick,True
+657,44,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,66,inner repair yard,25,35,0.93605,True,manual json editor,True
+658,44,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,57,river ford,28,38,0.94,True,manual json editor,True
+659,44,14,roofward_archive,ssrm_v31_route_state_roofward_archive,67,glass stair,27,37,0.94,True,simulation tick,True
+660,45,0,signal_orchard,ssrm_v31_route_state_signal_orchard,65,dusk road,27,41,0.94,True,manual json editor,True
+661,45,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,61,fen track,29,38,0.94,True,simulation tick,True
+662,45,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,66,inner repair yard,25,36,0.94,True,simulation tick,True
+663,45,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,57,river ford,28,38,0.9366,True,simulation tick,True
+664,45,4,roofward_archive,ssrm_v31_route_state_roofward_archive,68,cool archive lane,27,37,0.9355,True,manual json editor,True
+665,45,5,archive_signal,ssrm_v31_route_state_archive_signal,57,stone kiosk path,26,39,0.94,True,simulation tick,True
+666,45,6,signal_orchard,ssrm_v31_route_state_signal_orchard,65,dusk road,27,41,0.9366,True,simulation tick,True
+667,45,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,61,fen track,29,38,0.94,True,simulation tick,True
+668,45,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,67,inner repair yard,25,37,0.94,True,manual json editor,True
+669,45,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,58,river ford,29,38,0.94,True,simulation tick,True
+670,45,10,roofward_archive,ssrm_v31_route_state_roofward_archive,69,cool archive lane,27,38,0.94,True,manual json editor,True
+671,45,11,archive_signal,ssrm_v31_route_state_archive_signal,57,stone kiosk path,26,39,0.94,True,simulation tick,True
+672,45,12,signal_orchard,ssrm_v31_route_state_signal_orchard,67,dusk road,28,41,0.94,True,manual json editor,True
+673,45,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,61,fen track,29,39,0.94,True,simulation tick,True
+674,45,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,68,inner repair yard,26,38,0.94,True,simulation tick,True
+675,46,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,59,river ford,29,38,0.94,True,manual json editor,True
+676,46,1,roofward_archive,ssrm_v31_route_state_roofward_archive,70,cool archive lane,28,38,0.94,True,simulation tick,True
+677,46,2,archive_signal,ssrm_v31_route_state_archive_signal,58,stone kiosk path,26,40,0.94,True,manual json editor,True
+678,46,3,signal_orchard,ssrm_v31_route_state_signal_orchard,67,dusk road,28,41,0.94,True,simulation tick,True
+679,46,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,63,market plank route,30,39,0.94,True,manual json editor,True
+680,46,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,68,inner repair yard,26,38,0.9355,True,simulation tick,True
+681,46,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,59,river ford,29,38,0.9344,True,simulation tick,True
+682,46,7,roofward_archive,ssrm_v31_route_state_roofward_archive,70,cool archive lane,28,38,0.9366,True,simulation tick,True
+683,46,8,archive_signal,ssrm_v31_route_state_archive_signal,59,stone kiosk path,26,40,0.935489,True,manual json editor,True
+684,46,9,signal_orchard,ssrm_v31_route_state_signal_orchard,68,dusk road,29,41,0.94,True,simulation tick,True
+685,46,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,63,market plank route,30,40,0.94,True,simulation tick,True
+686,46,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,68,inner repair yard,26,38,0.94,True,simulation tick,True
+687,46,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,60,river ford,29,38,0.93112,True,manual json editor,True
+688,46,13,roofward_archive,ssrm_v31_route_state_roofward_archive,70,cool archive lane,28,39,0.94,True,simulation tick,True
+689,46,14,archive_signal,ssrm_v31_route_state_archive_signal,61,stone kiosk path,27,40,0.94,True,manual json editor,True
+690,47,0,signal_orchard,ssrm_v31_route_state_signal_orchard,69,river lantern loop,29,41,0.94,True,manual json editor,True
+691,47,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,64,market plank route,31,40,0.94,True,simulation tick,True
+692,47,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,68,inner repair yard,26,39,0.94,True,simulation tick,True
+693,47,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,60,river ford,29,38,0.93802,True,simulation tick,True
+694,47,4,roofward_archive,ssrm_v31_route_state_roofward_archive,71,cool archive lane,28,39,0.9344,True,manual json editor,True
+695,47,5,archive_signal,ssrm_v31_route_state_archive_signal,61,stone kiosk path,27,41,0.94,True,simulation tick,True
+696,47,6,signal_orchard,ssrm_v31_route_state_signal_orchard,70,river lantern loop,29,41,0.94,True,manual json editor,True
+697,47,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,64,market plank route,31,40,0.9344,True,simulation tick,True
+698,47,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,69,inner repair yard,26,39,0.9366,True,manual json editor,True
+699,47,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,61,river ford,30,38,0.94,True,simulation tick,True
+700,47,10,roofward_archive,ssrm_v31_route_state_roofward_archive,71,cool archive lane,28,40,0.94,True,simulation tick,True
+701,47,11,archive_signal,ssrm_v31_route_state_archive_signal,61,stone kiosk path,27,41,0.94,True,simulation tick,True
+702,47,12,signal_orchard,ssrm_v31_route_state_signal_orchard,71,river lantern loop,29,41,0.9355,True,manual json editor,True
+703,47,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,64,market plank route,31,41,0.94,True,simulation tick,True
+704,47,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,70,inner repair yard,27,39,0.94,True,simulation tick,True
+705,48,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,62,river ford,30,39,0.94,True,manual json editor,True
+706,48,1,roofward_archive,ssrm_v31_route_state_roofward_archive,72,cool archive lane,29,40,0.94,True,simulation tick,True
+707,48,2,archive_signal,ssrm_v31_route_state_archive_signal,61,stone kiosk path,27,42,0.94,True,simulation tick,True
+708,48,3,signal_orchard,ssrm_v31_route_state_signal_orchard,71,river lantern loop,29,41,0.94,True,simulation tick,True
+709,48,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,65,market plank route,31,41,0.9355,True,manual json editor,True
+710,48,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,70,inner repair yard,27,40,0.94,True,simulation tick,True
+711,48,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,62,river ford,30,40,0.94,True,simulation tick,True
+712,48,7,roofward_archive,ssrm_v31_route_state_roofward_archive,72,cool archive lane,29,40,0.9355,True,simulation tick,True
+713,48,8,archive_signal,ssrm_v31_route_state_archive_signal,62,stone kiosk path,27,42,0.9344,True,manual json editor,True
+714,48,9,signal_orchard,ssrm_v31_route_state_signal_orchard,72,river lantern loop,30,41,0.94,True,simulation tick,True
+715,48,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,66,market plank route,31,42,0.94,True,manual json editor,True
+716,48,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,70,inner repair yard,27,40,0.94,True,simulation tick,True
+717,48,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,63,river ford,30,41,0.94,True,manual json editor,True
+718,48,13,roofward_archive,ssrm_v31_route_state_roofward_archive,72,cool archive lane,29,41,0.94,True,simulation tick,True
+719,48,14,archive_signal,ssrm_v31_route_state_archive_signal,63,stone kiosk path,28,42,0.94,True,simulation tick,True
+720,49,0,signal_orchard,ssrm_v31_route_state_signal_orchard,73,river lantern loop,30,41,0.94,True,manual json editor,True
+721,49,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,67,market plank route,32,42,0.94,True,simulation tick,True
+722,49,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,70,inner repair yard,27,41,0.94,True,manual json editor,True
+723,49,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,63,river ford,30,41,0.94,True,simulation tick,True
+724,49,4,roofward_archive,ssrm_v31_route_state_roofward_archive,73,cool archive lane,29,42,0.94,True,manual json editor,True
+725,49,5,archive_signal,ssrm_v31_route_state_archive_signal,63,stone kiosk path,28,43,0.94,True,simulation tick,True
+726,49,6,signal_orchard,ssrm_v31_route_state_signal_orchard,73,river lantern loop,30,41,0.9344,True,simulation tick,True
+727,49,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,67,market plank route,32,42,0.9366,True,simulation tick,True
+728,49,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,72,inner repair yard,28,41,0.94,True,manual json editor,True
+729,49,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,64,river ford,31,41,0.94,True,simulation tick,True
+730,49,10,roofward_archive,ssrm_v31_route_state_roofward_archive,73,cool archive lane,29,43,0.94,True,simulation tick,True
+731,49,11,archive_signal,ssrm_v31_route_state_archive_signal,63,stone kiosk path,28,43,0.94,True,simulation tick,True
+732,49,12,signal_orchard,ssrm_v31_route_state_signal_orchard,74,river lantern loop,30,41,0.9344,True,manual json editor,True
+733,49,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,67,market plank route,32,43,0.94,True,simulation tick,True
+734,49,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,74,outer bell path,29,41,0.94,True,manual json editor,True
+735,50,0,roofward_archive,ssrm_v31_route_state_roofward_archive,75,cool archive lane,30,43,0.94,True,manual json editor,True
+736,50,1,archive_signal,ssrm_v31_route_state_archive_signal,64,stone kiosk path,29,44,0.94,True,simulation tick,True
+737,50,2,signal_orchard,ssrm_v31_route_state_signal_orchard,74,river lantern loop,30,42,0.94,True,simulation tick,True
+738,50,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,67,market plank route,32,43,0.94,True,simulation tick,True
+739,50,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,75,outer bell path,29,41,0.93385,True,manual json editor,True
+740,50,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,64,river ford,31,42,0.94,True,simulation tick,True
+741,50,6,roofward_archive,ssrm_v31_route_state_roofward_archive,75,cool archive lane,30,43,0.93495,True,simulation tick,True
+742,50,7,archive_signal,ssrm_v31_route_state_archive_signal,64,stone kiosk path,29,45,0.94,True,simulation tick,True
+743,50,8,signal_orchard,ssrm_v31_route_state_signal_orchard,75,river lantern loop,30,42,0.93605,True,manual json editor,True
+744,50,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,67,market plank route,32,43,0.92895,True,simulation tick,True
+745,50,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,75,outer bell path,29,42,0.94,True,simulation tick,True
+746,50,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,64,river ford,31,42,0.94,True,simulation tick,True
+747,50,12,roofward_archive,ssrm_v31_route_state_roofward_archive,76,cool archive lane,30,43,0.93495,True,manual json editor,True
+748,50,13,archive_signal,ssrm_v31_route_state_archive_signal,64,stone kiosk path,29,45,0.93385,True,simulation tick,True
+749,50,14,signal_orchard,ssrm_v31_route_state_signal_orchard,76,river lantern loop,31,42,0.94,True,simulation tick,True
+750,51,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,68,market plank route,32,43,0.94,True,manual json editor,True
+751,51,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,76,outer bell path,30,42,0.94,True,simulation tick,True
+752,51,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,64,river ford,31,43,0.94,True,simulation tick,True
+753,51,3,roofward_archive,ssrm_v31_route_state_roofward_archive,76,cool archive lane,30,43,0.94,True,simulation tick,True
+754,51,4,archive_signal,ssrm_v31_route_state_archive_signal,65,paper lane,29,45,0.93866,True,manual json editor,True
+755,51,5,signal_orchard,ssrm_v31_route_state_signal_orchard,76,river lantern loop,31,43,0.94,True,simulation tick,True
+756,51,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,68,market plank route,32,43,0.93605,True,simulation tick,True
+757,51,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,76,outer bell path,30,42,0.93495,True,simulation tick,True
+758,51,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,65,river ford,31,43,0.93385,True,manual json editor,True
+759,51,9,roofward_archive,ssrm_v31_route_state_roofward_archive,77,cool archive lane,31,43,0.94,True,simulation tick,True
+760,51,10,archive_signal,ssrm_v31_route_state_archive_signal,65,paper lane,29,46,0.94,True,simulation tick,True
+761,51,11,signal_orchard,ssrm_v31_route_state_signal_orchard,76,river lantern loop,31,44,0.94,True,simulation tick,True
+762,51,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,69,market plank route,32,43,0.93605,True,manual json editor,True
+763,51,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,76,outer bell path,30,43,0.94,True,simulation tick,True
+764,51,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,66,river ford,32,43,0.94,True,simulation tick,True
+765,52,0,roofward_archive,ssrm_v31_route_state_roofward_archive,78,cool archive lane,31,43,0.93985,True,manual json editor,True
+766,52,1,archive_signal,ssrm_v31_route_state_archive_signal,66,paper lane,30,46,0.94,True,simulation tick,True
+767,52,2,signal_orchard,ssrm_v31_route_state_signal_orchard,76,river lantern loop,31,45,0.94,True,simulation tick,True
+768,52,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,69,market plank route,32,44,0.94,True,simulation tick,True
+769,52,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,77,outer bell path,30,43,0.93605,True,manual json editor,True
+770,52,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,66,river ford,32,44,0.94,True,simulation tick,True
+771,52,6,roofward_archive,ssrm_v31_route_state_roofward_archive,78,cool archive lane,31,43,0.93385,True,simulation tick,True
+772,52,7,archive_signal,ssrm_v31_route_state_archive_signal,66,paper lane,30,46,0.93605,True,simulation tick,True
+773,52,8,signal_orchard,ssrm_v31_route_state_signal_orchard,77,river lantern loop,31,45,0.93495,True,manual json editor,True
+774,52,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,70,market plank route,33,45,0.94,True,simulation tick,True
+775,52,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,77,outer bell path,30,44,0.94,True,simulation tick,True
+776,52,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,66,river ford,32,44,0.94,True,simulation tick,True
+777,52,12,roofward_archive,ssrm_v31_route_state_roofward_archive,80,cool archive lane,32,43,0.94,True,manual json editor,True
+778,52,13,archive_signal,ssrm_v31_route_state_archive_signal,66,paper lane,30,47,0.94,True,simulation tick,True
+779,52,14,signal_orchard,ssrm_v31_route_state_signal_orchard,78,river lantern loop,32,45,0.94,True,simulation tick,True
+780,53,0,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,71,market plank route,33,45,0.94,True,manual json editor,True
+781,53,1,central_repair_ring,ssrm_v31_route_state_central_repair_ring,78,outer bell path,31,45,0.94,True,simulation tick,True
+782,53,2,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,66,river ford,32,44,0.93605,True,simulation tick,True
+783,53,3,roofward_archive,ssrm_v31_route_state_roofward_archive,80,cool archive lane,32,43,0.94,True,simulation tick,True
+784,53,4,archive_signal,ssrm_v31_route_state_archive_signal,68,paper lane,31,47,0.94,True,manual json editor,True
+785,53,5,signal_orchard,ssrm_v31_route_state_signal_orchard,78,river lantern loop,32,46,0.94,True,simulation tick,True
+786,53,6,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,71,market plank route,33,45,0.934885,True,simulation tick,True
+787,53,7,central_repair_ring,ssrm_v31_route_state_central_repair_ring,78,outer bell path,31,46,0.94,True,simulation tick,True
+788,53,8,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,67,river ford,32,44,0.93605,True,manual json editor,True
+789,53,9,roofward_archive,ssrm_v31_route_state_roofward_archive,81,cool archive lane,33,43,0.94,True,simulation tick,True
+790,53,10,archive_signal,ssrm_v31_route_state_archive_signal,68,paper lane,31,48,0.94,True,simulation tick,True
+791,53,11,signal_orchard,ssrm_v31_route_state_signal_orchard,78,river lantern loop,32,46,0.94,True,simulation tick,True
+792,53,12,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,72,market plank route,33,45,0.934885,True,manual json editor,True
+793,53,13,central_repair_ring,ssrm_v31_route_state_central_repair_ring,78,outer bell path,31,47,0.94,True,simulation tick,True
+794,53,14,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,68,river ford,33,44,0.94,True,simulation tick,True
+795,54,0,roofward_archive,ssrm_v31_route_state_roofward_archive,82,glass stair,33,43,0.94,True,manual json editor,True
+796,54,1,archive_signal,ssrm_v31_route_state_archive_signal,69,paper lane,32,48,0.94,True,simulation tick,True
+797,54,2,signal_orchard,ssrm_v31_route_state_signal_orchard,78,river lantern loop,32,47,0.94,True,simulation tick,True
+798,54,3,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,72,market plank route,33,45,0.94,True,simulation tick,True
+799,54,4,central_repair_ring,ssrm_v31_route_state_central_repair_ring,79,outer bell path,31,47,0.93495,True,manual json editor,True
+800,54,5,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,68,river ford,33,45,0.94,True,simulation tick,True
+801,54,6,roofward_archive,ssrm_v31_route_state_roofward_archive,82,glass stair,33,43,0.93605,True,simulation tick,True
+802,54,7,archive_signal,ssrm_v31_route_state_archive_signal,69,paper lane,32,48,0.93495,True,simulation tick,True
+803,54,8,signal_orchard,ssrm_v31_route_state_signal_orchard,79,river lantern loop,32,47,0.93385,True,manual json editor,True
+804,54,9,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,73,market plank route,34,45,0.94,True,simulation tick,True
+805,54,10,central_repair_ring,ssrm_v31_route_state_central_repair_ring,79,outer bell path,31,48,0.94,True,simulation tick,True
+806,54,11,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,68,river ford,33,45,0.93385,True,simulation tick,True
+807,54,12,roofward_archive,ssrm_v31_route_state_roofward_archive,83,glass stair,33,43,0.93605,True,manual json editor,True
+808,54,13,archive_signal,ssrm_v31_route_state_archive_signal,69,paper lane,32,49,0.94,True,simulation tick,True
+809,54,14,signal_orchard,ssrm_v31_route_state_signal_orchard,80,river lantern loop,33,47,0.94,True,simulation tick,True
+810,55,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,80,outer bell path,31,48,0.94,True,manual json editor,True
+811,55,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,70,orchard ridge detour,34,45,0.94,True,manual json editor,True
+812,55,2,roofward_archive,ssrm_v31_route_state_roofward_archive,83,glass stair,33,44,0.94,True,simulation tick,True
+813,55,3,archive_signal,ssrm_v31_route_state_archive_signal,69,paper lane,32,49,0.94,True,simulation tick,True
+814,55,4,signal_orchard,ssrm_v31_route_state_signal_orchard,81,river lantern loop,33,47,0.9355,True,manual json editor,True
+815,55,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,73,market plank route,34,46,0.94,True,simulation tick,True
+816,55,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,80,outer bell path,31,48,0.9366,True,simulation tick,True
+817,55,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,70,orchard ridge detour,34,45,0.9355,False,manual json editor,True
+818,55,8,roofward_archive,ssrm_v31_route_state_roofward_archive,84,glass stair,33,44,0.9344,True,manual json editor,True
+819,55,9,archive_signal,ssrm_v31_route_state_archive_signal,70,paper lane,33,49,0.94,True,simulation tick,True
+820,55,10,signal_orchard,ssrm_v31_route_state_signal_orchard,81,river lantern loop,33,48,0.94,True,simulation tick,True
+821,55,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,73,market plank route,34,46,0.94,True,simulation tick,True
+822,55,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,81,outer bell path,31,48,0.9366,True,manual json editor,True
+823,55,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,71,river ford,34,46,0.94,True,manual json editor,True
+824,55,14,roofward_archive,ssrm_v31_route_state_roofward_archive,85,glass stair,34,44,0.94,True,simulation tick,True
+825,56,0,archive_signal,ssrm_v31_route_state_archive_signal,71,stone kiosk path,33,49,0.94,True,manual json editor,True
+826,56,1,signal_orchard,ssrm_v31_route_state_signal_orchard,82,river lantern loop,34,48,0.94,True,simulation tick,True
+827,56,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,73,market plank route,34,47,0.94,True,simulation tick,True
+828,56,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,81,outer bell path,31,48,0.94,True,simulation tick,True
+829,56,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,72,orchard ridge detour,34,47,0.94,True,manual json editor,True
+830,56,5,roofward_archive,ssrm_v31_route_state_roofward_archive,86,cool archive lane,34,45,0.94,True,manual json editor,True
+831,56,6,archive_signal,ssrm_v31_route_state_archive_signal,71,stone kiosk path,33,49,0.9344,True,simulation tick,True
+832,56,7,signal_orchard,ssrm_v31_route_state_signal_orchard,82,river lantern loop,34,48,0.9366,True,simulation tick,True
+833,56,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,75,market plank route,35,47,0.94,True,manual json editor,True
+834,56,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,82,outer bell path,32,48,0.94,True,simulation tick,True
+835,56,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,72,orchard ridge detour,34,48,0.94,True,simulation tick,True
+836,56,11,roofward_archive,ssrm_v31_route_state_roofward_archive,86,cool archive lane,34,45,0.94,True,manual json editor,True
+837,56,12,archive_signal,ssrm_v31_route_state_archive_signal,72,stone kiosk path,33,49,0.9344,True,manual json editor,True
+838,56,13,signal_orchard,ssrm_v31_route_state_signal_orchard,82,river lantern loop,34,49,0.94,True,simulation tick,True
+839,56,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,76,market plank route,36,47,0.94,True,simulation tick,True
+840,57,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,84,outer bell path,33,48,0.94,True,manual json editor,True
+841,57,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,73,orchard ridge detour,35,48,0.94,True,simulation tick,True
+842,57,2,roofward_archive,ssrm_v31_route_state_roofward_archive,86,cool archive lane,34,46,0.94,True,simulation tick,True
+843,57,3,archive_signal,ssrm_v31_route_state_archive_signal,73,paper lane,33,49,0.94,True,manual json editor,True
+844,57,4,signal_orchard,ssrm_v31_route_state_signal_orchard,83,river lantern loop,34,49,0.9344,True,manual json editor,True
+845,57,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,76,market plank route,36,48,0.94,True,simulation tick,True
+846,57,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,84,outer bell path,33,48,0.9355,True,simulation tick,True
+847,57,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,73,orchard ridge detour,35,48,0.9344,True,simulation tick,True
+848,57,8,roofward_archive,ssrm_v31_route_state_roofward_archive,87,glass stair,34,47,0.94,True,manual json editor,True
+849,57,9,archive_signal,ssrm_v31_route_state_archive_signal,75,paper lane,34,49,0.94,True,manual json editor,True
+850,57,10,signal_orchard,ssrm_v31_route_state_signal_orchard,83,river lantern loop,34,49,0.9344,True,simulation tick,True
+851,57,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,76,market plank route,36,48,0.94,True,simulation tick,True
+852,57,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,85,inner repair yard,33,48,0.9355,True,manual json editor,True
+853,57,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,73,orchard ridge detour,35,49,0.94,True,simulation tick,True
+854,57,14,roofward_archive,ssrm_v31_route_state_roofward_archive,88,glass stair,35,48,0.94,True,simulation tick,True
+855,58,0,archive_signal,ssrm_v31_route_state_archive_signal,75,paper lane,34,50,0.94,True,manual json editor,True
+856,58,1,signal_orchard,ssrm_v31_route_state_signal_orchard,85,dusk road,35,49,0.94,True,manual json editor,True
+857,58,2,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,76,market plank route,36,49,0.94,True,simulation tick,True
+858,58,3,central_repair_ring,ssrm_v31_route_state_central_repair_ring,85,inner repair yard,33,48,0.9366,True,simulation tick,True
+859,58,4,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,74,orchard ridge detour,35,49,0.9355,True,manual json editor,True
+860,58,5,roofward_archive,ssrm_v31_route_state_roofward_archive,88,glass stair,35,49,0.94,True,simulation tick,True
+861,58,6,archive_signal,ssrm_v31_route_state_archive_signal,75,paper lane,34,51,0.94,True,simulation tick,True
+862,58,7,signal_orchard,ssrm_v31_route_state_signal_orchard,86,river lantern loop,35,49,0.9355,True,manual json editor,True
+863,58,8,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,77,fen track,36,49,0.9344,True,manual json editor,True
+864,58,9,central_repair_ring,ssrm_v31_route_state_central_repair_ring,86,inner repair yard,34,48,0.94,True,simulation tick,True
+865,58,10,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,74,orchard ridge detour,35,50,0.94,True,simulation tick,True
+866,58,11,roofward_archive,ssrm_v31_route_state_roofward_archive,88,glass stair,35,49,0.94,True,simulation tick,True
+867,58,12,archive_signal,ssrm_v31_route_state_archive_signal,76,stone kiosk path,34,51,0.9366,True,manual json editor,True
+868,58,13,signal_orchard,ssrm_v31_route_state_signal_orchard,87,river lantern loop,35,50,0.94,True,manual json editor,True
+869,58,14,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,78,fen track,37,49,0.94,True,simulation tick,True
+870,59,0,central_repair_ring,ssrm_v31_route_state_central_repair_ring,87,inner repair yard,34,48,0.94,True,manual json editor,True
+871,59,1,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,75,orchard ridge detour,36,50,0.94,True,simulation tick,True
+872,59,2,roofward_archive,ssrm_v31_route_state_roofward_archive,88,glass stair,35,50,0.94,True,simulation tick,True
+873,59,3,archive_signal,ssrm_v31_route_state_archive_signal,76,stone kiosk path,34,51,0.94,True,simulation tick,True
+874,59,4,signal_orchard,ssrm_v31_route_state_signal_orchard,87,river lantern loop,35,51,0.94,True,manual json editor,True
+875,59,5,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,80,market plank route,38,50,0.94,True,manual json editor,True
+876,59,6,central_repair_ring,ssrm_v31_route_state_central_repair_ring,87,inner repair yard,34,48,0.9344,True,simulation tick,True
+877,59,7,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,75,orchard ridge detour,36,50,0.9366,True,simulation tick,True
+878,59,8,roofward_archive,ssrm_v31_route_state_roofward_archive,89,glass stair,35,50,0.9355,True,manual json editor,True
+879,59,9,archive_signal,ssrm_v31_route_state_archive_signal,77,stone kiosk path,35,51,0.94,True,simulation tick,True
+880,59,10,signal_orchard,ssrm_v31_route_state_signal_orchard,87,river lantern loop,35,52,0.94,True,simulation tick,True
+881,59,11,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,81,fen track,38,50,0.94,True,manual json editor,True
+882,59,12,central_repair_ring,ssrm_v31_route_state_central_repair_ring,89,inner repair yard,35,48,0.93912,True,manual json editor,True
+883,59,13,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,75,orchard ridge detour,36,51,0.94,True,simulation tick,True
+884,59,14,roofward_archive,ssrm_v31_route_state_roofward_archive,90,glass stair,36,50,0.94,True,simulation tick,True
+885,60,0,signal_orchard,ssrm_v31_route_state_signal_orchard,88,river lantern loop,35,52,0.94,True,manual json editor,True
+886,60,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,82,fen track,39,51,0.94,True,simulation tick,True
+887,60,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,90,outer bell path,35,49,0.94,True,manual json editor,True
+888,60,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,75,orchard ridge detour,36,51,0.94,True,simulation tick,True
+889,60,4,roofward_archive,ssrm_v31_route_state_roofward_archive,92,cool archive lane,37,50,0.94,True,manual json editor,True
+890,60,5,archive_signal,ssrm_v31_route_state_archive_signal,77,stone kiosk path,35,52,0.94,True,simulation tick,True
+891,60,6,signal_orchard,ssrm_v31_route_state_signal_orchard,88,river lantern loop,35,52,0.93495,True,simulation tick,True
+892,60,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,82,fen track,39,52,0.94,True,simulation tick,True
+893,60,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,90,outer bell path,35,49,0.93605,True,manual json editor,True
+894,60,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,76,orchard ridge detour,37,51,0.94,True,simulation tick,True
+895,60,10,roofward_archive,ssrm_v31_route_state_roofward_archive,92,cool archive lane,37,51,0.94,True,simulation tick,True
+896,60,11,archive_signal,ssrm_v31_route_state_archive_signal,77,stone kiosk path,35,52,0.94,True,simulation tick,True
+897,60,12,signal_orchard,ssrm_v31_route_state_signal_orchard,89,river lantern loop,35,52,0.93495,True,manual json editor,True
+898,60,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,82,fen track,39,53,0.94,True,simulation tick,True
+899,60,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,91,outer bell path,35,49,0.93605,True,manual json editor,True
+900,61,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,77,orchard ridge detour,37,51,0.94,True,manual json editor,True
+901,61,1,roofward_archive,ssrm_v31_route_state_roofward_archive,93,cool archive lane,38,51,0.94,True,simulation tick,True
+902,61,2,archive_signal,ssrm_v31_route_state_archive_signal,77,stone kiosk path,35,53,0.94,True,simulation tick,True
+903,61,3,signal_orchard,ssrm_v31_route_state_signal_orchard,89,river lantern loop,35,52,0.94,True,simulation tick,True
+904,61,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,83,market plank route,39,53,0.93495,True,manual json editor,True
+905,61,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,91,outer bell path,35,50,0.94,True,simulation tick,True
+906,61,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,77,orchard ridge detour,37,51,0.93605,True,simulation tick,True
+907,61,7,roofward_archive,ssrm_v31_route_state_roofward_archive,93,cool archive lane,38,51,0.93495,True,simulation tick,True
+908,61,8,archive_signal,ssrm_v31_route_state_archive_signal,78,stone kiosk path,35,53,0.93385,True,manual json editor,True
+909,61,9,signal_orchard,ssrm_v31_route_state_signal_orchard,90,river lantern loop,36,52,0.94,True,simulation tick,True
+910,61,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,83,market plank route,39,54,0.94,True,simulation tick,True
+911,61,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,91,outer bell path,35,51,0.94,True,simulation tick,True
+912,61,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,77,orchard ridge detour,37,51,0.93605,True,manual json editor,True
+913,61,13,roofward_archive,ssrm_v31_route_state_roofward_archive,93,cool archive lane,38,52,0.94,True,simulation tick,True
+914,61,14,archive_signal,ssrm_v31_route_state_archive_signal,79,stone kiosk path,36,53,0.94,True,simulation tick,True
+915,62,0,signal_orchard,ssrm_v31_route_state_signal_orchard,91,river lantern loop,36,52,0.93985,True,manual json editor,True
+916,62,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,84,market plank route,40,54,0.94,True,simulation tick,True
+917,62,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,91,outer bell path,35,52,0.94,True,simulation tick,True
+918,62,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,77,orchard ridge detour,37,51,0.93985,True,simulation tick,True
+919,62,4,roofward_archive,ssrm_v31_route_state_roofward_archive,94,cool archive lane,38,52,0.93605,True,manual json editor,True
+920,62,5,archive_signal,ssrm_v31_route_state_archive_signal,79,stone kiosk path,36,54,0.94,True,simulation tick,True
+921,62,6,signal_orchard,ssrm_v31_route_state_signal_orchard,91,river lantern loop,36,52,0.93385,True,simulation tick,True
+922,62,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,84,market plank route,40,54,0.93605,True,simulation tick,True
+923,62,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,92,inner repair yard,35,52,0.93495,True,manual json editor,True
+924,62,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,78,orchard ridge detour,38,51,0.94,True,simulation tick,True
+925,62,10,roofward_archive,ssrm_v31_route_state_roofward_archive,94,cool archive lane,38,53,0.94,True,simulation tick,True
+926,62,11,archive_signal,ssrm_v31_route_state_archive_signal,79,stone kiosk path,36,54,0.94,True,simulation tick,True
+927,62,12,signal_orchard,ssrm_v31_route_state_signal_orchard,92,river lantern loop,36,52,0.93385,True,manual json editor,True
+928,62,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,84,market plank route,40,55,0.94,True,simulation tick,True
+929,62,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,93,inner repair yard,36,52,0.94,True,simulation tick,True
+930,63,0,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,79,orchard ridge detour,38,51,0.94,True,manual json editor,True
+931,63,1,roofward_archive,ssrm_v31_route_state_roofward_archive,95,cool archive lane,39,53,0.94,True,simulation tick,True
+932,63,2,archive_signal,ssrm_v31_route_state_archive_signal,79,stone kiosk path,36,55,0.94,True,simulation tick,True
+933,63,3,signal_orchard,ssrm_v31_route_state_signal_orchard,92,river lantern loop,36,52,0.94,True,simulation tick,True
+934,63,4,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,85,market plank route,40,55,0.93385,True,manual json editor,True
+935,63,5,central_repair_ring,ssrm_v31_route_state_central_repair_ring,93,inner repair yard,36,52,0.93605,True,simulation tick,True
+936,63,6,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,79,orchard ridge detour,38,51,0.93495,True,simulation tick,True
+937,63,7,roofward_archive,ssrm_v31_route_state_roofward_archive,95,cool archive lane,39,53,0.93385,True,simulation tick,True
+938,63,8,archive_signal,ssrm_v31_route_state_archive_signal,81,stone kiosk path,37,55,0.94,True,manual json editor,True
+939,63,9,signal_orchard,ssrm_v31_route_state_signal_orchard,93,river lantern loop,37,52,0.94,True,simulation tick,True
+940,63,10,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,85,market plank route,40,56,0.94,True,simulation tick,True
+941,63,11,central_repair_ring,ssrm_v31_route_state_central_repair_ring,93,inner repair yard,36,52,0.94,True,simulation tick,True
+942,63,12,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,80,orchard ridge detour,38,51,0.93495,True,manual json editor,True
+943,63,13,roofward_archive,ssrm_v31_route_state_roofward_archive,95,cool archive lane,39,54,0.94,True,simulation tick,True
+944,63,14,archive_signal,ssrm_v31_route_state_archive_signal,82,stone kiosk path,38,55,0.94,True,simulation tick,True
+945,64,0,signal_orchard,ssrm_v31_route_state_signal_orchard,95,river lantern loop,38,52,0.94,True,manual json editor,True
+946,64,1,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,86,market plank route,41,56,0.94,True,simulation tick,True
+947,64,2,central_repair_ring,ssrm_v31_route_state_central_repair_ring,93,inner repair yard,36,53,0.94,True,simulation tick,True
+948,64,3,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,80,orchard ridge detour,38,52,0.94,True,simulation tick,True
+949,64,4,roofward_archive,ssrm_v31_route_state_roofward_archive,96,cool archive lane,39,54,0.93495,True,manual json editor,True
+950,64,5,archive_signal,ssrm_v31_route_state_archive_signal,82,stone kiosk path,38,56,0.94,True,simulation tick,True
+951,64,6,signal_orchard,ssrm_v31_route_state_signal_orchard,95,river lantern loop,38,52,0.93605,True,simulation tick,True
+952,64,7,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,86,market plank route,41,56,0.93495,True,simulation tick,True
+953,64,8,central_repair_ring,ssrm_v31_route_state_central_repair_ring,94,inner repair yard,36,53,0.93385,True,manual json editor,True
+954,64,9,riverbend_roofward,ssrm_v31_route_state_riverbend_roofward,81,orchard ridge detour,39,53,0.94,True,simulation tick,True
+955,64,10,roofward_archive,ssrm_v31_route_state_roofward_archive,96,cool archive lane,39,55,0.94,True,simulation tick,True
+956,64,11,archive_signal,ssrm_v31_route_state_archive_signal,82,stone kiosk path,38,56,0.93985,True,simulation tick,True
+957,64,12,signal_orchard,ssrm_v31_route_state_signal_orchard,96,dusk road,38,52,0.94,True,manual json editor,True
+958,64,13,orchard_riverbend,ssrm_v31_route_state_orchard_riverbend,86,market plank route,41,57,0.94,True,simulation tick,True
+959,64,14,central_repair_ring,ssrm_v31_route_state_central_repair_ring,95,inner repair yard,37,53,0.94,True,simulation tick,True

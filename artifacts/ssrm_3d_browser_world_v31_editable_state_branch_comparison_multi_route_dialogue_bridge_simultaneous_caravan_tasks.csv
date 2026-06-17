@@ -1,0 +1,961 @@
+tick_id,day,task_group_id,route_id,companion_route_id,avatar_task,companion_task,simultaneous,resource_conflict,fatigue_cost,recovery_delta,conflict_visible,resolution
+0,1,group:1:0:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+1,1,group:1:1:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+2,1,group:1:2:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+3,1,group:1:3:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+4,1,group:1:4:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+5,1,group:1:5:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+6,1,group:1:6:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+7,1,group:1:7:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+8,1,group:1:8:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+9,1,group:1:9:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+10,1,group:1:10:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+11,1,group:1:11:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+12,1,group:1:12:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+13,1,group:1:13:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+14,1,group:1:14:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+15,2,group:2:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+16,2,group:2:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+17,2,group:2:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+18,2,group:2:3:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+19,2,group:2:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+20,2,group:2:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+21,2,group:2:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+22,2,group:2:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+23,2,group:2:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+24,2,group:2:9:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+25,2,group:2:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+26,2,group:2:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+27,2,group:2:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+28,2,group:2:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+29,2,group:2:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+30,3,group:3:0:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+31,3,group:3:1:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+32,3,group:3:2:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+33,3,group:3:3:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+34,3,group:3:4:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+35,3,group:3:5:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+36,3,group:3:6:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+37,3,group:3:7:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+38,3,group:3:8:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+39,3,group:3:9:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+40,3,group:3:10:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+41,3,group:3:11:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+42,3,group:3:12:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+43,3,group:3:13:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+44,3,group:3:14:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+45,4,group:4:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+46,4,group:4:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+47,4,group:4:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+48,4,group:4:3:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+49,4,group:4:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+50,4,group:4:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+51,4,group:4:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+52,4,group:4:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+53,4,group:4:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+54,4,group:4:9:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+55,4,group:4:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+56,4,group:4:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+57,4,group:4:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+58,4,group:4:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+59,4,group:4:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+60,5,group:5:0:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+61,5,group:5:1:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+62,5,group:5:2:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+63,5,group:5:3:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+64,5,group:5:4:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+65,5,group:5:5:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+66,5,group:5:6:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+67,5,group:5:7:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+68,5,group:5:8:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+69,5,group:5:9:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+70,5,group:5:10:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+71,5,group:5:11:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+72,5,group:5:12:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+73,5,group:5:13:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+74,5,group:5:14:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+75,6,group:6:0:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+76,6,group:6:1:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+77,6,group:6:2:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+78,6,group:6:3:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+79,6,group:6:4:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+80,6,group:6:5:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+81,6,group:6:6:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+82,6,group:6:7:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+83,6,group:6:8:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+84,6,group:6:9:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+85,6,group:6:10:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+86,6,group:6:11:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+87,6,group:6:12:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+88,6,group:6:13:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+89,6,group:6:14:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+90,7,group:7:0:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+91,7,group:7:1:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+92,7,group:7:2:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+93,7,group:7:3:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+94,7,group:7:4:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+95,7,group:7:5:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+96,7,group:7:6:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+97,7,group:7:7:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+98,7,group:7:8:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+99,7,group:7:9:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+100,7,group:7:10:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+101,7,group:7:11:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+102,7,group:7:12:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+103,7,group:7:13:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+104,7,group:7:14:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+105,8,group:8:0:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+106,8,group:8:1:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+107,8,group:8:2:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+108,8,group:8:3:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+109,8,group:8:4:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+110,8,group:8:5:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+111,8,group:8:6:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+112,8,group:8:7:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+113,8,group:8:8:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+114,8,group:8:9:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+115,8,group:8:10:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+116,8,group:8:11:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+117,8,group:8:12:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+118,8,group:8:13:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+119,8,group:8:14:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+120,9,group:9:0:1,roofward_archive,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+121,9,group:9:1:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+122,9,group:9:2:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+123,9,group:9:3:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+124,9,group:9:4:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+125,9,group:9:5:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+126,9,group:9:6:1,roofward_archive,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+127,9,group:9:7:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+128,9,group:9:8:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+129,9,group:9:9:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+130,9,group:9:10:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+131,9,group:9:11:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+132,9,group:9:12:1,roofward_archive,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+133,9,group:9:13:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+134,9,group:9:14:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+135,10,group:10:0:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+136,10,group:10:1:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+137,10,group:10:2:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+138,10,group:10:3:2,archive_signal,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+139,10,group:10:4:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+140,10,group:10:5:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+141,10,group:10:6:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+142,10,group:10:7:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+143,10,group:10:8:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+144,10,group:10:9:2,archive_signal,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+145,10,group:10:10:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+146,10,group:10:11:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+147,10,group:10:12:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+148,10,group:10:13:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+149,10,group:10:14:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+150,11,group:11:0:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+151,11,group:11:1:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+152,11,group:11:2:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+153,11,group:11:3:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+154,11,group:11:4:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+155,11,group:11:5:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+156,11,group:11:6:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+157,11,group:11:7:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+158,11,group:11:8:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+159,11,group:11:9:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+160,11,group:11:10:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+161,11,group:11:11:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+162,11,group:11:12:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+163,11,group:11:13:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+164,11,group:11:14:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+165,12,group:12:0:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+166,12,group:12:1:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+167,12,group:12:2:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+168,12,group:12:3:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+169,12,group:12:4:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+170,12,group:12:5:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+171,12,group:12:6:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+172,12,group:12:7:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+173,12,group:12:8:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+174,12,group:12:9:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+175,12,group:12:10:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+176,12,group:12:11:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+177,12,group:12:12:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+178,12,group:12:13:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+179,12,group:12:14:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+180,13,group:13:0:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+181,13,group:13:1:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+182,13,group:13:2:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+183,13,group:13:3:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+184,13,group:13:4:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+185,13,group:13:5:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+186,13,group:13:6:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+187,13,group:13:7:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+188,13,group:13:8:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+189,13,group:13:9:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+190,13,group:13:10:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+191,13,group:13:11:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+192,13,group:13:12:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+193,13,group:13:13:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+194,13,group:13:14:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+195,14,group:14:0:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+196,14,group:14:1:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+197,14,group:14:2:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+198,14,group:14:3:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+199,14,group:14:4:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+200,14,group:14:5:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+201,14,group:14:6:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+202,14,group:14:7:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+203,14,group:14:8:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+204,14,group:14:9:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+205,14,group:14:10:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+206,14,group:14:11:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+207,14,group:14:12:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+208,14,group:14:13:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+209,14,group:14:14:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+210,15,group:15:0:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+211,15,group:15:1:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+212,15,group:15:2:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+213,15,group:15:3:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+214,15,group:15:4:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+215,15,group:15:5:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+216,15,group:15:6:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+217,15,group:15:7:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+218,15,group:15:8:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+219,15,group:15:9:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+220,15,group:15:10:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+221,15,group:15:11:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+222,15,group:15:12:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+223,15,group:15:13:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+224,15,group:15:14:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+225,16,group:16:0:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+226,16,group:16:1:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+227,16,group:16:2:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+228,16,group:16:3:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+229,16,group:16:4:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+230,16,group:16:5:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+231,16,group:16:6:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+232,16,group:16:7:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+233,16,group:16:8:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+234,16,group:16:9:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+235,16,group:16:10:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+236,16,group:16:11:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+237,16,group:16:12:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+238,16,group:16:13:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+239,16,group:16:14:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+240,17,group:17:0:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+241,17,group:17:1:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+242,17,group:17:2:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+243,17,group:17:3:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+244,17,group:17:4:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+245,17,group:17:5:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+246,17,group:17:6:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+247,17,group:17:7:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+248,17,group:17:8:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+249,17,group:17:9:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+250,17,group:17:10:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+251,17,group:17:11:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+252,17,group:17:12:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+253,17,group:17:13:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+254,17,group:17:14:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+255,18,group:18:0:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+256,18,group:18:1:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+257,18,group:18:2:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+258,18,group:18:3:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+259,18,group:18:4:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+260,18,group:18:5:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+261,18,group:18:6:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+262,18,group:18:7:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+263,18,group:18:8:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+264,18,group:18:9:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+265,18,group:18:10:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+266,18,group:18:11:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+267,18,group:18:12:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+268,18,group:18:13:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+269,18,group:18:14:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+270,19,group:19:0:3,signal_orchard,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+271,19,group:19:1:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+272,19,group:19:2:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+273,19,group:19:3:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+274,19,group:19:4:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+275,19,group:19:5:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+276,19,group:19:6:3,signal_orchard,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+277,19,group:19:7:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+278,19,group:19:8:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+279,19,group:19:9:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+280,19,group:19:10:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+281,19,group:19:11:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+282,19,group:19:12:3,signal_orchard,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+283,19,group:19:13:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+284,19,group:19:14:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+285,20,group:20:0:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+286,20,group:20:1:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+287,20,group:20:2:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+288,20,group:20:3:4,orchard_riverbend,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+289,20,group:20:4:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+290,20,group:20:5:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+291,20,group:20:6:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+292,20,group:20:7:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+293,20,group:20:8:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+294,20,group:20:9:4,orchard_riverbend,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+295,20,group:20:10:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+296,20,group:20:11:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+297,20,group:20:12:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+298,20,group:20:13:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+299,20,group:20:14:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+300,21,group:21:0:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+301,21,group:21:1:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+302,21,group:21:2:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+303,21,group:21:3:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+304,21,group:21:4:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+305,21,group:21:5:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+306,21,group:21:6:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+307,21,group:21:7:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+308,21,group:21:8:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+309,21,group:21:9:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+310,21,group:21:10:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+311,21,group:21:11:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+312,21,group:21:12:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+313,21,group:21:13:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+314,21,group:21:14:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+315,22,group:22:0:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+316,22,group:22:1:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+317,22,group:22:2:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+318,22,group:22:3:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+319,22,group:22:4:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+320,22,group:22:5:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+321,22,group:22:6:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+322,22,group:22:7:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+323,22,group:22:8:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+324,22,group:22:9:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+325,22,group:22:10:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+326,22,group:22:11:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+327,22,group:22:12:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+328,22,group:22:13:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+329,22,group:22:14:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+330,23,group:23:0:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+331,23,group:23:1:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+332,23,group:23:2:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+333,23,group:23:3:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+334,23,group:23:4:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+335,23,group:23:5:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+336,23,group:23:6:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+337,23,group:23:7:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+338,23,group:23:8:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+339,23,group:23:9:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+340,23,group:23:10:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+341,23,group:23:11:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+342,23,group:23:12:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+343,23,group:23:13:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+344,23,group:23:14:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+345,24,group:24:0:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+346,24,group:24:1:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+347,24,group:24:2:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+348,24,group:24:3:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+349,24,group:24:4:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+350,24,group:24:5:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+351,24,group:24:6:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+352,24,group:24:7:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+353,24,group:24:8:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+354,24,group:24:9:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+355,24,group:24:10:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+356,24,group:24:11:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+357,24,group:24:12:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+358,24,group:24:13:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+359,24,group:24:14:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+360,25,group:25:0:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+361,25,group:25:1:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+362,25,group:25:2:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+363,25,group:25:3:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+364,25,group:25:4:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+365,25,group:25:5:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+366,25,group:25:6:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+367,25,group:25:7:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+368,25,group:25:8:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+369,25,group:25:9:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+370,25,group:25:10:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+371,25,group:25:11:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+372,25,group:25:12:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+373,25,group:25:13:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+374,25,group:25:14:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+375,26,group:26:0:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+376,26,group:26:1:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+377,26,group:26:2:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+378,26,group:26:3:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+379,26,group:26:4:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+380,26,group:26:5:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+381,26,group:26:6:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+382,26,group:26:7:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+383,26,group:26:8:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+384,26,group:26:9:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+385,26,group:26:10:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+386,26,group:26:11:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+387,26,group:26:12:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+388,26,group:26:13:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+389,26,group:26:14:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+390,27,group:27:0:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+391,27,group:27:1:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+392,27,group:27:2:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+393,27,group:27:3:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+394,27,group:27:4:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+395,27,group:27:5:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+396,27,group:27:6:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+397,27,group:27:7:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+398,27,group:27:8:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+399,27,group:27:9:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+400,27,group:27:10:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+401,27,group:27:11:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+402,27,group:27:12:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+403,27,group:27:13:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+404,27,group:27:14:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+405,28,group:28:0:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+406,28,group:28:1:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+407,28,group:28:2:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+408,28,group:28:3:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+409,28,group:28:4:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+410,28,group:28:5:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+411,28,group:28:6:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+412,28,group:28:7:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+413,28,group:28:8:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+414,28,group:28:9:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+415,28,group:28:10:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+416,28,group:28:11:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+417,28,group:28:12:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+418,28,group:28:13:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+419,28,group:28:14:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+420,29,group:29:0:5,central_repair_ring,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+421,29,group:29:1:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+422,29,group:29:2:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+423,29,group:29:3:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+424,29,group:29:4:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+425,29,group:29:5:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+426,29,group:29:6:5,central_repair_ring,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+427,29,group:29:7:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+428,29,group:29:8:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+429,29,group:29:9:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+430,29,group:29:10:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+431,29,group:29:11:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+432,29,group:29:12:5,central_repair_ring,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+433,29,group:29:13:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+434,29,group:29:14:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+435,30,group:30:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+436,30,group:30:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+437,30,group:30:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+438,30,group:30:3:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+439,30,group:30:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+440,30,group:30:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+441,30,group:30:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+442,30,group:30:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+443,30,group:30:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+444,30,group:30:9:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+445,30,group:30:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+446,30,group:30:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+447,30,group:30:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+448,30,group:30:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+449,30,group:30:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+450,31,group:31:0:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+451,31,group:31:1:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+452,31,group:31:2:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+453,31,group:31:3:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+454,31,group:31:4:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+455,31,group:31:5:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+456,31,group:31:6:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+457,31,group:31:7:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+458,31,group:31:8:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+459,31,group:31:9:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+460,31,group:31:10:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+461,31,group:31:11:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+462,31,group:31:12:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+463,31,group:31:13:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+464,31,group:31:14:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+465,32,group:32:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+466,32,group:32:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+467,32,group:32:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+468,32,group:32:3:0,riverbend_roofward,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+469,32,group:32:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+470,32,group:32:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+471,32,group:32:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+472,32,group:32:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+473,32,group:32:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+474,32,group:32:9:0,riverbend_roofward,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+475,32,group:32:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+476,32,group:32:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+477,32,group:32:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+478,32,group:32:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+479,32,group:32:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+480,33,group:33:0:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+481,33,group:33:1:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+482,33,group:33:2:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+483,33,group:33:3:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+484,33,group:33:4:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+485,33,group:33:5:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+486,33,group:33:6:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+487,33,group:33:7:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+488,33,group:33:8:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+489,33,group:33:9:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+490,33,group:33:10:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+491,33,group:33:11:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+492,33,group:33:12:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+493,33,group:33:13:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+494,33,group:33:14:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+495,34,group:34:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+496,34,group:34:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+497,34,group:34:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+498,34,group:34:3:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+499,34,group:34:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+500,34,group:34:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+501,34,group:34:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+502,34,group:34:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+503,34,group:34:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+504,34,group:34:9:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+505,34,group:34:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+506,34,group:34:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+507,34,group:34:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+508,34,group:34:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+509,34,group:34:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+510,35,group:35:0:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+511,35,group:35:1:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+512,35,group:35:2:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+513,35,group:35:3:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+514,35,group:35:4:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+515,35,group:35:5:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+516,35,group:35:6:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+517,35,group:35:7:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+518,35,group:35:8:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+519,35,group:35:9:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+520,35,group:35:10:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+521,35,group:35:11:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+522,35,group:35:12:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+523,35,group:35:13:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+524,35,group:35:14:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+525,36,group:36:0:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+526,36,group:36:1:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+527,36,group:36:2:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+528,36,group:36:3:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+529,36,group:36:4:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+530,36,group:36:5:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+531,36,group:36:6:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+532,36,group:36:7:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+533,36,group:36:8:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+534,36,group:36:9:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+535,36,group:36:10:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+536,36,group:36:11:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+537,36,group:36:12:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+538,36,group:36:13:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+539,36,group:36:14:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+540,37,group:37:0:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+541,37,group:37:1:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+542,37,group:37:2:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+543,37,group:37:3:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+544,37,group:37:4:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+545,37,group:37:5:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+546,37,group:37:6:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+547,37,group:37:7:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+548,37,group:37:8:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+549,37,group:37:9:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+550,37,group:37:10:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+551,37,group:37:11:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+552,37,group:37:12:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+553,37,group:37:13:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+554,37,group:37:14:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+555,38,group:38:0:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+556,38,group:38:1:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+557,38,group:38:2:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+558,38,group:38:3:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+559,38,group:38:4:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+560,38,group:38:5:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+561,38,group:38:6:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+562,38,group:38:7:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+563,38,group:38:8:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+564,38,group:38:9:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+565,38,group:38:10:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+566,38,group:38:11:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+567,38,group:38:12:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+568,38,group:38:13:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+569,38,group:38:14:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+570,39,group:39:0:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+571,39,group:39:1:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+572,39,group:39:2:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+573,39,group:39:3:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+574,39,group:39:4:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+575,39,group:39:5:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+576,39,group:39:6:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+577,39,group:39:7:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+578,39,group:39:8:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+579,39,group:39:9:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+580,39,group:39:10:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+581,39,group:39:11:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+582,39,group:39:12:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+583,39,group:39:13:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+584,39,group:39:14:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+585,40,group:40:0:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+586,40,group:40:1:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+587,40,group:40:2:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+588,40,group:40:3:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+589,40,group:40:4:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+590,40,group:40:5:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+591,40,group:40:6:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+592,40,group:40:7:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+593,40,group:40:8:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+594,40,group:40:9:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+595,40,group:40:10:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+596,40,group:40:11:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+597,40,group:40:12:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+598,40,group:40:13:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+599,40,group:40:14:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+600,41,group:41:0:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+601,41,group:41:1:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+602,41,group:41:2:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+603,41,group:41:3:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+604,41,group:41:4:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+605,41,group:41:5:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+606,41,group:41:6:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+607,41,group:41:7:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+608,41,group:41:8:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+609,41,group:41:9:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+610,41,group:41:10:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+611,41,group:41:11:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+612,41,group:41:12:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+613,41,group:41:13:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+614,41,group:41:14:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+615,42,group:42:0:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+616,42,group:42:1:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+617,42,group:42:2:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+618,42,group:42:3:2,archive_signal,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+619,42,group:42:4:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+620,42,group:42:5:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+621,42,group:42:6:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+622,42,group:42:7:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+623,42,group:42:8:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+624,42,group:42:9:2,archive_signal,signal_orchard,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+625,42,group:42:10:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+626,42,group:42:11:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+627,42,group:42:12:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+628,42,group:42:13:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+629,42,group:42:14:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+630,43,group:43:0:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+631,43,group:43:1:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+632,43,group:43:2:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+633,43,group:43:3:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+634,43,group:43:4:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+635,43,group:43:5:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+636,43,group:43:6:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+637,43,group:43:7:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+638,43,group:43:8:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+639,43,group:43:9:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+640,43,group:43:10:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+641,43,group:43:11:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+642,43,group:43:12:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+643,43,group:43:13:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+644,43,group:43:14:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+645,44,group:44:0:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+646,44,group:44:1:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+647,44,group:44:2:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+648,44,group:44:3:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+649,44,group:44:4:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+650,44,group:44:5:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+651,44,group:44:6:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+652,44,group:44:7:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+653,44,group:44:8:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+654,44,group:44:9:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+655,44,group:44:10:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+656,44,group:44:11:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+657,44,group:44:12:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+658,44,group:44:13:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+659,44,group:44:14:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+660,45,group:45:0:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+661,45,group:45:1:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+662,45,group:45:2:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+663,45,group:45:3:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+664,45,group:45:4:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+665,45,group:45:5:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+666,45,group:45:6:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+667,45,group:45:7:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+668,45,group:45:8:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+669,45,group:45:9:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+670,45,group:45:10:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+671,45,group:45:11:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+672,45,group:45:12:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+673,45,group:45:13:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+674,45,group:45:14:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+675,46,group:46:0:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+676,46,group:46:1:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+677,46,group:46:2:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+678,46,group:46:3:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+679,46,group:46:4:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+680,46,group:46:5:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+681,46,group:46:6:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+682,46,group:46:7:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+683,46,group:46:8:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+684,46,group:46:9:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+685,46,group:46:10:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+686,46,group:46:11:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+687,46,group:46:12:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+688,46,group:46:13:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+689,46,group:46:14:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+690,47,group:47:0:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+691,47,group:47:1:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+692,47,group:47:2:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+693,47,group:47:3:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+694,47,group:47:4:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+695,47,group:47:5:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+696,47,group:47:6:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+697,47,group:47:7:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+698,47,group:47:8:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+699,47,group:47:9:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+700,47,group:47:10:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+701,47,group:47:11:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+702,47,group:47:12:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+703,47,group:47:13:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+704,47,group:47:14:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+705,48,group:48:0:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+706,48,group:48:1:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+707,48,group:48:2:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+708,48,group:48:3:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+709,48,group:48:4:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+710,48,group:48:5:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+711,48,group:48:6:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+712,48,group:48:7:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+713,48,group:48:8:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+714,48,group:48:9:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+715,48,group:48:10:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+716,48,group:48:11:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+717,48,group:48:12:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+718,48,group:48:13:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+719,48,group:48:14:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+720,49,group:49:0:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+721,49,group:49:1:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+722,49,group:49:2:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+723,49,group:49:3:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+724,49,group:49:4:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+725,49,group:49:5:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+726,49,group:49:6:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+727,49,group:49:7:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+728,49,group:49:8:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+729,49,group:49:9:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+730,49,group:49:10:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+731,49,group:49:11:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+732,49,group:49:12:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+733,49,group:49:13:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+734,49,group:49:14:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+735,50,group:50:0:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+736,50,group:50:1:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+737,50,group:50:2:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+738,50,group:50:3:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+739,50,group:50:4:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+740,50,group:50:5:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+741,50,group:50:6:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+742,50,group:50:7:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+743,50,group:50:8:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+744,50,group:50:9:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+745,50,group:50:10:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+746,50,group:50:11:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+747,50,group:50:12:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+748,50,group:50:13:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+749,50,group:50:14:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+750,51,group:51:0:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+751,51,group:51:1:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+752,51,group:51:2:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+753,51,group:51:3:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+754,51,group:51:4:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+755,51,group:51:5:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+756,51,group:51:6:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+757,51,group:51:7:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+758,51,group:51:8:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+759,51,group:51:9:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+760,51,group:51:10:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+761,51,group:51:11:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+762,51,group:51:12:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+763,51,group:51:13:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+764,51,group:51:14:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+765,52,group:52:0:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+766,52,group:52:1:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+767,52,group:52:2:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+768,52,group:52:3:4,orchard_riverbend,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+769,52,group:52:4:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+770,52,group:52:5:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+771,52,group:52:6:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+772,52,group:52:7:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+773,52,group:52:8:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+774,52,group:52:9:4,orchard_riverbend,central_repair_ring,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+775,52,group:52:10:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+776,52,group:52:11:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+777,52,group:52:12:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+778,52,group:52:13:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+779,52,group:52:14:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+780,53,group:53:0:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+781,53,group:53:1:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+782,53,group:53:2:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+783,53,group:53:3:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+784,53,group:53:4:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+785,53,group:53:5:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+786,53,group:53:6:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+787,53,group:53:7:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+788,53,group:53:8:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+789,53,group:53:9:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+790,53,group:53:10:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+791,53,group:53:11:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+792,53,group:53:12:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+793,53,group:53:13:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+794,53,group:53:14:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+795,54,group:54:0:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+796,54,group:54:1:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+797,54,group:54:2:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+798,54,group:54:3:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+799,54,group:54:4:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+800,54,group:54:5:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+801,54,group:54:6:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+802,54,group:54:7:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+803,54,group:54:8:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+804,54,group:54:9:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+805,54,group:54:10:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+806,54,group:54:11:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+807,54,group:54:12:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+808,54,group:54:13:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+809,54,group:54:14:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+810,55,group:55:0:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+811,55,group:55:1:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+812,55,group:55:2:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+813,55,group:55:3:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+814,55,group:55:4:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+815,55,group:55:5:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+816,55,group:55:6:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+817,55,group:55:7:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+818,55,group:55:8:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+819,55,group:55:9:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+820,55,group:55:10:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+821,55,group:55:11:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+822,55,group:55:12:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+823,55,group:55:13:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+824,55,group:55:14:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+825,56,group:56:0:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+826,56,group:56:1:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+827,56,group:56:2:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+828,56,group:56:3:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+829,56,group:56:4:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+830,56,group:56:5:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+831,56,group:56:6:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+832,56,group:56:7:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+833,56,group:56:8:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+834,56,group:56:9:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+835,56,group:56:10:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+836,56,group:56:11:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+837,56,group:56:12:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+838,56,group:56:13:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+839,56,group:56:14:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+840,57,group:57:0:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+841,57,group:57:1:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+842,57,group:57:2:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+843,57,group:57:3:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+844,57,group:57:4:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+845,57,group:57:5:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+846,57,group:57:6:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+847,57,group:57:7:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+848,57,group:57:8:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+849,57,group:57:9:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+850,57,group:57:10:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+851,57,group:57:11:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+852,57,group:57:12:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+853,57,group:57:13:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+854,57,group:57:14:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+855,58,group:58:0:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+856,58,group:58:1:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+857,58,group:58:2:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+858,58,group:58:3:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+859,58,group:58:4:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+860,58,group:58:5:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+861,58,group:58:6:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+862,58,group:58:7:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+863,58,group:58:8:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+864,58,group:58:9:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+865,58,group:58:10:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+866,58,group:58:11:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+867,58,group:58:12:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+868,58,group:58:13:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+869,58,group:58:14:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+870,59,group:59:0:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+871,59,group:59:1:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+872,59,group:59:2:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+873,59,group:59:3:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+874,59,group:59:4:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+875,59,group:59:5:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+876,59,group:59:6:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+877,59,group:59:7:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+878,59,group:59:8:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+879,59,group:59:9:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+880,59,group:59:10:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+881,59,group:59:11:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+882,59,group:59:12:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+883,59,group:59:13:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+884,59,group:59:14:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+885,60,group:60:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+886,60,group:60:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+887,60,group:60:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+888,60,group:60:3:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+889,60,group:60:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+890,60,group:60:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+891,60,group:60:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+892,60,group:60:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+893,60,group:60:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+894,60,group:60:9:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+895,60,group:60:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+896,60,group:60:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+897,60,group:60:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+898,60,group:60:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+899,60,group:60:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+900,61,group:61:0:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+901,61,group:61:1:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+902,61,group:61:2:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+903,61,group:61:3:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+904,61,group:61:4:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+905,61,group:61:5:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+906,61,group:61:6:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+907,61,group:61:7:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+908,61,group:61:8:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+909,61,group:61:9:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+910,61,group:61:10:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+911,61,group:61:11:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+912,61,group:61:12:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+913,61,group:61:13:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+914,61,group:61:14:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+915,62,group:62:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+916,62,group:62:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+917,62,group:62:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+918,62,group:62:3:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+919,62,group:62:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+920,62,group:62:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+921,62,group:62:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+922,62,group:62:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+923,62,group:62:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+924,62,group:62:9:0,riverbend_roofward,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+925,62,group:62:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+926,62,group:62:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+927,62,group:62:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+928,62,group:62:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+929,62,group:62:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+930,63,group:63:0:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+931,63,group:63:1:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+932,63,group:63:2:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+933,63,group:63:3:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+934,63,group:63:4:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+935,63,group:63:5:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,True,False,0.042,0.0,True,parallel task
+936,63,group:63:6:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+937,63,group:63:7:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+938,63,group:63:8:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+939,63,group:63:9:3,signal_orchard,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+940,63,group:63:10:4,orchard_riverbend,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+941,63,group:63:11:5,central_repair_ring,roofward_archive,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+942,63,group:63:12:0,riverbend_roofward,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+943,63,group:63:13:1,roofward_archive,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+944,63,group:63:14:2,archive_signal,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+945,64,group:64:0:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+946,64,group:64:1:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+947,64,group:64:2:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+948,64,group:64:3:0,riverbend_roofward,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+949,64,group:64:4:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+950,64,group:64:5:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,True,False,0.042,0.046,False,parallel task
+951,64,group:64:6:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+952,64,group:64:7:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+953,64,group:64:8:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+954,64,group:64:9:0,riverbend_roofward,roofward_archive,split cargo,hold spare route,True,True,0.056,0.03,True,split task
+955,64,group:64:10:1,roofward_archive,archive_signal,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+956,64,group:64:11:2,archive_signal,signal_orchard,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+957,64,group:64:12:3,signal_orchard,orchard_riverbend,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none
+958,64,group:64:13:4,orchard_riverbend,central_repair_ring,lead caravan task,parallel delivery,True,False,0.042,0.046,True,parallel task
+959,64,group:64:14:5,central_repair_ring,riverbend_roofward,lead caravan task,parallel delivery,False,False,0.0,0.0,True,none

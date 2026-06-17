@@ -1,0 +1,961 @@
+tick_id,day,route_id,sight_cue,sound_cue,smell_cue,temperature_cue,wetness_cue,body_cue,rhythm_marker,sensory_bound_to_branch
+0,1,riverbend_roofward,single active branch,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+1,1,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+2,1,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+3,1,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+4,1,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+5,1,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+6,1,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+7,1,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+8,1,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+9,1,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+10,1,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+11,1,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+12,1,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+13,1,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+14,1,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+15,2,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+16,2,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+17,2,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+18,2,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+19,2,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+20,2,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+21,2,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+22,2,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+23,2,central_repair_ring,single active branch,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+24,2,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+25,2,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+26,2,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+27,2,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+28,2,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+29,2,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+30,3,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+31,3,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+32,3,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+33,3,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+34,3,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+35,3,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+36,3,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+37,3,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+38,3,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+39,3,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+40,3,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+41,3,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+42,3,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+43,3,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+44,3,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+45,4,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+46,4,orchard_riverbend,single active branch,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+47,4,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+48,4,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+49,4,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+50,4,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+51,4,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+52,4,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+53,4,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+54,4,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+55,4,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+56,4,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+57,4,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+58,4,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+59,4,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+60,5,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+61,5,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+62,5,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+63,5,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+64,5,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+65,5,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+66,5,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+67,5,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+68,5,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+69,5,orchard_riverbend,single active branch,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+70,5,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+71,5,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+72,5,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+73,5,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+74,5,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+75,6,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+76,6,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+77,6,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+78,6,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+79,6,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+80,6,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+81,6,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+82,6,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+83,6,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+84,6,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+85,6,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+86,6,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+87,6,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+88,6,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+89,6,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+90,7,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+91,7,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+92,7,signal_orchard,single active branch,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+93,7,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+94,7,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+95,7,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+96,7,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+97,7,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+98,7,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+99,7,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+100,7,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+101,7,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+102,7,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+103,7,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+104,7,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+105,8,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+106,8,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+107,8,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+108,8,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+109,8,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+110,8,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+111,8,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+112,8,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+113,8,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+114,8,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+115,8,archive_signal,single active branch,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+116,8,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+117,8,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+118,8,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+119,8,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+120,9,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,avatar multitask strain,flower-node,True
+121,9,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+122,9,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+123,9,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+124,9,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+125,9,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+126,9,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+127,9,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+128,9,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+129,9,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+130,9,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+131,9,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+132,9,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,avatar multitask strain,branch-pulse,True
+133,9,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+134,9,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+135,10,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+136,10,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+137,10,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+138,10,archive_signal,single active branch,caravan task bell,oil paper,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+139,10,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+140,10,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+141,10,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+142,10,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+143,10,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+144,10,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+145,10,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+146,10,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+147,10,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+148,10,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+149,10,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+150,11,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+151,11,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+152,11,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+153,11,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+154,11,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+155,11,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+156,11,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+157,11,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+158,11,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+159,11,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+160,11,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+161,11,roofward_archive,single active branch,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+162,11,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+163,11,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+164,11,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+165,12,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+166,12,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+167,12,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+168,12,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+169,12,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+170,12,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+171,12,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+172,12,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+173,12,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+174,12,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+175,12,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+176,12,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+177,12,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+178,12,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+179,12,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,ambient-rate,True
+180,13,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+181,13,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+182,13,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+183,13,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+184,13,riverbend_roofward,single active branch,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+185,13,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+186,13,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+187,13,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+188,13,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+189,13,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+190,13,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+191,13,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+192,13,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+193,13,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+194,13,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+195,14,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+196,14,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+197,14,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+198,14,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+199,14,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+200,14,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+201,14,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+202,14,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+203,14,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+204,14,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+205,14,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+206,14,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+207,14,central_repair_ring,single active branch,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+208,14,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+209,14,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+210,15,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+211,15,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+212,15,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+213,15,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+214,15,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+215,15,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+216,15,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+217,15,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+218,15,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+219,15,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+220,15,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+221,15,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+222,15,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+223,15,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+224,15,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+225,16,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+226,16,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+227,16,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+228,16,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+229,16,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+230,16,central_repair_ring,single active branch,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+231,16,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+232,16,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+233,16,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+234,16,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+235,16,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+236,16,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+237,16,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+238,16,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+239,16,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+240,17,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+241,17,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+242,17,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+243,17,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+244,17,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+245,17,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+246,17,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+247,17,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+248,17,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+249,17,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+250,17,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+251,17,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+252,17,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+253,17,orchard_riverbend,single active branch,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+254,17,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+255,18,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+256,18,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+257,18,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+258,18,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+259,18,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+260,18,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+261,18,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+262,18,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+263,18,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+264,18,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+265,18,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+266,18,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+267,18,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+268,18,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+269,18,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+270,19,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,avatar multitask strain,flower-node,True
+271,19,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+272,19,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+273,19,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+274,19,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+275,19,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+276,19,signal_orchard,single active branch,caravan task bell,oil paper,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+277,19,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+278,19,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+279,19,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+280,19,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+281,19,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+282,19,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,avatar multitask strain,branch-pulse,True
+283,19,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+284,19,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+285,20,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+286,20,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+287,20,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+288,20,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+289,20,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+290,20,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+291,20,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+292,20,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+293,20,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+294,20,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+295,20,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+296,20,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+297,20,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+298,20,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+299,20,signal_orchard,single active branch,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+300,21,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+301,21,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+302,21,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+303,21,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+304,21,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+305,21,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+306,21,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+307,21,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+308,21,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+309,21,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+310,21,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+311,21,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+312,21,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+313,21,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+314,21,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+315,22,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+316,22,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+317,22,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+318,22,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+319,22,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+320,22,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+321,22,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+322,22,archive_signal,single active branch,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+323,22,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+324,22,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+325,22,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+326,22,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+327,22,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+328,22,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+329,22,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+330,23,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+331,23,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+332,23,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+333,23,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+334,23,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+335,23,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+336,23,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+337,23,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+338,23,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+339,23,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+340,23,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+341,23,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+342,23,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+343,23,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+344,23,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+345,24,roofward_archive,single active branch,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+346,24,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+347,24,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+348,24,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+349,24,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+350,24,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+351,24,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+352,24,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+353,24,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+354,24,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+355,24,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+356,24,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+357,24,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+358,24,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+359,24,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+360,25,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+361,25,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+362,25,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+363,25,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+364,25,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+365,25,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+366,25,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+367,25,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+368,25,roofward_archive,single active branch,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+369,25,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+370,25,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+371,25,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+372,25,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+373,25,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+374,25,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+375,26,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+376,26,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+377,26,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+378,26,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+379,26,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+380,26,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+381,26,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+382,26,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+383,26,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+384,26,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+385,26,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+386,26,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+387,26,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+388,26,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+389,26,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,ambient-rate,True
+390,27,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+391,27,riverbend_roofward,single active branch,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+392,27,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+393,27,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+394,27,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+395,27,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+396,27,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+397,27,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+398,27,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+399,27,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+400,27,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+401,27,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+402,27,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+403,27,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+404,27,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+405,28,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+406,28,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+407,28,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+408,28,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+409,28,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+410,28,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+411,28,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+412,28,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+413,28,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+414,28,central_repair_ring,single active branch,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+415,28,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+416,28,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+417,28,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+418,28,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+419,28,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+420,29,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,avatar multitask strain,flower-node,True
+421,29,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+422,29,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+423,29,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+424,29,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+425,29,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+426,29,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+427,29,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+428,29,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+429,29,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+430,29,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+431,29,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+432,29,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,avatar multitask strain,branch-pulse,True
+433,29,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+434,29,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+435,30,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+436,30,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+437,30,central_repair_ring,single active branch,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+438,30,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+439,30,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+440,30,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+441,30,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+442,30,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+443,30,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+444,30,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+445,30,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+446,30,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+447,30,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+448,30,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+449,30,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+450,31,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+451,31,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+452,31,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+453,31,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+454,31,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+455,31,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+456,31,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+457,31,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+458,31,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+459,31,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+460,31,orchard_riverbend,single active branch,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+461,31,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+462,31,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+463,31,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+464,31,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+465,32,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+466,32,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+467,32,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+468,32,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+469,32,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+470,32,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+471,32,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+472,32,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+473,32,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+474,32,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+475,32,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+476,32,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+477,32,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+478,32,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+479,32,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+480,33,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+481,33,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+482,33,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+483,33,signal_orchard,single active branch,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+484,33,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+485,33,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+486,33,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+487,33,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+488,33,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+489,33,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+490,33,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+491,33,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+492,33,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+493,33,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+494,33,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+495,34,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+496,34,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+497,34,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+498,34,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+499,34,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+500,34,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+501,34,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+502,34,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+503,34,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+504,34,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+505,34,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+506,34,archive_signal,single active branch,caravan task bell,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+507,34,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+508,34,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+509,34,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+510,35,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+511,35,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+512,35,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+513,35,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+514,35,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+515,35,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+516,35,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+517,35,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+518,35,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+519,35,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+520,35,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+521,35,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+522,35,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+523,35,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+524,35,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+525,36,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+526,36,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+527,36,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+528,36,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+529,36,archive_signal,single active branch,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+530,36,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+531,36,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+532,36,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+533,36,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+534,36,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+535,36,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+536,36,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+537,36,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+538,36,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+539,36,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+540,37,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+541,37,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+542,37,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+543,37,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+544,37,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+545,37,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+546,37,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+547,37,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+548,37,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+549,37,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+550,37,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+551,37,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+552,37,roofward_archive,single active branch,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+553,37,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+554,37,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+555,38,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+556,38,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+557,38,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+558,38,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+559,38,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+560,38,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+561,38,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+562,38,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+563,38,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+564,38,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+565,38,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+566,38,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+567,38,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+568,38,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+569,38,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+570,39,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+571,39,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+572,39,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+573,39,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+574,39,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+575,39,riverbend_roofward,single active branch,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+576,39,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+577,39,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+578,39,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+579,39,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+580,39,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+581,39,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+582,39,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+583,39,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+584,39,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+585,40,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+586,40,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+587,40,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+588,40,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+589,40,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+590,40,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+591,40,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+592,40,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+593,40,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+594,40,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+595,40,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+596,40,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+597,40,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+598,40,riverbend_roofward,single active branch,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+599,40,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+600,41,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+601,41,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+602,41,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+603,41,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+604,41,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+605,41,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+606,41,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+607,41,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+608,41,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+609,41,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+610,41,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+611,41,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+612,41,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+613,41,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+614,41,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+615,42,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+616,42,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+617,42,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+618,42,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+619,42,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+620,42,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+621,42,central_repair_ring,single active branch,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+622,42,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+623,42,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+624,42,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,avatar multitask strain,branch-pulse,True
+625,42,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+626,42,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+627,42,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+628,42,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+629,42,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+630,43,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+631,43,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+632,43,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+633,43,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+634,43,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+635,43,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+636,43,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+637,43,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+638,43,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+639,43,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+640,43,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+641,43,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+642,43,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+643,43,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+644,43,orchard_riverbend,single active branch,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+645,44,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+646,44,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+647,44,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+648,44,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+649,44,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+650,44,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+651,44,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+652,44,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+653,44,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+654,44,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+655,44,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+656,44,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+657,44,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+658,44,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+659,44,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+660,45,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+661,45,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+662,45,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+663,45,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+664,45,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+665,45,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+666,45,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+667,45,orchard_riverbend,single active branch,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+668,45,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+669,45,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+670,45,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+671,45,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+672,45,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+673,45,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+674,45,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+675,46,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+676,46,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+677,46,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+678,46,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+679,46,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+680,46,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+681,46,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+682,46,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+683,46,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+684,46,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+685,46,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+686,46,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+687,46,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+688,46,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+689,46,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,ambient-rate,True
+690,47,signal_orchard,single active branch,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+691,47,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+692,47,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+693,47,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+694,47,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+695,47,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+696,47,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+697,47,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+698,47,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+699,47,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+700,47,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+701,47,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+702,47,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+703,47,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+704,47,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+705,48,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+706,48,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+707,48,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+708,48,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+709,48,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+710,48,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+711,48,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+712,48,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+713,48,archive_signal,single active branch,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+714,48,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+715,48,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+716,48,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+717,48,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+718,48,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+719,48,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+720,49,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+721,49,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+722,49,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+723,49,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+724,49,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+725,49,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+726,49,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+727,49,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+728,49,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+729,49,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+730,49,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+731,49,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+732,49,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+733,49,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+734,49,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,ambient-rate,True
+735,50,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+736,50,archive_signal,single active branch,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+737,50,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+738,50,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+739,50,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+740,50,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+741,50,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+742,50,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+743,50,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+744,50,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+745,50,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+746,50,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+747,50,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+748,50,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+749,50,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+750,51,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+751,51,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+752,51,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+753,51,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+754,51,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+755,51,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+756,51,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+757,51,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+758,51,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+759,51,roofward_archive,single active branch,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+760,51,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+761,51,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+762,51,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+763,51,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+764,51,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+765,52,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+766,52,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+767,52,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+768,52,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+769,52,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+770,52,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+771,52,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+772,52,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+773,52,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+774,52,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+775,52,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+776,52,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+777,52,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+778,52,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+779,52,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+780,53,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+781,53,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+782,53,riverbend_roofward,single active branch,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+783,53,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+784,53,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+785,53,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+786,53,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+787,53,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+788,53,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+789,53,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+790,53,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+791,53,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+792,53,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+793,53,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+794,53,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+795,54,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+796,54,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+797,54,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+798,54,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+799,54,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+800,54,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+801,54,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+802,54,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+803,54,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+804,54,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+805,54,central_repair_ring,single active branch,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+806,54,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+807,54,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+808,54,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+809,54,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+810,55,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+811,55,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+812,55,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+813,55,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+814,55,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+815,55,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+816,55,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+817,55,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+818,55,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+819,55,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+820,55,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+821,55,orchard_riverbend,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+822,55,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+823,55,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+824,55,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+825,56,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+826,56,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+827,56,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+828,56,central_repair_ring,single active branch,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+829,56,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+830,56,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+831,56,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+832,56,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+833,56,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+834,56,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+835,56,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+836,56,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+837,56,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+838,56,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+839,56,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+840,57,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+841,57,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+842,57,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+843,57,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+844,57,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+845,57,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+846,57,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+847,57,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+848,57,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+849,57,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+850,57,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+851,57,orchard_riverbend,single active branch,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+852,57,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+853,57,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+854,57,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+855,58,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+856,58,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+857,58,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+858,58,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+859,58,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+860,58,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+861,58,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+862,58,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+863,58,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+864,58,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+865,58,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+866,58,roofward_archive,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+867,58,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+868,58,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+869,58,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,ambient-rate,True
+870,59,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,flower-node,True
+871,59,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+872,59,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+873,59,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+874,59,signal_orchard,single active branch,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+875,59,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+876,59,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+877,59,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+878,59,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+879,59,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+880,59,signal_orchard,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+881,59,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+882,59,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+883,59,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+884,59,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+885,60,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+886,60,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+887,60,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+888,60,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+889,60,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+890,60,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+891,60,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+892,60,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+893,60,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+894,60,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+895,60,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+896,60,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+897,60,signal_orchard,single active branch,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+898,60,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+899,60,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,ambient-rate,True
+900,61,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+901,61,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+902,61,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+903,61,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+904,61,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+905,61,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+906,61,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+907,61,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+908,61,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+909,61,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+910,61,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+911,61,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+912,61,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+913,61,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+914,61,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+915,62,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+916,62,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+917,62,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+918,62,riverbend_roofward,branch comparison cards,dialogue chime,wet cargo,cool route air,route damp,listening posture,branch-pulse,True
+919,62,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+920,62,archive_signal,single active branch,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+921,62,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+922,62,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+923,62,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+924,62,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+925,62,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+926,62,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+927,62,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+928,62,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+929,62,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True
+930,63,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,flower-node,True
+931,63,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+932,63,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+933,63,signal_orchard,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+934,63,orchard_riverbend,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+935,63,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+936,63,riverbend_roofward,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+937,63,roofward_archive,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+938,63,archive_signal,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+939,63,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+940,63,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,flower-node,True
+941,63,central_repair_ring,branch comparison cards,dialogue chime,dry rope,cool route air,dry route board,listening posture,branch-pulse,True
+942,63,riverbend_roofward,branch comparison cards,json editor click,wet cargo,warm control room,route damp,careful editing posture,branch-pulse,True
+943,63,roofward_archive,single active branch,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+944,63,archive_signal,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,ambient-rate,True
+945,64,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,flower-node,True
+946,64,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+947,64,central_repair_ring,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,branch-pulse,True
+948,64,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+949,64,roofward_archive,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+950,64,archive_signal,branch comparison cards,caravan task bell,oil paper,cool route air,dry route board,steady route stance,flower-node,True
+951,64,signal_orchard,branch comparison cards,map hum,oil paper,cool route air,dry route board,steady route stance,branch-pulse,True
+952,64,orchard_riverbend,branch comparison cards,map hum,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+953,64,central_repair_ring,branch comparison cards,json editor click,dry rope,warm control room,dry route board,careful editing posture,branch-pulse,True
+954,64,riverbend_roofward,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,avatar multitask strain,branch-pulse,True
+955,64,roofward_archive,branch comparison cards,caravan task bell,dry rope,cool route air,dry route board,steady route stance,flower-node,True
+956,64,archive_signal,branch comparison cards,dialogue chime,oil paper,cool route air,dry route board,listening posture,branch-pulse,True
+957,64,signal_orchard,branch comparison cards,json editor click,oil paper,warm control room,dry route board,careful editing posture,branch-pulse,True
+958,64,orchard_riverbend,branch comparison cards,caravan task bell,wet cargo,cool route air,route damp,steady route stance,branch-pulse,True
+959,64,central_repair_ring,branch comparison cards,map hum,dry rope,cool route air,dry route board,steady route stance,ambient-rate,True

@@ -1,0 +1,808 @@
+tick_id,day,agent_id,talk_button_id,clicked_to_talk,reply_line,reply_type,reply_visible,references_body_state,references_memory,private_workspace_hidden,localstorage_reply_written
+0,1,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,False,True,False,True,True
+2,1,Nia,talk-Nia,True,Energy low but steady; comfort is 0.51 and safety is 0.62.,body_status,True,True,False,True,True
+3,1,Milo,talk-Milo,True,Energy low but steady; comfort is 0.45 and safety is 0.62.,body_status,True,True,False,True,True
+5,1,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+7,1,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+9,1,Milo,talk-Milo,True,Energy low but steady; comfort is 0.47 and safety is 0.63.,body_status,True,True,False,True,True
+10,1,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+12,2,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+14,2,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+15,2,Milo,talk-Milo,True,Energy low but steady; comfort is 0.48 and safety is 0.65.,body_status,True,True,False,True,True
+17,2,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+19,2,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+21,2,Milo,talk-Milo,True,Energy low but steady; comfort is 0.50 and safety is 0.66.,body_status,True,True,False,True,True
+22,2,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+24,3,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+26,3,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+27,3,Milo,talk-Milo,True,Energy low but steady; comfort is 0.51 and safety is 0.68.,body_status,True,True,False,True,True
+29,3,Juno,talk-Juno,True,Energy low but steady; comfort is 0.53 and safety is 0.67.,body_status,True,True,False,True,True
+31,3,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,False,False,True,True,True
+33,3,Milo,talk-Milo,True,Energy low but steady; comfort is 0.53 and safety is 0.69.,body_status,True,True,False,True,True
+34,3,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+36,4,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+38,4,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+39,4,Milo,talk-Milo,True,Energy low but steady; comfort is 0.54 and safety is 0.70.,body_status,True,True,False,True,True
+41,4,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+43,4,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+45,4,Milo,talk-Milo,True,Energy low but steady; comfort is 0.56 and safety is 0.72.,body_status,True,True,False,True,True
+46,4,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+48,5,Ari,talk-Ari,True,Energy low but steady; comfort is 0.70 and safety is 0.66.,body_status,True,True,False,True,True
+50,5,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+51,5,Milo,talk-Milo,True,Energy low but steady; comfort is 0.57 and safety is 0.73.,body_status,True,True,False,True,True
+53,5,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+55,5,Fay,talk-Fay,True,Energy low but steady; comfort is 0.75 and safety is 0.66.,body_status,True,True,False,True,True
+57,5,Milo,talk-Milo,True,Energy low but steady; comfort is 0.59 and safety is 0.75.,body_status,True,True,False,True,True
+58,5,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+60,6,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+62,6,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,False,True,False,True,True
+63,6,Milo,talk-Milo,True,Energy low but steady; comfort is 0.60 and safety is 0.76.,body_status,True,True,False,True,True
+65,6,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+67,6,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+69,6,Milo,talk-Milo,True,Energy low but steady; comfort is 0.62 and safety is 0.77.,body_status,True,True,False,True,True
+70,6,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+71,6,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+72,7,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+74,7,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+75,7,Milo,talk-Milo,True,Energy low but steady; comfort is 0.63 and safety is 0.79.,body_status,True,True,False,True,True
+76,7,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+77,7,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+79,7,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+81,7,Milo,talk-Milo,True,Energy low but steady; comfort is 0.65 and safety is 0.80.,body_status,True,True,False,True,True
+82,7,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.55 and safety is 0.52.,body_status,True,True,False,True,True
+84,8,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+86,8,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+87,8,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+89,8,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+91,8,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+93,8,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,False,True,False,True,True
+94,8,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+96,9,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+97,9,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+98,9,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+99,9,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.61 and safety is 0.59.,body_status,True,True,False,True,True
+101,9,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+103,9,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+105,9,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.63 and safety is 0.60.,body_status,True,True,False,True,True
+106,9,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+108,10,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+110,10,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+111,10,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.64 and safety is 0.62.,body_status,True,True,False,True,True
+113,10,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+114,10,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+115,10,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+117,10,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.66 and safety is 0.63.,body_status,True,True,False,True,True
+118,10,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+120,11,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+122,11,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+123,11,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.67 and safety is 0.65.,body_status,True,True,False,True,True
+125,11,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+127,11,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+129,11,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.69 and safety is 0.66.,body_status,True,True,False,True,True
+130,11,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+131,11,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+132,12,Fay,talk-Fay,True,Energy low but steady; comfort is 0.84 and safety is 0.71.,body_status,True,True,False,True,True
+134,12,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+135,12,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.70 and safety is 0.67.,body_status,True,True,False,True,True
+137,12,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+139,12,Nia,talk-Nia,True,Energy low but steady; comfort is 0.74 and safety is 0.81.,body_status,True,True,False,True,True
+141,12,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.72 and safety is 0.69.,body_status,True,True,False,True,True
+142,12,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+144,13,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+146,13,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+147,13,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.73 and safety is 0.70.,body_status,True,True,False,True,True
+149,13,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+151,13,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+153,13,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.75 and safety is 0.72.,body_status,True,True,False,True,True
+154,13,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+156,14,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+158,14,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+159,14,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.76 and safety is 0.73.,body_status,True,True,False,True,True
+161,14,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+163,14,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+165,14,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.78 and safety is 0.74.,body_status,True,True,False,True,True
+166,14,Juno,talk-Juno,True,Energy low but steady; comfort is 0.69 and safety is 0.79.,body_status,True,True,False,True,True
+168,15,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+170,15,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+171,15,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.79 and safety is 0.76.,body_status,True,True,False,True,True
+173,15,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+175,15,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+177,15,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.81 and safety is 0.77.,body_status,True,True,False,True,True
+178,15,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+180,16,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+182,16,Milo,talk-Milo,True,Energy low but steady; comfort is 0.82 and safety is 0.94.,body_status,True,True,False,True,True
+183,16,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.82 and safety is 0.79.,body_status,True,True,False,True,True
+185,16,Ari,talk-Ari,True,Energy low but steady; comfort is 0.84 and safety is 0.77.,body_status,True,True,False,True,True
+187,16,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+189,16,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.84 and safety is 0.80.,body_status,True,True,False,True,True
+190,16,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+192,17,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+194,17,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+195,17,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.85 and safety is 0.81.,body_status,True,True,False,True,True
+196,17,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+197,17,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+199,17,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+201,17,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.87 and safety is 0.83.,body_status,True,True,False,True,True
+202,17,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+204,18,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+206,18,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+207,18,Juno,talk-Juno,True,Energy low but steady; comfort is 0.77 and safety is 0.85.,body_status,True,True,False,True,True
+209,18,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+211,18,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+212,18,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+213,18,Juno,talk-Juno,True,Energy low but steady; comfort is 0.79 and safety is 0.86.,body_status,True,True,False,True,True
+214,18,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+216,19,Nia,talk-Nia,True,Energy low but steady; comfort is 0.82 and safety is 0.85.,body_status,True,True,False,True,True
+217,19,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,False,True,False,True,True
+218,19,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+219,19,Juno,talk-Juno,True,Energy low but steady; comfort is 0.80 and safety is 0.88.,body_status,True,True,False,True,True
+221,19,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+223,19,Milo,talk-Milo,True,Energy low but steady; comfort is 0.86 and safety is 0.88.,body_status,True,True,False,True,True
+225,19,Juno,talk-Juno,True,Energy low but steady; comfort is 0.82 and safety is 0.89.,body_status,True,True,False,True,True
+226,19,Ari,talk-Ari,True,Energy low but steady; comfort is 0.94 and safety is 0.88.,body_status,True,True,False,True,True
+228,20,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+230,20,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+231,20,Juno,talk-Juno,True,Energy low but steady; comfort is 0.83 and safety is 0.90.,body_status,True,True,False,True,True
+233,20,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+234,20,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+235,20,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+237,20,Juno,talk-Juno,True,Energy low but steady; comfort is 0.85 and safety is 0.92.,body_status,True,True,False,True,True
+238,20,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+240,21,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+242,21,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+243,21,Juno,talk-Juno,True,Energy low but steady; comfort is 0.86 and safety is 0.93.,body_status,True,True,False,True,True
+245,21,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+247,21,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+249,21,Juno,talk-Juno,True,Energy low but steady; comfort is 0.88 and safety is 0.95.,body_status,True,True,False,True,True
+250,21,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+251,21,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+252,22,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+254,22,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+255,22,Juno,talk-Juno,True,Energy low but steady; comfort is 0.89 and safety is 0.96.,body_status,True,True,False,True,True
+256,22,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+257,22,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+259,22,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+261,22,Juno,talk-Juno,True,Energy low but steady; comfort is 0.91 and safety is 0.96.,body_status,True,True,False,True,True
+262,22,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+264,23,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+266,23,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+267,23,Juno,talk-Juno,True,Energy low but steady; comfort is 0.92 and safety is 0.96.,body_status,True,True,False,True,True
+269,23,Fay,talk-Fay,True,Energy low but steady; comfort is 0.91 and safety is 0.71.,body_status,True,True,False,True,True
+271,23,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+273,23,Juno,talk-Juno,True,Energy low but steady; comfort is 0.94 and safety is 0.96.,body_status,True,True,False,True,True
+274,23,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+276,24,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+278,24,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+279,24,Juno,talk-Juno,True,Energy low but steady; comfort is 0.95 and safety is 0.96.,body_status,False,True,False,True,True
+281,24,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+283,24,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+285,24,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+286,24,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+288,25,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+290,25,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+291,25,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+293,25,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+295,25,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+297,25,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+298,25,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+300,26,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+302,26,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+303,26,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+305,26,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+307,26,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+309,26,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+310,26,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,False,True,False,True,True
+312,27,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+314,27,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+315,27,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+317,27,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+319,27,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+321,27,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+322,27,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+324,28,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+326,28,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+327,28,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+329,28,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+331,28,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+332,28,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+333,28,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+334,28,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+336,29,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+337,29,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+338,29,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+339,29,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+341,29,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,False,True,False,True,True
+343,29,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+345,29,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+346,29,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+348,30,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+350,30,Juno,talk-Juno,True,Energy low but steady; comfort is 0.95 and safety is 0.94.,body_status,True,True,False,True,True
+351,30,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+353,30,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+354,30,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+355,30,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+357,30,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+358,30,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+360,31,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+362,31,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+363,31,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+365,31,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+367,31,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+369,31,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+370,31,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+371,31,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+372,32,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,False,False,True,True,True
+374,32,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+375,32,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+376,32,Fay,talk-Fay,True,Energy low but steady; comfort is 0.93 and safety is 0.71.,body_status,True,True,False,True,True
+377,32,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+379,32,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+381,32,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+382,32,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+384,33,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+386,33,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+387,33,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+389,33,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+391,33,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+393,33,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+394,33,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+396,34,Milo,talk-Milo,True,Energy low but steady; comfort is 0.93 and safety is 0.86.,body_status,True,True,False,True,True
+398,34,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+399,34,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+401,34,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+403,34,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,False,True,False,True,True
+405,34,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+406,34,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.77.,body_status,True,True,False,True,True
+408,35,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+410,35,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+411,35,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+413,35,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+415,35,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+417,35,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+418,35,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+420,36,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+422,36,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+423,36,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.84.,body_status,True,True,False,True,True
+425,36,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+427,36,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+429,36,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.86.,body_status,True,True,False,True,True
+430,36,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+432,37,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+434,37,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,False,True,False,True,True
+435,37,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.87.,body_status,True,True,False,True,True
+437,37,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+439,37,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+441,37,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.88.,body_status,True,True,False,True,True
+442,37,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+444,38,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+446,38,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+447,38,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.90.,body_status,True,True,False,True,True
+449,38,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+451,38,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+453,38,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.91.,body_status,True,True,False,True,True
+454,38,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+456,39,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+457,39,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.90.,body_status,True,True,False,True,True
+458,39,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+459,39,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.93.,body_status,True,True,False,True,True
+461,39,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+463,39,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+465,39,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,False,True,False,True,True
+466,39,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+468,40,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+470,40,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+471,40,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+473,40,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+474,40,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+475,40,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+477,40,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+478,40,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+480,41,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+482,41,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+483,41,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+485,41,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+487,41,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+489,41,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+490,41,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+491,41,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+492,42,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+494,42,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+495,42,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+496,42,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,False,False,False,True,True
+497,42,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+499,42,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+501,42,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+502,42,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+504,43,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+506,43,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+507,43,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+509,43,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+511,43,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+513,43,Fay,talk-Fay,True,Energy low but steady; comfort is 0.90 and safety is 0.88.,body_status,True,True,False,True,True
+514,43,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+516,44,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+518,44,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+519,44,Fay,talk-Fay,True,Energy low but steady; comfort is 0.92 and safety is 0.89.,body_status,True,True,False,True,True
+521,44,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+523,44,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+524,44,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+525,44,Fay,talk-Fay,True,Energy low but steady; comfort is 0.93 and safety is 0.91.,body_status,True,True,False,True,True
+526,44,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+528,45,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+530,45,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+531,45,Nia,talk-Nia,True,Energy low but steady; comfort is 0.92 and safety is 0.90.,body_status,True,True,False,True,True
+533,45,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+535,45,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+537,45,Nia,talk-Nia,True,Energy low but steady; comfort is 0.94 and safety is 0.91.,body_status,True,True,False,True,True
+538,45,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+540,46,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+542,46,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+543,46,Nia,talk-Nia,True,Energy low but steady; comfort is 0.95 and safety is 0.93.,body_status,True,True,False,True,True
+545,46,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+547,46,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+549,46,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+550,46,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+552,47,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+554,47,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+555,47,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+557,47,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+559,47,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+561,47,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+562,47,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+564,48,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+566,48,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+567,48,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+569,48,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+571,48,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+573,48,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+574,48,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+576,49,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+578,49,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+579,49,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+581,49,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+583,49,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+585,49,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+586,49,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+588,50,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+590,50,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+591,50,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+593,50,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+594,50,Juno,talk-Juno,True,Energy low but steady; comfort is 0.90 and safety is 0.88.,body_status,True,True,False,True,True
+595,50,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+597,50,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+598,50,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+600,51,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+602,51,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+603,51,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+605,51,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+607,51,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+609,51,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+610,51,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+611,51,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+612,52,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+614,52,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+615,52,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+616,52,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+617,52,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+619,52,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+621,52,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+622,52,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+624,53,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+626,53,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+627,53,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+629,53,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+631,53,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+633,53,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+634,53,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+636,54,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+637,54,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+638,54,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+639,54,Milo,talk-Milo,True,Energy low but steady; comfort is 0.95 and safety is 0.90.,body_status,True,True,False,True,True
+641,54,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+643,54,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+645,54,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.91.,body_status,True,True,False,True,True
+646,54,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+648,55,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+650,55,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+651,55,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.93.,body_status,False,True,False,True,True
+653,55,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+654,55,Ari,talk-Ari,True,Energy low but steady; comfort is 0.90 and safety is 0.88.,body_status,True,True,False,True,True
+655,55,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+657,55,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+658,55,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+660,56,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+662,56,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+663,56,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+665,56,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+667,56,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+669,56,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+670,56,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+672,57,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+674,57,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+675,57,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+677,57,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+679,57,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+681,57,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+682,57,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,False,True,False,True,True
+684,58,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+686,58,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+687,58,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+689,58,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+691,58,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+693,58,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+694,58,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+696,59,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+698,59,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+699,59,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+701,59,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+703,59,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+705,59,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+706,59,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+708,60,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+710,60,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+711,60,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+713,60,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,False,True,False,True,True
+715,60,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+717,60,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+718,60,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+720,61,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+722,61,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+723,61,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+725,61,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+727,61,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+729,61,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+730,61,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+731,61,Juno,talk-Juno,True,Energy low but steady; comfort is 0.90 and safety is 0.88.,body_status,True,True,False,True,True
+732,62,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+734,62,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+735,62,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+736,62,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+737,62,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+739,62,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+741,62,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+742,62,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+744,63,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,False,False,False,True,True
+746,63,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+747,63,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+749,63,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+751,63,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+752,63,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+753,63,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+754,63,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+756,64,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+757,64,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+758,64,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+759,64,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+761,64,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+763,64,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+765,64,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+766,64,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+768,65,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+770,65,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+771,65,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+773,65,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+774,65,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+775,65,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,False,True,False,True,True
+777,65,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+778,65,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+780,66,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+782,66,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+783,66,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+785,66,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+787,66,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+789,66,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+790,66,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+791,66,Ari,talk-Ari,True,Energy low but steady; comfort is 0.90 and safety is 0.88.,body_status,True,True,False,True,True
+792,67,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+794,67,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+795,67,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+797,67,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+799,67,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+801,67,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+802,67,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+804,68,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+806,68,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,False,True,False,True,True
+807,68,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+809,68,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+811,68,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+813,68,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+814,68,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+816,69,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+818,69,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+819,69,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+821,69,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+823,69,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+825,69,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+826,69,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+828,70,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+830,70,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+831,70,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+833,70,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+835,70,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+837,70,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,False,True,False,True,True
+838,70,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+840,71,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+842,71,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+843,71,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+845,71,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+847,71,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+849,71,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+850,71,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+852,72,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+854,72,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+855,72,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+857,72,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+859,72,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+861,72,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+862,72,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+864,73,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+866,73,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+867,73,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+869,73,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+871,73,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+872,73,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.90 and safety is 0.88.,body_status,True,True,False,True,True
+873,73,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+874,73,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+876,74,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+877,74,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+878,74,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+879,74,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+881,74,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+883,74,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+885,74,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+886,74,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+888,75,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+890,75,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+891,75,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+893,75,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+894,75,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+895,75,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+897,75,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+898,75,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+900,76,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+902,76,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+903,76,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+905,76,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+907,76,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+909,76,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+910,76,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+911,76,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+912,77,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+914,77,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+915,77,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+916,77,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+917,77,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+919,77,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+921,77,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+922,77,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+924,78,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+926,78,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+927,78,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+929,78,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+931,78,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+933,78,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+934,78,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+936,79,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+938,79,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+939,79,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+941,79,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+943,79,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+945,79,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+946,79,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+948,80,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+950,80,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+951,80,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+953,80,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+955,80,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+957,80,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+958,80,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+960,81,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+962,81,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+963,81,Ari,talk-Ari,True,Energy low but steady; comfort is 0.89 and safety is 0.83.,body_status,True,True,False,True,True
+965,81,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+967,81,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+969,81,Ari,talk-Ari,True,Energy low but steady; comfort is 0.90 and safety is 0.84.,body_status,True,True,False,True,True
+970,81,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+972,82,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.93.,body_status,True,True,False,True,True
+974,82,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+975,82,Ari,talk-Ari,True,Energy low but steady; comfort is 0.92 and safety is 0.86.,body_status,True,True,False,True,True
+977,82,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+979,82,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+981,82,Ari,talk-Ari,True,Energy low but steady; comfort is 0.93 and safety is 0.87.,body_status,True,True,False,True,True
+982,82,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+984,83,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+986,83,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+987,83,Ari,talk-Ari,True,Energy low but steady; comfort is 0.95 and safety is 0.88.,body_status,True,True,False,True,True
+989,83,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+991,83,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+992,83,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,False,False,False,True,True
+993,83,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.90.,body_status,True,True,False,True,True
+994,83,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+996,84,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+997,84,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+998,84,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+999,84,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.91.,body_status,True,True,False,True,True
+1001,84,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+1003,84,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1005,84,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.93.,body_status,True,True,False,True,True
+1006,84,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+1008,85,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+1010,85,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+1011,85,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+1013,85,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+1014,85,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1015,85,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+1017,85,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+1018,85,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+1020,86,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+1022,86,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1023,86,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,False,True,False,True,True
+1025,86,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+1027,86,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1029,86,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1030,86,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+1031,86,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+1032,87,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1034,87,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1035,87,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1036,87,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+1037,87,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+1039,87,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+1041,87,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1042,87,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+1044,88,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+1046,88,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+1047,88,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+1049,88,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+1051,88,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+1053,88,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+1054,88,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,False,False,True,True,True
+1056,89,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+1058,89,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+1059,89,Ari,talk-Ari,True,Energy low but steady; comfort is 0.91 and safety is 0.90.,body_status,True,True,False,True,True
+1061,89,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+1063,89,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+1065,89,Ari,talk-Ari,True,Energy low but steady; comfort is 0.93 and safety is 0.91.,body_status,True,True,False,True,True
+1066,89,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+1068,90,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+1070,90,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+1071,90,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1073,90,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1075,90,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1077,90,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1078,90,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+1080,91,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1082,91,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1083,91,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1085,91,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,False,False,True,True,True
+1087,91,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+1089,91,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1090,91,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+1092,92,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+1094,92,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+1095,92,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1097,92,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+1099,92,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+1101,92,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1102,92,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+1104,93,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1106,93,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+1107,93,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1109,93,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1111,93,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+1113,93,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1114,93,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+1116,94,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,False,True,False,True,True
+1117,94,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+1118,94,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+1119,94,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1121,94,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1123,94,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1125,94,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1126,94,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+1128,95,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+1130,95,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+1131,95,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1133,95,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+1134,95,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1135,95,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+1137,95,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1138,95,Nia,talk-Nia,True,Gabriel asked before touching my spool.,memory_recall,True,False,True,True,True
+1140,96,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+1142,96,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+1143,96,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1145,96,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+1147,96,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,False,True,False,True,True
+1149,96,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1150,96,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,recovery,True,True,False,True,True
+1151,96,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1152,97,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.94 and safety is 0.85.,body_status,True,True,False,True,True
+1154,97,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+1155,97,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1156,97,Nia,talk-Nia,True,Do not pull the spool from my hands. Ask first.,bounded_refusal,True,True,False,True,True
+1157,97,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+1159,97,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1161,97,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1162,97,Nia,talk-Nia,True,Energy low but steady; comfort is 0.90 and safety is 0.85.,body_status,True,True,False,True,True
+1164,98,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+1166,98,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+1167,98,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+1169,98,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1171,98,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1173,98,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+1174,98,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+1176,99,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+1177,99,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+1178,99,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,False,True,False,True,True
+1179,99,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.93.,body_status,True,True,False,True,True
+1181,99,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+1183,99,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+1185,99,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+1186,99,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+1188,100,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+1190,100,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+1191,100,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1193,100,Ivo,talk-Ivo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1195,100,Ari,talk-Ari,True,Gabriel waited near the ridge.,memory_recall,True,False,True,True,True
+1197,100,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1198,100,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+1200,101,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1202,101,Fay,talk-Fay,True,That request is easier if we go slowly.,help_response,True,False,False,True,True
+1203,101,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1205,101,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+1207,101,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+1209,101,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,False,True,False,True,True
+1210,101,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1212,102,Juno,talk-Juno,True,Gabriel stepped back from the sparks.,memory_recall,True,False,True,True,True
+1214,102,Fay,talk-Fay,True,I need a slower route before I carry the ledger.,bounded_refusal,True,True,False,True,True
+1215,102,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1217,102,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1219,102,Ari,talk-Ari,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1221,102,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1222,102,Milo,talk-Milo,True,Gabriel kept the lantern lit.,memory_recall,True,False,True,True,True
+1224,103,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+1226,103,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+1227,103,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1229,103,Ivo,talk-Ivo,True,I can bring seeds if we keep them dry.,help_response,True,False,False,True,True
+1231,103,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+1233,103,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1234,103,Milo,talk-Milo,True,"If you light the path, I will move first.",recovery,True,True,False,True,True
+1236,104,Juno,talk-Juno,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1238,104,Fay,talk-Fay,True,Gabriel slowed down after I hesitated.,memory_recall,True,False,True,True,True
+1239,104,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1241,104,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,True,True,False,True,True
+1243,104,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+1245,104,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1246,104,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1248,105,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1250,105,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+1251,105,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1253,105,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True
+1254,105,Juno,talk-Juno,True,That distance helps. I can repair again.,recovery,True,True,False,True,True
+1255,105,Ari,talk-Ari,True,I can try that if we keep the kit dry.,help_response,True,False,False,True,True
+1257,105,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1258,105,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1260,106,Juno,talk-Juno,True,Back up. Sparks near my hands make me lose the thread.,bounded_refusal,True,True,False,True,True
+1262,106,Fay,talk-Fay,True,Energy low but steady; comfort is 0.96 and safety is 0.94.,body_status,True,True,False,True,True
+1263,106,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1265,106,Ivo,talk-Ivo,True,Gabriel protected the seed satchel.,memory_recall,True,False,True,True,True
+1267,106,Ari,talk-Ari,True,No. I will not cross the wet plank while my hands are numb.,bounded_refusal,True,True,False,True,True
+1269,106,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1270,106,Milo,talk-Milo,True,I am not walking blind while the lantern sputters.,bounded_refusal,True,True,False,True,True
+1271,106,Ivo,talk-Ivo,True,I will not step into the fen with the satchel open.,bounded_refusal,False,True,False,True,True
+1272,107,Juno,talk-Juno,True,I can finish if you give my hands room.,help_response,True,False,False,True,True
+1274,107,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,care_response,True,True,False,True,True
+1275,107,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1276,107,Milo,talk-Milo,True,"If you light the path, I will move first.",care_response,True,True,False,True,True
+1277,107,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,recovery,True,True,False,True,True
+1279,107,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",care_response,True,True,False,True,True
+1281,107,Nia,talk-Nia,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1282,107,Milo,talk-Milo,True,I can lead if the lantern stays lit.,help_response,True,False,False,True,True
+1284,108,Ari,talk-Ari,True,"If you wait and choose the ridge, I can help again.",recovery,True,True,False,True,True
+1286,108,Nia,talk-Nia,True,I can explain the pattern if you leave the spool with me.,help_response,True,False,False,True,True
+1287,108,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.95.,body_status,True,True,False,True,True
+1289,108,Juno,talk-Juno,True,That distance helps. I can repair again.,care_response,True,True,False,True,True
+1291,108,Fay,talk-Fay,True,Thank you for not rushing me; I can continue.,recovery,True,True,False,True,True
+1292,108,Nia,talk-Nia,True,You asked first this time. I can show the clean pattern.,care_response,True,True,False,True,True
+1293,108,Milo,talk-Milo,True,Energy low but steady; comfort is 0.96 and safety is 0.96.,body_status,True,True,False,True,True
+1294,108,Ivo,talk-Ivo,True,Close the satchel and I will take the market planks.,care_response,True,True,False,True,True

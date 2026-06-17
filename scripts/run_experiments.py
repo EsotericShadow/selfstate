@@ -2160,6 +2160,12 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge.py",
+        "--seed",
+        "20260888",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

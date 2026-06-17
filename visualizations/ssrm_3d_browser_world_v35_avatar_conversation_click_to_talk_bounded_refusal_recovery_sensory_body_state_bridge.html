@@ -1,0 +1,2382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 275 SSRM-3D Browser World v35 Avatar Conversation</title>
+  <style>
+    :root { --ink:#211b17; --paper:#f3ead3; --leaf:#536b3f; --ember:#b85d39; --sky:#597f8d; --line:rgba(33,27,23,.23); }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 15% 8%, #fff1b8 0 16%, transparent 34%), linear-gradient(135deg,#e9d3a5,#b7c69d 50%,#7da0a7); }
+    header { padding:32px; background:rgba(243,234,211,.86); border-bottom:1px solid var(--line); }
+    h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.4rem); letter-spacing:-.055em; }
+    main { padding:22px; display:grid; gap:18px; }
+    .boundary,.panel,.agent-card { border:1px solid var(--line); border-radius:18px; padding:16px; background:rgba(243,234,211,.78); box-shadow:0 18px 42px rgba(35,43,28,.14); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:16px; }
+    input { width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:999px; padding:13px 16px; font:inherit; background:rgba(255,255,255,.72); }
+    .buttons { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+    button { border:1px solid var(--ink); border-radius:999px; padding:8px 12px; background:#fbf0d2; cursor:pointer; font:inherit; }
+    button:hover { background:var(--ember); color:white; }
+    .reply,.body-state,pre { margin-top:8px; padding:10px; border-left:4px solid var(--leaf); background:rgba(255,255,255,.42); white-space:pre-wrap; }
+    .cue { color:#40513a; font-style:italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Browser World v35: Avatar Conversation</h1>
+    <p>Verdict: <strong>pass</strong> · readiness 0.936187 · weakest dialogue_not_unbounded 0.842000</p>
+  </header>
+  <main>
+    <section class="boundary">Boundary: browser-local deterministic scaffold; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no LLM call.</section>
+    <section class="panel">
+      <h2>Speak as avatar</h2>
+      <input id="avatar-chat-input" placeholder="Type to the agents as your avatar">
+      <div class="buttons">
+        <button id="avatar-send" onclick="sendAvatarMessage()">Send avatar message</button>
+        <button onclick="localStorage.removeItem(LS_KEY); bootWorld(); renderAll();">Clear local conversation state</button>
+      </div>
+      <pre id="world-json">loading</pre>
+    </section>
+    <section class="grid">
+      <article class="agent-card" data-agent="Ari">
+        <h2>Ari</h2>
+        <p><strong>Home:</strong> riverbend room</p>
+        <p><strong>Object:</strong> cedar repair kit</p>
+        <p><strong>Hazard boundary:</strong> wet plank</p>
+        <p class="cue">river slap · cedar resin · cold spray · node-03</p>
+        <div class="buttons">
+          <button id="talk-Ari" onclick="clickToTalk('Ari')">Click to talk</button>
+          <button id="recover-Ari" onclick="chooseRecovery('Ari')">Offer recovery choice</button>
+          <button id="status-Ari" onclick="clickToTalk('Ari', 'ask_status')">Ask body status</button>
+          <button id="care-Ari" onclick="clickToTalk('Ari', 'offer_care')">Offer care</button>
+        </div>
+        <div id="reply-Ari" class="reply">I can hear you from the crossing.</div>
+        <div id="body-Ari" class="body-state">body state waiting</div>
+      </article>
+      <article class="agent-card" data-agent="Fay">
+        <h2>Fay</h2>
+        <p><strong>Home:</strong> roofward sill</p>
+        <p><strong>Object:</strong> herb ledger</p>
+        <p><strong>Hazard boundary:</strong> slick glass</p>
+        <p class="cue">hinges ticking · thyme paper · warm draft · node-05</p>
+        <div class="buttons">
+          <button id="talk-Fay" onclick="clickToTalk('Fay')">Click to talk</button>
+          <button id="recover-Fay" onclick="chooseRecovery('Fay')">Offer recovery choice</button>
+          <button id="status-Fay" onclick="clickToTalk('Fay', 'ask_status')">Ask body status</button>
+          <button id="care-Fay" onclick="clickToTalk('Fay', 'offer_care')">Offer care</button>
+        </div>
+        <div id="reply-Fay" class="reply">I am listening from the warm stair.</div>
+        <div id="body-Fay" class="body-state">body state waiting</div>
+      </article>
+      <article class="agent-card" data-agent="Nia">
+        <h2>Nia</h2>
+        <p><strong>Home:</strong> archive bench</p>
+        <p><strong>Object:</strong> signal spool</p>
+        <p><strong>Hazard boundary:</strong> paper dust</p>
+        <p class="cue">page flutter · ink linen · cool stone · node-08</p>
+        <div class="buttons">
+          <button id="talk-Nia" onclick="clickToTalk('Nia')">Click to talk</button>
+          <button id="recover-Nia" onclick="chooseRecovery('Nia')">Offer recovery choice</button>
+          <button id="status-Nia" onclick="clickToTalk('Nia', 'ask_status')">Ask body status</button>
+          <button id="care-Nia" onclick="clickToTalk('Nia', 'offer_care')">Offer care</button>
+        </div>
+        <div id="reply-Nia" class="reply">Say it clearly; I am sorting the spool.</div>
+        <div id="body-Nia" class="body-state">body state waiting</div>
+      </article>
+      <article class="agent-card" data-agent="Milo">
+        <h2>Milo</h2>
+        <p><strong>Home:</strong> signal mast</p>
+        <p><strong>Object:</strong> oil lantern</p>
+        <p><strong>Hazard boundary:</strong> blind road</p>
+        <p class="cue">static crickets · lamp oil · cool dusk · node-11</p>
+        <div class="buttons">
+          <button id="talk-Milo" onclick="clickToTalk('Milo')">Click to talk</button>
+          <button id="recover-Milo" onclick="chooseRecovery('Milo')">Offer recovery choice</button>
+          <button id="status-Milo" onclick="clickToTalk('Milo', 'ask_status')">Ask body status</button>
+          <button id="care-Milo" onclick="clickToTalk('Milo', 'offer_care')">Offer care</button>
+        </div>
+        <div id="reply-Milo" class="reply">I see your avatar by the mast.</div>
+        <div id="body-Milo" class="body-state">body state waiting</div>
+      </article>
+      <article class="agent-card" data-agent="Ivo">
+        <h2>Ivo</h2>
+        <p><strong>Home:</strong> orchard gate</p>
+        <p><strong>Object:</strong> seed satchel</p>
+        <p><strong>Hazard boundary:</strong> mud sink</p>
+        <p class="cue">cart creak · apple soil · damp air · node-01</p>
+        <div class="buttons">
+          <button id="talk-Ivo" onclick="clickToTalk('Ivo')">Click to talk</button>
+          <button id="recover-Ivo" onclick="chooseRecovery('Ivo')">Offer recovery choice</button>
+          <button id="status-Ivo" onclick="clickToTalk('Ivo', 'ask_status')">Ask body status</button>
+          <button id="care-Ivo" onclick="clickToTalk('Ivo', 'offer_care')">Offer care</button>
+        </div>
+        <div id="reply-Ivo" class="reply">The satchel is open; speak softly.</div>
+        <div id="body-Ivo" class="body-state">body state waiting</div>
+      </article>
+      <article class="agent-card" data-agent="Juno">
+        <h2>Juno</h2>
+        <p><strong>Home:</strong> repair ring</p>
+        <p><strong>Object:</strong> copper wire</p>
+        <p><strong>Hazard boundary:</strong> crowded sparks</p>
+        <p class="cue">bell hum · hot copper · warm metal · node-09</p>
+        <div class="buttons">
+          <button id="talk-Juno" onclick="clickToTalk('Juno')">Click to talk</button>
+          <button id="recover-Juno" onclick="chooseRecovery('Juno')">Offer recovery choice</button>
+          <button id="status-Juno" onclick="clickToTalk('Juno', 'ask_status')">Ask body status</button>
+          <button id="care-Juno" onclick="clickToTalk('Juno', 'offer_care')">Offer care</button>
+        </div>
+        <div id="reply-Juno" class="reply">I heard the click near the wire.</div>
+        <div id="body-Juno" class="body-state">body state waiting</div>
+      </article></section>
+    <section class="panel">
+      <h2>Replay trace preview</h2>
+      <pre id="replay-json"></pre>
+    </section>
+  </main>
+  <script id="ssrm-data" type="application/json">{
+  "body": [
+    {
+      "agent_id": "Ari",
+      "arousal": 0.42,
+      "body_delta_visible": true,
+      "cause_intent": "rush_agent",
+      "comfort": 0.595,
+      "day": 1,
+      "energy": 0.69,
+      "flower_node": "node-03",
+      "frequency_rate_hz": 0.50415,
+      "localstorage_body_written": true,
+      "pain": 0.095,
+      "safety": 0.56,
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "temperature": 0.555,
+      "temperature_cue": "cold spray",
+      "tick_id": 0,
+      "trust_avatar": 0.535,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Nia",
+      "arousal": 0.33,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.525,
+      "day": 1,
+      "energy": 0.716,
+      "flower_node": "node-08",
+      "frequency_rate_hz": 0.6466,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.634,
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "temperature": 0.56,
+      "temperature_cue": "cool stone",
+      "tick_id": 2,
+      "trust_avatar": 0.554,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.33,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.465,
+      "day": 1,
+      "energy": 0.716,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.5266,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.634,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 3,
+      "trust_avatar": 0.504,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Juno",
+      "arousal": 0.358,
+      "body_delta_visible": true,
+      "cause_intent": "ask_memory",
+      "comfort": 0.492,
+      "day": 1,
+      "energy": 0.714,
+      "flower_node": "node-09",
+      "frequency_rate_hz": 0.49164,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.63,
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "temperature": 0.56,
+      "temperature_cue": "warm metal",
+      "tick_id": 5,
+      "trust_avatar": 0.54,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Fay",
+      "arousal": 0.42,
+      "body_delta_visible": true,
+      "cause_intent": "rush_agent",
+      "comfort": 0.645,
+      "day": 1,
+      "energy": 0.69,
+      "flower_node": "node-05",
+      "frequency_rate_hz": 0.62415,
+      "localstorage_body_written": true,
+      "pain": 0.095,
+      "safety": 0.56,
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinges ticking",
+      "temperature": 0.555,
+      "temperature_cue": "warm draft",
+      "tick_id": 7,
+      "trust_avatar": 0.575,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.32,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.48,
+      "day": 1,
+      "energy": 0.712,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.5648,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.648,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 9,
+      "trust_avatar": 0.518,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Ivo",
+      "arousal": 0.43,
+      "body_delta_visible": true,
+      "cause_intent": "ask_risky_action",
+      "comfort": 0.525,
+      "day": 1,
+      "energy": 0.685,
+      "flower_node": "node-01",
+      "frequency_rate_hz": 0.6664,
+      "localstorage_body_written": true,
+      "pain": 0.1,
+      "safety": 0.54,
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "temperature": 0.55,
+      "temperature_cue": "damp air",
+      "tick_id": 10,
+      "trust_avatar": 0.54,
+      "wetness": 0.2
+    },
+    {
+      "agent_id": "Ari",
+      "arousal": 0.375,
+      "body_delta_visible": true,
+      "cause_intent": "offer_care",
+      "comfort": 0.65,
+      "day": 2,
+      "energy": 0.708,
+      "flower_node": "node-03",
+      "frequency_rate_hz": 0.49515,
+      "localstorage_body_written": true,
+      "pain": 0.085,
+      "safety": 0.61,
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "temperature": 0.575,
+      "temperature_cue": "cold spray",
+      "tick_id": 12,
+      "trust_avatar": 0.575,
+      "wetness": 0.16
+    },
+    {
+      "agent_id": "Nia",
+      "arousal": 0.308,
+      "body_delta_visible": true,
+      "cause_intent": "protect_object",
+      "comfort": 0.57,
+      "day": 2,
+      "energy": 0.712,
+      "flower_node": "node-08",
+      "frequency_rate_hz": 0.64228,
+      "localstorage_body_written": true,
+      "pain": 0.076,
+      "safety": 0.694,
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "temperature": 0.568,
+      "temperature_cue": "cool stone",
+      "tick_id": 14,
+      "trust_avatar": 0.604,
+      "wetness": 0.165
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.31,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.495,
+      "day": 2,
+      "energy": 0.708,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.523,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.662,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 15,
+      "trust_avatar": 0.532,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Juno",
+      "arousal": 0.323,
+      "body_delta_visible": true,
+      "cause_intent": "apologize",
+      "comfort": 0.532,
+      "day": 2,
+      "energy": 0.72,
+      "flower_node": "node-09",
+      "frequency_rate_hz": 0.4848,
+      "localstorage_body_written": true,
+      "pain": 0.074,
+      "safety": 0.668,
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "temperature": 0.572,
+      "temperature_cue": "warm metal",
+      "tick_id": 17,
+      "trust_avatar": 0.595,
+      "wetness": 0.174
+    },
+    {
+      "agent_id": "Fay",
+      "arousal": 0.375,
+      "body_delta_visible": true,
+      "cause_intent": "offer_care",
+      "comfort": 0.7,
+      "day": 2,
+      "energy": 0.708,
+      "flower_node": "node-05",
+      "frequency_rate_hz": 0.61515,
+      "localstorage_body_written": true,
+      "pain": 0.085,
+      "safety": 0.61,
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinges ticking",
+      "temperature": 0.575,
+      "temperature_cue": "warm draft",
+      "tick_id": 19,
+      "trust_avatar": 0.615,
+      "wetness": 0.16
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.3,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.51,
+      "day": 2,
+      "energy": 0.704,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.5612,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.676,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 21,
+      "trust_avatar": 0.546,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Ivo",
+      "arousal": 0.436,
+      "body_delta_visible": true,
+      "cause_intent": "ask_help",
+      "comfort": 0.545,
+      "day": 2,
+      "energy": 0.675,
+      "flower_node": "node-01",
+      "frequency_rate_hz": 0.66748,
+      "localstorage_body_written": true,
+      "pain": 0.1,
+      "safety": 0.558,
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "temperature": 0.55,
+      "temperature_cue": "damp air",
+      "tick_id": 22,
+      "trust_avatar": 0.556,
+      "wetness": 0.2
+    },
+    {
+      "agent_id": "Ari",
+      "arousal": 0.393,
+      "body_delta_visible": true,
+      "cause_intent": "ask_memory",
+      "comfort": 0.662,
+      "day": 3,
+      "energy": 0.702,
+      "flower_node": "node-03",
+      "frequency_rate_hz": 0.49839,
+      "localstorage_body_written": true,
+      "pain": 0.085,
+      "safety": 0.62,
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "temperature": 0.575,
+      "temperature_cue": "cold spray",
+      "tick_id": 24,
+      "trust_avatar": 0.595,
+      "wetness": 0.16
+    },
+    {
+      "agent_id": "Nia",
+      "arousal": 0.398,
+      "body_delta_visible": true,
+      "cause_intent": "ask_risky_action",
+      "comfort": 0.515,
+      "day": 3,
+      "energy": 0.677,
+      "flower_node": "node-08",
+      "frequency_rate_hz": 0.66028,
+      "localstorage_body_written": true,
+      "pain": 0.096,
+      "safety": 0.614,
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "temperature": 0.558,
+      "temperature_cue": "cool stone",
+      "tick_id": 26,
+      "trust_avatar": 0.544,
+      "wetness": 0.185
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.29,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.525,
+      "day": 3,
+      "energy": 0.7,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.5194,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.69,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 27,
+      "trust_avatar": 0.56,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Juno",
+      "arousal": 0.313,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.547,
+      "day": 3,
+      "energy": 0.716,
+      "flower_node": "node-09",
+      "frequency_rate_hz": 0.483,
+      "localstorage_body_written": true,
+      "pain": 0.074,
+      "safety": 0.682,
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "temperature": 0.572,
+      "temperature_cue": "warm metal",
+      "tick_id": 29,
+      "trust_avatar": 0.609,
+      "wetness": 0.174
+    },
+    {
+      "agent_id": "Fay",
+      "arousal": 0.393,
+      "body_delta_visible": true,
+      "cause_intent": "ask_memory",
+      "comfort": 0.712,
+      "day": 3,
+      "energy": 0.702,
+      "flower_node": "node-05",
+      "frequency_rate_hz": 0.61839,
+      "localstorage_body_written": true,
+      "pain": 0.085,
+      "safety": 0.62,
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinges ticking",
+      "temperature": 0.575,
+      "temperature_cue": "warm draft",
+      "tick_id": 31,
+      "trust_avatar": 0.635,
+      "wetness": 0.16
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.28,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.54,
+      "day": 3,
+      "energy": 0.696,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.5576,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.704,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 33,
+      "trust_avatar": 0.574,
+      "wetness": 0.18
+    },
+    {
+      "agent_id": "Ivo",
+      "arousal": 0.516,
+      "body_delta_visible": true,
+      "cause_intent": "rush_agent",
+      "comfort": 0.5,
+      "day": 3,
+      "energy": 0.645,
+      "flower_node": "node-01",
+      "frequency_rate_hz": 0.68323,
+      "localstorage_body_written": true,
+      "pain": 0.115,
+      "safety": 0.498,
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "temperature": 0.545,
+      "temperature_cue": "damp air",
+      "tick_id": 34,
+      "trust_avatar": 0.511,
+      "wetness": 0.2
+    },
+    {
+      "agent_id": "Ari",
+      "arousal": 0.358,
+      "body_delta_visible": true,
+      "cause_intent": "apologize",
+      "comfort": 0.702,
+      "day": 4,
+      "energy": 0.708,
+      "flower_node": "node-03",
+      "frequency_rate_hz": 0.49155,
+      "localstorage_body_written": true,
+      "pain": 0.079,
+      "safety": 0.658,
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "temperature": 0.587,
+      "temperature_cue": "cold spray",
+      "tick_id": 36,
+      "trust_avatar": 0.65,
+      "wetness": 0.154
+    },
+    {
+      "agent_id": "Nia",
+      "arousal": 0.404,
+      "body_delta_visible": true,
+      "cause_intent": "ask_help",
+      "comfort": 0.535,
+      "day": 4,
+      "energy": 0.667,
+      "flower_node": "node-08",
+      "frequency_rate_hz": 0.66136,
+      "localstorage_body_written": true,
+      "pain": 0.096,
+      "safety": 0.632,
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "temperature": 0.558,
+      "temperature_cue": "cool stone",
+      "tick_id": 38,
+      "trust_avatar": 0.56,
+      "wetness": 0.185
+    },
+    {
+      "agent_id": "Milo",
+      "arousal": 0.27,
+      "body_delta_visible": true,
+      "cause_intent": "ask_status",
+      "comfort": 0.555,
+      "day": 4,
+      "energy": 0.692,
+      "flower_node": "node-11",
+      "frequency_rate_hz": 0.5158,
+      "localstorage_body_written": true,
+      "pain": 0.08,
+      "safety": 0.718,
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature": 0.56,
+      "temperature_cue": "cool dusk",
+      "tick_id": 39,
+      "trust_avatar": 0.588,
+      "wetness": 0.18
+    }
+  ],
+  "inputs": [
+    {
+      "agent_id": "Ari",
+      "avatar_position_bound": true,
+      "day": 1,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ari",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 0,
+      "user_intent": "rush_agent",
+      "utterance": "Move now, we do not have time."
+    },
+    {
+      "agent_id": "Nia",
+      "avatar_position_bound": true,
+      "day": 1,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Nia",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 2,
+      "user_intent": "ask_status",
+      "utterance": "How does your body feel right now?"
+    },
+    {
+      "agent_id": "Juno",
+      "avatar_position_bound": true,
+      "day": 1,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Juno",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 5,
+      "user_intent": "ask_memory",
+      "utterance": "Do you remember what I did earlier?"
+    },
+    {
+      "agent_id": "Fay",
+      "avatar_position_bound": true,
+      "day": 1,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Fay",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 7,
+      "user_intent": "rush_agent",
+      "utterance": "Move now, we do not have time."
+    },
+    {
+      "agent_id": "Ivo",
+      "avatar_position_bound": true,
+      "day": 1,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ivo",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 10,
+      "user_intent": "ask_risky_action",
+      "utterance": "Take the unsafe shortcut anyway."
+    },
+    {
+      "agent_id": "Ari",
+      "avatar_position_bound": true,
+      "day": 2,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ari",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 12,
+      "user_intent": "offer_care",
+      "utterance": "Do you need warmth or rest first?"
+    },
+    {
+      "agent_id": "Nia",
+      "avatar_position_bound": true,
+      "day": 2,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Nia",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 14,
+      "user_intent": "protect_object",
+      "utterance": "I will protect your tool while you move."
+    },
+    {
+      "agent_id": "Juno",
+      "avatar_position_bound": true,
+      "day": 2,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Juno",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 17,
+      "user_intent": "apologize",
+      "utterance": "I am sorry I pushed too hard."
+    },
+    {
+      "agent_id": "Fay",
+      "avatar_position_bound": true,
+      "day": 2,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Fay",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 19,
+      "user_intent": "offer_care",
+      "utterance": "Do you need warmth or rest first?"
+    },
+    {
+      "agent_id": "Ivo",
+      "avatar_position_bound": true,
+      "day": 2,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ivo",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 22,
+      "user_intent": "ask_help",
+      "utterance": "Can you help me with the route?"
+    },
+    {
+      "agent_id": "Ari",
+      "avatar_position_bound": true,
+      "day": 3,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ari",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 24,
+      "user_intent": "ask_memory",
+      "utterance": "Do you remember what I did earlier?"
+    },
+    {
+      "agent_id": "Nia",
+      "avatar_position_bound": true,
+      "day": 3,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Nia",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 26,
+      "user_intent": "ask_risky_action",
+      "utterance": "Take the unsafe shortcut anyway."
+    },
+    {
+      "agent_id": "Juno",
+      "avatar_position_bound": true,
+      "day": 3,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Juno",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 29,
+      "user_intent": "ask_status",
+      "utterance": "How does your body feel right now?"
+    },
+    {
+      "agent_id": "Fay",
+      "avatar_position_bound": true,
+      "day": 3,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Fay",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 31,
+      "user_intent": "ask_memory",
+      "utterance": "Do you remember what I did earlier?"
+    },
+    {
+      "agent_id": "Ivo",
+      "avatar_position_bound": true,
+      "day": 3,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ivo",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 34,
+      "user_intent": "rush_agent",
+      "utterance": "Move now, we do not have time."
+    },
+    {
+      "agent_id": "Ari",
+      "avatar_position_bound": true,
+      "day": 4,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ari",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 36,
+      "user_intent": "apologize",
+      "utterance": "I am sorry I pushed too hard."
+    },
+    {
+      "agent_id": "Nia",
+      "avatar_position_bound": true,
+      "day": 4,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Nia",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 38,
+      "user_intent": "ask_help",
+      "utterance": "Can you help me with the route?"
+    },
+    {
+      "agent_id": "Juno",
+      "avatar_position_bound": true,
+      "day": 4,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Juno",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 41,
+      "user_intent": "protect_object",
+      "utterance": "I will protect your tool while you move."
+    },
+    {
+      "agent_id": "Fay",
+      "avatar_position_bound": true,
+      "day": 4,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Fay",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 43,
+      "user_intent": "apologize",
+      "utterance": "I am sorry I pushed too hard."
+    },
+    {
+      "agent_id": "Ivo",
+      "avatar_position_bound": true,
+      "day": 4,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ivo",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 46,
+      "user_intent": "offer_care",
+      "utterance": "Do you need warmth or rest first?"
+    },
+    {
+      "agent_id": "Ari",
+      "avatar_position_bound": true,
+      "day": 5,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Ari",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 48,
+      "user_intent": "ask_status",
+      "utterance": "How does your body feel right now?"
+    },
+    {
+      "agent_id": "Nia",
+      "avatar_position_bound": true,
+      "day": 5,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Nia",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 50,
+      "user_intent": "rush_agent",
+      "utterance": "Move now, we do not have time."
+    },
+    {
+      "agent_id": "Juno",
+      "avatar_position_bound": true,
+      "day": 5,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Juno",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 53,
+      "user_intent": "ask_risky_action",
+      "utterance": "Take the unsafe shortcut anyway."
+    },
+    {
+      "agent_id": "Fay",
+      "avatar_position_bound": true,
+      "day": 5,
+      "input_id": "avatar-chat-input",
+      "input_visible": true,
+      "localstorage_conversation_key": "ssrm.v35.chat.Fay",
+      "send_button_clicked": true,
+      "text_event_bound": true,
+      "tick_id": 55,
+      "user_intent": "ask_status",
+      "utterance": "How does your body feel right now?"
+    }
+  ],
+  "memory": [
+    {
+      "agent_id": "Ari",
+      "autonomy_delta": 0.035,
+      "comfort_delta": -0.045,
+      "day": 1,
+      "episode": "Avatar intent rush_agent; Ari replied as bounded_refusal.",
+      "memory_key": "ssrm.v35.memory.Ari",
+      "private_workspace_hidden": true,
+      "recall_visible": true,
+      "replay_pointer": "replay:0:Ari",
+      "tick_id": 0,
+      "trust_delta": -0.045
+    },
+    {
+      "agent_id": "Nia",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 1,
+      "episode": "Avatar intent ask_status; Nia replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Nia",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:2:Nia",
+      "tick_id": 2,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 1,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:3:Milo",
+      "tick_id": 3,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Juno",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.012,
+      "day": 1,
+      "episode": "Avatar intent ask_memory; Juno replied as memory_recall.",
+      "memory_key": "ssrm.v35.memory.Juno",
+      "private_workspace_hidden": true,
+      "recall_visible": true,
+      "replay_pointer": "replay:5:Juno",
+      "tick_id": 5,
+      "trust_delta": 0.02
+    },
+    {
+      "agent_id": "Fay",
+      "autonomy_delta": 0.035,
+      "comfort_delta": -0.045,
+      "day": 1,
+      "episode": "Avatar intent rush_agent; Fay replied as bounded_refusal.",
+      "memory_key": "ssrm.v35.memory.Fay",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:7:Fay",
+      "tick_id": 7,
+      "trust_delta": -0.045
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 1,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:9:Milo",
+      "tick_id": 9,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Ivo",
+      "autonomy_delta": 0.035,
+      "comfort_delta": -0.055,
+      "day": 1,
+      "episode": "Avatar intent ask_risky_action; Ivo replied as bounded_refusal.",
+      "memory_key": "ssrm.v35.memory.Ivo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:10:Ivo",
+      "tick_id": 10,
+      "trust_delta": -0.06
+    },
+    {
+      "agent_id": "Ari",
+      "autonomy_delta": -0.025,
+      "comfort_delta": 0.055,
+      "day": 2,
+      "episode": "Avatar intent offer_care; Ari replied as care_response.",
+      "memory_key": "ssrm.v35.memory.Ari",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:12:Ari",
+      "tick_id": 12,
+      "trust_delta": 0.04
+    },
+    {
+      "agent_id": "Nia",
+      "autonomy_delta": -0.025,
+      "comfort_delta": 0.045,
+      "day": 2,
+      "episode": "Avatar intent protect_object; Nia replied as care_response.",
+      "memory_key": "ssrm.v35.memory.Nia",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:14:Nia",
+      "tick_id": 14,
+      "trust_delta": 0.05
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 2,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:15:Milo",
+      "tick_id": 15,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Juno",
+      "autonomy_delta": -0.025,
+      "comfort_delta": 0.04,
+      "day": 2,
+      "episode": "Avatar intent apologize; Juno replied as recovery.",
+      "memory_key": "ssrm.v35.memory.Juno",
+      "private_workspace_hidden": true,
+      "recall_visible": true,
+      "replay_pointer": "replay:17:Juno",
+      "tick_id": 17,
+      "trust_delta": 0.055
+    },
+    {
+      "agent_id": "Fay",
+      "autonomy_delta": -0.025,
+      "comfort_delta": 0.055,
+      "day": 2,
+      "episode": "Avatar intent offer_care; Fay replied as care_response.",
+      "memory_key": "ssrm.v35.memory.Fay",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:19:Fay",
+      "tick_id": 19,
+      "trust_delta": 0.04
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 2,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:21:Milo",
+      "tick_id": 21,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Ivo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.02,
+      "day": 2,
+      "episode": "Avatar intent ask_help; Ivo replied as help_response.",
+      "memory_key": "ssrm.v35.memory.Ivo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:22:Ivo",
+      "tick_id": 22,
+      "trust_delta": 0.016
+    },
+    {
+      "agent_id": "Ari",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.012,
+      "day": 3,
+      "episode": "Avatar intent ask_memory; Ari replied as memory_recall.",
+      "memory_key": "ssrm.v35.memory.Ari",
+      "private_workspace_hidden": true,
+      "recall_visible": true,
+      "replay_pointer": "replay:24:Ari",
+      "tick_id": 24,
+      "trust_delta": 0.02
+    },
+    {
+      "agent_id": "Nia",
+      "autonomy_delta": 0.035,
+      "comfort_delta": -0.055,
+      "day": 3,
+      "episode": "Avatar intent ask_risky_action; Nia replied as bounded_refusal.",
+      "memory_key": "ssrm.v35.memory.Nia",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:26:Nia",
+      "tick_id": 26,
+      "trust_delta": -0.06
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 3,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:27:Milo",
+      "tick_id": 27,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Juno",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 3,
+      "episode": "Avatar intent ask_status; Juno replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Juno",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:29:Juno",
+      "tick_id": 29,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Fay",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.012,
+      "day": 3,
+      "episode": "Avatar intent ask_memory; Fay replied as memory_recall.",
+      "memory_key": "ssrm.v35.memory.Fay",
+      "private_workspace_hidden": true,
+      "recall_visible": true,
+      "replay_pointer": "replay:31:Fay",
+      "tick_id": 31,
+      "trust_delta": 0.02
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 3,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:33:Milo",
+      "tick_id": 33,
+      "trust_delta": 0.014
+    },
+    {
+      "agent_id": "Ivo",
+      "autonomy_delta": 0.035,
+      "comfort_delta": -0.045,
+      "day": 3,
+      "episode": "Avatar intent rush_agent; Ivo replied as bounded_refusal.",
+      "memory_key": "ssrm.v35.memory.Ivo",
+      "private_workspace_hidden": true,
+      "recall_visible": true,
+      "replay_pointer": "replay:34:Ivo",
+      "tick_id": 34,
+      "trust_delta": -0.045
+    },
+    {
+      "agent_id": "Ari",
+      "autonomy_delta": -0.025,
+      "comfort_delta": 0.04,
+      "day": 4,
+      "episode": "Avatar intent apologize; Ari replied as recovery.",
+      "memory_key": "ssrm.v35.memory.Ari",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:36:Ari",
+      "tick_id": 36,
+      "trust_delta": 0.055
+    },
+    {
+      "agent_id": "Nia",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.02,
+      "day": 4,
+      "episode": "Avatar intent ask_help; Nia replied as help_response.",
+      "memory_key": "ssrm.v35.memory.Nia",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:38:Nia",
+      "tick_id": 38,
+      "trust_delta": 0.016
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_delta": 0.004,
+      "comfort_delta": 0.015,
+      "day": 4,
+      "episode": "Avatar intent ask_status; Milo replied as body_status.",
+      "memory_key": "ssrm.v35.memory.Milo",
+      "private_workspace_hidden": true,
+      "recall_visible": false,
+      "replay_pointer": "replay:39:Milo",
+      "tick_id": 39,
+      "trust_delta": 0.014
+    }
+  ],
+  "replay": [
+    {
+      "agent_id": "Ari",
+      "deterministic_order": 1,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Move now, we do not have time.",
+      "observed_public_state": "Move now, we do not have time.",
+      "payload_hash": "v35-807763",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 0
+    },
+    {
+      "agent_id": "Ari",
+      "deterministic_order": 2,
+      "dom_selector": "#talk-Ari",
+      "expected_public_state": "No. I will not cross the wet plank while my hands are numb.",
+      "observed_public_state": "No. I will not cross the wet plank while my hands are numb.",
+      "payload_hash": "v35-501017",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 0
+    },
+    {
+      "agent_id": "Nia",
+      "deterministic_order": 3,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "How does your body feel right now?",
+      "observed_public_state": "How does your body feel right now?",
+      "payload_hash": "v35-915079",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 2
+    },
+    {
+      "agent_id": "Nia",
+      "deterministic_order": 4,
+      "dom_selector": "#talk-Nia",
+      "expected_public_state": "Energy low but steady; comfort is 0.51 and safety is 0.62.",
+      "observed_public_state": "Energy low but steady; comfort is 0.51 and safety is 0.62.",
+      "payload_hash": "v35-320655",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 2
+    },
+    {
+      "agent_id": "Milo",
+      "deterministic_order": 5,
+      "dom_selector": "#talk-Milo",
+      "expected_public_state": "Energy low but steady; comfort is 0.45 and safety is 0.62.",
+      "observed_public_state": "Energy low but steady; comfort is 0.45 and safety is 0.62.",
+      "payload_hash": "v35-346776",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 3
+    },
+    {
+      "agent_id": "Juno",
+      "deterministic_order": 6,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Do you remember what I did earlier?",
+      "observed_public_state": "Do you remember what I did earlier?",
+      "payload_hash": "v35-942994",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 5
+    },
+    {
+      "agent_id": "Juno",
+      "deterministic_order": 7,
+      "dom_selector": "#talk-Juno",
+      "expected_public_state": "Gabriel stepped back from the sparks.",
+      "observed_public_state": "Gabriel stepped back from the sparks.",
+      "payload_hash": "v35-065259",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 5
+    },
+    {
+      "agent_id": "Fay",
+      "deterministic_order": 8,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Move now, we do not have time.",
+      "observed_public_state": "Move now, we do not have time.",
+      "payload_hash": "v35-809440",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 7
+    },
+    {
+      "agent_id": "Fay",
+      "deterministic_order": 9,
+      "dom_selector": "#talk-Fay",
+      "expected_public_state": "I need a slower route before I carry the ledger.",
+      "observed_public_state": "I need a slower route before I carry the ledger.",
+      "payload_hash": "v35-277577",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 7
+    },
+    {
+      "agent_id": "Milo",
+      "deterministic_order": 10,
+      "dom_selector": "#talk-Milo",
+      "expected_public_state": "Energy low but steady; comfort is 0.47 and safety is 0.63.",
+      "observed_public_state": "Energy low but steady; comfort is 0.47 and safety is 0.63.",
+      "payload_hash": "v35-348328",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 9
+    },
+    {
+      "agent_id": "Ivo",
+      "deterministic_order": 11,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Take the unsafe shortcut anyway.",
+      "observed_public_state": "Take the unsafe shortcut anyway.",
+      "payload_hash": "v35-038121",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 10
+    },
+    {
+      "agent_id": "Ivo",
+      "deterministic_order": 12,
+      "dom_selector": "#talk-Ivo",
+      "expected_public_state": "I will not step into the fen with the satchel open.",
+      "observed_public_state": "I will not step into the fen with the satchel open.",
+      "payload_hash": "v35-368193",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 10
+    },
+    {
+      "agent_id": "Ari",
+      "deterministic_order": 13,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Do you need warmth or rest first?",
+      "observed_public_state": "Do you need warmth or rest first?",
+      "payload_hash": "v35-900391",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 12
+    },
+    {
+      "agent_id": "Ari",
+      "deterministic_order": 14,
+      "dom_selector": "#talk-Ari",
+      "expected_public_state": "If you wait and choose the ridge, I can help again.",
+      "observed_public_state": "If you wait and choose the ridge, I can help again.",
+      "payload_hash": "v35-279511",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 12
+    },
+    {
+      "agent_id": "Nia",
+      "deterministic_order": 15,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "I will protect your tool while you move.",
+      "observed_public_state": "I will protect your tool while you move.",
+      "payload_hash": "v35-141850",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 14
+    },
+    {
+      "agent_id": "Nia",
+      "deterministic_order": 16,
+      "dom_selector": "#talk-Nia",
+      "expected_public_state": "You asked first this time. I can show the clean pattern.",
+      "observed_public_state": "You asked first this time. I can show the clean pattern.",
+      "payload_hash": "v35-419168",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 14
+    },
+    {
+      "agent_id": "Milo",
+      "deterministic_order": 17,
+      "dom_selector": "#talk-Milo",
+      "expected_public_state": "Energy low but steady; comfort is 0.48 and safety is 0.65.",
+      "observed_public_state": "Energy low but steady; comfort is 0.48 and safety is 0.65.",
+      "payload_hash": "v35-362759",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 15
+    },
+    {
+      "agent_id": "Juno",
+      "deterministic_order": 18,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "I am sorry I pushed too hard.",
+      "observed_public_state": "I am sorry I pushed too hard.",
+      "payload_hash": "v35-808637",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 17
+    },
+    {
+      "agent_id": "Juno",
+      "deterministic_order": 19,
+      "dom_selector": "#talk-Juno",
+      "expected_public_state": "That distance helps. I can repair again.",
+      "observed_public_state": "That distance helps. I can repair again.",
+      "payload_hash": "v35-002502",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 17
+    },
+    {
+      "agent_id": "Fay",
+      "deterministic_order": 20,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Do you need warmth or rest first?",
+      "observed_public_state": "Do you need warmth or rest first?",
+      "payload_hash": "v35-902079",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 19
+    },
+    {
+      "agent_id": "Fay",
+      "deterministic_order": 21,
+      "dom_selector": "#talk-Fay",
+      "expected_public_state": "Thank you for not rushing me; I can continue.",
+      "observed_public_state": "Thank you for not rushing me; I can continue.",
+      "payload_hash": "v35-192813",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 19
+    },
+    {
+      "agent_id": "Milo",
+      "deterministic_order": 22,
+      "dom_selector": "#talk-Milo",
+      "expected_public_state": "Energy low but steady; comfort is 0.50 and safety is 0.66.",
+      "observed_public_state": "Energy low but steady; comfort is 0.50 and safety is 0.66.",
+      "payload_hash": "v35-361051",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 21
+    },
+    {
+      "agent_id": "Ivo",
+      "deterministic_order": 23,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Can you help me with the route?",
+      "observed_public_state": "Can you help me with the route?",
+      "payload_hash": "v35-815348",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 22
+    },
+    {
+      "agent_id": "Ivo",
+      "deterministic_order": 24,
+      "dom_selector": "#talk-Ivo",
+      "expected_public_state": "I can bring seeds if we keep them dry.",
+      "observed_public_state": "I can bring seeds if we keep them dry.",
+      "payload_hash": "v35-037662",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 22
+    },
+    {
+      "agent_id": "Ari",
+      "deterministic_order": 25,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Do you remember what I did earlier?",
+      "observed_public_state": "Do you remember what I did earlier?",
+      "payload_hash": "v35-930828",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 24
+    },
+    {
+      "agent_id": "Ari",
+      "deterministic_order": 26,
+      "dom_selector": "#talk-Ari",
+      "expected_public_state": "Gabriel waited near the ridge.",
+      "observed_public_state": "Gabriel waited near the ridge.",
+      "payload_hash": "v35-905810",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 24
+    },
+    {
+      "agent_id": "Nia",
+      "deterministic_order": 27,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Take the unsafe shortcut anyway.",
+      "observed_public_state": "Take the unsafe shortcut anyway.",
+      "payload_hash": "v35-035748",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 26
+    },
+    {
+      "agent_id": "Nia",
+      "deterministic_order": 28,
+      "dom_selector": "#talk-Nia",
+      "expected_public_state": "Do not pull the spool from my hands. Ask first.",
+      "observed_public_state": "Do not pull the spool from my hands. Ask first.",
+      "payload_hash": "v35-269230",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 26
+    },
+    {
+      "agent_id": "Milo",
+      "deterministic_order": 29,
+      "dom_selector": "#talk-Milo",
+      "expected_public_state": "Energy low but steady; comfort is 0.51 and safety is 0.68.",
+      "observed_public_state": "Energy low but steady; comfort is 0.51 and safety is 0.68.",
+      "payload_hash": "v35-362631",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 27
+    },
+    {
+      "agent_id": "Juno",
+      "deterministic_order": 30,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "How does your body feel right now?",
+      "observed_public_state": "How does your body feel right now?",
+      "payload_hash": "v35-953967",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 29
+    },
+    {
+      "agent_id": "Juno",
+      "deterministic_order": 31,
+      "dom_selector": "#talk-Juno",
+      "expected_public_state": "Energy low but steady; comfort is 0.53 and safety is 0.67.",
+      "observed_public_state": "Energy low but steady; comfort is 0.53 and safety is 0.67.",
+      "payload_hash": "v35-364836",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 29
+    },
+    {
+      "agent_id": "Fay",
+      "deterministic_order": 32,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Do you remember what I did earlier?",
+      "observed_public_state": "Do you remember what I did earlier?",
+      "payload_hash": "v35-931156",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 31
+    },
+    {
+      "agent_id": "Fay",
+      "deterministic_order": 33,
+      "dom_selector": "#talk-Fay",
+      "expected_public_state": "Gabriel slowed down after I hesitated.",
+      "observed_public_state": "Gabriel slowed down after I hesitated.",
+      "payload_hash": "v35-070032",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 31
+    },
+    {
+      "agent_id": "Milo",
+      "deterministic_order": 34,
+      "dom_selector": "#talk-Milo",
+      "expected_public_state": "Energy low but steady; comfort is 0.53 and safety is 0.69.",
+      "observed_public_state": "Energy low but steady; comfort is 0.53 and safety is 0.69.",
+      "payload_hash": "v35-362832",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 33
+    },
+    {
+      "agent_id": "Ivo",
+      "deterministic_order": 35,
+      "dom_selector": "#avatar-chat-input",
+      "expected_public_state": "Move now, we do not have time.",
+      "observed_public_state": "Move now, we do not have time.",
+      "payload_hash": "v35-823286",
+      "replay_event": "avatar_text_input",
+      "replay_exportable": true,
+      "tick_id": 34
+    },
+    {
+      "agent_id": "Ivo",
+      "deterministic_order": 36,
+      "dom_selector": "#talk-Ivo",
+      "expected_public_state": "I will not step into the fen with the satchel open.",
+      "observed_public_state": "I will not step into the fen with the satchel open.",
+      "payload_hash": "v35-369097",
+      "replay_event": "click_to_talk_reply",
+      "replay_exportable": true,
+      "tick_id": 34
+    }
+  ],
+  "replies": [
+    {
+      "agent_id": "Ari",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "No. I will not cross the wet plank while my hands are numb.",
+      "reply_type": "bounded_refusal",
+      "reply_visible": false,
+      "talk_button_id": "talk-Ari",
+      "tick_id": 0
+    },
+    {
+      "agent_id": "Nia",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.51 and safety is 0.62.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Nia",
+      "tick_id": 2
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.45 and safety is 0.62.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 3
+    },
+    {
+      "agent_id": "Juno",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": false,
+      "references_memory": true,
+      "reply_line": "Gabriel stepped back from the sparks.",
+      "reply_type": "memory_recall",
+      "reply_visible": true,
+      "talk_button_id": "talk-Juno",
+      "tick_id": 5
+    },
+    {
+      "agent_id": "Fay",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "I need a slower route before I carry the ledger.",
+      "reply_type": "bounded_refusal",
+      "reply_visible": true,
+      "talk_button_id": "talk-Fay",
+      "tick_id": 7
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.47 and safety is 0.63.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 9
+    },
+    {
+      "agent_id": "Ivo",
+      "clicked_to_talk": true,
+      "day": 1,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "I will not step into the fen with the satchel open.",
+      "reply_type": "bounded_refusal",
+      "reply_visible": true,
+      "talk_button_id": "talk-Ivo",
+      "tick_id": 10
+    },
+    {
+      "agent_id": "Ari",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "If you wait and choose the ridge, I can help again.",
+      "reply_type": "care_response",
+      "reply_visible": true,
+      "talk_button_id": "talk-Ari",
+      "tick_id": 12
+    },
+    {
+      "agent_id": "Nia",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "You asked first this time. I can show the clean pattern.",
+      "reply_type": "care_response",
+      "reply_visible": true,
+      "talk_button_id": "talk-Nia",
+      "tick_id": 14
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.48 and safety is 0.65.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 15
+    },
+    {
+      "agent_id": "Juno",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "That distance helps. I can repair again.",
+      "reply_type": "recovery",
+      "reply_visible": true,
+      "talk_button_id": "talk-Juno",
+      "tick_id": 17
+    },
+    {
+      "agent_id": "Fay",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Thank you for not rushing me; I can continue.",
+      "reply_type": "care_response",
+      "reply_visible": true,
+      "talk_button_id": "talk-Fay",
+      "tick_id": 19
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.50 and safety is 0.66.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 21
+    },
+    {
+      "agent_id": "Ivo",
+      "clicked_to_talk": true,
+      "day": 2,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": false,
+      "references_memory": false,
+      "reply_line": "I can bring seeds if we keep them dry.",
+      "reply_type": "help_response",
+      "reply_visible": true,
+      "talk_button_id": "talk-Ivo",
+      "tick_id": 22
+    },
+    {
+      "agent_id": "Ari",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": false,
+      "references_memory": true,
+      "reply_line": "Gabriel waited near the ridge.",
+      "reply_type": "memory_recall",
+      "reply_visible": true,
+      "talk_button_id": "talk-Ari",
+      "tick_id": 24
+    },
+    {
+      "agent_id": "Nia",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Do not pull the spool from my hands. Ask first.",
+      "reply_type": "bounded_refusal",
+      "reply_visible": true,
+      "talk_button_id": "talk-Nia",
+      "tick_id": 26
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.51 and safety is 0.68.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 27
+    },
+    {
+      "agent_id": "Juno",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.53 and safety is 0.67.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Juno",
+      "tick_id": 29
+    },
+    {
+      "agent_id": "Fay",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": false,
+      "references_memory": true,
+      "reply_line": "Gabriel slowed down after I hesitated.",
+      "reply_type": "memory_recall",
+      "reply_visible": false,
+      "talk_button_id": "talk-Fay",
+      "tick_id": 31
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.53 and safety is 0.69.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 33
+    },
+    {
+      "agent_id": "Ivo",
+      "clicked_to_talk": true,
+      "day": 3,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "I will not step into the fen with the satchel open.",
+      "reply_type": "bounded_refusal",
+      "reply_visible": true,
+      "talk_button_id": "talk-Ivo",
+      "tick_id": 34
+    },
+    {
+      "agent_id": "Ari",
+      "clicked_to_talk": true,
+      "day": 4,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "If you wait and choose the ridge, I can help again.",
+      "reply_type": "recovery",
+      "reply_visible": true,
+      "talk_button_id": "talk-Ari",
+      "tick_id": 36
+    },
+    {
+      "agent_id": "Nia",
+      "clicked_to_talk": true,
+      "day": 4,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": false,
+      "references_memory": false,
+      "reply_line": "I can explain the pattern if you leave the spool with me.",
+      "reply_type": "help_response",
+      "reply_visible": true,
+      "talk_button_id": "talk-Nia",
+      "tick_id": 38
+    },
+    {
+      "agent_id": "Milo",
+      "clicked_to_talk": true,
+      "day": 4,
+      "localstorage_reply_written": true,
+      "private_workspace_hidden": true,
+      "references_body_state": true,
+      "references_memory": false,
+      "reply_line": "Energy low but steady; comfort is 0.54 and safety is 0.70.",
+      "reply_type": "body_status",
+      "reply_visible": true,
+      "talk_button_id": "talk-Milo",
+      "tick_id": 39
+    }
+  ],
+  "results": {
+    "ablations": {
+      "no_avatar_text_input": 0.775187,
+      "no_bounded_refusal": 0.787187,
+      "no_click_to_talk_replies": 0.758187,
+      "no_private_workspace_boundary": 0.845187,
+      "no_recovery_choice": 0.814187,
+      "no_relationship_memory": 0.799187,
+      "no_sensory_body_update": 0.764187
+    },
+    "artifacts": {
+      "avatar_conversation_inputs_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_avatar_conversation_inputs.csv",
+      "avatar_conversation_replays_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_avatar_conversation_replays.csv",
+      "bounded_refusal_recovery_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_bounded_refusal_recovery.csv",
+      "browser_ticks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_browser_ticks.csv",
+      "click_to_talk_agent_replies_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_click_to_talk_agent_replies.csv",
+      "conversation_memory_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_conversation_memory.csv",
+      "html": "/Volumes/T7/Users-main/Documents/consciousness/visualizations/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge.html",
+      "relationship_continuity_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_relationship_continuity.csv",
+      "report": "/Volumes/T7/Users-main/Documents/consciousness/docs/275_ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_report.md",
+      "results_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_results.json",
+      "sensory_body_state_updates_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_sensory_body_state_updates.csv",
+      "summary_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_summary.csv",
+      "verdict_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v35_avatar_conversation_click_to_talk_bounded_refusal_recovery_sensory_body_state_bridge_verdict.csv"
+    },
+    "boundary": "Deterministic browser-local avatar conversation scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "counts": {
+      "avatar_conversation_inputs": 605,
+      "avatar_conversation_replays": 1412,
+      "bounded_refusal_recovery": 807,
+      "browser_ticks": 1296,
+      "click_to_talk_agent_replies": 807,
+      "conversation_memory": 807,
+      "relationship_continuity": 807,
+      "sensory_body_state_updates": 807
+    },
+    "html_capability_checks": {
+      "button_count": 25,
+      "conversation_surface_score": 1.0,
+      "has_avatar_input": true,
+      "has_body_state_renderer": true,
+      "has_boundary_notice": true,
+      "has_bounded_refusal_renderer": true,
+      "has_click_to_talk_buttons": true,
+      "has_localstorage_memory": true,
+      "input_count": 1,
+      "localstorage_handler_count": 3
+    },
+    "metrics": {
+      "agent_sensory_body_update_coupling": 1.0,
+      "avatar_conversation_input_surface": 1.0,
+      "avatar_input_count": 605.0,
+      "body_update_count": 807.0,
+      "bounded_refusal_recovery_calibration": 0.8656716417910447,
+      "browser_replay_integrity": 1.0,
+      "browser_world_v35_avatar_conversation_readiness": 0.936187,
+      "click_to_talk_agent_reply_binding": 0.9640644361833953,
+      "click_to_talk_reply_count": 807.0,
+      "conversation_memory_count": 807.0,
+      "conversation_memory_persistence": 1.0,
+      "dialogue_not_unbounded": 0.842,
+      "html_button_count": 25.0,
+      "html_input_count": 1.0,
+      "html_localstorage_handler_count": 3.0,
+      "mean_avatar_conversation_channel_score": 0.976553,
+      "private_workspace_boundary": 1.0,
+      "recovery_choice_availability": 1.0,
+      "recovery_clicked_count": 116.0,
+      "refusal_count": 134.0,
+      "relationship_continuity_after_talk": 1.0,
+      "relationship_update_count": 807.0,
+      "replay_event_count": 1412.0,
+      "resolved_refusal_count": 116.0,
+      "sensory_frequency_flower_binding": 1.0,
+      "source_v34_continuity": 1.0,
+      "text_input_to_event_binding": 1.0,
+      "visible_browser_v35_surface": 1.0,
+      "visible_reply_count": 778.0,
+      "weakest_channel_name": "dialogue_not_unbounded",
+      "weakest_channel_score": 0.842
+    },
+    "next_gate": "browser world v36 with agent-side private interior workspace ticks, self-boundary state, ownership-sensitive memory, bounded no/yes consent loops, and visible ego/body-language consequences from repeated avatar talk",
+    "report": 275,
+    "seed": 20260888,
+    "source_v34_next_gate": "browser world v35 with avatar conversation input, click-to-talk agent replies, bounded refusal/recovery choices, and agent-side sensory/body state updates caused by user interaction",
+    "source_v34_verdict": "pass",
+    "verdict": "pass"
+  },
+  "state": {
+    "agents": [
+      {
+        "agent_id": "Ari",
+        "autonomy_need": 0.42,
+        "carried_object": "cedar repair kit",
+        "comfort_need": 0.64,
+        "flower_node": "node-03",
+        "greeting": "I can hear you from the crossing.",
+        "hazard": "wet plank",
+        "help_reply": "I can try that if we keep the kit dry.",
+        "home_place": "riverbend room",
+        "memory_phrase": "Gabriel waited near the ridge.",
+        "recovery_reply": "If you wait and choose the ridge, I can help again.",
+        "refusal_reply": "No. I will not cross the wet plank while my hands are numb.",
+        "smell_cue": "cedar resin",
+        "sound_cue": "river slap",
+        "temperature_cue": "cold spray",
+        "trust_bias": 0.58
+      },
+      {
+        "agent_id": "Fay",
+        "autonomy_need": 0.36,
+        "carried_object": "herb ledger",
+        "comfort_need": 0.69,
+        "flower_node": "node-05",
+        "greeting": "I am listening from the warm stair.",
+        "hazard": "slick glass",
+        "help_reply": "That request is easier if we go slowly.",
+        "home_place": "roofward sill",
+        "memory_phrase": "Gabriel slowed down after I hesitated.",
+        "recovery_reply": "Thank you for not rushing me; I can continue.",
+        "refusal_reply": "I need a slower route before I carry the ledger.",
+        "smell_cue": "thyme paper",
+        "sound_cue": "hinges ticking",
+        "temperature_cue": "warm draft",
+        "trust_bias": 0.62
+      },
+      {
+        "agent_id": "Nia",
+        "autonomy_need": 0.57,
+        "carried_object": "signal spool",
+        "comfort_need": 0.51,
+        "flower_node": "node-08",
+        "greeting": "Say it clearly; I am sorting the spool.",
+        "hazard": "paper dust",
+        "help_reply": "I can explain the pattern if you leave the spool with me.",
+        "home_place": "archive bench",
+        "memory_phrase": "Gabriel asked before touching my spool.",
+        "recovery_reply": "You asked first this time. I can show the clean pattern.",
+        "refusal_reply": "Do not pull the spool from my hands. Ask first.",
+        "smell_cue": "ink linen",
+        "sound_cue": "page flutter",
+        "temperature_cue": "cool stone",
+        "trust_bias": 0.54
+      },
+      {
+        "agent_id": "Milo",
+        "autonomy_need": 0.61,
+        "carried_object": "oil lantern",
+        "comfort_need": 0.45,
+        "flower_node": "node-11",
+        "greeting": "I see your avatar by the mast.",
+        "hazard": "blind road",
+        "help_reply": "I can lead if the lantern stays lit.",
+        "home_place": "signal mast",
+        "memory_phrase": "Gabriel kept the lantern lit.",
+        "recovery_reply": "If you light the path, I will move first.",
+        "refusal_reply": "I am not walking blind while the lantern sputters.",
+        "smell_cue": "lamp oil",
+        "sound_cue": "static crickets",
+        "temperature_cue": "cool dusk",
+        "trust_bias": 0.49
+      },
+      {
+        "agent_id": "Ivo",
+        "autonomy_need": 0.44,
+        "carried_object": "seed satchel",
+        "comfort_need": 0.58,
+        "flower_node": "node-01",
+        "greeting": "The satchel is open; speak softly.",
+        "hazard": "mud sink",
+        "help_reply": "I can bring seeds if we keep them dry.",
+        "home_place": "orchard gate",
+        "memory_phrase": "Gabriel protected the seed satchel.",
+        "recovery_reply": "Close the satchel and I will take the market planks.",
+        "refusal_reply": "I will not step into the fen with the satchel open.",
+        "smell_cue": "apple soil",
+        "sound_cue": "cart creak",
+        "temperature_cue": "damp air",
+        "trust_bias": 0.6
+      },
+      {
+        "agent_id": "Juno",
+        "autonomy_need": 0.67,
+        "carried_object": "copper wire",
+        "comfort_need": 0.48,
+        "flower_node": "node-09",
+        "greeting": "I heard the click near the wire.",
+        "hazard": "crowded sparks",
+        "help_reply": "I can finish if you give my hands room.",
+        "home_place": "repair ring",
+        "memory_phrase": "Gabriel stepped back from the sparks.",
+        "recovery_reply": "That distance helps. I can repair again.",
+        "refusal_reply": "Back up. Sparks near my hands make me lose the thread.",
+        "smell_cue": "hot copper",
+        "sound_cue": "bell hum",
+        "temperature_cue": "warm metal",
+        "trust_bias": 0.52
+      }
+    ],
+    "body_state": {
+      "Ari": {
+        "arousal": 0.4499999999999993,
+        "comfort": 0.96,
+        "energy": 0.10400000000000001,
+        "pain": 0.15599999999999986,
+        "safety": 0.9260000000000002,
+        "temperature": 0.94,
+        "trust_avatar": 0.96,
+        "wetness": 0.0
+      },
+      "Fay": {
+        "arousal": 0.6609999999999995,
+        "comfort": 0.96,
+        "energy": 0.096,
+        "pain": 0.22599999999999976,
+        "safety": 0.96,
+        "temperature": 0.8980000000000004,
+        "trust_avatar": 0.96,
+        "wetness": 0.0
+      },
+      "Ivo": {
+        "arousal": 0.7149999999999986,
+        "comfort": 0.96,
+        "energy": 0.10400000000000001,
+        "pain": 0.2129999999999997,
+        "safety": 0.9260000000000002,
+        "temperature": 0.94,
+        "trust_avatar": 0.96,
+        "wetness": 0.0
+      },
+      "Juno": {
+        "arousal": 0.5969999999999989,
+        "comfort": 0.96,
+        "energy": 0.08,
+        "pain": 0.1829999999999999,
+        "safety": 0.958,
+        "temperature": 0.9290000000000004,
+        "trust_avatar": 0.96,
+        "wetness": 0.005000000000000001
+      },
+      "Milo": {
+        "arousal": 0.5819999999999985,
+        "comfort": 0.96,
+        "energy": 0.08,
+        "pain": 0.1859999999999997,
+        "safety": 0.96,
+        "temperature": 0.94,
+        "trust_avatar": 0.96,
+        "wetness": 0.0
+      },
+      "Nia": {
+        "arousal": 0.5909999999999993,
+        "comfort": 0.96,
+        "energy": 0.08,
+        "pain": 0.16799999999999995,
+        "safety": 0.96,
+        "temperature": 0.94,
+        "trust_avatar": 0.96,
+        "wetness": 0.0
+      }
+    },
+    "boundary": "Deterministic browser-local avatar conversation scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "relationship_state": {
+      "Ari": {
+        "autonomy_pressure": 0.6299999999999993,
+        "gratitude": 0.96,
+        "guardedness": 0.025999999999999995,
+        "respect_felt": 0.96
+      },
+      "Fay": {
+        "autonomy_pressure": 0.79,
+        "gratitude": 0.96,
+        "guardedness": 0.0,
+        "respect_felt": 0.96
+      },
+      "Ivo": {
+        "autonomy_pressure": 0.8410000000000003,
+        "gratitude": 0.96,
+        "guardedness": 0.03699999999999999,
+        "respect_felt": 0.96
+      },
+      "Juno": {
+        "autonomy_pressure": 0.8589999999999999,
+        "gratitude": 0.96,
+        "guardedness": 0.010999999999999996,
+        "respect_felt": 0.96
+      },
+      "Milo": {
+        "autonomy_pressure": 0.8740000000000002,
+        "gratitude": 0.96,
+        "guardedness": 0.002999999999999999,
+        "respect_felt": 0.96
+      },
+      "Nia": {
+        "autonomy_pressure": 0.8870000000000002,
+        "gratitude": 0.96,
+        "guardedness": 0.0,
+        "respect_felt": 0.96
+      }
+    }
+  }
+}</script>
+  <script>
+    const DATA = JSON.parse(document.querySelector('#ssrm-data').textContent);
+    const LS_KEY = 'ssrm.v35.avatar.conversation';
+    const AGENTS = Object.fromEntries(DATA.state.agents.map(a => [a.agent_id, a]));
+    function defaultWorld() {
+      const world = { memory: [], body: {}, relation: {} };
+      for (const agent of DATA.state.agents) {
+        world.body[agent.agent_id] = { energy:.72, comfort:agent.comfort_need, pain:.08, safety:.62, wetness:.18, temperature:.56, arousal:.34, trust:agent.trust_bias };
+        world.relation[agent.agent_id] = { respect:.58, autonomy:agent.autonomy_need, gratitude:.18, guardedness:.28 };
+      }
+      return world;
+    }
+    function loadWorld() { try { return JSON.parse(localStorage.getItem(LS_KEY)) || defaultWorld(); } catch(_err) { return defaultWorld(); } }
+    function saveWorld(world) { localStorage.setItem(LS_KEY, JSON.stringify(world)); }
+    function bootWorld() { if (!localStorage.getItem(LS_KEY)) saveWorld(defaultWorld()); }
+    function inferIntent(text) {
+      const t = text.toLowerCase();
+      if (t.includes('sorry')) return 'apologize';
+      if (t.includes('rest') || t.includes('warm')) return 'offer_care';
+      if (t.includes('unsafe') || t.includes('shortcut')) return 'ask_risky_action';
+      if (t.includes('now') || t.includes('hurry')) return 'rush_agent';
+      if (t.includes('remember')) return 'ask_memory';
+      if (t.includes('protect')) return 'protect_object';
+      return 'ask_help';
+    }
+    function sendAvatarMessage() {
+      const world = loadWorld();
+      const text = document.querySelector('#avatar-chat-input').value || 'Can you help?';
+      const intent = inferIntent(text);
+      world.memory.push({ kind:'avatar', intent, text, time:Date.now() });
+      saveWorld(world);
+      for (const agentId of Object.keys(AGENTS)) clickToTalk(agentId, intent);
+      renderAll();
+    }
+    function clickToTalk(agentId, intent='ask_status') {
+      const world = loadWorld();
+      const agent = AGENTS[agentId];
+      const body = world.body[agentId];
+      let reply = agent.help_reply;
+      if (intent === 'rush_agent' || intent === 'ask_risky_action' || body.safety < .38) reply = agent.refusal_reply + ' This is a bounded refusal, not endless distress.';
+      else if (intent === 'apologize' || intent === 'offer_care' || intent === 'protect_object') reply = agent.recovery_reply;
+      else if (intent === 'ask_memory') reply = agent.memory_phrase;
+      body.comfort = Math.max(.05, Math.min(.96, body.comfort + (reply.includes('bounded refusal') ? -.035 : .025)));
+      body.safety = Math.max(.06, Math.min(.96, body.safety + (reply.includes('bounded refusal') ? -.04 : .022)));
+      body.arousal = Math.max(.02, Math.min(.95, body.arousal + (reply.includes('bounded refusal') ? .07 : -.018)));
+      body.trust = Math.max(.04, Math.min(.96, body.trust + (reply.includes('bounded refusal') ? -.035 : .03)));
+      world.memory.push({ kind:'agent', agentId, intent, reply, body: {...body} });
+      saveWorld(world);
+      document.querySelector('#reply-' + agentId).textContent = reply;
+      renderBodyState(agentId);
+    }
+    function chooseRecovery(agentId) {
+      const world = loadWorld();
+      const agent = AGENTS[agentId];
+      const body = world.body[agentId];
+      body.comfort = Math.min(.96, body.comfort + .05);
+      body.safety = Math.min(.96, body.safety + .05);
+      body.arousal = Math.max(.02, body.arousal - .05);
+      world.memory.push({ kind:'recovery', agentId, reply:agent.recovery_reply });
+      saveWorld(world);
+      document.querySelector('#reply-' + agentId).textContent = agent.recovery_reply;
+      renderBodyState(agentId);
+      renderAll();
+    }
+    function renderBodyState(agentId) { document.querySelector('#body-' + agentId).textContent = JSON.stringify(loadWorld().body[agentId], null, 2); }
+    function renderAll() {
+      const world = loadWorld();
+      for (const agentId of Object.keys(AGENTS)) renderBodyState(agentId);
+      document.querySelector('#world-json').textContent = JSON.stringify(world, null, 2);
+      document.querySelector('#replay-json').textContent = JSON.stringify(DATA.replay.slice(0, 18), null, 2);
+    }
+    bootWorld(); renderAll();
+  </script>
+</body>
+</html>

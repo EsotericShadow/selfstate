@@ -1,0 +1,213 @@
+{
+  "agents": [
+    {
+      "agent_id": "Ari",
+      "autonomy_need": 0.42,
+      "carried_object": "cedar repair kit",
+      "comfort_need": 0.64,
+      "flower_node": "node-03",
+      "greeting": "I can hear you from the crossing.",
+      "hazard": "wet plank",
+      "help_reply": "I can try that if we keep the kit dry.",
+      "home_place": "riverbend room",
+      "memory_phrase": "Gabriel waited near the ridge.",
+      "recovery_reply": "If you wait and choose the ridge, I can help again.",
+      "refusal_reply": "No. I will not cross the wet plank while my hands are numb.",
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "temperature_cue": "cold spray",
+      "trust_bias": 0.58
+    },
+    {
+      "agent_id": "Fay",
+      "autonomy_need": 0.36,
+      "carried_object": "herb ledger",
+      "comfort_need": 0.69,
+      "flower_node": "node-05",
+      "greeting": "I am listening from the warm stair.",
+      "hazard": "slick glass",
+      "help_reply": "That request is easier if we go slowly.",
+      "home_place": "roofward sill",
+      "memory_phrase": "Gabriel slowed down after I hesitated.",
+      "recovery_reply": "Thank you for not rushing me; I can continue.",
+      "refusal_reply": "I need a slower route before I carry the ledger.",
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinges ticking",
+      "temperature_cue": "warm draft",
+      "trust_bias": 0.62
+    },
+    {
+      "agent_id": "Nia",
+      "autonomy_need": 0.57,
+      "carried_object": "signal spool",
+      "comfort_need": 0.51,
+      "flower_node": "node-08",
+      "greeting": "Say it clearly; I am sorting the spool.",
+      "hazard": "paper dust",
+      "help_reply": "I can explain the pattern if you leave the spool with me.",
+      "home_place": "archive bench",
+      "memory_phrase": "Gabriel asked before touching my spool.",
+      "recovery_reply": "You asked first this time. I can show the clean pattern.",
+      "refusal_reply": "Do not pull the spool from my hands. Ask first.",
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "temperature_cue": "cool stone",
+      "trust_bias": 0.54
+    },
+    {
+      "agent_id": "Milo",
+      "autonomy_need": 0.61,
+      "carried_object": "oil lantern",
+      "comfort_need": 0.45,
+      "flower_node": "node-11",
+      "greeting": "I see your avatar by the mast.",
+      "hazard": "blind road",
+      "help_reply": "I can lead if the lantern stays lit.",
+      "home_place": "signal mast",
+      "memory_phrase": "Gabriel kept the lantern lit.",
+      "recovery_reply": "If you light the path, I will move first.",
+      "refusal_reply": "I am not walking blind while the lantern sputters.",
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "temperature_cue": "cool dusk",
+      "trust_bias": 0.49
+    },
+    {
+      "agent_id": "Ivo",
+      "autonomy_need": 0.44,
+      "carried_object": "seed satchel",
+      "comfort_need": 0.58,
+      "flower_node": "node-01",
+      "greeting": "The satchel is open; speak softly.",
+      "hazard": "mud sink",
+      "help_reply": "I can bring seeds if we keep them dry.",
+      "home_place": "orchard gate",
+      "memory_phrase": "Gabriel protected the seed satchel.",
+      "recovery_reply": "Close the satchel and I will take the market planks.",
+      "refusal_reply": "I will not step into the fen with the satchel open.",
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "temperature_cue": "damp air",
+      "trust_bias": 0.6
+    },
+    {
+      "agent_id": "Juno",
+      "autonomy_need": 0.67,
+      "carried_object": "copper wire",
+      "comfort_need": 0.48,
+      "flower_node": "node-09",
+      "greeting": "I heard the click near the wire.",
+      "hazard": "crowded sparks",
+      "help_reply": "I can finish if you give my hands room.",
+      "home_place": "repair ring",
+      "memory_phrase": "Gabriel stepped back from the sparks.",
+      "recovery_reply": "That distance helps. I can repair again.",
+      "refusal_reply": "Back up. Sparks near my hands make me lose the thread.",
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "temperature_cue": "warm metal",
+      "trust_bias": 0.52
+    }
+  ],
+  "body_state": {
+    "Ari": {
+      "arousal": 0.4499999999999993,
+      "comfort": 0.96,
+      "energy": 0.10400000000000001,
+      "pain": 0.15599999999999986,
+      "safety": 0.9260000000000002,
+      "temperature": 0.94,
+      "trust_avatar": 0.96,
+      "wetness": 0.0
+    },
+    "Fay": {
+      "arousal": 0.6609999999999995,
+      "comfort": 0.96,
+      "energy": 0.096,
+      "pain": 0.22599999999999976,
+      "safety": 0.96,
+      "temperature": 0.8980000000000004,
+      "trust_avatar": 0.96,
+      "wetness": 0.0
+    },
+    "Ivo": {
+      "arousal": 0.7149999999999986,
+      "comfort": 0.96,
+      "energy": 0.10400000000000001,
+      "pain": 0.2129999999999997,
+      "safety": 0.9260000000000002,
+      "temperature": 0.94,
+      "trust_avatar": 0.96,
+      "wetness": 0.0
+    },
+    "Juno": {
+      "arousal": 0.5969999999999989,
+      "comfort": 0.96,
+      "energy": 0.08,
+      "pain": 0.1829999999999999,
+      "safety": 0.958,
+      "temperature": 0.9290000000000004,
+      "trust_avatar": 0.96,
+      "wetness": 0.005000000000000001
+    },
+    "Milo": {
+      "arousal": 0.5819999999999985,
+      "comfort": 0.96,
+      "energy": 0.08,
+      "pain": 0.1859999999999997,
+      "safety": 0.96,
+      "temperature": 0.94,
+      "trust_avatar": 0.96,
+      "wetness": 0.0
+    },
+    "Nia": {
+      "arousal": 0.5909999999999993,
+      "comfort": 0.96,
+      "energy": 0.08,
+      "pain": 0.16799999999999995,
+      "safety": 0.96,
+      "temperature": 0.94,
+      "trust_avatar": 0.96,
+      "wetness": 0.0
+    }
+  },
+  "boundary": "Deterministic browser-local avatar conversation scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "relationship_state": {
+    "Ari": {
+      "autonomy_pressure": 0.6299999999999993,
+      "gratitude": 0.96,
+      "guardedness": 0.025999999999999995,
+      "respect_felt": 0.96
+    },
+    "Fay": {
+      "autonomy_pressure": 0.79,
+      "gratitude": 0.96,
+      "guardedness": 0.0,
+      "respect_felt": 0.96
+    },
+    "Ivo": {
+      "autonomy_pressure": 0.8410000000000003,
+      "gratitude": 0.96,
+      "guardedness": 0.03699999999999999,
+      "respect_felt": 0.96
+    },
+    "Juno": {
+      "autonomy_pressure": 0.8589999999999999,
+      "gratitude": 0.96,
+      "guardedness": 0.010999999999999996,
+      "respect_felt": 0.96
+    },
+    "Milo": {
+      "autonomy_pressure": 0.8740000000000002,
+      "gratitude": 0.96,
+      "guardedness": 0.002999999999999999,
+      "respect_felt": 0.96
+    },
+    "Nia": {
+      "autonomy_pressure": 0.8870000000000002,
+      "gratitude": 0.96,
+      "guardedness": 0.0,
+      "respect_felt": 0.96
+    }
+  }
+}

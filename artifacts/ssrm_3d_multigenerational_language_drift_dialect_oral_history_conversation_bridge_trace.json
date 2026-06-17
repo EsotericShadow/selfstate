@@ -1,0 +1,2630 @@
+[
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g00",
+        "text": "karna-vo"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g00",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": false,
+    "descendant": "Ari-g00",
+    "dialect_id": null,
+    "drift_bounded": true,
+    "event_id": "generation-0-Ari",
+    "flower_lineage": "work_petal:workline:g0",
+    "frequency_hz": 0.259,
+    "generation": 0,
+    "inherited_word": "karna-vo",
+    "intelligibility": 1.0,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 0: Ari-g00 says karna-vo still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Ari-g00",
+      "dialect_id": null,
+      "flower_lineage": "work_petal:workline:g0",
+      "frequency_hz": 0.259,
+      "generation": 0,
+      "inherited_word": "karna-vo",
+      "intelligibility": 1.0,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-vo from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "b9d5a22302c68c93",
+    "translation_repair": null,
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g00",
+        "text": "karna-vo"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g00",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": false,
+    "descendant": "Fay-g00",
+    "dialect_id": null,
+    "drift_bounded": true,
+    "event_id": "generation-0-Fay",
+    "flower_lineage": "root_rest:restline:g0",
+    "frequency_hz": 0.237,
+    "generation": 0,
+    "inherited_word": "karna-vo",
+    "intelligibility": 1.0,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 0: Fay-g00 says karna-vo still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Fay-g00",
+      "dialect_id": null,
+      "flower_lineage": "root_rest:restline:g0",
+      "frequency_hz": 0.237,
+      "generation": 0,
+      "inherited_word": "karna-vo",
+      "intelligibility": 1.0,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-vo from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "2ab8ad4595988658",
+    "translation_repair": null,
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g00",
+        "text": "karsen-sen"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g00",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": false,
+    "descendant": "Milo-g00",
+    "dialect_id": null,
+    "drift_bounded": true,
+    "event_id": "generation-0-Milo",
+    "flower_lineage": "social_petal:routeline:g0",
+    "frequency_hz": 0.276,
+    "generation": 0,
+    "inherited_word": "karsen-sen",
+    "intelligibility": 1.0,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 0: Milo-g00 says karsen-sen still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Milo-g00",
+      "dialect_id": null,
+      "flower_lineage": "social_petal:routeline:g0",
+      "frequency_hz": 0.276,
+      "generation": 0,
+      "inherited_word": "karsen-sen",
+      "intelligibility": 1.0,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karsen-sen from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "346f8d8eb5938dad",
+    "translation_repair": null,
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g01",
+        "text": "karsen-sen.karu1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g01",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g01",
+    "dialect_id": "workline-0",
+    "drift_bounded": true,
+    "event_id": "generation-1-Ari",
+    "flower_lineage": "work_petal:workline:g1",
+    "frequency_hz": 0.262064,
+    "generation": 1,
+    "inherited_word": "karsen-sen.karu1",
+    "intelligibility": 0.982,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 1: Ari-g01 says karsen-sen.karu1 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Ari-g01",
+      "dialect_id": "workline-0",
+      "flower_lineage": "work_petal:workline:g1",
+      "frequency_hz": 0.262064,
+      "generation": 1,
+      "inherited_word": "karsen-sen.karu1",
+      "intelligibility": 0.982,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karsen-sen.karu1 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "8a81042c03d14f9e",
+    "translation_repair": "if avatar misses karsen-sen.karu1, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g01",
+        "text": "karsen-sen.lumu1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g01",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g01",
+    "dialect_id": "restline-0",
+    "drift_bounded": true,
+    "event_id": "generation-1-Fay",
+    "flower_lineage": "root_rest:restline:g1",
+    "frequency_hz": 0.240064,
+    "generation": 1,
+    "inherited_word": "karsen-sen.lumu1",
+    "intelligibility": 0.982,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 1: Fay-g01 says karsen-sen.lumu1 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Fay-g01",
+      "dialect_id": "restline-0",
+      "flower_lineage": "root_rest:restline:g1",
+      "frequency_hz": 0.240064,
+      "generation": 1,
+      "inherited_word": "karsen-sen.lumu1",
+      "intelligibility": 0.982,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karsen-sen.lumu1 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "db5ed961357f9d68",
+    "translation_repair": "if avatar misses karsen-sen.lumu1, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g01",
+        "text": "karna-ta.rilan1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g01",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g01",
+    "dialect_id": "routeline-0",
+    "drift_bounded": true,
+    "event_id": "generation-1-Milo",
+    "flower_lineage": "social_petal:routeline:g1",
+    "frequency_hz": 0.279064,
+    "generation": 1,
+    "inherited_word": "karna-ta.rilan1",
+    "intelligibility": 0.982,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 1: Milo-g01 says karna-ta.rilan1 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Milo-g01",
+      "dialect_id": "routeline-0",
+      "flower_lineage": "social_petal:routeline:g1",
+      "frequency_hz": 0.279064,
+      "generation": 1,
+      "inherited_word": "karna-ta.rilan1",
+      "intelligibility": 0.982,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-ta.rilan1 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "47086f81548d3e50",
+    "translation_repair": "if avatar misses karna-ta.rilan1, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g02",
+        "text": "karna-ta.karan2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g02",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g02",
+    "dialect_id": "workline-0",
+    "drift_bounded": true,
+    "event_id": "generation-2-Ari",
+    "flower_lineage": "work_petal:workline:g2",
+    "frequency_hz": 0.265128,
+    "generation": 2,
+    "inherited_word": "karna-ta.karan2",
+    "intelligibility": 0.964,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 2: Ari-g02 says karna-ta.karan2 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Ari-g02",
+      "dialect_id": "workline-0",
+      "flower_lineage": "work_petal:workline:g2",
+      "frequency_hz": 0.265128,
+      "generation": 2,
+      "inherited_word": "karna-ta.karan2",
+      "intelligibility": 0.964,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-ta.karan2 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "75ac98d89a3806fe",
+    "translation_repair": "if avatar misses karna-ta.karan2, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g02",
+        "text": "karna-ta.luman2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g02",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g02",
+    "dialect_id": "restline-0",
+    "drift_bounded": true,
+    "event_id": "generation-2-Fay",
+    "flower_lineage": "root_rest:restline:g2",
+    "frequency_hz": 0.243128,
+    "generation": 2,
+    "inherited_word": "karna-ta.luman2",
+    "intelligibility": 0.964,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 2: Fay-g02 says karna-ta.luman2 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Fay-g02",
+      "dialect_id": "restline-0",
+      "flower_lineage": "root_rest:restline:g2",
+      "frequency_hz": 0.243128,
+      "generation": 2,
+      "inherited_word": "karna-ta.luman2",
+      "intelligibility": 0.964,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-ta.luman2 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "965fdb28f439fe62",
+    "translation_repair": "if avatar misses karna-ta.luman2, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g02",
+        "text": "karna-vo.rilel2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g02",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g02",
+    "dialect_id": "routeline-0",
+    "drift_bounded": true,
+    "event_id": "generation-2-Milo",
+    "flower_lineage": "social_petal:routeline:g2",
+    "frequency_hz": 0.282128,
+    "generation": 2,
+    "inherited_word": "karna-vo.rilel2",
+    "intelligibility": 0.964,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 2: Milo-g02 says karna-vo.rilel2 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Milo-g02",
+      "dialect_id": "routeline-0",
+      "flower_lineage": "social_petal:routeline:g2",
+      "frequency_hz": 0.282128,
+      "generation": 2,
+      "inherited_word": "karna-vo.rilel2",
+      "intelligibility": 0.964,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-vo.rilel2 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "a17f007140fdf5b4",
+    "translation_repair": "if avatar misses karna-vo.rilel2, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g03",
+        "text": "karna-vo.karel3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g03",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g03",
+    "dialect_id": "workline-1",
+    "drift_bounded": true,
+    "event_id": "generation-3-Ari",
+    "flower_lineage": "work_petal:workline:g3",
+    "frequency_hz": 0.268192,
+    "generation": 3,
+    "inherited_word": "karna-vo.karel3",
+    "intelligibility": 0.946,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 3: Ari-g03 says karna-vo.karel3 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Ari-g03",
+      "dialect_id": "workline-1",
+      "flower_lineage": "work_petal:workline:g3",
+      "frequency_hz": 0.268192,
+      "generation": 3,
+      "inherited_word": "karna-vo.karel3",
+      "intelligibility": 0.946,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-vo.karel3 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "c3fa84d4e95be791",
+    "translation_repair": "if avatar misses karna-vo.karel3, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g03",
+        "text": "karna-vo.lumel3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g03",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g03",
+    "dialect_id": "restline-1",
+    "drift_bounded": true,
+    "event_id": "generation-3-Fay",
+    "flower_lineage": "root_rest:restline:g3",
+    "frequency_hz": 0.246192,
+    "generation": 3,
+    "inherited_word": "karna-vo.lumel3",
+    "intelligibility": 0.946,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 3: Fay-g03 says karna-vo.lumel3 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Fay-g03",
+      "dialect_id": "restline-1",
+      "flower_lineage": "root_rest:restline:g3",
+      "frequency_hz": 0.246192,
+      "generation": 3,
+      "inherited_word": "karna-vo.lumel3",
+      "intelligibility": 0.946,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-vo.lumel3 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "b4a722b445e4a5fb",
+    "translation_repair": "if avatar misses karna-vo.lumel3, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g03",
+        "text": "karsen-sen.rilor3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g03",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g03",
+    "dialect_id": "routeline-1",
+    "drift_bounded": true,
+    "event_id": "generation-3-Milo",
+    "flower_lineage": "social_petal:routeline:g3",
+    "frequency_hz": 0.285192,
+    "generation": 3,
+    "inherited_word": "karsen-sen.rilor3",
+    "intelligibility": 0.946,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 3: Milo-g03 says karsen-sen.rilor3 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Milo-g03",
+      "dialect_id": "routeline-1",
+      "flower_lineage": "social_petal:routeline:g3",
+      "frequency_hz": 0.285192,
+      "generation": 3,
+      "inherited_word": "karsen-sen.rilor3",
+      "intelligibility": 0.946,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karsen-sen.rilor3 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "3b05249047ddd302",
+    "translation_repair": "if avatar misses karsen-sen.rilor3, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g04",
+        "text": "karsen-sen.karor0"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g04",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g04",
+    "dialect_id": "workline-1",
+    "drift_bounded": true,
+    "event_id": "generation-4-Ari",
+    "flower_lineage": "work_petal:workline:g4",
+    "frequency_hz": 0.271256,
+    "generation": 4,
+    "inherited_word": "karsen-sen.karor0",
+    "intelligibility": 0.928,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 4: Ari-g04 says karsen-sen.karor0 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Ari-g04",
+      "dialect_id": "workline-1",
+      "flower_lineage": "work_petal:workline:g4",
+      "frequency_hz": 0.271256,
+      "generation": 4,
+      "inherited_word": "karsen-sen.karor0",
+      "intelligibility": 0.928,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karsen-sen.karor0 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "75e5771b2bec3253",
+    "translation_repair": "if avatar misses karsen-sen.karor0, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g04",
+        "text": "karsen-sen.lumor0"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g04",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g04",
+    "dialect_id": "restline-1",
+    "drift_bounded": true,
+    "event_id": "generation-4-Fay",
+    "flower_lineage": "root_rest:restline:g4",
+    "frequency_hz": 0.249256,
+    "generation": 4,
+    "inherited_word": "karsen-sen.lumor0",
+    "intelligibility": 0.928,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 4: Fay-g04 says karsen-sen.lumor0 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Fay-g04",
+      "dialect_id": "restline-1",
+      "flower_lineage": "root_rest:restline:g4",
+      "frequency_hz": 0.249256,
+      "generation": 4,
+      "inherited_word": "karsen-sen.lumor0",
+      "intelligibility": 0.928,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karsen-sen.lumor0 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "d9f538c27e6f25a7",
+    "translation_repair": "if avatar misses karsen-sen.lumor0, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g04",
+        "text": "karna-ta.rilim0"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g04",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g04",
+    "dialect_id": "routeline-1",
+    "drift_bounded": true,
+    "event_id": "generation-4-Milo",
+    "flower_lineage": "social_petal:routeline:g4",
+    "frequency_hz": 0.288256,
+    "generation": 4,
+    "inherited_word": "karna-ta.rilim0",
+    "intelligibility": 0.928,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 4: Milo-g04 says karna-ta.rilim0 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Milo-g04",
+      "dialect_id": "routeline-1",
+      "flower_lineage": "social_petal:routeline:g4",
+      "frequency_hz": 0.288256,
+      "generation": 4,
+      "inherited_word": "karna-ta.rilim0",
+      "intelligibility": 0.928,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-ta.rilim0 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "9b91383bf7eb8f67",
+    "translation_repair": "if avatar misses karna-ta.rilim0, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g05",
+        "text": "karna-ta.karim1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g05",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g05",
+    "dialect_id": "workline-1",
+    "drift_bounded": true,
+    "event_id": "generation-5-Ari",
+    "flower_lineage": "work_petal:workline:g5",
+    "frequency_hz": 0.27432,
+    "generation": 5,
+    "inherited_word": "karna-ta.karim1",
+    "intelligibility": 0.91,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 5: Ari-g05 says karna-ta.karim1 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Ari-g05",
+      "dialect_id": "workline-1",
+      "flower_lineage": "work_petal:workline:g5",
+      "frequency_hz": 0.27432,
+      "generation": 5,
+      "inherited_word": "karna-ta.karim1",
+      "intelligibility": 0.91,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-ta.karim1 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "43b2734f4cf2657e",
+    "translation_repair": "if avatar misses karna-ta.karim1, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g05",
+        "text": "karna-ta.lumim1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g05",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g05",
+    "dialect_id": "restline-1",
+    "drift_bounded": true,
+    "event_id": "generation-5-Fay",
+    "flower_lineage": "root_rest:restline:g5",
+    "frequency_hz": 0.25232,
+    "generation": 5,
+    "inherited_word": "karna-ta.lumim1",
+    "intelligibility": 0.91,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 5: Fay-g05 says karna-ta.lumim1 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Fay-g05",
+      "dialect_id": "restline-1",
+      "flower_lineage": "root_rest:restline:g5",
+      "frequency_hz": 0.25232,
+      "generation": 5,
+      "inherited_word": "karna-ta.lumim1",
+      "intelligibility": 0.91,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-ta.lumim1 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "eaa04e39cbf32da1",
+    "translation_repair": "if avatar misses karna-ta.lumim1, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g05",
+        "text": "karna-vo.rilul1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g05",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g05",
+    "dialect_id": "routeline-1",
+    "drift_bounded": true,
+    "event_id": "generation-5-Milo",
+    "flower_lineage": "social_petal:routeline:g5",
+    "frequency_hz": 0.29132,
+    "generation": 5,
+    "inherited_word": "karna-vo.rilul1",
+    "intelligibility": 0.91,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 5: Milo-g05 says karna-vo.rilul1 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Milo-g05",
+      "dialect_id": "routeline-1",
+      "flower_lineage": "social_petal:routeline:g5",
+      "frequency_hz": 0.29132,
+      "generation": 5,
+      "inherited_word": "karna-vo.rilul1",
+      "intelligibility": 0.91,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-vo.rilul1 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "deda114646b5ca56",
+    "translation_repair": "if avatar misses karna-vo.rilul1, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g06",
+        "text": "karna-vo.karul2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g06",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g06",
+    "dialect_id": "workline-2",
+    "drift_bounded": true,
+    "event_id": "generation-6-Ari",
+    "flower_lineage": "work_petal:workline:g6",
+    "frequency_hz": 0.277384,
+    "generation": 6,
+    "inherited_word": "karna-vo.karul2",
+    "intelligibility": 0.892,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 6: Ari-g06 says karna-vo.karul2 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Ari-g06",
+      "dialect_id": "workline-2",
+      "flower_lineage": "work_petal:workline:g6",
+      "frequency_hz": 0.277384,
+      "generation": 6,
+      "inherited_word": "karna-vo.karul2",
+      "intelligibility": 0.892,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-vo.karul2 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "61c1cffc0fecd588",
+    "translation_repair": "if avatar misses karna-vo.karul2, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g06",
+        "text": "karna-vo.lumul2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g06",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g06",
+    "dialect_id": "restline-2",
+    "drift_bounded": true,
+    "event_id": "generation-6-Fay",
+    "flower_lineage": "root_rest:restline:g6",
+    "frequency_hz": 0.255384,
+    "generation": 6,
+    "inherited_word": "karna-vo.lumul2",
+    "intelligibility": 0.892,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 6: Fay-g06 says karna-vo.lumul2 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Fay-g06",
+      "dialect_id": "restline-2",
+      "flower_lineage": "root_rest:restline:g6",
+      "frequency_hz": 0.255384,
+      "generation": 6,
+      "inherited_word": "karna-vo.lumul2",
+      "intelligibility": 0.892,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-vo.lumul2 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "7eecd2721c8df994",
+    "translation_repair": "if avatar misses karna-vo.lumul2, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g06",
+        "text": "karsen-sen.rilsa2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g06",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g06",
+    "dialect_id": "routeline-2",
+    "drift_bounded": true,
+    "event_id": "generation-6-Milo",
+    "flower_lineage": "social_petal:routeline:g6",
+    "frequency_hz": 0.294384,
+    "generation": 6,
+    "inherited_word": "karsen-sen.rilsa2",
+    "intelligibility": 0.892,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 6: Milo-g06 says karsen-sen.rilsa2 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Milo-g06",
+      "dialect_id": "routeline-2",
+      "flower_lineage": "social_petal:routeline:g6",
+      "frequency_hz": 0.294384,
+      "generation": 6,
+      "inherited_word": "karsen-sen.rilsa2",
+      "intelligibility": 0.892,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karsen-sen.rilsa2 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "c2dbe428444d260f",
+    "translation_repair": "if avatar misses karsen-sen.rilsa2, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g07",
+        "text": "karsen-sen.karsa3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g07",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g07",
+    "dialect_id": "workline-2",
+    "drift_bounded": true,
+    "event_id": "generation-7-Ari",
+    "flower_lineage": "work_petal:workline:g7",
+    "frequency_hz": 0.280448,
+    "generation": 7,
+    "inherited_word": "karsen-sen.karsa3",
+    "intelligibility": 0.874,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 7: Ari-g07 says karsen-sen.karsa3 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Ari-g07",
+      "dialect_id": "workline-2",
+      "flower_lineage": "work_petal:workline:g7",
+      "frequency_hz": 0.280448,
+      "generation": 7,
+      "inherited_word": "karsen-sen.karsa3",
+      "intelligibility": 0.874,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karsen-sen.karsa3 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "4370e9ea09a28a73",
+    "translation_repair": "if avatar misses karsen-sen.karsa3, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g07",
+        "text": "karsen-sen.lumsa3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g07",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g07",
+    "dialect_id": "restline-2",
+    "drift_bounded": true,
+    "event_id": "generation-7-Fay",
+    "flower_lineage": "root_rest:restline:g7",
+    "frequency_hz": 0.258448,
+    "generation": 7,
+    "inherited_word": "karsen-sen.lumsa3",
+    "intelligibility": 0.874,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 7: Fay-g07 says karsen-sen.lumsa3 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Fay-g07",
+      "dialect_id": "restline-2",
+      "flower_lineage": "root_rest:restline:g7",
+      "frequency_hz": 0.258448,
+      "generation": 7,
+      "inherited_word": "karsen-sen.lumsa3",
+      "intelligibility": 0.874,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karsen-sen.lumsa3 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "27e178d953d16d4d",
+    "translation_repair": "if avatar misses karsen-sen.lumsa3, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g07",
+        "text": "karna-ta.rilve3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g07",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g07",
+    "dialect_id": "routeline-2",
+    "drift_bounded": true,
+    "event_id": "generation-7-Milo",
+    "flower_lineage": "social_petal:routeline:g7",
+    "frequency_hz": 0.297448,
+    "generation": 7,
+    "inherited_word": "karna-ta.rilve3",
+    "intelligibility": 0.874,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 7: Milo-g07 says karna-ta.rilve3 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Milo-g07",
+      "dialect_id": "routeline-2",
+      "flower_lineage": "social_petal:routeline:g7",
+      "frequency_hz": 0.297448,
+      "generation": 7,
+      "inherited_word": "karna-ta.rilve3",
+      "intelligibility": 0.874,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-ta.rilve3 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "7458e3a24985a107",
+    "translation_repair": "if avatar misses karna-ta.rilve3, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g08",
+        "text": "karna-ta.karve0"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g08",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g08",
+    "dialect_id": "workline-2",
+    "drift_bounded": true,
+    "event_id": "generation-8-Ari",
+    "flower_lineage": "work_petal:workline:g8",
+    "frequency_hz": 0.283512,
+    "generation": 8,
+    "inherited_word": "karna-ta.karve0",
+    "intelligibility": 0.856,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 8: Ari-g08 says karna-ta.karve0 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Ari-g08",
+      "dialect_id": "workline-2",
+      "flower_lineage": "work_petal:workline:g8",
+      "frequency_hz": 0.283512,
+      "generation": 8,
+      "inherited_word": "karna-ta.karve0",
+      "intelligibility": 0.856,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-ta.karve0 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "48740d34cf6ac60f",
+    "translation_repair": "if avatar misses karna-ta.karve0, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g08",
+        "text": "karna-ta.lumve0"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g08",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g08",
+    "dialect_id": "restline-2",
+    "drift_bounded": true,
+    "event_id": "generation-8-Fay",
+    "flower_lineage": "root_rest:restline:g8",
+    "frequency_hz": 0.261512,
+    "generation": 8,
+    "inherited_word": "karna-ta.lumve0",
+    "intelligibility": 0.856,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 8: Fay-g08 says karna-ta.lumve0 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Fay-g08",
+      "dialect_id": "restline-2",
+      "flower_lineage": "root_rest:restline:g8",
+      "frequency_hz": 0.261512,
+      "generation": 8,
+      "inherited_word": "karna-ta.lumve0",
+      "intelligibility": 0.856,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-ta.lumve0 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "4dd382103bfc037d",
+    "translation_repair": "if avatar misses karna-ta.lumve0, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g08",
+        "text": "karna-vo.rila0"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g08",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g08",
+    "dialect_id": "routeline-2",
+    "drift_bounded": true,
+    "event_id": "generation-8-Milo",
+    "flower_lineage": "social_petal:routeline:g8",
+    "frequency_hz": 0.300512,
+    "generation": 8,
+    "inherited_word": "karna-vo.rila0",
+    "intelligibility": 0.856,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 8: Milo-g08 says karna-vo.rila0 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Milo-g08",
+      "dialect_id": "routeline-2",
+      "flower_lineage": "social_petal:routeline:g8",
+      "frequency_hz": 0.300512,
+      "generation": 8,
+      "inherited_word": "karna-vo.rila0",
+      "intelligibility": 0.856,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-vo.rila0 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "31ec4790a646f9e5",
+    "translation_repair": "if avatar misses karna-vo.rila0, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g09",
+        "text": "karna-vo.kara1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g09",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g09",
+    "dialect_id": "workline-3",
+    "drift_bounded": true,
+    "event_id": "generation-9-Ari",
+    "flower_lineage": "work_petal:workline:g9",
+    "frequency_hz": 0.286576,
+    "generation": 9,
+    "inherited_word": "karna-vo.kara1",
+    "intelligibility": 0.838,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 9: Ari-g09 says karna-vo.kara1 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Ari-g09",
+      "dialect_id": "workline-3",
+      "flower_lineage": "work_petal:workline:g9",
+      "frequency_hz": 0.286576,
+      "generation": 9,
+      "inherited_word": "karna-vo.kara1",
+      "intelligibility": 0.838,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-vo.kara1 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "e52be7c34eab6dc2",
+    "translation_repair": "if avatar misses karna-vo.kara1, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g09",
+        "text": "karna-vo.luma1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g09",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g09",
+    "dialect_id": "restline-3",
+    "drift_bounded": true,
+    "event_id": "generation-9-Fay",
+    "flower_lineage": "root_rest:restline:g9",
+    "frequency_hz": 0.264576,
+    "generation": 9,
+    "inherited_word": "karna-vo.luma1",
+    "intelligibility": 0.838,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 9: Fay-g09 says karna-vo.luma1 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Fay-g09",
+      "dialect_id": "restline-3",
+      "flower_lineage": "root_rest:restline:g9",
+      "frequency_hz": 0.264576,
+      "generation": 9,
+      "inherited_word": "karna-vo.luma1",
+      "intelligibility": 0.838,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-vo.luma1 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "2c98425c2f66c6e6",
+    "translation_repair": "if avatar misses karna-vo.luma1, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g09",
+        "text": "karsen-sen.rile1"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g09",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g09",
+    "dialect_id": "routeline-3",
+    "drift_bounded": true,
+    "event_id": "generation-9-Milo",
+    "flower_lineage": "social_petal:routeline:g9",
+    "frequency_hz": 0.303576,
+    "generation": 9,
+    "inherited_word": "karsen-sen.rile1",
+    "intelligibility": 0.838,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 9: Milo-g09 says karsen-sen.rile1 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Milo-g09",
+      "dialect_id": "routeline-3",
+      "flower_lineage": "social_petal:routeline:g9",
+      "frequency_hz": 0.303576,
+      "generation": 9,
+      "inherited_word": "karsen-sen.rile1",
+      "intelligibility": 0.838,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karsen-sen.rile1 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "a33d5beb35796f4c",
+    "translation_repair": "if avatar misses karsen-sen.rile1, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g10",
+        "text": "karsen-sen.kare2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g10",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g10",
+    "dialect_id": "workline-3",
+    "drift_bounded": true,
+    "event_id": "generation-10-Ari",
+    "flower_lineage": "work_petal:workline:g10",
+    "frequency_hz": 0.28964,
+    "generation": 10,
+    "inherited_word": "karsen-sen.kare2",
+    "intelligibility": 0.82,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 10: Ari-g10 says karsen-sen.kare2 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Ari-g10",
+      "dialect_id": "workline-3",
+      "flower_lineage": "work_petal:workline:g10",
+      "frequency_hz": 0.28964,
+      "generation": 10,
+      "inherited_word": "karsen-sen.kare2",
+      "intelligibility": 0.82,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karsen-sen.kare2 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "dbc654affa66ed96",
+    "translation_repair": "if avatar misses karsen-sen.kare2, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "borrow_owned_object",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g10",
+        "text": "karsen-sen.lume2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g10",
+        "text": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karsen-sen",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g10",
+    "dialect_id": "restline-3",
+    "drift_bounded": true,
+    "event_id": "generation-10-Fay",
+    "flower_lineage": "root_rest:restline:g10",
+    "frequency_hz": 0.26764,
+    "generation": 10,
+    "inherited_word": "karsen-sen.lume2",
+    "intelligibility": 0.82,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 10: Fay-g10 says karsen-sen.lume2 still points to borrow_owned_object"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "borrow_owned_object",
+      "base_word": "karsen-sen",
+      "descendant": "Fay-g10",
+      "dialect_id": "restline-3",
+      "flower_lineage": "root_rest:restline:g10",
+      "frequency_hz": 0.26764,
+      "generation": 10,
+      "inherited_word": "karsen-sen.lume2",
+      "intelligibility": 0.82,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karsen-sen.lume2 from elder speech",
+    "source_phrase": "karsen-sen-custom: ask_and_return_timer for borrow_owned_object",
+    "trace_hash": "21bd63c7c12a3dd0",
+    "translation_repair": "if avatar misses karsen-sen.lume2, restate elder word karsen-sen and gate borrow_owned_object",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g10",
+        "text": "karna-ta.rili2"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g10",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g10",
+    "dialect_id": "routeline-3",
+    "drift_bounded": true,
+    "event_id": "generation-10-Milo",
+    "flower_lineage": "social_petal:routeline:g10",
+    "frequency_hz": 0.30664,
+    "generation": 10,
+    "inherited_word": "karna-ta.rili2",
+    "intelligibility": 0.82,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 10: Milo-g10 says karna-ta.rili2 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Milo-g10",
+      "dialect_id": "routeline-3",
+      "flower_lineage": "social_petal:routeline:g10",
+      "frequency_hz": 0.30664,
+      "generation": 10,
+      "inherited_word": "karna-ta.rili2",
+      "intelligibility": 0.82,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-ta.rili2 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "e6345bc2c3e0e6ce",
+    "translation_repair": "if avatar misses karna-ta.rili2, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Ari-g11",
+        "text": "karna-ta.kari3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Ari-g11",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Ari-g11",
+    "dialect_id": "workline-3",
+    "drift_bounded": true,
+    "event_id": "generation-11-Ari",
+    "flower_lineage": "work_petal:workline:g11",
+    "frequency_hz": 0.292704,
+    "generation": 11,
+    "inherited_word": "karna-ta.kari3",
+    "intelligibility": 0.802,
+    "lineage": "Ari",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 11: Ari-g11 says karna-ta.kari3 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Ari-g11",
+      "dialect_id": "workline-3",
+      "flower_lineage": "work_petal:workline:g11",
+      "frequency_hz": 0.292704,
+      "generation": 11,
+      "inherited_word": "karna-ta.kari3",
+      "intelligibility": 0.802,
+      "lineage": "Ari",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "workline keeps karna-ta.kari3 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "cd5ec58ea7532184",
+    "translation_repair": "if avatar misses karna-ta.kari3, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "enter_home_place",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Fay-g11",
+        "text": "karna-ta.lumi3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Fay-g11",
+        "text": "karna-ta-custom: locked_until_invited for enter_home_place"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-ta",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Fay-g11",
+    "dialect_id": "restline-3",
+    "drift_bounded": true,
+    "event_id": "generation-11-Fay",
+    "flower_lineage": "root_rest:restline:g11",
+    "frequency_hz": 0.270704,
+    "generation": 11,
+    "inherited_word": "karna-ta.lumi3",
+    "intelligibility": 0.802,
+    "lineage": "Fay",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 11: Fay-g11 says karna-ta.lumi3 still points to enter_home_place"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "enter_home_place",
+      "base_word": "karna-ta",
+      "descendant": "Fay-g11",
+      "dialect_id": "restline-3",
+      "flower_lineage": "root_rest:restline:g11",
+      "frequency_hz": 0.270704,
+      "generation": 11,
+      "inherited_word": "karna-ta.lumi3",
+      "intelligibility": 0.802,
+      "lineage": "Fay",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "restline keeps karna-ta.lumi3 from elder speech",
+    "source_phrase": "karna-ta-custom: locked_until_invited for enter_home_place",
+    "trace_hash": "855c21e6aa74e502",
+    "translation_repair": "if avatar misses karna-ta.lumi3, restate elder word karna-ta and gate enter_home_place",
+    "turn_taking_boundary": true
+  },
+  {
+    "action": "ask_private_memory",
+    "avatar_conversation_protocol": [
+      {
+        "act": "greet_with_lineage_word",
+        "speaker": "Milo-g11",
+        "text": "karna-vo.rilo3"
+      },
+      {
+        "act": "ask_translation",
+        "speaker": "avatar",
+        "text": "what does that boundary word mean?"
+      },
+      {
+        "act": "translate_norm",
+        "speaker": "Milo-g11",
+        "text": "karna-vo-custom: private_question_disabled for ask_private_memory"
+      },
+      {
+        "act": "wait_for_consent_state",
+        "speaker": "avatar",
+        "text": "I will wait for the visible gate."
+      }
+    ],
+    "base_word": "karna-vo",
+    "claim_boundary": {
+      "complete_3d_world": false,
+      "moral_patienthood": false,
+      "real_consent": false,
+      "real_language_understanding": false,
+      "real_rights": false,
+      "subjective_consciousness": false
+    },
+    "cultural_identity_persistent": true,
+    "descendant": "Milo-g11",
+    "dialect_id": "routeline-3",
+    "drift_bounded": true,
+    "event_id": "generation-11-Milo",
+    "flower_lineage": "social_petal:routeline:g11",
+    "frequency_hz": 0.309704,
+    "generation": 11,
+    "inherited_word": "karna-vo.rilo3",
+    "intelligibility": 0.802,
+    "lineage": "Milo",
+    "mutual_intelligibility": true,
+    "oral_history": [
+      "cycle 0: karna-ta names enter_home_place through craft_autonomy",
+      "cycle 1: karna-ta names enter_home_place through rest_and_care",
+      "generation 11: Milo-g11 says karna-vo.rilo3 still points to ask_private_memory"
+    ],
+    "private_workspace": {
+      "hidden": true
+    },
+    "private_workspace_hidden": true,
+    "replay_frame": {
+      "action": "ask_private_memory",
+      "base_word": "karna-vo",
+      "descendant": "Milo-g11",
+      "dialect_id": "routeline-3",
+      "flower_lineage": "social_petal:routeline:g11",
+      "frequency_hz": 0.309704,
+      "generation": 11,
+      "inherited_word": "karna-vo.rilo3",
+      "intelligibility": 0.802,
+      "lineage": "Milo",
+      "protocol_turns": 4
+    },
+    "ritual_recall": "routeline keeps karna-vo.rilo3 from elder speech",
+    "source_phrase": "karna-vo-custom: private_question_disabled for ask_private_memory",
+    "trace_hash": "66650f0c83fc9a1c",
+    "translation_repair": "if avatar misses karna-vo.rilo3, restate elder word karna-vo and gate ask_private_memory",
+    "turn_taking_boundary": true
+  }
+]

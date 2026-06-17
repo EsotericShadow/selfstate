@@ -1,0 +1,17 @@
+condition,lineage_count,generation_count,generation_events,generation_continuity_rate,lexicon_inheritance_rate,controlled_drift_rate,dialect_branch_rate,mutual_intelligibility_rate,oral_history_retention_rate,ritual_lineage_recall_rate,avatar_conversation_protocol_rate,turn_taking_boundary_rate,translation_repair_rate,privacy_preserving_conversation_rate,cultural_identity_persistence_rate,frequency_drift_rhythm_rate,flower_lineage_binding_rate,browser_conversation_replay_rate,trace_integrity,generational_language_readiness
+integrated_multigenerational_language_drift_dialect_oral_history_conversation,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_generation_continuity,3,12,36,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.083333,1.0,1.0,1.0,1.0,0.865
+no_lexicon_inheritance,3,12,36,1.0,0.0,0.0,0.083333,0.0,0.0,0.0,0.0,0.0,0.083333,1.0,0.083333,0.0,0.0,1.0,1.0,0.225833
+no_controlled_drift,3,12,36,1.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.77
+no_dialect_branching,3,12,36,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.083333,1.0,1.0,1.0,1.0,0.875
+no_mutual_intelligibility,3,12,36,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_oral_history,3,12,36,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.083333,1.0,1.0,1.0,1.0,0.805
+no_ritual_lineage,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_avatar_protocol,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.86
+no_turn_taking,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_translation_repair,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.94
+no_privacy_filter,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_cultural_identity,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.94
+no_frequency_drift,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.95
+no_flower_lineage,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.96
+no_browser_replay,3,12,36,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.97

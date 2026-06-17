@@ -1,0 +1,17 @@
+condition,agent_count,simulated_days,health_events,ecological_exposure_binding_rate,illness_progression_rate,symptom_expression_rate,immune_recovery_rate,care_triage_rate,quarantine_choice_rate,contagion_containment_rate,clean_water_care_rate,rest_recovery_coupling_rate,sanitation_feedback_binding_rate,social_access_modulation_rate,health_guardrail_rate,frequency_flower_health_binding_rate,browser_health_replay_rate,privacy_preservation_rate,trace_integrity,embodied_health_readiness
+integrated_embodied_illness_immune_care_quarantine,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.975185
+no_exposure_binding,3,9,27,0.0,1.0,0.444444,0.666667,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.845556
+no_illness_progression,3,9,27,1.0,0.0,0.296296,0.740741,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.84037
+no_symptom_expression,3,9,27,1.0,1.0,0.0,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_immune_recovery,3,9,27,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.777778,1.0,1.0,1.0,1.0,0.446667
+no_care_triage,3,9,27,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.46
+no_quarantine_choices,3,9,27,1.0,1.0,1.0,0.962963,1.0,0.0,0.0,1.0,1.0,1.0,0.62963,1.0,1.0,1.0,1.0,1.0,0.824444
+no_contagion_containment,3,9,27,1.0,1.0,1.0,0.962963,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.926667
+no_clean_water_care,3,9,27,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93
+no_rest_recovery,3,9,27,1.0,1.0,1.0,0.962963,1.0,1.0,1.0,1.0,0.62963,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.970741
+no_sanitation_feedback,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.905185
+no_social_access_modulation,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.915185
+no_health_guardrail,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.915185
+no_frequency_flower_binding,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.935185
+no_replay_timeline,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.945185
+no_privacy_filter,3,9,27,1.0,1.0,0.814815,0.888889,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.965185

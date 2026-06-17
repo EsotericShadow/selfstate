@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSRM-3D Embodied Illness Care Replay</title>
+  <style>
+    :root {
+      --ink: #162118;
+      --muted: #607060;
+      --paper: #f4efe2;
+      --panel: #fffaf0;
+      --line: #d5c8ab;
+      --green: #5f8f5a;
+      --amber: #c58b31;
+      --red: #b25a43;
+      --blue: #4d7d92;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 8%, rgba(123, 169, 103, 0.28), transparent 30rem),
+        radial-gradient(circle at 82% 18%, rgba(77, 125, 146, 0.20), transparent 28rem),
+        linear-gradient(135deg, #efe4c9, #f8f3e8 48%, #e7efdf);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 32px 20px 44px; }
+    header { display: grid; gap: 10px; margin-bottom: 22px; }
+    h1 { margin: 0; font-size: clamp(2rem, 4vw, 4.1rem); line-height: 0.94; letter-spacing: -0.05em; }
+    p { margin: 0; color: var(--muted); line-height: 1.5; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .card {
+      background: rgba(255, 250, 240, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 16px;
+      box-shadow: 0 18px 40px rgba(57, 50, 32, 0.10);
+    }
+    .wide { grid-column: span 12; }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .metric { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; border-bottom: 1px solid rgba(213, 200, 171, 0.55); padding: 9px 0; }
+    .metric:last-child { border-bottom: 0; }
+    .metric b { font-size: 1.3rem; }
+    .agent { display: grid; gap: 8px; padding: 12px; border: 1px solid rgba(213, 200, 171, 0.7); border-radius: 16px; background: rgba(255,255,255,0.35); }
+    .bar { height: 11px; border-radius: 999px; background: #e0d4b9; overflow: hidden; }
+    .fill { height: 100%; width: 0%; background: var(--green); transition: width 300ms ease; }
+    .fill.risk { background: var(--red); }
+    .fill.warn { background: var(--amber); }
+    .timeline { display: grid; gap: 7px; max-height: 520px; overflow: auto; padding-right: 4px; }
+    .event { display: grid; grid-template-columns: 64px 1fr auto; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 14px; background: rgba(255,255,255,0.42); border: 1px solid rgba(213, 200, 171, 0.58); }
+    .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 9px; font-size: 0.78rem; background: #e6dcc5; color: #4d422e; }
+    .pill.pass { background: #d7e6cf; color: #2f5c2f; }
+    .pill.risk { background: #f0d1c4; color: #793a29; }
+    .boundary { border-left: 5px solid var(--green); }
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      background: var(--ink);
+      color: var(--paper);
+      font: inherit;
+      cursor: pointer;
+    }
+    button.secondary { background: var(--panel); color: var(--ink); }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    pre { white-space: pre-wrap; margin: 0; color: #40513f; font-size: 0.88rem; }
+    @media (max-width: 800px) { .half, .third { grid-column: span 12; } .event { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="pill pass">Report 188 local replay</span>
+      <h1>Embodied illness, care triage, and quarantine choices</h1>
+      <p>A deterministic browser view over the SSRM-3D health-state seed. It shows public health markers, care and quarantine decisions, and claim boundaries without exposing private health internals as consciousness claims.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card third">
+        <h2>Verdict</h2>
+        <div id="verdict"></div>
+      </article>
+      <article class="card third">
+        <h2>Health channels</h2>
+        <div id="channels"></div>
+      </article>
+      <article class="card third boundary">
+        <h2>Boundary</h2>
+        <p>No subjective illness, suffering, consciousness, moral-patienthood, or complete 3D gameplay claim is made by this replay.</p>
+      </article>
+      <article class="card half">
+        <h2>Agent public health state</h2>
+        <div id="agents" class="grid"></div>
+      </article>
+      <article class="card half">
+        <h2>Ablation losses</h2>
+        <div id="losses"></div>
+      </article>
+      <article class="card wide">
+        <h2>Replay timeline</h2>
+        <div class="controls">
+          <button id="play">Play</button>
+          <button id="pause" class="secondary">Pause</button>
+          <button id="reset" class="secondary">Reset</button>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </article>
+      <article class="card wide">
+        <h2>Raw selected event</h2>
+        <pre id="raw">Select an event.</pre>
+      </article>
+    </section>
+  </main>
+
+  <script src="../artifacts/ssrm_3d_embodied_illness_immune_care_quarantine_bridge_results.js"></script>
+  <script src="../artifacts/ssrm_3d_embodied_illness_immune_care_quarantine_bridge_trace.js"></script>
+  <script src="../artifacts/ssrm_3d_embodied_illness_immune_care_quarantine_bridge_state.js"></script>
+  <script>
+    const results = window.SSRM_3D_EMBODIED_ILLNESS_IMMUNE_CARE_QUARANTINE_RESULTS || {};
+    const trace = window.SSRM_3D_EMBODIED_ILLNESS_IMMUNE_CARE_QUARANTINE_TRACE || [];
+    const state = window.SSRM_3D_EMBODIED_ILLNESS_IMMUNE_CARE_QUARANTINE_STATE || {};
+    const verdict = results.verdict || {};
+    const rows = results.rows || [];
+    const full = rows.find((row) => row.condition === "integrated_embodied_illness_immune_care_quarantine") || {};
+
+    const pct = (value) => `${Math.round((Number(value) || 0) * 100)}%`;
+    const fixed = (value) => (Number(value) || 0).toFixed(6);
+    const metric = (label, value, cls = "") => `<div class="metric"><span>${label}</span><b class="${cls}">${value}</b></div>`;
+
+    document.getElementById("verdict").innerHTML = [
+      metric("module verdict", verdict.verdict || "unknown", verdict.verdict === "pass" ? "pass" : "risk"),
+      metric("readiness", fixed(verdict.full_embodied_health_readiness)),
+      metric("health events", state.trace_events || trace.length || 0),
+      metric("source", state.source_condition || results.source_state || "unknown")
+    ].join("");
+
+    document.getElementById("channels").innerHTML = [
+      metric("care triage", pct(full.care_triage_rate)),
+      metric("quarantine", pct(full.quarantine_choice_rate)),
+      metric("containment", pct(full.contagion_containment_rate)),
+      metric("immune recovery", pct(full.immune_recovery_rate)),
+      metric("privacy", pct(full.privacy_preservation_rate))
+    ].join("");
+
+    document.getElementById("losses").innerHTML = [
+      metric("no exposure", fixed(verdict.no_exposure_binding_loss)),
+      metric("no care triage", fixed(verdict.no_care_triage_loss)),
+      metric("no quarantine", fixed(verdict.no_quarantine_choices_loss)),
+      metric("no immune recovery", fixed(verdict.no_immune_recovery_loss)),
+      metric("no health guardrail", fixed(verdict.no_health_guardrail_loss))
+    ].join("");
+
+    const latestByAgent = {};
+    for (const event of trace) latestByAgent[event.agent_id] = event.after || {};
+    const agents = Object.entries(latestByAgent);
+    document.getElementById("agents").innerHTML = agents.map(([agent, body]) => {
+      const infection = Number(body.infection_load) || 0;
+      const fatigue = Number(body.fatigue) || 0;
+      const hydration = Number(body.hydration) || 0;
+      const immune = Number(body.immune_strength) || 0;
+      return `<div class="agent" style="grid-column: span 12">
+        <strong>${agent}</strong>
+        <span class="pill ${body.quarantined ? "risk" : "pass"}">${body.quarantined ? "temporary quarantine" : "public access ok"}</span>
+        <span>infection ${fixed(infection)}</span><div class="bar"><div class="fill risk" style="width:${pct(infection)}"></div></div>
+        <span>fatigue ${fixed(fatigue)}</span><div class="bar"><div class="fill warn" style="width:${pct(fatigue)}"></div></div>
+        <span>hydration ${fixed(hydration)}</span><div class="bar"><div class="fill" style="width:${pct(hydration)}"></div></div>
+        <span>immune strength ${fixed(immune)}</span><div class="bar"><div class="fill" style="width:${pct(immune)}"></div></div>
+      </div>`;
+    }).join("");
+
+    const timeline = document.getElementById("timeline");
+    const raw = document.getElementById("raw");
+    let index = 0;
+    let timer = null;
+
+    function renderTimeline(activeIndex = 0) {
+      timeline.innerHTML = trace.map((event, i) => {
+        const packets = event.public_packets || event.packets || {};
+        const care = packets.care_packet || packets.care || {};
+        const quarantine = packets.quarantine_packet || packets.quarantine || {};
+        const symptom = packets.symptom_packet || packets.symptom || {};
+        const active = i === activeIndex ? "border-color: var(--blue); background: rgba(255,255,255,0.75);" : "";
+        return `<button class="event" style="${active}" data-index="${i}">
+          <span>day ${event.day}</span>
+          <span><strong>${event.agent_id}</strong> ${symptom.expressed ? "shows health marker" : "is monitored"}; care ${care.triaged ? "triaged" : "monitor"}; quarantine ${quarantine.chosen ? "chosen" : "not needed"}</span>
+          <span class="pill ${quarantine.chosen ? "risk" : "pass"}">${event.claim_boundary && event.claim_boundary.subjective_illness === false ? "bounded" : "check"}</span>
+        </button>`;
+      }).join("");
+      raw.textContent = JSON.stringify(trace[activeIndex] || {}, null, 2);
+      timeline.querySelectorAll(".event").forEach((button) => {
+        button.addEventListener("click", () => { index = Number(button.dataset.index); renderTimeline(index); });
+      });
+    }
+
+    function step() {
+      index = (index + 1) % Math.max(trace.length, 1);
+      renderTimeline(index);
+    }
+
+    document.getElementById("play").addEventListener("click", () => { if (!timer) timer = setInterval(step, 900); });
+    document.getElementById("pause").addEventListener("click", () => { clearInterval(timer); timer = null; });
+    document.getElementById("reset").addEventListener("click", () => { index = 0; renderTimeline(index); });
+    renderTimeline(0);
+  </script>
+</body>
+</html>

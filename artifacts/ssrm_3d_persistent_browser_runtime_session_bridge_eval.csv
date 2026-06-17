@@ -1,0 +1,13 @@
+condition,runtime_ticks,storage_snapshots,reload_attempts,reload_successes,journal_events,import_packets,conflict_events,rollback_events,runtime_schema_guard_rate,local_storage_snapshot_rate,reload_restore_rate,replay_journal_integrity_rate,import_packet_rate,python_pipeline_reentry_rate,avatar_body_continuity_rate,sensory_frequency_continuity_rate,source_boundary_continuity_rate,conflict_merge_rate,rollback_checkpoint_rate,trace_integrity,persistent_runtime_readiness
+integrated_persistent_browser_runtime_session,330,8,3,3,343,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+no_runtime_schema_guard,330,8,3,3,342,1,2,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.94
+no_local_storage_snapshot,330,0,3,0,340,1,2,1,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.72
+no_reload_restore,330,8,3,0,340,1,2,1,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_replay_journal,330,8,3,3,0,1,2,1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+no_import_packet,330,8,3,3,343,0,2,1,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.8
+no_python_pipeline_reentry,330,8,3,3,343,1,2,1,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.89
+no_avatar_body_continuity,330,8,3,3,343,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.91
+no_sensory_frequency_continuity,330,8,3,3,343,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.92
+no_source_boundary_continuity,330,8,3,3,343,1,2,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.93
+no_conflict_merge,330,8,3,3,341,1,0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.93
+no_rollback_checkpoint,330,8,3,3,342,1,2,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.94

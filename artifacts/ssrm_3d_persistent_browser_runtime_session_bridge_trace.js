@@ -1,0 +1,19802 @@
+window.SSRM_3D_PERSISTENT_BROWSER_RUNTIME_SESSION_TRACE = [
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.051697,
+        "x": 6.676178,
+        "y": -74.541219
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.001883,
+        "x": 74.196757,
+        "y": -33.874851
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.025047,
+        "x": 60.61881,
+        "y": 40.846433
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6359,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.83,
+      "flower_phase": 3.764213,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 134.959165,
+      "y": 22.393414,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.033333,
+    "interrupted": false,
+    "motion": {
+      "distance": 80.69334,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.592381,
+      "pain": 0.3554,
+      "scent": 0.483863,
+      "sound": 0.561717,
+      "thermal": 0.591483,
+      "vibration": 0.54751,
+      "vision": 0.664959,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 0
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.454952,
+        "x": 74.296846,
+        "y": -33.956742
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.043097,
+        "x": 60.628291,
+        "y": 40.838676
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.333613,
+        "x": -7.560537,
+        "y": 72.042181
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6364,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.829,
+      "flower_phase": 3.816573,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 131.202978,
+      "y": 22.968789,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.066666,
+    "interrupted": false,
+    "motion": {
+      "distance": 76.893341,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.590872,
+      "pain": 0.3554,
+      "scent": 0.476983,
+      "sound": 0.584896,
+      "thermal": 0.585304,
+      "vibration": 0.532383,
+      "vision": 0.655913,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 1
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.316122,
+        "x": 60.558744,
+        "y": 40.895578
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.225119,
+        "x": -7.610063,
+        "y": 72.082702
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.141778,
+        "x": -74.505516,
+        "y": 38.575007
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6369,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.828,
+      "flower_phase": 3.868933,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 127.446791,
+      "y": 23.544163,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.099999,
+    "interrupted": false,
+    "motion": {
+      "distance": 73.093341,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.589322,
+      "pain": 0.3554,
+      "scent": 0.468988,
+      "sound": 0.553995,
+      "thermal": 0.579573,
+      "vibration": 0.517327,
+      "vision": 0.645859,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 2
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.305901,
+        "x": -7.677361,
+        "y": 72.137764
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.387142,
+        "x": -74.420345,
+        "y": 38.505321
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.340273,
+        "x": -62.996867,
+        "y": -37.931666
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6374,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.827,
+      "flower_phase": 3.921293,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 123.690604,
+      "y": 24.119538,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.133332,
+    "interrupted": false,
+    "motion": {
+      "distance": 69.293342,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.587741,
+      "pain": 0.3554,
+      "scent": 0.460071,
+      "sound": 0.576275,
+      "thermal": 0.574333,
+      "vibration": 0.502476,
+      "vision": 0.634975,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 3
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.19731,
+        "x": -74.376937,
+        "y": 38.469805
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.270805,
+        "x": -63.056444,
+        "y": -37.882921
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.191228,
+        "x": 75.800773,
+        "y": -138.290461
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6379,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.826,
+      "flower_phase": 3.973653,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 119.934417,
+      "y": 24.694912,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.166665,
+    "interrupted": false,
+    "motion": {
+      "distance": 65.493342,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.586134,
+      "pain": 0.3554,
+      "scent": 0.450396,
+      "sound": 0.561784,
+      "thermal": 0.569624,
+      "vibration": 0.487941,
+      "vision": 0.623413,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 4
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.07386,
+        "x": -63.072693,
+        "y": -37.869626
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.35052,
+        "x": 75.723659,
+        "y": -138.227367
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.119047,
+        "x": 157.439333,
+        "y": -5.986067
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6384,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.825,
+      "flower_phase": 4.026013,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 116.17823,
+      "y": 25.270287,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.199998,
+    "interrupted": false,
+    "motion": {
+      "distance": 61.693343,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.584507,
+      "pain": 0.3554,
+      "scent": 0.440101,
+      "sound": 0.510365,
+      "thermal": 0.565482,
+      "vibration": 0.473812,
+      "vision": 0.611296,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 5
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.357901,
+        "x": 75.644921,
+        "y": -138.162945
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.264022,
+        "x": 157.381248,
+        "y": -5.938543
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.080661,
+        "x": 6.693923,
+        "y": -74.555738
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6389,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.824,
+      "flower_phase": 4.078373,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 112.422043,
+      "y": 25.845661,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.233331,
+    "interrupted": false,
+    "motion": {
+      "distance": 57.893343,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.583567,
+      "pain": 0.3554,
+      "scent": 0.429297,
+      "sound": 0.513182,
+      "thermal": 0.561938,
+      "vibration": 0.463328,
+      "vision": 0.600305,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 6
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.361041,
+        "x": 157.460677,
+        "y": -6.00353
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.107198,
+        "x": 6.670339,
+        "y": -74.536442
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.347222,
+        "x": 74.373235,
+        "y": -34.019242
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6394,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.823,
+      "flower_phase": 4.130733,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 108.665856,
+      "y": 26.421035,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.266664,
+    "interrupted": false,
+    "motion": {
+      "distance": 54.093344,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.586511,
+      "pain": 0.3554,
+      "scent": 0.418076,
+      "sound": 0.556931,
+      "thermal": 0.55902,
+      "vibration": 0.47093,
+      "vision": 0.597712,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 7
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.063125,
+        "x": 6.684226,
+        "y": -74.547804
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.315076,
+        "x": 74.442552,
+        "y": -34.075956
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.114285,
+        "x": 60.533601,
+        "y": 40.916149
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6399,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.822,
+      "flower_phase": 4.183093,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 104.909669,
+      "y": 26.99641,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.299997,
+    "interrupted": false,
+    "motion": {
+      "distance": 50.293344,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.589468,
+      "pain": 0.3554,
+      "scent": 0.40651,
+      "sound": 0.521427,
+      "thermal": 0.55675,
+      "vibration": 0.479235,
+      "vision": 0.594865,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 8
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.121691,
+        "x": 74.469324,
+        "y": -34.09786
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.133054,
+        "x": 60.504329,
+        "y": 40.940099
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.257079,
+        "x": -7.620804,
+        "y": 72.09149
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6404,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.821,
+      "flower_phase": 4.235453,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 101.153482,
+      "y": 27.571784,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.33333,
+    "interrupted": false,
+    "motion": {
+      "distance": 46.493344,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.592052,
+      "pain": 0.3554,
+      "scent": 0.402266,
+      "sound": 0.576206,
+      "thermal": 0.555145,
+      "vibration": 0.488172,
+      "vision": 0.597194,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 9
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.410592,
+        "x": 60.594659,
+        "y": 40.866192
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.343998,
+        "x": -7.696484,
+        "y": 72.15341
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.000723,
+        "x": -74.376778,
+        "y": 38.469675
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6409,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.82,
+      "flower_phase": 4.287813,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 97.397295,
+      "y": 28.147159,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.366663,
+    "interrupted": false,
+    "motion": {
+      "distance": 42.693345,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.59378,
+      "pain": 0.3554,
+      "scent": 0.415807,
+      "sound": 0.579821,
+      "thermal": 0.554218,
+      "vibration": 0.49782,
+      "vision": 0.612205,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 10
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.311051,
+        "x": -7.764915,
+        "y": 72.209399
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.068317,
+        "x": -74.391808,
+        "y": 38.481972
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.41847,
+        "x": -62.98063,
+        "y": -37.944951
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6414,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.819,
+      "flower_phase": 4.340173,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 93.641108,
+      "y": 28.722533,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.399996,
+    "interrupted": false,
+    "motion": {
+      "distance": 38.893345,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.595596,
+      "pain": 0.3554,
+      "scent": 0.429294,
+      "sound": 0.551724,
+      "thermal": 0.553975,
+      "vibration": 0.508612,
+      "vision": 0.627369,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 11
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.370377,
+        "x": -74.473291,
+        "y": 38.54864
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.25478,
+        "x": -62.924578,
+        "y": -37.990811
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.015921,
+        "x": 75.641418,
+        "y": -138.160079
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6419,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.818,
+      "flower_phase": 4.392533,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "loom_room",
+      "wetness": 0.1,
+      "x": 89.884921,
+      "y": 29.297908,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.433329,
+    "interrupted": false,
+    "motion": {
+      "distance": 35.093346,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597335,
+      "pain": 0.3554,
+      "scent": 0.442712,
+      "sound": 0.591707,
+      "thermal": 0.554419,
+      "vibration": 0.519804,
+      "vision": 0.642303,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 12
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.337895,
+        "x": -62.998915,
+        "y": -37.92999
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.09903,
+        "x": 75.663205,
+        "y": -138.177904
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.494603,
+        "x": 157.351864,
+        "y": -5.914501
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6424,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.817,
+      "flower_phase": 4.444893,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 86.128734,
+      "y": 29.873282,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.466662,
+    "interrupted": false,
+    "motion": {
+      "distance": 31.293346,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599063,
+      "pain": 0.3554,
+      "scent": 0.456043,
+      "sound": 0.62208,
+      "thermal": 0.555545,
+      "vibration": 0.531689,
+      "vision": 0.657142,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 13
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.064218,
+        "x": 75.677333,
+        "y": -138.189463
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.011804,
+        "x": 157.354461,
+        "y": -5.916626
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.355776,
+        "x": 6.762497,
+        "y": -74.611844
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6429,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.816,
+      "flower_phase": 4.497253,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 82.372547,
+      "y": 30.448656,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.499995,
+    "interrupted": false,
+    "motion": {
+      "distance": 27.493347,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600775,
+      "pain": 0.3554,
+      "scent": 0.469261,
+      "sound": 0.58832,
+      "thermal": 0.557346,
+      "vibration": 0.544227,
+      "vision": 0.671851,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 14
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.433542,
+        "x": 157.44984,
+        "y": -5.994663
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.364812,
+        "x": 6.682238,
+        "y": -74.546178
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.279186,
+        "x": 74.407903,
+        "y": -34.047606
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6434,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.815,
+      "flower_phase": 4.549613,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 78.61636,
+      "y": 31.024031,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.533328,
+    "interrupted": false,
+    "motion": {
+      "distance": 23.693347,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.602462,
+      "pain": 0.3554,
+      "scent": 0.482326,
+      "sound": 0.640808,
+      "thermal": 0.559808,
+      "vibration": 0.557351,
+      "vision": 0.686378,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 15
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.004905,
+        "x": 6.681159,
+        "y": -74.545295
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.469154,
+        "x": 74.304689,
+        "y": -33.963158
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.28707,
+        "x": 60.531504,
+        "y": 40.917865
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6439,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.814,
+      "flower_phase": 4.601973,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 74.860173,
+      "y": 31.599405,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.566661,
+    "interrupted": false,
+    "motion": {
+      "distance": 19.893348,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.604104,
+      "pain": 0.3554,
+      "scent": 0.495182,
+      "sound": 0.650772,
+      "thermal": 0.562911,
+      "vibration": 0.570945,
+      "vision": 0.700634,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 16
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.245516,
+        "x": 74.250676,
+        "y": -33.918965
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.094843,
+        "x": 60.510638,
+        "y": 40.934937
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.454831,
+        "x": -7.664852,
+        "y": 72.127529
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6444,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.813,
+      "flower_phase": 4.654333,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 71.103986,
+      "y": 32.17478,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.599994,
+    "interrupted": false,
+    "motion": {
+      "distance": 16.093348,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.60556,
+      "pain": 0.3554,
+      "scent": 0.508862,
+      "sound": 0.652513,
+      "thermal": 0.566633,
+      "vibration": 0.584561,
+      "vision": 0.715146,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 17
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.203132,
+        "x": 60.465949,
+        "y": 40.971501
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.144953,
+        "x": -7.632962,
+        "y": 72.101437
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.345183,
+        "x": -74.549231,
+        "y": 38.610773
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6449,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.812,
+      "flower_phase": 4.706693,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 67.347799,
+      "y": 32.750154,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.633327,
+    "interrupted": false,
+    "motion": {
+      "distance": 12.293349,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606865,
+      "pain": 0.356484,
+      "scent": 0.522506,
+      "sound": 0.680718,
+      "thermal": 0.570945,
+      "vibration": 0.598148,
+      "vision": 0.72929,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 18
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.110301,
+        "x": -7.657228,
+        "y": 72.121291
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.490534,
+        "x": -74.441313,
+        "y": 38.522477
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.066981,
+        "x": -63.013651,
+        "y": -37.917933
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6454,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.811,
+      "flower_phase": 4.759053,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 63.591612,
+      "y": 33.325529,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.66666,
+    "interrupted": false,
+    "motion": {
+      "distance": 8.493349,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607759,
+      "pain": 0.358742,
+      "scent": 0.536049,
+      "sound": 0.716704,
+      "thermal": 0.575813,
+      "vibration": 0.610483,
+      "vision": 0.742426,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 19
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.330797,
+        "x": -74.368538,
+        "y": 38.462934
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.107466,
+        "x": -62.990008,
+        "y": -37.937277
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.001867,
+        "x": 75.677744,
+        "y": -138.189799
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6459,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.81,
+      "flower_phase": 4.811413,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.699993,
+    "interrupted": false,
+    "motion": {
+      "distance": 4.693349,
+      "moving": true,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607866,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.709801,
+      "thermal": 0.581201,
+      "vibration": 0.619815,
+      "vision": 0.753643,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 20
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.475668,
+        "x": -63.094655,
+        "y": -37.851657
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.46558,
+        "x": 75.780172,
+        "y": -138.273603
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.354244,
+        "x": 157.527774,
+        "y": -6.058427
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6464,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8099,
+      "flower_phase": 4.863773,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.733326,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607866,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.71489,
+      "thermal": 0.587068,
+      "vibration": 0.626334,
+      "vision": 0.753643,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 21
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.473536,
+        "x": 75.675994,
+        "y": -138.188367
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.471128,
+        "x": 157.631422,
+        "y": -6.14323
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.008349,
+        "x": 6.679322,
+        "y": -74.543792
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6469,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8098,
+      "flower_phase": 4.916133,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.766659,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607866,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.707254,
+      "thermal": 0.593369,
+      "vibration": 0.633335,
+      "vision": 0.753643,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 22
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.019596,
+        "x": 157.627111,
+        "y": -6.139703
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.273048,
+        "x": 6.739392,
+        "y": -74.592941
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.099849,
+        "x": 74.272643,
+        "y": -33.936938
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6474,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8097,
+      "flower_phase": 4.968493,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.799992,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607866,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.685825,
+      "thermal": 0.600056,
+      "vibration": 0.640765,
+      "vision": 0.753643,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 23
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.022317,
+        "x": 6.734482,
+        "y": -74.588924
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.245474,
+        "x": 74.326647,
+        "y": -33.981123
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.131471,
+        "x": 60.494873,
+        "y": 40.947836
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6579,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8066,
+      "flower_phase": 5.020853,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.833325,
+    "interrupted": true,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607866,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.674936,
+      "thermal": 0.607078,
+      "vibration": 0.648567,
+      "vision": 0.753643,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 24
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.357967,
+        "x": 74.4054,
+        "y": -34.045557
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.122221,
+        "x": 60.467984,
+        "y": 40.969836
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.291146,
+        "x": -7.72128,
+        "y": 72.173697
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6584,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8065,
+      "flower_phase": 5.073213,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.866658,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607879,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.689773,
+      "thermal": 0.614381,
+      "vibration": 0.656742,
+      "vision": 0.753673,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 25
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.387954,
+        "x": 60.553334,
+        "y": 40.900004
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.343553,
+        "x": -7.645698,
+        "y": 72.111857
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.047465,
+        "x": -74.358096,
+        "y": 38.45439
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6589,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8064,
+      "flower_phase": 5.125573,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.899991,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607867,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.688224,
+      "thermal": 0.62191,
+      "vibration": 0.665051,
+      "vision": 0.753645,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 26
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.295743,
+        "x": -7.580635,
+        "y": 72.058623
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.082355,
+        "x": -74.376214,
+        "y": 38.469214
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.369701,
+        "x": -63.175989,
+        "y": -37.785111
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6594,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8063,
+      "flower_phase": 5.177933,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.933324,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607906,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.657094,
+      "thermal": 0.629607,
+      "vibration": 0.67378,
+      "vision": 0.753733,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 27
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.365669,
+        "x": -74.295767,
+        "y": 38.403394
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.43062,
+        "x": -63.270725,
+        "y": -37.707599
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.151369,
+        "x": 75.709295,
+        "y": -138.215613
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6599,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8062,
+      "flower_phase": 5.230293,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.966657,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607906,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.71976,
+      "thermal": 0.637414,
+      "vibration": 0.682454,
+      "vision": 0.753733,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 28
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.091015,
+        "x": -63.250702,
+        "y": -37.723982
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.02763,
+        "x": 75.715374,
+        "y": -138.220586
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.119361,
+        "x": 157.653371,
+        "y": -6.161188
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6604,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8061,
+      "flower_phase": 5.282653,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 0.99999,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607906,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.694174,
+      "thermal": 0.64527,
+      "vibration": 0.691184,
+      "vision": 0.753733,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 29
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.484041,
+        "x": 75.608885,
+        "y": -138.133459
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.397093,
+        "x": 157.566011,
+        "y": -6.089711
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.446694,
+        "x": 6.636209,
+        "y": -74.508519
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6609,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.806,
+      "flower_phase": 5.335013,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.033323,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607906,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.682324,
+      "thermal": 0.653117,
+      "vibration": 0.699902,
+      "vision": 0.753733,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 30
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.451774,
+        "x": 157.466621,
+        "y": -6.008392
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.082504,
+        "x": 6.618058,
+        "y": -74.493668
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.357829,
+        "x": 74.484122,
+        "y": -34.109966
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6614,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8059,
+      "flower_phase": 5.387373,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.066656,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607906,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.720444,
+      "thermal": 0.660894,
+      "vibration": 0.708543,
+      "vision": 0.753733,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 31
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.18098,
+        "x": 6.578242,
+        "y": -74.461092
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.275038,
+        "x": 74.54463,
+        "y": -34.159473
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.411859,
+        "x": 60.462725,
+        "y": 40.974139
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6619,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8058,
+      "flower_phase": 5.439733,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.099989,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607906,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.66529,
+      "thermal": 0.668541,
+      "vibration": 0.71704,
+      "vision": 0.753733,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 32
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.46077,
+        "x": 74.443261,
+        "y": -34.076534
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.211032,
+        "x": 60.416298,
+        "y": 41.012125
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.416513,
+        "x": -7.672268,
+        "y": 72.133595
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6624,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8057,
+      "flower_phase": 5.492093,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.133322,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607864,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.664503,
+      "thermal": 0.676002,
+      "vibration": 0.725142,
+      "vision": 0.753639,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 33
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.134398,
+        "x": 60.38673,
+        "y": 41.036317
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.453732,
+        "x": -7.772089,
+        "y": 72.215267
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.109899,
+        "x": -74.319945,
+        "y": 38.423176
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6629,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8056,
+      "flower_phase": 5.544453,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.166655,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607843,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.713398,
+      "thermal": 0.683218,
+      "vibration": 0.733062,
+      "vision": 0.753591,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 34
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.153248,
+        "x": -7.805803,
+        "y": 72.242852
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.471703,
+        "x": -74.42372,
+        "y": 38.508083
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.392725,
+        "x": -63.337102,
+        "y": -37.653291
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6634,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8055,
+      "flower_phase": 5.596813,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.199988,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607829,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.684997,
+      "thermal": 0.690134,
+      "vibration": 0.740685,
+      "vision": 0.753559,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 35
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.429169,
+        "x": -74.518137,
+        "y": 38.585333
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.232486,
+        "x": -63.388249,
+        "y": -37.611444
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.181835,
+        "x": 75.648889,
+        "y": -138.166189
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6639,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8054,
+      "flower_phase": 5.649173,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.233321,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607829,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.679594,
+      "thermal": 0.696699,
+      "vibration": 0.747979,
+      "vision": 0.753559,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 36
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.158784,
+        "x": -63.423182,
+        "y": -37.582863
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.003736,
+        "x": 75.649711,
+        "y": -138.166862
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.211555,
+        "x": 157.513163,
+        "y": -6.046472
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6644,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8053,
+      "flower_phase": 5.701533,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.266654,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607829,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.673597,
+      "thermal": 0.702861,
+      "vibration": 0.754826,
+      "vision": 0.753559,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 37
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.12257,
+        "x": 75.622746,
+        "y": -138.144799
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.182834,
+        "x": 157.553387,
+        "y": -6.079382
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.336373,
+        "x": 6.50424,
+        "y": -74.400545
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6649,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8052,
+      "flower_phase": 5.753893,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.299987,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607829,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.692877,
+      "thermal": 0.708574,
+      "vibration": 0.761174,
+      "vision": 0.753559,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 38
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.470371,
+        "x": 157.449905,
+        "y": -5.994715
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.02405,
+        "x": 6.509531,
+        "y": -74.404874
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.004317,
+        "x": 74.442311,
+        "y": -34.075757
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6654,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8051,
+      "flower_phase": 5.806253,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.33332,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607829,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.678141,
+      "thermal": 0.713795,
+      "vibration": 0.766974,
+      "vision": 0.753559,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 39
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.181925,
+        "x": 6.549555,
+        "y": -74.437621
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.157628,
+        "x": 74.407633,
+        "y": -34.047384
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.19281,
+        "x": 60.344312,
+        "y": 41.071023
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6659,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.805,
+      "flower_phase": 5.858613,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.366653,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607829,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.713123,
+      "thermal": 0.718483,
+      "vibration": 0.772183,
+      "vision": 0.753559,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 40
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.430415,
+        "x": 74.502324,
+        "y": -34.124859
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.096037,
+        "x": 60.36544,
+        "y": 41.053736
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.240497,
+        "x": -7.752894,
+        "y": 72.199562
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6664,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8049,
+      "flower_phase": 5.910973,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.399986,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607809,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.696923,
+      "thermal": 0.722602,
+      "vibration": 0.77667,
+      "vision": 0.753514,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 41
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.10925,
+        "x": 60.341405,
+        "y": 41.073401
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.407028,
+        "x": -7.84244,
+        "y": 72.272827
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.298869,
+        "x": -74.452386,
+        "y": 38.531537
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6669,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8048,
+      "flower_phase": 5.963333,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.433319,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607819,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.71744,
+      "thermal": 0.726122,
+      "vibration": 0.780626,
+      "vision": 0.753536,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 42
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.474439,
+        "x": -7.946817,
+        "y": 72.358226
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.275323,
+        "x": -74.391815,
+        "y": 38.481979
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.353052,
+        "x": -63.500854,
+        "y": -37.519314
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6674,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8047,
+      "flower_phase": 6.015693,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.466652,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.682315,
+      "thermal": 0.729015,
+      "vibration": 0.783789,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 43
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.29677,
+        "x": -74.326526,
+        "y": 38.42856
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.363255,
+        "x": -63.420938,
+        "y": -37.5847
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.01701,
+        "x": 75.619004,
+        "y": -138.141737
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6679,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8046,
+      "flower_phase": 6.068053,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.499985,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.657872,
+      "thermal": 0.73126,
+      "vibration": 0.786283,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 1,
+    "tick": 44
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.125737,
+        "x": -63.393276,
+        "y": -37.607333
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.34743,
+        "x": 75.695439,
+        "y": -138.204274
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.353258,
+        "x": 157.372188,
+        "y": -5.931129
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6684,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8045,
+      "flower_phase": 6.120413,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.533318,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.672925,
+      "thermal": 0.732839,
+      "vibration": 0.788037,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 45
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.145906,
+        "x": 75.727538,
+        "y": -138.230537
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.160171,
+        "x": 157.407426,
+        "y": -5.95996
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.40757,
+        "x": 6.45989,
+        "y": -74.364258
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6689,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8044,
+      "flower_phase": 6.172773,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.566651,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.686292,
+      "thermal": 0.73374,
+      "vibration": 0.789038,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 46
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.067967,
+        "x": 157.392473,
+        "y": -5.947726
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.264703,
+        "x": 6.518125,
+        "y": -74.411904
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.04885,
+        "x": 74.491577,
+        "y": -34.116066
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6694,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8043,
+      "flower_phase": 6.225133,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.599984,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.670692,
+      "thermal": 0.733956,
+      "vibration": 0.789279,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 47
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.175607,
+        "x": 6.479492,
+        "y": -74.380295
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.157405,
+        "x": 74.456948,
+        "y": -34.087733
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.371176,
+        "x": 60.259746,
+        "y": 41.140213
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6699,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8042,
+      "flower_phase": 6.277493,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.633317,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.678179,
+      "thermal": 0.733486,
+      "vibration": 0.788757,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 48
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.287492,
+        "x": 74.520196,
+        "y": -34.139482
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.464719,
+        "x": 60.157508,
+        "y": 41.223862
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.30912,
+        "x": -8.014823,
+        "y": 72.413868
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6704,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8041,
+      "flower_phase": 0.046668,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.66665,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.893349,
+      "moving": false,
+      "target": "cairn_ridge"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607768,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.692439,
+      "thermal": 0.732334,
+      "vibration": 0.787299,
+      "vision": 0.753422,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 49
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.223663,
+        "x": 60.206714,
+        "y": 41.183603
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.16352,
+        "x": -8.050797,
+        "y": 72.443302
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.168059,
+        "x": -74.363499,
+        "y": 38.458811
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6709,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8031,
+      "flower_phase": 0.099028,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 56.464412,
+      "y": 35.654835,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.699983,
+    "interrupted": false,
+    "motion": {
+      "distance": 67.449952,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607472,
+      "pain": 0.363281,
+      "scent": 0.563286,
+      "sound": 0.683893,
+      "thermal": 0.730507,
+      "vibration": 0.786909,
+      "vision": 0.764153,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 50
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.313075,
+        "x": -8.119673,
+        "y": 72.499655
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.062088,
+        "x": -74.34984,
+        "y": 38.447635
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.088061,
+        "x": -63.412649,
+        "y": -37.591482
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6714,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8021,
+      "flower_phase": 0.151388,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 53.0934,
+      "y": 37.408767,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.733316,
+    "interrupted": false,
+    "motion": {
+      "distance": 63.649952,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605934,
+      "pain": 0.365593,
+      "scent": 0.577156,
+      "sound": 0.653393,
+      "thermal": 0.72802,
+      "vibration": 0.780199,
+      "vision": 0.772087,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 51
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.240825,
+        "x": -74.296859,
+        "y": 38.404287
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.106322,
+        "x": -63.389258,
+        "y": -37.61062
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.264173,
+        "x": 75.66942,
+        "y": -138.182986
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6719,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8011,
+      "flower_phase": 0.203748,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 49.722388,
+      "y": 39.162699,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.766649,
+    "interrupted": false,
+    "motion": {
+      "distance": 59.849953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.603595,
+      "pain": 0.3679,
+      "scent": 0.591003,
+      "sound": 0.686456,
+      "thermal": 0.724892,
+      "vibration": 0.769165,
+      "vision": 0.778198,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 52
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.196199,
+        "x": -63.346094,
+        "y": -37.645936
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.191277,
+        "x": 75.711501,
+        "y": -138.217416
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.349216,
+        "x": 157.4693,
+        "y": -6.010585
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6724,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8001,
+      "flower_phase": 0.256108,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 46.351376,
+      "y": 40.916631,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.799982,
+    "interrupted": false,
+    "motion": {
+      "distance": 56.049953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.60137,
+      "pain": 0.368562,
+      "scent": 0.594974,
+      "sound": 0.657393,
+      "thermal": 0.721147,
+      "vibration": 0.755844,
+      "vision": 0.776454,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 53
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.461031,
+        "x": 75.812928,
+        "y": -138.300402
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.010265,
+        "x": 157.471558,
+        "y": -6.012433
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.488053,
+        "x": 6.37212,
+        "y": -74.292445
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6729,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7991,
+      "flower_phase": 0.308468,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 42.980364,
+      "y": 42.670563,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.833315,
+    "interrupted": false,
+    "motion": {
+      "distance": 52.249953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599831,
+      "pain": 0.366261,
+      "scent": 0.581164,
+      "sound": 0.649781,
+      "thermal": 0.716814,
+      "vibration": 0.741143,
+      "vision": 0.761648,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 54
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.230104,
+        "x": 157.522181,
+        "y": -6.053852
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.04136,
+        "x": 6.363021,
+        "y": -74.285
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.376603,
+        "x": 74.603049,
+        "y": -34.20727
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6734,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7981,
+      "flower_phase": 0.360828,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 39.609352,
+      "y": 44.424495,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.866648,
+    "interrupted": false,
+    "motion": {
+      "distance": 48.449953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.598213,
+      "pain": 0.363949,
+      "scent": 0.567296,
+      "sound": 0.620597,
+      "thermal": 0.711925,
+      "vibration": 0.725457,
+      "vision": 0.746615,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 55
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.401602,
+        "x": 6.451374,
+        "y": -74.357288
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.415193,
+        "x": 74.511707,
+        "y": -34.132535
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.390914,
+        "x": 60.120713,
+        "y": 41.253968
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6739,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7971,
+      "flower_phase": 0.413188,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 36.23834,
+      "y": 46.178427,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.899981,
+    "interrupted": false,
+    "motion": {
+      "distance": 44.649953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596549,
+      "pain": 0.361637,
+      "scent": 0.553422,
+      "sound": 0.652581,
+      "thermal": 0.706517,
+      "vibration": 0.708987,
+      "vision": 0.731474,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 56
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.071466,
+        "x": 74.495984,
+        "y": -34.119671
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.228467,
+        "x": 60.170976,
+        "y": 41.212844
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.405272,
+        "x": -8.208833,
+        "y": 72.572604
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6744,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7961,
+      "flower_phase": 0.465548,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 32.867328,
+      "y": 47.932359,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.933314,
+    "interrupted": false,
+    "motion": {
+      "distance": 40.849953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594921,
+      "pain": 0.359324,
+      "scent": 0.539546,
+      "sound": 0.574943,
+      "thermal": 0.700632,
+      "vibration": 0.692149,
+      "vision": 0.716413,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 57
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.022769,
+        "x": 60.175985,
+        "y": 41.208746
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.473838,
+        "x": -8.313077,
+        "y": 72.657895
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.461237,
+        "x": -74.398331,
+        "y": 38.48731
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6749,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7951,
+      "flower_phase": 0.517908,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 29.496316,
+      "y": 49.686291,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.966647,
+    "interrupted": false,
+    "motion": {
+      "distance": 37.049953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.593173,
+      "pain": 0.357012,
+      "scent": 0.525669,
+      "sound": 0.605106,
+      "thermal": 0.694316,
+      "vibration": 0.67429,
+      "vision": 0.701081,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 58
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.368107,
+        "x": -8.39406,
+        "y": 72.724154
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.141722,
+        "x": -74.367152,
+        "y": 38.4618
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.391143,
+        "x": -63.432145,
+        "y": -37.57553
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6754,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7941,
+      "flower_phase": 0.570268,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 26.125304,
+      "y": 51.440223,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.99998,
+    "interrupted": false,
+    "motion": {
+      "distance": 33.249953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591445,
+      "pain": 0.3554,
+      "scent": 0.511792,
+      "sound": 0.590651,
+      "thermal": 0.687615,
+      "vibration": 0.656099,
+      "vision": 0.685796,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 59
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.14206,
+        "x": -74.335899,
+        "y": 38.436229
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.201256,
+        "x": -63.476421,
+        "y": -37.539304
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.457792,
+        "x": 75.913642,
+        "y": -138.382805
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6759,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7931,
+      "flower_phase": 0.622628,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 22.754292,
+      "y": 53.194155,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.033313,
+    "interrupted": false,
+    "motion": {
+      "distance": 29.449953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591332,
+      "pain": 0.3554,
+      "scent": 0.497915,
+      "sound": 0.555465,
+      "thermal": 0.680581,
+      "vibration": 0.644799,
+      "vision": 0.674141,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 60
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.205941,
+        "x": -63.521728,
+        "y": -37.502235
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.324158,
+        "x": 75.842327,
+        "y": -138.324457
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.164545,
+        "x": 157.485981,
+        "y": -6.024234
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6764,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7921,
+      "flower_phase": 0.674988,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 19.38328,
+      "y": 54.948086,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.066646,
+    "interrupted": false,
+    "motion": {
+      "distance": 25.649953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594416,
+      "pain": 0.3554,
+      "scent": 0.484037,
+      "sound": 0.596063,
+      "thermal": 0.673268,
+      "vibration": 0.647579,
+      "vision": 0.66968,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 61
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.362088,
+        "x": 75.921986,
+        "y": -138.389633
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.250986,
+        "x": 157.541198,
+        "y": -6.069411
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.293968,
+        "x": 6.516047,
+        "y": -74.410202
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6769,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7911,
+      "flower_phase": 0.727348,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 16.012268,
+      "y": 56.702018,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.099979,
+    "interrupted": false,
+    "motion": {
+      "distance": 21.849954,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596874,
+      "pain": 0.3554,
+      "scent": 0.48325,
+      "sound": 0.570444,
+      "thermal": 0.665732,
+      "vibration": 0.650099,
+      "vision": 0.674566,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 62
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.05064,
+        "x": 157.552339,
+        "y": -6.078526
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.073785,
+        "x": 6.53228,
+        "y": -74.423483
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.401567,
+        "x": 74.407639,
+        "y": -34.047389
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6774,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7901,
+      "flower_phase": 0.779708,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 12.641256,
+      "y": 58.455949,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.133312,
+    "interrupted": false,
+    "motion": {
+      "distance": 18.049954,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.598789,
+      "pain": 0.3554,
+      "scent": 0.493818,
+      "sound": 0.637075,
+      "thermal": 0.65803,
+      "vibration": 0.652421,
+      "vision": 0.687554,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 63
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.305599,
+        "x": 6.599512,
+        "y": -74.478491
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.204368,
+        "x": 74.4526,
+        "y": -34.084175
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.128891,
+        "x": 60.204341,
+        "y": 41.185546
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6779,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7891,
+      "flower_phase": 0.832068,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 9.270244,
+      "y": 60.20988,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.166645,
+    "interrupted": false,
+    "motion": {
+      "distance": 14.249954,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600738,
+      "pain": 0.3554,
+      "scent": 0.503543,
+      "sound": 0.644182,
+      "thermal": 0.65022,
+      "vibration": 0.654601,
+      "vision": 0.699929,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 64
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.047917,
+        "x": 74.463142,
+        "y": -34.0928
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.226417,
+        "x": 60.254153,
+        "y": 41.144791
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.011744,
+        "x": -8.396644,
+        "y": 72.726268
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6784,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7881,
+      "flower_phase": 0.884428,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 5.899232,
+      "y": 61.963812,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.199978,
+    "interrupted": false,
+    "motion": {
+      "distance": 10.449955,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.602733,
+      "pain": 0.3554,
+      "scent": 0.512145,
+      "sound": 0.670132,
+      "thermal": 0.642363,
+      "vibration": 0.656691,
+      "vision": 0.711484,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 65
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.161582,
+        "x": 60.218605,
+        "y": 41.173876
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.090858,
+        "x": -8.416633,
+        "y": 72.742622
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.459574,
+        "x": -74.234793,
+        "y": 38.353506
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6789,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7871,
+      "flower_phase": 0.936788,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 2.52822,
+      "y": 63.717743,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.233311,
+    "interrupted": false,
+    "motion": {
+      "distance": 6.649955,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.604782,
+      "pain": 0.355944,
+      "scent": 0.519265,
+      "sound": 0.678024,
+      "thermal": 0.634518,
+      "vibration": 0.658719,
+      "vision": 0.721942,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 66
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.31305,
+        "x": -8.347762,
+        "y": 72.686273
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.009432,
+        "x": -74.236868,
+        "y": 38.355204
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.262925,
+        "x": -63.463884,
+        "y": -37.549562
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6794,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7861,
+      "flower_phase": 0.989148,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.266644,
+    "interrupted": false,
+    "motion": {
+      "distance": 2.849956,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606344,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.676105,
+      "thermal": 0.626745,
+      "vibration": 0.657991,
+      "vision": 0.728835,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 67
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.001151,
+        "x": -74.236615,
+        "y": 38.354997
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.291629,
+        "x": -63.528042,
+        "y": -37.497069
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.193691,
+        "x": 75.879374,
+        "y": -138.354769
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6799,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.786,
+      "flower_phase": 1.041508,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.299977,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606401,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.658398,
+      "thermal": 0.619103,
+      "vibration": 0.649757,
+      "vision": 0.728963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 68
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.434688,
+        "x": -63.623673,
+        "y": -37.418825
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.123679,
+        "x": 75.906583,
+        "y": -138.377031
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.224267,
+        "x": 157.503,
+        "y": -6.038158
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6804,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7859,
+      "flower_phase": 1.093868,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.33331,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606401,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.671363,
+      "thermal": 0.611651,
+      "vibration": 0.641477,
+      "vision": 0.728963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 69
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.281161,
+        "x": 75.968439,
+        "y": -138.42764
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.028545,
+        "x": 157.50928,
+        "y": -6.043296
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.02409,
+        "x": 6.594212,
+        "y": -74.474155
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6809,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7858,
+      "flower_phase": 1.146228,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.366643,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606401,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.6959,
+      "thermal": 0.604446,
+      "vibration": 0.633471,
+      "vision": 0.728963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 70
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.268325,
+        "x": 157.568312,
+        "y": -6.091595
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.327282,
+        "x": 6.52221,
+        "y": -74.415244
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.251873,
+        "x": 74.40773,
+        "y": -34.047463
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6814,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7857,
+      "flower_phase": 1.198588,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.399976,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606401,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.706251,
+      "thermal": 0.597542,
+      "vibration": 0.625799,
+      "vision": 0.728963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 71
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.265562,
+        "x": 6.463786,
+        "y": -74.367443
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.124284,
+        "x": 74.380387,
+        "y": -34.025092
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.008983,
+        "x": 60.220581,
+        "y": 41.172259
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6819,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7856,
+      "flower_phase": 1.250948,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.433309,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606401,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.659787,
+      "thermal": 0.590992,
+      "vibration": 0.618522,
+      "vision": 0.728963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 72
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.119302,
+        "x": 74.406634,
+        "y": -34.046566
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.413979,
+        "x": 60.311656,
+        "y": 41.097743
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.327253,
+        "x": -8.419758,
+        "y": 72.745179
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6924,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7825,
+      "flower_phase": 1.303308,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.466642,
+    "interrupted": true,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606401,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.689026,
+      "thermal": 0.584846,
+      "vibration": 0.611693,
+      "vision": 0.728963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 73
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.246165,
+        "x": 60.365812,
+        "y": 41.053433
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.134085,
+        "x": -8.390259,
+        "y": 72.721044
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.087774,
+        "x": -74.255925,
+        "y": 38.370796
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6929,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7824,
+      "flower_phase": 1.355668,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.499975,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606341,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.648623,
+      "thermal": 0.579151,
+      "vibration": 0.605098,
+      "vision": 0.728829,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 74
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.428788,
+        "x": -8.484592,
+        "y": 72.798226
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.139527,
+        "x": -74.225229,
+        "y": 38.345681
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.266426,
+        "x": -63.565059,
+        "y": -37.466782
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6934,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7823,
+      "flower_phase": 1.408028,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.533308,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606366,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.66663,
+      "thermal": 0.57395,
+      "vibration": 0.599429,
+      "vision": 0.728884,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 75
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.232855,
+        "x": -74.276457,
+        "y": 38.387595
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.455858,
+        "x": -63.665348,
+        "y": -37.384727
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.020786,
+        "x": 75.963866,
+        "y": -138.423899
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6939,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7822,
+      "flower_phase": 1.460388,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.566641,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606288,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.676584,
+      "thermal": 0.569284,
+      "vibration": 0.593893,
+      "vision": 0.728709,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 76
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.362923,
+        "x": -63.745191,
+        "y": -37.319401
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.350987,
+        "x": 76.041083,
+        "y": -138.487077
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.088271,
+        "x": 157.548892,
+        "y": -6.075706
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6944,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7821,
+      "flower_phase": 1.512748,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.599974,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606288,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.643619,
+      "thermal": 0.565187,
+      "vibration": 0.589341,
+      "vision": 0.728709,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 77
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.26667,
+        "x": 75.982416,
+        "y": -138.439076
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.377171,
+        "x": 157.63187,
+        "y": -6.143597
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.429456,
+        "x": 6.369306,
+        "y": -74.290141
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6949,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.782,
+      "flower_phase": 1.565108,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.633307,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606288,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.697407,
+      "thermal": 0.561691,
+      "vibration": 0.585456,
+      "vision": 0.728709,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 78
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.367416,
+        "x": 157.712702,
+        "y": -6.209732
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.155484,
+        "x": 6.403512,
+        "y": -74.318128
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.171464,
+        "x": 74.368912,
+        "y": -34.015702
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6954,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7819,
+      "flower_phase": 1.617468,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.66664,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606288,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.662509,
+      "thermal": 0.558822,
+      "vibration": 0.582269,
+      "vision": 0.728709,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 79
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.028707,
+        "x": 6.397196,
+        "y": -74.312961
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.37191,
+        "x": 74.450732,
+        "y": -34.082646
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.371541,
+        "x": 60.447551,
+        "y": 40.986556
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6959,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7818,
+      "flower_phase": 1.669828,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.699973,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606288,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.646026,
+      "thermal": 0.556603,
+      "vibration": 0.579803,
+      "vision": 0.728709,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 80
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.049686,
+        "x": 74.461663,
+        "y": -34.09159
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.061919,
+        "x": 60.433929,
+        "y": 40.997702
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.455831,
+        "x": -8.584875,
+        "y": 72.880276
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6964,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7817,
+      "flower_phase": 1.722188,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.733306,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606288,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.694872,
+      "thermal": 0.55505,
+      "vibration": 0.578078,
+      "vision": 0.728709,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 81
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.46747,
+        "x": 60.331086,
+        "y": 41.081847
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.132118,
+        "x": -8.613941,
+        "y": 72.904057
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.44722,
+        "x": -74.178069,
+        "y": 38.307095
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6969,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7816,
+      "flower_phase": 1.774548,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.766639,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606205,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.649727,
+      "thermal": 0.554175,
+      "vibration": 0.576733,
+      "vision": 0.728522,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 82
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.260123,
+        "x": -8.671168,
+        "y": 72.950879
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.120207,
+        "x": -74.204515,
+        "y": 38.328732
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.212358,
+        "x": -63.79191,
+        "y": -37.281177
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6974,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7815,
+      "flower_phase": 1.826908,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.799972,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606181,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.688113,
+      "thermal": 0.553985,
+      "vibration": 0.576414,
+      "vision": 0.728468,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 83
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.489625,
+        "x": -74.096797,
+        "y": 38.240599
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.083744,
+        "x": -63.773486,
+        "y": -37.296251
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.090787,
+        "x": 75.962443,
+        "y": -138.422734
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6979,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7814,
+      "flower_phase": 1.879268,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.833305,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606134,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.661123,
+      "thermal": 0.554482,
+      "vibration": 0.576753,
+      "vision": 0.728362,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 84
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.018019,
+        "x": -63.77745,
+        "y": -37.293008
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.377695,
+        "x": 75.87935,
+        "y": -138.354749
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.043402,
+        "x": 157.72225,
+        "y": -6.217544
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6984,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7813,
+      "flower_phase": 1.931628,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.866638,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606134,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.636796,
+      "thermal": 0.55566,
+      "vibration": 0.578063,
+      "vision": 0.728362,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 85
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.137649,
+        "x": 75.909633,
+        "y": -138.379526
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.336425,
+        "x": 157.796264,
+        "y": -6.278101
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.105666,
+        "x": 6.420443,
+        "y": -74.331981
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6989,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7812,
+      "flower_phase": 1.983988,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.899971,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606134,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.672736,
+      "thermal": 0.557513,
+      "vibration": 0.580121,
+      "vision": 0.728362,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 86
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.032204,
+        "x": 157.803349,
+        "y": -6.283898
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.313385,
+        "x": 6.351498,
+        "y": -74.275572
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.214988,
+        "x": 74.50896,
+        "y": -34.130288
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6994,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7811,
+      "flower_phase": 2.036348,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.0,
+      "y": 65.033171,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.933304,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 0,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606134,
+      "pain": 0.35663,
+      "scent": 0.523379,
+      "sound": 0.682254,
+      "thermal": 0.560025,
+      "vibration": 0.582912,
+      "vision": 0.728362,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 87
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.065416,
+        "x": 6.337106,
+        "y": -74.263797
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.371898,
+        "x": 74.590778,
+        "y": -34.19723
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.383623,
+        "x": 60.246689,
+        "y": 41.150899
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6684,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8045,
+      "flower_phase": 6.120413,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.989594,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 59.835424,
+      "y": 33.900903,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.533318,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607807,
+      "pain": 0.360968,
+      "scent": 0.549411,
+      "sound": 0.672925,
+      "thermal": 0.732839,
+      "vibration": 0.788037,
+      "vision": 0.753511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 88
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.267501,
+        "x": 74.649628,
+        "y": -34.24538
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.128679,
+        "x": 60.274998,
+        "y": 41.127737
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.112097,
+        "x": -8.646507,
+        "y": 72.930702
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6689,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8035,
+      "flower_phase": 6.172773,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 56.464412,
+      "y": 35.654835,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.566651,
+    "interrupted": false,
+    "motion": {
+      "distance": 67.449952,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607478,
+      "pain": 0.363281,
+      "scent": 0.563286,
+      "sound": 0.710033,
+      "thermal": 0.65626,
+      "vibration": 0.704443,
+      "vision": 0.764168,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 2,
+    "tick": 89
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.001503,
+        "x": 60.275329,
+        "y": 41.127466
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.195463,
+        "x": -8.689509,
+        "y": 72.965885
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.080969,
+        "x": -74.078984,
+        "y": 38.226025
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6694,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8025,
+      "flower_phase": 6.225133,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 53.0934,
+      "y": 37.408767,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.599984,
+    "interrupted": false,
+    "motion": {
+      "distance": 63.649952,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.365593,
+      "scent": 0.577156,
+      "sound": 0.654741,
+      "thermal": 0.648434,
+      "vibration": 0.691671,
+      "vision": 0.772037,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 90
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.148995,
+        "x": -8.65673,
+        "y": 72.939066
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.266626,
+        "x": -74.137642,
+        "y": 38.274018
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.014389,
+        "x": -63.780616,
+        "y": -37.290418
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6699,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8015,
+      "flower_phase": 6.277493,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 49.722388,
+      "y": 39.162699,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.633317,
+    "interrupted": false,
+    "motion": {
+      "distance": 59.849953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.603558,
+      "pain": 0.3679,
+      "scent": 0.591003,
+      "sound": 0.679692,
+      "thermal": 0.640574,
+      "vibration": 0.675315,
+      "vision": 0.778116,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 91
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.365995,
+        "x": -74.218161,
+        "y": 38.339897
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.077101,
+        "x": -63.797578,
+        "y": -37.27654
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.018682,
+        "x": 75.905523,
+        "y": -138.376163
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6704,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.8005,
+      "flower_phase": 0.046668,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 46.351376,
+      "y": 40.916631,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.66665,
+    "interrupted": false,
+    "motion": {
+      "distance": 56.049953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.601327,
+      "pain": 0.368562,
+      "scent": 0.594974,
+      "sound": 0.651485,
+      "thermal": 0.632741,
+      "vibration": 0.657419,
+      "vision": 0.776357,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 92
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.033261,
+        "x": -63.804895,
+        "y": -37.270553
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.320092,
+        "x": 75.975943,
+        "y": -138.433779
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.119081,
+        "x": 157.777151,
+        "y": -6.262463
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6709,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7995,
+      "flower_phase": 0.099028,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 42.980364,
+      "y": 42.670563,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.699983,
+    "interrupted": false,
+    "motion": {
+      "distance": 52.249953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599784,
+      "pain": 0.366261,
+      "scent": 0.581164,
+      "sound": 0.661308,
+      "thermal": 0.624992,
+      "vibration": 0.638909,
+      "vision": 0.761542,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 93
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.04282,
+        "x": 75.985363,
+        "y": -138.441487
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.134592,
+        "x": 157.806761,
+        "y": -6.28669
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.191869,
+        "x": 6.294895,
+        "y": -74.229261
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6714,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7985,
+      "flower_phase": 0.151388,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 39.609352,
+      "y": 44.424495,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.733316,
+    "interrupted": false,
+    "motion": {
+      "distance": 48.449953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.598164,
+      "pain": 0.363949,
+      "scent": 0.567296,
+      "sound": 0.610589,
+      "thermal": 0.617389,
+      "vibration": 0.620197,
+      "vision": 0.746505,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 94
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.171917,
+        "x": 157.768939,
+        "y": -6.255745
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.126286,
+        "x": 6.267112,
+        "y": -74.20653
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.040535,
+        "x": 74.64071,
+        "y": -34.238084
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6719,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7975,
+      "flower_phase": 0.203748,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 36.23834,
+      "y": 46.178427,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.766649,
+    "interrupted": false,
+    "motion": {
+      "distance": 44.649953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596498,
+      "pain": 0.361637,
+      "scent": 0.553422,
+      "sound": 0.635518,
+      "thermal": 0.609988,
+      "vibration": 0.601506,
+      "vision": 0.731361,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 95
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.418947,
+        "x": 6.35928,
+        "y": -74.28194
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.197328,
+        "x": 74.597298,
+        "y": -34.202565
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.061555,
+        "x": 60.288871,
+        "y": 41.116386
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6724,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7965,
+      "flower_phase": 0.256108,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 32.867328,
+      "y": 47.932359,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.799982,
+    "interrupted": false,
+    "motion": {
+      "distance": 40.849953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594805,
+      "pain": 0.359324,
+      "scent": 0.539546,
+      "sound": 0.614792,
+      "thermal": 0.602846,
+      "vibration": 0.582978,
+      "vision": 0.716153,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 96
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.142951,
+        "x": 74.628747,
+        "y": -34.228296
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.243346,
+        "x": 60.235335,
+        "y": 41.160188
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.142828,
+        "x": -8.625308,
+        "y": 72.913357
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6729,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7955,
+      "flower_phase": 0.308468,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 29.496316,
+      "y": 49.686291,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.833315,
+    "interrupted": false,
+    "motion": {
+      "distance": 37.049953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.593083,
+      "pain": 0.357012,
+      "scent": 0.525669,
+      "sound": 0.62336,
+      "thermal": 0.596018,
+      "vibration": 0.56467,
+      "vision": 0.70088,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 97
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.26759,
+        "x": 60.294205,
+        "y": 41.112022
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.315516,
+        "x": -8.694722,
+        "y": 72.97015
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.180581,
+        "x": -74.257889,
+        "y": 38.372402
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6734,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7945,
+      "flower_phase": 0.360828,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "cairn_ridge",
+      "wetness": 0.1,
+      "x": 26.125304,
+      "y": 51.440223,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.866648,
+    "interrupted": false,
+    "motion": {
+      "distance": 33.249953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.5914,
+      "pain": 0.3554,
+      "scent": 0.511792,
+      "sound": 0.605804,
+      "thermal": 0.589556,
+      "vibration": 0.546941,
+      "vision": 0.685694,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 98
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.209695,
+        "x": -8.648589,
+        "y": 72.932405
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.435449,
+        "x": -74.353688,
+        "y": 38.450783
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.37075,
+        "x": -63.88646,
+        "y": -37.203818
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6739,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7935,
+      "flower_phase": 0.413188,
+      "footstep_rate_hz": 1.6,
+      "heading": 2.661839,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 22.754292,
+      "y": 53.194155,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.899981,
+    "interrupted": false,
+    "motion": {
+      "distance": 29.449953,
+      "moving": true,
+      "target": "central_hearth"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591085,
+      "pain": 0.3554,
+      "scent": 0.497915,
+      "sound": 0.595103,
+      "thermal": 0.583509,
+      "vibration": 0.535831,
+      "vision": 0.673586,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 99
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.060707,
+        "x": -74.367043,
+        "y": 38.46171
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.249258,
+        "x": -63.831623,
+        "y": -37.248684
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.000232,
+        "x": 75.985312,
+        "y": -138.441445
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6744,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7925,
+      "flower_phase": 0.465548,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 19.01243,
+      "y": 52.531984,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.933314,
+    "interrupted": false,
+    "motion": {
+      "distance": 89.302374,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.5934,
+      "pain": 0.3554,
+      "scent": 0.486665,
+      "sound": 0.5894,
+      "thermal": 0.577923,
+      "vibration": 0.53763,
+      "vision": 0.669553,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 100
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.440267,
+        "x": -63.734764,
+        "y": -37.327932
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.31696,
+        "x": 76.055043,
+        "y": -138.498498
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.245484,
+        "x": 157.822946,
+        "y": -6.299932
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6749,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7915,
+      "flower_phase": 0.517908,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 15.270568,
+      "y": 51.869813,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.966647,
+    "interrupted": false,
+    "motion": {
+      "distance": 85.502374,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.59556,
+      "pain": 0.3554,
+      "scent": 0.474886,
+      "sound": 0.5773,
+      "thermal": 0.57284,
+      "vibration": 0.539181,
+      "vision": 0.664738,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 101
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.17574,
+        "x": 76.01638,
+        "y": -138.466865
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.213854,
+        "x": 157.869994,
+        "y": -6.338426
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.370164,
+        "x": 6.277844,
+        "y": -74.21531
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6754,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7905,
+      "flower_phase": 0.570268,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 11.528706,
+      "y": 51.207642,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 1.99998,
+    "interrupted": false,
+    "motion": {
+      "distance": 81.702374,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597232,
+      "pain": 0.3554,
+      "scent": 0.469646,
+      "sound": 0.601979,
+      "thermal": 0.5683,
+      "vibration": 0.540534,
+      "vision": 0.664195,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 102
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.247737,
+        "x": 157.924496,
+        "y": -6.383019
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.393383,
+        "x": 6.1913,
+        "y": -74.144501
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.473505,
+        "x": 74.524576,
+        "y": -34.143065
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6759,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7895,
+      "flower_phase": 0.622628,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 7.786844,
+      "y": 50.545471,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.033313,
+    "interrupted": false,
+    "motion": {
+      "distance": 77.902374,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.598421,
+      "pain": 0.3554,
+      "scent": 0.469896,
+      "sound": 0.609722,
+      "thermal": 0.564337,
+      "vibration": 0.541537,
+      "vision": 0.667076,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 103
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.072614,
+        "x": 6.207275,
+        "y": -74.157571
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.472053,
+        "x": 74.420724,
+        "y": -34.058095
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.198639,
+        "x": 60.250504,
+        "y": 41.147777
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6764,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7885,
+      "flower_phase": 0.674988,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 4.044982,
+      "y": 49.8833,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.066646,
+    "interrupted": false,
+    "motion": {
+      "distance": 74.102374,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599413,
+      "pain": 0.3554,
+      "scent": 0.46867,
+      "sound": 0.632968,
+      "thermal": 0.560982,
+      "vibration": 0.542011,
+      "vision": 0.668302,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 104
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.084086,
+        "x": 74.439223,
+        "y": -34.07323
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.004429,
+        "x": 60.251478,
+        "y": 41.14698
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.046801,
+        "x": -8.658885,
+        "y": 72.940829
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6769,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7875,
+      "flower_phase": 0.727348,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": 0.30312,
+      "y": 49.221129,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.099979,
+    "interrupted": false,
+    "motion": {
+      "distance": 70.302373,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.60016,
+      "pain": 0.3554,
+      "scent": 0.466011,
+      "sound": 0.610228,
+      "thermal": 0.558259,
+      "vibration": 0.541775,
+      "vision": 0.667797,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 105
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.094829,
+        "x": 60.27234,
+        "y": 41.129911
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.181337,
+        "x": -8.618991,
+        "y": 72.908188
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.427147,
+        "x": -74.273071,
+        "y": 38.384824
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6774,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7865,
+      "flower_phase": 0.779708,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -3.438742,
+      "y": 48.558958,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.133312,
+    "interrupted": false,
+    "motion": {
+      "distance": 66.502373,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600613,
+      "pain": 0.3554,
+      "scent": 0.462001,
+      "sound": 0.612332,
+      "thermal": 0.55619,
+      "vibration": 0.540658,
+      "vision": 0.665524,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 106
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.069212,
+        "x": -8.603764,
+        "y": 72.89573
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.136894,
+        "x": -74.242954,
+        "y": 38.360183
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.343841,
+        "x": -63.659119,
+        "y": -37.389823
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6779,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7855,
+      "flower_phase": 0.832068,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -7.180604,
+      "y": 47.896787,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.166645,
+    "interrupted": false,
+    "motion": {
+      "distance": 62.702373,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600788,
+      "pain": 0.3554,
+      "scent": 0.456753,
+      "sound": 0.614618,
+      "thermal": 0.554791,
+      "vibration": 0.538762,
+      "vision": 0.661605,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 107
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.115983,
+        "x": -74.217438,
+        "y": 38.339306
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.167015,
+        "x": -63.622376,
+        "y": -37.419886
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.429102,
+        "x": 76.110783,
+        "y": -138.544103
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6784,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7845,
+      "flower_phase": 0.884428,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -10.922466,
+      "y": 47.234616,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.199978,
+    "interrupted": false,
+    "motion": {
+      "distance": 58.902373,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600634,
+      "pain": 0.3554,
+      "scent": 0.450398,
+      "sound": 0.610661,
+      "thermal": 0.554071,
+      "vibration": 0.53591,
+      "vision": 0.656039,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 108
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.168822,
+        "x": -63.585235,
+        "y": -37.450274
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.232706,
+        "x": 76.161978,
+        "y": -138.58599
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.335141,
+        "x": 157.850765,
+        "y": -6.322694
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6789,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7835,
+      "flower_phase": 0.936788,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -14.664328,
+      "y": 46.572445,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.233311,
+    "interrupted": false,
+    "motion": {
+      "distance": 55.102372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600185,
+      "pain": 0.3554,
+      "scent": 0.443069,
+      "sound": 0.629815,
+      "thermal": 0.554038,
+      "vibration": 0.532283,
+      "vision": 0.649009,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 109
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.030949,
+        "x": 76.168787,
+        "y": -138.591561
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.159232,
+        "x": 157.885796,
+        "y": -6.351356
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.204819,
+        "x": 6.162215,
+        "y": -74.120704
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6794,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7825,
+      "flower_phase": 0.989148,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -18.40619,
+      "y": 45.910274,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.266644,
+    "interrupted": false,
+    "motion": {
+      "distance": 51.302372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599487,
+      "pain": 0.3554,
+      "scent": 0.434898,
+      "sound": 0.614533,
+      "thermal": 0.55469,
+      "vibration": 0.528116,
+      "vision": 0.640726,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 110
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.328097,
+        "x": 157.957977,
+        "y": -6.410414
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.169584,
+        "x": 6.124906,
+        "y": -74.090179
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.411683,
+        "x": 74.348653,
+        "y": -33.999127
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6799,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7815,
+      "flower_phase": 1.041508,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -22.148052,
+      "y": 45.248103,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.299977,
+    "interrupted": false,
+    "motion": {
+      "distance": 47.502372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.598582,
+      "pain": 0.3554,
+      "scent": 0.426001,
+      "sound": 0.575037,
+      "thermal": 0.556023,
+      "vibration": 0.523617,
+      "vision": 0.631382,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 111
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.182619,
+        "x": 6.08473,
+        "y": -74.057308
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.214176,
+        "x": 74.395772,
+        "y": -34.037679
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.272197,
+        "x": 60.332223,
+        "y": 41.080916
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6804,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7805,
+      "flower_phase": 1.093868,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -25.889914,
+      "y": 44.585933,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.33331,
+    "interrupted": false,
+    "motion": {
+      "distance": 43.702372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597258,
+      "pain": 0.3554,
+      "scent": 0.42177,
+      "sound": 0.575981,
+      "thermal": 0.558027,
+      "vibration": 0.51898,
+      "vision": 0.624928,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 112
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.39406,
+        "x": 74.309079,
+        "y": -33.966748
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.302888,
+        "x": 60.398858,
+        "y": 41.026396
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.280353,
+        "x": -8.542086,
+        "y": 72.845266
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6809,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7795,
+      "flower_phase": 1.146228,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -29.631776,
+      "y": 43.923762,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.366643,
+    "interrupted": false,
+    "motion": {
+      "distance": 39.902372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.59492,
+      "pain": 0.3554,
+      "scent": 0.435554,
+      "sound": 0.584187,
+      "thermal": 0.560687,
+      "vibration": 0.514365,
+      "vision": 0.630988,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 113
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.192734,
+        "x": 60.441259,
+        "y": 40.991704
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.290104,
+        "x": -8.605909,
+        "y": 72.897485
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.364381,
+        "x": -74.137274,
+        "y": 38.273717
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6814,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7785,
+      "flower_phase": 1.198588,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -33.373638,
+      "y": 43.261592,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.399976,
+    "interrupted": false,
+    "motion": {
+      "distance": 36.102372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.592456,
+      "pain": 0.3554,
+      "scent": 0.449321,
+      "sound": 0.561413,
+      "thermal": 0.563981,
+      "vibration": 0.509889,
+      "vision": 0.636754,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 114
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.452981,
+        "x": -8.705565,
+        "y": 72.979022
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.416128,
+        "x": -74.228822,
+        "y": 38.34862
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.471042,
+        "x": -63.481606,
+        "y": -37.535062
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6819,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7775,
+      "flower_phase": 1.250948,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "central_hearth",
+      "wetness": 0.1,
+      "x": -37.1155,
+      "y": 42.599421,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.433309,
+    "interrupted": false,
+    "motion": {
+      "distance": 32.302372,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.592666,
+      "pain": 0.3554,
+      "scent": 0.463066,
+      "sound": 0.557121,
+      "thermal": 0.567886,
+      "vibration": 0.518116,
+      "vision": 0.648516,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 115
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.007653,
+        "x": -74.227138,
+        "y": 38.347242
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.376802,
+        "x": -63.564502,
+        "y": -37.467238
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.00664,
+        "x": 76.167326,
+        "y": -138.590366
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6824,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7765,
+      "flower_phase": 1.303308,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -40.857362,
+      "y": 41.93725,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.466642,
+    "interrupted": false,
+    "motion": {
+      "distance": 28.502371,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594387,
+      "pain": 0.3554,
+      "scent": 0.47678,
+      "sound": 0.610243,
+      "thermal": 0.572371,
+      "vibration": 0.533783,
+      "vision": 0.663654,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 116
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.375496,
+        "x": -63.647111,
+        "y": -37.399649
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.198817,
+        "x": 76.211066,
+        "y": -138.626153
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.44205,
+        "x": 157.860726,
+        "y": -6.330845
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6829,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7755,
+      "flower_phase": 1.355668,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -44.599224,
+      "y": 41.27508,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.499975,
+    "interrupted": false,
+    "motion": {
+      "distance": 24.702371,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596162,
+      "pain": 0.3554,
+      "scent": 0.490454,
+      "sound": 0.596848,
+      "thermal": 0.577401,
+      "vibration": 0.550293,
+      "vision": 0.678881,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 117
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.443144,
+        "x": 76.308558,
+        "y": -138.705919
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.314649,
+        "x": 157.791503,
+        "y": -6.274208
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.059188,
+        "x": 6.097751,
+        "y": -74.067962
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6834,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7745,
+      "flower_phase": 1.408028,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -48.341086,
+      "y": 40.612909,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.533308,
+    "interrupted": false,
+    "motion": {
+      "distance": 20.902371,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597938,
+      "pain": 0.3554,
+      "scent": 0.504068,
+      "sound": 0.583793,
+      "thermal": 0.58294,
+      "vibration": 0.567354,
+      "vision": 0.694059,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 118
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.405742,
+        "x": 157.880766,
+        "y": -6.347242
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.152229,
+        "x": 6.064261,
+        "y": -74.040561
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.040139,
+        "x": 74.300248,
+        "y": -33.959523
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6939,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7705,
+      "flower_phase": 1.460388,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -52.082948,
+      "y": 39.950739,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.566641,
+    "interrupted": true,
+    "motion": {
+      "distance": 17.102371,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599715,
+      "pain": 0.355666,
+      "scent": 0.517595,
+      "sound": 0.658784,
+      "thermal": 0.588944,
+      "vibration": 0.58492,
+      "vision": 0.709168,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 119
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.470874,
+        "x": 5.960669,
+        "y": -73.955804
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.239937,
+        "x": 74.353034,
+        "y": -34.002712
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.119305,
+        "x": 60.415012,
+        "y": 41.013179
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6944,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7695,
+      "flower_phase": 1.512748,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -55.82481,
+      "y": 39.288568,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.599974,
+    "interrupted": false,
+    "motion": {
+      "distance": 13.302371,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.601494,
+      "pain": 0.357897,
+      "scent": 0.530982,
+      "sound": 0.66958,
+      "thermal": 0.595368,
+      "vibration": 0.602932,
+      "vision": 0.724167,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 120
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.45241,
+        "x": 74.452564,
+        "y": -34.084146
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.36161,
+        "x": 60.494566,
+        "y": 40.948089
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.073129,
+        "x": -8.689477,
+        "y": 72.965859
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6949,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7685,
+      "flower_phase": 1.565108,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -59.566672,
+      "y": 38.626398,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.633307,
+    "interrupted": false,
+    "motion": {
+      "distance": 9.502371,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.603276,
+      "pain": 0.360088,
+      "scent": 0.544128,
+      "sound": 0.624554,
+      "thermal": 0.602162,
+      "vibration": 0.62132,
+      "vision": 0.738977,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 121
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.326288,
+        "x": 60.566349,
+        "y": 40.889357
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.369355,
+        "x": -8.770735,
+        "y": 73.032343
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.130589,
+        "x": -74.198409,
+        "y": 38.323736
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6954,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7675,
+      "flower_phase": 1.617468,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -63.308534,
+      "y": 37.964227,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.66664,
+    "interrupted": false,
+    "motion": {
+      "distance": 5.70237,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605064,
+      "pain": 0.362202,
+      "scent": 0.556814,
+      "sound": 0.658927,
+      "thermal": 0.609276,
+      "vibration": 0.639988,
+      "vision": 0.753421,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 122
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.247133,
+        "x": -8.825104,
+        "y": 73.076827
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.151524,
+        "x": -74.231744,
+        "y": 38.35101
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.003038,
+        "x": -63.647779,
+        "y": -37.399102
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6959,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7665,
+      "flower_phase": 1.669828,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.699973,
+    "interrupted": false,
+    "motion": {
+      "distance": 1.90237,
+      "moving": true,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605982,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.677133,
+      "thermal": 0.616654,
+      "vibration": 0.653607,
+      "vision": 0.760438,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 123
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.31705,
+        "x": -74.301495,
+        "y": 38.408079
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.137612,
+        "x": -63.617504,
+        "y": -37.423872
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.028281,
+        "x": 76.302336,
+        "y": -138.700828
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6964,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7664,
+      "flower_phase": 1.722188,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.733306,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605959,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.652872,
+      "thermal": 0.62424,
+      "vibration": 0.661934,
+      "vision": 0.760387,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 124
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.344665,
+        "x": -63.69333,
+        "y": -37.361832
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.389659,
+        "x": 76.216611,
+        "y": -138.630689
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.101779,
+        "x": 157.903157,
+        "y": -6.365562
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6969,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7663,
+      "flower_phase": 1.774548,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.766639,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.65281,
+      "thermal": 0.631976,
+      "vibration": 0.670317,
+      "vision": 0.76028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 125
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.055265,
+        "x": 76.228769,
+        "y": -138.640637
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.422972,
+        "x": 157.996211,
+        "y": -6.441697
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.284273,
+        "x": 6.023209,
+        "y": -74.006973
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6974,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7662,
+      "flower_phase": 1.826908,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.799972,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.679375,
+      "thermal": 0.639805,
+      "vibration": 0.679014,
+      "vision": 0.76028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 126
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.418613,
+        "x": 157.904116,
+        "y": -6.366347
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.242989,
+        "x": 5.969751,
+        "y": -73.963235
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.016004,
+        "x": 74.456085,
+        "y": -34.087027
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6979,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7661,
+      "flower_phase": 1.879268,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.833305,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.665651,
+      "thermal": 0.647664,
+      "vibration": 0.687748,
+      "vision": 0.76028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 127
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.434836,
+        "x": 6.065415,
+        "y": -74.041505
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.392739,
+        "x": 74.542488,
+        "y": -34.15772
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.018619,
+        "x": 60.570445,
+        "y": 40.886006
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6984,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.766,
+      "flower_phase": 1.931628,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.866638,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.663335,
+      "thermal": 0.655496,
+      "vibration": 0.69645,
+      "vision": 0.76028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 128
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.450587,
+        "x": 74.443359,
+        "y": -34.076614
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.369533,
+        "x": 60.489148,
+        "y": 40.952522
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.210271,
+        "x": -8.778844,
+        "y": 73.038978
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6989,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7659,
+      "flower_phase": 1.983988,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.899971,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.699007,
+      "thermal": 0.66324,
+      "vibration": 0.705054,
+      "vision": 0.76028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 129
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.293493,
+        "x": 60.553716,
+        "y": 40.899693
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.249908,
+        "x": -8.723864,
+        "y": 72.993995
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.019548,
+        "x": -74.305795,
+        "y": 38.411598
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6994,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7658,
+      "flower_phase": 2.036348,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.933304,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605912,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.65629,
+      "thermal": 0.670837,
+      "vibration": 0.713495,
+      "vision": 0.76028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 130
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.132868,
+        "x": -8.753095,
+        "y": 73.017911
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.109117,
+        "x": -74.329801,
+        "y": 38.431239
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.273997,
+        "x": -63.633051,
+        "y": -37.411151
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.6999,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7657,
+      "flower_phase": 2.088708,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.966637,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605909,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.66551,
+      "thermal": 0.678228,
+      "vibration": 0.721695,
+      "vision": 0.760274,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 131
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.166082,
+        "x": -74.366339,
+        "y": 38.461134
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.146969,
+        "x": -63.600718,
+        "y": -37.437606
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.382727,
+        "x": 76.312969,
+        "y": -138.709528
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7004,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7656,
+      "flower_phase": 2.141068,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 2.99997,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605892,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.700459,
+      "thermal": 0.685359,
+      "vibration": 0.729544,
+      "vision": 0.760237,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 132
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.255443,
+        "x": -63.544521,
+        "y": -37.483586
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.200391,
+        "x": 76.268883,
+        "y": -138.673458
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.250591,
+        "x": 157.848986,
+        "y": -6.321241
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7009,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7655,
+      "flower_phase": 2.193428,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.033303,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.686176,
+      "thermal": 0.692174,
+      "vibration": 0.737003,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 133
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.345505,
+        "x": 76.344894,
+        "y": -138.735649
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.363627,
+        "x": 157.928984,
+        "y": -6.386694
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.055003,
+        "x": 6.053314,
+        "y": -74.031605
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7014,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7654,
+      "flower_phase": 2.245788,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.066636,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.702755,
+      "thermal": 0.698621,
+      "vibration": 0.744167,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 3,
+    "tick": 134
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.002055,
+        "x": 157.928532,
+        "y": -6.386324
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.355545,
+        "x": 6.131534,
+        "y": -74.095603
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.302963,
+        "x": 74.510011,
+        "y": -34.131147
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7019,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7653,
+      "flower_phase": 2.298148,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.099969,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.701105,
+      "thermal": 0.704651,
+      "vibration": 0.750867,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 135
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.126231,
+        "x": 6.103763,
+        "y": -74.072881
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.466824,
+        "x": 74.40731,
+        "y": -34.047119
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.133464,
+        "x": 60.583078,
+        "y": 40.87567
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7024,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7652,
+      "flower_phase": 2.350508,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.133302,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.698396,
+      "thermal": 0.710219,
+      "vibration": 0.757053,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 136
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.067331,
+        "x": 74.392497,
+        "y": -34.034999
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.258524,
+        "x": 60.639953,
+        "y": 40.829136
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.045686,
+        "x": -8.763146,
+        "y": 73.026134
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7029,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7651,
+      "flower_phase": 2.402868,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.166635,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.695422,
+      "thermal": 0.715281,
+      "vibration": 0.762678,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 137
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.468723,
+        "x": 60.743072,
+        "y": 40.744766
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.323456,
+        "x": -8.834306,
+        "y": 73.084356
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.171637,
+        "x": -74.328579,
+        "y": 38.430239
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7034,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.765,
+      "flower_phase": 2.455228,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.199968,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.647747,
+      "thermal": 0.7198,
+      "vibration": 0.767698,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 138
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.308838,
+        "x": -8.766362,
+        "y": 73.028765
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.126133,
+        "x": -74.356328,
+        "y": 38.452943
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.419413,
+        "x": -63.45225,
+        "y": -37.55908
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7039,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7649,
+      "flower_phase": 2.507588,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.233301,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605893,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.700729,
+      "thermal": 0.72374,
+      "vibration": 0.772192,
+      "vision": 0.760239,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 139
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.497733,
+        "x": -74.465829,
+        "y": 38.542535
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.337502,
+        "x": -63.5265,
+        "y": -37.49833
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.398968,
+        "x": 76.432667,
+        "y": -138.807463
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7044,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7648,
+      "flower_phase": 2.559948,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.266634,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605874,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.6671,
+      "thermal": 0.727071,
+      "vibration": 0.775809,
+      "vision": 0.760196,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 140
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.115361,
+        "x": -63.501121,
+        "y": -37.519095
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.435422,
+        "x": 76.336874,
+        "y": -138.729087
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.108307,
+        "x": 157.904704,
+        "y": -6.366829
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7049,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7647,
+      "flower_phase": 2.612308,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 0,
+    "elapsed_seconds": 3.299967,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605799,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.712965,
+      "thermal": 0.729769,
+      "vibration": 0.778468,
+      "vision": 0.760027,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 141
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.399597,
+        "x": 76.248963,
+        "y": -138.657159
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.165918,
+        "x": 157.941206,
+        "y": -6.396694
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.021858,
+        "x": 6.108572,
+        "y": -74.076815
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7054,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7646,
+      "flower_phase": 2.664668,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.3333,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605799,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.662285,
+      "thermal": 0.731812,
+      "vibration": 0.780739,
+      "vision": 0.760027,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 142
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.131309,
+        "x": 157.912318,
+        "y": -6.373058
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.42391,
+        "x": 6.015312,
+        "y": -74.000511
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.17238,
+        "x": 74.354573,
+        "y": -34.003971
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7059,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7645,
+      "flower_phase": 2.717028,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.366633,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605799,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.664467,
+      "thermal": 0.733186,
+      "vibration": 0.782265,
+      "vision": 0.760027,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 143
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.46763,
+        "x": 5.912433,
+        "y": -73.916338
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.055969,
+        "x": 74.366886,
+        "y": -34.014045
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.069958,
+        "x": 60.758463,
+        "y": 40.732174
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7064,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7644,
+      "flower_phase": 2.769388,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.399966,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605799,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.671337,
+      "thermal": 0.733879,
+      "vibration": 0.783034,
+      "vision": 0.760027,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 144
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.268766,
+        "x": 74.307758,
+        "y": -33.965667
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.010752,
+        "x": 60.756098,
+        "y": 40.734109
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.233926,
+        "x": -8.817826,
+        "y": 73.070872
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7069,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7643,
+      "flower_phase": 2.821748,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.433299,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605799,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.652444,
+      "thermal": 0.733886,
+      "vibration": 0.783042,
+      "vision": 0.760027,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 145
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.48804,
+        "x": 60.648729,
+        "y": 40.821956
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.152684,
+        "x": -8.851416,
+        "y": 73.098355
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.046722,
+        "x": -74.476108,
+        "y": 38.550945
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7074,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7642,
+      "flower_phase": 2.874108,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.466632,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605799,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.664973,
+      "thermal": 0.733207,
+      "vibration": 0.782288,
+      "vision": 0.760027,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 146
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.127711,
+        "x": -8.879512,
+        "y": 73.121343
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.353098,
+        "x": -74.55379,
+        "y": 38.614503
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.416277,
+        "x": -63.40954,
+        "y": -37.594025
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7079,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7641,
+      "flower_phase": 2.926468,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.499965,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605792,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.650874,
+      "thermal": 0.731848,
+      "vibration": 0.780746,
+      "vision": 0.760011,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 147
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.32342,
+        "x": -74.624942,
+        "y": 38.672719
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.426545,
+        "x": -63.50338,
+        "y": -37.517247
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.456537,
+        "x": 76.349401,
+        "y": -138.739336
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7084,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.764,
+      "flower_phase": 2.978828,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.533298,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605738,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.700329,
+      "thermal": 0.729818,
+      "vibration": 0.77825,
+      "vision": 0.75989,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 148
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.0709,
+        "x": -63.487782,
+        "y": -37.530009
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.422277,
+        "x": 76.2565,
+        "y": -138.663326
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.396104,
+        "x": 157.999461,
+        "y": -6.444357
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7089,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7639,
+      "flower_phase": 3.031188,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.566631,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "drum_court"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605689,
+      "pain": 0.363207,
+      "scent": 0.563801,
+      "sound": 0.665279,
+      "thermal": 0.727134,
+      "vibration": 0.775046,
+      "vision": 0.75978,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 149
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.15587,
+        "x": 76.290791,
+        "y": -138.691383
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.48317,
+        "x": 158.105758,
+        "y": -6.531328
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.247597,
+        "x": 5.966904,
+        "y": -73.960905
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7094,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7629,
+      "flower_phase": 3.083548,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -64.726554,
+      "y": 33.860097,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.599964,
+    "interrupted": false,
+    "motion": {
+      "distance": 70.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.604442,
+      "pain": 0.364198,
+      "scent": 0.569746,
+      "sound": 0.704401,
+      "thermal": 0.723816,
+      "vibration": 0.767021,
+      "vision": 0.761857,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 150
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.420791,
+        "x": 158.013184,
+        "y": -6.455586
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.236298,
+        "x": 6.01889,
+        "y": -74.003439
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.284887,
+        "x": 74.245083,
+        "y": -33.914387
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7099,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7619,
+      "flower_phase": 3.135908,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -64.271309,
+      "y": 30.087465,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.633297,
+    "interrupted": false,
+    "motion": {
+      "distance": 67.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.602862,
+      "pain": 0.364255,
+      "scent": 0.570088,
+      "sound": 0.679956,
+      "thermal": 0.719888,
+      "vibration": 0.755619,
+      "vision": 0.758583,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 151
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.358843,
+        "x": 5.939945,
+        "y": -73.938847
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.194918,
+        "x": 74.287965,
+        "y": -33.949472
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.256549,
+        "x": 60.592288,
+        "y": 40.868135
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7104,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7609,
+      "flower_phase": 3.188268,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -63.816064,
+      "y": 26.314833,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.66663,
+    "interrupted": false,
+    "motion": {
+      "distance": 63.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.601221,
+      "pain": 0.363352,
+      "scent": 0.564668,
+      "sound": 0.63515,
+      "thermal": 0.715381,
+      "vibration": 0.742065,
+      "vision": 0.750438,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 152
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.158103,
+        "x": 74.322748,
+        "y": -33.977931
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.056753,
+        "x": 60.579802,
+        "y": 40.878351
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.166558,
+        "x": -8.842869,
+        "y": 73.091363
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7109,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7599,
+      "flower_phase": 3.240628,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -63.36082,
+      "y": 22.542201,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.699963,
+    "interrupted": false,
+    "motion": {
+      "distance": 59.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599573,
+      "pain": 0.361824,
+      "scent": 0.555503,
+      "sound": 0.606639,
+      "thermal": 0.71033,
+      "vibration": 0.727074,
+      "vision": 0.739202,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 153
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.005638,
+        "x": 60.578562,
+        "y": 40.879366
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.413298,
+        "x": -8.933795,
+        "y": 73.165757
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.055736,
+        "x": -74.61268,
+        "y": 38.662686
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7114,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7589,
+      "flower_phase": 3.292988,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -62.905575,
+      "y": 18.769569,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.733296,
+    "interrupted": false,
+    "motion": {
+      "distance": 55.673755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597912,
+      "pain": 0.359971,
+      "scent": 0.544385,
+      "sound": 0.635442,
+      "thermal": 0.704773,
+      "vibration": 0.711041,
+      "vision": 0.726331,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 154
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.193832,
+        "x": -8.891152,
+        "y": 73.130867
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.396508,
+        "x": -74.525448,
+        "y": 38.591315
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.439581,
+        "x": -63.391074,
+        "y": -37.609134
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7119,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7579,
+      "flower_phase": 3.345348,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -62.450331,
+      "y": 14.996937,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.766629,
+    "interrupted": false,
+    "motion": {
+      "distance": 51.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596242,
+      "pain": 0.35795,
+      "scent": 0.532254,
+      "sound": 0.60233,
+      "thermal": 0.698752,
+      "vibration": 0.694239,
+      "vision": 0.712611,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 155
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.117589,
+        "x": -74.499578,
+        "y": 38.570149
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.340708,
+        "x": -63.46603,
+        "y": -37.547806
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.225333,
+        "x": 76.241218,
+        "y": -138.650823
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7124,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7569,
+      "flower_phase": 3.397708,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -61.995086,
+      "y": 11.224305,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.799962,
+    "interrupted": false,
+    "motion": {
+      "distance": 48.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594612,
+      "pain": 0.355834,
+      "scent": 0.519564,
+      "sound": 0.572547,
+      "thermal": 0.692313,
+      "vibration": 0.677031,
+      "vision": 0.698519,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 156
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.108736,
+        "x": -63.442108,
+        "y": -37.567379
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.311058,
+        "x": 76.309651,
+        "y": -138.706813
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.400768,
+        "x": 158.101353,
+        "y": -6.527724
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7129,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7559,
+      "flower_phase": 3.450068,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -61.539842,
+      "y": 7.451673,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.833295,
+    "interrupted": false,
+    "motion": {
+      "distance": 44.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.592922,
+      "pain": 0.3554,
+      "scent": 0.506538,
+      "sound": 0.586036,
+      "thermal": 0.685505,
+      "vibration": 0.65907,
+      "vision": 0.684017,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 157
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.043912,
+        "x": 76.319312,
+        "y": -138.714717
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.180906,
+        "x": 158.061554,
+        "y": -6.495161
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.465573,
+        "x": 6.042371,
+        "y": -74.02265
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7134,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7549,
+      "flower_phase": 3.502428,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -61.084597,
+      "y": 3.679041,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.866628,
+    "interrupted": false,
+    "motion": {
+      "distance": 40.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591203,
+      "pain": 0.3554,
+      "scent": 0.493299,
+      "sound": 0.558768,
+      "thermal": 0.67838,
+      "vibration": 0.640578,
+      "vision": 0.669273,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 158
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.047802,
+        "x": 158.051037,
+        "y": -6.486557
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.103921,
+        "x": 6.019508,
+        "y": -74.003944
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.260926,
+        "x": 74.380152,
+        "y": -34.024898
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7139,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7539,
+      "flower_phase": 3.554788,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -60.629353,
+      "y": -0.093591,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.899961,
+    "interrupted": false,
+    "motion": {
+      "distance": 36.673755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591713,
+      "pain": 0.3554,
+      "scent": 0.479917,
+      "sound": 0.587217,
+      "thermal": 0.670994,
+      "vibration": 0.6318,
+      "vision": 0.659429,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 159
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.135495,
+        "x": 5.989699,
+        "y": -73.979555
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.190877,
+        "x": 74.338159,
+        "y": -33.99054
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.403403,
+        "x": 60.489813,
+        "y": 40.951979
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7144,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7529,
+      "flower_phase": 3.607148,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -60.174108,
+      "y": -3.866223,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.933294,
+    "interrupted": false,
+    "motion": {
+      "distance": 32.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594736,
+      "pain": 0.3554,
+      "scent": 0.466435,
+      "sound": 0.595368,
+      "thermal": 0.6634,
+      "vibration": 0.634077,
+      "vision": 0.655155,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 160
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.428072,
+        "x": 74.432335,
+        "y": -34.067593
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.113752,
+        "x": 60.514838,
+        "y": 40.931504
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.221913,
+        "x": -8.939973,
+        "y": 73.170811
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7149,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7519,
+      "flower_phase": 3.659508,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -59.718864,
+      "y": -7.638855,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.966627,
+    "interrupted": false,
+    "motion": {
+      "distance": 29.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597749,
+      "pain": 0.3554,
+      "scent": 0.452879,
+      "sound": 0.582722,
+      "thermal": 0.655659,
+      "vibration": 0.636132,
+      "vision": 0.650801,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 161
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.237279,
+        "x": 60.567039,
+        "y": 40.888794
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.121233,
+        "x": -8.966644,
+        "y": 73.192633
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.481838,
+        "x": -74.605582,
+        "y": 38.65688
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7154,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7509,
+      "flower_phase": 3.711868,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -59.263619,
+      "y": -11.411487,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.99996,
+    "interrupted": false,
+    "motion": {
+      "distance": 25.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.600747,
+      "pain": 0.3554,
+      "scent": 0.439268,
+      "sound": 0.600914,
+      "thermal": 0.647829,
+      "vibration": 0.638006,
+      "vision": 0.646366,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 162
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.156158,
+        "x": -9.000999,
+        "y": 73.220741
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.058773,
+        "x": -74.618512,
+        "y": 38.667459
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.266381,
+        "x": -63.383504,
+        "y": -37.615328
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7159,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7499,
+      "flower_phase": 3.764228,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -58.808375,
+      "y": -15.184119,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.033293,
+    "interrupted": false,
+    "motion": {
+      "distance": 21.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.603721,
+      "pain": 0.3554,
+      "scent": 0.425616,
+      "sound": 0.60155,
+      "thermal": 0.639969,
+      "vibration": 0.639726,
+      "vision": 0.641841,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 163
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.140453,
+        "x": -74.649412,
+        "y": 38.692741
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.170952,
+        "x": -63.345895,
+        "y": -37.646099
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.335377,
+        "x": 76.393095,
+        "y": -138.775085
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7164,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7489,
+      "flower_phase": 3.816588,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -58.35313,
+      "y": -18.956751,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.066626,
+    "interrupted": false,
+    "motion": {
+      "distance": 17.673755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606633,
+      "pain": 0.3554,
+      "scent": 0.41193,
+      "sound": 0.644579,
+      "thermal": 0.632139,
+      "vibration": 0.641202,
+      "vision": 0.637153,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 164
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.295611,
+        "x": -63.410929,
+        "y": -37.592889
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.292337,
+        "x": 76.457409,
+        "y": -138.827706
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.4117,
+        "x": 158.141611,
+        "y": -6.560663
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7169,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7479,
+      "flower_phase": 3.868948,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -57.897886,
+      "y": -22.729383,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.099959,
+    "interrupted": false,
+    "motion": {
+      "distance": 13.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.609491,
+      "pain": 0.3554,
+      "scent": 0.398219,
+      "sound": 0.668989,
+      "thermal": 0.6244,
+      "vibration": 0.642522,
+      "vision": 0.632319,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 165
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.40067,
+        "x": 76.545556,
+        "y": -138.899827
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.032982,
+        "x": 158.134355,
+        "y": -6.554726
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.328108,
+        "x": 6.061883,
+        "y": -74.038614
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7274,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7439,
+      "flower_phase": 3.921308,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -57.442641,
+      "y": -26.502015,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.133292,
+    "interrupted": true,
+    "motion": {
+      "distance": 10.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.612248,
+      "pain": 0.3554,
+      "scent": 0.384486,
+      "sound": 0.633946,
+      "thermal": 0.61681,
+      "vibration": 0.643552,
+      "vision": 0.627241,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 166
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.232113,
+        "x": 158.18542,
+        "y": -6.596506
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.127513,
+        "x": 6.089936,
+        "y": -74.061566
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.170075,
+        "x": 74.394918,
+        "y": -34.036979
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7279,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7429,
+      "flower_phase": 3.973668,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.987397,
+      "y": -30.274647,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.166625,
+    "interrupted": false,
+    "motion": {
+      "distance": 6.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614227,
+      "pain": 0.3554,
+      "scent": 0.381323,
+      "sound": 0.657987,
+      "thermal": 0.609427,
+      "vibration": 0.643578,
+      "vision": 0.629097,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 167
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.437244,
+        "x": 6.18613,
+        "y": -74.14027
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.185881,
+        "x": 74.435812,
+        "y": -34.070438
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.087386,
+        "x": 60.547814,
+        "y": 40.904523
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7284,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7419,
+      "flower_phase": 4.026028,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.199958,
+    "interrupted": false,
+    "motion": {
+      "distance": 2.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614814,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.665102,
+      "thermal": 0.602308,
+      "vibration": 0.639823,
+      "vision": 0.636218,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 168
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.158124,
+        "x": 74.401025,
+        "y": -34.041976
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.177442,
+        "x": 60.586851,
+        "y": 40.872583
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.296369,
+        "x": -8.935798,
+        "y": 73.167395
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7289,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7418,
+      "flower_phase": 4.078388,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.233291,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614814,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.668655,
+      "thermal": 0.595506,
+      "vibration": 0.632266,
+      "vision": 0.636218,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 169
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.327524,
+        "x": 60.514796,
+        "y": 40.931537
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.056374,
+        "x": -8.923396,
+        "y": 73.157248
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.112581,
+        "x": -74.624644,
+        "y": 38.672476
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7294,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7417,
+      "flower_phase": 4.130748,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.266624,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614814,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.710118,
+      "thermal": 0.589074,
+      "vibration": 0.625119,
+      "vision": 0.636218,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 170
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.454049,
+        "x": -9.023287,
+        "y": 73.238977
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.112834,
+        "x": -74.599821,
+        "y": 38.652166
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.325935,
+        "x": -63.339223,
+        "y": -37.651557
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7299,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7416,
+      "flower_phase": 4.183108,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.299957,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614814,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.665311,
+      "thermal": 0.583061,
+      "vibration": 0.618437,
+      "vision": 0.636218,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 171
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.337608,
+        "x": -74.525547,
+        "y": 38.591396
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.29463,
+        "x": -63.404042,
+        "y": -37.598524
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.470564,
+        "x": 76.442032,
+        "y": -138.815126
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7304,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7415,
+      "flower_phase": 4.235468,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.33329,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614829,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.707835,
+      "thermal": 0.577512,
+      "vibration": 0.612339,
+      "vision": 0.636252,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 172
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.469998,
+        "x": -63.300642,
+        "y": -37.683124
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.267011,
+        "x": 76.500774,
+        "y": -138.863188
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.454682,
+        "x": 158.08539,
+        "y": -6.514663
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7309,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7414,
+      "flower_phase": 4.287828,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.366623,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614815,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.704515,
+      "thermal": 0.57247,
+      "vibration": 0.606676,
+      "vision": 0.636222,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 173
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.279856,
+        "x": 76.562342,
+        "y": -138.913562
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.388426,
+        "x": 157.999936,
+        "y": -6.444746
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.080795,
+        "x": 6.203905,
+        "y": -74.154813
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7314,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7413,
+      "flower_phase": 4.340188,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.399956,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614837,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.71491,
+      "thermal": 0.567974,
+      "vibration": 0.601775,
+      "vision": 0.636269,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 174
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.305098,
+        "x": 158.067057,
+        "y": -6.499664
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.038553,
+        "x": 6.195423,
+        "y": -74.147873
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.031681,
+        "x": 74.407995,
+        "y": -34.047679
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7319,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7412,
+      "flower_phase": 4.392548,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.433289,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614837,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.661397,
+      "thermal": 0.564057,
+      "vibration": 0.597423,
+      "vision": 0.636269,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 175
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.215008,
+        "x": 6.148121,
+        "y": -74.109172
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.018697,
+        "x": 74.403882,
+        "y": -34.044314
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.256288,
+        "x": 60.571179,
+        "y": 40.885405
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7324,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7411,
+      "flower_phase": 4.444908,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.466622,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 1,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614837,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.690884,
+      "thermal": 0.560749,
+      "vibration": 0.593748,
+      "vision": 0.636269,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 176
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.287845,
+        "x": 74.467208,
+        "y": -34.096126
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.247727,
+        "x": 60.625679,
+        "y": 40.840814
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.135981,
+        "x": -9.053203,
+        "y": 73.263454
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7019,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7653,
+      "flower_phase": 2.298148,
+      "footstep_rate_hz": 1.6,
+      "heading": -2.966443,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -65.181799,
+      "y": 37.632729,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.099969,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605867,
+      "pain": 0.363207,
+      "scent": 0.562844,
+      "sound": 0.701105,
+      "thermal": 0.704651,
+      "vibration": 0.750867,
+      "vision": 0.76018,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 177
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.457371,
+        "x": 60.525057,
+        "y": 40.923141
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.285582,
+        "x": -8.990375,
+        "y": 73.212049
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.387457,
+        "x": -74.610787,
+        "y": 38.661138
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7024,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7643,
+      "flower_phase": 2.350508,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -64.726554,
+      "y": 33.860097,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.133302,
+    "interrupted": false,
+    "motion": {
+      "distance": 70.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.604522,
+      "pain": 0.364198,
+      "scent": 0.569746,
+      "sound": 0.66672,
+      "thermal": 0.711242,
+      "vibration": 0.75341,
+      "vision": 0.762037,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 178
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.229238,
+        "x": -8.939943,
+        "y": 73.170786
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.402939,
+        "x": -74.699434,
+        "y": 38.733667
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.41628,
+        "x": -63.20906,
+        "y": -37.758054
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7029,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7633,
+      "flower_phase": 2.402868,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -64.271309,
+      "y": 30.087465,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.166635,
+    "interrupted": false,
+    "motion": {
+      "distance": 67.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.602874,
+      "pain": 0.364255,
+      "scent": 0.570088,
+      "sound": 0.662027,
+      "thermal": 0.705769,
+      "vibration": 0.739984,
+      "vision": 0.758609,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 4,
+    "tick": 179
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.315953,
+        "x": -74.768944,
+        "y": 38.790538
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.442793,
+        "x": -63.306474,
+        "y": -37.678351
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.001394,
+        "x": 76.562649,
+        "y": -138.913813
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7034,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7623,
+      "flower_phase": 2.455228,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -63.816064,
+      "y": 26.314833,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.199968,
+    "interrupted": false,
+    "motion": {
+      "distance": 63.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.60116,
+      "pain": 0.363352,
+      "scent": 0.564668,
+      "sound": 0.649291,
+      "thermal": 0.699825,
+      "vibration": 0.724506,
+      "vision": 0.750301,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 180
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.308303,
+        "x": -63.238647,
+        "y": -37.733846
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.385807,
+        "x": 76.647527,
+        "y": -138.983258
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.22285,
+        "x": 158.116084,
+        "y": -6.539777
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7039,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7613,
+      "flower_phase": 2.507588,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -63.36082,
+      "y": 22.542201,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.233301,
+    "interrupted": false,
+    "motion": {
+      "distance": 59.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599458,
+      "pain": 0.361824,
+      "scent": 0.555503,
+      "sound": 0.647567,
+      "thermal": 0.693455,
+      "vibration": 0.707808,
+      "vision": 0.738944,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 181
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.386386,
+        "x": 76.732532,
+        "y": -139.052808
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.44779,
+        "x": 158.01757,
+        "y": -6.459175
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.144775,
+        "x": 6.179972,
+        "y": -74.135232
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7044,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7603,
+      "flower_phase": 2.559948,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -62.905575,
+      "y": 18.769569,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.266634,
+    "interrupted": false,
+    "motion": {
+      "distance": 55.673755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.5978,
+      "pain": 0.359971,
+      "scent": 0.544385,
+      "sound": 0.65077,
+      "thermal": 0.686707,
+      "vibration": 0.690465,
+      "vision": 0.72608,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 182
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.298518,
+        "x": 158.083244,
+        "y": -6.512908
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.152017,
+        "x": 6.146528,
+        "y": -74.107869
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.453362,
+        "x": 74.367468,
+        "y": -34.014521
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7049,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7593,
+      "flower_phase": 2.612308,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -62.450331,
+      "y": 14.996937,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.299967,
+    "interrupted": false,
+    "motion": {
+      "distance": 51.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596124,
+      "pain": 0.35795,
+      "scent": 0.532254,
+      "sound": 0.616477,
+      "thermal": 0.679634,
+      "vibration": 0.672464,
+      "vision": 0.712344,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 183
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.389783,
+        "x": 6.060776,
+        "y": -74.037708
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.395473,
+        "x": 74.280464,
+        "y": -33.943336
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.170805,
+        "x": 60.562634,
+        "y": 40.892396
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7054,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7583,
+      "flower_phase": 2.664668,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -61.995086,
+      "y": 11.224305,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.3333,
+    "interrupted": false,
+    "motion": {
+      "distance": 48.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594431,
+      "pain": 0.355834,
+      "scent": 0.519564,
+      "sound": 0.604456,
+      "thermal": 0.672288,
+      "vibration": 0.653967,
+      "vision": 0.698112,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 184
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.166397,
+        "x": 74.243857,
+        "y": -33.913385
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.30106,
+        "x": 60.628867,
+        "y": 40.838205
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.190249,
+        "x": -8.981798,
+        "y": 73.205031
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7059,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7573,
+      "flower_phase": 2.717028,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -61.539842,
+      "y": 7.451673,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.366633,
+    "interrupted": false,
+    "motion": {
+      "distance": 44.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.592725,
+      "pain": 0.3554,
+      "scent": 0.506538,
+      "sound": 0.615511,
+      "thermal": 0.664727,
+      "vibration": 0.635097,
+      "vision": 0.683574,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 185
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.143943,
+        "x": 60.597199,
+        "y": 40.864115
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.015167,
+        "x": -8.978461,
+        "y": 73.202301
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.360402,
+        "x": -74.689656,
+        "y": 38.725666
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7064,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7563,
+      "flower_phase": 2.769388,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -61.084597,
+      "y": 3.679041,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.399966,
+    "interrupted": false,
+    "motion": {
+      "distance": 40.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591009,
+      "pain": 0.3554,
+      "scent": 0.493299,
+      "sound": 0.54107,
+      "thermal": 0.657007,
+      "vibration": 0.615958,
+      "vision": 0.668837,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 186
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.062371,
+        "x": -8.964739,
+        "y": 73.191074
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.089235,
+        "x": -74.670024,
+        "y": 38.709604
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.38198,
+        "x": -63.154611,
+        "y": -37.802602
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7069,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7553,
+      "flower_phase": 2.821748,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -60.629353,
+      "y": -0.093591,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.433299,
+    "interrupted": false,
+    "motion": {
+      "distance": 36.673755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591616,
+      "pain": 0.3554,
+      "scent": 0.479917,
+      "sound": 0.569646,
+      "thermal": 0.649188,
+      "vibration": 0.607136,
+      "vision": 0.659211,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 187
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.386315,
+        "x": -74.755013,
+        "y": 38.779141
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.150392,
+        "x": -63.121525,
+        "y": -37.829673
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.125789,
+        "x": 76.704858,
+        "y": -139.030166
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7074,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7543,
+      "flower_phase": 2.874108,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -60.174108,
+      "y": -3.866223,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.466632,
+    "interrupted": false,
+    "motion": {
+      "distance": 32.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.594603,
+      "pain": 0.3554,
+      "scent": 0.466435,
+      "sound": 0.602038,
+      "thermal": 0.641329,
+      "vibration": 0.608954,
+      "vision": 0.654856,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 188
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.077836,
+        "x": -63.138649,
+        "y": -37.815662
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.290979,
+        "x": 76.640843,
+        "y": -138.97779
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.267358,
+        "x": 158.142063,
+        "y": -6.561032
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7079,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7533,
+      "flower_phase": 2.926468,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -59.718864,
+      "y": -7.638855,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.499965,
+    "interrupted": false,
+    "motion": {
+      "distance": 29.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.597607,
+      "pain": 0.3554,
+      "scent": 0.452879,
+      "sound": 0.575223,
+      "thermal": 0.63349,
+      "vibration": 0.610857,
+      "vision": 0.65048,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 189
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.166209,
+        "x": 76.677409,
+        "y": -139.007708
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.2127,
+        "x": 158.095269,
+        "y": -6.522746
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.085825,
+        "x": 6.041895,
+        "y": -74.02226
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7084,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7523,
+      "flower_phase": 2.978828,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -59.263619,
+      "y": -11.411487,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.533298,
+    "interrupted": false,
+    "motion": {
+      "distance": 25.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.60062,
+      "pain": 0.3554,
+      "scent": 0.439268,
+      "sound": 0.627015,
+      "thermal": 0.625731,
+      "vibration": 0.612878,
+      "vision": 0.646079,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 190
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.334197,
+        "x": 158.021746,
+        "y": -6.462591
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.049414,
+        "x": 6.031024,
+        "y": -74.013366
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.110085,
+        "x": 74.268076,
+        "y": -33.9332
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7089,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7513,
+      "flower_phase": 3.031188,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -58.808375,
+      "y": -15.184119,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.566631,
+    "interrupted": false,
+    "motion": {
+      "distance": 21.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.603603,
+      "pain": 0.3554,
+      "scent": 0.425616,
+      "sound": 0.610759,
+      "thermal": 0.618111,
+      "vibration": 0.614908,
+      "vision": 0.641576,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 191
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.204691,
+        "x": 6.076056,
+        "y": -74.05021
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.45236,
+        "x": 74.168557,
+        "y": -33.851775
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.125788,
+        "x": 60.624872,
+        "y": 40.841473
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7094,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7503,
+      "flower_phase": 3.083548,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -58.35313,
+      "y": -18.956751,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.599964,
+    "interrupted": false,
+    "motion": {
+      "distance": 17.673755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.606549,
+      "pain": 0.3554,
+      "scent": 0.41193,
+      "sound": 0.659008,
+      "thermal": 0.610688,
+      "vibration": 0.616987,
+      "vision": 0.636963,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 192
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.146522,
+        "x": 74.136322,
+        "y": -33.825401
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.16589,
+        "x": 60.661368,
+        "y": 40.811613
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.292075,
+        "x": -8.900482,
+        "y": 73.1385
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7099,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7493,
+      "flower_phase": 3.135908,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -57.897886,
+      "y": -22.729383,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.633297,
+    "interrupted": false,
+    "motion": {
+      "distance": 13.873755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.609433,
+      "pain": 0.3554,
+      "scent": 0.398219,
+      "sound": 0.642906,
+      "thermal": 0.603519,
+      "vibration": 0.619061,
+      "vision": 0.632189,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 193
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.449046,
+        "x": 60.760158,
+        "y": 40.730785
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.300681,
+        "x": -8.834332,
+        "y": 73.084377
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.27341,
+        "x": -74.815163,
+        "y": 38.828355
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7104,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7483,
+      "flower_phase": 3.188268,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -57.442641,
+      "y": -26.502015,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.66663,
+    "interrupted": false,
+    "motion": {
+      "distance": 10.073755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.612202,
+      "pain": 0.3554,
+      "scent": 0.384486,
+      "sound": 0.672252,
+      "thermal": 0.596659,
+      "vibration": 0.620954,
+      "vision": 0.627138,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 194
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.236284,
+        "x": -8.78235,
+        "y": 73.041846
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.017394,
+        "x": -74.81899,
+        "y": 38.831486
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.056515,
+        "x": -63.151082,
+        "y": -37.805489
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7109,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7473,
+      "flower_phase": 3.240628,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.987397,
+      "y": -30.274647,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.699963,
+    "interrupted": false,
+    "motion": {
+      "distance": 6.273755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.61423,
+      "pain": 0.3554,
+      "scent": 0.381323,
+      "sound": 0.686671,
+      "thermal": 0.590159,
+      "vibration": 0.622185,
+      "vision": 0.629105,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 195
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.064557,
+        "x": -74.804788,
+        "y": 38.819866
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.427434,
+        "x": -63.245117,
+        "y": -37.728551
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.239899,
+        "x": 76.624631,
+        "y": -138.964526
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7114,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7463,
+      "flower_phase": 3.292988,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.733296,
+    "interrupted": false,
+    "motion": {
+      "distance": 2.473755,
+      "moving": true,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614865,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.668354,
+      "thermal": 0.58407,
+      "vibration": 0.619787,
+      "vision": 0.636333,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 196
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.34193,
+        "x": -63.320342,
+        "y": -37.667004
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.411318,
+        "x": 76.534141,
+        "y": -138.890489
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.190301,
+        "x": 157.97988,
+        "y": -6.428337
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7119,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7462,
+      "flower_phase": 3.345348,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.766629,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614847,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.672278,
+      "thermal": 0.578438,
+      "vibration": 0.613451,
+      "vision": 0.636294,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 197
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.168345,
+        "x": 76.497105,
+        "y": -138.860187
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.10268,
+        "x": 157.95729,
+        "y": -6.409855
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.409252,
+        "x": 5.986021,
+        "y": -73.976545
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7124,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7461,
+      "flower_phase": 3.397708,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.799962,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614833,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.650124,
+      "thermal": 0.573305,
+      "vibration": 0.607681,
+      "vision": 0.63626,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 198
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.189616,
+        "x": 157.915574,
+        "y": -6.375724
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.36767,
+        "x": 5.905134,
+        "y": -73.910364
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.39312,
+        "x": 74.049836,
+        "y": -33.754639
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7129,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.746,
+      "flower_phase": 3.450068,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -56.691038,
+      "y": -32.730586,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.833295,
+    "interrupted": false,
+    "motion": {
+      "distance": 0.0,
+      "moving": false,
+      "target": "grain_shade"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.614833,
+      "pain": 0.3554,
+      "scent": 0.388384,
+      "sound": 0.666381,
+      "thermal": 0.568711,
+      "vibration": 0.602577,
+      "vision": 0.63626,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 199
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.399254,
+        "x": 5.817298,
+        "y": -73.838498
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.423939,
+        "x": 73.95657,
+        "y": -33.67833
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.036053,
+        "x": 60.76809,
+        "y": 40.724295
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7134,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.745,
+      "flower_phase": 3.502428,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -53.631295,
+      "y": -34.984022,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.866628,
+    "interrupted": false,
+    "motion": {
+      "distance": 163.320149,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.613033,
+      "pain": 0.3554,
+      "scent": 0.402139,
+      "sound": 0.707783,
+      "thermal": 0.564692,
+      "vibration": 0.592961,
+      "vision": 0.64351,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 200
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.416738,
+        "x": 73.864888,
+        "y": -33.603317
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.404211,
+        "x": 60.679164,
+        "y": 40.797053
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.321452,
+        "x": -8.853069,
+        "y": 73.099707
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7139,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.744,
+      "flower_phase": 3.554788,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -50.571552,
+      "y": -37.237458,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.899961,
+    "interrupted": false,
+    "motion": {
+      "distance": 159.520149,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.61065,
+      "pain": 0.3554,
+      "scent": 0.415875,
+      "sound": 0.699364,
+      "thermal": 0.561277,
+      "vibration": 0.581383,
+      "vision": 0.64943,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 201
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.258875,
+        "x": 60.736116,
+        "y": 40.750456
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.305793,
+        "x": -8.920344,
+        "y": 73.15475
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.079171,
+        "x": -74.78737,
+        "y": 38.805615
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7144,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.743,
+      "flower_phase": 3.607148,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -47.511809,
+      "y": -39.490894,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.933294,
+    "interrupted": false,
+    "motion": {
+      "distance": 155.720149,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.607976,
+      "pain": 0.3554,
+      "scent": 0.429589,
+      "sound": 0.623743,
+      "thermal": 0.558492,
+      "vibration": 0.569196,
+      "vision": 0.654679,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 202
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.273352,
+        "x": -8.980481,
+        "y": 73.203953
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.256291,
+        "x": -74.730986,
+        "y": 38.759483
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.018939,
+        "x": -63.324508,
+        "y": -37.663595
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7149,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.742,
+      "flower_phase": 3.659508,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -44.452066,
+      "y": -41.74433,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.966627,
+    "interrupted": false,
+    "motion": {
+      "distance": 151.920148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.605154,
+      "pain": 0.3554,
+      "scent": 0.443273,
+      "sound": 0.654762,
+      "thermal": 0.55636,
+      "vibration": 0.557063,
+      "vision": 0.659571,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 203
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.074027,
+        "x": -74.747272,
+        "y": 38.772808
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.366272,
+        "x": -63.243928,
+        "y": -37.729524
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.415792,
+        "x": 76.405631,
+        "y": -138.785345
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7154,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.741,
+      "flower_phase": 3.711868,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -41.392323,
+      "y": -43.997766,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 3.99996,
+    "interrupted": false,
+    "motion": {
+      "distance": 148.120148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.602249,
+      "pain": 0.3554,
+      "scent": 0.456921,
+      "sound": 0.645993,
+      "thermal": 0.554896,
+      "vibration": 0.545285,
+      "vision": 0.664244,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 204
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.14466,
+        "x": -63.212103,
+        "y": -37.755563
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.355079,
+        "x": 76.327514,
+        "y": -138.721431
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.362552,
+        "x": 157.835813,
+        "y": -6.310465
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7159,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.74,
+      "flower_phase": 3.764228,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -38.33258,
+      "y": -46.251202,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.033293,
+    "interrupted": false,
+    "motion": {
+      "distance": 144.320148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.599361,
+      "pain": 0.3554,
+      "scent": 0.470519,
+      "sound": 0.6022,
+      "thermal": 0.554111,
+      "vibration": 0.534332,
+      "vision": 0.668917,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 205
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.24529,
+        "x": 76.381478,
+        "y": -138.765583
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.137232,
+        "x": 157.805622,
+        "y": -6.285763
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.397222,
+        "x": 5.904687,
+        "y": -73.909998
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7164,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.739,
+      "flower_phase": 3.816588,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -35.272837,
+      "y": -48.504638,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.066626,
+    "interrupted": false,
+    "motion": {
+      "distance": 140.520148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.596408,
+      "pain": 0.3554,
+      "scent": 0.484053,
+      "sound": 0.622478,
+      "thermal": 0.554011,
+      "vibration": 0.523833,
+      "vision": 0.673389,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 206
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.182598,
+        "x": 157.845794,
+        "y": -6.318631
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.21159,
+        "x": 5.858137,
+        "y": -73.871912
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.186045,
+        "x": 73.905818,
+        "y": -33.636805
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7169,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.738,
+      "flower_phase": 3.868948,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -32.213094,
+      "y": -50.758074,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.099959,
+    "interrupted": false,
+    "motion": {
+      "distance": 136.720148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.593413,
+      "pain": 0.3554,
+      "scent": 0.497494,
+      "sound": 0.620794,
+      "thermal": 0.554598,
+      "vibration": 0.513887,
+      "vision": 0.677692,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 207
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.158928,
+        "x": 5.823173,
+        "y": -73.843305
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.4639,
+        "x": 74.007876,
+        "y": -33.720307
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.333829,
+        "x": 60.662674,
+        "y": 40.810545
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7174,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.737,
+      "flower_phase": 3.921308,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -29.153351,
+      "y": -53.01151,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.133292,
+    "interrupted": false,
+    "motion": {
+      "distance": 132.920148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.590409,
+      "pain": 0.3554,
+      "scent": 0.510803,
+      "sound": 0.544082,
+      "thermal": 0.555866,
+      "vibration": 0.504629,
+      "vision": 0.681864,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 208
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.334488,
+        "x": 73.934289,
+        "y": -33.660099
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.180151,
+        "x": 60.702307,
+        "y": 40.778118
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.03395,
+        "x": -8.98795,
+        "y": 73.210064
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7279,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.733,
+      "flower_phase": 3.973668,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -26.093608,
+      "y": -55.264946,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.166625,
+    "interrupted": true,
+    "motion": {
+      "distance": 129.120148,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.590034,
+      "pain": 0.356559,
+      "scent": 0.523911,
+      "sound": 0.57327,
+      "thermal": 0.557806,
+      "vibration": 0.507906,
+      "vision": 0.691788,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 209
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.268422,
+        "x": 60.76136,
+        "y": 40.729802
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.234988,
+        "x": -9.039647,
+        "y": 73.252362
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.443341,
+        "x": -74.844807,
+        "y": 38.852609
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7284,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.732,
+      "flower_phase": 4.026028,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "grain_shade",
+      "wetness": 0.1,
+      "x": -23.033865,
+      "y": -57.518382,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.199958,
+    "interrupted": false,
+    "motion": {
+      "distance": 125.320147,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.591841,
+      "pain": 0.35869,
+      "scent": 0.536695,
+      "sound": 0.600381,
+      "thermal": 0.560403,
+      "vibration": 0.521665,
+      "vision": 0.706356,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 210
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.301736,
+        "x": -9.106029,
+        "y": 73.306674
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.189952,
+        "x": -74.886597,
+        "y": 38.8868
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.033325,
+        "x": -63.219435,
+        "y": -37.749564
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7289,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.731,
+      "flower_phase": 4.078388,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.634791,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": -19.974122,
+      "y": -59.771818,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.233291,
+    "interrupted": false,
+    "motion": {
+      "distance": 121.520147,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 0,
+    "sensory": {
+      "affect": 0.593672,
+      "pain": 0.360726,
+      "scent": 0.548914,
+      "sound": 0.585518,
+      "thermal": 0.563638,
+      "vibration": 0.536114,
+      "vision": 0.720512,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 211
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.295558,
+        "x": -74.95162,
+        "y": 38.94
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.449065,
+        "x": -63.318229,
+        "y": -37.668732
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.331037,
+        "x": 76.454306,
+        "y": -138.82517
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7094,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7629,
+      "flower_phase": 3.083548,
+      "footstep_rate_hz": 1.6,
+      "heading": -1.450707,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -64.726554,
+      "y": 33.860097,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.266624,
+    "interrupted": false,
+    "motion": {
+      "distance": 117.720147,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.604442,
+      "pain": 0.364198,
+      "scent": 0.569746,
+      "sound": 0.704401,
+      "thermal": 0.723816,
+      "vibration": 0.767021,
+      "vision": 0.761857,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 212
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.264499,
+        "x": -63.260039,
+        "y": -37.716342
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.349858,
+        "x": 76.531275,
+        "y": -138.888144
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.493415,
+        "x": 157.737243,
+        "y": -6.229816
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7099,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7619,
+      "flower_phase": 3.135908,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -62.25918,
+      "y": 30.970103,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.299957,
+    "interrupted": false,
+    "motion": {
+      "distance": 214.905659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.602224,
+      "pain": 0.363046,
+      "scent": 0.562835,
+      "sound": 0.626234,
+      "thermal": 0.561237,
+      "vibration": 0.574913,
+      "vision": 0.751188,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 213
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.4377,
+        "x": 76.627569,
+        "y": -138.96693
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.324049,
+        "x": 157.808534,
+        "y": -6.288145
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.393885,
+        "x": 5.909828,
+        "y": -73.914204
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7104,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7609,
+      "flower_phase": 3.188268,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -59.791806,
+      "y": 28.080109,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.33329,
+    "interrupted": false,
+    "motion": {
+      "distance": 211.105659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.600358,
+      "pain": 0.361376,
+      "scent": 0.552814,
+      "sound": 0.670874,
+      "thermal": 0.558461,
+      "vibration": 0.561285,
+      "vision": 0.738759,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 214
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.147798,
+        "x": 157.776018,
+        "y": -6.261541
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.09326,
+        "x": 5.930345,
+        "y": -73.930991
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.276413,
+        "x": 73.9951,
+        "y": -33.709853
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7109,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7599,
+      "flower_phase": 3.240628,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -57.324432,
+      "y": 25.190115,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.366623,
+    "interrupted": false,
+    "motion": {
+      "distance": 207.305659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598537,
+      "pain": 0.359445,
+      "scent": 0.54123,
+      "sound": 0.633172,
+      "thermal": 0.556337,
+      "vibration": 0.548248,
+      "vision": 0.725146,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 215
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.273524,
+        "x": 5.87017,
+        "y": -73.881757
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.308523,
+        "x": 73.927225,
+        "y": -33.654319
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.436704,
+        "x": 60.665285,
+        "y": 40.808409
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7114,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7589,
+      "flower_phase": 3.292988,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -54.857058,
+      "y": 22.300121,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.399956,
+    "interrupted": false,
+    "motion": {
+      "distance": 203.505659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.596737,
+      "pain": 0.357379,
+      "scent": 0.528831,
+      "sound": 0.605245,
+      "thermal": 0.554881,
+      "vibration": 0.535876,
+      "vision": 0.710912,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 216
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.252432,
+        "x": 73.98276,
+        "y": -33.699757
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.468464,
+        "x": 60.768347,
+        "y": 40.724085
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.311602,
+        "x": -9.037477,
+        "y": 73.250586
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7119,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7579,
+      "flower_phase": 3.345348,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -52.389684,
+      "y": 19.410127,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.433289,
+    "interrupted": false,
+    "motion": {
+      "distance": 199.705659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.594949,
+      "pain": 0.3554,
+      "scent": 0.515974,
+      "sound": 0.584672,
+      "thermal": 0.554105,
+      "vibration": 0.524212,
+      "vision": 0.696327,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 217
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.235239,
+        "x": 60.716594,
+        "y": 40.766428
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.394066,
+        "x": -8.950783,
+        "y": 73.179654
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.43886,
+        "x": -74.855071,
+        "y": 38.861005
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7124,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7569,
+      "flower_phase": 3.397708,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -49.92231,
+      "y": 16.520133,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.466622,
+    "interrupted": false,
+    "motion": {
+      "distance": 195.905659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.593167,
+      "pain": 0.3554,
+      "scent": 0.502837,
+      "sound": 0.551989,
+      "thermal": 0.554014,
+      "vibration": 0.513277,
+      "vision": 0.681527,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 218
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.000777,
+        "x": -8.950612,
+        "y": 73.179514
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.329487,
+        "x": -74.927558,
+        "y": 38.920313
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.200194,
+        "x": -63.215996,
+        "y": -37.752377
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7129,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7559,
+      "flower_phase": 3.450068,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -47.454936,
+      "y": 13.630139,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.499955,
+    "interrupted": false,
+    "motion": {
+      "distance": 192.105659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.591468,
+      "pain": 0.3554,
+      "scent": 0.489521,
+      "sound": 0.601504,
+      "thermal": 0.55461,
+      "vibration": 0.503441,
+      "vision": 0.666767,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 219
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.396299,
+        "x": -75.014744,
+        "y": 38.991647
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.314861,
+        "x": -63.146727,
+        "y": -37.809052
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.364949,
+        "x": 76.54728,
+        "y": -138.901239
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7134,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7549,
+      "flower_phase": 3.502428,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -44.987562,
+      "y": 10.740145,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.533288,
+    "interrupted": false,
+    "motion": {
+      "distance": 188.305659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589632,
+      "pain": 0.3554,
+      "scent": 0.476083,
+      "sound": 0.570198,
+      "thermal": 0.555887,
+      "vibration": 0.493718,
+      "vision": 0.651597,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 220
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.131799,
+        "x": -63.117731,
+        "y": -37.832776
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.064147,
+        "x": 76.561392,
+        "y": -138.912786
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.345914,
+        "x": 157.699917,
+        "y": -6.199276
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7139,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7539,
+      "flower_phase": 3.554788,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -42.520188,
+      "y": 7.850151,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.566621,
+    "interrupted": false,
+    "motion": {
+      "distance": 184.505659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.587786,
+      "pain": 0.3554,
+      "scent": 0.462557,
+      "sound": 0.545366,
+      "thermal": 0.557835,
+      "vibration": 0.484675,
+      "vision": 0.636332,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 221
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.137752,
+        "x": 76.531087,
+        "y": -138.887991
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.235046,
+        "x": 157.648207,
+        "y": -6.156968
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.421704,
+        "x": 5.962945,
+        "y": -73.957664
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7144,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7529,
+      "flower_phase": 3.607148,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -40.052814,
+      "y": 4.960157,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.599954,
+    "interrupted": false,
+    "motion": {
+      "distance": 180.705659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.586125,
+      "pain": 0.3554,
+      "scent": 0.448968,
+      "sound": 0.547515,
+      "thermal": 0.560441,
+      "vibration": 0.477187,
+      "vision": 0.621434,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 222
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.478734,
+        "x": 157.542885,
+        "y": -6.070796
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.00194,
+        "x": 5.963372,
+        "y": -73.958013
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.018586,
+        "x": 73.986849,
+        "y": -33.703103
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7149,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7519,
+      "flower_phase": 3.659508,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -37.58544,
+      "y": 2.070163,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.633287,
+    "interrupted": false,
+    "motion": {
+      "distance": 176.905659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.587569,
+      "pain": 0.3554,
+      "scent": 0.435331,
+      "sound": 0.522156,
+      "thermal": 0.563683,
+      "vibration": 0.484362,
+      "vision": 0.61348,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 223
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.390281,
+        "x": 6.049234,
+        "y": -74.028264
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.212258,
+        "x": 73.940152,
+        "y": -33.664897
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.285594,
+        "x": 60.779425,
+        "y": 40.715021
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7154,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7509,
+      "flower_phase": 3.711868,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -35.118066,
+      "y": -0.819831,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.66662,
+    "interrupted": false,
+    "motion": {
+      "distance": 173.105659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.588835,
+      "pain": 0.3554,
+      "scent": 0.421657,
+      "sound": 0.51208,
+      "thermal": 0.567538,
+      "vibration": 0.491416,
+      "vision": 0.605098,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 5,
+    "tick": 224
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.068717,
+        "x": 73.95527,
+        "y": -33.677266
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.029944,
+        "x": 60.772837,
+        "y": 40.720411
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.074251,
+        "x": -8.966947,
+        "y": 73.192879
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7159,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7499,
+      "flower_phase": 3.764228,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -32.650692,
+      "y": -3.709825,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.699953,
+    "interrupted": false,
+    "motion": {
+      "distance": 169.305659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589914,
+      "pain": 0.3554,
+      "scent": 0.407954,
+      "sound": 0.531278,
+      "thermal": 0.571976,
+      "vibration": 0.498263,
+      "vision": 0.596268,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 225
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.177555,
+        "x": 60.811899,
+        "y": 40.688451
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.034817,
+        "x": -8.974607,
+        "y": 73.199146
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.400479,
+        "x": -74.926639,
+        "y": 38.919561
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7164,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7489,
+      "flower_phase": 3.816588,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -30.183318,
+      "y": -6.599819,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.733286,
+    "interrupted": false,
+    "motion": {
+      "distance": 165.505659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.590795,
+      "pain": 0.3554,
+      "scent": 0.394228,
+      "sound": 0.525076,
+      "thermal": 0.576963,
+      "vibration": 0.50483,
+      "vision": 0.586976,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 226
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.430799,
+        "x": -9.069383,
+        "y": 73.27669
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.350367,
+        "x": -75.00372,
+        "y": 38.982627
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.007301,
+        "x": -63.116125,
+        "y": -37.83409
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7169,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7479,
+      "flower_phase": 3.868948,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -27.715944,
+      "y": -9.489813,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.766619,
+    "interrupted": false,
+    "motion": {
+      "distance": 161.705659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.591475,
+      "pain": 0.3554,
+      "scent": 0.380482,
+      "sound": 0.57128,
+      "thermal": 0.582461,
+      "vibration": 0.511051,
+      "vision": 0.577214,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 227
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.308778,
+        "x": -75.071651,
+        "y": 39.038207
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.182374,
+        "x": -63.076003,
+        "y": -37.866917
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.269136,
+        "x": 76.590297,
+        "y": -138.936435
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7174,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7469,
+      "flower_phase": 3.921308,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -25.24857,
+      "y": -12.379807,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.799952,
+    "interrupted": false,
+    "motion": {
+      "distance": 157.905659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.5915,
+      "pain": 0.3554,
+      "scent": 0.376233,
+      "sound": 0.553833,
+      "thermal": 0.588428,
+      "vibration": 0.516882,
+      "vision": 0.573779,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 228
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.440593,
+        "x": -62.979073,
+        "y": -37.946224
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.43225,
+        "x": 76.495202,
+        "y": -138.85863
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.273649,
+        "x": 157.482682,
+        "y": -6.021539
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7179,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7459,
+      "flower_phase": 3.973668,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -22.781196,
+      "y": -15.269801,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.833285,
+    "interrupted": false,
+    "motion": {
+      "distance": 154.105659,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.590571,
+      "pain": 0.3554,
+      "scent": 0.388064,
+      "sound": 0.518685,
+      "thermal": 0.594819,
+      "vibration": 0.522338,
+      "vision": 0.581408,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 229
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.03782,
+        "x": 76.503522,
+        "y": -138.865438
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.278111,
+        "x": 157.543867,
+        "y": -6.071599
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.282722,
+        "x": 5.987035,
+        "y": -73.977374
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7184,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7449,
+      "flower_phase": 4.026028,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -20.313822,
+      "y": -18.159795,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.866618,
+    "interrupted": false,
+    "motion": {
+      "distance": 150.30566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589488,
+      "pain": 0.3554,
+      "scent": 0.399633,
+      "sound": 0.549712,
+      "thermal": 0.601584,
+      "vibration": 0.527461,
+      "vision": 0.588474,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 230
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.49773,
+        "x": 157.653368,
+        "y": -6.16119
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.413968,
+        "x": 5.895962,
+        "y": -73.90286
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.225733,
+        "x": 73.905609,
+        "y": -33.636634
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7189,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7439,
+      "flower_phase": 4.078388,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -17.846448,
+      "y": -21.049789,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.899951,
+    "interrupted": false,
+    "motion": {
+      "distance": 146.50566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.588208,
+      "pain": 0.3554,
+      "scent": 0.410893,
+      "sound": 0.496256,
+      "thermal": 0.608673,
+      "vibration": 0.531991,
+      "vision": 0.594844,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 231
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.442968,
+        "x": 5.798509,
+        "y": -73.823126
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.270364,
+        "x": 73.846129,
+        "y": -33.587968
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.072405,
+        "x": 60.79597,
+        "y": 40.701484
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7194,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7429,
+      "flower_phase": 4.130748,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -15.379074,
+      "y": -23.939783,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.933284,
+    "interrupted": false,
+    "motion": {
+      "distance": 142.70566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.586776,
+      "pain": 0.3554,
+      "scent": 0.421786,
+      "sound": 0.559315,
+      "thermal": 0.616031,
+      "vibration": 0.536059,
+      "vision": 0.600571,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 232
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.306585,
+        "x": 73.913578,
+        "y": -33.643153
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.371237,
+        "x": 60.877642,
+        "y": 40.634661
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.481797,
+        "x": -8.963388,
+        "y": 73.189966
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7199,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7419,
+      "flower_phase": 4.183108,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -12.9117,
+      "y": -26.829777,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.966617,
+    "interrupted": false,
+    "motion": {
+      "distance": 138.90566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.585662,
+      "pain": 0.3554,
+      "scent": 0.432239,
+      "sound": 0.551737,
+      "thermal": 0.623602,
+      "vibration": 0.541698,
+      "vision": 0.60665,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 233
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.297871,
+        "x": 60.943174,
+        "y": 40.581044
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.340035,
+        "x": -9.038196,
+        "y": 73.251172
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.389532,
+        "x": -74.985954,
+        "y": 38.968091
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7204,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7409,
+      "flower_phase": 4.235468,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -10.444326,
+      "y": -29.719771,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 4.99995,
+    "interrupted": false,
+    "motion": {
+      "distance": 135.10566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.587482,
+      "pain": 0.3554,
+      "scent": 0.442166,
+      "sound": 0.562968,
+      "thermal": 0.631329,
+      "vibration": 0.560598,
+      "vision": 0.618899,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 234
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.023889,
+        "x": -9.03294,
+        "y": 73.246872
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.425834,
+        "x": -75.079637,
+        "y": 39.044741
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.491252,
+        "x": -63.087149,
+        "y": -37.857799
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7209,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7399,
+      "flower_phase": 4.287828,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -7.976952,
+      "y": -32.609765,
+      "z": 3.941699
+    },
+    "conflict_events": 1,
+    "elapsed_seconds": 5.033283,
+    "interrupted": false,
+    "motion": {
+      "distance": 131.30566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589308,
+      "pain": 0.3554,
+      "scent": 0.451463,
+      "sound": 0.561846,
+      "thermal": 0.639151,
+      "vibration": 0.579499,
+      "vision": 0.630644,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 235
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.11661,
+        "x": -75.105291,
+        "y": 39.065731
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.42087,
+        "x": -63.17974,
+        "y": -37.782042
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.226049,
+        "x": 76.553253,
+        "y": -138.906127
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7214,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7389,
+      "flower_phase": 4.340188,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -5.509578,
+      "y": -35.499759,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.066616,
+    "interrupted": false,
+    "motion": {
+      "distance": 127.50566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.59114,
+      "pain": 0.3554,
+      "scent": 0.460005,
+      "sound": 0.529808,
+      "thermal": 0.647011,
+      "vibration": 0.598305,
+      "vision": 0.641782,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 236
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.213479,
+        "x": -63.132775,
+        "y": -37.820468
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.176546,
+        "x": 76.592093,
+        "y": -138.937905
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.372177,
+        "x": 157.735247,
+        "y": -6.228182
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7219,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7379,
+      "flower_phase": 4.392548,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -3.042204,
+      "y": -38.389753,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.099949,
+    "interrupted": false,
+    "motion": {
+      "distance": 123.70566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.592976,
+      "pain": 0.3554,
+      "scent": 0.468604,
+      "sound": 0.599402,
+      "thermal": 0.654847,
+      "vibration": 0.616912,
+      "vision": 0.65219,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 237
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.219675,
+        "x": 76.543764,
+        "y": -138.898363
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.300977,
+        "x": 157.801462,
+        "y": -6.282358
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.169169,
+        "x": 5.761292,
+        "y": -73.792676
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7224,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7369,
+      "flower_phase": 4.444908,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -0.57483,
+      "y": -41.279747,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.133282,
+    "interrupted": false,
+    "motion": {
+      "distance": 119.90566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.594811,
+      "pain": 0.3554,
+      "scent": 0.475182,
+      "sound": 0.610497,
+      "thermal": 0.662601,
+      "vibration": 0.635198,
+      "vision": 0.661724,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 238
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.160702,
+        "x": 157.836816,
+        "y": -6.311284
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.16005,
+        "x": 5.796503,
+        "y": -73.821485
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.404578,
+        "x": 74.002585,
+        "y": -33.715977
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7229,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7359,
+      "flower_phase": 4.497268,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 1.892544,
+      "y": -44.169741,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.166615,
+    "interrupted": false,
+    "motion": {
+      "distance": 116.10566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.596661,
+      "pain": 0.3554,
+      "scent": 0.480523,
+      "sound": 0.614265,
+      "thermal": 0.670212,
+      "vibration": 0.653121,
+      "vision": 0.670273,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 239
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.39851,
+        "x": 5.708831,
+        "y": -73.749753
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.436443,
+        "x": 73.906568,
+        "y": -33.637417
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.441906,
+        "x": 61.040393,
+        "y": 40.501501
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7234,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7349,
+      "flower_phase": 4.549628,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 4.359918,
+      "y": -47.059735,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.199948,
+    "interrupted": false,
+    "motion": {
+      "distance": 112.30566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598441,
+      "pain": 0.3554,
+      "scent": 0.484459,
+      "sound": 0.609475,
+      "thermal": 0.677623,
+      "vibration": 0.67021,
+      "vision": 0.677511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 240
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.230666,
+        "x": 73.957314,
+        "y": -33.678937
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.279838,
+        "x": 61.101957,
+        "y": 40.45113
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.104636,
+        "x": -9.00992,
+        "y": 73.228037
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7239,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7339,
+      "flower_phase": 4.601988,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 6.827292,
+      "y": -49.949729,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.233281,
+    "interrupted": false,
+    "motion": {
+      "distance": 108.50566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.600231,
+      "pain": 0.3554,
+      "scent": 0.486845,
+      "sound": 0.597728,
+      "thermal": 0.684777,
+      "vibration": 0.686724,
+      "vision": 0.683498,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 241
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.363012,
+        "x": 61.18182,
+        "y": 40.385788
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.436008,
+        "x": -8.913998,
+        "y": 73.149556
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.412871,
+        "x": -75.014459,
+        "y": 38.991414
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7244,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7329,
+      "flower_phase": 4.654348,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 9.294666,
+      "y": -52.839723,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.266614,
+    "interrupted": false,
+    "motion": {
+      "distance": 104.70566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.601866,
+      "pain": 0.3554,
+      "scent": 0.487585,
+      "sound": 0.600337,
+      "thermal": 0.69162,
+      "vibration": 0.701847,
+      "vision": 0.687786,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 242
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.387444,
+        "x": -8.82876,
+        "y": 73.079816
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.070903,
+        "x": -74.99886,
+        "y": 38.978651
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.099187,
+        "x": -63.110954,
+        "y": -37.838322
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7249,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7319,
+      "flower_phase": 4.706708,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 11.76204,
+      "y": -55.729717,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.299947,
+    "interrupted": false,
+    "motion": {
+      "distance": 100.90566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.603323,
+      "pain": 0.3554,
+      "scent": 0.486646,
+      "sound": 0.66191,
+      "thermal": 0.6981,
+      "vibration": 0.715399,
+      "vision": 0.690292,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 243
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.417154,
+        "x": -75.090634,
+        "y": 39.053739
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.115058,
+        "x": -63.085641,
+        "y": -37.859032
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.032002,
+        "x": 76.550804,
+        "y": -138.904123
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7254,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7309,
+      "flower_phase": 4.759068,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 14.229414,
+      "y": -58.619711,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.33328,
+    "interrupted": false,
+    "motion": {
+      "distance": 97.10566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.604499,
+      "pain": 0.3554,
+      "scent": 0.484069,
+      "sound": 0.618725,
+      "thermal": 0.704167,
+      "vibration": 0.726879,
+      "vision": 0.69082,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 244
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.456702,
+        "x": -62.985167,
+        "y": -37.941238
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.478564,
+        "x": 76.44552,
+        "y": -138.817982
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.13262,
+        "x": 157.865993,
+        "y": -6.335156
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7259,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7299,
+      "flower_phase": 4.811428,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 16.696788,
+      "y": -61.509705,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.366613,
+    "interrupted": false,
+    "motion": {
+      "distance": 93.30566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.60528,
+      "pain": 0.3554,
+      "scent": 0.479957,
+      "sound": 0.631253,
+      "thermal": 0.709775,
+      "vibration": 0.735747,
+      "vision": 0.689202,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 245
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.057352,
+        "x": 76.458137,
+        "y": -138.828305
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.40375,
+        "x": 157.777168,
+        "y": -6.262481
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.139817,
+        "x": 5.678071,
+        "y": -73.724586
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7264,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7289,
+      "flower_phase": 4.863788,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 19.164162,
+      "y": -64.399699,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.399946,
+    "interrupted": false,
+    "motion": {
+      "distance": 89.50566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.605583,
+      "pain": 0.3554,
+      "scent": 0.47446,
+      "sound": 0.624894,
+      "thermal": 0.71488,
+      "vibration": 0.741603,
+      "vision": 0.685367,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 246
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.020698,
+        "x": 157.781721,
+        "y": -6.266207
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.213167,
+        "x": 5.724968,
+        "y": -73.762956
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.075644,
+        "x": 73.940672,
+        "y": -33.665321
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7269,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7279,
+      "flower_phase": 4.916148,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 21.631536,
+      "y": -67.289693,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.433279,
+    "interrupted": false,
+    "motion": {
+      "distance": 85.70566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.605379,
+      "pain": 0.3554,
+      "scent": 0.467746,
+      "sound": 0.614229,
+      "thermal": 0.719445,
+      "vibration": 0.744321,
+      "vision": 0.679395,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 247
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.052062,
+        "x": 5.736422,
+        "y": -73.772327
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.121758,
+        "x": 73.967459,
+        "y": -33.687237
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.33151,
+        "x": 61.254752,
+        "y": 40.326116
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7274,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7269,
+      "flower_phase": 4.968508,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 24.09891,
+      "y": -70.179687,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.466612,
+    "interrupted": false,
+    "motion": {
+      "distance": 81.90566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.604777,
+      "pain": 0.3554,
+      "scent": 0.459989,
+      "sound": 0.647185,
+      "thermal": 0.723435,
+      "vibration": 0.744382,
+      "vision": 0.671668,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 248
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.324093,
+        "x": 73.896158,
+        "y": -33.6289
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.142724,
+        "x": 61.223353,
+        "y": 40.351806
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.121776,
+        "x": -8.801969,
+        "y": 73.057896
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7279,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7259,
+      "flower_phase": 5.020868,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 26.566284,
+      "y": -73.069681,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.499945,
+    "interrupted": false,
+    "motion": {
+      "distance": 78.10566,
+      "moving": true,
+      "target": "herb_slope"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.603831,
+      "pain": 0.3554,
+      "scent": 0.45135,
+      "sound": 0.660618,
+      "thermal": 0.726818,
+      "vibration": 0.742031,
+      "vision": 0.662443,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 249
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.399678,
+        "x": 61.311282,
+        "y": 40.279864
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.105214,
+        "x": -8.778822,
+        "y": 73.038958
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.287858,
+        "x": -75.027305,
+        "y": 39.001925
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7284,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7249,
+      "flower_phase": 5.073228,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 29.845281,
+      "y": -71.149218,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.533278,
+    "interrupted": false,
+    "motion": {
+      "distance": 144.582206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.602226,
+      "pain": 0.3554,
+      "scent": 0.439236,
+      "sound": 0.655387,
+      "thermal": 0.729569,
+      "vibration": 0.735269,
+      "vision": 0.64888,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 250
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.096021,
+        "x": -8.757697,
+        "y": 73.021674
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.476876,
+        "x": -74.922392,
+        "y": 38.916087
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.283752,
+        "x": -63.047592,
+        "y": -37.890163
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7389,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7209,
+      "flower_phase": 5.125588,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 33.124278,
+      "y": -69.228755,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.566611,
+    "interrupted": true,
+    "motion": {
+      "distance": 140.782206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.600568,
+      "pain": 0.3554,
+      "scent": 0.426859,
+      "sound": 0.603363,
+      "thermal": 0.731668,
+      "vibration": 0.727489,
+      "vision": 0.634983,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 251
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.430563,
+        "x": -75.017116,
+        "y": 38.993588
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.377374,
+        "x": -63.130614,
+        "y": -37.822236
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.484233,
+        "x": 76.351606,
+        "y": -138.741143
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7394,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7199,
+      "flower_phase": 5.177948,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 36.403275,
+      "y": -67.308292,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.599944,
+    "interrupted": false,
+    "motion": {
+      "distance": 136.982206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598877,
+      "pain": 0.3554,
+      "scent": 0.414272,
+      "sound": 0.593171,
+      "thermal": 0.733097,
+      "vibration": 0.718771,
+      "vision": 0.620839,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 252
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.251007,
+        "x": -63.185835,
+        "y": -37.777055
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.089835,
+        "x": 76.331842,
+        "y": -138.724973
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.322507,
+        "x": 157.852673,
+        "y": -6.324258
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7399,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7189,
+      "flower_phase": 5.230308,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 39.682272,
+      "y": -65.387829,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.633277,
+    "interrupted": false,
+    "motion": {
+      "distance": 133.182206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.597165,
+      "pain": 0.3554,
+      "scent": 0.401514,
+      "sound": 0.582187,
+      "thermal": 0.733847,
+      "vibration": 0.709164,
+      "vision": 0.606506,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 253
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.09469,
+        "x": 76.31101,
+        "y": -138.707929
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.084058,
+        "x": 157.871166,
+        "y": -6.339388
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.427086,
+        "x": 5.830381,
+        "y": -73.849202
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7404,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7179,
+      "flower_phase": 5.282668,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 42.961269,
+      "y": -63.467366,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.66661,
+    "interrupted": false,
+    "motion": {
+      "distance": 129.382206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595437,
+      "pain": 0.3554,
+      "scent": 0.388617,
+      "sound": 0.534296,
+      "thermal": 0.733911,
+      "vibration": 0.698697,
+      "vision": 0.592025,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 254
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.20946,
+        "x": 157.825085,
+        "y": -6.301685
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.263805,
+        "x": 5.888418,
+        "y": -73.896687
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.001283,
+        "x": 73.895876,
+        "y": -33.628669
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7409,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7169,
+      "flower_phase": 5.335028,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "archive_knoll",
+      "wetness": 0.1,
+      "x": 46.240266,
+      "y": -61.546903,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.699943,
+    "interrupted": false,
+    "motion": {
+      "distance": 125.582206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595627,
+      "pain": 0.3554,
+      "scent": 0.375603,
+      "sound": 0.588068,
+      "thermal": 0.73329,
+      "vibration": 0.696071,
+      "vision": 0.581762,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 255
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.273253,
+        "x": 5.948534,
+        "y": -73.945873
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.382081,
+        "x": 73.811818,
+        "y": -33.559894
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.046488,
+        "x": 61.321509,
+        "y": 40.271496
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7414,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7159,
+      "flower_phase": 5.387388,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 49.519263,
+      "y": -59.62644,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.733276,
+    "interrupted": false,
+    "motion": {
+      "distance": 121.782206,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598592,
+      "pain": 0.3554,
+      "scent": 0.362493,
+      "sound": 0.563206,
+      "thermal": 0.731987,
+      "vibration": 0.70516,
+      "vision": 0.577665,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 256
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.071967,
+        "x": 73.795985,
+        "y": -33.54694
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.448681,
+        "x": 61.420219,
+        "y": 40.190733
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.006618,
+        "x": -8.759153,
+        "y": 73.022865
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7419,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7149,
+      "flower_phase": 5.439748,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 52.79826,
+      "y": -57.705977,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.766609,
+    "interrupted": false,
+    "motion": {
+      "distance": 117.982207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.601543,
+      "pain": 0.3554,
+      "scent": 0.3493,
+      "sound": 0.614744,
+      "thermal": 0.730012,
+      "vibration": 0.713418,
+      "vision": 0.573468,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 257
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.175806,
+        "x": 61.381542,
+        "y": 40.222378
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.467912,
+        "x": -8.656212,
+        "y": 72.938641
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.272348,
+        "x": -75.077033,
+        "y": 39.042611
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7424,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7139,
+      "flower_phase": 5.492108,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 56.077257,
+      "y": -55.785514,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.799942,
+    "interrupted": false,
+    "motion": {
+      "distance": 114.182207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.604463,
+      "pain": 0.3554,
+      "scent": 0.336037,
+      "sound": 0.582873,
+      "thermal": 0.727382,
+      "vibration": 0.720791,
+      "vision": 0.569143,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 258
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.272402,
+        "x": -8.71614,
+        "y": 72.987673
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.314533,
+        "x": -75.007836,
+        "y": 38.985995
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.347503,
+        "x": -63.109384,
+        "y": -37.839606
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7429,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7129,
+      "flower_phase": 5.544468,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 59.356254,
+      "y": -53.865051,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.833275,
+    "interrupted": false,
+    "motion": {
+      "distance": 110.382207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.607342,
+      "pain": 0.3554,
+      "scent": 0.322715,
+      "sound": 0.627118,
+      "thermal": 0.724115,
+      "vibration": 0.727264,
+      "vision": 0.564678,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 259
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.032528,
+        "x": -75.014992,
+        "y": 38.99185
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.055773,
+        "x": -63.097114,
+        "y": -37.849645
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.400823,
+        "x": 76.399191,
+        "y": -138.780077
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7434,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7119,
+      "flower_phase": 5.596828,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 62.635251,
+      "y": -51.944588,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.866608,
+    "interrupted": false,
+    "motion": {
+      "distance": 106.582207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.609754,
+      "pain": 0.3554,
+      "scent": 0.317875,
+      "sound": 0.630311,
+      "thermal": 0.720237,
+      "vibration": 0.732771,
+      "vision": 0.566129,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 260
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.138614,
+        "x": -63.127609,
+        "y": -37.824694
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.26109,
+        "x": 76.456631,
+        "y": -138.827073
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.404708,
+        "x": 157.914121,
+        "y": -6.374532
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7439,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7109,
+      "flower_phase": 5.649188,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 65.914248,
+      "y": -50.024125,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.899941,
+    "interrupted": false,
+    "motion": {
+      "distance": 102.782207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.611637,
+      "pain": 0.3554,
+      "scent": 0.32205,
+      "sound": 0.651882,
+      "thermal": 0.715777,
+      "vibration": 0.737184,
+      "vision": 0.573795,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 261
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.315206,
+        "x": 76.387286,
+        "y": -138.770336
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.264614,
+        "x": 157.855906,
+        "y": -6.326901
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.111034,
+        "x": 5.924107,
+        "y": -73.925887
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7444,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7099,
+      "flower_phase": 5.701548,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 69.193245,
+      "y": -48.103662,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.933274,
+    "interrupted": false,
+    "motion": {
+      "distance": 98.982207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.613387,
+      "pain": 0.3554,
+      "scent": 0.325589,
+      "sound": 0.634133,
+      "thermal": 0.71077,
+      "vibration": 0.740255,
+      "vision": 0.580641,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 262
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.12124,
+        "x": 157.882579,
+        "y": -6.348724
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.305298,
+        "x": 5.856942,
+        "y": -73.870933
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.033414,
+        "x": 73.788634,
+        "y": -33.540925
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7449,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7089,
+      "flower_phase": 5.753908,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 72.472242,
+      "y": -46.183199,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.966607,
+    "interrupted": false,
+    "motion": {
+      "distance": 95.182207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.61489,
+      "pain": 0.3554,
+      "scent": 0.32847,
+      "sound": 0.691168,
+      "thermal": 0.705253,
+      "vibration": 0.741503,
+      "vision": 0.586387,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 263
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.31183,
+        "x": 5.925545,
+        "y": -73.927062
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.334638,
+        "x": 73.715014,
+        "y": -33.48069
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.470698,
+        "x": 61.485095,
+        "y": 40.137652
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7454,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7079,
+      "flower_phase": 5.806268,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 75.751239,
+      "y": -44.262736,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.99994,
+    "interrupted": false,
+    "motion": {
+      "distance": 91.382207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.61594,
+      "pain": 0.3554,
+      "scent": 0.33067,
+      "sound": 0.656832,
+      "thermal": 0.699269,
+      "vibration": 0.740054,
+      "vision": 0.590558,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 264
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.318047,
+        "x": 73.784984,
+        "y": -33.537938
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.067897,
+        "x": 61.470158,
+        "y": 40.149873
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.494787,
+        "x": -8.607287,
+        "y": 72.898611
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7459,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7069,
+      "flower_phase": 5.858628,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.529828,
+      "pain": 0.3554,
+      "place": "ash_edge",
+      "wetness": 0.1,
+      "x": 79.030236,
+      "y": -42.342273,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.033273,
+    "interrupted": false,
+    "motion": {
+      "distance": 87.582207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 2,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.616231,
+      "pain": 0.3554,
+      "scent": 0.332172,
+      "sound": 0.688545,
+      "thermal": 0.692863,
+      "vibration": 0.734567,
+      "vision": 0.592447,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 265
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.279292,
+        "x": 61.408714,
+        "y": 40.200146
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.428574,
+        "x": -8.513001,
+        "y": 72.821468
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.397368,
+        "x": -74.927571,
+        "y": 38.920324
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7159,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7499,
+      "flower_phase": 3.764228,
+      "footstep_rate_hz": 1.6,
+      "heading": -0.864121,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -32.650692,
+      "y": -3.709825,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.699953,
+    "interrupted": false,
+    "motion": {
+      "distance": 83.782207,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589914,
+      "pain": 0.3554,
+      "scent": 0.407954,
+      "sound": 0.531278,
+      "thermal": 0.571976,
+      "vibration": 0.498263,
+      "vision": 0.596268,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 266
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.447331,
+        "x": -8.414588,
+        "y": 72.740948
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.007871,
+        "x": -74.925839,
+        "y": 38.918907
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.311179,
+        "x": -63.196068,
+        "y": -37.768682
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7164,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7489,
+      "flower_phase": 3.816588,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -28.851464,
+      "y": -3.633215,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.733286,
+    "interrupted": false,
+    "motion": {
+      "distance": 184.013488,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.588708,
+      "pain": 0.3554,
+      "scent": 0.398368,
+      "sound": 0.509375,
+      "thermal": 0.69443,
+      "vibration": 0.626637,
+      "vision": 0.584894,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 267
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.000809,
+        "x": -74.925661,
+        "y": 38.918761
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.282884,
+        "x": -63.258302,
+        "y": -37.717763
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.376647,
+        "x": 76.470148,
+        "y": -138.838132
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7169,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7479,
+      "flower_phase": 3.868948,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -25.052236,
+      "y": -3.556605,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.766619,
+    "interrupted": false,
+    "motion": {
+      "distance": 180.213488,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.58742,
+      "pain": 0.3554,
+      "scent": 0.387445,
+      "sound": 0.498466,
+      "thermal": 0.70074,
+      "vibration": 0.625512,
+      "vision": 0.573024,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 268
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.457979,
+        "x": -63.359057,
+        "y": -37.635327
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.351751,
+        "x": 76.392763,
+        "y": -138.774817
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.3573,
+        "x": 157.803973,
+        "y": -6.28441
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7174,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7469,
+      "flower_phase": 3.921308,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -21.253008,
+      "y": -3.479995,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.799952,
+    "interrupted": false,
+    "motion": {
+      "distance": 176.413487,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.586066,
+      "pain": 0.3554,
+      "scent": 0.376197,
+      "sound": 0.496929,
+      "thermal": 0.706616,
+      "vibration": 0.623539,
+      "vision": 0.560739,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 6,
+    "tick": 269
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.273086,
+        "x": 76.332684,
+        "y": -138.725662
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.471234,
+        "x": 157.700302,
+        "y": -6.199588
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.425603,
+        "x": 5.831912,
+        "y": -73.850454
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7179,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7459,
+      "flower_phase": 3.973668,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -17.45378,
+      "y": -3.403385,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.833285,
+    "interrupted": false,
+    "motion": {
+      "distance": 172.613487,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.584649,
+      "pain": 0.3554,
+      "scent": 0.364671,
+      "sound": 0.507702,
+      "thermal": 0.712015,
+      "vibration": 0.620688,
+      "vision": 0.548081,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 270
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.006042,
+        "x": 157.701631,
+        "y": -6.200676
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.036826,
+        "x": 5.82381,
+        "y": -73.843825
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.285395,
+        "x": 73.847771,
+        "y": -33.589309
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7184,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7449,
+      "flower_phase": 4.026028,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -13.654552,
+      "y": -3.326775,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.866618,
+    "interrupted": false,
+    "motion": {
+      "distance": 168.813487,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.582953,
+      "pain": 0.3554,
+      "scent": 0.358176,
+      "sound": 0.464625,
+      "thermal": 0.716895,
+      "vibration": 0.617091,
+      "vision": 0.538932,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 271
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.206829,
+        "x": 5.778308,
+        "y": -73.806596
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.367731,
+        "x": 73.76687,
+        "y": -33.523117
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.106502,
+        "x": 61.432144,
+        "y": 40.180976
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7189,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7439,
+      "flower_phase": 4.078388,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -9.855324,
+      "y": -3.250165,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.899951,
+    "interrupted": false,
+    "motion": {
+      "distance": 165.013486,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.580298,
+      "pain": 0.3554,
+      "scent": 0.370861,
+      "sound": 0.455855,
+      "thermal": 0.721218,
+      "vibration": 0.612665,
+      "vision": 0.543378,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 272
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.430434,
+        "x": 73.861565,
+        "y": -33.600595
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.030561,
+        "x": 61.438867,
+        "y": 40.175475
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.409345,
+        "x": -8.504644,
+        "y": 72.81463
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7194,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7429,
+      "flower_phase": 4.130748,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -6.056096,
+      "y": -3.173555,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.933284,
+    "interrupted": false,
+    "motion": {
+      "distance": 161.213486,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.57761,
+      "pain": 0.3554,
+      "scent": 0.3834,
+      "sound": 0.427495,
+      "thermal": 0.724953,
+      "vibration": 0.607405,
+      "vision": 0.54763,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 273
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.390133,
+        "x": 61.524696,
+        "y": 40.105251
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.221743,
+        "x": -8.553427,
+        "y": 72.854544
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.241744,
+        "x": -74.978845,
+        "y": 38.962275
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7199,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7419,
+      "flower_phase": 4.183108,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": -2.256868,
+      "y": -3.096945,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.966617,
+    "interrupted": false,
+    "motion": {
+      "distance": 157.413486,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.574896,
+      "pain": 0.3554,
+      "scent": 0.395768,
+      "sound": 0.468799,
+      "thermal": 0.728069,
+      "vibration": 0.601304,
+      "vision": 0.551682,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 274
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.348079,
+        "x": -8.47685,
+        "y": 72.79189
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.440294,
+        "x": -75.07571,
+        "y": 39.041528
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.488674,
+        "x": -63.466565,
+        "y": -37.547366
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7204,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7409,
+      "flower_phase": 4.235468,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 1.54236,
+      "y": -3.020335,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 4.99995,
+    "interrupted": false,
+    "motion": {
+      "distance": 153.613485,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.573853,
+      "pain": 0.3554,
+      "scent": 0.407932,
+      "sound": 0.438218,
+      "thermal": 0.730545,
+      "vibration": 0.601967,
+      "vision": 0.559327,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 275
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.291798,
+        "x": -75.139906,
+        "y": 39.094052
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.394067,
+        "x": -63.55326,
+        "y": -37.476434
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.301253,
+        "x": 76.39896,
+        "y": -138.779887
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7209,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7399,
+      "flower_phase": 4.287828,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 5.341588,
+      "y": -2.943725,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.033283,
+    "interrupted": false,
+    "motion": {
+      "distance": 149.813485,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.573371,
+      "pain": 0.3554,
+      "scent": 0.41985,
+      "sound": 0.428362,
+      "thermal": 0.73236,
+      "vibration": 0.604368,
+      "vision": 0.568032,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 276
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.27409,
+        "x": -63.49296,
+        "y": -37.52577
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.088655,
+        "x": 76.379456,
+        "y": -138.763929
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.465222,
+        "x": 157.599282,
+        "y": -6.116936
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7214,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7389,
+      "flower_phase": 4.340188,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 9.140816,
+      "y": -2.867115,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.066616,
+    "interrupted": false,
+    "motion": {
+      "distance": 146.013485,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.574753,
+      "pain": 0.3554,
+      "scent": 0.431472,
+      "sound": 0.485538,
+      "thermal": 0.7335,
+      "vibration": 0.614347,
+      "vision": 0.580689,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 277
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.183768,
+        "x": 76.419885,
+        "y": -138.797007
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.232618,
+        "x": 157.650458,
+        "y": -6.158807
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.037829,
+        "x": 5.769986,
+        "y": -73.799787
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7219,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7379,
+      "flower_phase": 4.392548,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 12.940044,
+      "y": -2.790505,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.099949,
+    "interrupted": false,
+    "motion": {
+      "distance": 142.213484,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.576101,
+      "pain": 0.3554,
+      "scent": 0.442731,
+      "sound": 0.434073,
+      "thermal": 0.733958,
+      "vibration": 0.623333,
+      "vision": 0.59297,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 278
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.467181,
+        "x": 157.547678,
+        "y": -6.074714
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.328664,
+        "x": 5.842292,
+        "y": -73.858946
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.007193,
+        "x": 73.859983,
+        "y": -33.5993
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7224,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7369,
+      "flower_phase": 4.444908,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 16.739272,
+      "y": -2.713895,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.133282,
+    "interrupted": false,
+    "motion": {
+      "distance": 138.413484,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.57741,
+      "pain": 0.3554,
+      "scent": 0.453546,
+      "sound": 0.452589,
+      "thermal": 0.73373,
+      "vibration": 0.631287,
+      "vision": 0.604799,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 279
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.443358,
+        "x": 5.939831,
+        "y": -73.93875
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.2547,
+        "x": 73.916017,
+        "y": -33.645146
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.033129,
+        "x": 61.531984,
+        "y": 40.099288
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7229,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7359,
+      "flower_phase": 4.497268,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 20.5385,
+      "y": -2.637285,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.166615,
+    "interrupted": false,
+    "motion": {
+      "distance": 134.613484,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.578677,
+      "pain": 0.3554,
+      "scent": 0.463813,
+      "sound": 0.515485,
+      "thermal": 0.732817,
+      "vibration": 0.638173,
+      "vision": 0.616082,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 280
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.206663,
+        "x": 73.870551,
+        "y": -33.607947
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.336561,
+        "x": 61.606027,
+        "y": 40.038707
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.46504,
+        "x": -8.579159,
+        "y": 72.875597
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7234,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7349,
+      "flower_phase": 4.549628,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 24.337728,
+      "y": -2.560675,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.199948,
+    "interrupted": false,
+    "motion": {
+      "distance": 130.813483,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.579897,
+      "pain": 0.3554,
+      "scent": 0.473399,
+      "sound": 0.488447,
+      "thermal": 0.731226,
+      "vibration": 0.643953,
+      "vision": 0.626703,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 281
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.313038,
+        "x": 61.537159,
+        "y": 40.095054
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.401095,
+        "x": -8.6674,
+        "y": 72.947794
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.363541,
+        "x": -75.219885,
+        "y": 39.159489
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7239,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7339,
+      "flower_phase": 4.601988,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 28.136956,
+      "y": -2.484065,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.233281,
+    "interrupted": false,
+    "motion": {
+      "distance": 127.013483,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.58107,
+      "pain": 0.3554,
+      "scent": 0.482141,
+      "sound": 0.523213,
+      "thermal": 0.72897,
+      "vibration": 0.648598,
+      "vision": 0.636523,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 282
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.138673,
+        "x": -8.636892,
+        "y": 72.922833
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.409913,
+        "x": -75.310066,
+        "y": 39.233273
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.460331,
+        "x": -63.594233,
+        "y": -37.44291
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7244,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7329,
+      "flower_phase": 4.654348,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 31.936184,
+      "y": -2.407454,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.266614,
+    "interrupted": false,
+    "motion": {
+      "distance": 123.213483,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.582188,
+      "pain": 0.3554,
+      "scent": 0.489841,
+      "sound": 0.518774,
+      "thermal": 0.726066,
+      "vibration": 0.652051,
+      "vision": 0.645364,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 283
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.133591,
+        "x": -75.339456,
+        "y": 39.257319
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.4112,
+        "x": -63.503769,
+        "y": -37.516926
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.216991,
+        "x": 76.467623,
+        "y": -138.836065
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7249,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7319,
+      "flower_phase": 4.706708,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 35.735412,
+      "y": -2.330844,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.299947,
+    "interrupted": false,
+    "motion": {
+      "distance": 119.413482,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.583465,
+      "pain": 0.3554,
+      "scent": 0.496272,
+      "sound": 0.526181,
+      "thermal": 0.722535,
+      "vibration": 0.655253,
+      "vision": 0.653519,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 284
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.457442,
+        "x": -63.403132,
+        "y": -37.599266
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.186735,
+        "x": 76.426541,
+        "y": -138.802453
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.424562,
+        "x": 157.454274,
+        "y": -5.998293
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7254,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7309,
+      "flower_phase": 4.759068,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 39.53464,
+      "y": -2.254233,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.33328,
+    "interrupted": false,
+    "motion": {
+      "distance": 115.613482,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.585038,
+      "pain": 0.3554,
+      "scent": 0.50119,
+      "sound": 0.552291,
+      "thermal": 0.718405,
+      "vibration": 0.658796,
+      "vision": 0.661098,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 285
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.383638,
+        "x": 76.342141,
+        "y": -138.733398
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.327078,
+        "x": 157.382317,
+        "y": -5.939419
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.252325,
+        "x": 5.884319,
+        "y": -73.893331
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7259,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7299,
+      "flower_phase": 4.811428,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 43.333868,
+      "y": -2.177623,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.366613,
+    "interrupted": false,
+    "motion": {
+      "distance": 111.813482,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.586599,
+      "pain": 0.3554,
+      "scent": 0.504366,
+      "sound": 0.555409,
+      "thermal": 0.713708,
+      "vibration": 0.661282,
+      "vision": 0.667219,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 286
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.188709,
+        "x": 157.423833,
+        "y": -5.973387
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.22118,
+        "x": 5.835659,
+        "y": -73.853519
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.43737,
+        "x": 73.966772,
+        "y": -33.686674
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7264,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7289,
+      "flower_phase": 4.863788,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 47.133096,
+      "y": -2.101012,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.399946,
+    "interrupted": false,
+    "motion": {
+      "distance": 108.013481,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.588138,
+      "pain": 0.3554,
+      "scent": 0.505627,
+      "sound": 0.525988,
+      "thermal": 0.708478,
+      "vibration": 0.662668,
+      "vision": 0.671719,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 287
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.126691,
+        "x": 5.807787,
+        "y": -73.830715
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.153899,
+        "x": 73.932914,
+        "y": -33.658972
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.106599,
+        "x": 61.513707,
+        "y": 40.114242
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7269,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7279,
+      "flower_phase": 4.916148,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 50.932324,
+      "y": -2.024402,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.433279,
+    "interrupted": false,
+    "motion": {
+      "distance": 104.213481,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589561,
+      "pain": 0.3554,
+      "scent": 0.504899,
+      "sound": 0.591946,
+      "thermal": 0.702757,
+      "vibration": 0.662556,
+      "vision": 0.674321,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 288
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.458523,
+        "x": 74.033789,
+        "y": -33.741506
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.496463,
+        "x": 61.622929,
+        "y": 40.024879
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.456024,
+        "x": -8.737217,
+        "y": 73.004917
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7274,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7269,
+      "flower_phase": 4.968508,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 54.731552,
+      "y": -1.947791,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.466612,
+    "interrupted": false,
+    "motion": {
+      "distance": 100.413481,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.591021,
+      "pain": 0.3554,
+      "scent": 0.502226,
+      "sound": 0.591276,
+      "thermal": 0.696587,
+      "vibration": 0.6617,
+      "vision": 0.675411,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 289
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.260088,
+        "x": 61.680148,
+        "y": 39.978063
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.395642,
+        "x": -8.824258,
+        "y": 73.076133
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.106745,
+        "x": -75.36294,
+        "y": 39.276533
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7279,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7259,
+      "flower_phase": 5.020868,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 58.53078,
+      "y": -1.871181,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.499945,
+    "interrupted": false,
+    "motion": {
+      "distance": 96.61348,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.592278,
+      "pain": 0.3554,
+      "scent": 0.497756,
+      "sound": 0.545422,
+      "thermal": 0.690016,
+      "vibration": 0.659094,
+      "vision": 0.674566,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 290
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.064862,
+        "x": -8.809988,
+        "y": 73.064458
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.317795,
+        "x": -75.432855,
+        "y": 39.333736
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.295236,
+        "x": -63.33818,
+        "y": -37.652409
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7284,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7249,
+      "flower_phase": 5.073228,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 62.330008,
+      "y": -1.79457,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.533278,
+    "interrupted": false,
+    "motion": {
+      "distance": 92.81348,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.593473,
+      "pain": 0.3554,
+      "scent": 0.491708,
+      "sound": 0.574915,
+      "thermal": 0.683093,
+      "vibration": 0.655486,
+      "vision": 0.672288,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 291
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.016126,
+        "x": -75.436403,
+        "y": 39.336639
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.439887,
+        "x": -63.434955,
+        "y": -37.573229
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.054819,
+        "x": 76.354201,
+        "y": -138.743265
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7289,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7239,
+      "flower_phase": 5.125588,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 66.129236,
+      "y": -1.71796,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.566611,
+    "interrupted": false,
+    "motion": {
+      "distance": 89.01348,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.594489,
+      "pain": 0.3554,
+      "scent": 0.484326,
+      "sound": 0.60523,
+      "thermal": 0.675873,
+      "vibration": 0.650454,
+      "vision": 0.668511,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 292
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.245365,
+        "x": -63.488935,
+        "y": -37.529063
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.100432,
+        "x": 76.332106,
+        "y": -138.725187
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.354553,
+        "x": 157.501835,
+        "y": -6.037207
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7294,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7229,
+      "flower_phase": 5.177948,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 69.928464,
+      "y": -1.641349,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.599944,
+    "interrupted": false,
+    "motion": {
+      "distance": 85.213479,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595292,
+      "pain": 0.3554,
+      "scent": 0.475844,
+      "sound": 0.612559,
+      "thermal": 0.668409,
+      "vibration": 0.643955,
+      "vision": 0.663349,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 293
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.093874,
+        "x": 76.352758,
+        "y": -138.742084
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.397396,
+        "x": 157.589262,
+        "y": -6.108738
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.101605,
+        "x": 5.785434,
+        "y": -73.812426
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7299,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7219,
+      "flower_phase": 5.230308,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 73.727692,
+      "y": -1.564739,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.633277,
+    "interrupted": false,
+    "motion": {
+      "distance": 81.413479,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595856,
+      "pain": 0.3554,
+      "scent": 0.466468,
+      "sound": 0.585919,
+      "thermal": 0.660758,
+      "vibration": 0.635982,
+      "vision": 0.656916,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 294
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.430578,
+        "x": 157.683989,
+        "y": -6.186242
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.20907,
+        "x": 5.739439,
+        "y": -73.774793
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.464439,
+        "x": 74.135966,
+        "y": -33.825105
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7304,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7209,
+      "flower_phase": 5.282668,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 77.52692,
+      "y": -1.488128,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.66661,
+    "interrupted": false,
+    "motion": {
+      "distance": 77.613479,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.596168,
+      "pain": 0.3554,
+      "scent": 0.456371,
+      "sound": 0.602279,
+      "thermal": 0.652979,
+      "vibration": 0.62658,
+      "vision": 0.649324,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 295
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.391388,
+        "x": 5.825544,
+        "y": -73.845243
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.426439,
+        "x": 74.042149,
+        "y": -33.748346
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.152622,
+        "x": 61.646571,
+        "y": 40.005535
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7309,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7199,
+      "flower_phase": 5.335028,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 81.326148,
+      "y": -1.411518,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.699943,
+    "interrupted": false,
+    "motion": {
+      "distance": 73.813478,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.59619,
+      "pain": 0.3554,
+      "scent": 0.445692,
+      "sound": 0.591081,
+      "thermal": 0.645132,
+      "vibration": 0.615673,
+      "vision": 0.640603,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 296
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.124226,
+        "x": 74.014819,
+        "y": -33.725985
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.107928,
+        "x": 61.622827,
+        "y": 40.024962
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.002168,
+        "x": -8.809511,
+        "y": 73.064068
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7314,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7189,
+      "flower_phase": 5.387388,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 85.125376,
+      "y": -1.334907,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.733276,
+    "interrupted": false,
+    "motion": {
+      "distance": 70.013478,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.596046,
+      "pain": 0.3554,
+      "scent": 0.434543,
+      "sound": 0.6086,
+      "thermal": 0.637276,
+      "vibration": 0.603907,
+      "vision": 0.631121,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 297
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.238269,
+        "x": 61.675246,
+        "y": 39.982074
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.303697,
+        "x": -8.876324,
+        "y": 73.118733
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.24949,
+        "x": -75.491291,
+        "y": 39.381547
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7319,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7179,
+      "flower_phase": 5.439748,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 88.924604,
+      "y": -1.258297,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.766609,
+    "interrupted": false,
+    "motion": {
+      "distance": 66.213478,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595654,
+      "pain": 0.3554,
+      "scent": 0.423012,
+      "sound": 0.54305,
+      "thermal": 0.629471,
+      "vibration": 0.590997,
+      "vision": 0.620766,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 298
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.001548,
+        "x": -8.876664,
+        "y": 73.119012
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.46782,
+        "x": -75.388371,
+        "y": 39.297339
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.171665,
+        "x": -63.526701,
+        "y": -37.498163
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7324,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7169,
+      "flower_phase": 5.492108,
+      "footstep_rate_hz": 1.6,
+      "heading": 0.020162,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 92.723832,
+      "y": -1.181686,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.799942,
+    "interrupted": false,
+    "motion": {
+      "distance": 62.413477,
+      "moving": true,
+      "target": "loom_room"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595058,
+      "pain": 0.3554,
+      "scent": 0.411168,
+      "sound": 0.600549,
+      "thermal": 0.621776,
+      "vibration": 0.577231,
+      "vision": 0.609697,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 299
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.365919,
+        "x": -75.468873,
+        "y": 39.363204
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.401974,
+        "x": -63.438267,
+        "y": -37.570518
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.136613,
+        "x": 76.382813,
+        "y": -138.766674
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7329,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7159,
+      "flower_phase": 5.544468,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 92.236196,
+      "y": 2.586896,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.833275,
+    "interrupted": false,
+    "motion": {
+      "distance": 133.265521,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.592704,
+      "pain": 0.3554,
+      "scent": 0.419089,
+      "sound": 0.584385,
+      "thermal": 0.614251,
+      "vibration": 0.559972,
+      "vision": 0.610906,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 300
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.001563,
+        "x": -63.438611,
+        "y": -37.570237
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.28091,
+        "x": 76.321013,
+        "y": -138.71611
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.008764,
+        "x": 157.682061,
+        "y": -6.184664
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7334,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7149,
+      "flower_phase": 5.596828,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 91.74856,
+      "y": 6.355478,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.866608,
+    "interrupted": false,
+    "motion": {
+      "distance": 129.465521,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.590313,
+      "pain": 0.3554,
+      "scent": 0.426268,
+      "sound": 0.58061,
+      "thermal": 0.606952,
+      "vibration": 0.542643,
+      "vision": 0.611424,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 301
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.073201,
+        "x": 76.304909,
+        "y": -138.702934
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.113433,
+        "x": 157.707016,
+        "y": -6.205082
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.093798,
+        "x": 5.804908,
+        "y": -73.828359
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7339,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7139,
+      "flower_phase": 5.649188,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 91.260924,
+      "y": 10.12406,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.899941,
+    "interrupted": false,
+    "motion": {
+      "distance": 125.665521,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.591161,
+      "pain": 0.3554,
+      "scent": 0.432612,
+      "sound": 0.536313,
+      "thermal": 0.599936,
+      "vibration": 0.540019,
+      "vision": 0.618542,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 302
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.414955,
+        "x": 157.798306,
+        "y": -6.279774
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.390938,
+        "x": 5.718902,
+        "y": -73.75799
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.131245,
+        "x": 73.985945,
+        "y": -33.702361
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7344,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7129,
+      "flower_phase": 5.701548,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 90.773288,
+      "y": 13.892642,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.933274,
+    "interrupted": false,
+    "motion": {
+      "distance": 121.865521,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.592792,
+      "pain": 0.3554,
+      "scent": 0.438024,
+      "sound": 0.573166,
+      "thermal": 0.593255,
+      "vibration": 0.541098,
+      "vision": 0.626658,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 303
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.34087,
+        "x": 5.793893,
+        "y": -73.819347
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.378368,
+        "x": 73.902704,
+        "y": -33.634255
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.283417,
+        "x": 61.612894,
+        "y": 40.033089
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7449,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7089,
+      "flower_phase": 5.753908,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 90.285652,
+      "y": 17.661224,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.966607,
+    "interrupted": true,
+    "motion": {
+      "distance": 118.065522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.594372,
+      "pain": 0.3554,
+      "scent": 0.442408,
+      "sound": 0.550523,
+      "thermal": 0.586962,
+      "vibration": 0.542152,
+      "vision": 0.633813,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 304
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.035366,
+        "x": 73.910484,
+        "y": -33.640621
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.395815,
+        "x": 61.525815,
+        "y": 40.104336
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.257616,
+        "x": -8.93334,
+        "y": 73.165383
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7454,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7079,
+      "flower_phase": 5.806268,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 89.798016,
+      "y": 21.429806,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 5.99994,
+    "interrupted": false,
+    "motion": {
+      "distance": 114.265522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595826,
+      "pain": 0.3554,
+      "scent": 0.445679,
+      "sound": 0.589868,
+      "thermal": 0.581103,
+      "vibration": 0.542889,
+      "vision": 0.639773,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 305
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.311897,
+        "x": 61.457198,
+        "y": 40.160477
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.04571,
+        "x": -8.923284,
+        "y": 73.157155
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.469444,
+        "x": -75.365595,
+        "y": 39.278704
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7459,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7069,
+      "flower_phase": 5.858628,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 89.31038,
+      "y": 25.198388,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.033273,
+    "interrupted": false,
+    "motion": {
+      "distance": 110.465522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.597161,
+      "pain": 0.3554,
+      "scent": 0.447765,
+      "sound": 0.569023,
+      "thermal": 0.575723,
+      "vibration": 0.543365,
+      "vision": 0.64449,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 306
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.283354,
+        "x": -8.860946,
+        "y": 73.106151
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.179286,
+        "x": -75.405038,
+        "y": 39.310975
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.405775,
+        "x": -63.527882,
+        "y": -37.497197
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7464,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7059,
+      "flower_phase": 5.910988,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 88.822744,
+      "y": 28.96697,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.066606,
+    "interrupted": false,
+    "motion": {
+      "distance": 106.665522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598377,
+      "pain": 0.3554,
+      "scent": 0.448618,
+      "sound": 0.625811,
+      "thermal": 0.570864,
+      "vibration": 0.543622,
+      "vision": 0.647928,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 307
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.390984,
+        "x": -75.319021,
+        "y": 39.240598
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.436242,
+        "x": -63.431909,
+        "y": -37.57572
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.290738,
+        "x": 76.368871,
+        "y": -138.755267
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7469,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7049,
+      "flower_phase": 5.963348,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 88.335108,
+      "y": 32.735552,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.099939,
+    "interrupted": false,
+    "motion": {
+      "distance": 102.865522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.599381,
+      "pain": 0.3554,
+      "scent": 0.450138,
+      "sound": 0.582893,
+      "thermal": 0.566563,
+      "vibration": 0.543686,
+      "vision": 0.651435,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 308
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.465095,
+        "x": -63.53423,
+        "y": -37.492003
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.163863,
+        "x": 76.404921,
+        "y": -138.784762
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.369523,
+        "x": 157.879601,
+        "y": -6.346288
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7474,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7039,
+      "flower_phase": 6.015708,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 87.847472,
+      "y": 36.504134,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.133272,
+    "interrupted": false,
+    "motion": {
+      "distance": 99.065522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.600006,
+      "pain": 0.3554,
+      "scent": 0.453724,
+      "sound": 0.644474,
+      "thermal": 0.562852,
+      "vibration": 0.543141,
+      "vision": 0.655785,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 309
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.465835,
+        "x": 76.302437,
+        "y": -138.700912
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.160154,
+        "x": 157.844367,
+        "y": -6.31746
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.452694,
+        "x": 5.6943,
+        "y": -73.737862
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7479,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7029,
+      "flower_phase": 6.068068,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 87.359836,
+      "y": 40.272716,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.166605,
+    "interrupted": false,
+    "motion": {
+      "distance": 95.265522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.600367,
+      "pain": 0.3554,
+      "scent": 0.456073,
+      "sound": 0.606211,
+      "thermal": 0.559759,
+      "vibration": 0.541834,
+      "vision": 0.658528,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 310
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.445056,
+        "x": 157.942279,
+        "y": -6.39757
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.35083,
+        "x": 5.617117,
+        "y": -73.674713
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.131761,
+        "x": 73.939471,
+        "y": -33.664338
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7484,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7019,
+      "flower_phase": 6.120428,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 86.8722,
+      "y": 44.041298,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.199938,
+    "interrupted": false,
+    "motion": {
+      "distance": 91.465522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.600441,
+      "pain": 0.3554,
+      "scent": 0.457124,
+      "sound": 0.633977,
+      "thermal": 0.557309,
+      "vibration": 0.539669,
+      "vision": 0.659557,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 311
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.360617,
+        "x": 5.537781,
+        "y": -73.609802
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.120709,
+        "x": 73.912915,
+        "y": -33.64261
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.282345,
+        "x": 61.519314,
+        "y": 40.109655
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7489,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.7009,
+      "flower_phase": 6.172788,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 86.384564,
+      "y": 47.80988,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.233271,
+    "interrupted": false,
+    "motion": {
+      "distance": 87.665522,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.60022,
+      "pain": 0.3554,
+      "scent": 0.456848,
+      "sound": 0.603883,
+      "thermal": 0.55552,
+      "vibration": 0.536629,
+      "vision": 0.658834,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 312
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.284605,
+        "x": 73.975528,
+        "y": -33.693839
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.058291,
+        "x": 61.532138,
+        "y": 40.099163
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.299187,
+        "x": -8.926767,
+        "y": 73.160005
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7494,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6999,
+      "flower_phase": 6.225148,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 85.896928,
+      "y": 51.578462,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.266604,
+    "interrupted": false,
+    "motion": {
+      "distance": 83.865523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.599742,
+      "pain": 0.3554,
+      "scent": 0.455254,
+      "sound": 0.585109,
+      "thermal": 0.554405,
+      "vibration": 0.532897,
+      "vision": 0.656448,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 313
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.190259,
+        "x": 61.573995,
+        "y": 40.064916
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.288697,
+        "x": -8.99028,
+        "y": 73.211971
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.328714,
+        "x": -75.391338,
+        "y": 39.299766
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7499,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6989,
+      "flower_phase": 6.277508,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 85.409292,
+      "y": 55.347044,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.299937,
+    "interrupted": false,
+    "motion": {
+      "distance": 80.065523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598989,
+      "pain": 0.3554,
+      "scent": 0.452383,
+      "sound": 0.602805,
+      "thermal": 0.553974,
+      "vibration": 0.528415,
+      "vision": 0.652396,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 7,
+    "tick": 314
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.343431,
+        "x": -9.065835,
+        "y": 73.273789
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.022184,
+        "x": -75.386458,
+        "y": 39.295773
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.241603,
+        "x": -63.481077,
+        "y": -37.535492
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7504,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6979,
+      "flower_phase": 0.046683,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 84.921656,
+      "y": 59.115626,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.33327,
+    "interrupted": false,
+    "motion": {
+      "distance": 76.265523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.598029,
+      "pain": 0.3554,
+      "scent": 0.448308,
+      "sound": 0.565169,
+      "thermal": 0.554229,
+      "vibration": 0.523504,
+      "vision": 0.646889,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 315
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": 0.470618,
+        "x": -75.282922,
+        "y": 39.211062
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.40034,
+        "x": -63.393002,
+        "y": -37.607553
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.281426,
+        "x": 76.364351,
+        "y": -138.751569
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7509,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6969,
+      "flower_phase": 0.099043,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 84.43402,
+      "y": 62.884208,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.366603,
+    "interrupted": false,
+    "motion": {
+      "distance": 72.465523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.59689,
+      "pain": 0.3554,
+      "scent": 0.44312,
+      "sound": 0.57378,
+      "thermal": 0.555168,
+      "vibration": 0.518309,
+      "vision": 0.640063,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 316
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.144053,
+        "x": -63.424694,
+        "y": -37.581623
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.062913,
+        "x": 76.378192,
+        "y": -138.762893
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.359356,
+        "x": 157.863221,
+        "y": -6.332886
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7514,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6959,
+      "flower_phase": 0.151403,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 83.946384,
+      "y": 66.65279,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.399936,
+    "interrupted": false,
+    "motion": {
+      "distance": 68.665523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.595618,
+      "pain": 0.3554,
+      "scent": 0.436925,
+      "sound": 0.582823,
+      "thermal": 0.556784,
+      "vibration": 0.513054,
+      "vision": 0.632113,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 317
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.071403,
+        "x": 76.393901,
+        "y": -138.775746
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.211327,
+        "x": 157.909713,
+        "y": -6.370925
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.445884,
+        "x": 5.439687,
+        "y": -73.529543
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7519,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6949,
+      "flower_phase": 0.203763,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 83.458748,
+      "y": 70.421372,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.433269,
+    "interrupted": false,
+    "motion": {
+      "distance": 64.865523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.594042,
+      "pain": 0.3554,
+      "scent": 0.434068,
+      "sound": 0.537547,
+      "thermal": 0.559066,
+      "vibration": 0.507887,
+      "vision": 0.626222,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 318
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": 0.014459,
+        "x": 157.912894,
+        "y": -6.373528
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.485081,
+        "x": 5.332969,
+        "y": -73.442228
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.349312,
+        "x": 73.898679,
+        "y": -33.630963
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7524,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6939,
+      "flower_phase": 0.256123,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 82.971112,
+      "y": 74.189954,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.466602,
+    "interrupted": false,
+    "motion": {
+      "distance": 61.065523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.591569,
+      "pain": 0.3554,
+      "scent": 0.447624,
+      "sound": 0.543252,
+      "thermal": 0.561995,
+      "vibration": 0.502917,
+      "vision": 0.631792,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 319
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": 0.072851,
+        "x": 5.348996,
+        "y": -73.455341
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": -0.205141,
+        "x": 73.853548,
+        "y": -33.594038
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.327527,
+        "x": 61.646051,
+        "y": 40.005961
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7529,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6929,
+      "flower_phase": 0.308483,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 82.483476,
+      "y": 77.958536,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.499935,
+    "interrupted": false,
+    "motion": {
+      "distance": 57.265523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.589006,
+      "pain": 0.3554,
+      "scent": 0.461117,
+      "sound": 0.55639,
+      "thermal": 0.565549,
+      "vibration": 0.498222,
+      "vision": 0.637108,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 320
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.340359,
+        "x": 73.928427,
+        "y": -33.655303
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.018169,
+        "x": 61.650048,
+        "y": 40.002691
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.218353,
+        "x": -9.017797,
+        "y": 73.234485
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7534,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6919,
+      "flower_phase": 0.360843,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 81.99584,
+      "y": 81.727118,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.533268,
+    "interrupted": false,
+    "motion": {
+      "distance": 53.465523,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.586358,
+      "pain": 0.3554,
+      "scent": 0.474526,
+      "sound": 0.504313,
+      "thermal": 0.569701,
+      "vibration": 0.493793,
+      "vision": 0.642165,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 321
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.112206,
+        "x": 61.674733,
+        "y": 39.982494
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.081496,
+        "x": -9.035726,
+        "y": 73.249154
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.132172,
+        "x": -75.312,
+        "y": 39.234853
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7539,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6909,
+      "flower_phase": 0.413203,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 81.508204,
+      "y": 85.4957,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.566601,
+    "interrupted": false,
+    "motion": {
+      "distance": 49.665524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.583664,
+      "pain": 0.3554,
+      "scent": 0.487824,
+      "sound": 0.51428,
+      "thermal": 0.57442,
+      "vibration": 0.489766,
+      "vision": 0.647028,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 322
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": -0.233563,
+        "x": -9.08711,
+        "y": 73.291195
+      },
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.159318,
+        "x": -75.34705,
+        "y": 39.26353
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": -0.367426,
+        "x": -63.505528,
+        "y": -37.515486
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7544,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6899,
+      "flower_phase": 0.465563,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 81.020568,
+      "y": 89.264282,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.599934,
+    "interrupted": false,
+    "motion": {
+      "distance": 45.865524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.580924,
+      "pain": 0.3554,
+      "scent": 0.500965,
+      "sound": 0.546076,
+      "thermal": 0.579669,
+      "vibration": 0.486081,
+      "vision": 0.651656,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 323
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:04",
+        "pulse": -0.302251,
+        "x": -75.413545,
+        "y": 39.317935
+      },
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.026665,
+        "x": -63.499662,
+        "y": -37.520286
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.243553,
+        "x": 76.447483,
+        "y": -138.819586
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7549,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6889,
+      "flower_phase": 0.517923,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 80.532932,
+      "y": 93.032864,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.633267,
+    "interrupted": false,
+    "motion": {
+      "distance": 42.065524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.578158,
+      "pain": 0.3554,
+      "scent": 0.51388,
+      "sound": 0.48401,
+      "thermal": 0.585409,
+      "vibration": 0.482783,
+      "vision": 0.656043,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 324
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:05",
+        "pulse": 0.20503,
+        "x": -63.454555,
+        "y": -37.557191
+      },
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": 0.00671,
+        "x": 76.448959,
+        "y": -138.820794
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.186049,
+        "x": 157.871963,
+        "y": -6.340039
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7554,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6879,
+      "flower_phase": 0.570283,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 80.045296,
+      "y": 96.801446,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.6666,
+    "interrupted": false,
+    "motion": {
+      "distance": 38.265524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.575376,
+      "pain": 0.356823,
+      "scent": 0.526452,
+      "sound": 0.460931,
+      "thermal": 0.591595,
+      "vibration": 0.479829,
+      "vision": 0.660109,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 325
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:06",
+        "pulse": -0.487381,
+        "x": 76.341735,
+        "y": -138.733065
+      },
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.431123,
+        "x": 157.777116,
+        "y": -6.262437
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.167412,
+        "x": 5.312165,
+        "y": -73.425207
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7559,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6869,
+      "flower_phase": 0.622643,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "drum_court",
+      "wetness": 0.1,
+      "x": 79.55766,
+      "y": 100.570028,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.699933,
+    "interrupted": false,
+    "motion": {
+      "distance": 34.465524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.572591,
+      "pain": 0.358827,
+      "scent": 0.538477,
+      "sound": 0.502837,
+      "thermal": 0.598181,
+      "vibration": 0.477191,
+      "vision": 0.663721,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 326
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:07",
+        "pulse": -0.362617,
+        "x": 157.69734,
+        "y": -6.197166
+      },
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.169863,
+        "x": 5.274795,
+        "y": -73.394632
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.321362,
+        "x": 73.999127,
+        "y": -33.713148
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7564,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6859,
+      "flower_phase": 0.675003,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "nursery_nest",
+      "wetness": 0.1,
+      "x": 79.070024,
+      "y": 104.33861,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.733266,
+    "interrupted": false,
+    "motion": {
+      "distance": 30.665524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.569826,
+      "pain": 0.360677,
+      "scent": 0.549576,
+      "sound": 0.428557,
+      "thermal": 0.605116,
+      "vibration": 0.474834,
+      "vision": 0.666618,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 327
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:00",
+        "pulse": -0.008172,
+        "x": 5.272997,
+        "y": -73.393161
+      },
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.253433,
+        "x": 74.054882,
+        "y": -33.758766
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": 0.079729,
+        "x": 61.692273,
+        "y": 39.968143
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7569,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6849,
+      "flower_phase": 0.727363,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "nursery_nest",
+      "wetness": 0.1,
+      "x": 78.582388,
+      "y": 108.107192,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.766599,
+    "interrupted": false,
+    "motion": {
+      "distance": 26.865524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.56712,
+      "pain": 0.362252,
+      "scent": 0.559026,
+      "sound": 0.44412,
+      "thermal": 0.612347,
+      "vibration": 0.472714,
+      "vision": 0.66829,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 328
+  },
+  {
+    "agent_events": [
+      {
+        "agent_id": "integrated_deep_time_world:01",
+        "pulse": 0.355356,
+        "x": 74.13306,
+        "y": -33.82273
+      },
+      {
+        "agent_id": "integrated_deep_time_world:02",
+        "pulse": -0.276291,
+        "x": 61.631489,
+        "y": 40.017875
+      },
+      {
+        "agent_id": "integrated_deep_time_world:03",
+        "pulse": 0.437808,
+        "x": -8.990792,
+        "y": 73.21239
+      }
+    ],
+    "avatar": {
+      "affect": 0.55,
+      "attention": 0.7574,
+      "breath_rate_hz": 0.6659,
+      "cold": 0.16,
+      "energy": 0.6839,
+      "flower_phase": 0.779723,
+      "footstep_rate_hz": 1.6,
+      "heading": 1.699476,
+      "pain": 0.3554,
+      "place": "nursery_nest",
+      "wetness": 0.1,
+      "x": 78.094752,
+      "y": 111.875774,
+      "z": 3.941699
+    },
+    "conflict_events": 2,
+    "elapsed_seconds": 6.799932,
+    "interrupted": false,
+    "motion": {
+      "distance": 23.065524,
+      "moving": true,
+      "target": "nursery_nest"
+    },
+    "reload_successes": 3,
+    "rollback_events": 1,
+    "sensory": {
+      "affect": 0.56453,
+      "pain": 0.363334,
+      "scent": 0.565516,
+      "sound": 0.453842,
+      "thermal": 0.619819,
+      "vibration": 0.470755,
+      "vision": 0.667795,
+      "wetness": 0.115552
+    },
+    "storage_snapshots": 8,
+    "tick": 329
+  }
+];

@@ -856,3 +856,6 @@ Report 240 consolidates the durable browser game loop into an integrated browser
 
 
 Report 241 turns the integrated browser-world line toward first-person artificial life. It gives each agent body costs, egocentric perception, ego/self-boundary appraisal, ownership, private workspace frames, relationship memory, bounded refusal, recovery paths, and readable behavior expression inside a browser-world v1 scaffold. The run passes with readiness 0.983912 and weakest-channel score 0.860465. The weakest channel is body-to-affect coupling, correctly marking that embodied affect dynamics need to become richer before the agents can feel like durable little people rather than table-driven interiors.
+
+
+Report 242 deepens embodied affect dynamics inside browser world v2. It generates 120 sensor-rate ticks, 120 homeostatic drive frames, 120 lagged affect dynamics frames, 120 coupling traces, 120 care opportunity frames, 120 behavior modulation frames, and 120 browser-world v2 ticks. The run passes with readiness 0.965324 and weakest-channel score 0.870476. The weakest channel remains body-to-affect coupling, but it is now explicitly lag-aware and improved from the prior pressure point. The strongest ablation is removing body-to-affect coupling, which drops readiness to 0.655324.

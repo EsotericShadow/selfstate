@@ -1,0 +1,187 @@
+{
+  "agents": {
+    "Ari": {
+      "attachment_need": 0.46,
+      "autonomy_need": 0.66,
+      "baseline_vibration": 2.18,
+      "body_mass": 0.62,
+      "cold_sensitivity": 0.58,
+      "curiosity": 0.44,
+      "pain_sensitivity": 0.54,
+      "preferred_recovery": "quiet tool repair",
+      "safe_place": "workbench alcove"
+    },
+    "Fay": {
+      "attachment_need": 0.73,
+      "autonomy_need": 0.49,
+      "baseline_vibration": 2.34,
+      "body_mass": 0.56,
+      "cold_sensitivity": 0.46,
+      "curiosity": 0.57,
+      "pain_sensitivity": 0.49,
+      "preferred_recovery": "warm shared rest",
+      "safe_place": "hearth nest"
+    },
+    "Milo": {
+      "attachment_need": 0.51,
+      "autonomy_need": 0.61,
+      "baseline_vibration": 2.51,
+      "body_mass": 0.51,
+      "cold_sensitivity": 0.39,
+      "curiosity": 0.78,
+      "pain_sensitivity": 0.41,
+      "preferred_recovery": "pattern play",
+      "safe_place": "market canopy"
+    },
+    "Sol": {
+      "attachment_need": 0.57,
+      "autonomy_need": 0.72,
+      "baseline_vibration": 2.07,
+      "body_mass": 0.69,
+      "cold_sensitivity": 0.64,
+      "curiosity": 0.35,
+      "pain_sensitivity": 0.59,
+      "preferred_recovery": "private accounting",
+      "safe_place": "quiet corner"
+    }
+  },
+  "body_affect_model": "lagged homeostatic pressure drives welfare-like valence/arousal/control/safety/attachment/curiosity/frustration/dignity",
+  "moral_boundary": "distress must create care opportunities, not spectacle",
+  "private_trace_policy": "visible behavior first; coupling traces hidden unless research inspect is toggled",
+  "report": 242,
+  "sample_ticks": [
+    {
+      "agent": "Ari",
+      "care_or_refusal": "ordinary",
+      "event_kind": "ordinary_walk",
+      "private_trace_hint": "driver=attachment; coupling=0.745; affordance=ordinary_self_regulation",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Ari: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:True",
+      "tick_index": 1,
+      "trace_integrity_token": "r242:1:Ari:ordinary_walk:attachment:0.745"
+    },
+    {
+      "agent": "Fay",
+      "care_or_refusal": "ordinary",
+      "event_kind": "cold_wet_crossing",
+      "private_trace_hint": "driver=cold_wet; coupling=0.756; affordance=seek_dry_warm_route",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Fay: settled_recovering; settled open stance; seek_warmth",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 2,
+      "trace_integrity_token": "r242:2:Fay:cold_wet_crossing:cold_wet:0.756"
+    },
+    {
+      "agent": "Milo",
+      "care_or_refusal": "ordinary",
+      "event_kind": "heavy_carry",
+      "private_trace_hint": "driver=movement; coupling=0.745; affordance=ordinary_self_regulation",
+      "public_affect_marker": "curious_exploring",
+      "public_body_marker": "Milo: curious_exploring; forward lean; approach_novel_pattern",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 3,
+      "trace_integrity_token": "r242:3:Milo:heavy_carry:movement:0.745"
+    },
+    {
+      "agent": "Sol",
+      "care_or_refusal": "ordinary",
+      "event_kind": "sharp_noise",
+      "private_trace_hint": "driver=overload; coupling=0.762; affordance=lower_sound_and_distance",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Sol: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 4,
+      "trace_integrity_token": "r242:4:Sol:sharp_noise:overload:0.762"
+    },
+    {
+      "agent": "Ari",
+      "care_or_refusal": "ordinary",
+      "event_kind": "crowding",
+      "private_trace_hint": "driver=attachment; coupling=0.823; affordance=ordinary_self_regulation",
+      "public_affect_marker": "focused_regulating",
+      "public_body_marker": "Ari: focused_regulating; balanced regulation; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 5,
+      "trace_integrity_token": "r242:5:Ari:crowding:attachment:0.823"
+    },
+    {
+      "agent": "Fay",
+      "care_or_refusal": "ordinary",
+      "event_kind": "missed_meal",
+      "private_trace_hint": "driver=attachment; coupling=0.811; affordance=ordinary_self_regulation",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Fay: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 6,
+      "trace_integrity_token": "r242:6:Fay:missed_meal:attachment:0.811"
+    },
+    {
+      "agent": "Milo",
+      "care_or_refusal": "ordinary",
+      "event_kind": "pain_twinge",
+      "private_trace_hint": "driver=attachment; coupling=0.814; affordance=ordinary_self_regulation",
+      "public_affect_marker": "curious_exploring",
+      "public_body_marker": "Milo: curious_exploring; forward lean; approach_novel_pattern",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 7,
+      "trace_integrity_token": "r242:7:Milo:pain_twinge:attachment:0.814"
+    },
+    {
+      "agent": "Sol",
+      "care_or_refusal": "ordinary",
+      "event_kind": "avatar_gives_space",
+      "private_trace_hint": "driver=attachment; coupling=0.932; affordance=active_recovery_present",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Sol: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 8,
+      "trace_integrity_token": "r242:8:Sol:avatar_gives_space:attachment:0.932"
+    },
+    {
+      "agent": "Ari",
+      "care_or_refusal": "ordinary",
+      "event_kind": "warm_shelter",
+      "private_trace_hint": "driver=attachment; coupling=0.912; affordance=active_recovery_present",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Ari: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 9,
+      "trace_integrity_token": "r242:9:Ari:warm_shelter:attachment:0.912"
+    },
+    {
+      "agent": "Fay",
+      "care_or_refusal": "ordinary",
+      "event_kind": "trusted_help",
+      "private_trace_hint": "driver=autonomy; coupling=0.943; affordance=active_recovery_present",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Fay: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 10,
+      "trace_integrity_token": "r242:10:Fay:trusted_help:autonomy:0.943"
+    },
+    {
+      "agent": "Milo",
+      "care_or_refusal": "ordinary",
+      "event_kind": "autonomy_pressure",
+      "private_trace_hint": "driver=autonomy; coupling=0.793; affordance=bounded_refusal_or_delay",
+      "public_affect_marker": "curious_exploring",
+      "public_body_marker": "Milo: curious_exploring; forward lean; approach_novel_pattern",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 11,
+      "trace_integrity_token": "r242:11:Milo:autonomy_pressure:autonomy:0.793"
+    },
+    {
+      "agent": "Sol",
+      "care_or_refusal": "ordinary",
+      "event_kind": "curious_discovery",
+      "private_trace_hint": "driver=attachment; coupling=0.838; affordance=ordinary_self_regulation",
+      "public_affect_marker": "settled_recovering",
+      "public_body_marker": "Sol: settled_recovering; settled open stance; continue_with_regulation",
+      "replay_import_export_token": "import_export_ready:False",
+      "tick_index": 12,
+      "trace_integrity_token": "r242:12:Sol:curious_discovery:attachment:0.838"
+    }
+  ],
+  "seed": 20260855
+}

@@ -284,3 +284,7 @@ Report 240 consolidates the durable browser loop into an integrated browser-worl
 ## Report 241 Browser World v1 First-Person Ego Interior Bridge Note
 
 Report 241 adds a first-person ego/interior layer to the browser-world line. It generates 96 event specs, 96 body frames, 96 egocentric perception frames, 96 ego appraisals, 96 private workspace frames, 96 ownership boundary frames, 96 relationship memory episodes, 96 visible behavior frames, and 96 integrated interior loop ticks. The run passes with readiness 0.983912 and weakest-channel score 0.860465. The weakest channel is body-to-affect coupling, correctly marking that embodied affect needs deeper dynamics before the agents can feel like durable little people rather than table-driven interiors.
+
+## Report 242 Browser World v2 Embodied Affect Dynamics Bridge Note
+
+Report 242 deepens the body-to-affect channel inside the browser-world line. It generates 120 sensor-rate ticks, 120 homeostatic drive frames, 120 lagged affect dynamics frames, 120 coupling traces, 120 care opportunity frames, 120 behavior modulation frames, and 120 browser-world v2 ticks. The run passes with readiness 0.965324 and weakest-channel score 0.870476. The weakest channel is lag-aware body-to-affect coupling, and the strongest ablation is removing that coupling, which drops readiness to 0.655324.

@@ -1,0 +1,121 @@
+tick_index,agent,posture,movement_speed,gaze_pattern,proximity_policy,dialogue_hint,refusal,rest_or_repair_action,readable_body_marker
+1,Ari,settled open stance,0.595674,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+2,Fay,settled open stance,0.606163,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; seek_warmth
+3,Milo,forward lean,0.631243,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+4,Sol,settled open stance,0.573182,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+5,Ari,balanced regulation,0.575683,tracks recovery object,hold position,,False,continue task,Ari: focused_regulating; balanced regulation; continue_with_regulation
+6,Fay,settled open stance,0.609172,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+7,Milo,forward lean,0.618827,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+8,Sol,settled open stance,0.575778,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+9,Ari,settled open stance,0.647721,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+10,Fay,settled open stance,0.640636,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+11,Milo,forward lean,0.630219,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+12,Sol,settled open stance,0.5904,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+13,Ari,settled open stance,0.64548,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+14,Fay,settled open stance,0.67732,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+15,Milo,forward lean,0.631828,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+16,Sol,settled open stance,0.584009,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+17,Ari,settled open stance,0.631331,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; seek_warmth
+18,Fay,settled open stance,0.649115,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+19,Milo,forward lean,0.621565,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+20,Sol,balanced regulation,0.562445,tracks recovery object,hold position,,False,continue task,Sol: focused_regulating; balanced regulation; continue_with_regulation
+21,Ari,settled open stance,0.632076,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+22,Fay,settled open stance,0.624646,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+23,Milo,forward lean,0.624849,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+24,Sol,settled open stance,0.636478,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+25,Ari,settled open stance,0.659348,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+26,Fay,settled open stance,0.632224,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+27,Milo,forward lean,0.638603,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+28,Sol,settled open stance,0.634937,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+29,Ari,settled open stance,0.670135,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+30,Fay,settled open stance,0.630488,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+31,Sol,settled open stance,0.627345,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+32,Ari,settled open stance,0.644555,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; seek_warmth
+33,Fay,settled open stance,0.616556,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+34,Milo,forward lean,0.622474,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+35,Sol,settled open stance,0.60477,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+36,Ari,settled open stance,0.638805,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+37,Fay,settled open stance,0.600657,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+38,Milo,forward lean,0.621927,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+39,Sol,settled open stance,0.643349,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+40,Ari,settled open stance,0.664378,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+41,Fay,balanced regulation,0.613823,tracks recovery object,hold position,,False,continue task,Fay: focused_regulating; balanced regulation; continue_with_regulation
+42,Milo,forward lean,0.634137,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+43,Sol,settled open stance,0.635293,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+44,Ari,settled open stance,0.674955,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+45,Fay,settled open stance,0.615144,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+46,Milo,forward lean,0.626345,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+47,Sol,settled open stance,0.619497,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; seek_warmth
+48,Ari,settled open stance,0.643269,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+49,Fay,settled open stance,0.603563,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+50,Milo,forward lean,0.602974,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+51,Sol,settled open stance,0.619802,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+52,Ari,settled open stance,0.615894,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+53,Fay,settled open stance,0.606406,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+54,Milo,forward lean,0.676024,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+55,Sol,settled open stance,0.646992,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+56,Ari,balanced regulation,0.623957,tracks recovery object,hold position,,False,continue task,Ari: focused_regulating; balanced regulation; continue_with_regulation
+57,Fay,settled open stance,0.620703,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+58,Milo,forward lean,0.689187,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+59,Sol,settled open stance,0.659964,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+60,Ari,settled open stance,0.622026,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+61,Milo,forward lean,0.681676,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+62,Sol,settled open stance,0.632755,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; seek_warmth
+63,Ari,settled open stance,0.607258,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+64,Fay,settled open stance,0.604695,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+65,Milo,forward lean,0.660437,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+66,Sol,settled open stance,0.627018,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+67,Ari,settled open stance,0.590493,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+68,Fay,settled open stance,0.604714,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+69,Milo,forward lean,0.701574,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+70,Sol,settled open stance,0.652583,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+71,Ari,balanced regulation,0.605179,tracks recovery object,hold position,,False,continue task,Ari: focused_regulating; balanced regulation; continue_with_regulation
+72,Fay,forward lean,0.617087,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Fay: curious_exploring; forward lean; approach_novel_pattern
+73,Milo,forward lean,0.693639,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+74,Sol,settled open stance,0.663154,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+75,Ari,settled open stance,0.606665,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+76,Fay,settled open stance,0.60845,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+77,Milo,forward lean,0.679382,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+78,Sol,settled open stance,0.630173,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+79,Ari,settled open stance,0.594602,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+80,Fay,balanced regulation,0.584274,tracks recovery object,hold position,,False,continue task,Fay: focused_regulating; balanced regulation; continue_with_regulation
+81,Milo,forward lean,0.677722,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+82,Sol,settled open stance,0.600645,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+83,Ari,settled open stance,0.597612,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+84,Fay,settled open stance,0.652751,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+85,Milo,forward lean,0.704765,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+86,Sol,balanced regulation,0.610757,tracks recovery object,hold position,,False,continue task,Sol: focused_regulating; balanced regulation; continue_with_regulation
+87,Ari,settled open stance,0.612281,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+88,Fay,settled open stance,0.655217,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+89,Milo,forward lean,0.717649,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+90,Sol,settled open stance,0.60958,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+91,Fay,settled open stance,0.648171,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+92,Milo,forward lean,0.693637,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+93,Sol,settled open stance,0.594207,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+94,Ari,settled open stance,0.595978,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+95,Fay,balanced regulation,0.625556,tracks recovery object,hold position,,False,continue task,Fay: focused_regulating; balanced regulation; continue_with_regulation
+96,Milo,forward lean,0.686416,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+97,Sol,balanced regulation,0.575216,tracks recovery object,hold position,,False,continue task,Sol: focused_regulating; balanced regulation; continue_with_regulation
+98,Ari,settled open stance,0.594916,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+99,Fay,settled open stance,0.671563,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+100,Milo,forward lean,0.710815,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+101,Sol,balanced regulation,0.59048,tracks recovery object,hold position,,False,continue task,Sol: focused_regulating; balanced regulation; continue_with_regulation
+102,Ari,settled open stance,0.607211,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+103,Fay,settled open stance,0.664641,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+104,Milo,forward lean,0.721563,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+105,Sol,settled open stance,0.59246,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+106,Ari,settled open stance,0.598528,tracks recovery object,hold position,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+107,Fay,settled open stance,0.649856,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; seek_warmth
+108,Milo,forward lean,0.691142,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+109,Sol,settled open stance,0.582233,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+110,Ari,balanced regulation,0.575866,tracks recovery object,hold position,,False,continue task,Ari: focused_regulating; balanced regulation; continue_with_regulation
+111,Fay,settled open stance,0.649215,tracks recovery object,hold position,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+112,Milo,forward lean,0.667918,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+113,Sol,settled open stance,0.585427,tracks recovery object,approach care source,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+114,Ari,settled open stance,0.644741,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+115,Fay,settled open stance,0.676991,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+116,Milo,forward lean,0.672454,tracks recovery object,hold position,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern
+117,Sol,settled open stance,0.60009,tracks recovery object,hold position,,False,recover and breathe,Sol: settled_recovering; settled open stance; continue_with_regulation
+118,Ari,settled open stance,0.643789,tracks recovery object,approach care source,,False,recover and breathe,Ari: settled_recovering; settled open stance; continue_with_regulation
+119,Fay,settled open stance,0.686431,tracks recovery object,approach care source,,False,recover and breathe,Fay: settled_recovering; settled open stance; continue_with_regulation
+120,Milo,forward lean,0.669951,tracks recovery object,approach care source,I want to look at that pattern while I still feel safe.,False,inspect pattern,Milo: curious_exploring; forward lean; approach_novel_pattern

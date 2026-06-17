@@ -1,0 +1,673 @@
+tick_index,agent,other_actor,trust,comfort,avoidance,dependency,gratitude,resentment,attachment_security,consequence_action,remembered_reason
+1,Ari,avatar,0.516727,0.536742,0.207727,0.19,0.212273,0.188,0.521659,continues_neutral_boundary,relationship state remains bounded
+2,Fay,avatar,0.645841,0.585163,0.154799,0.20314,0.255201,0.134,0.544594,approaches_for_shared_task_later,help became recovery memory
+3,Milo,local peers,0.583111,0.558858,0.177407,0.19,0.222593,0.16,0.522667,continues_neutral_boundary,relationship state remains bounded
+4,Sol,avatar,0.515841,0.585239,0.154799,0.20026,0.255201,0.134,0.543954,approaches_for_shared_task_later,help became recovery memory
+5,Ari,avatar,0.542138,0.570065,0.182885,0.18828,0.247115,0.162,0.544349,approaches_for_shared_task_later,help became recovery memory
+6,Fay,avatar,0.622895,0.572352,0.182254,0.19314,0.247746,0.162,0.548016,shares_private_hint_voluntarily,trust stable across days
+7,Milo,local peers,0.585669,0.565448,0.175276,0.18,0.224724,0.16,0.524812,continues_neutral_boundary,relationship state remains bounded
+8,Sol,avatar,0.542008,0.621074,0.129326,0.20052,0.290674,0.108,0.568591,approaches_for_shared_task_later,help became recovery memory
+9,Ari,avatar,0.568013,0.604414,0.157656,0.18656,0.282344,0.136,0.567857,approaches_for_shared_task_later,help became recovery memory
+10,Fay,avatar,0.648528,0.606025,0.157227,0.19628,0.282773,0.136,0.572368,approaches_for_shared_task_later,help became recovery memory
+11,Milo,avatar,0.561851,0.550137,0.203458,0.17,0.216542,0.188,0.526185,continues_neutral_boundary,relationship state remains bounded
+12,Sol,avatar,0.568398,0.657326,0.103668,0.20078,0.326332,0.082,0.593809,approaches_for_shared_task_later,help became recovery memory
+13,Ari,avatar,0.594204,0.639457,0.132164,0.18484,0.317836,0.11,0.592038,approaches_for_shared_task_later,help became recovery memory
+14,Fay,local peers,0.651824,0.614341,0.15448,0.18628,0.28552,0.136,0.576422,shares_private_hint_voluntarily,trust stable across days
+15,Milo,avatar,0.58689,0.581845,0.178925,0.16918,0.251075,0.162,0.54876,approaches_for_shared_task_later,help became recovery memory
+16,Sol,avatar,0.545826,0.64523,0.130812,0.19078,0.319188,0.11,0.597686,continues_neutral_boundary,relationship state remains bounded
+17,Ari,avatar,0.571496,0.626366,0.15942,0.17484,0.31058,0.138,0.594938,continues_neutral_boundary,relationship state remains bounded
+18,Fay,local peers,0.655312,0.620759,0.151574,0.17628,0.288426,0.136,0.580707,shares_private_hint_voluntarily,trust stable across days
+19,Milo,avatar,0.612513,0.614902,0.153906,0.16836,0.286094,0.136,0.572268,approaches_for_shared_task_later,help became recovery memory
+20,Sol,avatar,0.572516,0.679704,0.104903,0.19104,0.355097,0.084,0.623187,approaches_for_shared_task_later,help became recovery memory
+21,Ari,avatar,0.598094,0.660005,0.133588,0.17312,0.346412,0.112,0.619506,approaches_for_shared_task_later,help became recovery memory
+22,Fay,avatar,0.632929,0.605646,0.178559,0.16628,0.281441,0.164,0.584744,shares_private_hint_voluntarily,trust stable across days
+23,Milo,avatar,0.638533,0.648899,0.128556,0.16754,0.321444,0.11,0.596528,approaches_for_shared_task_later,help became recovery memory
+24,Sol,local peers,0.576532,0.688657,0.101557,0.18104,0.358443,0.084,0.628061,continues_neutral_boundary,relationship state remains bounded
+25,Ari,local peers,0.60278,0.669149,0.129684,0.16312,0.350316,0.112,0.624216,continues_neutral_boundary,relationship state remains bounded
+26,Fay,avatar,0.660191,0.63852,0.152174,0.16942,0.317826,0.138,0.610796,approaches_for_shared_task_later,help became recovery memory
+27,Milo,avatar,0.61637,0.635766,0.155359,0.15754,0.314641,0.138,0.600229,continues_neutral_boundary,relationship state remains bounded
+28,Sol,local peers,0.581126,0.696359,0.097728,0.17104,0.362272,0.084,0.633567,continues_neutral_boundary,relationship state remains bounded
+29,Ari,local peers,0.607831,0.677222,0.125474,0.15312,0.354526,0.112,0.62935,continues_neutral_boundary,relationship state remains bounded
+30,Fay,avatar,0.688175,0.673811,0.125187,0.17256,0.354813,0.112,0.637948,approaches_for_shared_task_later,help became recovery memory
+31,Milo,avatar,0.643781,0.670149,0.128849,0.15672,0.351151,0.112,0.625877,approaches_for_shared_task_later,help became recovery memory
+32,Sol,avatar,0.559399,0.683073,0.124168,0.16104,0.355832,0.112,0.638381,continues_neutral_boundary,relationship state remains bounded
+33,Ari,avatar,0.634821,0.711947,0.099315,0.1514,0.390685,0.086,0.654791,approaches_for_shared_task_later,help became recovery memory
+34,Fay,local peers,0.693071,0.683852,0.121107,0.16256,0.358893,0.112,0.644068,shares_private_hint_voluntarily,trust stable across days
+35,Milo,avatar,0.671017,0.705706,0.102486,0.1559,0.387514,0.086,0.651718,approaches_for_shared_task_later,help became recovery memory
+36,Sol,avatar,0.536747,0.668194,0.151378,0.15104,0.348622,0.14,0.64189,continues_neutral_boundary,relationship state remains bounded
+37,Ari,avatar,0.612658,0.699213,0.126119,0.1414,0.383881,0.114,0.658701,continues_neutral_boundary,relationship state remains bounded
+38,Fay,local peers,0.696842,0.691717,0.117965,0.15256,0.362035,0.112,0.649108,shares_private_hint_voluntarily,trust stable across days
+39,Milo,avatar,0.698134,0.74198,0.076222,0.15508,0.423778,0.06,0.677807,approaches_for_shared_task_later,help became recovery memory
+40,Sol,avatar,0.562579,0.700797,0.126184,0.1513,0.383816,0.114,0.666236,approaches_for_shared_task_later,help became recovery memory
+41,Ari,avatar,0.638822,0.733327,0.100648,0.13968,0.419352,0.088,0.683296,approaches_for_shared_task_later,help became recovery memory
+42,Fay,avatar,0.673849,0.677756,0.145459,0.14256,0.354541,0.14,0.652998,shares_private_hint_voluntarily,trust stable across days
+43,Milo,avatar,0.725169,0.778725,0.050026,0.15426,0.459974,0.034,0.704182,approaches_for_shared_task_later,help became recovery memory
+44,Sol,local peers,0.566012,0.708744,0.123324,0.1413,0.386676,0.114,0.670222,continues_neutral_boundary,relationship state remains bounded
+45,Ari,local peers,0.64248,0.742334,0.0976,0.12968,0.4224,0.088,0.687428,shares_private_hint_voluntarily,trust stable across days
+46,Fay,avatar,0.69945,0.710856,0.120458,0.1457,0.389542,0.114,0.677833,approaches_for_shared_task_later,help became recovery memory
+47,Milo,avatar,0.703035,0.76717,0.076804,0.14426,0.453196,0.062,0.709013,shares_private_hint_voluntarily,trust stable across days
+48,Sol,local peers,0.568788,0.714936,0.12101,0.1313,0.38899,0.114,0.673584,continues_neutral_boundary,relationship state remains bounded
+49,Ari,local peers,0.64541,0.749264,0.095158,0.11968,0.424842,0.088,0.690866,shares_private_hint_voluntarily,trust stable across days
+50,Fay,avatar,0.726258,0.745656,0.094452,0.14884,0.425548,0.088,0.704238,approaches_for_shared_task_later,help became recovery memory
+51,Milo,avatar,0.730023,0.802217,0.050647,0.14344,0.489353,0.036,0.735332,approaches_for_shared_task_later,help became recovery memory
+52,Sol,avatar,0.545119,0.699613,0.149068,0.1213,0.380932,0.142,0.676108,continues_neutral_boundary,relationship state remains bounded
+53,Ari,avatar,0.621845,0.734431,0.123129,0.10968,0.416871,0.116,0.693417,shares_private_hint_voluntarily,trust stable across days
+54,Fay,avatar,0.753886,0.781762,0.067761,0.15198,0.462239,0.062,0.731838,approaches_for_shared_task_later,help became recovery memory
+55,Milo,local peers,0.734242,0.811766,0.047132,0.13344,0.492868,0.036,0.740931,shares_private_hint_voluntarily,trust stable across days
+56,Sol,avatar,0.571062,0.731918,0.123781,0.12156,0.416219,0.116,0.700599,approaches_for_shared_task_later,help became recovery memory
+57,Ari,avatar,0.648303,0.767655,0.097414,0.10796,0.452586,0.09,0.718351,approaches_for_shared_task_later,help became recovery memory
+58,Fay,avatar,0.732817,0.770689,0.093653,0.14198,0.456347,0.09,0.738377,shares_private_hint_voluntarily,trust stable across days
+59,Milo,local peers,0.738975,0.820085,0.043187,0.12344,0.496813,0.036,0.7471,shares_private_hint_voluntarily,trust stable across days
+60,Sol,avatar,0.598146,0.766788,0.097545,0.12182,0.452455,0.09,0.726596,approaches_for_shared_task_later,help became recovery memory
+61,Ari,avatar,0.675739,0.803186,0.070884,0.10624,0.489116,0.064,0.744635,approaches_for_shared_task_later,help became recovery memory
+62,Fay,avatar,0.760972,0.806704,0.066523,0.14512,0.493477,0.064,0.766521,approaches_for_shared_task_later,help became recovery memory
+63,Milo,avatar,0.717342,0.807284,0.069548,0.11344,0.490452,0.064,0.752533,shares_private_hint_voluntarily,trust stable across days
+64,Sol,avatar,0.626809,0.803584,0.069993,0.12208,0.490007,0.064,0.754559,approaches_for_shared_task_later,help became recovery memory
+65,Ari,local peers,0.680261,0.813418,0.067115,0.09624,0.492885,0.064,0.750058,shares_private_hint_voluntarily,trust stable across days
+66,Fay,avatar,0.788714,0.843659,0.039739,0.14826,0.530261,0.038,0.794627,approaches_for_shared_task_later,help became recovery memory
+67,Milo,avatar,0.694754,0.792801,0.096705,0.10344,0.483295,0.092,0.756631,shares_private_hint_voluntarily,trust stable across days
+68,Sol,local peers,0.631782,0.812761,0.065848,0.11208,0.494152,0.064,0.760891,shares_private_hint_voluntarily,trust stable across days
+69,Ari,local peers,0.683779,0.821435,0.064184,0.08624,0.495816,0.064,0.754517,shares_private_hint_voluntarily,trust stable across days
+70,Fay,avatar,0.816174,0.881181,0.013188,0.1514,0.566812,0.012,0.822822,approaches_for_shared_task_later,help became recovery memory
+71,Milo,avatar,0.72063,0.825738,0.071475,0.10262,0.518525,0.066,0.781546,approaches_for_shared_task_later,help became recovery memory
+72,Sol,avatar,0.609606,0.79978,0.092661,0.10208,0.487339,0.092,0.765698,continues_neutral_boundary,relationship state remains bounded
+73,Ari,avatar,0.660614,0.807576,0.091822,0.07624,0.488178,0.092,0.757906,shares_private_hint_voluntarily,trust stable across days
+74,Fay,avatar,0.843443,0.919079,0.0,0.15454,0.603202,0.0,0.851011,approaches_for_shared_task_later,help became recovery memory
+75,Milo,local peers,0.724092,0.833981,0.06859,0.09262,0.52141,0.066,0.786088,shares_private_hint_voluntarily,trust stable across days
+76,Sol,avatar,0.635763,0.833627,0.067198,0.10234,0.522802,0.066,0.791193,approaches_for_shared_task_later,help became recovery memory
+77,Ari,avatar,0.686097,0.840749,0.066919,0.07452,0.523081,0.066,0.782292,approaches_for_shared_task_later,help became recovery memory
+78,Fay,avatar,0.821468,0.908597,0.026646,0.14454,0.596557,0.028,0.857583,shares_private_hint_voluntarily,trust stable across days
+79,Milo,local peers,0.726889,0.840462,0.06626,0.08262,0.52374,0.066,0.789997,shares_private_hint_voluntarily,trust stable across days
+80,Sol,avatar,0.662145,0.868676,0.041546,0.1026,0.558454,0.04,0.817274,approaches_for_shared_task_later,help became recovery memory
+81,Ari,avatar,0.712022,0.875278,0.041649,0.0728,0.558351,0.04,0.807474,approaches_for_shared_task_later,help became recovery memory
+82,Fay,avatar,0.848565,0.94465,0.000399,0.14768,0.632804,0.002,0.885594,approaches_for_shared_task_later,help became recovery memory
+83,Milo,avatar,0.703233,0.825384,0.094306,0.07262,0.515694,0.094,0.793061,shares_private_hint_voluntarily,trust stable across days
+84,Sol,avatar,0.688681,0.90456,0.015766,0.10286,0.594234,0.014,0.843869,approaches_for_shared_task_later,help became recovery memory
+85,Ari,avatar,0.738246,0.910738,0.016128,0.07108,0.593872,0.014,0.833313,approaches_for_shared_task_later,help became recovery memory
+86,Fay,local peers,0.85366,0.955484,0.0,0.13768,0.63705,0.002,0.893609,shares_private_hint_voluntarily,trust stable across days
+87,Milo,avatar,0.729186,0.857917,0.069012,0.0718,0.550988,0.068,0.818088,approaches_for_shared_task_later,help became recovery memory
+88,Sol,avatar,0.666208,0.892383,0.042827,0.09286,0.587173,0.042,0.849077,shares_private_hint_voluntarily,trust stable across days
+89,Ari,avatar,0.716221,0.899058,0.042816,0.06108,0.587184,0.042,0.838528,shares_private_hint_voluntarily,trust stable across days
+90,Fay,local peers,0.85899,0.964802,0.0,0.12768,0.641491,0.002,0.901859,shares_private_hint_voluntarily,trust stable across days
+91,Milo,avatar,0.756275,0.892951,0.042771,0.07098,0.587229,0.042,0.844619,approaches_for_shared_task_later,help became recovery memory
+92,Sol,avatar,0.693409,0.927582,0.016493,0.09312,0.623507,0.016,0.876327,approaches_for_shared_task_later,help became recovery memory
+93,Ari,avatar,0.743726,0.934646,0.016228,0.05936,0.623772,0.016,0.865646,approaches_for_shared_task_later,help became recovery memory
+94,Fay,avatar,0.837761,0.952701,0.026024,0.11768,0.635468,0.03,0.909187,shares_private_hint_voluntarily,trust stable across days
+95,Milo,avatar,0.784941,0.929862,0.015216,0.07016,0.624784,0.016,0.873111,approaches_for_shared_task_later,help became recovery memory
+96,Sol,local peers,0.698508,0.938206,0.012244,0.08312,0.627756,0.016,0.883534,shares_private_hint_voluntarily,trust stable across days
+97,Ari,avatar,0.771026,0.9713,0.0,0.05764,0.660188,0.0,0.892786,approaches_for_shared_task_later,help became recovery memory
+98,Fay,avatar,0.815449,0.938731,0.052951,0.10768,0.62854,0.058,0.915052,shares_private_hint_voluntarily,trust stable across days
+99,Milo,local peers,0.789915,0.939122,0.011071,0.06016,0.62893,0.016,0.879971,shares_private_hint_voluntarily,trust stable across days
+100,Sol,avatar,0.725531,0.974797,0.0,0.08338,0.663942,0.0,0.910837,approaches_for_shared_task_later,help became recovery memory
+101,Ari,avatar,0.798185,1.0,0.0,0.05592,0.696488,0.0,0.919785,approaches_for_shared_task_later,help became recovery memory
+102,Fay,avatar,0.841512,0.972031,0.027565,0.11082,0.663926,0.032,0.94165,approaches_for_shared_task_later,help became recovery memory
+103,Milo,avatar,0.767741,0.926211,0.037883,0.05016,0.622117,0.044,0.885306,shares_private_hint_voluntarily,trust stable across days
+104,Sol,avatar,0.752503,1.0,0.0,0.08364,0.700085,0.0,0.938089,approaches_for_shared_task_later,help became recovery memory
+105,Ari,avatar,0.82525,1.0,0.0,0.0542,0.732708,0.0,0.94669,approaches_for_shared_task_later,help became recovery memory
+106,Fay,local peers,0.845101,0.980548,0.024574,0.10082,0.666918,0.032,0.947815,shares_private_hint_voluntarily,trust stable across days
+107,Milo,avatar,0.793898,0.960109,0.012419,0.04934,0.657581,0.018,0.911329,approaches_for_shared_task_later,help became recovery memory
+108,Sol,avatar,0.730326,0.989091,0.026814,0.07364,0.693271,0.028,0.943817,shares_private_hint_voluntarily,trust stable across days
+109,Ari,avatar,0.803136,0.989378,0.026761,0.0442,0.725947,0.028,0.952041,shares_private_hint_voluntarily,trust stable across days
+110,Fay,local peers,0.847984,0.987203,0.022171,0.09082,0.66932,0.032,0.953308,shares_private_hint_voluntarily,trust stable across days
+111,Milo,avatar,0.820281,0.995202,0.0,0.04852,0.693234,0.0,0.937752,approaches_for_shared_task_later,help became recovery memory
+112,Sol,avatar,0.756481,1.0,0.001351,0.0739,0.728735,0.002,0.970234,approaches_for_shared_task_later,help became recovery memory
+113,Ari,avatar,0.830138,1.0,0.000593,0.04248,0.762115,0.002,0.978875,approaches_for_shared_task_later,help became recovery memory
+114,Fay,avatar,0.82519,0.972587,0.049499,0.08082,0.661992,0.06,0.958741,shares_private_hint_voluntarily,trust stable across days
+115,Milo,avatar,0.846817,1.0,0.0,0.0477,0.729014,0.0,0.964328,approaches_for_shared_task_later,help became recovery memory
+116,Sol,local peers,0.760134,1.0,0.0,0.0639,0.731778,0.002,0.976166,shares_private_hint_voluntarily,trust stable across days
+117,Ari,local peers,0.834366,1.0,0.0,0.03248,0.765638,0.002,0.984943,shares_private_hint_voluntarily,trust stable across days
+118,Fay,avatar,0.85173,1.0,0.023716,0.08396,0.697775,0.034,0.985868,approaches_for_shared_task_later,help became recovery memory
+119,Milo,avatar,0.824344,0.987865,0.027061,0.0377,0.721953,0.028,0.969516,shares_private_hint_voluntarily,trust stable across days
+120,Sol,local peers,0.76306,1.0,0.0,0.0539,0.734216,0.002,0.981372,shares_private_hint_voluntarily,trust stable across days
+121,Ari,local peers,0.839105,1.0,0.0,0.02248,0.769588,0.002,0.991522,shares_private_hint_voluntarily,trust stable across days
+122,Fay,avatar,0.879223,1.0,0.0,0.0871,0.734352,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+123,Milo,avatar,0.851545,1.0,0.000727,0.03688,0.758287,0.002,0.996747,approaches_for_shared_task_later,help became recovery memory
+124,Sol,avatar,0.740198,0.986606,0.027385,0.0439,0.726831,0.03,0.986406,shares_private_hint_voluntarily,trust stable across days
+125,Ari,avatar,0.817474,0.987681,0.02636,0.01248,0.763228,0.03,0.997361,shares_private_hint_voluntarily,trust stable across days
+126,Fay,avatar,0.908165,1.0,0.0,0.09024,0.772138,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+127,Milo,local peers,0.85664,1.0,0.0,0.02688,0.762533,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+128,Sol,avatar,0.767134,1.0,0.001271,0.04416,0.762945,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+129,Ari,avatar,0.794886,0.973556,0.053516,0.00248,0.756072,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+130,Fay,local peers,0.913329,1.0,0.0,0.08024,0.77644,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+131,Milo,avatar,0.88366,1.0,0.0,0.02606,0.798717,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+132,Sol,avatar,0.794047,1.0,0.0,0.04442,0.799039,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+133,Ari,avatar,0.820763,1.0,0.028286,0.00076,0.791302,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+134,Fay,avatar,0.891282,0.987202,0.026705,0.07024,0.769735,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+135,Milo,avatar,0.91063,1.0,0.0,0.02524,0.834858,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+136,Sol,local peers,0.798214,1.0,0.0,0.03442,0.802511,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+137,Ari,local peers,0.824225,1.0,0.0254,0.0,0.794188,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+138,Fay,avatar,0.917526,1.0,0.001169,0.07338,0.805272,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+139,Milo,avatar,0.888452,0.989087,0.026815,0.01524,0.828043,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+140,Sol,local peers,0.80149,1.0,0.0,0.02442,0.805241,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+141,Ari,local peers,0.827022,1.0,0.02307,0.0,0.796518,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+142,Fay,avatar,0.943968,1.0,0.0,0.07652,0.840974,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+143,Milo,avatar,0.914606,1.0,0.001353,0.01442,0.863505,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+144,Sol,avatar,0.77816,0.986125,0.027775,0.01442,0.797466,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+145,Ari,avatar,0.803366,0.985,0.051116,0.0,0.788472,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+146,Fay,avatar,0.971348,1.0,0.0,0.07966,0.877457,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+147,Milo,local peers,0.918258,1.0,0.0,0.00442,0.866548,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+148,Sol,avatar,0.804335,1.0,0.002296,0.01468,0.832946,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+149,Ari,avatar,0.82932,1.0,0.025822,0.0,0.823766,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+150,Fay,avatar,0.950252,0.988584,0.025913,0.06966,0.871544,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+151,Milo,local peers,0.921184,1.0,0.0,0.0,0.868986,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+152,Sol,avatar,0.83073,1.0,0.0,0.01494,0.868608,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+153,Ari,avatar,0.856411,1.0,0.0,0.0,0.86001,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+154,Fay,avatar,0.97839,1.0,0.0,0.0728,0.908658,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+155,Milo,avatar,0.898321,0.986588,0.027386,0.0,0.861601,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+156,Sol,avatar,0.858925,1.0,0.0,0.0152,0.905771,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+157,Ari,avatar,0.885078,1.0,0.0,0.0,0.897565,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+158,Fay,local peers,0.984123,1.0,0.0,0.0628,0.913436,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+159,Milo,avatar,0.925257,1.0,0.001272,0.0,0.897714,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+160,Sol,avatar,0.838243,0.989411,0.025568,0.0052,0.900203,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+161,Ari,local peers,0.890054,1.0,0.0,0.0,0.901712,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+162,Fay,avatar,1.0,1.0,0.0,0.06594,0.949982,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+163,Milo,avatar,0.952169,1.0,0.0,0.0,0.933808,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+164,Sol,avatar,0.816302,0.976722,0.052186,0.0,0.893585,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+165,Ari,avatar,0.86788,0.987083,0.026812,0.0,0.8949,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+166,Fay,avatar,1.0,1.0,0.0,0.06908,0.986369,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+167,Milo,local peers,0.956336,1.0,0.0,0.0,0.93728,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+168,Sol,avatar,0.842618,1.0,0.026589,0.00026,0.929182,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+169,Ari,avatar,0.894037,1.0,0.001347,0.0,0.930364,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+170,Fay,avatar,0.978023,0.98923,0.026648,0.05908,0.979722,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+171,Milo,local peers,0.959612,1.0,0.0,0.0,0.94001,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+172,Sol,avatar,0.869109,1.0,0.000847,0.00052,0.964924,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+173,Ari,avatar,0.92042,1.0,0.0,0.0,0.966017,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+174,Fay,avatar,1.0,1.0,0.001072,0.06222,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+175,Milo,avatar,0.936282,0.986122,0.027775,0.0,0.932235,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+176,Sol,avatar,0.895718,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+177,Ari,avatar,0.946957,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+178,Fay,local peers,1.0,1.0,0.0,0.05222,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+179,Milo,avatar,0.962457,1.0,0.002296,0.0,0.967714,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+180,Sol,avatar,0.873295,0.988195,0.027019,0.0,0.992981,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+181,Ari,avatar,0.924484,0.987837,0.027061,0.0,0.992939,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+182,Fay,local peers,1.0,1.0,0.0,0.04222,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+183,Milo,avatar,0.988851,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+184,Sol,avatar,0.900087,1.0,0.001026,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+185,Ari,avatar,0.951685,1.0,0.000726,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+186,Fay,avatar,0.978098,0.98725,0.026585,0.03222,0.993415,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+187,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+188,Sol,local peers,0.904908,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+189,Ari,local peers,0.956784,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+190,Fay,avatar,1.0,1.0,0.0,0.03536,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+191,Milo,avatar,0.979314,0.989382,0.025572,0.0,0.994428,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+192,Sol,local peers,0.91005,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+193,Ari,avatar,0.983808,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+194,Fay,avatar,1.0,1.0,0.0,0.0385,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+195,Milo,avatar,0.95737,0.976674,0.052192,0.0,0.987808,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+196,Sol,avatar,0.937102,1.0,0.0,0.00026,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+197,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+198,Fay,local peers,1.0,1.0,0.0,0.0285,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+199,Milo,avatar,0.983684,1.0,0.026597,0.0,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+200,Sol,avatar,0.91498,0.987806,0.026768,0.0,0.993232,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+201,Ari,avatar,0.977823,0.989092,0.026814,0.0,0.993186,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+202,Fay,local peers,1.0,1.0,0.0,0.0185,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+203,Milo,avatar,1.0,1.0,0.000856,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+204,Sol,avatar,0.941173,1.0,0.001274,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+205,Ari,avatar,1.0,1.0,0.001351,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+206,Fay,avatar,0.97681,0.986241,0.027659,0.0085,0.992341,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+207,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+208,Sol,local peers,0.944851,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+209,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+210,Fay,avatar,1.0,1.0,0.002101,0.01164,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+211,Milo,avatar,0.977576,0.988175,0.02702,0.0,0.99298,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+212,Sol,local peers,0.947794,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+213,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+214,Fay,avatar,1.0,1.0,0.0,0.01478,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+215,Milo,avatar,1.0,1.0,0.001027,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+216,Sol,avatar,0.924237,0.985416,0.027964,0.0,0.992036,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+217,Ari,avatar,0.977139,0.986592,0.027385,0.0,0.992615,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+218,Fay,avatar,1.0,1.0,0.0,0.01792,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+219,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+220,Sol,avatar,0.950702,1.0,0.002243,0.00026,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+221,Ari,avatar,1.0,1.0,0.00127,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+222,Fay,avatar,0.979718,0.989609,0.025235,0.00792,0.994765,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+223,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+224,Sol,avatar,0.978142,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+225,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+226,Fay,avatar,0.958049,0.977064,0.051626,0.0,0.988374,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+227,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+228,Sol,local peers,0.982668,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+229,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+230,Fay,avatar,0.98455,1.0,0.025875,0.00314,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+231,Milo,avatar,0.977878,0.98783,0.026768,0.0,0.993232,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+232,Sol,local peers,0.986189,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+233,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+234,Fay,avatar,1.0,1.0,2.8e-05,0.00628,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+235,Milo,avatar,1.0,1.0,0.001274,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+236,Sol,avatar,0.963025,0.986168,0.027637,0.0,0.992363,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+237,Ari,avatar,0.97667,0.986114,0.027775,0.0,0.992225,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+238,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+239,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+240,Sol,avatar,0.988509,1.0,0.002733,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+241,Ari,avatar,1.0,1.0,0.002296,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+242,Fay,avatar,0.978438,0.988584,0.026301,0.0,0.993699,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+243,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+244,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+245,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+246,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+247,Milo,avatar,0.976444,0.985447,0.027963,0.0,0.992036,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+248,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+249,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+250,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+251,Milo,avatar,1.0,1.0,0.002243,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+252,Sol,avatar,0.977977,0.988344,0.026686,0.0,0.993314,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+253,Ari,avatar,0.979314,0.989383,0.025571,0.0,0.994429,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+254,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+255,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+256,Sol,avatar,1.0,1.0,9.6e-05,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+257,Ari,avatar,0.957371,0.976663,0.052191,0.0,0.987809,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+258,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+259,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+260,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+261,Ari,avatar,0.983685,1.0,0.026596,0.0,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+262,Fay,avatar,0.978004,0.987906,0.026664,0.0,0.993336,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+263,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+264,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+265,Ari,avatar,1.0,1.0,0.000855,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+266,Fay,avatar,1.0,1.0,0.001098,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+267,Milo,avatar,0.976836,0.986179,0.027637,0.0,0.992363,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+268,Sol,avatar,1.0,1.0,0.0,0.00104,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+269,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+270,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+271,Milo,avatar,1.0,1.0,0.002734,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+272,Sol,avatar,0.977887,0.989408,0.026761,0.0,0.993239,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+273,Ari,avatar,0.977576,0.988158,0.02702,0.0,0.99298,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+274,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+275,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+276,Sol,avatar,1.0,1.0,0.000593,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+277,Ari,avatar,1.0,1.0,0.001027,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+278,Fay,avatar,0.97782,0.986168,0.026817,0.0,0.993183,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+279,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+280,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+281,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+282,Fay,avatar,1.0,1.0,0.000316,0.00314,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+283,Milo,avatar,0.977978,0.988338,0.026685,0.0,0.993315,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+284,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+285,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+286,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+287,Milo,avatar,1.0,1.0,9.5e-05,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+288,Sol,avatar,0.97837,0.987705,0.026358,0.0,0.993642,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+289,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+290,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+291,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+292,Sol,avatar,0.955785,0.973584,0.053513,0.0,0.986487,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+293,Ari,avatar,0.977879,0.987833,0.026767,0.0,0.993233,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+294,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+295,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+296,Sol,avatar,0.981662,1.0,0.028281,0.00026,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+297,Ari,avatar,1.0,1.0,0.001272,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+298,Fay,avatar,0.977036,0.986333,0.02747,0.0,0.99253,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+299,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+300,Sol,local peers,0.985126,1.0,0.025395,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+301,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+302,Fay,avatar,1.0,1.0,0.002454,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+303,Milo,avatar,0.977887,0.989403,0.026761,0.0,0.993239,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+304,Sol,local peers,0.987923,1.0,0.023064,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+305,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+306,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+307,Milo,avatar,1.0,1.0,0.000592,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+308,Sol,avatar,0.964268,0.985031,0.05111,0.0,0.991954,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+309,Ari,avatar,0.976444,0.985434,0.027963,0.0,0.992037,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+310,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+311,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+312,Sol,avatar,0.990221,1.0,0.025816,0.00026,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+313,Ari,avatar,1.0,1.0,0.002243,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+314,Fay,avatar,0.978934,0.988996,0.025888,0.0,0.994112,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+315,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+316,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+317,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+318,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+319,Milo,avatar,0.978372,0.987715,0.026357,0.0,0.993643,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+320,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+321,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+322,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+323,Milo,avatar,0.955787,0.97362,0.053511,0.0,0.986489,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+324,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+325,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+326,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+327,Milo,avatar,0.981666,1.0,0.028279,0.0,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+328,Sol,avatar,0.977827,0.987099,0.026811,0.0,0.993189,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+329,Ari,avatar,0.976835,0.986165,0.027637,0.0,0.992363,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+330,Fay,avatar,1.0,1.0,0.0,0.01256,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+331,Milo,local peers,0.985129,1.0,0.025392,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+332,Sol,avatar,1.0,1.0,0.001345,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+333,Ari,avatar,1.0,1.0,0.002734,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+334,Fay,avatar,0.978026,0.989522,0.026645,0.00256,0.993355,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+335,Milo,local peers,0.987927,1.0,0.023061,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+336,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+337,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+338,Fay,avatar,1.0,1.0,0.000398,0.0057,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+339,Milo,avatar,0.964272,0.985032,0.051107,0.0,0.991954,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+340,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+341,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+342,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+343,Milo,avatar,0.990226,1.0,0.025812,0.0,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+344,Sol,avatar,0.977527,0.987859,0.02706,0.0,0.99294,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+345,Ari,avatar,0.977975,0.988308,0.026687,0.0,0.993313,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+346,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+347,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+348,Sol,avatar,1.0,1.0,0.000726,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+349,Ari,avatar,1.0,1.0,9.9e-05,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+350,Fay,avatar,0.978769,0.987884,0.026026,0.0,0.993974,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+351,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+352,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+353,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+354,Fay,avatar,0.956454,0.973892,0.052955,0.0,0.987045,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+355,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+356,Sol,avatar,1.0,1.0,0.0,0.00026,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+357,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+358,Fay,avatar,0.982516,1.0,0.02757,0.00314,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+359,Milo,avatar,0.977828,0.987091,0.02681,0.0,0.99319,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+360,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+361,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+362,Fay,local peers,0.986105,1.0,0.024579,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+363,Milo,avatar,1.0,1.0,0.001345,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+364,Sol,avatar,0.977823,0.989074,0.026814,0.0,0.993186,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+365,Ari,avatar,0.977886,0.9894,0.026761,0.0,0.993239,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+366,Fay,local peers,0.988988,1.0,0.022177,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+367,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+368,Sol,avatar,1.0,1.0,0.001352,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+369,Ari,avatar,1.0,1.0,0.000593,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+370,Fay,avatar,0.966193,0.985403,0.049505,0.0,0.992672,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+371,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+372,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+373,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+374,Fay,avatar,0.992733,1.0,0.023723,0.00314,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+375,Milo,avatar,0.977528,0.987825,0.02706,0.0,0.99294,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+376,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+377,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+378,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+379,Milo,avatar,1.0,1.0,0.000726,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+380,Sol,avatar,0.977135,0.986582,0.027387,0.0,0.992613,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+381,Ari,avatar,0.978371,0.987703,0.026357,0.0,0.993643,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+382,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+383,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+384,Sol,avatar,1.0,1.0,0.001275,0.00026,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+385,Ari,avatar,0.955786,0.973573,0.053512,0.0,0.986488,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+386,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+387,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+388,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+389,Ari,avatar,0.981664,1.0,0.02828,0.0,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+390,Fay,avatar,0.977953,0.987176,0.026706,0.0,0.993294,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+391,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+392,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+393,Ari,local peers,0.985128,1.0,0.025394,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+394,Fay,avatar,1.0,1.0,0.00117,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+395,Milo,avatar,0.977823,0.989068,0.026814,0.0,0.993186,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+396,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+397,Ari,local peers,0.987925,1.0,0.023062,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+398,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+399,Milo,avatar,1.0,1.0,0.001352,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+400,Sol,avatar,0.97667,0.986111,0.027775,0.0,0.992225,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+401,Ari,avatar,0.96427,0.985004,0.051108,0.0,0.991954,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+402,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+403,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+404,Sol,avatar,1.0,1.0,0.002296,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+405,Ari,avatar,0.990224,1.0,0.025814,0.0,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+406,Fay,avatar,0.978904,0.988555,0.025913,0.0,0.994087,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+407,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+408,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+409,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+410,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+411,Milo,avatar,0.977138,0.986584,0.027385,0.0,0.992615,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+412,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+413,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+414,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+415,Milo,avatar,1.0,1.0,0.001271,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+416,Sol,avatar,0.979314,0.989389,0.025571,0.0,0.994429,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+417,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+418,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+419,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+420,Sol,avatar,0.95737,0.976686,0.052191,0.0,0.987809,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+421,Ari,avatar,0.977827,0.987077,0.026811,0.0,0.993189,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+422,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+423,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+424,Sol,avatar,0.983684,1.0,0.026596,0.00026,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+425,Ari,avatar,1.0,1.0,0.001346,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+426,Fay,avatar,0.978023,0.989213,0.026647,0.0,0.993353,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+427,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+428,Sol,avatar,1.0,1.0,0.000855,0.00052,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+429,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+430,Fay,avatar,1.0,1.0,0.001071,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+431,Milo,avatar,0.97667,0.986097,0.027775,0.0,0.992225,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+432,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+433,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+434,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+435,Milo,avatar,1.0,1.0,0.002296,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+436,Sol,avatar,0.977576,0.988193,0.02702,0.0,0.99298,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+437,Ari,avatar,0.977527,0.987846,0.027061,0.0,0.992939,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+438,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+439,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+440,Sol,avatar,1.0,1.0,0.001027,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+441,Ari,avatar,1.0,1.0,0.000726,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+442,Fay,avatar,0.978098,0.987255,0.026585,0.0,0.993415,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+443,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+444,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+445,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+446,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+447,Milo,avatar,0.979314,0.989382,0.025572,0.0,0.994428,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+448,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+449,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+450,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+451,Milo,avatar,0.957369,0.976659,0.052192,0.0,0.987808,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+452,Sol,avatar,1.0,1.0,0.0,0.00026,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+453,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+454,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+455,Milo,avatar,0.983683,1.0,0.026597,0.0,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+456,Sol,avatar,0.977879,0.987834,0.026767,0.0,0.993233,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+457,Ari,avatar,0.977822,0.989086,0.026815,0.0,0.993185,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+458,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+459,Milo,avatar,1.0,1.0,0.000856,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+460,Sol,avatar,1.0,1.0,0.001273,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+461,Ari,avatar,1.0,1.0,0.001352,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+462,Fay,avatar,0.97681,0.986244,0.027659,0.0,0.992341,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+463,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+464,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+465,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+466,Fay,avatar,1.0,1.0,0.0021,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+467,Milo,avatar,0.977576,0.988169,0.02702,0.0,0.99298,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+468,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+469,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+470,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+471,Milo,avatar,1.0,1.0,0.001027,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+472,Sol,avatar,0.976444,0.985466,0.027963,0.0,0.992037,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+473,Ari,avatar,0.977138,0.986581,0.027385,0.0,0.992615,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+474,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+475,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+476,Sol,avatar,1.0,1.0,0.002243,0.00026,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+477,Ari,avatar,1.0,1.0,0.001272,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+478,Fay,avatar,0.97972,0.98961,0.025233,0.0,0.994767,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+479,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+480,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+481,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+482,Fay,avatar,0.958052,0.977071,0.051624,0.0,0.988376,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+483,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+484,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+485,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+486,Fay,avatar,0.984553,1.0,0.025872,0.00314,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+487,Milo,avatar,0.977877,0.987822,0.026769,0.0,0.993231,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+488,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+489,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+490,Fay,avatar,1.0,1.0,2.5e-05,0.00628,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+491,Milo,avatar,1.0,1.0,0.001275,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+492,Sol,avatar,0.976836,0.986206,0.027637,0.0,0.992363,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+493,Ari,avatar,0.97667,0.986128,0.027775,0.0,0.992225,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+494,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+495,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+496,Sol,avatar,1.0,1.0,0.002733,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+497,Ari,avatar,1.0,1.0,0.002296,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+498,Fay,avatar,0.978439,0.9886,0.026301,0.0,0.993699,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+499,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+500,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+501,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+502,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+503,Milo,avatar,0.976444,0.985449,0.027964,0.0,0.992036,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+504,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+505,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+506,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+507,Milo,avatar,1.0,1.0,0.002244,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+508,Sol,avatar,0.977974,0.988309,0.026688,0.0,0.993312,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+509,Ari,avatar,0.979316,0.989391,0.02557,0.0,0.99443,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+510,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+511,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+512,Sol,avatar,1.0,1.0,0.000101,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+513,Ari,avatar,0.957374,0.976696,0.052188,0.0,0.987812,0.056,1.0,shares_private_hint_voluntarily,trust stable across days
+514,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+515,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+516,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+517,Ari,avatar,0.983689,1.0,0.026592,0.0,1.0,0.03,1.0,approaches_for_shared_task_later,help became recovery memory
+518,Fay,avatar,0.978002,0.987894,0.026665,0.0,0.993335,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+519,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+520,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+521,Ari,avatar,1.0,1.0,0.000851,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+522,Fay,avatar,1.0,1.0,0.001101,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+523,Milo,avatar,0.976835,0.986164,0.027638,0.0,0.992362,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+524,Sol,avatar,1.0,1.0,0.0,0.00104,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+525,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+526,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+527,Milo,avatar,1.0,1.0,0.002735,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+528,Sol,avatar,0.977886,0.989367,0.026762,0.0,0.993238,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+529,Ari,avatar,0.977577,0.988177,0.027019,0.0,0.992981,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+530,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+531,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+532,Sol,avatar,1.0,1.0,0.000593,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+533,Ari,avatar,1.0,1.0,0.001027,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+534,Fay,avatar,0.97782,0.986161,0.026817,0.0,0.993183,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+535,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+536,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+537,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+538,Fay,avatar,1.0,1.0,0.000317,0.00314,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+539,Milo,avatar,0.977973,0.988306,0.026689,0.0,0.993311,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+540,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+541,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+542,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+543,Milo,avatar,1.0,1.0,0.000102,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+544,Sol,avatar,0.978369,0.987681,0.026359,0.0,0.993641,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+545,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+546,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+547,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+548,Sol,avatar,0.955783,0.97355,0.053514,0.0,0.986486,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+549,Ari,avatar,0.977879,0.987807,0.026768,0.0,0.993232,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+550,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+551,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+552,Sol,avatar,0.98166,1.0,0.028283,0.00026,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+553,Ari,avatar,1.0,1.0,0.001273,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+554,Fay,avatar,0.977036,0.986322,0.02747,0.0,0.99253,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+555,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+556,Sol,local peers,0.985123,1.0,0.025398,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+557,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+558,Fay,avatar,1.0,1.0,0.002453,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+559,Milo,avatar,0.977886,0.989388,0.026762,0.0,0.993238,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+560,Sol,local peers,0.98792,1.0,0.023067,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+561,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+562,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+563,Milo,avatar,1.0,1.0,0.000593,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+564,Sol,avatar,0.964264,0.984999,0.051113,0.0,0.991954,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+565,Ari,avatar,0.976444,0.985445,0.027963,0.0,0.992037,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+566,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+567,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+568,Sol,avatar,0.990218,1.0,0.025819,0.00026,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+569,Ari,avatar,1.0,1.0,0.002243,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+570,Fay,avatar,0.978938,0.989019,0.025885,0.0,0.994115,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+571,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+572,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+573,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+574,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+575,Milo,avatar,0.978373,0.987712,0.026356,0.0,0.993644,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+576,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+577,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+578,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+579,Milo,avatar,0.955789,0.973606,0.053509,0.0,0.986491,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+580,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+581,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+582,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+583,Milo,avatar,0.981668,1.0,0.028276,0.0,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+584,Sol,avatar,0.977828,0.987089,0.02681,0.0,0.99319,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+585,Ari,avatar,0.976836,0.986178,0.027637,0.0,0.992363,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+586,Fay,avatar,1.0,1.0,0.0,0.01256,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+587,Milo,local peers,0.985132,1.0,0.02539,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+588,Sol,avatar,1.0,1.0,0.001344,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+589,Ari,avatar,1.0,1.0,0.002733,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+590,Fay,avatar,0.978026,0.989502,0.026645,0.00256,0.993355,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+591,Milo,local peers,0.98793,1.0,0.023058,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+592,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+593,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+594,Fay,avatar,1.0,1.0,0.000397,0.0057,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+595,Milo,avatar,0.964275,0.985008,0.051104,0.0,0.991954,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+596,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+597,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+598,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+599,Milo,avatar,0.990229,1.0,0.025809,0.0,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+600,Sol,avatar,0.977528,0.987838,0.02706,0.0,0.99294,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+601,Ari,avatar,0.977978,0.988339,0.026685,0.0,0.993315,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+602,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+603,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+604,Sol,avatar,1.0,1.0,0.000726,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+605,Ari,avatar,1.0,1.0,9.5e-05,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+606,Fay,avatar,0.978772,0.987891,0.026024,0.0,0.993976,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+607,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+608,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+609,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+610,Fay,avatar,0.956459,0.973916,0.052951,0.0,0.987049,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+611,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+612,Sol,avatar,1.0,1.0,0.0,0.00026,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+613,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+614,Fay,avatar,0.982522,1.0,0.027565,0.00314,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+615,Milo,avatar,0.977826,0.987082,0.026812,0.0,0.993188,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+616,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+617,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+618,Fay,local peers,0.986111,1.0,0.024574,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+619,Milo,avatar,1.0,1.0,0.001347,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+620,Sol,avatar,0.977822,0.989089,0.026815,0.0,0.993185,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+621,Ari,avatar,0.977887,0.989407,0.026761,0.0,0.993239,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+622,Fay,local peers,0.988994,1.0,0.022171,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+623,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+624,Sol,avatar,1.0,1.0,0.001352,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+625,Ari,avatar,1.0,1.0,0.000592,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+626,Fay,avatar,0.966201,0.985403,0.049499,0.0,0.992672,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+627,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+628,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+629,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+630,Fay,avatar,0.99274,1.0,0.023717,0.00314,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+631,Milo,avatar,0.977527,0.987833,0.027061,0.0,0.992939,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+632,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+633,Ari,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+634,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+635,Milo,avatar,1.0,1.0,0.000726,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+636,Sol,avatar,0.977137,0.986594,0.027386,0.0,0.992614,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+637,Ari,avatar,0.97837,0.987697,0.026358,0.0,0.993642,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+638,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+639,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+640,Sol,avatar,1.0,1.0,0.001272,0.00026,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+641,Ari,avatar,0.955784,0.973572,0.053513,0.0,0.986487,0.058,1.0,shares_private_hint_voluntarily,trust stable across days
+642,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+643,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+644,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+645,Ari,avatar,0.981662,1.0,0.028282,0.0,1.0,0.032,1.0,approaches_for_shared_task_later,help became recovery memory
+646,Fay,avatar,0.977952,0.987186,0.026707,0.0,0.993293,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+647,Milo,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+648,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+649,Ari,local peers,0.985125,1.0,0.025396,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+650,Fay,avatar,1.0,1.0,0.001171,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+651,Milo,avatar,0.977822,0.989065,0.026815,0.0,0.993185,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+652,Sol,local peers,1.0,1.0,0.0,0.0,1.0,0.0,1.0,shares_private_hint_voluntarily,trust stable across days
+653,Ari,local peers,0.987922,1.0,0.023065,0.0,1.0,0.032,1.0,shares_private_hint_voluntarily,trust stable across days
+654,Fay,avatar,1.0,1.0,0.0,0.00628,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+655,Milo,avatar,1.0,1.0,0.001352,0.0,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+656,Sol,avatar,0.97667,0.986113,0.027775,0.0,0.992225,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+657,Ari,avatar,0.964266,0.985014,0.051111,0.0,0.991954,0.06,1.0,shares_private_hint_voluntarily,trust stable across days
+658,Fay,avatar,1.0,1.0,0.0,0.00942,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+659,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+660,Sol,avatar,1.0,1.0,0.002296,0.00026,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+661,Ari,avatar,0.99022,1.0,0.025817,0.0,1.0,0.034,1.0,approaches_for_shared_task_later,help became recovery memory
+662,Fay,avatar,0.978904,0.988572,0.025914,0.0,0.994086,0.028,1.0,shares_private_hint_voluntarily,trust stable across days
+663,Milo,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+664,Sol,avatar,1.0,1.0,0.0,0.00052,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+665,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.008,1.0,approaches_for_shared_task_later,help became recovery memory
+666,Fay,avatar,1.0,1.0,0.0,0.00314,1.0,0.002,1.0,approaches_for_shared_task_later,help became recovery memory
+667,Milo,avatar,0.977136,0.986585,0.027387,0.0,0.992613,0.03,1.0,shares_private_hint_voluntarily,trust stable across days
+668,Sol,avatar,1.0,1.0,0.0,0.00078,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+669,Ari,avatar,1.0,1.0,0.0,0.0,1.0,0.0,1.0,approaches_for_shared_task_later,help became recovery memory
+670,Fay,local peers,1.0,1.0,0.0,0.0,1.0,0.002,1.0,shares_private_hint_voluntarily,trust stable across days
+671,Milo,avatar,1.0,1.0,0.001274,0.0,1.0,0.004,1.0,approaches_for_shared_task_later,help became recovery memory
+672,Sol,avatar,0.979314,0.989383,0.025571,0.0,0.994429,0.028,1.0,shares_private_hint_voluntarily,trust stable across days

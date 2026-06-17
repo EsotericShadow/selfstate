@@ -1,0 +1,61 @@
+{
+  "ablations": {
+    "no_affect_history_carryover": 0.749287,
+    "no_autonomous_routines": 0.719287,
+    "no_circadian_sleep_debt": 0.699287,
+    "no_frequency_circadian_rhythm": 0.909287,
+    "no_long_horizon_span": 0.739287,
+    "no_private_history_boundary": 0.859287,
+    "no_relationship_consequences": 0.709287,
+    "no_replay_import_export": 0.829287,
+    "no_routine_consequence_accumulation": 0.799287,
+    "no_sleep_recovery": 0.809287
+  },
+  "counts": {
+    "affect_history_frames": 672,
+    "autonomous_routine_ticks": 672,
+    "browser_world_v3_ticks": 672,
+    "circadian_sleep_frames": 672,
+    "relationship_consequence_frames": 672,
+    "replay_continuity_frames": 672,
+    "routine_consequence_frames": 672
+  },
+  "honest_limits": [
+    "This is deterministic long-horizon continuity, not subjective consciousness.",
+    "Autonomous routines are scheduled agent-state policies, not independent moral agency.",
+    "Sleep debt and affect history are functional simulation variables, not lived fatigue or dreams.",
+    "Relationship consequences are simulated continuity, not real attachment or consent.",
+    "Replay import/export is browser-local JSON scaffolding, not complete engine replay.",
+    "Frequency and flower phase remain rhythm variables, not metaphysical proof.",
+    "The browser world v3 visualization is a scaffold, not a finished 3D game engine."
+  ],
+  "metrics": {
+    "affect_history_carryover": 1.0,
+    "autonomous_routine_continuity": 1.0,
+    "browser_world_v3_long_horizon_readiness": 0.989287,
+    "browser_world_v3_surface_available": 1.0,
+    "circadian_sleep_debt_coupling": 0.951997,
+    "frequency_circadian_rhythm": 1.0,
+    "long_horizon_span_coverage": 1.0,
+    "mean_long_horizon_channel_score": 0.991298,
+    "mood_temporal_inertia": 0.894351,
+    "phase_coverage": 1.0,
+    "private_history_boundary": 1.0,
+    "relationship_consequence_binding": 0.997024,
+    "relationship_recovery_from_help": 1.0,
+    "replay_checkpoint_coverage": 1.0,
+    "replay_import_export_integrity": 1.0,
+    "routine_consequence_accumulation": 1.0,
+    "routine_variation_without_chaos": 1.0,
+    "schedule_autonomy_balance": 1.0,
+    "sleep_recovery_effect": 1.0,
+    "source_embodied_affect_continuity": 1.0,
+    "weakest_channel_score": 0.894351
+  },
+  "name": "SSRM-3D Browser World v3 Long-Horizon Routine Circadian Relationship Bridge",
+  "next_gate": "browser world v4 with multi-week learned routine adaptation, proto-language drift from repeated interactions, and avatar-entry consequences that respect agent sleep, boundaries, and relationship history",
+  "report": 243,
+  "seed": 20260856,
+  "source_results": "artifacts/ssrm_3d_browser_world_v2_embodied_affect_dynamics_bridge_results.json",
+  "verdict": "pass"
+}

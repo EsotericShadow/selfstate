@@ -859,3 +859,6 @@ Report 241 turns the integrated browser-world line toward first-person artificia
 
 
 Report 242 deepens embodied affect dynamics inside browser world v2. It generates 120 sensor-rate ticks, 120 homeostatic drive frames, 120 lagged affect dynamics frames, 120 coupling traces, 120 care opportunity frames, 120 behavior modulation frames, and 120 browser-world v2 ticks. The run passes with readiness 0.965324 and weakest-channel score 0.870476. The weakest channel remains body-to-affect coupling, but it is now explicitly lag-aware and improved from the prior pressure point. The strongest ablation is removing body-to-affect coupling, which drops readiness to 0.655324.
+
+
+Report 243 turns embodied affect into long-horizon continuity. It generates 672 autonomous routine ticks across 21 days, 672 circadian sleep frames, 672 affect history frames, 672 relationship consequence frames, 672 routine consequence frames, 672 replay continuity frames, and 672 browser-world v3 ticks. The run passes with readiness 0.989287 and weakest-channel score 0.894351. The strongest ablations are removing circadian sleep debt, relationship consequences, autonomous routines, long-horizon span, and affect carryover, which correctly marks that continuity across days is now a core dependency.

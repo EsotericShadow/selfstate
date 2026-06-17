@@ -1,0 +1,183 @@
+{
+  "agents": {
+    "Ari": {
+      "attachment_need": 0.46,
+      "autonomy_need": 0.66,
+      "baseline_trust": 0.54,
+      "chronotype": 0.18,
+      "frequency_hz": 2.18,
+      "role": "route keeper",
+      "routine_bias": "repair",
+      "safe_place": "workbench alcove"
+    },
+    "Fay": {
+      "attachment_need": 0.73,
+      "autonomy_need": 0.49,
+      "baseline_trust": 0.62,
+      "chronotype": -0.1,
+      "frequency_hz": 2.34,
+      "role": "hearth ritualist",
+      "routine_bias": "care",
+      "safe_place": "hearth nest"
+    },
+    "Milo": {
+      "attachment_need": 0.51,
+      "autonomy_need": 0.61,
+      "baseline_trust": 0.58,
+      "chronotype": 0.32,
+      "frequency_hz": 2.51,
+      "role": "market pattern scout",
+      "routine_bias": "explore",
+      "safe_place": "market canopy"
+    },
+    "Sol": {
+      "attachment_need": 0.57,
+      "autonomy_need": 0.72,
+      "baseline_trust": 0.49,
+      "chronotype": -0.22,
+      "frequency_hz": 2.07,
+      "role": "seed ledger guardian",
+      "routine_bias": "account",
+      "safe_place": "quiet corner"
+    }
+  },
+  "boundary": "functional long-horizon artificial life scaffold; no consciousness claim",
+  "continuity_model": "autonomous routines + circadian sleep debt + affect history + relationship consequences + replay checkpoints",
+  "days": 21,
+  "report": 243,
+  "sample_ticks": [
+    {
+      "agent": "Ari",
+      "day": 1,
+      "private_history_hint": "history_charge=0.22; autonomy=0.79; reason=relationship state remains bounded",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.28; recovery=0.23",
+      "public_relationship_marker": "continues_neutral_boundary; trust=0.52; avoid=0.21",
+      "public_routine_marker": "day 1 dawn: Ari chooses quiet_route_scan",
+      "replay_checkpoint": "r243-day01-tick001",
+      "tick_index": 1,
+      "trace_integrity_token": "r243:1:Ari:90bff84411"
+    },
+    {
+      "agent": "Fay",
+      "day": 1,
+      "private_history_hint": "history_charge=0.18; autonomy=0.81; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.24; recovery=0.32",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.65; avoid=0.15",
+      "public_routine_marker": "day 1 dawn: Fay chooses share_water",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 2,
+      "trace_integrity_token": "r243:2:Fay:f32886ff20"
+    },
+    {
+      "agent": "Milo",
+      "day": 1,
+      "private_history_hint": "history_charge=0.19; autonomy=0.83; reason=relationship state remains bounded",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.24; recovery=0.26",
+      "public_relationship_marker": "continues_neutral_boundary; trust=0.58; avoid=0.18",
+      "public_routine_marker": "day 1 dawn: Milo chooses wake_check_body",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 3,
+      "trace_integrity_token": "r243:3:Milo:d650f5a877"
+    },
+    {
+      "agent": "Sol",
+      "day": 1,
+      "private_history_hint": "history_charge=0.17; autonomy=0.86; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.24; recovery=0.32",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.52; avoid=0.15",
+      "public_routine_marker": "day 1 dawn: Sol chooses prepare_tools",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 4,
+      "trace_integrity_token": "r243:4:Sol:d9b0f9bca2"
+    },
+    {
+      "agent": "Ari",
+      "day": 1,
+      "private_history_hint": "history_charge=0.19; autonomy=0.85; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.30; recovery=0.28",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.54; avoid=0.18",
+      "public_routine_marker": "day 1 dawn: Ari chooses prepare_tools",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 5,
+      "trace_integrity_token": "r243:5:Ari:2d999b4788"
+    },
+    {
+      "agent": "Fay",
+      "day": 1,
+      "private_history_hint": "history_charge=0.21; autonomy=0.71; reason=trust stable across days",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.28; recovery=0.25",
+      "public_relationship_marker": "shares_private_hint_voluntarily; trust=0.62; avoid=0.18",
+      "public_routine_marker": "day 1 dawn: Fay chooses quiet_route_scan",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 6,
+      "trace_integrity_token": "r243:6:Fay:271f68ae13"
+    },
+    {
+      "agent": "Milo",
+      "day": 1,
+      "private_history_hint": "history_charge=0.19; autonomy=0.83; reason=relationship state remains bounded",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.30; recovery=0.21",
+      "public_relationship_marker": "continues_neutral_boundary; trust=0.59; avoid=0.18",
+      "public_routine_marker": "day 1 dawn: Milo chooses share_water",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 7,
+      "trace_integrity_token": "r243:7:Milo:a6f4074a4f"
+    },
+    {
+      "agent": "Sol",
+      "day": 1,
+      "private_history_hint": "history_charge=0.14; autonomy=0.84; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.26; recovery=0.35",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.54; avoid=0.13",
+      "public_routine_marker": "day 1 dawn: Sol chooses wake_check_body",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 8,
+      "trace_integrity_token": "r243:8:Sol:a973767659"
+    },
+    {
+      "agent": "Ari",
+      "day": 1,
+      "private_history_hint": "history_charge=0.16; autonomy=0.83; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.33; recovery=0.32",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.57; avoid=0.16",
+      "public_routine_marker": "day 1 day: Ari chooses repair_route",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 9,
+      "trace_integrity_token": "r243:9:Ari:90cb4173d5"
+    },
+    {
+      "agent": "Fay",
+      "day": 1,
+      "private_history_hint": "history_charge=0.18; autonomy=0.83; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.30; recovery=0.30",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.65; avoid=0.16",
+      "public_routine_marker": "day 1 day: Fay chooses market_exchange",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 10,
+      "trace_integrity_token": "r243:10:Fay:6b404f046b"
+    },
+    {
+      "agent": "Milo",
+      "day": 1,
+      "private_history_hint": "history_charge=0.21; autonomy=0.79; reason=relationship state remains bounded",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.36; recovery=0.18",
+      "public_relationship_marker": "continues_neutral_boundary; trust=0.56; avoid=0.20",
+      "public_routine_marker": "day 1 day: Milo chooses repair_route",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 11,
+      "trace_integrity_token": "r243:11:Milo:8579ae5363"
+    },
+    {
+      "agent": "Sol",
+      "day": 1,
+      "private_history_hint": "history_charge=0.11; autonomy=0.84; reason=help became recovery memory",
+      "public_body_affect_marker": "steady_continuity; sleep_debt=0.28; recovery=0.37",
+      "public_relationship_marker": "approaches_for_shared_task_later; trust=0.57; avoid=0.10",
+      "public_routine_marker": "day 1 day: Sol chooses teach_skill",
+      "replay_checkpoint": "no_checkpoint",
+      "tick_index": 12,
+      "trace_integrity_token": "r243:12:Sol:04a23551dc"
+    }
+  ],
+  "seed": 20260856
+}

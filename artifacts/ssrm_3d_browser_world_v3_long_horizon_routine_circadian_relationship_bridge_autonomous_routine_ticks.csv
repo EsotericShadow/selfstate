@@ -1,0 +1,673 @@
+tick_index,day,hour,phase,agent,role,routine,autonomous_goal,avatar_pressure,social_context,event_kind,routine_source,routine_continuity_token
+1,1,5,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.247829,self-directed,crowding,agent_schedule_not_avatar_command,r243:1:5:Ari:quiet_route_scan:222b4754
+2,1,5,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.078828,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:1:5:Fay:share_water:8e180ac7
+3,1,5,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.081114,self-directed,ordinary,agent_schedule_not_avatar_command,r243:1:5:Milo:wake_check_body:9e371bc3
+4,1,5,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:1:5:Sol:prepare_tools:177686e4
+5,1,8,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:1:8:Ari:prepare_tools:db5aeab2
+6,1,8,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.500491,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:1:8:Fay:quiet_route_scan:ce0148e5
+7,1,8,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.075108,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:1:8:Milo:share_water:70e874a1
+8,1,8,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.087417,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:1:8:Sol:wake_check_body:00cea675
+9,1,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.084082,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:1:11:Ari:repair_route:067712a0
+10,1,11,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:1:11:Fay:market_exchange:341412b1
+11,1,11,day,Milo,market pattern scout,repair_route,Milo keeps a route usable,0.247459,self-directed,crowding,agent_schedule_not_avatar_command,r243:1:11:Milo:repair_route:0377de76
+12,1,11,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.067045,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:1:11:Sol:teach_skill:e3ec579b
+13,1,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.094484,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:1:14:Ari:repair_route:067712a0
+14,1,14,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.088726,self-directed,ordinary,agent_schedule_not_avatar_command,r243:1:14:Fay:work_project:504749dc
+15,1,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:1:14:Milo:market_exchange:72f60159
+16,1,14,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.510513,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:1:14:Sol:repair_route:81c86727
+17,1,17,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.519238,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:1:17:Ari:relationship_check:6b5b0aed
+18,1,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.082915,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:1:17:Fay:ritual_hum:f0915dad
+19,1,17,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.070807,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:1:17:Milo:hearth_return:5636ef55
+20,1,17,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:1:17:Sol:ritual_hum:a9adb958
+21,1,20,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:1:20:Ari:ritual_hum:8e8fdc86
+22,1,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.252735,self-directed,crowding,agent_schedule_not_avatar_command,r243:1:20:Fay:ritual_hum:f0915dad
+23,1,20,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.066378,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:1:20:Milo:store_objects:49ee3d65
+24,1,20,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.06932,self-directed,ordinary,agent_schedule_not_avatar_command,r243:1:20:Sol:hearth_return:cca35c4b
+25,1,23,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.087028,self-directed,ordinary,agent_schedule_not_avatar_command,r243:1:23:Ari:sleep:9965438b
+26,1,23,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:1:23:Fay:dream_sort_memory:a568e1a1
+27,1,23,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.507251,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:1:23:Milo:guarded_rest:a1dd2abe
+28,1,23,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.092685,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:1:23:Sol:soft_recovery:73cfc9ed
+29,1,2,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.08697,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:1:2:Ari:soft_recovery:0bd75383
+30,1,2,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.065145,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:1:2:Fay:sleep:9524b5e8
+31,1,2,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:1:2:Milo:dream_sort_memory:5b8c69bc
+32,1,2,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.242543,self-directed,crowding,agent_schedule_not_avatar_command,r243:1:2:Sol:guarded_rest:b7d93b6c
+33,2,5,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.077237,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:2:5:Ari:share_water:8e382223
+34,2,5,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.094113,self-directed,ordinary,agent_schedule_not_avatar_command,r243:2:5:Fay:wake_check_body:c2c65084
+35,2,5,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:2:5:Milo:prepare_tools:4a3c2842
+36,2,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.521055,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:2:5:Sol:quiet_route_scan:291181a4
+37,2,8,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.502843,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:2:8:Ari:quiet_route_scan:222b4754
+38,2,8,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.08865,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:2:8:Fay:share_water:8e180ac7
+39,2,8,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.087541,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:2:8:Milo:wake_check_body:9e371bc3
+40,2,8,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:2:8:Sol:prepare_tools:177686e4
+41,2,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:2:11:Ari:repair_route:067712a0
+42,2,11,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.243335,self-directed,crowding,agent_schedule_not_avatar_command,r243:2:11:Fay:repair_route:1e258454
+43,2,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.092753,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:2:11:Milo:market_exchange:72f60159
+44,2,11,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.093854,self-directed,ordinary,agent_schedule_not_avatar_command,r243:2:11:Sol:work_project:9e5808dd
+45,2,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.089043,self-directed,ordinary,agent_schedule_not_avatar_command,r243:2:14:Ari:repair_route:067712a0
+46,2,14,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:2:14:Fay:market_exchange:341412b1
+47,2,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.516132,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:2:14:Milo:market_exchange:72f60159
+48,2,14,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.094251,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:2:14:Sol:teach_skill:e3ec579b
+49,2,17,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.090105,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:2:17:Ari:store_objects:2fd62bc4
+50,2,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.09401,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:2:17:Fay:ritual_hum:f0915dad
+51,2,17,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:2:17:Milo:ritual_hum:ad516317
+52,2,17,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.238743,self-directed,crowding,agent_schedule_not_avatar_command,r243:2:17:Sol:relationship_check:bfa94801
+53,2,20,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.251856,self-directed,crowding,agent_schedule_not_avatar_command,r243:2:20:Ari:relationship_check:6b5b0aed
+54,2,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.078013,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:2:20:Fay:ritual_hum:f0915dad
+55,2,20,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.067273,self-directed,ordinary,agent_schedule_not_avatar_command,r243:2:20:Milo:hearth_return:5636ef55
+56,2,20,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:2:20:Sol:ritual_hum:a9adb958
+57,2,23,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:2:23:Ari:dream_sort_memory:e2370a4a
+58,2,23,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.509968,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:2:23:Fay:guarded_rest:acd34292
+59,2,23,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.084241,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:2:23:Milo:soft_recovery:bffc930f
+60,2,23,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.092793,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:2:23:Sol:sleep:fe683409
+61,2,2,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.075985,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:2:2:Ari:sleep:9965438b
+62,2,2,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:2:2:Fay:dream_sort_memory:a568e1a1
+63,2,2,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.246857,self-directed,crowding,agent_schedule_not_avatar_command,r243:2:2:Milo:guarded_rest:a1dd2abe
+64,2,2,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.080013,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:2:2:Sol:soft_recovery:73cfc9ed
+65,3,5,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.067782,self-directed,ordinary,agent_schedule_not_avatar_command,r243:3:5:Ari:wake_check_body:bb15c18a
+66,3,5,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:3:5:Fay:prepare_tools:2785ee94
+67,3,5,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.523737,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:3:5:Milo:quiet_route_scan:3f98c3ae
+68,3,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.076154,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:3:5:Sol:quiet_route_scan:291181a4
+69,3,8,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.070658,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:3:8:Ari:share_water:8e382223
+70,3,8,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.071699,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:3:8:Fay:wake_check_body:c2c65084
+71,3,8,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:3:8:Milo:prepare_tools:4a3c2842
+72,3,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.24863,self-directed,crowding,agent_schedule_not_avatar_command,r243:3:8:Sol:quiet_route_scan:291181a4
+73,3,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.24946,self-directed,crowding,agent_schedule_not_avatar_command,r243:3:11:Ari:repair_route:067712a0
+74,3,11,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.066158,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:3:11:Fay:teach_skill:697452f7
+75,3,11,day,Milo,market pattern scout,work_project,Milo continues day routine: work_project,0.08916,self-directed,ordinary,agent_schedule_not_avatar_command,r243:3:11:Milo:work_project:6453b983
+76,3,11,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:3:11:Sol:market_exchange:be480137
+77,3,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:3:14:Ari:repair_route:067712a0
+78,3,14,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.503666,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:3:14:Fay:repair_route:1e258454
+79,3,14,day,Milo,market pattern scout,teach_skill,Milo continues day routine: teach_skill,0.068082,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:3:14:Milo:teach_skill:624ff239
+80,3,14,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.077159,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:3:14:Sol:work_project:9e5808dd
+81,3,17,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.069025,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:3:17:Ari:hearth_return:8d803a50
+82,3,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:3:17:Fay:ritual_hum:f0915dad
+83,3,17,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.253863,self-directed,crowding,agent_schedule_not_avatar_command,r243:3:17:Milo:relationship_check:5711035a
+84,3,17,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.068143,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:3:17:Sol:store_objects:ff5938cb
+85,3,20,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.074865,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:3:20:Ari:store_objects:2fd62bc4
+86,3,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.089036,self-directed,ordinary,agent_schedule_not_avatar_command,r243:3:20:Fay:ritual_hum:f0915dad
+87,3,20,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:3:20:Milo:ritual_hum:ad516317
+88,3,20,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.518434,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:3:20:Sol:relationship_check:bfa94801
+89,3,23,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.517914,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:3:23:Ari:guarded_rest:fc7754fd
+90,3,23,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.085875,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:3:23:Fay:soft_recovery:fd7825a3
+91,3,23,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.092598,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:3:23:Milo:sleep:89f57e1b
+92,3,23,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:3:23:Sol:dream_sort_memory:76823bc7
+93,3,2,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:3:2:Ari:dream_sort_memory:e2370a4a
+94,3,2,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.249132,self-directed,crowding,agent_schedule_not_avatar_command,r243:3:2:Fay:guarded_rest:acd34292
+95,3,2,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.09266,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:3:2:Milo:soft_recovery:bffc930f
+96,3,2,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.06795,self-directed,ordinary,agent_schedule_not_avatar_command,r243:3:2:Sol:sleep:fe683409
+97,4,5,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:4:5:Ari:prepare_tools:db5aeab2
+98,4,5,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.502889,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:4:5:Fay:quiet_route_scan:ce0148e5
+99,4,5,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.075318,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:4:5:Milo:share_water:70e874a1
+100,4,5,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.087427,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:4:5:Sol:wake_check_body:00cea675
+101,4,8,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.090951,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:4:8:Ari:wake_check_body:bb15c18a
+102,4,8,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:4:8:Fay:prepare_tools:2785ee94
+103,4,8,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.235987,self-directed,crowding,agent_schedule_not_avatar_command,r243:4:8:Milo:quiet_route_scan:3f98c3ae
+104,4,8,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.067394,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:4:8:Sol:share_water:96d68b8a
+105,4,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.088573,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:4:11:Ari:repair_route:067712a0
+106,4,11,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.072889,self-directed,ordinary,agent_schedule_not_avatar_command,r243:4:11:Fay:work_project:504749dc
+107,4,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:4:11:Milo:market_exchange:72f60159
+108,4,11,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.508303,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:4:11:Sol:repair_route:81c86727
+109,4,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.510106,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:4:14:Ari:repair_route:067712a0
+110,4,14,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.090415,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:4:14:Fay:teach_skill:697452f7
+111,4,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.069158,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:4:14:Milo:market_exchange:72f60159
+112,4,14,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:4:14:Sol:market_exchange:be480137
+113,4,17,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:4:17:Ari:ritual_hum:8e8fdc86
+114,4,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.264574,self-directed,crowding,agent_schedule_not_avatar_command,r243:4:17:Fay:ritual_hum:f0915dad
+115,4,17,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.071997,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:4:17:Milo:store_objects:49ee3d65
+116,4,17,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.070069,self-directed,ordinary,agent_schedule_not_avatar_command,r243:4:17:Sol:hearth_return:cca35c4b
+117,4,20,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.073061,self-directed,ordinary,agent_schedule_not_avatar_command,r243:4:20:Ari:hearth_return:8d803a50
+118,4,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:4:20:Fay:ritual_hum:f0915dad
+119,4,20,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.497559,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:4:20:Milo:relationship_check:5711035a
+120,4,20,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.068834,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:4:20:Sol:store_objects:ff5938cb
+121,4,23,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.087375,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:4:23:Ari:soft_recovery:0bd75383
+122,4,23,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.066158,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:4:23:Fay:sleep:9524b5e8
+123,4,23,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:4:23:Milo:dream_sort_memory:5b8c69bc
+124,4,23,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.243799,self-directed,crowding,agent_schedule_not_avatar_command,r243:4:23:Sol:guarded_rest:b7d93b6c
+125,4,2,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.262523,self-directed,crowding,agent_schedule_not_avatar_command,r243:4:2:Ari:guarded_rest:fc7754fd
+126,4,2,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.074122,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:4:2:Fay:soft_recovery:fd7825a3
+127,4,2,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.093215,self-directed,ordinary,agent_schedule_not_avatar_command,r243:4:2:Milo:sleep:89f57e1b
+128,4,2,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:4:2:Sol:dream_sort_memory:76823bc7
+129,5,5,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.503923,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:5:5:Ari:quiet_route_scan:222b4754
+130,5,5,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.068015,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:5:5:Fay:share_water:8e180ac7
+131,5,5,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.069952,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:5:5:Milo:wake_check_body:9e371bc3
+132,5,5,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:5:5:Sol:prepare_tools:177686e4
+133,5,8,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:5:8:Ari:prepare_tools:db5aeab2
+134,5,8,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.240244,self-directed,crowding,agent_schedule_not_avatar_command,r243:5:8:Fay:quiet_route_scan:ce0148e5
+135,5,8,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.06988,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:5:8:Milo:share_water:70e874a1
+136,5,8,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.085283,self-directed,ordinary,agent_schedule_not_avatar_command,r243:5:8:Sol:wake_check_body:00cea675
+137,5,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.082996,self-directed,ordinary,agent_schedule_not_avatar_command,r243:5:11:Ari:repair_route:067712a0
+138,5,11,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:5:11:Fay:market_exchange:341412b1
+139,5,11,day,Milo,market pattern scout,repair_route,Milo keeps a route usable,0.520844,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:5:11:Milo:repair_route:0377de76
+140,5,11,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.066492,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:5:11:Sol:teach_skill:e3ec579b
+141,5,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.091841,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:5:14:Ari:repair_route:067712a0
+142,5,14,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.076658,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:5:14:Fay:work_project:504749dc
+143,5,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:5:14:Milo:market_exchange:72f60159
+144,5,14,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.256128,self-directed,crowding,agent_schedule_not_avatar_command,r243:5:14:Sol:repair_route:81c86727
+145,5,17,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.25448,self-directed,crowding,agent_schedule_not_avatar_command,r243:5:17:Ari:relationship_check:6b5b0aed
+146,5,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.065007,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:5:17:Fay:ritual_hum:f0915dad
+147,5,17,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.071373,self-directed,ordinary,agent_schedule_not_avatar_command,r243:5:17:Milo:hearth_return:5636ef55
+148,5,17,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:5:17:Sol:ritual_hum:a9adb958
+149,5,20,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:5:20:Ari:ritual_hum:8e8fdc86
+150,5,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.515439,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:5:20:Fay:ritual_hum:f0915dad
+151,5,20,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.088682,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:5:20:Milo:store_objects:49ee3d65
+152,5,20,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.069622,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:5:20:Sol:hearth_return:cca35c4b
+153,5,23,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.078208,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:5:23:Ari:sleep:9965438b
+154,5,23,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:5:23:Fay:dream_sort_memory:a568e1a1
+155,5,23,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.246221,self-directed,crowding,agent_schedule_not_avatar_command,r243:5:23:Milo:guarded_rest:a1dd2abe
+156,5,23,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.077945,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:5:23:Sol:soft_recovery:73cfc9ed
+157,5,2,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.094749,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:5:2:Ari:soft_recovery:0bd75383
+158,5,2,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.080669,self-directed,ordinary,agent_schedule_not_avatar_command,r243:5:2:Fay:sleep:9524b5e8
+159,5,2,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:5:2:Milo:dream_sort_memory:5b8c69bc
+160,5,2,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.496966,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:5:2:Sol:guarded_rest:b7d93b6c
+161,6,5,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.093359,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:6:5:Ari:share_water:8e382223
+162,6,5,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.088287,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:6:5:Fay:wake_check_body:c2c65084
+163,6,5,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:6:5:Milo:prepare_tools:4a3c2842
+164,6,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.248074,self-directed,crowding,agent_schedule_not_avatar_command,r243:6:5:Sol:quiet_route_scan:291181a4
+165,6,8,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.244955,self-directed,crowding,agent_schedule_not_avatar_command,r243:6:8:Ari:quiet_route_scan:222b4754
+166,6,8,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.078957,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:6:8:Fay:share_water:8e180ac7
+167,6,8,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.068593,self-directed,ordinary,agent_schedule_not_avatar_command,r243:6:8:Milo:wake_check_body:9e371bc3
+168,6,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:6:8:Sol:quiet_route_scan:291181a4
+169,6,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:6:11:Ari:repair_route:067712a0
+170,6,11,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.502828,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:6:11:Fay:repair_route:1e258454
+171,6,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.081948,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:6:11:Milo:market_exchange:72f60159
+172,6,11,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.068841,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:6:11:Sol:work_project:9e5808dd
+173,6,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.074151,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:6:14:Ari:repair_route:067712a0
+174,6,14,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:6:14:Fay:market_exchange:341412b1
+175,6,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.253887,self-directed,crowding,agent_schedule_not_avatar_command,r243:6:14:Milo:market_exchange:72f60159
+176,6,14,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.090732,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:6:14:Sol:teach_skill:e3ec579b
+177,6,17,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.091066,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:6:17:Ari:store_objects:2fd62bc4
+178,6,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.079575,self-directed,ordinary,agent_schedule_not_avatar_command,r243:6:17:Fay:ritual_hum:f0915dad
+179,6,17,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:6:17:Milo:ritual_hum:ad516317
+180,6,17,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.505107,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:6:17:Sol:relationship_check:bfa94801
+181,6,20,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.50371,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:6:20:Ari:relationship_check:6b5b0aed
+182,6,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.078604,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:6:20:Fay:ritual_hum:f0915dad
+183,6,20,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.075916,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:6:20:Milo:hearth_return:5636ef55
+184,6,20,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:6:20:Sol:ritual_hum:a9adb958
+185,6,23,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:6:23:Ari:dream_sort_memory:e2370a4a
+186,6,23,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.247901,self-directed,crowding,agent_schedule_not_avatar_command,r243:6:23:Fay:guarded_rest:acd34292
+187,6,23,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.077713,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:6:23:Milo:soft_recovery:bffc930f
+188,6,23,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.067062,self-directed,ordinary,agent_schedule_not_avatar_command,r243:6:23:Sol:sleep:fe683409
+189,6,2,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.067304,self-directed,ordinary,agent_schedule_not_avatar_command,r243:6:2:Ari:sleep:9965438b
+190,6,2,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:6:2:Fay:dream_sort_memory:a568e1a1
+191,6,2,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.522305,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:6:2:Milo:guarded_rest:a1dd2abe
+192,6,2,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.093657,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:6:2:Sol:soft_recovery:73cfc9ed
+193,7,5,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.074708,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:7:5:Ari:wake_check_body:bb15c18a
+194,7,5,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:7:5:Fay:prepare_tools:2785ee94
+195,7,5,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.246589,self-directed,crowding,agent_schedule_not_avatar_command,r243:7:5:Milo:quiet_route_scan:3f98c3ae
+196,7,5,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.079213,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:7:5:Sol:share_water:96d68b8a
+197,7,8,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.069523,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:7:8:Ari:share_water:8e382223
+198,7,8,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.074745,self-directed,ordinary,agent_schedule_not_avatar_command,r243:7:8:Fay:wake_check_body:c2c65084
+199,7,8,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:7:8:Milo:prepare_tools:4a3c2842
+200,7,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.524629,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:7:8:Sol:quiet_route_scan:291181a4
+201,7,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.516815,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:7:11:Ari:repair_route:067712a0
+202,7,11,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.094564,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:7:11:Fay:teach_skill:697452f7
+203,7,11,day,Milo,market pattern scout,work_project,Milo continues day routine: work_project,0.089753,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:7:11:Milo:work_project:6453b983
+204,7,11,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:7:11:Sol:market_exchange:be480137
+205,7,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:7:14:Ari:repair_route:067712a0
+206,7,14,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.238103,self-directed,crowding,agent_schedule_not_avatar_command,r243:7:14:Fay:repair_route:1e258454
+207,7,14,day,Milo,market pattern scout,teach_skill,Milo continues day routine: teach_skill,0.088307,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:7:14:Milo:teach_skill:624ff239
+208,7,14,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.08425,self-directed,ordinary,agent_schedule_not_avatar_command,r243:7:14:Sol:work_project:9e5808dd
+209,7,17,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.090327,self-directed,ordinary,agent_schedule_not_avatar_command,r243:7:17:Ari:hearth_return:8d803a50
+210,7,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:7:17:Fay:ritual_hum:f0915dad
+211,7,17,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.51217,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:7:17:Milo:relationship_check:5711035a
+212,7,17,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.090695,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:7:17:Sol:store_objects:ff5938cb
+213,7,20,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.078221,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:7:20:Ari:store_objects:2fd62bc4
+214,7,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.073307,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:7:20:Fay:ritual_hum:f0915dad
+215,7,20,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:7:20:Milo:ritual_hum:ad516317
+216,7,20,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.255403,self-directed,crowding,agent_schedule_not_avatar_command,r243:7:20:Sol:relationship_check:bfa94801
+217,7,23,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.24037,self-directed,crowding,agent_schedule_not_avatar_command,r243:7:23:Ari:guarded_rest:fc7754fd
+218,7,23,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.084954,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:7:23:Fay:soft_recovery:fd7825a3
+219,7,23,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.0657,self-directed,ordinary,agent_schedule_not_avatar_command,r243:7:23:Milo:sleep:89f57e1b
+220,7,23,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:7:23:Sol:dream_sort_memory:76823bc7
+221,7,2,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:7:2:Ari:dream_sort_memory:e2370a4a
+222,7,2,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.500063,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:7:2:Fay:guarded_rest:acd34292
+223,7,2,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.088054,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:7:2:Milo:soft_recovery:bffc930f
+224,7,2,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.070767,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:7:2:Sol:sleep:fe683409
+225,8,5,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:8:5:Ari:prepare_tools:db5aeab2
+226,8,5,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.243639,self-directed,crowding,agent_schedule_not_avatar_command,r243:8:5:Fay:quiet_route_scan:ce0148e5
+227,8,5,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.083733,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:8:5:Milo:share_water:70e874a1
+228,8,5,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.090407,self-directed,ordinary,agent_schedule_not_avatar_command,r243:8:5:Sol:wake_check_body:00cea675
+229,8,8,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.089053,self-directed,ordinary,agent_schedule_not_avatar_command,r243:8:8:Ari:wake_check_body:bb15c18a
+230,8,8,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:8:8:Fay:prepare_tools:2785ee94
+231,8,8,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.495728,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:8:8:Milo:quiet_route_scan:3f98c3ae
+232,8,8,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.072635,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:8:8:Sol:share_water:96d68b8a
+233,8,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.092032,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:8:11:Ari:repair_route:067712a0
+234,8,11,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.085474,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:8:11:Fay:work_project:504749dc
+235,8,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:8:11:Milo:market_exchange:72f60159
+236,8,11,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.263698,self-directed,crowding,agent_schedule_not_avatar_command,r243:8:11:Sol:repair_route:81c86727
+237,8,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.244075,self-directed,crowding,agent_schedule_not_avatar_command,r243:8:14:Ari:repair_route:067712a0
+238,8,14,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.085332,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:8:14:Fay:teach_skill:697452f7
+239,8,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.074992,self-directed,ordinary,agent_schedule_not_avatar_command,r243:8:14:Milo:market_exchange:72f60159
+240,8,14,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:8:14:Sol:market_exchange:be480137
+241,8,17,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:8:17:Ari:ritual_hum:8e8fdc86
+242,8,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.496889,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:8:17:Fay:ritual_hum:f0915dad
+243,8,17,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.085825,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:8:17:Milo:store_objects:49ee3d65
+244,8,17,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.065959,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:8:17:Sol:hearth_return:cca35c4b
+245,8,20,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.071706,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:8:20:Ari:hearth_return:8d803a50
+246,8,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:8:20:Fay:ritual_hum:f0915dad
+247,8,20,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.242573,self-directed,crowding,agent_schedule_not_avatar_command,r243:8:20:Milo:relationship_check:5711035a
+248,8,20,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.067332,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:8:20:Sol:store_objects:ff5938cb
+249,8,23,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.076528,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:8:23:Ari:soft_recovery:0bd75383
+250,8,23,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.078218,self-directed,ordinary,agent_schedule_not_avatar_command,r243:8:23:Fay:sleep:9524b5e8
+251,8,23,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:8:23:Milo:dream_sort_memory:5b8c69bc
+252,8,23,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.503928,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:8:23:Sol:guarded_rest:b7d93b6c
+253,8,2,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.520455,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:8:2:Ari:guarded_rest:fc7754fd
+254,8,2,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.079229,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:8:2:Fay:soft_recovery:fd7825a3
+255,8,2,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.079557,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:8:2:Milo:sleep:89f57e1b
+256,8,2,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:8:2:Sol:dream_sort_memory:76823bc7
+257,9,5,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.259161,self-directed,crowding,agent_schedule_not_avatar_command,r243:9:5:Ari:quiet_route_scan:222b4754
+258,9,5,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.087727,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:9:5:Fay:share_water:8e180ac7
+259,9,5,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.074467,self-directed,ordinary,agent_schedule_not_avatar_command,r243:9:5:Milo:wake_check_body:9e371bc3
+260,9,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:9:5:Sol:quiet_route_scan:291181a4
+261,9,8,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:9:8:Ari:prepare_tools:db5aeab2
+262,9,8,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.517158,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:9:8:Fay:quiet_route_scan:ce0148e5
+263,9,8,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.086483,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:9:8:Milo:share_water:70e874a1
+264,9,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.082217,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:9:8:Sol:quiet_route_scan:291181a4
+265,9,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.086491,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:9:11:Ari:repair_route:067712a0
+266,9,11,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:9:11:Fay:market_exchange:341412b1
+267,9,11,day,Milo,market pattern scout,repair_route,Milo keeps a route usable,0.256934,self-directed,crowding,agent_schedule_not_avatar_command,r243:9:11:Milo:repair_route:0377de76
+268,9,11,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.074923,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:9:11:Sol:teach_skill:e3ec579b
+269,9,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.091925,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:9:14:Ari:repair_route:067712a0
+270,9,14,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.075883,self-directed,ordinary,agent_schedule_not_avatar_command,r243:9:14:Fay:work_project:504749dc
+271,9,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:9:14:Milo:market_exchange:72f60159
+272,9,14,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.49892,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:9:14:Sol:repair_route:81c86727
+273,9,17,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.523231,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:9:17:Ari:relationship_check:6b5b0aed
+274,9,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.081827,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:9:17:Fay:ritual_hum:f0915dad
+275,9,17,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.089291,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:9:17:Milo:hearth_return:5636ef55
+276,9,17,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:9:17:Sol:ritual_hum:a9adb958
+277,9,20,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:9:20:Ari:ritual_hum:8e8fdc86
+278,9,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.246185,self-directed,crowding,agent_schedule_not_avatar_command,r243:9:20:Fay:ritual_hum:f0915dad
+279,9,20,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.076082,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:9:20:Milo:store_objects:49ee3d65
+280,9,20,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.071247,self-directed,ordinary,agent_schedule_not_avatar_command,r243:9:20:Sol:hearth_return:cca35c4b
+281,9,23,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.082941,self-directed,ordinary,agent_schedule_not_avatar_command,r243:9:23:Ari:sleep:9965438b
+282,9,23,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:9:23:Fay:dream_sort_memory:a568e1a1
+283,9,23,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.496249,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:9:23:Milo:guarded_rest:a1dd2abe
+284,9,23,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.069369,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:9:23:Sol:soft_recovery:73cfc9ed
+285,9,2,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.065864,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:9:2:Ari:soft_recovery:0bd75383
+286,9,2,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.082357,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:9:2:Fay:sleep:9524b5e8
+287,9,2,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:9:2:Milo:dream_sort_memory:5b8c69bc
+288,9,2,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.261099,self-directed,crowding,agent_schedule_not_avatar_command,r243:9:2:Sol:guarded_rest:b7d93b6c
+289,10,5,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.07572,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:10:5:Ari:share_water:8e382223
+290,10,5,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.089886,self-directed,ordinary,agent_schedule_not_avatar_command,r243:10:5:Fay:wake_check_body:c2c65084
+291,10,5,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:10:5:Milo:prepare_tools:4a3c2842
+292,10,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.516249,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:10:5:Sol:quiet_route_scan:291181a4
+293,10,8,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.500452,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:10:8:Ari:quiet_route_scan:222b4754
+294,10,8,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.07877,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:10:8:Fay:share_water:8e180ac7
+295,10,8,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.066954,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:10:8:Milo:wake_check_body:9e371bc3
+296,10,8,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:10:8:Sol:prepare_tools:177686e4
+297,10,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:10:11:Ari:repair_route:067712a0
+298,10,11,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.238363,self-directed,crowding,agent_schedule_not_avatar_command,r243:10:11:Fay:repair_route:1e258454
+299,10,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.074734,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:10:11:Milo:market_exchange:72f60159
+300,10,11,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.081543,self-directed,ordinary,agent_schedule_not_avatar_command,r243:10:11:Sol:work_project:9e5808dd
+301,10,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.088915,self-directed,ordinary,agent_schedule_not_avatar_command,r243:10:14:Ari:repair_route:067712a0
+302,10,14,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:10:14:Fay:market_exchange:341412b1
+303,10,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.511574,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:10:14:Milo:market_exchange:72f60159
+304,10,14,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.070628,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:10:14:Sol:teach_skill:e3ec579b
+305,10,17,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.074935,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:10:17:Ari:store_objects:2fd62bc4
+306,10,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.079141,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:10:17:Fay:ritual_hum:f0915dad
+307,10,17,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:10:17:Milo:ritual_hum:ad516317
+308,10,17,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.238041,self-directed,crowding,agent_schedule_not_avatar_command,r243:10:17:Sol:relationship_check:bfa94801
+309,10,20,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.257384,self-directed,crowding,agent_schedule_not_avatar_command,r243:10:20:Ari:relationship_check:6b5b0aed
+310,10,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.078217,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:10:20:Fay:ritual_hum:f0915dad
+311,10,20,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.065658,self-directed,ordinary,agent_schedule_not_avatar_command,r243:10:20:Milo:hearth_return:5636ef55
+312,10,20,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:10:20:Sol:ritual_hum:a9adb958
+313,10,23,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:10:23:Ari:dream_sort_memory:e2370a4a
+314,10,23,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.523414,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:10:23:Fay:guarded_rest:acd34292
+315,10,23,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.087701,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:10:23:Milo:soft_recovery:bffc930f
+316,10,23,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.087674,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:10:23:Sol:sleep:fe683409
+317,10,2,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.088645,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:10:2:Ari:sleep:9965438b
+318,10,2,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:10:2:Fay:dream_sort_memory:a568e1a1
+319,10,2,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.240036,self-directed,crowding,agent_schedule_not_avatar_command,r243:10:2:Milo:guarded_rest:a1dd2abe
+320,10,2,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.073512,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:10:2:Sol:soft_recovery:73cfc9ed
+321,11,5,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.088678,self-directed,ordinary,agent_schedule_not_avatar_command,r243:11:5:Ari:wake_check_body:bb15c18a
+322,11,5,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:11:5:Fay:prepare_tools:2785ee94
+323,11,5,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.49759,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:11:5:Milo:quiet_route_scan:3f98c3ae
+324,11,5,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.080319,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:11:5:Sol:share_water:96d68b8a
+325,11,8,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.089959,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:11:8:Ari:share_water:8e382223
+326,11,8,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.068343,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:11:8:Fay:wake_check_body:c2c65084
+327,11,8,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:11:8:Milo:prepare_tools:4a3c2842
+328,11,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.242953,self-directed,crowding,agent_schedule_not_avatar_command,r243:11:8:Sol:quiet_route_scan:291181a4
+329,11,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.257964,self-directed,crowding,agent_schedule_not_avatar_command,r243:11:11:Ari:repair_route:067712a0
+330,11,11,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.086122,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:11:11:Fay:teach_skill:697452f7
+331,11,11,day,Milo,market pattern scout,work_project,Milo continues day routine: work_project,0.083492,self-directed,ordinary,agent_schedule_not_avatar_command,r243:11:11:Milo:work_project:6453b983
+332,11,11,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:11:11:Sol:market_exchange:be480137
+333,11,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:11:14:Ari:repair_route:067712a0
+334,11,14,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.499614,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:11:14:Fay:repair_route:1e258454
+335,11,14,day,Milo,market pattern scout,teach_skill,Milo continues day routine: teach_skill,0.079172,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:11:14:Milo:teach_skill:624ff239
+336,11,14,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.069353,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:11:14:Sol:work_project:9e5808dd
+337,11,17,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.084512,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:11:17:Ari:hearth_return:8d803a50
+338,11,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:11:17:Fay:ritual_hum:f0915dad
+339,11,17,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.23836,self-directed,crowding,agent_schedule_not_avatar_command,r243:11:17:Milo:relationship_check:5711035a
+340,11,17,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.076749,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:11:17:Sol:store_objects:ff5938cb
+341,11,20,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.084419,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:11:20:Ari:store_objects:2fd62bc4
+342,11,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.087801,self-directed,ordinary,agent_schedule_not_avatar_command,r243:11:20:Fay:ritual_hum:f0915dad
+343,11,20,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:11:20:Milo:ritual_hum:ad516317
+344,11,20,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.500629,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:11:20:Sol:relationship_check:bfa94801
+345,11,23,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.513015,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:11:23:Ari:guarded_rest:fc7754fd
+346,11,23,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.090565,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:11:23:Fay:soft_recovery:fd7825a3
+347,11,23,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.083534,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:11:23:Milo:sleep:89f57e1b
+348,11,23,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:11:23:Sol:dream_sort_memory:76823bc7
+349,11,2,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:11:2:Ari:dream_sort_memory:e2370a4a
+350,11,2,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.261727,self-directed,crowding,agent_schedule_not_avatar_command,r243:11:2:Fay:guarded_rest:acd34292
+351,11,2,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.071088,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:11:2:Milo:soft_recovery:bffc930f
+352,11,2,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.077507,self-directed,ordinary,agent_schedule_not_avatar_command,r243:11:2:Sol:sleep:fe683409
+353,12,5,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:12:5:Ari:prepare_tools:db5aeab2
+354,12,5,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.515501,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:12:5:Fay:quiet_route_scan:ce0148e5
+355,12,5,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.067736,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:12:5:Milo:share_water:70e874a1
+356,12,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.094772,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:12:5:Sol:quiet_route_scan:291181a4
+357,12,8,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.079632,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:12:8:Ari:wake_check_body:bb15c18a
+358,12,8,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:12:8:Fay:prepare_tools:2785ee94
+359,12,8,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.262158,self-directed,crowding,agent_schedule_not_avatar_command,r243:12:8:Milo:quiet_route_scan:3f98c3ae
+360,12,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.070534,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:12:8:Sol:quiet_route_scan:291181a4
+361,12,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.084922,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:12:11:Ari:repair_route:067712a0
+362,12,11,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.075637,self-directed,ordinary,agent_schedule_not_avatar_command,r243:12:11:Fay:work_project:504749dc
+363,12,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:12:11:Milo:market_exchange:72f60159
+364,12,11,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.523016,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:12:11:Sol:repair_route:81c86727
+365,12,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.495092,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:12:14:Ari:repair_route:067712a0
+366,12,14,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.085745,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:12:14:Fay:teach_skill:697452f7
+367,12,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.079359,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:12:14:Milo:market_exchange:72f60159
+368,12,14,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:12:14:Sol:market_exchange:be480137
+369,12,17,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:12:17:Ari:ritual_hum:8e8fdc86
+370,12,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.240653,self-directed,crowding,agent_schedule_not_avatar_command,r243:12:17:Fay:ritual_hum:f0915dad
+371,12,17,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.086862,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:12:17:Milo:store_objects:49ee3d65
+372,12,17,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.072118,self-directed,ordinary,agent_schedule_not_avatar_command,r243:12:17:Sol:hearth_return:cca35c4b
+373,12,20,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.082915,self-directed,ordinary,agent_schedule_not_avatar_command,r243:12:20:Ari:hearth_return:8d803a50
+374,12,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:12:20:Fay:ritual_hum:f0915dad
+375,12,20,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.519223,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:12:20:Milo:relationship_check:5711035a
+376,12,20,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.065693,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:12:20:Sol:store_objects:ff5938cb
+377,12,23,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.067971,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:12:23:Ari:soft_recovery:0bd75383
+378,12,23,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.077312,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:12:23:Fay:sleep:9524b5e8
+379,12,23,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:12:23:Milo:dream_sort_memory:5b8c69bc
+380,12,23,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.258564,self-directed,crowding,agent_schedule_not_avatar_command,r243:12:23:Sol:guarded_rest:b7d93b6c
+381,12,2,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.256956,self-directed,crowding,agent_schedule_not_avatar_command,r243:12:2:Ari:guarded_rest:fc7754fd
+382,12,2,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.076616,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:12:2:Fay:soft_recovery:fd7825a3
+383,12,2,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.078937,self-directed,ordinary,agent_schedule_not_avatar_command,r243:12:2:Milo:sleep:89f57e1b
+384,12,2,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:12:2:Sol:dream_sort_memory:76823bc7
+385,13,5,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.52431,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:13:5:Ari:quiet_route_scan:222b4754
+386,13,5,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.087871,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:13:5:Fay:share_water:8e180ac7
+387,13,5,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.093352,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:13:5:Milo:wake_check_body:9e371bc3
+388,13,5,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:13:5:Sol:prepare_tools:177686e4
+389,13,8,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:13:8:Ari:prepare_tools:db5aeab2
+390,13,8,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.25485,self-directed,crowding,agent_schedule_not_avatar_command,r243:13:8:Fay:quiet_route_scan:ce0148e5
+391,13,8,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.071128,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:13:8:Milo:share_water:70e874a1
+392,13,8,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.092968,self-directed,ordinary,agent_schedule_not_avatar_command,r243:13:8:Sol:wake_check_body:00cea675
+393,13,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.073929,self-directed,ordinary,agent_schedule_not_avatar_command,r243:13:11:Ari:repair_route:067712a0
+394,13,11,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:13:11:Fay:market_exchange:341412b1
+395,13,11,day,Milo,market pattern scout,repair_route,Milo keeps a route usable,0.523452,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:13:11:Milo:repair_route:0377de76
+396,13,11,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.067398,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:13:11:Sol:teach_skill:e3ec579b
+397,13,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.074638,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:13:14:Ari:repair_route:067712a0
+398,13,14,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.08693,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:13:14:Fay:work_project:504749dc
+399,13,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:13:14:Milo:market_exchange:72f60159
+400,13,14,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.260808,self-directed,crowding,agent_schedule_not_avatar_command,r243:13:14:Sol:repair_route:81c86727
+401,13,17,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.264158,self-directed,crowding,agent_schedule_not_avatar_command,r243:13:17:Ari:relationship_check:6b5b0aed
+402,13,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.093261,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:13:17:Fay:ritual_hum:f0915dad
+403,13,17,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.07515,self-directed,ordinary,agent_schedule_not_avatar_command,r243:13:17:Milo:hearth_return:5636ef55
+404,13,17,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:13:17:Sol:ritual_hum:a9adb958
+405,13,20,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:13:20:Ari:ritual_hum:8e8fdc86
+406,13,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.506337,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:13:20:Fay:ritual_hum:f0915dad
+407,13,20,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.087705,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:13:20:Milo:store_objects:49ee3d65
+408,13,20,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.067195,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:13:20:Sol:hearth_return:cca35c4b
+409,13,23,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.085128,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:13:23:Ari:sleep:9965438b
+410,13,23,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:13:23:Fay:dream_sort_memory:a568e1a1
+411,13,23,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.240353,self-directed,crowding,agent_schedule_not_avatar_command,r243:13:23:Milo:guarded_rest:a1dd2abe
+412,13,23,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.084424,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:13:23:Sol:soft_recovery:73cfc9ed
+413,13,2,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.079617,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:13:2:Ari:soft_recovery:0bd75383
+414,13,2,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.067303,self-directed,ordinary,agent_schedule_not_avatar_command,r243:13:2:Fay:sleep:9524b5e8
+415,13,2,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:13:2:Milo:dream_sort_memory:5b8c69bc
+416,13,2,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.515504,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:13:2:Sol:guarded_rest:b7d93b6c
+417,14,5,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.094,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:14:5:Ari:share_water:8e382223
+418,14,5,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.09245,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:14:5:Fay:wake_check_body:c2c65084
+419,14,5,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:14:5:Milo:prepare_tools:4a3c2842
+420,14,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.247507,self-directed,crowding,agent_schedule_not_avatar_command,r243:14:5:Sol:quiet_route_scan:291181a4
+421,14,8,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.251269,self-directed,crowding,agent_schedule_not_avatar_command,r243:14:8:Ari:quiet_route_scan:222b4754
+422,14,8,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.079551,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:14:8:Fay:share_water:8e180ac7
+423,14,8,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.093167,self-directed,ordinary,agent_schedule_not_avatar_command,r243:14:8:Milo:wake_check_body:9e371bc3
+424,14,8,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:14:8:Sol:prepare_tools:177686e4
+425,14,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:14:11:Ari:repair_route:067712a0
+426,14,11,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.516531,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:14:11:Fay:repair_route:1e258454
+427,14,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.091891,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:14:11:Milo:market_exchange:72f60159
+428,14,11,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.077345,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:14:11:Sol:work_project:9e5808dd
+429,14,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.078311,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:14:14:Ari:repair_route:067712a0
+430,14,14,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:14:14:Fay:market_exchange:341412b1
+431,14,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.257132,self-directed,crowding,agent_schedule_not_avatar_command,r243:14:14:Milo:market_exchange:72f60159
+432,14,14,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.068608,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:14:14:Sol:teach_skill:e3ec579b
+433,14,17,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.070529,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:14:17:Ari:store_objects:2fd62bc4
+434,14,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.074353,self-directed,ordinary,agent_schedule_not_avatar_command,r243:14:17:Fay:ritual_hum:f0915dad
+435,14,17,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:14:17:Milo:ritual_hum:ad516317
+436,14,17,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.515684,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:14:17:Sol:relationship_check:bfa94801
+437,14,20,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.504372,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:14:20:Ari:relationship_check:6b5b0aed
+438,14,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.070087,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:14:20:Fay:ritual_hum:f0915dad
+439,14,20,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.068898,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:14:20:Milo:hearth_return:5636ef55
+440,14,20,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:14:20:Sol:ritual_hum:a9adb958
+441,14,23,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:14:23:Ari:dream_sort_memory:e2370a4a
+442,14,23,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.245369,self-directed,crowding,agent_schedule_not_avatar_command,r243:14:23:Fay:guarded_rest:acd34292
+443,14,23,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.085791,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:14:23:Milo:soft_recovery:bffc930f
+444,14,23,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.074952,self-directed,ordinary,agent_schedule_not_avatar_command,r243:14:23:Sol:sleep:fe683409
+445,14,2,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.082142,self-directed,ordinary,agent_schedule_not_avatar_command,r243:14:2:Ari:sleep:9965438b
+446,14,2,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:14:2:Fay:dream_sort_memory:a568e1a1
+447,14,2,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.51792,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:14:2:Milo:guarded_rest:a1dd2abe
+448,14,2,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.073598,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:14:2:Sol:soft_recovery:73cfc9ed
+449,15,5,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.082951,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:15:5:Ari:wake_check_body:bb15c18a
+450,15,5,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:15:5:Fay:prepare_tools:2785ee94
+451,15,5,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.261824,self-directed,crowding,agent_schedule_not_avatar_command,r243:15:5:Milo:quiet_route_scan:3f98c3ae
+452,15,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.086715,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:15:5:Sol:quiet_route_scan:291181a4
+453,15,8,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.077204,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:15:8:Ari:share_water:8e382223
+454,15,8,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.068776,self-directed,ordinary,agent_schedule_not_avatar_command,r243:15:8:Fay:wake_check_body:c2c65084
+455,15,8,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:15:8:Milo:prepare_tools:4a3c2842
+456,15,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.496822,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:15:8:Sol:quiet_route_scan:291181a4
+457,15,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.508412,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:15:11:Ari:repair_route:067712a0
+458,15,11,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.073497,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:15:11:Fay:teach_skill:697452f7
+459,15,11,day,Milo,market pattern scout,work_project,Milo continues day routine: work_project,0.084191,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:15:11:Milo:work_project:6453b983
+460,15,11,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:15:11:Sol:market_exchange:be480137
+461,15,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:15:14:Ari:repair_route:067712a0
+462,15,14,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.25559,self-directed,crowding,agent_schedule_not_avatar_command,r243:15:14:Fay:repair_route:1e258454
+463,15,14,day,Milo,market pattern scout,teach_skill,Milo continues day routine: teach_skill,0.08521,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:15:14:Milo:teach_skill:624ff239
+464,15,14,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.073265,self-directed,ordinary,agent_schedule_not_avatar_command,r243:15:14:Sol:work_project:9e5808dd
+465,15,17,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.081238,self-directed,ordinary,agent_schedule_not_avatar_command,r243:15:17:Ari:hearth_return:8d803a50
+466,15,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:15:17:Fay:ritual_hum:f0915dad
+467,15,17,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.51709,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:15:17:Milo:relationship_check:5711035a
+468,15,17,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.066047,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:15:17:Sol:store_objects:ff5938cb
+469,15,20,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.090522,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:15:20:Ari:store_objects:2fd62bc4
+470,15,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.072219,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:15:20:Fay:ritual_hum:f0915dad
+471,15,20,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:15:20:Milo:ritual_hum:ad516317
+472,15,20,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.238878,self-directed,crowding,agent_schedule_not_avatar_command,r243:15:20:Sol:relationship_check:bfa94801
+473,15,23,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.244259,self-directed,crowding,agent_schedule_not_avatar_command,r243:15:23:Ari:guarded_rest:fc7754fd
+474,15,23,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.069273,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:15:23:Fay:soft_recovery:fd7825a3
+475,15,23,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.079516,self-directed,ordinary,agent_schedule_not_avatar_command,r243:15:23:Milo:sleep:89f57e1b
+476,15,23,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:15:23:Sol:dream_sort_memory:76823bc7
+477,15,2,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:15:2:Ari:dream_sort_memory:e2370a4a
+478,15,2,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.500947,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:15:2:Fay:guarded_rest:acd34292
+479,15,2,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.093967,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:15:2:Milo:soft_recovery:bffc930f
+480,15,2,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.077654,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:15:2:Sol:sleep:fe683409
+481,16,5,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:16:5:Ari:prepare_tools:db5aeab2
+482,16,5,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.239102,self-directed,crowding,agent_schedule_not_avatar_command,r243:16:5:Fay:quiet_route_scan:ce0148e5
+483,16,5,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.069295,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:16:5:Milo:share_water:70e874a1
+484,16,5,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.080463,self-directed,ordinary,agent_schedule_not_avatar_command,r243:16:5:Sol:wake_check_body:00cea675
+485,16,8,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.09495,self-directed,ordinary,agent_schedule_not_avatar_command,r243:16:8:Ari:wake_check_body:bb15c18a
+486,16,8,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:16:8:Fay:prepare_tools:2785ee94
+487,16,8,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.506454,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:16:8:Milo:quiet_route_scan:3f98c3ae
+488,16,8,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.068699,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:16:8:Sol:share_water:96d68b8a
+489,16,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.073413,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:16:11:Ari:repair_route:067712a0
+490,16,11,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.072441,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:16:11:Fay:work_project:504749dc
+491,16,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:16:11:Milo:market_exchange:72f60159
+492,16,11,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.241865,self-directed,crowding,agent_schedule_not_avatar_command,r243:16:11:Sol:repair_route:81c86727
+493,16,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.238332,self-directed,crowding,agent_schedule_not_avatar_command,r243:16:14:Ari:repair_route:067712a0
+494,16,14,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.074129,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:16:14:Fay:teach_skill:697452f7
+495,16,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.082469,self-directed,ordinary,agent_schedule_not_avatar_command,r243:16:14:Milo:market_exchange:72f60159
+496,16,14,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:16:14:Sol:market_exchange:be480137
+497,16,17,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:16:17:Ari:ritual_hum:8e8fdc86
+498,16,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.498236,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:16:17:Fay:ritual_hum:f0915dad
+499,16,17,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.078623,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:16:17:Milo:store_objects:49ee3d65
+500,16,17,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.08349,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:16:17:Sol:hearth_return:cca35c4b
+501,16,20,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.079773,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:16:20:Ari:hearth_return:8d803a50
+502,16,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:16:20:Fay:ritual_hum:f0915dad
+503,16,20,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.240586,self-directed,crowding,agent_schedule_not_avatar_command,r243:16:20:Milo:relationship_check:5711035a
+504,16,20,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.093231,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:16:20:Sol:store_objects:ff5938cb
+505,16,23,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.06875,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:16:23:Ari:soft_recovery:0bd75383
+506,16,23,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.093157,self-directed,ordinary,agent_schedule_not_avatar_command,r243:16:23:Fay:sleep:9524b5e8
+507,16,23,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:16:23:Milo:dream_sort_memory:5b8c69bc
+508,16,23,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.522397,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:16:23:Sol:guarded_rest:b7d93b6c
+509,16,2,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.513567,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:16:2:Ari:guarded_rest:fc7754fd
+510,16,2,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.094244,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:16:2:Fay:soft_recovery:fd7825a3
+511,16,2,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.091941,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:16:2:Milo:sleep:89f57e1b
+512,16,2,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:16:2:Sol:dream_sort_memory:76823bc7
+513,17,5,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.23954,self-directed,crowding,agent_schedule_not_avatar_command,r243:17:5:Ari:quiet_route_scan:222b4754
+514,17,5,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.08956,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:17:5:Fay:share_water:8e180ac7
+515,17,5,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.09186,self-directed,ordinary,agent_schedule_not_avatar_command,r243:17:5:Milo:wake_check_body:9e371bc3
+516,17,5,dawn,Sol,seed ledger guardian,prepare_tools,Sol continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:17:5:Sol:prepare_tools:177686e4
+517,17,8,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:17:8:Ari:prepare_tools:db5aeab2
+518,17,8,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.518191,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:17:8:Fay:quiet_route_scan:ce0148e5
+519,17,8,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.084383,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:17:8:Milo:share_water:70e874a1
+520,17,8,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.091465,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:17:8:Sol:wake_check_body:00cea675
+521,17,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.092906,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:17:11:Ari:repair_route:067712a0
+522,17,11,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:17:11:Fay:market_exchange:341412b1
+523,17,11,day,Milo,market pattern scout,repair_route,Milo keeps a route usable,0.264122,self-directed,crowding,agent_schedule_not_avatar_command,r243:17:11:Milo:repair_route:0377de76
+524,17,11,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.092897,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:17:11:Sol:teach_skill:e3ec579b
+525,17,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.079535,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:17:14:Ari:repair_route:067712a0
+526,17,14,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.076902,self-directed,ordinary,agent_schedule_not_avatar_command,r243:17:14:Fay:work_project:504749dc
+527,17,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:17:14:Milo:market_exchange:72f60159
+528,17,14,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.516346,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:17:14:Sol:repair_route:81c86727
+529,17,17,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.518299,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:17:17:Ari:relationship_check:6b5b0aed
+530,17,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.088636,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:17:17:Fay:ritual_hum:f0915dad
+531,17,17,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.079242,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:17:17:Milo:hearth_return:5636ef55
+532,17,17,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:17:17:Sol:ritual_hum:a9adb958
+533,17,20,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:17:20:Ari:ritual_hum:8e8fdc86
+534,17,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.244753,self-directed,crowding,agent_schedule_not_avatar_command,r243:17:20:Fay:ritual_hum:f0915dad
+535,17,20,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.071511,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:17:20:Milo:store_objects:49ee3d65
+536,17,20,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.083969,self-directed,ordinary,agent_schedule_not_avatar_command,r243:17:20:Sol:hearth_return:cca35c4b
+537,17,23,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.090997,self-directed,ordinary,agent_schedule_not_avatar_command,r243:17:23:Ari:sleep:9965438b
+538,17,23,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:17:23:Fay:dream_sort_memory:a568e1a1
+539,17,23,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.524635,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:17:23:Milo:guarded_rest:a1dd2abe
+540,17,23,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.073693,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:17:23:Sol:soft_recovery:73cfc9ed
+541,17,2,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.069592,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:17:2:Ari:soft_recovery:0bd75383
+542,17,2,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.072953,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:17:2:Fay:sleep:9524b5e8
+543,17,2,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:17:2:Milo:dream_sort_memory:5b8c69bc
+544,17,2,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.264338,self-directed,crowding,agent_schedule_not_avatar_command,r243:17:2:Sol:guarded_rest:b7d93b6c
+545,18,5,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.088835,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:18:5:Ari:share_water:8e382223
+546,18,5,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.073362,self-directed,ordinary,agent_schedule_not_avatar_command,r243:18:5:Fay:wake_check_body:c2c65084
+547,18,5,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:18:5:Milo:prepare_tools:4a3c2842
+548,18,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.510841,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:18:5:Sol:quiet_route_scan:291181a4
+549,18,8,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.516917,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:18:8:Ari:quiet_route_scan:222b4754
+550,18,8,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.089889,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:18:8:Fay:share_water:8e180ac7
+551,18,8,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.081324,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:18:8:Milo:wake_check_body:9e371bc3
+552,18,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:18:8:Sol:quiet_route_scan:291181a4
+553,18,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:18:11:Ari:repair_route:067712a0
+554,18,11,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.24926,self-directed,crowding,agent_schedule_not_avatar_command,r243:18:11:Fay:repair_route:1e258454
+555,18,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.075973,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:18:11:Milo:market_exchange:72f60159
+556,18,11,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.091432,self-directed,ordinary,agent_schedule_not_avatar_command,r243:18:11:Sol:work_project:9e5808dd
+557,18,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.069591,self-directed,ordinary,agent_schedule_not_avatar_command,r243:18:14:Ari:repair_route:067712a0
+558,18,14,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:18:14:Fay:market_exchange:341412b1
+559,18,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.512587,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:18:14:Milo:market_exchange:72f60159
+560,18,14,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.069566,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:18:14:Sol:teach_skill:e3ec579b
+561,18,17,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.070901,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:18:17:Ari:store_objects:2fd62bc4
+562,18,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.071468,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:18:17:Fay:ritual_hum:f0915dad
+563,18,17,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:18:17:Milo:ritual_hum:ad516317
+564,18,17,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.264799,self-directed,crowding,agent_schedule_not_avatar_command,r243:18:17:Sol:relationship_check:bfa94801
+565,18,20,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.249639,self-directed,crowding,agent_schedule_not_avatar_command,r243:18:20:Ari:relationship_check:6b5b0aed
+566,18,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.079693,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:18:20:Fay:ritual_hum:f0915dad
+567,18,20,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.083615,self-directed,ordinary,agent_schedule_not_avatar_command,r243:18:20:Milo:hearth_return:5636ef55
+568,18,20,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:18:20:Sol:ritual_hum:a9adb958
+569,18,23,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:18:23:Ari:dream_sort_memory:e2370a4a
+570,18,23,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.501532,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:18:23:Fay:guarded_rest:acd34292
+571,18,23,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.077794,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:18:23:Milo:soft_recovery:bffc930f
+572,18,23,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.072357,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:18:23:Sol:sleep:fe683409
+573,18,2,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.076348,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:18:2:Ari:sleep:9965438b
+574,18,2,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:18:2:Fay:dream_sort_memory:a568e1a1
+575,18,2,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.238383,self-directed,crowding,agent_schedule_not_avatar_command,r243:18:2:Milo:guarded_rest:a1dd2abe
+576,18,2,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.073393,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:18:2:Sol:soft_recovery:73cfc9ed
+577,19,5,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.076352,self-directed,ordinary,agent_schedule_not_avatar_command,r243:19:5:Ari:wake_check_body:bb15c18a
+578,19,5,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:19:5:Fay:prepare_tools:2785ee94
+579,19,5,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.505992,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:19:5:Milo:quiet_route_scan:3f98c3ae
+580,19,5,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.092987,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:19:5:Sol:share_water:96d68b8a
+581,19,8,dawn,Ari,route keeper,share_water,Ari continues dawn routine: share_water,0.084333,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:19:8:Ari:share_water:8e382223
+582,19,8,dawn,Fay,hearth ritualist,wake_check_body,Fay continues dawn routine: wake_check_body,0.086171,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:19:8:Fay:wake_check_body:c2c65084
+583,19,8,dawn,Milo,market pattern scout,prepare_tools,Milo continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:19:8:Milo:prepare_tools:4a3c2842
+584,19,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.239121,self-directed,crowding,agent_schedule_not_avatar_command,r243:19:8:Sol:quiet_route_scan:291181a4
+585,19,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.257739,self-directed,crowding,agent_schedule_not_avatar_command,r243:19:11:Ari:repair_route:067712a0
+586,19,11,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.084299,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:19:11:Fay:teach_skill:697452f7
+587,19,11,day,Milo,market pattern scout,work_project,Milo continues day routine: work_project,0.079587,self-directed,ordinary,agent_schedule_not_avatar_command,r243:19:11:Milo:work_project:6453b983
+588,19,11,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:19:11:Sol:market_exchange:be480137
+589,19,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:19:14:Ari:repair_route:067712a0
+590,19,14,day,Fay,hearth ritualist,repair_route,Fay keeps a route usable,0.514844,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:19:14:Fay:repair_route:1e258454
+591,19,14,day,Milo,market pattern scout,teach_skill,Milo continues day routine: teach_skill,0.087068,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:19:14:Milo:teach_skill:624ff239
+592,19,14,day,Sol,seed ledger guardian,work_project,Sol continues day routine: work_project,0.076585,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:19:14:Sol:work_project:9e5808dd
+593,19,17,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.082192,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:19:17:Ari:hearth_return:8d803a50
+594,19,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:19:17:Fay:ritual_hum:f0915dad
+595,19,17,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.255472,self-directed,crowding,agent_schedule_not_avatar_command,r243:19:17:Milo:relationship_check:5711035a
+596,19,17,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.072019,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:19:17:Sol:store_objects:ff5938cb
+597,19,20,dusk,Ari,route keeper,store_objects,Ari continues dusk routine: store_objects,0.077971,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:19:20:Ari:store_objects:2fd62bc4
+598,19,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.091263,self-directed,ordinary,agent_schedule_not_avatar_command,r243:19:20:Fay:ritual_hum:f0915dad
+599,19,20,dusk,Milo,market pattern scout,ritual_hum,Milo stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:19:20:Milo:ritual_hum:ad516317
+600,19,20,dusk,Sol,seed ledger guardian,relationship_check,Sol tests whether trust changed,0.517568,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:19:20:Sol:relationship_check:bfa94801
+601,19,23,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.49679,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:19:23:Ari:guarded_rest:fc7754fd
+602,19,23,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.070655,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:19:23:Fay:soft_recovery:fd7825a3
+603,19,23,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.077558,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:19:23:Milo:sleep:89f57e1b
+604,19,23,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:19:23:Sol:dream_sort_memory:76823bc7
+605,19,2,night,Ari,route keeper,dream_sort_memory,Ari sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:19:2:Ari:dream_sort_memory:e2370a4a
+606,19,2,night,Fay,hearth ritualist,guarded_rest,Fay continues night routine: guarded_rest,0.261015,self-directed,crowding,agent_schedule_not_avatar_command,r243:19:2:Fay:guarded_rest:acd34292
+607,19,2,night,Milo,market pattern scout,soft_recovery,Milo continues night routine: soft_recovery,0.094167,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:19:2:Milo:soft_recovery:bffc930f
+608,19,2,night,Sol,seed ledger guardian,sleep,Sol protects recovery before tomorrow,0.084661,self-directed,ordinary,agent_schedule_not_avatar_command,r243:19:2:Sol:sleep:fe683409
+609,20,5,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:20:5:Ari:prepare_tools:db5aeab2
+610,20,5,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.503191,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:20:5:Fay:quiet_route_scan:ce0148e5
+611,20,5,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.089114,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:20:5:Milo:share_water:70e874a1
+612,20,5,dawn,Sol,seed ledger guardian,wake_check_body,Sol continues dawn routine: wake_check_body,0.074685,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:20:5:Sol:wake_check_body:00cea675
+613,20,8,dawn,Ari,route keeper,wake_check_body,Ari continues dawn routine: wake_check_body,0.086684,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:20:8:Ari:wake_check_body:bb15c18a
+614,20,8,dawn,Fay,hearth ritualist,prepare_tools,Fay continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:20:8:Fay:prepare_tools:2785ee94
+615,20,8,dawn,Milo,market pattern scout,quiet_route_scan,Milo continues dawn routine: quiet_route_scan,0.249791,self-directed,crowding,agent_schedule_not_avatar_command,r243:20:8:Milo:quiet_route_scan:3f98c3ae
+616,20,8,dawn,Sol,seed ledger guardian,share_water,Sol continues dawn routine: share_water,0.07366,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:20:8:Sol:share_water:96d68b8a
+617,20,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.066112,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:20:11:Ari:repair_route:067712a0
+618,20,11,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.072156,self-directed,ordinary,agent_schedule_not_avatar_command,r243:20:11:Fay:work_project:504749dc
+619,20,11,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:20:11:Milo:market_exchange:72f60159
+620,20,11,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.511509,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:20:11:Sol:repair_route:81c86727
+621,20,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.502377,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:20:14:Ari:repair_route:067712a0
+622,20,14,day,Fay,hearth ritualist,teach_skill,Fay continues day routine: teach_skill,0.094165,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:20:14:Fay:teach_skill:697452f7
+623,20,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.080483,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:20:14:Milo:market_exchange:72f60159
+624,20,14,day,Sol,seed ledger guardian,market_exchange,Sol trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:20:14:Sol:market_exchange:be480137
+625,20,17,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:20:17:Ari:ritual_hum:8e8fdc86
+626,20,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.241457,self-directed,crowding,agent_schedule_not_avatar_command,r243:20:17:Fay:ritual_hum:f0915dad
+627,20,17,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.092015,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:20:17:Milo:store_objects:49ee3d65
+628,20,17,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.071104,self-directed,ordinary,agent_schedule_not_avatar_command,r243:20:17:Sol:hearth_return:cca35c4b
+629,20,20,dusk,Ari,route keeper,hearth_return,Ari continues dusk routine: hearth_return,0.083054,self-directed,ordinary,agent_schedule_not_avatar_command,r243:20:20:Ari:hearth_return:8d803a50
+630,20,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:20:20:Fay:ritual_hum:f0915dad
+631,20,20,dusk,Milo,market pattern scout,relationship_check,Milo tests whether trust changed,0.502765,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:20:20:Milo:relationship_check:5711035a
+632,20,20,dusk,Sol,seed ledger guardian,store_objects,Sol continues dusk routine: store_objects,0.080432,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:20:20:Sol:store_objects:ff5938cb
+633,20,23,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.081527,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:20:23:Ari:soft_recovery:0bd75383
+634,20,23,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.072395,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:20:23:Fay:sleep:9524b5e8
+635,20,23,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:20:23:Milo:dream_sort_memory:5b8c69bc
+636,20,23,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.246872,self-directed,crowding,agent_schedule_not_avatar_command,r243:20:23:Sol:guarded_rest:b7d93b6c
+637,20,2,night,Ari,route keeper,guarded_rest,Ari continues night routine: guarded_rest,0.255531,self-directed,crowding,agent_schedule_not_avatar_command,r243:20:2:Ari:guarded_rest:fc7754fd
+638,20,2,night,Fay,hearth ritualist,soft_recovery,Fay continues night routine: soft_recovery,0.092002,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:20:2:Fay:soft_recovery:fd7825a3
+639,20,2,night,Milo,market pattern scout,sleep,Milo protects recovery before tomorrow,0.086894,self-directed,ordinary,agent_schedule_not_avatar_command,r243:20:2:Milo:sleep:89f57e1b
+640,20,2,night,Sol,seed ledger guardian,dream_sort_memory,Sol sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:20:2:Sol:dream_sort_memory:76823bc7
+641,21,5,dawn,Ari,route keeper,quiet_route_scan,Ari continues dawn routine: quiet_route_scan,0.51431,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:21:5:Ari:quiet_route_scan:222b4754
+642,21,5,dawn,Fay,hearth ritualist,share_water,Fay continues dawn routine: share_water,0.072986,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:21:5:Fay:share_water:8e180ac7
+643,21,5,dawn,Milo,market pattern scout,wake_check_body,Milo continues dawn routine: wake_check_body,0.087144,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:21:5:Milo:wake_check_body:9e371bc3
+644,21,5,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:21:5:Sol:quiet_route_scan:291181a4
+645,21,8,dawn,Ari,route keeper,prepare_tools,Ari continues dawn routine: prepare_tools,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:21:8:Ari:prepare_tools:db5aeab2
+646,21,8,dawn,Fay,hearth ritualist,quiet_route_scan,Fay continues dawn routine: quiet_route_scan,0.254911,self-directed,crowding,agent_schedule_not_avatar_command,r243:21:8:Fay:quiet_route_scan:ce0148e5
+647,21,8,dawn,Milo,market pattern scout,share_water,Milo continues dawn routine: share_water,0.080464,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:21:8:Milo:share_water:70e874a1
+648,21,8,dawn,Sol,seed ledger guardian,quiet_route_scan,Sol continues dawn routine: quiet_route_scan,0.087527,self-directed,ordinary,agent_schedule_not_avatar_command,r243:21:8:Sol:quiet_route_scan:291181a4
+649,21,11,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.074165,self-directed,ordinary,agent_schedule_not_avatar_command,r243:21:11:Ari:repair_route:067712a0
+650,21,11,day,Fay,hearth ritualist,market_exchange,Fay trades without losing boundaries,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:21:11:Fay:market_exchange:341412b1
+651,21,11,day,Milo,market pattern scout,repair_route,Milo keeps a route usable,0.521738,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:21:11:Milo:repair_route:0377de76
+652,21,11,day,Sol,seed ledger guardian,teach_skill,Sol continues day routine: teach_skill,0.079523,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:21:11:Sol:teach_skill:e3ec579b
+653,21,14,day,Ari,route keeper,repair_route,Ari keeps a route usable,0.073941,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:21:14:Ari:repair_route:067712a0
+654,21,14,day,Fay,hearth ritualist,work_project,Fay continues day routine: work_project,0.07365,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:21:14:Fay:work_project:504749dc
+655,21,14,day,Milo,market pattern scout,market_exchange,Milo trades without losing boundaries,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:21:14:Milo:market_exchange:72f60159
+656,21,14,day,Sol,seed ledger guardian,repair_route,Sol keeps a route usable,0.255715,self-directed,crowding,agent_schedule_not_avatar_command,r243:21:14:Sol:repair_route:81c86727
+657,21,17,dusk,Ari,route keeper,relationship_check,Ari tests whether trust changed,0.256941,self-directed,crowding,agent_schedule_not_avatar_command,r243:21:17:Ari:relationship_check:6b5b0aed
+658,21,17,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.075916,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:21:17:Fay:ritual_hum:f0915dad
+659,21,17,dusk,Milo,market pattern scout,hearth_return,Milo continues dusk routine: hearth_return,0.069365,self-directed,ordinary,agent_schedule_not_avatar_command,r243:21:17:Milo:hearth_return:5636ef55
+660,21,17,dusk,Sol,seed ledger guardian,ritual_hum,Sol stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:21:17:Sol:ritual_hum:a9adb958
+661,21,20,dusk,Ari,route keeper,ritual_hum,Ari stabilizes group rhythm,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:21:20:Ari:ritual_hum:8e8fdc86
+662,21,20,dusk,Fay,hearth ritualist,ritual_hum,Fay stabilizes group rhythm,0.514141,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:21:20:Fay:ritual_hum:f0915dad
+663,21,20,dusk,Milo,market pattern scout,store_objects,Milo continues dusk routine: store_objects,0.067615,self-directed,cold_rain,agent_schedule_not_avatar_command,r243:21:20:Milo:store_objects:49ee3d65
+664,21,20,dusk,Sol,seed ledger guardian,hearth_return,Sol continues dusk routine: hearth_return,0.087576,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:21:20:Sol:hearth_return:cca35c4b
+665,21,23,night,Ari,route keeper,sleep,Ari protects recovery before tomorrow,0.06557,trusted peer nearby,shared_ritual,agent_schedule_not_avatar_command,r243:21:23:Ari:sleep:9965438b
+666,21,23,night,Fay,hearth ritualist,dream_sort_memory,Fay sorts social episodes into private story,0.0,self-directed,object_returned,agent_schedule_not_avatar_command,r243:21:23:Fay:dream_sort_memory:a568e1a1
+667,21,23,night,Milo,market pattern scout,guarded_rest,Milo continues night routine: guarded_rest,0.253795,self-directed,crowding,agent_schedule_not_avatar_command,r243:21:23:Milo:guarded_rest:a1dd2abe
+668,21,23,night,Sol,seed ledger guardian,soft_recovery,Sol continues night routine: soft_recovery,0.086627,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:21:23:Sol:soft_recovery:73cfc9ed
+669,21,2,night,Ari,route keeper,soft_recovery,Ari continues night routine: soft_recovery,0.087144,self-directed,quiet_success,agent_schedule_not_avatar_command,r243:21:2:Ari:soft_recovery:0bd75383
+670,21,2,night,Fay,hearth ritualist,sleep,Fay protects recovery before tomorrow,0.069145,self-directed,ordinary,agent_schedule_not_avatar_command,r243:21:2:Fay:sleep:9524b5e8
+671,21,2,night,Milo,market pattern scout,dream_sort_memory,Milo sorts social episodes into private story,0.0,trusted peer nearby,help_received,agent_schedule_not_avatar_command,r243:21:2:Milo:dream_sort_memory:5b8c69bc
+672,21,2,night,Sol,seed ledger guardian,guarded_rest,Sol continues night routine: guarded_rest,0.513162,avatar nearby,pressure_repeated,agent_schedule_not_avatar_command,r243:21:2:Sol:guarded_rest:b7d93b6c

@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+243,pass,0.989287,0.894351,"browser world v4 with multi-week learned routine adaptation, proto-language drift from repeated interactions, and avatar-entry consequences that respect agent sleep, boundaries, and relationship history"

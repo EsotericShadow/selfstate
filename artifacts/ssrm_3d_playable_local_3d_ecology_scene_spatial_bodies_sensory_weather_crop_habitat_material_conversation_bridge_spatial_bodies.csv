@@ -1,0 +1,7 @@
+agent_id,display_name,x,y,z,radius,facing,posture,energy,fatigue,hunger,cold,wetness,pain,visible_behavior,conversation_anchor,private_workspace_digest,frequency_hz,flower_node
+fayen,Fayen,28,34,0,2.2,35,kneeling by herb basket,0.68,0.42,0.31,0.24,0.18,0.12,looks up from bitter-leaf sorting when avatar nears,medicine garden and sealed care history,sealed:fayen:workspace-herb-care,144.0,2
+ariq,Ariq,54,48,0,2.4,220,braced near bridge stone,0.61,0.55,0.29,0.33,0.26,0.34,shifts weight off sore knee and taps bridge joint,stone joinery and repair pain boundary,sealed:ariq:workspace-repair-pain,177.0,5
+nian,Nian,42,22,1,2.0,110,standing at archive flap,0.72,0.28,0.22,0.18,0.11,0.08,touches the archive flap before speaking,boundary speech and private archive seal,sealed:nian:workspace-boundary-story,203.0,8
+tali,Tali,66,28,2,2.1,270,listening from weather tower,0.58,0.49,0.27,0.46,0.39,0.18,leans into wind and watches storm ribbon,weather chimes and storm lesson safety,sealed:tali:workspace-storm-fear,231.0,11
+roka,Roka,22,62,0,1.7,60,crouched beside reed bundle,0.77,0.22,0.35,0.21,0.44,0.09,smells wet reed before bending it,reed weaving and child pause boundary,sealed:roka:workspace-child-learning,264.0,3
+noro,Noro,70,58,0,2.3,310,tying material ledger knot,0.64,0.37,0.33,0.25,0.2,0.16,holds trade knot away from rain while counting beams,material debt and fair exchange,sealed:noro:workspace-trade-debt,302.0,9

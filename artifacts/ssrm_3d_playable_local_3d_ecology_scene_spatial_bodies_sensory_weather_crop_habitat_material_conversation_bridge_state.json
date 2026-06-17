@@ -1,0 +1,11 @@
+{
+  "avatar_conversation_entry": 1.0,
+  "browser_playable_scene_available": 1.0,
+  "condition": "integrated_playable_local_3d_ecology_scene_spatial_bodies_sensory_weather_crop_habitat_material_conversation",
+  "material_object_pickup_rate": 0.428571,
+  "next_gate": "playable local 3D agent conversation loop with memory updates, object interaction consequences, bounded refusal, and save/restore state",
+  "playable_local_3d_ecology_readiness": 0.961905,
+  "private_boundary": "sealed private workspace digests and scripted boundary lines only",
+  "report": 221,
+  "source_condition": "integrated_playable_embodied_pre_avatar_ecology_births_aging_illness_apprenticeship_habitat_agriculture_weather_material_economy"
+}

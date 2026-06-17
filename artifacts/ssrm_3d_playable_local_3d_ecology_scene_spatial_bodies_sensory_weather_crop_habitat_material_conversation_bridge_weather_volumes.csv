@@ -1,0 +1,5 @@
+volume_id,weather_type,x,y,z,width,depth,height,temperature_delta,wetness_delta,wind_force,soundscape,smellscape,movement_cost,visibility
+rain-front,threshold storm rain,48,12,0,44,24,12,-0.18,0.36,0.42,hard rain on replay glass,wet stone and fear sweat,0.18,0.74
+river-mist,cold river mist,7,48,0,28,32,5,-0.12,0.29,0.18,soft river hiss,mud and wet reed,0.12,0.86
+warm-pocket,warm alcove air,30,40,0,18,16,4,0.22,-0.11,0.03,low hearth hum,wool smoke and warm stone,-0.08,0.95
+grain-dust,dry grain dust,72,39,0,18,18,5,0.1,-0.05,0.09,dry husk whisper,grain dust and clay,0.07,0.82

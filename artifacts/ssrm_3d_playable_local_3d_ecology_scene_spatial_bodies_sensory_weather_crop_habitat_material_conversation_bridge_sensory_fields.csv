@@ -1,0 +1,7 @@
+field_id,field_type,source,x,y,z,radius,intensity,falloff,public_description,body_effect,frequency_hz,flower_node
+smell-herb,smell,clinic garden,29,35,0,15,0.74,soft,sharp green and bitter leaf near medicine plot,lowers arousal for tired agents,132.0,1
+sound-rain-glass,sound,storm school roof,58,19,2,22,0.81,linear,rain rattles replay glass above the threshold school,raises caution and slows speech,166.0,4
+temperature-warm-alcove,temperature,warm alcove,35,47,0,18,0.68,soft,warm stone and wool reduce cold exposure,raises comfort and rest tendency,189.0,6
+wet-reed-bank,wetness,river reed bank,18,63,0,16,0.79,sharp,wet reed and mud soak feet near the bank,raises wetness and movement effort,211.0,8
+smell-grain-mold,smell,grain terrace,76,43,0,12,0.46,sharp,faint mold warning from clay bin,raises caution around storage,244.0,10
+sound-bridge-tap,sound,west bridge,55,49,0,10,0.58,soft,hollow stone tap repeats under repair hand,draws attention to repair work,277.0,12

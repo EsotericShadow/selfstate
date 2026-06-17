@@ -1836,6 +1836,12 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_playable_local_3d_ecology_scene_spatial_bodies_sensory_weather_crop_habitat_material_conversation_bridge.py",
+        "--seed",
+        "20260834",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

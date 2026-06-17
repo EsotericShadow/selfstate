@@ -1,0 +1,8 @@
+object_id,label,x,y,z,object_type,quantity,carried_by,pickup_allowed,use_action,scarcity_pressure,repair_or_spoilage_debt,ledger_note
+obj-wool,wool blanket,33,43,0.4,care,2,none,True,carry to cold agent or warm alcove,0.42,0.08,"public quantity, private recipient sealed"
+obj-reed,reed mat bundle,18,60,0.2,construction,5,roka,False,ask Roka before moving child work,0.58,0.16,child work object has consent boundary
+obj-stone,flat bridge stone,57,50,0.1,repair,1,ariq,False,repair with Ariq after checking pain boundary,0.66,0.22,tool/stone receipt required
+obj-herb,calm herb basket,27,33,0.3,medicine,4,fayen,False,ask Fayen; medicine history is sealed,0.51,0.1,"batch public, symptoms private"
+obj-timber,timber beam,68,56,0.2,habitat,3,noro,True,carry to storm school repair marker,0.61,0.24,delivery ledger visible
+obj-cup,dry cup,36,45,0.2,care,6,none,True,offer without asking private symptom details,0.35,0.06,cup status not encoded
+obj-glass,replay glass shard,54,18,0.5,archive,1,threshold school,False,look only; threshold wardens handle it,0.72,0.31,authorship debt noted

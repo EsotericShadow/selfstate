@@ -1,0 +1,5 @@
+plot_id,crop,x,y,width,depth,growth,water_need,spoilage_risk,harvestable,sensory_marker,linked_material
+plot-herb,calm herb,25,31,11,9,0.67,0.57,0.28,False,bitter leaf smell,medicine drawer
+plot-grain,stone grain,72,41,14,10,0.74,0.66,0.31,True,warm husk and mold edge,clay grain bin
+plot-reed,river reed,15,58,12,12,0.83,0.72,0.12,True,wet reed smell,reed mats
+plot-root,winter root,44,65,10,8,0.71,0.48,0.19,True,earth and frost,cold pit

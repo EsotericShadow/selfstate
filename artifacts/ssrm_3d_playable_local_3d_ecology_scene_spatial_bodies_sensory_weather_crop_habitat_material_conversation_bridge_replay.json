@@ -1,0 +1,103 @@
+{
+  "frames": [
+    {
+      "active_sensory_fields": "sound-rain-glass; temperature-warm-alcove",
+      "active_weather_volume": "rain-front",
+      "avatar_x": 47,
+      "avatar_y": 38,
+      "avatar_z": 1.5,
+      "conversation_available": false,
+      "flower_node": 1,
+      "focus": "arrival at threshold path",
+      "frequency_hz": 144.0,
+      "nearby_agent": "none",
+      "possible_action": "move with WASD/arrows",
+      "tick": 1
+    },
+    {
+      "active_sensory_fields": "sound-rain-glass",
+      "active_weather_volume": "rain-front",
+      "avatar_x": 39,
+      "avatar_y": 24,
+      "avatar_z": 1.5,
+      "conversation_available": true,
+      "flower_node": 3,
+      "focus": "archive flap approach",
+      "frequency_hz": 166.0,
+      "nearby_agent": "nian",
+      "possible_action": "press Talk near Nian",
+      "tick": 2
+    },
+    {
+      "active_sensory_fields": "smell-herb; temperature-warm-alcove",
+      "active_weather_volume": "warm-pocket",
+      "avatar_x": 29,
+      "avatar_y": 34,
+      "avatar_z": 1.5,
+      "conversation_available": true,
+      "flower_node": 5,
+      "focus": "medicine garden",
+      "frequency_hz": 189.0,
+      "nearby_agent": "fayen",
+      "possible_action": "ask about herb care",
+      "tick": 3
+    },
+    {
+      "active_sensory_fields": "wet-reed-bank",
+      "active_weather_volume": "river-mist",
+      "avatar_x": 18,
+      "avatar_y": 61,
+      "avatar_z": 1.5,
+      "conversation_available": true,
+      "flower_node": 7,
+      "focus": "reed bank",
+      "frequency_hz": 211.0,
+      "nearby_agent": "roka",
+      "possible_action": "ask before touching reed bundle",
+      "tick": 4
+    },
+    {
+      "active_sensory_fields": "sound-bridge-tap",
+      "active_weather_volume": "none",
+      "avatar_x": 55,
+      "avatar_y": 49,
+      "avatar_z": 1.5,
+      "conversation_available": true,
+      "flower_node": 9,
+      "focus": "bridge repair",
+      "frequency_hz": 244.0,
+      "nearby_agent": "ariq",
+      "possible_action": "offer repair help with receipt knot",
+      "tick": 5
+    },
+    {
+      "active_sensory_fields": "smell-grain-mold",
+      "active_weather_volume": "grain-dust",
+      "avatar_x": 70,
+      "avatar_y": 58,
+      "avatar_z": 1.5,
+      "conversation_available": true,
+      "flower_node": 11,
+      "focus": "material ledger",
+      "frequency_hz": 277.0,
+      "nearby_agent": "noro",
+      "possible_action": "carry allowed timber beam",
+      "tick": 6
+    },
+    {
+      "active_sensory_fields": "sound-rain-glass",
+      "active_weather_volume": "rain-front",
+      "avatar_x": 66,
+      "avatar_y": 28,
+      "avatar_z": 2.0,
+      "conversation_available": true,
+      "flower_node": 12,
+      "focus": "weather tower",
+      "frequency_hz": 303.0,
+      "nearby_agent": "tali",
+      "possible_action": "ask what storm changes",
+      "tick": 7
+    }
+  ],
+  "report": 221
+}

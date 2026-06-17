@@ -1,0 +1,5 @@
+habitat_id,name,x,y,z,width,depth,height,interior_type,comfort_gain,safety_gain,maintenance_debt,entry_rule,private_area_sealed
+hab-warm,Warm Alcove,30,40,0,18,16,5,rest and recovery,0.26,0.18,0.08,children and elders rest first,True
+hab-archive,Archive Flap Room,38,17,0,14,12,6,sealed story room,0.09,0.2,0.11,ask before public story; private flap stays shut,True
+hab-storm-school,Storm School,52,14,0,22,16,8,threshold learning,0.22,0.36,0.3,avatar waits until briefing finishes,True
+hab-tool,Tool Lean-To,62,52,0,13,10,4,repair storage,0.07,0.22,0.24,tools require public receipt,False

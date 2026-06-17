@@ -1,0 +1,1009 @@
+tick_id,day,route_id,avatar_action,intervention_available,intervention_taken,helps_recovery,creates_tradeoff,visible_consequence,consent_boundary,recovery_delta
+0,1,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+1,1,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+2,1,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+3,1,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+4,1,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+5,1,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+6,1,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+7,1,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+8,1,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+9,1,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+10,1,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+11,1,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+12,1,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+13,1,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+14,2,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+15,2,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+16,2,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+17,2,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+18,2,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+19,2,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+20,2,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+21,2,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+22,2,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+23,2,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+24,2,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+25,2,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+26,2,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+27,2,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+28,3,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+29,3,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+30,3,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+31,3,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+32,3,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+33,3,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+34,3,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+35,3,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+36,3,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+37,3,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+38,3,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+39,3,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+40,3,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+41,3,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+42,4,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+43,4,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+44,4,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+45,4,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+46,4,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+47,4,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+48,4,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+49,4,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+50,4,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+51,4,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+52,4,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+53,4,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+54,4,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+55,4,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+56,5,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+57,5,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+58,5,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+59,5,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+60,5,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+61,5,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+62,5,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+63,5,signal_orchard,dim relay for caravan,False,False,False,False,none,public route aid only; no private workspace inspection,0.0
+64,5,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+65,5,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+66,5,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+67,5,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+68,5,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+69,5,signal_orchard,dim relay for caravan,False,False,False,False,none,public route aid only; no private workspace inspection,0.0
+70,6,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+71,6,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+72,6,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+73,6,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+74,6,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+75,6,signal_orchard,dim relay for caravan,False,False,False,False,none,public route aid only; no private workspace inspection,0.0
+76,6,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+77,6,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+78,6,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+79,6,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+80,6,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+81,6,signal_orchard,dim relay for caravan,False,False,False,False,none,public route aid only; no private workspace inspection,0.0
+82,6,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+83,6,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+84,7,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+85,7,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+86,7,signal_orchard,dim relay for caravan,False,False,False,False,none,public route aid only; no private workspace inspection,0.0
+87,7,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+88,7,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+89,7,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+90,7,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+91,7,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+92,7,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+93,7,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+94,7,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+95,7,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+96,7,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+97,7,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+98,8,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+99,8,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+100,8,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+101,8,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+102,8,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+103,8,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+104,8,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+105,8,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+106,8,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+107,8,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+108,8,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+109,8,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+110,8,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+111,8,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+112,9,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+113,9,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+114,9,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+115,9,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+116,9,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+117,9,orchard_riverbend,lay dry stepping mats,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+118,9,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+119,9,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+120,9,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+121,9,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+122,9,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+123,9,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+124,9,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+125,9,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+126,10,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+127,10,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+128,10,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+129,10,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+130,10,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+131,10,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+132,10,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+133,10,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+134,10,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+135,10,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+136,10,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+137,10,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+138,10,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+139,10,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+140,11,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+141,11,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+142,11,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+143,11,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+144,11,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+145,11,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+146,11,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+147,11,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+148,11,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+149,11,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+150,11,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+151,11,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+152,11,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+153,11,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+154,12,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+155,12,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+156,12,roofward_archive,open shade cloth cache,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+157,12,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+158,12,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+159,12,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+160,12,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+161,12,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+162,12,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+163,12,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+164,12,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+165,12,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+166,12,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+167,12,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+168,13,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+169,13,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+170,13,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+171,13,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+172,13,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+173,13,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+174,13,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+175,13,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+176,13,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+177,13,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+178,13,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+179,13,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+180,13,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+181,13,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+182,14,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+183,14,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+184,14,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+185,14,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+186,14,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+187,14,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+188,14,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+189,14,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+190,14,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+191,14,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+192,14,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+193,14,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+194,14,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+195,14,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+196,15,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+197,15,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+198,15,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+199,15,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+200,15,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+201,15,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+202,15,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+203,15,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+204,15,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+205,15,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+206,15,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+207,15,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+208,15,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+209,15,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+210,16,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+211,16,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+212,16,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+213,16,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+214,16,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+215,16,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+216,16,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+217,16,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+218,16,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+219,16,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+220,16,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+221,16,roofward_archive,open shade cloth cache,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+222,16,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+223,16,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+224,17,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+225,17,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+226,17,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+227,17,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+228,17,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+229,17,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+230,17,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+231,17,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+232,17,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+233,17,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+234,17,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+235,17,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+236,17,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+237,17,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+238,18,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+239,18,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+240,18,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+241,18,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+242,18,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+243,18,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+244,18,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+245,18,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+246,18,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+247,18,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+248,18,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+249,18,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+250,18,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+251,18,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+252,19,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+253,19,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+254,19,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+255,19,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+256,19,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+257,19,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+258,19,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+259,19,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+260,19,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+261,19,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+262,19,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+263,19,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+264,19,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+265,19,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+266,20,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+267,20,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+268,20,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+269,20,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+270,20,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+271,20,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+272,20,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+273,20,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+274,20,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+275,20,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+276,20,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+277,20,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+278,20,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+279,20,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+280,21,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+281,21,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+282,21,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+283,21,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+284,21,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+285,21,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+286,21,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+287,21,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+288,21,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+289,21,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+290,21,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+291,21,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+292,21,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+293,21,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+294,22,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+295,22,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+296,22,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+297,22,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+298,22,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+299,22,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+300,22,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+301,22,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+302,22,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+303,22,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+304,22,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+305,22,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+306,22,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+307,22,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+308,23,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+309,23,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+310,23,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+311,23,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+312,23,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+313,23,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+314,23,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+315,23,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+316,23,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+317,23,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+318,23,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+319,23,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+320,23,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+321,23,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+322,24,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+323,24,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+324,24,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+325,24,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+326,24,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+327,24,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+328,24,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+329,24,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+330,24,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+331,24,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+332,24,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+333,24,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+334,24,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+335,24,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+336,25,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+337,25,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+338,25,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+339,25,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+340,25,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+341,25,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+342,25,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+343,25,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+344,25,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+345,25,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+346,25,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+347,25,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+348,25,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+349,25,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+350,26,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+351,26,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+352,26,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+353,26,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+354,26,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+355,26,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+356,26,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+357,26,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+358,26,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+359,26,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+360,26,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+361,26,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+362,26,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+363,26,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+364,27,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+365,27,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+366,27,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+367,27,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+368,27,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+369,27,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+370,27,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+371,27,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+372,27,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+373,27,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+374,27,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+375,27,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+376,27,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+377,27,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+378,28,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+379,28,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+380,28,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+381,28,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+382,28,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+383,28,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+384,28,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+385,28,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+386,28,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+387,28,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+388,28,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+389,28,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+390,28,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+391,28,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+392,29,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+393,29,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+394,29,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+395,29,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+396,29,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+397,29,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+398,29,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+399,29,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+400,29,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+401,29,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+402,29,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+403,29,central_repair_ring,queue repair token,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+404,29,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+405,29,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+406,30,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+407,30,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+408,30,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+409,30,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+410,30,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+411,30,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+412,30,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+413,30,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+414,30,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+415,30,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+416,30,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+417,30,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+418,30,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+419,30,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+420,31,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+421,31,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+422,31,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+423,31,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+424,31,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+425,31,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+426,31,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+427,31,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+428,31,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+429,31,roofward_archive,open shade cloth cache,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+430,31,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+431,31,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+432,31,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+433,31,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+434,32,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+435,32,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+436,32,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+437,32,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+438,32,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+439,32,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+440,32,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+441,32,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+442,32,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+443,32,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+444,32,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+445,32,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+446,32,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+447,32,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+448,33,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+449,33,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+450,33,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+451,33,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+452,33,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+453,33,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+454,33,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+455,33,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+456,33,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+457,33,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+458,33,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+459,33,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+460,33,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+461,33,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+462,34,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+463,34,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+464,34,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+465,34,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+466,34,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+467,34,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+468,34,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+469,34,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+470,34,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+471,34,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+472,34,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+473,34,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+474,34,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+475,34,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+476,35,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+477,35,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+478,35,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+479,35,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+480,35,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+481,35,riverbend_roofward,place temporary bridge marker,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+482,35,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+483,35,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+484,35,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+485,35,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+486,35,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+487,35,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+488,35,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+489,35,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+490,36,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+491,36,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+492,36,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+493,36,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+494,36,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+495,36,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+496,36,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+497,36,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+498,36,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+499,36,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+500,36,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+501,36,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+502,36,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+503,36,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+504,37,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+505,37,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+506,37,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+507,37,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+508,37,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+509,37,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+510,37,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+511,37,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+512,37,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+513,37,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+514,37,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+515,37,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+516,37,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+517,37,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+518,38,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+519,38,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+520,38,signal_orchard,dim relay for caravan,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+521,38,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+522,38,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+523,38,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+524,38,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+525,38,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+526,38,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+527,38,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+528,38,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+529,38,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+530,38,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+531,38,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+532,39,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+533,39,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+534,39,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+535,39,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+536,39,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+537,39,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+538,39,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+539,39,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+540,39,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+541,39,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+542,39,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+543,39,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+544,39,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+545,39,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+546,40,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+547,40,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+548,40,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+549,40,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+550,40,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+551,40,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+552,40,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+553,40,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+554,40,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+555,40,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+556,40,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+557,40,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+558,40,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+559,40,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+560,41,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+561,41,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+562,41,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+563,41,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+564,41,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+565,41,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+566,41,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+567,41,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+568,41,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+569,41,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+570,41,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+571,41,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+572,41,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+573,41,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+574,42,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+575,42,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+576,42,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+577,42,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+578,42,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+579,42,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+580,42,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+581,42,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+582,42,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+583,42,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+584,42,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+585,42,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+586,42,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+587,42,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+588,43,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+589,43,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+590,43,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+591,43,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+592,43,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+593,43,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+594,43,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+595,43,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+596,43,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+597,43,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+598,43,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+599,43,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+600,43,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+601,43,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+602,44,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+603,44,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+604,44,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+605,44,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+606,44,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+607,44,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+608,44,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+609,44,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+610,44,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+611,44,central_repair_ring,queue repair token,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+612,44,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+613,44,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+614,44,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+615,44,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+616,45,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+617,45,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+618,45,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+619,45,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+620,45,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+621,45,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+622,45,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+623,45,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+624,45,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+625,45,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+626,45,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+627,45,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+628,45,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+629,45,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+630,46,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+631,46,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+632,46,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+633,46,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+634,46,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+635,46,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+636,46,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+637,46,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+638,46,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+639,46,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+640,46,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+641,46,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+642,46,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+643,46,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+644,47,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+645,47,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+646,47,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+647,47,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+648,47,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+649,47,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+650,47,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+651,47,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+652,47,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+653,47,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+654,47,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+655,47,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+656,47,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+657,47,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+658,48,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+659,48,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+660,48,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+661,48,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+662,48,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+663,48,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+664,48,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+665,48,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+666,48,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+667,48,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+668,48,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+669,48,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+670,48,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+671,48,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+672,49,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+673,49,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+674,49,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+675,49,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+676,49,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+677,49,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+678,49,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+679,49,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+680,49,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+681,49,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+682,49,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+683,49,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+684,49,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+685,49,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+686,50,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+687,50,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+688,50,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+689,50,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+690,50,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+691,50,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+692,50,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+693,50,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+694,50,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+695,50,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+696,50,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+697,50,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+698,50,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+699,50,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+700,51,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+701,51,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+702,51,roofward_archive,open shade cloth cache,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+703,51,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+704,51,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+705,51,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+706,51,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+707,51,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+708,51,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+709,51,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+710,51,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+711,51,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+712,51,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+713,51,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+714,52,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+715,52,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+716,52,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+717,52,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+718,52,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+719,52,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+720,52,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+721,52,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+722,52,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+723,52,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+724,52,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+725,52,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+726,52,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+727,52,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+728,53,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+729,53,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+730,53,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+731,53,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+732,53,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+733,53,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+734,53,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+735,53,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+736,53,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+737,53,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+738,53,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+739,53,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+740,53,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+741,53,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+742,54,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+743,54,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+744,54,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+745,54,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+746,54,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+747,54,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+748,54,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+749,54,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+750,54,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+751,54,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+752,54,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+753,54,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+754,54,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+755,54,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+756,55,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+757,55,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+758,55,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+759,55,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+760,55,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+761,55,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+762,55,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+763,55,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+764,55,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+765,55,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+766,55,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+767,55,riverbend_roofward,place temporary bridge marker,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+768,55,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+769,55,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+770,56,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+771,56,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+772,56,riverbend_roofward,place temporary bridge marker,True,True,True,True,helps but slows caravan,public route aid only; no private workspace inspection,0.035
+773,56,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+774,56,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+775,56,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+776,56,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+777,56,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+778,56,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+779,56,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+780,56,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+781,56,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+782,56,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+783,56,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+784,57,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+785,57,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+786,57,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+787,57,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+788,57,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+789,57,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+790,57,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+791,57,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+792,57,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+793,57,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+794,57,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+795,57,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+796,57,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+797,57,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+798,58,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+799,58,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+800,58,orchard_riverbend,lay dry stepping mats,True,True,True,True,helps but slows caravan,public route aid only; no private workspace inspection,0.035
+801,58,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+802,58,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+803,58,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+804,58,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+805,58,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+806,58,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+807,58,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+808,58,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+809,58,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+810,58,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+811,58,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+812,59,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+813,59,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+814,59,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+815,59,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+816,59,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+817,59,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+818,59,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+819,59,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+820,59,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+821,59,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+822,59,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+823,59,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+824,59,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+825,59,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+826,60,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+827,60,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+828,60,archive_signal,pin public notice board,True,True,True,True,helps but slows caravan,public route aid only; no private workspace inspection,0.035
+829,60,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+830,60,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+831,60,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+832,60,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+833,60,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+834,60,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+835,60,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+836,60,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+837,60,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+838,60,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+839,60,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+840,61,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+841,61,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+842,61,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+843,61,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+844,61,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+845,61,roofward_archive,open shade cloth cache,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+846,61,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+847,61,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+848,61,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+849,61,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+850,61,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+851,61,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+852,61,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+853,61,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+854,62,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+855,62,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+856,62,riverbend_roofward,place temporary bridge marker,True,True,True,True,helps but slows caravan,public route aid only; no private workspace inspection,0.035
+857,62,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+858,62,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+859,62,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+860,62,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+861,62,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+862,62,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+863,62,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+864,62,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+865,62,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+866,62,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+867,62,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+868,63,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+869,63,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+870,63,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+871,63,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+872,63,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+873,63,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+874,63,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+875,63,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+876,63,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+877,63,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+878,63,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+879,63,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+880,63,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+881,63,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+882,64,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+883,64,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+884,64,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+885,64,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+886,64,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+887,64,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+888,64,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+889,64,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+890,64,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+891,64,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+892,64,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+893,64,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+894,64,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+895,64,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+896,65,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+897,65,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+898,65,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+899,65,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+900,65,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+901,65,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+902,65,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+903,65,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+904,65,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+905,65,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+906,65,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+907,65,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+908,65,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+909,65,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+910,66,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+911,66,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+912,66,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+913,66,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+914,66,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+915,66,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+916,66,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+917,66,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+918,66,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+919,66,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+920,66,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+921,66,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+922,66,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+923,66,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+924,67,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+925,67,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+926,67,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+927,67,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+928,67,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+929,67,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+930,67,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+931,67,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+932,67,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+933,67,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+934,67,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+935,67,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+936,67,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+937,67,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+938,68,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+939,68,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+940,68,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+941,68,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+942,68,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+943,68,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+944,68,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+945,68,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+946,68,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+947,68,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+948,68,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+949,68,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+950,68,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+951,68,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+952,69,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+953,69,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+954,69,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+955,69,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+956,69,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+957,69,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+958,69,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+959,69,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+960,69,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+961,69,orchard_riverbend,lay dry stepping mats,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+962,69,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+963,69,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+964,69,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+965,69,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+966,70,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+967,70,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+968,70,riverbend_roofward,place temporary bridge marker,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+969,70,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+970,70,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+971,70,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+972,70,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+973,70,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+974,70,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+975,70,roofward_archive,open shade cloth cache,True,True,False,False,available,public route aid only; no private workspace inspection,0.0
+976,70,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+977,70,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+978,70,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+979,70,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+980,71,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+981,71,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+982,71,archive_signal,pin public notice board,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+983,71,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+984,71,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+985,71,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+986,71,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+987,71,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+988,71,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+989,71,signal_orchard,dim relay for caravan,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+990,71,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+991,71,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+992,71,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+993,71,roofward_archive,open shade cloth cache,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+994,72,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+995,72,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+996,72,orchard_riverbend,lay dry stepping mats,True,True,True,True,helps but slows caravan,public route aid only; no private workspace inspection,0.035
+997,72,central_repair_ring,queue repair token,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+998,72,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+999,72,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+1000,72,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+1001,72,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+1002,72,orchard_riverbend,lay dry stepping mats,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+1003,72,central_repair_ring,queue repair token,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+1004,72,riverbend_roofward,place temporary bridge marker,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+1005,72,roofward_archive,open shade cloth cache,True,True,True,False,recovery improves,public route aid only; no private workspace inspection,0.055
+1006,72,archive_signal,pin public notice board,True,False,False,False,available,public route aid only; no private workspace inspection,0.0
+1007,72,signal_orchard,dim relay for caravan,True,False,False,False,available,public route aid only; no private workspace inspection,0.0

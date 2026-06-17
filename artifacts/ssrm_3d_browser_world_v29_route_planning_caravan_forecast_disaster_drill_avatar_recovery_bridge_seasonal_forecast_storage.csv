@@ -1,0 +1,1009 @@
+tick_id,day,season,region,forecast_key,stored_by,hazard,risk_score,valid_until_day,used_for_route,forecast_revision,public_archive_visible
+0,1,spring_rain,riverbend,forecast:riverbend_roofward:d1:r0,Ari,river flood,0.40944,6,riverbend_roofward,1,True
+1,1,spring_rain,roofward,forecast:roofward_archive:d1:r0,Fay,glasshouse heat surge,0.498,6,roofward_archive,1,True
+2,1,spring_rain,archive_quarter,forecast:archive_signal:d1:r0,Nia,wind archive scatter,0.3,6,archive_signal,0,True
+3,1,spring_rain,signal_ridge,forecast:signal_orchard:d1:r0,Milo,dusk ice,0.3,6,signal_orchard,0,True
+4,1,spring_rain,orchard_fen,forecast:orchard_riverbend:d1:r0,Ivo,fen mud,0.3,6,orchard_riverbend,0,True
+5,1,spring_rain,central_exchange,forecast:central_repair_ring:d1:r0,Juno,crowded repair yard,0.3,6,central_repair_ring,0,True
+6,1,spring_rain,riverbend,forecast:riverbend_roofward:d1:r1,Ari,river flood,0.40944,6,riverbend_roofward,1,True
+7,1,spring_rain,roofward,forecast:roofward_archive:d1:r1,Fay,glasshouse heat surge,0.594018,6,roofward_archive,2,True
+8,1,spring_rain,archive_quarter,forecast:archive_signal:d1:r0,Nia,wind archive scatter,0.3,6,archive_signal,0,True
+9,1,spring_rain,signal_ridge,forecast:signal_orchard:d1:r0,Milo,dusk ice,0.3,6,signal_orchard,0,True
+10,1,spring_rain,orchard_fen,forecast:orchard_riverbend:d1:r0,Ivo,fen mud,0.3,6,orchard_riverbend,0,True
+11,1,spring_rain,central_exchange,forecast:central_repair_ring:d1:r0,Juno,crowded repair yard,0.3,6,central_repair_ring,0,True
+12,1,spring_rain,riverbend,forecast:riverbend_roofward:d1:r1,Ari,river flood,0.40944,6,riverbend_roofward,1,True
+13,1,spring_rain,roofward,forecast:roofward_archive:d1:r2,Fay,glasshouse heat surge,0.445479,6,roofward_archive,3,True
+14,2,spring_rain,archive_quarter,forecast:archive_signal:d2:r0,Nia,wind archive scatter,0.538021,7,archive_signal,1,True
+15,2,spring_rain,signal_ridge,forecast:signal_orchard:d2:r0,Milo,dusk ice,0.3,7,signal_orchard,0,True
+16,2,spring_rain,orchard_fen,forecast:orchard_riverbend:d2:r0,Ivo,fen mud,0.3,7,orchard_riverbend,0,True
+17,2,spring_rain,central_exchange,forecast:central_repair_ring:d2:r0,Juno,crowded repair yard,0.3,7,central_repair_ring,0,True
+18,2,spring_rain,riverbend,forecast:riverbend_roofward:d2:r1,Ari,river flood,0.40944,7,riverbend_roofward,1,True
+19,2,spring_rain,roofward,forecast:roofward_archive:d2:r3,Fay,glasshouse heat surge,0.445479,7,roofward_archive,3,True
+20,2,spring_rain,archive_quarter,forecast:archive_signal:d2:r1,Nia,wind archive scatter,0.429195,7,archive_signal,2,True
+21,2,spring_rain,signal_ridge,forecast:signal_orchard:d2:r0,Milo,dusk ice,0.457394,7,signal_orchard,1,True
+22,2,spring_rain,orchard_fen,forecast:orchard_riverbend:d2:r0,Ivo,fen mud,0.3,7,orchard_riverbend,0,True
+23,2,spring_rain,central_exchange,forecast:central_repair_ring:d2:r0,Juno,crowded repair yard,0.3,7,central_repair_ring,0,True
+24,2,spring_rain,riverbend,forecast:riverbend_roofward:d2:r1,Ari,river flood,0.40944,7,riverbend_roofward,1,True
+25,2,spring_rain,roofward,forecast:roofward_archive:d2:r3,Fay,glasshouse heat surge,0.445479,7,roofward_archive,3,True
+26,2,spring_rain,archive_quarter,forecast:archive_signal:d2:r2,Nia,wind archive scatter,0.525652,7,archive_signal,3,True
+27,2,spring_rain,signal_ridge,forecast:signal_orchard:d2:r1,Milo,dusk ice,0.457394,7,signal_orchard,1,True
+28,3,spring_rain,orchard_fen,forecast:orchard_riverbend:d3:r0,Ivo,fen mud,0.456888,8,orchard_riverbend,1,True
+29,3,spring_rain,central_exchange,forecast:central_repair_ring:d3:r0,Juno,crowded repair yard,0.3,8,central_repair_ring,0,True
+30,3,spring_rain,riverbend,forecast:riverbend_roofward:d3:r1,Ari,river flood,0.40944,8,riverbend_roofward,1,True
+31,3,spring_rain,roofward,forecast:roofward_archive:d3:r3,Fay,glasshouse heat surge,0.445479,8,roofward_archive,3,True
+32,3,spring_rain,archive_quarter,forecast:archive_signal:d3:r3,Nia,wind archive scatter,0.525652,8,archive_signal,3,True
+33,3,spring_rain,signal_ridge,forecast:signal_orchard:d3:r1,Milo,dusk ice,0.452825,8,signal_orchard,2,True
+34,3,spring_rain,orchard_fen,forecast:orchard_riverbend:d3:r1,Ivo,fen mud,0.456888,8,orchard_riverbend,1,True
+35,3,spring_rain,central_exchange,forecast:central_repair_ring:d3:r0,Juno,crowded repair yard,0.362982,8,central_repair_ring,1,True
+36,3,spring_rain,riverbend,forecast:riverbend_roofward:d3:r1,Ari,river flood,0.40944,8,riverbend_roofward,1,True
+37,3,spring_rain,roofward,forecast:roofward_archive:d3:r3,Fay,glasshouse heat surge,0.445479,8,roofward_archive,3,True
+38,3,spring_rain,archive_quarter,forecast:archive_signal:d3:r3,Nia,wind archive scatter,0.525652,8,archive_signal,3,True
+39,3,spring_rain,signal_ridge,forecast:signal_orchard:d3:r2,Milo,dusk ice,0.492025,8,signal_orchard,3,True
+40,3,spring_rain,orchard_fen,forecast:orchard_riverbend:d3:r1,Ivo,fen mud,0.456888,8,orchard_riverbend,1,True
+41,3,spring_rain,central_exchange,forecast:central_repair_ring:d3:r1,Juno,crowded repair yard,0.362982,8,central_repair_ring,1,True
+42,4,spring_rain,riverbend,forecast:riverbend_roofward:d4:r1,Ari,river flood,0.565899,9,riverbend_roofward,2,True
+43,4,spring_rain,roofward,forecast:roofward_archive:d4:r3,Fay,glasshouse heat surge,0.445479,9,roofward_archive,3,True
+44,4,spring_rain,archive_quarter,forecast:archive_signal:d4:r3,Nia,wind archive scatter,0.525652,9,archive_signal,3,True
+45,4,spring_rain,signal_ridge,forecast:signal_orchard:d4:r3,Milo,dusk ice,0.492025,9,signal_orchard,3,True
+46,4,spring_rain,orchard_fen,forecast:orchard_riverbend:d4:r1,Ivo,fen mud,0.493954,9,orchard_riverbend,2,True
+47,4,spring_rain,central_exchange,forecast:central_repair_ring:d4:r1,Juno,crowded repair yard,0.362982,9,central_repair_ring,1,True
+48,4,spring_rain,riverbend,forecast:riverbend_roofward:d4:r2,Ari,river flood,0.565899,9,riverbend_roofward,2,True
+49,4,spring_rain,roofward,forecast:roofward_archive:d4:r3,Fay,glasshouse heat surge,0.474528,9,roofward_archive,4,True
+50,4,spring_rain,archive_quarter,forecast:archive_signal:d4:r3,Nia,wind archive scatter,0.525652,9,archive_signal,3,True
+51,4,spring_rain,signal_ridge,forecast:signal_orchard:d4:r3,Milo,dusk ice,0.492025,9,signal_orchard,3,True
+52,4,spring_rain,orchard_fen,forecast:orchard_riverbend:d4:r2,Ivo,fen mud,0.544763,9,orchard_riverbend,3,True
+53,4,spring_rain,central_exchange,forecast:central_repair_ring:d4:r1,Juno,crowded repair yard,0.362982,9,central_repair_ring,1,True
+54,4,spring_rain,riverbend,forecast:riverbend_roofward:d4:r2,Ari,river flood,0.565899,9,riverbend_roofward,2,True
+55,4,spring_rain,roofward,forecast:roofward_archive:d4:r4,Fay,glasshouse heat surge,0.474528,9,roofward_archive,4,True
+56,5,spring_rain,archive_quarter,forecast:archive_signal:d5:r3,Nia,wind archive scatter,0.497526,10,archive_signal,4,True
+57,5,spring_rain,signal_ridge,forecast:signal_orchard:d5:r3,Milo,dusk ice,0.492025,10,signal_orchard,3,True
+58,5,spring_rain,orchard_fen,forecast:orchard_riverbend:d5:r3,Ivo,fen mud,0.544763,10,orchard_riverbend,3,True
+59,5,spring_rain,central_exchange,forecast:central_repair_ring:d5:r1,Juno,crowded repair yard,0.590988,10,central_repair_ring,2,True
+60,5,spring_rain,riverbend,forecast:riverbend_roofward:d5:r2,Ari,river flood,0.565899,10,riverbend_roofward,2,True
+61,5,spring_rain,roofward,forecast:roofward_archive:d5:r4,Fay,glasshouse heat surge,0.474528,10,roofward_archive,4,True
+62,5,spring_rain,archive_quarter,forecast:archive_signal:d5:r4,Nia,wind archive scatter,0.497526,10,archive_signal,4,True
+63,5,spring_rain,signal_ridge,forecast:signal_orchard:d5:r3,Milo,dusk ice,0.405709,10,signal_orchard,4,True
+64,5,spring_rain,orchard_fen,forecast:orchard_riverbend:d5:r3,Ivo,fen mud,0.544763,10,orchard_riverbend,3,True
+65,5,spring_rain,central_exchange,forecast:central_repair_ring:d5:r2,Juno,crowded repair yard,0.610251,10,central_repair_ring,3,True
+66,5,spring_rain,riverbend,forecast:riverbend_roofward:d5:r2,Ari,river flood,0.565899,10,riverbend_roofward,2,True
+67,5,spring_rain,roofward,forecast:roofward_archive:d5:r4,Fay,glasshouse heat surge,0.474528,10,roofward_archive,4,True
+68,5,spring_rain,archive_quarter,forecast:archive_signal:d5:r4,Nia,wind archive scatter,0.497526,10,archive_signal,4,True
+69,5,spring_rain,signal_ridge,forecast:signal_orchard:d5:r4,Milo,dusk ice,0.405709,10,signal_orchard,4,True
+70,6,spring_rain,orchard_fen,forecast:orchard_riverbend:d6:r3,Ivo,fen mud,0.421076,11,orchard_riverbend,4,True
+71,6,spring_rain,central_exchange,forecast:central_repair_ring:d6:r3,Juno,crowded repair yard,0.610251,11,central_repair_ring,3,True
+72,6,spring_rain,riverbend,forecast:riverbend_roofward:d6:r2,Ari,river flood,0.565899,11,riverbend_roofward,2,True
+73,6,spring_rain,roofward,forecast:roofward_archive:d6:r4,Fay,glasshouse heat surge,0.474528,11,roofward_archive,4,True
+74,6,spring_rain,archive_quarter,forecast:archive_signal:d6:r4,Nia,wind archive scatter,0.497526,11,archive_signal,4,True
+75,6,spring_rain,signal_ridge,forecast:signal_orchard:d6:r4,Milo,dusk ice,0.405709,11,signal_orchard,4,True
+76,6,spring_rain,orchard_fen,forecast:orchard_riverbend:d6:r4,Ivo,fen mud,0.421076,11,orchard_riverbend,4,True
+77,6,spring_rain,central_exchange,forecast:central_repair_ring:d6:r3,Juno,crowded repair yard,0.566806,11,central_repair_ring,4,True
+78,6,spring_rain,riverbend,forecast:riverbend_roofward:d6:r2,Ari,river flood,0.565899,11,riverbend_roofward,2,True
+79,6,spring_rain,roofward,forecast:roofward_archive:d6:r4,Fay,glasshouse heat surge,0.474528,11,roofward_archive,4,True
+80,6,spring_rain,archive_quarter,forecast:archive_signal:d6:r4,Nia,wind archive scatter,0.497526,11,archive_signal,4,True
+81,6,spring_rain,signal_ridge,forecast:signal_orchard:d6:r4,Milo,dusk ice,0.405709,11,signal_orchard,4,True
+82,6,spring_rain,orchard_fen,forecast:orchard_riverbend:d6:r4,Ivo,fen mud,0.421076,11,orchard_riverbend,4,True
+83,6,spring_rain,central_exchange,forecast:central_repair_ring:d6:r4,Juno,crowded repair yard,0.566806,11,central_repair_ring,4,True
+84,7,spring_rain,roofward,forecast:roofward_archive:d7:r4,Fay,glasshouse heat surge,0.524548,12,roofward_archive,5,True
+85,7,spring_rain,archive_quarter,forecast:archive_signal:d7:r4,Nia,wind archive scatter,0.497526,12,archive_signal,4,True
+86,7,spring_rain,signal_ridge,forecast:signal_orchard:d7:r4,Milo,dusk ice,0.405709,12,signal_orchard,4,True
+87,7,spring_rain,orchard_fen,forecast:orchard_riverbend:d7:r4,Ivo,fen mud,0.421076,12,orchard_riverbend,4,True
+88,7,spring_rain,central_exchange,forecast:central_repair_ring:d7:r4,Juno,crowded repair yard,0.566806,12,central_repair_ring,4,True
+89,7,spring_rain,riverbend,forecast:riverbend_roofward:d7:r2,Ari,river flood,0.565899,12,riverbend_roofward,2,True
+90,7,spring_rain,roofward,forecast:roofward_archive:d7:r5,Fay,glasshouse heat surge,0.524548,12,roofward_archive,5,True
+91,7,spring_rain,archive_quarter,forecast:archive_signal:d7:r4,Nia,wind archive scatter,0.444587,12,archive_signal,5,True
+92,7,spring_rain,signal_ridge,forecast:signal_orchard:d7:r4,Milo,dusk ice,0.405709,12,signal_orchard,4,True
+93,7,spring_rain,orchard_fen,forecast:orchard_riverbend:d7:r4,Ivo,fen mud,0.421076,12,orchard_riverbend,4,True
+94,7,spring_rain,central_exchange,forecast:central_repair_ring:d7:r4,Juno,crowded repair yard,0.566806,12,central_repair_ring,4,True
+95,7,spring_rain,riverbend,forecast:riverbend_roofward:d7:r2,Ari,river flood,0.565899,12,riverbend_roofward,2,True
+96,7,spring_rain,roofward,forecast:roofward_archive:d7:r5,Fay,glasshouse heat surge,0.524548,12,roofward_archive,5,True
+97,7,spring_rain,archive_quarter,forecast:archive_signal:d7:r5,Nia,wind archive scatter,0.444587,12,archive_signal,5,True
+98,8,spring_rain,signal_ridge,forecast:signal_orchard:d8:r4,Milo,dusk ice,0.425764,13,signal_orchard,5,True
+99,8,spring_rain,orchard_fen,forecast:orchard_riverbend:d8:r4,Ivo,fen mud,0.421076,13,orchard_riverbend,4,True
+100,8,spring_rain,central_exchange,forecast:central_repair_ring:d8:r4,Juno,crowded repair yard,0.566806,13,central_repair_ring,4,True
+101,8,spring_rain,riverbend,forecast:riverbend_roofward:d8:r2,Ari,river flood,0.565899,13,riverbend_roofward,2,True
+102,8,spring_rain,roofward,forecast:roofward_archive:d8:r5,Fay,glasshouse heat surge,0.524548,13,roofward_archive,5,True
+103,8,spring_rain,archive_quarter,forecast:archive_signal:d8:r5,Nia,wind archive scatter,0.444587,13,archive_signal,5,True
+104,8,spring_rain,signal_ridge,forecast:signal_orchard:d8:r5,Milo,dusk ice,0.425764,13,signal_orchard,5,True
+105,8,spring_rain,orchard_fen,forecast:orchard_riverbend:d8:r4,Ivo,fen mud,0.552781,13,orchard_riverbend,5,True
+106,8,spring_rain,central_exchange,forecast:central_repair_ring:d8:r4,Juno,crowded repair yard,0.566806,13,central_repair_ring,4,True
+107,8,spring_rain,riverbend,forecast:riverbend_roofward:d8:r2,Ari,river flood,0.565899,13,riverbend_roofward,2,True
+108,8,spring_rain,roofward,forecast:roofward_archive:d8:r5,Fay,glasshouse heat surge,0.524548,13,roofward_archive,5,True
+109,8,spring_rain,archive_quarter,forecast:archive_signal:d8:r5,Nia,wind archive scatter,0.444587,13,archive_signal,5,True
+110,8,spring_rain,signal_ridge,forecast:signal_orchard:d8:r5,Milo,dusk ice,0.425764,13,signal_orchard,5,True
+111,8,spring_rain,orchard_fen,forecast:orchard_riverbend:d8:r5,Ivo,fen mud,0.552781,13,orchard_riverbend,5,True
+112,9,spring_rain,central_exchange,forecast:central_repair_ring:d9:r4,Juno,crowded repair yard,0.593586,14,central_repair_ring,5,True
+113,9,spring_rain,riverbend,forecast:riverbend_roofward:d9:r2,Ari,river flood,0.420532,14,riverbend_roofward,3,True
+114,9,spring_rain,roofward,forecast:roofward_archive:d9:r5,Fay,glasshouse heat surge,0.524548,14,roofward_archive,5,True
+115,9,spring_rain,archive_quarter,forecast:archive_signal:d9:r5,Nia,wind archive scatter,0.444587,14,archive_signal,5,True
+116,9,spring_rain,signal_ridge,forecast:signal_orchard:d9:r5,Milo,dusk ice,0.425764,14,signal_orchard,5,True
+117,9,spring_rain,orchard_fen,forecast:orchard_riverbend:d9:r5,Ivo,fen mud,0.552781,14,orchard_riverbend,5,True
+118,9,spring_rain,central_exchange,forecast:central_repair_ring:d9:r5,Juno,crowded repair yard,0.593586,14,central_repair_ring,5,True
+119,9,spring_rain,riverbend,forecast:riverbend_roofward:d9:r3,Ari,river flood,0.423029,14,riverbend_roofward,4,True
+120,9,spring_rain,roofward,forecast:roofward_archive:d9:r5,Fay,glasshouse heat surge,0.524548,14,roofward_archive,5,True
+121,9,spring_rain,archive_quarter,forecast:archive_signal:d9:r5,Nia,wind archive scatter,0.444587,14,archive_signal,5,True
+122,9,spring_rain,signal_ridge,forecast:signal_orchard:d9:r5,Milo,dusk ice,0.425764,14,signal_orchard,5,True
+123,9,spring_rain,orchard_fen,forecast:orchard_riverbend:d9:r5,Ivo,fen mud,0.552781,14,orchard_riverbend,5,True
+124,9,spring_rain,central_exchange,forecast:central_repair_ring:d9:r5,Juno,crowded repair yard,0.593586,14,central_repair_ring,5,True
+125,9,spring_rain,riverbend,forecast:riverbend_roofward:d9:r4,Ari,river flood,0.466928,14,riverbend_roofward,5,True
+126,10,spring_rain,roofward,forecast:roofward_archive:d10:r5,Fay,glasshouse heat surge,0.452153,15,roofward_archive,6,True
+127,10,spring_rain,archive_quarter,forecast:archive_signal:d10:r5,Nia,wind archive scatter,0.444587,15,archive_signal,5,True
+128,10,spring_rain,signal_ridge,forecast:signal_orchard:d10:r5,Milo,dusk ice,0.425764,15,signal_orchard,5,True
+129,10,spring_rain,orchard_fen,forecast:orchard_riverbend:d10:r5,Ivo,fen mud,0.552781,15,orchard_riverbend,5,True
+130,10,spring_rain,central_exchange,forecast:central_repair_ring:d10:r5,Juno,crowded repair yard,0.593586,15,central_repair_ring,5,True
+131,10,spring_rain,riverbend,forecast:riverbend_roofward:d10:r5,Ari,river flood,0.466928,15,riverbend_roofward,5,True
+132,10,spring_rain,roofward,forecast:roofward_archive:d10:r6,Fay,glasshouse heat surge,0.475083,15,roofward_archive,7,True
+133,10,spring_rain,archive_quarter,forecast:archive_signal:d10:r5,Nia,wind archive scatter,0.559364,15,archive_signal,6,True
+134,10,spring_rain,signal_ridge,forecast:signal_orchard:d10:r5,Milo,dusk ice,0.425764,15,signal_orchard,5,True
+135,10,spring_rain,orchard_fen,forecast:orchard_riverbend:d10:r5,Ivo,fen mud,0.552781,15,orchard_riverbend,5,True
+136,10,spring_rain,central_exchange,forecast:central_repair_ring:d10:r5,Juno,crowded repair yard,0.593586,15,central_repair_ring,5,True
+137,10,spring_rain,riverbend,forecast:riverbend_roofward:d10:r5,Ari,river flood,0.466928,15,riverbend_roofward,5,True
+138,10,spring_rain,roofward,forecast:roofward_archive:d10:r7,Fay,glasshouse heat surge,0.611103,15,roofward_archive,8,True
+139,10,spring_rain,archive_quarter,forecast:archive_signal:d10:r6,Nia,wind archive scatter,0.559364,15,archive_signal,6,True
+140,11,spring_rain,signal_ridge,forecast:signal_orchard:d11:r5,Milo,dusk ice,0.554094,16,signal_orchard,6,True
+141,11,spring_rain,orchard_fen,forecast:orchard_riverbend:d11:r5,Ivo,fen mud,0.552781,16,orchard_riverbend,5,True
+142,11,spring_rain,central_exchange,forecast:central_repair_ring:d11:r5,Juno,crowded repair yard,0.593586,16,central_repair_ring,5,True
+143,11,spring_rain,riverbend,forecast:riverbend_roofward:d11:r5,Ari,river flood,0.466928,16,riverbend_roofward,5,True
+144,11,spring_rain,roofward,forecast:roofward_archive:d11:r8,Fay,glasshouse heat surge,0.611103,16,roofward_archive,8,True
+145,11,spring_rain,archive_quarter,forecast:archive_signal:d11:r6,Nia,wind archive scatter,0.548302,16,archive_signal,7,True
+146,11,spring_rain,signal_ridge,forecast:signal_orchard:d11:r6,Milo,dusk ice,0.554094,16,signal_orchard,6,True
+147,11,spring_rain,orchard_fen,forecast:orchard_riverbend:d11:r5,Ivo,fen mud,0.503259,16,orchard_riverbend,6,True
+148,11,spring_rain,central_exchange,forecast:central_repair_ring:d11:r5,Juno,crowded repair yard,0.593586,16,central_repair_ring,5,True
+149,11,spring_rain,riverbend,forecast:riverbend_roofward:d11:r5,Ari,river flood,0.466928,16,riverbend_roofward,5,True
+150,11,spring_rain,roofward,forecast:roofward_archive:d11:r8,Fay,glasshouse heat surge,0.611103,16,roofward_archive,8,True
+151,11,spring_rain,archive_quarter,forecast:archive_signal:d11:r7,Nia,wind archive scatter,0.588405,16,archive_signal,8,True
+152,11,spring_rain,signal_ridge,forecast:signal_orchard:d11:r6,Milo,dusk ice,0.554094,16,signal_orchard,6,True
+153,11,spring_rain,orchard_fen,forecast:orchard_riverbend:d11:r6,Ivo,fen mud,0.503259,16,orchard_riverbend,6,True
+154,12,spring_rain,central_exchange,forecast:central_repair_ring:d12:r5,Juno,crowded repair yard,0.514684,17,central_repair_ring,6,True
+155,12,spring_rain,riverbend,forecast:riverbend_roofward:d12:r5,Ari,river flood,0.466928,17,riverbend_roofward,5,True
+156,12,spring_rain,roofward,forecast:roofward_archive:d12:r8,Fay,glasshouse heat surge,0.611103,17,roofward_archive,8,True
+157,12,spring_rain,archive_quarter,forecast:archive_signal:d12:r8,Nia,wind archive scatter,0.588405,17,archive_signal,8,True
+158,12,spring_rain,signal_ridge,forecast:signal_orchard:d12:r6,Milo,dusk ice,0.590026,17,signal_orchard,7,True
+159,12,spring_rain,orchard_fen,forecast:orchard_riverbend:d12:r6,Ivo,fen mud,0.503259,17,orchard_riverbend,6,True
+160,12,spring_rain,central_exchange,forecast:central_repair_ring:d12:r6,Juno,crowded repair yard,0.514684,17,central_repair_ring,6,True
+161,12,spring_rain,riverbend,forecast:riverbend_roofward:d12:r5,Ari,river flood,0.56562,17,riverbend_roofward,6,True
+162,12,spring_rain,roofward,forecast:roofward_archive:d12:r8,Fay,glasshouse heat surge,0.611103,17,roofward_archive,8,True
+163,12,spring_rain,archive_quarter,forecast:archive_signal:d12:r8,Nia,wind archive scatter,0.588405,17,archive_signal,8,True
+164,12,spring_rain,signal_ridge,forecast:signal_orchard:d12:r7,Milo,dusk ice,0.427287,17,signal_orchard,8,True
+165,12,spring_rain,orchard_fen,forecast:orchard_riverbend:d12:r6,Ivo,fen mud,0.503259,17,orchard_riverbend,6,True
+166,12,spring_rain,central_exchange,forecast:central_repair_ring:d12:r6,Juno,crowded repair yard,0.514684,17,central_repair_ring,6,True
+167,12,spring_rain,riverbend,forecast:riverbend_roofward:d12:r6,Ari,river flood,0.56562,17,riverbend_roofward,6,True
+168,13,spring_rain,roofward,forecast:roofward_archive:d13:r8,Fay,glasshouse heat surge,0.605989,18,roofward_archive,9,True
+169,13,spring_rain,archive_quarter,forecast:archive_signal:d13:r8,Nia,wind archive scatter,0.588405,18,archive_signal,8,True
+170,13,spring_rain,signal_ridge,forecast:signal_orchard:d13:r8,Milo,dusk ice,0.427287,18,signal_orchard,8,True
+171,13,spring_rain,orchard_fen,forecast:orchard_riverbend:d13:r6,Ivo,fen mud,0.489393,18,orchard_riverbend,7,True
+172,13,spring_rain,central_exchange,forecast:central_repair_ring:d13:r6,Juno,crowded repair yard,0.514684,18,central_repair_ring,6,True
+173,13,spring_rain,riverbend,forecast:riverbend_roofward:d13:r6,Ari,river flood,0.56562,18,riverbend_roofward,6,True
+174,13,spring_rain,roofward,forecast:roofward_archive:d13:r9,Fay,glasshouse heat surge,0.605989,18,roofward_archive,9,True
+175,13,spring_rain,archive_quarter,forecast:archive_signal:d13:r8,Nia,wind archive scatter,0.513233,18,archive_signal,9,True
+176,13,spring_rain,signal_ridge,forecast:signal_orchard:d13:r8,Milo,dusk ice,0.427287,18,signal_orchard,8,True
+177,13,spring_rain,orchard_fen,forecast:orchard_riverbend:d13:r7,Ivo,fen mud,0.44231,18,orchard_riverbend,8,True
+178,13,spring_rain,central_exchange,forecast:central_repair_ring:d13:r6,Juno,crowded repair yard,0.514684,18,central_repair_ring,6,True
+179,13,spring_rain,riverbend,forecast:riverbend_roofward:d13:r6,Ari,river flood,0.56562,18,riverbend_roofward,6,True
+180,13,spring_rain,roofward,forecast:roofward_archive:d13:r9,Fay,glasshouse heat surge,0.605989,18,roofward_archive,9,True
+181,13,spring_rain,archive_quarter,forecast:archive_signal:d13:r9,Nia,wind archive scatter,0.513233,18,archive_signal,9,True
+182,14,spring_rain,orchard_fen,forecast:orchard_riverbend:d14:r8,Ivo,fen mud,0.515527,19,orchard_riverbend,9,True
+183,14,spring_rain,central_exchange,forecast:central_repair_ring:d14:r6,Juno,crowded repair yard,0.406192,19,central_repair_ring,7,True
+184,14,spring_rain,riverbend,forecast:riverbend_roofward:d14:r6,Ari,river flood,0.56562,19,riverbend_roofward,6,True
+185,14,spring_rain,roofward,forecast:roofward_archive:d14:r9,Fay,glasshouse heat surge,0.605989,19,roofward_archive,9,True
+186,14,spring_rain,archive_quarter,forecast:archive_signal:d14:r9,Nia,wind archive scatter,0.513233,19,archive_signal,9,True
+187,14,spring_rain,signal_ridge,forecast:signal_orchard:d14:r8,Milo,dusk ice,0.427287,19,signal_orchard,8,True
+188,14,spring_rain,orchard_fen,forecast:orchard_riverbend:d14:r9,Ivo,fen mud,0.515527,19,orchard_riverbend,9,True
+189,14,spring_rain,central_exchange,forecast:central_repair_ring:d14:r7,Juno,crowded repair yard,0.419014,19,central_repair_ring,8,True
+190,14,spring_rain,riverbend,forecast:riverbend_roofward:d14:r6,Ari,river flood,0.56562,19,riverbend_roofward,6,True
+191,14,spring_rain,roofward,forecast:roofward_archive:d14:r9,Fay,glasshouse heat surge,0.605989,19,roofward_archive,9,True
+192,14,spring_rain,archive_quarter,forecast:archive_signal:d14:r9,Nia,wind archive scatter,0.513233,19,archive_signal,9,True
+193,14,spring_rain,signal_ridge,forecast:signal_orchard:d14:r8,Milo,dusk ice,0.427287,19,signal_orchard,8,True
+194,14,spring_rain,orchard_fen,forecast:orchard_riverbend:d14:r9,Ivo,fen mud,0.515527,19,orchard_riverbend,9,True
+195,14,spring_rain,central_exchange,forecast:central_repair_ring:d14:r8,Juno,crowded repair yard,0.465804,19,central_repair_ring,9,True
+196,15,spring_rain,riverbend,forecast:riverbend_roofward:d15:r6,Ari,river flood,0.420454,20,riverbend_roofward,7,True
+197,15,spring_rain,roofward,forecast:roofward_archive:d15:r9,Fay,glasshouse heat surge,0.605989,20,roofward_archive,9,True
+198,15,spring_rain,archive_quarter,forecast:archive_signal:d15:r9,Nia,wind archive scatter,0.513233,20,archive_signal,9,True
+199,15,spring_rain,signal_ridge,forecast:signal_orchard:d15:r8,Milo,dusk ice,0.427287,20,signal_orchard,8,True
+200,15,spring_rain,orchard_fen,forecast:orchard_riverbend:d15:r9,Ivo,fen mud,0.515527,20,orchard_riverbend,9,True
+201,15,spring_rain,central_exchange,forecast:central_repair_ring:d15:r9,Juno,crowded repair yard,0.465804,20,central_repair_ring,9,True
+202,15,spring_rain,riverbend,forecast:riverbend_roofward:d15:r7,Ari,river flood,0.420454,20,riverbend_roofward,7,True
+203,15,spring_rain,roofward,forecast:roofward_archive:d15:r9,Fay,glasshouse heat surge,0.561357,20,roofward_archive,10,True
+204,15,spring_rain,archive_quarter,forecast:archive_signal:d15:r9,Nia,wind archive scatter,0.513233,20,archive_signal,9,True
+205,15,spring_rain,signal_ridge,forecast:signal_orchard:d15:r8,Milo,dusk ice,0.427287,20,signal_orchard,8,True
+206,15,spring_rain,orchard_fen,forecast:orchard_riverbend:d15:r9,Ivo,fen mud,0.515527,20,orchard_riverbend,9,True
+207,15,spring_rain,central_exchange,forecast:central_repair_ring:d15:r9,Juno,crowded repair yard,0.465804,20,central_repair_ring,9,True
+208,15,spring_rain,riverbend,forecast:riverbend_roofward:d15:r7,Ari,river flood,0.420454,20,riverbend_roofward,7,True
+209,15,spring_rain,roofward,forecast:roofward_archive:d15:r10,Fay,glasshouse heat surge,0.561357,20,roofward_archive,10,True
+210,16,spring_rain,archive_quarter,forecast:archive_signal:d16:r9,Nia,wind archive scatter,0.535385,21,archive_signal,10,True
+211,16,spring_rain,signal_ridge,forecast:signal_orchard:d16:r8,Milo,dusk ice,0.427287,21,signal_orchard,8,True
+212,16,spring_rain,orchard_fen,forecast:orchard_riverbend:d16:r9,Ivo,fen mud,0.515527,21,orchard_riverbend,9,True
+213,16,spring_rain,central_exchange,forecast:central_repair_ring:d16:r9,Juno,crowded repair yard,0.465804,21,central_repair_ring,9,True
+214,16,spring_rain,riverbend,forecast:riverbend_roofward:d16:r7,Ari,river flood,0.420454,21,riverbend_roofward,7,True
+215,16,spring_rain,roofward,forecast:roofward_archive:d16:r10,Fay,glasshouse heat surge,0.561357,21,roofward_archive,10,True
+216,16,spring_rain,archive_quarter,forecast:archive_signal:d16:r10,Nia,wind archive scatter,0.535385,21,archive_signal,10,True
+217,16,spring_rain,signal_ridge,forecast:signal_orchard:d16:r8,Milo,dusk ice,0.42492,21,signal_orchard,9,True
+218,16,spring_rain,orchard_fen,forecast:orchard_riverbend:d16:r9,Ivo,fen mud,0.515527,21,orchard_riverbend,9,True
+219,16,spring_rain,central_exchange,forecast:central_repair_ring:d16:r9,Juno,crowded repair yard,0.465804,21,central_repair_ring,9,True
+220,16,spring_rain,riverbend,forecast:riverbend_roofward:d16:r7,Ari,river flood,0.420454,21,riverbend_roofward,7,True
+221,16,spring_rain,roofward,forecast:roofward_archive:d16:r10,Fay,glasshouse heat surge,0.561357,21,roofward_archive,10,True
+222,16,spring_rain,archive_quarter,forecast:archive_signal:d16:r10,Nia,wind archive scatter,0.535385,21,archive_signal,10,True
+223,16,spring_rain,signal_ridge,forecast:signal_orchard:d16:r9,Milo,dusk ice,0.42492,21,signal_orchard,9,True
+224,17,spring_rain,orchard_fen,forecast:orchard_riverbend:d17:r9,Ivo,fen mud,0.449628,22,orchard_riverbend,10,True
+225,17,spring_rain,central_exchange,forecast:central_repair_ring:d17:r9,Juno,crowded repair yard,0.465804,22,central_repair_ring,9,True
+226,17,spring_rain,riverbend,forecast:riverbend_roofward:d17:r7,Ari,river flood,0.420454,22,riverbend_roofward,7,True
+227,17,spring_rain,roofward,forecast:roofward_archive:d17:r10,Fay,glasshouse heat surge,0.561357,22,roofward_archive,10,True
+228,17,spring_rain,archive_quarter,forecast:archive_signal:d17:r10,Nia,wind archive scatter,0.535385,22,archive_signal,10,True
+229,17,spring_rain,signal_ridge,forecast:signal_orchard:d17:r9,Milo,dusk ice,0.42492,22,signal_orchard,9,True
+230,17,spring_rain,orchard_fen,forecast:orchard_riverbend:d17:r10,Ivo,fen mud,0.449628,22,orchard_riverbend,10,True
+231,17,spring_rain,central_exchange,forecast:central_repair_ring:d17:r9,Juno,crowded repair yard,0.565305,22,central_repair_ring,10,True
+232,17,spring_rain,riverbend,forecast:riverbend_roofward:d17:r7,Ari,river flood,0.420454,22,riverbend_roofward,7,True
+233,17,spring_rain,roofward,forecast:roofward_archive:d17:r10,Fay,glasshouse heat surge,0.561357,22,roofward_archive,10,True
+234,17,spring_rain,archive_quarter,forecast:archive_signal:d17:r10,Nia,wind archive scatter,0.535385,22,archive_signal,10,True
+235,17,spring_rain,signal_ridge,forecast:signal_orchard:d17:r9,Milo,dusk ice,0.42492,22,signal_orchard,9,True
+236,17,spring_rain,orchard_fen,forecast:orchard_riverbend:d17:r10,Ivo,fen mud,0.449628,22,orchard_riverbend,10,True
+237,17,spring_rain,central_exchange,forecast:central_repair_ring:d17:r10,Juno,crowded repair yard,0.565305,22,central_repair_ring,10,True
+238,18,spring_rain,riverbend,forecast:riverbend_roofward:d18:r7,Toma,river flood,0.509407,23,riverbend_roofward,8,True
+239,18,spring_rain,roofward,forecast:roofward_archive:d18:r10,Fay,glasshouse heat surge,0.561357,23,roofward_archive,10,True
+240,18,spring_rain,archive_quarter,forecast:archive_signal:d18:r10,Nia,wind archive scatter,0.535385,23,archive_signal,10,True
+241,18,spring_rain,signal_ridge,forecast:signal_orchard:d18:r9,Milo,dusk ice,0.42492,23,signal_orchard,9,True
+242,18,spring_rain,orchard_fen,forecast:orchard_riverbend:d18:r10,Ivo,fen mud,0.449628,23,orchard_riverbend,10,True
+243,18,spring_rain,central_exchange,forecast:central_repair_ring:d18:r10,Juno,crowded repair yard,0.565305,23,central_repair_ring,10,True
+244,18,spring_rain,riverbend,forecast:riverbend_roofward:d18:r8,Toma,river flood,0.577514,23,riverbend_roofward,9,True
+245,18,spring_rain,roofward,forecast:roofward_archive:d18:r10,Fay,glasshouse heat surge,0.46246,23,roofward_archive,11,True
+246,18,spring_rain,archive_quarter,forecast:archive_signal:d18:r10,Nia,wind archive scatter,0.535385,23,archive_signal,10,True
+247,18,spring_rain,signal_ridge,forecast:signal_orchard:d18:r9,Milo,dusk ice,0.42492,23,signal_orchard,9,True
+248,18,spring_rain,orchard_fen,forecast:orchard_riverbend:d18:r10,Ivo,fen mud,0.449628,23,orchard_riverbend,10,True
+249,18,spring_rain,central_exchange,forecast:central_repair_ring:d18:r10,Pax,crowded repair yard,0.565305,23,central_repair_ring,10,True
+250,18,spring_rain,riverbend,forecast:riverbend_roofward:d18:r9,Toma,river flood,0.510184,23,riverbend_roofward,10,True
+251,18,spring_rain,roofward,forecast:roofward_archive:d18:r11,Fay,glasshouse heat surge,0.46246,23,roofward_archive,11,True
+252,19,summer_dry,archive_quarter,forecast:archive_signal:d19:r10,Nia,wind archive scatter,0.303988,25,archive_signal,11,True
+253,19,summer_dry,signal_ridge,forecast:signal_orchard:d19:r9,Milo,dusk ice,0.42492,25,signal_orchard,9,True
+254,19,summer_dry,orchard_fen,forecast:orchard_riverbend:d19:r10,Ivo,fen mud,0.449628,25,orchard_riverbend,10,True
+255,19,summer_dry,central_exchange,forecast:central_repair_ring:d19:r10,Pax,crowded repair yard,0.565305,25,central_repair_ring,10,True
+256,19,summer_dry,riverbend,forecast:riverbend_roofward:d19:r10,Toma,river flood,0.510184,25,riverbend_roofward,10,True
+257,19,summer_dry,roofward,forecast:roofward_archive:d19:r11,Fay,glasshouse heat surge,0.240369,25,roofward_archive,12,True
+258,19,summer_dry,archive_quarter,forecast:archive_signal:d19:r11,Nia,wind archive scatter,0.303988,25,archive_signal,11,True
+259,19,summer_dry,signal_ridge,forecast:signal_orchard:d19:r9,Milo,dusk ice,0.402658,25,signal_orchard,10,True
+260,19,summer_dry,orchard_fen,forecast:orchard_riverbend:d19:r10,Ivo,fen mud,0.449628,25,orchard_riverbend,10,True
+261,19,summer_dry,central_exchange,forecast:central_repair_ring:d19:r10,Pax,crowded repair yard,0.565305,25,central_repair_ring,10,True
+262,19,summer_dry,riverbend,forecast:riverbend_roofward:d19:r10,Toma,river flood,0.510184,25,riverbend_roofward,10,True
+263,19,summer_dry,roofward,forecast:roofward_archive:d19:r12,Fay,glasshouse heat surge,0.221383,25,roofward_archive,13,True
+264,19,summer_dry,archive_quarter,forecast:archive_signal:d19:r11,Nia,wind archive scatter,0.303988,25,archive_signal,11,True
+265,19,summer_dry,signal_ridge,forecast:signal_orchard:d19:r10,Milo,dusk ice,0.402658,25,signal_orchard,10,True
+266,20,summer_dry,orchard_fen,forecast:orchard_riverbend:d20:r10,Ivo,fen mud,0.409576,26,orchard_riverbend,11,True
+267,20,summer_dry,central_exchange,forecast:central_repair_ring:d20:r10,Pax,crowded repair yard,0.565305,26,central_repair_ring,10,True
+268,20,summer_dry,riverbend,forecast:riverbend_roofward:d20:r10,Toma,river flood,0.510184,26,riverbend_roofward,10,True
+269,20,summer_dry,roofward,forecast:roofward_archive:d20:r13,Fay,glasshouse heat surge,0.221383,26,roofward_archive,13,True
+270,20,summer_dry,archive_quarter,forecast:archive_signal:d20:r11,Nia,wind archive scatter,0.239197,26,archive_signal,12,True
+271,20,summer_dry,signal_ridge,forecast:signal_orchard:d20:r10,Milo,dusk ice,0.402658,26,signal_orchard,10,True
+272,20,summer_dry,orchard_fen,forecast:orchard_riverbend:d20:r11,Ivo,fen mud,0.409576,26,orchard_riverbend,11,True
+273,20,summer_dry,central_exchange,forecast:central_repair_ring:d20:r10,Pax,crowded repair yard,0.355565,26,central_repair_ring,11,True
+274,20,summer_dry,riverbend,forecast:riverbend_roofward:d20:r10,Toma,river flood,0.510184,26,riverbend_roofward,10,True
+275,20,summer_dry,roofward,forecast:roofward_archive:d20:r13,Fay,glasshouse heat surge,0.221383,26,roofward_archive,13,True
+276,20,summer_dry,archive_quarter,forecast:archive_signal:d20:r12,Nia,wind archive scatter,0.264255,26,archive_signal,13,True
+277,20,summer_dry,signal_ridge,forecast:signal_orchard:d20:r10,Milo,dusk ice,0.402658,26,signal_orchard,10,True
+278,20,summer_dry,orchard_fen,forecast:orchard_riverbend:d20:r11,Ivo,fen mud,0.409576,26,orchard_riverbend,11,True
+279,20,summer_dry,central_exchange,forecast:central_repair_ring:d20:r11,Pax,crowded repair yard,0.355565,26,central_repair_ring,11,True
+280,21,summer_dry,roofward,forecast:roofward_archive:d21:r13,Fay,glasshouse heat surge,0.259267,27,roofward_archive,14,True
+281,21,summer_dry,archive_quarter,forecast:archive_signal:d21:r13,Nia,wind archive scatter,0.264255,27,archive_signal,13,True
+282,21,summer_dry,signal_ridge,forecast:signal_orchard:d21:r10,Milo,dusk ice,0.266824,27,signal_orchard,11,True
+283,21,summer_dry,orchard_fen,forecast:orchard_riverbend:d21:r11,Ivo,fen mud,0.409576,27,orchard_riverbend,11,True
+284,21,summer_dry,central_exchange,forecast:central_repair_ring:d21:r11,Pax,crowded repair yard,0.355565,27,central_repair_ring,11,True
+285,21,summer_dry,riverbend,forecast:riverbend_roofward:d21:r10,Toma,river flood,0.510184,27,riverbend_roofward,10,True
+286,21,summer_dry,roofward,forecast:roofward_archive:d21:r14,Fay,glasshouse heat surge,0.259267,27,roofward_archive,14,True
+287,21,summer_dry,archive_quarter,forecast:archive_signal:d21:r13,Nia,wind archive scatter,0.184871,27,archive_signal,14,True
+288,21,summer_dry,signal_ridge,forecast:signal_orchard:d21:r11,Milo,dusk ice,0.358391,27,signal_orchard,12,True
+289,21,summer_dry,orchard_fen,forecast:orchard_riverbend:d21:r11,Ivo,fen mud,0.409576,27,orchard_riverbend,11,True
+290,21,summer_dry,central_exchange,forecast:central_repair_ring:d21:r11,Pax,crowded repair yard,0.355565,27,central_repair_ring,11,True
+291,21,summer_dry,riverbend,forecast:riverbend_roofward:d21:r10,Toma,river flood,0.510184,27,riverbend_roofward,10,True
+292,21,summer_dry,roofward,forecast:roofward_archive:d21:r14,Fay,glasshouse heat surge,0.259267,27,roofward_archive,14,True
+293,21,summer_dry,archive_quarter,forecast:archive_signal:d21:r14,Nia,wind archive scatter,0.184871,27,archive_signal,14,True
+294,22,summer_dry,signal_ridge,forecast:signal_orchard:d22:r12,Milo,dusk ice,0.211229,28,signal_orchard,13,True
+295,22,summer_dry,orchard_fen,forecast:orchard_riverbend:d22:r11,Ivo,fen mud,0.311961,28,orchard_riverbend,12,True
+296,22,summer_dry,central_exchange,forecast:central_repair_ring:d22:r11,Pax,crowded repair yard,0.355565,28,central_repair_ring,11,True
+297,22,summer_dry,riverbend,forecast:riverbend_roofward:d22:r10,Toma,river flood,0.510184,28,riverbend_roofward,10,True
+298,22,summer_dry,roofward,forecast:roofward_archive:d22:r14,Fay,glasshouse heat surge,0.259267,28,roofward_archive,14,True
+299,22,summer_dry,archive_quarter,forecast:archive_signal:d22:r14,Nia,wind archive scatter,0.184871,28,archive_signal,14,True
+300,22,summer_dry,signal_ridge,forecast:signal_orchard:d22:r13,Milo,dusk ice,0.211229,28,signal_orchard,13,True
+301,22,summer_dry,orchard_fen,forecast:orchard_riverbend:d22:r12,Ivo,fen mud,0.327829,28,orchard_riverbend,13,True
+302,22,summer_dry,central_exchange,forecast:central_repair_ring:d22:r11,Pax,crowded repair yard,0.355565,28,central_repair_ring,11,True
+303,22,summer_dry,riverbend,forecast:riverbend_roofward:d22:r10,Toma,river flood,0.510184,28,riverbend_roofward,10,True
+304,22,summer_dry,roofward,forecast:roofward_archive:d22:r14,Fay,glasshouse heat surge,0.259267,28,roofward_archive,14,True
+305,22,summer_dry,archive_quarter,forecast:archive_signal:d22:r14,Nia,wind archive scatter,0.184871,28,archive_signal,14,True
+306,22,summer_dry,signal_ridge,forecast:signal_orchard:d22:r13,Milo,dusk ice,0.211229,28,signal_orchard,13,True
+307,22,summer_dry,orchard_fen,forecast:orchard_riverbend:d22:r13,Ivo,fen mud,0.375472,28,orchard_riverbend,14,True
+308,23,summer_dry,central_exchange,forecast:central_repair_ring:d23:r11,Pax,crowded repair yard,0.340038,29,central_repair_ring,12,True
+309,23,summer_dry,riverbend,forecast:riverbend_roofward:d23:r10,Toma,river flood,0.510184,29,riverbend_roofward,10,True
+310,23,summer_dry,roofward,forecast:roofward_archive:d23:r14,Fay,glasshouse heat surge,0.259267,29,roofward_archive,14,True
+311,23,summer_dry,archive_quarter,forecast:archive_signal:d23:r14,Nia,wind archive scatter,0.184871,29,archive_signal,14,True
+312,23,summer_dry,signal_ridge,forecast:signal_orchard:d23:r13,Milo,dusk ice,0.211229,29,signal_orchard,13,True
+313,23,summer_dry,orchard_fen,forecast:orchard_riverbend:d23:r14,Ivo,fen mud,0.375472,29,orchard_riverbend,14,True
+314,23,summer_dry,central_exchange,forecast:central_repair_ring:d23:r12,Pax,crowded repair yard,0.378891,29,central_repair_ring,13,True
+315,23,summer_dry,riverbend,forecast:riverbend_roofward:d23:r10,Toma,river flood,0.253732,29,riverbend_roofward,11,True
+316,23,summer_dry,roofward,forecast:roofward_archive:d23:r14,Fay,glasshouse heat surge,0.259267,29,roofward_archive,14,True
+317,23,summer_dry,archive_quarter,forecast:archive_signal:d23:r14,Nia,wind archive scatter,0.184871,29,archive_signal,14,True
+318,23,summer_dry,signal_ridge,forecast:signal_orchard:d23:r13,Milo,dusk ice,0.211229,29,signal_orchard,13,True
+319,23,summer_dry,orchard_fen,forecast:orchard_riverbend:d23:r14,Ivo,fen mud,0.375472,29,orchard_riverbend,14,True
+320,23,summer_dry,central_exchange,forecast:central_repair_ring:d23:r13,Pax,crowded repair yard,0.303369,29,central_repair_ring,14,True
+321,23,summer_dry,riverbend,forecast:riverbend_roofward:d23:r11,Toma,river flood,0.253732,29,riverbend_roofward,11,True
+322,24,summer_dry,roofward,forecast:roofward_archive:d24:r14,Fay,glasshouse heat surge,0.183475,30,roofward_archive,15,True
+323,24,summer_dry,archive_quarter,forecast:archive_signal:d24:r14,Nia,wind archive scatter,0.184871,30,archive_signal,14,True
+324,24,summer_dry,signal_ridge,forecast:signal_orchard:d24:r13,Milo,dusk ice,0.211229,30,signal_orchard,13,True
+325,24,summer_dry,orchard_fen,forecast:orchard_riverbend:d24:r14,Ivo,fen mud,0.375472,30,orchard_riverbend,14,True
+326,24,summer_dry,central_exchange,forecast:central_repair_ring:d24:r14,Pax,crowded repair yard,0.303369,30,central_repair_ring,14,True
+327,24,summer_dry,riverbend,forecast:riverbend_roofward:d24:r11,Toma,river flood,0.253732,30,riverbend_roofward,11,True
+328,24,summer_dry,roofward,forecast:roofward_archive:d24:r15,Fay,glasshouse heat surge,0.183475,30,roofward_archive,15,True
+329,24,summer_dry,archive_quarter,forecast:archive_signal:d24:r14,Nia,wind archive scatter,0.292244,30,archive_signal,15,True
+330,24,summer_dry,signal_ridge,forecast:signal_orchard:d24:r13,Milo,dusk ice,0.211229,30,signal_orchard,13,True
+331,24,summer_dry,orchard_fen,forecast:orchard_riverbend:d24:r14,Ivo,fen mud,0.375472,30,orchard_riverbend,14,True
+332,24,summer_dry,central_exchange,forecast:central_repair_ring:d24:r14,Pax,crowded repair yard,0.303369,30,central_repair_ring,14,True
+333,24,summer_dry,riverbend,forecast:riverbend_roofward:d24:r11,Toma,river flood,0.253732,30,riverbend_roofward,11,True
+334,24,summer_dry,roofward,forecast:roofward_archive:d24:r15,Fay,glasshouse heat surge,0.183475,30,roofward_archive,15,True
+335,24,summer_dry,archive_quarter,forecast:archive_signal:d24:r15,Nia,wind archive scatter,0.292244,30,archive_signal,15,True
+336,25,summer_dry,signal_ridge,forecast:signal_orchard:d25:r13,Milo,dusk ice,0.299624,31,signal_orchard,14,True
+337,25,summer_dry,orchard_fen,forecast:orchard_riverbend:d25:r14,Ivo,fen mud,0.375472,31,orchard_riverbend,14,True
+338,25,summer_dry,central_exchange,forecast:central_repair_ring:d25:r14,Pax,crowded repair yard,0.303369,31,central_repair_ring,14,True
+339,25,summer_dry,riverbend,forecast:riverbend_roofward:d25:r11,Toma,river flood,0.253732,31,riverbend_roofward,11,True
+340,25,summer_dry,roofward,forecast:roofward_archive:d25:r15,Fay,glasshouse heat surge,0.183475,31,roofward_archive,15,True
+341,25,summer_dry,archive_quarter,forecast:archive_signal:d25:r15,Nia,wind archive scatter,0.292244,31,archive_signal,15,True
+342,25,summer_dry,signal_ridge,forecast:signal_orchard:d25:r14,Milo,dusk ice,0.299624,31,signal_orchard,14,True
+343,25,summer_dry,orchard_fen,forecast:orchard_riverbend:d25:r14,Ivo,fen mud,0.259212,31,orchard_riverbend,15,True
+344,25,summer_dry,central_exchange,forecast:central_repair_ring:d25:r14,Pax,crowded repair yard,0.303369,31,central_repair_ring,14,True
+345,25,summer_dry,riverbend,forecast:riverbend_roofward:d25:r11,Toma,river flood,0.253732,31,riverbend_roofward,11,True
+346,25,summer_dry,roofward,forecast:roofward_archive:d25:r15,Fay,glasshouse heat surge,0.183475,31,roofward_archive,15,True
+347,25,summer_dry,archive_quarter,forecast:archive_signal:d25:r15,Nia,wind archive scatter,0.292244,31,archive_signal,15,True
+348,25,summer_dry,signal_ridge,forecast:signal_orchard:d25:r14,Milo,dusk ice,0.299624,31,signal_orchard,14,True
+349,25,summer_dry,orchard_fen,forecast:orchard_riverbend:d25:r15,Ivo,fen mud,0.259212,31,orchard_riverbend,15,True
+350,26,summer_dry,central_exchange,forecast:central_repair_ring:d26:r14,Pax,crowded repair yard,0.239023,32,central_repair_ring,15,True
+351,26,summer_dry,riverbend,forecast:riverbend_roofward:d26:r11,Toma,river flood,0.253732,32,riverbend_roofward,11,True
+352,26,summer_dry,roofward,forecast:roofward_archive:d26:r15,Fay,glasshouse heat surge,0.183475,32,roofward_archive,15,True
+353,26,summer_dry,archive_quarter,forecast:archive_signal:d26:r15,Nia,wind archive scatter,0.292244,32,archive_signal,15,True
+354,26,summer_dry,signal_ridge,forecast:signal_orchard:d26:r14,Milo,dusk ice,0.299624,32,signal_orchard,14,True
+355,26,summer_dry,orchard_fen,forecast:orchard_riverbend:d26:r15,Ivo,fen mud,0.259212,32,orchard_riverbend,15,True
+356,26,summer_dry,central_exchange,forecast:central_repair_ring:d26:r15,Pax,crowded repair yard,0.239023,32,central_repair_ring,15,True
+357,26,summer_dry,riverbend,forecast:riverbend_roofward:d26:r11,Toma,river flood,0.311525,32,riverbend_roofward,12,True
+358,26,summer_dry,roofward,forecast:roofward_archive:d26:r15,Fay,glasshouse heat surge,0.183475,32,roofward_archive,15,True
+359,26,summer_dry,archive_quarter,forecast:archive_signal:d26:r15,Nia,wind archive scatter,0.292244,32,archive_signal,15,True
+360,26,summer_dry,signal_ridge,forecast:signal_orchard:d26:r14,Milo,dusk ice,0.299624,32,signal_orchard,14,True
+361,26,summer_dry,orchard_fen,forecast:orchard_riverbend:d26:r15,Ivo,fen mud,0.259212,32,orchard_riverbend,15,True
+362,26,summer_dry,central_exchange,forecast:central_repair_ring:d26:r15,Pax,crowded repair yard,0.239023,32,central_repair_ring,15,True
+363,26,summer_dry,riverbend,forecast:riverbend_roofward:d26:r12,Toma,river flood,0.311525,32,riverbend_roofward,12,True
+364,27,summer_dry,roofward,forecast:roofward_archive:d27:r15,Fay,glasshouse heat surge,0.291853,33,roofward_archive,16,True
+365,27,summer_dry,archive_quarter,forecast:archive_signal:d27:r15,Nia,wind archive scatter,0.292244,33,archive_signal,15,True
+366,27,summer_dry,signal_ridge,forecast:signal_orchard:d27:r14,Milo,dusk ice,0.299624,33,signal_orchard,14,True
+367,27,summer_dry,orchard_fen,forecast:orchard_riverbend:d27:r15,Ivo,fen mud,0.259212,33,orchard_riverbend,15,True
+368,27,summer_dry,central_exchange,forecast:central_repair_ring:d27:r15,Pax,crowded repair yard,0.239023,33,central_repair_ring,15,True
+369,27,summer_dry,riverbend,forecast:riverbend_roofward:d27:r12,Toma,river flood,0.284507,33,riverbend_roofward,13,True
+370,27,summer_dry,roofward,forecast:roofward_archive:d27:r16,Fay,glasshouse heat surge,0.291853,33,roofward_archive,16,True
+371,27,summer_dry,archive_quarter,forecast:archive_signal:d27:r15,Nia,wind archive scatter,0.235908,33,archive_signal,16,True
+372,27,summer_dry,signal_ridge,forecast:signal_orchard:d27:r14,Milo,dusk ice,0.299624,33,signal_orchard,14,True
+373,27,summer_dry,orchard_fen,forecast:orchard_riverbend:d27:r15,Ivo,fen mud,0.259212,33,orchard_riverbend,15,True
+374,27,summer_dry,central_exchange,forecast:central_repair_ring:d27:r15,Pax,crowded repair yard,0.239023,33,central_repair_ring,15,True
+375,27,summer_dry,riverbend,forecast:riverbend_roofward:d27:r13,Toma,river flood,0.320142,33,riverbend_roofward,14,True
+376,27,summer_dry,roofward,forecast:roofward_archive:d27:r16,Fay,glasshouse heat surge,0.291853,33,roofward_archive,16,True
+377,27,summer_dry,archive_quarter,forecast:archive_signal:d27:r16,Nia,wind archive scatter,0.235908,33,archive_signal,16,True
+378,28,summer_dry,orchard_fen,forecast:orchard_riverbend:d28:r15,Ivo,fen mud,0.269859,34,orchard_riverbend,16,True
+379,28,summer_dry,central_exchange,forecast:central_repair_ring:d28:r15,Pax,crowded repair yard,0.239023,34,central_repair_ring,15,True
+380,28,summer_dry,riverbend,forecast:riverbend_roofward:d28:r14,Toma,river flood,0.320142,34,riverbend_roofward,14,True
+381,28,summer_dry,roofward,forecast:roofward_archive:d28:r16,Fay,glasshouse heat surge,0.365399,34,roofward_archive,17,True
+382,28,summer_dry,archive_quarter,forecast:archive_signal:d28:r16,Nia,wind archive scatter,0.235908,34,archive_signal,16,True
+383,28,summer_dry,signal_ridge,forecast:signal_orchard:d28:r14,Milo,dusk ice,0.299624,34,signal_orchard,14,True
+384,28,summer_dry,orchard_fen,forecast:orchard_riverbend:d28:r16,Ivo,fen mud,0.269859,34,orchard_riverbend,16,True
+385,28,summer_dry,central_exchange,forecast:central_repair_ring:d28:r15,Pax,crowded repair yard,0.177806,34,central_repair_ring,16,True
+386,28,summer_dry,riverbend,forecast:riverbend_roofward:d28:r14,Toma,river flood,0.320142,34,riverbend_roofward,14,True
+387,28,summer_dry,roofward,forecast:roofward_archive:d28:r17,Fay,glasshouse heat surge,0.342792,34,roofward_archive,18,True
+388,28,summer_dry,archive_quarter,forecast:archive_signal:d28:r16,Nia,wind archive scatter,0.235908,34,archive_signal,16,True
+389,28,summer_dry,signal_ridge,forecast:signal_orchard:d28:r14,Milo,dusk ice,0.299624,34,signal_orchard,14,True
+390,28,summer_dry,orchard_fen,forecast:orchard_riverbend:d28:r16,Ivo,fen mud,0.269859,34,orchard_riverbend,16,True
+391,28,summer_dry,central_exchange,forecast:central_repair_ring:d28:r16,Pax,crowded repair yard,0.177806,34,central_repair_ring,16,True
+392,29,summer_dry,riverbend,forecast:riverbend_roofward:d29:r14,Toma,river flood,0.37332,35,riverbend_roofward,15,True
+393,29,summer_dry,roofward,forecast:roofward_archive:d29:r18,Fay,glasshouse heat surge,0.342792,35,roofward_archive,18,True
+394,29,summer_dry,archive_quarter,forecast:archive_signal:d29:r16,Nia,wind archive scatter,0.306534,35,archive_signal,17,True
+395,29,summer_dry,signal_ridge,forecast:signal_orchard:d29:r14,Milo,dusk ice,0.299624,35,signal_orchard,14,True
+396,29,summer_dry,orchard_fen,forecast:orchard_riverbend:d29:r16,Ivo,fen mud,0.269859,35,orchard_riverbend,16,True
+397,29,summer_dry,central_exchange,forecast:central_repair_ring:d29:r16,Pax,crowded repair yard,0.177806,35,central_repair_ring,16,True
+398,29,summer_dry,riverbend,forecast:riverbend_roofward:d29:r15,Toma,river flood,0.37332,35,riverbend_roofward,15,True
+399,29,summer_dry,roofward,forecast:roofward_archive:d29:r18,Fay,glasshouse heat surge,0.293262,35,roofward_archive,19,True
+400,29,summer_dry,archive_quarter,forecast:archive_signal:d29:r17,Nia,wind archive scatter,0.45591,35,archive_signal,18,True
+401,29,summer_dry,signal_ridge,forecast:signal_orchard:d29:r14,Milo,dusk ice,0.299624,35,signal_orchard,14,True
+402,29,summer_dry,orchard_fen,forecast:orchard_riverbend:d29:r16,Ivo,fen mud,0.269859,35,orchard_riverbend,16,True
+403,29,summer_dry,central_exchange,forecast:central_repair_ring:d29:r16,Pax,crowded repair yard,0.177806,35,central_repair_ring,16,True
+404,29,summer_dry,riverbend,forecast:riverbend_roofward:d29:r15,Toma,river flood,0.37332,35,riverbend_roofward,15,True
+405,29,summer_dry,roofward,forecast:roofward_archive:d29:r19,Fay,glasshouse heat surge,0.293262,35,roofward_archive,19,True
+406,30,summer_dry,archive_quarter,forecast:archive_signal:d30:r18,Nia,wind archive scatter,0.324935,36,archive_signal,19,True
+407,30,summer_dry,signal_ridge,forecast:signal_orchard:d30:r14,Milo,dusk ice,0.367575,36,signal_orchard,15,True
+408,30,summer_dry,orchard_fen,forecast:orchard_riverbend:d30:r16,Ivo,fen mud,0.269859,36,orchard_riverbend,16,True
+409,30,summer_dry,central_exchange,forecast:central_repair_ring:d30:r16,Pax,crowded repair yard,0.177806,36,central_repair_ring,16,True
+410,30,summer_dry,riverbend,forecast:riverbend_roofward:d30:r15,Toma,river flood,0.37332,36,riverbend_roofward,15,True
+411,30,summer_dry,roofward,forecast:roofward_archive:d30:r19,Fay,glasshouse heat surge,0.293262,36,roofward_archive,19,True
+412,30,summer_dry,archive_quarter,forecast:archive_signal:d30:r19,Nia,wind archive scatter,0.324935,36,archive_signal,19,True
+413,30,summer_dry,signal_ridge,forecast:signal_orchard:d30:r15,Ren,dusk ice,0.213801,36,signal_orchard,16,True
+414,30,summer_dry,orchard_fen,forecast:orchard_riverbend:d30:r16,Mara,fen mud,0.269859,36,orchard_riverbend,16,True
+415,30,summer_dry,central_exchange,forecast:central_repair_ring:d30:r16,Pax,crowded repair yard,0.177806,36,central_repair_ring,16,True
+416,30,summer_dry,riverbend,forecast:riverbend_roofward:d30:r15,Toma,river flood,0.37332,36,riverbend_roofward,15,True
+417,30,summer_dry,roofward,forecast:roofward_archive:d30:r19,Fay,glasshouse heat surge,0.293262,36,roofward_archive,19,True
+418,30,summer_dry,archive_quarter,forecast:archive_signal:d30:r19,Nia,wind archive scatter,0.324935,36,archive_signal,19,True
+419,30,summer_dry,signal_ridge,forecast:signal_orchard:d30:r16,Ren,dusk ice,0.213944,36,signal_orchard,17,True
+420,31,summer_dry,orchard_fen,forecast:orchard_riverbend:d31:r16,Mara,fen mud,0.186441,37,orchard_riverbend,17,True
+421,31,summer_dry,central_exchange,forecast:central_repair_ring:d31:r16,Pax,crowded repair yard,0.177806,37,central_repair_ring,16,True
+422,31,summer_dry,riverbend,forecast:riverbend_roofward:d31:r15,Toma,river flood,0.37332,37,riverbend_roofward,15,True
+423,31,summer_dry,roofward,forecast:roofward_archive:d31:r19,Fay,glasshouse heat surge,0.293262,37,roofward_archive,19,True
+424,31,summer_dry,archive_quarter,forecast:archive_signal:d31:r19,Nia,wind archive scatter,0.324935,37,archive_signal,19,True
+425,31,summer_dry,signal_ridge,forecast:signal_orchard:d31:r17,Ren,dusk ice,0.213944,37,signal_orchard,17,True
+426,31,summer_dry,orchard_fen,forecast:orchard_riverbend:d31:r17,Mara,fen mud,0.206283,37,orchard_riverbend,18,True
+427,31,summer_dry,central_exchange,forecast:central_repair_ring:d31:r16,Pax,crowded repair yard,0.290266,37,central_repair_ring,17,True
+428,31,summer_dry,riverbend,forecast:riverbend_roofward:d31:r15,Toma,river flood,0.37332,37,riverbend_roofward,15,True
+429,31,summer_dry,roofward,forecast:roofward_archive:d31:r19,Fay,glasshouse heat surge,0.293262,37,roofward_archive,19,True
+430,31,summer_dry,archive_quarter,forecast:archive_signal:d31:r19,Nia,wind archive scatter,0.324935,37,archive_signal,19,True
+431,31,summer_dry,signal_ridge,forecast:signal_orchard:d31:r17,Ren,dusk ice,0.213944,37,signal_orchard,17,True
+432,31,summer_dry,orchard_fen,forecast:orchard_riverbend:d31:r18,Mara,fen mud,0.341439,37,orchard_riverbend,19,True
+433,31,summer_dry,central_exchange,forecast:central_repair_ring:d31:r17,Pax,crowded repair yard,0.290266,37,central_repair_ring,17,True
+434,32,summer_dry,riverbend,forecast:riverbend_roofward:d32:r15,Toma,river flood,0.30181,38,riverbend_roofward,16,True
+435,32,summer_dry,roofward,forecast:roofward_archive:d32:r19,Fay,glasshouse heat surge,0.293262,38,roofward_archive,19,True
+436,32,summer_dry,archive_quarter,forecast:archive_signal:d32:r19,Nia,wind archive scatter,0.324935,38,archive_signal,19,True
+437,32,summer_dry,signal_ridge,forecast:signal_orchard:d32:r17,Ren,dusk ice,0.213944,38,signal_orchard,17,True
+438,32,summer_dry,orchard_fen,forecast:orchard_riverbend:d32:r19,Mara,fen mud,0.341439,38,orchard_riverbend,19,True
+439,32,summer_dry,central_exchange,forecast:central_repair_ring:d32:r17,Pax,crowded repair yard,0.278554,38,central_repair_ring,18,True
+440,32,summer_dry,riverbend,forecast:riverbend_roofward:d32:r16,Toma,river flood,0.30181,38,riverbend_roofward,16,True
+441,32,summer_dry,roofward,forecast:roofward_archive:d32:r19,Fay,glasshouse heat surge,0.192993,38,roofward_archive,20,True
+442,32,summer_dry,archive_quarter,forecast:archive_signal:d32:r19,Nia,wind archive scatter,0.324935,38,archive_signal,19,True
+443,32,summer_dry,signal_ridge,forecast:signal_orchard:d32:r17,Ren,dusk ice,0.213944,38,signal_orchard,17,True
+444,32,summer_dry,orchard_fen,forecast:orchard_riverbend:d32:r19,Mara,fen mud,0.341439,38,orchard_riverbend,19,True
+445,32,summer_dry,central_exchange,forecast:central_repair_ring:d32:r18,Pax,crowded repair yard,0.318475,38,central_repair_ring,19,True
+446,32,summer_dry,riverbend,forecast:riverbend_roofward:d32:r16,Toma,river flood,0.30181,38,riverbend_roofward,16,True
+447,32,summer_dry,roofward,forecast:roofward_archive:d32:r20,Fay,glasshouse heat surge,0.192993,38,roofward_archive,20,True
+448,33,summer_dry,archive_quarter,forecast:archive_signal:d33:r19,Nia,wind archive scatter,0.201862,39,archive_signal,20,True
+449,33,summer_dry,signal_ridge,forecast:signal_orchard:d33:r17,Ren,dusk ice,0.213944,39,signal_orchard,17,True
+450,33,summer_dry,orchard_fen,forecast:orchard_riverbend:d33:r19,Mara,fen mud,0.341439,39,orchard_riverbend,19,True
+451,33,summer_dry,central_exchange,forecast:central_repair_ring:d33:r19,Pax,crowded repair yard,0.318475,39,central_repair_ring,19,True
+452,33,summer_dry,riverbend,forecast:riverbend_roofward:d33:r16,Toma,river flood,0.30181,39,riverbend_roofward,16,True
+453,33,summer_dry,roofward,forecast:roofward_archive:d33:r20,Fay,glasshouse heat surge,0.192993,39,roofward_archive,20,True
+454,33,summer_dry,archive_quarter,forecast:archive_signal:d33:r20,Nia,wind archive scatter,0.201862,39,archive_signal,20,True
+455,33,summer_dry,signal_ridge,forecast:signal_orchard:d33:r17,Ren,dusk ice,0.300384,39,signal_orchard,18,True
+456,33,summer_dry,orchard_fen,forecast:orchard_riverbend:d33:r19,Mara,fen mud,0.341439,39,orchard_riverbend,19,True
+457,33,summer_dry,central_exchange,forecast:central_repair_ring:d33:r19,Pax,crowded repair yard,0.318475,39,central_repair_ring,19,True
+458,33,summer_dry,riverbend,forecast:riverbend_roofward:d33:r16,Toma,river flood,0.30181,39,riverbend_roofward,16,True
+459,33,summer_dry,roofward,forecast:roofward_archive:d33:r20,Fay,glasshouse heat surge,0.192993,39,roofward_archive,20,True
+460,33,summer_dry,archive_quarter,forecast:archive_signal:d33:r20,Nia,wind archive scatter,0.201862,39,archive_signal,20,True
+461,33,summer_dry,signal_ridge,forecast:signal_orchard:d33:r18,Ren,dusk ice,0.300384,39,signal_orchard,18,True
+462,34,summer_dry,orchard_fen,forecast:orchard_riverbend:d34:r19,Mara,fen mud,0.336083,40,orchard_riverbend,20,True
+463,34,summer_dry,central_exchange,forecast:central_repair_ring:d34:r19,Pax,crowded repair yard,0.318475,40,central_repair_ring,19,True
+464,34,summer_dry,riverbend,forecast:riverbend_roofward:d34:r16,Toma,river flood,0.30181,40,riverbend_roofward,16,True
+465,34,summer_dry,roofward,forecast:roofward_archive:d34:r20,Fay,glasshouse heat surge,0.192993,40,roofward_archive,20,True
+466,34,summer_dry,archive_quarter,forecast:archive_signal:d34:r20,Nia,wind archive scatter,0.201862,40,archive_signal,20,True
+467,34,summer_dry,signal_ridge,forecast:signal_orchard:d34:r18,Ren,dusk ice,0.300384,40,signal_orchard,18,True
+468,34,summer_dry,orchard_fen,forecast:orchard_riverbend:d34:r20,Mara,fen mud,0.336083,40,orchard_riverbend,20,True
+469,34,summer_dry,central_exchange,forecast:central_repair_ring:d34:r19,Pax,crowded repair yard,0.243253,40,central_repair_ring,20,True
+470,34,summer_dry,riverbend,forecast:riverbend_roofward:d34:r16,Toma,river flood,0.30181,40,riverbend_roofward,16,True
+471,34,summer_dry,roofward,forecast:roofward_archive:d34:r20,Fay,glasshouse heat surge,0.192993,40,roofward_archive,20,True
+472,34,summer_dry,archive_quarter,forecast:archive_signal:d34:r20,Nia,wind archive scatter,0.201862,40,archive_signal,20,True
+473,34,summer_dry,signal_ridge,forecast:signal_orchard:d34:r18,Ren,dusk ice,0.300384,40,signal_orchard,18,True
+474,34,summer_dry,orchard_fen,forecast:orchard_riverbend:d34:r20,Mara,fen mud,0.336083,40,orchard_riverbend,20,True
+475,34,summer_dry,central_exchange,forecast:central_repair_ring:d34:r20,Pax,crowded repair yard,0.243253,40,central_repair_ring,20,True
+476,35,summer_dry,roofward,forecast:roofward_archive:d35:r20,Fay,glasshouse heat surge,0.208118,41,roofward_archive,21,True
+477,35,summer_dry,archive_quarter,forecast:archive_signal:d35:r20,Nia,wind archive scatter,0.201862,41,archive_signal,20,True
+478,35,summer_dry,signal_ridge,forecast:signal_orchard:d35:r18,Ren,dusk ice,0.300384,41,signal_orchard,18,True
+479,35,summer_dry,orchard_fen,forecast:orchard_riverbend:d35:r20,Mara,fen mud,0.336083,41,orchard_riverbend,20,True
+480,35,summer_dry,central_exchange,forecast:central_repair_ring:d35:r20,Pax,crowded repair yard,0.243253,41,central_repair_ring,20,True
+481,35,summer_dry,riverbend,forecast:riverbend_roofward:d35:r16,Toma,river flood,0.30181,41,riverbend_roofward,16,True
+482,35,summer_dry,roofward,forecast:roofward_archive:d35:r21,Fay,glasshouse heat surge,0.208118,41,roofward_archive,21,True
+483,35,summer_dry,archive_quarter,forecast:archive_signal:d35:r20,Nia,wind archive scatter,0.340201,41,archive_signal,21,True
+484,35,summer_dry,signal_ridge,forecast:signal_orchard:d35:r18,Ren,dusk ice,0.300384,41,signal_orchard,18,True
+485,35,summer_dry,orchard_fen,forecast:orchard_riverbend:d35:r20,Mara,fen mud,0.336083,41,orchard_riverbend,20,True
+486,35,summer_dry,central_exchange,forecast:central_repair_ring:d35:r20,Pax,crowded repair yard,0.243253,41,central_repair_ring,20,True
+487,35,summer_dry,riverbend,forecast:riverbend_roofward:d35:r16,Toma,river flood,0.30181,41,riverbend_roofward,16,True
+488,35,summer_dry,roofward,forecast:roofward_archive:d35:r21,Fay,glasshouse heat surge,0.208118,41,roofward_archive,21,True
+489,35,summer_dry,archive_quarter,forecast:archive_signal:d35:r21,Nia,wind archive scatter,0.340201,41,archive_signal,21,True
+490,36,summer_dry,signal_ridge,forecast:signal_orchard:d36:r18,Ren,dusk ice,0.367788,42,signal_orchard,19,True
+491,36,summer_dry,orchard_fen,forecast:orchard_riverbend:d36:r20,Mara,fen mud,0.336083,42,orchard_riverbend,20,True
+492,36,summer_dry,central_exchange,forecast:central_repair_ring:d36:r20,Pax,crowded repair yard,0.243253,42,central_repair_ring,20,True
+493,36,summer_dry,riverbend,forecast:riverbend_roofward:d36:r16,Toma,river flood,0.454587,42,riverbend_roofward,17,True
+494,36,summer_dry,roofward,forecast:roofward_archive:d36:r21,Fay,glasshouse heat surge,0.208118,42,roofward_archive,21,True
+495,36,summer_dry,archive_quarter,forecast:archive_signal:d36:r21,Nia,wind archive scatter,0.340201,42,archive_signal,21,True
+496,36,summer_dry,signal_ridge,forecast:signal_orchard:d36:r19,Ren,dusk ice,0.367788,42,signal_orchard,19,True
+497,36,summer_dry,orchard_fen,forecast:orchard_riverbend:d36:r20,Mara,fen mud,0.291383,42,orchard_riverbend,21,True
+498,36,summer_dry,central_exchange,forecast:central_repair_ring:d36:r20,Pax,crowded repair yard,0.243253,42,central_repair_ring,20,True
+499,36,summer_dry,riverbend,forecast:riverbend_roofward:d36:r17,Toma,river flood,0.238164,42,riverbend_roofward,18,True
+500,36,summer_dry,roofward,forecast:roofward_archive:d36:r21,Fay,glasshouse heat surge,0.208118,42,roofward_archive,21,True
+501,36,summer_dry,archive_quarter,forecast:archive_signal:d36:r21,Nia,wind archive scatter,0.340201,42,archive_signal,21,True
+502,36,summer_dry,signal_ridge,forecast:signal_orchard:d36:r19,Ren,dusk ice,0.367788,42,signal_orchard,19,True
+503,36,summer_dry,orchard_fen,forecast:orchard_riverbend:d36:r21,Mara,fen mud,0.291383,42,orchard_riverbend,21,True
+504,37,autumn_wind,central_exchange,forecast:central_repair_ring:d37:r20,Pax,crowded repair yard,0.373391,44,central_repair_ring,21,True
+505,37,autumn_wind,riverbend,forecast:riverbend_roofward:d37:r18,Toma,river flood,0.238164,44,riverbend_roofward,18,True
+506,37,autumn_wind,roofward,forecast:roofward_archive:d37:r21,Fay,glasshouse heat surge,0.277153,44,roofward_archive,22,True
+507,37,autumn_wind,archive_quarter,forecast:archive_signal:d37:r21,Nia,wind archive scatter,0.340201,44,archive_signal,21,True
+508,37,autumn_wind,signal_ridge,forecast:signal_orchard:d37:r19,Ren,dusk ice,0.367788,44,signal_orchard,19,True
+509,37,autumn_wind,orchard_fen,forecast:orchard_riverbend:d37:r21,Mara,fen mud,0.291383,44,orchard_riverbend,21,True
+510,37,autumn_wind,central_exchange,forecast:central_repair_ring:d37:r21,Pax,crowded repair yard,0.373391,44,central_repair_ring,21,True
+511,37,autumn_wind,riverbend,forecast:riverbend_roofward:d37:r18,Toma,river flood,0.458366,44,riverbend_roofward,19,True
+512,37,autumn_wind,roofward,forecast:roofward_archive:d37:r22,Fay,glasshouse heat surge,0.426083,44,roofward_archive,23,True
+513,37,autumn_wind,archive_quarter,forecast:archive_signal:d37:r21,Nia,wind archive scatter,0.340201,44,archive_signal,21,True
+514,37,autumn_wind,signal_ridge,forecast:signal_orchard:d37:r19,Ren,dusk ice,0.367788,44,signal_orchard,19,True
+515,37,autumn_wind,orchard_fen,forecast:orchard_riverbend:d37:r21,Mara,fen mud,0.291383,44,orchard_riverbend,21,True
+516,37,autumn_wind,central_exchange,forecast:central_repair_ring:d37:r21,Pax,crowded repair yard,0.373391,44,central_repair_ring,21,True
+517,37,autumn_wind,riverbend,forecast:riverbend_roofward:d37:r19,Toma,river flood,0.458366,44,riverbend_roofward,19,True
+518,38,autumn_wind,roofward,forecast:roofward_archive:d38:r23,Fay,glasshouse heat surge,0.510983,45,roofward_archive,24,True
+519,38,autumn_wind,archive_quarter,forecast:archive_signal:d38:r21,Nia,wind archive scatter,0.357336,45,archive_signal,22,True
+520,38,autumn_wind,signal_ridge,forecast:signal_orchard:d38:r19,Ren,dusk ice,0.367788,45,signal_orchard,19,True
+521,38,autumn_wind,orchard_fen,forecast:orchard_riverbend:d38:r21,Mara,fen mud,0.291383,45,orchard_riverbend,21,True
+522,38,autumn_wind,central_exchange,forecast:central_repair_ring:d38:r21,Pax,crowded repair yard,0.373391,45,central_repair_ring,21,True
+523,38,autumn_wind,riverbend,forecast:riverbend_roofward:d38:r19,Toma,river flood,0.458366,45,riverbend_roofward,19,True
+524,38,autumn_wind,roofward,forecast:roofward_archive:d38:r24,Fay,glasshouse heat surge,0.510983,45,roofward_archive,24,True
+525,38,autumn_wind,archive_quarter,forecast:archive_signal:d38:r22,Nia,wind archive scatter,0.405334,45,archive_signal,23,True
+526,38,autumn_wind,signal_ridge,forecast:signal_orchard:d38:r19,Ren,dusk ice,0.367788,45,signal_orchard,19,True
+527,38,autumn_wind,orchard_fen,forecast:orchard_riverbend:d38:r21,Mara,fen mud,0.291383,45,orchard_riverbend,21,True
+528,38,autumn_wind,central_exchange,forecast:central_repair_ring:d38:r21,Pax,crowded repair yard,0.373391,45,central_repair_ring,21,True
+529,38,autumn_wind,riverbend,forecast:riverbend_roofward:d38:r19,Toma,river flood,0.458366,45,riverbend_roofward,19,True
+530,38,autumn_wind,roofward,forecast:roofward_archive:d38:r24,Fay,glasshouse heat surge,0.510983,45,roofward_archive,24,True
+531,38,autumn_wind,archive_quarter,forecast:archive_signal:d38:r23,Nia,wind archive scatter,0.461974,45,archive_signal,24,True
+532,39,autumn_wind,signal_ridge,forecast:signal_orchard:d39:r19,Ren,dusk ice,0.414735,46,signal_orchard,20,True
+533,39,autumn_wind,orchard_fen,forecast:orchard_riverbend:d39:r21,Mara,fen mud,0.291383,46,orchard_riverbend,21,True
+534,39,autumn_wind,central_exchange,forecast:central_repair_ring:d39:r21,Pax,crowded repair yard,0.373391,46,central_repair_ring,21,True
+535,39,autumn_wind,riverbend,forecast:riverbend_roofward:d39:r19,Toma,river flood,0.458366,46,riverbend_roofward,19,True
+536,39,autumn_wind,roofward,forecast:roofward_archive:d39:r24,Fay,glasshouse heat surge,0.510983,46,roofward_archive,24,True
+537,39,autumn_wind,archive_quarter,forecast:archive_signal:d39:r24,Nia,wind archive scatter,0.461974,46,archive_signal,24,True
+538,39,autumn_wind,signal_ridge,forecast:signal_orchard:d39:r20,Ren,dusk ice,0.47108,46,signal_orchard,21,True
+539,39,autumn_wind,orchard_fen,forecast:orchard_riverbend:d39:r21,Mara,fen mud,0.300467,46,orchard_riverbend,22,True
+540,39,autumn_wind,central_exchange,forecast:central_repair_ring:d39:r21,Pax,crowded repair yard,0.373391,46,central_repair_ring,21,True
+541,39,autumn_wind,riverbend,forecast:riverbend_roofward:d39:r19,Toma,river flood,0.458366,46,riverbend_roofward,19,True
+542,39,autumn_wind,roofward,forecast:roofward_archive:d39:r24,Fay,glasshouse heat surge,0.510983,46,roofward_archive,24,True
+543,39,autumn_wind,archive_quarter,forecast:archive_signal:d39:r24,Nia,wind archive scatter,0.461974,46,archive_signal,24,True
+544,39,autumn_wind,signal_ridge,forecast:signal_orchard:d39:r21,Ren,dusk ice,0.613346,46,signal_orchard,22,True
+545,39,autumn_wind,orchard_fen,forecast:orchard_riverbend:d39:r22,Mara,fen mud,0.300467,46,orchard_riverbend,22,True
+546,40,autumn_wind,central_exchange,forecast:central_repair_ring:d40:r21,Pax,crowded repair yard,0.323429,47,central_repair_ring,22,True
+547,40,autumn_wind,riverbend,forecast:riverbend_roofward:d40:r19,Toma,river flood,0.458366,47,riverbend_roofward,19,True
+548,40,autumn_wind,roofward,forecast:roofward_archive:d40:r24,Fay,glasshouse heat surge,0.510983,47,roofward_archive,24,True
+549,40,autumn_wind,archive_quarter,forecast:archive_signal:d40:r24,Nia,wind archive scatter,0.461974,47,archive_signal,24,True
+550,40,autumn_wind,signal_ridge,forecast:signal_orchard:d40:r22,Ren,dusk ice,0.613346,47,signal_orchard,22,True
+551,40,autumn_wind,orchard_fen,forecast:orchard_riverbend:d40:r22,Mara,fen mud,0.475811,47,orchard_riverbend,23,True
+552,40,autumn_wind,central_exchange,forecast:central_repair_ring:d40:r22,Pax,crowded repair yard,0.323429,47,central_repair_ring,22,True
+553,40,autumn_wind,riverbend,forecast:riverbend_roofward:d40:r19,Toma,river flood,0.433622,47,riverbend_roofward,20,True
+554,40,autumn_wind,roofward,forecast:roofward_archive:d40:r24,Fay,glasshouse heat surge,0.510983,47,roofward_archive,24,True
+555,40,autumn_wind,archive_quarter,forecast:archive_signal:d40:r24,Nia,wind archive scatter,0.461974,47,archive_signal,24,True
+556,40,autumn_wind,signal_ridge,forecast:signal_orchard:d40:r22,Ren,dusk ice,0.613346,47,signal_orchard,22,True
+557,40,autumn_wind,orchard_fen,forecast:orchard_riverbend:d40:r23,Mara,fen mud,0.352107,47,orchard_riverbend,24,True
+558,40,autumn_wind,central_exchange,forecast:central_repair_ring:d40:r22,Pax,crowded repair yard,0.323429,47,central_repair_ring,22,True
+559,40,autumn_wind,riverbend,forecast:riverbend_roofward:d40:r20,Toma,river flood,0.433622,47,riverbend_roofward,20,True
+560,41,autumn_wind,roofward,forecast:roofward_archive:d41:r24,Fay,glasshouse heat surge,0.448355,48,roofward_archive,25,True
+561,41,autumn_wind,archive_quarter,forecast:archive_signal:d41:r24,Nia,wind archive scatter,0.461974,48,archive_signal,24,True
+562,41,autumn_wind,signal_ridge,forecast:signal_orchard:d41:r22,Ren,dusk ice,0.613346,48,signal_orchard,22,True
+563,41,autumn_wind,orchard_fen,forecast:orchard_riverbend:d41:r24,Mara,fen mud,0.352107,48,orchard_riverbend,24,True
+564,41,autumn_wind,central_exchange,forecast:central_repair_ring:d41:r22,Pax,crowded repair yard,0.30944,48,central_repair_ring,23,True
+565,41,autumn_wind,riverbend,forecast:riverbend_roofward:d41:r20,Toma,river flood,0.433622,48,riverbend_roofward,20,True
+566,41,autumn_wind,roofward,forecast:roofward_archive:d41:r25,Fay,glasshouse heat surge,0.448355,48,roofward_archive,25,True
+567,41,autumn_wind,archive_quarter,forecast:archive_signal:d41:r24,Nia,wind archive scatter,0.348233,48,archive_signal,25,True
+568,41,autumn_wind,signal_ridge,forecast:signal_orchard:d41:r22,Ren,dusk ice,0.613346,48,signal_orchard,22,True
+569,41,autumn_wind,orchard_fen,forecast:orchard_riverbend:d41:r24,Mara,fen mud,0.352107,48,orchard_riverbend,24,True
+570,41,autumn_wind,central_exchange,forecast:central_repair_ring:d41:r23,Pax,crowded repair yard,0.348723,48,central_repair_ring,24,True
+571,41,autumn_wind,riverbend,forecast:riverbend_roofward:d41:r20,Toma,river flood,0.433622,48,riverbend_roofward,20,True
+572,41,autumn_wind,roofward,forecast:roofward_archive:d41:r25,Fay,glasshouse heat surge,0.448355,48,roofward_archive,25,True
+573,41,autumn_wind,archive_quarter,forecast:archive_signal:d41:r25,Nia,wind archive scatter,0.348233,48,archive_signal,25,True
+574,42,autumn_wind,orchard_fen,forecast:orchard_riverbend:d42:r24,Mara,fen mud,0.362465,49,orchard_riverbend,25,True
+575,42,autumn_wind,central_exchange,forecast:central_repair_ring:d42:r24,Pax,crowded repair yard,0.348723,49,central_repair_ring,24,True
+576,42,autumn_wind,riverbend,forecast:riverbend_roofward:d42:r20,Toma,river flood,0.433622,49,riverbend_roofward,20,True
+577,42,autumn_wind,roofward,forecast:roofward_archive:d42:r25,Lio,glasshouse heat surge,0.448355,49,roofward_archive,25,True
+578,42,autumn_wind,archive_quarter,forecast:archive_signal:d42:r25,Sera,wind archive scatter,0.348233,49,archive_signal,25,True
+579,42,autumn_wind,signal_ridge,forecast:signal_orchard:d42:r22,Ren,dusk ice,0.613346,49,signal_orchard,22,True
+580,42,autumn_wind,orchard_fen,forecast:orchard_riverbend:d42:r25,Mara,fen mud,0.362465,49,orchard_riverbend,25,True
+581,42,autumn_wind,central_exchange,forecast:central_repair_ring:d42:r24,Pax,crowded repair yard,0.489322,49,central_repair_ring,25,True
+582,42,autumn_wind,riverbend,forecast:riverbend_roofward:d42:r20,Toma,river flood,0.433622,49,riverbend_roofward,20,True
+583,42,autumn_wind,roofward,forecast:roofward_archive:d42:r25,Lio,glasshouse heat surge,0.448355,49,roofward_archive,25,True
+584,42,autumn_wind,archive_quarter,forecast:archive_signal:d42:r25,Sera,wind archive scatter,0.348233,49,archive_signal,25,True
+585,42,autumn_wind,signal_ridge,forecast:signal_orchard:d42:r22,Ren,dusk ice,0.613346,49,signal_orchard,22,True
+586,42,autumn_wind,orchard_fen,forecast:orchard_riverbend:d42:r25,Mara,fen mud,0.362465,49,orchard_riverbend,25,True
+587,42,autumn_wind,central_exchange,forecast:central_repair_ring:d42:r25,Pax,crowded repair yard,0.489322,49,central_repair_ring,25,True
+588,43,autumn_wind,riverbend,forecast:riverbend_roofward:d43:r20,Toma,river flood,0.469894,50,riverbend_roofward,21,True
+589,43,autumn_wind,roofward,forecast:roofward_archive:d43:r25,Lio,glasshouse heat surge,0.448355,50,roofward_archive,25,True
+590,43,autumn_wind,archive_quarter,forecast:archive_signal:d43:r25,Sera,wind archive scatter,0.348233,50,archive_signal,25,True
+591,43,autumn_wind,signal_ridge,forecast:signal_orchard:d43:r22,Ren,dusk ice,0.613346,50,signal_orchard,22,True
+592,43,autumn_wind,orchard_fen,forecast:orchard_riverbend:d43:r25,Mara,fen mud,0.362465,50,orchard_riverbend,25,True
+593,43,autumn_wind,central_exchange,forecast:central_repair_ring:d43:r25,Pax,crowded repair yard,0.489322,50,central_repair_ring,25,True
+594,43,autumn_wind,riverbend,forecast:riverbend_roofward:d43:r21,Toma,river flood,0.469894,50,riverbend_roofward,21,True
+595,43,autumn_wind,roofward,forecast:roofward_archive:d43:r25,Lio,glasshouse heat surge,0.387619,50,roofward_archive,26,True
+596,43,autumn_wind,archive_quarter,forecast:archive_signal:d43:r25,Sera,wind archive scatter,0.348233,50,archive_signal,25,True
+597,43,autumn_wind,signal_ridge,forecast:signal_orchard:d43:r22,Ren,dusk ice,0.613346,50,signal_orchard,22,True
+598,43,autumn_wind,orchard_fen,forecast:orchard_riverbend:d43:r25,Mara,fen mud,0.362465,50,orchard_riverbend,25,True
+599,43,autumn_wind,central_exchange,forecast:central_repair_ring:d43:r25,Pax,crowded repair yard,0.489322,50,central_repair_ring,25,True
+600,43,autumn_wind,riverbend,forecast:riverbend_roofward:d43:r21,Toma,river flood,0.469894,50,riverbend_roofward,21,True
+601,43,autumn_wind,roofward,forecast:roofward_archive:d43:r26,Lio,glasshouse heat surge,0.387619,50,roofward_archive,26,True
+602,44,autumn_wind,archive_quarter,forecast:archive_signal:d44:r25,Sera,wind archive scatter,0.36449,51,archive_signal,26,True
+603,44,autumn_wind,signal_ridge,forecast:signal_orchard:d44:r22,Ren,dusk ice,0.613346,51,signal_orchard,22,True
+604,44,autumn_wind,orchard_fen,forecast:orchard_riverbend:d44:r25,Mara,fen mud,0.362465,51,orchard_riverbend,25,True
+605,44,autumn_wind,central_exchange,forecast:central_repair_ring:d44:r25,Pax,crowded repair yard,0.489322,51,central_repair_ring,25,True
+606,44,autumn_wind,riverbend,forecast:riverbend_roofward:d44:r21,Toma,river flood,0.469894,51,riverbend_roofward,21,True
+607,44,autumn_wind,roofward,forecast:roofward_archive:d44:r26,Lio,glasshouse heat surge,0.387619,51,roofward_archive,26,True
+608,44,autumn_wind,archive_quarter,forecast:archive_signal:d44:r26,Sera,wind archive scatter,0.36449,51,archive_signal,26,True
+609,44,autumn_wind,signal_ridge,forecast:signal_orchard:d44:r22,Ren,dusk ice,0.563417,51,signal_orchard,23,True
+610,44,autumn_wind,orchard_fen,forecast:orchard_riverbend:d44:r25,Mara,fen mud,0.362465,51,orchard_riverbend,25,True
+611,44,autumn_wind,central_exchange,forecast:central_repair_ring:d44:r25,Pax,crowded repair yard,0.489322,51,central_repair_ring,25,True
+612,44,autumn_wind,riverbend,forecast:riverbend_roofward:d44:r21,Toma,river flood,0.469894,51,riverbend_roofward,21,True
+613,44,autumn_wind,roofward,forecast:roofward_archive:d44:r26,Lio,glasshouse heat surge,0.387619,51,roofward_archive,26,True
+614,44,autumn_wind,archive_quarter,forecast:archive_signal:d44:r26,Sera,wind archive scatter,0.36449,51,archive_signal,26,True
+615,44,autumn_wind,signal_ridge,forecast:signal_orchard:d44:r23,Ren,dusk ice,0.563417,51,signal_orchard,23,True
+616,45,autumn_wind,orchard_fen,forecast:orchard_riverbend:d45:r25,Mara,fen mud,0.49317,52,orchard_riverbend,26,True
+617,45,autumn_wind,central_exchange,forecast:central_repair_ring:d45:r25,Pax,crowded repair yard,0.489322,52,central_repair_ring,25,True
+618,45,autumn_wind,riverbend,forecast:riverbend_roofward:d45:r21,Toma,river flood,0.43685,52,riverbend_roofward,22,True
+619,45,autumn_wind,roofward,forecast:roofward_archive:d45:r26,Lio,glasshouse heat surge,0.387619,52,roofward_archive,26,True
+620,45,autumn_wind,archive_quarter,forecast:archive_signal:d45:r26,Sera,wind archive scatter,0.36449,52,archive_signal,26,True
+621,45,autumn_wind,signal_ridge,forecast:signal_orchard:d45:r23,Ren,dusk ice,0.563417,52,signal_orchard,23,True
+622,45,autumn_wind,orchard_fen,forecast:orchard_riverbend:d45:r26,Mara,fen mud,0.49317,52,orchard_riverbend,26,True
+623,45,autumn_wind,central_exchange,forecast:central_repair_ring:d45:r25,Pax,crowded repair yard,0.44229,52,central_repair_ring,26,True
+624,45,autumn_wind,riverbend,forecast:riverbend_roofward:d45:r22,Toma,river flood,0.557198,52,riverbend_roofward,23,True
+625,45,autumn_wind,roofward,forecast:roofward_archive:d45:r26,Lio,glasshouse heat surge,0.387619,52,roofward_archive,26,True
+626,45,autumn_wind,archive_quarter,forecast:archive_signal:d45:r26,Sera,wind archive scatter,0.36449,52,archive_signal,26,True
+627,45,autumn_wind,signal_ridge,forecast:signal_orchard:d45:r23,Ren,dusk ice,0.563417,52,signal_orchard,23,True
+628,45,autumn_wind,orchard_fen,forecast:orchard_riverbend:d45:r26,Mara,fen mud,0.49317,52,orchard_riverbend,26,True
+629,45,autumn_wind,central_exchange,forecast:central_repair_ring:d45:r26,Pax,crowded repair yard,0.44229,52,central_repair_ring,26,True
+630,46,autumn_wind,riverbend,forecast:riverbend_roofward:d46:r23,Toma,river flood,0.418095,53,riverbend_roofward,24,True
+631,46,autumn_wind,roofward,forecast:roofward_archive:d46:r26,Lio,glasshouse heat surge,0.457013,53,roofward_archive,27,True
+632,46,autumn_wind,archive_quarter,forecast:archive_signal:d46:r26,Sera,wind archive scatter,0.36449,53,archive_signal,26,True
+633,46,autumn_wind,signal_ridge,forecast:signal_orchard:d46:r23,Ren,dusk ice,0.563417,53,signal_orchard,23,True
+634,46,autumn_wind,orchard_fen,forecast:orchard_riverbend:d46:r26,Mara,fen mud,0.49317,53,orchard_riverbend,26,True
+635,46,autumn_wind,central_exchange,forecast:central_repair_ring:d46:r26,Pax,crowded repair yard,0.44229,53,central_repair_ring,26,True
+636,46,autumn_wind,riverbend,forecast:riverbend_roofward:d46:r24,Toma,river flood,0.418095,53,riverbend_roofward,24,True
+637,46,autumn_wind,roofward,forecast:roofward_archive:d46:r27,Lio,glasshouse heat surge,0.519644,53,roofward_archive,28,True
+638,46,autumn_wind,archive_quarter,forecast:archive_signal:d46:r26,Sera,wind archive scatter,0.36449,53,archive_signal,26,True
+639,46,autumn_wind,signal_ridge,forecast:signal_orchard:d46:r23,Ren,dusk ice,0.563417,53,signal_orchard,23,True
+640,46,autumn_wind,orchard_fen,forecast:orchard_riverbend:d46:r26,Mara,fen mud,0.49317,53,orchard_riverbend,26,True
+641,46,autumn_wind,central_exchange,forecast:central_repair_ring:d46:r26,Pax,crowded repair yard,0.44229,53,central_repair_ring,26,True
+642,46,autumn_wind,riverbend,forecast:riverbend_roofward:d46:r24,Toma,river flood,0.418095,53,riverbend_roofward,24,True
+643,46,autumn_wind,roofward,forecast:roofward_archive:d46:r28,Lio,glasshouse heat surge,0.36438,53,roofward_archive,29,True
+644,47,autumn_wind,archive_quarter,forecast:archive_signal:d47:r26,Sera,wind archive scatter,0.496643,54,archive_signal,27,True
+645,47,autumn_wind,signal_ridge,forecast:signal_orchard:d47:r23,Ren,dusk ice,0.563417,54,signal_orchard,23,True
+646,47,autumn_wind,orchard_fen,forecast:orchard_riverbend:d47:r26,Mara,fen mud,0.49317,54,orchard_riverbend,26,True
+647,47,autumn_wind,central_exchange,forecast:central_repair_ring:d47:r26,Pax,crowded repair yard,0.44229,54,central_repair_ring,26,True
+648,47,autumn_wind,riverbend,forecast:riverbend_roofward:d47:r24,Toma,river flood,0.418095,54,riverbend_roofward,24,True
+649,47,autumn_wind,roofward,forecast:roofward_archive:d47:r29,Lio,glasshouse heat surge,0.36438,54,roofward_archive,29,True
+650,47,autumn_wind,archive_quarter,forecast:archive_signal:d47:r27,Sera,wind archive scatter,0.35794,54,archive_signal,28,True
+651,47,autumn_wind,signal_ridge,forecast:signal_orchard:d47:r23,Ren,dusk ice,0.463037,54,signal_orchard,24,True
+652,47,autumn_wind,orchard_fen,forecast:orchard_riverbend:d47:r26,Mara,fen mud,0.49317,54,orchard_riverbend,26,True
+653,47,autumn_wind,central_exchange,forecast:central_repair_ring:d47:r26,Pax,crowded repair yard,0.44229,54,central_repair_ring,26,True
+654,47,autumn_wind,riverbend,forecast:riverbend_roofward:d47:r24,Toma,river flood,0.418095,54,riverbend_roofward,24,True
+655,47,autumn_wind,roofward,forecast:roofward_archive:d47:r29,Lio,glasshouse heat surge,0.36438,54,roofward_archive,29,True
+656,47,autumn_wind,archive_quarter,forecast:archive_signal:d47:r28,Sera,wind archive scatter,0.448703,54,archive_signal,29,True
+657,47,autumn_wind,signal_ridge,forecast:signal_orchard:d47:r24,Ren,dusk ice,0.463037,54,signal_orchard,24,True
+658,48,autumn_wind,orchard_fen,forecast:orchard_riverbend:d48:r26,Mara,fen mud,0.443368,55,orchard_riverbend,27,True
+659,48,autumn_wind,central_exchange,forecast:central_repair_ring:d48:r26,Pax,crowded repair yard,0.44229,55,central_repair_ring,26,True
+660,48,autumn_wind,riverbend,forecast:riverbend_roofward:d48:r24,Toma,river flood,0.418095,55,riverbend_roofward,24,True
+661,48,autumn_wind,roofward,forecast:roofward_archive:d48:r29,Lio,glasshouse heat surge,0.36438,55,roofward_archive,29,True
+662,48,autumn_wind,archive_quarter,forecast:archive_signal:d48:r29,Sera,wind archive scatter,0.448703,55,archive_signal,29,True
+663,48,autumn_wind,signal_ridge,forecast:signal_orchard:d48:r24,Ren,dusk ice,0.39173,55,signal_orchard,25,True
+664,48,autumn_wind,orchard_fen,forecast:orchard_riverbend:d48:r27,Mara,fen mud,0.443368,55,orchard_riverbend,27,True
+665,48,autumn_wind,central_exchange,forecast:central_repair_ring:d48:r26,Pax,crowded repair yard,0.342721,55,central_repair_ring,27,True
+666,48,autumn_wind,riverbend,forecast:riverbend_roofward:d48:r24,Toma,river flood,0.418095,55,riverbend_roofward,24,True
+667,48,autumn_wind,roofward,forecast:roofward_archive:d48:r29,Lio,glasshouse heat surge,0.36438,55,roofward_archive,29,True
+668,48,autumn_wind,archive_quarter,forecast:archive_signal:d48:r29,Sera,wind archive scatter,0.448703,55,archive_signal,29,True
+669,48,autumn_wind,signal_ridge,forecast:signal_orchard:d48:r25,Ren,dusk ice,0.414964,55,signal_orchard,26,True
+670,48,autumn_wind,orchard_fen,forecast:orchard_riverbend:d48:r27,Mara,fen mud,0.443368,55,orchard_riverbend,27,True
+671,48,autumn_wind,central_exchange,forecast:central_repair_ring:d48:r27,Pax,crowded repair yard,0.342721,55,central_repair_ring,27,True
+672,49,autumn_wind,roofward,forecast:roofward_archive:d49:r29,Lio,glasshouse heat surge,0.320906,56,roofward_archive,30,True
+673,49,autumn_wind,archive_quarter,forecast:archive_signal:d49:r29,Sera,wind archive scatter,0.448703,56,archive_signal,29,True
+674,49,autumn_wind,signal_ridge,forecast:signal_orchard:d49:r26,Ren,dusk ice,0.414964,56,signal_orchard,26,True
+675,49,autumn_wind,orchard_fen,forecast:orchard_riverbend:d49:r27,Mara,fen mud,0.472623,56,orchard_riverbend,28,True
+676,49,autumn_wind,central_exchange,forecast:central_repair_ring:d49:r27,Pax,crowded repair yard,0.342721,56,central_repair_ring,27,True
+677,49,autumn_wind,riverbend,forecast:riverbend_roofward:d49:r24,Toma,river flood,0.418095,56,riverbend_roofward,24,True
+678,49,autumn_wind,roofward,forecast:roofward_archive:d49:r30,Lio,glasshouse heat surge,0.320906,56,roofward_archive,30,True
+679,49,autumn_wind,archive_quarter,forecast:archive_signal:d49:r29,Sera,wind archive scatter,0.474117,56,archive_signal,30,True
+680,49,autumn_wind,signal_ridge,forecast:signal_orchard:d49:r26,Ren,dusk ice,0.414964,56,signal_orchard,26,True
+681,49,autumn_wind,orchard_fen,forecast:orchard_riverbend:d49:r28,Mara,fen mud,0.437614,56,orchard_riverbend,29,True
+682,49,autumn_wind,central_exchange,forecast:central_repair_ring:d49:r27,Pax,crowded repair yard,0.342721,56,central_repair_ring,27,True
+683,49,autumn_wind,riverbend,forecast:riverbend_roofward:d49:r24,Toma,river flood,0.418095,56,riverbend_roofward,24,True
+684,49,autumn_wind,roofward,forecast:roofward_archive:d49:r30,Lio,glasshouse heat surge,0.320906,56,roofward_archive,30,True
+685,49,autumn_wind,archive_quarter,forecast:archive_signal:d49:r30,Sera,wind archive scatter,0.474117,56,archive_signal,30,True
+686,50,autumn_wind,signal_ridge,forecast:signal_orchard:d50:r26,Ren,dusk ice,0.46467,57,signal_orchard,27,True
+687,50,autumn_wind,orchard_fen,forecast:orchard_riverbend:d50:r29,Mara,fen mud,0.437614,57,orchard_riverbend,29,True
+688,50,autumn_wind,central_exchange,forecast:central_repair_ring:d50:r27,Pax,crowded repair yard,0.401242,57,central_repair_ring,28,True
+689,50,autumn_wind,riverbend,forecast:riverbend_roofward:d50:r24,Toma,river flood,0.418095,57,riverbend_roofward,24,True
+690,50,autumn_wind,roofward,forecast:roofward_archive:d50:r30,Lio,glasshouse heat surge,0.320906,57,roofward_archive,30,True
+691,50,autumn_wind,archive_quarter,forecast:archive_signal:d50:r30,Sera,wind archive scatter,0.474117,57,archive_signal,30,True
+692,50,autumn_wind,signal_ridge,forecast:signal_orchard:d50:r27,Ren,dusk ice,0.46467,57,signal_orchard,27,True
+693,50,autumn_wind,orchard_fen,forecast:orchard_riverbend:d50:r29,Mara,fen mud,0.384612,57,orchard_riverbend,30,True
+694,50,autumn_wind,central_exchange,forecast:central_repair_ring:d50:r28,Pax,crowded repair yard,0.547228,57,central_repair_ring,29,True
+695,50,autumn_wind,riverbend,forecast:riverbend_roofward:d50:r24,Toma,river flood,0.418095,57,riverbend_roofward,24,True
+696,50,autumn_wind,roofward,forecast:roofward_archive:d50:r30,Lio,glasshouse heat surge,0.320906,57,roofward_archive,30,True
+697,50,autumn_wind,archive_quarter,forecast:archive_signal:d50:r30,Sera,wind archive scatter,0.474117,57,archive_signal,30,True
+698,50,autumn_wind,signal_ridge,forecast:signal_orchard:d50:r27,Ren,dusk ice,0.46467,57,signal_orchard,27,True
+699,50,autumn_wind,orchard_fen,forecast:orchard_riverbend:d50:r30,Mara,fen mud,0.384612,57,orchard_riverbend,30,True
+700,51,autumn_wind,central_exchange,forecast:central_repair_ring:d51:r29,Pax,crowded repair yard,0.415304,58,central_repair_ring,30,True
+701,51,autumn_wind,riverbend,forecast:riverbend_roofward:d51:r24,Toma,river flood,0.418095,58,riverbend_roofward,24,True
+702,51,autumn_wind,roofward,forecast:roofward_archive:d51:r30,Lio,glasshouse heat surge,0.320906,58,roofward_archive,30,True
+703,51,autumn_wind,archive_quarter,forecast:archive_signal:d51:r30,Sera,wind archive scatter,0.474117,58,archive_signal,30,True
+704,51,autumn_wind,signal_ridge,forecast:signal_orchard:d51:r27,Ren,dusk ice,0.46467,58,signal_orchard,27,True
+705,51,autumn_wind,orchard_fen,forecast:orchard_riverbend:d51:r30,Mara,fen mud,0.384612,58,orchard_riverbend,30,True
+706,51,autumn_wind,central_exchange,forecast:central_repair_ring:d51:r30,Pax,crowded repair yard,0.415304,58,central_repair_ring,30,True
+707,51,autumn_wind,riverbend,forecast:riverbend_roofward:d51:r24,Toma,river flood,0.465547,58,riverbend_roofward,25,True
+708,51,autumn_wind,roofward,forecast:roofward_archive:d51:r30,Lio,glasshouse heat surge,0.320906,58,roofward_archive,30,True
+709,51,autumn_wind,archive_quarter,forecast:archive_signal:d51:r30,Sera,wind archive scatter,0.474117,58,archive_signal,30,True
+710,51,autumn_wind,signal_ridge,forecast:signal_orchard:d51:r27,Ren,dusk ice,0.46467,58,signal_orchard,27,True
+711,51,autumn_wind,orchard_fen,forecast:orchard_riverbend:d51:r30,Mara,fen mud,0.384612,58,orchard_riverbend,30,True
+712,51,autumn_wind,central_exchange,forecast:central_repair_ring:d51:r30,Pax,crowded repair yard,0.415304,58,central_repair_ring,30,True
+713,51,autumn_wind,riverbend,forecast:riverbend_roofward:d51:r25,Toma,river flood,0.465547,58,riverbend_roofward,25,True
+714,52,autumn_wind,roofward,forecast:roofward_archive:d52:r30,Lio,glasshouse heat surge,0.438334,59,roofward_archive,31,True
+715,52,autumn_wind,archive_quarter,forecast:archive_signal:d52:r30,Sera,wind archive scatter,0.474117,59,archive_signal,30,True
+716,52,autumn_wind,signal_ridge,forecast:signal_orchard:d52:r27,Ren,dusk ice,0.46467,59,signal_orchard,27,True
+717,52,autumn_wind,orchard_fen,forecast:orchard_riverbend:d52:r30,Mara,fen mud,0.384612,59,orchard_riverbend,30,True
+718,52,autumn_wind,central_exchange,forecast:central_repair_ring:d52:r30,Pax,crowded repair yard,0.415304,59,central_repair_ring,30,True
+719,52,autumn_wind,riverbend,forecast:riverbend_roofward:d52:r25,Toma,river flood,0.465547,59,riverbend_roofward,25,True
+720,52,autumn_wind,roofward,forecast:roofward_archive:d52:r31,Lio,glasshouse heat surge,0.438334,59,roofward_archive,31,True
+721,52,autumn_wind,archive_quarter,forecast:archive_signal:d52:r30,Sera,wind archive scatter,0.394833,59,archive_signal,31,True
+722,52,autumn_wind,signal_ridge,forecast:signal_orchard:d52:r27,Ren,dusk ice,0.46467,59,signal_orchard,27,True
+723,52,autumn_wind,orchard_fen,forecast:orchard_riverbend:d52:r30,Mara,fen mud,0.384612,59,orchard_riverbend,30,True
+724,52,autumn_wind,central_exchange,forecast:central_repair_ring:d52:r30,Pax,crowded repair yard,0.415304,59,central_repair_ring,30,True
+725,52,autumn_wind,riverbend,forecast:riverbend_roofward:d52:r25,Toma,river flood,0.465547,59,riverbend_roofward,25,True
+726,52,autumn_wind,roofward,forecast:roofward_archive:d52:r31,Lio,glasshouse heat surge,0.438334,59,roofward_archive,31,True
+727,52,autumn_wind,archive_quarter,forecast:archive_signal:d52:r31,Sera,wind archive scatter,0.394833,59,archive_signal,31,True
+728,53,autumn_wind,signal_ridge,forecast:signal_orchard:d53:r27,Ren,dusk ice,0.392188,60,signal_orchard,28,True
+729,53,autumn_wind,orchard_fen,forecast:orchard_riverbend:d53:r30,Mara,fen mud,0.384612,60,orchard_riverbend,30,True
+730,53,autumn_wind,central_exchange,forecast:central_repair_ring:d53:r30,Pax,crowded repair yard,0.415304,60,central_repair_ring,30,True
+731,53,autumn_wind,riverbend,forecast:riverbend_roofward:d53:r25,Toma,river flood,0.465547,60,riverbend_roofward,25,True
+732,53,autumn_wind,roofward,forecast:roofward_archive:d53:r31,Lio,glasshouse heat surge,0.438334,60,roofward_archive,31,True
+733,53,autumn_wind,archive_quarter,forecast:archive_signal:d53:r31,Sera,wind archive scatter,0.394833,60,archive_signal,31,True
+734,53,autumn_wind,signal_ridge,forecast:signal_orchard:d53:r28,Ren,dusk ice,0.392188,60,signal_orchard,28,True
+735,53,autumn_wind,orchard_fen,forecast:orchard_riverbend:d53:r30,Mara,fen mud,0.499371,60,orchard_riverbend,31,True
+736,53,autumn_wind,central_exchange,forecast:central_repair_ring:d53:r30,Pax,crowded repair yard,0.415304,60,central_repair_ring,30,True
+737,53,autumn_wind,riverbend,forecast:riverbend_roofward:d53:r25,Toma,river flood,0.465547,60,riverbend_roofward,25,True
+738,53,autumn_wind,roofward,forecast:roofward_archive:d53:r31,Lio,glasshouse heat surge,0.438334,60,roofward_archive,31,True
+739,53,autumn_wind,archive_quarter,forecast:archive_signal:d53:r31,Sera,wind archive scatter,0.394833,60,archive_signal,31,True
+740,53,autumn_wind,signal_ridge,forecast:signal_orchard:d53:r28,Ren,dusk ice,0.392188,60,signal_orchard,28,True
+741,53,autumn_wind,orchard_fen,forecast:orchard_riverbend:d53:r31,Mara,fen mud,0.499371,60,orchard_riverbend,31,True
+742,54,autumn_wind,central_exchange,forecast:central_repair_ring:d54:r30,Pax,crowded repair yard,0.507965,61,central_repair_ring,31,True
+743,54,autumn_wind,riverbend,forecast:riverbend_roofward:d54:r25,Toma,river flood,0.349233,61,riverbend_roofward,26,True
+744,54,autumn_wind,roofward,forecast:roofward_archive:d54:r31,Lio,glasshouse heat surge,0.438334,61,roofward_archive,31,True
+745,54,autumn_wind,archive_quarter,forecast:archive_signal:d54:r31,Sera,wind archive scatter,0.394833,61,archive_signal,31,True
+746,54,autumn_wind,signal_ridge,forecast:signal_orchard:d54:r28,Ren,dusk ice,0.392188,61,signal_orchard,28,True
+747,54,autumn_wind,orchard_fen,forecast:orchard_riverbend:d54:r31,Mara,fen mud,0.499371,61,orchard_riverbend,31,True
+748,54,autumn_wind,central_exchange,forecast:central_repair_ring:d54:r31,Pax,crowded repair yard,0.507965,61,central_repair_ring,31,True
+749,54,autumn_wind,riverbend,forecast:riverbend_roofward:d54:r26,Toma,river flood,0.359865,61,riverbend_roofward,27,True
+750,54,autumn_wind,roofward,forecast:roofward_archive:d54:r31,Lio,glasshouse heat surge,0.438334,61,roofward_archive,31,True
+751,54,autumn_wind,archive_quarter,forecast:archive_signal:d54:r31,Sera,wind archive scatter,0.394833,61,archive_signal,31,True
+752,54,autumn_wind,signal_ridge,forecast:signal_orchard:d54:r28,Ren,dusk ice,0.392188,61,signal_orchard,28,True
+753,54,autumn_wind,orchard_fen,forecast:orchard_riverbend:d54:r31,Mara,fen mud,0.499371,61,orchard_riverbend,31,True
+754,54,autumn_wind,central_exchange,forecast:central_repair_ring:d54:r31,Pax,crowded repair yard,0.507965,61,central_repair_ring,31,True
+755,54,autumn_wind,riverbend,forecast:riverbend_roofward:d54:r27,Toma,river flood,0.406042,61,riverbend_roofward,28,True
+756,55,winter_cold,roofward,forecast:roofward_archive:d55:r31,Lio,glasshouse heat surge,0.471214,63,roofward_archive,32,True
+757,55,winter_cold,archive_quarter,forecast:archive_signal:d55:r31,Sera,wind archive scatter,0.394833,63,archive_signal,31,True
+758,55,winter_cold,signal_ridge,forecast:signal_orchard:d55:r28,Ren,dusk ice,0.392188,63,signal_orchard,28,True
+759,55,winter_cold,orchard_fen,forecast:orchard_riverbend:d55:r31,Mara,fen mud,0.499371,63,orchard_riverbend,31,True
+760,55,winter_cold,central_exchange,forecast:central_repair_ring:d55:r31,Pax,crowded repair yard,0.507965,63,central_repair_ring,31,True
+761,55,winter_cold,riverbend,forecast:riverbend_roofward:d55:r28,Toma,river flood,0.406042,63,riverbend_roofward,28,True
+762,55,winter_cold,roofward,forecast:roofward_archive:d55:r32,Lio,glasshouse heat surge,0.52362,63,roofward_archive,33,True
+763,55,winter_cold,archive_quarter,forecast:archive_signal:d55:r31,Sera,wind archive scatter,0.588633,63,archive_signal,32,True
+764,55,winter_cold,signal_ridge,forecast:signal_orchard:d55:r28,Ren,dusk ice,0.392188,63,signal_orchard,28,True
+765,55,winter_cold,orchard_fen,forecast:orchard_riverbend:d55:r31,Mara,fen mud,0.499371,63,orchard_riverbend,31,True
+766,55,winter_cold,central_exchange,forecast:central_repair_ring:d55:r31,Pax,crowded repair yard,0.507965,63,central_repair_ring,31,True
+767,55,winter_cold,riverbend,forecast:riverbend_roofward:d55:r28,Toma,river flood,0.406042,63,riverbend_roofward,28,True
+768,55,winter_cold,roofward,forecast:roofward_archive:d55:r33,Lio,glasshouse heat surge,0.667894,63,roofward_archive,34,True
+769,55,winter_cold,archive_quarter,forecast:archive_signal:d55:r32,Sera,wind archive scatter,0.588633,63,archive_signal,32,True
+770,56,winter_cold,orchard_fen,forecast:orchard_riverbend:d56:r31,Mara,fen mud,0.445104,64,orchard_riverbend,32,True
+771,56,winter_cold,central_exchange,forecast:central_repair_ring:d56:r31,Pax,crowded repair yard,0.507965,64,central_repair_ring,31,True
+772,56,winter_cold,riverbend,forecast:riverbend_roofward:d56:r28,Toma,river flood,0.406042,64,riverbend_roofward,28,True
+773,56,winter_cold,roofward,forecast:roofward_archive:d56:r34,Lio,glasshouse heat surge,0.667894,64,roofward_archive,34,True
+774,56,winter_cold,archive_quarter,forecast:archive_signal:d56:r32,Sera,wind archive scatter,0.556497,64,archive_signal,33,True
+775,56,winter_cold,signal_ridge,forecast:signal_orchard:d56:r28,Ren,dusk ice,0.392188,64,signal_orchard,28,True
+776,56,winter_cold,orchard_fen,forecast:orchard_riverbend:d56:r32,Mara,fen mud,0.445104,64,orchard_riverbend,32,True
+777,56,winter_cold,central_exchange,forecast:central_repair_ring:d56:r31,Pax,crowded repair yard,0.57711,64,central_repair_ring,32,True
+778,56,winter_cold,riverbend,forecast:riverbend_roofward:d56:r28,Toma,river flood,0.406042,64,riverbend_roofward,28,True
+779,56,winter_cold,roofward,forecast:roofward_archive:d56:r34,Lio,glasshouse heat surge,0.667894,64,roofward_archive,34,True
+780,56,winter_cold,archive_quarter,forecast:archive_signal:d56:r33,Sera,wind archive scatter,0.590699,64,archive_signal,34,True
+781,56,winter_cold,signal_ridge,forecast:signal_orchard:d56:r28,Ren,dusk ice,0.392188,64,signal_orchard,28,True
+782,56,winter_cold,orchard_fen,forecast:orchard_riverbend:d56:r32,Mara,fen mud,0.445104,64,orchard_riverbend,32,True
+783,56,winter_cold,central_exchange,forecast:central_repair_ring:d56:r32,Pax,crowded repair yard,0.57711,64,central_repair_ring,32,True
+784,57,winter_cold,riverbend,forecast:riverbend_roofward:d57:r28,Toma,river flood,0.512105,65,riverbend_roofward,29,True
+785,57,winter_cold,roofward,forecast:roofward_archive:d57:r34,Lio,glasshouse heat surge,0.667894,65,roofward_archive,34,True
+786,57,winter_cold,archive_quarter,forecast:archive_signal:d57:r34,Sera,wind archive scatter,0.590699,65,archive_signal,34,True
+787,57,winter_cold,signal_ridge,forecast:signal_orchard:d57:r28,Ren,dusk ice,0.631093,65,signal_orchard,29,True
+788,57,winter_cold,orchard_fen,forecast:orchard_riverbend:d57:r32,Mara,fen mud,0.445104,65,orchard_riverbend,32,True
+789,57,winter_cold,central_exchange,forecast:central_repair_ring:d57:r32,Pax,crowded repair yard,0.57711,65,central_repair_ring,32,True
+790,57,winter_cold,riverbend,forecast:riverbend_roofward:d57:r29,Toma,river flood,0.512105,65,riverbend_roofward,29,True
+791,57,winter_cold,roofward,forecast:roofward_archive:d57:r34,Lio,glasshouse heat surge,0.49229,65,roofward_archive,35,True
+792,57,winter_cold,archive_quarter,forecast:archive_signal:d57:r34,Sera,wind archive scatter,0.590699,65,archive_signal,34,True
+793,57,winter_cold,signal_ridge,forecast:signal_orchard:d57:r29,Ren,dusk ice,0.654786,65,signal_orchard,30,True
+794,57,winter_cold,orchard_fen,forecast:orchard_riverbend:d57:r32,Mara,fen mud,0.445104,65,orchard_riverbend,32,True
+795,57,winter_cold,central_exchange,forecast:central_repair_ring:d57:r32,Pax,crowded repair yard,0.57711,65,central_repair_ring,32,True
+796,57,winter_cold,riverbend,forecast:riverbend_roofward:d57:r29,Toma,river flood,0.512105,65,riverbend_roofward,29,True
+797,57,winter_cold,roofward,forecast:roofward_archive:d57:r35,Lio,glasshouse heat surge,0.49229,65,roofward_archive,35,True
+798,58,winter_cold,archive_quarter,forecast:archive_signal:d58:r34,Sera,wind archive scatter,0.473969,66,archive_signal,35,True
+799,58,winter_cold,signal_ridge,forecast:signal_orchard:d58:r30,Ren,dusk ice,0.654786,66,signal_orchard,30,True
+800,58,winter_cold,orchard_fen,forecast:orchard_riverbend:d58:r32,Mara,fen mud,0.602709,66,orchard_riverbend,33,True
+801,58,winter_cold,central_exchange,forecast:central_repair_ring:d58:r32,Pax,crowded repair yard,0.57711,66,central_repair_ring,32,True
+802,58,winter_cold,riverbend,forecast:riverbend_roofward:d58:r29,Toma,river flood,0.512105,66,riverbend_roofward,29,True
+803,58,winter_cold,roofward,forecast:roofward_archive:d58:r35,Lio,glasshouse heat surge,0.49229,66,roofward_archive,35,True
+804,58,winter_cold,archive_quarter,forecast:archive_signal:d58:r35,Sera,wind archive scatter,0.473969,66,archive_signal,35,True
+805,58,winter_cold,signal_ridge,forecast:signal_orchard:d58:r30,Ren,dusk ice,0.61822,66,signal_orchard,31,True
+806,58,winter_cold,orchard_fen,forecast:orchard_riverbend:d58:r33,Mara,fen mud,0.560439,66,orchard_riverbend,34,True
+807,58,winter_cold,central_exchange,forecast:central_repair_ring:d58:r32,Pax,crowded repair yard,0.57711,66,central_repair_ring,32,True
+808,58,winter_cold,riverbend,forecast:riverbend_roofward:d58:r29,Toma,river flood,0.512105,66,riverbend_roofward,29,True
+809,58,winter_cold,roofward,forecast:roofward_archive:d58:r35,Lio,glasshouse heat surge,0.49229,66,roofward_archive,35,True
+810,58,winter_cold,archive_quarter,forecast:archive_signal:d58:r35,Sera,wind archive scatter,0.473969,66,archive_signal,35,True
+811,58,winter_cold,signal_ridge,forecast:signal_orchard:d58:r31,Ren,dusk ice,0.61822,66,signal_orchard,31,True
+812,59,winter_cold,orchard_fen,forecast:orchard_riverbend:d59:r34,Mara,fen mud,0.591803,67,orchard_riverbend,35,True
+813,59,winter_cold,central_exchange,forecast:central_repair_ring:d59:r32,Pax,crowded repair yard,0.466871,67,central_repair_ring,33,True
+814,59,winter_cold,riverbend,forecast:riverbend_roofward:d59:r29,Toma,river flood,0.512105,67,riverbend_roofward,29,True
+815,59,winter_cold,roofward,forecast:roofward_archive:d59:r35,Lio,glasshouse heat surge,0.49229,67,roofward_archive,35,True
+816,59,winter_cold,archive_quarter,forecast:archive_signal:d59:r35,Sera,wind archive scatter,0.473969,67,archive_signal,35,True
+817,59,winter_cold,signal_ridge,forecast:signal_orchard:d59:r31,Ren,dusk ice,0.61822,67,signal_orchard,31,True
+818,59,winter_cold,orchard_fen,forecast:orchard_riverbend:d59:r35,Mara,fen mud,0.591803,67,orchard_riverbend,35,True
+819,59,winter_cold,central_exchange,forecast:central_repair_ring:d59:r33,Pax,crowded repair yard,0.479204,67,central_repair_ring,34,True
+820,59,winter_cold,riverbend,forecast:riverbend_roofward:d59:r29,Toma,river flood,0.512105,67,riverbend_roofward,29,True
+821,59,winter_cold,roofward,forecast:roofward_archive:d59:r35,Lio,glasshouse heat surge,0.49229,67,roofward_archive,35,True
+822,59,winter_cold,archive_quarter,forecast:archive_signal:d59:r35,Sera,wind archive scatter,0.473969,67,archive_signal,35,True
+823,59,winter_cold,signal_ridge,forecast:signal_orchard:d59:r31,Ren,dusk ice,0.61822,67,signal_orchard,31,True
+824,59,winter_cold,orchard_fen,forecast:orchard_riverbend:d59:r35,Mara,fen mud,0.591803,67,orchard_riverbend,35,True
+825,59,winter_cold,central_exchange,forecast:central_repair_ring:d59:r34,Pax,crowded repair yard,0.525857,67,central_repair_ring,35,True
+826,60,winter_cold,riverbend,forecast:riverbend_roofward:d60:r29,Toma,river flood,0.448669,68,riverbend_roofward,30,True
+827,60,winter_cold,roofward,forecast:roofward_archive:d60:r35,Lio,glasshouse heat surge,0.49229,68,roofward_archive,35,True
+828,60,winter_cold,archive_quarter,forecast:archive_signal:d60:r35,Sera,wind archive scatter,0.473969,68,archive_signal,35,True
+829,60,winter_cold,signal_ridge,forecast:signal_orchard:d60:r31,Ren,dusk ice,0.61822,68,signal_orchard,31,True
+830,60,winter_cold,orchard_fen,forecast:orchard_riverbend:d60:r35,Mara,fen mud,0.591803,68,orchard_riverbend,35,True
+831,60,winter_cold,central_exchange,forecast:central_repair_ring:d60:r35,Pax,crowded repair yard,0.525857,68,central_repair_ring,35,True
+832,60,winter_cold,riverbend,forecast:riverbend_roofward:d60:r30,Toma,river flood,0.448669,68,riverbend_roofward,30,True
+833,60,winter_cold,roofward,forecast:roofward_archive:d60:r35,Lio,glasshouse heat surge,0.572721,68,roofward_archive,36,True
+834,60,winter_cold,archive_quarter,forecast:archive_signal:d60:r35,Sera,wind archive scatter,0.473969,68,archive_signal,35,True
+835,60,winter_cold,signal_ridge,forecast:signal_orchard:d60:r31,Ren,dusk ice,0.61822,68,signal_orchard,31,True
+836,60,winter_cold,orchard_fen,forecast:orchard_riverbend:d60:r35,Mara,fen mud,0.591803,68,orchard_riverbend,35,True
+837,60,winter_cold,central_exchange,forecast:central_repair_ring:d60:r35,Pax,crowded repair yard,0.525857,68,central_repair_ring,35,True
+838,60,winter_cold,riverbend,forecast:riverbend_roofward:d60:r30,Toma,river flood,0.448669,68,riverbend_roofward,30,True
+839,60,winter_cold,roofward,forecast:roofward_archive:d60:r36,Lio,glasshouse heat surge,0.572721,68,roofward_archive,36,True
+840,61,winter_cold,archive_quarter,forecast:archive_signal:d61:r35,Sera,wind archive scatter,0.567591,69,archive_signal,36,True
+841,61,winter_cold,signal_ridge,forecast:signal_orchard:d61:r31,Ren,dusk ice,0.61822,69,signal_orchard,31,True
+842,61,winter_cold,orchard_fen,forecast:orchard_riverbend:d61:r35,Mara,fen mud,0.591803,69,orchard_riverbend,35,True
+843,61,winter_cold,central_exchange,forecast:central_repair_ring:d61:r35,Pax,crowded repair yard,0.525857,69,central_repair_ring,35,True
+844,61,winter_cold,riverbend,forecast:riverbend_roofward:d61:r30,Toma,river flood,0.448669,69,riverbend_roofward,30,True
+845,61,winter_cold,roofward,forecast:roofward_archive:d61:r36,Lio,glasshouse heat surge,0.572721,69,roofward_archive,36,True
+846,61,winter_cold,archive_quarter,forecast:archive_signal:d61:r36,Sera,wind archive scatter,0.567591,69,archive_signal,36,True
+847,61,winter_cold,signal_ridge,forecast:signal_orchard:d61:r31,Ren,dusk ice,0.521582,69,signal_orchard,32,True
+848,61,winter_cold,orchard_fen,forecast:orchard_riverbend:d61:r35,Mara,fen mud,0.591803,69,orchard_riverbend,35,True
+849,61,winter_cold,central_exchange,forecast:central_repair_ring:d61:r35,Pax,crowded repair yard,0.525857,69,central_repair_ring,35,True
+850,61,winter_cold,riverbend,forecast:riverbend_roofward:d61:r30,Toma,river flood,0.448669,69,riverbend_roofward,30,True
+851,61,winter_cold,roofward,forecast:roofward_archive:d61:r36,Lio,glasshouse heat surge,0.572721,69,roofward_archive,36,True
+852,61,winter_cold,archive_quarter,forecast:archive_signal:d61:r36,Sera,wind archive scatter,0.567591,69,archive_signal,36,True
+853,61,winter_cold,signal_ridge,forecast:signal_orchard:d61:r32,Ren,dusk ice,0.521582,69,signal_orchard,32,True
+854,62,winter_cold,orchard_fen,forecast:orchard_riverbend:d62:r35,Mara,fen mud,0.514185,70,orchard_riverbend,36,True
+855,62,winter_cold,central_exchange,forecast:central_repair_ring:d62:r35,Pax,crowded repair yard,0.525857,70,central_repair_ring,35,True
+856,62,winter_cold,riverbend,forecast:riverbend_roofward:d62:r30,Toma,river flood,0.448669,70,riverbend_roofward,30,True
+857,62,winter_cold,roofward,forecast:roofward_archive:d62:r36,Lio,glasshouse heat surge,0.572721,70,roofward_archive,36,True
+858,62,winter_cold,archive_quarter,forecast:archive_signal:d62:r36,Sera,wind archive scatter,0.567591,70,archive_signal,36,True
+859,62,winter_cold,signal_ridge,forecast:signal_orchard:d62:r32,Ren,dusk ice,0.521582,70,signal_orchard,32,True
+860,62,winter_cold,orchard_fen,forecast:orchard_riverbend:d62:r36,Mara,fen mud,0.514185,70,orchard_riverbend,36,True
+861,62,winter_cold,central_exchange,forecast:central_repair_ring:d62:r35,Pax,crowded repair yard,0.62532,70,central_repair_ring,36,True
+862,62,winter_cold,riverbend,forecast:riverbend_roofward:d62:r30,Toma,river flood,0.448669,70,riverbend_roofward,30,True
+863,62,winter_cold,roofward,forecast:roofward_archive:d62:r36,Lio,glasshouse heat surge,0.572721,70,roofward_archive,36,True
+864,62,winter_cold,archive_quarter,forecast:archive_signal:d62:r36,Sera,wind archive scatter,0.567591,70,archive_signal,36,True
+865,62,winter_cold,signal_ridge,forecast:signal_orchard:d62:r32,Ren,dusk ice,0.521582,70,signal_orchard,32,True
+866,62,winter_cold,orchard_fen,forecast:orchard_riverbend:d62:r36,Mara,fen mud,0.514185,70,orchard_riverbend,36,True
+867,62,winter_cold,central_exchange,forecast:central_repair_ring:d62:r36,Pax,crowded repair yard,0.62532,70,central_repair_ring,36,True
+868,63,winter_cold,roofward,forecast:roofward_archive:d63:r36,Lio,glasshouse heat surge,0.638442,71,roofward_archive,37,True
+869,63,winter_cold,archive_quarter,forecast:archive_signal:d63:r36,Sera,wind archive scatter,0.567591,71,archive_signal,36,True
+870,63,winter_cold,signal_ridge,forecast:signal_orchard:d63:r32,Ren,dusk ice,0.521582,71,signal_orchard,32,True
+871,63,winter_cold,orchard_fen,forecast:orchard_riverbend:d63:r36,Mara,fen mud,0.514185,71,orchard_riverbend,36,True
+872,63,winter_cold,central_exchange,forecast:central_repair_ring:d63:r36,Pax,crowded repair yard,0.62532,71,central_repair_ring,36,True
+873,63,winter_cold,riverbend,forecast:riverbend_roofward:d63:r30,Toma,river flood,0.560507,71,riverbend_roofward,31,True
+874,63,winter_cold,roofward,forecast:roofward_archive:d63:r37,Lio,glasshouse heat surge,0.638442,71,roofward_archive,37,True
+875,63,winter_cold,archive_quarter,forecast:archive_signal:d63:r36,Sera,wind archive scatter,0.550605,71,archive_signal,37,True
+876,63,winter_cold,signal_ridge,forecast:signal_orchard:d63:r32,Ren,dusk ice,0.521582,71,signal_orchard,32,True
+877,63,winter_cold,orchard_fen,forecast:orchard_riverbend:d63:r36,Mara,fen mud,0.514185,71,orchard_riverbend,36,True
+878,63,winter_cold,central_exchange,forecast:central_repair_ring:d63:r36,Pax,crowded repair yard,0.62532,71,central_repair_ring,36,True
+879,63,winter_cold,riverbend,forecast:riverbend_roofward:d63:r31,Toma,river flood,0.635022,71,riverbend_roofward,32,True
+880,63,winter_cold,roofward,forecast:roofward_archive:d63:r37,Lio,glasshouse heat surge,0.638442,71,roofward_archive,37,True
+881,63,winter_cold,archive_quarter,forecast:archive_signal:d63:r37,Sera,wind archive scatter,0.550605,71,archive_signal,37,True
+882,64,winter_cold,signal_ridge,forecast:signal_orchard:d64:r32,Ren,dusk ice,0.537723,72,signal_orchard,33,True
+883,64,winter_cold,orchard_fen,forecast:orchard_riverbend:d64:r36,Mara,fen mud,0.514185,72,orchard_riverbend,36,True
+884,64,winter_cold,central_exchange,forecast:central_repair_ring:d64:r36,Pax,crowded repair yard,0.62532,72,central_repair_ring,36,True
+885,64,winter_cold,riverbend,forecast:riverbend_roofward:d64:r32,Toma,river flood,0.635022,72,riverbend_roofward,32,True
+886,64,winter_cold,roofward,forecast:roofward_archive:d64:r37,Lio,glasshouse heat surge,0.658411,72,roofward_archive,38,True
+887,64,winter_cold,archive_quarter,forecast:archive_signal:d64:r37,Sera,wind archive scatter,0.550605,72,archive_signal,37,True
+888,64,winter_cold,signal_ridge,forecast:signal_orchard:d64:r33,Ren,dusk ice,0.537723,72,signal_orchard,33,True
+889,64,winter_cold,orchard_fen,forecast:orchard_riverbend:d64:r36,Mara,fen mud,0.449252,72,orchard_riverbend,37,True
+890,64,winter_cold,central_exchange,forecast:central_repair_ring:d64:r36,Pax,crowded repair yard,0.62532,72,central_repair_ring,36,True
+891,64,winter_cold,riverbend,forecast:riverbend_roofward:d64:r32,Toma,river flood,0.635022,72,riverbend_roofward,32,True
+892,64,winter_cold,roofward,forecast:roofward_archive:d64:r38,Lio,glasshouse heat surge,0.489635,72,roofward_archive,39,True
+893,64,winter_cold,archive_quarter,forecast:archive_signal:d64:r37,Sera,wind archive scatter,0.550605,72,archive_signal,37,True
+894,64,winter_cold,signal_ridge,forecast:signal_orchard:d64:r33,Ren,dusk ice,0.537723,72,signal_orchard,33,True
+895,64,winter_cold,orchard_fen,forecast:orchard_riverbend:d64:r37,Mara,fen mud,0.449252,72,orchard_riverbend,37,True
+896,65,winter_cold,central_exchange,forecast:central_repair_ring:d65:r36,Pax,crowded repair yard,0.48037,73,central_repair_ring,37,True
+897,65,winter_cold,riverbend,forecast:riverbend_roofward:d65:r32,Toma,river flood,0.635022,73,riverbend_roofward,32,True
+898,65,winter_cold,roofward,forecast:roofward_archive:d65:r39,Lio,glasshouse heat surge,0.489635,73,roofward_archive,39,True
+899,65,winter_cold,archive_quarter,forecast:archive_signal:d65:r37,Sera,wind archive scatter,0.545849,73,archive_signal,38,True
+900,65,winter_cold,signal_ridge,forecast:signal_orchard:d65:r33,Ren,dusk ice,0.537723,73,signal_orchard,33,True
+901,65,winter_cold,orchard_fen,forecast:orchard_riverbend:d65:r37,Mara,fen mud,0.449252,73,orchard_riverbend,37,True
+902,65,winter_cold,central_exchange,forecast:central_repair_ring:d65:r37,Pax,crowded repair yard,0.48037,73,central_repair_ring,37,True
+903,65,winter_cold,riverbend,forecast:riverbend_roofward:d65:r32,Toma,river flood,0.569486,73,riverbend_roofward,33,True
+904,65,winter_cold,roofward,forecast:roofward_archive:d65:r39,Lio,glasshouse heat surge,0.489635,73,roofward_archive,39,True
+905,65,winter_cold,archive_quarter,forecast:archive_signal:d65:r38,Sera,wind archive scatter,0.501318,73,archive_signal,39,True
+906,65,winter_cold,signal_ridge,forecast:signal_orchard:d65:r33,Ren,dusk ice,0.537723,73,signal_orchard,33,True
+907,65,winter_cold,orchard_fen,forecast:orchard_riverbend:d65:r37,Mara,fen mud,0.449252,73,orchard_riverbend,37,True
+908,65,winter_cold,central_exchange,forecast:central_repair_ring:d65:r37,Pax,crowded repair yard,0.48037,73,central_repair_ring,37,True
+909,65,winter_cold,riverbend,forecast:riverbend_roofward:d65:r33,Toma,river flood,0.569486,73,riverbend_roofward,33,True
+910,66,winter_cold,roofward,forecast:roofward_archive:d66:r39,Lio,glasshouse heat surge,0.528778,74,roofward_archive,40,True
+911,66,winter_cold,archive_quarter,forecast:archive_signal:d66:r39,Sera,wind archive scatter,0.501318,74,archive_signal,39,True
+912,66,winter_cold,signal_ridge,forecast:signal_orchard:d66:r33,Ren,dusk ice,0.499042,74,signal_orchard,34,True
+913,66,winter_cold,orchard_fen,forecast:orchard_riverbend:d66:r37,Mara,fen mud,0.449252,74,orchard_riverbend,37,True
+914,66,winter_cold,central_exchange,forecast:central_repair_ring:d66:r37,Pax,crowded repair yard,0.48037,74,central_repair_ring,37,True
+915,66,winter_cold,riverbend,forecast:riverbend_roofward:d66:r33,Toma,river flood,0.569486,74,riverbend_roofward,33,True
+916,66,winter_cold,roofward,forecast:roofward_archive:d66:r40,Lio,glasshouse heat surge,0.528778,74,roofward_archive,40,True
+917,66,winter_cold,archive_quarter,forecast:archive_signal:d66:r39,Sera,wind archive scatter,0.445649,74,archive_signal,40,True
+918,66,winter_cold,signal_ridge,forecast:signal_orchard:d66:r34,Ren,dusk ice,0.617812,74,signal_orchard,35,True
+919,66,winter_cold,orchard_fen,forecast:orchard_riverbend:d66:r37,Mara,fen mud,0.449252,74,orchard_riverbend,37,True
+920,66,winter_cold,central_exchange,forecast:central_repair_ring:d66:r37,Pax,crowded repair yard,0.48037,74,central_repair_ring,37,True
+921,66,winter_cold,riverbend,forecast:riverbend_roofward:d66:r33,Toma,river flood,0.569486,74,riverbend_roofward,33,True
+922,66,winter_cold,roofward,forecast:roofward_archive:d66:r40,Lio,glasshouse heat surge,0.528778,74,roofward_archive,40,True
+923,66,winter_cold,archive_quarter,forecast:archive_signal:d66:r40,Sera,wind archive scatter,0.445649,74,archive_signal,40,True
+924,67,winter_cold,signal_ridge,forecast:signal_orchard:d67:r35,Ren,dusk ice,0.478267,75,signal_orchard,36,True
+925,67,winter_cold,orchard_fen,forecast:orchard_riverbend:d67:r37,Mara,fen mud,0.517471,75,orchard_riverbend,38,True
+926,67,winter_cold,central_exchange,forecast:central_repair_ring:d67:r37,Pax,crowded repair yard,0.48037,75,central_repair_ring,37,True
+927,67,winter_cold,riverbend,forecast:riverbend_roofward:d67:r33,Toma,river flood,0.569486,75,riverbend_roofward,33,True
+928,67,winter_cold,roofward,forecast:roofward_archive:d67:r40,Lio,glasshouse heat surge,0.528778,75,roofward_archive,40,True
+929,67,winter_cold,archive_quarter,forecast:archive_signal:d67:r40,Sera,wind archive scatter,0.445649,75,archive_signal,40,True
+930,67,winter_cold,signal_ridge,forecast:signal_orchard:d67:r36,Ren,dusk ice,0.478267,75,signal_orchard,36,True
+931,67,winter_cold,orchard_fen,forecast:orchard_riverbend:d67:r38,Mara,fen mud,0.579772,75,orchard_riverbend,39,True
+932,67,winter_cold,central_exchange,forecast:central_repair_ring:d67:r37,Pax,crowded repair yard,0.48037,75,central_repair_ring,37,True
+933,67,winter_cold,riverbend,forecast:riverbend_roofward:d67:r33,Toma,river flood,0.569486,75,riverbend_roofward,33,True
+934,67,winter_cold,roofward,forecast:roofward_archive:d67:r40,Lio,glasshouse heat surge,0.528778,75,roofward_archive,40,True
+935,67,winter_cold,archive_quarter,forecast:archive_signal:d67:r40,Sera,wind archive scatter,0.445649,75,archive_signal,40,True
+936,67,winter_cold,signal_ridge,forecast:signal_orchard:d67:r36,Ren,dusk ice,0.478267,75,signal_orchard,36,True
+937,67,winter_cold,orchard_fen,forecast:orchard_riverbend:d67:r39,Mara,fen mud,0.640416,75,orchard_riverbend,40,True
+938,68,winter_cold,central_exchange,forecast:central_repair_ring:d68:r37,Pax,crowded repair yard,0.569384,76,central_repair_ring,38,True
+939,68,winter_cold,riverbend,forecast:riverbend_roofward:d68:r33,Toma,river flood,0.569486,76,riverbend_roofward,33,True
+940,68,winter_cold,roofward,forecast:roofward_archive:d68:r40,Lio,glasshouse heat surge,0.528778,76,roofward_archive,40,True
+941,68,winter_cold,archive_quarter,forecast:archive_signal:d68:r40,Sera,wind archive scatter,0.445649,76,archive_signal,40,True
+942,68,winter_cold,signal_ridge,forecast:signal_orchard:d68:r36,Ren,dusk ice,0.478267,76,signal_orchard,36,True
+943,68,winter_cold,orchard_fen,forecast:orchard_riverbend:d68:r40,Mara,fen mud,0.640416,76,orchard_riverbend,40,True
+944,68,winter_cold,central_exchange,forecast:central_repair_ring:d68:r38,Pax,crowded repair yard,0.637508,76,central_repair_ring,39,True
+945,68,winter_cold,riverbend,forecast:riverbend_roofward:d68:r33,Toma,river flood,0.464736,76,riverbend_roofward,34,True
+946,68,winter_cold,roofward,forecast:roofward_archive:d68:r40,Lio,glasshouse heat surge,0.528778,76,roofward_archive,40,True
+947,68,winter_cold,archive_quarter,forecast:archive_signal:d68:r40,Sera,wind archive scatter,0.445649,76,archive_signal,40,True
+948,68,winter_cold,signal_ridge,forecast:signal_orchard:d68:r36,Ren,dusk ice,0.478267,76,signal_orchard,36,True
+949,68,winter_cold,orchard_fen,forecast:orchard_riverbend:d68:r40,Mara,fen mud,0.640416,76,orchard_riverbend,40,True
+950,68,winter_cold,central_exchange,forecast:central_repair_ring:d68:r39,Pax,crowded repair yard,0.570182,76,central_repair_ring,40,True
+951,68,winter_cold,riverbend,forecast:riverbend_roofward:d68:r34,Toma,river flood,0.464736,76,riverbend_roofward,34,True
+952,69,winter_cold,roofward,forecast:roofward_archive:d69:r40,Lio,glasshouse heat surge,0.456464,77,roofward_archive,41,True
+953,69,winter_cold,archive_quarter,forecast:archive_signal:d69:r40,Sera,wind archive scatter,0.445649,77,archive_signal,40,True
+954,69,winter_cold,signal_ridge,forecast:signal_orchard:d69:r36,Ren,dusk ice,0.478267,77,signal_orchard,36,True
+955,69,winter_cold,orchard_fen,forecast:orchard_riverbend:d69:r40,Mara,fen mud,0.640416,77,orchard_riverbend,40,True
+956,69,winter_cold,central_exchange,forecast:central_repair_ring:d69:r40,Pax,crowded repair yard,0.570182,77,central_repair_ring,40,True
+957,69,winter_cold,riverbend,forecast:riverbend_roofward:d69:r34,Toma,river flood,0.464736,77,riverbend_roofward,34,True
+958,69,winter_cold,roofward,forecast:roofward_archive:d69:r41,Lio,glasshouse heat surge,0.456464,77,roofward_archive,41,True
+959,69,winter_cold,archive_quarter,forecast:archive_signal:d69:r40,Sera,wind archive scatter,0.559662,77,archive_signal,41,True
+960,69,winter_cold,signal_ridge,forecast:signal_orchard:d69:r36,Ren,dusk ice,0.478267,77,signal_orchard,36,True
+961,69,winter_cold,orchard_fen,forecast:orchard_riverbend:d69:r40,Mara,fen mud,0.640416,77,orchard_riverbend,40,True
+962,69,winter_cold,central_exchange,forecast:central_repair_ring:d69:r40,Pax,crowded repair yard,0.570182,77,central_repair_ring,40,True
+963,69,winter_cold,riverbend,forecast:riverbend_roofward:d69:r34,Toma,river flood,0.464736,77,riverbend_roofward,34,True
+964,69,winter_cold,roofward,forecast:roofward_archive:d69:r41,Lio,glasshouse heat surge,0.456464,77,roofward_archive,41,True
+965,69,winter_cold,archive_quarter,forecast:archive_signal:d69:r41,Sera,wind archive scatter,0.559662,77,archive_signal,41,True
+966,70,winter_cold,orchard_fen,forecast:orchard_riverbend:d70:r40,Mara,fen mud,0.657396,78,orchard_riverbend,41,True
+967,70,winter_cold,central_exchange,forecast:central_repair_ring:d70:r40,Pax,crowded repair yard,0.570182,78,central_repair_ring,40,True
+968,70,winter_cold,riverbend,forecast:riverbend_roofward:d70:r34,Toma,river flood,0.464736,78,riverbend_roofward,34,True
+969,70,winter_cold,roofward,forecast:roofward_archive:d70:r41,Lio,glasshouse heat surge,0.456464,78,roofward_archive,41,True
+970,70,winter_cold,archive_quarter,forecast:archive_signal:d70:r41,Sera,wind archive scatter,0.559662,78,archive_signal,41,True
+971,70,winter_cold,signal_ridge,forecast:signal_orchard:d70:r36,Ren,dusk ice,0.478267,78,signal_orchard,36,True
+972,70,winter_cold,orchard_fen,forecast:orchard_riverbend:d70:r41,Mara,fen mud,0.657396,78,orchard_riverbend,41,True
+973,70,winter_cold,central_exchange,forecast:central_repair_ring:d70:r40,Pax,crowded repair yard,0.551331,78,central_repair_ring,41,True
+974,70,winter_cold,riverbend,forecast:riverbend_roofward:d70:r34,Toma,river flood,0.464736,78,riverbend_roofward,34,True
+975,70,winter_cold,roofward,forecast:roofward_archive:d70:r41,Lio,glasshouse heat surge,0.456464,78,roofward_archive,41,True
+976,70,winter_cold,archive_quarter,forecast:archive_signal:d70:r41,Sera,wind archive scatter,0.559662,78,archive_signal,41,True
+977,70,winter_cold,signal_ridge,forecast:signal_orchard:d70:r36,Ren,dusk ice,0.478267,78,signal_orchard,36,True
+978,70,winter_cold,orchard_fen,forecast:orchard_riverbend:d70:r41,Mara,fen mud,0.657396,78,orchard_riverbend,41,True
+979,70,winter_cold,central_exchange,forecast:central_repair_ring:d70:r41,Pax,crowded repair yard,0.551331,78,central_repair_ring,41,True
+980,71,winter_cold,riverbend,forecast:riverbend_roofward:d71:r34,Toma,river flood,0.478606,79,riverbend_roofward,35,True
+981,71,winter_cold,roofward,forecast:roofward_archive:d71:r41,Lio,glasshouse heat surge,0.456464,79,roofward_archive,41,True
+982,71,winter_cold,archive_quarter,forecast:archive_signal:d71:r41,Sera,wind archive scatter,0.559662,79,archive_signal,41,True
+983,71,winter_cold,signal_ridge,forecast:signal_orchard:d71:r36,Ren,dusk ice,0.478267,79,signal_orchard,36,True
+984,71,winter_cold,orchard_fen,forecast:orchard_riverbend:d71:r41,Mara,fen mud,0.657396,79,orchard_riverbend,41,True
+985,71,winter_cold,central_exchange,forecast:central_repair_ring:d71:r41,Pax,crowded repair yard,0.551331,79,central_repair_ring,41,True
+986,71,winter_cold,riverbend,forecast:riverbend_roofward:d71:r35,Toma,river flood,0.478606,79,riverbend_roofward,35,True
+987,71,winter_cold,roofward,forecast:roofward_archive:d71:r41,Lio,glasshouse heat surge,0.60589,79,roofward_archive,42,True
+988,71,winter_cold,archive_quarter,forecast:archive_signal:d71:r41,Sera,wind archive scatter,0.559662,79,archive_signal,41,True
+989,71,winter_cold,signal_ridge,forecast:signal_orchard:d71:r36,Ren,dusk ice,0.478267,79,signal_orchard,36,True
+990,71,winter_cold,orchard_fen,forecast:orchard_riverbend:d71:r41,Mara,fen mud,0.657396,79,orchard_riverbend,41,True
+991,71,winter_cold,central_exchange,forecast:central_repair_ring:d71:r41,Pax,crowded repair yard,0.551331,79,central_repair_ring,41,True
+992,71,winter_cold,riverbend,forecast:riverbend_roofward:d71:r35,Toma,river flood,0.478606,79,riverbend_roofward,35,True
+993,71,winter_cold,roofward,forecast:roofward_archive:d71:r42,Lio,glasshouse heat surge,0.60589,79,roofward_archive,42,True
+994,72,winter_cold,archive_quarter,forecast:archive_signal:d72:r41,Sera,wind archive scatter,0.634785,80,archive_signal,42,True
+995,72,winter_cold,signal_ridge,forecast:signal_orchard:d72:r36,Ren,dusk ice,0.478267,80,signal_orchard,36,True
+996,72,winter_cold,orchard_fen,forecast:orchard_riverbend:d72:r41,Mara,fen mud,0.657396,80,orchard_riverbend,41,True
+997,72,winter_cold,central_exchange,forecast:central_repair_ring:d72:r41,Pax,crowded repair yard,0.551331,80,central_repair_ring,41,True
+998,72,winter_cold,riverbend,forecast:riverbend_roofward:d72:r35,Toma,river flood,0.48249,80,riverbend_roofward,36,True
+999,72,winter_cold,roofward,forecast:roofward_archive:d72:r42,Lio,glasshouse heat surge,0.60589,80,roofward_archive,42,True
+1000,72,winter_cold,archive_quarter,forecast:archive_signal:d72:r42,Sera,wind archive scatter,0.634785,80,archive_signal,42,True
+1001,72,winter_cold,signal_ridge,forecast:signal_orchard:d72:r36,Ren,dusk ice,0.525595,80,signal_orchard,37,True
+1002,72,winter_cold,orchard_fen,forecast:orchard_riverbend:d72:r41,Mara,fen mud,0.657396,80,orchard_riverbend,41,True
+1003,72,winter_cold,central_exchange,forecast:central_repair_ring:d72:r41,Pax,crowded repair yard,0.551331,80,central_repair_ring,41,True
+1004,72,winter_cold,riverbend,forecast:riverbend_roofward:d72:r36,Toma,river flood,0.526777,80,riverbend_roofward,37,True
+1005,72,winter_cold,roofward,forecast:roofward_archive:d72:r42,Lio,glasshouse heat surge,0.60589,80,roofward_archive,42,True
+1006,72,winter_cold,archive_quarter,forecast:archive_signal:d72:r42,Sera,wind archive scatter,0.634785,80,archive_signal,42,True
+1007,72,winter_cold,signal_ridge,forecast:signal_orchard:d72:r37,Ren,dusk ice,0.525595,80,signal_orchard,37,True

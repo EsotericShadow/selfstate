@@ -1,0 +1,1009 @@
+tick_id,day,guild,generation,elder,successor,route_id,inherited_forecast_rule,inherited_repair_ritual,record_quality,succession_visible,private_workspace_sealed
+0,1,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5205,False,True
+1,1,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5455,False,True
+2,1,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5705,False,True
+3,1,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5955,False,True
+4,1,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6205,False,True
+5,1,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6455,False,True
+6,1,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.521,False,True
+7,1,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.546,False,True
+8,1,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.571,False,True
+9,1,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.596,False,True
+10,1,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.621,False,True
+11,1,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.646,False,True
+12,1,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5215,False,True
+13,1,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5465,False,True
+14,2,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5715,False,True
+15,2,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5965,False,True
+16,2,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6215,False,True
+17,2,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6465,False,True
+18,2,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.522,False,True
+19,2,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.547,False,True
+20,2,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.572,False,True
+21,2,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.597,False,True
+22,2,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.622,False,True
+23,2,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.647,False,True
+24,2,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5225,False,True
+25,2,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5475,False,True
+26,2,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5725,False,True
+27,2,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5975,False,True
+28,3,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6225,False,True
+29,3,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6475,False,True
+30,3,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.523,False,True
+31,3,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.548,False,True
+32,3,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.573,False,True
+33,3,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.598,False,True
+34,3,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.623,False,True
+35,3,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.648,False,True
+36,3,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5235,False,True
+37,3,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5485,False,True
+38,3,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5735,False,True
+39,3,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5985,False,True
+40,3,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6235,False,True
+41,3,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6485,False,True
+42,4,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.524,False,True
+43,4,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.549,False,True
+44,4,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.574,False,True
+45,4,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.599,False,True
+46,4,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.624,False,True
+47,4,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.649,False,True
+48,4,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5245,False,True
+49,4,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5495,False,True
+50,4,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5745,False,True
+51,4,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5995,False,True
+52,4,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6245,False,True
+53,4,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6495,False,True
+54,4,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.525,False,True
+55,4,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.55,False,True
+56,5,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.575,False,True
+57,5,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6,False,True
+58,5,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.625,False,True
+59,5,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.65,False,True
+60,5,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5255,False,True
+61,5,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5505,False,True
+62,5,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5755,False,True
+63,5,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6005,False,True
+64,5,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6255,False,True
+65,5,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6505,False,True
+66,5,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.526,False,True
+67,5,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.551,False,True
+68,5,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.576,False,True
+69,5,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.601,False,True
+70,6,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.626,False,True
+71,6,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.651,False,True
+72,6,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5265,False,True
+73,6,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5515,False,True
+74,6,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5765,False,True
+75,6,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6015,False,True
+76,6,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6265,False,True
+77,6,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6515,False,True
+78,6,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.527,False,True
+79,6,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.552,False,True
+80,6,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5785,False,True
+81,6,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.602,False,True
+82,6,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.627,False,True
+83,6,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.652,False,True
+84,7,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5525,False,True
+85,7,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.579,False,True
+86,7,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6025,False,True
+87,7,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6275,False,True
+88,7,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6525,False,True
+89,7,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5275,False,True
+90,7,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5545,False,True
+91,7,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5795,False,True
+92,7,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.603,False,True
+93,7,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.628,False,True
+94,7,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.653,False,True
+95,7,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.528,False,True
+96,7,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.555,False,True
+97,7,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.58,False,True
+98,8,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6035,False,True
+99,8,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6285,False,True
+100,8,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6535,False,True
+101,8,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5285,False,True
+102,8,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5555,False,True
+103,8,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5805,False,True
+104,8,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.604,False,True
+105,8,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.629,False,True
+106,8,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.654,False,True
+107,8,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.529,False,True
+108,8,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.556,False,True
+109,8,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.581,False,True
+110,8,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6045,False,True
+111,8,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6295,False,True
+112,9,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6545,False,True
+113,9,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5295,False,True
+114,9,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5565,False,True
+115,9,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5815,False,True
+116,9,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.605,False,True
+117,9,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.63,False,True
+118,9,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.655,False,True
+119,9,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.53,False,True
+120,9,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.557,False,True
+121,9,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.582,False,True
+122,9,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6055,False,True
+123,9,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6305,False,True
+124,9,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6555,False,True
+125,9,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5305,False,True
+126,10,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5575,False,True
+127,10,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5825,False,True
+128,10,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.606,False,True
+129,10,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.631,False,True
+130,10,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.656,False,True
+131,10,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.531,False,True
+132,10,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.558,False,True
+133,10,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.583,False,True
+134,10,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6065,False,True
+135,10,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6315,False,True
+136,10,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6565,False,True
+137,10,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5315,False,True
+138,10,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5585,False,True
+139,10,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5835,False,True
+140,11,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.607,False,True
+141,11,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.632,False,True
+142,11,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6585,False,True
+143,11,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.532,False,True
+144,11,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.559,False,True
+145,11,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.584,False,True
+146,11,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6075,False,True
+147,11,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6325,False,True
+148,11,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.659,False,True
+149,11,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5325,False,True
+150,11,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5595,False,True
+151,11,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5845,False,True
+152,11,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.608,False,True
+153,11,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.633,False,True
+154,12,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6595,False,True
+155,12,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.533,False,True
+156,12,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.56,False,True
+157,12,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.585,False,True
+158,12,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6085,False,True
+159,12,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6335,False,True
+160,12,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.66,False,True
+161,12,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5335,False,True
+162,12,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5605,False,True
+163,12,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5855,False,True
+164,12,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.609,False,True
+165,12,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.634,False,True
+166,12,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6605,False,True
+167,12,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.534,False,True
+168,13,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.561,False,True
+169,13,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.586,False,True
+170,13,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.611,False,True
+171,13,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6345,False,True
+172,13,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.661,False,True
+173,13,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5345,False,True
+174,13,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5615,False,True
+175,13,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5865,False,True
+176,13,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6115,False,True
+177,13,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.635,False,True
+178,13,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6615,False,True
+179,13,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.535,False,True
+180,13,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.562,False,True
+181,13,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.587,False,True
+182,14,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6355,False,True
+183,14,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.662,False,True
+184,14,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5355,False,True
+185,14,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5625,False,True
+186,14,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5875,False,True
+187,14,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.612,False,True
+188,14,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.636,False,True
+189,14,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6625,False,True
+190,14,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.536,False,True
+191,14,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.563,False,True
+192,14,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5895,False,True
+193,14,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6125,False,True
+194,14,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6365,False,True
+195,14,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.663,False,True
+196,15,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5365,False,True
+197,15,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5635,False,True
+198,15,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.59,False,True
+199,15,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.613,False,True
+200,15,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.637,False,True
+201,15,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6635,False,True
+202,15,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.537,False,True
+203,15,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.564,False,True
+204,15,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5905,False,True
+205,15,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6135,False,True
+206,15,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6375,False,True
+207,15,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.664,False,True
+208,15,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5375,False,True
+209,15,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5645,False,True
+210,16,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.591,False,True
+211,16,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.614,False,True
+212,16,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.638,False,True
+213,16,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6645,False,True
+214,16,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.538,False,True
+215,16,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.565,False,True
+216,16,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5915,False,True
+217,16,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6145,False,True
+218,16,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6385,False,True
+219,16,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.665,False,True
+220,16,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.54,False,True
+221,16,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5655,False,True
+222,16,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.592,False,True
+223,16,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.615,False,True
+224,17,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.639,False,True
+225,17,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6655,False,True
+226,17,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5405,False,True
+227,17,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.566,False,True
+228,17,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5925,False,True
+229,17,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6155,False,True
+230,17,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6395,False,True
+231,17,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.666,False,True
+232,17,Bridgewright Guild,1,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.541,False,True
+233,17,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5665,False,True
+234,17,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.593,False,True
+235,17,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.616,False,True
+236,17,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.64,False,True
+237,17,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6665,False,True
+238,18,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.601,True,True
+239,18,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.567,False,True
+240,18,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5935,False,True
+241,18,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6165,False,True
+242,18,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6405,False,True
+243,18,Repair Circle,1,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.667,False,True
+244,18,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6015,False,True
+245,18,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5675,False,True
+246,18,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.594,False,True
+247,18,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.617,False,True
+248,18,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.641,False,True
+249,18,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.727,True,True
+250,18,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.602,False,True
+251,18,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.568,False,True
+252,19,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5945,False,True
+253,19,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6175,False,True
+254,19,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6415,False,True
+255,19,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7275,False,True
+256,19,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6025,False,True
+257,19,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5685,False,True
+258,19,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.595,False,True
+259,19,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.618,False,True
+260,19,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.642,False,True
+261,19,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.728,False,True
+262,19,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.603,False,True
+263,19,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.569,False,True
+264,19,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5955,False,True
+265,19,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6185,False,True
+266,20,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6425,False,True
+267,20,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7285,False,True
+268,20,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6035,False,True
+269,20,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5695,False,True
+270,20,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.596,False,True
+271,20,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.619,False,True
+272,20,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6445,False,True
+273,20,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.729,False,True
+274,20,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.604,False,True
+275,20,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.57,False,True
+276,20,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5965,False,True
+277,20,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6195,False,True
+278,20,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.645,False,True
+279,20,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7295,False,True
+280,21,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5705,False,True
+281,21,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.597,False,True
+282,21,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6215,False,True
+283,21,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6455,False,True
+284,21,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.73,False,True
+285,21,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6045,False,True
+286,21,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.571,False,True
+287,21,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5975,False,True
+288,21,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.622,False,True
+289,21,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.646,False,True
+290,21,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7305,False,True
+291,21,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.605,False,True
+292,21,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5715,False,True
+293,21,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.598,False,True
+294,22,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6225,False,True
+295,22,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6465,False,True
+296,22,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.731,False,True
+297,22,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6055,False,True
+298,22,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.572,False,True
+299,22,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5985,False,True
+300,22,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.623,False,True
+301,22,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.647,False,True
+302,22,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7315,False,True
+303,22,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.606,False,True
+304,22,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5725,False,True
+305,22,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.599,False,True
+306,22,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6235,False,True
+307,22,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6475,False,True
+308,23,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.732,False,True
+309,23,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6065,False,True
+310,23,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5745,False,True
+311,23,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5995,False,True
+312,23,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.624,False,True
+313,23,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.648,False,True
+314,23,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7325,False,True
+315,23,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.607,False,True
+316,23,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.575,False,True
+317,23,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6,False,True
+318,23,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6245,False,True
+319,23,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6485,False,True
+320,23,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.733,False,True
+321,23,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6075,False,True
+322,24,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5755,False,True
+323,24,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6005,False,True
+324,24,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.625,False,True
+325,24,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.649,False,True
+326,24,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7335,False,True
+327,24,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.608,False,True
+328,24,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.576,False,True
+329,24,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.601,False,True
+330,24,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6255,False,True
+331,24,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6495,False,True
+332,24,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.734,False,True
+333,24,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6085,False,True
+334,24,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5765,False,True
+335,24,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6015,False,True
+336,25,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.626,False,True
+337,25,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.65,False,True
+338,25,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7345,False,True
+339,25,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.609,False,True
+340,25,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.577,False,True
+341,25,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.602,False,True
+342,25,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6265,False,True
+343,25,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6505,False,True
+344,25,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.735,False,True
+345,25,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6095,False,True
+346,25,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5775,False,True
+347,25,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6025,False,True
+348,25,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.627,False,True
+349,25,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.651,False,True
+350,26,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7355,False,True
+351,26,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.61,False,True
+352,26,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.578,False,True
+353,26,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.603,False,True
+354,26,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6275,False,True
+355,26,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6515,False,True
+356,26,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.736,False,True
+357,26,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6105,False,True
+358,26,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5785,False,True
+359,26,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6035,False,True
+360,26,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.628,False,True
+361,26,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.652,False,True
+362,26,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7365,False,True
+363,26,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.611,False,True
+364,27,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.579,False,True
+365,27,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.604,False,True
+366,27,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6285,False,True
+367,27,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6525,False,True
+368,27,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.737,False,True
+369,27,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6115,False,True
+370,27,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5795,False,True
+371,27,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6045,False,True
+372,27,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.629,False,True
+373,27,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.653,False,True
+374,27,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.739,False,True
+375,27,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.612,False,True
+376,27,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.58,False,True
+377,27,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.605,False,True
+378,28,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6535,False,True
+379,28,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7395,False,True
+380,28,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6125,False,True
+381,28,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5805,False,True
+382,28,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6055,False,True
+383,28,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6295,False,True
+384,28,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6555,False,True
+385,28,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.74,False,True
+386,28,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.613,False,True
+387,28,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.581,False,True
+388,28,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.606,False,True
+389,28,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.63,False,True
+390,28,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.656,False,True
+391,28,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7405,False,True
+392,29,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6135,False,True
+393,29,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5815,False,True
+394,29,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6065,False,True
+395,29,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6305,False,True
+396,29,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6565,False,True
+397,29,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.741,False,True
+398,29,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.614,False,True
+399,29,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.582,False,True
+400,29,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.607,False,True
+401,29,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.631,False,True
+402,29,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.657,False,True
+403,29,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7415,False,True
+404,29,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6145,False,True
+405,29,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5825,False,True
+406,30,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6075,False,True
+407,30,Signal Guild,1,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6315,False,True
+408,30,Seed Guild,1,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6575,False,True
+409,30,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.742,False,True
+410,30,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.615,False,True
+411,30,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.583,False,True
+412,30,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6095,False,True
+413,30,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.693,True,True
+414,30,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.719,True,True
+415,30,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7425,False,True
+416,30,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6155,False,True
+417,30,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5835,False,True
+418,30,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.61,False,True
+419,30,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6935,False,True
+420,31,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7195,False,True
+421,31,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.743,False,True
+422,31,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.616,False,True
+423,31,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.584,False,True
+424,31,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6105,False,True
+425,31,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.694,False,True
+426,31,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.72,False,True
+427,31,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7435,False,True
+428,31,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6165,False,True
+429,31,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5845,False,True
+430,31,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.611,False,True
+431,31,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6945,False,True
+432,31,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7205,False,True
+433,31,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.744,False,True
+434,32,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.617,False,True
+435,32,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.585,False,True
+436,32,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6115,False,True
+437,32,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.695,False,True
+438,32,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.721,False,True
+439,32,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7445,False,True
+440,32,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.619,False,True
+441,32,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5855,False,True
+442,32,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.612,False,True
+443,32,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6955,False,True
+444,32,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7215,False,True
+445,32,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.745,False,True
+446,32,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6195,False,True
+447,32,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.586,False,True
+448,33,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6125,False,True
+449,33,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.696,False,True
+450,33,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.722,False,True
+451,33,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7455,False,True
+452,33,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.62,False,True
+453,33,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5865,False,True
+454,33,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.613,False,True
+455,33,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6965,False,True
+456,33,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7225,False,True
+457,33,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.746,False,True
+458,33,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6205,False,True
+459,33,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.587,False,True
+460,33,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6135,False,True
+461,33,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.697,False,True
+462,34,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.723,False,True
+463,34,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7465,False,True
+464,34,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.621,False,True
+465,34,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5875,False,True
+466,34,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.614,False,True
+467,34,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6975,False,True
+468,34,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7235,False,True
+469,34,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.747,False,True
+470,34,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6215,False,True
+471,34,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.588,False,True
+472,34,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6145,False,True
+473,34,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.698,False,True
+474,34,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.724,False,True
+475,34,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7475,False,True
+476,35,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5885,False,True
+477,35,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.615,False,True
+478,35,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6985,False,True
+479,35,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7245,False,True
+480,35,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.748,False,True
+481,35,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.622,False,True
+482,35,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.589,False,True
+483,35,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6155,False,True
+484,35,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.699,False,True
+485,35,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.725,False,True
+486,35,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.75,False,True
+487,35,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6225,False,True
+488,35,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5895,False,True
+489,35,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.616,False,True
+490,36,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6995,False,True
+491,36,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7255,False,True
+492,36,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7505,False,True
+493,36,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.623,False,True
+494,36,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.59,False,True
+495,36,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6165,False,True
+496,36,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7,False,True
+497,36,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.726,False,True
+498,36,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.751,False,True
+499,36,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6235,False,True
+500,36,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5905,False,True
+501,36,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.617,False,True
+502,36,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7005,False,True
+503,36,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7265,False,True
+504,37,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7515,False,True
+505,37,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.624,False,True
+506,37,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.591,False,True
+507,37,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6175,False,True
+508,37,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.701,False,True
+509,37,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.727,False,True
+510,37,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.752,False,True
+511,37,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6245,False,True
+512,37,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5915,False,True
+513,37,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.618,False,True
+514,37,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.703,False,True
+515,37,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7275,False,True
+516,37,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7525,False,True
+517,37,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.625,False,True
+518,38,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.592,False,True
+519,38,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6185,False,True
+520,38,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7035,False,True
+521,38,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.728,False,True
+522,38,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.753,False,True
+523,38,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6255,False,True
+524,38,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5925,False,True
+525,38,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.619,False,True
+526,38,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.704,False,True
+527,38,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7285,False,True
+528,38,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7535,False,True
+529,38,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.626,False,True
+530,38,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.593,False,True
+531,38,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6195,False,True
+532,39,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7045,False,True
+533,39,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.729,False,True
+534,39,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.754,False,True
+535,39,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6265,False,True
+536,39,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5935,False,True
+537,39,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.62,False,True
+538,39,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.705,False,True
+539,39,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7295,False,True
+540,39,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7545,False,True
+541,39,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.627,False,True
+542,39,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5955,False,True
+543,39,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6205,False,True
+544,39,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7055,False,True
+545,39,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.73,False,True
+546,40,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.755,False,True
+547,40,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6275,False,True
+548,40,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.596,False,True
+549,40,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.621,False,True
+550,40,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.706,False,True
+551,40,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7305,False,True
+552,40,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7555,False,True
+553,40,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.628,False,True
+554,40,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5965,False,True
+555,40,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6215,False,True
+556,40,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7065,False,True
+557,40,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.731,False,True
+558,40,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.756,False,True
+559,40,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6285,False,True
+560,41,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.597,False,True
+561,41,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.622,False,True
+562,41,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.707,False,True
+563,41,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7315,False,True
+564,41,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7565,False,True
+565,41,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.629,False,True
+566,41,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.5975,False,True
+567,41,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6225,False,True
+568,41,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7075,False,True
+569,41,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.732,False,True
+570,41,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.757,False,True
+571,41,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6295,False,True
+572,41,Glassgarden Guild,1,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.598,False,True
+573,41,Index Guild,1,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.623,False,True
+574,42,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7325,False,True
+575,42,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7575,False,True
+576,42,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.63,False,True
+577,42,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.661,True,True
+578,42,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.686,True,True
+579,42,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.708,False,True
+580,42,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.733,False,True
+581,42,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.758,False,True
+582,42,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6305,False,True
+583,42,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6615,False,True
+584,42,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6865,False,True
+585,42,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7085,False,True
+586,42,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7335,False,True
+587,42,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7585,False,True
+588,43,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.631,False,True
+589,43,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.662,False,True
+590,43,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.687,False,True
+591,43,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.709,False,True
+592,43,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.734,False,True
+593,43,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.759,False,True
+594,43,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6315,False,True
+595,43,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6625,False,True
+596,43,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6875,False,True
+597,43,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7095,False,True
+598,43,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7345,False,True
+599,43,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7595,False,True
+600,43,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.632,False,True
+601,43,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.663,False,True
+602,44,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.688,False,True
+603,44,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.71,False,True
+604,44,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7365,False,True
+605,44,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.76,False,True
+606,44,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6325,False,True
+607,44,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6635,False,True
+608,44,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6885,False,True
+609,44,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7105,False,True
+610,44,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.737,False,True
+611,44,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7605,False,True
+612,44,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.633,False,True
+613,44,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.664,False,True
+614,44,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.689,False,True
+615,44,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.711,False,True
+616,45,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7375,False,True
+617,45,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.761,False,True
+618,45,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6335,False,True
+619,45,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6645,False,True
+620,45,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6895,False,True
+621,45,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7115,False,True
+622,45,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.738,False,True
+623,45,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7615,False,True
+624,45,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.634,False,True
+625,45,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.665,False,True
+626,45,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.69,False,True
+627,45,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.712,False,True
+628,45,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7385,False,True
+629,45,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.762,False,True
+630,46,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6345,False,True
+631,46,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6655,False,True
+632,46,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.692,False,True
+633,46,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7125,False,True
+634,46,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.739,False,True
+635,46,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7625,False,True
+636,46,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.635,False,True
+637,46,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.666,False,True
+638,46,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6925,False,True
+639,46,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.713,False,True
+640,46,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7395,False,True
+641,46,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.763,False,True
+642,46,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6355,False,True
+643,46,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6665,False,True
+644,47,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.693,False,True
+645,47,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7135,False,True
+646,47,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.74,False,True
+647,47,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7635,False,True
+648,47,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.636,False,True
+649,47,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.667,False,True
+650,47,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6935,False,True
+651,47,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.714,False,True
+652,47,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7405,False,True
+653,47,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.764,False,True
+654,47,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6365,False,True
+655,47,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6675,False,True
+656,47,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.694,False,True
+657,47,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7145,False,True
+658,48,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.741,False,True
+659,48,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7645,False,True
+660,48,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6385,False,True
+661,48,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.668,False,True
+662,48,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6945,False,True
+663,48,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.715,False,True
+664,48,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7415,False,True
+665,48,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.765,False,True
+666,48,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.639,False,True
+667,48,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6685,False,True
+668,48,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.695,False,True
+669,48,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7155,False,True
+670,48,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.742,False,True
+671,48,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7655,False,True
+672,49,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.669,False,True
+673,49,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6955,False,True
+674,49,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.716,False,True
+675,49,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7425,False,True
+676,49,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.766,False,True
+677,49,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6395,False,True
+678,49,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6695,False,True
+679,49,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.696,False,True
+680,49,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7165,False,True
+681,49,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.743,False,True
+682,49,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7665,False,True
+683,49,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.64,False,True
+684,49,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.67,False,True
+685,49,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6965,False,True
+686,50,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.717,False,True
+687,50,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7435,False,True
+688,50,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.767,False,True
+689,50,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6405,False,True
+690,50,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6705,False,True
+691,50,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.697,False,True
+692,50,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7175,False,True
+693,50,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.744,False,True
+694,50,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7675,False,True
+695,50,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.641,False,True
+696,50,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.671,False,True
+697,50,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6975,False,True
+698,50,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.718,False,True
+699,50,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7445,False,True
+700,51,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.768,False,True
+701,51,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6415,False,True
+702,51,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6715,False,True
+703,51,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.698,False,True
+704,51,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7185,False,True
+705,51,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.745,False,True
+706,51,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.77,False,True
+707,51,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.642,False,True
+708,51,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.672,False,True
+709,51,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6985,False,True
+710,51,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.719,False,True
+711,51,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7455,False,True
+712,51,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7705,False,True
+713,51,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6425,False,True
+714,52,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6725,False,True
+715,52,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.699,False,True
+716,52,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7195,False,True
+717,52,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.746,False,True
+718,52,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.771,False,True
+719,52,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.643,False,True
+720,52,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.673,False,True
+721,52,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6995,False,True
+722,52,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.72,False,True
+723,52,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7465,False,True
+724,52,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7715,False,True
+725,52,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6435,False,True
+726,52,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6735,False,True
+727,52,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7,False,True
+728,53,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7205,False,True
+729,53,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.747,False,True
+730,53,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.772,False,True
+731,53,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.644,False,True
+732,53,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.674,False,True
+733,53,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7005,False,True
+734,53,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7225,False,True
+735,53,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7475,False,True
+736,53,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7725,False,True
+737,53,Bridgewright Guild,2,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6445,False,True
+738,53,Glassgarden Guild,2,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.6745,False,True
+739,53,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.701,False,True
+740,53,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.723,False,True
+741,53,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.748,False,True
+742,54,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.773,False,True
+743,54,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7075,True,True
+744,54,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7375,True,True
+745,54,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7015,False,True
+746,54,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7235,False,True
+747,54,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7485,False,True
+748,54,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7735,False,True
+749,54,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.708,False,True
+750,54,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.738,False,True
+751,54,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.702,False,True
+752,54,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.724,False,True
+753,54,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.749,False,True
+754,54,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.774,False,True
+755,54,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7085,False,True
+756,55,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7385,False,True
+757,55,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7025,False,True
+758,55,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7245,False,True
+759,55,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7495,False,True
+760,55,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7745,False,True
+761,55,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.709,False,True
+762,55,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7405,False,True
+763,55,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.703,False,True
+764,55,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.725,False,True
+765,55,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.75,False,True
+766,55,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.775,False,True
+767,55,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7095,False,True
+768,55,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.741,False,True
+769,55,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7035,False,True
+770,56,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7505,False,True
+771,56,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7755,False,True
+772,56,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7115,False,True
+773,56,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7415,False,True
+774,56,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.704,False,True
+775,56,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7255,False,True
+776,56,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.751,False,True
+777,56,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.776,False,True
+778,56,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.712,False,True
+779,56,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.742,False,True
+780,56,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7045,False,True
+781,56,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.726,False,True
+782,56,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7515,False,True
+783,56,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7765,False,True
+784,57,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7125,False,True
+785,57,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7425,False,True
+786,57,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.705,False,True
+787,57,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7265,False,True
+788,57,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.752,False,True
+789,57,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.777,False,True
+790,57,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.713,False,True
+791,57,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.743,False,True
+792,57,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7055,False,True
+793,57,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.727,False,True
+794,57,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7525,False,True
+795,57,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7775,False,True
+796,57,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7135,False,True
+797,57,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7435,False,True
+798,58,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.706,False,True
+799,58,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7275,False,True
+800,58,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.753,False,True
+801,58,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.778,False,True
+802,58,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.714,False,True
+803,58,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.744,False,True
+804,58,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7065,False,True
+805,58,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.728,False,True
+806,58,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7535,False,True
+807,58,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7785,False,True
+808,58,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7145,False,True
+809,58,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7445,False,True
+810,58,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.707,False,True
+811,58,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7285,False,True
+812,59,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.754,False,True
+813,59,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.779,False,True
+814,59,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.715,False,True
+815,59,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.745,False,True
+816,59,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7075,False,True
+817,59,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.729,False,True
+818,59,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7545,False,True
+819,59,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7795,False,True
+820,59,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7155,False,True
+821,59,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7455,False,True
+822,59,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.708,False,True
+823,59,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7295,False,True
+824,59,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.755,False,True
+825,59,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.78,False,True
+826,60,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.716,False,True
+827,60,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.746,False,True
+828,60,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7085,False,True
+829,60,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.73,False,True
+830,60,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7555,False,True
+831,60,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7805,False,True
+832,60,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7165,False,True
+833,60,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7465,False,True
+834,60,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.709,False,True
+835,60,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7305,False,True
+836,60,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7575,False,True
+837,60,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.781,False,True
+838,60,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.717,False,True
+839,60,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.747,False,True
+840,61,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7095,False,True
+841,61,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.731,False,True
+842,61,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.758,False,True
+843,61,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7815,False,True
+844,61,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7175,False,True
+845,61,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7475,False,True
+846,61,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.71,False,True
+847,61,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7315,False,True
+848,61,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7585,False,True
+849,61,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.782,False,True
+850,61,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.718,False,True
+851,61,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.748,False,True
+852,61,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7105,False,True
+853,61,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.732,False,True
+854,62,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.759,False,True
+855,62,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7825,False,True
+856,62,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7185,False,True
+857,62,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7485,False,True
+858,62,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.711,False,True
+859,62,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7325,False,True
+860,62,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7595,False,True
+861,62,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.783,False,True
+862,62,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.719,False,True
+863,62,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.749,False,True
+864,62,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.713,False,True
+865,62,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.733,False,True
+866,62,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.76,False,True
+867,62,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7835,False,True
+868,63,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7495,False,True
+869,63,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7135,False,True
+870,63,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7335,False,True
+871,63,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7605,False,True
+872,63,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.784,False,True
+873,63,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7195,False,True
+874,63,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7515,False,True
+875,63,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.714,False,True
+876,63,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.734,False,True
+877,63,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.761,False,True
+878,63,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7845,False,True
+879,63,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.72,False,True
+880,63,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.752,False,True
+881,63,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7145,False,True
+882,64,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7345,False,True
+883,64,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7615,False,True
+884,64,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.785,False,True
+885,64,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7205,False,True
+886,64,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7525,False,True
+887,64,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.715,False,True
+888,64,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.735,False,True
+889,64,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.762,False,True
+890,64,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7855,False,True
+891,64,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.721,False,True
+892,64,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.753,False,True
+893,64,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7155,False,True
+894,64,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7355,False,True
+895,64,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7625,False,True
+896,65,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.786,False,True
+897,65,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7215,False,True
+898,65,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7535,False,True
+899,65,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.716,False,True
+900,65,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.736,False,True
+901,65,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.763,False,True
+902,65,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7865,False,True
+903,65,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.722,False,True
+904,65,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.754,False,True
+905,65,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7165,False,True
+906,65,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7365,False,True
+907,65,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7635,False,True
+908,65,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.787,False,True
+909,65,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7225,False,True
+910,66,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7545,False,True
+911,66,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.717,False,True
+912,66,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.737,False,True
+913,66,Seed Guild,2,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.764,False,True
+914,66,Repair Circle,2,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7875,False,True
+915,66,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.723,False,True
+916,66,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.755,False,True
+917,66,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7175,False,True
+918,66,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7375,False,True
+919,66,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.828125,True,True
+920,66,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85125,True,True
+921,66,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7235,False,True
+922,66,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7555,False,True
+923,66,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.718,False,True
+924,67,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.738,False,True
+925,67,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.828625,False,True
+926,67,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85325,False,True
+927,67,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.724,False,True
+928,67,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.756,False,True
+929,67,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7185,False,True
+930,67,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7385,False,True
+931,67,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.829125,False,True
+932,67,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85375,False,True
+933,67,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7245,False,True
+934,67,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7565,False,True
+935,67,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.719,False,True
+936,67,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.739,False,True
+937,67,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.829625,False,True
+938,68,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85425,False,True
+939,68,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.725,False,True
+940,68,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.757,False,True
+941,68,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7195,False,True
+942,68,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7395,False,True
+943,68,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.830125,False,True
+944,68,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85475,False,True
+945,68,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7255,False,True
+946,68,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7575,False,True
+947,68,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.72,False,True
+948,68,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.74,False,True
+949,68,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.830625,False,True
+950,68,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85525,False,True
+951,68,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.726,False,True
+952,69,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.758,False,True
+953,69,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7205,False,True
+954,69,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.742,False,True
+955,69,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.831125,False,True
+956,69,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85575,False,True
+957,69,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7265,False,True
+958,69,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7585,False,True
+959,69,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.721,False,True
+960,69,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7425,False,True
+961,69,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.831625,False,True
+962,69,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85625,False,True
+963,69,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.727,False,True
+964,69,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.759,False,True
+965,69,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7215,False,True
+966,70,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.832125,False,True
+967,70,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85675,False,True
+968,70,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7275,False,True
+969,70,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7595,False,True
+970,70,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.722,False,True
+971,70,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.743,False,True
+972,70,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.832625,False,True
+973,70,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85725,False,True
+974,70,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.728,False,True
+975,70,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.76,False,True
+976,70,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.724,False,True
+977,70,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7435,False,True
+978,70,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.833125,False,True
+979,70,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85775,False,True
+980,71,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7285,False,True
+981,71,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7605,False,True
+982,71,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7245,False,True
+983,71,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.744,False,True
+984,71,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.833625,False,True
+985,71,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85825,False,True
+986,71,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.729,False,True
+987,71,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.761,False,True
+988,71,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.725,False,True
+989,71,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7445,False,True
+990,71,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.834125,False,True
+991,71,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85875,False,True
+992,71,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7295,False,True
+993,71,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7615,False,True
+994,72,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7255,False,True
+995,72,Signal Guild,2,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.745,False,True
+996,72,Seed Guild,3,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.834625,False,True
+997,72,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85925,False,True
+998,72,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.73,False,True
+999,72,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.762,False,True
+1000,72,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.726,False,True
+1001,72,Signal Guild,3,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.81025,True,True
+1002,72,Seed Guild,4,Ivo,Mara,orchard_riverbend,avoid fen mud when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.89875,True,True
+1003,72,Repair Circle,3,Juno,Pax,central_repair_ring,avoid crowded repair yard when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.85975,False,True
+1004,72,Bridgewright Guild,3,Ari,Toma,riverbend_roofward,avoid river flood when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.732,False,True
+1005,72,Glassgarden Guild,3,Fay,Lio,roofward_archive,avoid glasshouse heat surge when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7625,False,True
+1006,72,Index Guild,2,Nia,Sera,archive_signal,avoid wind archive scatter when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.7265,False,True
+1007,72,Signal Guild,3,Milo,Ren,signal_orchard,avoid dusk ice when risk>0.42,"mark hazard, rehearse detour, repair after caravan clears",0.81075,False,True

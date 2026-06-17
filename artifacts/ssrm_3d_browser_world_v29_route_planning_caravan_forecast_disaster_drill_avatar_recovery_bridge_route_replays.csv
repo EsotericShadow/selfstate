@@ -1,0 +1,1009 @@
+tick_id,day,route_id,replay_event,state_hash,includes_route_plan,includes_caravan,includes_forecast,includes_disaster_drill,includes_guild_record,includes_avatar_intervention,replay_exportable
+0,1,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-574364,True,True,True,False,True,False,True
+1,1,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-600940,True,True,True,False,True,False,True
+2,1,archive_signal,spring_rain:archive_signal:direct route:open,v29-520406,True,True,True,False,True,False,True
+3,1,signal_orchard,spring_rain:signal_orchard:direct route:shored,v29-512285,True,True,True,False,True,False,True
+4,1,orchard_riverbend,spring_rain:orchard_riverbend:direct route:open,v29-559816,True,True,True,False,True,False,True
+5,1,central_repair_ring,spring_rain:central_repair_ring:direct route:shored,v29-612283,True,True,True,False,True,False,True
+6,1,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-574995,True,True,True,False,True,False,True
+7,1,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-601458,True,True,True,False,True,False,True
+8,1,archive_signal,spring_rain:archive_signal:direct route:open,v29-521263,True,True,True,False,True,False,True
+9,1,signal_orchard,spring_rain:signal_orchard:direct route:shored,v29-540060,True,True,True,False,True,False,True
+10,1,orchard_riverbend,spring_rain:orchard_riverbend:direct route:open,v29-569194,True,True,True,False,True,False,True
+11,1,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-587558,True,True,True,False,True,False,True
+12,1,riverbend_roofward,spring_rain:riverbend_roofward:direct route:blocked watch,v29-698045,True,True,True,False,True,False,True
+13,1,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611409,True,True,True,False,True,False,True
+14,2,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-575697,True,True,True,False,True,False,True
+15,2,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-528973,True,True,True,False,True,False,True
+16,2,orchard_riverbend,spring_rain:orchard_riverbend:direct route:open,v29-569956,True,True,True,False,True,False,True
+17,2,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-595513,True,True,True,False,True,False,True
+18,2,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-585020,True,True,True,False,True,False,True
+19,2,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611069,True,True,True,False,True,False,True
+20,2,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-574533,True,True,True,False,True,False,True
+21,2,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-596196,True,True,True,False,True,False,True
+22,2,orchard_riverbend,spring_rain:orchard_riverbend:direct route:blocked watch,v29-682915,True,True,True,False,True,False,True
+23,2,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-596772,True,True,True,False,True,False,True
+24,2,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-582903,True,True,True,False,True,False,True
+25,2,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611010,True,True,True,False,True,False,True
+26,2,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-575882,True,True,True,False,True,False,True
+27,2,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-602517,True,True,True,False,True,False,True
+28,3,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-642808,True,True,True,False,True,False,True
+29,3,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-596923,True,True,True,False,True,False,True
+30,3,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-582708,True,True,True,False,True,False,True
+31,3,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611291,True,True,True,False,True,False,True
+32,3,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-575468,True,True,True,False,True,False,True
+33,3,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-530358,True,True,True,False,True,False,True
+34,3,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-643106,True,True,True,False,True,False,True
+35,3,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-596355,True,True,True,False,True,False,True
+36,3,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-584544,True,True,True,False,True,False,True
+37,3,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611574,True,True,True,False,True,False,True
+38,3,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-574318,True,True,True,False,True,False,True
+39,3,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-604294,True,True,True,False,True,False,True
+40,3,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-641657,True,True,True,False,True,False,True
+41,3,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-596887,True,True,True,False,True,False,True
+42,4,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-706626,True,True,True,False,True,False,True
+43,4,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-612464,True,True,True,False,True,False,True
+44,4,archive_signal,spring_rain:archive_signal:direct route:open,v29-529583,True,True,True,False,True,False,True
+45,4,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-603383,True,True,True,False,True,False,True
+46,4,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-643199,True,True,True,False,True,False,True
+47,4,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-595117,True,True,True,False,True,False,True
+48,4,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-708071,True,True,True,False,True,False,True
+49,4,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-612121,True,True,True,False,True,False,True
+50,4,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-567942,True,True,True,False,True,False,True
+51,4,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-602673,True,True,True,False,True,False,True
+52,4,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-642116,True,True,True,False,True,False,True
+53,4,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-596105,True,True,True,False,True,False,True
+54,4,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-707082,True,True,True,False,True,False,True
+55,4,roofward_archive,spring_rain:roofward_archive:direct route:open,v29-557622,True,True,True,False,True,False,True
+56,5,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-576093,True,True,True,False,True,False,True
+57,5,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-603328,True,True,True,False,True,False,True
+58,5,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-644002,True,True,True,False,True,False,True
+59,5,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-619451,True,True,True,False,True,False,True
+60,5,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-706250,True,True,True,False,True,False,True
+61,5,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-610753,True,True,True,False,True,False,True
+62,5,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-567906,True,True,True,False,True,False,True
+63,5,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-529625,True,True,True,False,True,False,True
+64,5,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-642807,True,True,True,False,True,False,True
+65,5,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-628189,True,True,True,False,True,False,True
+66,5,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-584622,True,True,True,False,True,False,True
+67,5,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-612869,True,True,True,False,True,False,True
+68,5,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-575821,True,True,True,False,True,False,True
+69,5,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-530144,True,True,True,False,True,False,True
+70,6,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-643343,True,True,True,False,True,False,True
+71,6,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-627734,True,True,True,False,True,False,True
+72,6,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-699151,True,True,True,False,True,False,True
+73,6,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611664,True,True,True,False,True,False,True
+74,6,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-575861,True,True,True,False,True,False,True
+75,6,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-530892,True,True,True,False,True,False,True
+76,6,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-641894,True,True,True,False,True,False,True
+77,6,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-596891,True,True,True,False,True,False,True
+78,6,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-708140,True,True,True,False,True,False,True
+79,6,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-612226,True,True,True,False,True,False,True
+80,6,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-574810,True,True,True,True,True,False,True
+81,6,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-529053,True,True,True,False,True,False,True
+82,6,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-641814,True,True,True,False,True,False,True
+83,6,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-627333,True,True,True,False,True,False,True
+84,7,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611940,True,True,True,False,True,False,True
+85,7,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-575271,True,True,True,False,True,False,True
+86,7,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-522577,True,True,True,False,True,False,True
+87,7,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-643393,True,True,True,False,True,False,True
+88,7,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-597967,True,True,True,False,True,False,True
+89,7,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-707878,True,True,True,False,True,False,True
+90,7,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-611969,True,True,True,True,True,False,True
+91,7,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-576240,True,True,True,False,True,False,True
+92,7,signal_orchard,spring_rain:signal_orchard:direct route:blocked watch,v29-632108,True,True,True,False,True,False,True
+93,7,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-644051,True,True,True,False,True,False,True
+94,7,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-627832,True,True,True,False,True,False,True
+95,7,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-706266,True,True,True,False,True,False,True
+96,7,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-613593,True,True,True,False,True,False,True
+97,7,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-576897,True,True,True,False,True,False,True
+98,8,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-604024,True,True,True,False,True,False,True
+99,8,orchard_riverbend,spring_rain:orchard_riverbend:direct route:open,v29-571500,True,True,True,False,True,False,True
+100,8,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637878,True,True,True,False,True,True,True
+101,8,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-716828,True,True,True,False,True,False,True
+102,8,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-620568,True,True,True,False,True,False,True
+103,8,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-577268,True,True,True,False,True,True,True
+104,8,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-612866,True,True,True,False,True,False,True
+105,8,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-652770,True,True,True,False,True,False,True
+106,8,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638913,True,True,True,False,True,False,True
+107,8,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-710304,True,True,True,False,True,True,True
+108,8,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-621473,True,True,True,False,True,False,True
+109,8,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-583918,True,True,True,False,True,True,True
+110,8,signal_orchard,spring_rain:signal_orchard:direct route:blocked watch,v29-650346,True,True,True,False,True,False,True
+111,8,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-652689,True,True,True,False,True,False,True
+112,9,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638326,True,True,True,False,True,False,True
+113,9,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-709308,True,True,True,False,True,False,True
+114,9,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-620760,True,True,True,False,True,True,True
+115,9,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586482,True,True,True,False,True,False,True
+116,9,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-613427,True,True,True,False,True,False,True
+117,9,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653098,True,True,True,False,True,True,True
+118,9,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637256,True,True,True,False,True,False,True
+119,9,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-717703,True,True,True,False,True,False,True
+120,9,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-613824,True,True,True,False,True,False,True
+121,9,archive_signal,spring_rain:archive_signal:direct route:open,v29-539299,True,True,True,False,True,True,True
+122,9,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-612269,True,True,True,False,True,False,True
+123,9,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-645058,True,True,True,False,True,True,True
+124,9,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638533,True,True,True,False,True,False,True
+125,9,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-709267,True,True,True,False,True,False,True
+126,10,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-620624,True,True,True,False,True,False,True
+127,10,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-585477,True,True,True,False,True,False,True
+128,10,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-611588,True,True,True,False,True,True,True
+129,10,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-652535,True,True,True,False,True,False,True
+130,10,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637702,True,True,True,False,True,False,True
+131,10,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-716650,True,True,True,False,True,True,True
+132,10,roofward_archive,spring_rain:roofward_archive:direct route:open,v29-558971,True,True,True,False,True,False,True
+133,10,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-583962,True,True,True,False,True,False,True
+134,10,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614315,True,True,True,False,True,False,True
+135,10,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653475,True,True,True,False,True,True,True
+136,10,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-636505,True,True,True,False,True,False,True
+137,10,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-718119,True,True,True,False,True,True,True
+138,10,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-621059,True,True,True,False,True,False,True
+139,10,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-584858,True,True,True,False,True,False,True
+140,11,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-612014,True,True,True,False,True,False,True
+141,11,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-652910,True,True,True,False,True,False,True
+142,11,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637671,True,True,True,True,True,True,True
+143,11,riverbend_roofward,spring_rain:riverbend_roofward:direct route:blocked watch,v29-709161,True,True,True,False,True,False,True
+144,11,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622074,True,True,True,False,True,False,True
+145,11,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-585853,True,True,True,False,True,True,True
+146,11,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-615120,True,True,True,False,True,False,True
+147,11,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653322,True,True,True,False,True,False,True
+148,11,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638314,True,True,True,False,True,False,True
+149,11,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-718064,True,True,True,False,True,True,True
+150,11,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-620041,True,True,True,False,True,False,True
+151,11,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-584441,True,True,True,False,True,True,True
+152,11,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614054,True,True,True,False,True,False,True
+153,11,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-645395,True,True,True,False,True,False,True
+154,12,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-605261,True,True,True,False,True,False,True
+155,12,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-719294,True,True,True,False,True,False,True
+156,12,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-621308,True,True,True,False,True,True,True
+157,12,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586185,True,True,True,False,True,False,True
+158,12,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-611915,True,True,True,False,True,False,True
+159,12,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-654014,True,True,True,False,True,True,True
+160,12,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637042,True,True,True,False,True,False,True
+161,12,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-717137,True,True,True,False,True,False,True
+162,12,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-613860,True,True,True,False,True,False,True
+163,12,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586693,True,True,True,False,True,True,True
+164,12,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-612795,True,True,True,False,True,False,True
+165,12,orchard_riverbend,spring_rain:orchard_riverbend:direct route:open,v29-579828,True,True,True,False,True,True,True
+166,12,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-639937,True,True,True,False,True,False,True
+167,12,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-710996,True,True,True,False,True,False,True
+168,13,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622738,True,True,True,False,True,False,True
+169,13,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586652,True,True,True,False,True,False,True
+170,13,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-612481,True,True,True,True,True,True,True
+171,13,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-652610,True,True,True,False,True,False,True
+172,13,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638466,True,True,True,False,True,False,True
+173,13,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-716558,True,True,True,False,True,True,True
+174,13,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622905,True,True,True,False,True,False,True
+175,13,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586083,True,True,True,False,True,False,True
+176,13,signal_orchard,spring_rain:signal_orchard:direct route:blocked watch,v29-650631,True,True,True,False,True,False,True
+177,13,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653785,True,True,True,False,True,True,True
+178,13,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638022,True,True,True,False,True,False,True
+179,13,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-718158,True,True,True,False,True,True,True
+180,13,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-621710,True,True,True,False,True,False,True
+181,13,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586463,True,True,True,False,True,False,True
+182,14,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653134,True,True,True,False,True,False,True
+183,14,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-606357,True,True,True,False,True,False,True
+184,14,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-720218,True,True,True,False,True,True,True
+185,14,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-623045,True,True,True,False,True,False,True
+186,14,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-587412,True,True,True,False,True,False,True
+187,14,signal_orchard,spring_rain:signal_orchard:direct route:open,v29-538952,True,True,True,False,True,True,True
+188,14,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-654428,True,True,True,False,True,False,True
+189,14,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-601573,True,True,True,False,True,False,True
+190,14,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-719119,True,True,True,False,True,False,True
+191,14,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622202,True,True,True,False,True,False,True
+192,14,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-585636,True,True,True,True,True,False,True
+193,14,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-615155,True,True,True,False,True,True,True
+194,14,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653584,True,True,True,False,True,False,True
+195,14,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-601464,True,True,True,False,True,False,True
+196,15,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-718605,True,True,True,False,True,False,True
+197,15,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-621881,True,True,True,False,True,False,True
+198,15,archive_signal,spring_rain:archive_signal:direct route:open,v29-541225,True,True,True,False,True,True,True
+199,15,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614593,True,True,True,False,True,False,True
+200,15,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653635,True,True,True,False,True,False,True
+201,15,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637167,True,True,True,False,True,True,True
+202,15,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-710314,True,True,True,False,True,False,True
+203,15,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-613968,True,True,True,False,True,False,True
+204,15,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586325,True,True,True,False,True,False,True
+205,15,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614125,True,True,True,False,True,False,True
+206,15,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653823,True,True,True,False,True,False,True
+207,15,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638090,True,True,True,False,True,True,True
+208,15,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-718981,True,True,True,False,True,False,True
+209,15,roofward_archive,spring_rain:roofward_archive:direct route:open,v29-566737,True,True,True,False,True,False,True
+210,16,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586242,True,True,True,False,True,False,True
+211,16,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-612964,True,True,True,False,True,False,True
+212,16,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653242,True,True,True,False,True,True,True
+213,16,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-637621,True,True,True,False,True,False,True
+214,16,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-719943,True,True,True,False,True,False,True
+215,16,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622147,True,True,True,False,True,True,True
+216,16,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586414,True,True,True,False,True,False,True
+217,16,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-611899,True,True,True,False,True,False,True
+218,16,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-652772,True,True,True,False,True,False,True
+219,16,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-629521,True,True,True,False,True,False,True
+220,16,riverbend_roofward,spring_rain:riverbend_roofward:direct route:open,v29-594135,True,True,True,True,True,False,True
+221,16,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-621797,True,True,True,False,True,True,True
+222,16,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-579469,True,True,True,False,True,False,True
+223,16,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614260,True,True,True,False,True,False,True
+224,17,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653048,True,True,True,False,True,False,True
+225,17,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638467,True,True,True,False,True,False,True
+226,17,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-719253,True,True,True,False,True,True,True
+227,17,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622699,True,True,True,False,True,False,True
+228,17,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586245,True,True,True,False,True,False,True
+229,17,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614809,True,True,True,False,True,True,True
+230,17,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653715,True,True,True,False,True,False,True
+231,17,central_repair_ring,spring_rain:central_repair_ring:direct route:open,v29-607073,True,True,True,False,True,False,True
+232,17,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-711565,True,True,True,False,True,False,True
+233,17,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622641,True,True,True,False,True,False,True
+234,17,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586642,True,True,True,False,True,False,True
+235,17,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-614343,True,True,True,False,True,True,True
+236,17,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-653401,True,True,True,False,True,False,True
+237,17,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638553,True,True,True,False,True,False,True
+238,18,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-720235,True,True,True,False,True,False,True
+239,18,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-620325,True,True,True,False,True,False,True
+240,18,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-586081,True,True,True,False,True,True,True
+241,18,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-613651,True,True,True,False,True,False,True
+242,18,orchard_riverbend,spring_rain:orchard_riverbend:direct route:open,v29-579330,True,True,True,False,True,False,True
+243,18,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638345,True,True,True,False,True,True,True
+244,18,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-718843,True,True,True,False,True,False,True
+245,18,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622336,True,True,True,False,True,False,True
+246,18,archive_signal,spring_rain:archive_signal:stone kiosk path:open,v29-587591,True,True,True,False,True,False,True
+247,18,signal_orchard,spring_rain:signal_orchard:river lantern loop:open,v29-606894,True,True,True,False,True,False,True
+248,18,orchard_riverbend,spring_rain:orchard_riverbend:market plank route:open,v29-654985,True,True,True,False,True,False,True
+249,18,central_repair_ring,spring_rain:central_repair_ring:outer bell path:open,v29-638885,True,True,True,False,True,True,True
+250,18,riverbend_roofward,spring_rain:riverbend_roofward:orchard_fen ridge path:open,v29-710401,True,True,True,False,True,False,True
+251,18,roofward_archive,spring_rain:roofward_archive:cool archive lane:open,v29-622487,True,True,True,False,True,False,True
+252,19,archive_signal,summer_dry:archive_signal:direct route:open,v29-529205,True,True,True,False,True,False,True
+253,19,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530061,True,True,True,False,True,False,True
+254,19,orchard_riverbend,summer_dry:orchard_riverbend:market plank route:open,v29-643253,True,True,True,False,True,True,True
+255,19,central_repair_ring,summer_dry:central_repair_ring:outer bell path:open,v29-627803,True,True,True,False,True,False,True
+256,19,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-699158,True,True,True,False,True,False,True
+257,19,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-521330,True,True,True,False,True,True,True
+258,19,archive_signal,summer_dry:archive_signal:direct route:open,v29-531007,True,True,True,False,True,False,True
+259,19,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530002,True,True,True,False,True,False,True
+260,19,orchard_riverbend,summer_dry:orchard_riverbend:market plank route:open,v29-643275,True,True,True,False,True,False,True
+261,19,central_repair_ring,summer_dry:central_repair_ring:outer bell path:open,v29-625504,True,True,True,False,True,False,True
+262,19,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-706882,True,True,True,False,True,False,True
+263,19,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556389,True,True,True,False,True,True,True
+264,19,archive_signal,summer_dry:archive_signal:direct route:open,v29-531256,True,True,True,False,True,False,True
+265,19,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-522976,True,True,True,False,True,False,True
+266,20,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-553949,True,True,True,False,True,False,True
+267,20,central_repair_ring,summer_dry:central_repair_ring:outer bell path:open,v29-626033,True,True,True,False,True,False,True
+268,20,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-707690,True,True,True,False,True,True,True
+269,20,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555150,True,True,True,False,True,False,True
+270,20,archive_signal,summer_dry:archive_signal:direct route:open,v29-530713,True,True,True,False,True,False,True
+271,20,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530166,True,True,True,False,True,True,True
+272,20,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-568338,True,True,True,True,True,False,True
+273,20,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595632,True,True,True,False,True,False,True
+274,20,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-707345,True,True,True,False,True,False,True
+275,20,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557183,True,True,True,False,True,False,True
+276,20,archive_signal,summer_dry:archive_signal:direct route:open,v29-530418,True,True,True,False,True,False,True
+277,20,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530151,True,True,True,False,True,True,True
+278,20,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-570054,True,True,True,False,True,False,True
+279,20,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-594496,True,True,True,False,True,False,True
+280,21,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-549051,True,True,True,False,True,False,True
+281,21,archive_signal,summer_dry:archive_signal:direct route:open,v29-529464,True,True,True,False,True,False,True
+282,21,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-529985,True,True,True,True,True,False,True
+283,21,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-568584,True,True,True,False,True,False,True
+284,21,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-587740,True,True,True,False,True,False,True
+285,21,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-706593,True,True,True,False,True,False,True
+286,21,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-554737,True,True,True,False,True,False,True
+287,21,archive_signal,summer_dry:archive_signal:direct route:open,v29-530328,True,True,True,False,True,False,True
+288,21,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-529925,True,True,True,False,True,False,True
+289,21,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-570540,True,True,True,False,True,True,True
+290,21,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-596041,True,True,True,False,True,False,True
+291,21,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-699222,True,True,True,False,True,False,True
+292,21,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556516,True,True,True,False,True,False,True
+293,21,archive_signal,summer_dry:archive_signal:direct route:open,v29-530574,True,True,True,False,True,False,True
+294,22,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530178,True,True,True,False,True,False,True
+295,22,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-569869,True,True,True,False,True,False,True
+296,22,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595509,True,True,True,False,True,False,True
+297,22,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-584041,True,True,True,False,True,False,True
+298,22,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556444,True,True,True,False,True,False,True
+299,22,archive_signal,summer_dry:archive_signal:direct route:open,v29-509656,True,True,True,False,True,False,True
+300,22,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-529586,True,True,True,False,True,False,True
+301,22,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-567991,True,True,True,False,True,False,True
+302,22,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595390,True,True,True,False,True,False,True
+303,22,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-711913,True,True,True,False,True,True,True
+304,22,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555298,True,True,True,False,True,False,True
+305,22,archive_signal,summer_dry:archive_signal:direct route:open,v29-529835,True,True,True,False,True,False,True
+306,22,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-522038,True,True,True,False,True,False,True
+307,22,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-562484,True,True,True,False,True,False,True
+308,23,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595827,True,True,True,False,True,False,True
+309,23,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-713492,True,True,True,False,True,False,True
+310,23,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-547452,True,True,True,True,True,False,True
+311,23,archive_signal,summer_dry:archive_signal:direct route:open,v29-529392,True,True,True,False,True,False,True
+312,23,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-528763,True,True,True,False,True,False,True
+313,23,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-570440,True,True,True,False,True,False,True
+314,23,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595597,True,True,True,False,True,False,True
+315,23,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-553321,True,True,True,False,True,False,True
+316,23,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556555,True,True,True,False,True,False,True
+317,23,archive_signal,summer_dry:archive_signal:direct route:open,v29-530383,True,True,True,False,True,True,True
+318,23,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530443,True,True,True,False,True,False,True
+319,23,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-570013,True,True,True,False,True,False,True
+320,23,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-596119,True,True,True,False,True,False,True
+321,23,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-588555,True,True,True,False,True,False,True
+322,24,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-554476,True,True,True,False,True,False,True
+323,24,archive_signal,summer_dry:archive_signal:direct route:open,v29-530522,True,True,True,False,True,False,True
+324,24,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530817,True,True,True,False,True,False,True
+325,24,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-533582,True,True,True,False,True,False,True
+326,24,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595345,True,True,True,False,True,False,True
+327,24,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-582005,True,True,True,False,True,False,True
+328,24,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-550300,True,True,True,False,True,False,True
+329,24,archive_signal,summer_dry:archive_signal:direct route:open,v29-495531,True,True,True,False,True,False,True
+330,24,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-528863,True,True,True,False,True,False,True
+331,24,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-566932,True,True,True,False,True,True,True
+332,24,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595116,True,True,True,False,True,False,True
+333,24,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-588634,True,True,True,False,True,False,True
+334,24,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555478,True,True,True,False,True,False,True
+335,24,archive_signal,summer_dry:archive_signal:direct route:open,v29-528933,True,True,True,False,True,False,True
+336,25,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-521549,True,True,True,False,True,False,True
+337,25,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-561777,True,True,True,False,True,False,True
+338,25,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-596139,True,True,True,False,True,False,True
+339,25,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-588666,True,True,True,False,True,False,True
+340,25,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555384,True,True,True,False,True,False,True
+341,25,archive_signal,summer_dry:archive_signal:direct route:open,v29-528601,True,True,True,False,True,False,True
+342,25,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-529873,True,True,True,False,True,False,True
+343,25,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-568782,True,True,True,False,True,False,True
+344,25,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-587886,True,True,True,False,True,False,True
+345,25,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-582967,True,True,True,False,True,True,True
+346,25,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556412,True,True,True,False,True,False,True
+347,25,archive_signal,summer_dry:archive_signal:direct route:open,v29-528544,True,True,True,False,True,False,True
+348,25,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530522,True,True,True,False,True,False,True
+349,25,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-569538,True,True,True,False,True,False,True
+350,26,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595604,True,True,True,False,True,False,True
+351,26,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-587197,True,True,True,False,True,False,True
+352,26,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556194,True,True,True,False,True,False,True
+353,26,archive_signal,summer_dry:archive_signal:direct route:open,v29-530184,True,True,True,False,True,False,True
+354,26,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-530314,True,True,True,False,True,False,True
+355,26,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-568181,True,True,True,False,True,False,True
+356,26,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-597935,True,True,True,False,True,False,True
+357,26,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-583403,True,True,True,False,True,False,True
+358,26,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-550018,True,True,True,False,True,False,True
+359,26,archive_signal,summer_dry:archive_signal:direct route:open,v29-534466,True,True,True,False,True,True,True
+360,26,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-529988,True,True,True,False,True,False,True
+361,26,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-568671,True,True,True,False,True,False,True
+362,26,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595447,True,True,True,False,True,False,True
+363,26,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-588956,True,True,True,False,True,False,True
+364,27,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-548892,True,True,True,False,True,False,True
+365,27,archive_signal,summer_dry:archive_signal:direct route:open,v29-535291,True,True,True,False,True,False,True
+366,27,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-531673,True,True,True,False,True,False,True
+367,27,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-568959,True,True,True,False,True,False,True
+368,27,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-597422,True,True,True,False,True,False,True
+369,27,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-588659,True,True,True,False,True,False,True
+370,27,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555245,True,True,True,False,True,False,True
+371,27,archive_signal,summer_dry:archive_signal:direct route:open,v29-533805,True,True,True,False,True,False,True
+372,27,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-495256,True,True,True,False,True,False,True
+373,27,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-575174,True,True,True,False,True,True,True
+374,27,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595993,True,True,True,True,True,False,True
+375,27,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-588924,True,True,True,False,True,False,True
+376,27,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555658,True,True,True,False,True,False,True
+377,27,archive_signal,summer_dry:archive_signal:direct route:open,v29-535828,True,True,True,False,True,False,True
+378,28,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574910,True,True,True,False,True,False,True
+379,28,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-560177,True,True,True,False,True,False,True
+380,28,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-581699,True,True,True,False,True,True,True
+381,28,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-556661,True,True,True,False,True,False,True
+382,28,archive_signal,summer_dry:archive_signal:direct route:open,v29-534039,True,True,True,False,True,False,True
+383,28,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-522743,True,True,True,False,True,True,True
+384,28,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-573793,True,True,True,True,True,False,True
+385,28,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595213,True,True,True,False,True,False,True
+386,28,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589174,True,True,True,False,True,False,True
+387,28,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557458,True,True,True,False,True,True,True
+388,28,archive_signal,summer_dry:archive_signal:direct route:open,v29-534122,True,True,True,False,True,False,True
+389,28,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-535336,True,True,True,False,True,True,True
+390,28,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-573697,True,True,True,False,True,False,True
+391,28,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595362,True,True,True,False,True,False,True
+392,29,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-574182,True,True,True,False,True,False,True
+393,29,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-549964,True,True,True,False,True,False,True
+394,29,archive_signal,summer_dry:archive_signal:direct route:open,v29-535191,True,True,True,False,True,True,True
+395,29,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-521791,True,True,True,False,True,False,True
+396,29,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574817,True,True,True,False,True,False,True
+397,29,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595308,True,True,True,False,True,True,True
+398,29,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589991,True,True,True,False,True,False,True
+399,29,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557540,True,True,True,False,True,False,True
+400,29,archive_signal,summer_dry:archive_signal:stone kiosk path:open,v29-579595,True,True,True,False,True,False,True
+401,29,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-527670,True,True,True,False,True,True,True
+402,29,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574095,True,True,True,False,True,False,True
+403,29,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-594958,True,True,True,False,True,True,True
+404,29,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589282,True,True,True,False,True,False,True
+405,29,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-550123,True,True,True,False,True,False,True
+406,30,archive_signal,summer_dry:archive_signal:direct route:open,v29-534432,True,True,True,False,True,False,True
+407,30,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-535061,True,True,True,False,True,False,True
+408,30,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574896,True,True,True,False,True,True,True
+409,30,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-594998,True,True,True,False,True,False,True
+410,30,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-581525,True,True,True,False,True,False,True
+411,30,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-555452,True,True,True,False,True,True,True
+412,30,archive_signal,summer_dry:archive_signal:direct route:open,v29-535027,True,True,True,True,True,False,True
+413,30,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-534297,True,True,True,False,True,False,True
+414,30,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574087,True,True,True,False,True,False,True
+415,30,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-587738,True,True,True,False,True,True,True
+416,30,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-581588,True,True,True,False,True,False,True
+417,30,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557519,True,True,True,False,True,True,True
+418,30,archive_signal,summer_dry:archive_signal:direct route:open,v29-520281,True,True,True,False,True,False,True
+419,30,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-535058,True,True,True,False,True,False,True
+420,31,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-573766,True,True,True,False,True,False,True
+421,31,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595325,True,True,True,False,True,False,True
+422,31,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589900,True,True,True,False,True,True,True
+423,31,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-549324,True,True,True,False,True,False,True
+424,31,archive_signal,summer_dry:archive_signal:direct route:open,v29-535600,True,True,True,False,True,False,True
+425,31,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-534503,True,True,True,False,True,True,True
+426,31,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574523,True,True,True,False,True,False,True
+427,31,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-596225,True,True,True,False,True,False,True
+428,31,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589470,True,True,True,False,True,False,True
+429,31,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-558199,True,True,True,False,True,True,True
+430,31,archive_signal,summer_dry:archive_signal:direct route:open,v29-534566,True,True,True,False,True,False,True
+431,31,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-536036,True,True,True,False,True,True,True
+432,31,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574777,True,True,True,False,True,False,True
+433,31,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-595291,True,True,True,False,True,False,True
+434,32,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589736,True,True,True,False,True,False,True
+435,32,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557161,True,True,True,False,True,False,True
+436,32,archive_signal,summer_dry:archive_signal:direct route:open,v29-535917,True,True,True,False,True,True,True
+437,32,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-536101,True,True,True,False,True,False,True
+438,32,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574024,True,True,True,False,True,False,True
+439,32,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-589351,True,True,True,False,True,True,True
+440,32,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-590235,True,True,True,True,True,False,True
+441,32,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557187,True,True,True,False,True,False,True
+442,32,archive_signal,summer_dry:archive_signal:direct route:open,v29-535118,True,True,True,False,True,False,True
+443,32,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-534187,True,True,True,False,True,True,True
+444,32,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574159,True,True,True,False,True,False,True
+445,32,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-601293,True,True,True,False,True,True,True
+446,32,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589836,True,True,True,False,True,False,True
+447,32,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557957,True,True,True,False,True,False,True
+448,33,archive_signal,summer_dry:archive_signal:direct route:open,v29-536136,True,True,True,False,True,False,True
+449,33,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-535755,True,True,True,False,True,False,True
+450,33,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574448,True,True,True,False,True,True,True
+451,33,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-600027,True,True,True,False,True,False,True
+452,33,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589137,True,True,True,False,True,False,True
+453,33,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-557162,True,True,True,False,True,True,True
+454,33,archive_signal,summer_dry:archive_signal:direct route:open,v29-534641,True,True,True,False,True,False,True
+455,33,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-534493,True,True,True,False,True,False,True
+456,33,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-575568,True,True,True,False,True,False,True
+457,33,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-601640,True,True,True,False,True,True,True
+458,33,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-591343,True,True,True,False,True,False,True
+459,33,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-559120,True,True,True,False,True,True,True
+460,33,archive_signal,summer_dry:archive_signal:direct route:open,v29-535941,True,True,True,False,True,False,True
+461,33,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-534167,True,True,True,False,True,False,True
+462,34,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-573351,True,True,True,False,True,False,True
+463,34,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-600578,True,True,True,False,True,False,True
+464,34,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589825,True,True,True,False,True,True,True
+465,34,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-558090,True,True,True,False,True,False,True
+466,34,archive_signal,summer_dry:archive_signal:direct route:open,v29-535878,True,True,True,False,True,False,True
+467,34,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-537004,True,True,True,False,True,True,True
+468,34,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-575188,True,True,True,False,True,False,True
+469,34,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-601719,True,True,True,False,True,False,True
+470,34,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-589143,True,True,True,False,True,False,True
+471,34,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-563293,True,True,True,False,True,True,True
+472,34,archive_signal,summer_dry:archive_signal:direct route:open,v29-537518,True,True,True,False,True,False,True
+473,34,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-528448,True,True,True,False,True,True,True
+474,34,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574614,True,True,True,False,True,False,True
+475,34,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-600427,True,True,True,False,True,False,True
+476,35,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-527145,True,True,True,False,True,False,True
+477,35,archive_signal,summer_dry:archive_signal:direct route:open,v29-533956,True,True,True,False,True,False,True
+478,35,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-535898,True,True,True,False,True,True,True
+479,35,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-575421,True,True,True,False,True,False,True
+480,35,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-601948,True,True,True,False,True,False,True
+481,35,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-590828,True,True,True,False,True,True,True
+482,35,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-561721,True,True,True,False,True,False,True
+483,35,archive_signal,summer_dry:archive_signal:direct route:open,v29-535256,True,True,True,False,True,False,True
+484,35,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-536735,True,True,True,False,True,False,True
+485,35,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-575228,True,True,True,False,True,False,True
+486,35,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-600567,True,True,True,True,True,False,True
+487,35,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-583461,True,True,True,False,True,True,True
+488,35,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-562019,True,True,True,False,True,False,True
+489,35,archive_signal,summer_dry:archive_signal:direct route:open,v29-535193,True,True,True,False,True,False,True
+490,36,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-536409,True,True,True,False,True,False,True
+491,36,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-573246,True,True,True,False,True,False,True
+492,36,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-601918,True,True,True,False,True,True,True
+493,36,riverbend_roofward,summer_dry:riverbend_roofward:orchard_fen ridge path:open,v29-714325,True,True,True,False,True,False,True
+494,36,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-561449,True,True,True,False,True,False,True
+495,36,archive_signal,summer_dry:archive_signal:direct route:open,v29-536383,True,True,True,False,True,True,True
+496,36,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-536240,True,True,True,False,True,False,True
+497,36,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574366,True,True,True,False,True,False,True
+498,36,central_repair_ring,summer_dry:central_repair_ring:direct route:open,v29-601887,True,True,True,False,True,False,True
+499,36,riverbend_roofward,summer_dry:riverbend_roofward:direct route:open,v29-590872,True,True,True,False,True,False,True
+500,36,roofward_archive,summer_dry:roofward_archive:direct route:open,v29-559712,True,True,True,False,True,False,True
+501,36,archive_signal,summer_dry:archive_signal:direct route:open,v29-535096,True,True,True,False,True,True,True
+502,36,signal_orchard,summer_dry:signal_orchard:direct route:open,v29-534392,True,True,True,False,True,False,True
+503,36,orchard_riverbend,summer_dry:orchard_riverbend:direct route:open,v29-574605,True,True,True,False,True,False,True
+504,37,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-613700,True,True,True,False,True,False,True
+505,37,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-602606,True,True,True,False,True,False,True
+506,37,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-574596,True,True,True,False,True,True,True
+507,37,archive_signal,autumn_wind:archive_signal:direct route:open,v29-546755,True,True,True,False,True,False,True
+508,37,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547662,True,True,True,False,True,False,True
+509,37,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587964,True,True,True,False,True,True,True
+510,37,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614935,True,True,True,False,True,False,True
+511,37,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-725386,True,True,True,False,True,False,True
+512,37,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-628989,True,True,True,False,True,False,True
+513,37,archive_signal,autumn_wind:archive_signal:direct route:open,v29-546311,True,True,True,False,True,False,True
+514,37,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547568,True,True,True,True,True,False,True
+515,37,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587509,True,True,True,False,True,True,True
+516,37,central_repair_ring,autumn_wind:central_repair_ring:direct route:blocked watch,v29-731543,True,True,True,False,True,False,True
+517,37,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-604129,True,True,True,False,True,False,True
+518,38,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-629288,True,True,True,False,True,False,True
+519,38,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547069,True,True,True,False,True,False,True
+520,38,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-548053,True,True,True,False,True,True,True
+521,38,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-586840,True,True,True,False,True,False,True
+522,38,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-613831,True,True,True,False,True,False,True
+523,38,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-728340,True,True,True,False,True,True,True
+524,38,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-628840,True,True,True,False,True,False,True
+525,38,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547442,True,True,True,False,True,False,True
+526,38,signal_orchard,autumn_wind:signal_orchard:direct route:blocked watch,v29-660421,True,True,True,False,True,False,True
+527,38,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587499,True,True,True,False,True,False,True
+528,38,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-615074,True,True,True,False,True,False,True
+529,38,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726695,True,True,True,False,True,True,True
+530,38,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-628379,True,True,True,False,True,False,True
+531,38,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-586655,True,True,True,False,True,False,True
+532,39,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-548705,True,True,True,False,True,False,True
+533,39,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587647,True,True,True,False,True,False,True
+534,39,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-613782,True,True,True,False,True,True,True
+535,39,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726480,True,True,True,False,True,False,True
+536,39,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-622000,True,True,True,False,True,False,True
+537,39,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-593382,True,True,True,False,True,True,True
+538,39,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622040,True,True,True,False,True,False,True
+539,39,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587931,True,True,True,False,True,False,True
+540,39,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614440,True,True,True,False,True,False,True
+541,39,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726398,True,True,True,False,True,False,True
+542,39,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-615171,True,True,True,True,True,False,True
+543,39,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594264,True,True,True,False,True,True,True
+544,39,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622215,True,True,True,False,True,False,True
+545,39,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-586896,True,True,True,False,True,False,True
+546,40,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-608267,True,True,True,False,True,False,True
+547,40,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-728102,True,True,True,False,True,False,True
+548,40,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-629351,True,True,True,False,True,True,True
+549,40,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594435,True,True,True,False,True,False,True
+550,40,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547206,True,True,True,False,True,False,True
+551,40,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-654191,True,True,True,False,True,True,True
+552,40,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-615480,True,True,True,False,True,False,True
+553,40,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-729201,True,True,True,False,True,False,True
+554,40,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-629158,True,True,True,False,True,False,True
+555,40,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-593857,True,True,True,False,True,False,True
+556,40,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-621809,True,True,True,False,True,False,True
+557,40,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587958,True,True,True,False,True,True,True
+558,40,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-578371,True,True,True,False,True,False,True
+559,40,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-728438,True,True,True,False,True,False,True
+560,41,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-628344,True,True,True,False,True,False,True
+561,41,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547683,True,True,True,False,True,False,True
+562,41,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622695,True,True,True,False,True,True,True
+563,41,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:blocked watch,v29-702266,True,True,True,False,True,False,True
+564,41,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614025,True,True,True,False,True,False,True
+565,41,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727345,True,True,True,False,True,True,True
+566,41,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-629987,True,True,True,False,True,False,True
+567,41,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548204,True,True,True,False,True,False,True
+568,41,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-623860,True,True,True,False,True,False,True
+569,41,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588273,True,True,True,False,True,False,True
+570,41,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-605902,True,True,True,False,True,False,True
+571,41,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727395,True,True,True,False,True,True,True
+572,41,roofward_archive,autumn_wind:roofward_archive:direct route:blocked watch,v29-688419,True,True,True,False,True,False,True
+573,41,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547313,True,True,True,False,True,False,True
+574,42,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588593,True,True,True,False,True,False,True
+575,42,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614169,True,True,True,False,True,False,True
+576,42,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-729054,True,True,True,False,True,False,True
+577,42,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-630366,True,True,True,False,True,False,True
+578,42,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547422,True,True,True,False,True,False,True
+579,42,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-624353,True,True,True,False,True,False,True
+580,42,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587316,True,True,True,False,True,False,True
+581,42,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-623381,True,True,True,False,True,False,True
+582,42,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727793,True,True,True,False,True,False,True
+583,42,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-574370,True,True,True,False,True,True,True
+584,42,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548260,True,True,True,False,True,False,True
+585,42,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-621828,True,True,True,False,True,False,True
+586,42,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:blocked watch,v29-702246,True,True,True,False,True,False,True
+587,42,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646759,True,True,True,False,True,False,True
+588,43,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-729363,True,True,True,False,True,False,True
+589,43,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-629978,True,True,True,False,True,False,True
+590,43,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547579,True,True,True,False,True,False,True
+591,43,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622475,True,True,True,False,True,False,True
+592,43,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588601,True,True,True,False,True,False,True
+593,43,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646526,True,True,True,False,True,False,True
+594,43,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-567462,True,True,True,False,True,False,True
+595,43,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575617,True,True,True,False,True,False,True
+596,43,archive_signal,autumn_wind:archive_signal:direct route:blocked watch,v29-659938,True,True,True,False,True,False,True
+597,43,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622287,True,True,True,False,True,True,True
+598,43,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-589000,True,True,True,False,True,False,True
+599,43,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-647464,True,True,True,False,True,False,True
+600,43,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726560,True,True,True,False,True,False,True
+601,43,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-574429,True,True,True,False,True,False,True
+602,44,archive_signal,autumn_wind:archive_signal:direct route:open,v29-549488,True,True,True,False,True,False,True
+603,44,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622683,True,True,True,False,True,False,True
+604,44,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588419,True,True,True,True,True,False,True
+605,44,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-613610,True,True,True,False,True,False,True
+606,44,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727105,True,True,True,False,True,False,True
+607,44,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-574750,True,True,True,False,True,False,True
+608,44,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548293,True,True,True,False,True,False,True
+609,44,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622731,True,True,True,False,True,False,True
+610,44,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587138,True,True,True,False,True,False,True
+611,44,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646163,True,True,True,False,True,True,True
+612,44,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727286,True,True,True,False,True,False,True
+613,44,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575357,True,True,True,False,True,False,True
+614,44,archive_signal,autumn_wind:archive_signal:direct route:blocked watch,v29-660030,True,True,True,False,True,False,True
+615,44,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-623978,True,True,True,False,True,False,True
+616,45,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-551885,True,True,True,False,True,False,True
+617,45,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-645605,True,True,True,False,True,False,True
+618,45,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727038,True,True,True,False,True,False,True
+619,45,roofward_archive,autumn_wind:roofward_archive:direct route:blocked watch,v29-689403,True,True,True,False,True,False,True
+620,45,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548808,True,True,True,False,True,False,True
+621,45,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-621566,True,True,True,False,True,False,True
+622,45,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661168,True,True,True,False,True,False,True
+623,45,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-645520,True,True,True,False,True,False,True
+624,45,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-727613,True,True,True,False,True,False,True
+625,45,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575445,True,True,True,False,True,True,True
+626,45,archive_signal,autumn_wind:archive_signal:direct route:open,v29-550150,True,True,True,False,True,False,True
+627,45,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547456,True,True,True,False,True,False,True
+628,45,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661829,True,True,True,False,True,False,True
+629,45,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646051,True,True,True,False,True,False,True
+630,46,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-602712,True,True,True,False,True,False,True
+631,46,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-630371,True,True,True,False,True,False,True
+632,46,archive_signal,autumn_wind:archive_signal:direct route:open,v29-549351,True,True,True,True,True,False,True
+633,46,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622028,True,True,True,False,True,False,True
+634,46,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-660988,True,True,True,False,True,False,True
+635,46,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-647188,True,True,True,False,True,False,True
+636,46,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-603477,True,True,True,False,True,False,True
+637,46,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-630400,True,True,True,False,True,False,True
+638,46,archive_signal,autumn_wind:archive_signal:direct route:open,v29-549176,True,True,True,False,True,False,True
+639,46,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-621388,True,True,True,False,True,True,True
+640,46,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-660779,True,True,True,False,True,False,True
+641,46,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646004,True,True,True,False,True,False,True
+642,46,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:blocked watch,v29-718669,True,True,True,False,True,False,True
+643,46,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575096,True,True,True,False,True,False,True
+644,47,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-557967,True,True,True,False,True,False,True
+645,47,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-615534,True,True,True,False,True,False,True
+646,47,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-663321,True,True,True,False,True,False,True
+647,47,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646541,True,True,True,False,True,False,True
+648,47,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-596074,True,True,True,False,True,False,True
+649,47,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575153,True,True,True,False,True,False,True
+650,47,archive_signal,autumn_wind:archive_signal:direct route:open,v29-546835,True,True,True,False,True,False,True
+651,47,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-621455,True,True,True,False,True,False,True
+652,47,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661504,True,True,True,False,True,False,True
+653,47,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-647839,True,True,True,False,True,True,True
+654,47,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-603233,True,True,True,False,True,False,True
+655,47,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575643,True,True,True,False,True,False,True
+656,47,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594745,True,True,True,False,True,False,True
+657,47,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-621854,True,True,True,False,True,False,True
+658,48,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-660533,True,True,True,False,True,False,True
+659,48,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-646157,True,True,True,False,True,False,True
+660,48,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-602065,True,True,True,True,True,False,True
+661,48,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-574034,True,True,True,False,True,False,True
+662,48,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-592850,True,True,True,False,True,False,True
+663,48,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-546546,True,True,True,False,True,False,True
+664,48,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661438,True,True,True,False,True,False,True
+665,48,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-615120,True,True,True,False,True,False,True
+666,48,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-603433,True,True,True,False,True,False,True
+667,48,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575264,True,True,True,False,True,True,True
+668,48,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-595424,True,True,True,False,True,False,True
+669,48,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547772,True,True,True,False,True,False,True
+670,48,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-662111,True,True,True,False,True,False,True
+671,48,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614407,True,True,True,False,True,False,True
+672,49,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575939,True,True,True,False,True,False,True
+673,49,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594547,True,True,True,False,True,False,True
+674,49,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547159,True,True,True,False,True,True,True
+675,49,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-663213,True,True,True,False,True,False,True
+676,49,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-612952,True,True,True,False,True,False,True
+677,49,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-602660,True,True,True,False,True,True,True
+678,49,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-576114,True,True,True,False,True,False,True
+679,49,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-593410,True,True,True,False,True,False,True
+680,49,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547881,True,True,True,False,True,False,True
+681,49,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661249,True,True,True,False,True,True,True
+682,49,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614682,True,True,True,False,True,False,True
+683,49,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-601604,True,True,True,False,True,True,True
+684,49,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-576622,True,True,True,False,True,False,True
+685,49,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-593672,True,True,True,False,True,False,True
+686,50,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-623474,True,True,True,False,True,False,True
+687,50,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661548,True,True,True,False,True,False,True
+688,50,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614004,True,True,True,False,True,True,True
+689,50,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:blocked watch,v29-717355,True,True,True,False,True,False,True
+690,50,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575111,True,True,True,False,True,False,True
+691,50,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594198,True,True,True,False,True,True,True
+692,50,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622900,True,True,True,False,True,False,True
+693,50,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588165,True,True,True,False,True,False,True
+694,50,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-640207,True,True,True,False,True,False,True
+695,50,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-596496,True,True,True,False,True,True,True
+696,50,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-576349,True,True,True,False,True,False,True
+697,50,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594255,True,True,True,False,True,True,True
+698,50,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622720,True,True,True,False,True,False,True
+699,50,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588230,True,True,True,False,True,False,True
+700,51,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-613716,True,True,True,False,True,False,True
+701,51,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-601851,True,True,True,False,True,False,True
+702,51,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-576226,True,True,True,False,True,True,True
+703,51,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-593796,True,True,True,False,True,False,True
+704,51,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-547446,True,True,True,False,True,False,True
+705,51,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-587287,True,True,True,False,True,True,True
+706,51,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-615087,True,True,True,True,True,False,True
+707,51,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726516,True,True,True,False,True,False,True
+708,51,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-575357,True,True,True,False,True,False,True
+709,51,archive_signal,autumn_wind:archive_signal:stone kiosk path:open,v29-594097,True,True,True,False,True,True,True
+710,51,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-620946,True,True,True,False,True,False,True
+711,51,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588516,True,True,True,False,True,True,True
+712,51,central_repair_ring,autumn_wind:central_repair_ring:direct route:blocked watch,v29-731100,True,True,True,False,True,False,True
+713,51,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726301,True,True,True,False,True,False,True
+714,52,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-631256,True,True,True,False,True,False,True
+715,52,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548052,True,True,True,False,True,False,True
+716,52,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-623078,True,True,True,False,True,True,True
+717,52,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:blocked watch,v29-703473,True,True,True,False,True,False,True
+718,52,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-616247,True,True,True,False,True,False,True
+719,52,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-726991,True,True,True,False,True,True,True
+720,52,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-630788,True,True,True,False,True,False,True
+721,52,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548188,True,True,True,False,True,False,True
+722,52,signal_orchard,autumn_wind:signal_orchard:river lantern loop:open,v29-622011,True,True,True,False,True,False,True
+723,52,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-586746,True,True,True,False,True,True,True
+724,52,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-607179,True,True,True,False,True,False,True
+725,52,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-728229,True,True,True,False,True,True,True
+726,52,roofward_archive,autumn_wind:roofward_archive:direct route:open,v29-568310,True,True,True,False,True,False,True
+727,52,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548129,True,True,True,False,True,False,True
+728,53,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-540822,True,True,True,False,True,False,True
+729,53,orchard_riverbend,autumn_wind:orchard_riverbend:direct route:open,v29-588119,True,True,True,False,True,False,True
+730,53,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-616219,True,True,True,False,True,True,True
+731,53,riverbend_roofward,autumn_wind:riverbend_roofward:orchard_fen ridge path:open,v29-725823,True,True,True,False,True,False,True
+732,53,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-593283,True,True,True,False,True,False,True
+733,53,archive_signal,autumn_wind:archive_signal:direct route:open,v29-548073,True,True,True,False,True,True,True
+734,53,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-512686,True,True,True,True,True,False,True
+735,53,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661072,True,True,True,False,True,False,True
+736,53,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-614833,True,True,True,False,True,False,True
+737,53,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-602855,True,True,True,False,True,True,True
+738,53,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-628490,True,True,True,False,True,False,True
+739,53,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547912,True,True,True,False,True,True,True
+740,53,signal_orchard,autumn_wind:signal_orchard:direct route:blocked watch,v29-620111,True,True,True,False,True,False,True
+741,53,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-652847,True,True,True,False,True,False,True
+742,54,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-647769,True,True,True,False,True,False,True
+743,54,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-601791,True,True,True,False,True,False,True
+744,54,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-629900,True,True,True,False,True,True,True
+745,54,archive_signal,autumn_wind:archive_signal:direct route:blocked watch,v29-659613,True,True,True,False,True,False,True
+746,54,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-548718,True,True,True,False,True,False,True
+747,54,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-662528,True,True,True,False,True,True,True
+748,54,central_repair_ring,autumn_wind:central_repair_ring:direct route:open,v29-615255,True,True,True,False,True,False,True
+749,54,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-602575,True,True,True,False,True,False,True
+750,54,roofward_archive,autumn_wind:roofward_archive:cool archive lane:open,v29-630798,True,True,True,False,True,False,True
+751,54,archive_signal,autumn_wind:archive_signal:direct route:open,v29-547522,True,True,True,False,True,True,True
+752,54,signal_orchard,autumn_wind:signal_orchard:direct route:open,v29-548270,True,True,True,False,True,False,True
+753,54,orchard_riverbend,autumn_wind:orchard_riverbend:market plank route:open,v29-661094,True,True,True,False,True,True,True
+754,54,central_repair_ring,autumn_wind:central_repair_ring:outer bell path:open,v29-647212,True,True,True,False,True,False,True
+755,54,riverbend_roofward,autumn_wind:riverbend_roofward:direct route:open,v29-603108,True,True,True,False,True,False,True
+756,55,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628562,True,True,True,False,True,False,True
+757,55,archive_signal,winter_cold:archive_signal:direct route:open,v29-546554,True,True,True,False,True,False,True
+758,55,signal_orchard,winter_cold:signal_orchard:direct route:open,v29-546372,True,True,True,False,True,True,True
+759,55,orchard_riverbend,winter_cold:orchard_riverbend:direct route:blocked watch,v29-699852,True,True,True,False,True,False,True
+760,55,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-607944,True,True,True,False,True,False,True
+761,55,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-600853,True,True,True,False,True,True,True
+762,55,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-627500,True,True,True,True,True,False,True
+763,55,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-584325,True,True,True,False,True,False,True
+764,55,signal_orchard,winter_cold:signal_orchard:direct route:blocked watch,v29-658091,True,True,True,False,True,False,True
+765,55,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-659391,True,True,True,False,True,True,True
+766,55,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644519,True,True,True,False,True,False,True
+767,55,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-602221,True,True,True,False,True,True,True
+768,55,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628531,True,True,True,False,True,False,True
+769,55,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-585586,True,True,True,False,True,False,True
+770,56,orchard_riverbend,winter_cold:orchard_riverbend:direct route:open,v29-585236,True,True,True,False,True,False,True
+771,56,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645991,True,True,True,False,True,False,True
+772,56,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-602549,True,True,True,True,True,True,True
+773,56,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629116,True,True,True,False,True,False,True
+774,56,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591225,True,True,True,False,True,False,True
+775,56,signal_orchard,winter_cold:signal_orchard:direct route:open,v29-545730,True,True,True,False,True,True,True
+776,56,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660264,True,True,True,False,True,False,True
+777,56,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645028,True,True,True,False,True,False,True
+778,56,riverbend_roofward,winter_cold:riverbend_roofward:direct route:blocked watch,v29-718354,True,True,True,False,True,False,True
+779,56,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628910,True,True,True,False,True,False,True
+780,56,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591616,True,True,True,False,True,False,True
+781,56,signal_orchard,winter_cold:signal_orchard:direct route:open,v29-546228,True,True,True,False,True,True,True
+782,56,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660306,True,True,True,False,True,False,True
+783,56,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645569,True,True,True,False,True,False,True
+784,57,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726909,True,True,True,False,True,False,True
+785,57,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629821,True,True,True,False,True,False,True
+786,57,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591094,True,True,True,False,True,True,True
+787,57,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-605336,True,True,True,False,True,False,True
+788,57,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662234,True,True,True,False,True,False,True
+789,57,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645497,True,True,True,False,True,True,True
+790,57,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-718018,True,True,True,False,True,False,True
+791,57,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-627890,True,True,True,False,True,False,True
+792,57,archive_signal,winter_cold:archive_signal:direct route:blocked watch,v29-656898,True,True,True,False,True,False,True
+793,57,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-619418,True,True,True,False,True,False,True
+794,57,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-658779,True,True,True,False,True,False,True
+795,57,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-638202,True,True,True,False,True,True,True
+796,57,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725821,True,True,True,False,True,False,True
+797,57,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628416,True,True,True,False,True,False,True
+798,58,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-584765,True,True,True,False,True,False,True
+799,58,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-613819,True,True,True,False,True,False,True
+800,58,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660468,True,True,True,False,True,True,True
+801,58,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644719,True,True,True,False,True,False,True
+802,58,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726155,True,True,True,False,True,False,True
+803,58,roofward_archive,winter_cold:roofward_archive:direct route:open,v29-574527,True,True,True,False,True,True,True
+804,58,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591558,True,True,True,False,True,False,True
+805,58,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-618761,True,True,True,False,True,False,True
+806,58,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-659494,True,True,True,False,True,False,True
+807,58,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-637795,True,True,True,False,True,False,True
+808,58,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726702,True,True,True,False,True,False,True
+809,58,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628265,True,True,True,False,True,True,True
+810,58,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592180,True,True,True,False,True,False,True
+811,58,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620507,True,True,True,False,True,False,True
+812,59,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-658785,True,True,True,False,True,False,True
+813,59,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645297,True,True,True,False,True,False,True
+814,59,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-601160,True,True,True,False,True,True,True
+815,59,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628826,True,True,True,False,True,False,True
+816,59,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592473,True,True,True,False,True,False,True
+817,59,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620687,True,True,True,False,True,True,True
+818,59,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661701,True,True,True,False,True,False,True
+819,59,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644711,True,True,True,False,True,False,True
+820,59,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726280,True,True,True,False,True,False,True
+821,59,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-620702,True,True,True,False,True,False,True
+822,59,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592262,True,True,True,False,True,False,True
+823,59,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620851,True,True,True,False,True,True,True
+824,59,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660105,True,True,True,False,True,False,True
+825,59,central_repair_ring,winter_cold:central_repair_ring:direct route:open,v29-613219,True,True,True,False,True,False,True
+826,60,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725677,True,True,True,False,True,False,True
+827,60,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628769,True,True,True,False,True,False,True
+828,60,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592555,True,True,True,False,True,True,True
+829,60,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-619325,True,True,True,False,True,False,True
+830,60,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-658161,True,True,True,False,True,False,True
+831,60,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645313,True,True,True,False,True,True,True
+832,60,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726643,True,True,True,False,True,False,True
+833,60,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628921,True,True,True,False,True,False,True
+834,60,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591652,True,True,True,False,True,False,True
+835,60,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-619717,True,True,True,False,True,False,True
+836,60,orchard_riverbend,winter_cold:orchard_riverbend:direct route:open,v29-585340,True,True,True,True,True,False,True
+837,60,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644771,True,True,True,False,True,True,True
+838,60,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725877,True,True,True,False,True,False,True
+839,60,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629332,True,True,True,False,True,False,True
+840,61,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-585385,True,True,True,False,True,False,True
+841,61,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620129,True,True,True,False,True,False,True
+842,61,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660626,True,True,True,False,True,True,True
+843,61,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645668,True,True,True,False,True,False,True
+844,61,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724616,True,True,True,False,True,False,True
+845,61,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-627774,True,True,True,False,True,True,True
+846,61,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-585444,True,True,True,False,True,False,True
+847,61,signal_orchard,winter_cold:signal_orchard:direct route:open,v29-547144,True,True,True,False,True,False,True
+848,61,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662050,True,True,True,False,True,False,True
+849,61,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645106,True,True,True,False,True,False,True
+850,61,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726876,True,True,True,False,True,False,True
+851,61,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628068,True,True,True,False,True,True,True
+852,61,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591154,True,True,True,False,True,False,True
+853,61,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-613941,True,True,True,False,True,False,True
+854,62,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660829,True,True,True,False,True,False,True
+855,62,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-643895,True,True,True,False,True,False,True
+856,62,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-717972,True,True,True,False,True,True,True
+857,62,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-623287,True,True,True,False,True,False,True
+858,62,archive_signal,winter_cold:archive_signal:direct route:open,v29-546902,True,True,True,False,True,False,True
+859,62,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621713,True,True,True,False,True,True,True
+860,62,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661485,True,True,True,False,True,False,True
+861,62,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644786,True,True,True,False,True,False,True
+862,62,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726071,True,True,True,False,True,False,True
+863,62,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629500,True,True,True,False,True,False,True
+864,62,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592427,True,True,True,True,True,False,True
+865,62,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620559,True,True,True,False,True,True,True
+866,62,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660666,True,True,True,False,True,False,True
+867,62,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645323,True,True,True,False,True,False,True
+868,63,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630950,True,True,True,False,True,False,True
+869,63,archive_signal,winter_cold:archive_signal:direct route:open,v29-545542,True,True,True,False,True,False,True
+870,63,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620522,True,True,True,False,True,False,True
+871,63,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660136,True,True,True,False,True,False,True
+872,63,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645193,True,True,True,False,True,False,True
+873,63,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726341,True,True,True,False,True,False,True
+874,63,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-627920,True,True,True,True,True,False,True
+875,63,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591625,True,True,True,False,True,False,True
+876,63,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620938,True,True,True,False,True,False,True
+877,63,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-655042,True,True,True,False,True,True,True
+878,63,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644478,True,True,True,False,True,False,True
+879,63,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726746,True,True,True,False,True,False,True
+880,63,roofward_archive,winter_cold:roofward_archive:direct route:blocked watch,v29-686440,True,True,True,False,True,False,True
+881,63,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592975,True,True,True,False,True,False,True
+882,64,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620222,True,True,True,False,True,False,True
+883,64,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660840,True,True,True,False,True,False,True
+884,64,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645504,True,True,True,False,True,False,True
+885,64,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-727700,True,True,True,False,True,False,True
+886,64,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629235,True,True,True,False,True,False,True
+887,64,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593508,True,True,True,False,True,False,True
+888,64,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621993,True,True,True,False,True,False,True
+889,64,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661633,True,True,True,False,True,False,True
+890,64,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-637360,True,True,True,False,True,False,True
+891,64,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-599264,True,True,True,False,True,True,True
+892,64,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629520,True,True,True,False,True,False,True
+893,64,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593650,True,True,True,False,True,False,True
+894,64,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620546,True,True,True,False,True,False,True
+895,64,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662664,True,True,True,False,True,False,True
+896,65,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644725,True,True,True,False,True,False,True
+897,65,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726141,True,True,True,False,True,False,True
+898,65,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630294,True,True,True,False,True,False,True
+899,65,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593220,True,True,True,False,True,False,True
+900,65,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620458,True,True,True,False,True,False,True
+901,65,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-659732,True,True,True,False,True,False,True
+902,65,central_repair_ring,winter_cold:central_repair_ring:direct route:open,v29-612236,True,True,True,False,True,False,True
+903,65,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-718196,True,True,True,False,True,False,True
+904,65,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629843,True,True,True,False,True,False,True
+905,65,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592657,True,True,True,False,True,True,True
+906,65,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621139,True,True,True,False,True,False,True
+907,65,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661787,True,True,True,False,True,False,True
+908,65,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-637969,True,True,True,False,True,False,True
+909,65,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725860,True,True,True,False,True,False,True
+910,66,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629402,True,True,True,False,True,False,True
+911,66,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591126,True,True,True,False,True,False,True
+912,66,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620934,True,True,True,False,True,False,True
+913,66,orchard_riverbend,winter_cold:orchard_riverbend:direct route:blocked watch,v29-701513,True,True,True,False,True,False,True
+914,66,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-643613,True,True,True,False,True,False,True
+915,66,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725646,True,True,True,False,True,False,True
+916,66,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-622271,True,True,True,False,True,False,True
+917,66,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592387,True,True,True,False,True,False,True
+918,66,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621095,True,True,True,False,True,False,True
+919,66,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661980,True,True,True,False,True,True,True
+920,66,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644639,True,True,True,False,True,False,True
+921,66,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-717275,True,True,True,False,True,False,True
+922,66,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629221,True,True,True,False,True,False,True
+923,66,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593379,True,True,True,False,True,False,True
+924,67,signal_orchard,winter_cold:signal_orchard:direct route:open,v29-545605,True,True,True,False,True,False,True
+925,67,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661519,True,True,True,False,True,False,True
+926,67,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-638216,True,True,True,True,True,False,True
+927,67,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-686360,True,True,True,False,True,False,True
+928,67,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630367,True,True,True,False,True,False,True
+929,67,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593429,True,True,True,False,True,False,True
+930,67,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-619444,True,True,True,False,True,False,True
+931,67,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660810,True,True,True,False,True,False,True
+932,67,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-637029,True,True,True,False,True,False,True
+933,67,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724650,True,True,True,False,True,True,True
+934,67,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630528,True,True,True,False,True,False,True
+935,67,archive_signal,winter_cold:archive_signal:direct route:open,v29-547807,True,True,True,False,True,False,True
+936,67,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621812,True,True,True,False,True,False,True
+937,67,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662591,True,True,True,False,True,False,True
+938,68,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-646511,True,True,True,False,True,False,True
+939,68,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724937,True,True,True,False,True,False,True
+940,68,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630459,True,True,True,False,True,False,True
+941,68,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-591450,True,True,True,False,True,False,True
+942,68,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-623190,True,True,True,False,True,False,True
+943,68,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661022,True,True,True,False,True,False,True
+944,68,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645177,True,True,True,False,True,False,True
+945,68,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724592,True,True,True,False,True,False,True
+946,68,roofward_archive,winter_cold:roofward_archive:direct route:blocked watch,v29-689481,True,True,True,False,True,False,True
+947,68,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592842,True,True,True,False,True,True,True
+948,68,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620443,True,True,True,False,True,False,True
+949,68,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-653925,True,True,True,False,True,False,True
+950,68,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-645089,True,True,True,False,True,False,True
+951,68,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-723334,True,True,True,False,True,False,True
+952,69,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629066,True,True,True,False,True,False,True
+953,69,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592984,True,True,True,False,True,False,True
+954,69,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-622189,True,True,True,True,True,False,True
+955,69,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662233,True,True,True,False,True,False,True
+956,69,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-643275,True,True,True,False,True,False,True
+957,69,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-602143,True,True,True,False,True,False,True
+958,69,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630584,True,True,True,False,True,False,True
+959,69,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593997,True,True,True,False,True,False,True
+960,69,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621615,True,True,True,False,True,False,True
+961,69,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662034,True,True,True,False,True,True,True
+962,69,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-638464,True,True,True,False,True,False,True
+963,69,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-708834,True,True,True,False,True,False,True
+964,69,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630373,True,True,True,False,True,False,True
+965,69,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592344,True,True,True,False,True,False,True
+966,70,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-662502,True,True,True,False,True,False,True
+967,70,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644637,True,True,True,False,True,False,True
+968,70,riverbend_roofward,winter_cold:riverbend_roofward:direct route:open,v29-594081,True,True,True,False,True,True,True
+969,70,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-628872,True,True,True,False,True,False,True
+970,70,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-594357,True,True,True,False,True,False,True
+971,70,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-619694,True,True,True,False,True,True,True
+972,70,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-663908,True,True,True,False,True,False,True
+973,70,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644549,True,True,True,False,True,False,True
+974,70,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724078,True,True,True,False,True,False,True
+975,70,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629157,True,True,True,False,True,True,True
+976,70,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-592986,True,True,True,True,True,False,True
+977,70,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621104,True,True,True,False,True,True,True
+978,70,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-624294,True,True,True,False,True,False,True
+979,70,central_repair_ring,winter_cold:central_repair_ring:direct route:open,v29-576895,True,True,True,False,True,False,True
+980,71,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724389,True,True,True,False,True,False,True
+981,71,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-622512,True,True,True,False,True,False,True
+982,71,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593737,True,True,True,False,True,True,True
+983,71,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-621751,True,True,True,False,True,False,True
+984,71,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-660904,True,True,True,False,True,False,True
+985,71,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644069,True,True,True,False,True,True,True
+986,71,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725985,True,True,True,False,True,False,True
+987,71,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-629836,True,True,True,False,True,False,True
+988,71,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-593669,True,True,True,False,True,False,True
+989,71,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-612514,True,True,True,False,True,True,True
+990,71,orchard_riverbend,winter_cold:orchard_riverbend:direct route:open,v29-586647,True,True,True,False,True,False,True
+991,71,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644483,True,True,True,False,True,True,True
+992,71,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-724605,True,True,True,False,True,False,True
+993,71,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-630121,True,True,True,False,True,False,True
+994,72,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-594291,True,True,True,False,True,False,True
+995,72,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-620258,True,True,True,False,True,False,True
+996,72,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-661243,True,True,True,False,True,True,True
+997,72,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-644517,True,True,True,False,True,False,True
+998,72,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-725145,True,True,True,False,True,False,True
+999,72,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-621960,True,True,True,False,True,True,True
+1000,72,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-603023,True,True,True,False,True,False,True
+1001,72,signal_orchard,winter_cold:signal_orchard:direct route:open,v29-554174,True,True,True,False,True,False,True
+1002,72,orchard_riverbend,winter_cold:orchard_riverbend:market plank route:open,v29-669522,True,True,True,False,True,False,True
+1003,72,central_repair_ring,winter_cold:central_repair_ring:outer bell path:open,v29-651438,True,True,True,False,True,True,True
+1004,72,riverbend_roofward,winter_cold:riverbend_roofward:orchard_fen ridge path:open,v29-726859,True,True,True,True,True,False,True
+1005,72,roofward_archive,winter_cold:roofward_archive:cool archive lane:open,v29-638139,True,True,True,False,True,True,True
+1006,72,archive_signal,winter_cold:archive_signal:stone kiosk path:open,v29-601858,True,True,True,False,True,False,True
+1007,72,signal_orchard,winter_cold:signal_orchard:river lantern loop:open,v29-629516,True,True,True,False,True,False,True

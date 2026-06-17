@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+252,pass,0.967115,0.833333,"browser world v13 with live post-reentry typed dialogue choices that branch future schedules, access, trust, and agent-initiated follow-up across several days"

@@ -1,0 +1,59 @@
+{
+  "ablations": {
+    "no_absence_summaries": 0.707115,
+    "no_bounded_refusal": 0.727115,
+    "no_frequency_flower_reentry_rhythm": 0.907115,
+    "no_multi_turn_dialogue": 0.647115,
+    "no_relationship_memory_update": 0.767115,
+    "no_remembered_reentry_binding": 0.737115,
+    "no_repair_renegotiation": 0.677115,
+    "no_replay_save_restore": 0.827115,
+    "no_schedule_renegotiation": 0.787115,
+    "no_source_sleep_reentry_continuity": 0.797115
+  },
+  "counts": {
+    "browser_world_v12_ticks": 180,
+    "reentry_absence_summary_frames": 30,
+    "reentry_dialogue_turn_frames": 180,
+    "reentry_refusal_calibration_frames": 30,
+    "reentry_relationship_memory_frames": 30,
+    "reentry_schedule_dialogue_frames": 30,
+    "repair_renegotiation_frames": 30,
+    "replay_reentry_dialogue_frames": 180
+  },
+  "honest_limits": [
+    "This is deterministic remembered re-entry dialogue scaffolding, not subjective consciousness.",
+    "Dialogue uses seeded parser routes and templates; no LLM or autonomous natural language is called.",
+    "Absence summaries are public traces, not private workspace access.",
+    "Refusal, repair, and consent are simulated functional boundaries, not real consent or moral standing.",
+    "The browser page is a playable 2D/2.5D state surface, not complete 3D physics.",
+    "Relationship and welfare changes are bounded control variables, not proof of experienced feeling.",
+    "Frequency and flower phase are rhythm variables, not metaphysical proof."
+  ],
+  "metrics": {
+    "absence_summary_completeness": 0.885985,
+    "bounded_refusal_calibration": 1.0,
+    "browser_world_v12_reentry_dialogue_readiness": 0.967115,
+    "browser_world_v12_surface_available": 1.0,
+    "mean_reentry_dialogue_channel_score": 0.969102,
+    "multi_turn_dialogue_continuity": 1.0,
+    "private_workspace_boundary": 0.833333,
+    "reentry_welfare_respect": 1.0,
+    "relationship_specific_response_diversity": 1.0,
+    "remembered_reentry_binding": 1.0,
+    "repair_renegotiation_effectiveness": 0.933333,
+    "replay_dialogue_integrity": 1.0,
+    "save_restore_dialogue_integrity": 1.0,
+    "schedule_renegotiation_binding": 1.0,
+    "sensory_frequency_flower_reentry_rhythm": 1.0,
+    "source_sleep_reentry_continuity": 1.0,
+    "typed_reentry_dialogue_confidence": 0.883872,
+    "weakest_channel_score": 0.833333
+  },
+  "name": "SSRM-3D Browser World v12 Remembered Re-Entry Dialogue Bridge",
+  "next_gate": "browser world v13 with live post-reentry typed dialogue choices that branch future schedules, access, trust, and agent-initiated follow-up across several days",
+  "report": 252,
+  "seed": 20260865,
+  "source_results": "artifacts/ssrm_3d_browser_world_v11_long_horizon_sleep_reentry_bridge_results.json",
+  "verdict": "pass"
+}

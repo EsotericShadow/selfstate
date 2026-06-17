@@ -1,0 +1,10 @@
+event_id,year,event_type,affected_cohorts,population_delta,cause,care_response,knowledge_effect,private_boundary,traceability_score
+demo-wet-winter,240,mortality-pressure,cohort-02;cohort-03,-8,wet winter raised rest debt,hearth-keepers expanded warm-stone-near-rest,warmth ritual survives as care infrastructure,sealed individual body histories,0.92
+demo-flood-migration,720,migration,cohort-05;cohort-06,14,flood moved families toward dry route,route-workshop added child path lessons,route suffix spreads,sealed family fear records,0.88
+demo-cup-shelf-boom,1040,birth-cohort-growth,cohort-07,19,dry cup shelf reduced winter illness-like absences,hearth and archive split cup labels,cup privacy words stabilize,sealed child health details,0.86
+demo-tool-wear-loss,1520,labor-loss,cohort-10,-6,tool wear injured repair schedule,tool-return receipt made wear visible,repair apprenticeship becomes longer,sealed injury details,0.84
+demo-lantern-school-expansion,1840,learning-expansion,cohort-12;cohort-13,23,school lanterns allowed winter teaching,child boundary song adopted,boundary words taught before tools,sealed child workspace states,0.91
+demo-rate-chime-dispute,2160,trust-loss,cohort-14,-3,rate guilt index caused avoidance,archive-speakers banned motive inference,rates guide care but do not prove guilt,sealed body-rate identities,0.82
+demo-road-house-mixing,2640,migration,cohort-17;cohort-18,31,runner roads connected far houses,market creole begins,language drift accelerates,sealed newcomer private names,0.79
+demo-threshold-watch,3120,birth-cohort-growth,cohort-20,17,threshold schools prepare for possible avatar era,threshold wardens expand briefing ritual,deep history becomes child lesson,sealed fear of outsider records,0.87
+demo-replay-wall-debt,3520,trust-loss,cohort-23,-2,runner work undercredited by replay wall,dual annotation added but debt remains,public replay needs authorship memory,sealed resentment details,0.76

@@ -1,0 +1,25 @@
+cohort_id,birth_year,adulthood_year,population_size,survival_rate,inherited_language,inherited_crisis_memory,dominant_need,autonomous_choice,parent_institution,frequency_hz,flower_node
+cohort-01,0,18,40,0.704321,proto-hearth,do not name body-pain in public,warmth,kept old warmth ritual despite faster ration queue,hearth-keepers,114.338886,1
+cohort-02,160,178,43,0.7621,proto-hearth,do not name body-pain in public,safe routes,changed route chant after flood season,route-workshop,123.608903,2
+cohort-03,320,338,46,0.771924,proto-hearth,flood debt becomes shared carrying duty,sealed care,refused to expose private care names in lesson board,archive-speakers,132.447312,3
+cohort-04,480,498,51,0.783094,reed-route,flood debt becomes shared carrying duty,water trust,moved tool receipts to public wall,flower-council,141.297844,4
+cohort-05,640,658,52,0.816115,reed-route,repair is care infrastructure,repair tools,split water duty into witness pairs,cistern-guild,150.345038,5
+cohort-06,800,818,60,0.837307,reed-route,repair is care infrastructure,language teaching,accepted a new rate chime but kept boundary words,threshold-wardens,159.285763,6
+cohort-07,960,978,58,0.710009,stone-work,private care histories are sealed,warmth,kept old warmth ritual despite faster ration queue,hearth-keepers,166.890078,7
+cohort-08,1120,1138,60,0.729992,stone-work,private care histories are sealed,safe routes,changed route chant after flood season,route-workshop,175.819928,8
+cohort-09,1280,1298,68,0.759278,stone-work,minority notes stay beside rules,sealed care,refused to expose private care names in lesson board,archive-speakers,184.833504,9
+cohort-10,1440,1458,68,0.795027,hearth-archive,minority notes stay beside rules,water trust,moved tool receipts to public wall,flower-council,193.905239,10
+cohort-11,1600,1618,72,0.803755,hearth-archive,rumor repair needs public action,repair tools,split water duty into witness pairs,cistern-guild,202.733793,11
+cohort-12,1760,1778,79,0.8597,hearth-archive,rumor repair needs public action,language teaching,accepted a new rate chime but kept boundary words,threshold-wardens,211.987297,12
+cohort-13,1920,1938,76,0.724321,flower-council-speech,moving work counts in triage,warmth,kept old warmth ritual despite faster ration queue,hearth-keepers,219.518889,1
+cohort-14,2080,2098,82,0.762475,flower-council-speech,moving work counts in triage,safe routes,changed route chant after flood season,route-workshop,228.612272,2
+cohort-15,2240,2258,84,0.781893,flower-council-speech,boundary phrases precede tool names,sealed care,refused to expose private care names in lesson board,archive-speakers,237.537034,3
+cohort-16,2400,2418,87,0.806357,cistern-appeal,boundary phrases precede tool names,water trust,moved tool receipts to public wall,flower-council,246.507212,4
+cohort-17,2560,2578,91,0.831054,cistern-appeal,rates guide care but do not prove guilt,repair tools,split water duty into witness pairs,cistern-guild,255.47949,5
+cohort-18,2720,2738,96,0.82863,cistern-appeal,rates guide care but do not prove guilt,language teaching,accepted a new rate chime but kept boundary words,threshold-wardens,264.207666,6
+cohort-19,2880,2898,98,0.706031,runner-trade,avatar entry requires deep-history briefing,warmth,kept old warmth ritual despite faster ration queue,hearth-keepers,271.854276,7
+cohort-20,3040,3058,98,0.760492,runner-trade,avatar entry requires deep-history briefing,safe routes,changed route chant after flood season,route-workshop,281.09443,8
+cohort-21,3200,3218,102,0.762388,runner-trade,avatar entry requires deep-history briefing,sealed care,refused to expose private care names in lesson board,archive-speakers,289.861496,9
+cohort-22,3360,3378,104,0.811944,lantern-school,avatar entry requires deep-history briefing,water trust,moved tool receipts to public wall,flower-council,299.057493,10
+cohort-23,3520,3538,112,0.818971,lantern-school,avatar entry requires deep-history briefing,repair tools,split water duty into witness pairs,cistern-guild,307.870742,11
+cohort-24,3680,3698,108,0.850112,lantern-school,avatar entry requires deep-history briefing,language teaching,accepted a new rate chime but kept boundary words,threshold-wardens,316.901007,12

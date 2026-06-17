@@ -1,0 +1,13 @@
+mutation_id,year,mutation_type,source_cohort,parent_form,proposed_form,selection_pressure,adopted,survival_generations,semantic_continuity,disruption_risk,institution_response,frequency_hz,flower_node
+mut-warmth-chime,320,ritual,cohort-03,warm-stone-near-rest,thermal blanket chime,long cold season,True,12,0.88,0.14,hearth-keepers adopt after two child cohorts,142.0,1
+mut-route-q-suffix,640,language,cohort-05,ren,renoq,runner routes need motion marking,True,10,0.76,0.22,route-workshop accepts because old root remains,155.2,2
+mut-cup-knot-colors,960,technology,cohort-07,plain cup knots,color-safe cup knots,crowded cup shelf,True,8,0.81,0.19,archive-speakers require private status not encoded,168.4,3
+mut-water-accusation-wall,1280,institution,cohort-09,spoken correction,public countersign wall,water rumor season,True,7,0.79,0.25,cistern-guild wins contested adoption,181.6,4
+mut-fast-tool-claim,1440,institution,cohort-10,tool receipt,fast claim without witness,repair urgency,False,1,0.42,0.61,flower-council rejects ownership capture,194.8,5
+mut-child-boundary-song,1760,language,cohort-12,boundary phrase lesson,child-safe boundary song,school lantern expansion,True,6,0.84,0.16,lantern teachers adopt,208.0,6
+mut-rate-guilt-index,2080,technology,cohort-14,body-rate chime,rate guilt index,sensor overconfidence,False,1,0.38,0.74,archive-speakers reject because rates cannot prove guilt,221.2,7
+mut-minority-seed-vote,2240,institution,cohort-15,minority note,minority seed vote,council fatigue,True,5,0.72,0.31,flower-council adopts with rollback,234.4,8
+mut-runner-night-map,2560,technology,cohort-17,map chant,glowing runner map,dark winter routes,True,4,0.77,0.27,runner guilds preserve old chant under map,247.6,9
+mut-threshold-short-brief,2880,ritual,cohort-19,deep-history briefing,short avatar greeting,outsider curiosity,False,1,0.46,0.66,threshold-wardens reject thin history,260.8,10
+mut-replay-apology-knot,3200,ritual,cohort-21,apology knot,replay apology knot,restorative appeal delays,True,3,0.74,0.28,appeal circles adopt partial replay,274.0,11
+mut-common-threshold-creole,3520,language,cohort-23,threshold-common,threshold market creole,trade with road houses,True,1,0.69,0.34,archive-speakers document drift without forcing purity but survival is not proven yet,287.2,12

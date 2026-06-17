@@ -1,0 +1,13 @@
+{
+  "autonomous_generation_depth": 1.0,
+  "child_to_adult_learning_rate": 0.833333,
+  "condition": "integrated_playable_pre_avatar_civilization_autonomous_generations_child_learning_cultural_mutation_institution_competition_late_avatar_entry",
+  "institution_competition_resolution_rate": 0.875,
+  "late_avatar_entry_integrity": 1.0,
+  "next_gate": "playable embodied pre-avatar ecology with births, aging, illness, apprenticeship, habitat construction, agriculture, weather, and material economies before avatar entry",
+  "pre_avatar_civilization_readiness": 0.911072,
+  "private_boundary": "sealed private child workspace, body history, motive, and family digests only",
+  "report": 219,
+  "simulated_pre_avatar_years": 3698.0,
+  "source_condition": "integrated_playable_multigenerational_culture_memory_language_drift_inherited_rituals_institutions_avatar_entry"
+}

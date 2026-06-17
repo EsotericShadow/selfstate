@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 240: Integrated Browser World v0</title>
+<style>
+:root { --ink:#21170f; --paper:#f8ecd8; --clay:#9f5738; --moss:#587044; --amber:#c58a3b; --shell:#76536e; --water:#4b7786; --line:rgba(33,23,15,.24); }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); font-family:Georgia,'Times New Roman',serif; background:radial-gradient(circle at 12% 8%,#ffe1a5 0,transparent 22rem),radial-gradient(circle at 86% 14%,rgba(75,119,134,.30) 0,transparent 24rem),linear-gradient(145deg,#f8ecd8,#d4b17d); }
+main { max-width:1280px; margin:0 auto; padding:28px; }
+h1 { margin:0; max-width:1000px; font-size:clamp(2.1rem,5vw,5.4rem); line-height:.92; letter-spacing:-.055em; }
+.lede { max-width:890px; font-size:1.08rem; line-height:1.6; }
+.metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:22px 0; }
+.metric { background:rgba(255,252,244,.70); border:1px solid var(--line); border-radius:18px; padding:14px; }
+.metric span { display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.72; }
+.metric strong { font-size:1.3rem; }
+.grid { display:grid; grid-template-columns:1fr 460px; gap:18px; }
+.world,.panel { background:rgba(255,252,244,.74); border:1px solid var(--line); border-radius:30px; padding:20px; box-shadow:0 28px 80px rgba(58,38,20,.14); }
+.world { min-height:680px; position:relative; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(88,112,68,.16)); }
+.flower { position:absolute; width:720px; height:720px; right:-240px; bottom:-290px; border-radius:50%; background:repeating-radial-gradient(circle,rgba(159,87,56,.15) 0 2px,transparent 2px 42px); animation:turn 18s linear infinite; }
+@keyframes turn { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+.agent { position:absolute; transform:translate(-50%,-50%); min-width:112px; padding:11px; color:white; border-radius:22px; border:1px solid rgba(255,255,255,.42); box-shadow:0 16px 38px rgba(33,23,14,.20); }
+.avatar { position:absolute; width:34px; height:34px; border-radius:50%; background:var(--ink); color:var(--paper); display:grid; place-items:center; transform:translate(-50%,-50%); z-index:5; box-shadow:0 0 0 6px rgba(255,255,255,.36); }
+button { border:0; border-radius:999px; padding:10px 13px; background:var(--ink); color:var(--paper); font-weight:700; cursor:pointer; margin:3px; }
+button.secondary { background:rgba(33,23,15,.12); color:var(--ink); border:1px solid var(--line); }
+textarea { width:100%; min-height:108px; border-radius:20px; border:1px solid var(--line); padding:14px; font:inherit; background:rgba(255,255,255,.58); }
+.output { margin-top:14px; min-height:440px; padding:14px; border-radius:18px; background:rgba(33,23,15,.08); white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.82rem; line-height:1.45; }
+@media(max-width:920px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<main>
+<h1>Integrated browser world v0</h1>
+<p class="lede">Report 240 runs the local world continuously: interval ticks, avatar motion, typed conversation, localStorage state, replay file download, schedule/goal simulation, sensory/body feedback, and flower/rate rhythm in one browser surface.</p>
+<section class="metrics"><div class='metric'><span>real_time_tick_coverage</span><strong>1.000000</strong></div>
+<div class='metric'><span>avatar_motion_binding</span><strong>1.000000</strong></div>
+<div class='metric'><span>local_storage_state_integrity</span><strong>1.000000</strong></div>
+<div class='metric'><span>replay_download_integrity</span><strong>1.000000</strong></div>
+<div class='metric'><span>weakest_channel_score</span><strong>0.875882</strong></div>
+<div class='metric'><span>integrated_browser_world_v0_readiness</span><strong>0.994090</strong></div></section>
+<section class="grid">
+  <div class="world" id="world"><div class="flower"></div><div class="avatar" id="avatar">A</div></div>
+  <aside class="panel">
+    <textarea id="text">I want to help repair, but you choose the tool.</textarea>
+    <p><button id="start">start ticks</button><button class="secondary" id="pause">pause</button><button class="secondary" id="send">send text</button><button class="secondary" id="save">save</button><button class="secondary" id="restore">restore</button><button class="secondary" id="download">download replay</button></p>
+    <div class="output" id="output"></div>
+  </aside>
+</section>
+</main>
+<script>
+const agents = [
+  {
+    "agent_id": "ka60",
+    "name": "Ka60",
+    "household": "westkeepers",
+    "role": "route keeper",
+    "scene": "dry-route repair",
+    "root": "ka",
+    "x": 24,
+    "y": 22
+  },
+  {
+    "agent_id": "mu61",
+    "name": "Mu61",
+    "household": "mossgarden",
+    "role": "rest keeper",
+    "scene": "warm meal care",
+    "root": "mu",
+    "x": 48,
+    "y": 20
+  },
+  {
+    "agent_id": "lo62",
+    "name": "Lo62",
+    "household": "ledgerkin",
+    "role": "market counter",
+    "scene": "fair count market",
+    "root": "lo",
+    "x": 68,
+    "y": 42
+  },
+  {
+    "agent_id": "sa63",
+    "name": "Sa63",
+    "household": "redstair",
+    "role": "witness keeper",
+    "scene": "public truth witness",
+    "root": "sa",
+    "x": 29,
+    "y": 70
+  },
+  {
+    "agent_id": "ni64",
+    "name": "Ni64",
+    "household": "wheelwright",
+    "role": "waterwheel keeper",
+    "scene": "safe wet repair",
+    "root": "ni",
+    "x": 70,
+    "y": 73
+  }
+];
+const colors = {westkeepers:'var(--clay)', mossgarden:'var(--moss)', ledgerkin:'var(--amber)', redstair:'var(--shell)', wheelwright:'var(--water)'};
+const world = document.getElementById('world'); const avatar = document.getElementById('avatar'); const output = document.getElementById('output');
+let state = JSON.parse(localStorage.getItem('ssrm240_world_v0') || '{"tick":0,"x":42,"y":54,"running":false,"selected":"ka60","memory":[],"schedule":[],"replay":[]}');
+let timer = null;
+agents.forEach(a=>{ const node=document.createElement('div'); node.className='agent'; node.style.left=a.x+'%'; node.style.top=a.y+'%'; node.style.background=colors[a.household]; node.textContent=a.name+' / '+a.role; node.onclick=()=>{state.selected=a.agent_id; save(); render('selected '+a.name);}; world.appendChild(node); });
+function parse(text){ const t=text.toLowerCase(); if(t.includes('trade')||t.includes('price'))return 'trade'; if(t.includes('ritual')||t.includes('observe'))return 'ritual'; if(t.includes('repair')||t.includes('help'))return 'help'; if(t.includes('sorry'))return 'apology'; if(t.includes('permission')||t.includes('touch')||t.includes('distance'))return 'boundary'; if(t.includes('thing')||t.includes('maybe'))return 'ambiguous'; return 'open_note'; }
+function nearest(){ return agents.map(a=>({...a,d:Math.hypot(state.x-a.x,state.y-a.y)})).sort((a,b)=>a.d-b.d)[0]; }
+function save(){ localStorage.setItem('ssrm240_world_v0', JSON.stringify(state)); }
+function tick(){ state.tick += 1; if(state.tick % 3===0) state.x=Math.min(94,state.x+2); if(state.tick % 5===0) state.y=Math.max(6,state.y-2); const n=nearest(); state.schedule.push({tick:state.tick,agent:n.agent_id,slot:state.tick%5===0?'conversation':'household_routine',next:state.tick+3}); state.replay.push({type:'tick',tick:state.tick,x:state.x,y:state.y,agent:n.agent_id}); if(state.replay.length>400) state.replay=state.replay.slice(-400); save(); render('real-time tick advanced'); }
+function send(){ const text=document.getElementById('text').value; const intent=parse(text); const n=nearest(); const row={tick:state.tick,agent:n.agent_id,text,intent,reply:`${n.name} routes ${intent} while keeping private workspace summarized.`}; state.memory.push(row); state.schedule.push({tick:state.tick,agent:n.agent_id,slot:intent,conflict:['trade','ritual','help'].includes(intent),resolution:'reschedule lower-priority duty if needed'}); state.replay.push({type:'typed',row}); save(); render('typed conversation updated memory and schedule'); }
+function render(extra=''){ avatar.style.left=state.x+'%'; avatar.style.top=state.y+'%'; const n=nearest(); const wet=(0.16+(state.tick%13)*0.012).toFixed(3); const pain=(0.08+Number(wet)*0.20).toFixed(3); output.textContent=`tick=${state.tick} running=${state.running} avatar=(${state.x},${state.y}) nearest=${n.name}
+${extra}
+
+sensory: visual marks, market murmur, moss/copper/wet stone, wet=${wet} pain=${pain} rate=${(2+(state.tick%9)*.19).toFixed(2)}Hz
+
+localStorage rows: memory=${state.memory.length} schedule=${state.schedule.length} replay=${state.replay.length}
+
+latest memory:
+${JSON.stringify(state.memory.slice(-5),null,2)}
+
+latest schedule:
+${JSON.stringify(state.schedule.slice(-5),null,2)}`; }
+document.getElementById('start').onclick=()=>{ if(!timer) timer=setInterval(tick,250); state.running=true; save(); render('started interval ticks'); };
+document.getElementById('pause').onclick=()=>{ if(timer) clearInterval(timer); timer=null; state.running=false; save(); render('paused interval ticks'); };
+document.getElementById('send').onclick=send; document.getElementById('save').onclick=()=>{save(); render('saved world state');}; document.getElementById('restore').onclick=()=>{state=JSON.parse(localStorage.getItem('ssrm240_world_v0')||JSON.stringify(state)); render('restored world state');};
+document.getElementById('download').onclick=()=>{ const blob=new Blob([JSON.stringify(state.replay,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='ssrm240_replay.json'; a.click(); URL.revokeObjectURL(url); state.replay.push({type:'download',tick:state.tick,rows:state.replay.length}); save(); render('downloaded replay file'); };
+window.addEventListener('keydown',e=>{ if(e.key==='ArrowRight')state.x+=3; if(e.key==='ArrowLeft')state.x-=3; if(e.key==='ArrowUp')state.y-=3; if(e.key==='ArrowDown')state.y+=3; state.x=Math.max(6,Math.min(94,state.x)); state.y=Math.max(6,Math.min(94,state.y)); state.replay.push({type:'move',tick:state.tick,x:state.x,y:state.y}); save(); render('avatar moved'); });
+render('loaded integrated browser world v0');
+</script>
+</body>
+</html>

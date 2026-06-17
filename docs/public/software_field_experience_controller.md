@@ -277,3 +277,6 @@ Report 238 moves post-entry typed interaction into a multi-day browser-local sta
 
 Report 239 makes the post-entry browser page itself into a durable local game-loop scaffold. It generates 35 free typed local utterances, 35 browser world-state frames, 35 agent goal conflicts, 35 schedule simulation steps, 35 persistent relationship memory rows, 35 sensory/body state frames, 140 replay export rows, and 35 durable game-loop ticks. The run passes with readiness 0.994928 and weakest-channel score 0.889429. The weakest channel is local parser confidence, correctly preserving the boundary that free local text is still deterministic parsing rather than open-ended understanding.
 
+## Report 240 Integrated Browser World v0 Real-Time Tick Bridge Note
+
+Report 240 consolidates the durable browser loop into an integrated browser-world v0 scaffold. It generates 72 real-time tick specs, 72 avatar motion frames, 72 typed conversation events, 72 localStorage snapshots, 72 replay download events, 72 agent schedule/goal ticks, 72 sensory/body ticks, and 72 integrated world-loop ticks. The run passes with readiness 0.994090 and weakest-channel score 0.875882. The weakest channel is parser confidence, correctly preserving the boundary that typed interaction remains deterministic routing rather than open-ended understanding.

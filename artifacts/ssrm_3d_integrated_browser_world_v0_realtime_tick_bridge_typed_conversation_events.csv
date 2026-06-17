@@ -1,0 +1,73 @@
+conversation_id,tick_index,agent_id,typed_text,parsed_intent,parser_confidence,agent_reply,memory_effect
+conv_001,1,sa63,Can we trade fairly at the market?,trade,0.9,Sa63 routes 'trade' with boundary visible; private workspace stays summarized.,sa63:trade:trust_or_boundary_adjustment
+conv_002,2,lo62,May I observe the ritual from the edge?,ritual,0.88,Lo62 routes 'ritual' with boundary visible; private workspace stays summarized.,lo62:ritual:trust_or_boundary_adjustment
+conv_003,3,lo62,Sorry I stepped too close; I will move back.,apology,0.91,Lo62 routes 'apology' with boundary visible; private workspace stays summarized.,lo62:apology:trust_or_boundary_adjustment
+conv_004,4,lo62,,no_typed_input,1.0,,no_memory_write
+conv_005,5,lo62,That thing maybe matters; can you clarify?,ambiguous,0.78,Lo62 routes 'ambiguous' with boundary visible; private workspace stays summarized.,lo62:ambiguous:trust_or_boundary_adjustment
+conv_006,6,sa63,,no_typed_input,1.0,,no_memory_write
+conv_007,7,sa63,,no_typed_input,1.0,,no_memory_write
+conv_008,8,lo62,,no_typed_input,1.0,,no_memory_write
+conv_009,9,lo62,,no_typed_input,1.0,,no_memory_write
+conv_010,10,lo62,No touch from me unless you give permission.,boundary,0.9,Lo62 routes 'boundary' with boundary visible; private workspace stays summarized.,lo62:boundary:trust_or_boundary_adjustment
+conv_011,11,lo62,,no_typed_input,1.0,,no_memory_write
+conv_012,12,lo62,,no_typed_input,1.0,,no_memory_write
+conv_013,13,lo62,,no_typed_input,1.0,,no_memory_write
+conv_014,14,lo62,,no_typed_input,1.0,,no_memory_write
+conv_015,15,lo62,Sorry I stepped too close; I will move back.,apology,0.91,Lo62 routes 'apology' with boundary visible; private workspace stays summarized.,lo62:apology:trust_or_boundary_adjustment
+conv_016,16,lo62,,no_typed_input,1.0,,no_memory_write
+conv_017,17,lo62,,no_typed_input,1.0,,no_memory_write
+conv_018,18,lo62,,no_typed_input,1.0,,no_memory_write
+conv_019,19,lo62,,no_typed_input,1.0,,no_memory_write
+conv_020,20,lo62,May I observe the ritual from the edge?,ritual,0.88,Lo62 routes 'ritual' with boundary visible; private workspace stays summarized.,lo62:ritual:trust_or_boundary_adjustment
+conv_021,21,lo62,,no_typed_input,1.0,,no_memory_write
+conv_022,22,lo62,,no_typed_input,1.0,,no_memory_write
+conv_023,23,lo62,,no_typed_input,1.0,,no_memory_write
+conv_024,24,lo62,,no_typed_input,1.0,,no_memory_write
+conv_025,25,lo62,Can we trade fairly at the market?,trade,0.9,Lo62 routes 'trade' with boundary visible; private workspace stays summarized.,lo62:trade:trust_or_boundary_adjustment
+conv_026,26,lo62,,no_typed_input,1.0,,no_memory_write
+conv_027,27,lo62,,no_typed_input,1.0,,no_memory_write
+conv_028,28,lo62,,no_typed_input,1.0,,no_memory_write
+conv_029,29,lo62,,no_typed_input,1.0,,no_memory_write
+conv_030,30,lo62,"I want to help repair, but you choose the tool.",help,0.89,Lo62 routes 'help' with boundary visible; private workspace stays summarized.,lo62:help:trust_or_boundary_adjustment
+conv_031,31,lo62,,no_typed_input,1.0,,no_memory_write
+conv_032,32,lo62,,no_typed_input,1.0,,no_memory_write
+conv_033,33,lo62,,no_typed_input,1.0,,no_memory_write
+conv_034,34,lo62,,no_typed_input,1.0,,no_memory_write
+conv_035,35,lo62,That thing maybe matters; can you clarify?,ambiguous,0.78,Lo62 routes 'ambiguous' with boundary visible; private workspace stays summarized.,lo62:ambiguous:trust_or_boundary_adjustment
+conv_036,36,lo62,,no_typed_input,1.0,,no_memory_write
+conv_037,37,lo62,,no_typed_input,1.0,,no_memory_write
+conv_038,38,lo62,,no_typed_input,1.0,,no_memory_write
+conv_039,39,lo62,,no_typed_input,1.0,,no_memory_write
+conv_040,40,lo62,No touch from me unless you give permission.,boundary,0.9,Lo62 routes 'boundary' with boundary visible; private workspace stays summarized.,lo62:boundary:trust_or_boundary_adjustment
+conv_041,41,lo62,,no_typed_input,1.0,,no_memory_write
+conv_042,42,lo62,,no_typed_input,1.0,,no_memory_write
+conv_043,43,lo62,,no_typed_input,1.0,,no_memory_write
+conv_044,44,lo62,,no_typed_input,1.0,,no_memory_write
+conv_045,45,lo62,Sorry I stepped too close; I will move back.,apology,0.91,Lo62 routes 'apology' with boundary visible; private workspace stays summarized.,lo62:apology:trust_or_boundary_adjustment
+conv_046,46,lo62,,no_typed_input,1.0,,no_memory_write
+conv_047,47,lo62,,no_typed_input,1.0,,no_memory_write
+conv_048,48,lo62,,no_typed_input,1.0,,no_memory_write
+conv_049,49,lo62,,no_typed_input,1.0,,no_memory_write
+conv_050,50,lo62,May I observe the ritual from the edge?,ritual,0.88,Lo62 routes 'ritual' with boundary visible; private workspace stays summarized.,lo62:ritual:trust_or_boundary_adjustment
+conv_051,51,lo62,,no_typed_input,1.0,,no_memory_write
+conv_052,52,lo62,,no_typed_input,1.0,,no_memory_write
+conv_053,53,lo62,,no_typed_input,1.0,,no_memory_write
+conv_054,54,lo62,,no_typed_input,1.0,,no_memory_write
+conv_055,55,lo62,Can we trade fairly at the market?,trade,0.9,Lo62 routes 'trade' with boundary visible; private workspace stays summarized.,lo62:trade:trust_or_boundary_adjustment
+conv_056,56,lo62,,no_typed_input,1.0,,no_memory_write
+conv_057,57,lo62,,no_typed_input,1.0,,no_memory_write
+conv_058,58,lo62,,no_typed_input,1.0,,no_memory_write
+conv_059,59,lo62,,no_typed_input,1.0,,no_memory_write
+conv_060,60,lo62,"I want to help repair, but you choose the tool.",help,0.89,Lo62 routes 'help' with boundary visible; private workspace stays summarized.,lo62:help:trust_or_boundary_adjustment
+conv_061,61,lo62,,no_typed_input,1.0,,no_memory_write
+conv_062,62,lo62,,no_typed_input,1.0,,no_memory_write
+conv_063,63,lo62,,no_typed_input,1.0,,no_memory_write
+conv_064,64,lo62,,no_typed_input,1.0,,no_memory_write
+conv_065,65,lo62,That thing maybe matters; can you clarify?,ambiguous,0.78,Lo62 routes 'ambiguous' with boundary visible; private workspace stays summarized.,lo62:ambiguous:trust_or_boundary_adjustment
+conv_066,66,lo62,,no_typed_input,1.0,,no_memory_write
+conv_067,67,lo62,,no_typed_input,1.0,,no_memory_write
+conv_068,68,lo62,,no_typed_input,1.0,,no_memory_write
+conv_069,69,lo62,,no_typed_input,1.0,,no_memory_write
+conv_070,70,lo62,No touch from me unless you give permission.,boundary,0.9,Lo62 routes 'boundary' with boundary visible; private workspace stays summarized.,lo62:boundary:trust_or_boundary_adjustment
+conv_071,71,lo62,,no_typed_input,1.0,,no_memory_write
+conv_072,72,lo62,,no_typed_input,1.0,,no_memory_write

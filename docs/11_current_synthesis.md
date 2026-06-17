@@ -850,3 +850,6 @@ Report 238 moves typed interaction into a multi-day state loop. User-authored ut
 
 
 Report 239 makes the browser page itself into the durable post-entry game-loop scaffold. It accepts free local text, persists world state through localStorage, creates agent goal conflicts, runs schedule simulation steps, writes relationship memory rows, binds sensory/body state, and exports deterministic replay rows across days 1 through 21. The weakest channel is local parser confidence, preserving the boundary that this remains deterministic local parsing rather than open-ended language understanding.
+
+
+Report 240 consolidates the durable browser game loop into an integrated browser-world v0 scaffold. It generates 72 real-time tick specs, 72 avatar motion frames, 72 typed conversation events, 72 localStorage snapshots, 72 replay download events, 72 agent schedule/goal ticks, 72 sensory/body ticks, and 72 integrated world-loop ticks. The run passes with readiness 0.994090 and weakest-channel score 0.875882. The weakest channel is parser confidence, correctly preserving the boundary that the browser accepts typed local text but still uses deterministic routing rather than autonomous language understanding.

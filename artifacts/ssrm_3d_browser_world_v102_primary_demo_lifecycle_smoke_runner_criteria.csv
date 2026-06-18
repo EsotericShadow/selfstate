@@ -1,0 +1,19 @@
+name,passed,score,channel,detail
+contract_module_available,True,1.0,runner binding,Runner imports the canonical Report 341 lifecycle contract module.
+contract_rebuilds_in_process,True,1.0,executable contract,Runner rebuilds the lifecycle contract in-process before judging its own status.
+contract_artifacts_refreshed,True,1.0,artifact refresh,"Runner refreshes or confirms the canonical contract result, summary, verdict, criteria, state, contract, and report artifacts."
+contract_weakest_channel_full,True,1.0,evidence quality,Contract weakest-channel score is 1.000.
+single_recommended_runner_surface,True,1.0,maintainability,Manifest exposes one recommended smoke command for future primary-demo handoff changes.
+manual_variant_policy_blocks_report_sprawl,True,1.0,maintainability,"Manifest says new lifecycle variants should be driven by runner failures, not report sprawl."
+all_lifecycle_phases_covered,True,1.0,phase coverage,"Covered phases: closed_origin_tab_continuity, cross_tab_prepared_resume_visible, hard_reload_continuity, repaired_continue_return_refresh, stale_reprepare_repair, stale_supersession_calibration."
+fresh_path_phase_set_covered,True,1.0,phase coverage,"Fresh path covers cross-tab, closed-origin, and hard-reload continuity."
+stale_path_phase_set_covered,True,1.0,phase coverage,Stale path covers stale prepared-handoff calibration.
+repair_path_phase_set_covered,True,1.0,phase coverage,Repair path covers clean reprepare after stale mismatch.
+post_repair_phase_set_covered,True,1.0,phase coverage,"Post-repair path covers actual continue, return, refresh, and reload freshness."
+future_smoke_requirements_present,True,1.0,actionability,Contract retains actionable future smoke requirements instead of a vague pass/fail label.
+failure_output_is_actionable,True,1.0,actionability,Runner manifest points to failure artifacts and exact rerun commands.
+input_report_evidence_full,True,1.0,evidence quality,Input report pass rate is 1.000.
+source_binding_evidence_full,True,1.0,source binding,Source binding score is 1.000.
+aggregated_console_clean,True,1.0,runtime hygiene,Aggregated console error count is 0.
+future_browser_e2e_slot_not_claimed,True,1.0,claim hygiene,Manifest reserves a future live browser E2E slot without pretending this deterministic runner is that proof.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundaries explicitly reject hosted URL, production persistence, complete gameplay, consciousness, and moral-patienthood claims."

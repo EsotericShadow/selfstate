@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,recommended_command,next_gate
+342,pass,1.0,python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner,"post-342: wire the primary playable demo entrypoint to this lifecycle smoke runner so future vertical-slice work changes the maintained surface and immediately exercises fresh, stale, repair, and post-repair handoff paths"

@@ -1,0 +1,59 @@
+{
+  "boundaries": [
+    "reusable deterministic lifecycle smoke runner only",
+    "browser-local artifact and source-binding evidence only",
+    "no live hosted URL claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "contract_refresh_command": "python3 -m experiments.ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract",
+  "covered_phases": [
+    "cross_tab_prepared_resume_visible",
+    "closed_origin_tab_continuity",
+    "hard_reload_continuity",
+    "stale_supersession_calibration",
+    "stale_reprepare_repair",
+    "repaired_continue_return_refresh"
+  ],
+  "failure_outputs": {
+    "contract_results": "artifacts/ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract_results.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_criteria.csv",
+    "manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+    "results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json"
+  },
+  "future_browser_e2e_slot": {
+    "reason": "This runner consolidates deterministic lifecycle artifacts and source bindings; it does not replace a real browser automation gate for future hosted/playable checks.",
+    "status": "not_claimed"
+  },
+  "manual_variant_policy": "do not add another tab, reload, stale, or return report unless this runner fails and the failure names a missing lifecycle path",
+  "name": "primary_demo_lifecycle_smoke_runner",
+  "recommended_command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+  "report": 342,
+  "required_phase_sets": {
+    "fresh": [
+      "closed_origin_tab_continuity",
+      "cross_tab_prepared_resume_visible",
+      "hard_reload_continuity"
+    ],
+    "post_repair": [
+      "repaired_continue_return_refresh"
+    ],
+    "repair": [
+      "stale_reprepare_repair"
+    ],
+    "stale": [
+      "stale_supersession_calibration"
+    ]
+  },
+  "rerun_commands": [
+    "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "python3 -m py_compile experiments/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner.py experiments/ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract.py scripts/run_experiments.py",
+    "git diff --check"
+  ],
+  "routine_policy": "run one maintained lifecycle smoke runner after primary-demo handoff changes",
+  "seed": 20270740
+}

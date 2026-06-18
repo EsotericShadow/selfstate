@@ -1,0 +1,49 @@
+{
+  "contract_summary": {
+    "failed_criteria": [],
+    "metrics": {
+      "console_errors_total": 0,
+      "criterion_count": 16,
+      "input_report_pass_rate": 1.0,
+      "input_required_metric_min": 1.0,
+      "input_weakest_channel_min": 1.0,
+      "lifecycle_coverage_score": 1.0,
+      "post_repair_use_score": 1.0,
+      "readiness": 1.0,
+      "source_binding_score": 1.0,
+      "stale_repair_coverage_score": 1.0,
+      "weakest_channel_score": 1.0
+    },
+    "phases": [
+      "closed_origin_tab_continuity",
+      "cross_tab_prepared_resume_visible",
+      "hard_reload_continuity",
+      "repaired_continue_return_refresh",
+      "stale_reprepare_repair",
+      "stale_supersession_calibration"
+    ],
+    "report": 341,
+    "verdict": "pass"
+  },
+  "metrics": {
+    "actionability_score": 1.0,
+    "artifact_refresh_score": 1.0,
+    "claim_boundary_score": 1.0,
+    "console_errors_total": 0,
+    "contract_input_report_pass_rate": 1.0,
+    "contract_weakest_channel_score": 1.0,
+    "criterion_count": 18,
+    "evidence_quality_score": 1.0,
+    "executable_contract_score": 1.0,
+    "phase_coverage_score": 1.0,
+    "readiness": 1.0,
+    "runtime_hygiene_score": 1.0,
+    "single_runner_surface_score": 1.0,
+    "source_binding_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-342: wire the primary playable demo entrypoint to this lifecycle smoke runner so future vertical-slice work changes the maintained surface and immediately exercises fresh, stale, repair, and post-repair handoff paths",
+  "report": 342,
+  "seed": 20270740,
+  "verdict": "pass"
+}

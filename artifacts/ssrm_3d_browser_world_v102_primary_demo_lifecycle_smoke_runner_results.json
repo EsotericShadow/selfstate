@@ -1,0 +1,248 @@
+{
+  "boundaries": [
+    "reusable deterministic lifecycle smoke runner only",
+    "browser-local artifact and source-binding evidence only",
+    "no live hosted URL claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "contract_summary": {
+    "failed_criteria": [],
+    "metrics": {
+      "console_errors_total": 0,
+      "criterion_count": 16,
+      "input_report_pass_rate": 1.0,
+      "input_required_metric_min": 1.0,
+      "input_weakest_channel_min": 1.0,
+      "lifecycle_coverage_score": 1.0,
+      "post_repair_use_score": 1.0,
+      "readiness": 1.0,
+      "source_binding_score": 1.0,
+      "stale_repair_coverage_score": 1.0,
+      "weakest_channel_score": 1.0
+    },
+    "phases": [
+      "closed_origin_tab_continuity",
+      "cross_tab_prepared_resume_visible",
+      "hard_reload_continuity",
+      "repaired_continue_return_refresh",
+      "stale_reprepare_repair",
+      "stale_supersession_calibration"
+    ],
+    "report": 341,
+    "verdict": "pass"
+  },
+  "criteria": [
+    {
+      "channel": "runner binding",
+      "detail": "Runner imports the canonical Report 341 lifecycle contract module.",
+      "name": "contract_module_available",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "executable contract",
+      "detail": "Runner rebuilds the lifecycle contract in-process before judging its own status.",
+      "name": "contract_rebuilds_in_process",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "artifact refresh",
+      "detail": "Runner refreshes or confirms the canonical contract result, summary, verdict, criteria, state, contract, and report artifacts.",
+      "name": "contract_artifacts_refreshed",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "evidence quality",
+      "detail": "Contract weakest-channel score is 1.000.",
+      "name": "contract_weakest_channel_full",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "maintainability",
+      "detail": "Manifest exposes one recommended smoke command for future primary-demo handoff changes.",
+      "name": "single_recommended_runner_surface",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "maintainability",
+      "detail": "Manifest says new lifecycle variants should be driven by runner failures, not report sprawl.",
+      "name": "manual_variant_policy_blocks_report_sprawl",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "phase coverage",
+      "detail": "Covered phases: closed_origin_tab_continuity, cross_tab_prepared_resume_visible, hard_reload_continuity, repaired_continue_return_refresh, stale_reprepare_repair, stale_supersession_calibration.",
+      "name": "all_lifecycle_phases_covered",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "phase coverage",
+      "detail": "Fresh path covers cross-tab, closed-origin, and hard-reload continuity.",
+      "name": "fresh_path_phase_set_covered",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "phase coverage",
+      "detail": "Stale path covers stale prepared-handoff calibration.",
+      "name": "stale_path_phase_set_covered",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "phase coverage",
+      "detail": "Repair path covers clean reprepare after stale mismatch.",
+      "name": "repair_path_phase_set_covered",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "phase coverage",
+      "detail": "Post-repair path covers actual continue, return, refresh, and reload freshness.",
+      "name": "post_repair_phase_set_covered",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "actionability",
+      "detail": "Contract retains actionable future smoke requirements instead of a vague pass/fail label.",
+      "name": "future_smoke_requirements_present",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "actionability",
+      "detail": "Runner manifest points to failure artifacts and exact rerun commands.",
+      "name": "failure_output_is_actionable",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "evidence quality",
+      "detail": "Input report pass rate is 1.000.",
+      "name": "input_report_evidence_full",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "source binding",
+      "detail": "Source binding score is 1.000.",
+      "name": "source_binding_evidence_full",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runtime hygiene",
+      "detail": "Aggregated console error count is 0.",
+      "name": "aggregated_console_clean",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Manifest reserves a future live browser E2E slot without pretending this deterministic runner is that proof.",
+      "name": "future_browser_e2e_slot_not_claimed",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Boundaries explicitly reject hosted URL, production persistence, complete gameplay, consciousness, and moral-patienthood claims.",
+      "name": "claim_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "actionability_score": 1.0,
+    "artifact_refresh_score": 1.0,
+    "claim_boundary_score": 1.0,
+    "console_errors_total": 0,
+    "contract_input_report_pass_rate": 1.0,
+    "contract_weakest_channel_score": 1.0,
+    "criterion_count": 18,
+    "evidence_quality_score": 1.0,
+    "executable_contract_score": 1.0,
+    "phase_coverage_score": 1.0,
+    "readiness": 1.0,
+    "runtime_hygiene_score": 1.0,
+    "single_runner_surface_score": 1.0,
+    "source_binding_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-342: wire the primary playable demo entrypoint to this lifecycle smoke runner so future vertical-slice work changes the maintained surface and immediately exercises fresh, stale, repair, and post-repair handoff paths",
+  "prefix": "ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+  "report": 342,
+  "runner_manifest": {
+    "boundaries": [
+      "reusable deterministic lifecycle smoke runner only",
+      "browser-local artifact and source-binding evidence only",
+      "no live hosted URL claim",
+      "no production persistence claim",
+      "no autonomous natural-language claim",
+      "no subjective-consciousness claim",
+      "no moral-patienthood claim",
+      "no complete 3D engine claim",
+      "no finished gameplay claim"
+    ],
+    "contract_refresh_command": "python3 -m experiments.ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract",
+    "covered_phases": [
+      "cross_tab_prepared_resume_visible",
+      "closed_origin_tab_continuity",
+      "hard_reload_continuity",
+      "stale_supersession_calibration",
+      "stale_reprepare_repair",
+      "repaired_continue_return_refresh"
+    ],
+    "failure_outputs": {
+      "contract_results": "artifacts/ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract_results.json",
+      "criteria": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_criteria.csv",
+      "manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+      "results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json"
+    },
+    "future_browser_e2e_slot": {
+      "reason": "This runner consolidates deterministic lifecycle artifacts and source bindings; it does not replace a real browser automation gate for future hosted/playable checks.",
+      "status": "not_claimed"
+    },
+    "manual_variant_policy": "do not add another tab, reload, stale, or return report unless this runner fails and the failure names a missing lifecycle path",
+    "name": "primary_demo_lifecycle_smoke_runner",
+    "recommended_command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "report": 342,
+    "required_phase_sets": {
+      "fresh": [
+        "closed_origin_tab_continuity",
+        "cross_tab_prepared_resume_visible",
+        "hard_reload_continuity"
+      ],
+      "post_repair": [
+        "repaired_continue_return_refresh"
+      ],
+      "repair": [
+        "stale_reprepare_repair"
+      ],
+      "stale": [
+        "stale_supersession_calibration"
+      ]
+    },
+    "rerun_commands": [
+      "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+      "python3 -m py_compile experiments/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner.py experiments/ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract.py scripts/run_experiments.py",
+      "git diff --check"
+    ],
+    "routine_policy": "run one maintained lifecycle smoke runner after primary-demo handoff changes",
+    "seed": 20270740
+  },
+  "seed": 20270740,
+  "verdict": "pass"
+}

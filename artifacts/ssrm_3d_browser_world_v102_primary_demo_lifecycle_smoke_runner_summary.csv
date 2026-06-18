@@ -1,0 +1,2 @@
+report,seed,verdict,readiness,weakest_channel_score,executable_contract_score,single_runner_surface_score,phase_coverage_score,artifact_refresh_score,actionability_score,evidence_quality_score,source_binding_score,runtime_hygiene_score,claim_boundary_score,contract_input_report_pass_rate,contract_weakest_channel_score,console_errors_total,criterion_count
+342,20270740,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,18

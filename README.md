@@ -51,6 +51,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo re-prepared handoff reload persistence report](docs/331_ssrm_3d_browser_world_v91_primary_demo_reprepared_handoff_reload_persistence_report.md): verifies that the recovered resume handoff remains visible, fresh, resume-bound, and continuity-preserving after another launcher reload.
 - [Primary demo readable handoff restart bridge report](docs/332_ssrm_3d_browser_world_v92_primary_demo_readable_handoff_restart_bridge_report.md): adds a readable persisted-handoff summary so cold reviewers can see freshness, resume binding, checklist, recorder, shell evidence, and next action without raw JSON inspection.
 - [Primary demo handoff continue action bridge report](docs/333_ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_report.md): adds persisted handoff-local Continue and download controls so cold reviewers can resume from the readable handoff card without JSON or localStorage inspection.
+- [Primary demo continue-return freshness bridge report](docs/334_ssrm_3d_browser_world_v94_primary_demo_continue_return_freshness_bridge_report.md): verifies that continuing from the prepared resume handoff, returning, and refreshing shell evidence keeps the prepared handoff fresh with the same visible timestamp.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

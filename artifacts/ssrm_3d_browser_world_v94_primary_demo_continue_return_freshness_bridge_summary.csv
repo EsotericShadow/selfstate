@@ -1,0 +1,2 @@
+readiness,weakest_channel_score,continue_return_navigation_score,timestamp_stability_score,post_return_freshness_score,visible_no_json_score,console_errors,criterion_count,report,seed,verdict
+1.0,1.0,1.0,1.0,1.0,1.0,0,16,334,20270732,pass

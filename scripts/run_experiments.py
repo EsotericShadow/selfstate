@@ -4060,6 +4060,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v108_primary_demo_combined_receipt_download_guard",
         "experiments.ssrm_3d_browser_world_v109_primary_demo_guarded_receipt_browser_smoke",
         "experiments.ssrm_3d_browser_world_v110_primary_shell_return_recognition_vertical_slice",
+        "experiments.ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup",
         "--seed",
         "20270732",
     ],

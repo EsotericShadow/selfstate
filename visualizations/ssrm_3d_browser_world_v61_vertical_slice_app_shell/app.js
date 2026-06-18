@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -66,6 +66,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   resources: { water: 12, fiber: 10, wood: 17, care: 6 },
   replay: [],
   returnContinuity: null,
+  promiseFollowUp: null,
   lastQA: []
 }));
 
@@ -85,6 +86,15 @@ function renderReturnContinuity() {
   }
   node.textContent = `${world.returnContinuity.resident} ${world.returnContinuity.memory}; replay before return ${world.returnContinuity.replayRowsBeforeReturn}.`;
 }
+function renderPromiseFollowUp() {
+  const node = document.getElementById('promiseFollowUpOut');
+  if (!node) return;
+  if (!world.promiseFollowUp) {
+    node.textContent = 'No remembered follow-up yet.';
+    return;
+  }
+  node.textContent = world.promiseFollowUp.visibleStatus;
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -93,6 +103,7 @@ function log(event, payload) {
   localStorage.setItem(REPLAY_KEY, JSON.stringify(world.replay));
   render();
   renderReturnContinuity();
+  renderPromiseFollowUp();
   return row;
 }
 function mutateResident(name, delta) {
@@ -128,8 +139,9 @@ function enterWorld() {
       recognizedAtTick: world.tick,
       boundary: 'browser-local-return-recognition-public-state-only'
     };
+    advancePromiseFollowUpState(residentName, 'return', replayRowsBeforeReturn);
   }
-  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null });
+  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null, promiseFollowUp: world.promiseFollowUp || null });
 }
 function moveNorth() { world.avatar.y = Math.max(52, world.avatar.y - 34); return log('moveNorth', { y: world.avatar.y }); }
 function moveSouth() { world.avatar.y = Math.min(560, world.avatar.y + 34); return log('moveSouth', { y: world.avatar.y }); }
@@ -143,6 +155,38 @@ function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1,
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
 function waitOffscreen() { Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 })); return log('waitOffscreen', { offscreenLife: true }); }
 function repairTrust() { mutateResident(world.selected, { trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }); return log('repairTrust', { nonMagic: true }); }
+function advancePromiseFollowUpState(residentName, trigger, replayRowsBeforeReturn) {
+  const previous = world.promiseFollowUp && world.promiseFollowUp.resident === residentName ? world.promiseFollowUp : null;
+  const stageOrder = ['opened', 'advanced', 'confirmed'];
+  const previousIndex = previous ? stageOrder.indexOf(previous.stage) : -1;
+  const nextStage = stageOrder[Math.min(previousIndex + 1, stageOrder.length - 1)];
+  const returnCount = (previous ? previous.returnCount : 0) + (trigger === 'return' ? 1 : 0);
+  const obligation = previous ? previous.obligation : `${residentName} wants the avatar to check the awning repair after returning`;
+  world.promiseFollowUp = {
+    reportIntroduced: 351,
+    resident: residentName,
+    obligation,
+    stage: nextStage,
+    returnCount,
+    trigger,
+    replayRowsBeforeReturn,
+    advancedAtTick: world.tick,
+    visibleStatus: `${residentName} follow-up ${nextStage}: ${obligation} (${returnCount} return(s))`,
+    boundary: 'browser-local-public-obligation-thread-only'
+  };
+  mutateResident(residentName, {
+    trust: nextStage === 'opened' ? 0.004 : 0.006,
+    progress: nextStage === 'opened' ? 0.012 : 0.018,
+    memory: `recognized returning avatar; follow-up ${nextStage}: ${obligation}`,
+    historyEvent: 'promise follow-up',
+    historyDetail: `${nextStage} remembered obligation after ${returnCount} return(s)`
+  });
+  return world.promiseFollowUp;
+}
+function advancePromiseFollowUp() {
+  const followUp = advancePromiseFollowUpState(world.selected, 'manual', world.replay.length);
+  return log('advancePromiseFollowUp', { followUp, boundary: BOUNDARY });
+}
 function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); recordCheckpoint('manual save'); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
 function restoreWorld() {
   const saved = localStorage.getItem(SAVE_SNAPSHOT_KEY);
@@ -176,6 +220,8 @@ function runStateBoundaryAudit() {
     selected: world.selected,
     residents: world.residents,
     resources: world.resources,
+    returnContinuity: world.returnContinuity,
+    promiseFollowUp: world.promiseFollowUp,
     replay: world.replay.map(row => ({
       event: row.event,
       tick: row.tick,

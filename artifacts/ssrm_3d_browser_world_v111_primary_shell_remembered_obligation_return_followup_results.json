@@ -1,0 +1,124 @@
+{
+  "boundary": "Browser-local remembered obligation follow-up behavior over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim.",
+  "browser_smoke_artifact": "artifacts/ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_browser_smoke.json",
+  "criteria": [
+    {
+      "criterion": "report_350_return_recognition_gate_passing",
+      "evidence": "Report 350 verdict=pass weakest=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_exposes_public_promise_followup_state",
+      "evidence": "app.js contains public promiseFollowUp state and boundary label",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "return_entry_advances_followup_state",
+      "evidence": "enterWorld calls advancePromiseFollowUpState on returning visits",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "visible_followup_dashboard_wired",
+      "evidence": "index.html exposes Follow-up dashboard text and manual advance control",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_artifact_exists",
+      "evidence": "artifacts/ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_browser_smoke.json",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_used_maintained_shell",
+      "evidence": "http://127.0.0.1:8771/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_created_persisted_session_before_return",
+      "evidence": "before replayRows=2 memory=heard bounded phrase greet",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "first_return_opened_remembered_obligation",
+      "evidence": "first stage=opened returnCount=1",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "second_return_advanced_same_obligation",
+      "evidence": "second stage=advanced returnCount=2 progress=0.378->0.402",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "resident_memory_links_return_and_followup",
+      "evidence": "recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "followup_visible_in_dashboard",
+      "evidence": "Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "replay_and_history_record_followup",
+      "evidence": "  t2 promise follow-up: opened remembered obligation after 1 return(s) -> debt 1 trust 0.606 progress 0.378 |   t3 promise follow-up: advanced remembered obligation after 2 return(s) -> debt 1 trust 0.622 progress 0.402",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_console_clean",
+      "evidence": "console error count=0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "experiment_index_includes_report_351",
+      "evidence": "scripts/run_experiments.py includes Report 351 module",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "claim_boundary_preserved",
+      "evidence": "Browser-local remembered obligation follow-up behavior over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim.",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "generated_at": "2026-06-18T11:14:59.278227+00:00",
+  "metrics": {
+    "after_first_progress": 0.378,
+    "after_first_replay_rows": 3,
+    "after_first_trust": 0.606,
+    "after_second_progress": 0.402,
+    "after_second_replay_rows": 4,
+    "after_second_trust": 0.622,
+    "before_progress": 0.36,
+    "before_replay_rows": 2,
+    "before_trust": 0.592,
+    "browser_interaction_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "console_error_count": 0,
+    "criterion_count": 15,
+    "readiness": 1.0,
+    "remembered_obligation_score": 1.0,
+    "replay_debug_score": 1.0,
+    "review_gate_score": 1.0,
+    "runner_index_score": 1.0,
+    "runtime_hygiene_score": 1.0,
+    "source_behavior_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-351: make the remembered follow-up selectable from a visible obligation list and require the avatar to resolve or defer it through a bounded action rather than advancing it only on repeated entry",
+  "report": 351,
+  "slug": "ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup",
+  "verdict": "pass"
+}

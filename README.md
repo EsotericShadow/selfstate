@@ -2091,3 +2091,7 @@ Report 306 closes the MP-10 recorder loop from Report 305. The maintained v61 sh
 ## Report 307: Browser World v67 Primary Demo Defect Triage Status
 
 Report 307 upgrades the primary-demo recorder from raw defect notes into a small triage/status workflow. Defects now carry related manual step, severity, open/resolved status, resolution note, and exportable public ledger evidence. Browser verification recorded an MP-10 blocking defect as open, resolved it with a Report 307 resolution note, prepared recorder export, and observed 0 console errors. The deterministic report passes with readiness `0.962200` and weakest-channel score `0.892000`. The honest limit is `single_internal_triage_check_not_external_playtest`.
+
+### Report 351: SSRM-3D Browser World v111 Remembered Obligation Return Follow-up
+
+[Primary shell remembered obligation return-followup report](docs/351_ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_report.md): extends the maintained shell so repeated return recognition advances the same visible resident follow-up obligation, with public follow-up state, resident memory/history, replay evidence, and browser-local validation.

@@ -1,0 +1,16 @@
+criterion,passed,score,evidence
+report_350_return_recognition_gate_passing,True,1.0,Report 350 verdict=pass weakest=1.0
+source_exposes_public_promise_followup_state,True,1.0,app.js contains public promiseFollowUp state and boundary label
+return_entry_advances_followup_state,True,1.0,enterWorld calls advancePromiseFollowUpState on returning visits
+visible_followup_dashboard_wired,True,1.0,index.html exposes Follow-up dashboard text and manual advance control
+browser_smoke_artifact_exists,True,1.0,artifacts/ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_browser_smoke.json
+browser_smoke_used_maintained_shell,True,1.0,http://127.0.0.1:8771/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html
+browser_smoke_created_persisted_session_before_return,True,1.0,before replayRows=2 memory=heard bounded phrase greet
+first_return_opened_remembered_obligation,True,1.0,first stage=opened returnCount=1
+second_return_advanced_same_obligation,True,1.0,second stage=advanced returnCount=2 progress=0.378->0.402
+resident_memory_links_return_and_followup,True,1.0,recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning
+followup_visible_in_dashboard,True,1.0,Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))
+replay_and_history_record_followup,True,1.0,  t2 promise follow-up: opened remembered obligation after 1 return(s) -> debt 1 trust 0.606 progress 0.378 |   t3 promise follow-up: advanced remembered obligation after 2 return(s) -> debt 1 trust 0.622 progress 0.402
+browser_console_clean,True,1.0,console error count=0
+experiment_index_includes_report_351,True,1.0,scripts/run_experiments.py includes Report 351 module
+claim_boundary_preserved,True,1.0,"Browser-local remembered obligation follow-up behavior over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim."

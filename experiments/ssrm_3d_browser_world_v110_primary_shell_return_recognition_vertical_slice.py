@@ -78,7 +78,8 @@ def build_results() -> dict[str, Any]:
         "returningVisit",
         "returnContinuity: world.returnContinuity || null",
         "browser-local-return-recognition-public-state-only",
-        "publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity']",
+        "publicState:",
+        "'returnContinuity'",
         "returnContinuityOut",
         "function renderReturnContinuity()",
     )

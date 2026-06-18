@@ -1,0 +1,260 @@
+{
+  "browser_smoke": {
+    "afterFirstReturn": {
+      "continuity": "Ari recognized returning avatar after 2 replay row(s); replay before return 2.",
+      "dashboardText": "Resources: water 12 / fiber 10 / wood 17 / care 6\n* Ari   | repair awning    | progress 0.378 | debt  1 | trust 0.606 | history  3 | stable | memory: recognized returning avatar; follow-up opened: Ari wants the avatar to check the awning repair after returning\n  Fay   | sort herbs       | progress 0.500 | debt  0 | trust 0.630 | history  0 | stable | memory: warned about wet route\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "1 / trust 0.606",
+      "followUpText": "Ari follow-up opened: Ari wants the avatar to check the awning repair after returning (1 return(s))",
+      "historyText": "* Ari now: debt 1 / trust 0.606 / progress 0.378 / memory: recognized returning avatar; follow-up opened: Ari wants the avatar to check the awning repair after returning\n  t1 state update: heard bounded phrase greet -> debt 1 trust 0.592 progress 0.36\n  t2 return recognition: recognized avatar returning through arrival court -> debt 1 trust 0.602 progress 0.366\n  t2 promise follow-up: opened remembered obligation after 1 return(s) -> debt 1 trust 0.606 progress 0.378\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after-first-return",
+      "memory": "recognized returning avatar; follow-up opened: Ari wants the avatar to check the awning repair after returning",
+      "progress": 0.378,
+      "promiseFollowUp": {
+        "boundary": "browser-local-public-obligation-thread-only",
+        "obligation": "Ari wants the avatar to check the awning repair after returning",
+        "reportIntroduced": 351,
+        "resident": "Ari",
+        "returnCount": 1,
+        "stage": "opened",
+        "visibleStatus": "Ari follow-up opened: Ari wants the avatar to check the awning repair after returning (1 return(s))"
+      },
+      "replayRows": 3,
+      "replayText": "3 rows",
+      "room": "arrival court / entered",
+      "schedule": "repair awning / progress 0.378",
+      "traceText": "{\n  \"latest\": {\n    \"event\": \"enterWorld\",\n    \"tick\": 2,\n    \"selected\": \"Ari\",\n    \"room\": \"arrival court\",\n    \"payload\": {\n      \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n      \"returningVisit\": true,\n      \"returnContinuity\": {\n        \"reportIntroduced\": 350,\n        \"resident\": \"Ari\",\n        \"replayRowsBeforeReturn\": 2,\n        \"memory\": \"recognized returning avatar after 2 replay row(s)\",\n        \"recognizedAtTick\": 2,\n        \"boundary\": \"browser-local-return-recognition-public-state-only\"\n      },\n      \"promiseFollowUp\": {\n        \"reportIntroduced\": 351,\n        \"resident\": \"Ari\",\n        \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n        \"stage\": \"opened\",\n        \"returnCount\": 1,\n        \"trigger\": \"return\",\n        \"replayRowsBeforeReturn\": 2,\n        \"advancedAtTick\": 2,\n        \"visibleStatus\": \"Ari follow-up opened: Ari wants the avatar to check the awning repair after returning (1 return(s))\",\n        \"boundary\": \"browser-local-public-obligation-thread-only\"\n      }\n    }\n  },\n  \"world\": {\n    \"entered\": true,\n    \"tick\": 3,\n    \"avatar\": {\n      \"room\": \"arrival court\",\n      \"x\": 180,\n      \"y\": 260\n    },\n    \"selected\": \"Ari\",\n    \"audit\": false,\n    \"residents\": {\n      \"Ari\": {\n        \"trust\": 0.606,\n        \"debt\": 1,\n        \"schedule\": \"repair awning\",\n        \"memory\": \"recognized returning avatar; follow-up opened: Ari wants the avatar to check the awning repair after returning\",\n        \"progress\": 0.378\n      },\n      \"Fay\": {\n        \"trust\": 0.63,\n        \"debt\": 0,\n        \"schedule\": \"sort herbs\",\n        \"memory\": \"warned about wet route\",\n        \"progress\": 0.5\n      },\n      \"Milo\": {\n        \"trust\": 0.48,\n        \"debt\": 2,\n        \"schedule\": \"carry water\",\n        \"memory\": \"tool loan pending\",\n        \"progress\": 0.24\n      },\n      \"Sera\": {\n        \"trust\": 0.54,\n        \"debt\": 1,\n        \"schedule\": \"dry cloaks\",\n        \"memory\": \"asked for quiet\",\n        \"progress\": 0.42\n      },\n      \"Tovan\": {\n        \"trust\": 0.51,\n        \"debt\": 1,\n        \"schedule\": \"map safe route\",\n        \"memory\": \"keeps route tokens\",\n        \"progress\": 0.39\n      },\n      \"Nia\": {\n        \"trust\": 0.61,\n        \"debt\": 0,\n        \"schedule\": \"sort glass jars\",\n        \"memory\": \"remembers quiet greeting\",\n        \"progress\": 0.47\n      }\n    },\n    \"resources\": {\n      \"water\": 12,\n      \"fiber\": 10,\n      \"wood\": 17,\n      \"care\": 6\n    },\n    \"replay\": [\n      {\n        \"event\": \"enterWorld\",\n        \"tick\": 0,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n          \"returningVisit\": false,\n          \"returnContinuity\": null,\n          \"promiseFollowUp\": null\n        }\n      },\n      {\n        \"event\": \"talkBounded\",\n        \"tick\": 1,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"phrase\": \"greet\",\n          \"noLLM\": true,\n          \"autonomousLanguage\": false\n        }\n      },\n      {\n        \"event\": \"enterWorld\",\n        \"tick\": 2,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n          \"returningVisit\": true,\n          \"returnContinuity\": {\n            \"reportIntroduced\": 350,\n            \"resident\": \"Ari\",\n            \"replayRowsBeforeReturn\": 2,\n            \"memory\": \"recognized returning avatar after 2 replay row(s)\",\n            \"recognizedAtTick\": 2,\n            \"boundary\": \"browser-local-return-recognition-public-state-only\"\n          },\n          \"promiseFollowUp\": {\n            \"reportIntroduced\": 351,\n            \"resident\": \"Ari\",\n            \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n            \"stage\": \"opened\",\n            \"returnCount\": 1,\n            \"trigger\": \"return\",\n            \"replayRowsBeforeReturn\": 2,\n            \"advancedAtTick\": 2,\n            \"visibleStatus\": \"Ari follow-up opened: Ari wants the avatar to check the awning repair after returning (1 return(s))\",\n            \"boundary\": \"browser-local-public-obligation-thread-only\"\n          }\n        }\n      }\n    ],\n    \"returnContinuity\": {\n      \"reportIntroduced\": 350,\n      \"resident\": \"Ari\",\n      \"replayRowsBeforeReturn\": 2,\n      \"memory\": \"recognized returning avatar after 2 replay row(s)\",\n      \"recognizedAtTick\": 2,\n      \"boundary\": \"browser-local-return-recognition-public-state-only\"\n    },\n    \"promiseFollowUp\": {\n      \"reportIntroduced\": 351,\n      \"resident\": \"Ari\",\n      \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n      \"stage\": \"opened\",\n      \"returnCount\": 1,\n      \"trigger\": \"return\",\n      \"replayRowsBeforeReturn\": 2,\n      \"advancedAtTick\": 2,\n      \"visibleStatus\": \"Ari follow-up opened: Ari wants the avatar to check the awning repair after returning (1 return(s))\",\n      \"boundary\": \"browser-local-public-obligation-thread-only\"\n    },\n    \"lastQA\": []\n  }\n}",
+      "trust": 0.606
+    },
+    "afterSecondReturn": {
+      "continuity": "Ari recognized returning avatar after 3 replay row(s); replay before return 3.",
+      "dashboardText": "Resources: water 12 / fiber 10 / wood 17 / care 6\n* Ari   | repair awning    | progress 0.402 | debt  1 | trust 0.622 | history  5 | stable | memory: recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning\n  Fay   | sort herbs       | progress 0.500 | debt  0 | trust 0.630 | history  0 | stable | memory: warned about wet route\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "1 / trust 0.622",
+      "followUpText": "Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))",
+      "historyText": "* Ari now: debt 1 / trust 0.622 / progress 0.402 / memory: recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning\n  t2 return recognition: recognized avatar returning through arrival court -> debt 1 trust 0.602 progress 0.366\n  t2 promise follow-up: opened remembered obligation after 1 return(s) -> debt 1 trust 0.606 progress 0.378\n  t3 return recognition: recognized avatar returning through arrival court -> debt 1 trust 0.616 progress 0.384\n  t3 promise follow-up: advanced remembered obligation after 2 return(s) -> debt 1 trust 0.622 progress 0.402\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after-second-return",
+      "memory": "recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning",
+      "progress": 0.402,
+      "promiseFollowUp": {
+        "boundary": "browser-local-public-obligation-thread-only",
+        "obligation": "Ari wants the avatar to check the awning repair after returning",
+        "reportIntroduced": 351,
+        "resident": "Ari",
+        "returnCount": 2,
+        "stage": "advanced",
+        "visibleStatus": "Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))"
+      },
+      "replayRows": 4,
+      "replayText": "4 rows",
+      "room": "arrival court / entered",
+      "schedule": "repair awning / progress 0.402",
+      "traceText": "{\n  \"latest\": {\n    \"event\": \"enterWorld\",\n    \"tick\": 3,\n    \"selected\": \"Ari\",\n    \"room\": \"arrival court\",\n    \"payload\": {\n      \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n      \"returningVisit\": true,\n      \"returnContinuity\": {\n        \"reportIntroduced\": 350,\n        \"resident\": \"Ari\",\n        \"replayRowsBeforeReturn\": 3,\n        \"memory\": \"recognized returning avatar after 3 replay row(s)\",\n        \"recognizedAtTick\": 3,\n        \"boundary\": \"browser-local-return-recognition-public-state-only\"\n      },\n      \"promiseFollowUp\": {\n        \"reportIntroduced\": 351,\n        \"resident\": \"Ari\",\n        \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n        \"stage\": \"advanced\",\n        \"returnCount\": 2,\n        \"trigger\": \"return\",\n        \"replayRowsBeforeReturn\": 3,\n        \"advancedAtTick\": 3,\n        \"visibleStatus\": \"Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))\",\n        \"boundary\": \"browser-local-public-obligation-thread-only\"\n      }\n    }\n  },\n  \"world\": {\n    \"entered\": true,\n    \"tick\": 4,\n    \"avatar\": {\n      \"room\": \"arrival court\",\n      \"x\": 180,\n      \"y\": 260\n    },\n    \"selected\": \"Ari\",\n    \"audit\": false,\n    \"residents\": {\n      \"Ari\": {\n        \"trust\": 0.622,\n        \"debt\": 1,\n        \"schedule\": \"repair awning\",\n        \"memory\": \"recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning\",\n        \"progress\": 0.402\n      },\n      \"Fay\": {\n        \"trust\": 0.63,\n        \"debt\": 0,\n        \"schedule\": \"sort herbs\",\n        \"memory\": \"warned about wet route\",\n        \"progress\": 0.5\n      },\n      \"Milo\": {\n        \"trust\": 0.48,\n        \"debt\": 2,\n        \"schedule\": \"carry water\",\n        \"memory\": \"tool loan pending\",\n        \"progress\": 0.24\n      },\n      \"Sera\": {\n        \"trust\": 0.54,\n        \"debt\": 1,\n        \"schedule\": \"dry cloaks\",\n        \"memory\": \"asked for quiet\",\n        \"progress\": 0.42\n      },\n      \"Tovan\": {\n        \"trust\": 0.51,\n        \"debt\": 1,\n        \"schedule\": \"map safe route\",\n        \"memory\": \"keeps route tokens\",\n        \"progress\": 0.39\n      },\n      \"Nia\": {\n        \"trust\": 0.61,\n        \"debt\": 0,\n        \"schedule\": \"sort glass jars\",\n        \"memory\": \"remembers quiet greeting\",\n        \"progress\": 0.47\n      }\n    },\n    \"resources\": {\n      \"water\": 12,\n      \"fiber\": 10,\n      \"wood\": 17,\n      \"care\": 6\n    },\n    \"replay\": [\n      {\n        \"event\": \"enterWorld\",\n        \"tick\": 0,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n          \"returningVisit\": false,\n          \"returnContinuity\": null,\n          \"promiseFollowUp\": null\n        }\n      },\n      {\n        \"event\": \"talkBounded\",\n        \"tick\": 1,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"phrase\": \"greet\",\n          \"noLLM\": true,\n          \"autonomousLanguage\": false\n        }\n      },\n      {\n        \"event\": \"enterWorld\",\n        \"tick\": 2,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n          \"returningVisit\": true,\n          \"returnContinuity\": {\n            \"reportIntroduced\": 350,\n            \"resident\": \"Ari\",\n            \"replayRowsBeforeReturn\": 2,\n            \"memory\": \"recognized returning avatar after 2 replay row(s)\",\n            \"recognizedAtTick\": 2,\n            \"boundary\": \"browser-local-return-recognition-public-state-only\"\n          },\n          \"promiseFollowUp\": {\n            \"reportIntroduced\": 351,\n            \"resident\": \"Ari\",\n            \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n            \"stage\": \"opened\",\n            \"returnCount\": 1,\n            \"trigger\": \"return\",\n            \"replayRowsBeforeReturn\": 2,\n            \"advancedAtTick\": 2,\n            \"visibleStatus\": \"Ari follow-up opened: Ari wants the avatar to check the awning repair after returning (1 return(s))\",\n            \"boundary\": \"browser-local-public-obligation-thread-only\"\n          }\n        }\n      },\n      {\n        \"event\": \"enterWorld\",\n        \"tick\": 3,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n          \"returningVisit\": true,\n          \"returnContinuity\": {\n            \"reportIntroduced\": 350,\n            \"resident\": \"Ari\",\n            \"replayRowsBeforeReturn\": 3,\n            \"memory\": \"recognized returning avatar after 3 replay row(s)\",\n            \"recognizedAtTick\": 3,\n            \"boundary\": \"browser-local-return-recognition-public-state-only\"\n          },\n          \"promiseFollowUp\": {\n            \"reportIntroduced\": 351,\n            \"resident\": \"Ari\",\n            \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n            \"stage\": \"advanced\",\n            \"returnCount\": 2,\n            \"trigger\": \"return\",\n            \"replayRowsBeforeReturn\": 3,\n            \"advancedAtTick\": 3,\n            \"visibleStatus\": \"Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))\",\n            \"boundary\": \"browser-local-public-obligation-thread-only\"\n          }\n        }\n      }\n    ],\n    \"returnContinuity\": {\n      \"reportIntroduced\": 350,\n      \"resident\": \"Ari\",\n      \"replayRowsBeforeReturn\": 3,\n      \"memory\": \"recognized returning avatar after 3 replay row(s)\",\n      \"recognizedAtTick\": 3,\n      \"boundary\": \"browser-local-return-recognition-public-state-only\"\n    },\n    \"promiseFollowUp\": {\n      \"reportIntroduced\": 351,\n      \"resident\": \"Ari\",\n      \"obligation\": \"Ari wants the avatar to check the awning repair after returning\",\n      \"stage\": \"advanced\",\n      \"returnCount\": 2,\n      \"trigger\": \"return\",\n      \"replayRowsBeforeReturn\": 3,\n      \"advancedAtTick\": 3,\n      \"visibleStatus\": \"Ari follow-up advanced: Ari wants the avatar to check the awning repair after returning (2 return(s))\",\n      \"boundary\": \"browser-local-public-obligation-thread-only\"\n    },\n    \"lastQA\": []\n  }\n}",
+      "trust": 0.622
+    },
+    "beforeFirstReturn": {
+      "continuity": "No return recognition yet.",
+      "dashboardText": "Resources: water 12 / fiber 10 / wood 17 / care 6\n* Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.592 | history  1 | stable | memory: heard bounded phrase greet\n  Fay   | sort herbs       | progress 0.500 | debt  0 | trust 0.630 | history  0 | stable | memory: warned about wet route\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "1 / trust 0.592",
+      "followUpText": "No remembered follow-up yet.",
+      "historyText": "* Ari now: debt 1 / trust 0.592 / progress 0.360 / memory: heard bounded phrase greet\n  t1 state update: heard bounded phrase greet -> debt 1 trust 0.592 progress 0.36\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "before-first-return",
+      "memory": "heard bounded phrase greet",
+      "progress": 0.36,
+      "promiseFollowUp": null,
+      "replayRows": 2,
+      "replayText": "2 rows",
+      "room": "arrival court / entered",
+      "schedule": "repair awning / progress 0.360",
+      "traceText": "{\n  \"latest\": {\n    \"event\": \"talkBounded\",\n    \"tick\": 1,\n    \"selected\": \"Ari\",\n    \"room\": \"arrival court\",\n    \"payload\": {\n      \"phrase\": \"greet\",\n      \"noLLM\": true,\n      \"autonomousLanguage\": false\n    }\n  },\n  \"world\": {\n    \"entered\": true,\n    \"tick\": 2,\n    \"avatar\": {\n      \"room\": \"arrival court\",\n      \"x\": 180,\n      \"y\": 260\n    },\n    \"selected\": \"Ari\",\n    \"audit\": false,\n    \"residents\": {\n      \"Ari\": {\n        \"trust\": 0.592,\n        \"debt\": 1,\n        \"schedule\": \"repair awning\",\n        \"memory\": \"heard bounded phrase greet\",\n        \"progress\": 0.36\n      },\n      \"Fay\": {\n        \"trust\": 0.63,\n        \"debt\": 0,\n        \"schedule\": \"sort herbs\",\n        \"memory\": \"warned about wet route\",\n        \"progress\": 0.5\n      },\n      \"Milo\": {\n        \"trust\": 0.48,\n        \"debt\": 2,\n        \"schedule\": \"carry water\",\n        \"memory\": \"tool loan pending\",\n        \"progress\": 0.24\n      },\n      \"Sera\": {\n        \"trust\": 0.54,\n        \"debt\": 1,\n        \"schedule\": \"dry cloaks\",\n        \"memory\": \"asked for quiet\",\n        \"progress\": 0.42\n      },\n      \"Tovan\": {\n        \"trust\": 0.51,\n        \"debt\": 1,\n        \"schedule\": \"map safe route\",\n        \"memory\": \"keeps route tokens\",\n        \"progress\": 0.39\n      },\n      \"Nia\": {\n        \"trust\": 0.61,\n        \"debt\": 0,\n        \"schedule\": \"sort glass jars\",\n        \"memory\": \"remembers quiet greeting\",\n        \"progress\": 0.47\n      }\n    },\n    \"resources\": {\n      \"water\": 12,\n      \"fiber\": 10,\n      \"wood\": 17,\n      \"care\": 6\n    },\n    \"replay\": [\n      {\n        \"event\": \"enterWorld\",\n        \"tick\": 0,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n          \"returningVisit\": false,\n          \"returnContinuity\": null,\n          \"promiseFollowUp\": null\n        }\n      },\n      {\n        \"event\": \"talkBounded\",\n        \"tick\": 1,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"phrase\": \"greet\",\n          \"noLLM\": true,\n          \"autonomousLanguage\": false\n        }\n      }\n    ],\n    \"returnContinuity\": null,\n    \"promiseFollowUp\": null,\n    \"lastQA\": []\n  }\n}",
+      "trust": 0.592
+    },
+    "cleanStartUrl": "http://127.0.0.1:8771/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=report-351",
+    "consoleErrors": [],
+    "dashboardEvidence": "Resources: water 12 / fiber 10 / wood 17 / care 6\n* Ari   | repair awning    | progress 0.402 | debt  1 | trust 0.622 | history  5 | stable | memory: recognized returning avatar; follow-up advanced: Ari wants the avatar to check the awning repair after returning\n  Fay   | sort herbs       | progress 0.500 | debt  0 | trust 0.630 | history  0 | stable | memory: warned about wet route\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+    "enterWorldReplayPayloadHasPromiseFollowUp": true,
+    "firstReturnEnterClicked": true,
+    "firstReturnUrl": "http://127.0.0.1:8771/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=report-351-return-1",
+    "historyEvidence": "  t2 promise follow-up: opened remembered obligation after 1 return(s) -> debt 1 trust 0.606 progress 0.378 |   t3 promise follow-up: advanced remembered obligation after 2 return(s) -> debt 1 trust 0.622 progress 0.402",
+    "initialEnterClicked": true,
+    "report": 351,
+    "secondReturnEnterClicked": true,
+    "secondReturnUrl": "http://127.0.0.1:8771/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=report-351-return-2",
+    "shellUrl": "http://127.0.0.1:8771/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+    "sourceMarker": "report-351-browser-smoke",
+    "talkClicked": true,
+    "traceEvidence": "visible trace includes promiseFollowUp in enterWorld payload"
+  },
+  "report": 351,
+  "report350_gate": {
+    "boundaries": [
+      "browser-local maintained-shell return-recognition behavior only",
+      "no LLM call",
+      "no subjective-consciousness claim",
+      "no moral-patienthood claim",
+      "no autonomous natural-language claim",
+      "no production persistence claim",
+      "no hosted URL claim",
+      "no complete 3D engine claim",
+      "no finished gameplay claim"
+    ],
+    "browser_smoke": {
+      "afterReturn": {
+        "continuity": "Ari recognized returning avatar after 2 replay row(s); replay before return 2.",
+        "memory": "recognized returning avatar after 2 replay row(s)",
+        "progress": 0.366,
+        "replayRows": 3,
+        "replayText": "3 rows",
+        "trust": 0.602
+      },
+      "beforeReturn": {
+        "continuity": "No return recognition yet.",
+        "memory": "heard bounded phrase greet",
+        "progress": 0.36,
+        "replayRows": 2,
+        "replayText": "2 rows",
+        "trust": 0.592
+      },
+      "boundary": "browser-local-maintained-shell-return-recognition-smoke-only",
+      "browser": "in_app_browser",
+      "consoleErrors": [],
+      "dashboardEvidence": "Ari progress 0.366 / debt 1 / trust 0.602 / history 2 / memory recognized returning avatar after 2 replay row(s)",
+      "historyEvidence": "t1 state update trust 0.592; t2 return recognition trust 0.602; memory recognized returning avatar after 2 replay row(s)",
+      "initialEnterClicked": true,
+      "initialShellUrl": "http://127.0.0.1:8768/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=report-350",
+      "observedAt": "2026-06-18T11:05:44.258Z",
+      "parallelSurfaceCreated": false,
+      "replayEvents": [
+        "enterWorld",
+        "talkBounded",
+        "enterWorld"
+      ],
+      "report": 350,
+      "returnContinuity": {
+        "boundary": "browser-visible-return-continuity-dashboard-only",
+        "replayRowsBeforeReturn": 2,
+        "reportIntroduced": 350,
+        "resident": "Ari",
+        "visibleText": "Ari recognized returning avatar after 2 replay row(s); replay before return 2."
+      },
+      "returnedWithoutReset": true,
+      "returningVisitLogged": true,
+      "selectedResident": "Ari",
+      "shellUrl": "http://127.0.0.1:8768/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=report-350-return",
+      "talkClicked": true,
+      "traceEvidence": "latest enterWorld payload included returningVisit true and returnContinuity reportIntroduced 350"
+    },
+    "criteria": [
+      {
+        "channel": "review gate",
+        "detail": "Report 349 browser-smoked combined receipt gate exists and passes before this behavior change is accepted.",
+        "name": "receipt_gate_browser_smoke_available_and_passing",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "source behavior",
+        "detail": "Maintained shell source wires returningVisit recognition, public continuity state, history event, and replay payload.",
+        "name": "return_recognition_source_wired",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "browser artifact",
+        "detail": "Report 350 browser smoke artifact exists and is tagged correctly.",
+        "name": "browser_smoke_artifact_exists",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "surface discipline",
+        "detail": "Smoke ran in the maintained v61 app shell with no parallel surface.",
+        "name": "browser_smoke_used_maintained_shell",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "browser interaction",
+        "detail": "Smoke entered the world, talked to a resident, and created visible persisted replay/memory before return.",
+        "name": "browser_smoke_created_persisted_session_before_return",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "browser interaction",
+        "detail": "Smoke navigated back to the maintained shell without reset and added a return entry to replay.",
+        "name": "browser_smoke_returned_without_reset",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "visible consequence",
+        "detail": "Visible resident memory and trust changed after return recognition.",
+        "name": "resident_recognized_returning_avatar",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "public state",
+        "detail": "Browser smoke observed public returnContinuity state with report marker, resident, and replay row count.",
+        "name": "return_continuity_public_state_recorded",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "replay/debug",
+        "detail": "Browser smoke observed an enterWorld replay row with returningVisit true.",
+        "name": "return_recognition_replay_logged",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "runtime hygiene",
+        "detail": "Browser console errors observed: 0.",
+        "name": "browser_console_clean",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "runner index",
+        "detail": "Experiment runner index includes the Report 350 verifier module.",
+        "name": "experiment_index_includes_report_350",
+        "passed": true,
+        "score": 1.0
+      },
+      {
+        "channel": "claim hygiene",
+        "detail": "Boundary rejects LLM, consciousness, moral patienthood, autonomous language, production persistence, hosted URL, complete engine, and finished gameplay claims.",
+        "name": "claim_boundary_preserved",
+        "passed": true,
+        "score": 1.0
+      }
+    ],
+    "metrics": {
+      "after_replay_rows": 3,
+      "after_trust": 0.602,
+      "before_replay_rows": 2,
+      "before_trust": 0.592,
+      "browser_artifact_score": 1.0,
+      "browser_interaction_score": 1.0,
+      "claim_hygiene_score": 1.0,
+      "console_error_count": 0,
+      "criterion_count": 12,
+      "public_state_score": 1.0,
+      "readiness": 1.0,
+      "replay_debug_score": 1.0,
+      "review_gate_score": 1.0,
+      "runner_index_score": 1.0,
+      "runtime_hygiene_score": 1.0,
+      "source_behavior_score": 1.0,
+      "surface_discipline_score": 1.0,
+      "visible_consequence_score": 1.0,
+      "weakest_channel_score": 1.0
+    },
+    "next_gate": "post-350: expand the return-recognition loop into a visible resident promise/follow-up thread so returning to the world advances one remembered obligation rather than only a greeting memory",
+    "prefix": "ssrm_3d_browser_world_v110_primary_shell_return_recognition_vertical_slice",
+    "report": 350,
+    "seed": 20270748,
+    "verdict": "pass"
+  },
+  "shell_app": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js",
+  "shell_index": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+}

@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+351,pass,1.0,1.0,post-351: make the remembered follow-up selectable from a visible obligation list and require the avatar to resolve or defer it through a bounded action rather than advancing it only on repeated entry

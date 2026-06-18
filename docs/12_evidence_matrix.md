@@ -1471,3 +1471,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_primary_demo/index.html`, `visualizations/ssrm_3d_browser_world_primary_demo/demo.js`, `visualizations/ssrm_3d_browser_world_primary_demo/qa_manifest.json`, `artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_browser_evidence.json`, and `docs/307_ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_report.md`.
 - Browser result: MP-10 blocking defect recorded open, then resolved with resolution note, export prepared, 0 console errors.
 - Boundary: internal browser triage evidence only; no external playtest cohort, production persistence, autonomous language, moral patienthood, finished game, complete 3D engine, or consciousness claim.
+
+## Report 351 Evidence Matrix Entry
+
+- Claim: repeated return to the maintained browser shell can advance a remembered resident obligation, not only a greeting memory.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_browser_smoke.json`, and `docs/351_ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_report.md`.
+- Browser result: clean session creates two replay rows before return, first return opens the follow-up, second return advances the same obligation to `follow-up advanced`, resident memory links return recognition to the follow-up, and console errors remain 0.
+- Boundary: browser-local deterministic follow-up state only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

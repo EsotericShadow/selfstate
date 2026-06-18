@@ -2135,3 +2135,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 361: SSRM-3D Browser World v121 Echo-Influenced Choice Refusal
 
 [Primary shell echo-influenced choice refusal report](docs/361_ssrm_3d_browser_world_v121_primary_shell_echo_influenced_choice_refusal_report.md): makes Fay's later `Offer help` action depend on the bounded echo conversation, accepting source-bounded help while refusing to rewrite the original offscreen cause chain.
+
+### Report 362: SSRM-3D Non-Scripted World Anomaly Discovery Bridge
+
+[Non-scripted world anomaly discovery report](docs/362_ssrm_3d_non_scripted_world_anomaly_discovery_bridge_report.md): pivots from scripted outcome bridges to seed-deterministic hidden material laws, public observations, resident partial beliefs, resident-chosen experiments, preserved failures, mutated social transmission, cultural memory, and an audit split between hidden law and resident knowledge.

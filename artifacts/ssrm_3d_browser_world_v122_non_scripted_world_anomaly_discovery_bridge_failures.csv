@@ -1,0 +1,14 @@
+seed,id,actor,materials,reason,consumed_time,consumed_materials,outcome,failure,source_belief,technology_unlock
+36231,36231-EXP-01,Fay,wet_wood+red_scrap,ask whether water ruins the carry,1,wet_wood+red_scrap,nothing repeated clearly,True,jar omen,False
+36231,36231-EXP-03,Tovan,wet_wood+dry_resin,try a wet counterexample,3,wet_wood+dry_resin,smoke appeared and the test was stopped,True,route sign,False
+36231,36231-EXP-05,Tovan,wet_wood+dry_resin,try a wet counterexample,5,wet_wood+dry_resin,smoke appeared and the test was stopped,True,route sign,False
+36247,36247-EXP-01,Milo,clay_jar+reed_fiber,try storage in a common jar,1,clay_jar+reed_fiber,nothing repeated clearly,True,handspan bite,False
+36247,36247-EXP-04,Sera,wet_wood+red_scrap,ask whether water ruins the carry,4,wet_wood+red_scrap,nothing repeated clearly,True,herb-jump-trick,False
+36247,36247-EXP-05,Nia,wet_wood+dry_resin,try a wet counterexample,5,wet_wood+dry_resin,wet pieces dulled the effect and left only a sting,True,handspan bite-taboo,False
+36263,36263-EXP-02,Nia,wet_wood+red_scrap,ask whether water ruins the carry,2,wet_wood+red_scrap,nothing repeated clearly,True,grain pull,False
+36263,36263-EXP-03,Milo,wet_wood+dry_resin,try a wet counterexample,3,wet_wood+dry_resin,wet pieces dulled the effect and left only a sting,True,water-anger,False
+36263,36263-EXP-04,Sera,wet_wood+red_scrap,ask whether water ruins the carry,4,wet_wood+red_scrap,nothing repeated clearly,True,smoke warning,False
+36281,36281-EXP-04,Milo,wet_wood+red_scrap,ask whether water ruins the carry,4,wet_wood+red_scrap,nothing repeated clearly,True,roof-snap-omen,False
+36281,36281-EXP-05,Tovan,wet_wood+dry_resin,try a wet counterexample,5,wet_wood+dry_resin,smoke appeared and the test was stopped,True,storm crumb,False
+36307,36307-EXP-01,Fay,red_scrap+dry_resin,compare red carry with dry sign,1,red_scrap+dry_resin,nothing repeated clearly,True,jar omen,False
+36307,36307-EXP-02,Fay,red_scrap+dry_resin,compare red carry with dry sign,2,red_scrap+dry_resin,nothing repeated clearly,True,jar omen,False

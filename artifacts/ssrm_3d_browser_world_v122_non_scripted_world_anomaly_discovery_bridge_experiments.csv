@@ -1,0 +1,31 @@
+seed,id,actor,materials,reason,consumed_time,consumed_materials,outcome,failure,source_belief,technology_unlock
+36217,36217-EXP-01,Nia,ash_glass+reed_fiber,see whether glass sleep holds the jump,1,ash_glass+reed_fiber,loose fiber jumped after rubbing,False,grain pull,False
+36217,36217-EXP-02,Milo,clay_jar+reed_fiber,try storage in a common jar,2,clay_jar+reed_fiber,loose fiber jumped after rubbing,False,water-anger,False
+36217,36217-EXP-03,Milo,ash_glass+reed_fiber,see whether glass sleep holds the jump,3,ash_glass+reed_fiber,loose fiber jumped after rubbing,False,water-anger,False
+36217,36217-EXP-04,Tovan,clay_jar+reed_fiber,try storage in a common jar,4,clay_jar+reed_fiber,loose fiber jumped after rubbing,False,water-anger-taboo,False
+36217,36217-EXP-05,Sera,iron_sand+red_scrap,test whether dark grains follow red scrap,5,iron_sand+red_scrap,dark grains crawled toward the red scrap,False,cloak ghost,False
+36231,36231-EXP-01,Fay,wet_wood+red_scrap,ask whether water ruins the carry,1,wet_wood+red_scrap,nothing repeated clearly,True,jar omen,False
+36231,36231-EXP-02,Tovan,ash_glass+reed_fiber,see whether glass sleep holds the jump,2,ash_glass+reed_fiber,loose fiber jumped after rubbing,False,route sign,False
+36231,36231-EXP-03,Tovan,wet_wood+dry_resin,try a wet counterexample,3,wet_wood+dry_resin,smoke appeared and the test was stopped,True,route sign,False
+36231,36231-EXP-04,Tovan,iron_sand+red_scrap,test whether dark grains follow red scrap,4,iron_sand+red_scrap,dark grains crawled toward the red scrap,False,route sign,False
+36231,36231-EXP-05,Tovan,wet_wood+dry_resin,try a wet counterexample,5,wet_wood+dry_resin,smoke appeared and the test was stopped,True,route sign,False
+36247,36247-EXP-01,Milo,clay_jar+reed_fiber,try storage in a common jar,1,clay_jar+reed_fiber,nothing repeated clearly,True,handspan bite,False
+36247,36247-EXP-02,Fay,red_scrap+dry_resin,compare red carry with dry sign,2,red_scrap+dry_resin,loose fiber jumped after rubbing,False,herb-jump,False
+36247,36247-EXP-03,Fay,red_scrap+dry_resin,compare red carry with dry sign,3,red_scrap+dry_resin,loose fiber jumped after rubbing,False,herb-jump,False
+36247,36247-EXP-04,Sera,wet_wood+red_scrap,ask whether water ruins the carry,4,wet_wood+red_scrap,nothing repeated clearly,True,herb-jump-trick,False
+36247,36247-EXP-05,Nia,wet_wood+dry_resin,try a wet counterexample,5,wet_wood+dry_resin,wet pieces dulled the effect and left only a sting,True,handspan bite-taboo,False
+36263,36263-EXP-01,Nia,ash_glass+reed_fiber,see whether glass sleep holds the jump,1,ash_glass+reed_fiber,loose fiber jumped after rubbing,False,grain pull,False
+36263,36263-EXP-02,Nia,wet_wood+red_scrap,ask whether water ruins the carry,2,wet_wood+red_scrap,nothing repeated clearly,True,grain pull,False
+36263,36263-EXP-03,Milo,wet_wood+dry_resin,try a wet counterexample,3,wet_wood+dry_resin,wet pieces dulled the effect and left only a sting,True,water-anger,False
+36263,36263-EXP-04,Sera,wet_wood+red_scrap,ask whether water ruins the carry,4,wet_wood+red_scrap,nothing repeated clearly,True,smoke warning,False
+36263,36263-EXP-05,Tovan,iron_sand+red_scrap,test whether dark grains follow red scrap,5,iron_sand+red_scrap,dark grains crawled toward the red scrap,False,smoke warning-path,False
+36281,36281-EXP-01,Ari,iron_sand+red_scrap,test whether dark grains follow red scrap,1,iron_sand+red_scrap,dark grains crawled toward the red scrap,False,roof-snap,False
+36281,36281-EXP-02,Milo,iron_sand+red_scrap,test whether dark grains follow red scrap,2,iron_sand+red_scrap,dark grains crawled toward the red scrap,False,roof-snap-omen,False
+36281,36281-EXP-03,Ari,red_scrap+dry_resin,compare red carry with dry sign,3,red_scrap+dry_resin,the sharp bite carried farther than a handspan,False,roof-snap,False
+36281,36281-EXP-04,Milo,wet_wood+red_scrap,ask whether water ruins the carry,4,wet_wood+red_scrap,nothing repeated clearly,True,roof-snap-omen,False
+36281,36281-EXP-05,Tovan,wet_wood+dry_resin,try a wet counterexample,5,wet_wood+dry_resin,smoke appeared and the test was stopped,True,storm crumb,False
+36307,36307-EXP-01,Fay,red_scrap+dry_resin,compare red carry with dry sign,1,red_scrap+dry_resin,nothing repeated clearly,True,jar omen,False
+36307,36307-EXP-02,Fay,red_scrap+dry_resin,compare red carry with dry sign,2,red_scrap+dry_resin,nothing repeated clearly,True,jar omen,False
+36307,36307-EXP-03,Milo,ash_glass+reed_fiber,see whether glass sleep holds the jump,3,ash_glass+reed_fiber,loose fiber jumped after rubbing,False,handspan bite,False
+36307,36307-EXP-04,Milo,clay_jar+reed_fiber,try storage in a common jar,4,clay_jar+reed_fiber,loose fiber jumped after rubbing,False,handspan bite,False
+36307,36307-EXP-05,Fay,iron_sand+red_scrap,test whether dark grains follow red scrap,5,iron_sand+red_scrap,dark grains crawled toward the red scrap,False,jar omen,False

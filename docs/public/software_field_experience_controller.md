@@ -554,3 +554,7 @@ The primary browser-world demo now demonstrates a complete internal defect loop:
 ## Report 307 Public Note: Defect Triage Status
 
 The primary browser-world demo now includes a small local defect triage workflow. Reviewers can attach a defect to a manual step, assign severity, keep it open, resolve it with a note, and export the public ledger. This keeps the project focused on one playable surface and one hardening loop, with no consciousness claim and no external playtest claim.
+
+## Report 362: SSRM-3D Non-Scripted World Anomaly Discovery Bridge
+
+Report 362 pivots the maintained browser-world shell away from scripted outcome bridges. It adds hidden material properties, public-only observations, resident partial beliefs, resident-chosen experiments, preserved failures, mutated social transmission, cultural memory, and an audit split that reveals hidden laws only in audit mode. The deterministic multi-seed run is reproducible while still producing divergent plausible histories; negative controls reject instant correct unlocks, modern scientific terms, guaranteed success, hard-coded technology trees, erased failures, and avatar-installed concepts. Boundary remains browser-local deterministic scaffolding only: no LLM call, autonomous natural language, subjective consciousness, real science, real consent, moral patienthood, complete 3D engine, finished gameplay, or metaphysical claim.

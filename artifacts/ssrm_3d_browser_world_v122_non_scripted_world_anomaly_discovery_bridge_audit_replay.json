@@ -1,0 +1,584 @@
+[
+  {
+    "audit_only": true,
+    "seed": 36217,
+    "summary": "hidden material properties generated; audit-only",
+    "type": "hidden_law"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_observation"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "quiet sting",
+    "type": "private_belief"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "Nia tested ash_glass+reed_fiber from grain pull",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "grain pull -> grain pull-path",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "Milo tested clay_jar+reed_fiber from water-anger",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "water-anger -> water-anger-craft",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "Milo tested ash_glass+reed_fiber from water-anger",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "water-anger -> water-anger-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "Tovan tested clay_jar+reed_fiber from water-anger-taboo",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "water-anger-taboo -> water-anger-taboo-warning",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "Sera tested iron_sand+red_scrap from cloak ghost",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "cloak ghost -> cloak ghost-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36217,
+    "summary": "Residents keep a practical dry-material test without claiming a final concept.",
+    "type": "cultural_memory"
+  },
+  {
+    "audit_only": true,
+    "seed": 36231,
+    "summary": "hidden material properties generated; audit-only",
+    "type": "hidden_law"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_observation"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "smoke warning",
+    "type": "private_belief"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "Fay tested wet_wood+red_scrap from jar omen",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "jar omen -> jar omen-path",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "Tovan tested ash_glass+reed_fiber from route sign",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "route sign -> route sign-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "Tovan tested wet_wood+dry_resin from route sign",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "route sign -> route sign-warning",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "Tovan tested iron_sand+red_scrap from route sign",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "route sign -> route sign-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "Tovan tested wet_wood+dry_resin from route sign",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "route sign -> route sign-craft",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36231,
+    "summary": "The sign becomes a caution rite because labels travel faster than repeatable tests.",
+    "type": "cultural_memory"
+  },
+  {
+    "audit_only": true,
+    "seed": 36247,
+    "summary": "hidden material properties generated; audit-only",
+    "type": "hidden_law"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_observation"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "herb-jump",
+    "type": "private_belief"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "Milo tested clay_jar+reed_fiber from handspan bite",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "handspan bite -> handspan bite-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "Fay tested red_scrap+dry_resin from herb-jump",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "herb-jump -> herb-jump-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "Fay tested red_scrap+dry_resin from herb-jump",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "herb-jump -> herb-jump-trick",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "Sera tested wet_wood+red_scrap from herb-jump-trick",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "herb-jump-trick -> herb-jump-trick-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "Nia tested wet_wood+dry_resin from handspan bite-taboo",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "wet pieces dulled the effect and left only a sting",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "handspan bite-taboo -> handspan bite-taboo-trick",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36247,
+    "summary": "The sign becomes a caution rite because labels travel faster than repeatable tests.",
+    "type": "cultural_memory"
+  },
+  {
+    "audit_only": true,
+    "seed": 36263,
+    "summary": "hidden material properties generated; audit-only",
+    "type": "hidden_law"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_observation"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "grain pull",
+    "type": "private_belief"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "Nia tested ash_glass+reed_fiber from grain pull",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "grain pull -> grain pull-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "Nia tested wet_wood+red_scrap from grain pull",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "grain pull -> grain pull-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "Milo tested wet_wood+dry_resin from water-anger",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "wet pieces dulled the effect and left only a sting",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "water-anger -> water-anger-warning",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "Sera tested wet_wood+red_scrap from smoke warning",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "smoke warning -> smoke warning-path",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "Tovan tested iron_sand+red_scrap from smoke warning-path",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "smoke warning-path -> smoke warning-path-path",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36263,
+    "summary": "Failures and smoke turn the sign into a bounded taboo around wet tests.",
+    "type": "cultural_memory"
+  },
+  {
+    "audit_only": true,
+    "seed": 36281,
+    "summary": "hidden material properties generated; audit-only",
+    "type": "hidden_law"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_observation"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "glass sleep",
+    "type": "private_belief"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "Ari tested iron_sand+red_scrap from roof-snap",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "roof-snap -> roof-snap-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "Milo tested iron_sand+red_scrap from roof-snap-omen",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "roof-snap-omen -> roof-snap-omen-warning",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "Ari tested red_scrap+dry_resin from roof-snap",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "roof-snap -> roof-snap-craft",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "Milo tested wet_wood+red_scrap from roof-snap-omen",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "roof-snap-omen -> roof-snap-omen-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "Tovan tested wet_wood+dry_resin from storm crumb",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "storm crumb -> storm crumb-warning",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36281,
+    "summary": "Residents keep a practical dry-material test without claiming a final concept.",
+    "type": "cultural_memory"
+  },
+  {
+    "audit_only": true,
+    "seed": 36307,
+    "summary": "hidden material properties generated; audit-only",
+    "type": "hidden_law"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "smoke appeared and the test was stopped",
+    "type": "public_observation"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "jar omen",
+    "type": "private_belief"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "Fay tested red_scrap+dry_resin from jar omen",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "jar omen -> jar omen-omen",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "Fay tested red_scrap+dry_resin from jar omen",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "nothing repeated clearly",
+    "type": "failed_experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "jar omen -> jar omen-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "Milo tested ash_glass+reed_fiber from handspan bite",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "handspan bite -> handspan bite-path",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "Milo tested clay_jar+reed_fiber from handspan bite",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "handspan bite -> handspan bite-taboo",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "Fay tested iron_sand+red_scrap from jar omen",
+    "type": "experiment"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "jar omen -> jar omen-craft",
+    "type": "social_transmission"
+  },
+  {
+    "audit_only": false,
+    "seed": 36307,
+    "summary": "Residents keep a practical dry-material test without claiming a final concept.",
+    "type": "cultural_memory"
+  }
+]

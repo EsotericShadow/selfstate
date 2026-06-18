@@ -1,0 +1,9 @@
+ablation,mean_score,degraded_metrics
+no_hidden_world_laws,0.875,hidden_world_law_integrity
+no_wrong_beliefs,0.75,wrong_belief_preservation;multi_seed_divergence
+no_failed_experiments,0.75,failed_experiment_honesty;multi_seed_divergence
+no_material_constraints,0.875,material_constraint_binding
+no_social_mutation,0.75,social_transmission_mutation;multi_seed_divergence
+no_avatar_boundary,0.875,avatar_hint_not_command
+no_multi_seed_divergence,0.875,multi_seed_divergence
+no_audit_hidden_public_split,0.875,audit_trace_integrity

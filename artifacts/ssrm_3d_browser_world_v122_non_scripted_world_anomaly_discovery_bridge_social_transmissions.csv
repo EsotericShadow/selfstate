@@ -1,0 +1,31 @@
+seed,id,from,to,channel,before,after,mutation,source_avatar_command
+36217,36217-SOC-01,Nia,Fay,household warning,grain pull,grain pull-path,path,False
+36217,36217-SOC-02,Milo,Nia,teaching,water-anger,water-anger-craft,craft,False
+36217,36217-SOC-03,Milo,Tovan,ritual caution,water-anger,water-anger-taboo,taboo,False
+36217,36217-SOC-04,Tovan,Fay,gossip,water-anger-taboo,water-anger-taboo-warning,warning,False
+36217,36217-SOC-05,Sera,Milo,household warning,cloak ghost,cloak ghost-omen,omen,False
+36231,36231-SOC-01,Fay,Milo,gossip,jar omen,jar omen-path,path,False
+36231,36231-SOC-02,Tovan,Nia,trade,route sign,route sign-omen,omen,False
+36231,36231-SOC-03,Tovan,Ari,trade,route sign,route sign-warning,warning,False
+36231,36231-SOC-04,Tovan,Ari,household warning,route sign,route sign-omen,omen,False
+36231,36231-SOC-05,Tovan,Nia,argument,route sign,route sign-craft,craft,False
+36247,36247-SOC-01,Milo,Nia,ritual caution,handspan bite,handspan bite-taboo,taboo,False
+36247,36247-SOC-02,Fay,Milo,ritual caution,herb-jump,herb-jump-omen,omen,False
+36247,36247-SOC-03,Fay,Sera,household warning,herb-jump,herb-jump-trick,trick,False
+36247,36247-SOC-04,Sera,Tovan,ritual caution,herb-jump-trick,herb-jump-trick-taboo,taboo,False
+36247,36247-SOC-05,Nia,Tovan,trade,handspan bite-taboo,handspan bite-taboo-trick,trick,False
+36263,36263-SOC-01,Nia,Fay,ritual caution,grain pull,grain pull-taboo,taboo,False
+36263,36263-SOC-02,Nia,Fay,household warning,grain pull,grain pull-omen,omen,False
+36263,36263-SOC-03,Milo,Nia,gossip,water-anger,water-anger-warning,warning,False
+36263,36263-SOC-04,Sera,Tovan,ritual caution,smoke warning,smoke warning-path,path,False
+36263,36263-SOC-05,Tovan,Ari,household warning,smoke warning-path,smoke warning-path-path,path,False
+36281,36281-SOC-01,Ari,Milo,household warning,roof-snap,roof-snap-omen,omen,False
+36281,36281-SOC-02,Milo,Sera,argument,roof-snap-omen,roof-snap-omen-warning,warning,False
+36281,36281-SOC-03,Ari,Sera,gossip,roof-snap,roof-snap-craft,craft,False
+36281,36281-SOC-04,Milo,Ari,teaching,roof-snap-omen,roof-snap-omen-taboo,taboo,False
+36281,36281-SOC-05,Tovan,Fay,gossip,storm crumb,storm crumb-warning,warning,False
+36307,36307-SOC-01,Fay,Nia,ritual caution,jar omen,jar omen-omen,omen,False
+36307,36307-SOC-02,Fay,Tovan,argument,jar omen,jar omen-taboo,taboo,False
+36307,36307-SOC-03,Milo,Tovan,argument,handspan bite,handspan bite-path,path,False
+36307,36307-SOC-04,Milo,Nia,ritual caution,handspan bite,handspan bite-taboo,taboo,False
+36307,36307-SOC-05,Fay,Ari,ritual caution,jar omen,jar omen-craft,craft,False

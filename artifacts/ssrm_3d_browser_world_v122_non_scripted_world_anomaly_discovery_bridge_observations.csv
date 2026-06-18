@@ -1,0 +1,37 @@
+seed,id,witness,materials,effect,effect_kind,phase,true_law_exposed
+36217,36217-OBS-01,Fay,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,avatar demonstration,False
+36217,36217-OBS-02,Nia,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36217,36217-OBS-03,Milo,clay_jar+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36217,36217-OBS-04,Milo,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36217,36217-OBS-05,Tovan,clay_jar+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36217,36217-OBS-06,Sera,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,resident experiment,False
+36231,36231-OBS-01,Sera,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,avatar demonstration,False
+36231,36231-OBS-02,Fay,wet_wood+red_scrap,nothing repeated clearly,unclear,resident experiment,False
+36231,36231-OBS-03,Tovan,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36231,36231-OBS-04,Tovan,wet_wood+dry_resin,smoke appeared and the test was stopped,risk,resident experiment,False
+36231,36231-OBS-05,Tovan,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,resident experiment,False
+36231,36231-OBS-06,Tovan,wet_wood+dry_resin,smoke appeared and the test was stopped,risk,resident experiment,False
+36247,36247-OBS-01,Fay,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,avatar demonstration,False
+36247,36247-OBS-02,Milo,clay_jar+reed_fiber,nothing repeated clearly,unclear,resident experiment,False
+36247,36247-OBS-03,Fay,red_scrap+dry_resin,loose fiber jumped after rubbing,jump,resident experiment,False
+36247,36247-OBS-04,Fay,red_scrap+dry_resin,loose fiber jumped after rubbing,jump,resident experiment,False
+36247,36247-OBS-05,Sera,wet_wood+red_scrap,nothing repeated clearly,unclear,resident experiment,False
+36247,36247-OBS-06,Nia,wet_wood+dry_resin,wet pieces dulled the effect and left only a sting,dulling,resident experiment,False
+36263,36263-OBS-01,Nia,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,avatar demonstration,False
+36263,36263-OBS-02,Nia,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36263,36263-OBS-03,Nia,wet_wood+red_scrap,nothing repeated clearly,unclear,resident experiment,False
+36263,36263-OBS-04,Milo,wet_wood+dry_resin,wet pieces dulled the effect and left only a sting,dulling,resident experiment,False
+36263,36263-OBS-05,Sera,wet_wood+red_scrap,nothing repeated clearly,unclear,resident experiment,False
+36263,36263-OBS-06,Tovan,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,resident experiment,False
+36281,36281-OBS-01,Nia,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,avatar demonstration,False
+36281,36281-OBS-02,Ari,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,resident experiment,False
+36281,36281-OBS-03,Milo,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,resident experiment,False
+36281,36281-OBS-04,Ari,red_scrap+dry_resin,the sharp bite carried farther than a handspan,transfer,resident experiment,False
+36281,36281-OBS-05,Milo,wet_wood+red_scrap,nothing repeated clearly,unclear,resident experiment,False
+36281,36281-OBS-06,Tovan,wet_wood+dry_resin,smoke appeared and the test was stopped,risk,resident experiment,False
+36307,36307-OBS-01,Fay,dry_resin+reed_fiber,smoke appeared and the test was stopped,risk,avatar demonstration,False
+36307,36307-OBS-02,Fay,red_scrap+dry_resin,nothing repeated clearly,unclear,resident experiment,False
+36307,36307-OBS-03,Fay,red_scrap+dry_resin,nothing repeated clearly,unclear,resident experiment,False
+36307,36307-OBS-04,Milo,ash_glass+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36307,36307-OBS-05,Milo,clay_jar+reed_fiber,loose fiber jumped after rubbing,jump,resident experiment,False
+36307,36307-OBS-06,Fay,iron_sand+red_scrap,dark grains crawled toward the red scrap,motion,resident experiment,False

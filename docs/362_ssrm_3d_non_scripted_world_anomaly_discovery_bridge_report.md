@@ -1,0 +1,321 @@
+# Report 362: SSRM-3D Non-Scripted World Anomaly Discovery Bridge
+
+Report 362 pivots the browser-world line away from scripted feature unlock bridges. The maintained v61 shell now has an anomaly discovery panel backed by hidden material properties, public observations, resident partial beliefs, resident-chosen tests, preserved failures, mutated social transmission, cultural memory, and an audit split that reveals hidden laws only when audit mode is enabled.
+
+Boundary: Deterministic per-seed browser-local non-scripted anomaly discovery only; hidden material laws are audit-visible but not resident knowledge; no LLM call, no autonomous natural language, no subjective consciousness, no real science, no real consent, no moral patienthood, no production persistence, no hosted URL proof, no complete 3D engine, no finished gameplay, no hard-coded technology tree, and no metaphysical claim.
+
+## Result
+
+Verdict: `pass`
+Readiness: `1.000`
+Weakest channel score: `1.000`
+Criteria passed: `26 / 26`
+
+## Browser-smoke evidence
+
+- Maintained shell URL: `http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&report=362&anomalySeed=36217`
+- Public before audit: `Anomaly: unexplained material sign 36217 seed=36217
+Avatar boundary: avatar demonstrated an unexplained effect; residents receive observations only, not a correct concept
+
+Hidden/world-law layer:
+Hidden law: concealed from residents; toggle Audit to inspect simulator-only material properties.
+
+Public observations:
+OBS-02 Fay: loose fiber jumped after rubbing (ash_glass + reed_fiber)
+OBS-03 Milo: loose fiber jumped after rubbing (clay_jar + reed_fiber)
+OBS-04 Tovan: loose fiber jumped after rubbing (red_scrap + dry_resin)
+OBS-05 Nia: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-06 Ari: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-07 Fay: loose fiber jumped after rubbing (red_scrap + dry_resin)
+
+Resident partial beliefs:
+Ari: "handspan bite-taboo" conf 0.529 / ritualized / source heard from Milo / witnessed no / contradictions 0
+Fay: "jar omen" conf 0.485 / skeptical / source social transmission / witnessed no / contradictions 0
+Milo: "handspan bite" conf 0.605 / skeptical / source social transmission / witnessed no / contradictions 0
+Tovan: "storm crumb" conf 0.486 / practical / source social transmission / witnessed no / contradictions 0
+Nia: "jar omen-trick" conf 0.226 / practical / source heard from Fay / witnessed no / contradictions 1
+
+Resident experiments and preserved failures:
+EXP-01 Fay: ash_glass + reed_fiber -> loose fiber jumped after rubbing; reason see whether glass sleep holds the jump
+EXP-02 Milo: clay_jar + reed_fiber -> loose fiber jumped after rubbing; reason try storage in a common jar
+EXP-03 Tovan: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+EXP-04 Nia: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-05 Ari: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-06 Fay: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+
+Social transmission mutations:
+teaching Fay->Ari: "jar omen" became "jar omen-omen"
+household warning Fay->Nia: "jar omen" became "jar omen-trick"
+argument Milo->Ari: "handspan bite" became "handspan bite-taboo"
+
+Cultural memory:
+CUL-01: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-02: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-03: Some residents keep a practical dry-material test, but no one has a final name.
+
+Audit replay:
+failed_experiment: EXP-04 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Nia confidence now 0.226; contradictions 1
+experiment: Ari tested wet_wood + dry_resin from belief "jar omen-omen"
+failed_experiment: EXP-05 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Ari confidence now 0.322; contradictions 1
+experiment: Fay tested red_scrap + dry_resin from belief "jar omen"
+public_observation: EXP-06 outcome: loose fiber jumped after rubbing
+private_belief: Fay confidence now 0.485; contradictions 0
+social_transmission: Milo -> Ari via argument; "handspan bite" mutated to "handspan bite-taboo"
+cultural_memory: Some residents keep a practical dry-material test, but no one has a final name.`
+- Audit after toggle: `Anomaly: unexplained material sign 36217 seed=36217
+Avatar boundary: avatar demonstrated an unexplained effect; residents receive observations only, not a correct concept
+
+Hidden/world-law layer:
+red_scrap: transfer 0.744 / retain 0.187 / friction 0.364 / wet 0.146 / heat 0.787 / fragile 0.255 / toxin 0.074 / burn 0.172 / block 0.103 / store 0.251 / pull 0.621
+dry_resin: transfer 0.213 / retain 0.736 / friction 0.878 / wet 0.67 / heat 0.354 / fragile 0.379 / toxin 0.231 / burn 0.473 / block 0.529 / store 0.7 / pull 0.062
+wet_wood: transfer 0.295 / retain 0.056 / friction 0.169 / wet 0.894 / heat 0.409 / fragile 0.364 / toxin 0.144 / burn 0.413 / block 0.394 / store 0.034 / pull 0.065
+reed_fiber: transfer 0.095 / retain 0.51 / friction 0.812 / wet 0.494 / heat 0.316 / fragile 0.544 / toxin 0.137 / burn 0.557 / block 0.581 / store 0.351 / pull 0
+ash_glass: transfer 0.13 / retain 0.681 / friction 0.598 / wet 0.244 / heat 0.76 / fragile 0.78 / toxin 0.084 / burn 0.017 / block 0.767 / store 0.681 / pull 0.066
+iron_sand: transfer 0.611 / retain 0.104 / friction 0.182 / wet 0.313 / heat 0.766 / fragile 0.196 / toxin 0.091 / burn 0.026 / block 0.112 / store 0.275 / pull 0.789
+clay_jar: transfer 0.051 / retain 0.47 / friction 0.398 / wet 0.467 / heat 0.721 / fragile 0.641 / toxin 0.084 / burn 0 / block 0.727 / store 0.695 / pull 0.043
+
+Public observations:
+OBS-02 Fay: loose fiber jumped after rubbing (ash_glass + reed_fiber)
+OBS-03 Milo: loose fiber jumped after rubbing (clay_jar + reed_fiber)
+OBS-04 Tovan: loose fiber jumped after rubbing (red_scrap + dry_resin)
+OBS-05 Nia: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-06 Ari: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-07 Fay: loose fiber jumped after rubbing (red_scrap + dry_resin)
+
+Resident partial beliefs:
+Ari: "handspan bite-taboo" conf 0.529 / ritualized / source heard from Milo / witnessed no / contradictions 0
+Fay: "jar omen" conf 0.485 / skeptical / source social transmission / witnessed no / contradictions 0
+Milo: "handspan bite" conf 0.605 / skeptical / source social transmission / witnessed no / contradictions 0
+Tovan: "storm crumb" conf 0.486 / practical / source social transmission / witnessed no / contradictions 0
+Nia: "jar omen-trick" conf 0.226 / practical / source heard from Fay / witnessed no / contradictions 1
+
+Resident experiments and preserved failures:
+EXP-01 Fay: ash_glass + reed_fiber -> loose fiber jumped after rubbing; reason see whether glass sleep holds the jump
+EXP-02 Milo: clay_jar + reed_fiber -> loose fiber jumped after rubbing; reason try storage in a common jar
+EXP-03 Tovan: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+EXP-04 Nia: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-05 Ari: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-06 Fay: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+
+Social transmission mutations:
+teaching Fay->Ari: "jar omen" became "jar omen-omen"
+household warning Fay->Nia: "jar omen" became "jar omen-trick"
+argument Milo->Ari: "handspan bite" became "handspan bite-taboo"
+
+Cultural memory:
+CUL-01: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-02: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-03: Some residents keep a practical dry-material test, but no one has a final name.
+
+Audit replay:
+failed_experiment: EXP-04 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Nia confidence now 0.226; contradictions 1
+experiment: Ari tested wet_wood + dry_resin from belief "jar omen-omen"
+failed_experiment: EXP-05 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Ari confidence now 0.322; contradictions 1
+experiment: Fay tested red_scrap + dry_resin from belief "jar omen"
+public_observation: EXP-06 outcome: loose fiber jumped after rubbing
+private_belief: Fay confidence now 0.485; contradictions 0
+social_transmission: Milo -> Ari via argument; "handspan bite" mutated to "handspan bite-taboo"
+cultural_memory: Some residents keep a practical dry-material test, but no one has a final name.`
+- Console errors: `0`
+
+## Multi-seed outcomes
+
+- `fear_taboo`: `1`
+- `practical_discovery`: `3`
+- `ritualized_anomaly`: `2`
+
+## Criteria
+
+| Criterion | Score | Evidence |
+| --- | ---: | --- |
+| `report_361_choice_gate_passing` | `1.0` | Report 361 verdict=pass weakest=1.0 |
+| `source_exposes_hidden_world_laws` | `1.0` | app.js creates hidden material properties |
+| `source_exposes_observations_beliefs_experiments` | `1.0` | app.js binds observations, beliefs, experiments, and failures |
+| `source_exposes_social_mutation_cultural_memory` | `1.0` | app.js mutates social belief transmission and updates cultural memory |
+| `source_preserves_avatar_boundary` | `1.0` | avatar can trigger investigation but not install correct concept |
+| `visible_shell_panel_wired` | `1.0` | index.html exposes anomaly discovery controls and panel |
+| `runner_includes_report_362` | `1.0` | scripts/run_experiments.py includes Report 362 module |
+| `hidden_world_law_integrity` | `1.0` | metric=1.0 |
+| `resident_observation_binding` | `1.0` | metric=1.0 |
+| `belief_generation_diversity` | `1.0` | metric=1.0 |
+| `wrong_belief_preservation` | `1.0` | metric=1.0 |
+| `experiment_choice_non_scriptedness` | `1.0` | metric=1.0 |
+| `failed_experiment_honesty` | `1.0` | metric=1.0 |
+| `material_constraint_binding` | `1.0` | metric=1.0 |
+| `social_transmission_mutation` | `1.0` | metric=1.0 |
+| `multi_seed_divergence` | `1.0` | metric=1.0 |
+| `no_instant_correct_unlock` | `1.0` | metric=1.0 |
+| `avatar_hint_not_command` | `1.0` | metric=1.0 |
+| `cultural_memory_update` | `1.0` | metric=1.0 |
+| `audit_trace_integrity` | `1.0` | metric=1.0 |
+| `browser_smoke_artifact_exists` | `1.0` | artifacts/ssrm_3d_browser_world_v122_non_scripted_world_anomaly_discovery_bridge_browser_smoke.json |
+| `browser_public_hidden_split` | `1.0` | before=Anomaly: unexplained material sign 36217 seed=36217
+Avatar boundary: avatar demonstrated an unexplained effect; residents receive observations only, not a correct concept
+
+Hidden/world-law layer:
+Hidden law: concealed from residents; toggle Audit to inspect simulator-only material properties.
+
+Public observations:
+OBS-02 Fay: loose fiber jumped after rubbing (ash_glass + reed_fiber)
+OBS-03 Milo: loose fiber jumped after rubbing (clay_jar + reed_fiber)
+OBS-04 Tovan: loose fiber jumped after rubbing (red_scrap + dry_resin)
+OBS-05 Nia: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-06 Ari: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-07 Fay: loose fiber jumped after rubbing (red_scrap + dry_resin)
+
+Resident partial beliefs:
+Ari: "handspan bite-taboo" conf 0.529 / ritualized / source heard from Milo / witnessed no / contradictions 0
+Fay: "jar omen" conf 0.485 / skeptical / source social transmission / witnessed no / contradictions 0
+Milo: "handspan bite" conf 0.605 / skeptical / source social transmission / witnessed no / contradictions 0
+Tovan: "storm crumb" conf 0.486 / practical / source social transmission / witnessed no / contradictions 0
+Nia: "jar omen-trick" conf 0.226 / practical / source heard from Fay / witnessed no / contradictions 1
+
+Resident experiments and preserved failures:
+EXP-01 Fay: ash_glass + reed_fiber -> loose fiber jumped after rubbing; reason see whether glass sleep holds the jump
+EXP-02 Milo: clay_jar + reed_fiber -> loose fiber jumped after rubbing; reason try storage in a common jar
+EXP-03 Tovan: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+EXP-04 Nia: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-05 Ari: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-06 Fay: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+
+Social transmission mutations:
+teaching Fay->Ari: "jar omen" became "jar omen-omen"
+household warning Fay->Nia: "jar omen" became "jar omen-trick"
+argument Milo->Ari: "handspan bite" became "handspan bite-taboo"
+
+Cultural memory:
+CUL-01: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-02: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-03: Some residents keep a practical dry-material test, but no one has a final name.
+
+Audit replay:
+failed_experiment: EXP-04 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Nia confidence now 0.226; contradictions 1
+experiment: Ari tested wet_wood + dry_resin from belief "jar omen-omen"
+failed_experiment: EXP-05 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Ari confidence now 0.322; contradictions 1
+experiment: Fay tested red_scrap + dry_resin from belief "jar omen"
+public_observation: EXP-06 outcome: loose fiber jumped after rubbing
+private_belief: Fay confidence now 0.485; contradictions 0
+social_transmission: Milo -> Ari via argument; "handspan bite" mutated to "handspan bite-taboo"
+cultural_memory: Some residents keep a practical dry-material test, but no one has a final name. after=Anomaly: unexplained material sign 36217 seed=36217
+Avatar boundary: avatar demonstrated an unexplained effect; residents receive observations only, not a correct concept
+
+Hidden/world-law layer:
+red_scrap: transfer 0.744 / retain 0.187 / friction 0.364 / wet 0.146 / heat 0.787 / fragile 0.255 / toxin 0.074 / burn 0.172 / block 0.103 / store 0.251 / pull 0.621
+dry_resin: transfer 0.213 / retain 0.736 / friction 0.878 / wet 0.67 / heat 0.354 / fragile 0.379 / toxin 0.231 / burn 0.473 / block 0.529 / store 0.7 / pull 0.062
+wet_wood: transfer 0.295 / retain 0.056 / friction 0.169 / wet 0.894 / heat 0.409 / fragile 0.364 / toxin 0.144 / burn 0.413 / block 0.394 / store 0.034 / pull 0.065
+reed_fiber: transfer 0.095 / retain 0.51 / friction 0.812 / wet 0.494 / heat 0.316 / fragile 0.544 / toxin 0.137 / burn 0.557 / block 0.581 / store 0.351 / pull 0
+ash_glass: transfer 0.13 / retain 0.681 / friction 0.598 / wet 0.244 / heat 0.76 / fragile 0.78 / toxin 0.084 / burn 0.017 / block 0.767 / store 0.681 / pull 0.066
+iron_sand: transfer 0.611 / retain 0.104 / friction 0.182 / wet 0.313 / heat 0.766 / fragile 0.196 / toxin 0.091 / burn 0.026 / block 0.112 / store 0.275 / pull 0.789
+clay_jar: transfer 0.051 / retain 0.47 / friction 0.398 / wet 0.467 / heat 0.721 / fragile 0.641 / toxin 0.084 / burn 0 / block 0.727 / store 0.695 / pull 0.043
+
+Public observations:
+OBS-02 Fay: loose fiber jumped after rubbing (ash_glass + reed_fiber)
+OBS-03 Milo: loose fiber jumped after rubbing (clay_jar + reed_fiber)
+OBS-04 Tovan: loose fiber jumped after rubbing (red_scrap + dry_resin)
+OBS-05 Nia: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-06 Ari: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-07 Fay: loose fiber jumped after rubbing (red_scrap + dry_resin)
+
+Resident partial beliefs:
+Ari: "handspan bite-taboo" conf 0.529 / ritualized / source heard from Milo / witnessed no / contradictions 0
+Fay: "jar omen" conf 0.485 / skeptical / source social transmission / witnessed no / contradictions 0
+Milo: "handspan bite" conf 0.605 / skeptical / source social transmission / witnessed no / contradictions 0
+Tovan: "storm crumb" conf 0.486 / practical / source social transmission / witnessed no / contradictions 0
+Nia: "jar omen-trick" conf 0.226 / practical / source heard from Fay / witnessed no / contradictions 1
+
+Resident experiments and preserved failures:
+EXP-01 Fay: ash_glass + reed_fiber -> loose fiber jumped after rubbing; reason see whether glass sleep holds the jump
+EXP-02 Milo: clay_jar + reed_fiber -> loose fiber jumped after rubbing; reason try storage in a common jar
+EXP-03 Tovan: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+EXP-04 Nia: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-05 Ari: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-06 Fay: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+
+Social transmission mutations:
+teaching Fay->Ari: "jar omen" became "jar omen-omen"
+household warning Fay->Nia: "jar omen" became "jar omen-trick"
+argument Milo->Ari: "handspan bite" became "handspan bite-taboo"
+
+Cultural memory:
+CUL-01: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-02: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-03: Some residents keep a practical dry-material test, but no one has a final name.
+
+Audit replay:
+failed_experiment: EXP-04 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Nia confidence now 0.226; contradictions 1
+experiment: Ari tested wet_wood + dry_resin from belief "jar omen-omen"
+failed_experiment: EXP-05 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Ari confidence now 0.322; contradictions 1
+experiment: Fay tested red_scrap + dry_resin from belief "jar omen"
+public_observation: EXP-06 outcome: loose fiber jumped after rubbing
+private_belief: Fay confidence now 0.485; contradictions 0
+social_transmission: Milo -> Ari via argument; "handspan bite" mutated to "handspan bite-taboo"
+cultural_memory: Some residents keep a practical dry-material test, but no one has a final name. |
+| `browser_observes_beliefs_experiments_social_memory` | `1.0` | Anomaly: unexplained material sign 36217 seed=36217
+Avatar boundary: avatar demonstrated an unexplained effect; residents receive observations only, not a correct concept
+
+Hidden/world-law layer:
+Hidden law: concealed from residents; toggle Audit to inspect simulator-only material properties.
+
+Public observations:
+OBS-02 Fay: loose fiber jumped after rubbing (ash_glass + reed_fiber)
+OBS-03 Milo: loose fiber jumped after rubbing (clay_jar + reed_fiber)
+OBS-04 Tovan: loose fiber jumped after rubbing (red_scrap + dry_resin)
+OBS-05 Nia: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-06 Ari: wet pieces dulled the effect and left only a sting (wet_wood + dry_resin)
+OBS-07 Fay: loose fiber jumped after rubbing (red_scrap + dry_resin)
+
+Resident partial beliefs:
+Ari: "handspan bite-taboo" conf 0.529 / ritualized / source heard from Milo / witnessed no / contradictions 0
+Fay: "jar omen" conf 0.485 / skeptical / source social transmission / witnessed no / contradictions 0
+Milo: "handspan bite" conf 0.605 / skeptical / source social transmission / witnessed no / contradictions 0
+Tovan: "storm crumb" conf 0.486 / practical / source social transmission / witnessed no / contradictions 0
+Nia: "jar omen-trick" conf 0.226 / practical / source heard from Fay / witnessed no / contradictions 1
+
+Resident experiments and preserved failures:
+EXP-01 Fay: ash_glass + reed_fiber -> loose fiber jumped after rubbing; reason see whether glass sleep holds the jump
+EXP-02 Milo: clay_jar + reed_fiber -> loose fiber jumped after rubbing; reason try storage in a common jar
+EXP-03 Tovan: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+EXP-04 Nia: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-05 Ari: wet_wood + dry_resin -> wet pieces dulled the effect and left only a sting [failed]; reason try a wet counterexample
+EXP-06 Fay: red_scrap + dry_resin -> loose fiber jumped after rubbing; reason compare red carry with dry sign
+
+Social transmission mutations:
+teaching Fay->Ari: "jar omen" became "jar omen-omen"
+household warning Fay->Nia: "jar omen" became "jar omen-trick"
+argument Milo->Ari: "handspan bite" became "handspan bite-taboo"
+
+Cultural memory:
+CUL-01: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-02: Some residents keep a practical dry-material test, but no one has a final name.
+CUL-03: Some residents keep a practical dry-material test, but no one has a final name.
+
+Audit replay:
+failed_experiment: EXP-04 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Nia confidence now 0.226; contradictions 1
+experiment: Ari tested wet_wood + dry_resin from belief "jar omen-omen"
+failed_experiment: EXP-05 outcome: wet pieces dulled the effect and left only a sting
+private_belief: Ari confidence now 0.322; contradictions 1
+experiment: Fay tested red_scrap + dry_resin from belief "jar omen"
+public_observation: EXP-06 outcome: loose fiber jumped after rubbing
+private_belief: Fay confidence now 0.485; contradictions 0
+social_transmission: Milo -> Ari via argument; "handspan bite" mutated to "handspan bite-taboo"
+cultural_memory: Some residents keep a practical dry-material test, but no one has a final name. |
+| `browser_console_clean` | `1.0` | console error count=0 |
+| `negative_controls_pass` | `1.0` | forbidden_terms=[] ablations=[{'ablation': 'no_hidden_world_laws', 'mean_score': 0.875, 'degraded_metrics': 'hidden_world_law_integrity'}, {'ablation': 'no_wrong_beliefs', 'mean_score': 0.75, 'degraded_metrics': 'wrong_belief_preservation;multi_seed_divergence'}, {'ablation': 'no_failed_experiments', 'mean_score': 0.75, 'degraded_metrics': 'failed_experiment_honesty;multi_seed_divergence'}, {'ablation': 'no_material_constraints', 'mean_score': 0.875, 'degraded_metrics': 'material_constraint_binding'}, {'ablation': 'no_social_mutation', 'mean_score': 0.75, 'degraded_metrics': 'social_transmission_mutation;multi_seed_divergence'}, {'ablation': 'no_avatar_boundary', 'mean_score': 0.875, 'degraded_metrics': 'avatar_hint_not_command'}, {'ablation': 'no_multi_seed_divergence', 'mean_score': 0.875, 'degraded_metrics': 'multi_seed_divergence'}, {'ablation': 'no_audit_hidden_public_split', 'mean_score': 0.875, 'degraded_metrics': 'audit_trace_integrity'}] |
+| `claim_boundary_preserved` | `1.0` | Deterministic per-seed browser-local non-scripted anomaly discovery only; hidden material laws are audit-visible but not resident knowledge; no LLM call, no autonomous natural language, no subjective consciousness, no real science, no real consent, no moral patienthood, no production persistence, no hosted URL proof, no complete 3D engine, no finished gameplay, no hard-coded technology tree, and no metaphysical claim. |
+
+## Honest interpretation
+
+This is deterministic per seed for auditability, not open-ended scientific discovery. The important change is architectural: the correct concept is not installed into residents. They see effects, invent local labels, run constrained tests, preserve wrong or failed paths, mutate beliefs socially, and record cultural memory that can diverge across seeds.
+
+## Next gate
+
+post-362: move anomaly discovery into longer-session resident scheduling so resident-chosen tests compete with ordinary work, scarce materials, fear, trust, and social disagreement instead of running as a panel-only loop

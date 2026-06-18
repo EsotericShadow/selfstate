@@ -1281,3 +1281,9 @@ This remains deterministic browser-local state, not autonomous language or consc
 Report 361 makes the Report 360 bounded Fay conversation affect a later resident-facing action. After Fay carries Milo's accountability echo and answers through the phrasebook-only `Talk` path, `Offer help` now creates an Echo choice receipt. The receipt records that Fay accepts source-bounded help for `milo-offscreen-water-jars` while refusing to rewrite the original offscreen cause chain or treat the avatar as a direct source command.
 
 This is still deterministic browser-local state. The important change is that resident memory now changes a later action affordance: the system can show a bounded refusal/choice with source attribution, recoverability, replay evidence, and no LLM/autonomous-language claim.
+
+### Report 362: SSRM-3D Non-Scripted World Anomaly Discovery Bridge
+
+Report 362 pivots the browser-world line away from scripted outcome bridges. The maintained v61 shell now includes a non-scripted anomaly discovery panel where the simulator creates hidden material properties, residents see only effects, resident beliefs stay partial and local, experiments consume materials/time, failed tests remain visible, social transmission mutates beliefs, and cultural memory records divergent interpretations.
+
+The report also adds a deterministic multi-seed evaluator. Different seeds can lead to practical discovery, ritualization, fear/taboo, stalled investigation, or useful wrong theories without giving residents a modern term or a pre-authored technology unlock. Hidden laws are audit-visible but not resident knowledge, and the avatar remains a trigger for observation rather than the direct source of a correct concept.

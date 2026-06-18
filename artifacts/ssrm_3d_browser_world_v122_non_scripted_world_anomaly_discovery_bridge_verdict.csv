@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+362,pass,1.0,1.0,"post-362: move anomaly discovery into longer-session resident scheduling so resident-chosen tests compete with ordinary work, scarce materials, fear, trust, and social disagreement instead of running as a panel-only loop"

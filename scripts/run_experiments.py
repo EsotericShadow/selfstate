@@ -4071,6 +4071,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo",
         "experiments.ssrm_3d_browser_world_v120_primary_shell_bounded_fay_echo_conversation",
         "experiments.ssrm_3d_browser_world_v121_primary_shell_echo_influenced_choice_refusal",
+        "experiments.ssrm_3d_browser_world_v122_non_scripted_world_anomaly_discovery_bridge",
         "--seed",
         "20270732",
     ],

@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -70,6 +70,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   accountabilitySocialEcho: null,
   boundedEchoConversation: null,
   echoInfluencedChoiceReceipt: null,
+  anomalyDiscovery: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -165,6 +166,55 @@ function renderEchoInfluencedChoiceReceipt() {
     `Autonomous language: ${world.echoInfluencedChoiceReceipt.autonomousLanguage ? 'yes' : 'no'}`,
     `Phrasebook only: ${world.echoInfluencedChoiceReceipt.phrasebookOnly ? 'yes' : 'no'}`,
     `Recoverable: ${world.echoInfluencedChoiceReceipt.recoverable ? 'yes' : 'no'}`
+  ].join('\n');
+}
+function renderAnomalyDiscovery() {
+  const summaryNode = document.getElementById('anomalyDiscoverySummaryOut');
+  const detailNode = document.getElementById('anomalyDiscoveryOut');
+  const discovery = world.anomalyDiscovery;
+  if (summaryNode) {
+    summaryNode.textContent = discovery
+      ? `${discovery.label}: ${discovery.observations.length} observations / ${discovery.experiments.length} tests / ${discovery.failures.length} failures`
+      : 'No anomaly introduced yet.';
+  }
+  if (!detailNode) return;
+  if (!discovery) {
+    detailNode.textContent = 'No anomaly introduced yet. Use Introduce anomaly to create hidden laws and public observations.';
+    return;
+  }
+  const hiddenLines = world.audit
+    ? Object.entries(discovery.hiddenWorldLaw.materials).map(([id, props]) => `${id}: transfer ${props.conductivityLike} / retain ${props.chargeRetention} / friction ${props.frictionResponse} / wet ${props.moistureSensitivity} / heat ${props.heatTolerance} / fragile ${props.fragility} / toxin ${props.toxicity} / burn ${props.combustionRisk} / block ${props.insulationBlocking} / store ${props.storagePotential} / pull ${props.magneticAttraction}`)
+    : ['Hidden law: concealed from residents; toggle Audit to inspect simulator-only material properties.'];
+  const observationLines = discovery.observations.slice(-6).map(row => `${row.id} ${row.witness}: ${row.effect} (${row.materials.join(' + ')})`);
+  const beliefLines = Object.entries(discovery.residentBeliefs).map(([resident, belief]) => `${resident}: "${belief.label}" conf ${belief.confidence} / ${belief.kind} / source ${belief.source} / witnessed ${belief.personallyWitnessed ? 'yes' : 'no'} / contradictions ${belief.contradictionCount}`);
+  const experimentLines = discovery.experiments.slice(-6).map(row => `${row.id} ${row.actor}: ${row.materials.join(' + ')} -> ${row.outcome}${row.failure ? ' [failed]' : ''}; reason ${row.reason}`);
+  const socialLines = discovery.socialTransmissions.slice(-6).map(row => `${row.channel} ${row.from}->${row.to}: "${row.before}" became "${row.after}"`);
+  const culturalLines = discovery.culturalMemory.slice(-4).map(row => `${row.id}: ${row.memory}`);
+  const auditLines = discovery.auditReplay.slice(-10).map(row => `${row.type}: ${row.summary}`);
+  detailNode.textContent = [
+    `Anomaly: ${discovery.label} seed=${discovery.seed}`,
+    `Avatar boundary: ${discovery.avatarBoundary}`,
+    '',
+    'Hidden/world-law layer:',
+    ...hiddenLines,
+    '',
+    'Public observations:',
+    ...observationLines,
+    '',
+    'Resident partial beliefs:',
+    ...beliefLines,
+    '',
+    'Resident experiments and preserved failures:',
+    ...experimentLines,
+    '',
+    'Social transmission mutations:',
+    ...socialLines,
+    '',
+    'Cultural memory:',
+    ...culturalLines,
+    '',
+    'Audit replay:',
+    ...auditLines
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -273,6 +323,7 @@ function log(event, payload) {
   renderAccountabilitySocialEcho();
   renderBoundedEchoConversation();
   renderEchoInfluencedChoiceReceipt();
+  renderAnomalyDiscovery();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -428,6 +479,232 @@ function offerHelp() {
 }
 function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1, memory: 'avatar borrowed tool' }); return log('borrowTool', { consequence: 'debt increases' }); }
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
+function seededAnomalyRng(seed) {
+  let state = (Number(seed) >>> 0) || 362;
+  return function next() {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+function anomalySeed() {
+  return Number(urlParams.get('anomalySeed') || (world.anomalyDiscovery && world.anomalyDiscovery.seed) || 36217);
+}
+function roundedProperty(value) { return Number(Math.max(0, Math.min(1, value)).toFixed(3)); }
+function generateHiddenWorldLaw(seed) {
+  const rng = seededAnomalyRng(seed);
+  const templates = {
+    red_scrap: { conductivityLike: 0.78, chargeRetention: 0.22, frictionResponse: 0.30, moistureSensitivity: 0.18, heatTolerance: 0.74, fragility: 0.26, toxicity: 0.12, combustionRisk: 0.10, insulationBlocking: 0.08, storagePotential: 0.30, magneticAttraction: 0.64 },
+    dry_resin: { conductivityLike: 0.20, chargeRetention: 0.72, frictionResponse: 0.82, moistureSensitivity: 0.70, heatTolerance: 0.42, fragility: 0.38, toxicity: 0.18, combustionRisk: 0.52, insulationBlocking: 0.58, storagePotential: 0.68, magneticAttraction: 0.06 },
+    wet_wood: { conductivityLike: 0.34, chargeRetention: 0.08, frictionResponse: 0.12, moistureSensitivity: 0.92, heatTolerance: 0.36, fragility: 0.32, toxicity: 0.08, combustionRisk: 0.44, insulationBlocking: 0.38, storagePotential: 0.10, magneticAttraction: 0.04 },
+    reed_fiber: { conductivityLike: 0.16, chargeRetention: 0.48, frictionResponse: 0.76, moistureSensitivity: 0.55, heatTolerance: 0.30, fragility: 0.62, toxicity: 0.06, combustionRisk: 0.60, insulationBlocking: 0.54, storagePotential: 0.42, magneticAttraction: 0.03 },
+    ash_glass: { conductivityLike: 0.10, chargeRetention: 0.62, frictionResponse: 0.54, moistureSensitivity: 0.24, heatTolerance: 0.82, fragility: 0.78, toxicity: 0.10, combustionRisk: 0.02, insulationBlocking: 0.74, storagePotential: 0.76, magneticAttraction: 0.02 },
+    iron_sand: { conductivityLike: 0.68, chargeRetention: 0.18, frictionResponse: 0.22, moistureSensitivity: 0.30, heatTolerance: 0.70, fragility: 0.18, toxicity: 0.16, combustionRisk: 0.06, insulationBlocking: 0.12, storagePotential: 0.26, magneticAttraction: 0.86 },
+    clay_jar: { conductivityLike: 0.12, chargeRetention: 0.52, frictionResponse: 0.44, moistureSensitivity: 0.46, heatTolerance: 0.66, fragility: 0.70, toxicity: 0.04, combustionRisk: 0.01, insulationBlocking: 0.68, storagePotential: 0.64, magneticAttraction: 0.01 }
+  };
+  const materials = {};
+  Object.entries(templates).forEach(([id, props]) => {
+    materials[id] = {};
+    Object.entries(props).forEach(([key, value]) => {
+      materials[id][key] = roundedProperty(value + (rng() - 0.5) * 0.16);
+    });
+  });
+  return { seed, materials, hiddenFromResidents: true, propertyNames: Object.keys(templates.red_scrap) };
+}
+function observationForMaterials(law, materials, witness, phase) {
+  const props = materials.map(id => law.materials[id]);
+  const avg = key => props.reduce((sum, row) => sum + row[key], 0) / props.length;
+  let effect = 'nothing repeated clearly';
+  let severity = 'low';
+  if (avg('combustionRisk') > 0.48 && avg('heatTolerance') < 0.52) {
+    effect = 'smoke appeared and the test was stopped';
+    severity = 'risk';
+  } else if (avg('magneticAttraction') > 0.45) {
+    effect = 'dark grains crawled toward the red scrap';
+  } else if (avg('conductivityLike') > 0.48 && avg('chargeRetention') > 0.24) {
+    effect = 'the sharp bite carried farther than a handspan';
+  } else if (avg('frictionResponse') > 0.58 && avg('chargeRetention') > 0.42) {
+    effect = 'loose fiber jumped after rubbing';
+  } else if (avg('moistureSensitivity') > 0.62) {
+    effect = 'wet pieces dulled the effect and left only a sting';
+  } else if (avg('fragility') > 0.68) {
+    effect = 'a tool edge cracked before the sign returned';
+    severity = 'breakage';
+  }
+  return {
+    id: `OBS-${String((world.anomalyDiscovery ? world.anomalyDiscovery.observations.length : 0) + 1).padStart(2, '0')}`,
+    witness,
+    phase,
+    materials,
+    effect,
+    severity,
+    trueLawExposed: false
+  };
+}
+function residentAnomalyVocabulary(name, rng) {
+  const vocab = {
+    Ari: ['awl-bite', 'roof-snap', 'dry-path'],
+    Fay: ['quiet sting', 'jar omen', 'herb-jump'],
+    Milo: ['water-anger', 'red carry', 'handspan bite'],
+    Sera: ['cloak ghost', 'smoke warning', 'cold spark'],
+    Tovan: ['route sign', 'safe-gap', 'storm crumb'],
+    Nia: ['glass sleep', 'grain pull', 'shelf whisper']
+  };
+  const options = vocab[name] || ['strange sign'];
+  return options[Math.floor(rng() * options.length)];
+}
+function generateInitialBelief(name, observation, rng, transmitted) {
+  const kinds = ['practical', 'skeptical', 'ritualized', 'fearful', 'useful_wrong'];
+  const kind = kinds[Math.floor(rng() * kinds.length)];
+  return {
+    label: residentAnomalyVocabulary(name, rng),
+    kind,
+    confidence: Number((0.28 + rng() * 0.32 + (transmitted ? -0.06 : 0.04)).toFixed(3)),
+    source: transmitted ? 'social transmission' : observation.id,
+    evidence: [observation.effect],
+    contradictionCount: 0,
+    socialTrust: Number(((world.residents[name] || currentResident()).trust || 0.5).toFixed(3)),
+    personallyWitnessed: !transmitted,
+    modernConcept: false,
+    directAvatarCommand: false
+  };
+}
+function introduceWorldAnomaly() {
+  if (world.anomalyDiscovery) return log('introduceWorldAnomaly', { alreadyIntroduced: true, seed: world.anomalyDiscovery.seed });
+  const seed = anomalySeed();
+  const rng = seededAnomalyRng(seed);
+  const hiddenWorldLaw = generateHiddenWorldLaw(seed);
+  const observation = observationForMaterials(hiddenWorldLaw, ['dry_resin', 'reed_fiber'], world.selected, 'avatar demonstration');
+  const beliefs = {};
+  beliefs[world.selected] = generateInitialBelief(world.selected, observation, rng, false);
+  world.anomalyDiscovery = {
+    reportIntroduced: 362,
+    seed,
+    label: `unexplained material sign ${seed}`,
+    hiddenWorldLaw,
+    observations: [observation],
+    residentBeliefs: beliefs,
+    experiments: [],
+    failures: [],
+    socialTransmissions: [],
+    culturalMemory: [],
+    auditReplay: [
+      { type: 'hidden_law', summary: 'simulator created hidden material properties; not resident knowledge', auditOnly: true },
+      { type: 'public_observation', summary: `${observation.witness} observed ${observation.effect}`, auditOnly: false },
+      { type: 'private_belief', summary: `${world.selected} formed "${beliefs[world.selected].label}" without modern terms`, auditOnly: false }
+    ],
+    avatarBoundary: 'avatar demonstrated an unexplained effect; residents receive observations only, not a correct concept',
+    noTechnologyTree: true,
+    noInstantCorrectUnlock: true,
+    boundary: 'browser-local-non-scripted-anomaly-discovery-only'
+  };
+  mutateResident(world.selected, { trust: 0.004, memory: `saw unexplained material sign and named it ${beliefs[world.selected].label}`, historyEvent: 'anomaly observation', historyDetail: observation.effect });
+  return log('introduceWorldAnomaly', { seed, publicObservation: observation, residentBelief: beliefs[world.selected], hiddenLawAuditOnly: true, avatarHintNotCommand: true });
+}
+function chooseAnomalyTest(discovery) {
+  const rng = seededAnomalyRng(discovery.seed + discovery.experiments.length * 97 + world.tick);
+  const names = Object.keys(world.residents);
+  const actor = names[(discovery.experiments.length + Math.floor(rng() * names.length)) % names.length];
+  const belief = discovery.residentBeliefs[actor] || generateInitialBelief(actor, discovery.observations[0], rng, true);
+  discovery.residentBeliefs[actor] = belief;
+  const candidateTests = [
+    { materials: ['red_scrap', 'dry_resin'], reason: 'compare red carry with dry sign' },
+    { materials: ['wet_wood', 'dry_resin'], reason: 'try a wet counterexample' },
+    { materials: ['ash_glass', 'reed_fiber'], reason: 'see whether glass sleep holds the jump' },
+    { materials: ['iron_sand', 'red_scrap'], reason: 'test whether dark grains follow red scrap' },
+    { materials: ['clay_jar', 'reed_fiber'], reason: 'try storage in a common jar' },
+    { materials: ['wet_wood', 'red_scrap'], reason: 'ask whether water ruins the carry' }
+  ];
+  const offset = Math.floor((belief.confidence + belief.socialTrust + rng()) * candidateTests.length) % candidateTests.length;
+  return { actor, belief, ...candidateTests[offset] };
+}
+function runAnomalyExperiment() {
+  if (!world.anomalyDiscovery) introduceWorldAnomaly();
+  const discovery = world.anomalyDiscovery;
+  const test = chooseAnomalyTest(discovery);
+  const observation = observationForMaterials(discovery.hiddenWorldLaw, test.materials, test.actor, 'resident experiment');
+  const failure = /nothing|dulled|cracked|smoke/.test(observation.effect);
+  const belief = discovery.residentBeliefs[test.actor];
+  if (failure) {
+    belief.contradictionCount += 1;
+    belief.confidence = Number(Math.max(0.08, belief.confidence - 0.09).toFixed(3));
+  } else {
+    belief.confidence = Number(Math.min(0.86, belief.confidence + 0.08).toFixed(3));
+  }
+  belief.evidence = belief.evidence.concat([observation.effect]).slice(-5);
+  const experiment = {
+    id: `EXP-${String(discovery.experiments.length + 1).padStart(2, '0')}`,
+    actor: test.actor,
+    materials: test.materials,
+    reason: test.reason,
+    consumed: { time: 1 + discovery.experiments.length, materials: test.materials },
+    outcome: observation.effect,
+    failure,
+    sourceBelief: belief.label,
+    noGuaranteedSuccess: true,
+    technologyUnlock: false
+  };
+  discovery.observations.push(observation);
+  discovery.experiments.push(experiment);
+  if (failure) discovery.failures.push(experiment);
+  discovery.auditReplay.push(
+    { type: 'experiment', summary: `${experiment.actor} tested ${experiment.materials.join(' + ')} from belief "${belief.label}"`, auditOnly: false },
+    { type: failure ? 'failed_experiment' : 'public_observation', summary: `${experiment.id} outcome: ${experiment.outcome}`, auditOnly: false },
+    { type: 'private_belief', summary: `${experiment.actor} confidence now ${belief.confidence}; contradictions ${belief.contradictionCount}`, auditOnly: false }
+  );
+  mutateResident(test.actor, { progress: failure ? 0.004 : 0.014, trust: failure ? -0.002 : 0.006, memory: `tested ${belief.label}: ${observation.effect}`, historyEvent: failure ? 'failed anomaly experiment' : 'anomaly experiment', historyDetail: `${experiment.id} ${test.materials.join(' + ')} -> ${observation.effect}` });
+  return log('runAnomalyExperiment', { experiment, observation, belief, failedExperimentPreserved: failure, materialConstraintBinding: true });
+}
+function spreadAnomalyBelief() {
+  if (!world.anomalyDiscovery) introduceWorldAnomaly();
+  const discovery = world.anomalyDiscovery;
+  if (!discovery.experiments.length) runAnomalyExperiment();
+  const rng = seededAnomalyRng(discovery.seed + discovery.socialTransmissions.length * 131 + 17);
+  const names = Object.keys(world.residents);
+  const from = names[Math.floor(rng() * names.length)];
+  const to = names[(names.indexOf(from) + 1 + Math.floor(rng() * (names.length - 1))) % names.length];
+  const sourceBelief = discovery.residentBeliefs[from] || generateInitialBelief(from, discovery.observations[0], rng, true);
+  discovery.residentBeliefs[from] = sourceBelief;
+  const mutationWords = ['warning', 'trick', 'path', 'omen', 'craft', 'taboo'];
+  const after = `${sourceBelief.label}-${mutationWords[Math.floor(rng() * mutationWords.length)]}`;
+  const transmittedObservation = discovery.observations[Math.floor(rng() * discovery.observations.length)];
+  discovery.residentBeliefs[to] = {
+    label: after,
+    kind: rng() > 0.62 ? 'ritualized' : rng() > 0.44 ? 'useful_wrong' : 'practical',
+    confidence: Number(Math.max(0.1, Math.min(0.78, sourceBelief.confidence + (rng() - 0.5) * 0.18)).toFixed(3)),
+    source: `heard from ${from}`,
+    evidence: [transmittedObservation.effect],
+    contradictionCount: Math.max(0, sourceBelief.contradictionCount + (rng() > 0.72 ? 1 : 0)),
+    socialTrust: Number(((world.residents[to] || currentResident()).trust || 0.5).toFixed(3)),
+    personallyWitnessed: false,
+    modernConcept: false,
+    directAvatarCommand: false
+  };
+  const channels = ['gossip', 'teaching', 'trade', 'argument', 'ritual caution', 'household warning'];
+  const row = {
+    id: `SOC-${String(discovery.socialTransmissions.length + 1).padStart(2, '0')}`,
+    from,
+    to,
+    channel: channels[Math.floor(rng() * channels.length)],
+    before: sourceBelief.label,
+    after,
+    mutation: 'label/evidence/confidence mutated during social spread',
+    sourceAvatarCommand: false
+  };
+  discovery.socialTransmissions.push(row);
+  const successCount = discovery.experiments.filter(item => !item.failure).length;
+  const memory = successCount >= 2
+    ? `Some residents keep a practical dry-material test, but no one has a final name.`
+    : discovery.failures.length >= 2
+      ? `The sign is remembered with caution because failures stayed in the story.`
+      : `Residents disagree about ${after} and keep testing.`;
+  discovery.culturalMemory.push({ id: `CUL-${String(discovery.culturalMemory.length + 1).padStart(2, '0')}`, memory, competingBeliefs: Object.values(discovery.residentBeliefs).map(item => item.label).slice(-6), noCorrectUnlock: true });
+  discovery.auditReplay.push(
+    { type: 'social_transmission', summary: `${from} -> ${to} via ${row.channel}; "${row.before}" mutated to "${row.after}"`, auditOnly: false },
+    { type: 'cultural_memory', summary: memory, auditOnly: false }
+  );
+  mutateResident(to, { trust: 0.003, progress: 0.006, memory: `heard anomaly belief ${after} from ${from}`, historyEvent: 'anomaly social transmission', historyDetail: `${row.channel}: ${row.before} -> ${row.after}` });
+  return log('spreadAnomalyBelief', { transmission: row, transmittedBelief: discovery.residentBeliefs[to], culturalMemory: discovery.culturalMemory.slice(-1)[0], socialTransmissionMutation: true, avatarHintNotCommand: true });
+}
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
   const offscreenObligation = runOffscreenResidentObligationPulse();
@@ -836,6 +1113,7 @@ function runStateBoundaryAudit() {
     accountabilitySocialEcho: world.accountabilitySocialEcho,
     boundedEchoConversation: world.boundedEchoConversation,
     echoInfluencedChoiceReceipt: world.echoInfluencedChoiceReceipt,
+    anomalyDiscovery: world.anomalyDiscovery,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -944,6 +1222,7 @@ function bindControls() {
   renderAccountabilitySocialEcho();
   renderBoundedEchoConversation();
   renderEchoInfluencedChoiceReceipt();
+  renderAnomalyDiscovery();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -1508,6 +1787,10 @@ function describeReplayRow(row) {
     toggleAudit: `audit overlay=${payload.audit === true}`,
     selectResident: `selected resident ${payload.selected}`,
     canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`
+    ,
+    introduceWorldAnomaly: `introduced anomaly seed=${payload.seed}; hidden law audit only=${payload.hiddenLawAuditOnly === true}`,
+    runAnomalyExperiment: `anomaly experiment ${payload.experiment ? payload.experiment.id : ''} failed=${payload.failedExperimentPreserved === true}`,
+    spreadAnomalyBelief: `spread anomaly belief mutation=${payload.socialTransmissionMutation === true}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -1588,6 +1871,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

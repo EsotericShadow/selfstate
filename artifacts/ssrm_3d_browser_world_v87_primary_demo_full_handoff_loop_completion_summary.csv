@@ -1,0 +1,2 @@
+readiness,weakest_channel_score,completion_source_score,browser_completion_score,console_errors,criterion_count,report,seed,verdict
+1.0,1.0,1.0,1.0,0,10,327,20270725,pass

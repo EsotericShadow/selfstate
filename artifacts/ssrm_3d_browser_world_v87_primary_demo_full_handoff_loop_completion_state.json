@@ -1,0 +1,18 @@
+{
+  "boundary": "Deterministic browser-local outside-review workflow hardening only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The completion gate is a review integrity guard, not external validation or evidence of inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_browser_evidence.json",
+  "next_gate": "post-327: run a cold outside-reviewer handoff from one URL without privileged localStorage inspection, then fix the first remaining place where review evidence, recorder evidence, or handoff payload state can diverge",
+  "pre_patch_evidence_path": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_pre_patch_evidence.json",
+  "report": 327,
+  "required_terms": [
+    "completeReviewedHandoff",
+    "reviewedHandoffCompletionState",
+    "Complete reviewed handoff",
+    "manual recorder outcome",
+    "reviewedHandoffCompletion",
+    "recordCount",
+    "recorderExport: readRecorderExportPayload()"
+  ],
+  "seed": 20270725,
+  "verdict": "pass"
+}

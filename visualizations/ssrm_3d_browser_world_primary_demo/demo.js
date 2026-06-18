@@ -80,6 +80,62 @@ function writeOutsideReviewState(state) {
   localStorage.setItem(OUTSIDE_REVIEW_KEY, JSON.stringify(state));
 }
 
+function readRecorderExportPayload() {
+  const text = localStorage.getItem(RECORDER_EXPORT_KEY) || '';
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    return { parseError: true, rawLength: text.length, boundary: 'primary-demo-recorder-export-public-local-only' };
+  }
+}
+
+function reviewedHandoffCompletionState() {
+  const evidence = buildOutsideReviewEvidence();
+  const manualRecords = readList(MANUAL_RECORD_KEY);
+  const defects = readList(DEFECT_LEDGER_KEY);
+  const recorderExport = readRecorderExportPayload();
+  const openDefectCount = defects.filter(row => row.status !== 'resolved').length;
+  const missing = [];
+  if (!evidence.reviewerPassSeen) missing.push('reviewer pass');
+  if (!evidence.receiptAllPass) missing.push('all-pass receipt');
+  if (!evidence.replayExportReady) missing.push('replay export');
+  if (!recorderExport) missing.push('recorder export');
+  if (!manualRecords.length) missing.push('manual recorder outcome');
+  if (openDefectCount > 0) missing.push('open defect resolution');
+  return {
+    reportIntroduced: 327,
+    ready: missing.length === 0,
+    missing,
+    manualRecordCount: manualRecords.length,
+    defectCount: defects.length,
+    openDefectCount,
+    recorderExportPrepared: Boolean(recorderExport),
+    recorderExportRecordCount: recorderExport && Array.isArray(recorderExport.records) ? recorderExport.records.length : 0,
+    shellEvidence: evidence,
+    boundary: 'reviewed-handoff-completion-public-local-only'
+  };
+}
+
+function completeReviewedHandoff() {
+  const completion = reviewedHandoffCompletionState();
+  if (!completion.ready) {
+    renderOutsideReviewEvidence('Reviewed handoff is not complete yet.');
+    renderOutsideReviewChecklist(`Reviewed handoff blocked: missing ${completion.missing.join(', ')}.`);
+    return completion;
+  }
+  const state = outsideReviewState();
+  OUTSIDE_REVIEW_ITEMS.forEach(item => { state.items[item.itemId] = true; });
+  state.updatedAt = new Date().toISOString();
+  state.completedAt = state.updatedAt;
+  state.completedBy = 'completeReviewedHandoff';
+  state.completion = completion;
+  writeOutsideReviewState(state);
+  renderOutsideReviewEvidence('Reviewed handoff complete from refreshed shell evidence.');
+  renderOutsideReviewChecklist(`${OUTSIDE_REVIEW_ITEMS.length}/${OUTSIDE_REVIEW_ITEMS.length} outside-review checklist items complete after shell evidence and recorder export.`);
+  return completion;
+}
+
 function renderOutsideReviewChecklist(message) {
   const state = outsideReviewState();
   const doneCount = OUTSIDE_REVIEW_ITEMS.filter(item => state.items[item.itemId] === true).length;
@@ -108,7 +164,8 @@ function markOutsideReviewItem(itemId) {
   state.items[itemId] = true;
   state.updatedAt = new Date().toISOString();
   writeOutsideReviewState(state);
-  renderOutsideReviewChecklist(`${itemId} marked done.`);
+  const doneCount = OUTSIDE_REVIEW_ITEMS.filter(item => state.items[item.itemId] === true).length;
+  renderOutsideReviewChecklist(doneCount === OUTSIDE_REVIEW_ITEMS.length ? `${doneCount}/${OUTSIDE_REVIEW_ITEMS.length} outside-review checklist items complete.` : `${itemId} marked done.`);
 }
 
 function exportOutsideReviewHandoff() {
@@ -117,8 +174,10 @@ function exportOutsideReviewHandoff() {
     checklistState: outsideReviewState(),
     handoff: readObject(HANDOFF_KEY, null),
     shellEvidence: buildOutsideReviewEvidence(),
+    reviewedHandoffCompletion: reviewedHandoffCompletionState(),
     manualRecords: readList(MANUAL_RECORD_KEY),
     defects: readList(DEFECT_LEDGER_KEY),
+    recorderExport: readRecorderExportPayload(),
     recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
     targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
     launchUrl: 'http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html',
@@ -279,10 +338,16 @@ function resolveLatestDefect() {
 }
 
 function exportRecorder() {
+  const records = readList(MANUAL_RECORD_KEY);
+  const defects = readList(DEFECT_LEDGER_KEY);
   const payload = {
     reportIntroduced: 305,
-    records: readList(MANUAL_RECORD_KEY),
-    defects: readList(DEFECT_LEDGER_KEY),
+    records,
+    defects,
+    recordCount: records.length,
+    defectCount: defects.length,
+    openDefectCount: defects.filter(row => row.status !== 'resolved').length,
+    preparedAt: new Date().toISOString(),
     boundary: 'primary-demo-recorder-export-public-local-only'
   };
   const text = JSON.stringify(payload, null, 2);
@@ -318,7 +383,7 @@ function renderRecorder(message) {
   const status = document.getElementById('recordStatus');
   if (status) status.textContent = message || `${records.length} step records / ${passed} pass / ${failed} fail / ${defects.length} defect notes / ${openDefects} open / ${resolvedDefects} resolved`;
   const out = document.getElementById('recordLedgerOut');
-  if (out) out.textContent = JSON.stringify({ records, defects }, null, 2);
+  if (out) out.textContent = JSON.stringify({ records, defects, recorderExport: readRecorderExportPayload() }, null, 2);
 }
 
 document.querySelectorAll('[data-record-step]').forEach(button => {
@@ -332,6 +397,7 @@ document.querySelectorAll('[data-outside-review-item]').forEach(button => {
   button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
 });
 document.getElementById('refreshOutsideReviewEvidence')?.addEventListener('click', () => renderOutsideReviewEvidence());
+document.getElementById('completeReviewedHandoff')?.addEventListener('click', completeReviewedHandoff);
 document.getElementById('exportOutsideReview')?.addEventListener('click', exportOutsideReviewHandoff);
 document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
 renderOutsideReviewChecklist();

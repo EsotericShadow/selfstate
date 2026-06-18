@@ -44,6 +44,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo review evidence refresh report](docs/324_ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_report.md): lets the outside-review launcher refresh and export shell-side replay, receipt, observation, checkpoint, and replay-export evidence after a walkthrough.
 - [Primary demo handoff payload preview report](docs/325_ssrm_3d_browser_world_v85_primary_demo_handoff_payload_preview_report.md): renders the prepared outside-review handoff payload in-page so reviewers do not need downloads or localStorage inspection to inspect export contents.
 - [Primary demo shell return handoff report](docs/326_ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_report.md): adds a visible return-to-launcher handoff action after the reviewer shell pass so cold reviewers can complete the checklist/export loop without manual navigation.
+- [Primary demo full handoff loop completion report](docs/327_ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_report.md): gates outside-review completion on refreshed shell evidence, visible recorder export, manual recorder outcome, replay export readiness, and open-defect checks.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

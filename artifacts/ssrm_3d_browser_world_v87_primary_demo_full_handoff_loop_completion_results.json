@@ -1,0 +1,674 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_criteria.csv",
+    "pre_patch_evidence": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_pre_patch_evidence.json",
+    "report": "docs/327_ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local outside-review workflow hardening only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The completion gate is a review integrity guard, not external validation or evidence of inner experience.",
+  "browser_evidence": {
+    "all_pass": true,
+    "completion_blocks_without_recorder": true,
+    "completion_blocks_without_recorder_evidence": "status=Reviewed handoff blocked: missing recorder export, manual recorder outcome.",
+    "completion_succeeds_after_record_and_export": true,
+    "completion_success_evidence": "status=7/7 outside-review checklist items complete after shell evidence and recorder export.; ready=true; manualRecordCount=1",
+    "console_error_entries": [],
+    "console_errors": 0,
+    "errors": [],
+    "handoff_completion_evidence": "status=Outside-review handoff payload visible below.; ready=true; recorderRecordCount=1",
+    "handoff_payload_carries_completion": true,
+    "recorder_export_visible_evidence": "status=Recorder export prepared.; recordCount=1; boundary=primary-demo-recorder-export-public-local-only",
+    "recorder_export_visible_with_boundary": true,
+    "report": 327,
+    "steps": {
+      "blocked_before_recorder": {
+        "evidenceStatus": "Reviewed handoff is not complete yet.",
+        "state": {
+          "boundary": "outside-review-checklist-public-local-only",
+          "checklist": [
+            {
+              "itemId": "OR-01",
+              "label": "Read boundary before launching"
+            },
+            {
+              "itemId": "OR-02",
+              "label": "Launch clean reviewer path"
+            },
+            {
+              "itemId": "OR-03",
+              "label": "Run reviewer pass inside the shell"
+            },
+            {
+              "itemId": "OR-04",
+              "label": "Inspect transcript, receipt, and observation triage"
+            },
+            {
+              "itemId": "OR-05",
+              "label": "Audit failures if the receipt is incomplete"
+            },
+            {
+              "itemId": "OR-06",
+              "label": "Reveal deep panels only for unresolved questions"
+            },
+            {
+              "itemId": "OR-07",
+              "label": "Record manual outcome and export handoff"
+            }
+          ],
+          "reportIntroduced": 323,
+          "state": {
+            "items": {},
+            "updatedAt": null
+          },
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "status": "Reviewed handoff blocked: missing recorder export, manual recorder outcome."
+      },
+      "clear_outside_review_count": 1,
+      "clear_recorder_count": 1,
+      "complete_reviewed_handoff_after_recorder_count": 1,
+      "complete_reviewed_handoff_before_recorder_count": 1,
+      "completion": {
+        "evidenceStatus": "Reviewed handoff complete from refreshed shell evidence.",
+        "parsed": {
+          "boundary": "outside-review-checklist-public-local-only",
+          "checklist": [
+            {
+              "itemId": "OR-01",
+              "label": "Read boundary before launching"
+            },
+            {
+              "itemId": "OR-02",
+              "label": "Launch clean reviewer path"
+            },
+            {
+              "itemId": "OR-03",
+              "label": "Run reviewer pass inside the shell"
+            },
+            {
+              "itemId": "OR-04",
+              "label": "Inspect transcript, receipt, and observation triage"
+            },
+            {
+              "itemId": "OR-05",
+              "label": "Audit failures if the receipt is incomplete"
+            },
+            {
+              "itemId": "OR-06",
+              "label": "Reveal deep panels only for unresolved questions"
+            },
+            {
+              "itemId": "OR-07",
+              "label": "Record manual outcome and export handoff"
+            }
+          ],
+          "reportIntroduced": 323,
+          "state": {
+            "completedAt": "2026-06-18T08:50:14.349Z",
+            "completedBy": "completeReviewedHandoff",
+            "completion": {
+              "boundary": "reviewed-handoff-completion-public-local-only",
+              "defectCount": 0,
+              "manualRecordCount": 1,
+              "missing": [],
+              "openDefectCount": 0,
+              "ready": true,
+              "recorderExportPrepared": true,
+              "recorderExportRecordCount": 1,
+              "reportIntroduced": 327,
+              "shellEvidence": {
+                "blockingObservationRows": 0,
+                "boundary": "outside-review-shell-evidence-public-local-only",
+                "checkpointRows": 7,
+                "deepPanelsRevealed": false,
+                "handoff": {
+                  "boundary": "primary-demo-launcher-only",
+                  "kind": "clean",
+                  "recordedAt": "2026-06-18T08:50:11.886Z",
+                  "report": 303,
+                  "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+                },
+                "observationRows": 0,
+                "receipt": {
+                  "fieldCount": 9,
+                  "passCount": 9
+                },
+                "receiptAllPass": true,
+                "replayExportReady": true,
+                "replayRows": 16,
+                "reportIntroduced": 324,
+                "reviewerPassSeen": true,
+                "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+              }
+            },
+            "items": {
+              "OR-01": true,
+              "OR-02": true,
+              "OR-03": true,
+              "OR-04": true,
+              "OR-05": true,
+              "OR-06": true,
+              "OR-07": true
+            },
+            "updatedAt": "2026-06-18T08:50:14.349Z"
+          },
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "status": "7/7 outside-review checklist items complete after shell evidence and recorder export."
+      },
+      "handoff": {
+        "outStart": "{\n  \"reportIntroduced\": 323,\n  \"checklistState\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true,\n      \"OR-03\": true,\n      \"OR-04\": true,\n      \"OR-05\": true,\n      \"OR-06\": true,\n      \"OR-07\": true\n    },\n    \"updatedAt\": \"2026-06-18T08:50:14.349Z\",\n    \"completedAt\": \"2026-06-18T08:50:14.349Z\",\n    \"completedBy\": \"completeReviewedHandoff\",\n    \"completion\": {\n      \"reportIntroduced\": 327,\n      \"ready\": true,\n      \"missing\": [],\n      \"manualRecordCount\": 1,\n      \"defectCount\": 0,\n      \"openDefectCount\": 0,\n      \"recorderExportPrepared\": true,\n      \"recorderExportRecordCount\": 1,\n      \"shellEvidence\": {\n        \"reportIntroduced\": 324,\n        \"handoff\": {\n          \"kind\": \"clean\",\n          \"report\": 303,\n          \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n          \"recordedAt\": \"2026-06-18T08:50:11.886Z\",\n          \"boundary\": \"primary-demo-launcher-only\"\n        },\n        \"replayRows\": 16,\n        \"reviewerPassSeen\": true,\n        \"receiptAllPass\": true,\n        \"receipt\": {\n          \"passCount\": 9,\n          \"fieldCount\": 9\n        },\n        \"observationRows\": 0,\n        \"blockingObservationRows\": 0,\n        \"checkpointRows\": 7,\n        \"replayExportReady\": true,\n        \"deepPanelsRevealed\": false,\n        \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n        \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n      },\n      \"boundary\": \"reviewed-handoff-completi",
+        "parsed": {
+          "boundary": "outside-review-handoff-public-local-only",
+          "checklistState": {
+            "completedAt": "2026-06-18T08:50:14.349Z",
+            "completedBy": "completeReviewedHandoff",
+            "completion": {
+              "boundary": "reviewed-handoff-completion-public-local-only",
+              "defectCount": 0,
+              "manualRecordCount": 1,
+              "missing": [],
+              "openDefectCount": 0,
+              "ready": true,
+              "recorderExportPrepared": true,
+              "recorderExportRecordCount": 1,
+              "reportIntroduced": 327,
+              "shellEvidence": {
+                "blockingObservationRows": 0,
+                "boundary": "outside-review-shell-evidence-public-local-only",
+                "checkpointRows": 7,
+                "deepPanelsRevealed": false,
+                "handoff": {
+                  "boundary": "primary-demo-launcher-only",
+                  "kind": "clean",
+                  "recordedAt": "2026-06-18T08:50:11.886Z",
+                  "report": 303,
+                  "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+                },
+                "observationRows": 0,
+                "receipt": {
+                  "fieldCount": 9,
+                  "passCount": 9
+                },
+                "receiptAllPass": true,
+                "replayExportReady": true,
+                "replayRows": 16,
+                "reportIntroduced": 324,
+                "reviewerPassSeen": true,
+                "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+              }
+            },
+            "items": {
+              "OR-01": true,
+              "OR-02": true,
+              "OR-03": true,
+              "OR-04": true,
+              "OR-05": true,
+              "OR-06": true,
+              "OR-07": true
+            },
+            "updatedAt": "2026-06-18T08:50:14.349Z"
+          },
+          "defects": [],
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "clean",
+            "recordedAt": "2026-06-18T08:50:11.886Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "launchUrl": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "manualRecords": [
+            {
+              "boundary": "manual-recorder-public-local-only",
+              "recordedAt": "2026-06-18T08:50:13.569Z",
+              "reportIntroduced": 305,
+              "result": "pass",
+              "stepId": "MP-03",
+              "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            }
+          ],
+          "recorderExport": {
+            "boundary": "primary-demo-recorder-export-public-local-only",
+            "defectCount": 0,
+            "defects": [],
+            "openDefectCount": 0,
+            "preparedAt": "2026-06-18T08:50:13.952Z",
+            "recordCount": 1,
+            "records": [
+              {
+                "boundary": "manual-recorder-public-local-only",
+                "recordedAt": "2026-06-18T08:50:13.569Z",
+                "reportIntroduced": 305,
+                "result": "pass",
+                "stepId": "MP-03",
+                "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+              }
+            ],
+            "reportIntroduced": 305
+          },
+          "recorderExportPrepared": true,
+          "reportIntroduced": 323,
+          "reviewedHandoffCompletion": {
+            "boundary": "reviewed-handoff-completion-public-local-only",
+            "defectCount": 0,
+            "manualRecordCount": 1,
+            "missing": [],
+            "openDefectCount": 0,
+            "ready": true,
+            "recorderExportPrepared": true,
+            "recorderExportRecordCount": 1,
+            "reportIntroduced": 327,
+            "shellEvidence": {
+              "blockingObservationRows": 0,
+              "boundary": "outside-review-shell-evidence-public-local-only",
+              "checkpointRows": 7,
+              "deepPanelsRevealed": false,
+              "handoff": {
+                "boundary": "primary-demo-launcher-only",
+                "kind": "clean",
+                "recordedAt": "2026-06-18T08:50:11.886Z",
+                "report": 303,
+                "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+              },
+              "observationRows": 0,
+              "receipt": {
+                "fieldCount": 9,
+                "passCount": 9
+              },
+              "receiptAllPass": true,
+              "replayExportReady": true,
+              "replayRows": 16,
+              "reportIntroduced": 324,
+              "reviewerPassSeen": true,
+              "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            }
+          },
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "clean",
+              "recordedAt": "2026-06-18T08:50:11.886Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "status": "Outside-review handoff payload visible below."
+      },
+      "launch_clean_demo_count": 1,
+      "prepare_outside_review_handoff_count": 1,
+      "prepare_recorder_export_count": 1,
+      "record_mp03_pass_count": 1,
+      "recorder_visible": {
+        "outStart": "{\n  \"records\": [\n    {\n      \"stepId\": \"MP-03\",\n      \"result\": \"pass\",\n      \"reportIntroduced\": 305,\n      \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n      \"recordedAt\": \"2026-06-18T08:50:13.569Z\",\n      \"boundary\": \"manual-recorder-public-local-only\"\n    }\n  ],\n  \"defects\": [],\n  \"recorderExport\": {\n    \"reportIntroduced\": 305,\n    \"records\": [\n      {\n        \"stepId\": \"MP-03\",\n        \"result\": \"pass\",\n        \"reportIntroduced\": 305,\n        \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n        \"recordedAt\": \"2026-06-18T08:50:13.569Z\",\n        \"boundary\": \"manual-recorder-public-local-only\"\n      }\n    ],\n    \"defects\": [],\n    \"recordCount\": 1,\n    \"defectCount\": 0,\n    \"openDefectCount\": 0,\n    \"preparedAt\": \"2026-06-18T08:50:13.952Z\",\n    \"boundary\": \"primary-demo-recorder-export-public-local-only\"\n  }\n}",
+        "parsed": {
+          "defects": [],
+          "recorderExport": {
+            "boundary": "primary-demo-recorder-export-public-local-only",
+            "defectCount": 0,
+            "defects": [],
+            "openDefectCount": 0,
+            "preparedAt": "2026-06-18T08:50:13.952Z",
+            "recordCount": 1,
+            "records": [
+              {
+                "boundary": "manual-recorder-public-local-only",
+                "recordedAt": "2026-06-18T08:50:13.569Z",
+                "reportIntroduced": 305,
+                "result": "pass",
+                "stepId": "MP-03",
+                "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+              }
+            ],
+            "reportIntroduced": 305
+          },
+          "records": [
+            {
+              "boundary": "manual-recorder-public-local-only",
+              "recordedAt": "2026-06-18T08:50:13.569Z",
+              "reportIntroduced": 305,
+              "result": "pass",
+              "stepId": "MP-03",
+              "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            }
+          ]
+        },
+        "status": "Recorder export prepared."
+      },
+      "refresh_shell_evidence_count": 1,
+      "return_launcher_handoff_count": 1,
+      "run_reviewer_pass_count": 1
+    },
+    "target": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "pre_patch_loop_found_real_blocker",
+      "evidence": "Checklist completion is seven repeated Mark done buttons with no one-click complete-from-shell-evidence action after an all-pass reviewer run.; Defect-recorder export can be prepared with zero manual pass/fail records, so the final handoff can look complete while lacking manual recorder evidence.",
+      "failure_if_false": "Report 327 would be speculative rather than defect-driven",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "completion_button_generated_from_source",
+      "evidence": "primary launcher generator and emitted JS contain the reviewed handoff completion gate",
+      "failure_if_false": "regeneration would erase the handoff-completion guard",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "completion_button_visible_in_launcher",
+      "evidence": "launcher exposes a first-class completion action in the outside-review controls",
+      "failure_if_false": "cold reviewers still need to infer how to complete the handoff",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "recorder_export_visible_payload",
+      "evidence": "recorder panel now renders the prepared recorder export payload and boundary",
+      "failure_if_false": "recorder export can still be prepared invisibly or without visible boundary evidence",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_completion_blocks_without_recorder",
+      "evidence": "status=Reviewed handoff blocked: missing recorder export, manual recorder outcome.",
+      "failure_if_false": "completion succeeds even when recorder evidence is missing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_recorder_export_visible_with_boundary",
+      "evidence": "status=Recorder export prepared.; recordCount=1; boundary=primary-demo-recorder-export-public-local-only",
+      "failure_if_false": "prepared recorder export is not visible with boundary and record counts",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_completion_succeeds_after_record_and_export",
+      "evidence": "status=7/7 outside-review checklist items complete after shell evidence and recorder export.; ready=true; manualRecordCount=1",
+      "failure_if_false": "reviewed handoff does not complete after all required evidence is present",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_handoff_payload_carries_completion",
+      "evidence": "status=Outside-review handoff payload visible below.; ready=true; recorderRecordCount=1",
+      "failure_if_false": "final handoff payload does not carry reviewed completion state",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_full_loop_console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "full handoff loop produced browser console errors",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "boundary_preserved",
+      "evidence": "Deterministic browser-local outside-review workflow hardening only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The completion gate is a review integrity guard, not external validation or evidence of inner experience.",
+      "failure_if_false": "report boundary implies more than browser-local review workflow hardening",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_completion_score": 1.0,
+    "completion_source_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "readiness": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-327: run a cold outside-reviewer handoff from one URL without privileged localStorage inspection, then fix the first remaining place where review evidence, recorder evidence, or handoff payload state can diverge",
+  "pre_patch_evidence": {
+    "blockers": [
+      "Checklist completion is seven repeated Mark done buttons with no one-click complete-from-shell-evidence action after an all-pass reviewer run.",
+      "Defect-recorder export can be prepared with zero manual pass/fail records, so the final handoff can look complete while lacking manual recorder evidence."
+    ],
+    "checks": {
+      "checklist_complete": false,
+      "evidence_refreshed_receipt_all_pass": true,
+      "evidence_refreshed_reviewer_pass": true,
+      "handoff_payload_has_recorder_export": true,
+      "handoff_payload_visible": true,
+      "recorder_export_has_records": false,
+      "recorder_export_prepared": false,
+      "return_navigation": true,
+      "shell_passable": true,
+      "shell_receipt_all_pass": true
+    },
+    "console_errors": [],
+    "console_errors_count": 0,
+    "errors": [],
+    "report": 327,
+    "steps": {
+      "after_manual_checklist": {
+        "state": {
+          "boundary": "outside-review-checklist-public-local-only",
+          "checklist": [
+            {
+              "itemId": "OR-01",
+              "label": "Read boundary before launching"
+            },
+            {
+              "itemId": "OR-02",
+              "label": "Launch clean reviewer path"
+            },
+            {
+              "itemId": "OR-03",
+              "label": "Run reviewer pass inside the shell"
+            },
+            {
+              "itemId": "OR-04",
+              "label": "Inspect transcript, receipt, and observation triage"
+            },
+            {
+              "itemId": "OR-05",
+              "label": "Audit failures if the receipt is incomplete"
+            },
+            {
+              "itemId": "OR-06",
+              "label": "Reveal deep panels only for unresolved questions"
+            },
+            {
+              "itemId": "OR-07",
+              "label": "Record manual outcome and export handoff"
+            }
+          ],
+          "reportIntroduced": 323,
+          "state": {
+            "items": {
+              "OR-01": true,
+              "OR-02": true,
+              "OR-03": true,
+              "OR-04": true,
+              "OR-05": true,
+              "OR-06": true,
+              "OR-07": true
+            },
+            "updatedAt": "2026-06-18T08:43:30.482Z"
+          },
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "stateText": "{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true,\n      \"OR-03\": true,\n      \"OR-04\": true,\n      \"OR-05\": true,\n      \"OR-06\": true,\n      \"OR-07\": true\n    },\n    \"updatedAt\": \"2026-06-18T08:43:30.482Z\"\n  },\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-checklist-public-local-only\"\n}",
+        "status": "OR-07 marked done."
+      },
+      "after_refresh": {
+        "evidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "clean",
+            "recordedAt": "2026-06-18T08:43:26.980Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "evidenceText": "{\n  \"reportIntroduced\": 324,\n  \"handoff\": {\n    \"kind\": \"clean\",\n    \"report\": 303,\n    \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"recordedAt\": \"2026-06-18T08:43:26.980Z\",\n    \"boundary\": \"primary-demo-launcher-only\"\n  },\n  \"replayRows\": 16,\n  \"reviewerPassSeen\": true,\n  \"receiptAllPass\": true,\n  \"receipt\": {\n    \"passCount\": 9,\n    \"fieldCount\": 9\n  },\n  \"observationRows\": 0,\n  \"blockingObservationRows\": 0,\n  \"checkpointRows\": 7,\n  \"replayExportReady\": true,\n  \"deepPanelsRevealed\": false,\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n}",
+        "status": "OR-07 marked done."
+      },
+      "after_return": {
+        "checklistProgress": "0/7 outside-review checklist items complete.",
+        "handoffStatus": "No outside-review handoff export prepared yet.",
+        "hasCompleteAll": false,
+        "hasPrepareHandoff": true,
+        "hasRefresh": true,
+        "hash": "#outsideReviewChecklist",
+        "markDoneCount": 7,
+        "shellEvidenceText": "{\n  \"reportIntroduced\": 324,\n  \"handoff\": {\n    \"kind\": \"clean\",\n    \"report\": 303,\n    \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"recordedAt\": \"2026-06-18T08:43:26.980Z\",\n    \"boundary\": \"primary-demo-launcher-only\"\n  },\n  \"replayRows\": 16,\n  \"reviewerPassSeen\": true,\n  \"receiptAllPass\": true,\n  \"receipt\": {\n    \"passCount\": 9,\n    \"fieldCount\": 9\n  },\n  \"observationRows\": 0,\n  \"blockingObservationRows\": 0,\n  \"checkpointRows\": 7,\n  \"replayExportReady\": true,\n  \"deepPanelsRevealed\": false,\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n}",
+        "url": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+      },
+      "clear_outside_review_count": 1,
+      "current_after_error": {
+        "title": "SSRM-3D Primary Browser World Demo",
+        "url": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+      },
+      "handoff_after": {
+        "outStart": "{\n  \"reportIntroduced\": 323,\n  \"checklistState\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true,\n      \"OR-03\": true,\n      \"OR-04\": true,\n      \"OR-05\": true,\n      \"OR-06\": true,\n      \"OR-07\": true\n    },\n    \"updatedAt\": \"2026-06-18T08:43:30.482Z\"\n  },\n  \"handoff\": {\n    \"kind\": \"clean\",\n    \"report\": 303,\n    \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"recordedAt\": \"2026-06-18T08:43:26.980Z\",\n    \"boundary\": \"primary-demo-launcher-only\"\n  },\n  \"shellEvidence\": {\n    \"reportIntroduced\": 324,\n    \"handoff\": {\n      \"kind\": \"clean\",\n      \"report\": 303,\n      \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n      \"recordedAt\": \"2026-06-18T08:43:26.980Z\",\n      \"boundary\": \"primary-demo-launcher-only\"\n    },\n    \"replayRows\": 16,\n    \"reviewerPassSeen\": true,\n    \"receiptAllPass\": true,\n    \"receipt\": {\n      \"passCount\": 9,\n      \"fieldCount\": 9\n    },\n    \"observationRows\": 0,\n    \"blockingObservationRows\": 0,\n    \"checkpointRows\": 7,\n    \"replayExportReady\": true,\n    \"deepPanelsRevealed\": false,\n    \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"boundary\": \"o",
+        "parsed": {
+          "boundary": "outside-review-handoff-public-local-only",
+          "checklistState": {
+            "items": {
+              "OR-01": true,
+              "OR-02": true,
+              "OR-03": true,
+              "OR-04": true,
+              "OR-05": true,
+              "OR-06": true,
+              "OR-07": true
+            },
+            "updatedAt": "2026-06-18T08:43:30.482Z"
+          },
+          "defects": [],
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "clean",
+            "recordedAt": "2026-06-18T08:43:26.980Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "launchUrl": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "manualRecords": [],
+          "recorderExportPrepared": true,
+          "reportIntroduced": 323,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "clean",
+              "recordedAt": "2026-06-18T08:43:26.980Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "status": "Outside-review handoff payload visible below."
+      },
+      "initial_launcher": {
+        "checklistProgress": "Outside-review checklist cleared.",
+        "handoffOut": "No outside-review handoff export prepared yet.",
+        "handoffStatus": "Outside-review handoff cleared.",
+        "hasCompleteAll": false,
+        "markDoneCount": 7,
+        "shellEvidenceText": "{\n  \"reportIntroduced\": 324,\n  \"handoff\": null,\n  \"replayRows\": 0,\n  \"reviewerPassSeen\": false,\n  \"receiptAllPass\": false,\n  \"receipt\": {\n    \"passCount\": 0,\n    \"fieldCount\": 0\n  },\n  \"observationRows\": 0,\n  \"blockingObservationRows\": 0,\n  \"checkpointRows\": 0,\n  \"replayExportReady\": false,\n  \"deepPanelsRevealed\": false,\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n}",
+        "url": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+      },
+      "launch_clean_demo_count": 1,
+      "mark_done_count_before_manual": 0,
+      "prepare_outside_review_handoff_count": 1,
+      "prepare_recorder_export_without_manual_passes_count": 1,
+      "recorder_after_prepare_without_manual_passes": {
+        "outStart": "{\n  \"records\": [],\n  \"defects\": []\n}",
+        "parsed": {
+          "defects": [],
+          "records": []
+        },
+        "status": ""
+      },
+      "recorder_before": {
+        "hasPrepareRecorderExport": true,
+        "out": "{\n  \"records\": [],\n  \"defects\": []\n}",
+        "status": ""
+      },
+      "refresh_shell_evidence_count": 1,
+      "return_to_launcher_handoff_count": 1,
+      "run_reviewer_pass_count": 1,
+      "shell_after_pass": {
+        "allPass": true,
+        "hasPreparedReplay": true,
+        "passable": true,
+        "returnHref": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+        "returnLinkText": "Return to launcher handoff",
+        "url": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      }
+    },
+    "target": "http://127.0.0.1:8787/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "pre_patch_evidence_path": "artifacts/ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_pre_patch_evidence.json",
+  "prefix": "ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion",
+  "report": 327,
+  "required_terms": [
+    "completeReviewedHandoff",
+    "reviewedHandoffCompletionState",
+    "Complete reviewed handoff",
+    "manual recorder outcome",
+    "reviewedHandoffCompletion",
+    "recordCount",
+    "recorderExport: readRecorderExportPayload()"
+  ],
+  "seed": 20270725,
+  "verdict": "pass"
+}

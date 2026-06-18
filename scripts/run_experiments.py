@@ -3991,6 +3991,13 @@ COMMANDS: List[List[str]] = [
         "--seed",
         "20270724",
     ],
+    [
+        sys.executable,
+        "-m",
+        "experiments.ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion",
+        "--seed",
+        "20270725",
+    ],
 ]
 
 

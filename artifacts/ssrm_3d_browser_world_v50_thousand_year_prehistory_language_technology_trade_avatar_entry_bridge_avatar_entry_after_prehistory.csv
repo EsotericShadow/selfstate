@@ -1,0 +1,6 @@
+entry_id,simulated_year,settlement_id,avatar_entry_allowed,civilization_preexists,greeting_protocol,translation_uncertainty,local_custom_constraint,first_playable_choices,history_not_erased,private_workspace_boundary,entry_marker_visible
+0,1200,moss_ward,True,True,warm-cup greeting before questions,0.228,ask before touching moss fiber,"observe, greet, ask translation, offer trade, step back",True,True,True
+1,1200,glass_harbor,True,True,tea-before-crossing greeting before questions,0.258,ask before touching lamp oil,"observe, greet, ask translation, offer trade, step back",True,True,True
+2,1200,cinder_garden,True,True,cool-hand greeting before questions,0.288,ask before touching cool stone,"observe, greet, ask translation, offer trade, step back",True,True,True
+3,1200,lichen_bridge,True,True,rope-touch greeting before questions,0.318,ask before touching lichen paste,"observe, greet, ask translation, offer trade, step back",True,True,True
+4,1200,orchid_engine,True,True,orchid-cup greeting before questions,0.348,ask before touching valve ore,"observe, greet, ask translation, offer trade, step back",True,True,True

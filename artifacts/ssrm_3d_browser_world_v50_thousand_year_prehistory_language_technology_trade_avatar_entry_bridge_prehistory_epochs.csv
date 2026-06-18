@@ -1,0 +1,1206 @@
+epoch_id,simulated_year,generation,settlement_id,population_estimate,resource_pressure,conflict_pressure,cooperation_norm_strength,institution_count,avatar_absent,civilization_marker,continuity_score,bounded_history
+0,0,0,moss_ward,42,0.365294,0.114612,0.559685,1,True,moss_ward wet temperate ward year 0 institutions 1,0.381432,True
+1,0,0,glass_harbor,49,0.378824,0.135153,0.557836,1,True,glass_harbor fog harbor year 0 institutions 1,0.380183,True
+2,0,0,cinder_garden,56,0.392353,0.155694,0.555988,1,True,cinder_garden ash garden year 0 institutions 1,0.378934,True
+3,0,0,lichen_bridge,63,0.405882,0.176235,0.554139,1,True,lichen_bridge rope bridge valley year 0 institutions 1,0.377685,True
+4,0,0,orchid_engine,70,0.419412,0.196776,0.55229,1,True,orchid_engine warm engine terrace year 0 institutions 1,0.376436,True
+5,5,0,moss_ward,42,0.378824,0.115153,0.559636,1,True,moss_ward wet temperate ward year 5 institutions 1,0.381399,True
+6,5,0,glass_harbor,49,0.392353,0.135694,0.557788,1,True,glass_harbor fog harbor year 5 institutions 1,0.38015,True
+7,5,0,cinder_garden,56,0.405882,0.156235,0.555939,1,True,cinder_garden ash garden year 5 institutions 1,0.378901,True
+8,5,0,lichen_bridge,63,0.419412,0.176776,0.55409,1,True,lichen_bridge rope bridge valley year 5 institutions 1,0.377652,True
+9,5,0,orchid_engine,70,0.432941,0.197318,0.552241,1,True,orchid_engine warm engine terrace year 5 institutions 1,0.376403,True
+10,10,0,moss_ward,42,0.392353,0.115694,0.559588,1,True,moss_ward wet temperate ward year 10 institutions 1,0.381366,True
+11,10,0,glass_harbor,49,0.405882,0.136235,0.557739,1,True,glass_harbor fog harbor year 10 institutions 1,0.380117,True
+12,10,0,cinder_garden,56,0.419412,0.156776,0.55589,1,True,cinder_garden ash garden year 10 institutions 1,0.378868,True
+13,10,0,lichen_bridge,63,0.432941,0.177318,0.554041,1,True,lichen_bridge rope bridge valley year 10 institutions 1,0.377619,True
+14,10,0,orchid_engine,70,0.446471,0.197859,0.552193,1,True,orchid_engine warm engine terrace year 10 institutions 1,0.37637,True
+15,15,0,moss_ward,42,0.405882,0.116235,0.559539,1,True,moss_ward wet temperate ward year 15 institutions 1,0.381333,True
+16,15,0,glass_harbor,49,0.419412,0.136776,0.55769,1,True,glass_harbor fog harbor year 15 institutions 1,0.380084,True
+17,15,0,cinder_garden,56,0.432941,0.157318,0.555841,1,True,cinder_garden ash garden year 15 institutions 1,0.378835,True
+18,15,0,lichen_bridge,63,0.446471,0.177859,0.553993,1,True,lichen_bridge rope bridge valley year 15 institutions 1,0.377586,True
+19,15,0,orchid_engine,70,0.23,0.1892,0.552972,1,True,orchid_engine warm engine terrace year 15 institutions 1,0.376897,True
+20,20,0,moss_ward,42,0.419412,0.116776,0.55949,1,True,moss_ward wet temperate ward year 20 institutions 1,0.3813,True
+21,20,0,glass_harbor,49,0.432941,0.137318,0.557641,1,True,glass_harbor fog harbor year 20 institutions 1,0.380051,True
+22,20,0,cinder_garden,56,0.446471,0.157859,0.555793,1,True,cinder_garden ash garden year 20 institutions 1,0.378802,True
+23,20,0,lichen_bridge,63,0.23,0.1692,0.554772,1,True,lichen_bridge rope bridge valley year 20 institutions 1,0.378113,True
+24,20,0,orchid_engine,70,0.243529,0.189741,0.552923,1,True,orchid_engine warm engine terrace year 20 institutions 1,0.376864,True
+25,25,1,moss_ward,42,0.382941,0.135318,0.563821,1,True,moss_ward wet temperate ward year 25 institutions 1,0.386893,True
+26,25,1,glass_harbor,49,0.396471,0.155859,0.561973,1,True,glass_harbor fog harbor year 25 institutions 1,0.385644,True
+27,25,1,cinder_garden,56,0.18,0.1672,0.560952,1,True,cinder_garden ash garden year 25 institutions 1,0.384954,True
+28,25,1,lichen_bridge,63,0.193529,0.187741,0.559103,1,True,lichen_bridge rope bridge valley year 25 institutions 1,0.383705,True
+29,25,1,orchid_engine,70,0.207059,0.208282,0.557255,1,True,orchid_engine warm engine terrace year 25 institutions 1,0.382456,True
+30,30,1,moss_ward,42,0.396471,0.135859,0.563773,1,True,moss_ward wet temperate ward year 30 institutions 1,0.38686,True
+31,30,1,glass_harbor,49,0.18,0.1472,0.562752,1,True,glass_harbor fog harbor year 30 institutions 1,0.38617,True
+32,30,1,cinder_garden,56,0.193529,0.167741,0.560903,1,True,cinder_garden ash garden year 30 institutions 1,0.384921,True
+33,30,1,lichen_bridge,63,0.207059,0.188282,0.559055,1,True,lichen_bridge rope bridge valley year 30 institutions 1,0.383672,True
+34,30,1,orchid_engine,70,0.220588,0.208824,0.557206,1,True,orchid_engine warm engine terrace year 30 institutions 1,0.382424,True
+35,35,1,moss_ward,42,0.18,0.1272,0.564552,1,True,moss_ward wet temperate ward year 35 institutions 1,0.387386,True
+36,35,1,glass_harbor,49,0.193529,0.147741,0.562703,1,True,glass_harbor fog harbor year 35 institutions 1,0.386137,True
+37,35,1,cinder_garden,56,0.207059,0.168282,0.560855,1,True,cinder_garden ash garden year 35 institutions 1,0.384888,True
+38,35,1,lichen_bridge,63,0.220588,0.188824,0.559006,1,True,lichen_bridge rope bridge valley year 35 institutions 1,0.38364,True
+39,35,1,orchid_engine,70,0.234118,0.209365,0.557157,1,True,orchid_engine warm engine terrace year 35 institutions 1,0.382391,True
+40,40,1,moss_ward,42,0.193529,0.127741,0.564503,1,True,moss_ward wet temperate ward year 40 institutions 1,0.387353,True
+41,40,1,glass_harbor,49,0.207059,0.148282,0.562655,1,True,glass_harbor fog harbor year 40 institutions 1,0.386104,True
+42,40,1,cinder_garden,56,0.220588,0.168824,0.560806,1,True,cinder_garden ash garden year 40 institutions 1,0.384856,True
+43,40,1,lichen_bridge,63,0.234118,0.189365,0.558957,1,True,lichen_bridge rope bridge valley year 40 institutions 1,0.383607,True
+44,40,1,orchid_engine,70,0.247647,0.209906,0.557108,1,True,orchid_engine warm engine terrace year 40 institutions 1,0.382358,True
+45,45,1,moss_ward,42,0.207059,0.128282,0.564455,1,True,moss_ward wet temperate ward year 45 institutions 1,0.38732,True
+46,45,1,glass_harbor,49,0.220588,0.148824,0.562606,1,True,glass_harbor fog harbor year 45 institutions 1,0.386072,True
+47,45,1,cinder_garden,56,0.234118,0.169365,0.560757,1,True,cinder_garden ash garden year 45 institutions 1,0.384823,True
+48,45,1,lichen_bridge,63,0.247647,0.189906,0.558908,1,True,lichen_bridge rope bridge valley year 45 institutions 1,0.383574,True
+49,45,1,orchid_engine,70,0.261176,0.210447,0.55706,1,True,orchid_engine warm engine terrace year 45 institutions 1,0.382325,True
+50,50,2,moss_ward,42,0.220588,0.148824,0.568606,1,True,moss_ward wet temperate ward year 50 institutions 1,0.392792,True
+51,50,2,glass_harbor,49,0.234118,0.169365,0.566757,1,True,glass_harbor fog harbor year 50 institutions 1,0.391543,True
+52,50,2,cinder_garden,56,0.247647,0.189906,0.564908,1,True,cinder_garden ash garden year 50 institutions 1,0.390294,True
+53,50,2,lichen_bridge,63,0.261176,0.210447,0.56306,1,True,lichen_bridge rope bridge valley year 50 institutions 1,0.389045,True
+54,50,2,orchid_engine,70,0.274706,0.230988,0.561211,1,True,orchid_engine warm engine terrace year 50 institutions 1,0.387796,True
+55,55,2,moss_ward,43,0.234118,0.149365,0.568557,1,True,moss_ward wet temperate ward year 55 institutions 1,0.392759,True
+56,55,2,glass_harbor,50,0.247647,0.169906,0.566708,1,True,glass_harbor fog harbor year 55 institutions 1,0.39151,True
+57,55,2,cinder_garden,57,0.261176,0.190447,0.56486,1,True,cinder_garden ash garden year 55 institutions 1,0.390261,True
+58,55,2,lichen_bridge,64,0.274706,0.210988,0.563011,1,True,lichen_bridge rope bridge valley year 55 institutions 1,0.389012,True
+59,55,2,orchid_engine,71,0.288235,0.231529,0.561162,1,True,orchid_engine warm engine terrace year 55 institutions 1,0.387763,True
+60,60,2,moss_ward,43,0.247647,0.149906,0.568508,1,True,moss_ward wet temperate ward year 60 institutions 1,0.392726,True
+61,60,2,glass_harbor,50,0.261176,0.170447,0.56666,1,True,glass_harbor fog harbor year 60 institutions 1,0.391477,True
+62,60,2,cinder_garden,57,0.274706,0.190988,0.564811,1,True,cinder_garden ash garden year 60 institutions 1,0.390228,True
+63,60,2,lichen_bridge,64,0.288235,0.211529,0.562962,1,True,lichen_bridge rope bridge valley year 60 institutions 1,0.388979,True
+64,60,2,orchid_engine,71,0.301765,0.232071,0.561114,1,True,orchid_engine warm engine terrace year 60 institutions 1,0.38773,True
+65,65,2,moss_ward,43,0.261176,0.150447,0.56846,1,True,moss_ward wet temperate ward year 65 institutions 1,0.392693,True
+66,65,2,glass_harbor,50,0.274706,0.170988,0.566611,1,True,glass_harbor fog harbor year 65 institutions 1,0.391444,True
+67,65,2,cinder_garden,57,0.288235,0.191529,0.564762,1,True,cinder_garden ash garden year 65 institutions 1,0.390195,True
+68,65,2,lichen_bridge,64,0.301765,0.212071,0.562914,1,True,lichen_bridge rope bridge valley year 65 institutions 1,0.388946,True
+69,65,2,orchid_engine,71,0.315294,0.232612,0.561065,1,True,orchid_engine warm engine terrace year 65 institutions 1,0.387697,True
+70,70,2,moss_ward,43,0.274706,0.150988,0.568411,1,True,moss_ward wet temperate ward year 70 institutions 1,0.39266,True
+71,70,2,glass_harbor,50,0.288235,0.171529,0.566562,1,True,glass_harbor fog harbor year 70 institutions 1,0.391411,True
+72,70,2,cinder_garden,57,0.301765,0.192071,0.564714,1,True,cinder_garden ash garden year 70 institutions 1,0.390162,True
+73,70,2,lichen_bridge,64,0.315294,0.212612,0.562865,1,True,lichen_bridge rope bridge valley year 70 institutions 1,0.388913,True
+74,70,2,orchid_engine,71,0.328824,0.233153,0.561016,1,True,orchid_engine warm engine terrace year 70 institutions 1,0.387664,True
+75,75,3,moss_ward,43,0.288235,0.171529,0.572562,1,True,moss_ward wet temperate ward year 75 institutions 1,0.398131,True
+76,75,3,glass_harbor,50,0.301765,0.192071,0.570714,1,True,glass_harbor fog harbor year 75 institutions 1,0.396882,True
+77,75,3,cinder_garden,57,0.315294,0.212612,0.568865,1,True,cinder_garden ash garden year 75 institutions 1,0.395633,True
+78,75,3,lichen_bridge,64,0.328824,0.233153,0.567016,1,True,lichen_bridge rope bridge valley year 75 institutions 1,0.394384,True
+79,75,3,orchid_engine,71,0.342353,0.253694,0.565168,1,True,orchid_engine warm engine terrace year 75 institutions 1,0.393135,True
+80,80,3,moss_ward,43,0.301765,0.172071,0.572514,1,True,moss_ward wet temperate ward year 80 institutions 1,0.398098,True
+81,80,3,glass_harbor,50,0.315294,0.192612,0.570665,1,True,glass_harbor fog harbor year 80 institutions 1,0.396849,True
+82,80,3,cinder_garden,57,0.328824,0.213153,0.568816,1,True,cinder_garden ash garden year 80 institutions 1,0.3956,True
+83,80,3,lichen_bridge,64,0.342353,0.233694,0.566968,1,True,lichen_bridge rope bridge valley year 80 institutions 1,0.394351,True
+84,80,3,orchid_engine,71,0.355882,0.254235,0.565119,1,True,orchid_engine warm engine terrace year 80 institutions 1,0.393102,True
+85,85,3,moss_ward,43,0.315294,0.172612,0.572465,1,True,moss_ward wet temperate ward year 85 institutions 1,0.398065,True
+86,85,3,glass_harbor,50,0.328824,0.193153,0.570616,1,True,glass_harbor fog harbor year 85 institutions 1,0.396816,True
+87,85,3,cinder_garden,57,0.342353,0.213694,0.568768,1,True,cinder_garden ash garden year 85 institutions 1,0.395567,True
+88,85,3,lichen_bridge,64,0.355882,0.234235,0.566919,1,True,lichen_bridge rope bridge valley year 85 institutions 1,0.394318,True
+89,85,3,orchid_engine,71,0.369412,0.254776,0.56507,1,True,orchid_engine warm engine terrace year 85 institutions 1,0.39307,True
+90,90,3,moss_ward,43,0.328824,0.173153,0.572416,1,True,moss_ward wet temperate ward year 90 institutions 1,0.398032,True
+91,90,3,glass_harbor,50,0.342353,0.193694,0.570568,1,True,glass_harbor fog harbor year 90 institutions 1,0.396783,True
+92,90,3,cinder_garden,57,0.355882,0.214235,0.568719,1,True,cinder_garden ash garden year 90 institutions 1,0.395534,True
+93,90,3,lichen_bridge,64,0.369412,0.234776,0.56687,1,True,lichen_bridge rope bridge valley year 90 institutions 1,0.394286,True
+94,90,3,orchid_engine,71,0.382941,0.255318,0.565021,1,True,orchid_engine warm engine terrace year 90 institutions 1,0.393037,True
+95,95,3,moss_ward,43,0.342353,0.173694,0.572368,1,True,moss_ward wet temperate ward year 95 institutions 1,0.397999,True
+96,95,3,glass_harbor,50,0.355882,0.194235,0.570519,1,True,glass_harbor fog harbor year 95 institutions 1,0.39675,True
+97,95,3,cinder_garden,57,0.369412,0.214776,0.56867,1,True,cinder_garden ash garden year 95 institutions 1,0.395502,True
+98,95,3,lichen_bridge,64,0.382941,0.235318,0.566821,1,True,lichen_bridge rope bridge valley year 95 institutions 1,0.394253,True
+99,95,3,orchid_engine,71,0.396471,0.255859,0.564973,1,True,orchid_engine warm engine terrace year 95 institutions 1,0.393004,True
+100,100,4,moss_ward,43,0.355882,0.194235,0.576519,1,True,moss_ward wet temperate ward year 100 institutions 1,0.40347,True
+101,100,4,glass_harbor,50,0.369412,0.214776,0.57467,1,True,glass_harbor fog harbor year 100 institutions 1,0.402222,True
+102,100,4,cinder_garden,57,0.382941,0.235318,0.572821,1,True,cinder_garden ash garden year 100 institutions 1,0.400973,True
+103,100,4,lichen_bridge,64,0.396471,0.255859,0.570973,1,True,lichen_bridge rope bridge valley year 100 institutions 1,0.399724,True
+104,100,4,orchid_engine,71,0.18,0.2672,0.569952,1,True,orchid_engine warm engine terrace year 100 institutions 1,0.399034,True
+105,105,4,moss_ward,43,0.369412,0.194776,0.57647,1,True,moss_ward wet temperate ward year 105 institutions 1,0.403438,True
+106,105,4,glass_harbor,50,0.382941,0.215318,0.574621,1,True,glass_harbor fog harbor year 105 institutions 1,0.402189,True
+107,105,4,cinder_garden,57,0.396471,0.235859,0.572773,1,True,cinder_garden ash garden year 105 institutions 1,0.40094,True
+108,105,4,lichen_bridge,64,0.18,0.2472,0.571752,1,True,lichen_bridge rope bridge valley year 105 institutions 1,0.40025,True
+109,105,4,orchid_engine,71,0.193529,0.267741,0.569903,1,True,orchid_engine warm engine terrace year 105 institutions 1,0.399001,True
+110,110,4,moss_ward,43,0.382941,0.195318,0.576421,1,True,moss_ward wet temperate ward year 110 institutions 1,0.403405,True
+111,110,4,glass_harbor,50,0.396471,0.215859,0.574573,1,True,glass_harbor fog harbor year 110 institutions 1,0.402156,True
+112,110,4,cinder_garden,57,0.18,0.2272,0.573552,1,True,cinder_garden ash garden year 110 institutions 1,0.401466,True
+113,110,4,lichen_bridge,64,0.193529,0.247741,0.571703,1,True,lichen_bridge rope bridge valley year 110 institutions 1,0.400217,True
+114,110,4,orchid_engine,71,0.207059,0.268282,0.569855,1,True,orchid_engine warm engine terrace year 110 institutions 1,0.398968,True
+115,115,4,moss_ward,44,0.396471,0.195859,0.576373,1,True,moss_ward wet temperate ward year 115 institutions 1,0.403372,True
+116,115,4,glass_harbor,51,0.18,0.2072,0.575352,1,True,glass_harbor fog harbor year 115 institutions 1,0.402682,True
+117,115,4,cinder_garden,58,0.193529,0.227741,0.573503,1,True,cinder_garden ash garden year 115 institutions 1,0.401433,True
+118,115,4,lichen_bridge,65,0.207059,0.248282,0.571655,1,True,lichen_bridge rope bridge valley year 115 institutions 1,0.400184,True
+119,115,4,orchid_engine,72,0.220588,0.268824,0.569806,1,True,orchid_engine warm engine terrace year 115 institutions 1,0.398936,True
+120,120,4,moss_ward,44,0.18,0.1872,0.577152,1,True,moss_ward wet temperate ward year 120 institutions 1,0.403898,True
+121,120,4,glass_harbor,51,0.193529,0.207741,0.575303,1,True,glass_harbor fog harbor year 120 institutions 1,0.402649,True
+122,120,4,cinder_garden,58,0.207059,0.228282,0.573455,1,True,cinder_garden ash garden year 120 institutions 1,0.4014,True
+123,120,4,lichen_bridge,65,0.220588,0.248824,0.571606,1,True,lichen_bridge rope bridge valley year 120 institutions 1,0.400152,True
+124,120,4,orchid_engine,72,0.234118,0.269365,0.569757,1,True,orchid_engine warm engine terrace year 120 institutions 1,0.398903,True
+125,125,5,moss_ward,44,0.193529,0.207741,0.581303,1,True,moss_ward wet temperate ward year 125 institutions 1,0.409369,True
+126,125,5,glass_harbor,51,0.207059,0.228282,0.579455,1,True,glass_harbor fog harbor year 125 institutions 1,0.40812,True
+127,125,5,cinder_garden,58,0.220588,0.248824,0.577606,1,True,cinder_garden ash garden year 125 institutions 1,0.406872,True
+128,125,5,lichen_bridge,65,0.234118,0.269365,0.575757,1,True,lichen_bridge rope bridge valley year 125 institutions 1,0.405623,True
+129,125,5,orchid_engine,72,0.247647,0.109906,0.590108,1,True,orchid_engine warm engine terrace year 125 institutions 1,0.415318,True
+130,130,5,moss_ward,44,0.207059,0.208282,0.581255,1,True,moss_ward wet temperate ward year 130 institutions 1,0.409336,True
+131,130,5,glass_harbor,51,0.220588,0.228824,0.579406,1,True,glass_harbor fog harbor year 130 institutions 1,0.408088,True
+132,130,5,cinder_garden,58,0.234118,0.249365,0.577557,1,True,cinder_garden ash garden year 130 institutions 1,0.406839,True
+133,130,5,lichen_bridge,65,0.247647,0.269906,0.575708,1,True,lichen_bridge rope bridge valley year 130 institutions 1,0.40559,True
+134,130,5,orchid_engine,72,0.261176,0.110447,0.59006,1,True,orchid_engine warm engine terrace year 130 institutions 1,0.415285,True
+135,135,5,moss_ward,44,0.220588,0.208824,0.581206,1,True,moss_ward wet temperate ward year 135 institutions 1,0.409304,True
+136,135,5,glass_harbor,51,0.234118,0.229365,0.579357,1,True,glass_harbor fog harbor year 135 institutions 1,0.408055,True
+137,135,5,cinder_garden,58,0.247647,0.249906,0.577508,1,True,cinder_garden ash garden year 135 institutions 1,0.406806,True
+138,135,5,lichen_bridge,65,0.261176,0.270447,0.57566,1,True,lichen_bridge rope bridge valley year 135 institutions 1,0.405557,True
+139,135,5,orchid_engine,72,0.274706,0.110988,0.590011,1,True,orchid_engine warm engine terrace year 135 institutions 1,0.415252,True
+140,140,5,moss_ward,44,0.234118,0.209365,0.581157,1,True,moss_ward wet temperate ward year 140 institutions 1,0.409271,True
+141,140,5,glass_harbor,51,0.247647,0.229906,0.579308,1,True,glass_harbor fog harbor year 140 institutions 1,0.408022,True
+142,140,5,cinder_garden,58,0.261176,0.250447,0.57746,1,True,cinder_garden ash garden year 140 institutions 1,0.406773,True
+143,140,5,lichen_bridge,65,0.274706,0.270988,0.575611,1,True,lichen_bridge rope bridge valley year 140 institutions 1,0.405524,True
+144,140,5,orchid_engine,72,0.288235,0.111529,0.589962,1,True,orchid_engine warm engine terrace year 140 institutions 1,0.415219,True
+145,145,5,moss_ward,44,0.247647,0.209906,0.581108,1,True,moss_ward wet temperate ward year 145 institutions 1,0.409238,True
+146,145,5,glass_harbor,51,0.261176,0.230447,0.57926,1,True,glass_harbor fog harbor year 145 institutions 1,0.407989,True
+147,145,5,cinder_garden,58,0.274706,0.250988,0.577411,1,True,cinder_garden ash garden year 145 institutions 1,0.40674,True
+148,145,5,lichen_bridge,65,0.288235,0.271529,0.575562,1,True,lichen_bridge rope bridge valley year 145 institutions 1,0.405491,True
+149,145,5,orchid_engine,72,0.301765,0.112071,0.589914,1,True,orchid_engine warm engine terrace year 145 institutions 1,0.415186,True
+150,150,6,moss_ward,44,0.261176,0.230447,0.58526,1,True,moss_ward wet temperate ward year 150 institutions 1,0.414709,True
+151,150,6,glass_harbor,51,0.274706,0.250988,0.583411,1,True,glass_harbor fog harbor year 150 institutions 1,0.41346,True
+152,150,6,cinder_garden,58,0.288235,0.271529,0.581562,1,True,cinder_garden ash garden year 150 institutions 1,0.412211,True
+153,150,6,lichen_bridge,65,0.301765,0.112071,0.595914,1,True,lichen_bridge rope bridge valley year 150 institutions 1,0.421906,True
+154,150,6,orchid_engine,72,0.315294,0.132612,0.594065,1,True,orchid_engine warm engine terrace year 150 institutions 1,0.420657,True
+155,155,6,moss_ward,44,0.274706,0.230988,0.585211,1,True,moss_ward wet temperate ward year 155 institutions 1,0.414676,True
+156,155,6,glass_harbor,51,0.288235,0.251529,0.583362,1,True,glass_harbor fog harbor year 155 institutions 1,0.413427,True
+157,155,6,cinder_garden,58,0.301765,0.272071,0.581514,1,True,cinder_garden ash garden year 155 institutions 1,0.412178,True
+158,155,6,lichen_bridge,65,0.315294,0.112612,0.595865,1,True,lichen_bridge rope bridge valley year 155 institutions 1,0.421873,True
+159,155,6,orchid_engine,72,0.328824,0.133153,0.594016,1,True,orchid_engine warm engine terrace year 155 institutions 1,0.420624,True
+160,160,6,moss_ward,44,0.288235,0.231529,0.585162,1,True,moss_ward wet temperate ward year 160 institutions 1,0.414643,True
+161,160,6,glass_harbor,51,0.301765,0.252071,0.583314,1,True,glass_harbor fog harbor year 160 institutions 1,0.413394,True
+162,160,6,cinder_garden,58,0.315294,0.272612,0.581465,1,True,cinder_garden ash garden year 160 institutions 1,0.412145,True
+163,160,6,lichen_bridge,65,0.328824,0.113153,0.595816,1,True,lichen_bridge rope bridge valley year 160 institutions 1,0.42184,True
+164,160,6,orchid_engine,72,0.342353,0.133694,0.593968,1,True,orchid_engine warm engine terrace year 160 institutions 1,0.420591,True
+165,165,6,moss_ward,44,0.301765,0.232071,0.585114,1,True,moss_ward wet temperate ward year 165 institutions 1,0.41461,True
+166,165,6,glass_harbor,51,0.315294,0.252612,0.583265,1,True,glass_harbor fog harbor year 165 institutions 1,0.413361,True
+167,165,6,cinder_garden,58,0.328824,0.273153,0.581416,1,True,cinder_garden ash garden year 165 institutions 1,0.412112,True
+168,165,6,lichen_bridge,65,0.342353,0.113694,0.595768,1,True,lichen_bridge rope bridge valley year 165 institutions 1,0.421807,True
+169,165,6,orchid_engine,72,0.355882,0.134235,0.593919,1,True,orchid_engine warm engine terrace year 165 institutions 1,0.420558,True
+170,170,6,moss_ward,45,0.315294,0.232612,0.585065,1,True,moss_ward wet temperate ward year 170 institutions 1,0.414577,True
+171,170,6,glass_harbor,52,0.328824,0.253153,0.583216,1,True,glass_harbor fog harbor year 170 institutions 1,0.413328,True
+172,170,6,cinder_garden,59,0.342353,0.273694,0.581368,1,True,cinder_garden ash garden year 170 institutions 1,0.412079,True
+173,170,6,lichen_bridge,66,0.355882,0.114235,0.595719,1,True,lichen_bridge rope bridge valley year 170 institutions 1,0.421774,True
+174,170,6,orchid_engine,73,0.369412,0.134776,0.59387,1,True,orchid_engine warm engine terrace year 170 institutions 1,0.420526,True
+175,175,7,moss_ward,45,0.378824,0.255153,0.589036,1,True,moss_ward wet temperate ward year 175 institutions 1,0.419927,True
+176,175,7,glass_harbor,52,0.392353,0.275694,0.587188,1,True,glass_harbor fog harbor year 175 institutions 1,0.418678,True
+177,175,7,cinder_garden,59,0.405882,0.116235,0.601539,1,True,cinder_garden ash garden year 175 institutions 1,0.428373,True
+178,175,7,lichen_bridge,66,0.419412,0.136776,0.59969,1,True,lichen_bridge rope bridge valley year 175 institutions 1,0.427124,True
+179,175,7,orchid_engine,73,0.432941,0.157318,0.597841,1,True,orchid_engine warm engine terrace year 175 institutions 1,0.425875,True
+180,180,7,moss_ward,45,0.392353,0.255694,0.588988,1,True,moss_ward wet temperate ward year 180 institutions 1,0.419894,True
+181,180,7,glass_harbor,52,0.405882,0.276235,0.587139,1,True,glass_harbor fog harbor year 180 institutions 1,0.418645,True
+182,180,7,cinder_garden,59,0.419412,0.116776,0.60149,1,True,cinder_garden ash garden year 180 institutions 1,0.42834,True
+183,180,7,lichen_bridge,66,0.432941,0.137318,0.599641,1,True,lichen_bridge rope bridge valley year 180 institutions 1,0.427091,True
+184,180,7,orchid_engine,73,0.446471,0.157859,0.597793,1,True,orchid_engine warm engine terrace year 180 institutions 1,0.425842,True
+185,185,7,moss_ward,45,0.405882,0.256235,0.588939,1,True,moss_ward wet temperate ward year 185 institutions 1,0.419861,True
+186,185,7,glass_harbor,52,0.419412,0.276776,0.58709,1,True,glass_harbor fog harbor year 185 institutions 1,0.418612,True
+187,185,7,cinder_garden,59,0.432941,0.117318,0.601441,1,True,cinder_garden ash garden year 185 institutions 1,0.428307,True
+188,185,7,lichen_bridge,66,0.446471,0.137859,0.599593,1,True,lichen_bridge rope bridge valley year 185 institutions 1,0.427058,True
+189,185,7,orchid_engine,73,0.23,0.1492,0.598572,1,True,orchid_engine warm engine terrace year 185 institutions 1,0.426369,True
+190,190,7,moss_ward,45,0.419412,0.256776,0.58889,1,True,moss_ward wet temperate ward year 190 institutions 1,0.419828,True
+191,190,7,glass_harbor,52,0.432941,0.277318,0.587041,1,True,glass_harbor fog harbor year 190 institutions 1,0.418579,True
+192,190,7,cinder_garden,59,0.446471,0.117859,0.601393,1,True,cinder_garden ash garden year 190 institutions 1,0.428274,True
+193,190,7,lichen_bridge,66,0.23,0.1292,0.600372,1,True,lichen_bridge rope bridge valley year 190 institutions 1,0.427585,True
+194,190,7,orchid_engine,73,0.243529,0.149741,0.598523,1,True,orchid_engine warm engine terrace year 190 institutions 1,0.426336,True
+195,195,7,moss_ward,45,0.432941,0.257318,0.588841,1,True,moss_ward wet temperate ward year 195 institutions 1,0.419795,True
+196,195,7,glass_harbor,52,0.446471,0.277859,0.586993,1,True,glass_harbor fog harbor year 195 institutions 1,0.418546,True
+197,195,7,cinder_garden,59,0.23,0.1092,0.602172,1,True,cinder_garden ash garden year 195 institutions 1,0.428801,True
+198,195,7,lichen_bridge,66,0.243529,0.129741,0.600323,1,True,lichen_bridge rope bridge valley year 195 institutions 1,0.427552,True
+199,195,7,orchid_engine,73,0.257059,0.150282,0.598475,1,True,orchid_engine warm engine terrace year 195 institutions 1,0.426303,True
+200,200,8,moss_ward,45,0.396471,0.275859,0.593173,2,True,moss_ward wet temperate ward year 200 institutions 2,0.425388,True
+201,200,8,glass_harbor,52,0.18,0.1072,0.608352,2,True,glass_harbor fog harbor year 200 institutions 2,0.435642,True
+202,200,8,cinder_garden,59,0.193529,0.127741,0.606503,2,True,cinder_garden ash garden year 200 institutions 2,0.434393,True
+203,200,8,lichen_bridge,66,0.207059,0.148282,0.604655,2,True,lichen_bridge rope bridge valley year 200 institutions 2,0.433144,True
+204,200,8,orchid_engine,73,0.220588,0.168824,0.602806,2,True,orchid_engine warm engine terrace year 200 institutions 2,0.431896,True
+205,205,8,moss_ward,45,0.18,0.2672,0.593952,2,True,moss_ward wet temperate ward year 205 institutions 2,0.425914,True
+206,205,8,glass_harbor,52,0.193529,0.107741,0.608303,2,True,glass_harbor fog harbor year 205 institutions 2,0.435609,True
+207,205,8,cinder_garden,59,0.207059,0.128282,0.606455,2,True,cinder_garden ash garden year 205 institutions 2,0.43436,True
+208,205,8,lichen_bridge,66,0.220588,0.148824,0.604606,2,True,lichen_bridge rope bridge valley year 205 institutions 2,0.433112,True
+209,205,8,orchid_engine,73,0.234118,0.169365,0.602757,2,True,orchid_engine warm engine terrace year 205 institutions 2,0.431863,True
+210,210,8,moss_ward,45,0.193529,0.267741,0.593903,2,True,moss_ward wet temperate ward year 210 institutions 2,0.425881,True
+211,210,8,glass_harbor,52,0.207059,0.108282,0.608255,2,True,glass_harbor fog harbor year 210 institutions 2,0.435576,True
+212,210,8,cinder_garden,59,0.220588,0.128824,0.606406,2,True,cinder_garden ash garden year 210 institutions 2,0.434328,True
+213,210,8,lichen_bridge,66,0.234118,0.149365,0.604557,2,True,lichen_bridge rope bridge valley year 210 institutions 2,0.433079,True
+214,210,8,orchid_engine,73,0.247647,0.169906,0.602708,2,True,orchid_engine warm engine terrace year 210 institutions 2,0.43183,True
+215,215,8,moss_ward,45,0.207059,0.268282,0.593855,2,True,moss_ward wet temperate ward year 215 institutions 2,0.425848,True
+216,215,8,glass_harbor,52,0.220588,0.108824,0.608206,2,True,glass_harbor fog harbor year 215 institutions 2,0.435544,True
+217,215,8,cinder_garden,59,0.234118,0.129365,0.606357,2,True,cinder_garden ash garden year 215 institutions 2,0.434295,True
+218,215,8,lichen_bridge,66,0.247647,0.149906,0.604508,2,True,lichen_bridge rope bridge valley year 215 institutions 2,0.433046,True
+219,215,8,orchid_engine,73,0.261176,0.170447,0.60266,2,True,orchid_engine warm engine terrace year 215 institutions 2,0.431797,True
+220,220,8,moss_ward,45,0.220588,0.268824,0.593806,2,True,moss_ward wet temperate ward year 220 institutions 2,0.425816,True
+221,220,8,glass_harbor,52,0.234118,0.109365,0.608157,2,True,glass_harbor fog harbor year 220 institutions 2,0.435511,True
+222,220,8,cinder_garden,59,0.247647,0.129906,0.606308,2,True,cinder_garden ash garden year 220 institutions 2,0.434262,True
+223,220,8,lichen_bridge,66,0.261176,0.150447,0.60446,2,True,lichen_bridge rope bridge valley year 220 institutions 2,0.433013,True
+224,220,8,orchid_engine,73,0.274706,0.170988,0.602611,2,True,orchid_engine warm engine terrace year 220 institutions 2,0.431764,True
+225,225,9,moss_ward,45,0.234118,0.109365,0.614157,2,True,moss_ward wet temperate ward year 225 institutions 2,0.442231,True
+226,225,9,glass_harbor,52,0.247647,0.129906,0.612308,2,True,glass_harbor fog harbor year 225 institutions 2,0.440982,True
+227,225,9,cinder_garden,60,0.261176,0.150447,0.61046,2,True,cinder_garden ash garden year 225 institutions 2,0.439733,True
+228,225,9,lichen_bridge,67,0.274706,0.170988,0.608611,2,True,lichen_bridge rope bridge valley year 225 institutions 2,0.438484,True
+229,225,9,orchid_engine,74,0.288235,0.191529,0.606762,2,True,orchid_engine warm engine terrace year 225 institutions 2,0.437235,True
+230,230,9,moss_ward,46,0.247647,0.109906,0.614108,2,True,moss_ward wet temperate ward year 230 institutions 2,0.442198,True
+231,230,9,glass_harbor,53,0.261176,0.130447,0.61226,2,True,glass_harbor fog harbor year 230 institutions 2,0.440949,True
+232,230,9,cinder_garden,60,0.274706,0.150988,0.610411,2,True,cinder_garden ash garden year 230 institutions 2,0.4397,True
+233,230,9,lichen_bridge,67,0.288235,0.171529,0.608562,2,True,lichen_bridge rope bridge valley year 230 institutions 2,0.438451,True
+234,230,9,orchid_engine,74,0.301765,0.192071,0.606714,2,True,orchid_engine warm engine terrace year 230 institutions 2,0.437202,True
+235,235,9,moss_ward,46,0.261176,0.110447,0.61406,2,True,moss_ward wet temperate ward year 235 institutions 2,0.442165,True
+236,235,9,glass_harbor,53,0.274706,0.130988,0.612211,2,True,glass_harbor fog harbor year 235 institutions 2,0.440916,True
+237,235,9,cinder_garden,60,0.288235,0.151529,0.610362,2,True,cinder_garden ash garden year 235 institutions 2,0.439667,True
+238,235,9,lichen_bridge,67,0.301765,0.172071,0.608514,2,True,lichen_bridge rope bridge valley year 235 institutions 2,0.438418,True
+239,235,9,orchid_engine,74,0.315294,0.192612,0.606665,2,True,orchid_engine warm engine terrace year 235 institutions 2,0.437169,True
+240,240,9,moss_ward,46,0.274706,0.110988,0.614011,2,True,moss_ward wet temperate ward year 240 institutions 2,0.442132,True
+241,240,9,glass_harbor,53,0.288235,0.131529,0.612162,2,True,glass_harbor fog harbor year 240 institutions 2,0.440883,True
+242,240,9,cinder_garden,60,0.301765,0.152071,0.610314,2,True,cinder_garden ash garden year 240 institutions 2,0.439634,True
+243,240,9,lichen_bridge,67,0.315294,0.172612,0.608465,2,True,lichen_bridge rope bridge valley year 240 institutions 2,0.438385,True
+244,240,9,orchid_engine,74,0.328824,0.193153,0.606616,2,True,orchid_engine warm engine terrace year 240 institutions 2,0.437136,True
+245,245,9,moss_ward,46,0.288235,0.111529,0.613962,2,True,moss_ward wet temperate ward year 245 institutions 2,0.442099,True
+246,245,9,glass_harbor,53,0.301765,0.132071,0.612114,2,True,glass_harbor fog harbor year 245 institutions 2,0.44085,True
+247,245,9,cinder_garden,60,0.315294,0.152612,0.610265,2,True,cinder_garden ash garden year 245 institutions 2,0.439601,True
+248,245,9,lichen_bridge,67,0.328824,0.173153,0.608416,2,True,lichen_bridge rope bridge valley year 245 institutions 2,0.438352,True
+249,245,9,orchid_engine,74,0.342353,0.193694,0.606568,2,True,orchid_engine warm engine terrace year 245 institutions 2,0.437103,True
+250,250,10,moss_ward,46,0.301765,0.132071,0.618114,2,True,moss_ward wet temperate ward year 250 institutions 2,0.44757,True
+251,250,10,glass_harbor,53,0.315294,0.152612,0.616265,2,True,glass_harbor fog harbor year 250 institutions 2,0.446321,True
+252,250,10,cinder_garden,60,0.328824,0.173153,0.614416,2,True,cinder_garden ash garden year 250 institutions 2,0.445072,True
+253,250,10,lichen_bridge,67,0.342353,0.193694,0.612568,2,True,lichen_bridge rope bridge valley year 250 institutions 2,0.443823,True
+254,250,10,orchid_engine,74,0.355882,0.214235,0.610719,2,True,orchid_engine warm engine terrace year 250 institutions 2,0.442574,True
+255,255,10,moss_ward,46,0.315294,0.132612,0.618065,2,True,moss_ward wet temperate ward year 255 institutions 2,0.447537,True
+256,255,10,glass_harbor,53,0.328824,0.153153,0.616216,2,True,glass_harbor fog harbor year 255 institutions 2,0.446288,True
+257,255,10,cinder_garden,60,0.342353,0.173694,0.614368,2,True,cinder_garden ash garden year 255 institutions 2,0.445039,True
+258,255,10,lichen_bridge,67,0.355882,0.194235,0.612519,2,True,lichen_bridge rope bridge valley year 255 institutions 2,0.44379,True
+259,255,10,orchid_engine,74,0.369412,0.214776,0.61067,2,True,orchid_engine warm engine terrace year 255 institutions 2,0.442542,True
+260,260,10,moss_ward,46,0.328824,0.133153,0.618016,2,True,moss_ward wet temperate ward year 260 institutions 2,0.447504,True
+261,260,10,glass_harbor,53,0.342353,0.153694,0.616168,2,True,glass_harbor fog harbor year 260 institutions 2,0.446255,True
+262,260,10,cinder_garden,60,0.355882,0.174235,0.614319,2,True,cinder_garden ash garden year 260 institutions 2,0.445006,True
+263,260,10,lichen_bridge,67,0.369412,0.194776,0.61247,2,True,lichen_bridge rope bridge valley year 260 institutions 2,0.443758,True
+264,260,10,orchid_engine,74,0.382941,0.215318,0.610621,2,True,orchid_engine warm engine terrace year 260 institutions 2,0.442509,True
+265,265,10,moss_ward,46,0.342353,0.133694,0.617968,2,True,moss_ward wet temperate ward year 265 institutions 2,0.447471,True
+266,265,10,glass_harbor,53,0.355882,0.154235,0.616119,2,True,glass_harbor fog harbor year 265 institutions 2,0.446222,True
+267,265,10,cinder_garden,60,0.369412,0.174776,0.61427,2,True,cinder_garden ash garden year 265 institutions 2,0.444974,True
+268,265,10,lichen_bridge,67,0.382941,0.195318,0.612421,2,True,lichen_bridge rope bridge valley year 265 institutions 2,0.443725,True
+269,265,10,orchid_engine,74,0.396471,0.215859,0.610573,2,True,orchid_engine warm engine terrace year 265 institutions 2,0.442476,True
+270,270,10,moss_ward,46,0.355882,0.134235,0.617919,2,True,moss_ward wet temperate ward year 270 institutions 2,0.447438,True
+271,270,10,glass_harbor,53,0.369412,0.154776,0.61607,2,True,glass_harbor fog harbor year 270 institutions 2,0.44619,True
+272,270,10,cinder_garden,60,0.382941,0.175318,0.614221,2,True,cinder_garden ash garden year 270 institutions 2,0.444941,True
+273,270,10,lichen_bridge,67,0.396471,0.195859,0.612373,2,True,lichen_bridge rope bridge valley year 270 institutions 2,0.443692,True
+274,270,10,orchid_engine,74,0.18,0.2072,0.611352,2,True,orchid_engine warm engine terrace year 270 institutions 2,0.443002,True
+275,275,11,moss_ward,46,0.369412,0.154776,0.62207,3,True,moss_ward wet temperate ward year 275 institutions 3,0.45291,True
+276,275,11,glass_harbor,53,0.382941,0.175318,0.620221,3,True,glass_harbor fog harbor year 275 institutions 3,0.451661,True
+277,275,11,cinder_garden,60,0.396471,0.195859,0.618373,2,True,cinder_garden ash garden year 275 institutions 2,0.450412,True
+278,275,11,lichen_bridge,67,0.18,0.2072,0.617352,2,True,lichen_bridge rope bridge valley year 275 institutions 2,0.449722,True
+279,275,11,orchid_engine,74,0.193529,0.227741,0.615503,2,True,orchid_engine warm engine terrace year 275 institutions 2,0.448473,True
+280,280,11,moss_ward,47,0.382941,0.155318,0.622021,3,True,moss_ward wet temperate ward year 280 institutions 3,0.452877,True
+281,280,11,glass_harbor,54,0.396471,0.175859,0.620173,3,True,glass_harbor fog harbor year 280 institutions 3,0.451628,True
+282,280,11,cinder_garden,61,0.18,0.1872,0.619152,2,True,cinder_garden ash garden year 280 institutions 2,0.450938,True
+283,280,11,lichen_bridge,68,0.193529,0.207741,0.617303,2,True,lichen_bridge rope bridge valley year 280 institutions 2,0.449689,True
+284,280,11,orchid_engine,75,0.207059,0.228282,0.615455,2,True,orchid_engine warm engine terrace year 280 institutions 2,0.44844,True
+285,285,11,moss_ward,47,0.396471,0.155859,0.621973,3,True,moss_ward wet temperate ward year 285 institutions 3,0.452844,True
+286,285,11,glass_harbor,54,0.18,0.1672,0.620952,3,True,glass_harbor fog harbor year 285 institutions 3,0.452154,True
+287,285,11,cinder_garden,61,0.193529,0.187741,0.619103,2,True,cinder_garden ash garden year 285 institutions 2,0.450905,True
+288,285,11,lichen_bridge,68,0.207059,0.208282,0.617255,2,True,lichen_bridge rope bridge valley year 285 institutions 2,0.449656,True
+289,285,11,orchid_engine,75,0.220588,0.228824,0.615406,2,True,orchid_engine warm engine terrace year 285 institutions 2,0.448408,True
+290,290,11,moss_ward,47,0.18,0.1472,0.622752,3,True,moss_ward wet temperate ward year 290 institutions 3,0.45337,True
+291,290,11,glass_harbor,54,0.193529,0.167741,0.620903,3,True,glass_harbor fog harbor year 290 institutions 3,0.452121,True
+292,290,11,cinder_garden,61,0.207059,0.188282,0.619055,2,True,cinder_garden ash garden year 290 institutions 2,0.450872,True
+293,290,11,lichen_bridge,68,0.220588,0.208824,0.617206,2,True,lichen_bridge rope bridge valley year 290 institutions 2,0.449624,True
+294,290,11,orchid_engine,75,0.234118,0.229365,0.615357,2,True,orchid_engine warm engine terrace year 290 institutions 2,0.448375,True
+295,295,11,moss_ward,47,0.193529,0.147741,0.622703,3,True,moss_ward wet temperate ward year 295 institutions 3,0.453337,True
+296,295,11,glass_harbor,54,0.207059,0.168282,0.620855,3,True,glass_harbor fog harbor year 295 institutions 3,0.452088,True
+297,295,11,cinder_garden,61,0.220588,0.188824,0.619006,2,True,cinder_garden ash garden year 295 institutions 2,0.45084,True
+298,295,11,lichen_bridge,68,0.234118,0.209365,0.617157,2,True,lichen_bridge rope bridge valley year 295 institutions 2,0.449591,True
+299,295,11,orchid_engine,75,0.247647,0.229906,0.615308,2,True,orchid_engine warm engine terrace year 295 institutions 2,0.448342,True
+300,300,12,moss_ward,47,0.207059,0.168282,0.626855,3,True,moss_ward wet temperate ward year 300 institutions 3,0.458808,True
+301,300,12,glass_harbor,54,0.220588,0.188824,0.625006,3,True,glass_harbor fog harbor year 300 institutions 3,0.45756,True
+302,300,12,cinder_garden,61,0.234118,0.209365,0.623157,3,True,cinder_garden ash garden year 300 institutions 3,0.456311,True
+303,300,12,lichen_bridge,68,0.247647,0.229906,0.621308,3,True,lichen_bridge rope bridge valley year 300 institutions 3,0.455062,True
+304,300,12,orchid_engine,75,0.261176,0.250447,0.61946,2,True,orchid_engine warm engine terrace year 300 institutions 2,0.453813,True
+305,305,12,moss_ward,47,0.220588,0.168824,0.626806,3,True,moss_ward wet temperate ward year 305 institutions 3,0.458776,True
+306,305,12,glass_harbor,54,0.234118,0.189365,0.624957,3,True,glass_harbor fog harbor year 305 institutions 3,0.457527,True
+307,305,12,cinder_garden,61,0.247647,0.209906,0.623108,3,True,cinder_garden ash garden year 305 institutions 3,0.456278,True
+308,305,12,lichen_bridge,68,0.261176,0.230447,0.62126,3,True,lichen_bridge rope bridge valley year 305 institutions 3,0.455029,True
+309,305,12,orchid_engine,75,0.274706,0.250988,0.619411,2,True,orchid_engine warm engine terrace year 305 institutions 2,0.45378,True
+310,310,12,moss_ward,47,0.234118,0.169365,0.626757,3,True,moss_ward wet temperate ward year 310 institutions 3,0.458743,True
+311,310,12,glass_harbor,54,0.247647,0.189906,0.624908,3,True,glass_harbor fog harbor year 310 institutions 3,0.457494,True
+312,310,12,cinder_garden,61,0.261176,0.210447,0.62306,3,True,cinder_garden ash garden year 310 institutions 3,0.456245,True
+313,310,12,lichen_bridge,68,0.274706,0.230988,0.621211,3,True,lichen_bridge rope bridge valley year 310 institutions 3,0.454996,True
+314,310,12,orchid_engine,75,0.288235,0.251529,0.619362,2,True,orchid_engine warm engine terrace year 310 institutions 2,0.453747,True
+315,315,12,moss_ward,47,0.247647,0.169906,0.626708,3,True,moss_ward wet temperate ward year 315 institutions 3,0.45871,True
+316,315,12,glass_harbor,54,0.261176,0.190447,0.62486,3,True,glass_harbor fog harbor year 315 institutions 3,0.457461,True
+317,315,12,cinder_garden,61,0.274706,0.210988,0.623011,3,True,cinder_garden ash garden year 315 institutions 3,0.456212,True
+318,315,12,lichen_bridge,68,0.288235,0.231529,0.621162,3,True,lichen_bridge rope bridge valley year 315 institutions 3,0.454963,True
+319,315,12,orchid_engine,75,0.301765,0.252071,0.619314,2,True,orchid_engine warm engine terrace year 315 institutions 2,0.453714,True
+320,320,12,moss_ward,47,0.261176,0.170447,0.62666,3,True,moss_ward wet temperate ward year 320 institutions 3,0.458677,True
+321,320,12,glass_harbor,54,0.274706,0.190988,0.624811,3,True,glass_harbor fog harbor year 320 institutions 3,0.457428,True
+322,320,12,cinder_garden,61,0.288235,0.211529,0.622962,3,True,cinder_garden ash garden year 320 institutions 3,0.456179,True
+323,320,12,lichen_bridge,68,0.301765,0.232071,0.621114,3,True,lichen_bridge rope bridge valley year 320 institutions 3,0.45493,True
+324,320,12,orchid_engine,75,0.315294,0.252612,0.619265,2,True,orchid_engine warm engine terrace year 320 institutions 2,0.453681,True
+325,325,13,moss_ward,47,0.274706,0.190988,0.630811,3,True,moss_ward wet temperate ward year 325 institutions 3,0.464148,True
+326,325,13,glass_harbor,54,0.288235,0.211529,0.628962,3,True,glass_harbor fog harbor year 325 institutions 3,0.462899,True
+327,325,13,cinder_garden,61,0.301765,0.232071,0.627114,3,True,cinder_garden ash garden year 325 institutions 3,0.46165,True
+328,325,13,lichen_bridge,68,0.315294,0.252612,0.625265,3,True,lichen_bridge rope bridge valley year 325 institutions 3,0.460401,True
+329,325,13,orchid_engine,75,0.328824,0.273153,0.623416,3,True,orchid_engine warm engine terrace year 325 institutions 3,0.459152,True
+330,330,13,moss_ward,48,0.288235,0.191529,0.630762,3,True,moss_ward wet temperate ward year 330 institutions 3,0.464115,True
+331,330,13,glass_harbor,55,0.301765,0.212071,0.628914,3,True,glass_harbor fog harbor year 330 institutions 3,0.462866,True
+332,330,13,cinder_garden,62,0.315294,0.232612,0.627065,3,True,cinder_garden ash garden year 330 institutions 3,0.461617,True
+333,330,13,lichen_bridge,68,0.328824,0.253153,0.625216,3,True,lichen_bridge rope bridge valley year 330 institutions 3,0.460368,True
+334,330,13,orchid_engine,75,0.342353,0.273694,0.623368,3,True,orchid_engine warm engine terrace year 330 institutions 3,0.459119,True
+335,335,13,moss_ward,48,0.301765,0.192071,0.630714,3,True,moss_ward wet temperate ward year 335 institutions 3,0.464082,True
+336,335,13,glass_harbor,55,0.315294,0.212612,0.628865,3,True,glass_harbor fog harbor year 335 institutions 3,0.462833,True
+337,335,13,cinder_garden,62,0.328824,0.233153,0.627016,3,True,cinder_garden ash garden year 335 institutions 3,0.461584,True
+338,335,13,lichen_bridge,69,0.342353,0.253694,0.625168,3,True,lichen_bridge rope bridge valley year 335 institutions 3,0.460335,True
+339,335,13,orchid_engine,76,0.355882,0.274235,0.623319,3,True,orchid_engine warm engine terrace year 335 institutions 3,0.459086,True
+340,340,13,moss_ward,48,0.315294,0.192612,0.630665,3,True,moss_ward wet temperate ward year 340 institutions 3,0.464049,True
+341,340,13,glass_harbor,55,0.328824,0.213153,0.628816,3,True,glass_harbor fog harbor year 340 institutions 3,0.4628,True
+342,340,13,cinder_garden,62,0.342353,0.233694,0.626968,3,True,cinder_garden ash garden year 340 institutions 3,0.461551,True
+343,340,13,lichen_bridge,69,0.355882,0.254235,0.625119,3,True,lichen_bridge rope bridge valley year 340 institutions 3,0.460302,True
+344,340,13,orchid_engine,76,0.369412,0.274776,0.62327,3,True,orchid_engine warm engine terrace year 340 institutions 3,0.459054,True
+345,345,13,moss_ward,48,0.328824,0.193153,0.630616,3,True,moss_ward wet temperate ward year 345 institutions 3,0.464016,True
+346,345,13,glass_harbor,55,0.342353,0.213694,0.628768,3,True,glass_harbor fog harbor year 345 institutions 3,0.462767,True
+347,345,13,cinder_garden,62,0.355882,0.234235,0.626919,3,True,cinder_garden ash garden year 345 institutions 3,0.461518,True
+348,345,13,lichen_bridge,69,0.369412,0.254776,0.62507,3,True,lichen_bridge rope bridge valley year 345 institutions 3,0.46027,True
+349,345,13,orchid_engine,76,0.382941,0.275318,0.623221,3,True,orchid_engine warm engine terrace year 345 institutions 3,0.459021,True
+350,350,14,moss_ward,48,0.392353,0.215694,0.634588,3,True,moss_ward wet temperate ward year 350 institutions 3,0.469366,True
+351,350,14,glass_harbor,55,0.405882,0.236235,0.632739,3,True,glass_harbor fog harbor year 350 institutions 3,0.468117,True
+352,350,14,cinder_garden,62,0.419412,0.256776,0.63089,3,True,cinder_garden ash garden year 350 institutions 3,0.466868,True
+353,350,14,lichen_bridge,69,0.432941,0.277318,0.629041,3,True,lichen_bridge rope bridge valley year 350 institutions 3,0.465619,True
+354,350,14,orchid_engine,76,0.446471,0.117859,0.643393,3,True,orchid_engine warm engine terrace year 350 institutions 3,0.475314,True
+355,355,14,moss_ward,48,0.405882,0.216235,0.634539,3,True,moss_ward wet temperate ward year 355 institutions 3,0.469333,True
+356,355,14,glass_harbor,55,0.419412,0.236776,0.63269,3,True,glass_harbor fog harbor year 355 institutions 3,0.468084,True
+357,355,14,cinder_garden,62,0.432941,0.257318,0.630841,3,True,cinder_garden ash garden year 355 institutions 3,0.466835,True
+358,355,14,lichen_bridge,69,0.446471,0.277859,0.628993,3,True,lichen_bridge rope bridge valley year 355 institutions 3,0.465586,True
+359,355,14,orchid_engine,76,0.23,0.1092,0.644172,3,True,orchid_engine warm engine terrace year 355 institutions 3,0.475841,True
+360,360,14,moss_ward,48,0.419412,0.216776,0.63449,3,True,moss_ward wet temperate ward year 360 institutions 3,0.4693,True
+361,360,14,glass_harbor,55,0.432941,0.237318,0.632641,3,True,glass_harbor fog harbor year 360 institutions 3,0.468051,True
+362,360,14,cinder_garden,62,0.446471,0.257859,0.630793,3,True,cinder_garden ash garden year 360 institutions 3,0.466802,True
+363,360,14,lichen_bridge,69,0.23,0.2692,0.629772,3,True,lichen_bridge rope bridge valley year 360 institutions 3,0.466113,True
+364,360,14,orchid_engine,76,0.243529,0.109741,0.644123,3,True,orchid_engine warm engine terrace year 360 institutions 3,0.475808,True
+365,365,14,moss_ward,48,0.432941,0.217318,0.634441,3,True,moss_ward wet temperate ward year 365 institutions 3,0.469267,True
+366,365,14,glass_harbor,55,0.446471,0.237859,0.632593,3,True,glass_harbor fog harbor year 365 institutions 3,0.468018,True
+367,365,14,cinder_garden,62,0.23,0.2492,0.631572,3,True,cinder_garden ash garden year 365 institutions 3,0.467329,True
+368,365,14,lichen_bridge,69,0.243529,0.269741,0.629723,3,True,lichen_bridge rope bridge valley year 365 institutions 3,0.46608,True
+369,365,14,orchid_engine,76,0.257059,0.110282,0.644075,3,True,orchid_engine warm engine terrace year 365 institutions 3,0.475775,True
+370,370,14,moss_ward,48,0.446471,0.217859,0.634393,3,True,moss_ward wet temperate ward year 370 institutions 3,0.469234,True
+371,370,14,glass_harbor,55,0.23,0.2292,0.633372,3,True,glass_harbor fog harbor year 370 institutions 3,0.468545,True
+372,370,14,cinder_garden,62,0.243529,0.249741,0.631523,3,True,cinder_garden ash garden year 370 institutions 3,0.467296,True
+373,370,14,lichen_bridge,69,0.257059,0.270282,0.629675,3,True,lichen_bridge rope bridge valley year 370 institutions 3,0.466047,True
+374,370,14,orchid_engine,76,0.270588,0.110824,0.644026,3,True,orchid_engine warm engine terrace year 370 institutions 3,0.475742,True
+375,375,15,moss_ward,48,0.18,0.2272,0.639552,3,True,moss_ward wet temperate ward year 375 institutions 3,0.475386,True
+376,375,15,glass_harbor,55,0.193529,0.247741,0.637703,3,True,glass_harbor fog harbor year 375 institutions 3,0.474137,True
+377,375,15,cinder_garden,62,0.207059,0.268282,0.635855,3,True,cinder_garden ash garden year 375 institutions 3,0.472888,True
+378,375,15,lichen_bridge,69,0.220588,0.108824,0.650206,3,True,lichen_bridge rope bridge valley year 375 institutions 3,0.482584,True
+379,375,15,orchid_engine,76,0.234118,0.129365,0.648357,3,True,orchid_engine warm engine terrace year 375 institutions 3,0.481335,True
+380,380,15,moss_ward,48,0.193529,0.227741,0.639503,3,True,moss_ward wet temperate ward year 380 institutions 3,0.475353,True
+381,380,15,glass_harbor,55,0.207059,0.248282,0.637655,3,True,glass_harbor fog harbor year 380 institutions 3,0.474104,True
+382,380,15,cinder_garden,62,0.220588,0.268824,0.635806,3,True,cinder_garden ash garden year 380 institutions 3,0.472856,True
+383,380,15,lichen_bridge,69,0.234118,0.109365,0.650157,3,True,lichen_bridge rope bridge valley year 380 institutions 3,0.482551,True
+384,380,15,orchid_engine,76,0.247647,0.129906,0.648308,3,True,orchid_engine warm engine terrace year 380 institutions 3,0.481302,True
+385,385,15,moss_ward,49,0.207059,0.228282,0.639455,3,True,moss_ward wet temperate ward year 385 institutions 3,0.47532,True
+386,385,15,glass_harbor,56,0.220588,0.248824,0.637606,3,True,glass_harbor fog harbor year 385 institutions 3,0.474072,True
+387,385,15,cinder_garden,63,0.234118,0.269365,0.635757,3,True,cinder_garden ash garden year 385 institutions 3,0.472823,True
+388,385,15,lichen_bridge,70,0.247647,0.109906,0.650108,3,True,lichen_bridge rope bridge valley year 385 institutions 3,0.482518,True
+389,385,15,orchid_engine,77,0.261176,0.130447,0.64826,3,True,orchid_engine warm engine terrace year 385 institutions 3,0.481269,True
+390,390,15,moss_ward,49,0.220588,0.228824,0.639406,3,True,moss_ward wet temperate ward year 390 institutions 3,0.475288,True
+391,390,15,glass_harbor,56,0.234118,0.249365,0.637557,3,True,glass_harbor fog harbor year 390 institutions 3,0.474039,True
+392,390,15,cinder_garden,63,0.247647,0.269906,0.635708,3,True,cinder_garden ash garden year 390 institutions 3,0.47279,True
+393,390,15,lichen_bridge,70,0.261176,0.110447,0.65006,3,True,lichen_bridge rope bridge valley year 390 institutions 3,0.482485,True
+394,390,15,orchid_engine,77,0.274706,0.130988,0.648211,3,True,orchid_engine warm engine terrace year 390 institutions 3,0.481236,True
+395,395,15,moss_ward,49,0.234118,0.229365,0.639357,3,True,moss_ward wet temperate ward year 395 institutions 3,0.475255,True
+396,395,15,glass_harbor,56,0.247647,0.249906,0.637508,3,True,glass_harbor fog harbor year 395 institutions 3,0.474006,True
+397,395,15,cinder_garden,63,0.261176,0.270447,0.63566,3,True,cinder_garden ash garden year 395 institutions 3,0.472757,True
+398,395,15,lichen_bridge,70,0.274706,0.110988,0.650011,3,True,lichen_bridge rope bridge valley year 395 institutions 3,0.482452,True
+399,395,15,orchid_engine,77,0.288235,0.131529,0.648162,3,True,orchid_engine warm engine terrace year 395 institutions 3,0.481203,True
+400,400,16,moss_ward,49,0.247647,0.249906,0.643508,4,True,moss_ward wet temperate ward year 400 institutions 4,0.480726,True
+401,400,16,glass_harbor,56,0.261176,0.270447,0.64166,4,True,glass_harbor fog harbor year 400 institutions 4,0.479477,True
+402,400,16,cinder_garden,63,0.274706,0.110988,0.656011,4,True,cinder_garden ash garden year 400 institutions 4,0.489172,True
+403,400,16,lichen_bridge,70,0.288235,0.131529,0.654162,4,True,lichen_bridge rope bridge valley year 400 institutions 4,0.487923,True
+404,400,16,orchid_engine,77,0.301765,0.152071,0.652314,4,True,orchid_engine warm engine terrace year 400 institutions 4,0.486674,True
+405,405,16,moss_ward,49,0.261176,0.250447,0.64346,4,True,moss_ward wet temperate ward year 405 institutions 4,0.480693,True
+406,405,16,glass_harbor,56,0.274706,0.270988,0.641611,4,True,glass_harbor fog harbor year 405 institutions 4,0.479444,True
+407,405,16,cinder_garden,63,0.288235,0.111529,0.655962,4,True,cinder_garden ash garden year 405 institutions 4,0.489139,True
+408,405,16,lichen_bridge,70,0.301765,0.132071,0.654114,4,True,lichen_bridge rope bridge valley year 405 institutions 4,0.48789,True
+409,405,16,orchid_engine,77,0.315294,0.152612,0.652265,4,True,orchid_engine warm engine terrace year 405 institutions 4,0.486641,True
+410,410,16,moss_ward,49,0.274706,0.250988,0.643411,4,True,moss_ward wet temperate ward year 410 institutions 4,0.48066,True
+411,410,16,glass_harbor,56,0.288235,0.271529,0.641562,4,True,glass_harbor fog harbor year 410 institutions 4,0.479411,True
+412,410,16,cinder_garden,63,0.301765,0.112071,0.655914,4,True,cinder_garden ash garden year 410 institutions 4,0.489106,True
+413,410,16,lichen_bridge,70,0.315294,0.132612,0.654065,4,True,lichen_bridge rope bridge valley year 410 institutions 4,0.487857,True
+414,410,16,orchid_engine,77,0.328824,0.153153,0.652216,4,True,orchid_engine warm engine terrace year 410 institutions 4,0.486608,True
+415,415,16,moss_ward,49,0.288235,0.251529,0.643362,4,True,moss_ward wet temperate ward year 415 institutions 4,0.480627,True
+416,415,16,glass_harbor,56,0.301765,0.272071,0.641514,4,True,glass_harbor fog harbor year 415 institutions 4,0.479378,True
+417,415,16,cinder_garden,63,0.315294,0.112612,0.655865,4,True,cinder_garden ash garden year 415 institutions 4,0.489073,True
+418,415,16,lichen_bridge,70,0.328824,0.133153,0.654016,4,True,lichen_bridge rope bridge valley year 415 institutions 4,0.487824,True
+419,415,16,orchid_engine,77,0.342353,0.153694,0.652168,4,True,orchid_engine warm engine terrace year 415 institutions 4,0.486575,True
+420,420,16,moss_ward,49,0.301765,0.252071,0.643314,4,True,moss_ward wet temperate ward year 420 institutions 4,0.480594,True
+421,420,16,glass_harbor,56,0.315294,0.272612,0.641465,4,True,glass_harbor fog harbor year 420 institutions 4,0.479345,True
+422,420,16,cinder_garden,63,0.328824,0.113153,0.655816,4,True,cinder_garden ash garden year 420 institutions 4,0.48904,True
+423,420,16,lichen_bridge,70,0.342353,0.133694,0.653968,4,True,lichen_bridge rope bridge valley year 420 institutions 4,0.487791,True
+424,420,16,orchid_engine,77,0.355882,0.154235,0.652119,4,True,orchid_engine warm engine terrace year 420 institutions 4,0.486542,True
+425,425,17,moss_ward,49,0.315294,0.272612,0.647465,4,True,moss_ward wet temperate ward year 425 institutions 4,0.486065,True
+426,425,17,glass_harbor,56,0.328824,0.113153,0.661816,4,True,glass_harbor fog harbor year 425 institutions 4,0.49576,True
+427,425,17,cinder_garden,63,0.342353,0.133694,0.659968,4,True,cinder_garden ash garden year 425 institutions 4,0.494511,True
+428,425,17,lichen_bridge,70,0.355882,0.154235,0.658119,4,True,lichen_bridge rope bridge valley year 425 institutions 4,0.493262,True
+429,425,17,orchid_engine,77,0.369412,0.174776,0.65627,4,True,orchid_engine warm engine terrace year 425 institutions 4,0.492014,True
+430,430,17,moss_ward,49,0.328824,0.273153,0.647416,4,True,moss_ward wet temperate ward year 430 institutions 4,0.486032,True
+431,430,17,glass_harbor,56,0.342353,0.113694,0.661768,4,True,glass_harbor fog harbor year 430 institutions 4,0.495727,True
+432,430,17,cinder_garden,63,0.355882,0.134235,0.659919,4,True,cinder_garden ash garden year 430 institutions 4,0.494478,True
+433,430,17,lichen_bridge,70,0.369412,0.154776,0.65807,4,True,lichen_bridge rope bridge valley year 430 institutions 4,0.49323,True
+434,430,17,orchid_engine,77,0.382941,0.175318,0.656221,4,True,orchid_engine warm engine terrace year 430 institutions 4,0.491981,True
+435,435,17,moss_ward,50,0.342353,0.273694,0.647368,4,True,moss_ward wet temperate ward year 435 institutions 4,0.485999,True
+436,435,17,glass_harbor,57,0.355882,0.114235,0.661719,4,True,glass_harbor fog harbor year 435 institutions 4,0.495694,True
+437,435,17,cinder_garden,64,0.369412,0.134776,0.65987,4,True,cinder_garden ash garden year 435 institutions 4,0.494446,True
+438,435,17,lichen_bridge,71,0.382941,0.155318,0.658021,4,True,lichen_bridge rope bridge valley year 435 institutions 4,0.493197,True
+439,435,17,orchid_engine,78,0.396471,0.175859,0.656173,4,True,orchid_engine warm engine terrace year 435 institutions 4,0.491948,True
+440,440,17,moss_ward,50,0.355882,0.274235,0.647319,4,True,moss_ward wet temperate ward year 440 institutions 4,0.485966,True
+441,440,17,glass_harbor,57,0.369412,0.114776,0.66167,4,True,glass_harbor fog harbor year 440 institutions 4,0.495662,True
+442,440,17,cinder_garden,64,0.382941,0.135318,0.659821,4,True,cinder_garden ash garden year 440 institutions 4,0.494413,True
+443,440,17,lichen_bridge,71,0.396471,0.155859,0.657973,4,True,lichen_bridge rope bridge valley year 440 institutions 4,0.493164,True
+444,440,17,orchid_engine,78,0.18,0.1672,0.656952,4,True,orchid_engine warm engine terrace year 440 institutions 4,0.492474,True
+445,445,17,moss_ward,50,0.369412,0.274776,0.64727,4,True,moss_ward wet temperate ward year 445 institutions 4,0.485934,True
+446,445,17,glass_harbor,57,0.382941,0.115318,0.661621,4,True,glass_harbor fog harbor year 445 institutions 4,0.495629,True
+447,445,17,cinder_garden,64,0.396471,0.135859,0.659773,4,True,cinder_garden ash garden year 445 institutions 4,0.49438,True
+448,445,17,lichen_bridge,71,0.18,0.1472,0.658752,4,True,lichen_bridge rope bridge valley year 445 institutions 4,0.49369,True
+449,445,17,orchid_engine,78,0.193529,0.167741,0.656903,4,True,orchid_engine warm engine terrace year 445 institutions 4,0.492441,True
+450,450,18,moss_ward,50,0.382941,0.115318,0.667621,4,True,moss_ward wet temperate ward year 450 institutions 4,0.502349,True
+451,450,18,glass_harbor,57,0.396471,0.135859,0.665773,4,True,glass_harbor fog harbor year 450 institutions 4,0.5011,True
+452,450,18,cinder_garden,64,0.18,0.1472,0.664752,4,True,cinder_garden ash garden year 450 institutions 4,0.50041,True
+453,450,18,lichen_bridge,71,0.193529,0.167741,0.662903,4,True,lichen_bridge rope bridge valley year 450 institutions 4,0.499161,True
+454,450,18,orchid_engine,78,0.207059,0.188282,0.661055,4,True,orchid_engine warm engine terrace year 450 institutions 4,0.497912,True
+455,455,18,moss_ward,50,0.396471,0.115859,0.667573,4,True,moss_ward wet temperate ward year 455 institutions 4,0.502316,True
+456,455,18,glass_harbor,57,0.18,0.1272,0.666552,4,True,glass_harbor fog harbor year 455 institutions 4,0.501626,True
+457,455,18,cinder_garden,64,0.193529,0.147741,0.664703,4,True,cinder_garden ash garden year 455 institutions 4,0.500377,True
+458,455,18,lichen_bridge,71,0.207059,0.168282,0.662855,4,True,lichen_bridge rope bridge valley year 455 institutions 4,0.499128,True
+459,455,18,orchid_engine,78,0.220588,0.188824,0.661006,4,True,orchid_engine warm engine terrace year 455 institutions 4,0.49788,True
+460,460,18,moss_ward,50,0.18,0.1072,0.668352,4,True,moss_ward wet temperate ward year 460 institutions 4,0.502842,True
+461,460,18,glass_harbor,57,0.193529,0.127741,0.666503,4,True,glass_harbor fog harbor year 460 institutions 4,0.501593,True
+462,460,18,cinder_garden,64,0.207059,0.148282,0.664655,4,True,cinder_garden ash garden year 460 institutions 4,0.500344,True
+463,460,18,lichen_bridge,71,0.220588,0.168824,0.662806,4,True,lichen_bridge rope bridge valley year 460 institutions 4,0.499096,True
+464,460,18,orchid_engine,78,0.234118,0.189365,0.660957,4,True,orchid_engine warm engine terrace year 460 institutions 4,0.497847,True
+465,465,18,moss_ward,50,0.193529,0.107741,0.668303,4,True,moss_ward wet temperate ward year 465 institutions 4,0.502809,True
+466,465,18,glass_harbor,57,0.207059,0.128282,0.666455,4,True,glass_harbor fog harbor year 465 institutions 4,0.50156,True
+467,465,18,cinder_garden,64,0.220588,0.148824,0.664606,4,True,cinder_garden ash garden year 465 institutions 4,0.500312,True
+468,465,18,lichen_bridge,71,0.234118,0.169365,0.662757,4,True,lichen_bridge rope bridge valley year 465 institutions 4,0.499063,True
+469,465,18,orchid_engine,78,0.247647,0.189906,0.660908,4,True,orchid_engine warm engine terrace year 465 institutions 4,0.497814,True
+470,470,18,moss_ward,50,0.207059,0.108282,0.668255,4,True,moss_ward wet temperate ward year 470 institutions 4,0.502776,True
+471,470,18,glass_harbor,57,0.220588,0.128824,0.666406,4,True,glass_harbor fog harbor year 470 institutions 4,0.501528,True
+472,470,18,cinder_garden,64,0.234118,0.149365,0.664557,4,True,cinder_garden ash garden year 470 institutions 4,0.500279,True
+473,470,18,lichen_bridge,71,0.247647,0.169906,0.662708,4,True,lichen_bridge rope bridge valley year 470 institutions 4,0.49903,True
+474,470,18,orchid_engine,78,0.261176,0.190447,0.66086,4,True,orchid_engine warm engine terrace year 470 institutions 4,0.497781,True
+475,475,19,moss_ward,50,0.220588,0.128824,0.672406,4,True,moss_ward wet temperate ward year 475 institutions 4,0.508248,True
+476,475,19,glass_harbor,57,0.234118,0.149365,0.670557,4,True,glass_harbor fog harbor year 475 institutions 4,0.506999,True
+477,475,19,cinder_garden,64,0.247647,0.169906,0.668708,4,True,cinder_garden ash garden year 475 institutions 4,0.50575,True
+478,475,19,lichen_bridge,71,0.261176,0.190447,0.66686,4,True,lichen_bridge rope bridge valley year 475 institutions 4,0.504501,True
+479,475,19,orchid_engine,78,0.274706,0.210988,0.665011,4,True,orchid_engine warm engine terrace year 475 institutions 4,0.503252,True
+480,480,19,moss_ward,50,0.234118,0.129365,0.672357,4,True,moss_ward wet temperate ward year 480 institutions 4,0.508215,True
+481,480,19,glass_harbor,58,0.247647,0.149906,0.670508,4,True,glass_harbor fog harbor year 480 institutions 4,0.506966,True
+482,480,19,cinder_garden,65,0.261176,0.170447,0.66866,4,True,cinder_garden ash garden year 480 institutions 4,0.505717,True
+483,480,19,lichen_bridge,72,0.274706,0.190988,0.666811,4,True,lichen_bridge rope bridge valley year 480 institutions 4,0.504468,True
+484,480,19,orchid_engine,79,0.288235,0.211529,0.664962,4,True,orchid_engine warm engine terrace year 480 institutions 4,0.503219,True
+485,485,19,moss_ward,51,0.247647,0.129906,0.672308,4,True,moss_ward wet temperate ward year 485 institutions 4,0.508182,True
+486,485,19,glass_harbor,58,0.261176,0.150447,0.67046,4,True,glass_harbor fog harbor year 485 institutions 4,0.506933,True
+487,485,19,cinder_garden,65,0.274706,0.170988,0.668611,4,True,cinder_garden ash garden year 485 institutions 4,0.505684,True
+488,485,19,lichen_bridge,72,0.288235,0.191529,0.666762,4,True,lichen_bridge rope bridge valley year 485 institutions 4,0.504435,True
+489,485,19,orchid_engine,79,0.301765,0.212071,0.664914,4,True,orchid_engine warm engine terrace year 485 institutions 4,0.503186,True
+490,490,19,moss_ward,51,0.261176,0.130447,0.67226,4,True,moss_ward wet temperate ward year 490 institutions 4,0.508149,True
+491,490,19,glass_harbor,58,0.274706,0.150988,0.670411,4,True,glass_harbor fog harbor year 490 institutions 4,0.5069,True
+492,490,19,cinder_garden,65,0.288235,0.171529,0.668562,4,True,cinder_garden ash garden year 490 institutions 4,0.505651,True
+493,490,19,lichen_bridge,72,0.301765,0.192071,0.666714,4,True,lichen_bridge rope bridge valley year 490 institutions 4,0.504402,True
+494,490,19,orchid_engine,79,0.315294,0.212612,0.664865,4,True,orchid_engine warm engine terrace year 490 institutions 4,0.503153,True
+495,495,19,moss_ward,51,0.274706,0.130988,0.672211,4,True,moss_ward wet temperate ward year 495 institutions 4,0.508116,True
+496,495,19,glass_harbor,58,0.288235,0.151529,0.670362,4,True,glass_harbor fog harbor year 495 institutions 4,0.506867,True
+497,495,19,cinder_garden,65,0.301765,0.172071,0.668514,4,True,cinder_garden ash garden year 495 institutions 4,0.505618,True
+498,495,19,lichen_bridge,72,0.315294,0.192612,0.666665,4,True,lichen_bridge rope bridge valley year 495 institutions 4,0.504369,True
+499,495,19,orchid_engine,79,0.328824,0.213153,0.664816,4,True,orchid_engine warm engine terrace year 495 institutions 4,0.50312,True
+500,500,20,moss_ward,51,0.288235,0.151529,0.676362,4,True,moss_ward wet temperate ward year 500 institutions 4,0.513587,True
+501,500,20,glass_harbor,58,0.301765,0.172071,0.674514,4,True,glass_harbor fog harbor year 500 institutions 4,0.512338,True
+502,500,20,cinder_garden,65,0.315294,0.192612,0.672665,4,True,cinder_garden ash garden year 500 institutions 4,0.511089,True
+503,500,20,lichen_bridge,72,0.328824,0.213153,0.670816,4,True,lichen_bridge rope bridge valley year 500 institutions 4,0.50984,True
+504,500,20,orchid_engine,79,0.342353,0.233694,0.668968,4,True,orchid_engine warm engine terrace year 500 institutions 4,0.508591,True
+505,505,20,moss_ward,51,0.301765,0.152071,0.676314,5,True,moss_ward wet temperate ward year 505 institutions 5,0.513554,True
+506,505,20,glass_harbor,58,0.315294,0.172612,0.674465,5,True,glass_harbor fog harbor year 505 institutions 5,0.512305,True
+507,505,20,cinder_garden,65,0.328824,0.193153,0.672616,5,True,cinder_garden ash garden year 505 institutions 5,0.511056,True
+508,505,20,lichen_bridge,72,0.342353,0.213694,0.670768,5,True,lichen_bridge rope bridge valley year 505 institutions 5,0.509807,True
+509,505,20,orchid_engine,79,0.355882,0.234235,0.668919,5,True,orchid_engine warm engine terrace year 505 institutions 5,0.508558,True
+510,510,20,moss_ward,51,0.315294,0.152612,0.676265,5,True,moss_ward wet temperate ward year 510 institutions 5,0.513521,True
+511,510,20,glass_harbor,58,0.328824,0.173153,0.674416,5,True,glass_harbor fog harbor year 510 institutions 5,0.512272,True
+512,510,20,cinder_garden,65,0.342353,0.193694,0.672568,5,True,cinder_garden ash garden year 510 institutions 5,0.511023,True
+513,510,20,lichen_bridge,72,0.355882,0.214235,0.670719,5,True,lichen_bridge rope bridge valley year 510 institutions 5,0.509774,True
+514,510,20,orchid_engine,79,0.369412,0.234776,0.66887,5,True,orchid_engine warm engine terrace year 510 institutions 5,0.508526,True
+515,515,20,moss_ward,51,0.328824,0.153153,0.676216,5,True,moss_ward wet temperate ward year 515 institutions 5,0.513488,True
+516,515,20,glass_harbor,58,0.342353,0.173694,0.674368,5,True,glass_harbor fog harbor year 515 institutions 5,0.512239,True
+517,515,20,cinder_garden,65,0.355882,0.194235,0.672519,5,True,cinder_garden ash garden year 515 institutions 5,0.51099,True
+518,515,20,lichen_bridge,72,0.369412,0.214776,0.67067,5,True,lichen_bridge rope bridge valley year 515 institutions 5,0.509742,True
+519,515,20,orchid_engine,79,0.382941,0.235318,0.668821,5,True,orchid_engine warm engine terrace year 515 institutions 5,0.508493,True
+520,520,20,moss_ward,51,0.342353,0.153694,0.676168,5,True,moss_ward wet temperate ward year 520 institutions 5,0.513455,True
+521,520,20,glass_harbor,58,0.355882,0.174235,0.674319,5,True,glass_harbor fog harbor year 520 institutions 5,0.512206,True
+522,520,20,cinder_garden,65,0.369412,0.194776,0.67247,5,True,cinder_garden ash garden year 520 institutions 5,0.510958,True
+523,520,20,lichen_bridge,72,0.382941,0.215318,0.670621,5,True,lichen_bridge rope bridge valley year 520 institutions 5,0.509709,True
+524,520,20,orchid_engine,79,0.396471,0.235859,0.668773,5,True,orchid_engine warm engine terrace year 520 institutions 5,0.50846,True
+525,525,21,moss_ward,51,0.405882,0.176235,0.680139,5,True,moss_ward wet temperate ward year 525 institutions 5,0.518805,True
+526,525,21,glass_harbor,58,0.419412,0.196776,0.67829,5,True,glass_harbor fog harbor year 525 institutions 5,0.517556,True
+527,525,21,cinder_garden,65,0.432941,0.217318,0.676441,5,True,cinder_garden ash garden year 525 institutions 5,0.516307,True
+528,525,21,lichen_bridge,72,0.446471,0.237859,0.674593,5,True,lichen_bridge rope bridge valley year 525 institutions 5,0.515058,True
+529,525,21,orchid_engine,79,0.23,0.2492,0.673572,5,True,orchid_engine warm engine terrace year 525 institutions 5,0.514369,True
+530,530,21,moss_ward,52,0.419412,0.176776,0.68009,5,True,moss_ward wet temperate ward year 530 institutions 5,0.518772,True
+531,530,21,glass_harbor,59,0.432941,0.197318,0.678241,5,True,glass_harbor fog harbor year 530 institutions 5,0.517523,True
+532,530,21,cinder_garden,66,0.446471,0.217859,0.676393,5,True,cinder_garden ash garden year 530 institutions 5,0.516274,True
+533,530,21,lichen_bridge,73,0.23,0.2292,0.675372,5,True,lichen_bridge rope bridge valley year 530 institutions 5,0.515585,True
+534,530,21,orchid_engine,80,0.243529,0.249741,0.673523,5,True,orchid_engine warm engine terrace year 530 institutions 5,0.514336,True
+535,535,21,moss_ward,52,0.432941,0.177318,0.680041,5,True,moss_ward wet temperate ward year 535 institutions 5,0.518739,True
+536,535,21,glass_harbor,59,0.446471,0.197859,0.678193,5,True,glass_harbor fog harbor year 535 institutions 5,0.51749,True
+537,535,21,cinder_garden,66,0.23,0.2092,0.677172,5,True,cinder_garden ash garden year 535 institutions 5,0.516801,True
+538,535,21,lichen_bridge,73,0.243529,0.229741,0.675323,5,True,lichen_bridge rope bridge valley year 535 institutions 5,0.515552,True
+539,535,21,orchid_engine,80,0.257059,0.250282,0.673475,5,True,orchid_engine warm engine terrace year 535 institutions 5,0.514303,True
+540,540,21,moss_ward,52,0.446471,0.177859,0.679993,5,True,moss_ward wet temperate ward year 540 institutions 5,0.518706,True
+541,540,21,glass_harbor,59,0.23,0.1892,0.678972,5,True,glass_harbor fog harbor year 540 institutions 5,0.518017,True
+542,540,21,cinder_garden,66,0.243529,0.209741,0.677123,5,True,cinder_garden ash garden year 540 institutions 5,0.516768,True
+543,540,21,lichen_bridge,73,0.257059,0.230282,0.675275,5,True,lichen_bridge rope bridge valley year 540 institutions 5,0.515519,True
+544,540,21,orchid_engine,80,0.270588,0.250824,0.673426,5,True,orchid_engine warm engine terrace year 540 institutions 5,0.51427,True
+545,545,21,moss_ward,52,0.23,0.1692,0.680772,5,True,moss_ward wet temperate ward year 545 institutions 5,0.519233,True
+546,545,21,glass_harbor,59,0.243529,0.189741,0.678923,5,True,glass_harbor fog harbor year 545 institutions 5,0.517984,True
+547,545,21,cinder_garden,66,0.257059,0.210282,0.677075,5,True,cinder_garden ash garden year 545 institutions 5,0.516735,True
+548,545,21,lichen_bridge,73,0.270588,0.230824,0.675226,5,True,lichen_bridge rope bridge valley year 545 institutions 5,0.515486,True
+549,545,21,orchid_engine,80,0.284118,0.251365,0.673377,5,True,orchid_engine warm engine terrace year 545 institutions 5,0.514237,True
+550,550,22,moss_ward,52,0.193529,0.187741,0.685103,5,True,moss_ward wet temperate ward year 550 institutions 5,0.524825,True
+551,550,22,glass_harbor,59,0.207059,0.208282,0.683255,5,True,glass_harbor fog harbor year 550 institutions 5,0.523576,True
+552,550,22,cinder_garden,66,0.220588,0.228824,0.681406,5,True,cinder_garden ash garden year 550 institutions 5,0.522328,True
+553,550,22,lichen_bridge,73,0.234118,0.249365,0.679557,5,True,lichen_bridge rope bridge valley year 550 institutions 5,0.521079,True
+554,550,22,orchid_engine,80,0.247647,0.269906,0.677708,5,True,orchid_engine warm engine terrace year 550 institutions 5,0.51983,True
+555,555,22,moss_ward,52,0.207059,0.188282,0.685055,5,True,moss_ward wet temperate ward year 555 institutions 5,0.524792,True
+556,555,22,glass_harbor,59,0.220588,0.208824,0.683206,5,True,glass_harbor fog harbor year 555 institutions 5,0.523544,True
+557,555,22,cinder_garden,66,0.234118,0.229365,0.681357,5,True,cinder_garden ash garden year 555 institutions 5,0.522295,True
+558,555,22,lichen_bridge,73,0.247647,0.249906,0.679508,5,True,lichen_bridge rope bridge valley year 555 institutions 5,0.521046,True
+559,555,22,orchid_engine,80,0.261176,0.270447,0.67766,5,True,orchid_engine warm engine terrace year 555 institutions 5,0.519797,True
+560,560,22,moss_ward,52,0.220588,0.188824,0.685006,5,True,moss_ward wet temperate ward year 560 institutions 5,0.52476,True
+561,560,22,glass_harbor,59,0.234118,0.209365,0.683157,5,True,glass_harbor fog harbor year 560 institutions 5,0.523511,True
+562,560,22,cinder_garden,66,0.247647,0.229906,0.681308,5,True,cinder_garden ash garden year 560 institutions 5,0.522262,True
+563,560,22,lichen_bridge,73,0.261176,0.250447,0.67946,5,True,lichen_bridge rope bridge valley year 560 institutions 5,0.521013,True
+564,560,22,orchid_engine,80,0.274706,0.270988,0.677611,5,True,orchid_engine warm engine terrace year 560 institutions 5,0.519764,True
+565,565,22,moss_ward,52,0.234118,0.189365,0.684957,5,True,moss_ward wet temperate ward year 565 institutions 5,0.524727,True
+566,565,22,glass_harbor,59,0.247647,0.209906,0.683108,5,True,glass_harbor fog harbor year 565 institutions 5,0.523478,True
+567,565,22,cinder_garden,66,0.261176,0.230447,0.68126,5,True,cinder_garden ash garden year 565 institutions 5,0.522229,True
+568,565,22,lichen_bridge,73,0.274706,0.250988,0.679411,5,True,lichen_bridge rope bridge valley year 565 institutions 5,0.52098,True
+569,565,22,orchid_engine,80,0.288235,0.271529,0.677562,5,True,orchid_engine warm engine terrace year 565 institutions 5,0.519731,True
+570,570,22,moss_ward,52,0.247647,0.189906,0.684908,5,True,moss_ward wet temperate ward year 570 institutions 5,0.524694,True
+571,570,22,glass_harbor,59,0.261176,0.210447,0.68306,5,True,glass_harbor fog harbor year 570 institutions 5,0.523445,True
+572,570,22,cinder_garden,66,0.274706,0.230988,0.681211,5,True,cinder_garden ash garden year 570 institutions 5,0.522196,True
+573,570,22,lichen_bridge,73,0.288235,0.251529,0.679362,5,True,lichen_bridge rope bridge valley year 570 institutions 5,0.520947,True
+574,570,22,orchid_engine,80,0.301765,0.272071,0.677514,5,True,orchid_engine warm engine terrace year 570 institutions 5,0.519698,True
+575,575,23,moss_ward,52,0.261176,0.210447,0.68906,5,True,moss_ward wet temperate ward year 575 institutions 5,0.530165,True
+576,575,23,glass_harbor,59,0.274706,0.230988,0.687211,5,True,glass_harbor fog harbor year 575 institutions 5,0.528916,True
+577,575,23,cinder_garden,66,0.288235,0.251529,0.685362,5,True,cinder_garden ash garden year 575 institutions 5,0.527667,True
+578,575,23,lichen_bridge,73,0.301765,0.272071,0.683514,5,True,lichen_bridge rope bridge valley year 575 institutions 5,0.526418,True
+579,575,23,orchid_engine,80,0.315294,0.112612,0.697865,5,True,orchid_engine warm engine terrace year 575 institutions 5,0.536113,True
+580,580,23,moss_ward,53,0.274706,0.210988,0.689011,5,True,moss_ward wet temperate ward year 580 institutions 5,0.530132,True
+581,580,23,glass_harbor,60,0.288235,0.231529,0.687162,5,True,glass_harbor fog harbor year 580 institutions 5,0.528883,True
+582,580,23,cinder_garden,67,0.301765,0.252071,0.685314,5,True,cinder_garden ash garden year 580 institutions 5,0.527634,True
+583,580,23,lichen_bridge,74,0.315294,0.272612,0.683465,5,True,lichen_bridge rope bridge valley year 580 institutions 5,0.526385,True
+584,580,23,orchid_engine,81,0.328824,0.113153,0.697816,5,True,orchid_engine warm engine terrace year 580 institutions 5,0.53608,True
+585,585,23,moss_ward,53,0.288235,0.211529,0.688962,5,True,moss_ward wet temperate ward year 585 institutions 5,0.530099,True
+586,585,23,glass_harbor,60,0.301765,0.232071,0.687114,5,True,glass_harbor fog harbor year 585 institutions 5,0.52885,True
+587,585,23,cinder_garden,67,0.315294,0.252612,0.685265,5,True,cinder_garden ash garden year 585 institutions 5,0.527601,True
+588,585,23,lichen_bridge,74,0.328824,0.273153,0.683416,5,True,lichen_bridge rope bridge valley year 585 institutions 5,0.526352,True
+589,585,23,orchid_engine,81,0.342353,0.113694,0.697768,5,True,orchid_engine warm engine terrace year 585 institutions 5,0.536047,True
+590,590,23,moss_ward,53,0.301765,0.212071,0.688914,5,True,moss_ward wet temperate ward year 590 institutions 5,0.530066,True
+591,590,23,glass_harbor,60,0.315294,0.232612,0.687065,5,True,glass_harbor fog harbor year 590 institutions 5,0.528817,True
+592,590,23,cinder_garden,67,0.328824,0.253153,0.685216,5,True,cinder_garden ash garden year 590 institutions 5,0.527568,True
+593,590,23,lichen_bridge,74,0.342353,0.273694,0.683368,5,True,lichen_bridge rope bridge valley year 590 institutions 5,0.526319,True
+594,590,23,orchid_engine,81,0.355882,0.114235,0.697719,5,True,orchid_engine warm engine terrace year 590 institutions 5,0.536014,True
+595,595,23,moss_ward,53,0.315294,0.212612,0.688865,5,True,moss_ward wet temperate ward year 595 institutions 5,0.530033,True
+596,595,23,glass_harbor,60,0.328824,0.233153,0.687016,5,True,glass_harbor fog harbor year 595 institutions 5,0.528784,True
+597,595,23,cinder_garden,67,0.342353,0.253694,0.685168,5,True,cinder_garden ash garden year 595 institutions 5,0.527535,True
+598,595,23,lichen_bridge,74,0.355882,0.274235,0.683319,5,True,lichen_bridge rope bridge valley year 595 institutions 5,0.526286,True
+599,595,23,orchid_engine,81,0.369412,0.114776,0.69767,5,True,orchid_engine warm engine terrace year 595 institutions 5,0.535982,True
+600,600,24,moss_ward,53,0.328824,0.233153,0.693016,6,True,moss_ward wet temperate ward year 600 institutions 6,0.535504,True
+601,600,24,glass_harbor,60,0.342353,0.253694,0.691168,6,True,glass_harbor fog harbor year 600 institutions 6,0.534255,True
+602,600,24,cinder_garden,67,0.355882,0.274235,0.689319,6,True,cinder_garden ash garden year 600 institutions 6,0.533006,True
+603,600,24,lichen_bridge,74,0.369412,0.114776,0.70367,6,True,lichen_bridge rope bridge valley year 600 institutions 6,0.542702,True
+604,600,24,orchid_engine,81,0.382941,0.135318,0.701821,6,True,orchid_engine warm engine terrace year 600 institutions 6,0.541453,True
+605,605,24,moss_ward,53,0.342353,0.233694,0.692968,6,True,moss_ward wet temperate ward year 605 institutions 6,0.535471,True
+606,605,24,glass_harbor,60,0.355882,0.254235,0.691119,6,True,glass_harbor fog harbor year 605 institutions 6,0.534222,True
+607,605,24,cinder_garden,67,0.369412,0.274776,0.68927,6,True,cinder_garden ash garden year 605 institutions 6,0.532974,True
+608,605,24,lichen_bridge,74,0.382941,0.115318,0.703621,6,True,lichen_bridge rope bridge valley year 605 institutions 6,0.542669,True
+609,605,24,orchid_engine,81,0.396471,0.135859,0.701773,6,True,orchid_engine warm engine terrace year 605 institutions 6,0.54142,True
+610,610,24,moss_ward,53,0.355882,0.234235,0.692919,6,True,moss_ward wet temperate ward year 610 institutions 6,0.535438,True
+611,610,24,glass_harbor,60,0.369412,0.254776,0.69107,6,True,glass_harbor fog harbor year 610 institutions 6,0.53419,True
+612,610,24,cinder_garden,67,0.382941,0.275318,0.689221,6,True,cinder_garden ash garden year 610 institutions 6,0.532941,True
+613,610,24,lichen_bridge,74,0.396471,0.115859,0.703573,6,True,lichen_bridge rope bridge valley year 610 institutions 6,0.542636,True
+614,610,24,orchid_engine,81,0.18,0.1272,0.702552,6,True,orchid_engine warm engine terrace year 610 institutions 6,0.541946,True
+615,615,24,moss_ward,53,0.369412,0.234776,0.69287,6,True,moss_ward wet temperate ward year 615 institutions 6,0.535406,True
+616,615,24,glass_harbor,60,0.382941,0.255318,0.691021,6,True,glass_harbor fog harbor year 615 institutions 6,0.534157,True
+617,615,24,cinder_garden,67,0.396471,0.275859,0.689173,6,True,cinder_garden ash garden year 615 institutions 6,0.532908,True
+618,615,24,lichen_bridge,74,0.18,0.1072,0.704352,6,True,lichen_bridge rope bridge valley year 615 institutions 6,0.543162,True
+619,615,24,orchid_engine,81,0.193529,0.127741,0.702503,6,True,orchid_engine warm engine terrace year 615 institutions 6,0.541913,True
+620,620,24,moss_ward,53,0.382941,0.235318,0.692821,6,True,moss_ward wet temperate ward year 620 institutions 6,0.535373,True
+621,620,24,glass_harbor,60,0.396471,0.255859,0.690973,6,True,glass_harbor fog harbor year 620 institutions 6,0.534124,True
+622,620,24,cinder_garden,67,0.18,0.2672,0.689952,6,True,cinder_garden ash garden year 620 institutions 6,0.533434,True
+623,620,24,lichen_bridge,74,0.193529,0.107741,0.704303,6,True,lichen_bridge rope bridge valley year 620 institutions 6,0.543129,True
+624,620,24,orchid_engine,81,0.207059,0.128282,0.702455,6,True,orchid_engine warm engine terrace year 620 institutions 6,0.54188,True
+625,625,25,moss_ward,54,0.396471,0.255859,0.696973,6,True,moss_ward wet temperate ward year 625 institutions 6,0.540844,True
+626,625,25,glass_harbor,61,0.18,0.2672,0.695952,6,True,glass_harbor fog harbor year 625 institutions 6,0.540154,True
+627,625,25,cinder_garden,68,0.193529,0.107741,0.710303,6,True,cinder_garden ash garden year 625 institutions 6,0.549849,True
+628,625,25,lichen_bridge,75,0.207059,0.128282,0.708455,6,True,lichen_bridge rope bridge valley year 625 institutions 6,0.5486,True
+629,625,25,orchid_engine,82,0.220588,0.148824,0.706606,6,True,orchid_engine warm engine terrace year 625 institutions 6,0.547352,True
+630,630,25,moss_ward,54,0.18,0.2472,0.697752,6,True,moss_ward wet temperate ward year 630 institutions 6,0.54137,True
+631,630,25,glass_harbor,61,0.193529,0.267741,0.695903,6,True,glass_harbor fog harbor year 630 institutions 6,0.540121,True
+632,630,25,cinder_garden,68,0.207059,0.108282,0.710255,6,True,cinder_garden ash garden year 630 institutions 6,0.549816,True
+633,630,25,lichen_bridge,75,0.220588,0.128824,0.708406,6,True,lichen_bridge rope bridge valley year 630 institutions 6,0.548568,True
+634,630,25,orchid_engine,82,0.234118,0.149365,0.706557,6,True,orchid_engine warm engine terrace year 630 institutions 6,0.547319,True
+635,635,25,moss_ward,54,0.193529,0.247741,0.697703,6,True,moss_ward wet temperate ward year 635 institutions 6,0.541337,True
+636,635,25,glass_harbor,61,0.207059,0.268282,0.695855,6,True,glass_harbor fog harbor year 635 institutions 6,0.540088,True
+637,635,25,cinder_garden,68,0.220588,0.108824,0.710206,6,True,cinder_garden ash garden year 635 institutions 6,0.549784,True
+638,635,25,lichen_bridge,75,0.234118,0.129365,0.708357,6,True,lichen_bridge rope bridge valley year 635 institutions 6,0.548535,True
+639,635,25,orchid_engine,82,0.247647,0.149906,0.706508,6,True,orchid_engine warm engine terrace year 635 institutions 6,0.547286,True
+640,640,25,moss_ward,54,0.207059,0.248282,0.697655,6,True,moss_ward wet temperate ward year 640 institutions 6,0.541304,True
+641,640,25,glass_harbor,61,0.220588,0.268824,0.695806,6,True,glass_harbor fog harbor year 640 institutions 6,0.540056,True
+642,640,25,cinder_garden,68,0.234118,0.109365,0.710157,6,True,cinder_garden ash garden year 640 institutions 6,0.549751,True
+643,640,25,lichen_bridge,75,0.247647,0.129906,0.708308,6,True,lichen_bridge rope bridge valley year 640 institutions 6,0.548502,True
+644,640,25,orchid_engine,82,0.261176,0.150447,0.70646,6,True,orchid_engine warm engine terrace year 640 institutions 6,0.547253,True
+645,645,25,moss_ward,54,0.220588,0.248824,0.697606,6,True,moss_ward wet temperate ward year 645 institutions 6,0.541272,True
+646,645,25,glass_harbor,61,0.234118,0.269365,0.695757,6,True,glass_harbor fog harbor year 645 institutions 6,0.540023,True
+647,645,25,cinder_garden,68,0.247647,0.109906,0.710108,6,True,cinder_garden ash garden year 645 institutions 6,0.549718,True
+648,645,25,lichen_bridge,75,0.261176,0.130447,0.70826,6,True,lichen_bridge rope bridge valley year 645 institutions 6,0.548469,True
+649,645,25,orchid_engine,82,0.274706,0.150988,0.706411,6,True,orchid_engine warm engine terrace year 645 institutions 6,0.54722,True
+650,650,26,moss_ward,54,0.234118,0.269365,0.701757,6,True,moss_ward wet temperate ward year 650 institutions 6,0.546743,True
+651,650,26,glass_harbor,61,0.247647,0.109906,0.716108,6,True,glass_harbor fog harbor year 650 institutions 6,0.556438,True
+652,650,26,cinder_garden,68,0.261176,0.130447,0.71426,6,True,cinder_garden ash garden year 650 institutions 6,0.555189,True
+653,650,26,lichen_bridge,75,0.274706,0.150988,0.712411,6,True,lichen_bridge rope bridge valley year 650 institutions 6,0.55394,True
+654,650,26,orchid_engine,82,0.288235,0.171529,0.710562,6,True,orchid_engine warm engine terrace year 650 institutions 6,0.552691,True
+655,655,26,moss_ward,54,0.247647,0.269906,0.701708,6,True,moss_ward wet temperate ward year 655 institutions 6,0.54671,True
+656,655,26,glass_harbor,61,0.261176,0.110447,0.71606,6,True,glass_harbor fog harbor year 655 institutions 6,0.556405,True
+657,655,26,cinder_garden,68,0.274706,0.130988,0.714211,6,True,cinder_garden ash garden year 655 institutions 6,0.555156,True
+658,655,26,lichen_bridge,75,0.288235,0.151529,0.712362,6,True,lichen_bridge rope bridge valley year 655 institutions 6,0.553907,True
+659,655,26,orchid_engine,82,0.301765,0.172071,0.710514,6,True,orchid_engine warm engine terrace year 655 institutions 6,0.552658,True
+660,660,26,moss_ward,54,0.261176,0.270447,0.70166,6,True,moss_ward wet temperate ward year 660 institutions 6,0.546677,True
+661,660,26,glass_harbor,61,0.274706,0.110988,0.716011,6,True,glass_harbor fog harbor year 660 institutions 6,0.556372,True
+662,660,26,cinder_garden,68,0.288235,0.131529,0.714162,6,True,cinder_garden ash garden year 660 institutions 6,0.555123,True
+663,660,26,lichen_bridge,75,0.301765,0.152071,0.712314,6,True,lichen_bridge rope bridge valley year 660 institutions 6,0.553874,True
+664,660,26,orchid_engine,82,0.315294,0.172612,0.710465,6,True,orchid_engine warm engine terrace year 660 institutions 6,0.552625,True
+665,665,26,moss_ward,54,0.274706,0.270988,0.701611,6,True,moss_ward wet temperate ward year 665 institutions 6,0.546644,True
+666,665,26,glass_harbor,61,0.288235,0.111529,0.715962,6,True,glass_harbor fog harbor year 665 institutions 6,0.556339,True
+667,665,26,cinder_garden,68,0.301765,0.132071,0.714114,6,True,cinder_garden ash garden year 665 institutions 6,0.55509,True
+668,665,26,lichen_bridge,75,0.315294,0.152612,0.712265,6,True,lichen_bridge rope bridge valley year 665 institutions 6,0.553841,True
+669,665,26,orchid_engine,82,0.328824,0.173153,0.710416,6,True,orchid_engine warm engine terrace year 665 institutions 6,0.552592,True
+670,670,26,moss_ward,55,0.288235,0.271529,0.701562,6,True,moss_ward wet temperate ward year 670 institutions 6,0.546611,True
+671,670,26,glass_harbor,62,0.301765,0.112071,0.715914,6,True,glass_harbor fog harbor year 670 institutions 6,0.556306,True
+672,670,26,cinder_garden,69,0.315294,0.132612,0.714065,6,True,cinder_garden ash garden year 670 institutions 6,0.555057,True
+673,670,26,lichen_bridge,76,0.328824,0.153153,0.712216,6,True,lichen_bridge rope bridge valley year 670 institutions 6,0.553808,True
+674,670,26,orchid_engine,83,0.342353,0.173694,0.710368,6,True,orchid_engine warm engine terrace year 670 institutions 6,0.552559,True
+675,675,27,moss_ward,55,0.301765,0.112071,0.721914,6,True,moss_ward wet temperate ward year 675 institutions 6,0.563026,True
+676,675,27,glass_harbor,62,0.315294,0.132612,0.720065,6,True,glass_harbor fog harbor year 675 institutions 6,0.561777,True
+677,675,27,cinder_garden,69,0.328824,0.153153,0.718216,6,True,cinder_garden ash garden year 675 institutions 6,0.560528,True
+678,675,27,lichen_bridge,76,0.342353,0.173694,0.716368,6,True,lichen_bridge rope bridge valley year 675 institutions 6,0.559279,True
+679,675,27,orchid_engine,83,0.355882,0.194235,0.714519,6,True,orchid_engine warm engine terrace year 675 institutions 6,0.55803,True
+680,680,27,moss_ward,55,0.315294,0.112612,0.721865,6,True,moss_ward wet temperate ward year 680 institutions 6,0.562993,True
+681,680,27,glass_harbor,62,0.328824,0.133153,0.720016,6,True,glass_harbor fog harbor year 680 institutions 6,0.561744,True
+682,680,27,cinder_garden,69,0.342353,0.153694,0.718168,6,True,cinder_garden ash garden year 680 institutions 6,0.560495,True
+683,680,27,lichen_bridge,76,0.355882,0.174235,0.716319,6,True,lichen_bridge rope bridge valley year 680 institutions 6,0.559246,True
+684,680,27,orchid_engine,83,0.369412,0.194776,0.71447,6,True,orchid_engine warm engine terrace year 680 institutions 6,0.557998,True
+685,685,27,moss_ward,55,0.328824,0.113153,0.721816,6,True,moss_ward wet temperate ward year 685 institutions 6,0.56296,True
+686,685,27,glass_harbor,62,0.342353,0.133694,0.719968,6,True,glass_harbor fog harbor year 685 institutions 6,0.561711,True
+687,685,27,cinder_garden,69,0.355882,0.154235,0.718119,6,True,cinder_garden ash garden year 685 institutions 6,0.560462,True
+688,685,27,lichen_bridge,76,0.369412,0.174776,0.71627,6,True,lichen_bridge rope bridge valley year 685 institutions 6,0.559214,True
+689,685,27,orchid_engine,83,0.382941,0.195318,0.714421,6,True,orchid_engine warm engine terrace year 685 institutions 6,0.557965,True
+690,690,27,moss_ward,55,0.342353,0.113694,0.721768,6,True,moss_ward wet temperate ward year 690 institutions 6,0.562927,True
+691,690,27,glass_harbor,62,0.355882,0.134235,0.719919,6,True,glass_harbor fog harbor year 690 institutions 6,0.561678,True
+692,690,27,cinder_garden,69,0.369412,0.154776,0.71807,6,True,cinder_garden ash garden year 690 institutions 6,0.56043,True
+693,690,27,lichen_bridge,76,0.382941,0.175318,0.716221,6,True,lichen_bridge rope bridge valley year 690 institutions 6,0.559181,True
+694,690,27,orchid_engine,83,0.396471,0.195859,0.714373,6,True,orchid_engine warm engine terrace year 690 institutions 6,0.557932,True
+695,695,27,moss_ward,55,0.355882,0.114235,0.721719,6,True,moss_ward wet temperate ward year 695 institutions 6,0.562894,True
+696,695,27,glass_harbor,62,0.369412,0.134776,0.71987,6,True,glass_harbor fog harbor year 695 institutions 6,0.561646,True
+697,695,27,cinder_garden,69,0.382941,0.155318,0.718021,6,True,cinder_garden ash garden year 695 institutions 6,0.560397,True
+698,695,27,lichen_bridge,76,0.396471,0.175859,0.716173,6,True,lichen_bridge rope bridge valley year 695 institutions 6,0.559148,True
+699,695,27,orchid_engine,83,0.18,0.1872,0.715152,6,True,orchid_engine warm engine terrace year 695 institutions 6,0.558458,True
+700,700,28,moss_ward,55,0.419412,0.136776,0.72569,6,True,moss_ward wet temperate ward year 700 institutions 6,0.568244,True
+701,700,28,glass_harbor,62,0.432941,0.157318,0.723841,6,True,glass_harbor fog harbor year 700 institutions 6,0.566995,True
+702,700,28,cinder_garden,69,0.446471,0.177859,0.721993,6,True,cinder_garden ash garden year 700 institutions 6,0.565746,True
+703,700,28,lichen_bridge,76,0.23,0.1892,0.720972,6,True,lichen_bridge rope bridge valley year 700 institutions 6,0.565057,True
+704,700,28,orchid_engine,83,0.243529,0.209741,0.719123,6,True,orchid_engine warm engine terrace year 700 institutions 6,0.563808,True
+705,705,28,moss_ward,55,0.432941,0.137318,0.725641,6,True,moss_ward wet temperate ward year 705 institutions 6,0.568211,True
+706,705,28,glass_harbor,62,0.446471,0.157859,0.723793,6,True,glass_harbor fog harbor year 705 institutions 6,0.566962,True
+707,705,28,cinder_garden,69,0.23,0.1692,0.722772,6,True,cinder_garden ash garden year 705 institutions 6,0.566273,True
+708,705,28,lichen_bridge,76,0.243529,0.189741,0.720923,6,True,lichen_bridge rope bridge valley year 705 institutions 6,0.565024,True
+709,705,28,orchid_engine,83,0.257059,0.210282,0.719075,6,True,orchid_engine warm engine terrace year 705 institutions 6,0.563775,True
+710,710,28,moss_ward,55,0.446471,0.137859,0.725593,6,True,moss_ward wet temperate ward year 710 institutions 6,0.568178,True
+711,710,28,glass_harbor,62,0.23,0.1492,0.724572,6,True,glass_harbor fog harbor year 710 institutions 6,0.567489,True
+712,710,28,cinder_garden,69,0.243529,0.169741,0.722723,6,True,cinder_garden ash garden year 710 institutions 6,0.56624,True
+713,710,28,lichen_bridge,76,0.257059,0.190282,0.720875,6,True,lichen_bridge rope bridge valley year 710 institutions 6,0.564991,True
+714,710,28,orchid_engine,83,0.270588,0.210824,0.719026,6,True,orchid_engine warm engine terrace year 710 institutions 6,0.563742,True
+715,715,28,moss_ward,56,0.23,0.1292,0.726372,6,True,moss_ward wet temperate ward year 715 institutions 6,0.568705,True
+716,715,28,glass_harbor,63,0.243529,0.149741,0.724523,6,True,glass_harbor fog harbor year 715 institutions 6,0.567456,True
+717,715,28,cinder_garden,70,0.257059,0.170282,0.722675,6,True,cinder_garden ash garden year 715 institutions 6,0.566207,True
+718,715,28,lichen_bridge,77,0.270588,0.190824,0.720826,6,True,lichen_bridge rope bridge valley year 715 institutions 6,0.564958,True
+719,715,28,orchid_engine,84,0.284118,0.211365,0.718977,6,True,orchid_engine warm engine terrace year 715 institutions 6,0.563709,True
+720,720,28,moss_ward,56,0.243529,0.129741,0.726323,6,True,moss_ward wet temperate ward year 720 institutions 6,0.568672,True
+721,720,28,glass_harbor,63,0.257059,0.150282,0.724475,6,True,glass_harbor fog harbor year 720 institutions 6,0.567423,True
+722,720,28,cinder_garden,70,0.270588,0.170824,0.722626,6,True,cinder_garden ash garden year 720 institutions 6,0.566174,True
+723,720,28,lichen_bridge,77,0.284118,0.191365,0.720777,6,True,lichen_bridge rope bridge valley year 720 institutions 6,0.564925,True
+724,720,28,orchid_engine,84,0.297647,0.211906,0.718928,6,True,orchid_engine warm engine terrace year 720 institutions 6,0.563676,True
+725,725,29,moss_ward,56,0.207059,0.148282,0.730655,6,True,moss_ward wet temperate ward year 725 institutions 6,0.574264,True
+726,725,29,glass_harbor,63,0.220588,0.168824,0.728806,6,True,glass_harbor fog harbor year 725 institutions 6,0.573016,True
+727,725,29,cinder_garden,70,0.234118,0.189365,0.726957,6,True,cinder_garden ash garden year 725 institutions 6,0.571767,True
+728,725,29,lichen_bridge,77,0.247647,0.209906,0.725108,6,True,lichen_bridge rope bridge valley year 725 institutions 6,0.570518,True
+729,725,29,orchid_engine,84,0.261176,0.230447,0.72326,6,True,orchid_engine warm engine terrace year 725 institutions 6,0.569269,True
+730,730,29,moss_ward,56,0.220588,0.148824,0.730606,6,True,moss_ward wet temperate ward year 730 institutions 6,0.574232,True
+731,730,29,glass_harbor,63,0.234118,0.169365,0.728757,6,True,glass_harbor fog harbor year 730 institutions 6,0.572983,True
+732,730,29,cinder_garden,70,0.247647,0.189906,0.726908,6,True,cinder_garden ash garden year 730 institutions 6,0.571734,True
+733,730,29,lichen_bridge,77,0.261176,0.210447,0.72506,6,True,lichen_bridge rope bridge valley year 730 institutions 6,0.570485,True
+734,730,29,orchid_engine,84,0.274706,0.230988,0.723211,6,True,orchid_engine warm engine terrace year 730 institutions 6,0.569236,True
+735,735,29,moss_ward,56,0.234118,0.149365,0.730557,6,True,moss_ward wet temperate ward year 735 institutions 6,0.574199,True
+736,735,29,glass_harbor,63,0.247647,0.169906,0.728708,6,True,glass_harbor fog harbor year 735 institutions 6,0.57295,True
+737,735,29,cinder_garden,70,0.261176,0.190447,0.72686,6,True,cinder_garden ash garden year 735 institutions 6,0.571701,True
+738,735,29,lichen_bridge,77,0.274706,0.210988,0.725011,6,True,lichen_bridge rope bridge valley year 735 institutions 6,0.570452,True
+739,735,29,orchid_engine,84,0.288235,0.231529,0.723162,6,True,orchid_engine warm engine terrace year 735 institutions 6,0.569203,True
+740,740,29,moss_ward,56,0.247647,0.149906,0.730508,6,True,moss_ward wet temperate ward year 740 institutions 6,0.574166,True
+741,740,29,glass_harbor,63,0.261176,0.170447,0.72866,6,True,glass_harbor fog harbor year 740 institutions 6,0.572917,True
+742,740,29,cinder_garden,70,0.274706,0.190988,0.726811,6,True,cinder_garden ash garden year 740 institutions 6,0.571668,True
+743,740,29,lichen_bridge,77,0.288235,0.211529,0.724962,6,True,lichen_bridge rope bridge valley year 740 institutions 6,0.570419,True
+744,740,29,orchid_engine,84,0.301765,0.232071,0.723114,6,True,orchid_engine warm engine terrace year 740 institutions 6,0.56917,True
+745,745,29,moss_ward,56,0.261176,0.150447,0.73046,6,True,moss_ward wet temperate ward year 745 institutions 6,0.574133,True
+746,745,29,glass_harbor,63,0.274706,0.170988,0.728611,6,True,glass_harbor fog harbor year 745 institutions 6,0.572884,True
+747,745,29,cinder_garden,70,0.288235,0.191529,0.726762,6,True,cinder_garden ash garden year 745 institutions 6,0.571635,True
+748,745,29,lichen_bridge,77,0.301765,0.212071,0.724914,6,True,lichen_bridge rope bridge valley year 745 institutions 6,0.570386,True
+749,745,29,orchid_engine,84,0.315294,0.232612,0.723065,6,True,orchid_engine warm engine terrace year 745 institutions 6,0.569137,True
+750,750,30,moss_ward,56,0.274706,0.170988,0.734611,6,True,moss_ward wet temperate ward year 750 institutions 6,0.579604,True
+751,750,30,glass_harbor,63,0.288235,0.191529,0.732762,6,True,glass_harbor fog harbor year 750 institutions 6,0.578355,True
+752,750,30,cinder_garden,70,0.301765,0.212071,0.730914,6,True,cinder_garden ash garden year 750 institutions 6,0.577106,True
+753,750,30,lichen_bridge,77,0.315294,0.232612,0.729065,6,True,lichen_bridge rope bridge valley year 750 institutions 6,0.575857,True
+754,750,30,orchid_engine,84,0.328824,0.253153,0.727216,6,True,orchid_engine warm engine terrace year 750 institutions 6,0.574608,True
+755,755,30,moss_ward,56,0.288235,0.171529,0.734562,6,True,moss_ward wet temperate ward year 755 institutions 6,0.579571,True
+756,755,30,glass_harbor,63,0.301765,0.192071,0.732714,6,True,glass_harbor fog harbor year 755 institutions 6,0.578322,True
+757,755,30,cinder_garden,70,0.315294,0.212612,0.730865,6,True,cinder_garden ash garden year 755 institutions 6,0.577073,True
+758,755,30,lichen_bridge,77,0.328824,0.233153,0.729016,6,True,lichen_bridge rope bridge valley year 755 institutions 6,0.575824,True
+759,755,30,orchid_engine,84,0.342353,0.253694,0.727168,6,True,orchid_engine warm engine terrace year 755 institutions 6,0.574575,True
+760,760,30,moss_ward,57,0.301765,0.172071,0.734514,6,True,moss_ward wet temperate ward year 760 institutions 6,0.579538,True
+761,760,30,glass_harbor,64,0.315294,0.192612,0.732665,6,True,glass_harbor fog harbor year 760 institutions 6,0.578289,True
+762,760,30,cinder_garden,71,0.328824,0.213153,0.730816,6,True,cinder_garden ash garden year 760 institutions 6,0.57704,True
+763,760,30,lichen_bridge,78,0.342353,0.233694,0.728968,6,True,lichen_bridge rope bridge valley year 760 institutions 6,0.575791,True
+764,760,30,orchid_engine,85,0.355882,0.254235,0.727119,6,True,orchid_engine warm engine terrace year 760 institutions 6,0.574542,True
+765,765,30,moss_ward,57,0.315294,0.172612,0.734465,6,True,moss_ward wet temperate ward year 765 institutions 6,0.579505,True
+766,765,30,glass_harbor,64,0.328824,0.193153,0.732616,6,True,glass_harbor fog harbor year 765 institutions 6,0.578256,True
+767,765,30,cinder_garden,71,0.342353,0.213694,0.730768,6,True,cinder_garden ash garden year 765 institutions 6,0.577007,True
+768,765,30,lichen_bridge,78,0.355882,0.234235,0.728919,6,True,lichen_bridge rope bridge valley year 765 institutions 6,0.575758,True
+769,765,30,orchid_engine,85,0.369412,0.254776,0.72707,6,True,orchid_engine warm engine terrace year 765 institutions 6,0.57451,True
+770,770,30,moss_ward,57,0.328824,0.173153,0.734416,6,True,moss_ward wet temperate ward year 770 institutions 6,0.579472,True
+771,770,30,glass_harbor,64,0.342353,0.193694,0.732568,6,True,glass_harbor fog harbor year 770 institutions 6,0.578223,True
+772,770,30,cinder_garden,71,0.355882,0.214235,0.730719,6,True,cinder_garden ash garden year 770 institutions 6,0.576974,True
+773,770,30,lichen_bridge,78,0.369412,0.234776,0.72887,6,True,lichen_bridge rope bridge valley year 770 institutions 6,0.575726,True
+774,770,30,orchid_engine,85,0.382941,0.255318,0.727021,6,True,orchid_engine warm engine terrace year 770 institutions 6,0.574477,True
+775,775,31,moss_ward,57,0.342353,0.193694,0.738568,6,True,moss_ward wet temperate ward year 775 institutions 6,0.584943,True
+776,775,31,glass_harbor,64,0.355882,0.214235,0.736719,6,True,glass_harbor fog harbor year 775 institutions 6,0.583694,True
+777,775,31,cinder_garden,71,0.369412,0.234776,0.73487,6,True,cinder_garden ash garden year 775 institutions 6,0.582446,True
+778,775,31,lichen_bridge,78,0.382941,0.255318,0.733021,6,True,lichen_bridge rope bridge valley year 775 institutions 6,0.581197,True
+779,775,31,orchid_engine,85,0.396471,0.275859,0.731173,6,True,orchid_engine warm engine terrace year 775 institutions 6,0.579948,True
+780,780,31,moss_ward,57,0.355882,0.194235,0.738519,6,True,moss_ward wet temperate ward year 780 institutions 6,0.58491,True
+781,780,31,glass_harbor,64,0.369412,0.214776,0.73667,6,True,glass_harbor fog harbor year 780 institutions 6,0.583662,True
+782,780,31,cinder_garden,71,0.382941,0.235318,0.734821,6,True,cinder_garden ash garden year 780 institutions 6,0.582413,True
+783,780,31,lichen_bridge,78,0.396471,0.255859,0.732973,6,True,lichen_bridge rope bridge valley year 780 institutions 6,0.581164,True
+784,780,31,orchid_engine,85,0.18,0.2672,0.731952,6,True,orchid_engine warm engine terrace year 780 institutions 6,0.580474,True
+785,785,31,moss_ward,57,0.369412,0.194776,0.73847,6,True,moss_ward wet temperate ward year 785 institutions 6,0.584878,True
+786,785,31,glass_harbor,64,0.382941,0.215318,0.736621,6,True,glass_harbor fog harbor year 785 institutions 6,0.583629,True
+787,785,31,cinder_garden,71,0.396471,0.235859,0.734773,6,True,cinder_garden ash garden year 785 institutions 6,0.58238,True
+788,785,31,lichen_bridge,78,0.18,0.2472,0.733752,6,True,lichen_bridge rope bridge valley year 785 institutions 6,0.58169,True
+789,785,31,orchid_engine,85,0.193529,0.267741,0.731903,6,True,orchid_engine warm engine terrace year 785 institutions 6,0.580441,True
+790,790,31,moss_ward,57,0.382941,0.195318,0.738421,6,True,moss_ward wet temperate ward year 790 institutions 6,0.584845,True
+791,790,31,glass_harbor,64,0.396471,0.215859,0.736573,6,True,glass_harbor fog harbor year 790 institutions 6,0.583596,True
+792,790,31,cinder_garden,71,0.18,0.2272,0.735552,6,True,cinder_garden ash garden year 790 institutions 6,0.582906,True
+793,790,31,lichen_bridge,78,0.193529,0.247741,0.733703,6,True,lichen_bridge rope bridge valley year 790 institutions 6,0.581657,True
+794,790,31,orchid_engine,85,0.207059,0.268282,0.731855,6,True,orchid_engine warm engine terrace year 790 institutions 6,0.580408,True
+795,795,31,moss_ward,57,0.396471,0.195859,0.738373,6,True,moss_ward wet temperate ward year 795 institutions 6,0.584812,True
+796,795,31,glass_harbor,64,0.18,0.2072,0.737352,6,True,glass_harbor fog harbor year 795 institutions 6,0.584122,True
+797,795,31,cinder_garden,71,0.193529,0.227741,0.735503,6,True,cinder_garden ash garden year 795 institutions 6,0.582873,True
+798,795,31,lichen_bridge,78,0.207059,0.248282,0.733655,6,True,lichen_bridge rope bridge valley year 795 institutions 6,0.581624,True
+799,795,31,orchid_engine,85,0.220588,0.268824,0.731806,6,True,orchid_engine warm engine terrace year 795 institutions 6,0.580376,True
+800,800,32,moss_ward,58,0.18,0.2072,0.743352,7,True,moss_ward wet temperate ward year 800 institutions 7,0.590842,True
+801,800,32,glass_harbor,65,0.193529,0.227741,0.741503,7,True,glass_harbor fog harbor year 800 institutions 7,0.589593,True
+802,800,32,cinder_garden,72,0.207059,0.248282,0.739655,7,True,cinder_garden ash garden year 800 institutions 7,0.588344,True
+803,800,32,lichen_bridge,79,0.220588,0.268824,0.737806,7,True,lichen_bridge rope bridge valley year 800 institutions 7,0.587096,True
+804,800,32,orchid_engine,86,0.234118,0.109365,0.752157,7,True,orchid_engine warm engine terrace year 800 institutions 7,0.596791,True
+805,805,32,moss_ward,58,0.193529,0.207741,0.743303,7,True,moss_ward wet temperate ward year 805 institutions 7,0.590809,True
+806,805,32,glass_harbor,65,0.207059,0.228282,0.741455,7,True,glass_harbor fog harbor year 805 institutions 7,0.58956,True
+807,805,32,cinder_garden,72,0.220588,0.248824,0.739606,7,True,cinder_garden ash garden year 805 institutions 7,0.588312,True
+808,805,32,lichen_bridge,79,0.234118,0.269365,0.737757,7,True,lichen_bridge rope bridge valley year 805 institutions 7,0.587063,True
+809,805,32,orchid_engine,86,0.247647,0.109906,0.752108,7,True,orchid_engine warm engine terrace year 805 institutions 7,0.596758,True
+810,810,32,moss_ward,58,0.207059,0.208282,0.743255,7,True,moss_ward wet temperate ward year 810 institutions 7,0.590776,True
+811,810,32,glass_harbor,65,0.220588,0.228824,0.741406,7,True,glass_harbor fog harbor year 810 institutions 7,0.589528,True
+812,810,32,cinder_garden,72,0.234118,0.249365,0.739557,7,True,cinder_garden ash garden year 810 institutions 7,0.588279,True
+813,810,32,lichen_bridge,79,0.247647,0.269906,0.737708,7,True,lichen_bridge rope bridge valley year 810 institutions 7,0.58703,True
+814,810,32,orchid_engine,86,0.261176,0.110447,0.75206,7,True,orchid_engine warm engine terrace year 810 institutions 7,0.596725,True
+815,815,32,moss_ward,58,0.220588,0.208824,0.743206,7,True,moss_ward wet temperate ward year 815 institutions 7,0.590744,True
+816,815,32,glass_harbor,65,0.234118,0.229365,0.741357,7,True,glass_harbor fog harbor year 815 institutions 7,0.589495,True
+817,815,32,cinder_garden,72,0.247647,0.249906,0.739508,7,True,cinder_garden ash garden year 815 institutions 7,0.588246,True
+818,815,32,lichen_bridge,79,0.261176,0.270447,0.73766,7,True,lichen_bridge rope bridge valley year 815 institutions 7,0.586997,True
+819,815,32,orchid_engine,86,0.274706,0.110988,0.752011,7,True,orchid_engine warm engine terrace year 815 institutions 7,0.596692,True
+820,820,32,moss_ward,58,0.234118,0.209365,0.743157,7,True,moss_ward wet temperate ward year 820 institutions 7,0.590711,True
+821,820,32,glass_harbor,65,0.247647,0.229906,0.741308,7,True,glass_harbor fog harbor year 820 institutions 7,0.589462,True
+822,820,32,cinder_garden,72,0.261176,0.250447,0.73946,7,True,cinder_garden ash garden year 820 institutions 7,0.588213,True
+823,820,32,lichen_bridge,79,0.274706,0.270988,0.737611,7,True,lichen_bridge rope bridge valley year 820 institutions 7,0.586964,True
+824,820,32,orchid_engine,86,0.288235,0.111529,0.751962,7,True,orchid_engine warm engine terrace year 820 institutions 7,0.596659,True
+825,825,33,moss_ward,58,0.247647,0.229906,0.747308,7,True,moss_ward wet temperate ward year 825 institutions 7,0.596182,True
+826,825,33,glass_harbor,65,0.261176,0.250447,0.74546,7,True,glass_harbor fog harbor year 825 institutions 7,0.594933,True
+827,825,33,cinder_garden,72,0.274706,0.270988,0.743611,7,True,cinder_garden ash garden year 825 institutions 7,0.593684,True
+828,825,33,lichen_bridge,79,0.288235,0.111529,0.757962,7,True,lichen_bridge rope bridge valley year 825 institutions 7,0.603379,True
+829,825,33,orchid_engine,86,0.301765,0.132071,0.756114,7,True,orchid_engine warm engine terrace year 825 institutions 7,0.60213,True
+830,830,33,moss_ward,58,0.261176,0.230447,0.74726,7,True,moss_ward wet temperate ward year 830 institutions 7,0.596149,True
+831,830,33,glass_harbor,65,0.274706,0.250988,0.745411,7,True,glass_harbor fog harbor year 830 institutions 7,0.5949,True
+832,830,33,cinder_garden,72,0.288235,0.271529,0.743562,7,True,cinder_garden ash garden year 830 institutions 7,0.593651,True
+833,830,33,lichen_bridge,79,0.301765,0.112071,0.757914,7,True,lichen_bridge rope bridge valley year 830 institutions 7,0.603346,True
+834,830,33,orchid_engine,86,0.315294,0.132612,0.756065,7,True,orchid_engine warm engine terrace year 830 institutions 7,0.602097,True
+835,835,33,moss_ward,58,0.274706,0.230988,0.747211,7,True,moss_ward wet temperate ward year 835 institutions 7,0.596116,True
+836,835,33,glass_harbor,65,0.288235,0.251529,0.745362,7,True,glass_harbor fog harbor year 835 institutions 7,0.594867,True
+837,835,33,cinder_garden,72,0.301765,0.272071,0.743514,7,True,cinder_garden ash garden year 835 institutions 7,0.593618,True
+838,835,33,lichen_bridge,79,0.315294,0.112612,0.757865,7,True,lichen_bridge rope bridge valley year 835 institutions 7,0.603313,True
+839,835,33,orchid_engine,86,0.328824,0.133153,0.756016,7,True,orchid_engine warm engine terrace year 835 institutions 7,0.602064,True
+840,840,33,moss_ward,58,0.288235,0.231529,0.747162,7,True,moss_ward wet temperate ward year 840 institutions 7,0.596083,True
+841,840,33,glass_harbor,65,0.301765,0.252071,0.745314,7,True,glass_harbor fog harbor year 840 institutions 7,0.594834,True
+842,840,33,cinder_garden,72,0.315294,0.272612,0.743465,7,True,cinder_garden ash garden year 840 institutions 7,0.593585,True
+843,840,33,lichen_bridge,79,0.328824,0.113153,0.757816,7,True,lichen_bridge rope bridge valley year 840 institutions 7,0.60328,True
+844,840,33,orchid_engine,86,0.342353,0.133694,0.755968,7,True,orchid_engine warm engine terrace year 840 institutions 7,0.602031,True
+845,845,33,moss_ward,59,0.301765,0.232071,0.747114,7,True,moss_ward wet temperate ward year 845 institutions 7,0.59605,True
+846,845,33,glass_harbor,66,0.315294,0.252612,0.745265,7,True,glass_harbor fog harbor year 845 institutions 7,0.594801,True
+847,845,33,cinder_garden,73,0.328824,0.273153,0.743416,7,True,cinder_garden ash garden year 845 institutions 7,0.593552,True
+848,845,33,lichen_bridge,80,0.342353,0.113694,0.757768,7,True,lichen_bridge rope bridge valley year 845 institutions 7,0.603247,True
+849,845,33,orchid_engine,87,0.355882,0.134235,0.755919,7,True,orchid_engine warm engine terrace year 845 institutions 7,0.601998,True
+850,850,34,moss_ward,59,0.315294,0.252612,0.751265,7,True,moss_ward wet temperate ward year 850 institutions 7,0.601521,True
+851,850,34,glass_harbor,66,0.328824,0.273153,0.749416,7,True,glass_harbor fog harbor year 850 institutions 7,0.600272,True
+852,850,34,cinder_garden,73,0.342353,0.113694,0.763768,7,True,cinder_garden ash garden year 850 institutions 7,0.609967,True
+853,850,34,lichen_bridge,80,0.355882,0.134235,0.761919,7,True,lichen_bridge rope bridge valley year 850 institutions 7,0.608718,True
+854,850,34,orchid_engine,87,0.369412,0.154776,0.76007,7,True,orchid_engine warm engine terrace year 850 institutions 7,0.60747,True
+855,855,34,moss_ward,59,0.328824,0.253153,0.751216,7,True,moss_ward wet temperate ward year 855 institutions 7,0.601488,True
+856,855,34,glass_harbor,66,0.342353,0.273694,0.749368,7,True,glass_harbor fog harbor year 855 institutions 7,0.600239,True
+857,855,34,cinder_garden,73,0.355882,0.114235,0.763719,7,True,cinder_garden ash garden year 855 institutions 7,0.609934,True
+858,855,34,lichen_bridge,80,0.369412,0.134776,0.76187,7,True,lichen_bridge rope bridge valley year 855 institutions 7,0.608686,True
+859,855,34,orchid_engine,87,0.382941,0.155318,0.760021,7,True,orchid_engine warm engine terrace year 855 institutions 7,0.607437,True
+860,860,34,moss_ward,59,0.342353,0.253694,0.751168,7,True,moss_ward wet temperate ward year 860 institutions 7,0.601455,True
+861,860,34,glass_harbor,66,0.355882,0.274235,0.749319,7,True,glass_harbor fog harbor year 860 institutions 7,0.600206,True
+862,860,34,cinder_garden,73,0.369412,0.114776,0.76367,7,True,cinder_garden ash garden year 860 institutions 7,0.609902,True
+863,860,34,lichen_bridge,80,0.382941,0.135318,0.761821,7,True,lichen_bridge rope bridge valley year 860 institutions 7,0.608653,True
+864,860,34,orchid_engine,87,0.396471,0.155859,0.759973,7,True,orchid_engine warm engine terrace year 860 institutions 7,0.607404,True
+865,865,34,moss_ward,59,0.355882,0.254235,0.751119,7,True,moss_ward wet temperate ward year 865 institutions 7,0.601422,True
+866,865,34,glass_harbor,66,0.369412,0.274776,0.74927,7,True,glass_harbor fog harbor year 865 institutions 7,0.600174,True
+867,865,34,cinder_garden,73,0.382941,0.115318,0.763621,7,True,cinder_garden ash garden year 865 institutions 7,0.609869,True
+868,865,34,lichen_bridge,80,0.396471,0.135859,0.761773,7,True,lichen_bridge rope bridge valley year 865 institutions 7,0.60862,True
+869,865,34,orchid_engine,87,0.18,0.1472,0.760752,7,True,orchid_engine warm engine terrace year 865 institutions 7,0.60793,True
+870,870,34,moss_ward,59,0.369412,0.254776,0.75107,7,True,moss_ward wet temperate ward year 870 institutions 7,0.60139,True
+871,870,34,glass_harbor,66,0.382941,0.275318,0.749221,7,True,glass_harbor fog harbor year 870 institutions 7,0.600141,True
+872,870,34,cinder_garden,73,0.396471,0.115859,0.763573,7,True,cinder_garden ash garden year 870 institutions 7,0.609836,True
+873,870,34,lichen_bridge,80,0.18,0.1272,0.762552,7,True,lichen_bridge rope bridge valley year 870 institutions 7,0.609146,True
+874,870,34,orchid_engine,87,0.193529,0.147741,0.760703,7,True,orchid_engine warm engine terrace year 870 institutions 7,0.607897,True
+875,875,35,moss_ward,59,0.432941,0.277318,0.755041,7,True,moss_ward wet temperate ward year 875 institutions 7,0.606739,True
+876,875,35,glass_harbor,66,0.446471,0.117859,0.769393,7,True,glass_harbor fog harbor year 875 institutions 7,0.616434,True
+877,875,35,cinder_garden,73,0.23,0.1292,0.768372,7,True,cinder_garden ash garden year 875 institutions 7,0.615745,True
+878,875,35,lichen_bridge,80,0.243529,0.149741,0.766523,7,True,lichen_bridge rope bridge valley year 875 institutions 7,0.614496,True
+879,875,35,orchid_engine,87,0.257059,0.170282,0.764675,7,True,orchid_engine warm engine terrace year 875 institutions 7,0.613247,True
+880,880,35,moss_ward,59,0.446471,0.277859,0.754993,7,True,moss_ward wet temperate ward year 880 institutions 7,0.606706,True
+881,880,35,glass_harbor,66,0.23,0.1092,0.770172,7,True,glass_harbor fog harbor year 880 institutions 7,0.616961,True
+882,880,35,cinder_garden,73,0.243529,0.129741,0.768323,7,True,cinder_garden ash garden year 880 institutions 7,0.615712,True
+883,880,35,lichen_bridge,80,0.257059,0.150282,0.766475,7,True,lichen_bridge rope bridge valley year 880 institutions 7,0.614463,True
+884,880,35,orchid_engine,87,0.270588,0.170824,0.764626,7,True,orchid_engine warm engine terrace year 880 institutions 7,0.613214,True
+885,885,35,moss_ward,60,0.23,0.2692,0.755772,7,True,moss_ward wet temperate ward year 885 institutions 7,0.607233,True
+886,885,35,glass_harbor,67,0.243529,0.109741,0.770123,7,True,glass_harbor fog harbor year 885 institutions 7,0.616928,True
+887,885,35,cinder_garden,74,0.257059,0.130282,0.768275,7,True,cinder_garden ash garden year 885 institutions 7,0.615679,True
+888,885,35,lichen_bridge,81,0.270588,0.150824,0.766426,7,True,lichen_bridge rope bridge valley year 885 institutions 7,0.61443,True
+889,885,35,orchid_engine,88,0.284118,0.171365,0.764577,7,True,orchid_engine warm engine terrace year 885 institutions 7,0.613181,True
+890,890,35,moss_ward,60,0.243529,0.269741,0.755723,7,True,moss_ward wet temperate ward year 890 institutions 7,0.6072,True
+891,890,35,glass_harbor,67,0.257059,0.110282,0.770075,7,True,glass_harbor fog harbor year 890 institutions 7,0.616895,True
+892,890,35,cinder_garden,74,0.270588,0.130824,0.768226,7,True,cinder_garden ash garden year 890 institutions 7,0.615646,True
+893,890,35,lichen_bridge,81,0.284118,0.151365,0.766377,7,True,lichen_bridge rope bridge valley year 890 institutions 7,0.614397,True
+894,890,35,orchid_engine,88,0.297647,0.171906,0.764528,7,True,orchid_engine warm engine terrace year 890 institutions 7,0.613148,True
+895,895,35,moss_ward,60,0.257059,0.270282,0.755675,7,True,moss_ward wet temperate ward year 895 institutions 7,0.607167,True
+896,895,35,glass_harbor,67,0.270588,0.110824,0.770026,7,True,glass_harbor fog harbor year 895 institutions 7,0.616862,True
+897,895,35,cinder_garden,74,0.284118,0.131365,0.768177,7,True,cinder_garden ash garden year 895 institutions 7,0.615613,True
+898,895,35,lichen_bridge,81,0.297647,0.151906,0.766328,7,True,lichen_bridge rope bridge valley year 895 institutions 7,0.614364,True
+899,895,35,orchid_engine,88,0.311176,0.172447,0.76448,7,True,orchid_engine warm engine terrace year 895 institutions 7,0.613115,True
+900,900,36,moss_ward,60,0.220588,0.108824,0.776206,7,True,moss_ward wet temperate ward year 900 institutions 7,0.623704,True
+901,900,36,glass_harbor,67,0.234118,0.129365,0.774357,7,True,glass_harbor fog harbor year 900 institutions 7,0.622455,True
+902,900,36,cinder_garden,74,0.247647,0.149906,0.772508,7,True,cinder_garden ash garden year 900 institutions 7,0.621206,True
+903,900,36,lichen_bridge,81,0.261176,0.170447,0.77066,7,True,lichen_bridge rope bridge valley year 900 institutions 7,0.619957,True
+904,900,36,orchid_engine,88,0.274706,0.190988,0.768811,7,True,orchid_engine warm engine terrace year 900 institutions 7,0.618708,True
+905,905,36,moss_ward,60,0.234118,0.109365,0.776157,8,True,moss_ward wet temperate ward year 905 institutions 8,0.623671,True
+906,905,36,glass_harbor,67,0.247647,0.129906,0.774308,8,True,glass_harbor fog harbor year 905 institutions 8,0.622422,True
+907,905,36,cinder_garden,74,0.261176,0.150447,0.77246,8,True,cinder_garden ash garden year 905 institutions 8,0.621173,True
+908,905,36,lichen_bridge,81,0.274706,0.170988,0.770611,8,True,lichen_bridge rope bridge valley year 905 institutions 8,0.619924,True
+909,905,36,orchid_engine,88,0.288235,0.191529,0.768762,8,True,orchid_engine warm engine terrace year 905 institutions 8,0.618675,True
+910,910,36,moss_ward,60,0.247647,0.109906,0.776108,8,True,moss_ward wet temperate ward year 910 institutions 8,0.623638,True
+911,910,36,glass_harbor,67,0.261176,0.130447,0.77426,8,True,glass_harbor fog harbor year 910 institutions 8,0.622389,True
+912,910,36,cinder_garden,74,0.274706,0.150988,0.772411,8,True,cinder_garden ash garden year 910 institutions 8,0.62114,True
+913,910,36,lichen_bridge,81,0.288235,0.171529,0.770562,8,True,lichen_bridge rope bridge valley year 910 institutions 8,0.619891,True
+914,910,36,orchid_engine,88,0.301765,0.192071,0.768714,8,True,orchid_engine warm engine terrace year 910 institutions 8,0.618642,True
+915,915,36,moss_ward,60,0.261176,0.110447,0.77606,8,True,moss_ward wet temperate ward year 915 institutions 8,0.623605,True
+916,915,36,glass_harbor,67,0.274706,0.130988,0.774211,8,True,glass_harbor fog harbor year 915 institutions 8,0.622356,True
+917,915,36,cinder_garden,74,0.288235,0.151529,0.772362,8,True,cinder_garden ash garden year 915 institutions 8,0.621107,True
+918,915,36,lichen_bridge,81,0.301765,0.172071,0.770514,8,True,lichen_bridge rope bridge valley year 915 institutions 8,0.619858,True
+919,915,36,orchid_engine,88,0.315294,0.192612,0.768665,8,True,orchid_engine warm engine terrace year 915 institutions 8,0.618609,True
+920,920,36,moss_ward,60,0.274706,0.110988,0.776011,8,True,moss_ward wet temperate ward year 920 institutions 8,0.623572,True
+921,920,36,glass_harbor,67,0.288235,0.131529,0.774162,8,True,glass_harbor fog harbor year 920 institutions 8,0.622323,True
+922,920,36,cinder_garden,74,0.301765,0.152071,0.772314,8,True,cinder_garden ash garden year 920 institutions 8,0.621074,True
+923,920,36,lichen_bridge,81,0.315294,0.172612,0.770465,8,True,lichen_bridge rope bridge valley year 920 institutions 8,0.619825,True
+924,920,36,orchid_engine,88,0.328824,0.193153,0.768616,8,True,orchid_engine warm engine terrace year 920 institutions 8,0.618576,True
+925,925,37,moss_ward,61,0.288235,0.131529,0.780162,8,True,moss_ward wet temperate ward year 925 institutions 8,0.629043,True
+926,925,37,glass_harbor,68,0.301765,0.152071,0.778314,8,True,glass_harbor fog harbor year 925 institutions 8,0.627794,True
+927,925,37,cinder_garden,75,0.315294,0.172612,0.776465,8,True,cinder_garden ash garden year 925 institutions 8,0.626545,True
+928,925,37,lichen_bridge,82,0.328824,0.193153,0.774616,8,True,lichen_bridge rope bridge valley year 925 institutions 8,0.625296,True
+929,925,37,orchid_engine,89,0.342353,0.213694,0.772768,8,True,orchid_engine warm engine terrace year 925 institutions 8,0.624047,True
+930,930,37,moss_ward,61,0.301765,0.132071,0.780114,8,True,moss_ward wet temperate ward year 930 institutions 8,0.62901,True
+931,930,37,glass_harbor,68,0.315294,0.152612,0.778265,8,True,glass_harbor fog harbor year 930 institutions 8,0.627761,True
+932,930,37,cinder_garden,75,0.328824,0.173153,0.776416,8,True,cinder_garden ash garden year 930 institutions 8,0.626512,True
+933,930,37,lichen_bridge,82,0.342353,0.193694,0.774568,8,True,lichen_bridge rope bridge valley year 930 institutions 8,0.625263,True
+934,930,37,orchid_engine,89,0.355882,0.214235,0.772719,8,True,orchid_engine warm engine terrace year 930 institutions 8,0.624014,True
+935,935,37,moss_ward,61,0.315294,0.132612,0.780065,8,True,moss_ward wet temperate ward year 935 institutions 8,0.628977,True
+936,935,37,glass_harbor,68,0.328824,0.153153,0.778216,8,True,glass_harbor fog harbor year 935 institutions 8,0.627728,True
+937,935,37,cinder_garden,75,0.342353,0.173694,0.776368,8,True,cinder_garden ash garden year 935 institutions 8,0.626479,True
+938,935,37,lichen_bridge,82,0.355882,0.194235,0.774519,8,True,lichen_bridge rope bridge valley year 935 institutions 8,0.62523,True
+939,935,37,orchid_engine,89,0.369412,0.214776,0.77267,8,True,orchid_engine warm engine terrace year 935 institutions 8,0.623982,True
+940,940,37,moss_ward,61,0.328824,0.133153,0.780016,8,True,moss_ward wet temperate ward year 940 institutions 8,0.628944,True
+941,940,37,glass_harbor,68,0.342353,0.153694,0.778168,8,True,glass_harbor fog harbor year 940 institutions 8,0.627695,True
+942,940,37,cinder_garden,75,0.355882,0.174235,0.776319,8,True,cinder_garden ash garden year 940 institutions 8,0.626446,True
+943,940,37,lichen_bridge,82,0.369412,0.194776,0.77447,8,True,lichen_bridge rope bridge valley year 940 institutions 8,0.625198,True
+944,940,37,orchid_engine,89,0.382941,0.215318,0.772621,8,True,orchid_engine warm engine terrace year 940 institutions 8,0.623949,True
+945,945,37,moss_ward,61,0.342353,0.133694,0.779968,8,True,moss_ward wet temperate ward year 945 institutions 8,0.628911,True
+946,945,37,glass_harbor,68,0.355882,0.154235,0.778119,8,True,glass_harbor fog harbor year 945 institutions 8,0.627662,True
+947,945,37,cinder_garden,75,0.369412,0.174776,0.77627,8,True,cinder_garden ash garden year 945 institutions 8,0.626414,True
+948,945,37,lichen_bridge,82,0.382941,0.195318,0.774421,8,True,lichen_bridge rope bridge valley year 945 institutions 8,0.625165,True
+949,945,37,orchid_engine,89,0.396471,0.215859,0.772573,8,True,orchid_engine warm engine terrace year 945 institutions 8,0.623916,True
+950,950,38,moss_ward,61,0.355882,0.154235,0.784119,8,True,moss_ward wet temperate ward year 950 institutions 8,0.634382,True
+951,950,38,glass_harbor,68,0.369412,0.174776,0.78227,8,True,glass_harbor fog harbor year 950 institutions 8,0.633134,True
+952,950,38,cinder_garden,75,0.382941,0.195318,0.780421,8,True,cinder_garden ash garden year 950 institutions 8,0.631885,True
+953,950,38,lichen_bridge,82,0.396471,0.215859,0.778573,8,True,lichen_bridge rope bridge valley year 950 institutions 8,0.630636,True
+954,950,38,orchid_engine,89,0.18,0.2272,0.777552,8,True,orchid_engine warm engine terrace year 950 institutions 8,0.629946,True
+955,955,38,moss_ward,61,0.369412,0.154776,0.78407,8,True,moss_ward wet temperate ward year 955 institutions 8,0.63435,True
+956,955,38,glass_harbor,68,0.382941,0.175318,0.782221,8,True,glass_harbor fog harbor year 955 institutions 8,0.633101,True
+957,955,38,cinder_garden,75,0.396471,0.195859,0.780373,8,True,cinder_garden ash garden year 955 institutions 8,0.631852,True
+958,955,38,lichen_bridge,82,0.18,0.2072,0.779352,8,True,lichen_bridge rope bridge valley year 955 institutions 8,0.631162,True
+959,955,38,orchid_engine,89,0.193529,0.227741,0.777503,8,True,orchid_engine warm engine terrace year 955 institutions 8,0.629913,True
+960,960,38,moss_ward,61,0.382941,0.155318,0.784021,8,True,moss_ward wet temperate ward year 960 institutions 8,0.634317,True
+961,960,38,glass_harbor,68,0.396471,0.175859,0.782173,8,True,glass_harbor fog harbor year 960 institutions 8,0.633068,True
+962,960,38,cinder_garden,75,0.18,0.1872,0.781152,8,True,cinder_garden ash garden year 960 institutions 8,0.632378,True
+963,960,38,lichen_bridge,82,0.193529,0.207741,0.779303,8,True,lichen_bridge rope bridge valley year 960 institutions 8,0.631129,True
+964,960,38,orchid_engine,89,0.207059,0.228282,0.777455,8,True,orchid_engine warm engine terrace year 960 institutions 8,0.62988,True
+965,965,38,moss_ward,61,0.396471,0.155859,0.783973,8,True,moss_ward wet temperate ward year 965 institutions 8,0.634284,True
+966,965,38,glass_harbor,68,0.18,0.1672,0.782952,8,True,glass_harbor fog harbor year 965 institutions 8,0.633594,True
+967,965,38,cinder_garden,75,0.193529,0.187741,0.781103,8,True,cinder_garden ash garden year 965 institutions 8,0.632345,True
+968,965,38,lichen_bridge,82,0.207059,0.208282,0.779255,8,True,lichen_bridge rope bridge valley year 965 institutions 8,0.631096,True
+969,965,38,orchid_engine,89,0.220588,0.228824,0.777406,8,True,orchid_engine warm engine terrace year 965 institutions 8,0.629848,True
+970,970,38,moss_ward,62,0.18,0.1472,0.784752,8,True,moss_ward wet temperate ward year 970 institutions 8,0.63481,True
+971,970,38,glass_harbor,69,0.193529,0.167741,0.782903,8,True,glass_harbor fog harbor year 970 institutions 8,0.633561,True
+972,970,38,cinder_garden,76,0.207059,0.188282,0.781055,8,True,cinder_garden ash garden year 970 institutions 8,0.632312,True
+973,970,38,lichen_bridge,83,0.220588,0.208824,0.779206,8,True,lichen_bridge rope bridge valley year 970 institutions 8,0.631064,True
+974,970,38,orchid_engine,90,0.234118,0.229365,0.777357,8,True,orchid_engine warm engine terrace year 970 institutions 8,0.629815,True
+975,975,39,moss_ward,62,0.193529,0.167741,0.788903,8,True,moss_ward wet temperate ward year 975 institutions 8,0.640281,True
+976,975,39,glass_harbor,69,0.207059,0.188282,0.787055,8,True,glass_harbor fog harbor year 975 institutions 8,0.639032,True
+977,975,39,cinder_garden,76,0.220588,0.208824,0.785206,8,True,cinder_garden ash garden year 975 institutions 8,0.637784,True
+978,975,39,lichen_bridge,83,0.234118,0.229365,0.783357,8,True,lichen_bridge rope bridge valley year 975 institutions 8,0.636535,True
+979,975,39,orchid_engine,90,0.247647,0.249906,0.781508,8,True,orchid_engine warm engine terrace year 975 institutions 8,0.635286,True
+980,980,39,moss_ward,62,0.207059,0.168282,0.788855,8,True,moss_ward wet temperate ward year 980 institutions 8,0.640248,True
+981,980,39,glass_harbor,69,0.220588,0.188824,0.787006,8,True,glass_harbor fog harbor year 980 institutions 8,0.639,True
+982,980,39,cinder_garden,76,0.234118,0.209365,0.785157,8,True,cinder_garden ash garden year 980 institutions 8,0.637751,True
+983,980,39,lichen_bridge,83,0.247647,0.229906,0.783308,8,True,lichen_bridge rope bridge valley year 980 institutions 8,0.636502,True
+984,980,39,orchid_engine,90,0.261176,0.250447,0.78146,8,True,orchid_engine warm engine terrace year 980 institutions 8,0.635253,True
+985,985,39,moss_ward,62,0.220588,0.168824,0.788806,8,True,moss_ward wet temperate ward year 985 institutions 8,0.640216,True
+986,985,39,glass_harbor,69,0.234118,0.189365,0.786957,8,True,glass_harbor fog harbor year 985 institutions 8,0.638967,True
+987,985,39,cinder_garden,76,0.247647,0.209906,0.785108,8,True,cinder_garden ash garden year 985 institutions 8,0.637718,True
+988,985,39,lichen_bridge,83,0.261176,0.230447,0.78326,8,True,lichen_bridge rope bridge valley year 985 institutions 8,0.636469,True
+989,985,39,orchid_engine,90,0.274706,0.250988,0.781411,8,True,orchid_engine warm engine terrace year 985 institutions 8,0.63522,True
+990,990,39,moss_ward,62,0.234118,0.169365,0.788757,8,True,moss_ward wet temperate ward year 990 institutions 8,0.640183,True
+991,990,39,glass_harbor,69,0.247647,0.189906,0.786908,8,True,glass_harbor fog harbor year 990 institutions 8,0.638934,True
+992,990,39,cinder_garden,76,0.261176,0.210447,0.78506,8,True,cinder_garden ash garden year 990 institutions 8,0.637685,True
+993,990,39,lichen_bridge,83,0.274706,0.230988,0.783211,8,True,lichen_bridge rope bridge valley year 990 institutions 8,0.636436,True
+994,990,39,orchid_engine,90,0.288235,0.251529,0.781362,8,True,orchid_engine warm engine terrace year 990 institutions 8,0.635187,True
+995,995,39,moss_ward,62,0.247647,0.169906,0.788708,8,True,moss_ward wet temperate ward year 995 institutions 8,0.64015,True
+996,995,39,glass_harbor,69,0.261176,0.190447,0.78686,8,True,glass_harbor fog harbor year 995 institutions 8,0.638901,True
+997,995,39,cinder_garden,76,0.274706,0.210988,0.785011,8,True,cinder_garden ash garden year 995 institutions 8,0.637652,True
+998,995,39,lichen_bridge,83,0.288235,0.231529,0.783162,8,True,lichen_bridge rope bridge valley year 995 institutions 8,0.636403,True
+999,995,39,orchid_engine,90,0.301765,0.252071,0.781314,8,True,orchid_engine warm engine terrace year 995 institutions 8,0.635154,True
+1000,1000,40,moss_ward,62,0.261176,0.190447,0.79286,9,True,moss_ward wet temperate ward year 1000 institutions 9,0.645621,True
+1001,1000,40,glass_harbor,69,0.274706,0.210988,0.791011,9,True,glass_harbor fog harbor year 1000 institutions 9,0.644372,True
+1002,1000,40,cinder_garden,76,0.288235,0.231529,0.789162,9,True,cinder_garden ash garden year 1000 institutions 9,0.643123,True
+1003,1000,40,lichen_bridge,83,0.301765,0.252071,0.787314,9,True,lichen_bridge rope bridge valley year 1000 institutions 9,0.641874,True
+1004,1000,40,orchid_engine,90,0.315294,0.272612,0.785465,9,True,orchid_engine warm engine terrace year 1000 institutions 9,0.640625,True
+1005,1005,40,moss_ward,63,0.274706,0.190988,0.792811,9,True,moss_ward wet temperate ward year 1005 institutions 9,0.645588,True
+1006,1005,40,glass_harbor,70,0.288235,0.211529,0.790962,9,True,glass_harbor fog harbor year 1005 institutions 9,0.644339,True
+1007,1005,40,cinder_garden,77,0.301765,0.232071,0.789114,9,True,cinder_garden ash garden year 1005 institutions 9,0.64309,True
+1008,1005,40,lichen_bridge,83,0.315294,0.252612,0.787265,9,True,lichen_bridge rope bridge valley year 1005 institutions 9,0.641841,True
+1009,1005,40,orchid_engine,90,0.328824,0.273153,0.785416,9,True,orchid_engine warm engine terrace year 1005 institutions 9,0.640592,True
+1010,1010,40,moss_ward,63,0.288235,0.191529,0.792762,9,True,moss_ward wet temperate ward year 1010 institutions 9,0.645555,True
+1011,1010,40,glass_harbor,70,0.301765,0.212071,0.790914,9,True,glass_harbor fog harbor year 1010 institutions 9,0.644306,True
+1012,1010,40,cinder_garden,77,0.315294,0.232612,0.789065,9,True,cinder_garden ash garden year 1010 institutions 9,0.643057,True
+1013,1010,40,lichen_bridge,84,0.328824,0.253153,0.787216,9,True,lichen_bridge rope bridge valley year 1010 institutions 9,0.641808,True
+1014,1010,40,orchid_engine,91,0.342353,0.273694,0.785368,9,True,orchid_engine warm engine terrace year 1010 institutions 9,0.640559,True
+1015,1015,40,moss_ward,63,0.301765,0.192071,0.792714,9,True,moss_ward wet temperate ward year 1015 institutions 9,0.645522,True
+1016,1015,40,glass_harbor,70,0.315294,0.212612,0.790865,9,True,glass_harbor fog harbor year 1015 institutions 9,0.644273,True
+1017,1015,40,cinder_garden,77,0.328824,0.233153,0.789016,9,True,cinder_garden ash garden year 1015 institutions 9,0.643024,True
+1018,1015,40,lichen_bridge,84,0.342353,0.253694,0.787168,9,True,lichen_bridge rope bridge valley year 1015 institutions 9,0.641775,True
+1019,1015,40,orchid_engine,91,0.355882,0.274235,0.785319,9,True,orchid_engine warm engine terrace year 1015 institutions 9,0.640526,True
+1020,1020,40,moss_ward,63,0.315294,0.192612,0.792665,9,True,moss_ward wet temperate ward year 1020 institutions 9,0.645489,True
+1021,1020,40,glass_harbor,70,0.328824,0.213153,0.790816,9,True,glass_harbor fog harbor year 1020 institutions 9,0.64424,True
+1022,1020,40,cinder_garden,77,0.342353,0.233694,0.788968,9,True,cinder_garden ash garden year 1020 institutions 9,0.642991,True
+1023,1020,40,lichen_bridge,84,0.355882,0.254235,0.787119,9,True,lichen_bridge rope bridge valley year 1020 institutions 9,0.641742,True
+1024,1020,40,orchid_engine,91,0.369412,0.274776,0.78527,9,True,orchid_engine warm engine terrace year 1020 institutions 9,0.640494,True
+1025,1025,41,moss_ward,63,0.328824,0.213153,0.796816,9,True,moss_ward wet temperate ward year 1025 institutions 9,0.65096,True
+1026,1025,41,glass_harbor,70,0.342353,0.233694,0.794968,9,True,glass_harbor fog harbor year 1025 institutions 9,0.649711,True
+1027,1025,41,cinder_garden,77,0.355882,0.254235,0.793119,9,True,cinder_garden ash garden year 1025 institutions 9,0.648462,True
+1028,1025,41,lichen_bridge,84,0.369412,0.274776,0.79127,9,True,lichen_bridge rope bridge valley year 1025 institutions 9,0.647214,True
+1029,1025,41,orchid_engine,91,0.382941,0.115318,0.805621,9,True,orchid_engine warm engine terrace year 1025 institutions 9,0.656909,True
+1030,1030,41,moss_ward,63,0.342353,0.213694,0.796768,9,True,moss_ward wet temperate ward year 1030 institutions 9,0.650927,True
+1031,1030,41,glass_harbor,70,0.355882,0.234235,0.794919,9,True,glass_harbor fog harbor year 1030 institutions 9,0.649678,True
+1032,1030,41,cinder_garden,77,0.369412,0.254776,0.79307,9,True,cinder_garden ash garden year 1030 institutions 9,0.64843,True
+1033,1030,41,lichen_bridge,84,0.382941,0.275318,0.791221,9,True,lichen_bridge rope bridge valley year 1030 institutions 9,0.647181,True
+1034,1030,41,orchid_engine,91,0.396471,0.115859,0.805573,9,True,orchid_engine warm engine terrace year 1030 institutions 9,0.656876,True
+1035,1035,41,moss_ward,63,0.355882,0.214235,0.796719,9,True,moss_ward wet temperate ward year 1035 institutions 9,0.650894,True
+1036,1035,41,glass_harbor,70,0.369412,0.234776,0.79487,9,True,glass_harbor fog harbor year 1035 institutions 9,0.649646,True
+1037,1035,41,cinder_garden,77,0.382941,0.255318,0.793021,9,True,cinder_garden ash garden year 1035 institutions 9,0.648397,True
+1038,1035,41,lichen_bridge,84,0.396471,0.275859,0.791173,9,True,lichen_bridge rope bridge valley year 1035 institutions 9,0.647148,True
+1039,1035,41,orchid_engine,91,0.18,0.1072,0.806352,9,True,orchid_engine warm engine terrace year 1035 institutions 9,0.657402,True
+1040,1040,41,moss_ward,63,0.369412,0.214776,0.79667,9,True,moss_ward wet temperate ward year 1040 institutions 9,0.650862,True
+1041,1040,41,glass_harbor,70,0.382941,0.235318,0.794821,9,True,glass_harbor fog harbor year 1040 institutions 9,0.649613,True
+1042,1040,41,cinder_garden,77,0.396471,0.255859,0.792973,9,True,cinder_garden ash garden year 1040 institutions 9,0.648364,True
+1043,1040,41,lichen_bridge,84,0.18,0.2672,0.791952,9,True,lichen_bridge rope bridge valley year 1040 institutions 9,0.647674,True
+1044,1040,41,orchid_engine,91,0.193529,0.107741,0.806303,9,True,orchid_engine warm engine terrace year 1040 institutions 9,0.657369,True
+1045,1045,41,moss_ward,63,0.382941,0.215318,0.796621,9,True,moss_ward wet temperate ward year 1045 institutions 9,0.650829,True
+1046,1045,41,glass_harbor,70,0.396471,0.235859,0.794773,9,True,glass_harbor fog harbor year 1045 institutions 9,0.64958,True
+1047,1045,41,cinder_garden,77,0.18,0.2472,0.793752,9,True,cinder_garden ash garden year 1045 institutions 9,0.64889,True
+1048,1045,41,lichen_bridge,84,0.193529,0.267741,0.791903,9,True,lichen_bridge rope bridge valley year 1045 institutions 9,0.647641,True
+1049,1045,41,orchid_engine,92,0.207059,0.108282,0.806255,9,True,orchid_engine warm engine terrace year 1045 institutions 9,0.657336,True
+1050,1050,42,moss_ward,64,0.446471,0.237859,0.800593,9,True,moss_ward wet temperate ward year 1050 institutions 9,0.656178,True
+1051,1050,42,glass_harbor,71,0.23,0.2492,0.799572,9,True,glass_harbor fog harbor year 1050 institutions 9,0.655489,True
+1052,1050,42,cinder_garden,78,0.243529,0.269741,0.797723,9,True,cinder_garden ash garden year 1050 institutions 9,0.65424,True
+1053,1050,42,lichen_bridge,85,0.257059,0.110282,0.812075,9,True,lichen_bridge rope bridge valley year 1050 institutions 9,0.663935,True
+1054,1050,42,orchid_engine,92,0.270588,0.130824,0.810226,9,True,orchid_engine warm engine terrace year 1050 institutions 9,0.662686,True
+1055,1055,42,moss_ward,64,0.23,0.2292,0.801372,9,True,moss_ward wet temperate ward year 1055 institutions 9,0.656705,True
+1056,1055,42,glass_harbor,71,0.243529,0.249741,0.799523,9,True,glass_harbor fog harbor year 1055 institutions 9,0.655456,True
+1057,1055,42,cinder_garden,78,0.257059,0.270282,0.797675,9,True,cinder_garden ash garden year 1055 institutions 9,0.654207,True
+1058,1055,42,lichen_bridge,85,0.270588,0.110824,0.812026,9,True,lichen_bridge rope bridge valley year 1055 institutions 9,0.663902,True
+1059,1055,42,orchid_engine,92,0.284118,0.131365,0.810177,9,True,orchid_engine warm engine terrace year 1055 institutions 9,0.662653,True
+1060,1060,42,moss_ward,64,0.243529,0.229741,0.801323,9,True,moss_ward wet temperate ward year 1060 institutions 9,0.656672,True
+1061,1060,42,glass_harbor,71,0.257059,0.250282,0.799475,9,True,glass_harbor fog harbor year 1060 institutions 9,0.655423,True
+1062,1060,42,cinder_garden,78,0.270588,0.270824,0.797626,9,True,cinder_garden ash garden year 1060 institutions 9,0.654174,True
+1063,1060,42,lichen_bridge,85,0.284118,0.111365,0.811977,9,True,lichen_bridge rope bridge valley year 1060 institutions 9,0.663869,True
+1064,1060,42,orchid_engine,92,0.297647,0.131906,0.810128,9,True,orchid_engine warm engine terrace year 1060 institutions 9,0.66262,True
+1065,1065,42,moss_ward,64,0.257059,0.230282,0.801275,9,True,moss_ward wet temperate ward year 1065 institutions 9,0.656639,True
+1066,1065,42,glass_harbor,71,0.270588,0.250824,0.799426,9,True,glass_harbor fog harbor year 1065 institutions 9,0.65539,True
+1067,1065,42,cinder_garden,78,0.284118,0.271365,0.797577,9,True,cinder_garden ash garden year 1065 institutions 9,0.654141,True
+1068,1065,42,lichen_bridge,85,0.297647,0.111906,0.811928,9,True,lichen_bridge rope bridge valley year 1065 institutions 9,0.663836,True
+1069,1065,42,orchid_engine,92,0.311176,0.132447,0.81008,9,True,orchid_engine warm engine terrace year 1065 institutions 9,0.662587,True
+1070,1070,42,moss_ward,64,0.270588,0.230824,0.801226,9,True,moss_ward wet temperate ward year 1070 institutions 9,0.656606,True
+1071,1070,42,glass_harbor,71,0.284118,0.251365,0.799377,9,True,glass_harbor fog harbor year 1070 institutions 9,0.655357,True
+1072,1070,42,cinder_garden,78,0.297647,0.271906,0.797528,9,True,cinder_garden ash garden year 1070 institutions 9,0.654108,True
+1073,1070,42,lichen_bridge,85,0.311176,0.112447,0.81188,9,True,lichen_bridge rope bridge valley year 1070 institutions 9,0.663803,True
+1074,1070,42,orchid_engine,92,0.324706,0.132988,0.810031,9,True,orchid_engine warm engine terrace year 1070 institutions 9,0.662554,True
+1075,1075,43,moss_ward,64,0.234118,0.249365,0.805557,9,True,moss_ward wet temperate ward year 1075 institutions 9,0.662199,True
+1076,1075,43,glass_harbor,71,0.247647,0.269906,0.803708,9,True,glass_harbor fog harbor year 1075 institutions 9,0.66095,True
+1077,1075,43,cinder_garden,78,0.261176,0.110447,0.81806,9,True,cinder_garden ash garden year 1075 institutions 9,0.670645,True
+1078,1075,43,lichen_bridge,85,0.274706,0.130988,0.816211,9,True,lichen_bridge rope bridge valley year 1075 institutions 9,0.669396,True
+1079,1075,43,orchid_engine,92,0.288235,0.151529,0.814362,9,True,orchid_engine warm engine terrace year 1075 institutions 9,0.668147,True
+1080,1080,43,moss_ward,64,0.247647,0.249906,0.805508,9,True,moss_ward wet temperate ward year 1080 institutions 9,0.662166,True
+1081,1080,43,glass_harbor,71,0.261176,0.270447,0.80366,9,True,glass_harbor fog harbor year 1080 institutions 9,0.660917,True
+1082,1080,43,cinder_garden,78,0.274706,0.110988,0.818011,9,True,cinder_garden ash garden year 1080 institutions 9,0.670612,True
+1083,1080,43,lichen_bridge,85,0.288235,0.131529,0.816162,9,True,lichen_bridge rope bridge valley year 1080 institutions 9,0.669363,True
+1084,1080,43,orchid_engine,92,0.301765,0.152071,0.814314,9,True,orchid_engine warm engine terrace year 1080 institutions 9,0.668114,True
+1085,1085,43,moss_ward,65,0.261176,0.250447,0.80546,9,True,moss_ward wet temperate ward year 1085 institutions 9,0.662133,True
+1086,1085,43,glass_harbor,72,0.274706,0.270988,0.803611,9,True,glass_harbor fog harbor year 1085 institutions 9,0.660884,True
+1087,1085,43,cinder_garden,79,0.288235,0.111529,0.817962,9,True,cinder_garden ash garden year 1085 institutions 9,0.670579,True
+1088,1085,43,lichen_bridge,86,0.301765,0.132071,0.816114,9,True,lichen_bridge rope bridge valley year 1085 institutions 9,0.66933,True
+1089,1085,43,orchid_engine,93,0.315294,0.152612,0.814265,9,True,orchid_engine warm engine terrace year 1085 institutions 9,0.668081,True
+1090,1090,43,moss_ward,65,0.274706,0.250988,0.805411,9,True,moss_ward wet temperate ward year 1090 institutions 9,0.6621,True
+1091,1090,43,glass_harbor,72,0.288235,0.271529,0.803562,9,True,glass_harbor fog harbor year 1090 institutions 9,0.660851,True
+1092,1090,43,cinder_garden,79,0.301765,0.112071,0.817914,9,True,cinder_garden ash garden year 1090 institutions 9,0.670546,True
+1093,1090,43,lichen_bridge,86,0.315294,0.132612,0.816065,9,True,lichen_bridge rope bridge valley year 1090 institutions 9,0.669297,True
+1094,1090,43,orchid_engine,93,0.328824,0.153153,0.814216,9,True,orchid_engine warm engine terrace year 1090 institutions 9,0.668048,True
+1095,1095,43,moss_ward,65,0.288235,0.251529,0.805362,9,True,moss_ward wet temperate ward year 1095 institutions 9,0.662067,True
+1096,1095,43,glass_harbor,72,0.301765,0.272071,0.803514,9,True,glass_harbor fog harbor year 1095 institutions 9,0.660818,True
+1097,1095,43,cinder_garden,79,0.315294,0.112612,0.817865,9,True,cinder_garden ash garden year 1095 institutions 9,0.670513,True
+1098,1095,43,lichen_bridge,86,0.328824,0.133153,0.816016,9,True,lichen_bridge rope bridge valley year 1095 institutions 9,0.669264,True
+1099,1095,43,orchid_engine,93,0.342353,0.153694,0.814168,9,True,orchid_engine warm engine terrace year 1095 institutions 9,0.668015,True
+1100,1100,44,moss_ward,65,0.301765,0.272071,0.809514,9,True,moss_ward wet temperate ward year 1100 institutions 9,0.667538,True
+1101,1100,44,glass_harbor,72,0.315294,0.112612,0.823865,9,True,glass_harbor fog harbor year 1100 institutions 9,0.677233,True
+1102,1100,44,cinder_garden,79,0.328824,0.133153,0.822016,9,True,cinder_garden ash garden year 1100 institutions 9,0.675984,True
+1103,1100,44,lichen_bridge,86,0.342353,0.153694,0.820168,9,True,lichen_bridge rope bridge valley year 1100 institutions 9,0.674735,True
+1104,1100,44,orchid_engine,93,0.355882,0.174235,0.818319,9,True,orchid_engine warm engine terrace year 1100 institutions 9,0.673486,True
+1105,1105,44,moss_ward,65,0.315294,0.272612,0.809465,9,True,moss_ward wet temperate ward year 1105 institutions 9,0.667505,True
+1106,1105,44,glass_harbor,72,0.328824,0.113153,0.823816,9,True,glass_harbor fog harbor year 1105 institutions 9,0.6772,True
+1107,1105,44,cinder_garden,79,0.342353,0.133694,0.821968,9,True,cinder_garden ash garden year 1105 institutions 9,0.675951,True
+1108,1105,44,lichen_bridge,86,0.355882,0.154235,0.820119,9,True,lichen_bridge rope bridge valley year 1105 institutions 9,0.674702,True
+1109,1105,44,orchid_engine,93,0.369412,0.174776,0.81827,9,True,orchid_engine warm engine terrace year 1105 institutions 9,0.673454,True
+1110,1110,44,moss_ward,65,0.328824,0.273153,0.809416,9,True,moss_ward wet temperate ward year 1110 institutions 9,0.667472,True
+1111,1110,44,glass_harbor,72,0.342353,0.113694,0.823768,9,True,glass_harbor fog harbor year 1110 institutions 9,0.677167,True
+1112,1110,44,cinder_garden,79,0.355882,0.134235,0.821919,9,True,cinder_garden ash garden year 1110 institutions 9,0.675918,True
+1113,1110,44,lichen_bridge,86,0.369412,0.154776,0.82007,9,True,lichen_bridge rope bridge valley year 1110 institutions 9,0.67467,True
+1114,1110,44,orchid_engine,93,0.382941,0.175318,0.818221,9,True,orchid_engine warm engine terrace year 1110 institutions 9,0.673421,True
+1115,1115,44,moss_ward,65,0.342353,0.273694,0.809368,9,True,moss_ward wet temperate ward year 1115 institutions 9,0.667439,True
+1116,1115,44,glass_harbor,72,0.355882,0.114235,0.823719,9,True,glass_harbor fog harbor year 1115 institutions 9,0.677134,True
+1117,1115,44,cinder_garden,79,0.369412,0.134776,0.82187,9,True,cinder_garden ash garden year 1115 institutions 9,0.675886,True
+1118,1115,44,lichen_bridge,86,0.382941,0.155318,0.820021,9,True,lichen_bridge rope bridge valley year 1115 institutions 9,0.674637,True
+1119,1115,44,orchid_engine,93,0.396471,0.175859,0.818173,9,True,orchid_engine warm engine terrace year 1115 institutions 9,0.673388,True
+1120,1120,44,moss_ward,65,0.355882,0.274235,0.809319,9,True,moss_ward wet temperate ward year 1120 institutions 9,0.667406,True
+1121,1120,44,glass_harbor,72,0.369412,0.114776,0.82367,9,True,glass_harbor fog harbor year 1120 institutions 9,0.677102,True
+1122,1120,44,cinder_garden,79,0.382941,0.135318,0.821821,9,True,cinder_garden ash garden year 1120 institutions 9,0.675853,True
+1123,1120,44,lichen_bridge,86,0.396471,0.155859,0.819973,9,True,lichen_bridge rope bridge valley year 1120 institutions 9,0.674604,True
+1124,1120,44,orchid_engine,93,0.18,0.1672,0.818952,9,True,orchid_engine warm engine terrace year 1120 institutions 9,0.673914,True
+1125,1125,45,moss_ward,66,0.369412,0.114776,0.82967,9,True,moss_ward wet temperate ward year 1125 institutions 9,0.683822,True
+1126,1125,45,glass_harbor,73,0.382941,0.135318,0.827821,9,True,glass_harbor fog harbor year 1125 institutions 9,0.682573,True
+1127,1125,45,cinder_garden,80,0.396471,0.155859,0.825973,9,True,cinder_garden ash garden year 1125 institutions 9,0.681324,True
+1128,1125,45,lichen_bridge,87,0.18,0.1672,0.824952,9,True,lichen_bridge rope bridge valley year 1125 institutions 9,0.680634,True
+1129,1125,45,orchid_engine,94,0.193529,0.187741,0.823103,9,True,orchid_engine warm engine terrace year 1125 institutions 9,0.679385,True
+1130,1130,45,moss_ward,66,0.382941,0.115318,0.829621,9,True,moss_ward wet temperate ward year 1130 institutions 9,0.683789,True
+1131,1130,45,glass_harbor,73,0.396471,0.135859,0.827773,9,True,glass_harbor fog harbor year 1130 institutions 9,0.68254,True
+1132,1130,45,cinder_garden,80,0.18,0.1472,0.826752,9,True,cinder_garden ash garden year 1130 institutions 9,0.68185,True
+1133,1130,45,lichen_bridge,87,0.193529,0.167741,0.824903,9,True,lichen_bridge rope bridge valley year 1130 institutions 9,0.680601,True
+1134,1130,45,orchid_engine,94,0.207059,0.188282,0.823055,9,True,orchid_engine warm engine terrace year 1130 institutions 9,0.679352,True
+1135,1135,45,moss_ward,66,0.396471,0.115859,0.829573,9,True,moss_ward wet temperate ward year 1135 institutions 9,0.683756,True
+1136,1135,45,glass_harbor,73,0.18,0.1272,0.828552,9,True,glass_harbor fog harbor year 1135 institutions 9,0.683066,True
+1137,1135,45,cinder_garden,80,0.193529,0.147741,0.826703,9,True,cinder_garden ash garden year 1135 institutions 9,0.681817,True
+1138,1135,45,lichen_bridge,87,0.207059,0.168282,0.824855,9,True,lichen_bridge rope bridge valley year 1135 institutions 9,0.680568,True
+1139,1135,45,orchid_engine,94,0.220588,0.188824,0.823006,9,True,orchid_engine warm engine terrace year 1135 institutions 9,0.67932,True
+1140,1140,45,moss_ward,66,0.18,0.1072,0.830352,9,True,moss_ward wet temperate ward year 1140 institutions 9,0.684282,True
+1141,1140,45,glass_harbor,73,0.193529,0.127741,0.828503,9,True,glass_harbor fog harbor year 1140 institutions 9,0.683033,True
+1142,1140,45,cinder_garden,80,0.207059,0.148282,0.826655,9,True,cinder_garden ash garden year 1140 institutions 9,0.681784,True
+1143,1140,45,lichen_bridge,87,0.220588,0.168824,0.824806,9,True,lichen_bridge rope bridge valley year 1140 institutions 9,0.680536,True
+1144,1140,45,orchid_engine,94,0.234118,0.189365,0.822957,9,True,orchid_engine warm engine terrace year 1140 institutions 9,0.679287,True
+1145,1145,45,moss_ward,66,0.193529,0.107741,0.830303,9,True,moss_ward wet temperate ward year 1145 institutions 9,0.684249,True
+1146,1145,45,glass_harbor,73,0.207059,0.128282,0.828455,9,True,glass_harbor fog harbor year 1145 institutions 9,0.683,True
+1147,1145,45,cinder_garden,80,0.220588,0.148824,0.826606,9,True,cinder_garden ash garden year 1145 institutions 9,0.681752,True
+1148,1145,45,lichen_bridge,87,0.234118,0.169365,0.824757,9,True,lichen_bridge rope bridge valley year 1145 institutions 9,0.680503,True
+1149,1145,45,orchid_engine,94,0.247647,0.189906,0.822908,9,True,orchid_engine warm engine terrace year 1145 institutions 9,0.679254,True
+1150,1150,46,moss_ward,66,0.207059,0.128282,0.834455,9,True,moss_ward wet temperate ward year 1150 institutions 9,0.68972,True
+1151,1150,46,glass_harbor,73,0.220588,0.148824,0.832606,9,True,glass_harbor fog harbor year 1150 institutions 9,0.688472,True
+1152,1150,46,cinder_garden,80,0.234118,0.169365,0.830757,9,True,cinder_garden ash garden year 1150 institutions 9,0.687223,True
+1153,1150,46,lichen_bridge,87,0.247647,0.189906,0.828908,9,True,lichen_bridge rope bridge valley year 1150 institutions 9,0.685974,True
+1154,1150,46,orchid_engine,94,0.261176,0.210447,0.82706,9,True,orchid_engine warm engine terrace year 1150 institutions 9,0.684725,True
+1155,1155,46,moss_ward,66,0.220588,0.128824,0.834406,9,True,moss_ward wet temperate ward year 1155 institutions 9,0.689688,True
+1156,1155,46,glass_harbor,73,0.234118,0.149365,0.832557,9,True,glass_harbor fog harbor year 1155 institutions 9,0.688439,True
+1157,1155,46,cinder_garden,80,0.247647,0.169906,0.830708,9,True,cinder_garden ash garden year 1155 institutions 9,0.68719,True
+1158,1155,46,lichen_bridge,87,0.261176,0.190447,0.82886,9,True,lichen_bridge rope bridge valley year 1155 institutions 9,0.685941,True
+1159,1155,46,orchid_engine,94,0.274706,0.210988,0.827011,9,True,orchid_engine warm engine terrace year 1155 institutions 9,0.684692,True
+1160,1160,46,moss_ward,67,0.234118,0.129365,0.834357,9,True,moss_ward wet temperate ward year 1160 institutions 9,0.689655,True
+1161,1160,46,glass_harbor,74,0.247647,0.149906,0.832508,9,True,glass_harbor fog harbor year 1160 institutions 9,0.688406,True
+1162,1160,46,cinder_garden,81,0.261176,0.170447,0.83066,9,True,cinder_garden ash garden year 1160 institutions 9,0.687157,True
+1163,1160,46,lichen_bridge,88,0.274706,0.190988,0.828811,9,True,lichen_bridge rope bridge valley year 1160 institutions 9,0.685908,True
+1164,1160,46,orchid_engine,95,0.288235,0.211529,0.826962,9,True,orchid_engine warm engine terrace year 1160 institutions 9,0.684659,True
+1165,1165,46,moss_ward,67,0.247647,0.129906,0.834308,9,True,moss_ward wet temperate ward year 1165 institutions 9,0.689622,True
+1166,1165,46,glass_harbor,74,0.261176,0.150447,0.83246,9,True,glass_harbor fog harbor year 1165 institutions 9,0.688373,True
+1167,1165,46,cinder_garden,81,0.274706,0.170988,0.830611,9,True,cinder_garden ash garden year 1165 institutions 9,0.687124,True
+1168,1165,46,lichen_bridge,88,0.288235,0.191529,0.828762,9,True,lichen_bridge rope bridge valley year 1165 institutions 9,0.685875,True
+1169,1165,46,orchid_engine,95,0.301765,0.212071,0.826914,9,True,orchid_engine warm engine terrace year 1165 institutions 9,0.684626,True
+1170,1170,46,moss_ward,67,0.261176,0.130447,0.83426,9,True,moss_ward wet temperate ward year 1170 institutions 9,0.689589,True
+1171,1170,46,glass_harbor,74,0.274706,0.150988,0.832411,9,True,glass_harbor fog harbor year 1170 institutions 9,0.68834,True
+1172,1170,46,cinder_garden,81,0.288235,0.171529,0.830562,9,True,cinder_garden ash garden year 1170 institutions 9,0.687091,True
+1173,1170,46,lichen_bridge,88,0.301765,0.192071,0.828714,9,True,lichen_bridge rope bridge valley year 1170 institutions 9,0.685842,True
+1174,1170,46,orchid_engine,95,0.315294,0.212612,0.826865,9,True,orchid_engine warm engine terrace year 1170 institutions 9,0.684593,True
+1175,1175,47,moss_ward,67,0.274706,0.150988,0.838411,9,True,moss_ward wet temperate ward year 1175 institutions 9,0.69506,True
+1176,1175,47,glass_harbor,74,0.288235,0.171529,0.836562,9,True,glass_harbor fog harbor year 1175 institutions 9,0.693811,True
+1177,1175,47,cinder_garden,81,0.301765,0.192071,0.834714,9,True,cinder_garden ash garden year 1175 institutions 9,0.692562,True
+1178,1175,47,lichen_bridge,88,0.315294,0.212612,0.832865,9,True,lichen_bridge rope bridge valley year 1175 institutions 9,0.691313,True
+1179,1175,47,orchid_engine,95,0.328824,0.233153,0.831016,9,True,orchid_engine warm engine terrace year 1175 institutions 9,0.690064,True
+1180,1180,47,moss_ward,67,0.288235,0.151529,0.838362,9,True,moss_ward wet temperate ward year 1180 institutions 9,0.695027,True
+1181,1180,47,glass_harbor,74,0.301765,0.172071,0.836514,9,True,glass_harbor fog harbor year 1180 institutions 9,0.693778,True
+1182,1180,47,cinder_garden,81,0.315294,0.192612,0.834665,9,True,cinder_garden ash garden year 1180 institutions 9,0.692529,True
+1183,1180,47,lichen_bridge,88,0.328824,0.213153,0.832816,9,True,lichen_bridge rope bridge valley year 1180 institutions 9,0.69128,True
+1184,1180,47,orchid_engine,95,0.342353,0.233694,0.830968,9,True,orchid_engine warm engine terrace year 1180 institutions 9,0.690031,True
+1185,1185,47,moss_ward,67,0.301765,0.152071,0.838314,9,True,moss_ward wet temperate ward year 1185 institutions 9,0.694994,True
+1186,1185,47,glass_harbor,74,0.315294,0.172612,0.836465,9,True,glass_harbor fog harbor year 1185 institutions 9,0.693745,True
+1187,1185,47,cinder_garden,81,0.328824,0.193153,0.834616,9,True,cinder_garden ash garden year 1185 institutions 9,0.692496,True
+1188,1185,47,lichen_bridge,88,0.342353,0.213694,0.832768,9,True,lichen_bridge rope bridge valley year 1185 institutions 9,0.691247,True
+1189,1185,47,orchid_engine,95,0.355882,0.234235,0.830919,9,True,orchid_engine warm engine terrace year 1185 institutions 9,0.689998,True
+1190,1190,47,moss_ward,67,0.315294,0.152612,0.838265,9,True,moss_ward wet temperate ward year 1190 institutions 9,0.694961,True
+1191,1190,47,glass_harbor,74,0.328824,0.173153,0.836416,9,True,glass_harbor fog harbor year 1190 institutions 9,0.693712,True
+1192,1190,47,cinder_garden,81,0.342353,0.193694,0.834568,9,True,cinder_garden ash garden year 1190 institutions 9,0.692463,True
+1193,1190,47,lichen_bridge,88,0.355882,0.214235,0.832719,9,True,lichen_bridge rope bridge valley year 1190 institutions 9,0.691214,True
+1194,1190,47,orchid_engine,95,0.369412,0.234776,0.83087,9,True,orchid_engine warm engine terrace year 1190 institutions 9,0.689966,True
+1195,1195,47,moss_ward,67,0.328824,0.153153,0.838216,9,True,moss_ward wet temperate ward year 1195 institutions 9,0.694928,True
+1196,1195,47,glass_harbor,74,0.342353,0.173694,0.836368,9,True,glass_harbor fog harbor year 1195 institutions 9,0.693679,True
+1197,1195,47,cinder_garden,81,0.355882,0.194235,0.834519,9,True,cinder_garden ash garden year 1195 institutions 9,0.69243,True
+1198,1195,47,lichen_bridge,88,0.369412,0.214776,0.83267,9,True,lichen_bridge rope bridge valley year 1195 institutions 9,0.691182,True
+1199,1195,47,orchid_engine,95,0.382941,0.235318,0.830821,9,True,orchid_engine warm engine terrace year 1195 institutions 9,0.689933,True
+1200,1200,48,moss_ward,68,0.342353,0.173694,0.842368,10,False,moss_ward wet temperate ward year 1200 institutions 10,0.700399,True
+1201,1200,48,glass_harbor,75,0.355882,0.194235,0.840519,10,False,glass_harbor fog harbor year 1200 institutions 10,0.69915,True
+1202,1200,48,cinder_garden,82,0.369412,0.214776,0.83867,10,False,cinder_garden ash garden year 1200 institutions 10,0.697902,True
+1203,1200,48,lichen_bridge,89,0.382941,0.235318,0.836821,10,False,lichen_bridge rope bridge valley year 1200 institutions 10,0.696653,True
+1204,1200,48,orchid_engine,96,0.396471,0.255859,0.834973,10,False,orchid_engine warm engine terrace year 1200 institutions 10,0.695404,True

@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v50 Thousand-Year Prehistory Bridge</title>
+<style>
+:root { --ink:#11100e; --gold:#d9ad5b; --moss:#9dbb77; --blue:#6fa9c9; --paper:#f4ead8; --line:rgba(244,234,216,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 18% 20%, rgba(217,173,91,.32), transparent 28%), radial-gradient(circle at 80% 12%, rgba(111,169,201,.22), transparent 30%), linear-gradient(135deg, #12100e, #27321e 50%, #2b2233); }
+main { display:grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(17,16,14,.76); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(217,173,91,.16); color:var(--paper); padding:8px 11px; }
+.flower { width:158px; height:158px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(244,234,216,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(157,187,119,.45), rgba(111,169,201,.42), rgba(217,173,91,.42), rgba(157,187,119,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="prehistory-panel"><h2>Thousand-year prehistory</h2><p>Avatar remains absent while populations, institutions, customs, and continuity markers accumulate for over one thousand years.</p></section>
+<section id="language-family-panel"><h2>Proto-language families</h2><p>Root counts, lexicon size, grammar complexity, dialect splits, phrases, and translation uncertainty are deterministic markers, not autonomous language claims.</p></section>
+<section id="craft-technology-panel"><h2>Craft technology lineages</h2><p>Tools, materials, apprentice depth, failure memories, practical uses, and energy budgets develop through lineage.</p></section>
+<section id="trade-route-panel"><h2>Trade route network</h2><p>Neighbor routes track goods, route age, reliability, weather risk, and reciprocal obligations.</p></section>
+<section id="lineage-memory-panel"><h2>Lineage memory</h2><p>Families remember rituals, local customs, relationship continuity, and archive markers without global private-memory dumps.</p></section>
+<section id="avatar-entry-panel"><h2>Playable avatar entry</h2><p>The avatar enters only after civilization preexists, with greeting protocol, translation uncertainty, and local custom constraints.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore prehistory, language, craft, trade, and lineage traces.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and history frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">advance prehistory epoch</button>
+<button data-action="showAvatarAbsent" onclick="showAvatarAbsent('prehistory')">show avatar absent</button>
+<button data-action="showInstitutionGrowth" onclick="showInstitutionGrowth('prehistory')">show institution growth</button>
+<button data-action="showPopulationContinuity" onclick="showPopulationContinuity('prehistory')">show population continuity</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">show proto-language</button>
+<button data-action="showDialectSplit" onclick="showDialectSplit('language')">show dialect split</button>
+<button data-action="showMutualIntelligibility" onclick="showMutualIntelligibility('language')">show mutual intelligibility</button>
+<button data-action="showLanguageBoundary" onclick="showLanguageBoundary('language')">show language boundary</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">show craft lineage</button>
+<button data-action="showToolStage" onclick="showToolStage('craft')">show tool stage</button>
+<button data-action="showApprenticeDepth" onclick="showApprenticeDepth('craft')">show apprentice depth</button>
+<button data-action="showFailureMemory" onclick="showFailureMemory('craft')">show failure memory</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">show trade route</button>
+<button data-action="showRouteReliability" onclick="showRouteReliability('trade')">show route reliability</button>
+<button data-action="showTradeObligation" onclick="showTradeObligation('trade')">show trade obligation</button>
+<button data-action="showMapRoute" onclick="showMapRoute('trade')">show map route</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">show lineage memory</button>
+<button data-action="showLocalCustom" onclick="showLocalCustom('lineage')">show local custom</button>
+<button data-action="showArchiveMarker" onclick="showArchiveMarker('lineage')">show archive marker</button>
+<button data-action="showMemoryBoundary" onclick="showMemoryBoundary('lineage')">show memory boundary</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">enter as avatar</button>
+<button data-action="showGreetingProtocol" onclick="showGreetingProtocol('avatar')">show greeting protocol</button>
+<button data-action="showTranslationUncertainty" onclick="showTranslationUncertainty('avatar')">show translation uncertainty</button>
+<button data-action="showCustomConstraint" onclick="showCustomConstraint('avatar')">show custom constraint</button>
+<button data-action="observeBeforeSpeaking" onclick="observeBeforeSpeaking('avatar')">observe before speaking</button>
+<button data-action="askTranslation" onclick="askTranslation('avatar')">ask translation</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore prehistory memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showHistoryFrequency" onclick="showHistoryFrequency('frequency')">show history frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">advance moss_ward</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">show proto-moss-breath</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">show cloak weaving</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">route to glass_harbor</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">lineage Ari-line</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">enter moss_ward</button>
+<button data-action="showGreetingProtocol" onclick="showGreetingProtocol('avatar')">greet moss_ward</button>
+<button data-action="showHistoryFrequency" onclick="showHistoryFrequency('frequency')">frequency moss_ward</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">advance glass_harbor</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">show proto-harbor-chime</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">show lamp optics</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">route to moss_ward</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">lineage Nia-line</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">enter glass_harbor</button>
+<button data-action="showGreetingProtocol" onclick="showGreetingProtocol('avatar')">greet glass_harbor</button>
+<button data-action="showHistoryFrequency" onclick="showHistoryFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">advance cinder_garden</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">show proto-cinder-pulse</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">show seed calendars</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">route to lichen_bridge</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">lineage Juno-line</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">enter cinder_garden</button>
+<button data-action="showGreetingProtocol" onclick="showGreetingProtocol('avatar')">greet cinder_garden</button>
+<button data-action="showHistoryFrequency" onclick="showHistoryFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">advance lichen_bridge</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">show proto-bridge-hum</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">show rope trusses</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">route to moss_ward</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">lineage Kio-line</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">enter lichen_bridge</button>
+<button data-action="showGreetingProtocol" onclick="showGreetingProtocol('avatar')">greet lichen_bridge</button>
+<button data-action="showHistoryFrequency" onclick="showHistoryFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">advance orchid_engine</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">show proto-engine-ring</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">show valve tools</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">route to glass_harbor</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">lineage Bea-line</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">enter orchid_engine</button>
+<button data-action="showGreetingProtocol" onclick="showGreetingProtocol('avatar')">greet orchid_engine</button>
+<button data-action="showHistoryFrequency" onclick="showHistoryFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">inspect year 0</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore year 0</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">inspect year 250</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore year 250</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">inspect year 500</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore year 500</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">inspect year 750</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore year 750</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">inspect year 1000</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore year 1000</button>
+<button data-action="advancePrehistoryEpoch" onclick="advancePrehistoryEpoch('prehistory')">inspect year 1200</button>
+<button data-action="restorePrehistoryMemory" onclick="restorePrehistoryMemory('reload')">restore year 1200</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">inspect roots</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">inspect grammar</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">inspect dialect</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">inspect phrase</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">inspect not autonomous language</button>
+<button data-action="showProtoLanguage" onclick="showProtoLanguage('language')">inspect translation risk</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">inspect apprentice</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">inspect tool failure</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">inspect material</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">inspect energy budget</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">inspect craft use</button>
+<button data-action="showCraftLineage" onclick="showCraftLineage('craft')">inspect trade good</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">inspect map</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">inspect reliability</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">inspect weather risk</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">inspect obligation</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">inspect neighbor</button>
+<button data-action="showTradeRoute" onclick="showTradeRoute('trade')">inspect route age</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">inspect custom</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">inspect ritual</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">inspect archive</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">inspect law</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">inspect relationship</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('lineage')">inspect private memory</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">choice observe</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">choice greet</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">choice ask translation</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">choice offer trade</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">choice step back</button>
+<button data-action="enterAsAvatar" onclick="enterAsAvatar('avatar')">choice history intact</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v50.prehistory';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic prehistory trace' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function advancePrehistoryEpoch(scope) { return pushTrace('advancePrehistoryEpoch', scope); }
+function showAvatarAbsent(scope) { return pushTrace('showAvatarAbsent', scope); }
+function showInstitutionGrowth(scope) { return pushTrace('showInstitutionGrowth', scope); }
+function showPopulationContinuity(scope) { return pushTrace('showPopulationContinuity', scope); }
+function showProtoLanguage(scope) { return pushTrace('showProtoLanguage', scope); }
+function showDialectSplit(scope) { return pushTrace('showDialectSplit', scope); }
+function showMutualIntelligibility(scope) { return pushTrace('showMutualIntelligibility', scope); }
+function showLanguageBoundary(scope) { return pushTrace('showLanguageBoundary', scope); }
+function showCraftLineage(scope) { return pushTrace('showCraftLineage', scope); }
+function showToolStage(scope) { return pushTrace('showToolStage', scope); }
+function showApprenticeDepth(scope) { return pushTrace('showApprenticeDepth', scope); }
+function showFailureMemory(scope) { return pushTrace('showFailureMemory', scope); }
+function showTradeRoute(scope) { return pushTrace('showTradeRoute', scope); }
+function showRouteReliability(scope) { return pushTrace('showRouteReliability', scope); }
+function showTradeObligation(scope) { return pushTrace('showTradeObligation', scope); }
+function showMapRoute(scope) { return pushTrace('showMapRoute', scope); }
+function showLineageMemory(scope) { return pushTrace('showLineageMemory', scope); }
+function showLocalCustom(scope) { return pushTrace('showLocalCustom', scope); }
+function showArchiveMarker(scope) { return pushTrace('showArchiveMarker', scope); }
+function showMemoryBoundary(scope) { return pushTrace('showMemoryBoundary', scope); }
+function enterAsAvatar(scope) { return pushTrace('enterAsAvatar', scope); }
+function showGreetingProtocol(scope) { return pushTrace('showGreetingProtocol', scope); }
+function showTranslationUncertainty(scope) { return pushTrace('showTranslationUncertainty', scope); }
+function showCustomConstraint(scope) { return pushTrace('showCustomConstraint', scope); }
+function observeBeforeSpeaking(scope) { return pushTrace('observeBeforeSpeaking', scope); }
+function askTranslation(scope) { return pushTrace('askTranslation', scope); }
+function restorePrehistoryMemory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restorePrehistoryMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(restorePrehistoryMemory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showHistoryFrequency(scope) { return pushTrace('showHistoryFrequency', scope); }
+function showRateBoundary(scope) { return pushTrace('showRateBoundary', scope); }
+</script>
+</body>
+</html>

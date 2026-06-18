@@ -1,0 +1,223 @@
+{
+  "boundary": "Deterministic browser-local thousand-year-prehistory/language-family/technology/trade/avatar-entry scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "civilizations": [
+    {
+      "base_frequency": 5.21,
+      "biome": "wet temperate ward",
+      "craft_domains": [
+        "cloak weaving",
+        "rain jar firing",
+        "path lanterns"
+      ],
+      "flower_offset": 0.021,
+      "founders": [
+        "Ari-line",
+        "Fay-line",
+        "Tala-line"
+      ],
+      "neighbor_ids": [
+        "glass_harbor",
+        "lichen_bridge"
+      ],
+      "node_id": "node-11",
+      "primary_resources": [
+        "moss fiber",
+        "rain clay",
+        "root starch"
+      ],
+      "proto_family": "proto-moss-breath",
+      "ritual_roots": [
+        "warm-cup",
+        "door-watch",
+        "blanket-share"
+      ],
+      "settlement_id": "moss_ward",
+      "trade_goods": [
+        "dry cloaks",
+        "root cakes",
+        "jar seals"
+      ]
+    },
+    {
+      "base_frequency": 6.34,
+      "biome": "fog harbor",
+      "craft_domains": [
+        "lamp optics",
+        "net knots",
+        "salt cisterns"
+      ],
+      "flower_offset": 0.034,
+      "founders": [
+        "Nia-line",
+        "Oren-line",
+        "Sera-line"
+      ],
+      "neighbor_ids": [
+        "moss_ward",
+        "orchid_engine"
+      ],
+      "node_id": "node-12",
+      "primary_resources": [
+        "salt reed",
+        "lamp oil",
+        "kelp fiber"
+      ],
+      "proto_family": "proto-harbor-chime",
+      "ritual_roots": [
+        "lamp-touch",
+        "tea-before-crossing",
+        "net-knot-thanks"
+      ],
+      "settlement_id": "glass_harbor",
+      "trade_goods": [
+        "lantern lenses",
+        "kelp cord",
+        "salt tea"
+      ]
+    },
+    {
+      "base_frequency": 8.89,
+      "biome": "ash garden",
+      "craft_domains": [
+        "seed calendars",
+        "shade rigs",
+        "ash ceramics"
+      ],
+      "flower_offset": 0.055,
+      "founders": [
+        "Juno-line",
+        "Pax-line",
+        "Wren-line"
+      ],
+      "neighbor_ids": [
+        "lichen_bridge",
+        "orchid_engine"
+      ],
+      "node_id": "node-13",
+      "primary_resources": [
+        "ember fruit",
+        "shade wood",
+        "cool stone"
+      ],
+      "proto_family": "proto-cinder-pulse",
+      "ritual_roots": [
+        "shade-bow",
+        "seed-count",
+        "cool-hand"
+      ],
+      "settlement_id": "cinder_garden",
+      "trade_goods": [
+        "seed meal",
+        "shade poles",
+        "cool bowls"
+      ]
+    },
+    {
+      "base_frequency": 7.55,
+      "biome": "rope bridge valley",
+      "craft_domains": [
+        "rope trusses",
+        "signal bells",
+        "bridge ledgers"
+      ],
+      "flower_offset": 0.044,
+      "founders": [
+        "Kio-line",
+        "Luma-line",
+        "Sol-line"
+      ],
+      "neighbor_ids": [
+        "moss_ward",
+        "cinder_garden"
+      ],
+      "node_id": "node-14",
+      "primary_resources": [
+        "lichen paste",
+        "rope reed",
+        "signal stone"
+      ],
+      "proto_family": "proto-bridge-hum",
+      "ritual_roots": [
+        "rope-touch",
+        "signal-hush",
+        "shared-bowl"
+      ],
+      "settlement_id": "lichen_bridge",
+      "trade_goods": [
+        "rope kits",
+        "signal bells",
+        "lichen soup"
+      ]
+    },
+    {
+      "base_frequency": 9.87,
+      "biome": "warm engine terrace",
+      "craft_domains": [
+        "valve tools",
+        "orchid lamps",
+        "gear washing"
+      ],
+      "flower_offset": 0.067,
+      "founders": [
+        "Bea-line",
+        "Cai-line",
+        "Eli-line"
+      ],
+      "neighbor_ids": [
+        "glass_harbor",
+        "cinder_garden"
+      ],
+      "node_id": "node-15",
+      "primary_resources": [
+        "orchid oil",
+        "valve ore",
+        "steam water"
+      ],
+      "proto_family": "proto-engine-ring",
+      "ritual_roots": [
+        "valve-pause",
+        "orchid-cup",
+        "gear-wash-thanks"
+      ],
+      "settlement_id": "orchid_engine",
+      "trade_goods": [
+        "valve keys",
+        "orchid lamps",
+        "steam tea"
+      ]
+    }
+  ],
+  "institutions": {
+    "cinder_garden": 10,
+    "glass_harbor": 10,
+    "lichen_bridge": 10,
+    "moss_ward": 10,
+    "orchid_engine": 10
+  },
+  "population": {
+    "cinder_garden": 82.055906,
+    "glass_harbor": 75.063958,
+    "lichen_bridge": 89.047855,
+    "moss_ward": 68.072009,
+    "orchid_engine": 96.039803
+  },
+  "reload_index": {
+    "cinder_garden": 61,
+    "glass_harbor": 61,
+    "lichen_bridge": 61,
+    "moss_ward": 61,
+    "orchid_engine": 61
+  },
+  "route_age": {
+    "cinder_garden->lichen_bridge": 1080,
+    "cinder_garden->orchid_engine": 1075,
+    "glass_harbor->moss_ward": 1075,
+    "glass_harbor->orchid_engine": 1080,
+    "lichen_bridge->cinder_garden": 1080,
+    "lichen_bridge->moss_ward": 1075,
+    "moss_ward->glass_harbor": 1080,
+    "moss_ward->lichen_bridge": 1075,
+    "orchid_engine->cinder_garden": 1075,
+    "orchid_engine->glass_harbor": 1080
+  }
+}

@@ -2123,3 +2123,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 358: SSRM-3D Browser World v118 Accountability Return Greeting Continuity
 
 [Primary shell accountability return greeting continuity report](docs/358_ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity_report.md): makes the next return greeting reference both the resolved resident-caused offscreen obligation and the accounted avatar-caused absence, while preserving the original offscreen resident history.
+
+### Report 359: SSRM-3D Browser World v119 Resident Accountability Social Echo
+
+[Primary shell resident accountability social echo report](docs/359_ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo_report.md): propagates the accountability-linked return greeting through resident-to-resident social memory so Fay can carry Milo's resolved obligation and accounted avatar absence without a direct avatar command.

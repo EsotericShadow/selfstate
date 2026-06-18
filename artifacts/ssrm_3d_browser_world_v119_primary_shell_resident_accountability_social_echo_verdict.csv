@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+359,pass,1.0,1.0,post-359: make the echoed accountability memory influence a later bounded conversation answer from Fay while keeping phrasebook-only language and the no-LLM boundary explicit

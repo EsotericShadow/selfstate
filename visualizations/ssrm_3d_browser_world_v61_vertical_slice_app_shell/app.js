@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -67,6 +67,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   replay: [],
   returnContinuity: null,
   returnGreetingContinuity: null,
+  accountabilitySocialEcho: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -108,6 +109,22 @@ function renderReturnGreetingContinuity() {
     `Resolved: ${world.returnGreetingContinuity.residentThreadId} ${world.returnGreetingContinuity.residentObligationStatus}`,
     `Avatar absence: ${world.returnGreetingContinuity.avatarThreadStatus}`,
     `History preserved: ${world.returnGreetingContinuity.residentHistoryPreserved ? 'yes' : 'no'}`
+  ].join('\n');
+}
+function renderAccountabilitySocialEcho() {
+  const node = document.getElementById('accountabilitySocialEchoOut');
+  if (!node) return;
+  if (!world.accountabilitySocialEcho) {
+    node.textContent = 'No resident-to-resident accountability echo yet.';
+    return;
+  }
+  node.textContent = [
+    `Echo: ${world.accountabilitySocialEcho.echo}`,
+    `Source resident: ${world.accountabilitySocialEcho.sourceResident}`,
+    `Echo resident: ${world.accountabilitySocialEcho.echoResident}`,
+    `Mentions: ${world.accountabilitySocialEcho.residentThreadId} ${world.accountabilitySocialEcho.residentObligationStatus} / avatar absence ${world.accountabilitySocialEcho.avatarThreadStatus}`,
+    `Direct avatar command: ${world.accountabilitySocialEcho.directAvatarCommand ? 'yes' : 'no'}`,
+    `History preserved: ${world.accountabilitySocialEcho.residentHistoryPreserved ? 'yes' : 'no'}`
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -213,6 +230,7 @@ function log(event, payload) {
   render();
   renderReturnContinuity();
   renderReturnGreetingContinuity();
+  renderAccountabilitySocialEcho();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -705,6 +723,7 @@ function runStateBoundaryAudit() {
     resources: world.resources,
     returnContinuity: world.returnContinuity,
     returnGreetingContinuity: world.returnGreetingContinuity,
+    accountabilitySocialEcho: world.accountabilitySocialEcho,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -810,6 +829,7 @@ function bindControls() {
   });
   renderReturnContinuity();
   renderReturnGreetingContinuity();
+  renderAccountabilitySocialEcho();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -945,8 +965,51 @@ function runSocialMemoryPulse() {
     partnerEvent: 'resident social memory witness',
     partnerDetail: memory
   }));
+  const accountabilitySocialEcho = propagateAccountabilitySocialEcho();
   recordCheckpoint('resident social pulse');
-  return log('runSocialMemoryPulse', { residentToResident: true, pairCount: pairs.length, persistentKey: RELATION_KEY });
+  return log('runSocialMemoryPulse', { residentToResident: true, pairCount: pairs.length, accountabilitySocialEcho, persistentKey: RELATION_KEY });
+}
+function propagateAccountabilitySocialEcho() {
+  const greeting = world.returnGreetingContinuity;
+  if (!greeting || greeting.resident !== 'Milo') return null;
+  const sourceResident = 'Milo';
+  const echoResident = 'Fay';
+  const residentThreadId = greeting.residentThreadId;
+  const obligation = (world.obligationLedger || []).find(row => row.id === residentThreadId);
+  const event = (world.offscreenObligationEvents || []).find(row => row.obligationId === residentThreadId);
+  const historyPreserved = Boolean(event && obligation && greeting.residentHistoryPreserved);
+  const originalCause = event ? `${event.actor} changed ${event.target}'s obligation while avatar absent` : 'original offscreen cause missing';
+  const echo = `${echoResident} heard ${sourceResident} say ${residentThreadId} stayed ${greeting.residentObligationStatus} and the avatar absence was ${greeting.avatarThreadStatus}; preserving ${originalCause}`;
+  const edge = mutateRelationship(sourceResident, echoResident, {
+    trust: 0.014,
+    debt: 0,
+    memory: echo,
+    historyEvent: 'accountability social echo source',
+    historyDetail: echo,
+    partnerEvent: 'accountability social echo witness',
+    partnerDetail: echo
+  });
+  mutateResident(echoResident, {
+    trust: 0.006,
+    progress: 0.004,
+    memory: `heard ${sourceResident} mention ${residentThreadId} was ${obligation ? obligation.status : 'missing'} and avatar absence was ${greeting.avatarThreadStatus}`,
+    historyEvent: 'resident-to-resident accountability echo',
+    historyDetail: `${echo}; direct avatar command false; history preserved ${historyPreserved ? 'yes' : 'no'}`
+  });
+  world.accountabilitySocialEcho = {
+    reportIntroduced: 359,
+    sourceResident,
+    echoResident,
+    residentThreadId,
+    residentObligationStatus: greeting.residentObligationStatus,
+    avatarThreadStatus: greeting.avatarThreadStatus,
+    residentHistoryPreserved: historyPreserved,
+    directAvatarCommand: false,
+    relationshipTrust: Number(edge.trust.toFixed(3)),
+    echo,
+    boundary: 'browser-local-accountability-social-echo-only'
+  };
+  return world.accountabilitySocialEcho;
 }
 function settleSelectedRelationship() {
   const from = world.selected;

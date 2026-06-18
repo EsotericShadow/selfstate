@@ -1527,3 +1527,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity_browser_smoke.json`, and `docs/358_ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity_report.md`.
 - Browser result: before the next return the Return greeting panel is empty; after `Enter`, Milo's greeting references `milo-offscreen-water-jars resolved/resolved` and `Avatar absence: accounted`; resident history still includes Fay changing Milo and the new return greeting linkage; schedule/debt remain resolved/settled and reload preserves the greeting.
 - Boundary: browser-local deterministic accountability return-greeting continuity only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 359 Evidence Matrix Entry
+
+- Claim: the accountability-linked return greeting can propagate through resident-to-resident social memory without a direct avatar command.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo_browser_smoke.json`, and `docs/359_ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo_report.md`.
+- Browser result: before `Run social pulse`, the Resident echo panel is empty; after the pulse, Fay hears Milo mention `milo-offscreen-water-jars resolved/resolved` and `avatar absence accounted`, the panel states `Direct avatar command: no`, relationship memory carries the echo, original Fay/Milo history remains visible, schedule/debt remain resolved/settled, and reload preserves the echo.
+- Boundary: browser-local deterministic resident accountability social echo only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

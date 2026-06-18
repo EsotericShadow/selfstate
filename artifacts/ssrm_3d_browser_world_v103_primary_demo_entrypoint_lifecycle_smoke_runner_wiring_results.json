@@ -1,0 +1,156 @@
+{
+  "boundaries": [
+    "entrypoint wiring and deterministic source verification only",
+    "no hosted URL claim",
+    "no live browser automation claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "criteria": [
+    {
+      "channel": "runner evidence",
+      "detail": "Report 342 runner results and manifest exist and the runner verdict is pass.",
+      "name": "runner_artifacts_available_and_passing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner evidence",
+      "detail": "Entrypoint wiring uses the same command as the Report 342 runner manifest.",
+      "name": "runner_command_matches_manifest",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner evidence",
+      "detail": "The wired runner still covers fresh, stale, repair, and post-repair lifecycle phases.",
+      "name": "runner_phase_coverage_retained",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint wiring",
+      "detail": "Primary demo launcher exposes a visible lifecycle-smoke section with command and policy.",
+      "name": "launcher_exposes_visible_smoke_section",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint wiring",
+      "detail": "Primary demo launcher links the Report 342 doc, results artifact, and runner manifest.",
+      "name": "launcher_links_runner_artifacts",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint wiring",
+      "detail": "Launcher hero exposes the smoke runner next to the manual playtest script.",
+      "name": "launcher_hero_has_runner_action",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest script adds MP-13 for the maintained lifecycle smoke runner.",
+      "name": "manual_playtest_has_mp13_runner_step",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest script lists the Report 342 doc, results, and manifest artifacts.",
+      "name": "manual_playtest_lists_runner_artifacts",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "The v63 entrypoint generator defines reusable smoke-runner constants.",
+      "name": "generator_preserves_runner_constants",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "The v63 generator includes MP-13 as a required manual step.",
+      "name": "generator_preserves_required_mp13",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "The v63 generator emits the visible lifecycle-smoke section and command binding.",
+      "name": "generator_generates_smoke_section",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "consolidation policy",
+      "detail": "Launcher, manual, generator, and runner manifest all direct future work toward one maintained gate.",
+      "name": "policy_blocks_lifecycle_report_sprawl",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner index",
+      "detail": "The experiment runner index includes the Report 343 verifier module.",
+      "name": "experiment_index_includes_wiring_report",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "The wiring remains honest that this is source/artifact wiring, not a live browser E2E proof.",
+      "name": "future_browser_e2e_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Boundary rejects hosted URL, live browser automation, production persistence, consciousness, moral patienthood, complete engine, and finished gameplay claims.",
+      "name": "claim_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "claim_hygiene_score": 1.0,
+    "consolidation_policy_score": 1.0,
+    "criterion_count": 15,
+    "entrypoint_wiring_score": 1.0,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "readiness": 1.0,
+    "runner_evidence_score": 1.0,
+    "runner_index_score": 1.0,
+    "runner_phase_coverage_score": 1.0,
+    "runner_weakest_channel_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-343: make the smoke-runner wiring actionable from the playable demo by adding a lightweight browser-visible preflight/status panel that explains when the runner was last regenerated and what lifecycle phase would block release",
+  "prefix": "ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring",
+  "report": 343,
+  "seed": 20270741,
+  "verdict": "pass",
+  "wiring": {
+    "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "covered_phases": [
+      "closed_origin_tab_continuity",
+      "cross_tab_prepared_resume_visible",
+      "hard_reload_continuity",
+      "repaired_continue_return_refresh",
+      "stale_reprepare_repair",
+      "stale_supersession_calibration"
+    ],
+    "entrypoint_html": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "generator": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+    "manual_playtest": "visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md",
+    "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+    "runner_manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+    "runner_results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json"
+  }
+}

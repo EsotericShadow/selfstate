@@ -1,0 +1,16 @@
+name,passed,score,channel,detail
+runner_artifacts_available_and_passing,True,1.0,runner evidence,Report 342 runner results and manifest exist and the runner verdict is pass.
+runner_command_matches_manifest,True,1.0,runner evidence,Entrypoint wiring uses the same command as the Report 342 runner manifest.
+runner_phase_coverage_retained,True,1.0,runner evidence,"The wired runner still covers fresh, stale, repair, and post-repair lifecycle phases."
+launcher_exposes_visible_smoke_section,True,1.0,entrypoint wiring,Primary demo launcher exposes a visible lifecycle-smoke section with command and policy.
+launcher_links_runner_artifacts,True,1.0,entrypoint wiring,"Primary demo launcher links the Report 342 doc, results artifact, and runner manifest."
+launcher_hero_has_runner_action,True,1.0,entrypoint wiring,Launcher hero exposes the smoke runner next to the manual playtest script.
+manual_playtest_has_mp13_runner_step,True,1.0,manual path,Manual playtest script adds MP-13 for the maintained lifecycle smoke runner.
+manual_playtest_lists_runner_artifacts,True,1.0,manual path,"Manual playtest script lists the Report 342 doc, results, and manifest artifacts."
+generator_preserves_runner_constants,True,1.0,generator durability,The v63 entrypoint generator defines reusable smoke-runner constants.
+generator_preserves_required_mp13,True,1.0,generator durability,The v63 generator includes MP-13 as a required manual step.
+generator_generates_smoke_section,True,1.0,generator durability,The v63 generator emits the visible lifecycle-smoke section and command binding.
+policy_blocks_lifecycle_report_sprawl,True,1.0,consolidation policy,"Launcher, manual, generator, and runner manifest all direct future work toward one maintained gate."
+experiment_index_includes_wiring_report,True,1.0,runner index,The experiment runner index includes the Report 343 verifier module.
+future_browser_e2e_boundary_preserved,True,1.0,claim hygiene,"The wiring remains honest that this is source/artifact wiring, not a live browser E2E proof."
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects hosted URL, live browser automation, production persistence, consciousness, moral patienthood, complete engine, and finished gameplay claims."

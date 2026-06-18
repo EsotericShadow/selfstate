@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,command,next_gate
+343,pass,1.0,python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner,post-343: make the smoke-runner wiring actionable from the playable demo by adding a lightweight browser-visible preflight/status panel that explains when the runner was last regenerated and what lifecycle phase would block release

@@ -16,6 +16,7 @@
         <a class="button primary" id="cleanLaunch" href="../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63">Launch clean demo</a>
         <a class="button" id="resumeLaunch" href="../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63">Resume demo</a>
         <a class="button quiet" href="manual_playtest.md">Manual playtest script</a>
+        <a class="button quiet" href="../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md">Lifecycle smoke runner</a>
       </div>
     </section>
     <section class="boundary" id="boundary">
@@ -46,6 +47,17 @@
       <div id="outsideReviewHandoffActions" class="actions compact" aria-label="Prepared handoff actions"></div>
       <pre id="outsideReviewHandoffOut"></pre>
     </section>
+    <section class="lifecycle-smoke" id="lifecycleSmokeRunner" data-lifecycle-smoke-runner="python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner">
+      <h2>Maintained lifecycle smoke runner</h2>
+      <p>Future primary-demo handoff changes should run one maintained gate before adding another lifecycle variant report.</p>
+      <p>Command: <code id="lifecycleSmokeRunnerCommand">python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner</code></p>
+      <p>Policy: <span id="lifecycleSmokeRunnerPolicy">Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.</span></p>
+      <ul>
+        <li><a id="lifecycleSmokeRunnerReport" href="../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md">Report 342 lifecycle smoke runner</a></li>
+        <li><a id="lifecycleSmokeRunnerResults" href="../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json">Report 342 results artifact</a></li>
+        <li><a id="lifecycleSmokeRunnerManifest" href="../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json">Report 342 runner manifest</a></li>
+      </ul>
+    </section>
     <section class="grid">
       <article>
         <h2>Manual playtest spine</h2>
@@ -60,7 +72,8 @@
 <li><strong>MP-09</strong>: Run the built-in playtest checklist. <span>Checklist reports 10 checks and all pass.</span></li>
 <li><strong>MP-10</strong>: Run state-boundary, save/restore smoke, and Audit after rollback hooks. <span>The audit-after-rollback row passes with rollbackTested, smokePass, and auditPass all true.</span></li>
 <li><strong>MP-11</strong>: Export replay from the UI. <span>A prepared replay export link appears and export bytes are nonzero.</span></li>
-<li><strong>MP-12</strong>: Close the shell, reopen the primary launcher, then use Resume demo. <span>The resumed shell keeps persisted world state unless Clean demo is used.</span></li></ol>
+<li><strong>MP-12</strong>: Close the shell, reopen the primary launcher, then use Resume demo. <span>The resumed shell keeps persisted world state unless Clean demo is used.</span></li>
+<li><strong>MP-13</strong>: Run the maintained lifecycle smoke runner: python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner. <span>Report 342 reports pass with full fresh/stale/repair/post-repair phase coverage and 0 aggregated console errors.</span></li></ol>
       </article>
       <article>
         <h2>Scope guards</h2>
@@ -68,7 +81,8 @@
 <li>The manual script uses Report 302 browser evidence as the baseline, not as a substitute for future human playtests.</li>
 <li>The launcher gives clean and resume paths so persistence bugs can be reproduced rather than hidden.</li>
 <li>The boundary remains visible before launch and inside the shell.</li>
-<li>Future browser-world work should patch this shell unless a defect proves a new surface is necessary.</li></ul>
+<li>Future browser-world work should patch this shell unless a defect proves a new surface is necessary.</li>
+<li>Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.</li></ul>
       </article>
     </section>
     <section class="recorder" id="manualRecorder">
@@ -85,7 +99,8 @@
 <li><span><strong>MP-09</strong> the internal QA hooks still cover the maintained tasks</span><button data-record-step="MP-09" data-record-result="pass">Pass</button><button data-record-step="MP-09" data-record-result="fail">Fail</button></li>
 <li><span><strong>MP-10</strong> traceability remains bounded and inspectable</span><button data-record-step="MP-10" data-record-result="pass">Pass</button><button data-record-step="MP-10" data-record-result="fail">Fail</button></li>
 <li><span><strong>MP-11</strong> review/debug evidence can be captured without relying on blocked downloads</span><button data-record-step="MP-11" data-record-result="pass">Pass</button><button data-record-step="MP-11" data-record-result="fail">Fail</button></li>
-<li><span><strong>MP-12</strong> leave/return continuity is part of the manual review path</span><button data-record-step="MP-12" data-record-result="pass">Pass</button><button data-record-step="MP-12" data-record-result="fail">Fail</button></li></ol>
+<li><span><strong>MP-12</strong> leave/return continuity is part of the manual review path</span><button data-record-step="MP-12" data-record-result="pass">Pass</button><button data-record-step="MP-12" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-13</strong> handoff lifecycle changes exercise one maintained smoke surface before new variants are added</span><button data-record-step="MP-13" data-record-result="pass">Pass</button><button data-record-step="MP-13" data-record-result="fail">Fail</button></li></ol>
       <label class="defect-box">Defect note
         <textarea id="defectNote" rows="4" placeholder="Example: MP-08 failed because restore did not roll back after moving west."></textarea>
       </label>
@@ -102,7 +117,8 @@
 <option value="MP-09">MP-09: Run the built-in playtest checklist.</option>
 <option value="MP-10">MP-10: Run state-boundary, save/restore smoke, and Audit after rollback hooks.</option>
 <option value="MP-11">MP-11: Export replay from the UI.</option>
-<option value="MP-12">MP-12: Close the shell, reopen the primary launcher, then use Resume demo.</option></select>
+<option value="MP-12">MP-12: Close the shell, reopen the primary launcher, then use Resume demo.</option>
+<option value="MP-13">MP-13: Run the maintained lifecycle smoke runner: python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner.</option></select>
         </label>
         <label>Severity
           <select id="defectSeverity">

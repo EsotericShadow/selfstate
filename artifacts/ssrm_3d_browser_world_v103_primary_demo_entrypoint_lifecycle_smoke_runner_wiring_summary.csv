@@ -1,0 +1,2 @@
+report,seed,verdict,readiness,weakest_channel_score,runner_evidence_score,entrypoint_wiring_score,manual_path_score,generator_durability_score,consolidation_policy_score,runner_index_score,claim_hygiene_score,runner_phase_coverage_score,runner_weakest_channel_score,criterion_count
+343,20270741,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,15

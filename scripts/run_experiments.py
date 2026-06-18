@@ -4052,6 +4052,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v100_primary_demo_repaired_handoff_continue_return_freshness_bridge",
         "experiments.ssrm_3d_browser_world_v101_primary_demo_lifecycle_smoke_contract",
         "experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+        "experiments.ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring",
         "--seed",
         "20270732",
     ],

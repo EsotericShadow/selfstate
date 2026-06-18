@@ -28,6 +28,7 @@ Boundary: Primary demo packaging for the deterministic browser-local maintained 
 | MP-10 | Run state-boundary, save/restore smoke, and Audit after rollback hooks. | The audit-after-rollback row passes with rollbackTested, smokePass, and auditPass all true. | traceability remains bounded and inspectable |
 | MP-11 | Export replay from the UI. | A prepared replay export link appears and export bytes are nonzero. | review/debug evidence can be captured without relying on blocked downloads |
 | MP-12 | Close the shell, reopen the primary launcher, then use Resume demo. | The resumed shell keeps persisted world state unless Clean demo is used. | leave/return continuity is part of the manual review path |
+| MP-13 | Run the maintained lifecycle smoke runner: python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner. | Report 342 reports pass with full fresh/stale/repair/post-repair phase coverage and 0 aggregated console errors. | handoff lifecycle changes exercise one maintained smoke surface before new variants are added |
 
 ## Scope guards
 
@@ -36,6 +37,19 @@ Boundary: Primary demo packaging for the deterministic browser-local maintained 
 - The launcher gives clean and resume paths so persistence bugs can be reproduced rather than hidden.
 - The boundary remains visible before launch and inside the shell.
 - Future browser-world work should patch this shell unless a defect proves a new surface is necessary.
+- Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.
+
+## Maintained lifecycle smoke runner
+
+Future primary-demo handoff changes should run one maintained gate before adding another lifecycle variant report.
+
+Command: `python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner`
+
+Artifacts:
+
+- Report: `docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md`
+- Results: `artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json`
+- Manifest: `artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json`
 
 ## Outside-review checklist
 

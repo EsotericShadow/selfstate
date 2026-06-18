@@ -38,6 +38,11 @@ DEFECT_LEDGER_KEY = "ssrm_primary_demo_defect_ledger"
 RECORDER_EXPORT_KEY = "ssrm_primary_demo_recorder_export"
 OUTSIDE_REVIEW_KEY = "ssrm_primary_demo_outside_review_checklist"
 OUTSIDE_REVIEW_EXPORT_KEY = "ssrm_primary_demo_outside_review_handoff"
+LIFECYCLE_SMOKE_RUNNER_COMMAND = "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner"
+LIFECYCLE_SMOKE_RUNNER_REPORT_REL = "../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md"
+LIFECYCLE_SMOKE_RUNNER_RESULTS_REL = "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json"
+LIFECYCLE_SMOKE_RUNNER_MANIFEST_REL = "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json"
+LIFECYCLE_SMOKE_RUNNER_POLICY = "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report."
 
 BOUNDARY = (
     "Primary demo packaging for the deterministic browser-local maintained app shell only; "
@@ -137,6 +142,13 @@ MANUAL_PLAYTEST_STEPS: list[dict[str, Any]] = [
         "proves": "leave/return continuity is part of the manual review path",
         "required": True,
     },
+    {
+        "step_id": "MP-13",
+        "action": f"Run the maintained lifecycle smoke runner: {LIFECYCLE_SMOKE_RUNNER_COMMAND}.",
+        "expected_evidence": "Report 342 reports pass with full fresh/stale/repair/post-repair phase coverage and 0 aggregated console errors.",
+        "proves": "handoff lifecycle changes exercise one maintained smoke surface before new variants are added",
+        "required": True,
+    },
 ]
 
 SCOPE_GUARDS = [
@@ -145,6 +157,7 @@ SCOPE_GUARDS = [
     "The launcher gives clean and resume paths so persistence bugs can be reproduced rather than hidden.",
     "The boundary remains visible before launch and inside the shell.",
     "Future browser-world work should patch this shell unless a defect proves a new surface is necessary.",
+    LIFECYCLE_SMOKE_RUNNER_POLICY,
 ]
 
 OUTSIDE_REVIEW_CHECKLIST: list[dict[str, str]] = [
@@ -261,6 +274,7 @@ def _html() -> str:
         <a class=\"button primary\" id=\"cleanLaunch\" href=\"{CLEAN_LAUNCH_REL}\">Launch clean demo</a>
         <a class=\"button\" id=\"resumeLaunch\" href=\"{RESUME_LAUNCH_REL}\">Resume demo</a>
         <a class=\"button quiet\" href=\"manual_playtest.md\">Manual playtest script</a>
+        <a class=\"button quiet\" href=\"{LIFECYCLE_SMOKE_RUNNER_REPORT_REL}\">Lifecycle smoke runner</a>
       </div>
     </section>
     <section class=\"boundary\" id=\"boundary\">
@@ -284,6 +298,17 @@ def _html() -> str:
       <p id=\"outsideReviewHandoffStatus\">No outside-review handoff export prepared yet.</p>
       <div id=\"outsideReviewHandoffActions\" class=\"actions compact\" aria-label=\"Prepared handoff actions\"></div>
       <pre id=\"outsideReviewHandoffOut\"></pre>
+    </section>
+    <section class=\"lifecycle-smoke\" id=\"lifecycleSmokeRunner\" data-lifecycle-smoke-runner=\"{LIFECYCLE_SMOKE_RUNNER_COMMAND}\">
+      <h2>Maintained lifecycle smoke runner</h2>
+      <p>Future primary-demo handoff changes should run one maintained gate before adding another lifecycle variant report.</p>
+      <p>Command: <code id=\"lifecycleSmokeRunnerCommand\">{LIFECYCLE_SMOKE_RUNNER_COMMAND}</code></p>
+      <p>Policy: <span id=\"lifecycleSmokeRunnerPolicy\">{LIFECYCLE_SMOKE_RUNNER_POLICY}</span></p>
+      <ul>
+        <li><a id=\"lifecycleSmokeRunnerReport\" href=\"{LIFECYCLE_SMOKE_RUNNER_REPORT_REL}\">Report 342 lifecycle smoke runner</a></li>
+        <li><a id=\"lifecycleSmokeRunnerResults\" href=\"{LIFECYCLE_SMOKE_RUNNER_RESULTS_REL}\">Report 342 results artifact</a></li>
+        <li><a id=\"lifecycleSmokeRunnerManifest\" href=\"{LIFECYCLE_SMOKE_RUNNER_MANIFEST_REL}\">Report 342 runner manifest</a></li>
+      </ul>
     </section>
     <section class=\"grid\">
       <article>
@@ -580,7 +605,7 @@ body {
     linear-gradient(135deg, #f4e6c3, #f8f2df 52%, #e2d3ae);
 }
 .demo-shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 42px 0; }
-.hero, .boundary, article, .handoff, .outside-review {
+.hero, .boundary, article, .handoff, .outside-review, .lifecycle-smoke {
   border: 1px solid var(--line);
   background: rgba(255, 249, 232, 0.88);
   box-shadow: 0 20px 60px rgba(63, 46, 22, 0.13);

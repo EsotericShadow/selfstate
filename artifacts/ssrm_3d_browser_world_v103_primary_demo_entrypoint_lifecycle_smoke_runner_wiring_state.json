@@ -1,0 +1,37 @@
+{
+  "metrics": {
+    "claim_hygiene_score": 1.0,
+    "consolidation_policy_score": 1.0,
+    "criterion_count": 15,
+    "entrypoint_wiring_score": 1.0,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "readiness": 1.0,
+    "runner_evidence_score": 1.0,
+    "runner_index_score": 1.0,
+    "runner_phase_coverage_score": 1.0,
+    "runner_weakest_channel_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-343: make the smoke-runner wiring actionable from the playable demo by adding a lightweight browser-visible preflight/status panel that explains when the runner was last regenerated and what lifecycle phase would block release",
+  "report": 343,
+  "seed": 20270741,
+  "verdict": "pass",
+  "wiring": {
+    "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "covered_phases": [
+      "closed_origin_tab_continuity",
+      "cross_tab_prepared_resume_visible",
+      "hard_reload_continuity",
+      "repaired_continue_return_refresh",
+      "stale_reprepare_repair",
+      "stale_supersession_calibration"
+    ],
+    "entrypoint_html": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "generator": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+    "manual_playtest": "visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md",
+    "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+    "runner_manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+    "runner_results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json"
+  }
+}

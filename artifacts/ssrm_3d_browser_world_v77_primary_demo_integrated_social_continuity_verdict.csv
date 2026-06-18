@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_integrated_loop_score,next_gate
+317,pass,1.0,1.0,1.0,"post-317: reduce reviewer friction by turning the integrated continuity loop into a compact scenario receipt with pass/fail fields for movement, schedule, obligations, resident social ties, replay, and resume"

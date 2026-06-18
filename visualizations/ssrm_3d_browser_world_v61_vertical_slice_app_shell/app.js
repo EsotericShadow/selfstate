@@ -283,18 +283,21 @@ function runContinuityLoop() {
   apologizeToResident();
   giveSpace();
   completeTrustRepair();
+  runSocialMemoryPulse();
+  settleSelectedRelationship();
   saveWorld();
   exportReplay();
   recordCheckpoint('continuity loop complete');
   return log('runContinuityLoop', {
-    scenario: 'arrival schedule debt offscreen trust-repair save resume replay',
+    scenario: 'arrival schedule debt offscreen trust-repair resident-social-memory save resume replay',
     resident: world.selected,
     beforeRows,
     afterRows: world.replay.length,
     sameSurface: true,
     saved: true,
     replayPrepared: true,
-    nonMagicRepair: true
+    nonMagicRepair: true,
+    residentToResident: true
   });
 }
 function cloneDefaultRelationships() {
@@ -379,19 +382,22 @@ Recent public history:
 ${recent || 'no trust repair events yet'}`;
 }
 function formatContinuityLoopStatus() {
-  const required = ['enterWorld', 'askSchedule', 'borrowTool', 'waitOffscreen', 'interruptWork', 'apologizeToResident', 'giveSpace', 'completeTrustRepair', 'saveWorld', 'exportReplay', 'runContinuityLoop'];
+  const required = ['enterWorld', 'askSchedule', 'borrowTool', 'waitOffscreen', 'interruptWork', 'apologizeToResident', 'giveSpace', 'completeTrustRepair', 'runSocialMemoryPulse', 'settleSelectedRelationship', 'saveWorld', 'exportReplay', 'runContinuityLoop'];
   const events = world.replay.map(row => row.event);
   const present = required.filter(event => events.includes(event));
   const resident = currentResident();
   const rows = readResidentHistory()[world.selected] || [];
   const checkpoints = readCheckpoints();
   const exportBytes = (localStorage.getItem(EXPORT_KEY) || '').length;
+  const relationship = formatRelationshipMemory().split('\n').slice(0, 5).join('\n');
   const recentEvents = world.replay.slice(-12).map(row => `t${row.tick} ${row.event}`).join('\n');
   const publicHistory = rows.slice(-6).map(row => `t${row.tick} ${row.event}: ${row.detail}`).join('\n');
   return `Selected: ${world.selected} | entered=${world.entered} | room=${world.avatar.room}
 Loop coverage: ${present.length}/${required.length} -> ${present.join(', ')}
 Resident: ${resident.schedule} | debt ${resident.debt} | trust ${resident.trust.toFixed(3)} | progress ${resident.progress.toFixed(3)} | memory: ${resident.memory}
 Continuity signals: history ${rows.length} | checkpoints ${checkpoints.length} | replay rows ${world.replay.length} | export bytes ${exportBytes}
+Relationship excerpt:
+${relationship}
 Recent loop events:
 ${recentEvents || 'run the continuity loop to create an integrated sequence'}
 Recent selected-resident history:

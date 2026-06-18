@@ -20,6 +20,8 @@ Report 315 adds one continuity-loop walkthrough to the same maintained shell, ty
 
 Report 316 adds resident-to-resident social memory to the same primary shell: a public relationship ledger, social-memory pulse, and selected relationship settlement now show residents remembering each other across replay, history, checkpoints, and resume. This is public relationship continuity, not subjective memory or moral patienthood.
 
+Report 317 folds that resident-to-resident social memory into the main continuity-loop button. The integrated loop now covers avatar arrival, schedule/debt consequence, offscreen change, bounded trust repair, resident social-memory pulse, selected relationship settlement, save/resume, and replay/export evidence together on the same maintained shell.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

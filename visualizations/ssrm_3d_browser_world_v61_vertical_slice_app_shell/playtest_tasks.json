@@ -1,0 +1,102 @@
+[
+  {
+    "action": "click Enter",
+    "core_loop": "arrival",
+    "evidence_key": "entered",
+    "expected_visible_result": "avatar enters arrival court and boundary remains visible",
+    "mandatory": true,
+    "setup": "fresh or restored page",
+    "task_id": "PT-01",
+    "title": "Enter world"
+  },
+  {
+    "action": "click canvas or movement buttons",
+    "core_loop": "movement",
+    "evidence_key": "avatar",
+    "expected_visible_result": "avatar position and room update",
+    "mandatory": true,
+    "setup": "entered world",
+    "task_id": "PT-02",
+    "title": "Move on canvas"
+  },
+  {
+    "action": "choose phrase and click Talk",
+    "core_loop": "conversation",
+    "evidence_key": "replay.talkBounded",
+    "expected_visible_result": "reply is bounded and no LLM claim appears",
+    "mandatory": true,
+    "setup": "resident selected",
+    "task_id": "PT-03",
+    "title": "Bounded conversation"
+  },
+  {
+    "action": "click Ask Schedule",
+    "core_loop": "schedule",
+    "evidence_key": "scheduleOut",
+    "expected_visible_result": "schedule panel and replay row show schedule",
+    "mandatory": true,
+    "setup": "resident selected",
+    "task_id": "PT-04",
+    "title": "Inspect schedule"
+  },
+  {
+    "action": "borrow and return tool",
+    "core_loop": "consequence",
+    "evidence_key": "debtOut",
+    "expected_visible_result": "debt/trust changes are visible and recoverable",
+    "mandatory": true,
+    "setup": "resident selected",
+    "task_id": "PT-05",
+    "title": "Debt consequence"
+  },
+  {
+    "action": "click Wait offscreen",
+    "core_loop": "offscreen",
+    "evidence_key": "progress",
+    "expected_visible_result": "resident progress changes without avatar command",
+    "mandatory": true,
+    "setup": "any resident selected",
+    "task_id": "PT-06",
+    "title": "Offscreen life"
+  },
+  {
+    "action": "run Save then Restore",
+    "core_loop": "persistence",
+    "evidence_key": "STATE_KEY",
+    "expected_visible_result": "room/resident state survives localStorage round trip",
+    "mandatory": true,
+    "setup": "world changed",
+    "task_id": "PT-07",
+    "title": "Save restore"
+  },
+  {
+    "action": "run State Boundary Audit",
+    "core_loop": "audit",
+    "evidence_key": "QA_KEY",
+    "expected_visible_result": "private workspace and LLM transcript keys are absent",
+    "mandatory": true,
+    "setup": "world changed",
+    "task_id": "PT-08",
+    "title": "Audit boundary"
+  },
+  {
+    "action": "click Export replay",
+    "core_loop": "replay",
+    "evidence_key": "REPLAY_KEY",
+    "expected_visible_result": "JSON replay download is prepared",
+    "mandatory": true,
+    "setup": "several actions taken",
+    "task_id": "PT-09",
+    "title": "Replay export"
+  },
+  {
+    "action": "resize below 980px",
+    "core_loop": "interface",
+    "evidence_key": "CSS media query",
+    "expected_visible_result": "single-column layout remains usable",
+    "mandatory": false,
+    "setup": "narrow viewport",
+    "task_id": "PT-10",
+    "title": "Mobile layout"
+  }
+]

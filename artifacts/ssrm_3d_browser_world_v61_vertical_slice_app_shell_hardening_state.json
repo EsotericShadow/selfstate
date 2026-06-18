@@ -1,0 +1,86 @@
+{
+  "app_shell_files": [
+    {
+      "depends_on": "styles.css, app.js",
+      "generated": true,
+      "owns": "DOM layout",
+      "path": "index.html",
+      "purpose": "browser entry point",
+      "stable_boundary": true
+    },
+    {
+      "depends_on": "index.html",
+      "generated": true,
+      "owns": "presentation",
+      "path": "styles.css",
+      "purpose": "visual and responsive shell",
+      "stable_boundary": true
+    },
+    {
+      "depends_on": "index.html",
+      "generated": true,
+      "owns": "state/actions/QA hooks",
+      "path": "app.js",
+      "purpose": "single world-state runtime",
+      "stable_boundary": true
+    },
+    {
+      "depends_on": "app.js",
+      "generated": true,
+      "owns": "playtest tasks",
+      "path": "playtest_tasks.json",
+      "purpose": "user-facing checklist",
+      "stable_boundary": true
+    },
+    {
+      "depends_on": "app.js",
+      "generated": true,
+      "owns": "QA contract",
+      "path": "qa_manifest.json",
+      "purpose": "state boundary and QA hook manifest",
+      "stable_boundary": true
+    },
+    {
+      "depends_on": "index.html",
+      "generated": true,
+      "owns": "manual use",
+      "path": "README.md",
+      "purpose": "operator instructions",
+      "stable_boundary": true
+    }
+  ],
+  "boundary": "Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.",
+  "direct_qa_hook_ids": [
+    "QA-01",
+    "QA-02",
+    "QA-03",
+    "QA-04",
+    "QA-05",
+    "QA-06"
+  ],
+  "next_gate": "post-301 direct browser QA pass: open the maintained app shell, execute the built-in playtest checklist, inspect saved localStorage state, export replay, and fix runtime issues before adding any new simulation organs",
+  "playtest_task_ids": [
+    "PT-01",
+    "PT-02",
+    "PT-03",
+    "PT-04",
+    "PT-05",
+    "PT-06",
+    "PT-07",
+    "PT-08",
+    "PT-09",
+    "PT-10"
+  ],
+  "report": 301,
+  "seed": 20270616,
+  "state_keys": [
+    "ssrm_v61_app_shell_world",
+    "ssrm_v61_app_shell_replay",
+    "ssrm_v61_app_shell_qa_results",
+    "residents.*.memory",
+    "residents.*.trust",
+    "residents.*.debt",
+    "avatar",
+    "boundary"
+  ]
+}

@@ -1,0 +1,11 @@
+task_id,title,setup,action,expected_visible_result,evidence_key,core_loop,mandatory
+PT-01,Enter world,fresh or restored page,click Enter,avatar enters arrival court and boundary remains visible,entered,arrival,True
+PT-02,Move on canvas,entered world,click canvas or movement buttons,avatar position and room update,avatar,movement,True
+PT-03,Bounded conversation,resident selected,choose phrase and click Talk,reply is bounded and no LLM claim appears,replay.talkBounded,conversation,True
+PT-04,Inspect schedule,resident selected,click Ask Schedule,schedule panel and replay row show schedule,scheduleOut,schedule,True
+PT-05,Debt consequence,resident selected,borrow and return tool,debt/trust changes are visible and recoverable,debtOut,consequence,True
+PT-06,Offscreen life,any resident selected,click Wait offscreen,resident progress changes without avatar command,progress,offscreen,True
+PT-07,Save restore,world changed,run Save then Restore,room/resident state survives localStorage round trip,STATE_KEY,persistence,True
+PT-08,Audit boundary,world changed,run State Boundary Audit,private workspace and LLM transcript keys are absent,QA_KEY,audit,True
+PT-09,Replay export,several actions taken,click Export replay,JSON replay download is prepared,REPLAY_KEY,replay,True
+PT-10,Mobile layout,narrow viewport,resize below 980px,single-column layout remains usable,CSS media query,interface,False

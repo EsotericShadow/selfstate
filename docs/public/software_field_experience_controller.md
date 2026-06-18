@@ -524,3 +524,8 @@ Report 299 adds the inspection layer required before a credible playable vertica
 ## Report 300: Browser World v60 Consolidated Playable Vertical Slice Build
 
 Report 300 is the first consolidated playable vertical slice: one browser artifact for entering the world, moving, bounded conversation, schedules, debts, memory, offscreen life, visible consequence, save/restore, and audit replay. The deterministic run passes with readiness `0.949754` and weakest-channel score `0.858000` across 5400 browser ticks and 180 controls. The honest limit is `first_vertical_slice_not_outsider_ready_product`: this is now a coherent vertical-slice prototype, not yet an outsider-ready product, complete 3D engine, production system, autonomous language system, or consciousness claim.
+
+
+## Report 301: Browser World v61 Vertical Slice App-Shell Hardening
+
+Report 301 starts post-300 hardening by turning the first playable vertical slice into a maintained app shell with separated HTML/CSS/JS, playtest tasks, QA manifest, state-boundary rules, and browser-callable QA hooks. The deterministic run passes with readiness `0.947050` and weakest-channel score `0.862000`. The honest limit is `not_runtime_browser_verified_yet`: the shell now has direct QA hooks, but the browser runtime pass is still the next gate.

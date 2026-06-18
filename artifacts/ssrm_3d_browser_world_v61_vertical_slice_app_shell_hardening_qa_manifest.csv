@@ -1,0 +1,15 @@
+kind,state_key,owner,allowed_mutations,persistence,private_workspace_visible,audit_rule,hook_id,js_function,target,assertion,stores_result_key,browser_executable
+state_boundary,ssrm_v61_app_shell_world,app.js,core avatar/resident/resource changes,localStorage,False,"no privateWorkspace, subjectiveFeeling, or llmTranscript keys",,,,,,
+state_boundary,ssrm_v61_app_shell_replay,app.js,append public action rows only,localStorage,False,replay rows contain public action payloads only,,,,,,
+state_boundary,ssrm_v61_app_shell_qa_results,app.js,QA hook result writes,localStorage,False,QA output stores pass/fail summaries only,,,,,,
+state_boundary,residents.*.memory,app.js,public memory note updates,world state,False,memory notes are public relationship summaries,,,,,,
+state_boundary,residents.*.trust,app.js,bounded numeric deltas,world state,False,trust remains clamped 0..1,,,,,,
+state_boundary,residents.*.debt,app.js,bounded nonnegative deltas,world state,False,debt never drops below zero,,,,,,
+state_boundary,avatar,app.js,movement and room changes,world state,False,avatar state is public playable state,,,,,,
+state_boundary,boundary,index.html/app.js,display only,DOM text,False,boundary remains visible in UI,,,,,,
+direct_qa_hook,,,,,,,QA-01,runPlaytestChecklist,playtestTasks,all mandatory task rows are represented,ssrm_v61_app_shell_qa_results,True
+direct_qa_hook,,,,,,,QA-02,runStateBoundaryAudit,world JSON,forbidden private/LLM keys absent,ssrm_v61_app_shell_qa_results,True
+direct_qa_hook,,,,,,,QA-03,runSaveRestoreSmoke,localStorage world,avatar state survives round trip,ssrm_v61_app_shell_qa_results,True
+direct_qa_hook,,,,,,,QA-04,runAllQAHooks,QA hook group,all direct hooks execute from UI,ssrm_v61_app_shell_qa_results,True
+direct_qa_hook,,,,,,,QA-05,exportReplay,replay rows,download path prepares public JSON,ssrm_v61_app_shell_replay,True
+direct_qa_hook,,,,,,,QA-06,toggleAudit,audit panel,audit overlay is visible without private workspace,ssrm_v61_app_shell_world,True

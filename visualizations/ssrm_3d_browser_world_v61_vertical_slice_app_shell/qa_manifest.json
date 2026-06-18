@@ -1,0 +1,120 @@
+{
+  "boundary": "Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.",
+  "direct_qa_hooks": [
+    {
+      "assertion": "all mandatory task rows are represented",
+      "browser_executable": true,
+      "hook_id": "QA-01",
+      "js_function": "runPlaytestChecklist",
+      "stores_result_key": "ssrm_v61_app_shell_qa_results",
+      "target": "playtestTasks"
+    },
+    {
+      "assertion": "forbidden private/LLM keys absent",
+      "browser_executable": true,
+      "hook_id": "QA-02",
+      "js_function": "runStateBoundaryAudit",
+      "stores_result_key": "ssrm_v61_app_shell_qa_results",
+      "target": "world JSON"
+    },
+    {
+      "assertion": "avatar state survives round trip",
+      "browser_executable": true,
+      "hook_id": "QA-03",
+      "js_function": "runSaveRestoreSmoke",
+      "stores_result_key": "ssrm_v61_app_shell_qa_results",
+      "target": "localStorage world"
+    },
+    {
+      "assertion": "all direct hooks execute from UI",
+      "browser_executable": true,
+      "hook_id": "QA-04",
+      "js_function": "runAllQAHooks",
+      "stores_result_key": "ssrm_v61_app_shell_qa_results",
+      "target": "QA hook group"
+    },
+    {
+      "assertion": "download path prepares public JSON",
+      "browser_executable": true,
+      "hook_id": "QA-05",
+      "js_function": "exportReplay",
+      "stores_result_key": "ssrm_v61_app_shell_replay",
+      "target": "replay rows"
+    },
+    {
+      "assertion": "audit overlay is visible without private workspace",
+      "browser_executable": true,
+      "hook_id": "QA-06",
+      "js_function": "toggleAudit",
+      "stores_result_key": "ssrm_v61_app_shell_world",
+      "target": "audit panel"
+    }
+  ],
+  "source_v60": "artifacts/ssrm_3d_browser_world_v60_consolidated_playable_vertical_slice_build_results.json",
+  "state_boundary_rules": [
+    {
+      "allowed_mutations": "core avatar/resident/resource changes",
+      "audit_rule": "no privateWorkspace, subjectiveFeeling, or llmTranscript keys",
+      "owner": "app.js",
+      "persistence": "localStorage",
+      "private_workspace_visible": false,
+      "state_key": "ssrm_v61_app_shell_world"
+    },
+    {
+      "allowed_mutations": "append public action rows only",
+      "audit_rule": "replay rows contain public action payloads only",
+      "owner": "app.js",
+      "persistence": "localStorage",
+      "private_workspace_visible": false,
+      "state_key": "ssrm_v61_app_shell_replay"
+    },
+    {
+      "allowed_mutations": "QA hook result writes",
+      "audit_rule": "QA output stores pass/fail summaries only",
+      "owner": "app.js",
+      "persistence": "localStorage",
+      "private_workspace_visible": false,
+      "state_key": "ssrm_v61_app_shell_qa_results"
+    },
+    {
+      "allowed_mutations": "public memory note updates",
+      "audit_rule": "memory notes are public relationship summaries",
+      "owner": "app.js",
+      "persistence": "world state",
+      "private_workspace_visible": false,
+      "state_key": "residents.*.memory"
+    },
+    {
+      "allowed_mutations": "bounded numeric deltas",
+      "audit_rule": "trust remains clamped 0..1",
+      "owner": "app.js",
+      "persistence": "world state",
+      "private_workspace_visible": false,
+      "state_key": "residents.*.trust"
+    },
+    {
+      "allowed_mutations": "bounded nonnegative deltas",
+      "audit_rule": "debt never drops below zero",
+      "owner": "app.js",
+      "persistence": "world state",
+      "private_workspace_visible": false,
+      "state_key": "residents.*.debt"
+    },
+    {
+      "allowed_mutations": "movement and room changes",
+      "audit_rule": "avatar state is public playable state",
+      "owner": "app.js",
+      "persistence": "world state",
+      "private_workspace_visible": false,
+      "state_key": "avatar"
+    },
+    {
+      "allowed_mutations": "display only",
+      "audit_rule": "boundary remains visible in UI",
+      "owner": "index.html/app.js",
+      "persistence": "DOM text",
+      "private_workspace_visible": false,
+      "state_key": "boundary"
+    }
+  ]
+}

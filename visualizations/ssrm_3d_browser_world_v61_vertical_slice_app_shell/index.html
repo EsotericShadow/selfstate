@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSRM-3D v61 Vertical Slice App Shell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">Report 301 maintained app shell</p>
+      <h1>Enter, move, talk, leave, return, inspect.</h1>
+      <p id="boundary" class="boundary"></p>
+    </header>
+
+    <section class="layout" aria-label="playable vertical slice">
+      <section class="world-panel">
+        <canvas id="world" width="1040" height="620" aria-label="browser-local playable world canvas"></canvas>
+        <div class="quickbar" role="group" aria-label="core controls">
+          <button data-action="enterWorld">Enter</button>
+          <button data-action="moveNorth">North</button>
+          <button data-action="moveSouth">South</button>
+          <button data-action="moveWest">West</button>
+          <button data-action="moveEast">East</button>
+          <button data-action="talkBounded">Talk</button>
+          <button data-action="offerHelp">Help</button>
+          <button data-action="borrowTool">Borrow</button>
+          <button data-action="returnTool">Return</button>
+          <button data-action="waitOffscreen">Wait offscreen</button>
+          <button data-action="repairTrust">Repair trust</button>
+          <button data-action="toggleAudit">Audit</button>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <label for="residentSelect">Resident</label>
+        <select id="residentSelect"></select>
+        <label for="phraseSelect">Bounded phrase</label>
+        <select id="phraseSelect">
+          <option value="greet">greet</option>
+          <option value="ask_schedule">ask schedule</option>
+          <option value="offer_help">offer help</option>
+          <option value="apologize">apologize</option>
+          <option value="ask_debt">ask debt</option>
+        </select>
+        <div class="dashboard">
+          <article><strong>Room</strong><span id="roomOut"></span></article>
+          <article><strong>Schedule</strong><span id="scheduleOut"></span></article>
+          <article><strong>Debt</strong><span id="debtOut"></span></article>
+          <article><strong>Memory</strong><span id="memoryOut"></span></article>
+          <article><strong>Replay</strong><span id="replayOut"></span></article>
+          <article><strong>QA</strong><span id="qaOut"></span></article>
+        </div>
+        <div class="qa-buttons" role="group" aria-label="QA hooks">
+          <button data-action="runPlaytestChecklist">Run checklist</button>
+          <button data-action="runStateBoundaryAudit">Audit state</button>
+          <button data-action="runSaveRestoreSmoke">Save/restore smoke</button>
+          <button data-action="runAllQAHooks">Run all QA hooks</button>
+          <button data-action="saveWorld">Save</button>
+          <button data-action="restoreWorld">Restore</button>
+          <button data-action="exportReplay">Export replay</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="trace-grid">
+      <article class="panel"><h2>Trace</h2><pre id="traceOut"></pre></article>
+      <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
+      <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

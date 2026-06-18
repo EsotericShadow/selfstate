@@ -10,6 +10,7 @@
     "resolvedAt"
   ],
   "manual_playtest_steps": 12,
+  "outside_review_checklist_items": 7,
   "prefix": "ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package",
   "primary_demo_url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
   "report": 303,
@@ -32,7 +33,9 @@
     "ssrm_v61_app_shell_saved_snapshot",
     "ssrm_primary_demo_manual_pass_records",
     "ssrm_primary_demo_defect_ledger",
-    "ssrm_primary_demo_recorder_export"
+    "ssrm_primary_demo_recorder_export",
+    "ssrm_primary_demo_outside_review_checklist",
+    "ssrm_primary_demo_outside_review_handoff"
   ],
   "target_shell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
 }

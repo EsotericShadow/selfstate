@@ -1,0 +1,21 @@
+{
+  "boundary": "Deterministic browser-local outside-review checklist packaging only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The checklist is a handoff workflow over public launcher and shell state, not external validation or evidence of inner experience.",
+  "next_gate": "post-323: use the outside-review checklist for a complete reviewer walkthrough, then harden any real defects found in the same maintained primary shell instead of adding parallel demo surfaces",
+  "outside_review_items": [
+    "OR-01",
+    "OR-02",
+    "OR-03",
+    "OR-04",
+    "OR-05",
+    "OR-06",
+    "OR-07"
+  ],
+  "prefix": "ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist",
+  "report": 323,
+  "seed": 20270721,
+  "state_keys": [
+    "ssrm_primary_demo_outside_review_checklist",
+    "ssrm_primary_demo_outside_review_handoff"
+  ],
+  "target_shell": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+}

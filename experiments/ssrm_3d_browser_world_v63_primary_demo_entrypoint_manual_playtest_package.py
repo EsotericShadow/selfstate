@@ -36,6 +36,8 @@ LOCALHOST_LAUNCH_URL = "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_wor
 MANUAL_RECORD_KEY = "ssrm_primary_demo_manual_pass_records"
 DEFECT_LEDGER_KEY = "ssrm_primary_demo_defect_ledger"
 RECORDER_EXPORT_KEY = "ssrm_primary_demo_recorder_export"
+OUTSIDE_REVIEW_KEY = "ssrm_primary_demo_outside_review_checklist"
+OUTSIDE_REVIEW_EXPORT_KEY = "ssrm_primary_demo_outside_review_handoff"
 
 BOUNDARY = (
     "Primary demo packaging for the deterministic browser-local maintained app shell only; "
@@ -145,6 +147,44 @@ SCOPE_GUARDS = [
     "Future browser-world work should patch this shell unless a defect proves a new surface is necessary.",
 ]
 
+OUTSIDE_REVIEW_CHECKLIST: list[dict[str, str]] = [
+    {
+        "item_id": "OR-01",
+        "label": "Read boundary before launching",
+        "evidence": "Launcher boundary explicitly says deterministic browser-local shell, no LLM, no consciousness, no moral patienthood, no production persistence, and no finished gameplay.",
+    },
+    {
+        "item_id": "OR-02",
+        "label": "Launch clean reviewer path",
+        "evidence": "Launch clean demo opens the maintained v61 shell with reviewer-focus mode, not a parallel simulation.",
+    },
+    {
+        "item_id": "OR-03",
+        "label": "Run reviewer pass inside the shell",
+        "evidence": "Reviewer landing reports PASSABLE_REVIEW_PATH and the integrated scenario receipt reports ALL_PASS.",
+    },
+    {
+        "item_id": "OR-04",
+        "label": "Inspect transcript, receipt, and observation triage",
+        "evidence": "Session transcript, integrated receipt, and observation triage are visible before optional deep panels.",
+    },
+    {
+        "item_id": "OR-05",
+        "label": "Audit failures if the receipt is incomplete",
+        "evidence": "Audit failures converts failing receipt fields into blocking observation rows with recovery guidance.",
+    },
+    {
+        "item_id": "OR-06",
+        "label": "Reveal deep panels only for unresolved questions",
+        "evidence": "Toggle deep panels exposes trace, checkpoints, resident history, social memory, receipt observations, playtest tasks, and QA manifest.",
+    },
+    {
+        "item_id": "OR-07",
+        "label": "Record manual outcome and export handoff",
+        "evidence": "Manual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.",
+    },
+]
+
 
 @dataclass(frozen=True)
 class PackagingCriterion:
@@ -190,6 +230,10 @@ def _html() -> str:
         f"<li><strong>{step['step_id']}</strong>: {step['action']} <span>{step['expected_evidence']}</span></li>"
         for step in MANUAL_PLAYTEST_STEPS
     )
+    outside_review_rows = "\n".join(
+        f"<li data-outside-review-row=\"{item['item_id']}\"><span><strong>{item['item_id']}</strong>: {item['label']} <em>{item['evidence']}</em></span><button type=\"button\" data-outside-review-item=\"{item['item_id']}\">Mark done</button></li>"
+        for item in OUTSIDE_REVIEW_CHECKLIST
+    )
     recorder_rows = "\n".join(
         f"<li><span><strong>{step['step_id']}</strong> {step['proves']}</span><button data-record-step=\"{step['step_id']}\" data-record-result=\"pass\">Pass</button><button data-record-step=\"{step['step_id']}\" data-record-result=\"fail\">Fail</button></li>"
         for step in MANUAL_PLAYTEST_STEPS
@@ -222,6 +266,17 @@ def _html() -> str:
     <section class=\"boundary\" id=\"boundary\">
       <h2>Boundary</h2>
       <p>{BOUNDARY}</p>
+    </section>
+    <section class=\"outside-review\" id=\"outsideReviewChecklist\">
+      <h2>Outside-review checklist</h2>
+      <p>This is the shortest handoff path for someone arriving cold: boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, and exportable review notes.</p>
+      <ol class=\"outside-review-list\">{outside_review_rows}</ol>
+      <div class=\"actions compact\">
+        <button id=\"exportOutsideReview\" type=\"button\">Prepare outside-review handoff</button>
+        <button id=\"clearOutsideReview\" type=\"button\">Clear outside-review checklist</button>
+      </div>
+      <p id=\"outsideReviewStatus\">No outside-review checklist items completed yet.</p>
+      <pre id=\"outsideReviewOut\"></pre>
     </section>
     <section class=\"grid\">
       <article>
@@ -518,7 +573,7 @@ body {
     linear-gradient(135deg, #f4e6c3, #f8f2df 52%, #e2d3ae);
 }
 .demo-shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 42px 0; }
-.hero, .boundary, article, .handoff {
+.hero, .boundary, article, .handoff, .outside-review {
   border: 1px solid var(--line);
   background: rgba(255, 249, 232, 0.88);
   box-shadow: 0 20px 60px rgba(63, 46, 22, 0.13);
@@ -557,24 +612,29 @@ h2 { margin-top: 0; }
 }
 .button.primary { color: white; background: var(--moss); }
 .button.quiet { background: transparent; }
-.boundary { margin-top: 18px; padding: 22px 26px; }
+.boundary, .outside-review { margin-top: 18px; padding: 22px 26px; }
 .grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 18px; margin-top: 18px; }
 article, .handoff, .recorder { padding: 26px; }
 .recorder { margin-top: 18px; border: 1px solid var(--line); background: rgba(255, 249, 232, 0.88); box-shadow: 0 20px 60px rgba(63, 46, 22, 0.13); border-radius: 24px; }
+.outside-review-list { padding-left: 22px; }
+.outside-review-list li { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.outside-review-list li.done { background: rgba(70, 92, 58, 0.10); border-radius: 14px; padding-left: 10px; padding-right: 10px; }
+.outside-review-list em { display: block; color: var(--muted); font-style: normal; margin-top: 3px; }
 .record-list { padding-left: 22px; }
 .record-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; }
-.record-list button, .recorder button { border: 1px solid var(--line); border-radius: 999px; background: #fffdf2; padding: 8px 12px; font-weight: 700; color: var(--ink); }
+.record-list button, .recorder button, .outside-review button { border: 1px solid var(--line); border-radius: 999px; background: #fffdf2; padding: 8px 12px; font-weight: 700; color: var(--ink); }
 .defect-box { display: grid; gap: 8px; font-weight: 700; margin-top: 18px; }
 .triage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
 .triage-grid label { display: grid; gap: 8px; font-weight: 700; }
 textarea, select { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
 textarea { resize: vertical; }
-#recordLedgerOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
+#recordLedgerOut, #outsideReviewOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
 code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px; }
 @media (max-width: 780px) {
   .grid { grid-template-columns: 1fr; }
+  .outside-review-list li { grid-template-columns: 1fr; }
   .record-list li { grid-template-columns: 1fr; }
   .triage-grid { grid-template-columns: 1fr; }
   .actions { flex-direction: column; align-items: stretch; }
@@ -587,6 +647,26 @@ def _js() -> str:
 const MANUAL_RECORD_KEY = 'ssrm_primary_demo_manual_pass_records';
 const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
 const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
+const OUTSIDE_REVIEW_KEY = 'ssrm_primary_demo_outside_review_checklist';
+const OUTSIDE_REVIEW_EXPORT_KEY = 'ssrm_primary_demo_outside_review_handoff';
+const OUTSIDE_REVIEW_ITEMS = [
+  { itemId: 'OR-01', label: 'Read boundary before launching' },
+  { itemId: 'OR-02', label: 'Launch clean reviewer path' },
+  { itemId: 'OR-03', label: 'Run reviewer pass inside the shell' },
+  { itemId: 'OR-04', label: 'Inspect transcript, receipt, and observation triage' },
+  { itemId: 'OR-05', label: 'Audit failures if the receipt is incomplete' },
+  { itemId: 'OR-06', label: 'Reveal deep panels only for unresolved questions' },
+  { itemId: 'OR-07', label: 'Record manual outcome and export handoff' }
+];
+
+function readObject(key, fallback) {
+  try {
+    return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback));
+  } catch (error) {
+    localStorage.removeItem(key);
+    return fallback;
+  }
+}
 
 function recordLaunch(kind) {
   const payload = {
@@ -629,6 +709,82 @@ function readList(key) {
 
 function writeList(key, rows) {
   localStorage.setItem(key, JSON.stringify(rows));
+}
+
+function outsideReviewState() {
+  const state = readObject(OUTSIDE_REVIEW_KEY, { items: {}, updatedAt: null });
+  return state && typeof state === 'object' && state.items ? state : { items: {}, updatedAt: null };
+}
+
+function writeOutsideReviewState(state) {
+  localStorage.setItem(OUTSIDE_REVIEW_KEY, JSON.stringify(state));
+}
+
+function renderOutsideReviewChecklist(message) {
+  const state = outsideReviewState();
+  const doneCount = OUTSIDE_REVIEW_ITEMS.filter(item => state.items[item.itemId] === true).length;
+  document.querySelectorAll('[data-outside-review-item]').forEach(button => {
+    const itemId = button.dataset.outsideReviewItem;
+    const done = state.items[itemId] === true;
+    button.textContent = done ? 'Done' : 'Mark done';
+    button.closest('[data-outside-review-row]')?.classList.toggle('done', done);
+  });
+  const status = document.getElementById('outsideReviewStatus');
+  if (status) status.textContent = message || `${doneCount}/${OUTSIDE_REVIEW_ITEMS.length} outside-review checklist items complete.`;
+  const out = document.getElementById('outsideReviewOut');
+  if (out) {
+    out.textContent = JSON.stringify({
+      reportIntroduced: 323,
+      checklist: OUTSIDE_REVIEW_ITEMS,
+      state,
+      targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+      boundary: 'outside-review-checklist-public-local-only'
+    }, null, 2);
+  }
+}
+
+function markOutsideReviewItem(itemId) {
+  const state = outsideReviewState();
+  state.items[itemId] = true;
+  state.updatedAt = new Date().toISOString();
+  writeOutsideReviewState(state);
+  renderOutsideReviewChecklist(`${itemId} marked done.`);
+}
+
+function exportOutsideReviewHandoff() {
+  const payload = {
+    reportIntroduced: 323,
+    checklistState: outsideReviewState(),
+    handoff: readObject(HANDOFF_KEY, null),
+    manualRecords: readList(MANUAL_RECORD_KEY),
+    defects: readList(DEFECT_LEDGER_KEY),
+    recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
+    targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    launchUrl: 'http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html',
+    boundary: 'outside-review-handoff-public-local-only'
+  };
+  const text = JSON.stringify(payload, null, 2);
+  localStorage.setItem(OUTSIDE_REVIEW_EXPORT_KEY, text);
+  let link = document.getElementById('preparedOutsideReviewExport');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedOutsideReviewExport';
+    link.textContent = 'Prepared outside-review handoff';
+    link.download = 'ssrm_primary_demo_outside_review_handoff.json';
+    link.style.display = 'block';
+    link.style.marginTop = '10px';
+    document.getElementById('outsideReviewChecklist')?.appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderOutsideReviewChecklist('Outside-review handoff prepared.');
+}
+
+function clearOutsideReviewChecklist() {
+  localStorage.removeItem(OUTSIDE_REVIEW_KEY);
+  localStorage.removeItem(OUTSIDE_REVIEW_EXPORT_KEY);
+  const link = document.getElementById('preparedOutsideReviewExport');
+  if (link) link.remove();
+  renderOutsideReviewChecklist('Outside-review checklist cleared.');
 }
 
 function recordStep(stepId, result) {
@@ -741,6 +897,12 @@ document.getElementById('recordDefect')?.addEventListener('click', recordDefectN
 document.getElementById('resolveLatestDefect')?.addEventListener('click', resolveLatestDefect);
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
+document.querySelectorAll('[data-outside-review-item]').forEach(button => {
+  button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
+});
+document.getElementById('exportOutsideReview')?.addEventListener('click', exportOutsideReviewHandoff);
+document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
+renderOutsideReviewChecklist();
 renderRecorder();
 """
 
@@ -775,6 +937,10 @@ Boundary: {BOUNDARY}
 
 {guards}
 
+## Outside-review checklist
+
+The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff evidence. Checklist progress stays in browser-local public state under `{OUTSIDE_REVIEW_KEY}`.
+
 ## Exit criteria
 
 A manual pass is credible only if all required steps have recorded evidence, no console errors are observed, the boundary remains visible, and the target shell remains `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html`.
@@ -803,6 +969,10 @@ triage workflow. Defects can be tied to manual steps, marked by severity, moved
 from open to resolved with a resolution note, and exported as public local review
 evidence.
 
+Report 323 adds an outside-review checklist over the same launcher: boundary,
+clean launch, reviewer landing pass, receipt, observation triage, optional deep
+diagnostics, manual notes, and exportable handoff evidence.
+
 Boundary: {BOUNDARY}
 """
 
@@ -829,8 +999,11 @@ def _qa_manifest(results_hint: dict[str, Any]) -> dict[str, Any]:
             MANUAL_RECORD_KEY,
             DEFECT_LEDGER_KEY,
             RECORDER_EXPORT_KEY,
+            OUTSIDE_REVIEW_KEY,
+            OUTSIDE_REVIEW_EXPORT_KEY,
         ],
         "defect_triage_fields": ["id", "stepId", "severity", "status", "note", "resolutionNote", "resolvedAt"],
+        "outside_review_checklist_items": len(OUTSIDE_REVIEW_CHECKLIST),
     }
 
 
@@ -857,6 +1030,7 @@ def generate(seed: int = DEFAULT_SEED) -> dict[str, Any]:
         PackagingCriterion("source_v62_browser_qa_passed", source_v62.get("verdict") == "pass" and source_v62.get("counts", {}).get("console_errors") == 0, "Report 302 direct browser QA verdict pass with 0 console errors", "primary packaging lacks a passing browser-QA baseline"),
         PackagingCriterion("stable_primary_entrypoint_declared", DEMO_DIR.name == "ssrm_3d_browser_world_primary_demo" and LOCALHOST_LAUNCH_URL.endswith("/visualizations/ssrm_3d_browser_world_primary_demo/index.html"), LOCALHOST_LAUNCH_URL, "reviewers still lack a stable demo URL"),
         PackagingCriterion("manual_playtest_script_complete", len(MANUAL_PLAYTEST_STEPS) >= 12 and all(step["required"] for step in MANUAL_PLAYTEST_STEPS), f"{len(MANUAL_PLAYTEST_STEPS)} required manual playtest steps", "manual playtest path is too thin"),
+        PackagingCriterion("outside_review_checklist_present", len(OUTSIDE_REVIEW_CHECKLIST) >= 7 and "outsideReviewChecklist" in _html() and OUTSIDE_REVIEW_KEY in _js(), f"{len(OUTSIDE_REVIEW_CHECKLIST)} outside-review handoff items", "outside reviewers still lack one consolidated handoff checklist"),
         PackagingCriterion("one_shell_policy_preserved", TARGET_SHELL_REL in _html() and "new simulation organ" in BOUNDARY, TARGET_SHELL_REL, "primary launcher forks the world instead of targeting the maintained shell"),
         PackagingCriterion("scope_boundary_visible_before_launch", "Boundary" in _html() and "no LLM call" in BOUNDARY and "no subjective consciousness" in BOUNDARY, "launcher includes explicit boundary section", "demo entrypoint overclaims or hides boundaries"),
         PackagingCriterion("qa_manifest_handoff_present", "ssrm_primary_demo_handoff" in _qa_manifest(source_v62)["state_keys"], "handoff state key listed in QA manifest", "launcher state handoff is not inspectable"),
@@ -884,6 +1058,7 @@ def generate(seed: int = DEFAULT_SEED) -> dict[str, Any]:
         "demo_package_files": len(planned_files),
         "manual_playtest_steps": len(MANUAL_PLAYTEST_STEPS),
         "required_manual_playtest_steps": sum(1 for step in MANUAL_PLAYTEST_STEPS if step["required"]),
+        "outside_review_checklist_items": len(OUTSIDE_REVIEW_CHECKLIST),
         "scope_guards": len(SCOPE_GUARDS),
         "source_browser_clicked_actions": source_v62.get("counts", {}).get("clicked_actions", 0),
         "source_browser_qa_passes": source_v62.get("counts", {}).get("qa_passes", 0),
@@ -919,6 +1094,7 @@ def generate(seed: int = DEFAULT_SEED) -> dict[str, Any]:
         "gates": gates,
         "criteria": [asdict(row) for row in criteria],
         "manual_playtest_steps": MANUAL_PLAYTEST_STEPS,
+        "outside_review_checklist": OUTSIDE_REVIEW_CHECKLIST,
         "scope_guards": SCOPE_GUARDS,
         "launcher_manifest": launcher_manifest,
         "boundary": BOUNDARY,
@@ -942,6 +1118,7 @@ def generate(seed: int = DEFAULT_SEED) -> dict[str, Any]:
         "primary_demo_url": LOCALHOST_LAUNCH_URL,
         "target_shell": TARGET_SHELL_REL,
         "manual_playtest_steps": MANUAL_PLAYTEST_STEPS,
+        "outside_review_checklist": OUTSIDE_REVIEW_CHECKLIST,
         "scope_guards": SCOPE_GUARDS,
         "boundary": BOUNDARY,
         "next_gate": NEXT_GATE,
@@ -951,6 +1128,7 @@ def generate(seed: int = DEFAULT_SEED) -> dict[str, Any]:
         "state": state,
         "criteria": criteria,
         "manual_steps": MANUAL_PLAYTEST_STEPS,
+        "outside_review_checklist": OUTSIDE_REVIEW_CHECKLIST,
         "planned_files": planned_files,
         "launcher_manifest": launcher_manifest,
         "qa_manifest": _qa_manifest(source_v62),

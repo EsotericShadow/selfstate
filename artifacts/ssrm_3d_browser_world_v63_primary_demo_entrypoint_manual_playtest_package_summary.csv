@@ -2,11 +2,12 @@ metric,value
 demo_package_files,9
 manual_playtest_steps,12
 required_manual_playtest_steps,12
+outside_review_checklist_items,7
 scope_guards,5
 source_browser_clicked_actions,17
 source_browser_qa_passes,10
 source_browser_console_errors,0
-readiness,0.95042
-mean_channel_score,0.9866
+readiness,0.951273
+mean_channel_score,0.987818
 weakest_channel_score,0.866
 weakest_named_channel,manual_playtest_not_external_cohort

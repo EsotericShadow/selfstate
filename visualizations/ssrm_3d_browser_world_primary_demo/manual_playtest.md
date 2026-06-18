@@ -37,6 +37,10 @@ Boundary: Primary demo packaging for the deterministic browser-local maintained 
 - The boundary remains visible before launch and inside the shell.
 - Future browser-world work should patch this shell unless a defect proves a new surface is necessary.
 
+## Outside-review checklist
+
+The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff evidence. Checklist progress stays in browser-local public state under `ssrm_primary_demo_outside_review_checklist`.
+
 ## Exit criteria
 
 A manual pass is credible only if all required steps have recorded evidence, no console errors are observed, the boundary remains visible, and the target shell remains `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html`.

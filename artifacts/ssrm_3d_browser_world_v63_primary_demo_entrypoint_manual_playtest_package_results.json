@@ -14,6 +14,7 @@
     "manual_playtest_not_external_cohort": 0.866,
     "manual_playtest_script_complete": 1.0,
     "one_shell_policy_preserved": 1.0,
+    "outside_review_checklist_present": 1.0,
     "qa_manifest_handoff_present": 1.0,
     "runner_registered": 1.0,
     "scope_boundary_visible_before_launch": 1.0,
@@ -25,6 +26,7 @@
   "counts": {
     "demo_package_files": 9,
     "manual_playtest_steps": 12,
+    "outside_review_checklist_items": 7,
     "required_manual_playtest_steps": 12,
     "scope_guards": 5,
     "source_browser_clicked_actions": 17,
@@ -54,6 +56,12 @@
       "criterion": "manual_playtest_script_complete",
       "evidence": "12 required manual playtest steps",
       "failure_if_false": "manual playtest path is too thin",
+      "passed": true
+    },
+    {
+      "criterion": "outside_review_checklist_present",
+      "evidence": "7 outside-review handoff items",
+      "failure_if_false": "outside reviewers still lack one consolidated handoff checklist",
       "passed": true
     },
     {
@@ -199,11 +207,48 @@
       "step_id": "MP-12"
     }
   ],
-  "mean_channel_score": 0.9866,
+  "mean_channel_score": 0.987818,
   "next_gate": "post-303: use the stable primary demo entrypoint for all browser-world work, run the manual playtest script against real defects, and harden the same shell before adding any new world-system report",
+  "outside_review_checklist": [
+    {
+      "evidence": "Launcher boundary explicitly says deterministic browser-local shell, no LLM, no consciousness, no moral patienthood, no production persistence, and no finished gameplay.",
+      "item_id": "OR-01",
+      "label": "Read boundary before launching"
+    },
+    {
+      "evidence": "Launch clean demo opens the maintained v61 shell with reviewer-focus mode, not a parallel simulation.",
+      "item_id": "OR-02",
+      "label": "Launch clean reviewer path"
+    },
+    {
+      "evidence": "Reviewer landing reports PASSABLE_REVIEW_PATH and the integrated scenario receipt reports ALL_PASS.",
+      "item_id": "OR-03",
+      "label": "Run reviewer pass inside the shell"
+    },
+    {
+      "evidence": "Session transcript, integrated receipt, and observation triage are visible before optional deep panels.",
+      "item_id": "OR-04",
+      "label": "Inspect transcript, receipt, and observation triage"
+    },
+    {
+      "evidence": "Audit failures converts failing receipt fields into blocking observation rows with recovery guidance.",
+      "item_id": "OR-05",
+      "label": "Audit failures if the receipt is incomplete"
+    },
+    {
+      "evidence": "Toggle deep panels exposes trace, checkpoints, resident history, social memory, receipt observations, playtest tasks, and QA manifest.",
+      "item_id": "OR-06",
+      "label": "Reveal deep panels only for unresolved questions"
+    },
+    {
+      "evidence": "Manual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.",
+      "item_id": "OR-07",
+      "label": "Record manual outcome and export handoff"
+    }
+  ],
   "prefix": "ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package",
-  "primary_demo_packaging_readiness": 0.95042,
-  "readiness": 0.95042,
+  "primary_demo_packaging_readiness": 0.951273,
+  "readiness": 0.951273,
   "report": 303,
   "scope_guards": [
     "Only the primary demo launcher is new; gameplay still lives in the maintained v61 app shell.",

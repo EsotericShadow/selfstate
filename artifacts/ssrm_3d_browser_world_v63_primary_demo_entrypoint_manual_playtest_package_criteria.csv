@@ -3,6 +3,7 @@ source_v61_shell_present,True,visualizations/ssrm_3d_browser_world_v61_vertical_
 source_v62_browser_qa_passed,True,Report 302 direct browser QA verdict pass with 0 console errors,primary packaging lacks a passing browser-QA baseline
 stable_primary_entrypoint_declared,True,http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html,reviewers still lack a stable demo URL
 manual_playtest_script_complete,True,12 required manual playtest steps,manual playtest path is too thin
+outside_review_checklist_present,True,7 outside-review handoff items,outside reviewers still lack one consolidated handoff checklist
 one_shell_policy_preserved,True,../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html,primary launcher forks the world instead of targeting the maintained shell
 scope_boundary_visible_before_launch,True,launcher includes explicit boundary section,demo entrypoint overclaims or hides boundaries
 qa_manifest_handoff_present,True,handoff state key listed in QA manifest,launcher state handoff is not inspectable

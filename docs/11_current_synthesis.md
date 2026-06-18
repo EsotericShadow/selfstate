@@ -32,6 +32,8 @@ Report 321 condenses the same primary shell into an outside-reviewer landing pat
 
 Report 322 makes that reviewer landing actionable when the receipt is incomplete. Failing public receipt fields now show concrete recovery steps, and `Audit failures` converts the current failure set into blocking observation rows without forcing the reviewer out of the core landing path.
 
+Report 323 packages the launcher and reviewer-first shell into one outside-review checklist. A cold reviewer can now follow OR-01..OR-07 across boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff state without hunting through separate reports.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

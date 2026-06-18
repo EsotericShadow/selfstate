@@ -19,4 +19,8 @@ triage workflow. Defects can be tied to manual steps, marked by severity, moved
 from open to resolved with a resolution note, and exported as public local review
 evidence.
 
+Report 323 adds an outside-review checklist over the same launcher: boundary,
+clean launch, reviewer landing pass, receipt, observation triage, optional deep
+diagnostics, manual notes, and exportable handoff evidence.
+
 Boundary: Primary demo packaging for the deterministic browser-local maintained app shell only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, and no metaphysical frequency claim.

@@ -5,8 +5,8 @@ Report 303 is a consolidation gate. It packages the maintained v61 app shell as 
 ## Result
 
 - Verdict: `pass`
-- Readiness: `0.95042`
-- Mean channel score: `0.9866`
+- Readiness: `0.951273`
+- Mean channel score: `0.987818`
 - Weakest channel: `manual_playtest_not_external_cohort` at `0.866`
 - Primary demo URL: `http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html`
 - Target shell: `../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html`
@@ -41,6 +41,7 @@ The browser-world line was at risk of becoming a pile of bridge artifacts. The p
 | source_v62_browser_qa_passed | True | Report 302 direct browser QA verdict pass with 0 console errors |
 | stable_primary_entrypoint_declared | True | http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html |
 | manual_playtest_script_complete | True | 12 required manual playtest steps |
+| outside_review_checklist_present | True | 7 outside-review handoff items |
 | one_shell_policy_preserved | True | ../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html |
 | scope_boundary_visible_before_launch | True | launcher includes explicit boundary section |
 | qa_manifest_handoff_present | True | handoff state key listed in QA manifest |

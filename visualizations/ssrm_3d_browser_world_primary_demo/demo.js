@@ -2,6 +2,26 @@ const HANDOFF_KEY = 'ssrm_primary_demo_handoff';
 const MANUAL_RECORD_KEY = 'ssrm_primary_demo_manual_pass_records';
 const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
 const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
+const OUTSIDE_REVIEW_KEY = 'ssrm_primary_demo_outside_review_checklist';
+const OUTSIDE_REVIEW_EXPORT_KEY = 'ssrm_primary_demo_outside_review_handoff';
+const OUTSIDE_REVIEW_ITEMS = [
+  { itemId: 'OR-01', label: 'Read boundary before launching' },
+  { itemId: 'OR-02', label: 'Launch clean reviewer path' },
+  { itemId: 'OR-03', label: 'Run reviewer pass inside the shell' },
+  { itemId: 'OR-04', label: 'Inspect transcript, receipt, and observation triage' },
+  { itemId: 'OR-05', label: 'Audit failures if the receipt is incomplete' },
+  { itemId: 'OR-06', label: 'Reveal deep panels only for unresolved questions' },
+  { itemId: 'OR-07', label: 'Record manual outcome and export handoff' }
+];
+
+function readObject(key, fallback) {
+  try {
+    return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback));
+  } catch (error) {
+    localStorage.removeItem(key);
+    return fallback;
+  }
+}
 
 function recordLaunch(kind) {
   const payload = {
@@ -44,6 +64,82 @@ function readList(key) {
 
 function writeList(key, rows) {
   localStorage.setItem(key, JSON.stringify(rows));
+}
+
+function outsideReviewState() {
+  const state = readObject(OUTSIDE_REVIEW_KEY, { items: {}, updatedAt: null });
+  return state && typeof state === 'object' && state.items ? state : { items: {}, updatedAt: null };
+}
+
+function writeOutsideReviewState(state) {
+  localStorage.setItem(OUTSIDE_REVIEW_KEY, JSON.stringify(state));
+}
+
+function renderOutsideReviewChecklist(message) {
+  const state = outsideReviewState();
+  const doneCount = OUTSIDE_REVIEW_ITEMS.filter(item => state.items[item.itemId] === true).length;
+  document.querySelectorAll('[data-outside-review-item]').forEach(button => {
+    const itemId = button.dataset.outsideReviewItem;
+    const done = state.items[itemId] === true;
+    button.textContent = done ? 'Done' : 'Mark done';
+    button.closest('[data-outside-review-row]')?.classList.toggle('done', done);
+  });
+  const status = document.getElementById('outsideReviewStatus');
+  if (status) status.textContent = message || `${doneCount}/${OUTSIDE_REVIEW_ITEMS.length} outside-review checklist items complete.`;
+  const out = document.getElementById('outsideReviewOut');
+  if (out) {
+    out.textContent = JSON.stringify({
+      reportIntroduced: 323,
+      checklist: OUTSIDE_REVIEW_ITEMS,
+      state,
+      targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+      boundary: 'outside-review-checklist-public-local-only'
+    }, null, 2);
+  }
+}
+
+function markOutsideReviewItem(itemId) {
+  const state = outsideReviewState();
+  state.items[itemId] = true;
+  state.updatedAt = new Date().toISOString();
+  writeOutsideReviewState(state);
+  renderOutsideReviewChecklist(`${itemId} marked done.`);
+}
+
+function exportOutsideReviewHandoff() {
+  const payload = {
+    reportIntroduced: 323,
+    checklistState: outsideReviewState(),
+    handoff: readObject(HANDOFF_KEY, null),
+    manualRecords: readList(MANUAL_RECORD_KEY),
+    defects: readList(DEFECT_LEDGER_KEY),
+    recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
+    targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    launchUrl: 'http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html',
+    boundary: 'outside-review-handoff-public-local-only'
+  };
+  const text = JSON.stringify(payload, null, 2);
+  localStorage.setItem(OUTSIDE_REVIEW_EXPORT_KEY, text);
+  let link = document.getElementById('preparedOutsideReviewExport');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedOutsideReviewExport';
+    link.textContent = 'Prepared outside-review handoff';
+    link.download = 'ssrm_primary_demo_outside_review_handoff.json';
+    link.style.display = 'block';
+    link.style.marginTop = '10px';
+    document.getElementById('outsideReviewChecklist')?.appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderOutsideReviewChecklist('Outside-review handoff prepared.');
+}
+
+function clearOutsideReviewChecklist() {
+  localStorage.removeItem(OUTSIDE_REVIEW_KEY);
+  localStorage.removeItem(OUTSIDE_REVIEW_EXPORT_KEY);
+  const link = document.getElementById('preparedOutsideReviewExport');
+  if (link) link.remove();
+  renderOutsideReviewChecklist('Outside-review checklist cleared.');
 }
 
 function recordStep(stepId, result) {
@@ -156,4 +252,10 @@ document.getElementById('recordDefect')?.addEventListener('click', recordDefectN
 document.getElementById('resolveLatestDefect')?.addEventListener('click', resolveLatestDefect);
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
+document.querySelectorAll('[data-outside-review-item]').forEach(button => {
+  button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
+});
+document.getElementById('exportOutsideReview')?.addEventListener('click', exportOutsideReviewHandoff);
+document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
+renderOutsideReviewChecklist();
 renderRecorder();

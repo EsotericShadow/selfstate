@@ -1,0 +1,199 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_criteria.csv",
+    "report": "docs/323_ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local outside-review checklist packaging only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The checklist is a handoff workflow over public launcher and shell state, not external validation or evidence of inner experience.",
+  "browser_evidence": {
+    "after_export": {
+      "exportHrefPresent": true,
+      "exportLinkText": "Prepared outside-review handoff",
+      "out": "{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true\n    },\n    \"updatedAt\": \"2026-06-18T08:17:13.896Z\"\n  },\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-checklist-public-local-only\"\n}",
+      "status": "Outside-review handoff prepared."
+    },
+    "after_marks": {
+      "doneButtons": [
+        "OR-01",
+        "OR-02"
+      ],
+      "doneRows": [
+        "OR-01",
+        "OR-02"
+      ],
+      "out": "{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true\n    },\n    \"updatedAt\": \"2026-06-18T08:17:13.896Z\"\n  },\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-checklist-public-local-only\"\n}",
+      "status": "OR-02 marked done."
+    },
+    "after_reload": {
+      "doneButtons": [
+        "OR-01",
+        "OR-02"
+      ],
+      "doneRows": [
+        "OR-01",
+        "OR-02"
+      ],
+      "out": "{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true\n    },\n    \"updatedAt\": \"2026-06-18T08:17:13.896Z\"\n  },\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-checklist-public-local-only\"\n}",
+      "status": "2/7 outside-review checklist items complete."
+    },
+    "checklist_visible_evidence": "buttons=7 clean=../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 resume=../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 status=0/7 outside-review checklist items complete.",
+    "checklist_visible_pass": true,
+    "console_error_messages": [],
+    "console_errors": 0,
+    "handoff_export_evidence": "status=Outside-review handoff prepared. link=Prepared outside-review handoff href=true",
+    "handoff_export_pass": true,
+    "initial": {
+      "boundary": "\n      Boundary\n      Primary demo packaging for the deterministic browser-local maintained app shell only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, and no metaphysical frequency claim.\n    ",
+      "checklistButtons": [
+        {
+          "id": "OR-01",
+          "text": "Mark done"
+        },
+        {
+          "id": "OR-02",
+          "text": "Mark done"
+        },
+        {
+          "id": "OR-03",
+          "text": "Mark done"
+        },
+        {
+          "id": "OR-04",
+          "text": "Mark done"
+        },
+        {
+          "id": "OR-05",
+          "text": "Mark done"
+        },
+        {
+          "id": "OR-06",
+          "text": "Mark done"
+        },
+        {
+          "id": "OR-07",
+          "text": "Mark done"
+        }
+      ],
+      "checklistText": "\n      Outside-review checklist\n      This is the shortest handoff path for someone arriving cold: boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, and exportable review notes.\n      OR-01: Read boundary before launching Launcher boundary explicitly says deterministic browser-local shell, no LLM, no consciousness, no moral patienthood, no production persistence, and no finished gameplay.Mark done\nOR-02: Launch clean reviewer path Launch clean demo opens the maintained v61 shell with reviewer-focus mode, not a parallel simulation.Mark done\nOR-03: Run reviewer pass inside the shell Reviewer landing reports PASSABLE_REVIEW_PATH and the integrated scenario receipt reports ALL_PASS.Mark done\nOR-04: Inspect transcript, receipt, and observation triage Session transcript, integrated receipt, and observation triage are visible before optional deep panels.Mark done\nOR-05: Audit failures if the receipt is incomplete Audit failures converts failing receipt fields into blocking observation rows with recovery guidance.Mark done\nOR-06: Reveal deep panels only for unresolved questions Toggle deep panels exposes trace, checkpoints, resident history, social memory, receipt observations, playtest tasks, and QA manifest.Mark done\nOR-07: Record manual outcome and export handoff Manual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.Mark done\n      \n        Prepare outside-review handoff\n        Clear outside-review checklist\n      \n      0/7 outside-review checklist items complete.\n      {\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {},\n    \"updatedAt\": null\n  },\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-checklist-public-local-only\"\n}\n    ",
+      "cleanHref": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63",
+      "out": "{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {},\n    \"updatedAt\": null\n  },\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-checklist-public-local-only\"\n}",
+      "resumeHref": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+      "status": "0/7 outside-review checklist items complete.",
+      "title": "SSRM-3D Primary Browser World Demo"
+    },
+    "mark_persistence_evidence": "afterMarks=OR-01,OR-02 afterReload=OR-01,OR-02 status=2/7 outside-review checklist items complete.",
+    "mark_persistence_pass": true,
+    "report": 323,
+    "shell_after_clean": {
+      "bodyClass": "reviewer-focus",
+      "boundary": "Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.",
+      "reviewerLanding": "Reviewer landing: READY_FOR_RUN\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 0/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: runContinuityLoop, generateScenarioReceipt\nActionable failure map:\nFIX entry_and_movement: Click Enter or use Run reviewer pass to establish avatar entry. Current evidence: avatar entered the maintained shell\nFIX schedule_visibility: Ask schedule or run the reviewer pass so the selected resident schedule is public. Current evidence: selected resident schedule was queried and remains visible\nFIX debt_consequence: Borrow/return or run the reviewer pass to create a visible debt/trust consequence. Current evidence: debt/trust consequence happened before bounded repair\nFIX offscreen_life: Use Wait offscreen or run the reviewer pass to advance resident progress while absent. Current evidence: offscreen resident progress advanced during the loop\nFIX recoverable_trust_repair: Run the trust repair sequence: interrupt, apologize, give space, repair with help. Current evidence: wound and concrete repair are both present\nFIX resident_social_memory: Run social pulse and settle one selected resident-to-resident obligation. Current evidence: resident-to-resident memory and settlement are visible\nFIX public_history_sync: Create avatar and resident-to-resident events until selected resident history updates. Current evidence: selected resident history records avatar and social consequences\nFIX replay_export_ready: Export replay after the loop so review evidence has bytes and public rows. Current evidence: replay export bytes=0\nFIX resume_ready_snapshot: Save world after the loop so launcher resume has a public checkpoint. Current evidence: saved checkpoint exists for resume verification\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear",
+      "url": "http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "shell_after_resume": {
+      "bodyClass": "reviewer-focus",
+      "boundary": "Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.",
+      "reviewerLanding": "Reviewer landing: READY_FOR_RUN\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 0/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: runContinuityLoop, generateScenarioReceipt\nActionable failure map:\nFIX entry_and_movement: Click Enter or use Run reviewer pass to establish avatar entry. Current evidence: avatar entered the maintained shell\nFIX schedule_visibility: Ask schedule or run the reviewer pass so the selected resident schedule is public. Current evidence: selected resident schedule was queried and remains visible\nFIX debt_consequence: Borrow/return or run the reviewer pass to create a visible debt/trust consequence. Current evidence: debt/trust consequence happened before bounded repair\nFIX offscreen_life: Use Wait offscreen or run the reviewer pass to advance resident progress while absent. Current evidence: offscreen resident progress advanced during the loop\nFIX recoverable_trust_repair: Run the trust repair sequence: interrupt, apologize, give space, repair with help. Current evidence: wound and concrete repair are both present\nFIX resident_social_memory: Run social pulse and settle one selected resident-to-resident obligation. Current evidence: resident-to-resident memory and settlement are visible\nFIX public_history_sync: Create avatar and resident-to-resident events until selected resident history updates. Current evidence: selected resident history records avatar and social consequences\nFIX replay_export_ready: Export replay after the loop so review evidence has bytes and public rows. Current evidence: replay export bytes=0\nFIX resume_ready_snapshot: Save world after the loop so launcher resume has a public checkpoint. Current evidence: saved checkpoint exists for resume verification\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear",
+      "url": "http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "shell_link_handoff_evidence": "clean=http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 cleanBody=reviewer-focus resume=http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 resumeBody=reviewer-focus",
+    "shell_link_handoff_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "checklist_generated_from_source",
+      "evidence": "outside-review checklist and export logic are generated from the Report 303 package source",
+      "failure_if_false": "regeneration would erase the handoff checklist",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "launcher_checklist_visible",
+      "evidence": "primary launcher renders OR-01..OR-07 and the handoff export action",
+      "failure_if_false": "reviewers would still need to infer the handoff path from scattered panels",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manifest_state_keys_registered",
+      "evidence": "QA manifest lists checklist and handoff state keys with 7 checklist items",
+      "failure_if_false": "outside-review state would not be inspectable in the launcher manifest",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual_script_mentions_checklist",
+      "evidence": "manual playtest explains the outside-review checklist and browser-local state key",
+      "failure_if_false": "manual reviewers would not know the checklist exists or where it persists",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "one_shell_policy_preserved",
+      "evidence": "launcher still targets the maintained v61 shell instead of a parallel world",
+      "failure_if_false": "handoff checklist would fragment the primary demo into another surface",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_checklist_visible",
+      "evidence": "buttons=7 clean=../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 resume=../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 status=0/7 outside-review checklist items complete.",
+      "failure_if_false": "browser did not show the outside-review checklist and core links",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_mark_persistence",
+      "evidence": "afterMarks=OR-01,OR-02 afterReload=OR-01,OR-02 status=2/7 outside-review checklist items complete.",
+      "failure_if_false": "checklist mark-done state did not persist through reload",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_handoff_export",
+      "evidence": "status=Outside-review handoff prepared. link=Prepared outside-review handoff href=true",
+      "failure_if_false": "browser did not prepare an outside-review handoff export",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_shell_link_handoff",
+      "evidence": "clean=http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 cleanBody=reviewer-focus resume=http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 resumeBody=reviewer-focus",
+      "failure_if_false": "launcher did not preserve clean/resume handoff to the maintained shell",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "browser workflow produced runtime console errors",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_handoff_score": 1.0,
+    "checklist_source_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "readiness": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-323: use the outside-review checklist for a complete reviewer walkthrough, then harden any real defects found in the same maintained primary shell instead of adding parallel demo surfaces",
+  "prefix": "ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist",
+  "report": 323,
+  "required_terms": [
+    "OUTSIDE_REVIEW_CHECKLIST",
+    "OUTSIDE_REVIEW_KEY",
+    "outsideReviewChecklist",
+    "exportOutsideReviewHandoff",
+    "ssrm_primary_demo_outside_review_handoff"
+  ],
+  "seed": 20270721,
+  "verdict": "pass"
+}

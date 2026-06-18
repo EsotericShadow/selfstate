@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+checklist_generated_from_source,True,1.0,outside-review checklist and export logic are generated from the Report 303 package source,regeneration would erase the handoff checklist
+launcher_checklist_visible,True,1.0,primary launcher renders OR-01..OR-07 and the handoff export action,reviewers would still need to infer the handoff path from scattered panels
+manifest_state_keys_registered,True,1.0,QA manifest lists checklist and handoff state keys with 7 checklist items,outside-review state would not be inspectable in the launcher manifest
+manual_script_mentions_checklist,True,1.0,manual playtest explains the outside-review checklist and browser-local state key,manual reviewers would not know the checklist exists or where it persists
+one_shell_policy_preserved,True,1.0,launcher still targets the maintained v61 shell instead of a parallel world,handoff checklist would fragment the primary demo into another surface
+browser_checklist_visible,True,1.0,buttons=7 clean=../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 resume=../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 status=0/7 outside-review checklist items complete.,browser did not show the outside-review checklist and core links
+browser_mark_persistence,True,1.0,"afterMarks=OR-01,OR-02 afterReload=OR-01,OR-02 status=2/7 outside-review checklist items complete.",checklist mark-done state did not persist through reload
+browser_handoff_export,True,1.0,status=Outside-review handoff prepared. link=Prepared outside-review handoff href=true,browser did not prepare an outside-review handoff export
+browser_shell_link_handoff,True,1.0,clean=http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 cleanBody=reviewer-focus resume=http://127.0.0.1:8782/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 resumeBody=reviewer-focus,launcher did not preserve clean/resume handoff to the maintained shell
+console_clean,True,1.0,browser console error count was 0,browser workflow produced runtime console errors

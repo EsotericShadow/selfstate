@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,blocking_phase_count,next_gate
+344,pass,1.0,0,post-344: add a local browser action that can copy/export the lifecycle preflight packet from the launcher so outside reviewers can attach one compact smoke-status receipt to vertical-slice feedback

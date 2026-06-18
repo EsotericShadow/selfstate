@@ -51,6 +51,21 @@ Artifacts:
 - Results: `artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json`
 - Manifest: `artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json`
 
+Preflight status visible in the launcher:
+
+- Runner freshness: Report 342 runner results pass; Report 343 entrypoint wiring pass
+- Blocking lifecycle phase: none
+- Boundary: Lifecycle preflight is artifact-backed by Report 342 runner results and Report 343 entrypoint wiring evidence; it is not a live hosted browser E2E claim.
+
+Lifecycle phases shown in the preflight panel:
+
+- `cross_tab_prepared_resume_visible`: pass (fresh cross-tab prepared resume)
+- `closed_origin_tab_continuity`: pass (closed-origin continuity)
+- `hard_reload_continuity`: pass (hard-reload continuity)
+- `stale_supersession_calibration`: pass (stale prepared-handoff calibration)
+- `stale_reprepare_repair`: pass (stale mismatch clean reprepare repair)
+- `repaired_continue_return_refresh`: pass (repaired continue-return-refresh freshness)
+
 ## Outside-review checklist
 
 The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff evidence. Checklist progress stays in browser-local public state under `ssrm_primary_demo_outside_review_checklist`.

@@ -52,6 +52,20 @@
       <p>Future primary-demo handoff changes should run one maintained gate before adding another lifecycle variant report.</p>
       <p>Command: <code id="lifecycleSmokeRunnerCommand">python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner</code></p>
       <p>Policy: <span id="lifecycleSmokeRunnerPolicy">Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.</span></p>
+      <div class="preflight-status" id="lifecycleSmokePreflight" data-lifecycle-preflight-source="report-342-results+report-343-wiring" data-lifecycle-preflight-blocking-phase="none">
+        <h3>Lifecycle release preflight</h3>
+        <p id="lifecycleSmokeFreshness">Runner freshness: Report 342 runner results pass; Report 343 entrypoint wiring pass</p>
+        <p id="lifecycleSmokeBlockingPhase">Blocking lifecycle phase: none</p>
+        <p id="lifecycleSmokePreflightBoundary">Lifecycle preflight is artifact-backed by Report 342 runner results and Report 343 entrypoint wiring evidence; it is not a live hosted browser E2E claim.</p>
+        <ul id="lifecycleSmokePhaseList">
+        <li data-lifecycle-preflight-phase="cross_tab_prepared_resume_visible" data-lifecycle-preflight-status="pass"><strong>fresh cross-tab prepared resume</strong>: pass</li>
+        <li data-lifecycle-preflight-phase="closed_origin_tab_continuity" data-lifecycle-preflight-status="pass"><strong>closed-origin continuity</strong>: pass</li>
+        <li data-lifecycle-preflight-phase="hard_reload_continuity" data-lifecycle-preflight-status="pass"><strong>hard-reload continuity</strong>: pass</li>
+        <li data-lifecycle-preflight-phase="stale_supersession_calibration" data-lifecycle-preflight-status="pass"><strong>stale prepared-handoff calibration</strong>: pass</li>
+        <li data-lifecycle-preflight-phase="stale_reprepare_repair" data-lifecycle-preflight-status="pass"><strong>stale mismatch clean reprepare repair</strong>: pass</li>
+        <li data-lifecycle-preflight-phase="repaired_continue_return_refresh" data-lifecycle-preflight-status="pass"><strong>repaired continue-return-refresh freshness</strong>: pass</li>
+        </ul>
+      </div>
       <ul>
         <li><a id="lifecycleSmokeRunnerReport" href="../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md">Report 342 lifecycle smoke runner</a></li>
         <li><a id="lifecycleSmokeRunnerResults" href="../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json">Report 342 results artifact</a></li>

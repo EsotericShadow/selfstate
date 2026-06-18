@@ -1,0 +1,47 @@
+{
+  "metrics": {
+    "artifact_freshness_score": 1.0,
+    "blocking_phase_count": 0,
+    "calibration_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 15,
+    "entrypoint_panel_score": 1.0,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "phase_count": 6,
+    "phase_coverage_score": 1.0,
+    "preflight_packet_score": 1.0,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "runner_weakest_channel_score": 1.0,
+    "weakest_channel_score": 1.0,
+    "wiring_weakest_channel_score": 1.0
+  },
+  "next_gate": "post-344: add a local browser action that can copy/export the lifecycle preflight packet from the launcher so outside reviewers can attach one compact smoke-status receipt to vertical-slice feedback",
+  "preflight_packet": {
+    "blocking_phase": "none",
+    "boundary": "Lifecycle preflight is artifact-backed by Report 342 runner results and Report 343 entrypoint wiring evidence; it is not a live hosted browser E2E claim.",
+    "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "freshness": "Report 342 runner results pass; Report 343 entrypoint wiring pass",
+    "phase_statuses": {
+      "closed_origin_tab_continuity": "pass",
+      "cross_tab_prepared_resume_visible": "pass",
+      "hard_reload_continuity": "pass",
+      "repaired_continue_return_refresh": "pass",
+      "stale_reprepare_repair": "pass",
+      "stale_supersession_calibration": "pass"
+    },
+    "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+    "sources": {
+      "entrypoint_html": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "generator": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+      "manual_playtest": "visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md",
+      "runner_manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+      "runner_results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+      "wiring_results": "artifacts/ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring_results.json"
+    }
+  },
+  "report": 344,
+  "seed": 20270742,
+  "verdict": "pass"
+}

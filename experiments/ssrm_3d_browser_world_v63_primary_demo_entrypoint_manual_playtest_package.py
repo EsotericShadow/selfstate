@@ -43,6 +43,9 @@ LIFECYCLE_SMOKE_RUNNER_REPORT_REL = "../../docs/342_ssrm_3d_browser_world_v102_p
 LIFECYCLE_SMOKE_RUNNER_RESULTS_REL = "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json"
 LIFECYCLE_SMOKE_RUNNER_MANIFEST_REL = "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json"
 LIFECYCLE_SMOKE_RUNNER_POLICY = "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report."
+LIFECYCLE_SMOKE_PREFLIGHT_FRESHNESS = "Report 342 runner results pass; Report 343 entrypoint wiring pass"
+LIFECYCLE_SMOKE_PREFLIGHT_BLOCKING_PHASE = "none"
+LIFECYCLE_SMOKE_PREFLIGHT_BOUNDARY = "Lifecycle preflight is artifact-backed by Report 342 runner results and Report 343 entrypoint wiring evidence; it is not a live hosted browser E2E claim."
 
 BOUNDARY = (
     "Primary demo packaging for the deterministic browser-local maintained app shell only; "
@@ -304,6 +307,20 @@ def _html() -> str:
       <p>Future primary-demo handoff changes should run one maintained gate before adding another lifecycle variant report.</p>
       <p>Command: <code id=\"lifecycleSmokeRunnerCommand\">{LIFECYCLE_SMOKE_RUNNER_COMMAND}</code></p>
       <p>Policy: <span id=\"lifecycleSmokeRunnerPolicy\">{LIFECYCLE_SMOKE_RUNNER_POLICY}</span></p>
+      <div class=\"preflight-status\" id=\"lifecycleSmokePreflight\" data-lifecycle-preflight-source=\"report-342-results+report-343-wiring\" data-lifecycle-preflight-blocking-phase=\"{LIFECYCLE_SMOKE_PREFLIGHT_BLOCKING_PHASE}\">
+        <h3>Lifecycle release preflight</h3>
+        <p id=\"lifecycleSmokeFreshness\">Runner freshness: {LIFECYCLE_SMOKE_PREFLIGHT_FRESHNESS}</p>
+        <p id=\"lifecycleSmokeBlockingPhase\">Blocking lifecycle phase: {LIFECYCLE_SMOKE_PREFLIGHT_BLOCKING_PHASE}</p>
+        <p id=\"lifecycleSmokePreflightBoundary\">{LIFECYCLE_SMOKE_PREFLIGHT_BOUNDARY}</p>
+        <ul id=\"lifecycleSmokePhaseList\">
+        <li data-lifecycle-preflight-phase=\"cross_tab_prepared_resume_visible\" data-lifecycle-preflight-status=\"pass\"><strong>fresh cross-tab prepared resume</strong>: pass</li>
+        <li data-lifecycle-preflight-phase=\"closed_origin_tab_continuity\" data-lifecycle-preflight-status=\"pass\"><strong>closed-origin continuity</strong>: pass</li>
+        <li data-lifecycle-preflight-phase=\"hard_reload_continuity\" data-lifecycle-preflight-status=\"pass\"><strong>hard-reload continuity</strong>: pass</li>
+        <li data-lifecycle-preflight-phase=\"stale_supersession_calibration\" data-lifecycle-preflight-status=\"pass\"><strong>stale prepared-handoff calibration</strong>: pass</li>
+        <li data-lifecycle-preflight-phase=\"stale_reprepare_repair\" data-lifecycle-preflight-status=\"pass\"><strong>stale mismatch clean reprepare repair</strong>: pass</li>
+        <li data-lifecycle-preflight-phase=\"repaired_continue_return_refresh\" data-lifecycle-preflight-status=\"pass\"><strong>repaired continue-return-refresh freshness</strong>: pass</li>
+        </ul>
+      </div>
       <ul>
         <li><a id=\"lifecycleSmokeRunnerReport\" href=\"{LIFECYCLE_SMOKE_RUNNER_REPORT_REL}\">Report 342 lifecycle smoke runner</a></li>
         <li><a id=\"lifecycleSmokeRunnerResults\" href=\"{LIFECYCLE_SMOKE_RUNNER_RESULTS_REL}\">Report 342 results artifact</a></li>

@@ -1,0 +1,167 @@
+{
+  "boundaries": [
+    "browser-visible source/status panel verification only",
+    "artifact-backed freshness only",
+    "no live hosted URL claim",
+    "no live browser automation claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "criteria": [
+    {
+      "channel": "artifact freshness",
+      "detail": "Report 342 runner results exist, pass, and retain full weakest-channel score.",
+      "name": "runner_results_available_and_passing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "artifact freshness",
+      "detail": "Report 343 wiring results exist, pass, and retain full weakest-channel score.",
+      "name": "wiring_results_available_and_passing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "phase coverage",
+      "detail": "Report 342 manifest phase coverage matches the phase set exposed by the preflight panel.",
+      "name": "runner_manifest_phase_set_matches_panel",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint panel",
+      "detail": "Primary launcher has visible preflight panel, source marker, freshness text, blocking phase, and boundary text.",
+      "name": "launcher_has_preflight_panel",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint panel",
+      "detail": "Primary launcher lists all lifecycle phases with pass status labels.",
+      "name": "launcher_lists_all_preflight_phases",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint panel",
+      "detail": "Preflight panel remains attached to the Report 342 runner command and report-sprawl policy.",
+      "name": "launcher_still_exposes_runner_command_and_policy",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest script documents runner freshness, blocking phase, and boundary semantics.",
+      "name": "manual_documents_preflight_status",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest script lists every phase shown in the preflight panel.",
+      "name": "manual_lists_all_preflight_phases",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator defines preflight freshness, blocking phase, and boundary constants.",
+      "name": "generator_preserves_preflight_constants",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator emits the browser-visible preflight panel and source marker.",
+      "name": "generator_emits_preflight_panel",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator preserves every preflight phase row.",
+      "name": "generator_emits_all_phase_rows",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "calibration",
+      "detail": "Blocking phase is none only because the runner and wiring verifier artifacts both pass.",
+      "name": "preflight_blocking_phase_is_calibrated",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "preflight packet",
+      "detail": "Report 344 emits a compact preflight packet suitable for future browser export/copy wiring.",
+      "name": "preflight_packet_is_exportable_artifact",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner index",
+      "detail": "Experiment runner index includes the Report 344 verifier module.",
+      "name": "experiment_index_includes_preflight_report",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Boundary rejects hosted URL, live browser automation, production persistence, consciousness, moral patienthood, complete engine, and finished gameplay claims.",
+      "name": "claim_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "artifact_freshness_score": 1.0,
+    "blocking_phase_count": 0,
+    "calibration_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 15,
+    "entrypoint_panel_score": 1.0,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "phase_count": 6,
+    "phase_coverage_score": 1.0,
+    "preflight_packet_score": 1.0,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "runner_weakest_channel_score": 1.0,
+    "weakest_channel_score": 1.0,
+    "wiring_weakest_channel_score": 1.0
+  },
+  "next_gate": "post-344: add a local browser action that can copy/export the lifecycle preflight packet from the launcher so outside reviewers can attach one compact smoke-status receipt to vertical-slice feedback",
+  "prefix": "ssrm_3d_browser_world_v104_primary_demo_lifecycle_preflight_status_panel",
+  "preflight_packet": {
+    "blocking_phase": "none",
+    "boundary": "Lifecycle preflight is artifact-backed by Report 342 runner results and Report 343 entrypoint wiring evidence; it is not a live hosted browser E2E claim.",
+    "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "freshness": "Report 342 runner results pass; Report 343 entrypoint wiring pass",
+    "phase_statuses": {
+      "closed_origin_tab_continuity": "pass",
+      "cross_tab_prepared_resume_visible": "pass",
+      "hard_reload_continuity": "pass",
+      "repaired_continue_return_refresh": "pass",
+      "stale_reprepare_repair": "pass",
+      "stale_supersession_calibration": "pass"
+    },
+    "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+    "sources": {
+      "entrypoint_html": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "generator": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+      "manual_playtest": "visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md",
+      "runner_manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+      "runner_results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+      "wiring_results": "artifacts/ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring_results.json"
+    }
+  },
+  "report": 344,
+  "seed": 20270742,
+  "verdict": "pass"
+}

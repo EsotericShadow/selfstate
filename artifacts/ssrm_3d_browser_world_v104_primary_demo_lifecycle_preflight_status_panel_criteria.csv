@@ -1,0 +1,16 @@
+name,passed,score,channel,detail
+runner_results_available_and_passing,True,1.0,artifact freshness,"Report 342 runner results exist, pass, and retain full weakest-channel score."
+wiring_results_available_and_passing,True,1.0,artifact freshness,"Report 343 wiring results exist, pass, and retain full weakest-channel score."
+runner_manifest_phase_set_matches_panel,True,1.0,phase coverage,Report 342 manifest phase coverage matches the phase set exposed by the preflight panel.
+launcher_has_preflight_panel,True,1.0,entrypoint panel,"Primary launcher has visible preflight panel, source marker, freshness text, blocking phase, and boundary text."
+launcher_lists_all_preflight_phases,True,1.0,entrypoint panel,Primary launcher lists all lifecycle phases with pass status labels.
+launcher_still_exposes_runner_command_and_policy,True,1.0,entrypoint panel,Preflight panel remains attached to the Report 342 runner command and report-sprawl policy.
+manual_documents_preflight_status,True,1.0,manual path,"Manual playtest script documents runner freshness, blocking phase, and boundary semantics."
+manual_lists_all_preflight_phases,True,1.0,manual path,Manual playtest script lists every phase shown in the preflight panel.
+generator_preserves_preflight_constants,True,1.0,generator durability,"v63 generator defines preflight freshness, blocking phase, and boundary constants."
+generator_emits_preflight_panel,True,1.0,generator durability,v63 generator emits the browser-visible preflight panel and source marker.
+generator_emits_all_phase_rows,True,1.0,generator durability,v63 generator preserves every preflight phase row.
+preflight_blocking_phase_is_calibrated,True,1.0,calibration,Blocking phase is none only because the runner and wiring verifier artifacts both pass.
+preflight_packet_is_exportable_artifact,True,1.0,preflight packet,Report 344 emits a compact preflight packet suitable for future browser export/copy wiring.
+experiment_index_includes_preflight_report,True,1.0,runner index,Experiment runner index includes the Report 344 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects hosted URL, live browser automation, production persistence, consciousness, moral patienthood, complete engine, and finished gameplay claims."

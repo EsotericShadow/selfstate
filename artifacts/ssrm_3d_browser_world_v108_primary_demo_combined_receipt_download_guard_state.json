@@ -1,0 +1,42 @@
+{
+  "guard_contract": {
+    "blocked_when_missing_fields": true,
+    "boundary": "combined-receipt-download-gate-browser-local-only",
+    "debug_override_control": "combinedReceiptDebugOverride",
+    "debug_override_gate": "combinedReceiptDownloadGate(payload).debugOverride",
+    "debug_override_label": "Allow incomplete receipt debug export",
+    "download_link": "preparedOutsideReviewExport",
+    "guard_status_node": "combinedReceiptDownloadGate",
+    "normal_download_gate": "combinedReceiptDownloadGate(payload).allowed",
+    "report": 348,
+    "required_fields": [
+      "defects",
+      "lifecyclePreflightPacket",
+      "manualRecords",
+      "recorderExport",
+      "reviewedHandoffCompletion",
+      "shellEvidence"
+    ],
+    "source_status_row_contract": "artifacts/ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row_status_row_contract.json"
+  },
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "browser_behavior_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 11,
+    "debug_override_count": 1,
+    "entrypoint_controls_score": 1.0,
+    "generator_durability_score": 1.0,
+    "guard_contract_score": 1.0,
+    "manual_path_score": 1.0,
+    "normal_download_guarded": 1.0,
+    "readiness": 1.0,
+    "required_field_count": 6,
+    "runner_index_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-348: run one real browser-local launcher smoke that prepares a combined receipt, observes the guarded download state, toggles the debug override, and exports the final outside-review handoff JSON without adding a parallel surface",
+  "report": 348,
+  "seed": 20270746,
+  "verdict": "pass"
+}

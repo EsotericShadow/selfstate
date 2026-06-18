@@ -54,6 +54,8 @@
         <li data-combined-receipt-field="recorderExport" data-combined-receipt-status="pending"><strong>Recorder export</strong>: pending</li>
         <li data-combined-receipt-field="lifecyclePreflightPacket" data-combined-receipt-status="pending"><strong>Lifecycle preflight packet</strong>: pending</li>
         </ul>
+        <label class="debug-override"><input id="combinedReceiptDebugOverride" type="checkbox"> Allow incomplete receipt debug export</label>
+        <p id="combinedReceiptDownloadGate" data-combined-receipt-download-gate="blocked">Combined receipt download gate: complete receipt required unless debug override is checked.</p>
       </div>
       <div id="outsideReviewHandoffActions" class="actions compact" aria-label="Prepared handoff actions"></div>
       <pre id="outsideReviewHandoffOut"></pre>

@@ -1,0 +1,2 @@
+report,seed,verdict,readiness,weakest_channel_score,artifact_source_score,entrypoint_controls_score,browser_behavior_score,manual_path_score,generator_durability_score,guard_contract_score,runner_index_score,claim_hygiene_score,required_field_count,normal_download_guarded,debug_override_count,criterion_count
+348,20270746,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,6,1.0,1,11

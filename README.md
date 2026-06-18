@@ -65,6 +65,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo lifecycle preflight packet export report](docs/345_ssrm_3d_browser_world_v105_primary_demo_lifecycle_preflight_packet_export_report.md): adds browser-local prepare/copy/download actions for the lifecycle preflight packet so outside reviewers can attach one compact smoke-status receipt.
 - [Primary demo combined outside-review handoff receipt report](docs/346_ssrm_3d_browser_world_v106_primary_demo_combined_outside_review_handoff_receipt_report.md): embeds the lifecycle preflight packet into the outside-review handoff export so reviewers get one browser-local receipt covering shell evidence, manual notes, defects, recorder export, and lifecycle smoke status.
 - [Primary demo combined receipt status row report](docs/347_ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row_report.md): makes the combined outside-review handoff receipt visible before download with a six-field included/missing status row.
+- [Primary demo combined receipt download guard report](docs/348_ssrm_3d_browser_world_v108_primary_demo_combined_receipt_download_guard_report.md): blocks normal outside-review handoff download when combined receipt fields are missing, while preserving an explicit debug override for incomplete review packets.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

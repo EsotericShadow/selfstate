@@ -1,0 +1,20 @@
+{
+  "blocked_when_missing_fields": true,
+  "boundary": "combined-receipt-download-gate-browser-local-only",
+  "debug_override_control": "combinedReceiptDebugOverride",
+  "debug_override_gate": "combinedReceiptDownloadGate(payload).debugOverride",
+  "debug_override_label": "Allow incomplete receipt debug export",
+  "download_link": "preparedOutsideReviewExport",
+  "guard_status_node": "combinedReceiptDownloadGate",
+  "normal_download_gate": "combinedReceiptDownloadGate(payload).allowed",
+  "report": 348,
+  "required_fields": [
+    "defects",
+    "lifecyclePreflightPacket",
+    "manualRecords",
+    "recorderExport",
+    "reviewedHandoffCompletion",
+    "shellEvidence"
+  ],
+  "source_status_row_contract": "artifacts/ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row_status_row_contract.json"
+}

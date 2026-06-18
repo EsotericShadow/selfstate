@@ -309,6 +309,8 @@ def _html() -> str:
         <li data-combined-receipt-field=\"recorderExport\" data-combined-receipt-status=\"pending\"><strong>Recorder export</strong>: pending</li>
         <li data-combined-receipt-field=\"lifecyclePreflightPacket\" data-combined-receipt-status=\"pending\"><strong>Lifecycle preflight packet</strong>: pending</li>
         </ul>
+        <label class=\"debug-override\"><input id=\"combinedReceiptDebugOverride\" type=\"checkbox\"> Allow incomplete receipt debug export</label>
+        <p id=\"combinedReceiptDownloadGate\" data-combined-receipt-download-gate=\"blocked\">Combined receipt download gate: complete receipt required unless debug override is checked.</p>
       </div>
       <div id=\"outsideReviewHandoffActions\" class=\"actions compact\" aria-label=\"Prepared handoff actions\"></div>
       <pre id=\"outsideReviewHandoffOut\"></pre>
@@ -914,19 +916,9 @@ function exportOutsideReviewHandoff() {
     boundary: 'outside-review-handoff-public-local-only'
   };
   payload.combinedReceiptStatus = combinedReceiptFieldStatus(payload);
+  payload.combinedReceiptDownloadGate = combinedReceiptDownloadGate(payload);
   const text = JSON.stringify(payload, null, 2);
   localStorage.setItem(OUTSIDE_REVIEW_EXPORT_KEY, text);
-  let link = document.getElementById('preparedOutsideReviewExport');
-  if (!link) {
-    link = document.createElement('a');
-    link.id = 'preparedOutsideReviewExport';
-    link.textContent = 'Prepared outside-review handoff';
-    link.download = 'ssrm_primary_demo_outside_review_handoff.json';
-    link.style.display = 'block';
-    link.style.marginTop = '10px';
-    document.getElementById('outsideReviewChecklist')?.appendChild(link);
-  }
-  link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
   renderOutsideReviewEvidence('Outside-review handoff prepared with shell evidence.');
   renderOutsideReviewHandoffPreview('Outside-review handoff payload visible below.');
   renderOutsideReviewChecklist('Outside-review handoff prepared.');
@@ -1067,6 +1059,44 @@ function renderCombinedReceiptStatus(payload, message) {
   return receiptStatus;
 }
 
+function combinedReceiptDebugOverrideEnabled() {
+  return document.getElementById('combinedReceiptDebugOverride')?.checked === true;
+}
+
+function combinedReceiptDownloadGate(payload) {
+  const receiptStatus = combinedReceiptFieldStatus(payload);
+  const debugOverride = combinedReceiptDebugOverrideEnabled();
+  return {
+    reportIntroduced: 348,
+    allowed: Boolean(payload) && receiptStatus.ready,
+    debugOverride,
+    downloadEnabled: Boolean(payload) && (receiptStatus.ready || debugOverride),
+    missing: receiptStatus.missing,
+    includedCount: receiptStatus.includedCount,
+    totalCount: receiptStatus.totalCount,
+    blockingPhase: receiptStatus.blockingPhase,
+    boundary: 'combined-receipt-download-gate-browser-local-only'
+  };
+}
+
+function renderCombinedReceiptDownloadGate(payload, gate) {
+  const downloadGate = gate || combinedReceiptDownloadGate(payload);
+  const node = document.getElementById('combinedReceiptDownloadGate');
+  if (node) {
+    node.dataset.combinedReceiptDownloadGate = downloadGate.downloadEnabled ? (downloadGate.allowed ? 'ready' : 'debug-override') : 'blocked';
+    if (!payload) {
+      node.textContent = 'Combined receipt download gate: complete receipt required unless debug override is checked.';
+    } else if (downloadGate.allowed) {
+      node.textContent = `Combined receipt download gate: ready; ${downloadGate.includedCount}/${downloadGate.totalCount} fields included.`;
+    } else if (downloadGate.debugOverride) {
+      node.textContent = `Combined receipt download gate: debug override enabled; missing ${downloadGate.missing.length ? downloadGate.missing.join(', ') : 'unknown fields'}.`;
+    } else {
+      node.textContent = `Combined receipt download gate: blocked until missing fields are included: ${downloadGate.missing.join(', ')}.`;
+    }
+  }
+  return downloadGate;
+}
+
 function readableHandoffSummary(payload, freshness) {
   if (!payload) return 'No outside-review handoff export prepared yet.';
   const checklistItems = ((payload.checklistState || {}).items) || {};
@@ -1096,12 +1126,13 @@ function preparedHandoffHref(payload) {
   return `${target}${separator}${params}`;
 }
 
-function renderOutsideReviewHandoffActions(payload, freshness) {
+function renderOutsideReviewHandoffActions(payload, freshness, downloadGate) {
   const actions = document.getElementById('outsideReviewHandoffActions');
   if (!actions) return;
   actions.textContent = '';
   if (!payload) return;
   const kind = (payload.handoff || {}).kind || 'unknown';
+  const gate = downloadGate || combinedReceiptDownloadGate(payload);
   if (freshness && freshness.fresh) {
     const continueLink = document.createElement('a');
     continueLink.id = 'continuePreparedHandoff';
@@ -1117,11 +1148,20 @@ function renderOutsideReviewHandoffActions(payload, freshness) {
   }
   const existingDownload = document.getElementById('preparedOutsideReviewExport');
   if (existingDownload) existingDownload.remove();
+  if (!gate.downloadEnabled) {
+    const blocked = document.createElement('span');
+    blocked.id = 'combinedReceiptDownloadBlocked';
+    blocked.className = 'status-line';
+    blocked.textContent = `Download blocked: missing ${gate.missing.join(', ')}. Check debug override to export an incomplete review packet.`;
+    actions.appendChild(blocked);
+    return;
+  }
   const download = document.createElement('a');
   download.id = 'preparedOutsideReviewExport';
-  download.className = 'button';
+  download.className = gate.allowed ? 'button' : 'button warning';
+  download.dataset.combinedReceiptDownloadGate = gate.allowed ? 'ready' : 'debug-override';
   download.download = 'ssrm_primary_demo_outside_review_handoff.json';
-  download.textContent = 'Download prepared outside-review handoff JSON';
+  download.textContent = gate.allowed ? 'Download combined outside-review handoff JSON' : 'Download incomplete outside-review handoff JSON (debug override)';
   const text = localStorage.getItem(OUTSIDE_REVIEW_EXPORT_KEY) || JSON.stringify(payload, null, 2);
   download.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
   actions.appendChild(download);
@@ -1140,10 +1180,11 @@ function renderOutsideReviewHandoffPreview(message) {
   }
   const out = document.getElementById('outsideReviewHandoffOut');
   const combinedReceiptStatus = renderCombinedReceiptStatus(payload);
+  const combinedReceiptDownloadGate = renderCombinedReceiptDownloadGate(payload);
   if (out) {
-    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness), previewCombinedReceiptStatus: combinedReceiptStatus }, null, 2) : 'No outside-review handoff export prepared yet.';
+    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness), previewCombinedReceiptStatus: combinedReceiptStatus, previewCombinedReceiptDownloadGate: combinedReceiptDownloadGate }, null, 2) : 'No outside-review handoff export prepared yet.';
   }
-  renderOutsideReviewHandoffActions(payload, freshness);
+  renderOutsideReviewHandoffActions(payload, freshness, combinedReceiptDownloadGate);
   return payload;
 }
 
@@ -1349,6 +1390,7 @@ document.getElementById('resolveLatestDefect')?.addEventListener('click', resolv
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
 document.getElementById('prepareLifecyclePreflightPacket')?.addEventListener('click', () => prepareLifecyclePreflightPacket());
 document.getElementById('copyLifecyclePreflightPacket')?.addEventListener('click', () => { copyLifecyclePreflightPacket(); });
+document.getElementById('combinedReceiptDebugOverride')?.addEventListener('change', () => renderOutsideReviewHandoffPreview());
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
 document.querySelectorAll('[data-outside-review-item]').forEach(button => {
   button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
@@ -1430,7 +1472,7 @@ Browser-local packet action:
 
 ## Outside-review checklist
 
-The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, lifecycle preflight status, and exportable combined handoff evidence. Preparing the outside-review handoff automatically prepares and embeds the lifecycle preflight packet so reviewers get one browser-local receipt. The visible combined receipt status row must show shell evidence, reviewed completion, manual notes, defect state, recorder export, and lifecycle preflight packet before download. Checklist progress stays in browser-local public state under `{OUTSIDE_REVIEW_KEY}`.
+The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, lifecycle preflight status, and exportable combined handoff evidence. Preparing the outside-review handoff automatically prepares and embeds the lifecycle preflight packet so reviewers get one browser-local receipt. The visible combined receipt status row must show shell evidence, reviewed completion, manual notes, defect state, recorder export, and lifecycle preflight packet before download. Normal handoff download is blocked while required receipt fields are missing; use the explicit debug override only to export an intentionally incomplete review packet. Checklist progress stays in browser-local public state under `{OUTSIDE_REVIEW_KEY}`.
 
 ## Exit criteria
 

@@ -1,0 +1,12 @@
+name,passed,score,channel,detail
+status_row_artifacts_available_and_passing,True,1.0,artifact source,Report 347 status-row results and contract exist and pass.
+status_row_source_field_set_complete,True,1.0,artifact source,Source status-row contract has all required combined receipt fields.
+launcher_exposes_download_guard_and_debug_override,True,1.0,entrypoint controls,Primary launcher exposes a download gate status node and explicit incomplete-receipt debug override checkbox.
+javascript_defines_download_gate_model,True,1.0,browser behavior,"Launcher JS defines debug override, download gate model, renderer, report marker, and boundary."
+javascript_enforces_download_gate,True,1.0,browser behavior,"Launcher JS stores gate metadata, blocks missing-field downloads, supports explicit debug override, and rerenders on checkbox change."
+outside_review_export_no_longer_creates_unguarded_download,True,1.0,browser behavior,Outside-review export no longer appends a download link directly before receipt completeness is rendered.
+manual_documents_download_guard,True,1.0,manual path,Manual playtest documentation explains blocked normal download and explicit debug override semantics.
+generator_preserves_download_guard,True,1.0,generator durability,"v63 generator preserves debug override control, gate behavior, blocked/override branches, event listener, and manual guidance."
+guard_contract_is_complete,True,1.0,guard contract,Report 348 emits a guard contract covering the six required receipt fields and explicit debug override.
+experiment_index_includes_download_guard_report,True,1.0,runner index,Experiment runner index includes the Report 348 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects live browser/download overclaiming, hosted URL, production persistence, autonomous language, consciousness, moral patienthood, complete engine, and finished gameplay claims."

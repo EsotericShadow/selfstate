@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,normal_download_guarded,next_gate
+348,pass,1.0,1.0,"post-348: run one real browser-local launcher smoke that prepares a combined receipt, observes the guarded download state, toggles the debug override, and exports the final outside-review handoff JSON without adding a parallel surface"

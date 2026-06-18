@@ -1,0 +1,135 @@
+{
+  "boundaries": [
+    "browser-local combined receipt download guard source verification only",
+    "deterministic source check does not prove live download or checkbox behavior",
+    "debug override is explicit and only for intentionally incomplete review packets",
+    "no live hosted URL claim",
+    "no live browser automation claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "criteria": [
+    {
+      "channel": "artifact source",
+      "detail": "Report 347 status-row results and contract exist and pass.",
+      "name": "status_row_artifacts_available_and_passing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "artifact source",
+      "detail": "Source status-row contract has all required combined receipt fields.",
+      "name": "status_row_source_field_set_complete",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint controls",
+      "detail": "Primary launcher exposes a download gate status node and explicit incomplete-receipt debug override checkbox.",
+      "name": "launcher_exposes_download_guard_and_debug_override",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Launcher JS defines debug override, download gate model, renderer, report marker, and boundary.",
+      "name": "javascript_defines_download_gate_model",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Launcher JS stores gate metadata, blocks missing-field downloads, supports explicit debug override, and rerenders on checkbox change.",
+      "name": "javascript_enforces_download_gate",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Outside-review export no longer appends a download link directly before receipt completeness is rendered.",
+      "name": "outside_review_export_no_longer_creates_unguarded_download",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest documentation explains blocked normal download and explicit debug override semantics.",
+      "name": "manual_documents_download_guard",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator preserves debug override control, gate behavior, blocked/override branches, event listener, and manual guidance.",
+      "name": "generator_preserves_download_guard",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "guard contract",
+      "detail": "Report 348 emits a guard contract covering the six required receipt fields and explicit debug override.",
+      "name": "guard_contract_is_complete",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner index",
+      "detail": "Experiment runner index includes the Report 348 verifier module.",
+      "name": "experiment_index_includes_download_guard_report",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Boundary rejects live browser/download overclaiming, hosted URL, production persistence, autonomous language, consciousness, moral patienthood, complete engine, and finished gameplay claims.",
+      "name": "claim_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "guard_contract": {
+    "blocked_when_missing_fields": true,
+    "boundary": "combined-receipt-download-gate-browser-local-only",
+    "debug_override_control": "combinedReceiptDebugOverride",
+    "debug_override_gate": "combinedReceiptDownloadGate(payload).debugOverride",
+    "debug_override_label": "Allow incomplete receipt debug export",
+    "download_link": "preparedOutsideReviewExport",
+    "guard_status_node": "combinedReceiptDownloadGate",
+    "normal_download_gate": "combinedReceiptDownloadGate(payload).allowed",
+    "report": 348,
+    "required_fields": [
+      "defects",
+      "lifecyclePreflightPacket",
+      "manualRecords",
+      "recorderExport",
+      "reviewedHandoffCompletion",
+      "shellEvidence"
+    ],
+    "source_status_row_contract": "artifacts/ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row_status_row_contract.json"
+  },
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "browser_behavior_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 11,
+    "debug_override_count": 1,
+    "entrypoint_controls_score": 1.0,
+    "generator_durability_score": 1.0,
+    "guard_contract_score": 1.0,
+    "manual_path_score": 1.0,
+    "normal_download_guarded": 1.0,
+    "readiness": 1.0,
+    "required_field_count": 6,
+    "runner_index_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-348: run one real browser-local launcher smoke that prepares a combined receipt, observes the guarded download state, toggles the debug override, and exports the final outside-review handoff JSON without adding a parallel surface",
+  "prefix": "ssrm_3d_browser_world_v108_primary_demo_combined_receipt_download_guard",
+  "report": 348,
+  "seed": 20270746,
+  "verdict": "pass"
+}

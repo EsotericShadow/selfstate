@@ -1,0 +1,13 @@
+criterion,passed,evidence,failure_if_false
+source_v61_regenerated_with_new_hook,True,Report 301/v61 regenerated with 7 direct QA hooks,maintained shell was not regenerated with the new hook
+source_primary_demo_package_passed,True,Report 303 primary-demo package still passes,primary demo package failed after MP-10 update
+source_recorder_defect_was_captured,True,Report 305 captured one MP-10 fail record before this hardening,no recorded defect drove this change
+primary_demo_mp10_instruction_updated,True,primary demo MP-10 text names Audit after rollback hooks,manual script still asks reviewers to infer ordering
+shell_ui_exposes_hook,True,v61 shell has one Audit after rollback button and function,hook is not reachable from UI
+qa_manifest_exposes_hook,True,v61 QA manifest includes runAuditAfterRollbackCheck,hook is not listed in QA manifest
+combined_hook_passes,True,combined hook payload pass/smokePass/auditPass/rollbackTested/checkedAfterRollback all true,combined hook did not prove both checks
+combined_hook_links_ordered_rows,True,"replay shows smoke tick 1, audit tick 2, combined tick 3 with linkedTicks",hook did not preserve inspectable ordering
+recorder_marks_resolution,True,recorder marks MP-10 pass after fix,recorder did not capture resolution
+recorder_resolution_note_exported,True,resolution note recorded with export prepared and public local-only boundary,resolution note/export boundary failed
+no_console_errors,True,browser console error list empty,browser console errors observed
+single_internal_resolution_pass_not_external_playtest,True,"one internal browser resolution pass, not outside playtest cohort",overclaiming internal resolution as external validation

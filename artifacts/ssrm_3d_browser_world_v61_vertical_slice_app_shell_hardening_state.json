@@ -56,7 +56,8 @@
     "QA-03",
     "QA-04",
     "QA-05",
-    "QA-06"
+    "QA-06",
+    "QA-07"
   ],
   "next_gate": "post-301 direct browser QA pass: open the maintained app shell, execute the built-in playtest checklist, inspect saved localStorage state, export replay, and fix runtime issues before adding any new simulation organs",
   "playtest_task_ids": [

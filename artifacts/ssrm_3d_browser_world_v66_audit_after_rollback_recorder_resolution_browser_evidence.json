@@ -1,0 +1,122 @@
+{
+  "console_errors": [],
+  "primary_before": {
+    "boundaryVisible": true,
+    "cleanLinks": 1,
+    "mp10TextUpdated": true,
+    "recorderVisible": true,
+    "title": "SSRM-3D Primary Browser World Demo",
+    "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "recorder_after": {
+    "defectCount": 1,
+    "exportPrepared": true,
+    "exportText": "Prepared recorder export",
+    "failCount": 0,
+    "latestDefect": {
+      "boundary": "manual-defect-ledger-public-local-only",
+      "note": "Resolved MP-10: audit-after-rollback hook passed with smokePass, auditPass, rollbackTested, and checkedAfterRollback all true.",
+      "recordedAt": "2026-06-18T06:28:13.950Z",
+      "reportIntroduced": 305,
+      "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+    },
+    "latestRecord": {
+      "boundary": "manual-recorder-public-local-only",
+      "recordedAt": "2026-06-18T06:28:13.553Z",
+      "reportIntroduced": 305,
+      "result": "pass",
+      "stepId": "MP-10",
+      "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+    },
+    "passCount": 1,
+    "recordCount": 1,
+    "recorderBoundary": true,
+    "resolutionNotePresent": true,
+    "status": "Recorder export prepared.",
+    "stepIds": [
+      "MP-10"
+    ]
+  },
+  "shell_after": {
+    "auditPass": true,
+    "checkedAfterRollback": true,
+    "latest": {
+      "event": "runAuditAfterRollbackCheck",
+      "payload": {
+        "auditPass": true,
+        "checkedAfterRollback": true,
+        "hook": "runAuditAfterRollbackCheck",
+        "linkedTicks": [
+          1,
+          2
+        ],
+        "pass": true,
+        "rollbackTested": true,
+        "smokePass": true
+      },
+      "room": "arrival court",
+      "selected": "Ari",
+      "tick": 3
+    },
+    "linkedTicksLength": 2,
+    "manifestTextHasHook": true,
+    "payloadPass": true,
+    "qaOut": "1 checks",
+    "replayEvents": [
+      {
+        "event": "enterWorld",
+        "payload": {
+          "boundary": "deterministic prototype boundary visible"
+        },
+        "tick": 0
+      },
+      {
+        "event": "runSaveRestoreSmoke",
+        "payload": {
+          "hook": "runSaveRestoreSmoke",
+          "pass": true,
+          "rollbackTested": true,
+          "room": "arrival court"
+        },
+        "tick": 1
+      },
+      {
+        "event": "runStateBoundaryAudit",
+        "payload": {
+          "checkedForbiddenKeyCount": 3,
+          "hook": "runStateBoundaryAudit",
+          "pass": true
+        },
+        "tick": 2
+      },
+      {
+        "event": "runAuditAfterRollbackCheck",
+        "payload": {
+          "auditPass": true,
+          "checkedAfterRollback": true,
+          "hook": "runAuditAfterRollbackCheck",
+          "linkedTicks": [
+            1,
+            2
+          ],
+          "pass": true,
+          "rollbackTested": true,
+          "smokePass": true
+        },
+        "tick": 3
+      }
+    ],
+    "replayOut": "4 rows",
+    "replayRows": 4,
+    "rollbackTested": true,
+    "roomOut": "arrival court / entered",
+    "smokePass": true
+  },
+  "shell_before": {
+    "buttonCount": 21,
+    "hasAuditAfterRollbackButton": 1,
+    "manifestHasHook": true,
+    "title": "SSRM-3D v61 Vertical Slice App Shell",
+    "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  }
+}

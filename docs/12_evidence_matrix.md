@@ -1409,3 +1409,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_primary_demo/index.html`, `visualizations/ssrm_3d_browser_world_primary_demo/demo.js`, `artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_browser_evidence.json`, and `docs/305_ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_report.md`.
 - Browser result: 24 record controls, 3 fresh records, 2 pass, 1 fail, 1 defect note, recorder export prepared, 0 console errors.
 - Boundary: browser-local public review ledger only; no external playtest cohort, production persistence, autonomous language, moral patienthood, finished game, or consciousness claim.
+
+## Report 306 Evidence Matrix Entry
+
+- Claim: a recorder-captured MP-10 defect can drive hardening in the same maintained shell and be resolved through the primary demo recorder.
+- Evidence: `artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_browser_evidence.json`, `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, and `docs/306_ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_report.md`.
+- Browser result: `runAuditAfterRollbackCheck` passes with `smokePass`, `auditPass`, `rollbackTested`, and `checkedAfterRollback`; recorder marks MP-10 pass with one resolution note and 0 console errors.
+- Boundary: one internal browser resolution pass only; no external cohort, production persistence, autonomous language, moral patienthood, finished game, complete 3D engine, or consciousness claim.

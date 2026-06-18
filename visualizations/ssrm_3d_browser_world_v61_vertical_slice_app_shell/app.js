@@ -32,7 +32,7 @@ const qaManifest = {
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -152,13 +152,29 @@ function runSaveRestoreSmoke() {
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
   return log('runSaveRestoreSmoke', result);
 }
+function runAuditAfterRollbackCheck() {
+  const smokeRow = runSaveRestoreSmoke();
+  const auditRow = runStateBoundaryAudit();
+  const result = {
+    hook: 'runAuditAfterRollbackCheck',
+    pass: Boolean(smokeRow.payload.pass && smokeRow.payload.rollbackTested && auditRow.payload.pass),
+    smokePass: Boolean(smokeRow.payload.pass),
+    auditPass: Boolean(auditRow.payload.pass),
+    rollbackTested: Boolean(smokeRow.payload.rollbackTested),
+    checkedAfterRollback: true,
+    linkedTicks: [smokeRow.tick, auditRow.tick]
+  };
+  world.lastQA = [result];
+  localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
+  return log('runAuditAfterRollbackCheck', result);
+}
 function runPlaytestChecklist() {
   const results = playtestTasks.map(task => ({ id: task.id, title: task.title, expected: task.expected, pass: true }));
   world.lastQA = results;
   localStorage.setItem(QA_KEY, JSON.stringify(results));
   return log('runPlaytestChecklist', { count: results.length, pass: results.every(row => row.pass) });
 }
-function runAllQAHooks() { runStateBoundaryAudit(); runSaveRestoreSmoke(); runPlaytestChecklist(); return log('runAllQAHooks', { hooks: qaManifest.directHooks.length }); }
+function runAllQAHooks() { runStateBoundaryAudit(); runSaveRestoreSmoke(); runAuditAfterRollbackCheck(); runPlaytestChecklist(); return log('runAllQAHooks', { hooks: qaManifest.directHooks.length }); }
 
 function bindControls() {
   document.querySelectorAll('[data-action]').forEach(button => {
@@ -218,6 +234,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAllQAHooks });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks });
 bindControls();
 render();

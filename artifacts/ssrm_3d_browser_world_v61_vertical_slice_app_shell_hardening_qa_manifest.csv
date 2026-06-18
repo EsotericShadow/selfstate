@@ -12,6 +12,7 @@ state_boundary,boundary,index.html/app.js,display only,DOM text,False,boundary r
 direct_qa_hook,,,,,,,QA-01,runPlaytestChecklist,playtestTasks,all mandatory task rows are represented,ssrm_v61_app_shell_qa_results,True
 direct_qa_hook,,,,,,,QA-02,runStateBoundaryAudit,world JSON,forbidden private/LLM keys absent,ssrm_v61_app_shell_qa_results,True
 direct_qa_hook,,,,,,,QA-03,runSaveRestoreSmoke,saved snapshot,avatar state rolls back after mutation,ssrm_v61_app_shell_qa_results,True
-direct_qa_hook,,,,,,,QA-04,runAllQAHooks,QA hook group,all direct hooks execute from UI,ssrm_v61_app_shell_qa_results,True
-direct_qa_hook,,,,,,,QA-05,exportReplay,replay rows,download path prepares public JSON,ssrm_v61_app_shell_replay,True
-direct_qa_hook,,,,,,,QA-06,toggleAudit,audit panel,audit overlay is visible without private workspace,ssrm_v61_app_shell_world,True
+direct_qa_hook,,,,,,,QA-04,runAuditAfterRollbackCheck,rollback plus boundary audit,state-boundary audit runs after rollback smoke,ssrm_v61_app_shell_qa_results,True
+direct_qa_hook,,,,,,,QA-05,runAllQAHooks,QA hook group,all direct hooks execute from UI,ssrm_v61_app_shell_qa_results,True
+direct_qa_hook,,,,,,,QA-06,exportReplay,replay rows,download path prepares public JSON,ssrm_v61_app_shell_replay,True
+direct_qa_hook,,,,,,,QA-07,toggleAudit,audit panel,audit overlay is visible without private workspace,ssrm_v61_app_shell_world,True

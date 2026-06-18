@@ -29,7 +29,7 @@ The browser-world line was at risk of becoming a pile of bridge artifacts. The p
 | MP-07 | Wait offscreen, then inspect schedule/progress again. | Progress changes while the avatar is idle/absent. |
 | MP-08 | Save, move/change state, then restore. | Saved avatar/resident values return after a deliberate post-save mutation and restore. |
 | MP-09 | Run the built-in playtest checklist. | Checklist reports 10 checks and all pass. |
-| MP-10 | Run state-boundary and save/restore smoke hooks. | Both hook rows pass and no private workspace/LLM keys appear in public trace. |
+| MP-10 | Run state-boundary, save/restore smoke, and Audit after rollback hooks. | The audit-after-rollback row passes with rollbackTested, smokePass, and auditPass all true. |
 | MP-11 | Export replay from the UI. | A prepared replay export link appears and export bytes are nonzero. |
 | MP-12 | Close the shell, reopen the primary launcher, then use Resume demo. | The resumed shell keeps persisted world state unless Clean demo is used. |
 

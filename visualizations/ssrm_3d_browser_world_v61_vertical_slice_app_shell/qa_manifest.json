@@ -26,9 +26,17 @@
       "target": "saved snapshot"
     },
     {
-      "assertion": "all direct hooks execute from UI",
+      "assertion": "state-boundary audit runs after rollback smoke",
       "browser_executable": true,
       "hook_id": "QA-04",
+      "js_function": "runAuditAfterRollbackCheck",
+      "stores_result_key": "ssrm_v61_app_shell_qa_results",
+      "target": "rollback plus boundary audit"
+    },
+    {
+      "assertion": "all direct hooks execute from UI",
+      "browser_executable": true,
+      "hook_id": "QA-05",
       "js_function": "runAllQAHooks",
       "stores_result_key": "ssrm_v61_app_shell_qa_results",
       "target": "QA hook group"
@@ -36,7 +44,7 @@
     {
       "assertion": "download path prepares public JSON",
       "browser_executable": true,
-      "hook_id": "QA-05",
+      "hook_id": "QA-06",
       "js_function": "exportReplay",
       "stores_result_key": "ssrm_v61_app_shell_replay",
       "target": "replay rows"
@@ -44,7 +52,7 @@
     {
       "assertion": "audit overlay is visible without private workspace",
       "browser_executable": true,
-      "hook_id": "QA-06",
+      "hook_id": "QA-07",
       "js_function": "toggleAudit",
       "stores_result_key": "ssrm_v61_app_shell_world",
       "target": "audit panel"

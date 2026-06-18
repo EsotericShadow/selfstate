@@ -8,6 +8,6 @@ MP-06,Borrow and return the awning tool.,"Debt increases, then returns to zero w
 MP-07,"Wait offscreen, then inspect schedule/progress again.",Progress changes while the avatar is idle/absent.,offscreen life is visible in the primary shell,True
 MP-08,"Save, move/change state, then restore.",Saved avatar/resident values return after a deliberate post-save mutation and restore.,local persistence and real rollback are part of the playable loop,True
 MP-09,Run the built-in playtest checklist.,Checklist reports 10 checks and all pass.,the internal QA hooks still cover the maintained tasks,True
-MP-10,Run state-boundary and save/restore smoke hooks.,Both hook rows pass and no private workspace/LLM keys appear in public trace.,traceability remains bounded and inspectable,True
+MP-10,"Run state-boundary, save/restore smoke, and Audit after rollback hooks.","The audit-after-rollback row passes with rollbackTested, smokePass, and auditPass all true.",traceability remains bounded and inspectable,True
 MP-11,Export replay from the UI.,A prepared replay export link appears and export bytes are nonzero.,review/debug evidence can be captured without relying on blocked downloads,True
 MP-12,"Close the shell, reopen the primary launcher, then use Resume demo.",The resumed shell keeps persisted world state unless Clean demo is used.,leave/return continuity is part of the manual review path,True

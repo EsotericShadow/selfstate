@@ -1,0 +1,5 @@
+event,tick,payload
+enterWorld,0,{'boundary': 'deterministic prototype boundary visible'}
+runSaveRestoreSmoke,1,"{'hook': 'runSaveRestoreSmoke', 'pass': True, 'rollbackTested': True, 'room': 'arrival court'}"
+runStateBoundaryAudit,2,"{'hook': 'runStateBoundaryAudit', 'pass': True, 'checkedForbiddenKeyCount': 3}"
+runAuditAfterRollbackCheck,3,"{'hook': 'runAuditAfterRollbackCheck', 'pass': True, 'smokePass': True, 'auditPass': True, 'rollbackTested': True, 'checkedAfterRollback': True, 'linkedTicks': [1, 2]}"

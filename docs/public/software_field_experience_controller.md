@@ -546,3 +546,7 @@ The primary browser-world demo has moved from packaging to defect-driven hardeni
 ## Report 305 Public Note: Manual Pass Recorder
 
 The primary browser-world demo now includes a local manual pass recorder and defect ledger. Reviewers can mark manual steps pass/fail, record defect notes, and prepare a public local export while staying on the stable primary demo path. This is evaluation infrastructure, not a new artificial-life organ, and it keeps the claim narrow: deterministic browser-local prototype behavior with explicit no-consciousness and no-autonomous-language boundaries.
+
+## Report 306 Public Note: Recorder-Driven Resolution
+
+The primary browser-world demo now demonstrates a complete internal defect loop: a recorder note identified that the audit should run after rollback smoke, the maintained shell added a combined audit-after-rollback hook, browser evidence showed it passing, and the recorder marked MP-10 resolved. This strengthens the prototype as a single inspectable playable surface while keeping claims narrow and non-consciousness-oriented.

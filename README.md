@@ -2036,3 +2036,7 @@ Report 304 uses the stable primary demo path to find and fix a real runtime defe
 ## Report 305: Browser World v65 Primary Demo Manual Pass Recorder
 
 Report 305 adds a small in-page manual pass recorder and defect ledger to the stable primary demo. Browser verification recorded MP-01 pass, MP-08 pass, MP-10 fail, one defect note, and a prepared recorder export with 0 console errors. The deterministic report passes with readiness `0.956283` and weakest-channel score `0.878000`. The honest limit is `single_internal_recorder_check_not_external_playtest`: this is internal recorder validation, not an outside playtest cohort.
+
+## Report 306: Browser World v66 Audit-After-Rollback Recorder Resolution
+
+Report 306 closes the MP-10 recorder loop from Report 305. The maintained v61 shell now exposes `runAuditAfterRollbackCheck`, a single QA hook that runs rollback smoke, then state-boundary audit, then writes a combined linked result. Browser evidence shows `smokePass`, `auditPass`, `rollbackTested`, and `checkedAfterRollback` all true, with MP-10 marked pass in the primary-demo recorder and a resolution note exported. The deterministic report passes with readiness `0.958433` and weakest-channel score `0.884000`. The honest limit is `single_internal_resolution_pass_not_external_playtest`.

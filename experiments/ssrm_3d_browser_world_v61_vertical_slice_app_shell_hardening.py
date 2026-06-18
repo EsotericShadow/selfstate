@@ -204,6 +204,7 @@ def _app_html() -> str:
           <button data-action="runPlaytestChecklist">Run checklist</button>
           <button data-action="runStateBoundaryAudit">Audit state</button>
           <button data-action="runSaveRestoreSmoke">Save/restore smoke</button>
+          <button data-action="runAuditAfterRollbackCheck">Audit after rollback</button>
           <button data-action="runAllQAHooks">Run all QA hooks</button>
           <button data-action="saveWorld">Save</button>
           <button data-action="restoreWorld">Restore</button>
@@ -306,7 +307,7 @@ const qaManifest = {{
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
 }};
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -426,13 +427,29 @@ function runSaveRestoreSmoke() {{
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
   return log('runSaveRestoreSmoke', result);
 }}
+function runAuditAfterRollbackCheck() {{
+  const smokeRow = runSaveRestoreSmoke();
+  const auditRow = runStateBoundaryAudit();
+  const result = {{
+    hook: 'runAuditAfterRollbackCheck',
+    pass: Boolean(smokeRow.payload.pass && smokeRow.payload.rollbackTested && auditRow.payload.pass),
+    smokePass: Boolean(smokeRow.payload.pass),
+    auditPass: Boolean(auditRow.payload.pass),
+    rollbackTested: Boolean(smokeRow.payload.rollbackTested),
+    checkedAfterRollback: true,
+    linkedTicks: [smokeRow.tick, auditRow.tick]
+  }};
+  world.lastQA = [result];
+  localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
+  return log('runAuditAfterRollbackCheck', result);
+}}
 function runPlaytestChecklist() {{
   const results = playtestTasks.map(task => ({{ id: task.id, title: task.title, expected: task.expected, pass: true }}));
   world.lastQA = results;
   localStorage.setItem(QA_KEY, JSON.stringify(results));
   return log('runPlaytestChecklist', {{ count: results.length, pass: results.every(row => row.pass) }});
 }}
-function runAllQAHooks() {{ runStateBoundaryAudit(); runSaveRestoreSmoke(); runPlaytestChecklist(); return log('runAllQAHooks', {{ hooks: qaManifest.directHooks.length }}); }}
+function runAllQAHooks() {{ runStateBoundaryAudit(); runSaveRestoreSmoke(); runAuditAfterRollbackCheck(); runPlaytestChecklist(); return log('runAllQAHooks', {{ hooks: qaManifest.directHooks.length }}); }}
 
 function bindControls() {{
   document.querySelectorAll('[data-action]').forEach(button => {{
@@ -492,7 +509,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAllQAHooks }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks }});
 bindControls();
 render();
 """
@@ -557,9 +574,10 @@ def generate(seed: int = DEFAULT_SEED) -> Bundle:
         DirectQAHook("QA-01", "runPlaytestChecklist", "playtestTasks", "all mandatory task rows are represented", "ssrm_v61_app_shell_qa_results", True),
         DirectQAHook("QA-02", "runStateBoundaryAudit", "world JSON", "forbidden private/LLM keys absent", "ssrm_v61_app_shell_qa_results", True),
         DirectQAHook("QA-03", "runSaveRestoreSmoke", "saved snapshot", "avatar state rolls back after mutation", "ssrm_v61_app_shell_qa_results", True),
-        DirectQAHook("QA-04", "runAllQAHooks", "QA hook group", "all direct hooks execute from UI", "ssrm_v61_app_shell_qa_results", True),
-        DirectQAHook("QA-05", "exportReplay", "replay rows", "download path prepares public JSON", "ssrm_v61_app_shell_replay", True),
-        DirectQAHook("QA-06", "toggleAudit", "audit panel", "audit overlay is visible without private workspace", "ssrm_v61_app_shell_world", True),
+        DirectQAHook("QA-04", "runAuditAfterRollbackCheck", "rollback plus boundary audit", "state-boundary audit runs after rollback smoke", "ssrm_v61_app_shell_qa_results", True),
+        DirectQAHook("QA-05", "runAllQAHooks", "QA hook group", "all direct hooks execute from UI", "ssrm_v61_app_shell_qa_results", True),
+        DirectQAHook("QA-06", "exportReplay", "replay rows", "download path prepares public JSON", "ssrm_v61_app_shell_replay", True),
+        DirectQAHook("QA-07", "toggleAudit", "audit panel", "audit overlay is visible without private workspace", "ssrm_v61_app_shell_world", True),
     ]
 
     hardening_criteria = [

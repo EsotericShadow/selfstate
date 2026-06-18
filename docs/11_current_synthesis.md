@@ -1075,3 +1075,9 @@ This is the right kind of progress: fewer new organs, more defects found and fix
 Report 305 adds the missing reviewer loop: the primary demo now has an in-page manual pass recorder and defect ledger. It records step pass/fail outcomes, defect notes, public local-only boundaries, target shell reference, and a prepared export payload. The browser check recorded MP-01 pass, MP-08 pass, MP-10 fail, one audit-related defect note, export prepared, and 0 console errors.
 
 This moves the project closer to non-toy evaluation because future hardening can now be driven by recorded defects in the single primary demo path instead of chat recollection or new bridge reports.
+
+### Report 306: Browser World v66 Audit-After-Rollback Recorder Resolution
+
+Report 306 demonstrates the recorder-driven hardening loop. Report 305 captured an MP-10 review note: audit output should be checked after rollback smoke. The maintained shell now has a dedicated `runAuditAfterRollbackCheck` button and direct QA hook. Browser evidence shows the replay order `enterWorld -> runSaveRestoreSmoke -> runStateBoundaryAudit -> runAuditAfterRollbackCheck`, with linked ticks `[1, 2]` and all combined pass flags true. The primary-demo recorder then marks MP-10 pass and stores a resolution note.
+
+This is the desired consolidation behavior: recorded defect, same shell patch, browser proof, recorder resolution.

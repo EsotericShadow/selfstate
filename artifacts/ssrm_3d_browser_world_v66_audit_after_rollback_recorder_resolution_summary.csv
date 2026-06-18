@@ -1,0 +1,13 @@
+metric,value
+direct_qa_hooks,7
+shell_action_buttons,21
+browser_replay_rows,4
+linked_ticks,2
+recorder_resolution_records,1
+recorder_resolution_notes,1
+patch_summary_items,6
+console_errors,0
+readiness,0.958433
+mean_channel_score,0.990333
+weakest_channel_score,0.884
+weakest_named_channel,single_internal_resolution_pass_not_external_playtest

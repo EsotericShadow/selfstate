@@ -34,7 +34,7 @@
 <li><strong>MP-07</strong>: Wait offscreen, then inspect schedule/progress again. <span>Progress changes while the avatar is idle/absent.</span></li>
 <li><strong>MP-08</strong>: Save, move/change state, then restore. <span>Saved avatar/resident values return after a deliberate post-save mutation and restore.</span></li>
 <li><strong>MP-09</strong>: Run the built-in playtest checklist. <span>Checklist reports 10 checks and all pass.</span></li>
-<li><strong>MP-10</strong>: Run state-boundary and save/restore smoke hooks. <span>Both hook rows pass and no private workspace/LLM keys appear in public trace.</span></li>
+<li><strong>MP-10</strong>: Run state-boundary, save/restore smoke, and Audit after rollback hooks. <span>The audit-after-rollback row passes with rollbackTested, smokePass, and auditPass all true.</span></li>
 <li><strong>MP-11</strong>: Export replay from the UI. <span>A prepared replay export link appears and export bytes are nonzero.</span></li>
 <li><strong>MP-12</strong>: Close the shell, reopen the primary launcher, then use Resume demo. <span>The resumed shell keeps persisted world state unless Clean demo is used.</span></li></ol>
       </article>

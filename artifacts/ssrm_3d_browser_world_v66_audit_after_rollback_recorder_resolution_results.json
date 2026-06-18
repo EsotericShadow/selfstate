@@ -1,0 +1,261 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_criteria.csv",
+    "replay_sequence": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_replay_sequence.csv",
+    "report": "docs/306_ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_verdict.csv"
+  },
+  "audit_after_rollback_recorder_resolution_readiness": 0.958433,
+  "boundary": "Audit-after-rollback hardening over the deterministic maintained v61 shell and primary-demo recorder only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, no outside playtest cohort, and no metaphysical frequency claim.",
+  "browser_evidence": {
+    "console_errors": [],
+    "primary_before": {
+      "boundaryVisible": true,
+      "cleanLinks": 1,
+      "mp10TextUpdated": true,
+      "recorderVisible": true,
+      "title": "SSRM-3D Primary Browser World Demo",
+      "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+    },
+    "recorder_after": {
+      "defectCount": 1,
+      "exportPrepared": true,
+      "exportText": "Prepared recorder export",
+      "failCount": 0,
+      "latestDefect": {
+        "boundary": "manual-defect-ledger-public-local-only",
+        "note": "Resolved MP-10: audit-after-rollback hook passed with smokePass, auditPass, rollbackTested, and checkedAfterRollback all true.",
+        "recordedAt": "2026-06-18T06:28:13.950Z",
+        "reportIntroduced": 305,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "latestRecord": {
+        "boundary": "manual-recorder-public-local-only",
+        "recordedAt": "2026-06-18T06:28:13.553Z",
+        "reportIntroduced": 305,
+        "result": "pass",
+        "stepId": "MP-10",
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "passCount": 1,
+      "recordCount": 1,
+      "recorderBoundary": true,
+      "resolutionNotePresent": true,
+      "status": "Recorder export prepared.",
+      "stepIds": [
+        "MP-10"
+      ]
+    },
+    "shell_after": {
+      "auditPass": true,
+      "checkedAfterRollback": true,
+      "latest": {
+        "event": "runAuditAfterRollbackCheck",
+        "payload": {
+          "auditPass": true,
+          "checkedAfterRollback": true,
+          "hook": "runAuditAfterRollbackCheck",
+          "linkedTicks": [
+            1,
+            2
+          ],
+          "pass": true,
+          "rollbackTested": true,
+          "smokePass": true
+        },
+        "room": "arrival court",
+        "selected": "Ari",
+        "tick": 3
+      },
+      "linkedTicksLength": 2,
+      "manifestTextHasHook": true,
+      "payloadPass": true,
+      "qaOut": "1 checks",
+      "replayEvents": [
+        {
+          "event": "enterWorld",
+          "payload": {
+            "boundary": "deterministic prototype boundary visible"
+          },
+          "tick": 0
+        },
+        {
+          "event": "runSaveRestoreSmoke",
+          "payload": {
+            "hook": "runSaveRestoreSmoke",
+            "pass": true,
+            "rollbackTested": true,
+            "room": "arrival court"
+          },
+          "tick": 1
+        },
+        {
+          "event": "runStateBoundaryAudit",
+          "payload": {
+            "checkedForbiddenKeyCount": 3,
+            "hook": "runStateBoundaryAudit",
+            "pass": true
+          },
+          "tick": 2
+        },
+        {
+          "event": "runAuditAfterRollbackCheck",
+          "payload": {
+            "auditPass": true,
+            "checkedAfterRollback": true,
+            "hook": "runAuditAfterRollbackCheck",
+            "linkedTicks": [
+              1,
+              2
+            ],
+            "pass": true,
+            "rollbackTested": true,
+            "smokePass": true
+          },
+          "tick": 3
+        }
+      ],
+      "replayOut": "4 rows",
+      "replayRows": 4,
+      "rollbackTested": true,
+      "roomOut": "arrival court / entered",
+      "smokePass": true
+    },
+    "shell_before": {
+      "buttonCount": 21,
+      "hasAuditAfterRollbackButton": 1,
+      "manifestHasHook": true,
+      "title": "SSRM-3D v61 Vertical Slice App Shell",
+      "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    }
+  },
+  "channels": {
+    "combined_hook_links_ordered_rows": 1.0,
+    "combined_hook_passes": 1.0,
+    "no_console_errors": 1.0,
+    "primary_demo_mp10_instruction_updated": 1.0,
+    "qa_manifest_exposes_hook": 1.0,
+    "recorder_marks_resolution": 1.0,
+    "recorder_resolution_note_exported": 1.0,
+    "shell_ui_exposes_hook": 1.0,
+    "single_internal_resolution_pass_not_external_playtest": 0.884,
+    "source_primary_demo_package_passed": 1.0,
+    "source_recorder_defect_was_captured": 1.0,
+    "source_v61_regenerated_with_new_hook": 1.0
+  },
+  "counts": {
+    "browser_replay_rows": 4,
+    "console_errors": 0,
+    "direct_qa_hooks": 7,
+    "linked_ticks": 2,
+    "patch_summary_items": 6,
+    "recorder_resolution_notes": 1,
+    "recorder_resolution_records": 1,
+    "shell_action_buttons": 21
+  },
+  "criteria": [
+    {
+      "criterion": "source_v61_regenerated_with_new_hook",
+      "evidence": "Report 301/v61 regenerated with 7 direct QA hooks",
+      "failure_if_false": "maintained shell was not regenerated with the new hook",
+      "passed": true
+    },
+    {
+      "criterion": "source_primary_demo_package_passed",
+      "evidence": "Report 303 primary-demo package still passes",
+      "failure_if_false": "primary demo package failed after MP-10 update",
+      "passed": true
+    },
+    {
+      "criterion": "source_recorder_defect_was_captured",
+      "evidence": "Report 305 captured one MP-10 fail record before this hardening",
+      "failure_if_false": "no recorded defect drove this change",
+      "passed": true
+    },
+    {
+      "criterion": "primary_demo_mp10_instruction_updated",
+      "evidence": "primary demo MP-10 text names Audit after rollback hooks",
+      "failure_if_false": "manual script still asks reviewers to infer ordering",
+      "passed": true
+    },
+    {
+      "criterion": "shell_ui_exposes_hook",
+      "evidence": "v61 shell has one Audit after rollback button and function",
+      "failure_if_false": "hook is not reachable from UI",
+      "passed": true
+    },
+    {
+      "criterion": "qa_manifest_exposes_hook",
+      "evidence": "v61 QA manifest includes runAuditAfterRollbackCheck",
+      "failure_if_false": "hook is not listed in QA manifest",
+      "passed": true
+    },
+    {
+      "criterion": "combined_hook_passes",
+      "evidence": "combined hook payload pass/smokePass/auditPass/rollbackTested/checkedAfterRollback all true",
+      "failure_if_false": "combined hook did not prove both checks",
+      "passed": true
+    },
+    {
+      "criterion": "combined_hook_links_ordered_rows",
+      "evidence": "replay shows smoke tick 1, audit tick 2, combined tick 3 with linkedTicks",
+      "failure_if_false": "hook did not preserve inspectable ordering",
+      "passed": true
+    },
+    {
+      "criterion": "recorder_marks_resolution",
+      "evidence": "recorder marks MP-10 pass after fix",
+      "failure_if_false": "recorder did not capture resolution",
+      "passed": true
+    },
+    {
+      "criterion": "recorder_resolution_note_exported",
+      "evidence": "resolution note recorded with export prepared and public local-only boundary",
+      "failure_if_false": "resolution note/export boundary failed",
+      "passed": true
+    },
+    {
+      "criterion": "no_console_errors",
+      "evidence": "browser console error list empty",
+      "failure_if_false": "browser console errors observed",
+      "passed": true
+    },
+    {
+      "criterion": "single_internal_resolution_pass_not_external_playtest",
+      "evidence": "one internal browser resolution pass, not outside playtest cohort",
+      "failure_if_false": "overclaiming internal resolution as external validation",
+      "passed": true
+    }
+  ],
+  "gates": {
+    "all_resolution_criteria_passed": true,
+    "honest_internal_resolution_cap_present": true,
+    "readiness_minimum_passed": true,
+    "recorded_defect_drove_patch": true,
+    "weakest_minimum_passed": true
+  },
+  "mean_channel_score": 0.990333,
+  "next_gate": "post-306: continue using the recorder to drive one defect at a time; next hardening should improve the primary demo's recorded defect triage/status model or fix another browser-observed usability gap",
+  "patch_summary": [
+    "Added a maintained-shell UI button for runAuditAfterRollbackCheck.",
+    "Added runAuditAfterRollbackCheck to the v61 direct QA hook manifest.",
+    "Implemented runAuditAfterRollbackCheck as rollback smoke followed by state-boundary audit, then a linked combined result.",
+    "Updated runAllQAHooks to include the audit-after-rollback check.",
+    "Updated primary-demo MP-10 instructions to expect the combined audit-after-rollback row.",
+    "Used the Report 305 recorder to mark MP-10 pass with a resolution note and export prepared."
+  ],
+  "prefix": "ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution",
+  "readiness": 0.958433,
+  "report": 306,
+  "seed": 20270704,
+  "source_v61_path": "artifacts/ssrm_3d_browser_world_v61_vertical_slice_app_shell_hardening_results.json",
+  "source_v63_path": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_results.json",
+  "source_v65_path": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_results.json",
+  "verdict": "pass",
+  "weakest_channel_score": 0.884,
+  "weakest_named_channel": "single_internal_resolution_pass_not_external_playtest"
+}

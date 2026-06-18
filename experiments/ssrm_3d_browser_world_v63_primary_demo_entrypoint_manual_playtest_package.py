@@ -116,8 +116,8 @@ MANUAL_PLAYTEST_STEPS: list[dict[str, Any]] = [
     },
     {
         "step_id": "MP-10",
-        "action": "Run state-boundary and save/restore smoke hooks.",
-        "expected_evidence": "Both hook rows pass and no private workspace/LLM keys appear in public trace.",
+        "action": "Run state-boundary, save/restore smoke, and Audit after rollback hooks.",
+        "expected_evidence": "The audit-after-rollback row passes with rollbackTested, smokePass, and auditPass all true.",
         "proves": "traceability remains bounded and inspectable",
         "required": True,
     },

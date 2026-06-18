@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -71,6 +71,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   scheduleQueue: [],
   debtLedger: [],
   offscreenObligationEvents: [],
+  absentTimeSummary: null,
   selectedObligationId: null,
   lastQA: []
 }));
@@ -136,6 +137,20 @@ function renderScheduleDebtIntegration() {
       : 'No obligation-linked debt entries yet.';
   }
 }
+function renderAbsentTimeSummary() {
+  const node = document.getElementById('absentTimeSummaryOut');
+  if (!node) return;
+  if (!world.absentTimeSummary) {
+    node.textContent = 'No absent-time summary yet.';
+    return;
+  }
+  node.textContent = [
+    `Phase: ${world.absentTimeSummary.phase}`,
+    `Avatar-caused: ${world.absentTimeSummary.avatarCaused.join('; ')}`,
+    `Resident-caused: ${world.absentTimeSummary.residentCaused.join('; ')}`,
+    `Before choosing: ${world.absentTimeSummary.beforeChoice}`
+  ].join('\n');
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -147,6 +162,7 @@ function log(event, payload) {
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
+  renderAbsentTimeSummary();
   return row;
 }
 function mutateResident(name, delta) {
@@ -199,7 +215,8 @@ function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1,
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
   const offscreenObligation = runOffscreenResidentObligationPulse();
-  return log('waitOffscreen', { offscreenLife: true, offscreenObligation });
+  updateAbsentTimeSummary(offscreenObligation);
+  return log('waitOffscreen', { offscreenLife: true, offscreenObligation, absentTimeSummary: world.absentTimeSummary });
 }
 function repairTrust() { mutateResident(world.selected, { trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }); return log('repairTrust', { nonMagic: true }); }
 function advancePromiseFollowUpState(residentName, trigger, replayRowsBeforeReturn) {
@@ -355,6 +372,33 @@ function runOffscreenResidentObligationPulse() {
   world.offscreenObligationEvents = world.offscreenObligationEvents.slice(-8);
   return event;
 }
+function updateAbsentTimeSummary(offscreenEvent) {
+  const event = offscreenEvent || (world.offscreenObligationEvents || [])[world.offscreenObligationEvents.length - 1];
+  if (!event) return null;
+  const obligation = (world.obligationLedger || []).find(item => item.id === event.obligationId);
+  const scheduleRow = (world.scheduleQueue || []).find(item => item.id === event.obligationId);
+  const debtRow = (world.debtLedger || []).find(item => item.id === event.obligationId);
+  world.absentTimeSummary = {
+    reportIntroduced: 355,
+    phase: 'before-obligation-choice',
+    avatarCaused: [
+      `avatar chose Wait offscreen at replay row ${event.replayRowsBeforeEvent}`,
+      'avatar did not choose the new obligation target'
+    ],
+    residentCaused: [
+      `${event.actor} changed ${event.target}'s obligation while avatar absent`,
+      `${event.obligationId} is ${obligation ? obligation.status : 'missing'} / ${obligation ? obligation.stage : 'missing'}`
+    ],
+    beforeChoice: `${event.target} obligation is selectable before resolve/defer; schedule ${scheduleRow ? scheduleRow.status : 'missing'}; debt ${debtRow ? debtRow.status : 'missing'}`,
+    obligationId: event.obligationId,
+    actor: event.actor,
+    target: event.target,
+    scheduleQueueStatus: scheduleRow ? scheduleRow.status : 'missing',
+    debtLedgerStatus: debtRow ? debtRow.status : 'missing',
+    boundary: 'browser-local-absent-time-summary-only'
+  };
+  return world.absentTimeSummary;
+}
 function selectedObligation() {
   const obligations = world.obligationLedger || [];
   if (!world.selectedObligationId && obligations.length > 0) world.selectedObligationId = obligations[0].id;
@@ -444,6 +488,7 @@ function runStateBoundaryAudit() {
     scheduleQueue: world.scheduleQueue,
     debtLedger: world.debtLedger,
     offscreenObligationEvents: world.offscreenObligationEvents,
+    absentTimeSummary: world.absentTimeSummary,
     selectedObligationId: world.selectedObligationId,
     replay: world.replay.map(row => ({
       event: row.event,
@@ -542,6 +587,7 @@ function bindControls() {
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
+  renderAbsentTimeSummary();
 }
 function readResidentHistory() {
   try {

@@ -1,0 +1,30 @@
+criterion,passed,score,evidence
+report_354_offscreen_gate_passing,True,1.0,Report 354 verdict=pass weakest=1.0
+source_exposes_absent_time_summary,True,1.0,"app.js exposes absentTimeSummary state, render, update, and boundary"
+visible_absent_time_panel_wired,True,1.0,index.html exposes Absent time dashboard panel
+wait_offscreen_updates_summary_before_log,True,1.0,waitOffscreen updates summary before replay log
+browser_smoke_artifact_exists,True,1.0,artifacts/ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_browser_smoke.json
+browser_smoke_used_maintained_shell,True,1.0,http://127.0.0.1:8775/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html
+before_offscreen_summary_empty,True,1.0,No absent-time summary yet.
+summary_separates_avatar_caused_changes,True,1.0,"Phase: before-obligation-choice
+Avatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target
+Resident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending
+Before choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding"
+summary_separates_resident_caused_changes,True,1.0,"Phase: before-obligation-choice
+Avatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target
+Resident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending
+Before choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding"
+summary_marks_before_obligation_choice,True,1.0,"phase=before-obligation-choice text=Phase: before-obligation-choice
+Avatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target
+Resident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending
+Before choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding"
+summary_links_to_visible_obligation,True,1.0,summary obligation=milo-offscreen-water-jars list=milo-offscreen-water-jars: open / offscreen-pending / Milo offscreen obligation open from Fay: inspect leaking water jars
+summary_links_to_schedule_and_debt_status,True,1.0,"summary={'phase': 'before-obligation-choice', 'hasAvatar': True, 'hasResident': True, 'hasBeforeChoosing': True, 'obligationId': 'milo-offscreen-water-jars', 'actor': 'Fay', 'target': 'Milo', 'scheduleQueueStatus': 'pending', 'debtLedgerStatus': 'outstanding'} schedule=milo-offscreen-water-jars: pending / Milo schedule pending: offscreen obligation: inspect leaking water jars debt=milo-offscreen-water-jars: outstanding / debt 3 / Milo debt outstanding: 3 after offscreen-resident-action"
+summary_survives_reload,True,1.0,"Phase: before-obligation-choice
+Avatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target
+Resident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending
+Before choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding"
+replay_logs_absent_summary,True,1.0,waitOffscreenReplayHasAbsentSummary=True summaryReloaded=True
+browser_console_clean,True,1.0,console error count=0
+experiment_index_includes_report_355,True,1.0,scripts/run_experiments.py includes Report 355 module
+claim_boundary_preserved,True,1.0,"Browser-local absent-time summary separation over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim."

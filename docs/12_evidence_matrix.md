@@ -1499,3 +1499,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_browser_smoke.json`, and `docs/354_ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_report.md`.
 - Browser result: `Wait offscreen` creates `milo-offscreen-water-jars` from Fay to Milo, schedule queue shows Milo pending offscreen obligation, debt ledger shows Milo outstanding debt 3, history records Fay changed Milo while the avatar was absent, and reload preserves the obligation, schedule queue, and debt ledger.
 - Boundary: browser-local deterministic offscreen obligation persistence only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 355 Evidence Matrix Entry
+
+- Claim: absent-time consequences are now visibly separated into avatar-caused and resident-caused changes before obligation choice.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_browser_smoke.json`, and `docs/355_ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_report.md`.
+- Browser result: before `Wait offscreen` the summary is empty; after waiting it shows `Avatar-caused` and `Resident-caused` lines, binds to `milo-offscreen-water-jars`, names schedule `pending` and debt `outstanding`, and reload preserves the same summary.
+- Boundary: browser-local deterministic absent-time summary only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

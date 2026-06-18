@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+355,pass,1.0,1.0,"post-355: add one bounded player choice from the absent-time summary that selects whether to handle the avatar-caused thread or the resident-caused offscreen thread first, then prove the unchosen thread remains pending"

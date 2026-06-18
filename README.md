@@ -2107,3 +2107,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 354: SSRM-3D Browser World v114 Offscreen Cross-Resident Obligation Persistence
 
 [Primary shell offscreen cross-resident obligation persistence report](docs/354_ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_report.md): makes `Wait offscreen` create a resident-caused obligation where Fay changes Milo's visible obligation, schedule queue, and debt ledger while the avatar is absent, then verifies the state survives reload.
+
+### Report 355: SSRM-3D Browser World v115 Absent-Time Summary Separation
+
+[Primary shell absent-time summary separation report](docs/355_ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_report.md): adds a visible Absent time dashboard summary that separates avatar-caused waiting from resident-caused offscreen obligation changes before the player chooses which obligation to handle.

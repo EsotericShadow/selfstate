@@ -1,0 +1,134 @@
+{
+  "boundary": "Browser-local absent-time summary separation over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim.",
+  "browser_smoke_artifact": "artifacts/ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_browser_smoke.json",
+  "criteria": [
+    {
+      "criterion": "report_354_offscreen_gate_passing",
+      "evidence": "Report 354 verdict=pass weakest=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_exposes_absent_time_summary",
+      "evidence": "app.js exposes absentTimeSummary state, render, update, and boundary",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "visible_absent_time_panel_wired",
+      "evidence": "index.html exposes Absent time dashboard panel",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "wait_offscreen_updates_summary_before_log",
+      "evidence": "waitOffscreen updates summary before replay log",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_artifact_exists",
+      "evidence": "artifacts/ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_browser_smoke.json",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_used_maintained_shell",
+      "evidence": "http://127.0.0.1:8775/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "before_offscreen_summary_empty",
+      "evidence": "No absent-time summary yet.",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "summary_separates_avatar_caused_changes",
+      "evidence": "Phase: before-obligation-choice\nAvatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target\nResident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending\nBefore choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "summary_separates_resident_caused_changes",
+      "evidence": "Phase: before-obligation-choice\nAvatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target\nResident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending\nBefore choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "summary_marks_before_obligation_choice",
+      "evidence": "phase=before-obligation-choice text=Phase: before-obligation-choice\nAvatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target\nResident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending\nBefore choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "summary_links_to_visible_obligation",
+      "evidence": "summary obligation=milo-offscreen-water-jars list=milo-offscreen-water-jars: open / offscreen-pending / Milo offscreen obligation open from Fay: inspect leaking water jars",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "summary_links_to_schedule_and_debt_status",
+      "evidence": "summary={'phase': 'before-obligation-choice', 'hasAvatar': True, 'hasResident': True, 'hasBeforeChoosing': True, 'obligationId': 'milo-offscreen-water-jars', 'actor': 'Fay', 'target': 'Milo', 'scheduleQueueStatus': 'pending', 'debtLedgerStatus': 'outstanding'} schedule=milo-offscreen-water-jars: pending / Milo schedule pending: offscreen obligation: inspect leaking water jars debt=milo-offscreen-water-jars: outstanding / debt 3 / Milo debt outstanding: 3 after offscreen-resident-action",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "summary_survives_reload",
+      "evidence": "Phase: before-obligation-choice\nAvatar-caused: avatar chose Wait offscreen at replay row 1; avatar did not choose the new obligation target\nResident-caused: Fay changed Milo's obligation while avatar absent; milo-offscreen-water-jars is open / offscreen-pending\nBefore choosing: Milo obligation is selectable before resolve/defer; schedule pending; debt outstanding",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "replay_logs_absent_summary",
+      "evidence": "waitOffscreenReplayHasAbsentSummary=True summaryReloaded=True",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_console_clean",
+      "evidence": "console error count=0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "experiment_index_includes_report_355",
+      "evidence": "scripts/run_experiments.py includes Report 355 module",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "claim_boundary_preserved",
+      "evidence": "Browser-local absent-time summary separation over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim.",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "generated_at": "2026-06-18T11:36:26.040980+00:00",
+  "metrics": {
+    "after_offscreen_replay_rows": 2,
+    "after_reload_replay_rows": 2,
+    "before_choice_score": 1.0,
+    "before_replay_rows": 1,
+    "browser_interaction_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "console_error_count": 0,
+    "criterion_count": 17,
+    "empty_state_score": 1.0,
+    "readiness": 1.0,
+    "reload_persistence_score": 1.0,
+    "replay_debug_score": 1.0,
+    "review_gate_score": 1.0,
+    "runner_index_score": 1.0,
+    "runtime_hygiene_score": 1.0,
+    "separation_score": 1.0,
+    "source_behavior_score": 1.0,
+    "visible_binding_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-355: add one bounded player choice from the absent-time summary that selects whether to handle the avatar-caused thread or the resident-caused offscreen thread first, then prove the unchosen thread remains pending",
+  "report": 355,
+  "slug": "ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation",
+  "verdict": "pass"
+}

@@ -56,6 +56,13 @@
           <article><strong>Replay</strong><span id="replayOut"></span></article>
           <article><strong>QA</strong><span id="qaOut"></span></article>
         </div>
+        <div class="obligation-actions" role="group" aria-label="remembered obligation actions">
+          <label for="obligationSelect">Remembered obligation</label>
+          <select id="obligationSelect"></select>
+          <button data-action="resolveSelectedObligation">Resolve obligation</button>
+          <button data-action="deferSelectedObligation">Defer obligation</button>
+          <pre id="obligationListOut"></pre>
+        </div>
         <div class="qa-buttons" role="group" aria-label="QA hooks">
           <button data-action="runPlaytestChecklist">Run checklist</button>
           <button data-action="runStateBoundaryAudit">Audit state</button>

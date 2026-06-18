@@ -4061,6 +4061,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v109_primary_demo_guarded_receipt_browser_smoke",
         "experiments.ssrm_3d_browser_world_v110_primary_shell_return_recognition_vertical_slice",
         "experiments.ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup",
+        "experiments.ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution",
         "--seed",
         "20270732",
     ],

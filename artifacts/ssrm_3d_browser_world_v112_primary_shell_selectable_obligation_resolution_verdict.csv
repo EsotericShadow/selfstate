@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+352,pass,1.0,1.0,post-352: connect selectable obligations to the resident schedule/debt dashboard so resolving one obligation also changes the visible schedule queue and debt ledger rather than only the obligation row

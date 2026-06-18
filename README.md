@@ -2095,3 +2095,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 351: SSRM-3D Browser World v111 Remembered Obligation Return Follow-up
 
 [Primary shell remembered obligation return-followup report](docs/351_ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_report.md): extends the maintained shell so repeated return recognition advances the same visible resident follow-up obligation, with public follow-up state, resident memory/history, replay evidence, and browser-local validation.
+
+### Report 352: SSRM-3D Browser World v112 Selectable Obligation Resolution
+
+[Primary shell selectable obligation resolution report](docs/352_ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution_report.md): exposes remembered follow-ups as a selectable obligation list and verifies bounded avatar actions that defer and resolve the selected obligation with visible resident memory/history, replay evidence, and browser-local validation.

@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -67,6 +67,8 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   replay: [],
   returnContinuity: null,
   promiseFollowUp: null,
+  obligationLedger: [],
+  selectedObligationId: null,
   lastQA: []
 }));
 
@@ -95,6 +97,26 @@ function renderPromiseFollowUp() {
   }
   node.textContent = world.promiseFollowUp.visibleStatus;
 }
+function renderObligationList() {
+  const listNode = document.getElementById('obligationListOut');
+  const selectNode = document.getElementById('obligationSelect');
+  const obligations = world.obligationLedger || [];
+  if (selectNode) {
+    selectNode.innerHTML = obligations.map(item => `<option value="${item.id}">${item.resident}: ${item.status} / ${item.stage}</option>`).join('');
+    if (obligations.length > 0) {
+      if (!world.selectedObligationId || !obligations.some(item => item.id === world.selectedObligationId)) {
+        world.selectedObligationId = obligations[0].id;
+      }
+      selectNode.value = world.selectedObligationId;
+    }
+  }
+  if (!listNode) return;
+  if (obligations.length === 0) {
+    listNode.textContent = 'No selectable obligations yet.';
+    return;
+  }
+  listNode.textContent = obligations.map(item => `${item.id}: ${item.status} / ${item.stage} / ${item.visibleStatus}`).join('\n');
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -104,6 +126,7 @@ function log(event, payload) {
   render();
   renderReturnContinuity();
   renderPromiseFollowUp();
+  renderObligationList();
   return row;
 }
 function mutateResident(name, delta) {
@@ -174,6 +197,7 @@ function advancePromiseFollowUpState(residentName, trigger, replayRowsBeforeRetu
     visibleStatus: `${residentName} follow-up ${nextStage}: ${obligation} (${returnCount} return(s))`,
     boundary: 'browser-local-public-obligation-thread-only'
   };
+  syncPromiseFollowUpObligation(world.promiseFollowUp);
   mutateResident(residentName, {
     trust: nextStage === 'opened' ? 0.004 : 0.006,
     progress: nextStage === 'opened' ? 0.012 : 0.018,
@@ -186,6 +210,77 @@ function advancePromiseFollowUpState(residentName, trigger, replayRowsBeforeRetu
 function advancePromiseFollowUp() {
   const followUp = advancePromiseFollowUpState(world.selected, 'manual', world.replay.length);
   return log('advancePromiseFollowUp', { followUp, boundary: BOUNDARY });
+}
+function syncPromiseFollowUpObligation(followUp) {
+  if (!followUp) return null;
+  if (!world.obligationLedger) world.obligationLedger = [];
+  const id = `${followUp.resident.toLowerCase()}-awning-followup`;
+  const existing = world.obligationLedger.find(item => item.id === id);
+  const status = existing && existing.status === 'resolved' ? 'resolved' : 'open';
+  const row = {
+    id,
+    reportIntroduced: 352,
+    resident: followUp.resident,
+    obligation: followUp.obligation,
+    stage: followUp.stage,
+    status,
+    returnCount: followUp.returnCount,
+    selected: true,
+    lastTrigger: followUp.trigger,
+    lastReplayRowsBeforeReturn: followUp.replayRowsBeforeReturn,
+    visibleStatus: `${followUp.resident} obligation ${status}: ${followUp.obligation} / follow-up ${followUp.stage} / ${followUp.returnCount} return(s)`,
+    boundary: 'browser-local-selectable-obligation-list-only'
+  };
+  if (existing) Object.assign(existing, row);
+  else world.obligationLedger.push(row);
+  world.selectedObligationId = id;
+  return row;
+}
+function selectedObligation() {
+  const obligations = world.obligationLedger || [];
+  if (!world.selectedObligationId && obligations.length > 0) world.selectedObligationId = obligations[0].id;
+  return obligations.find(item => item.id === world.selectedObligationId) || null;
+}
+function resolveSelectedObligation() {
+  const obligation = selectedObligation();
+  if (!obligation) return log('resolveSelectedObligation', { resolved: false, reason: 'no selectable obligation', boundary: BOUNDARY });
+  obligation.status = 'resolved';
+  obligation.stage = 'resolved';
+  obligation.resolution = 'avatar resolved selected follow-up through bounded help action';
+  obligation.resolvedAtTick = world.tick;
+  obligation.visibleStatus = `${obligation.resident} obligation resolved by avatar help: ${obligation.obligation}`;
+  if (world.promiseFollowUp && world.promiseFollowUp.resident === obligation.resident) {
+    world.promiseFollowUp = { ...world.promiseFollowUp, stage: 'resolved', resolutionStatus: 'resolved', visibleStatus: obligation.visibleStatus };
+  }
+  mutateResident(obligation.resident, {
+    trust: 0.018,
+    debt: -1,
+    progress: 0.024,
+    memory: `resolved obligation: ${obligation.obligation}`,
+    historyEvent: 'obligation resolved',
+    historyDetail: 'bounded action resolved selected follow-up'
+  });
+  return log('resolveSelectedObligation', { resolved: true, obligation, boundedAction: true, boundary: BOUNDARY });
+}
+function deferSelectedObligation() {
+  const obligation = selectedObligation();
+  if (!obligation) return log('deferSelectedObligation', { deferred: false, reason: 'no selectable obligation', boundary: BOUNDARY });
+  obligation.status = 'deferred';
+  obligation.stage = 'deferred';
+  obligation.deferredAtTick = world.tick;
+  obligation.dueReplayRows = world.replay.length + 2;
+  obligation.visibleStatus = `${obligation.resident} obligation deferred by avatar: ${obligation.obligation} / due after replay row ${obligation.dueReplayRows}`;
+  if (world.promiseFollowUp && world.promiseFollowUp.resident === obligation.resident) {
+    world.promiseFollowUp = { ...world.promiseFollowUp, stage: 'deferred', resolutionStatus: 'deferred', visibleStatus: obligation.visibleStatus };
+  }
+  mutateResident(obligation.resident, {
+    trust: -0.006,
+    progress: 0.004,
+    memory: `deferred obligation: ${obligation.obligation}`,
+    historyEvent: 'obligation deferred',
+    historyDetail: 'bounded action deferred selected follow-up'
+  });
+  return log('deferSelectedObligation', { deferred: true, obligation, boundedAction: true, boundary: BOUNDARY });
 }
 function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); recordCheckpoint('manual save'); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
 function restoreWorld() {
@@ -222,6 +317,8 @@ function runStateBoundaryAudit() {
     resources: world.resources,
     returnContinuity: world.returnContinuity,
     promiseFollowUp: world.promiseFollowUp,
+    obligationLedger: world.obligationLedger,
+    selectedObligationId: world.selectedObligationId,
     replay: world.replay.map(row => ({
       event: row.event,
       tick: row.tick,
@@ -291,6 +388,10 @@ function bindControls() {
   document.getElementById('receiptFieldSelect').innerHTML = receiptFieldIds.map(field => `<option value="${field}">${field}</option>`).join('');
   residentSelect.value = world.selected;
   residentSelect.addEventListener('change', () => { world.selected = residentSelect.value; log('selectResident', { selected: world.selected }); });
+  const obligationSelect = document.getElementById('obligationSelect');
+  if (obligationSelect) {
+    obligationSelect.addEventListener('change', () => { world.selectedObligationId = obligationSelect.value; log('selectObligation', { selectedObligationId: world.selectedObligationId }); });
+  }
   const dashboardActions = document.getElementById('residentActionButtons');
   dashboardActions.addEventListener('click', event => {
     const target = event.target;

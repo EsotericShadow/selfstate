@@ -1478,3 +1478,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_browser_smoke.json`, and `docs/351_ssrm_3d_browser_world_v111_primary_shell_remembered_obligation_return_followup_report.md`.
 - Browser result: clean session creates two replay rows before return, first return opens the follow-up, second return advances the same obligation to `follow-up advanced`, resident memory links return recognition to the follow-up, and console errors remain 0.
 - Boundary: browser-local deterministic follow-up state only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 352 Evidence Matrix Entry
+
+- Claim: remembered resident follow-ups are now selectable obligations that require bounded avatar action to defer or resolve.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution_browser_smoke.json`, and `docs/352_ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution_report.md`.
+- Browser result: repeated return opens and advances `ari-awning-followup` without auto-resolving it, `Defer obligation` changes it to deferred, `Resolve obligation` changes it to resolved, resident memory/history records the bounded actions, and console errors remain 0.
+- Boundary: browser-local deterministic obligation handling only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

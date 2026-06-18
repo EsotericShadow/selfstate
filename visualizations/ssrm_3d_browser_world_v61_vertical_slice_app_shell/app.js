@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -68,6 +68,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   returnContinuity: null,
   returnGreetingContinuity: null,
   accountabilitySocialEcho: null,
+  boundedEchoConversation: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -125,6 +126,23 @@ function renderAccountabilitySocialEcho() {
     `Mentions: ${world.accountabilitySocialEcho.residentThreadId} ${world.accountabilitySocialEcho.residentObligationStatus} / avatar absence ${world.accountabilitySocialEcho.avatarThreadStatus}`,
     `Direct avatar command: ${world.accountabilitySocialEcho.directAvatarCommand ? 'yes' : 'no'}`,
     `History preserved: ${world.accountabilitySocialEcho.residentHistoryPreserved ? 'yes' : 'no'}`
+  ].join('\n');
+}
+function renderBoundedEchoConversation() {
+  const node = document.getElementById('boundedEchoConversationOut');
+  if (!node) return;
+  if (!world.boundedEchoConversation) {
+    node.textContent = 'No bounded echo conversation yet.';
+    return;
+  }
+  node.textContent = [
+    `Resident: ${world.boundedEchoConversation.resident}`,
+    `Phrase: ${world.boundedEchoConversation.phrase}`,
+    `Reply: ${world.boundedEchoConversation.reply}`,
+    `Source echo: ${world.boundedEchoConversation.sourceEchoId}`,
+    `No LLM: ${world.boundedEchoConversation.noLLM ? 'yes' : 'no'}`,
+    `Autonomous language: ${world.boundedEchoConversation.autonomousLanguage ? 'yes' : 'no'}`,
+    `Phrasebook only: ${world.boundedEchoConversation.phrasebookOnly ? 'yes' : 'no'}`
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -231,6 +249,7 @@ function log(event, payload) {
   renderReturnContinuity();
   renderReturnGreetingContinuity();
   renderAccountabilitySocialEcho();
+  renderBoundedEchoConversation();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -313,7 +332,37 @@ function moveSouth() { world.avatar.y = Math.min(560, world.avatar.y + 34); retu
 function moveWest() { world.avatar.x = Math.max(52, world.avatar.x - 34); updateRoom(); return log('moveWest', { x: world.avatar.x, room: world.avatar.room }); }
 function moveEast() { world.avatar.x = Math.min(970, world.avatar.x + 34); updateRoom(); return log('moveEast', { x: world.avatar.x, room: world.avatar.room }); }
 function updateRoom() { world.avatar.room = ['arrival court', 'tool alcove', 'rain court', 'fiber loft'][Math.floor(world.avatar.x / 250) % 4]; }
-function talkBounded() { const phrase = phraseSelect.value; mutateResident(world.selected, { trust: 0.012, memory: 'heard bounded phrase ' + phrase }); return log('talkBounded', { phrase, noLLM: true, autonomousLanguage: false }); }
+function buildBoundedEchoConversation(phrase) {
+  const echo = world.accountabilitySocialEcho;
+  if (!echo || world.selected !== echo.echoResident) return null;
+  if (!['greet', 'ask_schedule', 'ask_debt'].includes(phrase)) return null;
+  const reply = `${echo.echoResident} says: I heard ${echo.sourceResident} say ${echo.residentThreadId} stayed ${echo.residentObligationStatus}; avatar absence ${echo.avatarThreadStatus}.`;
+  world.boundedEchoConversation = {
+    reportIntroduced: 360,
+    resident: echo.echoResident,
+    phrase,
+    reply,
+    sourceEchoId: echo.residentThreadId,
+    sourceResident: echo.sourceResident,
+    echoResident: echo.echoResident,
+    residentObligationStatus: echo.residentObligationStatus,
+    avatarThreadStatus: echo.avatarThreadStatus,
+    directAvatarCommand: echo.directAvatarCommand,
+    noLLM: true,
+    autonomousLanguage: false,
+    phrasebookOnly: true,
+    boundary: 'browser-local-bounded-echo-conversation-only'
+  };
+  recordResidentHistory(echo.echoResident, 'bounded echo conversation', `${reply}; no LLM true; phrasebook only true`);
+  return world.boundedEchoConversation;
+}
+function talkBounded() {
+  const phrase = phraseSelect.value;
+  const boundedEchoConversation = buildBoundedEchoConversation(phrase);
+  const memory = boundedEchoConversation ? `bounded echo reply referenced ${boundedEchoConversation.sourceEchoId}` : 'heard bounded phrase ' + phrase;
+  mutateResident(world.selected, { trust: 0.012, memory });
+  return log('talkBounded', { phrase, boundedEchoConversation, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
+}
 function askSchedule() { return log('askSchedule', { schedule: currentResident().schedule }); }
 function offerHelp() { mutateResident(world.selected, { trust: 0.024, debt: -1, progress: 0.035, memory: 'avatar helped with ' + currentResident().schedule }); world.resources.care = Math.max(0, world.resources.care - 1); return log('offerHelp', { care: world.resources.care }); }
 function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1, memory: 'avatar borrowed tool' }); return log('borrowTool', { consequence: 'debt increases' }); }
@@ -724,6 +773,7 @@ function runStateBoundaryAudit() {
     returnContinuity: world.returnContinuity,
     returnGreetingContinuity: world.returnGreetingContinuity,
     accountabilitySocialEcho: world.accountabilitySocialEcho,
+    boundedEchoConversation: world.boundedEchoConversation,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -830,6 +880,7 @@ function bindControls() {
   renderReturnContinuity();
   renderReturnGreetingContinuity();
   renderAccountabilitySocialEcho();
+  renderBoundedEchoConversation();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();

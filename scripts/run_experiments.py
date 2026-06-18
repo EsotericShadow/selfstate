@@ -4069,6 +4069,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v117_primary_shell_avatar_absence_accountability_receipt",
         "experiments.ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity",
         "experiments.ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo",
+        "experiments.ssrm_3d_browser_world_v120_primary_shell_bounded_fay_echo_conversation",
         "--seed",
         "20270732",
     ],

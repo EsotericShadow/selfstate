@@ -1269,3 +1269,9 @@ This remains deterministic browser-local state, but it tightens the playable loo
 Report 359 moves the Report 358 accountability-linked return greeting into resident-to-resident memory. Once Milo has greeted the returning avatar with the resolved `milo-offscreen-water-jars` obligation and accounted avatar absence, `Run social pulse` can now propagate an echo from Milo to Fay. The visible Resident echo panel records that Fay heard Milo mention the resolved obligation and accounted absence, explicitly marks `Direct avatar command: no`, and preserves the original offscreen event/history.
 
 This is still deterministic browser-local state, but it is a better single-system loop: consequence no longer stays only in the avatar-facing receipt. It can move through resident social memory while retaining source boundaries and the no-LLM/no-consciousness claim.
+
+### Report 360: Browser World v120 Primary Shell Bounded Fay Echo Conversation
+
+Report 360 makes the Report 359 resident-to-resident echo influence a later bounded conversation answer. After the return greeting has propagated from Milo to Fay, selecting Fay and pressing `Talk` with a safe bounded phrase can create an Echo conversation receipt. The receipt names Fay, the phrase, the source echo `milo-offscreen-water-jars`, the resolved/accounted status chain, and explicitly marks `No LLM: yes`, `Autonomous language: no`, and `Phrasebook only: yes`.
+
+This remains deterministic browser-local state, not autonomous language or consciousness. The gain is traceable source-carrying dialogue: a later resident-facing answer can depend on prior social memory without hiding the source boundary or claiming subjective understanding.

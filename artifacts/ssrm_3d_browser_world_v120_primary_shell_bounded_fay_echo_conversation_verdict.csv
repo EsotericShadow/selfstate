@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+360,pass,1.0,1.0,"post-360: let the bounded echoed conversation change one later resident-facing choice or refusal while preserving source attribution, recoverability, and the no-consciousness/no-LLM boundary"

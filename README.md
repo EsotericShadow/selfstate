@@ -2127,3 +2127,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 359: SSRM-3D Browser World v119 Resident Accountability Social Echo
 
 [Primary shell resident accountability social echo report](docs/359_ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo_report.md): propagates the accountability-linked return greeting through resident-to-resident social memory so Fay can carry Milo's resolved obligation and accounted avatar absence without a direct avatar command.
+
+### Report 360: SSRM-3D Browser World v120 Bounded Fay Echo Conversation
+
+[Primary shell bounded Fay echo conversation report](docs/360_ssrm_3d_browser_world_v120_primary_shell_bounded_fay_echo_conversation_report.md): lets Fay answer a later bounded `Talk` phrase from the carried resident echo, while the visible receipt and replay mark the response as no-LLM, not autonomous language, and phrasebook-only.

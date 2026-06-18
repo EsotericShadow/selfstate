@@ -1,0 +1,25 @@
+{
+  "boundary": "Deterministic browser-local stale prepared-handoff calibration bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local launcher freshness judgment and review-handoff hygiene, not external validation or evidence of inner experience.",
+  "checks": {
+    "evidence_avoids_raw_storage_keys": true,
+    "freshness_preview_marks_payload_stale": true,
+    "freshness_preview_names_mismatch": true,
+    "no_console_errors": true,
+    "prepared_payload_not_overwritten_by_refresh": true,
+    "prepared_resume_was_fresh_before_supersede": true,
+    "shell_evidence_refreshed_to_newer_clean_handoff": true,
+    "stale_actions_block_continue": true,
+    "stale_reload_keeps_newer_shell_timestamp": true,
+    "stale_reload_keeps_prepared_timestamp": true,
+    "stale_state_survives_launcher_reload": true,
+    "stale_status_visible_after_supersede": true,
+    "superseding_shell_handoff_created": true
+  },
+  "next_gate": "post-338: verify stale prepared handoff repair by re-preparing after supersession, so reviewers can recover from a stale payload and regain a fresh continue action without losing visible mismatch history",
+  "prepared_recorded_at": "2026-06-18T09:57:56.291Z",
+  "report": 338,
+  "seed": 20270736,
+  "stale_reload_status": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+  "stale_status": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+  "superseding_shell_recorded_at": "2026-06-18T09:57:57.404Z"
+}

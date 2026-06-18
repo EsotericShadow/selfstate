@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+338,pass,1.0,1.0,"post-338: verify stale prepared handoff repair by re-preparing after supersession, so reviewers can recover from a stale payload and regain a fresh continue action without losing visible mismatch history"

@@ -1,0 +1,873 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_criteria.csv",
+    "report": "docs/338_ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local stale prepared-handoff calibration bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local launcher freshness judgment and review-handoff hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence": {
+    "afterSupersedeBeforeRefresh": {
+      "actionLinks": [
+        {
+          "href": "blob:http://127.0.0.1:8800/46bb6e2d-a762-450b-a51d-1e455cc5cd94",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Re-prepare before continuing from this handoff.Download prepared outside-review handoff JSON",
+      "bodyHasFreshResume": false,
+      "bodyHasMismatch": true,
+      "bodyHasStale": true,
+      "handoffStatusText": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "hasContinueControl": false,
+      "hasDownloadControl": true,
+      "label": "after-supersede-before-refresh",
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:57:56.291Z",
+      "preparedPayload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:57:55.006Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:56.291Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "clean",
+          "currentHandoffRecordedAt": "2026-06-18T09:57:57.404Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 0,
+          "fresh": false,
+          "mismatches": [
+            "launch handoff changed",
+            "launch kind changed",
+            "shell replay rows changed"
+          ],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:57:56.291Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: stale: launch handoff changed, launch kind changed, shell replay rows changed resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:57:56.291Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:57:56.291Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "previewCurrentKind": "clean",
+      "previewCurrentRecordedAt": "2026-06-18T09:57:57.404Z",
+      "previewFresh": false,
+      "previewMismatchCount": 3,
+      "previewMismatches": [
+        "launch handoff changed",
+        "launch kind changed",
+        "shell replay rows changed"
+      ],
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:57.404Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "shellEvidenceText": "Shell evidence: replay 0 rows / reviewer pass missing / receipt missing / observations 0 / export missing.",
+      "shellHandoffKind": "clean",
+      "shellHandoffRecordedAt": "2026-06-18T09:57:57.404Z",
+      "statusText": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "checks": {
+      "evidence_avoids_raw_storage_keys": true,
+      "freshness_preview_marks_payload_stale": true,
+      "freshness_preview_names_mismatch": true,
+      "no_console_errors": true,
+      "prepared_payload_not_overwritten_by_refresh": true,
+      "prepared_resume_was_fresh_before_supersede": true,
+      "shell_evidence_refreshed_to_newer_clean_handoff": true,
+      "stale_actions_block_continue": true,
+      "stale_reload_keeps_newer_shell_timestamp": true,
+      "stale_reload_keeps_prepared_timestamp": true,
+      "stale_state_survives_launcher_reload": true,
+      "stale_status_visible_after_supersede": true,
+      "superseding_shell_handoff_created": true
+    },
+    "consoleErrorMessages": [],
+    "consoleErrors": 0,
+    "initialShell": {
+      "hasAllPass": true,
+      "hasReturnToLauncher": true,
+      "hasReviewerLanding": true,
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "port": 8800,
+    "preparedFreshResume": {
+      "actionLinks": [
+        {
+          "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+          "text": "Continue from prepared resume handoff"
+        },
+        {
+          "href": "blob:http://127.0.0.1:8800/821fb8e6-4667-4920-a9bd-bb0389ea54a6",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Continue from prepared resume handoffDownload prepared outside-review handoff JSON",
+      "bodyHasFreshResume": true,
+      "bodyHasMismatch": true,
+      "bodyHasStale": false,
+      "handoffStatusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "hasContinueControl": true,
+      "hasDownloadControl": true,
+      "label": "prepared-fresh-resume-before-supersede",
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:57:56.291Z",
+      "preparedPayload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:57:55.006Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:56.291Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "resume",
+          "currentHandoffRecordedAt": "2026-06-18T09:57:56.291Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 16,
+          "fresh": true,
+          "mismatches": [],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:57:56.291Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:57:56.291Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:57:56.291Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "previewCurrentKind": "resume",
+      "previewCurrentRecordedAt": "2026-06-18T09:57:56.291Z",
+      "previewFresh": true,
+      "previewMismatchCount": 0,
+      "previewMismatches": [],
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 7,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:56.291Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 9,
+          "passCount": 9
+        },
+        "receiptAllPass": true,
+        "replayExportReady": true,
+        "replayRows": 16,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": true,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "shellEvidenceText": "Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready.",
+      "shellHandoffKind": "resume",
+      "shellHandoffRecordedAt": "2026-06-18T09:57:56.291Z",
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "report": 338,
+    "resumeShell": {
+      "hasReturnToLauncher": true,
+      "hasReviewerLanding": true,
+      "hasRunReviewerPass": true,
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "staleAfterReload": {
+      "actionLinks": [
+        {
+          "href": "blob:http://127.0.0.1:8800/34fd9472-c7be-4fb5-a511-58bfe36b42ab",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Re-prepare before continuing from this handoff.Download prepared outside-review handoff JSON",
+      "bodyHasFreshResume": false,
+      "bodyHasMismatch": true,
+      "bodyHasStale": true,
+      "handoffStatusText": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "hasContinueControl": false,
+      "hasDownloadControl": true,
+      "label": "stale-after-reload",
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:57:56.291Z",
+      "preparedPayload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:57:55.006Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:56.291Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "clean",
+          "currentHandoffRecordedAt": "2026-06-18T09:57:57.404Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 0,
+          "fresh": false,
+          "mismatches": [
+            "launch handoff changed",
+            "launch kind changed",
+            "shell replay rows changed"
+          ],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:57:56.291Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: stale: launch handoff changed, launch kind changed, shell replay rows changed resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:57:56.291Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:57:56.291Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "previewCurrentKind": "clean",
+      "previewCurrentRecordedAt": "2026-06-18T09:57:57.404Z",
+      "previewFresh": false,
+      "previewMismatchCount": 3,
+      "previewMismatches": [
+        "launch handoff changed",
+        "launch kind changed",
+        "shell replay rows changed"
+      ],
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:57.404Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "shellEvidenceText": "Shell evidence: replay 0 rows / reviewer pass missing / receipt missing / observations 0 / export missing.",
+      "shellHandoffKind": "clean",
+      "shellHandoffRecordedAt": "2026-06-18T09:57:57.404Z",
+      "statusText": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "staleAfterSupersede": {
+      "actionLinks": [
+        {
+          "href": "blob:http://127.0.0.1:8800/b32f4c06-d5be-44a8-b76f-648230ecd8ed",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Re-prepare before continuing from this handoff.Download prepared outside-review handoff JSON",
+      "bodyHasFreshResume": false,
+      "bodyHasMismatch": true,
+      "bodyHasStale": true,
+      "handoffStatusText": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "hasContinueControl": false,
+      "hasDownloadControl": true,
+      "label": "after-supersede-after-refresh",
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:57:56.291Z",
+      "preparedPayload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:57:55.006Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:56.291Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "clean",
+          "currentHandoffRecordedAt": "2026-06-18T09:57:57.404Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 0,
+          "fresh": false,
+          "mismatches": [
+            "launch handoff changed",
+            "launch kind changed",
+            "shell replay rows changed"
+          ],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:57:56.291Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: stale: launch handoff changed, launch kind changed, shell replay rows changed resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:57:56.291Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:57:56.291Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "previewCurrentKind": "clean",
+      "previewCurrentRecordedAt": "2026-06-18T09:57:57.404Z",
+      "previewFresh": false,
+      "previewMismatchCount": 3,
+      "previewMismatches": [
+        "launch handoff changed",
+        "launch kind changed",
+        "shell replay rows changed"
+      ],
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "launcherUrl": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:57:57.404Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "shellEvidenceText": "Shell evidence: replay 0 rows / reviewer pass missing / receipt missing / observations 0 / export missing.",
+      "shellHandoffKind": "clean",
+      "shellHandoffRecordedAt": "2026-06-18T09:57:57.404Z",
+      "statusText": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "supersedingShell": {
+      "hasReturnToLauncher": true,
+      "hasReviewerLanding": true,
+      "hasRunReviewerPass": true,
+      "url": "http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    }
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "report_337_hard_reload_gate_passed",
+      "evidence": "Report 337 verdict=pass weakest=1.0",
+      "failure_if_false": "stale calibration would not be grounded in a passing hard-reload handoff gate",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "stale_calibration_source_still_present",
+      "evidence": "generator, emitted JS, and emitted HTML retain stale prepared-handoff status/action machinery",
+      "failure_if_false": "regeneration would remove stale prepared-handoff calibration",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "prepared_resume_was_fresh_before_supersede",
+      "evidence": "kind=resume fresh=True status=Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "the baseline prepared resume handoff was not fresh before supersession",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "superseding_shell_handoff_created",
+      "evidence": "url=http://127.0.0.1:8800/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 reviewer=True",
+      "failure_if_false": "the proof did not create a newer shell handoff to supersede the prepared payload",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "shell_evidence_refreshed_to_newer_clean_handoff",
+      "evidence": "prepared=2026-06-18T09:57:56.291Z current=2026-06-18T09:57:57.404Z kind=clean",
+      "failure_if_false": "launcher evidence did not observe a newer current clean handoff",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "prepared_payload_not_overwritten_by_refresh",
+      "evidence": "prepared=2026-06-18T09:57:56.291Z stalePayload=2026-06-18T09:57:56.291Z kind=resume",
+      "failure_if_false": "refresh overwrote the prepared payload instead of calibrating it as stale",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "stale_status_visible_after_supersede",
+      "evidence": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "failure_if_false": "launcher did not render a human-readable stale prepared-handoff summary",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "freshness_preview_marks_payload_stale",
+      "evidence": "previewFresh=False",
+      "failure_if_false": "visible preview JSON did not mark the prepared payload stale",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "freshness_preview_names_mismatch",
+      "evidence": "['launch handoff changed', 'launch kind changed', 'shell replay rows changed']",
+      "failure_if_false": "visible preview JSON did not name the freshness mismatch",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "stale_actions_block_continue",
+      "evidence": "Re-prepare before continuing from this handoff.Download prepared outside-review handoff JSON",
+      "failure_if_false": "stale prepared handoff still exposed a continue action",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "download_remains_available_for_stale_review",
+      "evidence": "Re-prepare before continuing from this handoff.Download prepared outside-review handoff JSON",
+      "failure_if_false": "stale calibration removed the downloadable review evidence",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "stale_state_survives_launcher_reload",
+      "evidence": "Prepared handoff payload is stale: launch handoff changed, launch kind changed, shell replay rows changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff.",
+      "failure_if_false": "stale classification did not survive launcher reload",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "stale_reload_keeps_prepared_timestamp",
+      "evidence": "prepared=2026-06-18T09:57:56.291Z reload=2026-06-18T09:57:56.291Z",
+      "failure_if_false": "reload mutated the stale prepared payload timestamp",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "stale_reload_keeps_newer_shell_timestamp",
+      "evidence": "afterSupersede=2026-06-18T09:57:57.404Z reload=2026-06-18T09:57:57.404Z",
+      "failure_if_false": "reload lost the newer shell handoff timestamp used for calibration",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_evidence_uses_visible_or_preview_state",
+      "evidence": "browser evidence compares visible status/actions and visible handoff preview JSON, not raw storage keys",
+      "failure_if_false": "stale calibration proof relies on privileged storage inspection",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_console_clean",
+      "evidence": "consoleErrors=0 messages=[]",
+      "failure_if_false": "stale calibration browser flow produced console errors",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "boundary_preserved",
+      "evidence": "Deterministic browser-local stale prepared-handoff calibration bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local launcher freshness judgment and review-handoff hygiene, not external validation or evidence of inner experience.",
+      "failure_if_false": "report boundary implies more than browser-local launcher freshness calibration",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "console_errors": 0,
+    "criterion_count": 17,
+    "readiness": 1.0,
+    "reload_survival_score": 1.0,
+    "stale_action_block_score": 1.0,
+    "stale_calibration_score": 1.0,
+    "stale_review_evidence_score": 1.0,
+    "supersession_score": 1.0,
+    "timestamp_separation_score": 1.0,
+    "visible_no_storage_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-338: verify stale prepared handoff repair by re-preparing after supersession, so reviewers can recover from a stale payload and regain a fresh continue action without losing visible mismatch history",
+  "prefix": "ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge",
+  "report": 338,
+  "report_337_results_path": "artifacts/ssrm_3d_browser_world_v97_primary_demo_closed_origin_tab_hard_reload_handoff_continuity_bridge_results.json",
+  "required_terms": [
+    "handoffPayloadFreshnessState",
+    "renderOutsideReviewHandoffActions",
+    "Prepared handoff payload is stale",
+    "Re-prepare before continuing from this handoff",
+    "freshness.mismatches",
+    "previewFreshness"
+  ],
+  "seed": 20270736,
+  "verdict": "pass"
+}

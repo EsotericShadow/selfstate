@@ -1,0 +1,2 @@
+report,readiness,weakest_channel_score,stale_calibration_score,stale_action_block_score,stale_review_evidence_score,supersession_score,reload_survival_score,timestamp_separation_score,visible_no_storage_score,console_errors,criterion_count
+338,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,17

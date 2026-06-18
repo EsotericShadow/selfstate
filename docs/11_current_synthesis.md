@@ -1,5 +1,9 @@
 # Current Synthesis: Why a Self Exists
 
+## Current playable-browser consolidation note
+
+Report 308 adds reviewer-facing filters to the primary demo manual defect ledger. This does not advance a consciousness claim; it makes the single playable browser-world path easier to audit during real manual playtests by separating open, resolved, watch, minor, and blocking defects without creating a parallel demo.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

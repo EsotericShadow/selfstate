@@ -1,5 +1,11 @@
 # Evidence Matrix
 
+## Recent playable-system evidence
+
+| Claim | Current evidence | Limitation |
+|---|---|---|
+| Primary browser-world playtests need inspectable defect continuity | Report 308 adds all/open/resolved and severity filters over the same browser-local defect ledger used by the primary demo recorder. | This is reviewer workflow hardening, not a new agent capability or evidence of consciousness. |
+
 This file links the research claims to current evidence, counterevidence, and next falsifiers.
 
 ## Experiment Families

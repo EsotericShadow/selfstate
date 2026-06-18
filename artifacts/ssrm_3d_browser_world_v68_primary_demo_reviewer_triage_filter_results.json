@@ -1,0 +1,184 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_criteria.csv",
+    "report": "docs/308_ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local reviewer workflow only: no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay claim, and no claim that a filtered defect ledger proves agent interiority.",
+  "browser_evidence": {
+    "clean_origin_strategy": "localhost used as a clean same-server origin separate from prior 127.0.0.1 localStorage evidence",
+    "console_errors": 0,
+    "controls_verified_unique": {
+      "allFilter": 1,
+      "defectNote": 1,
+      "defectSeverity": 1,
+      "defectSeverityFilter": 1,
+      "defectStep": 1,
+      "openFilter": 1,
+      "recordDefect": 1,
+      "resolveLatestDefect": 1,
+      "resolvedFilter": 1
+    },
+    "prefix": "ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter",
+    "recorded_defects": [
+      {
+        "id": "D-001",
+        "note": "R308 blocking sample: restore smoke looked stale during manual pass.",
+        "severity": "blocking",
+        "status": "open",
+        "stepId": "MP-08"
+      },
+      {
+        "id": "D-002",
+        "note": "R308 minor sample: schedule copy was unclear for reviewer.",
+        "resolutionNote": "R308 workflow check resolved the latest minor defect.",
+        "severity": "minor",
+        "status": "resolved",
+        "stepId": "MP-05"
+      }
+    ],
+    "report": 308,
+    "severity_filter_evidence": {
+      "blocking_filter_only_showed_blocking_defect": true,
+      "blocking_summary": "1/2 shown | open 1 | resolved 1 | blocking open 1",
+      "watch_filter_showed_empty_state": true,
+      "watch_summary": "0/2 shown | open 1 | resolved 1 | blocking open 1"
+    },
+    "source_boundary": "browser-local primary demo manual recorder and reviewer triage filters only",
+    "status_filter_evidence": {
+      "open_filter_only_showed_blocking_open": true,
+      "open_summary": "1/2 shown | open 1 | resolved 1 | blocking open 1",
+      "resolved_filter_only_showed_minor_resolved": true,
+      "resolved_summary": "1/2 shown | open 1 | resolved 1 | blocking open 1"
+    },
+    "summary_after_records": "2/2 shown | open 1 | resolved 1 | blocking open 1",
+    "url": "http://localhost:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "workflow_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "single_primary_surface",
+      "evidence": "primary launcher still targets the maintained v61 shell rather than a forked world",
+      "failure_if_false": "reviewers would inspect a parallel surface instead of the consolidated demo",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "visible_boundary",
+      "evidence": "launcher boundary remains visible before play",
+      "failure_if_false": "reviewer workflow could overclaim the demo's status",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "recorder_schema_retained",
+      "evidence": "manual recorder and Report 307 resolution fields remain in the primary demo script",
+      "failure_if_false": "filtering would replace or weaken the existing recorder ledger",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "triage_script_bound",
+      "evidence": "primary demo loads a separate reviewer filter script after the recorder script",
+      "failure_if_false": "filter controls would exist only as inert markup or generated drift",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "status_filter_paths",
+      "evidence": "all/open/resolved filter paths are present in generated markup and script",
+      "failure_if_false": "reviewers could not separate unresolved defects from closed evidence",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "severity_filter_paths",
+      "evidence": "severity filtering supports watch, minor, and blocking categories",
+      "failure_if_false": "blocking issues would be buried in a flat ledger",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "persistent_filter_state",
+      "evidence": "reviewer filter preference persists in browser-local storage",
+      "failure_if_false": "reloads would erase reviewer triage context during a manual pass",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "shared_defect_ledger",
+      "evidence": "filters read the same ledger key used by the manual recorder",
+      "failure_if_false": "the dashboard would inspect a different source than the recorder writes",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "record_resolve_refresh",
+      "evidence": "dashboard refreshes after recording and resolving defects",
+      "failure_if_false": "reviewers would need reloads to trust the filtered counts",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "escaped_ledger_rendering",
+      "evidence": "defect notes and resolution text are escaped before rendering",
+      "failure_if_false": "a local defect note could inject markup into the reviewer page",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "count_dashboard",
+      "evidence": "summary shows filtered count, open count, resolved count, and blocking-open count",
+      "failure_if_false": "the ledger would remain a hard-to-review freeform record",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "empty_state",
+      "evidence": "filter dashboard has a clear empty state",
+      "failure_if_false": "reviewers could confuse no matching defects with a broken dashboard",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "qa_manifest_survives",
+      "evidence": "generated QA manifest still advertises triage fields from Report 307",
+      "failure_if_false": "runner metadata would lose the existing defect-resolution contract",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generated_readme_boundary",
+      "evidence": "generated demo README keeps the local primary-demo boundary visible",
+      "failure_if_false": "reviewers would lack local context when opening the demo package directly",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "direct_browser_workflow",
+      "evidence": "browser workflow_pass=True console_errors=0",
+      "failure_if_false": "source checks alone would not prove the reviewer filter works in a browser",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_workflow_score": 1.0,
+    "criterion_count": 15,
+    "readiness": 1.0,
+    "review_filter_coverage": 1.0,
+    "single_surface_score": 1.0,
+    "source_static_pass_rate": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-308: use the filtered ledger during a full manual playtest pass, then fix one blocking defect in the maintained shell only if the ledger shows a reproducible issue",
+  "prefix": "ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter",
+  "report": 308,
+  "seed": 20270706,
+  "verdict": "pass"
+}

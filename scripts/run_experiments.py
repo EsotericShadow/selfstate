@@ -3858,6 +3858,13 @@ COMMANDS: List[List[str]] = [
         "--recurrent-candidates",
         "200",
     ],
+    [
+        sys.executable,
+        "-m",
+        "experiments.ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter",
+        "--seed",
+        "20270706",
+    ],
 ]
 
 

@@ -1,0 +1,16 @@
+channel,passed,score,evidence,failure_if_false
+single_primary_surface,True,1.0,primary launcher still targets the maintained v61 shell rather than a forked world,reviewers would inspect a parallel surface instead of the consolidated demo
+visible_boundary,True,1.0,launcher boundary remains visible before play,reviewer workflow could overclaim the demo's status
+recorder_schema_retained,True,1.0,manual recorder and Report 307 resolution fields remain in the primary demo script,filtering would replace or weaken the existing recorder ledger
+triage_script_bound,True,1.0,primary demo loads a separate reviewer filter script after the recorder script,filter controls would exist only as inert markup or generated drift
+status_filter_paths,True,1.0,all/open/resolved filter paths are present in generated markup and script,reviewers could not separate unresolved defects from closed evidence
+severity_filter_paths,True,1.0,"severity filtering supports watch, minor, and blocking categories",blocking issues would be buried in a flat ledger
+persistent_filter_state,True,1.0,reviewer filter preference persists in browser-local storage,reloads would erase reviewer triage context during a manual pass
+shared_defect_ledger,True,1.0,filters read the same ledger key used by the manual recorder,the dashboard would inspect a different source than the recorder writes
+record_resolve_refresh,True,1.0,dashboard refreshes after recording and resolving defects,reviewers would need reloads to trust the filtered counts
+escaped_ledger_rendering,True,1.0,defect notes and resolution text are escaped before rendering,a local defect note could inject markup into the reviewer page
+count_dashboard,True,1.0,"summary shows filtered count, open count, resolved count, and blocking-open count",the ledger would remain a hard-to-review freeform record
+empty_state,True,1.0,filter dashboard has a clear empty state,reviewers could confuse no matching defects with a broken dashboard
+qa_manifest_survives,True,1.0,generated QA manifest still advertises triage fields from Report 307,runner metadata would lose the existing defect-resolution contract
+generated_readme_boundary,True,1.0,generated demo README keeps the local primary-demo boundary visible,reviewers would lack local context when opening the demo package directly
+direct_browser_workflow,True,1.0,browser workflow_pass=True console_errors=0,source checks alone would not prove the reviewer filter works in a browser

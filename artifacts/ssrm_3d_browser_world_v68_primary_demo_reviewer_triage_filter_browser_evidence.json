@@ -1,0 +1,50 @@
+{
+  "report": 308,
+  "prefix": "ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter",
+  "url": "http://localhost:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "workflow_pass": true,
+  "console_errors": 0,
+  "source_boundary": "browser-local primary demo manual recorder and reviewer triage filters only",
+  "clean_origin_strategy": "localhost used as a clean same-server origin separate from prior 127.0.0.1 localStorage evidence",
+  "recorded_defects": [
+    {
+      "id": "D-001",
+      "stepId": "MP-08",
+      "severity": "blocking",
+      "status": "open",
+      "note": "R308 blocking sample: restore smoke looked stale during manual pass."
+    },
+    {
+      "id": "D-002",
+      "stepId": "MP-05",
+      "severity": "minor",
+      "status": "resolved",
+      "note": "R308 minor sample: schedule copy was unclear for reviewer.",
+      "resolutionNote": "R308 workflow check resolved the latest minor defect."
+    }
+  ],
+  "summary_after_records": "2/2 shown | open 1 | resolved 1 | blocking open 1",
+  "status_filter_evidence": {
+    "open_summary": "1/2 shown | open 1 | resolved 1 | blocking open 1",
+    "open_filter_only_showed_blocking_open": true,
+    "resolved_summary": "1/2 shown | open 1 | resolved 1 | blocking open 1",
+    "resolved_filter_only_showed_minor_resolved": true
+  },
+  "severity_filter_evidence": {
+    "blocking_summary": "1/2 shown | open 1 | resolved 1 | blocking open 1",
+    "blocking_filter_only_showed_blocking_defect": true,
+    "watch_summary": "0/2 shown | open 1 | resolved 1 | blocking open 1",
+    "watch_filter_showed_empty_state": true
+  },
+  "controls_verified_unique": {
+    "defectNote": 1,
+    "defectStep": 1,
+    "defectSeverity": 1,
+    "recordDefect": 1,
+    "resolveLatestDefect": 1,
+    "defectSeverityFilter": 1,
+    "openFilter": 1,
+    "allFilter": 1,
+    "resolvedFilter": 1
+  }
+}

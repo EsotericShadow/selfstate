@@ -1,0 +1,8 @@
+metric,value
+readiness,1.0
+weakest_channel_score,1.0
+source_static_pass_rate,1.0
+review_filter_coverage,1.0
+single_surface_score,1.0
+browser_workflow_score,1.0
+criterion_count,15

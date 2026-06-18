@@ -1,0 +1,8 @@
+{
+  "boundary": "Deterministic browser-local reviewer workflow only: no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay claim, and no claim that a filtered defect ledger proves agent interiority.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_browser_evidence.json",
+  "demo_dir": "visualizations/ssrm_3d_browser_world_primary_demo",
+  "filter_script": "visualizations/ssrm_3d_browser_world_primary_demo/triage_filters.js",
+  "report": 308,
+  "seed": 20270706
+}

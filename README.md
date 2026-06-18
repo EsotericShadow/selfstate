@@ -23,6 +23,11 @@ That claim does not define consciousness and does not require that the self be m
 
 ## Core Artifacts
 
+### Current playable browser-world consolidation
+
+- [Primary demo reviewer triage filter report](docs/308_ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_report.md): adds reviewer-facing open/resolved/severity filters to the browser-local defect ledger for the single maintained primary demo path.
+
+
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.
 - [Literature map](docs/02_literature_map.md): source anchors and what each source can and cannot support.
 - [Experimental program](docs/03_experimental_program.md): agent comparisons, environments, measurements, and failure tests.

@@ -97,6 +97,23 @@
         <button id="exportRecorder" type="button">Prepare recorder export</button>
         <button id="clearRecorder" type="button">Clear recorder</button>
       </div>
+      <div class="triage-filter-panel" aria-label="Defect ledger filters">
+        <div class="triage-filter-row" role="group" aria-label="Defect status filters">
+          <button class="filter-pill active" type="button" data-triage-status="all">All defects</button>
+          <button class="filter-pill" type="button" data-triage-status="open">Open</button>
+          <button class="filter-pill" type="button" data-triage-status="resolved">Resolved</button>
+        </div>
+        <label class="inline-filter">Severity filter
+          <select id="defectSeverityFilter">
+            <option value="all">All severities</option>
+            <option value="watch">Watch</option>
+            <option value="minor">Minor</option>
+            <option value="blocking">Blocking</option>
+          </select>
+        </label>
+        <p id="triageFilterSummary" class="status-line">No defects recorded yet.</p>
+        <div id="defectLedgerView" class="defect-ledger-view" aria-live="polite"></div>
+      </div>
       <p id="recordStatus">No manual pass records yet.</p>
       <pre id="recordLedgerOut"></pre>
     </section>
@@ -108,5 +125,6 @@
     </section>
   </main>
   <script src="demo.js"></script>
+  <script src="triage_filters.js"></script>
 </body>
 </html>

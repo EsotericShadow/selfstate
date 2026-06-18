@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_workflow_score,next_gate
+308,pass,1.0,1.0,1.0,"post-308: use the filtered ledger during a full manual playtest pass, then fix one blocking defect in the maintained shell only if the ledger shows a reproducible issue"

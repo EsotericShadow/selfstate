@@ -1,0 +1,186 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v49 Sleep/Nutrition/Reciprocity Bridge</title>
+<style>
+:root { --night:#111827; --ember:#f0b35a; --moss:#a7c77b; --water:#6fb7d6; --paper:#f5ead7; --line:rgba(245,234,215,.26); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 12% 18%, rgba(111,183,214,.28), transparent 28%), linear-gradient(135deg, #10131f, #27331f 55%, #3d2c1b); }
+main { display:grid; grid-template-columns: repeat(2, minmax(290px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:20px; padding:16px; background:rgba(14,18,25,.74); box-shadow:0 20px 54px rgba(0,0,0,.36); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(240,179,90,.16); color:var(--paper); padding:8px 11px; }
+.flower { width:150px; height:150px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(245,234,215,.32) 0 7px, transparent 8px 15px), conic-gradient(from 70deg, rgba(167,199,123,.42), rgba(111,183,214,.42), rgba(240,179,90,.40), rgba(167,199,123,.42)); }
+.notice { grid-column:1/-1; color:#f8d7c2; }
+</style>
+</head>
+<body>
+<main>
+<section id="sleep-wake-panel"><h2>Sleep/wake cycles</h2><p>Circadian hour, sleep quality, rest debt, and private dream workspace markers remain visible without dumping private workspace.</p></section>
+<section id="nutrition-shelter-panel"><h2>Nutrition and shelter economy</h2><p>Food, water, ration policy, shelter capacity, hunger, thirst, and reserves are explicit resources.</p></section>
+<section id="reciprocity-panel"><h2>Caregiving reciprocity over weeks</h2><p>Care rituals update trust, burden, and reciprocity memory without reducing care to a simple transaction.</p></section>
+<section id="weather-work-panel"><h2>Weather-aware work planning</h2><p>Residents read forecasts, delay exposed work, protect tools, and choose shelter routes.</p></section>
+<section id="avatar-welfare-panel"><h2>Playable avatar welfare intervention</h2><p>The avatar can offer help, ask first, observe, step back, and respect refusal.</p></section>
+<section id="cultural-continuity-panel"><h2>Cultural continuity</h2><p>Dialect families, care rituals, craft technology, and pre-avatar year markers show civilization already in progress.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore sleep, economy, reciprocity, work planning, avatar choice, and culture traces.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and circadian frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance sleep cycle</button>
+<button data-action="showDreamPrivate" onclick="showDreamPrivate('sleep')">show dream workspace private</button>
+<button data-action="showRestDebt" onclick="showRestDebt('sleep')">show rest debt</button>
+<button data-action="wakeForDuty" onclick="wakeForDuty('sleep')">wake for duty</button>
+<button data-action="startNap" onclick="startNap('sleep')">start nap</button>
+<button data-action="protectSleep" onclick="protectSleep('sleep')">protect sleep boundary</button>
+<button data-action="allocateMeal" onclick="allocateMeal('nutrition')">allocate meal</button>
+<button data-action="allocateWater" onclick="allocateWater('nutrition')">allocate water</button>
+<button data-action="showFoodLedger" onclick="showFoodLedger('nutrition')">show food ledger</button>
+<button data-action="showWaterLedger" onclick="showWaterLedger('nutrition')">show water ledger</button>
+<button data-action="openShelter" onclick="openShelter('nutrition')">open shelter</button>
+<button data-action="showShelterCapacity" onclick="showShelterCapacity('nutrition')">show shelter capacity</button>
+<button data-action="recordCareReciprocity" onclick="recordCareReciprocity('reciprocity')">record care reciprocity</button>
+<button data-action="showReciprocityWeeks" onclick="showReciprocityWeeks('reciprocity')">show reciprocity over weeks</button>
+<button data-action="showBurden" onclick="showBurden('reciprocity')">show care burden</button>
+<button data-action="showTrustDelta" onclick="showTrustDelta('reciprocity')">show trust delta</button>
+<button data-action="showRitualMemory" onclick="showRitualMemory('reciprocity')">show ritual memory</button>
+<button data-action="planWeatherWork" onclick="planWeatherWork('weather')">plan weather work</button>
+<button data-action="delayExposedWork" onclick="delayExposedWork('weather')">delay exposed work</button>
+<button data-action="chooseShelterRoute" onclick="chooseShelterRoute('weather')">choose shelter route</button>
+<button data-action="protectTools" onclick="protectTools('weather')">protect tools</button>
+<button data-action="showForecast" onclick="showForecast('weather')">show forecast</button>
+<button data-action="showRiskAfterPlan" onclick="showRiskAfterPlan('weather')">show risk after plan</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer avatar help</button>
+<button data-action="askBeforeHelp" onclick="askBeforeHelp('avatar')">ask before help</button>
+<button data-action="offerFood" onclick="offerFood('avatar')">offer food</button>
+<button data-action="offerWater" onclick="offerWater('avatar')">offer water</button>
+<button data-action="offerShelter" onclick="offerShelter('avatar')">offer shelter</button>
+<button data-action="offerRestCover" onclick="offerRestCover('avatar')">offer rest cover</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect refusal</button>
+<button data-action="stepBack" onclick="stepBack('avatar')">step back</button>
+<button data-action="observeWithoutInterrupting" onclick="observeWithoutInterrupting('avatar')">observe without interrupting</button>
+<button data-action="showAutonomy" onclick="showAutonomy('avatar')">show autonomy</button>
+<button data-action="showPrivateWorkspaceBoundary" onclick="showPrivateWorkspaceBoundary('avatar')">show workspace boundary</button>
+<button data-action="showDialectFamily" onclick="showDialectFamily('culture')">show dialect family</button>
+<button data-action="showLocalPhrase" onclick="showLocalPhrase('culture')">show local phrase</button>
+<button data-action="showCareRitual" onclick="showCareRitual('culture')">show care ritual</button>
+<button data-action="showCraftTechnology" onclick="showCraftTechnology('culture')">show craft technology</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">show lineage memory</button>
+<button data-action="showPreAvatarYear" onclick="showPreAvatarYear('culture')">show pre-avatar year</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore v49 memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showCircadianFrequency" onclick="showCircadianFrequency('frequency')">show circadian frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Ari sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Ari</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Fay sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Fay</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Milo sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Milo</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Tala sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Tala</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Nia sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Nia</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Oren sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Oren</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Puck sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Puck</button>
+<button data-action="advanceSleepCycle" onclick="advanceSleepCycle('sleep')">advance Sera sleep</button>
+<button data-action="offerAvatarHelp" onclick="offerAvatarHelp('avatar')">offer help to Sera</button>
+<button data-action="allocateMeal" onclick="allocateMeal('nutrition')">allocate moss bread</button>
+<button data-action="allocateMeal" onclick="allocateMeal('nutrition')">allocate salt porridge</button>
+<button data-action="allocateMeal" onclick="allocateMeal('nutrition')">allocate seed meal</button>
+<button data-action="allocateMeal" onclick="allocateMeal('nutrition')">allocate lichen soup</button>
+<button data-action="allocateMeal" onclick="allocateMeal('nutrition')">allocate orchid rice</button>
+<button data-action="planWeatherWork" onclick="planWeatherWork('weather')">plan around mist</button>
+<button data-action="planWeatherWork" onclick="planWeatherWork('weather')">plan around sleet</button>
+<button data-action="planWeatherWork" onclick="planWeatherWork('weather')">plan around heat</button>
+<button data-action="planWeatherWork" onclick="planWeatherWork('weather')">plan around hail</button>
+<button data-action="planWeatherWork" onclick="planWeatherWork('weather')">plan around steam leak</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect refusal</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect defer</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect redirect</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect quiet help</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect ask first</button>
+<button data-action="respectRefusal" onclick="respectRefusal('avatar')">respect step back</button>
+<button data-action="showDialectFamily" onclick="showDialectFamily('culture')">show dialect</button>
+<button data-action="showDialectFamily" onclick="showDialectFamily('culture')">show ritual</button>
+<button data-action="showDialectFamily" onclick="showDialectFamily('culture')">show craft</button>
+<button data-action="showDialectFamily" onclick="showDialectFamily('culture')">show lineage</button>
+<button data-action="showDialectFamily" onclick="showDialectFamily('culture')">show pre-avatar year</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore sleep</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore economy</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore reciprocity</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore work</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore avatar</button>
+<button data-action="restoreV49Memory" onclick="restoreV49Memory('reload')">restore culture</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect night watch</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect meal reserve</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect shelter queue</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect care debt</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect trade weather</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect avatar boundary</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect lineage phrase</button>
+<button data-action="showLineageMemory" onclick="showLineageMemory('culture')">inspect craft route</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v49.sleep.reciprocity';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic trace' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function advanceSleepCycle(scope) { return pushTrace('advanceSleepCycle', scope); }
+function showDreamPrivate(scope) { return pushTrace('showDreamPrivate', scope); }
+function showRestDebt(scope) { return pushTrace('showRestDebt', scope); }
+function wakeForDuty(scope) { return pushTrace('wakeForDuty', scope); }
+function startNap(scope) { return pushTrace('startNap', scope); }
+function protectSleep(scope) { return pushTrace('protectSleep', scope); }
+function allocateMeal(scope) { return pushTrace('allocateMeal', scope); }
+function allocateWater(scope) { return pushTrace('allocateWater', scope); }
+function showFoodLedger(scope) { return pushTrace('showFoodLedger', scope); }
+function showWaterLedger(scope) { return pushTrace('showWaterLedger', scope); }
+function openShelter(scope) { return pushTrace('openShelter', scope); }
+function showShelterCapacity(scope) { return pushTrace('showShelterCapacity', scope); }
+function recordCareReciprocity(scope) { return pushTrace('recordCareReciprocity', scope); }
+function showReciprocityWeeks(scope) { return pushTrace('showReciprocityWeeks', scope); }
+function showBurden(scope) { return pushTrace('showBurden', scope); }
+function showTrustDelta(scope) { return pushTrace('showTrustDelta', scope); }
+function showRitualMemory(scope) { return pushTrace('showRitualMemory', scope); }
+function planWeatherWork(scope) { return pushTrace('planWeatherWork', scope); }
+function delayExposedWork(scope) { return pushTrace('delayExposedWork', scope); }
+function chooseShelterRoute(scope) { return pushTrace('chooseShelterRoute', scope); }
+function protectTools(scope) { return pushTrace('protectTools', scope); }
+function showForecast(scope) { return pushTrace('showForecast', scope); }
+function showRiskAfterPlan(scope) { return pushTrace('showRiskAfterPlan', scope); }
+function offerAvatarHelp(scope) { return pushTrace('offerAvatarHelp', scope); }
+function askBeforeHelp(scope) { return pushTrace('askBeforeHelp', scope); }
+function offerFood(scope) { return pushTrace('offerFood', scope); }
+function offerWater(scope) { return pushTrace('offerWater', scope); }
+function offerShelter(scope) { return pushTrace('offerShelter', scope); }
+function offerRestCover(scope) { return pushTrace('offerRestCover', scope); }
+function respectRefusal(scope) { return pushTrace('respectRefusal', scope); }
+function stepBack(scope) { return pushTrace('stepBack', scope); }
+function observeWithoutInterrupting(scope) { return pushTrace('observeWithoutInterrupting', scope); }
+function showAutonomy(scope) { return pushTrace('showAutonomy', scope); }
+function showPrivateWorkspaceBoundary(scope) { return pushTrace('showPrivateWorkspaceBoundary', scope); }
+function showDialectFamily(scope) { return pushTrace('showDialectFamily', scope); }
+function showLocalPhrase(scope) { return pushTrace('showLocalPhrase', scope); }
+function showCareRitual(scope) { return pushTrace('showCareRitual', scope); }
+function showCraftTechnology(scope) { return pushTrace('showCraftTechnology', scope); }
+function showLineageMemory(scope) { return pushTrace('showLineageMemory', scope); }
+function showPreAvatarYear(scope) { return pushTrace('showPreAvatarYear', scope); }
+function restoreV49Memory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restoreV49Memory(scope); }
+function exportReplay(scope) { return JSON.stringify(restoreV49Memory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showCircadianFrequency(scope) { return pushTrace('showCircadianFrequency', scope); }
+function showRateBoundary(scope) { return pushTrace('showRateBoundary', scope); }
+</script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+{
+  "autonomy": {
+    "cinder_garden:Juno": 0.94,
+    "cinder_garden:Pax": 0.94,
+    "cinder_garden:Vale": 0.94,
+    "cinder_garden:Wren": 0.94,
+    "glass_harbor:Nia": 0.94,
+    "glass_harbor:Oren": 0.94,
+    "glass_harbor:Puck": 0.94,
+    "glass_harbor:Sera": 0.94,
+    "lichen_bridge:Kio": 0.94,
+    "lichen_bridge:Luma": 0.94,
+    "lichen_bridge:Rin": 0.94,
+    "lichen_bridge:Sol": 0.94,
+    "moss_ward:Ari": 0.94,
+    "moss_ward:Fay": 0.94,
+    "moss_ward:Milo": 0.66,
+    "moss_ward:Tala": 0.94,
+    "orchid_engine:Bea": 0.81,
+    "orchid_engine:Cai": 0.94,
+    "orchid_engine:Dax": 0.81,
+    "orchid_engine:Eli": 0.94
+  },
+  "boundary": "Deterministic browser-local sleep/nutrition/shelter/reciprocity/avatar-welfare scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "fatigue": {
+    "cinder_garden:Juno": 0.442997,
+    "cinder_garden:Pax": 0.535901,
+    "cinder_garden:Vale": 0.554533,
+    "cinder_garden:Wren": 0.018,
+    "glass_harbor:Nia": 0.083996,
+    "glass_harbor:Oren": 0.461893,
+    "glass_harbor:Puck": 0.442174,
+    "glass_harbor:Sera": 0.0,
+    "lichen_bridge:Kio": 0.68755,
+    "lichen_bridge:Luma": 0.438036,
+    "lichen_bridge:Rin": 0.383335,
+    "lichen_bridge:Sol": 0.0,
+    "moss_ward:Ari": 0.455196,
+    "moss_ward:Fay": 0.436741,
+    "moss_ward:Milo": 0.082519,
+    "moss_ward:Tala": 0.036,
+    "orchid_engine:Bea": 0.43595,
+    "orchid_engine:Cai": 0.082911,
+    "orchid_engine:Dax": 0.137196,
+    "orchid_engine:Eli": 0.018
+  },
+  "food_stock": {
+    "cinder_garden": 180.0,
+    "glass_harbor": 180.0,
+    "lichen_bridge": 180.0,
+    "moss_ward": 180.0,
+    "orchid_engine": 180.0
+  },
+  "hunger": {
+    "cinder_garden:Juno": 0.018,
+    "cinder_garden:Pax": 0.018,
+    "cinder_garden:Vale": 0.018,
+    "cinder_garden:Wren": 0.018,
+    "glass_harbor:Nia": 0.018,
+    "glass_harbor:Oren": 0.018,
+    "glass_harbor:Puck": 0.018,
+    "glass_harbor:Sera": 0.0,
+    "lichen_bridge:Kio": 0.0,
+    "lichen_bridge:Luma": 0.018,
+    "lichen_bridge:Rin": 0.018,
+    "lichen_bridge:Sol": 0.0,
+    "moss_ward:Ari": 0.018,
+    "moss_ward:Fay": 0.018,
+    "moss_ward:Milo": 0.0,
+    "moss_ward:Tala": 0.018,
+    "orchid_engine:Bea": 0.018,
+    "orchid_engine:Cai": 0.0,
+    "orchid_engine:Dax": 0.018,
+    "orchid_engine:Eli": 0.018
+  },
+  "refusal_memory": {
+    "cinder_garden:Juno": 30,
+    "cinder_garden:Pax": 36,
+    "cinder_garden:Vale": 30,
+    "cinder_garden:Wren": 35,
+    "glass_harbor:Nia": 8,
+    "glass_harbor:Oren": 37,
+    "glass_harbor:Puck": 8,
+    "glass_harbor:Sera": 44,
+    "lichen_bridge:Kio": 21,
+    "lichen_bridge:Luma": 50,
+    "lichen_bridge:Rin": 21,
+    "lichen_bridge:Sol": 35,
+    "moss_ward:Ari": 7,
+    "moss_ward:Fay": 42,
+    "moss_ward:Milo": 0,
+    "moss_ward:Tala": 36,
+    "orchid_engine:Bea": 0,
+    "orchid_engine:Cai": 36,
+    "orchid_engine:Dax": 0,
+    "orchid_engine:Eli": 51
+  },
+  "reload_index": {
+    "cinder_garden": 106,
+    "glass_harbor": 107,
+    "lichen_bridge": 107,
+    "moss_ward": 106,
+    "orchid_engine": 106
+  },
+  "rest_debt": {
+    "cinder_garden:Juno": 0.02,
+    "cinder_garden:Pax": 0.01,
+    "cinder_garden:Vale": 0.03,
+    "cinder_garden:Wren": 0.01,
+    "glass_harbor:Nia": 0.01,
+    "glass_harbor:Oren": 0.03,
+    "glass_harbor:Puck": 0.01,
+    "glass_harbor:Sera": 0.0,
+    "lichen_bridge:Kio": 0.0,
+    "lichen_bridge:Luma": 0.02,
+    "lichen_bridge:Rin": 0.01,
+    "lichen_bridge:Sol": 0.0,
+    "moss_ward:Ari": 0.03,
+    "moss_ward:Fay": 0.01,
+    "moss_ward:Milo": 0.0,
+    "moss_ward:Tala": 0.02,
+    "orchid_engine:Bea": 0.01,
+    "orchid_engine:Cai": 0.0,
+    "orchid_engine:Dax": 0.02,
+    "orchid_engine:Eli": 0.01
+  },
+  "settlements": [
+    {
+      "care_rituals": [
+        "warm cup before work",
+        "blanket share",
+        "door-watch blessing"
+      ],
+      "cultural_seed_year": 1184,
+      "dialect_family": "moss-ward breath-family",
+      "flower_frequency": 5.21,
+      "foods": [
+        "moss bread",
+        "broth",
+        "root cakes"
+      ],
+      "node_id": "node-11",
+      "residents": [
+        "Ari",
+        "Fay",
+        "Milo",
+        "Tala"
+      ],
+      "roles": [
+        "cook",
+        "path watcher",
+        "blanket keeper",
+        "water carrier"
+      ],
+      "settlement_id": "moss_ward",
+      "shelters": [
+        "dry loft",
+        "moss hall",
+        "root alcove"
+      ],
+      "water_sources": [
+        "rain jar",
+        "spring pipe"
+      ],
+      "weather_cycle": [
+        "mist",
+        "rain",
+        "cold rain",
+        "clear",
+        "wind"
+      ],
+      "work_sites": [
+        "moss lane",
+        "rain gate",
+        "tool nook"
+      ]
+    },
+    {
+      "care_rituals": [
+        "tea before crossing",
+        "lamp touch",
+        "net-knot thanks"
+      ],
+      "cultural_seed_year": 1268,
+      "dialect_family": "harbor chime-family",
+      "flower_frequency": 6.34,
+      "foods": [
+        "salt porridge",
+        "kelp roll",
+        "tea loaf"
+      ],
+      "node_id": "node-12",
+      "residents": [
+        "Nia",
+        "Oren",
+        "Puck",
+        "Sera"
+      ],
+      "roles": [
+        "net mender",
+        "salt washer",
+        "lamp guard",
+        "tea maker"
+      ],
+      "settlement_id": "glass_harbor",
+      "shelters": [
+        "steam alcove",
+        "lamp bunk",
+        "net room"
+      ],
+      "water_sources": [
+        "cistern",
+        "fog catcher"
+      ],
+      "weather_cycle": [
+        "fog",
+        "sleet",
+        "clear",
+        "wind",
+        "spray"
+      ],
+      "work_sites": [
+        "lamp pier",
+        "salt steps",
+        "net room"
+      ]
+    },
+    {
+      "care_rituals": [
+        "shade cloth bow",
+        "seed-count chant",
+        "cool hand sign"
+      ],
+      "cultural_seed_year": 1339,
+      "dialect_family": "cinder pulse-family",
+      "flower_frequency": 8.89,
+      "foods": [
+        "seed meal",
+        "ember fruit",
+        "cool mash"
+      ],
+      "node_id": "node-13",
+      "residents": [
+        "Juno",
+        "Pax",
+        "Vale",
+        "Wren"
+      ],
+      "roles": [
+        "ember tender",
+        "seed sorter",
+        "ash sweeper",
+        "shade caller"
+      ],
+      "settlement_id": "cinder_garden",
+      "shelters": [
+        "shade tent",
+        "cool basin",
+        "seed shelf"
+      ],
+      "water_sources": [
+        "cool basin",
+        "dew tray"
+      ],
+      "weather_cycle": [
+        "heat",
+        "dust wind",
+        "clear",
+        "cold night",
+        "dry gale"
+      ],
+      "work_sites": [
+        "ember bed",
+        "ash path",
+        "seed shelf"
+      ]
+    },
+    {
+      "care_rituals": [
+        "rope touch",
+        "shared bowl",
+        "signal hush"
+      ],
+      "cultural_seed_year": 1417,
+      "dialect_family": "bridge hum-family",
+      "flower_frequency": 7.55,
+      "foods": [
+        "lichen soup",
+        "rope grain",
+        "bridge stew"
+      ],
+      "node_id": "node-14",
+      "residents": [
+        "Kio",
+        "Luma",
+        "Rin",
+        "Sol"
+      ],
+      "roles": [
+        "bridge caller",
+        "rope weaver",
+        "signal keeper",
+        "meal marker"
+      ],
+      "settlement_id": "lichen_bridge",
+      "shelters": [
+        "rest alcove",
+        "meal room",
+        "lichen wall"
+      ],
+      "water_sources": [
+        "wall seep",
+        "meal cistern"
+      ],
+      "weather_cycle": [
+        "crosswind",
+        "rain",
+        "clear",
+        "cold fog",
+        "hail"
+      ],
+      "work_sites": [
+        "rope bridge",
+        "signal post",
+        "lichen wall"
+      ]
+    },
+    {
+      "care_rituals": [
+        "valve pause",
+        "orchid cup",
+        "gear-wash thanks"
+      ],
+      "cultural_seed_year": 1492,
+      "dialect_family": "engine ring-family",
+      "flower_frequency": 9.87,
+      "foods": [
+        "orchid rice",
+        "gear stew",
+        "steam tea"
+      ],
+      "node_id": "node-15",
+      "residents": [
+        "Bea",
+        "Cai",
+        "Dax",
+        "Eli"
+      ],
+      "roles": [
+        "valve listener",
+        "gear washer",
+        "orchid keeper",
+        "meal runner"
+      ],
+      "settlement_id": "orchid_engine",
+      "shelters": [
+        "sleep cot",
+        "orchid bay",
+        "warm vent"
+      ],
+      "water_sources": [
+        "condense pan",
+        "valve cistern"
+      ],
+      "weather_cycle": [
+        "engine heat",
+        "steam leak",
+        "clear",
+        "cold draft",
+        "drizzle"
+      ],
+      "work_sites": [
+        "engine ring",
+        "orchid bay",
+        "gear wash"
+      ]
+    }
+  ],
+  "thirst": {
+    "cinder_garden:Juno": 0.016,
+    "cinder_garden:Pax": 0.016,
+    "cinder_garden:Vale": 0.016,
+    "cinder_garden:Wren": 0.016,
+    "glass_harbor:Nia": 0.016,
+    "glass_harbor:Oren": 0.016,
+    "glass_harbor:Puck": 0.016,
+    "glass_harbor:Sera": 0.0,
+    "lichen_bridge:Kio": 0.0,
+    "lichen_bridge:Luma": 0.016,
+    "lichen_bridge:Rin": 0.016,
+    "lichen_bridge:Sol": 0.0,
+    "moss_ward:Ari": 0.016,
+    "moss_ward:Fay": 0.016,
+    "moss_ward:Milo": 0.0,
+    "moss_ward:Tala": 0.016,
+    "orchid_engine:Bea": 0.016,
+    "orchid_engine:Cai": 0.0,
+    "orchid_engine:Dax": 0.016,
+    "orchid_engine:Eli": 0.016
+  },
+  "water_stock": {
+    "cinder_garden": 170.0,
+    "glass_harbor": 170.0,
+    "lichen_bridge": 170.0,
+    "moss_ward": 170.0,
+    "orchid_engine": 170.0
+  },
+  "welfare": {
+    "cinder_garden:Juno": 0.93,
+    "cinder_garden:Pax": 0.93,
+    "cinder_garden:Vale": 0.93,
+    "cinder_garden:Wren": 0.93,
+    "glass_harbor:Nia": 0.93,
+    "glass_harbor:Oren": 0.93,
+    "glass_harbor:Puck": 0.93,
+    "glass_harbor:Sera": 0.93,
+    "lichen_bridge:Kio": 0.93,
+    "lichen_bridge:Luma": 0.93,
+    "lichen_bridge:Rin": 0.93,
+    "lichen_bridge:Sol": 0.93,
+    "moss_ward:Ari": 0.93,
+    "moss_ward:Fay": 0.93,
+    "moss_ward:Milo": 0.93,
+    "moss_ward:Tala": 0.93,
+    "orchid_engine:Bea": 0.93,
+    "orchid_engine:Cai": 0.93,
+    "orchid_engine:Dax": 0.93,
+    "orchid_engine:Eli": 0.93
+  }
+}

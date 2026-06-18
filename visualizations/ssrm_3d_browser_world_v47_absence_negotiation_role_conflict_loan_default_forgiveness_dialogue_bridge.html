@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 287 Browser World v47</title>
+  <style>
+    :root { --ink:#14201d; --paper:#f1e3c5; --moss:#64784d; --ember:#b35b3e; --river:#4f7d8c; --gold:#cda047; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 13% 10%, rgba(205,160,71,.45), transparent 18rem), radial-gradient(circle at 84% 18%, rgba(79,125,140,.34), transparent 17rem), linear-gradient(135deg, #ead7b8, #bdcda7 52%, #89a7a3); }
+    main { max-width:1260px; margin:0 auto; padding:24px; }
+    h1 { font-size:clamp(2rem,5vw,4.9rem); line-height:.92; margin:20px 0; letter-spacing:-.045em; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+    section { border:2px solid rgba(20,32,29,.34); border-radius:24px; padding:18px; background:rgba(241,227,197,.84); box-shadow:0 18px 52px rgba(20,32,29,.16); }
+    button { margin:5px; padding:9px 11px; border:1px solid var(--ink); border-radius:999px; background:var(--gold); color:var(--ink); cursor:pointer; }
+    button:hover { background:var(--ember); color:#fff7df; }
+    .boundary { border-left:8px solid var(--ember); }
+    .viewport { min-height:240px; border-radius:18px; background:linear-gradient(180deg, rgba(79,125,140,.32), rgba(100,120,77,.27)), repeating-linear-gradient(90deg, rgba(20,32,29,.08) 0 1px, transparent 1px 34px), repeating-linear-gradient(0deg, rgba(20,32,29,.06) 0 1px, transparent 1px 34px); display:grid; place-items:center; font-weight:bold; }
+    .flower { width:168px; height:168px; border-radius:50%; background:repeating-radial-gradient(circle, rgba(205,160,71,.45) 0 9px, rgba(79,125,140,.24) 9px 18px); display:grid; place-items:center; }
+    .log { min-height:140px; font-family:ui-monospace, SFMono-Regular, Menlo, monospace; white-space:pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser World v47: absence negotiation, role mediation, loan defaults, forgiveness limits</h1>
+  <section class="boundary"><strong>Boundary:</strong> deterministic scaffold only; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no metaphysical frequency claim.</section>
+  <section id="absence-negotiation-panel"><h2>Negotiations continue while avatar is absent</h2><div class="viewport">resident-to-resident terms update without avatar control</div></section>
+  <div class="grid">
+    <section id="role-conflict-panel"><h2>Role conflict mediation</h2><p>Household roles can conflict and require bounded mediation.</p></section>
+    <section id="loan-default-panel"><h2>Multi-day loan defaults</h2><p>Late and defaulted loans remain visible with repair paths.</p></section>
+    <section id="forgiveness-limit-panel"><h2>Animated forgiveness limits</h2><p>Forgiveness can be partial, limited, or not yet available.</p></section>
+    <section id="avatar-debt-choice-panel"><h2>Debt-aware avatar choices</h2><p>Avatar choices affect remembered debt and trust without erasing consequences.</p></section>
+    <section id="reload-memory-panel"><h2>Reload absence memory</h2><p>Negotiations, mediation, defaults, forgiveness limits, and choices persist across reloads.</p></section>
+    <section id="frequency-flower-panel"><h2>Frequency and flower phase</h2><div class="flower">flower phase</div><p>Rates are simulation timing metadata, not metaphysical evidence.</p></section>
+  </div>
+  <section><h2>Controls</h2><button data-action="absent" onclick="advanceAbsentNegotiation('riverbend')">advance absent negotiation</button>
+<button data-action="mediate" onclick="mediateRoleConflict('riverbend')">mediate role conflict</button>
+<button data-action="default" onclick="markLoanDefault('riverbend')">mark loan default</button>
+<button data-action="limit" onclick="playForgivenessLimit('riverbend')">play forgiveness limit</button>
+<button data-action="choice" onclick="chooseDebtResponse('riverbend')">choose debt response</button>
+<button data-action="repay" onclick="chooseRepay('riverbend')">choose repay</button>
+<button data-action="wait" onclick="chooseWait('riverbend')">choose wait</button>
+<button data-action="ignore" onclick="chooseIgnore('riverbend')">choose ignore</button>
+<button data-action="reload" onclick="restoreAbsenceMemory('riverbend')">restore absence memory</button>
+<button data-action="save" onclick="saveWorldState('riverbend')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('riverbend')">restore world</button>
+<button data-action="replay" onclick="exportReplay('riverbend')">export replay</button>
+<button data-action="absent" onclick="advanceAbsentNegotiation('roofward')">advance absent negotiation</button>
+<button data-action="mediate" onclick="mediateRoleConflict('roofward')">mediate role conflict</button>
+<button data-action="default" onclick="markLoanDefault('roofward')">mark loan default</button>
+<button data-action="limit" onclick="playForgivenessLimit('roofward')">play forgiveness limit</button>
+<button data-action="choice" onclick="chooseDebtResponse('roofward')">choose debt response</button>
+<button data-action="repay" onclick="chooseRepay('roofward')">choose repay</button>
+<button data-action="wait" onclick="chooseWait('roofward')">choose wait</button>
+<button data-action="ignore" onclick="chooseIgnore('roofward')">choose ignore</button>
+<button data-action="reload" onclick="restoreAbsenceMemory('roofward')">restore absence memory</button>
+<button data-action="save" onclick="saveWorldState('roofward')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('roofward')">restore world</button>
+<button data-action="replay" onclick="exportReplay('roofward')">export replay</button>
+<button data-action="absent" onclick="advanceAbsentNegotiation('archive')">advance absent negotiation</button>
+<button data-action="mediate" onclick="mediateRoleConflict('archive')">mediate role conflict</button>
+<button data-action="default" onclick="markLoanDefault('archive')">mark loan default</button>
+<button data-action="limit" onclick="playForgivenessLimit('archive')">play forgiveness limit</button>
+<button data-action="choice" onclick="chooseDebtResponse('archive')">choose debt response</button>
+<button data-action="repay" onclick="chooseRepay('archive')">choose repay</button>
+<button data-action="wait" onclick="chooseWait('archive')">choose wait</button>
+<button data-action="ignore" onclick="chooseIgnore('archive')">choose ignore</button>
+<button data-action="reload" onclick="restoreAbsenceMemory('archive')">restore absence memory</button>
+<button data-action="save" onclick="saveWorldState('archive')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('archive')">restore world</button>
+<button data-action="replay" onclick="exportReplay('archive')">export replay</button>
+<button data-action="absent" onclick="advanceAbsentNegotiation('signal')">advance absent negotiation</button>
+<button data-action="mediate" onclick="mediateRoleConflict('signal')">mediate role conflict</button>
+<button data-action="default" onclick="markLoanDefault('signal')">mark loan default</button>
+<button data-action="limit" onclick="playForgivenessLimit('signal')">play forgiveness limit</button>
+<button data-action="choice" onclick="chooseDebtResponse('signal')">choose debt response</button>
+<button data-action="repay" onclick="chooseRepay('signal')">choose repay</button>
+<button data-action="wait" onclick="chooseWait('signal')">choose wait</button>
+<button data-action="ignore" onclick="chooseIgnore('signal')">choose ignore</button>
+<button data-action="reload" onclick="restoreAbsenceMemory('signal')">restore absence memory</button>
+<button data-action="save" onclick="saveWorldState('signal')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('signal')">restore world</button>
+<button data-action="replay" onclick="exportReplay('signal')">export replay</button>
+<button data-action="absent" onclick="advanceAbsentNegotiation('orchard')">advance absent negotiation</button>
+<button data-action="mediate" onclick="mediateRoleConflict('orchard')">mediate role conflict</button>
+<button data-action="default" onclick="markLoanDefault('orchard')">mark loan default</button>
+<button data-action="limit" onclick="playForgivenessLimit('orchard')">play forgiveness limit</button>
+<button data-action="choice" onclick="chooseDebtResponse('orchard')">choose debt response</button>
+<button data-action="repay" onclick="chooseRepay('orchard')">choose repay</button>
+<button data-action="wait" onclick="chooseWait('orchard')">choose wait</button>
+<button data-action="ignore" onclick="chooseIgnore('orchard')">choose ignore</button>
+<button data-action="reload" onclick="restoreAbsenceMemory('orchard')">restore absence memory</button>
+<button data-action="save" onclick="saveWorldState('orchard')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('orchard')">restore world</button>
+<button data-action="replay" onclick="exportReplay('orchard')">export replay</button>
+<button data-action="absent" onclick="advanceAbsentNegotiation('repair_ring')">advance absent negotiation</button>
+<button data-action="mediate" onclick="mediateRoleConflict('repair_ring')">mediate role conflict</button>
+<button data-action="default" onclick="markLoanDefault('repair_ring')">mark loan default</button>
+<button data-action="limit" onclick="playForgivenessLimit('repair_ring')">play forgiveness limit</button>
+<button data-action="choice" onclick="chooseDebtResponse('repair_ring')">choose debt response</button>
+<button data-action="repay" onclick="chooseRepay('repair_ring')">choose repay</button>
+<button data-action="wait" onclick="chooseWait('repair_ring')">choose wait</button>
+<button data-action="ignore" onclick="chooseIgnore('repair_ring')">choose ignore</button>
+<button data-action="reload" onclick="restoreAbsenceMemory('repair_ring')">restore absence memory</button>
+<button data-action="save" onclick="saveWorldState('repair_ring')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('repair_ring')">restore world</button>
+<button data-action="replay" onclick="exportReplay('repair_ring')">export replay</button></section>
+  <section><h2>Browser log</h2><div id="log" class="log">ready</div></section>
+</main>
+<script>
+const storeKey = 'ssrm.v47.browser.world';
+let state = JSON.parse(localStorage.getItem(storeKey) || '{"tick":0,"events":[],"defaults":0,"choices":0}');
+function writeLog(message) {
+  state.tick += 1;
+  state.events.push({tick: state.tick, message});
+  if (state.events.length > 24) state.events = state.events.slice(-24);
+  localStorage.setItem(storeKey, JSON.stringify(state));
+  document.getElementById('log').textContent = state.events.map(e => `${e.tick}: ${e.message}`).join('
+');
+}
+function advanceAbsentNegotiation(scope) { writeLog(`resident negotiation advanced while avatar absent in ${scope}`); }
+function mediateRoleConflict(scope) { writeLog(`role conflict mediation shown in ${scope}`); }
+function markLoanDefault(scope) { state.defaults += 1; writeLog(`loan default ${state.defaults} marked in ${scope}`); }
+function playForgivenessLimit(scope) { writeLog(`forgiveness limit animation played in ${scope}`); }
+function chooseDebtResponse(scope) { state.choices += 1; writeLog(`debt-aware choice ${state.choices} selected in ${scope}`); }
+function chooseRepay(scope) { writeLog(`avatar chose repayment in ${scope}`); }
+function chooseWait(scope) { writeLog(`avatar chose waiting with witness in ${scope}`); }
+function chooseIgnore(scope) { writeLog(`avatar chose ignoring debt in ${scope}`); }
+function restoreAbsenceMemory(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v47.absence.${scope}`) || '{"memory":"none"}'); writeLog(`restored absence memory for ${scope}: ${restored.memory}`); }
+function saveWorldState(scope) { localStorage.setItem(`ssrm.v47.absence.${scope}`, JSON.stringify({memory:`saved absence negotiation/default memory for ${scope}`, savedAt:state.tick})); localStorage.setItem(`ssrm.v47.world.${scope}`, JSON.stringify(state)); writeLog(`saved absence negotiation world for ${scope}`); }
+function restoreWorldState(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v47.world.${scope}`) || '{"events":[]}'); writeLog(`restored world state for ${scope} with ${restored.events.length || 0} events`); }
+function exportReplay(scope) { writeLog(`replay export prepared for ${scope}`); }
+localStorage.setItem('ssrm.v47.boot', JSON.stringify({loaded:true}));
+writeLog('browser v47 absence negotiation surface loaded from localStorage');
+</script>
+</body>
+</html>

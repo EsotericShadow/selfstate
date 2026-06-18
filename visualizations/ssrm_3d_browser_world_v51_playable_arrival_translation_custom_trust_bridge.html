@@ -1,0 +1,201 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v51 Playable Arrival Bridge</title>
+<style>
+:root { --ink:#12110f; --gold:#e0b45e; --moss:#9dbb77; --water:#78aac7; --paper:#f6ecd8; --line:rgba(246,236,216,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 18% 18%, rgba(224,180,94,.32), transparent 28%), radial-gradient(circle at 78% 14%, rgba(120,170,199,.22), transparent 30%), linear-gradient(135deg, #12110f, #24301f 48%, #2a2435); }
+main { display:grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(18,17,15,.76); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(224,180,94,.16); color:var(--paper); padding:8px 11px; }
+.flower { width:158px; height:158px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(246,236,216,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(157,187,119,.45), rgba(120,170,199,.42), rgba(224,180,94,.42), rgba(157,187,119,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="first-person-arrival-panel"><h2>First-person arrival</h2><p>Sight, sound, smell, temperature, wetness, history markers, frequency, and flower phase bind the avatar to the already-built place.</p></section>
+<section id="greeting-protocol-panel"><h2>Resident greeting protocol</h2><p>Residents respond visibly when the avatar observes, greets, waits, interrupts, or bypasses local sequence.</p></section>
+<section id="translation-uncertainty-panel"><h2>Translation uncertainty</h2><p>Phrase meanings are candidate interpretations with repair gestures, not autonomous natural language claims.</p></section>
+<section id="local-custom-panel"><h2>Local custom and law</h2><p>Restricted objects and local customs are visible before choice and can block avatar action.</p></section>
+<section id="avatar-choice-trust-panel"><h2>Avatar choice and trust</h2><p>Choices change trust, curiosity, and guardedness without erasing inherited history.</p></section>
+<section id="history-integrity-panel"><h2>History integrity</h2><p>Lineage, trade obligation, language family, and local law remain visible after entry.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore arrival, greeting, translation, custom, choice, and history traces.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and arrival frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sample arrival senses</button>
+<button data-action="showSightPacket" onclick="showSightPacket('arrival')">show sight packet</button>
+<button data-action="showSoundPacket" onclick="showSoundPacket('arrival')">show sound packet</button>
+<button data-action="showSmellPacket" onclick="showSmellPacket('arrival')">show smell packet</button>
+<button data-action="showTemperaturePacket" onclick="showTemperaturePacket('arrival')">show temperature packet</button>
+<button data-action="showWetnessPacket" onclick="showWetnessPacket('arrival')">show wetness packet</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">perform greeting step</button>
+<button data-action="showResidentBodyResponse" onclick="showResidentBodyResponse('greeting')">show resident response</button>
+<button data-action="waitForResidentLead" onclick="waitForResidentLead('greeting')">wait for resident lead</button>
+<button data-action="stepBack" onclick="stepBack('greeting')">step back</button>
+<button data-action="askTranslation" onclick="askTranslation('translation')">ask translation</button>
+<button data-action="repeatLocalPhrase" onclick="repeatLocalPhrase('translation')">repeat local phrase</button>
+<button data-action="showCandidateMeanings" onclick="showCandidateMeanings('translation')">show candidate meanings</button>
+<button data-action="showMisunderstandingRisk" onclick="showMisunderstandingRisk('translation')">show misunderstanding risk</button>
+<button data-action="repairGesture" onclick="repairGesture('translation')">repair gesture</button>
+<button data-action="inspectLocalCustom" onclick="inspectLocalCustom('custom')">inspect local custom</button>
+<button data-action="askCustomReason" onclick="askCustomReason('custom')">ask custom reason</button>
+<button data-action="respectWarning" onclick="respectWarning('custom')">respect warning</button>
+<button data-action="showRestrictedObject" onclick="showRestrictedObject('custom')">show restricted object</button>
+<button data-action="showLocalLaw" onclick="showLocalLaw('custom')">show local law</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">choose avatar action</button>
+<button data-action="observeBeforeSpeaking" onclick="observeBeforeSpeaking('choice')">observe before speaking</button>
+<button data-action="offerGreeting" onclick="offerGreeting('choice')">offer greeting</button>
+<button data-action="offerTradeGood" onclick="offerTradeGood('choice')">offer trade good</button>
+<button data-action="touchRestrictedObject" onclick="touchRestrictedObject('choice')">touch restricted object</button>
+<button data-action="showTrustDelta" onclick="showTrustDelta('choice')">show trust delta</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">show history integrity</button>
+<button data-action="showLineageMarker" onclick="showLineageMarker('history')">show lineage marker</button>
+<button data-action="showTradeObligation" onclick="showTradeObligation('history')">show trade obligation</button>
+<button data-action="showLanguageFamily" onclick="showLanguageFamily('history')">show language family</button>
+<button data-action="showHistoryNotErased" onclick="showHistoryNotErased('history')">show history not erased</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">restore arrival memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showArrivalFrequency" onclick="showArrivalFrequency('frequency')">show arrival frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">arrive moss_ward</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">greet moss_ward</button>
+<button data-action="askTranslation" onclick="askTranslation('translation')">translate proto-moss-breath</button>
+<button data-action="inspectLocalCustom" onclick="inspectLocalCustom('custom')">custom ask before touching rain clay</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">choice moss_ward</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">history moss_ward</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">restore moss_ward</button>
+<button data-action="showArrivalFrequency" onclick="showArrivalFrequency('frequency')">frequency moss_ward</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">arrive glass_harbor</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">greet glass_harbor</button>
+<button data-action="askTranslation" onclick="askTranslation('translation')">translate proto-harbor-chime</button>
+<button data-action="inspectLocalCustom" onclick="inspectLocalCustom('custom')">custom do not dim public lamp</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">choice glass_harbor</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">history glass_harbor</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">restore glass_harbor</button>
+<button data-action="showArrivalFrequency" onclick="showArrivalFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">arrive cinder_garden</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">greet cinder_garden</button>
+<button data-action="askTranslation" onclick="askTranslation('translation')">translate proto-cinder-pulse</button>
+<button data-action="inspectLocalCustom" onclick="inspectLocalCustom('custom')">custom do not cross seed rows</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">choice cinder_garden</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">history cinder_garden</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">restore cinder_garden</button>
+<button data-action="showArrivalFrequency" onclick="showArrivalFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">arrive lichen_bridge</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">greet lichen_bridge</button>
+<button data-action="askTranslation" onclick="askTranslation('translation')">translate proto-bridge-hum</button>
+<button data-action="inspectLocalCustom" onclick="inspectLocalCustom('custom')">custom do not step on tension rope</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">choice lichen_bridge</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">history lichen_bridge</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">restore lichen_bridge</button>
+<button data-action="showArrivalFrequency" onclick="showArrivalFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">arrive orchid_engine</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">greet orchid_engine</button>
+<button data-action="askTranslation" onclick="askTranslation('translation')">translate proto-engine-ring</button>
+<button data-action="inspectLocalCustom" onclick="inspectLocalCustom('custom')">custom do not turn valve key</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">choice orchid_engine</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">history orchid_engine</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">restore orchid_engine</button>
+<button data-action="showArrivalFrequency" onclick="showArrivalFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar observe</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol observe</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar greet</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol greet</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar ask translation</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol ask translation</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar repeat phrase</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol repeat phrase</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar offer trade</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol offer trade</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar touch warning</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol touch warning</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar step back</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol step back</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar ask custom</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol ask custom</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar interrupt</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol interrupt</button>
+<button data-action="chooseAvatarAction" onclick="chooseAvatarAction('choice')">avatar wait</button>
+<button data-action="performGreetingStep" onclick="performGreetingStep('greeting')">protocol wait</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify lineage</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload lineage</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify trade</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload trade</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify language</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload language</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify law</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload law</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify custom</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload custom</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify prehistory</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload prehistory</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify trust</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload trust</button>
+<button data-action="showHistoryIntegrity" onclick="showHistoryIntegrity('history')">verify replay</button>
+<button data-action="restoreArrivalMemory" onclick="restoreArrivalMemory('reload')">reload replay</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense sight</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense sound</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense smell</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense temperature</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense wetness</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense frequency</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense flower</button>
+<button data-action="sampleArrivalSenses" onclick="sampleArrivalSenses('arrival')">sense boundary</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v51.playable.arrival';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic arrival trace' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function sampleArrivalSenses(scope) { return pushTrace('sampleArrivalSenses', scope); }
+function showSightPacket(scope) { return pushTrace('showSightPacket', scope); }
+function showSoundPacket(scope) { return pushTrace('showSoundPacket', scope); }
+function showSmellPacket(scope) { return pushTrace('showSmellPacket', scope); }
+function showTemperaturePacket(scope) { return pushTrace('showTemperaturePacket', scope); }
+function showWetnessPacket(scope) { return pushTrace('showWetnessPacket', scope); }
+function performGreetingStep(scope) { return pushTrace('performGreetingStep', scope); }
+function showResidentBodyResponse(scope) { return pushTrace('showResidentBodyResponse', scope); }
+function waitForResidentLead(scope) { return pushTrace('waitForResidentLead', scope); }
+function stepBack(scope) { return pushTrace('stepBack', scope); }
+function askTranslation(scope) { return pushTrace('askTranslation', scope); }
+function repeatLocalPhrase(scope) { return pushTrace('repeatLocalPhrase', scope); }
+function showCandidateMeanings(scope) { return pushTrace('showCandidateMeanings', scope); }
+function showMisunderstandingRisk(scope) { return pushTrace('showMisunderstandingRisk', scope); }
+function repairGesture(scope) { return pushTrace('repairGesture', scope); }
+function inspectLocalCustom(scope) { return pushTrace('inspectLocalCustom', scope); }
+function askCustomReason(scope) { return pushTrace('askCustomReason', scope); }
+function respectWarning(scope) { return pushTrace('respectWarning', scope); }
+function showRestrictedObject(scope) { return pushTrace('showRestrictedObject', scope); }
+function showLocalLaw(scope) { return pushTrace('showLocalLaw', scope); }
+function chooseAvatarAction(scope) { return pushTrace('chooseAvatarAction', scope); }
+function observeBeforeSpeaking(scope) { return pushTrace('observeBeforeSpeaking', scope); }
+function offerGreeting(scope) { return pushTrace('offerGreeting', scope); }
+function offerTradeGood(scope) { return pushTrace('offerTradeGood', scope); }
+function touchRestrictedObject(scope) { return pushTrace('touchRestrictedObject', scope); }
+function showTrustDelta(scope) { return pushTrace('showTrustDelta', scope); }
+function showHistoryIntegrity(scope) { return pushTrace('showHistoryIntegrity', scope); }
+function showLineageMarker(scope) { return pushTrace('showLineageMarker', scope); }
+function showTradeObligation(scope) { return pushTrace('showTradeObligation', scope); }
+function showLanguageFamily(scope) { return pushTrace('showLanguageFamily', scope); }
+function showHistoryNotErased(scope) { return pushTrace('showHistoryNotErased', scope); }
+function restoreArrivalMemory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restoreArrivalMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(restoreArrivalMemory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showArrivalFrequency(scope) { return pushTrace('showArrivalFrequency', scope); }
+function showRateBoundary(scope) { return pushTrace('showRateBoundary', scope); }
+</script>
+</body>
+</html>

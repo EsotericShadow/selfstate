@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_filter_score,next_gate
+320,pass,1.0,1.0,1.0,"post-320: condense the primary shell into an outside-reviewer landing path that exposes only the integrated loop, receipt, observation triage, transcript, and boundary before optional deep panels"

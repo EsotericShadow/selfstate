@@ -26,6 +26,8 @@ Report 318 adds a compact integrated scenario receipt to the same shell. The rec
 
 Report 319 makes that receipt actionable by adding field-tied receipt observations, severity, latest-observation resolution, replay/checkpoint evidence, and resume persistence. This keeps review feedback inside the primary browser-local shell instead of leaving it as external chat notes.
 
+Report 320 adds in-shell observation triage over that receipt-observation ledger: all, open, watch, resolved, and blocking filters plus public count summaries. This is reviewer workflow consolidation over deterministic public state, not autonomous debugging.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

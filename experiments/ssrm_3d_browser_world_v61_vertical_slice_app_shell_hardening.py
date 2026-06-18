@@ -225,6 +225,7 @@ def _app_html() -> str:
       <article class="panel"><h2>Resident social memory</h2><div class="relationship-actions"><button data-action="runSocialMemoryPulse">Run social pulse</button><button data-action="settleSelectedRelationship">Settle selected debt</button></div><pre id="relationshipMemoryOut"></pre></article>
       <article class="panel"><h2>Integrated scenario receipt</h2><div class="receipt-actions"><button data-action="generateScenarioReceipt">Generate receipt</button></div><pre id="scenarioReceiptOut"></pre></article>
       <article class="panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
+      <article class="panel"><h2>Observation triage</h2><div class="triage-actions"><button data-action="setObservationFilterAll">All</button><button data-action="setObservationFilterOpen">Open</button><button data-action="setObservationFilterWatch">Watch</button><button data-action="setObservationFilterResolved">Resolved</button><button data-action="setObservationFilterBlocking">Blocking</button></div><pre id="observationTriageOut"></pre></article>
       <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
       <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
@@ -283,6 +284,7 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .relationship-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 .receipt-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 .observation-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.triage-actions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -302,6 +304,7 @@ const CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 const HISTORY_KEY = 'ssrm_v61_app_shell_resident_history';
 const RELATION_KEY = 'ssrm_v61_app_shell_resident_relationships';
 const RECEIPT_OBSERVATION_KEY = 'ssrm_v61_app_shell_receipt_observations';
+const OBSERVATION_FILTER_KEY = 'ssrm_v61_app_shell_observation_filter';
 
 const residents = {{
   Ari: {{ trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 }},
@@ -337,7 +340,7 @@ const playtestTasks = [
 const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_consequence', 'offscreen_life', 'recoverable_trust_repair', 'resident_social_memory', 'public_history_sync', 'replay_export_ready', 'resume_ready_snapshot'];
 
 const qaManifest = {{
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -346,7 +349,7 @@ const qaManifest = {{
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {{
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY].forEach(key => localStorage.removeItem(key));
 }}
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({{
@@ -794,6 +797,28 @@ function resolveLatestObservation() {{
   recordCheckpoint('receipt observation resolved');
   return log('resolveLatestObservation', {{ resolved: true, id: rows[index].id, field: rows[index].field }});
 }}
+function readObservationFilter() {{
+  const filter = localStorage.getItem(OBSERVATION_FILTER_KEY) || 'all';
+  return ['all', 'open', 'watch', 'resolved', 'blocking'].includes(filter) ? filter : 'all';
+}}
+function setObservationFilter(filter) {{
+  localStorage.setItem(OBSERVATION_FILTER_KEY, filter);
+  recordCheckpoint('observation triage ' + filter);
+  return log('setObservationFilter', {{ filter, visibleRows: filterReceiptObservations(filter).length }});
+}}
+function setObservationFilterAll() {{ return setObservationFilter('all'); }}
+function setObservationFilterOpen() {{ return setObservationFilter('open'); }}
+function setObservationFilterWatch() {{ return setObservationFilter('watch'); }}
+function setObservationFilterResolved() {{ return setObservationFilter('resolved'); }}
+function setObservationFilterBlocking() {{ return setObservationFilter('blocking'); }}
+function filterReceiptObservations(filter = readObservationFilter()) {{
+  const rows = readReceiptObservations();
+  if (filter === 'open') return rows.filter(row => row.status !== 'resolved');
+  if (filter === 'watch') return rows.filter(row => row.severity === 'watch' || row.status === 'watch');
+  if (filter === 'resolved') return rows.filter(row => row.status === 'resolved');
+  if (filter === 'blocking') return rows.filter(row => row.severity === 'blocking');
+  return rows;
+}}
 function formatScenarioReceipt() {{
   const receipt = calculateScenarioReceipt();
   const rows = receipt.checks.map(([id, pass, detail]) => `${{pass ? 'PASS' : 'FAIL'}} ${{id}}: ${{detail}}`);
@@ -811,6 +836,24 @@ function formatReceiptObservations() {{
 Persistent key: ${{RECEIPT_OBSERVATION_KEY}}
 Recent observations:
 ${{recent.join('\\n')}}`;
+}}
+function formatObservationTriage() {{
+  const rows = readReceiptObservations();
+  const filter = readObservationFilter();
+  const visible = filterReceiptObservations(filter);
+  const counts = {{
+    total: rows.length,
+    open: rows.filter(row => row.status !== 'resolved').length,
+    watch: rows.filter(row => row.severity === 'watch' || row.status === 'watch').length,
+    resolved: rows.filter(row => row.status === 'resolved').length,
+    blocking: rows.filter(row => row.severity === 'blocking').length,
+    minor: rows.filter(row => row.severity === 'minor').length
+  }};
+  const lines = visible.slice(-8).map(row => `${{row.id}} | ${{row.status}} | ${{row.severity}} | ${{row.field}} | receipt=${{row.receiptStatus}}`);
+  return `Observation triage filter: ${{filter}}
+Counts: total ${{counts.total}} | open ${{counts.open}} | watch ${{counts.watch}} | minor ${{counts.minor}} | blocking ${{counts.blocking}} | resolved ${{counts.resolved}}
+Visible rows: ${{visible.length}}
+${{lines.length ? lines.join('\\n') : 'No observations match this filter.'}}`;
 }}
 function formatResidentActionButtons() {{
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${{name}}</strong><button type="button" data-dashboard-select="${{name}}">Select</button><button type="button" data-dashboard-help="${{name}}">Help</button><button type="button" data-dashboard-borrow="${{name}}">Borrow</button><button type="button" data-dashboard-return="${{name}}">Return</button></div>`).join('');
@@ -910,6 +953,7 @@ function describeReplayRow(row) {{
     generateScenarioReceipt: `generated public receipt pass=${{payload.passCount}}/${{payload.fieldCount}}`,
     logReceiptObservation: `logged receipt observation ${{payload.id}} ${{payload.field}} status=${{payload.status}}`,
     resolveLatestObservation: `resolved receipt observation=${{payload.resolved === true}} ${{payload.id || payload.reason || ''}}`,
+    setObservationFilter: `set observation triage filter=${{payload.filter}} rows=${{payload.visibleRows}}`,
     toggleAudit: `audit overlay=${{payload.audit === true}}`,
     selectResident: `selected resident ${{payload.selected}}`,
     canvasMove: `canvas move to ${{payload.room}} at ${{payload.x}},${{payload.y}}`
@@ -961,6 +1005,7 @@ function render() {{
   document.getElementById('relationshipMemoryOut').textContent = formatRelationshipMemory();
   document.getElementById('scenarioReceiptOut').textContent = formatScenarioReceipt();
   document.getElementById('receiptObservationOut').textContent = formatReceiptObservations();
+  document.getElementById('observationTriageOut').textContent = formatObservationTriage();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${{task.id}}</strong>: ${{task.title}}<br><span>${{task.expected}}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -991,7 +1036,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking }});
 bindControls();
 render();
 """

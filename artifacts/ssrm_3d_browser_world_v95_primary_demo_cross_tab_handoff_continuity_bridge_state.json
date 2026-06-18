@@ -1,0 +1,23 @@
+{
+  "after_return_recorded_at": "2026-06-18T09:40:45.619Z",
+  "boundary": "Deterministic browser-local cross-tab handoff continuity bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local restart workflow and visible review handoff continuity, not external validation or evidence of inner experience.",
+  "checks": {
+    "evidence_avoids_local_storage_keys": true,
+    "fresh_tab_after_return_timestamp_unchanged": true,
+    "fresh_tab_continue_reaches_shell": true,
+    "fresh_tab_controls_available": true,
+    "fresh_tab_payload_timestamp_matches_original": true,
+    "fresh_tab_refresh_keeps_handoff_fresh": true,
+    "fresh_tab_return_to_launcher_visible": true,
+    "fresh_tab_shows_prepared_handoff": true,
+    "fresh_tab_status_fresh_resume": true,
+    "fresh_tab_visible_handoff_timestamp_matches_original": true,
+    "no_console_errors": true,
+    "original_tab_prepared_fresh_resume": true
+  },
+  "fresh_tab_recorded_at": "2026-06-18T09:40:45.619Z",
+  "next_gate": "post-335: verify cross-tab continue-return remains fresh after the original preparing tab is closed, so handoff continuity is not dependent on the preparing tab staying open",
+  "original_recorded_at": "2026-06-18T09:40:45.619Z",
+  "report": 335,
+  "seed": 20270733
+}

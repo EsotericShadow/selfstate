@@ -1,0 +1,721 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_criteria.csv",
+    "report": "docs/335_ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local cross-tab handoff continuity bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local restart workflow and visible review handoff continuity, not external validation or evidence of inner experience.",
+  "browser_evidence": {
+    "afterReturnAfterRefresh": {
+      "actionLinks": [
+        {
+          "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+          "text": "Continue from prepared resume handoff"
+        },
+        {
+          "href": "blob:http://127.0.0.1:8797/3ab321cc-7604-4422-bafe-5b3a45f1e6fb",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Continue from prepared resume handoffDownload prepared outside-review handoff JSON",
+      "bodyHasContinuePreparedResume": true,
+      "bodyHasFreshResume": true,
+      "continueHref": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+      "downloadHref": "blob:http://127.0.0.1:8797/3ab321cc-7604-4422-bafe-5b3a45f1e6fb",
+      "handoffStatusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "hasContinueControl": true,
+      "hasDownloadControl": true,
+      "label": "fresh-tab-after-return-after-refresh",
+      "payload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:40:18.853Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:40:45.619Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "resume",
+          "currentHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 16,
+          "fresh": true,
+          "mismatches": [],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:40:45.619Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:40:45.619Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "payloadCurrentRecordedAt": "2026-06-18T09:40:45.619Z",
+      "payloadFresh": true,
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:40:45.619Z",
+      "shellEvidenceText": "Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready.",
+      "shellReceiptPass": true,
+      "shellReplayRows": 16,
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "url": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "afterReturnBeforeRefresh": {
+      "actionLinks": [
+        {
+          "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+          "text": "Continue from prepared resume handoff"
+        },
+        {
+          "href": "blob:http://127.0.0.1:8797/192d1eef-89e7-4248-a5eb-f9ca172e06ad",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Continue from prepared resume handoffDownload prepared outside-review handoff JSON",
+      "bodyHasContinuePreparedResume": true,
+      "bodyHasFreshResume": true,
+      "continueHref": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+      "downloadHref": "blob:http://127.0.0.1:8797/192d1eef-89e7-4248-a5eb-f9ca172e06ad",
+      "handoffStatusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "hasContinueControl": true,
+      "hasDownloadControl": true,
+      "label": "fresh-tab-after-return-before-refresh",
+      "payload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:40:18.853Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:40:45.619Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "resume",
+          "currentHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 16,
+          "fresh": true,
+          "mismatches": [],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:40:45.619Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:40:45.619Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "payloadCurrentRecordedAt": "2026-06-18T09:40:45.619Z",
+      "payloadFresh": true,
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:40:45.619Z",
+      "shellEvidenceText": "Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready.",
+      "shellReceiptPass": true,
+      "shellReplayRows": 16,
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "url": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "checks": {
+      "evidence_avoids_local_storage_keys": true,
+      "fresh_tab_after_return_timestamp_unchanged": true,
+      "fresh_tab_continue_reaches_shell": true,
+      "fresh_tab_controls_available": true,
+      "fresh_tab_payload_timestamp_matches_original": true,
+      "fresh_tab_refresh_keeps_handoff_fresh": true,
+      "fresh_tab_return_to_launcher_visible": true,
+      "fresh_tab_shows_prepared_handoff": true,
+      "fresh_tab_status_fresh_resume": true,
+      "fresh_tab_visible_handoff_timestamp_matches_original": true,
+      "no_console_errors": true,
+      "original_tab_prepared_fresh_resume": true
+    },
+    "consoleErrorMessages": [],
+    "consoleErrors": 0,
+    "continuedShell": {
+      "hasReturnToLauncher": true,
+      "hasReviewerLanding": true,
+      "hasRunReviewerPass": true,
+      "receiptAllPass": true,
+      "replayRowsVisible": true,
+      "url": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "freshTabLauncher": {
+      "actionLinks": [
+        {
+          "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+          "text": "Continue from prepared resume handoff"
+        },
+        {
+          "href": "blob:http://127.0.0.1:8797/546e3006-fe12-46b8-bcff-a720c511c948",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Continue from prepared resume handoffDownload prepared outside-review handoff JSON",
+      "bodyHasContinuePreparedResume": true,
+      "bodyHasFreshResume": true,
+      "continueHref": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+      "downloadHref": "blob:http://127.0.0.1:8797/546e3006-fe12-46b8-bcff-a720c511c948",
+      "handoffStatusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "hasContinueControl": true,
+      "hasDownloadControl": true,
+      "label": "fresh-tab-launcher",
+      "payload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:40:18.853Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:40:45.619Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "resume",
+          "currentHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 16,
+          "fresh": true,
+          "mismatches": [],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:40:45.619Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:40:45.619Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "payloadCurrentRecordedAt": "2026-06-18T09:40:45.619Z",
+      "payloadFresh": true,
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:40:45.619Z",
+      "shellEvidenceText": "Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready.",
+      "shellReceiptPass": true,
+      "shellReplayRows": 16,
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "url": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+    },
+    "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "originalTabPrepared": {
+      "actionLinks": [
+        {
+          "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+          "text": "Continue from prepared resume handoff"
+        },
+        {
+          "href": "blob:http://127.0.0.1:8797/8b28c509-d3cd-4d43-82cf-507581efd5aa",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "actionsText": "Continue from prepared resume handoffDownload prepared outside-review handoff JSON",
+      "bodyHasFreshResume": true,
+      "handoffStatusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "hasContinueControl": true,
+      "hasDownloadControl": true,
+      "payload": {
+        "boundary": "outside-review-handoff-public-local-only",
+        "checklistState": {
+          "items": {
+            "OR-01": true,
+            "OR-02": true,
+            "OR-03": true,
+            "OR-04": true,
+            "OR-05": true,
+            "OR-06": true,
+            "OR-07": true
+          },
+          "updatedAt": "2026-06-18T09:40:18.853Z"
+        },
+        "defects": [],
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "resume",
+          "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T09:40:45.619Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "launchUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "manualRecords": [],
+        "previewFreshness": {
+          "boundary": "outside-review-handoff-freshness-public-local-only",
+          "currentHandoffKind": "resume",
+          "currentHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "currentManualRecordCount": 0,
+          "currentReplayRows": 16,
+          "fresh": true,
+          "mismatches": [],
+          "payloadHandoffKind": "resume",
+          "payloadHandoffRecordedAt": "2026-06-18T09:40:45.619Z",
+          "payloadManualRecordCount": 0,
+          "payloadReplayRows": 16
+        },
+        "previewReadableSummary": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+        "recorderExport": null,
+        "recorderExportPrepared": false,
+        "reportIntroduced": 323,
+        "reviewedHandoffCompletion": {
+          "boundary": "reviewed-handoff-completion-public-local-only",
+          "defectCount": 0,
+          "manualRecordCount": 0,
+          "missing": [
+            "recorder export",
+            "manual recorder outcome"
+          ],
+          "openDefectCount": 0,
+          "ready": false,
+          "recorderExportPrepared": false,
+          "recorderExportRecordCount": 0,
+          "reportIntroduced": 327,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "resume",
+              "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+              "recordedAt": "2026-06-18T09:40:45.619Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          }
+        },
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 7,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "resume",
+            "launcherUrl": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T09:40:45.619Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 9,
+            "passCount": 9
+          },
+          "receiptAllPass": true,
+          "replayExportReady": true,
+          "replayRows": 16,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": true,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "payloadCurrentRecordedAt": "2026-06-18T09:40:45.619Z",
+      "payloadFresh": true,
+      "payloadKind": "resume",
+      "payloadRecordedAt": "2026-06-18T09:40:45.619Z",
+      "shellReceiptPass": true,
+      "shellReplayRows": 16,
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "url": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "port": 8797,
+    "report": 335
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "report_334_continue_return_gate_passed",
+      "evidence": "Report 334 verdict=pass weakest=1.0",
+      "failure_if_false": "cross-tab handoff continuity would not be grounded in a passing continue-return gate",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "cross_tab_source_still_present",
+      "evidence": "generator, emitted JS, and emitted HTML retain prepared handoff continue/download machinery",
+      "failure_if_false": "regeneration would remove the visible cross-tab handoff path",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "original_tab_prepared_fresh_resume",
+      "evidence": "kind=resume fresh=True status=Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "the preparing tab did not create a visible fresh resume handoff",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_shows_prepared_handoff",
+      "evidence": "kind=resume status=Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "a cold launcher tab does not render the prepared handoff card",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_status_fresh_resume",
+      "evidence": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "fresh tab status does not classify the handoff as fresh resume",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_controls_available",
+      "evidence": "Continue from prepared resume handoffDownload prepared outside-review handoff JSON",
+      "failure_if_false": "fresh tab lacks continue/download controls for the prepared handoff",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_visible_handoff_timestamp_matches_original",
+      "evidence": "original=2026-06-18T09:40:45.619Z fresh=2026-06-18T09:40:45.619Z",
+      "failure_if_false": "fresh tab shows a different visible handoff timestamp than the preparing tab",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_payload_timestamp_matches_original",
+      "evidence": "original=2026-06-18T09:40:45.619Z fresh=2026-06-18T09:40:45.619Z",
+      "failure_if_false": "fresh tab preview freshness points at a different current handoff timestamp",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_continue_reaches_shell",
+      "evidence": "url=http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 reviewer=True runPass=True",
+      "failure_if_false": "fresh tab continue action does not reach the maintained reviewer shell",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_return_to_launcher_visible",
+      "evidence": "http://127.0.0.1:8797/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+      "failure_if_false": "fresh tab continued session cannot return visibly to the launcher",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_refresh_keeps_handoff_fresh",
+      "evidence": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "refreshing shell evidence after cross-tab return makes the handoff stale",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "fresh_tab_after_return_timestamp_unchanged",
+      "evidence": "original=2026-06-18T09:40:45.619Z after=2026-06-18T09:40:45.619Z",
+      "failure_if_false": "cross-tab continue-return changes the visible prepared handoff timestamp",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_evidence_uses_visible_or_preview_state",
+      "evidence": "browser evidence compares visible status/actions and visible handoff preview JSON, not raw localStorage keys",
+      "failure_if_false": "cross-tab proof relies on privileged storage inspection",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_console_clean",
+      "evidence": "consoleErrors=0 messages=[]",
+      "failure_if_false": "cross-tab browser flow produced console errors",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "boundary_preserved",
+      "evidence": "Deterministic browser-local cross-tab handoff continuity bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local restart workflow and visible review handoff continuity, not external validation or evidence of inner experience.",
+      "failure_if_false": "report boundary implies more than browser-local handoff continuity",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "console_errors": 0,
+    "criterion_count": 15,
+    "cross_tab_continue_score": 1.0,
+    "fresh_tab_continuity_score": 1.0,
+    "post_return_freshness_score": 1.0,
+    "readiness": 1.0,
+    "timestamp_match_score": 1.0,
+    "visible_no_storage_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-335: verify cross-tab continue-return remains fresh after the original preparing tab is closed, so handoff continuity is not dependent on the preparing tab staying open",
+  "prefix": "ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge",
+  "report": 335,
+  "report_334_results_path": "artifacts/ssrm_3d_browser_world_v94_primary_demo_continue_return_freshness_bridge_results.json",
+  "required_terms": [
+    "continuePreparedHandoff",
+    "preparedHandoffHref",
+    "renderOutsideReviewHandoffActions",
+    "handoffPayloadFreshnessState",
+    "outsideReviewHandoffActions",
+    "Continue from prepared"
+  ],
+  "seed": 20270733,
+  "verdict": "pass"
+}

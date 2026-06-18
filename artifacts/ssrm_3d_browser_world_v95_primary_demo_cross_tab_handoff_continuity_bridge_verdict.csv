@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+335,pass,1.0,1.0,"post-335: verify cross-tab continue-return remains fresh after the original preparing tab is closed, so handoff continuity is not dependent on the preparing tab staying open"

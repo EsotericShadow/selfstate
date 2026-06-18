@@ -1,0 +1,2 @@
+report,readiness,weakest_channel_score,fresh_tab_continuity_score,cross_tab_continue_score,timestamp_match_score,post_return_freshness_score,visible_no_storage_score,console_errors,criterion_count
+335,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,15

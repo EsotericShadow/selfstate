@@ -1,0 +1,481 @@
+generation,year,epoch,settlement_id,stratum_name,institution,material_practice,settlement_role,inherited_from_previous,changed_this_generation,continuity_hash
+1,30,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,False,False,v37-534563
+1,30,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,False,False,v37-469321
+1,30,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,False,False,v37-541100
+1,30,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,False,True,v37-409769
+1,30,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,False,False,v37-379766
+1,30,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,False,False,v37-702256
+2,60,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,False,v37-534745
+2,60,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,False,v37-469503
+2,60,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,True,v37-541282
+2,60,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,False,v37-409951
+2,60,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,False,v37-379948
+2,60,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,True,v37-702438
+3,90,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,False,v37-534927
+3,90,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,True,v37-469685
+3,90,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,False,v37-541464
+3,90,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,False,v37-410133
+3,90,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,True,v37-380130
+3,90,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,False,v37-702620
+4,120,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,True,v37-535109
+4,120,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,False,v37-469867
+4,120,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,False,v37-541646
+4,120,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,True,v37-410315
+4,120,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,False,v37-380312
+4,120,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,True,v37-702802
+5,150,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,False,v37-535291
+5,150,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,False,v37-470049
+5,150,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,True,v37-541828
+5,150,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,False,v37-410497
+5,150,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,True,v37-380494
+5,150,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,False,v37-702984
+6,180,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,False,v37-535473
+6,180,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,True,v37-470231
+6,180,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,False,v37-542010
+6,180,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,True,v37-410679
+6,180,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,False,v37-380676
+6,180,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,False,v37-703166
+7,210,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,True,v37-535655
+7,210,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,False,v37-470413
+7,210,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,True,v37-542192
+7,210,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,False,v37-410861
+7,210,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,False,v37-380858
+7,210,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,False,v37-703348
+8,240,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,False,v37-535837
+8,240,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,True,v37-470595
+8,240,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,False,v37-542374
+8,240,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,False,v37-411043
+8,240,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,False,v37-381040
+8,240,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,True,v37-703530
+9,270,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,True,v37-536019
+9,270,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,False,v37-470777
+9,270,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,False,v37-542556
+9,270,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,False,v37-411225
+9,270,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,True,v37-381222
+9,270,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,False,v37-703712
+10,300,1,riverbend,epoch-1-riverbend-stratum,route council,cedar-hand marks,dry crossing stewards,True,False,v37-550186
+10,300,1,roofward,epoch-1-roofward-stratum,memory house,glass-hand marks,herb preservation stewards,True,False,v37-484690
+10,300,1,archive,epoch-1-archive-stratum,repair kinship,inkstone-hand marks,signal memory stewards,True,False,v37-556734
+10,300,1,signal,epoch-1-signal-stratum,route council,copper-hand marks,path visibility stewards,True,True,v37-424884
+10,300,1,orchard,epoch-1-orchard-stratum,memory house,clay-hand marks,dry seed continuity stewards,True,False,v37-394764
+10,300,1,repair_ring,epoch-1-repair_ring-stratum,repair kinship,bronze-hand marks,safe repair space stewards,True,False,v37-718535
+11,330,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-677473
+11,330,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-610509
+11,330,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,True,v37-684019
+11,330,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-549723
+11,330,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-519115
+11,330,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,True,v37-848758
+12,360,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-677656
+12,360,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,True,v37-610692
+12,360,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,False,v37-684202
+12,360,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-549906
+12,360,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,True,v37-519298
+12,360,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,False,v37-848941
+13,390,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,True,v37-677839
+13,390,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-610875
+13,390,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,False,v37-684385
+13,390,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,True,v37-550089
+13,390,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-519481
+13,390,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,True,v37-849124
+14,420,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-678022
+14,420,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-611058
+14,420,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,True,v37-684568
+14,420,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-550272
+14,420,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,True,v37-519664
+14,420,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,False,v37-849307
+15,450,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-678205
+15,450,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,True,v37-611241
+15,450,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,False,v37-684751
+15,450,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,True,v37-550455
+15,450,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-519847
+15,450,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,False,v37-849490
+16,480,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,True,v37-678388
+16,480,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-611424
+16,480,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,True,v37-684934
+16,480,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-550638
+16,480,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-520030
+16,480,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,False,v37-849673
+17,510,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-678571
+17,510,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,True,v37-611607
+17,510,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,False,v37-685117
+17,510,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-550821
+17,510,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-520213
+17,510,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,True,v37-849856
+18,540,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,True,v37-678754
+18,540,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-611790
+18,540,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,False,v37-685300
+18,540,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-551004
+18,540,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,True,v37-520396
+18,540,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,False,v37-850039
+19,570,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-678937
+19,570,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-611973
+19,570,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,False,v37-685483
+19,570,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,True,v37-551187
+19,570,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-520579
+19,570,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,False,v37-850222
+20,600,2,riverbend,epoch-2-riverbend-stratum,route council,cedar-woven counters,dry crossing stewards,True,False,v37-677472
+20,600,2,roofward,epoch-2-roofward-stratum,memory house,glass-woven counters,herb preservation stewards,True,False,v37-610508
+20,600,2,archive,epoch-2-archive-stratum,repair kinship,inkstone-woven counters,signal memory stewards,True,True,v37-684018
+20,600,2,signal,epoch-2-signal-stratum,route council,copper-woven counters,path visibility stewards,True,False,v37-549722
+20,600,2,orchard,epoch-2-orchard-stratum,memory house,clay-woven counters,dry seed continuity stewards,True,False,v37-519114
+20,600,2,repair_ring,epoch-2-repair_ring-stratum,repair kinship,bronze-woven counters,safe repair space stewards,True,True,v37-848757
+21,630,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-611148
+21,630,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,True,v37-544951
+21,630,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-617692
+21,630,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-484675
+21,630,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,True,v37-454324
+21,630,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-780899
+22,660,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,True,v37-611331
+22,660,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,False,v37-545134
+22,660,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-617875
+22,660,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,True,v37-484858
+22,660,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,False,v37-454507
+22,660,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,True,v37-781082
+23,690,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-611514
+23,690,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,False,v37-545317
+23,690,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,True,v37-618058
+23,690,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-485041
+23,690,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,True,v37-454690
+23,690,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-781265
+24,720,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-611697
+24,720,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,True,v37-545500
+24,720,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-618241
+24,720,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,True,v37-485224
+24,720,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,False,v37-454873
+24,720,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-781448
+25,750,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,True,v37-611880
+25,750,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,False,v37-545683
+25,750,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,True,v37-618424
+25,750,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-485407
+25,750,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,False,v37-455056
+25,750,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-781631
+26,780,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-612063
+26,780,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,True,v37-545866
+26,780,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-618607
+26,780,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-485590
+26,780,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,False,v37-455239
+26,780,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,True,v37-781814
+27,810,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,True,v37-612246
+27,810,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,False,v37-546049
+27,810,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-618790
+27,810,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-485773
+27,810,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,True,v37-455422
+27,810,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-781997
+28,840,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-612429
+28,840,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,False,v37-546232
+28,840,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-618973
+28,840,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,True,v37-485956
+28,840,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,False,v37-455605
+28,840,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-782180
+29,870,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-612612
+29,870,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,False,v37-546415
+29,870,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,True,v37-619156
+29,870,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-486139
+29,870,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,False,v37-455788
+29,870,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,True,v37-782363
+30,900,3,riverbend,epoch-3-riverbend-stratum,route council,cedar-water clocks,dry crossing stewards,True,False,v37-611147
+30,900,3,roofward,epoch-3-roofward-stratum,memory house,glass-water clocks,herb preservation stewards,True,True,v37-544950
+30,900,3,archive,epoch-3-archive-stratum,repair kinship,inkstone-water clocks,signal memory stewards,True,False,v37-617691
+30,900,3,signal,epoch-3-signal-stratum,route council,copper-water clocks,path visibility stewards,True,False,v37-484674
+30,900,3,orchard,epoch-3-orchard-stratum,memory house,clay-water clocks,dry seed continuity stewards,True,True,v37-454323
+30,900,3,repair_ring,epoch-3-repair_ring-stratum,repair kinship,bronze-water clocks,safe repair space stewards,True,False,v37-780898
+31,930,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,True,v37-586682
+31,930,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-520772
+31,930,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-593224
+31,930,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,True,v37-460686
+31,930,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-430432
+31,930,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,True,v37-755859
+32,960,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,False,v37-586865
+32,960,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-520955
+32,960,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,True,v37-593407
+32,960,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,False,v37-460869
+32,960,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,True,v37-430615
+32,960,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,False,v37-756042
+33,990,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,False,v37-587048
+33,990,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,True,v37-521138
+33,990,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-593590
+33,990,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,True,v37-461052
+33,990,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-430798
+33,990,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,False,v37-756225
+34,1020,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,True,v37-587231
+34,1020,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-521321
+34,1020,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,True,v37-593773
+34,1020,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,False,v37-461235
+34,1020,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-430981
+34,1020,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,False,v37-756408
+35,1050,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,False,v37-587414
+35,1050,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,True,v37-521504
+35,1050,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-593956
+35,1050,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,False,v37-461418
+35,1050,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-431164
+35,1050,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,True,v37-756591
+36,1080,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,True,v37-587597
+36,1080,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-521687
+36,1080,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-594139
+36,1080,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,False,v37-461601
+36,1080,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,True,v37-431347
+36,1080,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,False,v37-756774
+37,1110,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,False,v37-587780
+37,1110,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-521870
+37,1110,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-594322
+37,1110,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,True,v37-461784
+37,1110,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-431530
+37,1110,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,False,v37-756957
+38,1140,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,False,v37-587963
+38,1140,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-522053
+38,1140,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,True,v37-594505
+38,1140,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,False,v37-461967
+38,1140,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-431713
+38,1140,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,True,v37-757140
+39,1170,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,False,v37-588146
+39,1170,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,True,v37-522236
+39,1170,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-594688
+39,1170,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,False,v37-462150
+39,1170,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,True,v37-431896
+39,1170,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,False,v37-757323
+40,1200,4,riverbend,epoch-4-riverbend-stratum,route council,cedar-kiln alloys,dry crossing stewards,True,True,v37-586681
+40,1200,4,roofward,epoch-4-roofward-stratum,memory house,glass-kiln alloys,herb preservation stewards,True,False,v37-520771
+40,1200,4,archive,epoch-4-archive-stratum,repair kinship,inkstone-kiln alloys,signal memory stewards,True,False,v37-593223
+40,1200,4,signal,epoch-4-signal-stratum,route council,copper-kiln alloys,path visibility stewards,True,True,v37-460685
+40,1200,4,orchard,epoch-4-orchard-stratum,memory house,clay-kiln alloys,dry seed continuity stewards,True,False,v37-430431
+40,1200,4,repair_ring,epoch-4-repair_ring-stratum,repair kinship,bronze-kiln alloys,safe repair space stewards,True,True,v37-755858
+41,1230,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-638587
+41,1230,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-572082
+41,1230,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,True,v37-645127
+41,1230,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-511598
+41,1230,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,True,v37-481147
+41,1230,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-808954
+42,1260,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-638770
+42,1260,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,True,v37-572265
+42,1260,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,False,v37-645310
+42,1260,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,True,v37-511781
+42,1260,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,False,v37-481330
+42,1260,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-809137
+43,1290,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,True,v37-638953
+43,1290,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-572448
+43,1290,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,True,v37-645493
+43,1290,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-511964
+43,1290,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,False,v37-481513
+43,1290,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-809320
+44,1320,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-639136
+44,1320,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,True,v37-572631
+44,1320,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,False,v37-645676
+44,1320,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-512147
+44,1320,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,False,v37-481696
+44,1320,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,True,v37-809503
+45,1350,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,True,v37-639319
+45,1350,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-572814
+45,1350,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,False,v37-645859
+45,1350,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-512330
+45,1350,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,True,v37-481879
+45,1350,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-809686
+46,1380,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-639502
+46,1380,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-572997
+46,1380,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,False,v37-646042
+46,1380,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,True,v37-512513
+46,1380,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,False,v37-482062
+46,1380,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-809869
+47,1410,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-639685
+47,1410,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-573180
+47,1410,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,True,v37-646225
+47,1410,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-512696
+47,1410,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,False,v37-482245
+47,1410,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,True,v37-810052
+48,1440,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-639868
+48,1440,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,True,v37-573363
+48,1440,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,False,v37-646408
+48,1440,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-512879
+48,1440,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,True,v37-482428
+48,1440,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-810235
+49,1470,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,True,v37-640051
+49,1470,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-573546
+49,1470,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,False,v37-646591
+49,1470,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,True,v37-513062
+49,1470,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,False,v37-482611
+49,1470,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,True,v37-810418
+50,1500,5,riverbend,epoch-5-riverbend-stratum,route council,cedar-signal lenses,dry crossing stewards,True,False,v37-638586
+50,1500,5,roofward,epoch-5-roofward-stratum,memory house,glass-signal lenses,herb preservation stewards,True,False,v37-572081
+50,1500,5,archive,epoch-5-archive-stratum,repair kinship,inkstone-signal lenses,signal memory stewards,True,True,v37-645126
+50,1500,5,signal,epoch-5-signal-stratum,route council,copper-signal lenses,path visibility stewards,True,False,v37-511597
+50,1500,5,orchard,epoch-5-orchard-stratum,memory house,clay-signal lenses,dry seed continuity stewards,True,True,v37-481146
+50,1500,5,repair_ring,epoch-5-repair_ring-stratum,repair kinship,bronze-signal lenses,safe repair space stewards,True,False,v37-808953
+51,1530,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-620681
+51,1530,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,True,v37-554382
+51,1530,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-627219
+51,1530,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,True,v37-494034
+51,1530,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-463653
+51,1530,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-790636
+52,1560,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,True,v37-620864
+52,1560,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,False,v37-554565
+52,1560,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,True,v37-627402
+52,1560,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,False,v37-494217
+52,1560,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-463836
+52,1560,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-790819
+53,1590,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-621047
+53,1590,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,True,v37-554748
+53,1590,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-627585
+53,1590,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,False,v37-494400
+53,1590,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-464019
+53,1590,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,True,v37-791002
+54,1620,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,True,v37-621230
+54,1620,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,False,v37-554931
+54,1620,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-627768
+54,1620,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,False,v37-494583
+54,1620,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,True,v37-464202
+54,1620,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-791185
+55,1650,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-621413
+55,1650,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,False,v37-555114
+55,1650,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-627951
+55,1650,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,True,v37-494766
+55,1650,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-464385
+55,1650,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-791368
+56,1680,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-621596
+56,1680,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,False,v37-555297
+56,1680,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,True,v37-628134
+56,1680,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,False,v37-494949
+56,1680,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-464568
+56,1680,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,True,v37-791551
+57,1710,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-621779
+57,1710,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,True,v37-555480
+57,1710,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-628317
+57,1710,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,False,v37-495132
+57,1710,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,True,v37-464751
+57,1710,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-791734
+58,1740,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,True,v37-621962
+58,1740,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,False,v37-555663
+58,1740,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-628500
+58,1740,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,True,v37-495315
+58,1740,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-464934
+58,1740,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,True,v37-791917
+59,1770,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-622145
+59,1770,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,False,v37-555846
+59,1770,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,True,v37-628683
+59,1770,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,False,v37-495498
+59,1770,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,True,v37-465117
+59,1770,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-792100
+60,1800,6,riverbend,epoch-6-riverbend-stratum,route council,cedar-memory looms,dry crossing stewards,True,False,v37-620680
+60,1800,6,roofward,epoch-6-roofward-stratum,memory house,glass-memory looms,herb preservation stewards,True,True,v37-554381
+60,1800,6,archive,epoch-6-archive-stratum,repair kinship,inkstone-memory looms,signal memory stewards,True,False,v37-627218
+60,1800,6,signal,epoch-6-signal-stratum,route council,copper-memory looms,path visibility stewards,True,True,v37-494033
+60,1800,6,orchard,epoch-6-orchard-stratum,memory house,clay-memory looms,dry seed continuity stewards,True,False,v37-463652
+60,1800,6,repair_ring,epoch-6-repair_ring-stratum,repair kinship,bronze-memory looms,safe repair space stewards,True,False,v37-790635
+61,1830,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,True,v37-643364
+61,1830,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-576809
+61,1830,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,True,v37-649900
+61,1830,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-516289
+61,1830,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-485824
+61,1830,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-813831
+62,1860,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,False,v37-643547
+62,1860,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,True,v37-576992
+62,1860,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,False,v37-650083
+62,1860,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-516472
+62,1860,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-486007
+62,1860,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,True,v37-814014
+63,1890,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,True,v37-643730
+63,1890,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-577175
+63,1890,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,False,v37-650266
+63,1890,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-516655
+63,1890,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,True,v37-486190
+63,1890,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-814197
+64,1920,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,False,v37-643913
+64,1920,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-577358
+64,1920,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,False,v37-650449
+64,1920,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,True,v37-516838
+64,1920,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-486373
+64,1920,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-814380
+65,1950,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,False,v37-644096
+65,1950,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-577541
+65,1950,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,True,v37-650632
+65,1950,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-517021
+65,1950,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-486556
+65,1950,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,True,v37-814563
+66,1980,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,False,v37-644279
+66,1980,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,True,v37-577724
+66,1980,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,False,v37-650815
+66,1980,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-517204
+66,1980,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,True,v37-486739
+66,1980,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-814746
+67,2010,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,True,v37-644462
+67,2010,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-577907
+67,2010,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,False,v37-650998
+67,2010,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,True,v37-517387
+67,2010,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-486922
+67,2010,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,True,v37-814929
+68,2040,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,False,v37-644645
+68,2040,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-578090
+68,2040,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,True,v37-651181
+68,2040,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-517570
+68,2040,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,True,v37-487105
+68,2040,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-815112
+69,2070,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,False,v37-644828
+69,2070,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,True,v37-578273
+69,2070,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,False,v37-651364
+69,2070,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,True,v37-517753
+69,2070,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-487288
+69,2070,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-815295
+70,2100,7,riverbend,epoch-7-riverbend-stratum,route council,cedar-route engines,dry crossing stewards,True,True,v37-643363
+70,2100,7,roofward,epoch-7-roofward-stratum,memory house,glass-route engines,herb preservation stewards,True,False,v37-576808
+70,2100,7,archive,epoch-7-archive-stratum,repair kinship,inkstone-route engines,signal memory stewards,True,True,v37-649899
+70,2100,7,signal,epoch-7-signal-stratum,route council,copper-route engines,path visibility stewards,True,False,v37-516288
+70,2100,7,orchard,epoch-7-orchard-stratum,memory house,clay-route engines,dry seed continuity stewards,True,False,v37-485823
+70,2100,7,repair_ring,epoch-7-repair_ring-stratum,repair kinship,bronze-route engines,safe repair space stewards,True,False,v37-813830
+71,2130,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-812977
+71,2130,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,True,v37-744507
+71,2130,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-819511
+71,2130,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-682709
+71,2130,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-651607
+71,2130,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,True,v37-987274
+72,2160,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,True,v37-813160
+72,2160,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,False,v37-744690
+72,2160,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-819694
+72,2160,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-682892
+72,2160,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,True,v37-651790
+72,2160,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,False,v37-987457
+73,2190,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-813343
+73,2190,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,False,v37-744873
+73,2190,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-819877
+73,2190,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,True,v37-683075
+73,2190,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-651973
+73,2190,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,False,v37-987640
+74,2220,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-813526
+74,2220,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,False,v37-745056
+74,2220,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,True,v37-820060
+74,2220,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-683258
+74,2220,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-652156
+74,2220,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,True,v37-987823
+75,2250,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-813709
+75,2250,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,True,v37-745239
+75,2250,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-820243
+75,2250,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-683441
+75,2250,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,True,v37-652339
+75,2250,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,False,v37-988006
+76,2280,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,True,v37-813892
+76,2280,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,False,v37-745422
+76,2280,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-820426
+76,2280,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,True,v37-683624
+76,2280,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-652522
+76,2280,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,True,v37-988189
+77,2310,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-814075
+77,2310,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,False,v37-745605
+77,2310,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,True,v37-820609
+77,2310,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-683807
+77,2310,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,True,v37-652705
+77,2310,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,False,v37-988372
+78,2340,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-814258
+78,2340,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,True,v37-745788
+78,2340,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-820792
+78,2340,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,True,v37-683990
+78,2340,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-652888
+78,2340,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,False,v37-988555
+79,2370,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,True,v37-814441
+79,2370,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,False,v37-745971
+79,2370,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,True,v37-820975
+79,2370,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-684173
+79,2370,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-653071
+79,2370,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,False,v37-988738
+80,2400,8,riverbend,epoch-8-riverbend-stratum,route council,cedar-civic observatories,dry crossing stewards,True,False,v37-812976
+80,2400,8,roofward,epoch-8-roofward-stratum,memory house,glass-civic observatories,herb preservation stewards,True,True,v37-744506
+80,2400,8,archive,epoch-8-archive-stratum,repair kinship,inkstone-civic observatories,signal memory stewards,True,False,v37-819510
+80,2400,8,signal,epoch-8-signal-stratum,route council,copper-civic observatories,path visibility stewards,True,False,v37-682708
+80,2400,8,orchard,epoch-8-orchard-stratum,memory house,clay-civic observatories,dry seed continuity stewards,True,False,v37-651606
+80,2400,8,repair_ring,epoch-8-repair_ring-stratum,repair kinship,bronze-civic observatories,safe repair space stewards,True,True,v37-987273

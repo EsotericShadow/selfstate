@@ -1,0 +1,481 @@
+generation,year,settlement_id,dialect_id,lexeme,meaning,grammatical_shift,loan_source,usage_count,inherited_lexeme,drift_rate,public_translation
+1,30,riverbend,riverbend-dialect-1,fay-keth-1,dry crossing / plank-listening,ownership suffix,roofward,24,False,0.016,fay-keth-1: ask before crossing dry crossing
+1,30,roofward,roofward-dialect-1,milo-ivo-1,herb preservation / sun-ledger,ownership suffix,archive,27,False,0.02,milo-ivo-1: ask before crossing herb preservation
+1,30,archive,archive-dialect-1,juno-pax-1,signal memory / spool-naming,ownership suffix,signal,30,False,0.024,juno-pax-1: ask before crossing signal memory
+1,30,signal,signal-dialect-1,saan-ari-1,path visibility / lantern-turning,ownership suffix,orchard,33,False,0.028,saan-ari-1: ask before crossing path visibility
+1,30,orchard,orchard-dialect-1,voro-fay-1,dry seed continuity / satchel-vow,ownership suffix,repair_ring,36,False,0.032,voro-fay-1: ask before crossing dry seed continuity
+1,30,repair_ring,repair_ring-dialect-1,lum-milo-1,safe repair space / spark-distance,ownership suffix,riverbend,39,False,0.036,lum-milo-1: ask before crossing safe repair space
+2,60,riverbend,riverbend-dialect-1,milo-ari-1,dry crossing / plank-listening,ownership suffix,roofward,28,False,0.02,milo-ari-1: ask before crossing dry crossing
+2,60,roofward,roofward-dialect-1,juno-fay-1,herb preservation / sun-ledger,ownership suffix,archive,31,False,0.024,juno-fay-1: ask before crossing herb preservation
+2,60,archive,archive-dialect-1,saan-milo-1,signal memory / spool-naming,ownership suffix,signal,34,False,0.028,saan-milo-1: ask before crossing signal memory
+2,60,signal,signal-dialect-1,voro-juno-1,path visibility / lantern-turning,ownership suffix,orchard,37,False,0.032,voro-juno-1: ask before crossing path visibility
+2,60,orchard,orchard-dialect-1,lum-saan-1,dry seed continuity / satchel-vow,ownership suffix,repair_ring,40,False,0.036,lum-saan-1: ask before crossing dry seed continuity
+2,60,repair_ring,repair_ring-dialect-1,ther-voro-1,safe repair space / spark-distance,ownership suffix,riverbend,43,False,0.04,ther-voro-1: ask before crossing safe repair space
+3,90,riverbend,riverbend-dialect-1,juno-juno-1,dry crossing / plank-listening,route tense,roofward,32,True,0.024,juno-juno-1: ask before crossing dry crossing
+3,90,roofward,roofward-dialect-1,saan-saan-1,herb preservation / sun-ledger,route tense,archive,35,True,0.028,saan-saan-1: ask before crossing herb preservation
+3,90,archive,archive-dialect-1,voro-voro-1,signal memory / spool-naming,route tense,signal,38,True,0.032,voro-voro-1: ask before crossing signal memory
+3,90,signal,signal-dialect-1,lum-lum-1,path visibility / lantern-turning,route tense,orchard,41,True,0.036,lum-lum-1: ask before crossing path visibility
+3,90,orchard,orchard-dialect-1,ther-ther-1,dry seed continuity / satchel-vow,route tense,repair_ring,44,True,0.04,ther-ther-1: ask before crossing dry seed continuity
+3,90,repair_ring,repair_ring-dialect-1,nia-nia-1,safe repair space / spark-distance,route tense,riverbend,47,True,0.012,nia-nia-1: ask before crossing safe repair space
+4,120,riverbend,riverbend-dialect-1,saan-lum-1,dry crossing / plank-listening,ownership suffix,roofward,36,True,0.028,saan-lum-1: ask before crossing dry crossing
+4,120,roofward,roofward-dialect-1,voro-ther-1,herb preservation / sun-ledger,ownership suffix,archive,39,True,0.032,voro-ther-1: ask before crossing herb preservation
+4,120,archive,archive-dialect-1,lum-nia-1,signal memory / spool-naming,ownership suffix,signal,42,True,0.036,lum-nia-1: ask before crossing signal memory
+4,120,signal,signal-dialect-1,ther-keth-1,path visibility / lantern-turning,ownership suffix,orchard,45,True,0.04,ther-keth-1: ask before crossing path visibility
+4,120,orchard,orchard-dialect-1,nia-ivo-1,dry seed continuity / satchel-vow,ownership suffix,repair_ring,48,True,0.012,nia-ivo-1: ask before crossing dry seed continuity
+4,120,repair_ring,repair_ring-dialect-1,keth-pax-1,safe repair space / spark-distance,ownership suffix,riverbend,51,True,0.016,keth-pax-1: ask before crossing safe repair space
+5,150,riverbend,riverbend-dialect-1,voro-keth-1,dry crossing / plank-listening,agent-object respect marker,roofward,40,True,0.032,voro-keth-1: ask before crossing dry crossing
+5,150,roofward,roofward-dialect-1,lum-ivo-1,herb preservation / sun-ledger,agent-object respect marker,archive,43,True,0.036,lum-ivo-1: ask before crossing herb preservation
+5,150,archive,archive-dialect-1,ther-pax-1,signal memory / spool-naming,agent-object respect marker,signal,46,True,0.04,ther-pax-1: ask before crossing signal memory
+5,150,signal,signal-dialect-1,nia-ari-1,path visibility / lantern-turning,agent-object respect marker,orchard,49,True,0.012,nia-ari-1: ask before crossing path visibility
+5,150,orchard,orchard-dialect-1,keth-fay-1,dry seed continuity / satchel-vow,agent-object respect marker,repair_ring,52,True,0.016,keth-fay-1: ask before crossing dry seed continuity
+5,150,repair_ring,repair_ring-dialect-1,ivo-milo-1,safe repair space / spark-distance,agent-object respect marker,riverbend,55,True,0.02,ivo-milo-1: ask before crossing safe repair space
+6,180,riverbend,riverbend-dialect-1,lum-ari-1,dry crossing / plank-listening,route tense,roofward,44,True,0.036,lum-ari-1: ask before crossing dry crossing
+6,180,roofward,roofward-dialect-1,ther-fay-1,herb preservation / sun-ledger,route tense,archive,47,True,0.04,ther-fay-1: ask before crossing herb preservation
+6,180,archive,archive-dialect-1,nia-milo-1,signal memory / spool-naming,route tense,signal,50,True,0.012,nia-milo-1: ask before crossing signal memory
+6,180,signal,signal-dialect-1,keth-juno-1,path visibility / lantern-turning,route tense,orchard,53,True,0.016,keth-juno-1: ask before crossing path visibility
+6,180,orchard,orchard-dialect-1,ivo-saan-1,dry seed continuity / satchel-vow,route tense,repair_ring,56,True,0.02,ivo-saan-1: ask before crossing dry seed continuity
+6,180,repair_ring,repair_ring-dialect-1,pax-voro-1,safe repair space / spark-distance,route tense,riverbend,59,True,0.024,pax-voro-1: ask before crossing safe repair space
+7,210,riverbend,riverbend-dialect-1,ther-juno-1,dry crossing / plank-listening,ownership suffix,roofward,48,True,0.04,ther-juno-1: ask before crossing dry crossing
+7,210,roofward,roofward-dialect-1,nia-saan-1,herb preservation / sun-ledger,ownership suffix,archive,51,True,0.012,nia-saan-1: ask before crossing herb preservation
+7,210,archive,archive-dialect-1,keth-voro-1,signal memory / spool-naming,ownership suffix,signal,54,True,0.016,keth-voro-1: ask before crossing signal memory
+7,210,signal,signal-dialect-1,ivo-lum-1,path visibility / lantern-turning,ownership suffix,orchard,57,True,0.02,ivo-lum-1: ask before crossing path visibility
+7,210,orchard,orchard-dialect-1,pax-ther-1,dry seed continuity / satchel-vow,ownership suffix,repair_ring,60,True,0.024,pax-ther-1: ask before crossing dry seed continuity
+7,210,repair_ring,repair_ring-dialect-1,ari-nia-1,safe repair space / spark-distance,ownership suffix,riverbend,63,True,0.028,ari-nia-1: ask before crossing safe repair space
+8,240,riverbend,riverbend-dialect-1,nia-lum-1,dry crossing / plank-listening,ownership suffix,roofward,52,True,0.012,nia-lum-1: ask before crossing dry crossing
+8,240,roofward,roofward-dialect-1,keth-ther-1,herb preservation / sun-ledger,ownership suffix,archive,55,True,0.016,keth-ther-1: ask before crossing herb preservation
+8,240,archive,archive-dialect-1,ivo-nia-1,signal memory / spool-naming,ownership suffix,signal,58,True,0.02,ivo-nia-1: ask before crossing signal memory
+8,240,signal,signal-dialect-1,pax-keth-1,path visibility / lantern-turning,ownership suffix,orchard,61,True,0.024,pax-keth-1: ask before crossing path visibility
+8,240,orchard,orchard-dialect-1,ari-ivo-1,dry seed continuity / satchel-vow,ownership suffix,repair_ring,64,True,0.028,ari-ivo-1: ask before crossing dry seed continuity
+8,240,repair_ring,repair_ring-dialect-1,fay-pax-1,safe repair space / spark-distance,ownership suffix,riverbend,67,True,0.032,fay-pax-1: ask before crossing safe repair space
+9,270,riverbend,riverbend-dialect-1,keth-keth-1,dry crossing / plank-listening,route tense,roofward,56,True,0.016,keth-keth-1: ask before crossing dry crossing
+9,270,roofward,roofward-dialect-1,ivo-ivo-1,herb preservation / sun-ledger,route tense,archive,59,True,0.02,ivo-ivo-1: ask before crossing herb preservation
+9,270,archive,archive-dialect-1,pax-pax-1,signal memory / spool-naming,route tense,signal,62,True,0.024,pax-pax-1: ask before crossing signal memory
+9,270,signal,signal-dialect-1,ari-ari-1,path visibility / lantern-turning,route tense,orchard,65,True,0.028,ari-ari-1: ask before crossing path visibility
+9,270,orchard,orchard-dialect-1,fay-fay-1,dry seed continuity / satchel-vow,route tense,repair_ring,68,True,0.032,fay-fay-1: ask before crossing dry seed continuity
+9,270,repair_ring,repair_ring-dialect-1,milo-milo-1,safe repair space / spark-distance,route tense,riverbend,71,True,0.036,milo-milo-1: ask before crossing safe repair space
+10,300,riverbend,riverbend-dialect-1,ivo-ari-1,dry crossing / plank-listening,agent-object respect marker,roofward,60,True,0.02,ivo-ari-1: ask before crossing dry crossing
+10,300,roofward,roofward-dialect-1,pax-fay-1,herb preservation / sun-ledger,agent-object respect marker,archive,63,True,0.024,pax-fay-1: ask before crossing herb preservation
+10,300,archive,archive-dialect-1,ari-milo-1,signal memory / spool-naming,agent-object respect marker,signal,66,True,0.028,ari-milo-1: ask before crossing signal memory
+10,300,signal,signal-dialect-1,fay-juno-1,path visibility / lantern-turning,agent-object respect marker,orchard,69,True,0.032,fay-juno-1: ask before crossing path visibility
+10,300,orchard,orchard-dialect-1,milo-saan-1,dry seed continuity / satchel-vow,agent-object respect marker,repair_ring,72,True,0.036,milo-saan-1: ask before crossing dry seed continuity
+10,300,repair_ring,repair_ring-dialect-1,juno-voro-1,safe repair space / spark-distance,agent-object respect marker,riverbend,75,True,0.04,juno-voro-1: ask before crossing safe repair space
+11,330,riverbend,riverbend-dialect-2,pax-juno-2,dry crossing / plank-listening,ownership suffix,archive,64,True,0.024,pax-juno-2: ask before crossing dry crossing
+11,330,roofward,roofward-dialect-2,ari-saan-2,herb preservation / sun-ledger,ownership suffix,signal,67,True,0.028,ari-saan-2: ask before crossing herb preservation
+11,330,archive,archive-dialect-2,fay-voro-2,signal memory / spool-naming,ownership suffix,orchard,70,True,0.032,fay-voro-2: ask before crossing signal memory
+11,330,signal,signal-dialect-2,milo-lum-2,path visibility / lantern-turning,ownership suffix,repair_ring,73,True,0.036,milo-lum-2: ask before crossing path visibility
+11,330,orchard,orchard-dialect-2,juno-ther-2,dry seed continuity / satchel-vow,ownership suffix,riverbend,76,True,0.04,juno-ther-2: ask before crossing dry seed continuity
+11,330,repair_ring,repair_ring-dialect-2,saan-nia-2,safe repair space / spark-distance,ownership suffix,roofward,79,True,0.012,saan-nia-2: ask before crossing safe repair space
+12,360,riverbend,riverbend-dialect-2,ari-lum-2,dry crossing / plank-listening,route tense,archive,68,True,0.028,ari-lum-2: ask before crossing dry crossing
+12,360,roofward,roofward-dialect-2,fay-ther-2,herb preservation / sun-ledger,route tense,signal,71,True,0.032,fay-ther-2: ask before crossing herb preservation
+12,360,archive,archive-dialect-2,milo-nia-2,signal memory / spool-naming,route tense,orchard,74,True,0.036,milo-nia-2: ask before crossing signal memory
+12,360,signal,signal-dialect-2,juno-keth-2,path visibility / lantern-turning,route tense,repair_ring,77,True,0.04,juno-keth-2: ask before crossing path visibility
+12,360,orchard,orchard-dialect-2,saan-ivo-2,dry seed continuity / satchel-vow,route tense,riverbend,80,True,0.012,saan-ivo-2: ask before crossing dry seed continuity
+12,360,repair_ring,repair_ring-dialect-2,voro-pax-2,safe repair space / spark-distance,route tense,roofward,83,True,0.016,voro-pax-2: ask before crossing safe repair space
+13,390,riverbend,riverbend-dialect-2,fay-keth-2,dry crossing / plank-listening,ownership suffix,archive,72,True,0.032,fay-keth-2: ask before crossing dry crossing
+13,390,roofward,roofward-dialect-2,milo-ivo-2,herb preservation / sun-ledger,ownership suffix,signal,75,True,0.036,milo-ivo-2: ask before crossing herb preservation
+13,390,archive,archive-dialect-2,juno-pax-2,signal memory / spool-naming,ownership suffix,orchard,78,True,0.04,juno-pax-2: ask before crossing signal memory
+13,390,signal,signal-dialect-2,saan-ari-2,path visibility / lantern-turning,ownership suffix,repair_ring,81,True,0.012,saan-ari-2: ask before crossing path visibility
+13,390,orchard,orchard-dialect-2,voro-fay-2,dry seed continuity / satchel-vow,ownership suffix,riverbend,84,True,0.016,voro-fay-2: ask before crossing dry seed continuity
+13,390,repair_ring,repair_ring-dialect-2,lum-milo-2,safe repair space / spark-distance,ownership suffix,roofward,87,True,0.02,lum-milo-2: ask before crossing safe repair space
+14,420,riverbend,riverbend-dialect-2,milo-ari-2,dry crossing / plank-listening,ownership suffix,archive,76,True,0.036,milo-ari-2: ask before crossing dry crossing
+14,420,roofward,roofward-dialect-2,juno-fay-2,herb preservation / sun-ledger,ownership suffix,signal,79,True,0.04,juno-fay-2: ask before crossing herb preservation
+14,420,archive,archive-dialect-2,saan-milo-2,signal memory / spool-naming,ownership suffix,orchard,82,True,0.012,saan-milo-2: ask before crossing signal memory
+14,420,signal,signal-dialect-2,voro-juno-2,path visibility / lantern-turning,ownership suffix,repair_ring,85,True,0.016,voro-juno-2: ask before crossing path visibility
+14,420,orchard,orchard-dialect-2,lum-saan-2,dry seed continuity / satchel-vow,ownership suffix,riverbend,88,True,0.02,lum-saan-2: ask before crossing dry seed continuity
+14,420,repair_ring,repair_ring-dialect-2,ther-voro-2,safe repair space / spark-distance,ownership suffix,roofward,91,True,0.024,ther-voro-2: ask before crossing safe repair space
+15,450,riverbend,riverbend-dialect-2,juno-juno-2,dry crossing / plank-listening,agent-object respect marker,archive,80,True,0.04,juno-juno-2: ask before crossing dry crossing
+15,450,roofward,roofward-dialect-2,saan-saan-2,herb preservation / sun-ledger,agent-object respect marker,signal,83,True,0.012,saan-saan-2: ask before crossing herb preservation
+15,450,archive,archive-dialect-2,voro-voro-2,signal memory / spool-naming,agent-object respect marker,orchard,86,True,0.016,voro-voro-2: ask before crossing signal memory
+15,450,signal,signal-dialect-2,lum-lum-2,path visibility / lantern-turning,agent-object respect marker,repair_ring,89,True,0.02,lum-lum-2: ask before crossing path visibility
+15,450,orchard,orchard-dialect-2,ther-ther-2,dry seed continuity / satchel-vow,agent-object respect marker,riverbend,92,True,0.024,ther-ther-2: ask before crossing dry seed continuity
+15,450,repair_ring,repair_ring-dialect-2,nia-nia-2,safe repair space / spark-distance,agent-object respect marker,roofward,95,True,0.028,nia-nia-2: ask before crossing safe repair space
+16,480,riverbend,riverbend-dialect-2,saan-lum-2,dry crossing / plank-listening,ownership suffix,archive,84,True,0.012,saan-lum-2: ask before crossing dry crossing
+16,480,roofward,roofward-dialect-2,voro-ther-2,herb preservation / sun-ledger,ownership suffix,signal,87,True,0.016,voro-ther-2: ask before crossing herb preservation
+16,480,archive,archive-dialect-2,lum-nia-2,signal memory / spool-naming,ownership suffix,orchard,90,True,0.02,lum-nia-2: ask before crossing signal memory
+16,480,signal,signal-dialect-2,ther-keth-2,path visibility / lantern-turning,ownership suffix,repair_ring,93,True,0.024,ther-keth-2: ask before crossing path visibility
+16,480,orchard,orchard-dialect-2,nia-ivo-2,dry seed continuity / satchel-vow,ownership suffix,riverbend,96,True,0.028,nia-ivo-2: ask before crossing dry seed continuity
+16,480,repair_ring,repair_ring-dialect-2,keth-pax-2,safe repair space / spark-distance,ownership suffix,roofward,99,True,0.032,keth-pax-2: ask before crossing safe repair space
+17,510,riverbend,riverbend-dialect-2,voro-keth-2,dry crossing / plank-listening,ownership suffix,archive,88,True,0.016,voro-keth-2: ask before crossing dry crossing
+17,510,roofward,roofward-dialect-2,lum-ivo-2,herb preservation / sun-ledger,ownership suffix,signal,91,True,0.02,lum-ivo-2: ask before crossing herb preservation
+17,510,archive,archive-dialect-2,ther-pax-2,signal memory / spool-naming,ownership suffix,orchard,94,True,0.024,ther-pax-2: ask before crossing signal memory
+17,510,signal,signal-dialect-2,nia-ari-2,path visibility / lantern-turning,ownership suffix,repair_ring,97,True,0.028,nia-ari-2: ask before crossing path visibility
+17,510,orchard,orchard-dialect-2,keth-fay-2,dry seed continuity / satchel-vow,ownership suffix,riverbend,100,True,0.032,keth-fay-2: ask before crossing dry seed continuity
+17,510,repair_ring,repair_ring-dialect-2,ivo-milo-2,safe repair space / spark-distance,ownership suffix,roofward,103,True,0.036,ivo-milo-2: ask before crossing safe repair space
+18,540,riverbend,riverbend-dialect-2,lum-ari-2,dry crossing / plank-listening,route tense,archive,92,True,0.02,lum-ari-2: ask before crossing dry crossing
+18,540,roofward,roofward-dialect-2,ther-fay-2,herb preservation / sun-ledger,route tense,signal,95,True,0.024,ther-fay-2: ask before crossing herb preservation
+18,540,archive,archive-dialect-2,nia-milo-2,signal memory / spool-naming,route tense,orchard,98,True,0.028,nia-milo-2: ask before crossing signal memory
+18,540,signal,signal-dialect-2,keth-juno-2,path visibility / lantern-turning,route tense,repair_ring,101,True,0.032,keth-juno-2: ask before crossing path visibility
+18,540,orchard,orchard-dialect-2,ivo-saan-2,dry seed continuity / satchel-vow,route tense,riverbend,104,True,0.036,ivo-saan-2: ask before crossing dry seed continuity
+18,540,repair_ring,repair_ring-dialect-2,pax-voro-2,safe repair space / spark-distance,route tense,roofward,107,True,0.04,pax-voro-2: ask before crossing safe repair space
+19,570,riverbend,riverbend-dialect-2,ther-juno-2,dry crossing / plank-listening,ownership suffix,archive,96,True,0.024,ther-juno-2: ask before crossing dry crossing
+19,570,roofward,roofward-dialect-2,nia-saan-2,herb preservation / sun-ledger,ownership suffix,signal,99,True,0.028,nia-saan-2: ask before crossing herb preservation
+19,570,archive,archive-dialect-2,keth-voro-2,signal memory / spool-naming,ownership suffix,orchard,102,True,0.032,keth-voro-2: ask before crossing signal memory
+19,570,signal,signal-dialect-2,ivo-lum-2,path visibility / lantern-turning,ownership suffix,repair_ring,105,True,0.036,ivo-lum-2: ask before crossing path visibility
+19,570,orchard,orchard-dialect-2,pax-ther-2,dry seed continuity / satchel-vow,ownership suffix,riverbend,108,True,0.04,pax-ther-2: ask before crossing dry seed continuity
+19,570,repair_ring,repair_ring-dialect-2,ari-nia-2,safe repair space / spark-distance,ownership suffix,roofward,111,True,0.012,ari-nia-2: ask before crossing safe repair space
+20,600,riverbend,riverbend-dialect-2,nia-lum-2,dry crossing / plank-listening,agent-object respect marker,archive,100,True,0.028,nia-lum-2: ask before crossing dry crossing
+20,600,roofward,roofward-dialect-2,keth-ther-2,herb preservation / sun-ledger,agent-object respect marker,signal,103,True,0.032,keth-ther-2: ask before crossing herb preservation
+20,600,archive,archive-dialect-2,ivo-nia-2,signal memory / spool-naming,agent-object respect marker,orchard,106,True,0.036,ivo-nia-2: ask before crossing signal memory
+20,600,signal,signal-dialect-2,pax-keth-2,path visibility / lantern-turning,agent-object respect marker,repair_ring,109,True,0.04,pax-keth-2: ask before crossing path visibility
+20,600,orchard,orchard-dialect-2,ari-ivo-2,dry seed continuity / satchel-vow,agent-object respect marker,riverbend,112,True,0.012,ari-ivo-2: ask before crossing dry seed continuity
+20,600,repair_ring,repair_ring-dialect-2,fay-pax-2,safe repair space / spark-distance,agent-object respect marker,roofward,115,True,0.016,fay-pax-2: ask before crossing safe repair space
+21,630,riverbend,riverbend-dialect-3,keth-keth-3,dry crossing / plank-listening,route tense,signal,104,True,0.032,keth-keth-3: ask before crossing dry crossing
+21,630,roofward,roofward-dialect-3,ivo-ivo-3,herb preservation / sun-ledger,route tense,orchard,107,True,0.036,ivo-ivo-3: ask before crossing herb preservation
+21,630,archive,archive-dialect-3,pax-pax-3,signal memory / spool-naming,route tense,repair_ring,110,True,0.04,pax-pax-3: ask before crossing signal memory
+21,630,signal,signal-dialect-3,ari-ari-3,path visibility / lantern-turning,route tense,riverbend,113,True,0.012,ari-ari-3: ask before crossing path visibility
+21,630,orchard,orchard-dialect-3,fay-fay-3,dry seed continuity / satchel-vow,route tense,roofward,116,True,0.016,fay-fay-3: ask before crossing dry seed continuity
+21,630,repair_ring,repair_ring-dialect-3,milo-milo-3,safe repair space / spark-distance,route tense,archive,119,True,0.02,milo-milo-3: ask before crossing safe repair space
+22,660,riverbend,riverbend-dialect-3,ivo-ari-3,dry crossing / plank-listening,ownership suffix,signal,108,True,0.036,ivo-ari-3: ask before crossing dry crossing
+22,660,roofward,roofward-dialect-3,pax-fay-3,herb preservation / sun-ledger,ownership suffix,orchard,111,True,0.04,pax-fay-3: ask before crossing herb preservation
+22,660,archive,archive-dialect-3,ari-milo-3,signal memory / spool-naming,ownership suffix,repair_ring,114,True,0.012,ari-milo-3: ask before crossing signal memory
+22,660,signal,signal-dialect-3,fay-juno-3,path visibility / lantern-turning,ownership suffix,riverbend,117,True,0.016,fay-juno-3: ask before crossing path visibility
+22,660,orchard,orchard-dialect-3,milo-saan-3,dry seed continuity / satchel-vow,ownership suffix,roofward,120,True,0.02,milo-saan-3: ask before crossing dry seed continuity
+22,660,repair_ring,repair_ring-dialect-3,juno-voro-3,safe repair space / spark-distance,ownership suffix,archive,123,True,0.024,juno-voro-3: ask before crossing safe repair space
+23,690,riverbend,riverbend-dialect-3,pax-juno-3,dry crossing / plank-listening,ownership suffix,signal,112,True,0.04,pax-juno-3: ask before crossing dry crossing
+23,690,roofward,roofward-dialect-3,ari-saan-3,herb preservation / sun-ledger,ownership suffix,orchard,115,True,0.012,ari-saan-3: ask before crossing herb preservation
+23,690,archive,archive-dialect-3,fay-voro-3,signal memory / spool-naming,ownership suffix,repair_ring,118,True,0.016,fay-voro-3: ask before crossing signal memory
+23,690,signal,signal-dialect-3,milo-lum-3,path visibility / lantern-turning,ownership suffix,riverbend,121,True,0.02,milo-lum-3: ask before crossing path visibility
+23,690,orchard,orchard-dialect-3,juno-ther-3,dry seed continuity / satchel-vow,ownership suffix,roofward,124,True,0.024,juno-ther-3: ask before crossing dry seed continuity
+23,690,repair_ring,repair_ring-dialect-3,saan-nia-3,safe repair space / spark-distance,ownership suffix,archive,127,True,0.028,saan-nia-3: ask before crossing safe repair space
+24,720,riverbend,riverbend-dialect-3,ari-lum-3,dry crossing / plank-listening,route tense,signal,116,True,0.012,ari-lum-3: ask before crossing dry crossing
+24,720,roofward,roofward-dialect-3,fay-ther-3,herb preservation / sun-ledger,route tense,orchard,119,True,0.016,fay-ther-3: ask before crossing herb preservation
+24,720,archive,archive-dialect-3,milo-nia-3,signal memory / spool-naming,route tense,repair_ring,122,True,0.02,milo-nia-3: ask before crossing signal memory
+24,720,signal,signal-dialect-3,juno-keth-3,path visibility / lantern-turning,route tense,riverbend,125,True,0.024,juno-keth-3: ask before crossing path visibility
+24,720,orchard,orchard-dialect-3,saan-ivo-3,dry seed continuity / satchel-vow,route tense,roofward,128,True,0.028,saan-ivo-3: ask before crossing dry seed continuity
+24,720,repair_ring,repair_ring-dialect-3,voro-pax-3,safe repair space / spark-distance,route tense,archive,131,True,0.032,voro-pax-3: ask before crossing safe repair space
+25,750,riverbend,riverbend-dialect-3,fay-keth-3,dry crossing / plank-listening,agent-object respect marker,signal,120,True,0.016,fay-keth-3: ask before crossing dry crossing
+25,750,roofward,roofward-dialect-3,milo-ivo-3,herb preservation / sun-ledger,agent-object respect marker,orchard,123,True,0.02,milo-ivo-3: ask before crossing herb preservation
+25,750,archive,archive-dialect-3,juno-pax-3,signal memory / spool-naming,agent-object respect marker,repair_ring,126,True,0.024,juno-pax-3: ask before crossing signal memory
+25,750,signal,signal-dialect-3,saan-ari-3,path visibility / lantern-turning,agent-object respect marker,riverbend,129,True,0.028,saan-ari-3: ask before crossing path visibility
+25,750,orchard,orchard-dialect-3,voro-fay-3,dry seed continuity / satchel-vow,agent-object respect marker,roofward,132,True,0.032,voro-fay-3: ask before crossing dry seed continuity
+25,750,repair_ring,repair_ring-dialect-3,lum-milo-3,safe repair space / spark-distance,agent-object respect marker,archive,135,True,0.036,lum-milo-3: ask before crossing safe repair space
+26,780,riverbend,riverbend-dialect-3,milo-ari-3,dry crossing / plank-listening,ownership suffix,signal,124,True,0.02,milo-ari-3: ask before crossing dry crossing
+26,780,roofward,roofward-dialect-3,juno-fay-3,herb preservation / sun-ledger,ownership suffix,orchard,127,True,0.024,juno-fay-3: ask before crossing herb preservation
+26,780,archive,archive-dialect-3,saan-milo-3,signal memory / spool-naming,ownership suffix,repair_ring,130,True,0.028,saan-milo-3: ask before crossing signal memory
+26,780,signal,signal-dialect-3,voro-juno-3,path visibility / lantern-turning,ownership suffix,riverbend,133,True,0.032,voro-juno-3: ask before crossing path visibility
+26,780,orchard,orchard-dialect-3,lum-saan-3,dry seed continuity / satchel-vow,ownership suffix,roofward,136,True,0.036,lum-saan-3: ask before crossing dry seed continuity
+26,780,repair_ring,repair_ring-dialect-3,ther-voro-3,safe repair space / spark-distance,ownership suffix,archive,139,True,0.04,ther-voro-3: ask before crossing safe repair space
+27,810,riverbend,riverbend-dialect-3,juno-juno-3,dry crossing / plank-listening,route tense,signal,128,True,0.024,juno-juno-3: ask before crossing dry crossing
+27,810,roofward,roofward-dialect-3,saan-saan-3,herb preservation / sun-ledger,route tense,orchard,131,True,0.028,saan-saan-3: ask before crossing herb preservation
+27,810,archive,archive-dialect-3,voro-voro-3,signal memory / spool-naming,route tense,repair_ring,134,True,0.032,voro-voro-3: ask before crossing signal memory
+27,810,signal,signal-dialect-3,lum-lum-3,path visibility / lantern-turning,route tense,riverbend,137,True,0.036,lum-lum-3: ask before crossing path visibility
+27,810,orchard,orchard-dialect-3,ther-ther-3,dry seed continuity / satchel-vow,route tense,roofward,140,True,0.04,ther-ther-3: ask before crossing dry seed continuity
+27,810,repair_ring,repair_ring-dialect-3,nia-nia-3,safe repair space / spark-distance,route tense,archive,143,True,0.012,nia-nia-3: ask before crossing safe repair space
+28,840,riverbend,riverbend-dialect-3,saan-lum-3,dry crossing / plank-listening,ownership suffix,signal,132,True,0.028,saan-lum-3: ask before crossing dry crossing
+28,840,roofward,roofward-dialect-3,voro-ther-3,herb preservation / sun-ledger,ownership suffix,orchard,135,True,0.032,voro-ther-3: ask before crossing herb preservation
+28,840,archive,archive-dialect-3,lum-nia-3,signal memory / spool-naming,ownership suffix,repair_ring,138,True,0.036,lum-nia-3: ask before crossing signal memory
+28,840,signal,signal-dialect-3,ther-keth-3,path visibility / lantern-turning,ownership suffix,riverbend,141,True,0.04,ther-keth-3: ask before crossing path visibility
+28,840,orchard,orchard-dialect-3,nia-ivo-3,dry seed continuity / satchel-vow,ownership suffix,roofward,144,True,0.012,nia-ivo-3: ask before crossing dry seed continuity
+28,840,repair_ring,repair_ring-dialect-3,keth-pax-3,safe repair space / spark-distance,ownership suffix,archive,147,True,0.016,keth-pax-3: ask before crossing safe repair space
+29,870,riverbend,riverbend-dialect-3,voro-keth-3,dry crossing / plank-listening,ownership suffix,signal,136,True,0.032,voro-keth-3: ask before crossing dry crossing
+29,870,roofward,roofward-dialect-3,lum-ivo-3,herb preservation / sun-ledger,ownership suffix,orchard,139,True,0.036,lum-ivo-3: ask before crossing herb preservation
+29,870,archive,archive-dialect-3,ther-pax-3,signal memory / spool-naming,ownership suffix,repair_ring,142,True,0.04,ther-pax-3: ask before crossing signal memory
+29,870,signal,signal-dialect-3,nia-ari-3,path visibility / lantern-turning,ownership suffix,riverbend,145,True,0.012,nia-ari-3: ask before crossing path visibility
+29,870,orchard,orchard-dialect-3,keth-fay-3,dry seed continuity / satchel-vow,ownership suffix,roofward,148,True,0.016,keth-fay-3: ask before crossing dry seed continuity
+29,870,repair_ring,repair_ring-dialect-3,ivo-milo-3,safe repair space / spark-distance,ownership suffix,archive,151,True,0.02,ivo-milo-3: ask before crossing safe repair space
+30,900,riverbend,riverbend-dialect-3,lum-ari-3,dry crossing / plank-listening,agent-object respect marker,signal,140,True,0.036,lum-ari-3: ask before crossing dry crossing
+30,900,roofward,roofward-dialect-3,ther-fay-3,herb preservation / sun-ledger,agent-object respect marker,orchard,143,True,0.04,ther-fay-3: ask before crossing herb preservation
+30,900,archive,archive-dialect-3,nia-milo-3,signal memory / spool-naming,agent-object respect marker,repair_ring,146,True,0.012,nia-milo-3: ask before crossing signal memory
+30,900,signal,signal-dialect-3,keth-juno-3,path visibility / lantern-turning,agent-object respect marker,riverbend,149,True,0.016,keth-juno-3: ask before crossing path visibility
+30,900,orchard,orchard-dialect-3,ivo-saan-3,dry seed continuity / satchel-vow,agent-object respect marker,roofward,152,True,0.02,ivo-saan-3: ask before crossing dry seed continuity
+30,900,repair_ring,repair_ring-dialect-3,pax-voro-3,safe repair space / spark-distance,agent-object respect marker,archive,155,True,0.024,pax-voro-3: ask before crossing safe repair space
+31,930,riverbend,riverbend-dialect-4,ther-juno-4,dry crossing / plank-listening,ownership suffix,orchard,144,True,0.04,ther-juno-4: ask before crossing dry crossing
+31,930,roofward,roofward-dialect-4,nia-saan-4,herb preservation / sun-ledger,ownership suffix,repair_ring,147,True,0.012,nia-saan-4: ask before crossing herb preservation
+31,930,archive,archive-dialect-4,keth-voro-4,signal memory / spool-naming,ownership suffix,riverbend,150,True,0.016,keth-voro-4: ask before crossing signal memory
+31,930,signal,signal-dialect-4,ivo-lum-4,path visibility / lantern-turning,ownership suffix,roofward,153,True,0.02,ivo-lum-4: ask before crossing path visibility
+31,930,orchard,orchard-dialect-4,pax-ther-4,dry seed continuity / satchel-vow,ownership suffix,archive,156,True,0.024,pax-ther-4: ask before crossing dry seed continuity
+31,930,repair_ring,repair_ring-dialect-4,ari-nia-4,safe repair space / spark-distance,ownership suffix,signal,159,True,0.028,ari-nia-4: ask before crossing safe repair space
+32,960,riverbend,riverbend-dialect-4,nia-lum-4,dry crossing / plank-listening,ownership suffix,orchard,148,True,0.012,nia-lum-4: ask before crossing dry crossing
+32,960,roofward,roofward-dialect-4,keth-ther-4,herb preservation / sun-ledger,ownership suffix,repair_ring,151,True,0.016,keth-ther-4: ask before crossing herb preservation
+32,960,archive,archive-dialect-4,ivo-nia-4,signal memory / spool-naming,ownership suffix,riverbend,154,True,0.02,ivo-nia-4: ask before crossing signal memory
+32,960,signal,signal-dialect-4,pax-keth-4,path visibility / lantern-turning,ownership suffix,roofward,157,True,0.024,pax-keth-4: ask before crossing path visibility
+32,960,orchard,orchard-dialect-4,ari-ivo-4,dry seed continuity / satchel-vow,ownership suffix,archive,160,True,0.028,ari-ivo-4: ask before crossing dry seed continuity
+32,960,repair_ring,repair_ring-dialect-4,fay-pax-4,safe repair space / spark-distance,ownership suffix,signal,163,True,0.032,fay-pax-4: ask before crossing safe repair space
+33,990,riverbend,riverbend-dialect-4,keth-keth-4,dry crossing / plank-listening,route tense,orchard,152,True,0.016,keth-keth-4: ask before crossing dry crossing
+33,990,roofward,roofward-dialect-4,ivo-ivo-4,herb preservation / sun-ledger,route tense,repair_ring,155,True,0.02,ivo-ivo-4: ask before crossing herb preservation
+33,990,archive,archive-dialect-4,pax-pax-4,signal memory / spool-naming,route tense,riverbend,158,True,0.024,pax-pax-4: ask before crossing signal memory
+33,990,signal,signal-dialect-4,ari-ari-4,path visibility / lantern-turning,route tense,roofward,161,True,0.028,ari-ari-4: ask before crossing path visibility
+33,990,orchard,orchard-dialect-4,fay-fay-4,dry seed continuity / satchel-vow,route tense,archive,164,True,0.032,fay-fay-4: ask before crossing dry seed continuity
+33,990,repair_ring,repair_ring-dialect-4,milo-milo-4,safe repair space / spark-distance,route tense,signal,167,True,0.036,milo-milo-4: ask before crossing safe repair space
+34,1020,riverbend,riverbend-dialect-4,ivo-ari-4,dry crossing / plank-listening,ownership suffix,orchard,156,True,0.02,ivo-ari-4: ask before crossing dry crossing
+34,1020,roofward,roofward-dialect-4,pax-fay-4,herb preservation / sun-ledger,ownership suffix,repair_ring,159,True,0.024,pax-fay-4: ask before crossing herb preservation
+34,1020,archive,archive-dialect-4,ari-milo-4,signal memory / spool-naming,ownership suffix,riverbend,162,True,0.028,ari-milo-4: ask before crossing signal memory
+34,1020,signal,signal-dialect-4,fay-juno-4,path visibility / lantern-turning,ownership suffix,roofward,165,True,0.032,fay-juno-4: ask before crossing path visibility
+34,1020,orchard,orchard-dialect-4,milo-saan-4,dry seed continuity / satchel-vow,ownership suffix,archive,168,True,0.036,milo-saan-4: ask before crossing dry seed continuity
+34,1020,repair_ring,repair_ring-dialect-4,juno-voro-4,safe repair space / spark-distance,ownership suffix,signal,171,True,0.04,juno-voro-4: ask before crossing safe repair space
+35,1050,riverbend,riverbend-dialect-4,pax-juno-4,dry crossing / plank-listening,agent-object respect marker,orchard,160,True,0.024,pax-juno-4: ask before crossing dry crossing
+35,1050,roofward,roofward-dialect-4,ari-saan-4,herb preservation / sun-ledger,agent-object respect marker,repair_ring,163,True,0.028,ari-saan-4: ask before crossing herb preservation
+35,1050,archive,archive-dialect-4,fay-voro-4,signal memory / spool-naming,agent-object respect marker,riverbend,166,True,0.032,fay-voro-4: ask before crossing signal memory
+35,1050,signal,signal-dialect-4,milo-lum-4,path visibility / lantern-turning,agent-object respect marker,roofward,169,True,0.036,milo-lum-4: ask before crossing path visibility
+35,1050,orchard,orchard-dialect-4,juno-ther-4,dry seed continuity / satchel-vow,agent-object respect marker,archive,172,True,0.04,juno-ther-4: ask before crossing dry seed continuity
+35,1050,repair_ring,repair_ring-dialect-4,saan-nia-4,safe repair space / spark-distance,agent-object respect marker,signal,175,True,0.012,saan-nia-4: ask before crossing safe repair space
+36,1080,riverbend,riverbend-dialect-4,ari-lum-4,dry crossing / plank-listening,route tense,orchard,164,True,0.028,ari-lum-4: ask before crossing dry crossing
+36,1080,roofward,roofward-dialect-4,fay-ther-4,herb preservation / sun-ledger,route tense,repair_ring,167,True,0.032,fay-ther-4: ask before crossing herb preservation
+36,1080,archive,archive-dialect-4,milo-nia-4,signal memory / spool-naming,route tense,riverbend,170,True,0.036,milo-nia-4: ask before crossing signal memory
+36,1080,signal,signal-dialect-4,juno-keth-4,path visibility / lantern-turning,route tense,roofward,173,True,0.04,juno-keth-4: ask before crossing path visibility
+36,1080,orchard,orchard-dialect-4,saan-ivo-4,dry seed continuity / satchel-vow,route tense,archive,176,True,0.012,saan-ivo-4: ask before crossing dry seed continuity
+36,1080,repair_ring,repair_ring-dialect-4,voro-pax-4,safe repair space / spark-distance,route tense,signal,179,True,0.016,voro-pax-4: ask before crossing safe repair space
+37,1110,riverbend,riverbend-dialect-4,fay-keth-4,dry crossing / plank-listening,ownership suffix,orchard,168,True,0.032,fay-keth-4: ask before crossing dry crossing
+37,1110,roofward,roofward-dialect-4,milo-ivo-4,herb preservation / sun-ledger,ownership suffix,repair_ring,171,True,0.036,milo-ivo-4: ask before crossing herb preservation
+37,1110,archive,archive-dialect-4,juno-pax-4,signal memory / spool-naming,ownership suffix,riverbend,174,True,0.04,juno-pax-4: ask before crossing signal memory
+37,1110,signal,signal-dialect-4,saan-ari-4,path visibility / lantern-turning,ownership suffix,roofward,177,True,0.012,saan-ari-4: ask before crossing path visibility
+37,1110,orchard,orchard-dialect-4,voro-fay-4,dry seed continuity / satchel-vow,ownership suffix,archive,180,True,0.016,voro-fay-4: ask before crossing dry seed continuity
+37,1110,repair_ring,repair_ring-dialect-4,lum-milo-4,safe repair space / spark-distance,ownership suffix,signal,183,True,0.02,lum-milo-4: ask before crossing safe repair space
+38,1140,riverbend,riverbend-dialect-4,milo-ari-4,dry crossing / plank-listening,ownership suffix,orchard,172,True,0.036,milo-ari-4: ask before crossing dry crossing
+38,1140,roofward,roofward-dialect-4,juno-fay-4,herb preservation / sun-ledger,ownership suffix,repair_ring,175,True,0.04,juno-fay-4: ask before crossing herb preservation
+38,1140,archive,archive-dialect-4,saan-milo-4,signal memory / spool-naming,ownership suffix,riverbend,178,True,0.012,saan-milo-4: ask before crossing signal memory
+38,1140,signal,signal-dialect-4,voro-juno-4,path visibility / lantern-turning,ownership suffix,roofward,181,True,0.016,voro-juno-4: ask before crossing path visibility
+38,1140,orchard,orchard-dialect-4,lum-saan-4,dry seed continuity / satchel-vow,ownership suffix,archive,184,True,0.02,lum-saan-4: ask before crossing dry seed continuity
+38,1140,repair_ring,repair_ring-dialect-4,ther-voro-4,safe repair space / spark-distance,ownership suffix,signal,187,True,0.024,ther-voro-4: ask before crossing safe repair space
+39,1170,riverbend,riverbend-dialect-4,juno-juno-4,dry crossing / plank-listening,route tense,orchard,176,True,0.04,juno-juno-4: ask before crossing dry crossing
+39,1170,roofward,roofward-dialect-4,saan-saan-4,herb preservation / sun-ledger,route tense,repair_ring,179,True,0.012,saan-saan-4: ask before crossing herb preservation
+39,1170,archive,archive-dialect-4,voro-voro-4,signal memory / spool-naming,route tense,riverbend,182,True,0.016,voro-voro-4: ask before crossing signal memory
+39,1170,signal,signal-dialect-4,lum-lum-4,path visibility / lantern-turning,route tense,roofward,185,True,0.02,lum-lum-4: ask before crossing path visibility
+39,1170,orchard,orchard-dialect-4,ther-ther-4,dry seed continuity / satchel-vow,route tense,archive,188,True,0.024,ther-ther-4: ask before crossing dry seed continuity
+39,1170,repair_ring,repair_ring-dialect-4,nia-nia-4,safe repair space / spark-distance,route tense,signal,191,True,0.028,nia-nia-4: ask before crossing safe repair space
+40,1200,riverbend,riverbend-dialect-4,saan-lum-4,dry crossing / plank-listening,agent-object respect marker,orchard,180,True,0.012,saan-lum-4: ask before crossing dry crossing
+40,1200,roofward,roofward-dialect-4,voro-ther-4,herb preservation / sun-ledger,agent-object respect marker,repair_ring,183,True,0.016,voro-ther-4: ask before crossing herb preservation
+40,1200,archive,archive-dialect-4,lum-nia-4,signal memory / spool-naming,agent-object respect marker,riverbend,186,True,0.02,lum-nia-4: ask before crossing signal memory
+40,1200,signal,signal-dialect-4,ther-keth-4,path visibility / lantern-turning,agent-object respect marker,roofward,189,True,0.024,ther-keth-4: ask before crossing path visibility
+40,1200,orchard,orchard-dialect-4,nia-ivo-4,dry seed continuity / satchel-vow,agent-object respect marker,archive,192,True,0.028,nia-ivo-4: ask before crossing dry seed continuity
+40,1200,repair_ring,repair_ring-dialect-4,keth-pax-4,safe repair space / spark-distance,agent-object respect marker,signal,195,True,0.032,keth-pax-4: ask before crossing safe repair space
+41,1230,riverbend,riverbend-dialect-5,voro-keth-5,dry crossing / plank-listening,ownership suffix,repair_ring,184,True,0.016,voro-keth-5: ask before crossing dry crossing
+41,1230,roofward,roofward-dialect-5,lum-ivo-5,herb preservation / sun-ledger,ownership suffix,riverbend,187,True,0.02,lum-ivo-5: ask before crossing herb preservation
+41,1230,archive,archive-dialect-5,ther-pax-5,signal memory / spool-naming,ownership suffix,roofward,190,True,0.024,ther-pax-5: ask before crossing signal memory
+41,1230,signal,signal-dialect-5,nia-ari-5,path visibility / lantern-turning,ownership suffix,archive,193,True,0.028,nia-ari-5: ask before crossing path visibility
+41,1230,orchard,orchard-dialect-5,keth-fay-5,dry seed continuity / satchel-vow,ownership suffix,signal,196,True,0.032,keth-fay-5: ask before crossing dry seed continuity
+41,1230,repair_ring,repair_ring-dialect-5,ivo-milo-5,safe repair space / spark-distance,ownership suffix,orchard,199,True,0.036,ivo-milo-5: ask before crossing safe repair space
+42,1260,riverbend,riverbend-dialect-5,lum-ari-5,dry crossing / plank-listening,route tense,repair_ring,188,True,0.02,lum-ari-5: ask before crossing dry crossing
+42,1260,roofward,roofward-dialect-5,ther-fay-5,herb preservation / sun-ledger,route tense,riverbend,191,True,0.024,ther-fay-5: ask before crossing herb preservation
+42,1260,archive,archive-dialect-5,nia-milo-5,signal memory / spool-naming,route tense,roofward,194,True,0.028,nia-milo-5: ask before crossing signal memory
+42,1260,signal,signal-dialect-5,keth-juno-5,path visibility / lantern-turning,route tense,archive,197,True,0.032,keth-juno-5: ask before crossing path visibility
+42,1260,orchard,orchard-dialect-5,ivo-saan-5,dry seed continuity / satchel-vow,route tense,signal,200,True,0.036,ivo-saan-5: ask before crossing dry seed continuity
+42,1260,repair_ring,repair_ring-dialect-5,pax-voro-5,safe repair space / spark-distance,route tense,orchard,203,True,0.04,pax-voro-5: ask before crossing safe repair space
+43,1290,riverbend,riverbend-dialect-5,ther-juno-5,dry crossing / plank-listening,ownership suffix,repair_ring,192,True,0.024,ther-juno-5: ask before crossing dry crossing
+43,1290,roofward,roofward-dialect-5,nia-saan-5,herb preservation / sun-ledger,ownership suffix,riverbend,195,True,0.028,nia-saan-5: ask before crossing herb preservation
+43,1290,archive,archive-dialect-5,keth-voro-5,signal memory / spool-naming,ownership suffix,roofward,198,True,0.032,keth-voro-5: ask before crossing signal memory
+43,1290,signal,signal-dialect-5,ivo-lum-5,path visibility / lantern-turning,ownership suffix,archive,201,True,0.036,ivo-lum-5: ask before crossing path visibility
+43,1290,orchard,orchard-dialect-5,pax-ther-5,dry seed continuity / satchel-vow,ownership suffix,signal,204,True,0.04,pax-ther-5: ask before crossing dry seed continuity
+43,1290,repair_ring,repair_ring-dialect-5,ari-nia-5,safe repair space / spark-distance,ownership suffix,orchard,207,True,0.012,ari-nia-5: ask before crossing safe repair space
+44,1320,riverbend,riverbend-dialect-5,nia-lum-5,dry crossing / plank-listening,ownership suffix,repair_ring,196,True,0.028,nia-lum-5: ask before crossing dry crossing
+44,1320,roofward,roofward-dialect-5,keth-ther-5,herb preservation / sun-ledger,ownership suffix,riverbend,199,True,0.032,keth-ther-5: ask before crossing herb preservation
+44,1320,archive,archive-dialect-5,ivo-nia-5,signal memory / spool-naming,ownership suffix,roofward,202,True,0.036,ivo-nia-5: ask before crossing signal memory
+44,1320,signal,signal-dialect-5,pax-keth-5,path visibility / lantern-turning,ownership suffix,archive,205,True,0.04,pax-keth-5: ask before crossing path visibility
+44,1320,orchard,orchard-dialect-5,ari-ivo-5,dry seed continuity / satchel-vow,ownership suffix,signal,208,True,0.012,ari-ivo-5: ask before crossing dry seed continuity
+44,1320,repair_ring,repair_ring-dialect-5,fay-pax-5,safe repair space / spark-distance,ownership suffix,orchard,211,True,0.016,fay-pax-5: ask before crossing safe repair space
+45,1350,riverbend,riverbend-dialect-5,keth-keth-5,dry crossing / plank-listening,agent-object respect marker,repair_ring,200,True,0.032,keth-keth-5: ask before crossing dry crossing
+45,1350,roofward,roofward-dialect-5,ivo-ivo-5,herb preservation / sun-ledger,agent-object respect marker,riverbend,203,True,0.036,ivo-ivo-5: ask before crossing herb preservation
+45,1350,archive,archive-dialect-5,pax-pax-5,signal memory / spool-naming,agent-object respect marker,roofward,206,True,0.04,pax-pax-5: ask before crossing signal memory
+45,1350,signal,signal-dialect-5,ari-ari-5,path visibility / lantern-turning,agent-object respect marker,archive,209,True,0.012,ari-ari-5: ask before crossing path visibility
+45,1350,orchard,orchard-dialect-5,fay-fay-5,dry seed continuity / satchel-vow,agent-object respect marker,signal,212,True,0.016,fay-fay-5: ask before crossing dry seed continuity
+45,1350,repair_ring,repair_ring-dialect-5,milo-milo-5,safe repair space / spark-distance,agent-object respect marker,orchard,215,True,0.02,milo-milo-5: ask before crossing safe repair space
+46,1380,riverbend,riverbend-dialect-5,ivo-ari-5,dry crossing / plank-listening,ownership suffix,repair_ring,204,True,0.036,ivo-ari-5: ask before crossing dry crossing
+46,1380,roofward,roofward-dialect-5,pax-fay-5,herb preservation / sun-ledger,ownership suffix,riverbend,207,True,0.04,pax-fay-5: ask before crossing herb preservation
+46,1380,archive,archive-dialect-5,ari-milo-5,signal memory / spool-naming,ownership suffix,roofward,210,True,0.012,ari-milo-5: ask before crossing signal memory
+46,1380,signal,signal-dialect-5,fay-juno-5,path visibility / lantern-turning,ownership suffix,archive,213,True,0.016,fay-juno-5: ask before crossing path visibility
+46,1380,orchard,orchard-dialect-5,milo-saan-5,dry seed continuity / satchel-vow,ownership suffix,signal,216,True,0.02,milo-saan-5: ask before crossing dry seed continuity
+46,1380,repair_ring,repair_ring-dialect-5,juno-voro-5,safe repair space / spark-distance,ownership suffix,orchard,219,True,0.024,juno-voro-5: ask before crossing safe repair space
+47,1410,riverbend,riverbend-dialect-5,pax-juno-5,dry crossing / plank-listening,ownership suffix,repair_ring,208,True,0.04,pax-juno-5: ask before crossing dry crossing
+47,1410,roofward,roofward-dialect-5,ari-saan-5,herb preservation / sun-ledger,ownership suffix,riverbend,211,True,0.012,ari-saan-5: ask before crossing herb preservation
+47,1410,archive,archive-dialect-5,fay-voro-5,signal memory / spool-naming,ownership suffix,roofward,214,True,0.016,fay-voro-5: ask before crossing signal memory
+47,1410,signal,signal-dialect-5,milo-lum-5,path visibility / lantern-turning,ownership suffix,archive,217,True,0.02,milo-lum-5: ask before crossing path visibility
+47,1410,orchard,orchard-dialect-5,juno-ther-5,dry seed continuity / satchel-vow,ownership suffix,signal,220,True,0.024,juno-ther-5: ask before crossing dry seed continuity
+47,1410,repair_ring,repair_ring-dialect-5,saan-nia-5,safe repair space / spark-distance,ownership suffix,orchard,223,True,0.028,saan-nia-5: ask before crossing safe repair space
+48,1440,riverbend,riverbend-dialect-5,ari-lum-5,dry crossing / plank-listening,route tense,repair_ring,212,True,0.012,ari-lum-5: ask before crossing dry crossing
+48,1440,roofward,roofward-dialect-5,fay-ther-5,herb preservation / sun-ledger,route tense,riverbend,215,True,0.016,fay-ther-5: ask before crossing herb preservation
+48,1440,archive,archive-dialect-5,milo-nia-5,signal memory / spool-naming,route tense,roofward,218,True,0.02,milo-nia-5: ask before crossing signal memory
+48,1440,signal,signal-dialect-5,juno-keth-5,path visibility / lantern-turning,route tense,archive,221,True,0.024,juno-keth-5: ask before crossing path visibility
+48,1440,orchard,orchard-dialect-5,saan-ivo-5,dry seed continuity / satchel-vow,route tense,signal,224,True,0.028,saan-ivo-5: ask before crossing dry seed continuity
+48,1440,repair_ring,repair_ring-dialect-5,voro-pax-5,safe repair space / spark-distance,route tense,orchard,227,True,0.032,voro-pax-5: ask before crossing safe repair space
+49,1470,riverbend,riverbend-dialect-5,fay-keth-5,dry crossing / plank-listening,ownership suffix,repair_ring,216,True,0.016,fay-keth-5: ask before crossing dry crossing
+49,1470,roofward,roofward-dialect-5,milo-ivo-5,herb preservation / sun-ledger,ownership suffix,riverbend,219,True,0.02,milo-ivo-5: ask before crossing herb preservation
+49,1470,archive,archive-dialect-5,juno-pax-5,signal memory / spool-naming,ownership suffix,roofward,222,True,0.024,juno-pax-5: ask before crossing signal memory
+49,1470,signal,signal-dialect-5,saan-ari-5,path visibility / lantern-turning,ownership suffix,archive,225,True,0.028,saan-ari-5: ask before crossing path visibility
+49,1470,orchard,orchard-dialect-5,voro-fay-5,dry seed continuity / satchel-vow,ownership suffix,signal,228,True,0.032,voro-fay-5: ask before crossing dry seed continuity
+49,1470,repair_ring,repair_ring-dialect-5,lum-milo-5,safe repair space / spark-distance,ownership suffix,orchard,231,True,0.036,lum-milo-5: ask before crossing safe repair space
+50,1500,riverbend,riverbend-dialect-5,milo-ari-5,dry crossing / plank-listening,agent-object respect marker,repair_ring,220,True,0.02,milo-ari-5: ask before crossing dry crossing
+50,1500,roofward,roofward-dialect-5,juno-fay-5,herb preservation / sun-ledger,agent-object respect marker,riverbend,223,True,0.024,juno-fay-5: ask before crossing herb preservation
+50,1500,archive,archive-dialect-5,saan-milo-5,signal memory / spool-naming,agent-object respect marker,roofward,226,True,0.028,saan-milo-5: ask before crossing signal memory
+50,1500,signal,signal-dialect-5,voro-juno-5,path visibility / lantern-turning,agent-object respect marker,archive,229,True,0.032,voro-juno-5: ask before crossing path visibility
+50,1500,orchard,orchard-dialect-5,lum-saan-5,dry seed continuity / satchel-vow,agent-object respect marker,signal,232,True,0.036,lum-saan-5: ask before crossing dry seed continuity
+50,1500,repair_ring,repair_ring-dialect-5,ther-voro-5,safe repair space / spark-distance,agent-object respect marker,orchard,235,True,0.04,ther-voro-5: ask before crossing safe repair space
+51,1530,riverbend,riverbend-dialect-6,juno-juno-6,dry crossing / plank-listening,route tense,riverbend,224,True,0.024,juno-juno-6: ask before crossing dry crossing
+51,1530,roofward,roofward-dialect-6,saan-saan-6,herb preservation / sun-ledger,route tense,roofward,227,True,0.028,saan-saan-6: ask before crossing herb preservation
+51,1530,archive,archive-dialect-6,voro-voro-6,signal memory / spool-naming,route tense,archive,230,True,0.032,voro-voro-6: ask before crossing signal memory
+51,1530,signal,signal-dialect-6,lum-lum-6,path visibility / lantern-turning,route tense,signal,233,True,0.036,lum-lum-6: ask before crossing path visibility
+51,1530,orchard,orchard-dialect-6,ther-ther-6,dry seed continuity / satchel-vow,route tense,orchard,236,True,0.04,ther-ther-6: ask before crossing dry seed continuity
+51,1530,repair_ring,repair_ring-dialect-6,nia-nia-6,safe repair space / spark-distance,route tense,repair_ring,239,True,0.012,nia-nia-6: ask before crossing safe repair space
+52,1560,riverbend,riverbend-dialect-6,saan-lum-6,dry crossing / plank-listening,ownership suffix,riverbend,228,True,0.028,saan-lum-6: ask before crossing dry crossing
+52,1560,roofward,roofward-dialect-6,voro-ther-6,herb preservation / sun-ledger,ownership suffix,roofward,231,True,0.032,voro-ther-6: ask before crossing herb preservation
+52,1560,archive,archive-dialect-6,lum-nia-6,signal memory / spool-naming,ownership suffix,archive,234,True,0.036,lum-nia-6: ask before crossing signal memory
+52,1560,signal,signal-dialect-6,ther-keth-6,path visibility / lantern-turning,ownership suffix,signal,237,True,0.04,ther-keth-6: ask before crossing path visibility
+52,1560,orchard,orchard-dialect-6,nia-ivo-6,dry seed continuity / satchel-vow,ownership suffix,orchard,240,True,0.012,nia-ivo-6: ask before crossing dry seed continuity
+52,1560,repair_ring,repair_ring-dialect-6,keth-pax-6,safe repair space / spark-distance,ownership suffix,repair_ring,243,True,0.016,keth-pax-6: ask before crossing safe repair space
+53,1590,riverbend,riverbend-dialect-6,voro-keth-6,dry crossing / plank-listening,ownership suffix,riverbend,232,True,0.032,voro-keth-6: ask before crossing dry crossing
+53,1590,roofward,roofward-dialect-6,lum-ivo-6,herb preservation / sun-ledger,ownership suffix,roofward,235,True,0.036,lum-ivo-6: ask before crossing herb preservation
+53,1590,archive,archive-dialect-6,ther-pax-6,signal memory / spool-naming,ownership suffix,archive,238,True,0.04,ther-pax-6: ask before crossing signal memory
+53,1590,signal,signal-dialect-6,nia-ari-6,path visibility / lantern-turning,ownership suffix,signal,241,True,0.012,nia-ari-6: ask before crossing path visibility
+53,1590,orchard,orchard-dialect-6,keth-fay-6,dry seed continuity / satchel-vow,ownership suffix,orchard,244,True,0.016,keth-fay-6: ask before crossing dry seed continuity
+53,1590,repair_ring,repair_ring-dialect-6,ivo-milo-6,safe repair space / spark-distance,ownership suffix,repair_ring,247,True,0.02,ivo-milo-6: ask before crossing safe repair space
+54,1620,riverbend,riverbend-dialect-6,lum-ari-6,dry crossing / plank-listening,route tense,riverbend,236,True,0.036,lum-ari-6: ask before crossing dry crossing
+54,1620,roofward,roofward-dialect-6,ther-fay-6,herb preservation / sun-ledger,route tense,roofward,239,True,0.04,ther-fay-6: ask before crossing herb preservation
+54,1620,archive,archive-dialect-6,nia-milo-6,signal memory / spool-naming,route tense,archive,242,True,0.012,nia-milo-6: ask before crossing signal memory
+54,1620,signal,signal-dialect-6,keth-juno-6,path visibility / lantern-turning,route tense,signal,245,True,0.016,keth-juno-6: ask before crossing path visibility
+54,1620,orchard,orchard-dialect-6,ivo-saan-6,dry seed continuity / satchel-vow,route tense,orchard,248,True,0.02,ivo-saan-6: ask before crossing dry seed continuity
+54,1620,repair_ring,repair_ring-dialect-6,pax-voro-6,safe repair space / spark-distance,route tense,repair_ring,251,True,0.024,pax-voro-6: ask before crossing safe repair space
+55,1650,riverbend,riverbend-dialect-6,ther-juno-6,dry crossing / plank-listening,agent-object respect marker,riverbend,240,True,0.04,ther-juno-6: ask before crossing dry crossing
+55,1650,roofward,roofward-dialect-6,nia-saan-6,herb preservation / sun-ledger,agent-object respect marker,roofward,243,True,0.012,nia-saan-6: ask before crossing herb preservation
+55,1650,archive,archive-dialect-6,keth-voro-6,signal memory / spool-naming,agent-object respect marker,archive,246,True,0.016,keth-voro-6: ask before crossing signal memory
+55,1650,signal,signal-dialect-6,ivo-lum-6,path visibility / lantern-turning,agent-object respect marker,signal,249,True,0.02,ivo-lum-6: ask before crossing path visibility
+55,1650,orchard,orchard-dialect-6,pax-ther-6,dry seed continuity / satchel-vow,agent-object respect marker,orchard,252,True,0.024,pax-ther-6: ask before crossing dry seed continuity
+55,1650,repair_ring,repair_ring-dialect-6,ari-nia-6,safe repair space / spark-distance,agent-object respect marker,repair_ring,255,True,0.028,ari-nia-6: ask before crossing safe repair space
+56,1680,riverbend,riverbend-dialect-6,nia-lum-6,dry crossing / plank-listening,ownership suffix,riverbend,244,True,0.012,nia-lum-6: ask before crossing dry crossing
+56,1680,roofward,roofward-dialect-6,keth-ther-6,herb preservation / sun-ledger,ownership suffix,roofward,247,True,0.016,keth-ther-6: ask before crossing herb preservation
+56,1680,archive,archive-dialect-6,ivo-nia-6,signal memory / spool-naming,ownership suffix,archive,250,True,0.02,ivo-nia-6: ask before crossing signal memory
+56,1680,signal,signal-dialect-6,pax-keth-6,path visibility / lantern-turning,ownership suffix,signal,253,True,0.024,pax-keth-6: ask before crossing path visibility
+56,1680,orchard,orchard-dialect-6,ari-ivo-6,dry seed continuity / satchel-vow,ownership suffix,orchard,256,True,0.028,ari-ivo-6: ask before crossing dry seed continuity
+56,1680,repair_ring,repair_ring-dialect-6,fay-pax-6,safe repair space / spark-distance,ownership suffix,repair_ring,259,True,0.032,fay-pax-6: ask before crossing safe repair space
+57,1710,riverbend,riverbend-dialect-6,keth-keth-6,dry crossing / plank-listening,route tense,riverbend,248,True,0.016,keth-keth-6: ask before crossing dry crossing
+57,1710,roofward,roofward-dialect-6,ivo-ivo-6,herb preservation / sun-ledger,route tense,roofward,251,True,0.02,ivo-ivo-6: ask before crossing herb preservation
+57,1710,archive,archive-dialect-6,pax-pax-6,signal memory / spool-naming,route tense,archive,254,True,0.024,pax-pax-6: ask before crossing signal memory
+57,1710,signal,signal-dialect-6,ari-ari-6,path visibility / lantern-turning,route tense,signal,257,True,0.028,ari-ari-6: ask before crossing path visibility
+57,1710,orchard,orchard-dialect-6,fay-fay-6,dry seed continuity / satchel-vow,route tense,orchard,260,True,0.032,fay-fay-6: ask before crossing dry seed continuity
+57,1710,repair_ring,repair_ring-dialect-6,milo-milo-6,safe repair space / spark-distance,route tense,repair_ring,263,True,0.036,milo-milo-6: ask before crossing safe repair space
+58,1740,riverbend,riverbend-dialect-6,ivo-ari-6,dry crossing / plank-listening,ownership suffix,riverbend,252,True,0.02,ivo-ari-6: ask before crossing dry crossing
+58,1740,roofward,roofward-dialect-6,pax-fay-6,herb preservation / sun-ledger,ownership suffix,roofward,255,True,0.024,pax-fay-6: ask before crossing herb preservation
+58,1740,archive,archive-dialect-6,ari-milo-6,signal memory / spool-naming,ownership suffix,archive,258,True,0.028,ari-milo-6: ask before crossing signal memory
+58,1740,signal,signal-dialect-6,fay-juno-6,path visibility / lantern-turning,ownership suffix,signal,261,True,0.032,fay-juno-6: ask before crossing path visibility
+58,1740,orchard,orchard-dialect-6,milo-saan-6,dry seed continuity / satchel-vow,ownership suffix,orchard,264,True,0.036,milo-saan-6: ask before crossing dry seed continuity
+58,1740,repair_ring,repair_ring-dialect-6,juno-voro-6,safe repair space / spark-distance,ownership suffix,repair_ring,267,True,0.04,juno-voro-6: ask before crossing safe repair space
+59,1770,riverbend,riverbend-dialect-6,pax-juno-6,dry crossing / plank-listening,ownership suffix,riverbend,256,True,0.024,pax-juno-6: ask before crossing dry crossing
+59,1770,roofward,roofward-dialect-6,ari-saan-6,herb preservation / sun-ledger,ownership suffix,roofward,259,True,0.028,ari-saan-6: ask before crossing herb preservation
+59,1770,archive,archive-dialect-6,fay-voro-6,signal memory / spool-naming,ownership suffix,archive,262,True,0.032,fay-voro-6: ask before crossing signal memory
+59,1770,signal,signal-dialect-6,milo-lum-6,path visibility / lantern-turning,ownership suffix,signal,265,True,0.036,milo-lum-6: ask before crossing path visibility
+59,1770,orchard,orchard-dialect-6,juno-ther-6,dry seed continuity / satchel-vow,ownership suffix,orchard,268,True,0.04,juno-ther-6: ask before crossing dry seed continuity
+59,1770,repair_ring,repair_ring-dialect-6,saan-nia-6,safe repair space / spark-distance,ownership suffix,repair_ring,271,True,0.012,saan-nia-6: ask before crossing safe repair space
+60,1800,riverbend,riverbend-dialect-6,ari-lum-6,dry crossing / plank-listening,agent-object respect marker,riverbend,260,True,0.028,ari-lum-6: ask before crossing dry crossing
+60,1800,roofward,roofward-dialect-6,fay-ther-6,herb preservation / sun-ledger,agent-object respect marker,roofward,263,True,0.032,fay-ther-6: ask before crossing herb preservation
+60,1800,archive,archive-dialect-6,milo-nia-6,signal memory / spool-naming,agent-object respect marker,archive,266,True,0.036,milo-nia-6: ask before crossing signal memory
+60,1800,signal,signal-dialect-6,juno-keth-6,path visibility / lantern-turning,agent-object respect marker,signal,269,True,0.04,juno-keth-6: ask before crossing path visibility
+60,1800,orchard,orchard-dialect-6,saan-ivo-6,dry seed continuity / satchel-vow,agent-object respect marker,orchard,272,True,0.012,saan-ivo-6: ask before crossing dry seed continuity
+60,1800,repair_ring,repair_ring-dialect-6,voro-pax-6,safe repair space / spark-distance,agent-object respect marker,repair_ring,275,True,0.016,voro-pax-6: ask before crossing safe repair space
+61,1830,riverbend,riverbend-dialect-7,fay-keth-7,dry crossing / plank-listening,ownership suffix,roofward,264,True,0.032,fay-keth-7: ask before crossing dry crossing
+61,1830,roofward,roofward-dialect-7,milo-ivo-7,herb preservation / sun-ledger,ownership suffix,archive,267,True,0.036,milo-ivo-7: ask before crossing herb preservation
+61,1830,archive,archive-dialect-7,juno-pax-7,signal memory / spool-naming,ownership suffix,signal,270,True,0.04,juno-pax-7: ask before crossing signal memory
+61,1830,signal,signal-dialect-7,saan-ari-7,path visibility / lantern-turning,ownership suffix,orchard,273,True,0.012,saan-ari-7: ask before crossing path visibility
+61,1830,orchard,orchard-dialect-7,voro-fay-7,dry seed continuity / satchel-vow,ownership suffix,repair_ring,276,True,0.016,voro-fay-7: ask before crossing dry seed continuity
+61,1830,repair_ring,repair_ring-dialect-7,lum-milo-7,safe repair space / spark-distance,ownership suffix,riverbend,279,True,0.02,lum-milo-7: ask before crossing safe repair space
+62,1860,riverbend,riverbend-dialect-7,milo-ari-7,dry crossing / plank-listening,ownership suffix,roofward,268,True,0.036,milo-ari-7: ask before crossing dry crossing
+62,1860,roofward,roofward-dialect-7,juno-fay-7,herb preservation / sun-ledger,ownership suffix,archive,271,True,0.04,juno-fay-7: ask before crossing herb preservation
+62,1860,archive,archive-dialect-7,saan-milo-7,signal memory / spool-naming,ownership suffix,signal,274,True,0.012,saan-milo-7: ask before crossing signal memory
+62,1860,signal,signal-dialect-7,voro-juno-7,path visibility / lantern-turning,ownership suffix,orchard,277,True,0.016,voro-juno-7: ask before crossing path visibility
+62,1860,orchard,orchard-dialect-7,lum-saan-7,dry seed continuity / satchel-vow,ownership suffix,repair_ring,280,True,0.02,lum-saan-7: ask before crossing dry seed continuity
+62,1860,repair_ring,repair_ring-dialect-7,ther-voro-7,safe repair space / spark-distance,ownership suffix,riverbend,283,True,0.024,ther-voro-7: ask before crossing safe repair space
+63,1890,riverbend,riverbend-dialect-7,juno-juno-7,dry crossing / plank-listening,route tense,roofward,272,True,0.04,juno-juno-7: ask before crossing dry crossing
+63,1890,roofward,roofward-dialect-7,saan-saan-7,herb preservation / sun-ledger,route tense,archive,275,True,0.012,saan-saan-7: ask before crossing herb preservation
+63,1890,archive,archive-dialect-7,voro-voro-7,signal memory / spool-naming,route tense,signal,278,True,0.016,voro-voro-7: ask before crossing signal memory
+63,1890,signal,signal-dialect-7,lum-lum-7,path visibility / lantern-turning,route tense,orchard,281,True,0.02,lum-lum-7: ask before crossing path visibility
+63,1890,orchard,orchard-dialect-7,ther-ther-7,dry seed continuity / satchel-vow,route tense,repair_ring,284,True,0.024,ther-ther-7: ask before crossing dry seed continuity
+63,1890,repair_ring,repair_ring-dialect-7,nia-nia-7,safe repair space / spark-distance,route tense,riverbend,287,True,0.028,nia-nia-7: ask before crossing safe repair space
+64,1920,riverbend,riverbend-dialect-7,saan-lum-7,dry crossing / plank-listening,ownership suffix,roofward,276,True,0.012,saan-lum-7: ask before crossing dry crossing
+64,1920,roofward,roofward-dialect-7,voro-ther-7,herb preservation / sun-ledger,ownership suffix,archive,279,True,0.016,voro-ther-7: ask before crossing herb preservation
+64,1920,archive,archive-dialect-7,lum-nia-7,signal memory / spool-naming,ownership suffix,signal,282,True,0.02,lum-nia-7: ask before crossing signal memory
+64,1920,signal,signal-dialect-7,ther-keth-7,path visibility / lantern-turning,ownership suffix,orchard,285,True,0.024,ther-keth-7: ask before crossing path visibility
+64,1920,orchard,orchard-dialect-7,nia-ivo-7,dry seed continuity / satchel-vow,ownership suffix,repair_ring,288,True,0.028,nia-ivo-7: ask before crossing dry seed continuity
+64,1920,repair_ring,repair_ring-dialect-7,keth-pax-7,safe repair space / spark-distance,ownership suffix,riverbend,291,True,0.032,keth-pax-7: ask before crossing safe repair space
+65,1950,riverbend,riverbend-dialect-7,voro-keth-7,dry crossing / plank-listening,agent-object respect marker,roofward,280,True,0.016,voro-keth-7: ask before crossing dry crossing
+65,1950,roofward,roofward-dialect-7,lum-ivo-7,herb preservation / sun-ledger,agent-object respect marker,archive,283,True,0.02,lum-ivo-7: ask before crossing herb preservation
+65,1950,archive,archive-dialect-7,ther-pax-7,signal memory / spool-naming,agent-object respect marker,signal,286,True,0.024,ther-pax-7: ask before crossing signal memory
+65,1950,signal,signal-dialect-7,nia-ari-7,path visibility / lantern-turning,agent-object respect marker,orchard,289,True,0.028,nia-ari-7: ask before crossing path visibility
+65,1950,orchard,orchard-dialect-7,keth-fay-7,dry seed continuity / satchel-vow,agent-object respect marker,repair_ring,292,True,0.032,keth-fay-7: ask before crossing dry seed continuity
+65,1950,repair_ring,repair_ring-dialect-7,ivo-milo-7,safe repair space / spark-distance,agent-object respect marker,riverbend,295,True,0.036,ivo-milo-7: ask before crossing safe repair space
+66,1980,riverbend,riverbend-dialect-7,lum-ari-7,dry crossing / plank-listening,route tense,roofward,284,True,0.02,lum-ari-7: ask before crossing dry crossing
+66,1980,roofward,roofward-dialect-7,ther-fay-7,herb preservation / sun-ledger,route tense,archive,287,True,0.024,ther-fay-7: ask before crossing herb preservation
+66,1980,archive,archive-dialect-7,nia-milo-7,signal memory / spool-naming,route tense,signal,290,True,0.028,nia-milo-7: ask before crossing signal memory
+66,1980,signal,signal-dialect-7,keth-juno-7,path visibility / lantern-turning,route tense,orchard,293,True,0.032,keth-juno-7: ask before crossing path visibility
+66,1980,orchard,orchard-dialect-7,ivo-saan-7,dry seed continuity / satchel-vow,route tense,repair_ring,296,True,0.036,ivo-saan-7: ask before crossing dry seed continuity
+66,1980,repair_ring,repair_ring-dialect-7,pax-voro-7,safe repair space / spark-distance,route tense,riverbend,299,True,0.04,pax-voro-7: ask before crossing safe repair space
+67,2010,riverbend,riverbend-dialect-7,ther-juno-7,dry crossing / plank-listening,ownership suffix,roofward,288,True,0.024,ther-juno-7: ask before crossing dry crossing
+67,2010,roofward,roofward-dialect-7,nia-saan-7,herb preservation / sun-ledger,ownership suffix,archive,291,True,0.028,nia-saan-7: ask before crossing herb preservation
+67,2010,archive,archive-dialect-7,keth-voro-7,signal memory / spool-naming,ownership suffix,signal,294,True,0.032,keth-voro-7: ask before crossing signal memory
+67,2010,signal,signal-dialect-7,ivo-lum-7,path visibility / lantern-turning,ownership suffix,orchard,297,True,0.036,ivo-lum-7: ask before crossing path visibility
+67,2010,orchard,orchard-dialect-7,pax-ther-7,dry seed continuity / satchel-vow,ownership suffix,repair_ring,300,True,0.04,pax-ther-7: ask before crossing dry seed continuity
+67,2010,repair_ring,repair_ring-dialect-7,ari-nia-7,safe repair space / spark-distance,ownership suffix,riverbend,303,True,0.012,ari-nia-7: ask before crossing safe repair space
+68,2040,riverbend,riverbend-dialect-7,nia-lum-7,dry crossing / plank-listening,ownership suffix,roofward,292,True,0.028,nia-lum-7: ask before crossing dry crossing
+68,2040,roofward,roofward-dialect-7,keth-ther-7,herb preservation / sun-ledger,ownership suffix,archive,295,True,0.032,keth-ther-7: ask before crossing herb preservation
+68,2040,archive,archive-dialect-7,ivo-nia-7,signal memory / spool-naming,ownership suffix,signal,298,True,0.036,ivo-nia-7: ask before crossing signal memory
+68,2040,signal,signal-dialect-7,pax-keth-7,path visibility / lantern-turning,ownership suffix,orchard,301,True,0.04,pax-keth-7: ask before crossing path visibility
+68,2040,orchard,orchard-dialect-7,ari-ivo-7,dry seed continuity / satchel-vow,ownership suffix,repair_ring,304,True,0.012,ari-ivo-7: ask before crossing dry seed continuity
+68,2040,repair_ring,repair_ring-dialect-7,fay-pax-7,safe repair space / spark-distance,ownership suffix,riverbend,307,True,0.016,fay-pax-7: ask before crossing safe repair space
+69,2070,riverbend,riverbend-dialect-7,keth-keth-7,dry crossing / plank-listening,route tense,roofward,296,True,0.032,keth-keth-7: ask before crossing dry crossing
+69,2070,roofward,roofward-dialect-7,ivo-ivo-7,herb preservation / sun-ledger,route tense,archive,299,True,0.036,ivo-ivo-7: ask before crossing herb preservation
+69,2070,archive,archive-dialect-7,pax-pax-7,signal memory / spool-naming,route tense,signal,302,True,0.04,pax-pax-7: ask before crossing signal memory
+69,2070,signal,signal-dialect-7,ari-ari-7,path visibility / lantern-turning,route tense,orchard,305,True,0.012,ari-ari-7: ask before crossing path visibility
+69,2070,orchard,orchard-dialect-7,fay-fay-7,dry seed continuity / satchel-vow,route tense,repair_ring,308,True,0.016,fay-fay-7: ask before crossing dry seed continuity
+69,2070,repair_ring,repair_ring-dialect-7,milo-milo-7,safe repair space / spark-distance,route tense,riverbend,311,True,0.02,milo-milo-7: ask before crossing safe repair space
+70,2100,riverbend,riverbend-dialect-7,ivo-ari-7,dry crossing / plank-listening,agent-object respect marker,roofward,300,True,0.036,ivo-ari-7: ask before crossing dry crossing
+70,2100,roofward,roofward-dialect-7,pax-fay-7,herb preservation / sun-ledger,agent-object respect marker,archive,303,True,0.04,pax-fay-7: ask before crossing herb preservation
+70,2100,archive,archive-dialect-7,ari-milo-7,signal memory / spool-naming,agent-object respect marker,signal,306,True,0.012,ari-milo-7: ask before crossing signal memory
+70,2100,signal,signal-dialect-7,fay-juno-7,path visibility / lantern-turning,agent-object respect marker,orchard,309,True,0.016,fay-juno-7: ask before crossing path visibility
+70,2100,orchard,orchard-dialect-7,milo-saan-7,dry seed continuity / satchel-vow,agent-object respect marker,repair_ring,312,True,0.02,milo-saan-7: ask before crossing dry seed continuity
+70,2100,repair_ring,repair_ring-dialect-7,juno-voro-7,safe repair space / spark-distance,agent-object respect marker,riverbend,315,True,0.024,juno-voro-7: ask before crossing safe repair space
+71,2130,riverbend,riverbend-dialect-8,pax-juno-8,dry crossing / plank-listening,ownership suffix,archive,304,True,0.04,pax-juno-8: ask before crossing dry crossing
+71,2130,roofward,roofward-dialect-8,ari-saan-8,herb preservation / sun-ledger,ownership suffix,signal,307,True,0.012,ari-saan-8: ask before crossing herb preservation
+71,2130,archive,archive-dialect-8,fay-voro-8,signal memory / spool-naming,ownership suffix,orchard,310,True,0.016,fay-voro-8: ask before crossing signal memory
+71,2130,signal,signal-dialect-8,milo-lum-8,path visibility / lantern-turning,ownership suffix,repair_ring,313,True,0.02,milo-lum-8: ask before crossing path visibility
+71,2130,orchard,orchard-dialect-8,juno-ther-8,dry seed continuity / satchel-vow,ownership suffix,riverbend,316,True,0.024,juno-ther-8: ask before crossing dry seed continuity
+71,2130,repair_ring,repair_ring-dialect-8,saan-nia-8,safe repair space / spark-distance,ownership suffix,roofward,319,True,0.028,saan-nia-8: ask before crossing safe repair space
+72,2160,riverbend,riverbend-dialect-8,ari-lum-8,dry crossing / plank-listening,route tense,archive,308,True,0.012,ari-lum-8: ask before crossing dry crossing
+72,2160,roofward,roofward-dialect-8,fay-ther-8,herb preservation / sun-ledger,route tense,signal,311,True,0.016,fay-ther-8: ask before crossing herb preservation
+72,2160,archive,archive-dialect-8,milo-nia-8,signal memory / spool-naming,route tense,orchard,314,True,0.02,milo-nia-8: ask before crossing signal memory
+72,2160,signal,signal-dialect-8,juno-keth-8,path visibility / lantern-turning,route tense,repair_ring,317,True,0.024,juno-keth-8: ask before crossing path visibility
+72,2160,orchard,orchard-dialect-8,saan-ivo-8,dry seed continuity / satchel-vow,route tense,riverbend,320,True,0.028,saan-ivo-8: ask before crossing dry seed continuity
+72,2160,repair_ring,repair_ring-dialect-8,voro-pax-8,safe repair space / spark-distance,route tense,roofward,323,True,0.032,voro-pax-8: ask before crossing safe repair space
+73,2190,riverbend,riverbend-dialect-8,fay-keth-8,dry crossing / plank-listening,ownership suffix,archive,312,True,0.016,fay-keth-8: ask before crossing dry crossing
+73,2190,roofward,roofward-dialect-8,milo-ivo-8,herb preservation / sun-ledger,ownership suffix,signal,315,True,0.02,milo-ivo-8: ask before crossing herb preservation
+73,2190,archive,archive-dialect-8,juno-pax-8,signal memory / spool-naming,ownership suffix,orchard,318,True,0.024,juno-pax-8: ask before crossing signal memory
+73,2190,signal,signal-dialect-8,saan-ari-8,path visibility / lantern-turning,ownership suffix,repair_ring,321,True,0.028,saan-ari-8: ask before crossing path visibility
+73,2190,orchard,orchard-dialect-8,voro-fay-8,dry seed continuity / satchel-vow,ownership suffix,riverbend,324,True,0.032,voro-fay-8: ask before crossing dry seed continuity
+73,2190,repair_ring,repair_ring-dialect-8,lum-milo-8,safe repair space / spark-distance,ownership suffix,roofward,327,True,0.036,lum-milo-8: ask before crossing safe repair space
+74,2220,riverbend,riverbend-dialect-8,milo-ari-8,dry crossing / plank-listening,ownership suffix,archive,316,True,0.02,milo-ari-8: ask before crossing dry crossing
+74,2220,roofward,roofward-dialect-8,juno-fay-8,herb preservation / sun-ledger,ownership suffix,signal,319,True,0.024,juno-fay-8: ask before crossing herb preservation
+74,2220,archive,archive-dialect-8,saan-milo-8,signal memory / spool-naming,ownership suffix,orchard,322,True,0.028,saan-milo-8: ask before crossing signal memory
+74,2220,signal,signal-dialect-8,voro-juno-8,path visibility / lantern-turning,ownership suffix,repair_ring,325,True,0.032,voro-juno-8: ask before crossing path visibility
+74,2220,orchard,orchard-dialect-8,lum-saan-8,dry seed continuity / satchel-vow,ownership suffix,riverbend,328,True,0.036,lum-saan-8: ask before crossing dry seed continuity
+74,2220,repair_ring,repair_ring-dialect-8,ther-voro-8,safe repair space / spark-distance,ownership suffix,roofward,331,True,0.04,ther-voro-8: ask before crossing safe repair space
+75,2250,riverbend,riverbend-dialect-8,juno-juno-8,dry crossing / plank-listening,agent-object respect marker,archive,320,True,0.024,juno-juno-8: ask before crossing dry crossing
+75,2250,roofward,roofward-dialect-8,saan-saan-8,herb preservation / sun-ledger,agent-object respect marker,signal,323,True,0.028,saan-saan-8: ask before crossing herb preservation
+75,2250,archive,archive-dialect-8,voro-voro-8,signal memory / spool-naming,agent-object respect marker,orchard,326,True,0.032,voro-voro-8: ask before crossing signal memory
+75,2250,signal,signal-dialect-8,lum-lum-8,path visibility / lantern-turning,agent-object respect marker,repair_ring,329,True,0.036,lum-lum-8: ask before crossing path visibility
+75,2250,orchard,orchard-dialect-8,ther-ther-8,dry seed continuity / satchel-vow,agent-object respect marker,riverbend,332,True,0.04,ther-ther-8: ask before crossing dry seed continuity
+75,2250,repair_ring,repair_ring-dialect-8,nia-nia-8,safe repair space / spark-distance,agent-object respect marker,roofward,335,True,0.012,nia-nia-8: ask before crossing safe repair space
+76,2280,riverbend,riverbend-dialect-8,saan-lum-8,dry crossing / plank-listening,ownership suffix,archive,324,True,0.028,saan-lum-8: ask before crossing dry crossing
+76,2280,roofward,roofward-dialect-8,voro-ther-8,herb preservation / sun-ledger,ownership suffix,signal,327,True,0.032,voro-ther-8: ask before crossing herb preservation
+76,2280,archive,archive-dialect-8,lum-nia-8,signal memory / spool-naming,ownership suffix,orchard,330,True,0.036,lum-nia-8: ask before crossing signal memory
+76,2280,signal,signal-dialect-8,ther-keth-8,path visibility / lantern-turning,ownership suffix,repair_ring,333,True,0.04,ther-keth-8: ask before crossing path visibility
+76,2280,orchard,orchard-dialect-8,nia-ivo-8,dry seed continuity / satchel-vow,ownership suffix,riverbend,336,True,0.012,nia-ivo-8: ask before crossing dry seed continuity
+76,2280,repair_ring,repair_ring-dialect-8,keth-pax-8,safe repair space / spark-distance,ownership suffix,roofward,339,True,0.016,keth-pax-8: ask before crossing safe repair space
+77,2310,riverbend,riverbend-dialect-8,voro-keth-8,dry crossing / plank-listening,ownership suffix,archive,328,True,0.032,voro-keth-8: ask before crossing dry crossing
+77,2310,roofward,roofward-dialect-8,lum-ivo-8,herb preservation / sun-ledger,ownership suffix,signal,331,True,0.036,lum-ivo-8: ask before crossing herb preservation
+77,2310,archive,archive-dialect-8,ther-pax-8,signal memory / spool-naming,ownership suffix,orchard,334,True,0.04,ther-pax-8: ask before crossing signal memory
+77,2310,signal,signal-dialect-8,nia-ari-8,path visibility / lantern-turning,ownership suffix,repair_ring,337,True,0.012,nia-ari-8: ask before crossing path visibility
+77,2310,orchard,orchard-dialect-8,keth-fay-8,dry seed continuity / satchel-vow,ownership suffix,riverbend,340,True,0.016,keth-fay-8: ask before crossing dry seed continuity
+77,2310,repair_ring,repair_ring-dialect-8,ivo-milo-8,safe repair space / spark-distance,ownership suffix,roofward,343,True,0.02,ivo-milo-8: ask before crossing safe repair space
+78,2340,riverbend,riverbend-dialect-8,lum-ari-8,dry crossing / plank-listening,route tense,archive,332,True,0.036,lum-ari-8: ask before crossing dry crossing
+78,2340,roofward,roofward-dialect-8,ther-fay-8,herb preservation / sun-ledger,route tense,signal,335,True,0.04,ther-fay-8: ask before crossing herb preservation
+78,2340,archive,archive-dialect-8,nia-milo-8,signal memory / spool-naming,route tense,orchard,338,True,0.012,nia-milo-8: ask before crossing signal memory
+78,2340,signal,signal-dialect-8,keth-juno-8,path visibility / lantern-turning,route tense,repair_ring,341,True,0.016,keth-juno-8: ask before crossing path visibility
+78,2340,orchard,orchard-dialect-8,ivo-saan-8,dry seed continuity / satchel-vow,route tense,riverbend,344,True,0.02,ivo-saan-8: ask before crossing dry seed continuity
+78,2340,repair_ring,repair_ring-dialect-8,pax-voro-8,safe repair space / spark-distance,route tense,roofward,347,True,0.024,pax-voro-8: ask before crossing safe repair space
+79,2370,riverbend,riverbend-dialect-8,ther-juno-8,dry crossing / plank-listening,ownership suffix,archive,336,True,0.04,ther-juno-8: ask before crossing dry crossing
+79,2370,roofward,roofward-dialect-8,nia-saan-8,herb preservation / sun-ledger,ownership suffix,signal,339,True,0.012,nia-saan-8: ask before crossing herb preservation
+79,2370,archive,archive-dialect-8,keth-voro-8,signal memory / spool-naming,ownership suffix,orchard,342,True,0.016,keth-voro-8: ask before crossing signal memory
+79,2370,signal,signal-dialect-8,ivo-lum-8,path visibility / lantern-turning,ownership suffix,repair_ring,345,True,0.02,ivo-lum-8: ask before crossing path visibility
+79,2370,orchard,orchard-dialect-8,pax-ther-8,dry seed continuity / satchel-vow,ownership suffix,riverbend,348,True,0.024,pax-ther-8: ask before crossing dry seed continuity
+79,2370,repair_ring,repair_ring-dialect-8,ari-nia-8,safe repair space / spark-distance,ownership suffix,roofward,351,True,0.028,ari-nia-8: ask before crossing safe repair space
+80,2400,riverbend,riverbend-dialect-8,nia-lum-8,dry crossing / plank-listening,agent-object respect marker,archive,340,True,0.012,nia-lum-8: ask before crossing dry crossing
+80,2400,roofward,roofward-dialect-8,keth-ther-8,herb preservation / sun-ledger,agent-object respect marker,signal,343,True,0.016,keth-ther-8: ask before crossing herb preservation
+80,2400,archive,archive-dialect-8,ivo-nia-8,signal memory / spool-naming,agent-object respect marker,orchard,346,True,0.02,ivo-nia-8: ask before crossing signal memory
+80,2400,signal,signal-dialect-8,pax-keth-8,path visibility / lantern-turning,agent-object respect marker,repair_ring,349,True,0.024,pax-keth-8: ask before crossing path visibility
+80,2400,orchard,orchard-dialect-8,ari-ivo-8,dry seed continuity / satchel-vow,agent-object respect marker,riverbend,352,True,0.028,ari-ivo-8: ask before crossing dry seed continuity
+80,2400,repair_ring,repair_ring-dialect-8,fay-pax-8,safe repair space / spark-distance,agent-object respect marker,roofward,355,True,0.032,fay-pax-8: ask before crossing safe repair space

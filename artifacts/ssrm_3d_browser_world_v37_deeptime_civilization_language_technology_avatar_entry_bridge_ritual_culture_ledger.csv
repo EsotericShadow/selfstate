@@ -1,0 +1,481 @@
+generation,year,settlement_id,ritual_name,ritual_function,flower_node,frequency_rate_hz,sensory_anchor,social_boundary_taught,inherited_ritual,variation_marker
+1,30,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.395,river slap and cedar resin,ask before touching owned tools,False,v1.1
+1,30,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.415,hinge ticks and thyme paper,ask before touching owned tools,False,v1.2
+1,30,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.435,page flutter and ink linen,ask before touching owned tools,False,v1.3
+1,30,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.455,static crickets and lamp oil,ask before touching owned tools,False,v1.4
+1,30,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.475,cart creak and apple soil,ask before touching owned tools,False,v1.5
+1,30,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.495,bell hum and hot copper,ask before touching owned tools,False,v1.6
+2,60,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.398,river slap and cedar resin,ask before touching owned tools,True,v1.2
+2,60,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.418,hinge ticks and thyme paper,ask before touching owned tools,True,v1.3
+2,60,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.438,page flutter and ink linen,ask before touching owned tools,True,v1.4
+2,60,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.458,static crickets and lamp oil,ask before touching owned tools,True,v1.5
+2,60,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.478,cart creak and apple soil,ask before touching owned tools,True,v1.6
+2,60,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.498,bell hum and hot copper,ask before touching owned tools,True,v1.7
+3,90,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.401,river slap and cedar resin,ask before touching owned tools,True,v1.3
+3,90,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.421,hinge ticks and thyme paper,ask before touching owned tools,True,v1.4
+3,90,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.441,page flutter and ink linen,ask before touching owned tools,True,v1.5
+3,90,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.461,static crickets and lamp oil,ask before touching owned tools,True,v1.6
+3,90,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.481,cart creak and apple soil,ask before touching owned tools,True,v1.7
+3,90,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.501,bell hum and hot copper,ask before touching owned tools,True,v1.8
+4,120,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.404,river slap and cedar resin,ask before touching owned tools,True,v1.4
+4,120,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.424,hinge ticks and thyme paper,ask before touching owned tools,True,v1.5
+4,120,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.444,page flutter and ink linen,ask before touching owned tools,True,v1.6
+4,120,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.464,static crickets and lamp oil,ask before touching owned tools,True,v1.7
+4,120,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.484,cart creak and apple soil,ask before touching owned tools,True,v1.8
+4,120,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.504,bell hum and hot copper,ask before touching owned tools,True,v1.0
+5,150,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.407,river slap and cedar resin,ask before touching owned tools,True,v1.5
+5,150,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.427,hinge ticks and thyme paper,ask before touching owned tools,True,v1.6
+5,150,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.447,page flutter and ink linen,ask before touching owned tools,True,v1.7
+5,150,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.467,static crickets and lamp oil,ask before touching owned tools,True,v1.8
+5,150,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.487,cart creak and apple soil,ask before touching owned tools,True,v1.0
+5,150,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.507,bell hum and hot copper,ask before touching owned tools,True,v1.1
+6,180,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.41,river slap and cedar resin,ask before touching owned tools,True,v1.6
+6,180,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.43,hinge ticks and thyme paper,ask before touching owned tools,True,v1.7
+6,180,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.45,page flutter and ink linen,ask before touching owned tools,True,v1.8
+6,180,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.47,static crickets and lamp oil,ask before touching owned tools,True,v1.0
+6,180,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.49,cart creak and apple soil,ask before touching owned tools,True,v1.1
+6,180,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.51,bell hum and hot copper,ask before touching owned tools,True,v1.2
+7,210,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.413,river slap and cedar resin,ask before touching owned tools,True,v1.7
+7,210,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.433,hinge ticks and thyme paper,ask before touching owned tools,True,v1.8
+7,210,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.453,page flutter and ink linen,ask before touching owned tools,True,v1.0
+7,210,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.473,static crickets and lamp oil,ask before touching owned tools,True,v1.1
+7,210,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.493,cart creak and apple soil,ask before touching owned tools,True,v1.2
+7,210,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.513,bell hum and hot copper,ask before touching owned tools,True,v1.3
+8,240,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.416,river slap and cedar resin,ask before touching owned tools,True,v1.8
+8,240,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.436,hinge ticks and thyme paper,ask before touching owned tools,True,v1.0
+8,240,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.456,page flutter and ink linen,ask before touching owned tools,True,v1.1
+8,240,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.476,static crickets and lamp oil,ask before touching owned tools,True,v1.2
+8,240,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.496,cart creak and apple soil,ask before touching owned tools,True,v1.3
+8,240,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.516,bell hum and hot copper,ask before touching owned tools,True,v1.4
+9,270,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.419,river slap and cedar resin,ask before touching owned tools,True,v1.0
+9,270,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.439,hinge ticks and thyme paper,ask before touching owned tools,True,v1.1
+9,270,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.459,page flutter and ink linen,ask before touching owned tools,True,v1.2
+9,270,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.479,static crickets and lamp oil,ask before touching owned tools,True,v1.3
+9,270,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.499,cart creak and apple soil,ask before touching owned tools,True,v1.4
+9,270,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.519,bell hum and hot copper,ask before touching owned tools,True,v1.5
+10,300,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.422,river slap and cedar resin,ask before touching owned tools,True,v1.1
+10,300,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.442,hinge ticks and thyme paper,ask before touching owned tools,True,v1.2
+10,300,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.462,page flutter and ink linen,ask before touching owned tools,True,v1.3
+10,300,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.482,static crickets and lamp oil,ask before touching owned tools,True,v1.4
+10,300,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.502,cart creak and apple soil,ask before touching owned tools,True,v1.5
+10,300,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.522,bell hum and hot copper,ask before touching owned tools,True,v1.6
+11,330,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.437,river slap and cedar resin,ask before touching owned tools,True,v2.2
+11,330,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.457,hinge ticks and thyme paper,ask before touching owned tools,True,v2.3
+11,330,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.477,page flutter and ink linen,ask before touching owned tools,True,v2.4
+11,330,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.497,static crickets and lamp oil,ask before touching owned tools,True,v2.5
+11,330,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.517,cart creak and apple soil,ask before touching owned tools,True,v2.6
+11,330,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.537,bell hum and hot copper,ask before touching owned tools,True,v2.7
+12,360,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.404,river slap and cedar resin,ask before touching owned tools,True,v2.3
+12,360,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.424,hinge ticks and thyme paper,ask before touching owned tools,True,v2.4
+12,360,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.444,page flutter and ink linen,ask before touching owned tools,True,v2.5
+12,360,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.464,static crickets and lamp oil,ask before touching owned tools,True,v2.6
+12,360,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.484,cart creak and apple soil,ask before touching owned tools,True,v2.7
+12,360,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.504,bell hum and hot copper,ask before touching owned tools,True,v2.8
+13,390,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.407,river slap and cedar resin,ask before touching owned tools,True,v2.4
+13,390,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.427,hinge ticks and thyme paper,ask before touching owned tools,True,v2.5
+13,390,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.447,page flutter and ink linen,ask before touching owned tools,True,v2.6
+13,390,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.467,static crickets and lamp oil,ask before touching owned tools,True,v2.7
+13,390,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.487,cart creak and apple soil,ask before touching owned tools,True,v2.8
+13,390,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.507,bell hum and hot copper,ask before touching owned tools,True,v2.0
+14,420,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.41,river slap and cedar resin,ask before touching owned tools,True,v2.5
+14,420,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.43,hinge ticks and thyme paper,ask before touching owned tools,True,v2.6
+14,420,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.45,page flutter and ink linen,ask before touching owned tools,True,v2.7
+14,420,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.47,static crickets and lamp oil,ask before touching owned tools,True,v2.8
+14,420,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.49,cart creak and apple soil,ask before touching owned tools,True,v2.0
+14,420,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.51,bell hum and hot copper,ask before touching owned tools,True,v2.1
+15,450,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.413,river slap and cedar resin,ask before touching owned tools,True,v2.6
+15,450,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.433,hinge ticks and thyme paper,ask before touching owned tools,True,v2.7
+15,450,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.453,page flutter and ink linen,ask before touching owned tools,True,v2.8
+15,450,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.473,static crickets and lamp oil,ask before touching owned tools,True,v2.0
+15,450,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.493,cart creak and apple soil,ask before touching owned tools,True,v2.1
+15,450,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.513,bell hum and hot copper,ask before touching owned tools,True,v2.2
+16,480,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.416,river slap and cedar resin,ask before touching owned tools,True,v2.7
+16,480,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.436,hinge ticks and thyme paper,ask before touching owned tools,True,v2.8
+16,480,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.456,page flutter and ink linen,ask before touching owned tools,True,v2.0
+16,480,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.476,static crickets and lamp oil,ask before touching owned tools,True,v2.1
+16,480,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.496,cart creak and apple soil,ask before touching owned tools,True,v2.2
+16,480,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.516,bell hum and hot copper,ask before touching owned tools,True,v2.3
+17,510,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.419,river slap and cedar resin,ask before touching owned tools,True,v2.8
+17,510,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.439,hinge ticks and thyme paper,ask before touching owned tools,True,v2.0
+17,510,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.459,page flutter and ink linen,ask before touching owned tools,True,v2.1
+17,510,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.479,static crickets and lamp oil,ask before touching owned tools,True,v2.2
+17,510,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.499,cart creak and apple soil,ask before touching owned tools,True,v2.3
+17,510,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.519,bell hum and hot copper,ask before touching owned tools,True,v2.4
+18,540,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.422,river slap and cedar resin,ask before touching owned tools,True,v2.0
+18,540,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.442,hinge ticks and thyme paper,ask before touching owned tools,True,v2.1
+18,540,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.462,page flutter and ink linen,ask before touching owned tools,True,v2.2
+18,540,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.482,static crickets and lamp oil,ask before touching owned tools,True,v2.3
+18,540,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.502,cart creak and apple soil,ask before touching owned tools,True,v2.4
+18,540,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.522,bell hum and hot copper,ask before touching owned tools,True,v2.5
+19,570,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.425,river slap and cedar resin,ask before touching owned tools,True,v2.1
+19,570,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.445,hinge ticks and thyme paper,ask before touching owned tools,True,v2.2
+19,570,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.465,page flutter and ink linen,ask before touching owned tools,True,v2.3
+19,570,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.485,static crickets and lamp oil,ask before touching owned tools,True,v2.4
+19,570,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.505,cart creak and apple soil,ask before touching owned tools,True,v2.5
+19,570,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.525,bell hum and hot copper,ask before touching owned tools,True,v2.6
+20,600,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.428,river slap and cedar resin,ask before touching owned tools,True,v2.2
+20,600,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.448,hinge ticks and thyme paper,ask before touching owned tools,True,v2.3
+20,600,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.468,page flutter and ink linen,ask before touching owned tools,True,v2.4
+20,600,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.488,static crickets and lamp oil,ask before touching owned tools,True,v2.5
+20,600,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.508,cart creak and apple soil,ask before touching owned tools,True,v2.6
+20,600,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.528,bell hum and hot copper,ask before touching owned tools,True,v2.7
+21,630,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.443,river slap and cedar resin,ask before touching owned tools,True,v3.3
+21,630,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.463,hinge ticks and thyme paper,ask before touching owned tools,True,v3.4
+21,630,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.483,page flutter and ink linen,ask before touching owned tools,True,v3.5
+21,630,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.503,static crickets and lamp oil,ask before touching owned tools,True,v3.6
+21,630,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.523,cart creak and apple soil,ask before touching owned tools,True,v3.7
+21,630,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.543,bell hum and hot copper,ask before touching owned tools,True,v3.8
+22,660,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.446,river slap and cedar resin,ask before touching owned tools,True,v3.4
+22,660,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.466,hinge ticks and thyme paper,ask before touching owned tools,True,v3.5
+22,660,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.486,page flutter and ink linen,ask before touching owned tools,True,v3.6
+22,660,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.506,static crickets and lamp oil,ask before touching owned tools,True,v3.7
+22,660,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.526,cart creak and apple soil,ask before touching owned tools,True,v3.8
+22,660,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.546,bell hum and hot copper,ask before touching owned tools,True,v3.0
+23,690,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.449,river slap and cedar resin,ask before touching owned tools,True,v3.5
+23,690,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.469,hinge ticks and thyme paper,ask before touching owned tools,True,v3.6
+23,690,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.489,page flutter and ink linen,ask before touching owned tools,True,v3.7
+23,690,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.509,static crickets and lamp oil,ask before touching owned tools,True,v3.8
+23,690,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.529,cart creak and apple soil,ask before touching owned tools,True,v3.0
+23,690,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.549,bell hum and hot copper,ask before touching owned tools,True,v3.1
+24,720,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.416,river slap and cedar resin,ask before touching owned tools,True,v3.6
+24,720,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.436,hinge ticks and thyme paper,ask before touching owned tools,True,v3.7
+24,720,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.456,page flutter and ink linen,ask before touching owned tools,True,v3.8
+24,720,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.476,static crickets and lamp oil,ask before touching owned tools,True,v3.0
+24,720,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.496,cart creak and apple soil,ask before touching owned tools,True,v3.1
+24,720,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.516,bell hum and hot copper,ask before touching owned tools,True,v3.2
+25,750,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.419,river slap and cedar resin,ask before touching owned tools,True,v3.7
+25,750,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.439,hinge ticks and thyme paper,ask before touching owned tools,True,v3.8
+25,750,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.459,page flutter and ink linen,ask before touching owned tools,True,v3.0
+25,750,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.479,static crickets and lamp oil,ask before touching owned tools,True,v3.1
+25,750,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.499,cart creak and apple soil,ask before touching owned tools,True,v3.2
+25,750,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.519,bell hum and hot copper,ask before touching owned tools,True,v3.3
+26,780,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.422,river slap and cedar resin,ask before touching owned tools,True,v3.8
+26,780,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.442,hinge ticks and thyme paper,ask before touching owned tools,True,v3.0
+26,780,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.462,page flutter and ink linen,ask before touching owned tools,True,v3.1
+26,780,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.482,static crickets and lamp oil,ask before touching owned tools,True,v3.2
+26,780,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.502,cart creak and apple soil,ask before touching owned tools,True,v3.3
+26,780,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.522,bell hum and hot copper,ask before touching owned tools,True,v3.4
+27,810,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.425,river slap and cedar resin,ask before touching owned tools,True,v3.0
+27,810,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.445,hinge ticks and thyme paper,ask before touching owned tools,True,v3.1
+27,810,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.465,page flutter and ink linen,ask before touching owned tools,True,v3.2
+27,810,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.485,static crickets and lamp oil,ask before touching owned tools,True,v3.3
+27,810,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.505,cart creak and apple soil,ask before touching owned tools,True,v3.4
+27,810,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.525,bell hum and hot copper,ask before touching owned tools,True,v3.5
+28,840,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.428,river slap and cedar resin,ask before touching owned tools,True,v3.1
+28,840,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.448,hinge ticks and thyme paper,ask before touching owned tools,True,v3.2
+28,840,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.468,page flutter and ink linen,ask before touching owned tools,True,v3.3
+28,840,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.488,static crickets and lamp oil,ask before touching owned tools,True,v3.4
+28,840,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.508,cart creak and apple soil,ask before touching owned tools,True,v3.5
+28,840,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.528,bell hum and hot copper,ask before touching owned tools,True,v3.6
+29,870,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.431,river slap and cedar resin,ask before touching owned tools,True,v3.2
+29,870,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.451,hinge ticks and thyme paper,ask before touching owned tools,True,v3.3
+29,870,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.471,page flutter and ink linen,ask before touching owned tools,True,v3.4
+29,870,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.491,static crickets and lamp oil,ask before touching owned tools,True,v3.5
+29,870,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.511,cart creak and apple soil,ask before touching owned tools,True,v3.6
+29,870,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.531,bell hum and hot copper,ask before touching owned tools,True,v3.7
+30,900,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.434,river slap and cedar resin,ask before touching owned tools,True,v3.3
+30,900,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.454,hinge ticks and thyme paper,ask before touching owned tools,True,v3.4
+30,900,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.474,page flutter and ink linen,ask before touching owned tools,True,v3.5
+30,900,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.494,static crickets and lamp oil,ask before touching owned tools,True,v3.6
+30,900,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.514,cart creak and apple soil,ask before touching owned tools,True,v3.7
+30,900,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.534,bell hum and hot copper,ask before touching owned tools,True,v3.8
+31,930,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.449,river slap and cedar resin,ask before touching owned tools,True,v4.4
+31,930,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.469,hinge ticks and thyme paper,ask before touching owned tools,True,v4.5
+31,930,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.489,page flutter and ink linen,ask before touching owned tools,True,v4.6
+31,930,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.509,static crickets and lamp oil,ask before touching owned tools,True,v4.7
+31,930,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.529,cart creak and apple soil,ask before touching owned tools,True,v4.8
+31,930,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.549,bell hum and hot copper,ask before touching owned tools,True,v4.0
+32,960,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.452,river slap and cedar resin,ask before touching owned tools,True,v4.5
+32,960,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.472,hinge ticks and thyme paper,ask before touching owned tools,True,v4.6
+32,960,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.492,page flutter and ink linen,ask before touching owned tools,True,v4.7
+32,960,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.512,static crickets and lamp oil,ask before touching owned tools,True,v4.8
+32,960,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.532,cart creak and apple soil,ask before touching owned tools,True,v4.0
+32,960,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.552,bell hum and hot copper,ask before touching owned tools,True,v4.1
+33,990,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.455,river slap and cedar resin,ask before touching owned tools,True,v4.6
+33,990,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.475,hinge ticks and thyme paper,ask before touching owned tools,True,v4.7
+33,990,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.495,page flutter and ink linen,ask before touching owned tools,True,v4.8
+33,990,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.515,static crickets and lamp oil,ask before touching owned tools,True,v4.0
+33,990,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.535,cart creak and apple soil,ask before touching owned tools,True,v4.1
+33,990,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.555,bell hum and hot copper,ask before touching owned tools,True,v4.2
+34,1020,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.458,river slap and cedar resin,ask before touching owned tools,True,v4.7
+34,1020,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.478,hinge ticks and thyme paper,ask before touching owned tools,True,v4.8
+34,1020,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.498,page flutter and ink linen,ask before touching owned tools,True,v4.0
+34,1020,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.518,static crickets and lamp oil,ask before touching owned tools,True,v4.1
+34,1020,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.538,cart creak and apple soil,ask before touching owned tools,True,v4.2
+34,1020,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.558,bell hum and hot copper,ask before touching owned tools,True,v4.3
+35,1050,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.461,river slap and cedar resin,ask before touching owned tools,True,v4.8
+35,1050,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.481,hinge ticks and thyme paper,ask before touching owned tools,True,v4.0
+35,1050,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.501,page flutter and ink linen,ask before touching owned tools,True,v4.1
+35,1050,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.521,static crickets and lamp oil,ask before touching owned tools,True,v4.2
+35,1050,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.541,cart creak and apple soil,ask before touching owned tools,True,v4.3
+35,1050,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.561,bell hum and hot copper,ask before touching owned tools,True,v4.4
+36,1080,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.428,river slap and cedar resin,ask before touching owned tools,True,v4.0
+36,1080,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.448,hinge ticks and thyme paper,ask before touching owned tools,True,v4.1
+36,1080,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.468,page flutter and ink linen,ask before touching owned tools,True,v4.2
+36,1080,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.488,static crickets and lamp oil,ask before touching owned tools,True,v4.3
+36,1080,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.508,cart creak and apple soil,ask before touching owned tools,True,v4.4
+36,1080,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.528,bell hum and hot copper,ask before touching owned tools,True,v4.5
+37,1110,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.431,river slap and cedar resin,ask before touching owned tools,True,v4.1
+37,1110,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.451,hinge ticks and thyme paper,ask before touching owned tools,True,v4.2
+37,1110,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.471,page flutter and ink linen,ask before touching owned tools,True,v4.3
+37,1110,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.491,static crickets and lamp oil,ask before touching owned tools,True,v4.4
+37,1110,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.511,cart creak and apple soil,ask before touching owned tools,True,v4.5
+37,1110,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.531,bell hum and hot copper,ask before touching owned tools,True,v4.6
+38,1140,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.434,river slap and cedar resin,ask before touching owned tools,True,v4.2
+38,1140,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.454,hinge ticks and thyme paper,ask before touching owned tools,True,v4.3
+38,1140,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.474,page flutter and ink linen,ask before touching owned tools,True,v4.4
+38,1140,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.494,static crickets and lamp oil,ask before touching owned tools,True,v4.5
+38,1140,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.514,cart creak and apple soil,ask before touching owned tools,True,v4.6
+38,1140,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.534,bell hum and hot copper,ask before touching owned tools,True,v4.7
+39,1170,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.437,river slap and cedar resin,ask before touching owned tools,True,v4.3
+39,1170,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.457,hinge ticks and thyme paper,ask before touching owned tools,True,v4.4
+39,1170,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.477,page flutter and ink linen,ask before touching owned tools,True,v4.5
+39,1170,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.497,static crickets and lamp oil,ask before touching owned tools,True,v4.6
+39,1170,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.517,cart creak and apple soil,ask before touching owned tools,True,v4.7
+39,1170,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.537,bell hum and hot copper,ask before touching owned tools,True,v4.8
+40,1200,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.44,river slap and cedar resin,ask before touching owned tools,True,v4.4
+40,1200,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.46,hinge ticks and thyme paper,ask before touching owned tools,True,v4.5
+40,1200,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.48,page flutter and ink linen,ask before touching owned tools,True,v4.6
+40,1200,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.5,static crickets and lamp oil,ask before touching owned tools,True,v4.7
+40,1200,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.52,cart creak and apple soil,ask before touching owned tools,True,v4.8
+40,1200,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.54,bell hum and hot copper,ask before touching owned tools,True,v4.0
+41,1230,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.455,river slap and cedar resin,ask before touching owned tools,True,v5.5
+41,1230,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.475,hinge ticks and thyme paper,ask before touching owned tools,True,v5.6
+41,1230,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.495,page flutter and ink linen,ask before touching owned tools,True,v5.7
+41,1230,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.515,static crickets and lamp oil,ask before touching owned tools,True,v5.8
+41,1230,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.535,cart creak and apple soil,ask before touching owned tools,True,v5.0
+41,1230,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.555,bell hum and hot copper,ask before touching owned tools,True,v5.1
+42,1260,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.458,river slap and cedar resin,ask before touching owned tools,True,v5.6
+42,1260,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.478,hinge ticks and thyme paper,ask before touching owned tools,True,v5.7
+42,1260,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.498,page flutter and ink linen,ask before touching owned tools,True,v5.8
+42,1260,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.518,static crickets and lamp oil,ask before touching owned tools,True,v5.0
+42,1260,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.538,cart creak and apple soil,ask before touching owned tools,True,v5.1
+42,1260,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.558,bell hum and hot copper,ask before touching owned tools,True,v5.2
+43,1290,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.461,river slap and cedar resin,ask before touching owned tools,True,v5.7
+43,1290,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.481,hinge ticks and thyme paper,ask before touching owned tools,True,v5.8
+43,1290,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.501,page flutter and ink linen,ask before touching owned tools,True,v5.0
+43,1290,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.521,static crickets and lamp oil,ask before touching owned tools,True,v5.1
+43,1290,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.541,cart creak and apple soil,ask before touching owned tools,True,v5.2
+43,1290,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.561,bell hum and hot copper,ask before touching owned tools,True,v5.3
+44,1320,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.464,river slap and cedar resin,ask before touching owned tools,True,v5.8
+44,1320,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.484,hinge ticks and thyme paper,ask before touching owned tools,True,v5.0
+44,1320,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.504,page flutter and ink linen,ask before touching owned tools,True,v5.1
+44,1320,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.524,static crickets and lamp oil,ask before touching owned tools,True,v5.2
+44,1320,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.544,cart creak and apple soil,ask before touching owned tools,True,v5.3
+44,1320,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.564,bell hum and hot copper,ask before touching owned tools,True,v5.4
+45,1350,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.467,river slap and cedar resin,ask before touching owned tools,True,v5.0
+45,1350,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.487,hinge ticks and thyme paper,ask before touching owned tools,True,v5.1
+45,1350,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.507,page flutter and ink linen,ask before touching owned tools,True,v5.2
+45,1350,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.527,static crickets and lamp oil,ask before touching owned tools,True,v5.3
+45,1350,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.547,cart creak and apple soil,ask before touching owned tools,True,v5.4
+45,1350,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.567,bell hum and hot copper,ask before touching owned tools,True,v5.5
+46,1380,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.47,river slap and cedar resin,ask before touching owned tools,True,v5.1
+46,1380,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.49,hinge ticks and thyme paper,ask before touching owned tools,True,v5.2
+46,1380,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.51,page flutter and ink linen,ask before touching owned tools,True,v5.3
+46,1380,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.53,static crickets and lamp oil,ask before touching owned tools,True,v5.4
+46,1380,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.55,cart creak and apple soil,ask before touching owned tools,True,v5.5
+46,1380,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.57,bell hum and hot copper,ask before touching owned tools,True,v5.6
+47,1410,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.473,river slap and cedar resin,ask before touching owned tools,True,v5.2
+47,1410,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.493,hinge ticks and thyme paper,ask before touching owned tools,True,v5.3
+47,1410,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.513,page flutter and ink linen,ask before touching owned tools,True,v5.4
+47,1410,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.533,static crickets and lamp oil,ask before touching owned tools,True,v5.5
+47,1410,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.553,cart creak and apple soil,ask before touching owned tools,True,v5.6
+47,1410,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.573,bell hum and hot copper,ask before touching owned tools,True,v5.7
+48,1440,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.44,river slap and cedar resin,ask before touching owned tools,True,v5.3
+48,1440,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.46,hinge ticks and thyme paper,ask before touching owned tools,True,v5.4
+48,1440,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.48,page flutter and ink linen,ask before touching owned tools,True,v5.5
+48,1440,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.5,static crickets and lamp oil,ask before touching owned tools,True,v5.6
+48,1440,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.52,cart creak and apple soil,ask before touching owned tools,True,v5.7
+48,1440,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.54,bell hum and hot copper,ask before touching owned tools,True,v5.8
+49,1470,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.443,river slap and cedar resin,ask before touching owned tools,True,v5.4
+49,1470,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.463,hinge ticks and thyme paper,ask before touching owned tools,True,v5.5
+49,1470,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.483,page flutter and ink linen,ask before touching owned tools,True,v5.6
+49,1470,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.503,static crickets and lamp oil,ask before touching owned tools,True,v5.7
+49,1470,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.523,cart creak and apple soil,ask before touching owned tools,True,v5.8
+49,1470,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.543,bell hum and hot copper,ask before touching owned tools,True,v5.0
+50,1500,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.446,river slap and cedar resin,ask before touching owned tools,True,v5.5
+50,1500,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.466,hinge ticks and thyme paper,ask before touching owned tools,True,v5.6
+50,1500,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.486,page flutter and ink linen,ask before touching owned tools,True,v5.7
+50,1500,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.506,static crickets and lamp oil,ask before touching owned tools,True,v5.8
+50,1500,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.526,cart creak and apple soil,ask before touching owned tools,True,v5.0
+50,1500,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.546,bell hum and hot copper,ask before touching owned tools,True,v5.1
+51,1530,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.461,river slap and cedar resin,ask before touching owned tools,True,v6.6
+51,1530,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.481,hinge ticks and thyme paper,ask before touching owned tools,True,v6.7
+51,1530,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.501,page flutter and ink linen,ask before touching owned tools,True,v6.8
+51,1530,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.521,static crickets and lamp oil,ask before touching owned tools,True,v6.0
+51,1530,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.541,cart creak and apple soil,ask before touching owned tools,True,v6.1
+51,1530,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.561,bell hum and hot copper,ask before touching owned tools,True,v6.2
+52,1560,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.464,river slap and cedar resin,ask before touching owned tools,True,v6.7
+52,1560,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.484,hinge ticks and thyme paper,ask before touching owned tools,True,v6.8
+52,1560,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.504,page flutter and ink linen,ask before touching owned tools,True,v6.0
+52,1560,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.524,static crickets and lamp oil,ask before touching owned tools,True,v6.1
+52,1560,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.544,cart creak and apple soil,ask before touching owned tools,True,v6.2
+52,1560,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.564,bell hum and hot copper,ask before touching owned tools,True,v6.3
+53,1590,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.467,river slap and cedar resin,ask before touching owned tools,True,v6.8
+53,1590,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.487,hinge ticks and thyme paper,ask before touching owned tools,True,v6.0
+53,1590,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.507,page flutter and ink linen,ask before touching owned tools,True,v6.1
+53,1590,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.527,static crickets and lamp oil,ask before touching owned tools,True,v6.2
+53,1590,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.547,cart creak and apple soil,ask before touching owned tools,True,v6.3
+53,1590,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.567,bell hum and hot copper,ask before touching owned tools,True,v6.4
+54,1620,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.47,river slap and cedar resin,ask before touching owned tools,True,v6.0
+54,1620,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.49,hinge ticks and thyme paper,ask before touching owned tools,True,v6.1
+54,1620,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.51,page flutter and ink linen,ask before touching owned tools,True,v6.2
+54,1620,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.53,static crickets and lamp oil,ask before touching owned tools,True,v6.3
+54,1620,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.55,cart creak and apple soil,ask before touching owned tools,True,v6.4
+54,1620,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.57,bell hum and hot copper,ask before touching owned tools,True,v6.5
+55,1650,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.473,river slap and cedar resin,ask before touching owned tools,True,v6.1
+55,1650,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.493,hinge ticks and thyme paper,ask before touching owned tools,True,v6.2
+55,1650,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.513,page flutter and ink linen,ask before touching owned tools,True,v6.3
+55,1650,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.533,static crickets and lamp oil,ask before touching owned tools,True,v6.4
+55,1650,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.553,cart creak and apple soil,ask before touching owned tools,True,v6.5
+55,1650,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.573,bell hum and hot copper,ask before touching owned tools,True,v6.6
+56,1680,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.476,river slap and cedar resin,ask before touching owned tools,True,v6.2
+56,1680,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.496,hinge ticks and thyme paper,ask before touching owned tools,True,v6.3
+56,1680,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.516,page flutter and ink linen,ask before touching owned tools,True,v6.4
+56,1680,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.536,static crickets and lamp oil,ask before touching owned tools,True,v6.5
+56,1680,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.556,cart creak and apple soil,ask before touching owned tools,True,v6.6
+56,1680,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.576,bell hum and hot copper,ask before touching owned tools,True,v6.7
+57,1710,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.479,river slap and cedar resin,ask before touching owned tools,True,v6.3
+57,1710,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.499,hinge ticks and thyme paper,ask before touching owned tools,True,v6.4
+57,1710,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.519,page flutter and ink linen,ask before touching owned tools,True,v6.5
+57,1710,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.539,static crickets and lamp oil,ask before touching owned tools,True,v6.6
+57,1710,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.559,cart creak and apple soil,ask before touching owned tools,True,v6.7
+57,1710,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.579,bell hum and hot copper,ask before touching owned tools,True,v6.8
+58,1740,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.482,river slap and cedar resin,ask before touching owned tools,True,v6.4
+58,1740,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.502,hinge ticks and thyme paper,ask before touching owned tools,True,v6.5
+58,1740,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.522,page flutter and ink linen,ask before touching owned tools,True,v6.6
+58,1740,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.542,static crickets and lamp oil,ask before touching owned tools,True,v6.7
+58,1740,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.562,cart creak and apple soil,ask before touching owned tools,True,v6.8
+58,1740,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.582,bell hum and hot copper,ask before touching owned tools,True,v6.0
+59,1770,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.485,river slap and cedar resin,ask before touching owned tools,True,v6.5
+59,1770,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.505,hinge ticks and thyme paper,ask before touching owned tools,True,v6.6
+59,1770,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.525,page flutter and ink linen,ask before touching owned tools,True,v6.7
+59,1770,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.545,static crickets and lamp oil,ask before touching owned tools,True,v6.8
+59,1770,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.565,cart creak and apple soil,ask before touching owned tools,True,v6.0
+59,1770,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.585,bell hum and hot copper,ask before touching owned tools,True,v6.1
+60,1800,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.452,river slap and cedar resin,ask before touching owned tools,True,v6.6
+60,1800,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.472,hinge ticks and thyme paper,ask before touching owned tools,True,v6.7
+60,1800,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.492,page flutter and ink linen,ask before touching owned tools,True,v6.8
+60,1800,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.512,static crickets and lamp oil,ask before touching owned tools,True,v6.0
+60,1800,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.532,cart creak and apple soil,ask before touching owned tools,True,v6.1
+60,1800,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.552,bell hum and hot copper,ask before touching owned tools,True,v6.2
+61,1830,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.467,river slap and cedar resin,ask before touching owned tools,True,v7.7
+61,1830,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.487,hinge ticks and thyme paper,ask before touching owned tools,True,v7.8
+61,1830,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.507,page flutter and ink linen,ask before touching owned tools,True,v7.0
+61,1830,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.527,static crickets and lamp oil,ask before touching owned tools,True,v7.1
+61,1830,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.547,cart creak and apple soil,ask before touching owned tools,True,v7.2
+61,1830,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.567,bell hum and hot copper,ask before touching owned tools,True,v7.3
+62,1860,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.47,river slap and cedar resin,ask before touching owned tools,True,v7.8
+62,1860,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.49,hinge ticks and thyme paper,ask before touching owned tools,True,v7.0
+62,1860,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.51,page flutter and ink linen,ask before touching owned tools,True,v7.1
+62,1860,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.53,static crickets and lamp oil,ask before touching owned tools,True,v7.2
+62,1860,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.55,cart creak and apple soil,ask before touching owned tools,True,v7.3
+62,1860,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.57,bell hum and hot copper,ask before touching owned tools,True,v7.4
+63,1890,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.473,river slap and cedar resin,ask before touching owned tools,True,v7.0
+63,1890,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.493,hinge ticks and thyme paper,ask before touching owned tools,True,v7.1
+63,1890,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.513,page flutter and ink linen,ask before touching owned tools,True,v7.2
+63,1890,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.533,static crickets and lamp oil,ask before touching owned tools,True,v7.3
+63,1890,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.553,cart creak and apple soil,ask before touching owned tools,True,v7.4
+63,1890,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.573,bell hum and hot copper,ask before touching owned tools,True,v7.5
+64,1920,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.476,river slap and cedar resin,ask before touching owned tools,True,v7.1
+64,1920,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.496,hinge ticks and thyme paper,ask before touching owned tools,True,v7.2
+64,1920,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.516,page flutter and ink linen,ask before touching owned tools,True,v7.3
+64,1920,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.536,static crickets and lamp oil,ask before touching owned tools,True,v7.4
+64,1920,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.556,cart creak and apple soil,ask before touching owned tools,True,v7.5
+64,1920,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.576,bell hum and hot copper,ask before touching owned tools,True,v7.6
+65,1950,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.479,river slap and cedar resin,ask before touching owned tools,True,v7.2
+65,1950,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.499,hinge ticks and thyme paper,ask before touching owned tools,True,v7.3
+65,1950,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.519,page flutter and ink linen,ask before touching owned tools,True,v7.4
+65,1950,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.539,static crickets and lamp oil,ask before touching owned tools,True,v7.5
+65,1950,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.559,cart creak and apple soil,ask before touching owned tools,True,v7.6
+65,1950,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.579,bell hum and hot copper,ask before touching owned tools,True,v7.7
+66,1980,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.482,river slap and cedar resin,ask before touching owned tools,True,v7.3
+66,1980,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.502,hinge ticks and thyme paper,ask before touching owned tools,True,v7.4
+66,1980,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.522,page flutter and ink linen,ask before touching owned tools,True,v7.5
+66,1980,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.542,static crickets and lamp oil,ask before touching owned tools,True,v7.6
+66,1980,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.562,cart creak and apple soil,ask before touching owned tools,True,v7.7
+66,1980,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.582,bell hum and hot copper,ask before touching owned tools,True,v7.8
+67,2010,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.485,river slap and cedar resin,ask before touching owned tools,True,v7.4
+67,2010,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.505,hinge ticks and thyme paper,ask before touching owned tools,True,v7.5
+67,2010,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.525,page flutter and ink linen,ask before touching owned tools,True,v7.6
+67,2010,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.545,static crickets and lamp oil,ask before touching owned tools,True,v7.7
+67,2010,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.565,cart creak and apple soil,ask before touching owned tools,True,v7.8
+67,2010,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.585,bell hum and hot copper,ask before touching owned tools,True,v7.0
+68,2040,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.488,river slap and cedar resin,ask before touching owned tools,True,v7.5
+68,2040,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.508,hinge ticks and thyme paper,ask before touching owned tools,True,v7.6
+68,2040,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.528,page flutter and ink linen,ask before touching owned tools,True,v7.7
+68,2040,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.548,static crickets and lamp oil,ask before touching owned tools,True,v7.8
+68,2040,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.568,cart creak and apple soil,ask before touching owned tools,True,v7.0
+68,2040,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.588,bell hum and hot copper,ask before touching owned tools,True,v7.1
+69,2070,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.491,river slap and cedar resin,ask before touching owned tools,True,v7.6
+69,2070,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.511,hinge ticks and thyme paper,ask before touching owned tools,True,v7.7
+69,2070,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.531,page flutter and ink linen,ask before touching owned tools,True,v7.8
+69,2070,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.551,static crickets and lamp oil,ask before touching owned tools,True,v7.0
+69,2070,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.571,cart creak and apple soil,ask before touching owned tools,True,v7.1
+69,2070,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.591,bell hum and hot copper,ask before touching owned tools,True,v7.2
+70,2100,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.494,river slap and cedar resin,ask before touching owned tools,True,v7.7
+70,2100,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.514,hinge ticks and thyme paper,ask before touching owned tools,True,v7.8
+70,2100,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.534,page flutter and ink linen,ask before touching owned tools,True,v7.0
+70,2100,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.554,static crickets and lamp oil,ask before touching owned tools,True,v7.1
+70,2100,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.574,cart creak and apple soil,ask before touching owned tools,True,v7.2
+70,2100,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.594,bell hum and hot copper,ask before touching owned tools,True,v7.3
+71,2130,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.509,river slap and cedar resin,ask before touching owned tools,True,v8.8
+71,2130,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.529,hinge ticks and thyme paper,ask before touching owned tools,True,v8.0
+71,2130,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.549,page flutter and ink linen,ask before touching owned tools,True,v8.1
+71,2130,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.569,static crickets and lamp oil,ask before touching owned tools,True,v8.2
+71,2130,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.589,cart creak and apple soil,ask before touching owned tools,True,v8.3
+71,2130,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.609,bell hum and hot copper,ask before touching owned tools,True,v8.4
+72,2160,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.476,river slap and cedar resin,ask before touching owned tools,True,v8.0
+72,2160,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.496,hinge ticks and thyme paper,ask before touching owned tools,True,v8.1
+72,2160,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.516,page flutter and ink linen,ask before touching owned tools,True,v8.2
+72,2160,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.536,static crickets and lamp oil,ask before touching owned tools,True,v8.3
+72,2160,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.556,cart creak and apple soil,ask before touching owned tools,True,v8.4
+72,2160,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.576,bell hum and hot copper,ask before touching owned tools,True,v8.5
+73,2190,riverbend,plank-listening-seasonal repair,teach dry crossing and bounded consent,node-03,0.479,river slap and cedar resin,ask before touching owned tools,True,v8.1
+73,2190,roofward,sun-ledger-object blessing,teach herb preservation and bounded consent,node-05,0.499,hinge ticks and thyme paper,ask before touching owned tools,True,v8.2
+73,2190,archive,spool-naming-boundary asking,teach signal memory and bounded consent,node-08,0.519,page flutter and ink linen,ask before touching owned tools,True,v8.3
+73,2190,signal,lantern-turning-grief return,teach path visibility and bounded consent,node-11,0.539,static crickets and lamp oil,ask before touching owned tools,True,v8.4
+73,2190,orchard,satchel-vow-child naming,teach dry seed continuity and bounded consent,node-01,0.559,cart creak and apple soil,ask before touching owned tools,True,v8.5
+73,2190,repair_ring,spark-distance-trade witness,teach safe repair space and bounded consent,node-09,0.579,bell hum and hot copper,ask before touching owned tools,True,v8.6
+74,2220,riverbend,plank-listening-object blessing,teach dry crossing and bounded consent,node-03,0.482,river slap and cedar resin,ask before touching owned tools,True,v8.2
+74,2220,roofward,sun-ledger-boundary asking,teach herb preservation and bounded consent,node-05,0.502,hinge ticks and thyme paper,ask before touching owned tools,True,v8.3
+74,2220,archive,spool-naming-grief return,teach signal memory and bounded consent,node-08,0.522,page flutter and ink linen,ask before touching owned tools,True,v8.4
+74,2220,signal,lantern-turning-child naming,teach path visibility and bounded consent,node-11,0.542,static crickets and lamp oil,ask before touching owned tools,True,v8.5
+74,2220,orchard,satchel-vow-trade witness,teach dry seed continuity and bounded consent,node-01,0.562,cart creak and apple soil,ask before touching owned tools,True,v8.6
+74,2220,repair_ring,spark-distance-avatar waiting myth,teach safe repair space and bounded consent,node-09,0.582,bell hum and hot copper,ask before touching owned tools,True,v8.7
+75,2250,riverbend,plank-listening-boundary asking,teach dry crossing and bounded consent,node-03,0.485,river slap and cedar resin,ask before touching owned tools,True,v8.3
+75,2250,roofward,sun-ledger-grief return,teach herb preservation and bounded consent,node-05,0.505,hinge ticks and thyme paper,ask before touching owned tools,True,v8.4
+75,2250,archive,spool-naming-child naming,teach signal memory and bounded consent,node-08,0.525,page flutter and ink linen,ask before touching owned tools,True,v8.5
+75,2250,signal,lantern-turning-trade witness,teach path visibility and bounded consent,node-11,0.545,static crickets and lamp oil,ask before touching owned tools,True,v8.6
+75,2250,orchard,satchel-vow-avatar waiting myth,teach dry seed continuity and bounded consent,node-01,0.565,cart creak and apple soil,ask before touching owned tools,True,v8.7
+75,2250,repair_ring,spark-distance-founding vow,teach safe repair space and bounded consent,node-09,0.585,bell hum and hot copper,ask before touching owned tools,True,v8.8
+76,2280,riverbend,plank-listening-grief return,teach dry crossing and bounded consent,node-03,0.488,river slap and cedar resin,ask before touching owned tools,True,v8.4
+76,2280,roofward,sun-ledger-child naming,teach herb preservation and bounded consent,node-05,0.508,hinge ticks and thyme paper,ask before touching owned tools,True,v8.5
+76,2280,archive,spool-naming-trade witness,teach signal memory and bounded consent,node-08,0.528,page flutter and ink linen,ask before touching owned tools,True,v8.6
+76,2280,signal,lantern-turning-avatar waiting myth,teach path visibility and bounded consent,node-11,0.548,static crickets and lamp oil,ask before touching owned tools,True,v8.7
+76,2280,orchard,satchel-vow-founding vow,teach dry seed continuity and bounded consent,node-01,0.568,cart creak and apple soil,ask before touching owned tools,True,v8.8
+76,2280,repair_ring,spark-distance-seasonal repair,teach safe repair space and bounded consent,node-09,0.588,bell hum and hot copper,ask before touching owned tools,True,v8.0
+77,2310,riverbend,plank-listening-child naming,teach dry crossing and bounded consent,node-03,0.491,river slap and cedar resin,ask before touching owned tools,True,v8.5
+77,2310,roofward,sun-ledger-trade witness,teach herb preservation and bounded consent,node-05,0.511,hinge ticks and thyme paper,ask before touching owned tools,True,v8.6
+77,2310,archive,spool-naming-avatar waiting myth,teach signal memory and bounded consent,node-08,0.531,page flutter and ink linen,ask before touching owned tools,True,v8.7
+77,2310,signal,lantern-turning-founding vow,teach path visibility and bounded consent,node-11,0.551,static crickets and lamp oil,ask before touching owned tools,True,v8.8
+77,2310,orchard,satchel-vow-seasonal repair,teach dry seed continuity and bounded consent,node-01,0.571,cart creak and apple soil,ask before touching owned tools,True,v8.0
+77,2310,repair_ring,spark-distance-object blessing,teach safe repair space and bounded consent,node-09,0.591,bell hum and hot copper,ask before touching owned tools,True,v8.1
+78,2340,riverbend,plank-listening-trade witness,teach dry crossing and bounded consent,node-03,0.494,river slap and cedar resin,ask before touching owned tools,True,v8.6
+78,2340,roofward,sun-ledger-avatar waiting myth,teach herb preservation and bounded consent,node-05,0.514,hinge ticks and thyme paper,ask before touching owned tools,True,v8.7
+78,2340,archive,spool-naming-founding vow,teach signal memory and bounded consent,node-08,0.534,page flutter and ink linen,ask before touching owned tools,True,v8.8
+78,2340,signal,lantern-turning-seasonal repair,teach path visibility and bounded consent,node-11,0.554,static crickets and lamp oil,ask before touching owned tools,True,v8.0
+78,2340,orchard,satchel-vow-object blessing,teach dry seed continuity and bounded consent,node-01,0.574,cart creak and apple soil,ask before touching owned tools,True,v8.1
+78,2340,repair_ring,spark-distance-boundary asking,teach safe repair space and bounded consent,node-09,0.594,bell hum and hot copper,ask before touching owned tools,True,v8.2
+79,2370,riverbend,plank-listening-avatar waiting myth,teach dry crossing and bounded consent,node-03,0.497,river slap and cedar resin,ask before touching owned tools,True,v8.7
+79,2370,roofward,sun-ledger-founding vow,teach herb preservation and bounded consent,node-05,0.517,hinge ticks and thyme paper,ask before touching owned tools,True,v8.8
+79,2370,archive,spool-naming-seasonal repair,teach signal memory and bounded consent,node-08,0.537,page flutter and ink linen,ask before touching owned tools,True,v8.0
+79,2370,signal,lantern-turning-object blessing,teach path visibility and bounded consent,node-11,0.557,static crickets and lamp oil,ask before touching owned tools,True,v8.1
+79,2370,orchard,satchel-vow-boundary asking,teach dry seed continuity and bounded consent,node-01,0.577,cart creak and apple soil,ask before touching owned tools,True,v8.2
+79,2370,repair_ring,spark-distance-grief return,teach safe repair space and bounded consent,node-09,0.597,bell hum and hot copper,ask before touching owned tools,True,v8.3
+80,2400,riverbend,plank-listening-founding vow,teach dry crossing and bounded consent,node-03,0.5,river slap and cedar resin,ask before touching owned tools,True,v8.8
+80,2400,roofward,sun-ledger-seasonal repair,teach herb preservation and bounded consent,node-05,0.52,hinge ticks and thyme paper,ask before touching owned tools,True,v8.0
+80,2400,archive,spool-naming-object blessing,teach signal memory and bounded consent,node-08,0.54,page flutter and ink linen,ask before touching owned tools,True,v8.1
+80,2400,signal,lantern-turning-boundary asking,teach path visibility and bounded consent,node-11,0.56,static crickets and lamp oil,ask before touching owned tools,True,v8.2
+80,2400,orchard,satchel-vow-grief return,teach dry seed continuity and bounded consent,node-01,0.58,cart creak and apple soil,ask before touching owned tools,True,v8.3
+80,2400,repair_ring,spark-distance-child naming,teach safe repair space and bounded consent,node-09,0.6,bell hum and hot copper,ask before touching owned tools,True,v8.4

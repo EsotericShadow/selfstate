@@ -1,0 +1,481 @@
+generation,year,settlement_id,technology_stage,prerequisite_stage,practical_need,material,failure_memory,adoption_rate,rollback_or_loss,causally_linked
+1,30,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.23,False,True
+1,30,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.23,False,True
+1,30,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.23,False,True
+1,30,signal,hand marks,hand marks,path visibility,copper,storage decay,0.23,False,True
+1,30,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.23,False,True
+1,30,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.23,False,True
+2,60,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.24,False,True
+2,60,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.24,False,True
+2,60,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.24,False,True
+2,60,signal,hand marks,hand marks,path visibility,copper,storage decay,0.24,False,True
+2,60,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.24,False,True
+2,60,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.24,False,True
+3,90,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.25,False,True
+3,90,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.25,False,True
+3,90,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.25,False,True
+3,90,signal,hand marks,hand marks,path visibility,copper,storage decay,0.25,False,True
+3,90,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.25,False,True
+3,90,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.25,False,True
+4,120,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.26,False,True
+4,120,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.26,False,True
+4,120,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.18,True,True
+4,120,signal,hand marks,hand marks,path visibility,copper,storage decay,0.26,False,True
+4,120,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.26,False,True
+4,120,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.26,False,True
+5,150,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.27,False,True
+5,150,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.27,False,True
+5,150,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.27,False,True
+5,150,signal,hand marks,hand marks,path visibility,copper,storage decay,0.27,False,True
+5,150,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.27,False,True
+5,150,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.27,False,True
+6,180,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.28,False,True
+6,180,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.28,False,True
+6,180,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.28,False,True
+6,180,signal,hand marks,hand marks,path visibility,copper,storage decay,0.28,False,True
+6,180,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.28,False,True
+6,180,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.28,False,True
+7,210,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.29,False,True
+7,210,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.29,False,True
+7,210,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.29,False,True
+7,210,signal,hand marks,hand marks,path visibility,copper,storage decay,0.29,False,True
+7,210,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.29,False,True
+7,210,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.29,False,True
+8,240,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.3,False,True
+8,240,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.3,False,True
+8,240,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.3,False,True
+8,240,signal,hand marks,hand marks,path visibility,copper,storage decay,0.3,False,True
+8,240,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.3,False,True
+8,240,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.3,False,True
+9,270,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.31,False,True
+9,270,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.31,False,True
+9,270,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.31,False,True
+9,270,signal,hand marks,hand marks,path visibility,copper,storage decay,0.31,False,True
+9,270,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.31,False,True
+9,270,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.31,False,True
+10,300,riverbend,hand marks,hand marks,dry crossing,cedar,flood loss,0.32,False,True
+10,300,roofward,hand marks,hand marks,herb preservation,glass,storage decay,0.32,False,True
+10,300,archive,hand marks,hand marks,signal memory,inkstone,storage decay,0.32,False,True
+10,300,signal,hand marks,hand marks,path visibility,copper,storage decay,0.32,False,True
+10,300,orchard,hand marks,hand marks,dry seed continuity,clay,storage decay,0.32,False,True
+10,300,repair_ring,hand marks,hand marks,safe repair space,bronze,spark crowding,0.32,False,True
+11,330,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.37,False,True
+11,330,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.37,False,True
+11,330,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.37,False,True
+11,330,signal,woven counters,hand marks,path visibility,copper,storage decay,0.37,False,True
+11,330,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.37,False,True
+11,330,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.37,False,True
+12,360,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.38,False,True
+12,360,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.38,False,True
+12,360,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.38,False,True
+12,360,signal,woven counters,hand marks,path visibility,copper,storage decay,0.3,True,True
+12,360,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.38,False,True
+12,360,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.38,False,True
+13,390,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.39,False,True
+13,390,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.39,False,True
+13,390,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.39,False,True
+13,390,signal,woven counters,hand marks,path visibility,copper,storage decay,0.39,False,True
+13,390,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.39,False,True
+13,390,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.39,False,True
+14,420,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.4,False,True
+14,420,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.4,False,True
+14,420,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.4,False,True
+14,420,signal,woven counters,hand marks,path visibility,copper,storage decay,0.4,False,True
+14,420,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.4,False,True
+14,420,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.4,False,True
+15,450,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.41,False,True
+15,450,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.41,False,True
+15,450,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.41,False,True
+15,450,signal,woven counters,hand marks,path visibility,copper,storage decay,0.41,False,True
+15,450,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.41,False,True
+15,450,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.41,False,True
+16,480,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.42,False,True
+16,480,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.42,False,True
+16,480,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.42,False,True
+16,480,signal,woven counters,hand marks,path visibility,copper,storage decay,0.42,False,True
+16,480,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.42,False,True
+16,480,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.42,False,True
+17,510,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.43,False,True
+17,510,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.43,False,True
+17,510,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.43,False,True
+17,510,signal,woven counters,hand marks,path visibility,copper,storage decay,0.43,False,True
+17,510,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.43,False,True
+17,510,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.43,False,True
+18,540,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.44,False,True
+18,540,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.44,False,True
+18,540,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.44,False,True
+18,540,signal,woven counters,hand marks,path visibility,copper,storage decay,0.44,False,True
+18,540,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.44,False,True
+18,540,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.44,False,True
+19,570,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.45,False,True
+19,570,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.45,False,True
+19,570,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.45,False,True
+19,570,signal,woven counters,hand marks,path visibility,copper,storage decay,0.45,False,True
+19,570,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.45,False,True
+19,570,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.45,False,True
+20,600,riverbend,woven counters,hand marks,dry crossing,cedar,flood loss,0.46,False,True
+20,600,roofward,woven counters,hand marks,herb preservation,glass,storage decay,0.46,False,True
+20,600,archive,woven counters,hand marks,signal memory,inkstone,storage decay,0.46,False,True
+20,600,signal,woven counters,hand marks,path visibility,copper,storage decay,0.46,False,True
+20,600,orchard,woven counters,hand marks,dry seed continuity,clay,storage decay,0.38,True,True
+20,600,repair_ring,woven counters,hand marks,safe repair space,bronze,spark crowding,0.46,False,True
+21,630,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.51,False,True
+21,630,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.51,False,True
+21,630,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.51,False,True
+21,630,signal,water clocks,woven counters,path visibility,copper,storage decay,0.51,False,True
+21,630,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.51,False,True
+21,630,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.51,False,True
+22,660,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.52,False,True
+22,660,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.52,False,True
+22,660,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.52,False,True
+22,660,signal,water clocks,woven counters,path visibility,copper,storage decay,0.52,False,True
+22,660,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.52,False,True
+22,660,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.52,False,True
+23,690,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.53,False,True
+23,690,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.53,False,True
+23,690,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.53,False,True
+23,690,signal,water clocks,woven counters,path visibility,copper,storage decay,0.53,False,True
+23,690,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.53,False,True
+23,690,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.53,False,True
+24,720,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.46,True,True
+24,720,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.54,False,True
+24,720,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.54,False,True
+24,720,signal,water clocks,woven counters,path visibility,copper,storage decay,0.54,False,True
+24,720,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.54,False,True
+24,720,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.54,False,True
+25,750,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.55,False,True
+25,750,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.55,False,True
+25,750,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.55,False,True
+25,750,signal,water clocks,woven counters,path visibility,copper,storage decay,0.55,False,True
+25,750,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.55,False,True
+25,750,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.55,False,True
+26,780,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.56,False,True
+26,780,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.56,False,True
+26,780,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.56,False,True
+26,780,signal,water clocks,woven counters,path visibility,copper,storage decay,0.56,False,True
+26,780,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.56,False,True
+26,780,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.56,False,True
+27,810,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.57,False,True
+27,810,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.57,False,True
+27,810,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.57,False,True
+27,810,signal,water clocks,woven counters,path visibility,copper,storage decay,0.57,False,True
+27,810,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.57,False,True
+27,810,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.57,False,True
+28,840,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.58,False,True
+28,840,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.58,False,True
+28,840,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.58,False,True
+28,840,signal,water clocks,woven counters,path visibility,copper,storage decay,0.58,False,True
+28,840,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.58,False,True
+28,840,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.5,True,True
+29,870,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.59,False,True
+29,870,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.59,False,True
+29,870,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.59,False,True
+29,870,signal,water clocks,woven counters,path visibility,copper,storage decay,0.59,False,True
+29,870,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.59,False,True
+29,870,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.59,False,True
+30,900,riverbend,water clocks,woven counters,dry crossing,cedar,flood loss,0.6,False,True
+30,900,roofward,water clocks,woven counters,herb preservation,glass,storage decay,0.6,False,True
+30,900,archive,water clocks,woven counters,signal memory,inkstone,storage decay,0.6,False,True
+30,900,signal,water clocks,woven counters,path visibility,copper,storage decay,0.6,False,True
+30,900,orchard,water clocks,woven counters,dry seed continuity,clay,storage decay,0.6,False,True
+30,900,repair_ring,water clocks,woven counters,safe repair space,bronze,spark crowding,0.6,False,True
+31,930,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.65,False,True
+31,930,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.65,False,True
+31,930,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.65,False,True
+31,930,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.65,False,True
+31,930,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.65,False,True
+31,930,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.65,False,True
+32,960,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.66,False,True
+32,960,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.58,True,True
+32,960,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.66,False,True
+32,960,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.66,False,True
+32,960,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.66,False,True
+32,960,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.66,False,True
+33,990,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.67,False,True
+33,990,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.67,False,True
+33,990,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.67,False,True
+33,990,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.67,False,True
+33,990,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.67,False,True
+33,990,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.67,False,True
+34,1020,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.68,False,True
+34,1020,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.68,False,True
+34,1020,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.68,False,True
+34,1020,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.68,False,True
+34,1020,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.68,False,True
+34,1020,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.68,False,True
+35,1050,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.69,False,True
+35,1050,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.69,False,True
+35,1050,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.69,False,True
+35,1050,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.69,False,True
+35,1050,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.69,False,True
+35,1050,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.69,False,True
+36,1080,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.7,False,True
+36,1080,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.7,False,True
+36,1080,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.7,False,True
+36,1080,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.7,False,True
+36,1080,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.7,False,True
+36,1080,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.7,False,True
+37,1110,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.71,False,True
+37,1110,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.71,False,True
+37,1110,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.71,False,True
+37,1110,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.71,False,True
+37,1110,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.71,False,True
+37,1110,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.71,False,True
+38,1140,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.72,False,True
+38,1140,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.72,False,True
+38,1140,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.72,False,True
+38,1140,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.72,False,True
+38,1140,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.72,False,True
+38,1140,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.72,False,True
+39,1170,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.73,False,True
+39,1170,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.73,False,True
+39,1170,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.73,False,True
+39,1170,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.73,False,True
+39,1170,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.73,False,True
+39,1170,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.73,False,True
+40,1200,riverbend,kiln alloys,water clocks,dry crossing,cedar,flood loss,0.74,False,True
+40,1200,roofward,kiln alloys,water clocks,herb preservation,glass,storage decay,0.74,False,True
+40,1200,archive,kiln alloys,water clocks,signal memory,inkstone,storage decay,0.66,True,True
+40,1200,signal,kiln alloys,water clocks,path visibility,copper,storage decay,0.74,False,True
+40,1200,orchard,kiln alloys,water clocks,dry seed continuity,clay,storage decay,0.74,False,True
+40,1200,repair_ring,kiln alloys,water clocks,safe repair space,bronze,spark crowding,0.74,False,True
+41,1230,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.79,False,True
+41,1230,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.79,False,True
+41,1230,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.79,False,True
+41,1230,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.79,False,True
+41,1230,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.79,False,True
+41,1230,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.79,False,True
+42,1260,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.8,False,True
+42,1260,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.8,False,True
+42,1260,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.8,False,True
+42,1260,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.8,False,True
+42,1260,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.8,False,True
+42,1260,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.8,False,True
+43,1290,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.81,False,True
+43,1290,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.81,False,True
+43,1290,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.81,False,True
+43,1290,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.81,False,True
+43,1290,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.81,False,True
+43,1290,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.81,False,True
+44,1320,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.82,False,True
+44,1320,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.82,False,True
+44,1320,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.82,False,True
+44,1320,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.82,False,True
+44,1320,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.82,False,True
+44,1320,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.82,False,True
+45,1350,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.83,False,True
+45,1350,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.83,False,True
+45,1350,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.83,False,True
+45,1350,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.83,False,True
+45,1350,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.83,False,True
+45,1350,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.83,False,True
+46,1380,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.84,False,True
+46,1380,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.84,False,True
+46,1380,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.84,False,True
+46,1380,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.84,False,True
+46,1380,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.84,False,True
+46,1380,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.84,False,True
+47,1410,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.85,False,True
+47,1410,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.85,False,True
+47,1410,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.85,False,True
+47,1410,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.85,False,True
+47,1410,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.85,False,True
+47,1410,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.85,False,True
+48,1440,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.86,False,True
+48,1440,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.86,False,True
+48,1440,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.86,False,True
+48,1440,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.78,True,True
+48,1440,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.86,False,True
+48,1440,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.86,False,True
+49,1470,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.87,False,True
+49,1470,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.87,False,True
+49,1470,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.87,False,True
+49,1470,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.87,False,True
+49,1470,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.87,False,True
+49,1470,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.87,False,True
+50,1500,riverbend,signal lenses,kiln alloys,dry crossing,cedar,flood loss,0.88,False,True
+50,1500,roofward,signal lenses,kiln alloys,herb preservation,glass,storage decay,0.88,False,True
+50,1500,archive,signal lenses,kiln alloys,signal memory,inkstone,storage decay,0.88,False,True
+50,1500,signal,signal lenses,kiln alloys,path visibility,copper,storage decay,0.88,False,True
+50,1500,orchard,signal lenses,kiln alloys,dry seed continuity,clay,storage decay,0.88,False,True
+50,1500,repair_ring,signal lenses,kiln alloys,safe repair space,bronze,spark crowding,0.88,False,True
+51,1530,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.93,False,True
+51,1530,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.93,False,True
+51,1530,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.93,False,True
+51,1530,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.93,False,True
+51,1530,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.93,False,True
+51,1530,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.93,False,True
+52,1560,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.94,False,True
+52,1560,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.94,False,True
+52,1560,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.94,False,True
+52,1560,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.94,False,True
+52,1560,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.94,False,True
+52,1560,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.94,False,True
+53,1590,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.95,False,True
+53,1590,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.95,False,True
+53,1590,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.95,False,True
+53,1590,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.95,False,True
+53,1590,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.95,False,True
+53,1590,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.95,False,True
+54,1620,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.96,False,True
+54,1620,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+54,1620,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+54,1620,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+54,1620,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.96,False,True
+54,1620,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+55,1650,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.96,False,True
+55,1650,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+55,1650,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+55,1650,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+55,1650,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.96,False,True
+55,1650,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+56,1680,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.96,False,True
+56,1680,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+56,1680,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+56,1680,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+56,1680,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.9,True,True
+56,1680,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+57,1710,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.96,False,True
+57,1710,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+57,1710,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+57,1710,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+57,1710,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.96,False,True
+57,1710,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+58,1740,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.96,False,True
+58,1740,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+58,1740,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+58,1740,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+58,1740,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.96,False,True
+58,1740,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+59,1770,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.96,False,True
+59,1770,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+59,1770,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+59,1770,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+59,1770,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.96,False,True
+59,1770,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+60,1800,riverbend,memory looms,signal lenses,dry crossing,cedar,flood loss,0.94,True,True
+60,1800,roofward,memory looms,signal lenses,herb preservation,glass,storage decay,0.96,False,True
+60,1800,archive,memory looms,signal lenses,signal memory,inkstone,storage decay,0.96,False,True
+60,1800,signal,memory looms,signal lenses,path visibility,copper,storage decay,0.96,False,True
+60,1800,orchard,memory looms,signal lenses,dry seed continuity,clay,storage decay,0.96,False,True
+60,1800,repair_ring,memory looms,signal lenses,safe repair space,bronze,spark crowding,0.96,False,True
+61,1830,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+61,1830,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+61,1830,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+61,1830,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+61,1830,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+61,1830,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+62,1860,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+62,1860,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+62,1860,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+62,1860,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+62,1860,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+62,1860,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+63,1890,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+63,1890,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+63,1890,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+63,1890,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+63,1890,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+63,1890,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+64,1920,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+64,1920,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+64,1920,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+64,1920,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+64,1920,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+64,1920,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,True,True
+65,1950,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+65,1950,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+65,1950,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+65,1950,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+65,1950,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+65,1950,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+66,1980,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+66,1980,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+66,1980,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+66,1980,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+66,1980,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+66,1980,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+67,2010,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+67,2010,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+67,2010,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+67,2010,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+67,2010,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+67,2010,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+68,2040,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+68,2040,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,True,True
+68,2040,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+68,2040,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+68,2040,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+68,2040,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+69,2070,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+69,2070,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+69,2070,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+69,2070,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+69,2070,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+69,2070,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+70,2100,riverbend,route engines,memory looms,dry crossing,cedar,flood loss,0.96,False,True
+70,2100,roofward,route engines,memory looms,herb preservation,glass,storage decay,0.96,False,True
+70,2100,archive,route engines,memory looms,signal memory,inkstone,storage decay,0.96,False,True
+70,2100,signal,route engines,memory looms,path visibility,copper,storage decay,0.96,False,True
+70,2100,orchard,route engines,memory looms,dry seed continuity,clay,storage decay,0.96,False,True
+70,2100,repair_ring,route engines,memory looms,safe repair space,bronze,spark crowding,0.96,False,True
+71,2130,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+71,2130,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+71,2130,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+71,2130,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+71,2130,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+71,2130,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+72,2160,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+72,2160,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+72,2160,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+72,2160,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+72,2160,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+72,2160,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+73,2190,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+73,2190,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+73,2190,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+73,2190,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+73,2190,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+73,2190,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+74,2220,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+74,2220,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+74,2220,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+74,2220,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+74,2220,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+74,2220,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+75,2250,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+75,2250,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+75,2250,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+75,2250,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+75,2250,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+75,2250,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+76,2280,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+76,2280,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+76,2280,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,True,True
+76,2280,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+76,2280,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+76,2280,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+77,2310,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+77,2310,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+77,2310,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+77,2310,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+77,2310,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+77,2310,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+78,2340,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+78,2340,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+78,2340,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+78,2340,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+78,2340,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+78,2340,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+79,2370,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+79,2370,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+79,2370,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+79,2370,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+79,2370,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+79,2370,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True
+80,2400,riverbend,civic observatories,route engines,dry crossing,cedar,flood loss,0.96,False,True
+80,2400,roofward,civic observatories,route engines,herb preservation,glass,storage decay,0.96,False,True
+80,2400,archive,civic observatories,route engines,signal memory,inkstone,storage decay,0.96,False,True
+80,2400,signal,civic observatories,route engines,path visibility,copper,storage decay,0.96,False,True
+80,2400,orchard,civic observatories,route engines,dry seed continuity,clay,storage decay,0.96,False,True
+80,2400,repair_ring,civic observatories,route engines,safe repair space,bronze,spark crowding,0.96,False,True

@@ -1,0 +1,94 @@
+{
+  "boundary": "Deterministic browser-local deep-time civilization scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "generation_count": 80,
+  "generation_years": 30,
+  "language_counts": {
+    "archive": 80,
+    "orchard": 80,
+    "repair_ring": 80,
+    "riverbend": 80,
+    "roofward": 80,
+    "signal": 80
+  },
+  "memory_counts": {
+    "archive": 80,
+    "orchard": 80,
+    "repair_ring": 80,
+    "riverbend": 80,
+    "roofward": 80,
+    "signal": 80
+  },
+  "ritual_counts": {
+    "archive": 80,
+    "orchard": 80,
+    "repair_ring": 80,
+    "riverbend": 80,
+    "roofward": 80,
+    "signal": 80
+  },
+  "settlements": [
+    {
+      "base_material": "cedar",
+      "biome": "cold wet river terrace",
+      "flower_node": "node-03",
+      "founding_need": "dry crossing",
+      "founding_ritual": "plank-listening",
+      "sensory_signature": "river slap and cedar resin",
+      "settlement_id": "riverbend"
+    },
+    {
+      "base_material": "glass",
+      "biome": "warm roof gardens",
+      "flower_node": "node-05",
+      "founding_need": "herb preservation",
+      "founding_ritual": "sun-ledger",
+      "sensory_signature": "hinge ticks and thyme paper",
+      "settlement_id": "roofward"
+    },
+    {
+      "base_material": "inkstone",
+      "biome": "cool stone stacks",
+      "flower_node": "node-08",
+      "founding_need": "signal memory",
+      "founding_ritual": "spool-naming",
+      "sensory_signature": "page flutter and ink linen",
+      "settlement_id": "archive"
+    },
+    {
+      "base_material": "copper",
+      "biome": "dusk mast ridge",
+      "flower_node": "node-11",
+      "founding_need": "path visibility",
+      "founding_ritual": "lantern-turning",
+      "sensory_signature": "static crickets and lamp oil",
+      "settlement_id": "signal"
+    },
+    {
+      "base_material": "clay",
+      "biome": "damp seed fields",
+      "flower_node": "node-01",
+      "founding_need": "dry seed continuity",
+      "founding_ritual": "satchel-vow",
+      "sensory_signature": "cart creak and apple soil",
+      "settlement_id": "orchard"
+    },
+    {
+      "base_material": "bronze",
+      "biome": "warm metal court",
+      "flower_node": "node-09",
+      "founding_need": "safe repair space",
+      "founding_ritual": "spark-distance",
+      "sensory_signature": "bell hum and hot copper",
+      "settlement_id": "repair_ring"
+    }
+  ],
+  "technology_counts": {
+    "archive": 77,
+    "orchard": 78,
+    "repair_ring": 78,
+    "riverbend": 78,
+    "roofward": 78,
+    "signal": 78
+  },
+  "total_years": 2400
+}

@@ -542,3 +542,7 @@ The browser-world line now has a stable primary demo launcher at `visualizations
 ## Report 304 Public Note: Primary Demo Defect Loop
 
 The primary browser-world demo has moved from packaging to defect-driven hardening. A manual playtest found that save/restore did not actually roll back after a post-save mutation. The maintained shell now uses an explicit saved snapshot key and its QA smoke hook tests rollback rather than a trivial storage round trip. This strengthens the playable prototype claim while keeping the boundary narrow: deterministic browser-local behavior, one internal playtest, no consciousness claim, no autonomous natural language claim, and no finished-product claim.
+
+## Report 305 Public Note: Manual Pass Recorder
+
+The primary browser-world demo now includes a local manual pass recorder and defect ledger. Reviewers can mark manual steps pass/fail, record defect notes, and prepare a public local export while staying on the stable primary demo path. This is evaluation infrastructure, not a new artificial-life organ, and it keeps the claim narrow: deterministic browser-local prototype behavior with explicit no-consciousness and no-autonomous-language boundaries.

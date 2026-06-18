@@ -1,0 +1,63 @@
+{
+  "boundary": "Primary-demo manual pass recorder and defect ledger for deterministic browser-local review only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, no outside playtest cohort, and no metaphysical frequency claim.",
+  "browser_recorder_evidence": {
+    "actions": [
+      "clearRecorder",
+      "record MP-01 pass",
+      "record MP-08 pass",
+      "record MP-10 fail",
+      "fill defect note",
+      "recordDefect",
+      "exportRecorder"
+    ],
+    "console_errors": [],
+    "recorder_state": {
+      "defectCount": 1,
+      "defectNoteIncludesAudit": true,
+      "exportPrepared": true,
+      "exportText": "Prepared recorder export",
+      "failButtons": 12,
+      "failCount": 1,
+      "latestDefect": {
+        "boundary": "manual-defect-ledger-public-local-only",
+        "note": "Observed MP-10 audit output should be checked after rollback smoke; recorder captured this as a review note.",
+        "recordedAt": "2026-06-18T06:23:03.465Z",
+        "reportIntroduced": 305,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "latestRecord": {
+        "boundary": "manual-recorder-public-local-only",
+        "recordedAt": "2026-06-18T06:23:03.087Z",
+        "reportIntroduced": 305,
+        "result": "fail",
+        "stepId": "MP-10",
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "passButtons": 12,
+      "passCount": 2,
+      "recordButtons": 24,
+      "recordCount": 3,
+      "recorderBoundary": true,
+      "recorderVisible": true,
+      "status": "Recorder export prepared.",
+      "stepIds": [
+        "MP-01",
+        "MP-08",
+        "MP-10"
+      ],
+      "title": "SSRM-3D Primary Browser World Demo",
+      "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+    },
+    "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "next_gate": "post-305: use the in-page recorder during the next browser pass, harden one recorded defect or usability gap in the same maintained shell, and keep report work tied to primary-demo evidence",
+  "primary_demo_url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "recorder_keys": [
+    "ssrm_primary_demo_manual_pass_records",
+    "ssrm_primary_demo_defect_ledger",
+    "ssrm_primary_demo_recorder_export"
+  ],
+  "report": 305,
+  "seed": 20270703,
+  "target_shell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+}

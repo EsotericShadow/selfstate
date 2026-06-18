@@ -1069,3 +1069,9 @@ The next pressure point is no longer feature invention. Future browser-world wor
 Report 304 is the first post-primary-demo defect loop. Running the Report 303 manual playtest through the real launcher exposed that save/restore was only a live-state round trip: after saving at avatar `x=214`, moving to `x=180`, restore stayed at `x=180`. The maintained v61 generator now writes an explicit saved snapshot key and the browser QA hook mutates after snapshot before proving rollback. The after-fix browser run returns to `x=214`, reports `rollbackTested: true`, exports replay, and resumes with persisted state through the primary-demo route.
 
 This is the right kind of progress: fewer new organs, more defects found and fixed in the one playable shell.
+
+### Report 305: Browser World v65 Primary Demo Manual Pass Recorder
+
+Report 305 adds the missing reviewer loop: the primary demo now has an in-page manual pass recorder and defect ledger. It records step pass/fail outcomes, defect notes, public local-only boundaries, target shell reference, and a prepared export payload. The browser check recorded MP-01 pass, MP-08 pass, MP-10 fail, one audit-related defect note, export prepared, and 0 console errors.
+
+This moves the project closer to non-toy evaluation because future hardening can now be driven by recorded defects in the single primary demo path instead of chat recollection or new bridge reports.

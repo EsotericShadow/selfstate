@@ -1,0 +1,185 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_criteria.csv",
+    "manual_records": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_manual_records.csv",
+    "report": "docs/305_ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_verdict.csv"
+  },
+  "boundary": "Primary-demo manual pass recorder and defect ledger for deterministic browser-local review only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, no outside playtest cohort, and no metaphysical frequency claim.",
+  "browser_recorder_evidence": {
+    "actions": [
+      "clearRecorder",
+      "record MP-01 pass",
+      "record MP-08 pass",
+      "record MP-10 fail",
+      "fill defect note",
+      "recordDefect",
+      "exportRecorder"
+    ],
+    "console_errors": [],
+    "recorder_state": {
+      "defectCount": 1,
+      "defectNoteIncludesAudit": true,
+      "exportPrepared": true,
+      "exportText": "Prepared recorder export",
+      "failButtons": 12,
+      "failCount": 1,
+      "latestDefect": {
+        "boundary": "manual-defect-ledger-public-local-only",
+        "note": "Observed MP-10 audit output should be checked after rollback smoke; recorder captured this as a review note.",
+        "recordedAt": "2026-06-18T06:23:03.465Z",
+        "reportIntroduced": 305,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "latestRecord": {
+        "boundary": "manual-recorder-public-local-only",
+        "recordedAt": "2026-06-18T06:23:03.087Z",
+        "reportIntroduced": 305,
+        "result": "fail",
+        "stepId": "MP-10",
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "passButtons": 12,
+      "passCount": 2,
+      "recordButtons": 24,
+      "recordCount": 3,
+      "recorderBoundary": true,
+      "recorderVisible": true,
+      "status": "Recorder export prepared.",
+      "stepIds": [
+        "MP-01",
+        "MP-08",
+        "MP-10"
+      ],
+      "title": "SSRM-3D Primary Browser World Demo",
+      "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+    },
+    "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "channels": {
+    "browser_defect_note_recorded": 1.0,
+    "browser_record_buttons_visible": 1.0,
+    "browser_record_counts_correct": 1.0,
+    "browser_recorder_export_prepared": 1.0,
+    "no_console_errors": 1.0,
+    "recorder_js_present": 1.0,
+    "recorder_keys_in_manifest": 1.0,
+    "recorder_public_boundary_preserved": 1.0,
+    "recorder_ui_present": 1.0,
+    "single_internal_recorder_check_not_external_playtest": 0.878,
+    "source_primary_demo_package_passed": 1.0,
+    "source_rollback_hardening_passed": 1.0
+  },
+  "counts": {
+    "browser_console_errors": 0,
+    "browser_defect_notes": 1,
+    "browser_fail_records": 1,
+    "browser_pass_records": 2,
+    "browser_records": 3,
+    "manual_steps": 12,
+    "record_buttons": 24,
+    "recorder_state_keys": 3
+  },
+  "criteria": [
+    {
+      "criterion": "source_primary_demo_package_passed",
+      "evidence": "Report 303 primary demo package verdict pass",
+      "failure_if_false": "primary demo package is stale or failing",
+      "passed": true
+    },
+    {
+      "criterion": "source_rollback_hardening_passed",
+      "evidence": "Report 304 rollback hardening verdict pass and fixed one defect",
+      "failure_if_false": "recorder is not layered on a hardened shell",
+      "passed": true
+    },
+    {
+      "criterion": "recorder_ui_present",
+      "evidence": "primary demo contains manualRecorder section",
+      "failure_if_false": "reviewers cannot record manual outcomes in page",
+      "passed": true
+    },
+    {
+      "criterion": "recorder_js_present",
+      "evidence": "demo.js contains manual record, defect ledger, and export keys",
+      "failure_if_false": "recorder state keys are not implemented",
+      "passed": true
+    },
+    {
+      "criterion": "recorder_keys_in_manifest",
+      "evidence": "ssrm_primary_demo_manual_pass_records,ssrm_primary_demo_defect_ledger,ssrm_primary_demo_recorder_export",
+      "failure_if_false": "recorder keys are not visible in QA manifest",
+      "passed": true
+    },
+    {
+      "criterion": "browser_record_buttons_visible",
+      "evidence": "browser saw 24 record controls for 12 manual steps",
+      "failure_if_false": "manual steps cannot all be marked pass/fail",
+      "passed": true
+    },
+    {
+      "criterion": "browser_record_counts_correct",
+      "evidence": "fresh clean pass recorded 2 pass and 1 fail across MP-01/MP-08/MP-10",
+      "failure_if_false": "manual records were not captured correctly",
+      "passed": true
+    },
+    {
+      "criterion": "browser_defect_note_recorded",
+      "evidence": "one MP-10 audit defect note recorded",
+      "failure_if_false": "defect notes are not captured",
+      "passed": true
+    },
+    {
+      "criterion": "browser_recorder_export_prepared",
+      "evidence": "recorder export link prepared",
+      "failure_if_false": "recorder export path failed",
+      "passed": true
+    },
+    {
+      "criterion": "recorder_public_boundary_preserved",
+      "evidence": "records and defects use public local-only boundaries and target maintained shell",
+      "failure_if_false": "recorder leaks private/ambiguous state or targets a fork",
+      "passed": true
+    },
+    {
+      "criterion": "no_console_errors",
+      "evidence": "browser console error list empty",
+      "failure_if_false": "browser console errors observed",
+      "passed": true
+    },
+    {
+      "criterion": "single_internal_recorder_check_not_external_playtest",
+      "evidence": "one internal browser recorder check, not outside playtest cohort",
+      "failure_if_false": "overclaiming recorder QA as external validation",
+      "passed": true
+    }
+  ],
+  "gates": {
+    "all_recorder_criteria_passed": true,
+    "honest_internal_check_cap_present": true,
+    "readiness_minimum_passed": true,
+    "recorder_targets_primary_demo": true,
+    "weakest_minimum_passed": true
+  },
+  "mean_channel_score": 0.989833,
+  "next_gate": "post-305: use the in-page recorder during the next browser pass, harden one recorded defect or usability gap in the same maintained shell, and keep report work tied to primary-demo evidence",
+  "prefix": "ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder",
+  "primary_demo_manual_pass_recorder_readiness": 0.956283,
+  "readiness": 0.956283,
+  "recorder_keys": [
+    "ssrm_primary_demo_manual_pass_records",
+    "ssrm_primary_demo_defect_ledger",
+    "ssrm_primary_demo_recorder_export"
+  ],
+  "report": 305,
+  "seed": 20270703,
+  "source_v63_path": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_results.json",
+  "source_v64_path": "artifacts/ssrm_3d_browser_world_v64_primary_demo_manual_playtest_hardening_results.json",
+  "verdict": "pass",
+  "weakest_channel_score": 0.878,
+  "weakest_named_channel": "single_internal_recorder_check_not_external_playtest"
+}

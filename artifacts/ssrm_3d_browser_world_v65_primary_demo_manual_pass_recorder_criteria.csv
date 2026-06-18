@@ -1,0 +1,13 @@
+criterion,passed,evidence,failure_if_false
+source_primary_demo_package_passed,True,Report 303 primary demo package verdict pass,primary demo package is stale or failing
+source_rollback_hardening_passed,True,Report 304 rollback hardening verdict pass and fixed one defect,recorder is not layered on a hardened shell
+recorder_ui_present,True,primary demo contains manualRecorder section,reviewers cannot record manual outcomes in page
+recorder_js_present,True,"demo.js contains manual record, defect ledger, and export keys",recorder state keys are not implemented
+recorder_keys_in_manifest,True,"ssrm_primary_demo_manual_pass_records,ssrm_primary_demo_defect_ledger,ssrm_primary_demo_recorder_export",recorder keys are not visible in QA manifest
+browser_record_buttons_visible,True,browser saw 24 record controls for 12 manual steps,manual steps cannot all be marked pass/fail
+browser_record_counts_correct,True,fresh clean pass recorded 2 pass and 1 fail across MP-01/MP-08/MP-10,manual records were not captured correctly
+browser_defect_note_recorded,True,one MP-10 audit defect note recorded,defect notes are not captured
+browser_recorder_export_prepared,True,recorder export link prepared,recorder export path failed
+recorder_public_boundary_preserved,True,records and defects use public local-only boundaries and target maintained shell,recorder leaks private/ambiguous state or targets a fork
+no_console_errors,True,browser console error list empty,browser console errors observed
+single_internal_recorder_check_not_external_playtest,True,"one internal browser recorder check, not outside playtest cohort",overclaiming recorder QA as external validation

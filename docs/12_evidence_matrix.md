@@ -1402,3 +1402,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Defect reproduced: before fix, save at `x=214`, mutate to `x=180`, restore stayed at `x=180`.
 - Fix verified: after fix, restore returns to `x=214`; `runSaveRestoreSmoke` reports `pass: true` and `rollbackTested: true`.
 - Boundary: one internal browser playtest and deterministic shell hardening only; no external cohort, production persistence, autonomous language, moral patienthood, complete 3D engine, finished-game, or consciousness claim.
+
+## Report 305 Evidence Matrix Entry
+
+- Claim: the primary demo now supports in-page manual pass recording and defect capture.
+- Evidence: `visualizations/ssrm_3d_browser_world_primary_demo/index.html`, `visualizations/ssrm_3d_browser_world_primary_demo/demo.js`, `artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_browser_evidence.json`, and `docs/305_ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_report.md`.
+- Browser result: 24 record controls, 3 fresh records, 2 pass, 1 fail, 1 defect note, recorder export prepared, 0 console errors.
+- Boundary: browser-local public review ledger only; no external playtest cohort, production persistence, autonomous language, moral patienthood, finished game, or consciousness claim.

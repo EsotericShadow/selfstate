@@ -33,6 +33,9 @@ TARGET_SHELL_REL = "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.
 CLEAN_LAUNCH_REL = f"{TARGET_SHELL_REL}?reset=1&source=primary-demo-v63"
 RESUME_LAUNCH_REL = f"{TARGET_SHELL_REL}?source=primary-demo-v63"
 LOCALHOST_LAUNCH_URL = "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+MANUAL_RECORD_KEY = "ssrm_primary_demo_manual_pass_records"
+DEFECT_LEDGER_KEY = "ssrm_primary_demo_defect_ledger"
+RECORDER_EXPORT_KEY = "ssrm_primary_demo_recorder_export"
 
 BOUNDARY = (
     "Primary demo packaging for the deterministic browser-local maintained app shell only; "
@@ -187,6 +190,10 @@ def _html() -> str:
         f"<li><strong>{step['step_id']}</strong>: {step['action']} <span>{step['expected_evidence']}</span></li>"
         for step in MANUAL_PLAYTEST_STEPS
     )
+    recorder_rows = "\n".join(
+        f"<li><span><strong>{step['step_id']}</strong> {step['proves']}</span><button data-record-step=\"{step['step_id']}\" data-record-result=\"pass\">Pass</button><button data-record-step=\"{step['step_id']}\" data-record-result=\"fail\">Fail</button></li>"
+        for step in MANUAL_PLAYTEST_STEPS
+    )
     guard_rows = "\n".join(f"<li>{guard}</li>" for guard in SCOPE_GUARDS)
     return f"""<!doctype html>
 <html lang=\"en\">
@@ -221,6 +228,21 @@ def _html() -> str:
         <h2>Scope guards</h2>
         <ul>{guard_rows}</ul>
       </article>
+    </section>
+    <section class=\"recorder\" id=\"manualRecorder\">
+      <h2>Manual pass recorder and defect ledger</h2>
+      <p>Use this while exercising the maintained shell. Records stay browser-local and public: step outcome, defect note, timestamp, and source boundary only.</p>
+      <ol class=\"record-list\">{recorder_rows}</ol>
+      <label class=\"defect-box\">Defect note
+        <textarea id=\"defectNote\" rows=\"4\" placeholder=\"Example: MP-08 failed because restore did not roll back after moving west.\"></textarea>
+      </label>
+      <div class=\"actions compact\">
+        <button id=\"recordDefect\" type=\"button\">Record defect note</button>
+        <button id=\"exportRecorder\" type=\"button\">Prepare recorder export</button>
+        <button id=\"clearRecorder\" type=\"button\">Clear recorder</button>
+      </div>
+      <p id=\"recordStatus\">No manual pass records yet.</p>
+      <pre id=\"recordLedgerOut\"></pre>
     </section>
     <section class=\"handoff\">
       <h2>Launch handoff</h2>
@@ -280,6 +302,7 @@ h1 { max-width: 760px; font-size: clamp(2.8rem, 7vw, 6rem); line-height: 0.92; m
 h2 { margin-top: 0; }
 .lede { max-width: 780px; font-size: 1.2rem; color: var(--muted); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.actions.compact { margin-top: 12px; }
 .button {
   display: inline-flex;
   align-items: center;
@@ -297,12 +320,20 @@ h2 { margin-top: 0; }
 .button.quiet { background: transparent; }
 .boundary { margin-top: 18px; padding: 22px 26px; }
 .grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 18px; margin-top: 18px; }
-article, .handoff { padding: 26px; }
+article, .handoff, .recorder { padding: 26px; }
+.recorder { margin-top: 18px; border: 1px solid var(--line); background: rgba(255, 249, 232, 0.88); box-shadow: 0 20px 60px rgba(63, 46, 22, 0.13); border-radius: 24px; }
+.record-list { padding-left: 22px; }
+.record-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; }
+.record-list button, .recorder button { border: 1px solid var(--line); border-radius: 999px; background: #fffdf2; padding: 8px 12px; font-weight: 700; color: var(--ink); }
+.defect-box { display: grid; gap: 8px; font-weight: 700; margin-top: 18px; }
+textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
+#recordLedgerOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
 code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px; }
 @media (max-width: 780px) {
   .grid { grid-template-columns: 1fr; }
+  .record-list li { grid-template-columns: 1fr; }
   .actions { flex-direction: column; align-items: stretch; }
 }
 """
@@ -310,6 +341,9 @@ code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px;
 
 def _js() -> str:
     return """const HANDOFF_KEY = 'ssrm_primary_demo_handoff';
+const MANUAL_RECORD_KEY = 'ssrm_primary_demo_manual_pass_records';
+const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
+const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
 
 function recordLaunch(kind) {
   const payload = {
@@ -340,6 +374,101 @@ try {
 } catch (error) {
   localStorage.removeItem(HANDOFF_KEY);
 }
+
+function readList(key) {
+  try {
+    return JSON.parse(localStorage.getItem(key) || '[]');
+  } catch (error) {
+    localStorage.removeItem(key);
+    return [];
+  }
+}
+
+function writeList(key, rows) {
+  localStorage.setItem(key, JSON.stringify(rows));
+}
+
+function recordStep(stepId, result) {
+  const rows = readList(MANUAL_RECORD_KEY);
+  rows.push({
+    stepId,
+    result,
+    reportIntroduced: 305,
+    targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    recordedAt: new Date().toISOString(),
+    boundary: 'manual-recorder-public-local-only'
+  });
+  writeList(MANUAL_RECORD_KEY, rows);
+  renderRecorder();
+}
+
+function recordDefectNote() {
+  const note = document.getElementById('defectNote')?.value.trim() || '';
+  if (!note) {
+    renderRecorder('No defect note recorded: note was empty.');
+    return;
+  }
+  const defects = readList(DEFECT_LEDGER_KEY);
+  defects.push({
+    note,
+    reportIntroduced: 305,
+    targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    recordedAt: new Date().toISOString(),
+    boundary: 'manual-defect-ledger-public-local-only'
+  });
+  writeList(DEFECT_LEDGER_KEY, defects);
+  document.getElementById('defectNote').value = '';
+  renderRecorder();
+}
+
+function exportRecorder() {
+  const payload = {
+    reportIntroduced: 305,
+    records: readList(MANUAL_RECORD_KEY),
+    defects: readList(DEFECT_LEDGER_KEY),
+    boundary: 'primary-demo-recorder-export-public-local-only'
+  };
+  const text = JSON.stringify(payload, null, 2);
+  localStorage.setItem(RECORDER_EXPORT_KEY, text);
+  let link = document.getElementById('preparedRecorderExport');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedRecorderExport';
+    link.textContent = 'Prepared recorder export';
+    link.download = 'ssrm_primary_demo_recorder.json';
+    link.style.display = 'block';
+    link.style.marginTop = '10px';
+    document.getElementById('manualRecorder').appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderRecorder('Recorder export prepared.');
+}
+
+function clearRecorder() {
+  [MANUAL_RECORD_KEY, DEFECT_LEDGER_KEY, RECORDER_EXPORT_KEY].forEach(key => localStorage.removeItem(key));
+  const link = document.getElementById('preparedRecorderExport');
+  if (link) link.remove();
+  renderRecorder('Recorder cleared.');
+}
+
+function renderRecorder(message) {
+  const records = readList(MANUAL_RECORD_KEY);
+  const defects = readList(DEFECT_LEDGER_KEY);
+  const passed = records.filter(row => row.result === 'pass').length;
+  const failed = records.filter(row => row.result === 'fail').length;
+  const status = document.getElementById('recordStatus');
+  if (status) status.textContent = message || `${records.length} step records / ${passed} pass / ${failed} fail / ${defects.length} defect notes`;
+  const out = document.getElementById('recordLedgerOut');
+  if (out) out.textContent = JSON.stringify({ records, defects }, null, 2);
+}
+
+document.querySelectorAll('[data-record-step]').forEach(button => {
+  button.addEventListener('click', () => recordStep(button.dataset.recordStep, button.dataset.recordResult));
+});
+document.getElementById('recordDefect')?.addEventListener('click', recordDefectNote);
+document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
+document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
+renderRecorder();
 """
 
 
@@ -419,6 +548,9 @@ def _qa_manifest(results_hint: dict[str, Any]) -> dict[str, Any]:
             "ssrm_v61_app_shell_qa_results",
             "ssrm_v61_app_shell_export",
             "ssrm_v61_app_shell_saved_snapshot",
+            MANUAL_RECORD_KEY,
+            DEFECT_LEDGER_KEY,
+            RECORDER_EXPORT_KEY,
         ],
     }
 

@@ -1,0 +1,13 @@
+metric,value
+manual_steps,12
+record_buttons,24
+browser_records,3
+browser_pass_records,2
+browser_fail_records,1
+browser_defect_notes,1
+recorder_state_keys,3
+browser_console_errors,0
+readiness,0.956283
+mean_channel_score,0.989833
+weakest_channel_score,0.878
+weakest_named_channel,single_internal_recorder_check_not_external_playtest

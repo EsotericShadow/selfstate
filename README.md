@@ -2032,3 +2032,7 @@ Report 303 packages the maintained v61 app shell as the stable primary browser-w
 ## Report 304: Browser World v64 Primary Demo Manual Playtest Hardening
 
 Report 304 uses the stable primary demo path to find and fix a real runtime defect in the maintained shell. The manual-playtest rollback step failed because `restoreWorld` reloaded the latest live state instead of a saved snapshot; the fix adds `ssrm_v61_app_shell_saved_snapshot`, updates the save/restore controls, and changes the smoke hook to test rollback after mutation. The deterministic hardening report passes with readiness `0.954133` and weakest-channel score `0.872000`. The honest limit is `single_internal_playtest_not_external_user`: this is a concrete internal browser playtest and patch, not an external cohort or production-readiness claim.
+
+## Report 305: Browser World v65 Primary Demo Manual Pass Recorder
+
+Report 305 adds a small in-page manual pass recorder and defect ledger to the stable primary demo. Browser verification recorded MP-01 pass, MP-08 pass, MP-10 fail, one defect note, and a prepared recorder export with 0 console errors. The deterministic report passes with readiness `0.956283` and weakest-channel score `0.878000`. The honest limit is `single_internal_recorder_check_not_external_playtest`: this is internal recorder validation, not an outside playtest cohort.

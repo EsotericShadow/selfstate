@@ -47,6 +47,32 @@
 <li>Future browser-world work should patch this shell unless a defect proves a new surface is necessary.</li></ul>
       </article>
     </section>
+    <section class="recorder" id="manualRecorder">
+      <h2>Manual pass recorder and defect ledger</h2>
+      <p>Use this while exercising the maintained shell. Records stay browser-local and public: step outcome, defect note, timestamp, and source boundary only.</p>
+      <ol class="record-list"><li><span><strong>MP-01</strong> reviewers have one stable URL-style entrypoint instead of hunting report artifacts</span><button data-record-step="MP-01" data-record-result="pass">Pass</button><button data-record-step="MP-01" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-02</strong> the no-overclaim boundary is visible before play</span><button data-record-step="MP-02" data-record-result="pass">Pass</button><button data-record-step="MP-02" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-03</strong> the launcher targets the single maintained shell, not a forked simulation</span><button data-record-step="MP-03" data-record-result="pass">Pass</button><button data-record-step="MP-03" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-04</strong> arrival and movement remain usable through the primary path</span><button data-record-step="MP-04" data-record-result="pass">Pass</button><button data-record-step="MP-04" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-05</strong> bounded conversation and resident schedule inspection are still on the same surface</span><button data-record-step="MP-05" data-record-result="pass">Pass</button><button data-record-step="MP-05" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-06</strong> visible consequence and non-magical trust repair are observable</span><button data-record-step="MP-06" data-record-result="pass">Pass</button><button data-record-step="MP-06" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-07</strong> offscreen life is visible in the primary shell</span><button data-record-step="MP-07" data-record-result="pass">Pass</button><button data-record-step="MP-07" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-08</strong> local persistence and real rollback are part of the playable loop</span><button data-record-step="MP-08" data-record-result="pass">Pass</button><button data-record-step="MP-08" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-09</strong> the internal QA hooks still cover the maintained tasks</span><button data-record-step="MP-09" data-record-result="pass">Pass</button><button data-record-step="MP-09" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-10</strong> traceability remains bounded and inspectable</span><button data-record-step="MP-10" data-record-result="pass">Pass</button><button data-record-step="MP-10" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-11</strong> review/debug evidence can be captured without relying on blocked downloads</span><button data-record-step="MP-11" data-record-result="pass">Pass</button><button data-record-step="MP-11" data-record-result="fail">Fail</button></li>
+<li><span><strong>MP-12</strong> leave/return continuity is part of the manual review path</span><button data-record-step="MP-12" data-record-result="pass">Pass</button><button data-record-step="MP-12" data-record-result="fail">Fail</button></li></ol>
+      <label class="defect-box">Defect note
+        <textarea id="defectNote" rows="4" placeholder="Example: MP-08 failed because restore did not roll back after moving west."></textarea>
+      </label>
+      <div class="actions compact">
+        <button id="recordDefect" type="button">Record defect note</button>
+        <button id="exportRecorder" type="button">Prepare recorder export</button>
+        <button id="clearRecorder" type="button">Clear recorder</button>
+      </div>
+      <p id="recordStatus">No manual pass records yet.</p>
+      <pre id="recordLedgerOut"></pre>
+    </section>
     <section class="handoff">
       <h2>Launch handoff</h2>
       <p>Local URL: <code>http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html</code></p>

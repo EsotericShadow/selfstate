@@ -42,6 +42,7 @@ h1 { max-width: 760px; font-size: clamp(2.8rem, 7vw, 6rem); line-height: 0.92; m
 h2 { margin-top: 0; }
 .lede { max-width: 780px; font-size: 1.2rem; color: var(--muted); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.actions.compact { margin-top: 12px; }
 .button {
   display: inline-flex;
   align-items: center;
@@ -59,11 +60,19 @@ h2 { margin-top: 0; }
 .button.quiet { background: transparent; }
 .boundary { margin-top: 18px; padding: 22px 26px; }
 .grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 18px; margin-top: 18px; }
-article, .handoff { padding: 26px; }
+article, .handoff, .recorder { padding: 26px; }
+.recorder { margin-top: 18px; border: 1px solid var(--line); background: rgba(255, 249, 232, 0.88); box-shadow: 0 20px 60px rgba(63, 46, 22, 0.13); border-radius: 24px; }
+.record-list { padding-left: 22px; }
+.record-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; }
+.record-list button, .recorder button { border: 1px solid var(--line); border-radius: 999px; background: #fffdf2; padding: 8px 12px; font-weight: 700; color: var(--ink); }
+.defect-box { display: grid; gap: 8px; font-weight: 700; margin-top: 18px; }
+textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
+#recordLedgerOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
 code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px; }
 @media (max-width: 780px) {
   .grid { grid-template-columns: 1fr; }
+  .record-list li { grid-template-columns: 1fr; }
   .actions { flex-direction: column; align-items: stretch; }
 }

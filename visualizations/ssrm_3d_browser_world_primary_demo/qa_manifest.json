@@ -20,7 +20,10 @@
     "ssrm_v61_app_shell_replay",
     "ssrm_v61_app_shell_qa_results",
     "ssrm_v61_app_shell_export",
-    "ssrm_v61_app_shell_saved_snapshot"
+    "ssrm_v61_app_shell_saved_snapshot",
+    "ssrm_primary_demo_manual_pass_records",
+    "ssrm_primary_demo_defect_ledger",
+    "ssrm_primary_demo_recorder_export"
   ],
   "target_shell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
 }

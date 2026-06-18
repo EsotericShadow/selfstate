@@ -1,0 +1,5 @@
+kind,step_id,source
+record,MP-01,browser_recorder_evidence
+record,MP-08,browser_recorder_evidence
+record,MP-10,browser_recorder_evidence
+defect,MP-10,browser_recorder_evidence

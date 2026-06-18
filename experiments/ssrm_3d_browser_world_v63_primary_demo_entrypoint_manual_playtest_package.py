@@ -194,6 +194,10 @@ def _html() -> str:
         f"<li><span><strong>{step['step_id']}</strong> {step['proves']}</span><button data-record-step=\"{step['step_id']}\" data-record-result=\"pass\">Pass</button><button data-record-step=\"{step['step_id']}\" data-record-result=\"fail\">Fail</button></li>"
         for step in MANUAL_PLAYTEST_STEPS
     )
+    defect_step_options = "\n".join(
+        f"<option value=\"{step['step_id']}\">{step['step_id']}: {step['action']}</option>"
+        for step in MANUAL_PLAYTEST_STEPS
+    )
     guard_rows = "\n".join(f"<li>{guard}</li>" for guard in SCOPE_GUARDS)
     return f"""<!doctype html>
 <html lang=\"en\">
@@ -236,8 +240,24 @@ def _html() -> str:
       <label class=\"defect-box\">Defect note
         <textarea id=\"defectNote\" rows=\"4\" placeholder=\"Example: MP-08 failed because restore did not roll back after moving west.\"></textarea>
       </label>
+      <div class=\"triage-grid\">
+        <label>Related step
+          <select id=\"defectStep\">{defect_step_options}</select>
+        </label>
+        <label>Severity
+          <select id=\"defectSeverity\">
+            <option value=\"watch\">Watch</option>
+            <option value=\"minor\">Minor</option>
+            <option value=\"blocking\">Blocking</option>
+          </select>
+        </label>
+      </div>
+      <label class=\"defect-box\">Resolution note
+        <textarea id=\"resolutionNote\" rows=\"3\" placeholder=\"Example: Resolved by Report 306 audit-after-rollback hook.\"></textarea>
+      </label>
       <div class=\"actions compact\">
         <button id=\"recordDefect\" type=\"button\">Record defect note</button>
+        <button id=\"resolveLatestDefect\" type=\"button\">Resolve latest open defect</button>
         <button id=\"exportRecorder\" type=\"button\">Prepare recorder export</button>
         <button id=\"clearRecorder\" type=\"button\">Clear recorder</button>
       </div>
@@ -326,7 +346,10 @@ article, .handoff, .recorder { padding: 26px; }
 .record-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; }
 .record-list button, .recorder button { border: 1px solid var(--line); border-radius: 999px; background: #fffdf2; padding: 8px 12px; font-weight: 700; color: var(--ink); }
 .defect-box { display: grid; gap: 8px; font-weight: 700; margin-top: 18px; }
-textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
+.triage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.triage-grid label { display: grid; gap: 8px; font-weight: 700; }
+textarea, select { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
+textarea { resize: vertical; }
 #recordLedgerOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
@@ -334,6 +357,7 @@ code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px;
 @media (max-width: 780px) {
   .grid { grid-template-columns: 1fr; }
   .record-list li { grid-template-columns: 1fr; }
+  .triage-grid { grid-template-columns: 1fr; }
   .actions { flex-direction: column; align-items: stretch; }
 }
 """
@@ -404,12 +428,18 @@ function recordStep(stepId, result) {
 
 function recordDefectNote() {
   const note = document.getElementById('defectNote')?.value.trim() || '';
+  const stepId = document.getElementById('defectStep')?.value || 'unassigned';
+  const severity = document.getElementById('defectSeverity')?.value || 'watch';
   if (!note) {
     renderRecorder('No defect note recorded: note was empty.');
     return;
   }
   const defects = readList(DEFECT_LEDGER_KEY);
   defects.push({
+    id: `D-${String(defects.length + 1).padStart(3, '0')}`,
+    stepId,
+    severity,
+    status: 'open',
     note,
     reportIntroduced: 305,
     targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
@@ -419,6 +449,27 @@ function recordDefectNote() {
   writeList(DEFECT_LEDGER_KEY, defects);
   document.getElementById('defectNote').value = '';
   renderRecorder();
+}
+
+function resolveLatestDefect() {
+  const defects = readList(DEFECT_LEDGER_KEY);
+  const index = defects.map((row, rowIndex) => ({ row, rowIndex })).reverse().find(item => item.row.status !== 'resolved')?.rowIndex;
+  if (index === undefined) {
+    renderRecorder('No open defect to resolve.');
+    return;
+  }
+  const note = document.getElementById('resolutionNote')?.value.trim() || 'Resolved in primary-demo review.';
+  defects[index] = {
+    ...defects[index],
+    status: 'resolved',
+    resolutionNote: note,
+    resolvedAt: new Date().toISOString(),
+    resolutionReportIntroduced: 307,
+    resolutionBoundary: 'manual-defect-resolution-public-local-only'
+  };
+  writeList(DEFECT_LEDGER_KEY, defects);
+  document.getElementById('resolutionNote').value = '';
+  renderRecorder('Latest open defect resolved.');
 }
 
 function exportRecorder() {
@@ -456,8 +507,10 @@ function renderRecorder(message) {
   const defects = readList(DEFECT_LEDGER_KEY);
   const passed = records.filter(row => row.result === 'pass').length;
   const failed = records.filter(row => row.result === 'fail').length;
+  const openDefects = defects.filter(row => row.status !== 'resolved').length;
+  const resolvedDefects = defects.filter(row => row.status === 'resolved').length;
   const status = document.getElementById('recordStatus');
-  if (status) status.textContent = message || `${records.length} step records / ${passed} pass / ${failed} fail / ${defects.length} defect notes`;
+  if (status) status.textContent = message || `${records.length} step records / ${passed} pass / ${failed} fail / ${defects.length} defect notes / ${openDefects} open / ${resolvedDefects} resolved`;
   const out = document.getElementById('recordLedgerOut');
   if (out) out.textContent = JSON.stringify({ records, defects }, null, 2);
 }
@@ -466,6 +519,7 @@ document.querySelectorAll('[data-record-step]').forEach(button => {
   button.addEventListener('click', () => recordStep(button.dataset.recordStep, button.dataset.recordResult));
 });
 document.getElementById('recordDefect')?.addEventListener('click', recordDefectNote);
+document.getElementById('resolveLatestDefect')?.addEventListener('click', resolveLatestDefect);
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
 renderRecorder();
@@ -525,6 +579,11 @@ Then open `{LOCALHOST_LAUNCH_URL}`.
 
 The launcher targets `{TARGET_SHELL_REL}`. It does not implement a second world.
 
+The launcher includes a browser-local manual pass recorder, defect ledger, and
+triage workflow. Defects can be tied to manual steps, marked by severity, moved
+from open to resolved with a resolution note, and exported as public local review
+evidence.
+
 Boundary: {BOUNDARY}
 """
 
@@ -552,6 +611,7 @@ def _qa_manifest(results_hint: dict[str, Any]) -> dict[str, Any]:
             DEFECT_LEDGER_KEY,
             RECORDER_EXPORT_KEY,
         ],
+        "defect_triage_fields": ["id", "stepId", "severity", "status", "note", "resolutionNote", "resolvedAt"],
     }
 
 

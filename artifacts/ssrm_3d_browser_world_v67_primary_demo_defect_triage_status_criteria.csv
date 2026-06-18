@@ -1,0 +1,15 @@
+criterion,passed,evidence,failure_if_false
+source_primary_demo_package_passed,True,Report 303 primary-demo package verdict pass,primary demo package is stale or failing
+source_recorder_passed,True,Report 305 recorder verdict pass,recorder baseline is failing
+source_resolution_passed,True,Report 306 recorder-driven resolution verdict pass,resolution loop baseline is failing
+triage_ui_present,True,"browser saw recorder, step/severity controls, resolution note, and resolve button",triage controls are not visible
+triage_text_present,True,"primary demo labels related step, severity, and resolution note",triage is not understandable in UI
+triage_js_present,True,demo.js contains triage status and resolver implementation,triage behavior not implemented
+manifest_declares_triage_fields,True,"id,stepId,severity,status,note,resolutionNote,resolvedAt",QA manifest does not expose triage schema
+open_blocking_defect_recorded,True,browser recorded D-001 MP-10 blocking open defect,open defect triage failed
+resolved_transition_recorded,True,browser resolved latest defect with resolutionReportIntroduced 307,resolve action did not update status
+resolution_fields_preserved,True,"resolution note, resolution boundary, and triage fields present",resolution evidence missing fields
+export_prepared,True,recorder export prepared after resolution,export path failed after triage
+public_boundaries_preserved,True,defect ledger remains public local-only and targets maintained shell,triage leaks private state or targets a fork
+no_console_errors,True,browser console error list empty,browser console errors observed
+single_internal_triage_check_not_external_playtest,True,"one internal browser triage check, not outside playtest cohort",overclaiming internal triage as external validation

@@ -550,3 +550,7 @@ The primary browser-world demo now includes a local manual pass recorder and def
 ## Report 306 Public Note: Recorder-Driven Resolution
 
 The primary browser-world demo now demonstrates a complete internal defect loop: a recorder note identified that the audit should run after rollback smoke, the maintained shell added a combined audit-after-rollback hook, browser evidence showed it passing, and the recorder marked MP-10 resolved. This strengthens the prototype as a single inspectable playable surface while keeping claims narrow and non-consciousness-oriented.
+
+## Report 307 Public Note: Defect Triage Status
+
+The primary browser-world demo now includes a small local defect triage workflow. Reviewers can attach a defect to a manual step, assign severity, keep it open, resolve it with a note, and export the public ledger. This keeps the project focused on one playable surface and one hardening loop, with no consciousness claim and no external playtest claim.

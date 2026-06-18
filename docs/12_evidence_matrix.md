@@ -1416,3 +1416,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_browser_evidence.json`, `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, and `docs/306_ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_report.md`.
 - Browser result: `runAuditAfterRollbackCheck` passes with `smokePass`, `auditPass`, `rollbackTested`, and `checkedAfterRollback`; recorder marks MP-10 pass with one resolution note and 0 console errors.
 - Boundary: one internal browser resolution pass only; no external cohort, production persistence, autonomous language, moral patienthood, finished game, complete 3D engine, or consciousness claim.
+
+## Report 307 Evidence Matrix Entry
+
+- Claim: the primary demo now supports a browser-local defect triage/status workflow.
+- Evidence: `visualizations/ssrm_3d_browser_world_primary_demo/index.html`, `visualizations/ssrm_3d_browser_world_primary_demo/demo.js`, `visualizations/ssrm_3d_browser_world_primary_demo/qa_manifest.json`, `artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_browser_evidence.json`, and `docs/307_ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_report.md`.
+- Browser result: MP-10 blocking defect recorded open, then resolved with resolution note, export prepared, 0 console errors.
+- Boundary: internal browser triage evidence only; no external playtest cohort, production persistence, autonomous language, moral patienthood, finished game, complete 3D engine, or consciousness claim.

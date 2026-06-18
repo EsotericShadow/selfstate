@@ -1081,3 +1081,9 @@ This moves the project closer to non-toy evaluation because future hardening can
 Report 306 demonstrates the recorder-driven hardening loop. Report 305 captured an MP-10 review note: audit output should be checked after rollback smoke. The maintained shell now has a dedicated `runAuditAfterRollbackCheck` button and direct QA hook. Browser evidence shows the replay order `enterWorld -> runSaveRestoreSmoke -> runStateBoundaryAudit -> runAuditAfterRollbackCheck`, with linked ticks `[1, 2]` and all combined pass flags true. The primary-demo recorder then marks MP-10 pass and stores a resolution note.
 
 This is the desired consolidation behavior: recorded defect, same shell patch, browser proof, recorder resolution.
+
+### Report 307: Browser World v67 Primary Demo Defect Triage Status
+
+Report 307 makes the primary-demo recorder operational as a defect workflow rather than a raw note list. The browser-local ledger now captures `id`, related manual step, severity, status, note, resolution note, and resolved timestamp. Browser evidence shows an MP-10 blocking defect recorded as open, then resolved with a Report 307 resolution note and exported, with 0 console errors.
+
+This strengthens the consolidation loop: future reports can be driven by triaged open defects in the single primary demo instead of inventing new organs or relying on chat memory.

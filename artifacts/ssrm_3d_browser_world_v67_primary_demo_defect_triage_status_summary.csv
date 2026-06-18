@@ -1,0 +1,11 @@
+metric,value
+triage_fields,7
+patch_summary_items,6
+browser_open_defects_after_record,1
+browser_resolved_defects_after_resolution,1
+browser_defect_count,1
+browser_console_errors,0
+readiness,0.9622
+mean_channel_score,0.992286
+weakest_channel_score,0.892
+weakest_named_channel,single_internal_triage_check_not_external_playtest

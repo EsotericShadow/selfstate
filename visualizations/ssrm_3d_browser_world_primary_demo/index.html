@@ -65,8 +65,35 @@
       <label class="defect-box">Defect note
         <textarea id="defectNote" rows="4" placeholder="Example: MP-08 failed because restore did not roll back after moving west."></textarea>
       </label>
+      <div class="triage-grid">
+        <label>Related step
+          <select id="defectStep"><option value="MP-01">MP-01: Start a local server from the repo root with python3 -m http.server 8765 --bind 127.0.0.1.</option>
+<option value="MP-02">MP-02: Open the primary demo launcher and read the boundary before launching.</option>
+<option value="MP-03">MP-03: Launch a clean session using the Clean demo button.</option>
+<option value="MP-04">MP-04: Enter the world and move at least twice.</option>
+<option value="MP-05">MP-05: Talk through the bounded phrase control, then ask schedule.</option>
+<option value="MP-06">MP-06: Borrow and return the awning tool.</option>
+<option value="MP-07">MP-07: Wait offscreen, then inspect schedule/progress again.</option>
+<option value="MP-08">MP-08: Save, move/change state, then restore.</option>
+<option value="MP-09">MP-09: Run the built-in playtest checklist.</option>
+<option value="MP-10">MP-10: Run state-boundary, save/restore smoke, and Audit after rollback hooks.</option>
+<option value="MP-11">MP-11: Export replay from the UI.</option>
+<option value="MP-12">MP-12: Close the shell, reopen the primary launcher, then use Resume demo.</option></select>
+        </label>
+        <label>Severity
+          <select id="defectSeverity">
+            <option value="watch">Watch</option>
+            <option value="minor">Minor</option>
+            <option value="blocking">Blocking</option>
+          </select>
+        </label>
+      </div>
+      <label class="defect-box">Resolution note
+        <textarea id="resolutionNote" rows="3" placeholder="Example: Resolved by Report 306 audit-after-rollback hook."></textarea>
+      </label>
       <div class="actions compact">
         <button id="recordDefect" type="button">Record defect note</button>
+        <button id="resolveLatestDefect" type="button">Resolve latest open defect</button>
         <button id="exportRecorder" type="button">Prepare recorder export</button>
         <button id="clearRecorder" type="button">Clear recorder</button>
       </div>

@@ -2040,3 +2040,7 @@ Report 305 adds a small in-page manual pass recorder and defect ledger to the st
 ## Report 306: Browser World v66 Audit-After-Rollback Recorder Resolution
 
 Report 306 closes the MP-10 recorder loop from Report 305. The maintained v61 shell now exposes `runAuditAfterRollbackCheck`, a single QA hook that runs rollback smoke, then state-boundary audit, then writes a combined linked result. Browser evidence shows `smokePass`, `auditPass`, `rollbackTested`, and `checkedAfterRollback` all true, with MP-10 marked pass in the primary-demo recorder and a resolution note exported. The deterministic report passes with readiness `0.958433` and weakest-channel score `0.884000`. The honest limit is `single_internal_resolution_pass_not_external_playtest`.
+
+## Report 307: Browser World v67 Primary Demo Defect Triage Status
+
+Report 307 upgrades the primary-demo recorder from raw defect notes into a small triage/status workflow. Defects now carry related manual step, severity, open/resolved status, resolution note, and exportable public ledger evidence. Browser verification recorded an MP-10 blocking defect as open, resolved it with a Report 307 resolution note, prepared recorder export, and observed 0 console errors. The deterministic report passes with readiness `0.962200` and weakest-channel score `0.892000`. The honest limit is `single_internal_triage_check_not_external_playtest`.

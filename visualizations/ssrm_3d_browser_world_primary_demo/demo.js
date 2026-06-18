@@ -62,12 +62,18 @@ function recordStep(stepId, result) {
 
 function recordDefectNote() {
   const note = document.getElementById('defectNote')?.value.trim() || '';
+  const stepId = document.getElementById('defectStep')?.value || 'unassigned';
+  const severity = document.getElementById('defectSeverity')?.value || 'watch';
   if (!note) {
     renderRecorder('No defect note recorded: note was empty.');
     return;
   }
   const defects = readList(DEFECT_LEDGER_KEY);
   defects.push({
+    id: `D-${String(defects.length + 1).padStart(3, '0')}`,
+    stepId,
+    severity,
+    status: 'open',
     note,
     reportIntroduced: 305,
     targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
@@ -77,6 +83,27 @@ function recordDefectNote() {
   writeList(DEFECT_LEDGER_KEY, defects);
   document.getElementById('defectNote').value = '';
   renderRecorder();
+}
+
+function resolveLatestDefect() {
+  const defects = readList(DEFECT_LEDGER_KEY);
+  const index = defects.map((row, rowIndex) => ({ row, rowIndex })).reverse().find(item => item.row.status !== 'resolved')?.rowIndex;
+  if (index === undefined) {
+    renderRecorder('No open defect to resolve.');
+    return;
+  }
+  const note = document.getElementById('resolutionNote')?.value.trim() || 'Resolved in primary-demo review.';
+  defects[index] = {
+    ...defects[index],
+    status: 'resolved',
+    resolutionNote: note,
+    resolvedAt: new Date().toISOString(),
+    resolutionReportIntroduced: 307,
+    resolutionBoundary: 'manual-defect-resolution-public-local-only'
+  };
+  writeList(DEFECT_LEDGER_KEY, defects);
+  document.getElementById('resolutionNote').value = '';
+  renderRecorder('Latest open defect resolved.');
 }
 
 function exportRecorder() {
@@ -114,8 +141,10 @@ function renderRecorder(message) {
   const defects = readList(DEFECT_LEDGER_KEY);
   const passed = records.filter(row => row.result === 'pass').length;
   const failed = records.filter(row => row.result === 'fail').length;
+  const openDefects = defects.filter(row => row.status !== 'resolved').length;
+  const resolvedDefects = defects.filter(row => row.status === 'resolved').length;
   const status = document.getElementById('recordStatus');
-  if (status) status.textContent = message || `${records.length} step records / ${passed} pass / ${failed} fail / ${defects.length} defect notes`;
+  if (status) status.textContent = message || `${records.length} step records / ${passed} pass / ${failed} fail / ${defects.length} defect notes / ${openDefects} open / ${resolvedDefects} resolved`;
   const out = document.getElementById('recordLedgerOut');
   if (out) out.textContent = JSON.stringify({ records, defects }, null, 2);
 }
@@ -124,6 +153,7 @@ document.querySelectorAll('[data-record-step]').forEach(button => {
   button.addEventListener('click', () => recordStep(button.dataset.recordStep, button.dataset.recordResult));
 });
 document.getElementById('recordDefect')?.addEventListener('click', recordDefectNote);
+document.getElementById('resolveLatestDefect')?.addEventListener('click', resolveLatestDefect);
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
 renderRecorder();

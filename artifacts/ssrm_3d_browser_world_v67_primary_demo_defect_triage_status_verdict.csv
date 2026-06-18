@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,weakest_named_channel
+307,pass,0.9622,0.892,single_internal_triage_check_not_external_playtest

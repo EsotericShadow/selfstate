@@ -1,0 +1,221 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_criteria.csv",
+    "report": "docs/307_ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_summary.csv",
+    "triage_ledger": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_triage_ledger.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v67_primary_demo_defect_triage_status_verdict.csv"
+  },
+  "boundary": "Primary-demo defect triage/status workflow over the deterministic browser-local maintained shell only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, no outside playtest cohort, and no metaphysical frequency claim.",
+  "browser_triage_evidence": {
+    "after_open": {
+      "defectCount": 1,
+      "latestDefect": {
+        "boundary": "manual-defect-ledger-public-local-only",
+        "id": "D-001",
+        "note": "Triage model check: MP-10 audit-after-rollback should remain tracked as a blocking defect until resolution evidence is recorded.",
+        "recordedAt": "2026-06-18T06:33:49.652Z",
+        "reportIntroduced": 305,
+        "severity": "blocking",
+        "status": "open",
+        "stepId": "MP-10",
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "openCount": 1,
+      "resolvedCount": 0,
+      "status": "0 step records / 0 pass / 0 fail / 1 defect notes / 1 open / 0 resolved"
+    },
+    "after_resolve": {
+      "defectCount": 1,
+      "exportPrepared": true,
+      "exportText": "Prepared recorder export",
+      "hasResolutionBoundary": true,
+      "hasResolutionNote": true,
+      "latestDefect": {
+        "boundary": "manual-defect-ledger-public-local-only",
+        "id": "D-001",
+        "note": "Triage model check: MP-10 audit-after-rollback should remain tracked as a blocking defect until resolution evidence is recorded.",
+        "recordedAt": "2026-06-18T06:33:49.652Z",
+        "reportIntroduced": 305,
+        "resolutionBoundary": "manual-defect-resolution-public-local-only",
+        "resolutionNote": "Resolved by Report 307 triage workflow verification: status moved from open to resolved with boundary-preserving evidence.",
+        "resolutionReportIntroduced": 307,
+        "resolvedAt": "2026-06-18T06:33:50.053Z",
+        "severity": "blocking",
+        "status": "resolved",
+        "stepId": "MP-10",
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "latestSeverity": "blocking",
+      "latestStatus": "resolved",
+      "latestStepId": "MP-10",
+      "ledgerBoundary": true,
+      "openCount": 0,
+      "resolutionReportIntroduced": 307,
+      "resolvedCount": 1,
+      "status": "Recorder export prepared.",
+      "triageFieldsPresent": true
+    },
+    "console_errors": [],
+    "initial": {
+      "defectSeverityPresent": true,
+      "defectStepPresent": true,
+      "recorderVisible": true,
+      "resolutionNotePresent": true,
+      "resolveButtonPresent": true,
+      "title": "SSRM-3D Primary Browser World Demo",
+      "triageTextPresent": true,
+      "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+    }
+  },
+  "channels": {
+    "export_prepared": 1.0,
+    "manifest_declares_triage_fields": 1.0,
+    "no_console_errors": 1.0,
+    "open_blocking_defect_recorded": 1.0,
+    "public_boundaries_preserved": 1.0,
+    "resolution_fields_preserved": 1.0,
+    "resolved_transition_recorded": 1.0,
+    "single_internal_triage_check_not_external_playtest": 0.892,
+    "source_primary_demo_package_passed": 1.0,
+    "source_recorder_passed": 1.0,
+    "source_resolution_passed": 1.0,
+    "triage_js_present": 1.0,
+    "triage_text_present": 1.0,
+    "triage_ui_present": 1.0
+  },
+  "counts": {
+    "browser_console_errors": 0,
+    "browser_defect_count": 1,
+    "browser_open_defects_after_record": 1,
+    "browser_resolved_defects_after_resolution": 1,
+    "patch_summary_items": 6,
+    "triage_fields": 7
+  },
+  "criteria": [
+    {
+      "criterion": "source_primary_demo_package_passed",
+      "evidence": "Report 303 primary-demo package verdict pass",
+      "failure_if_false": "primary demo package is stale or failing",
+      "passed": true
+    },
+    {
+      "criterion": "source_recorder_passed",
+      "evidence": "Report 305 recorder verdict pass",
+      "failure_if_false": "recorder baseline is failing",
+      "passed": true
+    },
+    {
+      "criterion": "source_resolution_passed",
+      "evidence": "Report 306 recorder-driven resolution verdict pass",
+      "failure_if_false": "resolution loop baseline is failing",
+      "passed": true
+    },
+    {
+      "criterion": "triage_ui_present",
+      "evidence": "browser saw recorder, step/severity controls, resolution note, and resolve button",
+      "failure_if_false": "triage controls are not visible",
+      "passed": true
+    },
+    {
+      "criterion": "triage_text_present",
+      "evidence": "primary demo labels related step, severity, and resolution note",
+      "failure_if_false": "triage is not understandable in UI",
+      "passed": true
+    },
+    {
+      "criterion": "triage_js_present",
+      "evidence": "demo.js contains triage status and resolver implementation",
+      "failure_if_false": "triage behavior not implemented",
+      "passed": true
+    },
+    {
+      "criterion": "manifest_declares_triage_fields",
+      "evidence": "id,stepId,severity,status,note,resolutionNote,resolvedAt",
+      "failure_if_false": "QA manifest does not expose triage schema",
+      "passed": true
+    },
+    {
+      "criterion": "open_blocking_defect_recorded",
+      "evidence": "browser recorded D-001 MP-10 blocking open defect",
+      "failure_if_false": "open defect triage failed",
+      "passed": true
+    },
+    {
+      "criterion": "resolved_transition_recorded",
+      "evidence": "browser resolved latest defect with resolutionReportIntroduced 307",
+      "failure_if_false": "resolve action did not update status",
+      "passed": true
+    },
+    {
+      "criterion": "resolution_fields_preserved",
+      "evidence": "resolution note, resolution boundary, and triage fields present",
+      "failure_if_false": "resolution evidence missing fields",
+      "passed": true
+    },
+    {
+      "criterion": "export_prepared",
+      "evidence": "recorder export prepared after resolution",
+      "failure_if_false": "export path failed after triage",
+      "passed": true
+    },
+    {
+      "criterion": "public_boundaries_preserved",
+      "evidence": "defect ledger remains public local-only and targets maintained shell",
+      "failure_if_false": "triage leaks private state or targets a fork",
+      "passed": true
+    },
+    {
+      "criterion": "no_console_errors",
+      "evidence": "browser console error list empty",
+      "failure_if_false": "browser console errors observed",
+      "passed": true
+    },
+    {
+      "criterion": "single_internal_triage_check_not_external_playtest",
+      "evidence": "one internal browser triage check, not outside playtest cohort",
+      "failure_if_false": "overclaiming internal triage as external validation",
+      "passed": true
+    }
+  ],
+  "gates": {
+    "all_triage_criteria_passed": true,
+    "honest_internal_triage_cap_present": true,
+    "open_to_resolved_transition_seen": true,
+    "readiness_minimum_passed": true,
+    "weakest_minimum_passed": true
+  },
+  "mean_channel_score": 0.992286,
+  "next_gate": "post-307: use the triage ledger during a full manual playtest pass, then harden one open blocking issue or add reviewer-facing filtering/counts only if the browser evidence shows the workflow is still hard to use",
+  "patch_summary": [
+    "Added related-step and severity controls to the primary-demo defect recorder.",
+    "Recorded new defects with id, stepId, severity, and open status.",
+    "Added a resolution-note field and Resolve latest open defect action.",
+    "Updated recorder status text to show open and resolved defect counts.",
+    "Added triage field schema to the primary-demo QA manifest.",
+    "Verified MP-10 blocking defect open -> resolved transition in browser with recorder export prepared."
+  ],
+  "prefix": "ssrm_3d_browser_world_v67_primary_demo_defect_triage_status",
+  "primary_demo_defect_triage_status_readiness": 0.9622,
+  "readiness": 0.9622,
+  "report": 307,
+  "seed": 20270705,
+  "source_v63_path": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_results.json",
+  "source_v65_path": "artifacts/ssrm_3d_browser_world_v65_primary_demo_manual_pass_recorder_results.json",
+  "source_v66_path": "artifacts/ssrm_3d_browser_world_v66_audit_after_rollback_recorder_resolution_results.json",
+  "triage_fields": [
+    "id",
+    "stepId",
+    "severity",
+    "status",
+    "note",
+    "resolutionNote",
+    "resolvedAt"
+  ],
+  "verdict": "pass",
+  "weakest_channel_score": 0.892,
+  "weakest_named_channel": "single_internal_triage_check_not_external_playtest"
+}

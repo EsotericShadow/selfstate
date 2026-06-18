@@ -66,7 +66,10 @@ article, .handoff, .recorder { padding: 26px; }
 .record-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; }
 .record-list button, .recorder button { border: 1px solid var(--line); border-radius: 999px; background: #fffdf2; padding: 8px 12px; font-weight: 700; color: var(--ink); }
 .defect-box { display: grid; gap: 8px; font-weight: 700; margin-top: 18px; }
-textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
+.triage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.triage-grid label { display: grid; gap: 8px; font-weight: 700; }
+textarea, select { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
+textarea { resize: vertical; }
 #recordLedgerOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
@@ -74,5 +77,6 @@ code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px;
 @media (max-width: 780px) {
   .grid { grid-template-columns: 1fr; }
   .record-list li { grid-template-columns: 1fr; }
+  .triage-grid { grid-template-columns: 1fr; }
   .actions { flex-direction: column; align-items: stretch; }
 }

@@ -6,6 +6,7 @@ const EXPORT_KEY = 'ssrm_v61_app_shell_export';
 const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
 const CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 const HISTORY_KEY = 'ssrm_v61_app_shell_resident_history';
+const RELATION_KEY = 'ssrm_v61_app_shell_resident_relationships';
 
 const residents = {
   Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
@@ -14,6 +15,15 @@ const residents = {
   Sera: { trust: 0.54, debt: 1, schedule: 'dry cloaks', memory: 'asked for quiet', progress: 0.42 },
   Tovan: { trust: 0.51, debt: 1, schedule: 'map safe route', memory: 'keeps route tokens', progress: 0.39 },
   Nia: { trust: 0.61, debt: 0, schedule: 'sort glass jars', memory: 'remembers quiet greeting', progress: 0.47 }
+};
+
+const defaultRelationships = {
+  Ari: { Fay: { trust: 0.56, debt: 1, memory: 'Fay lent dry awning cloth' } },
+  Fay: { Milo: { trust: 0.52, debt: 0, memory: 'Milo carried herb crates' } },
+  Milo: { Sera: { trust: 0.49, debt: 2, memory: 'Sera guarded water jars' } },
+  Sera: { Tovan: { trust: 0.55, debt: 1, memory: 'Tovan mapped a quiet drying route' } },
+  Tovan: { Nia: { trust: 0.50, debt: 1, memory: 'Nia sorted route tokens' } },
+  Nia: { Ari: { trust: 0.57, debt: 0, memory: 'Ari repaired a glass shelf' } }
 };
 
 const playtestTasks = [
@@ -30,7 +40,7 @@ const playtestTasks = [
 ];
 
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -39,7 +49,7 @@ const qaManifest = {
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY].forEach(key => localStorage.removeItem(key));
 }
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
@@ -287,6 +297,77 @@ function runContinuityLoop() {
     nonMagicRepair: true
   });
 }
+function cloneDefaultRelationships() {
+  return JSON.parse(JSON.stringify(defaultRelationships));
+}
+function readRelationships() {
+  try {
+    const graph = JSON.parse(localStorage.getItem(RELATION_KEY) || 'null');
+    return graph && typeof graph === 'object' && !Array.isArray(graph) ? graph : cloneDefaultRelationships();
+  } catch (_error) {
+    return cloneDefaultRelationships();
+  }
+}
+function writeRelationships(graph) {
+  localStorage.setItem(RELATION_KEY, JSON.stringify(graph));
+  return graph;
+}
+function selectedRelationshipTarget(name = world.selected) {
+  const graph = readRelationships();
+  const targets = Object.keys(graph[name] || {});
+  if (targets.length) return targets[0];
+  const names = Object.keys(world.residents);
+  return names[(names.indexOf(name) + 1) % names.length];
+}
+function mutateRelationship(from, to, delta) {
+  const graph = readRelationships();
+  graph[from] = graph[from] || {};
+  graph[from][to] = graph[from][to] || { trust: 0.50, debt: 0, memory: 'new public obligation' };
+  const edge = graph[from][to];
+  edge.trust = clamp(edge.trust + (delta.trust || 0));
+  edge.debt = Math.max(0, edge.debt + (delta.debt || 0));
+  if (delta.memory) edge.memory = delta.memory;
+  edge.tick = world.tick;
+  writeRelationships(graph);
+  recordResidentHistory(from, delta.historyEvent || 'social memory', `${to}: ${delta.historyDetail || edge.memory}`);
+  recordResidentHistory(to, delta.partnerEvent || 'social memory witness', `${from}: ${delta.partnerDetail || edge.memory}`);
+  return edge;
+}
+function runSocialMemoryPulse() {
+  const pairs = [
+    ['Ari', 'Fay', 'Fay remembered the awning cloth and checked Ari\'s repair'],
+    ['Fay', 'Milo', 'Milo carried herb crates before rain'],
+    ['Milo', 'Sera', 'Sera kept water jars safe for Milo'],
+    ['Sera', 'Tovan', 'Tovan marked the quiet drying route'],
+    ['Tovan', 'Nia', 'Nia sorted route tokens without losing names'],
+    ['Nia', 'Ari', 'Ari repaired the shelf Nia uses at dawn']
+  ];
+  pairs.forEach(([from, to, memory], index) => mutateRelationship(from, to, {
+    trust: index % 2 ? 0.008 : 0.012,
+    debt: index === 2 ? -1 : 0,
+    memory,
+    historyEvent: 'resident social memory',
+    historyDetail: memory,
+    partnerEvent: 'resident social memory witness',
+    partnerDetail: memory
+  }));
+  recordCheckpoint('resident social pulse');
+  return log('runSocialMemoryPulse', { residentToResident: true, pairCount: pairs.length, persistentKey: RELATION_KEY });
+}
+function settleSelectedRelationship() {
+  const from = world.selected;
+  const to = selectedRelationshipTarget(from);
+  const edge = mutateRelationship(from, to, {
+    trust: 0.018,
+    debt: -1,
+    memory: `${from} settled an obligation with ${to}`,
+    historyEvent: 'resident debt settled',
+    historyDetail: `settled obligation with ${to}`,
+    partnerEvent: 'resident debt received',
+    partnerDetail: `${from} settled an obligation`
+  });
+  return log('settleSelectedRelationship', { from, to, trust: edge.trust, debt: edge.debt, residentToResident: true });
+}
 function formatTrustRepairStatus() {
   const resident = currentResident();
   const rows = readResidentHistory()[world.selected] || [];
@@ -315,6 +396,30 @@ Recent loop events:
 ${recentEvents || 'run the continuity loop to create an integrated sequence'}
 Recent selected-resident history:
 ${publicHistory || 'no selected-resident history yet'}`;
+}
+function formatRelationshipMemory() {
+  const graph = readRelationships();
+  const lines = [];
+  Object.keys(world.residents).forEach(from => {
+    const edges = graph[from] || {};
+    const targets = Object.keys(edges);
+    if (!targets.length) {
+      lines.push(`${from} -> no public resident-to-resident memories yet`);
+    } else {
+      targets.forEach(to => {
+        const edge = edges[to];
+        const marker = from === world.selected ? '*' : ' ';
+        lines.push(`${marker} ${from} -> ${to} | trust ${Number(edge.trust).toFixed(3)} | debt ${edge.debt} | memory: ${edge.memory}`);
+      });
+    }
+  });
+  const target = selectedRelationshipTarget();
+  const selected = graph[world.selected] && graph[world.selected][target];
+  const selectedLine = selected ? `Selected tie: ${world.selected} -> ${target} | trust ${Number(selected.trust).toFixed(3)} | debt ${selected.debt} | memory: ${selected.memory}` : `Selected tie: ${world.selected} -> ${target} not initialized`;
+  return `${selectedLine}
+Persistent key: ${RELATION_KEY}
+Public resident-to-resident network:
+${lines.join('\n')}`;
 }
 function formatResidentActionButtons() {
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${name}</strong><button type="button" data-dashboard-select="${name}">Select</button><button type="button" data-dashboard-help="${name}">Help</button><button type="button" data-dashboard-borrow="${name}">Borrow</button><button type="button" data-dashboard-return="${name}">Return</button></div>`).join('');
@@ -409,6 +514,8 @@ function describeReplayRow(row) {
     runAuditAfterRollbackCheck: `rollback audit pass=${payload.pass === true} smoke=${payload.smokePass === true} audit=${payload.auditPass === true}`,
     runAllQAHooks: `ran all QA hooks count=${payload.hooks}`,
     exportReplay: `prepared replay export rows=${payload.rows} bytes=${payload.bytes}`,
+    runSocialMemoryPulse: `ran resident-to-resident social memory pulse pairs=${payload.pairCount}`,
+    settleSelectedRelationship: `settled resident-to-resident obligation ${payload.from} -> ${payload.to} debt=${payload.debt} trust=${payload.trust}`,
     toggleAudit: `audit overlay=${payload.audit === true}`,
     selectResident: `selected resident ${payload.selected}`,
     canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`
@@ -457,6 +564,7 @@ function render() {
   document.getElementById('residentActionButtons').innerHTML = formatResidentActionButtons();
   document.getElementById('trustRepairOut').textContent = formatTrustRepairStatus();
   document.getElementById('continuityLoopOut').textContent = formatContinuityLoopStatus();
+  document.getElementById('relationshipMemoryOut').textContent = formatRelationshipMemory();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -487,6 +595,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship });
 bindControls();
 render();

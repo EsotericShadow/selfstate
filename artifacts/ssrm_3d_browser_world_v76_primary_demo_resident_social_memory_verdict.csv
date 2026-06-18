@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_social_pulse_score,next_gate
+316,pass,1.0,1.0,1.0,"post-316: fold the social-memory ledger into the main continuity loop so avatar actions, resident schedules, resident-to-resident obligations, replay, and resume all tell one inspectable story"

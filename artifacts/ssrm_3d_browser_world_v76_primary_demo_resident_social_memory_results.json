@@ -1,0 +1,134 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_criteria.csv",
+    "report": "docs/316_ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local resident social-memory consolidation only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. Relationship memory is public state, not proof of private experience.",
+  "browser_evidence": {
+    "console_error_messages": [],
+    "console_errors": 0,
+    "history_sync_evidence": {
+      "history": "* Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  t0 resident social memory: Fay: Fay remembered the awning cloth and checked Ari's repair -> debt 1 trust 0.58 progress 0.36\n  t0 resident social memory witness: Nia: Ari repaired the shelf Nia uses at dawn -> debt 1 trust 0.58 progress 0.36\n  t1 resident debt settled: Fay: settled obligation with Fay -> debt 1 trust 0.58 progress 0.36\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  t0 resident social memory witness: Ari: Fay remembered the awning cloth and checked Ari's repair -> debt 0 trust 0.63 progress 0.5\n  t0 resident social memory: Milo: Milo carried herb crates before rain -> debt 0 trust 0.63 progress 0.5\n  t1 resident debt received: Ari: Ari settled an obligation -> debt 0 trust 0.63 progress 0.5\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  t0 resident social memory witness: Fay: Milo carried herb crates before rain -> debt 2 trust 0.48 progress 0.24\n  t0 resident social memory: Sera: Sera kept water jars safe for Milo -> debt 2 trust 0.48 progress 0.24\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  t0 resident social memory witness: Milo: Sera kept water jars safe for Milo -> debt 1 trust 0.54 progress 0.42\n  t0 resident social memory: Tovan: Tovan marked the quiet drying route -> debt 1 trust 0.54 progress 0.42\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  t0 resident social memory witness: Sera: Tovan marked the quiet drying route -> debt 1 trust 0.51 progress 0.39\n  t0 resident social memory: Nia: Nia sorted route tokens without losing names -> debt 1 trust 0.51 progress 0.39\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  t0 resident social memory witness: Tovan: Nia sorted route tokens without losing names -> debt 0 trust 0.61 progress 0.47\n  t0 resident social memory: Ari: Ari repaired the shelf Nia uses at dawn -> debt 0 trust 0.61 progress 0.47"
+    },
+    "history_sync_pass": true,
+    "replay_transcript_evidence": {
+      "criterion": "human-readable transcript descriptions for social pulse and settlement",
+      "replay": "2 rows",
+      "transcript": "t0 arrival court / Ari: ran resident-to-resident social memory pulse pairs=6\nt1 arrival court / Ari: settled resident-to-resident obligation Ari -> Fay debt=0 trust=0.5900000000000001"
+    },
+    "replay_transcript_pass": true,
+    "resume_persistence_evidence": {
+      "checkpointOut": "resident social pulse @ t0 | arrival court | Ari | debt 1 trust 0.58 | progress 0.36 | replay 0",
+      "label": "after_resume",
+      "qaManifestOut": "{\n  \"stateKeys\": [\n    \"ssrm_v61_app_shell_world\",\n    \"ssrm_v61_app_shell_replay\",\n    \"ssrm_v61_app_shell_qa_results\",\n    \"ssrm_v61_app_shell_export\",\n    \"ssrm_v61_app_shell_saved_snapshot\",\n    \"ssrm_v61_app_shell_checkpoints\",\n    \"ssrm_v61_app_shell_resident_history\",\n    \"ssrm_v61_app_shell_resident_relationships\"\n  ],\n  \"publicState\": [\n    \"avatar\",\n    \"selected\",\n    \"residents\",\n    \"resources\",\n    \"replay\"\n  ],\n  \"forbiddenPublicState\": [\n    \"privateWorkspace\",\n    \"subjectiveFeeling\",\n    \"llmTranscript\"\n  ],\n  \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\n  \"directHooks\": [\n    \"runPlaytestChecklist\",\n    \"runStateBoundaryAudit\",\n    \"runSaveRestoreSmoke\",\n    \"runAuditAfterRollbackCheck\",\n    \"runAllQAHooks\",\n    \"toggleAudit\",\n    \"exportReplay\"\n  ]\n}",
+      "relationshipMemoryOut": "Selected tie: Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\nPersistent key: ssrm_v61_app_shell_resident_relationships\nPublic resident-to-resident network:\n* Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\n  Fay -> Milo | trust 0.528 | debt 0 | memory: Milo carried herb crates before rain\n  Milo -> Sera | trust 0.502 | debt 1 | memory: Sera kept water jars safe for Milo\n  Sera -> Tovan | trust 0.558 | debt 1 | memory: Tovan marked the quiet drying route\n  Tovan -> Nia | trust 0.512 | debt 1 | memory: Nia sorted route tokens without losing names\n  Nia -> Ari | trust 0.578 | debt 0 | memory: Ari repaired the shelf Nia uses at dawn",
+      "replayOut": "2 rows",
+      "residentHistoryOut": "* Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  t0 resident social memory: Fay: Fay remembered the awning cloth and checked Ari's repair -> debt 1 trust 0.58 progress 0.36\n  t0 resident social memory witness: Nia: Ari repaired the shelf Nia uses at dawn -> debt 1 trust 0.58 progress 0.36\n  t1 resident debt settled: Fay: settled obligation with Fay -> debt 1 trust 0.58 progress 0.36\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  t0 resident social memory witness: Ari: Fay remembered the awning cloth and checked Ari's repair -> debt 0 trust 0.63 progress 0.5\n  t0 resident social memory: Milo: Milo carried herb crates before rain -> debt 0 trust 0.63 progress 0.5\n  t1 resident debt received: Ari: Ari settled an obligation -> debt 0 trust 0.63 progress 0.5\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  t0 resident social memory witness: Fay: Milo carried herb crates before rain -> debt 2 trust 0.48 progress 0.24\n  t0 resident social memory: Sera: Sera kept water jars safe for Milo -> debt 2 trust 0.48 progress 0.24\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  t0 resident social memory witness: Milo: Sera kept water jars safe for Milo -> debt 1 trust 0.54 progress 0.42\n  t0 resident social memory: Tovan: Tovan marked the quiet drying route -> debt 1 trust 0.54 progress 0.42\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  t0 resident social memory witness: Sera: Tovan marked the quiet drying route -> debt 1 trust 0.51 progress 0.39\n  t0 resident social memory: Nia: Nia sorted route tokens without losing names -> debt 1 trust 0.51 progress 0.39\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  t0 resident social memory witness: Tovan: Nia sorted route tokens without losing names -> debt 0 trust 0.61 progress 0.47\n  t0 resident social memory: Ari: Ari repaired the shelf Nia uses at dawn -> debt 0 trust 0.61 progress 0.47",
+      "selected": "Ari",
+      "sessionTranscriptOut": "t0 arrival court / Ari: ran resident-to-resident social memory pulse pairs=6\nt1 arrival court / Ari: settled resident-to-resident obligation Ari -> Fay debt=0 trust=0.5900000000000001",
+      "url": "http://127.0.0.1:8775/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "resume_persistence_pass": true,
+    "settlement_evidence": {
+      "after": "Selected tie: Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\nPersistent key: ssrm_v61_app_shell_resident_relationships\nPublic resident-to-resident network:\n* Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\n  Fay -> Milo | trust 0.528 | debt 0 | memory: Milo carried herb crates before rain\n  Milo -> Sera | trust 0.502 | debt 1 | memory: Sera kept water jars safe for Milo\n  Sera -> Tovan | trust 0.558 | debt 1 | memory: Tovan marked the quiet drying route\n  Tovan -> Nia | trust 0.512 | debt 1 | memory: Nia sorted route tokens without losing names\n  Nia -> Ari | trust 0.578 | debt 0 | memory: Ari repaired the shelf Nia uses at dawn"
+    },
+    "settlement_pass": true,
+    "social_pulse_evidence": {
+      "after": "Selected tie: Ari -> Fay | trust 0.572 | debt 1 | memory: Fay remembered the awning cloth and checked Ari's repair\nPersistent key: ssrm_v61_app_shell_resident_relationships\nPublic resident-to-resident network:\n* Ari -> Fay | trust 0.572 | debt 1 | memory: Fay remembered the awning cloth and checked Ari's repair\n  Fay -> Milo | trust 0.528 | debt 0 | memory: Milo carried herb crates before rain\n  Milo -> Sera | trust 0.502 | debt 1 | memory: Sera kept water jars safe for Milo\n  Sera -> Tovan | trust 0.558 | debt 1 | memory: Tovan marked the quiet drying route\n  Tovan -> Nia | trust 0.512 | debt 1 | memory: Nia sorted route tokens without losing names\n  Nia -> Ari | trust 0.578 | debt 0 | memory: Ari repaired the shelf Nia uses at dawn",
+      "before": "Selected tie: Ari -> Fay | trust 0.560 | debt 1 | memory: Fay lent dry awning cloth\nPersistent key: ssrm_v61_app_shell_resident_relationships\nPublic resident-to-resident network:\n* Ari -> Fay | trust 0.560 | debt 1 | memory: Fay lent dry awning cloth\n  Fay -> Milo | trust 0.520 | debt 0 | memory: Milo carried herb crates\n  Milo -> Sera | trust 0.490 | debt 2 | memory: Sera guarded water jars\n  Sera -> Tovan | trust 0.550 | debt 1 | memory: Tovan mapped a quiet drying route\n  Tovan -> Nia | trust 0.500 | debt 1 | memory: Nia sorted route tokens\n  Nia -> Ari | trust 0.570 | debt 0 | memory: Ari repaired a glass shelf",
+      "checkpoints": "resident social pulse @ t0 | arrival court | Ari | debt 1 trust 0.58 | progress 0.36 | replay 0"
+    },
+    "social_pulse_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "social_memory_panel_present",
+      "evidence": "maintained shell exposes a resident social-memory panel",
+      "failure_if_false": "resident-to-resident memory would remain invisible in the primary demo",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generated_source_of_truth",
+      "evidence": "relationship memory is generated from the maintained v61 source",
+      "failure_if_false": "regeneration would erase resident social-memory continuity",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "same_surface_relationship_state",
+      "evidence": "social memory uses the same shell, replay, checkpoints, and public resident history",
+      "failure_if_false": "relationship memory would be another detached bridge instead of a playable system layer",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "public_relationship_signals",
+      "evidence": "relationship panel exposes selected tie, persistence key, and network rows",
+      "failure_if_false": "reviewers would need raw storage to see resident-to-resident continuity",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_social_pulse_visible",
+      "evidence": "{'before': 'Selected tie: Ari -> Fay | trust 0.560 | debt 1 | memory: Fay lent dry awning cloth\\nPersistent key: ssrm_v61_app_shell_resident_relationships\\nPublic resident-to-resident network:\\n* Ari -> Fay | trust 0.560 | debt 1 | memory: Fay lent dry awning cloth\\n  Fay -> Milo | trust 0.520 | debt 0 | memory: Milo carried herb crates\\n  Milo -> Sera | trust 0.490 | debt 2 | memory: Sera guarded water jars\\n  Sera -> Tovan | trust 0.550 | debt 1 | memory: Tovan mapped a quiet drying route\\n  Tovan -> Nia | trust 0.500 | debt 1 | memory: Nia sorted route tokens\\n  Nia -> Ari | trust 0.570 | debt 0 | memory: Ari repaired a glass shelf', 'after': \"Selected tie: Ari -> Fay | trust 0.572 | debt 1 | memory: Fay remembered the awning cloth and checked Ari's repair\\nPersistent key: ssrm_v61_app_shell_resident_relationships\\nPublic resident-to-resident network:\\n* Ari -> Fay | trust 0.572 | debt 1 | memory: Fay remembered the awning cloth and checked Ari's repair\\n  Fay -> Milo | trust 0.528 | debt 0 | memory: Milo carried herb crates before rain\\n  Milo -> Sera | trust 0.502 | debt 1 | memory: Sera kept water jars safe for Milo\\n  Sera -> Tovan | trust 0.558 | debt 1 | memory: Tovan marked the quiet drying route\\n  Tovan -> Nia | trust 0.512 | debt 1 | memory: Nia sorted route tokens without losing names\\n  Nia -> Ari | trust 0.578 | debt 0 | memory: Ari repaired the shelf Nia uses at dawn\", 'checkpoints': 'resident social pulse @ t0 | arrival court | Ari | debt 1 trust 0.58 | progress 0.36 | replay 0'}",
+      "failure_if_false": "browser run did not visibly update resident-to-resident memories",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_settlement_visible",
+      "evidence": "{'after': 'Selected tie: Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\\nPersistent key: ssrm_v61_app_shell_resident_relationships\\nPublic resident-to-resident network:\\n* Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\\n  Fay -> Milo | trust 0.528 | debt 0 | memory: Milo carried herb crates before rain\\n  Milo -> Sera | trust 0.502 | debt 1 | memory: Sera kept water jars safe for Milo\\n  Sera -> Tovan | trust 0.558 | debt 1 | memory: Tovan marked the quiet drying route\\n  Tovan -> Nia | trust 0.512 | debt 1 | memory: Nia sorted route tokens without losing names\\n  Nia -> Ari | trust 0.578 | debt 0 | memory: Ari repaired the shelf Nia uses at dawn'}",
+      "failure_if_false": "selected relationship settlement did not visibly change trust/debt/memory",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_history_sync",
+      "evidence": "{'history': \"* Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\\n  t0 resident social memory: Fay: Fay remembered the awning cloth and checked Ari's repair -> debt 1 trust 0.58 progress 0.36\\n  t0 resident social memory witness: Nia: Ari repaired the shelf Nia uses at dawn -> debt 1 trust 0.58 progress 0.36\\n  t1 resident debt settled: Fay: settled obligation with Fay -> debt 1 trust 0.58 progress 0.36\\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\\n  t0 resident social memory witness: Ari: Fay remembered the awning cloth and checked Ari's repair -> debt 0 trust 0.63 progress 0.5\\n  t0 resident social memory: Milo: Milo carried herb crates before rain -> debt 0 trust 0.63 progress 0.5\\n  t1 resident debt received: Ari: Ari settled an obligation -> debt 0 trust 0.63 progress 0.5\\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\\n  t0 resident social memory witness: Fay: Milo carried herb crates before rain -> debt 2 trust 0.48 progress 0.24\\n  t0 resident social memory: Sera: Sera kept water jars safe for Milo -> debt 2 trust 0.48 progress 0.24\\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\\n  t0 resident social memory witness: Milo: Sera kept water jars safe for Milo -> debt 1 trust 0.54 progress 0.42\\n  t0 resident social memory: Tovan: Tovan marked the quiet drying route -> debt 1 trust 0.54 progress 0.42\\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\\n  t0 resident social memory witness: Sera: Tovan marked the quiet drying route -> debt 1 trust 0.51 progress 0.39\\n  t0 resident social memory: Nia: Nia sorted route tokens without losing names -> debt 1 trust 0.51 progress 0.39\\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\\n  t0 resident social memory witness: Tovan: Nia sorted route tokens without losing names -> debt 0 trust 0.61 progress 0.47\\n  t0 resident social memory: Ari: Ari repaired the shelf Nia uses at dawn -> debt 0 trust 0.61 progress 0.47\"}",
+      "failure_if_false": "resident history did not record social-memory events for the affected residents",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_replay_transcript_visible",
+      "evidence": "{'replay': '2 rows', 'transcript': 't0 arrival court / Ari: ran resident-to-resident social memory pulse pairs=6\\nt1 arrival court / Ari: settled resident-to-resident obligation Ari -> Fay debt=0 trust=0.5900000000000001', 'criterion': 'human-readable transcript descriptions for social pulse and settlement'}",
+      "failure_if_false": "replay transcript did not include social-memory actions",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_resume_persistence",
+      "evidence": "{'checkpointOut': 'resident social pulse @ t0 | arrival court | Ari | debt 1 trust 0.58 | progress 0.36 | replay 0', 'label': 'after_resume', 'qaManifestOut': '{\\n  \"stateKeys\": [\\n    \"ssrm_v61_app_shell_world\",\\n    \"ssrm_v61_app_shell_replay\",\\n    \"ssrm_v61_app_shell_qa_results\",\\n    \"ssrm_v61_app_shell_export\",\\n    \"ssrm_v61_app_shell_saved_snapshot\",\\n    \"ssrm_v61_app_shell_checkpoints\",\\n    \"ssrm_v61_app_shell_resident_history\",\\n    \"ssrm_v61_app_shell_resident_relationships\"\\n  ],\\n  \"publicState\": [\\n    \"avatar\",\\n    \"selected\",\\n    \"residents\",\\n    \"resources\",\\n    \"replay\"\\n  ],\\n  \"forbiddenPublicState\": [\\n    \"privateWorkspace\",\\n    \"subjectiveFeeling\",\\n    \"llmTranscript\"\\n  ],\\n  \"boundary\": \"Deterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\",\\n  \"directHooks\": [\\n    \"runPlaytestChecklist\",\\n    \"runStateBoundaryAudit\",\\n    \"runSaveRestoreSmoke\",\\n    \"runAuditAfterRollbackCheck\",\\n    \"runAllQAHooks\",\\n    \"toggleAudit\",\\n    \"exportReplay\"\\n  ]\\n}', 'relationshipMemoryOut': 'Selected tie: Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\\nPersistent key: ssrm_v61_app_shell_resident_relationships\\nPublic resident-to-resident network:\\n* Ari -> Fay | trust 0.590 | debt 0 | memory: Ari settled an obligation with Fay\\n  Fay -> Milo | trust 0.528 | debt 0 | memory: Milo carried herb crates before rain\\n  Milo -> Sera | trust 0.502 | debt 1 | memory: Sera kept water jars safe for Milo\\n  Sera -> Tovan | trust 0.558 | debt 1 | memory: Tovan marked the quiet drying route\\n  Tovan -> Nia | trust 0.512 | debt 1 | memory: Nia sorted route tokens without losing names\\n  Nia -> Ari | trust 0.578 | debt 0 | memory: Ari repaired the shelf Nia uses at dawn', 'replayOut': '2 rows', 'residentHistoryOut': \"* Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\\n  t0 resident social memory: Fay: Fay remembered the awning cloth and checked Ari's repair -> debt 1 trust 0.58 progress 0.36\\n  t0 resident social memory witness: Nia: Ari repaired the shelf Nia uses at dawn -> debt 1 trust 0.58 progress 0.36\\n  t1 resident debt settled: Fay: settled obligation with Fay -> debt 1 trust 0.58 progress 0.36\\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\\n  t0 resident social memory witness: Ari: Fay remembered the awning cloth and checked Ari's repair -> debt 0 trust 0.63 progress 0.5\\n  t0 resident social memory: Milo: Milo carried herb crates before rain -> debt 0 trust 0.63 progress 0.5\\n  t1 resident debt received: Ari: Ari settled an obligation -> debt 0 trust 0.63 progress 0.5\\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\\n  t0 resident social memory witness: Fay: Milo carried herb crates before rain -> debt 2 trust 0.48 progress 0.24\\n  t0 resident social memory: Sera: Sera kept water jars safe for Milo -> debt 2 trust 0.48 progress 0.24\\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\\n  t0 resident social memory witness: Milo: Sera kept water jars safe for Milo -> debt 1 trust 0.54 progress 0.42\\n  t0 resident social memory: Tovan: Tovan marked the quiet drying route -> debt 1 trust 0.54 progress 0.42\\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\\n  t0 resident social memory witness: Sera: Tovan marked the quiet drying route -> debt 1 trust 0.51 progress 0.39\\n  t0 resident social memory: Nia: Nia sorted route tokens without losing names -> debt 1 trust 0.51 progress 0.39\\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\\n  t0 resident social memory witness: Tovan: Nia sorted route tokens without losing names -> debt 0 trust 0.61 progress 0.47\\n  t0 resident social memory: Ari: Ari repaired the shelf Nia uses at dawn -> debt 0 trust 0.61 progress 0.47\", 'selected': 'Ari', 'sessionTranscriptOut': 't0 arrival court / Ari: ran resident-to-resident social memory pulse pairs=6\\nt1 arrival court / Ari: settled resident-to-resident obligation Ari -> Fay debt=0 trust=0.5900000000000001', 'url': 'http://127.0.0.1:8775/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63'}",
+      "failure_if_false": "resident social-memory state did not persist through leave/resume",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "browser workflow produced runtime console errors",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_social_pulse_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "readiness": 1.0,
+    "social_memory_panel_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-316: fold the social-memory ledger into the main continuity loop so avatar actions, resident schedules, resident-to-resident obligations, replay, and resume all tell one inspectable story",
+  "prefix": "ssrm_3d_browser_world_v76_primary_demo_resident_social_memory",
+  "report": 316,
+  "seed": 20270714,
+  "verdict": "pass"
+}

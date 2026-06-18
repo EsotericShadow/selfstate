@@ -33,6 +33,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo actionable resident dashboard report](docs/313_ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_report.md): adds per-resident Select/Help/Borrow/Return dashboard controls wired to existing consequence functions.
 - [Primary demo recoverable trust repair report](docs/314_ssrm_3d_browser_world_v74_primary_demo_recoverable_trust_repair_report.md): adds a bounded trust-wound and non-magical repair loop on the same dashboard/history surface.
 - [Primary demo continuity loop report](docs/315_ssrm_3d_browser_world_v75_primary_demo_continuity_loop_report.md): adds one reviewer-facing loop for arrival, schedule, debt, offscreen activity, trust repair, save/resume, and replay/export visibility.
+- [Primary demo resident social memory report](docs/316_ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_report.md): adds a public resident-to-resident relationship ledger with social-memory pulse, settlement, replay, history, and resume evidence.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

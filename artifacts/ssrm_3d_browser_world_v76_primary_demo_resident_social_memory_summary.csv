@@ -1,0 +1,7 @@
+metric,value
+readiness,1.0
+weakest_channel_score,1.0
+social_memory_panel_score,1.0
+browser_social_pulse_score,1.0
+console_errors,0
+criterion_count,10

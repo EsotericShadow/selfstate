@@ -18,6 +18,8 @@ Report 314 adds a bounded recoverable trust-repair scenario to the same shell: i
 
 Report 315 adds one continuity-loop walkthrough to the same maintained shell, tying arrival, schedule inspection, debt consequence, offscreen activity, trust repair, save/resume, and replay/export visibility into one reviewer-facing sequence. This is still public browser-local state continuity, not subjective experience or finished gameplay.
 
+Report 316 adds resident-to-resident social memory to the same primary shell: a public relationship ledger, social-memory pulse, and selected relationship settlement now show residents remembering each other across replay, history, checkpoints, and resume. This is public relationship continuity, not subjective memory or moral patienthood.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

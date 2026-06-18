@@ -1251,3 +1251,9 @@ Report 355 adds a visible absent-time summary to the maintained v61 shell. After
 Report 356 advances the maintained v61 shell from a readable absent-time summary to a bounded player-choice receipt. After `Wait offscreen`, the shell now exposes two causal threads: `avatar-absence-thread` from the avatar choosing to be absent, and the resident-caused `milo-offscreen-water-jars` obligation from Fay changing Milo's state while the avatar was away. The player can choose which thread to handle first, the receipt records that choice, and resolving the resident-caused obligation no longer erases the still-pending avatar-caused absence thread.
 
 This remains deterministic browser-local state only. The value is consolidation: the same playable shell now shows offscreen life, causal separation, bounded choice, schedule/debt outcome, replay evidence, and reload persistence in one loop without adding a parallel generated world.
+
+### Report 357: Browser World v117 Primary Shell Avatar Absence Accountability Receipt
+
+Report 357 continues consolidating the playable loop inside the maintained v61 shell. Report 356 proved that the resident-caused offscreen obligation can be chosen first while the avatar-caused absence thread remains pending. Report 357 adds the follow-through action: the player can account for avatar absence after resolving the resident-caused obligation, marking the avatar thread as accounted while keeping `milo-offscreen-water-jars`, Fay's offscreen event, Milo's resolved schedule/debt state, and public resident history intact.
+
+This is still deterministic browser-local state, but it is a more complete consequence loop: offscreen life creates a resident-caused problem, the player chooses a causal thread, resolves the obligation, then accounts for their own absence without rewriting what residents did while away.

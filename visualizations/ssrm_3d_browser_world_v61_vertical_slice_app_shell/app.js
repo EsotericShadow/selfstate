@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -74,6 +74,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   absentTimeSummary: null,
   absentTimeThreads: [],
   absentTimeChoiceReceipt: null,
+  avatarAbsenceAccountabilityReceipt: null,
   selectedObligationId: null,
   lastQA: []
 }));
@@ -172,6 +173,22 @@ function renderAbsentTimeChoice() {
     receipt ? `Receipt: ${receipt.visibleStatus}` : 'Receipt: waiting for bounded choice'
   ].join('\n');
 }
+function renderAvatarAbsenceAccountability() {
+  const node = document.getElementById('avatarAbsenceAccountabilityOut');
+  if (!node) return;
+  const receipt = world.avatarAbsenceAccountabilityReceipt;
+  if (!receipt) {
+    node.textContent = 'No avatar absence accountability receipt yet.';
+    return;
+  }
+  node.textContent = [
+    `Phase: ${receipt.phase}`,
+    `Avatar thread: ${receipt.avatarThreadStatus}`,
+    `Resident thread: ${receipt.residentThreadId} ${receipt.residentThreadStatus}`,
+    `History preserved: ${receipt.residentHistoryPreserved ? 'yes' : 'no'}`,
+    `Receipt: ${receipt.visibleStatus}`
+  ].join('\n');
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -185,6 +202,7 @@ function log(event, payload) {
   renderScheduleDebtIntegration();
   renderAbsentTimeSummary();
   renderAbsentTimeChoice();
+  renderAvatarAbsenceAccountability();
   return row;
 }
 function mutateResident(name, delta) {
@@ -421,6 +439,7 @@ function updateAbsentTimeSummary(offscreenEvent) {
   };
   world.absentTimeThreads = buildAbsentTimeThreads(event, obligation);
   world.absentTimeChoiceReceipt = null;
+  world.avatarAbsenceAccountabilityReceipt = null;
   return world.absentTimeSummary;
 }
 function buildAbsentTimeThreads(event, obligation) {
@@ -486,6 +505,44 @@ function handleResidentOffscreenFirst() {
   const event = (world.offscreenObligationEvents || [])[world.offscreenObligationEvents.length - 1];
   const threadId = world.absentTimeSummary ? world.absentTimeSummary.obligationId : event && event.obligationId;
   return chooseAbsentTimeThread(threadId || 'missing-resident-thread');
+}
+function accountForAvatarAbsence() {
+  const threads = ensureAbsentTimeThreads();
+  const avatarThread = threads.find(thread => thread.id === 'avatar-absence-thread');
+  const residentThreadId = world.absentTimeSummary ? world.absentTimeSummary.obligationId : null;
+  const residentThread = threads.find(thread => thread.id === residentThreadId);
+  const obligation = (world.obligationLedger || []).find(row => row.id === residentThreadId);
+  const event = (world.offscreenObligationEvents || []).find(row => row.obligationId === residentThreadId);
+  if (!avatarThread || !residentThreadId) {
+    return log('accountForAvatarAbsence', { accounted: false, reason: 'no avatar absence thread', boundary: BOUNDARY });
+  }
+  avatarThread.status = 'accounted';
+  world.resources.care = Math.max(0, world.resources.care - 1);
+  if (obligation && world.residents[obligation.resident]) {
+    mutateResident(obligation.resident, {
+      trust: 0.006,
+      progress: 0.006,
+      memory: `avatar accounted for absence after ${residentThreadId}`,
+      historyEvent: 'avatar absence accounted',
+      historyDetail: `avatar acknowledged absence without erasing ${residentThreadId}`
+    });
+  }
+  const residentHistoryPreserved = Boolean(obligation && event && (world.offscreenObligationEvents || []).some(row => row.obligationId === residentThreadId));
+  world.avatarAbsenceAccountabilityReceipt = {
+    reportIntroduced: 357,
+    phase: 'avatar-absence-accounted',
+    avatarThreadId: avatarThread.id,
+    avatarThreadStatus: avatarThread.status,
+    residentThreadId,
+    residentThreadStatus: residentThread ? residentThread.status : 'missing',
+    residentObligationStatus: obligation ? obligation.status : 'missing',
+    residentObligationStage: obligation ? obligation.stage : 'missing',
+    residentHistoryPreserved,
+    careAfter: world.resources.care,
+    visibleStatus: `avatar-caused absence accounted; resident-caused ${residentThreadId} remains ${residentThread ? residentThread.status : 'missing'} with obligation ${obligation ? `${obligation.status}/${obligation.stage}` : 'missing'}`,
+    boundary: 'browser-local-avatar-absence-accountability-receipt-only'
+  };
+  return log('accountForAvatarAbsence', { accounted: true, avatarAbsenceAccountabilityReceipt: world.avatarAbsenceAccountabilityReceipt, absentTimeThreads: threads, boundary: BOUNDARY });
 }
 function recordObligationChoiceOutcome(obligation, action, linkedLedger) {
   if (!world.absentTimeSummary || world.absentTimeSummary.obligationId !== obligation.id) return null;
@@ -607,6 +664,7 @@ function runStateBoundaryAudit() {
     absentTimeSummary: world.absentTimeSummary,
     absentTimeThreads: world.absentTimeThreads,
     absentTimeChoiceReceipt: world.absentTimeChoiceReceipt,
+    avatarAbsenceAccountabilityReceipt: world.avatarAbsenceAccountabilityReceipt,
     selectedObligationId: world.selectedObligationId,
     replay: world.replay.map(row => ({
       event: row.event,
@@ -707,6 +765,7 @@ function bindControls() {
   renderScheduleDebtIntegration();
   renderAbsentTimeSummary();
   renderAbsentTimeChoice();
+  renderAvatarAbsenceAccountability();
 }
 function readResidentHistory() {
   try {

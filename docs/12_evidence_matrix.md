@@ -1513,3 +1513,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt_browser_smoke.json`, and `docs/356_ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt_report.md`.
 - Browser result: after `Wait offscreen`, the Absent choice panel shows `avatar-absence-thread avatar-caused pending` and `milo-offscreen-water-jars resident-caused pending`; choosing the resident thread records a receipt while the avatar thread remains pending; resolving the resident obligation records resolved schedule/debt state while preserving the avatar thread as pending through reload.
 - Boundary: browser-local deterministic absent-time choice receipt only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 357 Evidence Matrix Entry
+
+- Claim: the avatar-caused absence thread can be explicitly accounted for after the resident-caused offscreen obligation is handled, without erasing resident-caused history.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v117_primary_shell_avatar_absence_accountability_receipt_browser_smoke.json`, and `docs/357_ssrm_3d_browser_world_v117_primary_shell_avatar_absence_accountability_receipt_report.md`.
+- Browser result: after `Wait offscreen`, resident-thread choice, and `Resolve obligation`, the avatar thread remains pending; `Account for avatar absence` marks it accounted, preserves `milo-offscreen-water-jars` as resolved, keeps Milo schedule/debt resolved/settled, records `History preserved: yes`, and survives reload with zero console errors.
+- Boundary: browser-local deterministic avatar absence accountability receipt only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

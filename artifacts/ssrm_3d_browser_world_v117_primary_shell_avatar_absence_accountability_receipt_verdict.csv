@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+357,pass,1.0,1.0,post-357: make the accountability receipt affect the next return greeting so residents can reference both the resolved offscreen obligation and the accounted avatar absence without rewriting history

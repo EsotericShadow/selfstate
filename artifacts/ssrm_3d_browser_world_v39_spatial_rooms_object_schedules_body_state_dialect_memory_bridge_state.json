@@ -1,0 +1,391 @@
+{
+  "avatar_room": {
+    "archive": "stone stacks",
+    "orchard": "satchel shed",
+    "repair_ring": "wire bench",
+    "riverbend": "kit alcove",
+    "roofward": "ledger loft",
+    "signal": "lens room"
+  },
+  "avatar_xy": {
+    "archive": [
+      0.3,
+      0.96
+    ],
+    "orchard": [
+      0.81,
+      0.5
+    ],
+    "repair_ring": [
+      0.3,
+      0.96
+    ],
+    "riverbend": [
+      0.7,
+      0.04
+    ],
+    "roofward": [
+      0.81,
+      0.5
+    ],
+    "signal": [
+      0.7,
+      0.04
+    ]
+  },
+  "body_state": {
+    "archive": {
+      "arousal": 0.02,
+      "comfort": 0.88,
+      "energy": 0.06,
+      "pain": 0.006,
+      "temperature": 0.91,
+      "wetness": 0.932
+    },
+    "orchard": {
+      "arousal": 0.02,
+      "comfort": 0.96,
+      "energy": 0.06,
+      "pain": 0.0,
+      "temperature": 0.886,
+      "wetness": 0.846
+    },
+    "repair_ring": {
+      "arousal": 0.026778,
+      "comfort": 0.764,
+      "energy": 0.06,
+      "pain": 0.006,
+      "temperature": 0.854,
+      "wetness": 0.932
+    },
+    "riverbend": {
+      "arousal": 0.02,
+      "comfort": 0.96,
+      "energy": 0.24,
+      "pain": 0.0,
+      "temperature": 0.796,
+      "wetness": 0.92
+    },
+    "roofward": {
+      "arousal": 0.02,
+      "comfort": 0.96,
+      "energy": 0.06,
+      "pain": 0.0,
+      "temperature": 0.96,
+      "wetness": 0.834
+    },
+    "signal": {
+      "arousal": 0.02,
+      "comfort": 0.96,
+      "energy": 0.24,
+      "pain": 0.0,
+      "temperature": 0.96,
+      "wetness": 0.901
+    }
+  },
+  "boundary": "Deterministic browser-local spatial/body-state scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "dialect_memory": {
+    "archive:Nia": [
+      "archive-ink-1",
+      "archive-arrival-2",
+      "archive-spool-3",
+      "archive-spool-4",
+      "archive-ink-5",
+      "archive-arrival-6",
+      "archive-arrival-7",
+      "archive-stone-8"
+    ],
+    "archive:Toma": [
+      "archive-stone-12",
+      "archive-arrival-13",
+      "archive-stone-14",
+      "archive-spool-15",
+      "archive-spool-16",
+      "archive-spool-0",
+      "archive-arrival-1",
+      "archive-spool-2"
+    ],
+    "orchard:Ivo": [
+      "orchard-arrival-9",
+      "orchard-market-10",
+      "orchard-arrival-11",
+      "orchard-arrival-12",
+      "orchard-satchel-13",
+      "orchard-seed-14",
+      "orchard-arrival-15",
+      "orchard-satchel-16"
+    ],
+    "orchard:Mara": [
+      "orchard-arrival-12",
+      "orchard-satchel-13",
+      "orchard-satchel-14",
+      "orchard-seed-15",
+      "orchard-market-16",
+      "orchard-arrival-0",
+      "orchard-market-1",
+      "orchard-arrival-2"
+    ],
+    "repair_ring:Juno": [
+      "repair_ring-bell-12",
+      "repair_ring-bell-13",
+      "repair_ring-spark-14",
+      "repair_ring-spark-15",
+      "repair_ring-bell-16",
+      "repair_ring-arrival-0",
+      "repair_ring-wire-1",
+      "repair_ring-wire-2"
+    ],
+    "repair_ring:Pax": [
+      "repair_ring-spark-1",
+      "repair_ring-spark-2",
+      "repair_ring-wire-3",
+      "repair_ring-arrival-4",
+      "repair_ring-arrival-5",
+      "repair_ring-spark-6",
+      "repair_ring-spark-7",
+      "repair_ring-bell-8"
+    ],
+    "riverbend:Ari": [
+      "riverbend-arrival-9",
+      "riverbend-arrival-10",
+      "riverbend-dry-11",
+      "riverbend-dry-12",
+      "riverbend-kit-13",
+      "riverbend-plank-14",
+      "riverbend-plank-15",
+      "riverbend-kit-16"
+    ],
+    "riverbend:Lio": [
+      "riverbend-arrival-12",
+      "riverbend-arrival-13",
+      "riverbend-arrival-14",
+      "riverbend-dry-15",
+      "riverbend-dry-16",
+      "riverbend-plank-0",
+      "riverbend-plank-1",
+      "riverbend-plank-2"
+    ],
+    "roofward:Fay": [
+      "roofward-arrival-12",
+      "roofward-warm-13",
+      "roofward-arrival-14",
+      "roofward-arrival-15",
+      "roofward-arrival-16",
+      "roofward-warm-0",
+      "roofward-ledger-1",
+      "roofward-ledger-2"
+    ],
+    "roofward:Sera": [
+      "roofward-ledger-9",
+      "roofward-glass-10",
+      "roofward-arrival-11",
+      "roofward-arrival-12",
+      "roofward-arrival-13",
+      "roofward-glass-14",
+      "roofward-ledger-15",
+      "roofward-ledger-16"
+    ],
+    "signal:Milo": [
+      "signal-lens-12",
+      "signal-arrival-13",
+      "signal-mast-14",
+      "signal-arrival-15",
+      "signal-lantern-16",
+      "signal-lens-0",
+      "signal-lantern-1",
+      "signal-lens-2"
+    ],
+    "signal:Ren": [
+      "signal-mast-9",
+      "signal-arrival-10",
+      "signal-mast-11",
+      "signal-lens-12",
+      "signal-mast-13",
+      "signal-arrival-14",
+      "signal-mast-15",
+      "signal-lens-16"
+    ]
+  },
+  "settlements": [
+    {
+      "cold_room": "arrival court",
+      "dialect_id": "riverbend-dialect-8",
+      "flower_node": "node-03",
+      "heat_room": "kit alcove",
+      "objects": [
+        "cedar kit",
+        "ridge lantern",
+        "plank latch"
+      ],
+      "pain_hazard": "splintered plank",
+      "resident_a": "Ari",
+      "resident_b": "Lio",
+      "rooms": [
+        "arrival court",
+        "plank hall",
+        "dry ridge",
+        "kit alcove"
+      ],
+      "schedule_rooms": [
+        "plank hall",
+        "kit alcove",
+        "dry ridge",
+        "arrival court"
+      ],
+      "settlement_id": "riverbend",
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "wet_room": "plank hall"
+    },
+    {
+      "cold_room": "glass stair",
+      "dialect_id": "roofward-dialect-8",
+      "flower_node": "node-05",
+      "heat_room": "warm lane",
+      "objects": [
+        "herb ledger",
+        "sun lens",
+        "glass latch"
+      ],
+      "pain_hazard": "slick glass",
+      "resident_a": "Fay",
+      "resident_b": "Sera",
+      "rooms": [
+        "arrival court",
+        "glass stair",
+        "warm lane",
+        "ledger loft"
+      ],
+      "schedule_rooms": [
+        "ledger loft",
+        "warm lane",
+        "glass stair",
+        "arrival court"
+      ],
+      "settlement_id": "roofward",
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinge ticks",
+      "wet_room": "arrival court"
+    },
+    {
+      "cold_room": "stone stacks",
+      "dialect_id": "archive-dialect-8",
+      "flower_node": "node-08",
+      "heat_room": "ink niche",
+      "objects": [
+        "signal spool",
+        "inkstone",
+        "memory tag"
+      ],
+      "pain_hazard": "paper cut",
+      "resident_a": "Nia",
+      "resident_b": "Toma",
+      "rooms": [
+        "arrival court",
+        "stone stacks",
+        "spool room",
+        "ink niche"
+      ],
+      "schedule_rooms": [
+        "spool room",
+        "stone stacks",
+        "ink niche",
+        "arrival court"
+      ],
+      "settlement_id": "archive",
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "wet_room": "arrival court"
+    },
+    {
+      "cold_room": "mast base",
+      "dialect_id": "signal-dialect-8",
+      "flower_node": "node-11",
+      "heat_room": "lens room",
+      "objects": [
+        "oil lantern",
+        "signal lens",
+        "mast rope"
+      ],
+      "pain_hazard": "rope burn",
+      "resident_a": "Milo",
+      "resident_b": "Ren",
+      "rooms": [
+        "arrival court",
+        "mast base",
+        "lantern walk",
+        "lens room"
+      ],
+      "schedule_rooms": [
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "arrival court"
+      ],
+      "settlement_id": "signal",
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "wet_room": "arrival court"
+    },
+    {
+      "cold_room": "market plank",
+      "dialect_id": "orchard-dialect-8",
+      "flower_node": "node-01",
+      "heat_room": "satchel shed",
+      "objects": [
+        "seed satchel",
+        "dry cord",
+        "market token"
+      ],
+      "pain_hazard": "mud pull",
+      "resident_a": "Ivo",
+      "resident_b": "Mara",
+      "rooms": [
+        "arrival court",
+        "seed lane",
+        "market plank",
+        "satchel shed"
+      ],
+      "schedule_rooms": [
+        "seed lane",
+        "satchel shed",
+        "market plank",
+        "arrival court"
+      ],
+      "settlement_id": "orchard",
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "wet_room": "seed lane"
+    },
+    {
+      "cold_room": "arrival court",
+      "dialect_id": "repair_ring-dialect-8",
+      "flower_node": "node-09",
+      "heat_room": "wire bench",
+      "objects": [
+        "copper wire",
+        "insulated tongs",
+        "bell gauge"
+      ],
+      "pain_hazard": "wire nick",
+      "resident_a": "Juno",
+      "resident_b": "Pax",
+      "rooms": [
+        "arrival court",
+        "wire bench",
+        "spark lane",
+        "bell alcove"
+      ],
+      "schedule_rooms": [
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "arrival court"
+      ],
+      "settlement_id": "repair_ring",
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "wet_room": "spark lane"
+    }
+  ]
+}

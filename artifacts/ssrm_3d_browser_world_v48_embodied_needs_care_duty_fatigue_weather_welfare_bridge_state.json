@@ -1,0 +1,724 @@
+{
+  "body": {
+    "cinder_garden:Juno": {
+      "comfort": 0.774082,
+      "energy": 0.12,
+      "fatigue": 0.0,
+      "hunger": 0.02,
+      "injury": 6e-06,
+      "pain": 0.00324,
+      "rest_debt": 0.56047,
+      "safety": 0.32,
+      "temperature": 0.825,
+      "thirst": 0.86,
+      "wetness": 0.0
+    },
+    "cinder_garden:Pax": {
+      "comfort": 0.636668,
+      "energy": 0.12,
+      "fatigue": 0.20742,
+      "hunger": 0.86,
+      "injury": 0.005932,
+      "pain": 0.232076,
+      "rest_debt": 0.549379,
+      "safety": 0.32,
+      "temperature": 0.88,
+      "thirst": 0.86,
+      "wetness": 0.0
+    },
+    "cinder_garden:Vale": {
+      "comfort": 0.771398,
+      "energy": 0.12,
+      "fatigue": 0.56064,
+      "hunger": 0.0,
+      "injury": 2.2e-05,
+      "pain": 0.007261,
+      "rest_debt": 0.0,
+      "safety": 0.39,
+      "temperature": 0.88,
+      "thirst": 0.86,
+      "wetness": 0.0
+    },
+    "cinder_garden:Wren": {
+      "comfort": 0.671622,
+      "energy": 0.12,
+      "fatigue": 0.56748,
+      "hunger": 0.799,
+      "injury": 0.0,
+      "pain": 0.0,
+      "rest_debt": 0.0,
+      "safety": 0.39,
+      "temperature": 0.816,
+      "thirst": 0.86,
+      "wetness": 0.0
+    },
+    "glass_harbor:Nia": {
+      "comfort": 0.513698,
+      "energy": 0.12,
+      "fatigue": 0.4653,
+      "hunger": 0.86,
+      "injury": 0.006021,
+      "pain": 0.01064,
+      "rest_debt": 0.010786,
+      "safety": 0.3,
+      "temperature": 0.18,
+      "thirst": 0.0,
+      "wetness": 0.88
+    },
+    "glass_harbor:Oren": {
+      "comfort": 0.489308,
+      "energy": 0.12,
+      "fatigue": 0.50522,
+      "hunger": 0.86,
+      "injury": 0.013642,
+      "pain": 0.163078,
+      "rest_debt": 0.01948,
+      "safety": 0.3,
+      "temperature": 0.24,
+      "thirst": 0.01,
+      "wetness": 0.88
+    },
+    "glass_harbor:Puck": {
+      "comfort": 0.512078,
+      "energy": 0.12,
+      "fatigue": 0.50596,
+      "hunger": 0.86,
+      "injury": 0.006062,
+      "pain": 0.02076,
+      "rest_debt": 0.0,
+      "safety": 0.3,
+      "temperature": 0.18,
+      "thirst": 0.01,
+      "wetness": 0.88
+    },
+    "glass_harbor:Sera": {
+      "comfort": 0.499357,
+      "energy": 0.12,
+      "fatigue": 0.47962,
+      "hunger": 0.86,
+      "injury": 0.000539,
+      "pain": 0.100266,
+      "rest_debt": 0.0,
+      "safety": 0.315,
+      "temperature": 0.18,
+      "thirst": 0.02,
+      "wetness": 0.88
+    },
+    "lichen_bridge:Kio": {
+      "comfort": 0.608213,
+      "energy": 0.12,
+      "fatigue": 0.4752,
+      "hunger": 0.0,
+      "injury": 0.006128,
+      "pain": 0.03192,
+      "rest_debt": 0.011455,
+      "safety": 0.3,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.88
+    },
+    "lichen_bridge:Luma": {
+      "comfort": 0.596851,
+      "energy": 0.12,
+      "fatigue": 0.53342,
+      "hunger": 0.011,
+      "injury": 0.0,
+      "pain": 0.05768,
+      "rest_debt": 0.274147,
+      "safety": 0.3,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.88
+    },
+    "lichen_bridge:Rin": {
+      "comfort": 0.614498,
+      "energy": 0.12,
+      "fatigue": 0.46664,
+      "hunger": 0.02,
+      "injury": 2.1e-05,
+      "pain": 0.01064,
+      "rest_debt": 0.0,
+      "safety": 0.3,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.88
+    },
+    "lichen_bridge:Sol": {
+      "comfort": 0.593557,
+      "energy": 0.12,
+      "fatigue": 0.51148,
+      "hunger": 0.097,
+      "injury": 0.000754,
+      "pain": 0.083767,
+      "rest_debt": 0.006138,
+      "safety": 0.3,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.88
+    },
+    "moss_ward:Ari": {
+      "comfort": 0.611858,
+      "energy": 0.12,
+      "fatigue": 0.4461,
+      "hunger": 0.0,
+      "injury": 2.1e-05,
+      "pain": 0.01064,
+      "rest_debt": 0.010685,
+      "safety": 0.31,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.88
+    },
+    "moss_ward:Fay": {
+      "comfort": 0.595838,
+      "energy": 0.12,
+      "fatigue": 0.53602,
+      "hunger": 0.162,
+      "injury": 6.2e-05,
+      "pain": 0.02076,
+      "rest_debt": 0.027587,
+      "safety": 0.31,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.81
+    },
+    "moss_ward:Milo": {
+      "comfort": 0.620918,
+      "energy": 0.12,
+      "fatigue": 0.5282,
+      "hunger": 0.013,
+      "injury": 6.3e-05,
+      "pain": 0.02076,
+      "rest_debt": 0.013416,
+      "safety": 0.32,
+      "temperature": 0.1956,
+      "thirst": 0.86,
+      "wetness": 0.7892
+    },
+    "moss_ward:Tala": {
+      "comfort": 0.594897,
+      "energy": 0.12,
+      "fatigue": 0.54548,
+      "hunger": 0.062,
+      "injury": 0.0,
+      "pain": 0.031642,
+      "rest_debt": 0.020618,
+      "safety": 0.31,
+      "temperature": 0.18,
+      "thirst": 0.86,
+      "wetness": 0.88
+    },
+    "orchid_engine:Bea": {
+      "comfort": 0.512368,
+      "energy": 0.12,
+      "fatigue": 0.453,
+      "hunger": 0.86,
+      "injury": 5.7e-05,
+      "pain": 0.01895,
+      "rest_debt": 0.011354,
+      "safety": 0.3,
+      "temperature": 0.783,
+      "thirst": 0.0,
+      "wetness": 0.88
+    },
+    "orchid_engine:Cai": {
+      "comfort": 0.484464,
+      "energy": 0.12,
+      "fatigue": 0.48462,
+      "hunger": 0.86,
+      "injury": 0.006714,
+      "pain": 0.19335,
+      "rest_debt": 0.0,
+      "safety": 0.3,
+      "temperature": 0.828,
+      "thirst": 0.01,
+      "wetness": 0.88
+    },
+    "orchid_engine:Dax": {
+      "comfort": 0.508554,
+      "energy": 0.12,
+      "fatigue": 0.50924,
+      "hunger": 0.86,
+      "injury": 0.0,
+      "pain": 0.0,
+      "rest_debt": 0.006111,
+      "safety": 0.3,
+      "temperature": 0.805,
+      "thirst": 0.02,
+      "wetness": 0.88
+    },
+    "orchid_engine:Eli": {
+      "comfort": 0.509039,
+      "energy": 0.12,
+      "fatigue": 0.54178,
+      "hunger": 0.86,
+      "injury": 0.006201,
+      "pain": 0.039759,
+      "rest_debt": 0.01333,
+      "safety": 0.3,
+      "temperature": 0.783,
+      "thirst": 0.256,
+      "wetness": 0.88
+    }
+  },
+  "boundary": "Deterministic browser-local embodied-need/care-duty/fatigue-rest/weather-welfare scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "burden": {
+    "cinder_garden:Juno": 0.7,
+    "cinder_garden:Pax": 0.7,
+    "cinder_garden:Vale": 0.7,
+    "cinder_garden:Wren": 0.688,
+    "glass_harbor:Nia": 0.7,
+    "glass_harbor:Oren": 0.7,
+    "glass_harbor:Puck": 0.7,
+    "glass_harbor:Sera": 0.7,
+    "lichen_bridge:Kio": 0.7,
+    "lichen_bridge:Luma": 0.7,
+    "lichen_bridge:Rin": 0.7,
+    "lichen_bridge:Sol": 0.7,
+    "moss_ward:Ari": 0.7,
+    "moss_ward:Fay": 0.7,
+    "moss_ward:Milo": 0.7,
+    "moss_ward:Tala": 0.7,
+    "orchid_engine:Bea": 0.7,
+    "orchid_engine:Cai": 0.7,
+    "orchid_engine:Dax": 0.7,
+    "orchid_engine:Eli": 0.7
+  },
+  "distress": {
+    "cinder_garden:Juno": 0.04,
+    "cinder_garden:Pax": 0.34364,
+    "cinder_garden:Vale": 0.04,
+    "cinder_garden:Wren": 0.04,
+    "glass_harbor:Nia": 0.040407,
+    "glass_harbor:Oren": 0.04,
+    "glass_harbor:Puck": 0.041209,
+    "glass_harbor:Sera": 0.04,
+    "lichen_bridge:Kio": 0.040958,
+    "lichen_bridge:Luma": 0.04,
+    "lichen_bridge:Rin": 0.04,
+    "lichen_bridge:Sol": 0.083561,
+    "moss_ward:Ari": 0.04,
+    "moss_ward:Fay": 0.04,
+    "moss_ward:Milo": 0.04,
+    "moss_ward:Tala": 0.04,
+    "orchid_engine:Bea": 0.04,
+    "orchid_engine:Cai": 0.043974,
+    "orchid_engine:Dax": 0.040793,
+    "orchid_engine:Eli": 0.04
+  },
+  "loan_condition": {
+    "cinder_garden:ash broom": 0.44,
+    "cinder_garden:seed tray": 0.44,
+    "cinder_garden:shade pole": 0.44,
+    "glass_harbor:brass lantern": 0.44,
+    "glass_harbor:net spool": 0.44,
+    "glass_harbor:tea kettle": 0.44,
+    "lichen_bridge:meal ledger": 0.44,
+    "lichen_bridge:rope kit": 0.44,
+    "lichen_bridge:signal bell": 0.44,
+    "moss_ward:lamp hook": 0.44,
+    "moss_ward:moss cart": 0.44,
+    "moss_ward:water jar": 0.44,
+    "orchid_engine:meal box": 0.44,
+    "orchid_engine:orchid lamp": 0.44,
+    "orchid_engine:valve key": 0.44
+  },
+  "reload_index": {
+    "cinder_garden": 104,
+    "glass_harbor": 102,
+    "lichen_bridge": 104,
+    "moss_ward": 103,
+    "orchid_engine": 104
+  },
+  "settlements": [
+    {
+      "care_tools": [
+        [
+          "warm broth",
+          "hunger"
+        ],
+        [
+          "dry cloak",
+          "wetness"
+        ],
+        [
+          "quiet mat",
+          "fatigue"
+        ],
+        [
+          "bandage",
+          "pain"
+        ]
+      ],
+      "dialect": "moss_ward-breath-03",
+      "flower_frequency": 5.21,
+      "loan_objects": [
+        [
+          "water jar",
+          "Fay",
+          "hydration"
+        ],
+        [
+          "moss cart",
+          "Milo",
+          "transport"
+        ],
+        [
+          "lamp hook",
+          "Ari",
+          "safety"
+        ]
+      ],
+      "locations": [
+        "warm hearth",
+        "rain gate",
+        "moss lane",
+        "dry loft",
+        "tool nook"
+      ],
+      "node_id": "node-11",
+      "residents": [
+        "Ari",
+        "Fay",
+        "Milo",
+        "Tala"
+      ],
+      "roles": [
+        "cook",
+        "path watcher",
+        "blanket keeper",
+        "water carrier"
+      ],
+      "scent": "wet moss and broth",
+      "settlement_id": "moss_ward",
+      "shelter": "dry loft",
+      "weathers": [
+        "mist",
+        "rain",
+        "cold rain",
+        "clear",
+        "wind"
+      ]
+    },
+    {
+      "care_tools": [
+        [
+          "salt tea",
+          "thirst"
+        ],
+        [
+          "steam wrap",
+          "temperature"
+        ],
+        [
+          "soft bunk",
+          "rest_debt"
+        ],
+        [
+          "salve",
+          "pain"
+        ]
+      ],
+      "dialect": "glass_harbor-chime-08",
+      "flower_frequency": 6.34,
+      "loan_objects": [
+        [
+          "brass lantern",
+          "Nia",
+          "route light"
+        ],
+        [
+          "net spool",
+          "Oren",
+          "repair"
+        ],
+        [
+          "tea kettle",
+          "Sera",
+          "comfort"
+        ]
+      ],
+      "locations": [
+        "lamp pier",
+        "salt steps",
+        "net room",
+        "steam alcove",
+        "quiet bunk"
+      ],
+      "node_id": "node-12",
+      "residents": [
+        "Nia",
+        "Oren",
+        "Puck",
+        "Sera"
+      ],
+      "roles": [
+        "net mender",
+        "salt washer",
+        "lamp guard",
+        "tea maker"
+      ],
+      "scent": "salt steam and lamp oil",
+      "settlement_id": "glass_harbor",
+      "shelter": "steam alcove",
+      "weathers": [
+        "fog",
+        "sleet",
+        "clear",
+        "wind",
+        "spray"
+      ]
+    },
+    {
+      "care_tools": [
+        [
+          "cool water",
+          "temperature"
+        ],
+        [
+          "shade cloth",
+          "safety"
+        ],
+        [
+          "seed meal",
+          "hunger"
+        ],
+        [
+          "soft glove",
+          "pain"
+        ]
+      ],
+      "dialect": "cinder_garden-pulse-13",
+      "flower_frequency": 8.89,
+      "loan_objects": [
+        [
+          "shade pole",
+          "Vale",
+          "shelter"
+        ],
+        [
+          "seed tray",
+          "Pax",
+          "food"
+        ],
+        [
+          "ash broom",
+          "Wren",
+          "cleaning"
+        ]
+      ],
+      "locations": [
+        "ember bed",
+        "seed shelf",
+        "ash path",
+        "shade tent",
+        "cool basin"
+      ],
+      "node_id": "node-13",
+      "residents": [
+        "Juno",
+        "Pax",
+        "Vale",
+        "Wren"
+      ],
+      "roles": [
+        "ember tender",
+        "seed sorter",
+        "ash sweeper",
+        "shade caller"
+      ],
+      "scent": "warm ash and seed oil",
+      "settlement_id": "cinder_garden",
+      "shelter": "shade tent",
+      "weathers": [
+        "heat",
+        "dust wind",
+        "clear",
+        "cold night",
+        "dry gale"
+      ]
+    },
+    {
+      "care_tools": [
+        [
+          "lichen soup",
+          "hunger"
+        ],
+        [
+          "rope splint",
+          "injury"
+        ],
+        [
+          "rest alcove",
+          "fatigue"
+        ],
+        [
+          "hand warmer",
+          "temperature"
+        ]
+      ],
+      "dialect": "lichen_bridge-hum-21",
+      "flower_frequency": 7.55,
+      "loan_objects": [
+        [
+          "signal bell",
+          "Rin",
+          "warning"
+        ],
+        [
+          "rope kit",
+          "Luma",
+          "repair"
+        ],
+        [
+          "meal ledger",
+          "Sol",
+          "nutrition"
+        ]
+      ],
+      "locations": [
+        "rope bridge",
+        "signal post",
+        "meal room",
+        "lichen wall",
+        "rest alcove"
+      ],
+      "node_id": "node-14",
+      "residents": [
+        "Kio",
+        "Luma",
+        "Rin",
+        "Sol"
+      ],
+      "roles": [
+        "bridge caller",
+        "rope weaver",
+        "signal keeper",
+        "meal marker"
+      ],
+      "scent": "lichen soup and damp rope",
+      "settlement_id": "lichen_bridge",
+      "shelter": "rest alcove",
+      "weathers": [
+        "crosswind",
+        "rain",
+        "clear",
+        "cold fog",
+        "hail"
+      ]
+    },
+    {
+      "care_tools": [
+        [
+          "orchid tea",
+          "thirst"
+        ],
+        [
+          "cot pass",
+          "rest_debt"
+        ],
+        [
+          "gear glove",
+          "pain"
+        ],
+        [
+          "heat vent",
+          "temperature"
+        ]
+      ],
+      "dialect": "orchid_engine-ring-34",
+      "flower_frequency": 9.87,
+      "loan_objects": [
+        [
+          "valve key",
+          "Bea",
+          "repair"
+        ],
+        [
+          "orchid lamp",
+          "Dax",
+          "comfort"
+        ],
+        [
+          "meal box",
+          "Eli",
+          "food"
+        ]
+      ],
+      "locations": [
+        "engine ring",
+        "orchid bay",
+        "gear wash",
+        "meal shelf",
+        "sleep cot"
+      ],
+      "node_id": "node-15",
+      "residents": [
+        "Bea",
+        "Cai",
+        "Dax",
+        "Eli"
+      ],
+      "roles": [
+        "valve listener",
+        "gear washer",
+        "orchid keeper",
+        "meal runner"
+      ],
+      "scent": "orchid oil and warm iron",
+      "settlement_id": "orchid_engine",
+      "shelter": "sleep cot",
+      "weathers": [
+        "engine heat",
+        "steam leak",
+        "clear",
+        "cold draft",
+        "drizzle"
+      ]
+    }
+  ],
+  "welfare": {
+    "cinder_garden:Juno": 0.835008,
+    "cinder_garden:Pax": 0.657301,
+    "cinder_garden:Vale": 0.83894,
+    "cinder_garden:Wren": 0.828962,
+    "glass_harbor:Nia": 0.80755,
+    "glass_harbor:Oren": 0.805331,
+    "glass_harbor:Puck": 0.806955,
+    "glass_harbor:Sera": 0.807236,
+    "lichen_bridge:Kio": 0.816704,
+    "lichen_bridge:Luma": 0.816085,
+    "lichen_bridge:Rin": 0.81785,
+    "lichen_bridge:Sol": 0.792233,
+    "moss_ward:Ari": 0.818186,
+    "moss_ward:Fay": 0.816584,
+    "moss_ward:Milo": 0.819692,
+    "moss_ward:Tala": 0.81649,
+    "orchid_engine:Bea": 0.807637,
+    "orchid_engine:Cai": 0.8027,
+    "orchid_engine:Dax": 0.806827,
+    "orchid_engine:Eli": 0.807304
+  },
+  "workload": {
+    "cinder_garden:Juno": 0.18,
+    "cinder_garden:Pax": 0.18,
+    "cinder_garden:Vale": 0.18,
+    "cinder_garden:Wren": 0.18,
+    "glass_harbor:Nia": 0.18,
+    "glass_harbor:Oren": 0.18,
+    "glass_harbor:Puck": 0.18,
+    "glass_harbor:Sera": 0.18,
+    "lichen_bridge:Kio": 0.18,
+    "lichen_bridge:Luma": 0.18,
+    "lichen_bridge:Rin": 0.18,
+    "lichen_bridge:Sol": 0.18,
+    "moss_ward:Ari": 0.18,
+    "moss_ward:Fay": 0.18,
+    "moss_ward:Milo": 0.18,
+    "moss_ward:Tala": 0.18,
+    "orchid_engine:Bea": 0.18,
+    "orchid_engine:Cai": 0.18,
+    "orchid_engine:Dax": 0.18,
+    "orchid_engine:Eli": 0.18
+  }
+}

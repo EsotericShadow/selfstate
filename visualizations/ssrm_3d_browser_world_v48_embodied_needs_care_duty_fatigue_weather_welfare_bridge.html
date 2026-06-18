@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v48 Embodied Welfare Bridge</title>
+<style>
+:root { --soil:#241c17; --moss:#a8c58b; --amber:#f2c66d; --water:#6fb7b8; --cloud:#f4ead8; --danger:#d0795f; }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; background: radial-gradient(circle at 20% 20%, #3c4d37, var(--soil)); color: var(--cloud); }
+main { display:grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid rgba(244,234,216,.28); border-radius:18px; padding:16px; background:rgba(20,16,13,.72); box-shadow:0 18px 44px rgba(0,0,0,.35); }
+button { margin:4px; border:1px solid rgba(244,234,216,.28); border-radius:999px; background:rgba(168,197,139,.18); color:var(--cloud); padding:8px 11px; }
+.flower { width:140px; height:140px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(242,198,109,.38) 0 8px, transparent 9px 17px), conic-gradient(from 45deg, rgba(111,183,184,.45), rgba(168,197,139,.36), rgba(242,198,109,.42), rgba(111,183,184,.45)); }
+.notice { grid-column:1/-1; color:#f7d7c9; }
+</style>
+</head>
+<body>
+<main>
+<section id="embodied-need-panel"><h2>Body needs</h2><p>Energy, fatigue, hunger, thirst, temperature, wetness, pain, comfort, safety, breath rate, movement effort, rest debt, and injury/degradation stay visible through behavior markers.</p></section>
+<section id="social-schedule-need-panel"><h2>Social schedule with body pressure</h2><p>Resident tasks can slow, shift, or become assisted when the body state interferes.</p></section>
+<section id="household-care-panel"><h2>Household care duties</h2><p>Care is offered, accepted, deferred, or redirected with burden and reciprocal memory.</p></section>
+<section id="fatigue-rest-panel"><h2>Fatigue/rest negotiation</h2><p>Residents can ask for rest, delay duties with named relief time, and preserve autonomy.</p></section>
+<section id="weather-loan-panel"><h2>Weather-aware loans</h2><p>Object loans carry cold, wetness, shelter, condition, and route consequences.</p></section>
+<section id="recoverable-welfare-panel"><h2>Recoverable welfare</h2><p>Distress opens care and recovery paths instead of spectacle loops.</p></section>
+<section id="reload-welfare-panel"><h2>Save, restore, replay</h2><p>Reload probes restore body, care, rest, weather-loan, and welfare traces.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and need frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="sampleEmbodiedNeeds" onclick="sampleEmbodiedNeeds('body')">sample embodied needs</button>
+<button data-action="showBreathRate" onclick="showBreathRate('body')">show breath rate</button>
+<button data-action="showPainMarker" onclick="showPainMarker('body')">show bounded pain marker</button>
+<button data-action="showWetnessMarker" onclick="showWetnessMarker('body')">show wetness marker</button>
+<button data-action="showTemperatureMarker" onclick="showTemperatureMarker('body')">show temperature marker</button>
+<button data-action="showRestDebt" onclick="showRestDebt('body')">show rest debt</button>
+<button data-action="adjustSocialSchedule" onclick="adjustSocialSchedule('schedule')">adjust social schedule</button>
+<button data-action="showNeedInterference" onclick="showNeedInterference('schedule')">show need interference</button>
+<button data-action="askPartnerAssist" onclick="askPartnerAssist('schedule')">ask partner assist</button>
+<button data-action="recordScheduleTradeoff" onclick="recordScheduleTradeoff('schedule')">record schedule tradeoff</button>
+<button data-action="offerCareDuty" onclick="offerCareDuty('care')">offer care duty</button>
+<button data-action="acceptCare" onclick="acceptCare('care')">accept care</button>
+<button data-action="deferCare" onclick="deferCare('care')">defer care</button>
+<button data-action="redirectCare" onclick="redirectCare('care')">redirect care</button>
+<button data-action="showCareBurden" onclick="showCareBurden('care')">show care burden</button>
+<button data-action="negotiateRest" onclick="negotiateRest('rest')">negotiate rest</button>
+<button data-action="grantRest" onclick="grantRest('rest')">grant rest</button>
+<button data-action="delayRestWithTime" onclick="delayRestWithTime('rest')">delay rest with time</button>
+<button data-action="showAutonomyRespected" onclick="showAutonomyRespected('rest')">show autonomy respected</button>
+<button data-action="markWeatherLoan" onclick="markWeatherLoan('weather')">mark weather loan</button>
+<button data-action="routeThroughShelter" onclick="routeThroughShelter('weather')">route through shelter</button>
+<button data-action="protectLoanObject" onclick="protectLoanObject('weather')">protect loan object</button>
+<button data-action="delayWeatherLoan" onclick="delayWeatherLoan('weather')">delay weather loan</button>
+<button data-action="showColdRisk" onclick="showColdRisk('weather')">show cold risk</button>
+<button data-action="openRecoveryPath" onclick="openRecoveryPath('welfare')">open recovery path</button>
+<button data-action="comfortResident" onclick="comfortResident('welfare')">comfort resident</button>
+<button data-action="moveTowardShelter" onclick="moveTowardShelter('welfare')">move toward shelter</button>
+<button data-action="showNoSufferingLoop" onclick="showNoSufferingLoop('welfare')">show no suffering loop</button>
+<button data-action="showEmotionLabel" onclick="showEmotionLabel('welfare')">show emotion label</button>
+<button data-action="restoreWelfareMemory" onclick="restoreWelfareMemory('reload')">restore welfare memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showNeedFrequency" onclick="showNeedFrequency('frequency')">show need frequency</button>
+<button data-action="showRateNotMysticism" onclick="showRateNotMysticism('frequency')">show rate not mysticism</button>
+<button data-action="sampleEmbodiedNeeds" onclick="sampleEmbodiedNeeds('body')">sample Ari body</button>
+<button data-action="sampleEmbodiedNeeds" onclick="sampleEmbodiedNeeds('body')">sample Fay body</button>
+<button data-action="sampleEmbodiedNeeds" onclick="sampleEmbodiedNeeds('body')">sample Milo body</button>
+<button data-action="sampleEmbodiedNeeds" onclick="sampleEmbodiedNeeds('body')">sample Tala body</button>
+<button data-action="showBreathRate" onclick="showBreathRate('body')">compare breath rates</button>
+<button data-action="showPainMarker" onclick="showPainMarker('body')">mark guarded posture</button>
+<button data-action="showWetnessMarker" onclick="showWetnessMarker('body')">mark wet cloak</button>
+<button data-action="showTemperatureMarker" onclick="showTemperatureMarker('body')">mark cold hands</button>
+<button data-action="showRestDebt" onclick="showRestDebt('body')">show sleep pressure</button>
+<button data-action="adjustSocialSchedule" onclick="adjustSocialSchedule('schedule')">slow shared task</button>
+<button data-action="adjustSocialSchedule" onclick="adjustSocialSchedule('schedule')">split shared task</button>
+<button data-action="showNeedInterference" onclick="showNeedInterference('schedule')">rank need pressure</button>
+<button data-action="askPartnerAssist" onclick="askPartnerAssist('schedule')">ask familiar partner</button>
+<button data-action="recordScheduleTradeoff" onclick="recordScheduleTradeoff('schedule')">record duty tradeoff</button>
+<button data-action="offerCareDuty" onclick="offerCareDuty('care')">offer warm broth</button>
+<button data-action="offerCareDuty" onclick="offerCareDuty('care')">offer dry cloak</button>
+<button data-action="offerCareDuty" onclick="offerCareDuty('care')">offer quiet mat</button>
+<button data-action="acceptCare" onclick="acceptCare('care')">accept low-burden care</button>
+<button data-action="deferCare" onclick="deferCare('care')">defer unwanted care</button>
+<button data-action="redirectCare" onclick="redirectCare('care')">redirect wrong care</button>
+<button data-action="showCareBurden" onclick="showCareBurden('care')">show caregiver burden</button>
+<button data-action="showCareBurden" onclick="showCareBurden('care')">show reciprocal memory</button>
+<button data-action="negotiateRest" onclick="negotiateRest('rest')">request short rest</button>
+<button data-action="grantRest" onclick="grantRest('rest')">grant rest before duty</button>
+<button data-action="delayRestWithTime" onclick="delayRestWithTime('rest')">delay with named time</button>
+<button data-action="showAutonomyRespected" onclick="showAutonomyRespected('rest')">show refusal respected</button>
+<button data-action="recordScheduleTradeoff" onclick="recordScheduleTradeoff('rest')">show relief handoff</button>
+<button data-action="markWeatherLoan" onclick="markWeatherLoan('weather')">mark rainy route</button>
+<button data-action="markWeatherLoan" onclick="markWeatherLoan('weather')">mark cold route</button>
+<button data-action="routeThroughShelter" onclick="routeThroughShelter('weather')">choose shelter route</button>
+<button data-action="protectLoanObject" onclick="protectLoanObject('weather')">wrap borrowed object</button>
+<button data-action="delayWeatherLoan" onclick="delayWeatherLoan('weather')">pause exposed loan</button>
+<button data-action="showColdRisk" onclick="showColdRisk('weather')">show cold risk</button>
+<button data-action="showWetnessMarker" onclick="showWetnessMarker('weather')">show weather wetness</button>
+<button data-action="openRecoveryPath" onclick="openRecoveryPath('welfare')">open care opportunity</button>
+<button data-action="comfortResident" onclick="comfortResident('welfare')">comfort without forcing</button>
+<button data-action="moveTowardShelter" onclick="moveTowardShelter('welfare')">move toward shelter</button>
+<button data-action="showNoSufferingLoop" onclick="showNoSufferingLoop('welfare')">show recovery bound</button>
+<button data-action="showEmotionLabel" onclick="showEmotionLabel('welfare')">show welfare label</button>
+<button data-action="showAutonomyRespected" onclick="showAutonomyRespected('welfare')">show welfare consent</button>
+<button data-action="restoreWelfareMemory" onclick="restoreWelfareMemory('reload')">restore body state</button>
+<button data-action="restoreWelfareMemory" onclick="restoreWelfareMemory('reload')">restore care memory</button>
+<button data-action="restoreWelfareMemory" onclick="restoreWelfareMemory('reload')">restore weather trace</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save care ledger</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore care ledger</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export welfare replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show phase ring</button>
+<button data-action="showNeedFrequency" onclick="showNeedFrequency('frequency')">show breath frequency</button>
+<button data-action="showNeedFrequency" onclick="showNeedFrequency('frequency')">show fatigue rate</button>
+<button data-action="showRateNotMysticism" onclick="showRateNotMysticism('frequency')">show rate boundary</button>
+<button data-action="showRateNotMysticism" onclick="showRateNotMysticism('frequency')">show no metaphysics</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v48.embodied.welfare';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic trace' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function sampleEmbodiedNeeds(scope) { return pushTrace('sampleEmbodiedNeeds', scope); }
+function showBreathRate(scope) { return pushTrace('showBreathRate', scope); }
+function showPainMarker(scope) { return pushTrace('showPainMarker', scope); }
+function showWetnessMarker(scope) { return pushTrace('showWetnessMarker', scope); }
+function showTemperatureMarker(scope) { return pushTrace('showTemperatureMarker', scope); }
+function showRestDebt(scope) { return pushTrace('showRestDebt', scope); }
+function adjustSocialSchedule(scope) { return pushTrace('adjustSocialSchedule', scope); }
+function showNeedInterference(scope) { return pushTrace('showNeedInterference', scope); }
+function askPartnerAssist(scope) { return pushTrace('askPartnerAssist', scope); }
+function recordScheduleTradeoff(scope) { return pushTrace('recordScheduleTradeoff', scope); }
+function offerCareDuty(scope) { return pushTrace('offerCareDuty', scope); }
+function acceptCare(scope) { return pushTrace('acceptCare', scope); }
+function deferCare(scope) { return pushTrace('deferCare', scope); }
+function redirectCare(scope) { return pushTrace('redirectCare', scope); }
+function showCareBurden(scope) { return pushTrace('showCareBurden', scope); }
+function negotiateRest(scope) { return pushTrace('negotiateRest', scope); }
+function grantRest(scope) { return pushTrace('grantRest', scope); }
+function delayRestWithTime(scope) { return pushTrace('delayRestWithTime', scope); }
+function showAutonomyRespected(scope) { return pushTrace('showAutonomyRespected', scope); }
+function markWeatherLoan(scope) { return pushTrace('markWeatherLoan', scope); }
+function routeThroughShelter(scope) { return pushTrace('routeThroughShelter', scope); }
+function protectLoanObject(scope) { return pushTrace('protectLoanObject', scope); }
+function delayWeatherLoan(scope) { return pushTrace('delayWeatherLoan', scope); }
+function showColdRisk(scope) { return pushTrace('showColdRisk', scope); }
+function openRecoveryPath(scope) { return pushTrace('openRecoveryPath', scope); }
+function comfortResident(scope) { return pushTrace('comfortResident', scope); }
+function moveTowardShelter(scope) { return pushTrace('moveTowardShelter', scope); }
+function showNoSufferingLoop(scope) { return pushTrace('showNoSufferingLoop', scope); }
+function showEmotionLabel(scope) { return pushTrace('showEmotionLabel', scope); }
+function restoreWelfareMemory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restoreWelfareMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(restoreWelfareMemory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showNeedFrequency(scope) { return pushTrace('showNeedFrequency', scope); }
+function showRateNotMysticism(scope) { return pushTrace('showRateNotMysticism', scope); }
+</script>
+</body>
+</html>

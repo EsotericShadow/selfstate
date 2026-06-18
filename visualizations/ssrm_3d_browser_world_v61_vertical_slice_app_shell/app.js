@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -68,6 +68,8 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   returnContinuity: null,
   promiseFollowUp: null,
   obligationLedger: [],
+  scheduleQueue: [],
+  debtLedger: [],
   selectedObligationId: null,
   lastQA: []
 }));
@@ -117,6 +119,22 @@ function renderObligationList() {
   }
   listNode.textContent = obligations.map(item => `${item.id}: ${item.status} / ${item.stage} / ${item.visibleStatus}`).join('\n');
 }
+function renderScheduleDebtIntegration() {
+  const scheduleNode = document.getElementById('scheduleQueueOut');
+  const debtNode = document.getElementById('debtLedgerOut');
+  const scheduleQueue = world.scheduleQueue || [];
+  const debtLedger = world.debtLedger || [];
+  if (scheduleNode) {
+    scheduleNode.textContent = scheduleQueue.length
+      ? scheduleQueue.map(item => `${item.id}: ${item.status} / ${item.visibleStatus}`).join('\n')
+      : 'No obligation-linked schedule items yet.';
+  }
+  if (debtNode) {
+    debtNode.textContent = debtLedger.length
+      ? debtLedger.map(item => `${item.id}: ${item.status} / debt ${item.debtAfter} / ${item.visibleStatus}`).join('\n')
+      : 'No obligation-linked debt entries yet.';
+  }
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -127,6 +145,7 @@ function log(event, payload) {
   renderReturnContinuity();
   renderPromiseFollowUp();
   renderObligationList();
+  renderScheduleDebtIntegration();
   return row;
 }
 function mutateResident(name, delta) {
@@ -197,14 +216,16 @@ function advancePromiseFollowUpState(residentName, trigger, replayRowsBeforeRetu
     visibleStatus: `${residentName} follow-up ${nextStage}: ${obligation} (${returnCount} return(s))`,
     boundary: 'browser-local-public-obligation-thread-only'
   };
-  syncPromiseFollowUpObligation(world.promiseFollowUp);
+  const ledgerRow = syncPromiseFollowUpObligation(world.promiseFollowUp);
   mutateResident(residentName, {
     trust: nextStage === 'opened' ? 0.004 : 0.006,
     progress: nextStage === 'opened' ? 0.012 : 0.018,
+    schedule: `follow-up ${nextStage}: check awning repair`,
     memory: `recognized returning avatar; follow-up ${nextStage}: ${obligation}`,
     historyEvent: 'promise follow-up',
     historyDetail: `${nextStage} remembered obligation after ${returnCount} return(s)`
   });
+  syncScheduleDebtFromObligation(ledgerRow, `follow-up-${nextStage}`);
   return world.promiseFollowUp;
 }
 function advancePromiseFollowUp() {
@@ -236,6 +257,48 @@ function syncPromiseFollowUpObligation(followUp) {
   world.selectedObligationId = id;
   return row;
 }
+function syncScheduleDebtFromObligation(obligation, action) {
+  if (!obligation) return null;
+  if (!world.scheduleQueue) world.scheduleQueue = [];
+  if (!world.debtLedger) world.debtLedger = [];
+  const resident = world.residents[obligation.resident] || currentResident();
+  const scheduleStatus = action === 'resolve' ? 'resolved' : action === 'defer' ? 'deferred' : 'pending';
+  const debtStatus = action === 'resolve' ? 'settled' : action === 'defer' ? 'deferred' : 'outstanding';
+  const scheduleRow = {
+    id: obligation.id,
+    reportIntroduced: 353,
+    resident: obligation.resident,
+    status: scheduleStatus,
+    action,
+    schedule: resident.schedule,
+    obligation: obligation.obligation,
+    visibleStatus: `${obligation.resident} schedule ${scheduleStatus}: ${resident.schedule}`,
+    boundary: 'browser-local-obligation-schedule-queue-only'
+  };
+  const debtRow = {
+    id: obligation.id,
+    reportIntroduced: 353,
+    resident: obligation.resident,
+    status: debtStatus,
+    action,
+    debtAfter: resident.debt,
+    trustAfter: Number(resident.trust.toFixed(3)),
+    obligation: obligation.obligation,
+    visibleStatus: `${obligation.resident} debt ${debtStatus}: ${resident.debt} after ${action}`,
+    boundary: 'browser-local-obligation-debt-ledger-only'
+  };
+  const scheduleIndex = world.scheduleQueue.findIndex(item => item.id === obligation.id);
+  const debtIndex = world.debtLedger.findIndex(item => item.id === obligation.id);
+  if (scheduleIndex >= 0) world.scheduleQueue[scheduleIndex] = scheduleRow;
+  else world.scheduleQueue.push(scheduleRow);
+  if (debtIndex >= 0) world.debtLedger[debtIndex] = debtRow;
+  else world.debtLedger.push(debtRow);
+  obligation.scheduleQueueStatus = scheduleStatus;
+  obligation.debtLedgerStatus = debtStatus;
+  obligation.scheduleAfter = resident.schedule;
+  obligation.debtAfter = resident.debt;
+  return { scheduleRow, debtRow };
+}
 function selectedObligation() {
   const obligations = world.obligationLedger || [];
   if (!world.selectedObligationId && obligations.length > 0) world.selectedObligationId = obligations[0].id;
@@ -256,11 +319,13 @@ function resolveSelectedObligation() {
     trust: 0.018,
     debt: -1,
     progress: 0.024,
+    schedule: 'follow-up resolved: awning repair checked',
     memory: `resolved obligation: ${obligation.obligation}`,
     historyEvent: 'obligation resolved',
     historyDetail: 'bounded action resolved selected follow-up'
   });
-  return log('resolveSelectedObligation', { resolved: true, obligation, boundedAction: true, boundary: BOUNDARY });
+  const linkedLedger = syncScheduleDebtFromObligation(obligation, 'resolve');
+  return log('resolveSelectedObligation', { resolved: true, obligation, linkedLedger, boundedAction: true, boundary: BOUNDARY });
 }
 function deferSelectedObligation() {
   const obligation = selectedObligation();
@@ -276,11 +341,13 @@ function deferSelectedObligation() {
   mutateResident(obligation.resident, {
     trust: -0.006,
     progress: 0.004,
+    schedule: 'follow-up deferred: awning repair check queued',
     memory: `deferred obligation: ${obligation.obligation}`,
     historyEvent: 'obligation deferred',
     historyDetail: 'bounded action deferred selected follow-up'
   });
-  return log('deferSelectedObligation', { deferred: true, obligation, boundedAction: true, boundary: BOUNDARY });
+  const linkedLedger = syncScheduleDebtFromObligation(obligation, 'defer');
+  return log('deferSelectedObligation', { deferred: true, obligation, linkedLedger, boundedAction: true, boundary: BOUNDARY });
 }
 function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); recordCheckpoint('manual save'); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
 function restoreWorld() {
@@ -318,6 +385,8 @@ function runStateBoundaryAudit() {
     returnContinuity: world.returnContinuity,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
+    scheduleQueue: world.scheduleQueue,
+    debtLedger: world.debtLedger,
     selectedObligationId: world.selectedObligationId,
     replay: world.replay.map(row => ({
       event: row.event,

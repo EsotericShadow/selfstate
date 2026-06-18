@@ -1,0 +1,2 @@
+report,verdict,review_gate_score,source_behavior_score,browser_interaction_score,pending_schedule_debt_score,defer_schedule_debt_score,resolve_schedule_debt_score,replay_debug_score,runtime_hygiene_score,runner_index_score,claim_hygiene_score,weakest_channel_score,readiness,criterion_count,before_replay_rows,pending_replay_rows,deferred_replay_rows,resolved_replay_rows,before_trust,resolved_trust,before_progress,resolved_progress,console_error_count
+353,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,16,2,4,5,6,0.592,0.634,0.36,0.43,0

@@ -2099,3 +2099,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 352: SSRM-3D Browser World v112 Selectable Obligation Resolution
 
 [Primary shell selectable obligation resolution report](docs/352_ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution_report.md): exposes remembered follow-ups as a selectable obligation list and verifies bounded avatar actions that defer and resolve the selected obligation with visible resident memory/history, replay evidence, and browser-local validation.
+
+### Report 353: SSRM-3D Browser World v113 Obligation Schedule/Debt Integration
+
+[Primary shell obligation schedule/debt integration report](docs/353_ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_report.md): connects selectable obligations to the visible resident schedule queue and debt ledger so pending, deferred, and resolved obligation states alter the same dashboard surfaces reviewers already inspect.

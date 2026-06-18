@@ -1485,3 +1485,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution_browser_smoke.json`, and `docs/352_ssrm_3d_browser_world_v112_primary_shell_selectable_obligation_resolution_report.md`.
 - Browser result: repeated return opens and advances `ari-awning-followup` without auto-resolving it, `Defer obligation` changes it to deferred, `Resolve obligation` changes it to resolved, resident memory/history records the bounded actions, and console errors remain 0.
 - Boundary: browser-local deterministic obligation handling only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 353 Evidence Matrix Entry
+
+- Claim: selectable obligations now affect the visible resident schedule queue and debt ledger, not only the obligation row.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_browser_smoke.json`, and `docs/353_ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_report.md`.
+- Browser result: return-created `ari-awning-followup` appears as schedule pending and debt outstanding, `Defer obligation` changes schedule/debt to deferred, `Resolve obligation` changes schedule to resolved and debt ledger to settled with visible dashboard debt 0, and console errors remain 0.
+- Boundary: browser-local deterministic schedule/debt integration only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

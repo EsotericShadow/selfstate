@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+353,pass,1.0,1.0,"post-353: make one offscreen resident action change a different resident's visible obligation, schedule queue, and debt ledger while the avatar is absent, then prove it survives reload"

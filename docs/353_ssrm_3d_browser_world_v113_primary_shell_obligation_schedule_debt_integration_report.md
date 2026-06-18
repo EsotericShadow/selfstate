@@ -1,0 +1,53 @@
+# Report 353: Browser World v113 Primary Shell Obligation Schedule/Debt Integration
+
+Report 353 keeps the work on one maintained playable shell. Report 352 made remembered obligations selectable and resolvable; this report connects those obligations to the visible schedule queue and debt ledger so the player sees consequences in the resident dashboard, not only in the obligation row.
+
+Boundary: Browser-local obligation schedule/debt integration over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim.
+
+## Result
+
+Verdict: `pass`
+Readiness: `1.000`
+Weakest channel score: `1.000`
+Criteria passed: `16 / 16`
+
+## Browser-smoke evidence
+
+- Maintained shell URL: `http://127.0.0.1:8773/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html`
+- Pending schedule queue: `ari-awning-followup: pending / Ari schedule pending: follow-up advanced: check awning repair`
+- Pending debt ledger: `ari-awning-followup: outstanding / debt 1 / Ari debt outstanding: 1 after follow-up-advanced`
+- Deferred schedule queue: `ari-awning-followup: deferred / Ari schedule deferred: follow-up deferred: awning repair check queued`
+- Resolved schedule queue: `ari-awning-followup: resolved / Ari schedule resolved: follow-up resolved: awning repair checked`
+- Resolved debt ledger: `ari-awning-followup: settled / debt 0 / Ari debt settled: 0 after resolve`
+- Schedule dashboard: `follow-up resolved: awning repair checked / progress 0.430`
+- Debt dashboard: `0 / trust 0.634`
+- Console errors: `0`
+
+## Criteria
+
+| Criterion | Score | Evidence |
+| --- | ---: | --- |
+| `report_352_selectable_obligation_gate_passing` | `1.0` | Report 352 verdict=pass weakest=1.0 |
+| `source_exposes_schedule_queue_and_debt_ledger` | `1.0` | app.js exposes public scheduleQueue/debtLedger and sync function |
+| `visible_schedule_debt_panels_wired` | `1.0` | index.html exposes visible schedule queue and debt ledger panels |
+| `bounded_actions_link_to_schedule_debt` | `1.0` | resolve/defer actions update resident schedule plus schedule/debt ledgers |
+| `browser_smoke_artifact_exists` | `1.0` | artifacts/ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_browser_smoke.json |
+| `browser_smoke_used_maintained_shell` | `1.0` | http://127.0.0.1:8773/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html |
+| `pending_obligation_updates_schedule_queue` | `1.0` | schedule=follow-up advanced: check awning repair / progress 0.402 queue=ari-awning-followup: pending / Ari schedule pending: follow-up advanced: check awning repair |
+| `pending_obligation_updates_debt_ledger` | `1.0` | debt=1 / trust 0.622 ledger=ari-awning-followup: outstanding / debt 1 / Ari debt outstanding: 1 after follow-up-advanced |
+| `defer_action_updates_schedule_queue_and_dashboard` | `1.0` | schedule=follow-up deferred: awning repair check queued / progress 0.406 queue=ari-awning-followup: deferred / Ari schedule deferred: follow-up deferred: awning repair check queued |
+| `defer_action_updates_debt_ledger` | `1.0` | ari-awning-followup: deferred / debt 1 / Ari debt deferred: 1 after defer |
+| `resolve_action_updates_schedule_queue_and_dashboard` | `1.0` | schedule=follow-up resolved: awning repair checked / progress 0.430 queue=ari-awning-followup: resolved / Ari schedule resolved: follow-up resolved: awning repair checked |
+| `resolve_action_updates_debt_ledger_and_dashboard` | `1.0` | debt=0 / trust 0.634 ledger=ari-awning-followup: settled / debt 0 / Ari debt settled: 0 after resolve |
+| `replay_history_include_linked_ledger` | `1.0` | * Ari now: debt 0 / trust 0.634 / progress 0.430 / memory: resolved obligation: Ari wants the avatar to check the awning repair after returning /   t3 promise follow-up: advanced remembered obligation after 2 return(s) -> debt 1 trust 0.622 progress 0.402 /   t4 obligation deferred: bounded action deferred selected follow-up -> debt 1 trust 0.616 progress 0.406 /   t5 obligation resolved: bounded action resolved selected follow-up -> debt 0 trust 0.634 progress 0.43 |
+| `browser_console_clean` | `1.0` | console error count=0 |
+| `experiment_index_includes_report_353` | `1.0` | scripts/run_experiments.py includes Report 353 module |
+| `claim_boundary_preserved` | `1.0` | Browser-local obligation schedule/debt integration over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim. |
+
+## Honest interpretation
+
+This is still a deterministic browser-local prototype, but it closes a real integration gap: a selected obligation now touches schedule and debt surfaces that reviewers already inspect. It is not subjective experience, autonomous language, production persistence, a hosted game, or a complete 3D engine.
+
+## Next gate
+
+post-353: make one offscreen resident action change a different resident's visible obligation, schedule queue, and debt ledger while the avatar is absent, then prove it survives reload

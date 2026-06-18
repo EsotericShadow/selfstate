@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+339,pass,1.0,1.0,"post-339: verify stale repair survives a full continue-return-refresh loop from the repaired clean handoff, so recovery stays fresh after the reviewer actually uses the recovered action"

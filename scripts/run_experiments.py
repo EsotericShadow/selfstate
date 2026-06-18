@@ -4048,6 +4048,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v96_primary_demo_closed_origin_tab_handoff_continuity_bridge",
         "experiments.ssrm_3d_browser_world_v97_primary_demo_closed_origin_tab_hard_reload_handoff_continuity_bridge",
         "experiments.ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge",
+        "experiments.ssrm_3d_browser_world_v99_primary_demo_stale_handoff_repair_reprepare_bridge",
         "--seed",
         "20270732",
     ],

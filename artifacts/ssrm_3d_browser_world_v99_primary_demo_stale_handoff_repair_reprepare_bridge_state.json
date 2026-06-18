@@ -1,0 +1,31 @@
+{
+  "boundary": "Deterministic browser-local stale handoff repair bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local launcher recovery and review-handoff hygiene, not external validation or evidence of inner experience.",
+  "checks": {
+    "evidence_avoids_raw_storage_keys": true,
+    "no_console_errors": true,
+    "prepared_resume_was_fresh_before_supersede": true,
+    "repair_evidence_preserves_stale_history": true,
+    "repaired_continue_reaches_shell": true,
+    "repaired_fresh_survives_launcher_reload": true,
+    "repaired_reload_keeps_repaired_timestamp": true,
+    "reprepare_keeps_download_available": true,
+    "reprepare_payload_tracks_current_shell_handoff": true,
+    "reprepare_regains_continue_action": true,
+    "reprepare_restores_fresh_clean_handoff": true,
+    "stale_continue_blocked_before_repair": true,
+    "stale_mismatch_history_visible_before_repair": true,
+    "stale_status_visible_before_repair": true,
+    "superseding_shell_handoff_created": true
+  },
+  "continued_url": "http://127.0.0.1:8801/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63",
+  "next_gate": "post-339: verify stale repair survives a full continue-return-refresh loop from the repaired clean handoff, so recovery stays fresh after the reviewer actually uses the recovered action",
+  "repaired_recorded_at": "2026-06-18T10:03:23.887Z",
+  "repaired_status": "Outside-review handoff ready: fresh clean handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared clean handoff, or download Prepared outside-review handoff JSON.",
+  "report": 339,
+  "seed": 20270737,
+  "stale_mismatches_before_repair": [
+    "launch handoff changed",
+    "launch kind changed"
+  ],
+  "stale_status_before_repair": "Prepared handoff payload is stale: launch handoff changed, launch kind changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff."
+}

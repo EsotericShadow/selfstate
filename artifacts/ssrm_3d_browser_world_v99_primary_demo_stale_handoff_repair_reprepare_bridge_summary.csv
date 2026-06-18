@@ -1,0 +1,2 @@
+report,readiness,weakest_channel_score,stale_repair_score,stale_history_preservation_score,stale_block_before_repair_score,repaired_continue_score,reload_survival_score,timestamp_repair_score,visible_no_storage_score,console_errors,criterion_count
+339,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,18

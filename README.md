@@ -2103,3 +2103,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 353: SSRM-3D Browser World v113 Obligation Schedule/Debt Integration
 
 [Primary shell obligation schedule/debt integration report](docs/353_ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_report.md): connects selectable obligations to the visible resident schedule queue and debt ledger so pending, deferred, and resolved obligation states alter the same dashboard surfaces reviewers already inspect.
+
+### Report 354: SSRM-3D Browser World v114 Offscreen Cross-Resident Obligation Persistence
+
+[Primary shell offscreen cross-resident obligation persistence report](docs/354_ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_report.md): makes `Wait offscreen` create a resident-caused obligation where Fay changes Milo's visible obligation, schedule queue, and debt ledger while the avatar is absent, then verifies the state survives reload.

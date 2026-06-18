@@ -1492,3 +1492,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_browser_smoke.json`, and `docs/353_ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration_report.md`.
 - Browser result: return-created `ari-awning-followup` appears as schedule pending and debt outstanding, `Defer obligation` changes schedule/debt to deferred, `Resolve obligation` changes schedule to resolved and debt ledger to settled with visible dashboard debt 0, and console errors remain 0.
 - Boundary: browser-local deterministic schedule/debt integration only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 354 Evidence Matrix Entry
+
+- Claim: offscreen resident activity can create a visible obligation for a different resident and persist it across reload.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_browser_smoke.json`, and `docs/354_ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_report.md`.
+- Browser result: `Wait offscreen` creates `milo-offscreen-water-jars` from Fay to Milo, schedule queue shows Milo pending offscreen obligation, debt ledger shows Milo outstanding debt 3, history records Fay changed Milo while the avatar was absent, and reload preserves the obligation, schedule queue, and debt ledger.
+- Boundary: browser-local deterministic offscreen obligation persistence only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

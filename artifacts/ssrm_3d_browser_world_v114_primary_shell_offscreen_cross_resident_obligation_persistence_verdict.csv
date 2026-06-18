@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+354,pass,1.0,1.0,post-354: add a small visible absent-time summary that separates avatar-caused changes from resident-caused offscreen changes before the player chooses which obligation to handle

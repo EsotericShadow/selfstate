@@ -1,0 +1,31 @@
+criterion,passed,score,evidence
+report_353_schedule_debt_gate_passing,True,1.0,Report 353 verdict=pass weakest=1.0
+source_wires_wait_offscreen_to_cross_resident_obligation,True,1.0,waitOffscreen wires an offscreen resident event into public obligation state
+source_updates_target_resident_schedule_debt,True,1.0,"offscreen event mutates target resident schedule, debt, history, and ledgers"
+source_public_state_includes_offscreen_events,True,1.0,offscreen events are part of public audited state
+browser_smoke_artifact_exists,True,1.0,artifacts/ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence_browser_smoke.json
+browser_smoke_used_maintained_shell,True,1.0,http://127.0.0.1:8774/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html
+offscreen_action_created_different_resident_obligation,True,1.0,"event={'reportIntroduced': 354, 'actor': 'Fay', 'target': 'Milo', 'obligationId': 'milo-offscreen-water-jars', 'boundary': 'visible-trace-derived-offscreen-event'} list=milo-offscreen-water-jars: open / offscreen-pending / Milo offscreen obligation open from Fay: inspect leaking water jars"
+offscreen_action_updates_schedule_queue,True,1.0,milo-offscreen-water-jars: pending / Milo schedule pending: offscreen obligation: inspect leaking water jars
+offscreen_action_updates_debt_ledger,True,1.0,milo-offscreen-water-jars: outstanding / debt 3 / Milo debt outstanding: 3 after offscreen-resident-action
+target_resident_history_records_offscreen_source,True,1.0,"* Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court
+  t1 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378
+  Fay now: debt 0 / trust 0.632 / progress 0.521 / memory: warned about wet route
+  t1 state update: trust/debt/progress changed -> debt 0 trust 0.632 progress 0.521
+  t1 offscreen obligation issued: Fay changed Milo's obligation while avatar absent -> debt 0 trust 0.632 progress 0.521
+  Milo now: debt 3 / trust 0.475 / progress 0.277 / memory: Fay left offscreen obligation: inspect leaking water jars
+  t1 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264
+  t1 offscreen obligation received: Fay changed Milo's obligation while avatar absent -> debt 3 trust 0.475 progress 0.277
+  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet
+  t1 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447
+  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens
+  t1 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42
+  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting
+  t1 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503"
+state_survives_reload_obligation,True,1.0,milo-offscreen-water-jars: open / offscreen-pending / Milo offscreen obligation open from Fay: inspect leaking water jars
+state_survives_reload_schedule_queue,True,1.0,milo-offscreen-water-jars: pending / Milo schedule pending: offscreen obligation: inspect leaking water jars
+state_survives_reload_debt_ledger,True,1.0,milo-offscreen-water-jars: outstanding / debt 3 / Milo debt outstanding: 3 after offscreen-resident-action
+replay_logs_wait_offscreen_event,True,1.0,waitOffscreenReplayLogged=True offscreenEventReloaded=True
+browser_console_clean,True,1.0,console error count=0
+experiment_index_includes_report_354,True,1.0,scripts/run_experiments.py includes Report 354 module
+claim_boundary_preserved,True,1.0,"Browser-local offscreen cross-resident obligation persistence over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim."

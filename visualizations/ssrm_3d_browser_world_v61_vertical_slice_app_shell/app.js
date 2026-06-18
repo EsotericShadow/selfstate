@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -70,6 +70,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   obligationLedger: [],
   scheduleQueue: [],
   debtLedger: [],
+  offscreenObligationEvents: [],
   selectedObligationId: null,
   lastQA: []
 }));
@@ -195,7 +196,11 @@ function askSchedule() { return log('askSchedule', { schedule: currentResident()
 function offerHelp() { mutateResident(world.selected, { trust: 0.024, debt: -1, progress: 0.035, memory: 'avatar helped with ' + currentResident().schedule }); world.resources.care = Math.max(0, world.resources.care - 1); return log('offerHelp', { care: world.resources.care }); }
 function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1, memory: 'avatar borrowed tool' }); return log('borrowTool', { consequence: 'debt increases' }); }
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
-function waitOffscreen() { Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 })); return log('waitOffscreen', { offscreenLife: true }); }
+function waitOffscreen() {
+  Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
+  const offscreenObligation = runOffscreenResidentObligationPulse();
+  return log('waitOffscreen', { offscreenLife: true, offscreenObligation });
+}
 function repairTrust() { mutateResident(world.selected, { trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }); return log('repairTrust', { nonMagic: true }); }
 function advancePromiseFollowUpState(residentName, trigger, replayRowsBeforeReturn) {
   const previous = world.promiseFollowUp && world.promiseFollowUp.resident === residentName ? world.promiseFollowUp : null;
@@ -299,6 +304,57 @@ function syncScheduleDebtFromObligation(obligation, action) {
   obligation.debtAfter = resident.debt;
   return { scheduleRow, debtRow };
 }
+function runOffscreenResidentObligationPulse() {
+  if (!world.obligationLedger) world.obligationLedger = [];
+  if (!world.offscreenObligationEvents) world.offscreenObligationEvents = [];
+  const actor = 'Fay';
+  const target = world.selected === 'Milo' ? 'Sera' : 'Milo';
+  const id = `${target.toLowerCase()}-offscreen-water-jars`;
+  const obligation = `${actor} found leaking water jars while the avatar was absent`;
+  const existing = world.obligationLedger.find(item => item.id === id);
+  const alreadyOpen = existing && existing.status === 'open';
+  const row = {
+    id,
+    reportIntroduced: 354,
+    resident: target,
+    actor,
+    source: 'offscreen-resident-action',
+    obligation,
+    stage: 'offscreen-pending',
+    status: 'open',
+    selected: false,
+    returnCount: 0,
+    visibleStatus: `${target} offscreen obligation open from ${actor}: inspect leaking water jars`,
+    boundary: 'browser-local-offscreen-cross-resident-obligation-only'
+  };
+  if (existing) Object.assign(existing, row);
+  else world.obligationLedger.push(row);
+  world.selectedObligationId = id;
+  mutateResident(target, {
+    trust: -0.004,
+    debt: alreadyOpen ? 0 : 1,
+    progress: 0.013,
+    schedule: 'offscreen obligation: inspect leaking water jars',
+    memory: `${actor} left offscreen obligation: inspect leaking water jars`,
+    historyEvent: 'offscreen obligation received',
+    historyDetail: `${actor} changed ${target}'s obligation while avatar absent`
+  });
+  recordResidentHistory(actor, 'offscreen obligation issued', `${actor} changed ${target}'s obligation while avatar absent`);
+  const linkedLedger = syncScheduleDebtFromObligation(row, 'offscreen-resident-action');
+  const event = {
+    reportIntroduced: 354,
+    actor,
+    target,
+    obligationId: id,
+    replayRowsBeforeEvent: world.replay.length,
+    linkedLedger,
+    persistedIn: STATE_KEY,
+    boundary: 'browser-local-offscreen-cross-resident-obligation-event-only'
+  };
+  world.offscreenObligationEvents.push(event);
+  world.offscreenObligationEvents = world.offscreenObligationEvents.slice(-8);
+  return event;
+}
 function selectedObligation() {
   const obligations = world.obligationLedger || [];
   if (!world.selectedObligationId && obligations.length > 0) world.selectedObligationId = obligations[0].id;
@@ -387,6 +443,7 @@ function runStateBoundaryAudit() {
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
     debtLedger: world.debtLedger,
+    offscreenObligationEvents: world.offscreenObligationEvents,
     selectedObligationId: world.selectedObligationId,
     replay: world.replay.map(row => ({
       event: row.event,
@@ -481,6 +538,10 @@ function bindControls() {
     updateRoom();
     log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room });
   });
+  renderReturnContinuity();
+  renderPromiseFollowUp();
+  renderObligationList();
+  renderScheduleDebtIntegration();
 }
 function readResidentHistory() {
   try {

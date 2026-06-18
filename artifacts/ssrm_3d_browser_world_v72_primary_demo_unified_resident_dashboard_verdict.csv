@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_workflow_score,next_gate
+312,pass,1.0,1.0,1.0,"post-312: run a reviewer pass focused on whether the primary demo now communicates schedule/debt/care state without raw JSON; if readable, the next consolidation should make consequences actionable from the dashboard rather than add another parallel report organ"

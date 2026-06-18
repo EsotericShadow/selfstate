@@ -8,6 +8,7 @@
 | Primary demo full manual pass needs visible QA evidence | Report 309 records a full browser pass, captures opaque QA output as MP-09/MP-10 defects, fixes the maintained shell QA rendering, and verifies the defects resolved. | Browser-local deterministic evidence only; it does not prove finished gameplay or subjective agent interiority. |
 | Primary demo session transcript needs readable debug continuity | Report 310 adds transcript and checkpoint panels derived from public replay/save/restore state and verifies them in browser. | Readability hardening only; it does not create new agent autonomy, private experience, or production persistence. |
 | Primary demo resident history lane needs readable resident continuity | Report 311 adds bounded public resident-history rows for trust, debt, progress, and memory updates and verifies selected/offscreen/resume continuity in browser. | Public browser-local continuity only; it does not prove subjective memory or moral patienthood. |
+| Primary demo unified resident dashboard needs schedule/debt/care readability | Report 312 adds a cross-resident dashboard for schedule, progress, debt, trust, memory, history count, and care/resources, then verifies initial, consequence, offscreen, and resume updates in browser. | Public browser-local dashboard only; it does not create new autonomy or production persistence. |
 
 This file links the research claims to current evidence, counterevidence, and next falsifiers.
 

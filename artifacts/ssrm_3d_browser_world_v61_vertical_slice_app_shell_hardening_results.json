@@ -28,8 +28,8 @@
   },
   "counts": {
     "app_css_bytes": 2672,
-    "app_html_bytes": 3960,
-    "app_javascript_bytes": 21574,
+    "app_html_bytes": 4064,
+    "app_javascript_bytes": 22619,
     "app_shell_files": 6,
     "direct_qa_hooks": 7,
     "generated_artifact_files": 6,

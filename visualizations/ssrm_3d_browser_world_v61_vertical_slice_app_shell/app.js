@@ -232,6 +232,18 @@ function recordResidentHistory(name, event, detail) {
   localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   return history;
 }
+function formatResidentDashboard() {
+  const history = readResidentHistory();
+  const header = `Resources: water ${world.resources.water} / fiber ${world.resources.fiber} / wood ${world.resources.wood} / care ${world.resources.care}`;
+  const rows = Object.keys(world.residents).map(name => {
+    const resident = world.residents[name];
+    const marker = name === world.selected ? '*' : ' ';
+    const recent = Array.isArray(history[name]) ? history[name].length : 0;
+    const pressure = resident.debt > 1 ? 'debt pressure' : resident.trust < 0.52 ? 'trust fragile' : resident.progress < 0.35 ? 'work lagging' : 'stable';
+    return `${marker} ${name.padEnd(5)} | ${resident.schedule.padEnd(16)} | progress ${resident.progress.toFixed(3)} | debt ${String(resident.debt).padStart(2)} | trust ${resident.trust.toFixed(3)} | history ${String(recent).padStart(2)} | ${pressure} | memory: ${resident.memory}`;
+  });
+  return [header, ...rows].join('\n');
+}
 function formatResidentHistory() {
   const history = readResidentHistory();
   const names = Object.keys(world.residents);
@@ -344,6 +356,7 @@ function render() {
   document.getElementById('sessionTranscriptOut').textContent = formatSessionTranscript();
   document.getElementById('checkpointOut').textContent = formatCheckpointLog();
   document.getElementById('residentHistoryOut').textContent = formatResidentHistory();
+  document.getElementById('residentDashboardOut').textContent = formatResidentDashboard();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();

@@ -1,0 +1,12 @@
+channel,passed,score,evidence,failure_if_false
+dashboard_panel_present,True,1.0,maintained shell exposes a visible Resident dashboard panel,reviewers would still need raw JSON for cross-resident schedule/debt/care state
+generated_source_of_truth,True,1.0,dashboard rendering lives in the v61 generator and generated app,regeneration would erase dashboard hardening
+dashboard_uses_public_state,True,1.0,dashboard derives from public residents/resources/history state,dashboard could become a parallel hidden-state view
+dashboard_covers_required_channels,True,1.0,"dashboard covers schedule, progress, debt, trust, memory, and care/resource pressure",the panel would not satisfy the unified schedule/debt/care dashboard gate
+dashboard_pressure_labels,True,1.0,dashboard adds simple reviewer-readable pressure labels without changing mechanics,reviewers would still need to infer pressure from raw numbers
+browser_workflow,True,1.0,browser workflow pass recorded as True,source checks alone would not prove the dashboard updates in a browser
+browser_initial_dashboard,True,1.0,"{'hasResourcesCare': True, 'hasAllResidents': True, 'hasChannels': True, 'hasSchedule': True}",dashboard would not show all residents and resources on initial load
+browser_consequence_dashboard,True,1.0,"{'borrowShowsDebtPressure': True, 'returnShowsAriHistory': True, 'returnShowsMemory': True}",dashboard would not reflect borrow/return and history changes
+browser_offscreen_dashboard,True,1.0,"{'showsMultipleResidents': True, 'showsProgress': True, 'showsPressureLabels': True, 'historyCountsUpdated': True}",dashboard would not reflect offscreen progress/care pressure across residents
+browser_resume_dashboard,True,1.0,"{'resumedWithoutReset': True, 'stillHasResources': True, 'stillHasAriReturn': True, 'stillHasHistoryCounts': True, 'selectedStillMarked': True}",dashboard state would not persist through leave/return via primary demo
+console_clean,True,1.0,browser console error count was 0,browser workflow produced runtime console errors

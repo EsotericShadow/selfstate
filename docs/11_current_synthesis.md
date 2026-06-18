@@ -10,6 +10,8 @@ Report 310 hardens the same maintained shell with reviewer-readable session tran
 
 Report 311 adds a compact resident-history lane to the maintained shell, recording bounded public trust/debt/progress/memory updates per resident. This makes resident continuity readable through the primary demo without claiming richer autonomy or subjective interiority.
 
+Report 312 adds a unified resident dashboard to the maintained shell, showing every resident's schedule, progress, debt, trust, memory, recent-history count, and care/resource pressure in one view. This is still browser-local readability consolidation, not a new simulation organ.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

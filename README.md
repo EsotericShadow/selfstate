@@ -57,6 +57,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo closed-origin-tab hard-reload handoff continuity report](docs/337_ssrm_3d_browser_world_v97_primary_demo_closed_origin_tab_hard_reload_handoff_continuity_bridge_report.md): verifies that the prepared resume handoff remains visible and usable after the original preparing tab is closed and the fresh launcher tab is reloaded.
 - [Primary demo stale prepared-handoff calibration report](docs/338_ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_report.md): verifies that an older prepared resume handoff becomes visibly stale, blocks continue, names mismatches, and remains downloadable when a newer clean shell handoff supersedes it.
 - [Primary demo stale handoff repair reprepare report](docs/339_ssrm_3d_browser_world_v99_primary_demo_stale_handoff_repair_reprepare_bridge_report.md): verifies that re-preparing after a stale superseded handoff restores a fresh clean handoff, regains continue/download controls, survives reload, and preserves pre-repair mismatch evidence in the browser proof.
+- [Primary demo repaired handoff continue-return freshness report](docs/340_ssrm_3d_browser_world_v100_primary_demo_repaired_handoff_continue_return_freshness_bridge_report.md): verifies that a repaired clean handoff remains fresh after using the recovered continue action, rerunning the reviewer pass, returning, refreshing evidence, and reloading.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

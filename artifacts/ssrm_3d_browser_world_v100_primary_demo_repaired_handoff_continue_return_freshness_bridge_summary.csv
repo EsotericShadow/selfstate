@@ -1,0 +1,2 @@
+report,readiness,weakest_channel_score,repaired_continue_return_score,post_return_freshness_score,post_return_continue_score,timestamp_stability_score,shell_evidence_score,stale_history_preservation_score,visible_no_storage_score,console_errors,criterion_count
+340,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,19

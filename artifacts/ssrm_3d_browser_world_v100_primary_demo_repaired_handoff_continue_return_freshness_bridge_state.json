@@ -1,0 +1,30 @@
+{
+  "after_refresh_recorded_at": "2026-06-18T10:08:51.424Z",
+  "after_refresh_shell_evidence": "Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready.",
+  "after_refresh_status": "Outside-review handoff ready: fresh clean handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared clean handoff, or download Prepared outside-review handoff JSON.",
+  "boundary": "Deterministic browser-local repaired handoff continue-return freshness bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local launcher recovery and review-handoff freshness hygiene, not external validation or evidence of inner experience.",
+  "checks": {
+    "current_shell_timestamp_matches_repaired_payload_after_refresh": true,
+    "evidence_avoids_raw_storage_keys": true,
+    "no_console_errors": true,
+    "repaired_clean_handoff_fresh_before_continue": true,
+    "repaired_continue_action_still_available_after_refresh": true,
+    "repaired_continue_reaches_reset_shell": true,
+    "repaired_fresh_survives_post_return_reload": true,
+    "repaired_handoff_still_fresh_after_return_refresh": true,
+    "repaired_payload_timestamp_unchanged_after_refresh": true,
+    "repaired_payload_tracks_current_shell_before_continue": true,
+    "repaired_return_to_launcher_visible": true,
+    "reviewer_pass_rerun_after_repaired_continue": true,
+    "shell_evidence_all_pass_after_repaired_continue": true,
+    "stale_history_preserved_in_browser_evidence": true,
+    "stale_mismatch_history_visible_before_repair": true,
+    "stale_status_visible_before_repair": true
+  },
+  "next_gate": "post-340: collapse the repeated handoff lifecycle checks into a single primary-demo lifecycle smoke artifact so future consolidation gates exercise one maintained path without adding another near-duplicate report for each tab/reload variant",
+  "repaired_recorded_at": "2026-06-18T10:08:51.424Z",
+  "repaired_status_before_continue": "Outside-review handoff ready: fresh clean handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 0 manual record(s) / export missing; next action: click Continue from prepared clean handoff, or download Prepared outside-review handoff JSON.",
+  "report": 340,
+  "seed": 20270738,
+  "stale_status_before_repair": "Prepared handoff payload is stale: launch handoff changed, launch kind changed. Payload is resume while current shell is clean. Re-run Prepare outside-review handoff."
+}

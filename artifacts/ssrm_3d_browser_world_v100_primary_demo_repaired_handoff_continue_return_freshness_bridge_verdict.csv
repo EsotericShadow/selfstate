@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+340,pass,1.0,1.0,post-340: collapse the repeated handoff lifecycle checks into a single primary-demo lifecycle smoke artifact so future consolidation gates exercise one maintained path without adding another near-duplicate report for each tab/reload variant

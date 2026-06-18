@@ -1,0 +1,541 @@
+tick_id,day,settlement_id,chain_id,chain_step_index,affordance_label,prerequisite_met,object_state_before,object_state_after,chain_progress,persisted,visible_affordance_chain
+0,1,riverbend,chain:riverbend,0,inspect plank latch,True,step:0,step:0,0.0,True,True
+2,1,archive,chain:archive,0,inspect memory tag,True,step:0,step:0,0.0,True,True
+5,1,repair_ring,chain:repair_ring,0,inspect bell gauge,True,step:0,step:0,0.0,True,True
+10,1,orchard,chain:orchard,0,inspect dry cord,True,step:0,step:0,0.0,True,True
+11,1,repair_ring,chain:repair_ring,0,inspect bell gauge,True,step:0,step:0,0.0,True,True
+12,2,riverbend,chain:riverbend,0,inspect plank latch,True,step:0,step:1,0.25,True,True
+14,2,archive,chain:archive,0,inspect memory tag,True,step:0,step:1,0.25,True,True
+15,2,signal,chain:signal,0,inspect mast rope,True,step:0,step:0,0.0,True,True
+20,2,archive,chain:archive,1,lift signal spool,True,step:1,step:1,0.25,True,True
+21,2,signal,chain:signal,0,inspect mast rope,True,step:0,step:1,0.25,True,True
+23,2,repair_ring,chain:repair_ring,0,inspect bell gauge,True,step:0,step:1,0.25,True,True
+25,3,roofward,chain:roofward,0,inspect glass latch,True,step:0,step:0,0.0,True,True
+30,3,riverbend,chain:riverbend,1,lift cedar kit,True,step:1,step:1,0.25,True,True
+34,3,orchard,chain:orchard,0,inspect dry cord,True,step:0,step:0,0.0,True,True
+35,3,repair_ring,chain:repair_ring,1,lift insulated tongs,True,step:1,step:1,0.25,True,True
+37,4,roofward,chain:roofward,0,inspect glass latch,True,step:0,step:1,0.25,True,True
+40,4,orchard,chain:orchard,0,inspect dry cord,True,step:0,step:0,0.0,True,True
+41,4,repair_ring,chain:repair_ring,1,lift insulated tongs,True,step:1,step:2,0.5,True,True
+44,4,archive,chain:archive,1,lift signal spool,False,step:1,step:1,0.25,True,True
+45,4,signal,chain:signal,1,lift oil lantern,True,step:1,step:1,0.25,True,True
+46,4,orchard,chain:orchard,0,inspect dry cord,True,step:0,step:1,0.25,True,True
+48,5,riverbend,chain:riverbend,1,lift cedar kit,True,step:1,step:1,0.25,True,True
+50,5,archive,chain:archive,1,lift signal spool,True,step:1,step:1,0.25,True,True
+55,5,roofward,chain:roofward,1,carry herb ledger,False,step:1,step:1,0.25,True,True
+57,5,signal,chain:signal,1,lift oil lantern,True,step:1,step:1,0.25,True,True
+60,6,riverbend,chain:riverbend,1,lift cedar kit,True,step:1,step:2,0.5,True,True
+64,6,orchard,chain:orchard,1,lift seed satchel,True,step:1,step:2,0.5,True,True
+65,6,repair_ring,chain:repair_ring,2,place copper wire,True,step:2,step:2,0.5,True,True
+67,6,roofward,chain:roofward,1,carry herb ledger,True,step:1,step:2,0.5,True,True
+69,6,signal,chain:signal,1,lift oil lantern,True,step:1,step:2,0.5,True,True
+70,6,orchard,chain:orchard,2,place market token,True,step:2,step:2,0.5,True,True
+75,7,signal,chain:signal,2,align signal lens,True,step:2,step:2,0.5,True,True
+77,7,repair_ring,chain:repair_ring,2,place copper wire,False,step:2,step:2,0.5,True,True
+80,7,archive,chain:archive,1,lift signal spool,True,step:1,step:1,0.25,True,True
+85,8,archive,chain:archive,1,lift signal spool,True,step:1,step:1,0.25,True,True
+88,8,repair_ring,chain:repair_ring,2,place copper wire,False,step:2,step:2,0.5,True,True
+90,8,roofward,chain:roofward,2,align sun lens,True,step:2,step:2,0.5,True,True
+91,8,archive,chain:archive,1,lift signal spool,True,step:1,step:1,0.25,True,True
+95,8,riverbend,chain:riverbend,2,place ridge lantern,True,step:2,step:2,0.5,True,True
+98,9,signal,chain:signal,2,align signal lens,True,step:2,step:3,0.75,True,True
+100,9,repair_ring,chain:repair_ring,2,place copper wire,True,step:2,step:3,0.75,True,True
+101,9,riverbend,chain:riverbend,2,place ridge lantern,True,step:2,step:3,0.75,True,True
+103,9,archive,chain:archive,1,lift signal spool,True,step:1,step:2,0.5,True,True
+105,9,orchard,chain:orchard,2,place market token,True,step:2,step:2,0.5,True,True
+110,10,signal,chain:signal,3,light safe path,False,step:3,step:3,0.75,True,True
+111,10,orchard,chain:orchard,2,place market token,True,step:2,step:2,0.5,True,True
+114,10,roofward,chain:roofward,2,align sun lens,True,step:2,step:2,0.5,True,True
+115,10,archive,chain:archive,2,ink route mark,True,step:2,step:2,0.5,True,True
+120,11,roofward,chain:roofward,2,align sun lens,True,step:2,step:2,0.5,True,True
+121,11,archive,chain:archive,2,ink route mark,False,step:2,step:2,0.5,True,True
+123,11,orchard,chain:orchard,2,place market token,True,step:2,step:3,0.75,True,True
+125,11,riverbend,chain:riverbend,3,repair crossing,True,step:3,step:3,0.75,True,True
+126,11,roofward,chain:roofward,2,align sun lens,True,step:2,step:3,0.75,True,True
+130,11,repair_ring,chain:repair_ring,3,stabilize repair,True,step:3,step:4,1.0,True,True
+134,12,signal,chain:signal,3,light safe path,True,step:3,step:3,0.75,True,True
+135,12,orchard,chain:orchard,3,seal seed shed,True,step:3,step:3,0.75,True,True
+137,12,riverbend,chain:riverbend,3,repair crossing,True,step:3,step:3,0.75,True,True
+140,12,signal,chain:signal,3,light safe path,True,step:3,step:3,0.75,True,True
+144,13,roofward,chain:roofward,3,open warm archive,True,step:3,step:4,1.0,True,True
+145,13,archive,chain:archive,2,ink route mark,True,step:2,step:2,0.5,True,True
+146,13,signal,chain:signal,3,light safe path,True,step:3,step:4,1.0,True,True
+149,13,riverbend,chain:riverbend,3,repair crossing,True,step:3,step:4,1.0,True,True
+150,13,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+153,13,orchard,chain:orchard,3,seal seed shed,True,step:3,step:4,1.0,True,True
+155,13,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+157,14,archive,chain:archive,2,ink route mark,True,step:2,step:2,0.5,True,True
+160,14,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+165,14,orchard,chain:orchard,3,seal seed shed,False,step:4,step:4,1.0,True,True
+166,14,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+169,15,archive,chain:archive,2,ink route mark,True,step:2,step:3,0.75,True,True
+170,15,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+175,15,archive,chain:archive,3,weave recall line,True,step:3,step:3,0.75,True,True
+176,15,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+178,15,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+179,15,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+180,16,archive,chain:archive,3,weave recall line,True,step:3,step:4,1.0,True,True
+185,16,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+187,16,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+189,16,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+190,16,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+195,17,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+200,17,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+203,17,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+205,18,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+207,18,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+210,18,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+212,18,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+215,18,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+220,19,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+223,19,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+225,19,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+226,19,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+230,20,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+233,20,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+235,20,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+238,20,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+240,21,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+243,21,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+245,21,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+246,21,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+250,21,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+253,22,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+255,22,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+256,22,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+258,22,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+260,22,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+265,23,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+266,23,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+269,23,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+270,23,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+275,23,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+277,24,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+280,24,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+285,24,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+289,25,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+290,25,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+292,25,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+295,25,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+296,25,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+299,25,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+300,26,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+303,26,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+305,26,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+310,26,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+312,27,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+315,27,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+319,27,orchard,chain:orchard,3,seal seed shed,False,step:4,step:4,1.0,True,True
+320,27,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+322,27,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+325,28,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+330,28,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+332,28,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+335,28,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+340,29,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+342,29,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+344,29,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+345,29,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+347,29,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+350,30,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+355,30,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+358,30,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+360,31,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+362,31,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+365,31,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+367,31,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+370,31,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+373,32,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+375,32,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+376,32,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+378,32,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+380,32,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+381,32,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+385,33,repair_ring,chain:repair_ring,3,stabilize repair,False,step:4,step:4,1.0,True,True
+389,33,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+390,33,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+392,33,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+395,33,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+396,34,orchard,chain:orchard,3,seal seed shed,False,step:4,step:4,1.0,True,True
+399,34,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+400,34,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+401,34,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+404,34,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+405,34,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+409,35,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+410,35,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+412,35,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+415,35,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+420,36,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+421,36,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+422,36,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+424,36,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+425,36,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+430,36,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+431,36,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+432,37,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+435,37,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+440,37,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+444,38,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+445,38,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+447,38,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+450,38,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+451,38,repair_ring,chain:repair_ring,3,stabilize repair,False,step:4,step:4,1.0,True,True
+454,38,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+455,38,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+458,39,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+460,39,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+465,39,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+467,39,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+469,40,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+470,40,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+475,40,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+478,40,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+480,41,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+481,41,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+485,41,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+488,41,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+490,41,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+495,42,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+498,42,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+500,42,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+501,42,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+505,43,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+508,43,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+510,43,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+511,43,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+513,43,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+515,43,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+520,44,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+521,44,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+524,44,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+525,44,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+528,45,repair_ring,chain:repair_ring,3,stabilize repair,False,step:4,step:4,1.0,True,True
+530,45,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+531,45,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+533,45,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+535,45,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+536,45,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+540,46,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+544,46,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+545,46,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+547,46,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+550,46,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+554,47,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+555,47,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+556,47,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+559,47,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+560,47,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+563,47,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+565,48,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+567,48,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+570,48,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+574,48,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+575,48,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+578,49,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+580,49,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+585,49,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+587,49,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+588,50,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+590,50,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+595,50,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+597,50,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+599,50,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+600,51,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+601,51,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+605,51,repair_ring,chain:repair_ring,3,stabilize repair,False,step:4,step:4,1.0,True,True
+610,51,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+613,52,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+615,52,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+617,52,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+620,52,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+622,52,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+624,53,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+625,53,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+630,53,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+633,53,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+635,53,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+636,54,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+640,54,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+643,54,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+645,54,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+650,55,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+653,55,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+655,55,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+656,55,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+660,56,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+664,56,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+665,56,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+667,56,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+670,56,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+674,57,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+675,57,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+676,57,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+677,57,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+679,57,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+680,57,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+685,58,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+687,58,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+690,58,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+695,58,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+697,59,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+699,59,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+700,59,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+702,59,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+705,59,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+706,59,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+710,60,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+713,60,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+715,60,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+720,61,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+722,61,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+725,61,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+729,61,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+730,61,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+733,62,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+735,62,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+740,62,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+742,62,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+745,63,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+750,63,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+752,63,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+754,63,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+755,63,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+756,64,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+760,64,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+763,64,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+765,64,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+766,64,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+770,65,orchard,chain:orchard,3,seal seed shed,False,step:4,step:4,1.0,True,True
+775,65,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+776,65,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+779,65,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+780,66,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+783,66,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+785,66,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+786,66,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+788,66,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+790,66,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+791,66,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+795,67,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+799,67,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+800,67,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+802,67,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+805,68,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+806,68,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+809,68,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+810,68,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+811,68,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+814,68,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+815,68,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+819,69,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+820,69,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+822,69,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+825,69,repair_ring,chain:repair_ring,3,stabilize repair,False,step:4,step:4,1.0,True,True
+829,70,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+830,70,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+831,70,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+832,70,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+834,70,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+835,70,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+840,71,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+842,71,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+845,71,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+850,71,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+853,72,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+855,72,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+856,72,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+860,72,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+865,73,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+868,73,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+870,73,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+872,73,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+875,73,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+876,74,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+879,74,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+880,74,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+885,74,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+888,75,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+890,75,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+891,75,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+895,75,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+898,75,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+900,76,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+905,76,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+908,76,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+910,76,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+911,76,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+915,77,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+918,77,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+920,77,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+921,77,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+923,77,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+925,78,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+930,78,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+931,78,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+934,78,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+935,78,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+938,79,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+940,79,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+941,79,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+943,79,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+945,79,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+946,79,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+949,80,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+950,80,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+952,80,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+954,80,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+955,80,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+957,80,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+960,81,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+965,81,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+968,81,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+970,81,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+972,82,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+975,82,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+977,82,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+980,82,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+985,83,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+988,83,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+990,83,orchard,chain:orchard,3,seal seed shed,False,step:4,step:4,1.0,True,True
+995,83,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+997,84,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+998,84,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1000,84,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1005,84,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1007,84,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1008,85,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1010,85,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1011,85,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1015,85,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1020,86,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1023,86,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+1025,86,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1027,86,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1030,86,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1034,87,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+1035,87,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1040,87,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1043,87,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1045,88,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+1050,88,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1054,88,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1055,88,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1057,89,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1060,89,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1061,89,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1064,89,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1065,89,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1066,89,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1070,90,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1074,90,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1075,90,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1077,90,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1080,91,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1084,91,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1085,91,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1086,91,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1087,91,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1089,91,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+1090,91,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1095,92,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1097,92,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1100,92,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+1104,93,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1105,93,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1107,93,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1109,93,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1110,93,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1112,93,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1115,93,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1120,94,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1123,94,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1125,94,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1130,95,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1132,95,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1135,95,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1139,95,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1140,96,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1141,96,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1143,96,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1145,96,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1146,96,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1150,96,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1154,97,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1155,97,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+1160,97,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1163,97,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1164,98,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1165,98,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1166,98,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+1170,98,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1173,98,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1175,98,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1177,99,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+1180,99,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1185,99,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1186,99,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1189,100,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1190,100,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1193,100,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1195,100,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1196,100,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1198,100,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1200,101,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1205,101,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1209,101,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1210,101,orchard,chain:orchard,3,seal seed shed,False,step:4,step:4,1.0,True,True
+1212,102,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1215,102,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1216,102,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1219,102,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1220,102,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1221,102,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+1225,103,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1229,103,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1230,103,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1232,103,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+1235,103,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1240,104,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1243,104,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+1245,104,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1250,105,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1252,105,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1253,105,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1255,105,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1260,106,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1263,106,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1265,106,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+1266,106,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1270,106,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1273,107,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1275,107,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1278,107,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1280,107,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1282,107,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1285,108,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1286,108,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1289,108,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1290,108,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1295,108,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1296,109,roofward,chain:roofward,3,open warm archive,True,step:4,step:4,1.0,True,True
+1298,109,signal,chain:signal,3,light safe path,False,step:4,step:4,1.0,True,True
+1300,109,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1301,109,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1305,109,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1309,110,archive,chain:archive,3,weave recall line,False,step:4,step:4,1.0,True,True
+1310,110,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1315,110,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1318,110,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1320,111,roofward,chain:roofward,3,open warm archive,False,step:4,step:4,1.0,True,True
+1321,111,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1325,111,riverbend,chain:riverbend,3,repair crossing,True,step:4,step:4,1.0,True,True
+1328,111,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1330,111,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1331,111,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True
+1332,112,archive,chain:archive,3,weave recall line,True,step:4,step:4,1.0,True,True
+1335,112,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1339,112,signal,chain:signal,3,light safe path,True,step:4,step:4,1.0,True,True
+1340,112,orchard,chain:orchard,3,seal seed shed,True,step:4,step:4,1.0,True,True
+1341,112,repair_ring,chain:repair_ring,3,stabilize repair,True,step:4,step:4,1.0,True,True
+1342,112,riverbend,chain:riverbend,3,repair crossing,False,step:4,step:4,1.0,True,True

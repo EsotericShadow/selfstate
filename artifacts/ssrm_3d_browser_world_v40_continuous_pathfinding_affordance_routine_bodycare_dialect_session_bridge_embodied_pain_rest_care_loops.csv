@@ -1,0 +1,1345 @@
+tick_id,day,settlement_id,room_id,action,pain_before,pain_after,energy_before,energy_after,wetness_after,temperature_after,care_action,care_effective,distress_bounded,visible_body_state
+0,1,riverbend,plank hall,dry_off,0.08,0.11,0.74,0.72246,0.1,0.582,dry off,True,True,True
+1,1,roofward,glass stair,path_to_resident,0.08,0.11,0.74,0.72246,0.154,0.554,available,False,True,True
+2,1,archive,stone stacks,inspect_affordance,0.08,0.074,0.74,0.722964,0.154,0.554,available,False,True,True
+3,1,signal,mast base,interrupt_routine,0.08,0.11,0.74,0.72246,0.154,0.554,available,False,True,True
+4,1,orchard,arrival court,ask_dialect_memory,0.08,0.074,0.74,0.722964,0.154,0.582,available,False,True,True
+5,1,repair_ring,wire bench,rest,0.08,0.05,0.74,0.795,0.154,0.604,rest,True,True,True
+6,1,riverbend,wet crossing,interrupt_routine,0.11,0.104,0.72246,0.705004,0.135,0.584,available,False,True,True
+7,1,roofward,warm lane,ask_dialect_memory,0.11,0.104,0.72246,0.705004,0.148,0.578,available,False,True,True
+8,1,archive,memory desk,rest,0.074,0.044,0.722964,0.777964,0.148,0.578,rest,True,True,True
+9,1,signal,arrival court,dry_off,0.11,0.104,0.72246,0.705004,0.189,0.556,dry off,True,True,True
+10,1,orchard,arrival court,path_to_resident,0.074,0.068,0.722964,0.706012,0.148,0.584,available,False,True,True
+11,1,repair_ring,spark lane,inspect_affordance,0.05,0.08,0.795,0.77788,0.189,0.606,available,False,True,True
+12,2,riverbend,wet crossing,continue_project,0.104,0.098,0.705004,0.687632,0.17,0.586,available,False,True,True
+13,2,roofward,warm lane,path_to_rest,0.104,0.098,0.705004,0.687632,0.142,0.602,available,False,True,True
+14,2,archive,memory desk,perform_chain_step,0.044,0.038,0.777964,0.761432,0.142,0.602,available,False,True,True
+15,2,signal,mast base,recover_routine,0.104,0.134,0.705004,0.687128,0.183,0.53,available,False,True,True
+16,2,orchard,seed lane,offer_care,0.068,0.062,0.706012,0.689144,0.142,0.608,available,True,True,True
+17,2,repair_ring,wire bench,treat_pain,0.08,0.025,0.77788,0.76153,0.183,0.608,treat pain,True,True,True
+18,2,riverbend,plank hall,recover_routine,0.098,0.128,0.687632,0.66984,0.164,0.588,available,False,True,True
+19,2,roofward,sun sill,offer_care,0.098,0.092,0.687632,0.670344,0.136,0.626,available,True,True,True
+20,2,archive,memory desk,treat_pain,0.038,0.0,0.761432,0.745432,0.136,0.626,treat pain,True,True,True
+21,2,signal,mast base,continue_project,0.134,0.164,0.687128,0.668832,0.177,0.504,available,False,True,True
+22,2,orchard,mud row,path_to_rest,0.062,0.092,0.689144,0.671856,0.177,0.61,available,False,True,True
+23,2,repair_ring,spark lane,perform_chain_step,0.025,0.055,0.76153,0.74476,0.218,0.61,available,False,True,True
+24,3,riverbend,plank hall,path_to_resident,0.128,0.158,0.66984,0.651628,0.158,0.59,available,False,True,True
+25,3,roofward,sun sill,inspect_affordance,0.092,0.086,0.670344,0.65314,0.13,0.628,available,False,True,True
+26,3,archive,stone stacks,interrupt_routine,0.0,0.0,0.745432,0.729432,0.13,0.6,available,False,True,True
+27,3,signal,mast base,ask_dialect_memory,0.164,0.194,0.668832,0.650116,0.171,0.478,available,False,True,True
+28,3,orchard,satchel shed,rest,0.092,0.062,0.671856,0.726856,0.171,0.634,rest,True,True,True
+29,3,repair_ring,bell alcove,dry_off,0.055,0.049,0.74476,0.728074,0.158,0.612,dry off,True,True,True
+30,3,riverbend,wet crossing,ask_dialect_memory,0.158,0.152,0.651628,0.6335,0.193,0.592,available,False,True,True
+31,3,roofward,warm lane,rest,0.086,0.056,0.65314,0.70814,0.124,0.652,rest,True,True,True
+32,3,archive,stone stacks,dry_off,0.0,0.0,0.729432,0.713432,0.07,0.574,dry off,True,True,True
+33,3,signal,arrival court,path_to_resident,0.194,0.188,0.650116,0.631484,0.206,0.48,available,False,True,True
+34,3,orchard,market plank,inspect_affordance,0.062,0.056,0.726856,0.710072,0.165,0.608,available,False,True,True
+35,3,repair_ring,cool corner,interrupt_routine,0.049,0.043,0.728074,0.711472,0.152,0.586,available,False,True,True
+36,4,riverbend,kit alcove,path_to_rest,0.152,0.146,0.6335,0.615456,0.187,0.616,available,False,True,True
+37,4,roofward,glass stair,perform_chain_step,0.056,0.086,0.70814,0.690936,0.118,0.626,available,False,True,True
+38,4,archive,spool room,recover_routine,0.0,0.0,0.713432,0.697432,0.064,0.576,available,False,True,True
+39,4,signal,mast base,offer_care,0.188,0.218,0.631484,0.612432,0.2,0.454,available,True,True,True
+40,4,orchard,satchel shed,treat_pain,0.056,0.001,0.710072,0.694058,0.159,0.632,treat pain,True,True,True
+41,4,repair_ring,cool corner,continue_project,0.043,0.037,0.711472,0.694954,0.146,0.56,available,False,True,True
+42,4,riverbend,dry ridge,offer_care,0.146,0.14,0.615456,0.597496,0.181,0.64,available,True,True,True
+43,4,roofward,warm lane,treat_pain,0.086,0.031,0.690936,0.674502,0.112,0.65,treat pain,True,True,True
+44,4,archive,spool room,continue_project,0.0,0.0,0.697432,0.681432,0.058,0.578,available,False,True,True
+45,4,signal,lantern walk,path_to_rest,0.218,0.212,0.612432,0.593464,0.194,0.478,available,False,True,True
+46,4,orchard,satchel shed,perform_chain_step,0.001,0.0,0.694058,0.678058,0.153,0.656,available,False,True,True
+47,4,repair_ring,cool corner,recover_routine,0.037,0.031,0.694954,0.67852,0.14,0.534,available,False,True,True
+48,5,riverbend,plank hall,inspect_affordance,0.14,0.17,0.597496,0.579116,0.175,0.642,available,False,True,True
+49,5,roofward,glass stair,interrupt_routine,0.031,0.061,0.674502,0.657648,0.106,0.624,available,False,True,True
+50,5,archive,spool room,ask_dialect_memory,0.0,0.0,0.681432,0.665432,0.052,0.58,available,False,True,True
+51,5,signal,lantern walk,rest,0.212,0.182,0.593464,0.648464,0.188,0.502,rest,True,True,True
+52,5,orchard,satchel shed,dry_off,0.0,0.0,0.678058,0.662058,0.093,0.68,dry off,True,True,True
+53,5,repair_ring,wire bench,path_to_resident,0.031,0.025,0.67852,0.66217,0.134,0.536,available,False,True,True
+54,5,riverbend,wet crossing,rest,0.17,0.14,0.579116,0.634116,0.21,0.666,rest,True,True,True
+55,5,roofward,warm lane,dry_off,0.061,0.055,0.657648,0.640878,0.046,0.648,dry off,True,True,True
+56,5,archive,ink niche,path_to_resident,0.0,0.03,0.665432,0.649012,0.046,0.582,available,False,True,True
+57,5,signal,mast base,inspect_affordance,0.182,0.212,0.648464,0.629496,0.182,0.476,available,False,True,True
+58,5,orchard,market plank,interrupt_routine,0.0,0.0,0.662058,0.646058,0.087,0.654,available,False,True,True
+59,5,repair_ring,wire bench,ask_dialect_memory,0.025,0.019,0.66217,0.645904,0.128,0.538,available,False,True,True
+60,6,riverbend,plank hall,perform_chain_step,0.14,0.17,0.634116,0.615736,0.204,0.668,available,False,True,True
+61,6,roofward,ledger loft,recover_routine,0.055,0.049,0.640878,0.624192,0.04,0.65,available,False,True,True
+62,6,archive,ink niche,offer_care,0.03,0.06,0.649012,0.632172,0.04,0.606,available,True,True,True
+63,6,signal,lantern walk,treat_pain,0.212,0.157,0.629496,0.611298,0.176,0.5,treat pain,True,True,True
+64,6,orchard,seed lane,continue_project,0.0,0.0,0.646058,0.630058,0.081,0.656,available,False,True,True
+65,6,repair_ring,cool corner,path_to_rest,0.019,0.013,0.645904,0.629722,0.122,0.512,available,False,True,True
+66,6,riverbend,wet crossing,treat_pain,0.17,0.115,0.615736,0.598126,0.239,0.67,treat pain,True,True,True
+67,6,roofward,ledger loft,continue_project,0.049,0.043,0.624192,0.60759,0.034,0.652,available,False,True,True
+68,6,archive,memory desk,path_to_rest,0.06,0.054,0.632172,0.615416,0.034,0.63,available,False,True,True
+69,6,signal,mast base,perform_chain_step,0.157,0.187,0.611298,0.59268,0.17,0.474,available,False,True,True
+70,6,orchard,arrival court,recover_routine,0.0,0.0,0.630058,0.614058,0.075,0.658,available,False,True,True
+71,6,repair_ring,wire bench,offer_care,0.013,0.007,0.629722,0.613624,0.116,0.536,available,True,True,True
+72,7,riverbend,wet crossing,interrupt_routine,0.115,0.109,0.598126,0.5806,0.274,0.672,available,False,True,True
+73,7,roofward,ledger loft,ask_dialect_memory,0.043,0.037,0.60759,0.591072,0.028,0.654,available,False,True,True
+74,7,archive,memory desk,rest,0.054,0.024,0.615416,0.670416,0.028,0.654,rest,True,True,True
+75,7,signal,arrival court,dry_off,0.187,0.181,0.59268,0.574146,0.205,0.476,dry off,True,True,True
+76,7,orchard,seed lane,path_to_resident,0.0,0.0,0.614058,0.598058,0.069,0.66,available,False,True,True
+77,7,repair_ring,spark lane,inspect_affordance,0.007,0.037,0.613624,0.597106,0.151,0.538,available,False,True,True
+78,7,riverbend,plank hall,dry_off,0.109,0.139,0.5806,0.562654,0.214,0.674,dry off,True,True,True
+79,7,roofward,warm lane,path_to_resident,0.037,0.031,0.591072,0.574638,0.022,0.678,available,False,True,True
+80,7,archive,stone stacks,inspect_affordance,0.024,0.018,0.670416,0.654164,0.022,0.628,available,False,True,True
+81,7,signal,mast base,interrupt_routine,0.181,0.211,0.574146,0.555192,0.199,0.45,available,False,True,True
+82,7,orchard,mud row,ask_dialect_memory,0.0,0.03,0.598058,0.581638,0.104,0.662,available,False,True,True
+83,7,repair_ring,wire bench,rest,0.037,0.007,0.597106,0.652106,0.145,0.562,rest,True,True,True
+84,8,roofward,ledger loft,ask_dialect_memory,0.031,0.025,0.574638,0.558288,0.016,0.68,available,False,True,True
+85,8,archive,memory desk,rest,0.018,0.0,0.654164,0.709164,0.016,0.652,rest,True,True,True
+86,8,signal,arrival court,dry_off,0.211,0.205,0.555192,0.536322,0.234,0.452,dry off,True,True,True
+87,8,orchard,satchel shed,path_to_resident,0.03,0.024,0.581638,0.565302,0.098,0.686,available,False,True,True
+88,8,repair_ring,spark lane,inspect_affordance,0.007,0.037,0.652106,0.635588,0.18,0.564,available,False,True,True
+89,8,riverbend,dry ridge,dry_off,0.139,0.133,0.562654,0.544792,0.154,0.676,dry off,True,True,True
+90,8,roofward,warm lane,path_to_resident,0.025,0.019,0.558288,0.542022,0.01,0.704,available,False,True,True
+91,8,archive,stone stacks,inspect_affordance,0.0,0.0,0.709164,0.693164,0.01,0.626,available,False,True,True
+92,8,signal,mast base,interrupt_routine,0.205,0.235,0.536322,0.517032,0.228,0.426,available,False,True,True
+93,8,orchard,mud row,ask_dialect_memory,0.024,0.054,0.565302,0.548546,0.133,0.688,available,False,True,True
+94,8,repair_ring,wire bench,rest,0.037,0.007,0.635588,0.690588,0.174,0.588,rest,True,True,True
+95,8,riverbend,kit alcove,interrupt_routine,0.133,0.127,0.544792,0.527014,0.148,0.7,available,False,True,True
+96,9,roofward,sun sill,offer_care,0.019,0.013,0.542022,0.52584,0.004,0.728,available,True,True,True
+97,9,archive,memory desk,treat_pain,0.0,0.0,0.693164,0.677164,0.004,0.65,treat pain,True,True,True
+98,9,signal,mast base,continue_project,0.235,0.265,0.517032,0.497322,0.222,0.4,available,False,True,True
+99,9,orchard,satchel shed,path_to_rest,0.054,0.048,0.548546,0.531874,0.127,0.712,available,False,True,True
+100,9,repair_ring,spark lane,perform_chain_step,0.007,0.037,0.690588,0.67407,0.209,0.59,available,False,True,True
+101,9,riverbend,kit alcove,continue_project,0.127,0.121,0.527014,0.50932,0.142,0.724,available,False,True,True
+102,9,roofward,warm lane,path_to_rest,0.013,0.007,0.52584,0.509742,0.0,0.752,available,False,True,True
+103,9,archive,stone stacks,perform_chain_step,0.0,0.0,0.677164,0.661164,0.0,0.624,available,False,True,True
+104,9,signal,lantern walk,recover_routine,0.265,0.259,0.497322,0.477696,0.216,0.424,available,False,True,True
+105,9,orchard,market plank,offer_care,0.048,0.042,0.531874,0.515286,0.121,0.686,available,True,True,True
+106,9,repair_ring,wire bench,treat_pain,0.037,0.0,0.67407,0.65807,0.203,0.592,treat pain,True,True,True
+107,9,riverbend,dry ridge,recover_routine,0.121,0.115,0.50932,0.49171,0.136,0.726,available,False,True,True
+108,10,roofward,warm lane,rest,0.007,0.0,0.509742,0.564742,0.0,0.776,rest,True,True,True
+109,10,archive,stone stacks,dry_off,0.0,0.0,0.661164,0.645164,0.0,0.598,dry off,True,True,True
+110,10,signal,mast base,path_to_resident,0.259,0.289,0.477696,0.45765,0.21,0.398,available,False,True,True
+111,10,orchard,market plank,inspect_affordance,0.042,0.036,0.515286,0.498782,0.115,0.66,available,False,True,True
+112,10,repair_ring,cool corner,interrupt_routine,0.0,0.0,0.65807,0.64207,0.197,0.566,available,False,True,True
+113,10,riverbend,kit alcove,path_to_resident,0.115,0.109,0.49171,0.474184,0.13,0.75,available,False,True,True
+114,10,roofward,glass stair,inspect_affordance,0.0,0.03,0.564742,0.548322,0.0,0.75,available,False,True,True
+115,10,archive,spool room,interrupt_routine,0.0,0.0,0.645164,0.629164,0.0,0.6,available,False,True,True
+116,10,signal,lantern walk,ask_dialect_memory,0.289,0.283,0.45765,0.437688,0.204,0.422,available,False,True,True
+117,10,orchard,satchel shed,rest,0.036,0.006,0.498782,0.553782,0.109,0.684,rest,True,True,True
+118,10,repair_ring,wire bench,dry_off,0.0,0.0,0.64207,0.62607,0.137,0.568,dry off,True,True,True
+119,10,riverbend,dry ridge,ask_dialect_memory,0.109,0.103,0.474184,0.456742,0.124,0.752,available,False,True,True
+120,11,roofward,warm lane,treat_pain,0.03,0.0,0.548322,0.532322,0.0,0.774,treat pain,True,True,True
+121,11,archive,spool room,continue_project,0.0,0.0,0.629164,0.613164,0.0,0.602,available,False,True,True
+122,11,signal,lantern walk,path_to_rest,0.283,0.277,0.437688,0.41781,0.198,0.446,available,False,True,True
+123,11,orchard,satchel shed,perform_chain_step,0.006,0.0,0.553782,0.537782,0.103,0.708,available,False,True,True
+124,11,repair_ring,spark lane,recover_routine,0.0,0.03,0.62607,0.60965,0.172,0.57,available,False,True,True
+125,11,riverbend,kit alcove,path_to_rest,0.103,0.097,0.456742,0.439384,0.118,0.776,available,False,True,True
+126,11,roofward,warm lane,perform_chain_step,0.0,0.0,0.532322,0.516322,0.0,0.798,available,False,True,True
+127,11,archive,ink niche,recover_routine,0.0,0.03,0.613164,0.596744,0.0,0.604,available,False,True,True
+128,11,signal,mast base,offer_care,0.277,0.307,0.41781,0.397512,0.192,0.42,available,True,True,True
+129,11,orchard,satchel shed,treat_pain,0.0,0.0,0.537782,0.521782,0.097,0.732,treat pain,True,True,True
+130,11,repair_ring,wire bench,continue_project,0.03,0.024,0.60965,0.593314,0.166,0.572,available,False,True,True
+131,11,riverbend,wet crossing,offer_care,0.097,0.091,0.439384,0.42211,0.153,0.8,available,True,True,True
+132,12,roofward,warm lane,dry_off,0.0,0.0,0.516322,0.500322,0.0,0.822,dry off,True,True,True
+133,12,archive,spool room,path_to_resident,0.03,0.024,0.596744,0.580408,0.0,0.606,available,False,True,True
+134,12,signal,signal perch,inspect_affordance,0.307,0.301,0.397512,0.377298,0.186,0.422,available,False,True,True
+135,12,orchard,market plank,interrupt_routine,0.0,0.0,0.521782,0.505782,0.091,0.706,available,False,True,True
+136,12,repair_ring,wire bench,ask_dialect_memory,0.024,0.018,0.593314,0.577062,0.16,0.574,available,False,True,True
+137,12,riverbend,wet crossing,inspect_affordance,0.091,0.085,0.42211,0.40492,0.188,0.802,available,False,True,True
+138,12,roofward,ledger loft,interrupt_routine,0.0,0.0,0.500322,0.484322,0.0,0.824,available,False,True,True
+139,12,archive,stone stacks,ask_dialect_memory,0.024,0.018,0.580408,0.564156,0.0,0.58,available,False,True,True
+140,12,signal,lens room,rest,0.301,0.271,0.377298,0.432298,0.18,0.446,rest,True,True,True
+141,12,orchard,seed lane,dry_off,0.0,0.0,0.505782,0.489782,0.031,0.708,dry off,True,True,True
+142,12,repair_ring,cool corner,path_to_resident,0.018,0.012,0.577062,0.560894,0.154,0.548,available,False,True,True
+143,12,riverbend,kit alcove,rest,0.085,0.055,0.40492,0.45992,0.182,0.826,rest,True,True,True
+144,13,roofward,ledger loft,continue_project,0.0,0.0,0.484322,0.468322,0.0,0.826,available,False,True,True
+145,13,archive,memory desk,path_to_rest,0.018,0.012,0.564156,0.547988,0.0,0.604,available,False,True,True
+146,13,signal,lantern walk,perform_chain_step,0.271,0.265,0.432298,0.412588,0.174,0.47,available,False,True,True
+147,13,orchard,mud row,recover_routine,0.0,0.03,0.489782,0.473362,0.066,0.71,available,False,True,True
+148,13,repair_ring,wire bench,offer_care,0.012,0.006,0.560894,0.54481,0.148,0.572,available,True,True,True
+149,13,riverbend,dry ridge,perform_chain_step,0.055,0.049,0.45992,0.443234,0.176,0.828,available,False,True,True
+150,13,roofward,warm lane,recover_routine,0.0,0.0,0.468322,0.452322,0.0,0.85,available,False,True,True
+151,13,archive,stone stacks,offer_care,0.012,0.006,0.547988,0.531904,0.0,0.578,available,True,True,True
+152,13,signal,lantern walk,treat_pain,0.265,0.21,0.412588,0.393648,0.168,0.494,treat pain,True,True,True
+153,13,orchard,mud row,continue_project,0.03,0.06,0.473362,0.456522,0.101,0.712,available,False,True,True
+154,13,repair_ring,cool corner,path_to_rest,0.006,0.0,0.54481,0.52881,0.142,0.546,available,False,True,True
+155,13,riverbend,kit alcove,treat_pain,0.049,0.0,0.443234,0.427234,0.17,0.852,treat pain,True,True,True
+156,14,roofward,ledger loft,path_to_resident,0.0,0.0,0.452322,0.436322,0.0,0.852,available,False,True,True
+157,14,archive,arrival court,inspect_affordance,0.006,0.0,0.531904,0.515904,0.035,0.58,available,False,True,True
+158,14,signal,mast base,interrupt_routine,0.21,0.24,0.393648,0.374288,0.162,0.468,available,False,True,True
+159,14,orchard,mud row,ask_dialect_memory,0.06,0.09,0.456522,0.439262,0.136,0.714,available,False,True,True
+160,14,repair_ring,cool corner,rest,0.0,0.0,0.52881,0.58381,0.136,0.52,rest,True,True,True
+161,14,riverbend,kit alcove,interrupt_routine,0.0,0.0,0.427234,0.411234,0.164,0.876,available,False,True,True
+162,14,roofward,warm lane,ask_dialect_memory,0.0,0.0,0.436322,0.420322,0.0,0.876,available,False,True,True
+163,14,archive,stone stacks,rest,0.0,0.0,0.515904,0.570904,0.029,0.554,rest,True,True,True
+164,14,signal,lantern walk,dry_off,0.24,0.234,0.374288,0.355012,0.102,0.492,dry off,True,True,True
+165,14,orchard,seed lane,path_to_resident,0.09,0.084,0.439262,0.422086,0.13,0.716,available,False,True,True
+166,14,repair_ring,cool corner,inspect_affordance,0.0,0.0,0.58381,0.56781,0.13,0.494,available,False,True,True
+167,14,riverbend,dry ridge,dry_off,0.0,0.0,0.411234,0.395234,0.104,0.878,dry off,True,True,True
+168,15,roofward,warm lane,path_to_rest,0.0,0.0,0.420322,0.404322,0.0,0.9,available,False,True,True
+169,15,archive,stone stacks,perform_chain_step,0.0,0.0,0.570904,0.554904,0.023,0.528,available,False,True,True
+170,15,signal,mast base,recover_routine,0.234,0.264,0.355012,0.335316,0.096,0.466,available,False,True,True
+171,15,orchard,market plank,offer_care,0.084,0.078,0.422086,0.404994,0.124,0.69,available,True,True,True
+172,15,repair_ring,cool corner,treat_pain,0.0,0.0,0.56781,0.55181,0.124,0.468,treat pain,True,True,True
+173,15,riverbend,kit alcove,recover_routine,0.0,0.0,0.395234,0.379234,0.098,0.902,available,False,True,True
+174,15,roofward,glass stair,offer_care,0.0,0.03,0.404322,0.387902,0.0,0.874,available,True,True,True
+175,15,archive,memory desk,treat_pain,0.0,0.0,0.554904,0.538904,0.017,0.552,treat pain,True,True,True
+176,15,signal,lantern walk,continue_project,0.264,0.258,0.335316,0.315704,0.09,0.49,available,False,True,True
+177,15,orchard,satchel shed,path_to_rest,0.078,0.072,0.404994,0.387986,0.118,0.714,available,False,True,True
+178,15,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.55181,0.53581,0.118,0.47,available,False,True,True
+179,15,riverbend,dry ridge,continue_project,0.0,0.0,0.379234,0.363234,0.092,0.904,available,False,True,True
+180,16,archive,stone stacks,perform_chain_step,0.0,0.0,0.538904,0.522904,0.011,0.526,available,False,True,True
+181,16,signal,mast base,recover_routine,0.258,0.288,0.315704,0.295672,0.084,0.464,available,False,True,True
+182,16,orchard,market plank,offer_care,0.072,0.066,0.387986,0.371062,0.112,0.688,available,True,True,True
+183,16,repair_ring,cool corner,treat_pain,0.0,0.0,0.53581,0.51981,0.112,0.444,treat pain,True,True,True
+184,16,riverbend,kit alcove,recover_routine,0.0,0.0,0.363234,0.347234,0.086,0.928,available,False,True,True
+185,16,roofward,glass stair,offer_care,0.03,0.06,0.387902,0.371062,0.0,0.848,available,True,True,True
+186,16,archive,memory desk,treat_pain,0.0,0.0,0.522904,0.506904,0.005,0.55,treat pain,True,True,True
+187,16,signal,lantern walk,continue_project,0.288,0.282,0.295672,0.275724,0.078,0.488,available,False,True,True
+188,16,orchard,satchel shed,path_to_rest,0.066,0.06,0.371062,0.354222,0.106,0.712,available,False,True,True
+189,16,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.51981,0.50381,0.106,0.446,available,False,True,True
+190,16,riverbend,dry ridge,continue_project,0.0,0.0,0.347234,0.331234,0.08,0.93,available,False,True,True
+191,16,roofward,warm lane,path_to_rest,0.06,0.054,0.371062,0.354306,0.0,0.872,available,False,True,True
+192,17,archive,ink niche,interrupt_routine,0.0,0.03,0.506904,0.490484,0.0,0.552,available,False,True,True
+193,17,signal,lens room,ask_dialect_memory,0.282,0.276,0.275724,0.25586,0.072,0.49,available,False,True,True
+194,17,orchard,satchel shed,rest,0.06,0.03,0.354222,0.409222,0.1,0.736,rest,True,True,True
+195,17,repair_ring,arrival court,dry_off,0.0,0.0,0.50381,0.48781,0.046,0.448,dry off,True,True,True
+196,17,riverbend,plank hall,ask_dialect_memory,0.0,0.03,0.331234,0.314814,0.074,0.932,available,False,True,True
+197,17,roofward,warm lane,rest,0.054,0.024,0.354306,0.409306,0.0,0.896,rest,True,True,True
+198,17,archive,ink niche,dry_off,0.03,0.06,0.490484,0.473644,0.0,0.554,dry off,True,True,True
+199,17,signal,lens room,path_to_resident,0.276,0.27,0.25586,0.23608,0.066,0.492,available,False,True,True
+200,17,orchard,market plank,inspect_affordance,0.03,0.024,0.409222,0.392886,0.094,0.71,available,False,True,True
+201,17,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.48781,0.47181,0.04,0.45,available,False,True,True
+202,17,riverbend,arrival court,path_to_resident,0.03,0.024,0.314814,0.298478,0.068,0.906,available,False,True,True
+203,17,roofward,ledger loft,inspect_affordance,0.024,0.018,0.409306,0.393054,0.0,0.898,available,False,True,True
+204,18,archive,spool room,recover_routine,0.06,0.054,0.473644,0.456888,0.0,0.556,available,False,True,True
+205,18,signal,signal perch,offer_care,0.27,0.264,0.23608,0.216384,0.06,0.516,available,True,True,True
+206,18,orchard,satchel shed,treat_pain,0.024,0.0,0.392886,0.376886,0.088,0.734,treat pain,True,True,True
+207,18,repair_ring,wire bench,continue_project,0.0,0.0,0.47181,0.45581,0.034,0.452,available,False,True,True
+208,18,riverbend,plank hall,offer_care,0.024,0.054,0.298478,0.281722,0.062,0.93,available,True,True,True
+209,18,roofward,warm lane,treat_pain,0.018,0.0,0.393054,0.377054,0.0,0.922,treat pain,True,True,True
+210,18,archive,stone stacks,continue_project,0.054,0.048,0.456888,0.440216,0.0,0.53,available,False,True,True
+211,18,signal,lens room,path_to_rest,0.264,0.258,0.216384,0.196772,0.054,0.518,available,False,True,True
+212,18,orchard,market plank,perform_chain_step,0.0,0.0,0.376886,0.360886,0.082,0.708,available,False,True,True
+213,18,repair_ring,cool corner,recover_routine,0.0,0.0,0.45581,0.43981,0.028,0.426,available,False,True,True
+214,18,riverbend,wet crossing,path_to_rest,0.054,0.048,0.281722,0.26505,0.097,0.932,available,False,True,True
+215,18,roofward,sun sill,perform_chain_step,0.0,0.0,0.377054,0.361054,0.0,0.924,available,False,True,True
+216,19,archive,memory desk,ask_dialect_memory,0.048,0.042,0.440216,0.423628,0.0,0.554,available,False,True,True
+217,19,signal,lantern walk,rest,0.258,0.228,0.196772,0.251772,0.048,0.542,rest,True,True,True
+218,19,orchard,seed lane,dry_off,0.0,0.0,0.360886,0.344886,0.022,0.71,dry off,True,True,True
+219,19,repair_ring,wire bench,path_to_resident,0.0,0.0,0.43981,0.42381,0.022,0.428,available,False,True,True
+220,19,riverbend,kit alcove,rest,0.048,0.018,0.26505,0.32005,0.091,0.95,rest,True,True,True
+221,19,roofward,sun sill,dry_off,0.0,0.0,0.361054,0.345054,0.0,0.926,dry off,True,True,True
+222,19,archive,ink niche,path_to_resident,0.042,0.072,0.423628,0.40662,0.0,0.556,available,False,True,True
+223,19,signal,mast base,inspect_affordance,0.228,0.258,0.251772,0.23216,0.042,0.516,available,False,True,True
+224,19,orchard,mud row,interrupt_routine,0.0,0.03,0.344886,0.328466,0.057,0.712,available,False,True,True
+225,19,repair_ring,spark lane,ask_dialect_memory,0.0,0.03,0.42381,0.40739,0.057,0.43,available,False,True,True
+226,19,riverbend,kit alcove,inspect_affordance,0.018,0.012,0.32005,0.303882,0.085,0.95,available,False,True,True
+227,19,roofward,warm lane,interrupt_routine,0.0,0.0,0.345054,0.329054,0.0,0.95,available,False,True,True
+228,20,archive,spool room,offer_care,0.072,0.066,0.40662,0.389696,0.0,0.58,available,True,True,True
+229,20,signal,lantern walk,treat_pain,0.258,0.203,0.23216,0.213318,0.036,0.54,treat pain,True,True,True
+230,20,orchard,mud row,continue_project,0.03,0.06,0.328466,0.311626,0.092,0.714,available,False,True,True
+231,20,repair_ring,wire bench,path_to_rest,0.03,0.024,0.40739,0.391054,0.051,0.432,available,False,True,True
+232,20,riverbend,kit alcove,treat_pain,0.012,0.0,0.303882,0.287882,0.079,0.95,treat pain,True,True,True
+233,20,roofward,glass stair,continue_project,0.0,0.03,0.329054,0.312634,0.0,0.924,available,False,True,True
+234,20,archive,stone stacks,path_to_rest,0.066,0.06,0.389696,0.372856,0.0,0.554,available,False,True,True
+235,20,signal,lantern walk,perform_chain_step,0.203,0.197,0.213318,0.19456,0.03,0.564,available,False,True,True
+236,20,orchard,seed lane,recover_routine,0.06,0.054,0.311626,0.29487,0.086,0.716,available,False,True,True
+237,20,repair_ring,cool corner,offer_care,0.024,0.018,0.391054,0.374802,0.045,0.406,available,True,True,True
+238,20,riverbend,dry ridge,perform_chain_step,0.0,0.0,0.287882,0.271882,0.073,0.95,available,False,True,True
+239,20,roofward,arrival court,recover_routine,0.03,0.024,0.312634,0.296298,0.035,0.926,available,False,True,True
+240,21,archive,memory desk,rest,0.06,0.03,0.372856,0.427856,0.0,0.578,rest,True,True,True
+241,21,signal,lantern walk,dry_off,0.197,0.191,0.19456,0.175886,0.0,0.588,dry off,True,True,True
+242,21,orchard,seed lane,path_to_resident,0.054,0.048,0.29487,0.278198,0.08,0.718,available,False,True,True
+243,21,repair_ring,cool corner,inspect_affordance,0.018,0.012,0.374802,0.358634,0.039,0.38,available,False,True,True
+244,21,riverbend,plank hall,dry_off,0.0,0.03,0.271882,0.255462,0.013,0.95,dry off,True,True,True
+245,21,roofward,glass stair,path_to_resident,0.024,0.054,0.296298,0.279542,0.029,0.9,available,False,True,True
+246,21,archive,ink niche,inspect_affordance,0.03,0.06,0.427856,0.411016,0.0,0.58,available,False,True,True
+247,21,signal,lens room,interrupt_routine,0.191,0.185,0.175886,0.157296,0.0,0.59,available,False,True,True
+248,21,orchard,mud row,ask_dialect_memory,0.048,0.078,0.278198,0.261106,0.115,0.72,available,False,True,True
+249,21,repair_ring,cool corner,rest,0.012,0.0,0.358634,0.413634,0.033,0.354,rest,True,True,True
+250,21,riverbend,plank hall,interrupt_routine,0.03,0.06,0.255462,0.238622,0.007,0.95,available,False,True,True
+251,21,roofward,warm lane,ask_dialect_memory,0.054,0.048,0.279542,0.26287,0.023,0.924,available,False,True,True
+252,22,archive,memory desk,treat_pain,0.06,0.005,0.411016,0.394946,0.0,0.604,treat pain,True,True,True
+253,22,signal,lens room,continue_project,0.185,0.179,0.157296,0.13879,0.0,0.592,available,False,True,True
+254,22,orchard,satchel shed,path_to_rest,0.078,0.072,0.261106,0.244098,0.109,0.744,available,False,True,True
+255,22,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.413634,0.397634,0.027,0.356,available,False,True,True
+256,22,riverbend,plank hall,continue_project,0.06,0.09,0.238622,0.221362,0.001,0.95,available,False,True,True
+257,22,roofward,warm lane,path_to_rest,0.048,0.042,0.26287,0.246282,0.017,0.948,available,False,True,True
+258,22,archive,ink niche,perform_chain_step,0.005,0.035,0.394946,0.378456,0.0,0.606,available,False,True,True
+259,22,signal,lens room,recover_routine,0.179,0.173,0.13879,0.120368,0.0,0.594,available,False,True,True
+260,22,orchard,market plank,offer_care,0.072,0.066,0.244098,0.227174,0.103,0.718,available,True,True,True
+261,22,repair_ring,cool corner,treat_pain,0.0,0.0,0.397634,0.381634,0.021,0.33,treat pain,True,True,True
+262,22,riverbend,arrival court,recover_routine,0.09,0.084,0.221362,0.204186,0.0,0.924,available,False,True,True
+263,22,roofward,ledger loft,offer_care,0.042,0.036,0.246282,0.229778,0.011,0.95,available,True,True,True
+264,23,archive,ink niche,dry_off,0.035,0.065,0.378456,0.361546,0.0,0.608,dry off,True,True,True
+265,23,signal,lantern walk,path_to_resident,0.173,0.167,0.120368,0.10203,0.0,0.618,available,False,True,True
+266,23,orchard,seed lane,inspect_affordance,0.066,0.06,0.227174,0.210334,0.097,0.72,available,False,True,True
+267,23,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.381634,0.365634,0.015,0.332,available,False,True,True
+268,23,riverbend,plank hall,path_to_resident,0.084,0.114,0.204186,0.18659,0.0,0.926,available,False,True,True
+269,23,roofward,ledger loft,inspect_affordance,0.036,0.03,0.229778,0.213358,0.005,0.95,available,False,True,True
+270,23,archive,memory desk,interrupt_routine,0.065,0.059,0.361546,0.34472,0.0,0.632,available,False,True,True
+271,23,signal,mast base,ask_dialect_memory,0.167,0.197,0.10203,0.083272,0.0,0.592,available,False,True,True
+272,23,orchard,mud row,rest,0.06,0.03,0.210334,0.265334,0.132,0.744,rest,True,True,True
+273,23,repair_ring,spark lane,dry_off,0.0,0.03,0.365634,0.349214,0.05,0.334,dry off,True,True,True
+274,23,riverbend,dry ridge,ask_dialect_memory,0.114,0.108,0.18659,0.169078,0.0,0.928,available,False,True,True
+275,23,roofward,warm lane,rest,0.03,0.0,0.213358,0.268358,0.0,0.95,rest,True,True,True
+276,24,signal,mast base,path_to_resident,0.197,0.227,0.083272,0.08,0.0,0.566,available,False,True,True
+277,24,orchard,seed lane,inspect_affordance,0.03,0.024,0.265334,0.248998,0.126,0.746,available,False,True,True
+278,24,repair_ring,wire bench,interrupt_routine,0.03,0.024,0.349214,0.332878,0.044,0.336,available,False,True,True
+279,24,riverbend,kit alcove,path_to_resident,0.108,0.102,0.169078,0.15165,0.0,0.95,available,False,True,True
+280,24,roofward,ledger loft,inspect_affordance,0.0,0.0,0.268358,0.252358,0.0,0.95,available,False,True,True
+281,24,archive,memory desk,interrupt_routine,0.059,0.053,0.34472,0.327978,0.0,0.656,available,False,True,True
+282,24,signal,arrival court,ask_dialect_memory,0.227,0.221,0.08,0.08,0.035,0.568,available,False,True,True
+283,24,orchard,mud row,rest,0.024,0.0,0.248998,0.303998,0.161,0.77,rest,True,True,True
+284,24,repair_ring,spark lane,dry_off,0.024,0.054,0.332878,0.316122,0.079,0.338,dry off,True,True,True
+285,24,riverbend,dry ridge,ask_dialect_memory,0.102,0.096,0.15165,0.134306,0.0,0.95,available,False,True,True
+286,24,roofward,warm lane,rest,0.0,0.0,0.252358,0.307358,0.0,0.95,rest,True,True,True
+287,24,archive,stone stacks,dry_off,0.053,0.047,0.327978,0.31132,0.0,0.63,dry off,True,True,True
+288,25,signal,mast base,path_to_rest,0.221,0.251,0.08,0.08,0.029,0.542,available,False,True,True
+289,25,orchard,seed lane,perform_chain_step,0.0,0.0,0.303998,0.287998,0.155,0.772,available,False,True,True
+290,25,repair_ring,wire bench,recover_routine,0.054,0.048,0.316122,0.29945,0.073,0.34,available,False,True,True
+291,25,riverbend,kit alcove,path_to_rest,0.096,0.09,0.134306,0.117046,0.0,0.95,available,False,True,True
+292,25,roofward,sun sill,perform_chain_step,0.0,0.0,0.307358,0.291358,0.0,0.95,available,False,True,True
+293,25,archive,stone stacks,recover_routine,0.047,0.041,0.31132,0.294746,0.0,0.604,available,False,True,True
+294,25,signal,mast base,offer_care,0.251,0.281,0.08,0.08,0.023,0.516,available,True,True,True
+295,25,orchard,mud row,treat_pain,0.0,0.0,0.287998,0.271998,0.19,0.774,treat pain,True,True,True
+296,25,repair_ring,spark lane,continue_project,0.048,0.078,0.29945,0.282358,0.108,0.342,available,False,True,True
+297,25,riverbend,kit alcove,offer_care,0.09,0.084,0.117046,0.09987,0.0,0.95,available,True,True,True
+298,25,roofward,warm lane,treat_pain,0.0,0.0,0.291358,0.275358,0.0,0.95,treat pain,True,True,True
+299,25,archive,stone stacks,continue_project,0.041,0.035,0.294746,0.278256,0.0,0.578,available,False,True,True
+300,26,signal,mast base,inspect_affordance,0.281,0.311,0.08,0.08,0.017,0.49,available,False,True,True
+301,26,orchard,mud row,interrupt_routine,0.0,0.03,0.271998,0.255578,0.225,0.776,available,False,True,True
+302,26,repair_ring,bell alcove,ask_dialect_memory,0.078,0.072,0.282358,0.26535,0.102,0.344,available,False,True,True
+303,26,riverbend,kit alcove,inspect_affordance,0.084,0.078,0.09987,0.082778,0.0,0.95,available,False,True,True
+304,26,roofward,glass stair,interrupt_routine,0.0,0.03,0.275358,0.258938,0.0,0.924,available,False,True,True
+305,26,archive,stone stacks,ask_dialect_memory,0.035,0.029,0.278256,0.26185,0.0,0.552,available,False,True,True
+306,26,signal,lantern walk,rest,0.311,0.281,0.08,0.135,0.011,0.514,rest,True,True,True
+307,26,orchard,seed lane,dry_off,0.03,0.024,0.255578,0.239242,0.165,0.778,dry off,True,True,True
+308,26,repair_ring,bell alcove,path_to_resident,0.072,0.066,0.26535,0.248426,0.096,0.346,available,False,True,True
+309,26,riverbend,kit alcove,rest,0.078,0.048,0.082778,0.137778,0.0,0.95,rest,True,True,True
+310,26,roofward,glass stair,dry_off,0.03,0.06,0.258938,0.242098,0.0,0.898,dry off,True,True,True
+311,26,archive,memory desk,path_to_resident,0.029,0.023,0.26185,0.245528,0.0,0.576,available,False,True,True
+312,27,signal,lantern walk,perform_chain_step,0.281,0.275,0.135,0.11515,0.005,0.538,available,False,True,True
+313,27,orchard,seed lane,recover_routine,0.024,0.018,0.239242,0.22299,0.159,0.78,available,False,True,True
+314,27,repair_ring,cool corner,offer_care,0.066,0.06,0.248426,0.231586,0.09,0.32,available,True,True,True
+315,27,riverbend,dry ridge,perform_chain_step,0.048,0.042,0.137778,0.12119,0.0,0.95,available,False,True,True
+316,27,roofward,warm lane,recover_routine,0.06,0.054,0.242098,0.225342,0.0,0.922,available,False,True,True
+317,27,archive,ink niche,offer_care,0.023,0.053,0.245528,0.228786,0.0,0.6,available,True,True,True
+318,27,signal,lantern walk,treat_pain,0.275,0.22,0.11515,0.09607,0.0,0.562,treat pain,True,True,True
+319,27,orchard,mud row,continue_project,0.018,0.048,0.22299,0.206318,0.194,0.782,available,False,True,True
+320,27,repair_ring,cool corner,path_to_rest,0.06,0.054,0.231586,0.21483,0.084,0.294,available,False,True,True
+321,27,riverbend,kit alcove,treat_pain,0.042,0.0,0.12119,0.10519,0.0,0.95,treat pain,True,True,True
+322,27,roofward,warm lane,continue_project,0.054,0.048,0.225342,0.20867,0.0,0.946,available,False,True,True
+323,27,archive,memory desk,path_to_rest,0.053,0.047,0.228786,0.212128,0.0,0.624,available,False,True,True
+324,28,signal,lens room,interrupt_routine,0.22,0.214,0.09607,0.08,0.0,0.564,available,False,True,True
+325,28,orchard,satchel shed,ask_dialect_memory,0.048,0.042,0.206318,0.18973,0.188,0.806,available,False,True,True
+326,28,repair_ring,cool corner,rest,0.054,0.024,0.21483,0.26983,0.078,0.268,rest,True,True,True
+327,28,riverbend,dry ridge,interrupt_routine,0.0,0.0,0.10519,0.08919,0.0,0.95,available,False,True,True
+328,28,roofward,warm lane,ask_dialect_memory,0.048,0.042,0.20867,0.192082,0.0,0.95,available,False,True,True
+329,28,archive,memory desk,rest,0.047,0.017,0.212128,0.267128,0.0,0.648,rest,True,True,True
+330,28,signal,signal perch,dry_off,0.214,0.208,0.08,0.08,0.0,0.566,dry off,True,True,True
+331,28,orchard,market plank,path_to_resident,0.042,0.036,0.18973,0.173226,0.182,0.78,available,False,True,True
+332,28,repair_ring,wire bench,inspect_affordance,0.024,0.018,0.26983,0.253578,0.072,0.27,available,False,True,True
+333,28,riverbend,plank hall,dry_off,0.0,0.03,0.08919,0.08,0.0,0.95,dry off,True,True,True
+334,28,roofward,glass stair,path_to_resident,0.042,0.072,0.192082,0.175074,0.0,0.924,available,False,True,True
+335,28,archive,memory desk,inspect_affordance,0.017,0.011,0.267128,0.250974,0.0,0.672,available,False,True,True
+336,29,signal,mast base,recover_routine,0.208,0.238,0.08,0.08,0.0,0.54,available,False,True,True
+337,29,orchard,seed lane,offer_care,0.036,0.03,0.173226,0.156806,0.176,0.804,available,True,True,True
+338,29,repair_ring,cool corner,treat_pain,0.018,0.0,0.253578,0.237578,0.066,0.244,treat pain,True,True,True
+339,29,riverbend,wet crossing,recover_routine,0.03,0.024,0.08,0.08,0.035,0.95,available,False,True,True
+340,29,roofward,warm lane,offer_care,0.072,0.066,0.175074,0.15815,0.0,0.948,available,True,True,True
+341,29,archive,memory desk,treat_pain,0.011,0.0,0.250974,0.234974,0.0,0.696,treat pain,True,True,True
+342,29,signal,arrival court,continue_project,0.238,0.232,0.08,0.08,0.035,0.542,available,False,True,True
+343,29,orchard,mud row,path_to_rest,0.03,0.06,0.156806,0.139966,0.211,0.806,available,False,True,True
+344,29,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.237578,0.221578,0.06,0.246,available,False,True,True
+345,29,riverbend,plank hall,continue_project,0.024,0.054,0.08,0.08,0.029,0.95,available,False,True,True
+346,29,roofward,warm lane,path_to_rest,0.066,0.06,0.15815,0.14131,0.0,0.95,available,False,True,True
+347,29,archive,stone stacks,perform_chain_step,0.0,0.0,0.234974,0.218974,0.0,0.67,available,False,True,True
+348,30,signal,arrival court,ask_dialect_memory,0.232,0.226,0.08,0.08,0.07,0.544,available,False,True,True
+349,30,orchard,satchel shed,rest,0.06,0.03,0.139966,0.194966,0.205,0.83,rest,True,True,True
+350,30,repair_ring,spark lane,dry_off,0.0,0.03,0.221578,0.205158,0.095,0.248,dry off,True,True,True
+351,30,riverbend,dry ridge,ask_dialect_memory,0.054,0.048,0.08,0.08,0.023,0.95,available,False,True,True
+352,30,roofward,warm lane,rest,0.06,0.03,0.14131,0.19631,0.0,0.95,rest,True,True,True
+353,30,archive,arrival court,dry_off,0.0,0.0,0.218974,0.202974,0.035,0.672,dry off,True,True,True
+354,30,signal,mast base,path_to_resident,0.226,0.256,0.08,0.08,0.064,0.518,available,False,True,True
+355,30,orchard,mud row,inspect_affordance,0.03,0.06,0.194966,0.178126,0.24,0.832,available,False,True,True
+356,30,repair_ring,bell alcove,interrupt_routine,0.03,0.024,0.205158,0.188822,0.089,0.25,available,False,True,True
+357,30,riverbend,plank hall,path_to_resident,0.048,0.078,0.08,0.08,0.017,0.95,available,False,True,True
+358,30,roofward,glass stair,inspect_affordance,0.03,0.06,0.19631,0.17947,0.0,0.924,available,False,True,True
+359,30,archive,stone stacks,interrupt_routine,0.0,0.0,0.202974,0.186974,0.029,0.646,available,False,True,True
+360,31,signal,mast base,offer_care,0.256,0.286,0.08,0.08,0.058,0.492,available,True,True,True
+361,31,orchard,satchel shed,treat_pain,0.06,0.005,0.178126,0.162056,0.234,0.856,treat pain,True,True,True
+362,31,repair_ring,bell alcove,continue_project,0.024,0.018,0.188822,0.17257,0.083,0.252,available,False,True,True
+363,31,riverbend,wet crossing,offer_care,0.078,0.072,0.08,0.08,0.052,0.95,available,True,True,True
+364,31,roofward,warm lane,treat_pain,0.06,0.005,0.17947,0.1634,0.0,0.948,treat pain,True,True,True
+365,31,archive,stone stacks,continue_project,0.0,0.0,0.186974,0.170974,0.023,0.62,available,False,True,True
+366,31,signal,lantern walk,path_to_rest,0.286,0.28,0.08,0.08,0.052,0.516,available,False,True,True
+367,31,orchard,market plank,perform_chain_step,0.005,0.0,0.162056,0.146056,0.228,0.83,available,False,True,True
+368,31,repair_ring,bell alcove,recover_routine,0.018,0.012,0.17257,0.156402,0.077,0.254,available,False,True,True
+369,31,riverbend,kit alcove,path_to_rest,0.072,0.066,0.08,0.08,0.046,0.95,available,False,True,True
+370,31,roofward,glass stair,perform_chain_step,0.005,0.035,0.1634,0.14691,0.0,0.922,available,False,True,True
+371,31,archive,memory desk,recover_routine,0.0,0.0,0.170974,0.154974,0.017,0.644,available,False,True,True
+372,32,orchard,satchel shed,treat_pain,0.0,0.0,0.146056,0.130056,0.222,0.854,treat pain,True,True,True
+373,32,repair_ring,bell alcove,continue_project,0.012,0.006,0.156402,0.140318,0.071,0.256,available,False,True,True
+374,32,riverbend,kit alcove,offer_care,0.066,0.06,0.08,0.08,0.04,0.95,available,True,True,True
+375,32,roofward,warm lane,treat_pain,0.035,0.0,0.14691,0.13091,0.0,0.946,treat pain,True,True,True
+376,32,archive,stone stacks,continue_project,0.0,0.0,0.154974,0.138974,0.011,0.618,available,False,True,True
+377,32,signal,lantern walk,path_to_rest,0.28,0.274,0.08,0.08,0.046,0.54,available,False,True,True
+378,32,orchard,market plank,perform_chain_step,0.0,0.0,0.130056,0.114056,0.216,0.828,available,False,True,True
+379,32,repair_ring,bell alcove,recover_routine,0.006,0.0,0.140318,0.124318,0.065,0.258,available,False,True,True
+380,32,riverbend,kit alcove,path_to_rest,0.06,0.054,0.08,0.08,0.034,0.95,available,False,True,True
+381,32,roofward,glass stair,perform_chain_step,0.0,0.03,0.13091,0.11449,0.0,0.92,available,False,True,True
+382,32,archive,memory desk,recover_routine,0.0,0.0,0.138974,0.122974,0.005,0.642,available,False,True,True
+383,32,signal,lens room,offer_care,0.274,0.268,0.08,0.08,0.04,0.564,available,True,True,True
+384,33,orchard,market plank,dry_off,0.0,0.0,0.114056,0.098056,0.156,0.802,dry off,True,True,True
+385,33,repair_ring,spark lane,path_to_resident,0.0,0.03,0.124318,0.107898,0.1,0.26,available,False,True,True
+386,33,riverbend,kit alcove,rest,0.054,0.024,0.08,0.135,0.028,0.95,rest,True,True,True
+387,33,roofward,glass stair,dry_off,0.03,0.06,0.11449,0.09765,0.0,0.894,dry off,True,True,True
+388,33,archive,stone stacks,path_to_resident,0.0,0.0,0.122974,0.106974,0.0,0.616,available,False,True,True
+389,33,signal,lens room,inspect_affordance,0.268,0.262,0.08,0.08,0.034,0.566,available,False,True,True
+390,33,orchard,satchel shed,interrupt_routine,0.0,0.0,0.098056,0.082056,0.15,0.826,available,False,True,True
+391,33,repair_ring,wire bench,ask_dialect_memory,0.03,0.024,0.107898,0.091562,0.094,0.262,available,False,True,True
+392,33,riverbend,dry ridge,inspect_affordance,0.024,0.018,0.135,0.118748,0.022,0.95,available,False,True,True
+393,33,roofward,warm lane,interrupt_routine,0.06,0.054,0.09765,0.080894,0.0,0.918,available,False,True,True
+394,33,archive,spool room,ask_dialect_memory,0.0,0.0,0.106974,0.090974,0.0,0.618,available,False,True,True
+395,33,signal,lantern walk,rest,0.262,0.232,0.08,0.135,0.028,0.59,rest,True,True,True
+396,34,orchard,satchel shed,continue_project,0.0,0.0,0.082056,0.08,0.144,0.85,available,False,True,True
+397,34,repair_ring,cool corner,path_to_rest,0.024,0.018,0.091562,0.08,0.088,0.236,available,False,True,True
+398,34,riverbend,kit alcove,treat_pain,0.018,0.0,0.118748,0.102748,0.016,0.95,treat pain,True,True,True
+399,34,roofward,warm lane,continue_project,0.054,0.048,0.080894,0.08,0.0,0.942,available,False,True,True
+400,34,archive,stone stacks,path_to_rest,0.0,0.0,0.090974,0.08,0.0,0.592,available,False,True,True
+401,34,signal,mast base,perform_chain_step,0.232,0.262,0.135,0.115332,0.022,0.564,available,False,True,True
+402,34,orchard,market plank,recover_routine,0.0,0.0,0.08,0.08,0.138,0.824,available,False,True,True
+403,34,repair_ring,wire bench,offer_care,0.018,0.012,0.08,0.08,0.082,0.26,available,True,True,True
+404,34,riverbend,wet crossing,perform_chain_step,0.0,0.0,0.102748,0.086748,0.051,0.95,available,False,True,True
+405,34,roofward,glass stair,recover_routine,0.048,0.078,0.08,0.08,0.0,0.916,available,False,True,True
+406,34,archive,memory desk,offer_care,0.0,0.0,0.08,0.08,0.0,0.616,available,True,True,True
+407,34,signal,lantern walk,treat_pain,0.262,0.207,0.115332,0.096434,0.016,0.588,treat pain,True,True,True
+408,35,orchard,seed lane,path_to_resident,0.0,0.0,0.08,0.08,0.132,0.826,available,False,True,True
+409,35,repair_ring,wire bench,inspect_affordance,0.012,0.006,0.08,0.08,0.076,0.262,available,False,True,True
+410,35,riverbend,wet crossing,dry_off,0.0,0.0,0.086748,0.08,0.086,0.95,dry off,True,True,True
+411,35,roofward,warm lane,path_to_resident,0.078,0.072,0.08,0.08,0.0,0.94,available,False,True,True
+412,35,archive,memory desk,inspect_affordance,0.0,0.0,0.08,0.08,0.0,0.64,available,False,True,True
+413,35,signal,mast base,interrupt_routine,0.207,0.237,0.096434,0.08,0.01,0.562,available,False,True,True
+414,35,orchard,seed lane,ask_dialect_memory,0.0,0.0,0.08,0.08,0.126,0.828,available,False,True,True
+415,35,repair_ring,cool corner,rest,0.006,0.0,0.08,0.135,0.07,0.236,rest,True,True,True
+416,35,riverbend,plank hall,interrupt_routine,0.0,0.03,0.08,0.08,0.08,0.95,available,False,True,True
+417,35,roofward,sun sill,ask_dialect_memory,0.072,0.066,0.08,0.08,0.0,0.942,available,False,True,True
+418,35,archive,memory desk,rest,0.0,0.0,0.08,0.135,0.0,0.664,rest,True,True,True
+419,35,signal,mast base,dry_off,0.237,0.267,0.08,0.08,0.0,0.536,dry off,True,True,True
+420,36,orchard,mud row,path_to_rest,0.0,0.03,0.08,0.08,0.161,0.83,available,False,True,True
+421,36,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.135,0.119,0.064,0.238,available,False,True,True
+422,36,riverbend,dry ridge,continue_project,0.03,0.024,0.08,0.08,0.074,0.95,available,False,True,True
+423,36,roofward,warm lane,path_to_rest,0.066,0.06,0.08,0.08,0.0,0.95,available,False,True,True
+424,36,archive,stone stacks,perform_chain_step,0.0,0.0,0.135,0.119,0.0,0.638,available,False,True,True
+425,36,signal,lantern walk,recover_routine,0.267,0.261,0.08,0.08,0.0,0.56,available,False,True,True
+426,36,orchard,mud row,offer_care,0.03,0.06,0.08,0.08,0.196,0.854,available,True,True,True
+427,36,repair_ring,cool corner,treat_pain,0.0,0.0,0.119,0.103,0.058,0.212,treat pain,True,True,True
+428,36,riverbend,dry ridge,recover_routine,0.024,0.018,0.08,0.08,0.068,0.95,available,False,True,True
+429,36,roofward,glass stair,offer_care,0.06,0.09,0.08,0.08,0.0,0.924,available,True,True,True
+430,36,archive,memory desk,treat_pain,0.0,0.0,0.119,0.103,0.0,0.662,treat pain,True,True,True
+431,36,signal,lantern walk,continue_project,0.261,0.255,0.08,0.08,0.0,0.584,available,False,True,True
+432,37,orchard,mud row,inspect_affordance,0.06,0.09,0.08,0.08,0.231,0.856,available,False,True,True
+433,37,repair_ring,bell alcove,interrupt_routine,0.0,0.0,0.103,0.087,0.052,0.214,available,False,True,True
+434,37,riverbend,plank hall,path_to_resident,0.018,0.048,0.08,0.08,0.062,0.95,available,False,True,True
+435,37,roofward,arrival court,inspect_affordance,0.09,0.084,0.08,0.08,0.035,0.926,available,False,True,True
+436,37,archive,stone stacks,interrupt_routine,0.0,0.0,0.103,0.087,0.0,0.636,available,False,True,True
+437,37,signal,lantern walk,ask_dialect_memory,0.255,0.249,0.08,0.08,0.0,0.608,available,False,True,True
+438,37,orchard,satchel shed,rest,0.09,0.06,0.08,0.135,0.225,0.88,rest,True,True,True
+439,37,repair_ring,cool corner,dry_off,0.0,0.0,0.087,0.08,0.0,0.188,dry off,True,True,True
+440,37,riverbend,arrival court,ask_dialect_memory,0.048,0.042,0.08,0.08,0.056,0.924,available,False,True,True
+441,37,roofward,glass stair,rest,0.084,0.054,0.08,0.135,0.029,0.9,rest,True,True,True
+442,37,archive,spool room,dry_off,0.0,0.0,0.087,0.08,0.0,0.638,dry off,True,True,True
+443,37,signal,mast base,path_to_resident,0.249,0.279,0.08,0.08,0.0,0.582,available,False,True,True
+444,38,orchard,market plank,perform_chain_step,0.06,0.054,0.135,0.118244,0.219,0.854,available,False,True,True
+445,38,repair_ring,wire bench,recover_routine,0.0,0.0,0.08,0.08,0.0,0.19,available,False,True,True
+446,38,riverbend,plank hall,path_to_rest,0.042,0.072,0.08,0.08,0.05,0.926,available,False,True,True
+447,38,roofward,glass stair,perform_chain_step,0.054,0.084,0.135,0.117824,0.023,0.874,available,False,True,True
+448,38,archive,stone stacks,recover_routine,0.0,0.0,0.08,0.08,0.0,0.612,available,False,True,True
+449,38,signal,lantern walk,offer_care,0.279,0.273,0.08,0.08,0.0,0.606,available,True,True,True
+450,38,orchard,satchel shed,treat_pain,0.054,0.0,0.118244,0.102244,0.213,0.878,treat pain,True,True,True
+451,38,repair_ring,arrival court,continue_project,0.0,0.0,0.08,0.08,0.0,0.192,available,False,True,True
+452,38,riverbend,plank hall,offer_care,0.072,0.102,0.08,0.08,0.044,0.95,available,True,True,True
+453,38,roofward,warm lane,treat_pain,0.084,0.029,0.117824,0.101418,0.017,0.898,treat pain,True,True,True
+454,38,archive,spool room,continue_project,0.0,0.0,0.08,0.08,0.0,0.614,available,False,True,True
+455,38,signal,lantern walk,path_to_rest,0.273,0.267,0.08,0.08,0.0,0.63,available,False,True,True
+456,39,orchard,satchel shed,interrupt_routine,0.0,0.0,0.102244,0.086244,0.207,0.902,available,False,True,True
+457,39,repair_ring,arrival court,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.194,available,False,True,True
+458,39,riverbend,plank hall,inspect_affordance,0.102,0.132,0.08,0.08,0.038,0.95,available,False,True,True
+459,39,roofward,warm lane,interrupt_routine,0.029,0.023,0.101418,0.085096,0.011,0.922,available,False,True,True
+460,39,archive,ink niche,ask_dialect_memory,0.0,0.03,0.08,0.08,0.0,0.616,available,False,True,True
+461,39,signal,lantern walk,rest,0.267,0.237,0.08,0.135,0.0,0.654,rest,True,True,True
+462,39,orchard,market plank,dry_off,0.0,0.0,0.086244,0.08,0.147,0.876,dry off,True,True,True
+463,39,repair_ring,wire bench,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.196,available,False,True,True
+464,39,riverbend,wet crossing,rest,0.132,0.102,0.08,0.135,0.073,0.95,rest,True,True,True
+465,39,roofward,ledger loft,dry_off,0.023,0.017,0.085096,0.08,0.0,0.924,dry off,True,True,True
+466,39,archive,memory desk,path_to_resident,0.03,0.024,0.08,0.08,0.0,0.64,available,False,True,True
+467,39,signal,mast base,inspect_affordance,0.237,0.267,0.135,0.115262,0.0,0.628,available,False,True,True
+468,40,repair_ring,arrival court,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.198,available,False,True,True
+469,40,riverbend,plank hall,inspect_affordance,0.102,0.132,0.135,0.117152,0.067,0.95,available,False,True,True
+470,40,roofward,warm lane,interrupt_routine,0.017,0.011,0.08,0.08,0.0,0.948,available,False,True,True
+471,40,archive,ink niche,ask_dialect_memory,0.024,0.054,0.08,0.08,0.0,0.642,available,False,True,True
+472,40,signal,lantern walk,rest,0.267,0.237,0.115262,0.170262,0.0,0.652,rest,True,True,True
+473,40,orchard,seed lane,dry_off,0.0,0.0,0.08,0.08,0.087,0.878,dry off,True,True,True
+474,40,repair_ring,wire bench,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.2,available,False,True,True
+475,40,riverbend,wet crossing,rest,0.132,0.102,0.117152,0.172152,0.102,0.95,rest,True,True,True
+476,40,roofward,ledger loft,dry_off,0.011,0.005,0.08,0.08,0.0,0.95,dry off,True,True,True
+477,40,archive,memory desk,path_to_resident,0.054,0.048,0.08,0.08,0.0,0.666,available,False,True,True
+478,40,signal,mast base,inspect_affordance,0.237,0.267,0.170262,0.150524,0.0,0.626,available,False,True,True
+479,40,orchard,seed lane,interrupt_routine,0.0,0.0,0.08,0.08,0.081,0.88,available,False,True,True
+480,41,repair_ring,wire bench,offer_care,0.0,0.0,0.08,0.08,0.0,0.224,available,True,True,True
+481,41,riverbend,wet crossing,perform_chain_step,0.102,0.096,0.172152,0.154808,0.137,0.95,available,False,True,True
+482,41,roofward,ledger loft,recover_routine,0.005,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+483,41,archive,memory desk,offer_care,0.048,0.042,0.08,0.08,0.0,0.69,available,True,True,True
+484,41,signal,lantern walk,treat_pain,0.267,0.212,0.150524,0.131556,0.0,0.65,treat pain,True,True,True
+485,41,orchard,seed lane,continue_project,0.0,0.0,0.08,0.08,0.075,0.882,available,False,True,True
+486,41,repair_ring,cool corner,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.198,available,False,True,True
+487,41,riverbend,kit alcove,treat_pain,0.096,0.041,0.154808,0.138234,0.131,0.95,treat pain,True,True,True
+488,41,roofward,sun sill,continue_project,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+489,41,archive,memory desk,path_to_rest,0.042,0.036,0.08,0.08,0.0,0.714,available,False,True,True
+490,41,signal,mast base,perform_chain_step,0.212,0.242,0.131556,0.112168,0.0,0.624,available,False,True,True
+491,41,orchard,arrival court,recover_routine,0.0,0.0,0.08,0.08,0.069,0.884,available,False,True,True
+492,42,repair_ring,cool corner,rest,0.0,0.0,0.08,0.135,0.0,0.172,rest,True,True,True
+493,42,riverbend,dry ridge,interrupt_routine,0.041,0.035,0.138234,0.121744,0.125,0.95,available,False,True,True
+494,42,roofward,sun sill,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+495,42,archive,memory desk,rest,0.036,0.006,0.08,0.135,0.0,0.738,rest,True,True,True
+496,42,signal,mast base,dry_off,0.242,0.272,0.112168,0.09236,0.0,0.598,dry off,True,True,True
+497,42,orchard,seed lane,path_to_resident,0.0,0.0,0.08,0.08,0.063,0.886,available,False,True,True
+498,42,repair_ring,bell alcove,inspect_affordance,0.0,0.0,0.135,0.119,0.0,0.174,available,False,True,True
+499,42,riverbend,kit alcove,dry_off,0.035,0.029,0.121744,0.105338,0.065,0.95,dry off,True,True,True
+500,42,roofward,warm lane,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+501,42,archive,stone stacks,inspect_affordance,0.006,0.0,0.135,0.119,0.0,0.712,available,False,True,True
+502,42,signal,lantern walk,interrupt_routine,0.272,0.266,0.09236,0.08,0.0,0.622,available,False,True,True
+503,42,orchard,market plank,ask_dialect_memory,0.0,0.0,0.08,0.08,0.057,0.86,available,False,True,True
+504,43,repair_ring,cool corner,treat_pain,0.0,0.0,0.119,0.103,0.0,0.148,treat pain,True,True,True
+505,43,riverbend,dry ridge,recover_routine,0.029,0.023,0.105338,0.089016,0.059,0.95,available,False,True,True
+506,43,roofward,glass stair,offer_care,0.0,0.03,0.08,0.08,0.0,0.924,available,True,True,True
+507,43,archive,memory desk,treat_pain,0.0,0.0,0.119,0.103,0.0,0.736,treat pain,True,True,True
+508,43,signal,lantern walk,continue_project,0.266,0.26,0.08,0.08,0.0,0.646,available,False,True,True
+509,43,orchard,satchel shed,path_to_rest,0.0,0.0,0.08,0.08,0.051,0.884,available,False,True,True
+510,43,repair_ring,cool corner,perform_chain_step,0.0,0.0,0.103,0.087,0.0,0.122,available,False,True,True
+511,43,riverbend,plank hall,continue_project,0.023,0.053,0.089016,0.08,0.053,0.95,available,False,True,True
+512,43,roofward,warm lane,path_to_rest,0.03,0.024,0.08,0.08,0.0,0.948,available,False,True,True
+513,43,archive,ink niche,perform_chain_step,0.0,0.03,0.103,0.08658,0.0,0.738,available,False,True,True
+514,43,signal,mast base,recover_routine,0.26,0.29,0.08,0.08,0.0,0.62,available,False,True,True
+515,43,orchard,satchel shed,offer_care,0.0,0.0,0.08,0.08,0.045,0.908,available,True,True,True
+516,44,repair_ring,cool corner,dry_off,0.0,0.0,0.087,0.08,0.0,0.096,dry off,True,True,True
+517,44,riverbend,arrival court,ask_dialect_memory,0.053,0.047,0.08,0.08,0.047,0.924,available,False,True,True
+518,44,roofward,warm lane,rest,0.024,0.0,0.08,0.135,0.0,0.95,rest,True,True,True
+519,44,archive,spool room,dry_off,0.03,0.024,0.08658,0.08,0.0,0.74,dry off,True,True,True
+520,44,signal,lantern walk,path_to_resident,0.29,0.284,0.08,0.08,0.0,0.644,available,False,True,True
+521,44,orchard,satchel shed,inspect_affordance,0.0,0.0,0.08,0.08,0.039,0.932,available,False,True,True
+522,44,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.098,available,False,True,True
+523,44,riverbend,plank hall,path_to_resident,0.047,0.077,0.08,0.08,0.041,0.926,available,False,True,True
+524,44,roofward,warm lane,inspect_affordance,0.0,0.0,0.135,0.119,0.0,0.95,available,False,True,True
+525,44,archive,ink niche,interrupt_routine,0.024,0.054,0.08,0.08,0.0,0.742,available,False,True,True
+526,44,signal,mast base,ask_dialect_memory,0.284,0.314,0.08,0.08,0.0,0.618,available,False,True,True
+527,44,orchard,satchel shed,rest,0.0,0.0,0.08,0.135,0.033,0.95,rest,True,True,True
+528,45,repair_ring,arrival court,continue_project,0.0,0.0,0.08,0.08,0.0,0.1,available,False,True,True
+529,45,riverbend,plank hall,offer_care,0.077,0.107,0.08,0.08,0.035,0.95,available,True,True,True
+530,45,roofward,warm lane,treat_pain,0.0,0.0,0.119,0.103,0.0,0.95,treat pain,True,True,True
+531,45,archive,ink niche,continue_project,0.054,0.084,0.08,0.08,0.0,0.744,available,False,True,True
+532,45,signal,lantern walk,path_to_rest,0.314,0.308,0.08,0.08,0.0,0.642,available,False,True,True
+533,45,orchard,market plank,perform_chain_step,0.0,0.0,0.135,0.119,0.027,0.924,available,False,True,True
+534,45,repair_ring,wire bench,recover_routine,0.0,0.0,0.08,0.08,0.0,0.102,available,False,True,True
+535,45,riverbend,wet crossing,path_to_rest,0.107,0.101,0.08,0.08,0.07,0.95,available,False,True,True
+536,45,roofward,ledger loft,perform_chain_step,0.0,0.0,0.103,0.087,0.0,0.95,available,False,True,True
+537,45,archive,memory desk,recover_routine,0.084,0.078,0.08,0.08,0.0,0.768,available,False,True,True
+538,45,signal,mast base,offer_care,0.308,0.338,0.08,0.08,0.0,0.616,available,True,True,True
+539,45,orchard,satchel shed,treat_pain,0.0,0.0,0.119,0.103,0.021,0.948,treat pain,True,True,True
+540,46,repair_ring,wire bench,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.104,available,False,True,True
+541,46,riverbend,kit alcove,rest,0.101,0.071,0.08,0.135,0.064,0.95,rest,True,True,True
+542,46,roofward,ledger loft,dry_off,0.0,0.0,0.087,0.08,0.0,0.95,dry off,True,True,True
+543,46,archive,stone stacks,path_to_resident,0.078,0.072,0.08,0.08,0.0,0.742,available,False,True,True
+544,46,signal,arrival court,inspect_affordance,0.338,0.332,0.08,0.08,0.035,0.618,available,False,True,True
+545,46,orchard,market plank,interrupt_routine,0.0,0.0,0.103,0.087,0.015,0.922,available,False,True,True
+546,46,repair_ring,spark lane,ask_dialect_memory,0.0,0.03,0.08,0.08,0.035,0.106,available,False,True,True
+547,46,riverbend,dry ridge,inspect_affordance,0.071,0.065,0.135,0.11809,0.058,0.95,available,False,True,True
+548,46,roofward,sun sill,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+549,46,archive,arrival court,ask_dialect_memory,0.072,0.066,0.08,0.08,0.035,0.744,available,False,True,True
+550,46,signal,mast base,rest,0.332,0.302,0.08,0.135,0.029,0.592,rest,True,True,True
+551,46,orchard,seed lane,dry_off,0.0,0.0,0.087,0.08,0.0,0.924,dry off,True,True,True
+552,47,repair_ring,wire bench,path_to_rest,0.03,0.024,0.08,0.08,0.029,0.108,available,False,True,True
+553,47,riverbend,kit alcove,treat_pain,0.065,0.01,0.11809,0.10195,0.052,0.95,treat pain,True,True,True
+554,47,roofward,sun sill,continue_project,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+555,47,archive,stone stacks,path_to_rest,0.066,0.06,0.08,0.08,0.029,0.718,available,False,True,True
+556,47,signal,mast base,perform_chain_step,0.302,0.332,0.135,0.114352,0.023,0.566,available,False,True,True
+557,47,orchard,mud row,recover_routine,0.0,0.03,0.08,0.08,0.035,0.926,available,False,True,True
+558,47,repair_ring,spark lane,offer_care,0.024,0.054,0.08,0.08,0.064,0.132,available,True,True,True
+559,47,riverbend,kit alcove,perform_chain_step,0.01,0.004,0.10195,0.085894,0.046,0.95,available,False,True,True
+560,47,roofward,warm lane,recover_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+561,47,archive,stone stacks,offer_care,0.06,0.054,0.08,0.08,0.023,0.692,available,True,True,True
+562,47,signal,lantern walk,treat_pain,0.332,0.277,0.114352,0.094474,0.017,0.59,treat pain,True,True,True
+563,47,orchard,seed lane,continue_project,0.03,0.024,0.08,0.08,0.029,0.928,available,False,True,True
+564,48,riverbend,kit alcove,treat_pain,0.004,0.0,0.085894,0.08,0.04,0.95,treat pain,True,True,True
+565,48,roofward,sun sill,continue_project,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+566,48,archive,memory desk,path_to_rest,0.054,0.048,0.08,0.08,0.017,0.716,available,False,True,True
+567,48,signal,mast base,perform_chain_step,0.277,0.307,0.094474,0.08,0.011,0.564,available,False,True,True
+568,48,orchard,mud row,recover_routine,0.024,0.054,0.08,0.08,0.064,0.93,available,False,True,True
+569,48,repair_ring,bell alcove,offer_care,0.054,0.048,0.08,0.08,0.058,0.156,available,True,True,True
+570,48,riverbend,kit alcove,perform_chain_step,0.0,0.0,0.08,0.08,0.034,0.95,available,False,True,True
+571,48,roofward,warm lane,recover_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+572,48,archive,stone stacks,offer_care,0.048,0.042,0.08,0.08,0.011,0.69,available,True,True,True
+573,48,signal,lantern walk,treat_pain,0.307,0.252,0.08,0.08,0.005,0.588,treat pain,True,True,True
+574,48,orchard,seed lane,continue_project,0.054,0.048,0.08,0.08,0.058,0.932,available,False,True,True
+575,48,repair_ring,cool corner,path_to_rest,0.048,0.042,0.08,0.08,0.052,0.13,available,False,True,True
+576,49,riverbend,kit alcove,dry_off,0.0,0.0,0.08,0.08,0.0,0.95,dry off,True,True,True
+577,49,roofward,ledger loft,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+578,49,archive,stone stacks,inspect_affordance,0.042,0.036,0.08,0.08,0.005,0.664,available,False,True,True
+579,49,signal,lantern walk,interrupt_routine,0.252,0.246,0.08,0.08,0.0,0.612,available,False,True,True
+580,49,orchard,market plank,ask_dialect_memory,0.048,0.042,0.08,0.08,0.052,0.906,available,False,True,True
+581,49,repair_ring,cool corner,rest,0.042,0.012,0.08,0.135,0.046,0.104,rest,True,True,True
+582,49,riverbend,dry ridge,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+583,49,roofward,warm lane,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+584,49,archive,memory desk,rest,0.036,0.006,0.08,0.135,0.0,0.688,rest,True,True,True
+585,49,signal,lens room,dry_off,0.246,0.24,0.08,0.08,0.0,0.614,dry off,True,True,True
+586,49,orchard,seed lane,path_to_resident,0.042,0.036,0.08,0.08,0.046,0.908,available,False,True,True
+587,49,repair_ring,wire bench,inspect_affordance,0.012,0.006,0.135,0.118916,0.04,0.106,available,False,True,True
+588,50,riverbend,plank hall,continue_project,0.0,0.03,0.08,0.08,0.0,0.95,available,False,True,True
+589,50,roofward,warm lane,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+590,50,archive,ink niche,perform_chain_step,0.006,0.036,0.135,0.118496,0.0,0.69,available,False,True,True
+591,50,signal,lantern walk,recover_routine,0.24,0.234,0.08,0.08,0.0,0.638,available,False,True,True
+592,50,orchard,mud row,offer_care,0.036,0.066,0.08,0.08,0.081,0.932,available,True,True,True
+593,50,repair_ring,cool corner,treat_pain,0.006,0.0,0.118916,0.102916,0.034,0.08,treat pain,True,True,True
+594,50,riverbend,dry ridge,recover_routine,0.03,0.024,0.08,0.08,0.0,0.95,available,False,True,True
+595,50,roofward,warm lane,offer_care,0.0,0.0,0.08,0.08,0.0,0.95,available,True,True,True
+596,50,archive,memory desk,treat_pain,0.036,0.0,0.118496,0.102496,0.0,0.714,treat pain,True,True,True
+597,50,signal,mast base,continue_project,0.234,0.264,0.08,0.08,0.0,0.612,available,False,True,True
+598,50,orchard,satchel shed,path_to_rest,0.066,0.06,0.08,0.08,0.075,0.95,available,False,True,True
+599,50,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.102916,0.086916,0.028,0.082,available,False,True,True
+600,51,riverbend,plank hall,path_to_resident,0.024,0.054,0.08,0.08,0.0,0.95,available,False,True,True
+601,51,roofward,warm lane,inspect_affordance,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+602,51,archive,ink niche,interrupt_routine,0.0,0.03,0.102496,0.086076,0.0,0.716,available,False,True,True
+603,51,signal,signal perch,ask_dialect_memory,0.264,0.258,0.08,0.08,0.0,0.614,available,False,True,True
+604,51,orchard,satchel shed,rest,0.06,0.03,0.08,0.135,0.069,0.95,rest,True,True,True
+605,51,repair_ring,wire bench,dry_off,0.0,0.0,0.086916,0.08,0.0,0.084,dry off,True,True,True
+606,51,riverbend,wet crossing,ask_dialect_memory,0.054,0.048,0.08,0.08,0.035,0.95,available,False,True,True
+607,51,roofward,warm lane,rest,0.0,0.0,0.08,0.135,0.0,0.95,rest,True,True,True
+608,51,archive,memory desk,dry_off,0.03,0.024,0.086076,0.08,0.0,0.74,dry off,True,True,True
+609,51,signal,mast base,path_to_resident,0.258,0.288,0.08,0.08,0.0,0.588,available,False,True,True
+610,51,orchard,market plank,inspect_affordance,0.03,0.024,0.135,0.118664,0.063,0.924,available,False,True,True
+611,51,repair_ring,spark lane,interrupt_routine,0.0,0.03,0.08,0.08,0.035,0.086,available,False,True,True
+612,52,riverbend,kit alcove,path_to_rest,0.048,0.042,0.08,0.08,0.029,0.95,available,False,True,True
+613,52,roofward,ledger loft,perform_chain_step,0.0,0.0,0.135,0.119,0.0,0.95,available,False,True,True
+614,52,archive,ink niche,recover_routine,0.024,0.054,0.08,0.08,0.0,0.742,available,False,True,True
+615,52,signal,arrival court,offer_care,0.288,0.282,0.08,0.08,0.035,0.612,available,True,True,True
+616,52,orchard,satchel shed,treat_pain,0.024,0.0,0.118664,0.102664,0.057,0.948,treat pain,True,True,True
+617,52,repair_ring,spark lane,continue_project,0.03,0.06,0.08,0.08,0.07,0.088,available,False,True,True
+618,52,riverbend,dry ridge,offer_care,0.042,0.036,0.08,0.08,0.023,0.95,available,True,True,True
+619,52,roofward,warm lane,treat_pain,0.0,0.0,0.119,0.103,0.0,0.95,treat pain,True,True,True
+620,52,archive,spool room,continue_project,0.054,0.048,0.08,0.08,0.0,0.744,available,False,True,True
+621,52,signal,mast base,path_to_rest,0.282,0.312,0.08,0.08,0.029,0.586,available,False,True,True
+622,52,orchard,mud row,perform_chain_step,0.0,0.03,0.102664,0.086244,0.092,0.95,available,False,True,True
+623,52,repair_ring,wire bench,recover_routine,0.06,0.054,0.08,0.08,0.064,0.09,available,False,True,True
+624,53,riverbend,dry ridge,inspect_affordance,0.036,0.03,0.08,0.08,0.017,0.95,available,False,True,True
+625,53,roofward,sun sill,interrupt_routine,0.0,0.0,0.103,0.087,0.0,0.95,available,False,True,True
+626,53,archive,stone stacks,ask_dialect_memory,0.048,0.042,0.08,0.08,0.0,0.718,available,False,True,True
+627,53,signal,lantern walk,rest,0.312,0.282,0.08,0.135,0.023,0.61,rest,True,True,True
+628,53,orchard,mud row,dry_off,0.03,0.06,0.086244,0.08,0.127,0.95,dry off,True,True,True
+629,53,repair_ring,spark lane,path_to_resident,0.054,0.084,0.08,0.08,0.099,0.092,available,False,True,True
+630,53,riverbend,kit alcove,rest,0.03,0.0,0.08,0.135,0.011,0.95,rest,True,True,True
+631,53,roofward,warm lane,dry_off,0.0,0.0,0.087,0.08,0.0,0.95,dry off,True,True,True
+632,53,archive,spool room,path_to_resident,0.042,0.036,0.08,0.08,0.0,0.72,available,False,True,True
+633,53,signal,lantern walk,inspect_affordance,0.282,0.276,0.135,0.115136,0.017,0.634,available,False,True,True
+634,53,orchard,seed lane,interrupt_routine,0.06,0.054,0.08,0.08,0.121,0.95,available,False,True,True
+635,53,repair_ring,wire bench,ask_dialect_memory,0.084,0.078,0.08,0.08,0.093,0.094,available,False,True,True
+636,54,riverbend,kit alcove,perform_chain_step,0.0,0.0,0.135,0.119,0.005,0.95,available,False,True,True
+637,54,roofward,ledger loft,recover_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+638,54,archive,stone stacks,offer_care,0.036,0.03,0.08,0.08,0.0,0.694,available,True,True,True
+639,54,signal,lantern walk,treat_pain,0.276,0.221,0.115136,0.096042,0.011,0.658,treat pain,True,True,True
+640,54,orchard,market plank,continue_project,0.054,0.048,0.08,0.08,0.115,0.924,available,False,True,True
+641,54,repair_ring,cool corner,path_to_rest,0.078,0.072,0.08,0.08,0.087,0.068,available,False,True,True
+642,54,riverbend,kit alcove,treat_pain,0.0,0.0,0.119,0.103,0.0,0.95,treat pain,True,True,True
+643,54,roofward,warm lane,continue_project,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+644,54,archive,memory desk,path_to_rest,0.03,0.024,0.08,0.08,0.0,0.718,available,False,True,True
+645,54,signal,lens room,perform_chain_step,0.221,0.215,0.096042,0.08,0.005,0.66,available,False,True,True
+646,54,orchard,seed lane,recover_routine,0.048,0.042,0.08,0.08,0.109,0.926,available,False,True,True
+647,54,repair_ring,wire bench,offer_care,0.072,0.066,0.08,0.08,0.081,0.092,available,True,True,True
+648,55,riverbend,dry ridge,interrupt_routine,0.0,0.0,0.103,0.087,0.0,0.95,available,False,True,True
+649,55,roofward,glass stair,ask_dialect_memory,0.0,0.03,0.08,0.08,0.0,0.924,available,False,True,True
+650,55,archive,memory desk,rest,0.024,0.0,0.08,0.135,0.0,0.742,rest,True,True,True
+651,55,signal,lens room,dry_off,0.215,0.209,0.08,0.08,0.0,0.662,dry off,True,True,True
+652,55,orchard,mud row,path_to_resident,0.042,0.072,0.08,0.08,0.144,0.928,available,False,True,True
+653,55,repair_ring,arrival court,inspect_affordance,0.066,0.06,0.08,0.08,0.075,0.094,available,False,True,True
+654,55,riverbend,plank hall,dry_off,0.0,0.03,0.087,0.08,0.0,0.95,dry off,True,True,True
+655,55,roofward,glass stair,path_to_resident,0.03,0.06,0.08,0.08,0.0,0.898,available,False,True,True
+656,55,archive,ink niche,inspect_affordance,0.0,0.03,0.135,0.11858,0.0,0.744,available,False,True,True
+657,55,signal,signal perch,interrupt_routine,0.209,0.203,0.08,0.08,0.0,0.664,available,False,True,True
+658,55,orchard,seed lane,ask_dialect_memory,0.072,0.066,0.08,0.08,0.138,0.93,available,False,True,True
+659,55,repair_ring,wire bench,rest,0.06,0.03,0.08,0.135,0.069,0.118,rest,True,True,True
+660,56,roofward,glass stair,ask_dialect_memory,0.06,0.09,0.08,0.08,0.0,0.872,available,False,True,True
+661,56,archive,memory desk,rest,0.03,0.0,0.11858,0.17358,0.0,0.768,rest,True,True,True
+662,56,signal,lens room,dry_off,0.203,0.197,0.08,0.08,0.0,0.666,dry off,True,True,True
+663,56,orchard,mud row,path_to_resident,0.066,0.096,0.08,0.08,0.173,0.932,available,False,True,True
+664,56,repair_ring,arrival court,inspect_affordance,0.03,0.024,0.135,0.118664,0.063,0.12,available,False,True,True
+665,56,riverbend,plank hall,dry_off,0.03,0.06,0.08,0.08,0.0,0.95,dry off,True,True,True
+666,56,roofward,glass stair,path_to_resident,0.09,0.12,0.08,0.08,0.0,0.846,available,False,True,True
+667,56,archive,ink niche,inspect_affordance,0.0,0.03,0.17358,0.15716,0.0,0.77,available,False,True,True
+668,56,signal,signal perch,interrupt_routine,0.197,0.191,0.08,0.08,0.0,0.668,available,False,True,True
+669,56,orchard,seed lane,ask_dialect_memory,0.096,0.09,0.08,0.08,0.167,0.934,available,False,True,True
+670,56,repair_ring,wire bench,rest,0.024,0.0,0.118664,0.173664,0.057,0.144,rest,True,True,True
+671,56,riverbend,wet crossing,interrupt_routine,0.06,0.054,0.08,0.08,0.035,0.95,available,False,True,True
+672,57,roofward,warm lane,offer_care,0.12,0.114,0.08,0.08,0.0,0.87,available,True,True,True
+673,57,archive,memory desk,treat_pain,0.03,0.0,0.15716,0.14116,0.0,0.794,treat pain,True,True,True
+674,57,signal,signal perch,continue_project,0.191,0.185,0.08,0.08,0.0,0.67,available,False,True,True
+675,57,orchard,mud row,path_to_rest,0.09,0.12,0.08,0.08,0.202,0.936,available,False,True,True
+676,57,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.173664,0.157664,0.051,0.146,available,False,True,True
+677,57,riverbend,wet crossing,continue_project,0.054,0.048,0.08,0.08,0.07,0.95,available,False,True,True
+678,57,roofward,warm lane,path_to_rest,0.114,0.108,0.08,0.08,0.0,0.894,available,False,True,True
+679,57,archive,memory desk,perform_chain_step,0.0,0.0,0.14116,0.12516,0.0,0.818,available,False,True,True
+680,57,signal,lens room,recover_routine,0.185,0.179,0.08,0.08,0.0,0.672,available,False,True,True
+681,57,orchard,seed lane,offer_care,0.12,0.114,0.08,0.08,0.196,0.95,available,True,True,True
+682,57,repair_ring,cool corner,treat_pain,0.0,0.0,0.157664,0.141664,0.045,0.12,treat pain,True,True,True
+683,57,riverbend,plank hall,recover_routine,0.048,0.078,0.08,0.08,0.064,0.95,available,False,True,True
+684,58,roofward,warm lane,rest,0.108,0.078,0.08,0.135,0.0,0.918,rest,True,True,True
+685,58,archive,memory desk,dry_off,0.0,0.0,0.12516,0.10916,0.0,0.842,dry off,True,True,True
+686,58,signal,lantern walk,path_to_resident,0.179,0.173,0.08,0.08,0.0,0.696,available,False,True,True
+687,58,orchard,seed lane,inspect_affordance,0.114,0.108,0.08,0.08,0.19,0.95,available,False,True,True
+688,58,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.141664,0.125664,0.039,0.122,available,False,True,True
+689,58,riverbend,wet crossing,path_to_resident,0.078,0.072,0.08,0.08,0.099,0.95,available,False,True,True
+690,58,roofward,sun sill,inspect_affordance,0.078,0.072,0.135,0.117992,0.0,0.92,available,False,True,True
+691,58,archive,stone stacks,interrupt_routine,0.0,0.0,0.10916,0.09316,0.0,0.816,available,False,True,True
+692,58,signal,mast base,ask_dialect_memory,0.173,0.203,0.08,0.08,0.0,0.67,available,False,True,True
+693,58,orchard,mud row,rest,0.108,0.078,0.08,0.135,0.225,0.95,rest,True,True,True
+694,58,repair_ring,spark lane,dry_off,0.0,0.03,0.125664,0.109244,0.074,0.124,dry off,True,True,True
+695,58,riverbend,kit alcove,ask_dialect_memory,0.072,0.066,0.08,0.08,0.093,0.95,available,False,True,True
+696,59,roofward,warm lane,treat_pain,0.072,0.017,0.117992,0.101754,0.0,0.944,treat pain,True,True,True
+697,59,archive,arrival court,continue_project,0.0,0.0,0.09316,0.08,0.035,0.818,available,False,True,True
+698,59,signal,lantern walk,path_to_rest,0.203,0.197,0.08,0.08,0.0,0.694,available,False,True,True
+699,59,orchard,mud row,perform_chain_step,0.078,0.108,0.135,0.117488,0.26,0.95,available,False,True,True
+700,59,repair_ring,spark lane,recover_routine,0.03,0.06,0.109244,0.092404,0.109,0.126,available,False,True,True
+701,59,riverbend,kit alcove,path_to_rest,0.066,0.06,0.08,0.08,0.087,0.95,available,False,True,True
+702,59,roofward,glass stair,perform_chain_step,0.017,0.047,0.101754,0.085096,0.0,0.918,available,False,True,True
+703,59,archive,stone stacks,recover_routine,0.0,0.0,0.08,0.08,0.029,0.792,available,False,True,True
+704,59,signal,lantern walk,offer_care,0.197,0.191,0.08,0.08,0.0,0.718,available,True,True,True
+705,59,orchard,satchel shed,treat_pain,0.108,0.053,0.117488,0.100746,0.254,0.95,treat pain,True,True,True
+706,59,repair_ring,wire bench,continue_project,0.06,0.054,0.092404,0.08,0.103,0.128,available,False,True,True
+707,59,riverbend,dry ridge,offer_care,0.06,0.054,0.08,0.08,0.081,0.95,available,True,True,True
+708,60,roofward,arrival court,dry_off,0.047,0.041,0.085096,0.08,0.035,0.92,dry off,True,True,True
+709,60,archive,spool room,path_to_resident,0.0,0.0,0.08,0.08,0.023,0.794,available,False,True,True
+710,60,signal,lantern walk,inspect_affordance,0.191,0.185,0.08,0.08,0.0,0.742,available,False,True,True
+711,60,orchard,market plank,interrupt_routine,0.053,0.047,0.100746,0.084088,0.248,0.924,available,False,True,True
+712,60,repair_ring,cool corner,ask_dialect_memory,0.054,0.048,0.08,0.08,0.097,0.102,available,False,True,True
+713,60,riverbend,plank hall,inspect_affordance,0.054,0.084,0.08,0.08,0.075,0.95,available,False,True,True
+714,60,roofward,glass stair,interrupt_routine,0.041,0.071,0.08,0.08,0.029,0.894,available,False,True,True
+715,60,archive,spool room,ask_dialect_memory,0.0,0.0,0.08,0.08,0.017,0.796,available,False,True,True
+716,60,signal,lantern walk,rest,0.185,0.155,0.08,0.135,0.0,0.766,rest,True,True,True
+717,60,orchard,satchel shed,dry_off,0.047,0.041,0.084088,0.08,0.188,0.948,dry off,True,True,True
+718,60,repair_ring,cool corner,path_to_resident,0.048,0.042,0.08,0.08,0.091,0.076,available,False,True,True
+719,60,riverbend,wet crossing,rest,0.084,0.054,0.08,0.135,0.11,0.95,rest,True,True,True
+720,61,roofward,glass stair,continue_project,0.071,0.101,0.08,0.08,0.023,0.868,available,False,True,True
+721,61,archive,stone stacks,path_to_rest,0.0,0.0,0.08,0.08,0.011,0.77,available,False,True,True
+722,61,signal,lens room,perform_chain_step,0.155,0.149,0.135,0.116914,0.0,0.768,available,False,True,True
+723,61,orchard,satchel shed,recover_routine,0.041,0.035,0.08,0.08,0.182,0.95,available,False,True,True
+724,61,repair_ring,wire bench,offer_care,0.042,0.036,0.08,0.08,0.085,0.1,available,True,True,True
+725,61,riverbend,plank hall,perform_chain_step,0.054,0.084,0.135,0.117824,0.104,0.95,available,False,True,True
+726,61,roofward,glass stair,recover_routine,0.101,0.131,0.08,0.08,0.017,0.842,available,False,True,True
+727,61,archive,spool room,offer_care,0.0,0.0,0.08,0.08,0.005,0.794,available,True,True,True
+728,61,signal,lantern walk,treat_pain,0.149,0.094,0.116914,0.099598,0.0,0.792,treat pain,True,True,True
+729,61,orchard,market plank,continue_project,0.035,0.029,0.08,0.08,0.176,0.924,available,False,True,True
+730,61,repair_ring,cool corner,path_to_rest,0.036,0.03,0.08,0.08,0.079,0.074,available,False,True,True
+731,61,riverbend,wet crossing,treat_pain,0.084,0.029,0.117824,0.101418,0.139,0.95,treat pain,True,True,True
+732,62,roofward,warm lane,path_to_resident,0.131,0.125,0.08,0.08,0.011,0.866,available,False,True,True
+733,62,archive,ink niche,inspect_affordance,0.0,0.03,0.08,0.08,0.0,0.796,available,False,True,True
+734,62,signal,mast base,interrupt_routine,0.094,0.124,0.099598,0.081862,0.0,0.766,available,False,True,True
+735,62,orchard,seed lane,ask_dialect_memory,0.029,0.023,0.08,0.08,0.17,0.926,available,False,True,True
+736,62,repair_ring,cool corner,rest,0.03,0.0,0.08,0.135,0.073,0.05,rest,True,True,True
+737,62,riverbend,wet crossing,interrupt_routine,0.029,0.023,0.101418,0.085096,0.174,0.95,available,False,True,True
+738,62,roofward,ledger loft,ask_dialect_memory,0.125,0.119,0.08,0.08,0.005,0.868,available,False,True,True
+739,62,archive,memory desk,rest,0.03,0.0,0.08,0.135,0.0,0.82,rest,True,True,True
+740,62,signal,arrival court,dry_off,0.124,0.118,0.081862,0.08,0.035,0.768,dry off,True,True,True
+741,62,orchard,arrival court,path_to_resident,0.023,0.017,0.08,0.08,0.164,0.928,available,False,True,True
+742,62,repair_ring,wire bench,inspect_affordance,0.0,0.0,0.135,0.119,0.067,0.052,available,False,True,True
+743,62,riverbend,plank hall,dry_off,0.023,0.053,0.085096,0.08,0.114,0.95,dry off,True,True,True
+744,63,roofward,warm lane,path_to_rest,0.119,0.113,0.08,0.08,0.0,0.892,available,False,True,True
+745,63,archive,memory desk,perform_chain_step,0.0,0.0,0.135,0.119,0.0,0.844,available,False,True,True
+746,63,signal,mast base,recover_routine,0.118,0.148,0.08,0.08,0.029,0.742,available,False,True,True
+747,63,orchard,seed lane,offer_care,0.017,0.011,0.08,0.08,0.158,0.95,available,True,True,True
+748,63,repair_ring,cool corner,treat_pain,0.0,0.0,0.119,0.103,0.061,0.05,treat pain,True,True,True
+749,63,riverbend,wet crossing,recover_routine,0.053,0.047,0.08,0.08,0.149,0.95,available,False,True,True
+750,63,roofward,sun sill,offer_care,0.113,0.107,0.08,0.08,0.0,0.916,available,True,True,True
+751,63,archive,memory desk,treat_pain,0.0,0.0,0.119,0.103,0.0,0.868,treat pain,True,True,True
+752,63,signal,mast base,continue_project,0.148,0.178,0.08,0.08,0.023,0.716,available,False,True,True
+753,63,orchard,mud row,path_to_rest,0.011,0.041,0.08,0.08,0.193,0.95,available,False,True,True
+754,63,repair_ring,bell alcove,perform_chain_step,0.0,0.0,0.103,0.087,0.055,0.052,available,False,True,True
+755,63,riverbend,kit alcove,continue_project,0.047,0.041,0.08,0.08,0.143,0.95,available,False,True,True
+756,64,archive,memory desk,perform_chain_step,0.0,0.0,0.103,0.087,0.0,0.892,available,False,True,True
+757,64,signal,mast base,recover_routine,0.178,0.208,0.08,0.08,0.017,0.69,available,False,True,True
+758,64,orchard,seed lane,offer_care,0.041,0.035,0.08,0.08,0.187,0.95,available,True,True,True
+759,64,repair_ring,cool corner,treat_pain,0.0,0.0,0.087,0.08,0.049,0.05,treat pain,True,True,True
+760,64,riverbend,kit alcove,recover_routine,0.041,0.035,0.08,0.08,0.137,0.95,available,False,True,True
+761,64,roofward,sun sill,offer_care,0.107,0.101,0.08,0.08,0.0,0.94,available,True,True,True
+762,64,archive,memory desk,treat_pain,0.0,0.0,0.087,0.08,0.0,0.916,treat pain,True,True,True
+763,64,signal,mast base,continue_project,0.208,0.238,0.08,0.08,0.011,0.664,available,False,True,True
+764,64,orchard,mud row,path_to_rest,0.035,0.065,0.08,0.08,0.222,0.95,available,False,True,True
+765,64,repair_ring,bell alcove,perform_chain_step,0.0,0.0,0.08,0.08,0.043,0.052,available,False,True,True
+766,64,riverbend,kit alcove,continue_project,0.035,0.029,0.08,0.08,0.131,0.95,available,False,True,True
+767,64,roofward,warm lane,path_to_rest,0.101,0.095,0.08,0.08,0.0,0.95,available,False,True,True
+768,65,archive,stone stacks,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.89,available,False,True,True
+769,65,signal,mast base,ask_dialect_memory,0.238,0.268,0.08,0.08,0.005,0.638,available,False,True,True
+770,65,orchard,satchel shed,rest,0.065,0.035,0.08,0.135,0.216,0.95,rest,True,True,True
+771,65,repair_ring,bell alcove,dry_off,0.0,0.0,0.08,0.08,0.0,0.054,dry off,True,True,True
+772,65,riverbend,kit alcove,ask_dialect_memory,0.029,0.023,0.08,0.08,0.125,0.95,available,False,True,True
+773,65,roofward,warm lane,rest,0.095,0.065,0.08,0.135,0.0,0.95,rest,True,True,True
+774,65,archive,stone stacks,dry_off,0.0,0.0,0.08,0.08,0.0,0.864,dry off,True,True,True
+775,65,signal,lantern walk,path_to_resident,0.268,0.262,0.08,0.08,0.0,0.662,available,False,True,True
+776,65,orchard,market plank,inspect_affordance,0.035,0.029,0.135,0.118594,0.21,0.924,available,False,True,True
+777,65,repair_ring,cool corner,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.05,available,False,True,True
+778,65,riverbend,dry ridge,path_to_resident,0.023,0.017,0.08,0.08,0.119,0.95,available,False,True,True
+779,65,roofward,glass stair,inspect_affordance,0.065,0.095,0.135,0.11767,0.0,0.924,available,False,True,True
+780,66,archive,spool room,recover_routine,0.0,0.0,0.08,0.08,0.0,0.866,available,False,True,True
+781,66,signal,lantern walk,offer_care,0.262,0.256,0.08,0.08,0.0,0.686,available,True,True,True
+782,66,orchard,satchel shed,treat_pain,0.029,0.0,0.118594,0.102594,0.204,0.948,treat pain,True,True,True
+783,66,repair_ring,cool corner,continue_project,0.0,0.0,0.08,0.08,0.0,0.05,available,False,True,True
+784,66,riverbend,plank hall,offer_care,0.017,0.047,0.08,0.08,0.113,0.95,available,True,True,True
+785,66,roofward,warm lane,treat_pain,0.095,0.04,0.11767,0.10111,0.0,0.948,treat pain,True,True,True
+786,66,archive,spool room,continue_project,0.0,0.0,0.08,0.08,0.0,0.868,available,False,True,True
+787,66,signal,lantern walk,path_to_rest,0.256,0.25,0.08,0.08,0.0,0.71,available,False,True,True
+788,66,orchard,satchel shed,perform_chain_step,0.0,0.0,0.102594,0.086594,0.198,0.95,available,False,True,True
+789,66,repair_ring,cool corner,recover_routine,0.0,0.0,0.08,0.08,0.0,0.05,available,False,True,True
+790,66,riverbend,wet crossing,path_to_rest,0.047,0.041,0.08,0.08,0.148,0.95,available,False,True,True
+791,66,roofward,warm lane,perform_chain_step,0.04,0.034,0.10111,0.084634,0.0,0.95,available,False,True,True
+792,67,archive,spool room,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.87,available,False,True,True
+793,67,signal,lantern walk,rest,0.25,0.22,0.08,0.135,0.0,0.734,rest,True,True,True
+794,67,orchard,satchel shed,dry_off,0.0,0.0,0.086594,0.08,0.138,0.95,dry off,True,True,True
+795,67,repair_ring,wire bench,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.052,available,False,True,True
+796,67,riverbend,kit alcove,rest,0.041,0.011,0.08,0.135,0.142,0.95,rest,True,True,True
+797,67,roofward,warm lane,dry_off,0.034,0.028,0.084634,0.08,0.0,0.95,dry off,True,True,True
+798,67,archive,ink niche,path_to_resident,0.0,0.03,0.08,0.08,0.0,0.872,available,False,True,True
+799,67,signal,mast base,inspect_affordance,0.22,0.25,0.135,0.1155,0.0,0.708,available,False,True,True
+800,67,orchard,market plank,interrupt_routine,0.0,0.0,0.08,0.08,0.132,0.924,available,False,True,True
+801,67,repair_ring,wire bench,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.054,available,False,True,True
+802,67,riverbend,wet crossing,inspect_affordance,0.011,0.005,0.135,0.11893,0.177,0.95,available,False,True,True
+803,67,roofward,ledger loft,interrupt_routine,0.028,0.022,0.08,0.08,0.0,0.95,available,False,True,True
+804,68,archive,ink niche,offer_care,0.03,0.06,0.08,0.08,0.0,0.896,available,True,True,True
+805,68,signal,lantern walk,treat_pain,0.25,0.195,0.1155,0.09677,0.0,0.732,treat pain,True,True,True
+806,68,orchard,seed lane,continue_project,0.0,0.0,0.08,0.08,0.126,0.926,available,False,True,True
+807,68,repair_ring,cool corner,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.05,available,False,True,True
+808,68,riverbend,kit alcove,treat_pain,0.005,0.0,0.11893,0.10293,0.171,0.95,treat pain,True,True,True
+809,68,roofward,ledger loft,continue_project,0.022,0.016,0.08,0.08,0.0,0.95,available,False,True,True
+810,68,archive,memory desk,path_to_rest,0.06,0.054,0.08,0.08,0.0,0.92,available,False,True,True
+811,68,signal,mast base,perform_chain_step,0.195,0.225,0.09677,0.08,0.0,0.706,available,False,True,True
+812,68,orchard,market plank,recover_routine,0.0,0.0,0.08,0.08,0.12,0.9,available,False,True,True
+813,68,repair_ring,wire bench,offer_care,0.0,0.0,0.08,0.08,0.0,0.074,available,True,True,True
+814,68,riverbend,dry ridge,perform_chain_step,0.0,0.0,0.10293,0.08693,0.165,0.95,available,False,True,True
+815,68,roofward,warm lane,recover_routine,0.016,0.01,0.08,0.08,0.0,0.95,available,False,True,True
+816,69,archive,memory desk,rest,0.054,0.024,0.08,0.135,0.0,0.944,rest,True,True,True
+817,69,signal,arrival court,dry_off,0.225,0.219,0.08,0.08,0.035,0.708,dry off,True,True,True
+818,69,orchard,seed lane,path_to_resident,0.0,0.0,0.08,0.08,0.114,0.902,available,False,True,True
+819,69,repair_ring,spark lane,inspect_affordance,0.0,0.03,0.08,0.08,0.035,0.076,available,False,True,True
+820,69,riverbend,dry ridge,dry_off,0.0,0.0,0.08693,0.08,0.105,0.95,dry off,True,True,True
+821,69,roofward,warm lane,path_to_resident,0.01,0.004,0.08,0.08,0.0,0.95,available,False,True,True
+822,69,archive,stone stacks,inspect_affordance,0.024,0.018,0.135,0.118748,0.0,0.918,available,False,True,True
+823,69,signal,mast base,interrupt_routine,0.219,0.249,0.08,0.08,0.029,0.682,available,False,True,True
+824,69,orchard,mud row,ask_dialect_memory,0.0,0.03,0.08,0.08,0.149,0.904,available,False,True,True
+825,69,repair_ring,wire bench,rest,0.03,0.0,0.08,0.135,0.029,0.1,rest,True,True,True
+826,69,riverbend,kit alcove,interrupt_routine,0.0,0.0,0.08,0.08,0.099,0.95,available,False,True,True
+827,69,roofward,glass stair,ask_dialect_memory,0.004,0.034,0.08,0.08,0.0,0.924,available,False,True,True
+828,70,archive,memory desk,treat_pain,0.018,0.0,0.118748,0.102748,0.0,0.942,treat pain,True,True,True
+829,70,signal,mast base,continue_project,0.249,0.279,0.08,0.08,0.023,0.656,available,False,True,True
+830,70,orchard,satchel shed,path_to_rest,0.03,0.024,0.08,0.08,0.143,0.928,available,False,True,True
+831,70,repair_ring,spark lane,perform_chain_step,0.0,0.03,0.135,0.11858,0.064,0.102,available,False,True,True
+832,70,riverbend,kit alcove,continue_project,0.0,0.0,0.08,0.08,0.093,0.95,available,False,True,True
+833,70,roofward,warm lane,path_to_rest,0.034,0.028,0.08,0.08,0.0,0.948,available,False,True,True
+834,70,archive,stone stacks,perform_chain_step,0.0,0.0,0.102748,0.086748,0.0,0.916,available,False,True,True
+835,70,signal,lantern walk,recover_routine,0.279,0.273,0.08,0.08,0.017,0.68,available,False,True,True
+836,70,orchard,market plank,offer_care,0.024,0.018,0.08,0.08,0.137,0.902,available,True,True,True
+837,70,repair_ring,wire bench,treat_pain,0.03,0.0,0.11858,0.10258,0.058,0.104,treat pain,True,True,True
+838,70,riverbend,dry ridge,recover_routine,0.0,0.0,0.08,0.08,0.087,0.95,available,False,True,True
+839,70,roofward,glass stair,offer_care,0.028,0.058,0.08,0.08,0.0,0.922,available,True,True,True
+840,71,archive,stone stacks,dry_off,0.0,0.0,0.086748,0.08,0.0,0.89,dry off,True,True,True
+841,71,signal,mast base,path_to_resident,0.273,0.303,0.08,0.08,0.011,0.654,available,False,True,True
+842,71,orchard,market plank,inspect_affordance,0.018,0.012,0.08,0.08,0.131,0.876,available,False,True,True
+843,71,repair_ring,cool corner,interrupt_routine,0.0,0.0,0.10258,0.08658,0.052,0.078,available,False,True,True
+844,71,riverbend,kit alcove,path_to_resident,0.0,0.0,0.08,0.08,0.081,0.95,available,False,True,True
+845,71,roofward,glass stair,inspect_affordance,0.058,0.088,0.08,0.08,0.0,0.896,available,False,True,True
+846,71,archive,spool room,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.892,available,False,True,True
+847,71,signal,lantern walk,ask_dialect_memory,0.303,0.297,0.08,0.08,0.005,0.678,available,False,True,True
+848,71,orchard,satchel shed,rest,0.012,0.0,0.08,0.135,0.125,0.9,rest,True,True,True
+849,71,repair_ring,wire bench,dry_off,0.0,0.0,0.08658,0.08,0.0,0.08,dry off,True,True,True
+850,71,riverbend,dry ridge,ask_dialect_memory,0.0,0.0,0.08,0.08,0.075,0.95,available,False,True,True
+851,71,roofward,warm lane,rest,0.088,0.058,0.08,0.135,0.0,0.92,rest,True,True,True
+852,72,signal,mast base,path_to_resident,0.297,0.327,0.08,0.08,0.0,0.652,available,False,True,True
+853,72,orchard,market plank,inspect_affordance,0.0,0.0,0.135,0.119,0.119,0.874,available,False,True,True
+854,72,repair_ring,cool corner,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.054,available,False,True,True
+855,72,riverbend,kit alcove,path_to_resident,0.0,0.0,0.08,0.08,0.069,0.95,available,False,True,True
+856,72,roofward,glass stair,inspect_affordance,0.058,0.088,0.135,0.117768,0.0,0.894,available,False,True,True
+857,72,archive,spool room,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.894,available,False,True,True
+858,72,signal,lantern walk,ask_dialect_memory,0.327,0.321,0.08,0.08,0.0,0.676,available,False,True,True
+859,72,orchard,satchel shed,rest,0.0,0.0,0.119,0.174,0.113,0.898,rest,True,True,True
+860,72,repair_ring,wire bench,dry_off,0.0,0.0,0.08,0.08,0.0,0.056,dry off,True,True,True
+861,72,riverbend,dry ridge,ask_dialect_memory,0.0,0.0,0.08,0.08,0.063,0.95,available,False,True,True
+862,72,roofward,warm lane,rest,0.088,0.058,0.117768,0.172768,0.0,0.918,rest,True,True,True
+863,72,archive,ink niche,dry_off,0.0,0.03,0.08,0.08,0.0,0.896,dry off,True,True,True
+864,73,signal,lantern walk,path_to_rest,0.321,0.315,0.08,0.08,0.0,0.7,available,False,True,True
+865,73,orchard,satchel shed,perform_chain_step,0.0,0.0,0.174,0.158,0.107,0.922,available,False,True,True
+866,73,repair_ring,wire bench,recover_routine,0.0,0.0,0.08,0.08,0.0,0.058,available,False,True,True
+867,73,riverbend,kit alcove,path_to_rest,0.0,0.0,0.08,0.08,0.057,0.95,available,False,True,True
+868,73,roofward,warm lane,perform_chain_step,0.058,0.052,0.172768,0.15604,0.0,0.942,available,False,True,True
+869,73,archive,spool room,recover_routine,0.03,0.024,0.08,0.08,0.0,0.898,available,False,True,True
+870,73,signal,mast base,offer_care,0.315,0.345,0.08,0.08,0.0,0.674,available,True,True,True
+871,73,orchard,satchel shed,treat_pain,0.0,0.0,0.158,0.142,0.101,0.946,treat pain,True,True,True
+872,73,repair_ring,wire bench,continue_project,0.0,0.0,0.08,0.08,0.0,0.06,available,False,True,True
+873,73,riverbend,wet crossing,offer_care,0.0,0.0,0.08,0.08,0.092,0.95,available,True,True,True
+874,73,roofward,warm lane,treat_pain,0.052,0.0,0.15604,0.14004,0.0,0.95,treat pain,True,True,True
+875,73,archive,stone stacks,continue_project,0.024,0.018,0.08,0.08,0.0,0.872,available,False,True,True
+876,74,signal,signal perch,inspect_affordance,0.345,0.339,0.08,0.08,0.0,0.676,available,False,True,True
+877,74,orchard,market plank,interrupt_routine,0.0,0.0,0.142,0.126,0.095,0.92,available,False,True,True
+878,74,repair_ring,wire bench,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.062,available,False,True,True
+879,74,riverbend,wet crossing,inspect_affordance,0.0,0.0,0.08,0.08,0.127,0.95,available,False,True,True
+880,74,roofward,ledger loft,interrupt_routine,0.0,0.0,0.14004,0.12404,0.0,0.95,available,False,True,True
+881,74,archive,memory desk,ask_dialect_memory,0.018,0.012,0.08,0.08,0.0,0.896,available,False,True,True
+882,74,signal,lens room,rest,0.339,0.309,0.08,0.135,0.0,0.7,rest,True,True,True
+883,74,orchard,seed lane,dry_off,0.0,0.0,0.126,0.11,0.035,0.922,dry off,True,True,True
+884,74,repair_ring,spark lane,path_to_resident,0.0,0.03,0.08,0.08,0.035,0.064,available,False,True,True
+885,74,riverbend,kit alcove,rest,0.0,0.0,0.08,0.135,0.121,0.95,rest,True,True,True
+886,74,roofward,sun sill,dry_off,0.0,0.0,0.12404,0.10804,0.0,0.95,dry off,True,True,True
+887,74,archive,memory desk,path_to_resident,0.012,0.006,0.08,0.08,0.0,0.92,available,False,True,True
+888,75,signal,lantern walk,perform_chain_step,0.309,0.303,0.135,0.114758,0.0,0.724,available,False,True,True
+889,75,orchard,seed lane,recover_routine,0.0,0.0,0.11,0.094,0.029,0.924,available,False,True,True
+890,75,repair_ring,spark lane,offer_care,0.03,0.06,0.08,0.08,0.07,0.088,available,True,True,True
+891,75,riverbend,dry ridge,perform_chain_step,0.0,0.0,0.135,0.119,0.115,0.95,available,False,True,True
+892,75,roofward,warm lane,recover_routine,0.0,0.0,0.10804,0.09204,0.0,0.95,available,False,True,True
+893,75,archive,stone stacks,offer_care,0.006,0.0,0.08,0.08,0.0,0.894,available,True,True,True
+894,75,signal,lantern walk,treat_pain,0.303,0.248,0.114758,0.095286,0.0,0.748,treat pain,True,True,True
+895,75,orchard,mud row,continue_project,0.0,0.03,0.094,0.08,0.064,0.926,available,False,True,True
+896,75,repair_ring,wire bench,path_to_rest,0.06,0.054,0.08,0.08,0.064,0.09,available,False,True,True
+897,75,riverbend,kit alcove,treat_pain,0.0,0.0,0.119,0.103,0.109,0.95,treat pain,True,True,True
+898,75,roofward,glass stair,continue_project,0.0,0.03,0.09204,0.08,0.0,0.924,available,False,True,True
+899,75,archive,memory desk,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.918,available,False,True,True
+900,76,signal,mast base,interrupt_routine,0.248,0.278,0.095286,0.08,0.0,0.722,available,False,True,True
+901,76,orchard,mud row,ask_dialect_memory,0.03,0.06,0.08,0.08,0.099,0.928,available,False,True,True
+902,76,repair_ring,cool corner,rest,0.054,0.024,0.08,0.135,0.058,0.064,rest,True,True,True
+903,76,riverbend,kit alcove,interrupt_routine,0.0,0.0,0.103,0.087,0.103,0.95,available,False,True,True
+904,76,roofward,arrival court,ask_dialect_memory,0.03,0.024,0.08,0.08,0.035,0.926,available,False,True,True
+905,76,archive,memory desk,rest,0.0,0.0,0.08,0.135,0.0,0.942,rest,True,True,True
+906,76,signal,lantern walk,dry_off,0.278,0.272,0.08,0.08,0.0,0.746,dry off,True,True,True
+907,76,orchard,seed lane,path_to_resident,0.06,0.054,0.08,0.08,0.093,0.93,available,False,True,True
+908,76,repair_ring,cool corner,inspect_affordance,0.024,0.018,0.135,0.118748,0.052,0.05,available,False,True,True
+909,76,riverbend,dry ridge,dry_off,0.0,0.0,0.087,0.08,0.043,0.95,dry off,True,True,True
+910,76,roofward,arrival court,path_to_resident,0.024,0.018,0.08,0.08,0.07,0.928,available,False,True,True
+911,76,archive,ink niche,inspect_affordance,0.0,0.03,0.135,0.11858,0.0,0.944,available,False,True,True
+912,77,signal,mast base,recover_routine,0.272,0.302,0.08,0.08,0.0,0.72,available,False,True,True
+913,77,orchard,market plank,offer_care,0.054,0.048,0.08,0.08,0.087,0.904,available,True,True,True
+914,77,repair_ring,cool corner,treat_pain,0.018,0.0,0.118748,0.102748,0.046,0.05,treat pain,True,True,True
+915,77,riverbend,kit alcove,recover_routine,0.0,0.0,0.08,0.08,0.037,0.95,available,False,True,True
+916,77,roofward,glass stair,offer_care,0.018,0.048,0.08,0.08,0.064,0.902,available,True,True,True
+917,77,archive,memory desk,treat_pain,0.03,0.0,0.11858,0.10258,0.0,0.95,treat pain,True,True,True
+918,77,signal,lantern walk,continue_project,0.302,0.296,0.08,0.08,0.0,0.744,available,False,True,True
+919,77,orchard,satchel shed,path_to_rest,0.048,0.042,0.08,0.08,0.081,0.928,available,False,True,True
+920,77,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.102748,0.086748,0.04,0.052,available,False,True,True
+921,77,riverbend,dry ridge,continue_project,0.0,0.0,0.08,0.08,0.031,0.95,available,False,True,True
+922,77,roofward,warm lane,path_to_rest,0.048,0.042,0.08,0.08,0.058,0.926,available,False,True,True
+923,77,archive,ink niche,perform_chain_step,0.0,0.03,0.10258,0.08616,0.0,0.95,available,False,True,True
+924,78,signal,lens room,ask_dialect_memory,0.296,0.29,0.08,0.08,0.0,0.746,available,False,True,True
+925,78,orchard,satchel shed,rest,0.042,0.012,0.08,0.135,0.075,0.95,rest,True,True,True
+926,78,repair_ring,arrival court,dry_off,0.0,0.0,0.086748,0.08,0.0,0.054,dry off,True,True,True
+927,78,riverbend,plank hall,ask_dialect_memory,0.0,0.03,0.08,0.08,0.025,0.95,available,False,True,True
+928,78,roofward,warm lane,rest,0.042,0.012,0.08,0.135,0.052,0.95,rest,True,True,True
+929,78,archive,ink niche,dry_off,0.03,0.06,0.08616,0.08,0.0,0.95,dry off,True,True,True
+930,78,signal,lens room,path_to_resident,0.29,0.284,0.08,0.08,0.0,0.748,available,False,True,True
+931,78,orchard,market plank,inspect_affordance,0.012,0.006,0.135,0.118916,0.069,0.924,available,False,True,True
+932,78,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.056,available,False,True,True
+933,78,riverbend,arrival court,path_to_resident,0.03,0.024,0.08,0.08,0.019,0.924,available,False,True,True
+934,78,roofward,ledger loft,inspect_affordance,0.012,0.006,0.135,0.118916,0.046,0.95,available,False,True,True
+935,78,archive,memory desk,interrupt_routine,0.06,0.054,0.08,0.08,0.0,0.95,available,False,True,True
+936,79,signal,signal perch,offer_care,0.284,0.278,0.08,0.08,0.0,0.772,available,True,True,True
+937,79,orchard,satchel shed,treat_pain,0.006,0.0,0.118916,0.102916,0.063,0.948,treat pain,True,True,True
+938,79,repair_ring,wire bench,continue_project,0.0,0.0,0.08,0.08,0.0,0.058,available,False,True,True
+939,79,riverbend,plank hall,offer_care,0.024,0.054,0.08,0.08,0.013,0.948,available,True,True,True
+940,79,roofward,warm lane,treat_pain,0.006,0.0,0.118916,0.102916,0.04,0.95,treat pain,True,True,True
+941,79,archive,memory desk,continue_project,0.054,0.048,0.08,0.08,0.0,0.95,available,False,True,True
+942,79,signal,lens room,path_to_rest,0.278,0.272,0.08,0.08,0.0,0.774,available,False,True,True
+943,79,orchard,market plank,perform_chain_step,0.0,0.0,0.102916,0.086916,0.057,0.922,available,False,True,True
+944,79,repair_ring,spark lane,recover_routine,0.0,0.03,0.08,0.08,0.035,0.06,available,False,True,True
+945,79,riverbend,wet crossing,path_to_rest,0.054,0.048,0.08,0.08,0.048,0.95,available,False,True,True
+946,79,roofward,sun sill,perform_chain_step,0.0,0.0,0.102916,0.086916,0.034,0.95,available,False,True,True
+947,79,archive,memory desk,recover_routine,0.048,0.042,0.08,0.08,0.0,0.95,available,False,True,True
+948,80,orchard,satchel shed,treat_pain,0.0,0.0,0.086916,0.08,0.051,0.946,treat pain,True,True,True
+949,80,repair_ring,wire bench,continue_project,0.03,0.024,0.08,0.08,0.029,0.062,available,False,True,True
+950,80,riverbend,wet crossing,offer_care,0.048,0.042,0.08,0.08,0.083,0.95,available,True,True,True
+951,80,roofward,warm lane,treat_pain,0.0,0.0,0.086916,0.08,0.028,0.95,treat pain,True,True,True
+952,80,archive,memory desk,continue_project,0.042,0.036,0.08,0.08,0.0,0.95,available,False,True,True
+953,80,signal,lantern walk,path_to_rest,0.272,0.266,0.08,0.08,0.0,0.798,available,False,True,True
+954,80,orchard,market plank,perform_chain_step,0.0,0.0,0.08,0.08,0.045,0.92,available,False,True,True
+955,80,repair_ring,spark lane,recover_routine,0.024,0.054,0.08,0.08,0.064,0.064,available,False,True,True
+956,80,riverbend,kit alcove,path_to_rest,0.042,0.036,0.08,0.08,0.077,0.95,available,False,True,True
+957,80,roofward,sun sill,perform_chain_step,0.0,0.0,0.08,0.08,0.022,0.95,available,False,True,True
+958,80,archive,memory desk,recover_routine,0.036,0.03,0.08,0.08,0.0,0.95,available,False,True,True
+959,80,signal,mast base,offer_care,0.266,0.296,0.08,0.08,0.0,0.772,available,True,True,True
+960,81,orchard,seed lane,dry_off,0.0,0.0,0.08,0.08,0.0,0.922,dry off,True,True,True
+961,81,repair_ring,wire bench,path_to_resident,0.054,0.048,0.08,0.08,0.058,0.066,available,False,True,True
+962,81,riverbend,kit alcove,rest,0.036,0.006,0.08,0.135,0.071,0.95,rest,True,True,True
+963,81,roofward,sun sill,dry_off,0.0,0.0,0.08,0.08,0.0,0.95,dry off,True,True,True
+964,81,archive,stone stacks,path_to_resident,0.03,0.024,0.08,0.08,0.0,0.924,available,False,True,True
+965,81,signal,mast base,inspect_affordance,0.296,0.326,0.08,0.08,0.0,0.746,available,False,True,True
+966,81,orchard,mud row,interrupt_routine,0.0,0.03,0.08,0.08,0.035,0.924,available,False,True,True
+967,81,repair_ring,spark lane,ask_dialect_memory,0.048,0.078,0.08,0.08,0.093,0.068,available,False,True,True
+968,81,riverbend,kit alcove,inspect_affordance,0.006,0.0,0.135,0.119,0.065,0.95,available,False,True,True
+969,81,roofward,warm lane,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+970,81,archive,stone stacks,ask_dialect_memory,0.024,0.018,0.08,0.08,0.0,0.898,available,False,True,True
+971,81,signal,lantern walk,rest,0.326,0.296,0.08,0.135,0.0,0.77,rest,True,True,True
+972,82,orchard,mud row,continue_project,0.03,0.06,0.08,0.08,0.07,0.926,available,False,True,True
+973,82,repair_ring,wire bench,path_to_rest,0.078,0.072,0.08,0.08,0.087,0.07,available,False,True,True
+974,82,riverbend,kit alcove,treat_pain,0.0,0.0,0.119,0.103,0.059,0.95,treat pain,True,True,True
+975,82,roofward,glass stair,continue_project,0.0,0.03,0.08,0.08,0.0,0.924,available,False,True,True
+976,82,archive,memory desk,path_to_rest,0.018,0.012,0.08,0.08,0.0,0.922,available,False,True,True
+977,82,signal,lantern walk,perform_chain_step,0.296,0.29,0.135,0.11494,0.0,0.794,available,False,True,True
+978,82,orchard,seed lane,recover_routine,0.06,0.054,0.08,0.08,0.064,0.928,available,False,True,True
+979,82,repair_ring,cool corner,offer_care,0.072,0.066,0.08,0.08,0.081,0.05,available,True,True,True
+980,82,riverbend,dry ridge,perform_chain_step,0.0,0.0,0.103,0.087,0.053,0.95,available,False,True,True
+981,82,roofward,arrival court,recover_routine,0.03,0.024,0.08,0.08,0.035,0.926,available,False,True,True
+982,82,archive,ink niche,offer_care,0.012,0.042,0.08,0.08,0.0,0.946,available,True,True,True
+983,82,signal,lantern walk,treat_pain,0.29,0.235,0.11494,0.09565,0.0,0.818,treat pain,True,True,True
+984,83,orchard,seed lane,path_to_resident,0.054,0.048,0.08,0.08,0.058,0.93,available,False,True,True
+985,83,repair_ring,cool corner,inspect_affordance,0.066,0.06,0.08,0.08,0.075,0.05,available,False,True,True
+986,83,riverbend,plank hall,dry_off,0.0,0.03,0.087,0.08,0.0,0.95,dry off,True,True,True
+987,83,roofward,glass stair,path_to_resident,0.024,0.054,0.08,0.08,0.029,0.9,available,False,True,True
+988,83,archive,spool room,inspect_affordance,0.042,0.036,0.08,0.08,0.0,0.948,available,False,True,True
+989,83,signal,lens room,interrupt_routine,0.235,0.229,0.09565,0.08,0.0,0.82,available,False,True,True
+990,83,orchard,mud row,ask_dialect_memory,0.048,0.078,0.08,0.08,0.093,0.932,available,False,True,True
+991,83,repair_ring,cool corner,rest,0.06,0.03,0.08,0.135,0.069,0.05,rest,True,True,True
+992,83,riverbend,plank hall,interrupt_routine,0.03,0.06,0.08,0.08,0.0,0.95,available,False,True,True
+993,83,roofward,warm lane,ask_dialect_memory,0.054,0.048,0.08,0.08,0.023,0.924,available,False,True,True
+994,83,archive,stone stacks,rest,0.036,0.006,0.08,0.135,0.0,0.922,rest,True,True,True
+995,83,signal,signal perch,dry_off,0.229,0.223,0.08,0.08,0.0,0.822,dry off,True,True,True
+996,84,orchard,satchel shed,path_to_rest,0.078,0.072,0.08,0.08,0.087,0.95,available,False,True,True
+997,84,repair_ring,wire bench,perform_chain_step,0.03,0.024,0.135,0.118664,0.063,0.052,available,False,True,True
+998,84,riverbend,plank hall,continue_project,0.06,0.09,0.08,0.08,0.0,0.95,available,False,True,True
+999,84,roofward,warm lane,path_to_rest,0.048,0.042,0.08,0.08,0.017,0.948,available,False,True,True
+1000,84,archive,spool room,perform_chain_step,0.006,0.0,0.135,0.119,0.0,0.924,available,False,True,True
+1001,84,signal,lens room,recover_routine,0.223,0.217,0.08,0.08,0.0,0.824,available,False,True,True
+1002,84,orchard,market plank,offer_care,0.072,0.066,0.08,0.08,0.081,0.924,available,True,True,True
+1003,84,repair_ring,cool corner,treat_pain,0.024,0.0,0.118664,0.102664,0.057,0.05,treat pain,True,True,True
+1004,84,riverbend,dry ridge,recover_routine,0.09,0.084,0.08,0.08,0.0,0.95,available,False,True,True
+1005,84,roofward,ledger loft,offer_care,0.042,0.036,0.08,0.08,0.011,0.95,available,True,True,True
+1006,84,archive,stone stacks,treat_pain,0.0,0.0,0.119,0.103,0.0,0.898,treat pain,True,True,True
+1007,84,signal,lantern walk,continue_project,0.217,0.211,0.08,0.08,0.0,0.848,available,False,True,True
+1008,85,orchard,seed lane,inspect_affordance,0.066,0.06,0.08,0.08,0.075,0.926,available,False,True,True
+1009,85,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.102664,0.086664,0.051,0.052,available,False,True,True
+1010,85,riverbend,plank hall,path_to_resident,0.084,0.114,0.08,0.08,0.0,0.95,available,False,True,True
+1011,85,roofward,ledger loft,inspect_affordance,0.036,0.03,0.08,0.08,0.005,0.95,available,False,True,True
+1012,85,archive,memory desk,interrupt_routine,0.0,0.0,0.103,0.087,0.0,0.922,available,False,True,True
+1013,85,signal,mast base,ask_dialect_memory,0.211,0.241,0.08,0.08,0.0,0.822,available,False,True,True
+1014,85,orchard,mud row,rest,0.06,0.03,0.08,0.135,0.11,0.95,rest,True,True,True
+1015,85,repair_ring,spark lane,dry_off,0.0,0.03,0.086664,0.08,0.086,0.054,dry off,True,True,True
+1016,85,riverbend,dry ridge,ask_dialect_memory,0.114,0.108,0.08,0.08,0.0,0.95,available,False,True,True
+1017,85,roofward,warm lane,rest,0.03,0.0,0.08,0.135,0.0,0.95,rest,True,True,True
+1018,85,archive,stone stacks,dry_off,0.0,0.0,0.087,0.08,0.0,0.896,dry off,True,True,True
+1019,85,signal,arrival court,path_to_resident,0.241,0.235,0.08,0.08,0.035,0.824,available,False,True,True
+1020,86,orchard,seed lane,perform_chain_step,0.03,0.024,0.135,0.118664,0.104,0.95,available,False,True,True
+1021,86,repair_ring,wire bench,recover_routine,0.03,0.024,0.08,0.08,0.08,0.056,available,False,True,True
+1022,86,riverbend,kit alcove,path_to_rest,0.108,0.102,0.08,0.08,0.0,0.95,available,False,True,True
+1023,86,roofward,sun sill,perform_chain_step,0.0,0.0,0.135,0.119,0.0,0.95,available,False,True,True
+1024,86,archive,stone stacks,recover_routine,0.0,0.0,0.08,0.08,0.0,0.87,available,False,True,True
+1025,86,signal,mast base,offer_care,0.235,0.265,0.08,0.08,0.029,0.798,available,True,True,True
+1026,86,orchard,mud row,treat_pain,0.024,0.0,0.118664,0.102664,0.139,0.95,treat pain,True,True,True
+1027,86,repair_ring,spark lane,continue_project,0.024,0.054,0.08,0.08,0.115,0.058,available,False,True,True
+1028,86,riverbend,kit alcove,offer_care,0.102,0.096,0.08,0.08,0.0,0.95,available,True,True,True
+1029,86,roofward,warm lane,treat_pain,0.0,0.0,0.119,0.103,0.0,0.95,treat pain,True,True,True
+1030,86,archive,stone stacks,continue_project,0.0,0.0,0.08,0.08,0.0,0.844,available,False,True,True
+1031,86,signal,lantern walk,path_to_rest,0.265,0.259,0.08,0.08,0.023,0.822,available,False,True,True
+1032,87,orchard,mud row,interrupt_routine,0.0,0.03,0.102664,0.086244,0.174,0.95,available,False,True,True
+1033,87,repair_ring,bell alcove,ask_dialect_memory,0.054,0.048,0.08,0.08,0.109,0.06,available,False,True,True
+1034,87,riverbend,kit alcove,inspect_affordance,0.096,0.09,0.08,0.08,0.0,0.95,available,False,True,True
+1035,87,roofward,glass stair,interrupt_routine,0.0,0.03,0.103,0.08658,0.0,0.924,available,False,True,True
+1036,87,archive,stone stacks,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.818,available,False,True,True
+1037,87,signal,lantern walk,rest,0.259,0.229,0.08,0.135,0.017,0.846,rest,True,True,True
+1038,87,orchard,seed lane,dry_off,0.03,0.024,0.086244,0.08,0.114,0.95,dry off,True,True,True
+1039,87,repair_ring,bell alcove,path_to_resident,0.048,0.042,0.08,0.08,0.103,0.062,available,False,True,True
+1040,87,riverbend,kit alcove,rest,0.09,0.06,0.08,0.135,0.0,0.95,rest,True,True,True
+1041,87,roofward,glass stair,dry_off,0.03,0.06,0.08658,0.08,0.0,0.898,dry off,True,True,True
+1042,87,archive,memory desk,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.842,available,False,True,True
+1043,87,signal,lens room,inspect_affordance,0.229,0.223,0.135,0.115878,0.011,0.848,available,False,True,True
+1044,88,repair_ring,bell alcove,ask_dialect_memory,0.042,0.036,0.08,0.08,0.097,0.064,available,False,True,True
+1045,88,riverbend,kit alcove,inspect_affordance,0.06,0.054,0.135,0.118244,0.0,0.95,available,False,True,True
+1046,88,roofward,arrival court,interrupt_routine,0.06,0.054,0.08,0.08,0.035,0.9,available,False,True,True
+1047,88,archive,stone stacks,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.816,available,False,True,True
+1048,88,signal,lantern walk,rest,0.223,0.193,0.115878,0.170878,0.005,0.872,rest,True,True,True
+1049,88,orchard,market plank,dry_off,0.024,0.018,0.08,0.08,0.054,0.924,dry off,True,True,True
+1050,88,repair_ring,bell alcove,path_to_resident,0.036,0.03,0.08,0.08,0.091,0.066,available,False,True,True
+1051,88,riverbend,kit alcove,rest,0.054,0.024,0.118244,0.173244,0.0,0.95,rest,True,True,True
+1052,88,roofward,glass stair,dry_off,0.054,0.084,0.08,0.08,0.0,0.874,dry off,True,True,True
+1053,88,archive,memory desk,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.84,available,False,True,True
+1054,88,signal,lens room,inspect_affordance,0.193,0.187,0.170878,0.15226,0.0,0.874,available,False,True,True
+1055,88,orchard,satchel shed,interrupt_routine,0.018,0.012,0.08,0.08,0.048,0.948,available,False,True,True
+1056,89,repair_ring,cool corner,offer_care,0.03,0.024,0.08,0.08,0.085,0.05,available,True,True,True
+1057,89,riverbend,dry ridge,perform_chain_step,0.024,0.018,0.173244,0.156992,0.0,0.95,available,False,True,True
+1058,89,roofward,warm lane,recover_routine,0.084,0.078,0.08,0.08,0.0,0.898,available,False,True,True
+1059,89,archive,ink niche,offer_care,0.0,0.03,0.08,0.08,0.0,0.864,available,True,True,True
+1060,89,signal,lantern walk,treat_pain,0.187,0.132,0.15226,0.134412,0.0,0.898,treat pain,True,True,True
+1061,89,orchard,satchel shed,continue_project,0.012,0.006,0.08,0.08,0.042,0.95,available,False,True,True
+1062,89,repair_ring,cool corner,path_to_rest,0.024,0.018,0.08,0.08,0.079,0.05,available,False,True,True
+1063,89,riverbend,kit alcove,treat_pain,0.018,0.0,0.156992,0.140992,0.0,0.95,treat pain,True,True,True
+1064,89,roofward,warm lane,continue_project,0.078,0.072,0.08,0.08,0.0,0.922,available,False,True,True
+1065,89,archive,memory desk,path_to_rest,0.03,0.024,0.08,0.08,0.0,0.888,available,False,True,True
+1066,89,signal,mast base,perform_chain_step,0.132,0.162,0.134412,0.116144,0.0,0.872,available,False,True,True
+1067,89,orchard,market plank,recover_routine,0.006,0.0,0.08,0.08,0.036,0.924,available,False,True,True
+1068,90,repair_ring,cool corner,rest,0.018,0.0,0.08,0.135,0.073,0.05,rest,True,True,True
+1069,90,riverbend,dry ridge,interrupt_routine,0.0,0.0,0.140992,0.124992,0.0,0.95,available,False,True,True
+1070,90,roofward,warm lane,ask_dialect_memory,0.072,0.066,0.08,0.08,0.0,0.946,available,False,True,True
+1071,90,archive,memory desk,rest,0.024,0.0,0.08,0.135,0.0,0.912,rest,True,True,True
+1072,90,signal,signal perch,dry_off,0.162,0.156,0.116144,0.09796,0.0,0.874,dry off,True,True,True
+1073,90,orchard,satchel shed,path_to_resident,0.0,0.0,0.08,0.08,0.03,0.948,available,False,True,True
+1074,90,repair_ring,wire bench,inspect_affordance,0.0,0.0,0.135,0.119,0.067,0.052,available,False,True,True
+1075,90,riverbend,plank hall,dry_off,0.0,0.03,0.124992,0.108572,0.0,0.95,dry off,True,True,True
+1076,90,roofward,glass stair,path_to_resident,0.066,0.096,0.08,0.08,0.0,0.92,available,False,True,True
+1077,90,archive,memory desk,inspect_affordance,0.0,0.0,0.135,0.119,0.0,0.936,available,False,True,True
+1078,90,signal,mast base,interrupt_routine,0.156,0.186,0.09796,0.08,0.0,0.848,available,False,True,True
+1079,90,orchard,market plank,ask_dialect_memory,0.0,0.0,0.08,0.08,0.024,0.922,available,False,True,True
+1080,91,repair_ring,cool corner,treat_pain,0.0,0.0,0.119,0.103,0.061,0.05,treat pain,True,True,True
+1081,91,riverbend,plank hall,recover_routine,0.03,0.06,0.108572,0.091732,0.0,0.95,available,False,True,True
+1082,91,roofward,warm lane,offer_care,0.096,0.09,0.08,0.08,0.0,0.944,available,True,True,True
+1083,91,archive,memory desk,treat_pain,0.0,0.0,0.119,0.103,0.0,0.95,treat pain,True,True,True
+1084,91,signal,arrival court,continue_project,0.186,0.18,0.08,0.08,0.035,0.85,available,False,True,True
+1085,91,orchard,satchel shed,path_to_rest,0.0,0.0,0.08,0.08,0.018,0.946,available,False,True,True
+1086,91,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.103,0.087,0.055,0.052,available,False,True,True
+1087,91,riverbend,dry ridge,continue_project,0.06,0.054,0.091732,0.08,0.0,0.95,available,False,True,True
+1088,91,roofward,warm lane,path_to_rest,0.09,0.084,0.08,0.08,0.0,0.95,available,False,True,True
+1089,91,archive,stone stacks,perform_chain_step,0.0,0.0,0.103,0.087,0.0,0.924,available,False,True,True
+1090,91,signal,arrival court,recover_routine,0.18,0.174,0.08,0.08,0.07,0.852,available,False,True,True
+1091,91,orchard,mud row,offer_care,0.0,0.03,0.08,0.08,0.053,0.95,available,True,True,True
+1092,92,repair_ring,spark lane,dry_off,0.0,0.03,0.087,0.08,0.09,0.054,dry off,True,True,True
+1093,92,riverbend,dry ridge,ask_dialect_memory,0.054,0.048,0.08,0.08,0.0,0.95,available,False,True,True
+1094,92,roofward,warm lane,rest,0.084,0.054,0.08,0.135,0.0,0.95,rest,True,True,True
+1095,92,archive,arrival court,dry_off,0.0,0.0,0.087,0.08,0.035,0.926,dry off,True,True,True
+1096,92,signal,mast base,path_to_resident,0.174,0.204,0.08,0.08,0.064,0.826,available,False,True,True
+1097,92,orchard,mud row,inspect_affordance,0.03,0.06,0.08,0.08,0.088,0.95,available,False,True,True
+1098,92,repair_ring,bell alcove,interrupt_routine,0.03,0.024,0.08,0.08,0.084,0.056,available,False,True,True
+1099,92,riverbend,dry ridge,path_to_resident,0.048,0.042,0.08,0.08,0.0,0.95,available,False,True,True
+1100,92,roofward,glass stair,inspect_affordance,0.054,0.084,0.135,0.117824,0.0,0.924,available,False,True,True
+1101,92,archive,stone stacks,interrupt_routine,0.0,0.0,0.08,0.08,0.029,0.9,available,False,True,True
+1102,92,signal,lantern walk,ask_dialect_memory,0.204,0.198,0.08,0.08,0.058,0.85,available,False,True,True
+1103,92,orchard,satchel shed,rest,0.06,0.03,0.08,0.135,0.082,0.95,rest,True,True,True
+1104,93,repair_ring,bell alcove,continue_project,0.024,0.018,0.08,0.08,0.078,0.058,available,False,True,True
+1105,93,riverbend,kit alcove,offer_care,0.042,0.036,0.08,0.08,0.0,0.95,available,True,True,True
+1106,93,roofward,warm lane,treat_pain,0.084,0.029,0.117824,0.101418,0.0,0.948,treat pain,True,True,True
+1107,93,archive,stone stacks,continue_project,0.0,0.0,0.08,0.08,0.023,0.874,available,False,True,True
+1108,93,signal,lantern walk,path_to_rest,0.198,0.192,0.08,0.08,0.052,0.874,available,False,True,True
+1109,93,orchard,market plank,perform_chain_step,0.03,0.024,0.135,0.118664,0.076,0.924,available,False,True,True
+1110,93,repair_ring,bell alcove,recover_routine,0.018,0.012,0.08,0.08,0.072,0.06,available,False,True,True
+1111,93,riverbend,kit alcove,path_to_rest,0.036,0.03,0.08,0.08,0.0,0.95,available,False,True,True
+1112,93,roofward,glass stair,perform_chain_step,0.029,0.059,0.101418,0.084592,0.0,0.922,available,False,True,True
+1113,93,archive,memory desk,recover_routine,0.0,0.0,0.08,0.08,0.017,0.898,available,False,True,True
+1114,93,signal,lens room,offer_care,0.192,0.186,0.08,0.08,0.046,0.898,available,True,True,True
+1115,93,orchard,satchel shed,treat_pain,0.024,0.0,0.118664,0.102664,0.07,0.948,treat pain,True,True,True
+1116,94,repair_ring,spark lane,path_to_resident,0.012,0.042,0.08,0.08,0.107,0.062,available,False,True,True
+1117,94,riverbend,kit alcove,rest,0.03,0.0,0.08,0.135,0.0,0.95,rest,True,True,True
+1118,94,roofward,glass stair,dry_off,0.059,0.089,0.084592,0.08,0.0,0.896,dry off,True,True,True
+1119,94,archive,stone stacks,path_to_resident,0.0,0.0,0.08,0.08,0.011,0.872,available,False,True,True
+1120,94,signal,lens room,inspect_affordance,0.186,0.18,0.08,0.08,0.04,0.9,available,False,True,True
+1121,94,orchard,satchel shed,interrupt_routine,0.0,0.0,0.102664,0.086664,0.064,0.95,available,False,True,True
+1122,94,repair_ring,wire bench,ask_dialect_memory,0.042,0.036,0.08,0.08,0.101,0.064,available,False,True,True
+1123,94,riverbend,dry ridge,inspect_affordance,0.0,0.0,0.135,0.119,0.0,0.95,available,False,True,True
+1124,94,roofward,warm lane,interrupt_routine,0.089,0.083,0.08,0.08,0.0,0.92,available,False,True,True
+1125,94,archive,spool room,ask_dialect_memory,0.0,0.0,0.08,0.08,0.005,0.874,available,False,True,True
+1126,94,signal,lantern walk,rest,0.18,0.15,0.08,0.135,0.034,0.924,rest,True,True,True
+1127,94,orchard,market plank,dry_off,0.0,0.0,0.086664,0.08,0.004,0.924,dry off,True,True,True
+1128,95,repair_ring,cool corner,path_to_rest,0.036,0.03,0.08,0.08,0.095,0.05,available,False,True,True
+1129,95,riverbend,kit alcove,treat_pain,0.0,0.0,0.119,0.103,0.0,0.95,treat pain,True,True,True
+1130,95,roofward,warm lane,continue_project,0.083,0.077,0.08,0.08,0.0,0.944,available,False,True,True
+1131,95,archive,stone stacks,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.848,available,False,True,True
+1132,95,signal,mast base,perform_chain_step,0.15,0.18,0.135,0.11648,0.028,0.898,available,False,True,True
+1133,95,orchard,satchel shed,recover_routine,0.0,0.0,0.08,0.08,0.0,0.948,available,False,True,True
+1134,95,repair_ring,wire bench,offer_care,0.03,0.024,0.08,0.08,0.089,0.074,available,True,True,True
+1135,95,riverbend,wet crossing,perform_chain_step,0.0,0.0,0.103,0.087,0.035,0.95,available,False,True,True
+1136,95,roofward,glass stair,recover_routine,0.077,0.107,0.08,0.08,0.0,0.918,available,False,True,True
+1137,95,archive,memory desk,offer_care,0.0,0.0,0.08,0.08,0.0,0.872,available,True,True,True
+1138,95,signal,lantern walk,treat_pain,0.18,0.125,0.11648,0.09873,0.022,0.922,treat pain,True,True,True
+1139,95,orchard,market plank,continue_project,0.0,0.0,0.08,0.08,0.0,0.922,available,False,True,True
+1140,96,riverbend,kit alcove,treat_pain,0.0,0.0,0.087,0.08,0.029,0.95,treat pain,True,True,True
+1141,96,roofward,warm lane,continue_project,0.107,0.101,0.08,0.08,0.0,0.942,available,False,True,True
+1142,96,archive,memory desk,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.896,available,False,True,True
+1143,96,signal,mast base,perform_chain_step,0.125,0.155,0.09873,0.08056,0.016,0.896,available,False,True,True
+1144,96,orchard,satchel shed,recover_routine,0.0,0.0,0.08,0.08,0.0,0.946,available,False,True,True
+1145,96,repair_ring,wire bench,offer_care,0.024,0.018,0.08,0.08,0.083,0.098,available,True,True,True
+1146,96,riverbend,wet crossing,perform_chain_step,0.0,0.0,0.08,0.08,0.064,0.95,available,False,True,True
+1147,96,roofward,glass stair,recover_routine,0.101,0.131,0.08,0.08,0.0,0.916,available,False,True,True
+1148,96,archive,memory desk,offer_care,0.0,0.0,0.08,0.08,0.0,0.92,available,True,True,True
+1149,96,signal,lantern walk,treat_pain,0.155,0.1,0.08056,0.08,0.01,0.92,treat pain,True,True,True
+1150,96,orchard,market plank,continue_project,0.0,0.0,0.08,0.08,0.0,0.92,available,False,True,True
+1151,96,repair_ring,cool corner,path_to_rest,0.018,0.012,0.08,0.08,0.077,0.072,available,False,True,True
+1152,97,riverbend,wet crossing,dry_off,0.0,0.0,0.08,0.08,0.099,0.95,dry off,True,True,True
+1153,97,roofward,warm lane,path_to_resident,0.131,0.125,0.08,0.08,0.0,0.94,available,False,True,True
+1154,97,archive,memory desk,inspect_affordance,0.0,0.0,0.08,0.08,0.0,0.944,available,False,True,True
+1155,97,signal,mast base,interrupt_routine,0.1,0.13,0.08,0.08,0.004,0.894,available,False,True,True
+1156,97,orchard,seed lane,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.922,available,False,True,True
+1157,97,repair_ring,cool corner,rest,0.012,0.0,0.08,0.135,0.071,0.05,rest,True,True,True
+1158,97,riverbend,plank hall,interrupt_routine,0.0,0.03,0.08,0.08,0.093,0.95,available,False,True,True
+1159,97,roofward,sun sill,ask_dialect_memory,0.125,0.119,0.08,0.08,0.0,0.942,available,False,True,True
+1160,97,archive,memory desk,rest,0.0,0.0,0.08,0.135,0.0,0.95,rest,True,True,True
+1161,97,signal,mast base,dry_off,0.13,0.16,0.08,0.08,0.0,0.868,dry off,True,True,True
+1162,97,orchard,arrival court,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.924,available,False,True,True
+1163,97,repair_ring,bell alcove,inspect_affordance,0.0,0.0,0.135,0.119,0.065,0.052,available,False,True,True
+1164,98,riverbend,dry ridge,continue_project,0.03,0.024,0.08,0.08,0.087,0.95,available,False,True,True
+1165,98,roofward,warm lane,path_to_rest,0.119,0.113,0.08,0.08,0.0,0.95,available,False,True,True
+1166,98,archive,stone stacks,perform_chain_step,0.0,0.0,0.135,0.119,0.0,0.924,available,False,True,True
+1167,98,signal,lantern walk,recover_routine,0.16,0.154,0.08,0.08,0.0,0.892,available,False,True,True
+1168,98,orchard,seed lane,offer_care,0.0,0.0,0.08,0.08,0.0,0.948,available,True,True,True
+1169,98,repair_ring,cool corner,treat_pain,0.0,0.0,0.119,0.103,0.059,0.05,treat pain,True,True,True
+1170,98,riverbend,dry ridge,recover_routine,0.024,0.018,0.08,0.08,0.081,0.95,available,False,True,True
+1171,98,roofward,glass stair,offer_care,0.113,0.143,0.08,0.08,0.0,0.924,available,True,True,True
+1172,98,archive,memory desk,treat_pain,0.0,0.0,0.119,0.103,0.0,0.948,treat pain,True,True,True
+1173,98,signal,lantern walk,continue_project,0.154,0.148,0.08,0.08,0.0,0.916,available,False,True,True
+1174,98,orchard,mud row,path_to_rest,0.0,0.03,0.08,0.08,0.035,0.95,available,False,True,True
+1175,98,repair_ring,cool corner,perform_chain_step,0.0,0.0,0.103,0.087,0.053,0.05,available,False,True,True
+1176,99,riverbend,plank hall,path_to_resident,0.018,0.048,0.08,0.08,0.075,0.95,available,False,True,True
+1177,99,roofward,arrival court,inspect_affordance,0.143,0.137,0.08,0.08,0.035,0.926,available,False,True,True
+1178,99,archive,stone stacks,interrupt_routine,0.0,0.0,0.103,0.087,0.0,0.922,available,False,True,True
+1179,99,signal,lantern walk,ask_dialect_memory,0.148,0.142,0.08,0.08,0.0,0.94,available,False,True,True
+1180,99,orchard,satchel shed,rest,0.03,0.0,0.08,0.135,0.029,0.95,rest,True,True,True
+1181,99,repair_ring,cool corner,dry_off,0.0,0.0,0.087,0.08,0.0,0.05,dry off,True,True,True
+1182,99,riverbend,arrival court,ask_dialect_memory,0.048,0.042,0.08,0.08,0.069,0.924,available,False,True,True
+1183,99,roofward,glass stair,rest,0.137,0.107,0.08,0.135,0.029,0.9,rest,True,True,True
+1184,99,archive,spool room,dry_off,0.0,0.0,0.087,0.08,0.0,0.924,dry off,True,True,True
+1185,99,signal,mast base,path_to_resident,0.142,0.172,0.08,0.08,0.0,0.914,available,False,True,True
+1186,99,orchard,satchel shed,inspect_affordance,0.0,0.0,0.135,0.119,0.023,0.95,available,False,True,True
+1187,99,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.052,available,False,True,True
+1188,100,riverbend,plank hall,path_to_rest,0.042,0.072,0.08,0.08,0.063,0.926,available,False,True,True
+1189,100,roofward,glass stair,perform_chain_step,0.107,0.137,0.135,0.117082,0.023,0.874,available,False,True,True
+1190,100,archive,spool room,recover_routine,0.0,0.0,0.08,0.08,0.0,0.926,available,False,True,True
+1191,100,signal,lantern walk,offer_care,0.172,0.166,0.08,0.08,0.0,0.938,available,True,True,True
+1192,100,orchard,satchel shed,treat_pain,0.0,0.0,0.119,0.103,0.017,0.95,treat pain,True,True,True
+1193,100,repair_ring,arrival court,continue_project,0.0,0.0,0.08,0.08,0.0,0.054,available,False,True,True
+1194,100,riverbend,plank hall,offer_care,0.072,0.102,0.08,0.08,0.057,0.95,available,True,True,True
+1195,100,roofward,warm lane,treat_pain,0.137,0.082,0.117082,0.099934,0.017,0.898,treat pain,True,True,True
+1196,100,archive,ink niche,continue_project,0.0,0.03,0.08,0.08,0.0,0.928,available,False,True,True
+1197,100,signal,lantern walk,path_to_rest,0.166,0.16,0.08,0.08,0.0,0.95,available,False,True,True
+1198,100,orchard,market plank,perform_chain_step,0.0,0.0,0.103,0.087,0.011,0.924,available,False,True,True
+1199,100,repair_ring,wire bench,recover_routine,0.0,0.0,0.08,0.08,0.0,0.056,available,False,True,True
+1200,101,riverbend,plank hall,inspect_affordance,0.102,0.132,0.08,0.08,0.051,0.95,available,False,True,True
+1201,101,roofward,warm lane,interrupt_routine,0.082,0.076,0.099934,0.08287,0.011,0.922,available,False,True,True
+1202,101,archive,ink niche,ask_dialect_memory,0.03,0.06,0.08,0.08,0.0,0.93,available,False,True,True
+1203,101,signal,lantern walk,rest,0.16,0.13,0.08,0.135,0.0,0.95,rest,True,True,True
+1204,101,orchard,seed lane,dry_off,0.0,0.0,0.087,0.08,0.0,0.926,dry off,True,True,True
+1205,101,repair_ring,spark lane,path_to_resident,0.0,0.03,0.08,0.08,0.035,0.058,available,False,True,True
+1206,101,riverbend,wet crossing,rest,0.132,0.102,0.08,0.135,0.086,0.95,rest,True,True,True
+1207,101,roofward,ledger loft,dry_off,0.076,0.07,0.08287,0.08,0.0,0.924,dry off,True,True,True
+1208,101,archive,ink niche,path_to_resident,0.06,0.09,0.08,0.08,0.0,0.932,available,False,True,True
+1209,101,signal,mast base,inspect_affordance,0.13,0.16,0.135,0.11676,0.0,0.924,available,False,True,True
+1210,101,orchard,seed lane,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.928,available,False,True,True
+1211,101,repair_ring,spark lane,ask_dialect_memory,0.03,0.06,0.08,0.08,0.07,0.06,available,False,True,True
+1212,102,riverbend,wet crossing,perform_chain_step,0.102,0.096,0.135,0.117656,0.121,0.95,available,False,True,True
+1213,102,roofward,ledger loft,recover_routine,0.07,0.064,0.08,0.08,0.0,0.926,available,False,True,True
+1214,102,archive,memory desk,offer_care,0.09,0.084,0.08,0.08,0.0,0.95,available,True,True,True
+1215,102,signal,lantern walk,treat_pain,0.16,0.105,0.11676,0.09929,0.0,0.948,treat pain,True,True,True
+1216,102,orchard,seed lane,continue_project,0.0,0.0,0.08,0.08,0.0,0.93,available,False,True,True
+1217,102,repair_ring,wire bench,path_to_rest,0.06,0.054,0.08,0.08,0.064,0.062,available,False,True,True
+1218,102,riverbend,kit alcove,treat_pain,0.096,0.041,0.117656,0.101082,0.115,0.95,treat pain,True,True,True
+1219,102,roofward,sun sill,continue_project,0.064,0.058,0.08,0.08,0.0,0.928,available,False,True,True
+1220,102,archive,memory desk,path_to_rest,0.084,0.078,0.08,0.08,0.0,0.95,available,False,True,True
+1221,102,signal,mast base,perform_chain_step,0.105,0.135,0.09929,0.0814,0.0,0.922,available,False,True,True
+1222,102,orchard,arrival court,recover_routine,0.0,0.0,0.08,0.08,0.0,0.932,available,False,True,True
+1223,102,repair_ring,spark lane,offer_care,0.054,0.084,0.08,0.08,0.099,0.086,available,True,True,True
+1224,103,riverbend,dry ridge,interrupt_routine,0.041,0.035,0.101082,0.084592,0.109,0.95,available,False,True,True
+1225,103,roofward,sun sill,ask_dialect_memory,0.058,0.052,0.08,0.08,0.0,0.93,available,False,True,True
+1226,103,archive,memory desk,rest,0.078,0.048,0.08,0.135,0.0,0.95,rest,True,True,True
+1227,103,signal,mast base,dry_off,0.135,0.165,0.0814,0.08,0.0,0.896,dry off,True,True,True
+1228,103,orchard,seed lane,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.934,available,False,True,True
+1229,103,repair_ring,bell alcove,inspect_affordance,0.084,0.078,0.08,0.08,0.093,0.088,available,False,True,True
+1230,103,riverbend,kit alcove,dry_off,0.035,0.029,0.084592,0.08,0.049,0.95,dry off,True,True,True
+1231,103,roofward,warm lane,path_to_resident,0.052,0.046,0.08,0.08,0.0,0.95,available,False,True,True
+1232,103,archive,stone stacks,inspect_affordance,0.048,0.042,0.135,0.118412,0.0,0.924,available,False,True,True
+1233,103,signal,lantern walk,interrupt_routine,0.165,0.159,0.08,0.08,0.0,0.92,available,False,True,True
+1234,103,orchard,market plank,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.908,available,False,True,True
+1235,103,repair_ring,cool corner,rest,0.078,0.048,0.08,0.135,0.087,0.062,rest,True,True,True
+1236,104,roofward,sun sill,ask_dialect_memory,0.046,0.04,0.08,0.08,0.0,0.95,available,False,True,True
+1237,104,archive,memory desk,rest,0.042,0.012,0.118412,0.173412,0.0,0.948,rest,True,True,True
+1238,104,signal,mast base,dry_off,0.159,0.189,0.08,0.08,0.0,0.894,dry off,True,True,True
+1239,104,orchard,satchel shed,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.932,available,False,True,True
+1240,104,repair_ring,bell alcove,inspect_affordance,0.048,0.042,0.135,0.118412,0.081,0.064,available,False,True,True
+1241,104,riverbend,kit alcove,dry_off,0.029,0.023,0.08,0.08,0.0,0.95,dry off,True,True,True
+1242,104,roofward,warm lane,path_to_resident,0.04,0.034,0.08,0.08,0.0,0.95,available,False,True,True
+1243,104,archive,stone stacks,inspect_affordance,0.012,0.006,0.173412,0.157328,0.0,0.922,available,False,True,True
+1244,104,signal,lantern walk,interrupt_routine,0.189,0.183,0.08,0.08,0.0,0.918,available,False,True,True
+1245,104,orchard,market plank,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.906,available,False,True,True
+1246,104,repair_ring,cool corner,rest,0.042,0.012,0.118412,0.173412,0.075,0.05,rest,True,True,True
+1247,104,riverbend,dry ridge,interrupt_routine,0.023,0.017,0.08,0.08,0.0,0.95,available,False,True,True
+1248,105,roofward,glass stair,offer_care,0.034,0.064,0.08,0.08,0.0,0.924,available,True,True,True
+1249,105,archive,memory desk,treat_pain,0.006,0.0,0.157328,0.141328,0.0,0.946,treat pain,True,True,True
+1250,105,signal,lantern walk,continue_project,0.183,0.177,0.08,0.08,0.0,0.942,available,False,True,True
+1251,105,orchard,satchel shed,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.93,available,False,True,True
+1252,105,repair_ring,cool corner,perform_chain_step,0.012,0.006,0.173412,0.157328,0.069,0.05,available,False,True,True
+1253,105,riverbend,plank hall,continue_project,0.017,0.047,0.08,0.08,0.0,0.95,available,False,True,True
+1254,105,roofward,warm lane,path_to_rest,0.064,0.058,0.08,0.08,0.0,0.948,available,False,True,True
+1255,105,archive,ink niche,perform_chain_step,0.0,0.03,0.141328,0.124908,0.0,0.948,available,False,True,True
+1256,105,signal,lens room,recover_routine,0.177,0.171,0.08,0.08,0.0,0.944,available,False,True,True
+1257,105,orchard,satchel shed,offer_care,0.0,0.0,0.08,0.08,0.0,0.95,available,True,True,True
+1258,105,repair_ring,cool corner,treat_pain,0.006,0.0,0.157328,0.141328,0.063,0.05,treat pain,True,True,True
+1259,105,riverbend,arrival court,recover_routine,0.047,0.041,0.08,0.08,0.0,0.924,available,False,True,True
+1260,106,roofward,warm lane,rest,0.058,0.028,0.08,0.135,0.0,0.95,rest,True,True,True
+1261,106,archive,spool room,dry_off,0.03,0.024,0.124908,0.108572,0.0,0.95,dry off,True,True,True
+1262,106,signal,lantern walk,path_to_resident,0.171,0.165,0.08,0.08,0.0,0.95,available,False,True,True
+1263,106,orchard,satchel shed,inspect_affordance,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1264,106,repair_ring,wire bench,interrupt_routine,0.0,0.0,0.141328,0.125328,0.057,0.052,available,False,True,True
+1265,106,riverbend,plank hall,path_to_resident,0.041,0.071,0.08,0.08,0.0,0.926,available,False,True,True
+1266,106,roofward,warm lane,inspect_affordance,0.028,0.022,0.135,0.118692,0.0,0.95,available,False,True,True
+1267,106,archive,ink niche,interrupt_routine,0.024,0.054,0.108572,0.091816,0.0,0.95,available,False,True,True
+1268,106,signal,mast base,ask_dialect_memory,0.165,0.195,0.08,0.08,0.0,0.924,available,False,True,True
+1269,106,orchard,satchel shed,rest,0.0,0.0,0.08,0.135,0.0,0.95,rest,True,True,True
+1270,106,repair_ring,wire bench,dry_off,0.0,0.0,0.125328,0.109328,0.0,0.054,dry off,True,True,True
+1271,106,riverbend,wet crossing,ask_dialect_memory,0.071,0.065,0.08,0.08,0.035,0.928,available,False,True,True
+1272,107,roofward,warm lane,treat_pain,0.022,0.0,0.118692,0.102692,0.0,0.95,treat pain,True,True,True
+1273,107,archive,ink niche,continue_project,0.054,0.084,0.091816,0.08,0.0,0.95,available,False,True,True
+1274,107,signal,lantern walk,path_to_rest,0.195,0.189,0.08,0.08,0.0,0.948,available,False,True,True
+1275,107,orchard,market plank,perform_chain_step,0.0,0.0,0.135,0.119,0.0,0.924,available,False,True,True
+1276,107,repair_ring,spark lane,recover_routine,0.0,0.03,0.109328,0.092908,0.035,0.056,available,False,True,True
+1277,107,riverbend,kit alcove,path_to_rest,0.065,0.059,0.08,0.08,0.029,0.95,available,False,True,True
+1278,107,roofward,ledger loft,perform_chain_step,0.0,0.0,0.102692,0.086692,0.0,0.95,available,False,True,True
+1279,107,archive,ink niche,recover_routine,0.084,0.114,0.08,0.08,0.0,0.95,available,False,True,True
+1280,107,signal,mast base,offer_care,0.189,0.219,0.08,0.08,0.0,0.922,available,True,True,True
+1281,107,orchard,satchel shed,treat_pain,0.0,0.0,0.119,0.103,0.0,0.948,treat pain,True,True,True
+1282,107,repair_ring,spark lane,continue_project,0.03,0.06,0.092908,0.08,0.07,0.058,available,False,True,True
+1283,107,riverbend,dry ridge,offer_care,0.059,0.053,0.08,0.08,0.023,0.95,available,True,True,True
+1284,108,roofward,ledger loft,dry_off,0.0,0.0,0.086692,0.08,0.0,0.95,dry off,True,True,True
+1285,108,archive,spool room,path_to_resident,0.114,0.108,0.08,0.08,0.0,0.95,available,False,True,True
+1286,108,signal,arrival court,inspect_affordance,0.219,0.213,0.08,0.08,0.035,0.924,available,False,True,True
+1287,108,orchard,market plank,interrupt_routine,0.0,0.0,0.103,0.087,0.0,0.922,available,False,True,True
+1288,108,repair_ring,spark lane,ask_dialect_memory,0.06,0.09,0.08,0.08,0.105,0.06,available,False,True,True
+1289,108,riverbend,dry ridge,inspect_affordance,0.053,0.047,0.08,0.08,0.017,0.95,available,False,True,True
+1290,108,roofward,sun sill,interrupt_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1291,108,archive,stone stacks,ask_dialect_memory,0.108,0.102,0.08,0.08,0.0,0.924,available,False,True,True
+1292,108,signal,mast base,rest,0.213,0.183,0.08,0.135,0.029,0.898,rest,True,True,True
+1293,108,orchard,seed lane,dry_off,0.0,0.0,0.087,0.08,0.0,0.924,dry off,True,True,True
+1294,108,repair_ring,wire bench,path_to_resident,0.09,0.084,0.08,0.08,0.099,0.062,available,False,True,True
+1295,108,riverbend,kit alcove,rest,0.047,0.017,0.08,0.135,0.011,0.95,rest,True,True,True
+1296,109,roofward,sun sill,continue_project,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1297,109,archive,memory desk,path_to_rest,0.102,0.096,0.08,0.08,0.0,0.948,available,False,True,True
+1298,109,signal,mast base,perform_chain_step,0.183,0.213,0.135,0.116018,0.023,0.872,available,False,True,True
+1299,109,orchard,mud row,recover_routine,0.0,0.03,0.08,0.08,0.035,0.926,available,False,True,True
+1300,109,repair_ring,spark lane,offer_care,0.084,0.114,0.08,0.08,0.134,0.086,available,True,True,True
+1301,109,riverbend,kit alcove,perform_chain_step,0.017,0.011,0.135,0.118846,0.005,0.95,available,False,True,True
+1302,109,roofward,warm lane,recover_routine,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1303,109,archive,stone stacks,offer_care,0.096,0.09,0.08,0.08,0.0,0.922,available,True,True,True
+1304,109,signal,lantern walk,treat_pain,0.213,0.158,0.116018,0.097806,0.017,0.896,treat pain,True,True,True
+1305,109,orchard,seed lane,continue_project,0.03,0.024,0.08,0.08,0.029,0.928,available,False,True,True
+1306,109,repair_ring,wire bench,path_to_rest,0.114,0.108,0.08,0.08,0.128,0.088,available,False,True,True
+1307,109,riverbend,kit alcove,treat_pain,0.011,0.0,0.118846,0.102846,0.0,0.95,treat pain,True,True,True
+1308,110,roofward,ledger loft,path_to_resident,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1309,110,archive,stone stacks,inspect_affordance,0.09,0.084,0.08,0.08,0.0,0.896,available,False,True,True
+1310,110,signal,lantern walk,interrupt_routine,0.158,0.152,0.097806,0.08,0.011,0.92,available,False,True,True
+1311,110,orchard,market plank,ask_dialect_memory,0.024,0.018,0.08,0.08,0.023,0.902,available,False,True,True
+1312,110,repair_ring,cool corner,rest,0.108,0.078,0.08,0.135,0.122,0.062,rest,True,True,True
+1313,110,riverbend,dry ridge,interrupt_routine,0.0,0.0,0.102846,0.086846,0.0,0.95,available,False,True,True
+1314,110,roofward,warm lane,ask_dialect_memory,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1315,110,archive,memory desk,rest,0.084,0.054,0.08,0.135,0.0,0.92,rest,True,True,True
+1316,110,signal,lens room,dry_off,0.152,0.146,0.08,0.08,0.0,0.922,dry off,True,True,True
+1317,110,orchard,seed lane,path_to_resident,0.018,0.012,0.08,0.08,0.017,0.904,available,False,True,True
+1318,110,repair_ring,wire bench,inspect_affordance,0.078,0.072,0.135,0.117992,0.116,0.064,available,False,True,True
+1319,110,riverbend,plank hall,dry_off,0.0,0.03,0.086846,0.08,0.0,0.95,dry off,True,True,True
+1320,111,roofward,warm lane,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True
+1321,111,archive,ink niche,perform_chain_step,0.054,0.084,0.135,0.117824,0.0,0.922,available,False,True,True
+1322,111,signal,lantern walk,recover_routine,0.146,0.14,0.08,0.08,0.0,0.946,available,False,True,True
+1323,111,orchard,mud row,offer_care,0.012,0.042,0.08,0.08,0.052,0.928,available,True,True,True
+1324,111,repair_ring,cool corner,treat_pain,0.072,0.017,0.117992,0.101754,0.11,0.05,treat pain,True,True,True
+1325,111,riverbend,wet crossing,recover_routine,0.03,0.024,0.08,0.08,0.035,0.95,available,False,True,True
+1326,111,roofward,warm lane,offer_care,0.0,0.0,0.08,0.08,0.0,0.95,available,True,True,True
+1327,111,archive,memory desk,treat_pain,0.084,0.029,0.117824,0.101418,0.0,0.946,treat pain,True,True,True
+1328,111,signal,mast base,continue_project,0.14,0.17,0.08,0.08,0.0,0.92,available,False,True,True
+1329,111,orchard,satchel shed,path_to_rest,0.042,0.036,0.08,0.08,0.046,0.95,available,False,True,True
+1330,111,repair_ring,wire bench,perform_chain_step,0.017,0.011,0.101754,0.0856,0.104,0.052,available,False,True,True
+1331,111,riverbend,wet crossing,continue_project,0.024,0.018,0.08,0.08,0.07,0.95,available,False,True,True
+1332,112,archive,ink niche,perform_chain_step,0.029,0.059,0.101418,0.084592,0.0,0.948,available,False,True,True
+1333,112,signal,mast base,recover_routine,0.17,0.2,0.08,0.08,0.0,0.894,available,False,True,True
+1334,112,orchard,satchel shed,offer_care,0.036,0.03,0.08,0.08,0.04,0.95,available,True,True,True
+1335,112,repair_ring,cool corner,treat_pain,0.011,0.0,0.0856,0.08,0.098,0.05,treat pain,True,True,True
+1336,112,riverbend,kit alcove,recover_routine,0.018,0.012,0.08,0.08,0.064,0.95,available,False,True,True
+1337,112,roofward,warm lane,offer_care,0.0,0.0,0.08,0.08,0.0,0.95,available,True,True,True
+1338,112,archive,memory desk,treat_pain,0.059,0.004,0.084592,0.08,0.0,0.95,treat pain,True,True,True
+1339,112,signal,signal perch,continue_project,0.2,0.194,0.08,0.08,0.0,0.896,available,False,True,True
+1340,112,orchard,satchel shed,path_to_rest,0.03,0.024,0.08,0.08,0.034,0.95,available,False,True,True
+1341,112,repair_ring,wire bench,perform_chain_step,0.0,0.0,0.08,0.08,0.092,0.052,available,False,True,True
+1342,112,riverbend,wet crossing,continue_project,0.012,0.006,0.08,0.08,0.099,0.95,available,False,True,True
+1343,112,roofward,warm lane,path_to_rest,0.0,0.0,0.08,0.08,0.0,0.95,available,False,True,True

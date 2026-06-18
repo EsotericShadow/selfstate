@@ -1,0 +1,1177 @@
+{
+  "body_state": {
+    "archive": {
+      "comfort": 0.8516,
+      "energy": 0.08,
+      "pain": 0.004,
+      "temperature": 0.95,
+      "wetness": 0.0
+    },
+    "orchard": {
+      "comfort": 0.83848,
+      "energy": 0.08,
+      "pain": 0.024,
+      "temperature": 0.95,
+      "wetness": 0.034
+    },
+    "repair_ring": {
+      "comfort": 0.71072,
+      "energy": 0.08,
+      "pain": 0.0,
+      "temperature": 0.052,
+      "wetness": 0.092
+    },
+    "riverbend": {
+      "comfort": 0.83308,
+      "energy": 0.08,
+      "pain": 0.006,
+      "temperature": 0.95,
+      "wetness": 0.099
+    },
+    "roofward": {
+      "comfort": 0.853,
+      "energy": 0.08,
+      "pain": 0.0,
+      "temperature": 0.95,
+      "wetness": 0.0
+    },
+    "signal": {
+      "comfort": 0.77754,
+      "energy": 0.08,
+      "pain": 0.194,
+      "temperature": 0.896,
+      "wetness": 0.0
+    }
+  },
+  "boundary": "Deterministic browser-local continuous-pathfinding/body-care scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "chain_progress": {
+    "archive": 4,
+    "orchard": 4,
+    "repair_ring": 4,
+    "riverbend": 4,
+    "roofward": 4,
+    "signal": 4
+  },
+  "current_room": {
+    "archive": "memory desk",
+    "orchard": "satchel shed",
+    "repair_ring": "wire bench",
+    "riverbend": "wet crossing",
+    "roofward": "warm lane",
+    "signal": "signal perch"
+  },
+  "dialect_memory": {
+    "archive:Nia": [
+      [
+        66,
+        "archive-spool-20-3"
+      ],
+      [
+        66,
+        "archive-spool-20-3"
+      ],
+      [
+        68,
+        "archive-ink-22-3"
+      ],
+      [
+        68,
+        "archive-memory-22-3"
+      ],
+      [
+        70,
+        "archive-memory-1-3"
+      ],
+      [
+        70,
+        "archive-stone-1-3"
+      ],
+      [
+        89,
+        "archive-ink-20-3"
+      ],
+      [
+        89,
+        "archive-memory-20-3"
+      ],
+      [
+        91,
+        "archive-memory-22-3"
+      ],
+      [
+        91,
+        "archive-stone-22-3"
+      ],
+      [
+        93,
+        "archive-stone-1-3"
+      ],
+      [
+        93,
+        "archive-memory-1-3"
+      ],
+      [
+        95,
+        "archive-stone-3-3"
+      ],
+      [
+        95,
+        "archive-memory-3-3"
+      ],
+      [
+        112,
+        "archive-ink-20-3"
+      ],
+      [
+        112,
+        "archive-memory-20-3"
+      ]
+    ],
+    "archive:Toma": [
+      [
+        69,
+        "archive-stone-0-3"
+      ],
+      [
+        71,
+        "archive-stone-2-3"
+      ],
+      [
+        71,
+        "archive-spool-2-3"
+      ],
+      [
+        74,
+        "archive-memory-5-3"
+      ],
+      [
+        81,
+        "archive-stone-12-3"
+      ],
+      [
+        87,
+        "archive-stone-18-3"
+      ],
+      [
+        88,
+        "archive-stone-19-3"
+      ],
+      [
+        88,
+        "archive-memory-19-3"
+      ],
+      [
+        90,
+        "archive-memory-21-3"
+      ],
+      [
+        90,
+        "archive-memory-21-3"
+      ],
+      [
+        92,
+        "archive-arrival-0-3"
+      ],
+      [
+        92,
+        "archive-stone-0-3"
+      ],
+      [
+        94,
+        "archive-stone-2-3"
+      ],
+      [
+        94,
+        "archive-spool-2-3"
+      ],
+      [
+        101,
+        "archive-ink-9-3"
+      ],
+      [
+        108,
+        "archive-stone-16-3"
+      ]
+    ],
+    "orchard:Ivo": [
+      [
+        80,
+        "orchard-satchel-11-3"
+      ],
+      [
+        80,
+        "orchard-market-11-3"
+      ],
+      [
+        82,
+        "orchard-mud-13-3"
+      ],
+      [
+        82,
+        "orchard-seed-13-3"
+      ],
+      [
+        84,
+        "orchard-satchel-15-3"
+      ],
+      [
+        84,
+        "orchard-market-15-3"
+      ],
+      [
+        86,
+        "orchard-seed-17-3"
+      ],
+      [
+        86,
+        "orchard-mud-17-3"
+      ],
+      [
+        105,
+        "orchard-satchel-13-3"
+      ],
+      [
+        105,
+        "orchard-satchel-13-3"
+      ],
+      [
+        107,
+        "orchard-market-15-3"
+      ],
+      [
+        107,
+        "orchard-satchel-15-3"
+      ],
+      [
+        109,
+        "orchard-mud-17-3"
+      ],
+      [
+        109,
+        "orchard-seed-17-3"
+      ],
+      [
+        111,
+        "orchard-mud-19-3"
+      ],
+      [
+        111,
+        "orchard-satchel-19-3"
+      ]
+    ],
+    "orchard:Mara": [
+      [
+        83,
+        "orchard-mud-14-3"
+      ],
+      [
+        85,
+        "orchard-seed-16-3"
+      ],
+      [
+        85,
+        "orchard-mud-16-3"
+      ],
+      [
+        87,
+        "orchard-mud-18-3"
+      ],
+      [
+        87,
+        "orchard-seed-18-3"
+      ],
+      [
+        90,
+        "orchard-market-21-3"
+      ],
+      [
+        97,
+        "orchard-seed-5-3"
+      ],
+      [
+        103,
+        "orchard-market-11-3"
+      ],
+      [
+        104,
+        "orchard-satchel-12-3"
+      ],
+      [
+        104,
+        "orchard-market-12-3"
+      ],
+      [
+        106,
+        "orchard-satchel-14-3"
+      ],
+      [
+        106,
+        "orchard-satchel-14-3"
+      ],
+      [
+        108,
+        "orchard-market-16-3"
+      ],
+      [
+        108,
+        "orchard-seed-16-3"
+      ],
+      [
+        110,
+        "orchard-market-18-3"
+      ],
+      [
+        110,
+        "orchard-seed-18-3"
+      ]
+    ],
+    "repair_ring:Juno": [
+      [
+        69,
+        "repair_ring-wire-0-3"
+      ],
+      [
+        71,
+        "repair_ring-cool-2-3"
+      ],
+      [
+        71,
+        "repair_ring-wire-2-3"
+      ],
+      [
+        74,
+        "repair_ring-wire-5-3"
+      ],
+      [
+        81,
+        "repair_ring-spark-12-3"
+      ],
+      [
+        87,
+        "repair_ring-bell-18-3"
+      ],
+      [
+        88,
+        "repair_ring-bell-19-3"
+      ],
+      [
+        88,
+        "repair_ring-bell-19-3"
+      ],
+      [
+        90,
+        "repair_ring-cool-21-3"
+      ],
+      [
+        90,
+        "repair_ring-wire-21-3"
+      ],
+      [
+        92,
+        "repair_ring-spark-0-3"
+      ],
+      [
+        92,
+        "repair_ring-bell-0-3"
+      ],
+      [
+        94,
+        "repair_ring-spark-2-3"
+      ],
+      [
+        94,
+        "repair_ring-wire-2-3"
+      ],
+      [
+        101,
+        "repair_ring-spark-9-3"
+      ],
+      [
+        108,
+        "repair_ring-spark-16-3"
+      ]
+    ],
+    "repair_ring:Pax": [
+      [
+        66,
+        "repair_ring-cool-20-3"
+      ],
+      [
+        66,
+        "repair_ring-cool-20-3"
+      ],
+      [
+        68,
+        "repair_ring-cool-22-3"
+      ],
+      [
+        68,
+        "repair_ring-wire-22-3"
+      ],
+      [
+        70,
+        "repair_ring-spark-1-3"
+      ],
+      [
+        70,
+        "repair_ring-wire-1-3"
+      ],
+      [
+        89,
+        "repair_ring-cool-20-3"
+      ],
+      [
+        89,
+        "repair_ring-cool-20-3"
+      ],
+      [
+        91,
+        "repair_ring-cool-22-3"
+      ],
+      [
+        91,
+        "repair_ring-wire-22-3"
+      ],
+      [
+        93,
+        "repair_ring-bell-1-3"
+      ],
+      [
+        93,
+        "repair_ring-bell-1-3"
+      ],
+      [
+        95,
+        "repair_ring-cool-3-3"
+      ],
+      [
+        95,
+        "repair_ring-wire-3-3"
+      ],
+      [
+        112,
+        "repair_ring-cool-20-3"
+      ],
+      [
+        112,
+        "repair_ring-wire-20-3"
+      ]
+    ],
+    "riverbend:Ari": [
+      [
+        73,
+        "riverbend-kit-4-3"
+      ],
+      [
+        73,
+        "riverbend-wet-4-3"
+      ],
+      [
+        75,
+        "riverbend-dry-6-3"
+      ],
+      [
+        75,
+        "riverbend-kit-6-3"
+      ],
+      [
+        77,
+        "riverbend-kit-8-3"
+      ],
+      [
+        77,
+        "riverbend-dry-8-3"
+      ],
+      [
+        79,
+        "riverbend-plank-10-3"
+      ],
+      [
+        79,
+        "riverbend-wet-10-3"
+      ],
+      [
+        96,
+        "riverbend-kit-4-3"
+      ],
+      [
+        96,
+        "riverbend-wet-4-3"
+      ],
+      [
+        98,
+        "riverbend-dry-6-3"
+      ],
+      [
+        98,
+        "riverbend-dry-6-3"
+      ],
+      [
+        100,
+        "riverbend-plank-8-3"
+      ],
+      [
+        100,
+        "riverbend-plank-8-3"
+      ],
+      [
+        102,
+        "riverbend-wet-10-3"
+      ],
+      [
+        102,
+        "riverbend-kit-10-3"
+      ]
+    ],
+    "riverbend:Lio": [
+      [
+        74,
+        "riverbend-kit-5-3"
+      ],
+      [
+        76,
+        "riverbend-kit-7-3"
+      ],
+      [
+        76,
+        "riverbend-dry-7-3"
+      ],
+      [
+        78,
+        "riverbend-plank-9-3"
+      ],
+      [
+        78,
+        "riverbend-arrival-9-3"
+      ],
+      [
+        85,
+        "riverbend-dry-16-3"
+      ],
+      [
+        92,
+        "riverbend-dry-0-3"
+      ],
+      [
+        97,
+        "riverbend-wet-5-3"
+      ],
+      [
+        97,
+        "riverbend-plank-5-3"
+      ],
+      [
+        99,
+        "riverbend-plank-7-3"
+      ],
+      [
+        99,
+        "riverbend-arrival-7-3"
+      ],
+      [
+        101,
+        "riverbend-plank-9-3"
+      ],
+      [
+        101,
+        "riverbend-wet-9-3"
+      ],
+      [
+        103,
+        "riverbend-dry-11-3"
+      ],
+      [
+        103,
+        "riverbend-kit-11-3"
+      ],
+      [
+        106,
+        "riverbend-wet-14-3"
+      ]
+    ],
+    "roofward:Fay": [
+      [
+        83,
+        "roofward-warm-14-3"
+      ],
+      [
+        85,
+        "roofward-ledger-16-3"
+      ],
+      [
+        85,
+        "roofward-warm-16-3"
+      ],
+      [
+        87,
+        "roofward-glass-18-3"
+      ],
+      [
+        87,
+        "roofward-glass-18-3"
+      ],
+      [
+        90,
+        "roofward-warm-21-3"
+      ],
+      [
+        97,
+        "roofward-sun-5-3"
+      ],
+      [
+        103,
+        "roofward-sun-11-3"
+      ],
+      [
+        104,
+        "roofward-sun-12-3"
+      ],
+      [
+        104,
+        "roofward-warm-12-3"
+      ],
+      [
+        106,
+        "roofward-warm-14-3"
+      ],
+      [
+        106,
+        "roofward-warm-14-3"
+      ],
+      [
+        108,
+        "roofward-ledger-16-3"
+      ],
+      [
+        108,
+        "roofward-sun-16-3"
+      ],
+      [
+        110,
+        "roofward-ledger-18-3"
+      ],
+      [
+        110,
+        "roofward-warm-18-3"
+      ]
+    ],
+    "roofward:Sera": [
+      [
+        80,
+        "roofward-warm-11-3"
+      ],
+      [
+        80,
+        "roofward-sun-11-3"
+      ],
+      [
+        82,
+        "roofward-glass-13-3"
+      ],
+      [
+        82,
+        "roofward-arrival-13-3"
+      ],
+      [
+        84,
+        "roofward-warm-15-3"
+      ],
+      [
+        84,
+        "roofward-ledger-15-3"
+      ],
+      [
+        86,
+        "roofward-sun-17-3"
+      ],
+      [
+        86,
+        "roofward-warm-17-3"
+      ],
+      [
+        105,
+        "roofward-glass-13-3"
+      ],
+      [
+        105,
+        "roofward-warm-13-3"
+      ],
+      [
+        107,
+        "roofward-warm-15-3"
+      ],
+      [
+        107,
+        "roofward-ledger-15-3"
+      ],
+      [
+        109,
+        "roofward-sun-17-3"
+      ],
+      [
+        109,
+        "roofward-warm-17-3"
+      ],
+      [
+        111,
+        "roofward-warm-19-3"
+      ],
+      [
+        111,
+        "roofward-warm-19-3"
+      ]
+    ],
+    "signal:Milo": [
+      [
+        74,
+        "signal-lens-5-3"
+      ],
+      [
+        76,
+        "signal-mast-7-3"
+      ],
+      [
+        76,
+        "signal-lantern-7-3"
+      ],
+      [
+        78,
+        "signal-lens-9-3"
+      ],
+      [
+        78,
+        "signal-lens-9-3"
+      ],
+      [
+        85,
+        "signal-mast-16-3"
+      ],
+      [
+        92,
+        "signal-lantern-0-3"
+      ],
+      [
+        97,
+        "signal-mast-5-3"
+      ],
+      [
+        97,
+        "signal-mast-5-3"
+      ],
+      [
+        99,
+        "signal-lantern-7-3"
+      ],
+      [
+        99,
+        "signal-mast-7-3"
+      ],
+      [
+        101,
+        "signal-lantern-9-3"
+      ],
+      [
+        101,
+        "signal-mast-9-3"
+      ],
+      [
+        103,
+        "signal-mast-11-3"
+      ],
+      [
+        103,
+        "signal-lantern-11-3"
+      ],
+      [
+        106,
+        "signal-mast-14-3"
+      ]
+    ],
+    "signal:Ren": [
+      [
+        73,
+        "signal-lantern-4-3"
+      ],
+      [
+        73,
+        "signal-mast-4-3"
+      ],
+      [
+        75,
+        "signal-lantern-6-3"
+      ],
+      [
+        75,
+        "signal-lantern-6-3"
+      ],
+      [
+        77,
+        "signal-mast-8-3"
+      ],
+      [
+        77,
+        "signal-lantern-8-3"
+      ],
+      [
+        79,
+        "signal-signal-10-3"
+      ],
+      [
+        79,
+        "signal-lens-10-3"
+      ],
+      [
+        96,
+        "signal-mast-4-3"
+      ],
+      [
+        96,
+        "signal-lantern-4-3"
+      ],
+      [
+        98,
+        "signal-lantern-6-3"
+      ],
+      [
+        98,
+        "signal-lantern-6-3"
+      ],
+      [
+        100,
+        "signal-lantern-8-3"
+      ],
+      [
+        100,
+        "signal-lantern-8-3"
+      ],
+      [
+        102,
+        "signal-lantern-10-3"
+      ],
+      [
+        102,
+        "signal-mast-10-3"
+      ]
+    ]
+  },
+  "settlements": [
+    {
+      "affordance_chain": [
+        "inspect plank latch",
+        "lift cedar kit",
+        "place ridge lantern",
+        "repair crossing"
+      ],
+      "cold_room": "arrival court",
+      "dialect_id": "riverbend-dialect-8",
+      "edges": [
+        [
+          "arrival court",
+          "plank hall"
+        ],
+        [
+          "plank hall",
+          "wet crossing"
+        ],
+        [
+          "plank hall",
+          "dry ridge"
+        ],
+        [
+          "dry ridge",
+          "kit alcove"
+        ],
+        [
+          "wet crossing",
+          "kit alcove"
+        ]
+      ],
+      "flower_node": "node-03",
+      "pain_room": "plank hall",
+      "resident_a": "Ari",
+      "resident_b": "Lio",
+      "rest_room": "kit alcove",
+      "rooms": [
+        "arrival court",
+        "plank hall",
+        "wet crossing",
+        "dry ridge",
+        "kit alcove"
+      ],
+      "schedule_loop": [
+        "plank hall",
+        "kit alcove",
+        "dry ridge",
+        "arrival court"
+      ],
+      "sensory_cue": "river slap / cedar resin",
+      "settlement_id": "riverbend",
+      "wet_room": "wet crossing"
+    },
+    {
+      "affordance_chain": [
+        "inspect glass latch",
+        "carry herb ledger",
+        "align sun lens",
+        "open warm archive"
+      ],
+      "cold_room": "glass stair",
+      "dialect_id": "roofward-dialect-8",
+      "edges": [
+        [
+          "arrival court",
+          "glass stair"
+        ],
+        [
+          "glass stair",
+          "warm lane"
+        ],
+        [
+          "warm lane",
+          "ledger loft"
+        ],
+        [
+          "ledger loft",
+          "sun sill"
+        ],
+        [
+          "warm lane",
+          "sun sill"
+        ]
+      ],
+      "flower_node": "node-05",
+      "pain_room": "glass stair",
+      "resident_a": "Fay",
+      "resident_b": "Sera",
+      "rest_room": "warm lane",
+      "rooms": [
+        "arrival court",
+        "glass stair",
+        "warm lane",
+        "ledger loft",
+        "sun sill"
+      ],
+      "schedule_loop": [
+        "ledger loft",
+        "warm lane",
+        "glass stair",
+        "arrival court"
+      ],
+      "sensory_cue": "hinge ticks / thyme paper",
+      "settlement_id": "roofward",
+      "wet_room": "arrival court"
+    },
+    {
+      "affordance_chain": [
+        "inspect memory tag",
+        "lift signal spool",
+        "ink route mark",
+        "weave recall line"
+      ],
+      "cold_room": "stone stacks",
+      "dialect_id": "archive-dialect-8",
+      "edges": [
+        [
+          "arrival court",
+          "stone stacks"
+        ],
+        [
+          "stone stacks",
+          "spool room"
+        ],
+        [
+          "spool room",
+          "ink niche"
+        ],
+        [
+          "ink niche",
+          "memory desk"
+        ],
+        [
+          "stone stacks",
+          "memory desk"
+        ]
+      ],
+      "flower_node": "node-08",
+      "pain_room": "ink niche",
+      "resident_a": "Nia",
+      "resident_b": "Toma",
+      "rest_room": "memory desk",
+      "rooms": [
+        "arrival court",
+        "stone stacks",
+        "spool room",
+        "ink niche",
+        "memory desk"
+      ],
+      "schedule_loop": [
+        "spool room",
+        "stone stacks",
+        "ink niche",
+        "memory desk"
+      ],
+      "sensory_cue": "page flutter / ink linen",
+      "settlement_id": "archive",
+      "wet_room": "arrival court"
+    },
+    {
+      "affordance_chain": [
+        "inspect mast rope",
+        "lift oil lantern",
+        "align signal lens",
+        "light safe path"
+      ],
+      "cold_room": "mast base",
+      "dialect_id": "signal-dialect-8",
+      "edges": [
+        [
+          "arrival court",
+          "mast base"
+        ],
+        [
+          "mast base",
+          "lantern walk"
+        ],
+        [
+          "lantern walk",
+          "lens room"
+        ],
+        [
+          "lens room",
+          "signal perch"
+        ],
+        [
+          "mast base",
+          "signal perch"
+        ]
+      ],
+      "flower_node": "node-11",
+      "pain_room": "mast base",
+      "resident_a": "Milo",
+      "resident_b": "Ren",
+      "rest_room": "lantern walk",
+      "rooms": [
+        "arrival court",
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "signal perch"
+      ],
+      "schedule_loop": [
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "arrival court"
+      ],
+      "sensory_cue": "static crickets / lamp oil",
+      "settlement_id": "signal",
+      "wet_room": "arrival court"
+    },
+    {
+      "affordance_chain": [
+        "inspect dry cord",
+        "lift seed satchel",
+        "place market token",
+        "seal seed shed"
+      ],
+      "cold_room": "market plank",
+      "dialect_id": "orchard-dialect-8",
+      "edges": [
+        [
+          "arrival court",
+          "seed lane"
+        ],
+        [
+          "seed lane",
+          "mud row"
+        ],
+        [
+          "seed lane",
+          "market plank"
+        ],
+        [
+          "market plank",
+          "satchel shed"
+        ],
+        [
+          "mud row",
+          "satchel shed"
+        ]
+      ],
+      "flower_node": "node-01",
+      "pain_room": "mud row",
+      "resident_a": "Ivo",
+      "resident_b": "Mara",
+      "rest_room": "satchel shed",
+      "rooms": [
+        "arrival court",
+        "seed lane",
+        "mud row",
+        "market plank",
+        "satchel shed"
+      ],
+      "schedule_loop": [
+        "seed lane",
+        "satchel shed",
+        "market plank",
+        "arrival court"
+      ],
+      "sensory_cue": "cart creak / apple soil",
+      "settlement_id": "orchard",
+      "wet_room": "mud row"
+    },
+    {
+      "affordance_chain": [
+        "inspect bell gauge",
+        "lift insulated tongs",
+        "place copper wire",
+        "stabilize repair"
+      ],
+      "cold_room": "cool corner",
+      "dialect_id": "repair_ring-dialect-8",
+      "edges": [
+        [
+          "arrival court",
+          "wire bench"
+        ],
+        [
+          "wire bench",
+          "spark lane"
+        ],
+        [
+          "spark lane",
+          "bell alcove"
+        ],
+        [
+          "wire bench",
+          "cool corner"
+        ],
+        [
+          "cool corner",
+          "bell alcove"
+        ]
+      ],
+      "flower_node": "node-09",
+      "pain_room": "spark lane",
+      "resident_a": "Juno",
+      "resident_b": "Pax",
+      "rest_room": "cool corner",
+      "rooms": [
+        "arrival court",
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "cool corner"
+      ],
+      "schedule_loop": [
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "cool corner"
+      ],
+      "sensory_cue": "bell hum / hot copper",
+      "settlement_id": "repair_ring",
+      "wet_room": "spark lane"
+    }
+  ]
+}

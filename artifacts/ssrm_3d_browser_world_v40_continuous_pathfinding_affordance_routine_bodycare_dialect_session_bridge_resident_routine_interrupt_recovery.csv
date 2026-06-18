@@ -1,0 +1,1345 @@
+tick_id,day,settlement_id,resident_id,scheduled_task,scheduled_room,avatar_action,interrupted,recovery_action_available,recovery_completed,routine_integrity,visible_routine_state
+0,1,riverbend,Lio,repair project,plank hall,dry_off,True,True,False,0.79,interrupted
+1,1,roofward,Fay,repair project,ledger loft,path_to_resident,False,False,False,0.86,on schedule
+2,1,archive,Toma,repair project,spool room,inspect_affordance,False,False,False,0.86,on schedule
+3,1,signal,Milo,teach dialect,lantern walk,interrupt_routine,True,True,True,0.85,recovered
+4,1,orchard,Mara,teach dialect,satchel shed,ask_dialect_memory,False,False,False,0.86,on schedule
+5,1,repair_ring,Juno,teach dialect,spark lane,rest,False,False,False,0.86,on schedule
+6,1,riverbend,Lio,patrol hazard,dry ridge,interrupt_routine,True,True,True,0.78,recovered
+7,1,roofward,Fay,patrol hazard,glass stair,ask_dialect_memory,False,False,False,0.86,on schedule
+8,1,archive,Toma,patrol hazard,ink niche,rest,False,False,False,0.86,on schedule
+9,1,signal,Milo,restore memory,arrival court,dry_off,False,False,False,0.85,on schedule
+10,1,orchard,Mara,restore memory,arrival court,path_to_resident,False,False,False,0.86,on schedule
+11,1,repair_ring,Juno,restore memory,cool corner,inspect_affordance,False,False,False,0.86,on schedule
+12,2,riverbend,Ari,repair project,plank hall,continue_project,False,False,False,0.86,on schedule
+13,2,roofward,Sera,repair project,ledger loft,path_to_rest,False,False,False,0.86,on schedule
+14,2,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.86,on schedule
+15,2,signal,Ren,teach dialect,lantern walk,recover_routine,False,True,True,0.92,recovered
+16,2,orchard,Ivo,teach dialect,satchel shed,offer_care,False,False,False,0.86,on schedule
+17,2,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.86,on schedule
+18,2,riverbend,Ari,patrol hazard,dry ridge,recover_routine,False,True,True,0.92,recovered
+19,2,roofward,Sera,patrol hazard,glass stair,offer_care,False,False,False,0.86,on schedule
+20,2,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.86,on schedule
+21,2,signal,Ren,restore memory,arrival court,continue_project,False,False,False,0.92,on schedule
+22,2,orchard,Ivo,restore memory,arrival court,path_to_rest,False,False,False,0.86,on schedule
+23,2,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.86,on schedule
+24,3,riverbend,Lio,repair project,plank hall,path_to_resident,False,False,False,0.78,on schedule
+25,3,roofward,Fay,repair project,ledger loft,inspect_affordance,False,False,False,0.86,on schedule
+26,3,archive,Toma,repair project,spool room,interrupt_routine,True,True,True,0.85,recovered
+27,3,signal,Milo,teach dialect,lantern walk,ask_dialect_memory,False,False,False,0.85,on schedule
+28,3,orchard,Mara,teach dialect,satchel shed,rest,False,False,False,0.86,on schedule
+29,3,repair_ring,Juno,teach dialect,spark lane,dry_off,False,False,False,0.86,on schedule
+30,3,riverbend,Lio,patrol hazard,dry ridge,ask_dialect_memory,False,False,False,0.78,on schedule
+31,3,roofward,Fay,patrol hazard,glass stair,rest,False,False,False,0.86,on schedule
+32,3,archive,Toma,patrol hazard,ink niche,dry_off,False,False,False,0.85,on schedule
+33,3,signal,Milo,restore memory,arrival court,path_to_resident,False,False,False,0.85,on schedule
+34,3,orchard,Mara,restore memory,arrival court,inspect_affordance,False,False,False,0.86,on schedule
+35,3,repair_ring,Juno,restore memory,cool corner,interrupt_routine,True,True,False,0.79,interrupted
+36,4,riverbend,Ari,repair project,plank hall,path_to_rest,False,False,False,0.92,on schedule
+37,4,roofward,Sera,repair project,ledger loft,perform_chain_step,False,False,False,0.86,on schedule
+38,4,archive,Nia,repair project,spool room,recover_routine,False,True,True,0.92,recovered
+39,4,signal,Ren,teach dialect,lantern walk,offer_care,False,False,False,0.92,on schedule
+40,4,orchard,Ivo,teach dialect,satchel shed,treat_pain,False,False,False,0.86,on schedule
+41,4,repair_ring,Pax,teach dialect,spark lane,continue_project,False,False,False,0.86,on schedule
+42,4,riverbend,Ari,patrol hazard,dry ridge,offer_care,False,False,False,0.92,on schedule
+43,4,roofward,Sera,patrol hazard,glass stair,treat_pain,False,False,False,0.86,on schedule
+44,4,archive,Nia,patrol hazard,ink niche,continue_project,False,False,False,0.92,on schedule
+45,4,signal,Ren,restore memory,arrival court,path_to_rest,False,False,False,0.92,on schedule
+46,4,orchard,Ivo,restore memory,arrival court,perform_chain_step,False,False,False,0.86,on schedule
+47,4,repair_ring,Pax,restore memory,cool corner,recover_routine,False,True,True,0.92,recovered
+48,5,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.78,on schedule
+49,5,roofward,Fay,repair project,ledger loft,interrupt_routine,True,True,False,0.79,interrupted
+50,5,archive,Toma,repair project,spool room,ask_dialect_memory,False,False,False,0.85,on schedule
+51,5,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.85,on schedule
+52,5,orchard,Mara,teach dialect,satchel shed,dry_off,False,False,False,0.86,on schedule
+53,5,repair_ring,Juno,teach dialect,spark lane,path_to_resident,True,True,True,0.78,recovered
+54,5,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.78,on schedule
+55,5,roofward,Fay,patrol hazard,glass stair,dry_off,False,False,False,0.79,on schedule
+56,5,archive,Toma,patrol hazard,ink niche,path_to_resident,False,False,False,0.85,on schedule
+57,5,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.85,on schedule
+58,5,orchard,Mara,restore memory,arrival court,interrupt_routine,True,True,True,0.85,recovered
+59,5,repair_ring,Juno,restore memory,cool corner,ask_dialect_memory,False,False,False,0.78,on schedule
+60,6,riverbend,Ari,repair project,plank hall,perform_chain_step,True,True,True,0.91,recovered
+61,6,roofward,Sera,repair project,ledger loft,recover_routine,False,True,True,0.92,recovered
+62,6,archive,Nia,repair project,spool room,offer_care,False,False,False,0.92,on schedule
+63,6,signal,Ren,teach dialect,lantern walk,treat_pain,False,False,False,0.92,on schedule
+64,6,orchard,Ivo,teach dialect,satchel shed,continue_project,False,False,False,0.86,on schedule
+65,6,repair_ring,Pax,teach dialect,spark lane,path_to_rest,False,False,False,0.92,on schedule
+66,6,riverbend,Ari,patrol hazard,dry ridge,treat_pain,False,False,False,0.91,on schedule
+67,6,roofward,Sera,patrol hazard,glass stair,continue_project,False,False,False,0.92,on schedule
+68,6,archive,Nia,patrol hazard,ink niche,path_to_rest,False,False,False,0.92,on schedule
+69,6,signal,Ren,restore memory,arrival court,perform_chain_step,False,False,False,0.92,on schedule
+70,6,orchard,Ivo,restore memory,arrival court,recover_routine,False,True,True,0.92,recovered
+71,6,repair_ring,Pax,restore memory,cool corner,offer_care,False,False,False,0.92,on schedule
+72,7,riverbend,Lio,repair project,plank hall,interrupt_routine,True,True,True,0.77,recovered
+73,7,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.79,on schedule
+74,7,archive,Toma,repair project,spool room,rest,False,False,False,0.85,on schedule
+75,7,signal,Milo,teach dialect,lantern walk,dry_off,False,False,False,0.85,on schedule
+76,7,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.85,on schedule
+77,7,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.78,on schedule
+78,7,riverbend,Lio,patrol hazard,dry ridge,dry_off,False,False,False,0.77,on schedule
+79,7,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.79,on schedule
+80,7,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.85,on schedule
+81,7,signal,Milo,restore memory,arrival court,interrupt_routine,True,True,True,0.84,recovered
+82,7,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.85,on schedule
+83,7,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.78,on schedule
+84,8,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.79,on schedule
+85,8,archive,Toma,repair project,spool room,rest,False,False,False,0.85,on schedule
+86,8,signal,Milo,repair project,mast base,dry_off,False,False,False,0.84,on schedule
+87,8,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.85,on schedule
+88,8,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.78,on schedule
+89,8,riverbend,Lio,teach dialect,kit alcove,dry_off,False,False,False,0.77,on schedule
+90,8,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.79,on schedule
+91,8,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.85,on schedule
+92,8,signal,Milo,patrol hazard,lens room,interrupt_routine,True,True,True,0.83,recovered
+93,8,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.85,on schedule
+94,8,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.78,on schedule
+95,8,riverbend,Lio,restore memory,arrival court,interrupt_routine,True,True,True,0.76,recovered
+96,9,roofward,Sera,repair project,ledger loft,offer_care,False,False,False,0.92,on schedule
+97,9,archive,Nia,repair project,spool room,treat_pain,False,False,False,0.92,on schedule
+98,9,signal,Ren,repair project,mast base,continue_project,False,False,False,0.92,on schedule
+99,9,orchard,Ivo,teach dialect,satchel shed,path_to_rest,False,False,False,0.92,on schedule
+100,9,repair_ring,Pax,teach dialect,spark lane,perform_chain_step,False,False,False,0.92,on schedule
+101,9,riverbend,Ari,teach dialect,kit alcove,continue_project,False,False,False,0.91,on schedule
+102,9,roofward,Sera,patrol hazard,glass stair,path_to_rest,False,False,False,0.92,on schedule
+103,9,archive,Nia,patrol hazard,ink niche,perform_chain_step,False,False,False,0.92,on schedule
+104,9,signal,Ren,patrol hazard,lens room,recover_routine,False,True,True,0.96,recovered
+105,9,orchard,Ivo,restore memory,arrival court,offer_care,False,False,False,0.92,on schedule
+106,9,repair_ring,Pax,restore memory,cool corner,treat_pain,True,True,True,0.91,recovered
+107,9,riverbend,Ari,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+108,10,roofward,Fay,repair project,ledger loft,rest,False,False,False,0.79,on schedule
+109,10,archive,Toma,repair project,spool room,dry_off,False,False,False,0.85,on schedule
+110,10,signal,Milo,repair project,mast base,path_to_resident,False,False,False,0.83,on schedule
+111,10,orchard,Mara,teach dialect,satchel shed,inspect_affordance,False,False,False,0.85,on schedule
+112,10,repair_ring,Juno,teach dialect,spark lane,interrupt_routine,True,True,False,0.71,interrupted
+113,10,riverbend,Lio,teach dialect,kit alcove,path_to_resident,False,False,False,0.76,on schedule
+114,10,roofward,Fay,patrol hazard,glass stair,inspect_affordance,False,False,False,0.79,on schedule
+115,10,archive,Toma,patrol hazard,ink niche,interrupt_routine,True,True,True,0.84,recovered
+116,10,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.83,on schedule
+117,10,orchard,Mara,restore memory,arrival court,rest,False,False,False,0.85,on schedule
+118,10,repair_ring,Juno,restore memory,cool corner,dry_off,False,False,False,0.71,on schedule
+119,10,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.76,on schedule
+120,11,roofward,Sera,repair project,ledger loft,treat_pain,False,False,False,0.92,on schedule
+121,11,archive,Nia,repair project,spool room,continue_project,False,False,False,0.92,on schedule
+122,11,signal,Ren,repair project,mast base,path_to_rest,False,False,False,0.96,on schedule
+123,11,orchard,Ivo,teach dialect,satchel shed,perform_chain_step,False,False,False,0.92,on schedule
+124,11,repair_ring,Pax,teach dialect,spark lane,recover_routine,False,True,True,0.96,recovered
+125,11,riverbend,Ari,teach dialect,kit alcove,path_to_rest,False,False,False,0.96,on schedule
+126,11,roofward,Sera,patrol hazard,glass stair,perform_chain_step,False,False,False,0.92,on schedule
+127,11,archive,Nia,patrol hazard,ink niche,recover_routine,False,True,True,0.96,recovered
+128,11,signal,Ren,patrol hazard,lens room,offer_care,False,False,False,0.96,on schedule
+129,11,orchard,Ivo,restore memory,arrival court,treat_pain,False,False,False,0.92,on schedule
+130,11,repair_ring,Pax,restore memory,cool corner,continue_project,False,False,False,0.96,on schedule
+131,11,riverbend,Ari,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+132,12,roofward,Fay,repair project,ledger loft,dry_off,False,False,False,0.79,on schedule
+133,12,archive,Toma,repair project,spool room,path_to_resident,False,False,False,0.84,on schedule
+134,12,signal,Milo,repair project,mast base,inspect_affordance,False,False,False,0.83,on schedule
+135,12,orchard,Mara,teach dialect,satchel shed,interrupt_routine,True,True,True,0.84,recovered
+136,12,repair_ring,Juno,teach dialect,spark lane,ask_dialect_memory,False,False,False,0.71,on schedule
+137,12,riverbend,Lio,teach dialect,kit alcove,inspect_affordance,False,False,False,0.76,on schedule
+138,12,roofward,Fay,patrol hazard,glass stair,interrupt_routine,True,True,True,0.78,recovered
+139,12,archive,Toma,patrol hazard,ink niche,ask_dialect_memory,False,False,False,0.84,on schedule
+140,12,signal,Milo,patrol hazard,lens room,rest,False,False,False,0.83,on schedule
+141,12,orchard,Mara,restore memory,arrival court,dry_off,False,False,False,0.84,on schedule
+142,12,repair_ring,Juno,restore memory,cool corner,path_to_resident,False,False,False,0.71,on schedule
+143,12,riverbend,Lio,restore memory,arrival court,rest,False,False,False,0.76,on schedule
+144,13,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.92,on schedule
+145,13,archive,Nia,repair project,spool room,path_to_rest,False,False,False,0.96,on schedule
+146,13,signal,Ren,repair project,mast base,perform_chain_step,False,False,False,0.96,on schedule
+147,13,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+148,13,repair_ring,Pax,teach dialect,spark lane,offer_care,False,False,False,0.96,on schedule
+149,13,riverbend,Ari,teach dialect,kit alcove,perform_chain_step,False,False,False,0.96,on schedule
+150,13,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+151,13,archive,Nia,patrol hazard,ink niche,offer_care,False,False,False,0.96,on schedule
+152,13,signal,Ren,patrol hazard,lens room,treat_pain,False,False,False,0.96,on schedule
+153,13,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+154,13,repair_ring,Pax,restore memory,cool corner,path_to_rest,False,False,False,0.96,on schedule
+155,13,riverbend,Ari,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+156,14,roofward,Fay,repair project,ledger loft,path_to_resident,False,False,False,0.78,on schedule
+157,14,archive,Toma,repair project,spool room,inspect_affordance,False,False,False,0.84,on schedule
+158,14,signal,Milo,repair project,mast base,interrupt_routine,True,True,True,0.82,recovered
+159,14,orchard,Mara,teach dialect,satchel shed,ask_dialect_memory,True,True,True,0.83,recovered
+160,14,repair_ring,Juno,teach dialect,spark lane,rest,False,False,False,0.71,on schedule
+161,14,riverbend,Lio,teach dialect,kit alcove,interrupt_routine,True,True,False,0.69,interrupted
+162,14,roofward,Fay,patrol hazard,glass stair,ask_dialect_memory,False,False,False,0.78,on schedule
+163,14,archive,Toma,patrol hazard,ink niche,rest,False,False,False,0.84,on schedule
+164,14,signal,Milo,patrol hazard,lens room,dry_off,False,False,False,0.82,on schedule
+165,14,orchard,Mara,restore memory,arrival court,path_to_resident,False,False,False,0.83,on schedule
+166,14,repair_ring,Juno,restore memory,cool corner,inspect_affordance,False,False,False,0.71,on schedule
+167,14,riverbend,Lio,restore memory,arrival court,dry_off,False,False,False,0.69,on schedule
+168,15,roofward,Sera,repair project,ledger loft,path_to_rest,False,False,False,0.96,on schedule
+169,15,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+170,15,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+171,15,orchard,Ivo,teach dialect,satchel shed,offer_care,False,False,False,0.96,on schedule
+172,15,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+173,15,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+174,15,roofward,Sera,patrol hazard,glass stair,offer_care,False,False,False,0.96,on schedule
+175,15,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+176,15,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+177,15,orchard,Ivo,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+178,15,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+179,15,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+180,16,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+181,16,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+182,16,orchard,Ivo,repair project,seed lane,offer_care,False,False,False,0.96,on schedule
+183,16,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+184,16,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+185,16,roofward,Sera,teach dialect,warm lane,offer_care,False,False,False,0.96,on schedule
+186,16,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+187,16,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+188,16,orchard,Ivo,patrol hazard,market plank,path_to_rest,False,False,False,0.96,on schedule
+189,16,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+190,16,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+191,16,roofward,Sera,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+192,17,archive,Toma,repair project,spool room,interrupt_routine,True,True,True,0.83,recovered
+193,17,signal,Milo,repair project,mast base,ask_dialect_memory,False,False,False,0.82,on schedule
+194,17,orchard,Mara,repair project,seed lane,rest,False,False,False,0.83,on schedule
+195,17,repair_ring,Juno,teach dialect,spark lane,dry_off,False,False,False,0.71,on schedule
+196,17,riverbend,Lio,teach dialect,kit alcove,ask_dialect_memory,False,False,False,0.69,on schedule
+197,17,roofward,Fay,teach dialect,warm lane,rest,False,False,False,0.78,on schedule
+198,17,archive,Toma,patrol hazard,ink niche,dry_off,False,False,False,0.83,on schedule
+199,17,signal,Milo,patrol hazard,lens room,path_to_resident,False,False,False,0.82,on schedule
+200,17,orchard,Mara,patrol hazard,market plank,inspect_affordance,False,False,False,0.83,on schedule
+201,17,repair_ring,Juno,restore memory,cool corner,interrupt_routine,True,True,True,0.7,recovered
+202,17,riverbend,Lio,restore memory,arrival court,path_to_resident,False,False,False,0.69,on schedule
+203,17,roofward,Fay,restore memory,arrival court,inspect_affordance,False,False,False,0.78,on schedule
+204,18,archive,Nia,repair project,spool room,recover_routine,False,True,True,0.96,recovered
+205,18,signal,Ren,repair project,mast base,offer_care,False,False,False,0.96,on schedule
+206,18,orchard,Ivo,repair project,seed lane,treat_pain,False,False,False,0.96,on schedule
+207,18,repair_ring,Pax,teach dialect,spark lane,continue_project,False,False,False,0.96,on schedule
+208,18,riverbend,Ari,teach dialect,kit alcove,offer_care,False,False,False,0.96,on schedule
+209,18,roofward,Sera,teach dialect,warm lane,treat_pain,False,False,False,0.96,on schedule
+210,18,archive,Nia,patrol hazard,ink niche,continue_project,False,False,False,0.96,on schedule
+211,18,signal,Ren,patrol hazard,lens room,path_to_rest,False,False,False,0.96,on schedule
+212,18,orchard,Ivo,patrol hazard,market plank,perform_chain_step,True,True,True,0.95,recovered
+213,18,repair_ring,Pax,restore memory,cool corner,recover_routine,False,True,True,0.96,recovered
+214,18,riverbend,Ari,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+215,18,roofward,Sera,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+216,19,archive,Toma,repair project,spool room,ask_dialect_memory,False,False,False,0.83,on schedule
+217,19,signal,Milo,repair project,mast base,rest,False,False,False,0.82,on schedule
+218,19,orchard,Mara,repair project,seed lane,dry_off,False,False,False,0.83,on schedule
+219,19,repair_ring,Juno,teach dialect,spark lane,path_to_resident,False,False,False,0.7,on schedule
+220,19,riverbend,Lio,teach dialect,kit alcove,rest,False,False,False,0.69,on schedule
+221,19,roofward,Fay,teach dialect,warm lane,dry_off,False,False,False,0.78,on schedule
+222,19,archive,Toma,patrol hazard,ink niche,path_to_resident,False,False,False,0.83,on schedule
+223,19,signal,Milo,patrol hazard,lens room,inspect_affordance,False,False,False,0.82,on schedule
+224,19,orchard,Mara,patrol hazard,market plank,interrupt_routine,True,True,False,0.76,interrupted
+225,19,repair_ring,Juno,restore memory,cool corner,ask_dialect_memory,False,False,False,0.7,on schedule
+226,19,riverbend,Lio,restore memory,arrival court,inspect_affordance,False,False,False,0.69,on schedule
+227,19,roofward,Fay,restore memory,arrival court,interrupt_routine,True,True,True,0.77,recovered
+228,20,archive,Nia,repair project,spool room,offer_care,False,False,False,0.96,on schedule
+229,20,signal,Ren,repair project,mast base,treat_pain,False,False,False,0.96,on schedule
+230,20,orchard,Ivo,repair project,seed lane,continue_project,False,False,False,0.95,on schedule
+231,20,repair_ring,Pax,teach dialect,spark lane,path_to_rest,False,False,False,0.96,on schedule
+232,20,riverbend,Ari,teach dialect,kit alcove,treat_pain,False,False,False,0.96,on schedule
+233,20,roofward,Sera,teach dialect,warm lane,continue_project,False,False,False,0.96,on schedule
+234,20,archive,Nia,patrol hazard,ink niche,path_to_rest,False,False,False,0.96,on schedule
+235,20,signal,Ren,patrol hazard,lens room,perform_chain_step,False,False,False,0.96,on schedule
+236,20,orchard,Ivo,patrol hazard,market plank,recover_routine,False,True,True,0.96,recovered
+237,20,repair_ring,Pax,restore memory,cool corner,offer_care,False,False,False,0.96,on schedule
+238,20,riverbend,Ari,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+239,20,roofward,Sera,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+240,21,archive,Toma,repair project,spool room,rest,False,False,False,0.83,on schedule
+241,21,signal,Milo,repair project,mast base,dry_off,False,False,False,0.82,on schedule
+242,21,orchard,Mara,repair project,seed lane,path_to_resident,False,False,False,0.76,on schedule
+243,21,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.7,on schedule
+244,21,riverbend,Lio,teach dialect,kit alcove,dry_off,False,False,False,0.69,on schedule
+245,21,roofward,Fay,teach dialect,warm lane,path_to_resident,False,False,False,0.77,on schedule
+246,21,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.83,on schedule
+247,21,signal,Milo,patrol hazard,lens room,interrupt_routine,True,True,True,0.81,recovered
+248,21,orchard,Mara,patrol hazard,market plank,ask_dialect_memory,False,False,False,0.76,on schedule
+249,21,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.7,on schedule
+250,21,riverbend,Lio,restore memory,arrival court,interrupt_routine,True,True,True,0.68,recovered
+251,21,roofward,Fay,restore memory,arrival court,ask_dialect_memory,False,False,False,0.77,on schedule
+252,22,archive,Nia,repair project,spool room,treat_pain,False,False,False,0.96,on schedule
+253,22,signal,Ren,repair project,mast base,continue_project,False,False,False,0.96,on schedule
+254,22,orchard,Ivo,repair project,seed lane,path_to_rest,False,False,False,0.96,on schedule
+255,22,repair_ring,Pax,teach dialect,spark lane,perform_chain_step,False,False,False,0.96,on schedule
+256,22,riverbend,Ari,teach dialect,kit alcove,continue_project,False,False,False,0.96,on schedule
+257,22,roofward,Sera,teach dialect,warm lane,path_to_rest,False,False,False,0.96,on schedule
+258,22,archive,Nia,patrol hazard,ink niche,perform_chain_step,True,True,True,0.95,recovered
+259,22,signal,Ren,patrol hazard,lens room,recover_routine,False,True,True,0.96,recovered
+260,22,orchard,Ivo,patrol hazard,market plank,offer_care,False,False,False,0.96,on schedule
+261,22,repair_ring,Pax,restore memory,cool corner,treat_pain,False,False,False,0.96,on schedule
+262,22,riverbend,Ari,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+263,22,roofward,Sera,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+264,23,archive,Toma,repair project,spool room,dry_off,False,False,False,0.83,on schedule
+265,23,signal,Milo,repair project,mast base,path_to_resident,True,True,True,0.8,recovered
+266,23,orchard,Mara,repair project,seed lane,inspect_affordance,False,False,False,0.76,on schedule
+267,23,repair_ring,Juno,teach dialect,spark lane,interrupt_routine,True,True,True,0.69,recovered
+268,23,riverbend,Lio,teach dialect,kit alcove,path_to_resident,False,False,False,0.68,on schedule
+269,23,roofward,Fay,teach dialect,warm lane,inspect_affordance,False,False,False,0.77,on schedule
+270,23,archive,Toma,patrol hazard,ink niche,interrupt_routine,True,True,True,0.82,recovered
+271,23,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.8,on schedule
+272,23,orchard,Mara,patrol hazard,market plank,rest,False,False,False,0.76,on schedule
+273,23,repair_ring,Juno,restore memory,cool corner,dry_off,False,False,False,0.69,on schedule
+274,23,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.68,on schedule
+275,23,roofward,Fay,restore memory,arrival court,rest,False,False,False,0.77,on schedule
+276,24,signal,Milo,repair project,mast base,path_to_resident,False,False,False,0.8,on schedule
+277,24,orchard,Mara,repair project,seed lane,inspect_affordance,False,False,False,0.76,on schedule
+278,24,repair_ring,Juno,repair project,wire bench,interrupt_routine,True,True,True,0.68,recovered
+279,24,riverbend,Lio,teach dialect,kit alcove,path_to_resident,False,False,False,0.68,on schedule
+280,24,roofward,Fay,teach dialect,warm lane,inspect_affordance,False,False,False,0.77,on schedule
+281,24,archive,Toma,teach dialect,stone stacks,interrupt_routine,True,True,True,0.81,recovered
+282,24,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.8,on schedule
+283,24,orchard,Mara,patrol hazard,market plank,rest,False,False,False,0.76,on schedule
+284,24,repair_ring,Juno,patrol hazard,bell alcove,dry_off,False,False,False,0.68,on schedule
+285,24,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.68,on schedule
+286,24,roofward,Fay,restore memory,arrival court,rest,False,False,False,0.77,on schedule
+287,24,archive,Toma,restore memory,memory desk,dry_off,False,False,False,0.81,on schedule
+288,25,signal,Ren,repair project,mast base,path_to_rest,False,False,False,0.96,on schedule
+289,25,orchard,Ivo,repair project,seed lane,perform_chain_step,False,False,False,0.96,on schedule
+290,25,repair_ring,Pax,repair project,wire bench,recover_routine,False,True,True,0.96,recovered
+291,25,riverbend,Ari,teach dialect,kit alcove,path_to_rest,False,False,False,0.96,on schedule
+292,25,roofward,Sera,teach dialect,warm lane,perform_chain_step,False,False,False,0.96,on schedule
+293,25,archive,Nia,teach dialect,stone stacks,recover_routine,False,True,True,0.96,recovered
+294,25,signal,Ren,patrol hazard,lens room,offer_care,False,False,False,0.96,on schedule
+295,25,orchard,Ivo,patrol hazard,market plank,treat_pain,False,False,False,0.96,on schedule
+296,25,repair_ring,Pax,patrol hazard,bell alcove,continue_project,False,False,False,0.96,on schedule
+297,25,riverbend,Ari,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+298,25,roofward,Sera,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+299,25,archive,Nia,restore memory,memory desk,continue_project,False,False,False,0.96,on schedule
+300,26,signal,Milo,repair project,mast base,inspect_affordance,False,False,False,0.8,on schedule
+301,26,orchard,Mara,repair project,seed lane,interrupt_routine,True,True,False,0.69,interrupted
+302,26,repair_ring,Juno,repair project,wire bench,ask_dialect_memory,False,False,False,0.68,on schedule
+303,26,riverbend,Lio,teach dialect,kit alcove,inspect_affordance,False,False,False,0.68,on schedule
+304,26,roofward,Fay,teach dialect,warm lane,interrupt_routine,True,True,True,0.76,recovered
+305,26,archive,Toma,teach dialect,stone stacks,ask_dialect_memory,False,False,False,0.81,on schedule
+306,26,signal,Milo,patrol hazard,lens room,rest,False,False,False,0.8,on schedule
+307,26,orchard,Mara,patrol hazard,market plank,dry_off,False,False,False,0.69,on schedule
+308,26,repair_ring,Juno,patrol hazard,bell alcove,path_to_resident,False,False,False,0.68,on schedule
+309,26,riverbend,Lio,restore memory,arrival court,rest,False,False,False,0.68,on schedule
+310,26,roofward,Fay,restore memory,arrival court,dry_off,False,False,False,0.76,on schedule
+311,26,archive,Toma,restore memory,memory desk,path_to_resident,False,False,False,0.81,on schedule
+312,27,signal,Ren,repair project,mast base,perform_chain_step,False,False,False,0.96,on schedule
+313,27,orchard,Ivo,repair project,seed lane,recover_routine,False,True,True,0.96,recovered
+314,27,repair_ring,Pax,repair project,wire bench,offer_care,False,False,False,0.96,on schedule
+315,27,riverbend,Ari,teach dialect,kit alcove,perform_chain_step,False,False,False,0.96,on schedule
+316,27,roofward,Sera,teach dialect,warm lane,recover_routine,False,True,True,0.96,recovered
+317,27,archive,Nia,teach dialect,stone stacks,offer_care,False,False,False,0.96,on schedule
+318,27,signal,Ren,patrol hazard,lens room,treat_pain,True,True,True,0.95,recovered
+319,27,orchard,Ivo,patrol hazard,market plank,continue_project,False,False,False,0.96,on schedule
+320,27,repair_ring,Pax,patrol hazard,bell alcove,path_to_rest,False,False,False,0.96,on schedule
+321,27,riverbend,Ari,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+322,27,roofward,Sera,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+323,27,archive,Nia,restore memory,memory desk,path_to_rest,False,False,False,0.96,on schedule
+324,28,signal,Milo,repair project,mast base,interrupt_routine,True,True,True,0.79,recovered
+325,28,orchard,Mara,repair project,seed lane,ask_dialect_memory,False,False,False,0.69,on schedule
+326,28,repair_ring,Juno,repair project,wire bench,rest,False,False,False,0.68,on schedule
+327,28,riverbend,Lio,teach dialect,kit alcove,interrupt_routine,True,True,True,0.67,recovered
+328,28,roofward,Fay,teach dialect,warm lane,ask_dialect_memory,False,False,False,0.76,on schedule
+329,28,archive,Toma,teach dialect,stone stacks,rest,False,False,False,0.81,on schedule
+330,28,signal,Milo,patrol hazard,lens room,dry_off,False,False,False,0.79,on schedule
+331,28,orchard,Mara,patrol hazard,market plank,path_to_resident,False,False,False,0.69,on schedule
+332,28,repair_ring,Juno,patrol hazard,bell alcove,inspect_affordance,False,False,False,0.68,on schedule
+333,28,riverbend,Lio,restore memory,arrival court,dry_off,False,False,False,0.67,on schedule
+334,28,roofward,Fay,restore memory,arrival court,path_to_resident,False,False,False,0.76,on schedule
+335,28,archive,Toma,restore memory,memory desk,inspect_affordance,False,False,False,0.81,on schedule
+336,29,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+337,29,orchard,Ivo,repair project,seed lane,offer_care,False,False,False,0.96,on schedule
+338,29,repair_ring,Pax,repair project,wire bench,treat_pain,False,False,False,0.96,on schedule
+339,29,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+340,29,roofward,Sera,teach dialect,warm lane,offer_care,False,False,False,0.96,on schedule
+341,29,archive,Nia,teach dialect,stone stacks,treat_pain,False,False,False,0.96,on schedule
+342,29,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+343,29,orchard,Ivo,patrol hazard,market plank,path_to_rest,False,False,False,0.96,on schedule
+344,29,repair_ring,Pax,patrol hazard,bell alcove,perform_chain_step,False,False,False,0.96,on schedule
+345,29,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+346,29,roofward,Sera,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+347,29,archive,Nia,restore memory,memory desk,perform_chain_step,False,False,False,0.96,on schedule
+348,30,signal,Milo,repair project,mast base,ask_dialect_memory,False,False,False,0.79,on schedule
+349,30,orchard,Mara,repair project,seed lane,rest,False,False,False,0.69,on schedule
+350,30,repair_ring,Juno,repair project,wire bench,dry_off,False,False,False,0.68,on schedule
+351,30,riverbend,Lio,teach dialect,kit alcove,ask_dialect_memory,False,False,False,0.67,on schedule
+352,30,roofward,Fay,teach dialect,warm lane,rest,False,False,False,0.76,on schedule
+353,30,archive,Toma,teach dialect,stone stacks,dry_off,False,False,False,0.81,on schedule
+354,30,signal,Milo,patrol hazard,lens room,path_to_resident,False,False,False,0.79,on schedule
+355,30,orchard,Mara,patrol hazard,market plank,inspect_affordance,False,False,False,0.69,on schedule
+356,30,repair_ring,Juno,patrol hazard,bell alcove,interrupt_routine,True,True,True,0.67,recovered
+357,30,riverbend,Lio,restore memory,arrival court,path_to_resident,False,False,False,0.67,on schedule
+358,30,roofward,Fay,restore memory,arrival court,inspect_affordance,False,False,False,0.76,on schedule
+359,30,archive,Toma,restore memory,memory desk,interrupt_routine,True,True,True,0.8,recovered
+360,31,signal,Ren,repair project,mast base,offer_care,False,False,False,0.96,on schedule
+361,31,orchard,Ivo,repair project,seed lane,treat_pain,False,False,False,0.96,on schedule
+362,31,repair_ring,Pax,repair project,wire bench,continue_project,False,False,False,0.96,on schedule
+363,31,riverbend,Ari,teach dialect,kit alcove,offer_care,False,False,False,0.96,on schedule
+364,31,roofward,Sera,teach dialect,warm lane,treat_pain,False,False,False,0.96,on schedule
+365,31,archive,Nia,teach dialect,stone stacks,continue_project,False,False,False,0.96,on schedule
+366,31,signal,Ren,patrol hazard,lens room,path_to_rest,False,False,False,0.96,on schedule
+367,31,orchard,Ivo,patrol hazard,market plank,perform_chain_step,False,False,False,0.96,on schedule
+368,31,repair_ring,Pax,patrol hazard,bell alcove,recover_routine,False,True,True,0.96,recovered
+369,31,riverbend,Ari,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+370,31,roofward,Sera,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+371,31,archive,Nia,restore memory,memory desk,recover_routine,True,True,True,0.95,recovered
+372,32,orchard,Ivo,repair project,seed lane,treat_pain,False,False,False,0.96,on schedule
+373,32,repair_ring,Pax,repair project,wire bench,continue_project,False,False,False,0.96,on schedule
+374,32,riverbend,Ari,repair project,plank hall,offer_care,False,False,False,0.96,on schedule
+375,32,roofward,Sera,teach dialect,warm lane,treat_pain,False,False,False,0.96,on schedule
+376,32,archive,Nia,teach dialect,stone stacks,continue_project,False,False,False,0.95,on schedule
+377,32,signal,Ren,teach dialect,lantern walk,path_to_rest,False,False,False,0.96,on schedule
+378,32,orchard,Ivo,patrol hazard,market plank,perform_chain_step,True,True,False,0.89,interrupted
+379,32,repair_ring,Pax,patrol hazard,bell alcove,recover_routine,False,True,True,0.96,recovered
+380,32,riverbend,Ari,patrol hazard,dry ridge,path_to_rest,False,False,False,0.96,on schedule
+381,32,roofward,Sera,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+382,32,archive,Nia,restore memory,memory desk,recover_routine,False,True,True,0.96,recovered
+383,32,signal,Ren,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+384,33,orchard,Mara,repair project,seed lane,dry_off,False,False,False,0.69,on schedule
+385,33,repair_ring,Juno,repair project,wire bench,path_to_resident,False,False,False,0.67,on schedule
+386,33,riverbend,Lio,repair project,plank hall,rest,False,False,False,0.67,on schedule
+387,33,roofward,Fay,teach dialect,warm lane,dry_off,False,False,False,0.76,on schedule
+388,33,archive,Toma,teach dialect,stone stacks,path_to_resident,False,False,False,0.8,on schedule
+389,33,signal,Milo,teach dialect,lantern walk,inspect_affordance,False,False,False,0.79,on schedule
+390,33,orchard,Mara,patrol hazard,market plank,interrupt_routine,True,True,True,0.68,recovered
+391,33,repair_ring,Juno,patrol hazard,bell alcove,ask_dialect_memory,False,False,False,0.67,on schedule
+392,33,riverbend,Lio,patrol hazard,dry ridge,inspect_affordance,False,False,False,0.67,on schedule
+393,33,roofward,Fay,restore memory,arrival court,interrupt_routine,True,True,True,0.75,recovered
+394,33,archive,Toma,restore memory,memory desk,ask_dialect_memory,False,False,False,0.8,on schedule
+395,33,signal,Milo,restore memory,arrival court,rest,False,False,False,0.79,on schedule
+396,34,orchard,Ivo,repair project,seed lane,continue_project,False,False,False,0.89,on schedule
+397,34,repair_ring,Pax,repair project,wire bench,path_to_rest,False,False,False,0.96,on schedule
+398,34,riverbend,Ari,repair project,plank hall,treat_pain,False,False,False,0.96,on schedule
+399,34,roofward,Sera,teach dialect,warm lane,continue_project,False,False,False,0.96,on schedule
+400,34,archive,Nia,teach dialect,stone stacks,path_to_rest,False,False,False,0.96,on schedule
+401,34,signal,Ren,teach dialect,lantern walk,perform_chain_step,False,False,False,0.96,on schedule
+402,34,orchard,Ivo,patrol hazard,market plank,recover_routine,False,True,True,0.95,recovered
+403,34,repair_ring,Pax,patrol hazard,bell alcove,offer_care,False,False,False,0.96,on schedule
+404,34,riverbend,Ari,patrol hazard,dry ridge,perform_chain_step,False,False,False,0.96,on schedule
+405,34,roofward,Sera,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+406,34,archive,Nia,restore memory,memory desk,offer_care,False,False,False,0.96,on schedule
+407,34,signal,Ren,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+408,35,orchard,Mara,repair project,seed lane,path_to_resident,False,False,False,0.68,on schedule
+409,35,repair_ring,Juno,repair project,wire bench,inspect_affordance,False,False,False,0.67,on schedule
+410,35,riverbend,Lio,repair project,plank hall,dry_off,False,False,False,0.67,on schedule
+411,35,roofward,Fay,teach dialect,warm lane,path_to_resident,False,False,False,0.75,on schedule
+412,35,archive,Toma,teach dialect,stone stacks,inspect_affordance,False,False,False,0.8,on schedule
+413,35,signal,Milo,teach dialect,lantern walk,interrupt_routine,True,True,False,0.72,interrupted
+414,35,orchard,Mara,patrol hazard,market plank,ask_dialect_memory,False,False,False,0.68,on schedule
+415,35,repair_ring,Juno,patrol hazard,bell alcove,rest,False,False,False,0.67,on schedule
+416,35,riverbend,Lio,patrol hazard,dry ridge,interrupt_routine,True,True,True,0.66,recovered
+417,35,roofward,Fay,restore memory,arrival court,ask_dialect_memory,False,False,False,0.75,on schedule
+418,35,archive,Toma,restore memory,memory desk,rest,False,False,False,0.8,on schedule
+419,35,signal,Milo,restore memory,arrival court,dry_off,False,False,False,0.72,on schedule
+420,36,orchard,Ivo,repair project,seed lane,path_to_rest,False,False,False,0.95,on schedule
+421,36,repair_ring,Pax,repair project,wire bench,perform_chain_step,False,False,False,0.96,on schedule
+422,36,riverbend,Ari,repair project,plank hall,continue_project,False,False,False,0.96,on schedule
+423,36,roofward,Sera,teach dialect,warm lane,path_to_rest,False,False,False,0.96,on schedule
+424,36,archive,Nia,teach dialect,stone stacks,perform_chain_step,True,True,True,0.95,recovered
+425,36,signal,Ren,teach dialect,lantern walk,recover_routine,False,True,True,0.96,recovered
+426,36,orchard,Ivo,patrol hazard,market plank,offer_care,False,False,False,0.95,on schedule
+427,36,repair_ring,Pax,patrol hazard,bell alcove,treat_pain,False,False,False,0.96,on schedule
+428,36,riverbend,Ari,patrol hazard,dry ridge,recover_routine,False,True,True,0.96,recovered
+429,36,roofward,Sera,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+430,36,archive,Nia,restore memory,memory desk,treat_pain,False,False,False,0.95,on schedule
+431,36,signal,Ren,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+432,37,orchard,Mara,repair project,seed lane,inspect_affordance,False,False,False,0.68,on schedule
+433,37,repair_ring,Juno,repair project,wire bench,interrupt_routine,True,True,True,0.66,recovered
+434,37,riverbend,Lio,repair project,plank hall,path_to_resident,False,False,False,0.66,on schedule
+435,37,roofward,Fay,teach dialect,warm lane,inspect_affordance,False,False,False,0.75,on schedule
+436,37,archive,Toma,teach dialect,stone stacks,interrupt_routine,True,True,True,0.79,recovered
+437,37,signal,Milo,teach dialect,lantern walk,ask_dialect_memory,False,False,False,0.72,on schedule
+438,37,orchard,Mara,patrol hazard,market plank,rest,False,False,False,0.68,on schedule
+439,37,repair_ring,Juno,patrol hazard,bell alcove,dry_off,False,False,False,0.66,on schedule
+440,37,riverbend,Lio,patrol hazard,dry ridge,ask_dialect_memory,False,False,False,0.66,on schedule
+441,37,roofward,Fay,restore memory,arrival court,rest,False,False,False,0.75,on schedule
+442,37,archive,Toma,restore memory,memory desk,dry_off,False,False,False,0.79,on schedule
+443,37,signal,Milo,restore memory,arrival court,path_to_resident,False,False,False,0.72,on schedule
+444,38,orchard,Ivo,repair project,seed lane,perform_chain_step,False,False,False,0.95,on schedule
+445,38,repair_ring,Pax,repair project,wire bench,recover_routine,False,True,True,0.96,recovered
+446,38,riverbend,Ari,repair project,plank hall,path_to_rest,False,False,False,0.96,on schedule
+447,38,roofward,Sera,teach dialect,warm lane,perform_chain_step,False,False,False,0.96,on schedule
+448,38,archive,Nia,teach dialect,stone stacks,recover_routine,False,True,True,0.96,recovered
+449,38,signal,Ren,teach dialect,lantern walk,offer_care,False,False,False,0.96,on schedule
+450,38,orchard,Ivo,patrol hazard,market plank,treat_pain,False,False,False,0.95,on schedule
+451,38,repair_ring,Pax,patrol hazard,bell alcove,continue_project,False,False,False,0.96,on schedule
+452,38,riverbend,Ari,patrol hazard,dry ridge,offer_care,False,False,False,0.96,on schedule
+453,38,roofward,Sera,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+454,38,archive,Nia,restore memory,memory desk,continue_project,False,False,False,0.96,on schedule
+455,38,signal,Ren,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+456,39,orchard,Mara,repair project,seed lane,interrupt_routine,True,True,True,0.67,recovered
+457,39,repair_ring,Juno,repair project,wire bench,ask_dialect_memory,False,False,False,0.66,on schedule
+458,39,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.66,on schedule
+459,39,roofward,Fay,teach dialect,warm lane,interrupt_routine,True,True,True,0.74,recovered
+460,39,archive,Toma,teach dialect,stone stacks,ask_dialect_memory,False,False,False,0.79,on schedule
+461,39,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.72,on schedule
+462,39,orchard,Mara,patrol hazard,market plank,dry_off,False,False,False,0.67,on schedule
+463,39,repair_ring,Juno,patrol hazard,bell alcove,path_to_resident,False,False,False,0.66,on schedule
+464,39,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.66,on schedule
+465,39,roofward,Fay,restore memory,arrival court,dry_off,False,False,False,0.74,on schedule
+466,39,archive,Toma,restore memory,memory desk,path_to_resident,False,False,False,0.79,on schedule
+467,39,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.72,on schedule
+468,40,repair_ring,Juno,repair project,wire bench,ask_dialect_memory,False,False,False,0.66,on schedule
+469,40,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.66,on schedule
+470,40,roofward,Fay,repair project,ledger loft,interrupt_routine,True,True,True,0.73,recovered
+471,40,archive,Toma,teach dialect,stone stacks,ask_dialect_memory,False,False,False,0.79,on schedule
+472,40,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.72,on schedule
+473,40,orchard,Mara,teach dialect,satchel shed,dry_off,False,False,False,0.67,on schedule
+474,40,repair_ring,Juno,patrol hazard,bell alcove,path_to_resident,False,False,False,0.66,on schedule
+475,40,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.66,on schedule
+476,40,roofward,Fay,patrol hazard,glass stair,dry_off,False,False,False,0.73,on schedule
+477,40,archive,Toma,restore memory,memory desk,path_to_resident,True,True,True,0.78,recovered
+478,40,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.72,on schedule
+479,40,orchard,Mara,restore memory,arrival court,interrupt_routine,True,True,True,0.66,recovered
+480,41,repair_ring,Pax,repair project,wire bench,offer_care,False,False,False,0.96,on schedule
+481,41,riverbend,Ari,repair project,plank hall,perform_chain_step,False,False,False,0.96,on schedule
+482,41,roofward,Sera,repair project,ledger loft,recover_routine,False,True,True,0.96,recovered
+483,41,archive,Nia,teach dialect,stone stacks,offer_care,False,False,False,0.96,on schedule
+484,41,signal,Ren,teach dialect,lantern walk,treat_pain,False,False,False,0.96,on schedule
+485,41,orchard,Ivo,teach dialect,satchel shed,continue_project,False,False,False,0.95,on schedule
+486,41,repair_ring,Pax,patrol hazard,bell alcove,path_to_rest,False,False,False,0.96,on schedule
+487,41,riverbend,Ari,patrol hazard,dry ridge,treat_pain,False,False,False,0.96,on schedule
+488,41,roofward,Sera,patrol hazard,glass stair,continue_project,False,False,False,0.96,on schedule
+489,41,archive,Nia,restore memory,memory desk,path_to_rest,False,False,False,0.96,on schedule
+490,41,signal,Ren,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+491,41,orchard,Ivo,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+492,42,repair_ring,Juno,repair project,wire bench,rest,False,False,False,0.66,on schedule
+493,42,riverbend,Lio,repair project,plank hall,interrupt_routine,True,True,True,0.65,recovered
+494,42,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.73,on schedule
+495,42,archive,Toma,teach dialect,stone stacks,rest,False,False,False,0.78,on schedule
+496,42,signal,Milo,teach dialect,lantern walk,dry_off,False,False,False,0.72,on schedule
+497,42,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.66,on schedule
+498,42,repair_ring,Juno,patrol hazard,bell alcove,inspect_affordance,False,False,False,0.66,on schedule
+499,42,riverbend,Lio,patrol hazard,dry ridge,dry_off,False,False,False,0.65,on schedule
+500,42,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.73,on schedule
+501,42,archive,Toma,restore memory,memory desk,inspect_affordance,False,False,False,0.78,on schedule
+502,42,signal,Milo,restore memory,arrival court,interrupt_routine,True,True,True,0.71,recovered
+503,42,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.66,on schedule
+504,43,repair_ring,Pax,repair project,wire bench,treat_pain,False,False,False,0.96,on schedule
+505,43,riverbend,Ari,repair project,plank hall,recover_routine,False,True,True,0.96,recovered
+506,43,roofward,Sera,repair project,ledger loft,offer_care,False,False,False,0.96,on schedule
+507,43,archive,Nia,teach dialect,stone stacks,treat_pain,False,False,False,0.96,on schedule
+508,43,signal,Ren,teach dialect,lantern walk,continue_project,False,False,False,0.96,on schedule
+509,43,orchard,Ivo,teach dialect,satchel shed,path_to_rest,False,False,False,0.96,on schedule
+510,43,repair_ring,Pax,patrol hazard,bell alcove,perform_chain_step,False,False,False,0.96,on schedule
+511,43,riverbend,Ari,patrol hazard,dry ridge,continue_project,False,False,False,0.96,on schedule
+512,43,roofward,Sera,patrol hazard,glass stair,path_to_rest,False,False,False,0.96,on schedule
+513,43,archive,Nia,restore memory,memory desk,perform_chain_step,False,False,False,0.96,on schedule
+514,43,signal,Ren,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+515,43,orchard,Ivo,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+516,44,repair_ring,Juno,repair project,wire bench,dry_off,False,False,False,0.66,on schedule
+517,44,riverbend,Lio,repair project,plank hall,ask_dialect_memory,False,False,False,0.65,on schedule
+518,44,roofward,Fay,repair project,ledger loft,rest,False,False,False,0.73,on schedule
+519,44,archive,Toma,teach dialect,stone stacks,dry_off,False,False,False,0.78,on schedule
+520,44,signal,Milo,teach dialect,lantern walk,path_to_resident,False,False,False,0.71,on schedule
+521,44,orchard,Mara,teach dialect,satchel shed,inspect_affordance,False,False,False,0.66,on schedule
+522,44,repair_ring,Juno,patrol hazard,bell alcove,interrupt_routine,True,True,True,0.65,recovered
+523,44,riverbend,Lio,patrol hazard,dry ridge,path_to_resident,False,False,False,0.65,on schedule
+524,44,roofward,Fay,patrol hazard,glass stair,inspect_affordance,False,False,False,0.73,on schedule
+525,44,archive,Toma,restore memory,memory desk,interrupt_routine,True,True,False,0.71,interrupted
+526,44,signal,Milo,restore memory,arrival court,ask_dialect_memory,False,False,False,0.71,on schedule
+527,44,orchard,Mara,restore memory,arrival court,rest,False,False,False,0.66,on schedule
+528,45,repair_ring,Pax,repair project,wire bench,continue_project,False,False,False,0.96,on schedule
+529,45,riverbend,Ari,repair project,plank hall,offer_care,False,False,False,0.96,on schedule
+530,45,roofward,Sera,repair project,ledger loft,treat_pain,True,True,True,0.95,recovered
+531,45,archive,Nia,teach dialect,stone stacks,continue_project,False,False,False,0.96,on schedule
+532,45,signal,Ren,teach dialect,lantern walk,path_to_rest,False,False,False,0.96,on schedule
+533,45,orchard,Ivo,teach dialect,satchel shed,perform_chain_step,False,False,False,0.96,on schedule
+534,45,repair_ring,Pax,patrol hazard,bell alcove,recover_routine,False,True,True,0.96,recovered
+535,45,riverbend,Ari,patrol hazard,dry ridge,path_to_rest,False,False,False,0.96,on schedule
+536,45,roofward,Sera,patrol hazard,glass stair,perform_chain_step,False,False,False,0.95,on schedule
+537,45,archive,Nia,restore memory,memory desk,recover_routine,False,True,True,0.96,recovered
+538,45,signal,Ren,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+539,45,orchard,Ivo,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+540,46,repair_ring,Juno,repair project,wire bench,path_to_resident,False,False,False,0.65,on schedule
+541,46,riverbend,Lio,repair project,plank hall,rest,False,False,False,0.65,on schedule
+542,46,roofward,Fay,repair project,ledger loft,dry_off,False,False,False,0.73,on schedule
+543,46,archive,Toma,teach dialect,stone stacks,path_to_resident,False,False,False,0.71,on schedule
+544,46,signal,Milo,teach dialect,lantern walk,inspect_affordance,False,False,False,0.71,on schedule
+545,46,orchard,Mara,teach dialect,satchel shed,interrupt_routine,True,True,True,0.65,recovered
+546,46,repair_ring,Juno,patrol hazard,bell alcove,ask_dialect_memory,False,False,False,0.65,on schedule
+547,46,riverbend,Lio,patrol hazard,dry ridge,inspect_affordance,False,False,False,0.65,on schedule
+548,46,roofward,Fay,patrol hazard,glass stair,interrupt_routine,True,True,True,0.72,recovered
+549,46,archive,Toma,restore memory,memory desk,ask_dialect_memory,False,False,False,0.71,on schedule
+550,46,signal,Milo,restore memory,arrival court,rest,False,False,False,0.71,on schedule
+551,46,orchard,Mara,restore memory,arrival court,dry_off,False,False,False,0.65,on schedule
+552,47,repair_ring,Pax,repair project,wire bench,path_to_rest,False,False,False,0.96,on schedule
+553,47,riverbend,Ari,repair project,plank hall,treat_pain,False,False,False,0.96,on schedule
+554,47,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.95,on schedule
+555,47,archive,Nia,teach dialect,stone stacks,path_to_rest,False,False,False,0.96,on schedule
+556,47,signal,Ren,teach dialect,lantern walk,perform_chain_step,False,False,False,0.96,on schedule
+557,47,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+558,47,repair_ring,Pax,patrol hazard,bell alcove,offer_care,False,False,False,0.96,on schedule
+559,47,riverbend,Ari,patrol hazard,dry ridge,perform_chain_step,False,False,False,0.96,on schedule
+560,47,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+561,47,archive,Nia,restore memory,memory desk,offer_care,False,False,False,0.96,on schedule
+562,47,signal,Ren,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+563,47,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+564,48,riverbend,Ari,repair project,plank hall,treat_pain,False,False,False,0.96,on schedule
+565,48,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.96,on schedule
+566,48,archive,Nia,repair project,spool room,path_to_rest,False,False,False,0.96,on schedule
+567,48,signal,Ren,teach dialect,lantern walk,perform_chain_step,False,False,False,0.96,on schedule
+568,48,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+569,48,repair_ring,Pax,teach dialect,spark lane,offer_care,False,False,False,0.96,on schedule
+570,48,riverbend,Ari,patrol hazard,dry ridge,perform_chain_step,False,False,False,0.96,on schedule
+571,48,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+572,48,archive,Nia,patrol hazard,ink niche,offer_care,False,False,False,0.96,on schedule
+573,48,signal,Ren,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+574,48,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+575,48,repair_ring,Pax,restore memory,cool corner,path_to_rest,False,False,False,0.96,on schedule
+576,49,riverbend,Lio,repair project,plank hall,dry_off,False,False,False,0.65,on schedule
+577,49,roofward,Fay,repair project,ledger loft,path_to_resident,False,False,False,0.72,on schedule
+578,49,archive,Toma,repair project,spool room,inspect_affordance,False,False,False,0.71,on schedule
+579,49,signal,Milo,teach dialect,lantern walk,interrupt_routine,True,True,True,0.7,recovered
+580,49,orchard,Mara,teach dialect,satchel shed,ask_dialect_memory,False,False,False,0.65,on schedule
+581,49,repair_ring,Juno,teach dialect,spark lane,rest,False,False,False,0.65,on schedule
+582,49,riverbend,Lio,patrol hazard,dry ridge,interrupt_routine,True,True,True,0.64,recovered
+583,49,roofward,Fay,patrol hazard,glass stair,ask_dialect_memory,True,True,True,0.71,recovered
+584,49,archive,Toma,patrol hazard,ink niche,rest,False,False,False,0.71,on schedule
+585,49,signal,Milo,restore memory,arrival court,dry_off,False,False,False,0.7,on schedule
+586,49,orchard,Mara,restore memory,arrival court,path_to_resident,False,False,False,0.65,on schedule
+587,49,repair_ring,Juno,restore memory,cool corner,inspect_affordance,False,False,False,0.65,on schedule
+588,50,riverbend,Ari,repair project,plank hall,continue_project,False,False,False,0.96,on schedule
+589,50,roofward,Sera,repair project,ledger loft,path_to_rest,False,False,False,0.96,on schedule
+590,50,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+591,50,signal,Ren,teach dialect,lantern walk,recover_routine,False,True,True,0.96,recovered
+592,50,orchard,Ivo,teach dialect,satchel shed,offer_care,False,False,False,0.96,on schedule
+593,50,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+594,50,riverbend,Ari,patrol hazard,dry ridge,recover_routine,False,True,True,0.96,recovered
+595,50,roofward,Sera,patrol hazard,glass stair,offer_care,False,False,False,0.96,on schedule
+596,50,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+597,50,signal,Ren,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+598,50,orchard,Ivo,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+599,50,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+600,51,riverbend,Lio,repair project,plank hall,path_to_resident,False,False,False,0.64,on schedule
+601,51,roofward,Fay,repair project,ledger loft,inspect_affordance,False,False,False,0.71,on schedule
+602,51,archive,Toma,repair project,spool room,interrupt_routine,True,True,False,0.64,interrupted
+603,51,signal,Milo,teach dialect,lantern walk,ask_dialect_memory,False,False,False,0.7,on schedule
+604,51,orchard,Mara,teach dialect,satchel shed,rest,False,False,False,0.65,on schedule
+605,51,repair_ring,Juno,teach dialect,spark lane,dry_off,False,False,False,0.65,on schedule
+606,51,riverbend,Lio,patrol hazard,dry ridge,ask_dialect_memory,False,False,False,0.64,on schedule
+607,51,roofward,Fay,patrol hazard,glass stair,rest,False,False,False,0.71,on schedule
+608,51,archive,Toma,patrol hazard,ink niche,dry_off,False,False,False,0.64,on schedule
+609,51,signal,Milo,restore memory,arrival court,path_to_resident,False,False,False,0.7,on schedule
+610,51,orchard,Mara,restore memory,arrival court,inspect_affordance,False,False,False,0.65,on schedule
+611,51,repair_ring,Juno,restore memory,cool corner,interrupt_routine,True,True,True,0.64,recovered
+612,52,riverbend,Ari,repair project,plank hall,path_to_rest,False,False,False,0.96,on schedule
+613,52,roofward,Sera,repair project,ledger loft,perform_chain_step,False,False,False,0.96,on schedule
+614,52,archive,Nia,repair project,spool room,recover_routine,False,True,True,0.96,recovered
+615,52,signal,Ren,teach dialect,lantern walk,offer_care,False,False,False,0.96,on schedule
+616,52,orchard,Ivo,teach dialect,satchel shed,treat_pain,False,False,False,0.96,on schedule
+617,52,repair_ring,Pax,teach dialect,spark lane,continue_project,False,False,False,0.96,on schedule
+618,52,riverbend,Ari,patrol hazard,dry ridge,offer_care,False,False,False,0.96,on schedule
+619,52,roofward,Sera,patrol hazard,glass stair,treat_pain,False,False,False,0.96,on schedule
+620,52,archive,Nia,patrol hazard,ink niche,continue_project,False,False,False,0.96,on schedule
+621,52,signal,Ren,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+622,52,orchard,Ivo,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+623,52,repair_ring,Pax,restore memory,cool corner,recover_routine,False,True,True,0.96,recovered
+624,53,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.64,on schedule
+625,53,roofward,Fay,repair project,ledger loft,interrupt_routine,True,True,True,0.7,recovered
+626,53,archive,Toma,repair project,spool room,ask_dialect_memory,False,False,False,0.64,on schedule
+627,53,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.7,on schedule
+628,53,orchard,Mara,teach dialect,satchel shed,dry_off,False,False,False,0.65,on schedule
+629,53,repair_ring,Juno,teach dialect,spark lane,path_to_resident,False,False,False,0.64,on schedule
+630,53,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.64,on schedule
+631,53,roofward,Fay,patrol hazard,glass stair,dry_off,False,False,False,0.7,on schedule
+632,53,archive,Toma,patrol hazard,ink niche,path_to_resident,False,False,False,0.64,on schedule
+633,53,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.7,on schedule
+634,53,orchard,Mara,restore memory,arrival court,interrupt_routine,True,True,True,0.64,recovered
+635,53,repair_ring,Juno,restore memory,cool corner,ask_dialect_memory,False,False,False,0.64,on schedule
+636,54,riverbend,Ari,repair project,plank hall,perform_chain_step,True,True,True,0.95,recovered
+637,54,roofward,Sera,repair project,ledger loft,recover_routine,False,True,True,0.96,recovered
+638,54,archive,Nia,repair project,spool room,offer_care,False,False,False,0.96,on schedule
+639,54,signal,Ren,teach dialect,lantern walk,treat_pain,False,False,False,0.96,on schedule
+640,54,orchard,Ivo,teach dialect,satchel shed,continue_project,False,False,False,0.96,on schedule
+641,54,repair_ring,Pax,teach dialect,spark lane,path_to_rest,False,False,False,0.96,on schedule
+642,54,riverbend,Ari,patrol hazard,dry ridge,treat_pain,False,False,False,0.95,on schedule
+643,54,roofward,Sera,patrol hazard,glass stair,continue_project,False,False,False,0.96,on schedule
+644,54,archive,Nia,patrol hazard,ink niche,path_to_rest,False,False,False,0.96,on schedule
+645,54,signal,Ren,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+646,54,orchard,Ivo,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+647,54,repair_ring,Pax,restore memory,cool corner,offer_care,False,False,False,0.96,on schedule
+648,55,riverbend,Lio,repair project,plank hall,interrupt_routine,True,True,True,0.63,recovered
+649,55,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.7,on schedule
+650,55,archive,Toma,repair project,spool room,rest,False,False,False,0.64,on schedule
+651,55,signal,Milo,teach dialect,lantern walk,dry_off,False,False,False,0.7,on schedule
+652,55,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.64,on schedule
+653,55,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.64,on schedule
+654,55,riverbend,Lio,patrol hazard,dry ridge,dry_off,False,False,False,0.63,on schedule
+655,55,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.7,on schedule
+656,55,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.64,on schedule
+657,55,signal,Milo,restore memory,arrival court,interrupt_routine,True,True,True,0.69,recovered
+658,55,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.64,on schedule
+659,55,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.64,on schedule
+660,56,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.7,on schedule
+661,56,archive,Toma,repair project,spool room,rest,False,False,False,0.64,on schedule
+662,56,signal,Milo,repair project,mast base,dry_off,False,False,False,0.69,on schedule
+663,56,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.64,on schedule
+664,56,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.64,on schedule
+665,56,riverbend,Lio,teach dialect,kit alcove,dry_off,False,False,False,0.63,on schedule
+666,56,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.7,on schedule
+667,56,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.64,on schedule
+668,56,signal,Milo,patrol hazard,lens room,interrupt_routine,True,True,True,0.68,recovered
+669,56,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.64,on schedule
+670,56,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.64,on schedule
+671,56,riverbend,Lio,restore memory,arrival court,interrupt_routine,True,True,True,0.62,recovered
+672,57,roofward,Sera,repair project,ledger loft,offer_care,False,False,False,0.96,on schedule
+673,57,archive,Nia,repair project,spool room,treat_pain,False,False,False,0.96,on schedule
+674,57,signal,Ren,repair project,mast base,continue_project,False,False,False,0.96,on schedule
+675,57,orchard,Ivo,teach dialect,satchel shed,path_to_rest,False,False,False,0.96,on schedule
+676,57,repair_ring,Pax,teach dialect,spark lane,perform_chain_step,False,False,False,0.96,on schedule
+677,57,riverbend,Ari,teach dialect,kit alcove,continue_project,False,False,False,0.95,on schedule
+678,57,roofward,Sera,patrol hazard,glass stair,path_to_rest,False,False,False,0.96,on schedule
+679,57,archive,Nia,patrol hazard,ink niche,perform_chain_step,False,False,False,0.96,on schedule
+680,57,signal,Ren,patrol hazard,lens room,recover_routine,False,True,True,0.96,recovered
+681,57,orchard,Ivo,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+682,57,repair_ring,Pax,restore memory,cool corner,treat_pain,False,False,False,0.96,on schedule
+683,57,riverbend,Ari,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+684,58,roofward,Fay,repair project,ledger loft,rest,False,False,False,0.7,on schedule
+685,58,archive,Toma,repair project,spool room,dry_off,False,False,False,0.64,on schedule
+686,58,signal,Milo,repair project,mast base,path_to_resident,False,False,False,0.68,on schedule
+687,58,orchard,Mara,teach dialect,satchel shed,inspect_affordance,False,False,False,0.64,on schedule
+688,58,repair_ring,Juno,teach dialect,spark lane,interrupt_routine,True,True,True,0.63,recovered
+689,58,riverbend,Lio,teach dialect,kit alcove,path_to_resident,True,True,True,0.61,recovered
+690,58,roofward,Fay,patrol hazard,glass stair,inspect_affordance,False,False,False,0.7,on schedule
+691,58,archive,Toma,patrol hazard,ink niche,interrupt_routine,True,True,True,0.63,recovered
+692,58,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.68,on schedule
+693,58,orchard,Mara,restore memory,arrival court,rest,False,False,False,0.64,on schedule
+694,58,repair_ring,Juno,restore memory,cool corner,dry_off,False,False,False,0.63,on schedule
+695,58,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.61,on schedule
+696,59,roofward,Sera,repair project,ledger loft,treat_pain,False,False,False,0.96,on schedule
+697,59,archive,Nia,repair project,spool room,continue_project,False,False,False,0.96,on schedule
+698,59,signal,Ren,repair project,mast base,path_to_rest,False,False,False,0.96,on schedule
+699,59,orchard,Ivo,teach dialect,satchel shed,perform_chain_step,False,False,False,0.96,on schedule
+700,59,repair_ring,Pax,teach dialect,spark lane,recover_routine,False,True,True,0.96,recovered
+701,59,riverbend,Ari,teach dialect,kit alcove,path_to_rest,False,False,False,0.96,on schedule
+702,59,roofward,Sera,patrol hazard,glass stair,perform_chain_step,True,True,True,0.95,recovered
+703,59,archive,Nia,patrol hazard,ink niche,recover_routine,False,True,True,0.96,recovered
+704,59,signal,Ren,patrol hazard,lens room,offer_care,False,False,False,0.96,on schedule
+705,59,orchard,Ivo,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+706,59,repair_ring,Pax,restore memory,cool corner,continue_project,False,False,False,0.96,on schedule
+707,59,riverbend,Ari,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+708,60,roofward,Fay,repair project,ledger loft,dry_off,False,False,False,0.7,on schedule
+709,60,archive,Toma,repair project,spool room,path_to_resident,False,False,False,0.63,on schedule
+710,60,signal,Milo,repair project,mast base,inspect_affordance,False,False,False,0.68,on schedule
+711,60,orchard,Mara,teach dialect,satchel shed,interrupt_routine,True,True,True,0.63,recovered
+712,60,repair_ring,Juno,teach dialect,spark lane,ask_dialect_memory,False,False,False,0.63,on schedule
+713,60,riverbend,Lio,teach dialect,kit alcove,inspect_affordance,False,False,False,0.61,on schedule
+714,60,roofward,Fay,patrol hazard,glass stair,interrupt_routine,True,True,False,0.63,interrupted
+715,60,archive,Toma,patrol hazard,ink niche,ask_dialect_memory,False,False,False,0.63,on schedule
+716,60,signal,Milo,patrol hazard,lens room,rest,False,False,False,0.68,on schedule
+717,60,orchard,Mara,restore memory,arrival court,dry_off,False,False,False,0.63,on schedule
+718,60,repair_ring,Juno,restore memory,cool corner,path_to_resident,False,False,False,0.63,on schedule
+719,60,riverbend,Lio,restore memory,arrival court,rest,False,False,False,0.61,on schedule
+720,61,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.95,on schedule
+721,61,archive,Nia,repair project,spool room,path_to_rest,False,False,False,0.96,on schedule
+722,61,signal,Ren,repair project,mast base,perform_chain_step,False,False,False,0.96,on schedule
+723,61,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+724,61,repair_ring,Pax,teach dialect,spark lane,offer_care,False,False,False,0.96,on schedule
+725,61,riverbend,Ari,teach dialect,kit alcove,perform_chain_step,False,False,False,0.96,on schedule
+726,61,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+727,61,archive,Nia,patrol hazard,ink niche,offer_care,False,False,False,0.96,on schedule
+728,61,signal,Ren,patrol hazard,lens room,treat_pain,False,False,False,0.96,on schedule
+729,61,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+730,61,repair_ring,Pax,restore memory,cool corner,path_to_rest,False,False,False,0.96,on schedule
+731,61,riverbend,Ari,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+732,62,roofward,Fay,repair project,ledger loft,path_to_resident,False,False,False,0.63,on schedule
+733,62,archive,Toma,repair project,spool room,inspect_affordance,False,False,False,0.63,on schedule
+734,62,signal,Milo,repair project,mast base,interrupt_routine,True,True,True,0.67,recovered
+735,62,orchard,Mara,teach dialect,satchel shed,ask_dialect_memory,False,False,False,0.63,on schedule
+736,62,repair_ring,Juno,teach dialect,spark lane,rest,False,False,False,0.63,on schedule
+737,62,riverbend,Lio,teach dialect,kit alcove,interrupt_routine,True,True,True,0.6,recovered
+738,62,roofward,Fay,patrol hazard,glass stair,ask_dialect_memory,False,False,False,0.63,on schedule
+739,62,archive,Toma,patrol hazard,ink niche,rest,False,False,False,0.63,on schedule
+740,62,signal,Milo,patrol hazard,lens room,dry_off,False,False,False,0.67,on schedule
+741,62,orchard,Mara,restore memory,arrival court,path_to_resident,False,False,False,0.63,on schedule
+742,62,repair_ring,Juno,restore memory,cool corner,inspect_affordance,True,True,False,0.56,interrupted
+743,62,riverbend,Lio,restore memory,arrival court,dry_off,False,False,False,0.6,on schedule
+744,63,roofward,Sera,repair project,ledger loft,path_to_rest,False,False,False,0.96,on schedule
+745,63,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+746,63,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+747,63,orchard,Ivo,teach dialect,satchel shed,offer_care,False,False,False,0.96,on schedule
+748,63,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+749,63,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+750,63,roofward,Sera,patrol hazard,glass stair,offer_care,False,False,False,0.96,on schedule
+751,63,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+752,63,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+753,63,orchard,Ivo,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+754,63,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+755,63,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+756,64,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+757,64,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+758,64,orchard,Ivo,repair project,seed lane,offer_care,False,False,False,0.96,on schedule
+759,64,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+760,64,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+761,64,roofward,Sera,teach dialect,warm lane,offer_care,False,False,False,0.96,on schedule
+762,64,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+763,64,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+764,64,orchard,Ivo,patrol hazard,market plank,path_to_rest,False,False,False,0.96,on schedule
+765,64,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+766,64,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+767,64,roofward,Sera,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+768,65,archive,Toma,repair project,spool room,interrupt_routine,True,True,True,0.62,recovered
+769,65,signal,Milo,repair project,mast base,ask_dialect_memory,False,False,False,0.67,on schedule
+770,65,orchard,Mara,repair project,seed lane,rest,False,False,False,0.63,on schedule
+771,65,repair_ring,Juno,teach dialect,spark lane,dry_off,False,False,False,0.56,on schedule
+772,65,riverbend,Lio,teach dialect,kit alcove,ask_dialect_memory,False,False,False,0.6,on schedule
+773,65,roofward,Fay,teach dialect,warm lane,rest,False,False,False,0.63,on schedule
+774,65,archive,Toma,patrol hazard,ink niche,dry_off,False,False,False,0.62,on schedule
+775,65,signal,Milo,patrol hazard,lens room,path_to_resident,False,False,False,0.67,on schedule
+776,65,orchard,Mara,patrol hazard,market plank,inspect_affordance,False,False,False,0.63,on schedule
+777,65,repair_ring,Juno,restore memory,cool corner,interrupt_routine,True,True,False,0.49,interrupted
+778,65,riverbend,Lio,restore memory,arrival court,path_to_resident,False,False,False,0.6,on schedule
+779,65,roofward,Fay,restore memory,arrival court,inspect_affordance,False,False,False,0.63,on schedule
+780,66,archive,Nia,repair project,spool room,recover_routine,False,True,True,0.96,recovered
+781,66,signal,Ren,repair project,mast base,offer_care,False,False,False,0.96,on schedule
+782,66,orchard,Ivo,repair project,seed lane,treat_pain,False,False,False,0.96,on schedule
+783,66,repair_ring,Pax,teach dialect,spark lane,continue_project,False,False,False,0.96,on schedule
+784,66,riverbend,Ari,teach dialect,kit alcove,offer_care,False,False,False,0.96,on schedule
+785,66,roofward,Sera,teach dialect,warm lane,treat_pain,False,False,False,0.96,on schedule
+786,66,archive,Nia,patrol hazard,ink niche,continue_project,False,False,False,0.96,on schedule
+787,66,signal,Ren,patrol hazard,lens room,path_to_rest,False,False,False,0.96,on schedule
+788,66,orchard,Ivo,patrol hazard,market plank,perform_chain_step,False,False,False,0.96,on schedule
+789,66,repair_ring,Pax,restore memory,cool corner,recover_routine,False,True,True,0.96,recovered
+790,66,riverbend,Ari,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+791,66,roofward,Sera,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+792,67,archive,Toma,repair project,spool room,ask_dialect_memory,False,False,False,0.62,on schedule
+793,67,signal,Milo,repair project,mast base,rest,False,False,False,0.67,on schedule
+794,67,orchard,Mara,repair project,seed lane,dry_off,False,False,False,0.63,on schedule
+795,67,repair_ring,Juno,teach dialect,spark lane,path_to_resident,True,True,True,0.48,recovered
+796,67,riverbend,Lio,teach dialect,kit alcove,rest,False,False,False,0.6,on schedule
+797,67,roofward,Fay,teach dialect,warm lane,dry_off,False,False,False,0.63,on schedule
+798,67,archive,Toma,patrol hazard,ink niche,path_to_resident,False,False,False,0.62,on schedule
+799,67,signal,Milo,patrol hazard,lens room,inspect_affordance,False,False,False,0.67,on schedule
+800,67,orchard,Mara,patrol hazard,market plank,interrupt_routine,True,True,True,0.62,recovered
+801,67,repair_ring,Juno,restore memory,cool corner,ask_dialect_memory,False,False,False,0.48,on schedule
+802,67,riverbend,Lio,restore memory,arrival court,inspect_affordance,False,False,False,0.6,on schedule
+803,67,roofward,Fay,restore memory,arrival court,interrupt_routine,True,True,True,0.62,recovered
+804,68,archive,Nia,repair project,spool room,offer_care,False,False,False,0.96,on schedule
+805,68,signal,Ren,repair project,mast base,treat_pain,False,False,False,0.96,on schedule
+806,68,orchard,Ivo,repair project,seed lane,continue_project,False,False,False,0.96,on schedule
+807,68,repair_ring,Pax,teach dialect,spark lane,path_to_rest,False,False,False,0.96,on schedule
+808,68,riverbend,Ari,teach dialect,kit alcove,treat_pain,False,False,False,0.96,on schedule
+809,68,roofward,Sera,teach dialect,warm lane,continue_project,False,False,False,0.96,on schedule
+810,68,archive,Nia,patrol hazard,ink niche,path_to_rest,False,False,False,0.96,on schedule
+811,68,signal,Ren,patrol hazard,lens room,perform_chain_step,False,False,False,0.96,on schedule
+812,68,orchard,Ivo,patrol hazard,market plank,recover_routine,False,True,True,0.96,recovered
+813,68,repair_ring,Pax,restore memory,cool corner,offer_care,False,False,False,0.96,on schedule
+814,68,riverbend,Ari,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+815,68,roofward,Sera,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+816,69,archive,Toma,repair project,spool room,rest,False,False,False,0.62,on schedule
+817,69,signal,Milo,repair project,mast base,dry_off,False,False,False,0.67,on schedule
+818,69,orchard,Mara,repair project,seed lane,path_to_resident,False,False,False,0.62,on schedule
+819,69,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.48,on schedule
+820,69,riverbend,Lio,teach dialect,kit alcove,dry_off,False,False,False,0.6,on schedule
+821,69,roofward,Fay,teach dialect,warm lane,path_to_resident,False,False,False,0.62,on schedule
+822,69,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.62,on schedule
+823,69,signal,Milo,patrol hazard,lens room,interrupt_routine,True,True,True,0.66,recovered
+824,69,orchard,Mara,patrol hazard,market plank,ask_dialect_memory,False,False,False,0.62,on schedule
+825,69,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.48,on schedule
+826,69,riverbend,Lio,restore memory,arrival court,interrupt_routine,True,True,False,0.53,interrupted
+827,69,roofward,Fay,restore memory,arrival court,ask_dialect_memory,False,False,False,0.62,on schedule
+828,70,archive,Nia,repair project,spool room,treat_pain,False,False,False,0.96,on schedule
+829,70,signal,Ren,repair project,mast base,continue_project,False,False,False,0.96,on schedule
+830,70,orchard,Ivo,repair project,seed lane,path_to_rest,False,False,False,0.96,on schedule
+831,70,repair_ring,Pax,teach dialect,spark lane,perform_chain_step,False,False,False,0.96,on schedule
+832,70,riverbend,Ari,teach dialect,kit alcove,continue_project,False,False,False,0.96,on schedule
+833,70,roofward,Sera,teach dialect,warm lane,path_to_rest,False,False,False,0.96,on schedule
+834,70,archive,Nia,patrol hazard,ink niche,perform_chain_step,False,False,False,0.96,on schedule
+835,70,signal,Ren,patrol hazard,lens room,recover_routine,False,True,True,0.96,recovered
+836,70,orchard,Ivo,patrol hazard,market plank,offer_care,False,False,False,0.96,on schedule
+837,70,repair_ring,Pax,restore memory,cool corner,treat_pain,False,False,False,0.96,on schedule
+838,70,riverbend,Ari,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+839,70,roofward,Sera,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+840,71,archive,Toma,repair project,spool room,dry_off,False,False,False,0.62,on schedule
+841,71,signal,Milo,repair project,mast base,path_to_resident,False,False,False,0.66,on schedule
+842,71,orchard,Mara,repair project,seed lane,inspect_affordance,False,False,False,0.62,on schedule
+843,71,repair_ring,Juno,teach dialect,spark lane,interrupt_routine,True,True,True,0.47,recovered
+844,71,riverbend,Lio,teach dialect,kit alcove,path_to_resident,False,False,False,0.53,on schedule
+845,71,roofward,Fay,teach dialect,warm lane,inspect_affordance,False,False,False,0.62,on schedule
+846,71,archive,Toma,patrol hazard,ink niche,interrupt_routine,True,True,True,0.61,recovered
+847,71,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.66,on schedule
+848,71,orchard,Mara,patrol hazard,market plank,rest,True,True,True,0.61,recovered
+849,71,repair_ring,Juno,restore memory,cool corner,dry_off,False,False,False,0.47,on schedule
+850,71,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.53,on schedule
+851,71,roofward,Fay,restore memory,arrival court,rest,False,False,False,0.62,on schedule
+852,72,signal,Milo,repair project,mast base,path_to_resident,False,False,False,0.66,on schedule
+853,72,orchard,Mara,repair project,seed lane,inspect_affordance,False,False,False,0.61,on schedule
+854,72,repair_ring,Juno,repair project,wire bench,interrupt_routine,True,True,False,0.4,interrupted
+855,72,riverbend,Lio,teach dialect,kit alcove,path_to_resident,False,False,False,0.53,on schedule
+856,72,roofward,Fay,teach dialect,warm lane,inspect_affordance,False,False,False,0.62,on schedule
+857,72,archive,Toma,teach dialect,stone stacks,interrupt_routine,True,True,True,0.6,recovered
+858,72,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.66,on schedule
+859,72,orchard,Mara,patrol hazard,market plank,rest,False,False,False,0.61,on schedule
+860,72,repair_ring,Juno,patrol hazard,bell alcove,dry_off,False,False,False,0.4,on schedule
+861,72,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.53,on schedule
+862,72,roofward,Fay,restore memory,arrival court,rest,False,False,False,0.62,on schedule
+863,72,archive,Toma,restore memory,memory desk,dry_off,False,False,False,0.6,on schedule
+864,73,signal,Ren,repair project,mast base,path_to_rest,False,False,False,0.96,on schedule
+865,73,orchard,Ivo,repair project,seed lane,perform_chain_step,False,False,False,0.96,on schedule
+866,73,repair_ring,Pax,repair project,wire bench,recover_routine,False,True,True,0.96,recovered
+867,73,riverbend,Ari,teach dialect,kit alcove,path_to_rest,False,False,False,0.96,on schedule
+868,73,roofward,Sera,teach dialect,warm lane,perform_chain_step,False,False,False,0.96,on schedule
+869,73,archive,Nia,teach dialect,stone stacks,recover_routine,False,True,True,0.96,recovered
+870,73,signal,Ren,patrol hazard,lens room,offer_care,False,False,False,0.96,on schedule
+871,73,orchard,Ivo,patrol hazard,market plank,treat_pain,False,False,False,0.96,on schedule
+872,73,repair_ring,Pax,patrol hazard,bell alcove,continue_project,False,False,False,0.96,on schedule
+873,73,riverbend,Ari,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+874,73,roofward,Sera,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+875,73,archive,Nia,restore memory,memory desk,continue_project,False,False,False,0.96,on schedule
+876,74,signal,Milo,repair project,mast base,inspect_affordance,False,False,False,0.66,on schedule
+877,74,orchard,Mara,repair project,seed lane,interrupt_routine,True,True,True,0.6,recovered
+878,74,repair_ring,Juno,repair project,wire bench,ask_dialect_memory,False,False,False,0.4,on schedule
+879,74,riverbend,Lio,teach dialect,kit alcove,inspect_affordance,False,False,False,0.53,on schedule
+880,74,roofward,Fay,teach dialect,warm lane,interrupt_routine,True,True,True,0.61,recovered
+881,74,archive,Toma,teach dialect,stone stacks,ask_dialect_memory,False,False,False,0.6,on schedule
+882,74,signal,Milo,patrol hazard,lens room,rest,False,False,False,0.66,on schedule
+883,74,orchard,Mara,patrol hazard,market plank,dry_off,False,False,False,0.6,on schedule
+884,74,repair_ring,Juno,patrol hazard,bell alcove,path_to_resident,False,False,False,0.4,on schedule
+885,74,riverbend,Lio,restore memory,arrival court,rest,False,False,False,0.53,on schedule
+886,74,roofward,Fay,restore memory,arrival court,dry_off,False,False,False,0.61,on schedule
+887,74,archive,Toma,restore memory,memory desk,path_to_resident,False,False,False,0.6,on schedule
+888,75,signal,Ren,repair project,mast base,perform_chain_step,False,False,False,0.96,on schedule
+889,75,orchard,Ivo,repair project,seed lane,recover_routine,False,True,True,0.96,recovered
+890,75,repair_ring,Pax,repair project,wire bench,offer_care,False,False,False,0.96,on schedule
+891,75,riverbend,Ari,teach dialect,kit alcove,perform_chain_step,False,False,False,0.96,on schedule
+892,75,roofward,Sera,teach dialect,warm lane,recover_routine,False,True,True,0.96,recovered
+893,75,archive,Nia,teach dialect,stone stacks,offer_care,False,False,False,0.96,on schedule
+894,75,signal,Ren,patrol hazard,lens room,treat_pain,False,False,False,0.96,on schedule
+895,75,orchard,Ivo,patrol hazard,market plank,continue_project,False,False,False,0.96,on schedule
+896,75,repair_ring,Pax,patrol hazard,bell alcove,path_to_rest,False,False,False,0.96,on schedule
+897,75,riverbend,Ari,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+898,75,roofward,Sera,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+899,75,archive,Nia,restore memory,memory desk,path_to_rest,False,False,False,0.96,on schedule
+900,76,signal,Milo,repair project,mast base,interrupt_routine,True,True,True,0.65,recovered
+901,76,orchard,Mara,repair project,seed lane,ask_dialect_memory,True,True,True,0.59,recovered
+902,76,repair_ring,Juno,repair project,wire bench,rest,False,False,False,0.4,on schedule
+903,76,riverbend,Lio,teach dialect,kit alcove,interrupt_routine,True,True,False,0.46,interrupted
+904,76,roofward,Fay,teach dialect,warm lane,ask_dialect_memory,False,False,False,0.61,on schedule
+905,76,archive,Toma,teach dialect,stone stacks,rest,False,False,False,0.6,on schedule
+906,76,signal,Milo,patrol hazard,lens room,dry_off,False,False,False,0.65,on schedule
+907,76,orchard,Mara,patrol hazard,market plank,path_to_resident,False,False,False,0.59,on schedule
+908,76,repair_ring,Juno,patrol hazard,bell alcove,inspect_affordance,False,False,False,0.4,on schedule
+909,76,riverbend,Lio,restore memory,arrival court,dry_off,False,False,False,0.46,on schedule
+910,76,roofward,Fay,restore memory,arrival court,path_to_resident,False,False,False,0.61,on schedule
+911,76,archive,Toma,restore memory,memory desk,inspect_affordance,False,False,False,0.6,on schedule
+912,77,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+913,77,orchard,Ivo,repair project,seed lane,offer_care,False,False,False,0.96,on schedule
+914,77,repair_ring,Pax,repair project,wire bench,treat_pain,False,False,False,0.96,on schedule
+915,77,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+916,77,roofward,Sera,teach dialect,warm lane,offer_care,False,False,False,0.96,on schedule
+917,77,archive,Nia,teach dialect,stone stacks,treat_pain,False,False,False,0.96,on schedule
+918,77,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+919,77,orchard,Ivo,patrol hazard,market plank,path_to_rest,False,False,False,0.96,on schedule
+920,77,repair_ring,Pax,patrol hazard,bell alcove,perform_chain_step,False,False,False,0.96,on schedule
+921,77,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+922,77,roofward,Sera,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+923,77,archive,Nia,restore memory,memory desk,perform_chain_step,False,False,False,0.96,on schedule
+924,78,signal,Milo,repair project,mast base,ask_dialect_memory,False,False,False,0.65,on schedule
+925,78,orchard,Mara,repair project,seed lane,rest,False,False,False,0.59,on schedule
+926,78,repair_ring,Juno,repair project,wire bench,dry_off,False,False,False,0.4,on schedule
+927,78,riverbend,Lio,teach dialect,kit alcove,ask_dialect_memory,False,False,False,0.46,on schedule
+928,78,roofward,Fay,teach dialect,warm lane,rest,False,False,False,0.61,on schedule
+929,78,archive,Toma,teach dialect,stone stacks,dry_off,False,False,False,0.6,on schedule
+930,78,signal,Milo,patrol hazard,lens room,path_to_resident,False,False,False,0.65,on schedule
+931,78,orchard,Mara,patrol hazard,market plank,inspect_affordance,False,False,False,0.59,on schedule
+932,78,repair_ring,Juno,patrol hazard,bell alcove,interrupt_routine,True,True,True,0.39,recovered
+933,78,riverbend,Lio,restore memory,arrival court,path_to_resident,False,False,False,0.46,on schedule
+934,78,roofward,Fay,restore memory,arrival court,inspect_affordance,False,False,False,0.61,on schedule
+935,78,archive,Toma,restore memory,memory desk,interrupt_routine,True,True,True,0.59,recovered
+936,79,signal,Ren,repair project,mast base,offer_care,False,False,False,0.96,on schedule
+937,79,orchard,Ivo,repair project,seed lane,treat_pain,False,False,False,0.96,on schedule
+938,79,repair_ring,Pax,repair project,wire bench,continue_project,False,False,False,0.96,on schedule
+939,79,riverbend,Ari,teach dialect,kit alcove,offer_care,False,False,False,0.96,on schedule
+940,79,roofward,Sera,teach dialect,warm lane,treat_pain,False,False,False,0.96,on schedule
+941,79,archive,Nia,teach dialect,stone stacks,continue_project,False,False,False,0.96,on schedule
+942,79,signal,Ren,patrol hazard,lens room,path_to_rest,False,False,False,0.96,on schedule
+943,79,orchard,Ivo,patrol hazard,market plank,perform_chain_step,False,False,False,0.96,on schedule
+944,79,repair_ring,Pax,patrol hazard,bell alcove,recover_routine,False,True,True,0.96,recovered
+945,79,riverbend,Ari,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+946,79,roofward,Sera,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+947,79,archive,Nia,restore memory,memory desk,recover_routine,False,True,True,0.96,recovered
+948,80,orchard,Ivo,repair project,seed lane,treat_pain,False,False,False,0.96,on schedule
+949,80,repair_ring,Pax,repair project,wire bench,continue_project,False,False,False,0.96,on schedule
+950,80,riverbend,Ari,repair project,plank hall,offer_care,False,False,False,0.96,on schedule
+951,80,roofward,Sera,teach dialect,warm lane,treat_pain,False,False,False,0.96,on schedule
+952,80,archive,Nia,teach dialect,stone stacks,continue_project,False,False,False,0.96,on schedule
+953,80,signal,Ren,teach dialect,lantern walk,path_to_rest,False,False,False,0.96,on schedule
+954,80,orchard,Ivo,patrol hazard,market plank,perform_chain_step,True,True,True,0.95,recovered
+955,80,repair_ring,Pax,patrol hazard,bell alcove,recover_routine,False,True,True,0.96,recovered
+956,80,riverbend,Ari,patrol hazard,dry ridge,path_to_rest,False,False,False,0.96,on schedule
+957,80,roofward,Sera,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+958,80,archive,Nia,restore memory,memory desk,recover_routine,False,True,True,0.96,recovered
+959,80,signal,Ren,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+960,81,orchard,Mara,repair project,seed lane,dry_off,False,False,False,0.59,on schedule
+961,81,repair_ring,Juno,repair project,wire bench,path_to_resident,False,False,False,0.39,on schedule
+962,81,riverbend,Lio,repair project,plank hall,rest,False,False,False,0.46,on schedule
+963,81,roofward,Fay,teach dialect,warm lane,dry_off,False,False,False,0.61,on schedule
+964,81,archive,Toma,teach dialect,stone stacks,path_to_resident,False,False,False,0.59,on schedule
+965,81,signal,Milo,teach dialect,lantern walk,inspect_affordance,False,False,False,0.65,on schedule
+966,81,orchard,Mara,patrol hazard,market plank,interrupt_routine,True,True,False,0.52,interrupted
+967,81,repair_ring,Juno,patrol hazard,bell alcove,ask_dialect_memory,False,False,False,0.39,on schedule
+968,81,riverbend,Lio,patrol hazard,dry ridge,inspect_affordance,False,False,False,0.46,on schedule
+969,81,roofward,Fay,restore memory,arrival court,interrupt_routine,True,True,True,0.6,recovered
+970,81,archive,Toma,restore memory,memory desk,ask_dialect_memory,False,False,False,0.59,on schedule
+971,81,signal,Milo,restore memory,arrival court,rest,False,False,False,0.65,on schedule
+972,82,orchard,Ivo,repair project,seed lane,continue_project,False,False,False,0.95,on schedule
+973,82,repair_ring,Pax,repair project,wire bench,path_to_rest,False,False,False,0.96,on schedule
+974,82,riverbend,Ari,repair project,plank hall,treat_pain,False,False,False,0.96,on schedule
+975,82,roofward,Sera,teach dialect,warm lane,continue_project,False,False,False,0.96,on schedule
+976,82,archive,Nia,teach dialect,stone stacks,path_to_rest,False,False,False,0.96,on schedule
+977,82,signal,Ren,teach dialect,lantern walk,perform_chain_step,False,False,False,0.96,on schedule
+978,82,orchard,Ivo,patrol hazard,market plank,recover_routine,False,True,True,0.96,recovered
+979,82,repair_ring,Pax,patrol hazard,bell alcove,offer_care,False,False,False,0.96,on schedule
+980,82,riverbend,Ari,patrol hazard,dry ridge,perform_chain_step,False,False,False,0.96,on schedule
+981,82,roofward,Sera,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+982,82,archive,Nia,restore memory,memory desk,offer_care,False,False,False,0.96,on schedule
+983,82,signal,Ren,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+984,83,orchard,Mara,repair project,seed lane,path_to_resident,False,False,False,0.52,on schedule
+985,83,repair_ring,Juno,repair project,wire bench,inspect_affordance,False,False,False,0.39,on schedule
+986,83,riverbend,Lio,repair project,plank hall,dry_off,False,False,False,0.46,on schedule
+987,83,roofward,Fay,teach dialect,warm lane,path_to_resident,False,False,False,0.6,on schedule
+988,83,archive,Toma,teach dialect,stone stacks,inspect_affordance,False,False,False,0.59,on schedule
+989,83,signal,Milo,teach dialect,lantern walk,interrupt_routine,True,True,True,0.64,recovered
+990,83,orchard,Mara,patrol hazard,market plank,ask_dialect_memory,False,False,False,0.52,on schedule
+991,83,repair_ring,Juno,patrol hazard,bell alcove,rest,False,False,False,0.39,on schedule
+992,83,riverbend,Lio,patrol hazard,dry ridge,interrupt_routine,True,True,True,0.45,recovered
+993,83,roofward,Fay,restore memory,arrival court,ask_dialect_memory,False,False,False,0.6,on schedule
+994,83,archive,Toma,restore memory,memory desk,rest,False,False,False,0.59,on schedule
+995,83,signal,Milo,restore memory,arrival court,dry_off,False,False,False,0.64,on schedule
+996,84,orchard,Ivo,repair project,seed lane,path_to_rest,False,False,False,0.96,on schedule
+997,84,repair_ring,Pax,repair project,wire bench,perform_chain_step,False,False,False,0.96,on schedule
+998,84,riverbend,Ari,repair project,plank hall,continue_project,False,False,False,0.96,on schedule
+999,84,roofward,Sera,teach dialect,warm lane,path_to_rest,False,False,False,0.96,on schedule
+1000,84,archive,Nia,teach dialect,stone stacks,perform_chain_step,False,False,False,0.96,on schedule
+1001,84,signal,Ren,teach dialect,lantern walk,recover_routine,False,True,True,0.96,recovered
+1002,84,orchard,Ivo,patrol hazard,market plank,offer_care,False,False,False,0.96,on schedule
+1003,84,repair_ring,Pax,patrol hazard,bell alcove,treat_pain,False,False,False,0.96,on schedule
+1004,84,riverbend,Ari,patrol hazard,dry ridge,recover_routine,False,True,True,0.96,recovered
+1005,84,roofward,Sera,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+1006,84,archive,Nia,restore memory,memory desk,treat_pain,False,False,False,0.96,on schedule
+1007,84,signal,Ren,restore memory,arrival court,continue_project,True,True,True,0.95,recovered
+1008,85,orchard,Mara,repair project,seed lane,inspect_affordance,False,False,False,0.52,on schedule
+1009,85,repair_ring,Juno,repair project,wire bench,interrupt_routine,True,True,True,0.38,recovered
+1010,85,riverbend,Lio,repair project,plank hall,path_to_resident,False,False,False,0.45,on schedule
+1011,85,roofward,Fay,teach dialect,warm lane,inspect_affordance,False,False,False,0.6,on schedule
+1012,85,archive,Toma,teach dialect,stone stacks,interrupt_routine,True,True,True,0.58,recovered
+1013,85,signal,Milo,teach dialect,lantern walk,ask_dialect_memory,False,False,False,0.64,on schedule
+1014,85,orchard,Mara,patrol hazard,market plank,rest,False,False,False,0.52,on schedule
+1015,85,repair_ring,Juno,patrol hazard,bell alcove,dry_off,False,False,False,0.38,on schedule
+1016,85,riverbend,Lio,patrol hazard,dry ridge,ask_dialect_memory,False,False,False,0.45,on schedule
+1017,85,roofward,Fay,restore memory,arrival court,rest,False,False,False,0.6,on schedule
+1018,85,archive,Toma,restore memory,memory desk,dry_off,False,False,False,0.58,on schedule
+1019,85,signal,Milo,restore memory,arrival court,path_to_resident,False,False,False,0.64,on schedule
+1020,86,orchard,Ivo,repair project,seed lane,perform_chain_step,True,True,True,0.95,recovered
+1021,86,repair_ring,Pax,repair project,wire bench,recover_routine,False,True,True,0.96,recovered
+1022,86,riverbend,Ari,repair project,plank hall,path_to_rest,False,False,False,0.96,on schedule
+1023,86,roofward,Sera,teach dialect,warm lane,perform_chain_step,False,False,False,0.96,on schedule
+1024,86,archive,Nia,teach dialect,stone stacks,recover_routine,False,True,True,0.96,recovered
+1025,86,signal,Ren,teach dialect,lantern walk,offer_care,False,False,False,0.95,on schedule
+1026,86,orchard,Ivo,patrol hazard,market plank,treat_pain,False,False,False,0.95,on schedule
+1027,86,repair_ring,Pax,patrol hazard,bell alcove,continue_project,False,False,False,0.96,on schedule
+1028,86,riverbend,Ari,patrol hazard,dry ridge,offer_care,False,False,False,0.96,on schedule
+1029,86,roofward,Sera,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+1030,86,archive,Nia,restore memory,memory desk,continue_project,False,False,False,0.96,on schedule
+1031,86,signal,Ren,restore memory,arrival court,path_to_rest,False,False,False,0.95,on schedule
+1032,87,orchard,Mara,repair project,seed lane,interrupt_routine,True,True,True,0.51,recovered
+1033,87,repair_ring,Juno,repair project,wire bench,ask_dialect_memory,False,False,False,0.38,on schedule
+1034,87,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.45,on schedule
+1035,87,roofward,Fay,teach dialect,warm lane,interrupt_routine,True,True,True,0.59,recovered
+1036,87,archive,Toma,teach dialect,stone stacks,ask_dialect_memory,False,False,False,0.58,on schedule
+1037,87,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.64,on schedule
+1038,87,orchard,Mara,patrol hazard,market plank,dry_off,False,False,False,0.51,on schedule
+1039,87,repair_ring,Juno,patrol hazard,bell alcove,path_to_resident,False,False,False,0.38,on schedule
+1040,87,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.45,on schedule
+1041,87,roofward,Fay,restore memory,arrival court,dry_off,False,False,False,0.59,on schedule
+1042,87,archive,Toma,restore memory,memory desk,path_to_resident,False,False,False,0.58,on schedule
+1043,87,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.64,on schedule
+1044,88,repair_ring,Juno,repair project,wire bench,ask_dialect_memory,False,False,False,0.38,on schedule
+1045,88,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.45,on schedule
+1046,88,roofward,Fay,repair project,ledger loft,interrupt_routine,True,True,True,0.58,recovered
+1047,88,archive,Toma,teach dialect,stone stacks,ask_dialect_memory,False,False,False,0.58,on schedule
+1048,88,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.64,on schedule
+1049,88,orchard,Mara,teach dialect,satchel shed,dry_off,False,False,False,0.51,on schedule
+1050,88,repair_ring,Juno,patrol hazard,bell alcove,path_to_resident,False,False,False,0.38,on schedule
+1051,88,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.45,on schedule
+1052,88,roofward,Fay,patrol hazard,glass stair,dry_off,False,False,False,0.58,on schedule
+1053,88,archive,Toma,restore memory,memory desk,path_to_resident,False,False,False,0.58,on schedule
+1054,88,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.64,on schedule
+1055,88,orchard,Mara,restore memory,arrival court,interrupt_routine,True,True,True,0.5,recovered
+1056,89,repair_ring,Pax,repair project,wire bench,offer_care,False,False,False,0.96,on schedule
+1057,89,riverbend,Ari,repair project,plank hall,perform_chain_step,False,False,False,0.96,on schedule
+1058,89,roofward,Sera,repair project,ledger loft,recover_routine,False,True,True,0.96,recovered
+1059,89,archive,Nia,teach dialect,stone stacks,offer_care,False,False,False,0.96,on schedule
+1060,89,signal,Ren,teach dialect,lantern walk,treat_pain,True,True,True,0.94,recovered
+1061,89,orchard,Ivo,teach dialect,satchel shed,continue_project,False,False,False,0.95,on schedule
+1062,89,repair_ring,Pax,patrol hazard,bell alcove,path_to_rest,False,False,False,0.96,on schedule
+1063,89,riverbend,Ari,patrol hazard,dry ridge,treat_pain,False,False,False,0.96,on schedule
+1064,89,roofward,Sera,patrol hazard,glass stair,continue_project,False,False,False,0.96,on schedule
+1065,89,archive,Nia,restore memory,memory desk,path_to_rest,False,False,False,0.96,on schedule
+1066,89,signal,Ren,restore memory,arrival court,perform_chain_step,False,False,False,0.94,on schedule
+1067,89,orchard,Ivo,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+1068,90,repair_ring,Juno,repair project,wire bench,rest,False,False,False,0.38,on schedule
+1069,90,riverbend,Lio,repair project,plank hall,interrupt_routine,True,True,True,0.44,recovered
+1070,90,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.58,on schedule
+1071,90,archive,Toma,teach dialect,stone stacks,rest,False,False,False,0.58,on schedule
+1072,90,signal,Milo,teach dialect,lantern walk,dry_off,False,False,False,0.64,on schedule
+1073,90,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.5,on schedule
+1074,90,repair_ring,Juno,patrol hazard,bell alcove,inspect_affordance,False,False,False,0.38,on schedule
+1075,90,riverbend,Lio,patrol hazard,dry ridge,dry_off,False,False,False,0.44,on schedule
+1076,90,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.58,on schedule
+1077,90,archive,Toma,restore memory,memory desk,inspect_affordance,False,False,False,0.58,on schedule
+1078,90,signal,Milo,restore memory,arrival court,interrupt_routine,True,True,False,0.57,interrupted
+1079,90,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.5,on schedule
+1080,91,repair_ring,Pax,repair project,wire bench,treat_pain,False,False,False,0.96,on schedule
+1081,91,riverbend,Ari,repair project,plank hall,recover_routine,False,True,True,0.96,recovered
+1082,91,roofward,Sera,repair project,ledger loft,offer_care,False,False,False,0.96,on schedule
+1083,91,archive,Nia,teach dialect,stone stacks,treat_pain,False,False,False,0.96,on schedule
+1084,91,signal,Ren,teach dialect,lantern walk,continue_project,False,False,False,0.94,on schedule
+1085,91,orchard,Ivo,teach dialect,satchel shed,path_to_rest,False,False,False,0.96,on schedule
+1086,91,repair_ring,Pax,patrol hazard,bell alcove,perform_chain_step,False,False,False,0.96,on schedule
+1087,91,riverbend,Ari,patrol hazard,dry ridge,continue_project,False,False,False,0.96,on schedule
+1088,91,roofward,Sera,patrol hazard,glass stair,path_to_rest,False,False,False,0.96,on schedule
+1089,91,archive,Nia,restore memory,memory desk,perform_chain_step,False,False,False,0.96,on schedule
+1090,91,signal,Ren,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+1091,91,orchard,Ivo,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+1092,92,repair_ring,Juno,repair project,wire bench,dry_off,False,False,False,0.38,on schedule
+1093,92,riverbend,Lio,repair project,plank hall,ask_dialect_memory,False,False,False,0.44,on schedule
+1094,92,roofward,Fay,repair project,ledger loft,rest,False,False,False,0.58,on schedule
+1095,92,archive,Toma,teach dialect,stone stacks,dry_off,False,False,False,0.58,on schedule
+1096,92,signal,Milo,teach dialect,lantern walk,path_to_resident,False,False,False,0.57,on schedule
+1097,92,orchard,Mara,teach dialect,satchel shed,inspect_affordance,False,False,False,0.5,on schedule
+1098,92,repair_ring,Juno,patrol hazard,bell alcove,interrupt_routine,True,True,True,0.37,recovered
+1099,92,riverbend,Lio,patrol hazard,dry ridge,path_to_resident,False,False,False,0.44,on schedule
+1100,92,roofward,Fay,patrol hazard,glass stair,inspect_affordance,False,False,False,0.58,on schedule
+1101,92,archive,Toma,restore memory,memory desk,interrupt_routine,True,True,True,0.57,recovered
+1102,92,signal,Milo,restore memory,arrival court,ask_dialect_memory,False,False,False,0.57,on schedule
+1103,92,orchard,Mara,restore memory,arrival court,rest,False,False,False,0.5,on schedule
+1104,93,repair_ring,Pax,repair project,wire bench,continue_project,False,False,False,0.96,on schedule
+1105,93,riverbend,Ari,repair project,plank hall,offer_care,False,False,False,0.96,on schedule
+1106,93,roofward,Sera,repair project,ledger loft,treat_pain,False,False,False,0.96,on schedule
+1107,93,archive,Nia,teach dialect,stone stacks,continue_project,False,False,False,0.96,on schedule
+1108,93,signal,Ren,teach dialect,lantern walk,path_to_rest,False,False,False,0.96,on schedule
+1109,93,orchard,Ivo,teach dialect,satchel shed,perform_chain_step,False,False,False,0.96,on schedule
+1110,93,repair_ring,Pax,patrol hazard,bell alcove,recover_routine,False,True,True,0.96,recovered
+1111,93,riverbend,Ari,patrol hazard,dry ridge,path_to_rest,False,False,False,0.96,on schedule
+1112,93,roofward,Sera,patrol hazard,glass stair,perform_chain_step,False,False,False,0.96,on schedule
+1113,93,archive,Nia,restore memory,memory desk,recover_routine,True,True,True,0.95,recovered
+1114,93,signal,Ren,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+1115,93,orchard,Ivo,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+1116,94,repair_ring,Juno,repair project,wire bench,path_to_resident,False,False,False,0.37,on schedule
+1117,94,riverbend,Lio,repair project,plank hall,rest,False,False,False,0.44,on schedule
+1118,94,roofward,Fay,repair project,ledger loft,dry_off,False,False,False,0.58,on schedule
+1119,94,archive,Toma,teach dialect,stone stacks,path_to_resident,False,False,False,0.57,on schedule
+1120,94,signal,Milo,teach dialect,lantern walk,inspect_affordance,False,False,False,0.57,on schedule
+1121,94,orchard,Mara,teach dialect,satchel shed,interrupt_routine,True,True,True,0.49,recovered
+1122,94,repair_ring,Juno,patrol hazard,bell alcove,ask_dialect_memory,False,False,False,0.37,on schedule
+1123,94,riverbend,Lio,patrol hazard,dry ridge,inspect_affordance,False,False,False,0.44,on schedule
+1124,94,roofward,Fay,patrol hazard,glass stair,interrupt_routine,True,True,True,0.57,recovered
+1125,94,archive,Toma,restore memory,memory desk,ask_dialect_memory,False,False,False,0.57,on schedule
+1126,94,signal,Milo,restore memory,arrival court,rest,False,False,False,0.57,on schedule
+1127,94,orchard,Mara,restore memory,arrival court,dry_off,False,False,False,0.49,on schedule
+1128,95,repair_ring,Pax,repair project,wire bench,path_to_rest,False,False,False,0.96,on schedule
+1129,95,riverbend,Ari,repair project,plank hall,treat_pain,False,False,False,0.96,on schedule
+1130,95,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.96,on schedule
+1131,95,archive,Nia,teach dialect,stone stacks,path_to_rest,False,False,False,0.95,on schedule
+1132,95,signal,Ren,teach dialect,lantern walk,perform_chain_step,False,False,False,0.96,on schedule
+1133,95,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+1134,95,repair_ring,Pax,patrol hazard,bell alcove,offer_care,False,False,False,0.96,on schedule
+1135,95,riverbend,Ari,patrol hazard,dry ridge,perform_chain_step,False,False,False,0.96,on schedule
+1136,95,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+1137,95,archive,Nia,restore memory,memory desk,offer_care,False,False,False,0.95,on schedule
+1138,95,signal,Ren,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+1139,95,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+1140,96,riverbend,Ari,repair project,plank hall,treat_pain,False,False,False,0.96,on schedule
+1141,96,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.96,on schedule
+1142,96,archive,Nia,repair project,spool room,path_to_rest,False,False,False,0.95,on schedule
+1143,96,signal,Ren,teach dialect,lantern walk,perform_chain_step,False,False,False,0.96,on schedule
+1144,96,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+1145,96,repair_ring,Pax,teach dialect,spark lane,offer_care,False,False,False,0.96,on schedule
+1146,96,riverbend,Ari,patrol hazard,dry ridge,perform_chain_step,False,False,False,0.96,on schedule
+1147,96,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+1148,96,archive,Nia,patrol hazard,ink niche,offer_care,False,False,False,0.95,on schedule
+1149,96,signal,Ren,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+1150,96,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+1151,96,repair_ring,Pax,restore memory,cool corner,path_to_rest,False,False,False,0.96,on schedule
+1152,97,riverbend,Lio,repair project,plank hall,dry_off,False,False,False,0.44,on schedule
+1153,97,roofward,Fay,repair project,ledger loft,path_to_resident,False,False,False,0.57,on schedule
+1154,97,archive,Toma,repair project,spool room,inspect_affordance,False,False,False,0.57,on schedule
+1155,97,signal,Milo,teach dialect,lantern walk,interrupt_routine,True,True,False,0.5,interrupted
+1156,97,orchard,Mara,teach dialect,satchel shed,ask_dialect_memory,False,False,False,0.49,on schedule
+1157,97,repair_ring,Juno,teach dialect,spark lane,rest,False,False,False,0.37,on schedule
+1158,97,riverbend,Lio,patrol hazard,dry ridge,interrupt_routine,True,True,True,0.43,recovered
+1159,97,roofward,Fay,patrol hazard,glass stair,ask_dialect_memory,False,False,False,0.57,on schedule
+1160,97,archive,Toma,patrol hazard,ink niche,rest,False,False,False,0.57,on schedule
+1161,97,signal,Milo,restore memory,arrival court,dry_off,False,False,False,0.5,on schedule
+1162,97,orchard,Mara,restore memory,arrival court,path_to_resident,False,False,False,0.49,on schedule
+1163,97,repair_ring,Juno,restore memory,cool corner,inspect_affordance,False,False,False,0.37,on schedule
+1164,98,riverbend,Ari,repair project,plank hall,continue_project,False,False,False,0.96,on schedule
+1165,98,roofward,Sera,repair project,ledger loft,path_to_rest,False,False,False,0.96,on schedule
+1166,98,archive,Nia,repair project,spool room,perform_chain_step,True,True,True,0.94,recovered
+1167,98,signal,Ren,teach dialect,lantern walk,recover_routine,False,True,True,0.96,recovered
+1168,98,orchard,Ivo,teach dialect,satchel shed,offer_care,False,False,False,0.96,on schedule
+1169,98,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+1170,98,riverbend,Ari,patrol hazard,dry ridge,recover_routine,False,True,True,0.96,recovered
+1171,98,roofward,Sera,patrol hazard,glass stair,offer_care,False,False,False,0.96,on schedule
+1172,98,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.94,on schedule
+1173,98,signal,Ren,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+1174,98,orchard,Ivo,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+1175,98,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+1176,99,riverbend,Lio,repair project,plank hall,path_to_resident,False,False,False,0.43,on schedule
+1177,99,roofward,Fay,repair project,ledger loft,inspect_affordance,False,False,False,0.57,on schedule
+1178,99,archive,Toma,repair project,spool room,interrupt_routine,True,True,True,0.56,recovered
+1179,99,signal,Milo,teach dialect,lantern walk,ask_dialect_memory,False,False,False,0.5,on schedule
+1180,99,orchard,Mara,teach dialect,satchel shed,rest,False,False,False,0.49,on schedule
+1181,99,repair_ring,Juno,teach dialect,spark lane,dry_off,False,False,False,0.37,on schedule
+1182,99,riverbend,Lio,patrol hazard,dry ridge,ask_dialect_memory,False,False,False,0.43,on schedule
+1183,99,roofward,Fay,patrol hazard,glass stair,rest,False,False,False,0.57,on schedule
+1184,99,archive,Toma,patrol hazard,ink niche,dry_off,False,False,False,0.56,on schedule
+1185,99,signal,Milo,restore memory,arrival court,path_to_resident,False,False,False,0.5,on schedule
+1186,99,orchard,Mara,restore memory,arrival court,inspect_affordance,False,False,False,0.49,on schedule
+1187,99,repair_ring,Juno,restore memory,cool corner,interrupt_routine,True,True,True,0.36,recovered
+1188,100,riverbend,Ari,repair project,plank hall,path_to_rest,False,False,False,0.96,on schedule
+1189,100,roofward,Sera,repair project,ledger loft,perform_chain_step,False,False,False,0.96,on schedule
+1190,100,archive,Nia,repair project,spool room,recover_routine,False,True,True,0.96,recovered
+1191,100,signal,Ren,teach dialect,lantern walk,offer_care,False,False,False,0.96,on schedule
+1192,100,orchard,Ivo,teach dialect,satchel shed,treat_pain,False,False,False,0.96,on schedule
+1193,100,repair_ring,Pax,teach dialect,spark lane,continue_project,False,False,False,0.96,on schedule
+1194,100,riverbend,Ari,patrol hazard,dry ridge,offer_care,False,False,False,0.96,on schedule
+1195,100,roofward,Sera,patrol hazard,glass stair,treat_pain,False,False,False,0.96,on schedule
+1196,100,archive,Nia,patrol hazard,ink niche,continue_project,False,False,False,0.96,on schedule
+1197,100,signal,Ren,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+1198,100,orchard,Ivo,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+1199,100,repair_ring,Pax,restore memory,cool corner,recover_routine,False,True,True,0.96,recovered
+1200,101,riverbend,Lio,repair project,plank hall,inspect_affordance,False,False,False,0.43,on schedule
+1201,101,roofward,Fay,repair project,ledger loft,interrupt_routine,True,True,True,0.56,recovered
+1202,101,archive,Toma,repair project,spool room,ask_dialect_memory,False,False,False,0.56,on schedule
+1203,101,signal,Milo,teach dialect,lantern walk,rest,False,False,False,0.5,on schedule
+1204,101,orchard,Mara,teach dialect,satchel shed,dry_off,False,False,False,0.49,on schedule
+1205,101,repair_ring,Juno,teach dialect,spark lane,path_to_resident,False,False,False,0.36,on schedule
+1206,101,riverbend,Lio,patrol hazard,dry ridge,rest,False,False,False,0.43,on schedule
+1207,101,roofward,Fay,patrol hazard,glass stair,dry_off,False,False,False,0.56,on schedule
+1208,101,archive,Toma,patrol hazard,ink niche,path_to_resident,False,False,False,0.56,on schedule
+1209,101,signal,Milo,restore memory,arrival court,inspect_affordance,False,False,False,0.5,on schedule
+1210,101,orchard,Mara,restore memory,arrival court,interrupt_routine,True,True,True,0.48,recovered
+1211,101,repair_ring,Juno,restore memory,cool corner,ask_dialect_memory,False,False,False,0.36,on schedule
+1212,102,riverbend,Ari,repair project,plank hall,perform_chain_step,False,False,False,0.96,on schedule
+1213,102,roofward,Sera,repair project,ledger loft,recover_routine,False,True,True,0.96,recovered
+1214,102,archive,Nia,repair project,spool room,offer_care,False,False,False,0.96,on schedule
+1215,102,signal,Ren,teach dialect,lantern walk,treat_pain,False,False,False,0.96,on schedule
+1216,102,orchard,Ivo,teach dialect,satchel shed,continue_project,False,False,False,0.96,on schedule
+1217,102,repair_ring,Pax,teach dialect,spark lane,path_to_rest,False,False,False,0.96,on schedule
+1218,102,riverbend,Ari,patrol hazard,dry ridge,treat_pain,False,False,False,0.96,on schedule
+1219,102,roofward,Sera,patrol hazard,glass stair,continue_project,True,True,True,0.95,recovered
+1220,102,archive,Nia,patrol hazard,ink niche,path_to_rest,False,False,False,0.96,on schedule
+1221,102,signal,Ren,restore memory,arrival court,perform_chain_step,False,False,False,0.96,on schedule
+1222,102,orchard,Ivo,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+1223,102,repair_ring,Pax,restore memory,cool corner,offer_care,False,False,False,0.96,on schedule
+1224,103,riverbend,Lio,repair project,plank hall,interrupt_routine,True,True,True,0.42,recovered
+1225,103,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.56,on schedule
+1226,103,archive,Toma,repair project,spool room,rest,False,False,False,0.56,on schedule
+1227,103,signal,Milo,teach dialect,lantern walk,dry_off,False,False,False,0.5,on schedule
+1228,103,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.48,on schedule
+1229,103,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.36,on schedule
+1230,103,riverbend,Lio,patrol hazard,dry ridge,dry_off,False,False,False,0.42,on schedule
+1231,103,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.56,on schedule
+1232,103,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.56,on schedule
+1233,103,signal,Milo,restore memory,arrival court,interrupt_routine,True,True,True,0.49,recovered
+1234,103,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.48,on schedule
+1235,103,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.36,on schedule
+1236,104,roofward,Fay,repair project,ledger loft,ask_dialect_memory,False,False,False,0.56,on schedule
+1237,104,archive,Toma,repair project,spool room,rest,False,False,False,0.56,on schedule
+1238,104,signal,Milo,repair project,mast base,dry_off,False,False,False,0.49,on schedule
+1239,104,orchard,Mara,teach dialect,satchel shed,path_to_resident,False,False,False,0.48,on schedule
+1240,104,repair_ring,Juno,teach dialect,spark lane,inspect_affordance,False,False,False,0.36,on schedule
+1241,104,riverbend,Lio,teach dialect,kit alcove,dry_off,False,False,False,0.42,on schedule
+1242,104,roofward,Fay,patrol hazard,glass stair,path_to_resident,False,False,False,0.56,on schedule
+1243,104,archive,Toma,patrol hazard,ink niche,inspect_affordance,False,False,False,0.56,on schedule
+1244,104,signal,Milo,patrol hazard,lens room,interrupt_routine,True,True,True,0.48,recovered
+1245,104,orchard,Mara,restore memory,arrival court,ask_dialect_memory,False,False,False,0.48,on schedule
+1246,104,repair_ring,Juno,restore memory,cool corner,rest,False,False,False,0.36,on schedule
+1247,104,riverbend,Lio,restore memory,arrival court,interrupt_routine,True,True,True,0.41,recovered
+1248,105,roofward,Sera,repair project,ledger loft,offer_care,False,False,False,0.95,on schedule
+1249,105,archive,Nia,repair project,spool room,treat_pain,False,False,False,0.96,on schedule
+1250,105,signal,Ren,repair project,mast base,continue_project,False,False,False,0.96,on schedule
+1251,105,orchard,Ivo,teach dialect,satchel shed,path_to_rest,False,False,False,0.96,on schedule
+1252,105,repair_ring,Pax,teach dialect,spark lane,perform_chain_step,False,False,False,0.96,on schedule
+1253,105,riverbend,Ari,teach dialect,kit alcove,continue_project,False,False,False,0.96,on schedule
+1254,105,roofward,Sera,patrol hazard,glass stair,path_to_rest,False,False,False,0.95,on schedule
+1255,105,archive,Nia,patrol hazard,ink niche,perform_chain_step,False,False,False,0.96,on schedule
+1256,105,signal,Ren,patrol hazard,lens room,recover_routine,False,True,True,0.96,recovered
+1257,105,orchard,Ivo,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+1258,105,repair_ring,Pax,restore memory,cool corner,treat_pain,False,False,False,0.96,on schedule
+1259,105,riverbend,Ari,restore memory,arrival court,recover_routine,False,True,True,0.96,recovered
+1260,106,roofward,Fay,repair project,ledger loft,rest,False,False,False,0.56,on schedule
+1261,106,archive,Toma,repair project,spool room,dry_off,False,False,False,0.56,on schedule
+1262,106,signal,Milo,repair project,mast base,path_to_resident,False,False,False,0.48,on schedule
+1263,106,orchard,Mara,teach dialect,satchel shed,inspect_affordance,False,False,False,0.48,on schedule
+1264,106,repair_ring,Juno,teach dialect,spark lane,interrupt_routine,True,True,True,0.35,recovered
+1265,106,riverbend,Lio,teach dialect,kit alcove,path_to_resident,False,False,False,0.41,on schedule
+1266,106,roofward,Fay,patrol hazard,glass stair,inspect_affordance,False,False,False,0.56,on schedule
+1267,106,archive,Toma,patrol hazard,ink niche,interrupt_routine,True,True,False,0.49,interrupted
+1268,106,signal,Milo,patrol hazard,lens room,ask_dialect_memory,False,False,False,0.48,on schedule
+1269,106,orchard,Mara,restore memory,arrival court,rest,False,False,False,0.48,on schedule
+1270,106,repair_ring,Juno,restore memory,cool corner,dry_off,False,False,False,0.35,on schedule
+1271,106,riverbend,Lio,restore memory,arrival court,ask_dialect_memory,False,False,False,0.41,on schedule
+1272,107,roofward,Sera,repair project,ledger loft,treat_pain,True,True,True,0.94,recovered
+1273,107,archive,Nia,repair project,spool room,continue_project,False,False,False,0.96,on schedule
+1274,107,signal,Ren,repair project,mast base,path_to_rest,False,False,False,0.96,on schedule
+1275,107,orchard,Ivo,teach dialect,satchel shed,perform_chain_step,False,False,False,0.96,on schedule
+1276,107,repair_ring,Pax,teach dialect,spark lane,recover_routine,False,True,True,0.96,recovered
+1277,107,riverbend,Ari,teach dialect,kit alcove,path_to_rest,False,False,False,0.96,on schedule
+1278,107,roofward,Sera,patrol hazard,glass stair,perform_chain_step,False,False,False,0.94,on schedule
+1279,107,archive,Nia,patrol hazard,ink niche,recover_routine,False,True,True,0.96,recovered
+1280,107,signal,Ren,patrol hazard,lens room,offer_care,False,False,False,0.96,on schedule
+1281,107,orchard,Ivo,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+1282,107,repair_ring,Pax,restore memory,cool corner,continue_project,False,False,False,0.96,on schedule
+1283,107,riverbend,Ari,restore memory,arrival court,offer_care,False,False,False,0.96,on schedule
+1284,108,roofward,Fay,repair project,ledger loft,dry_off,False,False,False,0.56,on schedule
+1285,108,archive,Toma,repair project,spool room,path_to_resident,False,False,False,0.49,on schedule
+1286,108,signal,Milo,repair project,mast base,inspect_affordance,False,False,False,0.48,on schedule
+1287,108,orchard,Mara,teach dialect,satchel shed,interrupt_routine,True,True,True,0.47,recovered
+1288,108,repair_ring,Juno,teach dialect,spark lane,ask_dialect_memory,False,False,False,0.35,on schedule
+1289,108,riverbend,Lio,teach dialect,kit alcove,inspect_affordance,False,False,False,0.41,on schedule
+1290,108,roofward,Fay,patrol hazard,glass stair,interrupt_routine,True,True,True,0.55,recovered
+1291,108,archive,Toma,patrol hazard,ink niche,ask_dialect_memory,False,False,False,0.49,on schedule
+1292,108,signal,Milo,patrol hazard,lens room,rest,False,False,False,0.48,on schedule
+1293,108,orchard,Mara,restore memory,arrival court,dry_off,False,False,False,0.47,on schedule
+1294,108,repair_ring,Juno,restore memory,cool corner,path_to_resident,False,False,False,0.35,on schedule
+1295,108,riverbend,Lio,restore memory,arrival court,rest,False,False,False,0.41,on schedule
+1296,109,roofward,Sera,repair project,ledger loft,continue_project,False,False,False,0.94,on schedule
+1297,109,archive,Nia,repair project,spool room,path_to_rest,False,False,False,0.96,on schedule
+1298,109,signal,Ren,repair project,mast base,perform_chain_step,False,False,False,0.96,on schedule
+1299,109,orchard,Ivo,teach dialect,satchel shed,recover_routine,False,True,True,0.96,recovered
+1300,109,repair_ring,Pax,teach dialect,spark lane,offer_care,False,False,False,0.96,on schedule
+1301,109,riverbend,Ari,teach dialect,kit alcove,perform_chain_step,False,False,False,0.96,on schedule
+1302,109,roofward,Sera,patrol hazard,glass stair,recover_routine,False,True,True,0.96,recovered
+1303,109,archive,Nia,patrol hazard,ink niche,offer_care,False,False,False,0.96,on schedule
+1304,109,signal,Ren,patrol hazard,lens room,treat_pain,False,False,False,0.96,on schedule
+1305,109,orchard,Ivo,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+1306,109,repair_ring,Pax,restore memory,cool corner,path_to_rest,False,False,False,0.96,on schedule
+1307,109,riverbend,Ari,restore memory,arrival court,treat_pain,False,False,False,0.96,on schedule
+1308,110,roofward,Fay,repair project,ledger loft,path_to_resident,False,False,False,0.55,on schedule
+1309,110,archive,Toma,repair project,spool room,inspect_affordance,False,False,False,0.49,on schedule
+1310,110,signal,Milo,repair project,mast base,interrupt_routine,True,True,True,0.47,recovered
+1311,110,orchard,Mara,teach dialect,satchel shed,ask_dialect_memory,False,False,False,0.47,on schedule
+1312,110,repair_ring,Juno,teach dialect,spark lane,rest,False,False,False,0.35,on schedule
+1313,110,riverbend,Lio,teach dialect,kit alcove,interrupt_routine,True,True,True,0.4,recovered
+1314,110,roofward,Fay,patrol hazard,glass stair,ask_dialect_memory,False,False,False,0.55,on schedule
+1315,110,archive,Toma,patrol hazard,ink niche,rest,False,False,False,0.49,on schedule
+1316,110,signal,Milo,patrol hazard,lens room,dry_off,False,False,False,0.47,on schedule
+1317,110,orchard,Mara,restore memory,arrival court,path_to_resident,False,False,False,0.47,on schedule
+1318,110,repair_ring,Juno,restore memory,cool corner,inspect_affordance,False,False,False,0.35,on schedule
+1319,110,riverbend,Lio,restore memory,arrival court,dry_off,False,False,False,0.4,on schedule
+1320,111,roofward,Sera,repair project,ledger loft,path_to_rest,False,False,False,0.96,on schedule
+1321,111,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+1322,111,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+1323,111,orchard,Ivo,teach dialect,satchel shed,offer_care,False,False,False,0.96,on schedule
+1324,111,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+1325,111,riverbend,Ari,teach dialect,kit alcove,recover_routine,True,True,True,0.95,recovered
+1326,111,roofward,Sera,patrol hazard,glass stair,offer_care,False,False,False,0.96,on schedule
+1327,111,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+1328,111,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+1329,111,orchard,Ivo,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule
+1330,111,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+1331,111,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.95,on schedule
+1332,112,archive,Nia,repair project,spool room,perform_chain_step,False,False,False,0.96,on schedule
+1333,112,signal,Ren,repair project,mast base,recover_routine,False,True,True,0.96,recovered
+1334,112,orchard,Ivo,repair project,seed lane,offer_care,False,False,False,0.96,on schedule
+1335,112,repair_ring,Pax,teach dialect,spark lane,treat_pain,False,False,False,0.96,on schedule
+1336,112,riverbend,Ari,teach dialect,kit alcove,recover_routine,False,True,True,0.96,recovered
+1337,112,roofward,Sera,teach dialect,warm lane,offer_care,False,False,False,0.96,on schedule
+1338,112,archive,Nia,patrol hazard,ink niche,treat_pain,False,False,False,0.96,on schedule
+1339,112,signal,Ren,patrol hazard,lens room,continue_project,False,False,False,0.96,on schedule
+1340,112,orchard,Ivo,patrol hazard,market plank,path_to_rest,False,False,False,0.96,on schedule
+1341,112,repair_ring,Pax,restore memory,cool corner,perform_chain_step,False,False,False,0.96,on schedule
+1342,112,riverbend,Ari,restore memory,arrival court,continue_project,False,False,False,0.96,on schedule
+1343,112,roofward,Sera,restore memory,arrival court,path_to_rest,False,False,False,0.96,on schedule

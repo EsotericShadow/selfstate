@@ -1,0 +1,4335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 280 SSRM-3D Browser World v40 Continuous Pathfinding</title>
+  <style>
+    :root { --ink:#211b17; --paper:#f2ead4; --moss:#4f6b42; --clay:#a95d3e; --line:rgba(33,27,23,.24); }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 12% 4%, #fff1bc 0 15%, transparent 34%), linear-gradient(135deg,#ead7aa,#a8c99d 52%,#6f929e); }
+    header { padding:32px; background:rgba(242,234,212,.88); border-bottom:1px solid var(--line); }
+    h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.2rem); letter-spacing:-.055em; }
+    main { padding:22px; display:grid; gap:18px; }
+    .boundary,.panel,.settlement-card { border:1px solid var(--line); border-radius:18px; padding:16px; background:rgba(242,234,212,.82); box-shadow:0 18px 42px rgba(35,43,28,.13); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+    button { border:1px solid var(--ink); border-radius:999px; padding:8px 12px; background:#fbefd1; cursor:pointer; font:inherit; }
+    button:hover { background:var(--clay); color:white; }
+    .signal, pre { margin-top:8px; padding:10px; border-left:4px solid var(--moss); background:rgba(255,255,255,.43); white-space:pre-wrap; max-height:360px; overflow:auto; }
+    .cue { color:#40513a; font-style:italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Browser World v40: Continuous Pathfinding and Body Care</h1>
+    <p>Verdict: <strong>pass</strong> · readiness 0.925513 · weakest pain_rest_loop_not_spectacle 0.810417</p>
+  </header>
+  <main>
+    <section class="boundary">Boundary: browser-local deterministic scaffold; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no LLM call.</section>
+    <section class="grid">
+      <article class="settlement-card" data-settlement="riverbend">
+        <h2>riverbend</h2>
+        <p><strong>Rooms:</strong> arrival court · plank hall · wet crossing · dry ridge · kit alcove</p>
+        <p><strong>Affordance chain:</strong> inspect plank latch → lift cedar kit → place ridge lantern → repair crossing</p>
+        <p><strong>Residents:</strong> Ari, Lio</p>
+        <p class="cue">river slap / cedar resin · node-03</p>
+        <div class="buttons">
+          <button onclick="pathfindTo('riverbend', 'kit alcove')">Path to rest</button>
+          <button onclick="pathfindTo('riverbend', 'plank hall')">Path to hazard</button>
+          <button onclick="performAffordance('riverbend')">Affordance step</button>
+          <button onclick="interruptRoutine('riverbend')">Interrupt routine</button>
+          <button onclick="recoverRoutine('riverbend')">Recover routine</button>
+          <button onclick="careAction('riverbend', 'rest')">Rest care</button>
+          <button onclick="careAction('riverbend', 'treat')">Treat pain</button>
+        </div>
+        <div id="state-riverbend" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="roofward">
+        <h2>roofward</h2>
+        <p><strong>Rooms:</strong> arrival court · glass stair · warm lane · ledger loft · sun sill</p>
+        <p><strong>Affordance chain:</strong> inspect glass latch → carry herb ledger → align sun lens → open warm archive</p>
+        <p><strong>Residents:</strong> Fay, Sera</p>
+        <p class="cue">hinge ticks / thyme paper · node-05</p>
+        <div class="buttons">
+          <button onclick="pathfindTo('roofward', 'warm lane')">Path to rest</button>
+          <button onclick="pathfindTo('roofward', 'glass stair')">Path to hazard</button>
+          <button onclick="performAffordance('roofward')">Affordance step</button>
+          <button onclick="interruptRoutine('roofward')">Interrupt routine</button>
+          <button onclick="recoverRoutine('roofward')">Recover routine</button>
+          <button onclick="careAction('roofward', 'rest')">Rest care</button>
+          <button onclick="careAction('roofward', 'treat')">Treat pain</button>
+        </div>
+        <div id="state-roofward" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="archive">
+        <h2>archive</h2>
+        <p><strong>Rooms:</strong> arrival court · stone stacks · spool room · ink niche · memory desk</p>
+        <p><strong>Affordance chain:</strong> inspect memory tag → lift signal spool → ink route mark → weave recall line</p>
+        <p><strong>Residents:</strong> Nia, Toma</p>
+        <p class="cue">page flutter / ink linen · node-08</p>
+        <div class="buttons">
+          <button onclick="pathfindTo('archive', 'memory desk')">Path to rest</button>
+          <button onclick="pathfindTo('archive', 'ink niche')">Path to hazard</button>
+          <button onclick="performAffordance('archive')">Affordance step</button>
+          <button onclick="interruptRoutine('archive')">Interrupt routine</button>
+          <button onclick="recoverRoutine('archive')">Recover routine</button>
+          <button onclick="careAction('archive', 'rest')">Rest care</button>
+          <button onclick="careAction('archive', 'treat')">Treat pain</button>
+        </div>
+        <div id="state-archive" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="signal">
+        <h2>signal</h2>
+        <p><strong>Rooms:</strong> arrival court · mast base · lantern walk · lens room · signal perch</p>
+        <p><strong>Affordance chain:</strong> inspect mast rope → lift oil lantern → align signal lens → light safe path</p>
+        <p><strong>Residents:</strong> Milo, Ren</p>
+        <p class="cue">static crickets / lamp oil · node-11</p>
+        <div class="buttons">
+          <button onclick="pathfindTo('signal', 'lantern walk')">Path to rest</button>
+          <button onclick="pathfindTo('signal', 'mast base')">Path to hazard</button>
+          <button onclick="performAffordance('signal')">Affordance step</button>
+          <button onclick="interruptRoutine('signal')">Interrupt routine</button>
+          <button onclick="recoverRoutine('signal')">Recover routine</button>
+          <button onclick="careAction('signal', 'rest')">Rest care</button>
+          <button onclick="careAction('signal', 'treat')">Treat pain</button>
+        </div>
+        <div id="state-signal" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="orchard">
+        <h2>orchard</h2>
+        <p><strong>Rooms:</strong> arrival court · seed lane · mud row · market plank · satchel shed</p>
+        <p><strong>Affordance chain:</strong> inspect dry cord → lift seed satchel → place market token → seal seed shed</p>
+        <p><strong>Residents:</strong> Ivo, Mara</p>
+        <p class="cue">cart creak / apple soil · node-01</p>
+        <div class="buttons">
+          <button onclick="pathfindTo('orchard', 'satchel shed')">Path to rest</button>
+          <button onclick="pathfindTo('orchard', 'mud row')">Path to hazard</button>
+          <button onclick="performAffordance('orchard')">Affordance step</button>
+          <button onclick="interruptRoutine('orchard')">Interrupt routine</button>
+          <button onclick="recoverRoutine('orchard')">Recover routine</button>
+          <button onclick="careAction('orchard', 'rest')">Rest care</button>
+          <button onclick="careAction('orchard', 'treat')">Treat pain</button>
+        </div>
+        <div id="state-orchard" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="repair_ring">
+        <h2>repair_ring</h2>
+        <p><strong>Rooms:</strong> arrival court · wire bench · spark lane · bell alcove · cool corner</p>
+        <p><strong>Affordance chain:</strong> inspect bell gauge → lift insulated tongs → place copper wire → stabilize repair</p>
+        <p><strong>Residents:</strong> Juno, Pax</p>
+        <p class="cue">bell hum / hot copper · node-09</p>
+        <div class="buttons">
+          <button onclick="pathfindTo('repair_ring', 'cool corner')">Path to rest</button>
+          <button onclick="pathfindTo('repair_ring', 'spark lane')">Path to hazard</button>
+          <button onclick="performAffordance('repair_ring')">Affordance step</button>
+          <button onclick="interruptRoutine('repair_ring')">Interrupt routine</button>
+          <button onclick="recoverRoutine('repair_ring')">Recover routine</button>
+          <button onclick="careAction('repair_ring', 'rest')">Rest care</button>
+          <button onclick="careAction('repair_ring', 'treat')">Treat pain</button>
+        </div>
+        <div id="state-repair_ring" class="signal">waiting</div>
+      </article></section>
+    <section id="pathfinding-panel" class="panel"><h2>Pathfinding</h2><pre id="path-log"></pre></section>
+    <section id="affordance-chain-panel" class="panel"><h2>Object affordance chains</h2><pre id="chain-log"></pre></section>
+    <section id="routine-panel" class="panel"><h2>Routine interruption/recovery</h2><pre id="routine-log"></pre></section>
+    <section id="pain-rest-care-panel" class="panel"><h2>Pain/rest care loop</h2><pre id="care-log"></pre></section>
+    <section id="dialect-memory-panel" class="panel"><h2>Long-session dialect memory</h2><pre id="dialect-log"></pre></section>
+  </main>
+  <script id="ssrm-data" type="application/json">{
+  "affordance": [
+    {
+      "affordance_label": "inspect plank latch",
+      "chain_id": "chain:riverbend",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 1,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "riverbend",
+      "tick_id": 0,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect memory tag",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 1,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "archive",
+      "tick_id": 2,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect bell gauge",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 1,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 5,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect dry cord",
+      "chain_id": "chain:orchard",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 1,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "orchard",
+      "tick_id": 10,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect bell gauge",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 1,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 11,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect plank latch",
+      "chain_id": "chain:riverbend",
+      "chain_progress": 0.25,
+      "chain_step_index": 0,
+      "day": 2,
+      "object_state_after": "step:1",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "riverbend",
+      "tick_id": 12,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect memory tag",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.25,
+      "chain_step_index": 0,
+      "day": 2,
+      "object_state_after": "step:1",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "archive",
+      "tick_id": 14,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect mast rope",
+      "chain_id": "chain:signal",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 2,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "signal",
+      "tick_id": 15,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift signal spool",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 2,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "archive",
+      "tick_id": 20,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect mast rope",
+      "chain_id": "chain:signal",
+      "chain_progress": 0.25,
+      "chain_step_index": 0,
+      "day": 2,
+      "object_state_after": "step:1",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "signal",
+      "tick_id": 21,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect bell gauge",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.25,
+      "chain_step_index": 0,
+      "day": 2,
+      "object_state_after": "step:1",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 23,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect glass latch",
+      "chain_id": "chain:roofward",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 3,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "roofward",
+      "tick_id": 25,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift cedar kit",
+      "chain_id": "chain:riverbend",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 3,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "riverbend",
+      "tick_id": 30,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect dry cord",
+      "chain_id": "chain:orchard",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 3,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "orchard",
+      "tick_id": 34,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift insulated tongs",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 3,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 35,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect glass latch",
+      "chain_id": "chain:roofward",
+      "chain_progress": 0.25,
+      "chain_step_index": 0,
+      "day": 4,
+      "object_state_after": "step:1",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "roofward",
+      "tick_id": 37,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect dry cord",
+      "chain_id": "chain:orchard",
+      "chain_progress": 0.0,
+      "chain_step_index": 0,
+      "day": 4,
+      "object_state_after": "step:0",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "orchard",
+      "tick_id": 40,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift insulated tongs",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.5,
+      "chain_step_index": 1,
+      "day": 4,
+      "object_state_after": "step:2",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 41,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift signal spool",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 4,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": false,
+      "settlement_id": "archive",
+      "tick_id": 44,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift oil lantern",
+      "chain_id": "chain:signal",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 4,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "signal",
+      "tick_id": 45,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "inspect dry cord",
+      "chain_id": "chain:orchard",
+      "chain_progress": 0.25,
+      "chain_step_index": 0,
+      "day": 4,
+      "object_state_after": "step:1",
+      "object_state_before": "step:0",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "orchard",
+      "tick_id": 46,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift cedar kit",
+      "chain_id": "chain:riverbend",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 5,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "riverbend",
+      "tick_id": 48,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift signal spool",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 5,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "archive",
+      "tick_id": 50,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "carry herb ledger",
+      "chain_id": "chain:roofward",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 5,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": false,
+      "settlement_id": "roofward",
+      "tick_id": 55,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift oil lantern",
+      "chain_id": "chain:signal",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 5,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "signal",
+      "tick_id": 57,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift cedar kit",
+      "chain_id": "chain:riverbend",
+      "chain_progress": 0.5,
+      "chain_step_index": 1,
+      "day": 6,
+      "object_state_after": "step:2",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "riverbend",
+      "tick_id": 60,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift seed satchel",
+      "chain_id": "chain:orchard",
+      "chain_progress": 0.5,
+      "chain_step_index": 1,
+      "day": 6,
+      "object_state_after": "step:2",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "orchard",
+      "tick_id": 64,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "place copper wire",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.5,
+      "chain_step_index": 2,
+      "day": 6,
+      "object_state_after": "step:2",
+      "object_state_before": "step:2",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 65,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "carry herb ledger",
+      "chain_id": "chain:roofward",
+      "chain_progress": 0.5,
+      "chain_step_index": 1,
+      "day": 6,
+      "object_state_after": "step:2",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "roofward",
+      "tick_id": 67,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift oil lantern",
+      "chain_id": "chain:signal",
+      "chain_progress": 0.5,
+      "chain_step_index": 1,
+      "day": 6,
+      "object_state_after": "step:2",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "signal",
+      "tick_id": 69,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "place market token",
+      "chain_id": "chain:orchard",
+      "chain_progress": 0.5,
+      "chain_step_index": 2,
+      "day": 6,
+      "object_state_after": "step:2",
+      "object_state_before": "step:2",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "orchard",
+      "tick_id": 70,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "align signal lens",
+      "chain_id": "chain:signal",
+      "chain_progress": 0.5,
+      "chain_step_index": 2,
+      "day": 7,
+      "object_state_after": "step:2",
+      "object_state_before": "step:2",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "signal",
+      "tick_id": 75,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "place copper wire",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.5,
+      "chain_step_index": 2,
+      "day": 7,
+      "object_state_after": "step:2",
+      "object_state_before": "step:2",
+      "persisted": true,
+      "prerequisite_met": false,
+      "settlement_id": "repair_ring",
+      "tick_id": 77,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift signal spool",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 7,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "archive",
+      "tick_id": 80,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "lift signal spool",
+      "chain_id": "chain:archive",
+      "chain_progress": 0.25,
+      "chain_step_index": 1,
+      "day": 8,
+      "object_state_after": "step:1",
+      "object_state_before": "step:1",
+      "persisted": true,
+      "prerequisite_met": true,
+      "settlement_id": "archive",
+      "tick_id": 85,
+      "visible_affordance_chain": true
+    },
+    {
+      "affordance_label": "place copper wire",
+      "chain_id": "chain:repair_ring",
+      "chain_progress": 0.5,
+      "chain_step_index": 2,
+      "day": 8,
+      "object_state_after": "step:2",
+      "object_state_before": "step:2",
+      "persisted": true,
+      "prerequisite_met": false,
+      "settlement_id": "repair_ring",
+      "tick_id": 88,
+      "visible_affordance_chain": true
+    }
+  ],
+  "care": [
+    {
+      "action": "dry_off",
+      "care_action": "dry off",
+      "care_effective": true,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.72246,
+      "energy_before": 0.74,
+      "pain_after": 0.11,
+      "pain_before": 0.08,
+      "room_id": "plank hall",
+      "settlement_id": "riverbend",
+      "temperature_after": 0.582,
+      "tick_id": 0,
+      "visible_body_state": true,
+      "wetness_after": 0.1
+    },
+    {
+      "action": "path_to_resident",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.72246,
+      "energy_before": 0.74,
+      "pain_after": 0.11,
+      "pain_before": 0.08,
+      "room_id": "glass stair",
+      "settlement_id": "roofward",
+      "temperature_after": 0.554,
+      "tick_id": 1,
+      "visible_body_state": true,
+      "wetness_after": 0.154
+    },
+    {
+      "action": "inspect_affordance",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.722964,
+      "energy_before": 0.74,
+      "pain_after": 0.074,
+      "pain_before": 0.08,
+      "room_id": "stone stacks",
+      "settlement_id": "archive",
+      "temperature_after": 0.554,
+      "tick_id": 2,
+      "visible_body_state": true,
+      "wetness_after": 0.154
+    },
+    {
+      "action": "interrupt_routine",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.72246,
+      "energy_before": 0.74,
+      "pain_after": 0.11,
+      "pain_before": 0.08,
+      "room_id": "mast base",
+      "settlement_id": "signal",
+      "temperature_after": 0.554,
+      "tick_id": 3,
+      "visible_body_state": true,
+      "wetness_after": 0.154
+    },
+    {
+      "action": "ask_dialect_memory",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.722964,
+      "energy_before": 0.74,
+      "pain_after": 0.074,
+      "pain_before": 0.08,
+      "room_id": "arrival court",
+      "settlement_id": "orchard",
+      "temperature_after": 0.582,
+      "tick_id": 4,
+      "visible_body_state": true,
+      "wetness_after": 0.154
+    },
+    {
+      "action": "rest",
+      "care_action": "rest",
+      "care_effective": true,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.795,
+      "energy_before": 0.74,
+      "pain_after": 0.05,
+      "pain_before": 0.08,
+      "room_id": "wire bench",
+      "settlement_id": "repair_ring",
+      "temperature_after": 0.604,
+      "tick_id": 5,
+      "visible_body_state": true,
+      "wetness_after": 0.154
+    },
+    {
+      "action": "interrupt_routine",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.705004,
+      "energy_before": 0.72246,
+      "pain_after": 0.104,
+      "pain_before": 0.11,
+      "room_id": "wet crossing",
+      "settlement_id": "riverbend",
+      "temperature_after": 0.584,
+      "tick_id": 6,
+      "visible_body_state": true,
+      "wetness_after": 0.135
+    },
+    {
+      "action": "ask_dialect_memory",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.705004,
+      "energy_before": 0.72246,
+      "pain_after": 0.104,
+      "pain_before": 0.11,
+      "room_id": "warm lane",
+      "settlement_id": "roofward",
+      "temperature_after": 0.578,
+      "tick_id": 7,
+      "visible_body_state": true,
+      "wetness_after": 0.148
+    },
+    {
+      "action": "rest",
+      "care_action": "rest",
+      "care_effective": true,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.777964,
+      "energy_before": 0.722964,
+      "pain_after": 0.044,
+      "pain_before": 0.074,
+      "room_id": "memory desk",
+      "settlement_id": "archive",
+      "temperature_after": 0.578,
+      "tick_id": 8,
+      "visible_body_state": true,
+      "wetness_after": 0.148
+    },
+    {
+      "action": "dry_off",
+      "care_action": "dry off",
+      "care_effective": true,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.705004,
+      "energy_before": 0.72246,
+      "pain_after": 0.104,
+      "pain_before": 0.11,
+      "room_id": "arrival court",
+      "settlement_id": "signal",
+      "temperature_after": 0.556,
+      "tick_id": 9,
+      "visible_body_state": true,
+      "wetness_after": 0.189
+    },
+    {
+      "action": "path_to_resident",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.706012,
+      "energy_before": 0.722964,
+      "pain_after": 0.068,
+      "pain_before": 0.074,
+      "room_id": "arrival court",
+      "settlement_id": "orchard",
+      "temperature_after": 0.584,
+      "tick_id": 10,
+      "visible_body_state": true,
+      "wetness_after": 0.148
+    },
+    {
+      "action": "inspect_affordance",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 1,
+      "distress_bounded": true,
+      "energy_after": 0.77788,
+      "energy_before": 0.795,
+      "pain_after": 0.08,
+      "pain_before": 0.05,
+      "room_id": "spark lane",
+      "settlement_id": "repair_ring",
+      "temperature_after": 0.606,
+      "tick_id": 11,
+      "visible_body_state": true,
+      "wetness_after": 0.189
+    },
+    {
+      "action": "continue_project",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.687632,
+      "energy_before": 0.705004,
+      "pain_after": 0.098,
+      "pain_before": 0.104,
+      "room_id": "wet crossing",
+      "settlement_id": "riverbend",
+      "temperature_after": 0.586,
+      "tick_id": 12,
+      "visible_body_state": true,
+      "wetness_after": 0.17
+    },
+    {
+      "action": "path_to_rest",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.687632,
+      "energy_before": 0.705004,
+      "pain_after": 0.098,
+      "pain_before": 0.104,
+      "room_id": "warm lane",
+      "settlement_id": "roofward",
+      "temperature_after": 0.602,
+      "tick_id": 13,
+      "visible_body_state": true,
+      "wetness_after": 0.142
+    },
+    {
+      "action": "perform_chain_step",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.761432,
+      "energy_before": 0.777964,
+      "pain_after": 0.038,
+      "pain_before": 0.044,
+      "room_id": "memory desk",
+      "settlement_id": "archive",
+      "temperature_after": 0.602,
+      "tick_id": 14,
+      "visible_body_state": true,
+      "wetness_after": 0.142
+    },
+    {
+      "action": "recover_routine",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.687128,
+      "energy_before": 0.705004,
+      "pain_after": 0.134,
+      "pain_before": 0.104,
+      "room_id": "mast base",
+      "settlement_id": "signal",
+      "temperature_after": 0.53,
+      "tick_id": 15,
+      "visible_body_state": true,
+      "wetness_after": 0.183
+    },
+    {
+      "action": "offer_care",
+      "care_action": "available",
+      "care_effective": true,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.689144,
+      "energy_before": 0.706012,
+      "pain_after": 0.062,
+      "pain_before": 0.068,
+      "room_id": "seed lane",
+      "settlement_id": "orchard",
+      "temperature_after": 0.608,
+      "tick_id": 16,
+      "visible_body_state": true,
+      "wetness_after": 0.142
+    },
+    {
+      "action": "treat_pain",
+      "care_action": "treat pain",
+      "care_effective": true,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.76153,
+      "energy_before": 0.77788,
+      "pain_after": 0.025,
+      "pain_before": 0.08,
+      "room_id": "wire bench",
+      "settlement_id": "repair_ring",
+      "temperature_after": 0.608,
+      "tick_id": 17,
+      "visible_body_state": true,
+      "wetness_after": 0.183
+    },
+    {
+      "action": "recover_routine",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.66984,
+      "energy_before": 0.687632,
+      "pain_after": 0.128,
+      "pain_before": 0.098,
+      "room_id": "plank hall",
+      "settlement_id": "riverbend",
+      "temperature_after": 0.588,
+      "tick_id": 18,
+      "visible_body_state": true,
+      "wetness_after": 0.164
+    },
+    {
+      "action": "offer_care",
+      "care_action": "available",
+      "care_effective": true,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.670344,
+      "energy_before": 0.687632,
+      "pain_after": 0.092,
+      "pain_before": 0.098,
+      "room_id": "sun sill",
+      "settlement_id": "roofward",
+      "temperature_after": 0.626,
+      "tick_id": 19,
+      "visible_body_state": true,
+      "wetness_after": 0.136
+    },
+    {
+      "action": "treat_pain",
+      "care_action": "treat pain",
+      "care_effective": true,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.745432,
+      "energy_before": 0.761432,
+      "pain_after": 0.0,
+      "pain_before": 0.038,
+      "room_id": "memory desk",
+      "settlement_id": "archive",
+      "temperature_after": 0.626,
+      "tick_id": 20,
+      "visible_body_state": true,
+      "wetness_after": 0.136
+    },
+    {
+      "action": "continue_project",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.668832,
+      "energy_before": 0.687128,
+      "pain_after": 0.164,
+      "pain_before": 0.134,
+      "room_id": "mast base",
+      "settlement_id": "signal",
+      "temperature_after": 0.504,
+      "tick_id": 21,
+      "visible_body_state": true,
+      "wetness_after": 0.177
+    },
+    {
+      "action": "path_to_rest",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.671856,
+      "energy_before": 0.689144,
+      "pain_after": 0.092,
+      "pain_before": 0.062,
+      "room_id": "mud row",
+      "settlement_id": "orchard",
+      "temperature_after": 0.61,
+      "tick_id": 22,
+      "visible_body_state": true,
+      "wetness_after": 0.177
+    },
+    {
+      "action": "perform_chain_step",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 2,
+      "distress_bounded": true,
+      "energy_after": 0.74476,
+      "energy_before": 0.76153,
+      "pain_after": 0.055,
+      "pain_before": 0.025,
+      "room_id": "spark lane",
+      "settlement_id": "repair_ring",
+      "temperature_after": 0.61,
+      "tick_id": 23,
+      "visible_body_state": true,
+      "wetness_after": 0.218
+    },
+    {
+      "action": "path_to_resident",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.651628,
+      "energy_before": 0.66984,
+      "pain_after": 0.158,
+      "pain_before": 0.128,
+      "room_id": "plank hall",
+      "settlement_id": "riverbend",
+      "temperature_after": 0.59,
+      "tick_id": 24,
+      "visible_body_state": true,
+      "wetness_after": 0.158
+    },
+    {
+      "action": "inspect_affordance",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.65314,
+      "energy_before": 0.670344,
+      "pain_after": 0.086,
+      "pain_before": 0.092,
+      "room_id": "sun sill",
+      "settlement_id": "roofward",
+      "temperature_after": 0.628,
+      "tick_id": 25,
+      "visible_body_state": true,
+      "wetness_after": 0.13
+    },
+    {
+      "action": "interrupt_routine",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.729432,
+      "energy_before": 0.745432,
+      "pain_after": 0.0,
+      "pain_before": 0.0,
+      "room_id": "stone stacks",
+      "settlement_id": "archive",
+      "temperature_after": 0.6,
+      "tick_id": 26,
+      "visible_body_state": true,
+      "wetness_after": 0.13
+    },
+    {
+      "action": "ask_dialect_memory",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.650116,
+      "energy_before": 0.668832,
+      "pain_after": 0.194,
+      "pain_before": 0.164,
+      "room_id": "mast base",
+      "settlement_id": "signal",
+      "temperature_after": 0.478,
+      "tick_id": 27,
+      "visible_body_state": true,
+      "wetness_after": 0.171
+    },
+    {
+      "action": "rest",
+      "care_action": "rest",
+      "care_effective": true,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.726856,
+      "energy_before": 0.671856,
+      "pain_after": 0.062,
+      "pain_before": 0.092,
+      "room_id": "satchel shed",
+      "settlement_id": "orchard",
+      "temperature_after": 0.634,
+      "tick_id": 28,
+      "visible_body_state": true,
+      "wetness_after": 0.171
+    },
+    {
+      "action": "dry_off",
+      "care_action": "dry off",
+      "care_effective": true,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.728074,
+      "energy_before": 0.74476,
+      "pain_after": 0.049,
+      "pain_before": 0.055,
+      "room_id": "bell alcove",
+      "settlement_id": "repair_ring",
+      "temperature_after": 0.612,
+      "tick_id": 29,
+      "visible_body_state": true,
+      "wetness_after": 0.158
+    },
+    {
+      "action": "ask_dialect_memory",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.6335,
+      "energy_before": 0.651628,
+      "pain_after": 0.152,
+      "pain_before": 0.158,
+      "room_id": "wet crossing",
+      "settlement_id": "riverbend",
+      "temperature_after": 0.592,
+      "tick_id": 30,
+      "visible_body_state": true,
+      "wetness_after": 0.193
+    },
+    {
+      "action": "rest",
+      "care_action": "rest",
+      "care_effective": true,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.70814,
+      "energy_before": 0.65314,
+      "pain_after": 0.056,
+      "pain_before": 0.086,
+      "room_id": "warm lane",
+      "settlement_id": "roofward",
+      "temperature_after": 0.652,
+      "tick_id": 31,
+      "visible_body_state": true,
+      "wetness_after": 0.124
+    },
+    {
+      "action": "dry_off",
+      "care_action": "dry off",
+      "care_effective": true,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.713432,
+      "energy_before": 0.729432,
+      "pain_after": 0.0,
+      "pain_before": 0.0,
+      "room_id": "stone stacks",
+      "settlement_id": "archive",
+      "temperature_after": 0.574,
+      "tick_id": 32,
+      "visible_body_state": true,
+      "wetness_after": 0.07
+    },
+    {
+      "action": "path_to_resident",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.631484,
+      "energy_before": 0.650116,
+      "pain_after": 0.188,
+      "pain_before": 0.194,
+      "room_id": "arrival court",
+      "settlement_id": "signal",
+      "temperature_after": 0.48,
+      "tick_id": 33,
+      "visible_body_state": true,
+      "wetness_after": 0.206
+    },
+    {
+      "action": "inspect_affordance",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.710072,
+      "energy_before": 0.726856,
+      "pain_after": 0.056,
+      "pain_before": 0.062,
+      "room_id": "market plank",
+      "settlement_id": "orchard",
+      "temperature_after": 0.608,
+      "tick_id": 34,
+      "visible_body_state": true,
+      "wetness_after": 0.165
+    },
+    {
+      "action": "interrupt_routine",
+      "care_action": "available",
+      "care_effective": false,
+      "day": 3,
+      "distress_bounded": true,
+      "energy_after": 0.711472,
+      "energy_before": 0.728074,
+      "pain_after": 0.043,
+      "pain_before": 0.049,
+      "room_id": "cool corner",
+      "settlement_id": "repair_ring",
+      "temperature_after": 0.586,
+      "tick_id": 35,
+      "visible_body_state": true,
+      "wetness_after": 0.152
+    }
+  ],
+  "dialect": [
+    {
+      "day": 105,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "roofward-glass-13-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-17-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1248,
+      "visit_index": 16
+    },
+    {
+      "day": 105,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "orchard-satchel-13-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-mud-17-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1251,
+      "visit_index": 16
+    },
+    {
+      "day": 105,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "roofward-warm-13-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-glass-13-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1254,
+      "visit_index": 16
+    },
+    {
+      "day": 105,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "orchard-satchel-13-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-satchel-13-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1257,
+      "visit_index": 16
+    },
+    {
+      "day": 106,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 37,
+      "new_phrase": "roofward-warm-14-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Fay",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-12-3",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1260,
+      "visit_index": 16
+    },
+    {
+      "day": 106,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 37,
+      "new_phrase": "orchard-satchel-14-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Mara",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-market-12-3",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 1263,
+      "visit_index": 16
+    },
+    {
+      "day": 106,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 30,
+      "new_phrase": "roofward-warm-14-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Fay",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-14-3",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1266,
+      "visit_index": 16
+    },
+    {
+      "day": 106,
+      "dialect_id": "signal-dialect-8",
+      "memory_span_days": 32,
+      "new_phrase": "signal-mast-14-3",
+      "persistent_key": "ssrm.v40.dialect.signal.Milo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "signal-lantern-11-3",
+      "resident_id": "Milo",
+      "settlement_id": "signal",
+      "tick_id": 1268,
+      "visit_index": 16
+    },
+    {
+      "day": 106,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 30,
+      "new_phrase": "orchard-satchel-14-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Mara",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-satchel-14-3",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 1269,
+      "visit_index": 16
+    },
+    {
+      "day": 106,
+      "dialect_id": "riverbend-dialect-8",
+      "memory_span_days": 32,
+      "new_phrase": "riverbend-wet-14-3",
+      "persistent_key": "ssrm.v40.dialect.riverbend.Lio",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "riverbend-kit-11-3",
+      "resident_id": "Lio",
+      "settlement_id": "riverbend",
+      "tick_id": 1271,
+      "visit_index": 16
+    },
+    {
+      "day": 107,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "roofward-warm-15-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-13-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1272,
+      "visit_index": 16
+    },
+    {
+      "day": 107,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "orchard-market-15-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-satchel-13-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1275,
+      "visit_index": 16
+    },
+    {
+      "day": 107,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "roofward-ledger-15-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-15-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1278,
+      "visit_index": 16
+    },
+    {
+      "day": 107,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "orchard-satchel-15-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-market-15-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1281,
+      "visit_index": 16
+    },
+    {
+      "day": 108,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "roofward-ledger-16-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Fay",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-14-3",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1284,
+      "visit_index": 16
+    },
+    {
+      "day": 108,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "orchard-market-16-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Mara",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-satchel-14-3",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 1287,
+      "visit_index": 16
+    },
+    {
+      "day": 108,
+      "dialect_id": "repair_ring-dialect-8",
+      "memory_span_days": 39,
+      "new_phrase": "repair_ring-spark-16-3",
+      "persistent_key": "ssrm.v40.dialect.repair_ring.Juno",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "repair_ring-spark-9-3",
+      "resident_id": "Juno",
+      "settlement_id": "repair_ring",
+      "tick_id": 1288,
+      "visit_index": 16
+    },
+    {
+      "day": 108,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "roofward-sun-16-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Fay",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-ledger-16-3",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1290,
+      "visit_index": 16
+    },
+    {
+      "day": 108,
+      "dialect_id": "archive-dialect-8",
+      "memory_span_days": 39,
+      "new_phrase": "archive-stone-16-3",
+      "persistent_key": "ssrm.v40.dialect.archive.Toma",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "archive-ink-9-3",
+      "resident_id": "Toma",
+      "settlement_id": "archive",
+      "tick_id": 1291,
+      "visit_index": 16
+    },
+    {
+      "day": 108,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "orchard-seed-16-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Mara",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-market-16-3",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 1293,
+      "visit_index": 16
+    },
+    {
+      "day": 109,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "roofward-sun-17-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-ledger-15-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1296,
+      "visit_index": 16
+    },
+    {
+      "day": 109,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "orchard-mud-17-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-satchel-15-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1299,
+      "visit_index": 16
+    },
+    {
+      "day": 109,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "roofward-warm-17-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-sun-17-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1302,
+      "visit_index": 16
+    },
+    {
+      "day": 109,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "orchard-seed-17-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-mud-17-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1305,
+      "visit_index": 16
+    },
+    {
+      "day": 110,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "roofward-ledger-18-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Fay",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-sun-16-3",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1308,
+      "visit_index": 16
+    },
+    {
+      "day": 110,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "orchard-market-18-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Mara",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-seed-16-3",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 1311,
+      "visit_index": 16
+    },
+    {
+      "day": 110,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "roofward-warm-18-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Fay",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-ledger-18-3",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1314,
+      "visit_index": 16
+    },
+    {
+      "day": 110,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 27,
+      "new_phrase": "orchard-seed-18-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Mara",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-market-18-3",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 1317,
+      "visit_index": 16
+    },
+    {
+      "day": 111,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "roofward-warm-19-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-17-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1320,
+      "visit_index": 16
+    },
+    {
+      "day": 111,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "orchard-mud-19-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-seed-17-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1323,
+      "visit_index": 16
+    },
+    {
+      "day": 111,
+      "dialect_id": "roofward-dialect-8",
+      "memory_span_days": 31,
+      "new_phrase": "roofward-warm-19-3",
+      "persistent_key": "ssrm.v40.dialect.roofward.Sera",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "roofward-warm-19-3",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 1326,
+      "visit_index": 16
+    },
+    {
+      "day": 111,
+      "dialect_id": "orchard-dialect-8",
+      "memory_span_days": 31,
+      "new_phrase": "orchard-satchel-19-3",
+      "persistent_key": "ssrm.v40.dialect.orchard.Ivo",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "orchard-mud-19-3",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 1329,
+      "visit_index": 16
+    },
+    {
+      "day": 112,
+      "dialect_id": "archive-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "archive-ink-20-3",
+      "persistent_key": "ssrm.v40.dialect.archive.Nia",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "archive-memory-3-3",
+      "resident_id": "Nia",
+      "settlement_id": "archive",
+      "tick_id": 1332,
+      "visit_index": 16
+    },
+    {
+      "day": 112,
+      "dialect_id": "repair_ring-dialect-8",
+      "memory_span_days": 48,
+      "new_phrase": "repair_ring-cool-20-3",
+      "persistent_key": "ssrm.v40.dialect.repair_ring.Pax",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "repair_ring-wire-3-3",
+      "resident_id": "Pax",
+      "settlement_id": "repair_ring",
+      "tick_id": 1335,
+      "visit_index": 16
+    },
+    {
+      "day": 112,
+      "dialect_id": "archive-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "archive-memory-20-3",
+      "persistent_key": "ssrm.v40.dialect.archive.Nia",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "archive-ink-20-3",
+      "resident_id": "Nia",
+      "settlement_id": "archive",
+      "tick_id": 1338,
+      "visit_index": 16
+    },
+    {
+      "day": 112,
+      "dialect_id": "repair_ring-dialect-8",
+      "memory_span_days": 46,
+      "new_phrase": "repair_ring-wire-20-3",
+      "persistent_key": "ssrm.v40.dialect.repair_ring.Pax",
+      "recall_after_save_restore": true,
+      "relationship_context": "warmer after care",
+      "remembered_phrase": "repair_ring-cool-20-3",
+      "resident_id": "Pax",
+      "settlement_id": "repair_ring",
+      "tick_id": 1341,
+      "visit_index": 16
+    }
+  ],
+  "pathfinding": [
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "plank hall",
+      "path": "arrival court > plank hall",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.riverbend",
+      "settlement_id": "riverbend",
+      "start_room": "arrival court",
+      "target_room": "plank hall",
+      "tick_id": 0
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "glass stair",
+      "path": "arrival court > glass stair > warm lane > ledger loft",
+      "path_length": 4,
+      "saved_path_key": "ssrm.v40.path.roofward",
+      "settlement_id": "roofward",
+      "start_room": "arrival court",
+      "target_room": "ledger loft",
+      "tick_id": 1
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "stone stacks",
+      "path": "arrival court > stone stacks > spool room > ink niche",
+      "path_length": 4,
+      "saved_path_key": "ssrm.v40.path.archive",
+      "settlement_id": "archive",
+      "start_room": "arrival court",
+      "target_room": "ink niche",
+      "tick_id": 2
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "mast base",
+      "path": "arrival court > mast base > signal perch",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.signal",
+      "settlement_id": "signal",
+      "start_room": "arrival court",
+      "target_room": "signal perch",
+      "tick_id": 3
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "arrival court",
+      "path": "arrival court",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.orchard",
+      "settlement_id": "orchard",
+      "start_room": "arrival court",
+      "target_room": "arrival court",
+      "tick_id": 4
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "wire bench",
+      "path": "arrival court > wire bench > cool corner",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.repair_ring",
+      "settlement_id": "repair_ring",
+      "start_room": "arrival court",
+      "target_room": "cool corner",
+      "tick_id": 5
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "wet crossing",
+      "path": "plank hall > wet crossing",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.riverbend",
+      "settlement_id": "riverbend",
+      "start_room": "plank hall",
+      "target_room": "wet crossing",
+      "tick_id": 6
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "warm lane",
+      "path": "glass stair > warm lane > ledger loft",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.roofward",
+      "settlement_id": "roofward",
+      "start_room": "glass stair",
+      "target_room": "ledger loft",
+      "tick_id": 7
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "memory desk",
+      "path": "stone stacks > memory desk",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.archive",
+      "settlement_id": "archive",
+      "start_room": "stone stacks",
+      "target_room": "memory desk",
+      "tick_id": 8
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "arrival court",
+      "path": "mast base > arrival court",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.signal",
+      "settlement_id": "signal",
+      "start_room": "mast base",
+      "target_room": "arrival court",
+      "tick_id": 9
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "arrival court",
+      "path": "arrival court",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.orchard",
+      "settlement_id": "orchard",
+      "start_room": "arrival court",
+      "target_room": "arrival court",
+      "tick_id": 10
+    },
+    {
+      "continuous_progress": true,
+      "day": 1,
+      "graph_valid": true,
+      "next_room": "spark lane",
+      "path": "wire bench > spark lane",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.repair_ring",
+      "settlement_id": "repair_ring",
+      "start_room": "wire bench",
+      "target_room": "spark lane",
+      "tick_id": 11
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "wet crossing",
+      "path": "wet crossing",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.riverbend",
+      "settlement_id": "riverbend",
+      "start_room": "wet crossing",
+      "target_room": "wet crossing",
+      "tick_id": 12
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "warm lane",
+      "path": "warm lane",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.roofward",
+      "settlement_id": "roofward",
+      "start_room": "warm lane",
+      "target_room": "warm lane",
+      "tick_id": 13
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "memory desk",
+      "path": "memory desk",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.archive",
+      "settlement_id": "archive",
+      "start_room": "memory desk",
+      "target_room": "memory desk",
+      "tick_id": 14
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "mast base",
+      "path": "arrival court > mast base > lantern walk",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.signal",
+      "settlement_id": "signal",
+      "start_room": "arrival court",
+      "target_room": "lantern walk",
+      "tick_id": 15
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "seed lane",
+      "path": "arrival court > seed lane",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.orchard",
+      "settlement_id": "orchard",
+      "start_room": "arrival court",
+      "target_room": "seed lane",
+      "tick_id": 16
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "wire bench",
+      "path": "spark lane > wire bench > cool corner",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.repair_ring",
+      "settlement_id": "repair_ring",
+      "start_room": "spark lane",
+      "target_room": "cool corner",
+      "tick_id": 17
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "plank hall",
+      "path": "wet crossing > plank hall > dry ridge",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.riverbend",
+      "settlement_id": "riverbend",
+      "start_room": "wet crossing",
+      "target_room": "dry ridge",
+      "tick_id": 18
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "sun sill",
+      "path": "warm lane > sun sill",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.roofward",
+      "settlement_id": "roofward",
+      "start_room": "warm lane",
+      "target_room": "sun sill",
+      "tick_id": 19
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "memory desk",
+      "path": "memory desk",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.archive",
+      "settlement_id": "archive",
+      "start_room": "memory desk",
+      "target_room": "memory desk",
+      "tick_id": 20
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "mast base",
+      "path": "mast base",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.signal",
+      "settlement_id": "signal",
+      "start_room": "mast base",
+      "target_room": "mast base",
+      "tick_id": 21
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "mud row",
+      "path": "seed lane > mud row > satchel shed",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.orchard",
+      "settlement_id": "orchard",
+      "start_room": "seed lane",
+      "target_room": "satchel shed",
+      "tick_id": 22
+    },
+    {
+      "continuous_progress": true,
+      "day": 2,
+      "graph_valid": true,
+      "next_room": "spark lane",
+      "path": "wire bench > spark lane > bell alcove",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.repair_ring",
+      "settlement_id": "repair_ring",
+      "start_room": "wire bench",
+      "target_room": "bell alcove",
+      "tick_id": 23
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "plank hall",
+      "path": "plank hall",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.riverbend",
+      "settlement_id": "riverbend",
+      "start_room": "plank hall",
+      "target_room": "plank hall",
+      "tick_id": 24
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "sun sill",
+      "path": "sun sill",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.roofward",
+      "settlement_id": "roofward",
+      "start_room": "sun sill",
+      "target_room": "sun sill",
+      "tick_id": 25
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "stone stacks",
+      "path": "memory desk > stone stacks > arrival court",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.archive",
+      "settlement_id": "archive",
+      "start_room": "memory desk",
+      "target_room": "arrival court",
+      "tick_id": 26
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "mast base",
+      "path": "mast base",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.signal",
+      "settlement_id": "signal",
+      "start_room": "mast base",
+      "target_room": "mast base",
+      "tick_id": 27
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "satchel shed",
+      "path": "mud row > satchel shed",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.orchard",
+      "settlement_id": "orchard",
+      "start_room": "mud row",
+      "target_room": "satchel shed",
+      "tick_id": 28
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "bell alcove",
+      "path": "spark lane > bell alcove",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.repair_ring",
+      "settlement_id": "repair_ring",
+      "start_room": "spark lane",
+      "target_room": "bell alcove",
+      "tick_id": 29
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "wet crossing",
+      "path": "plank hall > wet crossing > kit alcove",
+      "path_length": 3,
+      "saved_path_key": "ssrm.v40.path.riverbend",
+      "settlement_id": "riverbend",
+      "start_room": "plank hall",
+      "target_room": "kit alcove",
+      "tick_id": 30
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "warm lane",
+      "path": "sun sill > warm lane",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.roofward",
+      "settlement_id": "roofward",
+      "start_room": "sun sill",
+      "target_room": "warm lane",
+      "tick_id": 31
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "stone stacks",
+      "path": "stone stacks",
+      "path_length": 1,
+      "saved_path_key": "ssrm.v40.path.archive",
+      "settlement_id": "archive",
+      "start_room": "stone stacks",
+      "target_room": "stone stacks",
+      "tick_id": 32
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "arrival court",
+      "path": "mast base > arrival court",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.signal",
+      "settlement_id": "signal",
+      "start_room": "mast base",
+      "target_room": "arrival court",
+      "tick_id": 33
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "market plank",
+      "path": "satchel shed > market plank",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.orchard",
+      "settlement_id": "orchard",
+      "start_room": "satchel shed",
+      "target_room": "market plank",
+      "tick_id": 34
+    },
+    {
+      "continuous_progress": true,
+      "day": 3,
+      "graph_valid": true,
+      "next_room": "cool corner",
+      "path": "bell alcove > cool corner",
+      "path_length": 2,
+      "saved_path_key": "ssrm.v40.path.repair_ring",
+      "settlement_id": "repair_ring",
+      "start_room": "bell alcove",
+      "target_room": "cool corner",
+      "tick_id": 35
+    }
+  ],
+  "persistence": [
+    {
+      "day": 102,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.79762, \"energy\": 0.117656, \"pain\": 0.096, \"temperature\": 0.95, \"wetness\": 0.121}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "wet crossing",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "riverbend",
+      "tick_id": 1212
+    },
+    {
+      "day": 102,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.68482, \"energy\": 0.08, \"pain\": 0.084, \"temperature\": 0.086, \"wetness\": 0.099}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "spark lane",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "repair_ring",
+      "tick_id": 1223
+    },
+    {
+      "day": 103,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.82113, \"energy\": 0.084592, \"pain\": 0.035, \"temperature\": 0.95, \"wetness\": 0.109}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "dry ridge",
+      "saved_routine_integrity": 0.42,
+      "settlement_id": "riverbend",
+      "tick_id": 1224
+    },
+    {
+      "day": 103,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.83403, \"energy\": 0.08, \"pain\": 0.029, \"temperature\": 0.95, \"wetness\": 0.049}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "kit alcove",
+      "saved_routine_integrity": 0.42,
+      "settlement_id": "riverbend",
+      "tick_id": 1230
+    },
+    {
+      "day": 103,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.69622, \"energy\": 0.135, \"pain\": 0.048, \"temperature\": 0.062, \"wetness\": 0.087}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "cool corner",
+      "saved_routine_integrity": 0.36,
+      "settlement_id": "repair_ring",
+      "tick_id": 1235
+    },
+    {
+      "day": 104,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.839, \"energy\": 0.08, \"pain\": 0.04, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "sun sill",
+      "saved_routine_integrity": 0.56,
+      "settlement_id": "roofward",
+      "tick_id": 1236
+    },
+    {
+      "day": 104,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.84705, \"energy\": 0.08, \"pain\": 0.017, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "dry ridge",
+      "saved_routine_integrity": 0.41,
+      "settlement_id": "riverbend",
+      "tick_id": 1247
+    },
+    {
+      "day": 105,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.82696, \"energy\": 0.08, \"pain\": 0.064, \"temperature\": 0.924, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "glass stair",
+      "saved_routine_integrity": 0.95,
+      "settlement_id": "roofward",
+      "tick_id": 1248
+    },
+    {
+      "day": 105,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.83501, \"energy\": 0.08, \"pain\": 0.041, \"temperature\": 0.924, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "arrival court",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "riverbend",
+      "tick_id": 1259
+    },
+    {
+      "day": 106,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.8432, \"energy\": 0.135, \"pain\": 0.028, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "warm lane",
+      "saved_routine_integrity": 0.56,
+      "settlement_id": "roofward",
+      "tick_id": 1260
+    },
+    {
+      "day": 106,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.82087, \"energy\": 0.08, \"pain\": 0.065, \"temperature\": 0.928, \"wetness\": 0.035}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "wet crossing",
+      "saved_routine_integrity": 0.41,
+      "settlement_id": "riverbend",
+      "tick_id": 1271
+    },
+    {
+      "day": 107,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.102692, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "warm lane",
+      "saved_routine_integrity": 0.94,
+      "settlement_id": "roofward",
+      "tick_id": 1272
+    },
+    {
+      "day": 107,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.83031, \"energy\": 0.08, \"pain\": 0.053, \"temperature\": 0.95, \"wetness\": 0.023}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "dry ridge",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "riverbend",
+      "tick_id": 1283
+    },
+    {
+      "day": 108,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.08, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "ledger loft",
+      "saved_routine_integrity": 0.56,
+      "settlement_id": "roofward",
+      "tick_id": 1284
+    },
+    {
+      "day": 108,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.84507, \"energy\": 0.135, \"pain\": 0.017, \"temperature\": 0.95, \"wetness\": 0.011}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "kit alcove",
+      "saved_routine_integrity": 0.41,
+      "settlement_id": "riverbend",
+      "tick_id": 1295
+    },
+    {
+      "day": 109,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.08, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "sun sill",
+      "saved_routine_integrity": 0.94,
+      "settlement_id": "roofward",
+      "tick_id": 1296
+    },
+    {
+      "day": 109,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.102846, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "kit alcove",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "riverbend",
+      "tick_id": 1307
+    },
+    {
+      "day": 110,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.08, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "ledger loft",
+      "saved_routine_integrity": 0.55,
+      "settlement_id": "roofward",
+      "tick_id": 1308
+    },
+    {
+      "day": 110,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.67942, \"energy\": 0.135, \"pain\": 0.078, \"temperature\": 0.062, \"wetness\": 0.122}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "cool corner",
+      "saved_routine_integrity": 0.35,
+      "settlement_id": "repair_ring",
+      "tick_id": 1312
+    },
+    {
+      "day": 110,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.8425, \"energy\": 0.08, \"pain\": 0.03, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "plank hall",
+      "saved_routine_integrity": 0.4,
+      "settlement_id": "riverbend",
+      "tick_id": 1319
+    },
+    {
+      "day": 111,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.08, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "warm lane",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "roofward",
+      "tick_id": 1320
+    },
+    {
+      "day": 111,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.8341, \"energy\": 0.08, \"pain\": 0.018, \"temperature\": 0.95, \"wetness\": 0.07}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "wet crossing",
+      "saved_routine_integrity": 0.95,
+      "settlement_id": "riverbend",
+      "tick_id": 1331
+    },
+    {
+      "day": 112,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.83207, \"energy\": 0.084592, \"pain\": 0.059, \"temperature\": 0.948, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "ink niche",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "archive",
+      "tick_id": 1332
+    },
+    {
+      "day": 112,
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_body_state": "{\"comfort\": 0.853, \"energy\": 0.08, \"pain\": 0.0, \"temperature\": 0.95, \"wetness\": 0.0}",
+      "saved_chain_progress": 1.0,
+      "saved_dialect_memory_count": 32,
+      "saved_room": "warm lane",
+      "saved_routine_integrity": 0.96,
+      "settlement_id": "roofward",
+      "tick_id": 1343
+    }
+  ],
+  "results": {
+    "ablations": {
+      "no_continuous_pathfinding": 0.749513,
+      "no_long_session_dialect_memory": 0.762513,
+      "no_object_affordance_chains": 0.780513,
+      "no_pain_rest_care_loop": 0.744513,
+      "no_routine_interruption_recovery": 0.767513,
+      "no_save_restore": 0.807513
+    },
+    "artifacts": {
+      "browser_ticks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_browser_ticks.csv",
+      "continuous_pathfinding_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_continuous_pathfinding.csv",
+      "embodied_pain_rest_care_loops_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_embodied_pain_rest_care_loops.csv",
+      "html": "/Volumes/T7/Users-main/Documents/consciousness/visualizations/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge.html",
+      "long_session_dialect_memory_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_long_session_dialect_memory.csv",
+      "multi_visit_session_persistence_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_multi_visit_session_persistence.csv",
+      "object_affordance_chains_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_object_affordance_chains.csv",
+      "report": "/Volumes/T7/Users-main/Documents/consciousness/docs/280_ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_report.md",
+      "resident_routine_interrupt_recovery_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_resident_routine_interrupt_recovery.csv",
+      "results_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_results.json",
+      "summary_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_summary.csv",
+      "verdict_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v40_continuous_pathfinding_affordance_routine_bodycare_dialect_session_bridge_verdict.csv"
+    },
+    "boundary": "Deterministic browser-local continuous-pathfinding/body-care scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "counts": {
+      "browser_ticks": 1344,
+      "continuous_pathfinding": 1344,
+      "embodied_pain_rest_care_loops": 1344,
+      "long_session_dialect_memory": 518,
+      "multi_visit_session_persistence": 251,
+      "object_affordance_chains": 540,
+      "resident_routine_interrupt_recovery": 1344
+    },
+    "html_capability_checks": {
+      "browser_surface_score": 1.0,
+      "button_count": 36,
+      "has_affordance_chain_controls": true,
+      "has_boundary_notice": true,
+      "has_dialect_memory_panel": true,
+      "has_localstorage": true,
+      "has_pain_rest_care_controls": true,
+      "has_pathfinding_controls": true,
+      "has_routine_recovery_controls": true,
+      "localstorage_handler_count": 2
+    },
+    "metrics": {
+      "affordance_chain_count": 540.0,
+      "browser_tick_count": 1344.0,
+      "browser_v40_surface": 1.0,
+      "browser_world_v40_pathfinding_bodycare_readiness": 0.925513,
+      "browser_world_v40_surface": 1.0,
+      "care_effective_count": 448.0,
+      "care_effectiveness_when_used": 1.0,
+      "continuous_room_pathfinding": 1.0,
+      "dialect_memory_count": 518.0,
+      "embodied_pain_rest_care_loop": 1.0,
+      "frequency_flower_path_body_binding": 1.0,
+      "html_button_count": 36.0,
+      "html_localstorage_handler_count": 2.0,
+      "long_session_dialect_memory": 0.9841897233201581,
+      "long_session_dialect_memory_count": 498.0,
+      "mean_pathfinding_bodycare_channel_score": 0.97484,
+      "multi_visit_save_restore_integrity": 1.0,
+      "object_affordance_chain_progression": 1.0,
+      "pain_rest_care_count": 1344.0,
+      "pain_rest_loop_not_spectacle": 0.810417,
+      "pathfinding_count": 1344.0,
+      "private_boundary_preserved": 1.0,
+      "resident_routine_integrity": 1.0,
+      "routine_frame_count": 1344.0,
+      "routine_interrupt_count": 143.0,
+      "routine_interruption_recovery": 0.8531468531468531,
+      "routine_recovery_count": 122.0,
+      "session_day_count": 112.0,
+      "session_persistence_count": 251.0,
+      "source_v39_continuity": 1.0,
+      "weakest_channel_name": "pain_rest_loop_not_spectacle",
+      "weakest_channel_score": 0.810417
+    },
+    "next_gate": "browser world v41 with real-time scheduler ticks, resident task queues, multi-object crafting/repair projects, care consent before treatment, and long-session dialect relationship memory visible after save/restore",
+    "report": 280,
+    "seed": 20260893,
+    "source_v39_next_gate": "browser world v40 with continuous room-to-room pathfinding, manipulable object affordance chains, resident routine interruption/recovery, embodied pain/rest care loops, and dialect memory across long multi-visit sessions",
+    "source_v39_verdict": "pass",
+    "verdict": "pass"
+  },
+  "routine": [
+    {
+      "avatar_action": "dry_off",
+      "day": 1,
+      "interrupted": true,
+      "recovery_action_available": true,
+      "recovery_completed": false,
+      "resident_id": "Lio",
+      "routine_integrity": 0.79,
+      "scheduled_room": "plank hall",
+      "scheduled_task": "repair project",
+      "settlement_id": "riverbend",
+      "tick_id": 0,
+      "visible_routine_state": "interrupted"
+    },
+    {
+      "avatar_action": "path_to_resident",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Fay",
+      "routine_integrity": 0.86,
+      "scheduled_room": "ledger loft",
+      "scheduled_task": "repair project",
+      "settlement_id": "roofward",
+      "tick_id": 1,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "inspect_affordance",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Toma",
+      "routine_integrity": 0.86,
+      "scheduled_room": "spool room",
+      "scheduled_task": "repair project",
+      "settlement_id": "archive",
+      "tick_id": 2,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "interrupt_routine",
+      "day": 1,
+      "interrupted": true,
+      "recovery_action_available": true,
+      "recovery_completed": true,
+      "resident_id": "Milo",
+      "routine_integrity": 0.85,
+      "scheduled_room": "lantern walk",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "signal",
+      "tick_id": 3,
+      "visible_routine_state": "recovered"
+    },
+    {
+      "avatar_action": "ask_dialect_memory",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Mara",
+      "routine_integrity": 0.86,
+      "scheduled_room": "satchel shed",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "orchard",
+      "tick_id": 4,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "rest",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Juno",
+      "routine_integrity": 0.86,
+      "scheduled_room": "spark lane",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "repair_ring",
+      "tick_id": 5,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "interrupt_routine",
+      "day": 1,
+      "interrupted": true,
+      "recovery_action_available": true,
+      "recovery_completed": true,
+      "resident_id": "Lio",
+      "routine_integrity": 0.78,
+      "scheduled_room": "dry ridge",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "riverbend",
+      "tick_id": 6,
+      "visible_routine_state": "recovered"
+    },
+    {
+      "avatar_action": "ask_dialect_memory",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Fay",
+      "routine_integrity": 0.86,
+      "scheduled_room": "glass stair",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "roofward",
+      "tick_id": 7,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "rest",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Toma",
+      "routine_integrity": 0.86,
+      "scheduled_room": "ink niche",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "archive",
+      "tick_id": 8,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "dry_off",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Milo",
+      "routine_integrity": 0.85,
+      "scheduled_room": "arrival court",
+      "scheduled_task": "restore memory",
+      "settlement_id": "signal",
+      "tick_id": 9,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "path_to_resident",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Mara",
+      "routine_integrity": 0.86,
+      "scheduled_room": "arrival court",
+      "scheduled_task": "restore memory",
+      "settlement_id": "orchard",
+      "tick_id": 10,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "inspect_affordance",
+      "day": 1,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Juno",
+      "routine_integrity": 0.86,
+      "scheduled_room": "cool corner",
+      "scheduled_task": "restore memory",
+      "settlement_id": "repair_ring",
+      "tick_id": 11,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "continue_project",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Ari",
+      "routine_integrity": 0.86,
+      "scheduled_room": "plank hall",
+      "scheduled_task": "repair project",
+      "settlement_id": "riverbend",
+      "tick_id": 12,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "path_to_rest",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Sera",
+      "routine_integrity": 0.86,
+      "scheduled_room": "ledger loft",
+      "scheduled_task": "repair project",
+      "settlement_id": "roofward",
+      "tick_id": 13,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "perform_chain_step",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Nia",
+      "routine_integrity": 0.86,
+      "scheduled_room": "spool room",
+      "scheduled_task": "repair project",
+      "settlement_id": "archive",
+      "tick_id": 14,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "recover_routine",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": true,
+      "recovery_completed": true,
+      "resident_id": "Ren",
+      "routine_integrity": 0.92,
+      "scheduled_room": "lantern walk",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "signal",
+      "tick_id": 15,
+      "visible_routine_state": "recovered"
+    },
+    {
+      "avatar_action": "offer_care",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Ivo",
+      "routine_integrity": 0.86,
+      "scheduled_room": "satchel shed",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "orchard",
+      "tick_id": 16,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "treat_pain",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Pax",
+      "routine_integrity": 0.86,
+      "scheduled_room": "spark lane",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "repair_ring",
+      "tick_id": 17,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "recover_routine",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": true,
+      "recovery_completed": true,
+      "resident_id": "Ari",
+      "routine_integrity": 0.92,
+      "scheduled_room": "dry ridge",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "riverbend",
+      "tick_id": 18,
+      "visible_routine_state": "recovered"
+    },
+    {
+      "avatar_action": "offer_care",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Sera",
+      "routine_integrity": 0.86,
+      "scheduled_room": "glass stair",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "roofward",
+      "tick_id": 19,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "treat_pain",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Nia",
+      "routine_integrity": 0.86,
+      "scheduled_room": "ink niche",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "archive",
+      "tick_id": 20,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "continue_project",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Ren",
+      "routine_integrity": 0.92,
+      "scheduled_room": "arrival court",
+      "scheduled_task": "restore memory",
+      "settlement_id": "signal",
+      "tick_id": 21,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "path_to_rest",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Ivo",
+      "routine_integrity": 0.86,
+      "scheduled_room": "arrival court",
+      "scheduled_task": "restore memory",
+      "settlement_id": "orchard",
+      "tick_id": 22,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "perform_chain_step",
+      "day": 2,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Pax",
+      "routine_integrity": 0.86,
+      "scheduled_room": "cool corner",
+      "scheduled_task": "restore memory",
+      "settlement_id": "repair_ring",
+      "tick_id": 23,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "path_to_resident",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Lio",
+      "routine_integrity": 0.78,
+      "scheduled_room": "plank hall",
+      "scheduled_task": "repair project",
+      "settlement_id": "riverbend",
+      "tick_id": 24,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "inspect_affordance",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Fay",
+      "routine_integrity": 0.86,
+      "scheduled_room": "ledger loft",
+      "scheduled_task": "repair project",
+      "settlement_id": "roofward",
+      "tick_id": 25,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "interrupt_routine",
+      "day": 3,
+      "interrupted": true,
+      "recovery_action_available": true,
+      "recovery_completed": true,
+      "resident_id": "Toma",
+      "routine_integrity": 0.85,
+      "scheduled_room": "spool room",
+      "scheduled_task": "repair project",
+      "settlement_id": "archive",
+      "tick_id": 26,
+      "visible_routine_state": "recovered"
+    },
+    {
+      "avatar_action": "ask_dialect_memory",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Milo",
+      "routine_integrity": 0.85,
+      "scheduled_room": "lantern walk",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "signal",
+      "tick_id": 27,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "rest",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Mara",
+      "routine_integrity": 0.86,
+      "scheduled_room": "satchel shed",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "orchard",
+      "tick_id": 28,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "dry_off",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Juno",
+      "routine_integrity": 0.86,
+      "scheduled_room": "spark lane",
+      "scheduled_task": "teach dialect",
+      "settlement_id": "repair_ring",
+      "tick_id": 29,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "ask_dialect_memory",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Lio",
+      "routine_integrity": 0.78,
+      "scheduled_room": "dry ridge",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "riverbend",
+      "tick_id": 30,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "rest",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Fay",
+      "routine_integrity": 0.86,
+      "scheduled_room": "glass stair",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "roofward",
+      "tick_id": 31,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "dry_off",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Toma",
+      "routine_integrity": 0.85,
+      "scheduled_room": "ink niche",
+      "scheduled_task": "patrol hazard",
+      "settlement_id": "archive",
+      "tick_id": 32,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "path_to_resident",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Milo",
+      "routine_integrity": 0.85,
+      "scheduled_room": "arrival court",
+      "scheduled_task": "restore memory",
+      "settlement_id": "signal",
+      "tick_id": 33,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "inspect_affordance",
+      "day": 3,
+      "interrupted": false,
+      "recovery_action_available": false,
+      "recovery_completed": false,
+      "resident_id": "Mara",
+      "routine_integrity": 0.86,
+      "scheduled_room": "arrival court",
+      "scheduled_task": "restore memory",
+      "settlement_id": "orchard",
+      "tick_id": 34,
+      "visible_routine_state": "on schedule"
+    },
+    {
+      "avatar_action": "interrupt_routine",
+      "day": 3,
+      "interrupted": true,
+      "recovery_action_available": true,
+      "recovery_completed": false,
+      "resident_id": "Juno",
+      "routine_integrity": 0.79,
+      "scheduled_room": "cool corner",
+      "scheduled_task": "restore memory",
+      "settlement_id": "repair_ring",
+      "tick_id": 35,
+      "visible_routine_state": "interrupted"
+    }
+  ],
+  "state": {
+    "body_state": {
+      "archive": {
+        "comfort": 0.8516,
+        "energy": 0.08,
+        "pain": 0.004,
+        "temperature": 0.95,
+        "wetness": 0.0
+      },
+      "orchard": {
+        "comfort": 0.83848,
+        "energy": 0.08,
+        "pain": 0.024,
+        "temperature": 0.95,
+        "wetness": 0.034
+      },
+      "repair_ring": {
+        "comfort": 0.71072,
+        "energy": 0.08,
+        "pain": 0.0,
+        "temperature": 0.052,
+        "wetness": 0.092
+      },
+      "riverbend": {
+        "comfort": 0.83308,
+        "energy": 0.08,
+        "pain": 0.006,
+        "temperature": 0.95,
+        "wetness": 0.099
+      },
+      "roofward": {
+        "comfort": 0.853,
+        "energy": 0.08,
+        "pain": 0.0,
+        "temperature": 0.95,
+        "wetness": 0.0
+      },
+      "signal": {
+        "comfort": 0.77754,
+        "energy": 0.08,
+        "pain": 0.194,
+        "temperature": 0.896,
+        "wetness": 0.0
+      }
+    },
+    "boundary": "Deterministic browser-local continuous-pathfinding/body-care scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "chain_progress": {
+      "archive": 4,
+      "orchard": 4,
+      "repair_ring": 4,
+      "riverbend": 4,
+      "roofward": 4,
+      "signal": 4
+    },
+    "current_room": {
+      "archive": "memory desk",
+      "orchard": "satchel shed",
+      "repair_ring": "wire bench",
+      "riverbend": "wet crossing",
+      "roofward": "warm lane",
+      "signal": "signal perch"
+    },
+    "dialect_memory": {
+      "archive:Nia": [
+        [
+          66,
+          "archive-spool-20-3"
+        ],
+        [
+          66,
+          "archive-spool-20-3"
+        ],
+        [
+          68,
+          "archive-ink-22-3"
+        ],
+        [
+          68,
+          "archive-memory-22-3"
+        ],
+        [
+          70,
+          "archive-memory-1-3"
+        ],
+        [
+          70,
+          "archive-stone-1-3"
+        ],
+        [
+          89,
+          "archive-ink-20-3"
+        ],
+        [
+          89,
+          "archive-memory-20-3"
+        ],
+        [
+          91,
+          "archive-memory-22-3"
+        ],
+        [
+          91,
+          "archive-stone-22-3"
+        ],
+        [
+          93,
+          "archive-stone-1-3"
+        ],
+        [
+          93,
+          "archive-memory-1-3"
+        ],
+        [
+          95,
+          "archive-stone-3-3"
+        ],
+        [
+          95,
+          "archive-memory-3-3"
+        ],
+        [
+          112,
+          "archive-ink-20-3"
+        ],
+        [
+          112,
+          "archive-memory-20-3"
+        ]
+      ],
+      "archive:Toma": [
+        [
+          69,
+          "archive-stone-0-3"
+        ],
+        [
+          71,
+          "archive-stone-2-3"
+        ],
+        [
+          71,
+          "archive-spool-2-3"
+        ],
+        [
+          74,
+          "archive-memory-5-3"
+        ],
+        [
+          81,
+          "archive-stone-12-3"
+        ],
+        [
+          87,
+          "archive-stone-18-3"
+        ],
+        [
+          88,
+          "archive-stone-19-3"
+        ],
+        [
+          88,
+          "archive-memory-19-3"
+        ],
+        [
+          90,
+          "archive-memory-21-3"
+        ],
+        [
+          90,
+          "archive-memory-21-3"
+        ],
+        [
+          92,
+          "archive-arrival-0-3"
+        ],
+        [
+          92,
+          "archive-stone-0-3"
+        ],
+        [
+          94,
+          "archive-stone-2-3"
+        ],
+        [
+          94,
+          "archive-spool-2-3"
+        ],
+        [
+          101,
+          "archive-ink-9-3"
+        ],
+        [
+          108,
+          "archive-stone-16-3"
+        ]
+      ],
+      "orchard:Ivo": [
+        [
+          80,
+          "orchard-satchel-11-3"
+        ],
+        [
+          80,
+          "orchard-market-11-3"
+        ],
+        [
+          82,
+          "orchard-mud-13-3"
+        ],
+        [
+          82,
+          "orchard-seed-13-3"
+        ],
+        [
+          84,
+          "orchard-satchel-15-3"
+        ],
+        [
+          84,
+          "orchard-market-15-3"
+        ],
+        [
+          86,
+          "orchard-seed-17-3"
+        ],
+        [
+          86,
+          "orchard-mud-17-3"
+        ],
+        [
+          105,
+          "orchard-satchel-13-3"
+        ],
+        [
+          105,
+          "orchard-satchel-13-3"
+        ],
+        [
+          107,
+          "orchard-market-15-3"
+        ],
+        [
+          107,
+          "orchard-satchel-15-3"
+        ],
+        [
+          109,
+          "orchard-mud-17-3"
+        ],
+        [
+          109,
+          "orchard-seed-17-3"
+        ],
+        [
+          111,
+          "orchard-mud-19-3"
+        ],
+        [
+          111,
+          "orchard-satchel-19-3"
+        ]
+      ],
+      "orchard:Mara": [
+        [
+          83,
+          "orchard-mud-14-3"
+        ],
+        [
+          85,
+          "orchard-seed-16-3"
+        ],
+        [
+          85,
+          "orchard-mud-16-3"
+        ],
+        [
+          87,
+          "orchard-mud-18-3"
+        ],
+        [
+          87,
+          "orchard-seed-18-3"
+        ],
+        [
+          90,
+          "orchard-market-21-3"
+        ],
+        [
+          97,
+          "orchard-seed-5-3"
+        ],
+        [
+          103,
+          "orchard-market-11-3"
+        ],
+        [
+          104,
+          "orchard-satchel-12-3"
+        ],
+        [
+          104,
+          "orchard-market-12-3"
+        ],
+        [
+          106,
+          "orchard-satchel-14-3"
+        ],
+        [
+          106,
+          "orchard-satchel-14-3"
+        ],
+        [
+          108,
+          "orchard-market-16-3"
+        ],
+        [
+          108,
+          "orchard-seed-16-3"
+        ],
+        [
+          110,
+          "orchard-market-18-3"
+        ],
+        [
+          110,
+          "orchard-seed-18-3"
+        ]
+      ],
+      "repair_ring:Juno": [
+        [
+          69,
+          "repair_ring-wire-0-3"
+        ],
+        [
+          71,
+          "repair_ring-cool-2-3"
+        ],
+        [
+          71,
+          "repair_ring-wire-2-3"
+        ],
+        [
+          74,
+          "repair_ring-wire-5-3"
+        ],
+        [
+          81,
+          "repair_ring-spark-12-3"
+        ],
+        [
+          87,
+          "repair_ring-bell-18-3"
+        ],
+        [
+          88,
+          "repair_ring-bell-19-3"
+        ],
+        [
+          88,
+          "repair_ring-bell-19-3"
+        ],
+        [
+          90,
+          "repair_ring-cool-21-3"
+        ],
+        [
+          90,
+          "repair_ring-wire-21-3"
+        ],
+        [
+          92,
+          "repair_ring-spark-0-3"
+        ],
+        [
+          92,
+          "repair_ring-bell-0-3"
+        ],
+        [
+          94,
+          "repair_ring-spark-2-3"
+        ],
+        [
+          94,
+          "repair_ring-wire-2-3"
+        ],
+        [
+          101,
+          "repair_ring-spark-9-3"
+        ],
+        [
+          108,
+          "repair_ring-spark-16-3"
+        ]
+      ],
+      "repair_ring:Pax": [
+        [
+          66,
+          "repair_ring-cool-20-3"
+        ],
+        [
+          66,
+          "repair_ring-cool-20-3"
+        ],
+        [
+          68,
+          "repair_ring-cool-22-3"
+        ],
+        [
+          68,
+          "repair_ring-wire-22-3"
+        ],
+        [
+          70,
+          "repair_ring-spark-1-3"
+        ],
+        [
+          70,
+          "repair_ring-wire-1-3"
+        ],
+        [
+          89,
+          "repair_ring-cool-20-3"
+        ],
+        [
+          89,
+          "repair_ring-cool-20-3"
+        ],
+        [
+          91,
+          "repair_ring-cool-22-3"
+        ],
+        [
+          91,
+          "repair_ring-wire-22-3"
+        ],
+        [
+          93,
+          "repair_ring-bell-1-3"
+        ],
+        [
+          93,
+          "repair_ring-bell-1-3"
+        ],
+        [
+          95,
+          "repair_ring-cool-3-3"
+        ],
+        [
+          95,
+          "repair_ring-wire-3-3"
+        ],
+        [
+          112,
+          "repair_ring-cool-20-3"
+        ],
+        [
+          112,
+          "repair_ring-wire-20-3"
+        ]
+      ],
+      "riverbend:Ari": [
+        [
+          73,
+          "riverbend-kit-4-3"
+        ],
+        [
+          73,
+          "riverbend-wet-4-3"
+        ],
+        [
+          75,
+          "riverbend-dry-6-3"
+        ],
+        [
+          75,
+          "riverbend-kit-6-3"
+        ],
+        [
+          77,
+          "riverbend-kit-8-3"
+        ],
+        [
+          77,
+          "riverbend-dry-8-3"
+        ],
+        [
+          79,
+          "riverbend-plank-10-3"
+        ],
+        [
+          79,
+          "riverbend-wet-10-3"
+        ],
+        [
+          96,
+          "riverbend-kit-4-3"
+        ],
+        [
+          96,
+          "riverbend-wet-4-3"
+        ],
+        [
+          98,
+          "riverbend-dry-6-3"
+        ],
+        [
+          98,
+          "riverbend-dry-6-3"
+        ],
+        [
+          100,
+          "riverbend-plank-8-3"
+        ],
+        [
+          100,
+          "riverbend-plank-8-3"
+        ],
+        [
+          102,
+          "riverbend-wet-10-3"
+        ],
+        [
+          102,
+          "riverbend-kit-10-3"
+        ]
+      ],
+      "riverbend:Lio": [
+        [
+          74,
+          "riverbend-kit-5-3"
+        ],
+        [
+          76,
+          "riverbend-kit-7-3"
+        ],
+        [
+          76,
+          "riverbend-dry-7-3"
+        ],
+        [
+          78,
+          "riverbend-plank-9-3"
+        ],
+        [
+          78,
+          "riverbend-arrival-9-3"
+        ],
+        [
+          85,
+          "riverbend-dry-16-3"
+        ],
+        [
+          92,
+          "riverbend-dry-0-3"
+        ],
+        [
+          97,
+          "riverbend-wet-5-3"
+        ],
+        [
+          97,
+          "riverbend-plank-5-3"
+        ],
+        [
+          99,
+          "riverbend-plank-7-3"
+        ],
+        [
+          99,
+          "riverbend-arrival-7-3"
+        ],
+        [
+          101,
+          "riverbend-plank-9-3"
+        ],
+        [
+          101,
+          "riverbend-wet-9-3"
+        ],
+        [
+          103,
+          "riverbend-dry-11-3"
+        ],
+        [
+          103,
+          "riverbend-kit-11-3"
+        ],
+        [
+          106,
+          "riverbend-wet-14-3"
+        ]
+      ],
+      "roofward:Fay": [
+        [
+          83,
+          "roofward-warm-14-3"
+        ],
+        [
+          85,
+          "roofward-ledger-16-3"
+        ],
+        [
+          85,
+          "roofward-warm-16-3"
+        ],
+        [
+          87,
+          "roofward-glass-18-3"
+        ],
+        [
+          87,
+          "roofward-glass-18-3"
+        ],
+        [
+          90,
+          "roofward-warm-21-3"
+        ],
+        [
+          97,
+          "roofward-sun-5-3"
+        ],
+        [
+          103,
+          "roofward-sun-11-3"
+        ],
+        [
+          104,
+          "roofward-sun-12-3"
+        ],
+        [
+          104,
+          "roofward-warm-12-3"
+        ],
+        [
+          106,
+          "roofward-warm-14-3"
+        ],
+        [
+          106,
+          "roofward-warm-14-3"
+        ],
+        [
+          108,
+          "roofward-ledger-16-3"
+        ],
+        [
+          108,
+          "roofward-sun-16-3"
+        ],
+        [
+          110,
+          "roofward-ledger-18-3"
+        ],
+        [
+          110,
+          "roofward-warm-18-3"
+        ]
+      ],
+      "roofward:Sera": [
+        [
+          80,
+          "roofward-warm-11-3"
+        ],
+        [
+          80,
+          "roofward-sun-11-3"
+        ],
+        [
+          82,
+          "roofward-glass-13-3"
+        ],
+        [
+          82,
+          "roofward-arrival-13-3"
+        ],
+        [
+          84,
+          "roofward-warm-15-3"
+        ],
+        [
+          84,
+          "roofward-ledger-15-3"
+        ],
+        [
+          86,
+          "roofward-sun-17-3"
+        ],
+        [
+          86,
+          "roofward-warm-17-3"
+        ],
+        [
+          105,
+          "roofward-glass-13-3"
+        ],
+        [
+          105,
+          "roofward-warm-13-3"
+        ],
+        [
+          107,
+          "roofward-warm-15-3"
+        ],
+        [
+          107,
+          "roofward-ledger-15-3"
+        ],
+        [
+          109,
+          "roofward-sun-17-3"
+        ],
+        [
+          109,
+          "roofward-warm-17-3"
+        ],
+        [
+          111,
+          "roofward-warm-19-3"
+        ],
+        [
+          111,
+          "roofward-warm-19-3"
+        ]
+      ],
+      "signal:Milo": [
+        [
+          74,
+          "signal-lens-5-3"
+        ],
+        [
+          76,
+          "signal-mast-7-3"
+        ],
+        [
+          76,
+          "signal-lantern-7-3"
+        ],
+        [
+          78,
+          "signal-lens-9-3"
+        ],
+        [
+          78,
+          "signal-lens-9-3"
+        ],
+        [
+          85,
+          "signal-mast-16-3"
+        ],
+        [
+          92,
+          "signal-lantern-0-3"
+        ],
+        [
+          97,
+          "signal-mast-5-3"
+        ],
+        [
+          97,
+          "signal-mast-5-3"
+        ],
+        [
+          99,
+          "signal-lantern-7-3"
+        ],
+        [
+          99,
+          "signal-mast-7-3"
+        ],
+        [
+          101,
+          "signal-lantern-9-3"
+        ],
+        [
+          101,
+          "signal-mast-9-3"
+        ],
+        [
+          103,
+          "signal-mast-11-3"
+        ],
+        [
+          103,
+          "signal-lantern-11-3"
+        ],
+        [
+          106,
+          "signal-mast-14-3"
+        ]
+      ],
+      "signal:Ren": [
+        [
+          73,
+          "signal-lantern-4-3"
+        ],
+        [
+          73,
+          "signal-mast-4-3"
+        ],
+        [
+          75,
+          "signal-lantern-6-3"
+        ],
+        [
+          75,
+          "signal-lantern-6-3"
+        ],
+        [
+          77,
+          "signal-mast-8-3"
+        ],
+        [
+          77,
+          "signal-lantern-8-3"
+        ],
+        [
+          79,
+          "signal-signal-10-3"
+        ],
+        [
+          79,
+          "signal-lens-10-3"
+        ],
+        [
+          96,
+          "signal-mast-4-3"
+        ],
+        [
+          96,
+          "signal-lantern-4-3"
+        ],
+        [
+          98,
+          "signal-lantern-6-3"
+        ],
+        [
+          98,
+          "signal-lantern-6-3"
+        ],
+        [
+          100,
+          "signal-lantern-8-3"
+        ],
+        [
+          100,
+          "signal-lantern-8-3"
+        ],
+        [
+          102,
+          "signal-lantern-10-3"
+        ],
+        [
+          102,
+          "signal-mast-10-3"
+        ]
+      ]
+    },
+    "settlements": [
+      {
+        "affordance_chain": [
+          "inspect plank latch",
+          "lift cedar kit",
+          "place ridge lantern",
+          "repair crossing"
+        ],
+        "cold_room": "arrival court",
+        "dialect_id": "riverbend-dialect-8",
+        "edges": [
+          [
+            "arrival court",
+            "plank hall"
+          ],
+          [
+            "plank hall",
+            "wet crossing"
+          ],
+          [
+            "plank hall",
+            "dry ridge"
+          ],
+          [
+            "dry ridge",
+            "kit alcove"
+          ],
+          [
+            "wet crossing",
+            "kit alcove"
+          ]
+        ],
+        "flower_node": "node-03",
+        "pain_room": "plank hall",
+        "resident_a": "Ari",
+        "resident_b": "Lio",
+        "rest_room": "kit alcove",
+        "rooms": [
+          "arrival court",
+          "plank hall",
+          "wet crossing",
+          "dry ridge",
+          "kit alcove"
+        ],
+        "schedule_loop": [
+          "plank hall",
+          "kit alcove",
+          "dry ridge",
+          "arrival court"
+        ],
+        "sensory_cue": "river slap / cedar resin",
+        "settlement_id": "riverbend",
+        "wet_room": "wet crossing"
+      },
+      {
+        "affordance_chain": [
+          "inspect glass latch",
+          "carry herb ledger",
+          "align sun lens",
+          "open warm archive"
+        ],
+        "cold_room": "glass stair",
+        "dialect_id": "roofward-dialect-8",
+        "edges": [
+          [
+            "arrival court",
+            "glass stair"
+          ],
+          [
+            "glass stair",
+            "warm lane"
+          ],
+          [
+            "warm lane",
+            "ledger loft"
+          ],
+          [
+            "ledger loft",
+            "sun sill"
+          ],
+          [
+            "warm lane",
+            "sun sill"
+          ]
+        ],
+        "flower_node": "node-05",
+        "pain_room": "glass stair",
+        "resident_a": "Fay",
+        "resident_b": "Sera",
+        "rest_room": "warm lane",
+        "rooms": [
+          "arrival court",
+          "glass stair",
+          "warm lane",
+          "ledger loft",
+          "sun sill"
+        ],
+        "schedule_loop": [
+          "ledger loft",
+          "warm lane",
+          "glass stair",
+          "arrival court"
+        ],
+        "sensory_cue": "hinge ticks / thyme paper",
+        "settlement_id": "roofward",
+        "wet_room": "arrival court"
+      },
+      {
+        "affordance_chain": [
+          "inspect memory tag",
+          "lift signal spool",
+          "ink route mark",
+          "weave recall line"
+        ],
+        "cold_room": "stone stacks",
+        "dialect_id": "archive-dialect-8",
+        "edges": [
+          [
+            "arrival court",
+            "stone stacks"
+          ],
+          [
+            "stone stacks",
+            "spool room"
+          ],
+          [
+            "spool room",
+            "ink niche"
+          ],
+          [
+            "ink niche",
+            "memory desk"
+          ],
+          [
+            "stone stacks",
+            "memory desk"
+          ]
+        ],
+        "flower_node": "node-08",
+        "pain_room": "ink niche",
+        "resident_a": "Nia",
+        "resident_b": "Toma",
+        "rest_room": "memory desk",
+        "rooms": [
+          "arrival court",
+          "stone stacks",
+          "spool room",
+          "ink niche",
+          "memory desk"
+        ],
+        "schedule_loop": [
+          "spool room",
+          "stone stacks",
+          "ink niche",
+          "memory desk"
+        ],
+        "sensory_cue": "page flutter / ink linen",
+        "settlement_id": "archive",
+        "wet_room": "arrival court"
+      },
+      {
+        "affordance_chain": [
+          "inspect mast rope",
+          "lift oil lantern",
+          "align signal lens",
+          "light safe path"
+        ],
+        "cold_room": "mast base",
+        "dialect_id": "signal-dialect-8",
+        "edges": [
+          [
+            "arrival court",
+            "mast base"
+          ],
+          [
+            "mast base",
+            "lantern walk"
+          ],
+          [
+            "lantern walk",
+            "lens room"
+          ],
+          [
+            "lens room",
+            "signal perch"
+          ],
+          [
+            "mast base",
+            "signal perch"
+          ]
+        ],
+        "flower_node": "node-11",
+        "pain_room": "mast base",
+        "resident_a": "Milo",
+        "resident_b": "Ren",
+        "rest_room": "lantern walk",
+        "rooms": [
+          "arrival court",
+          "mast base",
+          "lantern walk",
+          "lens room",
+          "signal perch"
+        ],
+        "schedule_loop": [
+          "mast base",
+          "lantern walk",
+          "lens room",
+          "arrival court"
+        ],
+        "sensory_cue": "static crickets / lamp oil",
+        "settlement_id": "signal",
+        "wet_room": "arrival court"
+      },
+      {
+        "affordance_chain": [
+          "inspect dry cord",
+          "lift seed satchel",
+          "place market token",
+          "seal seed shed"
+        ],
+        "cold_room": "market plank",
+        "dialect_id": "orchard-dialect-8",
+        "edges": [
+          [
+            "arrival court",
+            "seed lane"
+          ],
+          [
+            "seed lane",
+            "mud row"
+          ],
+          [
+            "seed lane",
+            "market plank"
+          ],
+          [
+            "market plank",
+            "satchel shed"
+          ],
+          [
+            "mud row",
+            "satchel shed"
+          ]
+        ],
+        "flower_node": "node-01",
+        "pain_room": "mud row",
+        "resident_a": "Ivo",
+        "resident_b": "Mara",
+        "rest_room": "satchel shed",
+        "rooms": [
+          "arrival court",
+          "seed lane",
+          "mud row",
+          "market plank",
+          "satchel shed"
+        ],
+        "schedule_loop": [
+          "seed lane",
+          "satchel shed",
+          "market plank",
+          "arrival court"
+        ],
+        "sensory_cue": "cart creak / apple soil",
+        "settlement_id": "orchard",
+        "wet_room": "mud row"
+      },
+      {
+        "affordance_chain": [
+          "inspect bell gauge",
+          "lift insulated tongs",
+          "place copper wire",
+          "stabilize repair"
+        ],
+        "cold_room": "cool corner",
+        "dialect_id": "repair_ring-dialect-8",
+        "edges": [
+          [
+            "arrival court",
+            "wire bench"
+          ],
+          [
+            "wire bench",
+            "spark lane"
+          ],
+          [
+            "spark lane",
+            "bell alcove"
+          ],
+          [
+            "wire bench",
+            "cool corner"
+          ],
+          [
+            "cool corner",
+            "bell alcove"
+          ]
+        ],
+        "flower_node": "node-09",
+        "pain_room": "spark lane",
+        "resident_a": "Juno",
+        "resident_b": "Pax",
+        "rest_room": "cool corner",
+        "rooms": [
+          "arrival court",
+          "wire bench",
+          "spark lane",
+          "bell alcove",
+          "cool corner"
+        ],
+        "schedule_loop": [
+          "wire bench",
+          "spark lane",
+          "bell alcove",
+          "cool corner"
+        ],
+        "sensory_cue": "bell hum / hot copper",
+        "settlement_id": "repair_ring",
+        "wet_room": "spark lane"
+      }
+    ]
+  }
+}</script>
+  <script>
+    const DATA = JSON.parse(document.querySelector('#ssrm-data').textContent);
+    const LS_KEY = 'ssrm.v40.world';
+    function defaultWorld() { return { paths: {}, chains: DATA.state.chain_progress, routine: {}, body: DATA.state.body_state, dialect: DATA.state.dialect_memory }; }
+    function loadWorld() { try { return JSON.parse(localStorage.getItem(LS_KEY)) || defaultWorld(); } catch(_err) { return defaultWorld(); } }
+    function saveWorld(world) { localStorage.setItem(LS_KEY, JSON.stringify(world)); }
+    function bootWorld() { if (!localStorage.getItem(LS_KEY)) saveWorld(defaultWorld()); }
+    function pathfindTo(id, room) { const w = loadWorld(); w.paths[id] = room; saveWorld(w); renderAll(); }
+    function performAffordance(id) { const w = loadWorld(); w.chains[id] = Math.min(4, (w.chains[id] || 0) + 1); saveWorld(w); renderAll(); }
+    function interruptRoutine(id) { const w = loadWorld(); w.routine[id] = 'interrupted'; saveWorld(w); renderAll(); }
+    function recoverRoutine(id) { const w = loadWorld(); w.routine[id] = 'recovered'; saveWorld(w); renderAll(); }
+    function careAction(id, action) { const w = loadWorld(); w.body[id] = w.body[id] || {}; w.body[id].lastCare = action; if (action === 'rest') w.body[id].energy = Math.min(.96, (w.body[id].energy || .5) + .05); if (action === 'treat') w.body[id].pain = Math.max(0, (w.body[id].pain || .1) - .05); saveWorld(w); renderAll(); }
+    function renderAll() { const w = loadWorld(); for (const id of Object.keys(DATA.state.chain_progress)) { const node = document.querySelector('#state-' + id); if (node) node.textContent = 'path target: ' + (w.paths[id] || 'none') + ' · chain ' + (w.chains[id] || 0) + ' · routine ' + (w.routine[id] || 'normal'); } document.querySelector('#path-log').textContent = JSON.stringify(w.paths, null, 2); document.querySelector('#chain-log').textContent = JSON.stringify(w.chains, null, 2); document.querySelector('#routine-log').textContent = JSON.stringify(w.routine, null, 2); document.querySelector('#care-log').textContent = JSON.stringify(w.body, null, 2); document.querySelector('#dialect-log').textContent = JSON.stringify(w.dialect, null, 2); }
+    bootWorld(); renderAll();
+  </script>
+</body>
+</html>

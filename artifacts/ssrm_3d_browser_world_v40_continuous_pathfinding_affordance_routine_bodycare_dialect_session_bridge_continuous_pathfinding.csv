@@ -1,0 +1,1345 @@
+tick_id,day,settlement_id,start_room,target_room,path,path_length,next_room,graph_valid,continuous_progress,saved_path_key
+0,1,riverbend,arrival court,plank hall,arrival court > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+1,1,roofward,arrival court,ledger loft,arrival court > glass stair > warm lane > ledger loft,4,glass stair,True,True,ssrm.v40.path.roofward
+2,1,archive,arrival court,ink niche,arrival court > stone stacks > spool room > ink niche,4,stone stacks,True,True,ssrm.v40.path.archive
+3,1,signal,arrival court,signal perch,arrival court > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+4,1,orchard,arrival court,arrival court,arrival court,1,arrival court,True,True,ssrm.v40.path.orchard
+5,1,repair_ring,arrival court,cool corner,arrival court > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+6,1,riverbend,plank hall,wet crossing,plank hall > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+7,1,roofward,glass stair,ledger loft,glass stair > warm lane > ledger loft,3,warm lane,True,True,ssrm.v40.path.roofward
+8,1,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+9,1,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+10,1,orchard,arrival court,arrival court,arrival court,1,arrival court,True,True,ssrm.v40.path.orchard
+11,1,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+12,2,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+13,2,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+14,2,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+15,2,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+16,2,orchard,arrival court,seed lane,arrival court > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+17,2,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+18,2,riverbend,wet crossing,dry ridge,wet crossing > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+19,2,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+20,2,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+21,2,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+22,2,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+23,2,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+24,3,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+25,3,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+26,3,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+27,3,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+28,3,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+29,3,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+30,3,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+31,3,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+32,3,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+33,3,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+34,3,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+35,3,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+36,4,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+37,4,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+38,4,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+39,4,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+40,4,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+41,4,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+42,4,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+43,4,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+44,4,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+45,4,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+46,4,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+47,4,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+48,5,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+49,5,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+50,5,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+51,5,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+52,5,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+53,5,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+54,5,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+55,5,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+56,5,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+57,5,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+58,5,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+59,5,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+60,6,riverbend,wet crossing,plank hall,wet crossing > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+61,6,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+62,6,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+63,6,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+64,6,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+65,6,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+66,6,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+67,6,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+68,6,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+69,6,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+70,6,orchard,seed lane,arrival court,seed lane > arrival court,2,arrival court,True,True,ssrm.v40.path.orchard
+71,6,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+72,7,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+73,7,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+74,7,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+75,7,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+76,7,orchard,arrival court,satchel shed,arrival court > seed lane > mud row > satchel shed,4,seed lane,True,True,ssrm.v40.path.orchard
+77,7,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+78,7,riverbend,wet crossing,dry ridge,wet crossing > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+79,7,roofward,ledger loft,glass stair,ledger loft > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+80,7,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+81,7,signal,arrival court,mast base,arrival court > mast base,2,mast base,True,True,ssrm.v40.path.signal
+82,7,orchard,seed lane,mud row,seed lane > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+83,7,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+84,8,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+85,8,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+86,8,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+87,8,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+88,8,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+89,8,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+90,8,roofward,ledger loft,glass stair,ledger loft > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+91,8,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+92,8,signal,arrival court,mast base,arrival court > mast base,2,mast base,True,True,ssrm.v40.path.signal
+93,8,orchard,satchel shed,mud row,satchel shed > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+94,8,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+95,8,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+96,9,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+97,9,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+98,9,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+99,9,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+100,9,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+101,9,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+102,9,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+103,9,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+104,9,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+105,9,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+106,9,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+107,9,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+108,10,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+109,10,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+110,10,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+111,10,orchard,market plank,market plank,market plank,1,market plank,True,True,ssrm.v40.path.orchard
+112,10,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+113,10,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+114,10,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+115,10,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+116,10,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+117,10,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+118,10,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+119,10,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+120,11,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+121,11,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+122,11,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+123,11,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+124,11,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+125,11,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+126,11,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+127,11,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+128,11,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+129,11,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+130,11,repair_ring,spark lane,wire bench,spark lane > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+131,11,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+132,12,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+133,12,archive,ink niche,spool room,ink niche > spool room,2,spool room,True,True,ssrm.v40.path.archive
+134,12,signal,mast base,signal perch,mast base > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+135,12,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+136,12,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+137,12,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+138,12,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+139,12,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+140,12,signal,signal perch,lantern walk,signal perch > lens room > lantern walk,3,lens room,True,True,ssrm.v40.path.signal
+141,12,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+142,12,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+143,12,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+144,13,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+145,13,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+146,13,signal,lens room,arrival court,lens room > lantern walk > mast base > arrival court,4,lantern walk,True,True,ssrm.v40.path.signal
+147,13,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+148,13,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+149,13,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+150,13,roofward,ledger loft,glass stair,ledger loft > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+151,13,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+152,13,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+153,13,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+154,13,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+155,13,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+156,14,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+157,14,archive,stone stacks,arrival court,stone stacks > arrival court,2,arrival court,True,True,ssrm.v40.path.archive
+158,14,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+159,14,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+160,14,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+161,14,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+162,14,roofward,ledger loft,arrival court,ledger loft > warm lane > glass stair > arrival court,4,warm lane,True,True,ssrm.v40.path.roofward
+163,14,archive,arrival court,memory desk,arrival court > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+164,14,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+165,14,orchard,mud row,arrival court,mud row > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+166,14,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+167,14,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+168,15,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+169,15,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+170,15,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+171,15,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+172,15,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+173,15,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+174,15,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+175,15,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+176,15,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+177,15,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+178,15,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+179,15,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+180,16,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+181,16,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+182,16,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+183,16,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+184,16,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+185,16,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+186,16,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+187,16,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+188,16,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+189,16,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+190,16,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+191,16,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+192,17,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+193,17,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+194,17,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+195,17,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+196,17,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+197,17,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+198,17,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+199,17,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+200,17,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+201,17,repair_ring,arrival court,wire bench,arrival court > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+202,17,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+203,17,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+204,18,archive,ink niche,spool room,ink niche > spool room,2,spool room,True,True,ssrm.v40.path.archive
+205,18,signal,lens room,signal perch,lens room > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+206,18,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+207,18,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+208,18,riverbend,arrival court,wet crossing,arrival court > plank hall > wet crossing,3,plank hall,True,True,ssrm.v40.path.riverbend
+209,18,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+210,18,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+211,18,signal,signal perch,lantern walk,signal perch > lens room > lantern walk,3,lens room,True,True,ssrm.v40.path.signal
+212,18,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+213,18,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+214,18,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+215,18,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+216,19,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+217,19,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+218,19,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+219,19,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+220,19,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+221,19,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+222,19,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+223,19,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+224,19,orchard,seed lane,mud row,seed lane > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+225,19,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+226,19,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+227,19,roofward,sun sill,arrival court,sun sill > warm lane > glass stair > arrival court,4,warm lane,True,True,ssrm.v40.path.roofward
+228,20,archive,ink niche,arrival court,ink niche > spool room > stone stacks > arrival court,4,spool room,True,True,ssrm.v40.path.archive
+229,20,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+230,20,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+231,20,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+232,20,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+233,20,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+234,20,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+235,20,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+236,20,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+237,20,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+238,20,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+239,20,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+240,21,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+241,21,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+242,21,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+243,21,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+244,21,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+245,21,roofward,arrival court,warm lane,arrival court > glass stair > warm lane,3,glass stair,True,True,ssrm.v40.path.roofward
+246,21,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+247,21,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+248,21,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+249,21,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+250,21,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+251,21,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+252,22,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+253,22,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+254,22,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+255,22,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+256,22,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+257,22,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+258,22,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+259,22,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+260,22,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+261,22,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+262,22,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+263,22,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+264,23,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+265,23,signal,lens room,mast base,lens room > lantern walk > mast base,3,lantern walk,True,True,ssrm.v40.path.signal
+266,23,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+267,23,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+268,23,riverbend,arrival court,kit alcove,arrival court > plank hall > wet crossing > kit alcove,4,plank hall,True,True,ssrm.v40.path.riverbend
+269,23,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+270,23,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+271,23,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+272,23,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+273,23,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+274,23,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+275,23,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+276,24,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+277,24,orchard,mud row,arrival court,mud row > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+278,24,repair_ring,spark lane,wire bench,spark lane > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+279,24,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+280,24,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+281,24,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+282,24,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+283,24,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+284,24,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+285,24,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+286,24,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+287,24,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+288,25,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+289,25,orchard,mud row,seed lane,mud row > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+290,25,repair_ring,spark lane,wire bench,spark lane > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+291,25,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+292,25,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+293,25,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+294,25,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+295,25,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+296,25,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+297,25,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+298,25,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+299,25,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+300,26,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+301,26,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+302,26,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+303,26,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+304,26,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+305,26,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+306,26,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+307,26,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+308,26,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+309,26,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+310,26,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+311,26,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+312,27,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+313,27,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+314,27,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+315,27,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+316,27,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+317,27,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+318,27,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+319,27,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+320,27,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+321,27,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+322,27,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+323,27,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+324,28,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+325,28,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+326,28,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+327,28,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+328,28,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+329,28,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+330,28,signal,lens room,signal perch,lens room > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+331,28,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+332,28,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+333,28,riverbend,dry ridge,wet crossing,dry ridge > plank hall > wet crossing,3,plank hall,True,True,ssrm.v40.path.riverbend
+334,28,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+335,28,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+336,29,signal,signal perch,mast base,signal perch > mast base,2,mast base,True,True,ssrm.v40.path.signal
+337,29,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+338,29,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+339,29,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+340,29,roofward,glass stair,ledger loft,glass stair > warm lane > ledger loft,3,warm lane,True,True,ssrm.v40.path.roofward
+341,29,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+342,29,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+343,29,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+344,29,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+345,29,riverbend,wet crossing,dry ridge,wet crossing > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+346,29,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+347,29,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+348,30,signal,arrival court,arrival court,arrival court,1,arrival court,True,True,ssrm.v40.path.signal
+349,30,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+350,30,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+351,30,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+352,30,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+353,30,archive,stone stacks,arrival court,stone stacks > arrival court,2,arrival court,True,True,ssrm.v40.path.archive
+354,30,signal,arrival court,lens room,arrival court > mast base > lantern walk > lens room,4,mast base,True,True,ssrm.v40.path.signal
+355,30,orchard,satchel shed,mud row,satchel shed > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+356,30,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+357,30,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+358,30,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+359,30,archive,arrival court,stone stacks,arrival court > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+360,31,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+361,31,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+362,31,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+363,31,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+364,31,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+365,31,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+366,31,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+367,31,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+368,31,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+369,31,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+370,31,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+371,31,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+372,32,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+373,32,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+374,32,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+375,32,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+376,32,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+377,32,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+378,32,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+379,32,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+380,32,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+381,32,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+382,32,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+383,32,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+384,33,orchard,market plank,market plank,market plank,1,market plank,True,True,ssrm.v40.path.orchard
+385,33,repair_ring,bell alcove,wire bench,bell alcove > spark lane > wire bench,3,spark lane,True,True,ssrm.v40.path.repair_ring
+386,33,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+387,33,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+388,33,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+389,33,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+390,33,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+391,33,repair_ring,spark lane,arrival court,spark lane > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+392,33,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+393,33,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+394,33,archive,stone stacks,ink niche,stone stacks > spool room > ink niche,3,spool room,True,True,ssrm.v40.path.archive
+395,33,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+396,34,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+397,34,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+398,34,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+399,34,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+400,34,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+401,34,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+402,34,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+403,34,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+404,34,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+405,34,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+406,34,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+407,34,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+408,35,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+409,35,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+410,35,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+411,35,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+412,35,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+413,35,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+414,35,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+415,35,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+416,35,riverbend,wet crossing,dry ridge,wet crossing > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+417,35,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+418,35,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+419,35,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+420,36,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+421,36,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+422,36,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+423,36,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+424,36,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+425,36,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+426,36,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+427,36,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+428,36,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+429,36,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+430,36,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+431,36,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+432,37,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+433,37,repair_ring,cool corner,bell alcove,cool corner > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+434,37,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+435,37,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+436,37,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+437,37,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+438,37,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+439,37,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+440,37,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+441,37,roofward,arrival court,warm lane,arrival court > glass stair > warm lane,3,glass stair,True,True,ssrm.v40.path.roofward
+442,37,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+443,37,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+444,38,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+445,38,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+446,38,riverbend,arrival court,kit alcove,arrival court > plank hall > wet crossing > kit alcove,4,plank hall,True,True,ssrm.v40.path.riverbend
+447,38,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+448,38,archive,spool room,stone stacks,spool room > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+449,38,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+450,38,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+451,38,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+452,38,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+453,38,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+454,38,archive,stone stacks,ink niche,stone stacks > spool room > ink niche,3,spool room,True,True,ssrm.v40.path.archive
+455,38,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+456,39,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+457,39,repair_ring,arrival court,arrival court,arrival court,1,arrival court,True,True,ssrm.v40.path.repair_ring
+458,39,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+459,39,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+460,39,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+461,39,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+462,39,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+463,39,repair_ring,arrival court,bell alcove,arrival court > wire bench > spark lane > bell alcove,4,wire bench,True,True,ssrm.v40.path.repair_ring
+464,39,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+465,39,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+466,39,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+467,39,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+468,40,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+469,40,riverbend,wet crossing,plank hall,wet crossing > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+470,40,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+471,40,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+472,40,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+473,40,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+474,40,repair_ring,arrival court,bell alcove,arrival court > wire bench > spark lane > bell alcove,4,wire bench,True,True,ssrm.v40.path.repair_ring
+475,40,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+476,40,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+477,40,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+478,40,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+479,40,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+480,41,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+481,41,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+482,41,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+483,41,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+484,41,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+485,41,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+486,41,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+487,41,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+488,41,roofward,ledger loft,sun sill,ledger loft > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+489,41,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+490,41,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+491,41,orchard,seed lane,arrival court,seed lane > arrival court,2,arrival court,True,True,ssrm.v40.path.orchard
+492,42,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+493,42,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+494,42,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+495,42,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+496,42,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+497,42,orchard,arrival court,satchel shed,arrival court > seed lane > mud row > satchel shed,4,seed lane,True,True,ssrm.v40.path.orchard
+498,42,repair_ring,cool corner,bell alcove,cool corner > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+499,42,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+500,42,roofward,sun sill,glass stair,sun sill > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+501,42,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+502,42,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+503,42,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+504,43,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+505,43,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+506,43,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+507,43,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+508,43,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+509,43,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+510,43,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+511,43,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+512,43,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+513,43,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+514,43,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+515,43,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+516,44,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+517,44,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+518,44,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+519,44,archive,ink niche,spool room,ink niche > spool room,2,spool room,True,True,ssrm.v40.path.archive
+520,44,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+521,44,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+522,44,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+523,44,riverbend,arrival court,dry ridge,arrival court > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+524,44,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+525,44,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+526,44,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+527,44,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+528,45,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+529,45,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+530,45,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+531,45,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+532,45,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+533,45,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+534,45,repair_ring,arrival court,bell alcove,arrival court > wire bench > spark lane > bell alcove,4,wire bench,True,True,ssrm.v40.path.repair_ring
+535,45,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+536,45,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+537,45,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+538,45,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+539,45,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+540,46,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+541,46,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+542,46,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+543,46,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+544,46,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+545,46,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+546,46,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+547,46,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+548,46,roofward,ledger loft,sun sill,ledger loft > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+549,46,archive,stone stacks,arrival court,stone stacks > arrival court,2,arrival court,True,True,ssrm.v40.path.archive
+550,46,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+551,46,orchard,market plank,mud row,market plank > seed lane > mud row,3,seed lane,True,True,ssrm.v40.path.orchard
+552,47,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+553,47,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+554,47,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+555,47,archive,arrival court,memory desk,arrival court > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+556,47,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+557,47,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+558,47,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+559,47,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+560,47,roofward,sun sill,glass stair,sun sill > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+561,47,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+562,47,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+563,47,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+564,48,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+565,48,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+566,48,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+567,48,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+568,48,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+569,48,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+570,48,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+571,48,roofward,sun sill,glass stair,sun sill > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+572,48,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+573,48,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+574,48,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+575,48,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+576,49,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+577,49,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+578,49,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+579,49,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+580,49,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+581,49,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+582,49,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+583,49,roofward,ledger loft,glass stair,ledger loft > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+584,49,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+585,49,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+586,49,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+587,49,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+588,50,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+589,50,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+590,50,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+591,50,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+592,50,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+593,50,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+594,50,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+595,50,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+596,50,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+597,50,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+598,50,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+599,50,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+600,51,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+601,51,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+602,51,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+603,51,signal,mast base,signal perch,mast base > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+604,51,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+605,51,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+606,51,riverbend,plank hall,wet crossing,plank hall > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+607,51,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+608,51,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+609,51,signal,signal perch,arrival court,signal perch > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+610,51,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+611,51,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+612,52,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+613,52,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+614,52,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+615,52,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+616,52,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+617,52,repair_ring,spark lane,spark lane,spark lane,1,spark lane,True,True,ssrm.v40.path.repair_ring
+618,52,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+619,52,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+620,52,archive,ink niche,arrival court,ink niche > spool room > stone stacks > arrival court,4,spool room,True,True,ssrm.v40.path.archive
+621,52,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+622,52,orchard,satchel shed,mud row,satchel shed > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+623,52,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+624,53,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+625,53,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+626,53,archive,spool room,arrival court,spool room > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+627,53,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+628,53,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+629,53,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+630,53,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+631,53,roofward,sun sill,arrival court,sun sill > warm lane > glass stair > arrival court,4,warm lane,True,True,ssrm.v40.path.roofward
+632,53,archive,stone stacks,ink niche,stone stacks > spool room > ink niche,3,spool room,True,True,ssrm.v40.path.archive
+633,53,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+634,53,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+635,53,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+636,54,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+637,54,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+638,54,archive,spool room,stone stacks,spool room > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+639,54,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+640,54,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+641,54,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+642,54,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+643,54,roofward,ledger loft,glass stair,ledger loft > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+644,54,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+645,54,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+646,54,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+647,54,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+648,55,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+649,55,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+650,55,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+651,55,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+652,55,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+653,55,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+654,55,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+655,55,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+656,55,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+657,55,signal,lens room,signal perch,lens room > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+658,55,orchard,mud row,arrival court,mud row > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+659,55,repair_ring,arrival court,cool corner,arrival court > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+660,56,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+661,56,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+662,56,signal,signal perch,lens room,signal perch > lens room,2,lens room,True,True,ssrm.v40.path.signal
+663,56,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+664,56,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+665,56,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+666,56,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+667,56,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+668,56,signal,lens room,signal perch,lens room > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+669,56,orchard,mud row,arrival court,mud row > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+670,56,repair_ring,arrival court,cool corner,arrival court > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+671,56,riverbend,plank hall,wet crossing,plank hall > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+672,57,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+673,57,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+674,57,signal,signal perch,signal perch,signal perch,1,signal perch,True,True,ssrm.v40.path.signal
+675,57,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+676,57,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+677,57,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+678,57,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+679,57,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+680,57,signal,signal perch,lens room,signal perch > lens room,2,lens room,True,True,ssrm.v40.path.signal
+681,57,orchard,mud row,seed lane,mud row > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+682,57,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+683,57,riverbend,wet crossing,arrival court,wet crossing > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+684,58,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+685,58,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+686,58,signal,lens room,mast base,lens room > lantern walk > mast base,3,lantern walk,True,True,ssrm.v40.path.signal
+687,58,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+688,58,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+689,58,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+690,58,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+691,58,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+692,58,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+693,58,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+694,58,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+695,58,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+696,59,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+697,59,archive,stone stacks,arrival court,stone stacks > arrival court,2,arrival court,True,True,ssrm.v40.path.archive
+698,59,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+699,59,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+700,59,repair_ring,spark lane,spark lane,spark lane,1,spark lane,True,True,ssrm.v40.path.repair_ring
+701,59,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+702,59,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+703,59,archive,arrival court,ink niche,arrival court > stone stacks > spool room > ink niche,4,stone stacks,True,True,ssrm.v40.path.archive
+704,59,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+705,59,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+706,59,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+707,59,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+708,60,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+709,60,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+710,60,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+711,60,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+712,60,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+713,60,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+714,60,roofward,arrival court,glass stair,arrival court > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+715,60,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+716,60,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+717,60,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+718,60,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+719,60,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+720,61,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+721,61,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+722,61,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+723,61,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+724,61,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+725,61,riverbend,wet crossing,plank hall,wet crossing > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+726,61,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+727,61,archive,stone stacks,ink niche,stone stacks > spool room > ink niche,3,spool room,True,True,ssrm.v40.path.archive
+728,61,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+729,61,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+730,61,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+731,61,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+732,62,roofward,glass stair,ledger loft,glass stair > warm lane > ledger loft,3,warm lane,True,True,ssrm.v40.path.roofward
+733,62,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+734,62,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+735,62,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+736,62,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+737,62,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+738,62,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+739,62,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+740,62,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+741,62,orchard,seed lane,arrival court,seed lane > arrival court,2,arrival court,True,True,ssrm.v40.path.orchard
+742,62,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+743,62,riverbend,wet crossing,dry ridge,wet crossing > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+744,63,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+745,63,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+746,63,signal,arrival court,mast base,arrival court > mast base,2,mast base,True,True,ssrm.v40.path.signal
+747,63,orchard,arrival court,seed lane,arrival court > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+748,63,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+749,63,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+750,63,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+751,63,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+752,63,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+753,63,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+754,63,repair_ring,cool corner,bell alcove,cool corner > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+755,63,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+756,64,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+757,64,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+758,64,orchard,mud row,seed lane,mud row > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+759,64,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+760,64,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+761,64,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+762,64,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+763,64,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+764,64,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+765,64,repair_ring,cool corner,bell alcove,cool corner > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+766,64,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+767,64,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+768,65,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+769,65,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+770,65,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+771,65,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+772,65,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+773,65,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+774,65,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+775,65,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+776,65,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+777,65,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+778,65,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+779,65,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+780,66,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+781,66,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+782,66,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+783,66,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+784,66,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+785,66,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+786,66,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+787,66,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+788,66,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+789,66,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+790,66,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+791,66,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+792,67,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+793,67,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+794,67,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+795,67,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+796,67,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+797,67,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+798,67,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+799,67,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+800,67,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+801,67,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+802,67,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+803,67,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+804,68,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+805,68,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+806,68,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+807,68,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+808,68,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+809,68,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+810,68,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+811,68,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+812,68,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+813,68,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+814,68,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+815,68,roofward,ledger loft,arrival court,ledger loft > warm lane > glass stair > arrival court,4,warm lane,True,True,ssrm.v40.path.roofward
+816,69,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+817,69,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+818,69,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+819,69,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+820,69,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+821,69,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+822,69,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+823,69,signal,arrival court,mast base,arrival court > mast base,2,mast base,True,True,ssrm.v40.path.signal
+824,69,orchard,seed lane,mud row,seed lane > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+825,69,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+826,69,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+827,69,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+828,70,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+829,70,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+830,70,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+831,70,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+832,70,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+833,70,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+834,70,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+835,70,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+836,70,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+837,70,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+838,70,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+839,70,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+840,71,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+841,71,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+842,71,orchard,market plank,market plank,market plank,1,market plank,True,True,ssrm.v40.path.orchard
+843,71,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+844,71,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+845,71,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+846,71,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+847,71,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+848,71,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+849,71,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+850,71,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+851,71,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+852,72,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+853,72,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+854,72,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+855,72,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+856,72,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+857,72,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+858,72,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+859,72,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+860,72,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+861,72,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+862,72,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+863,72,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+864,73,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+865,73,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+866,73,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+867,73,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+868,73,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+869,73,archive,ink niche,stone stacks,ink niche > spool room > stone stacks,3,spool room,True,True,ssrm.v40.path.archive
+870,73,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+871,73,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+872,73,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+873,73,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+874,73,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+875,73,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+876,74,signal,mast base,signal perch,mast base > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+877,74,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+878,74,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+879,74,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+880,74,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+881,74,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+882,74,signal,signal perch,lantern walk,signal perch > lens room > lantern walk,3,lens room,True,True,ssrm.v40.path.signal
+883,74,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+884,74,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+885,74,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+886,74,roofward,ledger loft,sun sill,ledger loft > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+887,74,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+888,75,signal,lens room,arrival court,lens room > lantern walk > mast base > arrival court,4,lantern walk,True,True,ssrm.v40.path.signal
+889,75,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+890,75,repair_ring,spark lane,spark lane,spark lane,1,spark lane,True,True,ssrm.v40.path.repair_ring
+891,75,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+892,75,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+893,75,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+894,75,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+895,75,orchard,seed lane,mud row,seed lane > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+896,75,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+897,75,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+898,75,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+899,75,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+900,76,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+901,76,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+902,76,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+903,76,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+904,76,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+905,76,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+906,76,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+907,76,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+908,76,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+909,76,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+910,76,roofward,arrival court,arrival court,arrival court,1,arrival court,True,True,ssrm.v40.path.roofward
+911,76,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+912,77,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+913,77,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+914,77,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+915,77,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+916,77,roofward,arrival court,glass stair,arrival court > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+917,77,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+918,77,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+919,77,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+920,77,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+921,77,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+922,77,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+923,77,archive,memory desk,ink niche,memory desk > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+924,78,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+925,78,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+926,78,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+927,78,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+928,78,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+929,78,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+930,78,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+931,78,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+932,78,repair_ring,arrival court,wire bench,arrival court > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+933,78,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+934,78,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+935,78,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+936,79,signal,lens room,signal perch,lens room > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+937,79,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+938,79,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+939,79,riverbend,arrival court,wet crossing,arrival court > plank hall > wet crossing,3,plank hall,True,True,ssrm.v40.path.riverbend
+940,79,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+941,79,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+942,79,signal,signal perch,lantern walk,signal perch > lens room > lantern walk,3,lens room,True,True,ssrm.v40.path.signal
+943,79,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+944,79,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+945,79,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+946,79,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+947,79,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+948,80,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+949,80,repair_ring,spark lane,wire bench,spark lane > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+950,80,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+951,80,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+952,80,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+953,80,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+954,80,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+955,80,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+956,80,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+957,80,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+958,80,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+959,80,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+960,81,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+961,81,repair_ring,spark lane,wire bench,spark lane > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+962,81,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+963,81,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+964,81,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+965,81,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+966,81,orchard,seed lane,mud row,seed lane > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+967,81,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+968,81,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+969,81,roofward,sun sill,arrival court,sun sill > warm lane > glass stair > arrival court,4,warm lane,True,True,ssrm.v40.path.roofward
+970,81,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+971,81,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+972,82,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+973,82,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+974,82,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+975,82,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+976,82,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+977,82,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+978,82,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+979,82,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+980,82,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+981,82,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+982,82,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+983,82,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+984,83,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+985,83,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+986,83,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+987,83,roofward,arrival court,warm lane,arrival court > glass stair > warm lane,3,glass stair,True,True,ssrm.v40.path.roofward
+988,83,archive,ink niche,spool room,ink niche > spool room,2,spool room,True,True,ssrm.v40.path.archive
+989,83,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+990,83,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+991,83,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+992,83,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+993,83,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+994,83,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+995,83,signal,lens room,signal perch,lens room > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+996,84,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+997,84,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+998,84,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+999,84,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1000,84,archive,stone stacks,ink niche,stone stacks > spool room > ink niche,3,spool room,True,True,ssrm.v40.path.archive
+1001,84,signal,signal perch,lantern walk,signal perch > lens room > lantern walk,3,lens room,True,True,ssrm.v40.path.signal
+1002,84,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+1003,84,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1004,84,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+1005,84,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+1006,84,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+1007,84,signal,lens room,arrival court,lens room > lantern walk > mast base > arrival court,4,lantern walk,True,True,ssrm.v40.path.signal
+1008,85,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+1009,85,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+1010,85,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+1011,85,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+1012,85,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1013,85,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+1014,85,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+1015,85,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+1016,85,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+1017,85,roofward,ledger loft,warm lane,ledger loft > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1018,85,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+1019,85,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+1020,86,orchard,mud row,seed lane,mud row > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+1021,86,repair_ring,spark lane,wire bench,spark lane > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+1022,86,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1023,86,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+1024,86,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+1025,86,signal,arrival court,mast base,arrival court > mast base,2,mast base,True,True,ssrm.v40.path.signal
+1026,86,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+1027,86,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+1028,86,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1029,86,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1030,86,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+1031,86,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1032,87,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+1033,87,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+1034,87,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1035,87,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+1036,87,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+1037,87,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1038,87,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+1039,87,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+1040,87,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1041,87,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+1042,87,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1043,87,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+1044,88,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+1045,88,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1046,88,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+1047,88,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1048,88,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1049,88,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+1050,88,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+1051,88,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1052,88,roofward,arrival court,glass stair,arrival court > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+1053,88,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1054,88,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+1055,88,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1056,89,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1057,89,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+1058,89,roofward,glass stair,ledger loft,glass stair > warm lane > ledger loft,3,warm lane,True,True,ssrm.v40.path.roofward
+1059,89,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+1060,89,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1061,89,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1062,89,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1063,89,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1064,89,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1065,89,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1066,89,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+1067,89,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+1068,90,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1069,90,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+1070,90,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1071,90,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1072,90,signal,mast base,signal perch,mast base > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+1073,90,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1074,90,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+1075,90,riverbend,dry ridge,wet crossing,dry ridge > plank hall > wet crossing,3,plank hall,True,True,ssrm.v40.path.riverbend
+1076,90,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+1077,90,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1078,90,signal,signal perch,arrival court,signal perch > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+1079,90,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+1080,91,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1081,91,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+1082,91,roofward,glass stair,ledger loft,glass stair > warm lane > ledger loft,3,warm lane,True,True,ssrm.v40.path.roofward
+1083,91,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1084,91,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+1085,91,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1086,91,repair_ring,cool corner,spark lane,cool corner > wire bench > spark lane,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1087,91,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+1088,91,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1089,91,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+1090,91,signal,arrival court,arrival court,arrival court,1,arrival court,True,True,ssrm.v40.path.signal
+1091,91,orchard,satchel shed,mud row,satchel shed > mud row,2,mud row,True,True,ssrm.v40.path.orchard
+1092,92,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+1093,92,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+1094,92,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1095,92,archive,stone stacks,arrival court,stone stacks > arrival court,2,arrival court,True,True,ssrm.v40.path.archive
+1096,92,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+1097,92,orchard,mud row,mud row,mud row,1,mud row,True,True,ssrm.v40.path.orchard
+1098,92,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+1099,92,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+1100,92,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+1101,92,archive,arrival court,stone stacks,arrival court > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1102,92,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1103,92,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1104,93,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+1105,93,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1106,93,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1107,93,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+1108,93,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1109,93,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+1110,93,repair_ring,bell alcove,bell alcove,bell alcove,1,bell alcove,True,True,ssrm.v40.path.repair_ring
+1111,93,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1112,93,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+1113,93,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1114,93,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+1115,93,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1116,94,repair_ring,bell alcove,wire bench,bell alcove > spark lane > wire bench,3,spark lane,True,True,ssrm.v40.path.repair_ring
+1117,94,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1118,94,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+1119,94,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1120,94,signal,lens room,lens room,lens room,1,lens room,True,True,ssrm.v40.path.signal
+1121,94,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1122,94,repair_ring,spark lane,arrival court,spark lane > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1123,94,riverbend,kit alcove,plank hall,kit alcove > dry ridge > plank hall,3,dry ridge,True,True,ssrm.v40.path.riverbend
+1124,94,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1125,94,archive,stone stacks,ink niche,stone stacks > spool room > ink niche,3,spool room,True,True,ssrm.v40.path.archive
+1126,94,signal,lens room,lantern walk,lens room > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1127,94,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+1128,95,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1129,95,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1130,95,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1131,95,archive,spool room,memory desk,spool room > stone stacks > memory desk,3,stone stacks,True,True,ssrm.v40.path.archive
+1132,95,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+1133,95,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1134,95,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+1135,95,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+1136,95,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+1137,95,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1138,95,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1139,95,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+1140,96,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1141,96,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1142,96,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1143,96,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+1144,96,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1145,96,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+1146,96,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+1147,96,roofward,warm lane,glass stair,warm lane > glass stair,2,glass stair,True,True,ssrm.v40.path.roofward
+1148,96,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1149,96,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1150,96,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+1151,96,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1152,97,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+1153,97,roofward,glass stair,ledger loft,glass stair > warm lane > ledger loft,3,warm lane,True,True,ssrm.v40.path.roofward
+1154,97,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1155,97,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+1156,97,orchard,market plank,seed lane,market plank > seed lane,2,seed lane,True,True,ssrm.v40.path.orchard
+1157,97,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1158,97,riverbend,wet crossing,dry ridge,wet crossing > plank hall > dry ridge,3,plank hall,True,True,ssrm.v40.path.riverbend
+1159,97,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+1160,97,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1161,97,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+1162,97,orchard,seed lane,arrival court,seed lane > arrival court,2,arrival court,True,True,ssrm.v40.path.orchard
+1163,97,repair_ring,cool corner,bell alcove,cool corner > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+1164,98,riverbend,plank hall,dry ridge,plank hall > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+1165,98,roofward,sun sill,warm lane,sun sill > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1166,98,archive,memory desk,arrival court,memory desk > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+1167,98,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1168,98,orchard,arrival court,mud row,arrival court > seed lane > mud row,3,seed lane,True,True,ssrm.v40.path.orchard
+1169,98,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1170,98,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+1171,98,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+1172,98,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1173,98,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1174,98,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+1175,98,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1176,99,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+1177,99,roofward,glass stair,arrival court,glass stair > arrival court,2,arrival court,True,True,ssrm.v40.path.roofward
+1178,99,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1179,99,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1180,99,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1181,99,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1182,99,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+1183,99,roofward,arrival court,warm lane,arrival court > glass stair > warm lane,3,glass stair,True,True,ssrm.v40.path.roofward
+1184,99,archive,stone stacks,spool room,stone stacks > spool room,2,spool room,True,True,ssrm.v40.path.archive
+1185,99,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+1186,99,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1187,99,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1188,100,riverbend,arrival court,kit alcove,arrival court > plank hall > wet crossing > kit alcove,4,plank hall,True,True,ssrm.v40.path.riverbend
+1189,100,roofward,glass stair,glass stair,glass stair,1,glass stair,True,True,ssrm.v40.path.roofward
+1190,100,archive,spool room,spool room,spool room,1,spool room,True,True,ssrm.v40.path.archive
+1191,100,signal,mast base,lens room,mast base > lantern walk > lens room,3,lantern walk,True,True,ssrm.v40.path.signal
+1192,100,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1193,100,repair_ring,wire bench,arrival court,wire bench > arrival court,2,arrival court,True,True,ssrm.v40.path.repair_ring
+1194,100,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+1195,100,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1196,100,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+1197,100,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1198,100,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+1199,100,repair_ring,arrival court,cool corner,arrival court > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1200,101,riverbend,plank hall,plank hall,plank hall,1,plank hall,True,True,ssrm.v40.path.riverbend
+1201,101,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1202,101,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+1203,101,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1204,101,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+1205,101,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+1206,101,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+1207,101,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+1208,101,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+1209,101,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+1210,101,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+1211,101,repair_ring,spark lane,spark lane,spark lane,1,spark lane,True,True,ssrm.v40.path.repair_ring
+1212,102,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+1213,102,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+1214,102,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1215,102,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1216,102,orchard,seed lane,seed lane,seed lane,1,seed lane,True,True,ssrm.v40.path.orchard
+1217,102,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1218,102,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1219,102,roofward,ledger loft,sun sill,ledger loft > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+1220,102,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1221,102,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+1222,102,orchard,seed lane,arrival court,seed lane > arrival court,2,arrival court,True,True,ssrm.v40.path.orchard
+1223,102,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+1224,103,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+1225,103,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+1226,103,archive,memory desk,memory desk,memory desk,1,memory desk,True,True,ssrm.v40.path.archive
+1227,103,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+1228,103,orchard,arrival court,satchel shed,arrival court > seed lane > mud row > satchel shed,4,seed lane,True,True,ssrm.v40.path.orchard
+1229,103,repair_ring,spark lane,bell alcove,spark lane > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+1230,103,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1231,103,roofward,sun sill,glass stair,sun sill > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+1232,103,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1233,103,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1234,103,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+1235,103,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1236,104,roofward,warm lane,sun sill,warm lane > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+1237,104,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1238,104,signal,lantern walk,mast base,lantern walk > mast base,2,mast base,True,True,ssrm.v40.path.signal
+1239,104,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1240,104,repair_ring,cool corner,bell alcove,cool corner > bell alcove,2,bell alcove,True,True,ssrm.v40.path.repair_ring
+1241,104,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1242,104,roofward,sun sill,glass stair,sun sill > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+1243,104,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1244,104,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1245,104,orchard,satchel shed,market plank,satchel shed > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+1246,104,repair_ring,bell alcove,cool corner,bell alcove > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1247,104,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+1248,105,roofward,warm lane,arrival court,warm lane > glass stair > arrival court,3,glass stair,True,True,ssrm.v40.path.roofward
+1249,105,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1250,105,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1251,105,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1252,105,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1253,105,riverbend,dry ridge,arrival court,dry ridge > plank hall > arrival court,3,plank hall,True,True,ssrm.v40.path.riverbend
+1254,105,roofward,glass stair,warm lane,glass stair > warm lane,2,warm lane,True,True,ssrm.v40.path.roofward
+1255,105,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+1256,105,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+1257,105,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1258,105,repair_ring,cool corner,cool corner,cool corner,1,cool corner,True,True,ssrm.v40.path.repair_ring
+1259,105,riverbend,plank hall,arrival court,plank hall > arrival court,2,arrival court,True,True,ssrm.v40.path.riverbend
+1260,106,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1261,106,archive,ink niche,spool room,ink niche > spool room,2,spool room,True,True,ssrm.v40.path.archive
+1262,106,signal,lens room,mast base,lens room > lantern walk > mast base,3,lantern walk,True,True,ssrm.v40.path.signal
+1263,106,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1264,106,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1265,106,riverbend,arrival court,kit alcove,arrival court > plank hall > wet crossing > kit alcove,4,plank hall,True,True,ssrm.v40.path.riverbend
+1266,106,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1267,106,archive,spool room,ink niche,spool room > ink niche,2,ink niche,True,True,ssrm.v40.path.archive
+1268,106,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+1269,106,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1270,106,repair_ring,wire bench,wire bench,wire bench,1,wire bench,True,True,ssrm.v40.path.repair_ring
+1271,106,riverbend,plank hall,wet crossing,plank hall > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+1272,107,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1273,107,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+1274,107,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1275,107,orchard,satchel shed,arrival court,satchel shed > market plank > seed lane > arrival court,4,market plank,True,True,ssrm.v40.path.orchard
+1276,107,repair_ring,wire bench,spark lane,wire bench > spark lane,2,spark lane,True,True,ssrm.v40.path.repair_ring
+1277,107,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1278,107,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+1279,107,archive,ink niche,ink niche,ink niche,1,ink niche,True,True,ssrm.v40.path.archive
+1280,107,signal,lantern walk,arrival court,lantern walk > mast base > arrival court,3,mast base,True,True,ssrm.v40.path.signal
+1281,107,orchard,market plank,satchel shed,market plank > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1282,107,repair_ring,spark lane,spark lane,spark lane,1,spark lane,True,True,ssrm.v40.path.repair_ring
+1283,107,riverbend,kit alcove,dry ridge,kit alcove > dry ridge,2,dry ridge,True,True,ssrm.v40.path.riverbend
+1284,108,roofward,ledger loft,ledger loft,ledger loft,1,ledger loft,True,True,ssrm.v40.path.roofward
+1285,108,archive,ink niche,spool room,ink niche > spool room,2,spool room,True,True,ssrm.v40.path.archive
+1286,108,signal,mast base,arrival court,mast base > arrival court,2,arrival court,True,True,ssrm.v40.path.signal
+1287,108,orchard,satchel shed,seed lane,satchel shed > market plank > seed lane,3,market plank,True,True,ssrm.v40.path.orchard
+1288,108,repair_ring,spark lane,spark lane,spark lane,1,spark lane,True,True,ssrm.v40.path.repair_ring
+1289,108,riverbend,dry ridge,dry ridge,dry ridge,1,dry ridge,True,True,ssrm.v40.path.riverbend
+1290,108,roofward,ledger loft,sun sill,ledger loft > sun sill,2,sun sill,True,True,ssrm.v40.path.roofward
+1291,108,archive,spool room,arrival court,spool room > stone stacks > arrival court,3,stone stacks,True,True,ssrm.v40.path.archive
+1292,108,signal,arrival court,lantern walk,arrival court > mast base > lantern walk,3,mast base,True,True,ssrm.v40.path.signal
+1293,108,orchard,market plank,mud row,market plank > seed lane > mud row,3,seed lane,True,True,ssrm.v40.path.orchard
+1294,108,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1295,108,riverbend,dry ridge,kit alcove,dry ridge > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1296,109,roofward,sun sill,sun sill,sun sill,1,sun sill,True,True,ssrm.v40.path.roofward
+1297,109,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1298,109,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+1299,109,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+1300,109,repair_ring,wire bench,bell alcove,wire bench > spark lane > bell alcove,3,spark lane,True,True,ssrm.v40.path.repair_ring
+1301,109,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1302,109,roofward,sun sill,glass stair,sun sill > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+1303,109,archive,memory desk,stone stacks,memory desk > stone stacks,2,stone stacks,True,True,ssrm.v40.path.archive
+1304,109,signal,mast base,lantern walk,mast base > lantern walk,2,lantern walk,True,True,ssrm.v40.path.signal
+1305,109,orchard,mud row,market plank,mud row > seed lane > market plank,3,seed lane,True,True,ssrm.v40.path.orchard
+1306,109,repair_ring,spark lane,cool corner,spark lane > wire bench > cool corner,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1307,109,riverbend,kit alcove,kit alcove,kit alcove,1,kit alcove,True,True,ssrm.v40.path.riverbend
+1308,110,roofward,warm lane,ledger loft,warm lane > ledger loft,2,ledger loft,True,True,ssrm.v40.path.roofward
+1309,110,archive,stone stacks,stone stacks,stone stacks,1,stone stacks,True,True,ssrm.v40.path.archive
+1310,110,signal,lantern walk,lantern walk,lantern walk,1,lantern walk,True,True,ssrm.v40.path.signal
+1311,110,orchard,seed lane,market plank,seed lane > market plank,2,market plank,True,True,ssrm.v40.path.orchard
+1312,110,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1313,110,riverbend,kit alcove,arrival court,kit alcove > dry ridge > plank hall > arrival court,4,dry ridge,True,True,ssrm.v40.path.riverbend
+1314,110,roofward,ledger loft,glass stair,ledger loft > warm lane > glass stair,3,warm lane,True,True,ssrm.v40.path.roofward
+1315,110,archive,stone stacks,memory desk,stone stacks > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1316,110,signal,lantern walk,lens room,lantern walk > lens room,2,lens room,True,True,ssrm.v40.path.signal
+1317,110,orchard,market plank,arrival court,market plank > seed lane > arrival court,3,seed lane,True,True,ssrm.v40.path.orchard
+1318,110,repair_ring,cool corner,arrival court,cool corner > wire bench > arrival court,3,wire bench,True,True,ssrm.v40.path.repair_ring
+1319,110,riverbend,dry ridge,plank hall,dry ridge > plank hall,2,plank hall,True,True,ssrm.v40.path.riverbend
+1320,111,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1321,111,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+1322,111,signal,lens room,mast base,lens room > lantern walk > mast base,3,lantern walk,True,True,ssrm.v40.path.signal
+1323,111,orchard,seed lane,satchel shed,seed lane > mud row > satchel shed,3,mud row,True,True,ssrm.v40.path.orchard
+1324,111,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1325,111,riverbend,plank hall,kit alcove,plank hall > wet crossing > kit alcove,3,wet crossing,True,True,ssrm.v40.path.riverbend
+1326,111,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1327,111,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1328,111,signal,lantern walk,signal perch,lantern walk > mast base > signal perch,3,mast base,True,True,ssrm.v40.path.signal
+1329,111,orchard,mud row,satchel shed,mud row > satchel shed,2,satchel shed,True,True,ssrm.v40.path.orchard
+1330,111,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+1331,111,riverbend,wet crossing,wet crossing,wet crossing,1,wet crossing,True,True,ssrm.v40.path.riverbend
+1332,112,archive,memory desk,spool room,memory desk > ink niche > spool room,3,ink niche,True,True,ssrm.v40.path.archive
+1333,112,signal,mast base,mast base,mast base,1,mast base,True,True,ssrm.v40.path.signal
+1334,112,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1335,112,repair_ring,wire bench,cool corner,wire bench > cool corner,2,cool corner,True,True,ssrm.v40.path.repair_ring
+1336,112,riverbend,wet crossing,kit alcove,wet crossing > kit alcove,2,kit alcove,True,True,ssrm.v40.path.riverbend
+1337,112,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward
+1338,112,archive,ink niche,memory desk,ink niche > memory desk,2,memory desk,True,True,ssrm.v40.path.archive
+1339,112,signal,mast base,signal perch,mast base > signal perch,2,signal perch,True,True,ssrm.v40.path.signal
+1340,112,orchard,satchel shed,satchel shed,satchel shed,1,satchel shed,True,True,ssrm.v40.path.orchard
+1341,112,repair_ring,cool corner,wire bench,cool corner > wire bench,2,wire bench,True,True,ssrm.v40.path.repair_ring
+1342,112,riverbend,kit alcove,wet crossing,kit alcove > wet crossing,2,wet crossing,True,True,ssrm.v40.path.riverbend
+1343,112,roofward,warm lane,warm lane,warm lane,1,warm lane,True,True,ssrm.v40.path.roofward

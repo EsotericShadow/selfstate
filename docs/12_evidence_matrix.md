@@ -1506,3 +1506,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_browser_smoke.json`, and `docs/355_ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_report.md`.
 - Browser result: before `Wait offscreen` the summary is empty; after waiting it shows `Avatar-caused` and `Resident-caused` lines, binds to `milo-offscreen-water-jars`, names schedule `pending` and debt `outstanding`, and reload preserves the same summary.
 - Boundary: browser-local deterministic absent-time summary only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 356 Evidence Matrix Entry
+
+- Claim: absent-time consequences now require an explicit bounded player choice and preserve the unchosen causal thread.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt_browser_smoke.json`, and `docs/356_ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt_report.md`.
+- Browser result: after `Wait offscreen`, the Absent choice panel shows `avatar-absence-thread avatar-caused pending` and `milo-offscreen-water-jars resident-caused pending`; choosing the resident thread records a receipt while the avatar thread remains pending; resolving the resident obligation records resolved schedule/debt state while preserving the avatar thread as pending through reload.
+- Boundary: browser-local deterministic absent-time choice receipt only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

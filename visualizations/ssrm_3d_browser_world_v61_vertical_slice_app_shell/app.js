@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -72,6 +72,8 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   debtLedger: [],
   offscreenObligationEvents: [],
   absentTimeSummary: null,
+  absentTimeThreads: [],
+  absentTimeChoiceReceipt: null,
   selectedObligationId: null,
   lastQA: []
 }));
@@ -151,6 +153,25 @@ function renderAbsentTimeSummary() {
     `Before choosing: ${world.absentTimeSummary.beforeChoice}`
   ].join('\n');
 }
+function renderAbsentTimeChoice() {
+  const node = document.getElementById('absentTimeChoiceOut');
+  if (!node) return;
+  const threads = world.absentTimeThreads || [];
+  if (!world.absentTimeSummary || threads.length === 0) {
+    node.textContent = 'No absent-time choice yet.';
+    return;
+  }
+  const receipt = world.absentTimeChoiceReceipt;
+  const pendingUnchosen = receipt
+    ? threads.filter(thread => thread.id !== receipt.chosenThreadId && thread.status === 'pending').map(thread => thread.id)
+    : threads.map(thread => thread.id);
+  node.textContent = [
+    `Threads: ${threads.map(thread => `${thread.id} ${thread.source} ${thread.status}`).join('; ')}`,
+    receipt ? `Choice: ${receipt.chosenThreadId} / ${receipt.chosenSource} / ${receipt.phase}` : 'Choice: no thread chosen yet',
+    `Unchosen pending: ${pendingUnchosen.length ? pendingUnchosen.join('; ') : 'none'}`,
+    receipt ? `Receipt: ${receipt.visibleStatus}` : 'Receipt: waiting for bounded choice'
+  ].join('\n');
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -163,6 +184,7 @@ function log(event, payload) {
   renderObligationList();
   renderScheduleDebtIntegration();
   renderAbsentTimeSummary();
+  renderAbsentTimeChoice();
   return row;
 }
 function mutateResident(name, delta) {
@@ -397,7 +419,99 @@ function updateAbsentTimeSummary(offscreenEvent) {
     debtLedgerStatus: debtRow ? debtRow.status : 'missing',
     boundary: 'browser-local-absent-time-summary-only'
   };
+  world.absentTimeThreads = buildAbsentTimeThreads(event, obligation);
+  world.absentTimeChoiceReceipt = null;
   return world.absentTimeSummary;
+}
+function buildAbsentTimeThreads(event, obligation) {
+  const existingThreads = world.absentTimeThreads || [];
+  const existingAvatarThread = existingThreads.find(thread => thread.id === 'avatar-absence-thread');
+  const existingResidentThread = existingThreads.find(thread => thread.id === event.obligationId);
+  return [
+    {
+      id: 'avatar-absence-thread',
+      reportIntroduced: 356,
+      source: 'avatar-caused',
+      status: existingAvatarThread ? existingAvatarThread.status : 'pending',
+      label: 'avatar chose Wait offscreen and must decide whether to account for absence first',
+      boundary: 'browser-local-absent-time-choice-thread-only'
+    },
+    {
+      id: event.obligationId,
+      reportIntroduced: 356,
+      source: 'resident-caused',
+      status: existingResidentThread ? existingResidentThread.status : 'pending',
+      label: `${event.actor} changed ${event.target}'s obligation while avatar absent`,
+      obligationStatus: obligation ? obligation.status : 'missing',
+      boundary: 'browser-local-absent-time-choice-thread-only'
+    }
+  ];
+}
+function ensureAbsentTimeThreads() {
+  if ((!world.absentTimeThreads || world.absentTimeThreads.length === 0) && world.absentTimeSummary) {
+    const event = (world.offscreenObligationEvents || []).find(row => row.obligationId === world.absentTimeSummary.obligationId);
+    if (event) {
+      const obligation = (world.obligationLedger || []).find(row => row.id === event.obligationId);
+      world.absentTimeThreads = buildAbsentTimeThreads(event, obligation);
+    }
+  }
+  return world.absentTimeThreads || [];
+}
+function chooseAbsentTimeThread(threadId) {
+  const threads = ensureAbsentTimeThreads();
+  const chosen = threads.find(thread => thread.id === threadId);
+  if (!chosen) return log('chooseAbsentTimeThread', { chosen: false, reason: 'no absent-time thread', threadId, boundary: BOUNDARY });
+  threads.forEach(thread => {
+    thread.status = thread.id === threadId ? 'chosen' : 'pending';
+  });
+  if (threadId !== 'avatar-absence-thread') world.selectedObligationId = threadId;
+  const unchosen = threads.filter(thread => thread.id !== threadId);
+  world.absentTimeChoiceReceipt = {
+    reportIntroduced: 356,
+    phase: 'thread-choice-recorded',
+    chosenThreadId: threadId,
+    chosenSource: chosen.source,
+    chosenAction: chosen.source === 'avatar-caused' ? 'acknowledge avatar-caused absence first' : 'handle resident-caused offscreen obligation first',
+    unchosenThreadIds: unchosen.map(thread => thread.id),
+    unchosenThreadStatus: unchosen.map(thread => `${thread.id}: ${thread.status}`),
+    visibleStatus: `${chosen.source} chosen first; unchosen remains ${unchosen.map(thread => `${thread.id} ${thread.status}`).join('; ')}`,
+    boundary: 'browser-local-absent-time-choice-receipt-only'
+  };
+  return log('chooseAbsentTimeThread', { chosen: true, absentTimeChoiceReceipt: world.absentTimeChoiceReceipt, absentTimeThreads: threads, boundary: BOUNDARY });
+}
+function handleAvatarAbsenceFirst() {
+  return chooseAbsentTimeThread('avatar-absence-thread');
+}
+function handleResidentOffscreenFirst() {
+  const event = (world.offscreenObligationEvents || [])[world.offscreenObligationEvents.length - 1];
+  const threadId = world.absentTimeSummary ? world.absentTimeSummary.obligationId : event && event.obligationId;
+  return chooseAbsentTimeThread(threadId || 'missing-resident-thread');
+}
+function recordObligationChoiceOutcome(obligation, action, linkedLedger) {
+  if (!world.absentTimeSummary || world.absentTimeSummary.obligationId !== obligation.id) return null;
+  const threads = ensureAbsentTimeThreads();
+  const residentThread = threads.find(thread => thread.id === obligation.id);
+  const avatarThread = threads.find(thread => thread.id === 'avatar-absence-thread');
+  if (residentThread) residentThread.status = action === 'resolve' ? 'resolved' : 'deferred';
+  if (avatarThread && avatarThread.status !== 'chosen') avatarThread.status = 'pending';
+  const scheduleRow = linkedLedger && linkedLedger.scheduleRow ? linkedLedger.scheduleRow : null;
+  const debtRow = linkedLedger && linkedLedger.debtRow ? linkedLedger.debtRow : null;
+  world.absentTimeChoiceReceipt = {
+    reportIntroduced: 356,
+    phase: 'obligation-action-recorded',
+    chosenThreadId: obligation.id,
+    chosenSource: 'resident-caused',
+    chosenAction: action,
+    unchosenThreadIds: avatarThread ? [avatarThread.id] : [],
+    unchosenThreadStatus: avatarThread ? [`${avatarThread.id}: ${avatarThread.status}`] : [],
+    residentThreadStatus: residentThread ? residentThread.status : 'missing',
+    avatarAbsenceStatus: avatarThread ? avatarThread.status : 'missing',
+    scheduleQueueStatus: scheduleRow ? scheduleRow.status : 'missing',
+    debtLedgerStatus: debtRow ? debtRow.status : 'missing',
+    visibleStatus: `resident-caused offscreen obligation ${action}; avatar-caused absence thread ${avatarThread ? avatarThread.status : 'missing'}`,
+    boundary: 'browser-local-absent-time-choice-receipt-only'
+  };
+  return world.absentTimeChoiceReceipt;
 }
 function selectedObligation() {
   const obligations = world.obligationLedger || [];
@@ -425,7 +539,8 @@ function resolveSelectedObligation() {
     historyDetail: 'bounded action resolved selected follow-up'
   });
   const linkedLedger = syncScheduleDebtFromObligation(obligation, 'resolve');
-  return log('resolveSelectedObligation', { resolved: true, obligation, linkedLedger, boundedAction: true, boundary: BOUNDARY });
+  const absentTimeChoiceReceipt = recordObligationChoiceOutcome(obligation, 'resolve', linkedLedger);
+  return log('resolveSelectedObligation', { resolved: true, obligation, linkedLedger, absentTimeChoiceReceipt, boundedAction: true, boundary: BOUNDARY });
 }
 function deferSelectedObligation() {
   const obligation = selectedObligation();
@@ -447,7 +562,8 @@ function deferSelectedObligation() {
     historyDetail: 'bounded action deferred selected follow-up'
   });
   const linkedLedger = syncScheduleDebtFromObligation(obligation, 'defer');
-  return log('deferSelectedObligation', { deferred: true, obligation, linkedLedger, boundedAction: true, boundary: BOUNDARY });
+  const absentTimeChoiceReceipt = recordObligationChoiceOutcome(obligation, 'defer', linkedLedger);
+  return log('deferSelectedObligation', { deferred: true, obligation, linkedLedger, absentTimeChoiceReceipt, boundedAction: true, boundary: BOUNDARY });
 }
 function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); recordCheckpoint('manual save'); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
 function restoreWorld() {
@@ -489,6 +605,8 @@ function runStateBoundaryAudit() {
     debtLedger: world.debtLedger,
     offscreenObligationEvents: world.offscreenObligationEvents,
     absentTimeSummary: world.absentTimeSummary,
+    absentTimeThreads: world.absentTimeThreads,
+    absentTimeChoiceReceipt: world.absentTimeChoiceReceipt,
     selectedObligationId: world.selectedObligationId,
     replay: world.replay.map(row => ({
       event: row.event,
@@ -588,6 +706,7 @@ function bindControls() {
   renderObligationList();
   renderScheduleDebtIntegration();
   renderAbsentTimeSummary();
+  renderAbsentTimeChoice();
 }
 function readResidentHistory() {
   try {

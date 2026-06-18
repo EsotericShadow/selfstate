@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+356,pass,1.0,1.0,post-356: let the player handle the still-pending avatar-caused absence thread with a small accountability action without erasing the resident-caused offscreen obligation history

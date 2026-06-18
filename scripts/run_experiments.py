@@ -4065,6 +4065,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v113_primary_shell_obligation_schedule_debt_integration",
         "experiments.ssrm_3d_browser_world_v114_primary_shell_offscreen_cross_resident_obligation_persistence",
         "experiments.ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation",
+        "experiments.ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt",
         "--seed",
         "20270732",
     ],

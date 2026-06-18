@@ -2111,3 +2111,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 355: SSRM-3D Browser World v115 Absent-Time Summary Separation
 
 [Primary shell absent-time summary separation report](docs/355_ssrm_3d_browser_world_v115_primary_shell_absent_time_summary_separation_report.md): adds a visible Absent time dashboard summary that separates avatar-caused waiting from resident-caused offscreen obligation changes before the player chooses which obligation to handle.
+
+### Report 356: SSRM-3D Browser World v116 Absent-Time Choice Receipt
+
+[Primary shell absent-time choice receipt report](docs/356_ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt_report.md): records the player's bounded choice between the avatar-caused absence thread and the resident-caused offscreen obligation, then keeps the unchosen absent-time thread visibly pending through resolution and reload.

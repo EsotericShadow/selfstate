@@ -54,6 +54,7 @@
           <article><strong>Continuity</strong><span id="returnContinuityOut"></span></article>
           <article><strong>Follow-up</strong><span id="promiseFollowUpOut"></span></article>
           <article><strong>Absent time</strong><span id="absentTimeSummaryOut"></span></article>
+          <article><strong>Absent choice</strong><span id="absentTimeChoiceOut"></span></article>
           <article><strong>Schedule queue</strong><span id="scheduleQueueOut"></span></article>
           <article><strong>Debt ledger</strong><span id="debtLedgerOut"></span></article>
           <article><strong>Replay</strong><span id="replayOut"></span></article>
@@ -62,6 +63,8 @@
         <div class="obligation-actions" role="group" aria-label="remembered obligation actions">
           <label for="obligationSelect">Remembered obligation</label>
           <select id="obligationSelect"></select>
+          <button data-action="handleAvatarAbsenceFirst">Handle avatar absence</button>
+          <button data-action="handleResidentOffscreenFirst">Handle resident obligation</button>
           <button data-action="resolveSelectedObligation">Resolve obligation</button>
           <button data-action="deferSelectedObligation">Defer obligation</button>
           <pre id="obligationListOut"></pre>

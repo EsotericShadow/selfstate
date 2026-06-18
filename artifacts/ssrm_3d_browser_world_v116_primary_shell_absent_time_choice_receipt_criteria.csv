@@ -1,0 +1,29 @@
+criterion,passed,score,evidence
+report_355_absent_summary_gate_passing,True,1.0,Report 355 verdict=pass weakest=1.0
+source_exposes_choice_receipt_state,True,1.0,"app.js exposes absent-time threads, receipt state, render, and boundary"
+source_exposes_bounded_choice_actions,True,1.0,app.js exposes bounded thread-choice and outcome hooks
+visible_choice_panel_wired,True,1.0,index.html exposes Absent choice panel and two bounded buttons
+summary_creates_two_choice_threads,True,1.0,updateAbsentTimeSummary creates avatar and resident threads before choice
+resolve_defer_record_choice_outcome,True,1.0,resolve/defer updates absent-time choice receipt
+browser_smoke_artifact_exists,True,1.0,artifacts/ssrm_3d_browser_world_v116_primary_shell_absent_time_choice_receipt_browser_smoke.json
+browser_smoke_used_maintained_shell,True,1.0,http://127.0.0.1:8775/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html
+before_offscreen_choice_empty,True,1.0,No absent-time choice yet.
+after_offscreen_two_pending_threads_visible,True,1.0,"Threads: avatar-absence-thread avatar-caused pending; milo-offscreen-water-jars resident-caused pending
+Choice: no thread chosen yet
+Unchosen pending: avatar-absence-thread; milo-offscreen-water-jars
+Receipt: waiting for bounded choice"
+resident_thread_choice_records_receipt,True,1.0,"receipt={'chosenThreadId': 'milo-offscreen-water-jars', 'chosenSource': 'resident-caused', 'phase': 'thread-choice-recorded', 'residentThreadStatus': 'chosen', 'avatarAbsenceStatus': 'pending', 'scheduleQueueStatus': '', 'debtLedgerStatus': '', 'visibleStatus': 'resident-caused chosen first; unchosen remains avatar-absence-thread pending'}"
+unchosen_avatar_thread_remains_pending,True,1.0,"threads=[{'id': 'avatar-absence-thread', 'source': 'avatar-caused', 'status': 'pending'}, {'id': 'milo-offscreen-water-jars', 'source': 'resident-caused', 'status': 'chosen'}] text=Threads: avatar-absence-thread avatar-caused pending; milo-offscreen-water-jars resident-caused chosen
+Choice: milo-offscreen-water-jars / resident-caused / thread-choice-recorded
+Unchosen pending: avatar-absence-thread
+Receipt: resident-caused chosen first; unchosen remains avatar-absence-thread pending"
+resolve_records_resident_outcome_without_erasing_avatar_thread,True,1.0,"receipt={'chosenThreadId': 'milo-offscreen-water-jars', 'chosenSource': 'resident-caused', 'phase': 'obligation-action-recorded', 'residentThreadStatus': 'resolved', 'avatarAbsenceStatus': 'pending', 'scheduleQueueStatus': 'resolved', 'debtLedgerStatus': 'settled', 'visibleStatus': 'resident-caused offscreen obligation resolve; avatar-caused absence thread pending'} threads=[{'id': 'avatar-absence-thread', 'source': 'avatar-caused', 'status': 'pending'}, {'id': 'milo-offscreen-water-jars', 'source': 'resident-caused', 'status': 'resolved'}]"
+resolve_links_schedule_debt_status,True,1.0,"receipt={'chosenThreadId': 'milo-offscreen-water-jars', 'chosenSource': 'resident-caused', 'phase': 'obligation-action-recorded', 'residentThreadStatus': 'resolved', 'avatarAbsenceStatus': 'pending', 'scheduleQueueStatus': 'resolved', 'debtLedgerStatus': 'settled', 'visibleStatus': 'resident-caused offscreen obligation resolve; avatar-caused absence thread pending'} schedule=milo-offscreen-water-jars: resolved / Milo schedule resolved: follow-up resolved: awning repair checked debt=milo-offscreen-water-jars: settled / debt 2 / Milo debt settled: 2 after resolve"
+choice_receipt_survives_reload,True,1.0,"receipt={'chosenThreadId': 'milo-offscreen-water-jars', 'chosenSource': 'resident-caused', 'phase': 'obligation-action-recorded', 'residentThreadStatus': 'resolved', 'avatarAbsenceStatus': 'pending', 'scheduleQueueStatus': 'resolved', 'debtLedgerStatus': 'settled', 'visibleStatus': 'resident-caused offscreen obligation resolve; avatar-caused absence thread pending'} text=Threads: avatar-absence-thread avatar-caused pending; milo-offscreen-water-jars resident-caused resolved
+Choice: milo-offscreen-water-jars / resident-caused / obligation-action-recorded
+Unchosen pending: avatar-absence-thread
+Receipt: resident-caused offscreen obligation resolve; avatar-caused absence thread pending"
+replay_logs_choice_and_resolution_receipts,True,1.0,replayHasChoiceReceipt=True summaryReloaded=True
+browser_console_clean,True,1.0,console error count=0
+experiment_index_includes_report_356,True,1.0,scripts/run_experiments.py includes Report 356 module
+claim_boundary_preserved,True,1.0,"Browser-local absent-time choice receipt over the maintained v61 shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, hosted URL proof, complete 3D engine, finished gameplay, or metaphysical claim."

@@ -1,0 +1,2 @@
+report,seed,verdict,readiness,weakest_channel_score,lifecycle_coverage_score,stale_repair_coverage_score,post_repair_use_score,input_report_pass_rate,input_weakest_channel_min,input_required_metric_min,source_binding_score,console_errors_total,criterion_count
+341,20270739,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,16

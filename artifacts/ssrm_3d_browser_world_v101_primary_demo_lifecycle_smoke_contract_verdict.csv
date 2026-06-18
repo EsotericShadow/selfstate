@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,next_gate
+341,pass,1.0,post-341: replace one-off lifecycle report generation with a single reusable primary-demo lifecycle smoke runner whenever future handoff changes are made

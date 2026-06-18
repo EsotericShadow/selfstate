@@ -1,0 +1,157 @@
+{
+  "input_reports": [
+    {
+      "artifact": "artifacts/ssrm_3d_browser_world_v95_primary_demo_cross_tab_handoff_continuity_bridge_results.json",
+      "console_errors": 0,
+      "exists": true,
+      "passed": true,
+      "phase": "cross_tab_prepared_resume_visible",
+      "readiness": 1.0,
+      "report": 335,
+      "required_metric_min": 1.0,
+      "required_metrics": {
+        "readiness": 1.0,
+        "weakest_channel_score": 1.0
+      },
+      "role": "fresh prepared handoff can be resumed from a second tab",
+      "verdict": "pass",
+      "weakest_channel_score": 1.0
+    },
+    {
+      "artifact": "artifacts/ssrm_3d_browser_world_v96_primary_demo_closed_origin_tab_handoff_continuity_bridge_results.json",
+      "console_errors": 0,
+      "exists": true,
+      "passed": true,
+      "phase": "closed_origin_tab_continuity",
+      "readiness": 1.0,
+      "report": 336,
+      "required_metric_min": 1.0,
+      "required_metrics": {
+        "readiness": 1.0,
+        "weakest_channel_score": 1.0
+      },
+      "role": "closed origin tab does not strand the prepared handoff",
+      "verdict": "pass",
+      "weakest_channel_score": 1.0
+    },
+    {
+      "artifact": "artifacts/ssrm_3d_browser_world_v97_primary_demo_closed_origin_tab_hard_reload_handoff_continuity_bridge_results.json",
+      "console_errors": 0,
+      "exists": true,
+      "passed": true,
+      "phase": "hard_reload_continuity",
+      "readiness": 1.0,
+      "report": 337,
+      "required_metric_min": 1.0,
+      "required_metrics": {
+        "readiness": 1.0,
+        "weakest_channel_score": 1.0
+      },
+      "role": "hard reload keeps the closed-origin handoff visible and usable",
+      "verdict": "pass",
+      "weakest_channel_score": 1.0
+    },
+    {
+      "artifact": "artifacts/ssrm_3d_browser_world_v98_primary_demo_stale_prepared_handoff_calibration_bridge_results.json",
+      "console_errors": 0,
+      "exists": true,
+      "passed": true,
+      "phase": "stale_supersession_calibration",
+      "readiness": 1.0,
+      "report": 338,
+      "required_metric_min": 1.0,
+      "required_metrics": {
+        "readiness": 1.0,
+        "weakest_channel_score": 1.0
+      },
+      "role": "stale prepared handoff is recognized as stale instead of blindly trusted",
+      "verdict": "pass",
+      "weakest_channel_score": 1.0
+    },
+    {
+      "artifact": "artifacts/ssrm_3d_browser_world_v99_primary_demo_stale_handoff_repair_reprepare_bridge_results.json",
+      "console_errors": 0,
+      "exists": true,
+      "passed": true,
+      "phase": "stale_reprepare_repair",
+      "readiness": 1.0,
+      "report": 339,
+      "required_metric_min": 1.0,
+      "required_metrics": {
+        "readiness": 1.0,
+        "weakest_channel_score": 1.0
+      },
+      "role": "stale mismatch can be repaired by re-preparing a clean handoff",
+      "verdict": "pass",
+      "weakest_channel_score": 1.0
+    },
+    {
+      "artifact": "artifacts/ssrm_3d_browser_world_v100_primary_demo_repaired_handoff_continue_return_freshness_bridge_results.json",
+      "console_errors": 0,
+      "exists": true,
+      "passed": true,
+      "phase": "repaired_continue_return_refresh",
+      "readiness": 1.0,
+      "report": 340,
+      "required_metric_min": 1.0,
+      "required_metrics": {
+        "post_return_freshness_score": 1.0,
+        "readiness": 1.0,
+        "repaired_continue_return_score": 1.0,
+        "weakest_channel_score": 1.0
+      },
+      "role": "repaired clean handoff remains fresh after continue, reviewer pass, return, refresh, and reload",
+      "verdict": "pass",
+      "weakest_channel_score": 1.0
+    }
+  ],
+  "metrics": {
+    "console_errors_total": 0,
+    "criterion_count": 16,
+    "input_report_pass_rate": 1.0,
+    "input_required_metric_min": 1.0,
+    "input_weakest_channel_min": 1.0,
+    "lifecycle_coverage_score": 1.0,
+    "post_repair_use_score": 1.0,
+    "readiness": 1.0,
+    "source_binding_score": 1.0,
+    "stale_repair_coverage_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-341: replace one-off lifecycle report generation with a single reusable primary-demo lifecycle smoke runner whenever future handoff changes are made",
+  "report": 341,
+  "seed": 20270739,
+  "source_bindings": [
+    {
+      "exists": true,
+      "passed": true,
+      "path": "visualizations/ssrm_3d_browser_world_primary_demo/demo.js",
+      "required_terms": {
+        "handoffPayloadFreshnessState": true,
+        "outsideReviewHandoffStatus": true,
+        "preparedHandoffHref": true,
+        "readableHandoffSummary": true,
+        "renderOutsideReviewHandoffActions": true
+      }
+    },
+    {
+      "exists": true,
+      "passed": true,
+      "path": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "required_terms": {
+        "outsideReviewHandoffActions": true,
+        "outsideReviewHandoffStatus": true
+      }
+    },
+    {
+      "exists": true,
+      "passed": true,
+      "path": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+      "required_terms": {
+        "outsideReviewHandoffActions": true,
+        "outsideReviewHandoffStatus": true
+      }
+    }
+  ],
+  "verdict": "pass"
+}

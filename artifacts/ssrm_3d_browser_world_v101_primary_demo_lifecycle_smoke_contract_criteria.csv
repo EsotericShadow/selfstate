@@ -1,0 +1,17 @@
+name,passed,score,channel,detail
+report_335_cross_tab_continuity_passed,True,1.0,fresh continuity,Report 335 fresh cross-tab prepared-resume evidence is present and passing.
+report_336_closed_origin_tab_continuity_passed,True,1.0,fresh continuity,Report 336 closed-origin-tab continuity evidence is present and passing.
+report_337_hard_reload_continuity_passed,True,1.0,fresh continuity,Report 337 hard-reload continuity evidence is present and passing.
+report_338_stale_calibration_passed,True,1.0,stale calibration,Report 338 stale-handoff calibration evidence is present and passing.
+report_339_stale_repair_passed,True,1.0,repair path,Report 339 stale-handoff repair evidence is present and passing.
+report_340_repaired_continue_return_passed,True,1.0,post-repair use,Report 340 repaired continue-return freshness evidence is present and passing.
+all_inputs_browser_console_clean,True,1.0,runtime hygiene,Aggregated browser console errors across input reports: 0.
+all_inputs_weakest_channel_full,True,1.0,evidence quality,Minimum input weakest-channel score is 1.000.
+all_required_metrics_full,True,1.0,evidence quality,Minimum required metric across lifecycle sources is 1.000.
+continuity_contract_covers_fresh_path,True,1.0,contract coverage,"Fresh continuity path covers cross-tab, closed-origin, and hard-reload phases."
+continuity_contract_covers_stale_path,True,1.0,contract coverage,Stale lifecycle path covers stale calibration and clean reprepare repair.
+continuity_contract_covers_repair_path,True,1.0,contract coverage,Repair path includes re-preparing a clean payload after stale mismatch detection.
+continuity_contract_covers_post_repair_use,True,1.0,contract coverage,"Post-repair path includes actual continue, return, refresh, and reload use."
+contract_has_single_future_smoke_surface,True,1.0,maintainability,The contract defines one complete lifecycle surface instead of one-off future variants.
+source_preserves_primary_demo_controls,True,1.0,source binding,Primary demo source still exposes the handoff status/action controls required by the contract.
+boundary_preserved,True,1.0,claim hygiene,The contract states browser-local/no-consciousness/no-production-persistence boundaries.

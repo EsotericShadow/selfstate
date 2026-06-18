@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+resident_history_panel_present,True,1.0,maintained shell exposes a visible Resident history panel,reviewers would still need raw trace JSON for resident continuity
+generated_source_of_truth,True,1.0,resident-history lane logic lives in the v61 generator,regeneration would erase resident-history UI hardening
+history_storage_registered,True,1.0,resident history has a named browser-local storage key,history continuity would be implicit or non-persistent
+history_bounded,True,1.0,history recording and visible display are bounded,resident history could grow unbounded or overwhelm the reviewer lane
+public_state_only,True,1.0,history rows use public resident summaries while existing audit forbids private/LLM keys,history lane might weaken the source-boundary discipline
+browser_workflow,True,1.0,browser workflow pass recorded as True,source checks alone would not prove the lane updates in a browser
+browser_selected_resident_history,True,1.0,"{'containsAri': True, 'containsBoundedPhrase': True, 'containsBorrowedTool': True, 'containsReturnedTool': True, 'containsDebtTrustProgress': True}",selected resident interactions would not be readable in the lane
+browser_offscreen_resident_history,True,1.0,"{'containsFay': True, 'containsMilo': True, 'containsOffscreenProgressRows': True, 'containsProgress': True}",offscreen resident progress would not be visible as continuity evidence
+browser_resume_persistence,True,1.0,"{'resumedWithoutReset': True, 'stillHasAriBorrow': True, 'stillHasAriReturn': True, 'stillHasOffscreenRows': True, 'selectedStillVisible': True}",resident history would not survive leave/return through the primary demo
+console_clean,True,1.0,browser console error count was 0,browser workflow produced runtime console errors

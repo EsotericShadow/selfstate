@@ -1,0 +1,85 @@
+{
+  "report": 311,
+  "url_start": "http://localhost:8770/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "clean_origin_strategy": "localhost:8770 clean origin for resident-history lane validation",
+  "workflow_pass": true,
+  "selected_resident_history_pass": true,
+  "offscreen_history_pass": true,
+  "resume_history_pass": true,
+  "console_errors": 0,
+  "initial_history": {
+    "debt": "1 / trust 0.580",
+    "label": "initial",
+    "memory": "met avatar at arrival court",
+    "residentHistory": "* Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+    "room": "arrival court / not entered",
+    "schedule": "repair awning / progress 0.360",
+    "selected": "Ari",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "url": "http://localhost:8770/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  },
+  "after_ari_history": {
+    "debt": "1 / trust 0.596",
+    "label": "after Ari direct interactions",
+    "memory": "avatar returned tool",
+    "residentHistory": "* Ari now: debt 1 / trust 0.596 / progress 0.360 / memory: avatar returned tool\n  t1 state update: heard bounded phrase greet -> debt 1 trust 0.592 progress 0.36\n  t2 state update: avatar borrowed tool -> debt 2 trust 0.574 progress 0.36\n  t3 state update: avatar returned tool -> debt 1 trust 0.596 progress 0.36\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+    "room": "arrival court / entered",
+    "schedule": "repair awning / progress 0.360",
+    "selected": "Ari",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "url": "http://localhost:8770/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  },
+  "after_offscreen_history": {
+    "debt": "1 / trust 0.595",
+    "label": "after offscreen wait",
+    "memory": "avatar returned tool",
+    "residentHistory": "* Ari now: debt 1 / trust 0.595 / progress 0.378 / memory: avatar returned tool\n  t1 state update: heard bounded phrase greet -> debt 1 trust 0.592 progress 0.36\n  t2 state update: avatar borrowed tool -> debt 2 trust 0.574 progress 0.36\n  t3 state update: avatar returned tool -> debt 1 trust 0.596 progress 0.36\n  t4 state update: trust/debt/progress changed -> debt 1 trust 0.595 progress 0.378\n  Fay now: debt 0 / trust 0.632 / progress 0.521 / memory: warned about wet route\n  t4 state update: trust/debt/progress changed -> debt 0 trust 0.632 progress 0.521\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\n  t4 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\n  t4 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\n  t4 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\n  t4 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503",
+    "room": "arrival court / entered",
+    "schedule": "repair awning / progress 0.378",
+    "selected": "Ari",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "url": "http://localhost:8770/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  },
+  "resumed_history": {
+    "debt": "1 / trust 0.595",
+    "label": "after resume",
+    "memory": "avatar returned tool",
+    "residentHistory": "* Ari now: debt 1 / trust 0.595 / progress 0.378 / memory: avatar returned tool\n  t1 state update: heard bounded phrase greet -> debt 1 trust 0.592 progress 0.36\n  t2 state update: avatar borrowed tool -> debt 2 trust 0.574 progress 0.36\n  t3 state update: avatar returned tool -> debt 1 trust 0.596 progress 0.36\n  t4 state update: trust/debt/progress changed -> debt 1 trust 0.595 progress 0.378\n  Fay now: debt 0 / trust 0.632 / progress 0.521 / memory: warned about wet route\n  t4 state update: trust/debt/progress changed -> debt 0 trust 0.632 progress 0.521\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\n  t4 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\n  t4 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\n  t4 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\n  t4 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503",
+    "room": "arrival court / entered",
+    "schedule": "repair awning / progress 0.378",
+    "selected": "Ari",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "url": "http://localhost:8770/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+  },
+  "raw_console_error_count": 0,
+  "console_error_details": [],
+  "selected_resident_history_evidence": {
+    "containsAri": true,
+    "containsBoundedPhrase": true,
+    "containsBorrowedTool": true,
+    "containsReturnedTool": true,
+    "containsDebtTrustProgress": true
+  },
+  "offscreen_history_evidence": {
+    "containsFay": true,
+    "containsMilo": true,
+    "containsOffscreenProgressRows": true,
+    "containsProgress": true
+  },
+  "resume_history_evidence": {
+    "resumedWithoutReset": true,
+    "stillHasAriBorrow": true,
+    "stillHasAriReturn": true,
+    "stillHasOffscreenRows": true,
+    "selectedStillVisible": true
+  },
+  "boundary_pass": true
+}

@@ -8,6 +8,8 @@ Report 309 uses that filtered ledger during a full primary-demo manual pass, fin
 
 Report 310 hardens the same maintained shell with reviewer-readable session transcript and checkpoint panels derived from public replay/save/restore state. This reduces reliance on raw JSON during reviews while preserving the no-private-workspace and no-consciousness-claim boundaries.
 
+Report 311 adds a compact resident-history lane to the maintained shell, recording bounded public trust/debt/progress/memory updates per resident. This makes resident continuity readable through the primary demo without claiming richer autonomy or subjective interiority.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

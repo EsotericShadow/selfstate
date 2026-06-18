@@ -101,6 +101,14 @@
       "state_key": "ssrm_v61_app_shell_saved_snapshot"
     },
     {
+      "allowed_mutations": "append bounded public resident interaction rows",
+      "audit_rule": "history rows contain public trust/debt/progress/memory summaries only",
+      "owner": "app.js",
+      "persistence": "localStorage",
+      "private_workspace_visible": false,
+      "state_key": "ssrm_v61_app_shell_resident_history"
+    },
+    {
       "allowed_mutations": "public memory note updates",
       "audit_rule": "memory notes are public relationship summaries",
       "owner": "app.js",

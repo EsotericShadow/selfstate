@@ -28,6 +28,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo reviewer triage filter report](docs/308_ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_report.md): adds reviewer-facing open/resolved/severity filters to the browser-local defect ledger for the single maintained primary demo path.
 - [Primary demo full manual pass report](docs/309_ssrm_3d_browser_world_v69_primary_demo_full_manual_pass_report.md): fixes opaque QA evidence in the maintained shell and records a full MP-01..MP-12 browser pass through the primary demo.
 - [Primary demo session transcript report](docs/310_ssrm_3d_browser_world_v70_primary_demo_session_transcript_report.md): adds reviewer-readable transcript and checkpoint panels derived from public replay/save/restore state.
+- [Primary demo resident history lane report](docs/311_ssrm_3d_browser_world_v71_primary_demo_resident_history_lane_report.md): adds a compact public resident-history lane for trust, debt, progress, and memory continuity.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

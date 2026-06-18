@@ -80,6 +80,7 @@
     "ssrm_v61_app_shell_qa_results",
     "ssrm_v61_app_shell_export",
     "ssrm_v61_app_shell_saved_snapshot",
+    "ssrm_v61_app_shell_resident_history",
     "residents.*.memory",
     "residents.*.trust",
     "residents.*.debt",

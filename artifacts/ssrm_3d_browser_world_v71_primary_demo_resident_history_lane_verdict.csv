@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_workflow_score,next_gate
+311,pass,1.0,1.0,1.0,"post-311: run another primary-demo pass focused on leave/return continuity across selected residents; if the resident lane is readable, the next consolidation should improve the unified schedule/debt/care dashboard rather than add a separate world organ"

@@ -5,6 +5,7 @@ const QA_KEY = 'ssrm_v61_app_shell_qa_results';
 const EXPORT_KEY = 'ssrm_v61_app_shell_export';
 const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
 const CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
+const HISTORY_KEY = 'ssrm_v61_app_shell_resident_history';
 
 const residents = {
   Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
@@ -29,7 +30,7 @@ const playtestTasks = [
 ];
 
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -38,7 +39,7 @@ const qaManifest = {
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY].forEach(key => localStorage.removeItem(key));
 }
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
@@ -76,6 +77,9 @@ function mutateResident(name, delta) {
   r.progress = clamp(r.progress + (delta.progress || 0));
   if (delta.schedule) r.schedule = delta.schedule;
   if (delta.memory) r.memory = delta.memory;
+  if (delta.trust || delta.debt || delta.progress || delta.schedule || delta.memory) {
+    recordResidentHistory(name, delta.historyEvent || 'state update', delta.historyDetail || delta.memory || delta.schedule || 'trust/debt/progress changed');
+  }
 }
 function enterWorld() { world.entered = true; world.avatar.room = 'arrival court'; return log('enterWorld', { boundary: BOUNDARY }); }
 function moveNorth() { world.avatar.y = Math.max(52, world.avatar.y - 34); return log('moveNorth', { y: world.avatar.y }); }
@@ -199,6 +203,52 @@ function bindControls() {
     log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room });
   });
 }
+function readResidentHistory() {
+  try {
+    const rows = JSON.parse(localStorage.getItem(HISTORY_KEY) || '{}');
+    return rows && typeof rows === 'object' && !Array.isArray(rows) ? rows : {};
+  } catch (_error) {
+    return {};
+  }
+}
+function recordResidentHistory(name, event, detail) {
+  const resident = world.residents[name];
+  if (!resident) return readResidentHistory();
+  const history = readResidentHistory();
+  const rows = Array.isArray(history[name]) ? history[name] : [];
+  rows.push({
+    tick: world.tick,
+    name,
+    event,
+    detail,
+    room: world.avatar.room,
+    schedule: resident.schedule,
+    progress: Number(resident.progress.toFixed(3)),
+    debt: resident.debt,
+    trust: Number(resident.trust.toFixed(3)),
+    memory: resident.memory
+  });
+  history[name] = rows.slice(-14);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+  return history;
+}
+function formatResidentHistory() {
+  const history = readResidentHistory();
+  const names = Object.keys(world.residents);
+  const lines = [];
+  names.forEach(name => {
+    const resident = world.residents[name];
+    const marker = name === world.selected ? '*' : ' ';
+    lines.push(`${marker} ${name} now: debt ${resident.debt} / trust ${resident.trust.toFixed(3)} / progress ${resident.progress.toFixed(3)} / memory: ${resident.memory}`);
+    const rows = Array.isArray(history[name]) ? history[name].slice(-4) : [];
+    if (!rows.length) {
+      lines.push(`  no recorded public interaction history yet`);
+    } else {
+      rows.forEach(row => lines.push(`  t${row.tick} ${row.event}: ${row.detail} -> debt ${row.debt} trust ${row.trust} progress ${row.progress}`));
+    }
+  });
+  return lines.join('\n');
+}
 function readCheckpoints() {
   try {
     const rows = JSON.parse(localStorage.getItem(CHECKPOINT_KEY) || '[]');
@@ -293,6 +343,7 @@ function render() {
   document.getElementById('traceOut').textContent = JSON.stringify({ latest: world.replay[world.replay.length - 1] || null, world }, null, 2);
   document.getElementById('sessionTranscriptOut').textContent = formatSessionTranscript();
   document.getElementById('checkpointOut').textContent = formatCheckpointLog();
+  document.getElementById('residentHistoryOut').textContent = formatResidentHistory();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();

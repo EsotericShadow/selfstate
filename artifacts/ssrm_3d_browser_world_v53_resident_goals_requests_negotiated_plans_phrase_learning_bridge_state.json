@@ -1,0 +1,358 @@
+{
+  "autonomy": {
+    "cinder_garden:Juno": 0.94,
+    "cinder_garden:Pax": 0.94,
+    "cinder_garden:Vale": 0.94,
+    "cinder_garden:Wren": 0.94,
+    "glass_harbor:Nia": 0.94,
+    "glass_harbor:Oren": 0.94,
+    "glass_harbor:Puck": 0.94,
+    "glass_harbor:Sera": 0.94,
+    "lichen_bridge:Kio": 0.94,
+    "lichen_bridge:Luma": 0.94,
+    "lichen_bridge:Rin": 0.94,
+    "lichen_bridge:Sol": 0.94,
+    "moss_ward:Ari": 0.94,
+    "moss_ward:Fay": 0.94,
+    "moss_ward:Milo": 0.94,
+    "moss_ward:Tala": 0.94,
+    "orchid_engine:Bea": 0.94,
+    "orchid_engine:Cai": 0.94,
+    "orchid_engine:Dax": 0.94,
+    "orchid_engine:Eli": 0.94
+  },
+  "boundary": "Deterministic browser-local resident-goal/request/negotiated-plan/refusal-aware-help/phrase-learning scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "goal_pressure": {
+    "cinder_garden:Juno": 0.29075,
+    "cinder_garden:Pax": 0.88,
+    "cinder_garden:Vale": 0.88,
+    "cinder_garden:Wren": 0.88,
+    "glass_harbor:Nia": 0.2927,
+    "glass_harbor:Oren": 0.88,
+    "glass_harbor:Puck": 0.88,
+    "glass_harbor:Sera": 0.88,
+    "lichen_bridge:Kio": 0.29205,
+    "lichen_bridge:Luma": 0.88,
+    "lichen_bridge:Rin": 0.88,
+    "lichen_bridge:Sol": 0.88,
+    "moss_ward:Ari": 0.2914,
+    "moss_ward:Fay": 0.88,
+    "moss_ward:Milo": 0.88,
+    "moss_ward:Tala": 0.88,
+    "orchid_engine:Bea": 0.2901,
+    "orchid_engine:Cai": 0.88,
+    "orchid_engine:Dax": 0.88,
+    "orchid_engine:Eli": 0.88
+  },
+  "inherited_history_hash": "ca758a93ae6ee65f",
+  "phrase_mastery": {
+    "cinder_garden:Juno:cool hand": 0.88,
+    "cinder_garden:Juno:seed sleep": 0.88,
+    "cinder_garden:Juno:shade first": 0.88,
+    "cinder_garden:Pax:cool hand": 0.88,
+    "cinder_garden:Pax:seed sleep": 0.88,
+    "cinder_garden:Pax:shade first": 0.88,
+    "cinder_garden:Vale:cool hand": 0.88,
+    "cinder_garden:Vale:seed sleep": 0.88,
+    "cinder_garden:Vale:shade first": 0.88,
+    "cinder_garden:Wren:cool hand": 0.792,
+    "cinder_garden:Wren:seed sleep": 0.768,
+    "cinder_garden:Wren:shade first": 0.792,
+    "glass_harbor:Nia:lamp bright": 0.88,
+    "glass_harbor:Nia:net keeper": 0.88,
+    "glass_harbor:Nia:tea first": 0.88,
+    "glass_harbor:Oren:lamp bright": 0.88,
+    "glass_harbor:Oren:net keeper": 0.88,
+    "glass_harbor:Oren:tea first": 0.88,
+    "glass_harbor:Puck:lamp bright": 0.88,
+    "glass_harbor:Puck:net keeper": 0.88,
+    "glass_harbor:Puck:tea first": 0.88,
+    "glass_harbor:Sera:lamp bright": 0.792,
+    "glass_harbor:Sera:net keeper": 0.78,
+    "glass_harbor:Sera:tea first": 0.78,
+    "lichen_bridge:Kio:bowl shared": 0.88,
+    "lichen_bridge:Kio:rope safe": 0.88,
+    "lichen_bridge:Kio:signal hush": 0.88,
+    "lichen_bridge:Luma:bowl shared": 0.88,
+    "lichen_bridge:Luma:rope safe": 0.88,
+    "lichen_bridge:Luma:signal hush": 0.88,
+    "lichen_bridge:Rin:bowl shared": 0.88,
+    "lichen_bridge:Rin:rope safe": 0.88,
+    "lichen_bridge:Rin:signal hush": 0.88,
+    "lichen_bridge:Sol:bowl shared": 0.756,
+    "lichen_bridge:Sol:rope safe": 0.792,
+    "lichen_bridge:Sol:signal hush": 0.792,
+    "moss_ward:Ari:ledger no touch": 0.88,
+    "moss_ward:Ari:loom wait": 0.88,
+    "moss_ward:Ari:path dry": 0.88,
+    "moss_ward:Fay:ledger no touch": 0.88,
+    "moss_ward:Fay:loom wait": 0.88,
+    "moss_ward:Fay:path dry": 0.88,
+    "moss_ward:Milo:ledger no touch": 0.88,
+    "moss_ward:Milo:loom wait": 0.88,
+    "moss_ward:Milo:path dry": 0.88,
+    "moss_ward:Tala:ledger no touch": 0.792,
+    "moss_ward:Tala:loom wait": 0.792,
+    "moss_ward:Tala:path dry": 0.768,
+    "orchid_engine:Bea:gear lane": 0.88,
+    "orchid_engine:Bea:orchid rest": 0.88,
+    "orchid_engine:Bea:valve wait": 0.88,
+    "orchid_engine:Cai:gear lane": 0.88,
+    "orchid_engine:Cai:orchid rest": 0.88,
+    "orchid_engine:Cai:valve wait": 0.88,
+    "orchid_engine:Dax:gear lane": 0.88,
+    "orchid_engine:Dax:orchid rest": 0.88,
+    "orchid_engine:Dax:valve wait": 0.88,
+    "orchid_engine:Eli:gear lane": 0.756,
+    "orchid_engine:Eli:orchid rest": 0.792,
+    "orchid_engine:Eli:valve wait": 0.792
+  },
+  "plan_quality": {
+    "cinder_garden:Juno": 0.92,
+    "cinder_garden:Pax": 0.92,
+    "cinder_garden:Vale": 0.92,
+    "cinder_garden:Wren": 0.92,
+    "glass_harbor:Nia": 0.92,
+    "glass_harbor:Oren": 0.92,
+    "glass_harbor:Puck": 0.92,
+    "glass_harbor:Sera": 0.92,
+    "lichen_bridge:Kio": 0.92,
+    "lichen_bridge:Luma": 0.92,
+    "lichen_bridge:Rin": 0.92,
+    "lichen_bridge:Sol": 0.92,
+    "moss_ward:Ari": 0.92,
+    "moss_ward:Fay": 0.92,
+    "moss_ward:Milo": 0.92,
+    "moss_ward:Tala": 0.92,
+    "orchid_engine:Bea": 0.92,
+    "orchid_engine:Cai": 0.92,
+    "orchid_engine:Dax": 0.92,
+    "orchid_engine:Eli": 0.92
+  },
+  "reload_index": {
+    "cinder_garden": 71,
+    "glass_harbor": 72,
+    "lichen_bridge": 70,
+    "moss_ward": 72,
+    "orchid_engine": 71
+  },
+  "settlements": [
+    {
+      "dialect_family": "proto-moss-breath",
+      "flower_offset": 0.021,
+      "frequency": 5.21,
+      "help_boundaries": [
+        "do not move root ledger",
+        "ask before loom repair",
+        "rain path first"
+      ],
+      "learnable_phrases": [
+        "path dry",
+        "loom wait",
+        "ledger no touch"
+      ],
+      "request_objects": [
+        "rain jar",
+        "dry cloak",
+        "root ledger"
+      ],
+      "resident_goals": [
+        "keep rain path dry",
+        "repair blanket loom",
+        "protect root archive",
+        "prepare warm-cup ritual"
+      ],
+      "residents": [
+        "Ari",
+        "Fay",
+        "Milo",
+        "Tala"
+      ],
+      "sensory_anchor": "wet moss and warm broth",
+      "settlement_id": "moss_ward",
+      "task_sites": [
+        "rain gate",
+        "blanket room",
+        "root alcove"
+      ]
+    },
+    {
+      "dialect_family": "proto-harbor-chime",
+      "flower_offset": 0.034,
+      "frequency": 6.34,
+      "help_boundaries": [
+        "do not dim lamp",
+        "net keeper decides",
+        "tea before crossing"
+      ],
+      "learnable_phrases": [
+        "lamp bright",
+        "net keeper",
+        "tea first"
+      ],
+      "request_objects": [
+        "brass lantern",
+        "net spool",
+        "tea kettle"
+      ],
+      "resident_goals": [
+        "keep public lamp bright",
+        "mend net before fog",
+        "seal fog catcher",
+        "prepare crossing tea"
+      ],
+      "residents": [
+        "Nia",
+        "Oren",
+        "Puck",
+        "Sera"
+      ],
+      "sensory_anchor": "salt steam and lamp oil",
+      "settlement_id": "glass_harbor",
+      "task_sites": [
+        "lamp pier",
+        "net room",
+        "fog rail"
+      ]
+    },
+    {
+      "dialect_family": "proto-cinder-pulse",
+      "flower_offset": 0.055,
+      "frequency": 8.89,
+      "help_boundaries": [
+        "do not cross seed rows",
+        "shade caller leads",
+        "cool bowl shared"
+      ],
+      "learnable_phrases": [
+        "seed sleep",
+        "shade first",
+        "cool hand"
+      ],
+      "request_objects": [
+        "shade pole",
+        "seed tray",
+        "cool bowl"
+      ],
+      "resident_goals": [
+        "shade seed rows",
+        "sort ember fruit",
+        "cool ash path",
+        "guard seed calendar"
+      ],
+      "residents": [
+        "Juno",
+        "Pax",
+        "Vale",
+        "Wren"
+      ],
+      "sensory_anchor": "warm ash and seed oil",
+      "settlement_id": "cinder_garden",
+      "task_sites": [
+        "seed shelf",
+        "ash path",
+        "shade tent"
+      ]
+    },
+    {
+      "dialect_family": "proto-bridge-hum",
+      "flower_offset": 0.044,
+      "frequency": 7.55,
+      "help_boundaries": [
+        "do not step on tension rope",
+        "signal keeper answers",
+        "meal room welcomes"
+      ],
+      "learnable_phrases": [
+        "rope safe",
+        "signal hush",
+        "bowl shared"
+      ],
+      "request_objects": [
+        "rope kit",
+        "signal bell",
+        "meal ledger"
+      ],
+      "resident_goals": [
+        "test rope bridge",
+        "weave spare rope",
+        "mark signal bell",
+        "prepare shared bowl"
+      ],
+      "residents": [
+        "Kio",
+        "Luma",
+        "Rin",
+        "Sol"
+      ],
+      "sensory_anchor": "damp rope and lichen soup",
+      "settlement_id": "lichen_bridge",
+      "task_sites": [
+        "rope bridge",
+        "signal post",
+        "meal room"
+      ]
+    },
+    {
+      "dialect_family": "proto-engine-ring",
+      "flower_offset": 0.067,
+      "frequency": 9.87,
+      "help_boundaries": [
+        "do not turn valve key",
+        "keep gear lane open",
+        "orchid keeper decides"
+      ],
+      "learnable_phrases": [
+        "valve wait",
+        "gear lane",
+        "orchid rest"
+      ],
+      "request_objects": [
+        "valve key",
+        "gear cloth",
+        "orchid lamp"
+      ],
+      "resident_goals": [
+        "listen to valve pulse",
+        "clean gear wash",
+        "tend orchid lamp",
+        "prepare steam tea"
+      ],
+      "residents": [
+        "Bea",
+        "Cai",
+        "Dax",
+        "Eli"
+      ],
+      "sensory_anchor": "orchid oil and warm iron",
+      "settlement_id": "orchid_engine",
+      "task_sites": [
+        "engine ring",
+        "gear wash",
+        "orchid bay"
+      ]
+    }
+  ],
+  "trust": {
+    "cinder_garden:Juno": 0.94,
+    "cinder_garden:Pax": 0.94,
+    "cinder_garden:Vale": 0.94,
+    "cinder_garden:Wren": 0.94,
+    "glass_harbor:Nia": 0.94,
+    "glass_harbor:Oren": 0.94,
+    "glass_harbor:Puck": 0.94,
+    "glass_harbor:Sera": 0.94,
+    "lichen_bridge:Kio": 0.94,
+    "lichen_bridge:Luma": 0.94,
+    "lichen_bridge:Rin": 0.94,
+    "lichen_bridge:Sol": 0.94,
+    "moss_ward:Ari": 0.94,
+    "moss_ward:Fay": 0.94,
+    "moss_ward:Milo": 0.94,
+    "moss_ward:Tala": 0.94,
+    "orchid_engine:Bea": 0.94,
+    "orchid_engine:Cai": 0.94,
+    "orchid_engine:Dax": 0.94,
+    "orchid_engine:Eli": 0.94
+  }
+}

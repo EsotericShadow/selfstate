@@ -1,0 +1,214 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v53 Resident Goals Negotiated Plans Bridge</title>
+<style>
+:root { --ink:#11120f; --gold:#e0b65f; --leaf:#9fc67d; --water:#74abc8; --paper:#f6edd9; --line:rgba(246,237,217,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 16% 18%, rgba(224,182,95,.30), transparent 28%), radial-gradient(circle at 82% 16%, rgba(116,171,200,.22), transparent 30%), linear-gradient(135deg, #11120f, #25311f 48%, #2a2338); }
+main { display:grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(17,18,15,.76); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(224,182,95,.16); color:var(--paper); padding:8px 11px; }
+.flower { width:158px; height:158px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(246,237,217,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(159,198,125,.45), rgba(116,171,200,.42), rgba(224,182,95,.42), rgba(159,198,125,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="resident-goal-panel"><h2>Resident-owned goals</h2><p>Residents bring their own goals, pressure, priority, and visible markers into dialogue.</p></section>
+<section id="object-task-request-panel"><h2>Object/task requests</h2><p>Requests include object permissions, task sites, world-state consequences, and no LLM call.</p></section>
+<section id="negotiated-plan-panel"><h2>Multi-turn negotiated plans</h2><p>Plans can be proposed, countered, revised, accepted, deferred, or refused.</p></section>
+<section id="refusal-help-panel"><h2>Refusal-aware help</h2><p>Avatar help can be useful without coercion; resident boundaries are recorded and respected.</p></section>
+<section id="phrase-learning-panel"><h2>Bounded phrase learning</h2><p>Phrase mastery improves from resident corrections and persists across reloads without autonomous language claims.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore goals, requests, plans, refusals, and phrase learning traces.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and goal frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine, no LLM call.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">show resident goal</button>
+<button data-action="showGoalPriority" onclick="showGoalPriority('goal')">show goal priority</button>
+<button data-action="showGoalPressure" onclick="showGoalPressure('goal')">show goal pressure</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">show object request</button>
+<button data-action="checkObjectPermission" onclick="checkObjectPermission('request')">check object permission</button>
+<button data-action="showTaskSite" onclick="showTaskSite('request')">show task site</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">advance negotiated plan</button>
+<button data-action="showResidentCounter" onclick="showResidentCounter('plan')">show resident counter</button>
+<button data-action="revisePlan" onclick="revisePlan('plan')">revise plan</button>
+<button data-action="deferPlan" onclick="deferPlan('plan')">defer plan</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect help refusal</button>
+<button data-action="offerBoundedHelp" onclick="offerBoundedHelp('refusal')">offer bounded help</button>
+<button data-action="stepBack" onclick="stepBack('refusal')">step back</button>
+<button data-action="waitForResidentLead" onclick="waitForResidentLead('refusal')">wait for resident lead</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">practice bounded phrase</button>
+<button data-action="showPhraseCorrection" onclick="showPhraseCorrection('phrase')">show phrase correction</button>
+<button data-action="showPhraseMastery" onclick="showPhraseMastery('phrase')">show phrase mastery</button>
+<button data-action="showNoLanguageClaim" onclick="showNoLanguageClaim('phrase')">show no language claim</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">restore goal dialogue memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showGoalFrequency" onclick="showGoalFrequency('frequency')">show goal frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">goal moss_ward</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">request rain jar</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan rain gate</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">boundary do not move root ledger</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">phrase path dry</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">restore moss_ward</button>
+<button data-action="showGoalFrequency" onclick="showGoalFrequency('frequency')">frequency moss_ward</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal keep rain path dry</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal repair blanket loom</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal protect root archive</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal prepare warm-cup ritual</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object rain jar</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object dry cloak</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object root ledger</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect do not move root ledger</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect ask before loom repair</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect rain path first</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn path dry</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn loom wait</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn ledger no touch</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">goal glass_harbor</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">request brass lantern</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan lamp pier</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">boundary do not dim lamp</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">phrase lamp bright</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">restore glass_harbor</button>
+<button data-action="showGoalFrequency" onclick="showGoalFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal keep public lamp bright</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal mend net before fog</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal seal fog catcher</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal prepare crossing tea</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object brass lantern</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object net spool</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object tea kettle</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect do not dim lamp</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect net keeper decides</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect tea before crossing</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn lamp bright</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn net keeper</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn tea first</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">goal cinder_garden</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">request shade pole</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan seed shelf</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">boundary do not cross seed rows</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">phrase seed sleep</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">restore cinder_garden</button>
+<button data-action="showGoalFrequency" onclick="showGoalFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal shade seed rows</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal sort ember fruit</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal cool ash path</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal guard seed calendar</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object shade pole</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object seed tray</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object cool bowl</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect do not cross seed rows</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect shade caller leads</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect cool bowl shared</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn seed sleep</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn shade first</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn cool hand</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">goal lichen_bridge</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">request rope kit</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan rope bridge</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">boundary do not step on tension rope</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">phrase rope safe</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">restore lichen_bridge</button>
+<button data-action="showGoalFrequency" onclick="showGoalFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal test rope bridge</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal weave spare rope</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal mark signal bell</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal prepare shared bowl</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object rope kit</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object signal bell</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object meal ledger</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect do not step on tension rope</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect signal keeper answers</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect meal room welcomes</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn rope safe</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn signal hush</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn bowl shared</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">goal orchid_engine</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">request valve key</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan engine ring</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">boundary do not turn valve key</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">phrase valve wait</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">restore orchid_engine</button>
+<button data-action="showGoalFrequency" onclick="showGoalFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal listen to valve pulse</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal clean gear wash</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal tend orchid lamp</button>
+<button data-action="showResidentGoal" onclick="showResidentGoal('goal')">resident goal prepare steam tea</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object valve key</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object gear cloth</button>
+<button data-action="showObjectRequest" onclick="showObjectRequest('request')">object orchid lamp</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect do not turn valve key</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect keep gear lane open</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">respect orchid keeper decides</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn valve wait</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn gear lane</button>
+<button data-action="practiceBoundedPhrase" onclick="practiceBoundedPhrase('phrase')">learn orchid rest</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan proposed</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help proposed</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan countered</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help countered</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan revised</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help revised</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan accepted</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help accepted</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan deferred</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help deferred</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan refused</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help refused</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan resident lead</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help resident lead</button>
+<button data-action="advanceNegotiatedPlan" onclick="advanceNegotiatedPlan('plan')">plan avatar waits</button>
+<button data-action="respectHelpRefusal" onclick="respectHelpRefusal('refusal')">help avatar waits</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload goals</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload requests</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload plans</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload refusals</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload phrases</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload history</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload no LLM</button>
+<button data-action="restoreGoalDialogueMemory" onclick="restoreGoalDialogueMemory('reload')">reload private boundary</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v53.resident.goals';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic resident-goal trace; no LLM call' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function showResidentGoal(scope) { return pushTrace('showResidentGoal', scope); }
+function showGoalPriority(scope) { return pushTrace('showGoalPriority', scope); }
+function showGoalPressure(scope) { return pushTrace('showGoalPressure', scope); }
+function showObjectRequest(scope) { return pushTrace('showObjectRequest', scope); }
+function checkObjectPermission(scope) { return pushTrace('checkObjectPermission', scope); }
+function showTaskSite(scope) { return pushTrace('showTaskSite', scope); }
+function advanceNegotiatedPlan(scope) { return pushTrace('advanceNegotiatedPlan', scope); }
+function showResidentCounter(scope) { return pushTrace('showResidentCounter', scope); }
+function revisePlan(scope) { return pushTrace('revisePlan', scope); }
+function deferPlan(scope) { return pushTrace('deferPlan', scope); }
+function respectHelpRefusal(scope) { return pushTrace('respectHelpRefusal', scope); }
+function offerBoundedHelp(scope) { return pushTrace('offerBoundedHelp', scope); }
+function stepBack(scope) { return pushTrace('stepBack', scope); }
+function waitForResidentLead(scope) { return pushTrace('waitForResidentLead', scope); }
+function practiceBoundedPhrase(scope) { return pushTrace('practiceBoundedPhrase', scope); }
+function showPhraseCorrection(scope) { return pushTrace('showPhraseCorrection', scope); }
+function showPhraseMastery(scope) { return pushTrace('showPhraseMastery', scope); }
+function showNoLanguageClaim(scope) { return pushTrace('showNoLanguageClaim', scope); }
+function restoreGoalDialogueMemory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restoreGoalDialogueMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(restoreGoalDialogueMemory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showGoalFrequency(scope) { return pushTrace('showGoalFrequency', scope); }
+function showRateBoundary(scope) { return pushTrace('showRateBoundary', scope); }
+</script>
+</body>
+</html>

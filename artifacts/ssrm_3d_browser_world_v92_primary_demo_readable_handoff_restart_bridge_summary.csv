@@ -1,0 +1,2 @@
+readiness,weakest_channel_score,pre_patch_readable_score,post_patch_readable_score,visible_restart_fact_score,json_audit_preservation_score,console_errors,criterion_count,report,seed,verdict
+1.0,1.0,0.8333333333333334,1,1.0,1.0,0,15,332,20270730,pass

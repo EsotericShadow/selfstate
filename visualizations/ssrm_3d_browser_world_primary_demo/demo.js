@@ -308,20 +308,36 @@ function handoffPayloadFreshnessState(payload) {
   };
 }
 
+function readableHandoffSummary(payload, freshness) {
+  if (!payload) return 'No outside-review handoff export prepared yet.';
+  const checklistItems = ((payload.checklistState || {}).items) || {};
+  const checklistDone = Object.values(checklistItems).filter(Boolean).length;
+  const shellEvidence = payload.shellEvidence || {};
+  const completion = payload.reviewedHandoffCompletion || {};
+  const recorderExport = payload.recorderExport || {};
+  const handoff = payload.handoff || {};
+  const receipt = shellEvidence.receipt || {};
+  const receiptText = receipt.fieldCount ? `${receipt.passCount}/${receipt.fieldCount}` : 'missing';
+  const recorderReady = payload.recorderExportPrepared || Boolean(recorderExport.recordCount) ? 'ready' : 'missing';
+  const manualCount = Array.isArray(payload.manualRecords) ? payload.manualRecords.length : (completion.manualRecordCount || 0);
+  const freshnessText = freshness && freshness.fresh ? 'fresh' : `stale: ${(freshness && freshness.mismatches || ['unknown mismatch']).join(', ')}`;
+  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; next action: inspect or download Prepared outside-review handoff.`;
+}
+
 function renderOutsideReviewHandoffPreview(message) {
   const payload = readOutsideReviewHandoffPayload();
   const freshness = payload ? handoffPayloadFreshnessState(payload) : null;
   const status = document.getElementById('outsideReviewHandoffStatus');
   if (status) {
     if (payload && freshness && !freshness.fresh) {
-      status.textContent = `Prepared handoff payload is stale: ${freshness.mismatches.join(', ')}. Re-run Prepare outside-review handoff.`;
+      status.textContent = `Prepared handoff payload is stale: ${freshness.mismatches.join(', ')}. Payload is ${freshness.payloadHandoffKind || 'unknown'} while current shell is ${freshness.currentHandoffKind || 'unknown'}. Re-run Prepare outside-review handoff.`;
     } else {
-      status.textContent = message || (payload ? 'Outside-review handoff payload visible below.' : 'No outside-review handoff export prepared yet.');
+      status.textContent = payload ? readableHandoffSummary(payload, freshness) : (message || 'No outside-review handoff export prepared yet.');
     }
   }
   const out = document.getElementById('outsideReviewHandoffOut');
   if (out) {
-    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness }, null, 2) : 'No outside-review handoff export prepared yet.';
+    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness) }, null, 2) : 'No outside-review handoff export prepared yet.';
   }
   return payload;
 }

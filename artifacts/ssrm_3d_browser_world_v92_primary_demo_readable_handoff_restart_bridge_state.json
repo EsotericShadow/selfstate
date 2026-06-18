@@ -1,0 +1,19 @@
+{
+  "boundary": "Deterministic browser-local readable handoff restart bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local review UX and evidence readability hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v92_primary_demo_readable_handoff_restart_bridge_browser_evidence.json",
+  "next_gate": "post-332: run a cold reviewer restart from the readable handoff card and verify the reviewer can continue using visible controls/status text only, without raw JSON or localStorage inspection",
+  "pre_patch_evidence_path": "artifacts/ssrm_3d_browser_world_v92_primary_demo_readable_handoff_restart_bridge_pre_patch_evidence.json",
+  "report": 332,
+  "report_331_results_path": "artifacts/ssrm_3d_browser_world_v91_primary_demo_reprepared_handoff_reload_persistence_results.json",
+  "required_terms": [
+    "readableHandoffSummary",
+    "Outside-review handoff ready:",
+    "freshnessText",
+    "handoff.kind || 'unknown'",
+    "checklist ${checklistDone}",
+    "previewReadableSummary",
+    "Payload is ${freshness.payloadHandoffKind"
+  ],
+  "seed": 20270730,
+  "verdict": "pass"
+}

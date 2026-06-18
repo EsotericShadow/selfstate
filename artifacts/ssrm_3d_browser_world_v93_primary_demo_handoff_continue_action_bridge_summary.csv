@@ -1,0 +1,2 @@
+readiness,weakest_channel_score,continue_action_score,continue_navigation_score,download_restore_score,visible_restart_workflow_score,console_errors,criterion_count,report,seed,verdict
+1.0,1.0,1.0,1.0,1.0,1.0,0,14,333,20270731,pass

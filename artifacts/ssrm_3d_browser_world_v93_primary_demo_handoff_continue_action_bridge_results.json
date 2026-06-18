@@ -1,0 +1,403 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_criteria.csv",
+    "pre_patch_evidence": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_pre_patch_evidence.json",
+    "report": "docs/333_ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local handoff continue action bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local restart UX and review workflow hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence": {
+    "checks": {
+      "continue_click_reaches_shell": true,
+      "continue_control_href_resume_shell": true,
+      "continue_control_visible": true,
+      "download_link_restored_after_reload": true,
+      "no_console_errors": true,
+      "raw_json_preview_still_fresh_resume": true,
+      "readable_resume_status_visible": true,
+      "shell_reviewer_controls_visible": true,
+      "status_next_action_matches_control": true
+    },
+    "consoleErrorMessages": [],
+    "consoleErrors": 0,
+    "observedAt": "2026-06-18T09:27:17.308Z",
+    "prefix": "ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge",
+    "report": 333,
+    "restartControls": {
+      "actionsText": "Continue from prepared resume handoff\nDownload prepared outside-review handoff JSON",
+      "continueControl": {
+        "disabled": false,
+        "download": "",
+        "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+        "id": "continuePreparedHandoff",
+        "tag": "a",
+        "text": "Continue from prepared resume handoff"
+      },
+      "continueControlCount": 1,
+      "controls": [
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "refreshOutsideReviewEvidence",
+          "tag": "button",
+          "text": "Refresh shell evidence"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "completeReviewedHandoff",
+          "tag": "button",
+          "text": "Complete reviewed handoff"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "exportOutsideReview",
+          "tag": "button",
+          "text": "Prepare outside-review handoff"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "",
+          "id": "clearOutsideReview",
+          "tag": "button",
+          "text": "Clear outside-review checklist"
+        },
+        {
+          "disabled": false,
+          "download": "",
+          "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+          "id": "continuePreparedHandoff",
+          "tag": "a",
+          "text": "Continue from prepared resume handoff"
+        },
+        {
+          "disabled": false,
+          "download": "ssrm_primary_demo_outside_review_handoff.json",
+          "href": "blob:http://127.0.0.1:8795/08eb4342-45e3-4ee7-a3b5-919683f05227",
+          "id": "preparedOutsideReviewExport",
+          "tag": "a",
+          "text": "Download prepared outside-review handoff JSON"
+        }
+      ],
+      "downloadControl": "[Circular]",
+      "downloadControlCount": 1,
+      "hasActionTextMatchesControl": true,
+      "hasContinuePreparedHandoff": true,
+      "hasRestoredDownloadPreparedHandoff": true,
+      "hasVisibleResumeStatus": true,
+      "label": "post_patch_persisted_readable_handoff_restart_controls",
+      "parsedPayloadFresh": true,
+      "parsedPayloadKind": "resume",
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 1 manual record(s) / export ready; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "url": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+    },
+    "shellAfterContinue": {
+      "hasReceipt": true,
+      "hasReturnToLauncher": true,
+      "hasReviewerLanding": true,
+      "hasRunReviewerPass": true,
+      "label": "shell_after_continue_from_prepared_handoff",
+      "replayStatus": "Replay\n16 rows",
+      "roomStatus": "Room\narrival court / entered",
+      "shellTextExcerpt": "REPORT 301 MAINTAINED APP SHELL\n\nEnter, move, talk, leave, return, inspect.\n\nDeterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\n\nEnter\nNorth\nSouth\nWest\nEast\nTalk\nAsk schedule\nHelp\nBorrow\nReturn\nWait offscreen\nRepair trust\nAudit\nResident\nAri\nFay\nMilo\nSera\nTovan\nNia\nBounded phrase\ngreet\nask schedule\noffer help\napologize\nask debt\nRoom\narrival court / entered\nSchedule\nsort herbs / progress 0.559\nDebt\n0 / trust 0.624\nMemory\navatar repaired trust with concrete help\nReplay\n16 rows\nQA\nnot run\nRun checklist\nAudit state\nSave/restore smoke\nAudit after rollback\nRun all QA hooks\nSave\nRestore\nExport replay\nReviewer landing\nRun reviewer pass\nAudit failures\nToggle deep panels\nReturn to launcher handoff\nReviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage -> Return to launcher handoff\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none\nActionable failure map:\nAll receipt fields currently pass. Keep deep panels optional unless a reviewer wants trace detail.\nNext step: use Return to launcher handoff when the receipt is all pass.\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear\nSession transcript\nt0 arrival court / Fay: avatar entered the world boundary-visible\nt1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borro",
+      "url": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "target": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "report_332_readable_restart_gate_passed",
+      "evidence": "Report 332 verdict=pass weakest=1.0",
+      "failure_if_false": "Report 333 would not be grounded in a passing readable-handoff gate",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "pre_patch_continue_action_defect_found",
+      "evidence": "persisted readable handoff has no visible Continue from prepared handoff control; persisted readable handoff does not restore a visible prepared-handoff download link after reload; visible next-action text points to handoff use, but no handoff-local continue control exists",
+      "failure_if_false": "Report 333 would not be tied to an observed missing continue-action defect",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "pre_patch_download_restore_defect_found",
+      "evidence": "persisted readable handoff has no visible Continue from prepared handoff control; persisted readable handoff does not restore a visible prepared-handoff download link after reload; visible next-action text points to handoff use, but no handoff-local continue control exists",
+      "failure_if_false": "Report 333 would not be tied to an observed missing restored-download defect",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "continue_action_source_generated",
+      "evidence": "generator, emitted JS, and emitted HTML contain the prepared-handoff action bridge",
+      "failure_if_false": "regeneration would remove the handoff continue/download action card",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "readable_resume_status_visible",
+      "evidence": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 1 manual record(s) / export ready; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "restart card does not preserve the readable fresh resume handoff status",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "continue_control_visible",
+      "evidence": "Continue from prepared resume handoff\nDownload prepared outside-review handoff JSON",
+      "failure_if_false": "no visible Continue from prepared handoff control is restored after reload",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "continue_control_href_resume_shell",
+      "evidence": "{'disabled': False, 'download': '', 'href': '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63', 'id': 'continuePreparedHandoff', 'tag': 'a', 'text': 'Continue from prepared resume handoff'}",
+      "failure_if_false": "continue control does not target the maintained resume shell URL",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "download_link_restored_after_reload",
+      "evidence": "[Circular]",
+      "failure_if_false": "prepared handoff download link is not restored from persisted state after reload",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "status_next_action_matches_control",
+      "evidence": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 1 manual record(s) / export ready; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+      "failure_if_false": "status next-action text does not match the visible continue control",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "raw_json_preview_still_fresh_resume",
+      "evidence": "fresh=True kind=resume",
+      "failure_if_false": "action card broke the raw fresh resume JSON preview",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "continue_click_reaches_shell",
+      "evidence": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+      "failure_if_false": "clicking Continue from prepared handoff does not reach the maintained shell",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "shell_reviewer_controls_visible_after_continue",
+      "evidence": "reviewer=True runPass=True return=True",
+      "failure_if_false": "continued shell session does not expose reviewer controls and return path",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_console_clean",
+      "evidence": "consoleErrors=0 messages=[]",
+      "failure_if_false": "handoff continue-action browser flow produced console errors",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "boundary_preserved",
+      "evidence": "Deterministic browser-local handoff continue action bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local restart UX and review workflow hygiene, not external validation or evidence of inner experience.",
+      "failure_if_false": "report boundary implies more than browser-local restart workflow hardening",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "console_errors": 0,
+    "continue_action_score": 1.0,
+    "continue_navigation_score": 1.0,
+    "criterion_count": 14,
+    "download_restore_score": 1.0,
+    "readiness": 1.0,
+    "visible_restart_workflow_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-333: verify a continued reviewer session can return to the launcher and keep the prepared handoff fresh without creating a new hidden handoff timestamp or forcing JSON inspection",
+  "pre_patch_evidence": {
+    "blockers": [
+      "persisted readable handoff has no visible Continue from prepared handoff control",
+      "persisted readable handoff does not restore a visible prepared-handoff download link after reload",
+      "visible next-action text points to handoff use, but no handoff-local continue control exists"
+    ],
+    "consoleErrorMessages": [],
+    "consoleErrors": 0,
+    "observedAt": "2026-06-18T09:24:21.824Z",
+    "prefix": "ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge",
+    "report": 333,
+    "restartControls": {
+      "continueControlCount": 0,
+      "controls": [
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "",
+          "tag": "button",
+          "text": "Done"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "refreshOutsideReviewEvidence",
+          "tag": "button",
+          "text": "Refresh shell evidence"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "completeReviewedHandoff",
+          "tag": "button",
+          "text": "Complete reviewed handoff"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "exportOutsideReview",
+          "tag": "button",
+          "text": "Prepare outside-review handoff"
+        },
+        {
+          "disabled": false,
+          "href": "",
+          "id": "clearOutsideReview",
+          "tag": "button",
+          "text": "Clear outside-review checklist"
+        }
+      ],
+      "downloadControlCount": 0,
+      "hasContinuePreparedHandoff": false,
+      "hasRestoredDownloadPreparedHandoff": false,
+      "hasVisibleNextActionButNoControl": true,
+      "hasVisibleResumeStatus": true,
+      "label": "pre_patch_persisted_readable_handoff_restart_controls",
+      "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 1 manual record(s) / export ready; next action: inspect or download Prepared outside-review handoff.",
+      "topResumeControlCount": 0,
+      "url": "http://127.0.0.1:8794/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+      "visibleTextExcerpt": "Outside-review checklist\n\nThis is the shortest handoff path for someone arriving cold: boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, and exportable review notes.\n\nOR-01: Read boundary before launching\nLauncher boundary explicitly says deterministic browser-local shell, no LLM, no consciousness, no moral patienthood, no production persistence, and no finished gameplay.\nDone\nOR-02: Launch clean reviewer path\nLaunch clean demo opens the maintained v61 shell with reviewer-focus mode, not a parallel simulation.\nDone\nOR-03: Run reviewer pass inside the shell\nReviewer landing reports PASSABLE_REVIEW_PATH and the integrated scenario receipt reports ALL_PASS.\nDone\nOR-04: Inspect transcript, receipt, and observation triage\nSession transcript, integrated receipt, and observation triage are visible before optional deep panels.\nDone\nOR-05: Audit failures if the receipt is incomplete\nAudit failures converts failing receipt fields into blocking observation rows with recovery guidance.\nDone\nOR-06: Reveal deep panels only for unresolved questions\nToggle deep panels exposes trace, checkpoints, resident history, social memory, receipt observations, playtest tasks, and QA manifest.\nDone\nOR-07: Record manual outcome and export handoff\nManual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.\nDone\nRefresh shell evidence\nComplete reviewed handoff\nPrepare outside-review handoff\nClear outside-review checklist\n\n7/7 outside-review checklist items complete.\n\n{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true,\n      \"OR-03\": true,\n      \"OR-04\": true,\n      \"OR-05\": true,\n      \"OR-06\": true,\n      \"OR-07\": true\n    },\n    \"updatedAt\": \"2026-06-18T09:24:20.2"
+    },
+    "target": "http://127.0.0.1:8794/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "pre_patch_evidence_path": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_pre_patch_evidence.json",
+  "prefix": "ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge",
+  "report": 333,
+  "report_332_results_path": "artifacts/ssrm_3d_browser_world_v92_primary_demo_readable_handoff_restart_bridge_results.json",
+  "required_terms": [
+    "outsideReviewHandoffActions",
+    "preparedHandoffHref",
+    "renderOutsideReviewHandoffActions",
+    "Continue from prepared",
+    "Download prepared outside-review handoff JSON",
+    "click Continue from prepared"
+  ],
+  "seed": 20270731,
+  "verdict": "pass"
+}

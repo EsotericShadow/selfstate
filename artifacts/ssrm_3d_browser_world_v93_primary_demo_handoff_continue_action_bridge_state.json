@@ -1,0 +1,18 @@
+{
+  "boundary": "Deterministic browser-local handoff continue action bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local restart UX and review workflow hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_browser_evidence.json",
+  "next_gate": "post-333: verify a continued reviewer session can return to the launcher and keep the prepared handoff fresh without creating a new hidden handoff timestamp or forcing JSON inspection",
+  "pre_patch_evidence_path": "artifacts/ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge_pre_patch_evidence.json",
+  "report": 333,
+  "report_332_results_path": "artifacts/ssrm_3d_browser_world_v92_primary_demo_readable_handoff_restart_bridge_results.json",
+  "required_terms": [
+    "outsideReviewHandoffActions",
+    "preparedHandoffHref",
+    "renderOutsideReviewHandoffActions",
+    "Continue from prepared",
+    "Download prepared outside-review handoff JSON",
+    "click Continue from prepared"
+  ],
+  "seed": 20270731,
+  "verdict": "pass"
+}

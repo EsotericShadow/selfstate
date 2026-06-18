@@ -282,6 +282,7 @@ def _html() -> str:
       <p id=\"outsideReviewEvidenceStatus\">No shell evidence refreshed yet.</p>
       <pre id=\"outsideReviewEvidenceOut\"></pre>
       <p id=\"outsideReviewHandoffStatus\">No outside-review handoff export prepared yet.</p>
+      <div id=\"outsideReviewHandoffActions\" class=\"actions compact\" aria-label=\"Prepared handoff actions\"></div>
       <pre id=\"outsideReviewHandoffOut\"></pre>
     </section>
     <section class=\"grid\">
@@ -972,7 +973,46 @@ function readableHandoffSummary(payload, freshness) {
   const recorderReady = payload.recorderExportPrepared || Boolean(recorderExport.recordCount) ? 'ready' : 'missing';
   const manualCount = Array.isArray(payload.manualRecords) ? payload.manualRecords.length : (completion.manualRecordCount || 0);
   const freshnessText = freshness && freshness.fresh ? 'fresh' : `stale: ${(freshness && freshness.mismatches || ['unknown mismatch']).join(', ')}`;
-  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; next action: inspect or download Prepared outside-review handoff.`;
+  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download Prepared outside-review handoff JSON.`;
+}
+
+function preparedHandoffHref(payload) {
+  const handoff = (payload && payload.handoff) || {};
+  const target = handoff.target || '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html';
+  const separator = target.includes('?') ? '&' : '?';
+  const params = handoff.kind === 'clean' ? 'reset=1&source=primary-demo-v63' : 'source=primary-demo-v63';
+  return `${target}${separator}${params}`;
+}
+
+function renderOutsideReviewHandoffActions(payload, freshness) {
+  const actions = document.getElementById('outsideReviewHandoffActions');
+  if (!actions) return;
+  actions.textContent = '';
+  if (!payload) return;
+  const kind = (payload.handoff || {}).kind || 'unknown';
+  if (freshness && freshness.fresh) {
+    const continueLink = document.createElement('a');
+    continueLink.id = 'continuePreparedHandoff';
+    continueLink.className = 'button primary';
+    continueLink.href = preparedHandoffHref(payload);
+    continueLink.textContent = `Continue from prepared ${kind} handoff`;
+    actions.appendChild(continueLink);
+  } else {
+    const staleNote = document.createElement('span');
+    staleNote.className = 'status-line';
+    staleNote.textContent = 'Re-prepare before continuing from this handoff.';
+    actions.appendChild(staleNote);
+  }
+  const existingDownload = document.getElementById('preparedOutsideReviewExport');
+  if (existingDownload) existingDownload.remove();
+  const download = document.createElement('a');
+  download.id = 'preparedOutsideReviewExport';
+  download.className = 'button';
+  download.download = 'ssrm_primary_demo_outside_review_handoff.json';
+  download.textContent = 'Download prepared outside-review handoff JSON';
+  const text = localStorage.getItem(OUTSIDE_REVIEW_EXPORT_KEY) || JSON.stringify(payload, null, 2);
+  download.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  actions.appendChild(download);
 }
 
 function renderOutsideReviewHandoffPreview(message) {
@@ -990,6 +1030,7 @@ function renderOutsideReviewHandoffPreview(message) {
   if (out) {
     out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness) }, null, 2) : 'No outside-review handoff export prepared yet.';
   }
+  renderOutsideReviewHandoffActions(payload, freshness);
   return payload;
 }
 

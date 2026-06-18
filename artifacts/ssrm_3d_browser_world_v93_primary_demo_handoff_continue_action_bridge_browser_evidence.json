@@ -1,0 +1,159 @@
+{
+  "report": 333,
+  "prefix": "ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge",
+  "target": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "observedAt": "2026-06-18T09:27:17.308Z",
+  "restartControls": {
+    "actionsText": "Continue from prepared resume handoff\nDownload prepared outside-review handoff JSON",
+    "continueControl": {
+      "disabled": false,
+      "download": "",
+      "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+      "id": "continuePreparedHandoff",
+      "tag": "a",
+      "text": "Continue from prepared resume handoff"
+    },
+    "continueControlCount": 1,
+    "controls": [
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "refreshOutsideReviewEvidence",
+        "tag": "button",
+        "text": "Refresh shell evidence"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "completeReviewedHandoff",
+        "tag": "button",
+        "text": "Complete reviewed handoff"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "exportOutsideReview",
+        "tag": "button",
+        "text": "Prepare outside-review handoff"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "",
+        "id": "clearOutsideReview",
+        "tag": "button",
+        "text": "Clear outside-review checklist"
+      },
+      {
+        "disabled": false,
+        "download": "",
+        "href": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+        "id": "continuePreparedHandoff",
+        "tag": "a",
+        "text": "Continue from prepared resume handoff"
+      },
+      {
+        "disabled": false,
+        "download": "ssrm_primary_demo_outside_review_handoff.json",
+        "href": "blob:http://127.0.0.1:8795/08eb4342-45e3-4ee7-a3b5-919683f05227",
+        "id": "preparedOutsideReviewExport",
+        "tag": "a",
+        "text": "Download prepared outside-review handoff JSON"
+      }
+    ],
+    "downloadControl": "[Circular]",
+    "downloadControlCount": 1,
+    "hasActionTextMatchesControl": true,
+    "hasContinuePreparedHandoff": true,
+    "hasRestoredDownloadPreparedHandoff": true,
+    "hasVisibleResumeStatus": true,
+    "label": "post_patch_persisted_readable_handoff_restart_controls",
+    "parsedPayloadFresh": true,
+    "parsedPayloadKind": "resume",
+    "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 1 manual record(s) / export ready; next action: click Continue from prepared resume handoff, or download Prepared outside-review handoff JSON.",
+    "url": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+  },
+  "shellAfterContinue": {
+    "hasReceipt": true,
+    "hasReturnToLauncher": true,
+    "hasReviewerLanding": true,
+    "hasRunReviewerPass": true,
+    "label": "shell_after_continue_from_prepared_handoff",
+    "replayStatus": "Replay\n16 rows",
+    "roomStatus": "Room\narrival court / entered",
+    "shellTextExcerpt": "REPORT 301 MAINTAINED APP SHELL\n\nEnter, move, talk, leave, return, inspect.\n\nDeterministic browser-local hardened vertical-slice app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.\n\nEnter\nNorth\nSouth\nWest\nEast\nTalk\nAsk schedule\nHelp\nBorrow\nReturn\nWait offscreen\nRepair trust\nAudit\nResident\nAri\nFay\nMilo\nSera\nTovan\nNia\nBounded phrase\ngreet\nask schedule\noffer help\napologize\nask debt\nRoom\narrival court / entered\nSchedule\nsort herbs / progress 0.559\nDebt\n0 / trust 0.624\nMemory\navatar repaired trust with concrete help\nReplay\n16 rows\nQA\nnot run\nRun checklist\nAudit state\nSave/restore smoke\nAudit after rollback\nRun all QA hooks\nSave\nRestore\nExport replay\nReviewer landing\nRun reviewer pass\nAudit failures\nToggle deep panels\nReturn to launcher handoff\nReviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage -> Return to launcher handoff\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none\nActionable failure map:\nAll receipt fields currently pass. Keep deep panels optional unless a reviewer wants trace detail.\nNext step: use Return to launcher handoff when the receipt is all pass.\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear\nSession transcript\nt0 arrival court / Fay: avatar entered the world boundary-visible\nt1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borro",
+    "url": "http://127.0.0.1:8795/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+  },
+  "consoleErrors": 0,
+  "consoleErrorMessages": [],
+  "checks": {
+    "readable_resume_status_visible": true,
+    "continue_control_visible": true,
+    "continue_control_href_resume_shell": true,
+    "download_link_restored_after_reload": true,
+    "status_next_action_matches_control": true,
+    "raw_json_preview_still_fresh_resume": true,
+    "continue_click_reaches_shell": true,
+    "shell_reviewer_controls_visible": true,
+    "no_console_errors": true
+  }
+}

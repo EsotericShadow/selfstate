@@ -1,0 +1,105 @@
+{
+  "report": 333,
+  "prefix": "ssrm_3d_browser_world_v93_primary_demo_handoff_continue_action_bridge",
+  "target": "http://127.0.0.1:8794/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "observedAt": "2026-06-18T09:24:21.824Z",
+  "restartControls": {
+    "continueControlCount": 0,
+    "controls": [
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "",
+        "tag": "button",
+        "text": "Done"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "refreshOutsideReviewEvidence",
+        "tag": "button",
+        "text": "Refresh shell evidence"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "completeReviewedHandoff",
+        "tag": "button",
+        "text": "Complete reviewed handoff"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "exportOutsideReview",
+        "tag": "button",
+        "text": "Prepare outside-review handoff"
+      },
+      {
+        "disabled": false,
+        "href": "",
+        "id": "clearOutsideReview",
+        "tag": "button",
+        "text": "Clear outside-review checklist"
+      }
+    ],
+    "downloadControlCount": 0,
+    "hasContinuePreparedHandoff": false,
+    "hasRestoredDownloadPreparedHandoff": false,
+    "hasVisibleNextActionButNoControl": true,
+    "hasVisibleResumeStatus": true,
+    "label": "pre_patch_persisted_readable_handoff_restart_controls",
+    "statusText": "Outside-review handoff ready: fresh resume handoff; checklist 7/7; shell evidence reviewer pass seen / receipt 9/9 / replay export ready; recorder 1 manual record(s) / export ready; next action: inspect or download Prepared outside-review handoff.",
+    "topResumeControlCount": 0,
+    "url": "http://127.0.0.1:8794/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+    "visibleTextExcerpt": "Outside-review checklist\n\nThis is the shortest handoff path for someone arriving cold: boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, and exportable review notes.\n\nOR-01: Read boundary before launching\nLauncher boundary explicitly says deterministic browser-local shell, no LLM, no consciousness, no moral patienthood, no production persistence, and no finished gameplay.\nDone\nOR-02: Launch clean reviewer path\nLaunch clean demo opens the maintained v61 shell with reviewer-focus mode, not a parallel simulation.\nDone\nOR-03: Run reviewer pass inside the shell\nReviewer landing reports PASSABLE_REVIEW_PATH and the integrated scenario receipt reports ALL_PASS.\nDone\nOR-04: Inspect transcript, receipt, and observation triage\nSession transcript, integrated receipt, and observation triage are visible before optional deep panels.\nDone\nOR-05: Audit failures if the receipt is incomplete\nAudit failures converts failing receipt fields into blocking observation rows with recovery guidance.\nDone\nOR-06: Reveal deep panels only for unresolved questions\nToggle deep panels exposes trace, checkpoints, resident history, social memory, receipt observations, playtest tasks, and QA manifest.\nDone\nOR-07: Record manual outcome and export handoff\nManual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.\nDone\nRefresh shell evidence\nComplete reviewed handoff\nPrepare outside-review handoff\nClear outside-review checklist\n\n7/7 outside-review checklist items complete.\n\n{\n  \"reportIntroduced\": 323,\n  \"checklist\": [\n    {\n      \"itemId\": \"OR-01\",\n      \"label\": \"Read boundary before launching\"\n    },\n    {\n      \"itemId\": \"OR-02\",\n      \"label\": \"Launch clean reviewer path\"\n    },\n    {\n      \"itemId\": \"OR-03\",\n      \"label\": \"Run reviewer pass inside the shell\"\n    },\n    {\n      \"itemId\": \"OR-04\",\n      \"label\": \"Inspect transcript, receipt, and observation triage\"\n    },\n    {\n      \"itemId\": \"OR-05\",\n      \"label\": \"Audit failures if the receipt is incomplete\"\n    },\n    {\n      \"itemId\": \"OR-06\",\n      \"label\": \"Reveal deep panels only for unresolved questions\"\n    },\n    {\n      \"itemId\": \"OR-07\",\n      \"label\": \"Record manual outcome and export handoff\"\n    }\n  ],\n  \"state\": {\n    \"items\": {\n      \"OR-01\": true,\n      \"OR-02\": true,\n      \"OR-03\": true,\n      \"OR-04\": true,\n      \"OR-05\": true,\n      \"OR-06\": true,\n      \"OR-07\": true\n    },\n    \"updatedAt\": \"2026-06-18T09:24:20.2"
+  },
+  "consoleErrors": 0,
+  "consoleErrorMessages": [],
+  "blockers": [
+    "persisted readable handoff has no visible Continue from prepared handoff control",
+    "persisted readable handoff does not restore a visible prepared-handoff download link after reload",
+    "visible next-action text points to handoff use, but no handoff-local continue control exists"
+  ]
+}

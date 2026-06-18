@@ -1,0 +1,1729 @@
+{
+  "boundary": "Deterministic browser-local realtime-scheduler/task-queue/project/care-consent scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "consent_history": {
+    "archive:Nia": 73,
+    "archive:Toma": 45,
+    "orchard:Ivo": 80,
+    "orchard:Mara": 45,
+    "repair_ring:Juno": 40,
+    "repair_ring:Pax": 74,
+    "riverbend:Ari": 79,
+    "riverbend:Lio": 46,
+    "roofward:Fay": 40,
+    "roofward:Sera": 76,
+    "signal:Milo": 40,
+    "signal:Ren": 71
+  },
+  "dialect_memory": {
+    "archive:Nia": [
+      [
+        102,
+        "archive:nia:15:2:5",
+        0.98
+      ],
+      [
+        102,
+        "archive:nia:15:8:5",
+        0.98
+      ],
+      [
+        102,
+        "archive:nia:15:14:5",
+        0.98
+      ],
+      [
+        104,
+        "archive:nia:17:0:5",
+        0.98
+      ],
+      [
+        104,
+        "archive:nia:17:6:5",
+        0.98
+      ],
+      [
+        104,
+        "archive:nia:17:12:5",
+        0.98
+      ],
+      [
+        106,
+        "archive:nia:19:4:5",
+        0.98
+      ],
+      [
+        106,
+        "archive:nia:19:10:5",
+        0.98
+      ],
+      [
+        108,
+        "archive:nia:21:2:5",
+        0.98
+      ],
+      [
+        108,
+        "archive:nia:21:8:5",
+        0.98
+      ],
+      [
+        108,
+        "archive:nia:21:14:5",
+        0.98
+      ],
+      [
+        120,
+        "archive:nia:4:0:5",
+        0.98
+      ],
+      [
+        120,
+        "archive:nia:4:6:5",
+        0.98
+      ],
+      [
+        120,
+        "archive:nia:4:12:5",
+        0.98
+      ],
+      [
+        122,
+        "archive:nia:6:4:5",
+        0.98
+      ],
+      [
+        122,
+        "archive:nia:6:10:5",
+        0.98
+      ],
+      [
+        124,
+        "archive:nia:8:2:5",
+        0.98
+      ],
+      [
+        124,
+        "archive:nia:8:8:5",
+        0.98
+      ],
+      [
+        124,
+        "archive:nia:8:14:5",
+        0.98
+      ],
+      [
+        126,
+        "archive:nia:10:0:5",
+        0.98
+      ],
+      [
+        126,
+        "archive:nia:10:6:5",
+        0.98
+      ],
+      [
+        126,
+        "archive:nia:10:12:5",
+        0.98
+      ],
+      [
+        128,
+        "archive:nia:12:4:5",
+        0.98
+      ],
+      [
+        128,
+        "archive:nia:12:10:5",
+        0.98
+      ]
+    ],
+    "archive:Toma": [
+      [
+        105,
+        "archive:toma:18:8:5",
+        0.98
+      ],
+      [
+        105,
+        "archive:toma:18:14:5",
+        0.98
+      ],
+      [
+        107,
+        "archive:toma:20:0:5",
+        0.98
+      ],
+      [
+        107,
+        "archive:toma:20:6:5",
+        0.98
+      ],
+      [
+        107,
+        "archive:toma:20:12:5",
+        0.98
+      ],
+      [
+        109,
+        "archive:toma:22:4:5",
+        0.98
+      ],
+      [
+        109,
+        "archive:toma:22:10:5",
+        0.98
+      ],
+      [
+        110,
+        "archive:toma:23:11:5",
+        0.98
+      ],
+      [
+        112,
+        "archive:toma:25:9:5",
+        0.98
+      ],
+      [
+        114,
+        "archive:toma:27:7:5",
+        0.98
+      ],
+      [
+        116,
+        "archive:toma:0:5:5",
+        0.98
+      ],
+      [
+        118,
+        "archive:toma:2:3:5",
+        0.98
+      ],
+      [
+        118,
+        "archive:toma:2:15:5",
+        0.98
+      ],
+      [
+        121,
+        "archive:toma:5:2:5",
+        0.98
+      ],
+      [
+        121,
+        "archive:toma:5:8:5",
+        0.98
+      ],
+      [
+        121,
+        "archive:toma:5:14:5",
+        0.98
+      ],
+      [
+        123,
+        "archive:toma:7:0:5",
+        0.98
+      ],
+      [
+        123,
+        "archive:toma:7:6:5",
+        0.98
+      ],
+      [
+        123,
+        "archive:toma:7:12:5",
+        0.98
+      ],
+      [
+        125,
+        "archive:toma:9:4:5",
+        0.98
+      ],
+      [
+        125,
+        "archive:toma:9:10:5",
+        0.98
+      ],
+      [
+        127,
+        "archive:toma:11:2:5",
+        0.98
+      ],
+      [
+        127,
+        "archive:toma:11:8:5",
+        0.98
+      ],
+      [
+        127,
+        "archive:toma:11:14:5",
+        0.98
+      ]
+    ],
+    "orchard:Ivo": [
+      [
+        102,
+        "orchard:ivo:15:4:5",
+        0.98
+      ],
+      [
+        102,
+        "orchard:ivo:15:10:5",
+        0.98
+      ],
+      [
+        104,
+        "orchard:ivo:17:2:5",
+        0.98
+      ],
+      [
+        104,
+        "orchard:ivo:17:8:5",
+        0.98
+      ],
+      [
+        104,
+        "orchard:ivo:17:14:5",
+        0.98
+      ],
+      [
+        106,
+        "orchard:ivo:19:0:5",
+        0.98
+      ],
+      [
+        106,
+        "orchard:ivo:19:6:5",
+        0.98
+      ],
+      [
+        106,
+        "orchard:ivo:19:12:5",
+        0.98
+      ],
+      [
+        108,
+        "orchard:ivo:21:4:5",
+        0.98
+      ],
+      [
+        108,
+        "orchard:ivo:21:10:5",
+        0.98
+      ],
+      [
+        120,
+        "orchard:ivo:4:2:5",
+        0.98
+      ],
+      [
+        120,
+        "orchard:ivo:4:8:5",
+        0.98
+      ],
+      [
+        120,
+        "orchard:ivo:4:14:5",
+        0.98
+      ],
+      [
+        122,
+        "orchard:ivo:6:0:5",
+        0.98
+      ],
+      [
+        122,
+        "orchard:ivo:6:6:5",
+        0.98
+      ],
+      [
+        122,
+        "orchard:ivo:6:12:5",
+        0.98
+      ],
+      [
+        124,
+        "orchard:ivo:8:4:5",
+        0.98
+      ],
+      [
+        124,
+        "orchard:ivo:8:10:5",
+        0.98
+      ],
+      [
+        126,
+        "orchard:ivo:10:2:5",
+        0.98
+      ],
+      [
+        126,
+        "orchard:ivo:10:8:5",
+        0.98
+      ],
+      [
+        126,
+        "orchard:ivo:10:14:5",
+        0.98
+      ],
+      [
+        128,
+        "orchard:ivo:12:0:5",
+        0.98
+      ],
+      [
+        128,
+        "orchard:ivo:12:6:5",
+        0.98
+      ],
+      [
+        128,
+        "orchard:ivo:12:12:5",
+        0.98
+      ]
+    ],
+    "orchard:Mara": [
+      [
+        105,
+        "orchard:mara:18:4:5",
+        0.98
+      ],
+      [
+        105,
+        "orchard:mara:18:10:5",
+        0.98
+      ],
+      [
+        107,
+        "orchard:mara:20:2:5",
+        0.98
+      ],
+      [
+        107,
+        "orchard:mara:20:8:5",
+        0.98
+      ],
+      [
+        107,
+        "orchard:mara:20:14:5",
+        0.98
+      ],
+      [
+        109,
+        "orchard:mara:22:0:5",
+        0.98
+      ],
+      [
+        109,
+        "orchard:mara:22:6:5",
+        0.98
+      ],
+      [
+        109,
+        "orchard:mara:22:12:5",
+        0.98
+      ],
+      [
+        110,
+        "orchard:mara:23:1:5",
+        0.98
+      ],
+      [
+        110,
+        "orchard:mara:23:13:5",
+        0.98
+      ],
+      [
+        112,
+        "orchard:mara:25:11:5",
+        0.98
+      ],
+      [
+        114,
+        "orchard:mara:27:9:5",
+        0.98
+      ],
+      [
+        116,
+        "orchard:mara:0:7:5",
+        0.98
+      ],
+      [
+        118,
+        "orchard:mara:2:5:5",
+        0.98
+      ],
+      [
+        121,
+        "orchard:mara:5:4:5",
+        0.98
+      ],
+      [
+        121,
+        "orchard:mara:5:10:5",
+        0.98
+      ],
+      [
+        123,
+        "orchard:mara:7:2:5",
+        0.98
+      ],
+      [
+        123,
+        "orchard:mara:7:8:5",
+        0.98
+      ],
+      [
+        123,
+        "orchard:mara:7:14:5",
+        0.98
+      ],
+      [
+        125,
+        "orchard:mara:9:0:5",
+        0.98
+      ],
+      [
+        125,
+        "orchard:mara:9:6:5",
+        0.98
+      ],
+      [
+        125,
+        "orchard:mara:9:12:5",
+        0.98
+      ],
+      [
+        127,
+        "orchard:mara:11:4:5",
+        0.98
+      ],
+      [
+        127,
+        "orchard:mara:11:10:5",
+        0.98
+      ]
+    ],
+    "repair_ring:Juno": [
+      [
+        107,
+        "repair_ring:juno:20:3:5",
+        0.98
+      ],
+      [
+        107,
+        "repair_ring:juno:20:15:5",
+        0.98
+      ],
+      [
+        109,
+        "repair_ring:juno:22:1:5",
+        0.98
+      ],
+      [
+        109,
+        "repair_ring:juno:22:13:5",
+        0.98
+      ],
+      [
+        110,
+        "repair_ring:juno:23:2:5",
+        0.98
+      ],
+      [
+        110,
+        "repair_ring:juno:23:8:5",
+        0.98
+      ],
+      [
+        110,
+        "repair_ring:juno:23:14:5",
+        0.98
+      ],
+      [
+        112,
+        "repair_ring:juno:25:0:5",
+        0.98
+      ],
+      [
+        112,
+        "repair_ring:juno:25:6:5",
+        0.98
+      ],
+      [
+        112,
+        "repair_ring:juno:25:12:5",
+        0.98
+      ],
+      [
+        114,
+        "repair_ring:juno:27:4:5",
+        0.98
+      ],
+      [
+        114,
+        "repair_ring:juno:27:10:5",
+        0.98
+      ],
+      [
+        116,
+        "repair_ring:juno:0:2:5",
+        0.98
+      ],
+      [
+        116,
+        "repair_ring:juno:0:8:5",
+        0.98
+      ],
+      [
+        116,
+        "repair_ring:juno:0:14:5",
+        0.98
+      ],
+      [
+        118,
+        "repair_ring:juno:2:0:5",
+        0.98
+      ],
+      [
+        118,
+        "repair_ring:juno:2:6:5",
+        0.98
+      ],
+      [
+        118,
+        "repair_ring:juno:2:12:5",
+        0.98
+      ],
+      [
+        121,
+        "repair_ring:juno:5:5:5",
+        0.98
+      ],
+      [
+        123,
+        "repair_ring:juno:7:3:5",
+        0.98
+      ],
+      [
+        123,
+        "repair_ring:juno:7:15:5",
+        0.98
+      ],
+      [
+        125,
+        "repair_ring:juno:9:1:5",
+        0.98
+      ],
+      [
+        125,
+        "repair_ring:juno:9:13:5",
+        0.98
+      ],
+      [
+        127,
+        "repair_ring:juno:11:11:5",
+        0.98
+      ]
+    ],
+    "repair_ring:Pax": [
+      [
+        93,
+        "repair_ring:pax:6:0:5",
+        0.98
+      ],
+      [
+        93,
+        "repair_ring:pax:6:6:5",
+        0.98
+      ],
+      [
+        93,
+        "repair_ring:pax:6:12:5",
+        0.98
+      ],
+      [
+        95,
+        "repair_ring:pax:8:4:5",
+        0.98
+      ],
+      [
+        95,
+        "repair_ring:pax:8:10:5",
+        0.98
+      ],
+      [
+        97,
+        "repair_ring:pax:10:2:5",
+        0.98
+      ],
+      [
+        97,
+        "repair_ring:pax:10:8:5",
+        0.98
+      ],
+      [
+        97,
+        "repair_ring:pax:10:14:5",
+        0.98
+      ],
+      [
+        99,
+        "repair_ring:pax:12:0:5",
+        0.98
+      ],
+      [
+        99,
+        "repair_ring:pax:12:6:5",
+        0.98
+      ],
+      [
+        99,
+        "repair_ring:pax:12:12:5",
+        0.98
+      ],
+      [
+        111,
+        "repair_ring:pax:24:4:5",
+        0.98
+      ],
+      [
+        111,
+        "repair_ring:pax:24:10:5",
+        0.98
+      ],
+      [
+        113,
+        "repair_ring:pax:26:2:5",
+        0.98
+      ],
+      [
+        113,
+        "repair_ring:pax:26:8:5",
+        0.98
+      ],
+      [
+        113,
+        "repair_ring:pax:26:14:5",
+        0.98
+      ],
+      [
+        115,
+        "repair_ring:pax:28:0:5",
+        0.98
+      ],
+      [
+        115,
+        "repair_ring:pax:28:6:5",
+        0.98
+      ],
+      [
+        115,
+        "repair_ring:pax:28:12:5",
+        0.98
+      ],
+      [
+        117,
+        "repair_ring:pax:1:4:5",
+        0.98
+      ],
+      [
+        117,
+        "repair_ring:pax:1:10:5",
+        0.98
+      ],
+      [
+        119,
+        "repair_ring:pax:3:2:5",
+        0.98
+      ],
+      [
+        119,
+        "repair_ring:pax:3:8:5",
+        0.98
+      ],
+      [
+        119,
+        "repair_ring:pax:3:14:5",
+        0.98
+      ]
+    ],
+    "riverbend:Ari": [
+      [
+        102,
+        "riverbend:ari:15:0:5",
+        0.98
+      ],
+      [
+        102,
+        "riverbend:ari:15:6:5",
+        0.98
+      ],
+      [
+        102,
+        "riverbend:ari:15:12:5",
+        0.98
+      ],
+      [
+        104,
+        "riverbend:ari:17:4:5",
+        0.98
+      ],
+      [
+        104,
+        "riverbend:ari:17:10:5",
+        0.98
+      ],
+      [
+        106,
+        "riverbend:ari:19:2:5",
+        0.98
+      ],
+      [
+        106,
+        "riverbend:ari:19:8:5",
+        0.98
+      ],
+      [
+        106,
+        "riverbend:ari:19:14:5",
+        0.98
+      ],
+      [
+        108,
+        "riverbend:ari:21:0:5",
+        0.98
+      ],
+      [
+        108,
+        "riverbend:ari:21:6:5",
+        0.98
+      ],
+      [
+        108,
+        "riverbend:ari:21:12:5",
+        0.98
+      ],
+      [
+        120,
+        "riverbend:ari:4:4:5",
+        0.98
+      ],
+      [
+        120,
+        "riverbend:ari:4:10:5",
+        0.98
+      ],
+      [
+        122,
+        "riverbend:ari:6:2:5",
+        0.98
+      ],
+      [
+        122,
+        "riverbend:ari:6:8:5",
+        0.98
+      ],
+      [
+        122,
+        "riverbend:ari:6:14:5",
+        0.98
+      ],
+      [
+        124,
+        "riverbend:ari:8:0:5",
+        0.98
+      ],
+      [
+        124,
+        "riverbend:ari:8:6:5",
+        0.98
+      ],
+      [
+        124,
+        "riverbend:ari:8:12:5",
+        0.98
+      ],
+      [
+        126,
+        "riverbend:ari:10:4:5",
+        0.98
+      ],
+      [
+        126,
+        "riverbend:ari:10:10:5",
+        0.98
+      ],
+      [
+        128,
+        "riverbend:ari:12:2:5",
+        0.98
+      ],
+      [
+        128,
+        "riverbend:ari:12:8:5",
+        0.98
+      ],
+      [
+        128,
+        "riverbend:ari:12:14:5",
+        0.98
+      ]
+    ],
+    "riverbend:Lio": [
+      [
+        105,
+        "riverbend:lio:18:12:5",
+        0.98
+      ],
+      [
+        107,
+        "riverbend:lio:20:4:5",
+        0.98
+      ],
+      [
+        107,
+        "riverbend:lio:20:10:5",
+        0.98
+      ],
+      [
+        109,
+        "riverbend:lio:22:2:5",
+        0.98
+      ],
+      [
+        109,
+        "riverbend:lio:22:8:5",
+        0.98
+      ],
+      [
+        109,
+        "riverbend:lio:22:14:5",
+        0.98
+      ],
+      [
+        110,
+        "riverbend:lio:23:9:5",
+        0.98
+      ],
+      [
+        112,
+        "riverbend:lio:25:7:5",
+        0.98
+      ],
+      [
+        114,
+        "riverbend:lio:27:5:5",
+        0.98
+      ],
+      [
+        116,
+        "riverbend:lio:0:3:5",
+        0.98
+      ],
+      [
+        116,
+        "riverbend:lio:0:15:5",
+        0.98
+      ],
+      [
+        118,
+        "riverbend:lio:2:1:5",
+        0.98
+      ],
+      [
+        118,
+        "riverbend:lio:2:13:5",
+        0.98
+      ],
+      [
+        121,
+        "riverbend:lio:5:0:5",
+        0.98
+      ],
+      [
+        121,
+        "riverbend:lio:5:6:5",
+        0.98
+      ],
+      [
+        121,
+        "riverbend:lio:5:12:5",
+        0.98
+      ],
+      [
+        123,
+        "riverbend:lio:7:4:5",
+        0.98
+      ],
+      [
+        123,
+        "riverbend:lio:7:10:5",
+        0.98
+      ],
+      [
+        125,
+        "riverbend:lio:9:2:5",
+        0.98
+      ],
+      [
+        125,
+        "riverbend:lio:9:8:5",
+        0.98
+      ],
+      [
+        125,
+        "riverbend:lio:9:14:5",
+        0.98
+      ],
+      [
+        127,
+        "riverbend:lio:11:0:5",
+        0.98
+      ],
+      [
+        127,
+        "riverbend:lio:11:6:5",
+        0.98
+      ],
+      [
+        127,
+        "riverbend:lio:11:12:5",
+        0.98
+      ]
+    ],
+    "roofward:Fay": [
+      [
+        103,
+        "roofward:fay:16:3:5",
+        0.98
+      ],
+      [
+        103,
+        "roofward:fay:16:15:5",
+        0.98
+      ],
+      [
+        105,
+        "roofward:fay:18:1:5",
+        0.98
+      ],
+      [
+        105,
+        "roofward:fay:18:13:5",
+        0.98
+      ],
+      [
+        107,
+        "roofward:fay:20:11:5",
+        0.98
+      ],
+      [
+        109,
+        "roofward:fay:22:9:5",
+        0.98
+      ],
+      [
+        110,
+        "roofward:fay:23:4:5",
+        0.98
+      ],
+      [
+        110,
+        "roofward:fay:23:10:5",
+        0.98
+      ],
+      [
+        112,
+        "roofward:fay:25:2:5",
+        0.98
+      ],
+      [
+        112,
+        "roofward:fay:25:8:5",
+        0.98
+      ],
+      [
+        112,
+        "roofward:fay:25:14:5",
+        0.98
+      ],
+      [
+        114,
+        "roofward:fay:27:0:5",
+        0.98
+      ],
+      [
+        114,
+        "roofward:fay:27:6:5",
+        0.98
+      ],
+      [
+        114,
+        "roofward:fay:27:12:5",
+        0.98
+      ],
+      [
+        116,
+        "roofward:fay:0:4:5",
+        0.98
+      ],
+      [
+        116,
+        "roofward:fay:0:10:5",
+        0.98
+      ],
+      [
+        118,
+        "roofward:fay:2:2:5",
+        0.98
+      ],
+      [
+        118,
+        "roofward:fay:2:8:5",
+        0.98
+      ],
+      [
+        118,
+        "roofward:fay:2:14:5",
+        0.98
+      ],
+      [
+        121,
+        "roofward:fay:5:1:5",
+        0.98
+      ],
+      [
+        121,
+        "roofward:fay:5:13:5",
+        0.98
+      ],
+      [
+        123,
+        "roofward:fay:7:11:5",
+        0.98
+      ],
+      [
+        125,
+        "roofward:fay:9:9:5",
+        0.98
+      ],
+      [
+        127,
+        "roofward:fay:11:7:5",
+        0.98
+      ]
+    ],
+    "roofward:Sera": [
+      [
+        93,
+        "roofward:sera:6:2:5",
+        0.98
+      ],
+      [
+        93,
+        "roofward:sera:6:8:5",
+        0.98
+      ],
+      [
+        93,
+        "roofward:sera:6:14:5",
+        0.98
+      ],
+      [
+        95,
+        "roofward:sera:8:0:5",
+        0.98
+      ],
+      [
+        95,
+        "roofward:sera:8:6:5",
+        0.98
+      ],
+      [
+        95,
+        "roofward:sera:8:12:5",
+        0.98
+      ],
+      [
+        97,
+        "roofward:sera:10:4:5",
+        0.98
+      ],
+      [
+        97,
+        "roofward:sera:10:10:5",
+        0.98
+      ],
+      [
+        99,
+        "roofward:sera:12:2:5",
+        0.98
+      ],
+      [
+        99,
+        "roofward:sera:12:8:5",
+        0.98
+      ],
+      [
+        99,
+        "roofward:sera:12:14:5",
+        0.98
+      ],
+      [
+        111,
+        "roofward:sera:24:0:5",
+        0.98
+      ],
+      [
+        111,
+        "roofward:sera:24:6:5",
+        0.98
+      ],
+      [
+        111,
+        "roofward:sera:24:12:5",
+        0.98
+      ],
+      [
+        113,
+        "roofward:sera:26:4:5",
+        0.98
+      ],
+      [
+        113,
+        "roofward:sera:26:10:5",
+        0.98
+      ],
+      [
+        115,
+        "roofward:sera:28:2:5",
+        0.98
+      ],
+      [
+        115,
+        "roofward:sera:28:8:5",
+        0.98
+      ],
+      [
+        115,
+        "roofward:sera:28:14:5",
+        0.98
+      ],
+      [
+        117,
+        "roofward:sera:1:0:5",
+        0.98
+      ],
+      [
+        117,
+        "roofward:sera:1:6:5",
+        0.98
+      ],
+      [
+        117,
+        "roofward:sera:1:12:5",
+        0.98
+      ],
+      [
+        119,
+        "roofward:sera:3:4:5",
+        0.98
+      ],
+      [
+        119,
+        "roofward:sera:3:10:5",
+        0.98
+      ]
+    ],
+    "signal:Milo": [
+      [
+        105,
+        "signal:milo:18:3:5",
+        0.98
+      ],
+      [
+        105,
+        "signal:milo:18:15:5",
+        0.98
+      ],
+      [
+        107,
+        "signal:milo:20:1:5",
+        0.98
+      ],
+      [
+        107,
+        "signal:milo:20:13:5",
+        0.98
+      ],
+      [
+        109,
+        "signal:milo:22:11:5",
+        0.98
+      ],
+      [
+        110,
+        "signal:milo:23:0:5",
+        0.98
+      ],
+      [
+        110,
+        "signal:milo:23:6:5",
+        0.98
+      ],
+      [
+        110,
+        "signal:milo:23:12:5",
+        0.98
+      ],
+      [
+        112,
+        "signal:milo:25:4:5",
+        0.98
+      ],
+      [
+        112,
+        "signal:milo:25:10:5",
+        0.98
+      ],
+      [
+        114,
+        "signal:milo:27:2:5",
+        0.98
+      ],
+      [
+        114,
+        "signal:milo:27:8:5",
+        0.98
+      ],
+      [
+        114,
+        "signal:milo:27:14:5",
+        0.98
+      ],
+      [
+        116,
+        "signal:milo:0:0:5",
+        0.98
+      ],
+      [
+        116,
+        "signal:milo:0:6:5",
+        0.98
+      ],
+      [
+        116,
+        "signal:milo:0:12:5",
+        0.98
+      ],
+      [
+        118,
+        "signal:milo:2:4:5",
+        0.98
+      ],
+      [
+        118,
+        "signal:milo:2:10:5",
+        0.98
+      ],
+      [
+        121,
+        "signal:milo:5:3:5",
+        0.98
+      ],
+      [
+        121,
+        "signal:milo:5:15:5",
+        0.98
+      ],
+      [
+        123,
+        "signal:milo:7:1:5",
+        0.98
+      ],
+      [
+        123,
+        "signal:milo:7:13:5",
+        0.98
+      ],
+      [
+        125,
+        "signal:milo:9:11:5",
+        0.98
+      ],
+      [
+        127,
+        "signal:milo:11:9:5",
+        0.98
+      ]
+    ],
+    "signal:Ren": [
+      [
+        93,
+        "signal:ren:6:4:5",
+        0.98
+      ],
+      [
+        93,
+        "signal:ren:6:10:5",
+        0.98
+      ],
+      [
+        95,
+        "signal:ren:8:2:5",
+        0.98
+      ],
+      [
+        95,
+        "signal:ren:8:8:5",
+        0.98
+      ],
+      [
+        95,
+        "signal:ren:8:14:5",
+        0.98
+      ],
+      [
+        97,
+        "signal:ren:10:0:5",
+        0.98
+      ],
+      [
+        97,
+        "signal:ren:10:6:5",
+        0.98
+      ],
+      [
+        97,
+        "signal:ren:10:12:5",
+        0.98
+      ],
+      [
+        99,
+        "signal:ren:12:4:5",
+        0.98
+      ],
+      [
+        99,
+        "signal:ren:12:10:5",
+        0.98
+      ],
+      [
+        111,
+        "signal:ren:24:2:5",
+        0.98
+      ],
+      [
+        111,
+        "signal:ren:24:8:5",
+        0.98
+      ],
+      [
+        111,
+        "signal:ren:24:14:5",
+        0.98
+      ],
+      [
+        113,
+        "signal:ren:26:0:5",
+        0.98
+      ],
+      [
+        113,
+        "signal:ren:26:6:5",
+        0.98
+      ],
+      [
+        113,
+        "signal:ren:26:12:5",
+        0.98
+      ],
+      [
+        115,
+        "signal:ren:28:4:5",
+        0.98
+      ],
+      [
+        115,
+        "signal:ren:28:10:5",
+        0.98
+      ],
+      [
+        117,
+        "signal:ren:1:2:5",
+        0.98
+      ],
+      [
+        117,
+        "signal:ren:1:8:5",
+        0.98
+      ],
+      [
+        117,
+        "signal:ren:1:14:5",
+        0.98
+      ],
+      [
+        119,
+        "signal:ren:3:0:5",
+        0.98
+      ],
+      [
+        119,
+        "signal:ren:3:6:5",
+        0.98
+      ],
+      [
+        119,
+        "signal:ren:3:12:5",
+        0.98
+      ]
+    ]
+  },
+  "project_durability": {
+    "archive": 0.444,
+    "orchard": 0.42,
+    "repair_ring": 0.42,
+    "riverbend": 0.476,
+    "roofward": 0.42,
+    "signal": 0.42
+  },
+  "project_stage": {
+    "archive": 3,
+    "orchard": 4,
+    "repair_ring": 4,
+    "riverbend": 1,
+    "roofward": 4,
+    "signal": 4
+  },
+  "queue_depth": {
+    "archive:Nia": 7,
+    "archive:Toma": 5,
+    "orchard:Ivo": 4,
+    "orchard:Mara": 7,
+    "repair_ring:Juno": 5,
+    "repair_ring:Pax": 7,
+    "riverbend:Ari": 7,
+    "riverbend:Lio": 7,
+    "roofward:Fay": 7,
+    "roofward:Sera": 4,
+    "signal:Milo": 7,
+    "signal:Ren": 3
+  },
+  "relationship_score": {
+    "archive:Nia": 0.98,
+    "archive:Toma": 0.98,
+    "orchard:Ivo": 0.98,
+    "orchard:Mara": 0.98,
+    "repair_ring:Juno": 0.98,
+    "repair_ring:Pax": 0.98,
+    "riverbend:Ari": 0.98,
+    "riverbend:Lio": 0.98,
+    "roofward:Fay": 0.98,
+    "roofward:Sera": 0.98,
+    "signal:Milo": 0.98,
+    "signal:Ren": 0.98
+  },
+  "settlements": [
+    {
+      "care_preference": "ask before touching sore wrist",
+      "dialect_id": "riverbend-dialect-9",
+      "flower_node": "node-03",
+      "frequency_hz": 7.83,
+      "hazard": "wet cold crossing",
+      "project_id": "bridge-lantern-rig",
+      "project_objects": [
+        "cedar plank",
+        "ridge lantern",
+        "binding cord"
+      ],
+      "project_stages": [
+        "inspect crossing",
+        "fit plank",
+        "bind cord",
+        "raise lantern",
+        "log maintenance"
+      ],
+      "project_type": "repair",
+      "resident_a": "Ari",
+      "resident_b": "Lio",
+      "rooms": [
+        "arrival court",
+        "plank hall",
+        "wet crossing",
+        "dry ridge",
+        "kit alcove"
+      ],
+      "settlement_id": "riverbend"
+    },
+    {
+      "care_preference": "explain treatment first",
+      "dialect_id": "roofward-dialect-9",
+      "flower_node": "node-05",
+      "frequency_hz": 8.21,
+      "hazard": "glare heat stair",
+      "project_id": "sun-lens-archive",
+      "project_objects": [
+        "sun lens",
+        "herb ledger",
+        "brass hinge"
+      ],
+      "project_stages": [
+        "sort ledger",
+        "polish lens",
+        "set hinge",
+        "open archive",
+        "teach access rule"
+      ],
+      "project_type": "craft",
+      "resident_a": "Fay",
+      "resident_b": "Sera",
+      "rooms": [
+        "arrival court",
+        "glass stair",
+        "warm lane",
+        "ledger loft",
+        "sun sill"
+      ],
+      "settlement_id": "roofward"
+    },
+    {
+      "care_preference": "do not interrupt recall",
+      "dialect_id": "archive-dialect-9",
+      "flower_node": "node-08",
+      "frequency_hz": 6.4,
+      "hazard": "ink strain niche",
+      "project_id": "memory-spool-loom",
+      "project_objects": [
+        "signal spool",
+        "ink ribbon",
+        "memory tag"
+      ],
+      "project_stages": [
+        "sort tags",
+        "thread spool",
+        "ink route",
+        "test recall",
+        "seal annotation"
+      ],
+      "project_type": "repair",
+      "resident_a": "Nia",
+      "resident_b": "Toma",
+      "rooms": [
+        "arrival court",
+        "stone stacks",
+        "spool room",
+        "ink niche",
+        "memory desk"
+      ],
+      "settlement_id": "archive"
+    },
+    {
+      "care_preference": "offer rest before aid",
+      "dialect_id": "signal-dialect-9",
+      "flower_node": "node-11",
+      "frequency_hz": 9.12,
+      "hazard": "wind mast fatigue",
+      "project_id": "signal-path-beacon",
+      "project_objects": [
+        "mast rope",
+        "oil lantern",
+        "signal lens"
+      ],
+      "project_stages": [
+        "check rope",
+        "fill lantern",
+        "align lens",
+        "send pulse",
+        "post watch note"
+      ],
+      "project_type": "craft",
+      "resident_a": "Milo",
+      "resident_b": "Ren",
+      "rooms": [
+        "arrival court",
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "signal perch"
+      ],
+      "settlement_id": "signal"
+    },
+    {
+      "care_preference": "keep distance while muddy",
+      "dialect_id": "orchard-dialect-9",
+      "flower_node": "node-01",
+      "frequency_hz": 5.68,
+      "hazard": "mud slip row",
+      "project_id": "seed-shed-restock",
+      "project_objects": [
+        "seed satchel",
+        "market token",
+        "dry cord"
+      ],
+      "project_stages": [
+        "count seed",
+        "dry cord",
+        "tag token",
+        "seal shed",
+        "teach tally"
+      ],
+      "project_type": "repair",
+      "resident_a": "Ivo",
+      "resident_b": "Mara",
+      "rooms": [
+        "arrival court",
+        "seed lane",
+        "mud row",
+        "market plank",
+        "satchel shed"
+      ],
+      "settlement_id": "orchard"
+    },
+    {
+      "care_preference": "ask before bandage",
+      "dialect_id": "repair_ring-dialect-9",
+      "flower_node": "node-09",
+      "frequency_hz": 10.03,
+      "hazard": "spark burn lane",
+      "project_id": "bell-circuit-stabilizer",
+      "project_objects": [
+        "insulated tongs",
+        "copper wire",
+        "bell gauge"
+      ],
+      "project_stages": [
+        "cool bench",
+        "clip wire",
+        "test gauge",
+        "quiet bell",
+        "publish warning"
+      ],
+      "project_type": "repair",
+      "resident_a": "Juno",
+      "resident_b": "Pax",
+      "rooms": [
+        "arrival court",
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "cool corner"
+      ],
+      "settlement_id": "repair_ring"
+    }
+  ],
+  "trust": {
+    "archive:Nia": 0.96,
+    "archive:Toma": 0.96,
+    "orchard:Ivo": 0.96,
+    "orchard:Mara": 0.954,
+    "repair_ring:Juno": 0.916,
+    "repair_ring:Pax": 0.96,
+    "riverbend:Ari": 0.96,
+    "riverbend:Lio": 0.934,
+    "roofward:Fay": 0.886,
+    "roofward:Sera": 0.96,
+    "signal:Milo": 0.928,
+    "signal:Ren": 0.96
+  }
+}

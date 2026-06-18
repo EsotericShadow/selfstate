@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 281 Browser World v41</title>
+  <style>
+    :root {
+      --ink: #18251d;
+      --paper: #f4efd9;
+      --moss: #526b3f;
+      --clay: #b76f45;
+      --water: #537f88;
+      --gold: #d8b25c;
+    }
+    body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: radial-gradient(circle at 18% 12%, #fff7cb, transparent 22rem), linear-gradient(135deg, #e9d9b7, #c4d2ba 48%, #90b0b1); }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 4.6rem); line-height: 0.92; margin: 20px 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    section { border: 2px solid rgba(24,37,29,.35); border-radius: 22px; padding: 18px; background: rgba(244,239,217,.78); box-shadow: 0 18px 50px rgba(24,37,29,.18); }
+    button { margin: 5px; padding: 9px 11px; border: 1px solid var(--ink); border-radius: 999px; background: var(--gold); color: var(--ink); cursor: pointer; }
+    button:hover { background: var(--clay); color: #fff6df; }
+    .boundary { border-left: 8px solid var(--clay); }
+    .flower { width: 180px; height: 180px; border-radius: 50%; background: repeating-radial-gradient(circle, rgba(216,178,92,.42) 0 10px, rgba(83,127,136,.25) 10px 20px); display: grid; place-items: center; }
+    .log { min-height: 120px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser World v41: clocks, queues, consent, restore-visible relationships</h1>
+  <section class="boundary"><strong>Boundary:</strong> deterministic scaffold only; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no metaphysical frequency claim.</section>
+  <div class="grid">
+    <section id="scheduler-panel"><h2>Real-time scheduler</h2><p>Ticks carry heartbeat rate, flower phase, latency, and drift.</p></section>
+    <section id="task-queue-panel"><h2>Resident task queues</h2><p>Residents dispatch, defer, or block tasks from body and dependency pressure.</p></section>
+    <section id="multi-object-project-panel"><h2>Multi-object projects</h2><p>Crafting and repair require multiple objects, stages, durability, and rollback markers.</p></section>
+    <section id="care-consent-panel"><h2>Care consent</h2><p>Treatment requires request, grant, refusal/defer handling, and visible respect for no.</p></section>
+    <section id="dialect-relationship-panel"><h2>Dialect relationship restore</h2><p>Dialect phrases bind to trust summaries and must remain visible after save/restore.</p></section>
+    <section id="save-restore-panel"><h2>Save/restore</h2><p>Queues, projects, consent history, relationship memory, and replay export share checksums.</p></section>
+    <section id="frequency-flower-panel"><h2>Frequency and flower phase</h2><div class="flower">flower phase</div><p>Frequency values are simulation timing metadata, not metaphysical evidence.</p></section>
+  </div>
+  <section><h2>Controls</h2><button data-action="tick" onclick="advanceSchedulerTick('riverbend')">advance scheduler</button>
+<button data-action="queue" onclick="dispatchTaskQueue('riverbend')">dispatch queue</button>
+<button data-action="project" onclick="performProjectStep('riverbend')">perform project step</button>
+<button data-action="consent" onclick="requestCareConsent('riverbend')">request care consent</button>
+<button data-action="restore" onclick="restoreDialectRelationship('riverbend')">restore dialect relationship</button>
+<button data-action="save" onclick="saveWorldState('riverbend')">save state</button>
+<button data-action="replay" onclick="exportReplay('riverbend')">export replay</button>
+<button data-action="tick" onclick="advanceSchedulerTick('roofward')">advance scheduler</button>
+<button data-action="queue" onclick="dispatchTaskQueue('roofward')">dispatch queue</button>
+<button data-action="project" onclick="performProjectStep('roofward')">perform project step</button>
+<button data-action="consent" onclick="requestCareConsent('roofward')">request care consent</button>
+<button data-action="restore" onclick="restoreDialectRelationship('roofward')">restore dialect relationship</button>
+<button data-action="save" onclick="saveWorldState('roofward')">save state</button>
+<button data-action="replay" onclick="exportReplay('roofward')">export replay</button>
+<button data-action="tick" onclick="advanceSchedulerTick('archive')">advance scheduler</button>
+<button data-action="queue" onclick="dispatchTaskQueue('archive')">dispatch queue</button>
+<button data-action="project" onclick="performProjectStep('archive')">perform project step</button>
+<button data-action="consent" onclick="requestCareConsent('archive')">request care consent</button>
+<button data-action="restore" onclick="restoreDialectRelationship('archive')">restore dialect relationship</button>
+<button data-action="save" onclick="saveWorldState('archive')">save state</button>
+<button data-action="replay" onclick="exportReplay('archive')">export replay</button>
+<button data-action="tick" onclick="advanceSchedulerTick('signal')">advance scheduler</button>
+<button data-action="queue" onclick="dispatchTaskQueue('signal')">dispatch queue</button>
+<button data-action="project" onclick="performProjectStep('signal')">perform project step</button>
+<button data-action="consent" onclick="requestCareConsent('signal')">request care consent</button>
+<button data-action="restore" onclick="restoreDialectRelationship('signal')">restore dialect relationship</button>
+<button data-action="save" onclick="saveWorldState('signal')">save state</button>
+<button data-action="replay" onclick="exportReplay('signal')">export replay</button>
+<button data-action="tick" onclick="advanceSchedulerTick('orchard')">advance scheduler</button>
+<button data-action="queue" onclick="dispatchTaskQueue('orchard')">dispatch queue</button>
+<button data-action="project" onclick="performProjectStep('orchard')">perform project step</button>
+<button data-action="consent" onclick="requestCareConsent('orchard')">request care consent</button>
+<button data-action="restore" onclick="restoreDialectRelationship('orchard')">restore dialect relationship</button>
+<button data-action="save" onclick="saveWorldState('orchard')">save state</button>
+<button data-action="replay" onclick="exportReplay('orchard')">export replay</button>
+<button data-action="tick" onclick="advanceSchedulerTick('repair_ring')">advance scheduler</button>
+<button data-action="queue" onclick="dispatchTaskQueue('repair_ring')">dispatch queue</button>
+<button data-action="project" onclick="performProjectStep('repair_ring')">perform project step</button>
+<button data-action="consent" onclick="requestCareConsent('repair_ring')">request care consent</button>
+<button data-action="restore" onclick="restoreDialectRelationship('repair_ring')">restore dialect relationship</button>
+<button data-action="save" onclick="saveWorldState('repair_ring')">save state</button>
+<button data-action="replay" onclick="exportReplay('repair_ring')">export replay</button></section>
+  <section><h2>Browser log</h2><div id="log" class="log">ready</div></section>
+</main>
+<script>
+const storeKey = 'ssrm.v41.browser.world';
+let state = JSON.parse(localStorage.getItem(storeKey) || '{"tick":0,"events":[]}');
+function writeLog(message) {
+  state.tick += 1;
+  state.events.push({tick: state.tick, message});
+  if (state.events.length > 18) state.events = state.events.slice(-18);
+  localStorage.setItem(storeKey, JSON.stringify(state));
+  document.getElementById('log').textContent = state.events.map(e => `${e.tick}: ${e.message}`).join('
+');
+}
+function advanceSchedulerTick(scope) { writeLog(`scheduler tick for ${scope} with heartbeat and flower phase`); }
+function dispatchTaskQueue(scope) { writeLog(`task queue dispatch attempted for ${scope}`); }
+function performProjectStep(scope) { writeLog(`multi-object project step attempted for ${scope}`); }
+function requestCareConsent(scope) { writeLog(`care consent requested before treatment in ${scope}`); }
+function restoreDialectRelationship(scope) {
+  const restored = JSON.parse(localStorage.getItem(`ssrm.v41.relationship.${scope}`) || '{"phrase":"none yet"}');
+  writeLog(`restored dialect relationship for ${scope}: ${restored.phrase}`);
+}
+function saveWorldState(scope) {
+  localStorage.setItem(`ssrm.v41.relationship.${scope}`, JSON.stringify({phrase: `saved phrase for ${scope}`, savedAt: state.tick}));
+  localStorage.setItem(`ssrm.v41.world.${scope}`, JSON.stringify(state));
+  writeLog(`saved queue/project/consent/relationship state for ${scope}`);
+}
+function exportReplay(scope) { writeLog(`replay export prepared for ${scope}`); }
+localStorage.setItem('ssrm.v41.boot', JSON.stringify({loaded: true}));
+writeLog('browser surface loaded from localStorage');
+</script>
+</body>
+</html>

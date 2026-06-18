@@ -1520,3 +1520,10 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v117_primary_shell_avatar_absence_accountability_receipt_browser_smoke.json`, and `docs/357_ssrm_3d_browser_world_v117_primary_shell_avatar_absence_accountability_receipt_report.md`.
 - Browser result: after `Wait offscreen`, resident-thread choice, and `Resolve obligation`, the avatar thread remains pending; `Account for avatar absence` marks it accounted, preserves `milo-offscreen-water-jars` as resolved, keeps Milo schedule/debt resolved/settled, records `History preserved: yes`, and survives reload with zero console errors.
 - Boundary: browser-local deterministic avatar absence accountability receipt only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 358 Evidence Matrix Entry
+
+- Claim: after avatar absence is accounted, the next return greeting can reference both the resolved resident-caused offscreen obligation and the accounted avatar-caused absence without rewriting history.
+- Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity_browser_smoke.json`, and `docs/358_ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity_report.md`.
+- Browser result: before the next return the Return greeting panel is empty; after `Enter`, Milo's greeting references `milo-offscreen-water-jars resolved/resolved` and `Avatar absence: accounted`; resident history still includes Fay changing Milo and the new return greeting linkage; schedule/debt remain resolved/settled and reload preserves the greeting.
+- Boundary: browser-local deterministic accountability return-greeting continuity only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.

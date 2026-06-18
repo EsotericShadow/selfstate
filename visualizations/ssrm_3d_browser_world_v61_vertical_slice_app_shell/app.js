@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -66,6 +66,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   resources: { water: 12, fiber: 10, wood: 17, care: 6 },
   replay: [],
   returnContinuity: null,
+  returnGreetingContinuity: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -94,6 +95,20 @@ function renderReturnContinuity() {
     return;
   }
   node.textContent = `${world.returnContinuity.resident} ${world.returnContinuity.memory}; replay before return ${world.returnContinuity.replayRowsBeforeReturn}.`;
+}
+function renderReturnGreetingContinuity() {
+  const node = document.getElementById('returnGreetingContinuityOut');
+  if (!node) return;
+  if (!world.returnGreetingContinuity) {
+    node.textContent = 'No accountability return greeting yet.';
+    return;
+  }
+  node.textContent = [
+    `${world.returnGreetingContinuity.resident} greeting: ${world.returnGreetingContinuity.greeting}`,
+    `Resolved: ${world.returnGreetingContinuity.residentThreadId} ${world.returnGreetingContinuity.residentObligationStatus}`,
+    `Avatar absence: ${world.returnGreetingContinuity.avatarThreadStatus}`,
+    `History preserved: ${world.returnGreetingContinuity.residentHistoryPreserved ? 'yes' : 'no'}`
+  ].join('\n');
 }
 function renderPromiseFollowUp() {
   const node = document.getElementById('promiseFollowUpOut');
@@ -197,6 +212,7 @@ function log(event, payload) {
   localStorage.setItem(REPLAY_KEY, JSON.stringify(world.replay));
   render();
   renderReturnContinuity();
+  renderReturnGreetingContinuity();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -239,8 +255,40 @@ function enterWorld() {
       boundary: 'browser-local-return-recognition-public-state-only'
     };
     advancePromiseFollowUpState(residentName, 'return', replayRowsBeforeReturn);
+    applyAccountabilityReturnGreeting(replayRowsBeforeReturn);
   }
-  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null, promiseFollowUp: world.promiseFollowUp || null });
+  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null, returnGreetingContinuity: world.returnGreetingContinuity || null, promiseFollowUp: world.promiseFollowUp || null });
+}
+function applyAccountabilityReturnGreeting(replayRowsBeforeReturn) {
+  const receipt = world.avatarAbsenceAccountabilityReceipt;
+  if (!receipt || receipt.phase !== 'avatar-absence-accounted') return null;
+  const residentThreadId = receipt.residentThreadId;
+  const obligation = (world.obligationLedger || []).find(row => row.id === residentThreadId);
+  const event = (world.offscreenObligationEvents || []).find(row => row.obligationId === residentThreadId);
+  const residentName = obligation ? obligation.resident : receipt.residentThreadId.split('-')[0];
+  const resident = world.residents[residentName];
+  if (!resident) return null;
+  const historyPreserved = Boolean(event && obligation && receipt.residentHistoryPreserved);
+  const greeting = `${residentName} remembers ${residentThreadId} was ${obligation ? obligation.status : 'missing'} and your absence was ${receipt.avatarThreadStatus}`;
+  mutateResident(residentName, {
+    trust: 0.008,
+    progress: 0.007,
+    memory: `return greeting linked ${residentThreadId} and accounted avatar absence`,
+    historyEvent: 'accountability return greeting',
+    historyDetail: `${greeting}; history preserved ${historyPreserved ? 'yes' : 'no'}`
+  });
+  world.returnGreetingContinuity = {
+    reportIntroduced: 358,
+    resident: residentName,
+    greeting,
+    residentThreadId,
+    residentObligationStatus: obligation ? `${obligation.status}/${obligation.stage}` : 'missing',
+    avatarThreadStatus: receipt.avatarThreadStatus,
+    residentHistoryPreserved: historyPreserved,
+    replayRowsBeforeReturn,
+    boundary: 'browser-local-accountability-return-greeting-only'
+  };
+  return world.returnGreetingContinuity;
 }
 function moveNorth() { world.avatar.y = Math.max(52, world.avatar.y - 34); return log('moveNorth', { y: world.avatar.y }); }
 function moveSouth() { world.avatar.y = Math.min(560, world.avatar.y + 34); return log('moveSouth', { y: world.avatar.y }); }
@@ -656,6 +704,7 @@ function runStateBoundaryAudit() {
     residents: world.residents,
     resources: world.resources,
     returnContinuity: world.returnContinuity,
+    returnGreetingContinuity: world.returnGreetingContinuity,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -760,6 +809,7 @@ function bindControls() {
     log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room });
   });
   renderReturnContinuity();
+  renderReturnGreetingContinuity();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();

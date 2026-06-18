@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+358,pass,1.0,1.0,post-358: move the same accountability-linked return greeting into a resident-to-resident memory echo so another resident can mention Milo's resolved obligation without receiving a direct avatar command

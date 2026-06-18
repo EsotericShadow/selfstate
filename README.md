@@ -2119,3 +2119,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 357: SSRM-3D Browser World v117 Avatar Absence Accountability Receipt
 
 [Primary shell avatar absence accountability receipt report](docs/357_ssrm_3d_browser_world_v117_primary_shell_avatar_absence_accountability_receipt_report.md): adds a bounded accountability action for the avatar-caused absence thread after the resident-caused offscreen obligation is handled, while preserving the resident-caused event, obligation, schedule/debt outcome, and public history.
+
+### Report 358: SSRM-3D Browser World v118 Accountability Return Greeting Continuity
+
+[Primary shell accountability return greeting continuity report](docs/358_ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity_report.md): makes the next return greeting reference both the resolved resident-caused offscreen obligation and the accounted avatar-caused absence, while preserving the original offscreen resident history.

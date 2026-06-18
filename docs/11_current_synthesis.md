@@ -1257,3 +1257,9 @@ This remains deterministic browser-local state only. The value is consolidation:
 Report 357 continues consolidating the playable loop inside the maintained v61 shell. Report 356 proved that the resident-caused offscreen obligation can be chosen first while the avatar-caused absence thread remains pending. Report 357 adds the follow-through action: the player can account for avatar absence after resolving the resident-caused obligation, marking the avatar thread as accounted while keeping `milo-offscreen-water-jars`, Fay's offscreen event, Milo's resolved schedule/debt state, and public resident history intact.
 
 This is still deterministic browser-local state, but it is a more complete consequence loop: offscreen life creates a resident-caused problem, the player chooses a causal thread, resolves the obligation, then accounts for their own absence without rewriting what residents did while away.
+
+### Report 358: Browser World v118 Primary Shell Accountability Return Greeting Continuity
+
+Report 358 links the Report 357 accountability receipt back into the return loop. After the player waits offscreen, chooses the resident-caused thread, resolves `milo-offscreen-water-jars`, and accounts for avatar absence, the next `Enter` now creates a return-greeting continuity receipt. Milo's greeting names that the resident-caused offscreen obligation was resolved and that the avatar absence was accounted, while the public history still preserves Fay changing Milo's obligation while the avatar was absent.
+
+This remains deterministic browser-local state, but it tightens the playable loop: the system no longer stops at a receipt. A later return can surface the combined consequence in resident-facing memory without erasing the original cause chain.

@@ -1,0 +1,2 @@
+report,verdict,review_gate_score,source_behavior_score,visible_binding_score,browser_interaction_score,empty_state_score,return_greeting_score,history_preservation_score,reload_persistence_score,replay_debug_score,runtime_hygiene_score,runner_index_score,claim_hygiene_score,weakest_channel_score,readiness,criterion_count,before_return_replay_rows,after_return_replay_rows,after_reload_replay_rows,console_error_count
+358,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,18,5,6,6,0

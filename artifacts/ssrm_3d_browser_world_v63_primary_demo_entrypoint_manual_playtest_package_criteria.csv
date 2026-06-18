@@ -1,0 +1,11 @@
+criterion,passed,evidence,failure_if_false
+source_v61_shell_present,True,visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html,primary demo target shell is missing
+source_v62_browser_qa_passed,True,Report 302 direct browser QA verdict pass with 0 console errors,primary packaging lacks a passing browser-QA baseline
+stable_primary_entrypoint_declared,True,http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html,reviewers still lack a stable demo URL
+manual_playtest_script_complete,True,12 required manual playtest steps,manual playtest path is too thin
+one_shell_policy_preserved,True,../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html,primary launcher forks the world instead of targeting the maintained shell
+scope_boundary_visible_before_launch,True,launcher includes explicit boundary section,demo entrypoint overclaims or hides boundaries
+qa_manifest_handoff_present,True,handoff state key listed in QA manifest,launcher state handoff is not inspectable
+runner_registered,True,experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py,canonical runner does not include Report 303
+source_evidence_retained,True,Report 302 browser evidence retained with 10 QA passes,manual package is not tied to browser evidence
+manual_playtest_not_external_cohort,True,"manual script is ready, but no outside cohort has run it",overclaiming packaging as external validation

@@ -1,0 +1,86 @@
+[
+  {
+    "action": "Start a local server from the repo root with python3 -m http.server 8765 --bind 127.0.0.1.",
+    "expected_evidence": "Primary demo launcher opens at the localhost URL.",
+    "proves": "reviewers have one stable URL-style entrypoint instead of hunting report artifacts",
+    "required": true,
+    "step_id": "MP-01"
+  },
+  {
+    "action": "Open the primary demo launcher and read the boundary before launching.",
+    "expected_evidence": "Boundary says deterministic browser-local shell and no consciousness/LLM/product claim.",
+    "proves": "the no-overclaim boundary is visible before play",
+    "required": true,
+    "step_id": "MP-02"
+  },
+  {
+    "action": "Launch a clean session using the Clean demo button.",
+    "expected_evidence": "The maintained v61 shell opens with ?reset=1 and a primary-demo source tag.",
+    "proves": "the launcher targets the single maintained shell, not a forked simulation",
+    "required": true,
+    "step_id": "MP-03"
+  },
+  {
+    "action": "Enter the world and move at least twice.",
+    "expected_evidence": "Room/status fields update and replay rows increase.",
+    "proves": "arrival and movement remain usable through the primary path",
+    "required": true,
+    "step_id": "MP-04"
+  },
+  {
+    "action": "Talk through the bounded phrase control, then ask schedule.",
+    "expected_evidence": "Resident memory/schedule fields update without open-ended chat claims.",
+    "proves": "bounded conversation and resident schedule inspection are still on the same surface",
+    "required": true,
+    "step_id": "MP-05"
+  },
+  {
+    "action": "Borrow and return the awning tool.",
+    "expected_evidence": "Debt increases, then returns to zero while trust repairs partially.",
+    "proves": "visible consequence and non-magical trust repair are observable",
+    "required": true,
+    "step_id": "MP-06"
+  },
+  {
+    "action": "Wait offscreen, then inspect schedule/progress again.",
+    "expected_evidence": "Progress changes while the avatar is idle/absent.",
+    "proves": "offscreen life is visible in the primary shell",
+    "required": true,
+    "step_id": "MP-07"
+  },
+  {
+    "action": "Save, move/change state, then restore.",
+    "expected_evidence": "Saved avatar/resident values return after restore.",
+    "proves": "local persistence and rollback are part of the playable loop",
+    "required": true,
+    "step_id": "MP-08"
+  },
+  {
+    "action": "Run the built-in playtest checklist.",
+    "expected_evidence": "Checklist reports 10 checks and all pass.",
+    "proves": "the internal QA hooks still cover the maintained tasks",
+    "required": true,
+    "step_id": "MP-09"
+  },
+  {
+    "action": "Run state-boundary and save/restore smoke hooks.",
+    "expected_evidence": "Both hook rows pass and no private workspace/LLM keys appear in public trace.",
+    "proves": "traceability remains bounded and inspectable",
+    "required": true,
+    "step_id": "MP-10"
+  },
+  {
+    "action": "Export replay from the UI.",
+    "expected_evidence": "A prepared replay export link appears and export bytes are nonzero.",
+    "proves": "review/debug evidence can be captured without relying on blocked downloads",
+    "required": true,
+    "step_id": "MP-11"
+  },
+  {
+    "action": "Close the shell, reopen the primary launcher, then use Resume demo.",
+    "expected_evidence": "The resumed shell keeps persisted world state unless Clean demo is used.",
+    "proves": "leave/return continuity is part of the manual review path",
+    "required": true,
+    "step_id": "MP-12"
+  }
+]

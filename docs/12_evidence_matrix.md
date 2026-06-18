@@ -1386,3 +1386,11 @@ Report 301 converts the Report 300 vertical slice into a maintained app shell wi
 ## Report 302 Browser World v62 App-Shell Direct Browser QA Note
 
 Report 302 records a direct browser QA pass over the maintained v61 app shell. Evidence includes 17 clicked UI actions, the restored `Ask schedule` control, 10 / 10 passing checklist rows, two passing state-boundary audits, save/restore smoke events, prepared replay export with 3589 bytes, 20 replay rows, and 0 console errors. Runtime fixes were applied for the missing schedule button, unsupported forced download path, self-poisoning audit payloads, and repeatable reset URL. Boundary remains direct browser-local QA evidence only: no LLM call, subjective consciousness, real consent, autonomous language, moral patienthood, complete 3D engine, finished gameplay, production persistence, or external playtest claim. Next gate: post-302 hardening: package the maintained app shell as the primary demo entry point, add a minimal manual playtest script, and reduce future work to defects found in the single playable shell before adding any new generated report organs.
+
+## Report 303 Evidence Matrix Entry
+
+- Claim: the browser-world work now has one stable primary demo entrypoint instead of another generated organ.
+- Evidence: `visualizations/ssrm_3d_browser_world_primary_demo/index.html`, `visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md`, and `artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_results.json`.
+- Source dependency: Report 302 direct browser QA over the maintained v61 app shell.
+- Result: deterministic packaging verdict `pass`, readiness `0.950420`, weakest channel `manual_playtest_not_external_cohort` at `0.866000`.
+- Boundary: primary demo packaging only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, complete 3D engine, or finished-game claim.

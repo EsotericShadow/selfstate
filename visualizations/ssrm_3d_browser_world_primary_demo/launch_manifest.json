@@ -1,0 +1,13 @@
+{
+  "boundary": "Primary demo packaging for the deterministic browser-local maintained app shell only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, and no metaphysical frequency claim.",
+  "clean_launch": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63",
+  "manual_playtest": "manual_playtest.md",
+  "next_gate": "post-303: use the stable primary demo entrypoint for all browser-world work, run the manual playtest script against real defects, and harden the same shell before adding any new world-system report",
+  "prefix": "ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package",
+  "primary_demo_url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "report": 303,
+  "resume_launch": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+  "source_browser_qa_evidence": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_browser_evidence.json",
+  "source_browser_qa_results": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_results.json",
+  "target_shell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+}

@@ -534,3 +534,7 @@ Report 301 starts post-300 hardening by turning the first playable vertical slic
 ## Report 302: Browser World v62 App-Shell Direct Browser QA
 
 Report 302 moves from generated app-shell evidence to direct browser QA. The maintained shell was opened through localhost and exercised through 17 UI actions; checklist, state-boundary, save/restore, consequence, and replay-export paths passed with 0 console errors. The honest limit is `single_browser_run_not_playtest_cohort`: this is a successful automated browser pass, not an external playtest cohort or production-readiness claim.
+
+## Report 303 Public Note: Primary Demo Entrypoint
+
+The browser-world line now has a stable primary demo launcher at `visualizations/ssrm_3d_browser_world_primary_demo/index.html`. The launcher does not create a second world; it points to the maintained v61 shell that Report 302 exercised through localhost browser QA and adds a manual playtest script for reviewers. This keeps the public claim narrow: a deterministic browser-local artificial-life prototype surface with visible boundary text, not consciousness, not autonomous natural language, not production persistence, and not a finished game.

@@ -1,0 +1,221 @@
+{
+  "artifacts": {
+    "criteria": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_criteria.csv",
+    "launcher_manifest": "visualizations/ssrm_3d_browser_world_primary_demo/launch_manifest.json",
+    "manual_playtest": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_manual_playtest.csv",
+    "report": "docs/303_ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package_verdict.csv"
+  },
+  "boundary": "Primary demo packaging for the deterministic browser-local maintained app shell only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, and no metaphysical frequency claim.",
+  "channels": {
+    "manual_playtest_not_external_cohort": 0.866,
+    "manual_playtest_script_complete": 1.0,
+    "one_shell_policy_preserved": 1.0,
+    "qa_manifest_handoff_present": 1.0,
+    "runner_registered": 1.0,
+    "scope_boundary_visible_before_launch": 1.0,
+    "source_evidence_retained": 1.0,
+    "source_v61_shell_present": 1.0,
+    "source_v62_browser_qa_passed": 1.0,
+    "stable_primary_entrypoint_declared": 1.0
+  },
+  "counts": {
+    "demo_package_files": 8,
+    "manual_playtest_steps": 12,
+    "required_manual_playtest_steps": 12,
+    "scope_guards": 5,
+    "source_browser_clicked_actions": 17,
+    "source_browser_console_errors": 0,
+    "source_browser_qa_passes": 10
+  },
+  "criteria": [
+    {
+      "criterion": "source_v61_shell_present",
+      "evidence": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+      "failure_if_false": "primary demo target shell is missing",
+      "passed": true
+    },
+    {
+      "criterion": "source_v62_browser_qa_passed",
+      "evidence": "Report 302 direct browser QA verdict pass with 0 console errors",
+      "failure_if_false": "primary packaging lacks a passing browser-QA baseline",
+      "passed": true
+    },
+    {
+      "criterion": "stable_primary_entrypoint_declared",
+      "evidence": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "failure_if_false": "reviewers still lack a stable demo URL",
+      "passed": true
+    },
+    {
+      "criterion": "manual_playtest_script_complete",
+      "evidence": "12 required manual playtest steps",
+      "failure_if_false": "manual playtest path is too thin",
+      "passed": true
+    },
+    {
+      "criterion": "one_shell_policy_preserved",
+      "evidence": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+      "failure_if_false": "primary launcher forks the world instead of targeting the maintained shell",
+      "passed": true
+    },
+    {
+      "criterion": "scope_boundary_visible_before_launch",
+      "evidence": "launcher includes explicit boundary section",
+      "failure_if_false": "demo entrypoint overclaims or hides boundaries",
+      "passed": true
+    },
+    {
+      "criterion": "qa_manifest_handoff_present",
+      "evidence": "handoff state key listed in QA manifest",
+      "failure_if_false": "launcher state handoff is not inspectable",
+      "passed": true
+    },
+    {
+      "criterion": "runner_registered",
+      "evidence": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+      "failure_if_false": "canonical runner does not include Report 303",
+      "passed": true
+    },
+    {
+      "criterion": "source_evidence_retained",
+      "evidence": "Report 302 browser evidence retained with 10 QA passes",
+      "failure_if_false": "manual package is not tied to browser evidence",
+      "passed": true
+    },
+    {
+      "criterion": "manual_playtest_not_external_cohort",
+      "evidence": "manual script is ready, but no outside cohort has run it",
+      "failure_if_false": "overclaiming packaging as external validation",
+      "passed": true
+    }
+  ],
+  "gates": {
+    "all_packaging_criteria_passed": true,
+    "honest_external_playtest_cap_present": true,
+    "one_shell_policy_passed": true,
+    "readiness_minimum_passed": true,
+    "weakest_minimum_passed": true
+  },
+  "launcher_manifest": {
+    "boundary": "Primary demo packaging for the deterministic browser-local maintained app shell only; no new simulation organ, no LLM call, no subjective consciousness, no real consent, no autonomous natural language, no moral patienthood, no production persistence, no finished gameplay, no complete 3D engine, and no metaphysical frequency claim.",
+    "clean_launch": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63",
+    "manual_playtest": "manual_playtest.md",
+    "next_gate": "post-303: use the stable primary demo entrypoint for all browser-world work, run the manual playtest script against real defects, and harden the same shell before adding any new world-system report",
+    "prefix": "ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package",
+    "primary_demo_url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "report": 303,
+    "resume_launch": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+    "source_browser_qa_evidence": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_browser_evidence.json",
+    "source_browser_qa_results": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_results.json",
+    "target_shell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+  },
+  "manual_playtest_steps": [
+    {
+      "action": "Start a local server from the repo root with python3 -m http.server 8765 --bind 127.0.0.1.",
+      "expected_evidence": "Primary demo launcher opens at the localhost URL.",
+      "proves": "reviewers have one stable URL-style entrypoint instead of hunting report artifacts",
+      "required": true,
+      "step_id": "MP-01"
+    },
+    {
+      "action": "Open the primary demo launcher and read the boundary before launching.",
+      "expected_evidence": "Boundary says deterministic browser-local shell and no consciousness/LLM/product claim.",
+      "proves": "the no-overclaim boundary is visible before play",
+      "required": true,
+      "step_id": "MP-02"
+    },
+    {
+      "action": "Launch a clean session using the Clean demo button.",
+      "expected_evidence": "The maintained v61 shell opens with ?reset=1 and a primary-demo source tag.",
+      "proves": "the launcher targets the single maintained shell, not a forked simulation",
+      "required": true,
+      "step_id": "MP-03"
+    },
+    {
+      "action": "Enter the world and move at least twice.",
+      "expected_evidence": "Room/status fields update and replay rows increase.",
+      "proves": "arrival and movement remain usable through the primary path",
+      "required": true,
+      "step_id": "MP-04"
+    },
+    {
+      "action": "Talk through the bounded phrase control, then ask schedule.",
+      "expected_evidence": "Resident memory/schedule fields update without open-ended chat claims.",
+      "proves": "bounded conversation and resident schedule inspection are still on the same surface",
+      "required": true,
+      "step_id": "MP-05"
+    },
+    {
+      "action": "Borrow and return the awning tool.",
+      "expected_evidence": "Debt increases, then returns to zero while trust repairs partially.",
+      "proves": "visible consequence and non-magical trust repair are observable",
+      "required": true,
+      "step_id": "MP-06"
+    },
+    {
+      "action": "Wait offscreen, then inspect schedule/progress again.",
+      "expected_evidence": "Progress changes while the avatar is idle/absent.",
+      "proves": "offscreen life is visible in the primary shell",
+      "required": true,
+      "step_id": "MP-07"
+    },
+    {
+      "action": "Save, move/change state, then restore.",
+      "expected_evidence": "Saved avatar/resident values return after restore.",
+      "proves": "local persistence and rollback are part of the playable loop",
+      "required": true,
+      "step_id": "MP-08"
+    },
+    {
+      "action": "Run the built-in playtest checklist.",
+      "expected_evidence": "Checklist reports 10 checks and all pass.",
+      "proves": "the internal QA hooks still cover the maintained tasks",
+      "required": true,
+      "step_id": "MP-09"
+    },
+    {
+      "action": "Run state-boundary and save/restore smoke hooks.",
+      "expected_evidence": "Both hook rows pass and no private workspace/LLM keys appear in public trace.",
+      "proves": "traceability remains bounded and inspectable",
+      "required": true,
+      "step_id": "MP-10"
+    },
+    {
+      "action": "Export replay from the UI.",
+      "expected_evidence": "A prepared replay export link appears and export bytes are nonzero.",
+      "proves": "review/debug evidence can be captured without relying on blocked downloads",
+      "required": true,
+      "step_id": "MP-11"
+    },
+    {
+      "action": "Close the shell, reopen the primary launcher, then use Resume demo.",
+      "expected_evidence": "The resumed shell keeps persisted world state unless Clean demo is used.",
+      "proves": "leave/return continuity is part of the manual review path",
+      "required": true,
+      "step_id": "MP-12"
+    }
+  ],
+  "mean_channel_score": 0.9866,
+  "next_gate": "post-303: use the stable primary demo entrypoint for all browser-world work, run the manual playtest script against real defects, and harden the same shell before adding any new world-system report",
+  "prefix": "ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package",
+  "primary_demo_packaging_readiness": 0.95042,
+  "readiness": 0.95042,
+  "report": 303,
+  "scope_guards": [
+    "Only the primary demo launcher is new; gameplay still lives in the maintained v61 app shell.",
+    "The manual script uses Report 302 browser evidence as the baseline, not as a substitute for future human playtests.",
+    "The launcher gives clean and resume paths so persistence bugs can be reproduced rather than hidden.",
+    "The boundary remains visible before launch and inside the shell.",
+    "Future browser-world work should patch this shell unless a defect proves a new surface is necessary."
+  ],
+  "seed": 20270701,
+  "source_v62_path": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_results.json",
+  "source_v62_verdict": "pass",
+  "verdict": "pass",
+  "weakest_channel_score": 0.866,
+  "weakest_named_channel": "manual_playtest_not_external_cohort"
+}

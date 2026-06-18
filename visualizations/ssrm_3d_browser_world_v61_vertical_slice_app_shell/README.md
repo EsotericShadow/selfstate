@@ -10,5 +10,3 @@ Boundary: Deterministic browser-local hardened vertical-slice app shell only; no
 Open `index.html` in a browser. Use the built-in controls to enter the world,
 move, talk through bounded phrases, alter debt/trust, wait offscreen, save/restore,
 run QA hooks, and export replay JSON.
-
-Primary demo alias: Report 303 adds `visualizations/ssrm_3d_browser_world_primary_demo/index.html` as the stable launcher for this maintained shell. Future browser-world hardening should patch this shell instead of creating a parallel playable surface unless a defect proves a new surface is necessary.

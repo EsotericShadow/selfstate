@@ -23,7 +23,7 @@ Boundary: Primary demo packaging for the deterministic browser-local maintained 
 | MP-05 | Talk through the bounded phrase control, then ask schedule. | Resident memory/schedule fields update without open-ended chat claims. | bounded conversation and resident schedule inspection are still on the same surface |
 | MP-06 | Borrow and return the awning tool. | Debt increases, then returns to zero while trust repairs partially. | visible consequence and non-magical trust repair are observable |
 | MP-07 | Wait offscreen, then inspect schedule/progress again. | Progress changes while the avatar is idle/absent. | offscreen life is visible in the primary shell |
-| MP-08 | Save, move/change state, then restore. | Saved avatar/resident values return after restore. | local persistence and rollback are part of the playable loop |
+| MP-08 | Save, move/change state, then restore. | Saved avatar/resident values return after a deliberate post-save mutation and restore. | local persistence and real rollback are part of the playable loop |
 | MP-09 | Run the built-in playtest checklist. | Checklist reports 10 checks and all pass. | the internal QA hooks still cover the maintained tasks |
 | MP-10 | Run state-boundary and save/restore smoke hooks. | Both hook rows pass and no private workspace/LLM keys appear in public trace. | traceability remains bounded and inspectable |
 | MP-11 | Export replay from the UI. | A prepared replay export link appears and export bytes are nonzero. | review/debug evidence can be captured without relying on blocked downloads |

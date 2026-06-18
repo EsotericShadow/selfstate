@@ -3,6 +3,7 @@ const STATE_KEY = 'ssrm_v61_app_shell_world';
 const REPLAY_KEY = 'ssrm_v61_app_shell_replay';
 const QA_KEY = 'ssrm_v61_app_shell_qa_results';
 const EXPORT_KEY = 'ssrm_v61_app_shell_export';
+const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
 
 const residents = {
   Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
@@ -21,13 +22,13 @@ const playtestTasks = [
   { id: 'PT-05', title: 'Affect debt', action: 'borrowTool', expected: 'debt rises and memory changes' },
   { id: 'PT-06', title: 'Repair trust', action: 'returnTool', expected: 'debt drops and trust partially repairs' },
   { id: 'PT-07', title: 'Offscreen life', action: 'waitOffscreen', expected: 'residents progress without avatar input' },
-  { id: 'PT-08', title: 'Save restore', action: 'runSaveRestoreSmoke', expected: 'world restores from localStorage' },
+  { id: 'PT-08', title: 'Save restore', action: 'runSaveRestoreSmoke', expected: 'world rolls back from a saved snapshot after mutation' },
   { id: 'PT-09', title: 'Audit state', action: 'runStateBoundaryAudit', expected: 'private workspace remains hidden' },
   { id: 'PT-10', title: 'Export replay', action: 'exportReplay', expected: 'replay JSON export is prepared and stored locally' }
 ];
 
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -36,7 +37,7 @@ const qaManifest = {
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY].forEach(key => localStorage.removeItem(key));
 }
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
@@ -88,8 +89,13 @@ function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1,
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
 function waitOffscreen() { Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 })); return log('waitOffscreen', { offscreenLife: true }); }
 function repairTrust() { mutateResident(world.selected, { trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }); return log('repairTrust', { nonMagic: true }); }
-function saveWorld() { localStorage.setItem(STATE_KEY, JSON.stringify(world)); return log('saveWorld', { saved: true }); }
-function restoreWorld() { world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify(world)); return log('restoreWorld', { restored: true }); }
+function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
+function restoreWorld() {
+  const saved = localStorage.getItem(SAVE_SNAPSHOT_KEY);
+  if (!saved) return log('restoreWorld', { restored: false, reason: 'no saved snapshot' });
+  world = JSON.parse(saved);
+  return log('restoreWorld', { restored: true, snapshotKey: SAVE_SNAPSHOT_KEY });
+}
 function toggleAudit() { world.audit = !world.audit; return log('toggleAudit', { audit: world.audit }); }
 function exportReplay() {
   const payload = JSON.stringify(world.replay, null, 2);
@@ -133,10 +139,15 @@ function runStateBoundaryAudit() {
   return log('runStateBoundaryAudit', result);
 }
 function runSaveRestoreSmoke() {
-  const before = JSON.stringify(world.avatar);
+  const before = JSON.parse(JSON.stringify(world.avatar));
+  const snapshot = JSON.stringify(world);
+  localStorage.setItem(SAVE_SNAPSHOT_KEY, snapshot);
+  world.avatar.x = Math.min(970, world.avatar.x + 17);
+  updateRoom();
   localStorage.setItem(STATE_KEY, JSON.stringify(world));
-  const restored = JSON.parse(localStorage.getItem(STATE_KEY));
-  const result = { hook: 'runSaveRestoreSmoke', pass: JSON.stringify(restored.avatar) === before, room: restored.avatar.room };
+  world = JSON.parse(localStorage.getItem(SAVE_SNAPSHOT_KEY));
+  const restored = JSON.parse(JSON.stringify(world.avatar));
+  const result = { hook: 'runSaveRestoreSmoke', pass: JSON.stringify(restored) === JSON.stringify(before), room: world.avatar.room, rollbackTested: true };
   world.lastQA = [result];
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
   return log('runSaveRestoreSmoke', result);

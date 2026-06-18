@@ -1063,3 +1063,9 @@ Report 302 executes the post-301 browser QA gate against the maintained app shel
 Report 303 turns the post-302 shell into a single reviewable entrypoint: `visualizations/ssrm_3d_browser_world_primary_demo/index.html`. It adds a manual playtest spine over arrival, movement, bounded conversation, schedule inspection, debt/trust consequence, offscreen progress, save/restore, QA hooks, replay export, and leave/return continuity. This is consolidation, not a new simulation organ; the launcher targets the maintained v61 app shell and inherits the Report 302 direct-browser evidence.
 
 The next pressure point is no longer feature invention. Future browser-world work should use the stable primary demo path, find real defects in that surface, and patch the same shell before adding any new world-system report.
+
+### Report 304: Browser World v64 Primary Demo Manual Playtest Hardening
+
+Report 304 is the first post-primary-demo defect loop. Running the Report 303 manual playtest through the real launcher exposed that save/restore was only a live-state round trip: after saving at avatar `x=214`, moving to `x=180`, restore stayed at `x=180`. The maintained v61 generator now writes an explicit saved snapshot key and the browser QA hook mutates after snapshot before proving rollback. The after-fix browser run returns to `x=214`, reports `rollbackTested: true`, exports replay, and resumes with persisted state through the primary-demo route.
+
+This is the right kind of progress: fewer new organs, more defects found and fixed in the one playable shell.

@@ -18,12 +18,12 @@
       "target": "world JSON"
     },
     {
-      "assertion": "avatar state survives round trip",
+      "assertion": "avatar state rolls back after mutation",
       "browser_executable": true,
       "hook_id": "QA-03",
       "js_function": "runSaveRestoreSmoke",
       "stores_result_key": "ssrm_v61_app_shell_qa_results",
-      "target": "localStorage world"
+      "target": "saved snapshot"
     },
     {
       "assertion": "all direct hooks execute from UI",
@@ -83,6 +83,14 @@
       "persistence": "localStorage",
       "private_workspace_visible": false,
       "state_key": "ssrm_v61_app_shell_export"
+    },
+    {
+      "allowed_mutations": "explicit rollback snapshot writes",
+      "audit_rule": "snapshot stores public world state only",
+      "owner": "app.js",
+      "persistence": "localStorage",
+      "private_workspace_visible": false,
+      "state_key": "ssrm_v61_app_shell_saved_snapshot"
     },
     {
       "allowed_mutations": "public memory note updates",

@@ -277,6 +277,7 @@ const STATE_KEY = 'ssrm_v61_app_shell_world';
 const REPLAY_KEY = 'ssrm_v61_app_shell_replay';
 const QA_KEY = 'ssrm_v61_app_shell_qa_results';
 const EXPORT_KEY = 'ssrm_v61_app_shell_export';
+const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
 
 const residents = {{
   Ari: {{ trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 }},
@@ -295,13 +296,13 @@ const playtestTasks = [
   {{ id: 'PT-05', title: 'Affect debt', action: 'borrowTool', expected: 'debt rises and memory changes' }},
   {{ id: 'PT-06', title: 'Repair trust', action: 'returnTool', expected: 'debt drops and trust partially repairs' }},
   {{ id: 'PT-07', title: 'Offscreen life', action: 'waitOffscreen', expected: 'residents progress without avatar input' }},
-  {{ id: 'PT-08', title: 'Save restore', action: 'runSaveRestoreSmoke', expected: 'world restores from localStorage' }},
+  {{ id: 'PT-08', title: 'Save restore', action: 'runSaveRestoreSmoke', expected: 'world rolls back from a saved snapshot after mutation' }},
   {{ id: 'PT-09', title: 'Audit state', action: 'runStateBoundaryAudit', expected: 'private workspace remains hidden' }},
   {{ id: 'PT-10', title: 'Export replay', action: 'exportReplay', expected: 'replay JSON export is prepared and stored locally' }}
 ];
 
 const qaManifest = {{
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -310,7 +311,7 @@ const qaManifest = {{
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {{
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY].forEach(key => localStorage.removeItem(key));
 }}
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({{
@@ -362,8 +363,13 @@ function borrowTool() {{ mutateResident(world.selected, {{ trust: -0.018, debt: 
 function returnTool() {{ mutateResident(world.selected, {{ trust: 0.022, debt: -1, memory: 'avatar returned tool' }}); return log('returnTool', {{ consequence: 'trust repairs partially' }}); }}
 function waitOffscreen() {{ Object.keys(world.residents).forEach((name, index) => mutateResident(name, {{ progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }})); return log('waitOffscreen', {{ offscreenLife: true }}); }}
 function repairTrust() {{ mutateResident(world.selected, {{ trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }}); return log('repairTrust', {{ nonMagic: true }}); }}
-function saveWorld() {{ localStorage.setItem(STATE_KEY, JSON.stringify(world)); return log('saveWorld', {{ saved: true }}); }}
-function restoreWorld() {{ world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify(world)); return log('restoreWorld', {{ restored: true }}); }}
+function saveWorld() {{ localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); return log('saveWorld', {{ saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }}); }}
+function restoreWorld() {{
+  const saved = localStorage.getItem(SAVE_SNAPSHOT_KEY);
+  if (!saved) return log('restoreWorld', {{ restored: false, reason: 'no saved snapshot' }});
+  world = JSON.parse(saved);
+  return log('restoreWorld', {{ restored: true, snapshotKey: SAVE_SNAPSHOT_KEY }});
+}}
 function toggleAudit() {{ world.audit = !world.audit; return log('toggleAudit', {{ audit: world.audit }}); }}
 function exportReplay() {{
   const payload = JSON.stringify(world.replay, null, 2);
@@ -407,10 +413,15 @@ function runStateBoundaryAudit() {{
   return log('runStateBoundaryAudit', result);
 }}
 function runSaveRestoreSmoke() {{
-  const before = JSON.stringify(world.avatar);
+  const before = JSON.parse(JSON.stringify(world.avatar));
+  const snapshot = JSON.stringify(world);
+  localStorage.setItem(SAVE_SNAPSHOT_KEY, snapshot);
+  world.avatar.x = Math.min(970, world.avatar.x + 17);
+  updateRoom();
   localStorage.setItem(STATE_KEY, JSON.stringify(world));
-  const restored = JSON.parse(localStorage.getItem(STATE_KEY));
-  const result = {{ hook: 'runSaveRestoreSmoke', pass: JSON.stringify(restored.avatar) === before, room: restored.avatar.room }};
+  world = JSON.parse(localStorage.getItem(SAVE_SNAPSHOT_KEY));
+  const restored = JSON.parse(JSON.stringify(world.avatar));
+  const result = {{ hook: 'runSaveRestoreSmoke', pass: JSON.stringify(restored) === JSON.stringify(before), room: world.avatar.room, rollbackTested: true }};
   world.lastQA = [result];
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
   return log('runSaveRestoreSmoke', result);
@@ -523,7 +534,7 @@ def generate(seed: int = DEFAULT_SEED) -> Bundle:
         PlaytestTask("PT-04", "Inspect schedule", "resident selected", "click Ask Schedule", "schedule panel and replay row show schedule", "scheduleOut", "schedule", True),
         PlaytestTask("PT-05", "Debt consequence", "resident selected", "borrow and return tool", "debt/trust changes are visible and recoverable", "debtOut", "consequence", True),
         PlaytestTask("PT-06", "Offscreen life", "any resident selected", "click Wait offscreen", "resident progress changes without avatar command", "progress", "offscreen", True),
-        PlaytestTask("PT-07", "Save restore", "world changed", "run Save then Restore", "room/resident state survives localStorage round trip", "STATE_KEY", "persistence", True),
+        PlaytestTask("PT-07", "Save restore", "world changed", "run Save then Restore", "room/resident state rolls back from saved snapshot", "SAVE_SNAPSHOT_KEY", "persistence", True),
         PlaytestTask("PT-08", "Audit boundary", "world changed", "run State Boundary Audit", "private workspace and LLM transcript keys are absent", "QA_KEY", "audit", True),
         PlaytestTask("PT-09", "Replay export", "several actions taken", "click Export replay", "JSON replay download is prepared", "REPLAY_KEY", "replay", True),
         PlaytestTask("PT-10", "Mobile layout", "narrow viewport", "resize below 980px", "single-column layout remains usable", "CSS media query", "interface", False),
@@ -534,6 +545,7 @@ def generate(seed: int = DEFAULT_SEED) -> Bundle:
         StateBoundaryRule("ssrm_v61_app_shell_replay", "app.js", "append public action rows only", "localStorage", False, "replay rows contain public action payloads only"),
         StateBoundaryRule("ssrm_v61_app_shell_qa_results", "app.js", "QA hook result writes", "localStorage", False, "QA output stores pass/fail summaries only"),
         StateBoundaryRule("ssrm_v61_app_shell_export", "app.js", "prepared public replay export payload", "localStorage", False, "export payload contains replay rows only"),
+        StateBoundaryRule("ssrm_v61_app_shell_saved_snapshot", "app.js", "explicit rollback snapshot writes", "localStorage", False, "snapshot stores public world state only"),
         StateBoundaryRule("residents.*.memory", "app.js", "public memory note updates", "world state", False, "memory notes are public relationship summaries"),
         StateBoundaryRule("residents.*.trust", "app.js", "bounded numeric deltas", "world state", False, "trust remains clamped 0..1"),
         StateBoundaryRule("residents.*.debt", "app.js", "bounded nonnegative deltas", "world state", False, "debt never drops below zero"),
@@ -544,7 +556,7 @@ def generate(seed: int = DEFAULT_SEED) -> Bundle:
     direct_qa_hooks = [
         DirectQAHook("QA-01", "runPlaytestChecklist", "playtestTasks", "all mandatory task rows are represented", "ssrm_v61_app_shell_qa_results", True),
         DirectQAHook("QA-02", "runStateBoundaryAudit", "world JSON", "forbidden private/LLM keys absent", "ssrm_v61_app_shell_qa_results", True),
-        DirectQAHook("QA-03", "runSaveRestoreSmoke", "localStorage world", "avatar state survives round trip", "ssrm_v61_app_shell_qa_results", True),
+        DirectQAHook("QA-03", "runSaveRestoreSmoke", "saved snapshot", "avatar state rolls back after mutation", "ssrm_v61_app_shell_qa_results", True),
         DirectQAHook("QA-04", "runAllQAHooks", "QA hook group", "all direct hooks execute from UI", "ssrm_v61_app_shell_qa_results", True),
         DirectQAHook("QA-05", "exportReplay", "replay rows", "download path prepares public JSON", "ssrm_v61_app_shell_replay", True),
         DirectQAHook("QA-06", "toggleAudit", "audit panel", "audit overlay is visible without private workspace", "ssrm_v61_app_shell_world", True),

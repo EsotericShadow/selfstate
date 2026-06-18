@@ -1,0 +1,14 @@
+metric,value
+manual_sequence_events,18
+runtime_defects_reproduced,1
+runtime_defects_fixed,1
+patch_summary_items,6
+after_action_buttons,20
+after_replay_rows,13
+after_resume_replay_rows,13
+after_console_errors,0
+v61_state_boundary_rules,10
+readiness,0.954133
+mean_channel_score,0.989333
+weakest_channel_score,0.872
+weakest_named_channel,single_internal_playtest_not_external_user

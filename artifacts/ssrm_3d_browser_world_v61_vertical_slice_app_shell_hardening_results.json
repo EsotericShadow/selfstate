@@ -29,14 +29,14 @@
   "counts": {
     "app_css_bytes": 2672,
     "app_html_bytes": 3577,
-    "app_javascript_bytes": 13708,
+    "app_javascript_bytes": 14270,
     "app_shell_files": 6,
     "direct_qa_hooks": 6,
     "generated_artifact_files": 6,
     "hardening_criteria": 8,
     "mandatory_playtest_tasks": 9,
     "playtest_tasks": 10,
-    "state_boundary_rules": 9
+    "state_boundary_rules": 10
   },
   "gates": {
     "app_shell_files_minimum_passed": true,

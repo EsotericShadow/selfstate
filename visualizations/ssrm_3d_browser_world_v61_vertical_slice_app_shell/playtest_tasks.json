@@ -62,8 +62,8 @@
   {
     "action": "run Save then Restore",
     "core_loop": "persistence",
-    "evidence_key": "STATE_KEY",
-    "expected_visible_result": "room/resident state survives localStorage round trip",
+    "evidence_key": "SAVE_SNAPSHOT_KEY",
+    "expected_visible_result": "room/resident state rolls back from saved snapshot",
     "mandatory": true,
     "setup": "world changed",
     "task_id": "PT-07",

@@ -100,8 +100,8 @@ MANUAL_PLAYTEST_STEPS: list[dict[str, Any]] = [
     {
         "step_id": "MP-08",
         "action": "Save, move/change state, then restore.",
-        "expected_evidence": "Saved avatar/resident values return after restore.",
-        "proves": "local persistence and rollback are part of the playable loop",
+        "expected_evidence": "Saved avatar/resident values return after a deliberate post-save mutation and restore.",
+        "proves": "local persistence and real rollback are part of the playable loop",
         "required": True,
     },
     {
@@ -418,6 +418,7 @@ def _qa_manifest(results_hint: dict[str, Any]) -> dict[str, Any]:
             "ssrm_v61_app_shell_replay",
             "ssrm_v61_app_shell_qa_results",
             "ssrm_v61_app_shell_export",
+            "ssrm_v61_app_shell_saved_snapshot",
         ],
     }
 

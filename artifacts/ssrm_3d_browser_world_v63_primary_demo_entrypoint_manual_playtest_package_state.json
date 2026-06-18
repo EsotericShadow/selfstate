@@ -52,8 +52,8 @@
     },
     {
       "action": "Save, move/change state, then restore.",
-      "expected_evidence": "Saved avatar/resident values return after restore.",
-      "proves": "local persistence and rollback are part of the playable loop",
+      "expected_evidence": "Saved avatar/resident values return after a deliberate post-save mutation and restore.",
+      "proves": "local persistence and real rollback are part of the playable loop",
       "required": true,
       "step_id": "MP-08"
     },

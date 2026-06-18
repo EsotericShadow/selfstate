@@ -538,3 +538,7 @@ Report 302 moves from generated app-shell evidence to direct browser QA. The mai
 ## Report 303 Public Note: Primary Demo Entrypoint
 
 The browser-world line now has a stable primary demo launcher at `visualizations/ssrm_3d_browser_world_primary_demo/index.html`. The launcher does not create a second world; it points to the maintained v61 shell that Report 302 exercised through localhost browser QA and adds a manual playtest script for reviewers. This keeps the public claim narrow: a deterministic browser-local artificial-life prototype surface with visible boundary text, not consciousness, not autonomous natural language, not production persistence, and not a finished game.
+
+## Report 304 Public Note: Primary Demo Defect Loop
+
+The primary browser-world demo has moved from packaging to defect-driven hardening. A manual playtest found that save/restore did not actually roll back after a post-save mutation. The maintained shell now uses an explicit saved snapshot key and its QA smoke hook tests rollback rather than a trivial storage round trip. This strengthens the playable prototype claim while keeping the boundary narrow: deterministic browser-local behavior, one internal playtest, no consciousness claim, no autonomous natural language claim, and no finished-product claim.

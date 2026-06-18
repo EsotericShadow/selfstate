@@ -1,0 +1,13 @@
+criterion,passed,evidence,failure_if_false
+source_v61_shell_regenerated,True,Report 301/v61 regenerated with 10 state-boundary rules,maintained shell was not regenerated after patch
+source_v63_primary_demo_passed,True,Report 303 primary-demo package still passes with 12 manual steps,primary demo package is stale or failing
+primary_demo_launcher_opened,True,http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html,stable primary launcher did not open correctly
+clean_launch_targets_maintained_shell,True,http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63,clean launch does not target the maintained shell with updated manifest
+manual_spine_completed,True,18 primary-demo/manual actions including exportReplay and resumeDemo,manual playtest spine was not exercised
+rollback_defect_reproduced_before_fix,True,"before fix: save x=214, mutate x=180, restore stayed x=180",hardening report lacks a reproduced defect
+rollback_fixed_after_patch,True,"after fix: save x=214, mutate x=180, restore returns x=214",save/restore still does not roll back
+smoke_hook_tests_real_rollback,True,runSaveRestoreSmoke payload pass=true and rollbackTested=true,QA hook still only tests round trip storage
+snapshot_key_documented_in_manifests,True,saved snapshot key appears in v61 state-boundary rules and primary-demo state keys,snapshot persistence is not visible to reviewers
+resume_keeps_state_after_export,True,resume path reopens shell with replay rows and latest exportReplay event,leave/return continuity failed
+no_console_errors_after_fix,True,fresh after-fix browser tab reported 0 console errors,browser console errors remain
+single_internal_playtest_not_external_user,True,"one internal browser manual-playtest pass, not an outside user cohort",overclaiming internal QA as external validation

@@ -1394,3 +1394,11 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Source dependency: Report 302 direct browser QA over the maintained v61 app shell.
 - Result: deterministic packaging verdict `pass`, readiness `0.950420`, weakest channel `manual_playtest_not_external_cohort` at `0.866000`.
 - Boundary: primary demo packaging only; no LLM call, subjective consciousness, moral patienthood, autonomous language, production persistence, complete 3D engine, or finished-game claim.
+
+## Report 304 Evidence Matrix Entry
+
+- Claim: the primary demo path can now find and fix real runtime defects in the maintained shell.
+- Evidence: `docs/304_ssrm_3d_browser_world_v64_primary_demo_manual_playtest_hardening_report.md`, `artifacts/ssrm_3d_browser_world_v64_primary_demo_manual_playtest_hardening_browser_evidence.json`, and regenerated v61 app shell files.
+- Defect reproduced: before fix, save at `x=214`, mutate to `x=180`, restore stayed at `x=180`.
+- Fix verified: after fix, restore returns to `x=214`; `runSaveRestoreSmoke` reports `pass: true` and `rollbackTested: true`.
+- Boundary: one internal browser playtest and deterministic shell hardening only; no external cohort, production persistence, autonomous language, moral patienthood, complete 3D engine, finished-game, or consciousness claim.

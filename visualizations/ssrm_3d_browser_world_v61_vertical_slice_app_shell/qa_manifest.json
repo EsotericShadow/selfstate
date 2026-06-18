@@ -77,6 +77,14 @@
       "state_key": "ssrm_v61_app_shell_qa_results"
     },
     {
+      "allowed_mutations": "prepared public replay export payload",
+      "audit_rule": "export payload contains replay rows only",
+      "owner": "app.js",
+      "persistence": "localStorage",
+      "private_workspace_visible": false,
+      "state_key": "ssrm_v61_app_shell_export"
+    },
+    {
       "allowed_mutations": "public memory note updates",
       "audit_rule": "memory notes are public relationship summaries",
       "owner": "app.js",

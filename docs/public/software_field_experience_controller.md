@@ -529,3 +529,8 @@ Report 300 is the first consolidated playable vertical slice: one browser artifa
 ## Report 301: Browser World v61 Vertical Slice App-Shell Hardening
 
 Report 301 starts post-300 hardening by turning the first playable vertical slice into a maintained app shell with separated HTML/CSS/JS, playtest tasks, QA manifest, state-boundary rules, and browser-callable QA hooks. The deterministic run passes with readiness `0.947050` and weakest-channel score `0.862000`. The honest limit is `not_runtime_browser_verified_yet`: the shell now has direct QA hooks, but the browser runtime pass is still the next gate.
+
+
+## Report 302: Browser World v62 App-Shell Direct Browser QA
+
+Report 302 moves from generated app-shell evidence to direct browser QA. The maintained shell was opened through localhost and exercised through 17 UI actions; checklist, state-boundary, save/restore, consequence, and replay-export paths passed with 0 console errors. The honest limit is `single_browser_run_not_playtest_cohort`: this is a successful automated browser pass, not an external playtest cohort or production-readiness claim.

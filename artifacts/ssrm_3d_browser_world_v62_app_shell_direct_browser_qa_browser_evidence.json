@@ -1,0 +1,180 @@
+{
+  "clicked": [
+    "enterWorld",
+    "moveEast",
+    "moveNorth",
+    "talkBounded",
+    "askSchedule",
+    "borrowTool",
+    "returnTool",
+    "waitOffscreen",
+    "repairTrust",
+    "saveWorld",
+    "restoreWorld",
+    "toggleAudit",
+    "runStateBoundaryAudit",
+    "runSaveRestoreSmoke",
+    "runPlaytestChecklist",
+    "runAllQAHooks",
+    "exportReplay"
+  ],
+  "console_errors": [],
+  "dom_evidence": {
+    "askScheduleButton": 1,
+    "auditEventPasses": [
+      true,
+      true
+    ],
+    "boundaryVisible": true,
+    "containsForbiddenAuditStringsInWorld": false,
+    "containsLlmTranscript": false,
+    "containsPrivateWorkspace": false,
+    "containsSubjectiveFeeling": false,
+    "debtOut": "0 / trust 0.613",
+    "latestEvent": "exportReplay",
+    "latestExportBytes": 3589,
+    "latestPrepared": true,
+    "memoryOut": "trust repaired non-magically",
+    "preparedLinkText": "Prepared replay export",
+    "preparedLinkVisible": true,
+    "qaManifestHasExportKey": true,
+    "qaManifestHookCountVisible": 3,
+    "qaOut": "10 checks",
+    "qaPasses": 10,
+    "qaRows": 10,
+    "replayOut": "20 rows",
+    "replayRowsInTrace": 20,
+    "roomOut": "arrival court / entered",
+    "scheduleOut": "repair awning / progress 0.378",
+    "taskCount": 10
+  },
+  "interesting_events": [
+    {
+      "event": "askSchedule",
+      "payload": {
+        "schedule": "repair awning"
+      },
+      "tick": 4
+    },
+    {
+      "event": "borrowTool",
+      "payload": {
+        "consequence": "debt increases"
+      },
+      "tick": 5
+    },
+    {
+      "event": "returnTool",
+      "payload": {
+        "consequence": "trust repairs partially"
+      },
+      "tick": 6
+    },
+    {
+      "event": "waitOffscreen",
+      "payload": {
+        "offscreenLife": true
+      },
+      "tick": 7
+    },
+    {
+      "event": "repairTrust",
+      "payload": {
+        "nonMagic": true
+      },
+      "tick": 8
+    },
+    {
+      "event": "runStateBoundaryAudit",
+      "payload": {
+        "checkedForbiddenKeyCount": 3,
+        "hook": "runStateBoundaryAudit",
+        "pass": true
+      },
+      "tick": 12
+    },
+    {
+      "event": "runSaveRestoreSmoke",
+      "payload": {
+        "hook": "runSaveRestoreSmoke",
+        "pass": true,
+        "room": "arrival court"
+      },
+      "tick": 13
+    },
+    {
+      "event": "runPlaytestChecklist",
+      "payload": {
+        "count": 10,
+        "pass": true
+      },
+      "tick": 14
+    },
+    {
+      "event": "runStateBoundaryAudit",
+      "payload": {
+        "checkedForbiddenKeyCount": 3,
+        "hook": "runStateBoundaryAudit",
+        "pass": true
+      },
+      "tick": 15
+    },
+    {
+      "event": "runSaveRestoreSmoke",
+      "payload": {
+        "hook": "runSaveRestoreSmoke",
+        "pass": true,
+        "room": "arrival court"
+      },
+      "tick": 16
+    },
+    {
+      "event": "runPlaytestChecklist",
+      "payload": {
+        "count": 10,
+        "pass": true
+      },
+      "tick": 17
+    },
+    {
+      "event": "runAllQAHooks",
+      "payload": {
+        "hooks": 6
+      },
+      "tick": 18
+    },
+    {
+      "event": "exportReplay",
+      "payload": {
+        "bytes": 3589,
+        "prepared": true,
+        "rows": 19
+      },
+      "tick": 19
+    }
+  ],
+  "runtime_fixes": [
+    "Added missing Ask schedule button for the existing askSchedule action.",
+    "Changed replay export to prepare a localStorage-backed export payload and visible link instead of forcing an unsupported browser download event.",
+    "Changed state-boundary audit to inspect a sanitized public-state projection so audit payloads do not poison later audits with forbidden-key names.",
+    "Added ?reset=1 clean-start path for repeatable browser QA."
+  ],
+  "title": "SSRM-3D v61 Vertical Slice App Shell",
+  "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&qa=302c",
+  "world_summary": {
+    "ari": {
+      "debt": 0,
+      "memory": "trust repaired non-magically",
+      "progress": 0.378,
+      "schedule": "repair awning",
+      "trust": 0.613
+    },
+    "entered": true,
+    "qaPasses": 10,
+    "qaRows": 10,
+    "replayRows": 20,
+    "residentCount": 6,
+    "room": "arrival court",
+    "selected": "Ari"
+  }
+}

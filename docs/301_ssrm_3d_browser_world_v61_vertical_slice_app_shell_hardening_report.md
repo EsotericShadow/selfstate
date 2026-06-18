@@ -22,13 +22,13 @@ This is still deterministic browser-local prototype work. It does not claim subj
 | App shell files | 6 |
 | Playtest tasks | 10 |
 | Mandatory playtest tasks | 9 |
-| State boundary rules | 8 |
+| State boundary rules | 9 |
 | Direct QA hooks | 6 |
 | Hardening criteria | 8 |
 | Generated artifact files | 6 |
-| App JavaScript bytes | 12614 |
+| App JavaScript bytes | 13708 |
 | App CSS bytes | 2672 |
-| App HTML bytes | 3511 |
+| App HTML bytes | 3577 |
 
 ## Correctness channels
 
@@ -57,8 +57,10 @@ Report 301 does not add weather, lore, rituals, or another agent subsystem. It h
 3. User-facing playtest tasks are exported as JSON and CSV.
 4. Browser-callable QA hooks are built into `app.js`.
 5. Replay, save/restore, state-boundary audit, and playtest checklist hooks write deterministic localStorage results.
-6. The no-LLM/no-consciousness/no-finished-product boundary remains visible in the UI.
-7. Generated artifact count is intentionally small compared with the prior large row bundles.
+6. Replay export is prepared locally in a QA-friendly storage key before any optional download link is used.
+7. A `?reset=1` URL path clears app-shell localStorage for repeatable browser QA.
+8. The no-LLM/no-consciousness/no-finished-product boundary remains visible in the UI.
+9. Generated artifact count is intentionally small compared with the prior large row bundles.
 
 ## Honest limitation
 

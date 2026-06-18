@@ -1,0 +1,12 @@
+criterion,passed,evidence,failure_if_false
+source_v61_continuity,True,Report 301 results/state exist and pass,browser QA not tied to current app shell
+localhost_app_opened,True,http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&qa=302c,app shell was not opened in browser
+core_action_sequence_completed,True,"enterWorld,moveEast,moveNorth,talkBounded,askSchedule,borrowTool,returnTool,waitOffscreen,repairTrust,saveWorld,restoreWorld,toggleAudit,runStateBoundaryAudit,runSaveRestoreSmoke,runPlaytestChecklist,runAllQAHooks,exportReplay",not all core controls were exercised
+ask_schedule_runtime_control_present,True,Ask schedule button count 1 and replay event present,schedule inspection control missing
+playtest_checklist_passed,True,10 QA rows and 10 task rows pass,playtest checklist failed
+state_boundary_audit_passed,True,two audit events pass and forbidden keys absent,state boundary audit failed
+save_restore_smoke_passed,True,save/restore smoke events pass,save/restore failed in browser
+visible_consequence_loop_exercised,True,"debt, repair, offscreen, trust events present",visible consequence loop not exercised
+replay_export_prepared_without_download,True,exportReplay prepared local payload and visible link,replay export path failed
+no_console_errors,True,console error list empty,browser console errors observed
+single_browser_run_not_playtest_cohort,True,one automated browser pass; not external playtest cohort,overclaiming runtime QA as outside playtest

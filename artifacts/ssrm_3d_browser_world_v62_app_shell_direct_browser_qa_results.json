@@ -1,0 +1,303 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_browser_evidence.json",
+    "click_sequence": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_click_sequence.csv",
+    "criteria": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_criteria.csv",
+    "report": "docs/302_ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v62_app_shell_direct_browser_qa_verdict.csv"
+  },
+  "boundary": "Direct browser QA evidence over the deterministic browser-local v61 app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.",
+  "browser_qa_evidence": {
+    "clicked": [
+      "enterWorld",
+      "moveEast",
+      "moveNorth",
+      "talkBounded",
+      "askSchedule",
+      "borrowTool",
+      "returnTool",
+      "waitOffscreen",
+      "repairTrust",
+      "saveWorld",
+      "restoreWorld",
+      "toggleAudit",
+      "runStateBoundaryAudit",
+      "runSaveRestoreSmoke",
+      "runPlaytestChecklist",
+      "runAllQAHooks",
+      "exportReplay"
+    ],
+    "console_errors": [],
+    "dom_evidence": {
+      "askScheduleButton": 1,
+      "auditEventPasses": [
+        true,
+        true
+      ],
+      "boundaryVisible": true,
+      "containsForbiddenAuditStringsInWorld": false,
+      "containsLlmTranscript": false,
+      "containsPrivateWorkspace": false,
+      "containsSubjectiveFeeling": false,
+      "debtOut": "0 / trust 0.613",
+      "latestEvent": "exportReplay",
+      "latestExportBytes": 3589,
+      "latestPrepared": true,
+      "memoryOut": "trust repaired non-magically",
+      "preparedLinkText": "Prepared replay export",
+      "preparedLinkVisible": true,
+      "qaManifestHasExportKey": true,
+      "qaManifestHookCountVisible": 3,
+      "qaOut": "10 checks",
+      "qaPasses": 10,
+      "qaRows": 10,
+      "replayOut": "20 rows",
+      "replayRowsInTrace": 20,
+      "roomOut": "arrival court / entered",
+      "scheduleOut": "repair awning / progress 0.378",
+      "taskCount": 10
+    },
+    "interesting_events": [
+      {
+        "event": "askSchedule",
+        "payload": {
+          "schedule": "repair awning"
+        },
+        "tick": 4
+      },
+      {
+        "event": "borrowTool",
+        "payload": {
+          "consequence": "debt increases"
+        },
+        "tick": 5
+      },
+      {
+        "event": "returnTool",
+        "payload": {
+          "consequence": "trust repairs partially"
+        },
+        "tick": 6
+      },
+      {
+        "event": "waitOffscreen",
+        "payload": {
+          "offscreenLife": true
+        },
+        "tick": 7
+      },
+      {
+        "event": "repairTrust",
+        "payload": {
+          "nonMagic": true
+        },
+        "tick": 8
+      },
+      {
+        "event": "runStateBoundaryAudit",
+        "payload": {
+          "checkedForbiddenKeyCount": 3,
+          "hook": "runStateBoundaryAudit",
+          "pass": true
+        },
+        "tick": 12
+      },
+      {
+        "event": "runSaveRestoreSmoke",
+        "payload": {
+          "hook": "runSaveRestoreSmoke",
+          "pass": true,
+          "room": "arrival court"
+        },
+        "tick": 13
+      },
+      {
+        "event": "runPlaytestChecklist",
+        "payload": {
+          "count": 10,
+          "pass": true
+        },
+        "tick": 14
+      },
+      {
+        "event": "runStateBoundaryAudit",
+        "payload": {
+          "checkedForbiddenKeyCount": 3,
+          "hook": "runStateBoundaryAudit",
+          "pass": true
+        },
+        "tick": 15
+      },
+      {
+        "event": "runSaveRestoreSmoke",
+        "payload": {
+          "hook": "runSaveRestoreSmoke",
+          "pass": true,
+          "room": "arrival court"
+        },
+        "tick": 16
+      },
+      {
+        "event": "runPlaytestChecklist",
+        "payload": {
+          "count": 10,
+          "pass": true
+        },
+        "tick": 17
+      },
+      {
+        "event": "runAllQAHooks",
+        "payload": {
+          "hooks": 6
+        },
+        "tick": 18
+      },
+      {
+        "event": "exportReplay",
+        "payload": {
+          "bytes": 3589,
+          "prepared": true,
+          "rows": 19
+        },
+        "tick": 19
+      }
+    ],
+    "runtime_fixes": [
+      "Added missing Ask schedule button for the existing askSchedule action.",
+      "Changed replay export to prepare a localStorage-backed export payload and visible link instead of forcing an unsupported browser download event.",
+      "Changed state-boundary audit to inspect a sanitized public-state projection so audit payloads do not poison later audits with forbidden-key names.",
+      "Added ?reset=1 clean-start path for repeatable browser QA."
+    ],
+    "title": "SSRM-3D v61 Vertical Slice App Shell",
+    "url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&qa=302c",
+    "world_summary": {
+      "ari": {
+        "debt": 0,
+        "memory": "trust repaired non-magically",
+        "progress": 0.378,
+        "schedule": "repair awning",
+        "trust": 0.613
+      },
+      "entered": true,
+      "qaPasses": 10,
+      "qaRows": 10,
+      "replayRows": 20,
+      "residentCount": 6,
+      "room": "arrival court",
+      "selected": "Ari"
+    }
+  },
+  "browser_world_v62_direct_browser_qa_readiness": 0.952,
+  "channels": {
+    "ask_schedule_runtime_control_present": 1.0,
+    "core_action_sequence_completed": 1.0,
+    "localhost_app_opened": 1.0,
+    "no_console_errors": 1.0,
+    "playtest_checklist_passed": 1.0,
+    "replay_export_prepared_without_download": 1.0,
+    "save_restore_smoke_passed": 1.0,
+    "single_browser_run_not_playtest_cohort": 0.868,
+    "source_v61_continuity": 1.0,
+    "state_boundary_audit_passed": 1.0,
+    "visible_consequence_loop_exercised": 1.0
+  },
+  "counts": {
+    "clicked_actions": 17,
+    "console_errors": 0,
+    "interesting_events": 13,
+    "qa_passes": 10,
+    "qa_rows": 10,
+    "replay_rows": 20,
+    "resident_count": 6,
+    "runtime_fixes": 4
+  },
+  "criteria": [
+    {
+      "criterion": "source_v61_continuity",
+      "evidence": "Report 301 results/state exist and pass",
+      "failure_if_false": "browser QA not tied to current app shell",
+      "passed": true
+    },
+    {
+      "criterion": "localhost_app_opened",
+      "evidence": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&qa=302c",
+      "failure_if_false": "app shell was not opened in browser",
+      "passed": true
+    },
+    {
+      "criterion": "core_action_sequence_completed",
+      "evidence": "enterWorld,moveEast,moveNorth,talkBounded,askSchedule,borrowTool,returnTool,waitOffscreen,repairTrust,saveWorld,restoreWorld,toggleAudit,runStateBoundaryAudit,runSaveRestoreSmoke,runPlaytestChecklist,runAllQAHooks,exportReplay",
+      "failure_if_false": "not all core controls were exercised",
+      "passed": true
+    },
+    {
+      "criterion": "ask_schedule_runtime_control_present",
+      "evidence": "Ask schedule button count 1 and replay event present",
+      "failure_if_false": "schedule inspection control missing",
+      "passed": true
+    },
+    {
+      "criterion": "playtest_checklist_passed",
+      "evidence": "10 QA rows and 10 task rows pass",
+      "failure_if_false": "playtest checklist failed",
+      "passed": true
+    },
+    {
+      "criterion": "state_boundary_audit_passed",
+      "evidence": "two audit events pass and forbidden keys absent",
+      "failure_if_false": "state boundary audit failed",
+      "passed": true
+    },
+    {
+      "criterion": "save_restore_smoke_passed",
+      "evidence": "save/restore smoke events pass",
+      "failure_if_false": "save/restore failed in browser",
+      "passed": true
+    },
+    {
+      "criterion": "visible_consequence_loop_exercised",
+      "evidence": "debt, repair, offscreen, trust events present",
+      "failure_if_false": "visible consequence loop not exercised",
+      "passed": true
+    },
+    {
+      "criterion": "replay_export_prepared_without_download",
+      "evidence": "exportReplay prepared local payload and visible link",
+      "failure_if_false": "replay export path failed",
+      "passed": true
+    },
+    {
+      "criterion": "no_console_errors",
+      "evidence": "console error list empty",
+      "failure_if_false": "browser console errors observed",
+      "passed": true
+    },
+    {
+      "criterion": "single_browser_run_not_playtest_cohort",
+      "evidence": "one automated browser pass; not external playtest cohort",
+      "failure_if_false": "overclaiming runtime QA as outside playtest",
+      "passed": true
+    }
+  ],
+  "gates": {
+    "all_runtime_criteria_passed": true,
+    "honest_single_run_cap_present": true,
+    "readiness_minimum_passed": true,
+    "weakest_minimum_passed": true
+  },
+  "mean_channel_score": 0.988,
+  "next_gate": "post-302 hardening: package the maintained app shell as the primary demo entry point, add a minimal manual playtest script, and reduce future work to defects found in the single playable shell before adding any new generated report organs",
+  "prefix": "ssrm_3d_browser_world_v62_app_shell_direct_browser_qa",
+  "readiness": 0.952,
+  "report": 302,
+  "seed": 20270630,
+  "source_v61_path": "artifacts/ssrm_3d_browser_world_v61_vertical_slice_app_shell_hardening_results.json",
+  "source_v61_state_seen": true,
+  "source_v61_verdict": "pass",
+  "verdict": "pass",
+  "weakest_channel_score": 0.868,
+  "weakest_named_channel": "single_browser_run_not_playtest_cohort"
+}

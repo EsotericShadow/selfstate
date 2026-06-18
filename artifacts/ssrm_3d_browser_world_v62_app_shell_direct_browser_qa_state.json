@@ -1,0 +1,29 @@
+{
+  "boundary": "Direct browser QA evidence over the deterministic browser-local v61 app shell only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.",
+  "browser_url": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&qa=302c",
+  "next_gate": "post-302 hardening: package the maintained app shell as the primary demo entry point, add a minimal manual playtest script, and reduce future work to defects found in the single playable shell before adding any new generated report organs",
+  "report": 302,
+  "runtime_fixes": [
+    "Added missing Ask schedule button for the existing askSchedule action.",
+    "Changed replay export to prepare a localStorage-backed export payload and visible link instead of forcing an unsupported browser download event.",
+    "Changed state-boundary audit to inspect a sanitized public-state projection so audit payloads do not poison later audits with forbidden-key names.",
+    "Added ?reset=1 clean-start path for repeatable browser QA."
+  ],
+  "seed": 20270630,
+  "world_summary": {
+    "ari": {
+      "debt": 0,
+      "memory": "trust repaired non-magically",
+      "progress": 0.378,
+      "schedule": "repair awning",
+      "trust": 0.613
+    },
+    "entered": true,
+    "qaPasses": 10,
+    "qaRows": 10,
+    "replayRows": 20,
+    "residentCount": 6,
+    "room": "arrival court",
+    "selected": "Ari"
+  }
+}

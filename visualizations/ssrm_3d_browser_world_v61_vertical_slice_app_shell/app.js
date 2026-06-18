@@ -2,6 +2,7 @@ const BOUNDARY = "Deterministic browser-local hardened vertical-slice app shell 
 const STATE_KEY = 'ssrm_v61_app_shell_world';
 const REPLAY_KEY = 'ssrm_v61_app_shell_replay';
 const QA_KEY = 'ssrm_v61_app_shell_qa_results';
+const EXPORT_KEY = 'ssrm_v61_app_shell_export';
 
 const residents = {
   Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
@@ -22,16 +23,21 @@ const playtestTasks = [
   { id: 'PT-07', title: 'Offscreen life', action: 'waitOffscreen', expected: 'residents progress without avatar input' },
   { id: 'PT-08', title: 'Save restore', action: 'runSaveRestoreSmoke', expected: 'world restores from localStorage' },
   { id: 'PT-09', title: 'Audit state', action: 'runStateBoundaryAudit', expected: 'private workspace remains hidden' },
-  { id: 'PT-10', title: 'Export replay', action: 'exportReplay', expected: 'replay JSON can be downloaded' }
+  { id: 'PT-10', title: 'Export replay', action: 'exportReplay', expected: 'replay JSON export is prepared and stored locally' }
 ];
 
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAllQAHooks']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
 };
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('reset') === '1') {
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY].forEach(key => localStorage.removeItem(key));
+}
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   entered: false,
@@ -85,13 +91,42 @@ function repairTrust() { mutateResident(world.selected, { trust: 0.018, debt: -1
 function saveWorld() { localStorage.setItem(STATE_KEY, JSON.stringify(world)); return log('saveWorld', { saved: true }); }
 function restoreWorld() { world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify(world)); return log('restoreWorld', { restored: true }); }
 function toggleAudit() { world.audit = !world.audit; return log('toggleAudit', { audit: world.audit }); }
-function exportReplay() { const blob = new Blob([JSON.stringify(world.replay, null, 2)], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'ssrm_v61_replay.json'; a.click(); return log('exportReplay', { rows: world.replay.length }); }
+function exportReplay() {
+  const payload = JSON.stringify(world.replay, null, 2);
+  localStorage.setItem(EXPORT_KEY, payload);
+  let link = document.getElementById('preparedReplayDownload');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedReplayDownload';
+    link.textContent = 'Prepared replay export';
+    link.download = 'ssrm_v61_replay.json';
+    link.style.display = 'block';
+    link.style.marginTop = '10px';
+    document.querySelector('.side-panel').appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  return log('exportReplay', { rows: world.replay.length, prepared: true, bytes: payload.length });
+}
 function runStateBoundaryAudit() {
-  const raw = JSON.stringify(world);
+  const publicWorld = {
+    entered: world.entered,
+    avatar: world.avatar,
+    selected: world.selected,
+    residents: world.residents,
+    resources: world.resources,
+    replay: world.replay.map(row => ({
+      event: row.event,
+      tick: row.tick,
+      selected: row.selected,
+      room: row.room,
+      payloadKeys: Object.keys(row.payload || {})
+    }))
+  };
+  const raw = JSON.stringify(publicWorld);
   const result = {
     hook: 'runStateBoundaryAudit',
     pass: !raw.includes('privateWorkspace') && !raw.includes('subjectiveFeeling') && !raw.includes('llmTranscript'),
-    checkedForbiddenKeys: qaManifest.forbiddenPublicState
+    checkedForbiddenKeyCount: qaManifest.forbiddenPublicState.length
   };
   world.lastQA = [result];
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));

@@ -1,0 +1,27 @@
+{
+  "boundary": "Deterministic browser-local reviewer-landing consolidation only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The landing path is a review workflow over public shell state, not proof of inner experience.",
+  "core_reviewer_path": [
+    "boundary",
+    "reviewerLandingOut",
+    "sessionTranscriptOut",
+    "continuityLoopOut",
+    "scenarioReceiptOut",
+    "observationTriageOut"
+  ],
+  "next_gate": "post-321: keep the primary shell reviewer-first by making landing-path failures actionable without hiding the deeper diagnostic panels or weakening the no-consciousness boundary",
+  "optional_deep_panels": [
+    "traceOut",
+    "checkpointOut",
+    "residentHistoryOut",
+    "residentDashboardOut",
+    "residentActionButtons",
+    "trustRepairOut",
+    "relationshipMemoryOut",
+    "receiptObservationOut",
+    "taskList",
+    "qaManifestOut"
+  ],
+  "prefix": "ssrm_3d_browser_world_v81_primary_demo_reviewer_landing",
+  "report": 321,
+  "seed": 20270719
+}

@@ -28,6 +28,8 @@ Report 319 makes that receipt actionable by adding field-tied receipt observatio
 
 Report 320 adds in-shell observation triage over that receipt-observation ledger: all, open, watch, resolved, and blocking filters plus public count summaries. This is reviewer workflow consolidation over deterministic public state, not autonomous debugging.
 
+Report 321 condenses the same primary shell into an outside-reviewer landing path. The default view foregrounds the no-consciousness boundary, session transcript, continuity loop, integrated receipt, and observation triage before optional deep diagnostics, so the consolidated demo is easier to audit without hiding the deeper panels.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

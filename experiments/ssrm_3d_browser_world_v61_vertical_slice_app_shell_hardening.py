@@ -153,7 +153,7 @@ def _app_html() -> str:
   <title>SSRM-3D v61 Vertical Slice App Shell</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="reviewer-focus">
   <main class="shell">
     <header class="hero">
       <p class="eyebrow">Report 301 maintained app shell</p>
@@ -214,20 +214,21 @@ def _app_html() -> str:
     </section>
 
     <section class="trace-grid">
-      <article class="panel"><h2>Trace</h2><pre id="traceOut"></pre></article>
+      <article class="panel reviewer-landing"><h2>Reviewer landing</h2><div class="reviewer-actions"><button data-action="runReviewerLandingPass">Run reviewer pass</button><button data-action="toggleDeepPanels">Toggle deep panels</button></div><pre id="reviewerLandingOut"></pre></article>
+      <article class="panel deep-panel"><h2>Trace</h2><pre id="traceOut"></pre></article>
       <article class="panel"><h2>Session transcript</h2><pre id="sessionTranscriptOut"></pre></article>
-      <article class="panel"><h2>Checkpoints</h2><pre id="checkpointOut"></pre></article>
-      <article class="panel"><h2>Resident history</h2><pre id="residentHistoryOut"></pre></article>
-      <article class="panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
-      <article class="panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
-      <article class="panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
+      <article class="panel deep-panel"><h2>Checkpoints</h2><pre id="checkpointOut"></pre></article>
+      <article class="panel deep-panel"><h2>Resident history</h2><pre id="residentHistoryOut"></pre></article>
+      <article class="panel deep-panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
+      <article class="panel deep-panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
+      <article class="panel deep-panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
       <article class="panel"><h2>Continuity loop</h2><div class="continuity-loop-actions"><button data-action="runContinuityLoop">Run continuity loop</button></div><pre id="continuityLoopOut"></pre></article>
-      <article class="panel"><h2>Resident social memory</h2><div class="relationship-actions"><button data-action="runSocialMemoryPulse">Run social pulse</button><button data-action="settleSelectedRelationship">Settle selected debt</button></div><pre id="relationshipMemoryOut"></pre></article>
+      <article class="panel deep-panel"><h2>Resident social memory</h2><div class="relationship-actions"><button data-action="runSocialMemoryPulse">Run social pulse</button><button data-action="settleSelectedRelationship">Settle selected debt</button></div><pre id="relationshipMemoryOut"></pre></article>
       <article class="panel"><h2>Integrated scenario receipt</h2><div class="receipt-actions"><button data-action="generateScenarioReceipt">Generate receipt</button></div><pre id="scenarioReceiptOut"></pre></article>
-      <article class="panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
+      <article class="panel deep-panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
       <article class="panel"><h2>Observation triage</h2><div class="triage-actions"><button data-action="setObservationFilterAll">All</button><button data-action="setObservationFilterOpen">Open</button><button data-action="setObservationFilterWatch">Watch</button><button data-action="setObservationFilterResolved">Resolved</button><button data-action="setObservationFilterBlocking">Blocking</button></div><pre id="observationTriageOut"></pre></article>
-      <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
-      <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
+      <article class="panel deep-panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
+      <article class="panel deep-panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
   </main>
   <script src="app.js"></script>
@@ -285,6 +286,9 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .receipt-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 .observation-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 .triage-actions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.reviewer-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.reviewer-landing { grid-column: 1 / -1; border: 2px solid rgba(183, 93, 57, 0.58); }
+body.reviewer-focus .deep-panel { display: none; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -811,6 +815,24 @@ function setObservationFilterOpen() {{ return setObservationFilter('open'); }}
 function setObservationFilterWatch() {{ return setObservationFilter('watch'); }}
 function setObservationFilterResolved() {{ return setObservationFilter('resolved'); }}
 function setObservationFilterBlocking() {{ return setObservationFilter('blocking'); }}
+function reviewerFocusEnabled() {{
+  return document.body.classList.contains('reviewer-focus');
+}}
+function toggleDeepPanels() {{
+  document.body.classList.toggle('reviewer-focus');
+  return log('toggleDeepPanels', {{ reviewerFocus: reviewerFocusEnabled(), deepPanelsVisible: !reviewerFocusEnabled() }});
+}}
+function runReviewerLandingPass() {{
+  runContinuityLoop();
+  generateScenarioReceipt();
+  setObservationFilterAll();
+  recordCheckpoint('reviewer landing pass');
+  return log('runReviewerLandingPass', {{
+    reviewerFocus: reviewerFocusEnabled(),
+    corePanels: ['boundary', 'sessionTranscriptOut', 'continuityLoopOut', 'scenarioReceiptOut', 'observationTriageOut'],
+    deepPanelsOptional: true
+  }});
+}}
 function filterReceiptObservations(filter = readObservationFilter()) {{
   const rows = readReceiptObservations();
   if (filter === 'open') return rows.filter(row => row.status !== 'resolved');
@@ -818,6 +840,21 @@ function filterReceiptObservations(filter = readObservationFilter()) {{
   if (filter === 'resolved') return rows.filter(row => row.status === 'resolved');
   if (filter === 'blocking') return rows.filter(row => row.severity === 'blocking');
   return rows;
+}}
+function formatReviewerLanding() {{
+  const receipt = calculateScenarioReceipt();
+  const observationRows = readReceiptObservations();
+  const focus = reviewerFocusEnabled();
+  const requiredEvents = ['runContinuityLoop', 'generateScenarioReceipt'];
+  const events = world.replay.map(row => row.event);
+  const missing = requiredEvents.filter(event => !events.includes(event));
+  return `Reviewer landing: ${{missing.length ? 'READY_FOR_RUN' : 'PASSABLE_REVIEW_PATH'}}
+Boundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.
+Focus mode: ${{focus ? 'core panels only' : 'deep panels visible'}}
+Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage
+Receipt: ${{receipt.passCount}}/${{receipt.fieldCount}} pass
+Observation triage: ${{observationRows.length}} observations / active filter ${{readObservationFilter()}}
+Missing reviewer-pass events: ${{missing.length ? missing.join(', ') : 'none'}}`;
 }}
 function formatScenarioReceipt() {{
   const receipt = calculateScenarioReceipt();
@@ -954,6 +991,8 @@ function describeReplayRow(row) {{
     logReceiptObservation: `logged receipt observation ${{payload.id}} ${{payload.field}} status=${{payload.status}}`,
     resolveLatestObservation: `resolved receipt observation=${{payload.resolved === true}} ${{payload.id || payload.reason || ''}}`,
     setObservationFilter: `set observation triage filter=${{payload.filter}} rows=${{payload.visibleRows}}`,
+    toggleDeepPanels: `deep panels visible=${{payload.deepPanelsVisible === true}}`,
+    runReviewerLandingPass: `ran reviewer landing pass focus=${{payload.reviewerFocus === true}}`,
     toggleAudit: `audit overlay=${{payload.audit === true}}`,
     selectResident: `selected resident ${{payload.selected}}`,
     canvasMove: `canvas move to ${{payload.room}} at ${{payload.x}},${{payload.y}}`
@@ -994,6 +1033,7 @@ function render() {{
   document.getElementById('memoryOut').textContent = r.memory;
   document.getElementById('replayOut').textContent = String(world.replay.length) + ' rows';
   document.getElementById('qaOut').textContent = formatQAResults();
+  document.getElementById('reviewerLandingOut').textContent = formatReviewerLanding();
   document.getElementById('traceOut').textContent = JSON.stringify({{ latest: world.replay[world.replay.length - 1] || null, world }}, null, 2);
   document.getElementById('sessionTranscriptOut').textContent = formatSessionTranscript();
   document.getElementById('checkpointOut').textContent = formatCheckpointLog();
@@ -1036,7 +1076,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, toggleDeepPanels, runReviewerLandingPass }});
 bindControls();
 render();
 """

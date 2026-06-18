@@ -6,7 +6,7 @@
   <title>SSRM-3D v61 Vertical Slice App Shell</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="reviewer-focus">
   <main class="shell">
     <header class="hero">
       <p class="eyebrow">Report 301 maintained app shell</p>
@@ -67,20 +67,21 @@
     </section>
 
     <section class="trace-grid">
-      <article class="panel"><h2>Trace</h2><pre id="traceOut"></pre></article>
+      <article class="panel reviewer-landing"><h2>Reviewer landing</h2><div class="reviewer-actions"><button data-action="runReviewerLandingPass">Run reviewer pass</button><button data-action="toggleDeepPanels">Toggle deep panels</button></div><pre id="reviewerLandingOut"></pre></article>
+      <article class="panel deep-panel"><h2>Trace</h2><pre id="traceOut"></pre></article>
       <article class="panel"><h2>Session transcript</h2><pre id="sessionTranscriptOut"></pre></article>
-      <article class="panel"><h2>Checkpoints</h2><pre id="checkpointOut"></pre></article>
-      <article class="panel"><h2>Resident history</h2><pre id="residentHistoryOut"></pre></article>
-      <article class="panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
-      <article class="panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
-      <article class="panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
+      <article class="panel deep-panel"><h2>Checkpoints</h2><pre id="checkpointOut"></pre></article>
+      <article class="panel deep-panel"><h2>Resident history</h2><pre id="residentHistoryOut"></pre></article>
+      <article class="panel deep-panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
+      <article class="panel deep-panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
+      <article class="panel deep-panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
       <article class="panel"><h2>Continuity loop</h2><div class="continuity-loop-actions"><button data-action="runContinuityLoop">Run continuity loop</button></div><pre id="continuityLoopOut"></pre></article>
-      <article class="panel"><h2>Resident social memory</h2><div class="relationship-actions"><button data-action="runSocialMemoryPulse">Run social pulse</button><button data-action="settleSelectedRelationship">Settle selected debt</button></div><pre id="relationshipMemoryOut"></pre></article>
+      <article class="panel deep-panel"><h2>Resident social memory</h2><div class="relationship-actions"><button data-action="runSocialMemoryPulse">Run social pulse</button><button data-action="settleSelectedRelationship">Settle selected debt</button></div><pre id="relationshipMemoryOut"></pre></article>
       <article class="panel"><h2>Integrated scenario receipt</h2><div class="receipt-actions"><button data-action="generateScenarioReceipt">Generate receipt</button></div><pre id="scenarioReceiptOut"></pre></article>
-      <article class="panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
+      <article class="panel deep-panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
       <article class="panel"><h2>Observation triage</h2><div class="triage-actions"><button data-action="setObservationFilterAll">All</button><button data-action="setObservationFilterOpen">Open</button><button data-action="setObservationFilterWatch">Watch</button><button data-action="setObservationFilterResolved">Resolved</button><button data-action="setObservationFilterBlocking">Blocking</button></div><pre id="observationTriageOut"></pre></article>
-      <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
-      <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
+      <article class="panel deep-panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
+      <article class="panel deep-panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
   </main>
   <script src="app.js"></script>

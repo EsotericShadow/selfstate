@@ -520,6 +520,24 @@ function setObservationFilterOpen() { return setObservationFilter('open'); }
 function setObservationFilterWatch() { return setObservationFilter('watch'); }
 function setObservationFilterResolved() { return setObservationFilter('resolved'); }
 function setObservationFilterBlocking() { return setObservationFilter('blocking'); }
+function reviewerFocusEnabled() {
+  return document.body.classList.contains('reviewer-focus');
+}
+function toggleDeepPanels() {
+  document.body.classList.toggle('reviewer-focus');
+  return log('toggleDeepPanels', { reviewerFocus: reviewerFocusEnabled(), deepPanelsVisible: !reviewerFocusEnabled() });
+}
+function runReviewerLandingPass() {
+  runContinuityLoop();
+  generateScenarioReceipt();
+  setObservationFilterAll();
+  recordCheckpoint('reviewer landing pass');
+  return log('runReviewerLandingPass', {
+    reviewerFocus: reviewerFocusEnabled(),
+    corePanels: ['boundary', 'sessionTranscriptOut', 'continuityLoopOut', 'scenarioReceiptOut', 'observationTriageOut'],
+    deepPanelsOptional: true
+  });
+}
 function filterReceiptObservations(filter = readObservationFilter()) {
   const rows = readReceiptObservations();
   if (filter === 'open') return rows.filter(row => row.status !== 'resolved');
@@ -527,6 +545,21 @@ function filterReceiptObservations(filter = readObservationFilter()) {
   if (filter === 'resolved') return rows.filter(row => row.status === 'resolved');
   if (filter === 'blocking') return rows.filter(row => row.severity === 'blocking');
   return rows;
+}
+function formatReviewerLanding() {
+  const receipt = calculateScenarioReceipt();
+  const observationRows = readReceiptObservations();
+  const focus = reviewerFocusEnabled();
+  const requiredEvents = ['runContinuityLoop', 'generateScenarioReceipt'];
+  const events = world.replay.map(row => row.event);
+  const missing = requiredEvents.filter(event => !events.includes(event));
+  return `Reviewer landing: ${missing.length ? 'READY_FOR_RUN' : 'PASSABLE_REVIEW_PATH'}
+Boundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.
+Focus mode: ${focus ? 'core panels only' : 'deep panels visible'}
+Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage
+Receipt: ${receipt.passCount}/${receipt.fieldCount} pass
+Observation triage: ${observationRows.length} observations / active filter ${readObservationFilter()}
+Missing reviewer-pass events: ${missing.length ? missing.join(', ') : 'none'}`;
 }
 function formatScenarioReceipt() {
   const receipt = calculateScenarioReceipt();
@@ -663,6 +696,8 @@ function describeReplayRow(row) {
     logReceiptObservation: `logged receipt observation ${payload.id} ${payload.field} status=${payload.status}`,
     resolveLatestObservation: `resolved receipt observation=${payload.resolved === true} ${payload.id || payload.reason || ''}`,
     setObservationFilter: `set observation triage filter=${payload.filter} rows=${payload.visibleRows}`,
+    toggleDeepPanels: `deep panels visible=${payload.deepPanelsVisible === true}`,
+    runReviewerLandingPass: `ran reviewer landing pass focus=${payload.reviewerFocus === true}`,
     toggleAudit: `audit overlay=${payload.audit === true}`,
     selectResident: `selected resident ${payload.selected}`,
     canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`
@@ -703,6 +738,7 @@ function render() {
   document.getElementById('memoryOut').textContent = r.memory;
   document.getElementById('replayOut').textContent = String(world.replay.length) + ' rows';
   document.getElementById('qaOut').textContent = formatQAResults();
+  document.getElementById('reviewerLandingOut').textContent = formatReviewerLanding();
   document.getElementById('traceOut').textContent = JSON.stringify({ latest: world.replay[world.replay.length - 1] || null, world }, null, 2);
   document.getElementById('sessionTranscriptOut').textContent = formatSessionTranscript();
   document.getElementById('checkpointOut').textContent = formatCheckpointLog();
@@ -745,6 +781,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

@@ -1,0 +1,91 @@
+{
+  "report": 321,
+  "url": "http://127.0.0.1:8780/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63",
+  "before": {
+    "bodyClass": "reviewer-focus",
+    "deepVisible": false,
+    "landingText": "Reviewer landing: READY_FOR_RUN\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 0/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: runContinuityLoop, generateScenarioReceipt",
+    "tracePanelDisplay": "none",
+    "url": "http://127.0.0.1:8780/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63",
+    "visibleCore": [
+      [
+        "boundary",
+        true
+      ],
+      [
+        "sessionTranscriptOut",
+        true
+      ],
+      [
+        "continuityLoopOut",
+        true
+      ],
+      [
+        "scenarioReceiptOut",
+        true
+      ],
+      [
+        "observationTriageOut",
+        true
+      ]
+    ]
+  },
+  "after_run": {
+    "continuityText": "Selected: Fay | entered=true | room=arrival court\nLoop coverage: 13/13 -> enterWorld, askSchedule, borrowTool, waitOffscreen, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runSocialMemoryPulse, settleSelectedRelationship, saveWorld, exportReplay, runContinuityLoop\nResident: sort herbs | debt 0 | trust 0.624 | progress 0.559 | memory: avatar repaired trust with concrete help\nContinuity signals: history 9 | checkpoints 7 | replay rows 16 | export bytes 2442\nRelationship excerpt:\nSelected tie: Fay -> Milo | trust 0.546 | debt 0 | memory: Fay settled an obligation with Milo\nPersistent key: ssrm_v61_app_shell_resident_relationships\nPublic resident-to-resident network:\n  Ari -> Fay | trust 0.572 | debt 1 | memory: Fay remembered the awning cloth and checked Ari's repair\n* Fay -> Milo | trust 0.546 | debt 0 | memory: Fay settled an obligation with Milo\nRecent loop events:\nt4 interruptWork\nt5 apologizeToResident\nt6 giveSpace\nt7 completeTrustRepair\nt8 runSocialMemoryPulse\nt9 settleSelectedRelationship\nt10 saveWorld\nt11 exportReplay\nt12 runContinuityLoop\nt13 generateScenarioReceipt\nt14 setObservationFilter\nt15 runReviewerLandingPass\nRecent selected-resident history:\nt5 trust repair: avatar apologized and named the interruption\nt6 trust repair: avatar gave space and let work continue\nt7 trust repair: avatar repaired trust with concrete help\nt8 resident social memory witness: Ari: Fay remembered the awning cloth and checked Ari's repair\nt8 resident social memory: Milo: Milo carried herb crates before rain\nt9 resident debt settled: Milo: settled obligation with Milo",
+    "coreVisible": [
+      [
+        "boundary",
+        true
+      ],
+      [
+        "sessionTranscriptOut",
+        true
+      ],
+      [
+        "continuityLoopOut",
+        true
+      ],
+      [
+        "scenarioReceiptOut",
+        true
+      ],
+      [
+        "observationTriageOut",
+        true
+      ]
+    ],
+    "landingText": "Reviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none",
+    "receiptText": "Integrated scenario receipt: ALL_PASS (9/9)\nScope: public browser-local state only; no subjective consciousness, no autonomous language, no moral patienthood.\nPASS entry_and_movement: avatar entered the maintained shell\nPASS schedule_visibility: selected resident schedule was queried and remains visible\nPASS debt_consequence: debt/trust consequence happened before bounded repair\nPASS offscreen_life: offscreen resident progress advanced during the loop\nPASS recoverable_trust_repair: wound and concrete repair are both present\nPASS resident_social_memory: resident-to-resident memory and settlement are visible\nPASS public_history_sync: selected resident history records avatar and social consequences\nPASS replay_export_ready: replay export bytes=2442\nPASS resume_ready_snapshot: saved checkpoint exists for resume verification",
+    "tracePanelDisplay": "none",
+    "transcriptText": "t0 arrival court / Fay: avatar entered the world boundary-visible\nt1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borrowed tool; debt increases\nt3 arrival court / Fay: waited offscreen; resident progress advanced\nt4 arrival court / Fay: interruptWork\nt5 arrival court / Fay: apologizeToResident\nt6 arrival court / Fay: giveSpace\nt7 arrival court / Fay: completeTrustRepair\nt8 arrival court / Fay: ran resident-to-resident social memory pulse pairs=6\nt9 arrival court / Fay: settled resident-to-resident obligation Fay -> Milo debt=0 trust=0.546\nt10 arrival court / Fay: saved local snapshot\nt11 arrival court / Fay: prepared replay export rows=11 bytes=2442\nt12 arrival court / Fay: runContinuityLoop\nt13 arrival court / Fay: generated public receipt pass=9/9\nt14 arrival court / Fay: set observation triage filter=all rows=0\nt15 arrival court / Fay: ran reviewer landing pass focus=true",
+    "triageText": "Observation triage filter: all\nCounts: total 0 | open 0 | watch 0 | minor 0 | blocking 0 | resolved 0\nVisible rows: 0\nNo observations match this filter."
+  },
+  "after_toggle": {
+    "bodyClass": "",
+    "landingText": "Reviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: deep panels visible\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none",
+    "tracePanelDisplay": "block",
+    "transcriptText": "t1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borrowed tool; debt increases\nt3 arrival court / Fay: waited offscreen; resident progress advanced\nt4 arrival court / Fay: interruptWork\nt5 arrival court / Fay: apologizeToResident\nt6 arrival court / Fay: giveSpace\nt7 arrival court / Fay: completeTrustRepair\nt8 arrival court / Fay: ran resident-to-resident social memory pulse pairs=6\nt9 arrival court / Fay: settled resident-to-resident obligation Fay -> Milo debt=0 trust=0.546\nt10 arrival court / Fay: saved local snapshot\nt11 arrival court / Fay: prepared replay export rows=11 bytes=2442\nt12 arrival court / Fay: runContinuityLoop\nt13 arrival court / Fay: generated public receipt pass=9/9\nt14 arrival court / Fay: set observation triage filter=all rows=0\nt15 arrival court / Fay: ran reviewer landing pass focus=true\nt16 arrival court / Fay: deep panels visible=true"
+  },
+  "after_resume": {
+    "bodyClass": "reviewer-focus",
+    "landingText": "Reviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none",
+    "receiptText": "Integrated scenario receipt: ALL_PASS (9/9)\nScope: public browser-local state only; no subjective consciousness, no autonomous language, no moral patienthood.\nPASS entry_and_movement: avatar entered the maintained shell\nPASS schedule_visibility: selected resident schedule was queried and remains visible\nPASS debt_consequence: debt/trust consequence happened before bounded repair\nPASS offscreen_life: offscreen resident progress advanced during the loop\nPASS recoverable_trust_repair: wound and concrete repair are both present\nPASS resident_social_memory: resident-to-resident memory and settlement are visible\nPASS public_history_sync: selected resident history records avatar and social consequences\nPASS replay_export_ready: replay export bytes=2442\nPASS resume_ready_snapshot: saved checkpoint exists for resume verification",
+    "tracePanelDisplay": "none",
+    "transcriptText": "t1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borrowed tool; debt increases\nt3 arrival court / Fay: waited offscreen; resident progress advanced\nt4 arrival court / Fay: interruptWork\nt5 arrival court / Fay: apologizeToResident\nt6 arrival court / Fay: giveSpace\nt7 arrival court / Fay: completeTrustRepair\nt8 arrival court / Fay: ran resident-to-resident social memory pulse pairs=6\nt9 arrival court / Fay: settled resident-to-resident obligation Fay -> Milo debt=0 trust=0.546\nt10 arrival court / Fay: saved local snapshot\nt11 arrival court / Fay: prepared replay export rows=11 bytes=2442\nt12 arrival court / Fay: runContinuityLoop\nt13 arrival court / Fay: generated public receipt pass=9/9\nt14 arrival court / Fay: set observation triage filter=all rows=0\nt15 arrival court / Fay: ran reviewer landing pass focus=true\nt16 arrival court / Fay: deep panels visible=true",
+    "triageText": "Observation triage filter: all\nCounts: total 0 | open 0 | watch 0 | minor 0 | blocking 0 | resolved 0\nVisible rows: 0\nNo observations match this filter."
+  },
+  "landing_pass": true,
+  "landing_evidence": "Reviewer landing: PASSABLE_REVIEW_PATH | Boundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood. | Focus mode: core panels only | Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage | Receipt: 9/9 pass | Observation triage: 0 observations / active filter all / transcript=t13 arrival court / Fay: generated public receipt pass=9/9 | t14 arrival court / Fay: set observation triage filter=all rows=0 | t15 arrival court / Fay: ran reviewer landing pass focus=true",
+  "focus_default_pass": true,
+  "focus_default_evidence": "body=reviewer-focus trace=none core=[[\"boundary\",true],[\"sessionTranscriptOut\",true],[\"continuityLoopOut\",true],[\"scenarioReceiptOut\",true],[\"observationTriageOut\",true]]",
+  "deep_toggle_pass": true,
+  "deep_toggle_evidence": "body= trace=block transcriptTail=t15 arrival court / Fay: ran reviewer landing pass focus=true | t16 arrival court / Fay: deep panels visible=true",
+  "core_path_visible_pass": true,
+  "core_path_visible_evidence": "core=[[\"boundary\",true],[\"sessionTranscriptOut\",true],[\"continuityLoopOut\",true],[\"scenarioReceiptOut\",true],[\"observationTriageOut\",true]] receipt=Integrated scenario receipt: ALL_PASS (9/9) triage=Observation triage filter: all",
+  "resume_persistence_pass": true,
+  "resume_persistence_evidence": "body=reviewer-focus trace=none landing=Reviewer landing: PASSABLE_REVIEW_PATH transcriptTail=t14 arrival court / Fay: set observation triage filter=all rows=0 | t15 arrival court / Fay: ran reviewer landing pass focus=true | t16 arrival court / Fay: deep panels visible=true",
+  "console_errors": 0,
+  "console_error_messages": [],
+  "receipt_field_count": 9,
+  "receipt_count_basis": "current maintained v61 integrated scenario receipt exposes 9 public fields"
+}

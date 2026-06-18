@@ -46,6 +46,9 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .receipt-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 .observation-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 .triage-actions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.reviewer-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.reviewer-landing { grid-column: 1 / -1; border: 2px solid rgba(183, 93, 57, 0.58); }
+body.reviewer-focus .deep-panel { display: none; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -48,6 +48,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo one-URL handoff integrity report](docs/328_ssrm_3d_browser_world_v88_primary_demo_one_url_handoff_integrity_report.md): fixes hardcoded launcher URL drift so visible and exported handoff evidence matches the URL actually used by the cold reviewer.
 - [Primary demo resume handoff freshness report](docs/329_ssrm_3d_browser_world_v89_primary_demo_resume_handoff_freshness_report.md): detects stale prepared handoff payloads after reload/resume and warns reviewers to re-prepare when refreshed shell evidence no longer matches.
 - [Primary demo stale handoff reprepare continuity report](docs/330_ssrm_3d_browser_world_v90_primary_demo_stale_handoff_reprepare_continuity_report.md): verifies that re-running Prepare outside-review handoff after reload/resume refreshes the payload to the resume handoff while preserving checklist, recorder, shell evidence, and completion state.
+- [Primary demo re-prepared handoff reload persistence report](docs/331_ssrm_3d_browser_world_v91_primary_demo_reprepared_handoff_reload_persistence_report.md): verifies that the recovered resume handoff remains visible, fresh, resume-bound, and continuity-preserving after another launcher reload.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

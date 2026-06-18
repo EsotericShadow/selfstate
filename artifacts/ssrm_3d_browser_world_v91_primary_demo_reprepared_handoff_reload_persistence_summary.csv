@@ -1,0 +1,2 @@
+readiness,weakest_channel_score,reload_persistence_score,resume_payload_integrity_score,continuity_persistence_score,console_errors,criterion_count,report,seed,verdict
+1.0,1.0,1.0,1.0,1.0,0,16,331,20270729,pass

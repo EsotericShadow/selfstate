@@ -1,0 +1,16 @@
+{
+  "boundary": "Deterministic browser-local re-prepared handoff reload persistence only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local review-evidence persistence hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v91_primary_demo_reprepared_handoff_reload_persistence_browser_evidence.json",
+  "next_gate": "post-331: reduce cold-reviewer restart friction by checking whether the persisted re-prepared handoff is readable and actionable without requiring privileged JSON inspection",
+  "report": 331,
+  "report_330_results_path": "artifacts/ssrm_3d_browser_world_v90_primary_demo_stale_handoff_reprepare_continuity_results.json",
+  "required_terms": [
+    "handoffPayloadFreshnessState",
+    "previewFreshness",
+    "Prepared handoff payload is stale",
+    "renderOutsideReviewHandoffPreview",
+    "reviewedHandoffCompletion"
+  ],
+  "seed": 20270729,
+  "verdict": "pass"
+}

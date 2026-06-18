@@ -14,6 +14,8 @@ Report 312 adds a unified resident dashboard to the maintained shell, showing ev
 
 Report 313 makes that dashboard actionable with per-resident Select/Help/Borrow/Return controls routed through existing consequence functions. It keeps action, memory, debt, trust, and history updates on the same primary surface rather than creating a parallel mechanic.
 
+Report 314 adds a bounded recoverable trust-repair scenario to the same shell: interruption creates a visible public trust wound, while apology, giving space, and concrete help repair it through the existing dashboard/history loop. This is not suffering-maximization; it is a visible consequence and recovery path.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

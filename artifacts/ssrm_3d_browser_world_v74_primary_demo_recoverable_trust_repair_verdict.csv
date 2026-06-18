@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_workflow_score,next_gate
+314,pass,1.0,1.0,1.0,"post-314: run a reviewer pass using the trust-repair scenario plus dashboard actions; if coherent, next consolidation should expose a compact scenario checklist for arrival, consequence, repair, resume, and replay export on the same primary surface"

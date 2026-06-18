@@ -220,6 +220,7 @@ def _app_html() -> str:
       <article class="panel"><h2>Resident history</h2><pre id="residentHistoryOut"></pre></article>
       <article class="panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
       <article class="panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
+      <article class="panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
       <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
       <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
@@ -273,6 +274,7 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .resident-action-row { display: grid; grid-template-columns: 72px repeat(4, minmax(0, 1fr)); gap: 6px; align-items: center; padding: 8px; border-radius: 14px; background: rgba(245, 232, 199, 0.72); }
 .resident-action-row strong { font-size: 0.92rem; }
 .resident-action-row button { padding: 7px 8px; font-size: 0.82rem; }
+.trust-repair-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -529,6 +531,30 @@ function recordResidentHistory(name, event, detail) {{
   localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   return history;
 }}
+function interruptWork() {{
+  mutateResident(world.selected, {{ trust: -0.060, memory: 'avatar interrupted work', historyEvent: 'trust wound', historyDetail: 'avatar interrupted work during ' + currentResident().schedule }});
+  return log('interruptWork', {{ recoverableHarm: true, trustDelta: -0.060, bounded: true }});
+}}
+function apologizeToResident() {{
+  mutateResident(world.selected, {{ trust: 0.024, memory: 'avatar apologized and named the interruption', historyEvent: 'trust repair', historyDetail: 'avatar apologized and named the interruption' }});
+  return log('apologizeToResident', {{ repairStep: 'apology', trustDelta: 0.024 }});
+}}
+function giveSpace() {{
+  mutateResident(world.selected, {{ trust: 0.012, progress: 0.010, memory: 'avatar gave space after apology', historyEvent: 'trust repair', historyDetail: 'avatar gave space and let work continue' }});
+  return log('giveSpace', {{ repairStep: 'space', trustDelta: 0.012, progressDelta: 0.010 }});
+}}
+function completeTrustRepair() {{
+  mutateResident(world.selected, {{ trust: 0.034, debt: -1, progress: 0.028, memory: 'avatar repaired trust with concrete help', historyEvent: 'trust repair', historyDetail: 'avatar repaired trust with concrete help' }});
+  return log('completeTrustRepair', {{ repairStep: 'concrete help', trustDelta: 0.034, nonMagic: true }});
+}}
+function formatTrustRepairStatus() {{
+  const resident = currentResident();
+  const rows = readResidentHistory()[world.selected] || [];
+  const recent = rows.slice(-6).map(row => `t${{row.tick}} ${{row.event}}: ${{row.detail}} -> trust ${{row.trust}} debt ${{row.debt}} progress ${{row.progress}}`).join('\\n');
+  const repairState = resident.memory.includes('interrupted') ? 'wound visible; apology/space/help can repair' : resident.memory.includes('repaired trust') ? 'repair completed through concrete help' : resident.memory.includes('apologized') || resident.memory.includes('gave space') ? 'repair in progress' : 'no active trust wound';
+  return `Selected: ${{world.selected}} | trust ${{resident.trust.toFixed(3)}} | debt ${{resident.debt}} | progress ${{resident.progress.toFixed(3)}}\nState: ${{repairState}}\nRecent public history:
+${{recent || 'no trust repair events yet'}}`;
+}}
 function formatResidentActionButtons() {{
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${{name}}</strong><button type="button" data-dashboard-select="${{name}}">Select</button><button type="button" data-dashboard-help="${{name}}">Help</button><button type="button" data-dashboard-borrow="${{name}}">Borrow</button><button type="button" data-dashboard-return="${{name}}">Return</button></div>`).join('');
 }}
@@ -668,6 +694,7 @@ function render() {{
   document.getElementById('residentHistoryOut').textContent = formatResidentHistory();
   document.getElementById('residentDashboardOut').textContent = formatResidentDashboard();
   document.getElementById('residentActionButtons').innerHTML = formatResidentActionButtons();
+  document.getElementById('trustRepairOut').textContent = formatTrustRepairStatus();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${{task.id}}</strong>: ${{task.title}}<br><span>${{task.expected}}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -698,7 +725,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair }});
 bindControls();
 render();
 """

@@ -1,0 +1,12 @@
+{
+  "boundary": "Deterministic browser-local handoff-payload preview only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The preview exposes local review payload contents; it is not external validation, autonomous review, or evidence of inner experience.",
+  "next_gate": "post-325: use the visible handoff payload to run a complete reviewer walkthrough and fix the next concrete comprehension defect in the same launcher or maintained shell",
+  "prefix": "ssrm_3d_browser_world_v85_primary_demo_handoff_payload_preview",
+  "preview_element_ids": [
+    "outsideReviewHandoffStatus",
+    "outsideReviewHandoffOut"
+  ],
+  "report": 325,
+  "seed": 20270723,
+  "target_shell": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+}

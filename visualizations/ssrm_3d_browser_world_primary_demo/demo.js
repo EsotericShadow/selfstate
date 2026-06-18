@@ -138,6 +138,7 @@ function exportOutsideReviewHandoff() {
   }
   link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
   renderOutsideReviewEvidence('Outside-review handoff prepared with shell evidence.');
+  renderOutsideReviewHandoffPreview('Outside-review handoff payload visible below.');
   renderOutsideReviewChecklist('Outside-review handoff prepared.');
 }
 
@@ -146,6 +147,7 @@ function clearOutsideReviewChecklist() {
   localStorage.removeItem(OUTSIDE_REVIEW_EXPORT_KEY);
   const link = document.getElementById('preparedOutsideReviewExport');
   if (link) link.remove();
+  renderOutsideReviewHandoffPreview('Outside-review handoff cleared.');
   renderOutsideReviewChecklist('Outside-review checklist cleared.');
 }
 
@@ -193,6 +195,27 @@ function renderOutsideReviewEvidence(message) {
   const out = document.getElementById('outsideReviewEvidenceOut');
   if (out) out.textContent = JSON.stringify(evidence, null, 2);
   return evidence;
+}
+
+function readOutsideReviewHandoffPayload() {
+  const text = localStorage.getItem(OUTSIDE_REVIEW_EXPORT_KEY) || '';
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    return { parseError: true, raw: text, boundary: 'outside-review-handoff-preview-public-local-only' };
+  }
+}
+
+function renderOutsideReviewHandoffPreview(message) {
+  const payload = readOutsideReviewHandoffPayload();
+  const status = document.getElementById('outsideReviewHandoffStatus');
+  if (status) {
+    status.textContent = message || (payload ? 'Outside-review handoff payload visible below.' : 'No outside-review handoff export prepared yet.');
+  }
+  const out = document.getElementById('outsideReviewHandoffOut');
+  if (out) out.textContent = payload ? JSON.stringify(payload, null, 2) : 'No outside-review handoff export prepared yet.';
+  return payload;
 }
 
 function recordStep(stepId, result) {
@@ -313,4 +336,5 @@ document.getElementById('exportOutsideReview')?.addEventListener('click', export
 document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
 renderOutsideReviewChecklist();
 renderOutsideReviewEvidence();
+renderOutsideReviewHandoffPreview();
 renderRecorder();

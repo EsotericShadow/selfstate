@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+handoff_preview_generated_from_source,True,1.0,handoff payload preview is generated from the Report 303 launcher source,regeneration would erase the visible payload preview
+launcher_preview_panel_visible,True,1.0,primary launcher contains a visible handoff payload status and preview panel,reviewers would still need downloads or localStorage to inspect handoff contents
+export_wires_preview,True,1.0,handoff export and page load both render the visible payload preview,prepared exports would remain invisible in-page
+handoff_key_still_registered,True,1.0,QA manifest still registers the outside-review handoff local state key,preview would point at unregistered browser-local state
+browser_preview_empty_before_export,True,1.0,status='Outside-review handoff cleared.'; out='No outside-review handoff export prepared yet.',browser did not show an explicit empty preview before export
+browser_preview_after_export,True,1.0,"status='Outside-review handoff payload visible below.'; keys=['boundary', 'checklistState', 'defects', 'handoff', 'launchUrl', 'manualRecords', 'recorderExportPrepared', 'reportIntroduced', 'shellEvidence', 'targetShell']",browser did not show handoff payload contents after export
+browser_preview_persists_reload,True,1.0,"status='Outside-review handoff payload visible below.'; keys=['boundary', 'checklistState', 'defects', 'handoff', 'launchUrl', 'manualRecords', 'recorderExportPrepared', 'reportIntroduced', 'shellEvidence', 'targetShell']",handoff payload preview did not persist through launcher reload
+browser_clear_resets_preview,True,1.0,status='Outside-review handoff cleared.'; out='No outside-review handoff export prepared yet.',clearing the outside-review checklist did not clear visible handoff payload preview
+browser_clean_resume_preserved,True,1.0,launch_url='http://127.0.0.1:8784/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63'; resume_url='http://127.0.0.1:8784/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63'; launch_class='reviewer-focus'; resume_class='reviewer-focus',payload preview work broke clean/resume handoff to the maintained shell
+console_clean,True,1.0,browser console error count was 0,browser workflow produced runtime console errors

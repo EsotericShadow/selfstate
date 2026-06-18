@@ -36,6 +36,8 @@ Report 323 packages the launcher and reviewer-first shell into one outside-revie
 
 Report 324 makes that checklist evidence-bearing after a walkthrough. The launcher can now refresh maintained-shell public state for replay rows, reviewer-pass event, integrated receipt, receipt observations, checkpoints, and replay-export readiness, then embed that evidence in the outside-review handoff export.
 
+Report 325 fixes the next handoff comprehension defect: the prepared outside-review handoff payload is now visible inside the launcher itself. Reviewers can inspect checklist state, launch handoff, shell evidence, manual records, defects, target shell, and boundary without downloading a file or opening localStorage.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

@@ -280,6 +280,8 @@ def _html() -> str:
       <pre id=\"outsideReviewOut\"></pre>
       <p id=\"outsideReviewEvidenceStatus\">No shell evidence refreshed yet.</p>
       <pre id=\"outsideReviewEvidenceOut\"></pre>
+      <p id=\"outsideReviewHandoffStatus\">No outside-review handoff export prepared yet.</p>
+      <pre id=\"outsideReviewHandoffOut\"></pre>
     </section>
     <section class=\"grid\">
       <article>
@@ -631,7 +633,7 @@ article, .handoff, .recorder { padding: 26px; }
 .triage-grid label { display: grid; gap: 8px; font-weight: 700; }
 textarea, select { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
 textarea { resize: vertical; }
-#recordLedgerOut, #outsideReviewOut, #outsideReviewEvidenceOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
+#recordLedgerOut, #outsideReviewOut, #outsideReviewEvidenceOut, #outsideReviewHandoffOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
 code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px; }
@@ -786,6 +788,7 @@ function exportOutsideReviewHandoff() {
   }
   link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
   renderOutsideReviewEvidence('Outside-review handoff prepared with shell evidence.');
+  renderOutsideReviewHandoffPreview('Outside-review handoff payload visible below.');
   renderOutsideReviewChecklist('Outside-review handoff prepared.');
 }
 
@@ -794,6 +797,7 @@ function clearOutsideReviewChecklist() {
   localStorage.removeItem(OUTSIDE_REVIEW_EXPORT_KEY);
   const link = document.getElementById('preparedOutsideReviewExport');
   if (link) link.remove();
+  renderOutsideReviewHandoffPreview('Outside-review handoff cleared.');
   renderOutsideReviewChecklist('Outside-review checklist cleared.');
 }
 
@@ -841,6 +845,27 @@ function renderOutsideReviewEvidence(message) {
   const out = document.getElementById('outsideReviewEvidenceOut');
   if (out) out.textContent = JSON.stringify(evidence, null, 2);
   return evidence;
+}
+
+function readOutsideReviewHandoffPayload() {
+  const text = localStorage.getItem(OUTSIDE_REVIEW_EXPORT_KEY) || '';
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    return { parseError: true, raw: text, boundary: 'outside-review-handoff-preview-public-local-only' };
+  }
+}
+
+function renderOutsideReviewHandoffPreview(message) {
+  const payload = readOutsideReviewHandoffPayload();
+  const status = document.getElementById('outsideReviewHandoffStatus');
+  if (status) {
+    status.textContent = message || (payload ? 'Outside-review handoff payload visible below.' : 'No outside-review handoff export prepared yet.');
+  }
+  const out = document.getElementById('outsideReviewHandoffOut');
+  if (out) out.textContent = payload ? JSON.stringify(payload, null, 2) : 'No outside-review handoff export prepared yet.';
+  return payload;
 }
 
 function recordStep(stepId, result) {
@@ -961,6 +986,7 @@ document.getElementById('exportOutsideReview')?.addEventListener('click', export
 document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
 renderOutsideReviewChecklist();
 renderOutsideReviewEvidence();
+renderOutsideReviewHandoffPreview();
 renderRecorder();
 """
 

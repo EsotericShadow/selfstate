@@ -916,6 +916,7 @@ function renderOutsideReviewEvidence(message) {
   }
   const out = document.getElementById('outsideReviewEvidenceOut');
   if (out) out.textContent = JSON.stringify(evidence, null, 2);
+  if (readOutsideReviewHandoffPayload()) renderOutsideReviewHandoffPreview();
   return evidence;
 }
 
@@ -929,14 +930,50 @@ function readOutsideReviewHandoffPayload() {
   }
 }
 
+function handoffPayloadFreshnessState(payload) {
+  if (!payload) {
+    return { fresh: false, mismatches: ['missing payload'], boundary: 'outside-review-handoff-freshness-public-local-only' };
+  }
+  const currentEvidence = buildOutsideReviewEvidence();
+  const currentCompletion = reviewedHandoffCompletionState();
+  const payloadHandoff = payload.handoff || {};
+  const currentHandoff = currentEvidence.handoff || {};
+  const mismatches = [];
+  if ((payloadHandoff.recordedAt || null) !== (currentHandoff.recordedAt || null)) mismatches.push('launch handoff changed');
+  if ((payloadHandoff.kind || null) !== (currentHandoff.kind || null)) mismatches.push('launch kind changed');
+  if ((payload.shellEvidence || {}).replayRows !== currentEvidence.replayRows) mismatches.push('shell replay rows changed');
+  if (((payload.reviewedHandoffCompletion || {}).manualRecordCount || 0) !== currentCompletion.manualRecordCount) mismatches.push('manual recorder count changed');
+  if (((payload.reviewedHandoffCompletion || {}).openDefectCount || 0) !== currentCompletion.openDefectCount) mismatches.push('open defect count changed');
+  return {
+    fresh: mismatches.length === 0,
+    mismatches,
+    payloadHandoffKind: payloadHandoff.kind || null,
+    currentHandoffKind: currentHandoff.kind || null,
+    payloadHandoffRecordedAt: payloadHandoff.recordedAt || null,
+    currentHandoffRecordedAt: currentHandoff.recordedAt || null,
+    payloadReplayRows: (payload.shellEvidence || {}).replayRows || 0,
+    currentReplayRows: currentEvidence.replayRows,
+    payloadManualRecordCount: (payload.reviewedHandoffCompletion || {}).manualRecordCount || 0,
+    currentManualRecordCount: currentCompletion.manualRecordCount,
+    boundary: 'outside-review-handoff-freshness-public-local-only'
+  };
+}
+
 function renderOutsideReviewHandoffPreview(message) {
   const payload = readOutsideReviewHandoffPayload();
+  const freshness = payload ? handoffPayloadFreshnessState(payload) : null;
   const status = document.getElementById('outsideReviewHandoffStatus');
   if (status) {
-    status.textContent = message || (payload ? 'Outside-review handoff payload visible below.' : 'No outside-review handoff export prepared yet.');
+    if (payload && freshness && !freshness.fresh) {
+      status.textContent = `Prepared handoff payload is stale: ${freshness.mismatches.join(', ')}. Re-run Prepare outside-review handoff.`;
+    } else {
+      status.textContent = message || (payload ? 'Outside-review handoff payload visible below.' : 'No outside-review handoff export prepared yet.');
+    }
   }
   const out = document.getElementById('outsideReviewHandoffOut');
-  if (out) out.textContent = payload ? JSON.stringify(payload, null, 2) : 'No outside-review handoff export prepared yet.';
+  if (out) {
+    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness }, null, 2) : 'No outside-review handoff export prepared yet.';
+  }
   return payload;
 }
 

@@ -46,6 +46,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo shell return handoff report](docs/326_ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_report.md): adds a visible return-to-launcher handoff action after the reviewer shell pass so cold reviewers can complete the checklist/export loop without manual navigation.
 - [Primary demo full handoff loop completion report](docs/327_ssrm_3d_browser_world_v87_primary_demo_full_handoff_loop_completion_report.md): gates outside-review completion on refreshed shell evidence, visible recorder export, manual recorder outcome, replay export readiness, and open-defect checks.
 - [Primary demo one-URL handoff integrity report](docs/328_ssrm_3d_browser_world_v88_primary_demo_one_url_handoff_integrity_report.md): fixes hardcoded launcher URL drift so visible and exported handoff evidence matches the URL actually used by the cold reviewer.
+- [Primary demo resume handoff freshness report](docs/329_ssrm_3d_browser_world_v89_primary_demo_resume_handoff_freshness_report.md): detects stale prepared handoff payloads after reload/resume and warns reviewers to re-prepare when refreshed shell evidence no longer matches.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

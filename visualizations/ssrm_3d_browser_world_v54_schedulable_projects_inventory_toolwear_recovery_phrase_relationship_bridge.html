@@ -1,0 +1,317 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v54 Schedulable Project Execution Bridge</title>
+<style>
+:root { --ink:#11120f; --copper:#d18a54; --mint:#9ccfb8; --blue:#79a7c8; --paper:#f7efdf; --line:rgba(247,239,223,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 15% 17%, rgba(209,138,84,.33), transparent 27%), radial-gradient(circle at 84% 13%, rgba(121,167,200,.26), transparent 30%), linear-gradient(135deg, #11120f, #253327 47%, #302738); }
+main { display:grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(17,18,15,.76); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(209,138,84,.18); color:var(--paper); padding:8px 11px; }
+.flower { width:158px; height:158px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(247,239,223,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(156,207,184,.45), rgba(121,167,200,.42), rgba(209,138,84,.42), rgba(156,207,184,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="schedulable-project-panel"><h2>Schedulable resident projects</h2><p>Residents own scheduled work slots, project sites, visible progress, and conflict recovery.</p></section>
+<section id="inventory-task-panel"><h2>Inventory-affecting execution</h2><p>Tasks consume named materials, create outputs, and expose no-magic inventory deltas.</p></section>
+<section id="tool-wear-panel"><h2>Tool wear and maintenance</h2><p>Tools accumulate wear, show failure risk, and require visible maintenance or retry plans.</p></section>
+<section id="failed-plan-recovery-panel"><h2>Failed-plan recovery</h2><p>Failed or uncertain work is not erased; recovery adds debt, regression visibility, and retry scheduling.</p></section>
+<section id="phrase-relationship-panel"><h2>Longer-term phrase relationships</h2><p>Phrase learning is bound to resident memory, project help, trust, and reload persistence.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore projects, inventory, tool wear, recovery rows, and phrase relationships.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and project frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine, no LLM call.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">schedule resident project</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">show project progress</button>
+<button data-action="resolveScheduleConflict" onclick="resolveScheduleConflict('project')">resolve schedule conflict</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">execute inventory task</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">show inventory delta</button>
+<button data-action="restockMaterial" onclick="restockMaterial('inventory')">restock material</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">show tool wear</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">perform maintenance</button>
+<button data-action="showToolFailureRisk" onclick="showToolFailureRisk('tool')">show tool failure risk</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">recover failed plan</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">schedule retry</button>
+<button data-action="showRegressionDebt" onclick="showRegressionDebt('recovery')">show regression debt</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">practice relationship phrase</button>
+<button data-action="showPhraseRelationship" onclick="showPhraseRelationship('phrase')">show phrase relationship</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">show phrase memory</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">restore project memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showProjectFrequency" onclick="showProjectFrequency('frequency')">show project frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">schedule moss_ward</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">inventory reed bundle</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">tool reed knife</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">recover wet footing</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">phrase path dry</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">restore moss_ward</button>
+<button data-action="showProjectFrequency" onclick="showProjectFrequency('frequency')">frequency moss_ward</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project drain rain path</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress drain rain path</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project patch blanket loom</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress patch blanket loom</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project copy root ledger</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress copy root ledger</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project raise warm-cup shelf</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress raise warm-cup shelf</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume reed bundle</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta reed bundle</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume dry clay</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta dry clay</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume moss cord</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta moss cord</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume charcoal mark</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta charcoal mark</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear reed knife</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain reed knife</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear loom hook</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain loom hook</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear ledger awl</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain ledger awl</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure wet footing</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry wet footing</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure cord snap</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry cord snap</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure ledger miscopy</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry ledger miscopy</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn path dry</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory path dry</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn loom wait</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory loom wait</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn ledger no touch</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory ledger no touch</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">schedule glass_harbor</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">inventory lamp oil</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">tool wick clamp</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">recover lamp sputter</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">phrase lamp bright</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">restore glass_harbor</button>
+<button data-action="showProjectFrequency" onclick="showProjectFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project relight public lamp</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress relight public lamp</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project mend fog net</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress mend fog net</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project seal fog catcher</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress seal fog catcher</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project mark crossing rope</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress mark crossing rope</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume lamp oil</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta lamp oil</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume glass bead</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta glass bead</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume net fiber</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta net fiber</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume salt chalk</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta salt chalk</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear wick clamp</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain wick clamp</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear net shuttle</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain net shuttle</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear rope gauge</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain rope gauge</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure lamp sputter</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry lamp sputter</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure net tear</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry net tear</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure fog seal leak</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry fog seal leak</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn lamp bright</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory lamp bright</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn net keeper</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory net keeper</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn tea first</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory tea first</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">schedule cinder_garden</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">inventory shade reed</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">tool shade mallet</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">recover heat spike</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">phrase seed sleep</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">restore cinder_garden</button>
+<button data-action="showProjectFrequency" onclick="showProjectFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project shade seed rows</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress shade seed rows</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project sort ember fruit</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress sort ember fruit</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project cool ash path</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress cool ash path</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project repair seed calendar</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress repair seed calendar</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume shade reed</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta shade reed</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume ember basket</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta ember basket</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume cool stone</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta cool stone</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume seed ink</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta seed ink</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear shade mallet</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain shade mallet</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear basket hook</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain basket hook</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear calendar stylus</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain calendar stylus</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure heat spike</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry heat spike</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure basket spill</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry basket spill</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure calendar mismatch</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry calendar mismatch</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn seed sleep</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory seed sleep</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn shade first</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory shade first</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn cool hand</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory cool hand</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">schedule lichen_bridge</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">inventory rope fiber</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">tool tension peg</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">recover rope slack</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">phrase rope safe</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">restore lichen_bridge</button>
+<button data-action="showProjectFrequency" onclick="showProjectFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project test rope bridge</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress test rope bridge</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project weave spare rope</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress weave spare rope</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project mark signal bell</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress mark signal bell</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project repair meal ledger</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress repair meal ledger</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume rope fiber</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta rope fiber</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume bell tin</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta bell tin</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume meal token</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta meal token</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume lichen glue</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta lichen glue</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear tension peg</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain tension peg</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear bell file</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain bell file</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear ledger punch</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain ledger punch</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure rope slack</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry rope slack</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure bell mistune</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry bell mistune</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure token shortage</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry token shortage</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn rope safe</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory rope safe</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn signal hush</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory signal hush</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn bowl shared</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory bowl shared</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">schedule orchid_engine</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">inventory valve grease</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">tool valve key</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">recover valve knock</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">phrase valve wait</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">restore orchid_engine</button>
+<button data-action="showProjectFrequency" onclick="showProjectFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project listen to valve pulse</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress listen to valve pulse</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project clean gear wash</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress clean gear wash</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project tend orchid lamp</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress tend orchid lamp</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">project stabilize steam kettle</button>
+<button data-action="showProjectProgress" onclick="showProjectProgress('project')">progress stabilize steam kettle</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume valve grease</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta valve grease</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume gear cloth</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta gear cloth</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume orchid oil</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta orchid oil</button>
+<button data-action="executeInventoryTask" onclick="executeInventoryTask('inventory')">consume steam seal</button>
+<button data-action="showInventoryDelta" onclick="showInventoryDelta('inventory')">delta steam seal</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear valve key</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain valve key</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear gear brush</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain gear brush</button>
+<button data-action="showToolWear" onclick="showToolWear('tool')">wear lamp tongs</button>
+<button data-action="performMaintenance" onclick="performMaintenance('tool')">maintain lamp tongs</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure valve knock</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry valve knock</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure gear jam</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry gear jam</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">failure orchid dim</button>
+<button data-action="scheduleRetry" onclick="scheduleRetry('recovery')">retry orchid dim</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn valve wait</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory valve wait</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn gear lane</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory gear lane</button>
+<button data-action="practiceRelationshipPhrase" onclick="practiceRelationshipPhrase('phrase')">learn orchid rest</button>
+<button data-action="showPhraseMemory" onclick="showPhraseMemory('phrase')">memory orchid rest</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot survey</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair survey</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot prepare</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair prepare</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot work</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair work</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot inspect</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair inspect</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot handoff</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair handoff</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot restock</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair restock</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot tool fail</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair tool fail</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot material low</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair material low</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot resident lead</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair resident lead</button>
+<button data-action="scheduleResidentProject" onclick="scheduleResidentProject('project')">slot avatar waits</button>
+<button data-action="recoverFailedPlan" onclick="recoverFailedPlan('recovery')">repair avatar waits</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload projects</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload inventory</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload tool wear</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload recoveries</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload phrases</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload history</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload no LLM</button>
+<button data-action="restoreProjectMemory" onclick="restoreProjectMemory('reload')">reload private boundary</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v54.project.execution';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[],"inventory":{},"tools":{}}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic project execution trace; no LLM call' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function scheduleResidentProject(scope) { return pushTrace('scheduleResidentProject', scope); }
+function showProjectProgress(scope) { return pushTrace('showProjectProgress', scope); }
+function resolveScheduleConflict(scope) { return pushTrace('resolveScheduleConflict', scope); }
+function executeInventoryTask(scope) { return pushTrace('executeInventoryTask', scope); }
+function showInventoryDelta(scope) { return pushTrace('showInventoryDelta', scope); }
+function restockMaterial(scope) { return pushTrace('restockMaterial', scope); }
+function showToolWear(scope) { return pushTrace('showToolWear', scope); }
+function performMaintenance(scope) { return pushTrace('performMaintenance', scope); }
+function showToolFailureRisk(scope) { return pushTrace('showToolFailureRisk', scope); }
+function recoverFailedPlan(scope) { return pushTrace('recoverFailedPlan', scope); }
+function scheduleRetry(scope) { return pushTrace('scheduleRetry', scope); }
+function showRegressionDebt(scope) { return pushTrace('showRegressionDebt', scope); }
+function practiceRelationshipPhrase(scope) { return pushTrace('practiceRelationshipPhrase', scope); }
+function showPhraseRelationship(scope) { return pushTrace('showPhraseRelationship', scope); }
+function showPhraseMemory(scope) { return pushTrace('showPhraseMemory', scope); }
+function restoreProjectMemory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restoreProjectMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(restoreProjectMemory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showProjectFrequency(scope) { return pushTrace('showProjectFrequency', scope); }
+function showRateBoundary(scope) { return pushTrace('showRateBoundary', scope); }
+</script>
+</body>
+</html>

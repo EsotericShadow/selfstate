@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+361,pass,1.0,1.0,"post-361: make the source-bounded refusal/choice affect one later recoverable trust or task branch while keeping history attribution, replay audit, and no-LLM boundaries visible"

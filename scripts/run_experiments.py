@@ -4070,6 +4070,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v118_primary_shell_accountability_return_greeting_continuity",
         "experiments.ssrm_3d_browser_world_v119_primary_shell_resident_accountability_social_echo",
         "experiments.ssrm_3d_browser_world_v120_primary_shell_bounded_fay_echo_conversation",
+        "experiments.ssrm_3d_browser_world_v121_primary_shell_echo_influenced_choice_refusal",
         "--seed",
         "20270732",
     ],

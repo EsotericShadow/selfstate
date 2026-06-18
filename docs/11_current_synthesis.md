@@ -1275,3 +1275,9 @@ This is still deterministic browser-local state, but it is a better single-syste
 Report 360 makes the Report 359 resident-to-resident echo influence a later bounded conversation answer. After the return greeting has propagated from Milo to Fay, selecting Fay and pressing `Talk` with a safe bounded phrase can create an Echo conversation receipt. The receipt names Fay, the phrase, the source echo `milo-offscreen-water-jars`, the resolved/accounted status chain, and explicitly marks `No LLM: yes`, `Autonomous language: no`, and `Phrasebook only: yes`.
 
 This remains deterministic browser-local state, not autonomous language or consciousness. The gain is traceable source-carrying dialogue: a later resident-facing answer can depend on prior social memory without hiding the source boundary or claiming subjective understanding.
+
+### Report 361: Browser World v121 Primary Shell Echo-Influenced Choice Refusal
+
+Report 361 makes the Report 360 bounded Fay conversation affect a later resident-facing action. After Fay carries Milo's accountability echo and answers through the phrasebook-only `Talk` path, `Offer help` now creates an Echo choice receipt. The receipt records that Fay accepts source-bounded help for `milo-offscreen-water-jars` while refusing to rewrite the original offscreen cause chain or treat the avatar as a direct source command.
+
+This is still deterministic browser-local state. The important change is that resident memory now changes a later action affordance: the system can show a bounded refusal/choice with source attribution, recoverability, replay evidence, and no LLM/autonomous-language claim.

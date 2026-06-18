@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -69,6 +69,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   returnGreetingContinuity: null,
   accountabilitySocialEcho: null,
   boundedEchoConversation: null,
+  echoInfluencedChoiceReceipt: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -143,6 +144,27 @@ function renderBoundedEchoConversation() {
     `No LLM: ${world.boundedEchoConversation.noLLM ? 'yes' : 'no'}`,
     `Autonomous language: ${world.boundedEchoConversation.autonomousLanguage ? 'yes' : 'no'}`,
     `Phrasebook only: ${world.boundedEchoConversation.phrasebookOnly ? 'yes' : 'no'}`
+  ].join('\n');
+}
+function renderEchoInfluencedChoiceReceipt() {
+  const node = document.getElementById('echoInfluencedChoiceReceiptOut');
+  if (!node) return;
+  if (!world.echoInfluencedChoiceReceipt) {
+    node.textContent = 'No echo-influenced choice yet.';
+    return;
+  }
+  node.textContent = [
+    `Resident: ${world.echoInfluencedChoiceReceipt.resident}`,
+    `Action: ${world.echoInfluencedChoiceReceipt.action}`,
+    `Choice: ${world.echoInfluencedChoiceReceipt.choice}`,
+    `Refusal: ${world.echoInfluencedChoiceReceipt.refusal}`,
+    `Source echo: ${world.echoInfluencedChoiceReceipt.sourceEchoId}`,
+    `Source preserved: ${world.echoInfluencedChoiceReceipt.sourceAttributionPreserved ? 'yes' : 'no'}`,
+    `Direct avatar command: ${world.echoInfluencedChoiceReceipt.directAvatarCommand ? 'yes' : 'no'}`,
+    `No LLM: ${world.echoInfluencedChoiceReceipt.noLLM ? 'yes' : 'no'}`,
+    `Autonomous language: ${world.echoInfluencedChoiceReceipt.autonomousLanguage ? 'yes' : 'no'}`,
+    `Phrasebook only: ${world.echoInfluencedChoiceReceipt.phrasebookOnly ? 'yes' : 'no'}`,
+    `Recoverable: ${world.echoInfluencedChoiceReceipt.recoverable ? 'yes' : 'no'}`
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -250,6 +272,7 @@ function log(event, payload) {
   renderReturnGreetingContinuity();
   renderAccountabilitySocialEcho();
   renderBoundedEchoConversation();
+  renderEchoInfluencedChoiceReceipt();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -363,8 +386,46 @@ function talkBounded() {
   mutateResident(world.selected, { trust: 0.012, memory });
   return log('talkBounded', { phrase, boundedEchoConversation, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
 }
+function applyEchoInfluencedChoiceReceipt(action) {
+  const conversation = world.boundedEchoConversation;
+  const echo = world.accountabilitySocialEcho;
+  if (!conversation || !echo || world.selected !== conversation.resident || conversation.resident !== echo.echoResident) return null;
+  if (action !== 'offer_help') return null;
+  const obligation = (world.obligationLedger || []).find(row => row.id === conversation.sourceEchoId);
+  const event = (world.offscreenObligationEvents || []).find(row => row.obligationId === conversation.sourceEchoId);
+  const sourceAttributionPreserved = Boolean(obligation && event && echo.residentHistoryPreserved && echo.directAvatarCommand === false);
+  const choice = 'accept_source_bounded_help';
+  const refusal = `refuses to rewrite ${event ? event.actor : 'unknown'} as the direct avatar cause or erase ${echo.sourceResident}'s source memory`;
+  const visibleStatus = `${conversation.resident} accepts help only for ${conversation.sourceEchoId} follow-up and refuses history rewrite; source attribution preserved ${sourceAttributionPreserved ? 'yes' : 'no'}`;
+  world.echoInfluencedChoiceReceipt = {
+    reportIntroduced: 361,
+    resident: conversation.resident,
+    action,
+    choice,
+    refusal,
+    visibleStatus,
+    sourceEchoId: conversation.sourceEchoId,
+    sourceResident: echo.sourceResident,
+    echoResident: echo.echoResident,
+    sourceAttributionPreserved,
+    directAvatarCommand: false,
+    noLLM: true,
+    autonomousLanguage: false,
+    phrasebookOnly: true,
+    recoverable: true,
+    boundary: 'browser-local-echo-influenced-choice-refusal-only'
+  };
+  recordResidentHistory(conversation.resident, 'echo-influenced choice/refusal', `${visibleStatus}; no LLM true; recoverable true`);
+  return world.echoInfluencedChoiceReceipt;
+}
 function askSchedule() { return log('askSchedule', { schedule: currentResident().schedule }); }
-function offerHelp() { mutateResident(world.selected, { trust: 0.024, debt: -1, progress: 0.035, memory: 'avatar helped with ' + currentResident().schedule }); world.resources.care = Math.max(0, world.resources.care - 1); return log('offerHelp', { care: world.resources.care }); }
+function offerHelp() {
+  const echoInfluencedChoiceReceipt = applyEchoInfluencedChoiceReceipt('offer_help');
+  const memory = echoInfluencedChoiceReceipt ? `accepted source-bounded help for ${echoInfluencedChoiceReceipt.sourceEchoId}; refused history rewrite` : 'avatar helped with ' + currentResident().schedule;
+  mutateResident(world.selected, { trust: 0.024, debt: -1, progress: 0.035, memory });
+  world.resources.care = Math.max(0, world.resources.care - 1);
+  return log('offerHelp', { care: world.resources.care, echoInfluencedChoiceReceipt, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
+}
 function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1, memory: 'avatar borrowed tool' }); return log('borrowTool', { consequence: 'debt increases' }); }
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
 function waitOffscreen() {
@@ -774,6 +835,7 @@ function runStateBoundaryAudit() {
     returnGreetingContinuity: world.returnGreetingContinuity,
     accountabilitySocialEcho: world.accountabilitySocialEcho,
     boundedEchoConversation: world.boundedEchoConversation,
+    echoInfluencedChoiceReceipt: world.echoInfluencedChoiceReceipt,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -881,6 +943,7 @@ function bindControls() {
   renderReturnGreetingContinuity();
   renderAccountabilitySocialEcho();
   renderBoundedEchoConversation();
+  renderEchoInfluencedChoiceReceipt();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();

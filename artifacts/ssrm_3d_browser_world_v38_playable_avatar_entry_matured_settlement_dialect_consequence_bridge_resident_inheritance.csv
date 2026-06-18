@@ -1,0 +1,865 @@
+tick_id,day,settlement_id,resident_id,inherited_dialect_id,inherited_ritual,inherited_technology,inherited_memory_norm,culture_reference_visible,inheritance_hash,resident_loaded_after_avatar_entry
+0,1,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,False
+1,1,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+2,1,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+3,1,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+4,1,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+5,1,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+6,1,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+7,1,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+8,1,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+9,1,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+10,1,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+11,1,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+12,2,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+13,2,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+14,2,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+15,2,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+16,2,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+17,2,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+18,2,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+19,2,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+20,2,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+21,2,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+22,2,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+23,2,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+24,3,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+25,3,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+26,3,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+27,3,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+28,3,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+29,3,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+30,3,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+31,3,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+32,3,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+33,3,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+34,3,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+35,3,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+36,4,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+37,4,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+38,4,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+39,4,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+40,4,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+41,4,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+42,4,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+43,4,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+44,4,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+45,4,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+46,4,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+47,4,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+48,5,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+49,5,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+50,5,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+51,5,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+52,5,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+53,5,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+54,5,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+55,5,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+56,5,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+57,5,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+58,5,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+59,5,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+60,6,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+61,6,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+62,6,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+63,6,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+64,6,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+65,6,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+66,6,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+67,6,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+68,6,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+69,6,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+70,6,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+71,6,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+72,7,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+73,7,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+74,7,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+75,7,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+76,7,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+77,7,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+78,7,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+79,7,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+80,7,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+81,7,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+82,7,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+83,7,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+84,8,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+85,8,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+86,8,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+87,8,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+88,8,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+89,8,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+90,8,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+91,8,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+92,8,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+93,8,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+94,8,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+95,8,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+96,9,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+97,9,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+98,9,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+99,9,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+100,9,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+101,9,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+102,9,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+103,9,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+104,9,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+105,9,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+106,9,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+107,9,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+108,10,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+109,10,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+110,10,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+111,10,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+112,10,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+113,10,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+114,10,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+115,10,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+116,10,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+117,10,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+118,10,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+119,10,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+120,11,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+121,11,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+122,11,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+123,11,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+124,11,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+125,11,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+126,11,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+127,11,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+128,11,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+129,11,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+130,11,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+131,11,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+132,12,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+133,12,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+134,12,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+135,12,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+136,12,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+137,12,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+138,12,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+139,12,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+140,12,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+141,12,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+142,12,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+143,12,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+144,13,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+145,13,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+146,13,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+147,13,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+148,13,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+149,13,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+150,13,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+151,13,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+152,13,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+153,13,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+154,13,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+155,13,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+156,14,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+157,14,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+158,14,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+159,14,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+160,14,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+161,14,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+162,14,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+163,14,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+164,14,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+165,14,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+166,14,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+167,14,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+168,15,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+169,15,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+170,15,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+171,15,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+172,15,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+173,15,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+174,15,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+175,15,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+176,15,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+177,15,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+178,15,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+179,15,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+180,16,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+181,16,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+182,16,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+183,16,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+184,16,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+185,16,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+186,16,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+187,16,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+188,16,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+189,16,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+190,16,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+191,16,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+192,17,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+193,17,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+194,17,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+195,17,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+196,17,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+197,17,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+198,17,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+199,17,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+200,17,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+201,17,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+202,17,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+203,17,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+204,18,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+205,18,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+206,18,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+207,18,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+208,18,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+209,18,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+210,18,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+211,18,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+212,18,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+213,18,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+214,18,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+215,18,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+216,19,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+217,19,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+218,19,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+219,19,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+220,19,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+221,19,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+222,19,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+223,19,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+224,19,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+225,19,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+226,19,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+227,19,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+228,20,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+229,20,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+230,20,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+231,20,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+232,20,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+233,20,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+234,20,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+235,20,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+236,20,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+237,20,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+238,20,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+239,20,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+240,21,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+241,21,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+242,21,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+243,21,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+244,21,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+245,21,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+246,21,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+247,21,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+248,21,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+249,21,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+250,21,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+251,21,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+252,22,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+253,22,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+254,22,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+255,22,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+256,22,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+257,22,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+258,22,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+259,22,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+260,22,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+261,22,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+262,22,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+263,22,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+264,23,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+265,23,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+266,23,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+267,23,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+268,23,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+269,23,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+270,23,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+271,23,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+272,23,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+273,23,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+274,23,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+275,23,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+276,24,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+277,24,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+278,24,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+279,24,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+280,24,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+281,24,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+282,24,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+283,24,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+284,24,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+285,24,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+286,24,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+287,24,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+288,25,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+289,25,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+290,25,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+291,25,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+292,25,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+293,25,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+294,25,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+295,25,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+296,25,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+297,25,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+298,25,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+299,25,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+300,26,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+301,26,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+302,26,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+303,26,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+304,26,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+305,26,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+306,26,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+307,26,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+308,26,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+309,26,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+310,26,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+311,26,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+312,27,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+313,27,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+314,27,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+315,27,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+316,27,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+317,27,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+318,27,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+319,27,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+320,27,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+321,27,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+322,27,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+323,27,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+324,28,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+325,28,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+326,28,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+327,28,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+328,28,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+329,28,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+330,28,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+331,28,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+332,28,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+333,28,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+334,28,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+335,28,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+336,29,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+337,29,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+338,29,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+339,29,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+340,29,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+341,29,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+342,29,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+343,29,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+344,29,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+345,29,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+346,29,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+347,29,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+348,30,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+349,30,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+350,30,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+351,30,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+352,30,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+353,30,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+354,30,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+355,30,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+356,30,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+357,30,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+358,30,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+359,30,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+360,31,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+361,31,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+362,31,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+363,31,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+364,31,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+365,31,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+366,31,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+367,31,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+368,31,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+369,31,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+370,31,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+371,31,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+372,32,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+373,32,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+374,32,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+375,32,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+376,32,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+377,32,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+378,32,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+379,32,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+380,32,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+381,32,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+382,32,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+383,32,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+384,33,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+385,33,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+386,33,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+387,33,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+388,33,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+389,33,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+390,33,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+391,33,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+392,33,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+393,33,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+394,33,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+395,33,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+396,34,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+397,34,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+398,34,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+399,34,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+400,34,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+401,34,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+402,34,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+403,34,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+404,34,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+405,34,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+406,34,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+407,34,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+408,35,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+409,35,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+410,35,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+411,35,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+412,35,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+413,35,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+414,35,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+415,35,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+416,35,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+417,35,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+418,35,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+419,35,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+420,36,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+421,36,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+422,36,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+423,36,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+424,36,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+425,36,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+426,36,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+427,36,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+428,36,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+429,36,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+430,36,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+431,36,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+432,37,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+433,37,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+434,37,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+435,37,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+436,37,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+437,37,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+438,37,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+439,37,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+440,37,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+441,37,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+442,37,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+443,37,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+444,38,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+445,38,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+446,38,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+447,38,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+448,38,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+449,38,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+450,38,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+451,38,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+452,38,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+453,38,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+454,38,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+455,38,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+456,39,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+457,39,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+458,39,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+459,39,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+460,39,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+461,39,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+462,39,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+463,39,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+464,39,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+465,39,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+466,39,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+467,39,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+468,40,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+469,40,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+470,40,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+471,40,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+472,40,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+473,40,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+474,40,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+475,40,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+476,40,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+477,40,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+478,40,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+479,40,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+480,41,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+481,41,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+482,41,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+483,41,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+484,41,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+485,41,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+486,41,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+487,41,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+488,41,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+489,41,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+490,41,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+491,41,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+492,42,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+493,42,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+494,42,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+495,42,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+496,42,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+497,42,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+498,42,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+499,42,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+500,42,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+501,42,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+502,42,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+503,42,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+504,43,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+505,43,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+506,43,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+507,43,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+508,43,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+509,43,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+510,43,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+511,43,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+512,43,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+513,43,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+514,43,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+515,43,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+516,44,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+517,44,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+518,44,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+519,44,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+520,44,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+521,44,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+522,44,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+523,44,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+524,44,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+525,44,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+526,44,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+527,44,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+528,45,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+529,45,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+530,45,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+531,45,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+532,45,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+533,45,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+534,45,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+535,45,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+536,45,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+537,45,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+538,45,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+539,45,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+540,46,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+541,46,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+542,46,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+543,46,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+544,46,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+545,46,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+546,46,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+547,46,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+548,46,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+549,46,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+550,46,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+551,46,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+552,47,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+553,47,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+554,47,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+555,47,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+556,47,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+557,47,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+558,47,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+559,47,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+560,47,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+561,47,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+562,47,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+563,47,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+564,48,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+565,48,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+566,48,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+567,48,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+568,48,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+569,48,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+570,48,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+571,48,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+572,48,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+573,48,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+574,48,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+575,48,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+576,49,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+577,49,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+578,49,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+579,49,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+580,49,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+581,49,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+582,49,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+583,49,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+584,49,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+585,49,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+586,49,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+587,49,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+588,50,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+589,50,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+590,50,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+591,50,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+592,50,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+593,50,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+594,50,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+595,50,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+596,50,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+597,50,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+598,50,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+599,50,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+600,51,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+601,51,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+602,51,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+603,51,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+604,51,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+605,51,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+606,51,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+607,51,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+608,51,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+609,51,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+610,51,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+611,51,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+612,52,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+613,52,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+614,52,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+615,52,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+616,52,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+617,52,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+618,52,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+619,52,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+620,52,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+621,52,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+622,52,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+623,52,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+624,53,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+625,53,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+626,53,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+627,53,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+628,53,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+629,53,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+630,53,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+631,53,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+632,53,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+633,53,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+634,53,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+635,53,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+636,54,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+637,54,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+638,54,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+639,54,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+640,54,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+641,54,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+642,54,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+643,54,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+644,54,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+645,54,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+646,54,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+647,54,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+648,55,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+649,55,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+650,55,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+651,55,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+652,55,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+653,55,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+654,55,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+655,55,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+656,55,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+657,55,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+658,55,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+659,55,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+660,56,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+661,56,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+662,56,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+663,56,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+664,56,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+665,56,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+666,56,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+667,56,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+668,56,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+669,56,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+670,56,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+671,56,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+672,57,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+673,57,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+674,57,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+675,57,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+676,57,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+677,57,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+678,57,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+679,57,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+680,57,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+681,57,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+682,57,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+683,57,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+684,58,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+685,58,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+686,58,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+687,58,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+688,58,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+689,58,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+690,58,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+691,58,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+692,58,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+693,58,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+694,58,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+695,58,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+696,59,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+697,59,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+698,59,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+699,59,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+700,59,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+701,59,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+702,59,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+703,59,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+704,59,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+705,59,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+706,59,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+707,59,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+708,60,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+709,60,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+710,60,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+711,60,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+712,60,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+713,60,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+714,60,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+715,60,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+716,60,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+717,60,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+718,60,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+719,60,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+720,61,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+721,61,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+722,61,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+723,61,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+724,61,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+725,61,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+726,61,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+727,61,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+728,61,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+729,61,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+730,61,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+731,61,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+732,62,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+733,62,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+734,62,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+735,62,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+736,62,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+737,62,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+738,62,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+739,62,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+740,62,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+741,62,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+742,62,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+743,62,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+744,63,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+745,63,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+746,63,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+747,63,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+748,63,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+749,63,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+750,63,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+751,63,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+752,63,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+753,63,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+754,63,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+755,63,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+756,64,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+757,64,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+758,64,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+759,64,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+760,64,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+761,64,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+762,64,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+763,64,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+764,64,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+765,64,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+766,64,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+767,64,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+768,65,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+769,65,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+770,65,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+771,65,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+772,65,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+773,65,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+774,65,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+775,65,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+776,65,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+777,65,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+778,65,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+779,65,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+780,66,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+781,66,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+782,66,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+783,66,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+784,66,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+785,66,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+786,66,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+787,66,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+788,66,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+789,66,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+790,66,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+791,66,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+792,67,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+793,67,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+794,67,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+795,67,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+796,67,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+797,67,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+798,67,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+799,67,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+800,67,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+801,67,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+802,67,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+803,67,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+804,68,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+805,68,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+806,68,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+807,68,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+808,68,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+809,68,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+810,68,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+811,68,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+812,68,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+813,68,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+814,68,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+815,68,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+816,69,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+817,69,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+818,69,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+819,69,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+820,69,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+821,69,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+822,69,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+823,69,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+824,69,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+825,69,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+826,69,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+827,69,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+828,70,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+829,70,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+830,70,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+831,70,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+832,70,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+833,70,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+834,70,repair_ring,Juno,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-020151,True
+835,70,riverbend,Lio,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-077175,True
+836,70,roofward,Fay,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-894010,True
+837,70,archive,Toma,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-770474,True
+838,70,signal,Milo,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-731696,True
+839,70,orchard,Mara,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-728596,True
+840,71,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+841,71,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+842,71,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+843,71,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+844,71,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+845,71,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+846,71,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+847,71,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+848,71,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+849,71,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+850,71,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+851,71,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+852,72,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+853,72,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+854,72,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+855,72,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+856,72,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+857,72,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True
+858,72,riverbend,Ari,riverbend-dialect-8,plank-listening-avatar waiting myth,route engines,ask before crossing wet tools,True,v38-075516,True
+859,72,roofward,Sera,roofward-dialect-8,sun-ledger-trade witness,civic observatories,wait before taking ledgers,True,v38-922910,True
+860,72,archive,Nia,archive-dialect-8,spool-naming-boundary asking,memory looms,ask before touching signal spools,True,v38-739206,True
+861,72,signal,Ren,signal-dialect-8,lantern-turning-child naming,signal lenses,light before haste,True,v38-703235,True
+862,72,orchard,Ivo,orchard-dialect-8,satchel-vow-seasonal repair,water clocks,keep tomorrow dry,True,v38-705306,True
+863,72,repair_ring,Pax,repair_ring-dialect-8,spark-distance-object blessing,kiln alloys,give hands room near sparks,True,v38-989163,True

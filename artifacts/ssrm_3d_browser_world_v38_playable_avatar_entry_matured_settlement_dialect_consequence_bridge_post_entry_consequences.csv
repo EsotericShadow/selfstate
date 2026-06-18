@@ -1,0 +1,865 @@
+tick_id,day,settlement_id,resident_id,avatar_action,consequence_type,trust_delta,respect_delta,access_delta,memory_written,persistent_key,visible_next_visit_effect,no_endless_distress
+0,1,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+1,1,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+2,1,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+3,1,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+4,1,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+5,1,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+6,1,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+7,1,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+8,1,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+9,1,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+10,1,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+11,1,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+12,2,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+13,2,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+14,2,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+15,2,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+16,2,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+17,2,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+18,2,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+19,2,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+20,2,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+21,2,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+22,2,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+23,2,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+24,3,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+25,3,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+26,3,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+27,3,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+28,3,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+29,3,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+30,3,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+31,3,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+32,3,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+33,3,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+34,3,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+35,3,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+36,4,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+37,4,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+38,4,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+39,4,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+40,4,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+41,4,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+42,4,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+43,4,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+44,4,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+45,4,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+46,4,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+47,4,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+48,5,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+49,5,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+50,5,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+51,5,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+52,5,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+53,5,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+54,5,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+55,5,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+56,5,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+57,5,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+58,5,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+59,5,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+60,6,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+61,6,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+62,6,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+63,6,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+64,6,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+65,6,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+66,6,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+67,6,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+68,6,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+69,6,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+70,6,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+71,6,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+72,7,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+73,7,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+74,7,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+75,7,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+76,7,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+77,7,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+78,7,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+79,7,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+80,7,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+81,7,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+82,7,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+83,7,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+84,8,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+85,8,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+86,8,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+87,8,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+88,8,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+89,8,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+90,8,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+91,8,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+92,8,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+93,8,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+94,8,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+95,8,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+96,9,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+97,9,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+98,9,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+99,9,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+100,9,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+101,9,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+102,9,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+103,9,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+104,9,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+105,9,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+106,9,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+107,9,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+108,10,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+109,10,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+110,10,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+111,10,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+112,10,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+113,10,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+114,10,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+115,10,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+116,10,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+117,10,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+118,10,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+119,10,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+120,11,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+121,11,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+122,11,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+123,11,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+124,11,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+125,11,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+126,11,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+127,11,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+128,11,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+129,11,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+130,11,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+131,11,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+132,12,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+133,12,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+134,12,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+135,12,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+136,12,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+137,12,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+138,12,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+139,12,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+140,12,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+141,12,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+142,12,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+143,12,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+144,13,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+145,13,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+146,13,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+147,13,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+148,13,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+149,13,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+150,13,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+151,13,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+152,13,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+153,13,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+154,13,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+155,13,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+156,14,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+157,14,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+158,14,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+159,14,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+160,14,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+161,14,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+162,14,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+163,14,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+164,14,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+165,14,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+166,14,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+167,14,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+168,15,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+169,15,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+170,15,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+171,15,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+172,15,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+173,15,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+174,15,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+175,15,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+176,15,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+177,15,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+178,15,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+179,15,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+180,16,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+181,16,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+182,16,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+183,16,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+184,16,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+185,16,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+186,16,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+187,16,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+188,16,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+189,16,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+190,16,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+191,16,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+192,17,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+193,17,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+194,17,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+195,17,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+196,17,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+197,17,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+198,17,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+199,17,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+200,17,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+201,17,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+202,17,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+203,17,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+204,18,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+205,18,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+206,18,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+207,18,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+208,18,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+209,18,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+210,18,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+211,18,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+212,18,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+213,18,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+214,18,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+215,18,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+216,19,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+217,19,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+218,19,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+219,19,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+220,19,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+221,19,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+222,19,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+223,19,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+224,19,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+225,19,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+226,19,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+227,19,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+228,20,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+229,20,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+230,20,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+231,20,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+232,20,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+233,20,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+234,20,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+235,20,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+236,20,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+237,20,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+238,20,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+239,20,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+240,21,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+241,21,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+242,21,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+243,21,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+244,21,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+245,21,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+246,21,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+247,21,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+248,21,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+249,21,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+250,21,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+251,21,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+252,22,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+253,22,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+254,22,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+255,22,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+256,22,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+257,22,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+258,22,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+259,22,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+260,22,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+261,22,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+262,22,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+263,22,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+264,23,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+265,23,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+266,23,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+267,23,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+268,23,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+269,23,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+270,23,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+271,23,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+272,23,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+273,23,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+274,23,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+275,23,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+276,24,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+277,24,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+278,24,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+279,24,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+280,24,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+281,24,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+282,24,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+283,24,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+284,24,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+285,24,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+286,24,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+287,24,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+288,25,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+289,25,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+290,25,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+291,25,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+292,25,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+293,25,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+294,25,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+295,25,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+296,25,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+297,25,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+298,25,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+299,25,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+300,26,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+301,26,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+302,26,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+303,26,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+304,26,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+305,26,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+306,26,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+307,26,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+308,26,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+309,26,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+310,26,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+311,26,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+312,27,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+313,27,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+314,27,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+315,27,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+316,27,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+317,27,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+318,27,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+319,27,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+320,27,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+321,27,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+322,27,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+323,27,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+324,28,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+325,28,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+326,28,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+327,28,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+328,28,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+329,28,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+330,28,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+331,28,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+332,28,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+333,28,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+334,28,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+335,28,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+336,29,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+337,29,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+338,29,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+339,29,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+340,29,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+341,29,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+342,29,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+343,29,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+344,29,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+345,29,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+346,29,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+347,29,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+348,30,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+349,30,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+350,30,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+351,30,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+352,30,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+353,30,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+354,30,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+355,30,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+356,30,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+357,30,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+358,30,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+359,30,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+360,31,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+361,31,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+362,31,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+363,31,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+364,31,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+365,31,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+366,31,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+367,31,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+368,31,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+369,31,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+370,31,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+371,31,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+372,32,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+373,32,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+374,32,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+375,32,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+376,32,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+377,32,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+378,32,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+379,32,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+380,32,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+381,32,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+382,32,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+383,32,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+384,33,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+385,33,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+386,33,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+387,33,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+388,33,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+389,33,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+390,33,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+391,33,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+392,33,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+393,33,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+394,33,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+395,33,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+396,34,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+397,34,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+398,34,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+399,34,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+400,34,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+401,34,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+402,34,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+403,34,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+404,34,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+405,34,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+406,34,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+407,34,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+408,35,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+409,35,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+410,35,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+411,35,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+412,35,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+413,35,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+414,35,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+415,35,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+416,35,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+417,35,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+418,35,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+419,35,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+420,36,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+421,36,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+422,36,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+423,36,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+424,36,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+425,36,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+426,36,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+427,36,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+428,36,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+429,36,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+430,36,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+431,36,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+432,37,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+433,37,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+434,37,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+435,37,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+436,37,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+437,37,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+438,37,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+439,37,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+440,37,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+441,37,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+442,37,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+443,37,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+444,38,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+445,38,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+446,38,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+447,38,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+448,38,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+449,38,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+450,38,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+451,38,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+452,38,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+453,38,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+454,38,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+455,38,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+456,39,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+457,39,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+458,39,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+459,39,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+460,39,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+461,39,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+462,39,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+463,39,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+464,39,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+465,39,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+466,39,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+467,39,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+468,40,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+469,40,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+470,40,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+471,40,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+472,40,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+473,40,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+474,40,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+475,40,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+476,40,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+477,40,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+478,40,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+479,40,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+480,41,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+481,41,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+482,41,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+483,41,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+484,41,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+485,41,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+486,41,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+487,41,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+488,41,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+489,41,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+490,41,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+491,41,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+492,42,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+493,42,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+494,42,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+495,42,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+496,42,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+497,42,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+498,42,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+499,42,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+500,42,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+501,42,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+502,42,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+503,42,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+504,43,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+505,43,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+506,43,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+507,43,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+508,43,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+509,43,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+510,43,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+511,43,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+512,43,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+513,43,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+514,43,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+515,43,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+516,44,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+517,44,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+518,44,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+519,44,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+520,44,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+521,44,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+522,44,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+523,44,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+524,44,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+525,44,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+526,44,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+527,44,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+528,45,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+529,45,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+530,45,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+531,45,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+532,45,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+533,45,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+534,45,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+535,45,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+536,45,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+537,45,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+538,45,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+539,45,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+540,46,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+541,46,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+542,46,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+543,46,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+544,46,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+545,46,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+546,46,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+547,46,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+548,46,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+549,46,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+550,46,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+551,46,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+552,47,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+553,47,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+554,47,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+555,47,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+556,47,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+557,47,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+558,47,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+559,47,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+560,47,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+561,47,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+562,47,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+563,47,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+564,48,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+565,48,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+566,48,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+567,48,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+568,48,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+569,48,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+570,48,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+571,48,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+572,48,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+573,48,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+574,48,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+575,48,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+576,49,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+577,49,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+578,49,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+579,49,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+580,49,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+581,49,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+582,49,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+583,49,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+584,49,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+585,49,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+586,49,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+587,49,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+588,50,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+589,50,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+590,50,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+591,50,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+592,50,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+593,50,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+594,50,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+595,50,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+596,50,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+597,50,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+598,50,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+599,50,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+600,51,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+601,51,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+602,51,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+603,51,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+604,51,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+605,51,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+606,51,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+607,51,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+608,51,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+609,51,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+610,51,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+611,51,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+612,52,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+613,52,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+614,52,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+615,52,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+616,52,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+617,52,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+618,52,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+619,52,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+620,52,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+621,52,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+622,52,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+623,52,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+624,53,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+625,53,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+626,53,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+627,53,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+628,53,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+629,53,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+630,53,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+631,53,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+632,53,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+633,53,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+634,53,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+635,53,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+636,54,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+637,54,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+638,54,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+639,54,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+640,54,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+641,54,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+642,54,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+643,54,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+644,54,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+645,54,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+646,54,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+647,54,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+648,55,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+649,55,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+650,55,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+651,55,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+652,55,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+653,55,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+654,55,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+655,55,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+656,55,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+657,55,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+658,55,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+659,55,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+660,56,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+661,56,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+662,56,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+663,56,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+664,56,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+665,56,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+666,56,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+667,56,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+668,56,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+669,56,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+670,56,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+671,56,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+672,57,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+673,57,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+674,57,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+675,57,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+676,57,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+677,57,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+678,57,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+679,57,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+680,57,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+681,57,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+682,57,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+683,57,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+684,58,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+685,58,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+686,58,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+687,58,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+688,58,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+689,58,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+690,58,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+691,58,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+692,58,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+693,58,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+694,58,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+695,58,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+696,59,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+697,59,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+698,59,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+699,59,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+700,59,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+701,59,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+702,59,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+703,59,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+704,59,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+705,59,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+706,59,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+707,59,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+708,60,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+709,60,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+710,60,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+711,60,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+712,60,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+713,60,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+714,60,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+715,60,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+716,60,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+717,60,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+718,60,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+719,60,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+720,61,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+721,61,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+722,61,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+723,61,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+724,61,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+725,61,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+726,61,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+727,61,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+728,61,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+729,61,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+730,61,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+731,61,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+732,62,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+733,62,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+734,62,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+735,62,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+736,62,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+737,62,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+738,62,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+739,62,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+740,62,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+741,62,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+742,62,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+743,62,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+744,63,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+745,63,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+746,63,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+747,63,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+748,63,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+749,63,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+750,63,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+751,63,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+752,63,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+753,63,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+754,63,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+755,63,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+756,64,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+757,64,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+758,64,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+759,64,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+760,64,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+761,64,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+762,64,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+763,64,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+764,64,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+765,64,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+766,64,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+767,64,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+768,65,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+769,65,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+770,65,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+771,65,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+772,65,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+773,65,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+774,65,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+775,65,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+776,65,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+777,65,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+778,65,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+779,65,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+780,66,repair_ring,Juno,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+781,66,riverbend,Lio,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+782,66,roofward,Fay,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Fay,resident keeps more distance on next visit,True
+783,66,archive,Toma,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+784,66,signal,Milo,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+785,66,orchard,Mara,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+786,66,repair_ring,Juno,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Juno,resident recognizes the avatar,True
+787,66,riverbend,Lio,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Lio,resident shares a more specific local word,True
+788,66,roofward,Fay,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+789,66,archive,Toma,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Toma,resident recognizes the avatar,True
+790,66,signal,Milo,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Milo,resident shares a more specific local word,True
+791,66,orchard,Mara,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Mara,resident keeps more distance on next visit,True
+792,67,repair_ring,Pax,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.repair_ring.Pax,resident recognizes the avatar,True
+793,67,riverbend,Ari,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+794,67,roofward,Sera,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.roofward.Sera,resident keeps more distance on next visit,True
+795,67,archive,Nia,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.archive.Nia,resident recognizes the avatar,True
+796,67,signal,Ren,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+797,67,orchard,Ivo,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+798,67,repair_ring,Pax,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+799,67,riverbend,Ari,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+800,67,roofward,Sera,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+801,67,archive,Nia,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+802,67,signal,Ren,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+803,67,orchard,Ivo,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.orchard.Ivo,resident keeps more distance on next visit,True
+804,68,repair_ring,Juno,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+805,68,riverbend,Lio,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Lio,resident keeps more distance on next visit,True
+806,68,roofward,Fay,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Fay,resident approaches sooner on next visit,True
+807,68,archive,Toma,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+808,68,signal,Milo,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+809,68,orchard,Mara,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Mara,resident recognizes the avatar,True
+810,68,repair_ring,Juno,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Juno,resident shares a more specific local word,True
+811,68,riverbend,Lio,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+812,68,roofward,Fay,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Fay,resident recognizes the avatar,True
+813,68,archive,Toma,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Toma,resident shares a more specific local word,True
+814,68,signal,Milo,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Milo,resident keeps more distance on next visit,True
+815,68,orchard,Mara,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Mara,resident approaches sooner on next visit,True
+816,69,repair_ring,Pax,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.repair_ring.Pax,resident shares a more specific local word,True
+817,69,riverbend,Ari,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.riverbend.Ari,resident keeps more distance on next visit,True
+818,69,roofward,Sera,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.roofward.Sera,resident recognizes the avatar,True
+819,69,archive,Nia,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.archive.Nia,resident shares a more specific local word,True
+820,69,signal,Ren,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Ren,resident approaches sooner on next visit,True
+821,69,orchard,Ivo,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+822,69,repair_ring,Pax,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+823,69,riverbend,Ari,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Ari,resident approaches sooner on next visit,True
+824,69,roofward,Sera,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+825,69,archive,Nia,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+826,69,signal,Ren,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.signal.Ren,resident keeps more distance on next visit,True
+827,69,orchard,Ivo,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.orchard.Ivo,resident recognizes the avatar,True
+828,70,repair_ring,Juno,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Juno,resident approaches sooner on next visit,True
+829,70,riverbend,Lio,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.riverbend.Lio,resident approaches sooner on next visit,True
+830,70,roofward,Fay,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+831,70,archive,Toma,rest_near_resident,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Toma,resident approaches sooner on next visit,True
+832,70,signal,Milo,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Milo,resident recognizes the avatar,True
+833,70,orchard,Mara,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+834,70,repair_ring,Juno,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Juno,resident keeps more distance on next visit,True
+835,70,riverbend,Lio,enter_world,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Lio,resident recognizes the avatar,True
+836,70,roofward,Fay,ask_local_word,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Fay,resident shares a more specific local word,True
+837,70,archive,Toma,request_tool,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Toma,resident keeps more distance on next visit,True
+838,70,signal,Milo,give_space,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.signal.Milo,resident approaches sooner on next visit,True
+839,70,orchard,Mara,ask_memory,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Mara,resident shares a more specific local word,True
+840,71,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True
+841,71,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+842,71,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+843,71,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+844,71,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+845,71,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+846,71,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+847,71,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+848,71,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+849,71,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+850,71,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+851,71,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+852,72,riverbend,Ari,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.riverbend.Ari,resident recognizes the avatar,True
+853,72,roofward,Sera,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.roofward.Sera,resident shares a more specific local word,True
+854,72,archive,Nia,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.archive.Nia,resident approaches sooner on next visit,True
+855,72,signal,Ren,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.signal.Ren,resident shares a more specific local word,True
+856,72,orchard,Ivo,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.orchard.Ivo,resident approaches sooner on next visit,True
+857,72,repair_ring,Pax,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.repair_ring.Pax,resident keeps more distance on next visit,True
+858,72,riverbend,Ari,inspect_ritual,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.riverbend.Ari,resident shares a more specific local word,True
+859,72,roofward,Sera,offer_help,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.roofward.Sera,resident approaches sooner on next visit,True
+860,72,archive,Nia,move_near_object,boundary_pressure,-0.035,-0.045,-0.025,True,ssrm.v38.memory.archive.Nia,resident keeps more distance on next visit,True
+861,72,signal,Ren,follow_route,neutral_entry,0.012,0.016,0.01,True,ssrm.v38.memory.signal.Ren,resident recognizes the avatar,True
+862,72,orchard,Ivo,mark_map,cultural_attention,0.025,0.035,0.02,True,ssrm.v38.memory.orchard.Ivo,resident shares a more specific local word,True
+863,72,repair_ring,Pax,leave_gift,repair_or_care,0.04,0.05,0.03,True,ssrm.v38.memory.repair_ring.Pax,resident approaches sooner on next visit,True

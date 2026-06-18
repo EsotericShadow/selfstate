@@ -1,0 +1,865 @@
+tick_id,settlement_id,ritual_anchor,technology_stage,practical_use,dialect_id,inherited_from_deep_time,bound_to_play_action,continuity_hash
+0,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-768501
+1,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-848063
+2,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-533903
+3,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-599800
+4,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-531771
+5,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-622429
+6,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-879269
+7,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-684690
+8,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-497461
+9,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-495330
+10,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-709201
+11,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-676547
+12,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-720467
+13,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-627640
+14,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-636158
+15,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-502884
+16,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-646130
+17,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-711279
+18,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-779137
+19,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-801450
+20,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-582742
+21,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-446898
+22,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-476084
+23,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-764508
+24,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-020805
+25,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-666455
+26,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-627970
+27,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-574294
+28,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-477164
+29,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-648720
+30,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-851471
+31,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-627548
+32,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-521353
+33,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-736439
+34,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-514184
+35,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-756150
+36,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-778077
+37,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-754095
+38,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-514913
+39,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-673130
+40,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-546416
+41,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-583343
+42,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-953947
+43,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-699891
+44,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-458927
+45,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-502448
+46,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-600219
+47,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-640963
+48,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-817750
+49,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-745771
+50,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-584567
+51,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-501772
+52,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-485261
+53,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-878284
+54,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-777985
+55,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-637566
+56,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-748468
+57,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-540691
+58,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-592065
+59,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-713713
+60,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-744404
+61,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-584956
+62,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-502161
+63,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-485650
+64,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-878673
+65,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-778374
+66,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-637955
+67,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-748857
+68,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-541080
+69,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-592454
+70,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-712346
+71,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-816967
+72,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-629643
+73,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-683792
+74,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-573436
+75,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-423463
+76,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-640312
+77,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-852319
+78,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-574573
+79,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-514866
+80,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-625680
+81,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-478067
+82,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-813002
+83,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-906533
+84,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-702125
+85,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-514190
+86,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-512047
+87,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-711924
+88,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-679270
+89,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-788590
+90,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-866678
+91,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-551353
+92,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-617492
+93,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-549209
+94,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-640220
+95,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-898005
+96,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-802417
+97,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-585465
+98,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-449621
+99,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-478807
+100,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-780476
+101,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-736864
+102,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-643684
+103,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-652232
+104,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-518453
+105,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-662235
+106,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-727640
+107,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795750
+108,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644770
+109,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-538174
+110,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-752291
+111,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-529209
+112,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-772087
+113,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-038285
+114,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-682645
+115,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-644013
+116,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-590134
+117,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-492636
+118,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-664850
+119,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870111
+120,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-715618
+121,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-473747
+122,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-517429
+123,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-615568
+124,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656477
+125,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-794686
+126,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-770609
+127,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530533
+128,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-689337
+129,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-563914
+130,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-599228
+131,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-971189
+132,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-474138
+133,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-517820
+134,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-615959
+135,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656868
+136,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795077
+137,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-771000
+138,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530924
+139,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-689728
+140,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-562540
+141,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-599619
+142,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-971580
+143,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-716596
+144,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-764762
+145,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-556209
+146,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-607774
+147,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-729889
+148,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-834896
+149,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-762645
+150,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-600840
+151,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-517728
+152,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-501154
+153,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-895643
+154,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-794985
+155,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-654040
+156,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529900
+157,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-642889
+158,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-494720
+159,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-830912
+160,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-923021
+161,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645696
+162,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-700043
+163,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-589273
+164,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-438731
+165,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656411
+166,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869200
+167,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-590422
+168,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-568289
+169,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-634670
+170,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-564368
+171,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655732
+172,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-914462
+173,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718449
+174,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529808
+175,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-527653
+176,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-728275
+177,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-695515
+178,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-805240
+179,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-885366
+180,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653204
+181,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519425
+182,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663207
+183,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728612
+184,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796722
+185,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-819108
+186,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601353
+187,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-464991
+188,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-494287
+189,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-783800
+190,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-738423
+191,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645243
+192,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-644985
+193,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591106
+194,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493608
+195,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-665822
+196,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-871083
+197,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646329
+198,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-539733
+199,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-755615
+200,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-529012
+201,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-771890
+202,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-038088
+203,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-682448
+204,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-589741
+205,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-492243
+206,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-664457
+207,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869718
+208,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644964
+209,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-538368
+210,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-752485
+211,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-529403
+212,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-772281
+213,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-038479
+214,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-682839
+215,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-644207
+216,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-688944
+217,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-563521
+218,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-600600
+219,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-972561
+220,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-715812
+221,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-473941
+222,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-517623
+223,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-615762
+224,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656671
+225,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-794880
+226,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-770803
+227,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530727
+228,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-518709
+229,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-502135
+230,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-894859
+231,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-794201
+232,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-653256
+233,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-764565
+234,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-556012
+235,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-607577
+236,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-729692
+237,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-834699
+238,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-762448
+239,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-602408
+240,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-588489
+241,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-437947
+242,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655627
+243,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-868416
+244,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-589638
+245,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529703
+246,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-642692
+247,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-494523
+248,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-830715
+249,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-924589
+250,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645499
+251,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-699846
+252,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-526869
+253,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-727491
+254,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-694731
+255,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-804456
+256,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-884582
+257,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-568092
+258,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-634473
+259,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565936
+260,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655535
+261,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-914265
+262,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718252
+263,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529611
+264,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-464207
+265,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493503
+266,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-783016
+267,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-739404
+268,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646224
+269,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-654772
+270,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519228
+271,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663010
+272,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728415
+273,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796525
+274,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-818911
+275,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601156
+276,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493894
+277,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-783407
+278,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-739795
+279,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646615
+280,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653398
+281,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519619
+282,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663401
+283,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728806
+284,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796916
+285,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-819302
+286,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601547
+287,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-465185
+288,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-532140
+289,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-775018
+290,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-039451
+291,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-683811
+292,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-645179
+293,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591300
+294,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493802
+295,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-666016
+296,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-871277
+297,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646523
+298,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-539927
+299,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-755809
+300,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-614978
+301,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655887
+302,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-794096
+303,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-770019
+304,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529943
+305,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-688747
+306,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-563324
+307,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-600403
+308,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-972364
+309,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-717380
+310,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-473744
+311,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-517426
+312,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-606793
+313,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728908
+314,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-833915
+315,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-761664
+316,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601624
+317,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-518512
+318,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-501938
+319,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-896427
+320,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-794004
+321,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-653059
+322,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-764368
+323,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-555815
+324,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493739
+325,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-829931
+326,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-923805
+327,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646480
+328,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-700827
+329,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-590057
+330,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-437750
+331,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655430
+332,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-868219
+333,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-589441
+334,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529506
+335,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-642495
+336,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565152
+337,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656516
+338,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-915246
+339,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-719233
+340,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-528827
+341,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-526672
+342,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-727294
+343,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-694534
+344,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-804259
+345,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-884385
+346,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-567895
+347,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-634276
+348,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656907
+349,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-915637
+350,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-717859
+351,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529218
+352,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-527063
+353,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-727685
+354,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-694925
+355,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-804650
+356,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-884776
+357,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-568286
+358,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-634667
+359,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-566130
+360,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728022
+361,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796132
+362,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-818518
+363,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-600763
+364,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-464401
+365,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493697
+366,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-783210
+367,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-739598
+368,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646418
+369,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-654966
+370,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519422
+371,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663204
+372,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-665232
+373,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870493
+374,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645739
+375,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-539143
+376,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-755025
+377,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-531943
+378,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-774821
+379,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-041019
+380,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-683614
+381,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-644982
+382,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591103
+383,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493605
+384,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-601375
+385,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-973336
+386,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718352
+387,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-476481
+388,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-520163
+389,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-618302
+390,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657446
+391,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795655
+392,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-771578
+393,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531502
+394,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-690306
+395,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-564883
+396,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-897399
+397,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796741
+398,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-655796
+399,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-767105
+400,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-555031
+401,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-606596
+402,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728711
+403,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-833718
+404,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-761467
+405,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601427
+406,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-518315
+407,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-501741
+408,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656411
+409,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869200
+410,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-588657
+411,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-528722
+412,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-641711
+413,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493542
+414,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-829734
+415,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-923608
+416,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646283
+417,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-700630
+418,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-589860
+419,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-439318
+420,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-867826
+421,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-589048
+422,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529113
+423,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-642102
+424,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493933
+425,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-830125
+426,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-923999
+427,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646674
+428,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-701021
+429,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-590251
+430,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-437944
+431,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655624
+432,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-803866
+433,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-883992
+434,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-567502
+435,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-633883
+436,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565346
+437,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656710
+438,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-915440
+439,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-719427
+440,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529021
+441,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-526866
+442,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-727488
+443,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-694728
+444,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-738814
+445,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645634
+446,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-654182
+447,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-520403
+448,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-664185
+449,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-729590
+450,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795935
+451,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-818321
+452,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-600566
+453,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-464204
+454,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493500
+455,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-783013
+456,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-040235
+457,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-684595
+458,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-645963
+459,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-592084
+460,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-492821
+461,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-665035
+462,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870296
+463,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645542
+464,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-538946
+465,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-754828
+466,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-531746
+467,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-774624
+468,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796636
+469,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-772559
+470,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530718
+471,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-689522
+472,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-564099
+473,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-601178
+474,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-973139
+475,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718155
+476,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-476284
+477,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519966
+478,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-618105
+479,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-659014
+480,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-834690
+481,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-762439
+482,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-602399
+483,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519287
+484,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-502713
+485,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-897202
+486,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796544
+487,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-655599
+488,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-766908
+489,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-558355
+490,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-608155
+491,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-730270
+492,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-762830
+493,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-602790
+494,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519678
+495,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-503104
+496,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-897593
+497,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796935
+498,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-655990
+499,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-767299
+500,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-555225
+501,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-606790
+502,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728905
+503,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-833912
+504,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645890
+505,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-700237
+506,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-589467
+507,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-438925
+508,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656605
+509,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869394
+510,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-588851
+511,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-528916
+512,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-641905
+513,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493736
+514,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-829928
+515,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-923802
+516,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718643
+517,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530002
+518,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-527847
+519,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-728469
+520,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-693944
+521,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-803669
+522,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-883795
+523,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-567305
+524,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-633686
+525,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565149
+526,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656513
+527,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-915243
+528,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-819302
+529,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601547
+530,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-463420
+531,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-492716
+532,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-782229
+533,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-738617
+534,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645437
+535,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653985
+536,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-520206
+537,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663988
+538,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-729393
+539,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-797503
+540,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644758
+541,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-538162
+542,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-754044
+543,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-530962
+544,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-773840
+545,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-040038
+546,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-684398
+547,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-645766
+548,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591887
+549,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-494389
+550,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-664838
+551,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870099
+552,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-717371
+553,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-475500
+554,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519182
+555,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-617321
+556,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-658230
+557,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796439
+558,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-772362
+559,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-532286
+560,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-689325
+561,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-563902
+562,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-600981
+563,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-972942
+564,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-475891
+565,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519573
+566,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-617712
+567,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-658621
+568,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796830
+569,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-772753
+570,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530912
+571,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-689716
+572,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-564293
+573,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-601372
+574,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-973333
+575,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718349
+576,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-766515
+577,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-557962
+578,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-609527
+579,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-731642
+580,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-834884
+581,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-762633
+582,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-602593
+583,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519481
+584,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-502907
+585,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-897396
+586,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796738
+587,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-655793
+588,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531653
+589,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-644642
+590,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-494708
+591,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-830900
+592,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-924774
+593,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-647449
+594,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-701796
+595,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591026
+596,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-440484
+597,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-658164
+598,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870953
+599,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-592175
+600,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-566521
+601,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-632902
+602,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-564365
+603,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-655729
+604,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-914459
+605,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718446
+606,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-529805
+607,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-527650
+608,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-728272
+609,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-695512
+610,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-803472
+611,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-883598
+612,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653201
+613,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519422
+614,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663204
+615,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728609
+616,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796719
+617,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-819105
+618,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601350
+619,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-464988
+620,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-492519
+621,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-782032
+622,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-738420
+623,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645240
+624,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-644982
+625,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591103
+626,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493605
+627,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-665819
+628,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-871080
+629,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646326
+630,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-537965
+631,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-753847
+632,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-530765
+633,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-773643
+634,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-039841
+635,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-684201
+636,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591494
+637,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493996
+638,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-666210
+639,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-871471
+640,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644952
+641,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-538356
+642,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-754238
+643,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-531156
+644,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-774034
+645,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-040232
+646,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-684592
+647,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-645960
+648,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-690697
+649,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565274
+650,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-600588
+651,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-972549
+652,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-717565
+653,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-475694
+654,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519376
+655,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-617515
+656,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-658424
+657,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796633
+658,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-772556
+659,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-532480
+660,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-518697
+661,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-502123
+662,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-896612
+663,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795954
+664,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-655009
+665,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-766318
+666,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-557765
+667,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-609330
+668,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-731445
+669,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-836452
+670,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-762436
+671,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-602396
+672,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-590242
+673,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-439700
+674,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657380
+675,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870169
+676,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-591391
+677,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531456
+678,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-644445
+679,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-496276
+680,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-830703
+681,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-924577
+682,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-647252
+683,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-701599
+684,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-528622
+685,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-729244
+686,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-696484
+687,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-806209
+688,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-886335
+689,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-569845
+690,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-634461
+691,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565924
+692,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657288
+693,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-916018
+694,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-720005
+695,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531364
+696,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-465960
+697,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-495256
+698,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-784769
+699,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-741157
+700,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644456
+701,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653004
+702,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519225
+703,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663007
+704,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728412
+705,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796522
+706,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-818908
+707,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601153
+708,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493891
+709,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-783404
+710,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-738027
+711,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644847
+712,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653395
+713,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519616
+714,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663398
+715,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-728803
+716,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796913
+717,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-819299
+718,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-601544
+719,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-465182
+720,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-530372
+721,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-773250
+722,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-039448
+723,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-683808
+724,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-645176
+725,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591297
+726,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493799
+727,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-666013
+728,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-871274
+729,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-646520
+730,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-538159
+731,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-754041
+732,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-616731
+733,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657640
+734,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795849
+735,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-771772
+736,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531696
+737,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-690500
+738,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-565077
+739,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-602156
+740,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-972352
+741,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-717368
+742,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-475497
+743,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519179
+744,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-608546
+745,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-730661
+746,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-835668
+747,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-763417
+748,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-603377
+749,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-520265
+750,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-501926
+751,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-896415
+752,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795757
+753,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-654812
+754,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-766121
+755,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-557568
+756,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-495492
+757,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-831684
+758,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-925558
+759,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-648233
+760,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-700815
+761,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-590045
+762,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-439503
+763,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657183
+764,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869972
+765,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-591194
+766,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531259
+767,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-644248
+768,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-566905
+769,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-658269
+770,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-915234
+771,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-719221
+772,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530580
+773,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-528425
+774,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-729047
+775,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-696287
+776,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-806012
+777,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-886138
+778,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-569648
+779,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-636029
+780,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656895
+781,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-915625
+782,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-719612
+783,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530971
+784,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-528816
+785,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-729438
+786,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-696678
+787,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-806403
+788,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-886529
+789,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-570039
+790,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-634655
+791,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-566118
+792,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-729775
+793,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-797885
+794,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-820271
+795,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-602516
+796,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-466154
+797,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-495450
+798,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-784963
+799,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-741351
+800,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-644650
+801,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-653198
+802,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-519419
+803,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-663201
+804,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-665229
+805,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-870490
+806,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-645736
+807,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-539140
+808,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-755022
+809,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-531940
+810,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-773053
+811,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-039251
+812,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-683611
+813,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-644979
+814,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-591100
+815,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-493602
+816,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-601372
+817,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-973333
+818,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-718349
+819,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-476478
+820,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-518395
+821,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-616534
+822,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657443
+823,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-795652
+824,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-771575
+825,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-531499
+826,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-690303
+827,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-564880
+828,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-897396
+829,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-796738
+830,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-654028
+831,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-765337
+832,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-556784
+833,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-608349
+834,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-730464
+835,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-835471
+836,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-763220
+837,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-603180
+838,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-520068
+839,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-503494
+840,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-656399
+841,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869188
+842,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-590410
+843,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530475
+844,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-643464
+845,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-495295
+846,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-831487
+847,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-925361
+848,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-648036
+849,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-702383
+850,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-589848
+851,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-439306
+852,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-869579
+853,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-590801
+854,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-530866
+855,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-643855
+856,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-495686
+857,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-831878
+858,riverbend,plank-listening-avatar waiting myth,route engines,dry crossing,riverbend-dialect-8,True,True,v38-925752
+859,roofward,sun-ledger-trade witness,civic observatories,herb preservation,roofward-dialect-8,True,True,v38-648427
+860,archive,spool-naming-boundary asking,memory looms,signal memory,archive-dialect-8,True,True,v38-701009
+861,signal,lantern-turning-child naming,signal lenses,path visibility,signal-dialect-8,True,True,v38-590239
+862,orchard,satchel-vow-seasonal repair,water clocks,dry seed continuity,orchard-dialect-8,True,True,v38-439697
+863,repair_ring,spark-distance-object blessing,kiln alloys,safe repair space,repair_ring-dialect-8,True,True,v38-657377

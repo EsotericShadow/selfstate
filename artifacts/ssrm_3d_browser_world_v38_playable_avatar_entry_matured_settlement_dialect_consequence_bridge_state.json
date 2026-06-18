@@ -1,0 +1,193 @@
+{
+  "avatar_position": {
+    "archive": [
+      0.5,
+      0.5
+    ],
+    "orchard": [
+      0.59,
+      0.5
+    ],
+    "repair_ring": [
+      0.5,
+      0.5
+    ],
+    "riverbend": [
+      0.5,
+      0.5
+    ],
+    "roofward": [
+      0.59,
+      0.5
+    ],
+    "signal": [
+      0.5,
+      0.5
+    ]
+  },
+  "boundary": "Deterministic browser-local playable avatar-entry scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "matured_generations": 80,
+  "matured_years": 2400,
+  "memory_count": {
+    "archive": 144,
+    "orchard": 144,
+    "repair_ring": 144,
+    "riverbend": 144,
+    "roofward": 144,
+    "signal": 144
+  },
+  "relationship": {
+    "archive:Nia": {
+      "access": 0.935,
+      "respect": 0.915,
+      "trust": 0.925
+    },
+    "archive:Toma": {
+      "access": 0.935,
+      "respect": 0.915,
+      "trust": 0.925
+    },
+    "orchard:Ivo": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "orchard:Mara": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "repair_ring:Juno": {
+      "access": 0.935,
+      "respect": 0.915,
+      "trust": 0.925
+    },
+    "repair_ring:Pax": {
+      "access": 0.94,
+      "respect": 0.92,
+      "trust": 0.93
+    },
+    "riverbend:Ari": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "riverbend:Lio": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "roofward:Fay": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "roofward:Sera": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "signal:Milo": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    },
+    "signal:Ren": {
+      "access": 0.96,
+      "respect": 0.96,
+      "trust": 0.96
+    }
+  },
+  "settlements": [
+    {
+      "biome": "cold wet river terrace",
+      "dialect_id": "riverbend-dialect-8",
+      "flower_node": "node-03",
+      "inherited_need": "dry crossing",
+      "memory_norm": "ask before crossing wet tools",
+      "resident_a": "Ari",
+      "resident_b": "Lio",
+      "ritual_anchor": "plank-listening-avatar waiting myth",
+      "settlement_id": "riverbend",
+      "smell_cue": "cedar resin",
+      "sound_cue": "river slap",
+      "technology_stage": "route engines",
+      "temperature_cue": "cold spray"
+    },
+    {
+      "biome": "warm roof gardens",
+      "dialect_id": "roofward-dialect-8",
+      "flower_node": "node-05",
+      "inherited_need": "herb preservation",
+      "memory_norm": "wait before taking ledgers",
+      "resident_a": "Fay",
+      "resident_b": "Sera",
+      "ritual_anchor": "sun-ledger-trade witness",
+      "settlement_id": "roofward",
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinge ticks",
+      "technology_stage": "civic observatories",
+      "temperature_cue": "warm draft"
+    },
+    {
+      "biome": "cool stone stacks",
+      "dialect_id": "archive-dialect-8",
+      "flower_node": "node-08",
+      "inherited_need": "signal memory",
+      "memory_norm": "ask before touching signal spools",
+      "resident_a": "Nia",
+      "resident_b": "Toma",
+      "ritual_anchor": "spool-naming-boundary asking",
+      "settlement_id": "archive",
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "technology_stage": "memory looms",
+      "temperature_cue": "cool stone"
+    },
+    {
+      "biome": "dusk mast ridge",
+      "dialect_id": "signal-dialect-8",
+      "flower_node": "node-11",
+      "inherited_need": "path visibility",
+      "memory_norm": "light before haste",
+      "resident_a": "Milo",
+      "resident_b": "Ren",
+      "ritual_anchor": "lantern-turning-child naming",
+      "settlement_id": "signal",
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "technology_stage": "signal lenses",
+      "temperature_cue": "cool dusk"
+    },
+    {
+      "biome": "damp seed fields",
+      "dialect_id": "orchard-dialect-8",
+      "flower_node": "node-01",
+      "inherited_need": "dry seed continuity",
+      "memory_norm": "keep tomorrow dry",
+      "resident_a": "Ivo",
+      "resident_b": "Mara",
+      "ritual_anchor": "satchel-vow-seasonal repair",
+      "settlement_id": "orchard",
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "technology_stage": "water clocks",
+      "temperature_cue": "damp air"
+    },
+    {
+      "biome": "warm metal court",
+      "dialect_id": "repair_ring-dialect-8",
+      "flower_node": "node-09",
+      "inherited_need": "safe repair space",
+      "memory_norm": "give hands room near sparks",
+      "resident_a": "Juno",
+      "resident_b": "Pax",
+      "ritual_anchor": "spark-distance-object blessing",
+      "settlement_id": "repair_ring",
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "technology_stage": "kiln alloys",
+      "temperature_cue": "warm metal"
+    }
+  ]
+}

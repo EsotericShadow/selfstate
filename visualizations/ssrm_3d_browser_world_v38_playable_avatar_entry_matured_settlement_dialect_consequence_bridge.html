@@ -1,0 +1,2651 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report 278 SSRM-3D Browser World v38 Playable Avatar Entry</title>
+  <style>
+    :root { --ink:#211b17; --paper:#f2ead4; --moss:#4f6b42; --clay:#a95d3e; --line:rgba(33,27,23,.24); }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 12% 4%, #fff1bc 0 15%, transparent 34%), linear-gradient(135deg,#ead7aa,#b1c99a 52%,#6f929e); }
+    header { padding:32px; background:rgba(242,234,212,.88); border-bottom:1px solid var(--line); }
+    h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,4.2rem); letter-spacing:-.055em; }
+    main { padding:22px; display:grid; gap:18px; }
+    .boundary,.panel,.settlement-card { border:1px solid var(--line); border-radius:18px; padding:16px; background:rgba(242,234,212,.82); box-shadow:0 18px 42px rgba(35,43,28,.13); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(285px,1fr)); gap:16px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+    button { border:1px solid var(--ink); border-radius:999px; padding:8px 12px; background:#fbefd1; cursor:pointer; font:inherit; }
+    button:hover { background:var(--clay); color:white; }
+    .signal, pre { margin-top:8px; padding:10px; border-left:4px solid var(--moss); background:rgba(255,255,255,.43); white-space:pre-wrap; max-height:360px; overflow:auto; }
+    .cue { color:#40513a; font-style:italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Browser World v38: Playable Avatar Entry</h1>
+    <p>Verdict: <strong>pass</strong> · readiness 0.929296 · weakest technology_conversation_reference 0.833333</p>
+  </header>
+  <main>
+    <section class="boundary">Boundary: browser-local deterministic scaffold; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no LLM call.</section>
+    <section class="panel"><h2>Avatar entry</h2><button id="avatar-entry-button" onclick="enterAvatar()">Enter matured world</button><span id="entry-status">locked until checked</span></section>
+    <section id="settlement-map" class="grid">
+      <article class="settlement-card" data-settlement="riverbend">
+        <h2>riverbend</h2>
+        <p><strong>Biome:</strong> cold wet river terrace</p>
+        <p><strong>Dialect:</strong> riverbend-dialect-8</p>
+        <p><strong>Ritual:</strong> plank-listening-avatar waiting myth</p>
+        <p><strong>Technology:</strong> route engines</p>
+        <p class="cue">river slap · cedar resin · cold spray · node-03</p>
+        <div class="buttons">
+          <button onclick="selectSettlement('riverbend')">Select</button>
+          <button onclick="moveAvatar('riverbend', -0.04, 0)">West</button>
+          <button onclick="moveAvatar('riverbend', 0.04, 0)">East</button>
+          <button onclick="talkResident('riverbend')">Talk resident</button>
+          <button onclick="leaveConsequence('riverbend', 'leave_gift')">Leave gift</button>
+        </div>
+        <div id="state-riverbend" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="roofward">
+        <h2>roofward</h2>
+        <p><strong>Biome:</strong> warm roof gardens</p>
+        <p><strong>Dialect:</strong> roofward-dialect-8</p>
+        <p><strong>Ritual:</strong> sun-ledger-trade witness</p>
+        <p><strong>Technology:</strong> civic observatories</p>
+        <p class="cue">hinge ticks · thyme paper · warm draft · node-05</p>
+        <div class="buttons">
+          <button onclick="selectSettlement('roofward')">Select</button>
+          <button onclick="moveAvatar('roofward', -0.04, 0)">West</button>
+          <button onclick="moveAvatar('roofward', 0.04, 0)">East</button>
+          <button onclick="talkResident('roofward')">Talk resident</button>
+          <button onclick="leaveConsequence('roofward', 'leave_gift')">Leave gift</button>
+        </div>
+        <div id="state-roofward" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="archive">
+        <h2>archive</h2>
+        <p><strong>Biome:</strong> cool stone stacks</p>
+        <p><strong>Dialect:</strong> archive-dialect-8</p>
+        <p><strong>Ritual:</strong> spool-naming-boundary asking</p>
+        <p><strong>Technology:</strong> memory looms</p>
+        <p class="cue">page flutter · ink linen · cool stone · node-08</p>
+        <div class="buttons">
+          <button onclick="selectSettlement('archive')">Select</button>
+          <button onclick="moveAvatar('archive', -0.04, 0)">West</button>
+          <button onclick="moveAvatar('archive', 0.04, 0)">East</button>
+          <button onclick="talkResident('archive')">Talk resident</button>
+          <button onclick="leaveConsequence('archive', 'leave_gift')">Leave gift</button>
+        </div>
+        <div id="state-archive" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="signal">
+        <h2>signal</h2>
+        <p><strong>Biome:</strong> dusk mast ridge</p>
+        <p><strong>Dialect:</strong> signal-dialect-8</p>
+        <p><strong>Ritual:</strong> lantern-turning-child naming</p>
+        <p><strong>Technology:</strong> signal lenses</p>
+        <p class="cue">static crickets · lamp oil · cool dusk · node-11</p>
+        <div class="buttons">
+          <button onclick="selectSettlement('signal')">Select</button>
+          <button onclick="moveAvatar('signal', -0.04, 0)">West</button>
+          <button onclick="moveAvatar('signal', 0.04, 0)">East</button>
+          <button onclick="talkResident('signal')">Talk resident</button>
+          <button onclick="leaveConsequence('signal', 'leave_gift')">Leave gift</button>
+        </div>
+        <div id="state-signal" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="orchard">
+        <h2>orchard</h2>
+        <p><strong>Biome:</strong> damp seed fields</p>
+        <p><strong>Dialect:</strong> orchard-dialect-8</p>
+        <p><strong>Ritual:</strong> satchel-vow-seasonal repair</p>
+        <p><strong>Technology:</strong> water clocks</p>
+        <p class="cue">cart creak · apple soil · damp air · node-01</p>
+        <div class="buttons">
+          <button onclick="selectSettlement('orchard')">Select</button>
+          <button onclick="moveAvatar('orchard', -0.04, 0)">West</button>
+          <button onclick="moveAvatar('orchard', 0.04, 0)">East</button>
+          <button onclick="talkResident('orchard')">Talk resident</button>
+          <button onclick="leaveConsequence('orchard', 'leave_gift')">Leave gift</button>
+        </div>
+        <div id="state-orchard" class="signal">waiting</div>
+      </article>
+      <article class="settlement-card" data-settlement="repair_ring">
+        <h2>repair_ring</h2>
+        <p><strong>Biome:</strong> warm metal court</p>
+        <p><strong>Dialect:</strong> repair_ring-dialect-8</p>
+        <p><strong>Ritual:</strong> spark-distance-object blessing</p>
+        <p><strong>Technology:</strong> kiln alloys</p>
+        <p class="cue">bell hum · hot copper · warm metal · node-09</p>
+        <div class="buttons">
+          <button onclick="selectSettlement('repair_ring')">Select</button>
+          <button onclick="moveAvatar('repair_ring', -0.04, 0)">West</button>
+          <button onclick="moveAvatar('repair_ring', 0.04, 0)">East</button>
+          <button onclick="talkResident('repair_ring')">Talk resident</button>
+          <button onclick="leaveConsequence('repair_ring', 'leave_gift')">Leave gift</button>
+        </div>
+        <div id="state-repair_ring" class="signal">waiting</div>
+      </article></section>
+    <section id="resident-talk" class="panel"><h2>Resident talk</h2><pre id="talk-log"></pre></section>
+    <section id="dialect-panel" class="panel"><h2>Dialect and culture</h2><pre id="dialect-log"></pre></section>
+    <section id="culture-panel" class="panel"><h2>Inherited culture and technology</h2><pre id="culture-log"></pre></section>
+    <section id="consequence-panel" class="panel"><h2>Persistent post-entry consequences</h2><pre id="world-json"></pre></section>
+  </main>
+  <script id="ssrm-data" type="application/json">{
+  "consequences": [
+    {
+      "access_delta": 0.02,
+      "avatar_action": "ask_memory",
+      "consequence_type": "cultural_attention",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.riverbend.Lio",
+      "resident_id": "Lio",
+      "respect_delta": 0.035,
+      "settlement_id": "riverbend",
+      "tick_id": 0,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "rest_near_resident",
+      "consequence_type": "repair_or_care",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.roofward.Fay",
+      "resident_id": "Fay",
+      "respect_delta": 0.05,
+      "settlement_id": "roofward",
+      "tick_id": 1,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.01,
+      "avatar_action": "enter_world",
+      "consequence_type": "neutral_entry",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.archive.Toma",
+      "resident_id": "Toma",
+      "respect_delta": 0.016,
+      "settlement_id": "archive",
+      "tick_id": 2,
+      "trust_delta": 0.012,
+      "visible_next_visit_effect": "resident recognizes the avatar"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "ask_local_word",
+      "consequence_type": "cultural_attention",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.signal.Milo",
+      "resident_id": "Milo",
+      "respect_delta": 0.035,
+      "settlement_id": "signal",
+      "tick_id": 3,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": -0.025,
+      "avatar_action": "request_tool",
+      "consequence_type": "boundary_pressure",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.orchard.Mara",
+      "resident_id": "Mara",
+      "respect_delta": -0.045,
+      "settlement_id": "orchard",
+      "tick_id": 4,
+      "trust_delta": -0.035,
+      "visible_next_visit_effect": "resident keeps more distance on next visit"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "give_space",
+      "consequence_type": "repair_or_care",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.repair_ring.Juno",
+      "resident_id": "Juno",
+      "respect_delta": 0.05,
+      "settlement_id": "repair_ring",
+      "tick_id": 5,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "ask_local_word",
+      "consequence_type": "cultural_attention",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.riverbend.Lio",
+      "resident_id": "Lio",
+      "respect_delta": 0.035,
+      "settlement_id": "riverbend",
+      "tick_id": 6,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": -0.025,
+      "avatar_action": "request_tool",
+      "consequence_type": "boundary_pressure",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.roofward.Fay",
+      "resident_id": "Fay",
+      "respect_delta": -0.045,
+      "settlement_id": "roofward",
+      "tick_id": 7,
+      "trust_delta": -0.035,
+      "visible_next_visit_effect": "resident keeps more distance on next visit"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "give_space",
+      "consequence_type": "repair_or_care",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.archive.Toma",
+      "resident_id": "Toma",
+      "respect_delta": 0.05,
+      "settlement_id": "archive",
+      "tick_id": 8,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "ask_memory",
+      "consequence_type": "cultural_attention",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.signal.Milo",
+      "resident_id": "Milo",
+      "respect_delta": 0.035,
+      "settlement_id": "signal",
+      "tick_id": 9,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "rest_near_resident",
+      "consequence_type": "repair_or_care",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.orchard.Mara",
+      "resident_id": "Mara",
+      "respect_delta": 0.05,
+      "settlement_id": "orchard",
+      "tick_id": 10,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.01,
+      "avatar_action": "enter_world",
+      "consequence_type": "neutral_entry",
+      "day": 1,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.repair_ring.Juno",
+      "resident_id": "Juno",
+      "respect_delta": 0.016,
+      "settlement_id": "repair_ring",
+      "tick_id": 11,
+      "trust_delta": 0.012,
+      "visible_next_visit_effect": "resident recognizes the avatar"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "mark_map",
+      "consequence_type": "cultural_attention",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.riverbend.Ari",
+      "resident_id": "Ari",
+      "respect_delta": 0.035,
+      "settlement_id": "riverbend",
+      "tick_id": 12,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "leave_gift",
+      "consequence_type": "repair_or_care",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.roofward.Sera",
+      "resident_id": "Sera",
+      "respect_delta": 0.05,
+      "settlement_id": "roofward",
+      "tick_id": 13,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "inspect_ritual",
+      "consequence_type": "cultural_attention",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.archive.Nia",
+      "resident_id": "Nia",
+      "respect_delta": 0.035,
+      "settlement_id": "archive",
+      "tick_id": 14,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "offer_help",
+      "consequence_type": "repair_or_care",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.signal.Ren",
+      "resident_id": "Ren",
+      "respect_delta": 0.05,
+      "settlement_id": "signal",
+      "tick_id": 15,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": -0.025,
+      "avatar_action": "move_near_object",
+      "consequence_type": "boundary_pressure",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.orchard.Ivo",
+      "resident_id": "Ivo",
+      "respect_delta": -0.045,
+      "settlement_id": "orchard",
+      "tick_id": 16,
+      "trust_delta": -0.035,
+      "visible_next_visit_effect": "resident keeps more distance on next visit"
+    },
+    {
+      "access_delta": 0.01,
+      "avatar_action": "follow_route",
+      "consequence_type": "neutral_entry",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.repair_ring.Pax",
+      "resident_id": "Pax",
+      "respect_delta": 0.016,
+      "settlement_id": "repair_ring",
+      "tick_id": 17,
+      "trust_delta": 0.012,
+      "visible_next_visit_effect": "resident recognizes the avatar"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "offer_help",
+      "consequence_type": "repair_or_care",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.riverbend.Ari",
+      "resident_id": "Ari",
+      "respect_delta": 0.05,
+      "settlement_id": "riverbend",
+      "tick_id": 18,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": -0.025,
+      "avatar_action": "move_near_object",
+      "consequence_type": "boundary_pressure",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.roofward.Sera",
+      "resident_id": "Sera",
+      "respect_delta": -0.045,
+      "settlement_id": "roofward",
+      "tick_id": 19,
+      "trust_delta": -0.035,
+      "visible_next_visit_effect": "resident keeps more distance on next visit"
+    },
+    {
+      "access_delta": 0.01,
+      "avatar_action": "follow_route",
+      "consequence_type": "neutral_entry",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.archive.Nia",
+      "resident_id": "Nia",
+      "respect_delta": 0.016,
+      "settlement_id": "archive",
+      "tick_id": 20,
+      "trust_delta": 0.012,
+      "visible_next_visit_effect": "resident recognizes the avatar"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "mark_map",
+      "consequence_type": "cultural_attention",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.signal.Ren",
+      "resident_id": "Ren",
+      "respect_delta": 0.035,
+      "settlement_id": "signal",
+      "tick_id": 21,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "leave_gift",
+      "consequence_type": "repair_or_care",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.orchard.Ivo",
+      "resident_id": "Ivo",
+      "respect_delta": 0.05,
+      "settlement_id": "orchard",
+      "tick_id": 22,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "inspect_ritual",
+      "consequence_type": "cultural_attention",
+      "day": 2,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.repair_ring.Pax",
+      "resident_id": "Pax",
+      "respect_delta": 0.035,
+      "settlement_id": "repair_ring",
+      "tick_id": 23,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "rest_near_resident",
+      "consequence_type": "repair_or_care",
+      "day": 3,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.riverbend.Lio",
+      "resident_id": "Lio",
+      "respect_delta": 0.05,
+      "settlement_id": "riverbend",
+      "tick_id": 24,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.01,
+      "avatar_action": "enter_world",
+      "consequence_type": "neutral_entry",
+      "day": 3,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.roofward.Fay",
+      "resident_id": "Fay",
+      "respect_delta": 0.016,
+      "settlement_id": "roofward",
+      "tick_id": 25,
+      "trust_delta": 0.012,
+      "visible_next_visit_effect": "resident recognizes the avatar"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "ask_local_word",
+      "consequence_type": "cultural_attention",
+      "day": 3,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.archive.Toma",
+      "resident_id": "Toma",
+      "respect_delta": 0.035,
+      "settlement_id": "archive",
+      "tick_id": 26,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    },
+    {
+      "access_delta": -0.025,
+      "avatar_action": "request_tool",
+      "consequence_type": "boundary_pressure",
+      "day": 3,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.signal.Milo",
+      "resident_id": "Milo",
+      "respect_delta": -0.045,
+      "settlement_id": "signal",
+      "tick_id": 27,
+      "trust_delta": -0.035,
+      "visible_next_visit_effect": "resident keeps more distance on next visit"
+    },
+    {
+      "access_delta": 0.03,
+      "avatar_action": "give_space",
+      "consequence_type": "repair_or_care",
+      "day": 3,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.orchard.Mara",
+      "resident_id": "Mara",
+      "respect_delta": 0.05,
+      "settlement_id": "orchard",
+      "tick_id": 28,
+      "trust_delta": 0.04,
+      "visible_next_visit_effect": "resident approaches sooner on next visit"
+    },
+    {
+      "access_delta": 0.02,
+      "avatar_action": "ask_memory",
+      "consequence_type": "cultural_attention",
+      "day": 3,
+      "memory_written": true,
+      "no_endless_distress": true,
+      "persistent_key": "ssrm.v38.memory.repair_ring.Juno",
+      "resident_id": "Juno",
+      "respect_delta": 0.035,
+      "settlement_id": "repair_ring",
+      "tick_id": 29,
+      "trust_delta": 0.025,
+      "visible_next_visit_effect": "resident shares a more specific local word"
+    }
+  ],
+  "conversation": [
+    {
+      "avatar_action": "ask_memory",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "riverbend-ask-mem-0",
+      "private_workspace_hidden": true,
+      "public_translation": "riverbend-ask-mem-0: ask before crossing wet tools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Lio: our route engines still keep the avatar-waiting story and plank-listening-avatar waiting myth.",
+      "resident_id": "Lio",
+      "settlement_id": "riverbend",
+      "tick_id": 0
+    },
+    {
+      "avatar_action": "rest_near_resident",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "roofward-rest-ne-1",
+      "private_workspace_hidden": true,
+      "public_translation": "roofward-rest-ne-1: wait before taking ledgers",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Fay: civic observatories made this route possible; move with care through sun-ledger-trade witness and wait before taking ledgers.",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 1
+    },
+    {
+      "avatar_action": "enter_world",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "archive-enter-w-2",
+      "private_workspace_hidden": true,
+      "public_translation": "archive-enter-w-2: ask before touching signal spools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Toma: memory looms made this route possible; move with care through spool-naming-boundary asking and ask before touching signal spools.",
+      "resident_id": "Toma",
+      "settlement_id": "archive",
+      "tick_id": 2
+    },
+    {
+      "avatar_action": "ask_local_word",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "signal-ask-loc-3",
+      "private_workspace_hidden": true,
+      "public_translation": "signal-ask-loc-3: light before haste",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": false,
+      "reply_line": "Milo: in signal-dialect-8, signal-ask-loc-3 carries path visibility, lantern-turning-child naming, and light before haste.",
+      "resident_id": "Milo",
+      "settlement_id": "signal",
+      "tick_id": 3
+    },
+    {
+      "avatar_action": "request_tool",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "orchard-request-4",
+      "private_workspace_hidden": true,
+      "public_translation": "orchard-request-4: keep tomorrow dry",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Mara: orchard-request-4 means ask first. Our satchel-vow-seasonal repair and keep tomorrow dry are carried by water clocks.",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 4
+    },
+    {
+      "avatar_action": "give_space",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "repair_ring-give-sp-5",
+      "private_workspace_hidden": true,
+      "public_translation": "repair_ring-give-sp-5: give hands room near sparks",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Juno: kiln alloys made this route possible; move with care through spark-distance-object blessing and give hands room near sparks.",
+      "resident_id": "Juno",
+      "settlement_id": "repair_ring",
+      "tick_id": 5
+    },
+    {
+      "avatar_action": "ask_local_word",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "riverbend-ask-loc-6",
+      "private_workspace_hidden": true,
+      "public_translation": "riverbend-ask-loc-6: ask before crossing wet tools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": false,
+      "reply_line": "Lio: in riverbend-dialect-8, riverbend-ask-loc-6 carries dry crossing, plank-listening-avatar waiting myth, and ask before crossing wet tools.",
+      "resident_id": "Lio",
+      "settlement_id": "riverbend",
+      "tick_id": 6
+    },
+    {
+      "avatar_action": "request_tool",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "roofward-request-7",
+      "private_workspace_hidden": true,
+      "public_translation": "roofward-request-7: wait before taking ledgers",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Fay: roofward-request-7 means ask first. Our sun-ledger-trade witness and wait before taking ledgers are carried by civic observatories.",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 7
+    },
+    {
+      "avatar_action": "give_space",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "archive-give-sp-8",
+      "private_workspace_hidden": true,
+      "public_translation": "archive-give-sp-8: ask before touching signal spools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Toma: memory looms made this route possible; move with care through spool-naming-boundary asking and ask before touching signal spools.",
+      "resident_id": "Toma",
+      "settlement_id": "archive",
+      "tick_id": 8
+    },
+    {
+      "avatar_action": "ask_memory",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "signal-ask-mem-9",
+      "private_workspace_hidden": true,
+      "public_translation": "signal-ask-mem-9: light before haste",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Milo: our signal lenses still keep the avatar-waiting story and lantern-turning-child naming.",
+      "resident_id": "Milo",
+      "settlement_id": "signal",
+      "tick_id": 9
+    },
+    {
+      "avatar_action": "rest_near_resident",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "orchard-rest-ne-10",
+      "private_workspace_hidden": true,
+      "public_translation": "orchard-rest-ne-10: keep tomorrow dry",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Mara: water clocks made this route possible; move with care through satchel-vow-seasonal repair and keep tomorrow dry.",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 10
+    },
+    {
+      "avatar_action": "enter_world",
+      "day": 1,
+      "dialect_conditioned": true,
+      "local_lexeme": "repair_ring-enter-w-11",
+      "private_workspace_hidden": true,
+      "public_translation": "repair_ring-enter-w-11: give hands room near sparks",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Juno: kiln alloys made this route possible; move with care through spark-distance-object blessing and give hands room near sparks.",
+      "resident_id": "Juno",
+      "settlement_id": "repair_ring",
+      "tick_id": 11
+    },
+    {
+      "avatar_action": "mark_map",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "riverbend-mark-ma-12",
+      "private_workspace_hidden": true,
+      "public_translation": "riverbend-mark-ma-12: ask before crossing wet tools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Ari: route engines made this route possible; move with care through plank-listening-avatar waiting myth and ask before crossing wet tools.",
+      "resident_id": "Ari",
+      "settlement_id": "riverbend",
+      "tick_id": 12
+    },
+    {
+      "avatar_action": "leave_gift",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "roofward-leave-g-0",
+      "private_workspace_hidden": true,
+      "public_translation": "roofward-leave-g-0: wait before taking ledgers",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": false,
+      "reply_line": "Sera: gift recorded through sun-ledger-trade witness; next visit begins warmer under wait before taking ledgers.",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 13
+    },
+    {
+      "avatar_action": "inspect_ritual",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "archive-inspect-1",
+      "private_workspace_hidden": true,
+      "public_translation": "archive-inspect-1: ask before touching signal spools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Nia: memory looms made this route possible; move with care through spool-naming-boundary asking and ask before touching signal spools.",
+      "resident_id": "Nia",
+      "settlement_id": "archive",
+      "tick_id": 14
+    },
+    {
+      "avatar_action": "offer_help",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "signal-offer-h-2",
+      "private_workspace_hidden": true,
+      "public_translation": "signal-offer-h-2: light before haste",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Ren: help is welcome when it follows light before haste; signal lenses made the work shareable.",
+      "resident_id": "Ren",
+      "settlement_id": "signal",
+      "tick_id": 15
+    },
+    {
+      "avatar_action": "move_near_object",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "orchard-move-ne-3",
+      "private_workspace_hidden": true,
+      "public_translation": "orchard-move-ne-3: keep tomorrow dry",
+      "references_culture": true,
+      "references_memory": false,
+      "references_technology": true,
+      "reply_line": "Ivo: slow steps. The satchel-vow-seasonal repair says owned things need room, and water clocks records that memory.",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 16
+    },
+    {
+      "avatar_action": "follow_route",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "repair_ring-follow--4",
+      "private_workspace_hidden": true,
+      "public_translation": "repair_ring-follow--4: give hands room near sparks",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Pax: kiln alloys made this route possible; move with care through spark-distance-object blessing and give hands room near sparks.",
+      "resident_id": "Pax",
+      "settlement_id": "repair_ring",
+      "tick_id": 17
+    },
+    {
+      "avatar_action": "offer_help",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "riverbend-offer-h-5",
+      "private_workspace_hidden": true,
+      "public_translation": "riverbend-offer-h-5: ask before crossing wet tools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Ari: help is welcome when it follows ask before crossing wet tools; route engines made the work shareable.",
+      "resident_id": "Ari",
+      "settlement_id": "riverbend",
+      "tick_id": 18
+    },
+    {
+      "avatar_action": "move_near_object",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "roofward-move-ne-6",
+      "private_workspace_hidden": true,
+      "public_translation": "roofward-move-ne-6: wait before taking ledgers",
+      "references_culture": true,
+      "references_memory": false,
+      "references_technology": true,
+      "reply_line": "Sera: slow steps. The sun-ledger-trade witness says owned things need room, and civic observatories records that memory.",
+      "resident_id": "Sera",
+      "settlement_id": "roofward",
+      "tick_id": 19
+    },
+    {
+      "avatar_action": "follow_route",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "archive-follow--7",
+      "private_workspace_hidden": true,
+      "public_translation": "archive-follow--7: ask before touching signal spools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Nia: memory looms made this route possible; move with care through spool-naming-boundary asking and ask before touching signal spools.",
+      "resident_id": "Nia",
+      "settlement_id": "archive",
+      "tick_id": 20
+    },
+    {
+      "avatar_action": "mark_map",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "signal-mark-ma-8",
+      "private_workspace_hidden": true,
+      "public_translation": "signal-mark-ma-8: light before haste",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Ren: signal lenses made this route possible; move with care through lantern-turning-child naming and light before haste.",
+      "resident_id": "Ren",
+      "settlement_id": "signal",
+      "tick_id": 21
+    },
+    {
+      "avatar_action": "leave_gift",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "orchard-leave-g-9",
+      "private_workspace_hidden": true,
+      "public_translation": "orchard-leave-g-9: keep tomorrow dry",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": false,
+      "reply_line": "Ivo: gift recorded through satchel-vow-seasonal repair; next visit begins warmer under keep tomorrow dry.",
+      "resident_id": "Ivo",
+      "settlement_id": "orchard",
+      "tick_id": 22
+    },
+    {
+      "avatar_action": "inspect_ritual",
+      "day": 2,
+      "dialect_conditioned": true,
+      "local_lexeme": "repair_ring-inspect-10",
+      "private_workspace_hidden": true,
+      "public_translation": "repair_ring-inspect-10: give hands room near sparks",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Pax: kiln alloys made this route possible; move with care through spark-distance-object blessing and give hands room near sparks.",
+      "resident_id": "Pax",
+      "settlement_id": "repair_ring",
+      "tick_id": 23
+    },
+    {
+      "avatar_action": "rest_near_resident",
+      "day": 3,
+      "dialect_conditioned": true,
+      "local_lexeme": "riverbend-rest-ne-11",
+      "private_workspace_hidden": true,
+      "public_translation": "riverbend-rest-ne-11: ask before crossing wet tools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Lio: route engines made this route possible; move with care through plank-listening-avatar waiting myth and ask before crossing wet tools.",
+      "resident_id": "Lio",
+      "settlement_id": "riverbend",
+      "tick_id": 24
+    },
+    {
+      "avatar_action": "enter_world",
+      "day": 3,
+      "dialect_conditioned": true,
+      "local_lexeme": "roofward-enter-w-12",
+      "private_workspace_hidden": true,
+      "public_translation": "roofward-enter-w-12: wait before taking ledgers",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Fay: civic observatories made this route possible; move with care through sun-ledger-trade witness and wait before taking ledgers.",
+      "resident_id": "Fay",
+      "settlement_id": "roofward",
+      "tick_id": 25
+    },
+    {
+      "avatar_action": "ask_local_word",
+      "day": 3,
+      "dialect_conditioned": true,
+      "local_lexeme": "archive-ask-loc-0",
+      "private_workspace_hidden": true,
+      "public_translation": "archive-ask-loc-0: ask before touching signal spools",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": false,
+      "reply_line": "Toma: in archive-dialect-8, archive-ask-loc-0 carries signal memory, spool-naming-boundary asking, and ask before touching signal spools.",
+      "resident_id": "Toma",
+      "settlement_id": "archive",
+      "tick_id": 26
+    },
+    {
+      "avatar_action": "request_tool",
+      "day": 3,
+      "dialect_conditioned": true,
+      "local_lexeme": "signal-request-1",
+      "private_workspace_hidden": true,
+      "public_translation": "signal-request-1: light before haste",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Milo: signal-request-1 means ask first. Our lantern-turning-child naming and light before haste are carried by signal lenses.",
+      "resident_id": "Milo",
+      "settlement_id": "signal",
+      "tick_id": 27
+    },
+    {
+      "avatar_action": "give_space",
+      "day": 3,
+      "dialect_conditioned": true,
+      "local_lexeme": "orchard-give-sp-2",
+      "private_workspace_hidden": true,
+      "public_translation": "orchard-give-sp-2: keep tomorrow dry",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Mara: water clocks made this route possible; move with care through satchel-vow-seasonal repair and keep tomorrow dry.",
+      "resident_id": "Mara",
+      "settlement_id": "orchard",
+      "tick_id": 28
+    },
+    {
+      "avatar_action": "ask_memory",
+      "day": 3,
+      "dialect_conditioned": true,
+      "local_lexeme": "repair_ring-ask-mem-3",
+      "private_workspace_hidden": true,
+      "public_translation": "repair_ring-ask-mem-3: give hands room near sparks",
+      "references_culture": true,
+      "references_memory": true,
+      "references_technology": true,
+      "reply_line": "Juno: our kiln alloys still keep the avatar-waiting story and spark-distance-object blessing.",
+      "resident_id": "Juno",
+      "settlement_id": "repair_ring",
+      "tick_id": 29
+    }
+  ],
+  "entry": [
+    {
+      "avatar_spawned": false,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "riverbend",
+      "spawn_location": "riverbend:arrival court",
+      "tick_id": 0
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 1
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "archive",
+      "spawn_location": "archive:arrival court",
+      "tick_id": 2
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "signal",
+      "spawn_location": "signal:arrival court",
+      "tick_id": 3
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "orchard",
+      "spawn_location": "orchard:arrival court",
+      "tick_id": 4
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "repair_ring",
+      "spawn_location": "repair_ring:arrival court",
+      "tick_id": 5
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "riverbend",
+      "spawn_location": "riverbend:arrival court",
+      "tick_id": 6
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 7
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "archive",
+      "spawn_location": "archive:arrival court",
+      "tick_id": 8
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "signal",
+      "spawn_location": "signal:arrival court",
+      "tick_id": 9
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "orchard",
+      "spawn_location": "orchard:arrival court",
+      "tick_id": 10
+    },
+    {
+      "avatar_spawned": true,
+      "day": 1,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "repair_ring",
+      "spawn_location": "repair_ring:arrival court",
+      "tick_id": 11
+    },
+    {
+      "avatar_spawned": true,
+      "day": 2,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "riverbend",
+      "spawn_location": "riverbend:arrival court",
+      "tick_id": 12
+    },
+    {
+      "avatar_spawned": true,
+      "day": 2,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 13
+    },
+    {
+      "avatar_spawned": true,
+      "day": 3,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "riverbend",
+      "spawn_location": "riverbend:arrival court",
+      "tick_id": 24
+    },
+    {
+      "avatar_spawned": true,
+      "day": 3,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 25
+    },
+    {
+      "avatar_spawned": true,
+      "day": 4,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "riverbend",
+      "spawn_location": "riverbend:arrival court",
+      "tick_id": 36
+    },
+    {
+      "avatar_spawned": true,
+      "day": 4,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 37
+    },
+    {
+      "avatar_spawned": true,
+      "day": 5,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "riverbend",
+      "spawn_location": "riverbend:arrival court",
+      "tick_id": 48
+    },
+    {
+      "avatar_spawned": true,
+      "day": 5,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 49
+    },
+    {
+      "avatar_spawned": true,
+      "day": 6,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 60
+    },
+    {
+      "avatar_spawned": true,
+      "day": 6,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "archive",
+      "spawn_location": "archive:arrival court",
+      "tick_id": 61
+    },
+    {
+      "avatar_spawned": true,
+      "day": 7,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "roofward",
+      "spawn_location": "roofward:arrival court",
+      "tick_id": 72
+    },
+    {
+      "avatar_spawned": true,
+      "day": 7,
+      "entry_button_enabled": true,
+      "entry_button_visible": true,
+      "entry_gate_id": "avatar-entry-gate",
+      "inherited_world_loaded": true,
+      "matured_generations_confirmed": 80,
+      "matured_years_confirmed": 2400,
+      "settlement_id": "archive",
+      "spawn_location": "archive:arrival court",
+      "tick_id": 73
+    }
+  ],
+  "inheritance": [
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-077175",
+      "inherited_dialect_id": "riverbend-dialect-8",
+      "inherited_memory_norm": "ask before crossing wet tools",
+      "inherited_ritual": "plank-listening-avatar waiting myth",
+      "inherited_technology": "route engines",
+      "resident_id": "Lio",
+      "resident_loaded_after_avatar_entry": false,
+      "settlement_id": "riverbend",
+      "tick_id": 0
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-894010",
+      "inherited_dialect_id": "roofward-dialect-8",
+      "inherited_memory_norm": "wait before taking ledgers",
+      "inherited_ritual": "sun-ledger-trade witness",
+      "inherited_technology": "civic observatories",
+      "resident_id": "Fay",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "roofward",
+      "tick_id": 1
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-770474",
+      "inherited_dialect_id": "archive-dialect-8",
+      "inherited_memory_norm": "ask before touching signal spools",
+      "inherited_ritual": "spool-naming-boundary asking",
+      "inherited_technology": "memory looms",
+      "resident_id": "Toma",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "archive",
+      "tick_id": 2
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-731696",
+      "inherited_dialect_id": "signal-dialect-8",
+      "inherited_memory_norm": "light before haste",
+      "inherited_ritual": "lantern-turning-child naming",
+      "inherited_technology": "signal lenses",
+      "resident_id": "Milo",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "signal",
+      "tick_id": 3
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-728596",
+      "inherited_dialect_id": "orchard-dialect-8",
+      "inherited_memory_norm": "keep tomorrow dry",
+      "inherited_ritual": "satchel-vow-seasonal repair",
+      "inherited_technology": "water clocks",
+      "resident_id": "Mara",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "orchard",
+      "tick_id": 4
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-020151",
+      "inherited_dialect_id": "repair_ring-dialect-8",
+      "inherited_memory_norm": "give hands room near sparks",
+      "inherited_ritual": "spark-distance-object blessing",
+      "inherited_technology": "kiln alloys",
+      "resident_id": "Juno",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 5
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-077175",
+      "inherited_dialect_id": "riverbend-dialect-8",
+      "inherited_memory_norm": "ask before crossing wet tools",
+      "inherited_ritual": "plank-listening-avatar waiting myth",
+      "inherited_technology": "route engines",
+      "resident_id": "Lio",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "riverbend",
+      "tick_id": 6
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-894010",
+      "inherited_dialect_id": "roofward-dialect-8",
+      "inherited_memory_norm": "wait before taking ledgers",
+      "inherited_ritual": "sun-ledger-trade witness",
+      "inherited_technology": "civic observatories",
+      "resident_id": "Fay",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "roofward",
+      "tick_id": 7
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-770474",
+      "inherited_dialect_id": "archive-dialect-8",
+      "inherited_memory_norm": "ask before touching signal spools",
+      "inherited_ritual": "spool-naming-boundary asking",
+      "inherited_technology": "memory looms",
+      "resident_id": "Toma",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "archive",
+      "tick_id": 8
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-731696",
+      "inherited_dialect_id": "signal-dialect-8",
+      "inherited_memory_norm": "light before haste",
+      "inherited_ritual": "lantern-turning-child naming",
+      "inherited_technology": "signal lenses",
+      "resident_id": "Milo",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "signal",
+      "tick_id": 9
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-728596",
+      "inherited_dialect_id": "orchard-dialect-8",
+      "inherited_memory_norm": "keep tomorrow dry",
+      "inherited_ritual": "satchel-vow-seasonal repair",
+      "inherited_technology": "water clocks",
+      "resident_id": "Mara",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "orchard",
+      "tick_id": 10
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 1,
+      "inheritance_hash": "v38-020151",
+      "inherited_dialect_id": "repair_ring-dialect-8",
+      "inherited_memory_norm": "give hands room near sparks",
+      "inherited_ritual": "spark-distance-object blessing",
+      "inherited_technology": "kiln alloys",
+      "resident_id": "Juno",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 11
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-075516",
+      "inherited_dialect_id": "riverbend-dialect-8",
+      "inherited_memory_norm": "ask before crossing wet tools",
+      "inherited_ritual": "plank-listening-avatar waiting myth",
+      "inherited_technology": "route engines",
+      "resident_id": "Ari",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "riverbend",
+      "tick_id": 12
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-922910",
+      "inherited_dialect_id": "roofward-dialect-8",
+      "inherited_memory_norm": "wait before taking ledgers",
+      "inherited_ritual": "sun-ledger-trade witness",
+      "inherited_technology": "civic observatories",
+      "resident_id": "Sera",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "roofward",
+      "tick_id": 13
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-739206",
+      "inherited_dialect_id": "archive-dialect-8",
+      "inherited_memory_norm": "ask before touching signal spools",
+      "inherited_ritual": "spool-naming-boundary asking",
+      "inherited_technology": "memory looms",
+      "resident_id": "Nia",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "archive",
+      "tick_id": 14
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-703235",
+      "inherited_dialect_id": "signal-dialect-8",
+      "inherited_memory_norm": "light before haste",
+      "inherited_ritual": "lantern-turning-child naming",
+      "inherited_technology": "signal lenses",
+      "resident_id": "Ren",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "signal",
+      "tick_id": 15
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-705306",
+      "inherited_dialect_id": "orchard-dialect-8",
+      "inherited_memory_norm": "keep tomorrow dry",
+      "inherited_ritual": "satchel-vow-seasonal repair",
+      "inherited_technology": "water clocks",
+      "resident_id": "Ivo",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "orchard",
+      "tick_id": 16
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-989163",
+      "inherited_dialect_id": "repair_ring-dialect-8",
+      "inherited_memory_norm": "give hands room near sparks",
+      "inherited_ritual": "spark-distance-object blessing",
+      "inherited_technology": "kiln alloys",
+      "resident_id": "Pax",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 17
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-075516",
+      "inherited_dialect_id": "riverbend-dialect-8",
+      "inherited_memory_norm": "ask before crossing wet tools",
+      "inherited_ritual": "plank-listening-avatar waiting myth",
+      "inherited_technology": "route engines",
+      "resident_id": "Ari",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "riverbend",
+      "tick_id": 18
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-922910",
+      "inherited_dialect_id": "roofward-dialect-8",
+      "inherited_memory_norm": "wait before taking ledgers",
+      "inherited_ritual": "sun-ledger-trade witness",
+      "inherited_technology": "civic observatories",
+      "resident_id": "Sera",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "roofward",
+      "tick_id": 19
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-739206",
+      "inherited_dialect_id": "archive-dialect-8",
+      "inherited_memory_norm": "ask before touching signal spools",
+      "inherited_ritual": "spool-naming-boundary asking",
+      "inherited_technology": "memory looms",
+      "resident_id": "Nia",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "archive",
+      "tick_id": 20
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-703235",
+      "inherited_dialect_id": "signal-dialect-8",
+      "inherited_memory_norm": "light before haste",
+      "inherited_ritual": "lantern-turning-child naming",
+      "inherited_technology": "signal lenses",
+      "resident_id": "Ren",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "signal",
+      "tick_id": 21
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-705306",
+      "inherited_dialect_id": "orchard-dialect-8",
+      "inherited_memory_norm": "keep tomorrow dry",
+      "inherited_ritual": "satchel-vow-seasonal repair",
+      "inherited_technology": "water clocks",
+      "resident_id": "Ivo",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "orchard",
+      "tick_id": 22
+    },
+    {
+      "culture_reference_visible": true,
+      "day": 2,
+      "inheritance_hash": "v38-989163",
+      "inherited_dialect_id": "repair_ring-dialect-8",
+      "inherited_memory_norm": "give hands room near sparks",
+      "inherited_ritual": "spark-distance-object blessing",
+      "inherited_technology": "kiln alloys",
+      "resident_id": "Pax",
+      "resident_loaded_after_avatar_entry": true,
+      "settlement_id": "repair_ring",
+      "tick_id": 23
+    }
+  ],
+  "movement": [
+    {
+      "avatar_x": 0.455,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "river slap; cedar resin; cold spray",
+      "settlement_id": "riverbend",
+      "tick_id": 0
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "arrival court",
+      "movement_action": "pause",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "hinge ticks; thyme paper; warm draft",
+      "settlement_id": "roofward",
+      "tick_id": 1
+    },
+    {
+      "avatar_x": 0.545,
+      "avatar_y": 0.462,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "page flutter; ink linen; cool stone",
+      "settlement_id": "archive",
+      "tick_id": 2
+    },
+    {
+      "avatar_x": 0.455,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "arrival court",
+      "movement_action": "pause",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "static crickets; lamp oil; cool dusk",
+      "settlement_id": "signal",
+      "tick_id": 3
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "owned tool",
+      "sensory_cue_visible": "cart creak; apple soil; damp air",
+      "settlement_id": "orchard",
+      "tick_id": 4
+    },
+    {
+      "avatar_x": 0.545,
+      "avatar_y": 0.462,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "bell hum; hot copper; warm metal",
+      "settlement_id": "repair_ring",
+      "tick_id": 5
+    },
+    {
+      "avatar_x": 0.41,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "ritual lane",
+      "movement_action": "pause",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "river slap; cedar resin; cold spray",
+      "settlement_id": "riverbend",
+      "tick_id": 6
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.576,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "owned tool",
+      "sensory_cue_visible": "hinge ticks; thyme paper; warm draft",
+      "settlement_id": "roofward",
+      "tick_id": 7
+    },
+    {
+      "avatar_x": 0.59,
+      "avatar_y": 0.424,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "page flutter; ink linen; cool stone",
+      "settlement_id": "archive",
+      "tick_id": 8
+    },
+    {
+      "avatar_x": 0.41,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "static crickets; lamp oil; cool dusk",
+      "settlement_id": "signal",
+      "tick_id": 9
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.576,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "resident threshold",
+      "movement_action": "pause",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "cart creak; apple soil; damp air",
+      "settlement_id": "orchard",
+      "tick_id": 10
+    },
+    {
+      "avatar_x": 0.59,
+      "avatar_y": 0.424,
+      "collision_guard": true,
+      "day": 1,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "bell hum; hot copper; warm metal",
+      "settlement_id": "repair_ring",
+      "tick_id": 11
+    },
+    {
+      "avatar_x": 0.365,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "river slap; cedar resin; cold spray",
+      "settlement_id": "riverbend",
+      "tick_id": 12
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "hinge ticks; thyme paper; warm draft",
+      "settlement_id": "roofward",
+      "tick_id": 13
+    },
+    {
+      "avatar_x": 0.635,
+      "avatar_y": 0.424,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "ritual gate",
+      "sensory_cue_visible": "page flutter; ink linen; cool stone",
+      "settlement_id": "archive",
+      "tick_id": 14
+    },
+    {
+      "avatar_x": 0.365,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "static crickets; lamp oil; cool dusk",
+      "settlement_id": "signal",
+      "tick_id": 15
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "owned tool",
+      "sensory_cue_visible": "cart creak; apple soil; damp air",
+      "settlement_id": "orchard",
+      "tick_id": 16
+    },
+    {
+      "avatar_x": 0.635,
+      "avatar_y": 0.424,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "bell hum; hot copper; warm metal",
+      "settlement_id": "repair_ring",
+      "tick_id": 17
+    },
+    {
+      "avatar_x": 0.32,
+      "avatar_y": 0.576,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "river slap; cedar resin; cold spray",
+      "settlement_id": "riverbend",
+      "tick_id": 18
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "owned tool",
+      "sensory_cue_visible": "hinge ticks; thyme paper; warm draft",
+      "settlement_id": "roofward",
+      "tick_id": 19
+    },
+    {
+      "avatar_x": 0.68,
+      "avatar_y": 0.424,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "page flutter; ink linen; cool stone",
+      "settlement_id": "archive",
+      "tick_id": 20
+    },
+    {
+      "avatar_x": 0.32,
+      "avatar_y": 0.576,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "static crickets; lamp oil; cool dusk",
+      "settlement_id": "signal",
+      "tick_id": 21
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "cart creak; apple soil; damp air",
+      "settlement_id": "orchard",
+      "tick_id": 22
+    },
+    {
+      "avatar_x": 0.68,
+      "avatar_y": 0.424,
+      "collision_guard": true,
+      "day": 2,
+      "local_room": "resident threshold",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "ritual gate",
+      "sensory_cue_visible": "bell hum; hot copper; warm metal",
+      "settlement_id": "repair_ring",
+      "tick_id": 23
+    },
+    {
+      "avatar_x": 0.275,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 3,
+      "local_room": "arrival court",
+      "movement_action": "pause",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "river slap; cedar resin; cold spray",
+      "settlement_id": "riverbend",
+      "tick_id": 24
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 3,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "hinge ticks; thyme paper; warm draft",
+      "settlement_id": "roofward",
+      "tick_id": 25
+    },
+    {
+      "avatar_x": 0.725,
+      "avatar_y": 0.462,
+      "collision_guard": true,
+      "day": 3,
+      "local_room": "arrival court",
+      "movement_action": "pause",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "page flutter; ink linen; cool stone",
+      "settlement_id": "archive",
+      "tick_id": 26
+    },
+    {
+      "avatar_x": 0.275,
+      "avatar_y": 0.538,
+      "collision_guard": true,
+      "day": 3,
+      "local_room": "arrival court",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "owned tool",
+      "sensory_cue_visible": "static crickets; lamp oil; cool dusk",
+      "settlement_id": "signal",
+      "tick_id": 27
+    },
+    {
+      "avatar_x": 0.5,
+      "avatar_y": 0.5,
+      "collision_guard": true,
+      "day": 3,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "cart creak; apple soil; damp air",
+      "settlement_id": "orchard",
+      "tick_id": 28
+    },
+    {
+      "avatar_x": 0.725,
+      "avatar_y": 0.462,
+      "collision_guard": true,
+      "day": 3,
+      "local_room": "ritual lane",
+      "movement_action": "step",
+      "movement_saved": true,
+      "nearby_object": "memory marker",
+      "sensory_cue_visible": "bell hum; hot copper; warm metal",
+      "settlement_id": "repair_ring",
+      "tick_id": 29
+    }
+  ],
+  "persistent": [
+    {
+      "day": 62,
+      "localstorage_key": "ssrm.v38.world.signal",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.320,0.576",
+      "saved_memory_count": 124,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "signal",
+      "tick_id": 743
+    },
+    {
+      "day": 63,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.275,0.462",
+      "saved_memory_count": 125,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 744
+    },
+    {
+      "day": 63,
+      "localstorage_key": "ssrm.v38.world.signal",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.410,0.652",
+      "saved_memory_count": 126,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "signal",
+      "tick_id": 755
+    },
+    {
+      "day": 64,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.185,0.424",
+      "saved_memory_count": 127,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 756
+    },
+    {
+      "day": 64,
+      "localstorage_key": "ssrm.v38.world.signal",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.500,0.576",
+      "saved_memory_count": 128,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "signal",
+      "tick_id": 767
+    },
+    {
+      "day": 65,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.095,0.462",
+      "saved_memory_count": 129,
+      "saved_relationship_state": "{\"access\": 0.935, \"respect\": 0.915, \"trust\": 0.925}",
+      "settlement_id": "orchard",
+      "tick_id": 768
+    },
+    {
+      "day": 65,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.050,0.500",
+      "saved_memory_count": 130,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 774
+    },
+    {
+      "day": 65,
+      "localstorage_key": "ssrm.v38.world.signal",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.590,0.576",
+      "saved_memory_count": 130,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "signal",
+      "tick_id": 779
+    },
+    {
+      "day": 66,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.905,0.386",
+      "saved_memory_count": 131,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "repair_ring",
+      "tick_id": 780
+    },
+    {
+      "day": 66,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.140,0.576",
+      "saved_memory_count": 132,
+      "saved_relationship_state": "{\"access\": 0.935, \"respect\": 0.915, \"trust\": 0.925}",
+      "settlement_id": "orchard",
+      "tick_id": 791
+    },
+    {
+      "day": 67,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.815,0.348",
+      "saved_memory_count": 133,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "repair_ring",
+      "tick_id": 792
+    },
+    {
+      "day": 67,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.230,0.500",
+      "saved_memory_count": 134,
+      "saved_relationship_state": "{\"access\": 0.935, \"respect\": 0.915, \"trust\": 0.925}",
+      "settlement_id": "orchard",
+      "tick_id": 803
+    },
+    {
+      "day": 68,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.725,0.386",
+      "saved_memory_count": 135,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "repair_ring",
+      "tick_id": 804
+    },
+    {
+      "day": 68,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.320,0.500",
+      "saved_memory_count": 136,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 815
+    },
+    {
+      "day": 69,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.635,0.386",
+      "saved_memory_count": 137,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "repair_ring",
+      "tick_id": 816
+    },
+    {
+      "day": 69,
+      "localstorage_key": "ssrm.v38.world.riverbend",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.590,0.576",
+      "saved_memory_count": 137,
+      "saved_relationship_state": "{\"access\": 0.935, \"respect\": 0.915, \"trust\": 0.925}",
+      "settlement_id": "riverbend",
+      "tick_id": 817
+    },
+    {
+      "day": 69,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.410,0.576",
+      "saved_memory_count": 138,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 827
+    },
+    {
+      "day": 70,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.545,0.348",
+      "saved_memory_count": 139,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "repair_ring",
+      "tick_id": 828
+    },
+    {
+      "day": 70,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.500,0.500",
+      "saved_memory_count": 140,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 839
+    },
+    {
+      "day": 71,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.455,0.386",
+      "saved_memory_count": 141,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "repair_ring",
+      "tick_id": 840
+    },
+    {
+      "day": 71,
+      "localstorage_key": "ssrm.v38.world.orchard",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.590,0.500",
+      "saved_memory_count": 142,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "orchard",
+      "tick_id": 851
+    },
+    {
+      "day": 72,
+      "localstorage_key": "ssrm.v38.world.riverbend",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.545,0.538",
+      "saved_memory_count": 143,
+      "saved_relationship_state": "{\"access\": 0.96, \"respect\": 0.96, \"trust\": 0.96}",
+      "settlement_id": "riverbend",
+      "tick_id": 852
+    },
+    {
+      "day": 72,
+      "localstorage_key": "ssrm.v38.world.archive",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.500,0.500",
+      "saved_memory_count": 144,
+      "saved_relationship_state": "{\"access\": 0.935, \"respect\": 0.915, \"trust\": 0.925}",
+      "settlement_id": "archive",
+      "tick_id": 860
+    },
+    {
+      "day": 72,
+      "localstorage_key": "ssrm.v38.world.repair_ring",
+      "reload_probe": true,
+      "replay_exportable": true,
+      "restore_integrity": true,
+      "saved_avatar_position": "0.500,0.500",
+      "saved_memory_count": 144,
+      "saved_relationship_state": "{\"access\": 0.94, \"respect\": 0.92, \"trust\": 0.93}",
+      "settlement_id": "repair_ring",
+      "tick_id": 863
+    }
+  ],
+  "results": {
+    "ablations": {
+      "no_culture_memory_reference": 0.792296,
+      "no_dialect_conditioning": 0.780296,
+      "no_persistent_consequence": 0.756296,
+      "no_playable_avatar_entry": 0.747296,
+      "no_playable_movement": 0.771296,
+      "no_reload_persistence": 0.808296,
+      "no_resident_inheritance": 0.763296
+    },
+    "artifacts": {
+      "avatar_entry_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_avatar_entry.csv",
+      "browser_ticks_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_browser_ticks.csv",
+      "culture_technology_binding_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_culture_technology_binding.csv",
+      "dialect_conditioned_conversation_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_dialect_conditioned_conversation.csv",
+      "html": "/Volumes/T7/Users-main/Documents/consciousness/visualizations/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge.html",
+      "persistent_post_entry_state_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_persistent_post_entry_state.csv",
+      "playable_avatar_movement_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_playable_avatar_movement.csv",
+      "post_entry_consequences_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_post_entry_consequences.csv",
+      "report": "/Volumes/T7/Users-main/Documents/consciousness/docs/278_ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_report.md",
+      "resident_inheritance_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_resident_inheritance.csv",
+      "results_json": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_results.json",
+      "summary_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_summary.csv",
+      "verdict_csv": "/Volumes/T7/Users-main/Documents/consciousness/artifacts/ssrm_3d_browser_world_v38_playable_avatar_entry_matured_settlement_dialect_consequence_bridge_verdict.csv"
+    },
+    "boundary": "Deterministic browser-local playable avatar-entry scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "counts": {
+      "avatar_entry": 154,
+      "browser_ticks": 864,
+      "culture_technology_binding": 864,
+      "dialect_conditioned_conversation": 864,
+      "persistent_post_entry_state": 161,
+      "playable_avatar_movement": 864,
+      "post_entry_consequences": 864,
+      "resident_inheritance": 864
+    },
+    "html_capability_checks": {
+      "browser_surface_score": 0.972,
+      "button_count": 14,
+      "has_avatar_entry_button": true,
+      "has_boundary_notice": true,
+      "has_consequence_panel": true,
+      "has_culture_panel": true,
+      "has_dialect_panel": true,
+      "has_localstorage": true,
+      "has_resident_talk": true,
+      "has_settlement_map": true,
+      "localstorage_handler_count": 2
+    },
+    "metrics": {
+      "avatar_entry_count": 154.0,
+      "browser_playable_surface": 0.972,
+      "browser_tick_count": 864.0,
+      "browser_world_v38_playable_entry_readiness": 0.929296,
+      "browser_world_v38_surface": 1.0,
+      "culture_binding_count": 864.0,
+      "culture_memory_conversation_reference": 0.9166666666666666,
+      "culture_technology_play_binding": 1.0,
+      "dialect_conditioned_conversation": 1.0,
+      "dialect_conversation_count": 864.0,
+      "enabled_entry_count": 153.0,
+      "html_button_count": 14.0,
+      "html_localstorage_handler_count": 2.0,
+      "matured_world_loaded": 1.0,
+      "mean_playable_avatar_entry_channel_score": 0.970423,
+      "movement_count": 864.0,
+      "persistent_post_entry_consequence": 1.0,
+      "persistent_state_count": 161.0,
+      "play_day_count": 72.0,
+      "playable_avatar_entry_gate": 0.9935064935064936,
+      "playable_avatar_movement_binding": 1.0,
+      "post_entry_consequence_count": 864.0,
+      "post_entry_consequence_not_noise": 0.842,
+      "post_entry_reload_integrity": 1.0,
+      "resident_inheritance_binding": 0.9988425925925926,
+      "resident_inheritance_count": 864.0,
+      "sensory_frequency_flower_binding": 1.0,
+      "source_v37_continuity": 1.0,
+      "technology_conversation_reference": 0.8333333333333334,
+      "weakest_channel_name": "technology_conversation_reference",
+      "weakest_channel_score": 0.833333
+    },
+    "next_gate": "browser world v39 with spatially navigable rooms, object manipulation, resident schedules, body-state consequences from temperature/wetness/pain, and dialect memory that persists across multiple avatar visits",
+    "report": 278,
+    "seed": 20260891,
+    "source_v37_next_gate": "browser world v38 with playable avatar entry into the matured settlement world, resident agents inheriting culture/language/technology strata, dialect-conditioned conversation, and persistent post-entry consequences",
+    "source_v37_verdict": "pass",
+    "verdict": "pass"
+  },
+  "state": {
+    "avatar_position": {
+      "archive": [
+        0.5,
+        0.5
+      ],
+      "orchard": [
+        0.59,
+        0.5
+      ],
+      "repair_ring": [
+        0.5,
+        0.5
+      ],
+      "riverbend": [
+        0.5,
+        0.5
+      ],
+      "roofward": [
+        0.59,
+        0.5
+      ],
+      "signal": [
+        0.5,
+        0.5
+      ]
+    },
+    "boundary": "Deterministic browser-local playable avatar-entry scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+    "matured_generations": 80,
+    "matured_years": 2400,
+    "memory_count": {
+      "archive": 144,
+      "orchard": 144,
+      "repair_ring": 144,
+      "riverbend": 144,
+      "roofward": 144,
+      "signal": 144
+    },
+    "relationship": {
+      "archive:Nia": {
+        "access": 0.935,
+        "respect": 0.915,
+        "trust": 0.925
+      },
+      "archive:Toma": {
+        "access": 0.935,
+        "respect": 0.915,
+        "trust": 0.925
+      },
+      "orchard:Ivo": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "orchard:Mara": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "repair_ring:Juno": {
+        "access": 0.935,
+        "respect": 0.915,
+        "trust": 0.925
+      },
+      "repair_ring:Pax": {
+        "access": 0.94,
+        "respect": 0.92,
+        "trust": 0.93
+      },
+      "riverbend:Ari": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "riverbend:Lio": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "roofward:Fay": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "roofward:Sera": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "signal:Milo": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      },
+      "signal:Ren": {
+        "access": 0.96,
+        "respect": 0.96,
+        "trust": 0.96
+      }
+    },
+    "settlements": [
+      {
+        "biome": "cold wet river terrace",
+        "dialect_id": "riverbend-dialect-8",
+        "flower_node": "node-03",
+        "inherited_need": "dry crossing",
+        "memory_norm": "ask before crossing wet tools",
+        "resident_a": "Ari",
+        "resident_b": "Lio",
+        "ritual_anchor": "plank-listening-avatar waiting myth",
+        "settlement_id": "riverbend",
+        "smell_cue": "cedar resin",
+        "sound_cue": "river slap",
+        "technology_stage": "route engines",
+        "temperature_cue": "cold spray"
+      },
+      {
+        "biome": "warm roof gardens",
+        "dialect_id": "roofward-dialect-8",
+        "flower_node": "node-05",
+        "inherited_need": "herb preservation",
+        "memory_norm": "wait before taking ledgers",
+        "resident_a": "Fay",
+        "resident_b": "Sera",
+        "ritual_anchor": "sun-ledger-trade witness",
+        "settlement_id": "roofward",
+        "smell_cue": "thyme paper",
+        "sound_cue": "hinge ticks",
+        "technology_stage": "civic observatories",
+        "temperature_cue": "warm draft"
+      },
+      {
+        "biome": "cool stone stacks",
+        "dialect_id": "archive-dialect-8",
+        "flower_node": "node-08",
+        "inherited_need": "signal memory",
+        "memory_norm": "ask before touching signal spools",
+        "resident_a": "Nia",
+        "resident_b": "Toma",
+        "ritual_anchor": "spool-naming-boundary asking",
+        "settlement_id": "archive",
+        "smell_cue": "ink linen",
+        "sound_cue": "page flutter",
+        "technology_stage": "memory looms",
+        "temperature_cue": "cool stone"
+      },
+      {
+        "biome": "dusk mast ridge",
+        "dialect_id": "signal-dialect-8",
+        "flower_node": "node-11",
+        "inherited_need": "path visibility",
+        "memory_norm": "light before haste",
+        "resident_a": "Milo",
+        "resident_b": "Ren",
+        "ritual_anchor": "lantern-turning-child naming",
+        "settlement_id": "signal",
+        "smell_cue": "lamp oil",
+        "sound_cue": "static crickets",
+        "technology_stage": "signal lenses",
+        "temperature_cue": "cool dusk"
+      },
+      {
+        "biome": "damp seed fields",
+        "dialect_id": "orchard-dialect-8",
+        "flower_node": "node-01",
+        "inherited_need": "dry seed continuity",
+        "memory_norm": "keep tomorrow dry",
+        "resident_a": "Ivo",
+        "resident_b": "Mara",
+        "ritual_anchor": "satchel-vow-seasonal repair",
+        "settlement_id": "orchard",
+        "smell_cue": "apple soil",
+        "sound_cue": "cart creak",
+        "technology_stage": "water clocks",
+        "temperature_cue": "damp air"
+      },
+      {
+        "biome": "warm metal court",
+        "dialect_id": "repair_ring-dialect-8",
+        "flower_node": "node-09",
+        "inherited_need": "safe repair space",
+        "memory_norm": "give hands room near sparks",
+        "resident_a": "Juno",
+        "resident_b": "Pax",
+        "ritual_anchor": "spark-distance-object blessing",
+        "settlement_id": "repair_ring",
+        "smell_cue": "hot copper",
+        "sound_cue": "bell hum",
+        "technology_stage": "kiln alloys",
+        "temperature_cue": "warm metal"
+      }
+    ]
+  }
+}</script>
+  <script>
+    const DATA = JSON.parse(document.querySelector('#ssrm-data').textContent);
+    const LS_KEY = 'ssrm.v38.playable.world';
+    const SETTLEMENTS = Object.fromEntries(DATA.state.settlements.map(s => [s.settlement_id, s]));
+    function defaultWorld() {
+      const world = { entered:false, selected:'riverbend', avatar:{}, memory:[], relation:{} };
+      for (const settlement of DATA.state.settlements) { world.avatar[settlement.settlement_id] = { x:.5, y:.5 }; world.relation[settlement.settlement_id] = { trust:.56, respect:.58, access:.42 }; }
+      return world;
+    }
+    function loadWorld() { try { return JSON.parse(localStorage.getItem(LS_KEY)) || defaultWorld(); } catch(_err) { return defaultWorld(); } }
+    function saveWorld(world) { localStorage.setItem(LS_KEY, JSON.stringify(world)); }
+    function bootWorld() { if (!localStorage.getItem(LS_KEY)) saveWorld(defaultWorld()); }
+    function enterAvatar() { const w = loadWorld(); w.entered = true; saveWorld(w); document.querySelector('#entry-status').textContent = 'avatar entered matured settlement world'; renderAll(); }
+    function selectSettlement(id) { const w = loadWorld(); w.selected = id; saveWorld(w); renderAll(); }
+    function moveAvatar(id, dx, dy) { const w = loadWorld(); const p = w.avatar[id]; p.x = Math.max(.05, Math.min(.95, p.x + dx)); p.y = Math.max(.05, Math.min(.95, p.y + dy)); w.memory.push({ settlement:id, kind:'move', x:p.x, y:p.y }); saveWorld(w); renderAll(); }
+    function talkResident(id) { const w = loadWorld(); const s = SETTLEMENTS[id]; const line = s.resident_a + ': in ' + s.dialect_id + ', ask through ' + s.memory_norm + '.'; w.memory.push({ settlement:id, kind:'talk', line }); w.relation[id].trust = Math.min(.96, w.relation[id].trust + .02); saveWorld(w); renderAll(); }
+    function leaveConsequence(id, action) { const w = loadWorld(); w.memory.push({ settlement:id, kind:'consequence', action, effect:'next visit begins warmer' }); w.relation[id].respect = Math.min(.96, w.relation[id].respect + .03); saveWorld(w); renderAll(); }
+    function renderAll() { const w = loadWorld(); const selected = SETTLEMENTS[w.selected]; for (const id of Object.keys(SETTLEMENTS)) { const p = w.avatar[id]; document.querySelector('#state-' + id).textContent = 'avatar ' + p.x.toFixed(2) + ',' + p.y.toFixed(2) + ' · trust ' + w.relation[id].trust.toFixed(2); } document.querySelector('#talk-log').textContent = JSON.stringify(w.memory.slice(-12), null, 2); document.querySelector('#dialect-log').textContent = selected.dialect_id + ' · ' + selected.memory_norm; document.querySelector('#culture-log').textContent = selected.ritual_anchor + ' · ' + selected.technology_stage; document.querySelector('#world-json').textContent = JSON.stringify(w, null, 2); }
+    bootWorld(); renderAll();
+  </script>
+</body>
+</html>

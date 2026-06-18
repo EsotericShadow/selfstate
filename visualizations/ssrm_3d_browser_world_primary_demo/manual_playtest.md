@@ -74,7 +74,7 @@ Browser-local packet action:
 
 ## Outside-review checklist
 
-The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, lifecycle preflight status, and exportable combined handoff evidence. Preparing the outside-review handoff automatically prepares and embeds the lifecycle preflight packet so reviewers get one browser-local receipt. Checklist progress stays in browser-local public state under `ssrm_primary_demo_outside_review_checklist`.
+The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, lifecycle preflight status, and exportable combined handoff evidence. Preparing the outside-review handoff automatically prepares and embeds the lifecycle preflight packet so reviewers get one browser-local receipt. The visible combined receipt status row must show shell evidence, reviewed completion, manual notes, defect state, recorder export, and lifecycle preflight packet before download. Checklist progress stays in browser-local public state under `ssrm_primary_demo_outside_review_checklist`.
 
 ## Exit criteria
 

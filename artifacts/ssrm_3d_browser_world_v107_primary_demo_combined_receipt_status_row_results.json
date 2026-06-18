@@ -1,0 +1,149 @@
+{
+  "boundaries": [
+    "browser-local combined receipt status row source verification only",
+    "artifact-backed receipt field status only",
+    "no live hosted URL claim",
+    "no live browser automation claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "criteria": [
+    {
+      "channel": "artifact source",
+      "detail": "Report 346 combined receipt results and contract exist and pass.",
+      "name": "combined_receipt_artifacts_available_and_passing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "artifact source",
+      "detail": "Source combined receipt contract has all six required fields and no lifecycle blocking phase.",
+      "name": "combined_receipt_contract_field_set_complete",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint row",
+      "detail": "Primary launcher exposes a combined receipt status row before handoff action/download controls.",
+      "name": "launcher_has_combined_receipt_status_row",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint row",
+      "detail": "Primary launcher lists shell evidence, reviewed completion, manual notes, defect state, recorder export, and lifecycle preflight packet.",
+      "name": "launcher_lists_all_combined_receipt_fields",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Launcher JS computes combined receipt field status and stores it in payload and preview evidence.",
+      "name": "javascript_computes_combined_receipt_status",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Launcher JS renders ready/blocked and included/missing statuses for each combined receipt field.",
+      "name": "javascript_renders_included_missing_states",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "visible summary",
+      "detail": "Readable handoff summary includes combined receipt readiness and field count.",
+      "name": "readable_summary_mentions_receipt_status",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest documentation requires the visible combined receipt status row before download.",
+      "name": "manual_documents_status_row",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator preserves combined receipt status row HTML and field rows.",
+      "name": "generator_preserves_status_row_html",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator preserves combined receipt status computation, rendering, payload storage, and manual guidance.",
+      "name": "generator_preserves_status_row_behavior",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "status contract",
+      "detail": "Report 347 emits a status-row contract for all six combined receipt fields.",
+      "name": "status_row_contract_is_complete",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner index",
+      "detail": "Experiment runner index includes the Report 347 verifier module.",
+      "name": "experiment_index_includes_status_row_report",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Boundary rejects hosted URL, live E2E, production persistence, autonomous language, consciousness, moral patienthood, complete engine, and finished gameplay claims.",
+      "name": "claim_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "blocking_phase_count": 0,
+    "browser_behavior_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 13,
+    "entrypoint_row_score": 1.0,
+    "field_count": 6,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "source_included_field_count": 6,
+    "status_contract_score": 1.0,
+    "visible_summary_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-347: make the combined receipt status row enforceable by disabling or warning on handoff download when required receipt fields are missing, while preserving a deliberate debug override for incomplete review packets",
+  "prefix": "ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row",
+  "report": 347,
+  "seed": 20270745,
+  "status_row_contract": {
+    "blocking_phase": "none",
+    "boundary": "combined-outside-review-receipt-status-browser-local-only",
+    "field_list": "combinedReceiptFieldList",
+    "fields": {
+      "defects": "Defect state",
+      "lifecyclePreflightPacket": "Lifecycle preflight packet",
+      "manualRecords": "Manual notes",
+      "recorderExport": "Recorder export",
+      "reviewedHandoffCompletion": "Reviewed completion",
+      "shellEvidence": "Shell evidence"
+    },
+    "included_field_count": 6,
+    "payload_status_field": "combinedReceiptStatus",
+    "preview_status_field": "previewCombinedReceiptStatus",
+    "report": 347,
+    "source_combined_receipt_contract": "artifacts/ssrm_3d_browser_world_v106_primary_demo_combined_outside_review_handoff_receipt_combined_receipt_contract.json",
+    "status_row": "combinedReceiptStatusRow",
+    "status_text": "combinedReceiptStatus"
+  },
+  "verdict": "pass"
+}

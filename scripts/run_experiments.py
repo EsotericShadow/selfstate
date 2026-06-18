@@ -4056,6 +4056,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v104_primary_demo_lifecycle_preflight_status_panel",
         "experiments.ssrm_3d_browser_world_v105_primary_demo_lifecycle_preflight_packet_export",
         "experiments.ssrm_3d_browser_world_v106_primary_demo_combined_outside_review_handoff_receipt",
+        "experiments.ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row",
         "--seed",
         "20270732",
     ],

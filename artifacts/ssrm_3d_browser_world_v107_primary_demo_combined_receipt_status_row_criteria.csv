@@ -1,0 +1,14 @@
+name,passed,score,channel,detail
+combined_receipt_artifacts_available_and_passing,True,1.0,artifact source,Report 346 combined receipt results and contract exist and pass.
+combined_receipt_contract_field_set_complete,True,1.0,artifact source,Source combined receipt contract has all six required fields and no lifecycle blocking phase.
+launcher_has_combined_receipt_status_row,True,1.0,entrypoint row,Primary launcher exposes a combined receipt status row before handoff action/download controls.
+launcher_lists_all_combined_receipt_fields,True,1.0,entrypoint row,"Primary launcher lists shell evidence, reviewed completion, manual notes, defect state, recorder export, and lifecycle preflight packet."
+javascript_computes_combined_receipt_status,True,1.0,browser behavior,Launcher JS computes combined receipt field status and stores it in payload and preview evidence.
+javascript_renders_included_missing_states,True,1.0,browser behavior,Launcher JS renders ready/blocked and included/missing statuses for each combined receipt field.
+readable_summary_mentions_receipt_status,True,1.0,visible summary,Readable handoff summary includes combined receipt readiness and field count.
+manual_documents_status_row,True,1.0,manual path,Manual playtest documentation requires the visible combined receipt status row before download.
+generator_preserves_status_row_html,True,1.0,generator durability,v63 generator preserves combined receipt status row HTML and field rows.
+generator_preserves_status_row_behavior,True,1.0,generator durability,"v63 generator preserves combined receipt status computation, rendering, payload storage, and manual guidance."
+status_row_contract_is_complete,True,1.0,status contract,Report 347 emits a status-row contract for all six combined receipt fields.
+experiment_index_includes_status_row_report,True,1.0,runner index,Experiment runner index includes the Report 347 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects hosted URL, live E2E, production persistence, autonomous language, consciousness, moral patienthood, complete engine, and finished gameplay claims."

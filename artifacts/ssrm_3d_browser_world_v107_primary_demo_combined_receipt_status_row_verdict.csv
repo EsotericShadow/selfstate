@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,field_count,next_gate
+347,pass,1.0,6,"post-347: make the combined receipt status row enforceable by disabling or warning on handoff download when required receipt fields are missing, while preserving a deliberate debug override for incomplete review packets"

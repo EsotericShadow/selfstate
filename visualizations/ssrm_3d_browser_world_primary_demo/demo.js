@@ -202,6 +202,7 @@ function exportOutsideReviewHandoff() {
     launchUrl: currentLauncherUrl(),
     boundary: 'outside-review-handoff-public-local-only'
   };
+  payload.combinedReceiptStatus = combinedReceiptFieldStatus(payload);
   const text = JSON.stringify(payload, null, 2);
   localStorage.setItem(OUTSIDE_REVIEW_EXPORT_KEY, text);
   let link = document.getElementById('preparedOutsideReviewExport');
@@ -315,6 +316,46 @@ function handoffPayloadFreshnessState(payload) {
   };
 }
 
+function combinedReceiptFieldStatus(payload) {
+  const fields = {
+    shellEvidence: Boolean(payload && payload.shellEvidence),
+    reviewedHandoffCompletion: Boolean(payload && payload.reviewedHandoffCompletion),
+    manualRecords: Boolean(payload && Array.isArray(payload.manualRecords)),
+    defects: Boolean(payload && Array.isArray(payload.defects)),
+    recorderExport: Boolean(payload && payload.recorderExport),
+    lifecyclePreflightPacket: Boolean(payload && payload.lifecyclePreflightPacket)
+  };
+  const missing = Object.entries(fields).filter(([, included]) => !included).map(([field]) => field);
+  return {
+    reportIntroduced: 347,
+    ready: missing.length === 0,
+    fields,
+    missing,
+    includedCount: Object.values(fields).filter(Boolean).length,
+    totalCount: Object.keys(fields).length,
+    blockingPhase: (payload && payload.lifecyclePreflightPacket && payload.lifecyclePreflightPacket.blockingPhase) || 'unknown',
+    boundary: 'combined-outside-review-receipt-status-browser-local-only'
+  };
+}
+
+function renderCombinedReceiptStatus(payload, message) {
+  const receiptStatus = combinedReceiptFieldStatus(payload);
+  const row = document.getElementById('combinedReceiptStatusRow');
+  if (row) row.dataset.combinedReceiptReady = receiptStatus.ready ? 'true' : 'false';
+  const status = document.getElementById('combinedReceiptStatus');
+  if (status) {
+    status.textContent = message || (payload ? `Combined receipt status: ${receiptStatus.ready ? 'ready' : 'blocked'}; ${receiptStatus.includedCount}/${receiptStatus.totalCount} fields included; missing ${receiptStatus.missing.length ? receiptStatus.missing.join(', ') : 'none'}; lifecycle blocking phase ${receiptStatus.blockingPhase}.` : 'Combined receipt status: not prepared yet.');
+  }
+  document.querySelectorAll('[data-combined-receipt-field]').forEach(item => {
+    const field = item.dataset.combinedReceiptField;
+    const included = Boolean(receiptStatus.fields[field]);
+    item.dataset.combinedReceiptStatus = payload ? (included ? 'included' : 'missing') : 'pending';
+    const label = item.querySelector('strong')?.textContent || field;
+    item.innerHTML = `<strong>${label}</strong>: ${payload ? (included ? 'included' : 'missing') : 'pending'}`;
+  });
+  return receiptStatus;
+}
+
 function readableHandoffSummary(payload, freshness) {
   if (!payload) return 'No outside-review handoff export prepared yet.';
   const checklistItems = ((payload.checklistState || {}).items) || {};
@@ -331,7 +372,9 @@ function readableHandoffSummary(payload, freshness) {
   const preflightPacket = payload.lifecyclePreflightPacket || {};
   const preflightPhaseCount = preflightPacket.phaseCount || Object.keys(preflightPacket.phaseStatuses || {}).length;
   const preflightText = payload.lifecyclePreflightPacketPrepared ? `lifecycle preflight blocking phase ${preflightPacket.blockingPhase || 'unknown'} / ${preflightPhaseCount} phase(s)` : 'lifecycle preflight missing';
-  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; ${preflightText}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download combined outside-review handoff JSON.`;
+  const receiptStatus = payload.combinedReceiptStatus || combinedReceiptFieldStatus(payload);
+  const receiptTextStatus = `${receiptStatus.ready ? 'combined receipt ready' : 'combined receipt blocked'} ${receiptStatus.includedCount}/${receiptStatus.totalCount} fields`;
+  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; ${preflightText}; ${receiptTextStatus}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download combined outside-review handoff JSON.`;
 }
 
 function preparedHandoffHref(payload) {
@@ -385,8 +428,9 @@ function renderOutsideReviewHandoffPreview(message) {
     }
   }
   const out = document.getElementById('outsideReviewHandoffOut');
+  const combinedReceiptStatus = renderCombinedReceiptStatus(payload);
   if (out) {
-    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness) }, null, 2) : 'No outside-review handoff export prepared yet.';
+    out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness), previewCombinedReceiptStatus: combinedReceiptStatus }, null, 2) : 'No outside-review handoff export prepared yet.';
   }
   renderOutsideReviewHandoffActions(payload, freshness);
   return payload;

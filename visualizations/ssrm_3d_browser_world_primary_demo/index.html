@@ -44,6 +44,17 @@
       <p id="outsideReviewEvidenceStatus">No shell evidence refreshed yet.</p>
       <pre id="outsideReviewEvidenceOut"></pre>
       <p id="outsideReviewHandoffStatus">No outside-review handoff export prepared yet.</p>
+      <div class="combined-receipt-status" id="combinedReceiptStatusRow" data-combined-receipt-ready="false">
+        <p id="combinedReceiptStatus">Combined receipt status: not prepared yet.</p>
+        <ul id="combinedReceiptFieldList" aria-label="Combined outside-review receipt included fields">
+        <li data-combined-receipt-field="shellEvidence" data-combined-receipt-status="pending"><strong>Shell evidence</strong>: pending</li>
+        <li data-combined-receipt-field="reviewedHandoffCompletion" data-combined-receipt-status="pending"><strong>Reviewed completion</strong>: pending</li>
+        <li data-combined-receipt-field="manualRecords" data-combined-receipt-status="pending"><strong>Manual notes</strong>: pending</li>
+        <li data-combined-receipt-field="defects" data-combined-receipt-status="pending"><strong>Defect state</strong>: pending</li>
+        <li data-combined-receipt-field="recorderExport" data-combined-receipt-status="pending"><strong>Recorder export</strong>: pending</li>
+        <li data-combined-receipt-field="lifecyclePreflightPacket" data-combined-receipt-status="pending"><strong>Lifecycle preflight packet</strong>: pending</li>
+        </ul>
+      </div>
       <div id="outsideReviewHandoffActions" class="actions compact" aria-label="Prepared handoff actions"></div>
       <pre id="outsideReviewHandoffOut"></pre>
     </section>

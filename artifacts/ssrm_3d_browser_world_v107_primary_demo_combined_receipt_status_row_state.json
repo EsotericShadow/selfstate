@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "blocking_phase_count": 0,
+    "browser_behavior_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 13,
+    "entrypoint_row_score": 1.0,
+    "field_count": 6,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "source_included_field_count": 6,
+    "status_contract_score": 1.0,
+    "visible_summary_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-347: make the combined receipt status row enforceable by disabling or warning on handoff download when required receipt fields are missing, while preserving a deliberate debug override for incomplete review packets",
+  "report": 347,
+  "seed": 20270745,
+  "status_row_contract": {
+    "blocking_phase": "none",
+    "boundary": "combined-outside-review-receipt-status-browser-local-only",
+    "field_list": "combinedReceiptFieldList",
+    "fields": {
+      "defects": "Defect state",
+      "lifecyclePreflightPacket": "Lifecycle preflight packet",
+      "manualRecords": "Manual notes",
+      "recorderExport": "Recorder export",
+      "reviewedHandoffCompletion": "Reviewed completion",
+      "shellEvidence": "Shell evidence"
+    },
+    "included_field_count": 6,
+    "payload_status_field": "combinedReceiptStatus",
+    "preview_status_field": "previewCombinedReceiptStatus",
+    "report": 347,
+    "source_combined_receipt_contract": "artifacts/ssrm_3d_browser_world_v106_primary_demo_combined_outside_review_handoff_receipt_combined_receipt_contract.json",
+    "status_row": "combinedReceiptStatusRow",
+    "status_text": "combinedReceiptStatus"
+  },
+  "verdict": "pass"
+}

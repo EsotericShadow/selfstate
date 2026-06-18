@@ -4,6 +4,7 @@ const REPLAY_KEY = 'ssrm_v61_app_shell_replay';
 const QA_KEY = 'ssrm_v61_app_shell_qa_results';
 const EXPORT_KEY = 'ssrm_v61_app_shell_export';
 const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
+const CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 
 const residents = {
   Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
@@ -28,7 +29,7 @@ const playtestTasks = [
 ];
 
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -37,7 +38,7 @@ const qaManifest = {
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY].forEach(key => localStorage.removeItem(key));
 }
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
@@ -89,11 +90,12 @@ function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1,
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
 function waitOffscreen() { Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 })); return log('waitOffscreen', { offscreenLife: true }); }
 function repairTrust() { mutateResident(world.selected, { trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }); return log('repairTrust', { nonMagic: true }); }
-function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
+function saveWorld() { localStorage.setItem(SAVE_SNAPSHOT_KEY, JSON.stringify(world)); recordCheckpoint('manual save'); return log('saveWorld', { saved: true, snapshotKey: SAVE_SNAPSHOT_KEY }); }
 function restoreWorld() {
   const saved = localStorage.getItem(SAVE_SNAPSHOT_KEY);
   if (!saved) return log('restoreWorld', { restored: false, reason: 'no saved snapshot' });
   world = JSON.parse(saved);
+  recordCheckpoint('manual restore');
   return log('restoreWorld', { restored: true, snapshotKey: SAVE_SNAPSHOT_KEY });
 }
 function toggleAudit() { world.audit = !world.audit; return log('toggleAudit', { audit: world.audit }); }
@@ -111,6 +113,7 @@ function exportReplay() {
     document.querySelector('.side-panel').appendChild(link);
   }
   link.href = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  recordCheckpoint('replay export');
   return log('exportReplay', { rows: world.replay.length, prepared: true, bytes: payload.length });
 }
 function runStateBoundaryAudit() {
@@ -150,6 +153,7 @@ function runSaveRestoreSmoke() {
   const result = { hook: 'runSaveRestoreSmoke', pass: JSON.stringify(restored) === JSON.stringify(before), room: world.avatar.room, rollbackTested: true };
   world.lastQA = [result];
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
+  recordCheckpoint('save/restore smoke');
   return log('runSaveRestoreSmoke', result);
 }
 function runAuditAfterRollbackCheck() {
@@ -166,6 +170,7 @@ function runAuditAfterRollbackCheck() {
   };
   world.lastQA = [result];
   localStorage.setItem(QA_KEY, JSON.stringify(world.lastQA));
+  recordCheckpoint('audit after rollback');
   return log('runAuditAfterRollbackCheck', result);
 }
 function runPlaytestChecklist() {
@@ -194,6 +199,72 @@ function bindControls() {
     log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room });
   });
 }
+function readCheckpoints() {
+  try {
+    const rows = JSON.parse(localStorage.getItem(CHECKPOINT_KEY) || '[]');
+    return Array.isArray(rows) ? rows : [];
+  } catch (_error) {
+    return [];
+  }
+}
+function recordCheckpoint(label) {
+  const resident = currentResident();
+  const rows = readCheckpoints();
+  rows.push({
+    label,
+    tick: world.tick,
+    room: world.avatar.room,
+    selected: world.selected,
+    schedule: resident.schedule,
+    progress: Number(resident.progress.toFixed(3)),
+    debt: resident.debt,
+    trust: Number(resident.trust.toFixed(3)),
+    replayRows: world.replay.length
+  });
+  const trimmed = rows.slice(-18);
+  localStorage.setItem(CHECKPOINT_KEY, JSON.stringify(trimmed));
+  return trimmed;
+}
+function describeReplayRow(row) {
+  const payload = row.payload || {};
+  const resident = row.selected || world.selected;
+  const prefix = `t${row.tick} ${row.room || 'unknown room'} / ${resident}`;
+  const descriptions = {
+    enterWorld: 'avatar entered the world boundary-visible',
+    moveNorth: `moved north to y=${payload.y}`,
+    moveSouth: `moved south to y=${payload.y}`,
+    moveWest: `moved west to ${payload.room || row.room}`,
+    moveEast: `moved east to ${payload.room || row.room}`,
+    talkBounded: `bounded phrase "${payload.phrase}"; noLLM=${payload.noLLM === true}`,
+    askSchedule: `asked schedule: ${payload.schedule}`,
+    offerHelp: `helped with work; care left=${payload.care}`,
+    borrowTool: 'borrowed tool; debt increases',
+    returnTool: 'returned tool; trust repairs partially',
+    waitOffscreen: 'waited offscreen; resident progress advanced',
+    repairTrust: 'repaired trust non-magically',
+    saveWorld: 'saved local snapshot',
+    restoreWorld: `restored local snapshot=${payload.restored === true}`,
+    runPlaytestChecklist: `ran checklist: tasks=${payload.tasks}`,
+    runStateBoundaryAudit: `state boundary audit pass=${payload.pass === true}`,
+    runSaveRestoreSmoke: `save/restore smoke restored=${payload.restored === true}`,
+    runAuditAfterRollbackCheck: `rollback audit pass=${payload.pass === true} smoke=${payload.smokePass === true} audit=${payload.auditPass === true}`,
+    runAllQAHooks: `ran all QA hooks count=${payload.hooks}`,
+    exportReplay: `prepared replay export rows=${payload.rows} bytes=${payload.bytes}`,
+    toggleAudit: `audit overlay=${payload.audit === true}`,
+    selectResident: `selected resident ${payload.selected}`,
+    canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`
+  };
+  return `${prefix}: ${descriptions[row.event] || row.event}`;
+}
+function formatSessionTranscript() {
+  const recent = world.replay.slice(-16).map(describeReplayRow);
+  return recent.length ? recent.join('\n') : 'No public replay rows yet. Use the controls to create a readable session transcript.';
+}
+function formatCheckpointLog() {
+  const rows = readCheckpoints();
+  if (!rows.length) return 'No checkpoints yet. Save, restore, run rollback audit, or export replay to create one.';
+  return rows.slice(-12).map(row => `${row.label} @ t${row.tick} | ${row.room} | ${row.selected} | debt ${row.debt} trust ${row.trust} | progress ${row.progress} | replay ${row.replayRows}`).join('\n');
+}
 function formatQAResults() {
   if (!world.lastQA.length) return 'not run';
   const total = world.lastQA.length;
@@ -220,6 +291,8 @@ function render() {
   document.getElementById('replayOut').textContent = String(world.replay.length) + ' rows';
   document.getElementById('qaOut').textContent = formatQAResults();
   document.getElementById('traceOut').textContent = JSON.stringify({ latest: world.replay[world.replay.length - 1] || null, world }, null, 2);
+  document.getElementById('sessionTranscriptOut').textContent = formatSessionTranscript();
+  document.getElementById('checkpointOut').textContent = formatCheckpointLog();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();

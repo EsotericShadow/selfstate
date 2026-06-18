@@ -6,6 +6,7 @@
 |---|---|---|
 | Primary browser-world playtests need inspectable defect continuity | Report 308 adds all/open/resolved and severity filters over the same browser-local defect ledger used by the primary demo recorder. | This is reviewer workflow hardening, not a new agent capability or evidence of consciousness. |
 | Primary demo full manual pass needs visible QA evidence | Report 309 records a full browser pass, captures opaque QA output as MP-09/MP-10 defects, fixes the maintained shell QA rendering, and verifies the defects resolved. | Browser-local deterministic evidence only; it does not prove finished gameplay or subjective agent interiority. |
+| Primary demo session transcript needs readable debug continuity | Report 310 adds transcript and checkpoint panels derived from public replay/save/restore state and verifies them in browser. | Readability hardening only; it does not create new agent autonomy, private experience, or production persistence. |
 
 This file links the research claims to current evidence, counterevidence, and next falsifiers.
 

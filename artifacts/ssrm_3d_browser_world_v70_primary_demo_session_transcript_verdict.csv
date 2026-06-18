@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_workflow_score,next_gate
+310,pass,1.0,1.0,1.0,"post-310: use the readable transcript/checkpoint view during another primary-demo pass; if reviewers still need raw JSON to understand resident continuity, add a compact resident-facing history lane rather than another isolated report organ"

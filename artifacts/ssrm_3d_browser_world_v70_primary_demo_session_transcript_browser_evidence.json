@@ -1,0 +1,66 @@
+{
+  "report": 310,
+  "url_start": "http://localhost:8769/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "clean_origin_strategy": "localhost:8769 clean origin after checkpoint insertion",
+  "workflow_pass": true,
+  "transcript_pass": true,
+  "checkpoint_pass": true,
+  "console_errors": 0,
+  "initial_panels": {
+    "checkpoints": "No checkpoints yet. Save, restore, run rollback audit, or export replay to create one.",
+    "exportHrefLength": 0,
+    "label": "initial",
+    "qa": "not run",
+    "replay": "0 rows",
+    "room": "arrival court / not entered",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "transcript": "No public replay rows yet. Use the controls to create a readable session transcript.",
+    "url": "http://localhost:8769/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  },
+  "after_actions": {
+    "checkpoints": "No checkpoints yet. Save, restore, run rollback audit, or export replay to create one.",
+    "exportHrefLength": 0,
+    "label": "after actions",
+    "qa": "not run",
+    "replay": "7 rows",
+    "room": "arrival court / entered",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "transcript": "t0 arrival court / Ari: avatar entered the world boundary-visible\nt1 arrival court / Ari: moved north to y=226\nt2 arrival court / Ari: moved east to arrival court\nt3 arrival court / Ari: bounded phrase \"greet\"; noLLM=true\nt4 arrival court / Ari: asked schedule: repair awning\nt5 arrival court / Ari: borrowed tool; debt increases\nt6 arrival court / Ari: returned tool; trust repairs partially",
+    "url": "http://localhost:8769/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  },
+  "final_panels": {
+    "checkpoints": "manual save @ t7 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 7\nmanual restore @ t7 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 7\nsave/restore smoke @ t8 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 8\nsave/restore smoke @ t9 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 9\naudit after rollback @ t11 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 11\nreplay export @ t12 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 12",
+    "exportHrefLength": 63,
+    "label": "final",
+    "qa": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=9,10",
+    "replay": "13 rows",
+    "room": "arrival court / entered",
+    "traceHasLlmTranscript": false,
+    "traceHasPrivateWorkspace": false,
+    "traceHasSubjectiveFeeling": false,
+    "transcript": "t0 arrival court / Ari: avatar entered the world boundary-visible\nt1 arrival court / Ari: moved north to y=226\nt2 arrival court / Ari: moved east to arrival court\nt3 arrival court / Ari: bounded phrase \"greet\"; noLLM=true\nt4 arrival court / Ari: asked schedule: repair awning\nt5 arrival court / Ari: borrowed tool; debt increases\nt6 arrival court / Ari: returned tool; trust repairs partially\nt7 arrival court / Ari: restored local snapshot=true\nt8 arrival court / Ari: save/restore smoke restored=false\nt9 arrival court / Ari: save/restore smoke restored=false\nt10 arrival court / Ari: state boundary audit pass=true\nt11 arrival court / Ari: rollback audit pass=true smoke=true audit=true\nt12 arrival court / Ari: prepared replay export rows=12 bytes=2750",
+    "url": "http://localhost:8769/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+  },
+  "raw_console_error_count": 1,
+  "console_error_details": [],
+  "transcript_evidence": {
+    "containsEnter": true,
+    "containsMove": true,
+    "containsTalk": true,
+    "containsSchedule": true,
+    "containsSaveRestore": true,
+    "containsExport": true
+  },
+  "checkpoint_evidence": {
+    "containsManualSave": true,
+    "containsManualRestore": true,
+    "containsSmoke": true,
+    "containsRollbackAudit": true,
+    "containsExport": true
+  },
+  "boundary_pass": true
+}

@@ -6,6 +6,8 @@ Report 308 adds reviewer-facing filters to the primary demo manual defect ledger
 
 Report 309 uses that filtered ledger during a full primary-demo manual pass, finds an opaque QA-output defect in the maintained shell, and repairs the visible QA panel so checklist and rollback-audit hooks expose all-pass and per-field evidence. This remains browser-local consolidation, not a new agent capability claim.
 
+Report 310 hardens the same maintained shell with reviewer-readable session transcript and checkpoint panels derived from public replay/save/restore state. This reduces reliance on raw JSON during reviews while preserving the no-private-workspace and no-consciousness-claim boundaries.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

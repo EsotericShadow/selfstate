@@ -1,0 +1,165 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_criteria.csv",
+    "report": "docs/310_ssrm_3d_browser_world_v70_primary_demo_session_transcript_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local session-transcript and checkpoint hardening only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim.",
+  "browser_evidence": {
+    "after_actions": {
+      "checkpoints": "No checkpoints yet. Save, restore, run rollback audit, or export replay to create one.",
+      "exportHrefLength": 0,
+      "label": "after actions",
+      "qa": "not run",
+      "replay": "7 rows",
+      "room": "arrival court / entered",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "transcript": "t0 arrival court / Ari: avatar entered the world boundary-visible\nt1 arrival court / Ari: moved north to y=226\nt2 arrival court / Ari: moved east to arrival court\nt3 arrival court / Ari: bounded phrase \"greet\"; noLLM=true\nt4 arrival court / Ari: asked schedule: repair awning\nt5 arrival court / Ari: borrowed tool; debt increases\nt6 arrival court / Ari: returned tool; trust repairs partially",
+      "url": "http://localhost:8769/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "boundary_pass": true,
+    "checkpoint_evidence": {
+      "containsExport": true,
+      "containsManualRestore": true,
+      "containsManualSave": true,
+      "containsRollbackAudit": true,
+      "containsSmoke": true
+    },
+    "checkpoint_pass": true,
+    "clean_origin_strategy": "localhost:8769 clean origin after checkpoint insertion",
+    "console_error_details": [],
+    "console_errors": 0,
+    "final_panels": {
+      "checkpoints": "manual save @ t7 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 7\nmanual restore @ t7 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 7\nsave/restore smoke @ t8 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 8\nsave/restore smoke @ t9 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 9\naudit after rollback @ t11 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 11\nreplay export @ t12 | arrival court | Ari | debt 1 trust 0.596 | progress 0.36 | replay 12",
+      "exportHrefLength": 63,
+      "label": "final",
+      "qa": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=9,10",
+      "replay": "13 rows",
+      "room": "arrival court / entered",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "transcript": "t0 arrival court / Ari: avatar entered the world boundary-visible\nt1 arrival court / Ari: moved north to y=226\nt2 arrival court / Ari: moved east to arrival court\nt3 arrival court / Ari: bounded phrase \"greet\"; noLLM=true\nt4 arrival court / Ari: asked schedule: repair awning\nt5 arrival court / Ari: borrowed tool; debt increases\nt6 arrival court / Ari: returned tool; trust repairs partially\nt7 arrival court / Ari: restored local snapshot=true\nt8 arrival court / Ari: save/restore smoke restored=false\nt9 arrival court / Ari: save/restore smoke restored=false\nt10 arrival court / Ari: state boundary audit pass=true\nt11 arrival court / Ari: rollback audit pass=true smoke=true audit=true\nt12 arrival court / Ari: prepared replay export rows=12 bytes=2750",
+      "url": "http://localhost:8769/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "initial_panels": {
+      "checkpoints": "No checkpoints yet. Save, restore, run rollback audit, or export replay to create one.",
+      "exportHrefLength": 0,
+      "label": "initial",
+      "qa": "not run",
+      "replay": "0 rows",
+      "room": "arrival court / not entered",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "transcript": "No public replay rows yet. Use the controls to create a readable session transcript.",
+      "url": "http://localhost:8769/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "raw_console_error_count": 1,
+    "report": 310,
+    "transcript_evidence": {
+      "containsEnter": true,
+      "containsExport": true,
+      "containsMove": true,
+      "containsSaveRestore": true,
+      "containsSchedule": true,
+      "containsTalk": true
+    },
+    "transcript_pass": true,
+    "url_start": "http://localhost:8769/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "workflow_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v70_primary_demo_session_transcript_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "transcript_panel_present",
+      "evidence": "maintained shell exposes a visible session transcript panel",
+      "failure_if_false": "reviewers would still need raw trace JSON for action order",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "checkpoint_panel_present",
+      "evidence": "maintained shell exposes a visible checkpoint panel",
+      "failure_if_false": "save/restore checkpoints would remain hidden in raw storage",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generated_source_of_truth",
+      "evidence": "transcript/checkpoint logic lives in the v61 generator, not a hand-edited generated file",
+      "failure_if_false": "regeneration would erase the UI hardening",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "public_replay_derived",
+      "evidence": "session transcript is derived from public replay rows rather than private state",
+      "failure_if_false": "debug view could become a parallel or private state surface",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "checkpoint_storage_bounded",
+      "evidence": "checkpoint log uses a bounded browser-local public storage key",
+      "failure_if_false": "checkpoint evidence could grow unbounded or lack persistence across resume",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "private_boundary_preserved",
+      "evidence": "existing state-boundary audit still forbids private/LLM leakage markers",
+      "failure_if_false": "readability hardening might weaken the no-overclaim audit boundary",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_transcript_workflow",
+      "evidence": "browser workflow pass recorded as True",
+      "failure_if_false": "source checks alone would not prove the readable panels update in the browser",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_transcript_content",
+      "evidence": "{'containsEnter': True, 'containsMove': True, 'containsTalk': True, 'containsSchedule': True, 'containsSaveRestore': True, 'containsExport': True}",
+      "failure_if_false": "transcript panel would not show movement/dialogue/save/export in readable form",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_checkpoint_content",
+      "evidence": "{'containsManualSave': True, 'containsManualRestore': True, 'containsSmoke': True, 'containsRollbackAudit': True, 'containsExport': True}",
+      "failure_if_false": "checkpoint panel would not show save/restore/export moments",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "browser workflow produced runtime console errors",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_workflow_score": 1.0,
+    "checkpoint_panel_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "readiness": 1.0,
+    "transcript_panel_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-310: use the readable transcript/checkpoint view during another primary-demo pass; if reviewers still need raw JSON to understand resident continuity, add a compact resident-facing history lane rather than another isolated report organ",
+  "prefix": "ssrm_3d_browser_world_v70_primary_demo_session_transcript",
+  "report": 310,
+  "seed": 20270708,
+  "verdict": "pass"
+}

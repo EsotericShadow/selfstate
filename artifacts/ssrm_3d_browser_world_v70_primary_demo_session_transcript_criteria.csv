@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+transcript_panel_present,True,1.0,maintained shell exposes a visible session transcript panel,reviewers would still need raw trace JSON for action order
+checkpoint_panel_present,True,1.0,maintained shell exposes a visible checkpoint panel,save/restore checkpoints would remain hidden in raw storage
+generated_source_of_truth,True,1.0,"transcript/checkpoint logic lives in the v61 generator, not a hand-edited generated file",regeneration would erase the UI hardening
+public_replay_derived,True,1.0,session transcript is derived from public replay rows rather than private state,debug view could become a parallel or private state surface
+checkpoint_storage_bounded,True,1.0,checkpoint log uses a bounded browser-local public storage key,checkpoint evidence could grow unbounded or lack persistence across resume
+private_boundary_preserved,True,1.0,existing state-boundary audit still forbids private/LLM leakage markers,readability hardening might weaken the no-overclaim audit boundary
+browser_transcript_workflow,True,1.0,browser workflow pass recorded as True,source checks alone would not prove the readable panels update in the browser
+browser_transcript_content,True,1.0,"{'containsEnter': True, 'containsMove': True, 'containsTalk': True, 'containsSchedule': True, 'containsSaveRestore': True, 'containsExport': True}",transcript panel would not show movement/dialogue/save/export in readable form
+browser_checkpoint_content,True,1.0,"{'containsManualSave': True, 'containsManualRestore': True, 'containsSmoke': True, 'containsRollbackAudit': True, 'containsExport': True}",checkpoint panel would not show save/restore/export moments
+console_clean,True,1.0,browser console error count was 0,browser workflow produced runtime console errors

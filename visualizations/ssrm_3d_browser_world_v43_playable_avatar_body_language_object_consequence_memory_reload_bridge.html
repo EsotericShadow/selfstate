@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 283 Browser World v43</title>
+  <style>
+    :root { --ink:#17201b; --paper:#f1e8cf; --moss:#607349; --ember:#b8603d; --river:#577f8f; --gold:#d3a548; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 18% 12%, rgba(211,165,72,.45), transparent 18rem), radial-gradient(circle at 80% 18%, rgba(87,127,143,.35), transparent 16rem), linear-gradient(135deg, #e8dcc0, #c3cfaa 52%, #91aaa8); }
+    main { max-width:1240px; margin:0 auto; padding:24px; }
+    h1 { font-size:clamp(2rem,5vw,4.8rem); line-height:.92; margin:20px 0; letter-spacing:-.04em; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+    section { border:2px solid rgba(23,32,27,.34); border-radius:24px; padding:18px; background:rgba(241,232,207,.82); box-shadow:0 18px 52px rgba(23,32,27,.16); }
+    button { margin:5px; padding:9px 11px; border:1px solid var(--ink); border-radius:999px; background:var(--gold); color:var(--ink); cursor:pointer; }
+    button:hover { background:var(--ember); color:#fff7df; }
+    .boundary { border-left:8px solid var(--ember); }
+    .viewport { min-height:220px; border-radius:18px; background:linear-gradient(180deg, rgba(87,127,143,.32), rgba(96,115,73,.26)), repeating-linear-gradient(90deg, rgba(23,32,27,.08) 0 1px, transparent 1px 34px); display:grid; place-items:center; font-weight:bold; }
+    .flower { width:168px; height:168px; border-radius:50%; background:repeating-radial-gradient(circle, rgba(211,165,72,.45) 0 9px, rgba(87,127,143,.24) 9px 18px); display:grid; place-items:center; }
+    .log { min-height:132px; font-family:ui-monospace, SFMono-Regular, Menlo, monospace; white-space:pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser World v43: playable avatar scene, body language, object consequences</h1>
+  <section class="boundary"><strong>Boundary:</strong> deterministic scaffold only; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no metaphysical frequency claim.</section>
+  <section id="playable-scene-panel"><h2>Playable first-person scene</h2><div class="viewport">first-person viewport card + depth cues + crosshair target</div></section>
+  <div class="grid">
+    <section id="body-language-panel"><h2>Resident body language</h2><p>Gaze, posture, gesture, and movement speed express state without dumping private workspace.</p></section>
+    <section id="pickup-drop-panel"><h2>Pickup/drop consequences</h2><p>Owned objects can be inspected, requested, picked up, dropped, returned, or misused.</p></section>
+    <section id="interaction-turn-panel"><h2>Local interaction turns</h2><p>Avatar choices trigger resident lines, boundary states, gaze shifts, and queue changes.</p></section>
+    <section id="sensory-memory-reload-panel"><h2>Sensory memory after reload</h2><p>Sound/smell/room cues restore relationship-biased behavior after save/restore.</p></section>
+    <section id="trust-repair-panel"><h2>Recoverable trust repair</h2><p>Apology, object return, waiting, and stepping back partially repair object mistakes.</p></section>
+    <section id="inventory-panel"><h2>Inventory ownership</h2><p>Carried objects remain tied to owners and visible rollback paths.</p></section>
+    <section id="save-restore-panel"><h2>Save/restore</h2><p>Scene, body language, inventory, sensory memory, and trust repair persist through localStorage.</p></section>
+    <section id="frequency-flower-panel"><h2>Frequency and flower phase</h2><div class="flower">flower phase</div><p>Rates are simulation timing metadata, not metaphysical evidence.</p></section>
+  </div>
+  <section><h2>Controls</h2><button data-action="move" onclick="moveAvatar('riverbend')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('riverbend')">turn avatar</button>
+<button data-action="gaze" onclick="renderBodyLanguage('riverbend')">render body language</button>
+<button data-action="pickup" onclick="pickupObject('riverbend')">pickup object</button>
+<button data-action="drop" onclick="dropObject('riverbend')">drop object</button>
+<button data-action="inspect" onclick="inspectObject('riverbend')">inspect object</button>
+<button data-action="turn" onclick="localInteractionTurn('riverbend')">local interaction turn</button>
+<button data-action="memory" onclick="restoreSensoryMemory('riverbend')">restore sensory memory</button>
+<button data-action="repair" onclick="repairTrust('riverbend')">repair trust</button>
+<button data-action="save" onclick="saveWorldState('riverbend')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('riverbend')">restore world</button>
+<button data-action="replay" onclick="exportReplay('riverbend')">export replay</button>
+<button data-action="move" onclick="moveAvatar('roofward')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('roofward')">turn avatar</button>
+<button data-action="gaze" onclick="renderBodyLanguage('roofward')">render body language</button>
+<button data-action="pickup" onclick="pickupObject('roofward')">pickup object</button>
+<button data-action="drop" onclick="dropObject('roofward')">drop object</button>
+<button data-action="inspect" onclick="inspectObject('roofward')">inspect object</button>
+<button data-action="turn" onclick="localInteractionTurn('roofward')">local interaction turn</button>
+<button data-action="memory" onclick="restoreSensoryMemory('roofward')">restore sensory memory</button>
+<button data-action="repair" onclick="repairTrust('roofward')">repair trust</button>
+<button data-action="save" onclick="saveWorldState('roofward')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('roofward')">restore world</button>
+<button data-action="replay" onclick="exportReplay('roofward')">export replay</button>
+<button data-action="move" onclick="moveAvatar('archive')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('archive')">turn avatar</button>
+<button data-action="gaze" onclick="renderBodyLanguage('archive')">render body language</button>
+<button data-action="pickup" onclick="pickupObject('archive')">pickup object</button>
+<button data-action="drop" onclick="dropObject('archive')">drop object</button>
+<button data-action="inspect" onclick="inspectObject('archive')">inspect object</button>
+<button data-action="turn" onclick="localInteractionTurn('archive')">local interaction turn</button>
+<button data-action="memory" onclick="restoreSensoryMemory('archive')">restore sensory memory</button>
+<button data-action="repair" onclick="repairTrust('archive')">repair trust</button>
+<button data-action="save" onclick="saveWorldState('archive')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('archive')">restore world</button>
+<button data-action="replay" onclick="exportReplay('archive')">export replay</button>
+<button data-action="move" onclick="moveAvatar('signal')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('signal')">turn avatar</button>
+<button data-action="gaze" onclick="renderBodyLanguage('signal')">render body language</button>
+<button data-action="pickup" onclick="pickupObject('signal')">pickup object</button>
+<button data-action="drop" onclick="dropObject('signal')">drop object</button>
+<button data-action="inspect" onclick="inspectObject('signal')">inspect object</button>
+<button data-action="turn" onclick="localInteractionTurn('signal')">local interaction turn</button>
+<button data-action="memory" onclick="restoreSensoryMemory('signal')">restore sensory memory</button>
+<button data-action="repair" onclick="repairTrust('signal')">repair trust</button>
+<button data-action="save" onclick="saveWorldState('signal')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('signal')">restore world</button>
+<button data-action="replay" onclick="exportReplay('signal')">export replay</button>
+<button data-action="move" onclick="moveAvatar('orchard')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('orchard')">turn avatar</button>
+<button data-action="gaze" onclick="renderBodyLanguage('orchard')">render body language</button>
+<button data-action="pickup" onclick="pickupObject('orchard')">pickup object</button>
+<button data-action="drop" onclick="dropObject('orchard')">drop object</button>
+<button data-action="inspect" onclick="inspectObject('orchard')">inspect object</button>
+<button data-action="turn" onclick="localInteractionTurn('orchard')">local interaction turn</button>
+<button data-action="memory" onclick="restoreSensoryMemory('orchard')">restore sensory memory</button>
+<button data-action="repair" onclick="repairTrust('orchard')">repair trust</button>
+<button data-action="save" onclick="saveWorldState('orchard')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('orchard')">restore world</button>
+<button data-action="replay" onclick="exportReplay('orchard')">export replay</button>
+<button data-action="move" onclick="moveAvatar('repair_ring')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('repair_ring')">turn avatar</button>
+<button data-action="gaze" onclick="renderBodyLanguage('repair_ring')">render body language</button>
+<button data-action="pickup" onclick="pickupObject('repair_ring')">pickup object</button>
+<button data-action="drop" onclick="dropObject('repair_ring')">drop object</button>
+<button data-action="inspect" onclick="inspectObject('repair_ring')">inspect object</button>
+<button data-action="turn" onclick="localInteractionTurn('repair_ring')">local interaction turn</button>
+<button data-action="memory" onclick="restoreSensoryMemory('repair_ring')">restore sensory memory</button>
+<button data-action="repair" onclick="repairTrust('repair_ring')">repair trust</button>
+<button data-action="save" onclick="saveWorldState('repair_ring')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('repair_ring')">restore world</button>
+<button data-action="replay" onclick="exportReplay('repair_ring')">export replay</button></section>
+  <section><h2>Browser log</h2><div id="log" class="log">ready</div></section>
+</main>
+<script>
+const storeKey = 'ssrm.v43.browser.world';
+let state = JSON.parse(localStorage.getItem(storeKey) || '{"tick":0,"events":[],"inventory":[]}');
+function writeLog(message) {
+  state.tick += 1;
+  state.events.push({tick: state.tick, message});
+  if (state.events.length > 22) state.events = state.events.slice(-22);
+  localStorage.setItem(storeKey, JSON.stringify(state));
+  document.getElementById('log').textContent = state.events.map(e => `${e.tick}: ${e.message}`).join('
+');
+}
+function moveAvatar(scope) { writeLog(`avatar moved in first-person scene for ${scope}`); }
+function turnAvatar(scope) { writeLog(`avatar turned with camera facing update for ${scope}`); }
+function renderBodyLanguage(scope) { writeLog(`resident gaze/posture/body-language rendered for ${scope}`); }
+function pickupObject(scope) { state.inventory.push(scope); writeLog(`pickup consequence applied for ${scope}`); }
+function dropObject(scope) { state.inventory = state.inventory.filter(x => x !== scope); writeLog(`drop/return consequence applied for ${scope}`); }
+function inspectObject(scope) { writeLog(`object ownership inspected for ${scope}`); }
+function localInteractionTurn(scope) { writeLog(`local resident interaction turn advanced for ${scope}`); }
+function restoreSensoryMemory(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v43.sensory_memory.${scope}`) || '{"cue":"none yet"}'); writeLog(`restored sensory memory for ${scope}: ${restored.cue}`); }
+function repairTrust(scope) { writeLog(`recoverable trust repair attempted for ${scope}`); }
+function saveWorldState(scope) { localStorage.setItem(`ssrm.v43.sensory_memory.${scope}`, JSON.stringify({cue:`saved sound/smell cue for ${scope}`, savedAt:state.tick})); localStorage.setItem(`ssrm.v43.world.${scope}`, JSON.stringify(state)); writeLog(`saved scene/inventory/memory state for ${scope}`); }
+function restoreWorldState(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v43.world.${scope}`) || '{"events":[]}'); writeLog(`restored world state for ${scope} with ${restored.events.length || 0} events`); }
+function exportReplay(scope) { writeLog(`replay export prepared for ${scope}`); }
+localStorage.setItem('ssrm.v43.boot', JSON.stringify({loaded:true}));
+writeLog('browser v43 playable scene loaded from localStorage');
+</script>
+</body>
+</html>

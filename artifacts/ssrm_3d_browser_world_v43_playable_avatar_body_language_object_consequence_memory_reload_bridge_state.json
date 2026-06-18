@@ -1,0 +1,1467 @@
+{
+  "avatar_facing": {
+    "archive": 315,
+    "orchard": 180,
+    "repair_ring": 180,
+    "riverbend": 225,
+    "roofward": 180,
+    "signal": 0
+  },
+  "avatar_xy": {
+    "archive": [
+      4.0,
+      0.1
+    ],
+    "orchard": [
+      3.88,
+      0.82
+    ],
+    "repair_ring": [
+      1.92,
+      4.0
+    ],
+    "riverbend": [
+      2.51,
+      1.71
+    ],
+    "roofward": [
+      3.88,
+      3.92
+    ],
+    "signal": [
+      3.21,
+      1.31
+    ]
+  },
+  "boundary": "Deterministic browser-local playable-avatar/body-language/object-consequence scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "carried_object": {
+    "archive": "none",
+    "orchard": "none",
+    "repair_ring": "none",
+    "riverbend": "none",
+    "roofward": "none",
+    "signal": "none"
+  },
+  "object_location": {
+    "archive:clean cloth": "ink niche",
+    "archive:ink ribbon": "spool room",
+    "archive:memory tag": "spool room",
+    "archive:signal spool": "memory desk",
+    "orchard:apple wrap": "mud row",
+    "orchard:dry cord": "arrival court",
+    "orchard:market token": "satchel shed",
+    "orchard:seed satchel": "satchel shed",
+    "repair_ring:bell gauge": "wire bench",
+    "repair_ring:cool cloth": "wire bench",
+    "repair_ring:copper wire": "spark lane",
+    "repair_ring:insulated tongs": "wire bench",
+    "riverbend:binding cord": "plank hall",
+    "riverbend:cedar plank": "arrival court",
+    "riverbend:dry shawl": "dry ridge",
+    "riverbend:ridge lantern": "wet crossing",
+    "roofward:brass hinge": "sun sill",
+    "roofward:herb ledger": "sun sill",
+    "roofward:shade cloth": "sun sill",
+    "roofward:sun lens": "glass stair",
+    "signal:mast rope": "arrival court",
+    "signal:oil lantern": "lantern walk",
+    "signal:signal lens": "lantern walk",
+    "signal:wind wrap": "arrival court"
+  },
+  "queue_pressure": {
+    "archive:Nia": 0.38,
+    "archive:Toma": 0.056,
+    "orchard:Ivo": 0.38,
+    "orchard:Mara": 0.05,
+    "repair_ring:Juno": 0.062,
+    "repair_ring:Pax": 0.38,
+    "riverbend:Ari": 0.38,
+    "riverbend:Lio": 0.05,
+    "roofward:Fay": 0.05,
+    "roofward:Sera": 0.38,
+    "signal:Milo": 0.056,
+    "signal:Ren": 0.38
+  },
+  "relationship": {
+    "archive:Nia": 0.64,
+    "archive:Toma": 0.98,
+    "orchard:Ivo": 0.64,
+    "orchard:Mara": 0.98,
+    "repair_ring:Juno": 0.98,
+    "repair_ring:Pax": 0.64,
+    "riverbend:Ari": 0.64,
+    "riverbend:Lio": 0.98,
+    "roofward:Fay": 0.98,
+    "roofward:Sera": 0.58,
+    "signal:Milo": 0.98,
+    "signal:Ren": 0.64
+  },
+  "sensory_memory": {
+    "archive:Nia": [],
+    "archive:Toma": [
+      [
+        139,
+        "archive:Toma:16:10",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        139,
+        "archive:Toma:16:16",
+        "clean cloth",
+        0.98
+      ],
+      [
+        141,
+        "archive:Toma:18:2",
+        "clean cloth",
+        0.98
+      ],
+      [
+        141,
+        "archive:Toma:18:8",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        141,
+        "archive:Toma:18:14",
+        "clean cloth",
+        0.98
+      ],
+      [
+        143,
+        "archive:Toma:20:0",
+        "clean cloth",
+        0.98
+      ],
+      [
+        143,
+        "archive:Toma:20:6",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        143,
+        "archive:Toma:20:12",
+        "clean cloth",
+        0.98
+      ],
+      [
+        145,
+        "archive:Toma:22:4",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        145,
+        "archive:Toma:22:10",
+        "clean cloth",
+        0.98
+      ],
+      [
+        145,
+        "archive:Toma:22:16",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        147,
+        "archive:Toma:24:2",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        147,
+        "archive:Toma:24:8",
+        "clean cloth",
+        0.98
+      ],
+      [
+        147,
+        "archive:Toma:24:14",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        149,
+        "archive:Toma:26:0",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        149,
+        "archive:Toma:26:6",
+        "clean cloth",
+        0.98
+      ],
+      [
+        149,
+        "archive:Toma:26:12",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        150,
+        "archive:Toma:27:17",
+        "clean cloth",
+        0.98
+      ],
+      [
+        151,
+        "archive:Toma:28:4",
+        "clean cloth",
+        0.98
+      ],
+      [
+        151,
+        "archive:Toma:28:10",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        151,
+        "archive:Toma:28:16",
+        "clean cloth",
+        0.98
+      ],
+      [
+        152,
+        "archive:Toma:29:15",
+        "clean cloth",
+        0.98
+      ],
+      [
+        153,
+        "archive:Toma:30:2",
+        "clean cloth",
+        0.98
+      ],
+      [
+        153,
+        "archive:Toma:30:8",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        153,
+        "archive:Toma:30:14",
+        "clean cloth",
+        0.98
+      ],
+      [
+        154,
+        "archive:Toma:31:13",
+        "clean cloth",
+        0.98
+      ],
+      [
+        155,
+        "archive:Toma:32:0",
+        "clean cloth",
+        0.98
+      ],
+      [
+        155,
+        "archive:Toma:32:6",
+        "ink ribbon",
+        0.98
+      ],
+      [
+        155,
+        "archive:Toma:32:12",
+        "clean cloth",
+        0.98
+      ],
+      [
+        156,
+        "archive:Toma:33:11",
+        "clean cloth",
+        0.98
+      ]
+    ],
+    "orchard:Ivo": [],
+    "orchard:Mara": [
+      [
+        143,
+        "orchard:Mara:20:8",
+        "apple wrap",
+        0.98
+      ],
+      [
+        143,
+        "orchard:Mara:20:14",
+        "market token",
+        0.98
+      ],
+      [
+        144,
+        "orchard:Mara:21:7",
+        "apple wrap",
+        0.98
+      ],
+      [
+        145,
+        "orchard:Mara:22:0",
+        "market token",
+        0.98
+      ],
+      [
+        145,
+        "orchard:Mara:22:6",
+        "apple wrap",
+        0.98
+      ],
+      [
+        145,
+        "orchard:Mara:22:12",
+        "market token",
+        0.98
+      ],
+      [
+        146,
+        "orchard:Mara:23:5",
+        "apple wrap",
+        0.98
+      ],
+      [
+        146,
+        "orchard:Mara:23:17",
+        "apple wrap",
+        0.98
+      ],
+      [
+        147,
+        "orchard:Mara:24:4",
+        "apple wrap",
+        0.98
+      ],
+      [
+        147,
+        "orchard:Mara:24:10",
+        "market token",
+        0.98
+      ],
+      [
+        147,
+        "orchard:Mara:24:16",
+        "apple wrap",
+        0.98
+      ],
+      [
+        148,
+        "orchard:Mara:25:3",
+        "apple wrap",
+        0.98
+      ],
+      [
+        148,
+        "orchard:Mara:25:15",
+        "apple wrap",
+        0.98
+      ],
+      [
+        149,
+        "orchard:Mara:26:2",
+        "apple wrap",
+        0.98
+      ],
+      [
+        149,
+        "orchard:Mara:26:8",
+        "market token",
+        0.98
+      ],
+      [
+        149,
+        "orchard:Mara:26:14",
+        "apple wrap",
+        0.98
+      ],
+      [
+        150,
+        "orchard:Mara:27:1",
+        "apple wrap",
+        0.98
+      ],
+      [
+        150,
+        "orchard:Mara:27:13",
+        "apple wrap",
+        0.98
+      ],
+      [
+        151,
+        "orchard:Mara:28:0",
+        "apple wrap",
+        0.98
+      ],
+      [
+        151,
+        "orchard:Mara:28:6",
+        "market token",
+        0.98
+      ],
+      [
+        151,
+        "orchard:Mara:28:12",
+        "apple wrap",
+        0.98
+      ],
+      [
+        152,
+        "orchard:Mara:29:11",
+        "apple wrap",
+        0.98
+      ],
+      [
+        153,
+        "orchard:Mara:30:4",
+        "market token",
+        0.98
+      ],
+      [
+        153,
+        "orchard:Mara:30:10",
+        "apple wrap",
+        0.98
+      ],
+      [
+        153,
+        "orchard:Mara:30:16",
+        "market token",
+        0.98
+      ],
+      [
+        154,
+        "orchard:Mara:31:9",
+        "apple wrap",
+        0.98
+      ],
+      [
+        155,
+        "orchard:Mara:32:2",
+        "market token",
+        0.98
+      ],
+      [
+        155,
+        "orchard:Mara:32:8",
+        "apple wrap",
+        0.98
+      ],
+      [
+        155,
+        "orchard:Mara:32:14",
+        "market token",
+        0.98
+      ],
+      [
+        156,
+        "orchard:Mara:33:7",
+        "apple wrap",
+        0.98
+      ]
+    ],
+    "repair_ring:Juno": [
+      [
+        140,
+        "repair_ring:Juno:17:12",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        142,
+        "repair_ring:Juno:19:4",
+        "bell gauge",
+        0.98
+      ],
+      [
+        142,
+        "repair_ring:Juno:19:10",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        142,
+        "repair_ring:Juno:19:16",
+        "bell gauge",
+        0.98
+      ],
+      [
+        144,
+        "repair_ring:Juno:21:2",
+        "bell gauge",
+        0.98
+      ],
+      [
+        144,
+        "repair_ring:Juno:21:8",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        144,
+        "repair_ring:Juno:21:14",
+        "bell gauge",
+        0.98
+      ],
+      [
+        146,
+        "repair_ring:Juno:23:0",
+        "bell gauge",
+        0.98
+      ],
+      [
+        146,
+        "repair_ring:Juno:23:6",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        146,
+        "repair_ring:Juno:23:12",
+        "bell gauge",
+        0.98
+      ],
+      [
+        147,
+        "repair_ring:Juno:24:17",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        148,
+        "repair_ring:Juno:25:4",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        148,
+        "repair_ring:Juno:25:10",
+        "bell gauge",
+        0.98
+      ],
+      [
+        148,
+        "repair_ring:Juno:25:16",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        149,
+        "repair_ring:Juno:26:15",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        150,
+        "repair_ring:Juno:27:2",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        150,
+        "repair_ring:Juno:27:8",
+        "bell gauge",
+        0.98
+      ],
+      [
+        150,
+        "repair_ring:Juno:27:14",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        151,
+        "repair_ring:Juno:28:13",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        152,
+        "repair_ring:Juno:29:0",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        152,
+        "repair_ring:Juno:29:6",
+        "bell gauge",
+        0.98
+      ],
+      [
+        152,
+        "repair_ring:Juno:29:12",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        153,
+        "repair_ring:Juno:30:11",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        154,
+        "repair_ring:Juno:31:4",
+        "bell gauge",
+        0.98
+      ],
+      [
+        154,
+        "repair_ring:Juno:31:10",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        154,
+        "repair_ring:Juno:31:16",
+        "bell gauge",
+        0.98
+      ],
+      [
+        155,
+        "repair_ring:Juno:32:9",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        156,
+        "repair_ring:Juno:33:2",
+        "bell gauge",
+        0.98
+      ],
+      [
+        156,
+        "repair_ring:Juno:33:8",
+        "insulated tongs",
+        0.98
+      ],
+      [
+        156,
+        "repair_ring:Juno:33:14",
+        "bell gauge",
+        0.98
+      ]
+    ],
+    "repair_ring:Pax": [],
+    "riverbend:Ari": [],
+    "riverbend:Lio": [
+      [
+        141,
+        "riverbend:Lio:18:0",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        141,
+        "riverbend:Lio:18:6",
+        "dry shawl",
+        0.98
+      ],
+      [
+        141,
+        "riverbend:Lio:18:12",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        142,
+        "riverbend:Lio:19:11",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        143,
+        "riverbend:Lio:20:4",
+        "dry shawl",
+        0.98
+      ],
+      [
+        143,
+        "riverbend:Lio:20:10",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        143,
+        "riverbend:Lio:20:16",
+        "dry shawl",
+        0.98
+      ],
+      [
+        144,
+        "riverbend:Lio:21:9",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        145,
+        "riverbend:Lio:22:2",
+        "dry shawl",
+        0.98
+      ],
+      [
+        145,
+        "riverbend:Lio:22:8",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        145,
+        "riverbend:Lio:22:14",
+        "dry shawl",
+        0.98
+      ],
+      [
+        146,
+        "riverbend:Lio:23:7",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        147,
+        "riverbend:Lio:24:0",
+        "dry shawl",
+        0.98
+      ],
+      [
+        147,
+        "riverbend:Lio:24:6",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        147,
+        "riverbend:Lio:24:12",
+        "dry shawl",
+        0.98
+      ],
+      [
+        148,
+        "riverbend:Lio:25:5",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        149,
+        "riverbend:Lio:26:4",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        149,
+        "riverbend:Lio:26:10",
+        "dry shawl",
+        0.98
+      ],
+      [
+        149,
+        "riverbend:Lio:26:16",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        150,
+        "riverbend:Lio:27:3",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        151,
+        "riverbend:Lio:28:2",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        151,
+        "riverbend:Lio:28:8",
+        "dry shawl",
+        0.98
+      ],
+      [
+        151,
+        "riverbend:Lio:28:14",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        152,
+        "riverbend:Lio:29:1",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        153,
+        "riverbend:Lio:30:0",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        153,
+        "riverbend:Lio:30:6",
+        "dry shawl",
+        0.98
+      ],
+      [
+        153,
+        "riverbend:Lio:30:12",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        155,
+        "riverbend:Lio:32:4",
+        "dry shawl",
+        0.98
+      ],
+      [
+        155,
+        "riverbend:Lio:32:10",
+        "ridge lantern",
+        0.98
+      ],
+      [
+        155,
+        "riverbend:Lio:32:16",
+        "dry shawl",
+        0.98
+      ]
+    ],
+    "roofward:Fay": [
+      [
+        144,
+        "roofward:Fay:21:4",
+        "sun lens",
+        0.98
+      ],
+      [
+        144,
+        "roofward:Fay:21:10",
+        "brass hinge",
+        0.98
+      ],
+      [
+        144,
+        "roofward:Fay:21:16",
+        "sun lens",
+        0.98
+      ],
+      [
+        145,
+        "roofward:Fay:22:9",
+        "brass hinge",
+        0.98
+      ],
+      [
+        146,
+        "roofward:Fay:23:2",
+        "sun lens",
+        0.98
+      ],
+      [
+        146,
+        "roofward:Fay:23:8",
+        "brass hinge",
+        0.98
+      ],
+      [
+        146,
+        "roofward:Fay:23:14",
+        "sun lens",
+        0.98
+      ],
+      [
+        147,
+        "roofward:Fay:24:7",
+        "brass hinge",
+        0.98
+      ],
+      [
+        148,
+        "roofward:Fay:25:0",
+        "sun lens",
+        0.98
+      ],
+      [
+        148,
+        "roofward:Fay:25:6",
+        "brass hinge",
+        0.98
+      ],
+      [
+        148,
+        "roofward:Fay:25:12",
+        "sun lens",
+        0.98
+      ],
+      [
+        149,
+        "roofward:Fay:26:5",
+        "brass hinge",
+        0.98
+      ],
+      [
+        149,
+        "roofward:Fay:26:17",
+        "brass hinge",
+        0.98
+      ],
+      [
+        150,
+        "roofward:Fay:27:4",
+        "brass hinge",
+        0.98
+      ],
+      [
+        150,
+        "roofward:Fay:27:10",
+        "sun lens",
+        0.98
+      ],
+      [
+        150,
+        "roofward:Fay:27:16",
+        "brass hinge",
+        0.98
+      ],
+      [
+        151,
+        "roofward:Fay:28:3",
+        "brass hinge",
+        0.98
+      ],
+      [
+        151,
+        "roofward:Fay:28:15",
+        "brass hinge",
+        0.98
+      ],
+      [
+        152,
+        "roofward:Fay:29:2",
+        "brass hinge",
+        0.98
+      ],
+      [
+        152,
+        "roofward:Fay:29:8",
+        "sun lens",
+        0.98
+      ],
+      [
+        152,
+        "roofward:Fay:29:14",
+        "brass hinge",
+        0.98
+      ],
+      [
+        153,
+        "roofward:Fay:30:1",
+        "brass hinge",
+        0.98
+      ],
+      [
+        153,
+        "roofward:Fay:30:13",
+        "brass hinge",
+        0.98
+      ],
+      [
+        154,
+        "roofward:Fay:31:0",
+        "brass hinge",
+        0.98
+      ],
+      [
+        154,
+        "roofward:Fay:31:6",
+        "sun lens",
+        0.98
+      ],
+      [
+        154,
+        "roofward:Fay:31:12",
+        "brass hinge",
+        0.98
+      ],
+      [
+        155,
+        "roofward:Fay:32:11",
+        "brass hinge",
+        0.98
+      ],
+      [
+        156,
+        "roofward:Fay:33:4",
+        "sun lens",
+        0.98
+      ],
+      [
+        156,
+        "roofward:Fay:33:10",
+        "brass hinge",
+        0.98
+      ],
+      [
+        156,
+        "roofward:Fay:33:16",
+        "sun lens",
+        0.98
+      ]
+    ],
+    "roofward:Sera": [],
+    "signal:Milo": [
+      [
+        140,
+        "signal:Milo:17:16",
+        "mast rope",
+        0.98
+      ],
+      [
+        141,
+        "signal:Milo:18:9",
+        "signal lens",
+        0.98
+      ],
+      [
+        142,
+        "signal:Milo:19:2",
+        "mast rope",
+        0.98
+      ],
+      [
+        142,
+        "signal:Milo:19:8",
+        "signal lens",
+        0.98
+      ],
+      [
+        142,
+        "signal:Milo:19:14",
+        "mast rope",
+        0.98
+      ],
+      [
+        143,
+        "signal:Milo:20:7",
+        "signal lens",
+        0.98
+      ],
+      [
+        144,
+        "signal:Milo:21:0",
+        "mast rope",
+        0.98
+      ],
+      [
+        144,
+        "signal:Milo:21:6",
+        "signal lens",
+        0.98
+      ],
+      [
+        144,
+        "signal:Milo:21:12",
+        "mast rope",
+        0.98
+      ],
+      [
+        145,
+        "signal:Milo:22:5",
+        "signal lens",
+        0.98
+      ],
+      [
+        146,
+        "signal:Milo:23:4",
+        "signal lens",
+        0.98
+      ],
+      [
+        146,
+        "signal:Milo:23:10",
+        "mast rope",
+        0.98
+      ],
+      [
+        146,
+        "signal:Milo:23:16",
+        "signal lens",
+        0.98
+      ],
+      [
+        147,
+        "signal:Milo:24:3",
+        "signal lens",
+        0.98
+      ],
+      [
+        148,
+        "signal:Milo:25:2",
+        "signal lens",
+        0.98
+      ],
+      [
+        148,
+        "signal:Milo:25:8",
+        "mast rope",
+        0.98
+      ],
+      [
+        148,
+        "signal:Milo:25:14",
+        "signal lens",
+        0.98
+      ],
+      [
+        149,
+        "signal:Milo:26:1",
+        "signal lens",
+        0.98
+      ],
+      [
+        150,
+        "signal:Milo:27:0",
+        "signal lens",
+        0.98
+      ],
+      [
+        150,
+        "signal:Milo:27:6",
+        "mast rope",
+        0.98
+      ],
+      [
+        150,
+        "signal:Milo:27:12",
+        "signal lens",
+        0.98
+      ],
+      [
+        152,
+        "signal:Milo:29:4",
+        "mast rope",
+        0.98
+      ],
+      [
+        152,
+        "signal:Milo:29:10",
+        "signal lens",
+        0.98
+      ],
+      [
+        152,
+        "signal:Milo:29:16",
+        "mast rope",
+        0.98
+      ],
+      [
+        154,
+        "signal:Milo:31:2",
+        "mast rope",
+        0.98
+      ],
+      [
+        154,
+        "signal:Milo:31:8",
+        "signal lens",
+        0.98
+      ],
+      [
+        154,
+        "signal:Milo:31:14",
+        "mast rope",
+        0.98
+      ],
+      [
+        156,
+        "signal:Milo:33:0",
+        "mast rope",
+        0.98
+      ],
+      [
+        156,
+        "signal:Milo:33:6",
+        "signal lens",
+        0.98
+      ],
+      [
+        156,
+        "signal:Milo:33:12",
+        "mast rope",
+        0.98
+      ]
+    ],
+    "signal:Ren": []
+  },
+  "settlements": [
+    {
+      "dialect_id": "riverbend-dialect-11",
+      "flower_node": "node-03",
+      "frequency_hz": 7.83,
+      "objects": [
+        [
+          "cedar plank",
+          "Ari",
+          "repair"
+        ],
+        [
+          "ridge lantern",
+          "Lio",
+          "signal"
+        ],
+        [
+          "binding cord",
+          "Ari",
+          "repair"
+        ],
+        [
+          "dry shawl",
+          "shared",
+          "care"
+        ]
+      ],
+      "resident_a": "Ari",
+      "resident_b": "Lio",
+      "rooms": [
+        "arrival court",
+        "plank hall",
+        "wet crossing",
+        "dry ridge",
+        "kit alcove"
+      ],
+      "safe_room": "dry ridge",
+      "settlement_id": "riverbend",
+      "smell_cue": "wet cedar",
+      "sound_cue": "river slap",
+      "warm_room": "kit alcove",
+      "wet_room": "wet crossing"
+    },
+    {
+      "dialect_id": "roofward-dialect-11",
+      "flower_node": "node-05",
+      "frequency_hz": 8.21,
+      "objects": [
+        [
+          "sun lens",
+          "Fay",
+          "craft"
+        ],
+        [
+          "herb ledger",
+          "Sera",
+          "memory"
+        ],
+        [
+          "brass hinge",
+          "Fay",
+          "repair"
+        ],
+        [
+          "shade cloth",
+          "shared",
+          "care"
+        ]
+      ],
+      "resident_a": "Fay",
+      "resident_b": "Sera",
+      "rooms": [
+        "arrival court",
+        "glass stair",
+        "warm lane",
+        "ledger loft",
+        "sun sill"
+      ],
+      "safe_room": "sun sill",
+      "settlement_id": "roofward",
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinge ticks",
+      "warm_room": "warm lane",
+      "wet_room": "arrival court"
+    },
+    {
+      "dialect_id": "archive-dialect-11",
+      "flower_node": "node-08",
+      "frequency_hz": 6.4,
+      "objects": [
+        [
+          "signal spool",
+          "Nia",
+          "memory"
+        ],
+        [
+          "ink ribbon",
+          "Toma",
+          "craft"
+        ],
+        [
+          "memory tag",
+          "Nia",
+          "archive"
+        ],
+        [
+          "clean cloth",
+          "shared",
+          "care"
+        ]
+      ],
+      "resident_a": "Nia",
+      "resident_b": "Toma",
+      "rooms": [
+        "arrival court",
+        "stone stacks",
+        "spool room",
+        "ink niche",
+        "memory desk"
+      ],
+      "safe_room": "stone stacks",
+      "settlement_id": "archive",
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "warm_room": "memory desk",
+      "wet_room": "arrival court"
+    },
+    {
+      "dialect_id": "signal-dialect-11",
+      "flower_node": "node-11",
+      "frequency_hz": 9.12,
+      "objects": [
+        [
+          "mast rope",
+          "Milo",
+          "repair"
+        ],
+        [
+          "oil lantern",
+          "Ren",
+          "signal"
+        ],
+        [
+          "signal lens",
+          "Milo",
+          "craft"
+        ],
+        [
+          "wind wrap",
+          "shared",
+          "care"
+        ]
+      ],
+      "resident_a": "Milo",
+      "resident_b": "Ren",
+      "rooms": [
+        "arrival court",
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "signal perch"
+      ],
+      "safe_room": "lens room",
+      "settlement_id": "signal",
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "warm_room": "lantern walk",
+      "wet_room": "arrival court"
+    },
+    {
+      "dialect_id": "orchard-dialect-11",
+      "flower_node": "node-01",
+      "frequency_hz": 5.68,
+      "objects": [
+        [
+          "seed satchel",
+          "Ivo",
+          "resource"
+        ],
+        [
+          "market token",
+          "Mara",
+          "trade"
+        ],
+        [
+          "dry cord",
+          "Ivo",
+          "repair"
+        ],
+        [
+          "apple wrap",
+          "shared",
+          "care"
+        ]
+      ],
+      "resident_a": "Ivo",
+      "resident_b": "Mara",
+      "rooms": [
+        "arrival court",
+        "seed lane",
+        "mud row",
+        "market plank",
+        "satchel shed"
+      ],
+      "safe_room": "seed lane",
+      "settlement_id": "orchard",
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "warm_room": "satchel shed",
+      "wet_room": "mud row"
+    },
+    {
+      "dialect_id": "repair_ring-dialect-11",
+      "flower_node": "node-09",
+      "frequency_hz": 10.03,
+      "objects": [
+        [
+          "insulated tongs",
+          "Juno",
+          "repair"
+        ],
+        [
+          "copper wire",
+          "Pax",
+          "craft"
+        ],
+        [
+          "bell gauge",
+          "Juno",
+          "diagnostic"
+        ],
+        [
+          "cool cloth",
+          "shared",
+          "care"
+        ]
+      ],
+      "resident_a": "Juno",
+      "resident_b": "Pax",
+      "rooms": [
+        "arrival court",
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "cool corner"
+      ],
+      "safe_room": "wire bench",
+      "settlement_id": "repair_ring",
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "warm_room": "cool corner",
+      "wet_room": "spark lane"
+    }
+  ],
+  "trust_repair_need": {
+    "archive:Nia": 0.08,
+    "archive:Toma": 0.0,
+    "orchard:Ivo": 0.08,
+    "orchard:Mara": 0.0,
+    "repair_ring:Juno": 0.0,
+    "repair_ring:Pax": 0.08,
+    "riverbend:Ari": 0.08,
+    "riverbend:Lio": 0.0,
+    "roofward:Fay": 0.0,
+    "roofward:Sera": 0.08,
+    "signal:Milo": 0.0,
+    "signal:Ren": 0.08
+  }
+}

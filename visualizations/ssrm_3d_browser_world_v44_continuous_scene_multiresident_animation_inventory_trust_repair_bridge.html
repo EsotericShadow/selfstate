@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 284 Browser World v44</title>
+  <style>
+    :root { --ink:#17211c; --paper:#f2e7cc; --moss:#5f734a; --ember:#b85f3f; --river:#557f8d; --gold:#d0a348; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 16% 12%, rgba(208,163,72,.45), transparent 18rem), radial-gradient(circle at 82% 16%, rgba(85,127,141,.34), transparent 17rem), linear-gradient(135deg, #e8dac0, #c1cda9 52%, #91aaa6); }
+    main { max-width:1260px; margin:0 auto; padding:24px; }
+    h1 { font-size:clamp(2rem,5vw,4.9rem); line-height:.92; margin:20px 0; letter-spacing:-.045em; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+    section { border:2px solid rgba(23,33,28,.34); border-radius:24px; padding:18px; background:rgba(242,231,204,.83); box-shadow:0 18px 52px rgba(23,33,28,.16); }
+    button { margin:5px; padding:9px 11px; border:1px solid var(--ink); border-radius:999px; background:var(--gold); color:var(--ink); cursor:pointer; }
+    button:hover { background:var(--ember); color:#fff7df; }
+    .boundary { border-left:8px solid var(--ember); }
+    .viewport { min-height:240px; border-radius:18px; background:linear-gradient(180deg, rgba(85,127,141,.32), rgba(95,115,74,.27)), repeating-linear-gradient(90deg, rgba(23,33,28,.08) 0 1px, transparent 1px 34px), repeating-linear-gradient(0deg, rgba(23,33,28,.06) 0 1px, transparent 1px 34px); display:grid; place-items:center; font-weight:bold; }
+    .flower { width:168px; height:168px; border-radius:50%; background:repeating-radial-gradient(circle, rgba(208,163,72,.45) 0 9px, rgba(85,127,141,.24) 9px 18px); display:grid; place-items:center; }
+    .log { min-height:140px; font-family:ui-monospace, SFMono-Regular, Menlo, monospace; white-space:pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser World v44: continuous scene, three-resident turns, animation timelines, inventory ownership</h1>
+  <section class="boundary"><strong>Boundary:</strong> deterministic scaffold only; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no metaphysical frequency claim.</section>
+  <section id="continuous-scene-panel"><h2>Continuous playable scene state</h2><div class="viewport">continuous first-person viewport + room grid + persistent avatar/inventory state</div></section>
+  <div class="grid">
+    <section id="multi-resident-conversation-panel"><h2>Multi-resident local turns</h2><p>Speaker, listener, and observer turns remain local and visible without exposing private workspace.</p></section>
+    <section id="body-animation-panel"><h2>Body-language animation timelines</h2><p>Gaze, posture, and gesture keyframes are bound to relationship, queue pressure, and repair need.</p></section>
+    <section id="inventory-ownership-panel"><h2>Inventory ownership UI</h2><p>Inventory badges show owner, permission, rollback action, and repair path.</p></section>
+    <section id="trust-repair-panel"><h2>Recoverable trust repair</h2><p>Object mistakes produce bounded repair needs that can be partially repaired by apology, return, help, or space.</p></section>
+    <section id="save-restore-panel"><h2>Save/restore continuity</h2><p>Scene keys, inventory, turns, animations, and repair counters persist through localStorage.</p></section>
+    <section id="frequency-flower-panel"><h2>Frequency and flower phase</h2><div class="flower">flower phase</div><p>Rates are simulation timing metadata, not metaphysical evidence.</p></section>
+  </div>
+  <section><h2>Controls</h2><button data-action="advance" onclick="advanceScene('riverbend')">advance scene</button>
+<button data-action="move" onclick="moveAvatar('riverbend')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('riverbend')">turn avatar</button>
+<button data-action="talk" onclick="advanceConversation('riverbend')">multi-resident turn</button>
+<button data-action="animate" onclick="playBodyAnimation('riverbend')">play body animation</button>
+<button data-action="inventory" onclick="renderInventory('riverbend')">render inventory</button>
+<button data-action="permission" onclick="requestPermission('riverbend')">request permission</button>
+<button data-action="pickup" onclick="pickupObject('riverbend')">pickup object</button>
+<button data-action="return" onclick="returnObject('riverbend')">return object</button>
+<button data-action="repair" onclick="repairTrust('riverbend')">repair trust</button>
+<button data-action="save" onclick="saveContinuousScene('riverbend')">save scene</button>
+<button data-action="restore" onclick="restoreContinuousScene('riverbend')">restore scene</button>
+<button data-action="replay" onclick="exportReplay('riverbend')">export replay</button>
+<button data-action="advance" onclick="advanceScene('roofward')">advance scene</button>
+<button data-action="move" onclick="moveAvatar('roofward')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('roofward')">turn avatar</button>
+<button data-action="talk" onclick="advanceConversation('roofward')">multi-resident turn</button>
+<button data-action="animate" onclick="playBodyAnimation('roofward')">play body animation</button>
+<button data-action="inventory" onclick="renderInventory('roofward')">render inventory</button>
+<button data-action="permission" onclick="requestPermission('roofward')">request permission</button>
+<button data-action="pickup" onclick="pickupObject('roofward')">pickup object</button>
+<button data-action="return" onclick="returnObject('roofward')">return object</button>
+<button data-action="repair" onclick="repairTrust('roofward')">repair trust</button>
+<button data-action="save" onclick="saveContinuousScene('roofward')">save scene</button>
+<button data-action="restore" onclick="restoreContinuousScene('roofward')">restore scene</button>
+<button data-action="replay" onclick="exportReplay('roofward')">export replay</button>
+<button data-action="advance" onclick="advanceScene('archive')">advance scene</button>
+<button data-action="move" onclick="moveAvatar('archive')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('archive')">turn avatar</button>
+<button data-action="talk" onclick="advanceConversation('archive')">multi-resident turn</button>
+<button data-action="animate" onclick="playBodyAnimation('archive')">play body animation</button>
+<button data-action="inventory" onclick="renderInventory('archive')">render inventory</button>
+<button data-action="permission" onclick="requestPermission('archive')">request permission</button>
+<button data-action="pickup" onclick="pickupObject('archive')">pickup object</button>
+<button data-action="return" onclick="returnObject('archive')">return object</button>
+<button data-action="repair" onclick="repairTrust('archive')">repair trust</button>
+<button data-action="save" onclick="saveContinuousScene('archive')">save scene</button>
+<button data-action="restore" onclick="restoreContinuousScene('archive')">restore scene</button>
+<button data-action="replay" onclick="exportReplay('archive')">export replay</button>
+<button data-action="advance" onclick="advanceScene('signal')">advance scene</button>
+<button data-action="move" onclick="moveAvatar('signal')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('signal')">turn avatar</button>
+<button data-action="talk" onclick="advanceConversation('signal')">multi-resident turn</button>
+<button data-action="animate" onclick="playBodyAnimation('signal')">play body animation</button>
+<button data-action="inventory" onclick="renderInventory('signal')">render inventory</button>
+<button data-action="permission" onclick="requestPermission('signal')">request permission</button>
+<button data-action="pickup" onclick="pickupObject('signal')">pickup object</button>
+<button data-action="return" onclick="returnObject('signal')">return object</button>
+<button data-action="repair" onclick="repairTrust('signal')">repair trust</button>
+<button data-action="save" onclick="saveContinuousScene('signal')">save scene</button>
+<button data-action="restore" onclick="restoreContinuousScene('signal')">restore scene</button>
+<button data-action="replay" onclick="exportReplay('signal')">export replay</button>
+<button data-action="advance" onclick="advanceScene('orchard')">advance scene</button>
+<button data-action="move" onclick="moveAvatar('orchard')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('orchard')">turn avatar</button>
+<button data-action="talk" onclick="advanceConversation('orchard')">multi-resident turn</button>
+<button data-action="animate" onclick="playBodyAnimation('orchard')">play body animation</button>
+<button data-action="inventory" onclick="renderInventory('orchard')">render inventory</button>
+<button data-action="permission" onclick="requestPermission('orchard')">request permission</button>
+<button data-action="pickup" onclick="pickupObject('orchard')">pickup object</button>
+<button data-action="return" onclick="returnObject('orchard')">return object</button>
+<button data-action="repair" onclick="repairTrust('orchard')">repair trust</button>
+<button data-action="save" onclick="saveContinuousScene('orchard')">save scene</button>
+<button data-action="restore" onclick="restoreContinuousScene('orchard')">restore scene</button>
+<button data-action="replay" onclick="exportReplay('orchard')">export replay</button>
+<button data-action="advance" onclick="advanceScene('repair_ring')">advance scene</button>
+<button data-action="move" onclick="moveAvatar('repair_ring')">move avatar</button>
+<button data-action="turn" onclick="turnAvatar('repair_ring')">turn avatar</button>
+<button data-action="talk" onclick="advanceConversation('repair_ring')">multi-resident turn</button>
+<button data-action="animate" onclick="playBodyAnimation('repair_ring')">play body animation</button>
+<button data-action="inventory" onclick="renderInventory('repair_ring')">render inventory</button>
+<button data-action="permission" onclick="requestPermission('repair_ring')">request permission</button>
+<button data-action="pickup" onclick="pickupObject('repair_ring')">pickup object</button>
+<button data-action="return" onclick="returnObject('repair_ring')">return object</button>
+<button data-action="repair" onclick="repairTrust('repair_ring')">repair trust</button>
+<button data-action="save" onclick="saveContinuousScene('repair_ring')">save scene</button>
+<button data-action="restore" onclick="restoreContinuousScene('repair_ring')">restore scene</button>
+<button data-action="replay" onclick="exportReplay('repair_ring')">export replay</button></section>
+  <section><h2>Browser log</h2><div id="log" class="log">ready</div></section>
+</main>
+<script>
+const storeKey = 'ssrm.v44.browser.world';
+let state = JSON.parse(localStorage.getItem(storeKey) || '{"tick":0,"events":[],"inventory":[],"turns":0,"animations":0}');
+function writeLog(message) {
+  state.tick += 1;
+  state.events.push({tick: state.tick, message});
+  if (state.events.length > 24) state.events = state.events.slice(-24);
+  localStorage.setItem(storeKey, JSON.stringify(state));
+  document.getElementById('log').textContent = state.events.map(e => `${e.tick}: ${e.message}`).join('
+');
+}
+function advanceScene(scope) { writeLog(`continuous scene advanced for ${scope}`); }
+function moveAvatar(scope) { writeLog(`avatar moved with persistent scene key for ${scope}`); }
+function turnAvatar(scope) { writeLog(`avatar camera turned for ${scope}`); }
+function advanceConversation(scope) { state.turns += 1; writeLog(`three-resident conversation turn ${state.turns} in ${scope}`); }
+function playBodyAnimation(scope) { state.animations += 1; writeLog(`body-language animation timeline ${state.animations} played in ${scope}`); }
+function renderInventory(scope) { writeLog(`inventory ownership UI rendered for ${scope} with ${state.inventory.length} carried objects`); }
+function requestPermission(scope) { writeLog(`permission requested with owner badge visible in ${scope}`); }
+function pickupObject(scope) { state.inventory.push(scope); writeLog(`object pickup recorded with ownership consequence in ${scope}`); }
+function returnObject(scope) { state.inventory = state.inventory.filter(x => x !== scope); writeLog(`object return recorded with trust repair in ${scope}`); }
+function repairTrust(scope) { writeLog(`bounded trust repair attempted in ${scope}`); }
+function saveContinuousScene(scope) { localStorage.setItem(`ssrm.v44.world.${scope}`, JSON.stringify(state)); writeLog(`saved continuous scene/inventory/turn/animation state for ${scope}`); }
+function restoreContinuousScene(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v44.world.${scope}`) || '{"events":[],"inventory":[]}'); writeLog(`restored continuous scene for ${scope} with ${restored.events.length || 0} events`); }
+function exportReplay(scope) { writeLog(`replay export prepared for ${scope}`); }
+localStorage.setItem('ssrm.v44.boot', JSON.stringify({loaded:true}));
+writeLog('browser v44 continuous scene loaded from localStorage');
+</script>
+</body>
+</html>

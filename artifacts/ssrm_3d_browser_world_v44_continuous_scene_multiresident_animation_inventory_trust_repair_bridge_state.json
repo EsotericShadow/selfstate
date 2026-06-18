@@ -1,0 +1,411 @@
+{
+  "avatar_facing": {
+    "archive": 0,
+    "orchard": 135,
+    "repair_ring": 0,
+    "riverbend": 0,
+    "roofward": 90,
+    "signal": 0
+  },
+  "avatar_xy": {
+    "archive": [
+      0.0,
+      0.0
+    ],
+    "orchard": [
+      0.0,
+      0.0
+    ],
+    "repair_ring": [
+      0.0,
+      0.0
+    ],
+    "riverbend": [
+      4.0,
+      4.0
+    ],
+    "roofward": [
+      0.0,
+      0.0
+    ],
+    "signal": [
+      4.0,
+      4.0
+    ]
+  },
+  "boundary": "Deterministic browser-local continuous-scene/multi-resident-animation/inventory-trust-repair scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "inventory": {
+    "archive": [
+      "clean cloth"
+    ],
+    "orchard": [],
+    "repair_ring": [],
+    "riverbend": [
+      "dry shawl"
+    ],
+    "roofward": [],
+    "signal": [
+      "mast rope"
+    ]
+  },
+  "object_location": {
+    "archive:clean cloth": "avatar inventory",
+    "archive:ink ribbon": "spool room",
+    "archive:memory tag": "spool room",
+    "archive:signal spool": "memory desk",
+    "orchard:apple wrap": "mud row",
+    "orchard:dry cord": "arrival court",
+    "orchard:market token": "satchel shed",
+    "orchard:seed satchel": "satchel shed",
+    "repair_ring:bell gauge": "wire bench",
+    "repair_ring:cool cloth": "wire bench",
+    "repair_ring:copper wire": "spark lane",
+    "repair_ring:insulated tongs": "wire bench",
+    "riverbend:binding cord": "plank hall",
+    "riverbend:cedar plank": "arrival court",
+    "riverbend:dry shawl": "avatar inventory",
+    "riverbend:ridge lantern": "arrival court",
+    "roofward:brass hinge": "sun sill",
+    "roofward:herb ledger": "sun sill",
+    "roofward:shade cloth": "sun sill",
+    "roofward:sun lens": "glass stair",
+    "signal:mast rope": "avatar inventory",
+    "signal:oil lantern": "lantern walk",
+    "signal:signal lens": "arrival court",
+    "signal:wind wrap": "arrival court"
+  },
+  "previous_state_key": {
+    "archive": "v44-205180",
+    "orchard": "v44-737905",
+    "repair_ring": "v44-883548",
+    "riverbend": "v44-072945",
+    "roofward": "v44-772157",
+    "signal": "v44-021302"
+  },
+  "queue_pressure": {
+    "archive:Nia": 0.052,
+    "archive:Toma": 0.052,
+    "archive:Vell": 0.052,
+    "orchard:Ivo": 0.204,
+    "orchard:Mara": 0.204,
+    "orchard:Pim": 0.212,
+    "repair_ring:Juno": 0.052,
+    "repair_ring:Pax": 0.052,
+    "repair_ring:Vale": 0.052,
+    "riverbend:Ari": 0.33,
+    "riverbend:Cee": 0.385,
+    "riverbend:Lio": 0.66,
+    "roofward:Fay": 0.194,
+    "roofward:Orr": 0.204,
+    "roofward:Sera": 0.194,
+    "signal:Kesh": 0.375,
+    "signal:Milo": 0.46,
+    "signal:Ren": 0.36
+  },
+  "relationship": {
+    "archive:Nia": 0.98,
+    "archive:Toma": 0.98,
+    "archive:Vell": 0.98,
+    "orchard:Ivo": 0.98,
+    "orchard:Mara": 0.98,
+    "orchard:Pim": 0.98,
+    "repair_ring:Juno": 0.98,
+    "repair_ring:Pax": 0.98,
+    "repair_ring:Vale": 0.98,
+    "riverbend:Ari": 0.98,
+    "riverbend:Cee": 0.98,
+    "riverbend:Lio": 0.98,
+    "roofward:Fay": 0.98,
+    "roofward:Orr": 0.98,
+    "roofward:Sera": 0.98,
+    "signal:Kesh": 0.976,
+    "signal:Milo": 0.98,
+    "signal:Ren": 0.965
+  },
+  "repair_need": {
+    "archive:Nia": 0.0,
+    "archive:Toma": 0.0,
+    "archive:Vell": 0.0,
+    "orchard:Ivo": 0.0,
+    "orchard:Mara": 0.0,
+    "orchard:Pim": 0.0,
+    "repair_ring:Juno": 0.0,
+    "repair_ring:Pax": 0.0,
+    "repair_ring:Vale": 0.0,
+    "riverbend:Ari": 0.0,
+    "riverbend:Cee": 0.1124,
+    "riverbend:Lio": 0.2788,
+    "roofward:Fay": 0.0,
+    "roofward:Orr": 0.0,
+    "roofward:Sera": 0.0,
+    "signal:Kesh": 0.0836,
+    "signal:Milo": 0.1124,
+    "signal:Ren": 0.1412
+  },
+  "settlements": [
+    {
+      "dialect_id": "riverbend-dialect-12",
+      "flower_node": "node-03",
+      "frequency_hz": 7.83,
+      "objects": [
+        [
+          "cedar plank",
+          "Ari",
+          "repair"
+        ],
+        [
+          "ridge lantern",
+          "Lio",
+          "signal"
+        ],
+        [
+          "binding cord",
+          "Cee",
+          "repair"
+        ],
+        [
+          "dry shawl",
+          "shared",
+          "care"
+        ]
+      ],
+      "residents": [
+        "Ari",
+        "Lio",
+        "Cee"
+      ],
+      "rooms": [
+        "arrival court",
+        "plank hall",
+        "wet crossing",
+        "dry ridge",
+        "kit alcove"
+      ],
+      "safe_room": "dry ridge",
+      "settlement_id": "riverbend",
+      "smell_cue": "wet cedar",
+      "sound_cue": "river slap",
+      "work_room": "plank hall"
+    },
+    {
+      "dialect_id": "roofward-dialect-12",
+      "flower_node": "node-05",
+      "frequency_hz": 8.21,
+      "objects": [
+        [
+          "sun lens",
+          "Fay",
+          "craft"
+        ],
+        [
+          "herb ledger",
+          "Sera",
+          "memory"
+        ],
+        [
+          "brass hinge",
+          "Orr",
+          "repair"
+        ],
+        [
+          "shade cloth",
+          "shared",
+          "care"
+        ]
+      ],
+      "residents": [
+        "Fay",
+        "Sera",
+        "Orr"
+      ],
+      "rooms": [
+        "arrival court",
+        "glass stair",
+        "warm lane",
+        "ledger loft",
+        "sun sill"
+      ],
+      "safe_room": "sun sill",
+      "settlement_id": "roofward",
+      "smell_cue": "thyme paper",
+      "sound_cue": "hinge ticks",
+      "work_room": "ledger loft"
+    },
+    {
+      "dialect_id": "archive-dialect-12",
+      "flower_node": "node-08",
+      "frequency_hz": 6.4,
+      "objects": [
+        [
+          "signal spool",
+          "Nia",
+          "memory"
+        ],
+        [
+          "ink ribbon",
+          "Toma",
+          "craft"
+        ],
+        [
+          "memory tag",
+          "Vell",
+          "archive"
+        ],
+        [
+          "clean cloth",
+          "shared",
+          "care"
+        ]
+      ],
+      "residents": [
+        "Nia",
+        "Toma",
+        "Vell"
+      ],
+      "rooms": [
+        "arrival court",
+        "stone stacks",
+        "spool room",
+        "ink niche",
+        "memory desk"
+      ],
+      "safe_room": "stone stacks",
+      "settlement_id": "archive",
+      "smell_cue": "ink linen",
+      "sound_cue": "page flutter",
+      "work_room": "spool room"
+    },
+    {
+      "dialect_id": "signal-dialect-12",
+      "flower_node": "node-11",
+      "frequency_hz": 9.12,
+      "objects": [
+        [
+          "mast rope",
+          "Milo",
+          "repair"
+        ],
+        [
+          "oil lantern",
+          "Ren",
+          "signal"
+        ],
+        [
+          "signal lens",
+          "Kesh",
+          "craft"
+        ],
+        [
+          "wind wrap",
+          "shared",
+          "care"
+        ]
+      ],
+      "residents": [
+        "Milo",
+        "Ren",
+        "Kesh"
+      ],
+      "rooms": [
+        "arrival court",
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "signal perch"
+      ],
+      "safe_room": "lens room",
+      "settlement_id": "signal",
+      "smell_cue": "lamp oil",
+      "sound_cue": "static crickets",
+      "work_room": "mast base"
+    },
+    {
+      "dialect_id": "orchard-dialect-12",
+      "flower_node": "node-01",
+      "frequency_hz": 5.68,
+      "objects": [
+        [
+          "seed satchel",
+          "Ivo",
+          "resource"
+        ],
+        [
+          "market token",
+          "Mara",
+          "trade"
+        ],
+        [
+          "dry cord",
+          "Pim",
+          "repair"
+        ],
+        [
+          "apple wrap",
+          "shared",
+          "care"
+        ]
+      ],
+      "residents": [
+        "Ivo",
+        "Mara",
+        "Pim"
+      ],
+      "rooms": [
+        "arrival court",
+        "seed lane",
+        "mud row",
+        "market plank",
+        "satchel shed"
+      ],
+      "safe_room": "seed lane",
+      "settlement_id": "orchard",
+      "smell_cue": "apple soil",
+      "sound_cue": "cart creak",
+      "work_room": "market plank"
+    },
+    {
+      "dialect_id": "repair_ring-dialect-12",
+      "flower_node": "node-09",
+      "frequency_hz": 10.03,
+      "objects": [
+        [
+          "insulated tongs",
+          "Juno",
+          "repair"
+        ],
+        [
+          "copper wire",
+          "Pax",
+          "craft"
+        ],
+        [
+          "bell gauge",
+          "Vale",
+          "diagnostic"
+        ],
+        [
+          "cool cloth",
+          "shared",
+          "care"
+        ]
+      ],
+      "residents": [
+        "Juno",
+        "Pax",
+        "Vale"
+      ],
+      "rooms": [
+        "arrival court",
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "cool corner"
+      ],
+      "safe_room": "wire bench",
+      "settlement_id": "repair_ring",
+      "smell_cue": "hot copper",
+      "sound_cue": "bell hum",
+      "work_room": "cool corner"
+    }
+  ]
+}

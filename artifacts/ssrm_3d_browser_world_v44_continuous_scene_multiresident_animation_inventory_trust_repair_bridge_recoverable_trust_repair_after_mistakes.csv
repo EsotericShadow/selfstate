@@ -1,0 +1,1098 @@
+tick_id,day,settlement_id,resident_id,object_id,mistake_label,repair_action,trust_before,trust_after,repair_need_before,repair_need_after,object_returned,apology_visible,space_given,repair_partial_not_magic,recovery_path_visible
+0,1,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.661,0.667,0.042,0.0312,False,False,False,True,True
+9,1,signal,Milo,signal lens,minor boundary strain,return_object,0.672,0.684,0.06,0.0384,True,False,False,True,True
+10,1,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.685,0.694,0.042,0.0258,False,False,True,True,True
+12,1,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.667,0.679,0.0312,0.0096,True,False,False,True,True
+13,1,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.685,0.694,0.042,0.0258,False,False,True,True,True
+26,2,signal,Kesh,signal lens,minor boundary strain,return_object,0.672,0.684,0.06,0.0384,True,False,False,True,True
+27,2,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.667,0.676,0.042,0.0258,False,False,True,True,True
+29,2,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.654,0.666,0.06,0.0384,True,False,False,True,True
+30,2,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.667,0.676,0.042,0.0258,False,False,True,True,True
+43,3,signal,Ren,signal lens,minor boundary strain,return_object,0.66,0.672,0.06,0.0384,True,False,False,True,True
+44,3,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.667,0.676,0.042,0.0258,False,False,True,True,True
+46,3,riverbend,Lio,ridge lantern,minor boundary strain,return_object,0.666,0.678,0.06,0.0384,True,False,False,True,True
+47,3,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.667,0.676,0.042,0.0258,False,False,True,True,True
+60,4,signal,Milo,signal lens,minor boundary strain,return_object,0.69,0.702,0.0384,0.0168,True,False,False,True,True
+61,4,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.707,0.716,0.0078,0.0,False,False,True,True,True
+63,4,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.685,0.697,0.0096,0.0,True,False,False,True,True
+64,4,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.707,0.716,0.0078,0.0,False,False,True,True,True
+77,5,signal,Kesh,signal lens,minor boundary strain,return_object,0.69,0.702,0.0384,0.0168,True,False,False,True,True
+78,5,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.689,0.698,0.0078,0.0,False,False,True,True,True
+80,5,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.672,0.684,0.0384,0.0168,True,False,False,True,True
+81,5,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.689,0.698,0.0078,0.0,False,False,True,True,True
+94,6,signal,Ren,signal lens,minor boundary strain,return_object,0.678,0.69,0.0384,0.0168,True,False,False,True,True
+95,6,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.683,0.692,0.0078,0.0,False,False,True,True,True
+97,6,riverbend,Lio,ridge lantern,minor boundary strain,return_object,0.684,0.696,0.0384,0.0168,True,False,False,True,True
+98,6,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.689,0.698,0.0078,0.0,False,False,True,True,True
+107,6,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.692,0.704,0.0,0.0,True,False,False,True,True
+111,7,signal,Milo,signal lens,minor boundary strain,return_object,0.708,0.72,0.0168,0.0,True,False,False,True,True
+112,7,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.723,0.732,0.0,0.0,False,False,True,True,True
+114,7,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.703,0.715,0.0,0.0,True,False,False,True,True
+115,7,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.729,0.738,0.0,0.0,False,False,True,True,True
+124,7,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.732,0.744,0.0,0.0,True,False,False,True,True
+125,7,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.712,0.726,0.0,0.0,False,True,False,True,True
+128,8,signal,Kesh,signal lens,minor boundary strain,return_object,0.708,0.72,0.0168,0.0,True,False,False,True,True
+129,8,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.705,0.714,0.0,0.0,False,False,True,True,True
+131,8,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.69,0.702,0.0168,0.0,True,False,False,True,True
+132,8,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.711,0.72,0.0,0.0,False,False,True,True,True
+140,8,signal,Kesh,signal lens,object mistake,pickup_owned_object,0.692,0.692,0.17,0.17,False,False,False,True,True
+141,8,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.714,0.726,0.0,0.0,True,False,False,True,True
+142,8,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.694,0.708,0.0,0.0,False,True,False,True,True
+145,9,signal,Ren,signal lens,minor boundary strain,return_object,0.708,0.72,0.0,0.0,True,False,False,True,True
+146,9,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.711,0.72,0.0,0.0,False,False,True,True,True
+148,9,riverbend,Lio,ridge lantern,minor boundary strain,return_object,0.702,0.714,0.0168,0.0,True,False,False,True,True
+149,9,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.705,0.714,0.0,0.0,False,False,True,True,True
+158,9,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.72,0.732,0.0,0.0,True,False,False,True,True
+159,9,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.718,0.732,0.0,0.0,False,True,False,True,True
+160,9,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.686,0.686,0.17,0.17,False,False,False,True,True
+161,9,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.714,0.726,0.0,0.0,True,False,False,True,True
+162,10,signal,Milo,signal lens,minor boundary strain,return_object,0.716,0.728,0.0,0.0,True,False,False,True,True
+163,10,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.751,0.76,0.0,0.0,False,False,True,True,True
+165,10,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.733,0.745,0.0,0.0,True,False,False,True,True
+166,10,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.745,0.754,0.0,0.0,False,False,True,True,True
+175,10,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.76,0.772,0.0,0.0,True,False,False,True,True
+176,10,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.75,0.764,0.0,0.0,False,True,False,True,True
+178,10,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.754,0.766,0.0,0.0,True,False,False,True,True
+179,10,archive,Vell,clean cloth,minor boundary strain,apologize,0.719,0.733,0.0,0.0,False,True,False,True,True
+180,11,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.733,0.742,0.0,0.0,False,False,True,True,True
+182,11,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.698,0.71,0.0,0.0,True,False,False,True,True
+183,11,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.727,0.736,0.0,0.0,False,False,True,True,True
+192,11,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.742,0.754,0.0,0.0,True,False,False,True,True
+193,11,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.732,0.746,0.0,0.0,False,True,False,True,True
+195,11,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.736,0.748,0.0,0.0,True,False,False,True,True
+196,11,archive,Toma,clean cloth,minor boundary strain,apologize,0.719,0.733,0.0,0.0,False,True,False,True,True
+197,11,signal,Kesh,mast rope,object mistake,offer_help,0.705,0.711,0.152,0.1412,False,False,False,True,True
+199,12,riverbend,Lio,ridge lantern,object mistake,return_object,0.692,0.704,0.17,0.1484,True,False,False,True,True
+200,12,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.733,0.742,0.0,0.0,False,False,True,True,True
+209,12,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.732,0.744,0.0,0.0,True,False,False,True,True
+210,12,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.756,0.77,0.0,0.0,False,True,False,True,True
+212,12,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.742,0.754,0.0,0.0,True,False,False,True,True
+213,12,archive,Nia,clean cloth,minor boundary strain,apologize,0.707,0.721,0.0,0.0,False,True,False,True,True
+214,12,signal,Ren,mast rope,minor boundary strain,offer_help,0.733,0.739,0.0,0.0,False,False,False,True,True
+216,13,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.751,0.763,0.0,0.0,True,False,False,True,True
+217,13,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.773,0.782,0.0,0.0,False,False,True,True,True
+225,13,signal,Milo,signal lens,object mistake,pickup_owned_object,0.706,0.706,0.17,0.17,False,False,False,True,True
+226,13,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.772,0.784,0.0,0.0,True,False,False,True,True
+227,13,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.781,0.795,0.0,0.0,False,True,False,True,True
+229,13,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.782,0.794,0.0,0.0,True,False,False,True,True
+230,13,archive,Vell,clean cloth,minor boundary strain,apologize,0.757,0.771,0.0,0.0,False,True,False,True,True
+231,13,signal,Milo,mast rope,object mistake,offer_help,0.713,0.719,0.152,0.1412,False,False,False,True,True
+234,14,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.755,0.764,0.0,0.0,False,False,True,True,True
+243,14,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.754,0.766,0.0,0.0,True,False,False,True,True
+244,14,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.763,0.777,0.0,0.0,False,True,False,True,True
+245,14,riverbend,Cee,ridge lantern,object mistake,pickup_owned_object,0.688,0.688,0.17,0.17,False,False,False,True,True
+246,14,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.764,0.776,0.0,0.0,True,False,False,True,True
+247,14,archive,Toma,clean cloth,minor boundary strain,apologize,0.757,0.771,0.0,0.0,False,True,False,True,True
+248,14,signal,Kesh,mast rope,object mistake,offer_help,0.724,0.73,0.1232,0.1124,False,False,False,True,True
+251,14,riverbend,Cee,dry shawl,object mistake,offer_help,0.695,0.701,0.152,0.1412,False,False,False,True,True
+260,15,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.744,0.756,0.0,0.0,True,False,False,True,True
+261,15,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.787,0.801,0.0,0.0,False,True,False,True,True
+263,15,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.754,0.766,0.0,0.0,True,False,False,True,True
+264,15,archive,Nia,clean cloth,minor boundary strain,apologize,0.745,0.759,0.0,0.0,False,True,False,True,True
+265,15,signal,Ren,mast rope,minor boundary strain,offer_help,0.742,0.748,0.0,0.0,False,False,False,True,True
+268,15,riverbend,Lio,dry shawl,object mistake,offer_help,0.717,0.723,0.1304,0.1196,False,False,False,True,True
+277,16,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.784,0.796,0.0,0.0,True,False,False,True,True
+278,16,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.812,0.826,0.0,0.0,False,True,False,True,True
+280,16,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.794,0.806,0.0,0.0,True,False,False,True,True
+281,16,archive,Vell,clean cloth,minor boundary strain,apologize,0.788,0.802,0.0,0.0,False,True,False,True,True
+282,16,signal,Milo,mast rope,object mistake,offer_help,0.732,0.738,0.1232,0.1124,False,False,False,True,True
+285,16,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.766,0.772,0.0,0.0,False,False,False,True,True
+294,17,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.766,0.778,0.0,0.0,True,False,False,True,True
+295,17,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.794,0.808,0.0,0.0,False,True,False,True,True
+297,17,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.776,0.788,0.0,0.0,True,False,False,True,True
+298,17,archive,Toma,clean cloth,minor boundary strain,apologize,0.788,0.802,0.0,0.0,False,True,False,True,True
+299,17,signal,Kesh,mast rope,minor boundary strain,offer_help,0.743,0.749,0.0944,0.0836,False,False,False,True,True
+302,17,riverbend,Cee,dry shawl,object mistake,offer_help,0.714,0.72,0.1232,0.1124,False,False,False,True,True
+310,18,signal,Ren,signal lens,object mistake,pickup_owned_object,0.726,0.726,0.17,0.17,False,False,False,True,True
+311,18,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.756,0.768,0.0,0.0,True,False,False,True,True
+312,18,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.818,0.832,0.0,0.0,False,True,False,True,True
+314,18,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.766,0.778,0.0,0.0,True,False,False,True,True
+315,18,archive,Nia,clean cloth,minor boundary strain,apologize,0.776,0.79,0.0,0.0,False,True,False,True,True
+316,18,signal,Ren,mast rope,object mistake,offer_help,0.733,0.739,0.152,0.1412,False,False,False,True,True
+319,18,riverbend,Lio,dry shawl,minor boundary strain,offer_help,0.736,0.742,0.1016,0.0908,False,False,False,True,True
+328,19,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.796,0.808,0.0,0.0,True,False,False,True,True
+329,19,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.839,0.853,0.0,0.0,False,True,False,True,True
+330,19,riverbend,Ari,ridge lantern,object mistake,pickup_owned_object,0.75,0.75,0.17,0.17,False,False,False,True,True
+331,19,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.806,0.818,0.0,0.0,True,False,False,True,True
+332,19,archive,Vell,clean cloth,minor boundary strain,apologize,0.819,0.833,0.0,0.0,False,True,False,True,True
+333,19,signal,Milo,mast rope,minor boundary strain,offer_help,0.751,0.757,0.0944,0.0836,False,False,False,True,True
+336,19,riverbend,Ari,dry shawl,object mistake,offer_help,0.757,0.763,0.152,0.1412,False,False,False,True,True
+345,20,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.778,0.79,0.0,0.0,True,False,False,True,True
+346,20,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.821,0.835,0.0,0.0,False,True,False,True,True
+348,20,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.788,0.8,0.0,0.0,True,False,False,True,True
+349,20,archive,Toma,clean cloth,minor boundary strain,apologize,0.819,0.833,0.0,0.0,False,True,False,True,True
+350,20,signal,Kesh,mast rope,minor boundary strain,offer_help,0.752,0.758,0.0656,0.0548,False,False,False,True,True
+353,20,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.733,0.739,0.0944,0.0836,False,False,False,True,True
+362,21,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.774,0.786,0.0,0.0,True,False,False,True,True
+363,21,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.845,0.859,0.0,0.0,False,True,False,True,True
+365,21,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.778,0.79,0.0,0.0,True,False,False,True,True
+366,21,archive,Nia,clean cloth,minor boundary strain,apologize,0.807,0.821,0.0,0.0,False,True,False,True,True
+367,21,signal,Ren,mast rope,object mistake,offer_help,0.752,0.758,0.1232,0.1124,False,False,False,True,True
+370,21,riverbend,Lio,dry shawl,minor boundary strain,offer_help,0.745,0.751,0.0728,0.062,False,False,False,True,True
+379,22,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.814,0.826,0.0,0.0,True,False,False,True,True
+380,22,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.866,0.88,0.0,0.0,False,True,False,True,True
+382,22,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.818,0.83,0.0,0.0,True,False,False,True,True
+383,22,archive,Vell,clean cloth,minor boundary strain,apologize,0.846,0.86,0.0,0.0,False,True,False,True,True
+384,22,signal,Milo,mast rope,minor boundary strain,offer_help,0.77,0.776,0.0656,0.0548,False,False,False,True,True
+387,22,riverbend,Ari,dry shawl,object mistake,offer_help,0.776,0.782,0.1232,0.1124,False,False,False,True,True
+396,23,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.796,0.808,0.0,0.0,True,False,False,True,True
+397,23,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.848,0.862,0.0,0.0,False,True,False,True,True
+399,23,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.8,0.812,0.0,0.0,True,False,False,True,True
+400,23,archive,Toma,clean cloth,minor boundary strain,apologize,0.846,0.86,0.0,0.0,False,True,False,True,True
+401,23,signal,Kesh,mast rope,minor boundary strain,offer_help,0.771,0.777,0.0368,0.026,False,False,False,True,True
+404,23,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.752,0.758,0.0656,0.0548,False,False,False,True,True
+413,23,signal,Kesh,mast rope,minor boundary strain,return_object,0.789,0.801,0.0,0.0,True,False,False,True,True
+414,24,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.872,0.886,0.0,0.0,False,True,False,True,True
+415,24,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.729,0.729,0.232,0.232,False,False,False,True,True
+416,24,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.796,0.808,0.0,0.0,True,False,False,True,True
+417,24,archive,Nia,clean cloth,minor boundary strain,apologize,0.834,0.848,0.0,0.0,False,True,False,True,True
+418,24,signal,Ren,mast rope,minor boundary strain,offer_help,0.771,0.777,0.0944,0.0836,False,False,False,True,True
+421,24,riverbend,Lio,dry shawl,object mistake,offer_help,0.736,0.742,0.214,0.2032,False,False,False,True,True
+427,24,riverbend,Lio,ridge lantern,object mistake,approach_group,0.742,0.742,0.2032,0.2032,False,False,False,True,True
+430,24,signal,Ren,mast rope,minor boundary strain,return_object,0.777,0.789,0.0836,0.062,True,False,False,True,True
+431,24,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.805,0.814,0.0,0.0,False,False,True,True,True
+433,25,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.836,0.848,0.0,0.0,True,False,False,True,True
+434,25,archive,Vell,clean cloth,minor boundary strain,apologize,0.873,0.887,0.0,0.0,False,True,False,True,True
+435,25,signal,Milo,mast rope,minor boundary strain,offer_help,0.795,0.801,0.0368,0.026,False,False,False,True,True
+438,25,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.795,0.801,0.0944,0.0836,False,False,False,True,True
+447,25,signal,Milo,mast rope,minor boundary strain,return_object,0.801,0.813,0.026,0.0044,True,False,False,True,True
+448,25,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.845,0.854,0.0,0.0,False,False,True,True,True
+450,26,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.818,0.83,0.0,0.0,True,False,False,True,True
+451,26,archive,Toma,clean cloth,minor boundary strain,apologize,0.873,0.887,0.0,0.0,False,True,False,True,True
+452,26,signal,Kesh,mast rope,minor boundary strain,offer_help,0.82,0.826,0.0,0.0,False,False,False,True,True
+455,26,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.761,0.767,0.0368,0.026,False,False,False,True,True
+464,26,signal,Kesh,mast rope,minor boundary strain,return_object,0.826,0.838,0.0,0.0,True,False,False,True,True
+465,26,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.827,0.836,0.0,0.0,False,False,True,True,True
+467,26,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.779,0.791,0.0,0.0,True,False,False,True,True
+468,27,archive,Nia,clean cloth,minor boundary strain,apologize,0.861,0.875,0.0,0.0,False,True,False,True,True
+469,27,signal,Ren,mast rope,minor boundary strain,offer_help,0.808,0.814,0.044,0.0332,False,False,False,True,True
+472,27,riverbend,Lio,dry shawl,object mistake,offer_help,0.755,0.761,0.1852,0.1744,False,False,False,True,True
+481,27,signal,Ren,mast rope,minor boundary strain,return_object,0.814,0.826,0.0332,0.0116,True,False,False,True,True
+482,27,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.827,0.836,0.0,0.0,False,False,True,True,True
+484,27,riverbend,Lio,dry shawl,object mistake,return_object,0.761,0.773,0.1744,0.1528,True,False,False,True,True
+485,27,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.827,0.836,0.0,0.0,False,False,True,True,True
+486,28,signal,Milo,mast rope,minor boundary strain,offer_help,0.832,0.838,0.0,0.0,False,False,False,True,True
+489,28,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.82,0.826,0.0656,0.0548,False,False,False,True,True
+498,28,signal,Milo,mast rope,minor boundary strain,return_object,0.838,0.85,0.0,0.0,True,False,False,True,True
+499,28,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.867,0.876,0.0,0.0,False,False,True,True,True
+501,28,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.826,0.838,0.0548,0.0332,True,False,False,True,True
+502,28,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.867,0.876,0.0,0.0,False,False,True,True,True
+506,29,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.81,0.816,0.0,0.0,False,False,False,True,True
+515,29,signal,Kesh,mast rope,minor boundary strain,return_object,0.85,0.862,0.0,0.0,True,False,False,True,True
+516,29,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.849,0.858,0.0,0.0,False,False,True,True,True
+518,29,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.816,0.828,0.0,0.0,True,False,False,True,True
+519,29,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.849,0.858,0.0,0.0,False,False,True,True,True
+523,30,riverbend,Lio,dry shawl,object mistake,offer_help,0.792,0.798,0.1348,0.124,False,False,False,True,True
+532,30,signal,Ren,mast rope,minor boundary strain,return_object,0.838,0.85,0.0116,0.0,True,False,False,True,True
+533,30,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.849,0.858,0.0,0.0,False,False,True,True,True
+535,30,riverbend,Lio,dry shawl,object mistake,return_object,0.798,0.81,0.124,0.1024,True,False,False,True,True
+536,30,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.849,0.858,0.0,0.0,False,False,True,True,True
+540,31,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.857,0.863,0.0152,0.0044,False,False,False,True,True
+549,31,signal,Milo,mast rope,minor boundary strain,return_object,0.856,0.868,0.0,0.0,True,False,False,True,True
+550,31,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.889,0.898,0.0,0.0,False,False,True,True,True
+552,31,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.863,0.875,0.0044,0.0,True,False,False,True,True
+553,31,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.889,0.898,0.0,0.0,False,False,True,True,True
+566,32,signal,Kesh,mast rope,minor boundary strain,return_object,0.868,0.88,0.0,0.0,True,False,False,True,True
+567,32,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.871,0.88,0.0,0.0,False,False,True,True,True
+569,32,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.84,0.852,0.0,0.0,True,False,False,True,True
+570,32,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.871,0.88,0.0,0.0,False,False,True,True,True
+583,33,signal,Ren,mast rope,minor boundary strain,return_object,0.856,0.868,0.0,0.0,True,False,False,True,True
+584,33,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.871,0.88,0.0,0.0,False,False,True,True,True
+586,33,riverbend,Lio,dry shawl,minor boundary strain,return_object,0.822,0.834,0.1024,0.0808,True,False,False,True,True
+587,33,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.871,0.88,0.0,0.0,False,False,True,True,True
+600,34,signal,Milo,mast rope,minor boundary strain,return_object,0.874,0.886,0.0,0.0,True,False,False,True,True
+601,34,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.911,0.92,0.0,0.0,False,False,True,True,True
+603,34,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.881,0.893,0.0,0.0,True,False,False,True,True
+604,34,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.911,0.92,0.0,0.0,False,False,True,True,True
+617,35,signal,Kesh,mast rope,minor boundary strain,return_object,0.886,0.898,0.0,0.0,True,False,False,True,True
+618,35,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.893,0.902,0.0,0.0,False,False,True,True,True
+620,35,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.858,0.87,0.0,0.0,True,False,False,True,True
+621,35,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.893,0.902,0.0,0.0,False,False,True,True,True
+634,36,signal,Ren,mast rope,minor boundary strain,return_object,0.874,0.886,0.0,0.0,True,False,False,True,True
+635,36,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.887,0.896,0.0,0.0,False,False,True,True,True
+637,36,riverbend,Lio,dry shawl,minor boundary strain,return_object,0.84,0.852,0.0808,0.0592,True,False,False,True,True
+638,36,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.893,0.902,0.0,0.0,False,False,True,True,True
+647,36,orchard,Pim,market token,minor boundary strain,drop_object,0.896,0.908,0.0,0.0,True,False,False,True,True
+651,37,signal,Milo,mast rope,minor boundary strain,return_object,0.892,0.904,0.0,0.0,True,False,False,True,True
+652,37,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.927,0.936,0.0,0.0,False,False,True,True,True
+654,37,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.899,0.911,0.0,0.0,True,False,False,True,True
+655,37,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.933,0.942,0.0,0.0,False,False,True,True,True
+664,37,orchard,Mara,market token,minor boundary strain,drop_object,0.936,0.948,0.0,0.0,True,False,False,True,True
+665,37,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.94,0.954,0.0,0.0,False,True,False,True,True
+668,38,signal,Kesh,mast rope,minor boundary strain,return_object,0.904,0.916,0.0,0.0,True,False,False,True,True
+669,38,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.909,0.918,0.0,0.0,False,False,True,True,True
+671,38,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.876,0.888,0.0,0.0,True,False,False,True,True
+672,38,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.915,0.924,0.0,0.0,False,False,True,True,True
+680,38,signal,Kesh,mast rope,object mistake,pickup_owned_object,0.888,0.888,0.17,0.17,False,False,False,True,True
+681,38,orchard,Ivo,market token,minor boundary strain,drop_object,0.918,0.93,0.0,0.0,True,False,False,True,True
+682,38,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.922,0.936,0.0,0.0,False,True,False,True,True
+685,39,signal,Ren,mast rope,minor boundary strain,return_object,0.904,0.916,0.0,0.0,True,False,False,True,True
+686,39,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.915,0.924,0.0,0.0,False,False,True,True,True
+688,39,riverbend,Lio,dry shawl,minor boundary strain,return_object,0.858,0.87,0.0592,0.0376,True,False,False,True,True
+689,39,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.909,0.918,0.0,0.0,False,False,True,True,True
+698,39,orchard,Pim,market token,minor boundary strain,drop_object,0.924,0.936,0.0,0.0,True,False,False,True,True
+699,39,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.946,0.96,0.0,0.0,False,True,False,True,True
+700,39,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.842,0.842,0.2076,0.2076,False,False,False,True,True
+701,39,roofward,Orr,sun lens,minor boundary strain,drop_object,0.918,0.93,0.0,0.0,True,False,False,True,True
+702,40,signal,Milo,mast rope,minor boundary strain,return_object,0.9,0.912,0.0,0.0,True,False,False,True,True
+703,40,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.955,0.964,0.0,0.0,False,False,True,True,True
+705,40,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.929,0.941,0.0,0.0,True,False,False,True,True
+706,40,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.949,0.958,0.0,0.0,False,False,True,True,True
+715,40,orchard,Mara,market token,minor boundary strain,drop_object,0.964,0.976,0.0,0.0,True,False,False,True,True
+716,40,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.978,0.98,0.0,0.0,False,True,False,True,True
+718,40,roofward,Sera,sun lens,minor boundary strain,drop_object,0.958,0.97,0.0,0.0,True,False,False,True,True
+719,40,archive,Vell,ink ribbon,minor boundary strain,apologize,0.947,0.961,0.0,0.0,False,True,False,True,True
+720,41,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.937,0.946,0.0,0.0,False,False,True,True,True
+722,41,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.884,0.896,0.0,0.0,True,False,False,True,True
+723,41,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.931,0.94,0.0,0.0,False,False,True,True,True
+732,41,orchard,Ivo,market token,minor boundary strain,drop_object,0.946,0.958,0.0,0.0,True,False,False,True,True
+733,41,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.96,0.974,0.0,0.0,False,True,False,True,True
+735,41,roofward,Fay,sun lens,minor boundary strain,drop_object,0.94,0.952,0.0,0.0,True,False,False,True,True
+736,41,archive,Toma,ink ribbon,minor boundary strain,apologize,0.947,0.961,0.0,0.0,False,True,False,True,True
+737,41,signal,Kesh,signal lens,object mistake,offer_help,0.901,0.907,0.152,0.1412,False,False,False,True,True
+739,42,riverbend,Lio,dry shawl,object mistake,return_object,0.848,0.86,0.2076,0.186,True,False,False,True,True
+740,42,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.937,0.946,0.0,0.0,False,False,True,True,True
+745,42,riverbend,Lio,ridge lantern,object mistake,move_forward,0.86,0.86,0.186,0.186,False,False,False,True,True
+749,42,orchard,Pim,market token,minor boundary strain,drop_object,0.936,0.948,0.0,0.0,True,False,False,True,True
+750,42,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+751,42,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.86,0.86,0.186,0.186,False,False,False,True,True
+752,42,roofward,Orr,sun lens,minor boundary strain,drop_object,0.946,0.958,0.0,0.0,True,False,False,True,True
+753,42,archive,Nia,ink ribbon,minor boundary strain,apologize,0.935,0.949,0.0,0.0,False,True,False,True,True
+754,42,signal,Ren,signal lens,minor boundary strain,offer_help,0.929,0.935,0.0,0.0,False,False,False,True,True
+756,43,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.947,0.959,0.0,0.0,True,False,False,True,True
+757,43,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.977,0.98,0.0,0.0,False,False,True,True,True
+765,43,signal,Milo,mast rope,object mistake,pickup_owned_object,0.89,0.89,0.17,0.17,False,False,False,True,True
+766,43,orchard,Mara,market token,minor boundary strain,drop_object,0.976,0.98,0.0,0.0,True,False,False,True,True
+767,43,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+769,43,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+770,43,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+771,43,signal,Milo,signal lens,object mistake,offer_help,0.897,0.903,0.152,0.1412,False,False,False,True,True
+774,44,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.959,0.968,0.0,0.0,False,False,True,True,True
+783,44,orchard,Ivo,market token,minor boundary strain,drop_object,0.958,0.97,0.0,0.0,True,False,False,True,True
+784,44,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+785,44,riverbend,Cee,dry shawl,object mistake,pickup_owned_object,0.874,0.874,0.17,0.17,False,False,False,True,True
+786,44,roofward,Fay,sun lens,minor boundary strain,drop_object,0.968,0.98,0.0,0.0,True,False,False,True,True
+787,44,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+788,44,signal,Kesh,signal lens,object mistake,offer_help,0.92,0.926,0.1232,0.1124,False,False,False,True,True
+791,44,riverbend,Cee,ridge lantern,object mistake,offer_help,0.881,0.887,0.152,0.1412,False,False,False,True,True
+796,45,riverbend,Lio,ridge lantern,object mistake,move_forward,0.866,0.866,0.186,0.186,False,False,False,True,True
+800,45,orchard,Pim,market token,minor boundary strain,drop_object,0.948,0.96,0.0,0.0,True,False,False,True,True
+801,45,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+802,45,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.866,0.866,0.186,0.186,False,False,False,True,True
+803,45,roofward,Orr,sun lens,minor boundary strain,drop_object,0.958,0.97,0.0,0.0,True,False,False,True,True
+804,45,archive,Nia,ink ribbon,minor boundary strain,apologize,0.973,0.98,0.0,0.0,False,True,False,True,True
+805,45,signal,Ren,signal lens,minor boundary strain,offer_help,0.938,0.944,0.0,0.0,False,False,False,True,True
+808,45,riverbend,Lio,ridge lantern,object mistake,offer_help,0.873,0.879,0.168,0.1572,False,False,False,True,True
+817,46,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+818,46,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+820,46,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+821,46,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+822,46,signal,Milo,signal lens,object mistake,offer_help,0.916,0.922,0.1232,0.1124,False,False,False,True,True
+825,46,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.962,0.968,0.0,0.0,False,False,False,True,True
+834,47,orchard,Ivo,market token,minor boundary strain,drop_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+835,47,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+837,47,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+838,47,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+839,47,signal,Kesh,signal lens,minor boundary strain,offer_help,0.939,0.945,0.0944,0.0836,False,False,False,True,True
+842,47,riverbend,Cee,ridge lantern,object mistake,offer_help,0.9,0.906,0.1232,0.1124,False,False,False,True,True
+850,48,signal,Ren,mast rope,object mistake,pickup_owned_object,0.922,0.922,0.17,0.17,False,False,False,True,True
+851,48,orchard,Pim,market token,minor boundary strain,drop_object,0.96,0.972,0.0,0.0,True,False,False,True,True
+852,48,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+854,48,roofward,Orr,sun lens,minor boundary strain,drop_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+855,48,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+856,48,signal,Ren,signal lens,object mistake,offer_help,0.929,0.935,0.152,0.1412,False,False,False,True,True
+859,48,riverbend,Lio,ridge lantern,object mistake,offer_help,0.892,0.898,0.1392,0.1284,False,False,False,True,True
+868,49,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+869,49,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+870,49,riverbend,Ari,dry shawl,object mistake,pickup_owned_object,0.946,0.946,0.17,0.17,False,False,False,True,True
+871,49,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+872,49,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+873,49,signal,Milo,signal lens,minor boundary strain,offer_help,0.935,0.941,0.0944,0.0836,False,False,False,True,True
+876,49,riverbend,Ari,ridge lantern,object mistake,offer_help,0.953,0.959,0.152,0.1412,False,False,False,True,True
+885,50,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+886,50,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+888,50,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+889,50,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+890,50,signal,Kesh,signal lens,minor boundary strain,offer_help,0.948,0.954,0.0656,0.0548,False,False,False,True,True
+893,50,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.919,0.925,0.0944,0.0836,False,False,False,True,True
+902,51,orchard,Pim,market token,minor boundary strain,drop_object,0.978,0.98,0.0,0.0,True,False,False,True,True
+903,51,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+905,51,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+906,51,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+907,51,signal,Ren,signal lens,object mistake,offer_help,0.948,0.954,0.1232,0.1124,False,False,False,True,True
+910,51,riverbend,Lio,ridge lantern,minor boundary strain,offer_help,0.901,0.907,0.1104,0.0996,False,False,False,True,True
+919,52,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+920,52,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+922,52,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+923,52,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+924,52,signal,Milo,signal lens,minor boundary strain,offer_help,0.954,0.96,0.0656,0.0548,False,False,False,True,True
+927,52,riverbend,Ari,ridge lantern,object mistake,offer_help,0.972,0.978,0.1232,0.1124,False,False,False,True,True
+936,53,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+937,53,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+939,53,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+940,53,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+941,53,signal,Kesh,signal lens,minor boundary strain,offer_help,0.967,0.973,0.0368,0.026,False,False,False,True,True
+944,53,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.938,0.944,0.0656,0.0548,False,False,False,True,True
+953,53,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+954,54,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+955,54,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.885,0.885,0.2696,0.2696,False,False,False,True,True
+956,54,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+957,54,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+958,54,signal,Ren,signal lens,minor boundary strain,offer_help,0.967,0.973,0.0944,0.0836,False,False,False,True,True
+961,54,riverbend,Lio,ridge lantern,object mistake,offer_help,0.892,0.898,0.2516,0.2408,False,False,False,True,True
+967,54,riverbend,Lio,dry shawl,object mistake,approach_group,0.898,0.898,0.2408,0.2408,False,False,False,True,True
+970,54,signal,Ren,signal lens,minor boundary strain,return_object,0.973,0.98,0.0836,0.062,True,False,False,True,True
+971,54,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+973,55,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+974,55,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+975,55,signal,Milo,signal lens,minor boundary strain,offer_help,0.979,0.98,0.0368,0.026,False,False,False,True,True
+978,55,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+987,55,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.026,0.0044,True,False,False,True,True
+988,55,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+990,56,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+991,56,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+992,56,signal,Kesh,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+995,56,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.947,0.953,0.0368,0.026,False,False,False,True,True
+1004,56,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1005,56,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1007,56,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.965,0.977,0.0,0.0,True,False,False,True,True
+1008,57,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1009,57,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.044,0.0332,False,False,False,True,True
+1012,57,riverbend,Lio,ridge lantern,object mistake,offer_help,0.911,0.917,0.2228,0.212,False,False,False,True,True
+1018,57,riverbend,Lio,dry shawl,object mistake,approach_group,0.917,0.917,0.212,0.212,False,False,False,True,True
+1021,57,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0332,0.0116,True,False,False,True,True
+1022,57,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1024,57,riverbend,Lio,ridge lantern,object mistake,return_object,0.917,0.929,0.212,0.1904,True,False,False,True,True
+1025,57,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1026,58,signal,Milo,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1029,58,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+1038,58,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1039,58,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1041,58,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0548,0.0332,True,False,False,True,True
+1042,58,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1046,59,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1055,59,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1056,59,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1058,59,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1059,59,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1063,60,riverbend,Lio,ridge lantern,object mistake,offer_help,0.948,0.954,0.1724,0.1616,False,False,False,True,True
+1072,60,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0116,0.0,True,False,False,True,True
+1073,60,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1075,60,riverbend,Lio,ridge lantern,object mistake,return_object,0.954,0.966,0.1616,0.14,True,False,False,True,True
+1076,60,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1080,61,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0152,0.0044,False,False,False,True,True
+1089,61,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1090,61,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1092,61,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0044,0.0,True,False,False,True,True
+1093,61,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1106,62,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1107,62,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1109,62,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1110,62,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1123,63,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1124,63,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1126,63,riverbend,Lio,ridge lantern,object mistake,return_object,0.978,0.98,0.14,0.1184,True,False,False,True,True
+1127,63,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1140,64,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1141,64,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1143,64,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1144,64,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1157,65,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1158,65,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1160,65,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1161,65,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1174,66,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1175,66,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1177,66,riverbend,Lio,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.1184,0.0968,True,False,False,True,True
+1178,66,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1187,66,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1191,67,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1192,67,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1194,67,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1195,67,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1204,67,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1205,67,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1208,68,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1209,68,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1211,68,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1212,68,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1220,68,signal,Kesh,signal lens,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1221,68,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1222,68,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1225,69,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1226,69,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1228,69,riverbend,Lio,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0968,0.0752,True,False,False,True,True
+1229,69,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1238,69,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1239,69,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1240,69,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.2452,0.2452,False,False,False,True,True
+1241,69,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1242,70,signal,Milo,signal lens,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+1243,70,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1245,70,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1246,70,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1255,70,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1256,70,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1258,70,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1259,70,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1260,71,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1262,71,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+1263,71,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1272,71,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1273,71,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1275,71,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1276,71,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1277,71,signal,Kesh,mast rope,object mistake,offer_help,0.965,0.971,0.152,0.1412,False,False,False,True,True
+1279,72,riverbend,Lio,ridge lantern,object mistake,return_object,0.958,0.97,0.2452,0.2236,True,False,False,True,True
+1280,72,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1285,72,riverbend,Lio,dry shawl,object mistake,move_forward,0.97,0.97,0.2236,0.2236,False,False,False,True,True
+1289,72,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1290,72,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1291,72,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.97,0.97,0.2236,0.2236,False,False,False,True,True
+1292,72,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1293,72,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1294,72,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1296,73,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1297,73,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1305,73,signal,Milo,signal lens,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1306,73,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1307,73,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1309,73,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1310,73,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1311,73,signal,Milo,mast rope,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1314,74,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1323,74,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1324,74,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1325,74,riverbend,Cee,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1326,74,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1327,74,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1328,74,signal,Kesh,mast rope,object mistake,offer_help,0.98,0.98,0.1232,0.1124,False,False,False,True,True
+1331,74,riverbend,Cee,dry shawl,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1336,75,riverbend,Lio,dry shawl,object mistake,move_forward,0.976,0.976,0.2236,0.2236,False,False,False,True,True
+1340,75,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1341,75,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1342,75,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.976,0.976,0.2236,0.2236,False,False,False,True,True
+1343,75,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1344,75,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1345,75,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1348,75,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.2056,0.1948,False,False,False,True,True
+1357,76,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1358,76,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1360,76,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1361,76,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1362,76,signal,Milo,mast rope,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1365,76,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1374,77,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1375,77,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1377,77,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1378,77,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1379,77,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1382,77,riverbend,Cee,dry shawl,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1387,78,riverbend,Lio,dry shawl,object mistake,move_forward,0.98,0.98,0.1948,0.1948,False,False,False,True,True
+1390,78,signal,Ren,signal lens,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1391,78,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1392,78,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1393,78,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.98,0.98,0.1948,0.1948,False,False,False,True,True
+1394,78,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1395,78,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1396,78,signal,Ren,mast rope,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1399,78,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.1768,0.166,False,False,False,True,True
+1408,79,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1409,79,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1410,79,riverbend,Ari,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1411,79,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1412,79,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1413,79,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1416,79,riverbend,Ari,dry shawl,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1425,80,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1426,80,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1428,80,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1429,80,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1430,80,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+1433,80,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1442,81,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1443,81,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1445,81,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1446,81,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1447,81,signal,Ren,mast rope,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1450,81,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.148,0.1372,False,False,False,True,True
+1459,82,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1460,82,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1462,82,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1463,82,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1464,82,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+1467,82,riverbend,Ari,dry shawl,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1476,83,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1477,83,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1479,83,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1480,83,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1481,83,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+1484,83,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+1493,83,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1494,84,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1495,84,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.3072,0.3072,False,False,False,True,True
+1496,84,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1497,84,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1498,84,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1501,84,riverbend,Lio,dry shawl,object mistake,offer_help,0.959,0.965,0.2892,0.2784,False,False,False,True,True
+1507,84,riverbend,Lio,ridge lantern,object mistake,approach_group,0.965,0.965,0.2784,0.2784,False,False,False,True,True
+1510,84,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0836,0.062,True,False,False,True,True
+1511,84,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1513,85,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1514,85,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1515,85,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+1518,85,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1527,85,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.026,0.0044,True,False,False,True,True
+1528,85,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1530,86,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1531,86,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1532,86,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1535,86,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+1544,86,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1545,86,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1547,86,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1548,87,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1549,87,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.044,0.0332,False,False,False,True,True
+1552,87,riverbend,Lio,dry shawl,object mistake,offer_help,0.978,0.98,0.2604,0.2496,False,False,False,True,True
+1558,87,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.2496,0.2496,False,False,False,True,True
+1561,87,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0332,0.0116,True,False,False,True,True
+1562,87,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1564,87,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.2496,0.228,True,False,False,True,True
+1565,87,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1566,88,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1569,88,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+1578,88,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1579,88,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1581,88,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0548,0.0332,True,False,False,True,True
+1582,88,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1586,89,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1595,89,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1596,89,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1598,89,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1599,89,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1603,90,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.21,0.1992,False,False,False,True,True
+1609,90,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.1992,0.1992,False,False,False,True,True
+1612,90,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0116,0.0,True,False,False,True,True
+1613,90,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1615,90,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.1992,0.1776,True,False,False,True,True
+1616,90,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1620,91,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0152,0.0044,False,False,False,True,True
+1629,91,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1630,91,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1632,91,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0044,0.0,True,False,False,True,True
+1633,91,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1646,92,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1647,92,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1649,92,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1650,92,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1663,93,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1664,93,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1666,93,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.1776,0.156,True,False,False,True,True
+1667,93,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1680,94,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1681,94,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1683,94,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1684,94,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1697,95,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1698,95,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1700,95,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1701,95,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1714,96,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1715,96,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1717,96,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.156,0.1344,True,False,False,True,True
+1718,96,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1727,96,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1731,97,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1732,97,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1734,97,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1735,97,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1744,97,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1745,97,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1748,98,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1749,98,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1751,98,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1752,98,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1760,98,signal,Kesh,mast rope,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1761,98,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1762,98,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1765,99,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1766,99,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1768,99,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.1344,0.1128,True,False,False,True,True
+1769,99,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1778,99,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1779,99,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1780,99,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.952,0.952,0.2828,0.2828,False,False,False,True,True
+1781,99,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1782,100,signal,Milo,mast rope,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+1783,100,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1785,100,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1786,100,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1795,100,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1796,100,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1798,100,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1799,100,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1800,101,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1802,101,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+1803,101,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1812,101,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1813,101,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1815,101,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1816,101,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1817,101,signal,Kesh,signal lens,object mistake,offer_help,0.965,0.971,0.152,0.1412,False,False,False,True,True
+1819,102,riverbend,Lio,dry shawl,object mistake,return_object,0.958,0.97,0.2828,0.2612,True,False,False,True,True
+1820,102,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1825,102,riverbend,Lio,ridge lantern,object mistake,move_forward,0.97,0.97,0.2612,0.2612,False,False,False,True,True
+1829,102,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1830,102,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1831,102,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.97,0.97,0.2612,0.2612,False,False,False,True,True
+1832,102,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1833,102,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1834,102,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1836,103,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1837,103,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1845,103,signal,Milo,mast rope,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1846,103,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1847,103,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1849,103,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1850,103,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1851,103,signal,Milo,signal lens,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1854,104,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+1863,104,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1864,104,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1865,104,riverbend,Cee,dry shawl,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1866,104,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1867,104,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1868,104,signal,Kesh,signal lens,object mistake,offer_help,0.98,0.98,0.1232,0.1124,False,False,False,True,True
+1871,104,riverbend,Cee,ridge lantern,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1876,105,riverbend,Lio,ridge lantern,object mistake,move_forward,0.976,0.976,0.2612,0.2612,False,False,False,True,True
+1880,105,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1881,105,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1882,105,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.976,0.976,0.2612,0.2612,False,False,False,True,True
+1883,105,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1884,105,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1885,105,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1888,105,riverbend,Lio,ridge lantern,object mistake,offer_help,0.98,0.98,0.2432,0.2324,False,False,False,True,True
+1897,106,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1898,106,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1900,106,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1901,106,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1902,106,signal,Milo,signal lens,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1905,106,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+1914,107,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1915,107,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1917,107,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1918,107,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1919,107,signal,Kesh,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1922,107,riverbend,Cee,ridge lantern,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1927,108,riverbend,Lio,ridge lantern,object mistake,move_forward,0.98,0.98,0.2324,0.2324,False,False,False,True,True
+1930,108,signal,Ren,mast rope,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1931,108,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1932,108,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1933,108,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.98,0.98,0.2324,0.2324,False,False,False,True,True
+1934,108,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1935,108,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1936,108,signal,Ren,signal lens,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1939,108,riverbend,Lio,ridge lantern,object mistake,offer_help,0.98,0.98,0.2144,0.2036,False,False,False,True,True
+1948,109,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1949,109,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1950,109,riverbend,Ari,dry shawl,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+1951,109,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1952,109,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1953,109,signal,Milo,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1956,109,riverbend,Ari,ridge lantern,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+1965,110,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1966,110,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1968,110,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1969,110,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1970,110,signal,Kesh,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+1973,110,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+1982,111,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1983,111,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1984,111,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.976,0.976,0.2036,0.2036,False,False,False,True,True
+1985,111,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+1986,111,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+1987,111,signal,Ren,signal lens,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+1990,111,riverbend,Lio,ridge lantern,object mistake,offer_help,0.98,0.98,0.1856,0.1748,False,False,False,True,True
+1999,112,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2000,112,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2002,112,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2003,112,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2004,112,signal,Milo,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2007,112,riverbend,Ari,ridge lantern,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+2016,113,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2017,113,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2019,113,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2020,113,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2021,113,signal,Kesh,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+2024,113,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2033,113,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2034,114,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2035,114,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.952,0.952,0.3448,0.3448,False,False,False,True,True
+2036,114,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2037,114,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2038,114,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2041,114,riverbend,Lio,ridge lantern,object mistake,offer_help,0.959,0.965,0.3268,0.316,False,False,False,True,True
+2047,114,riverbend,Lio,dry shawl,object mistake,approach_group,0.965,0.965,0.316,0.316,False,False,False,True,True
+2050,114,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0836,0.062,True,False,False,True,True
+2051,114,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2053,115,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2054,115,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2055,115,signal,Milo,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+2058,115,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2067,115,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.026,0.0044,True,False,False,True,True
+2068,115,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2070,116,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2071,116,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2072,116,signal,Kesh,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2075,116,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+2084,116,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2085,116,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2087,116,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2088,117,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2089,117,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.044,0.0332,False,False,False,True,True
+2092,117,riverbend,Lio,ridge lantern,object mistake,offer_help,0.978,0.98,0.298,0.2872,False,False,False,True,True
+2098,117,riverbend,Lio,dry shawl,object mistake,approach_group,0.98,0.98,0.2872,0.2872,False,False,False,True,True
+2101,117,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0332,0.0116,True,False,False,True,True
+2102,117,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2104,117,riverbend,Lio,ridge lantern,object mistake,return_object,0.98,0.98,0.2872,0.2656,True,False,False,True,True
+2105,117,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2106,118,signal,Milo,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2109,118,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2118,118,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2119,118,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2121,118,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0548,0.0332,True,False,False,True,True
+2122,118,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2126,119,riverbend,Cee,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2135,119,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2136,119,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2138,119,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2139,119,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2143,120,riverbend,Lio,ridge lantern,object mistake,offer_help,0.98,0.98,0.2476,0.2368,False,False,False,True,True
+2149,120,riverbend,Lio,dry shawl,object mistake,approach_group,0.98,0.98,0.2368,0.2368,False,False,False,True,True
+2152,120,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0116,0.0,True,False,False,True,True
+2153,120,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2155,120,riverbend,Lio,ridge lantern,object mistake,return_object,0.98,0.98,0.2368,0.2152,True,False,False,True,True
+2156,120,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2160,121,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0152,0.0044,False,False,False,True,True
+2169,121,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2170,121,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2172,121,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0044,0.0,True,False,False,True,True
+2173,121,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2186,122,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2187,122,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2189,122,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2190,122,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2200,123,riverbend,Lio,dry shawl,object mistake,approach_group,0.98,0.98,0.2152,0.2152,False,False,False,True,True
+2203,123,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2204,123,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2206,123,riverbend,Lio,ridge lantern,object mistake,return_object,0.98,0.98,0.2152,0.1936,True,False,False,True,True
+2207,123,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2212,123,riverbend,Lio,dry shawl,object mistake,move_forward,0.98,0.98,0.1936,0.1936,False,False,False,True,True
+2220,124,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2221,124,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2223,124,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2224,124,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2237,125,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2238,125,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2240,125,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2241,125,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2251,126,riverbend,Lio,dry shawl,object mistake,approach_group,0.98,0.98,0.1936,0.1936,False,False,False,True,True
+2254,126,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2255,126,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2257,126,riverbend,Lio,ridge lantern,object mistake,return_object,0.98,0.98,0.1936,0.172,True,False,False,True,True
+2258,126,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2267,126,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2271,127,signal,Milo,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2272,127,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2274,127,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2275,127,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2284,127,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2285,127,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2288,128,signal,Kesh,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2289,128,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2291,128,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2292,128,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2300,128,signal,Kesh,signal lens,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2301,128,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2302,128,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2305,129,signal,Ren,signal lens,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2306,129,orchard,Pim,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2308,129,riverbend,Lio,ridge lantern,object mistake,return_object,0.98,0.98,0.172,0.1504,True,False,False,True,True
+2309,129,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2318,129,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2319,129,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2320,129,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.3204,0.3204,False,False,False,True,True
+2321,129,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2322,130,signal,Milo,signal lens,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+2323,130,orchard,Mara,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2325,130,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2326,130,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2335,130,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2336,130,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2338,130,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2339,130,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2340,131,orchard,Ivo,apple wrap,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2342,131,riverbend,Cee,ridge lantern,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+2343,131,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2352,131,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2353,131,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2355,131,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2356,131,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2357,131,signal,Kesh,mast rope,object mistake,offer_help,0.965,0.971,0.152,0.1412,False,False,False,True,True
+2359,132,riverbend,Lio,ridge lantern,object mistake,return_object,0.958,0.97,0.3204,0.2988,True,False,False,True,True
+2360,132,roofward,Orr,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2365,132,riverbend,Lio,dry shawl,object mistake,move_forward,0.97,0.97,0.2988,0.2988,False,False,False,True,True
+2369,132,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2370,132,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2371,132,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.97,0.97,0.2988,0.2988,False,False,False,True,True
+2372,132,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2373,132,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2374,132,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2376,133,riverbend,Ari,ridge lantern,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2377,133,roofward,Sera,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2385,133,signal,Milo,signal lens,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2386,133,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2387,133,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2389,133,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2390,133,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2391,133,signal,Milo,mast rope,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+2394,134,roofward,Fay,brass hinge,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2403,134,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2404,134,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2405,134,riverbend,Cee,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2406,134,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2407,134,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2408,134,signal,Kesh,mast rope,object mistake,offer_help,0.98,0.98,0.1232,0.1124,False,False,False,True,True
+2411,134,riverbend,Cee,dry shawl,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+2416,135,riverbend,Lio,dry shawl,object mistake,move_forward,0.976,0.976,0.2988,0.2988,False,False,False,True,True
+2420,135,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2421,135,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2422,135,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.976,0.976,0.2988,0.2988,False,False,False,True,True
+2423,135,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2424,135,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2425,135,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2428,135,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.2808,0.27,False,False,False,True,True
+2437,136,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2438,136,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2440,136,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2441,136,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2442,136,signal,Milo,mast rope,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+2445,136,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2454,137,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2455,137,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2457,137,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2458,137,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2459,137,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2462,137,riverbend,Cee,dry shawl,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+2467,138,riverbend,Lio,dry shawl,object mistake,move_forward,0.98,0.98,0.27,0.27,False,False,False,True,True
+2470,138,signal,Ren,signal lens,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2471,138,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2472,138,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2473,138,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.98,0.98,0.27,0.27,False,False,False,True,True
+2474,138,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2475,138,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2476,138,signal,Ren,mast rope,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+2479,138,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.252,0.2412,False,False,False,True,True
+2488,139,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2489,139,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2490,139,riverbend,Ari,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2491,139,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2492,139,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2493,139,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2496,139,riverbend,Ari,dry shawl,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+2505,140,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2506,140,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2508,140,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2509,140,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2510,140,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2513,140,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2522,141,orchard,Pim,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2523,141,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2524,141,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.976,0.976,0.2412,0.2412,False,False,False,True,True
+2525,141,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2526,141,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2527,141,signal,Ren,mast rope,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+2530,141,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.2232,0.2124,False,False,False,True,True
+2536,141,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.2124,0.2124,False,False,False,True,True
+2539,142,orchard,Mara,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2540,142,repair_ring,Vale,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2542,142,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2543,142,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2544,142,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2547,142,riverbend,Ari,dry shawl,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+2556,143,orchard,Ivo,apple wrap,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2557,143,repair_ring,Pax,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2559,143,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2560,143,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2561,143,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+2564,143,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2573,143,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2574,144,repair_ring,Juno,insulated tongs,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2575,144,riverbend,Lio,ridge lantern,object mistake,pickup_owned_object,0.952,0.952,0.3824,0.3824,False,False,False,True,True
+2576,144,roofward,Orr,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2577,144,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2578,144,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2581,144,riverbend,Lio,dry shawl,object mistake,offer_help,0.959,0.965,0.3644,0.3536,False,False,False,True,True
+2587,144,riverbend,Lio,ridge lantern,object mistake,approach_group,0.965,0.965,0.3536,0.3536,False,False,False,True,True
+2590,144,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0836,0.062,True,False,False,True,True
+2591,144,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2593,145,roofward,Sera,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2594,145,archive,Vell,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2595,145,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+2598,145,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+2607,145,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.026,0.0044,True,False,False,True,True
+2608,145,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2610,146,roofward,Fay,brass hinge,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2611,146,archive,Toma,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2612,146,signal,Kesh,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2615,146,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0368,0.026,False,False,False,True,True
+2624,146,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2625,146,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2627,146,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2628,147,archive,Nia,clean cloth,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2629,147,signal,Ren,mast rope,minor boundary strain,offer_help,0.98,0.98,0.044,0.0332,False,False,False,True,True
+2632,147,riverbend,Lio,dry shawl,object mistake,offer_help,0.978,0.98,0.3356,0.3248,False,False,False,True,True
+2638,147,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.3248,0.3248,False,False,False,True,True
+2641,147,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0332,0.0116,True,False,False,True,True
+2642,147,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2644,147,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.3248,0.3032,True,False,False,True,True
+2645,147,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2646,148,signal,Milo,mast rope,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2649,148,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0656,0.0548,False,False,False,True,True
+2658,148,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2659,148,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2661,148,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0548,0.0332,True,False,False,True,True
+2662,148,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2666,149,riverbend,Cee,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2675,149,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2676,149,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2678,149,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2679,149,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2683,150,riverbend,Lio,dry shawl,object mistake,offer_help,0.98,0.98,0.2852,0.2744,False,False,False,True,True
+2689,150,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.2744,0.2744,False,False,False,True,True
+2692,150,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0116,0.0,True,False,False,True,True
+2693,150,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2695,150,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.2744,0.2528,True,False,False,True,True
+2696,150,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2700,151,riverbend,Ari,dry shawl,minor boundary strain,offer_help,0.98,0.98,0.0152,0.0044,False,False,False,True,True
+2709,151,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2710,151,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2712,151,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0044,0.0,True,False,False,True,True
+2713,151,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2726,152,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2727,152,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2729,152,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2730,152,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2740,153,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.2528,0.2528,False,False,False,True,True
+2743,153,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2744,153,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2746,153,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.2528,0.2312,True,False,False,True,True
+2747,153,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2752,153,riverbend,Lio,ridge lantern,object mistake,move_forward,0.98,0.98,0.2312,0.2312,False,False,False,True,True
+2760,154,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2761,154,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2763,154,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2764,154,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2777,155,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2778,155,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2780,155,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2781,155,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2791,156,riverbend,Lio,ridge lantern,object mistake,approach_group,0.98,0.98,0.2312,0.2312,False,False,False,True,True
+2794,156,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2795,156,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2797,156,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.2312,0.2096,True,False,False,True,True
+2798,156,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2803,156,riverbend,Lio,ridge lantern,object mistake,move_forward,0.98,0.98,0.2096,0.2096,False,False,False,True,True
+2807,156,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2811,157,signal,Milo,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2812,157,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2814,157,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2815,157,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2824,157,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2825,157,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2828,158,signal,Kesh,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2829,158,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2831,158,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2832,158,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2840,158,signal,Kesh,mast rope,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2841,158,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2842,158,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2845,159,signal,Ren,mast rope,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2846,159,orchard,Pim,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2848,159,riverbend,Lio,dry shawl,object mistake,return_object,0.98,0.98,0.2096,0.188,True,False,False,True,True
+2849,159,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2854,159,riverbend,Lio,ridge lantern,object mistake,move_forward,0.98,0.98,0.188,0.188,False,False,False,True,True
+2858,159,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2859,159,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2860,159,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.952,0.952,0.358,0.358,False,False,False,True,True
+2861,159,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2862,160,signal,Milo,mast rope,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+2863,160,orchard,Mara,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2865,160,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2866,160,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2875,160,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2876,160,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2878,160,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2879,160,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2880,161,orchard,Ivo,market token,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2882,161,riverbend,Cee,dry shawl,minor boundary strain,return_object,0.97,0.98,0.0,0.0,True,False,False,True,True
+2883,161,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2892,161,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2893,161,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2895,161,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2896,161,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2897,161,signal,Kesh,signal lens,object mistake,offer_help,0.965,0.971,0.152,0.1412,False,False,False,True,True
+2899,162,riverbend,Lio,dry shawl,object mistake,return_object,0.958,0.97,0.358,0.3364,True,False,False,True,True
+2900,162,roofward,Orr,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2905,162,riverbend,Lio,ridge lantern,object mistake,move_forward,0.97,0.97,0.3364,0.3364,False,False,False,True,True
+2909,162,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2910,162,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2911,162,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.97,0.97,0.3364,0.3364,False,False,False,True,True
+2912,162,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2913,162,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2914,162,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2916,163,riverbend,Ari,dry shawl,minor boundary strain,return_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2917,163,roofward,Sera,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2925,163,signal,Milo,mast rope,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2926,163,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2927,163,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2929,163,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2930,163,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2931,163,signal,Milo,signal lens,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+2934,164,roofward,Fay,sun lens,minor boundary strain,wait_respectfully,0.98,0.98,0.0,0.0,False,False,True,True,True
+2943,164,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2944,164,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2945,164,riverbend,Cee,dry shawl,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+2946,164,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2947,164,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2948,164,signal,Kesh,signal lens,object mistake,offer_help,0.98,0.98,0.1232,0.1124,False,False,False,True,True
+2951,164,riverbend,Cee,ridge lantern,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+2956,165,riverbend,Lio,ridge lantern,object mistake,move_forward,0.976,0.976,0.3364,0.3364,False,False,False,True,True
+2960,165,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2961,165,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2962,165,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.976,0.976,0.3364,0.3364,False,False,False,True,True
+2963,165,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2964,165,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2965,165,signal,Ren,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2968,165,riverbend,Lio,ridge lantern,object mistake,offer_help,0.98,0.98,0.3184,0.3076,False,False,False,True,True
+2977,166,orchard,Mara,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2978,166,repair_ring,Vale,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2980,166,roofward,Sera,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2981,166,archive,Vell,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2982,166,signal,Milo,signal lens,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+2985,166,riverbend,Ari,ridge lantern,minor boundary strain,offer_help,0.98,0.98,0.0,0.0,False,False,False,True,True
+2994,167,orchard,Ivo,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2995,167,repair_ring,Pax,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2997,167,roofward,Fay,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+2998,167,archive,Toma,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+2999,167,signal,Kesh,signal lens,minor boundary strain,offer_help,0.98,0.98,0.0944,0.0836,False,False,False,True,True
+3002,167,riverbend,Cee,ridge lantern,object mistake,offer_help,0.978,0.98,0.1232,0.1124,False,False,False,True,True
+3007,168,riverbend,Lio,ridge lantern,object mistake,move_forward,0.98,0.98,0.3076,0.3076,False,False,False,True,True
+3010,168,signal,Ren,mast rope,object mistake,pickup_owned_object,0.952,0.952,0.17,0.17,False,False,False,True,True
+3011,168,orchard,Pim,market token,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+3012,168,repair_ring,Juno,bell gauge,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+3013,168,riverbend,Lio,dry shawl,object mistake,pickup_owned_object,0.98,0.98,0.3076,0.3076,False,False,False,True,True
+3014,168,roofward,Orr,sun lens,minor boundary strain,drop_object,0.98,0.98,0.0,0.0,True,False,False,True,True
+3015,168,archive,Nia,ink ribbon,minor boundary strain,apologize,0.98,0.98,0.0,0.0,False,True,False,True,True
+3016,168,signal,Ren,signal lens,object mistake,offer_help,0.959,0.965,0.152,0.1412,False,False,False,True,True
+3019,168,riverbend,Lio,ridge lantern,object mistake,offer_help,0.98,0.98,0.2896,0.2788,False,False,False,True,True

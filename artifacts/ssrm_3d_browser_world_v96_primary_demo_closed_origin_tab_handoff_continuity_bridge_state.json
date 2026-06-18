@@ -1,0 +1,25 @@
+{
+  "after_return_recorded_at": "2026-06-18T09:46:18.251Z",
+  "boundary": "Deterministic browser-local closed-origin-tab handoff continuity bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local tab-lifecycle handoff hygiene and visible review continuity, not external validation or evidence of inner experience.",
+  "checks": {
+    "evidence_avoids_raw_storage_keys": true,
+    "fresh_tab_after_close_after_return_timestamp_unchanged": true,
+    "fresh_tab_after_close_continue_reaches_shell": true,
+    "fresh_tab_after_close_controls_available": true,
+    "fresh_tab_after_close_payload_timestamp_matches_original": true,
+    "fresh_tab_after_close_refresh_keeps_handoff_fresh": true,
+    "fresh_tab_after_close_return_to_launcher_visible": true,
+    "fresh_tab_after_close_shows_prepared_handoff": true,
+    "fresh_tab_after_close_status_fresh_resume": true,
+    "fresh_tab_after_close_visible_handoff_timestamp_matches_original": true,
+    "no_console_errors": true,
+    "original_preparing_tab_closed": true,
+    "original_tab_prepared_fresh_resume_before_close": true
+  },
+  "fresh_tab_recorded_at": "2026-06-18T09:46:18.251Z",
+  "next_gate": "post-336: verify the closed-origin-tab handoff path after a hard reload of the fresh tab, so visible handoff continuity survives a page lifecycle restart as well as preparing-tab closure",
+  "original_recorded_at": "2026-06-18T09:46:18.251Z",
+  "original_tab_closed": true,
+  "report": 336,
+  "seed": 20270734
+}

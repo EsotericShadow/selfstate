@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+336,pass,1.0,1.0,"post-336: verify the closed-origin-tab handoff path after a hard reload of the fresh tab, so visible handoff continuity survives a page lifecycle restart as well as preparing-tab closure"

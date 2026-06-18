@@ -4,6 +4,8 @@
 
 Report 308 adds reviewer-facing filters to the primary demo manual defect ledger. This does not advance a consciousness claim; it makes the single playable browser-world path easier to audit during real manual playtests by separating open, resolved, watch, minor, and blocking defects without creating a parallel demo.
 
+Report 309 uses that filtered ledger during a full primary-demo manual pass, finds an opaque QA-output defect in the maintained shell, and repairs the visible QA panel so checklist and rollback-audit hooks expose all-pass and per-field evidence. This remains browser-local consolidation, not a new agent capability claim.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

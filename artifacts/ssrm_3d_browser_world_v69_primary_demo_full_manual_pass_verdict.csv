@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,full_manual_pass_rate,next_gate
+309,pass,1.0,1.0,1.0,post-309: keep using the primary demo as the one playable surface; next hardening should add a reviewer-readable session transcript/checkpoint view only if the next full pass shows the current replay/debug layer is still too opaque

@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+single_primary_surface_retained,True,1.0,primary demo still launches the maintained v61 app shell,the full pass would apply to a forked or parallel surface
+qa_visible_summary_source,True,1.0,v61 generator and generated app both render detailed QA summaries,the fix would be hand-edited or missing from regenerated shell assets
+qa_all_pass_wording,True,1.0,"QA panel can visibly show all-pass status, not only raw check count",MP-09 would remain unprovable from visible UI text
+qa_detail_wording,True,1.0,QA panel can expose per-hook fields such as rollbackTested/smokePass/auditPass,MP-10 would remain unprovable from visible UI text
+pre_fix_defect_captured,True,1.0,browser pass captured the pre-fix QA visibility defects before repair,the report would claim a repair without recording the defect that motivated it
+full_manual_pass_complete,True,1.0,post-fix browser pass reported 12/12 manual steps passing,the primary demo still would not prove the whole loop through MP-12
+ledger_used_for_resolution,True,1.0,filtered ledger records MP-09 and MP-10 as resolved and verifies open/resolved filters,Report 308's ledger would not actually be used for the full-pass defect loop
+qa_output_proves_checklist,True,1.0,post-fix visible checklist text contains 10 checks and all pass,the checklist output would still not satisfy MP-09
+qa_output_proves_rollback_audit,True,1.0,"post-fix visible rollback-audit text exposes rollbackTested, smokePass, and auditPass",the rollback audit output would still not satisfy MP-10
+console_clean,True,1.0,browser console error count was 0,browser pass produced runtime console errors

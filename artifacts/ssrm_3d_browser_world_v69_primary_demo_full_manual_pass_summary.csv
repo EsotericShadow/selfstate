@@ -1,0 +1,8 @@
+metric,value
+readiness,1.0
+weakest_channel_score,1.0
+full_manual_pass_rate,1.0
+pre_fix_defect_count,2
+resolved_defect_count,2
+console_errors,0
+criterion_count,10

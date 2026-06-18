@@ -26,6 +26,7 @@ That claim does not define consciousness and does not require that the self be m
 ### Current playable browser-world consolidation
 
 - [Primary demo reviewer triage filter report](docs/308_ssrm_3d_browser_world_v68_primary_demo_reviewer_triage_filter_report.md): adds reviewer-facing open/resolved/severity filters to the browser-local defect ledger for the single maintained primary demo path.
+- [Primary demo full manual pass report](docs/309_ssrm_3d_browser_world_v69_primary_demo_full_manual_pass_report.md): fixes opaque QA evidence in the maintained shell and records a full MP-01..MP-12 browser pass through the primary demo.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

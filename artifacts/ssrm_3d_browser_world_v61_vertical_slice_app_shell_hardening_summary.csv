@@ -13,7 +13,7 @@ state_boundary_rules,10
 direct_qa_hooks,7
 hardening_criteria,8
 generated_artifact_files,6
-app_javascript_bytes,15029
+app_javascript_bytes,15795
 app_css_bytes,2672
 app_html_bytes,3666
 source_v60_continuity,1.0

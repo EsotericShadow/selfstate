@@ -194,6 +194,22 @@ function bindControls() {
     log('canvasMove', { x: world.avatar.x, y: world.avatar.y, room: world.avatar.room });
   });
 }
+function formatQAResults() {
+  if (!world.lastQA.length) return 'not run';
+  const total = world.lastQA.length;
+  const passed = world.lastQA.filter(row => row.pass !== false).length;
+  const status = passed === total ? 'all pass' : `${passed}/${total} pass`;
+  const names = world.lastQA.map(row => row.hook || row.id || row.task || row.title || 'check').join(', ');
+  const details = world.lastQA.map(row => {
+    const label = row.hook || row.id || row.task || row.title || 'check';
+    const pairs = Object.entries(row)
+      .filter(([key]) => !['hook', 'id', 'task', 'title'].includes(key))
+      .map(([key, value]) => `${key}=${value}`)
+      .join(' ');
+    return pairs ? `${label} ${pairs}` : label;
+  }).join(' | ');
+  return `${total} checks / ${status}: ${names}${details ? ' / ' + details : ''}`;
+}
 function render() {
   const r = currentResident();
   document.getElementById('boundary').textContent = BOUNDARY;
@@ -202,7 +218,7 @@ function render() {
   document.getElementById('debtOut').textContent = String(r.debt) + ' / trust ' + r.trust.toFixed(3);
   document.getElementById('memoryOut').textContent = r.memory;
   document.getElementById('replayOut').textContent = String(world.replay.length) + ' rows';
-  document.getElementById('qaOut').textContent = world.lastQA.length ? world.lastQA.length + ' checks' : 'not run';
+  document.getElementById('qaOut').textContent = formatQAResults();
   document.getElementById('traceOut').textContent = JSON.stringify({ latest: world.replay[world.replay.length - 1] || null, world }, null, 2);
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);

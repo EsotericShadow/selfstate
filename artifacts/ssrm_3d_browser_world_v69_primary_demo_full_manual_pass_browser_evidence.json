@@ -1,0 +1,347 @@
+{
+  "report": 309,
+  "url_start": "http://localhost:8766/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "clean_origin_strategy": "localhost:8766 used for clean recorder and shell localStorage while preserving the same repo files",
+  "pre_fix_defects": [
+    {
+      "step_id": "MP-09",
+      "severity": "blocking",
+      "status": "resolved",
+      "note": "Pre-fix visible QA panel showed only raw check count, so checklist all-pass evidence was not visible."
+    },
+    {
+      "step_id": "MP-10",
+      "severity": "blocking",
+      "status": "resolved",
+      "note": "Pre-fix visible QA panel showed only raw check count, so rollbackTested/smokePass/auditPass evidence was not visible."
+    }
+  ],
+  "post_fix_steps": [
+    {
+      "step_id": "MP-01",
+      "passed": true,
+      "evidence_summary": "primary demo launcher opened on clean local origin",
+      "detail": null
+    },
+    {
+      "step_id": "MP-02",
+      "passed": true,
+      "evidence_summary": "boundary visible before launching shell",
+      "detail": null
+    },
+    {
+      "step_id": "MP-03",
+      "passed": true,
+      "evidence_summary": "clean launch opened maintained v61 shell with reset and source tags",
+      "detail": {
+        "shellUrl": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      }
+    },
+    {
+      "step_id": "MP-04",
+      "passed": true,
+      "evidence_summary": "movement changed visible room/status and replay rows increased",
+      "detail": {
+        "before": {
+          "debt": "1 / trust 0.580",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "start",
+          "memory": "met avatar at arrival court",
+          "qa": "not run",
+          "replay": "0 rows",
+          "room": "arrival court / not entered",
+          "schedule": "repair awning / progress 0.360",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "after": {
+          "debt": "1 / trust 0.580",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after movement",
+          "memory": "met avatar at arrival court",
+          "qa": "not run",
+          "replay": "3 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.360",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        }
+      }
+    },
+    {
+      "step_id": "MP-05",
+      "passed": true,
+      "evidence_summary": "bounded talk changed resident memory and schedule remains visible",
+      "detail": {
+        "debt": "1 / trust 0.592",
+        "exportHrefLength": 0,
+        "exportText": "",
+        "label": "after talk schedule",
+        "memory": "heard bounded phrase greet",
+        "qa": "not run",
+        "replay": "5 rows",
+        "room": "arrival court / entered",
+        "schedule": "repair awning / progress 0.360",
+        "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      }
+    },
+    {
+      "step_id": "MP-06",
+      "passed": true,
+      "evidence_summary": "borrow increased debt; return restored debt baseline and trust repaired partially",
+      "detail": {
+        "before": {
+          "debt": "1 / trust 0.592",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "before borrow",
+          "memory": "heard bounded phrase greet",
+          "qa": "not run",
+          "replay": "5 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.360",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "afterBorrow": {
+          "debt": "2 / trust 0.574",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after borrow",
+          "memory": "avatar borrowed tool",
+          "qa": "not run",
+          "replay": "6 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.360",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "afterReturn": {
+          "debt": "1 / trust 0.596",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after return",
+          "memory": "avatar returned tool",
+          "qa": "not run",
+          "replay": "7 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.360",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "parsed": {
+          "before": {
+            "debt": 1,
+            "trust": 0.592
+          },
+          "borrow": {
+            "debt": 2,
+            "trust": 0.574
+          },
+          "returned": {
+            "debt": 1,
+            "trust": 0.596
+          }
+        }
+      }
+    },
+    {
+      "step_id": "MP-07",
+      "passed": true,
+      "evidence_summary": "offscreen wait changed resident progress without avatar command",
+      "detail": {
+        "beforeProgress": 0.36,
+        "afterProgress": 0.378,
+        "after": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after wait offscreen",
+          "memory": "avatar returned tool",
+          "qa": "not run",
+          "replay": "8 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        }
+      }
+    },
+    {
+      "step_id": "MP-08",
+      "passed": true,
+      "evidence_summary": "restore returned saved room and memory after deliberate mutation",
+      "detail": {
+        "saved": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after save",
+          "memory": "avatar returned tool",
+          "qa": "not run",
+          "replay": "9 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "mutated": {
+          "debt": "1 / trust 0.607",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after mutation",
+          "memory": "heard bounded phrase greet",
+          "qa": "not run",
+          "replay": "11 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "restored": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after restore",
+          "memory": "avatar returned tool",
+          "qa": "not run",
+          "replay": "9 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        }
+      }
+    },
+    {
+      "step_id": "MP-09",
+      "passed": true,
+      "evidence_summary": "visible checklist QA text now reports 10 checks and all pass",
+      "detail": {
+        "debt": "1 / trust 0.595",
+        "exportHrefLength": 0,
+        "exportText": "",
+        "label": "after checklist",
+        "memory": "avatar returned tool",
+        "qa": "10 checks / all pass: PT-01, PT-02, PT-03, PT-04, PT-05, PT-06, PT-07, PT-08, PT-09, PT-10 / PT-01 expected=avatar enters arrival court and boundary remains visible pass=true | PT-02 expected=avatar position and room change visibly pass=true | PT-03 expected=resident reply references phrase without LLM claim pass=true | PT-04 expected=selected resident schedule is visible pass=true | PT-05 expected=debt rises and memory changes pass=true | PT-06 expected=debt drops and trust partially repairs pass=true | PT-07 expected=residents progress without avatar input pass=true | PT-08 expected=world rolls back from a saved snapshot after mutation pass=true | PT-09 expected=private workspace remains hidden pass=true | PT-10 expected=replay JSON export is prepared and stored locally pass=true",
+        "replay": "10 rows",
+        "room": "arrival court / entered",
+        "schedule": "repair awning / progress 0.378",
+        "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      }
+    },
+    {
+      "step_id": "MP-10",
+      "passed": true,
+      "evidence_summary": "visible rollback audit QA text exposes rollbackTested/smokePass/auditPass",
+      "detail": {
+        "auditState": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after audit state",
+          "memory": "avatar returned tool",
+          "qa": "1 checks / all pass: runStateBoundaryAudit / runStateBoundaryAudit pass=true checkedForbiddenKeyCount=3",
+          "replay": "11 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "smoke": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after smoke",
+          "memory": "avatar returned tool",
+          "qa": "1 checks / all pass: runSaveRestoreSmoke / runSaveRestoreSmoke pass=true room=arrival court rollbackTested=true",
+          "replay": "12 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "rollbackAudit": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after rollback audit",
+          "memory": "avatar returned tool",
+          "qa": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=12,13",
+          "replay": "15 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        }
+      }
+    },
+    {
+      "step_id": "MP-11",
+      "passed": true,
+      "evidence_summary": "replay export link prepared with nonzero object URL and replay rows",
+      "detail": {
+        "debt": "1 / trust 0.595",
+        "exportHrefLength": 63,
+        "exportText": "Prepared replay export",
+        "label": "after export",
+        "memory": "avatar returned tool",
+        "qa": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=12,13",
+        "replay": "16 rows",
+        "room": "arrival court / entered",
+        "schedule": "repair awning / progress 0.378",
+        "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      }
+    },
+    {
+      "step_id": "MP-12",
+      "passed": true,
+      "evidence_summary": "resume launch reopened persisted shell state without reset",
+      "detail": {
+        "beforeClose": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 63,
+          "exportText": "Prepared replay export",
+          "label": "before close for resume",
+          "memory": "avatar returned tool",
+          "qa": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=12,13",
+          "replay": "16 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+        },
+        "resumed": {
+          "debt": "1 / trust 0.595",
+          "exportHrefLength": 0,
+          "exportText": "",
+          "label": "after resume",
+          "memory": "avatar returned tool",
+          "qa": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=12,13",
+          "replay": "16 rows",
+          "room": "arrival court / entered",
+          "schedule": "repair awning / progress 0.378",
+          "url": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+        },
+        "resumedUrl": "http://localhost:8766/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+      }
+    }
+  ],
+  "resolved_defects": [
+    {
+      "step_id": "MP-09",
+      "severity": "blocking",
+      "status": "resolved",
+      "note": "Checklist QA output did not visibly say all pass; fixed by formatQAResults."
+    },
+    {
+      "step_id": "MP-10",
+      "severity": "blocking",
+      "status": "resolved",
+      "note": "Rollback audit QA output hid rollbackTested/smokePass/auditPass; fixed by formatQAResults."
+    }
+  ],
+  "console_errors": 0,
+  "post_fix_qa_text": "10 checks / all pass: PT-01, PT-02, PT-03, PT-04, PT-05, PT-06, PT-07, PT-08, PT-09, PT-10 / PT-01 expected=avatar enters arrival court and boundary remains visible pass=true | PT-02 expected=avatar position and room change visibly pass=true | PT-03 expected=resident reply references phrase without LLM claim pass=true | PT-04 expected=selected resident schedule is visible pass=true | PT-05 expected=debt rises and memory changes pass=true | PT-06 expected=debt drops and trust partially repairs pass=true | PT-07 expected=residents progress without avatar input pass=true | PT-08 expected=world rolls back from a saved snapshot after mutation pass=true | PT-09 expected=private workspace remains hidden pass=true | PT-10 expected=replay JSON export is prepared and stored locally pass=true",
+  "post_fix_rollback_text": "1 checks / all pass: runAuditAfterRollbackCheck / runAuditAfterRollbackCheck pass=true smokePass=true auditPass=true rollbackTested=true checkedAfterRollback=true linkedTicks=12,13",
+  "workflow_pass": true,
+  "console_error_details": [],
+  "recorder_status": "Latest open defect resolved.",
+  "ledger_filter_evidence": {
+    "allSummary": "2/2 shown | open 0 | resolved 2 | blocking open 0",
+    "openSummary": "0/2 shown | open 0 | resolved 2 | blocking open 0",
+    "openLedger": "No defects match the current reviewer filter.",
+    "resolvedSummary": "2/2 shown | open 0 | resolved 2 | blocking open 0",
+    "resolvedLedger": "D-001\nRESOLVED\nBLOCKING\nMP-09\n\nR309 pre-fix defect: checklist QA output did not visibly say all pass.\n\nResolution: Resolved by Report 309 formatQAResults visible QA summary.\n\nD-002\nRESOLVED\nBLOCKING\nMP-10\n\nR309 pre-fix defect: rollback audit QA output hid rollbackTested/smokePass/auditPass.\n\nResolution: Resolved by Report 309 per-hook QA detail rendering."
+  },
+  "ledger_filter_pass": true
+}

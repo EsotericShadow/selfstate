@@ -223,6 +223,7 @@ def _app_html() -> str:
       <article class="panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
       <article class="panel"><h2>Continuity loop</h2><div class="continuity-loop-actions"><button data-action="runContinuityLoop">Run continuity loop</button></div><pre id="continuityLoopOut"></pre></article>
       <article class="panel"><h2>Resident social memory</h2><div class="relationship-actions"><button data-action="runSocialMemoryPulse">Run social pulse</button><button data-action="settleSelectedRelationship">Settle selected debt</button></div><pre id="relationshipMemoryOut"></pre></article>
+      <article class="panel"><h2>Integrated scenario receipt</h2><div class="receipt-actions"><button data-action="generateScenarioReceipt">Generate receipt</button></div><pre id="scenarioReceiptOut"></pre></article>
       <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
       <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
@@ -279,6 +280,7 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .trust-repair-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 .continuity-loop-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 .relationship-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.receipt-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -661,6 +663,10 @@ function settleSelectedRelationship() {{
   }});
   return log('settleSelectedRelationship', {{ from, to, trust: edge.trust, debt: edge.debt, residentToResident: true }});
 }}
+function generateScenarioReceipt() {{
+  recordCheckpoint('integrated scenario receipt');
+  return log('generateScenarioReceipt', {{ publicReceipt: true, passCount: calculateScenarioReceipt().passCount, fieldCount: calculateScenarioReceipt().fieldCount }});
+}}
 function formatTrustRepairStatus() {{
   const resident = currentResident();
   const rows = readResidentHistory()[world.selected] || [];
@@ -711,6 +717,33 @@ function formatRelationshipMemory() {{
   const selected = graph[world.selected] && graph[world.selected][target];
   const selectedLine = selected ? `Selected tie: ${{world.selected}} -> ${{target}} | trust ${{Number(selected.trust).toFixed(3)}} | debt ${{selected.debt}} | memory: ${{selected.memory}}` : `Selected tie: ${{world.selected}} -> ${{target}} not initialized`;
   return `${{selectedLine}}\nPersistent key: ${{RELATION_KEY}}\nPublic resident-to-resident network:\n${{lines.join('\\n')}}`;
+}}
+function calculateScenarioReceipt() {{
+  const events = world.replay.map(row => row.event);
+  const relationshipText = formatRelationshipMemory();
+  const historyRows = readResidentHistory()[world.selected] || [];
+  const exportBytes = (localStorage.getItem(EXPORT_KEY) || '').length;
+  const checks = [
+    ['entry_and_movement', world.entered === true && events.includes('enterWorld'), 'avatar entered the maintained shell'],
+    ['schedule_visibility', events.includes('askSchedule') && currentResident().schedule.length > 0, 'selected resident schedule was queried and remains visible'],
+    ['debt_consequence', events.includes('borrowTool') && events.includes('completeTrustRepair'), 'debt/trust consequence happened before bounded repair'],
+    ['offscreen_life', events.includes('waitOffscreen'), 'offscreen resident progress advanced during the loop'],
+    ['recoverable_trust_repair', events.includes('interruptWork') && events.includes('completeTrustRepair') && currentResident().memory.includes('repaired trust'), 'wound and concrete repair are both present'],
+    ['resident_social_memory', events.includes('runSocialMemoryPulse') && events.includes('settleSelectedRelationship') && relationshipText.includes('settled an obligation'), 'resident-to-resident memory and settlement are visible'],
+    ['public_history_sync', historyRows.length >= 6 && formatResidentHistory().includes('resident debt settled'), 'selected resident history records avatar and social consequences'],
+    ['replay_export_ready', events.includes('exportReplay') && exportBytes > 0, `replay export bytes=${{exportBytes}}`],
+    ['resume_ready_snapshot', events.includes('saveWorld') && readCheckpoints().some(row => row.label === 'continuity loop complete' || row.label === 'integrated scenario receipt'), 'saved checkpoint exists for resume verification']
+  ];
+  const passCount = checks.filter(([_id, pass]) => pass).length;
+  return {{ checks, passCount, fieldCount: checks.length }};
+}}
+function formatScenarioReceipt() {{
+  const receipt = calculateScenarioReceipt();
+  const rows = receipt.checks.map(([id, pass, detail]) => `${{pass ? 'PASS' : 'FAIL'}} ${{id}}: ${{detail}}`);
+  const status = receipt.passCount === receipt.fieldCount ? 'ALL_PASS' : 'INCOMPLETE';
+  return `Integrated scenario receipt: ${{status}} (${{receipt.passCount}}/${{receipt.fieldCount}})
+Scope: public browser-local state only; no subjective consciousness, no autonomous language, no moral patienthood.
+${{rows.join('\\n')}}`;
 }}
 function formatResidentActionButtons() {{
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${{name}}</strong><button type="button" data-dashboard-select="${{name}}">Select</button><button type="button" data-dashboard-help="${{name}}">Help</button><button type="button" data-dashboard-borrow="${{name}}">Borrow</button><button type="button" data-dashboard-return="${{name}}">Return</button></div>`).join('');
@@ -856,6 +889,7 @@ function render() {{
   document.getElementById('trustRepairOut').textContent = formatTrustRepairStatus();
   document.getElementById('continuityLoopOut').textContent = formatContinuityLoopStatus();
   document.getElementById('relationshipMemoryOut').textContent = formatRelationshipMemory();
+  document.getElementById('scenarioReceiptOut').textContent = formatScenarioReceipt();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${{task.id}}</strong>: ${{task.title}}<br><span>${{task.expected}}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -886,7 +920,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt }});
 bindControls();
 render();
 """

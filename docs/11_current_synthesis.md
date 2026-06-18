@@ -22,6 +22,8 @@ Report 316 adds resident-to-resident social memory to the same primary shell: a 
 
 Report 317 folds that resident-to-resident social memory into the main continuity-loop button. The integrated loop now covers avatar arrival, schedule/debt consequence, offscreen change, bounded trust repair, resident social-memory pulse, selected relationship settlement, save/resume, and replay/export evidence together on the same maintained shell.
 
+Report 318 adds a compact integrated scenario receipt to the same shell. The receipt converts the one-button loop into reviewer-readable PASS/FAIL fields for entry, schedule visibility, debt consequence, offscreen life, recoverable trust repair, resident social memory, public history sync, replay/export readiness, and resume-ready snapshot state.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

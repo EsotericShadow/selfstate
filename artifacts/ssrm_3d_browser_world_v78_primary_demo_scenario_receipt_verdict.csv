@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_receipt_score,next_gate
+318,pass,1.0,1.0,1.0,"post-318: make the receipt actionable for outside reviewers by adding a compact defect/observation capture path tied to each failed receipt field, still inside the single primary shell"

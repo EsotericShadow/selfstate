@@ -371,6 +371,10 @@ function settleSelectedRelationship() {
   });
   return log('settleSelectedRelationship', { from, to, trust: edge.trust, debt: edge.debt, residentToResident: true });
 }
+function generateScenarioReceipt() {
+  recordCheckpoint('integrated scenario receipt');
+  return log('generateScenarioReceipt', { publicReceipt: true, passCount: calculateScenarioReceipt().passCount, fieldCount: calculateScenarioReceipt().fieldCount });
+}
 function formatTrustRepairStatus() {
   const resident = currentResident();
   const rows = readResidentHistory()[world.selected] || [];
@@ -426,6 +430,33 @@ function formatRelationshipMemory() {
 Persistent key: ${RELATION_KEY}
 Public resident-to-resident network:
 ${lines.join('\n')}`;
+}
+function calculateScenarioReceipt() {
+  const events = world.replay.map(row => row.event);
+  const relationshipText = formatRelationshipMemory();
+  const historyRows = readResidentHistory()[world.selected] || [];
+  const exportBytes = (localStorage.getItem(EXPORT_KEY) || '').length;
+  const checks = [
+    ['entry_and_movement', world.entered === true && events.includes('enterWorld'), 'avatar entered the maintained shell'],
+    ['schedule_visibility', events.includes('askSchedule') && currentResident().schedule.length > 0, 'selected resident schedule was queried and remains visible'],
+    ['debt_consequence', events.includes('borrowTool') && events.includes('completeTrustRepair'), 'debt/trust consequence happened before bounded repair'],
+    ['offscreen_life', events.includes('waitOffscreen'), 'offscreen resident progress advanced during the loop'],
+    ['recoverable_trust_repair', events.includes('interruptWork') && events.includes('completeTrustRepair') && currentResident().memory.includes('repaired trust'), 'wound and concrete repair are both present'],
+    ['resident_social_memory', events.includes('runSocialMemoryPulse') && events.includes('settleSelectedRelationship') && relationshipText.includes('settled an obligation'), 'resident-to-resident memory and settlement are visible'],
+    ['public_history_sync', historyRows.length >= 6 && formatResidentHistory().includes('resident debt settled'), 'selected resident history records avatar and social consequences'],
+    ['replay_export_ready', events.includes('exportReplay') && exportBytes > 0, `replay export bytes=${exportBytes}`],
+    ['resume_ready_snapshot', events.includes('saveWorld') && readCheckpoints().some(row => row.label === 'continuity loop complete' || row.label === 'integrated scenario receipt'), 'saved checkpoint exists for resume verification']
+  ];
+  const passCount = checks.filter(([_id, pass]) => pass).length;
+  return { checks, passCount, fieldCount: checks.length };
+}
+function formatScenarioReceipt() {
+  const receipt = calculateScenarioReceipt();
+  const rows = receipt.checks.map(([id, pass, detail]) => `${pass ? 'PASS' : 'FAIL'} ${id}: ${detail}`);
+  const status = receipt.passCount === receipt.fieldCount ? 'ALL_PASS' : 'INCOMPLETE';
+  return `Integrated scenario receipt: ${status} (${receipt.passCount}/${receipt.fieldCount})
+Scope: public browser-local state only; no subjective consciousness, no autonomous language, no moral patienthood.
+${rows.join('\n')}`;
 }
 function formatResidentActionButtons() {
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${name}</strong><button type="button" data-dashboard-select="${name}">Select</button><button type="button" data-dashboard-help="${name}">Help</button><button type="button" data-dashboard-borrow="${name}">Borrow</button><button type="button" data-dashboard-return="${name}">Return</button></div>`).join('');
@@ -571,6 +602,7 @@ function render() {
   document.getElementById('trustRepairOut').textContent = formatTrustRepairStatus();
   document.getElementById('continuityLoopOut').textContent = formatContinuityLoopStatus();
   document.getElementById('relationshipMemoryOut').textContent = formatRelationshipMemory();
+  document.getElementById('scenarioReceiptOut').textContent = formatScenarioReceipt();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -601,6 +633,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt });
 bindControls();
 render();

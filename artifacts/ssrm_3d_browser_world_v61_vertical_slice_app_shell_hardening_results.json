@@ -27,9 +27,9 @@
     "state_boundary_private_workspace_hidden": 1.0
   },
   "counts": {
-    "app_css_bytes": 3404,
-    "app_html_bytes": 5079,
-    "app_javascript_bytes": 34362,
+    "app_css_bytes": 3510,
+    "app_html_bytes": 5296,
+    "app_javascript_bytes": 37207,
     "app_shell_files": 6,
     "direct_qa_hooks": 7,
     "generated_artifact_files": 6,

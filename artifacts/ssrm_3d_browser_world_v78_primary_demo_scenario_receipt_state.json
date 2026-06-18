@@ -1,0 +1,18 @@
+{
+  "boundary": "Deterministic browser-local scenario-receipt consolidation only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The receipt audits public state continuity, not private experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v78_primary_demo_scenario_receipt_browser_evidence.json",
+  "maintained_shell": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+  "receipt_fields": [
+    "entry_and_movement",
+    "schedule_visibility",
+    "debt_consequence",
+    "offscreen_life",
+    "recoverable_trust_repair",
+    "resident_social_memory",
+    "public_history_sync",
+    "replay_export_ready",
+    "resume_ready_snapshot"
+  ],
+  "report": 318,
+  "seed": 20270716
+}

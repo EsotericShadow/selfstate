@@ -1,0 +1,326 @@
+{
+  "boundary": "Deterministic browser-local phrasebook-dialogue/gesture-repair/resident-question/sensory-control/memory-continuity scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "confidence": {
+    "cinder_garden:Juno": 0.86,
+    "cinder_garden:Pax": 0.86,
+    "cinder_garden:Vale": 0.86,
+    "cinder_garden:Wren": 0.86,
+    "glass_harbor:Nia": 0.86,
+    "glass_harbor:Oren": 0.86,
+    "glass_harbor:Puck": 0.86,
+    "glass_harbor:Sera": 0.86,
+    "lichen_bridge:Kio": 0.86,
+    "lichen_bridge:Luma": 0.86,
+    "lichen_bridge:Rin": 0.86,
+    "lichen_bridge:Sol": 0.86,
+    "moss_ward:Ari": 0.86,
+    "moss_ward:Fay": 0.86,
+    "moss_ward:Milo": 0.86,
+    "moss_ward:Tala": 0.86,
+    "orchid_engine:Bea": 0.86,
+    "orchid_engine:Cai": 0.86,
+    "orchid_engine:Dax": 0.86,
+    "orchid_engine:Eli": 0.86
+  },
+  "continuity": {
+    "cinder_garden:Juno": 0.95,
+    "cinder_garden:Pax": 0.95,
+    "cinder_garden:Vale": 0.95,
+    "cinder_garden:Wren": 0.95,
+    "glass_harbor:Nia": 0.95,
+    "glass_harbor:Oren": 0.95,
+    "glass_harbor:Puck": 0.95,
+    "glass_harbor:Sera": 0.95,
+    "lichen_bridge:Kio": 0.95,
+    "lichen_bridge:Luma": 0.95,
+    "lichen_bridge:Rin": 0.95,
+    "lichen_bridge:Sol": 0.95,
+    "moss_ward:Ari": 0.95,
+    "moss_ward:Fay": 0.95,
+    "moss_ward:Milo": 0.95,
+    "moss_ward:Tala": 0.95,
+    "orchid_engine:Bea": 0.95,
+    "orchid_engine:Cai": 0.95,
+    "orchid_engine:Dax": 0.95,
+    "orchid_engine:Eli": 0.95
+  },
+  "inherited_history_hash": "3fab5b0e1ed21fb4",
+  "reload_index": {
+    "cinder_garden": 67,
+    "glass_harbor": 65,
+    "lichen_bridge": 68,
+    "moss_ward": 65,
+    "orchid_engine": 67
+  },
+  "sensory_readability": {
+    "cinder_garden:sight": 0.9,
+    "cinder_garden:smell": 0.9,
+    "cinder_garden:sound": 0.9,
+    "cinder_garden:temperature": 0.9,
+    "cinder_garden:wetness": 0.9,
+    "glass_harbor:sight": 0.9,
+    "glass_harbor:smell": 0.9,
+    "glass_harbor:sound": 0.9,
+    "glass_harbor:temperature": 0.9,
+    "glass_harbor:wetness": 0.9,
+    "lichen_bridge:sight": 0.9,
+    "lichen_bridge:smell": 0.9,
+    "lichen_bridge:sound": 0.9,
+    "lichen_bridge:temperature": 0.9,
+    "lichen_bridge:wetness": 0.9,
+    "moss_ward:sight": 0.9,
+    "moss_ward:smell": 0.9,
+    "moss_ward:sound": 0.9,
+    "moss_ward:temperature": 0.9,
+    "moss_ward:wetness": 0.9,
+    "orchid_engine:sight": 0.9,
+    "orchid_engine:smell": 0.9,
+    "orchid_engine:sound": 0.9,
+    "orchid_engine:temperature": 0.9,
+    "orchid_engine:wetness": 0.9
+  },
+  "settlements": [
+    {
+      "avatar_phrases": [
+        "I wait",
+        "I ask rain custom",
+        "I offer trade",
+        "I do not touch",
+        "I need translation"
+      ],
+      "dialect_family": "proto-moss-breath",
+      "flower_offset": 0.021,
+      "frequency": 5.21,
+      "gestures": [
+        "empty hands",
+        "door-path step",
+        "cup pause"
+      ],
+      "local_memory_anchor": "moss_ward lineage and rain-gate custom",
+      "resident_phrases": [
+        "warm cup first",
+        "rain clay is named",
+        "blanket path clear",
+        "trade can wait",
+        "speak slower"
+      ],
+      "resident_questions": [
+        "Why do you watch the rain jar?",
+        "Will you keep the path clear?",
+        "Do you understand warm-cup?"
+      ],
+      "residents": [
+        "Ari",
+        "Fay",
+        "Milo",
+        "Tala"
+      ],
+      "sensory_scene": [
+        "wet moss",
+        "rain hiss",
+        "warm broth",
+        "cool loft air",
+        "mist on skin"
+      ],
+      "settlement_id": "moss_ward"
+    },
+    {
+      "avatar_phrases": [
+        "I wait by lamp",
+        "I ask net owner",
+        "I offer salt token",
+        "I do not dim lamp",
+        "I need translation"
+      ],
+      "dialect_family": "proto-harbor-chime",
+      "flower_offset": 0.034,
+      "frequency": 6.34,
+      "gestures": [
+        "lantern tap",
+        "tea hold",
+        "net-hand open"
+      ],
+      "local_memory_anchor": "glass_harbor lamp and net custom",
+      "resident_phrases": [
+        "tea before crossing",
+        "lamp stays bright",
+        "net has keeper",
+        "fog catcher closed",
+        "repeat with bell"
+      ],
+      "resident_questions": [
+        "Why did you touch the rail?",
+        "Can you leave the lamp bright?",
+        "Which word means net keeper?"
+      ],
+      "residents": [
+        "Nia",
+        "Oren",
+        "Puck",
+        "Sera"
+      ],
+      "sensory_scene": [
+        "salt steam",
+        "lamp oil",
+        "bell gulls",
+        "cold spray",
+        "fog on face"
+      ],
+      "settlement_id": "glass_harbor"
+    },
+    {
+      "avatar_phrases": [
+        "I bow to shade",
+        "I ask seed path",
+        "I offer cool stone",
+        "I do not cross rows",
+        "I need translation"
+      ],
+      "dialect_family": "proto-cinder-pulse",
+      "flower_offset": 0.055,
+      "frequency": 8.89,
+      "gestures": [
+        "shade bow",
+        "cool hand",
+        "seed-step stop"
+      ],
+      "local_memory_anchor": "cinder_garden seed and shade custom",
+      "resident_phrases": [
+        "shade cloth first",
+        "seed rows sleep",
+        "cool hand means wait",
+        "ash path open",
+        "repeat without hurry"
+      ],
+      "resident_questions": [
+        "Why are you near the seed tray?",
+        "Can you wait by ash path?",
+        "Do you know cool-hand?"
+      ],
+      "residents": [
+        "Juno",
+        "Pax",
+        "Vale",
+        "Wren"
+      ],
+      "sensory_scene": [
+        "warm ash",
+        "seed oil",
+        "dry wind",
+        "cool basin",
+        "dust on skin"
+      ],
+      "settlement_id": "cinder_garden"
+    },
+    {
+      "avatar_phrases": [
+        "I touch rope post",
+        "I ask bell custom",
+        "I offer rope help",
+        "I do not step on rope",
+        "I need translation"
+      ],
+      "dialect_family": "proto-bridge-hum",
+      "flower_offset": 0.044,
+      "frequency": 7.55,
+      "gestures": [
+        "rope touch",
+        "signal hush",
+        "shared bowl"
+      ],
+      "local_memory_anchor": "lichen_bridge rope and signal custom",
+      "resident_phrases": [
+        "signal hush first",
+        "rope has tension",
+        "meal room welcomes",
+        "bell has keeper",
+        "gesture again"
+      ],
+      "resident_questions": [
+        "Why did you stop at the rope?",
+        "Can you wait for signal hush?",
+        "Which sign means safe crossing?"
+      ],
+      "residents": [
+        "Kio",
+        "Luma",
+        "Rin",
+        "Sol"
+      ],
+      "sensory_scene": [
+        "damp rope",
+        "stone echo",
+        "lichen soup",
+        "crosswind",
+        "cold fog"
+      ],
+      "settlement_id": "lichen_bridge"
+    },
+    {
+      "avatar_phrases": [
+        "I wait outside ring",
+        "I ask valve custom",
+        "I offer gear cloth",
+        "I do not turn key",
+        "I need translation"
+      ],
+      "dialect_family": "proto-engine-ring",
+      "flower_offset": 0.067,
+      "frequency": 9.87,
+      "gestures": [
+        "open palms",
+        "valve pause",
+        "orchid cup"
+      ],
+      "local_memory_anchor": "orchid_engine valve and orchid custom",
+      "resident_phrases": [
+        "valve listener first",
+        "orchid lamp rests",
+        "gear lane open",
+        "cup before engine",
+        "say it with palms"
+      ],
+      "resident_questions": [
+        "Why do you look at the valve key?",
+        "Can you keep the lane open?",
+        "Which phrase means valve listener?"
+      ],
+      "residents": [
+        "Bea",
+        "Cai",
+        "Dax",
+        "Eli"
+      ],
+      "sensory_scene": [
+        "orchid oil",
+        "warm iron",
+        "valve pulse",
+        "steam draft",
+        "hot brass"
+      ],
+      "settlement_id": "orchid_engine"
+    }
+  ],
+  "trust": {
+    "cinder_garden:Juno": 0.94,
+    "cinder_garden:Pax": 0.94,
+    "cinder_garden:Vale": 0.94,
+    "cinder_garden:Wren": 0.94,
+    "glass_harbor:Nia": 0.94,
+    "glass_harbor:Oren": 0.94,
+    "glass_harbor:Puck": 0.94,
+    "glass_harbor:Sera": 0.94,
+    "lichen_bridge:Kio": 0.94,
+    "lichen_bridge:Luma": 0.94,
+    "lichen_bridge:Rin": 0.94,
+    "lichen_bridge:Sol": 0.94,
+    "moss_ward:Ari": 0.94,
+    "moss_ward:Fay": 0.94,
+    "moss_ward:Milo": 0.94,
+    "moss_ward:Tala": 0.94,
+    "orchid_engine:Bea": 0.94,
+    "orchid_engine:Cai": 0.94,
+    "orchid_engine:Dax": 0.94,
+    "orchid_engine:Eli": 0.94
+  }
+}

@@ -1,0 +1,211 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v52 Phrasebook Dialogue Bridge</title>
+<style>
+:root { --ink:#11120f; --gold:#dfb45d; --leaf:#a5c47b; --water:#72abc9; --paper:#f6edd9; --line:rgba(246,237,217,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 16% 18%, rgba(223,180,93,.30), transparent 28%), radial-gradient(circle at 82% 16%, rgba(114,171,201,.22), transparent 30%), linear-gradient(135deg, #11120f, #25311f 48%, #282338); }
+main { display:grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(17,18,15,.76); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(223,180,93,.16); color:var(--paper); padding:8px 11px; }
+.flower { width:158px; height:158px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(246,237,217,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(165,196,123,.45), rgba(114,171,201,.42), rgba(223,180,93,.42), rgba(165,196,123,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="phrasebook-dialogue-panel"><h2>Bounded phrasebook dialogue</h2><p>Avatar and resident turns use phrasebook entries, confidence, uncertainty, and no LLM call.</p></section>
+<section id="gesture-repair-panel"><h2>Gesture repair</h2><p>Gesture timing and meaning mismatches can be slowed, repeated, and corrected by residents.</p></section>
+<section id="resident-question-panel"><h2>Resident-initiated questions</h2><p>Residents can ask questions and the avatar can answer, clarify, admit unknown, or step back.</p></section>
+<section id="sensory-scene-control-panel"><h2>Sensory scene controls</h2><p>Sight, sound, smell, temperature, and wetness can be focused without rewriting history.</p></section>
+<section id="memory-safe-conversation-panel"><h2>Memory-safe conversation</h2><p>Only public summaries persist; private workspace stays sealed and conversation continuity is reloadable.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore phrasebook, gesture, question, sensory, and memory traces.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and dialogue frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine, no LLM call.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">choose phrasebook turn</button>
+<button data-action="sayIWait" onclick="sayIWait('phrasebook')">say I wait</button>
+<button data-action="sayNeedTranslation" onclick="sayNeedTranslation('phrasebook')">say need translation</button>
+<button data-action="showResidentPhrase" onclick="showResidentPhrase('phrasebook')">show resident phrase</button>
+<button data-action="showPhraseConfidence" onclick="showPhraseConfidence('phrasebook')">show phrase confidence</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair gesture</button>
+<button data-action="repeatGestureSlowly" onclick="repeatGestureSlowly('gesture')">repeat gesture slowly</button>
+<button data-action="showGestureRisk" onclick="showGestureRisk('gesture')">show gesture risk</button>
+<button data-action="acceptResidentCorrection" onclick="acceptResidentCorrection('gesture')">accept resident correction</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer resident question</button>
+<button data-action="admitUnknown" onclick="admitUnknown('question')">admit unknown</button>
+<button data-action="askClarify" onclick="askClarify('question')">ask clarify</button>
+<button data-action="showQuestionCard" onclick="showQuestionCard('question')">show question card</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">adjust sensory scene</button>
+<button data-action="focusSight" onclick="focusSight('sensory')">focus sight</button>
+<button data-action="focusSound" onclick="focusSound('sensory')">focus sound</button>
+<button data-action="focusSmell" onclick="focusSmell('sensory')">focus smell</button>
+<button data-action="focusTemperature" onclick="focusTemperature('sensory')">focus temperature</button>
+<button data-action="focusWetness" onclick="focusWetness('sensory')">focus wetness</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">show memory safe summary</button>
+<button data-action="showPublicSummary" onclick="showPublicSummary('memory')">show public summary</button>
+<button data-action="showPrivateBoundary" onclick="showPrivateBoundary('memory')">show private boundary</button>
+<button data-action="showNoLLMCall" onclick="showNoLLMCall('memory')">show no LLM call</button>
+<button data-action="restoreDialogueMemory" onclick="restoreDialogueMemory('reload')">restore dialogue memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showDialogueFrequency" onclick="showDialogueFrequency('frequency')">show dialogue frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">phrase moss_ward</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">gesture empty hands</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">question Ari</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">scene moss_ward</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">memory moss_ward</button>
+<button data-action="restoreDialogueMemory" onclick="restoreDialogueMemory('reload')">restore moss_ward</button>
+<button data-action="showDialogueFrequency" onclick="showDialogueFrequency('frequency')">frequency moss_ward</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I wait</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I ask rain custom</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I offer trade</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I do not touch</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I need translation</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Why do you watch t</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Will you keep the </button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Do you understand </button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">phrase glass_harbor</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">gesture lantern tap</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">question Nia</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">scene glass_harbor</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">memory glass_harbor</button>
+<button data-action="restoreDialogueMemory" onclick="restoreDialogueMemory('reload')">restore glass_harbor</button>
+<button data-action="showDialogueFrequency" onclick="showDialogueFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I wait by lamp</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I ask net owner</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I offer salt token</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I do not dim lamp</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I need translation</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Why did you touch </button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Can you leave the </button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Which word means n</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">phrase cinder_garden</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">gesture shade bow</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">question Juno</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">scene cinder_garden</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">memory cinder_garden</button>
+<button data-action="restoreDialogueMemory" onclick="restoreDialogueMemory('reload')">restore cinder_garden</button>
+<button data-action="showDialogueFrequency" onclick="showDialogueFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I bow to shade</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I ask seed path</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I offer cool stone</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I do not cross rows</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I need translation</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Why are you near t</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Can you wait by as</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Do you know cool-h</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">phrase lichen_bridge</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">gesture rope touch</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">question Kio</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">scene lichen_bridge</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">memory lichen_bridge</button>
+<button data-action="restoreDialogueMemory" onclick="restoreDialogueMemory('reload')">restore lichen_bridge</button>
+<button data-action="showDialogueFrequency" onclick="showDialogueFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I touch rope post</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I ask bell custom</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I offer rope help</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I do not step on rope</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I need translation</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Why did you stop a</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Can you wait for s</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Which sign means s</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">phrase orchid_engine</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">gesture open palms</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">question Bea</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">scene orchid_engine</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">memory orchid_engine</button>
+<button data-action="restoreDialogueMemory" onclick="restoreDialogueMemory('reload')">restore orchid_engine</button>
+<button data-action="showDialogueFrequency" onclick="showDialogueFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I wait outside ring</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I ask valve custom</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I offer gear cloth</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I do not turn key</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">say I need translation</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Why do you look at</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Can you keep the l</button>
+<button data-action="answerResidentQuestion" onclick="answerResidentQuestion('question')">answer Which phrase means</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control sight</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check sight</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control sound</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check sound</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control smell</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check smell</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control temperature</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check temperature</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control wetness</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check wetness</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control history</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check history</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control trust</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check trust</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control private boundary</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check private boundary</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control no LLM</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check no LLM</button>
+<button data-action="adjustSensoryScene" onclick="adjustSensoryScene('sensory')">control reload</button>
+<button data-action="showMemorySafeSummary" onclick="showMemorySafeSummary('memory')">check reload</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn ask clarify</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair ask clarify</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn admit unknown</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair admit unknown</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn gesture repair</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair gesture repair</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn step back</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair step back</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn offer trade</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair offer trade</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn answer known</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair answer known</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn resident leads</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair resident leads</button>
+<button data-action="choosePhrasebookTurn" onclick="choosePhrasebookTurn('phrasebook')">turn repeat slowly</button>
+<button data-action="repairGesture" onclick="repairGesture('gesture')">repair repeat slowly</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v52.phrasebook.dialogue';
+function pushTrace(action, scope) {
+  const prior = JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}');
+  prior.events.push({ action, scope, t: prior.events.length, note: 'browser-local deterministic phrasebook trace; no LLM call' });
+  localStorage.setItem(stateKey, JSON.stringify(prior));
+  return prior;
+}
+function choosePhrasebookTurn(scope) { return pushTrace('choosePhrasebookTurn', scope); }
+function sayIWait(scope) { return pushTrace('sayIWait', scope); }
+function sayNeedTranslation(scope) { return pushTrace('sayNeedTranslation', scope); }
+function showResidentPhrase(scope) { return pushTrace('showResidentPhrase', scope); }
+function showPhraseConfidence(scope) { return pushTrace('showPhraseConfidence', scope); }
+function repairGesture(scope) { return pushTrace('repairGesture', scope); }
+function repeatGestureSlowly(scope) { return pushTrace('repeatGestureSlowly', scope); }
+function showGestureRisk(scope) { return pushTrace('showGestureRisk', scope); }
+function acceptResidentCorrection(scope) { return pushTrace('acceptResidentCorrection', scope); }
+function answerResidentQuestion(scope) { return pushTrace('answerResidentQuestion', scope); }
+function admitUnknown(scope) { return pushTrace('admitUnknown', scope); }
+function askClarify(scope) { return pushTrace('askClarify', scope); }
+function showQuestionCard(scope) { return pushTrace('showQuestionCard', scope); }
+function adjustSensoryScene(scope) { return pushTrace('adjustSensoryScene', scope); }
+function focusSight(scope) { return pushTrace('focusSight', scope); }
+function focusSound(scope) { return pushTrace('focusSound', scope); }
+function focusSmell(scope) { return pushTrace('focusSmell', scope); }
+function focusTemperature(scope) { return pushTrace('focusTemperature', scope); }
+function focusWetness(scope) { return pushTrace('focusWetness', scope); }
+function showMemorySafeSummary(scope) { return pushTrace('showMemorySafeSummary', scope); }
+function showPublicSummary(scope) { return pushTrace('showPublicSummary', scope); }
+function showPrivateBoundary(scope) { return pushTrace('showPrivateBoundary', scope); }
+function showNoLLMCall(scope) { return pushTrace('showNoLLMCall', scope); }
+function restoreDialogueMemory(scope) { return JSON.parse(localStorage.getItem(stateKey) || '{"events":[]}'); }
+function saveWorldState(scope) { return pushTrace('saveWorldState', scope); }
+function restoreWorldState(scope) { return restoreDialogueMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(restoreDialogueMemory(scope)); }
+function showFlowerPhase(scope) { return pushTrace('showFlowerPhase', scope); }
+function showDialogueFrequency(scope) { return pushTrace('showDialogueFrequency', scope); }
+function showRateBoundary(scope) { return pushTrace('showRateBoundary', scope); }
+</script>
+</body>
+</html>

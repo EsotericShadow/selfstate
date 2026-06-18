@@ -1,0 +1,1501 @@
+tick_id,day,settlement_id,resident_id,question,resident_need,avatar_response_type,answer_state,trust_before,trust_after,resident_initiated,unknown_respected,question_card_visible
+0,1,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.57,0.58,True,True,True
+3,1,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,deferred instead of fabricated,0.57,0.574,True,True,True
+4,1,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+6,1,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.57,0.58,True,True,True
+9,1,moss_ward,Fay,Will you keep the path clear?,safety check,answer_known,deferred instead of fabricated,0.57,0.574,True,True,True
+10,1,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+12,1,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.57,0.58,True,True,True
+15,1,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,deferred instead of fabricated,0.57,0.574,True,True,True
+16,1,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+18,2,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.584,0.588,True,True,True
+21,2,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+23,2,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.574,0.584,True,True,True
+24,2,glass_harbor,Puck,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.584,0.588,True,True,True
+27,2,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+29,2,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.574,0.584,True,True,True
+30,2,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.584,0.588,True,True,True
+33,2,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+35,2,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.57,0.58,True,True,True
+36,3,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.57,0.574,True,True,True
+38,3,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.588,0.602,True,True,True
+39,3,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.57,0.584,True,True,True
+40,3,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.58,0.59,True,True,True
+42,3,moss_ward,Milo,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.57,0.574,True,True,True
+44,3,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.588,0.602,True,True,True
+45,3,lichen_bridge,Luma,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.57,0.584,True,True,True
+46,3,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.57,0.58,True,True,True
+48,3,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.58,0.584,True,True,True
+50,3,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+51,3,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.574,0.588,True,True,True
+52,3,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.588,0.598,True,True,True
+54,4,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,deferred instead of fabricated,0.59,0.594,True,True,True
+55,4,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.584,0.598,True,True,True
+57,4,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.584,0.594,True,True,True
+60,4,orchid_engine,Dax,Can you keep the lane open?,safety check,answer_known,deferred instead of fabricated,0.58,0.584,True,True,True
+61,4,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.584,0.598,True,True,True
+63,4,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.58,0.59,True,True,True
+66,4,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,deferred instead of fabricated,0.598,0.602,True,True,True
+67,4,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.57,0.584,True,True,True
+69,4,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.584,0.594,True,True,True
+72,5,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.602,0.616,True,True,True
+74,5,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.584,0.594,True,True,True
+75,5,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.598,0.602,True,True,True
+78,5,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.584,0.598,True,True,True
+80,5,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.602,0.612,True,True,True
+81,5,glass_harbor,Oren,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.584,0.588,True,True,True
+84,5,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.574,0.588,True,True,True
+86,5,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.602,0.612,True,True,True
+87,5,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.584,0.588,True,True,True
+90,6,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.584,0.598,True,True,True
+91,6,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.59,0.6,True,True,True
+93,6,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.588,0.592,True,True,True
+95,6,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.588,0.602,True,True,True
+96,6,cinder_garden,Vale,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.58,0.594,True,True,True
+97,6,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.594,0.604,True,True,True
+99,6,moss_ward,Fay,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.584,0.588,True,True,True
+101,6,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.588,0.602,True,True,True
+102,6,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.594,0.608,True,True,True
+103,6,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.598,0.608,True,True,True
+105,6,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.594,0.598,True,True,True
+107,6,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.584,0.598,True,True,True
+108,7,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.612,0.622,True,True,True
+111,7,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,deferred instead of fabricated,0.604,0.608,True,True,True
+112,7,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.588,0.602,True,True,True
+114,7,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.612,0.622,True,True,True
+117,7,orchid_engine,Cai,Can you keep the lane open?,safety check,answer_known,deferred instead of fabricated,0.608,0.612,True,True,True
+118,7,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.574,0.588,True,True,True
+120,7,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.616,0.626,True,True,True
+123,7,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,deferred instead of fabricated,0.602,0.606,True,True,True
+124,7,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.598,0.612,True,True,True
+126,8,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.602,0.606,True,True,True
+129,8,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.602,0.616,True,True,True
+131,8,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.612,0.622,True,True,True
+132,8,moss_ward,Milo,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.588,0.592,True,True,True
+135,8,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.598,0.612,True,True,True
+137,8,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.606,0.616,True,True,True
+138,8,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.612,0.616,True,True,True
+141,8,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.592,0.606,True,True,True
+143,8,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.602,0.612,True,True,True
+144,9,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.608,0.612,True,True,True
+146,9,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.592,0.606,True,True,True
+147,9,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.598,0.612,True,True,True
+148,9,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.626,0.636,True,True,True
+150,9,orchid_engine,Dax,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.594,0.598,True,True,True
+152,9,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.616,0.63,True,True,True
+153,9,cinder_garden,Pax,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.6,0.614,True,True,True
+154,9,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.598,0.608,True,True,True
+156,9,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.622,0.626,True,True,True
+158,9,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.594,0.608,True,True,True
+159,9,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.608,0.622,True,True,True
+160,9,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.606,0.616,True,True,True
+162,10,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.636,0.644,True,True,True
+163,10,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.612,0.626,True,True,True
+165,10,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.616,0.626,True,True,True
+168,10,lichen_bridge,Rin,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.608,0.616,True,True,True
+169,10,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.606,0.62,True,True,True
+171,10,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.612,0.622,True,True,True
+174,10,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.616,0.624,True,True,True
+175,10,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.588,0.602,True,True,True
+177,10,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.616,0.626,True,True,True
+180,11,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.63,0.644,True,True,True
+182,11,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.616,0.626,True,True,True
+183,11,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.62,0.624,True,True,True
+186,11,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.608,0.622,True,True,True
+188,11,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.624,0.634,True,True,True
+189,11,moss_ward,Fay,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.602,0.606,True,True,True
+192,11,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.612,0.626,True,True,True
+194,11,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.606,0.616,True,True,True
+195,11,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.612,0.616,True,True,True
+198,12,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.626,0.64,True,True,True
+199,12,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.622,0.632,True,True,True
+201,12,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.622,0.626,True,True,True
+203,12,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.606,0.62,True,True,True
+204,12,glass_harbor,Puck,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.622,0.636,True,True,True
+205,12,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.626,0.636,True,True,True
+207,12,orchid_engine,Cai,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.622,0.626,True,True,True
+209,12,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.616,0.63,True,True,True
+210,12,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.644,0.658,True,True,True
+211,12,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.626,0.636,True,True,True
+213,12,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.626,0.63,True,True,True
+215,12,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.614,0.628,True,True,True
+216,13,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.634,0.644,True,True,True
+219,13,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.636,0.644,True,True,True
+220,13,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.626,0.64,True,True,True
+222,13,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.616,0.626,True,True,True
+225,13,lichen_bridge,Luma,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.636,0.644,True,True,True
+226,13,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.598,0.612,True,True,True
+228,13,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.644,0.654,True,True,True
+231,13,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.624,0.632,True,True,True
+232,13,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.64,0.654,True,True,True
+234,14,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.64,0.644,True,True,True
+237,14,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.63,0.644,True,True,True
+239,14,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.644,0.654,True,True,True
+240,14,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.612,0.616,True,True,True
+243,14,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.628,0.642,True,True,True
+245,14,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.632,0.642,True,True,True
+246,14,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.654,0.658,True,True,True
+249,14,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.626,0.64,True,True,True
+251,14,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.62,0.63,True,True,True
+252,15,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.658,0.662,True,True,True
+254,15,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.616,0.63,True,True,True
+255,15,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.63,0.644,True,True,True
+256,15,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.654,0.664,True,True,True
+258,15,lichen_bridge,Rin,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.626,0.63,True,True,True
+260,15,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.658,0.672,True,True,True
+261,15,glass_harbor,Oren,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.632,0.646,True,True,True
+262,15,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.622,0.632,True,True,True
+264,15,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.644,0.648,True,True,True
+266,15,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.636,0.65,True,True,True
+267,15,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.644,0.658,True,True,True
+268,15,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.644,0.654,True,True,True
+270,16,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.664,0.672,True,True,True
+271,16,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.642,0.656,True,True,True
+273,16,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.642,0.652,True,True,True
+276,16,cinder_garden,Vale,Can you wait by ash path?,safety check,answer_known,bounded answer,0.632,0.64,True,True,True
+277,16,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.64,0.654,True,True,True
+279,16,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.63,0.64,True,True,True
+282,16,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.654,0.662,True,True,True
+283,16,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.626,0.64,True,True,True
+285,16,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.644,0.654,True,True,True
+288,17,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.672,0.686,True,True,True
+290,17,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.64,0.65,True,True,True
+291,17,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.654,0.658,True,True,True
+294,17,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.65,0.664,True,True,True
+296,17,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.662,0.672,True,True,True
+297,17,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.64,0.644,True,True,True
+300,17,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.662,0.676,True,True,True
+302,17,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.63,0.64,True,True,True
+303,17,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.644,0.648,True,True,True
+306,18,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.648,0.662,True,True,True
+307,18,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.64,0.65,True,True,True
+309,18,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.658,0.662,True,True,True
+311,18,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.644,0.658,True,True,True
+312,18,moss_ward,Milo,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.626,0.64,True,True,True
+313,18,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.654,0.664,True,True,True
+315,18,lichen_bridge,Luma,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.654,0.658,True,True,True
+317,18,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.648,0.662,True,True,True
+318,18,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.672,0.686,True,True,True
+319,18,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.656,0.666,True,True,True
+321,18,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.652,0.656,True,True,True
+323,18,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.646,0.66,True,True,True
+324,19,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.672,0.682,True,True,True
+327,19,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.664,0.672,True,True,True
+328,19,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.676,0.69,True,True,True
+330,19,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.64,0.65,True,True,True
+333,19,cinder_garden,Pax,Can you wait by ash path?,safety check,answer_known,bounded answer,0.666,0.674,True,True,True
+334,19,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.63,0.644,True,True,True
+336,19,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.686,0.696,True,True,True
+339,19,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.658,0.666,True,True,True
+340,19,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.662,0.676,True,True,True
+342,20,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.69,0.694,True,True,True
+345,20,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.662,0.676,True,True,True
+347,20,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.674,0.684,True,True,True
+348,20,lichen_bridge,Rin,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.644,0.648,True,True,True
+351,20,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.66,0.674,True,True,True
+353,20,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.666,0.676,True,True,True
+354,20,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.676,0.68,True,True,True
+357,20,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.662,0.676,True,True,True
+359,20,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.658,0.668,True,True,True
+360,21,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.686,0.69,True,True,True
+362,21,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.648,0.662,True,True,True
+363,21,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.656,0.67,True,True,True
+364,21,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.696,0.706,True,True,True
+366,21,cinder_garden,Vale,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.65,0.654,True,True,True
+368,21,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.68,0.694,True,True,True
+369,21,moss_ward,Fay,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.65,0.664,True,True,True
+370,21,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.664,0.674,True,True,True
+372,21,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.682,0.686,True,True,True
+374,21,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.64,0.654,True,True,True
+375,21,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.672,0.686,True,True,True
+376,21,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.694,0.704,True,True,True
+378,22,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.706,0.714,True,True,True
+379,22,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.674,0.688,True,True,True
+381,22,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.676,0.686,True,True,True
+384,22,glass_harbor,Puck,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.674,0.682,True,True,True
+385,22,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.676,0.69,True,True,True
+387,22,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.668,0.678,True,True,True
+390,22,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.704,0.712,True,True,True
+391,22,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.658,0.672,True,True,True
+393,22,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.676,0.686,True,True,True
+396,23,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.694,0.708,True,True,True
+398,23,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.682,0.692,True,True,True
+399,23,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.69,0.694,True,True,True
+402,23,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.654,0.668,True,True,True
+404,23,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.712,0.722,True,True,True
+405,23,lichen_bridge,Luma,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.672,0.676,True,True,True
+408,23,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.69,0.704,True,True,True
+410,23,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.662,0.672,True,True,True
+411,23,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.67,0.674,True,True,True
+414,24,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.686,0.7,True,True,True
+415,24,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.678,0.688,True,True,True
+417,24,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.686,0.69,True,True,True
+419,24,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.676,0.69,True,True,True
+420,24,orchid_engine,Dax,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.65,0.664,True,True,True
+421,24,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.686,0.696,True,True,True
+423,24,cinder_garden,Pax,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.684,0.688,True,True,True
+425,24,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.674,0.688,True,True,True
+426,24,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.714,0.728,True,True,True
+427,24,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.688,0.698,True,True,True
+429,24,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.686,0.69,True,True,True
+431,24,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.664,0.678,True,True,True
+432,25,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.722,0.732,True,True,True
+435,25,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.696,0.704,True,True,True
+436,25,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.704,0.718,True,True,True
+438,25,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.672,0.682,True,True,True
+441,25,glass_harbor,Oren,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.698,0.706,True,True,True
+442,25,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.654,0.668,True,True,True
+444,25,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.708,0.718,True,True,True
+447,25,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.694,0.702,True,True,True
+448,25,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.7,0.714,True,True,True
+450,26,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.718,0.722,True,True,True
+453,26,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.688,0.702,True,True,True
+455,26,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.706,0.716,True,True,True
+456,26,cinder_garden,Vale,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.668,0.672,True,True,True
+459,26,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.678,0.692,True,True,True
+461,26,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.702,0.712,True,True,True
+462,26,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.714,0.718,True,True,True
+465,26,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.69,0.704,True,True,True
+467,26,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.69,0.7,True,True,True
+468,27,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.728,0.732,True,True,True
+470,27,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.672,0.686,True,True,True
+471,27,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.69,0.704,True,True,True
+472,27,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.718,0.728,True,True,True
+474,27,glass_harbor,Puck,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.692,0.696,True,True,True
+476,27,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.718,0.732,True,True,True
+477,27,orchid_engine,Cai,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.688,0.702,True,True,True
+478,27,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.668,0.678,True,True,True
+480,27,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.732,0.736,True,True,True
+482,27,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.664,0.678,True,True,True
+483,27,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.704,0.718,True,True,True
+484,27,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.722,0.732,True,True,True
+486,28,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.728,0.736,True,True,True
+487,28,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.692,0.706,True,True,True
+489,28,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.712,0.722,True,True,True
+492,28,moss_ward,Milo,Will you keep the path clear?,safety check,answer_known,bounded answer,0.678,0.686,True,True,True
+493,28,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.704,0.718,True,True,True
+495,28,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.7,0.71,True,True,True
+498,28,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.732,0.74,True,True,True
+499,28,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.688,0.702,True,True,True
+501,28,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.702,0.712,True,True,True
+504,29,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.732,0.746,True,True,True
+506,29,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.686,0.696,True,True,True
+507,29,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.718,0.722,True,True,True
+510,29,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.678,0.692,True,True,True
+512,29,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.74,0.75,True,True,True
+513,29,cinder_garden,Pax,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.702,0.706,True,True,True
+516,29,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.732,0.746,True,True,True
+518,29,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.686,0.696,True,True,True
+519,29,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.704,0.708,True,True,True
+522,30,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.736,0.75,True,True,True
+523,30,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.71,0.72,True,True,True
+525,30,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.718,0.722,True,True,True
+527,30,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.706,0.72,True,True,True
+528,30,lichen_bridge,Rin,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.682,0.696,True,True,True
+529,30,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.712,0.722,True,True,True
+531,30,glass_harbor,Oren,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.716,0.72,True,True,True
+533,30,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.708,0.722,True,True,True
+534,30,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.736,0.75,True,True,True
+535,30,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.706,0.716,True,True,True
+537,30,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.722,0.726,True,True,True
+539,30,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.702,0.716,True,True,True
+540,31,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.75,0.76,True,True,True
+543,31,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.722,0.73,True,True,True
+544,31,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.746,0.76,True,True,True
+546,31,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.696,0.706,True,True,True
+549,31,moss_ward,Fay,Will you keep the path clear?,safety check,answer_known,bounded answer,0.716,0.724,True,True,True
+550,31,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.696,0.71,True,True,True
+552,31,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.746,0.756,True,True,True
+555,31,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.722,0.73,True,True,True
+556,31,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.75,0.764,True,True,True
+558,32,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.76,0.764,True,True,True
+561,32,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.722,0.736,True,True,True
+563,32,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.724,0.734,True,True,True
+564,32,glass_harbor,Puck,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.71,0.714,True,True,True
+567,32,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.716,0.73,True,True,True
+569,32,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.73,0.74,True,True,True
+570,32,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.764,0.768,True,True,True
+573,32,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.722,0.736,True,True,True
+575,32,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.72,0.73,True,True,True
+576,33,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.75,0.754,True,True,True
+578,33,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.714,0.728,True,True,True
+579,33,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.726,0.74,True,True,True
+580,33,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.756,0.766,True,True,True
+582,33,moss_ward,Milo,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.696,0.7,True,True,True
+584,33,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.768,0.782,True,True,True
+585,33,lichen_bridge,Luma,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.72,0.734,True,True,True
+586,33,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.692,0.702,True,True,True
+588,33,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.76,0.764,True,True,True
+590,33,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.696,0.71,True,True,True
+591,33,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.73,0.744,True,True,True
+592,33,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.764,0.774,True,True,True
+594,34,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.766,0.774,True,True,True
+595,34,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.73,0.744,True,True,True
+597,34,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.74,0.75,True,True,True
+600,34,orchid_engine,Dax,Can you keep the lane open?,safety check,answer_known,bounded answer,0.702,0.71,True,True,True
+601,34,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.736,0.75,True,True,True
+603,34,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.73,0.74,True,True,True
+606,34,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.774,0.782,True,True,True
+607,34,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.72,0.734,True,True,True
+609,34,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.736,0.746,True,True,True
+612,35,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.782,0.796,True,True,True
+614,35,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.71,0.72,True,True,True
+615,35,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.75,0.754,True,True,True
+618,35,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.71,0.724,True,True,True
+620,35,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.782,0.792,True,True,True
+621,35,glass_harbor,Oren,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.734,0.738,True,True,True
+624,35,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.754,0.768,True,True,True
+626,35,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.728,0.738,True,True,True
+627,35,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.74,0.744,True,True,True
+630,36,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.764,0.778,True,True,True
+631,36,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.74,0.75,True,True,True
+633,36,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.744,0.748,True,True,True
+635,36,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.738,0.752,True,True,True
+636,36,cinder_garden,Vale,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.706,0.72,True,True,True
+637,36,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.746,0.756,True,True,True
+639,36,moss_ward,Fay,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.734,0.738,True,True,True
+641,36,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.744,0.758,True,True,True
+642,36,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.774,0.788,True,True,True
+643,36,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.744,0.754,True,True,True
+645,36,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.75,0.754,True,True,True
+647,36,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.734,0.748,True,True,True
+648,37,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.792,0.802,True,True,True
+651,37,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.756,0.764,True,True,True
+652,37,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.768,0.782,True,True,True
+654,37,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.738,0.748,True,True,True
+657,37,orchid_engine,Cai,Can you keep the lane open?,safety check,answer_known,bounded answer,0.754,0.762,True,True,True
+658,37,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.7,0.714,True,True,True
+660,37,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.796,0.806,True,True,True
+663,37,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.754,0.762,True,True,True
+664,37,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.778,0.792,True,True,True
+666,38,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.782,0.786,True,True,True
+669,38,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.758,0.772,True,True,True
+671,38,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.762,0.772,True,True,True
+672,38,moss_ward,Milo,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.714,0.718,True,True,True
+675,38,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.748,0.762,True,True,True
+677,38,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.762,0.772,True,True,True
+678,38,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.792,0.796,True,True,True
+681,38,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.748,0.762,True,True,True
+683,38,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.752,0.762,True,True,True
+684,39,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.788,0.792,True,True,True
+686,39,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.718,0.732,True,True,True
+687,39,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.754,0.768,True,True,True
+688,39,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.806,0.816,True,True,True
+690,39,orchid_engine,Dax,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.72,0.724,True,True,True
+692,39,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.796,0.81,True,True,True
+693,39,cinder_garden,Pax,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.75,0.764,True,True,True
+694,39,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.724,0.734,True,True,True
+696,39,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.802,0.806,True,True,True
+698,39,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.72,0.734,True,True,True
+699,39,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.764,0.778,True,True,True
+700,39,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.786,0.796,True,True,True
+702,40,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.816,0.824,True,True,True
+703,40,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.762,0.776,True,True,True
+705,40,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.772,0.782,True,True,True
+708,40,lichen_bridge,Rin,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.734,0.742,True,True,True
+709,40,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.762,0.776,True,True,True
+711,40,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.762,0.772,True,True,True
+714,40,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.796,0.804,True,True,True
+715,40,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.738,0.752,True,True,True
+717,40,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.772,0.782,True,True,True
+720,41,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.81,0.824,True,True,True
+722,41,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.742,0.752,True,True,True
+723,41,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.776,0.78,True,True,True
+726,41,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.734,0.748,True,True,True
+728,41,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.804,0.814,True,True,True
+729,41,moss_ward,Fay,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.752,0.756,True,True,True
+732,41,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.792,0.806,True,True,True
+734,41,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.732,0.742,True,True,True
+735,41,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.768,0.772,True,True,True
+738,42,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.806,0.82,True,True,True
+739,42,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.772,0.782,True,True,True
+741,42,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.778,0.782,True,True,True
+743,42,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.756,0.77,True,True,True
+744,42,glass_harbor,Puck,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.748,0.762,True,True,True
+745,42,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.782,0.792,True,True,True
+747,42,orchid_engine,Cai,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.772,0.776,True,True,True
+749,42,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.772,0.786,True,True,True
+750,42,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.824,0.838,True,True,True
+751,42,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.776,0.786,True,True,True
+753,42,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.782,0.786,True,True,True
+755,42,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.764,0.778,True,True,True
+756,43,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.814,0.824,True,True,True
+759,43,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.792,0.8,True,True,True
+760,43,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.806,0.82,True,True,True
+762,43,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.742,0.752,True,True,True
+765,43,lichen_bridge,Luma,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.786,0.794,True,True,True
+766,43,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.724,0.738,True,True,True
+768,43,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.824,0.834,True,True,True
+771,43,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.78,0.788,True,True,True
+772,43,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.82,0.834,True,True,True
+774,44,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.82,0.824,True,True,True
+777,44,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.786,0.8,True,True,True
+779,44,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.794,0.804,True,True,True
+780,44,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.738,0.742,True,True,True
+783,44,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.778,0.792,True,True,True
+785,44,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.788,0.798,True,True,True
+786,44,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.834,0.838,True,True,True
+789,44,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.782,0.796,True,True,True
+791,44,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.77,0.78,True,True,True
+792,45,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.838,0.842,True,True,True
+794,45,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.742,0.756,True,True,True
+795,45,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.786,0.8,True,True,True
+796,45,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.834,0.844,True,True,True
+798,45,lichen_bridge,Rin,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.752,0.756,True,True,True
+800,45,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.838,0.852,True,True,True
+801,45,glass_harbor,Oren,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.782,0.796,True,True,True
+802,45,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.748,0.758,True,True,True
+804,45,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.824,0.828,True,True,True
+806,45,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.762,0.776,True,True,True
+807,45,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.8,0.814,True,True,True
+808,45,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.824,0.834,True,True,True
+810,46,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.844,0.852,True,True,True
+811,46,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.792,0.806,True,True,True
+813,46,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.798,0.808,True,True,True
+816,46,cinder_garden,Vale,Can you wait by ash path?,safety check,answer_known,bounded answer,0.758,0.766,True,True,True
+817,46,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.796,0.81,True,True,True
+819,46,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.78,0.79,True,True,True
+822,46,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.834,0.842,True,True,True
+823,46,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.776,0.79,True,True,True
+825,46,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.8,0.81,True,True,True
+828,47,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.852,0.866,True,True,True
+830,47,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.766,0.776,True,True,True
+831,47,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.81,0.814,True,True,True
+834,47,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.776,0.79,True,True,True
+836,47,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.842,0.852,True,True,True
+837,47,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.79,0.794,True,True,True
+840,47,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.842,0.856,True,True,True
+842,47,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.756,0.766,True,True,True
+843,47,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.8,0.804,True,True,True
+846,48,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.828,0.842,True,True,True
+847,48,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.79,0.8,True,True,True
+849,48,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.814,0.818,True,True,True
+851,48,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.794,0.808,True,True,True
+852,48,moss_ward,Milo,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.752,0.766,True,True,True
+853,48,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.81,0.82,True,True,True
+855,48,lichen_bridge,Luma,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.804,0.808,True,True,True
+857,48,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.804,0.818,True,True,True
+858,48,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.852,0.866,True,True,True
+859,48,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.806,0.816,True,True,True
+861,48,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.808,0.812,True,True,True
+863,48,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.796,0.81,True,True,True
+864,49,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.852,0.862,True,True,True
+867,49,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.82,0.828,True,True,True
+868,49,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.856,0.87,True,True,True
+870,49,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.766,0.776,True,True,True
+873,49,cinder_garden,Pax,Can you wait by ash path?,safety check,answer_known,bounded answer,0.816,0.824,True,True,True
+874,49,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.756,0.77,True,True,True
+876,49,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.866,0.876,True,True,True
+879,49,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.814,0.822,True,True,True
+880,49,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.842,0.856,True,True,True
+882,50,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.87,0.874,True,True,True
+885,50,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.818,0.832,True,True,True
+887,50,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.824,0.834,True,True,True
+888,50,lichen_bridge,Rin,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.77,0.774,True,True,True
+891,50,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.81,0.824,True,True,True
+893,50,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.822,0.832,True,True,True
+894,50,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.856,0.86,True,True,True
+897,50,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.818,0.832,True,True,True
+899,50,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.808,0.818,True,True,True
+900,51,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.866,0.87,True,True,True
+902,51,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.774,0.788,True,True,True
+903,51,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.812,0.826,True,True,True
+904,51,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.876,0.886,True,True,True
+906,51,cinder_garden,Vale,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.776,0.78,True,True,True
+908,51,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.86,0.874,True,True,True
+909,51,moss_ward,Fay,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.8,0.814,True,True,True
+910,51,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.79,0.8,True,True,True
+912,51,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.862,0.866,True,True,True
+914,51,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.766,0.78,True,True,True
+915,51,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.828,0.842,True,True,True
+916,51,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.874,0.884,True,True,True
+918,52,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.886,0.894,True,True,True
+919,52,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.824,0.838,True,True,True
+921,52,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.832,0.842,True,True,True
+924,52,glass_harbor,Puck,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.8,0.808,True,True,True
+925,52,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.832,0.846,True,True,True
+927,52,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.818,0.828,True,True,True
+930,52,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.884,0.892,True,True,True
+931,52,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.808,0.822,True,True,True
+933,52,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.832,0.842,True,True,True
+936,53,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.874,0.888,True,True,True
+938,53,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.808,0.818,True,True,True
+939,53,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.846,0.85,True,True,True
+942,53,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.78,0.794,True,True,True
+944,53,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.892,0.902,True,True,True
+945,53,lichen_bridge,Luma,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.822,0.826,True,True,True
+948,53,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.87,0.884,True,True,True
+950,53,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.788,0.798,True,True,True
+951,53,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.826,0.83,True,True,True
+954,54,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.866,0.88,True,True,True
+955,54,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.828,0.838,True,True,True
+957,54,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.842,0.846,True,True,True
+959,54,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.826,0.84,True,True,True
+960,54,orchid_engine,Dax,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.776,0.79,True,True,True
+961,54,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.842,0.852,True,True,True
+963,54,cinder_garden,Pax,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.834,0.838,True,True,True
+965,54,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.83,0.844,True,True,True
+966,54,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.894,0.908,True,True,True
+967,54,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.838,0.848,True,True,True
+969,54,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.842,0.846,True,True,True
+971,54,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.814,0.828,True,True,True
+972,55,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.902,0.912,True,True,True
+975,55,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.852,0.86,True,True,True
+976,55,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.884,0.898,True,True,True
+978,55,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.798,0.808,True,True,True
+981,55,glass_harbor,Oren,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.848,0.856,True,True,True
+982,55,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.78,0.794,True,True,True
+984,55,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.888,0.898,True,True,True
+987,55,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.85,0.858,True,True,True
+988,55,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.88,0.894,True,True,True
+990,56,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.898,0.902,True,True,True
+993,56,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.844,0.858,True,True,True
+995,56,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.856,0.866,True,True,True
+996,56,cinder_garden,Vale,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.794,0.798,True,True,True
+999,56,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.828,0.842,True,True,True
+1001,56,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.858,0.868,True,True,True
+1002,56,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.894,0.898,True,True,True
+1005,56,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.846,0.86,True,True,True
+1007,56,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.84,0.85,True,True,True
+1008,57,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.908,0.912,True,True,True
+1010,57,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.798,0.812,True,True,True
+1011,57,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.846,0.86,True,True,True
+1012,57,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.898,0.908,True,True,True
+1014,57,glass_harbor,Puck,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.818,0.822,True,True,True
+1016,57,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.898,0.912,True,True,True
+1017,57,orchid_engine,Cai,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.838,0.852,True,True,True
+1018,57,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.794,0.804,True,True,True
+1020,57,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.912,0.916,True,True,True
+1022,57,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.79,0.804,True,True,True
+1023,57,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.86,0.874,True,True,True
+1024,57,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.902,0.912,True,True,True
+1026,58,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.908,0.916,True,True,True
+1027,58,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.842,0.856,True,True,True
+1029,58,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.868,0.878,True,True,True
+1032,58,moss_ward,Milo,Will you keep the path clear?,safety check,answer_known,bounded answer,0.804,0.812,True,True,True
+1033,58,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.86,0.874,True,True,True
+1035,58,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.85,0.86,True,True,True
+1038,58,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.912,0.92,True,True,True
+1039,58,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.838,0.852,True,True,True
+1041,58,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.858,0.868,True,True,True
+1044,59,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.912,0.926,True,True,True
+1046,59,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.812,0.822,True,True,True
+1047,59,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.874,0.878,True,True,True
+1050,59,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.804,0.818,True,True,True
+1052,59,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.92,0.93,True,True,True
+1053,59,cinder_garden,Pax,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.852,0.856,True,True,True
+1056,59,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.912,0.926,True,True,True
+1058,59,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.812,0.822,True,True,True
+1059,59,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.86,0.864,True,True,True
+1062,60,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.916,0.93,True,True,True
+1063,60,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.86,0.87,True,True,True
+1065,60,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.874,0.878,True,True,True
+1067,60,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.856,0.87,True,True,True
+1068,60,lichen_bridge,Rin,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.808,0.822,True,True,True
+1069,60,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.868,0.878,True,True,True
+1071,60,glass_harbor,Oren,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.866,0.87,True,True,True
+1073,60,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.864,0.878,True,True,True
+1074,60,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.916,0.93,True,True,True
+1075,60,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.856,0.866,True,True,True
+1077,60,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.878,0.882,True,True,True
+1079,60,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.852,0.866,True,True,True
+1080,61,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.93,0.94,True,True,True
+1083,61,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.878,0.886,True,True,True
+1084,61,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.926,0.94,True,True,True
+1086,61,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.822,0.832,True,True,True
+1089,61,moss_ward,Fay,Will you keep the path clear?,safety check,answer_known,bounded answer,0.866,0.874,True,True,True
+1090,61,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.822,0.836,True,True,True
+1092,61,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.926,0.936,True,True,True
+1095,61,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.878,0.886,True,True,True
+1096,61,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.93,0.94,True,True,True
+1098,62,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1101,62,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.878,0.892,True,True,True
+1103,62,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.874,0.884,True,True,True
+1104,62,glass_harbor,Puck,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.836,0.84,True,True,True
+1107,62,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.866,0.88,True,True,True
+1109,62,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.886,0.896,True,True,True
+1110,62,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1113,62,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.878,0.892,True,True,True
+1115,62,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.87,0.88,True,True,True
+1116,63,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.93,0.934,True,True,True
+1118,63,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.84,0.854,True,True,True
+1119,63,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.882,0.896,True,True,True
+1120,63,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.936,0.94,True,True,True
+1122,63,moss_ward,Milo,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.822,0.826,True,True,True
+1124,63,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1125,63,lichen_bridge,Luma,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.87,0.884,True,True,True
+1126,63,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.818,0.828,True,True,True
+1128,63,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1130,63,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.822,0.836,True,True,True
+1131,63,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.886,0.9,True,True,True
+1132,63,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1134,64,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1135,64,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.88,0.894,True,True,True
+1137,64,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.896,0.906,True,True,True
+1140,64,orchid_engine,Dax,Can you keep the lane open?,safety check,answer_known,bounded answer,0.828,0.836,True,True,True
+1141,64,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.892,0.906,True,True,True
+1143,64,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.88,0.89,True,True,True
+1146,64,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1147,64,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.87,0.884,True,True,True
+1149,64,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.892,0.902,True,True,True
+1152,65,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1154,65,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.836,0.846,True,True,True
+1155,65,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.906,0.91,True,True,True
+1158,65,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.836,0.85,True,True,True
+1160,65,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1161,65,glass_harbor,Oren,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.884,0.888,True,True,True
+1164,65,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.934,0.94,True,True,True
+1166,65,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.854,0.864,True,True,True
+1167,65,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.896,0.9,True,True,True
+1170,66,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1171,66,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.89,0.9,True,True,True
+1173,66,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.9,0.904,True,True,True
+1175,66,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.888,0.902,True,True,True
+1176,66,cinder_garden,Vale,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.832,0.846,True,True,True
+1177,66,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.902,0.912,True,True,True
+1179,66,moss_ward,Fay,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.884,0.888,True,True,True
+1181,66,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.9,0.914,True,True,True
+1182,66,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1183,66,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.894,0.904,True,True,True
+1185,66,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.906,0.91,True,True,True
+1187,66,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.884,0.898,True,True,True
+1188,67,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1191,67,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.912,0.92,True,True,True
+1192,67,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1194,67,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.864,0.874,True,True,True
+1197,67,orchid_engine,Cai,Can you keep the lane open?,safety check,answer_known,bounded answer,0.904,0.912,True,True,True
+1198,67,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.826,0.84,True,True,True
+1200,67,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1203,67,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.91,0.918,True,True,True
+1204,67,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1206,68,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1209,68,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.914,0.928,True,True,True
+1211,68,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.912,0.922,True,True,True
+1212,68,moss_ward,Milo,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.84,0.844,True,True,True
+1215,68,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.898,0.912,True,True,True
+1217,68,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.918,0.928,True,True,True
+1218,68,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1221,68,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.904,0.918,True,True,True
+1223,68,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.902,0.912,True,True,True
+1224,69,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1226,69,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.844,0.858,True,True,True
+1227,69,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.91,0.924,True,True,True
+1228,69,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1230,69,orchid_engine,Dax,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.846,0.85,True,True,True
+1232,69,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1233,69,cinder_garden,Pax,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.9,0.914,True,True,True
+1234,69,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.85,0.86,True,True,True
+1236,69,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1238,69,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.846,0.86,True,True,True
+1239,69,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.92,0.934,True,True,True
+1240,69,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1242,70,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1243,70,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.912,0.926,True,True,True
+1245,70,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.928,0.938,True,True,True
+1248,70,lichen_bridge,Rin,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.86,0.868,True,True,True
+1249,70,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.918,0.932,True,True,True
+1251,70,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.912,0.922,True,True,True
+1254,70,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1255,70,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.888,0.902,True,True,True
+1257,70,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.928,0.938,True,True,True
+1260,71,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1262,71,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.868,0.878,True,True,True
+1263,71,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.932,0.936,True,True,True
+1266,71,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.86,0.874,True,True,True
+1268,71,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1269,71,moss_ward,Fay,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.902,0.906,True,True,True
+1272,71,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1274,71,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.858,0.868,True,True,True
+1275,71,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.924,0.928,True,True,True
+1278,72,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1279,72,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.922,0.932,True,True,True
+1281,72,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.934,0.938,True,True,True
+1283,72,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.906,0.92,True,True,True
+1284,72,glass_harbor,Puck,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.874,0.888,True,True,True
+1285,72,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.938,0.94,True,True,True
+1287,72,orchid_engine,Cai,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.922,0.926,True,True,True
+1289,72,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.928,0.94,True,True,True
+1290,72,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1291,72,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.926,0.936,True,True,True
+1293,72,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.938,0.94,True,True,True
+1295,72,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.914,0.928,True,True,True
+1296,73,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1299,73,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1300,73,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1302,73,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.868,0.878,True,True,True
+1305,73,lichen_bridge,Luma,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.936,0.94,True,True,True
+1306,73,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.85,0.864,True,True,True
+1308,73,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1311,73,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.936,0.94,True,True,True
+1312,73,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1314,74,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1317,74,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1319,74,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1320,74,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.864,0.868,True,True,True
+1323,74,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.928,0.94,True,True,True
+1325,74,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1326,74,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1329,74,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.938,0.94,True,True,True
+1331,74,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.92,0.93,True,True,True
+1332,75,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1334,75,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.868,0.882,True,True,True
+1335,75,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1336,75,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1338,75,lichen_bridge,Rin,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.878,0.882,True,True,True
+1340,75,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1341,75,glass_harbor,Oren,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.932,0.94,True,True,True
+1342,75,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.874,0.884,True,True,True
+1344,75,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1346,75,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.888,0.902,True,True,True
+1347,75,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1348,75,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1350,76,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1351,76,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1353,76,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1356,76,cinder_garden,Vale,Can you wait by ash path?,safety check,answer_known,bounded answer,0.884,0.892,True,True,True
+1357,76,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1359,76,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.93,0.94,True,True,True
+1362,76,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1363,76,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.926,0.94,True,True,True
+1365,76,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1368,77,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1370,77,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.892,0.902,True,True,True
+1371,77,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1374,77,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.902,0.916,True,True,True
+1376,77,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1377,77,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1380,77,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1382,77,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.882,0.892,True,True,True
+1383,77,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1386,78,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1387,78,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1389,78,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1391,78,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1392,78,moss_ward,Milo,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.878,0.892,True,True,True
+1393,78,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1395,78,lichen_bridge,Luma,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1397,78,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1398,78,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1399,78,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1401,78,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1403,78,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1404,79,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1407,79,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1408,79,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1410,79,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.892,0.902,True,True,True
+1413,79,cinder_garden,Pax,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1414,79,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.882,0.896,True,True,True
+1416,79,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1419,79,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1420,79,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1422,80,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1425,80,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1427,80,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1428,80,lichen_bridge,Rin,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.896,0.9,True,True,True
+1431,80,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1433,80,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1434,80,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1437,80,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1439,80,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1440,81,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1442,81,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.9,0.914,True,True,True
+1443,81,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1444,81,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1446,81,cinder_garden,Vale,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.902,0.906,True,True,True
+1448,81,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1449,81,moss_ward,Fay,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1450,81,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.916,0.926,True,True,True
+1452,81,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1454,81,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.892,0.906,True,True,True
+1455,81,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1456,81,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1458,82,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1459,82,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1461,82,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1464,82,glass_harbor,Puck,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.926,0.934,True,True,True
+1465,82,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1467,82,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1470,82,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1471,82,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1473,82,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1476,83,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1478,83,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.934,0.94,True,True,True
+1479,83,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1482,83,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.906,0.92,True,True,True
+1484,83,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1485,83,lichen_bridge,Luma,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1488,83,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1490,83,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.914,0.924,True,True,True
+1491,83,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1494,84,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1495,84,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1497,84,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1499,84,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1500,84,orchid_engine,Dax,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.902,0.916,True,True,True
+1501,84,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1503,84,cinder_garden,Pax,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1505,84,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1506,84,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1507,84,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1509,84,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1511,84,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1512,85,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1515,85,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1516,85,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1518,85,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.924,0.934,True,True,True
+1521,85,glass_harbor,Oren,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1522,85,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.906,0.92,True,True,True
+1524,85,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1527,85,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1528,85,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1530,86,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1533,86,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1535,86,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1536,86,cinder_garden,Vale,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.92,0.924,True,True,True
+1539,86,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1541,86,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1542,86,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1545,86,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1547,86,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1548,87,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1550,87,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.924,0.938,True,True,True
+1551,87,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1552,87,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1554,87,glass_harbor,Puck,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1556,87,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1557,87,orchid_engine,Cai,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1558,87,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.92,0.93,True,True,True
+1560,87,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1562,87,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.916,0.93,True,True,True
+1563,87,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1564,87,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1566,88,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1567,88,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1569,88,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1572,88,moss_ward,Milo,Will you keep the path clear?,safety check,answer_known,bounded answer,0.93,0.938,True,True,True
+1573,88,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1575,88,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1578,88,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1579,88,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1581,88,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1584,89,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1586,89,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.938,0.94,True,True,True
+1587,89,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1590,89,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.93,0.94,True,True,True
+1592,89,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1593,89,cinder_garden,Pax,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1596,89,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1598,89,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.938,0.94,True,True,True
+1599,89,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1602,90,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1603,90,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1605,90,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1607,90,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1608,90,lichen_bridge,Rin,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.934,0.94,True,True,True
+1609,90,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1611,90,glass_harbor,Oren,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1613,90,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1614,90,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1615,90,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1617,90,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1619,90,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1620,91,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1623,91,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1624,91,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1626,91,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1629,91,moss_ward,Fay,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1630,91,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1632,91,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1635,91,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1636,91,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1638,92,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1641,92,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1643,92,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1644,92,glass_harbor,Puck,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1647,92,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1649,92,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1650,92,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1653,92,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1655,92,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1656,93,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1658,93,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1659,93,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1660,93,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1662,93,moss_ward,Milo,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1664,93,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1665,93,lichen_bridge,Luma,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1666,93,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1668,93,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1670,93,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1671,93,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1672,93,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1674,94,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1675,94,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1677,94,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1680,94,orchid_engine,Dax,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1681,94,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1683,94,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1686,94,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1687,94,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1689,94,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1692,95,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1694,95,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1695,95,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1698,95,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1700,95,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1701,95,glass_harbor,Oren,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1704,95,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1706,95,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1707,95,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1710,96,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1711,96,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1713,96,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1715,96,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1716,96,cinder_garden,Vale,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1717,96,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1719,96,moss_ward,Fay,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1721,96,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1722,96,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1723,96,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1725,96,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1727,96,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1728,97,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1731,97,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1732,97,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1734,97,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1737,97,orchid_engine,Cai,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1738,97,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1740,97,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1743,97,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1744,97,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1746,98,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1749,98,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1751,98,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1752,98,moss_ward,Milo,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1755,98,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1757,98,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1758,98,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1761,98,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1763,98,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1764,99,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1766,99,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1767,99,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1768,99,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1770,99,orchid_engine,Dax,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1772,99,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1773,99,cinder_garden,Pax,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1774,99,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1776,99,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1778,99,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1779,99,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1780,99,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1782,100,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1783,100,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1785,100,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1788,100,lichen_bridge,Rin,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1789,100,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1791,100,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1794,100,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1795,100,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1797,100,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1800,101,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1802,101,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1803,101,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1806,101,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1808,101,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1809,101,moss_ward,Fay,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1812,101,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1814,101,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1815,101,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1818,102,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1819,102,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1821,102,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1823,102,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1824,102,glass_harbor,Puck,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1825,102,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1827,102,orchid_engine,Cai,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1829,102,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1830,102,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1831,102,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1833,102,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1835,102,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1836,103,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1839,103,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1840,103,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1842,103,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1845,103,lichen_bridge,Luma,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1846,103,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1848,103,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1851,103,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1852,103,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1854,104,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1857,104,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1859,104,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1860,104,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1863,104,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1865,104,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1866,104,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1869,104,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1871,104,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1872,105,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1874,105,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1875,105,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1876,105,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1878,105,lichen_bridge,Rin,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1880,105,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1881,105,glass_harbor,Oren,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1882,105,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1884,105,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1886,105,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1887,105,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1888,105,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1890,106,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1891,106,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1893,106,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1896,106,cinder_garden,Vale,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1897,106,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1899,106,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1902,106,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1903,106,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1905,106,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1908,107,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1910,107,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1911,107,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1914,107,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1916,107,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1917,107,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1920,107,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1922,107,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1923,107,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1926,108,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1927,108,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1929,108,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1931,108,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1932,108,moss_ward,Milo,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1933,108,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1935,108,lichen_bridge,Luma,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1937,108,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1938,108,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1939,108,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1941,108,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1943,108,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1944,109,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1947,109,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1948,109,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1950,109,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1953,109,cinder_garden,Pax,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1954,109,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1956,109,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1959,109,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1960,109,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1962,110,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1965,110,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1967,110,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1968,110,lichen_bridge,Rin,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1971,110,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1973,110,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1974,110,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+1977,110,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1979,110,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1980,111,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1982,111,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1983,111,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1984,111,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1986,111,cinder_garden,Vale,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1988,111,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1989,111,moss_ward,Fay,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1990,111,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1992,111,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+1994,111,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+1995,111,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+1996,111,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+1998,112,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+1999,112,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2001,112,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2004,112,glass_harbor,Puck,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2005,112,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2007,112,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2010,112,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2011,112,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2013,112,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2016,113,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2018,113,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2019,113,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2022,113,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2024,113,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2025,113,lichen_bridge,Luma,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2028,113,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2030,113,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2031,113,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2034,114,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2035,114,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2037,114,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2039,114,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2040,114,orchid_engine,Dax,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2041,114,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2043,114,cinder_garden,Pax,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2045,114,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2046,114,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2047,114,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2049,114,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2051,114,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2052,115,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2055,115,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2056,115,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2058,115,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2061,115,glass_harbor,Oren,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2062,115,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2064,115,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2067,115,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2068,115,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2070,116,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2073,116,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2075,116,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2076,116,cinder_garden,Vale,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2079,116,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2081,116,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2082,116,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2085,116,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2087,116,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2088,117,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2090,117,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2091,117,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2092,117,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2094,117,glass_harbor,Puck,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2096,117,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2097,117,orchid_engine,Cai,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2098,117,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2100,117,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2102,117,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2103,117,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2104,117,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2106,118,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2107,118,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2109,118,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2112,118,moss_ward,Milo,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2113,118,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2115,118,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2118,118,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2119,118,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2121,118,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2124,119,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2126,119,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2127,119,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2130,119,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2132,119,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2133,119,cinder_garden,Pax,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2136,119,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2138,119,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2139,119,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2142,120,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2143,120,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2145,120,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2147,120,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2148,120,lichen_bridge,Rin,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2149,120,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2151,120,glass_harbor,Oren,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2153,120,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2154,120,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2155,120,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2157,120,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2159,120,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2160,121,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2163,121,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2164,121,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2166,121,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2169,121,moss_ward,Fay,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2170,121,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2172,121,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2175,121,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2176,121,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2178,122,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2181,122,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2183,122,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2184,122,glass_harbor,Puck,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2187,122,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2189,122,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2190,122,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2193,122,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2195,122,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2196,123,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2198,123,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2199,123,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2200,123,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2202,123,moss_ward,Milo,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2204,123,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2205,123,lichen_bridge,Luma,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2206,123,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2208,123,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2210,123,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2211,123,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2212,123,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2214,124,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2215,124,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2217,124,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2220,124,orchid_engine,Dax,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2221,124,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2223,124,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2226,124,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2227,124,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2229,124,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2232,125,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2234,125,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2235,125,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2238,125,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2240,125,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2241,125,glass_harbor,Oren,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2244,125,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2246,125,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2247,125,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2250,126,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2251,126,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2253,126,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2255,126,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2256,126,cinder_garden,Vale,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2257,126,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2259,126,moss_ward,Fay,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2261,126,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2262,126,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2263,126,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2265,126,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2267,126,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2268,127,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2271,127,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2272,127,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2274,127,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2277,127,orchid_engine,Cai,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2278,127,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2280,127,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2283,127,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2284,127,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2286,128,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2289,128,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2291,128,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2292,128,moss_ward,Milo,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2295,128,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2297,128,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2298,128,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2301,128,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2303,128,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2304,129,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2306,129,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2307,129,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2308,129,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2310,129,orchid_engine,Dax,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2312,129,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2313,129,cinder_garden,Pax,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2314,129,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2316,129,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2318,129,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2319,129,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2320,129,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2322,130,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2323,130,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2325,130,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2328,130,lichen_bridge,Rin,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2329,130,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2331,130,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2334,130,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2335,130,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2337,130,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2340,131,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2342,131,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2343,131,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2346,131,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2348,131,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2349,131,moss_ward,Fay,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2352,131,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2354,131,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2355,131,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2358,132,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2359,132,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2361,132,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2363,132,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2364,132,glass_harbor,Puck,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2365,132,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2367,132,orchid_engine,Cai,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2369,132,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2370,132,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2371,132,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2373,132,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2375,132,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2376,133,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2379,133,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2380,133,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2382,133,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2385,133,lichen_bridge,Luma,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2386,133,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2388,133,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2391,133,orchid_engine,Eli,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2392,133,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2394,134,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2397,134,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2399,134,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2400,134,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2403,134,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2405,134,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2406,134,moss_ward,Ari,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2409,134,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2411,134,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2412,135,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2414,135,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2415,135,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2416,135,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2418,135,lichen_bridge,Rin,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2420,135,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2421,135,glass_harbor,Oren,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2422,135,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2424,135,orchid_engine,Bea,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2426,135,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2427,135,cinder_garden,Wren,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2428,135,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2430,136,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2431,136,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2433,136,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2436,136,cinder_garden,Vale,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2437,136,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2439,136,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2442,136,lichen_bridge,Kio,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2443,136,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2445,136,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2448,137,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2450,137,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2451,137,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2454,137,glass_harbor,Puck,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2456,137,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2457,137,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2460,137,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2462,137,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2463,137,moss_ward,Tala,Do you understand warm-cup?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2466,138,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2467,138,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2469,138,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2471,138,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2472,138,moss_ward,Milo,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2473,138,glass_harbor,Sera,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2475,138,lichen_bridge,Luma,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2477,138,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2478,138,glass_harbor,Nia,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2479,138,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2481,138,orchid_engine,Eli,Why do you look at the valve key?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2483,138,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2484,139,lichen_bridge,Kio,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2487,139,glass_harbor,Sera,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2488,139,cinder_garden,Juno,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2490,139,orchid_engine,Dax,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2493,139,cinder_garden,Pax,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2494,139,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2496,139,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2499,139,lichen_bridge,Sol,Can you wait for signal hush?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2500,139,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2502,140,cinder_garden,Juno,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2505,140,moss_ward,Tala,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2507,140,cinder_garden,Pax,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2508,140,lichen_bridge,Rin,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2511,140,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2513,140,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2514,140,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2517,140,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2519,140,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2520,141,glass_harbor,Nia,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2522,141,lichen_bridge,Rin,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2523,141,orchid_engine,Eli,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2524,141,moss_ward,Ari,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2526,141,cinder_garden,Vale,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2528,141,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2529,141,moss_ward,Fay,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2530,141,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2532,141,lichen_bridge,Kio,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2534,141,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2535,141,glass_harbor,Sera,Why did you touch the rail?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2536,141,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2538,142,moss_ward,Ari,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2539,142,glass_harbor,Oren,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2541,142,lichen_bridge,Sol,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2544,142,glass_harbor,Puck,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2545,142,cinder_garden,Wren,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2547,142,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2550,142,cinder_garden,Juno,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2551,142,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2553,142,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2556,143,orchid_engine,Bea,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2558,143,glass_harbor,Puck,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2559,143,cinder_garden,Wren,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2562,143,moss_ward,Milo,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2564,143,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2565,143,lichen_bridge,Luma,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2568,143,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2570,143,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2571,143,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2574,144,lichen_bridge,Kio,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2575,144,orchid_engine,Cai,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2577,144,glass_harbor,Sera,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2579,144,lichen_bridge,Luma,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2580,144,orchid_engine,Dax,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2581,144,moss_ward,Tala,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2583,144,cinder_garden,Pax,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2585,144,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2586,144,moss_ward,Ari,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2587,144,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2589,144,lichen_bridge,Sol,Why did you stop at the rope?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2591,144,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2592,145,cinder_garden,Juno,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2595,145,moss_ward,Tala,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2596,145,glass_harbor,Nia,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2598,145,lichen_bridge,Rin,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2601,145,glass_harbor,Oren,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2602,145,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2604,145,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2607,145,cinder_garden,Wren,Can you wait by ash path?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2608,145,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2610,146,glass_harbor,Nia,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2613,146,orchid_engine,Eli,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2615,146,glass_harbor,Oren,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2616,146,cinder_garden,Vale,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2619,146,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2621,146,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2622,146,lichen_bridge,Kio,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2625,146,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2627,146,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2628,147,moss_ward,Ari,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2630,147,cinder_garden,Vale,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2631,147,lichen_bridge,Sol,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2632,147,orchid_engine,Bea,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2634,147,glass_harbor,Puck,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2636,147,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2637,147,orchid_engine,Cai,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2638,147,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2640,147,cinder_garden,Juno,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2642,147,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2643,147,moss_ward,Tala,Why do you watch the rain jar?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2644,147,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2646,148,orchid_engine,Bea,Can you keep the lane open?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2647,148,moss_ward,Fay,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2649,148,cinder_garden,Wren,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2652,148,moss_ward,Milo,Will you keep the path clear?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2653,148,glass_harbor,Sera,Which word means net keeper?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2655,148,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2658,148,glass_harbor,Nia,Can you leave the lamp bright?,safety check,answer_known,bounded answer,0.94,0.94,True,True,True
+2659,148,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2661,148,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2664,149,lichen_bridge,Kio,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2666,149,moss_ward,Milo,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2667,149,glass_harbor,Sera,Which word means net keeper?,custom clarity,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2670,149,orchid_engine,Dax,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2672,149,glass_harbor,Nia,Can you leave the lamp bright?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2673,149,cinder_garden,Pax,Do you know cool-hand?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2676,149,moss_ward,Ari,Do you understand warm-cup?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2678,149,cinder_garden,Vale,Can you wait by ash path?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2679,149,lichen_bridge,Sol,Which sign means safe crossing?,safety check,offer_trade,deferred instead of fabricated,0.94,0.94,True,True,True
+2682,150,cinder_garden,Juno,Why are you near the seed tray?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2683,150,lichen_bridge,Luma,Can you wait for signal hush?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2685,150,moss_ward,Tala,Why do you watch the rain jar?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2687,150,cinder_garden,Pax,Do you know cool-hand?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2688,150,lichen_bridge,Rin,Why did you stop at the rope?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2689,150,orchid_engine,Eli,Can you keep the lane open?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2691,150,glass_harbor,Oren,Why did you touch the rail?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2693,150,lichen_bridge,Sol,Which sign means safe crossing?,safety check,ask_clarify,clarifying answer,0.94,0.94,True,True,True
+2694,150,orchid_engine,Bea,Why do you look at the valve key?,safety check,gesture_repair,clarifying answer,0.94,0.94,True,True,True
+2695,150,moss_ward,Fay,Will you keep the path clear?,safety check,admit_unknown,unknown respected,0.94,0.94,True,True,True
+2697,150,cinder_garden,Wren,Why are you near the seed tray?,safety check,step_back,deferred instead of fabricated,0.94,0.94,True,True,True
+2699,150,orchid_engine,Cai,Which phrase means valve listener?,custom clarity,ask_clarify,clarifying answer,0.94,0.94,True,True,True

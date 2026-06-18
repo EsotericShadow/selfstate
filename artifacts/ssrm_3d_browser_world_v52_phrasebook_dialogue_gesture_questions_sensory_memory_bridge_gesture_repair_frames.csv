@@ -1,0 +1,1576 @@
+tick_id,day,settlement_id,resident_id,gesture,mismatch_type,repair_action,repair_success,risk_before,risk_after,visible_gesture_marker,bounded_repair
+0,1,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,True,0.44,0.28,Nia:tea hold:timing,True
+2,1,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.36,0.2,Rin:rope touch:none,True
+4,1,moss_ward,Ari,cup pause,none,gesture accepted,True,0.36,0.2,Ari:cup pause:none,True
+5,1,glass_harbor,Oren,lantern tap,timing,slow repeat with resident correction,True,0.44,0.28,Oren:lantern tap:timing,True
+6,1,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.36,0.2,Vale:cool hand:none,True
+8,1,orchid_engine,Bea,open palms,none,gesture accepted,True,0.36,0.2,Bea:open palms:none,True
+10,1,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.44,0.28,Puck:net-hand open:timing,True
+11,1,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.36,0.2,Wren:shade bow:none,True
+12,1,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.36,0.2,Kio:signal hush:none,True
+14,1,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.44,0.28,Milo:empty hands:meaning,True
+16,1,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.36,0.2,Juno:seed-step stop:none,True
+17,1,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.36,0.2,Luma:rope touch:none,True
+18,2,moss_ward,Ari,cup pause,none,gesture accepted,True,0.342,0.182,Ari:cup pause:none,True
+20,2,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.462,0.302,Vale:cool hand:timing,True
+22,2,orchid_engine,Bea,open palms,none,gesture accepted,True,0.35,0.19,Bea:open palms:none,True
+24,2,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.342,0.182,Puck:net-hand open:none,True
+26,2,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.382,0.222,Kio:signal hush:none,True
+28,2,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.43,0.27,Milo:empty hands:meaning,True
+30,2,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,False,0.422,0.382,Juno:seed-step stop:timing,True
+32,2,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.4,0.24,Dax:valve pause:none,True
+34,2,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.342,0.182,Nia:lantern tap:none,True
+36,3,orchid_engine,Bea,open palms,none,gesture accepted,True,0.332,0.172,Bea:open palms:none,True
+38,3,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.338,0.178,Puck:net-hand open:none,True
+39,3,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.332,0.172,Wren:shade bow:none,True
+40,3,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.416,0.256,Kio:signal hush:timing,True
+42,3,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,False,0.412,0.372,Milo:empty hands:meaning,True
+44,3,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.338,0.178,Juno:seed-step stop:none,True
+45,3,lichen_bridge,Luma,rope touch,timing,slow repeat with resident correction,True,0.412,0.252,Luma:rope touch:timing,True
+46,3,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.354,0.194,Dax:valve pause:none,True
+48,3,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.324,0.164,Nia:lantern tap:none,True
+50,3,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.43,0.27,Rin:shared bowl:timing,True
+51,3,orchid_engine,Eli,open palms,none,gesture accepted,True,0.354,0.194,Eli:open palms:none,True
+52,3,moss_ward,Ari,door-path step,none,gesture accepted,True,0.338,0.178,Ari:door-path step:none,True
+54,4,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.358,0.198,Kio:signal hush:none,True
+56,4,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.402,0.242,Milo:empty hands:meaning,True
+58,4,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.32,0.16,Juno:seed-step stop:none,True
+60,4,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,False,0.456,0.416,Dax:valve pause:timing,True
+62,4,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.314,0.154,Nia:lantern tap:none,True
+64,4,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.332,0.172,Rin:shared bowl:none,True
+66,4,moss_ward,Ari,door-path step,none,gesture accepted,True,0.36,0.2,Ari:door-path step:none,True
+68,4,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.336,0.176,Vale:shade bow:none,True
+70,4,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.402,0.242,Bea:orchid cup:timing,True
+72,5,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.316,0.156,Juno:seed-step stop:none,True
+73,5,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.304,0.144,Luma:rope touch:none,True
+74,5,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.33,0.17,Dax:valve pause:none,True
+76,5,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.296,0.136,Nia:lantern tap:none,True
+78,5,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.328,0.168,Rin:shared bowl:none,True
+79,5,orchid_engine,Eli,open palms,none,gesture accepted,True,0.326,0.166,Eli:open palms:none,True
+80,5,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.394,0.234,Ari:door-path step:timing,True
+82,5,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.318,0.158,Vale:shade bow:none,True
+84,5,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,True,0.398,0.238,Bea:orchid cup:meaning,True
+85,5,moss_ward,Fay,empty hands,timing,slow repeat with resident correction,True,0.4,0.24,Fay:empty hands:timing,True
+86,5,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.32,0.16,Puck:tea hold:none,True
+88,5,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.312,0.152,Kio:rope touch:none,True
+90,6,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,True,0.366,0.206,Nia:lantern tap:timing,True
+92,6,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.31,0.15,Rin:shared bowl:none,True
+94,6,moss_ward,Ari,door-path step,none,gesture accepted,True,0.336,0.176,Ari:door-path step:none,True
+96,6,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.308,0.148,Vale:shade bow:none,True
+98,6,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,True,0.38,0.22,Bea:orchid cup:meaning,True
+100,6,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.422,0.262,Puck:tea hold:timing,True
+102,6,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.302,0.142,Kio:rope touch:none,True
+104,6,moss_ward,Milo,cup pause,none,gesture accepted,True,0.304,0.144,Milo:cup pause:none,True
+106,6,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.338,0.178,Juno:cool hand:none,True
+108,7,moss_ward,Ari,door-path step,none,gesture accepted,True,0.29,0.13,Ari:door-path step:none,True
+110,7,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.37,0.21,Vale:shade bow:timing,True
+112,7,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,True,0.376,0.216,Bea:orchid cup:meaning,True
+113,7,moss_ward,Fay,empty hands,none,gesture accepted,True,0.292,0.132,Fay:empty hands:none,True
+114,7,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.296,0.136,Puck:tea hold:none,True
+116,7,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.284,0.124,Kio:rope touch:none,True
+118,7,moss_ward,Milo,cup pause,none,gesture accepted,True,0.3,0.14,Milo:cup pause:none,True
+119,7,glass_harbor,Sera,lantern tap,meaning,slow repeat with resident correction,True,0.382,0.222,Sera:lantern tap:meaning,True
+120,7,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,True,0.372,0.212,Juno:cool hand:timing,True
+122,7,orchid_engine,Dax,open palms,none,gesture accepted,True,0.312,0.152,Dax:open palms:none,True
+124,7,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.268,0.108,Nia:net-hand open:none,True
+125,7,cinder_garden,Pax,shade bow,timing,slow repeat with resident correction,True,0.37,0.21,Pax:shade bow:timing,True
+126,8,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,False,0.358,0.318,Bea:orchid cup:meaning,True
+128,8,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.318,0.158,Puck:tea hold:none,True
+130,8,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.354,0.194,Kio:rope touch:timing,True
+132,8,moss_ward,Milo,cup pause,none,gesture accepted,True,0.282,0.122,Milo:cup pause:none,True
+134,8,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.314,0.154,Juno:cool hand:none,True
+136,8,orchid_engine,Dax,open palms,none,gesture accepted,True,0.302,0.142,Dax:open palms:none,True
+138,8,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.25,0.09,Nia:net-hand open:none,True
+140,8,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.426,0.266,Rin:signal hush:timing,True
+142,8,moss_ward,Ari,empty hands,none,gesture accepted,True,0.272,0.112,Ari:empty hands:none,True
+144,9,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.256,0.096,Kio:rope touch:none,True
+146,9,moss_ward,Milo,cup pause,none,gesture accepted,True,0.278,0.118,Milo:cup pause:none,True
+147,9,glass_harbor,Sera,lantern tap,meaning,slow repeat with resident correction,True,0.354,0.194,Sera:lantern tap:meaning,True
+148,9,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.268,0.108,Juno:cool hand:none,True
+150,9,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,False,0.364,0.324,Dax:open palms:timing,True
+152,9,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.246,0.086,Nia:net-hand open:none,True
+153,9,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.262,0.102,Pax:shade bow:none,True
+154,9,lichen_bridge,Rin,signal hush,meaning,slow repeat with resident correction,True,0.38,0.22,Rin:signal hush:meaning,True
+156,9,moss_ward,Ari,empty hands,none,gesture accepted,True,0.254,0.094,Ari:empty hands:none,True
+158,9,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.28,0.12,Vale:seed-step stop:none,True
+159,9,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.29,0.13,Sol:rope touch:none,True
+160,9,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.354,0.194,Bea:valve pause:timing,True
+162,10,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.29,0.13,Juno:cool hand:none,True
+164,10,orchid_engine,Dax,open palms,none,gesture accepted,True,0.274,0.114,Dax:open palms:none,True
+166,10,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.228,0.068,Nia:net-hand open:none,True
+168,10,lichen_bridge,Rin,signal hush,meaning,slow repeat with resident correction,False,0.402,0.362,Rin:signal hush:meaning,True
+170,10,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.324,0.164,Ari:empty hands:timing,True
+172,10,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.262,0.102,Vale:seed-step stop:none,True
+174,10,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.296,0.136,Bea:valve pause:none,True
+176,10,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.272,0.112,Puck:lantern tap:none,True
+178,10,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.246,0.086,Kio:shared bowl:none,True
+180,11,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,True,0.304,0.144,Nia:net-hand open:timing,True
+181,11,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.234,0.074,Pax:shade bow:none,True
+182,11,lichen_bridge,Rin,signal hush,meaning,slow repeat with resident correction,True,0.356,0.196,Rin:signal hush:meaning,True
+184,11,moss_ward,Ari,empty hands,none,gesture accepted,True,0.226,0.066,Ari:empty hands:none,True
+186,11,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.258,0.098,Vale:seed-step stop:none,True
+187,11,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.262,0.102,Sol:rope touch:none,True
+188,11,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.25,0.09,Bea:valve pause:none,True
+190,11,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.334,0.174,Puck:lantern tap:timing,True
+192,11,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.242,0.082,Kio:shared bowl:none,True
+193,11,orchid_engine,Cai,open palms,none,gesture accepted,True,0.252,0.092,Cai:open palms:none,True
+194,11,moss_ward,Milo,door-path step,none,gesture accepted,True,0.26,0.1,Milo:door-path step:none,True
+196,11,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.324,0.164,Juno:shade bow:meaning,True
+198,12,moss_ward,Ari,empty hands,none,gesture accepted,True,0.216,0.056,Ari:empty hands:none,True
+200,12,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.32,0.16,Vale:seed-step stop:timing,True
+202,12,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.272,0.112,Bea:valve pause:none,True
+204,12,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.244,0.084,Puck:lantern tap:none,True
+206,12,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.224,0.064,Kio:shared bowl:none,True
+208,12,moss_ward,Milo,door-path step,none,gesture accepted,True,0.282,0.122,Milo:door-path step:none,True
+210,12,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,True,0.314,0.154,Juno:shade bow:timing,True
+212,12,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.256,0.096,Dax:orchid cup:none,True
+214,12,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.246,0.086,Nia:tea hold:none,True
+216,13,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.226,0.066,Bea:valve pause:none,True
+218,13,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.226,0.066,Puck:lantern tap:none,True
+220,13,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.3,0.14,Kio:shared bowl:timing,True
+221,13,orchid_engine,Cai,open palms,none,gesture accepted,True,0.224,0.064,Cai:open palms:none,True
+222,13,moss_ward,Milo,door-path step,none,gesture accepted,True,0.236,0.076,Milo:door-path step:none,True
+224,13,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.296,0.136,Juno:shade bow:meaning,True
+226,13,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.252,0.092,Dax:orchid cup:none,True
+227,13,moss_ward,Tala,empty hands,none,gesture accepted,True,0.258,0.098,Tala:empty hands:none,True
+228,13,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.2,0.04,Nia:tea hold:none,True
+230,13,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.338,0.178,Rin:rope touch:timing,True
+232,13,moss_ward,Ari,cup pause,none,gesture accepted,True,0.198,0.038,Ari:cup pause:none,True
+233,13,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.218,0.058,Oren:lantern tap:none,True
+234,14,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.202,0.042,Kio:shared bowl:none,True
+236,14,moss_ward,Milo,door-path step,none,gesture accepted,True,0.258,0.098,Milo:door-path step:none,True
+238,14,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.286,0.126,Juno:shade bow:meaning,True
+240,14,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,False,0.314,0.274,Dax:orchid cup:timing,True
+242,14,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.222,0.062,Nia:tea hold:none,True
+244,14,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.248,0.088,Rin:rope touch:none,True
+246,14,moss_ward,Ari,cup pause,none,gesture accepted,True,0.18,0.02,Ari:cup pause:none,True
+248,14,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.276,0.116,Vale:cool hand:none,True
+250,14,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.288,0.128,Bea:open palms:timing,True
+252,15,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,False,0.268,0.228,Juno:shade bow:meaning,True
+254,15,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.23,0.07,Dax:orchid cup:none,True
+255,15,moss_ward,Tala,empty hands,timing,slow repeat with resident correction,True,0.31,0.15,Tala:empty hands:timing,True
+256,15,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.176,0.02,Nia:tea hold:none,True
+258,15,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.23,0.07,Rin:rope touch:none,True
+260,15,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.256,0.096,Ari:cup pause:timing,True
+261,15,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.19,0.03,Oren:lantern tap:none,True
+262,15,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.23,0.07,Vale:cool hand:none,True
+264,15,orchid_engine,Bea,open palms,none,gesture accepted,True,0.19,0.03,Bea:open palms:none,True
+266,15,glass_harbor,Puck,net-hand open,meaning,slow repeat with resident correction,True,0.296,0.136,Puck:net-hand open:meaning,True
+267,15,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.222,0.062,Wren:shade bow:none,True
+268,15,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.198,0.038,Kio:signal hush:none,True
+270,16,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,False,0.278,0.238,Nia:tea hold:timing,True
+272,16,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.22,0.06,Rin:rope touch:none,True
+274,16,moss_ward,Ari,cup pause,none,gesture accepted,True,0.158,0.02,Ari:cup pause:none,True
+276,16,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.252,0.092,Vale:cool hand:none,True
+278,16,orchid_engine,Bea,open palms,none,gesture accepted,True,0.18,0.02,Bea:open palms:none,True
+280,16,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.278,0.118,Puck:net-hand open:timing,True
+282,16,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.22,0.06,Kio:signal hush:none,True
+284,16,moss_ward,Milo,empty hands,none,gesture accepted,True,0.212,0.052,Milo:empty hands:none,True
+286,16,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.178,0.02,Juno:seed-step stop:none,True
+288,17,moss_ward,Ari,cup pause,none,gesture accepted,True,0.154,0.02,Ari:cup pause:none,True
+289,17,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.162,0.02,Oren:lantern tap:none,True
+290,17,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.286,0.126,Vale:cool hand:timing,True
+292,17,orchid_engine,Bea,open palms,none,gesture accepted,True,0.162,0.02,Bea:open palms:none,True
+294,17,glass_harbor,Puck,net-hand open,meaning,slow repeat with resident correction,True,0.274,0.114,Puck:net-hand open:meaning,True
+295,17,cinder_garden,Wren,shade bow,timing,slow repeat with resident correction,True,0.274,0.114,Wren:shade bow:timing,True
+296,17,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.174,0.02,Kio:signal hush:none,True
+298,17,moss_ward,Milo,empty hands,none,gesture accepted,True,0.194,0.034,Milo:empty hands:none,True
+300,17,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,True,0.254,0.094,Juno:seed-step stop:timing,True
+301,17,lichen_bridge,Luma,rope touch,meaning,slow repeat with resident correction,True,0.24,0.08,Luma:rope touch:meaning,True
+302,17,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.212,0.052,Dax:valve pause:none,True
+304,17,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.152,0.02,Nia:lantern tap:none,True
+306,18,orchid_engine,Bea,open palms,none,gesture accepted,True,0.152,0.02,Bea:open palms:none,True
+308,18,glass_harbor,Puck,net-hand open,meaning,slow repeat with resident correction,True,0.256,0.096,Puck:net-hand open:meaning,True
+310,18,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.276,0.116,Kio:signal hush:timing,True
+312,18,moss_ward,Milo,empty hands,none,gesture accepted,True,0.184,0.024,Milo:empty hands:none,True
+314,18,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.156,0.02,Juno:seed-step stop:none,True
+316,18,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.234,0.074,Dax:valve pause:none,True
+318,18,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.142,0.02,Nia:lantern tap:none,True
+320,18,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.282,0.122,Rin:shared bowl:timing,True
+322,18,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,True,0.256,0.096,Ari:door-path step:meaning,True
+324,19,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.15,0.02,Kio:signal hush:none,True
+326,19,moss_ward,Milo,empty hands,none,gesture accepted,True,0.166,0.02,Milo:empty hands:none,True
+328,19,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.152,0.02,Juno:seed-step stop:none,True
+329,19,lichen_bridge,Luma,rope touch,meaning,slow repeat with resident correction,True,0.212,0.052,Luma:rope touch:meaning,True
+330,19,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,True,0.268,0.108,Dax:valve pause:timing,True
+332,19,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.124,0.02,Nia:lantern tap:none,True
+334,19,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.198,0.038,Rin:shared bowl:none,True
+335,19,orchid_engine,Eli,open palms,timing,slow repeat with resident correction,True,0.276,0.116,Eli:open palms:timing,True
+336,19,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,True,0.21,0.05,Ari:door-path step:meaning,True
+338,19,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.188,0.028,Vale:shade bow:none,True
+340,19,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.214,0.054,Bea:orchid cup:timing,True
+341,19,moss_ward,Fay,empty hands,none,gesture accepted,True,0.15,0.02,Fay:empty hands:none,True
+342,20,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.134,0.02,Juno:seed-step stop:none,True
+344,20,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.21,0.05,Dax:valve pause:none,True
+346,20,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.114,0.02,Nia:lantern tap:none,True
+348,20,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.18,0.02,Rin:shared bowl:none,True
+350,20,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.232,0.072,Ari:door-path step:timing,True
+352,20,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.178,0.02,Vale:shade bow:none,True
+354,20,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.116,0.02,Bea:orchid cup:none,True
+356,20,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.212,0.052,Puck:tea hold:none,True
+358,20,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.132,0.02,Kio:rope touch:none,True
+360,21,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,False,0.176,0.136,Nia:lantern tap:timing,True
+362,21,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.176,0.02,Rin:shared bowl:none,True
+363,21,orchid_engine,Eli,open palms,none,gesture accepted,True,0.168,0.02,Eli:open palms:none,True
+364,21,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,True,0.186,0.026,Ari:door-path step:meaning,True
+366,21,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.16,0.02,Vale:shade bow:none,True
+368,21,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.112,0.02,Bea:orchid cup:none,True
+369,21,moss_ward,Fay,empty hands,none,gesture accepted,True,0.122,0.02,Fay:empty hands:none,True
+370,21,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.246,0.086,Puck:tea hold:timing,True
+372,21,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.114,0.02,Kio:rope touch:none,True
+374,21,moss_ward,Milo,cup pause,none,gesture accepted,True,0.156,0.02,Milo:cup pause:none,True
+375,21,glass_harbor,Sera,lantern tap,timing,slow repeat with resident correction,True,0.244,0.084,Sera:lantern tap:timing,True
+376,21,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.13,0.02,Juno:cool hand:none,True
+378,22,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,False,0.208,0.168,Ari:door-path step:meaning,True
+380,22,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.23,0.07,Vale:shade bow:timing,True
+382,22,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.094,0.02,Bea:orchid cup:none,True
+384,22,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.188,0.028,Puck:tea hold:none,True
+386,22,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.104,0.02,Kio:rope touch:none,True
+388,22,moss_ward,Milo,cup pause,none,gesture accepted,True,0.138,0.02,Milo:cup pause:none,True
+390,22,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,False,0.232,0.192,Juno:cool hand:timing,True
+392,22,orchid_engine,Dax,open palms,meaning,slow repeat with resident correction,True,0.244,0.084,Dax:open palms:meaning,True
+394,22,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.086,0.02,Nia:net-hand open:none,True
+396,23,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.09,0.02,Bea:orchid cup:none,True
+397,23,moss_ward,Fay,empty hands,none,gesture accepted,True,0.094,0.02,Fay:empty hands:none,True
+398,23,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.142,0.02,Puck:tea hold:none,True
+400,23,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.166,0.02,Kio:rope touch:timing,True
+402,23,moss_ward,Milo,cup pause,none,gesture accepted,True,0.134,0.02,Milo:cup pause:none,True
+403,23,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.136,0.02,Sera:lantern tap:none,True
+404,23,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.106,0.02,Juno:cool hand:none,True
+406,23,orchid_engine,Dax,open palms,meaning,slow repeat with resident correction,True,0.226,0.066,Dax:open palms:meaning,True
+408,23,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.082,0.02,Nia:net-hand open:none,True
+409,23,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.09,0.02,Pax:shade bow:none,True
+410,23,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.238,0.078,Rin:signal hush:timing,True
+412,23,moss_ward,Ari,empty hands,none,gesture accepted,True,0.082,0.02,Ari:empty hands:none,True
+414,24,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.076,0.02,Kio:rope touch:none,True
+416,24,moss_ward,Milo,cup pause,none,gesture accepted,True,0.116,0.02,Milo:cup pause:none,True
+418,24,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.128,0.02,Juno:cool hand:none,True
+420,24,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,True,0.216,0.056,Dax:open palms:timing,True
+422,24,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.064,0.02,Nia:net-hand open:none,True
+424,24,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.18,0.02,Rin:signal hush:none,True
+426,24,moss_ward,Ari,empty hands,none,gesture accepted,True,0.072,0.02,Ari:empty hands:none,True
+428,24,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.132,0.02,Vale:seed-step stop:none,True
+430,24,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.192,0.032,Bea:valve pause:timing,True
+432,25,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.082,0.02,Juno:cool hand:none,True
+434,25,orchid_engine,Dax,open palms,meaning,slow repeat with resident correction,True,0.198,0.038,Dax:open palms:meaning,True
+436,25,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.06,0.02,Nia:net-hand open:none,True
+437,25,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.062,0.02,Pax:shade bow:none,True
+438,25,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.134,0.02,Rin:signal hush:none,True
+440,25,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.134,0.02,Ari:empty hands:timing,True
+442,25,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.128,0.02,Vale:seed-step stop:none,True
+443,25,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.132,0.02,Sol:rope touch:none,True
+444,25,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.066,0.02,Bea:valve pause:none,True
+446,25,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.124,0.02,Puck:lantern tap:none,True
+448,25,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,True,0.138,0.02,Kio:shared bowl:meaning,True
+449,25,orchid_engine,Cai,open palms,none,gesture accepted,True,0.082,0.02,Cai:open palms:none,True
+450,26,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,False,0.122,0.082,Nia:net-hand open:timing,True
+452,26,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.156,0.02,Rin:signal hush:none,True
+454,26,moss_ward,Ari,empty hands,none,gesture accepted,True,0.044,0.02,Ari:empty hands:none,True
+456,26,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.11,0.02,Vale:seed-step stop:none,True
+458,26,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.088,0.02,Bea:valve pause:none,True
+460,26,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.194,0.034,Puck:lantern tap:timing,True
+462,26,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,False,0.12,0.08,Kio:shared bowl:meaning,True
+464,26,moss_ward,Milo,door-path step,none,gesture accepted,True,0.152,0.02,Milo:door-path step:none,True
+466,26,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.064,0.02,Juno:shade bow:none,True
+468,27,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+470,27,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.186,0.026,Vale:seed-step stop:timing,True
+471,27,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.104,0.02,Sol:rope touch:none,True
+472,27,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.042,0.02,Bea:valve pause:none,True
+474,27,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.096,0.02,Puck:lantern tap:none,True
+476,27,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:meaning,True
+477,27,orchid_engine,Cai,open palms,none,gesture accepted,True,0.054,0.02,Cai:open palms:none,True
+478,27,moss_ward,Milo,door-path step,none,gesture accepted,True,0.106,0.02,Milo:door-path step:none,True
+480,27,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,False,0.126,0.086,Juno:shade bow:timing,True
+482,27,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.108,0.02,Dax:orchid cup:none,True
+483,27,moss_ward,Tala,empty hands,meaning,slow repeat with resident correction,True,0.2,0.04,Tala:empty hands:meaning,True
+484,27,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+486,28,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.064,0.02,Bea:valve pause:none,True
+488,28,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.086,0.02,Puck:lantern tap:none,True
+490,28,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+492,28,moss_ward,Milo,door-path step,none,gesture accepted,True,0.128,0.02,Milo:door-path step:none,True
+494,28,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+496,28,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.09,0.02,Dax:orchid cup:none,True
+498,28,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.06,0.02,Nia:tea hold:none,True
+500,28,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.19,0.03,Rin:rope touch:timing,True
+502,28,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+504,29,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:meaning,True
+505,29,orchid_engine,Cai,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:timing,True
+506,29,moss_ward,Milo,door-path step,none,gesture accepted,True,0.082,0.02,Milo:door-path step:none,True
+508,29,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+510,29,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,True,0.166,0.02,Dax:orchid cup:timing,True
+511,29,moss_ward,Tala,empty hands,meaning,slow repeat with resident correction,True,0.172,0.02,Tala:empty hands:meaning,True
+512,29,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+514,29,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.092,0.02,Rin:rope touch:none,True
+516,29,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+517,29,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+518,29,cinder_garden,Vale,cool hand,meaning,slow repeat with resident correction,True,0.168,0.02,Vale:cool hand:meaning,True
+520,29,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+522,30,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+524,30,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.068,0.02,Dax:orchid cup:none,True
+526,30,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+528,30,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.082,0.02,Rin:rope touch:none,True
+530,30,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+532,30,cinder_garden,Vale,cool hand,meaning,slow repeat with resident correction,True,0.19,0.03,Vale:cool hand:meaning,True
+534,30,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+536,30,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.068,0.02,Puck:net-hand open:none,True
+538,30,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+540,31,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:timing,True
+542,31,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.064,0.02,Rin:rope touch:none,True
+544,31,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+545,31,glass_harbor,Oren,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Oren:lantern tap:timing,True
+546,31,cinder_garden,Vale,cool hand,meaning,slow repeat with resident correction,True,0.144,0.02,Vale:cool hand:meaning,True
+548,31,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+550,31,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.144,0.02,Puck:net-hand open:timing,True
+551,31,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.064,0.02,Wren:shade bow:none,True
+552,31,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+554,31,moss_ward,Milo,empty hands,none,gesture accepted,True,0.064,0.02,Milo:empty hands:none,True
+556,31,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+557,31,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+558,32,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+560,32,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.166,0.02,Vale:cool hand:timing,True
+562,32,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+564,32,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.046,0.02,Puck:net-hand open:none,True
+566,32,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+568,32,moss_ward,Milo,empty hands,none,gesture accepted,True,0.054,0.02,Milo:empty hands:none,True
+570,32,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,False,0.12,0.08,Juno:seed-step stop:timing,True
+572,32,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.104,0.02,Dax:valve pause:none,True
+574,32,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+576,33,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+578,33,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.042,0.02,Puck:net-hand open:none,True
+579,33,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+580,33,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+582,33,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+584,33,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+585,33,lichen_bridge,Luma,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Luma:rope touch:timing,True
+586,33,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.058,0.02,Dax:valve pause:none,True
+588,33,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,False,0.12,0.08,Nia:lantern tap:meaning,True
+590,33,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.134,0.02,Rin:shared bowl:timing,True
+591,33,orchid_engine,Eli,open palms,none,gesture accepted,True,0.058,0.02,Eli:open palms:none,True
+592,33,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+594,34,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+596,34,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+598,34,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+600,34,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,False,0.16,0.12,Dax:valve pause:timing,True
+602,34,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+604,34,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+606,34,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+608,34,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+610,34,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+612,35,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+613,35,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+614,35,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+616,35,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+618,35,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+619,35,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+620,35,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+622,35,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+624,35,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+625,35,moss_ward,Fay,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:timing,True
+626,35,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+628,35,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+630,36,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:timing,True
+632,36,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+634,36,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+636,36,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+638,36,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+640,36,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.126,0.02,Puck:tea hold:timing,True
+642,36,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+644,36,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+646,36,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+648,37,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+650,37,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+652,37,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+653,37,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+654,37,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+656,37,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+658,37,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+659,37,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+660,37,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:timing,True
+662,37,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+664,37,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+665,37,cinder_garden,Pax,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:timing,True
+666,38,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+668,38,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+670,38,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+672,38,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,False,0.12,0.08,Milo:cup pause:meaning,True
+674,38,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+676,38,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+678,38,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+680,38,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.13,0.02,Rin:signal hush:timing,True
+682,38,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+684,39,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+686,39,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+687,39,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+688,39,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+690,39,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,False,0.12,0.08,Dax:open palms:timing,True
+692,39,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+693,39,cinder_garden,Pax,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:meaning,True
+694,39,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+696,39,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+698,39,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+699,39,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+700,39,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+702,40,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+704,40,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+706,40,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+708,40,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+710,40,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+712,40,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+714,40,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,False,0.12,0.08,Bea:valve pause:meaning,True
+716,40,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+718,40,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+720,41,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:timing,True
+721,41,cinder_garden,Pax,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:meaning,True
+722,41,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+724,41,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+726,41,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+727,41,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+728,41,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:meaning,True
+730,41,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+732,41,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+733,41,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+734,41,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+736,41,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+738,42,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+740,42,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+742,42,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:meaning,True
+744,42,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+746,42,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+748,42,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+750,42,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:timing,True
+752,42,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+754,42,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+756,43,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:meaning,True
+758,43,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+760,43,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+761,43,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+762,43,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+764,43,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+766,43,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+767,43,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+768,43,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+770,43,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+772,43,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+773,43,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+774,44,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+776,44,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+778,44,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+780,44,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,False,0.12,0.08,Dax:orchid cup:timing,True
+782,44,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+784,44,lichen_bridge,Rin,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:meaning,True
+786,44,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+788,44,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+790,44,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+792,45,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+794,45,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+795,45,moss_ward,Tala,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Tala:empty hands:timing,True
+796,45,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+798,45,lichen_bridge,Rin,rope touch,meaning,slow repeat with resident correction,False,0.12,0.08,Rin:rope touch:meaning,True
+800,45,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+801,45,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+802,45,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+804,45,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+806,45,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+807,45,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+808,45,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+810,46,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,False,0.12,0.08,Nia:tea hold:timing,True
+812,46,lichen_bridge,Rin,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:meaning,True
+814,46,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+816,46,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+818,46,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+820,46,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+822,46,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+824,46,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+826,46,cinder_garden,Juno,seed-step stop,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:meaning,True
+828,47,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+829,47,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+830,47,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+832,47,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+834,47,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+835,47,cinder_garden,Wren,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Wren:shade bow:timing,True
+836,47,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+838,47,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+840,47,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:timing,True
+841,47,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+842,47,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+844,47,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+846,48,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+848,48,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+850,48,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+852,48,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+854,48,cinder_garden,Juno,seed-step stop,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:meaning,True
+856,48,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+858,48,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+860,48,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+862,48,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+864,49,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+866,49,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+868,49,cinder_garden,Juno,seed-step stop,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:meaning,True
+869,49,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+870,49,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:timing,True
+872,49,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+874,49,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+875,49,orchid_engine,Eli,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Eli:open palms:timing,True
+876,49,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+878,49,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+880,49,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+881,49,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+882,50,cinder_garden,Juno,seed-step stop,meaning,slow repeat with resident correction,False,0.12,0.08,Juno:seed-step stop:meaning,True
+884,50,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+886,50,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+888,50,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+890,50,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+892,50,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+894,50,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+896,50,glass_harbor,Puck,tea hold,meaning,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:meaning,True
+898,50,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+900,51,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,False,0.12,0.08,Nia:lantern tap:timing,True
+902,51,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+903,51,orchid_engine,Eli,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Eli:open palms:meaning,True
+904,51,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+906,51,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+908,51,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+909,51,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+910,51,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+912,51,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+914,51,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+915,51,glass_harbor,Sera,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Sera:lantern tap:timing,True
+916,51,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+918,52,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+920,52,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+922,52,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+924,52,glass_harbor,Puck,tea hold,meaning,slow repeat with resident correction,False,0.12,0.08,Puck:tea hold:meaning,True
+926,52,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+928,52,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+930,52,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,False,0.12,0.08,Juno:cool hand:timing,True
+932,52,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+934,52,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+936,53,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+937,53,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+938,53,glass_harbor,Puck,tea hold,meaning,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:meaning,True
+940,53,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+942,53,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+943,53,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+944,53,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+946,53,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+948,53,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+949,53,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+950,53,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+952,53,moss_ward,Ari,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:meaning,True
+954,54,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+956,54,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+958,54,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+960,54,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:timing,True
+962,54,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+964,54,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+966,54,moss_ward,Ari,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:meaning,True
+968,54,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+970,54,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+972,55,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+974,55,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+976,55,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+977,55,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+978,55,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+980,55,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+982,55,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+983,55,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+984,55,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+986,55,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+988,55,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+989,55,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+990,56,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,False,0.12,0.08,Nia:net-hand open:timing,True
+992,56,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+994,56,moss_ward,Ari,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:meaning,True
+996,56,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+998,56,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1000,56,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+1002,56,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1004,56,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1006,56,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1008,57,moss_ward,Ari,empty hands,meaning,slow repeat with resident correction,False,0.12,0.08,Ari:empty hands:meaning,True
+1010,57,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+1011,57,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+1012,57,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1014,57,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1016,57,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1017,57,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+1018,57,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1020,57,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,False,0.12,0.08,Juno:shade bow:timing,True
+1022,57,orchid_engine,Dax,orchid cup,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:meaning,True
+1023,57,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+1024,57,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1026,58,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1028,58,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1030,58,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+1032,58,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1034,58,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1036,58,orchid_engine,Dax,orchid cup,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:meaning,True
+1038,58,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1040,58,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+1042,58,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1044,59,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1045,59,orchid_engine,Cai,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:timing,True
+1046,59,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1048,59,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1050,59,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:timing,True
+1051,59,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+1052,59,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1054,59,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1056,59,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1057,59,glass_harbor,Oren,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Oren:lantern tap:meaning,True
+1058,59,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1060,59,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+1062,60,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1064,60,orchid_engine,Dax,orchid cup,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:meaning,True
+1066,60,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1068,60,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1070,60,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+1072,60,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1074,60,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1076,60,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1078,60,lichen_bridge,Kio,signal hush,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:meaning,True
+1080,61,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:timing,True
+1082,61,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1084,61,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1085,61,glass_harbor,Oren,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Oren:lantern tap:timing,True
+1086,61,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1088,61,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1090,61,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+1091,61,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+1092,61,lichen_bridge,Kio,signal hush,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:meaning,True
+1094,61,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1096,61,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1097,61,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1098,62,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1100,62,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+1102,62,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1104,62,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1106,62,lichen_bridge,Kio,signal hush,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:meaning,True
+1108,62,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1110,62,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,False,0.12,0.08,Juno:seed-step stop:timing,True
+1112,62,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1114,62,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1116,63,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1118,63,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1119,63,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+1120,63,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+1122,63,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1124,63,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1125,63,lichen_bridge,Luma,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Luma:rope touch:timing,True
+1126,63,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1128,63,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1130,63,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+1131,63,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+1132,63,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1134,64,lichen_bridge,Kio,signal hush,meaning,slow repeat with resident correction,False,0.12,0.08,Kio:signal hush:meaning,True
+1136,64,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1138,64,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1140,64,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,False,0.12,0.08,Dax:valve pause:timing,True
+1142,64,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1144,64,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1146,64,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1148,64,cinder_garden,Vale,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:meaning,True
+1150,64,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+1152,65,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1153,65,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1154,65,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1156,65,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1158,65,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1159,65,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+1160,65,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+1162,65,cinder_garden,Vale,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:meaning,True
+1164,65,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1165,65,moss_ward,Fay,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:timing,True
+1166,65,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1168,65,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1170,66,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:timing,True
+1172,66,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1174,66,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1176,66,cinder_garden,Vale,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:meaning,True
+1178,66,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1180,66,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+1182,66,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1184,66,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1186,66,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1188,67,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1190,67,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+1192,67,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1193,67,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+1194,67,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1196,67,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1198,67,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1199,67,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+1200,67,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:timing,True
+1202,67,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1204,67,glass_harbor,Nia,net-hand open,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:meaning,True
+1205,67,cinder_garden,Pax,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:timing,True
+1206,68,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1208,68,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1210,68,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+1212,68,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1214,68,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1216,68,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1218,68,glass_harbor,Nia,net-hand open,meaning,slow repeat with resident correction,False,0.12,0.08,Nia:net-hand open:meaning,True
+1220,68,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+1222,68,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1224,69,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1226,69,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1227,69,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+1228,69,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1230,69,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,False,0.12,0.08,Dax:open palms:timing,True
+1232,69,glass_harbor,Nia,net-hand open,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:meaning,True
+1233,69,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+1234,69,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1236,69,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1238,69,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+1239,69,lichen_bridge,Sol,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Sol:rope touch:meaning,True
+1240,69,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+1242,70,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1244,70,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1246,70,glass_harbor,Nia,net-hand open,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:meaning,True
+1248,70,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1250,70,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+1252,70,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+1254,70,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1256,70,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1258,70,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1260,71,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:timing,True
+1261,71,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+1262,71,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1264,71,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1266,71,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+1267,71,lichen_bridge,Sol,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Sol:rope touch:meaning,True
+1268,71,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1270,71,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+1272,71,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1273,71,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+1274,71,moss_ward,Milo,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:door-path step:meaning,True
+1276,71,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1278,72,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1280,72,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+1282,72,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1284,72,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1286,72,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1288,72,moss_ward,Milo,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:door-path step:meaning,True
+1290,72,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:timing,True
+1292,72,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1294,72,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1296,73,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1298,73,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1300,73,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+1301,73,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+1302,73,moss_ward,Milo,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:door-path step:meaning,True
+1304,73,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1306,73,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1307,73,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+1308,73,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1310,73,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+1312,73,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1313,73,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1314,74,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1316,74,moss_ward,Milo,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:door-path step:meaning,True
+1318,74,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1320,74,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,False,0.12,0.08,Dax:orchid cup:timing,True
+1322,74,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1324,74,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1326,74,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1328,74,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1330,74,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+1332,75,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1334,75,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1335,75,moss_ward,Tala,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Tala:empty hands:timing,True
+1336,75,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1338,75,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1340,75,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+1341,75,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1342,75,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1344,75,orchid_engine,Bea,open palms,meaning,slow repeat with resident correction,False,0.12,0.08,Bea:open palms:meaning,True
+1346,75,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1347,75,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+1348,75,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1350,76,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,False,0.12,0.08,Nia:tea hold:timing,True
+1352,76,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1354,76,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1356,76,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1358,76,orchid_engine,Bea,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:meaning,True
+1360,76,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+1362,76,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1364,76,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1366,76,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1368,77,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1369,77,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1370,77,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+1372,77,orchid_engine,Bea,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:meaning,True
+1374,77,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1375,77,cinder_garden,Wren,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Wren:shade bow:timing,True
+1376,77,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1378,77,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1380,77,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:timing,True
+1381,77,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1382,77,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1384,77,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1386,78,orchid_engine,Bea,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:meaning,True
+1388,78,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1390,78,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+1392,78,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1394,78,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1396,78,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1398,78,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1400,78,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+1402,78,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1404,79,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1406,79,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1408,79,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1409,79,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1410,79,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:timing,True
+1412,79,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1414,79,lichen_bridge,Rin,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:meaning,True
+1415,79,orchid_engine,Eli,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Eli:open palms:timing,True
+1416,79,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1418,79,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1420,79,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+1421,79,moss_ward,Fay,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:meaning,True
+1422,80,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1424,80,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1426,80,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1428,80,lichen_bridge,Rin,shared bowl,meaning,slow repeat with resident correction,False,0.12,0.08,Rin:shared bowl:meaning,True
+1430,80,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+1432,80,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1434,80,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1436,80,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1438,80,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1440,81,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,False,0.12,0.08,Nia:lantern tap:timing,True
+1442,81,lichen_bridge,Rin,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:meaning,True
+1443,81,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+1444,81,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1446,81,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1448,81,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1449,81,moss_ward,Fay,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:meaning,True
+1450,81,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+1452,81,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1454,81,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1455,81,glass_harbor,Sera,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Sera:lantern tap:timing,True
+1456,81,cinder_garden,Juno,cool hand,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:meaning,True
+1458,82,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1460,82,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+1462,82,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1464,82,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1466,82,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1468,82,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1470,82,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,False,0.12,0.08,Juno:cool hand:timing,True
+1472,82,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1474,82,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1476,83,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1477,83,moss_ward,Fay,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:meaning,True
+1478,83,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1480,83,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+1482,83,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1483,83,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+1484,83,cinder_garden,Juno,cool hand,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:meaning,True
+1486,83,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1488,83,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1489,83,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+1490,83,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+1492,83,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1494,84,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1496,84,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1498,84,cinder_garden,Juno,cool hand,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:meaning,True
+1500,84,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:timing,True
+1502,84,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1504,84,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1506,84,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1508,84,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+1510,84,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+1512,85,cinder_garden,Juno,cool hand,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:meaning,True
+1514,85,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1516,85,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1517,85,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+1518,85,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1520,85,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+1522,85,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+1523,85,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+1524,85,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1526,85,glass_harbor,Puck,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:meaning,True
+1528,85,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1529,85,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+1530,86,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,False,0.12,0.08,Nia:net-hand open:timing,True
+1532,86,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1534,86,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1536,86,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+1538,86,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1540,86,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+1542,86,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1544,86,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1546,86,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1548,87,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1550,87,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+1551,87,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+1552,87,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1554,87,glass_harbor,Puck,lantern tap,meaning,slow repeat with resident correction,False,0.12,0.08,Puck:lantern tap:meaning,True
+1556,87,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1557,87,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+1558,87,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1560,87,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,False,0.12,0.08,Juno:shade bow:timing,True
+1562,87,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1563,87,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+1564,87,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1566,88,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1568,88,glass_harbor,Puck,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:meaning,True
+1570,88,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+1572,88,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1574,88,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1576,88,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1578,88,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1580,88,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+1582,88,moss_ward,Ari,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:meaning,True
+1584,89,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1585,89,orchid_engine,Cai,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:timing,True
+1586,89,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1588,89,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1590,89,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:timing,True
+1591,89,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+1592,89,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1594,89,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1596,89,moss_ward,Ari,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:meaning,True
+1597,89,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1598,89,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1600,89,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+1602,90,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1604,90,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1606,90,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+1608,90,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1610,90,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+1612,90,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1614,90,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1616,90,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1618,90,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1620,91,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:timing,True
+1622,91,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1624,91,moss_ward,Ari,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:meaning,True
+1625,91,glass_harbor,Oren,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Oren:lantern tap:timing,True
+1626,91,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1628,91,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1630,91,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+1631,91,cinder_garden,Wren,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Wren:shade bow:meaning,True
+1632,91,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1634,91,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1636,91,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1637,91,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1638,92,moss_ward,Ari,cup pause,meaning,slow repeat with resident correction,False,0.12,0.08,Ari:cup pause:meaning,True
+1640,92,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+1642,92,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1644,92,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1646,92,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1648,92,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1650,92,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,False,0.12,0.08,Juno:seed-step stop:timing,True
+1652,92,orchid_engine,Dax,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:meaning,True
+1654,92,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1656,93,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1658,93,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1659,93,cinder_garden,Wren,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Wren:shade bow:meaning,True
+1660,93,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+1662,93,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1664,93,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1665,93,lichen_bridge,Luma,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Luma:rope touch:timing,True
+1666,93,orchid_engine,Dax,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:meaning,True
+1668,93,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1670,93,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+1671,93,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+1672,93,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1674,94,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1676,94,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+1678,94,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1680,94,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,False,0.12,0.08,Dax:valve pause:timing,True
+1682,94,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1684,94,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1686,94,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1688,94,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1690,94,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+1692,95,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1693,95,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1694,95,orchid_engine,Dax,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:meaning,True
+1696,95,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1698,95,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1699,95,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+1700,95,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+1702,95,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1704,95,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1705,95,moss_ward,Fay,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:timing,True
+1706,95,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1708,95,lichen_bridge,Kio,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:meaning,True
+1710,96,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:timing,True
+1712,96,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1714,96,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1716,96,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1718,96,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1720,96,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+1722,96,lichen_bridge,Kio,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:meaning,True
+1724,96,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1726,96,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1728,97,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1730,97,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+1732,97,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1733,97,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+1734,97,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1736,97,lichen_bridge,Kio,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:meaning,True
+1738,97,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1739,97,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+1740,97,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:timing,True
+1742,97,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1744,97,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1745,97,cinder_garden,Pax,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:timing,True
+1746,98,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+1748,98,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1750,98,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+1752,98,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1754,98,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1756,98,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1758,98,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1760,98,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+1762,98,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1764,99,lichen_bridge,Kio,rope touch,meaning,slow repeat with resident correction,False,0.12,0.08,Kio:rope touch:meaning,True
+1766,99,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1767,99,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+1768,99,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1770,99,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,False,0.12,0.08,Dax:open palms:timing,True
+1772,99,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1773,99,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+1774,99,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1776,99,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1778,99,cinder_garden,Vale,seed-step stop,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:meaning,True
+1779,99,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+1780,99,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+1782,100,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1784,100,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+1786,100,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+1788,100,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1790,100,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+1792,100,cinder_garden,Vale,seed-step stop,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:meaning,True
+1794,100,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1796,100,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1798,100,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1800,101,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:timing,True
+1801,101,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+1802,101,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+1804,101,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1806,101,cinder_garden,Vale,seed-step stop,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:meaning,True
+1807,101,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+1808,101,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1810,101,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+1812,101,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1813,101,orchid_engine,Cai,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:meaning,True
+1814,101,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1816,101,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1818,102,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+1820,102,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+1822,102,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1824,102,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1826,102,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1828,102,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1830,102,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:timing,True
+1832,102,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1834,102,glass_harbor,Nia,tea hold,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:meaning,True
+1836,103,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+1838,103,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+1840,103,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+1841,103,orchid_engine,Cai,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:meaning,True
+1842,103,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1844,103,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1846,103,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1847,103,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+1848,103,glass_harbor,Nia,tea hold,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:meaning,True
+1850,103,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+1852,103,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1853,103,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1854,104,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+1856,104,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+1858,104,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1860,104,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,False,0.12,0.08,Dax:orchid cup:timing,True
+1862,104,glass_harbor,Nia,tea hold,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:meaning,True
+1864,104,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1866,104,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1868,104,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1870,104,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+1872,105,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+1874,105,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+1875,105,moss_ward,Tala,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Tala:empty hands:timing,True
+1876,105,glass_harbor,Nia,tea hold,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:meaning,True
+1878,105,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1880,105,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+1881,105,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1882,105,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1884,105,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1886,105,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1887,105,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+1888,105,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1890,106,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,False,0.12,0.08,Nia:tea hold:timing,True
+1892,106,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+1894,106,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1896,106,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+1898,106,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1900,106,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+1902,106,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1904,106,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:empty hands:meaning,True
+1906,106,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1908,107,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+1909,107,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+1910,107,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+1912,107,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1914,107,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1915,107,cinder_garden,Wren,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Wren:shade bow:timing,True
+1916,107,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1918,107,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:empty hands:meaning,True
+1920,107,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:timing,True
+1921,107,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1922,107,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1924,107,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1926,108,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+1928,108,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+1930,108,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+1932,108,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:empty hands:meaning,True
+1934,108,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1936,108,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1938,108,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1940,108,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+1942,108,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1944,109,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+1946,109,moss_ward,Milo,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:empty hands:meaning,True
+1948,109,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1949,109,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+1950,109,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:timing,True
+1952,109,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1954,109,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1955,109,orchid_engine,Eli,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Eli:open palms:timing,True
+1956,109,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1958,109,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1960,109,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+1961,109,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+1962,110,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+1964,110,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+1966,110,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+1968,110,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1970,110,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+1972,110,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1974,110,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,False,0.12,0.08,Bea:orchid cup:meaning,True
+1976,110,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+1978,110,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1980,111,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,False,0.12,0.08,Nia:lantern tap:timing,True
+1982,111,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+1983,111,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+1984,111,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+1986,111,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+1988,111,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:meaning,True
+1989,111,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+1990,111,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+1992,111,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+1994,111,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+1995,111,glass_harbor,Sera,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Sera:lantern tap:timing,True
+1996,111,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+1998,112,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+2000,112,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+2002,112,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:meaning,True
+2004,112,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2006,112,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2008,112,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2010,112,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,False,0.12,0.08,Juno:cool hand:timing,True
+2012,112,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+2014,112,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2016,113,orchid_engine,Bea,orchid cup,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:meaning,True
+2017,113,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+2018,113,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2020,113,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+2022,113,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2023,113,glass_harbor,Sera,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Sera:lantern tap:meaning,True
+2024,113,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2026,113,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+2028,113,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2029,113,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+2030,113,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+2032,113,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2034,114,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2036,114,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2038,114,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2040,114,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:timing,True
+2042,114,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2044,114,lichen_bridge,Rin,signal hush,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:meaning,True
+2046,114,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2048,114,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2050,114,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+2052,115,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2054,115,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+2056,115,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2057,115,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+2058,115,lichen_bridge,Rin,signal hush,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:meaning,True
+2060,115,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+2062,115,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2063,115,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+2064,115,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2066,115,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2068,115,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2069,115,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+2070,116,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,False,0.12,0.08,Nia:net-hand open:timing,True
+2072,116,lichen_bridge,Rin,signal hush,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:meaning,True
+2074,116,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2076,116,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2078,116,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2080,116,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+2082,116,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2084,116,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2086,116,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:meaning,True
+2088,117,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2090,117,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+2091,117,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+2092,117,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2094,117,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2096,117,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2097,117,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+2098,117,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2100,117,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,False,0.12,0.08,Juno:shade bow:timing,True
+2102,117,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2103,117,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+2104,117,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2106,118,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2108,118,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2110,118,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+2112,118,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2114,118,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:meaning,True
+2116,118,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2118,118,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2120,118,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+2122,118,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2124,119,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2125,119,orchid_engine,Cai,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:timing,True
+2126,119,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2128,119,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:meaning,True
+2130,119,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:timing,True
+2131,119,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+2132,119,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2134,119,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+2136,119,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2137,119,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+2138,119,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+2140,119,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+2142,120,cinder_garden,Juno,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:meaning,True
+2144,120,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2146,120,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2148,120,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+2150,120,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+2152,120,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+2154,120,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2156,120,glass_harbor,Puck,net-hand open,meaning,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:meaning,True
+2158,120,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2160,121,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Nia:tea hold:timing,True
+2162,121,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+2164,121,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2165,121,glass_harbor,Oren,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Oren:lantern tap:timing,True
+2166,121,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+2168,121,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2170,121,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+2171,121,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+2172,121,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2174,121,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2176,121,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2177,121,lichen_bridge,Luma,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Luma:rope touch:meaning,True
+2178,122,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2180,122,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+2182,122,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2184,122,glass_harbor,Puck,net-hand open,meaning,slow repeat with resident correction,False,0.12,0.08,Puck:net-hand open:meaning,True
+2186,122,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2188,122,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2190,122,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,False,0.12,0.08,Juno:seed-step stop:timing,True
+2192,122,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+2194,122,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+2196,123,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2198,123,glass_harbor,Puck,net-hand open,meaning,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:meaning,True
+2199,123,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+2200,123,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+2202,123,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2204,123,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2205,123,lichen_bridge,Luma,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Luma:rope touch:timing,True
+2206,123,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+2208,123,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+2210,123,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+2211,123,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+2212,123,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:meaning,True
+2214,124,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2216,124,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2218,124,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2220,124,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,False,0.12,0.08,Dax:valve pause:timing,True
+2222,124,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+2224,124,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+2226,124,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,False,0.12,0.08,Ari:door-path step:meaning,True
+2228,124,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+2230,124,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+2232,125,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2233,125,lichen_bridge,Luma,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Luma:rope touch:meaning,True
+2234,125,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+2236,125,glass_harbor,Nia,lantern tap,none,gesture accepted,True,0.04,0.02,Nia:lantern tap:none,True
+2238,125,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+2239,125,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+2240,125,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+2242,125,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+2244,125,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2245,125,moss_ward,Fay,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Fay:empty hands:timing,True
+2246,125,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2248,125,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2250,126,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:timing,True
+2252,126,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+2254,126,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:meaning,True
+2256,126,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+2258,126,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2260,126,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+2262,126,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2264,126,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2266,126,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2268,127,moss_ward,Ari,door-path step,meaning,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:meaning,True
+2270,127,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+2272,127,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2273,127,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+2274,127,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2276,127,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2278,127,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2279,127,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+2280,127,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Juno:cool hand:timing,True
+2282,127,orchid_engine,Dax,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:meaning,True
+2284,127,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2285,127,cinder_garden,Pax,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:timing,True
+2286,128,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2288,128,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2290,128,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+2292,128,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2294,128,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2296,128,orchid_engine,Dax,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:meaning,True
+2298,128,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2300,128,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+2302,128,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2304,129,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2306,129,moss_ward,Milo,cup pause,none,gesture accepted,True,0.04,0.02,Milo:cup pause:none,True
+2307,129,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+2308,129,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2310,129,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,False,0.12,0.08,Dax:open palms:timing,True
+2312,129,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2313,129,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+2314,129,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+2316,129,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2318,129,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2319,129,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+2320,129,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+2322,130,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2324,130,orchid_engine,Dax,open palms,meaning,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:meaning,True
+2326,130,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2328,130,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+2330,130,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+2332,130,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2334,130,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2336,130,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2338,130,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:meaning,True
+2340,131,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Nia:net-hand open:timing,True
+2341,131,cinder_garden,Pax,shade bow,none,gesture accepted,True,0.04,0.02,Pax:shade bow:none,True
+2342,131,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+2344,131,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2346,131,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2347,131,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+2348,131,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2350,131,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+2352,131,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:meaning,True
+2353,131,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+2354,131,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2356,131,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2358,132,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2360,132,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+2362,132,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2364,132,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2366,132,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:meaning,True
+2368,132,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2370,132,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Juno:shade bow:timing,True
+2372,132,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2374,132,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2376,133,orchid_engine,Bea,valve pause,none,gesture accepted,True,0.04,0.02,Bea:valve pause:none,True
+2378,133,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2380,133,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+2381,133,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+2382,133,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2384,133,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2386,133,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2387,133,moss_ward,Tala,empty hands,meaning,slow repeat with resident correction,True,0.12,0.02,Tala:empty hands:meaning,True
+2388,133,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2390,133,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+2392,133,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2393,133,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+2394,134,lichen_bridge,Kio,shared bowl,meaning,slow repeat with resident correction,False,0.12,0.08,Kio:shared bowl:meaning,True
+2396,134,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2398,134,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2400,134,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,False,0.12,0.08,Dax:orchid cup:timing,True
+2402,134,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2404,134,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+2406,134,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2408,134,cinder_garden,Vale,cool hand,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:meaning,True
+2410,134,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+2412,135,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2414,135,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2415,135,moss_ward,Tala,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Tala:empty hands:timing,True
+2416,135,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2418,135,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+2420,135,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+2421,135,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+2422,135,cinder_garden,Vale,cool hand,meaning,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:meaning,True
+2424,135,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2426,135,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+2427,135,cinder_garden,Wren,shade bow,none,gesture accepted,True,0.04,0.02,Wren:shade bow:none,True
+2428,135,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2430,136,glass_harbor,Nia,tea hold,timing,slow repeat with resident correction,False,0.12,0.08,Nia:tea hold:timing,True
+2432,136,lichen_bridge,Rin,rope touch,none,gesture accepted,True,0.04,0.02,Rin:rope touch:none,True
+2434,136,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2436,136,cinder_garden,Vale,cool hand,meaning,slow repeat with resident correction,False,0.12,0.08,Vale:cool hand:meaning,True
+2438,136,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2440,136,glass_harbor,Puck,net-hand open,timing,slow repeat with resident correction,True,0.12,0.02,Puck:net-hand open:timing,True
+2442,136,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2444,136,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2446,136,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2448,137,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2449,137,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+2450,137,cinder_garden,Vale,cool hand,timing,slow repeat with resident correction,True,0.12,0.02,Vale:cool hand:timing,True
+2452,137,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2454,137,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+2455,137,cinder_garden,Wren,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Wren:shade bow:timing,True
+2456,137,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2458,137,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2460,137,cinder_garden,Juno,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Juno:seed-step stop:timing,True
+2461,137,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+2462,137,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+2464,137,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+2466,138,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2468,138,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+2470,138,lichen_bridge,Kio,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Kio:signal hush:timing,True
+2472,138,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2474,138,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2476,138,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+2478,138,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+2480,138,lichen_bridge,Rin,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Rin:shared bowl:timing,True
+2482,138,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+2484,139,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True
+2486,139,moss_ward,Milo,empty hands,none,gesture accepted,True,0.04,0.02,Milo:empty hands:none,True
+2488,139,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2489,139,lichen_bridge,Luma,rope touch,none,gesture accepted,True,0.04,0.02,Luma:rope touch:none,True
+2490,139,orchid_engine,Dax,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Dax:valve pause:timing,True
+2492,139,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+2494,139,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+2495,139,orchid_engine,Eli,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Eli:open palms:timing,True
+2496,139,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+2498,139,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+2500,139,orchid_engine,Bea,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Bea:orchid cup:timing,True
+2501,139,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+2502,140,cinder_garden,Juno,seed-step stop,none,gesture accepted,True,0.04,0.02,Juno:seed-step stop:none,True
+2504,140,orchid_engine,Dax,valve pause,none,gesture accepted,True,0.04,0.02,Dax:valve pause:none,True
+2506,140,glass_harbor,Nia,lantern tap,meaning,slow repeat with resident correction,True,0.12,0.02,Nia:lantern tap:meaning,True
+2508,140,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+2510,140,moss_ward,Ari,door-path step,timing,slow repeat with resident correction,True,0.12,0.02,Ari:door-path step:timing,True
+2512,140,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+2514,140,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2516,140,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2518,140,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2520,141,glass_harbor,Nia,lantern tap,timing,slow repeat with resident correction,False,0.12,0.08,Nia:lantern tap:timing,True
+2522,141,lichen_bridge,Rin,shared bowl,none,gesture accepted,True,0.04,0.02,Rin:shared bowl:none,True
+2523,141,orchid_engine,Eli,open palms,none,gesture accepted,True,0.04,0.02,Eli:open palms:none,True
+2524,141,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+2526,141,cinder_garden,Vale,shade bow,none,gesture accepted,True,0.04,0.02,Vale:shade bow:none,True
+2528,141,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2529,141,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+2530,141,glass_harbor,Puck,tea hold,timing,slow repeat with resident correction,True,0.12,0.02,Puck:tea hold:timing,True
+2532,141,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2534,141,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+2535,141,glass_harbor,Sera,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Sera:lantern tap:timing,True
+2536,141,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2538,142,moss_ward,Ari,door-path step,none,gesture accepted,True,0.04,0.02,Ari:door-path step:none,True
+2540,142,cinder_garden,Vale,shade bow,timing,slow repeat with resident correction,True,0.12,0.02,Vale:shade bow:timing,True
+2542,142,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2544,142,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2546,142,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2548,142,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+2550,142,cinder_garden,Juno,cool hand,timing,slow repeat with resident correction,False,0.12,0.08,Juno:cool hand:timing,True
+2552,142,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+2554,142,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2556,143,orchid_engine,Bea,orchid cup,none,gesture accepted,True,0.04,0.02,Bea:orchid cup:none,True
+2557,143,moss_ward,Fay,empty hands,none,gesture accepted,True,0.04,0.02,Fay:empty hands:none,True
+2558,143,glass_harbor,Puck,tea hold,none,gesture accepted,True,0.04,0.02,Puck:tea hold:none,True
+2560,143,lichen_bridge,Kio,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Kio:rope touch:timing,True
+2562,143,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+2563,143,glass_harbor,Sera,lantern tap,none,gesture accepted,True,0.04,0.02,Sera:lantern tap:none,True
+2564,143,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2566,143,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+2568,143,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2569,143,cinder_garden,Pax,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:meaning,True
+2570,143,lichen_bridge,Rin,signal hush,timing,slow repeat with resident correction,True,0.12,0.02,Rin:signal hush:timing,True
+2572,143,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2574,144,lichen_bridge,Kio,rope touch,none,gesture accepted,True,0.04,0.02,Kio:rope touch:none,True
+2576,144,moss_ward,Milo,cup pause,meaning,slow repeat with resident correction,True,0.12,0.02,Milo:cup pause:meaning,True
+2578,144,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2580,144,orchid_engine,Dax,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Dax:open palms:timing,True
+2582,144,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2584,144,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+2586,144,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2588,144,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2590,144,orchid_engine,Bea,valve pause,timing,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:timing,True
+2592,145,cinder_garden,Juno,cool hand,none,gesture accepted,True,0.04,0.02,Juno:cool hand:none,True
+2594,145,orchid_engine,Dax,open palms,none,gesture accepted,True,0.04,0.02,Dax:open palms:none,True
+2596,145,glass_harbor,Nia,net-hand open,none,gesture accepted,True,0.04,0.02,Nia:net-hand open:none,True
+2597,145,cinder_garden,Pax,shade bow,meaning,slow repeat with resident correction,True,0.12,0.02,Pax:shade bow:meaning,True
+2598,145,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+2600,145,moss_ward,Ari,empty hands,timing,slow repeat with resident correction,True,0.12,0.02,Ari:empty hands:timing,True
+2602,145,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2603,145,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+2604,145,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:meaning,True
+2606,145,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2608,145,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2609,145,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+2610,146,glass_harbor,Nia,net-hand open,timing,slow repeat with resident correction,False,0.12,0.08,Nia:net-hand open:timing,True
+2612,146,lichen_bridge,Rin,signal hush,none,gesture accepted,True,0.04,0.02,Rin:signal hush:none,True
+2614,146,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2616,146,cinder_garden,Vale,seed-step stop,none,gesture accepted,True,0.04,0.02,Vale:seed-step stop:none,True
+2618,146,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:meaning,True
+2620,146,glass_harbor,Puck,lantern tap,timing,slow repeat with resident correction,True,0.12,0.02,Puck:lantern tap:timing,True
+2622,146,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2624,146,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2626,146,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2628,147,moss_ward,Ari,empty hands,none,gesture accepted,True,0.04,0.02,Ari:empty hands:none,True
+2630,147,cinder_garden,Vale,seed-step stop,timing,slow repeat with resident correction,True,0.12,0.02,Vale:seed-step stop:timing,True
+2631,147,lichen_bridge,Sol,rope touch,none,gesture accepted,True,0.04,0.02,Sol:rope touch:none,True
+2632,147,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,True,0.12,0.02,Bea:valve pause:meaning,True
+2634,147,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2636,147,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2637,147,orchid_engine,Cai,open palms,none,gesture accepted,True,0.04,0.02,Cai:open palms:none,True
+2638,147,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2640,147,cinder_garden,Juno,shade bow,timing,slow repeat with resident correction,False,0.12,0.08,Juno:shade bow:timing,True
+2642,147,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2643,147,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+2644,147,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2646,148,orchid_engine,Bea,valve pause,meaning,slow repeat with resident correction,False,0.12,0.08,Bea:valve pause:meaning,True
+2648,148,glass_harbor,Puck,lantern tap,none,gesture accepted,True,0.04,0.02,Puck:lantern tap:none,True
+2650,148,lichen_bridge,Kio,shared bowl,timing,slow repeat with resident correction,True,0.12,0.02,Kio:shared bowl:timing,True
+2652,148,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2654,148,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2656,148,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2658,148,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2660,148,lichen_bridge,Rin,rope touch,timing,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:timing,True
+2662,148,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2664,149,lichen_bridge,Kio,shared bowl,none,gesture accepted,True,0.04,0.02,Kio:shared bowl:none,True
+2665,149,orchid_engine,Cai,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Cai:open palms:timing,True
+2666,149,moss_ward,Milo,door-path step,none,gesture accepted,True,0.04,0.02,Milo:door-path step:none,True
+2668,149,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2670,149,orchid_engine,Dax,orchid cup,timing,slow repeat with resident correction,True,0.12,0.02,Dax:orchid cup:timing,True
+2671,149,moss_ward,Tala,empty hands,none,gesture accepted,True,0.04,0.02,Tala:empty hands:none,True
+2672,149,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2674,149,lichen_bridge,Rin,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:meaning,True
+2676,149,moss_ward,Ari,cup pause,none,gesture accepted,True,0.04,0.02,Ari:cup pause:none,True
+2677,149,glass_harbor,Oren,lantern tap,none,gesture accepted,True,0.04,0.02,Oren:lantern tap:none,True
+2678,149,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+2680,149,orchid_engine,Bea,open palms,timing,slow repeat with resident correction,True,0.12,0.02,Bea:open palms:timing,True
+2682,150,cinder_garden,Juno,shade bow,none,gesture accepted,True,0.04,0.02,Juno:shade bow:none,True
+2684,150,orchid_engine,Dax,orchid cup,none,gesture accepted,True,0.04,0.02,Dax:orchid cup:none,True
+2686,150,glass_harbor,Nia,tea hold,none,gesture accepted,True,0.04,0.02,Nia:tea hold:none,True
+2688,150,lichen_bridge,Rin,rope touch,meaning,slow repeat with resident correction,True,0.12,0.02,Rin:rope touch:meaning,True
+2690,150,moss_ward,Ari,cup pause,timing,slow repeat with resident correction,True,0.12,0.02,Ari:cup pause:timing,True
+2692,150,cinder_garden,Vale,cool hand,none,gesture accepted,True,0.04,0.02,Vale:cool hand:none,True
+2694,150,orchid_engine,Bea,open palms,none,gesture accepted,True,0.04,0.02,Bea:open palms:none,True
+2696,150,glass_harbor,Puck,net-hand open,none,gesture accepted,True,0.04,0.02,Puck:net-hand open:none,True
+2698,150,lichen_bridge,Kio,signal hush,none,gesture accepted,True,0.04,0.02,Kio:signal hush:none,True

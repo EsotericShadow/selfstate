@@ -520,6 +520,45 @@ function setObservationFilterOpen() { return setObservationFilter('open'); }
 function setObservationFilterWatch() { return setObservationFilter('watch'); }
 function setObservationFilterResolved() { return setObservationFilter('resolved'); }
 function setObservationFilterBlocking() { return setObservationFilter('blocking'); }
+const reviewerFailureActionBook = {
+  entry_and_movement: 'Click Enter or use Run reviewer pass to establish avatar entry.',
+  schedule_visibility: 'Ask schedule or run the reviewer pass so the selected resident schedule is public.',
+  debt_consequence: 'Borrow/return or run the reviewer pass to create a visible debt/trust consequence.',
+  offscreen_life: 'Use Wait offscreen or run the reviewer pass to advance resident progress while absent.',
+  recoverable_trust_repair: 'Run the trust repair sequence: interrupt, apologize, give space, repair with help.',
+  resident_social_memory: 'Run social pulse and settle one selected resident-to-resident obligation.',
+  public_history_sync: 'Create avatar and resident-to-resident events until selected resident history updates.',
+  replay_export_ready: 'Export replay after the loop so review evidence has bytes and public rows.',
+  resume_ready_snapshot: 'Save world after the loop so launcher resume has a public checkpoint.'
+};
+function reviewerFailureActions(receipt = calculateScenarioReceipt()) {
+  const failing = receipt.checks.filter(([_id, pass]) => !pass);
+  if (!failing.length) return ['All receipt fields currently pass. Keep deep panels optional unless a reviewer wants trace detail.'];
+  return failing.map(([id, _pass, detail]) => `FIX ${id}: ${reviewerFailureActionBook[id] || 'Run reviewer pass, then inspect receipt and transcript.'} Current evidence: ${detail}`);
+}
+function auditLandingFailures() {
+  const receipt = calculateScenarioReceipt();
+  const rows = readReceiptObservations();
+  const failing = receipt.checks.filter(([_id, pass]) => !pass);
+  failing.forEach(([field, _pass, detail]) => {
+    rows.push({
+      id: 'landing-block-' + (rows.length + 1),
+      field,
+      severity: 'blocking',
+      status: 'open',
+      receiptStatus: 'FAIL',
+      detail,
+      note: reviewerFailureActionBook[field] || 'Reviewer landing needs manual follow-up.',
+      tick: world.tick,
+      selected: world.selected,
+      replayRows: world.replay.length
+    });
+  });
+  writeReceiptObservations(rows);
+  localStorage.setItem(OBSERVATION_FILTER_KEY, 'blocking');
+  recordCheckpoint('reviewer landing failure audit');
+  return log('auditLandingFailures', { failingFields: failing.length, blockingRows: rows.filter(row => row.severity === 'blocking' && row.status !== 'resolved').length });
+}
 function reviewerFocusEnabled() {
   return document.body.classList.contains('reviewer-focus');
 }
@@ -559,7 +598,10 @@ Focus mode: ${focus ? 'core panels only' : 'deep panels visible'}
 Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage
 Receipt: ${receipt.passCount}/${receipt.fieldCount} pass
 Observation triage: ${observationRows.length} observations / active filter ${readObservationFilter()}
-Missing reviewer-pass events: ${missing.length ? missing.join(', ') : 'none'}`;
+Missing reviewer-pass events: ${missing.length ? missing.join(', ') : 'none'}
+Actionable failure map:
+${reviewerFailureActions(receipt).join('\n')}
+Deep diagnostics: ${focus ? 'hidden by default; use Toggle deep panels only when an action remains unclear' : 'visible for trace, checkpoints, history, and QA manifest'}`;
 }
 function formatScenarioReceipt() {
   const receipt = calculateScenarioReceipt();
@@ -696,6 +738,7 @@ function describeReplayRow(row) {
     logReceiptObservation: `logged receipt observation ${payload.id} ${payload.field} status=${payload.status}`,
     resolveLatestObservation: `resolved receipt observation=${payload.resolved === true} ${payload.id || payload.reason || ''}`,
     setObservationFilter: `set observation triage filter=${payload.filter} rows=${payload.visibleRows}`,
+    auditLandingFailures: `audited landing failures=${payload.failingFields} blockingRows=${payload.blockingRows}`,
     toggleDeepPanels: `deep panels visible=${payload.deepPanelsVisible === true}`,
     runReviewerLandingPass: `ran reviewer landing pass focus=${payload.reviewerFocus === true}`,
     toggleAudit: `audit overlay=${payload.audit === true}`,
@@ -781,6 +824,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

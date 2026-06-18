@@ -39,6 +39,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo receipt observations report](docs/319_ssrm_3d_browser_world_v79_primary_demo_receipt_observations_report.md): adds a field-tied public observation ledger for receipt review notes, severity, resolution, transcript/checkpoint visibility, and resume persistence.
 - [Primary demo observation triage report](docs/320_ssrm_3d_browser_world_v80_primary_demo_observation_triage_report.md): adds all/open/watch/resolved/blocking filters and count summaries for receipt-observation review inside the primary shell.
 - [Primary demo reviewer landing report](docs/321_ssrm_3d_browser_world_v81_primary_demo_reviewer_landing_report.md): condenses the maintained shell into a reviewer-focused landing path that foregrounds the boundary, transcript, integrated loop, receipt, and observation triage before optional deep panels.
+- [Primary demo actionable landing failures report](docs/322_ssrm_3d_browser_world_v82_primary_demo_actionable_landing_failures_report.md): adds field-level recovery guidance and blocking observation capture when the reviewer landing receipt is incomplete.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

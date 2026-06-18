@@ -30,6 +30,8 @@ Report 320 adds in-shell observation triage over that receipt-observation ledger
 
 Report 321 condenses the same primary shell into an outside-reviewer landing path. The default view foregrounds the no-consciousness boundary, session transcript, continuity loop, integrated receipt, and observation triage before optional deep diagnostics, so the consolidated demo is easier to audit without hiding the deeper panels.
 
+Report 322 makes that reviewer landing actionable when the receipt is incomplete. Failing public receipt fields now show concrete recovery steps, and `Audit failures` converts the current failure set into blocking observation rows without forcing the reviewer out of the core landing path.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

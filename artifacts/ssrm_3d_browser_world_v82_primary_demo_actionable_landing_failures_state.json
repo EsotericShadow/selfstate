@@ -1,0 +1,15 @@
+{
+  "actionable_landing_path": [
+    "open reviewer landing in default reviewer-focus mode",
+    "read Actionable failure map when receipt is incomplete",
+    "click Audit failures to create blocking observation rows",
+    "use Observation triage blocking filter without opening deep diagnostics",
+    "toggle deep panels only if trace detail is needed",
+    "run reviewer pass and confirm all-pass guidance replaces failure guidance"
+  ],
+  "boundary": "Deterministic browser-local landing-failure actionability only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The failure map is reviewer guidance over public receipt state, not autonomous debugging or hidden cognition.",
+  "next_gate": "post-322: make the reviewer-first shell more handoff-ready by packaging the launcher, landing, manual script, receipt, observation triage, and boundary into one outside-review checklist",
+  "prefix": "ssrm_3d_browser_world_v82_primary_demo_actionable_landing_failures",
+  "report": 322,
+  "seed": 20270720
+}

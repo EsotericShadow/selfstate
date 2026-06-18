@@ -1,0 +1,48 @@
+{
+  "combined_receipt_contract": {
+    "blocking_phase": "none",
+    "boundary": "outside-review-handoff-combined-browser-local-receipt-only",
+    "download_name": "ssrm_primary_demo_outside_review_handoff.json",
+    "included_fields": [
+      "defects",
+      "lifecyclePreflightPacket",
+      "manualRecords",
+      "recorderExport",
+      "reviewedHandoffCompletion",
+      "shellEvidence"
+    ],
+    "outside_review_export_action": "exportOutsideReviewHandoff",
+    "phase_statuses": {
+      "closed_origin_tab_continuity": "pass",
+      "cross_tab_prepared_resume_visible": "pass",
+      "hard_reload_continuity": "pass",
+      "repaired_continue_return_refresh": "pass",
+      "stale_reprepare_repair": "pass",
+      "stale_supersession_calibration": "pass"
+    },
+    "preflight_export_key": "ssrm_primary_demo_lifecycle_preflight_packet",
+    "preflight_prepare_action": "prepareLifecyclePreflightPacket('outside-review-handoff')",
+    "report": 346,
+    "source_packet_contract": "artifacts/ssrm_3d_browser_world_v105_primary_demo_lifecycle_preflight_packet_export_export_packet_contract.json"
+  },
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "blocking_phase_count": 0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 12,
+    "generator_durability_score": 1.0,
+    "handoff_payload_score": 1.0,
+    "included_field_count": 6,
+    "manual_path_score": 1.0,
+    "phase_count": 6,
+    "readiness": 1.0,
+    "receipt_contract_score": 1.0,
+    "runner_index_score": 1.0,
+    "visible_summary_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-346: make the combined outside-review receipt visible as one checklist completion status row so reviewers can see whether shell evidence, manual notes, defect state, recorder export, and lifecycle preflight packet are all included before downloading",
+  "report": 346,
+  "seed": 20270744,
+  "verdict": "pass"
+}

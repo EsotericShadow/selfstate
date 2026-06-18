@@ -182,8 +182,10 @@ function markOutsideReviewItem(itemId) {
 }
 
 function exportOutsideReviewHandoff() {
+  const lifecyclePreflightPacket = prepareLifecyclePreflightPacket('outside-review-handoff');
   const payload = {
     reportIntroduced: 323,
+    combinedReceiptReportIntroduced: 346,
     checklistState: outsideReviewState(),
     handoff: readObject(HANDOFF_KEY, null),
     shellEvidence: buildOutsideReviewEvidence(),
@@ -192,6 +194,10 @@ function exportOutsideReviewHandoff() {
     defects: readList(DEFECT_LEDGER_KEY),
     recorderExport: readRecorderExportPayload(),
     recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
+    lifecyclePreflightPacket,
+    lifecyclePreflightPacketPrepared: Boolean(localStorage.getItem(LIFECYCLE_PREFLIGHT_EXPORT_KEY)),
+    lifecyclePreflightPacketSource: LIFECYCLE_PREFLIGHT_EXPORT_KEY,
+    combinedReceiptIncludes: ['shellEvidence', 'reviewedHandoffCompletion', 'manualRecords', 'defects', 'recorderExport', 'lifecyclePreflightPacket'],
     targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
     launchUrl: currentLauncherUrl(),
     boundary: 'outside-review-handoff-public-local-only'
@@ -322,7 +328,10 @@ function readableHandoffSummary(payload, freshness) {
   const recorderReady = payload.recorderExportPrepared || Boolean(recorderExport.recordCount) ? 'ready' : 'missing';
   const manualCount = Array.isArray(payload.manualRecords) ? payload.manualRecords.length : (completion.manualRecordCount || 0);
   const freshnessText = freshness && freshness.fresh ? 'fresh' : `stale: ${(freshness && freshness.mismatches || ['unknown mismatch']).join(', ')}`;
-  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download Prepared outside-review handoff JSON.`;
+  const preflightPacket = payload.lifecyclePreflightPacket || {};
+  const preflightPhaseCount = preflightPacket.phaseCount || Object.keys(preflightPacket.phaseStatuses || {}).length;
+  const preflightText = payload.lifecyclePreflightPacketPrepared ? `lifecycle preflight blocking phase ${preflightPacket.blockingPhase || 'unknown'} / ${preflightPhaseCount} phase(s)` : 'lifecycle preflight missing';
+  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; ${preflightText}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download combined outside-review handoff JSON.`;
 }
 
 function preparedHandoffHref(payload) {

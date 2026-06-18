@@ -197,7 +197,7 @@ OUTSIDE_REVIEW_CHECKLIST: list[dict[str, str]] = [
     {
         "item_id": "OR-07",
         "label": "Record manual outcome and export handoff",
-        "evidence": "Manual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.",
+        "evidence": "Manual pass recorder, defect ledger, lifecycle preflight packet, and outside-review handoff export are prepared as one browser-local public review receipt.",
     },
 ]
 
@@ -882,8 +882,10 @@ function markOutsideReviewItem(itemId) {
 }
 
 function exportOutsideReviewHandoff() {
+  const lifecyclePreflightPacket = prepareLifecyclePreflightPacket('outside-review-handoff');
   const payload = {
     reportIntroduced: 323,
+    combinedReceiptReportIntroduced: 346,
     checklistState: outsideReviewState(),
     handoff: readObject(HANDOFF_KEY, null),
     shellEvidence: buildOutsideReviewEvidence(),
@@ -892,6 +894,10 @@ function exportOutsideReviewHandoff() {
     defects: readList(DEFECT_LEDGER_KEY),
     recorderExport: readRecorderExportPayload(),
     recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
+    lifecyclePreflightPacket,
+    lifecyclePreflightPacketPrepared: Boolean(localStorage.getItem(LIFECYCLE_PREFLIGHT_EXPORT_KEY)),
+    lifecyclePreflightPacketSource: LIFECYCLE_PREFLIGHT_EXPORT_KEY,
+    combinedReceiptIncludes: ['shellEvidence', 'reviewedHandoffCompletion', 'manualRecords', 'defects', 'recorderExport', 'lifecyclePreflightPacket'],
     targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
     launchUrl: currentLauncherUrl(),
     boundary: 'outside-review-handoff-public-local-only'
@@ -1022,7 +1028,10 @@ function readableHandoffSummary(payload, freshness) {
   const recorderReady = payload.recorderExportPrepared || Boolean(recorderExport.recordCount) ? 'ready' : 'missing';
   const manualCount = Array.isArray(payload.manualRecords) ? payload.manualRecords.length : (completion.manualRecordCount || 0);
   const freshnessText = freshness && freshness.fresh ? 'fresh' : `stale: ${(freshness && freshness.mismatches || ['unknown mismatch']).join(', ')}`;
-  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download Prepared outside-review handoff JSON.`;
+  const preflightPacket = payload.lifecyclePreflightPacket || {};
+  const preflightPhaseCount = preflightPacket.phaseCount || Object.keys(preflightPacket.phaseStatuses || {}).length;
+  const preflightText = payload.lifecyclePreflightPacketPrepared ? `lifecycle preflight blocking phase ${preflightPacket.blockingPhase || 'unknown'} / ${preflightPhaseCount} phase(s)` : 'lifecycle preflight missing';
+  return `Outside-review handoff ready: ${freshnessText} ${handoff.kind || 'unknown'} handoff; checklist ${checklistDone}/${OUTSIDE_REVIEW_ITEMS.length}; shell evidence reviewer pass ${shellEvidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receiptText} / replay export ${shellEvidence.replayExportReady ? 'ready' : 'missing'}; recorder ${manualCount} manual record(s) / export ${recorderReady}; ${preflightText}; next action: click Continue from prepared ${handoff.kind || 'unknown'} handoff, or download combined outside-review handoff JSON.`;
 }
 
 function preparedHandoffHref(payload) {
@@ -1366,7 +1375,7 @@ Browser-local packet action:
 
 ## Outside-review checklist
 
-The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff evidence. Checklist progress stays in browser-local public state under `{OUTSIDE_REVIEW_KEY}`.
+The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, lifecycle preflight status, and exportable combined handoff evidence. Preparing the outside-review handoff automatically prepares and embeds the lifecycle preflight packet so reviewers get one browser-local receipt. Checklist progress stays in browser-local public state under `{OUTSIDE_REVIEW_KEY}`.
 
 ## Exit criteria
 

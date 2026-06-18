@@ -1,0 +1,13 @@
+name,passed,score,channel,detail
+packet_export_artifacts_available_and_passing,True,1.0,artifact source,Report 345 packet export results and contract exist and pass.
+packet_contract_phase_set_complete,True,1.0,artifact source,Source preflight packet contract has all lifecycle phases and no blocking phase.
+outside_review_export_auto_prepares_preflight_packet,True,1.0,handoff payload,Outside-review handoff export prepares the lifecycle preflight packet automatically.
+outside_review_payload_embeds_preflight_packet,True,1.0,handoff payload,"Outside-review payload includes lifecycle preflight packet, source key, prepared flag, report marker, and combined receipt field list."
+readable_summary_reports_preflight_status,True,1.0,visible summary,Readable handoff summary names lifecycle preflight blocking phase and combined JSON download.
+launcher_or07_names_combined_receipt,True,1.0,visible summary,Visible OR-07 checklist text says the handoff export includes the lifecycle preflight packet as one review receipt.
+manual_documents_combined_receipt,True,1.0,manual path,Manual playtest documentation says outside-review handoff embeds lifecycle preflight status into one receipt.
+generator_preserves_combined_receipt_js,True,1.0,generator durability,v63 generator preserves combined receipt payload wiring and readable preflight summary.
+generator_preserves_combined_receipt_docs,True,1.0,generator durability,v63 generator preserves OR-07 and manual combined receipt language.
+combined_receipt_contract_is_complete,True,1.0,receipt contract,"Report 346 emits a combined receipt contract covering shell evidence, completion state, manual notes, defects, recorder export, and lifecycle preflight packet."
+experiment_index_includes_combined_receipt_report,True,1.0,runner index,Experiment runner index includes the Report 346 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects hosted URL, live E2E, production persistence, autonomous language, consciousness, moral patienthood, complete engine, and finished gameplay claims."

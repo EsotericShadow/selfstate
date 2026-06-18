@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,included_field_count,next_gate
+346,pass,1.0,6,"post-346: make the combined outside-review receipt visible as one checklist completion status row so reviewers can see whether shell evidence, manual notes, defect state, recorder export, and lifecycle preflight packet are all included before downloading"

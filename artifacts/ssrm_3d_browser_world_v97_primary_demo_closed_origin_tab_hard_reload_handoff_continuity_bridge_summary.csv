@@ -1,0 +1,2 @@
+report,readiness,weakest_channel_score,hard_reload_continuity_score,tab_independence_score,reload_survival_score,cross_tab_continue_score,timestamp_match_score,post_return_freshness_score,visible_no_storage_score,console_errors,criterion_count
+337,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,17

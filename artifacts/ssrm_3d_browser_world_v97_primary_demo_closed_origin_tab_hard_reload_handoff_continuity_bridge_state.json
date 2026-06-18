@@ -1,0 +1,28 @@
+{
+  "after_reload_recorded_at": "2026-06-18T09:51:06.171Z",
+  "after_return_recorded_at": "2026-06-18T09:51:06.171Z",
+  "before_reload_recorded_at": "2026-06-18T09:51:06.171Z",
+  "boundary": "Deterministic browser-local closed-origin-tab hard-reload handoff continuity bridge only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local page-lifecycle handoff hygiene and visible review continuity, not external validation or evidence of inner experience.",
+  "checks": {
+    "evidence_avoids_raw_storage_keys": true,
+    "fresh_tab_after_reload_after_return_timestamp_unchanged": true,
+    "fresh_tab_after_reload_continue_reaches_shell": true,
+    "fresh_tab_after_reload_controls_available": true,
+    "fresh_tab_after_reload_payload_timestamp_matches_original": true,
+    "fresh_tab_after_reload_refresh_keeps_handoff_fresh": true,
+    "fresh_tab_after_reload_return_to_launcher_visible": true,
+    "fresh_tab_after_reload_shows_prepared_handoff": true,
+    "fresh_tab_after_reload_status_fresh_resume": true,
+    "fresh_tab_after_reload_visible_handoff_timestamp_matches_original": true,
+    "fresh_tab_before_reload_shows_prepared_handoff": true,
+    "no_console_errors": true,
+    "original_preparing_tab_closed": true,
+    "original_tab_prepared_fresh_resume_before_close": true
+  },
+  "next_gate": "post-337: verify stale prepared-handoff calibration when a newer shell handoff supersedes the prepared payload, so continuity rewards freshness judgment rather than preserving stale actions forever",
+  "original_recorded_at": "2026-06-18T09:51:06.171Z",
+  "original_tab_closed": true,
+  "reload_method": "tab.reload after opening fresh launcher tab and after closing original preparing tab",
+  "report": 337,
+  "seed": 20270735
+}

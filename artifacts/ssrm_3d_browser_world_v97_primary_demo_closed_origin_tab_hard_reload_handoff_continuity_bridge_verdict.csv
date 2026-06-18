@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+337,pass,1.0,1.0,"post-337: verify stale prepared-handoff calibration when a newer shell handoff supersedes the prepared payload, so continuity rewards freshness judgment rather than preserving stale actions forever"

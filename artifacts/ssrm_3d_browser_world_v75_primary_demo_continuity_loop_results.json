@@ -1,0 +1,162 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_criteria.csv",
+    "report": "docs/315_ssrm_3d_browser_world_v75_primary_demo_continuity_loop_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local continuity-loop consolidation only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The loop demonstrates public state continuity, not inner experience.",
+  "browser_evidence": {
+    "consequence_repair_evidence": {
+      "debtOut": "0 / trust 0.624",
+      "memoryOut": "avatar repaired trust with concrete help",
+      "residentHistoryExcerpt": "  Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378\n* Fay now: debt 0 / trust 0.624 / progress 0.559 / memory: avatar repaired trust with concrete help\n  t4 trust wound: avatar interrupted work during sort herbs -> debt 1 trust 0.554 progress 0.521\n  t5 trust repair: avatar apologized and named the interruption -> debt 1 trust 0.578 progress 0.521\n  t6 trust repair: avatar gave space and let work continue -> debt 1 trust 0.59 progress 0.531\n  t7 trust repair: avatar repaired trust with concrete help -> debt 0 trust 0.624 progress 0.559\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\n  t3 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\n  t3 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503",
+      "trustRepairOut": "Selected: Fay | trust 0.624 | debt 0 | progress 0.559\nState: repair completed through concrete help\nRecent public history:\nt2 state update: avatar borrowed tool -> trust 0.612 debt 1 progress 0.5\nt3 state update: trust/debt/progress changed -> trust 0.614 debt 1 progress 0.521\nt4 trust wound: avatar interrupted work during sort herbs -> trust 0.554 debt 1 progress 0.521\nt5 trust repair: avatar apologized and named the interruption -> trust 0.578 debt 1 progress 0.521\nt6 trust repair: avatar gave space and let work continue -> trust 0.59 debt 1 progress 0.531\nt7 trust repair: avatar repaired trust with concrete help -> trust 0.624 debt 0 progress 0.559"
+    },
+    "consequence_repair_pass": true,
+    "console_error_messages": [],
+    "console_errors": 0,
+    "dashboard_history_sync_evidence": {
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 6\n  Ari   | repair awning    | progress 0.378 | debt  1 | trust 0.579 | history  1 | stable | memory: met avatar at arrival court\n* Fay   | sort herbs       | progress 0.559 | debt  0 | trust 0.624 | history  6 | stable | memory: avatar repaired trust with concrete help\n  Milo  | carry water      | progress 0.264 | debt  2 | trust 0.479 | history  1 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.447 | debt  1 | trust 0.542 | history  1 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.420 | debt  1 | trust 0.509 | history  1 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.503 | debt  0 | trust 0.612 | history  1 | stable | memory: remembers quiet greeting",
+      "history": "  Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378\n* Fay now: debt 0 / trust 0.624 / progress 0.559 / memory: avatar repaired trust with concrete help\n  t4 trust wound: avatar interrupted work during sort herbs -> debt 1 trust 0.554 progress 0.521\n  t5 trust repair: avatar apologized and named the interruption -> debt 1 trust 0.578 progress 0.521\n  t6 trust repair: avatar gave space and let work continue -> debt 1 trust 0.59 progress 0.531\n  t7 trust repair: avatar repaired trust with concrete help -> debt 0 trust 0.624 progress 0.559\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\n  t3 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\n  t3 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503"
+    },
+    "dashboard_history_sync_pass": true,
+    "loop_coverage_evidence": {
+      "after": "Selected: Fay | entered=true | room=arrival court\nLoop coverage: 11/11 -> enterWorld, askSchedule, borrowTool, waitOffscreen, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, saveWorld, exportReplay, runContinuityLoop\nResident: sort herbs | debt 0 | trust 0.624 | progress 0.559 | memory: avatar repaired trust with concrete help\nContinuity signals: history 6 | checkpoints 3 | replay rows 11 | export bytes 1927\nRecent loop events:\nt0 enterWorld\nt1 askSchedule\nt2 borrowTool\nt3 waitOffscreen\nt4 interruptWork\nt5 apologizeToResident\nt6 giveSpace\nt7 completeTrustRepair\nt8 saveWorld\nt9 exportReplay\nt10 runContinuityLoop\nRecent selected-resident history:\nt2 state update: avatar borrowed tool\nt3 state update: trust/debt/progress changed\nt4 trust wound: avatar interrupted work during sort herbs\nt5 trust repair: avatar apologized and named the interruption\nt6 trust repair: avatar gave space and let work continue\nt7 trust repair: avatar repaired trust with concrete help",
+      "before": {
+        "continuityLoopOut": "Selected: Ari | entered=false | room=arrival court\nLoop coverage: 0/11 -> \nResident: repair awning | debt 1 | trust 0.580 | progress 0.360 | memory: met avatar at arrival court\nContinuity signals: history 0 | checkpoints 0 | replay rows 0 | export bytes 0\nRecent loop events:\nrun the continuity loop to create an integrated sequence\nRecent selected-resident history:\nno selected-resident history yet",
+        "replayOut": "0 rows",
+        "selected": "Ari",
+        "url": "http://127.0.0.1:8774/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      },
+      "missing_events": []
+    },
+    "loop_coverage_pass": true,
+    "replay_export_evidence": {
+      "checkpoints": "manual save @ t8 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 8\nreplay export @ t9 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 9\ncontinuity loop complete @ t10 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 10",
+      "exportBytes": 1927,
+      "exportLinkPresent": true,
+      "replayOut": "11 rows",
+      "transcript": "t0 arrival court / Fay: avatar entered the world boundary-visible\nt1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borrowed tool; debt increases\nt3 arrival court / Fay: waited offscreen; resident progress advanced\nt4 arrival court / Fay: interruptWork\nt5 arrival court / Fay: apologizeToResident\nt6 arrival court / Fay: giveSpace\nt7 arrival court / Fay: completeTrustRepair\nt8 arrival court / Fay: saved local snapshot\nt9 arrival court / Fay: prepared replay export rows=9 bytes=1927\nt10 arrival court / Fay: runContinuityLoop"
+    },
+    "replay_export_pass": true,
+    "resume_persistence_evidence": {
+      "checkpointOut": "manual save @ t8 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 8\nreplay export @ t9 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 9\ncontinuity loop complete @ t10 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 10",
+      "continuityLoopOut": "Selected: Fay | entered=true | room=arrival court\nLoop coverage: 11/11 -> enterWorld, askSchedule, borrowTool, waitOffscreen, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, saveWorld, exportReplay, runContinuityLoop\nResident: sort herbs | debt 0 | trust 0.624 | progress 0.559 | memory: avatar repaired trust with concrete help\nContinuity signals: history 6 | checkpoints 3 | replay rows 11 | export bytes 1927\nRecent loop events:\nt0 enterWorld\nt1 askSchedule\nt2 borrowTool\nt3 waitOffscreen\nt4 interruptWork\nt5 apologizeToResident\nt6 giveSpace\nt7 completeTrustRepair\nt8 saveWorld\nt9 exportReplay\nt10 runContinuityLoop\nRecent selected-resident history:\nt2 state update: avatar borrowed tool\nt3 state update: trust/debt/progress changed\nt4 trust wound: avatar interrupted work during sort herbs\nt5 trust repair: avatar apologized and named the interruption\nt6 trust repair: avatar gave space and let work continue\nt7 trust repair: avatar repaired trust with concrete help",
+      "debtOut": "0 / trust 0.624",
+      "memoryOut": "avatar repaired trust with concrete help",
+      "replayOut": "11 rows",
+      "residentDashboardOut": "Resources: water 12 / fiber 10 / wood 17 / care 6\n  Ari   | repair awning    | progress 0.378 | debt  1 | trust 0.579 | history  1 | stable | memory: met avatar at arrival court\n* Fay   | sort herbs       | progress 0.559 | debt  0 | trust 0.624 | history  6 | stable | memory: avatar repaired trust with concrete help\n  Milo  | carry water      | progress 0.264 | debt  2 | trust 0.479 | history  1 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.447 | debt  1 | trust 0.542 | history  1 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.420 | debt  1 | trust 0.509 | history  1 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.503 | debt  0 | trust 0.612 | history  1 | stable | memory: remembers quiet greeting",
+      "residentHistoryOut": "  Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378\n* Fay now: debt 0 / trust 0.624 / progress 0.559 / memory: avatar repaired trust with concrete help\n  t4 trust wound: avatar interrupted work during sort herbs -> debt 1 trust 0.554 progress 0.521\n  t5 trust repair: avatar apologized and named the interruption -> debt 1 trust 0.578 progress 0.521\n  t6 trust repair: avatar gave space and let work continue -> debt 1 trust 0.59 progress 0.531\n  t7 trust repair: avatar repaired trust with concrete help -> debt 0 trust 0.624 progress 0.559\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\n  t3 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\n  t3 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503",
+      "roomOut": "arrival court / entered",
+      "scheduleOut": "sort herbs / progress 0.559",
+      "selected": "Fay",
+      "sessionTranscriptOut": "t0 arrival court / Fay: avatar entered the world boundary-visible\nt1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borrowed tool; debt increases\nt3 arrival court / Fay: waited offscreen; resident progress advanced\nt4 arrival court / Fay: interruptWork\nt5 arrival court / Fay: apologizeToResident\nt6 arrival court / Fay: giveSpace\nt7 arrival court / Fay: completeTrustRepair\nt8 arrival court / Fay: saved local snapshot\nt9 arrival court / Fay: prepared replay export rows=9 bytes=1927\nt10 arrival court / Fay: runContinuityLoop",
+      "trustRepairOut": "Selected: Fay | trust 0.624 | debt 0 | progress 0.559\nState: repair completed through concrete help\nRecent public history:\nt2 state update: avatar borrowed tool -> trust 0.612 debt 1 progress 0.5\nt3 state update: trust/debt/progress changed -> trust 0.614 debt 1 progress 0.521\nt4 trust wound: avatar interrupted work during sort herbs -> trust 0.554 debt 1 progress 0.521\nt5 trust repair: avatar apologized and named the interruption -> trust 0.578 debt 1 progress 0.521\nt6 trust repair: avatar gave space and let work continue -> trust 0.59 debt 1 progress 0.531\nt7 trust repair: avatar repaired trust with concrete help -> trust 0.624 debt 0 progress 0.559",
+      "url": "http://127.0.0.1:8774/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "resume_persistence_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "continuity_loop_panel_present",
+      "evidence": "maintained shell exposes a visible continuity-loop panel",
+      "failure_if_false": "reviewers would still need to stitch the whole loop together manually",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generated_source_of_truth",
+      "evidence": "continuity loop is generated from the maintained v61 source",
+      "failure_if_false": "regeneration would erase the continuity-loop surface",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "same_surface_integration",
+      "evidence": "loop routes through existing arrival, schedule, debt, offscreen, repair, save, and replay functions",
+      "failure_if_false": "loop would be another isolated bridge instead of a single playable surface",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "public_continuity_signals",
+      "evidence": "loop status summarizes coverage, history, checkpoints, replay rows, and export bytes in public UI",
+      "failure_if_false": "reviewers would still need raw JSON to know whether the full loop happened",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_loop_coverage",
+      "evidence": "{'before': {'continuityLoopOut': 'Selected: Ari | entered=false | room=arrival court\\nLoop coverage: 0/11 -> \\nResident: repair awning | debt 1 | trust 0.580 | progress 0.360 | memory: met avatar at arrival court\\nContinuity signals: history 0 | checkpoints 0 | replay rows 0 | export bytes 0\\nRecent loop events:\\nrun the continuity loop to create an integrated sequence\\nRecent selected-resident history:\\nno selected-resident history yet', 'replayOut': '0 rows', 'selected': 'Ari', 'url': 'http://127.0.0.1:8774/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63'}, 'after': 'Selected: Fay | entered=true | room=arrival court\\nLoop coverage: 11/11 -> enterWorld, askSchedule, borrowTool, waitOffscreen, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, saveWorld, exportReplay, runContinuityLoop\\nResident: sort herbs | debt 0 | trust 0.624 | progress 0.559 | memory: avatar repaired trust with concrete help\\nContinuity signals: history 6 | checkpoints 3 | replay rows 11 | export bytes 1927\\nRecent loop events:\\nt0 enterWorld\\nt1 askSchedule\\nt2 borrowTool\\nt3 waitOffscreen\\nt4 interruptWork\\nt5 apologizeToResident\\nt6 giveSpace\\nt7 completeTrustRepair\\nt8 saveWorld\\nt9 exportReplay\\nt10 runContinuityLoop\\nRecent selected-resident history:\\nt2 state update: avatar borrowed tool\\nt3 state update: trust/debt/progress changed\\nt4 trust wound: avatar interrupted work during sort herbs\\nt5 trust repair: avatar apologized and named the interruption\\nt6 trust repair: avatar gave space and let work continue\\nt7 trust repair: avatar repaired trust with concrete help', 'missing_events': []}",
+      "failure_if_false": "continuity loop did not visibly run all required events in browser",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_consequence_repair",
+      "evidence": "{'debtOut': '0 / trust 0.624', 'memoryOut': 'avatar repaired trust with concrete help', 'trustRepairOut': 'Selected: Fay | trust 0.624 | debt 0 | progress 0.559\\nState: repair completed through concrete help\\nRecent public history:\\nt2 state update: avatar borrowed tool -> trust 0.612 debt 1 progress 0.5\\nt3 state update: trust/debt/progress changed -> trust 0.614 debt 1 progress 0.521\\nt4 trust wound: avatar interrupted work during sort herbs -> trust 0.554 debt 1 progress 0.521\\nt5 trust repair: avatar apologized and named the interruption -> trust 0.578 debt 1 progress 0.521\\nt6 trust repair: avatar gave space and let work continue -> trust 0.59 debt 1 progress 0.531\\nt7 trust repair: avatar repaired trust with concrete help -> trust 0.624 debt 0 progress 0.559', 'residentHistoryExcerpt': '  Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378\\n* Fay now: debt 0 / trust 0.624 / progress 0.559 / memory: avatar repaired trust with concrete help\\n  t4 trust wound: avatar interrupted work during sort herbs -> debt 1 trust 0.554 progress 0.521\\n  t5 trust repair: avatar apologized and named the interruption -> debt 1 trust 0.578 progress 0.521\\n  t6 trust repair: avatar gave space and let work continue -> debt 1 trust 0.59 progress 0.531\\n  t7 trust repair: avatar repaired trust with concrete help -> debt 0 trust 0.624 progress 0.559\\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\\n  t3 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\\n  t3 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503'}",
+      "failure_if_false": "debt, trust wound, and repair did not stay visible after the integrated loop",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_dashboard_history_sync",
+      "evidence": "{'dashboard': 'Resources: water 12 / fiber 10 / wood 17 / care 6\\n  Ari   | repair awning    | progress 0.378 | debt  1 | trust 0.579 | history  1 | stable | memory: met avatar at arrival court\\n* Fay   | sort herbs       | progress 0.559 | debt  0 | trust 0.624 | history  6 | stable | memory: avatar repaired trust with concrete help\\n  Milo  | carry water      | progress 0.264 | debt  2 | trust 0.479 | history  1 | debt pressure | memory: tool loan pending\\n  Sera  | dry cloaks       | progress 0.447 | debt  1 | trust 0.542 | history  1 | stable | memory: asked for quiet\\n  Tovan | map safe route   | progress 0.420 | debt  1 | trust 0.509 | history  1 | trust fragile | memory: keeps route tokens\\n  Nia   | sort glass jars  | progress 0.503 | debt  0 | trust 0.612 | history  1 | stable | memory: remembers quiet greeting', 'history': '  Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378\\n* Fay now: debt 0 / trust 0.624 / progress 0.559 / memory: avatar repaired trust with concrete help\\n  t4 trust wound: avatar interrupted work during sort herbs -> debt 1 trust 0.554 progress 0.521\\n  t5 trust repair: avatar apologized and named the interruption -> debt 1 trust 0.578 progress 0.521\\n  t6 trust repair: avatar gave space and let work continue -> debt 1 trust 0.59 progress 0.531\\n  t7 trust repair: avatar repaired trust with concrete help -> debt 0 trust 0.624 progress 0.559\\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\\n  t3 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\\n  t3 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503'}",
+      "failure_if_false": "dashboard/history panels did not agree after the continuity loop",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_replay_export_visible",
+      "evidence": "{'replayOut': '11 rows', 'exportLinkPresent': True, 'exportBytes': 1927, 'transcript': 't0 arrival court / Fay: avatar entered the world boundary-visible\\nt1 arrival court / Fay: asked schedule: sort herbs\\nt2 arrival court / Fay: borrowed tool; debt increases\\nt3 arrival court / Fay: waited offscreen; resident progress advanced\\nt4 arrival court / Fay: interruptWork\\nt5 arrival court / Fay: apologizeToResident\\nt6 arrival court / Fay: giveSpace\\nt7 arrival court / Fay: completeTrustRepair\\nt8 arrival court / Fay: saved local snapshot\\nt9 arrival court / Fay: prepared replay export rows=9 bytes=1927\\nt10 arrival court / Fay: runContinuityLoop', 'checkpoints': 'manual save @ t8 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 8\\nreplay export @ t9 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 9\\ncontinuity loop complete @ t10 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 10'}",
+      "failure_if_false": "replay/export continuity was not visible after the loop",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_resume_persistence",
+      "evidence": "{'checkpointOut': 'manual save @ t8 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 8\\nreplay export @ t9 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 9\\ncontinuity loop complete @ t10 | arrival court | Fay | debt 0 trust 0.624 | progress 0.559 | replay 10', 'continuityLoopOut': 'Selected: Fay | entered=true | room=arrival court\\nLoop coverage: 11/11 -> enterWorld, askSchedule, borrowTool, waitOffscreen, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, saveWorld, exportReplay, runContinuityLoop\\nResident: sort herbs | debt 0 | trust 0.624 | progress 0.559 | memory: avatar repaired trust with concrete help\\nContinuity signals: history 6 | checkpoints 3 | replay rows 11 | export bytes 1927\\nRecent loop events:\\nt0 enterWorld\\nt1 askSchedule\\nt2 borrowTool\\nt3 waitOffscreen\\nt4 interruptWork\\nt5 apologizeToResident\\nt6 giveSpace\\nt7 completeTrustRepair\\nt8 saveWorld\\nt9 exportReplay\\nt10 runContinuityLoop\\nRecent selected-resident history:\\nt2 state update: avatar borrowed tool\\nt3 state update: trust/debt/progress changed\\nt4 trust wound: avatar interrupted work during sort herbs\\nt5 trust repair: avatar apologized and named the interruption\\nt6 trust repair: avatar gave space and let work continue\\nt7 trust repair: avatar repaired trust with concrete help', 'debtOut': '0 / trust 0.624', 'memoryOut': 'avatar repaired trust with concrete help', 'replayOut': '11 rows', 'residentDashboardOut': 'Resources: water 12 / fiber 10 / wood 17 / care 6\\n  Ari   | repair awning    | progress 0.378 | debt  1 | trust 0.579 | history  1 | stable | memory: met avatar at arrival court\\n* Fay   | sort herbs       | progress 0.559 | debt  0 | trust 0.624 | history  6 | stable | memory: avatar repaired trust with concrete help\\n  Milo  | carry water      | progress 0.264 | debt  2 | trust 0.479 | history  1 | debt pressure | memory: tool loan pending\\n  Sera  | dry cloaks       | progress 0.447 | debt  1 | trust 0.542 | history  1 | stable | memory: asked for quiet\\n  Tovan | map safe route   | progress 0.420 | debt  1 | trust 0.509 | history  1 | trust fragile | memory: keeps route tokens\\n  Nia   | sort glass jars  | progress 0.503 | debt  0 | trust 0.612 | history  1 | stable | memory: remembers quiet greeting', 'residentHistoryOut': '  Ari now: debt 1 / trust 0.579 / progress 0.378 / memory: met avatar at arrival court\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.579 progress 0.378\\n* Fay now: debt 0 / trust 0.624 / progress 0.559 / memory: avatar repaired trust with concrete help\\n  t4 trust wound: avatar interrupted work during sort herbs -> debt 1 trust 0.554 progress 0.521\\n  t5 trust repair: avatar apologized and named the interruption -> debt 1 trust 0.578 progress 0.521\\n  t6 trust repair: avatar gave space and let work continue -> debt 1 trust 0.59 progress 0.531\\n  t7 trust repair: avatar repaired trust with concrete help -> debt 0 trust 0.624 progress 0.559\\n  Milo now: debt 2 / trust 0.479 / progress 0.264 / memory: tool loan pending\\n  t3 state update: trust/debt/progress changed -> debt 2 trust 0.479 progress 0.264\\n  Sera now: debt 1 / trust 0.542 / progress 0.447 / memory: asked for quiet\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.542 progress 0.447\\n  Tovan now: debt 1 / trust 0.509 / progress 0.420 / memory: keeps route tokens\\n  t3 state update: trust/debt/progress changed -> debt 1 trust 0.509 progress 0.42\\n  Nia now: debt 0 / trust 0.612 / progress 0.503 / memory: remembers quiet greeting\\n  t3 state update: trust/debt/progress changed -> debt 0 trust 0.612 progress 0.503', 'roomOut': 'arrival court / entered', 'scheduleOut': 'sort herbs / progress 0.559', 'selected': 'Fay', 'sessionTranscriptOut': 't0 arrival court / Fay: avatar entered the world boundary-visible\\nt1 arrival court / Fay: asked schedule: sort herbs\\nt2 arrival court / Fay: borrowed tool; debt increases\\nt3 arrival court / Fay: waited offscreen; resident progress advanced\\nt4 arrival court / Fay: interruptWork\\nt5 arrival court / Fay: apologizeToResident\\nt6 arrival court / Fay: giveSpace\\nt7 arrival court / Fay: completeTrustRepair\\nt8 arrival court / Fay: saved local snapshot\\nt9 arrival court / Fay: prepared replay export rows=9 bytes=1927\\nt10 arrival court / Fay: runContinuityLoop', 'trustRepairOut': 'Selected: Fay | trust 0.624 | debt 0 | progress 0.559\\nState: repair completed through concrete help\\nRecent public history:\\nt2 state update: avatar borrowed tool -> trust 0.612 debt 1 progress 0.5\\nt3 state update: trust/debt/progress changed -> trust 0.614 debt 1 progress 0.521\\nt4 trust wound: avatar interrupted work during sort herbs -> trust 0.554 debt 1 progress 0.521\\nt5 trust repair: avatar apologized and named the interruption -> trust 0.578 debt 1 progress 0.521\\nt6 trust repair: avatar gave space and let work continue -> trust 0.59 debt 1 progress 0.531\\nt7 trust repair: avatar repaired trust with concrete help -> trust 0.624 debt 0 progress 0.559', 'url': 'http://127.0.0.1:8774/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63'}",
+      "failure_if_false": "continuity-loop state did not survive leave/resume",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "browser workflow produced runtime console errors",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_loop_coverage_score": 1.0,
+    "console_errors": 0,
+    "continuity_loop_panel_score": 1.0,
+    "criterion_count": 10,
+    "readiness": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-315: keep folding review affordances into the single primary shell until a reviewer can use one URL to enter, affect residents, leave, resume, inspect history, inspect replay, and understand what changed without reading raw JSON",
+  "prefix": "ssrm_3d_browser_world_v75_primary_demo_continuity_loop",
+  "report": 315,
+  "required_events": [
+    "enterWorld",
+    "askSchedule",
+    "borrowTool",
+    "waitOffscreen",
+    "interruptWork",
+    "apologizeToResident",
+    "giveSpace",
+    "completeTrustRepair",
+    "saveWorld",
+    "exportReplay",
+    "runContinuityLoop"
+  ],
+  "seed": 20270713,
+  "verdict": "pass"
+}

@@ -221,6 +221,7 @@ def _app_html() -> str:
       <article class="panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
       <article class="panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
       <article class="panel"><h2>Trust repair scenario</h2><div class="trust-repair-actions"><button data-action="interruptWork">Interrupt work</button><button data-action="apologizeToResident">Apologize</button><button data-action="giveSpace">Give space</button><button data-action="completeTrustRepair">Repair with help</button></div><pre id="trustRepairOut"></pre></article>
+      <article class="panel"><h2>Continuity loop</h2><div class="continuity-loop-actions"><button data-action="runContinuityLoop">Run continuity loop</button></div><pre id="continuityLoopOut"></pre></article>
       <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
       <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
@@ -275,6 +276,7 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .resident-action-row strong { font-size: 0.92rem; }
 .resident-action-row button { padding: 7px 8px; font-size: 0.82rem; }
 .trust-repair-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.continuity-loop-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -547,6 +549,32 @@ function completeTrustRepair() {{
   mutateResident(world.selected, {{ trust: 0.034, debt: -1, progress: 0.028, memory: 'avatar repaired trust with concrete help', historyEvent: 'trust repair', historyDetail: 'avatar repaired trust with concrete help' }});
   return log('completeTrustRepair', {{ repairStep: 'concrete help', trustDelta: 0.034, nonMagic: true }});
 }}
+function runContinuityLoop() {{
+  world.selected = 'Fay';
+  residentSelect.value = 'Fay';
+  const beforeRows = world.replay.length;
+  enterWorld();
+  askSchedule();
+  borrowTool();
+  waitOffscreen();
+  interruptWork();
+  apologizeToResident();
+  giveSpace();
+  completeTrustRepair();
+  saveWorld();
+  exportReplay();
+  recordCheckpoint('continuity loop complete');
+  return log('runContinuityLoop', {{
+    scenario: 'arrival schedule debt offscreen trust-repair save resume replay',
+    resident: world.selected,
+    beforeRows,
+    afterRows: world.replay.length,
+    sameSurface: true,
+    saved: true,
+    replayPrepared: true,
+    nonMagicRepair: true
+  }});
+}}
 function formatTrustRepairStatus() {{
   const resident = currentResident();
   const rows = readResidentHistory()[world.selected] || [];
@@ -554,6 +582,25 @@ function formatTrustRepairStatus() {{
   const repairState = resident.memory.includes('interrupted') ? 'wound visible; apology/space/help can repair' : resident.memory.includes('repaired trust') ? 'repair completed through concrete help' : resident.memory.includes('apologized') || resident.memory.includes('gave space') ? 'repair in progress' : 'no active trust wound';
   return `Selected: ${{world.selected}} | trust ${{resident.trust.toFixed(3)}} | debt ${{resident.debt}} | progress ${{resident.progress.toFixed(3)}}\nState: ${{repairState}}\nRecent public history:
 ${{recent || 'no trust repair events yet'}}`;
+}}
+function formatContinuityLoopStatus() {{
+  const required = ['enterWorld', 'askSchedule', 'borrowTool', 'waitOffscreen', 'interruptWork', 'apologizeToResident', 'giveSpace', 'completeTrustRepair', 'saveWorld', 'exportReplay', 'runContinuityLoop'];
+  const events = world.replay.map(row => row.event);
+  const present = required.filter(event => events.includes(event));
+  const resident = currentResident();
+  const rows = readResidentHistory()[world.selected] || [];
+  const checkpoints = readCheckpoints();
+  const exportBytes = (localStorage.getItem(EXPORT_KEY) || '').length;
+  const recentEvents = world.replay.slice(-12).map(row => `t${{row.tick}} ${{row.event}}`).join('\\n');
+  const publicHistory = rows.slice(-6).map(row => `t${{row.tick}} ${{row.event}}: ${{row.detail}}`).join('\\n');
+  return `Selected: ${{world.selected}} | entered=${{world.entered}} | room=${{world.avatar.room}}
+Loop coverage: ${{present.length}}/${{required.length}} -> ${{present.join(', ')}}
+Resident: ${{resident.schedule}} | debt ${{resident.debt}} | trust ${{resident.trust.toFixed(3)}} | progress ${{resident.progress.toFixed(3)}} | memory: ${{resident.memory}}
+Continuity signals: history ${{rows.length}} | checkpoints ${{checkpoints.length}} | replay rows ${{world.replay.length}} | export bytes ${{exportBytes}}
+Recent loop events:
+${{recentEvents || 'run the continuity loop to create an integrated sequence'}}
+Recent selected-resident history:
+${{publicHistory || 'no selected-resident history yet'}}`;
 }}
 function formatResidentActionButtons() {{
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${{name}}</strong><button type="button" data-dashboard-select="${{name}}">Select</button><button type="button" data-dashboard-help="${{name}}">Help</button><button type="button" data-dashboard-borrow="${{name}}">Borrow</button><button type="button" data-dashboard-return="${{name}}">Return</button></div>`).join('');
@@ -695,6 +742,7 @@ function render() {{
   document.getElementById('residentDashboardOut').textContent = formatResidentDashboard();
   document.getElementById('residentActionButtons').innerHTML = formatResidentActionButtons();
   document.getElementById('trustRepairOut').textContent = formatTrustRepairStatus();
+  document.getElementById('continuityLoopOut').textContent = formatContinuityLoopStatus();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${{task.id}}</strong>: ${{task.title}}<br><span>${{task.expected}}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -725,7 +773,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop }});
 bindControls();
 render();
 """

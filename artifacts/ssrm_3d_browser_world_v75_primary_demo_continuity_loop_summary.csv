@@ -1,0 +1,7 @@
+metric,value
+readiness,1.0
+weakest_channel_score,1.0
+continuity_loop_panel_score,1.0
+browser_loop_coverage_score,1.0
+console_errors,0
+criterion_count,10

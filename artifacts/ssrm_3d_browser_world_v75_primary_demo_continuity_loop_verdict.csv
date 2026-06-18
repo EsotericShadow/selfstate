@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_loop_coverage_score,next_gate
+315,pass,1.0,1.0,1.0,"post-315: keep folding review affordances into the single primary shell until a reviewer can use one URL to enter, affect residents, leave, resume, inspect history, inspect replay, and understand what changed without reading raw JSON"

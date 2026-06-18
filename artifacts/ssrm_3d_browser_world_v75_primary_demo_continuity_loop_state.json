@@ -1,0 +1,20 @@
+{
+  "boundary": "Deterministic browser-local continuity-loop consolidation only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The loop demonstrates public state continuity, not inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v75_primary_demo_continuity_loop_browser_evidence.json",
+  "maintained_shell": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+  "report": 315,
+  "required_events": [
+    "enterWorld",
+    "askSchedule",
+    "borrowTool",
+    "waitOffscreen",
+    "interruptWork",
+    "apologizeToResident",
+    "giveSpace",
+    "completeTrustRepair",
+    "saveWorld",
+    "exportReplay",
+    "runContinuityLoop"
+  ],
+  "seed": 20270713
+}

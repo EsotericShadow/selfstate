@@ -16,6 +16,8 @@ Report 313 makes that dashboard actionable with per-resident Select/Help/Borrow/
 
 Report 314 adds a bounded recoverable trust-repair scenario to the same shell: interruption creates a visible public trust wound, while apology, giving space, and concrete help repair it through the existing dashboard/history loop. This is not suffering-maximization; it is a visible consequence and recovery path.
 
+Report 315 adds one continuity-loop walkthrough to the same maintained shell, tying arrival, schedule inspection, debt consequence, offscreen activity, trust repair, save/resume, and replay/export visibility into one reviewer-facing sequence. This is still public browser-local state continuity, not subjective experience or finished gameplay.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

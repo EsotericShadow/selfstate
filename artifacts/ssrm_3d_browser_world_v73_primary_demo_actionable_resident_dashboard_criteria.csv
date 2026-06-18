@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+dashboard_actions_panel_present,True,1.0,maintained shell exposes dashboard action controls,dashboard would remain read-only and force reviewers back to separate controls
+generated_source_of_truth,True,1.0,actionable dashboard logic lives in the v61 generator,regeneration would erase the actionable dashboard
+routes_to_existing_mechanics,True,1.0,dashboard actions route through existing selected-resident consequence functions,dashboard actions could become parallel mechanics
+all_action_buttons_rendered,True,1.0,dashboard renders Select/Help/Borrow/Return for each resident,reviewers would not be able to act from the dashboard across all consequence types
+browser_workflow,True,1.0,browser workflow pass recorded as True,source checks alone would not prove the dashboard actions work in a browser
+browser_select_action,True,1.0,"{'selectedFay': True, 'dashboardMarksFay': True, 'traceSelectionEventVisible': True}",dashboard Select would not update selected resident visibly
+browser_help_action,True,1.0,"{'selectedFayAfterHelp': True, 'fayMemoryHelped': True, 'fayHistoryCountUpdated': True, 'progressVisible': True}",dashboard Help would not affect resident progress/trust/history through the existing loop
+browser_borrow_return_action,True,1.0,"{'selectedMiloAfterReturn': True, 'miloBorrowedHistory': True, 'miloReturnedHistory': True, 'miloDashboardMemory': True, 'debtTrustVisible': True}",dashboard Borrow/Return would not affect debt/trust/history through the existing loop
+browser_resume_persistence,True,1.0,"{'resumedWithoutReset': True, 'selectedMiloPersists': True, 'fayHelpPersists': True, 'miloReturnPersists': True, 'actionButtonsStillPresent': True}",dashboard action consequences would not persist through leave/return
+console_clean,True,1.0,browser console error count was 0,browser workflow produced runtime console errors

@@ -9,6 +9,7 @@
 | Primary demo session transcript needs readable debug continuity | Report 310 adds transcript and checkpoint panels derived from public replay/save/restore state and verifies them in browser. | Readability hardening only; it does not create new agent autonomy, private experience, or production persistence. |
 | Primary demo resident history lane needs readable resident continuity | Report 311 adds bounded public resident-history rows for trust, debt, progress, and memory updates and verifies selected/offscreen/resume continuity in browser. | Public browser-local continuity only; it does not prove subjective memory or moral patienthood. |
 | Primary demo unified resident dashboard needs schedule/debt/care readability | Report 312 adds a cross-resident dashboard for schedule, progress, debt, trust, memory, history count, and care/resources, then verifies initial, consequence, offscreen, and resume updates in browser. | Public browser-local dashboard only; it does not create new autonomy or production persistence. |
+| Primary demo actionable resident dashboard needs consequence actions in the same surface | Report 313 adds per-resident Select/Help/Borrow/Return controls to the dashboard and verifies they route through existing consequence/history loops in browser. | Actionability hardening only; it does not create open-ended agency or subjective resident intent. |
 
 This file links the research claims to current evidence, counterevidence, and next falsifiers.
 

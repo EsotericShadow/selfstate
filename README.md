@@ -30,6 +30,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo session transcript report](docs/310_ssrm_3d_browser_world_v70_primary_demo_session_transcript_report.md): adds reviewer-readable transcript and checkpoint panels derived from public replay/save/restore state.
 - [Primary demo resident history lane report](docs/311_ssrm_3d_browser_world_v71_primary_demo_resident_history_lane_report.md): adds a compact public resident-history lane for trust, debt, progress, and memory continuity.
 - [Primary demo unified resident dashboard report](docs/312_ssrm_3d_browser_world_v72_primary_demo_unified_resident_dashboard_report.md): adds one cross-resident schedule/debt/care dashboard over existing public resident/resource state.
+- [Primary demo actionable resident dashboard report](docs/313_ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_report.md): adds per-resident Select/Help/Borrow/Return dashboard controls wired to existing consequence functions.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

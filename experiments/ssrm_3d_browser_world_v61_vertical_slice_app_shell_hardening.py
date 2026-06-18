@@ -219,6 +219,7 @@ def _app_html() -> str:
       <article class="panel"><h2>Checkpoints</h2><pre id="checkpointOut"></pre></article>
       <article class="panel"><h2>Resident history</h2><pre id="residentHistoryOut"></pre></article>
       <article class="panel"><h2>Resident dashboard</h2><pre id="residentDashboardOut"></pre></article>
+      <article class="panel"><h2>Dashboard actions</h2><div id="residentActionButtons" class="resident-action-grid"></div></article>
       <article class="panel"><h2>Playtest tasks</h2><ol id="taskList"></ol></article>
       <article class="panel"><h2>QA manifest</h2><pre id="qaManifestOut"></pre></article>
     </section>
@@ -268,6 +269,10 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 .dashboard span { display: block; margin-top: 6px; }
 .trace-grid { display: grid; grid-template-columns: 1.1fr 0.9fr 1fr; gap: 16px; margin-top: 16px; }
 pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 12px; padding: 12px; background: rgba(17, 24, 22, 0.9); color: #f9ebc9; }
+.resident-action-grid { display: grid; gap: 10px; }
+.resident-action-row { display: grid; grid-template-columns: 72px repeat(4, minmax(0, 1fr)); gap: 6px; align-items: center; padding: 8px; border-radius: 14px; background: rgba(245, 232, 199, 0.72); }
+.resident-action-row strong { font-size: 0.92rem; }
+.resident-action-row button { padding: 7px 8px; font-size: 0.82rem; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -474,6 +479,19 @@ function bindControls() {{
   residentSelect.innerHTML = Object.keys(world.residents).map(name => `<option value="${{name}}">${{name}}</option>`).join('');
   residentSelect.value = world.selected;
   residentSelect.addEventListener('change', () => {{ world.selected = residentSelect.value; log('selectResident', {{ selected: world.selected }}); }});
+  const dashboardActions = document.getElementById('residentActionButtons');
+  dashboardActions.addEventListener('click', event => {{
+    const target = event.target;
+    if (!target || typeof target.getAttribute !== 'function') return;
+    const selectName = target.getAttribute('data-dashboard-select');
+    const helpName = target.getAttribute('data-dashboard-help');
+    const borrowName = target.getAttribute('data-dashboard-borrow');
+    const returnName = target.getAttribute('data-dashboard-return');
+    if (selectName) runDashboardResidentAction(selectName, 'select');
+    if (helpName) runDashboardResidentAction(helpName, 'help');
+    if (borrowName) runDashboardResidentAction(borrowName, 'borrow');
+    if (returnName) runDashboardResidentAction(returnName, 'return');
+  }});
   canvas.addEventListener('click', event => {{
     const rect = canvas.getBoundingClientRect();
     world.avatar.x = Math.round((event.clientX - rect.left) * canvas.width / rect.width);
@@ -510,6 +528,19 @@ function recordResidentHistory(name, event, detail) {{
   history[name] = rows.slice(-14);
   localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   return history;
+}}
+function formatResidentActionButtons() {{
+  return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${{name}}</strong><button type="button" data-dashboard-select="${{name}}">Select</button><button type="button" data-dashboard-help="${{name}}">Help</button><button type="button" data-dashboard-borrow="${{name}}">Borrow</button><button type="button" data-dashboard-return="${{name}}">Return</button></div>`).join('');
+}}
+function runDashboardResidentAction(name, action) {{
+  if (!world.residents[name]) return null;
+  world.selected = name;
+  residentSelect.value = name;
+  if (action === 'select') return log('dashboardSelectResident', {{ selected: name }});
+  if (action === 'help') return offerHelp();
+  if (action === 'borrow') return borrowTool();
+  if (action === 'return') return returnTool();
+  return null;
 }}
 function formatResidentDashboard() {{
   const history = readResidentHistory();
@@ -636,6 +667,7 @@ function render() {{
   document.getElementById('checkpointOut').textContent = formatCheckpointLog();
   document.getElementById('residentHistoryOut').textContent = formatResidentHistory();
   document.getElementById('residentDashboardOut').textContent = formatResidentDashboard();
+  document.getElementById('residentActionButtons').innerHTML = formatResidentActionButtons();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${{task.id}}</strong>: ${{task.title}}<br><span>${{task.expected}}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -666,7 +698,7 @@ function draw() {{
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }}
 
-Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks }});
+Object.assign(window, {{ enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction }});
 bindControls();
 render();
 """

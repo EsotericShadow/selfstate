@@ -195,6 +195,19 @@ function bindControls() {
   residentSelect.innerHTML = Object.keys(world.residents).map(name => `<option value="${name}">${name}</option>`).join('');
   residentSelect.value = world.selected;
   residentSelect.addEventListener('change', () => { world.selected = residentSelect.value; log('selectResident', { selected: world.selected }); });
+  const dashboardActions = document.getElementById('residentActionButtons');
+  dashboardActions.addEventListener('click', event => {
+    const target = event.target;
+    if (!target || typeof target.getAttribute !== 'function') return;
+    const selectName = target.getAttribute('data-dashboard-select');
+    const helpName = target.getAttribute('data-dashboard-help');
+    const borrowName = target.getAttribute('data-dashboard-borrow');
+    const returnName = target.getAttribute('data-dashboard-return');
+    if (selectName) runDashboardResidentAction(selectName, 'select');
+    if (helpName) runDashboardResidentAction(helpName, 'help');
+    if (borrowName) runDashboardResidentAction(borrowName, 'borrow');
+    if (returnName) runDashboardResidentAction(returnName, 'return');
+  });
   canvas.addEventListener('click', event => {
     const rect = canvas.getBoundingClientRect();
     world.avatar.x = Math.round((event.clientX - rect.left) * canvas.width / rect.width);
@@ -231,6 +244,19 @@ function recordResidentHistory(name, event, detail) {
   history[name] = rows.slice(-14);
   localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   return history;
+}
+function formatResidentActionButtons() {
+  return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${name}</strong><button type="button" data-dashboard-select="${name}">Select</button><button type="button" data-dashboard-help="${name}">Help</button><button type="button" data-dashboard-borrow="${name}">Borrow</button><button type="button" data-dashboard-return="${name}">Return</button></div>`).join('');
+}
+function runDashboardResidentAction(name, action) {
+  if (!world.residents[name]) return null;
+  world.selected = name;
+  residentSelect.value = name;
+  if (action === 'select') return log('dashboardSelectResident', { selected: name });
+  if (action === 'help') return offerHelp();
+  if (action === 'borrow') return borrowTool();
+  if (action === 'return') return returnTool();
+  return null;
 }
 function formatResidentDashboard() {
   const history = readResidentHistory();
@@ -357,6 +383,7 @@ function render() {
   document.getElementById('checkpointOut').textContent = formatCheckpointLog();
   document.getElementById('residentHistoryOut').textContent = formatResidentHistory();
   document.getElementById('residentDashboardOut').textContent = formatResidentDashboard();
+  document.getElementById('residentActionButtons').innerHTML = formatResidentActionButtons();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -387,6 +414,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction });
 bindControls();
 render();

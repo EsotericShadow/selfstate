@@ -12,6 +12,8 @@ Report 311 adds a compact resident-history lane to the maintained shell, recordi
 
 Report 312 adds a unified resident dashboard to the maintained shell, showing every resident's schedule, progress, debt, trust, memory, recent-history count, and care/resource pressure in one view. This is still browser-local readability consolidation, not a new simulation organ.
 
+Report 313 makes that dashboard actionable with per-resident Select/Help/Borrow/Return controls routed through existing consequence functions. It keeps action, memory, debt, trust, and history updates on the same primary surface rather than creating a parallel mechanic.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

@@ -1,0 +1,221 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_criteria.csv",
+    "report": "docs/313_ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local actionable-dashboard hardening only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim.",
+  "browser_evidence": {
+    "after_borrow": {
+      "actionButtonCount": 24,
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 5\n  Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.580 | history  0 | stable | memory: met avatar at arrival court\n  Fay   | sort herbs       | progress 0.535 | debt  0 | trust 0.654 | history  1 | stable | memory: avatar helped with sort herbs\n* Milo  | carry water      | progress 0.240 | debt  3 | trust 0.462 | history  1 | debt pressure | memory: avatar borrowed tool\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "3 / trust 0.462",
+      "history": "Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n  Fay now: debt 0 / trust 0.654 / progress 0.535 / memory: avatar helped with sort herbs\n  t1 state update: avatar helped with sort herbs -> debt 0 trust 0.654 progress 0.535\n* Milo now: debt 3 / trust 0.462 / progress 0.240 / memory: avatar borrowed tool\n  t2 state update: avatar borrowed tool -> debt 3 trust 0.462 progress 0.24\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after borrow Milo",
+      "memory": "avatar borrowed tool",
+      "schedule": "carry water / progress 0.240",
+      "selected": "Milo",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "url": "http://localhost:8772/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "after_help": {
+      "actionButtonCount": 24,
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 5\n  Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.580 | history  0 | stable | memory: met avatar at arrival court\n* Fay   | sort herbs       | progress 0.535 | debt  0 | trust 0.654 | history  1 | stable | memory: avatar helped with sort herbs\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "0 / trust 0.654",
+      "history": "Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n* Fay now: debt 0 / trust 0.654 / progress 0.535 / memory: avatar helped with sort herbs\n  t1 state update: avatar helped with sort herbs -> debt 0 trust 0.654 progress 0.535\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after help Fay",
+      "memory": "avatar helped with sort herbs",
+      "schedule": "sort herbs / progress 0.535",
+      "selected": "Fay",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "url": "http://localhost:8772/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "after_return": {
+      "actionButtonCount": 24,
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 5\n  Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.580 | history  0 | stable | memory: met avatar at arrival court\n  Fay   | sort herbs       | progress 0.535 | debt  0 | trust 0.654 | history  1 | stable | memory: avatar helped with sort herbs\n* Milo  | carry water      | progress 0.240 | debt  2 | trust 0.484 | history  2 | debt pressure | memory: avatar returned tool\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "2 / trust 0.484",
+      "history": "Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n  Fay now: debt 0 / trust 0.654 / progress 0.535 / memory: avatar helped with sort herbs\n  t1 state update: avatar helped with sort herbs -> debt 0 trust 0.654 progress 0.535\n* Milo now: debt 2 / trust 0.484 / progress 0.240 / memory: avatar returned tool\n  t2 state update: avatar borrowed tool -> debt 3 trust 0.462 progress 0.24\n  t3 state update: avatar returned tool -> debt 2 trust 0.484 progress 0.24\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after return Milo",
+      "memory": "avatar returned tool",
+      "schedule": "carry water / progress 0.240",
+      "selected": "Milo",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "url": "http://localhost:8772/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "after_select": {
+      "actionButtonCount": 24,
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 6\n  Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.580 | history  0 | stable | memory: met avatar at arrival court\n* Fay   | sort herbs       | progress 0.500 | debt  0 | trust 0.630 | history  0 | stable | memory: warned about wet route\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "0 / trust 0.630",
+      "history": "Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n* Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after select Fay",
+      "memory": "warned about wet route",
+      "schedule": "sort herbs / progress 0.500",
+      "selected": "Fay",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "url": "http://localhost:8772/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "borrow_return_action_evidence": {
+      "debtTrustVisible": true,
+      "miloBorrowedHistory": true,
+      "miloDashboardMemory": true,
+      "miloReturnedHistory": true,
+      "selectedMiloAfterReturn": true
+    },
+    "borrow_return_action_pass": true,
+    "boundary_pass": true,
+    "clean_origin_strategy": "localhost:8772 clean origin for actionable resident dashboard validation",
+    "console_error_details": [],
+    "console_errors": 0,
+    "help_action_evidence": {
+      "fayHistoryCountUpdated": true,
+      "fayMemoryHelped": true,
+      "progressVisible": true,
+      "selectedFayAfterHelp": true
+    },
+    "help_action_pass": true,
+    "initial_state": {
+      "actionButtonCount": 24,
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 6\n* Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.580 | history  0 | stable | memory: met avatar at arrival court\n  Fay   | sort herbs       | progress 0.500 | debt  0 | trust 0.630 | history  0 | stable | memory: warned about wet route\n  Milo  | carry water      | progress 0.240 | debt  2 | trust 0.480 | history  0 | debt pressure | memory: tool loan pending\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "1 / trust 0.580",
+      "history": "* Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n  Fay now: debt 0 / trust 0.630 / progress 0.500 / memory: warned about wet route\n  no recorded public interaction history yet\n  Milo now: debt 2 / trust 0.480 / progress 0.240 / memory: tool loan pending\n  no recorded public interaction history yet\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "initial",
+      "memory": "met avatar at arrival court",
+      "schedule": "repair awning / progress 0.360",
+      "selected": "Ari",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "url": "http://localhost:8772/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "raw_console_error_count": 0,
+    "report": 313,
+    "resume_action_evidence": {
+      "actionButtonsStillPresent": true,
+      "fayHelpPersists": true,
+      "miloReturnPersists": true,
+      "resumedWithoutReset": true,
+      "selectedMiloPersists": true
+    },
+    "resume_action_pass": true,
+    "resumed_state": {
+      "actionButtonCount": 24,
+      "dashboard": "Resources: water 12 / fiber 10 / wood 17 / care 5\n  Ari   | repair awning    | progress 0.360 | debt  1 | trust 0.580 | history  0 | stable | memory: met avatar at arrival court\n  Fay   | sort herbs       | progress 0.535 | debt  0 | trust 0.654 | history  1 | stable | memory: avatar helped with sort herbs\n* Milo  | carry water      | progress 0.240 | debt  2 | trust 0.484 | history  2 | debt pressure | memory: avatar returned tool\n  Sera  | dry cloaks       | progress 0.420 | debt  1 | trust 0.540 | history  0 | stable | memory: asked for quiet\n  Tovan | map safe route   | progress 0.390 | debt  1 | trust 0.510 | history  0 | trust fragile | memory: keeps route tokens\n  Nia   | sort glass jars  | progress 0.470 | debt  0 | trust 0.610 | history  0 | stable | memory: remembers quiet greeting",
+      "debt": "2 / trust 0.484",
+      "history": "Ari now: debt 1 / trust 0.580 / progress 0.360 / memory: met avatar at arrival court\n  no recorded public interaction history yet\n  Fay now: debt 0 / trust 0.654 / progress 0.535 / memory: avatar helped with sort herbs\n  t1 state update: avatar helped with sort herbs -> debt 0 trust 0.654 progress 0.535\n* Milo now: debt 2 / trust 0.484 / progress 0.240 / memory: avatar returned tool\n  t2 state update: avatar borrowed tool -> debt 3 trust 0.462 progress 0.24\n  t3 state update: avatar returned tool -> debt 2 trust 0.484 progress 0.24\n  Sera now: debt 1 / trust 0.540 / progress 0.420 / memory: asked for quiet\n  no recorded public interaction history yet\n  Tovan now: debt 1 / trust 0.510 / progress 0.390 / memory: keeps route tokens\n  no recorded public interaction history yet\n  Nia now: debt 0 / trust 0.610 / progress 0.470 / memory: remembers quiet greeting\n  no recorded public interaction history yet",
+      "label": "after resume",
+      "memory": "avatar returned tool",
+      "schedule": "carry water / progress 0.240",
+      "selected": "Milo",
+      "traceHasLlmTranscript": false,
+      "traceHasPrivateWorkspace": false,
+      "traceHasSubjectiveFeeling": false,
+      "url": "http://localhost:8772/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "select_action_evidence": {
+      "dashboardMarksFay": true,
+      "selectedFay": true,
+      "traceSelectionEventVisible": true
+    },
+    "select_action_pass": true,
+    "url_start": "http://localhost:8772/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "workflow_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "dashboard_actions_panel_present",
+      "evidence": "maintained shell exposes dashboard action controls",
+      "failure_if_false": "dashboard would remain read-only and force reviewers back to separate controls",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generated_source_of_truth",
+      "evidence": "actionable dashboard logic lives in the v61 generator",
+      "failure_if_false": "regeneration would erase the actionable dashboard",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "routes_to_existing_mechanics",
+      "evidence": "dashboard actions route through existing selected-resident consequence functions",
+      "failure_if_false": "dashboard actions could become parallel mechanics",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "all_action_buttons_rendered",
+      "evidence": "dashboard renders Select/Help/Borrow/Return for each resident",
+      "failure_if_false": "reviewers would not be able to act from the dashboard across all consequence types",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_workflow",
+      "evidence": "browser workflow pass recorded as True",
+      "failure_if_false": "source checks alone would not prove the dashboard actions work in a browser",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_select_action",
+      "evidence": "{'selectedFay': True, 'dashboardMarksFay': True, 'traceSelectionEventVisible': True}",
+      "failure_if_false": "dashboard Select would not update selected resident visibly",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_help_action",
+      "evidence": "{'selectedFayAfterHelp': True, 'fayMemoryHelped': True, 'fayHistoryCountUpdated': True, 'progressVisible': True}",
+      "failure_if_false": "dashboard Help would not affect resident progress/trust/history through the existing loop",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_borrow_return_action",
+      "evidence": "{'selectedMiloAfterReturn': True, 'miloBorrowedHistory': True, 'miloReturnedHistory': True, 'miloDashboardMemory': True, 'debtTrustVisible': True}",
+      "failure_if_false": "dashboard Borrow/Return would not affect debt/trust/history through the existing loop",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_resume_persistence",
+      "evidence": "{'resumedWithoutReset': True, 'selectedMiloPersists': True, 'fayHelpPersists': True, 'miloReturnPersists': True, 'actionButtonsStillPresent': True}",
+      "failure_if_false": "dashboard action consequences would not persist through leave/return",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "browser workflow produced runtime console errors",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_workflow_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "dashboard_actions_score": 1.0,
+    "readiness": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-313: use the actionable resident dashboard for a full reviewer pass; if it is usable, the next consolidation should focus on clearer recoverable-harm/trust-repair scenarios within the same shell",
+  "prefix": "ssrm_3d_browser_world_v73_primary_demo_actionable_resident_dashboard",
+  "report": 313,
+  "seed": 20270711,
+  "verdict": "pass"
+}

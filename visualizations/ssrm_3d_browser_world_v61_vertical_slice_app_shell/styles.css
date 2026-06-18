@@ -36,6 +36,10 @@ select { width: 100%; padding: 10px; border-radius: 14px; border: 1px solid rgba
 .dashboard span { display: block; margin-top: 6px; }
 .trace-grid { display: grid; grid-template-columns: 1.1fr 0.9fr 1fr; gap: 16px; margin-top: 16px; }
 pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 12px; padding: 12px; background: rgba(17, 24, 22, 0.9); color: #f9ebc9; }
+.resident-action-grid { display: grid; gap: 10px; }
+.resident-action-row { display: grid; grid-template-columns: 72px repeat(4, minmax(0, 1fr)); gap: 6px; align-items: center; padding: 8px; border-radius: 14px; background: rgba(245, 232, 199, 0.72); }
+.resident-action-row strong { font-size: 0.92rem; }
+.resident-action-row button { padding: 7px 8px; font-size: 0.82rem; }
 @media (max-width: 980px) {
   .layout, .trace-grid { grid-template-columns: 1fr; }
   .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }

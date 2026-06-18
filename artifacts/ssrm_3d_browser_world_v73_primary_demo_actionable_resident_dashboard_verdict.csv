@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_workflow_score,next_gate
+313,pass,1.0,1.0,1.0,"post-313: use the actionable resident dashboard for a full reviewer pass; if it is usable, the next consolidation should focus on clearer recoverable-harm/trust-repair scenarios within the same shell"

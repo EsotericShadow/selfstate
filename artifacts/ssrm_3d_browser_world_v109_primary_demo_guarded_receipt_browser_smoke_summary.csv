@@ -1,0 +1,2 @@
+report,seed,verdict,readiness,weakest_channel_score,source_guard_score,browser_artifact_score,surface_discipline_score,browser_interaction_score,download_guard_score,payload_evidence_score,runtime_hygiene_score,source_binding_score,generator_durability_score,runner_index_score,claim_hygiene_score,console_error_count,download_event_observed,export_click_attempt_recorded,criterion_count
+349,20270747,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,0.0,1.0,16

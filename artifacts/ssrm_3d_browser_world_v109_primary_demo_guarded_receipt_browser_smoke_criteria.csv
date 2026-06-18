@@ -1,0 +1,17 @@
+name,passed,score,channel,detail
+guard_source_artifacts_available_and_passing,True,1.0,source guard,Report 348 guard results and contract exist and pass.
+browser_smoke_artifact_exists,True,1.0,browser artifact,Browser smoke artifact exists and is tagged as Report 349.
+browser_smoke_used_localhost_primary_launcher,True,1.0,browser artifact,Smoke ran in the in-app browser against the localhost primary launcher.
+browser_smoke_used_maintained_surface,True,1.0,surface discipline,"Smoke used the primary launcher and maintained v61 shell target, not a parallel surface."
+browser_smoke_clicked_clean_launch_and_returned,True,1.0,browser interaction,"Smoke clicked clean launch to create a real launch handoff, then returned to the launcher."
+browser_smoke_prepared_combined_handoff,True,1.0,browser interaction,Smoke clicked Prepare outside-review handoff and produced a combined receipt payload.
+initial_download_was_guarded_before_override,True,1.0,download guard,"Before debug override, normal download was blocked and recorderExport was missing."
+debug_override_enabled_download_path,True,1.0,download guard,"After toggling debug override, the incomplete download path became available and explicitly marked debug override."
+final_payload_records_debug_override_gate,True,1.0,payload evidence,"Final stored payload records debug override export, download enabled, and normal gate not allowed."
+final_payload_keeps_required_receipt_fields,True,1.0,payload evidence,Final payload status and guard contract cover all six combined receipt fields.
+browser_export_link_click_attempt_recorded,True,1.0,browser interaction,Smoke clicked the debug-override handoff export link and recorded either a download event or the in-app browser download limitation.
+browser_console_clean,True,1.0,runtime hygiene,Browser console errors observed: 0.
+source_persists_override_gate_in_payload,True,1.0,source binding,Launcher source persists the current download gate back into the stored handoff payload.
+generator_preserves_override_gate_persistence,True,1.0,generator durability,v63 generator preserves download-gate persistence in regenerated launchers.
+experiment_index_includes_browser_smoke_report,True,1.0,runner index,Experiment runner index includes the Report 349 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects hosted URL, production persistence, autonomous language, consciousness, moral patienthood, complete engine, and finished gameplay claims."

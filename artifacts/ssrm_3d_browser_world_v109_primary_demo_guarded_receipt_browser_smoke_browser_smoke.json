@@ -1,0 +1,648 @@
+{
+  "report": 349,
+  "browser": "in_app_browser",
+  "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+  "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html",
+  "afterCleanUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63",
+  "cleanLaunchClicked": true,
+  "returnedToLauncher": true,
+  "prepareOutsideReviewClicked": true,
+  "parallelSurfaceCreated": false,
+  "evidenceSource": "browser-visible outsideReviewHandoffOut JSON preview",
+  "initialGate": {
+    "blockedText": "Download blocked: missing recorderExport. Check debug override to export an incomplete review packet.",
+    "downloadLinkCount": 0,
+    "missing": [
+      "recorderExport"
+    ],
+    "payload": {
+      "boundary": "outside-review-handoff-public-local-only",
+      "checklistState": {
+        "items": {},
+        "updatedAt": null
+      },
+      "combinedReceiptDownloadGate": {
+        "allowed": false,
+        "blockingPhase": "none",
+        "boundary": "combined-receipt-download-gate-browser-local-only",
+        "debugOverride": false,
+        "downloadEnabled": false,
+        "includedCount": 5,
+        "missing": [
+          "recorderExport"
+        ],
+        "reportIntroduced": 348,
+        "totalCount": 6
+      },
+      "combinedReceiptIncludes": [
+        "shellEvidence",
+        "reviewedHandoffCompletion",
+        "manualRecords",
+        "defects",
+        "recorderExport",
+        "lifecyclePreflightPacket"
+      ],
+      "combinedReceiptReportIntroduced": 346,
+      "combinedReceiptStatus": {
+        "blockingPhase": "none",
+        "boundary": "combined-outside-review-receipt-status-browser-local-only",
+        "fields": {
+          "defects": true,
+          "lifecyclePreflightPacket": true,
+          "manualRecords": true,
+          "recorderExport": false,
+          "reviewedHandoffCompletion": true,
+          "shellEvidence": true
+        },
+        "includedCount": 5,
+        "missing": [
+          "recorderExport"
+        ],
+        "ready": false,
+        "reportIntroduced": 347,
+        "totalCount": 6
+      },
+      "defects": [],
+      "handoff": {
+        "boundary": "primary-demo-launcher-only",
+        "kind": "clean",
+        "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "recordedAt": "2026-06-18T10:59:25.923Z",
+        "report": 303,
+        "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "launchUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "lifecyclePreflightPacket": {
+        "action": "outside-review-handoff",
+        "blockingPhase": "none",
+        "boundary": "lifecycle-preflight-packet-browser-local-artifact-status-only",
+        "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+        "freshness": "Report 342 runner results pass; Report 343 entrypoint wiring pass",
+        "phaseCount": 6,
+        "phaseStatuses": {
+          "closed_origin_tab_continuity": "pass",
+          "cross_tab_prepared_resume_visible": "pass",
+          "hard_reload_continuity": "pass",
+          "repaired_continue_return_refresh": "pass",
+          "stale_reprepare_repair": "pass",
+          "stale_supersession_calibration": "pass"
+        },
+        "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+        "preparedAt": "2026-06-18T10:59:26.190Z",
+        "reportIntroduced": 345,
+        "sources": {
+          "manifest": "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+          "report": "../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md",
+          "results": "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+          "sourceMarker": "report-342-results+report-343-wiring"
+        }
+      },
+      "lifecyclePreflightPacketPrepared": true,
+      "lifecyclePreflightPacketSource": "ssrm_primary_demo_lifecycle_preflight_packet",
+      "manualRecords": [],
+      "previewCombinedReceiptDownloadGate": "[Circular]",
+      "previewCombinedReceiptStatus": {
+        "blockingPhase": "none",
+        "boundary": "combined-outside-review-receipt-status-browser-local-only",
+        "fields": {
+          "defects": true,
+          "lifecyclePreflightPacket": true,
+          "manualRecords": true,
+          "recorderExport": false,
+          "reviewedHandoffCompletion": true,
+          "shellEvidence": true
+        },
+        "includedCount": 5,
+        "missing": "[Circular]",
+        "ready": false,
+        "reportIntroduced": 347,
+        "totalCount": 6
+      },
+      "previewFreshness": {
+        "boundary": "outside-review-handoff-freshness-public-local-only",
+        "currentHandoffKind": "clean",
+        "currentHandoffRecordedAt": "2026-06-18T10:59:25.923Z",
+        "currentManualRecordCount": 0,
+        "currentReplayRows": 0,
+        "fresh": true,
+        "mismatches": [],
+        "payloadHandoffKind": "clean",
+        "payloadHandoffRecordedAt": "2026-06-18T10:59:25.923Z",
+        "payloadManualRecordCount": 0,
+        "payloadReplayRows": 0
+      },
+      "previewReadableSummary": "Outside-review handoff ready: fresh clean handoff; checklist 0/7; shell evidence reviewer pass missing / receipt missing / replay export missing; recorder 0 manual record(s) / export missing; lifecycle preflight blocking phase none / 6 phase(s); combined receipt blocked 5/6 fields; next action: click Continue from prepared clean handoff, or download combined outside-review handoff JSON.",
+      "recorderExport": null,
+      "recorderExportPrepared": false,
+      "reportIntroduced": 323,
+      "reviewedHandoffCompletion": {
+        "boundary": "reviewed-handoff-completion-public-local-only",
+        "defectCount": 0,
+        "manualRecordCount": 0,
+        "missing": [
+          "reviewer pass",
+          "all-pass receipt",
+          "replay export",
+          "recorder export",
+          "manual recorder outcome"
+        ],
+        "openDefectCount": 0,
+        "ready": false,
+        "recorderExportPrepared": false,
+        "recorderExportRecordCount": 0,
+        "reportIntroduced": 327,
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 0,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "clean",
+            "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T10:59:25.923Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 0,
+            "passCount": 0
+          },
+          "receiptAllPass": false,
+          "replayExportReady": false,
+          "replayRows": 0,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": false,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        }
+      },
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T10:59:25.923Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+    },
+    "payloadGate": {
+      "allowed": false,
+      "blockingPhase": "none",
+      "boundary": "combined-receipt-download-gate-browser-local-only",
+      "debugOverride": false,
+      "downloadEnabled": false,
+      "includedCount": 5,
+      "missing": [
+        "recorderExport"
+      ],
+      "reportIntroduced": 348,
+      "totalCount": 6
+    },
+    "state": "blocked",
+    "text": "Combined receipt download gate: blocked until missing fields are included: recorderExport."
+  },
+  "overrideGate": {
+    "checkboxChecked": true,
+    "downloadLinkCount": 1,
+    "linkGate": "debug-override",
+    "linkText": "Download incomplete outside-review handoff JSON (debug override)",
+    "payload": {
+      "boundary": "outside-review-handoff-public-local-only",
+      "checklistState": {
+        "items": {},
+        "updatedAt": null
+      },
+      "combinedReceiptDownloadGate": {
+        "allowed": false,
+        "blockingPhase": "none",
+        "boundary": "combined-receipt-download-gate-browser-local-only",
+        "debugOverride": true,
+        "downloadEnabled": true,
+        "includedCount": 5,
+        "missing": [
+          "recorderExport"
+        ],
+        "reportIntroduced": 348,
+        "totalCount": 6
+      },
+      "combinedReceiptIncludes": [
+        "shellEvidence",
+        "reviewedHandoffCompletion",
+        "manualRecords",
+        "defects",
+        "recorderExport",
+        "lifecyclePreflightPacket"
+      ],
+      "combinedReceiptReportIntroduced": 346,
+      "combinedReceiptStatus": {
+        "blockingPhase": "none",
+        "boundary": "combined-outside-review-receipt-status-browser-local-only",
+        "fields": {
+          "defects": true,
+          "lifecyclePreflightPacket": true,
+          "manualRecords": true,
+          "recorderExport": false,
+          "reviewedHandoffCompletion": true,
+          "shellEvidence": true
+        },
+        "includedCount": 5,
+        "missing": [
+          "recorderExport"
+        ],
+        "ready": false,
+        "reportIntroduced": 347,
+        "totalCount": 6
+      },
+      "defects": [],
+      "handoff": {
+        "boundary": "primary-demo-launcher-only",
+        "kind": "clean",
+        "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "recordedAt": "2026-06-18T10:59:25.923Z",
+        "report": 303,
+        "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "launchUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "lifecyclePreflightPacket": {
+        "action": "outside-review-handoff",
+        "blockingPhase": "none",
+        "boundary": "lifecycle-preflight-packet-browser-local-artifact-status-only",
+        "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+        "freshness": "Report 342 runner results pass; Report 343 entrypoint wiring pass",
+        "phaseCount": 6,
+        "phaseStatuses": {
+          "closed_origin_tab_continuity": "pass",
+          "cross_tab_prepared_resume_visible": "pass",
+          "hard_reload_continuity": "pass",
+          "repaired_continue_return_refresh": "pass",
+          "stale_reprepare_repair": "pass",
+          "stale_supersession_calibration": "pass"
+        },
+        "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+        "preparedAt": "2026-06-18T10:59:26.190Z",
+        "reportIntroduced": 345,
+        "sources": {
+          "manifest": "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+          "report": "../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md",
+          "results": "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+          "sourceMarker": "report-342-results+report-343-wiring"
+        }
+      },
+      "lifecyclePreflightPacketPrepared": true,
+      "lifecyclePreflightPacketSource": "ssrm_primary_demo_lifecycle_preflight_packet",
+      "manualRecords": [],
+      "previewCombinedReceiptDownloadGate": "[Circular]",
+      "previewCombinedReceiptStatus": {
+        "blockingPhase": "none",
+        "boundary": "combined-outside-review-receipt-status-browser-local-only",
+        "fields": {
+          "defects": true,
+          "lifecyclePreflightPacket": true,
+          "manualRecords": true,
+          "recorderExport": false,
+          "reviewedHandoffCompletion": true,
+          "shellEvidence": true
+        },
+        "includedCount": 5,
+        "missing": [
+          "recorderExport"
+        ],
+        "ready": false,
+        "reportIntroduced": 347,
+        "totalCount": 6
+      },
+      "previewFreshness": {
+        "boundary": "outside-review-handoff-freshness-public-local-only",
+        "currentHandoffKind": "clean",
+        "currentHandoffRecordedAt": "2026-06-18T10:59:25.923Z",
+        "currentManualRecordCount": 0,
+        "currentReplayRows": 0,
+        "fresh": true,
+        "mismatches": [],
+        "payloadHandoffKind": "clean",
+        "payloadHandoffRecordedAt": "2026-06-18T10:59:25.923Z",
+        "payloadManualRecordCount": 0,
+        "payloadReplayRows": 0
+      },
+      "previewReadableSummary": "Outside-review handoff ready: fresh clean handoff; checklist 0/7; shell evidence reviewer pass missing / receipt missing / replay export missing; recorder 0 manual record(s) / export missing; lifecycle preflight blocking phase none / 6 phase(s); combined receipt blocked 5/6 fields; next action: click Continue from prepared clean handoff, or download combined outside-review handoff JSON.",
+      "recorderExport": null,
+      "recorderExportPrepared": false,
+      "reportIntroduced": 323,
+      "reviewedHandoffCompletion": {
+        "boundary": "reviewed-handoff-completion-public-local-only",
+        "defectCount": 0,
+        "manualRecordCount": 0,
+        "missing": [
+          "reviewer pass",
+          "all-pass receipt",
+          "replay export",
+          "recorder export",
+          "manual recorder outcome"
+        ],
+        "openDefectCount": 0,
+        "ready": false,
+        "recorderExportPrepared": false,
+        "recorderExportRecordCount": 0,
+        "reportIntroduced": 327,
+        "shellEvidence": {
+          "blockingObservationRows": 0,
+          "boundary": "outside-review-shell-evidence-public-local-only",
+          "checkpointRows": 0,
+          "deepPanelsRevealed": false,
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "clean",
+            "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+            "recordedAt": "2026-06-18T10:59:25.923Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "observationRows": 0,
+          "receipt": {
+            "fieldCount": 0,
+            "passCount": 0
+          },
+          "receiptAllPass": false,
+          "replayExportReady": false,
+          "replayRows": 0,
+          "reportIntroduced": 324,
+          "reviewerPassSeen": false,
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        }
+      },
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T10:59:25.923Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+    },
+    "payloadGate": {
+      "allowed": false,
+      "blockingPhase": "none",
+      "boundary": "combined-receipt-download-gate-browser-local-only",
+      "debugOverride": true,
+      "downloadEnabled": true,
+      "includedCount": 5,
+      "missing": [
+        "recorderExport"
+      ],
+      "reportIntroduced": 348,
+      "totalCount": 6
+    },
+    "state": "debug-override",
+    "text": "Combined receipt download gate: debug override enabled; missing recorderExport."
+  },
+  "finalPayload": {
+    "boundary": "outside-review-handoff-public-local-only",
+    "checklistState": {
+      "items": {},
+      "updatedAt": null
+    },
+    "combinedReceiptDownloadGate": {
+      "allowed": false,
+      "blockingPhase": "none",
+      "boundary": "combined-receipt-download-gate-browser-local-only",
+      "debugOverride": true,
+      "downloadEnabled": true,
+      "includedCount": 5,
+      "missing": [
+        "recorderExport"
+      ],
+      "reportIntroduced": 348,
+      "totalCount": 6
+    },
+    "combinedReceiptIncludes": [
+      "shellEvidence",
+      "reviewedHandoffCompletion",
+      "manualRecords",
+      "defects",
+      "recorderExport",
+      "lifecyclePreflightPacket"
+    ],
+    "combinedReceiptReportIntroduced": 346,
+    "combinedReceiptStatus": {
+      "blockingPhase": "none",
+      "boundary": "combined-outside-review-receipt-status-browser-local-only",
+      "fields": {
+        "defects": true,
+        "lifecyclePreflightPacket": true,
+        "manualRecords": true,
+        "recorderExport": false,
+        "reviewedHandoffCompletion": true,
+        "shellEvidence": true
+      },
+      "includedCount": 5,
+      "missing": [
+        "recorderExport"
+      ],
+      "ready": false,
+      "reportIntroduced": 347,
+      "totalCount": 6
+    },
+    "defects": [],
+    "handoff": {
+      "boundary": "primary-demo-launcher-only",
+      "kind": "clean",
+      "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "recordedAt": "2026-06-18T10:59:25.923Z",
+      "report": 303,
+      "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+    },
+    "launchUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+    "lifecyclePreflightPacket": {
+      "action": "outside-review-handoff",
+      "blockingPhase": "none",
+      "boundary": "lifecycle-preflight-packet-browser-local-artifact-status-only",
+      "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+      "freshness": "Report 342 runner results pass; Report 343 entrypoint wiring pass",
+      "phaseCount": 6,
+      "phaseStatuses": {
+        "closed_origin_tab_continuity": "pass",
+        "cross_tab_prepared_resume_visible": "pass",
+        "hard_reload_continuity": "pass",
+        "repaired_continue_return_refresh": "pass",
+        "stale_reprepare_repair": "pass",
+        "stale_supersession_calibration": "pass"
+      },
+      "policy": "Run this one maintained lifecycle smoke runner before adding another tab, reload, stale, repair, or return handoff report.",
+      "preparedAt": "2026-06-18T10:59:26.190Z",
+      "reportIntroduced": 345,
+      "sources": {
+        "manifest": "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+        "report": "../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md",
+        "results": "../../artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+        "sourceMarker": "report-342-results+report-343-wiring"
+      }
+    },
+    "lifecyclePreflightPacketPrepared": true,
+    "lifecyclePreflightPacketSource": "ssrm_primary_demo_lifecycle_preflight_packet",
+    "manualRecords": [],
+    "previewCombinedReceiptDownloadGate": {
+      "allowed": false,
+      "blockingPhase": "none",
+      "boundary": "combined-receipt-download-gate-browser-local-only",
+      "debugOverride": true,
+      "downloadEnabled": true,
+      "includedCount": 5,
+      "missing": [
+        "recorderExport"
+      ],
+      "reportIntroduced": 348,
+      "totalCount": 6
+    },
+    "previewCombinedReceiptStatus": {
+      "blockingPhase": "none",
+      "boundary": "combined-outside-review-receipt-status-browser-local-only",
+      "fields": {
+        "defects": true,
+        "lifecyclePreflightPacket": true,
+        "manualRecords": true,
+        "recorderExport": false,
+        "reviewedHandoffCompletion": true,
+        "shellEvidence": true
+      },
+      "includedCount": 5,
+      "missing": [
+        "recorderExport"
+      ],
+      "ready": false,
+      "reportIntroduced": 347,
+      "totalCount": 6
+    },
+    "previewFreshness": {
+      "boundary": "outside-review-handoff-freshness-public-local-only",
+      "currentHandoffKind": "clean",
+      "currentHandoffRecordedAt": "2026-06-18T10:59:25.923Z",
+      "currentManualRecordCount": 0,
+      "currentReplayRows": 0,
+      "fresh": true,
+      "mismatches": [],
+      "payloadHandoffKind": "clean",
+      "payloadHandoffRecordedAt": "2026-06-18T10:59:25.923Z",
+      "payloadManualRecordCount": 0,
+      "payloadReplayRows": 0
+    },
+    "previewReadableSummary": "Outside-review handoff ready: fresh clean handoff; checklist 0/7; shell evidence reviewer pass missing / receipt missing / replay export missing; recorder 0 manual record(s) / export missing; lifecycle preflight blocking phase none / 6 phase(s); combined receipt blocked 5/6 fields; next action: click Continue from prepared clean handoff, or download combined outside-review handoff JSON.",
+    "recorderExport": null,
+    "recorderExportPrepared": false,
+    "reportIntroduced": 323,
+    "reviewedHandoffCompletion": {
+      "boundary": "reviewed-handoff-completion-public-local-only",
+      "defectCount": 0,
+      "manualRecordCount": 0,
+      "missing": [
+        "reviewer pass",
+        "all-pass receipt",
+        "replay export",
+        "recorder export",
+        "manual recorder outcome"
+      ],
+      "openDefectCount": 0,
+      "ready": false,
+      "recorderExportPrepared": false,
+      "recorderExportRecordCount": 0,
+      "reportIntroduced": 327,
+      "shellEvidence": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "recordedAt": "2026-06-18T10:59:25.923Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      }
+    },
+    "shellEvidence": {
+      "blockingObservationRows": 0,
+      "boundary": "outside-review-shell-evidence-public-local-only",
+      "checkpointRows": 0,
+      "deepPanelsRevealed": false,
+      "handoff": {
+        "boundary": "primary-demo-launcher-only",
+        "kind": "clean",
+        "launcherUrl": "http://127.0.0.1:8767/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+        "recordedAt": "2026-06-18T10:59:25.923Z",
+        "report": 303,
+        "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "observationRows": 0,
+      "receipt": {
+        "fieldCount": 0,
+        "passCount": 0
+      },
+      "receiptAllPass": false,
+      "replayExportReady": false,
+      "replayRows": 0,
+      "reportIntroduced": 324,
+      "reviewerPassSeen": false,
+      "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+    },
+    "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+  },
+  "finalGateState": "debug-override",
+  "finalGateText": "Combined receipt download gate: debug override enabled; missing recorderExport.",
+  "finalStatusText": "Combined receipt status: blocked; 5/6 fields included; missing recorderExport; lifecycle blocking phase none.",
+  "finalLinkText": "Download incomplete outside-review handoff JSON (debug override)",
+  "finalLinkGate": "debug-override",
+  "downloadEventObserved": false,
+  "downloadError": "Downloads are not supported by Codex In-app Browser.",
+  "consoleErrors": [],
+  "observedAt": "2026-06-18T10:59:26.943Z",
+  "boundary": "browser-local-primary-launcher-guarded-receipt-smoke-only"
+}

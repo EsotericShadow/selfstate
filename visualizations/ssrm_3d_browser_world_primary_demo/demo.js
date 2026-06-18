@@ -468,6 +468,11 @@ function renderOutsideReviewHandoffPreview(message) {
   const out = document.getElementById('outsideReviewHandoffOut');
   const combinedReceiptStatus = renderCombinedReceiptStatus(payload);
   const combinedReceiptDownloadGate = renderCombinedReceiptDownloadGate(payload);
+  if (payload) {
+    payload.combinedReceiptStatus = combinedReceiptStatus;
+    payload.combinedReceiptDownloadGate = combinedReceiptDownloadGate;
+    localStorage.setItem(OUTSIDE_REVIEW_EXPORT_KEY, JSON.stringify(payload, null, 2));
+  }
   if (out) {
     out.textContent = payload ? JSON.stringify({ ...payload, previewFreshness: freshness, previewReadableSummary: readableHandoffSummary(payload, freshness), previewCombinedReceiptStatus: combinedReceiptStatus, previewCombinedReceiptDownloadGate: combinedReceiptDownloadGate }, null, 2) : 'No outside-review handoff export prepared yet.';
   }

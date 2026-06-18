@@ -1,0 +1,25 @@
+{
+  "metrics": {
+    "browser_artifact_score": 1.0,
+    "browser_interaction_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "console_error_count": 0,
+    "criterion_count": 16,
+    "download_event_observed": 0.0,
+    "download_guard_score": 1.0,
+    "export_click_attempt_recorded": 1.0,
+    "generator_durability_score": 1.0,
+    "payload_evidence_score": 1.0,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "runtime_hygiene_score": 1.0,
+    "source_binding_score": 1.0,
+    "source_guard_score": 1.0,
+    "surface_discipline_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-349: use this browser-smoked combined receipt path as the review gate for the next actual vertical-slice behavior change, instead of adding another receipt-only bridge",
+  "report": 349,
+  "seed": 20270747,
+  "verdict": "pass"
+}

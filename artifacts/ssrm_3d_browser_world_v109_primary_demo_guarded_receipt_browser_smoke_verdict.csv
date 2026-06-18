@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,download_event_observed,next_gate
+349,pass,1.0,0.0,"post-349: use this browser-smoked combined receipt path as the review gate for the next actual vertical-slice behavior change, instead of adding another receipt-only bridge"

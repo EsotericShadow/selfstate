@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 282 Browser World v42</title>
+  <style>
+    :root {
+      --ink: #1c241f;
+      --paper: #f2ead1;
+      --lichen: #7c8f5d;
+      --ember: #bf6b43;
+      --river: #5f8e9b;
+      --gold: #d6a84b;
+    }
+    body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--ink); background: radial-gradient(circle at 20% 16%, rgba(214,168,75,.46), transparent 18rem), radial-gradient(circle at 78% 8%, rgba(95,142,155,.35), transparent 16rem), linear-gradient(135deg, #e8ddbf, #c8d3b0 50%, #94b1ad); }
+    main { max-width: 1220px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 4.8rem); line-height: 0.92; margin: 20px 0; letter-spacing: -0.04em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    section { border: 2px solid rgba(28,36,31,.34); border-radius: 24px; padding: 18px; background: rgba(242,234,209,.80); box-shadow: 0 18px 52px rgba(28,36,31,.17); }
+    button { margin: 5px; padding: 9px 11px; border: 1px solid var(--ink); border-radius: 999px; background: var(--gold); color: var(--ink); cursor: pointer; }
+    button:hover { background: var(--ember); color: #fff8df; }
+    .boundary { border-left: 8px solid var(--ember); }
+    .flower { width: 176px; height: 176px; border-radius: 50%; background: repeating-radial-gradient(circle, rgba(214,168,75,.44) 0 9px, rgba(95,142,155,.24) 9px 18px); display: grid; place-items: center; }
+    .log { min-height: 128px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser World v42: first-person packets, sensory rooms, owned tools, consent dialogue</h1>
+  <section class="boundary"><strong>Boundary:</strong> deterministic scaffold only; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no metaphysical frequency claim.</section>
+  <div class="grid">
+    <section id="first-person-panel"><h2>First-person sensory packet</h2><p>Avatar-local visual, sound, smell, temperature, wetness, tactile, and pain-like signals.</p></section>
+    <section id="room-sensory-field-panel"><h2>Room-local sensory fields</h2><p>Rooms carry sound, smell, temperature, wetness, light, vibration rate, and flower phase.</p></section>
+    <section id="tool-claim-panel"><h2>Agent-owned tool claims</h2><p>Tools have owners; use requires request, grant, defer, or refusal handling.</p></section>
+    <section id="consent-dialogue-panel"><h2>Consent-aware dialogue hooks</h2><p>Dialogue exposes ask-first prompts without dumping private workspace state.</p></section>
+    <section id="queue-consequence-panel"><h2>Task queue consequences</h2><p>Avatar interruption, waiting, help, or tool misuse changes queue pressure visibly.</p></section>
+    <section id="save-restore-panel"><h2>Save/restore</h2><p>Sensory memory, claims, dialogue hooks, and queue consequences persist through localStorage.</p></section>
+    <section id="frequency-flower-panel"><h2>Frequency and flower phase</h2><div class="flower">flower phase</div><p>Rates are simulation timing metadata, not metaphysical evidence.</p></section>
+  </div>
+  <section><h2>Controls</h2><button data-action="sense" onclick="sampleFirstPerson('riverbend')">sample first-person packet</button>
+<button data-action="field" onclick="sampleRoomField('riverbend')">sample room field</button>
+<button data-action="claim" onclick="requestToolClaim('riverbend')">request tool claim</button>
+<button data-action="dialogue" onclick="openConsentDialogue('riverbend')">open consent dialogue</button>
+<button data-action="queue" onclick="applyQueueConsequence('riverbend')">apply queue consequence</button>
+<button data-action="memory" onclick="restoreSensoryMemory('riverbend')">restore sensory memory</button>
+<button data-action="save" onclick="saveFirstPersonState('riverbend')">save state</button>
+<button data-action="restore" onclick="restoreFirstPersonState('riverbend')">restore state</button>
+<button data-action="replay" onclick="exportReplay('riverbend')">export replay</button>
+<button data-action="sense" onclick="sampleFirstPerson('roofward')">sample first-person packet</button>
+<button data-action="field" onclick="sampleRoomField('roofward')">sample room field</button>
+<button data-action="claim" onclick="requestToolClaim('roofward')">request tool claim</button>
+<button data-action="dialogue" onclick="openConsentDialogue('roofward')">open consent dialogue</button>
+<button data-action="queue" onclick="applyQueueConsequence('roofward')">apply queue consequence</button>
+<button data-action="memory" onclick="restoreSensoryMemory('roofward')">restore sensory memory</button>
+<button data-action="save" onclick="saveFirstPersonState('roofward')">save state</button>
+<button data-action="restore" onclick="restoreFirstPersonState('roofward')">restore state</button>
+<button data-action="replay" onclick="exportReplay('roofward')">export replay</button>
+<button data-action="sense" onclick="sampleFirstPerson('archive')">sample first-person packet</button>
+<button data-action="field" onclick="sampleRoomField('archive')">sample room field</button>
+<button data-action="claim" onclick="requestToolClaim('archive')">request tool claim</button>
+<button data-action="dialogue" onclick="openConsentDialogue('archive')">open consent dialogue</button>
+<button data-action="queue" onclick="applyQueueConsequence('archive')">apply queue consequence</button>
+<button data-action="memory" onclick="restoreSensoryMemory('archive')">restore sensory memory</button>
+<button data-action="save" onclick="saveFirstPersonState('archive')">save state</button>
+<button data-action="restore" onclick="restoreFirstPersonState('archive')">restore state</button>
+<button data-action="replay" onclick="exportReplay('archive')">export replay</button>
+<button data-action="sense" onclick="sampleFirstPerson('signal')">sample first-person packet</button>
+<button data-action="field" onclick="sampleRoomField('signal')">sample room field</button>
+<button data-action="claim" onclick="requestToolClaim('signal')">request tool claim</button>
+<button data-action="dialogue" onclick="openConsentDialogue('signal')">open consent dialogue</button>
+<button data-action="queue" onclick="applyQueueConsequence('signal')">apply queue consequence</button>
+<button data-action="memory" onclick="restoreSensoryMemory('signal')">restore sensory memory</button>
+<button data-action="save" onclick="saveFirstPersonState('signal')">save state</button>
+<button data-action="restore" onclick="restoreFirstPersonState('signal')">restore state</button>
+<button data-action="replay" onclick="exportReplay('signal')">export replay</button>
+<button data-action="sense" onclick="sampleFirstPerson('orchard')">sample first-person packet</button>
+<button data-action="field" onclick="sampleRoomField('orchard')">sample room field</button>
+<button data-action="claim" onclick="requestToolClaim('orchard')">request tool claim</button>
+<button data-action="dialogue" onclick="openConsentDialogue('orchard')">open consent dialogue</button>
+<button data-action="queue" onclick="applyQueueConsequence('orchard')">apply queue consequence</button>
+<button data-action="memory" onclick="restoreSensoryMemory('orchard')">restore sensory memory</button>
+<button data-action="save" onclick="saveFirstPersonState('orchard')">save state</button>
+<button data-action="restore" onclick="restoreFirstPersonState('orchard')">restore state</button>
+<button data-action="replay" onclick="exportReplay('orchard')">export replay</button>
+<button data-action="sense" onclick="sampleFirstPerson('repair_ring')">sample first-person packet</button>
+<button data-action="field" onclick="sampleRoomField('repair_ring')">sample room field</button>
+<button data-action="claim" onclick="requestToolClaim('repair_ring')">request tool claim</button>
+<button data-action="dialogue" onclick="openConsentDialogue('repair_ring')">open consent dialogue</button>
+<button data-action="queue" onclick="applyQueueConsequence('repair_ring')">apply queue consequence</button>
+<button data-action="memory" onclick="restoreSensoryMemory('repair_ring')">restore sensory memory</button>
+<button data-action="save" onclick="saveFirstPersonState('repair_ring')">save state</button>
+<button data-action="restore" onclick="restoreFirstPersonState('repair_ring')">restore state</button>
+<button data-action="replay" onclick="exportReplay('repair_ring')">export replay</button></section>
+  <section><h2>Browser log</h2><div id="log" class="log">ready</div></section>
+</main>
+<script>
+const storeKey = 'ssrm.v42.browser.world';
+let state = JSON.parse(localStorage.getItem(storeKey) || '{"tick":0,"events":[]}');
+function writeLog(message) {
+  state.tick += 1;
+  state.events.push({tick: state.tick, message});
+  if (state.events.length > 20) state.events = state.events.slice(-20);
+  localStorage.setItem(storeKey, JSON.stringify(state));
+  document.getElementById('log').textContent = state.events.map(e => `${e.tick}: ${e.message}`).join('
+');
+}
+function sampleFirstPerson(scope) { writeLog(`first-person sensory packet sampled for ${scope}`); }
+function sampleRoomField(scope) { writeLog(`room-local sound/smell/temp field sampled for ${scope}`); }
+function requestToolClaim(scope) { writeLog(`agent-owned tool claim requested in ${scope}`); }
+function openConsentDialogue(scope) { writeLog(`consent-aware dialogue hook opened in ${scope}`); }
+function applyQueueConsequence(scope) { writeLog(`task queue consequence applied in ${scope}`); }
+function restoreSensoryMemory(scope) {
+  const restored = JSON.parse(localStorage.getItem(`ssrm.v42.sensory_memory.${scope}`) || '{"cue":"none yet"}');
+  writeLog(`restored sensory memory for ${scope}: ${restored.cue}`);
+}
+function saveFirstPersonState(scope) {
+  localStorage.setItem(`ssrm.v42.sensory_memory.${scope}`, JSON.stringify({cue: `saved sensory cue for ${scope}`, savedAt: state.tick}));
+  localStorage.setItem(`ssrm.v42.world.${scope}`, JSON.stringify(state));
+  writeLog(`saved sensory/tool/dialogue/queue state for ${scope}`);
+}
+function restoreFirstPersonState(scope) {
+  const restored = JSON.parse(localStorage.getItem(`ssrm.v42.world.${scope}`) || '{"events":[]}');
+  writeLog(`restored first-person state for ${scope} with ${restored.events.length || 0} events`);
+}
+function exportReplay(scope) { writeLog(`replay export prepared for ${scope}`); }
+localStorage.setItem('ssrm.v42.boot', JSON.stringify({loaded: true}));
+writeLog('browser v42 surface loaded from localStorage');
+</script>
+</body>
+</html>

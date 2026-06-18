@@ -1,0 +1,1347 @@
+{
+  "boundary": "Deterministic browser-local first-person sensory/tool-claim/consent-dialogue scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "project_progress": {
+    "archive": 0.0,
+    "orchard": 0.18,
+    "repair_ring": 0.0,
+    "riverbend": 0.18,
+    "roofward": 0.18,
+    "signal": 0.18
+  },
+  "queue_pressure": {
+    "archive:Nia": 0.922,
+    "archive:Toma": 0.35,
+    "orchard:Ivo": 0.894,
+    "orchard:Mara": 0.35,
+    "repair_ring:Juno": 0.35,
+    "repair_ring:Pax": 0.895,
+    "riverbend:Ari": 0.894,
+    "riverbend:Lio": 0.35,
+    "roofward:Fay": 0.35,
+    "roofward:Sera": 0.894,
+    "signal:Milo": 0.35,
+    "signal:Ren": 0.894
+  },
+  "relationship": {
+    "archive:Nia": 0.96,
+    "archive:Toma": 0.56,
+    "orchard:Ivo": 0.98,
+    "orchard:Mara": 0.56,
+    "repair_ring:Juno": 0.56,
+    "repair_ring:Pax": 0.824,
+    "riverbend:Ari": 0.976,
+    "riverbend:Lio": 0.62,
+    "roofward:Fay": 0.62,
+    "roofward:Sera": 0.98,
+    "signal:Milo": 0.56,
+    "signal:Ren": 0.978
+  },
+  "resident_room": {
+    "archive:Nia": "memory desk",
+    "archive:Toma": "memory desk",
+    "orchard:Ivo": "market plank",
+    "orchard:Mara": "satchel shed",
+    "repair_ring:Juno": "wire bench",
+    "repair_ring:Pax": "arrival court",
+    "riverbend:Ari": "dry ridge",
+    "riverbend:Lio": "kit alcove",
+    "roofward:Fay": "ledger loft",
+    "roofward:Sera": "sun sill",
+    "signal:Milo": "mast base",
+    "signal:Ren": "signal perch"
+  },
+  "sensory_memory": {
+    "archive:Nia": [
+      [
+        126,
+        "archive:arrival court:sound:2",
+        "page flutter",
+        0.95
+      ],
+      [
+        128,
+        "archive:memory desk:smell:4",
+        "ink linen",
+        0.975
+      ],
+      [
+        128,
+        "archive:arrival court:smell:4",
+        "wax seal",
+        0.945
+      ],
+      [
+        128,
+        "archive:stone stacks:smell:4",
+        "ink linen",
+        0.955
+      ],
+      [
+        130,
+        "archive:memory desk:temperature:6",
+        "16.3C",
+        0.98
+      ],
+      [
+        130,
+        "archive:arrival court:temperature:6",
+        "14.0C",
+        0.976
+      ],
+      [
+        130,
+        "archive:stone stacks:temperature:6",
+        "14.5C",
+        0.98
+      ],
+      [
+        132,
+        "archive:memory desk:sound:8",
+        "spool click",
+        0.98
+      ],
+      [
+        132,
+        "archive:arrival court:sound:8",
+        "page flutter",
+        0.95
+      ],
+      [
+        132,
+        "archive:stone stacks:sound:8",
+        "spool click",
+        0.96
+      ],
+      [
+        134,
+        "archive:arrival court:smell:10",
+        "wax seal",
+        0.971
+      ],
+      [
+        134,
+        "archive:stone stacks:smell:10",
+        "ink linen",
+        0.98
+      ],
+      [
+        134,
+        "archive:spool room:smell:10",
+        "cold dust",
+        0.976
+      ],
+      [
+        136,
+        "archive:arrival court:temperature:12",
+        "13.5C",
+        0.95
+      ],
+      [
+        136,
+        "archive:stone stacks:temperature:12",
+        "14.7C",
+        0.96
+      ],
+      [
+        136,
+        "archive:spool room:temperature:12",
+        "15.2C",
+        0.9299999999999999
+      ],
+      [
+        138,
+        "archive:arrival court:sound:14",
+        "page flutter",
+        0.941
+      ],
+      [
+        138,
+        "archive:stone stacks:sound:14",
+        "spool click",
+        0.951
+      ],
+      [
+        138,
+        "archive:spool room:sound:14",
+        "stone echo",
+        0.95
+      ],
+      [
+        140,
+        "archive:stone stacks:smell:16",
+        "ink linen",
+        0.975
+      ],
+      [
+        140,
+        "archive:spool room:smell:16",
+        "cold dust",
+        0.945
+      ],
+      [
+        140,
+        "archive:ink niche:smell:16",
+        "wax seal",
+        0.955
+      ],
+      [
+        142,
+        "archive:stone stacks:temperature:18",
+        "14.2C",
+        0.98
+      ],
+      [
+        142,
+        "archive:spool room:temperature:18",
+        "15.4C",
+        0.976
+      ],
+      [
+        142,
+        "archive:ink niche:temperature:18",
+        "15.9C",
+        0.98
+      ],
+      [
+        144,
+        "archive:stone stacks:sound:20",
+        "spool click",
+        0.98
+      ],
+      [
+        144,
+        "archive:spool room:sound:20",
+        "stone echo",
+        0.95
+      ],
+      [
+        144,
+        "archive:ink niche:sound:20",
+        "page flutter",
+        0.96
+      ]
+    ],
+    "archive:Toma": [],
+    "orchard:Ivo": [
+      [
+        135,
+        "orchard:seed lane:temperature:11",
+        "14.3C",
+        0.98
+      ],
+      [
+        136,
+        "orchard:satchel shed:smell:12",
+        "dry twine",
+        0.98
+      ],
+      [
+        136,
+        "orchard:arrival court:smell:12",
+        "mud reed",
+        0.98
+      ],
+      [
+        136,
+        "orchard:seed lane:smell:12",
+        "dry twine",
+        0.98
+      ],
+      [
+        137,
+        "orchard:satchel shed:sound:13",
+        "seed rattle",
+        0.98
+      ],
+      [
+        137,
+        "orchard:arrival court:sound:13",
+        "cart creak",
+        0.98
+      ],
+      [
+        137,
+        "orchard:seed lane:sound:13",
+        "seed rattle",
+        0.98
+      ],
+      [
+        138,
+        "orchard:satchel shed:temperature:14",
+        "15.9C",
+        0.98
+      ],
+      [
+        138,
+        "orchard:arrival court:temperature:14",
+        "13.6C",
+        0.98
+      ],
+      [
+        138,
+        "orchard:seed lane:temperature:14",
+        "14.1C",
+        0.98
+      ],
+      [
+        139,
+        "orchard:satchel shed:smell:15",
+        "dry twine",
+        0.98
+      ],
+      [
+        139,
+        "orchard:arrival court:smell:15",
+        "mud reed",
+        0.98
+      ],
+      [
+        139,
+        "orchard:seed lane:smell:15",
+        "dry twine",
+        0.98
+      ],
+      [
+        140,
+        "orchard:satchel shed:sound:16",
+        "seed rattle",
+        0.98
+      ],
+      [
+        140,
+        "orchard:arrival court:sound:16",
+        "cart creak",
+        0.98
+      ],
+      [
+        140,
+        "orchard:seed lane:sound:16",
+        "seed rattle",
+        0.98
+      ],
+      [
+        141,
+        "orchard:arrival court:temperature:17",
+        "13.4C",
+        0.98
+      ],
+      [
+        141,
+        "orchard:seed lane:temperature:17",
+        "13.8C",
+        0.98
+      ],
+      [
+        141,
+        "orchard:mud row:temperature:17",
+        "15.0C",
+        0.98
+      ],
+      [
+        142,
+        "orchard:arrival court:smell:18",
+        "mud reed",
+        0.98
+      ],
+      [
+        142,
+        "orchard:seed lane:smell:18",
+        "dry twine",
+        0.98
+      ],
+      [
+        142,
+        "orchard:mud row:smell:18",
+        "apple soil",
+        0.98
+      ],
+      [
+        143,
+        "orchard:arrival court:sound:19",
+        "cart creak",
+        0.98
+      ],
+      [
+        143,
+        "orchard:seed lane:sound:19",
+        "seed rattle",
+        0.98
+      ],
+      [
+        143,
+        "orchard:mud row:sound:19",
+        "roof drip",
+        0.98
+      ],
+      [
+        144,
+        "orchard:arrival court:temperature:20",
+        "13.1C",
+        0.98
+      ],
+      [
+        144,
+        "orchard:seed lane:temperature:20",
+        "14.3C",
+        0.98
+      ],
+      [
+        144,
+        "orchard:mud row:temperature:20",
+        "14.8C",
+        0.98
+      ]
+    ],
+    "orchard:Mara": [],
+    "repair_ring:Juno": [],
+    "repair_ring:Pax": [
+      [
+        125,
+        "repair_ring:wire bench:smell:1",
+        "hot copper",
+        0.7940000000000003
+      ],
+      [
+        127,
+        "repair_ring:cool corner:temperature:3",
+        "17.9C",
+        0.8190000000000003
+      ],
+      [
+        127,
+        "repair_ring:arrival court:temperature:3",
+        "15.6C",
+        0.7890000000000003
+      ],
+      [
+        127,
+        "repair_ring:wire bench:temperature:3",
+        "16.1C",
+        0.7990000000000003
+      ],
+      [
+        129,
+        "repair_ring:cool corner:sound:5",
+        "wire snap",
+        0.8240000000000003
+      ],
+      [
+        129,
+        "repair_ring:arrival court:sound:5",
+        "bell hum",
+        0.8230000000000003
+      ],
+      [
+        129,
+        "repair_ring:wire bench:sound:5",
+        "wire snap",
+        0.8330000000000003
+      ],
+      [
+        131,
+        "repair_ring:arrival court:smell:7",
+        "clean cloth",
+        0.8150000000000003
+      ],
+      [
+        131,
+        "repair_ring:wire bench:smell:7",
+        "hot copper",
+        0.8250000000000003
+      ],
+      [
+        131,
+        "repair_ring:spark lane:smell:7",
+        "stone chalk",
+        0.7950000000000003
+      ],
+      [
+        133,
+        "repair_ring:arrival court:temperature:9",
+        "15.1C",
+        0.8060000000000003
+      ],
+      [
+        133,
+        "repair_ring:wire bench:temperature:9",
+        "16.3C",
+        0.8160000000000003
+      ],
+      [
+        133,
+        "repair_ring:spark lane:temperature:9",
+        "16.8C",
+        0.8150000000000003
+      ],
+      [
+        135,
+        "repair_ring:arrival court:sound:11",
+        "bell hum",
+        0.7970000000000003
+      ],
+      [
+        135,
+        "repair_ring:wire bench:sound:11",
+        "wire snap",
+        0.8070000000000003
+      ],
+      [
+        135,
+        "repair_ring:spark lane:sound:11",
+        "cool fan",
+        0.7770000000000002
+      ],
+      [
+        137,
+        "repair_ring:wire bench:smell:13",
+        "hot copper",
+        0.8020000000000003
+      ],
+      [
+        137,
+        "repair_ring:spark lane:smell:13",
+        "stone chalk",
+        0.8010000000000003
+      ],
+      [
+        137,
+        "repair_ring:bell alcove:smell:13",
+        "clean cloth",
+        0.8110000000000003
+      ],
+      [
+        139,
+        "repair_ring:wire bench:temperature:15",
+        "15.8C",
+        0.8360000000000003
+      ],
+      [
+        139,
+        "repair_ring:spark lane:temperature:15",
+        "17.0C",
+        0.8060000000000003
+      ],
+      [
+        139,
+        "repair_ring:bell alcove:temperature:15",
+        "17.5C",
+        0.8160000000000003
+      ],
+      [
+        141,
+        "repair_ring:wire bench:sound:17",
+        "wire snap",
+        0.8410000000000003
+      ],
+      [
+        141,
+        "repair_ring:spark lane:sound:17",
+        "cool fan",
+        0.8400000000000003
+      ],
+      [
+        141,
+        "repair_ring:bell alcove:sound:17",
+        "bell hum",
+        0.8500000000000003
+      ],
+      [
+        143,
+        "repair_ring:spark lane:smell:19",
+        "stone chalk",
+        0.8320000000000003
+      ],
+      [
+        143,
+        "repair_ring:bell alcove:smell:19",
+        "clean cloth",
+        0.8420000000000003
+      ],
+      [
+        143,
+        "repair_ring:cool corner:smell:19",
+        "hot copper",
+        0.8120000000000003
+      ]
+    ],
+    "riverbend:Ari": [
+      [
+        126,
+        "riverbend:wet crossing:smell:2",
+        "warm oil",
+        0.972
+      ],
+      [
+        128,
+        "riverbend:arrival court:temperature:4",
+        "9.9C",
+        0.958
+      ],
+      [
+        128,
+        "riverbend:plank hall:temperature:4",
+        "11.1C",
+        0.968
+      ],
+      [
+        128,
+        "riverbend:wet crossing:temperature:4",
+        "11.6C",
+        0.964
+      ],
+      [
+        130,
+        "riverbend:arrival court:sound:6",
+        "river slap",
+        0.95
+      ],
+      [
+        130,
+        "riverbend:plank hall:sound:6",
+        "cedar knock",
+        0.96
+      ],
+      [
+        130,
+        "riverbend:wet crossing:sound:6",
+        "lantern tick",
+        0.956
+      ],
+      [
+        132,
+        "riverbend:plank hall:smell:8",
+        "mud thread",
+        0.97
+      ],
+      [
+        132,
+        "riverbend:wet crossing:smell:8",
+        "warm oil",
+        0.966
+      ],
+      [
+        132,
+        "riverbend:dry ridge:smell:8",
+        "wet cedar",
+        0.976
+      ],
+      [
+        134,
+        "riverbend:plank hall:temperature:10",
+        "10.6C",
+        0.98
+      ],
+      [
+        134,
+        "riverbend:wet crossing:temperature:10",
+        "11.8C",
+        0.976
+      ],
+      [
+        134,
+        "riverbend:dry ridge:temperature:10",
+        "12.3C",
+        0.98
+      ],
+      [
+        136,
+        "riverbend:plank hall:sound:12",
+        "cedar knock",
+        0.98
+      ],
+      [
+        136,
+        "riverbend:wet crossing:sound:12",
+        "lantern tick",
+        0.976
+      ],
+      [
+        136,
+        "riverbend:dry ridge:sound:12",
+        "river slap",
+        0.98
+      ],
+      [
+        138,
+        "riverbend:wet crossing:smell:14",
+        "warm oil",
+        0.966
+      ],
+      [
+        138,
+        "riverbend:dry ridge:smell:14",
+        "wet cedar",
+        0.976
+      ],
+      [
+        138,
+        "riverbend:kit alcove:smell:14",
+        "mud thread",
+        0.972
+      ],
+      [
+        140,
+        "riverbend:wet crossing:temperature:16",
+        "11.3C",
+        0.958
+      ],
+      [
+        140,
+        "riverbend:dry ridge:temperature:16",
+        "12.5C",
+        0.968
+      ],
+      [
+        140,
+        "riverbend:kit alcove:temperature:16",
+        "13.0C",
+        0.964
+      ],
+      [
+        142,
+        "riverbend:wet crossing:sound:18",
+        "lantern tick",
+        0.95
+      ],
+      [
+        142,
+        "riverbend:dry ridge:sound:18",
+        "river slap",
+        0.96
+      ],
+      [
+        142,
+        "riverbend:kit alcove:sound:18",
+        "cedar knock",
+        0.956
+      ],
+      [
+        144,
+        "riverbend:dry ridge:smell:20",
+        "wet cedar",
+        0.97
+      ],
+      [
+        144,
+        "riverbend:kit alcove:smell:20",
+        "mud thread",
+        0.966
+      ],
+      [
+        144,
+        "riverbend:arrival court:smell:20",
+        "wet cedar",
+        0.976
+      ]
+    ],
+    "riverbend:Lio": [],
+    "roofward:Fay": [],
+    "roofward:Sera": [
+      [
+        135,
+        "roofward:arrival court:temperature:11",
+        "17.6C",
+        0.98
+      ],
+      [
+        136,
+        "roofward:ledger loft:smell:12",
+        "warm dust",
+        0.98
+      ],
+      [
+        136,
+        "roofward:sun sill:smell:12",
+        "polished brass",
+        0.98
+      ],
+      [
+        136,
+        "roofward:arrival court:smell:12",
+        "warm dust",
+        0.98
+      ],
+      [
+        137,
+        "roofward:ledger loft:sound:13",
+        "hinge ticks",
+        0.98
+      ],
+      [
+        137,
+        "roofward:sun sill:sound:13",
+        "paper hush",
+        0.98
+      ],
+      [
+        137,
+        "roofward:arrival court:sound:13",
+        "hinge ticks",
+        0.98
+      ],
+      [
+        138,
+        "roofward:sun sill:temperature:14",
+        "20.4C",
+        0.98
+      ],
+      [
+        138,
+        "roofward:arrival court:temperature:14",
+        "17.3C",
+        0.98
+      ],
+      [
+        138,
+        "roofward:glass stair:temperature:14",
+        "18.5C",
+        0.98
+      ],
+      [
+        139,
+        "roofward:sun sill:smell:15",
+        "polished brass",
+        0.98
+      ],
+      [
+        139,
+        "roofward:arrival court:smell:15",
+        "warm dust",
+        0.98
+      ],
+      [
+        139,
+        "roofward:glass stair:smell:15",
+        "polished brass",
+        0.98
+      ],
+      [
+        140,
+        "roofward:sun sill:sound:16",
+        "paper hush",
+        0.98
+      ],
+      [
+        140,
+        "roofward:arrival court:sound:16",
+        "hinge ticks",
+        0.98
+      ],
+      [
+        140,
+        "roofward:glass stair:sound:16",
+        "paper hush",
+        0.98
+      ],
+      [
+        141,
+        "roofward:sun sill:temperature:17",
+        "20.1C",
+        0.98
+      ],
+      [
+        141,
+        "roofward:arrival court:temperature:17",
+        "17.8C",
+        0.98
+      ],
+      [
+        141,
+        "roofward:glass stair:temperature:17",
+        "18.3C",
+        0.98
+      ],
+      [
+        142,
+        "roofward:sun sill:smell:18",
+        "polished brass",
+        0.98
+      ],
+      [
+        142,
+        "roofward:arrival court:smell:18",
+        "warm dust",
+        0.98
+      ],
+      [
+        142,
+        "roofward:glass stair:smell:18",
+        "polished brass",
+        0.98
+      ],
+      [
+        143,
+        "roofward:sun sill:sound:19",
+        "paper hush",
+        0.98
+      ],
+      [
+        143,
+        "roofward:arrival court:sound:19",
+        "hinge ticks",
+        0.98
+      ],
+      [
+        143,
+        "roofward:glass stair:sound:19",
+        "paper hush",
+        0.98
+      ],
+      [
+        144,
+        "roofward:arrival court:temperature:20",
+        "17.6C",
+        0.98
+      ],
+      [
+        144,
+        "roofward:glass stair:temperature:20",
+        "18.0C",
+        0.98
+      ],
+      [
+        144,
+        "roofward:warm lane:temperature:20",
+        "19.2C",
+        0.98
+      ]
+    ],
+    "signal:Milo": [],
+    "signal:Ren": [
+      [
+        125,
+        "signal:lantern walk:temperature:1",
+        "10.0C",
+        0.964
+      ],
+      [
+        127,
+        "signal:arrival court:sound:3",
+        "static crickets",
+        0.95
+      ],
+      [
+        127,
+        "signal:mast base:sound:3",
+        "rope creak",
+        0.96
+      ],
+      [
+        127,
+        "signal:lantern walk:sound:3",
+        "beacon pulse",
+        0.956
+      ],
+      [
+        129,
+        "signal:mast base:smell:5",
+        "salt wind",
+        0.97
+      ],
+      [
+        129,
+        "signal:lantern walk:smell:5",
+        "hot glass",
+        0.966
+      ],
+      [
+        129,
+        "signal:lens room:smell:5",
+        "lamp oil",
+        0.976
+      ],
+      [
+        131,
+        "signal:mast base:temperature:7",
+        "9.0C",
+        0.98
+      ],
+      [
+        131,
+        "signal:lantern walk:temperature:7",
+        "10.2C",
+        0.976
+      ],
+      [
+        131,
+        "signal:lens room:temperature:7",
+        "10.7C",
+        0.98
+      ],
+      [
+        133,
+        "signal:mast base:sound:9",
+        "rope creak",
+        0.98
+      ],
+      [
+        133,
+        "signal:lantern walk:sound:9",
+        "beacon pulse",
+        0.976
+      ],
+      [
+        133,
+        "signal:lens room:sound:9",
+        "static crickets",
+        0.98
+      ],
+      [
+        135,
+        "signal:lantern walk:smell:11",
+        "hot glass",
+        0.966
+      ],
+      [
+        135,
+        "signal:lens room:smell:11",
+        "lamp oil",
+        0.976
+      ],
+      [
+        135,
+        "signal:signal perch:smell:11",
+        "salt wind",
+        0.972
+      ],
+      [
+        137,
+        "signal:lantern walk:temperature:13",
+        "9.7C",
+        0.958
+      ],
+      [
+        137,
+        "signal:lens room:temperature:13",
+        "10.9C",
+        0.968
+      ],
+      [
+        137,
+        "signal:signal perch:temperature:13",
+        "11.4C",
+        0.964
+      ],
+      [
+        139,
+        "signal:lantern walk:sound:15",
+        "beacon pulse",
+        0.95
+      ],
+      [
+        139,
+        "signal:lens room:sound:15",
+        "static crickets",
+        0.96
+      ],
+      [
+        139,
+        "signal:signal perch:sound:15",
+        "rope creak",
+        0.956
+      ],
+      [
+        141,
+        "signal:lens room:smell:17",
+        "lamp oil",
+        0.97
+      ],
+      [
+        141,
+        "signal:signal perch:smell:17",
+        "salt wind",
+        0.966
+      ],
+      [
+        141,
+        "signal:arrival court:smell:17",
+        "lamp oil",
+        0.976
+      ],
+      [
+        143,
+        "signal:lens room:temperature:19",
+        "10.4C",
+        0.98
+      ],
+      [
+        143,
+        "signal:signal perch:temperature:19",
+        "11.6C",
+        0.976
+      ],
+      [
+        143,
+        "signal:arrival court:temperature:19",
+        "8.6C",
+        0.98
+      ]
+    ]
+  },
+  "settlements": [
+    {
+      "base_temperature_c": 12.4,
+      "dialect_id": "riverbend-dialect-10",
+      "flower_node": "node-03",
+      "frequency_hz": 7.83,
+      "hazard": "wet cold crossing",
+      "resident_a": "Ari",
+      "resident_b": "Lio",
+      "resident_tools": [
+        [
+          "cedar plank",
+          "Ari"
+        ],
+        [
+          "ridge lantern",
+          "Lio"
+        ],
+        [
+          "binding cord",
+          "Ari"
+        ]
+      ],
+      "rest_room": "kit alcove",
+      "rooms": [
+        "arrival court",
+        "plank hall",
+        "wet crossing",
+        "dry ridge",
+        "kit alcove"
+      ],
+      "settlement_id": "riverbend",
+      "smell_cues": [
+        "wet cedar",
+        "mud thread",
+        "warm oil"
+      ],
+      "sound_cues": [
+        "river slap",
+        "cedar knock",
+        "lantern tick"
+      ],
+      "wet_room": "wet crossing",
+      "work_room": "plank hall"
+    },
+    {
+      "base_temperature_c": 18.2,
+      "dialect_id": "roofward-dialect-10",
+      "flower_node": "node-05",
+      "frequency_hz": 8.21,
+      "hazard": "glare heat stair",
+      "resident_a": "Fay",
+      "resident_b": "Sera",
+      "resident_tools": [
+        [
+          "sun lens",
+          "Fay"
+        ],
+        [
+          "herb ledger",
+          "Sera"
+        ],
+        [
+          "brass hinge",
+          "Fay"
+        ]
+      ],
+      "rest_room": "warm lane",
+      "rooms": [
+        "arrival court",
+        "glass stair",
+        "warm lane",
+        "ledger loft",
+        "sun sill"
+      ],
+      "settlement_id": "roofward",
+      "smell_cues": [
+        "thyme paper",
+        "warm dust",
+        "polished brass"
+      ],
+      "sound_cues": [
+        "hinge ticks",
+        "paper hush",
+        "sun glass hum"
+      ],
+      "wet_room": "arrival court",
+      "work_room": "ledger loft"
+    },
+    {
+      "base_temperature_c": 15.1,
+      "dialect_id": "archive-dialect-10",
+      "flower_node": "node-08",
+      "frequency_hz": 6.4,
+      "hazard": "ink strain niche",
+      "resident_a": "Nia",
+      "resident_b": "Toma",
+      "resident_tools": [
+        [
+          "signal spool",
+          "Nia"
+        ],
+        [
+          "ink ribbon",
+          "Toma"
+        ],
+        [
+          "memory tag",
+          "Nia"
+        ]
+      ],
+      "rest_room": "memory desk",
+      "rooms": [
+        "arrival court",
+        "stone stacks",
+        "spool room",
+        "ink niche",
+        "memory desk"
+      ],
+      "settlement_id": "archive",
+      "smell_cues": [
+        "ink linen",
+        "cold dust",
+        "wax seal"
+      ],
+      "sound_cues": [
+        "page flutter",
+        "spool click",
+        "stone echo"
+      ],
+      "wet_room": "arrival court",
+      "work_room": "spool room"
+    },
+    {
+      "base_temperature_c": 10.8,
+      "dialect_id": "signal-dialect-10",
+      "flower_node": "node-11",
+      "frequency_hz": 9.12,
+      "hazard": "wind mast fatigue",
+      "resident_a": "Milo",
+      "resident_b": "Ren",
+      "resident_tools": [
+        [
+          "mast rope",
+          "Milo"
+        ],
+        [
+          "oil lantern",
+          "Ren"
+        ],
+        [
+          "signal lens",
+          "Milo"
+        ]
+      ],
+      "rest_room": "lantern walk",
+      "rooms": [
+        "arrival court",
+        "mast base",
+        "lantern walk",
+        "lens room",
+        "signal perch"
+      ],
+      "settlement_id": "signal",
+      "smell_cues": [
+        "lamp oil",
+        "salt wind",
+        "hot glass"
+      ],
+      "sound_cues": [
+        "static crickets",
+        "rope creak",
+        "beacon pulse"
+      ],
+      "wet_room": "arrival court",
+      "work_room": "mast base"
+    },
+    {
+      "base_temperature_c": 14.7,
+      "dialect_id": "orchard-dialect-10",
+      "flower_node": "node-01",
+      "frequency_hz": 5.68,
+      "hazard": "mud slip row",
+      "resident_a": "Ivo",
+      "resident_b": "Mara",
+      "resident_tools": [
+        [
+          "seed satchel",
+          "Ivo"
+        ],
+        [
+          "market token",
+          "Mara"
+        ],
+        [
+          "dry cord",
+          "Ivo"
+        ]
+      ],
+      "rest_room": "satchel shed",
+      "rooms": [
+        "arrival court",
+        "seed lane",
+        "mud row",
+        "market plank",
+        "satchel shed"
+      ],
+      "settlement_id": "orchard",
+      "smell_cues": [
+        "apple soil",
+        "mud reed",
+        "dry twine"
+      ],
+      "sound_cues": [
+        "cart creak",
+        "seed rattle",
+        "roof drip"
+      ],
+      "wet_room": "mud row",
+      "work_room": "market plank"
+    },
+    {
+      "base_temperature_c": 16.0,
+      "dialect_id": "repair_ring-dialect-10",
+      "flower_node": "node-09",
+      "frequency_hz": 10.03,
+      "hazard": "spark burn lane",
+      "resident_a": "Juno",
+      "resident_b": "Pax",
+      "resident_tools": [
+        [
+          "insulated tongs",
+          "Juno"
+        ],
+        [
+          "copper wire",
+          "Pax"
+        ],
+        [
+          "bell gauge",
+          "Juno"
+        ]
+      ],
+      "rest_room": "cool corner",
+      "rooms": [
+        "arrival court",
+        "wire bench",
+        "spark lane",
+        "bell alcove",
+        "cool corner"
+      ],
+      "settlement_id": "repair_ring",
+      "smell_cues": [
+        "hot copper",
+        "stone chalk",
+        "clean cloth"
+      ],
+      "sound_cues": [
+        "bell hum",
+        "wire snap",
+        "cool fan"
+      ],
+      "wet_room": "spark lane",
+      "work_room": "wire bench"
+    }
+  ]
+}

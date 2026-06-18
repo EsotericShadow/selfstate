@@ -13,9 +13,9 @@ state_boundary_rules,11
 direct_qa_hooks,7
 hardening_criteria,8
 generated_artifact_files,6
-app_javascript_bytes,37207
-app_css_bytes,3510
-app_html_bytes,5296
+app_javascript_bytes,41432
+app_css_bytes,3631
+app_html_bytes,5840
 source_v60_continuity,1.0
 separate_app_shell_assets,1.0
 playtest_tasks_present,1.0

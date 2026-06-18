@@ -7,6 +7,7 @@ const SAVE_SNAPSHOT_KEY = 'ssrm_v61_app_shell_saved_snapshot';
 const CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 const HISTORY_KEY = 'ssrm_v61_app_shell_resident_history';
 const RELATION_KEY = 'ssrm_v61_app_shell_resident_relationships';
+const RECEIPT_OBSERVATION_KEY = 'ssrm_v61_app_shell_receipt_observations';
 
 const residents = {
   Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
@@ -39,8 +40,10 @@ const playtestTasks = [
   { id: 'PT-10', title: 'Export replay', action: 'exportReplay', expected: 'replay JSON export is prepared and stored locally' }
 ];
 
+const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_consequence', 'offscreen_life', 'recoverable_trust_repair', 'resident_social_memory', 'public_history_sync', 'replay_export_ready', 'resume_ready_snapshot'];
+
 const qaManifest = {
-  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY],
+  stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY],
   publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
@@ -49,7 +52,7 @@ const qaManifest = {
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('reset') === '1') {
-  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY].forEach(key => localStorage.removeItem(key));
+  [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY].forEach(key => localStorage.removeItem(key));
 }
 
 let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
@@ -203,6 +206,7 @@ function bindControls() {
     });
   });
   residentSelect.innerHTML = Object.keys(world.residents).map(name => `<option value="${name}">${name}</option>`).join('');
+  document.getElementById('receiptFieldSelect').innerHTML = receiptFieldIds.map(field => `<option value="${field}">${field}</option>`).join('');
   residentSelect.value = world.selected;
   residentSelect.addEventListener('change', () => { world.selected = residentSelect.value; log('selectResident', { selected: world.selected }); });
   const dashboardActions = document.getElementById('residentActionButtons');
@@ -450,6 +454,57 @@ function calculateScenarioReceipt() {
   const passCount = checks.filter(([_id, pass]) => pass).length;
   return { checks, passCount, fieldCount: checks.length };
 }
+function readReceiptObservations() {
+  try {
+    const rows = JSON.parse(localStorage.getItem(RECEIPT_OBSERVATION_KEY) || '[]');
+    return Array.isArray(rows) ? rows : [];
+  } catch (_error) {
+    return [];
+  }
+}
+function writeReceiptObservations(rows) {
+  const trimmed = rows.slice(-30);
+  localStorage.setItem(RECEIPT_OBSERVATION_KEY, JSON.stringify(trimmed));
+  return trimmed;
+}
+function receiptCheckForField(field) {
+  const receipt = calculateScenarioReceipt();
+  const row = receipt.checks.find(([id]) => id === field) || receipt.checks.find(([_id, pass]) => pass === false) || receipt.checks[0];
+  return { field: row[0], pass: row[1], detail: row[2], passCount: receipt.passCount, fieldCount: receipt.fieldCount };
+}
+function logReceiptObservation() {
+  const fieldSelect = document.getElementById('receiptFieldSelect');
+  const severitySelect = document.getElementById('receiptSeveritySelect');
+  const field = fieldSelect && fieldSelect.value ? fieldSelect.value : (calculateScenarioReceipt().checks.find(([_id, pass]) => pass === false) || calculateScenarioReceipt().checks[0])[0];
+  const severity = severitySelect && severitySelect.value ? severitySelect.value : 'watch';
+  const check = receiptCheckForField(field);
+  const rows = readReceiptObservations();
+  const row = {
+    id: `RO-${String(world.tick).padStart(3, '0')}-${String(rows.length + 1).padStart(2, '0')}`,
+    field: check.field,
+    severity,
+    status: check.pass ? 'watch' : 'open',
+    receiptStatus: check.pass ? 'PASS' : 'FAIL',
+    detail: check.detail,
+    note: check.pass ? `Reviewer note on passing field ${check.field}` : `Reviewer flagged failing field ${check.field}`,
+    tick: world.tick,
+    selected: world.selected,
+    replayRows: world.replay.length
+  };
+  rows.push(row);
+  writeReceiptObservations(rows);
+  recordCheckpoint('receipt observation logged');
+  return log('logReceiptObservation', { id: row.id, field: row.field, severity: row.severity, status: row.status, receiptStatus: row.receiptStatus });
+}
+function resolveLatestObservation() {
+  const rows = readReceiptObservations();
+  const index = rows.map(row => row.status !== 'resolved').lastIndexOf(true);
+  if (index < 0) return log('resolveLatestObservation', { resolved: false, reason: 'no open receipt observation' });
+  rows[index] = { ...rows[index], status: 'resolved', resolvedTick: world.tick, resolution: 'reviewed against current integrated receipt' };
+  writeReceiptObservations(rows);
+  recordCheckpoint('receipt observation resolved');
+  return log('resolveLatestObservation', { resolved: true, id: rows[index].id, field: rows[index].field });
+}
 function formatScenarioReceipt() {
   const receipt = calculateScenarioReceipt();
   const rows = receipt.checks.map(([id, pass, detail]) => `${pass ? 'PASS' : 'FAIL'} ${id}: ${detail}`);
@@ -457,6 +512,16 @@ function formatScenarioReceipt() {
   return `Integrated scenario receipt: ${status} (${receipt.passCount}/${receipt.fieldCount})
 Scope: public browser-local state only; no subjective consciousness, no autonomous language, no moral patienthood.
 ${rows.join('\n')}`;
+}
+function formatReceiptObservations() {
+  const rows = readReceiptObservations();
+  const open = rows.filter(row => row.status !== 'resolved').length;
+  if (!rows.length) return 'No receipt observations yet. Pick a receipt field and log an observation after running the integrated loop.';
+  const recent = rows.slice(-10).map(row => `${row.id} | ${row.status} | ${row.severity} | ${row.field} | receipt=${row.receiptStatus} | ${row.note}`);
+  return `Receipt observation ledger: ${open} open / ${rows.length} total
+Persistent key: ${RECEIPT_OBSERVATION_KEY}
+Recent observations:
+${recent.join('\n')}`;
 }
 function formatResidentActionButtons() {
   return Object.keys(world.residents).map(name => `<div class="resident-action-row"><strong>${name}</strong><button type="button" data-dashboard-select="${name}">Select</button><button type="button" data-dashboard-help="${name}">Help</button><button type="button" data-dashboard-borrow="${name}">Borrow</button><button type="button" data-dashboard-return="${name}">Return</button></div>`).join('');
@@ -553,6 +618,9 @@ function describeReplayRow(row) {
     exportReplay: `prepared replay export rows=${payload.rows} bytes=${payload.bytes}`,
     runSocialMemoryPulse: `ran resident-to-resident social memory pulse pairs=${payload.pairCount}`,
     settleSelectedRelationship: `settled resident-to-resident obligation ${payload.from} -> ${payload.to} debt=${payload.debt} trust=${payload.trust}`,
+    generateScenarioReceipt: `generated public receipt pass=${payload.passCount}/${payload.fieldCount}`,
+    logReceiptObservation: `logged receipt observation ${payload.id} ${payload.field} status=${payload.status}`,
+    resolveLatestObservation: `resolved receipt observation=${payload.resolved === true} ${payload.id || payload.reason || ''}`,
     toggleAudit: `audit overlay=${payload.audit === true}`,
     selectResident: `selected resident ${payload.selected}`,
     canvasMove: `canvas move to ${payload.room} at ${payload.x},${payload.y}`
@@ -603,6 +671,7 @@ function render() {
   document.getElementById('continuityLoopOut').textContent = formatContinuityLoopStatus();
   document.getElementById('relationshipMemoryOut').textContent = formatRelationshipMemory();
   document.getElementById('scenarioReceiptOut').textContent = formatScenarioReceipt();
+  document.getElementById('receiptObservationOut').textContent = formatReceiptObservations();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   draw();
@@ -633,6 +702,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation });
 bindControls();
 render();

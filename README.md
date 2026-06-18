@@ -36,6 +36,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo resident social memory report](docs/316_ssrm_3d_browser_world_v76_primary_demo_resident_social_memory_report.md): adds a public resident-to-resident relationship ledger with social-memory pulse, settlement, replay, history, and resume evidence.
 - [Primary demo integrated social continuity report](docs/317_ssrm_3d_browser_world_v77_primary_demo_integrated_social_continuity_report.md): folds resident social memory into the one-button continuity loop so avatar and resident-to-resident consequences are verified together.
 - [Primary demo scenario receipt report](docs/318_ssrm_3d_browser_world_v78_primary_demo_scenario_receipt_report.md): adds a compact PASS/FAIL receipt for the integrated continuity loop using public replay, history, relationship, checkpoint, and export state.
+- [Primary demo receipt observations report](docs/319_ssrm_3d_browser_world_v79_primary_demo_receipt_observations_report.md): adds a field-tied public observation ledger for receipt review notes, severity, resolution, transcript/checkpoint visibility, and resume persistence.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

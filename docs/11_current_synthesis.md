@@ -24,6 +24,8 @@ Report 317 folds that resident-to-resident social memory into the main continuit
 
 Report 318 adds a compact integrated scenario receipt to the same shell. The receipt converts the one-button loop into reviewer-readable PASS/FAIL fields for entry, schedule visibility, debt consequence, offscreen life, recoverable trust repair, resident social memory, public history sync, replay/export readiness, and resume-ready snapshot state.
 
+Report 319 makes that receipt actionable by adding field-tied receipt observations, severity, latest-observation resolution, replay/checkpoint evidence, and resume persistence. This keeps review feedback inside the primary browser-local shell instead of leaving it as external chat notes.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

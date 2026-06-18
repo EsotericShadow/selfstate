@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,browser_observation_score,next_gate
+319,pass,1.0,1.0,1.0,"post-319: use the receipt observation ledger to drive a reviewer-ready defect summary that separates open, watch, resolved, and blocking observations without leaving the primary shell"

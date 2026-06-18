@@ -19,6 +19,15 @@ const OUTSIDE_REVIEW_ITEMS = [
   { itemId: 'OR-07', label: 'Record manual outcome and export handoff' }
 ];
 
+function currentLauncherUrl() {
+  return window.location.href.split('#')[0].split('?')[0];
+}
+
+function renderCurrentLauncherUrl() {
+  const node = document.getElementById('currentLaunchUrl');
+  if (node) node.textContent = currentLauncherUrl();
+}
+
 function readObject(key, fallback) {
   try {
     return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback));
@@ -33,6 +42,7 @@ function recordLaunch(kind) {
     kind,
     report: 303,
     target: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    launcherUrl: currentLauncherUrl(),
     recordedAt: new Date().toISOString(),
     boundary: 'primary-demo-launcher-only'
   };
@@ -43,13 +53,15 @@ function recordLaunch(kind) {
 function renderHandoff(payload) {
   const node = document.getElementById('handoffStatus');
   if (!node) return;
-  node.textContent = `Last handoff: ${payload.kind} launch toward ${payload.target} at ${payload.recordedAt}.`;
+  node.textContent = `Last handoff: ${payload.kind} launch from ${payload.launcherUrl || currentLauncherUrl()} toward ${payload.target} at ${payload.recordedAt}.`;
 }
 
 for (const [id, kind] of [['cleanLaunch', 'clean'], ['resumeLaunch', 'resume']]) {
   const node = document.getElementById(id);
   if (node) node.addEventListener('click', () => recordLaunch(kind));
 }
+
+renderCurrentLauncherUrl();
 
 try {
   const existing = JSON.parse(localStorage.getItem(HANDOFF_KEY) || 'null');
@@ -180,7 +192,7 @@ function exportOutsideReviewHandoff() {
     recorderExport: readRecorderExportPayload(),
     recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
     targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
-    launchUrl: 'http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html',
+    launchUrl: currentLauncherUrl(),
     boundary: 'outside-review-handoff-public-local-only'
   };
   const text = JSON.stringify(payload, null, 2);

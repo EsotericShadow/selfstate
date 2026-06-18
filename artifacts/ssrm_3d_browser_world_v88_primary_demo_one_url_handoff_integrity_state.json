@@ -1,0 +1,16 @@
+{
+  "boundary": "Deterministic browser-local one-URL handoff integrity only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. URL integrity is review evidence hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v88_primary_demo_one_url_handoff_integrity_browser_evidence.json",
+  "next_gate": "post-328: continue the cold one-URL reviewer pass and fix the next place where visible reviewer state, recorder state, shell evidence, and exported handoff payload can drift after reload or resume",
+  "pre_patch_evidence_path": "artifacts/ssrm_3d_browser_world_v88_primary_demo_one_url_handoff_pre_patch_evidence.json",
+  "report": 328,
+  "required_terms": [
+    "currentLauncherUrl",
+    "renderCurrentLauncherUrl",
+    "launcherUrl: currentLauncherUrl()",
+    "launchUrl: currentLauncherUrl()",
+    "currentLaunchUrl"
+  ],
+  "seed": 20270726,
+  "verdict": "pass"
+}

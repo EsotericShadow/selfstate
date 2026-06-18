@@ -41,6 +41,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo reviewer landing report](docs/321_ssrm_3d_browser_world_v81_primary_demo_reviewer_landing_report.md): condenses the maintained shell into a reviewer-focused landing path that foregrounds the boundary, transcript, integrated loop, receipt, and observation triage before optional deep panels.
 - [Primary demo actionable landing failures report](docs/322_ssrm_3d_browser_world_v82_primary_demo_actionable_landing_failures_report.md): adds field-level recovery guidance and blocking observation capture when the reviewer landing receipt is incomplete.
 - [Primary demo outside-review checklist report](docs/323_ssrm_3d_browser_world_v83_primary_demo_outside_review_checklist_report.md): packages boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and handoff export into one launcher checklist.
+- [Primary demo review evidence refresh report](docs/324_ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_report.md): lets the outside-review launcher refresh and export shell-side replay, receipt, observation, checkpoint, and replay-export evidence after a walkthrough.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

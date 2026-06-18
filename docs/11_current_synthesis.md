@@ -34,6 +34,8 @@ Report 322 makes that reviewer landing actionable when the receipt is incomplete
 
 Report 323 packages the launcher and reviewer-first shell into one outside-review checklist. A cold reviewer can now follow OR-01..OR-07 across boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff state without hunting through separate reports.
 
+Report 324 makes that checklist evidence-bearing after a walkthrough. The launcher can now refresh maintained-shell public state for replay rows, reviewer-pass event, integrated receipt, receipt observations, checkpoints, and replay-export readiness, then embed that evidence in the outside-review handoff export.
+
 ## Short Answer
 
 A persistent self is not universally necessary.

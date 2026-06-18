@@ -1,0 +1,15 @@
+{
+  "boundary": "Deterministic browser-local review-evidence refresh only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The refresh summarizes public localStorage evidence from the maintained shell; it is not external validation, autonomous judgment, or hidden cognition.",
+  "evidence_refresh_keys": [
+    "ssrm_v61_app_shell_world",
+    "ssrm_v61_app_shell_replay",
+    "ssrm_v61_app_shell_export",
+    "ssrm_v61_app_shell_receipt_observations",
+    "ssrm_v61_app_shell_checkpoints"
+  ],
+  "next_gate": "post-324: run the outside-review checklist against a complete walkthrough and fix the first concrete defect that blocks reviewer comprehension in the same maintained shell or launcher",
+  "prefix": "ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh",
+  "report": 324,
+  "seed": 20270722,
+  "target_shell": "visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+}

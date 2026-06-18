@@ -33,11 +33,14 @@
 <li data-outside-review-row="OR-06"><span><strong>OR-06</strong>: Reveal deep panels only for unresolved questions <em>Toggle deep panels exposes trace, checkpoints, resident history, social memory, receipt observations, playtest tasks, and QA manifest.</em></span><button type="button" data-outside-review-item="OR-06">Mark done</button></li>
 <li data-outside-review-row="OR-07"><span><strong>OR-07</strong>: Record manual outcome and export handoff <em>Manual pass recorder, defect ledger, and outside-review handoff export are prepared as browser-local public review evidence.</em></span><button type="button" data-outside-review-item="OR-07">Mark done</button></li></ol>
       <div class="actions compact">
+        <button id="refreshOutsideReviewEvidence" type="button">Refresh shell evidence</button>
         <button id="exportOutsideReview" type="button">Prepare outside-review handoff</button>
         <button id="clearOutsideReview" type="button">Clear outside-review checklist</button>
       </div>
       <p id="outsideReviewStatus">No outside-review checklist items completed yet.</p>
       <pre id="outsideReviewOut"></pre>
+      <p id="outsideReviewEvidenceStatus">No shell evidence refreshed yet.</p>
+      <pre id="outsideReviewEvidenceOut"></pre>
     </section>
     <section class="grid">
       <article>

@@ -1,0 +1,222 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_criteria.csv",
+    "report": "docs/324_ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local review-evidence refresh only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The refresh summarizes public localStorage evidence from the maintained shell; it is not external validation, autonomous judgment, or hidden cognition.",
+  "browser_evidence": {
+    "after_export": {
+      "checklistStatus": "Outside-review handoff prepared.",
+      "evidenceStatus": "Outside-review handoff prepared with shell evidence.",
+      "exportHrefPresent": true,
+      "exportLinkText": "Prepared outside-review handoff",
+      "parsed": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 7,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "recordedAt": "2026-06-18T08:25:28.357Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 9,
+          "passCount": 9
+        },
+        "receiptAllPass": true,
+        "replayExportReady": true,
+        "replayRows": 16,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": true,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      }
+    },
+    "clean_resume_preserved_evidence": "run=http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 runBody=reviewer-focus resume=http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 resumeBody=reviewer-focus",
+    "clean_resume_preserved_pass": true,
+    "console_error_messages": [],
+    "console_errors": 0,
+    "export_contains_shell_evidence_evidence": "checklistStatus=Outside-review handoff prepared. evidenceStatus=Outside-review handoff prepared with shell evidence. link=Prepared outside-review handoff parsed={\"blockingObservationRows\":0,\"boundary\":\"outside-review-shell-evidence-public-local-only\",\"checkpointRows\":7,\"deepPanelsRevealed\":false,\"handoff\":{\"boundary\":\"primary-demo-launcher-only\",\"kind\":\"clean\",\"recordedAt\":\"2026-06-18T08:25:28.357Z\",\"report\":303,\"target\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"},\"observationRows\":0,\"receipt\":{\"fieldCount\":9,\"passCount\":9},\"receiptAllPass\":true,\"replayExportReady\":true,\"replayRows\":16,\"reportIntroduced\":324,\"reviewerPassSeen\":true,\"targetShell\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"}",
+    "export_contains_shell_evidence_pass": true,
+    "post_refresh": {
+      "outText": "{\n  \"reportIntroduced\": 324,\n  \"handoff\": {\n    \"kind\": \"clean\",\n    \"report\": 303,\n    \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"recordedAt\": \"2026-06-18T08:25:28.357Z\",\n    \"boundary\": \"primary-demo-launcher-only\"\n  },\n  \"replayRows\": 16,\n  \"reviewerPassSeen\": true,\n  \"receiptAllPass\": true,\n  \"receipt\": {\n    \"passCount\": 9,\n    \"fieldCount\": 9\n  },\n  \"observationRows\": 0,\n  \"blockingObservationRows\": 0,\n  \"checkpointRows\": 7,\n  \"replayExportReady\": true,\n  \"deepPanelsRevealed\": false,\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n}",
+      "parsed": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 7,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "recordedAt": "2026-06-18T08:25:28.357Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 9,
+          "passCount": 9
+        },
+        "receiptAllPass": true,
+        "replayExportReady": true,
+        "replayRows": 16,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": true,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "status": "Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready."
+    },
+    "pre_refresh": {
+      "outText": "{\n  \"reportIntroduced\": 324,\n  \"handoff\": {\n    \"kind\": \"clean\",\n    \"report\": 303,\n    \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"recordedAt\": \"2026-06-18T08:25:27.740Z\",\n    \"boundary\": \"primary-demo-launcher-only\"\n  },\n  \"replayRows\": 0,\n  \"reviewerPassSeen\": false,\n  \"receiptAllPass\": false,\n  \"receipt\": {\n    \"passCount\": 0,\n    \"fieldCount\": 0\n  },\n  \"observationRows\": 0,\n  \"blockingObservationRows\": 0,\n  \"checkpointRows\": 0,\n  \"replayExportReady\": false,\n  \"deepPanelsRevealed\": false,\n  \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n  \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n}",
+      "parsed": {
+        "blockingObservationRows": 0,
+        "boundary": "outside-review-shell-evidence-public-local-only",
+        "checkpointRows": 0,
+        "deepPanelsRevealed": false,
+        "handoff": {
+          "boundary": "primary-demo-launcher-only",
+          "kind": "clean",
+          "recordedAt": "2026-06-18T08:25:27.740Z",
+          "report": 303,
+          "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "observationRows": 0,
+        "receipt": {
+          "fieldCount": 0,
+          "passCount": 0
+        },
+        "receiptAllPass": false,
+        "replayExportReady": false,
+        "replayRows": 0,
+        "reportIntroduced": 324,
+        "reviewerPassSeen": false,
+        "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+      },
+      "status": "Shell evidence: replay 0 rows / reviewer pass missing / receipt missing / observations 0 / export missing."
+    },
+    "pre_shell_missing_state_evidence": "clean=http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 status=Shell evidence: replay 0 rows / reviewer pass missing / receipt missing / observations 0 / export missing. parsed={\"blockingObservationRows\":0,\"boundary\":\"outside-review-shell-evidence-public-local-only\",\"checkpointRows\":0,\"deepPanelsRevealed\":false,\"handoff\":{\"boundary\":\"primary-demo-launcher-only\",\"kind\":\"clean\",\"recordedAt\":\"2026-06-18T08:25:27.740Z\",\"report\":303,\"target\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"},\"observationRows\":0,\"receipt\":{\"fieldCount\":0,\"passCount\":0},\"receiptAllPass\":false,\"replayExportReady\":false,\"replayRows\":0,\"reportIntroduced\":324,\"reviewerPassSeen\":false,\"targetShell\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"}",
+    "pre_shell_missing_state_pass": true,
+    "report": 324,
+    "shell_after_resume": {
+      "bodyClass": "reviewer-focus",
+      "landing": "Reviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none\nActionable failure map:\nAll receipt fields currently pass. Keep deep panels optional unless a reviewer wants trace detail.\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear",
+      "url": "http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63"
+    },
+    "shell_after_run": {
+      "bodyClass": "reviewer-focus",
+      "landing": "Reviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none\nActionable failure map:\nAll receipt fields currently pass. Keep deep panels optional unless a reviewer wants trace detail.\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear",
+      "receipt": "Integrated scenario receipt: ALL_PASS (9/9)\nScope: public browser-local state only; no subjective consciousness, no autonomous language, no moral patienthood.\nPASS entry_and_movement: avatar entered the maintained shell\nPASS schedule_visibility: selected resident schedule was queried and remains visible\nPASS debt_consequence: debt/trust consequence happened before bounded repair\nPASS offscreen_life: offscreen resident progress advanced during the loop\nPASS recoverable_trust_repair: wound and concrete repair are both present\nPASS resident_social_memory: resident-to-resident memory and settlement are visible\nPASS public_history_sync: selected resident history records avatar and social consequences\nPASS replay_export_ready: replay export bytes=2442\nPASS resume_ready_snapshot: saved checkpoint exists for resume verification",
+      "transcript": "t0 arrival court / Fay: avatar entered the world boundary-visible\nt1 arrival court / Fay: asked schedule: sort herbs\nt2 arrival court / Fay: borrowed tool; debt increases\nt3 arrival court / Fay: waited offscreen; resident progress advanced\nt4 arrival court / Fay: interruptWork\nt5 arrival court / Fay: apologizeToResident\nt6 arrival court / Fay: giveSpace\nt7 arrival court / Fay: completeTrustRepair\nt8 arrival court / Fay: ran resident-to-resident social memory pulse pairs=6\nt9 arrival court / Fay: settled resident-to-resident obligation Fay -> Milo debt=0 trust=0.546\nt10 arrival court / Fay: saved local snapshot\nt11 arrival court / Fay: prepared replay export rows=11 bytes=2442\nt12 arrival court / Fay: runContinuityLoop\nt13 arrival court / Fay: generated public receipt pass=9/9\nt14 arrival court / Fay: set observation triage filter=all rows=0\nt15 arrival court / Fay: ran reviewer landing pass focus=true",
+      "url": "http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "shell_clean": {
+      "bodyClass": "reviewer-focus",
+      "landing": "Reviewer landing: READY_FOR_RUN\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage\nReceipt: 0/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: runContinuityLoop, generateScenarioReceipt\nActionable failure map:\nFIX entry_and_movement: Click Enter or use Run reviewer pass to establish avatar entry. Current evidence: avatar entered the maintained shell\nFIX schedule_visibility: Ask schedule or run the reviewer pass so the selected resident schedule is public. Current evidence: selected resident schedule was queried and remains visible\nFIX debt_consequence: Borrow/return or run the reviewer pass to create a visible debt/trust consequence. Current evidence: debt/trust consequence happened before bounded repair\nFIX offscreen_life: Use Wait offscreen or run the reviewer pass to advance resident progress while absent. Current evidence: offscreen resident progress advanced during the loop\nFIX recoverable_trust_repair: Run the trust repair sequence: interrupt, apologize, give space, repair with help. Current evidence: wound and concrete repair are both present\nFIX resident_social_memory: Run social pulse and settle one selected resident-to-resident obligation. Current evidence: resident-to-resident memory and settlement are visible\nFIX public_history_sync: Create avatar and resident-to-resident events until selected resident history updates. Current evidence: selected resident history records avatar and social consequences\nFIX replay_export_ready: Export replay after the loop so review evidence has bytes and public rows. Current evidence: replay export bytes=0\nFIX resume_ready_snapshot: Save world after the loop so launcher resume has a public checkpoint. Current evidence: saved checkpoint exists for resume verification\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear",
+      "url": "http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+    },
+    "shell_evidence_refresh_evidence": "status=Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready. parsed={\"blockingObservationRows\":0,\"boundary\":\"outside-review-shell-evidence-public-local-only\",\"checkpointRows\":7,\"deepPanelsRevealed\":false,\"handoff\":{\"boundary\":\"primary-demo-launcher-only\",\"kind\":\"clean\",\"recordedAt\":\"2026-06-18T08:25:28.357Z\",\"report\":303,\"target\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"},\"observationRows\":0,\"receipt\":{\"fieldCount\":9,\"passCount\":9},\"receiptAllPass\":true,\"replayExportReady\":true,\"replayRows\":16,\"reportIntroduced\":324,\"reviewerPassSeen\":true,\"targetShell\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"}",
+    "shell_evidence_refresh_pass": true
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "evidence_refresh_generated_from_source",
+      "evidence": "launcher evidence refresh is generated from Report 303 source and present in demo.js",
+      "failure_if_false": "regeneration would erase the evidence refresh path",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "launcher_evidence_panel_visible",
+      "evidence": "primary launcher exposes shell-evidence refresh controls and output",
+      "failure_if_false": "reviewers would still need to inspect raw localStorage or shell panels manually",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "handoff_export_embeds_shell_evidence",
+      "evidence": "outside-review handoff export embeds refreshed shell evidence under a local-only boundary",
+      "failure_if_false": "exported handoff would not prove what happened inside the maintained shell",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manifest_shell_evidence_keys_registered",
+      "evidence": "QA manifest lists shell receipt-observation/checkpoint keys and outside-review handoff key",
+      "failure_if_false": "evidence refresh would rely on unregistered browser-local state",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "one_shell_policy_preserved",
+      "evidence": "launcher still targets the maintained v61 shell instead of another demo surface",
+      "failure_if_false": "review-evidence refresh would fragment the demo path",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_pre_shell_missing_state",
+      "evidence": "clean=http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 status=Shell evidence: replay 0 rows / reviewer pass missing / receipt missing / observations 0 / export missing. parsed={\"blockingObservationRows\":0,\"boundary\":\"outside-review-shell-evidence-public-local-only\",\"checkpointRows\":0,\"deepPanelsRevealed\":false,\"handoff\":{\"boundary\":\"primary-demo-launcher-only\",\"kind\":\"clean\",\"recordedAt\":\"2026-06-18T08:25:27.740Z\",\"report\":303,\"target\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"},\"observationRows\":0,\"receipt\":{\"fieldCount\":0,\"passCount\":0},\"receiptAllPass\":false,\"replayExportReady\":false,\"replayRows\":0,\"reportIntroduced\":324,\"reviewerPassSeen\":false,\"targetShell\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"}",
+      "failure_if_false": "browser did not show missing shell evidence before the shell walkthrough",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_shell_evidence_refresh",
+      "evidence": "status=Shell evidence: replay 16 rows / reviewer pass seen / receipt 9/9 / observations 0 / export ready. parsed={\"blockingObservationRows\":0,\"boundary\":\"outside-review-shell-evidence-public-local-only\",\"checkpointRows\":7,\"deepPanelsRevealed\":false,\"handoff\":{\"boundary\":\"primary-demo-launcher-only\",\"kind\":\"clean\",\"recordedAt\":\"2026-06-18T08:25:28.357Z\",\"report\":303,\"target\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"},\"observationRows\":0,\"receipt\":{\"fieldCount\":9,\"passCount\":9},\"receiptAllPass\":true,\"replayExportReady\":true,\"replayRows\":16,\"reportIntroduced\":324,\"reviewerPassSeen\":true,\"targetShell\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"}",
+      "failure_if_false": "browser did not surface replay, reviewer pass, receipt, observation, checkpoint, and export evidence after walkthrough",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_export_contains_shell_evidence",
+      "evidence": "checklistStatus=Outside-review handoff prepared. evidenceStatus=Outside-review handoff prepared with shell evidence. link=Prepared outside-review handoff parsed={\"blockingObservationRows\":0,\"boundary\":\"outside-review-shell-evidence-public-local-only\",\"checkpointRows\":7,\"deepPanelsRevealed\":false,\"handoff\":{\"boundary\":\"primary-demo-launcher-only\",\"kind\":\"clean\",\"recordedAt\":\"2026-06-18T08:25:28.357Z\",\"report\":303,\"target\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"},\"observationRows\":0,\"receipt\":{\"fieldCount\":9,\"passCount\":9},\"receiptAllPass\":true,\"replayExportReady\":true,\"replayRows\":16,\"reportIntroduced\":324,\"reviewerPassSeen\":true,\"targetShell\":\"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\"}",
+      "failure_if_false": "outside-review handoff export did not include shell evidence",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_clean_resume_preserved",
+      "evidence": "run=http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63 runBody=reviewer-focus resume=http://127.0.0.1:8783/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=primary-demo-v63 resumeBody=reviewer-focus",
+      "failure_if_false": "clean/resume launcher handoff no longer preserved reviewer-focus shell path",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "console_clean",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "browser workflow produced runtime console errors",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_refresh_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "evidence_refresh_source_score": 1.0,
+    "readiness": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-324: run the outside-review checklist against a complete walkthrough and fix the first concrete defect that blocks reviewer comprehension in the same maintained shell or launcher",
+  "prefix": "ssrm_3d_browser_world_v84_primary_demo_review_evidence_refresh",
+  "report": 324,
+  "required_terms": [
+    "buildOutsideReviewEvidence",
+    "renderOutsideReviewEvidence",
+    "refreshOutsideReviewEvidence",
+    "outsideReviewEvidenceOut",
+    "SHELL_RECEIPT_OBSERVATION_KEY",
+    "shellEvidence: buildOutsideReviewEvidence()"
+  ],
+  "seed": 20270722,
+  "verdict": "pass"
+}

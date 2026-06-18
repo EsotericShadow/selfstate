@@ -1,0 +1,2 @@
+readiness,weakest_channel_score,evidence_refresh_source_score,browser_refresh_score,console_errors,criterion_count,report,seed,verdict
+1.0,1.0,1.0,1.0,0,10,324,20270722,pass

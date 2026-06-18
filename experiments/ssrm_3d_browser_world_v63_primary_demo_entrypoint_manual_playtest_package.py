@@ -272,11 +272,14 @@ def _html() -> str:
       <p>This is the shortest handoff path for someone arriving cold: boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, and exportable review notes.</p>
       <ol class=\"outside-review-list\">{outside_review_rows}</ol>
       <div class=\"actions compact\">
+        <button id=\"refreshOutsideReviewEvidence\" type=\"button\">Refresh shell evidence</button>
         <button id=\"exportOutsideReview\" type=\"button\">Prepare outside-review handoff</button>
         <button id=\"clearOutsideReview\" type=\"button\">Clear outside-review checklist</button>
       </div>
       <p id=\"outsideReviewStatus\">No outside-review checklist items completed yet.</p>
       <pre id=\"outsideReviewOut\"></pre>
+      <p id=\"outsideReviewEvidenceStatus\">No shell evidence refreshed yet.</p>
+      <pre id=\"outsideReviewEvidenceOut\"></pre>
     </section>
     <section class=\"grid\">
       <article>
@@ -628,7 +631,7 @@ article, .handoff, .recorder { padding: 26px; }
 .triage-grid label { display: grid; gap: 8px; font-weight: 700; }
 textarea, select { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: #fffdf2; color: var(--ink); font: inherit; }
 textarea { resize: vertical; }
-#recordLedgerOut, #outsideReviewOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
+#recordLedgerOut, #outsideReviewOut, #outsideReviewEvidenceOut { max-height: 260px; overflow: auto; white-space: pre-wrap; background: rgba(30, 32, 24, 0.08); border-radius: 16px; padding: 14px; }
 li { margin: 0 0 12px; }
 li span { display: block; color: var(--muted); margin-top: 3px; }
 code { background: rgba(70, 92, 58, 0.10); padding: 2px 6px; border-radius: 8px; }
@@ -649,6 +652,11 @@ const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
 const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
 const OUTSIDE_REVIEW_KEY = 'ssrm_primary_demo_outside_review_checklist';
 const OUTSIDE_REVIEW_EXPORT_KEY = 'ssrm_primary_demo_outside_review_handoff';
+const SHELL_STATE_KEY = 'ssrm_v61_app_shell_world';
+const SHELL_REPLAY_KEY = 'ssrm_v61_app_shell_replay';
+const SHELL_EXPORT_KEY = 'ssrm_v61_app_shell_export';
+const SHELL_RECEIPT_OBSERVATION_KEY = 'ssrm_v61_app_shell_receipt_observations';
+const SHELL_CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 const OUTSIDE_REVIEW_ITEMS = [
   { itemId: 'OR-01', label: 'Read boundary before launching' },
   { itemId: 'OR-02', label: 'Launch clean reviewer path' },
@@ -756,6 +764,7 @@ function exportOutsideReviewHandoff() {
     reportIntroduced: 323,
     checklistState: outsideReviewState(),
     handoff: readObject(HANDOFF_KEY, null),
+    shellEvidence: buildOutsideReviewEvidence(),
     manualRecords: readList(MANUAL_RECORD_KEY),
     defects: readList(DEFECT_LEDGER_KEY),
     recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
@@ -776,6 +785,7 @@ function exportOutsideReviewHandoff() {
     document.getElementById('outsideReviewChecklist')?.appendChild(link);
   }
   link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderOutsideReviewEvidence('Outside-review handoff prepared with shell evidence.');
   renderOutsideReviewChecklist('Outside-review handoff prepared.');
 }
 
@@ -785,6 +795,52 @@ function clearOutsideReviewChecklist() {
   const link = document.getElementById('preparedOutsideReviewExport');
   if (link) link.remove();
   renderOutsideReviewChecklist('Outside-review checklist cleared.');
+}
+
+function shellReplayRows() {
+  const world = readObject(SHELL_STATE_KEY, {});
+  if (Array.isArray(world.replay)) return world.replay;
+  const replay = readObject(SHELL_REPLAY_KEY, []);
+  return Array.isArray(replay) ? replay : [];
+}
+
+function buildOutsideReviewEvidence() {
+  const replay = shellReplayRows();
+  const events = replay.map(row => row.event);
+  const receiptEvents = replay.filter(row => row.event === 'generateScenarioReceipt');
+  const latestReceipt = receiptEvents[receiptEvents.length - 1]?.payload || {};
+  const passCount = Number(latestReceipt.passCount || 0);
+  const fieldCount = Number(latestReceipt.fieldCount || 0);
+  const observations = readObject(SHELL_RECEIPT_OBSERVATION_KEY, []);
+  const checkpoints = readObject(SHELL_CHECKPOINT_KEY, []);
+  const exportText = localStorage.getItem(SHELL_EXPORT_KEY) || '';
+  return {
+    reportIntroduced: 324,
+    handoff: readObject(HANDOFF_KEY, null),
+    replayRows: replay.length,
+    reviewerPassSeen: events.includes('runReviewerLandingPass'),
+    receiptAllPass: fieldCount > 0 && passCount === fieldCount,
+    receipt: { passCount, fieldCount },
+    observationRows: Array.isArray(observations) ? observations.length : 0,
+    blockingObservationRows: Array.isArray(observations) ? observations.filter(row => row.severity === 'blocking' && row.status !== 'resolved').length : 0,
+    checkpointRows: Array.isArray(checkpoints) ? checkpoints.length : 0,
+    replayExportReady: exportText.length > 0 || events.includes('exportReplay'),
+    deepPanelsRevealed: events.includes('toggleDeepPanels'),
+    targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    boundary: 'outside-review-shell-evidence-public-local-only'
+  };
+}
+
+function renderOutsideReviewEvidence(message) {
+  const evidence = buildOutsideReviewEvidence();
+  const status = document.getElementById('outsideReviewEvidenceStatus');
+  if (status) {
+    const receipt = evidence.receipt.fieldCount ? `${evidence.receipt.passCount}/${evidence.receipt.fieldCount}` : 'missing';
+    status.textContent = message || `Shell evidence: replay ${evidence.replayRows} rows / reviewer pass ${evidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receipt} / observations ${evidence.observationRows} / export ${evidence.replayExportReady ? 'ready' : 'missing'}.`;
+  }
+  const out = document.getElementById('outsideReviewEvidenceOut');
+  if (out) out.textContent = JSON.stringify(evidence, null, 2);
+  return evidence;
 }
 
 function recordStep(stepId, result) {
@@ -900,9 +956,11 @@ document.getElementById('clearRecorder')?.addEventListener('click', clearRecorde
 document.querySelectorAll('[data-outside-review-item]').forEach(button => {
   button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
 });
+document.getElementById('refreshOutsideReviewEvidence')?.addEventListener('click', () => renderOutsideReviewEvidence());
 document.getElementById('exportOutsideReview')?.addEventListener('click', exportOutsideReviewHandoff);
 document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
 renderOutsideReviewChecklist();
+renderOutsideReviewEvidence();
 renderRecorder();
 """
 
@@ -1001,6 +1059,8 @@ def _qa_manifest(results_hint: dict[str, Any]) -> dict[str, Any]:
             RECORDER_EXPORT_KEY,
             OUTSIDE_REVIEW_KEY,
             OUTSIDE_REVIEW_EXPORT_KEY,
+            "ssrm_v61_app_shell_receipt_observations",
+            "ssrm_v61_app_shell_checkpoints",
         ],
         "defect_triage_fields": ["id", "stepId", "severity", "status", "note", "resolutionNote", "resolvedAt"],
         "outside_review_checklist_items": len(OUTSIDE_REVIEW_CHECKLIST),

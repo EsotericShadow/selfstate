@@ -35,7 +35,9 @@
     "ssrm_primary_demo_defect_ledger",
     "ssrm_primary_demo_recorder_export",
     "ssrm_primary_demo_outside_review_checklist",
-    "ssrm_primary_demo_outside_review_handoff"
+    "ssrm_primary_demo_outside_review_handoff",
+    "ssrm_v61_app_shell_receipt_observations",
+    "ssrm_v61_app_shell_checkpoints"
   ],
   "target_shell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
 }

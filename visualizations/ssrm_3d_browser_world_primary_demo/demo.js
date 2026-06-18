@@ -4,6 +4,11 @@ const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
 const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
 const OUTSIDE_REVIEW_KEY = 'ssrm_primary_demo_outside_review_checklist';
 const OUTSIDE_REVIEW_EXPORT_KEY = 'ssrm_primary_demo_outside_review_handoff';
+const SHELL_STATE_KEY = 'ssrm_v61_app_shell_world';
+const SHELL_REPLAY_KEY = 'ssrm_v61_app_shell_replay';
+const SHELL_EXPORT_KEY = 'ssrm_v61_app_shell_export';
+const SHELL_RECEIPT_OBSERVATION_KEY = 'ssrm_v61_app_shell_receipt_observations';
+const SHELL_CHECKPOINT_KEY = 'ssrm_v61_app_shell_checkpoints';
 const OUTSIDE_REVIEW_ITEMS = [
   { itemId: 'OR-01', label: 'Read boundary before launching' },
   { itemId: 'OR-02', label: 'Launch clean reviewer path' },
@@ -111,6 +116,7 @@ function exportOutsideReviewHandoff() {
     reportIntroduced: 323,
     checklistState: outsideReviewState(),
     handoff: readObject(HANDOFF_KEY, null),
+    shellEvidence: buildOutsideReviewEvidence(),
     manualRecords: readList(MANUAL_RECORD_KEY),
     defects: readList(DEFECT_LEDGER_KEY),
     recorderExportPrepared: Boolean(localStorage.getItem(RECORDER_EXPORT_KEY)),
@@ -131,6 +137,7 @@ function exportOutsideReviewHandoff() {
     document.getElementById('outsideReviewChecklist')?.appendChild(link);
   }
   link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderOutsideReviewEvidence('Outside-review handoff prepared with shell evidence.');
   renderOutsideReviewChecklist('Outside-review handoff prepared.');
 }
 
@@ -140,6 +147,52 @@ function clearOutsideReviewChecklist() {
   const link = document.getElementById('preparedOutsideReviewExport');
   if (link) link.remove();
   renderOutsideReviewChecklist('Outside-review checklist cleared.');
+}
+
+function shellReplayRows() {
+  const world = readObject(SHELL_STATE_KEY, {});
+  if (Array.isArray(world.replay)) return world.replay;
+  const replay = readObject(SHELL_REPLAY_KEY, []);
+  return Array.isArray(replay) ? replay : [];
+}
+
+function buildOutsideReviewEvidence() {
+  const replay = shellReplayRows();
+  const events = replay.map(row => row.event);
+  const receiptEvents = replay.filter(row => row.event === 'generateScenarioReceipt');
+  const latestReceipt = receiptEvents[receiptEvents.length - 1]?.payload || {};
+  const passCount = Number(latestReceipt.passCount || 0);
+  const fieldCount = Number(latestReceipt.fieldCount || 0);
+  const observations = readObject(SHELL_RECEIPT_OBSERVATION_KEY, []);
+  const checkpoints = readObject(SHELL_CHECKPOINT_KEY, []);
+  const exportText = localStorage.getItem(SHELL_EXPORT_KEY) || '';
+  return {
+    reportIntroduced: 324,
+    handoff: readObject(HANDOFF_KEY, null),
+    replayRows: replay.length,
+    reviewerPassSeen: events.includes('runReviewerLandingPass'),
+    receiptAllPass: fieldCount > 0 && passCount === fieldCount,
+    receipt: { passCount, fieldCount },
+    observationRows: Array.isArray(observations) ? observations.length : 0,
+    blockingObservationRows: Array.isArray(observations) ? observations.filter(row => row.severity === 'blocking' && row.status !== 'resolved').length : 0,
+    checkpointRows: Array.isArray(checkpoints) ? checkpoints.length : 0,
+    replayExportReady: exportText.length > 0 || events.includes('exportReplay'),
+    deepPanelsRevealed: events.includes('toggleDeepPanels'),
+    targetShell: '../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html',
+    boundary: 'outside-review-shell-evidence-public-local-only'
+  };
+}
+
+function renderOutsideReviewEvidence(message) {
+  const evidence = buildOutsideReviewEvidence();
+  const status = document.getElementById('outsideReviewEvidenceStatus');
+  if (status) {
+    const receipt = evidence.receipt.fieldCount ? `${evidence.receipt.passCount}/${evidence.receipt.fieldCount}` : 'missing';
+    status.textContent = message || `Shell evidence: replay ${evidence.replayRows} rows / reviewer pass ${evidence.reviewerPassSeen ? 'seen' : 'missing'} / receipt ${receipt} / observations ${evidence.observationRows} / export ${evidence.replayExportReady ? 'ready' : 'missing'}.`;
+  }
+  const out = document.getElementById('outsideReviewEvidenceOut');
+  if (out) out.textContent = JSON.stringify(evidence, null, 2);
+  return evidence;
 }
 
 function recordStep(stepId, result) {
@@ -255,7 +308,9 @@ document.getElementById('clearRecorder')?.addEventListener('click', clearRecorde
 document.querySelectorAll('[data-outside-review-item]').forEach(button => {
   button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
 });
+document.getElementById('refreshOutsideReviewEvidence')?.addEventListener('click', () => renderOutsideReviewEvidence());
 document.getElementById('exportOutsideReview')?.addEventListener('click', exportOutsideReviewHandoff);
 document.getElementById('clearOutsideReview')?.addEventListener('click', clearOutsideReviewChecklist);
 renderOutsideReviewChecklist();
+renderOutsideReviewEvidence();
 renderRecorder();

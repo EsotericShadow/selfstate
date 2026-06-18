@@ -1,0 +1,13 @@
+name,passed,score,channel,detail
+receipt_gate_browser_smoke_available_and_passing,True,1.0,review gate,Report 349 browser-smoked combined receipt gate exists and passes before this behavior change is accepted.
+return_recognition_source_wired,True,1.0,source behavior,"Maintained shell source wires returningVisit recognition, public continuity state, history event, and replay payload."
+browser_smoke_artifact_exists,True,1.0,browser artifact,Report 350 browser smoke artifact exists and is tagged correctly.
+browser_smoke_used_maintained_shell,True,1.0,surface discipline,Smoke ran in the maintained v61 app shell with no parallel surface.
+browser_smoke_created_persisted_session_before_return,True,1.0,browser interaction,"Smoke entered the world, talked to a resident, and created visible persisted replay/memory before return."
+browser_smoke_returned_without_reset,True,1.0,browser interaction,Smoke navigated back to the maintained shell without reset and added a return entry to replay.
+resident_recognized_returning_avatar,True,1.0,visible consequence,Visible resident memory and trust changed after return recognition.
+return_continuity_public_state_recorded,True,1.0,public state,"Browser smoke observed public returnContinuity state with report marker, resident, and replay row count."
+return_recognition_replay_logged,True,1.0,replay/debug,Browser smoke observed an enterWorld replay row with returningVisit true.
+browser_console_clean,True,1.0,runtime hygiene,Browser console errors observed: 0.
+experiment_index_includes_report_350,True,1.0,runner index,Experiment runner index includes the Report 350 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects LLM, consciousness, moral patienthood, autonomous language, production persistence, hosted URL, complete engine, and finished gameplay claims."

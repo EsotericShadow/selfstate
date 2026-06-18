@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "after_replay_rows": 3,
+    "after_trust": 0.602,
+    "before_replay_rows": 2,
+    "before_trust": 0.592,
+    "browser_artifact_score": 1.0,
+    "browser_interaction_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "console_error_count": 0,
+    "criterion_count": 12,
+    "public_state_score": 1.0,
+    "readiness": 1.0,
+    "replay_debug_score": 1.0,
+    "review_gate_score": 1.0,
+    "runner_index_score": 1.0,
+    "runtime_hygiene_score": 1.0,
+    "source_behavior_score": 1.0,
+    "surface_discipline_score": 1.0,
+    "visible_consequence_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-350: expand the return-recognition loop into a visible resident promise/follow-up thread so returning to the world advances one remembered obligation rather than only a greeting memory",
+  "report": 350,
+  "seed": 20270748,
+  "verdict": "pass"
+}

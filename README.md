@@ -67,6 +67,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo combined receipt status row report](docs/347_ssrm_3d_browser_world_v107_primary_demo_combined_receipt_status_row_report.md): makes the combined outside-review handoff receipt visible before download with a six-field included/missing status row.
 - [Primary demo combined receipt download guard report](docs/348_ssrm_3d_browser_world_v108_primary_demo_combined_receipt_download_guard_report.md): blocks normal outside-review handoff download when combined receipt fields are missing, while preserving an explicit debug override for incomplete review packets.
 - [Primary demo guarded receipt browser smoke report](docs/349_ssrm_3d_browser_world_v109_primary_demo_guarded_receipt_browser_smoke_report.md): runs a real browser-local smoke on the maintained launcher, observes the guarded download state, toggles the debug override, and verifies the final handoff payload records the override/export path.
+- [Primary shell return-recognition vertical slice report](docs/350_ssrm_3d_browser_world_v110_primary_shell_return_recognition_vertical_slice_report.md): adds a maintained-shell behavior where a resident recognizes a returning avatar after persisted replay, updates visible memory/trust, and logs public continuity evidence under the browser-smoked receipt gate.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

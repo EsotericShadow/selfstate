@@ -1,0 +1,2 @@
+report,seed,verdict,readiness,weakest_channel_score,review_gate_score,source_behavior_score,browser_artifact_score,surface_discipline_score,browser_interaction_score,visible_consequence_score,public_state_score,replay_debug_score,runtime_hygiene_score,runner_index_score,claim_hygiene_score,before_trust,after_trust,before_replay_rows,after_replay_rows,console_error_count,criterion_count
+350,20270748,pass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.592,0.602,2,3,0,12

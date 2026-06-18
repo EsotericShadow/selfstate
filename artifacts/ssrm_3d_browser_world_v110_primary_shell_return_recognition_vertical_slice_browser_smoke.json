@@ -1,0 +1,46 @@
+{
+  "afterReturn": {
+    "continuity": "Ari recognized returning avatar after 2 replay row(s); replay before return 2.",
+    "memory": "recognized returning avatar after 2 replay row(s)",
+    "progress": 0.366,
+    "replayRows": 3,
+    "replayText": "3 rows",
+    "trust": 0.602
+  },
+  "beforeReturn": {
+    "continuity": "No return recognition yet.",
+    "memory": "heard bounded phrase greet",
+    "progress": 0.36,
+    "replayRows": 2,
+    "replayText": "2 rows",
+    "trust": 0.592
+  },
+  "boundary": "browser-local-maintained-shell-return-recognition-smoke-only",
+  "browser": "in_app_browser",
+  "consoleErrors": [],
+  "dashboardEvidence": "Ari progress 0.366 / debt 1 / trust 0.602 / history 2 / memory recognized returning avatar after 2 replay row(s)",
+  "historyEvidence": "t1 state update trust 0.592; t2 return recognition trust 0.602; memory recognized returning avatar after 2 replay row(s)",
+  "initialEnterClicked": true,
+  "initialShellUrl": "http://127.0.0.1:8768/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=report-350",
+  "observedAt": "2026-06-18T11:05:44.258Z",
+  "parallelSurfaceCreated": false,
+  "replayEvents": [
+    "enterWorld",
+    "talkBounded",
+    "enterWorld"
+  ],
+  "report": 350,
+  "returnContinuity": {
+    "boundary": "browser-visible-return-continuity-dashboard-only",
+    "replayRowsBeforeReturn": 2,
+    "reportIntroduced": 350,
+    "resident": "Ari",
+    "visibleText": "Ari recognized returning avatar after 2 replay row(s); replay before return 2."
+  },
+  "returnedWithoutReset": true,
+  "returningVisitLogged": true,
+  "selectedResident": "Ari",
+  "shellUrl": "http://127.0.0.1:8768/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?source=report-350-return",
+  "talkClicked": true,
+  "traceEvidence": "latest enterWorld payload included returningVisit true and returnContinuity reportIntroduced 350"
+}

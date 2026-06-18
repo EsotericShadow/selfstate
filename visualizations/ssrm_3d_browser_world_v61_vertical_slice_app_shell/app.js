@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -65,6 +65,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   residents,
   resources: { water: 12, fiber: 10, wood: 17, care: 6 },
   replay: [],
+  returnContinuity: null,
   lastQA: []
 }));
 
@@ -75,6 +76,15 @@ const phraseSelect = document.getElementById('phraseSelect');
 
 function clamp(value) { return Math.max(0, Math.min(1, value)); }
 function currentResident() { return world.residents[world.selected]; }
+function renderReturnContinuity() {
+  const node = document.getElementById('returnContinuityOut');
+  if (!node) return;
+  if (!world.returnContinuity) {
+    node.textContent = 'No return recognition yet.';
+    return;
+  }
+  node.textContent = `${world.returnContinuity.resident} ${world.returnContinuity.memory}; replay before return ${world.returnContinuity.replayRowsBeforeReturn}.`;
+}
 function log(event, payload) {
   const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
   world.replay.push(row);
@@ -82,6 +92,7 @@ function log(event, payload) {
   localStorage.setItem(STATE_KEY, JSON.stringify(world));
   localStorage.setItem(REPLAY_KEY, JSON.stringify(world.replay));
   render();
+  renderReturnContinuity();
   return row;
 }
 function mutateResident(name, delta) {
@@ -95,7 +106,31 @@ function mutateResident(name, delta) {
     recordResidentHistory(name, delta.historyEvent || 'state update', delta.historyDetail || delta.memory || delta.schedule || 'trust/debt/progress changed');
   }
 }
-function enterWorld() { world.entered = true; world.avatar.room = 'arrival court'; return log('enterWorld', { boundary: BOUNDARY }); }
+function enterWorld() {
+  const returningVisit = world.entered === true && world.replay.length > 0;
+  const replayRowsBeforeReturn = world.replay.length;
+  world.entered = true;
+  world.avatar.room = 'arrival court';
+  if (returningVisit) {
+    const residentName = world.selected;
+    mutateResident(residentName, {
+      trust: 0.01,
+      progress: 0.006,
+      memory: `recognized returning avatar after ${replayRowsBeforeReturn} replay row(s)`,
+      historyEvent: 'return recognition',
+      historyDetail: `recognized avatar returning through ${world.avatar.room}`
+    });
+    world.returnContinuity = {
+      reportIntroduced: 350,
+      resident: residentName,
+      replayRowsBeforeReturn,
+      memory: world.residents[residentName].memory,
+      recognizedAtTick: world.tick,
+      boundary: 'browser-local-return-recognition-public-state-only'
+    };
+  }
+  return log('enterWorld', { boundary: BOUNDARY, returningVisit, returnContinuity: world.returnContinuity || null });
+}
 function moveNorth() { world.avatar.y = Math.max(52, world.avatar.y - 34); return log('moveNorth', { y: world.avatar.y }); }
 function moveSouth() { world.avatar.y = Math.min(560, world.avatar.y + 34); return log('moveSouth', { y: world.avatar.y }); }
 function moveWest() { world.avatar.x = Math.max(52, world.avatar.x - 34); updateRoom(); return log('moveWest', { x: world.avatar.x, room: world.avatar.room }); }

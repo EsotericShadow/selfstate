@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel,weakest_channel_score
+295,pass,0.9447,task_loop_not_finished_gameplay,0.842

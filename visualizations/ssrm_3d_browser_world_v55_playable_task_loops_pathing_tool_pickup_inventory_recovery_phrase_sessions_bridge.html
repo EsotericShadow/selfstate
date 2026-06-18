@@ -1,0 +1,414 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v55 Playable Task Loop Bridge</title>
+<style>
+:root { --ink:#10110f; --ember:#c8754a; --moss:#9bc68b; --water:#73abc2; --paper:#f7eedf; --line:rgba(247,238,223,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 18% 16%, rgba(200,117,74,.34), transparent 28%), radial-gradient(circle at 82% 14%, rgba(115,171,194,.25), transparent 30%), linear-gradient(135deg, #10110f, #233421 48%, #2e2738); }
+main { display:grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(16,17,15,.77); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(200,117,74,.18); color:var(--paper); padding:8px 11px; }
+pre { min-height:80px; padding:12px; border-radius:16px; background:rgba(0,0,0,.24); white-space:pre-wrap; }
+.flower { width:158px; height:158px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(247,238,223,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(155,198,139,.45), rgba(115,171,194,.42), rgba(200,117,74,.42), rgba(155,198,139,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="playable-task-panel"><h2>Playable task loop</h2><p>Click actions advance path, pickup, execute, recover, drop, phrase, and save states.</p><pre id="task-log"></pre></section>
+<section id="resident-pathing-panel"><h2>Resident pathing</h2><p>Avatar and residents move toward named project sites with path nodes and sensory markers.</p></section>
+<section id="tool-pickup-panel"><h2>Tool pickup/drop</h2><p>Tool owner, carried-by, pickup, drop, and visible hand state are stored in browser-local state.</p></section>
+<section id="inventory-delta-panel"><h2>Visible inventory deltas</h2><p>Execution mutates material and output counts and renders the delta.</p><pre id="inventory-log"></pre></section>
+<section id="failure-recovery-panel"><h2>Recoverable failed work</h2><p>Failure rows are visible and recoverable without erasing debt or retry context.</p></section>
+<section id="phrase-session-panel"><h2>Relationship phrase sessions</h2><p>Phrase use is saved across sessions as bounded phrasebook memory, not autonomous language.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Reload probes restore task loops, inventory, tools, recovery, and phrase sessions.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and task frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine, no LLM call.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">execute task step</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">advance playable loop</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">move avatar to site</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident path to site</button>
+<button data-action="showPathNodes" onclick="showPathNodes('path')">show path nodes</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pick up tool</button>
+<button data-action="dropTool" onclick="dropTool('tool')">drop tool</button>
+<button data-action="showToolOwner" onclick="showToolOwner('tool')">show tool owner</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">render inventory delta</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume material</button>
+<button data-action="restoreMaterial" onclick="restoreMaterial('inventory')">restore material</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover failed work</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">show retry option</button>
+<button data-action="showFailureDebt" onclick="showFailureDebt('recovery')">show failure debt</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">use relationship phrase</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">show saved phrase memory</button>
+<button data-action="showNoLanguageClaim" onclick="showNoLanguageClaim('phrase')">show no language claim</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">restore session memory</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showTaskFrequency" onclick="showTaskFrequency('frequency')">show task frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop moss_ward</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">move rain_gate</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup reed knife</button>
+<button data-action="dropTool" onclick="dropTool('tool')">drop reed knife</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">inventory reed bundle</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover wet footing</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">phrase path dry</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">restore moss_ward</button>
+<button data-action="showTaskFrequency" onclick="showTaskFrequency('frequency')">frequency moss_ward</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to rain_gate</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to rain_gate</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to blanket_room</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to blanket_room</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to root_alcove</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to root_alcove</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task drain rain path</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop drain rain path</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task patch blanket loom</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop patch blanket loom</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task copy root ledger</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop copy root ledger</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task raise warm-cup shelf</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop raise warm-cup shelf</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume reed bundle</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta reed bundle</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume dry clay</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta dry clay</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume moss cord</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta moss cord</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume charcoal mark</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta charcoal mark</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup reed knife</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return reed knife</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup loom hook</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return loom hook</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup ledger awl</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return ledger awl</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure wet footing</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry wet footing</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure cord snap</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry cord snap</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure ledger miscopy</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry ledger miscopy</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say path dry</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory path dry</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say loom wait</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory loom wait</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say ledger no touch</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory ledger no touch</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop glass_harbor</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">move lamp_pier</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup wick clamp</button>
+<button data-action="dropTool" onclick="dropTool('tool')">drop wick clamp</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">inventory lamp oil</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover lamp sputter</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">phrase lamp bright</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">restore glass_harbor</button>
+<button data-action="showTaskFrequency" onclick="showTaskFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to lamp_pier</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to lamp_pier</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to net_room</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to net_room</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to fog_rail</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to fog_rail</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task relight public lamp</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop relight public lamp</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task mend fog net</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop mend fog net</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task seal fog catcher</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop seal fog catcher</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task mark crossing rope</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop mark crossing rope</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume lamp oil</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta lamp oil</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume glass bead</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta glass bead</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume net fiber</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta net fiber</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume salt chalk</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta salt chalk</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup wick clamp</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return wick clamp</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup net shuttle</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return net shuttle</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup rope gauge</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return rope gauge</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure lamp sputter</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry lamp sputter</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure net tear</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry net tear</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure fog seal leak</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry fog seal leak</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say lamp bright</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory lamp bright</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say net keeper</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory net keeper</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say tea first</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory tea first</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop cinder_garden</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">move seed_shelf</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup shade mallet</button>
+<button data-action="dropTool" onclick="dropTool('tool')">drop shade mallet</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">inventory shade reed</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover heat spike</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">phrase seed sleep</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">restore cinder_garden</button>
+<button data-action="showTaskFrequency" onclick="showTaskFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to seed_shelf</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to seed_shelf</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to ash_path</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to ash_path</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to shade_tent</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to shade_tent</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task shade seed rows</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop shade seed rows</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task sort ember fruit</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop sort ember fruit</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task cool ash path</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop cool ash path</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task repair seed calendar</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop repair seed calendar</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume shade reed</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta shade reed</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume ember basket</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta ember basket</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume cool stone</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta cool stone</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume seed ink</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta seed ink</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup shade mallet</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return shade mallet</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup basket hook</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return basket hook</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup calendar stylus</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return calendar stylus</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure heat spike</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry heat spike</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure basket spill</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry basket spill</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure calendar mismatch</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry calendar mismatch</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say seed sleep</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory seed sleep</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say shade first</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory shade first</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say cool hand</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory cool hand</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop lichen_bridge</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">move rope_bridge</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup tension peg</button>
+<button data-action="dropTool" onclick="dropTool('tool')">drop tension peg</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">inventory rope fiber</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover rope slack</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">phrase rope safe</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">restore lichen_bridge</button>
+<button data-action="showTaskFrequency" onclick="showTaskFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to rope_bridge</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to rope_bridge</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to signal_post</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to signal_post</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to meal_room</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to meal_room</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task test rope bridge</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop test rope bridge</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task weave spare rope</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop weave spare rope</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task mark signal bell</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop mark signal bell</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task repair meal ledger</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop repair meal ledger</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume rope fiber</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta rope fiber</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume bell tin</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta bell tin</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume meal token</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta meal token</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume lichen glue</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta lichen glue</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup tension peg</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return tension peg</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup bell file</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return bell file</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup ledger punch</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return ledger punch</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure rope slack</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry rope slack</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure bell mistune</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry bell mistune</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure token shortage</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry token shortage</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say rope safe</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory rope safe</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say signal hush</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory signal hush</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say bowl shared</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory bowl shared</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop orchid_engine</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">move engine_ring</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup valve key</button>
+<button data-action="dropTool" onclick="dropTool('tool')">drop valve key</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">inventory valve grease</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover valve knock</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">phrase valve wait</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">restore orchid_engine</button>
+<button data-action="showTaskFrequency" onclick="showTaskFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to engine_ring</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to engine_ring</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to gear_wash</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to gear_wash</button>
+<button data-action="moveAvatarToSite" onclick="moveAvatarToSite('path')">avatar to orchid_bay</button>
+<button data-action="residentPathToSite" onclick="residentPathToSite('path')">resident to orchid_bay</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task listen to valve pulse</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop listen to valve pulse</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task clean gear wash</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop clean gear wash</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task tend orchid lamp</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop tend orchid lamp</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('task')">task stabilize steam kettle</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">loop stabilize steam kettle</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume valve grease</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta valve grease</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume gear cloth</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta gear cloth</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume orchid oil</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta orchid oil</button>
+<button data-action="executeTaskStep" onclick="executeTaskStep('inventory')">consume steam seal</button>
+<button data-action="renderInventoryDelta" onclick="renderInventoryDelta('inventory')">delta steam seal</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup valve key</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return valve key</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup gear brush</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return gear brush</button>
+<button data-action="pickupTool" onclick="pickupTool('tool')">pickup lamp tongs</button>
+<button data-action="dropTool" onclick="dropTool('tool')">return lamp tongs</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure valve knock</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry valve knock</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure gear jam</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry gear jam</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">failure orchid dim</button>
+<button data-action="showRetryOption" onclick="showRetryOption('recovery')">retry orchid dim</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say valve wait</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory valve wait</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say gear lane</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory gear lane</button>
+<button data-action="useRelationshipPhrase" onclick="useRelationshipPhrase('phrase')">say orchid rest</button>
+<button data-action="showSavedPhraseMemory" onclick="showSavedPhraseMemory('phrase')">memory orchid rest</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step path_to_site</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover path_to_site</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step pickup_tool</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover pickup_tool</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step execute_task</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover execute_task</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step recover_failed_work</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover recover_failed_work</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step drop_tool</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover drop_tool</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step relationship_phrase</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover relationship_phrase</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step save_session</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover save_session</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step material low</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover material low</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step tool owner asks</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover tool owner asks</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step resident leads</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover resident leads</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step avatar waits</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover avatar waits</button>
+<button data-action="advancePlayableLoop" onclick="advancePlayableLoop('task')">step save session</button>
+<button data-action="recoverFailedWork" onclick="recoverFailedWork('recovery')">recover save session</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload task loop</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload pathing</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload tools</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload inventory</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload recoveries</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload phrases</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload history</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload no LLM</button>
+<button data-action="restoreSessionMemory" onclick="restoreSessionMemory('reload')">reload private boundary</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v55.playable.task.loop';
+function readState() {
+  return JSON.parse(localStorage.getItem(stateKey) || '{"events":[],"avatar":{"x":0,"y":0},"resident":{},"inventory":{},"outputs":{},"tools":{},"phrases":{},"recoveries":[]}');
+}
+function writeState(state) {
+  localStorage.setItem(stateKey, JSON.stringify(state));
+  return state;
+}
+function pushTrace(action, scope) {
+  const state = readState();
+  state.events.push({ action, scope, t: state.events.length, note: 'browser-local deterministic playable task loop; no LLM call' });
+  return writeState(state);
+}
+function renderLogs(state) {
+  const task = document.getElementById('task-log');
+  const inventory = document.getElementById('inventory-log');
+  if (task) task.textContent = JSON.stringify(state.events.slice(-6), null, 2);
+  if (inventory) inventory.textContent = JSON.stringify({ inventory: state.inventory, outputs: state.outputs, tools: state.tools }, null, 2);
+  return state;
+}
+function moveAvatarToSite(scope) {
+  const state = pushTrace('moveAvatarToSite', scope);
+  state.avatar = { x: (state.avatar.x + 1) % 13, y: (state.avatar.y + 2) % 11, site: scope };
+  return renderLogs(writeState(state));
+}
+function residentPathToSite(scope) {
+  const state = pushTrace('residentPathToSite', scope);
+  state.resident[scope] = { closer: true, pathNodes: ['start', 'mid', scope] };
+  return renderLogs(writeState(state));
+}
+function showPathNodes(scope) { return renderLogs(pushTrace('showPathNodes', scope)); }
+function pickupTool(scope) {
+  const state = pushTrace('pickupTool', scope);
+  state.tools[scope] = { carriedBy: 'resident', location: 'hand', permissionChecked: true };
+  return renderLogs(writeState(state));
+}
+function dropTool(scope) {
+  const state = pushTrace('dropTool', scope);
+  state.tools[scope] = { carriedBy: 'none', location: 'site', permissionChecked: true };
+  return renderLogs(writeState(state));
+}
+function showToolOwner(scope) { return renderLogs(pushTrace('showToolOwner', scope)); }
+function executeTaskStep(scope) {
+  const state = pushTrace('executeTaskStep', scope);
+  state.inventory[scope] = Math.max(0, (state.inventory[scope] ?? 8) - 1);
+  state.outputs[scope] = (state.outputs[scope] ?? 0) + 1;
+  return renderLogs(writeState(state));
+}
+function advancePlayableLoop(scope) { return renderLogs(pushTrace('advancePlayableLoop', scope)); }
+function renderInventoryDelta(scope) { return renderLogs(pushTrace('renderInventoryDelta', scope)); }
+function restoreMaterial(scope) {
+  const state = pushTrace('restoreMaterial', scope);
+  state.inventory[scope] = (state.inventory[scope] ?? 0) + 1;
+  return renderLogs(writeState(state));
+}
+function recoverFailedWork(scope) {
+  const state = pushTrace('recoverFailedWork', scope);
+  state.recoveries.push({ scope, retryAvailable: true, failedWorkNotErased: true });
+  return renderLogs(writeState(state));
+}
+function showRetryOption(scope) { return renderLogs(pushTrace('showRetryOption', scope)); }
+function showFailureDebt(scope) { return renderLogs(pushTrace('showFailureDebt', scope)); }
+function useRelationshipPhrase(scope) {
+  const state = pushTrace('useRelationshipPhrase', scope);
+  state.phrases[scope] = { used: (state.phrases[scope]?.used || 0) + 1, savedSessionVisible: true, noAutonomousLanguageClaim: true };
+  return renderLogs(writeState(state));
+}
+function showSavedPhraseMemory(scope) { return renderLogs(pushTrace('showSavedPhraseMemory', scope)); }
+function showNoLanguageClaim(scope) { return renderLogs(pushTrace('showNoLanguageClaim', scope)); }
+function restoreSessionMemory(scope) { return renderLogs(readState()); }
+function saveWorldState(scope) { return renderLogs(pushTrace('saveWorldState', scope)); }
+function restoreWorldState(scope) { return restoreSessionMemory(scope); }
+function exportReplay(scope) { return JSON.stringify(readState()); }
+function showFlowerPhase(scope) { return renderLogs(pushTrace('showFlowerPhase', scope)); }
+function showTaskFrequency(scope) { return renderLogs(pushTrace('showTaskFrequency', scope)); }
+function showRateBoundary(scope) { return renderLogs(pushTrace('showRateBoundary', scope)); }
+renderLogs(readState());
+</script>
+</body>
+</html>

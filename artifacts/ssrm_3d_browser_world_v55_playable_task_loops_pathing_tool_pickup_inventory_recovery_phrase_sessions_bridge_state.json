@@ -1,0 +1,582 @@
+{
+  "boundary": "Deterministic browser-local playable-task-loop/pathing/tool-pickup/inventory-delta/recoverable-failure/phrase-session scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim",
+  "inherited_history_hash": "886d41bf3f23e430",
+  "inventory": {
+    "cinder_garden:cool stone": 540,
+    "cinder_garden:ember basket": 540,
+    "cinder_garden:seed ink": 538,
+    "cinder_garden:shade reed": 540,
+    "glass_harbor:glass bead": 539,
+    "glass_harbor:lamp oil": 538,
+    "glass_harbor:net fiber": 540,
+    "glass_harbor:salt chalk": 542,
+    "lichen_bridge:bell tin": 538,
+    "lichen_bridge:lichen glue": 541,
+    "lichen_bridge:meal token": 540,
+    "lichen_bridge:rope fiber": 538,
+    "moss_ward:charcoal mark": 538,
+    "moss_ward:dry clay": 539,
+    "moss_ward:moss cord": 540,
+    "moss_ward:reed bundle": 538,
+    "orchid_engine:gear cloth": 538,
+    "orchid_engine:orchid oil": 540,
+    "orchid_engine:steam seal": 540,
+    "orchid_engine:valve grease": 540
+  },
+  "output_inventory": {
+    "cinder_garden:cool ash path": 210,
+    "cinder_garden:repair seed calendar": 211,
+    "cinder_garden:shade seed rows": 208,
+    "cinder_garden:sort ember fruit": 210,
+    "glass_harbor:mark crossing rope": 210,
+    "glass_harbor:mend fog net": 211,
+    "glass_harbor:relight public lamp": 210,
+    "glass_harbor:seal fog catcher": 208,
+    "lichen_bridge:mark signal bell": 210,
+    "lichen_bridge:repair meal ledger": 210,
+    "lichen_bridge:test rope bridge": 210,
+    "lichen_bridge:weave spare rope": 209,
+    "moss_ward:copy root ledger": 210,
+    "moss_ward:drain rain path": 210,
+    "moss_ward:patch blanket loom": 209,
+    "moss_ward:raise warm-cup shelf": 211,
+    "orchid_engine:clean gear wash": 210,
+    "orchid_engine:listen to valve pulse": 211,
+    "orchid_engine:stabilize steam kettle": 208,
+    "orchid_engine:tend orchid lamp": 211
+  },
+  "phrase_mastery": {
+    "cinder_garden:Juno:cool hand": 0.607,
+    "cinder_garden:Juno:seed sleep": 0.612,
+    "cinder_garden:Juno:shade first": 0.605,
+    "cinder_garden:Pax:cool hand": 0.606,
+    "cinder_garden:Pax:seed sleep": 0.612,
+    "cinder_garden:Pax:shade first": 0.603,
+    "cinder_garden:Vale:cool hand": 0.618,
+    "cinder_garden:Vale:seed sleep": 0.6,
+    "cinder_garden:Vale:shade first": 0.608,
+    "cinder_garden:Wren:cool hand": 0.606,
+    "cinder_garden:Wren:seed sleep": 0.601,
+    "cinder_garden:Wren:shade first": 0.609,
+    "glass_harbor:Nia:lamp bright": 0.621,
+    "glass_harbor:Nia:net keeper": 0.591,
+    "glass_harbor:Nia:tea first": 0.605,
+    "glass_harbor:Oren:lamp bright": 0.618,
+    "glass_harbor:Oren:net keeper": 0.599,
+    "glass_harbor:Oren:tea first": 0.616,
+    "glass_harbor:Puck:lamp bright": 0.597,
+    "glass_harbor:Puck:net keeper": 0.607,
+    "glass_harbor:Puck:tea first": 0.611,
+    "glass_harbor:Sera:lamp bright": 0.608,
+    "glass_harbor:Sera:net keeper": 0.612,
+    "glass_harbor:Sera:tea first": 0.601,
+    "lichen_bridge:Kio:bowl shared": 0.597,
+    "lichen_bridge:Kio:rope safe": 0.607,
+    "lichen_bridge:Kio:signal hush": 0.613,
+    "lichen_bridge:Luma:bowl shared": 0.597,
+    "lichen_bridge:Luma:rope safe": 0.619,
+    "lichen_bridge:Luma:signal hush": 0.612,
+    "lichen_bridge:Rin:bowl shared": 0.608,
+    "lichen_bridge:Rin:rope safe": 0.61,
+    "lichen_bridge:Rin:signal hush": 0.6,
+    "lichen_bridge:Sol:bowl shared": 0.61,
+    "lichen_bridge:Sol:rope safe": 0.602,
+    "lichen_bridge:Sol:signal hush": 0.611,
+    "moss_ward:Ari:ledger no touch": 0.601,
+    "moss_ward:Ari:loom wait": 0.614,
+    "moss_ward:Ari:path dry": 0.603,
+    "moss_ward:Fay:ledger no touch": 0.599,
+    "moss_ward:Fay:loom wait": 0.602,
+    "moss_ward:Fay:path dry": 0.622,
+    "moss_ward:Milo:ledger no touch": 0.61,
+    "moss_ward:Milo:loom wait": 0.595,
+    "moss_ward:Milo:path dry": 0.617,
+    "moss_ward:Tala:ledger no touch": 0.618,
+    "moss_ward:Tala:loom wait": 0.6,
+    "moss_ward:Tala:path dry": 0.594,
+    "orchid_engine:Bea:gear lane": 0.599,
+    "orchid_engine:Bea:orchid rest": 0.605,
+    "orchid_engine:Bea:valve wait": 0.622,
+    "orchid_engine:Cai:gear lane": 0.595,
+    "orchid_engine:Cai:orchid rest": 0.627,
+    "orchid_engine:Cai:valve wait": 0.601,
+    "orchid_engine:Dax:gear lane": 0.618,
+    "orchid_engine:Dax:orchid rest": 0.616,
+    "orchid_engine:Dax:valve wait": 0.59,
+    "orchid_engine:Eli:gear lane": 0.616,
+    "orchid_engine:Eli:orchid rest": 0.6,
+    "orchid_engine:Eli:valve wait": 0.607
+  },
+  "reload_index": {
+    "cinder_garden": 99,
+    "glass_harbor": 97,
+    "lichen_bridge": 98,
+    "moss_ward": 99,
+    "orchid_engine": 97
+  },
+  "settlements": [
+    {
+      "dialect_family": "proto-moss-breath",
+      "failure_modes": [
+        "wet footing",
+        "cord snap",
+        "ledger miscopy"
+      ],
+      "flower_offset": 0.021,
+      "frequency": 5.21,
+      "inventory_items": [
+        "reed bundle",
+        "dry clay",
+        "moss cord",
+        "charcoal mark"
+      ],
+      "phrase_memories": [
+        "helped after rain",
+        "waited during repair",
+        "asked before ledger"
+      ],
+      "project_names": [
+        "drain rain path",
+        "patch blanket loom",
+        "copy root ledger",
+        "raise warm-cup shelf"
+      ],
+      "relationship_phrases": [
+        "path dry",
+        "loom wait",
+        "ledger no touch"
+      ],
+      "residents": [
+        "Ari",
+        "Fay",
+        "Milo",
+        "Tala"
+      ],
+      "sensory_anchor": "wet moss and warm broth",
+      "settlement_id": "moss_ward",
+      "sites": [
+        {
+          "sensory_marker": "wet moss",
+          "site_id": "rain_gate",
+          "x": 2,
+          "y": 8
+        },
+        {
+          "sensory_marker": "warm wool",
+          "site_id": "blanket_room",
+          "x": 6,
+          "y": 4
+        },
+        {
+          "sensory_marker": "root ink",
+          "site_id": "root_alcove",
+          "x": 9,
+          "y": 2
+        }
+      ],
+      "tools": [
+        "reed knife",
+        "loom hook",
+        "ledger awl"
+      ]
+    },
+    {
+      "dialect_family": "proto-harbor-chime",
+      "failure_modes": [
+        "lamp sputter",
+        "net tear",
+        "fog seal leak"
+      ],
+      "flower_offset": 0.034,
+      "frequency": 6.34,
+      "inventory_items": [
+        "lamp oil",
+        "glass bead",
+        "net fiber",
+        "salt chalk"
+      ],
+      "phrase_memories": [
+        "guarded lamp for me",
+        "kept net lane clear",
+        "shared crossing tea"
+      ],
+      "project_names": [
+        "relight public lamp",
+        "mend fog net",
+        "seal fog catcher",
+        "mark crossing rope"
+      ],
+      "relationship_phrases": [
+        "lamp bright",
+        "net keeper",
+        "tea first"
+      ],
+      "residents": [
+        "Nia",
+        "Oren",
+        "Puck",
+        "Sera"
+      ],
+      "sensory_anchor": "salt steam and lamp oil",
+      "settlement_id": "glass_harbor",
+      "sites": [
+        {
+          "sensory_marker": "lamp oil",
+          "site_id": "lamp_pier",
+          "x": 3,
+          "y": 9
+        },
+        {
+          "sensory_marker": "salt fiber",
+          "site_id": "net_room",
+          "x": 7,
+          "y": 5
+        },
+        {
+          "sensory_marker": "cold fog",
+          "site_id": "fog_rail",
+          "x": 11,
+          "y": 3
+        }
+      ],
+      "tools": [
+        "wick clamp",
+        "net shuttle",
+        "rope gauge"
+      ]
+    },
+    {
+      "dialect_family": "proto-cinder-pulse",
+      "failure_modes": [
+        "heat spike",
+        "basket spill",
+        "calendar mismatch"
+      ],
+      "flower_offset": 0.055,
+      "frequency": 8.89,
+      "inventory_items": [
+        "shade reed",
+        "ember basket",
+        "cool stone",
+        "seed ink"
+      ],
+      "phrase_memories": [
+        "kept the path cool",
+        "left my basket sorted",
+        "remembered shade first"
+      ],
+      "project_names": [
+        "shade seed rows",
+        "sort ember fruit",
+        "cool ash path",
+        "repair seed calendar"
+      ],
+      "relationship_phrases": [
+        "seed sleep",
+        "shade first",
+        "cool hand"
+      ],
+      "residents": [
+        "Juno",
+        "Pax",
+        "Vale",
+        "Wren"
+      ],
+      "sensory_anchor": "warm ash and seed oil",
+      "settlement_id": "cinder_garden",
+      "sites": [
+        {
+          "sensory_marker": "seed oil",
+          "site_id": "seed_shelf",
+          "x": 2,
+          "y": 5
+        },
+        {
+          "sensory_marker": "cool ash",
+          "site_id": "ash_path",
+          "x": 5,
+          "y": 9
+        },
+        {
+          "sensory_marker": "dry shade",
+          "site_id": "shade_tent",
+          "x": 10,
+          "y": 6
+        }
+      ],
+      "tools": [
+        "shade mallet",
+        "basket hook",
+        "calendar stylus"
+      ]
+    },
+    {
+      "dialect_family": "proto-bridge-hum",
+      "failure_modes": [
+        "rope slack",
+        "bell mistune",
+        "token shortage"
+      ],
+      "flower_offset": 0.044,
+      "frequency": 7.55,
+      "inventory_items": [
+        "rope fiber",
+        "bell tin",
+        "meal token",
+        "lichen glue"
+      ],
+      "phrase_memories": [
+        "waited at the rope",
+        "heard my signal",
+        "kept bowl shared"
+      ],
+      "project_names": [
+        "test rope bridge",
+        "weave spare rope",
+        "mark signal bell",
+        "repair meal ledger"
+      ],
+      "relationship_phrases": [
+        "rope safe",
+        "signal hush",
+        "bowl shared"
+      ],
+      "residents": [
+        "Kio",
+        "Luma",
+        "Rin",
+        "Sol"
+      ],
+      "sensory_anchor": "damp rope and lichen soup",
+      "settlement_id": "lichen_bridge",
+      "sites": [
+        {
+          "sensory_marker": "damp rope",
+          "site_id": "rope_bridge",
+          "x": 1,
+          "y": 7
+        },
+        {
+          "sensory_marker": "bell hum",
+          "site_id": "signal_post",
+          "x": 6,
+          "y": 10
+        },
+        {
+          "sensory_marker": "lichen soup",
+          "site_id": "meal_room",
+          "x": 9,
+          "y": 5
+        }
+      ],
+      "tools": [
+        "tension peg",
+        "bell file",
+        "ledger punch"
+      ]
+    },
+    {
+      "dialect_family": "proto-engine-ring",
+      "failure_modes": [
+        "valve knock",
+        "gear jam",
+        "orchid dim"
+      ],
+      "flower_offset": 0.067,
+      "frequency": 9.87,
+      "inventory_items": [
+        "valve grease",
+        "gear cloth",
+        "orchid oil",
+        "steam seal"
+      ],
+      "phrase_memories": [
+        "did not turn the valve",
+        "kept the gear lane open",
+        "let orchid rest"
+      ],
+      "project_names": [
+        "listen to valve pulse",
+        "clean gear wash",
+        "tend orchid lamp",
+        "stabilize steam kettle"
+      ],
+      "relationship_phrases": [
+        "valve wait",
+        "gear lane",
+        "orchid rest"
+      ],
+      "residents": [
+        "Bea",
+        "Cai",
+        "Dax",
+        "Eli"
+      ],
+      "sensory_anchor": "orchid oil and warm iron",
+      "settlement_id": "orchid_engine",
+      "sites": [
+        {
+          "sensory_marker": "warm iron",
+          "site_id": "engine_ring",
+          "x": 4,
+          "y": 3
+        },
+        {
+          "sensory_marker": "gear oil",
+          "site_id": "gear_wash",
+          "x": 8,
+          "y": 8
+        },
+        {
+          "sensory_marker": "orchid steam",
+          "site_id": "orchid_bay",
+          "x": 12,
+          "y": 4
+        }
+      ],
+      "tools": [
+        "valve key",
+        "gear brush",
+        "lamp tongs"
+      ]
+    }
+  ],
+  "tool_carrier": {
+    "cinder_garden:basket hook": "none",
+    "cinder_garden:calendar stylus": "none",
+    "cinder_garden:shade mallet": "Pax",
+    "glass_harbor:net shuttle": "Oren",
+    "glass_harbor:rope gauge": "Sera",
+    "glass_harbor:wick clamp": "Nia",
+    "lichen_bridge:bell file": "Sol",
+    "lichen_bridge:ledger punch": "Kio",
+    "lichen_bridge:tension peg": "Luma",
+    "moss_ward:ledger awl": "Fay",
+    "moss_ward:loom hook": "Ari",
+    "moss_ward:reed knife": "none",
+    "orchid_engine:gear brush": "Bea",
+    "orchid_engine:lamp tongs": "none",
+    "orchid_engine:valve key": "none"
+  },
+  "tool_location": {
+    "cinder_garden:basket hook": "seed_shelf",
+    "cinder_garden:calendar stylus": "shade_tent",
+    "cinder_garden:shade mallet": "carried",
+    "glass_harbor:net shuttle": "carried",
+    "glass_harbor:rope gauge": "carried",
+    "glass_harbor:wick clamp": "carried",
+    "lichen_bridge:bell file": "carried",
+    "lichen_bridge:ledger punch": "carried",
+    "lichen_bridge:tension peg": "carried",
+    "moss_ward:ledger awl": "carried",
+    "moss_ward:loom hook": "carried",
+    "moss_ward:reed knife": "root_alcove",
+    "orchid_engine:gear brush": "carried",
+    "orchid_engine:lamp tongs": "gear_wash",
+    "orchid_engine:valve key": "engine_ring"
+  },
+  "trust": {
+    "cinder_garden:Juno": 0.95,
+    "cinder_garden:Pax": 0.95,
+    "cinder_garden:Vale": 0.95,
+    "cinder_garden:Wren": 0.95,
+    "glass_harbor:Nia": 0.95,
+    "glass_harbor:Oren": 0.95,
+    "glass_harbor:Puck": 0.95,
+    "glass_harbor:Sera": 0.95,
+    "lichen_bridge:Kio": 0.95,
+    "lichen_bridge:Luma": 0.95,
+    "lichen_bridge:Rin": 0.95,
+    "lichen_bridge:Sol": 0.95,
+    "moss_ward:Ari": 0.95,
+    "moss_ward:Fay": 0.95,
+    "moss_ward:Milo": 0.95,
+    "moss_ward:Tala": 0.95,
+    "orchid_engine:Bea": 0.95,
+    "orchid_engine:Cai": 0.95,
+    "orchid_engine:Dax": 0.95,
+    "orchid_engine:Eli": 0.95
+  },
+  "work_integrity": {
+    "cinder_garden:Juno:cool ash path": 0.94,
+    "cinder_garden:Juno:repair seed calendar": 0.869,
+    "cinder_garden:Juno:shade seed rows": 0.94,
+    "cinder_garden:Juno:sort ember fruit": 0.94,
+    "cinder_garden:Pax:cool ash path": 0.94,
+    "cinder_garden:Pax:repair seed calendar": 0.94,
+    "cinder_garden:Pax:shade seed rows": 0.94,
+    "cinder_garden:Pax:sort ember fruit": 0.896,
+    "cinder_garden:Vale:cool ash path": 0.94,
+    "cinder_garden:Vale:repair seed calendar": 0.863,
+    "cinder_garden:Vale:shade seed rows": 0.94,
+    "cinder_garden:Vale:sort ember fruit": 0.935,
+    "cinder_garden:Wren:cool ash path": 0.94,
+    "cinder_garden:Wren:repair seed calendar": 0.887,
+    "cinder_garden:Wren:shade seed rows": 0.94,
+    "cinder_garden:Wren:sort ember fruit": 0.899,
+    "glass_harbor:Nia:mark crossing rope": 0.875,
+    "glass_harbor:Nia:mend fog net": 0.92,
+    "glass_harbor:Nia:relight public lamp": 0.94,
+    "glass_harbor:Nia:seal fog catcher": 0.94,
+    "glass_harbor:Oren:mark crossing rope": 0.94,
+    "glass_harbor:Oren:mend fog net": 0.89,
+    "glass_harbor:Oren:relight public lamp": 0.94,
+    "glass_harbor:Oren:seal fog catcher": 0.94,
+    "glass_harbor:Puck:mark crossing rope": 0.875,
+    "glass_harbor:Puck:mend fog net": 0.94,
+    "glass_harbor:Puck:relight public lamp": 0.94,
+    "glass_harbor:Puck:seal fog catcher": 0.94,
+    "glass_harbor:Sera:mark crossing rope": 0.94,
+    "glass_harbor:Sera:mend fog net": 0.848,
+    "glass_harbor:Sera:relight public lamp": 0.94,
+    "glass_harbor:Sera:seal fog catcher": 0.94,
+    "lichen_bridge:Kio:mark signal bell": 0.94,
+    "lichen_bridge:Kio:repair meal ledger": 0.866,
+    "lichen_bridge:Kio:test rope bridge": 0.94,
+    "lichen_bridge:Kio:weave spare rope": 0.94,
+    "lichen_bridge:Luma:mark signal bell": 0.94,
+    "lichen_bridge:Luma:repair meal ledger": 0.92,
+    "lichen_bridge:Luma:test rope bridge": 0.94,
+    "lichen_bridge:Luma:weave spare rope": 0.89,
+    "lichen_bridge:Rin:mark signal bell": 0.94,
+    "lichen_bridge:Rin:repair meal ledger": 0.878,
+    "lichen_bridge:Rin:test rope bridge": 0.94,
+    "lichen_bridge:Rin:weave spare rope": 0.914,
+    "lichen_bridge:Sol:mark signal bell": 0.94,
+    "lichen_bridge:Sol:repair meal ledger": 0.94,
+    "lichen_bridge:Sol:test rope bridge": 0.94,
+    "lichen_bridge:Sol:weave spare rope": 0.887,
+    "moss_ward:Ari:copy root ledger": 0.94,
+    "moss_ward:Ari:drain rain path": 0.94,
+    "moss_ward:Ari:patch blanket loom": 0.932,
+    "moss_ward:Ari:raise warm-cup shelf": 0.836,
+    "moss_ward:Fay:copy root ledger": 0.94,
+    "moss_ward:Fay:drain rain path": 0.94,
+    "moss_ward:Fay:patch blanket loom": 0.848,
+    "moss_ward:Fay:raise warm-cup shelf": 0.935,
+    "moss_ward:Milo:copy root ledger": 0.94,
+    "moss_ward:Milo:drain rain path": 0.94,
+    "moss_ward:Milo:patch blanket loom": 0.908,
+    "moss_ward:Milo:raise warm-cup shelf": 0.866,
+    "moss_ward:Tala:copy root ledger": 0.94,
+    "moss_ward:Tala:drain rain path": 0.94,
+    "moss_ward:Tala:patch blanket loom": 0.89,
+    "moss_ward:Tala:raise warm-cup shelf": 0.929,
+    "orchid_engine:Bea:clean gear wash": 0.94,
+    "orchid_engine:Bea:listen to valve pulse": 0.94,
+    "orchid_engine:Bea:stabilize steam kettle": 0.887,
+    "orchid_engine:Bea:tend orchid lamp": 0.94,
+    "orchid_engine:Cai:clean gear wash": 0.92,
+    "orchid_engine:Cai:listen to valve pulse": 0.94,
+    "orchid_engine:Cai:stabilize steam kettle": 0.929,
+    "orchid_engine:Cai:tend orchid lamp": 0.94,
+    "orchid_engine:Dax:clean gear wash": 0.94,
+    "orchid_engine:Dax:listen to valve pulse": 0.94,
+    "orchid_engine:Dax:stabilize steam kettle": 0.863,
+    "orchid_engine:Dax:tend orchid lamp": 0.94,
+    "orchid_engine:Eli:clean gear wash": 0.884,
+    "orchid_engine:Eli:listen to valve pulse": 0.94,
+    "orchid_engine:Eli:stabilize steam kettle": 0.935,
+    "orchid_engine:Eli:tend orchid lamp": 0.94
+  }
+}

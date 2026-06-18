@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report 286 Browser World v46</title>
+  <style>
+    :root { --ink:#14211d; --paper:#f2e4c6; --moss:#61774b; --ember:#b45c3d; --river:#507e8d; --gold:#cfa147; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at 13% 10%, rgba(207,161,71,.45), transparent 18rem), radial-gradient(circle at 84% 18%, rgba(80,126,141,.34), transparent 17rem), linear-gradient(135deg, #ead8b9, #bdcda8 52%, #8ba8a3); }
+    main { max-width:1260px; margin:0 auto; padding:24px; }
+    h1 { font-size:clamp(2rem,5vw,4.9rem); line-height:.92; margin:20px 0; letter-spacing:-.045em; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+    section { border:2px solid rgba(20,33,29,.34); border-radius:24px; padding:18px; background:rgba(242,228,198,.84); box-shadow:0 18px 52px rgba(20,33,29,.16); }
+    button { margin:5px; padding:9px 11px; border:1px solid var(--ink); border-radius:999px; background:var(--gold); color:var(--ink); cursor:pointer; }
+    button:hover { background:var(--ember); color:#fff7df; }
+    .boundary { border-left:8px solid var(--ember); }
+    .viewport { min-height:240px; border-radius:18px; background:linear-gradient(180deg, rgba(80,126,141,.32), rgba(97,119,75,.27)), repeating-linear-gradient(90deg, rgba(20,33,29,.08) 0 1px, transparent 1px 34px), repeating-linear-gradient(0deg, rgba(20,33,29,.06) 0 1px, transparent 1px 34px); display:grid; place-items:center; font-weight:bold; }
+    .flower { width:168px; height:168px; border-radius:50%; background:repeating-radial-gradient(circle, rgba(207,161,71,.45) 0 9px, rgba(80,126,141,.24) 9px 18px); display:grid; place-items:center; }
+    .log { min-height:140px; font-family:ui-monospace, SFMono-Regular, Menlo, monospace; white-space:pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser World v46: resident scheduling, negotiated loans, roles, apology arcs, debt hooks</h1>
+  <section class="boundary"><strong>Boundary:</strong> deterministic scaffold only; no subjective consciousness claim, no real consent claim, no moral patienthood claim, no metaphysical frequency claim.</section>
+  <section id="resident-schedule-panel"><h2>Resident-to-resident scheduling</h2><div class="viewport">residents schedule each other while the avatar listens or is absent</div></section>
+  <div class="grid">
+    <section id="negotiated-loans-panel"><h2>Negotiated object loans</h2><p>Multi-day loan terms include lender, borrower, witness, due day, custody, and debt.</p></section>
+    <section id="household-roles-panel"><h2>Visible household roles</h2><p>Roles affect schedule authority and loan permission.</p></section>
+    <section id="apology-forgiveness-panel"><h2>Apology and forgiveness arcs</h2><p>Forgiveness has limits and never becomes a forced reset.</p></section>
+    <section id="avatar-debt-hooks-panel"><h2>Avatar debt conversation hooks</h2><p>Avatar prompts surface remembered inventory debts without dumping private memory.</p></section>
+    <section id="reload-memory-panel"><h2>Reload debt memory</h2><p>Schedules, loans, roles, forgiveness arcs, and debt hooks restore across reloads.</p></section>
+    <section id="frequency-flower-panel"><h2>Frequency and flower phase</h2><div class="flower">flower phase</div><p>Rates are simulation timing metadata, not metaphysical evidence.</p></section>
+  </div>
+  <section><h2>Controls</h2><button data-action="schedule" onclick="advanceResidentSchedule('riverbend')">advance resident schedule</button>
+<button data-action="negotiate" onclick="negotiateLoan('riverbend')">negotiate object loan</button>
+<button data-action="roles" onclick="renderHouseholdRoles('riverbend')">render household roles</button>
+<button data-action="apology" onclick="playForgivenessArc('riverbend')">play apology arc</button>
+<button data-action="debt" onclick="askDebtHook('riverbend')">ask remembered debt</button>
+<button data-action="limits" onclick="askForgivenessLimit('riverbend')">ask forgiveness limit</button>
+<button data-action="return" onclick="offerReturnHelp('riverbend')">offer return help</button>
+<button data-action="reload" onclick="restoreDebtMemory('riverbend')">restore debt memory</button>
+<button data-action="save" onclick="saveWorldState('riverbend')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('riverbend')">restore world</button>
+<button data-action="replay" onclick="exportReplay('riverbend')">export replay</button>
+<button data-action="listen" onclick="listenNegotiation('riverbend')">listen negotiation</button>
+<button data-action="schedule" onclick="advanceResidentSchedule('roofward')">advance resident schedule</button>
+<button data-action="negotiate" onclick="negotiateLoan('roofward')">negotiate object loan</button>
+<button data-action="roles" onclick="renderHouseholdRoles('roofward')">render household roles</button>
+<button data-action="apology" onclick="playForgivenessArc('roofward')">play apology arc</button>
+<button data-action="debt" onclick="askDebtHook('roofward')">ask remembered debt</button>
+<button data-action="limits" onclick="askForgivenessLimit('roofward')">ask forgiveness limit</button>
+<button data-action="return" onclick="offerReturnHelp('roofward')">offer return help</button>
+<button data-action="reload" onclick="restoreDebtMemory('roofward')">restore debt memory</button>
+<button data-action="save" onclick="saveWorldState('roofward')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('roofward')">restore world</button>
+<button data-action="replay" onclick="exportReplay('roofward')">export replay</button>
+<button data-action="listen" onclick="listenNegotiation('roofward')">listen negotiation</button>
+<button data-action="schedule" onclick="advanceResidentSchedule('archive')">advance resident schedule</button>
+<button data-action="negotiate" onclick="negotiateLoan('archive')">negotiate object loan</button>
+<button data-action="roles" onclick="renderHouseholdRoles('archive')">render household roles</button>
+<button data-action="apology" onclick="playForgivenessArc('archive')">play apology arc</button>
+<button data-action="debt" onclick="askDebtHook('archive')">ask remembered debt</button>
+<button data-action="limits" onclick="askForgivenessLimit('archive')">ask forgiveness limit</button>
+<button data-action="return" onclick="offerReturnHelp('archive')">offer return help</button>
+<button data-action="reload" onclick="restoreDebtMemory('archive')">restore debt memory</button>
+<button data-action="save" onclick="saveWorldState('archive')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('archive')">restore world</button>
+<button data-action="replay" onclick="exportReplay('archive')">export replay</button>
+<button data-action="listen" onclick="listenNegotiation('archive')">listen negotiation</button>
+<button data-action="schedule" onclick="advanceResidentSchedule('signal')">advance resident schedule</button>
+<button data-action="negotiate" onclick="negotiateLoan('signal')">negotiate object loan</button>
+<button data-action="roles" onclick="renderHouseholdRoles('signal')">render household roles</button>
+<button data-action="apology" onclick="playForgivenessArc('signal')">play apology arc</button>
+<button data-action="debt" onclick="askDebtHook('signal')">ask remembered debt</button>
+<button data-action="limits" onclick="askForgivenessLimit('signal')">ask forgiveness limit</button>
+<button data-action="return" onclick="offerReturnHelp('signal')">offer return help</button>
+<button data-action="reload" onclick="restoreDebtMemory('signal')">restore debt memory</button>
+<button data-action="save" onclick="saveWorldState('signal')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('signal')">restore world</button>
+<button data-action="replay" onclick="exportReplay('signal')">export replay</button>
+<button data-action="listen" onclick="listenNegotiation('signal')">listen negotiation</button>
+<button data-action="schedule" onclick="advanceResidentSchedule('orchard')">advance resident schedule</button>
+<button data-action="negotiate" onclick="negotiateLoan('orchard')">negotiate object loan</button>
+<button data-action="roles" onclick="renderHouseholdRoles('orchard')">render household roles</button>
+<button data-action="apology" onclick="playForgivenessArc('orchard')">play apology arc</button>
+<button data-action="debt" onclick="askDebtHook('orchard')">ask remembered debt</button>
+<button data-action="limits" onclick="askForgivenessLimit('orchard')">ask forgiveness limit</button>
+<button data-action="return" onclick="offerReturnHelp('orchard')">offer return help</button>
+<button data-action="reload" onclick="restoreDebtMemory('orchard')">restore debt memory</button>
+<button data-action="save" onclick="saveWorldState('orchard')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('orchard')">restore world</button>
+<button data-action="replay" onclick="exportReplay('orchard')">export replay</button>
+<button data-action="listen" onclick="listenNegotiation('orchard')">listen negotiation</button>
+<button data-action="schedule" onclick="advanceResidentSchedule('repair_ring')">advance resident schedule</button>
+<button data-action="negotiate" onclick="negotiateLoan('repair_ring')">negotiate object loan</button>
+<button data-action="roles" onclick="renderHouseholdRoles('repair_ring')">render household roles</button>
+<button data-action="apology" onclick="playForgivenessArc('repair_ring')">play apology arc</button>
+<button data-action="debt" onclick="askDebtHook('repair_ring')">ask remembered debt</button>
+<button data-action="limits" onclick="askForgivenessLimit('repair_ring')">ask forgiveness limit</button>
+<button data-action="return" onclick="offerReturnHelp('repair_ring')">offer return help</button>
+<button data-action="reload" onclick="restoreDebtMemory('repair_ring')">restore debt memory</button>
+<button data-action="save" onclick="saveWorldState('repair_ring')">save world</button>
+<button data-action="restore" onclick="restoreWorldState('repair_ring')">restore world</button>
+<button data-action="replay" onclick="exportReplay('repair_ring')">export replay</button>
+<button data-action="listen" onclick="listenNegotiation('repair_ring')">listen negotiation</button></section>
+  <section><h2>Browser log</h2><div id="log" class="log">ready</div></section>
+</main>
+<script>
+const storeKey = 'ssrm.v46.browser.world';
+let state = JSON.parse(localStorage.getItem(storeKey) || '{"tick":0,"events":[],"loans":0,"debtHooks":0}');
+function writeLog(message) {
+  state.tick += 1;
+  state.events.push({tick: state.tick, message});
+  if (state.events.length > 24) state.events = state.events.slice(-24);
+  localStorage.setItem(storeKey, JSON.stringify(state));
+  document.getElementById('log').textContent = state.events.map(e => `${e.tick}: ${e.message}`).join('
+');
+}
+function advanceResidentSchedule(scope) { writeLog(`resident-to-resident schedule advanced in ${scope}`); }
+function negotiateLoan(scope) { state.loans += 1; writeLog(`negotiated multi-day loan ${state.loans} in ${scope}`); }
+function renderHouseholdRoles(scope) { writeLog(`household role board rendered in ${scope}`); }
+function playForgivenessArc(scope) { writeLog(`bounded apology/forgiveness arc played in ${scope}`); }
+function askDebtHook(scope) { state.debtHooks += 1; writeLog(`avatar asked remembered debt hook ${state.debtHooks} in ${scope}`); }
+function askForgivenessLimit(scope) { writeLog(`forgiveness limit asked in ${scope}`); }
+function offerReturnHelp(scope) { writeLog(`avatar offered object return help in ${scope}`); }
+function restoreDebtMemory(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v46.debt.${scope}`) || '{"debt":"none"}'); writeLog(`restored debt memory for ${scope}: ${restored.debt}`); }
+function saveWorldState(scope) { localStorage.setItem(`ssrm.v46.debt.${scope}`, JSON.stringify({debt:`saved negotiated debt for ${scope}`, savedAt:state.tick})); localStorage.setItem(`ssrm.v46.world.${scope}`, JSON.stringify(state)); writeLog(`saved resident schedule/loan/debt world for ${scope}`); }
+function restoreWorldState(scope) { const restored = JSON.parse(localStorage.getItem(`ssrm.v46.world.${scope}`) || '{"events":[]}'); writeLog(`restored world state for ${scope} with ${restored.events.length || 0} events`); }
+function exportReplay(scope) { writeLog(`replay export prepared for ${scope}`); }
+function listenNegotiation(scope) { writeLog(`avatar listened without controlling negotiation in ${scope}`); }
+localStorage.setItem('ssrm.v46.boot', JSON.stringify({loaded:true}));
+writeLog('browser v46 resident scheduling and debt-hook surface loaded from localStorage');
+</script>
+</body>
+</html>

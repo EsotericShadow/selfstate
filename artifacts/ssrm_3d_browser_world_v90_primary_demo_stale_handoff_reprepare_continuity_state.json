@@ -1,0 +1,16 @@
+{
+  "boundary": "Deterministic browser-local stale handoff reprepare continuity only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. This is local review-evidence recovery hygiene, not external validation or evidence of inner experience.",
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v90_primary_demo_stale_handoff_reprepare_continuity_browser_evidence.json",
+  "next_gate": "post-330: verify the re-prepared resume handoff remains inspectable after another launcher reload and does not depend on transient in-memory browser state",
+  "report": 330,
+  "report_329_results_path": "artifacts/ssrm_3d_browser_world_v89_primary_demo_resume_handoff_freshness_results.json",
+  "required_terms": [
+    "handoffPayloadFreshnessState",
+    "previewFreshness",
+    "Prepared handoff payload is stale",
+    "Re-run Prepare outside-review handoff",
+    "reviewedHandoffCompletion"
+  ],
+  "seed": 20270728,
+  "verdict": "pass"
+}

@@ -1,0 +1,572 @@
+tick,day,session_id,saved_key,restored_conversation_key,restored_resource_key,restored_consequence_key,restored_ok
+0,1,v57-d001-s00,ssrm:v57:v57-d001-s00,canvas:glasshouse:resident:Sera:phrase:ask_sensory,fiber:24,Sera->Milo:guardedness rises,True
+1,1,v57-d001-s01,ssrm:v57:v57-d001-s01,canvas:river gate:resident:Tovan:phrase:request_space,wood:27,Tovan->Sera:group mood steadies,True
+2,1,v57-d001-s02,ssrm:v57:v57-d001-s02,canvas:west hearth:resident:Nia:phrase:thank_resident,stone:26,Nia->Tovan:debt is marked paid,True
+3,1,v57-d001-s03,ssrm:v57:v57-d001-s03,canvas:rain court:resident:Ari:phrase:ask_repair,copper:29,Ari->Nia:guardedness rises,True
+4,1,v57-d001-s04,ssrm:v57:v57-d001-s04,canvas:tool alcove:resident:Fay:phrase:ask_help,herb:28,Fay->Ari:group mood steadies,True
+5,1,v57-d001-s05,ssrm:v57:v57-d001-s05,canvas:fiber loft:resident:Milo:phrase:offer_tool,charcoal:31,Milo->Fay:debt is marked paid,True
+6,1,v57-d001-s06,ssrm:v57:v57-d001-s06,canvas:glasshouse:resident:Sera:phrase:apologize,water:30,Sera->Milo:guardedness rises,True
+7,1,v57-d001-s07,ssrm:v57:v57-d001-s07,canvas:river gate:resident:Tovan:phrase:ask_sensory,fiber:10,Tovan->Sera:group mood steadies,True
+8,1,v57-d001-s08,ssrm:v57:v57-d001-s08,canvas:west hearth:resident:Nia:phrase:request_space,wood:9,Nia->Tovan:debt is marked paid,True
+9,1,v57-d001-s09,ssrm:v57:v57-d001-s09,canvas:rain court:resident:Ari:phrase:thank_resident,stone:12,Ari->Nia:guardedness rises,True
+10,1,v57-d001-s10,ssrm:v57:v57-d001-s10,canvas:tool alcove:resident:Fay:phrase:ask_repair,copper:11,Fay->Ari:group mood steadies,True
+11,1,v57-d001-s11,ssrm:v57:v57-d001-s11,canvas:fiber loft:resident:Milo:phrase:ask_help,herb:14,Milo->Fay:debt is marked paid,True
+12,1,v57-d001-s12,ssrm:v57:v57-d001-s12,canvas:glasshouse:resident:Sera:phrase:offer_tool,charcoal:13,Sera->Milo:guardedness rises,True
+13,1,v57-d001-s13,ssrm:v57:v57-d001-s13,canvas:river gate:resident:Tovan:phrase:apologize,water:16,Tovan->Sera:group mood steadies,True
+14,1,v57-d001-s14,ssrm:v57:v57-d001-s14,canvas:west hearth:resident:Nia:phrase:ask_sensory,fiber:15,Nia->Tovan:debt is marked paid,True
+15,1,v57-d001-s15,ssrm:v57:v57-d001-s15,canvas:rain court:resident:Ari:phrase:request_space,wood:18,Ari->Nia:guardedness rises,True
+16,1,v57-d001-s16,ssrm:v57:v57-d001-s16,canvas:tool alcove:resident:Fay:phrase:thank_resident,stone:17,Fay->Ari:group mood steadies,True
+17,1,v57-d001-s17,ssrm:v57:v57-d001-s17,canvas:fiber loft:resident:Milo:phrase:ask_repair,copper:20,Milo->Fay:debt is marked paid,True
+24,2,v57-d002-s06,ssrm:v57:v57-d002-s06,canvas:river gate:resident:Sera:phrase:ask_repair,herb:28,Sera->Milo:bystander learns caution,True
+32,2,v57-d002-s14,ssrm:v57:v57-d002-s14,canvas:rain court:resident:Nia:phrase:ask_help,charcoal:13,Nia->Tovan:trust warms,True
+40,3,v57-d003-s04,ssrm:v57:v57-d003-s04,canvas:glasshouse:resident:Fay:phrase:offer_tool,fiber:20,Fay->Ari:debt is marked paid,True
+48,3,v57-d003-s12,ssrm:v57:v57-d003-s12,canvas:west hearth:resident:Sera:phrase:apologize,wood:28,Sera->Milo:group mood steadies,True
+56,4,v57-d004-s02,ssrm:v57:v57-d004-s02,canvas:fiber loft:resident:Nia:phrase:ask_sensory,copper:16,Nia->Tovan:bystander learns caution,True
+64,4,v57-d004-s10,ssrm:v57:v57-d004-s10,canvas:river gate:resident:Fay:phrase:request_space,herb:24,Fay->Ari:trust warms,True
+72,5,v57-d005-s00,ssrm:v57:v57-d005-s00,canvas:tool alcove:resident:Sera:phrase:thank_resident,water:8,Sera->Milo:debt is marked paid,True
+80,5,v57-d005-s08,ssrm:v57:v57-d005-s08,canvas:glasshouse:resident:Nia:phrase:ask_repair,fiber:16,Nia->Tovan:group mood steadies,True
+88,5,v57-d005-s16,ssrm:v57:v57-d005-s16,canvas:west hearth:resident:Fay:phrase:ask_help,wood:24,Fay->Ari:guardedness rises,True
+96,6,v57-d006-s06,ssrm:v57:v57-d006-s06,canvas:fiber loft:resident:Sera:phrase:offer_tool,copper:12,Sera->Milo:trust warms,True
+104,6,v57-d006-s14,ssrm:v57:v57-d006-s14,canvas:river gate:resident:Nia:phrase:apologize,herb:20,Nia->Tovan:work slows but recovers,True
+112,7,v57-d007-s04,ssrm:v57:v57-d007-s04,canvas:tool alcove:resident:Fay:phrase:ask_sensory,water:27,Fay->Ari:group mood steadies,True
+120,7,v57-d007-s12,ssrm:v57:v57-d007-s12,canvas:glasshouse:resident:Sera:phrase:request_space,fiber:12,Sera->Milo:guardedness rises,True
+128,8,v57-d008-s02,ssrm:v57:v57-d008-s02,canvas:rain court:resident:Nia:phrase:thank_resident,stone:23,Nia->Tovan:trust warms,True
+136,8,v57-d008-s10,ssrm:v57:v57-d008-s10,canvas:fiber loft:resident:Fay:phrase:ask_repair,copper:31,Fay->Ari:work slows but recovers,True
+144,9,v57-d009-s00,ssrm:v57:v57-d009-s00,canvas:west hearth:resident:Sera:phrase:ask_help,charcoal:15,Sera->Milo:group mood steadies,True
+152,9,v57-d009-s08,ssrm:v57:v57-d009-s08,canvas:tool alcove:resident:Nia:phrase:offer_tool,water:23,Nia->Tovan:guardedness rises,True
+160,9,v57-d009-s16,ssrm:v57:v57-d009-s16,canvas:glasshouse:resident:Fay:phrase:apologize,fiber:8,Fay->Ari:debt is marked paid,True
+168,10,v57-d010-s06,ssrm:v57:v57-d010-s06,canvas:rain court:resident:Sera:phrase:ask_sensory,stone:19,Sera->Milo:work slows but recovers,True
+176,10,v57-d010-s14,ssrm:v57:v57-d010-s14,canvas:fiber loft:resident:Nia:phrase:request_space,copper:27,Nia->Tovan:bystander learns caution,True
+184,11,v57-d011-s04,ssrm:v57:v57-d011-s04,canvas:west hearth:resident:Fay:phrase:thank_resident,charcoal:11,Fay->Ari:guardedness rises,True
+192,11,v57-d011-s12,ssrm:v57:v57-d011-s12,canvas:tool alcove:resident:Sera:phrase:ask_repair,water:19,Sera->Milo:debt is marked paid,True
+200,12,v57-d012-s02,ssrm:v57:v57-d012-s02,canvas:river gate:resident:Nia:phrase:ask_help,wood:30,Nia->Tovan:work slows but recovers,True
+208,12,v57-d012-s10,ssrm:v57:v57-d012-s10,canvas:rain court:resident:Fay:phrase:offer_tool,stone:15,Fay->Ari:bystander learns caution,True
+216,13,v57-d013-s00,ssrm:v57:v57-d013-s00,canvas:glasshouse:resident:Sera:phrase:apologize,herb:22,Sera->Milo:guardedness rises,True
+224,13,v57-d013-s08,ssrm:v57:v57-d013-s08,canvas:west hearth:resident:Nia:phrase:ask_sensory,charcoal:30,Nia->Tovan:debt is marked paid,True
+232,13,v57-d013-s16,ssrm:v57:v57-d013-s16,canvas:tool alcove:resident:Fay:phrase:request_space,water:15,Fay->Ari:group mood steadies,True
+240,14,v57-d014-s06,ssrm:v57:v57-d014-s06,canvas:river gate:resident:Sera:phrase:thank_resident,wood:26,Sera->Milo:bystander learns caution,True
+248,14,v57-d014-s14,ssrm:v57:v57-d014-s14,canvas:rain court:resident:Nia:phrase:ask_repair,stone:11,Nia->Tovan:trust warms,True
+256,15,v57-d015-s04,ssrm:v57:v57-d015-s04,canvas:glasshouse:resident:Fay:phrase:ask_help,herb:18,Fay->Ari:debt is marked paid,True
+264,15,v57-d015-s12,ssrm:v57:v57-d015-s12,canvas:west hearth:resident:Sera:phrase:offer_tool,charcoal:26,Sera->Milo:group mood steadies,True
+272,16,v57-d016-s02,ssrm:v57:v57-d016-s02,canvas:fiber loft:resident:Nia:phrase:apologize,fiber:14,Nia->Tovan:bystander learns caution,True
+280,16,v57-d016-s10,ssrm:v57:v57-d016-s10,canvas:river gate:resident:Fay:phrase:ask_sensory,wood:22,Fay->Ari:trust warms,True
+288,17,v57-d017-s00,ssrm:v57:v57-d017-s00,canvas:tool alcove:resident:Sera:phrase:request_space,copper:29,Sera->Milo:debt is marked paid,True
+296,17,v57-d017-s08,ssrm:v57:v57-d017-s08,canvas:glasshouse:resident:Nia:phrase:thank_resident,herb:14,Nia->Tovan:group mood steadies,True
+304,17,v57-d017-s16,ssrm:v57:v57-d017-s16,canvas:west hearth:resident:Fay:phrase:ask_repair,charcoal:22,Fay->Ari:guardedness rises,True
+312,18,v57-d018-s06,ssrm:v57:v57-d018-s06,canvas:fiber loft:resident:Sera:phrase:ask_help,fiber:10,Sera->Milo:trust warms,True
+320,18,v57-d018-s14,ssrm:v57:v57-d018-s14,canvas:river gate:resident:Nia:phrase:offer_tool,wood:18,Nia->Tovan:work slows but recovers,True
+328,19,v57-d019-s04,ssrm:v57:v57-d019-s04,canvas:tool alcove:resident:Fay:phrase:apologize,copper:25,Fay->Ari:group mood steadies,True
+336,19,v57-d019-s12,ssrm:v57:v57-d019-s12,canvas:glasshouse:resident:Sera:phrase:ask_sensory,herb:10,Sera->Milo:guardedness rises,True
+344,20,v57-d020-s02,ssrm:v57:v57-d020-s02,canvas:rain court:resident:Nia:phrase:request_space,water:21,Nia->Tovan:trust warms,True
+352,20,v57-d020-s10,ssrm:v57:v57-d020-s10,canvas:fiber loft:resident:Fay:phrase:thank_resident,fiber:29,Fay->Ari:work slows but recovers,True
+360,21,v57-d021-s00,ssrm:v57:v57-d021-s00,canvas:west hearth:resident:Sera:phrase:ask_repair,stone:13,Sera->Milo:group mood steadies,True
+368,21,v57-d021-s08,ssrm:v57:v57-d021-s08,canvas:tool alcove:resident:Nia:phrase:ask_help,copper:21,Nia->Tovan:guardedness rises,True
+376,21,v57-d021-s16,ssrm:v57:v57-d021-s16,canvas:glasshouse:resident:Fay:phrase:offer_tool,herb:29,Fay->Ari:debt is marked paid,True
+384,22,v57-d022-s06,ssrm:v57:v57-d022-s06,canvas:rain court:resident:Sera:phrase:apologize,water:17,Sera->Milo:work slows but recovers,True
+392,22,v57-d022-s14,ssrm:v57:v57-d022-s14,canvas:fiber loft:resident:Nia:phrase:ask_sensory,fiber:25,Nia->Tovan:bystander learns caution,True
+400,23,v57-d023-s04,ssrm:v57:v57-d023-s04,canvas:west hearth:resident:Fay:phrase:request_space,stone:9,Fay->Ari:guardedness rises,True
+408,23,v57-d023-s12,ssrm:v57:v57-d023-s12,canvas:tool alcove:resident:Sera:phrase:thank_resident,copper:17,Sera->Milo:debt is marked paid,True
+416,24,v57-d024-s02,ssrm:v57:v57-d024-s02,canvas:river gate:resident:Nia:phrase:ask_repair,charcoal:28,Nia->Tovan:work slows but recovers,True
+424,24,v57-d024-s10,ssrm:v57:v57-d024-s10,canvas:rain court:resident:Fay:phrase:ask_help,water:13,Fay->Ari:bystander learns caution,True
+432,25,v57-d025-s00,ssrm:v57:v57-d025-s00,canvas:glasshouse:resident:Sera:phrase:offer_tool,wood:20,Sera->Milo:guardedness rises,True
+440,25,v57-d025-s08,ssrm:v57:v57-d025-s08,canvas:west hearth:resident:Nia:phrase:apologize,stone:28,Nia->Tovan:debt is marked paid,True
+448,25,v57-d025-s16,ssrm:v57:v57-d025-s16,canvas:tool alcove:resident:Fay:phrase:ask_sensory,copper:13,Fay->Ari:group mood steadies,True
+456,26,v57-d026-s06,ssrm:v57:v57-d026-s06,canvas:river gate:resident:Sera:phrase:request_space,charcoal:24,Sera->Milo:bystander learns caution,True
+464,26,v57-d026-s14,ssrm:v57:v57-d026-s14,canvas:rain court:resident:Nia:phrase:thank_resident,water:32,Nia->Tovan:trust warms,True
+472,27,v57-d027-s04,ssrm:v57:v57-d027-s04,canvas:glasshouse:resident:Fay:phrase:ask_repair,wood:16,Fay->Ari:debt is marked paid,True
+480,27,v57-d027-s12,ssrm:v57:v57-d027-s12,canvas:west hearth:resident:Sera:phrase:ask_help,stone:24,Sera->Milo:group mood steadies,True
+488,28,v57-d028-s02,ssrm:v57:v57-d028-s02,canvas:fiber loft:resident:Nia:phrase:offer_tool,herb:12,Nia->Tovan:bystander learns caution,True
+496,28,v57-d028-s10,ssrm:v57:v57-d028-s10,canvas:river gate:resident:Fay:phrase:apologize,charcoal:20,Fay->Ari:trust warms,True
+504,29,v57-d029-s00,ssrm:v57:v57-d029-s00,canvas:tool alcove:resident:Sera:phrase:ask_sensory,fiber:27,Sera->Milo:debt is marked paid,True
+512,29,v57-d029-s08,ssrm:v57:v57-d029-s08,canvas:glasshouse:resident:Nia:phrase:request_space,wood:12,Nia->Tovan:group mood steadies,True
+520,29,v57-d029-s16,ssrm:v57:v57-d029-s16,canvas:west hearth:resident:Fay:phrase:thank_resident,stone:20,Fay->Ari:guardedness rises,True
+528,30,v57-d030-s06,ssrm:v57:v57-d030-s06,canvas:fiber loft:resident:Sera:phrase:ask_repair,herb:31,Sera->Milo:trust warms,True
+536,30,v57-d030-s14,ssrm:v57:v57-d030-s14,canvas:river gate:resident:Nia:phrase:ask_help,charcoal:16,Nia->Tovan:work slows but recovers,True
+544,31,v57-d031-s04,ssrm:v57:v57-d031-s04,canvas:tool alcove:resident:Fay:phrase:offer_tool,fiber:23,Fay->Ari:group mood steadies,True
+552,31,v57-d031-s12,ssrm:v57:v57-d031-s12,canvas:glasshouse:resident:Sera:phrase:apologize,wood:8,Sera->Milo:guardedness rises,True
+560,32,v57-d032-s02,ssrm:v57:v57-d032-s02,canvas:rain court:resident:Nia:phrase:ask_sensory,copper:19,Nia->Tovan:trust warms,True
+568,32,v57-d032-s10,ssrm:v57:v57-d032-s10,canvas:fiber loft:resident:Fay:phrase:request_space,herb:27,Fay->Ari:work slows but recovers,True
+576,33,v57-d033-s00,ssrm:v57:v57-d033-s00,canvas:west hearth:resident:Sera:phrase:thank_resident,water:11,Sera->Milo:group mood steadies,True
+584,33,v57-d033-s08,ssrm:v57:v57-d033-s08,canvas:tool alcove:resident:Nia:phrase:ask_repair,fiber:19,Nia->Tovan:guardedness rises,True
+592,33,v57-d033-s16,ssrm:v57:v57-d033-s16,canvas:glasshouse:resident:Fay:phrase:ask_help,wood:27,Fay->Ari:debt is marked paid,True
+600,34,v57-d034-s06,ssrm:v57:v57-d034-s06,canvas:rain court:resident:Sera:phrase:offer_tool,copper:15,Sera->Milo:work slows but recovers,True
+608,34,v57-d034-s14,ssrm:v57:v57-d034-s14,canvas:fiber loft:resident:Nia:phrase:apologize,herb:23,Nia->Tovan:bystander learns caution,True
+616,35,v57-d035-s04,ssrm:v57:v57-d035-s04,canvas:west hearth:resident:Fay:phrase:ask_sensory,water:30,Fay->Ari:guardedness rises,True
+624,35,v57-d035-s12,ssrm:v57:v57-d035-s12,canvas:tool alcove:resident:Sera:phrase:request_space,fiber:15,Sera->Milo:debt is marked paid,True
+632,36,v57-d036-s02,ssrm:v57:v57-d036-s02,canvas:river gate:resident:Nia:phrase:thank_resident,stone:26,Nia->Tovan:work slows but recovers,True
+640,36,v57-d036-s10,ssrm:v57:v57-d036-s10,canvas:rain court:resident:Fay:phrase:ask_repair,copper:11,Fay->Ari:bystander learns caution,True
+648,37,v57-d037-s00,ssrm:v57:v57-d037-s00,canvas:glasshouse:resident:Sera:phrase:ask_help,charcoal:18,Sera->Milo:guardedness rises,True
+656,37,v57-d037-s08,ssrm:v57:v57-d037-s08,canvas:west hearth:resident:Nia:phrase:offer_tool,water:26,Nia->Tovan:debt is marked paid,True
+664,37,v57-d037-s16,ssrm:v57:v57-d037-s16,canvas:tool alcove:resident:Fay:phrase:apologize,fiber:11,Fay->Ari:group mood steadies,True
+672,38,v57-d038-s06,ssrm:v57:v57-d038-s06,canvas:river gate:resident:Sera:phrase:ask_sensory,stone:22,Sera->Milo:bystander learns caution,True
+680,38,v57-d038-s14,ssrm:v57:v57-d038-s14,canvas:rain court:resident:Nia:phrase:request_space,copper:30,Nia->Tovan:trust warms,True
+688,39,v57-d039-s04,ssrm:v57:v57-d039-s04,canvas:glasshouse:resident:Fay:phrase:thank_resident,charcoal:14,Fay->Ari:debt is marked paid,True
+696,39,v57-d039-s12,ssrm:v57:v57-d039-s12,canvas:west hearth:resident:Sera:phrase:ask_repair,water:22,Sera->Milo:group mood steadies,True
+704,40,v57-d040-s02,ssrm:v57:v57-d040-s02,canvas:fiber loft:resident:Nia:phrase:ask_help,wood:10,Nia->Tovan:bystander learns caution,True
+712,40,v57-d040-s10,ssrm:v57:v57-d040-s10,canvas:river gate:resident:Fay:phrase:offer_tool,stone:18,Fay->Ari:trust warms,True
+720,41,v57-d041-s00,ssrm:v57:v57-d041-s00,canvas:tool alcove:resident:Sera:phrase:apologize,herb:25,Sera->Milo:debt is marked paid,True
+728,41,v57-d041-s08,ssrm:v57:v57-d041-s08,canvas:glasshouse:resident:Nia:phrase:ask_sensory,charcoal:10,Nia->Tovan:group mood steadies,True
+736,41,v57-d041-s16,ssrm:v57:v57-d041-s16,canvas:west hearth:resident:Fay:phrase:request_space,water:18,Fay->Ari:guardedness rises,True
+744,42,v57-d042-s06,ssrm:v57:v57-d042-s06,canvas:fiber loft:resident:Sera:phrase:thank_resident,wood:29,Sera->Milo:trust warms,True
+752,42,v57-d042-s14,ssrm:v57:v57-d042-s14,canvas:river gate:resident:Nia:phrase:ask_repair,stone:14,Nia->Tovan:work slows but recovers,True
+760,43,v57-d043-s04,ssrm:v57:v57-d043-s04,canvas:tool alcove:resident:Fay:phrase:ask_help,herb:21,Fay->Ari:group mood steadies,True
+768,43,v57-d043-s12,ssrm:v57:v57-d043-s12,canvas:glasshouse:resident:Sera:phrase:offer_tool,charcoal:29,Sera->Milo:guardedness rises,True
+776,44,v57-d044-s02,ssrm:v57:v57-d044-s02,canvas:rain court:resident:Nia:phrase:apologize,fiber:17,Nia->Tovan:trust warms,True
+784,44,v57-d044-s10,ssrm:v57:v57-d044-s10,canvas:fiber loft:resident:Fay:phrase:ask_sensory,wood:25,Fay->Ari:work slows but recovers,True
+792,45,v57-d045-s00,ssrm:v57:v57-d045-s00,canvas:west hearth:resident:Sera:phrase:request_space,copper:9,Sera->Milo:group mood steadies,True
+800,45,v57-d045-s08,ssrm:v57:v57-d045-s08,canvas:tool alcove:resident:Nia:phrase:thank_resident,herb:17,Nia->Tovan:guardedness rises,True
+808,45,v57-d045-s16,ssrm:v57:v57-d045-s16,canvas:glasshouse:resident:Fay:phrase:ask_repair,charcoal:25,Fay->Ari:debt is marked paid,True
+816,46,v57-d046-s06,ssrm:v57:v57-d046-s06,canvas:rain court:resident:Sera:phrase:ask_help,fiber:13,Sera->Milo:work slows but recovers,True
+824,46,v57-d046-s14,ssrm:v57:v57-d046-s14,canvas:fiber loft:resident:Nia:phrase:offer_tool,wood:21,Nia->Tovan:bystander learns caution,True
+832,47,v57-d047-s04,ssrm:v57:v57-d047-s04,canvas:west hearth:resident:Fay:phrase:apologize,copper:28,Fay->Ari:guardedness rises,True
+840,47,v57-d047-s12,ssrm:v57:v57-d047-s12,canvas:tool alcove:resident:Sera:phrase:ask_sensory,herb:13,Sera->Milo:debt is marked paid,True
+848,48,v57-d048-s02,ssrm:v57:v57-d048-s02,canvas:river gate:resident:Nia:phrase:request_space,water:24,Nia->Tovan:work slows but recovers,True
+856,48,v57-d048-s10,ssrm:v57:v57-d048-s10,canvas:rain court:resident:Fay:phrase:thank_resident,fiber:32,Fay->Ari:bystander learns caution,True
+864,49,v57-d049-s00,ssrm:v57:v57-d049-s00,canvas:glasshouse:resident:Sera:phrase:ask_repair,stone:16,Sera->Milo:guardedness rises,True
+872,49,v57-d049-s08,ssrm:v57:v57-d049-s08,canvas:west hearth:resident:Nia:phrase:ask_help,copper:24,Nia->Tovan:debt is marked paid,True
+880,49,v57-d049-s16,ssrm:v57:v57-d049-s16,canvas:tool alcove:resident:Fay:phrase:offer_tool,herb:9,Fay->Ari:group mood steadies,True
+888,50,v57-d050-s06,ssrm:v57:v57-d050-s06,canvas:river gate:resident:Sera:phrase:apologize,water:20,Sera->Milo:bystander learns caution,True
+896,50,v57-d050-s14,ssrm:v57:v57-d050-s14,canvas:rain court:resident:Nia:phrase:ask_sensory,fiber:28,Nia->Tovan:trust warms,True
+904,51,v57-d051-s04,ssrm:v57:v57-d051-s04,canvas:glasshouse:resident:Fay:phrase:request_space,stone:12,Fay->Ari:debt is marked paid,True
+912,51,v57-d051-s12,ssrm:v57:v57-d051-s12,canvas:west hearth:resident:Sera:phrase:thank_resident,copper:20,Sera->Milo:group mood steadies,True
+920,52,v57-d052-s02,ssrm:v57:v57-d052-s02,canvas:fiber loft:resident:Nia:phrase:ask_repair,charcoal:31,Nia->Tovan:bystander learns caution,True
+928,52,v57-d052-s10,ssrm:v57:v57-d052-s10,canvas:river gate:resident:Fay:phrase:ask_help,water:16,Fay->Ari:trust warms,True
+936,53,v57-d053-s00,ssrm:v57:v57-d053-s00,canvas:tool alcove:resident:Sera:phrase:offer_tool,wood:23,Sera->Milo:debt is marked paid,True
+944,53,v57-d053-s08,ssrm:v57:v57-d053-s08,canvas:glasshouse:resident:Nia:phrase:apologize,stone:8,Nia->Tovan:group mood steadies,True
+952,53,v57-d053-s16,ssrm:v57:v57-d053-s16,canvas:west hearth:resident:Fay:phrase:ask_sensory,copper:16,Fay->Ari:guardedness rises,True
+960,54,v57-d054-s06,ssrm:v57:v57-d054-s06,canvas:fiber loft:resident:Sera:phrase:request_space,charcoal:27,Sera->Milo:trust warms,True
+968,54,v57-d054-s14,ssrm:v57:v57-d054-s14,canvas:river gate:resident:Nia:phrase:thank_resident,water:12,Nia->Tovan:work slows but recovers,True
+976,55,v57-d055-s04,ssrm:v57:v57-d055-s04,canvas:tool alcove:resident:Fay:phrase:ask_repair,wood:19,Fay->Ari:group mood steadies,True
+984,55,v57-d055-s12,ssrm:v57:v57-d055-s12,canvas:glasshouse:resident:Sera:phrase:ask_help,stone:27,Sera->Milo:guardedness rises,True
+992,56,v57-d056-s02,ssrm:v57:v57-d056-s02,canvas:rain court:resident:Nia:phrase:offer_tool,herb:15,Nia->Tovan:trust warms,True
+1000,56,v57-d056-s10,ssrm:v57:v57-d056-s10,canvas:fiber loft:resident:Fay:phrase:apologize,charcoal:23,Fay->Ari:work slows but recovers,True
+1008,57,v57-d057-s00,ssrm:v57:v57-d057-s00,canvas:west hearth:resident:Sera:phrase:ask_sensory,fiber:30,Sera->Milo:group mood steadies,True
+1016,57,v57-d057-s08,ssrm:v57:v57-d057-s08,canvas:tool alcove:resident:Nia:phrase:request_space,wood:15,Nia->Tovan:guardedness rises,True
+1024,57,v57-d057-s16,ssrm:v57:v57-d057-s16,canvas:glasshouse:resident:Fay:phrase:thank_resident,stone:23,Fay->Ari:debt is marked paid,True
+1032,58,v57-d058-s06,ssrm:v57:v57-d058-s06,canvas:rain court:resident:Sera:phrase:ask_repair,herb:11,Sera->Milo:work slows but recovers,True
+1040,58,v57-d058-s14,ssrm:v57:v57-d058-s14,canvas:fiber loft:resident:Nia:phrase:ask_help,charcoal:19,Nia->Tovan:bystander learns caution,True
+1048,59,v57-d059-s04,ssrm:v57:v57-d059-s04,canvas:west hearth:resident:Fay:phrase:offer_tool,fiber:26,Fay->Ari:guardedness rises,True
+1056,59,v57-d059-s12,ssrm:v57:v57-d059-s12,canvas:tool alcove:resident:Sera:phrase:apologize,wood:11,Sera->Milo:debt is marked paid,True
+1064,60,v57-d060-s02,ssrm:v57:v57-d060-s02,canvas:river gate:resident:Nia:phrase:ask_sensory,copper:22,Nia->Tovan:work slows but recovers,True
+1072,60,v57-d060-s10,ssrm:v57:v57-d060-s10,canvas:rain court:resident:Fay:phrase:request_space,herb:30,Fay->Ari:bystander learns caution,True
+1080,61,v57-d061-s00,ssrm:v57:v57-d061-s00,canvas:glasshouse:resident:Sera:phrase:thank_resident,water:14,Sera->Milo:guardedness rises,True
+1088,61,v57-d061-s08,ssrm:v57:v57-d061-s08,canvas:west hearth:resident:Nia:phrase:ask_repair,fiber:22,Nia->Tovan:debt is marked paid,True
+1096,61,v57-d061-s16,ssrm:v57:v57-d061-s16,canvas:tool alcove:resident:Fay:phrase:ask_help,wood:30,Fay->Ari:group mood steadies,True
+1104,62,v57-d062-s06,ssrm:v57:v57-d062-s06,canvas:river gate:resident:Sera:phrase:offer_tool,copper:18,Sera->Milo:bystander learns caution,True
+1112,62,v57-d062-s14,ssrm:v57:v57-d062-s14,canvas:rain court:resident:Nia:phrase:apologize,herb:26,Nia->Tovan:trust warms,True
+1120,63,v57-d063-s04,ssrm:v57:v57-d063-s04,canvas:glasshouse:resident:Fay:phrase:ask_sensory,water:10,Fay->Ari:debt is marked paid,True
+1128,63,v57-d063-s12,ssrm:v57:v57-d063-s12,canvas:west hearth:resident:Sera:phrase:request_space,fiber:18,Sera->Milo:group mood steadies,True
+1136,64,v57-d064-s02,ssrm:v57:v57-d064-s02,canvas:fiber loft:resident:Nia:phrase:thank_resident,stone:29,Nia->Tovan:bystander learns caution,True
+1144,64,v57-d064-s10,ssrm:v57:v57-d064-s10,canvas:river gate:resident:Fay:phrase:ask_repair,copper:14,Fay->Ari:trust warms,True
+1152,65,v57-d065-s00,ssrm:v57:v57-d065-s00,canvas:tool alcove:resident:Sera:phrase:ask_help,charcoal:21,Sera->Milo:debt is marked paid,True
+1160,65,v57-d065-s08,ssrm:v57:v57-d065-s08,canvas:glasshouse:resident:Nia:phrase:offer_tool,water:29,Nia->Tovan:group mood steadies,True
+1168,65,v57-d065-s16,ssrm:v57:v57-d065-s16,canvas:west hearth:resident:Fay:phrase:apologize,fiber:14,Fay->Ari:guardedness rises,True
+1176,66,v57-d066-s06,ssrm:v57:v57-d066-s06,canvas:fiber loft:resident:Sera:phrase:ask_sensory,stone:25,Sera->Milo:trust warms,True
+1184,66,v57-d066-s14,ssrm:v57:v57-d066-s14,canvas:river gate:resident:Nia:phrase:request_space,copper:10,Nia->Tovan:work slows but recovers,True
+1192,67,v57-d067-s04,ssrm:v57:v57-d067-s04,canvas:tool alcove:resident:Fay:phrase:thank_resident,charcoal:17,Fay->Ari:group mood steadies,True
+1200,67,v57-d067-s12,ssrm:v57:v57-d067-s12,canvas:glasshouse:resident:Sera:phrase:ask_repair,water:25,Sera->Milo:guardedness rises,True
+1208,68,v57-d068-s02,ssrm:v57:v57-d068-s02,canvas:rain court:resident:Nia:phrase:ask_help,wood:13,Nia->Tovan:trust warms,True
+1216,68,v57-d068-s10,ssrm:v57:v57-d068-s10,canvas:fiber loft:resident:Fay:phrase:offer_tool,stone:21,Fay->Ari:work slows but recovers,True
+1224,69,v57-d069-s00,ssrm:v57:v57-d069-s00,canvas:west hearth:resident:Sera:phrase:apologize,herb:28,Sera->Milo:group mood steadies,True
+1232,69,v57-d069-s08,ssrm:v57:v57-d069-s08,canvas:tool alcove:resident:Nia:phrase:ask_sensory,charcoal:13,Nia->Tovan:guardedness rises,True
+1240,69,v57-d069-s16,ssrm:v57:v57-d069-s16,canvas:glasshouse:resident:Fay:phrase:request_space,water:21,Fay->Ari:debt is marked paid,True
+1248,70,v57-d070-s06,ssrm:v57:v57-d070-s06,canvas:rain court:resident:Sera:phrase:thank_resident,wood:32,Sera->Milo:work slows but recovers,True
+1256,70,v57-d070-s14,ssrm:v57:v57-d070-s14,canvas:fiber loft:resident:Nia:phrase:ask_repair,stone:17,Nia->Tovan:bystander learns caution,True
+1264,71,v57-d071-s04,ssrm:v57:v57-d071-s04,canvas:west hearth:resident:Fay:phrase:ask_help,herb:24,Fay->Ari:guardedness rises,True
+1272,71,v57-d071-s12,ssrm:v57:v57-d071-s12,canvas:tool alcove:resident:Sera:phrase:offer_tool,charcoal:9,Sera->Milo:debt is marked paid,True
+1280,72,v57-d072-s02,ssrm:v57:v57-d072-s02,canvas:river gate:resident:Nia:phrase:apologize,fiber:20,Nia->Tovan:work slows but recovers,True
+1288,72,v57-d072-s10,ssrm:v57:v57-d072-s10,canvas:rain court:resident:Fay:phrase:ask_sensory,wood:28,Fay->Ari:bystander learns caution,True
+1296,73,v57-d073-s00,ssrm:v57:v57-d073-s00,canvas:glasshouse:resident:Sera:phrase:request_space,copper:12,Sera->Milo:guardedness rises,True
+1304,73,v57-d073-s08,ssrm:v57:v57-d073-s08,canvas:west hearth:resident:Nia:phrase:thank_resident,herb:20,Nia->Tovan:debt is marked paid,True
+1312,73,v57-d073-s16,ssrm:v57:v57-d073-s16,canvas:tool alcove:resident:Fay:phrase:ask_repair,charcoal:28,Fay->Ari:group mood steadies,True
+1320,74,v57-d074-s06,ssrm:v57:v57-d074-s06,canvas:river gate:resident:Sera:phrase:ask_help,fiber:16,Sera->Milo:bystander learns caution,True
+1328,74,v57-d074-s14,ssrm:v57:v57-d074-s14,canvas:rain court:resident:Nia:phrase:offer_tool,wood:24,Nia->Tovan:trust warms,True
+1336,75,v57-d075-s04,ssrm:v57:v57-d075-s04,canvas:glasshouse:resident:Fay:phrase:apologize,copper:8,Fay->Ari:debt is marked paid,True
+1344,75,v57-d075-s12,ssrm:v57:v57-d075-s12,canvas:west hearth:resident:Sera:phrase:ask_sensory,herb:16,Sera->Milo:group mood steadies,True
+1352,76,v57-d076-s02,ssrm:v57:v57-d076-s02,canvas:fiber loft:resident:Nia:phrase:request_space,water:27,Nia->Tovan:bystander learns caution,True
+1360,76,v57-d076-s10,ssrm:v57:v57-d076-s10,canvas:river gate:resident:Fay:phrase:thank_resident,fiber:12,Fay->Ari:trust warms,True
+1368,77,v57-d077-s00,ssrm:v57:v57-d077-s00,canvas:tool alcove:resident:Sera:phrase:ask_repair,stone:19,Sera->Milo:debt is marked paid,True
+1376,77,v57-d077-s08,ssrm:v57:v57-d077-s08,canvas:glasshouse:resident:Nia:phrase:ask_help,copper:27,Nia->Tovan:group mood steadies,True
+1384,77,v57-d077-s16,ssrm:v57:v57-d077-s16,canvas:west hearth:resident:Fay:phrase:offer_tool,herb:12,Fay->Ari:guardedness rises,True
+1392,78,v57-d078-s06,ssrm:v57:v57-d078-s06,canvas:fiber loft:resident:Sera:phrase:apologize,water:23,Sera->Milo:trust warms,True
+1400,78,v57-d078-s14,ssrm:v57:v57-d078-s14,canvas:river gate:resident:Nia:phrase:ask_sensory,fiber:31,Nia->Tovan:work slows but recovers,True
+1408,79,v57-d079-s04,ssrm:v57:v57-d079-s04,canvas:tool alcove:resident:Fay:phrase:request_space,stone:15,Fay->Ari:group mood steadies,True
+1416,79,v57-d079-s12,ssrm:v57:v57-d079-s12,canvas:glasshouse:resident:Sera:phrase:thank_resident,copper:23,Sera->Milo:guardedness rises,True
+1424,80,v57-d080-s02,ssrm:v57:v57-d080-s02,canvas:rain court:resident:Nia:phrase:ask_repair,charcoal:11,Nia->Tovan:trust warms,True
+1432,80,v57-d080-s10,ssrm:v57:v57-d080-s10,canvas:fiber loft:resident:Fay:phrase:ask_help,water:19,Fay->Ari:work slows but recovers,True
+1440,81,v57-d081-s00,ssrm:v57:v57-d081-s00,canvas:west hearth:resident:Sera:phrase:offer_tool,wood:26,Sera->Milo:group mood steadies,True
+1448,81,v57-d081-s08,ssrm:v57:v57-d081-s08,canvas:tool alcove:resident:Nia:phrase:apologize,stone:11,Nia->Tovan:guardedness rises,True
+1456,81,v57-d081-s16,ssrm:v57:v57-d081-s16,canvas:glasshouse:resident:Fay:phrase:ask_sensory,copper:19,Fay->Ari:debt is marked paid,True
+1464,82,v57-d082-s06,ssrm:v57:v57-d082-s06,canvas:rain court:resident:Sera:phrase:request_space,charcoal:30,Sera->Milo:work slows but recovers,True
+1472,82,v57-d082-s14,ssrm:v57:v57-d082-s14,canvas:fiber loft:resident:Nia:phrase:thank_resident,water:15,Nia->Tovan:bystander learns caution,True
+1480,83,v57-d083-s04,ssrm:v57:v57-d083-s04,canvas:west hearth:resident:Fay:phrase:ask_repair,wood:22,Fay->Ari:guardedness rises,True
+1488,83,v57-d083-s12,ssrm:v57:v57-d083-s12,canvas:tool alcove:resident:Sera:phrase:ask_help,stone:30,Sera->Milo:debt is marked paid,True
+1496,84,v57-d084-s02,ssrm:v57:v57-d084-s02,canvas:river gate:resident:Nia:phrase:offer_tool,herb:18,Nia->Tovan:work slows but recovers,True
+1504,84,v57-d084-s10,ssrm:v57:v57-d084-s10,canvas:rain court:resident:Fay:phrase:apologize,charcoal:26,Fay->Ari:bystander learns caution,True
+1512,85,v57-d085-s00,ssrm:v57:v57-d085-s00,canvas:glasshouse:resident:Sera:phrase:ask_sensory,fiber:10,Sera->Milo:guardedness rises,True
+1520,85,v57-d085-s08,ssrm:v57:v57-d085-s08,canvas:west hearth:resident:Nia:phrase:request_space,wood:18,Nia->Tovan:debt is marked paid,True
+1528,85,v57-d085-s16,ssrm:v57:v57-d085-s16,canvas:tool alcove:resident:Fay:phrase:thank_resident,stone:26,Fay->Ari:group mood steadies,True
+1536,86,v57-d086-s06,ssrm:v57:v57-d086-s06,canvas:river gate:resident:Sera:phrase:ask_repair,herb:14,Sera->Milo:bystander learns caution,True
+1544,86,v57-d086-s14,ssrm:v57:v57-d086-s14,canvas:rain court:resident:Nia:phrase:ask_help,charcoal:22,Nia->Tovan:trust warms,True
+1552,87,v57-d087-s04,ssrm:v57:v57-d087-s04,canvas:glasshouse:resident:Fay:phrase:offer_tool,fiber:29,Fay->Ari:debt is marked paid,True
+1560,87,v57-d087-s12,ssrm:v57:v57-d087-s12,canvas:west hearth:resident:Sera:phrase:apologize,wood:14,Sera->Milo:group mood steadies,True
+1568,88,v57-d088-s02,ssrm:v57:v57-d088-s02,canvas:fiber loft:resident:Nia:phrase:ask_sensory,copper:25,Nia->Tovan:bystander learns caution,True
+1576,88,v57-d088-s10,ssrm:v57:v57-d088-s10,canvas:river gate:resident:Fay:phrase:request_space,herb:10,Fay->Ari:trust warms,True
+1584,89,v57-d089-s00,ssrm:v57:v57-d089-s00,canvas:tool alcove:resident:Sera:phrase:thank_resident,water:17,Sera->Milo:debt is marked paid,True
+1592,89,v57-d089-s08,ssrm:v57:v57-d089-s08,canvas:glasshouse:resident:Nia:phrase:ask_repair,fiber:25,Nia->Tovan:group mood steadies,True
+1600,89,v57-d089-s16,ssrm:v57:v57-d089-s16,canvas:west hearth:resident:Fay:phrase:ask_help,wood:10,Fay->Ari:guardedness rises,True
+1608,90,v57-d090-s06,ssrm:v57:v57-d090-s06,canvas:fiber loft:resident:Sera:phrase:offer_tool,copper:21,Sera->Milo:trust warms,True
+1616,90,v57-d090-s14,ssrm:v57:v57-d090-s14,canvas:river gate:resident:Nia:phrase:apologize,herb:29,Nia->Tovan:work slows but recovers,True
+1624,91,v57-d091-s04,ssrm:v57:v57-d091-s04,canvas:tool alcove:resident:Fay:phrase:ask_sensory,water:13,Fay->Ari:group mood steadies,True
+1632,91,v57-d091-s12,ssrm:v57:v57-d091-s12,canvas:glasshouse:resident:Sera:phrase:request_space,fiber:21,Sera->Milo:guardedness rises,True
+1640,92,v57-d092-s02,ssrm:v57:v57-d092-s02,canvas:rain court:resident:Nia:phrase:thank_resident,stone:32,Nia->Tovan:trust warms,True
+1648,92,v57-d092-s10,ssrm:v57:v57-d092-s10,canvas:fiber loft:resident:Fay:phrase:ask_repair,copper:17,Fay->Ari:work slows but recovers,True
+1656,93,v57-d093-s00,ssrm:v57:v57-d093-s00,canvas:west hearth:resident:Sera:phrase:ask_help,charcoal:24,Sera->Milo:group mood steadies,True
+1664,93,v57-d093-s08,ssrm:v57:v57-d093-s08,canvas:tool alcove:resident:Nia:phrase:offer_tool,water:9,Nia->Tovan:guardedness rises,True
+1672,93,v57-d093-s16,ssrm:v57:v57-d093-s16,canvas:glasshouse:resident:Fay:phrase:apologize,fiber:17,Fay->Ari:debt is marked paid,True
+1680,94,v57-d094-s06,ssrm:v57:v57-d094-s06,canvas:rain court:resident:Sera:phrase:ask_sensory,stone:28,Sera->Milo:work slows but recovers,True
+1688,94,v57-d094-s14,ssrm:v57:v57-d094-s14,canvas:fiber loft:resident:Nia:phrase:request_space,copper:13,Nia->Tovan:bystander learns caution,True
+1696,95,v57-d095-s04,ssrm:v57:v57-d095-s04,canvas:west hearth:resident:Fay:phrase:thank_resident,charcoal:20,Fay->Ari:guardedness rises,True
+1704,95,v57-d095-s12,ssrm:v57:v57-d095-s12,canvas:tool alcove:resident:Sera:phrase:ask_repair,water:28,Sera->Milo:debt is marked paid,True
+1712,96,v57-d096-s02,ssrm:v57:v57-d096-s02,canvas:river gate:resident:Nia:phrase:ask_help,wood:16,Nia->Tovan:work slows but recovers,True
+1720,96,v57-d096-s10,ssrm:v57:v57-d096-s10,canvas:rain court:resident:Fay:phrase:offer_tool,stone:24,Fay->Ari:bystander learns caution,True
+1728,97,v57-d097-s00,ssrm:v57:v57-d097-s00,canvas:glasshouse:resident:Sera:phrase:apologize,herb:8,Sera->Milo:guardedness rises,True
+1736,97,v57-d097-s08,ssrm:v57:v57-d097-s08,canvas:west hearth:resident:Nia:phrase:ask_sensory,charcoal:16,Nia->Tovan:debt is marked paid,True
+1744,97,v57-d097-s16,ssrm:v57:v57-d097-s16,canvas:tool alcove:resident:Fay:phrase:request_space,water:24,Fay->Ari:group mood steadies,True
+1752,98,v57-d098-s06,ssrm:v57:v57-d098-s06,canvas:river gate:resident:Sera:phrase:thank_resident,wood:12,Sera->Milo:bystander learns caution,True
+1760,98,v57-d098-s14,ssrm:v57:v57-d098-s14,canvas:rain court:resident:Nia:phrase:ask_repair,stone:20,Nia->Tovan:trust warms,True
+1768,99,v57-d099-s04,ssrm:v57:v57-d099-s04,canvas:glasshouse:resident:Fay:phrase:ask_help,herb:27,Fay->Ari:debt is marked paid,True
+1776,99,v57-d099-s12,ssrm:v57:v57-d099-s12,canvas:west hearth:resident:Sera:phrase:offer_tool,charcoal:12,Sera->Milo:group mood steadies,True
+1784,100,v57-d100-s02,ssrm:v57:v57-d100-s02,canvas:fiber loft:resident:Nia:phrase:apologize,fiber:23,Nia->Tovan:bystander learns caution,True
+1792,100,v57-d100-s10,ssrm:v57:v57-d100-s10,canvas:river gate:resident:Fay:phrase:ask_sensory,wood:31,Fay->Ari:trust warms,True
+1800,101,v57-d101-s00,ssrm:v57:v57-d101-s00,canvas:tool alcove:resident:Sera:phrase:request_space,copper:15,Sera->Milo:debt is marked paid,True
+1808,101,v57-d101-s08,ssrm:v57:v57-d101-s08,canvas:glasshouse:resident:Nia:phrase:thank_resident,herb:23,Nia->Tovan:group mood steadies,True
+1816,101,v57-d101-s16,ssrm:v57:v57-d101-s16,canvas:west hearth:resident:Fay:phrase:ask_repair,charcoal:8,Fay->Ari:guardedness rises,True
+1824,102,v57-d102-s06,ssrm:v57:v57-d102-s06,canvas:fiber loft:resident:Sera:phrase:ask_help,fiber:19,Sera->Milo:trust warms,True
+1832,102,v57-d102-s14,ssrm:v57:v57-d102-s14,canvas:river gate:resident:Nia:phrase:offer_tool,wood:27,Nia->Tovan:work slows but recovers,True
+1840,103,v57-d103-s04,ssrm:v57:v57-d103-s04,canvas:tool alcove:resident:Fay:phrase:apologize,copper:11,Fay->Ari:group mood steadies,True
+1848,103,v57-d103-s12,ssrm:v57:v57-d103-s12,canvas:glasshouse:resident:Sera:phrase:ask_sensory,herb:19,Sera->Milo:guardedness rises,True
+1856,104,v57-d104-s02,ssrm:v57:v57-d104-s02,canvas:rain court:resident:Nia:phrase:request_space,water:30,Nia->Tovan:trust warms,True
+1864,104,v57-d104-s10,ssrm:v57:v57-d104-s10,canvas:fiber loft:resident:Fay:phrase:thank_resident,fiber:15,Fay->Ari:work slows but recovers,True
+1872,105,v57-d105-s00,ssrm:v57:v57-d105-s00,canvas:west hearth:resident:Sera:phrase:ask_repair,stone:22,Sera->Milo:group mood steadies,True
+1880,105,v57-d105-s08,ssrm:v57:v57-d105-s08,canvas:tool alcove:resident:Nia:phrase:ask_help,copper:30,Nia->Tovan:guardedness rises,True
+1888,105,v57-d105-s16,ssrm:v57:v57-d105-s16,canvas:glasshouse:resident:Fay:phrase:offer_tool,herb:15,Fay->Ari:debt is marked paid,True
+1896,106,v57-d106-s06,ssrm:v57:v57-d106-s06,canvas:rain court:resident:Sera:phrase:apologize,water:26,Sera->Milo:work slows but recovers,True
+1904,106,v57-d106-s14,ssrm:v57:v57-d106-s14,canvas:fiber loft:resident:Nia:phrase:ask_sensory,fiber:11,Nia->Tovan:bystander learns caution,True
+1912,107,v57-d107-s04,ssrm:v57:v57-d107-s04,canvas:west hearth:resident:Fay:phrase:request_space,stone:18,Fay->Ari:guardedness rises,True
+1920,107,v57-d107-s12,ssrm:v57:v57-d107-s12,canvas:tool alcove:resident:Sera:phrase:thank_resident,copper:26,Sera->Milo:debt is marked paid,True
+1928,108,v57-d108-s02,ssrm:v57:v57-d108-s02,canvas:river gate:resident:Nia:phrase:ask_repair,charcoal:14,Nia->Tovan:work slows but recovers,True
+1936,108,v57-d108-s10,ssrm:v57:v57-d108-s10,canvas:rain court:resident:Fay:phrase:ask_help,water:22,Fay->Ari:bystander learns caution,True
+1944,109,v57-d109-s00,ssrm:v57:v57-d109-s00,canvas:glasshouse:resident:Sera:phrase:offer_tool,wood:29,Sera->Milo:guardedness rises,True
+1952,109,v57-d109-s08,ssrm:v57:v57-d109-s08,canvas:west hearth:resident:Nia:phrase:apologize,stone:14,Nia->Tovan:debt is marked paid,True
+1960,109,v57-d109-s16,ssrm:v57:v57-d109-s16,canvas:tool alcove:resident:Fay:phrase:ask_sensory,copper:22,Fay->Ari:group mood steadies,True
+1968,110,v57-d110-s06,ssrm:v57:v57-d110-s06,canvas:river gate:resident:Sera:phrase:request_space,charcoal:10,Sera->Milo:bystander learns caution,True
+1976,110,v57-d110-s14,ssrm:v57:v57-d110-s14,canvas:rain court:resident:Nia:phrase:thank_resident,water:18,Nia->Tovan:trust warms,True
+1984,111,v57-d111-s04,ssrm:v57:v57-d111-s04,canvas:glasshouse:resident:Fay:phrase:ask_repair,wood:25,Fay->Ari:debt is marked paid,True
+1992,111,v57-d111-s12,ssrm:v57:v57-d111-s12,canvas:west hearth:resident:Sera:phrase:ask_help,stone:10,Sera->Milo:group mood steadies,True
+2000,112,v57-d112-s02,ssrm:v57:v57-d112-s02,canvas:fiber loft:resident:Nia:phrase:offer_tool,herb:21,Nia->Tovan:bystander learns caution,True
+2008,112,v57-d112-s10,ssrm:v57:v57-d112-s10,canvas:river gate:resident:Fay:phrase:apologize,charcoal:29,Fay->Ari:trust warms,True
+2016,113,v57-d113-s00,ssrm:v57:v57-d113-s00,canvas:tool alcove:resident:Sera:phrase:ask_sensory,fiber:13,Sera->Milo:debt is marked paid,True
+2024,113,v57-d113-s08,ssrm:v57:v57-d113-s08,canvas:glasshouse:resident:Nia:phrase:request_space,wood:21,Nia->Tovan:group mood steadies,True
+2032,113,v57-d113-s16,ssrm:v57:v57-d113-s16,canvas:west hearth:resident:Fay:phrase:thank_resident,stone:29,Fay->Ari:guardedness rises,True
+2040,114,v57-d114-s06,ssrm:v57:v57-d114-s06,canvas:fiber loft:resident:Sera:phrase:ask_repair,herb:17,Sera->Milo:trust warms,True
+2048,114,v57-d114-s14,ssrm:v57:v57-d114-s14,canvas:river gate:resident:Nia:phrase:ask_help,charcoal:25,Nia->Tovan:work slows but recovers,True
+2056,115,v57-d115-s04,ssrm:v57:v57-d115-s04,canvas:tool alcove:resident:Fay:phrase:offer_tool,fiber:9,Fay->Ari:group mood steadies,True
+2064,115,v57-d115-s12,ssrm:v57:v57-d115-s12,canvas:glasshouse:resident:Sera:phrase:apologize,wood:17,Sera->Milo:guardedness rises,True
+2072,116,v57-d116-s02,ssrm:v57:v57-d116-s02,canvas:rain court:resident:Nia:phrase:ask_sensory,copper:28,Nia->Tovan:trust warms,True
+2080,116,v57-d116-s10,ssrm:v57:v57-d116-s10,canvas:fiber loft:resident:Fay:phrase:request_space,herb:13,Fay->Ari:work slows but recovers,True
+2088,117,v57-d117-s00,ssrm:v57:v57-d117-s00,canvas:west hearth:resident:Sera:phrase:thank_resident,water:20,Sera->Milo:group mood steadies,True
+2096,117,v57-d117-s08,ssrm:v57:v57-d117-s08,canvas:tool alcove:resident:Nia:phrase:ask_repair,fiber:28,Nia->Tovan:guardedness rises,True
+2104,117,v57-d117-s16,ssrm:v57:v57-d117-s16,canvas:glasshouse:resident:Fay:phrase:ask_help,wood:13,Fay->Ari:debt is marked paid,True
+2112,118,v57-d118-s06,ssrm:v57:v57-d118-s06,canvas:rain court:resident:Sera:phrase:offer_tool,copper:24,Sera->Milo:work slows but recovers,True
+2120,118,v57-d118-s14,ssrm:v57:v57-d118-s14,canvas:fiber loft:resident:Nia:phrase:apologize,herb:32,Nia->Tovan:bystander learns caution,True
+2128,119,v57-d119-s04,ssrm:v57:v57-d119-s04,canvas:west hearth:resident:Fay:phrase:ask_sensory,water:16,Fay->Ari:guardedness rises,True
+2136,119,v57-d119-s12,ssrm:v57:v57-d119-s12,canvas:tool alcove:resident:Sera:phrase:request_space,fiber:24,Sera->Milo:debt is marked paid,True
+2144,120,v57-d120-s02,ssrm:v57:v57-d120-s02,canvas:river gate:resident:Nia:phrase:thank_resident,stone:12,Nia->Tovan:work slows but recovers,True
+2152,120,v57-d120-s10,ssrm:v57:v57-d120-s10,canvas:rain court:resident:Fay:phrase:ask_repair,copper:20,Fay->Ari:bystander learns caution,True
+2160,121,v57-d121-s00,ssrm:v57:v57-d121-s00,canvas:glasshouse:resident:Sera:phrase:ask_help,charcoal:27,Sera->Milo:guardedness rises,True
+2168,121,v57-d121-s08,ssrm:v57:v57-d121-s08,canvas:west hearth:resident:Nia:phrase:offer_tool,water:12,Nia->Tovan:debt is marked paid,True
+2176,121,v57-d121-s16,ssrm:v57:v57-d121-s16,canvas:tool alcove:resident:Fay:phrase:apologize,fiber:20,Fay->Ari:group mood steadies,True
+2184,122,v57-d122-s06,ssrm:v57:v57-d122-s06,canvas:river gate:resident:Sera:phrase:ask_sensory,stone:31,Sera->Milo:bystander learns caution,True
+2192,122,v57-d122-s14,ssrm:v57:v57-d122-s14,canvas:rain court:resident:Nia:phrase:request_space,copper:16,Nia->Tovan:trust warms,True
+2200,123,v57-d123-s04,ssrm:v57:v57-d123-s04,canvas:glasshouse:resident:Fay:phrase:thank_resident,charcoal:23,Fay->Ari:debt is marked paid,True
+2208,123,v57-d123-s12,ssrm:v57:v57-d123-s12,canvas:west hearth:resident:Sera:phrase:ask_repair,water:8,Sera->Milo:group mood steadies,True
+2216,124,v57-d124-s02,ssrm:v57:v57-d124-s02,canvas:fiber loft:resident:Nia:phrase:ask_help,wood:19,Nia->Tovan:bystander learns caution,True
+2224,124,v57-d124-s10,ssrm:v57:v57-d124-s10,canvas:river gate:resident:Fay:phrase:offer_tool,stone:27,Fay->Ari:trust warms,True
+2232,125,v57-d125-s00,ssrm:v57:v57-d125-s00,canvas:tool alcove:resident:Sera:phrase:apologize,herb:11,Sera->Milo:debt is marked paid,True
+2240,125,v57-d125-s08,ssrm:v57:v57-d125-s08,canvas:glasshouse:resident:Nia:phrase:ask_sensory,charcoal:19,Nia->Tovan:group mood steadies,True
+2248,125,v57-d125-s16,ssrm:v57:v57-d125-s16,canvas:west hearth:resident:Fay:phrase:request_space,water:27,Fay->Ari:guardedness rises,True
+2256,126,v57-d126-s06,ssrm:v57:v57-d126-s06,canvas:fiber loft:resident:Sera:phrase:thank_resident,wood:15,Sera->Milo:trust warms,True
+2264,126,v57-d126-s14,ssrm:v57:v57-d126-s14,canvas:river gate:resident:Nia:phrase:ask_repair,stone:23,Nia->Tovan:work slows but recovers,True
+2272,127,v57-d127-s04,ssrm:v57:v57-d127-s04,canvas:tool alcove:resident:Fay:phrase:ask_help,herb:30,Fay->Ari:group mood steadies,True
+2280,127,v57-d127-s12,ssrm:v57:v57-d127-s12,canvas:glasshouse:resident:Sera:phrase:offer_tool,charcoal:15,Sera->Milo:guardedness rises,True
+2288,128,v57-d128-s02,ssrm:v57:v57-d128-s02,canvas:rain court:resident:Nia:phrase:apologize,fiber:26,Nia->Tovan:trust warms,True
+2296,128,v57-d128-s10,ssrm:v57:v57-d128-s10,canvas:fiber loft:resident:Fay:phrase:ask_sensory,wood:11,Fay->Ari:work slows but recovers,True
+2304,129,v57-d129-s00,ssrm:v57:v57-d129-s00,canvas:west hearth:resident:Sera:phrase:request_space,copper:18,Sera->Milo:group mood steadies,True
+2312,129,v57-d129-s08,ssrm:v57:v57-d129-s08,canvas:tool alcove:resident:Nia:phrase:thank_resident,herb:26,Nia->Tovan:guardedness rises,True
+2320,129,v57-d129-s16,ssrm:v57:v57-d129-s16,canvas:glasshouse:resident:Fay:phrase:ask_repair,charcoal:11,Fay->Ari:debt is marked paid,True
+2328,130,v57-d130-s06,ssrm:v57:v57-d130-s06,canvas:rain court:resident:Sera:phrase:ask_help,fiber:22,Sera->Milo:work slows but recovers,True
+2336,130,v57-d130-s14,ssrm:v57:v57-d130-s14,canvas:fiber loft:resident:Nia:phrase:offer_tool,wood:30,Nia->Tovan:bystander learns caution,True
+2344,131,v57-d131-s04,ssrm:v57:v57-d131-s04,canvas:west hearth:resident:Fay:phrase:apologize,copper:14,Fay->Ari:guardedness rises,True
+2352,131,v57-d131-s12,ssrm:v57:v57-d131-s12,canvas:tool alcove:resident:Sera:phrase:ask_sensory,herb:22,Sera->Milo:debt is marked paid,True
+2360,132,v57-d132-s02,ssrm:v57:v57-d132-s02,canvas:river gate:resident:Nia:phrase:request_space,water:10,Nia->Tovan:work slows but recovers,True
+2368,132,v57-d132-s10,ssrm:v57:v57-d132-s10,canvas:rain court:resident:Fay:phrase:thank_resident,fiber:18,Fay->Ari:bystander learns caution,True
+2376,133,v57-d133-s00,ssrm:v57:v57-d133-s00,canvas:glasshouse:resident:Sera:phrase:ask_repair,stone:25,Sera->Milo:guardedness rises,True
+2384,133,v57-d133-s08,ssrm:v57:v57-d133-s08,canvas:west hearth:resident:Nia:phrase:ask_help,copper:10,Nia->Tovan:debt is marked paid,True
+2392,133,v57-d133-s16,ssrm:v57:v57-d133-s16,canvas:tool alcove:resident:Fay:phrase:offer_tool,herb:18,Fay->Ari:group mood steadies,True
+2400,134,v57-d134-s06,ssrm:v57:v57-d134-s06,canvas:river gate:resident:Sera:phrase:apologize,water:29,Sera->Milo:bystander learns caution,True
+2408,134,v57-d134-s14,ssrm:v57:v57-d134-s14,canvas:rain court:resident:Nia:phrase:ask_sensory,fiber:14,Nia->Tovan:trust warms,True
+2416,135,v57-d135-s04,ssrm:v57:v57-d135-s04,canvas:glasshouse:resident:Fay:phrase:request_space,stone:21,Fay->Ari:debt is marked paid,True
+2424,135,v57-d135-s12,ssrm:v57:v57-d135-s12,canvas:west hearth:resident:Sera:phrase:thank_resident,copper:29,Sera->Milo:group mood steadies,True
+2432,136,v57-d136-s02,ssrm:v57:v57-d136-s02,canvas:fiber loft:resident:Nia:phrase:ask_repair,charcoal:17,Nia->Tovan:bystander learns caution,True
+2440,136,v57-d136-s10,ssrm:v57:v57-d136-s10,canvas:river gate:resident:Fay:phrase:ask_help,water:25,Fay->Ari:trust warms,True
+2448,137,v57-d137-s00,ssrm:v57:v57-d137-s00,canvas:tool alcove:resident:Sera:phrase:offer_tool,wood:9,Sera->Milo:debt is marked paid,True
+2456,137,v57-d137-s08,ssrm:v57:v57-d137-s08,canvas:glasshouse:resident:Nia:phrase:apologize,stone:17,Nia->Tovan:group mood steadies,True
+2464,137,v57-d137-s16,ssrm:v57:v57-d137-s16,canvas:west hearth:resident:Fay:phrase:ask_sensory,copper:25,Fay->Ari:guardedness rises,True
+2472,138,v57-d138-s06,ssrm:v57:v57-d138-s06,canvas:fiber loft:resident:Sera:phrase:request_space,charcoal:13,Sera->Milo:trust warms,True
+2480,138,v57-d138-s14,ssrm:v57:v57-d138-s14,canvas:river gate:resident:Nia:phrase:thank_resident,water:21,Nia->Tovan:work slows but recovers,True
+2488,139,v57-d139-s04,ssrm:v57:v57-d139-s04,canvas:tool alcove:resident:Fay:phrase:ask_repair,wood:28,Fay->Ari:group mood steadies,True
+2496,139,v57-d139-s12,ssrm:v57:v57-d139-s12,canvas:glasshouse:resident:Sera:phrase:ask_help,stone:13,Sera->Milo:guardedness rises,True
+2504,140,v57-d140-s02,ssrm:v57:v57-d140-s02,canvas:rain court:resident:Nia:phrase:offer_tool,herb:24,Nia->Tovan:trust warms,True
+2512,140,v57-d140-s10,ssrm:v57:v57-d140-s10,canvas:fiber loft:resident:Fay:phrase:apologize,charcoal:32,Fay->Ari:work slows but recovers,True
+2520,141,v57-d141-s00,ssrm:v57:v57-d141-s00,canvas:west hearth:resident:Sera:phrase:ask_sensory,fiber:16,Sera->Milo:group mood steadies,True
+2528,141,v57-d141-s08,ssrm:v57:v57-d141-s08,canvas:tool alcove:resident:Nia:phrase:request_space,wood:24,Nia->Tovan:guardedness rises,True
+2536,141,v57-d141-s16,ssrm:v57:v57-d141-s16,canvas:glasshouse:resident:Fay:phrase:thank_resident,stone:9,Fay->Ari:debt is marked paid,True
+2544,142,v57-d142-s06,ssrm:v57:v57-d142-s06,canvas:rain court:resident:Sera:phrase:ask_repair,herb:20,Sera->Milo:work slows but recovers,True
+2552,142,v57-d142-s14,ssrm:v57:v57-d142-s14,canvas:fiber loft:resident:Nia:phrase:ask_help,charcoal:28,Nia->Tovan:bystander learns caution,True
+2560,143,v57-d143-s04,ssrm:v57:v57-d143-s04,canvas:west hearth:resident:Fay:phrase:offer_tool,fiber:12,Fay->Ari:guardedness rises,True
+2568,143,v57-d143-s12,ssrm:v57:v57-d143-s12,canvas:tool alcove:resident:Sera:phrase:apologize,wood:20,Sera->Milo:debt is marked paid,True
+2576,144,v57-d144-s02,ssrm:v57:v57-d144-s02,canvas:river gate:resident:Nia:phrase:ask_sensory,copper:31,Nia->Tovan:work slows but recovers,True
+2584,144,v57-d144-s10,ssrm:v57:v57-d144-s10,canvas:rain court:resident:Fay:phrase:request_space,herb:16,Fay->Ari:bystander learns caution,True
+2592,145,v57-d145-s00,ssrm:v57:v57-d145-s00,canvas:glasshouse:resident:Sera:phrase:thank_resident,water:23,Sera->Milo:guardedness rises,True
+2600,145,v57-d145-s08,ssrm:v57:v57-d145-s08,canvas:west hearth:resident:Nia:phrase:ask_repair,fiber:8,Nia->Tovan:debt is marked paid,True
+2608,145,v57-d145-s16,ssrm:v57:v57-d145-s16,canvas:tool alcove:resident:Fay:phrase:ask_help,wood:16,Fay->Ari:group mood steadies,True
+2616,146,v57-d146-s06,ssrm:v57:v57-d146-s06,canvas:river gate:resident:Sera:phrase:offer_tool,copper:27,Sera->Milo:bystander learns caution,True
+2624,146,v57-d146-s14,ssrm:v57:v57-d146-s14,canvas:rain court:resident:Nia:phrase:apologize,herb:12,Nia->Tovan:trust warms,True
+2632,147,v57-d147-s04,ssrm:v57:v57-d147-s04,canvas:glasshouse:resident:Fay:phrase:ask_sensory,water:19,Fay->Ari:debt is marked paid,True
+2640,147,v57-d147-s12,ssrm:v57:v57-d147-s12,canvas:west hearth:resident:Sera:phrase:request_space,fiber:27,Sera->Milo:group mood steadies,True
+2648,148,v57-d148-s02,ssrm:v57:v57-d148-s02,canvas:fiber loft:resident:Nia:phrase:thank_resident,stone:15,Nia->Tovan:bystander learns caution,True
+2656,148,v57-d148-s10,ssrm:v57:v57-d148-s10,canvas:river gate:resident:Fay:phrase:ask_repair,copper:23,Fay->Ari:trust warms,True
+2664,149,v57-d149-s00,ssrm:v57:v57-d149-s00,canvas:tool alcove:resident:Sera:phrase:ask_help,charcoal:30,Sera->Milo:debt is marked paid,True
+2672,149,v57-d149-s08,ssrm:v57:v57-d149-s08,canvas:glasshouse:resident:Nia:phrase:offer_tool,water:15,Nia->Tovan:group mood steadies,True
+2680,149,v57-d149-s16,ssrm:v57:v57-d149-s16,canvas:west hearth:resident:Fay:phrase:apologize,fiber:23,Fay->Ari:guardedness rises,True
+2688,150,v57-d150-s06,ssrm:v57:v57-d150-s06,canvas:fiber loft:resident:Sera:phrase:ask_sensory,stone:11,Sera->Milo:trust warms,True
+2696,150,v57-d150-s14,ssrm:v57:v57-d150-s14,canvas:river gate:resident:Nia:phrase:request_space,copper:19,Nia->Tovan:work slows but recovers,True
+2704,151,v57-d151-s04,ssrm:v57:v57-d151-s04,canvas:tool alcove:resident:Fay:phrase:thank_resident,charcoal:26,Fay->Ari:group mood steadies,True
+2712,151,v57-d151-s12,ssrm:v57:v57-d151-s12,canvas:glasshouse:resident:Sera:phrase:ask_repair,water:11,Sera->Milo:guardedness rises,True
+2720,152,v57-d152-s02,ssrm:v57:v57-d152-s02,canvas:rain court:resident:Nia:phrase:ask_help,wood:22,Nia->Tovan:trust warms,True
+2728,152,v57-d152-s10,ssrm:v57:v57-d152-s10,canvas:fiber loft:resident:Fay:phrase:offer_tool,stone:30,Fay->Ari:work slows but recovers,True
+2736,153,v57-d153-s00,ssrm:v57:v57-d153-s00,canvas:west hearth:resident:Sera:phrase:apologize,herb:14,Sera->Milo:group mood steadies,True
+2744,153,v57-d153-s08,ssrm:v57:v57-d153-s08,canvas:tool alcove:resident:Nia:phrase:ask_sensory,charcoal:22,Nia->Tovan:guardedness rises,True
+2752,153,v57-d153-s16,ssrm:v57:v57-d153-s16,canvas:glasshouse:resident:Fay:phrase:request_space,water:30,Fay->Ari:debt is marked paid,True
+2760,154,v57-d154-s06,ssrm:v57:v57-d154-s06,canvas:rain court:resident:Sera:phrase:thank_resident,wood:18,Sera->Milo:work slows but recovers,True
+2768,154,v57-d154-s14,ssrm:v57:v57-d154-s14,canvas:fiber loft:resident:Nia:phrase:ask_repair,stone:26,Nia->Tovan:bystander learns caution,True
+2776,155,v57-d155-s04,ssrm:v57:v57-d155-s04,canvas:west hearth:resident:Fay:phrase:ask_help,herb:10,Fay->Ari:guardedness rises,True
+2784,155,v57-d155-s12,ssrm:v57:v57-d155-s12,canvas:tool alcove:resident:Sera:phrase:offer_tool,charcoal:18,Sera->Milo:debt is marked paid,True
+2792,156,v57-d156-s02,ssrm:v57:v57-d156-s02,canvas:river gate:resident:Nia:phrase:apologize,fiber:29,Nia->Tovan:work slows but recovers,True
+2800,156,v57-d156-s10,ssrm:v57:v57-d156-s10,canvas:rain court:resident:Fay:phrase:ask_sensory,wood:14,Fay->Ari:bystander learns caution,True
+2808,157,v57-d157-s00,ssrm:v57:v57-d157-s00,canvas:glasshouse:resident:Sera:phrase:request_space,copper:21,Sera->Milo:guardedness rises,True
+2816,157,v57-d157-s08,ssrm:v57:v57-d157-s08,canvas:west hearth:resident:Nia:phrase:thank_resident,herb:29,Nia->Tovan:debt is marked paid,True
+2824,157,v57-d157-s16,ssrm:v57:v57-d157-s16,canvas:tool alcove:resident:Fay:phrase:ask_repair,charcoal:14,Fay->Ari:group mood steadies,True
+2832,158,v57-d158-s06,ssrm:v57:v57-d158-s06,canvas:river gate:resident:Sera:phrase:ask_help,fiber:25,Sera->Milo:bystander learns caution,True
+2840,158,v57-d158-s14,ssrm:v57:v57-d158-s14,canvas:rain court:resident:Nia:phrase:offer_tool,wood:10,Nia->Tovan:trust warms,True
+2848,159,v57-d159-s04,ssrm:v57:v57-d159-s04,canvas:glasshouse:resident:Fay:phrase:apologize,copper:17,Fay->Ari:debt is marked paid,True
+2856,159,v57-d159-s12,ssrm:v57:v57-d159-s12,canvas:west hearth:resident:Sera:phrase:ask_sensory,herb:25,Sera->Milo:group mood steadies,True
+2864,160,v57-d160-s02,ssrm:v57:v57-d160-s02,canvas:fiber loft:resident:Nia:phrase:request_space,water:13,Nia->Tovan:bystander learns caution,True
+2872,160,v57-d160-s10,ssrm:v57:v57-d160-s10,canvas:river gate:resident:Fay:phrase:thank_resident,fiber:21,Fay->Ari:trust warms,True
+2880,161,v57-d161-s00,ssrm:v57:v57-d161-s00,canvas:tool alcove:resident:Sera:phrase:ask_repair,stone:28,Sera->Milo:debt is marked paid,True
+2888,161,v57-d161-s08,ssrm:v57:v57-d161-s08,canvas:glasshouse:resident:Nia:phrase:ask_help,copper:13,Nia->Tovan:group mood steadies,True
+2896,161,v57-d161-s16,ssrm:v57:v57-d161-s16,canvas:west hearth:resident:Fay:phrase:offer_tool,herb:21,Fay->Ari:guardedness rises,True
+2904,162,v57-d162-s06,ssrm:v57:v57-d162-s06,canvas:fiber loft:resident:Sera:phrase:apologize,water:32,Sera->Milo:trust warms,True
+2912,162,v57-d162-s14,ssrm:v57:v57-d162-s14,canvas:river gate:resident:Nia:phrase:ask_sensory,fiber:17,Nia->Tovan:work slows but recovers,True
+2920,163,v57-d163-s04,ssrm:v57:v57-d163-s04,canvas:tool alcove:resident:Fay:phrase:request_space,stone:24,Fay->Ari:group mood steadies,True
+2928,163,v57-d163-s12,ssrm:v57:v57-d163-s12,canvas:glasshouse:resident:Sera:phrase:thank_resident,copper:9,Sera->Milo:guardedness rises,True
+2936,164,v57-d164-s02,ssrm:v57:v57-d164-s02,canvas:rain court:resident:Nia:phrase:ask_repair,charcoal:20,Nia->Tovan:trust warms,True
+2944,164,v57-d164-s10,ssrm:v57:v57-d164-s10,canvas:fiber loft:resident:Fay:phrase:ask_help,water:28,Fay->Ari:work slows but recovers,True
+2952,165,v57-d165-s00,ssrm:v57:v57-d165-s00,canvas:west hearth:resident:Sera:phrase:offer_tool,wood:12,Sera->Milo:group mood steadies,True
+2960,165,v57-d165-s08,ssrm:v57:v57-d165-s08,canvas:tool alcove:resident:Nia:phrase:apologize,stone:20,Nia->Tovan:guardedness rises,True
+2968,165,v57-d165-s16,ssrm:v57:v57-d165-s16,canvas:glasshouse:resident:Fay:phrase:ask_sensory,copper:28,Fay->Ari:debt is marked paid,True
+2976,166,v57-d166-s06,ssrm:v57:v57-d166-s06,canvas:rain court:resident:Sera:phrase:request_space,charcoal:16,Sera->Milo:work slows but recovers,True
+2984,166,v57-d166-s14,ssrm:v57:v57-d166-s14,canvas:fiber loft:resident:Nia:phrase:thank_resident,water:24,Nia->Tovan:bystander learns caution,True
+2992,167,v57-d167-s04,ssrm:v57:v57-d167-s04,canvas:west hearth:resident:Fay:phrase:ask_repair,wood:8,Fay->Ari:guardedness rises,True
+3000,167,v57-d167-s12,ssrm:v57:v57-d167-s12,canvas:tool alcove:resident:Sera:phrase:ask_help,stone:16,Sera->Milo:debt is marked paid,True
+3008,168,v57-d168-s02,ssrm:v57:v57-d168-s02,canvas:river gate:resident:Nia:phrase:offer_tool,herb:27,Nia->Tovan:work slows but recovers,True
+3016,168,v57-d168-s10,ssrm:v57:v57-d168-s10,canvas:rain court:resident:Fay:phrase:apologize,charcoal:12,Fay->Ari:bystander learns caution,True
+3024,169,v57-d169-s00,ssrm:v57:v57-d169-s00,canvas:glasshouse:resident:Sera:phrase:ask_sensory,fiber:19,Sera->Milo:guardedness rises,True
+3032,169,v57-d169-s08,ssrm:v57:v57-d169-s08,canvas:west hearth:resident:Nia:phrase:request_space,wood:27,Nia->Tovan:debt is marked paid,True
+3040,169,v57-d169-s16,ssrm:v57:v57-d169-s16,canvas:tool alcove:resident:Fay:phrase:thank_resident,stone:12,Fay->Ari:group mood steadies,True
+3048,170,v57-d170-s06,ssrm:v57:v57-d170-s06,canvas:river gate:resident:Sera:phrase:ask_repair,herb:23,Sera->Milo:bystander learns caution,True
+3056,170,v57-d170-s14,ssrm:v57:v57-d170-s14,canvas:rain court:resident:Nia:phrase:ask_help,charcoal:31,Nia->Tovan:trust warms,True
+3064,171,v57-d171-s04,ssrm:v57:v57-d171-s04,canvas:glasshouse:resident:Fay:phrase:offer_tool,fiber:15,Fay->Ari:debt is marked paid,True
+3072,171,v57-d171-s12,ssrm:v57:v57-d171-s12,canvas:west hearth:resident:Sera:phrase:apologize,wood:23,Sera->Milo:group mood steadies,True
+3080,172,v57-d172-s02,ssrm:v57:v57-d172-s02,canvas:fiber loft:resident:Nia:phrase:ask_sensory,copper:11,Nia->Tovan:bystander learns caution,True
+3088,172,v57-d172-s10,ssrm:v57:v57-d172-s10,canvas:river gate:resident:Fay:phrase:request_space,herb:19,Fay->Ari:trust warms,True
+3096,173,v57-d173-s00,ssrm:v57:v57-d173-s00,canvas:tool alcove:resident:Sera:phrase:thank_resident,water:26,Sera->Milo:debt is marked paid,True
+3104,173,v57-d173-s08,ssrm:v57:v57-d173-s08,canvas:glasshouse:resident:Nia:phrase:ask_repair,fiber:11,Nia->Tovan:group mood steadies,True
+3112,173,v57-d173-s16,ssrm:v57:v57-d173-s16,canvas:west hearth:resident:Fay:phrase:ask_help,wood:19,Fay->Ari:guardedness rises,True
+3120,174,v57-d174-s06,ssrm:v57:v57-d174-s06,canvas:fiber loft:resident:Sera:phrase:offer_tool,copper:30,Sera->Milo:trust warms,True
+3128,174,v57-d174-s14,ssrm:v57:v57-d174-s14,canvas:river gate:resident:Nia:phrase:apologize,herb:15,Nia->Tovan:work slows but recovers,True
+3136,175,v57-d175-s04,ssrm:v57:v57-d175-s04,canvas:tool alcove:resident:Fay:phrase:ask_sensory,water:22,Fay->Ari:group mood steadies,True
+3144,175,v57-d175-s12,ssrm:v57:v57-d175-s12,canvas:glasshouse:resident:Sera:phrase:request_space,fiber:30,Sera->Milo:guardedness rises,True
+3152,176,v57-d176-s02,ssrm:v57:v57-d176-s02,canvas:rain court:resident:Nia:phrase:thank_resident,stone:18,Nia->Tovan:trust warms,True
+3160,176,v57-d176-s10,ssrm:v57:v57-d176-s10,canvas:fiber loft:resident:Fay:phrase:ask_repair,copper:26,Fay->Ari:work slows but recovers,True
+3168,177,v57-d177-s00,ssrm:v57:v57-d177-s00,canvas:west hearth:resident:Sera:phrase:ask_help,charcoal:10,Sera->Milo:group mood steadies,True
+3176,177,v57-d177-s08,ssrm:v57:v57-d177-s08,canvas:tool alcove:resident:Nia:phrase:offer_tool,water:18,Nia->Tovan:guardedness rises,True
+3184,177,v57-d177-s16,ssrm:v57:v57-d177-s16,canvas:glasshouse:resident:Fay:phrase:apologize,fiber:26,Fay->Ari:debt is marked paid,True
+3192,178,v57-d178-s06,ssrm:v57:v57-d178-s06,canvas:rain court:resident:Sera:phrase:ask_sensory,stone:14,Sera->Milo:work slows but recovers,True
+3200,178,v57-d178-s14,ssrm:v57:v57-d178-s14,canvas:fiber loft:resident:Nia:phrase:request_space,copper:22,Nia->Tovan:bystander learns caution,True
+3208,179,v57-d179-s04,ssrm:v57:v57-d179-s04,canvas:west hearth:resident:Fay:phrase:thank_resident,charcoal:29,Fay->Ari:guardedness rises,True
+3216,179,v57-d179-s12,ssrm:v57:v57-d179-s12,canvas:tool alcove:resident:Sera:phrase:ask_repair,water:14,Sera->Milo:debt is marked paid,True
+3224,180,v57-d180-s02,ssrm:v57:v57-d180-s02,canvas:river gate:resident:Nia:phrase:ask_help,wood:25,Nia->Tovan:work slows but recovers,True
+3232,180,v57-d180-s10,ssrm:v57:v57-d180-s10,canvas:rain court:resident:Fay:phrase:offer_tool,stone:10,Fay->Ari:bystander learns caution,True
+3240,181,v57-d181-s00,ssrm:v57:v57-d181-s00,canvas:glasshouse:resident:Sera:phrase:apologize,herb:17,Sera->Milo:guardedness rises,True
+3248,181,v57-d181-s08,ssrm:v57:v57-d181-s08,canvas:west hearth:resident:Nia:phrase:ask_sensory,charcoal:25,Nia->Tovan:debt is marked paid,True
+3256,181,v57-d181-s16,ssrm:v57:v57-d181-s16,canvas:tool alcove:resident:Fay:phrase:request_space,water:10,Fay->Ari:group mood steadies,True
+3264,182,v57-d182-s06,ssrm:v57:v57-d182-s06,canvas:river gate:resident:Sera:phrase:thank_resident,wood:21,Sera->Milo:bystander learns caution,True
+3272,182,v57-d182-s14,ssrm:v57:v57-d182-s14,canvas:rain court:resident:Nia:phrase:ask_repair,stone:29,Nia->Tovan:trust warms,True
+3280,183,v57-d183-s04,ssrm:v57:v57-d183-s04,canvas:glasshouse:resident:Fay:phrase:ask_help,herb:13,Fay->Ari:debt is marked paid,True
+3288,183,v57-d183-s12,ssrm:v57:v57-d183-s12,canvas:west hearth:resident:Sera:phrase:offer_tool,charcoal:21,Sera->Milo:group mood steadies,True
+3296,184,v57-d184-s02,ssrm:v57:v57-d184-s02,canvas:fiber loft:resident:Nia:phrase:apologize,fiber:32,Nia->Tovan:bystander learns caution,True
+3304,184,v57-d184-s10,ssrm:v57:v57-d184-s10,canvas:river gate:resident:Fay:phrase:ask_sensory,wood:17,Fay->Ari:trust warms,True
+3312,185,v57-d185-s00,ssrm:v57:v57-d185-s00,canvas:tool alcove:resident:Sera:phrase:request_space,copper:24,Sera->Milo:debt is marked paid,True
+3320,185,v57-d185-s08,ssrm:v57:v57-d185-s08,canvas:glasshouse:resident:Nia:phrase:thank_resident,herb:9,Nia->Tovan:group mood steadies,True
+3328,185,v57-d185-s16,ssrm:v57:v57-d185-s16,canvas:west hearth:resident:Fay:phrase:ask_repair,charcoal:17,Fay->Ari:guardedness rises,True
+3336,186,v57-d186-s06,ssrm:v57:v57-d186-s06,canvas:fiber loft:resident:Sera:phrase:ask_help,fiber:28,Sera->Milo:trust warms,True
+3344,186,v57-d186-s14,ssrm:v57:v57-d186-s14,canvas:river gate:resident:Nia:phrase:offer_tool,wood:13,Nia->Tovan:work slows but recovers,True
+3352,187,v57-d187-s04,ssrm:v57:v57-d187-s04,canvas:tool alcove:resident:Fay:phrase:apologize,copper:20,Fay->Ari:group mood steadies,True
+3360,187,v57-d187-s12,ssrm:v57:v57-d187-s12,canvas:glasshouse:resident:Sera:phrase:ask_sensory,herb:28,Sera->Milo:guardedness rises,True
+3368,188,v57-d188-s02,ssrm:v57:v57-d188-s02,canvas:rain court:resident:Nia:phrase:request_space,water:16,Nia->Tovan:trust warms,True
+3376,188,v57-d188-s10,ssrm:v57:v57-d188-s10,canvas:fiber loft:resident:Fay:phrase:thank_resident,fiber:24,Fay->Ari:work slows but recovers,True
+3384,189,v57-d189-s00,ssrm:v57:v57-d189-s00,canvas:west hearth:resident:Sera:phrase:ask_repair,stone:8,Sera->Milo:group mood steadies,True
+3392,189,v57-d189-s08,ssrm:v57:v57-d189-s08,canvas:tool alcove:resident:Nia:phrase:ask_help,copper:16,Nia->Tovan:guardedness rises,True
+3400,189,v57-d189-s16,ssrm:v57:v57-d189-s16,canvas:glasshouse:resident:Fay:phrase:offer_tool,herb:24,Fay->Ari:debt is marked paid,True
+3408,190,v57-d190-s06,ssrm:v57:v57-d190-s06,canvas:rain court:resident:Sera:phrase:apologize,water:12,Sera->Milo:work slows but recovers,True
+3416,190,v57-d190-s14,ssrm:v57:v57-d190-s14,canvas:fiber loft:resident:Nia:phrase:ask_sensory,fiber:20,Nia->Tovan:bystander learns caution,True
+3424,191,v57-d191-s04,ssrm:v57:v57-d191-s04,canvas:west hearth:resident:Fay:phrase:request_space,stone:27,Fay->Ari:guardedness rises,True
+3432,191,v57-d191-s12,ssrm:v57:v57-d191-s12,canvas:tool alcove:resident:Sera:phrase:thank_resident,copper:12,Sera->Milo:debt is marked paid,True
+3440,192,v57-d192-s02,ssrm:v57:v57-d192-s02,canvas:river gate:resident:Nia:phrase:ask_repair,charcoal:23,Nia->Tovan:work slows but recovers,True
+3448,192,v57-d192-s10,ssrm:v57:v57-d192-s10,canvas:rain court:resident:Fay:phrase:ask_help,water:31,Fay->Ari:bystander learns caution,True
+3456,193,v57-d193-s00,ssrm:v57:v57-d193-s00,canvas:glasshouse:resident:Sera:phrase:offer_tool,wood:15,Sera->Milo:guardedness rises,True
+3464,193,v57-d193-s08,ssrm:v57:v57-d193-s08,canvas:west hearth:resident:Nia:phrase:apologize,stone:23,Nia->Tovan:debt is marked paid,True
+3472,193,v57-d193-s16,ssrm:v57:v57-d193-s16,canvas:tool alcove:resident:Fay:phrase:ask_sensory,copper:8,Fay->Ari:group mood steadies,True
+3480,194,v57-d194-s06,ssrm:v57:v57-d194-s06,canvas:river gate:resident:Sera:phrase:request_space,charcoal:19,Sera->Milo:bystander learns caution,True
+3488,194,v57-d194-s14,ssrm:v57:v57-d194-s14,canvas:rain court:resident:Nia:phrase:thank_resident,water:27,Nia->Tovan:trust warms,True
+3496,195,v57-d195-s04,ssrm:v57:v57-d195-s04,canvas:glasshouse:resident:Fay:phrase:ask_repair,wood:11,Fay->Ari:debt is marked paid,True
+3504,195,v57-d195-s12,ssrm:v57:v57-d195-s12,canvas:west hearth:resident:Sera:phrase:ask_help,stone:19,Sera->Milo:group mood steadies,True
+3512,196,v57-d196-s02,ssrm:v57:v57-d196-s02,canvas:fiber loft:resident:Nia:phrase:offer_tool,herb:30,Nia->Tovan:bystander learns caution,True
+3520,196,v57-d196-s10,ssrm:v57:v57-d196-s10,canvas:river gate:resident:Fay:phrase:apologize,charcoal:15,Fay->Ari:trust warms,True
+3528,197,v57-d197-s00,ssrm:v57:v57-d197-s00,canvas:tool alcove:resident:Sera:phrase:ask_sensory,fiber:22,Sera->Milo:debt is marked paid,True
+3536,197,v57-d197-s08,ssrm:v57:v57-d197-s08,canvas:glasshouse:resident:Nia:phrase:request_space,wood:30,Nia->Tovan:group mood steadies,True
+3544,197,v57-d197-s16,ssrm:v57:v57-d197-s16,canvas:west hearth:resident:Fay:phrase:thank_resident,stone:15,Fay->Ari:guardedness rises,True
+3552,198,v57-d198-s06,ssrm:v57:v57-d198-s06,canvas:fiber loft:resident:Sera:phrase:ask_repair,herb:26,Sera->Milo:trust warms,True
+3560,198,v57-d198-s14,ssrm:v57:v57-d198-s14,canvas:river gate:resident:Nia:phrase:ask_help,charcoal:11,Nia->Tovan:work slows but recovers,True
+3568,199,v57-d199-s04,ssrm:v57:v57-d199-s04,canvas:tool alcove:resident:Fay:phrase:offer_tool,fiber:18,Fay->Ari:group mood steadies,True
+3576,199,v57-d199-s12,ssrm:v57:v57-d199-s12,canvas:glasshouse:resident:Sera:phrase:apologize,wood:26,Sera->Milo:guardedness rises,True
+3584,200,v57-d200-s02,ssrm:v57:v57-d200-s02,canvas:rain court:resident:Nia:phrase:ask_sensory,copper:14,Nia->Tovan:trust warms,True
+3592,200,v57-d200-s10,ssrm:v57:v57-d200-s10,canvas:fiber loft:resident:Fay:phrase:request_space,herb:22,Fay->Ari:work slows but recovers,True
+3600,201,v57-d201-s00,ssrm:v57:v57-d201-s00,canvas:west hearth:resident:Sera:phrase:thank_resident,water:29,Sera->Milo:group mood steadies,True
+3608,201,v57-d201-s08,ssrm:v57:v57-d201-s08,canvas:tool alcove:resident:Nia:phrase:ask_repair,fiber:14,Nia->Tovan:guardedness rises,True
+3616,201,v57-d201-s16,ssrm:v57:v57-d201-s16,canvas:glasshouse:resident:Fay:phrase:ask_help,wood:22,Fay->Ari:debt is marked paid,True
+3624,202,v57-d202-s06,ssrm:v57:v57-d202-s06,canvas:rain court:resident:Sera:phrase:offer_tool,copper:10,Sera->Milo:work slows but recovers,True
+3632,202,v57-d202-s14,ssrm:v57:v57-d202-s14,canvas:fiber loft:resident:Nia:phrase:apologize,herb:18,Nia->Tovan:bystander learns caution,True
+3640,203,v57-d203-s04,ssrm:v57:v57-d203-s04,canvas:west hearth:resident:Fay:phrase:ask_sensory,water:25,Fay->Ari:guardedness rises,True
+3648,203,v57-d203-s12,ssrm:v57:v57-d203-s12,canvas:tool alcove:resident:Sera:phrase:request_space,fiber:10,Sera->Milo:debt is marked paid,True
+3656,204,v57-d204-s02,ssrm:v57:v57-d204-s02,canvas:river gate:resident:Nia:phrase:thank_resident,stone:21,Nia->Tovan:work slows but recovers,True
+3664,204,v57-d204-s10,ssrm:v57:v57-d204-s10,canvas:rain court:resident:Fay:phrase:ask_repair,copper:29,Fay->Ari:bystander learns caution,True
+3672,205,v57-d205-s00,ssrm:v57:v57-d205-s00,canvas:glasshouse:resident:Sera:phrase:ask_help,charcoal:13,Sera->Milo:guardedness rises,True
+3680,205,v57-d205-s08,ssrm:v57:v57-d205-s08,canvas:west hearth:resident:Nia:phrase:offer_tool,water:21,Nia->Tovan:debt is marked paid,True
+3688,205,v57-d205-s16,ssrm:v57:v57-d205-s16,canvas:tool alcove:resident:Fay:phrase:apologize,fiber:29,Fay->Ari:group mood steadies,True
+3696,206,v57-d206-s06,ssrm:v57:v57-d206-s06,canvas:river gate:resident:Sera:phrase:ask_sensory,stone:17,Sera->Milo:bystander learns caution,True
+3704,206,v57-d206-s14,ssrm:v57:v57-d206-s14,canvas:rain court:resident:Nia:phrase:request_space,copper:25,Nia->Tovan:trust warms,True
+3712,207,v57-d207-s04,ssrm:v57:v57-d207-s04,canvas:glasshouse:resident:Fay:phrase:thank_resident,charcoal:9,Fay->Ari:debt is marked paid,True
+3720,207,v57-d207-s12,ssrm:v57:v57-d207-s12,canvas:west hearth:resident:Sera:phrase:ask_repair,water:17,Sera->Milo:group mood steadies,True
+3728,208,v57-d208-s02,ssrm:v57:v57-d208-s02,canvas:fiber loft:resident:Nia:phrase:ask_help,wood:28,Nia->Tovan:bystander learns caution,True
+3736,208,v57-d208-s10,ssrm:v57:v57-d208-s10,canvas:river gate:resident:Fay:phrase:offer_tool,stone:13,Fay->Ari:trust warms,True
+3744,209,v57-d209-s00,ssrm:v57:v57-d209-s00,canvas:tool alcove:resident:Sera:phrase:apologize,herb:20,Sera->Milo:debt is marked paid,True
+3752,209,v57-d209-s08,ssrm:v57:v57-d209-s08,canvas:glasshouse:resident:Nia:phrase:ask_sensory,charcoal:28,Nia->Tovan:group mood steadies,True
+3760,209,v57-d209-s16,ssrm:v57:v57-d209-s16,canvas:west hearth:resident:Fay:phrase:request_space,water:13,Fay->Ari:guardedness rises,True
+3768,210,v57-d210-s06,ssrm:v57:v57-d210-s06,canvas:fiber loft:resident:Sera:phrase:thank_resident,wood:24,Sera->Milo:trust warms,True
+3776,210,v57-d210-s14,ssrm:v57:v57-d210-s14,canvas:river gate:resident:Nia:phrase:ask_repair,stone:32,Nia->Tovan:work slows but recovers,True
+3784,211,v57-d211-s04,ssrm:v57:v57-d211-s04,canvas:tool alcove:resident:Fay:phrase:ask_help,herb:16,Fay->Ari:group mood steadies,True
+3792,211,v57-d211-s12,ssrm:v57:v57-d211-s12,canvas:glasshouse:resident:Sera:phrase:offer_tool,charcoal:24,Sera->Milo:guardedness rises,True
+3800,212,v57-d212-s02,ssrm:v57:v57-d212-s02,canvas:rain court:resident:Nia:phrase:apologize,fiber:12,Nia->Tovan:trust warms,True
+3808,212,v57-d212-s10,ssrm:v57:v57-d212-s10,canvas:fiber loft:resident:Fay:phrase:ask_sensory,wood:20,Fay->Ari:work slows but recovers,True
+3816,213,v57-d213-s00,ssrm:v57:v57-d213-s00,canvas:west hearth:resident:Sera:phrase:request_space,copper:27,Sera->Milo:group mood steadies,True
+3824,213,v57-d213-s08,ssrm:v57:v57-d213-s08,canvas:tool alcove:resident:Nia:phrase:thank_resident,herb:12,Nia->Tovan:guardedness rises,True
+3832,213,v57-d213-s16,ssrm:v57:v57-d213-s16,canvas:glasshouse:resident:Fay:phrase:ask_repair,charcoal:20,Fay->Ari:debt is marked paid,True
+3840,214,v57-d214-s06,ssrm:v57:v57-d214-s06,canvas:rain court:resident:Sera:phrase:ask_help,fiber:31,Sera->Milo:work slows but recovers,True
+3848,214,v57-d214-s14,ssrm:v57:v57-d214-s14,canvas:fiber loft:resident:Nia:phrase:offer_tool,wood:16,Nia->Tovan:bystander learns caution,True
+3856,215,v57-d215-s04,ssrm:v57:v57-d215-s04,canvas:west hearth:resident:Fay:phrase:apologize,copper:23,Fay->Ari:guardedness rises,True
+3864,215,v57-d215-s12,ssrm:v57:v57-d215-s12,canvas:tool alcove:resident:Sera:phrase:ask_sensory,herb:8,Sera->Milo:debt is marked paid,True
+3872,216,v57-d216-s02,ssrm:v57:v57-d216-s02,canvas:river gate:resident:Nia:phrase:request_space,water:19,Nia->Tovan:work slows but recovers,True
+3880,216,v57-d216-s10,ssrm:v57:v57-d216-s10,canvas:rain court:resident:Fay:phrase:thank_resident,fiber:27,Fay->Ari:bystander learns caution,True
+3888,217,v57-d217-s00,ssrm:v57:v57-d217-s00,canvas:glasshouse:resident:Sera:phrase:ask_repair,stone:11,Sera->Milo:guardedness rises,True
+3896,217,v57-d217-s08,ssrm:v57:v57-d217-s08,canvas:west hearth:resident:Nia:phrase:ask_help,copper:19,Nia->Tovan:debt is marked paid,True
+3904,217,v57-d217-s16,ssrm:v57:v57-d217-s16,canvas:tool alcove:resident:Fay:phrase:offer_tool,herb:27,Fay->Ari:group mood steadies,True
+3912,218,v57-d218-s06,ssrm:v57:v57-d218-s06,canvas:river gate:resident:Sera:phrase:apologize,water:15,Sera->Milo:bystander learns caution,True
+3920,218,v57-d218-s14,ssrm:v57:v57-d218-s14,canvas:rain court:resident:Nia:phrase:ask_sensory,fiber:23,Nia->Tovan:trust warms,True
+3928,219,v57-d219-s04,ssrm:v57:v57-d219-s04,canvas:glasshouse:resident:Fay:phrase:request_space,stone:30,Fay->Ari:debt is marked paid,True
+3936,219,v57-d219-s12,ssrm:v57:v57-d219-s12,canvas:west hearth:resident:Sera:phrase:thank_resident,copper:15,Sera->Milo:group mood steadies,True
+3944,220,v57-d220-s02,ssrm:v57:v57-d220-s02,canvas:fiber loft:resident:Nia:phrase:ask_repair,charcoal:26,Nia->Tovan:bystander learns caution,True
+3952,220,v57-d220-s10,ssrm:v57:v57-d220-s10,canvas:river gate:resident:Fay:phrase:ask_help,water:11,Fay->Ari:trust warms,True
+3960,221,v57-d221-s00,ssrm:v57:v57-d221-s00,canvas:tool alcove:resident:Sera:phrase:offer_tool,wood:18,Sera->Milo:debt is marked paid,True
+3968,221,v57-d221-s08,ssrm:v57:v57-d221-s08,canvas:glasshouse:resident:Nia:phrase:apologize,stone:26,Nia->Tovan:group mood steadies,True
+3976,221,v57-d221-s16,ssrm:v57:v57-d221-s16,canvas:west hearth:resident:Fay:phrase:ask_sensory,copper:11,Fay->Ari:guardedness rises,True
+3984,222,v57-d222-s06,ssrm:v57:v57-d222-s06,canvas:fiber loft:resident:Sera:phrase:request_space,charcoal:22,Sera->Milo:trust warms,True
+3992,222,v57-d222-s14,ssrm:v57:v57-d222-s14,canvas:river gate:resident:Nia:phrase:thank_resident,water:30,Nia->Tovan:work slows but recovers,True
+4000,223,v57-d223-s04,ssrm:v57:v57-d223-s04,canvas:tool alcove:resident:Fay:phrase:ask_repair,wood:14,Fay->Ari:group mood steadies,True
+4008,223,v57-d223-s12,ssrm:v57:v57-d223-s12,canvas:glasshouse:resident:Sera:phrase:ask_help,stone:22,Sera->Milo:guardedness rises,True
+4016,224,v57-d224-s02,ssrm:v57:v57-d224-s02,canvas:rain court:resident:Nia:phrase:offer_tool,herb:10,Nia->Tovan:trust warms,True
+4024,224,v57-d224-s10,ssrm:v57:v57-d224-s10,canvas:fiber loft:resident:Fay:phrase:apologize,charcoal:18,Fay->Ari:work slows but recovers,True
+4032,225,v57-d225-s00,ssrm:v57:v57-d225-s00,canvas:west hearth:resident:Sera:phrase:ask_sensory,fiber:25,Sera->Milo:group mood steadies,True
+4040,225,v57-d225-s08,ssrm:v57:v57-d225-s08,canvas:tool alcove:resident:Nia:phrase:request_space,wood:10,Nia->Tovan:guardedness rises,True
+4048,225,v57-d225-s16,ssrm:v57:v57-d225-s16,canvas:glasshouse:resident:Fay:phrase:thank_resident,stone:18,Fay->Ari:debt is marked paid,True
+4056,226,v57-d226-s06,ssrm:v57:v57-d226-s06,canvas:rain court:resident:Sera:phrase:ask_repair,herb:29,Sera->Milo:work slows but recovers,True
+4064,226,v57-d226-s14,ssrm:v57:v57-d226-s14,canvas:fiber loft:resident:Nia:phrase:ask_help,charcoal:14,Nia->Tovan:bystander learns caution,True
+4072,227,v57-d227-s04,ssrm:v57:v57-d227-s04,canvas:west hearth:resident:Fay:phrase:offer_tool,fiber:21,Fay->Ari:guardedness rises,True
+4080,227,v57-d227-s12,ssrm:v57:v57-d227-s12,canvas:tool alcove:resident:Sera:phrase:apologize,wood:29,Sera->Milo:debt is marked paid,True
+4088,228,v57-d228-s02,ssrm:v57:v57-d228-s02,canvas:river gate:resident:Nia:phrase:ask_sensory,copper:17,Nia->Tovan:work slows but recovers,True
+4096,228,v57-d228-s10,ssrm:v57:v57-d228-s10,canvas:rain court:resident:Fay:phrase:request_space,herb:25,Fay->Ari:bystander learns caution,True
+4104,229,v57-d229-s00,ssrm:v57:v57-d229-s00,canvas:glasshouse:resident:Sera:phrase:thank_resident,water:9,Sera->Milo:guardedness rises,True
+4112,229,v57-d229-s08,ssrm:v57:v57-d229-s08,canvas:west hearth:resident:Nia:phrase:ask_repair,fiber:17,Nia->Tovan:debt is marked paid,True
+4120,229,v57-d229-s16,ssrm:v57:v57-d229-s16,canvas:tool alcove:resident:Fay:phrase:ask_help,wood:25,Fay->Ari:group mood steadies,True
+4128,230,v57-d230-s06,ssrm:v57:v57-d230-s06,canvas:river gate:resident:Sera:phrase:offer_tool,copper:13,Sera->Milo:bystander learns caution,True
+4136,230,v57-d230-s14,ssrm:v57:v57-d230-s14,canvas:rain court:resident:Nia:phrase:apologize,herb:21,Nia->Tovan:trust warms,True
+4144,231,v57-d231-s04,ssrm:v57:v57-d231-s04,canvas:glasshouse:resident:Fay:phrase:ask_sensory,water:28,Fay->Ari:debt is marked paid,True
+4152,231,v57-d231-s12,ssrm:v57:v57-d231-s12,canvas:west hearth:resident:Sera:phrase:request_space,fiber:13,Sera->Milo:group mood steadies,True
+4160,232,v57-d232-s02,ssrm:v57:v57-d232-s02,canvas:fiber loft:resident:Nia:phrase:thank_resident,stone:24,Nia->Tovan:bystander learns caution,True
+4168,232,v57-d232-s10,ssrm:v57:v57-d232-s10,canvas:river gate:resident:Fay:phrase:ask_repair,copper:32,Fay->Ari:trust warms,True
+4176,233,v57-d233-s00,ssrm:v57:v57-d233-s00,canvas:tool alcove:resident:Sera:phrase:ask_help,charcoal:16,Sera->Milo:debt is marked paid,True
+4184,233,v57-d233-s08,ssrm:v57:v57-d233-s08,canvas:glasshouse:resident:Nia:phrase:offer_tool,water:24,Nia->Tovan:group mood steadies,True
+4192,233,v57-d233-s16,ssrm:v57:v57-d233-s16,canvas:west hearth:resident:Fay:phrase:apologize,fiber:9,Fay->Ari:guardedness rises,True
+4200,234,v57-d234-s06,ssrm:v57:v57-d234-s06,canvas:fiber loft:resident:Sera:phrase:ask_sensory,stone:20,Sera->Milo:trust warms,True
+4208,234,v57-d234-s14,ssrm:v57:v57-d234-s14,canvas:river gate:resident:Nia:phrase:request_space,copper:28,Nia->Tovan:work slows but recovers,True
+4216,235,v57-d235-s04,ssrm:v57:v57-d235-s04,canvas:tool alcove:resident:Fay:phrase:thank_resident,charcoal:12,Fay->Ari:group mood steadies,True
+4224,235,v57-d235-s12,ssrm:v57:v57-d235-s12,canvas:glasshouse:resident:Sera:phrase:ask_repair,water:20,Sera->Milo:guardedness rises,True
+4232,236,v57-d236-s02,ssrm:v57:v57-d236-s02,canvas:rain court:resident:Nia:phrase:ask_help,wood:31,Nia->Tovan:trust warms,True
+4240,236,v57-d236-s10,ssrm:v57:v57-d236-s10,canvas:fiber loft:resident:Fay:phrase:offer_tool,stone:16,Fay->Ari:work slows but recovers,True
+4248,237,v57-d237-s00,ssrm:v57:v57-d237-s00,canvas:west hearth:resident:Sera:phrase:apologize,herb:23,Sera->Milo:group mood steadies,True
+4256,237,v57-d237-s08,ssrm:v57:v57-d237-s08,canvas:tool alcove:resident:Nia:phrase:ask_sensory,charcoal:8,Nia->Tovan:guardedness rises,True
+4264,237,v57-d237-s16,ssrm:v57:v57-d237-s16,canvas:glasshouse:resident:Fay:phrase:request_space,water:16,Fay->Ari:debt is marked paid,True
+4272,238,v57-d238-s06,ssrm:v57:v57-d238-s06,canvas:rain court:resident:Sera:phrase:thank_resident,wood:27,Sera->Milo:work slows but recovers,True
+4280,238,v57-d238-s14,ssrm:v57:v57-d238-s14,canvas:fiber loft:resident:Nia:phrase:ask_repair,stone:12,Nia->Tovan:bystander learns caution,True
+4288,239,v57-d239-s04,ssrm:v57:v57-d239-s04,canvas:west hearth:resident:Fay:phrase:ask_help,herb:19,Fay->Ari:guardedness rises,True
+4296,239,v57-d239-s12,ssrm:v57:v57-d239-s12,canvas:tool alcove:resident:Sera:phrase:offer_tool,charcoal:27,Sera->Milo:debt is marked paid,True
+4302,240,v57-d240-s00,ssrm:v57:v57-d240-s00,canvas:fiber loft:resident:Sera:phrase:ask_help,charcoal:13,Sera->Milo:trust warms,True
+4303,240,v57-d240-s01,ssrm:v57:v57-d240-s01,canvas:glasshouse:resident:Tovan:phrase:offer_tool,water:12,Tovan->Sera:bystander learns caution,True
+4304,240,v57-d240-s02,ssrm:v57:v57-d240-s02,canvas:river gate:resident:Nia:phrase:apologize,fiber:15,Nia->Tovan:work slows but recovers,True
+4305,240,v57-d240-s03,ssrm:v57:v57-d240-s03,canvas:west hearth:resident:Ari:phrase:ask_sensory,wood:14,Ari->Nia:trust warms,True
+4306,240,v57-d240-s04,ssrm:v57:v57-d240-s04,canvas:rain court:resident:Fay:phrase:request_space,stone:17,Fay->Ari:bystander learns caution,True
+4307,240,v57-d240-s05,ssrm:v57:v57-d240-s05,canvas:tool alcove:resident:Milo:phrase:thank_resident,copper:16,Milo->Fay:work slows but recovers,True
+4308,240,v57-d240-s06,ssrm:v57:v57-d240-s06,canvas:fiber loft:resident:Sera:phrase:ask_repair,herb:19,Sera->Milo:trust warms,True
+4309,240,v57-d240-s07,ssrm:v57:v57-d240-s07,canvas:glasshouse:resident:Tovan:phrase:ask_help,charcoal:18,Tovan->Sera:bystander learns caution,True
+4310,240,v57-d240-s08,ssrm:v57:v57-d240-s08,canvas:river gate:resident:Nia:phrase:offer_tool,water:21,Nia->Tovan:work slows but recovers,True
+4311,240,v57-d240-s09,ssrm:v57:v57-d240-s09,canvas:west hearth:resident:Ari:phrase:apologize,fiber:20,Ari->Nia:trust warms,True
+4312,240,v57-d240-s10,ssrm:v57:v57-d240-s10,canvas:rain court:resident:Fay:phrase:ask_sensory,wood:23,Fay->Ari:bystander learns caution,True
+4313,240,v57-d240-s11,ssrm:v57:v57-d240-s11,canvas:tool alcove:resident:Milo:phrase:request_space,stone:22,Milo->Fay:work slows but recovers,True
+4314,240,v57-d240-s12,ssrm:v57:v57-d240-s12,canvas:fiber loft:resident:Sera:phrase:thank_resident,copper:25,Sera->Milo:trust warms,True
+4315,240,v57-d240-s13,ssrm:v57:v57-d240-s13,canvas:glasshouse:resident:Tovan:phrase:ask_repair,herb:24,Tovan->Sera:bystander learns caution,True
+4316,240,v57-d240-s14,ssrm:v57:v57-d240-s14,canvas:river gate:resident:Nia:phrase:ask_help,charcoal:27,Nia->Tovan:work slows but recovers,True
+4317,240,v57-d240-s15,ssrm:v57:v57-d240-s15,canvas:west hearth:resident:Ari:phrase:offer_tool,water:26,Ari->Nia:trust warms,True
+4318,240,v57-d240-s16,ssrm:v57:v57-d240-s16,canvas:rain court:resident:Fay:phrase:apologize,fiber:29,Fay->Ari:bystander learns caution,True
+4319,240,v57-d240-s17,ssrm:v57:v57-d240-s17,canvas:tool alcove:resident:Milo:phrase:ask_sensory,wood:28,Milo->Fay:work slows but recovers,True

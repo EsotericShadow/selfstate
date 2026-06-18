@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Report 299 - Browser World v59 Debug Replay Audit Layer</title>
+<style>
+:root {
+  --ink: #101714;
+  --paper: #f1e4c6;
+  --line: #263d34;
+  --amber: #c8892c;
+  --rust: #b65b3b;
+  --cyan: #347b84;
+  --sage: #738b57;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(16,23,20,0.06), rgba(52,123,132,0.18)),
+    radial-gradient(circle at 16% 8%, rgba(200,137,44,0.34), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(182,91,59,0.28), transparent 28%),
+    #eadcbf;
+  font-family: 'Avenir Next Condensed', 'Trebuchet MS', sans-serif;
+}
+main { max-width: 1280px; margin: 0 auto; padding: 22px; }
+h1 { margin: 0; max-width: 1040px; font-size: clamp(2.2rem, 5vw, 5.4rem); line-height: 0.88; letter-spacing: -0.055em; }
+.boundary { margin: 16px 0; padding: 14px 16px; border-left: 9px solid var(--rust); background: rgba(255,255,255,0.64); }
+.layout { display: grid; grid-template-columns: minmax(460px, 1fr) 410px; gap: 16px; }
+canvas { width: 100%; min-height: 560px; border: 5px solid var(--ink); background: #12231e; box-shadow: 0 20px 70px rgba(16,23,20,0.33); }
+.panel { background: rgba(255,255,255,0.72); border: 1px solid rgba(16,23,20,0.20); border-radius: 18px; padding: 14px; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 12px 0 16px; }
+.metrics span { border-radius: 999px; border: 1px solid rgba(16,23,20,0.16); background: rgba(255,255,255,0.64); padding: 8px 10px; }
+.audit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+.card { border-radius: 14px; border: 1px solid rgba(16,23,20,0.14); background: rgba(241,228,198,0.78); padding: 10px; min-height: 82px; }
+#controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; max-height: 384px; overflow: auto; }
+button { border: 0; border-radius: 999px; padding: 8px 9px; color: white; background: var(--line); cursor: pointer; font-size: 12px; }
+button:nth-child(3n) { background: var(--cyan); }
+button:nth-child(5n) { background: var(--rust); }
+button:nth-child(7n) { background: var(--sage); }
+pre { white-space: pre-wrap; background: rgba(16,23,20,0.90); color: #f7ebcd; padding: 12px; border-radius: 12px; max-height: 360px; overflow: auto; }
+input[type=range] { width: 100%; accent-color: var(--rust); }
+@media (max-width: 920px) { .layout { grid-template-columns: 1fr; } .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } #controls { grid-template-columns: repeat(2, minmax(0, 1fr)); } .audit-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Debug the same little world: scrub time, resident, debt, schedule, memory, snapshot.</h1>
+  <p class="boundary">Deterministic browser-local debug/replay/audit layer over the consolidated playable consequence loop only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, complete gameplay, complete 3D engine, or metaphysical frequency claim.</p>
+  <div class="metrics">
+    <span>scrub frames: 5040</span>
+    <span>snapshots: 5040</span>
+    <span>invariants: 5040</span>
+    <span>buttons: 208</span>
+  </div>
+  <div class="layout">
+    <section>
+      <canvas id="world" width="990" height="590" aria-label="debug replay audit canvas"></canvas>
+      <div class="panel">
+        <label for="scrub">Replay scrubber</label>
+        <input id="scrub" type="range" min="0" max="5039" value="299" oninput="scrubTick(Number(this.value))" />
+        <div class="audit-grid">
+          <div class="card"><strong>Resident</strong><p id="resident"></p></div>
+          <div class="card"><strong>Memory/Debt</strong><p id="memory"></p></div>
+          <div class="card"><strong>Invariant</strong><p id="invariant"></p></div>
+        </div>
+      </div>
+      <pre id="trace"></pre>
+    </section>
+    <aside class="panel">
+      <h2>Audit controls</h2>
+      <div id="controls"><button type="button" onclick="scrubTick(0)">scrubTick 000</button>
+<button type="button" onclick="stepReplay(1)">stepReplay 001</button>
+<button type="button" onclick="filterResident(2)">filter resident 002</button>
+<button type="button" onclick="inspectMemoryDebt(3)">inspect MemoryDebt 003</button>
+<button type="button" onclick="inspectScheduleDiff(4)">inspect ScheduleDiff 004</button>
+<button type="button" onclick="inspectSnapshot(5)">inspect  snapshot 005</button>
+<button type="button" onclick="inspectInvariant(6)">inspect  invariant 006</button>
+<button type="button" onclick="inspectCausality(7)">inspect Causality 007</button>
+<button type="button" onclick="jumpAnomaly(8)">jumpAnomaly 008</button>
+<button type="button" onclick="togglePrivateBoundary(9)">togglePrivateBoundary 009</button>
+<button type="button" onclick="exportAudit(10)">exportAudit 010</button>
+<button type="button" onclick="restoreSnapshot(11)">restore snapshot 011</button>
+<button type="button" onclick="scrubTick(12)">scrubTick 012</button>
+<button type="button" onclick="stepReplay(13)">stepReplay 013</button>
+<button type="button" onclick="filterResident(14)">filter resident 014</button>
+<button type="button" onclick="inspectMemoryDebt(15)">inspect MemoryDebt 015</button>
+<button type="button" onclick="inspectScheduleDiff(16)">inspect ScheduleDiff 016</button>
+<button type="button" onclick="inspectSnapshot(17)">inspect  snapshot 017</button>
+<button type="button" onclick="inspectInvariant(18)">inspect  invariant 018</button>
+<button type="button" onclick="inspectCausality(19)">inspect Causality 019</button>
+<button type="button" onclick="jumpAnomaly(20)">jumpAnomaly 020</button>
+<button type="button" onclick="togglePrivateBoundary(21)">togglePrivateBoundary 021</button>
+<button type="button" onclick="exportAudit(22)">exportAudit 022</button>
+<button type="button" onclick="restoreSnapshot(23)">restore snapshot 023</button>
+<button type="button" onclick="scrubTick(24)">scrubTick 024</button>
+<button type="button" onclick="stepReplay(25)">stepReplay 025</button>
+<button type="button" onclick="filterResident(26)">filter resident 026</button>
+<button type="button" onclick="inspectMemoryDebt(27)">inspect MemoryDebt 027</button>
+<button type="button" onclick="inspectScheduleDiff(28)">inspect ScheduleDiff 028</button>
+<button type="button" onclick="inspectSnapshot(29)">inspect  snapshot 029</button>
+<button type="button" onclick="inspectInvariant(30)">inspect  invariant 030</button>
+<button type="button" onclick="inspectCausality(31)">inspect Causality 031</button>
+<button type="button" onclick="jumpAnomaly(32)">jumpAnomaly 032</button>
+<button type="button" onclick="togglePrivateBoundary(33)">togglePrivateBoundary 033</button>
+<button type="button" onclick="exportAudit(34)">exportAudit 034</button>
+<button type="button" onclick="restoreSnapshot(35)">restore snapshot 035</button>
+<button type="button" onclick="scrubTick(36)">scrubTick 036</button>
+<button type="button" onclick="stepReplay(37)">stepReplay 037</button>
+<button type="button" onclick="filterResident(38)">filter resident 038</button>
+<button type="button" onclick="inspectMemoryDebt(39)">inspect MemoryDebt 039</button>
+<button type="button" onclick="inspectScheduleDiff(40)">inspect ScheduleDiff 040</button>
+<button type="button" onclick="inspectSnapshot(41)">inspect  snapshot 041</button>
+<button type="button" onclick="inspectInvariant(42)">inspect  invariant 042</button>
+<button type="button" onclick="inspectCausality(43)">inspect Causality 043</button>
+<button type="button" onclick="jumpAnomaly(44)">jumpAnomaly 044</button>
+<button type="button" onclick="togglePrivateBoundary(45)">togglePrivateBoundary 045</button>
+<button type="button" onclick="exportAudit(46)">exportAudit 046</button>
+<button type="button" onclick="restoreSnapshot(47)">restore snapshot 047</button>
+<button type="button" onclick="scrubTick(48)">scrubTick 048</button>
+<button type="button" onclick="stepReplay(49)">stepReplay 049</button>
+<button type="button" onclick="filterResident(50)">filter resident 050</button>
+<button type="button" onclick="inspectMemoryDebt(51)">inspect MemoryDebt 051</button>
+<button type="button" onclick="inspectScheduleDiff(52)">inspect ScheduleDiff 052</button>
+<button type="button" onclick="inspectSnapshot(53)">inspect  snapshot 053</button>
+<button type="button" onclick="inspectInvariant(54)">inspect  invariant 054</button>
+<button type="button" onclick="inspectCausality(55)">inspect Causality 055</button>
+<button type="button" onclick="jumpAnomaly(56)">jumpAnomaly 056</button>
+<button type="button" onclick="togglePrivateBoundary(57)">togglePrivateBoundary 057</button>
+<button type="button" onclick="exportAudit(58)">exportAudit 058</button>
+<button type="button" onclick="restoreSnapshot(59)">restore snapshot 059</button>
+<button type="button" onclick="scrubTick(60)">scrubTick 060</button>
+<button type="button" onclick="stepReplay(61)">stepReplay 061</button>
+<button type="button" onclick="filterResident(62)">filter resident 062</button>
+<button type="button" onclick="inspectMemoryDebt(63)">inspect MemoryDebt 063</button>
+<button type="button" onclick="inspectScheduleDiff(64)">inspect ScheduleDiff 064</button>
+<button type="button" onclick="inspectSnapshot(65)">inspect  snapshot 065</button>
+<button type="button" onclick="inspectInvariant(66)">inspect  invariant 066</button>
+<button type="button" onclick="inspectCausality(67)">inspect Causality 067</button>
+<button type="button" onclick="jumpAnomaly(68)">jumpAnomaly 068</button>
+<button type="button" onclick="togglePrivateBoundary(69)">togglePrivateBoundary 069</button>
+<button type="button" onclick="exportAudit(70)">exportAudit 070</button>
+<button type="button" onclick="restoreSnapshot(71)">restore snapshot 071</button>
+<button type="button" onclick="scrubTick(72)">scrubTick 072</button>
+<button type="button" onclick="stepReplay(73)">stepReplay 073</button>
+<button type="button" onclick="filterResident(74)">filter resident 074</button>
+<button type="button" onclick="inspectMemoryDebt(75)">inspect MemoryDebt 075</button>
+<button type="button" onclick="inspectScheduleDiff(76)">inspect ScheduleDiff 076</button>
+<button type="button" onclick="inspectSnapshot(77)">inspect  snapshot 077</button>
+<button type="button" onclick="inspectInvariant(78)">inspect  invariant 078</button>
+<button type="button" onclick="inspectCausality(79)">inspect Causality 079</button>
+<button type="button" onclick="jumpAnomaly(80)">jumpAnomaly 080</button>
+<button type="button" onclick="togglePrivateBoundary(81)">togglePrivateBoundary 081</button>
+<button type="button" onclick="exportAudit(82)">exportAudit 082</button>
+<button type="button" onclick="restoreSnapshot(83)">restore snapshot 083</button>
+<button type="button" onclick="scrubTick(84)">scrubTick 084</button>
+<button type="button" onclick="stepReplay(85)">stepReplay 085</button>
+<button type="button" onclick="filterResident(86)">filter resident 086</button>
+<button type="button" onclick="inspectMemoryDebt(87)">inspect MemoryDebt 087</button>
+<button type="button" onclick="inspectScheduleDiff(88)">inspect ScheduleDiff 088</button>
+<button type="button" onclick="inspectSnapshot(89)">inspect  snapshot 089</button>
+<button type="button" onclick="inspectInvariant(90)">inspect  invariant 090</button>
+<button type="button" onclick="inspectCausality(91)">inspect Causality 091</button>
+<button type="button" onclick="jumpAnomaly(92)">jumpAnomaly 092</button>
+<button type="button" onclick="togglePrivateBoundary(93)">togglePrivateBoundary 093</button>
+<button type="button" onclick="exportAudit(94)">exportAudit 094</button>
+<button type="button" onclick="restoreSnapshot(95)">restore snapshot 095</button>
+<button type="button" onclick="scrubTick(96)">scrubTick 096</button>
+<button type="button" onclick="stepReplay(97)">stepReplay 097</button>
+<button type="button" onclick="filterResident(98)">filter resident 098</button>
+<button type="button" onclick="inspectMemoryDebt(99)">inspect MemoryDebt 099</button>
+<button type="button" onclick="inspectScheduleDiff(100)">inspect ScheduleDiff 100</button>
+<button type="button" onclick="inspectSnapshot(101)">inspect  snapshot 101</button>
+<button type="button" onclick="inspectInvariant(102)">inspect  invariant 102</button>
+<button type="button" onclick="inspectCausality(103)">inspect Causality 103</button>
+<button type="button" onclick="jumpAnomaly(104)">jumpAnomaly 104</button>
+<button type="button" onclick="togglePrivateBoundary(105)">togglePrivateBoundary 105</button>
+<button type="button" onclick="exportAudit(106)">exportAudit 106</button>
+<button type="button" onclick="restoreSnapshot(107)">restore snapshot 107</button>
+<button type="button" onclick="scrubTick(108)">scrubTick 108</button>
+<button type="button" onclick="stepReplay(109)">stepReplay 109</button>
+<button type="button" onclick="filterResident(110)">filter resident 110</button>
+<button type="button" onclick="inspectMemoryDebt(111)">inspect MemoryDebt 111</button>
+<button type="button" onclick="inspectScheduleDiff(112)">inspect ScheduleDiff 112</button>
+<button type="button" onclick="inspectSnapshot(113)">inspect  snapshot 113</button>
+<button type="button" onclick="inspectInvariant(114)">inspect  invariant 114</button>
+<button type="button" onclick="inspectCausality(115)">inspect Causality 115</button>
+<button type="button" onclick="jumpAnomaly(116)">jumpAnomaly 116</button>
+<button type="button" onclick="togglePrivateBoundary(117)">togglePrivateBoundary 117</button>
+<button type="button" onclick="exportAudit(118)">exportAudit 118</button>
+<button type="button" onclick="restoreSnapshot(119)">restore snapshot 119</button>
+<button type="button" onclick="scrubTick(120)">scrubTick 120</button>
+<button type="button" onclick="stepReplay(121)">stepReplay 121</button>
+<button type="button" onclick="filterResident(122)">filter resident 122</button>
+<button type="button" onclick="inspectMemoryDebt(123)">inspect MemoryDebt 123</button>
+<button type="button" onclick="inspectScheduleDiff(124)">inspect ScheduleDiff 124</button>
+<button type="button" onclick="inspectSnapshot(125)">inspect  snapshot 125</button>
+<button type="button" onclick="inspectInvariant(126)">inspect  invariant 126</button>
+<button type="button" onclick="inspectCausality(127)">inspect Causality 127</button>
+<button type="button" onclick="jumpAnomaly(128)">jumpAnomaly 128</button>
+<button type="button" onclick="togglePrivateBoundary(129)">togglePrivateBoundary 129</button>
+<button type="button" onclick="exportAudit(130)">exportAudit 130</button>
+<button type="button" onclick="restoreSnapshot(131)">restore snapshot 131</button>
+<button type="button" onclick="scrubTick(132)">scrubTick 132</button>
+<button type="button" onclick="stepReplay(133)">stepReplay 133</button>
+<button type="button" onclick="filterResident(134)">filter resident 134</button>
+<button type="button" onclick="inspectMemoryDebt(135)">inspect MemoryDebt 135</button>
+<button type="button" onclick="inspectScheduleDiff(136)">inspect ScheduleDiff 136</button>
+<button type="button" onclick="inspectSnapshot(137)">inspect  snapshot 137</button>
+<button type="button" onclick="inspectInvariant(138)">inspect  invariant 138</button>
+<button type="button" onclick="inspectCausality(139)">inspect Causality 139</button>
+<button type="button" onclick="jumpAnomaly(140)">jumpAnomaly 140</button>
+<button type="button" onclick="togglePrivateBoundary(141)">togglePrivateBoundary 141</button>
+<button type="button" onclick="exportAudit(142)">exportAudit 142</button>
+<button type="button" onclick="restoreSnapshot(143)">restore snapshot 143</button>
+<button type="button" onclick="scrubTick(144)">scrubTick 144</button>
+<button type="button" onclick="stepReplay(145)">stepReplay 145</button>
+<button type="button" onclick="filterResident(146)">filter resident 146</button>
+<button type="button" onclick="inspectMemoryDebt(147)">inspect MemoryDebt 147</button>
+<button type="button" onclick="inspectScheduleDiff(148)">inspect ScheduleDiff 148</button>
+<button type="button" onclick="inspectSnapshot(149)">inspect  snapshot 149</button>
+<button type="button" onclick="inspectInvariant(150)">inspect  invariant 150</button>
+<button type="button" onclick="inspectCausality(151)">inspect Causality 151</button>
+<button type="button" onclick="jumpAnomaly(152)">jumpAnomaly 152</button>
+<button type="button" onclick="togglePrivateBoundary(153)">togglePrivateBoundary 153</button>
+<button type="button" onclick="exportAudit(154)">exportAudit 154</button>
+<button type="button" onclick="restoreSnapshot(155)">restore snapshot 155</button>
+<button type="button" onclick="scrubTick(156)">scrubTick 156</button>
+<button type="button" onclick="stepReplay(157)">stepReplay 157</button>
+<button type="button" onclick="filterResident(158)">filter resident 158</button>
+<button type="button" onclick="inspectMemoryDebt(159)">inspect MemoryDebt 159</button>
+<button type="button" onclick="inspectScheduleDiff(160)">inspect ScheduleDiff 160</button>
+<button type="button" onclick="inspectSnapshot(161)">inspect  snapshot 161</button>
+<button type="button" onclick="inspectInvariant(162)">inspect  invariant 162</button>
+<button type="button" onclick="inspectCausality(163)">inspect Causality 163</button>
+<button type="button" onclick="jumpAnomaly(164)">jumpAnomaly 164</button>
+<button type="button" onclick="togglePrivateBoundary(165)">togglePrivateBoundary 165</button>
+<button type="button" onclick="exportAudit(166)">exportAudit 166</button>
+<button type="button" onclick="restoreSnapshot(167)">restore snapshot 167</button>
+<button type="button" onclick="scrubTick(168)">scrubTick 168</button>
+<button type="button" onclick="stepReplay(169)">stepReplay 169</button>
+<button type="button" onclick="filterResident(170)">filter resident 170</button>
+<button type="button" onclick="inspectMemoryDebt(171)">inspect MemoryDebt 171</button>
+<button type="button" onclick="inspectScheduleDiff(172)">inspect ScheduleDiff 172</button>
+<button type="button" onclick="inspectSnapshot(173)">inspect  snapshot 173</button>
+<button type="button" onclick="inspectInvariant(174)">inspect  invariant 174</button>
+<button type="button" onclick="inspectCausality(175)">inspect Causality 175</button>
+<button type="button" onclick="jumpAnomaly(176)">jumpAnomaly 176</button>
+<button type="button" onclick="togglePrivateBoundary(177)">togglePrivateBoundary 177</button>
+<button type="button" onclick="exportAudit(178)">exportAudit 178</button>
+<button type="button" onclick="restoreSnapshot(179)">restore snapshot 179</button>
+<button type="button" onclick="scrubTick(180)">scrubTick 180</button>
+<button type="button" onclick="stepReplay(181)">stepReplay 181</button>
+<button type="button" onclick="filterResident(182)">filter resident 182</button>
+<button type="button" onclick="inspectMemoryDebt(183)">inspect MemoryDebt 183</button>
+<button type="button" onclick="inspectScheduleDiff(184)">inspect ScheduleDiff 184</button>
+<button type="button" onclick="inspectSnapshot(185)">inspect  snapshot 185</button>
+<button type="button" onclick="inspectInvariant(186)">inspect  invariant 186</button>
+<button type="button" onclick="inspectCausality(187)">inspect Causality 187</button>
+<button type="button" onclick="jumpAnomaly(188)">jumpAnomaly 188</button>
+<button type="button" onclick="togglePrivateBoundary(189)">togglePrivateBoundary 189</button>
+<button type="button" onclick="exportAudit(190)">exportAudit 190</button>
+<button type="button" onclick="restoreSnapshot(191)">restore snapshot 191</button>
+<button type="button" onclick="scrubTick(192)">scrubTick 192</button>
+<button type="button" onclick="stepReplay(193)">stepReplay 193</button>
+<button type="button" onclick="filterResident(194)">filter resident 194</button>
+<button type="button" onclick="inspectMemoryDebt(195)">inspect MemoryDebt 195</button>
+<button type="button" onclick="inspectScheduleDiff(196)">inspect ScheduleDiff 196</button>
+<button type="button" onclick="inspectSnapshot(197)">inspect  snapshot 197</button>
+<button type="button" onclick="inspectInvariant(198)">inspect  invariant 198</button>
+<button type="button" onclick="inspectCausality(199)">inspect Causality 199</button>
+<button type="button" onclick="jumpAnomaly(200)">jumpAnomaly 200</button>
+<button type="button" onclick="togglePrivateBoundary(201)">togglePrivateBoundary 201</button>
+<button type="button" onclick="exportAudit(202)">exportAudit 202</button>
+<button type="button" onclick="restoreSnapshot(203)">restore snapshot 203</button>
+<button type="button" onclick="saveAuditState()">save audit state</button>
+<button type="button" onclick="loadAuditState()">load audit state</button>
+<button type="button" onclick="downloadReplay()">download replay</button>
+<button type="button" onclick="showBoundary()">show boundary</button></div>
+      <h2>Sample frame</h2>
+      <pre>{
+  "audit_ui": {
+    "active_panel": "dashboard",
+    "day": 17,
+    "export_ready": true,
+    "filter_text": "resident:Tovan event:return_tool",
+    "keyboard_shortcut": "m",
+    "panel_patch": "{\"debt\": \"care favor\", \"memory\": \"tovan:care_favor:audit:d017:s11\", \"panel\": \"dashboard\", \"resident\": \"Tovan\", \"snapshot\": \"ssrm:v59:audit:snapshot:d017:t00299\", \"tick\": 299}",
+    "private_workspace_hidden": true,
+    "selected_resident": "Tovan",
+    "selected_tick": 299,
+    "tick": 299,
+    "visible_columns": "tick,resident,event,memory,debt,schedule,snapshot,invariant"
+  },
+  "consequence_causality": {
+    "affected_resource": "care",
+    "causal_chain_id": "chain:tovan:return_tool:017:11",
+    "cause_action": "return_tool",
+    "chain_scrubbable": true,
+    "day": 17,
+    "delayed_effect": "dashboard schedule/debt changes after restore",
+    "direct_effect": "trust warms",
+    "non_magical_trust_repair": true,
+    "recovery_path": "wait",
+    "resident": "Tovan",
+    "tick": 299
+  },
+  "invariant_audit": {
+    "day": 17,
+    "invariant_name": "private_workspace_hidden",
+    "linked_replay_key": "v58-loop-event-00299",
+    "lower_bound": 1.0,
+    "observed_value": 1.0,
+    "passed": true,
+    "repair_hint": "none",
+    "severity": "ok",
+    "tick": 299,
+    "upper_bound": 1.0
+  },
+  "localstorage_snapshot": {
+    "avatar_room": "west hearth",
+    "day": 17,
+    "replay_event_count": 160,
+    "resident_state_digest": "{\"debt\": 0.3168, \"memory\": \"tovan:care_favor:audit:d017:s11\", \"resident\": \"Tovan\", \"schedule\": \"negotiate debt\", \"trust\": 0.3147}",
+    "resource_state_digest": "{\"care\": 25, \"fiber\": 16, \"herb\": 22, \"tool time\": 28, \"water\": 13, \"wood\": 19}",
+    "restored_ok": true,
+    "selected_resident": "Tovan",
+    "snapshot_key": "ssrm:v59:audit:snapshot:d017:t00299",
+    "snapshot_size_bytes": 249,
+    "storage_keys_present": true,
+    "tick": 299
+  },
+  "memory_debt_audit": {
+    "causal_action": "return_tool",
+    "day": 17,
+    "debt_after": 0.316822,
+    "debt_before": 0.334822,
+    "debt_name": "care favor",
+    "history_not_erased": true,
+    "memory_key": "tovan:care_favor:audit:d017:s11",
+    "persists_after_restore": true,
+    "resident": "Tovan",
+    "tick": 299,
+    "trust_after": 0.314733,
+    "trust_before": 0.297733,
+    "visible_in_dashboard": true
+  },
+  "replay_scrub": {
+    "day": 17,
+    "event_key": "v58-loop-event-00299",
+    "event_kind": "return_tool",
+    "next_event_key": "v58-loop-event-00300:interrupt_work",
+    "previous_event_key": "v58-loop-event-00298:borrow_tool",
+    "replay_row_visible": true,
+    "same_loop_reference": "v58_consolidated_playable_consequence_loop",
+    "scrubber_position": 0.059337,
+    "selected_resident": "Tovan",
+    "selected_tick": 299,
+    "slot": 11,
+    "tick": 299
+  },
+  "resident_audit_index": {
+    "consequence_key": "cause:return_tool:resident:Tovan:tick:00299",
+    "crosslinks_complete": true,
+    "day": 17,
+    "debt_key": "debt:care_favor:tovan",
+    "index_lookup": "resident=Tovan|tick=299|memory=tovan:care_favor:audit:d017:s11|debt=debt:care_favor:tovan",
+    "memory_key": "tovan:care_favor:audit:d017:s11",
+    "resident": "Tovan",
+    "resident_filterable": true,
+    "schedule_key": "schedule:tovan:d017:s11",
+    "snapshot_key": "ssrm:v59:audit:snapshot:d017:t00299",
+    "tick": 299
+  },
+  "schedule_diff_audit": {
+    "agency_flag": "agency preserved",
+    "changed_by_avatar": true,
+    "changed_offscreen": false,
+    "day": 17,
+    "diff_summary": "rest -> negotiate debt by return_tool",
+    "resident": "Tovan",
+    "schedule_after": "negotiate debt",
+    "schedule_before": "rest",
+    "tick": 299,
+    "visible_after_return": true
+  }
+}</pre>
+    </aside>
+  </div>
+</main>
+<script>
+const SAMPLE = {"audit_ui": {"active_panel": "dashboard", "day": 17, "export_ready": true, "filter_text": "resident:Tovan event:return_tool", "keyboard_shortcut": "m", "panel_patch": "{\"debt\": \"care favor\", \"memory\": \"tovan:care_favor:audit:d017:s11\", \"panel\": \"dashboard\", \"resident\": \"Tovan\", \"snapshot\": \"ssrm:v59:audit:snapshot:d017:t00299\", \"tick\": 299}", "private_workspace_hidden": true, "selected_resident": "Tovan", "selected_tick": 299, "tick": 299, "visible_columns": "tick,resident,event,memory,debt,schedule,snapshot,invariant"}, "consequence_causality": {"affected_resource": "care", "causal_chain_id": "chain:tovan:return_tool:017:11", "cause_action": "return_tool", "chain_scrubbable": true, "day": 17, "delayed_effect": "dashboard schedule/debt changes after restore", "direct_effect": "trust warms", "non_magical_trust_repair": true, "recovery_path": "wait", "resident": "Tovan", "tick": 299}, "invariant_audit": {"day": 17, "invariant_name": "private_workspace_hidden", "linked_replay_key": "v58-loop-event-00299", "lower_bound": 1.0, "observed_value": 1.0, "passed": true, "repair_hint": "none", "severity": "ok", "tick": 299, "upper_bound": 1.0}, "localstorage_snapshot": {"avatar_room": "west hearth", "day": 17, "replay_event_count": 160, "resident_state_digest": "{\"debt\": 0.3168, \"memory\": \"tovan:care_favor:audit:d017:s11\", \"resident\": \"Tovan\", \"schedule\": \"negotiate debt\", \"trust\": 0.3147}", "resource_state_digest": "{\"care\": 25, \"fiber\": 16, \"herb\": 22, \"tool time\": 28, \"water\": 13, \"wood\": 19}", "restored_ok": true, "selected_resident": "Tovan", "snapshot_key": "ssrm:v59:audit:snapshot:d017:t00299", "snapshot_size_bytes": 249, "storage_keys_present": true, "tick": 299}, "memory_debt_audit": {"causal_action": "return_tool", "day": 17, "debt_after": 0.316822, "debt_before": 0.334822, "debt_name": "care favor", "history_not_erased": true, "memory_key": "tovan:care_favor:audit:d017:s11", "persists_after_restore": true, "resident": "Tovan", "tick": 299, "trust_after": 0.314733, "trust_before": 0.297733, "visible_in_dashboard": true}, "replay_scrub": {"day": 17, "event_key": "v58-loop-event-00299", "event_kind": "return_tool", "next_event_key": "v58-loop-event-00300:interrupt_work", "previous_event_key": "v58-loop-event-00298:borrow_tool", "replay_row_visible": true, "same_loop_reference": "v58_consolidated_playable_consequence_loop", "scrubber_position": 0.059337, "selected_resident": "Tovan", "selected_tick": 299, "slot": 11, "tick": 299}, "resident_audit_index": {"consequence_key": "cause:return_tool:resident:Tovan:tick:00299", "crosslinks_complete": true, "day": 17, "debt_key": "debt:care_favor:tovan", "index_lookup": "resident=Tovan|tick=299|memory=tovan:care_favor:audit:d017:s11|debt=debt:care_favor:tovan", "memory_key": "tovan:care_favor:audit:d017:s11", "resident": "Tovan", "resident_filterable": true, "schedule_key": "schedule:tovan:d017:s11", "snapshot_key": "ssrm:v59:audit:snapshot:d017:t00299", "tick": 299}, "schedule_diff_audit": {"agency_flag": "agency preserved", "changed_by_avatar": true, "changed_offscreen": false, "day": 17, "diff_summary": "rest -> negotiate debt by return_tool", "resident": "Tovan", "schedule_after": "negotiate debt", "schedule_before": "rest", "tick": 299, "visible_after_return": true}};
+const COUNTS = {"audit_ui_frames": 5040, "browser_buttons": 208, "browser_ticks": 5040, "consequence_causality_frames": 5040, "invariant_audit_frames": 5040, "invariant_names": 6, "live_days": 280, "localstorage_snapshot_frames": 5040, "memory_debt_audit_frames": 5040, "replay_scrub_frames": 5040, "resident_audit_index_frames": 5040, "resident_filters": 6, "schedule_diff_audit_frames": 5040, "ticks_per_day": 18};
+const BOUNDARY = "Deterministic browser-local debug/replay/audit layer over the consolidated playable consequence loop only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, complete gameplay, complete 3D engine, or metaphysical frequency claim.";
+const auditKey = 'ssrm_v59_audit_state';
+const replayKey = 'ssrm_v59_audit_replay';
+let audit = JSON.parse(localStorage.getItem(auditKey) || JSON.stringify({
+  tick: SAMPLE.replay_scrub.tick,
+  resident: SAMPLE.replay_scrub.selected_resident,
+  panel: 'scrubber',
+  privateBoundary: true,
+  rows: [],
+  snapshot: SAMPLE.localstorage_snapshot
+}));
+const canvas = document.getElementById('world');
+const ctx = canvas.getContext('2d');
+const trace = document.getElementById('trace');
+function log(event, payload) {
+  const row = { event, tick: audit.tick, resident: audit.resident, panel: audit.panel, payload };
+  audit.rows.push(row);
+  if (audit.rows.length > 160) audit.rows.shift();
+  localStorage.setItem(auditKey, JSON.stringify(audit));
+  localStorage.setItem(replayKey, JSON.stringify(audit.rows));
+  render();
+}
+function residentFor(i) { return ['Ari','Fay','Milo','Sera','Tovan','Nia'][Math.abs(i) % 6]; }
+function scrubTick(i) { audit.tick = Math.max(0, Math.min(COUNTS.browser_ticks - 1, i)); audit.panel = 'scrubber'; log('scrubTick', { selectedTick: audit.tick, sample: SAMPLE.replay_scrub }); }
+function stepReplay(i) { audit.tick = Math.max(0, Math.min(COUNTS.browser_ticks - 1, audit.tick + (i % 2 ? 1 : -1))); audit.panel = 'step'; log('stepReplay', { selectedTick: audit.tick }); }
+function filterResident(i) { audit.resident = residentFor(i); audit.panel = 'resident-index'; log('filterResident', { resident: audit.resident, index: SAMPLE.resident_audit_index }); }
+function inspectMemoryDebt(i) { audit.panel = 'memory-debt'; log('inspectMemoryDebt', { memory: SAMPLE.memory_debt_audit, selected: audit.resident }); }
+function inspectScheduleDiff(i) { audit.panel = 'schedule-diff'; log('inspectScheduleDiff', { schedule: SAMPLE.schedule_diff_audit }); }
+function inspectSnapshot(i) { audit.panel = 'snapshot'; audit.snapshot = SAMPLE.localstorage_snapshot; log('inspectSnapshot', { snapshot: audit.snapshot }); }
+function inspectInvariant(i) { audit.panel = 'invariant'; log('inspectInvariant', { invariant: SAMPLE.invariant_audit }); }
+function inspectCausality(i) { audit.panel = 'causality'; log('inspectCausality', { causality: SAMPLE.consequence_causality }); }
+function jumpAnomaly(i) { audit.tick = (i * 37) % COUNTS.browser_ticks; audit.panel = 'anomaly'; log('jumpAnomaly', { tick: audit.tick, severity: SAMPLE.invariant_audit.severity }); }
+function togglePrivateBoundary(i) { audit.privateBoundary = !audit.privateBoundary; log('togglePrivateBoundary', { privateBoundary: audit.privateBoundary }); }
+function exportAudit(i) { log('exportAudit', { rows: audit.rows.length, noPrivateWorkspace: audit.privateBoundary }); }
+function restoreSnapshot(i) { audit.snapshot = SAMPLE.localstorage_snapshot; log('restoreSnapshot', { restored: true, snapshotKey: audit.snapshot.snapshot_key }); }
+function saveAuditState() { localStorage.setItem(auditKey, JSON.stringify(audit)); log('saveAuditState', { saved: true }); }
+function loadAuditState() { audit = JSON.parse(localStorage.getItem(auditKey) || JSON.stringify(audit)); log('loadAuditState', { loaded: true }); }
+function downloadReplay() {
+  const blob = new Blob([JSON.stringify(audit.rows, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'report_299_v59_audit_replay.json'; a.click();
+  log('downloadReplay', { rows: audit.rows.length });
+}
+function showBoundary() { log('showBoundary', { boundary: BOUNDARY }); }
+function render() {
+  document.getElementById('resident').textContent = audit.resident + ' / panel ' + audit.panel + ' / tick ' + audit.tick;
+  document.getElementById('memory').textContent = SAMPLE.memory_debt_audit.memory_key + ' / ' + SAMPLE.memory_debt_audit.debt_name;
+  document.getElementById('invariant').textContent = SAMPLE.invariant_audit.invariant_name + ': ' + (SAMPLE.invariant_audit.passed ? 'pass' : 'flag');
+  trace.textContent = JSON.stringify({ audit, latest: audit.rows[audit.rows.length - 1] || null }, null, 2);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  grad.addColorStop(0, '#10241d'); grad.addColorStop(1, '#4f3f2b');
+  ctx.fillStyle = grad; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = 'rgba(247,235,205,0.13)';
+  for (let x = 50; x < canvas.width; x += 90) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke(); }
+  for (let y = 50; y < canvas.height; y += 90) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
+  const timelineWidth = canvas.width - 90;
+  const px = 45 + (audit.tick / Math.max(1, COUNTS.browser_ticks - 1)) * timelineWidth;
+  ctx.fillStyle = '#c8892c'; ctx.fillRect(45, 48, timelineWidth, 18);
+  ctx.fillStyle = '#b65b3b'; ctx.fillRect(px - 4, 38, 8, 38);
+  ctx.fillStyle = '#f7ebcd'; ctx.fillText('Replay scrubber over v58 loop tick ' + audit.tick, 45, 30);
+  ['Ari','Fay','Milo','Sera','Tovan','Nia'].forEach((name, idx) => {
+    const x = 120 + idx * 138;
+    const y = 170 + ((audit.tick + idx * 31) % 260);
+    ctx.fillStyle = name === audit.resident ? '#c8892c' : '#9fc8bd';
+    ctx.beginPath(); ctx.arc(x, y, 24, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#101714'; ctx.fillText(name, x - 13, y + 4);
+    ctx.fillStyle = '#f7ebcd'; ctx.fillText('memory/debt/schedule indexed', x - 50, y + 42);
+  });
+  ctx.fillStyle = '#f7ebcd';
+  ctx.fillText('Audit layer attached to consolidated v58 loop; private workspace remains hidden.', 45, canvas.height - 26);
+}
+render();
+showBoundary();
+</script>
+</body>
+</html>

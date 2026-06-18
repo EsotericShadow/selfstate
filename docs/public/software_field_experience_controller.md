@@ -500,3 +500,27 @@ Report 294 adds schedulable resident projects, inventory-affecting task executio
 ## Report 295 Browser World v55 Playable Task Loop/Pathing/Tool/Inventory Recovery Bridge Note
 
 Report 295 adds browser-local playable task loops, resident pathing to project sites, tool pickup/drop, visible inventory deltas, recoverable failed work, relationship-aware phrase session memory, frequency/flower timing metadata, and browser controls for movement, pathing, tool state, inventory mutation, recovery, phrase memory, save/restore, and replay. The deterministic run passes with readiness `0.944700` and weakest-channel score `0.842000`. Evidence includes 3672 playable task-loop frames, 3672 pathing frames, 3672 tool pickup/drop frames, 3672 visible inventory delta frames, 2550 recoverable failed-work frames, 3672 phrase-session frames, 490 reload probes, and 302 browser buttons. Boundary remains deterministic browser-local scaffolding only: no LLM call, subjective consciousness, real consent, autonomous language, moral patienthood, complete 3D engine, complete gameplay, or metaphysical frequency claim. Next gate: browser world v56 with pointer/click-driven canvas movement, animated resident pathing, actual browser-local inventory UI mutation, tool ownership disputes, multi-step crafting repair minigames, and saved-session relationship phrase consequences without LLM calls.
+
+## Report 296 Browser World v56 Canvas Movement/Animated Pathing/Inventory UI Repair Bridge Note
+
+Report 296 adds pointer/click-driven canvas movement, animated resident pathing, browser-local inventory UI mutation, tool ownership disputes, multi-step repair minigames, saved-session phrase consequences, frequency/flower timing metadata, and browser controls for canvas movement, animation, inventory widgets, disputes, repair steps, phrase consequences, save/restore, and replay. The deterministic run passes with readiness `0.944700` and weakest-channel score `0.842000`. Evidence includes 3996 pointer canvas movement frames, 3996 animated pathing frames, 3996 inventory UI mutation frames, 3996 tool ownership dispute frames, 3996 repair minigame frames, 3996 phrase consequence frames, 531 reload probes, and 273 browser buttons. Boundary remains deterministic browser-local scaffolding only: no LLM call, subjective consciousness, real consent, autonomous language, moral patienthood, complete 3D engine, complete gameplay, or metaphysical frequency claim. Next gate: browser world v57 with live browser conversation attached to canvas agents, sensory overlays for sound/smell/temperature/wetness, gesture/body-language states, inventory/resource widgets, minigame failure animations, and replayable multi-agent consequences without LLM calls.
+
+
+## Report 297: Browser World v57 Live Conversation/Sensory Overlay/Gesture Inventory Bridge
+
+Report 297 adds a stronger browser-local surface for first-person artificial-life inspection: canvas-bound phrasebook conversation, sensory overlays, gesture/body-language markers, resource widgets, recoverable minigame failures, and replayable multi-agent consequences. The deterministic run passes with readiness `0.944092` and weakest-channel score `0.842000` across 4320 browser ticks and 255 controls. The honest limit is `live_conversation_not_open_ended_llm`: this is bounded phrasebook routing with no LLM call and no autonomous-language claim, not a claim of consciousness or a finished 3D game.
+
+
+## Report 298: Browser World v58 Consolidated Playable Consequence Loop Bridge
+
+Report 298 is the pivot from feature reports toward an actual playable loop. The browser artifact now keeps avatar action, resident schedules, debts, memory, offscreen life, visible consequences, save/restore, and replay/debug in one local world-state object. The deterministic run passes with readiness `0.940653` and weakest-channel score `0.846000` across 4680 browser ticks and 172 controls. The honest limit is `consolidated_vertical_slice_not_finished_product`: this is a consolidated deterministic loop, not yet a finished product, complete 3D engine, production persistence, autonomous language, or consciousness claim.
+
+
+## Report 299: Browser World v59 Debug Replay Audit Layer Bridge
+
+Report 299 adds the inspection layer required before a credible playable vertical slice. The browser artifact can scrub the consolidated v58 loop by tick, resident, memory, debt, schedule, consequence, invariant, and LocalStorage snapshot while preserving the private-workspace boundary. The deterministic run passes with readiness `0.947631` and weakest-channel score `0.852000` across 5040 browser ticks and 208 controls. The honest limit is `audit_layer_not_vertical_slice_product`: this is an audit layer over the loop, not yet the Report 300 one-artifact vertical slice.
+
+
+## Report 300: Browser World v60 Consolidated Playable Vertical Slice Build
+
+Report 300 is the first consolidated playable vertical slice: one browser artifact for entering the world, moving, bounded conversation, schedules, debts, memory, offscreen life, visible consequence, save/restore, and audit replay. The deterministic run passes with readiness `0.949754` and weakest-channel score `0.858000` across 5400 browser ticks and 180 controls. The honest limit is `first_vertical_slice_not_outsider_ready_product`: this is now a coherent vertical-slice prototype, not yet an outsider-ready product, complete 3D engine, production system, autonomous language system, or consciousness claim.

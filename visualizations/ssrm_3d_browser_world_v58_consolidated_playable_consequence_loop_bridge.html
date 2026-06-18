@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Report 298 - Consolidated Playable Consequence Loop</title>
+<style>
+:root {
+  --ink: #172019;
+  --paper: #f5ead2;
+  --lichen: #6e7f45;
+  --clay: #b85f3c;
+  --blue: #2e6d79;
+  --gold: #d7a842;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(120deg, rgba(23,32,25,0.08), rgba(184,95,60,0.16)),
+    radial-gradient(circle at 10% 10%, rgba(215,168,66,0.40), transparent 25%),
+    radial-gradient(circle at 88% 22%, rgba(46,109,121,0.30), transparent 31%),
+    #efe2c4;
+  font-family: 'Iowan Old Style', Georgia, serif;
+}
+main { max-width: 1240px; margin: 0 auto; padding: 24px; }
+h1 { margin: 0; max-width: 1000px; font-size: clamp(2rem, 5vw, 4.8rem); line-height: 0.92; letter-spacing: -0.05em; }
+.boundary { margin: 18px 0; padding: 14px 16px; background: rgba(255,255,255,0.64); border-left: 9px solid var(--clay); }
+.shell { display: grid; grid-template-columns: minmax(420px, 1fr) 390px; gap: 18px; }
+canvas { width: 100%; min-height: 560px; border: 5px solid var(--ink); background: #16231b; box-shadow: 0 18px 60px rgba(23,32,25,0.35); }
+.panel { background: rgba(255,255,255,0.70); border: 1px solid rgba(23,32,25,0.22); border-radius: 18px; padding: 14px; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 14px 0; }
+.metrics span { background: rgba(255,255,255,0.64); padding: 8px 10px; border-radius: 999px; border: 1px solid rgba(23,32,25,0.16); }
+#controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; max-height: 380px; overflow: auto; }
+button { border: 0; border-radius: 999px; padding: 8px 9px; color: white; background: var(--lichen); cursor: pointer; font-size: 12px; }
+button:nth-child(3n) { background: var(--blue); }
+button:nth-child(5n) { background: var(--clay); }
+pre { white-space: pre-wrap; background: rgba(23,32,25,0.88); color: #f8edcc; padding: 12px; border-radius: 12px; max-height: 360px; overflow: auto; }
+.dashboard { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.card { padding: 10px; background: rgba(245,234,210,0.76); border-radius: 14px; border: 1px solid rgba(23,32,25,0.16); }
+@media (max-width: 880px) { .shell { grid-template-columns: 1fr; } .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } #controls { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+</head>
+<body>
+<main>
+  <h1>One playable loop: act, schedule, remember, leave, return, see consequence.</h1>
+  <p class="boundary">Deterministic browser-local consolidated playable consequence-loop scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, production persistence, or metaphysical frequency claim.</p>
+  <div class="metrics">
+    <span>loop frames: 4680</span>
+    <span>scheduler frames: 4680</span>
+    <span>offscreen frames: 4680</span>
+    <span>replay probes: 1114</span>
+  </div>
+  <div class="shell">
+    <section>
+      <canvas id="world" width="980" height="590" aria-label="consolidated deterministic browser world"></canvas>
+      <div class="panel dashboard">
+        <div class="card"><strong>Schedule</strong><p id="schedule"></p></div>
+        <div class="card"><strong>Debt</strong><p id="debt"></p></div>
+        <div class="card"><strong>Memory</strong><p id="memory"></p></div>
+        <div class="card"><strong>Trust</strong><p id="trust"></p></div>
+      </div>
+      <pre id="trace"></pre>
+    </section>
+    <aside class="panel">
+      <h2>Playable controls</h2>
+      <div id="controls"><button type="button" onclick="moveAvatar(0)">move avatar 000</button>
+<button type="button" onclick="talkToResident(1)">talkTo resident 001</button>
+<button type="button" onclick="offerHelp(2)">offerHelp 002</button>
+<button type="button" onclick="borrowTool(3)">borrowTool 003</button>
+<button type="button" onclick="returnTool(4)">returnTool 004</button>
+<button type="button" onclick="interruptWork(5)">interruptWork 005</button>
+<button type="button" onclick="waitOffscreen(6)">waitOffscreen 006</button>
+<button type="button" onclick="advanceResidentScheduler(7)">advance resident scheduler 007</button>
+<button type="button" onclick="applyVisibleConsequence(8)">apply visibleConsequence 008</button>
+<button type="button" onclick="repairTrust(9)">repairTrust 009</button>
+<button type="button" onclick="openDashboard(10)">openDashboard 010</button>
+<button type="button" onclick="selectResident(11)">select resident 011</button>
+<button type="button" onclick="showAudit(12)">showAudit 012</button>
+<button type="button" onclick="toggleDebug(13)">toggleDebug 013</button>
+<button type="button" onclick="moveAvatar(14)">move avatar 014</button>
+<button type="button" onclick="talkToResident(15)">talkTo resident 015</button>
+<button type="button" onclick="offerHelp(16)">offerHelp 016</button>
+<button type="button" onclick="borrowTool(17)">borrowTool 017</button>
+<button type="button" onclick="returnTool(18)">returnTool 018</button>
+<button type="button" onclick="interruptWork(19)">interruptWork 019</button>
+<button type="button" onclick="waitOffscreen(20)">waitOffscreen 020</button>
+<button type="button" onclick="advanceResidentScheduler(21)">advance resident scheduler 021</button>
+<button type="button" onclick="applyVisibleConsequence(22)">apply visibleConsequence 022</button>
+<button type="button" onclick="repairTrust(23)">repairTrust 023</button>
+<button type="button" onclick="openDashboard(24)">openDashboard 024</button>
+<button type="button" onclick="selectResident(25)">select resident 025</button>
+<button type="button" onclick="showAudit(26)">showAudit 026</button>
+<button type="button" onclick="toggleDebug(27)">toggleDebug 027</button>
+<button type="button" onclick="moveAvatar(28)">move avatar 028</button>
+<button type="button" onclick="talkToResident(29)">talkTo resident 029</button>
+<button type="button" onclick="offerHelp(30)">offerHelp 030</button>
+<button type="button" onclick="borrowTool(31)">borrowTool 031</button>
+<button type="button" onclick="returnTool(32)">returnTool 032</button>
+<button type="button" onclick="interruptWork(33)">interruptWork 033</button>
+<button type="button" onclick="waitOffscreen(34)">waitOffscreen 034</button>
+<button type="button" onclick="advanceResidentScheduler(35)">advance resident scheduler 035</button>
+<button type="button" onclick="applyVisibleConsequence(36)">apply visibleConsequence 036</button>
+<button type="button" onclick="repairTrust(37)">repairTrust 037</button>
+<button type="button" onclick="openDashboard(38)">openDashboard 038</button>
+<button type="button" onclick="selectResident(39)">select resident 039</button>
+<button type="button" onclick="showAudit(40)">showAudit 040</button>
+<button type="button" onclick="toggleDebug(41)">toggleDebug 041</button>
+<button type="button" onclick="moveAvatar(42)">move avatar 042</button>
+<button type="button" onclick="talkToResident(43)">talkTo resident 043</button>
+<button type="button" onclick="offerHelp(44)">offerHelp 044</button>
+<button type="button" onclick="borrowTool(45)">borrowTool 045</button>
+<button type="button" onclick="returnTool(46)">returnTool 046</button>
+<button type="button" onclick="interruptWork(47)">interruptWork 047</button>
+<button type="button" onclick="waitOffscreen(48)">waitOffscreen 048</button>
+<button type="button" onclick="advanceResidentScheduler(49)">advance resident scheduler 049</button>
+<button type="button" onclick="applyVisibleConsequence(50)">apply visibleConsequence 050</button>
+<button type="button" onclick="repairTrust(51)">repairTrust 051</button>
+<button type="button" onclick="openDashboard(52)">openDashboard 052</button>
+<button type="button" onclick="selectResident(53)">select resident 053</button>
+<button type="button" onclick="showAudit(54)">showAudit 054</button>
+<button type="button" onclick="toggleDebug(55)">toggleDebug 055</button>
+<button type="button" onclick="moveAvatar(56)">move avatar 056</button>
+<button type="button" onclick="talkToResident(57)">talkTo resident 057</button>
+<button type="button" onclick="offerHelp(58)">offerHelp 058</button>
+<button type="button" onclick="borrowTool(59)">borrowTool 059</button>
+<button type="button" onclick="returnTool(60)">returnTool 060</button>
+<button type="button" onclick="interruptWork(61)">interruptWork 061</button>
+<button type="button" onclick="waitOffscreen(62)">waitOffscreen 062</button>
+<button type="button" onclick="advanceResidentScheduler(63)">advance resident scheduler 063</button>
+<button type="button" onclick="applyVisibleConsequence(64)">apply visibleConsequence 064</button>
+<button type="button" onclick="repairTrust(65)">repairTrust 065</button>
+<button type="button" onclick="openDashboard(66)">openDashboard 066</button>
+<button type="button" onclick="selectResident(67)">select resident 067</button>
+<button type="button" onclick="showAudit(68)">showAudit 068</button>
+<button type="button" onclick="toggleDebug(69)">toggleDebug 069</button>
+<button type="button" onclick="moveAvatar(70)">move avatar 070</button>
+<button type="button" onclick="talkToResident(71)">talkTo resident 071</button>
+<button type="button" onclick="offerHelp(72)">offerHelp 072</button>
+<button type="button" onclick="borrowTool(73)">borrowTool 073</button>
+<button type="button" onclick="returnTool(74)">returnTool 074</button>
+<button type="button" onclick="interruptWork(75)">interruptWork 075</button>
+<button type="button" onclick="waitOffscreen(76)">waitOffscreen 076</button>
+<button type="button" onclick="advanceResidentScheduler(77)">advance resident scheduler 077</button>
+<button type="button" onclick="applyVisibleConsequence(78)">apply visibleConsequence 078</button>
+<button type="button" onclick="repairTrust(79)">repairTrust 079</button>
+<button type="button" onclick="openDashboard(80)">openDashboard 080</button>
+<button type="button" onclick="selectResident(81)">select resident 081</button>
+<button type="button" onclick="showAudit(82)">showAudit 082</button>
+<button type="button" onclick="toggleDebug(83)">toggleDebug 083</button>
+<button type="button" onclick="moveAvatar(84)">move avatar 084</button>
+<button type="button" onclick="talkToResident(85)">talkTo resident 085</button>
+<button type="button" onclick="offerHelp(86)">offerHelp 086</button>
+<button type="button" onclick="borrowTool(87)">borrowTool 087</button>
+<button type="button" onclick="returnTool(88)">returnTool 088</button>
+<button type="button" onclick="interruptWork(89)">interruptWork 089</button>
+<button type="button" onclick="waitOffscreen(90)">waitOffscreen 090</button>
+<button type="button" onclick="advanceResidentScheduler(91)">advance resident scheduler 091</button>
+<button type="button" onclick="applyVisibleConsequence(92)">apply visibleConsequence 092</button>
+<button type="button" onclick="repairTrust(93)">repairTrust 093</button>
+<button type="button" onclick="openDashboard(94)">openDashboard 094</button>
+<button type="button" onclick="selectResident(95)">select resident 095</button>
+<button type="button" onclick="showAudit(96)">showAudit 096</button>
+<button type="button" onclick="toggleDebug(97)">toggleDebug 097</button>
+<button type="button" onclick="moveAvatar(98)">move avatar 098</button>
+<button type="button" onclick="talkToResident(99)">talkTo resident 099</button>
+<button type="button" onclick="offerHelp(100)">offerHelp 100</button>
+<button type="button" onclick="borrowTool(101)">borrowTool 101</button>
+<button type="button" onclick="returnTool(102)">returnTool 102</button>
+<button type="button" onclick="interruptWork(103)">interruptWork 103</button>
+<button type="button" onclick="waitOffscreen(104)">waitOffscreen 104</button>
+<button type="button" onclick="advanceResidentScheduler(105)">advance resident scheduler 105</button>
+<button type="button" onclick="applyVisibleConsequence(106)">apply visibleConsequence 106</button>
+<button type="button" onclick="repairTrust(107)">repairTrust 107</button>
+<button type="button" onclick="openDashboard(108)">openDashboard 108</button>
+<button type="button" onclick="selectResident(109)">select resident 109</button>
+<button type="button" onclick="showAudit(110)">showAudit 110</button>
+<button type="button" onclick="toggleDebug(111)">toggleDebug 111</button>
+<button type="button" onclick="moveAvatar(112)">move avatar 112</button>
+<button type="button" onclick="talkToResident(113)">talkTo resident 113</button>
+<button type="button" onclick="offerHelp(114)">offerHelp 114</button>
+<button type="button" onclick="borrowTool(115)">borrowTool 115</button>
+<button type="button" onclick="returnTool(116)">returnTool 116</button>
+<button type="button" onclick="interruptWork(117)">interruptWork 117</button>
+<button type="button" onclick="waitOffscreen(118)">waitOffscreen 118</button>
+<button type="button" onclick="advanceResidentScheduler(119)">advance resident scheduler 119</button>
+<button type="button" onclick="applyVisibleConsequence(120)">apply visibleConsequence 120</button>
+<button type="button" onclick="repairTrust(121)">repairTrust 121</button>
+<button type="button" onclick="openDashboard(122)">openDashboard 122</button>
+<button type="button" onclick="selectResident(123)">select resident 123</button>
+<button type="button" onclick="showAudit(124)">showAudit 124</button>
+<button type="button" onclick="toggleDebug(125)">toggleDebug 125</button>
+<button type="button" onclick="moveAvatar(126)">move avatar 126</button>
+<button type="button" onclick="talkToResident(127)">talkTo resident 127</button>
+<button type="button" onclick="offerHelp(128)">offerHelp 128</button>
+<button type="button" onclick="borrowTool(129)">borrowTool 129</button>
+<button type="button" onclick="returnTool(130)">returnTool 130</button>
+<button type="button" onclick="interruptWork(131)">interruptWork 131</button>
+<button type="button" onclick="waitOffscreen(132)">waitOffscreen 132</button>
+<button type="button" onclick="advanceResidentScheduler(133)">advance resident scheduler 133</button>
+<button type="button" onclick="applyVisibleConsequence(134)">apply visibleConsequence 134</button>
+<button type="button" onclick="repairTrust(135)">repairTrust 135</button>
+<button type="button" onclick="openDashboard(136)">openDashboard 136</button>
+<button type="button" onclick="selectResident(137)">select resident 137</button>
+<button type="button" onclick="showAudit(138)">showAudit 138</button>
+<button type="button" onclick="toggleDebug(139)">toggleDebug 139</button>
+<button type="button" onclick="moveAvatar(140)">move avatar 140</button>
+<button type="button" onclick="talkToResident(141)">talkTo resident 141</button>
+<button type="button" onclick="offerHelp(142)">offerHelp 142</button>
+<button type="button" onclick="borrowTool(143)">borrowTool 143</button>
+<button type="button" onclick="returnTool(144)">returnTool 144</button>
+<button type="button" onclick="interruptWork(145)">interruptWork 145</button>
+<button type="button" onclick="waitOffscreen(146)">waitOffscreen 146</button>
+<button type="button" onclick="advanceResidentScheduler(147)">advance resident scheduler 147</button>
+<button type="button" onclick="applyVisibleConsequence(148)">apply visibleConsequence 148</button>
+<button type="button" onclick="repairTrust(149)">repairTrust 149</button>
+<button type="button" onclick="openDashboard(150)">openDashboard 150</button>
+<button type="button" onclick="selectResident(151)">select resident 151</button>
+<button type="button" onclick="showAudit(152)">showAudit 152</button>
+<button type="button" onclick="toggleDebug(153)">toggleDebug 153</button>
+<button type="button" onclick="moveAvatar(154)">move avatar 154</button>
+<button type="button" onclick="talkToResident(155)">talkTo resident 155</button>
+<button type="button" onclick="offerHelp(156)">offerHelp 156</button>
+<button type="button" onclick="borrowTool(157)">borrowTool 157</button>
+<button type="button" onclick="returnTool(158)">returnTool 158</button>
+<button type="button" onclick="interruptWork(159)">interruptWork 159</button>
+<button type="button" onclick="waitOffscreen(160)">waitOffscreen 160</button>
+<button type="button" onclick="advanceResidentScheduler(161)">advance resident scheduler 161</button>
+<button type="button" onclick="applyVisibleConsequence(162)">apply visibleConsequence 162</button>
+<button type="button" onclick="repairTrust(163)">repairTrust 163</button>
+<button type="button" onclick="openDashboard(164)">openDashboard 164</button>
+<button type="button" onclick="selectResident(165)">select resident 165</button>
+<button type="button" onclick="showAudit(166)">showAudit 166</button>
+<button type="button" onclick="toggleDebug(167)">toggleDebug 167</button>
+<button type="button" onclick="saveWorldState()">save world state</button>
+<button type="button" onclick="restoreWorldState()">restore world state</button>
+<button type="button" onclick="exportReplay()">export replay</button>
+<button type="button" onclick="showBoundary()">show boundary</button></div>
+      <h2>Sample integrated frame</h2>
+      <pre>{
+  "avatar_action": {
+    "action_category": "social",
+    "allowed": true,
+    "avatar_action_key": "repair_trust",
+    "day": 12,
+    "not_magic": true,
+    "reason": "state precondition met",
+    "refusal_respected": true,
+    "refused": false,
+    "resident": "Tovan",
+    "state_delta": "trust:+0.020; obligation:-0.026",
+    "tick": 211,
+    "visible_feedback": "trust warms and obligation decreases"
+  },
+  "consequence_loop": {
+    "affected_resident": "Tovan",
+    "affected_resource": "wood",
+    "cause_action": "repair_trust",
+    "day": 12,
+    "delayed_effect": "scheduler and debt panel update after reload",
+    "direct_effect": "trust warms and obligation decreases",
+    "harm_recoverable": true,
+    "no_history_erasure": true,
+    "recovery_path": "return object",
+    "schedule_delta": "recover focus->work",
+    "tick": 211,
+    "trust_delta": 0.02
+  },
+  "dashboard": {
+    "day": 12,
+    "panel_patch": "{\"debt\": \"water carry\", \"project\": \"map safe route\", \"resident\": \"Tovan\", \"schedule\": \"work\", \"trust\": 0.3227}",
+    "private_workspace_hidden": true,
+    "selected_resident": "Tovan",
+    "tick": 211,
+    "visible_care_need": "focused",
+    "visible_debt": "water carry",
+    "visible_project": "map safe route",
+    "visible_schedule": "work",
+    "visible_trust": 0.322744
+  },
+  "integrated_loop": {
+    "avatar_action_key": "repair_trust",
+    "avatar_agency_bound": true,
+    "avatar_room": "west hearth",
+    "day": 12,
+    "obligation_after": 0.486062,
+    "obligation_before": 0.512062,
+    "project": "map safe route",
+    "replay_key": "v58-loop-00211",
+    "resident": "Tovan",
+    "resident_agency_bound": true,
+    "schedule_after": "work",
+    "schedule_before": "recover focus",
+    "slot": 13,
+    "tick": 211,
+    "trust_after": 0.322744,
+    "trust_before": 0.302744,
+    "visible_consequence": "trust warms and obligation decreases"
+  },
+  "memory_debt": {
+    "day": 12,
+    "debt_after": 0.874912,
+    "debt_before": 0.921712,
+    "debt_name": "water carry",
+    "history_not_erased": true,
+    "memory_key": "tovan:water_carry:d012:s13",
+    "persists_to_reload": true,
+    "relationship_note": "repair_trust caused trust warms and obligation decreases; memory persists as tovan:water_carry:d012:s13",
+    "resident": "Tovan",
+    "tick": 211,
+    "trust_after": 0.322744,
+    "trust_before": 0.302744
+  },
+  "offscreen_activity": {
+    "absent_ticks": 8,
+    "day": 12,
+    "interaction_without_avatar": true,
+    "offscreen_activity": "ambient household tick",
+    "progress_after": 0.465679,
+    "progress_before": 0.451679,
+    "resident": "Tovan",
+    "resource_delta": 0,
+    "tick": 211,
+    "visible_after_return": true
+  },
+  "resident_scheduler": {
+    "agency_preserved": true,
+    "day": 12,
+    "debt_focus": "water carry",
+    "need_state": "steady",
+    "offscreen": false,
+    "project_progress": 0.452801,
+    "resident": "Tovan",
+    "room": "west hearth",
+    "schedule_changed_by_avatar": true,
+    "schedule_state": "work",
+    "slot": 13,
+    "tick": 211
+  },
+  "save_restore_replay": {
+    "audit_scrubbable": true,
+    "day": 10,
+    "replay_event_count": 140,
+    "restored_avatar_room": "rain court",
+    "restored_debt_name": "route warning",
+    "restored_memory_key": "tovan:route_warning:d010:s13",
+    "restored_ok": true,
+    "restored_resident": "Tovan",
+    "snapshot_key": "ssrm:v58:snapshot:d010:t00175",
+    "tick": 175
+  }
+}</pre>
+    </aside>
+  </div>
+</main>
+<script>
+const SAMPLE = {"avatar_action": {"action_category": "social", "allowed": true, "avatar_action_key": "repair_trust", "day": 12, "not_magic": true, "reason": "state precondition met", "refusal_respected": true, "refused": false, "resident": "Tovan", "state_delta": "trust:+0.020; obligation:-0.026", "tick": 211, "visible_feedback": "trust warms and obligation decreases"}, "consequence_loop": {"affected_resident": "Tovan", "affected_resource": "wood", "cause_action": "repair_trust", "day": 12, "delayed_effect": "scheduler and debt panel update after reload", "direct_effect": "trust warms and obligation decreases", "harm_recoverable": true, "no_history_erasure": true, "recovery_path": "return object", "schedule_delta": "recover focus->work", "tick": 211, "trust_delta": 0.02}, "dashboard": {"day": 12, "panel_patch": "{\"debt\": \"water carry\", \"project\": \"map safe route\", \"resident\": \"Tovan\", \"schedule\": \"work\", \"trust\": 0.3227}", "private_workspace_hidden": true, "selected_resident": "Tovan", "tick": 211, "visible_care_need": "focused", "visible_debt": "water carry", "visible_project": "map safe route", "visible_schedule": "work", "visible_trust": 0.322744}, "integrated_loop": {"avatar_action_key": "repair_trust", "avatar_agency_bound": true, "avatar_room": "west hearth", "day": 12, "obligation_after": 0.486062, "obligation_before": 0.512062, "project": "map safe route", "replay_key": "v58-loop-00211", "resident": "Tovan", "resident_agency_bound": true, "schedule_after": "work", "schedule_before": "recover focus", "slot": 13, "tick": 211, "trust_after": 0.322744, "trust_before": 0.302744, "visible_consequence": "trust warms and obligation decreases"}, "memory_debt": {"day": 12, "debt_after": 0.874912, "debt_before": 0.921712, "debt_name": "water carry", "history_not_erased": true, "memory_key": "tovan:water_carry:d012:s13", "persists_to_reload": true, "relationship_note": "repair_trust caused trust warms and obligation decreases; memory persists as tovan:water_carry:d012:s13", "resident": "Tovan", "tick": 211, "trust_after": 0.322744, "trust_before": 0.302744}, "offscreen_activity": {"absent_ticks": 8, "day": 12, "interaction_without_avatar": true, "offscreen_activity": "ambient household tick", "progress_after": 0.465679, "progress_before": 0.451679, "resident": "Tovan", "resource_delta": 0, "tick": 211, "visible_after_return": true}, "resident_scheduler": {"agency_preserved": true, "day": 12, "debt_focus": "water carry", "need_state": "steady", "offscreen": false, "project_progress": 0.452801, "resident": "Tovan", "room": "west hearth", "schedule_changed_by_avatar": true, "schedule_state": "work", "slot": 13, "tick": 211}, "save_restore_replay": {"audit_scrubbable": true, "day": 10, "replay_event_count": 140, "restored_avatar_room": "rain court", "restored_debt_name": "route warning", "restored_memory_key": "tovan:route_warning:d010:s13", "restored_ok": true, "restored_resident": "Tovan", "snapshot_key": "ssrm:v58:snapshot:d010:t00175", "tick": 175}};
+const BOUNDARY = "Deterministic browser-local consolidated playable consequence-loop scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, production persistence, or metaphysical frequency claim.";
+const stateKey = 'ssrm_v58_consolidated_world_state';
+const replayKey = 'ssrm_v58_consolidated_replay';
+let world = JSON.parse(localStorage.getItem(stateKey) || JSON.stringify({
+  tick: 0,
+  avatarRoom: 'arrival court',
+  selectedResident: 'Ari',
+  residents: {
+    Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at wet crossing', project: 0.38 },
+    Fay: { trust: 0.64, debt: 0, schedule: 'sort herbs', memory: 'keeps west shelf ledger', project: 0.52 },
+    Milo: { trust: 0.49, debt: 2, schedule: 'carry water', memory: 'tool loan unresolved', project: 0.27 },
+    Sera: { trust: 0.55, debt: 1, schedule: 'dry cloaks', memory: 'asked for quiet', project: 0.44 }
+  },
+  resources: { water: 14, fiber: 11, wood: 18, care: 6 },
+  replay: [],
+  debug: false
+}));
+const canvas = document.getElementById('world');
+const ctx = canvas.getContext('2d');
+const trace = document.getElementById('trace');
+function currentResident() { return world.residents[world.selectedResident]; }
+function clamp(v) { return Math.max(0, Math.min(1, v)); }
+function log(event, payload) {
+  const row = { event, tick: world.tick++, resident: world.selectedResident, payload };
+  world.replay.push(row);
+  if (world.replay.length > 140) world.replay.shift();
+  localStorage.setItem(stateKey, JSON.stringify(world));
+  localStorage.setItem(replayKey, JSON.stringify(world.replay));
+  render();
+}
+function mutateResident(name, delta) {
+  const r = world.residents[name] || currentResident();
+  r.trust = clamp(r.trust + (delta.trust || 0));
+  r.debt = Math.max(0, r.debt + (delta.debt || 0));
+  r.project = clamp(r.project + (delta.project || 0));
+  if (delta.schedule) r.schedule = delta.schedule;
+  if (delta.memory) r.memory = delta.memory;
+}
+function moveAvatar(i) {
+  const rooms = ['arrival court','tool alcove','rain court','fiber loft','west hearth','river gate'];
+  world.avatarRoom = rooms[i % rooms.length];
+  log('moveAvatar', { room: world.avatarRoom });
+}
+function talkToResident(i) { mutateResident(world.selectedResident, { trust: 0.012, memory: 'heard bounded phrase ' + i }); log('talkToResident', { noLLM: true, phraseKey: i }); }
+function offerHelp(i) { mutateResident(world.selectedResident, { trust: 0.025, debt: -1, project: 0.035, memory: 'accepted bounded help ' + i }); world.resources.care = Math.max(0, world.resources.care - 1); log('offerHelp', { care: world.resources.care }); }
+function borrowTool(i) { mutateResident(world.selectedResident, { trust: -0.018, debt: 1, memory: 'tool borrowed by avatar ' + i }); log('borrowTool', { debt: currentResident().debt }); }
+function returnTool(i) { mutateResident(world.selectedResident, { trust: 0.021, debt: -1, memory: 'tool returned by avatar ' + i }); log('returnTool', { debt: currentResident().debt }); }
+function interruptWork(i) { mutateResident(world.selectedResident, { trust: -0.03, schedule: 'recover focus after interruption', memory: 'avatar interrupted work ' + i }); log('interruptWork', { consequence: 'schedule delayed' }); }
+function waitOffscreen(i) {
+  Object.keys(world.residents).forEach((name, index) => mutateResident(name, { project: 0.018 + index * 0.002, trust: index % 2 ? 0.003 : -0.002 }));
+  log('waitOffscreen', { progressedWithoutAvatar: true });
+}
+function advanceResidentScheduler(i) { mutateResident(world.selectedResident, { project: 0.02, schedule: i % 2 ? 'finish owed work' : 'rest before repair' }); log('advanceResidentScheduler', { schedule: currentResident().schedule }); }
+function applyVisibleConsequence(i) { mutateResident(world.selectedResident, { trust: i % 3 ? 0.015 : -0.016, project: i % 3 ? 0.02 : -0.01 }); log('applyVisibleConsequence', { sample: SAMPLE.consequence_loop }); }
+function repairTrust(i) { mutateResident(world.selectedResident, { trust: 0.018, debt: -1, memory: 'trust partially repaired ' + i }); log('repairTrust', { nonMagical: true }); }
+function openDashboard(i) { log('openDashboard', { dashboard: SAMPLE.dashboard }); }
+function selectResident(i) { const names = Object.keys(world.residents); world.selectedResident = names[i % names.length]; log('selectResident', { selected: world.selectedResident }); }
+function showAudit(i) { log('showAudit', { replayEvents: world.replay.length, boundary: BOUNDARY }); }
+function toggleDebug(i) { world.debug = !world.debug; log('toggleDebug', { debug: world.debug }); }
+function saveWorldState() { localStorage.setItem(stateKey, JSON.stringify(world)); log('saveWorldState', { saved: true }); }
+function restoreWorldState() { world = JSON.parse(localStorage.getItem(stateKey) || JSON.stringify(world)); log('restoreWorldState', { restored: true }); }
+function exportReplay() {
+  const blob = new Blob([JSON.stringify(world.replay, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'report_298_v58_consolidated_replay.json'; a.click();
+  log('exportReplay', { rows: world.replay.length });
+}
+function showBoundary() { log('showBoundary', { boundary: BOUNDARY }); }
+function render() {
+  const resident = currentResident();
+  document.getElementById('schedule').textContent = resident.schedule + ' in ' + world.avatarRoom;
+  document.getElementById('debt').textContent = world.selectedResident + ' debt ' + resident.debt;
+  document.getElementById('memory').textContent = resident.memory;
+  document.getElementById('trust').textContent = resident.trust.toFixed(3) + ' / project ' + resident.project.toFixed(3);
+  trace.textContent = JSON.stringify({ world, latest: world.replay[world.replay.length - 1] || null }, null, 2);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  grad.addColorStop(0, '#173027'); grad.addColorStop(1, '#5e4a2e');
+  ctx.fillStyle = grad; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'rgba(255,255,255,0.13)';
+  for (let x = 50; x < canvas.width; x += 110) ctx.fillRect(x, 0, 1, canvas.height);
+  for (let y = 50; y < canvas.height; y += 90) ctx.fillRect(0, y, canvas.width, 1);
+  Object.entries(world.residents).forEach(([name, r], idx) => {
+    const x = 120 + ((idx * 173 + world.tick * (idx + 2)) % 760);
+    const y = 110 + ((idx * 101 + world.tick * (idx + 3)) % 360);
+    ctx.fillStyle = name === world.selectedResident ? '#d7a842' : '#b7d3c2';
+    ctx.beginPath(); ctx.arc(x, y, 24 + r.trust * 8, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#111811'; ctx.fillText(name, x - 13, y + 4);
+    ctx.fillStyle = '#f8edcc'; ctx.fillText(r.schedule, x - 42, y + 42);
+  });
+  ctx.fillStyle = '#f8edcc'; ctx.fillText('Avatar room: ' + world.avatarRoom, 24, 32);
+  ctx.fillText('Single world state object + localStorage replay/debug. Boundary visible: no consciousness or LLM claim.', 24, canvas.height - 24);
+}
+render();
+showBoundary();
+</script>
+</body>
+</html>

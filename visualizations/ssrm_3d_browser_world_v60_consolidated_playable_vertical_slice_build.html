@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Report 300 - Consolidated Playable Vertical Slice</title>
+<style>
+:root {
+  --ink: #121816;
+  --paper: #f4e7c7;
+  --night: #12231d;
+  --moss: #5d7445;
+  --clay: #b55d38;
+  --water: #2f747e;
+  --sun: #d69b32;
+  --panel: rgba(255,255,255,0.72);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 14% 10%, rgba(214,155,50,0.42), transparent 24%),
+    radial-gradient(circle at 82% 16%, rgba(47,116,126,0.32), transparent 30%),
+    linear-gradient(135deg, #f4e7c7 0%, #d7c490 48%, #94aa83 100%);
+  font-family: 'Optima', 'Avenir Next', sans-serif;
+}
+main { max-width: 1320px; margin: 0 auto; padding: 22px; }
+h1 { margin: 0; max-width: 1120px; font-size: clamp(2.3rem, 5.6vw, 6.2rem); line-height: 0.86; letter-spacing: -0.065em; }
+.boundary { margin: 16px 0; padding: 14px 16px; border-left: 10px solid var(--clay); background: var(--panel); }
+.topbar { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 8px; margin: 12px 0 16px; }
+.topbar span { border-radius: 999px; border: 1px solid rgba(18,24,22,0.16); padding: 8px 10px; background: rgba(255,255,255,0.62); }
+.layout { display: grid; grid-template-columns: minmax(500px, 1fr) 430px; gap: 16px; align-items: start; }
+canvas { width: 100%; min-height: 600px; border: 5px solid var(--ink); background: var(--night); box-shadow: 0 24px 80px rgba(18,24,22,0.36); }
+.panel { background: var(--panel); border: 1px solid rgba(18,24,22,0.20); border-radius: 20px; padding: 14px; }
+.dashboard { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; margin-top: 10px; }
+.card { min-height: 94px; border-radius: 16px; border: 1px solid rgba(18,24,22,0.14); background: rgba(244,231,199,0.82); padding: 10px; }
+#controls { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; max-height: 430px; overflow: auto; }
+button { border: 0; border-radius: 999px; padding: 8px 9px; color: white; background: var(--moss); cursor: pointer; font-size: 12px; }
+button:nth-child(4n) { background: var(--water); }
+button:nth-child(5n) { background: var(--clay); }
+button:nth-child(7n) { background: var(--sun); color: var(--ink); }
+pre { white-space: pre-wrap; background: rgba(18,24,22,0.90); color: #f9ebc9; padding: 12px; border-radius: 12px; max-height: 360px; overflow: auto; }
+input, select { width: 100%; padding: 9px; border-radius: 12px; border: 1px solid rgba(18,24,22,0.22); background: rgba(255,255,255,0.78); }
+@media (max-width: 980px) { .layout { grid-template-columns: 1fr; } .topbar { grid-template-columns: repeat(2, minmax(0,1fr)); } .dashboard { grid-template-columns: repeat(2, minmax(0,1fr)); } #controls { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+</style>
+</head>
+<body>
+<main>
+  <h1>First consolidated playable vertical slice: enter, move, talk, leave, return, inspect.</h1>
+  <p class="boundary">Deterministic browser-local consolidated playable vertical-slice prototype only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.</p>
+  <div class="topbar">
+    <span>session frames: 5400</span>
+    <span>movement: 5400</span>
+    <span>conversation: 5400</span>
+    <span>save/replay: 5400</span>
+    <span>controls: 180</span>
+  </div>
+  <div class="layout">
+    <section>
+      <canvas id="world" width="1040" height="620" aria-label="consolidated playable browser world"></canvas>
+      <div class="panel">
+        <select id="phrase">
+          <option value="greet">greet resident</option>
+          <option value="ask-schedule">ask schedule</option>
+          <option value="offer-help">offer help</option>
+          <option value="apologize">apologize</option>
+          <option value="ask-debt">ask debt</option>
+        </select>
+        <div class="dashboard">
+          <div class="card"><strong>Room</strong><p id="room"></p></div>
+          <div class="card"><strong>Resident</strong><p id="resident"></p></div>
+          <div class="card"><strong>Schedule</strong><p id="schedule"></p></div>
+          <div class="card"><strong>Debt/Memory</strong><p id="memory"></p></div>
+        </div>
+      </div>
+      <pre id="trace"></pre>
+    </section>
+    <aside class="panel">
+      <h2>Vertical slice controls</h2>
+      <div id="controls"><button type="button" onclick="enterWorld(0)">enterWorld 000</button>
+<button type="button" onclick="moveNorth(1)">moveNorth 001</button>
+<button type="button" onclick="moveSouth(2)">moveSouth 002</button>
+<button type="button" onclick="moveEast(3)">moveEast 003</button>
+<button type="button" onclick="moveWest(4)">moveWest 004</button>
+<button type="button" onclick="talkBounded(5)">talkBounded 005</button>
+<button type="button" onclick="askSchedule(6)">askSchedule 006</button>
+<button type="button" onclick="offerHelp(7)">offerHelp 007</button>
+<button type="button" onclick="borrowTool(8)">borrowTool 008</button>
+<button type="button" onclick="returnTool(9)">returnTool 009</button>
+<button type="button" onclick="waitOffscreen(10)">waitOffscreen 010</button>
+<button type="button" onclick="inspectDebt(11)">inspectDebt 011</button>
+<button type="button" onclick="inspectMemory(12)">inspectMemory 012</button>
+<button type="button" onclick="applyConsequence(13)">applyConsequence 013</button>
+<button type="button" onclick="repairTrust(14)">repairTrust 014</button>
+<button type="button" onclick="saveWorld(15)">saveWorld 015</button>
+<button type="button" onclick="restoreWorld(16)">restoreWorld 016</button>
+<button type="button" onclick="scrubReplay(17)">scrubReplay 017</button>
+<button type="button" onclick="toggleAudit(18)">toggleAudit 018</button>
+<button type="button" onclick="exportReplay(19)">exportReplay 019</button>
+<button type="button" onclick="enterWorld(20)">enterWorld 020</button>
+<button type="button" onclick="moveNorth(21)">moveNorth 021</button>
+<button type="button" onclick="moveSouth(22)">moveSouth 022</button>
+<button type="button" onclick="moveEast(23)">moveEast 023</button>
+<button type="button" onclick="moveWest(24)">moveWest 024</button>
+<button type="button" onclick="talkBounded(25)">talkBounded 025</button>
+<button type="button" onclick="askSchedule(26)">askSchedule 026</button>
+<button type="button" onclick="offerHelp(27)">offerHelp 027</button>
+<button type="button" onclick="borrowTool(28)">borrowTool 028</button>
+<button type="button" onclick="returnTool(29)">returnTool 029</button>
+<button type="button" onclick="waitOffscreen(30)">waitOffscreen 030</button>
+<button type="button" onclick="inspectDebt(31)">inspectDebt 031</button>
+<button type="button" onclick="inspectMemory(32)">inspectMemory 032</button>
+<button type="button" onclick="applyConsequence(33)">applyConsequence 033</button>
+<button type="button" onclick="repairTrust(34)">repairTrust 034</button>
+<button type="button" onclick="saveWorld(35)">saveWorld 035</button>
+<button type="button" onclick="restoreWorld(36)">restoreWorld 036</button>
+<button type="button" onclick="scrubReplay(37)">scrubReplay 037</button>
+<button type="button" onclick="toggleAudit(38)">toggleAudit 038</button>
+<button type="button" onclick="exportReplay(39)">exportReplay 039</button>
+<button type="button" onclick="enterWorld(40)">enterWorld 040</button>
+<button type="button" onclick="moveNorth(41)">moveNorth 041</button>
+<button type="button" onclick="moveSouth(42)">moveSouth 042</button>
+<button type="button" onclick="moveEast(43)">moveEast 043</button>
+<button type="button" onclick="moveWest(44)">moveWest 044</button>
+<button type="button" onclick="talkBounded(45)">talkBounded 045</button>
+<button type="button" onclick="askSchedule(46)">askSchedule 046</button>
+<button type="button" onclick="offerHelp(47)">offerHelp 047</button>
+<button type="button" onclick="borrowTool(48)">borrowTool 048</button>
+<button type="button" onclick="returnTool(49)">returnTool 049</button>
+<button type="button" onclick="waitOffscreen(50)">waitOffscreen 050</button>
+<button type="button" onclick="inspectDebt(51)">inspectDebt 051</button>
+<button type="button" onclick="inspectMemory(52)">inspectMemory 052</button>
+<button type="button" onclick="applyConsequence(53)">applyConsequence 053</button>
+<button type="button" onclick="repairTrust(54)">repairTrust 054</button>
+<button type="button" onclick="saveWorld(55)">saveWorld 055</button>
+<button type="button" onclick="restoreWorld(56)">restoreWorld 056</button>
+<button type="button" onclick="scrubReplay(57)">scrubReplay 057</button>
+<button type="button" onclick="toggleAudit(58)">toggleAudit 058</button>
+<button type="button" onclick="exportReplay(59)">exportReplay 059</button>
+<button type="button" onclick="enterWorld(60)">enterWorld 060</button>
+<button type="button" onclick="moveNorth(61)">moveNorth 061</button>
+<button type="button" onclick="moveSouth(62)">moveSouth 062</button>
+<button type="button" onclick="moveEast(63)">moveEast 063</button>
+<button type="button" onclick="moveWest(64)">moveWest 064</button>
+<button type="button" onclick="talkBounded(65)">talkBounded 065</button>
+<button type="button" onclick="askSchedule(66)">askSchedule 066</button>
+<button type="button" onclick="offerHelp(67)">offerHelp 067</button>
+<button type="button" onclick="borrowTool(68)">borrowTool 068</button>
+<button type="button" onclick="returnTool(69)">returnTool 069</button>
+<button type="button" onclick="waitOffscreen(70)">waitOffscreen 070</button>
+<button type="button" onclick="inspectDebt(71)">inspectDebt 071</button>
+<button type="button" onclick="inspectMemory(72)">inspectMemory 072</button>
+<button type="button" onclick="applyConsequence(73)">applyConsequence 073</button>
+<button type="button" onclick="repairTrust(74)">repairTrust 074</button>
+<button type="button" onclick="saveWorld(75)">saveWorld 075</button>
+<button type="button" onclick="restoreWorld(76)">restoreWorld 076</button>
+<button type="button" onclick="scrubReplay(77)">scrubReplay 077</button>
+<button type="button" onclick="toggleAudit(78)">toggleAudit 078</button>
+<button type="button" onclick="exportReplay(79)">exportReplay 079</button>
+<button type="button" onclick="enterWorld(80)">enterWorld 080</button>
+<button type="button" onclick="moveNorth(81)">moveNorth 081</button>
+<button type="button" onclick="moveSouth(82)">moveSouth 082</button>
+<button type="button" onclick="moveEast(83)">moveEast 083</button>
+<button type="button" onclick="moveWest(84)">moveWest 084</button>
+<button type="button" onclick="talkBounded(85)">talkBounded 085</button>
+<button type="button" onclick="askSchedule(86)">askSchedule 086</button>
+<button type="button" onclick="offerHelp(87)">offerHelp 087</button>
+<button type="button" onclick="borrowTool(88)">borrowTool 088</button>
+<button type="button" onclick="returnTool(89)">returnTool 089</button>
+<button type="button" onclick="waitOffscreen(90)">waitOffscreen 090</button>
+<button type="button" onclick="inspectDebt(91)">inspectDebt 091</button>
+<button type="button" onclick="inspectMemory(92)">inspectMemory 092</button>
+<button type="button" onclick="applyConsequence(93)">applyConsequence 093</button>
+<button type="button" onclick="repairTrust(94)">repairTrust 094</button>
+<button type="button" onclick="saveWorld(95)">saveWorld 095</button>
+<button type="button" onclick="restoreWorld(96)">restoreWorld 096</button>
+<button type="button" onclick="scrubReplay(97)">scrubReplay 097</button>
+<button type="button" onclick="toggleAudit(98)">toggleAudit 098</button>
+<button type="button" onclick="exportReplay(99)">exportReplay 099</button>
+<button type="button" onclick="enterWorld(100)">enterWorld 100</button>
+<button type="button" onclick="moveNorth(101)">moveNorth 101</button>
+<button type="button" onclick="moveSouth(102)">moveSouth 102</button>
+<button type="button" onclick="moveEast(103)">moveEast 103</button>
+<button type="button" onclick="moveWest(104)">moveWest 104</button>
+<button type="button" onclick="talkBounded(105)">talkBounded 105</button>
+<button type="button" onclick="askSchedule(106)">askSchedule 106</button>
+<button type="button" onclick="offerHelp(107)">offerHelp 107</button>
+<button type="button" onclick="borrowTool(108)">borrowTool 108</button>
+<button type="button" onclick="returnTool(109)">returnTool 109</button>
+<button type="button" onclick="waitOffscreen(110)">waitOffscreen 110</button>
+<button type="button" onclick="inspectDebt(111)">inspectDebt 111</button>
+<button type="button" onclick="inspectMemory(112)">inspectMemory 112</button>
+<button type="button" onclick="applyConsequence(113)">applyConsequence 113</button>
+<button type="button" onclick="repairTrust(114)">repairTrust 114</button>
+<button type="button" onclick="saveWorld(115)">saveWorld 115</button>
+<button type="button" onclick="restoreWorld(116)">restoreWorld 116</button>
+<button type="button" onclick="scrubReplay(117)">scrubReplay 117</button>
+<button type="button" onclick="toggleAudit(118)">toggleAudit 118</button>
+<button type="button" onclick="exportReplay(119)">exportReplay 119</button>
+<button type="button" onclick="enterWorld(120)">enterWorld 120</button>
+<button type="button" onclick="moveNorth(121)">moveNorth 121</button>
+<button type="button" onclick="moveSouth(122)">moveSouth 122</button>
+<button type="button" onclick="moveEast(123)">moveEast 123</button>
+<button type="button" onclick="moveWest(124)">moveWest 124</button>
+<button type="button" onclick="talkBounded(125)">talkBounded 125</button>
+<button type="button" onclick="askSchedule(126)">askSchedule 126</button>
+<button type="button" onclick="offerHelp(127)">offerHelp 127</button>
+<button type="button" onclick="borrowTool(128)">borrowTool 128</button>
+<button type="button" onclick="returnTool(129)">returnTool 129</button>
+<button type="button" onclick="waitOffscreen(130)">waitOffscreen 130</button>
+<button type="button" onclick="inspectDebt(131)">inspectDebt 131</button>
+<button type="button" onclick="inspectMemory(132)">inspectMemory 132</button>
+<button type="button" onclick="applyConsequence(133)">applyConsequence 133</button>
+<button type="button" onclick="repairTrust(134)">repairTrust 134</button>
+<button type="button" onclick="saveWorld(135)">saveWorld 135</button>
+<button type="button" onclick="restoreWorld(136)">restoreWorld 136</button>
+<button type="button" onclick="scrubReplay(137)">scrubReplay 137</button>
+<button type="button" onclick="toggleAudit(138)">toggleAudit 138</button>
+<button type="button" onclick="exportReplay(139)">exportReplay 139</button>
+<button type="button" onclick="enterWorld(140)">enterWorld 140</button>
+<button type="button" onclick="moveNorth(141)">moveNorth 141</button>
+<button type="button" onclick="moveSouth(142)">moveSouth 142</button>
+<button type="button" onclick="moveEast(143)">moveEast 143</button>
+<button type="button" onclick="moveWest(144)">moveWest 144</button>
+<button type="button" onclick="talkBounded(145)">talkBounded 145</button>
+<button type="button" onclick="askSchedule(146)">askSchedule 146</button>
+<button type="button" onclick="offerHelp(147)">offerHelp 147</button>
+<button type="button" onclick="borrowTool(148)">borrowTool 148</button>
+<button type="button" onclick="returnTool(149)">returnTool 149</button>
+<button type="button" onclick="waitOffscreen(150)">waitOffscreen 150</button>
+<button type="button" onclick="inspectDebt(151)">inspectDebt 151</button>
+<button type="button" onclick="inspectMemory(152)">inspectMemory 152</button>
+<button type="button" onclick="applyConsequence(153)">applyConsequence 153</button>
+<button type="button" onclick="repairTrust(154)">repairTrust 154</button>
+<button type="button" onclick="saveWorld(155)">saveWorld 155</button>
+<button type="button" onclick="restoreWorld(156)">restoreWorld 156</button>
+<button type="button" onclick="scrubReplay(157)">scrubReplay 157</button>
+<button type="button" onclick="toggleAudit(158)">toggleAudit 158</button>
+<button type="button" onclick="exportReplay(159)">exportReplay 159</button>
+<button type="button" onclick="enterWorld(160)">enterWorld 160</button>
+<button type="button" onclick="moveNorth(161)">moveNorth 161</button>
+<button type="button" onclick="moveSouth(162)">moveSouth 162</button>
+<button type="button" onclick="moveEast(163)">moveEast 163</button>
+<button type="button" onclick="moveWest(164)">moveWest 164</button>
+<button type="button" onclick="talkBounded(165)">talkBounded 165</button>
+<button type="button" onclick="askSchedule(166)">askSchedule 166</button>
+<button type="button" onclick="offerHelp(167)">offerHelp 167</button>
+<button type="button" onclick="borrowTool(168)">borrowTool 168</button>
+<button type="button" onclick="returnTool(169)">returnTool 169</button>
+<button type="button" onclick="waitOffscreen(170)">waitOffscreen 170</button>
+<button type="button" onclick="inspectDebt(171)">inspectDebt 171</button>
+<button type="button" onclick="inspectMemory(172)">inspectMemory 172</button>
+<button type="button" onclick="applyConsequence(173)">applyConsequence 173</button>
+<button type="button" onclick="repairTrust(174)">repairTrust 174</button>
+<button type="button" onclick="saveWorld(175)">saveWorld 175</button>
+<button type="button" onclick="restoreWorld(176)">restoreWorld 176</button>
+<button type="button" onclick="scrubReplay(177)">scrubReplay 177</button>
+<button type="button" onclick="toggleAudit(178)">toggleAudit 178</button>
+<button type="button" onclick="exportReplay(179)">exportReplay 179</button></div>
+      <h2>Sample integrated frame</h2>
+      <pre>{
+  "bounded_conversation": {
+    "day": 17,
+    "debt_reference": "route warning",
+    "memory_reference": "v60:tovan:route_warning:d017:s12",
+    "no_autonomous_language_claim": true,
+    "no_llm_call": true,
+    "phrase_key": "offer_help",
+    "private_workspace_hidden": true,
+    "reply_text": "Tovan explains debt; phrase=offer_help; no generated open chat.",
+    "resident": "Tovan",
+    "resident_reply_key": "explains_debt",
+    "schedule_reference": "dry cloaks",
+    "tick": 300
+  },
+  "offscreen_return": {
+    "absent_ticks": 27,
+    "changed_without_avatar": true,
+    "day": 17,
+    "offscreen_task": "dry cloaks",
+    "progress_after": 0.456728,
+    "progress_before": 0.448728,
+    "resident": "Tovan",
+    "resource_delta": 0,
+    "tick": 300,
+    "visible_on_return": true
+  },
+  "playable_arrival_movement": {
+    "avatar_room": "river gate",
+    "avatar_x": 105,
+    "avatar_y": 456,
+    "collision_or_boundary": "soft room boundary",
+    "day": 17,
+    "entered_world": true,
+    "movement_command": "wait",
+    "nearby_resident": "Tovan",
+    "playable_input_bound": true,
+    "tick": 300,
+    "visible_scene_changed": true
+  },
+  "save_restore_audit_replay": {
+    "audit_scrub_ready": true,
+    "day": 17,
+    "localstorage_backed": true,
+    "replay_rows": 220,
+    "restored_debt_name": "route warning",
+    "restored_memory_key": "v60:tovan:route_warning:d017:s12",
+    "restored_ok": true,
+    "restored_resident": "Tovan",
+    "restored_room": "river gate",
+    "snapshot_key": "ssrm:v60:snapshot:d017:t00300",
+    "tick": 300
+  },
+  "schedule_debt_memory": {
+    "day": 17,
+    "debt_after": 0.079866,
+    "debt_before": 0.081866,
+    "history_not_erased": true,
+    "memory_note": "talk linked to v60:tovan:route_warning:d017:s12; prehistory remains locked",
+    "non_magical_trust_repair": true,
+    "resident": "Tovan",
+    "schedule_after": "dry cloaks",
+    "schedule_before": "carry water",
+    "tick": 300,
+    "trust_after": 0.352576,
+    "trust_before": 0.334576
+  },
+  "usable_interface": {
+    "active_panel": "consequence",
+    "control_group": "offscreen",
+    "day": 17,
+    "debug_toggle_available": true,
+    "keyboard_hint": "Tab",
+    "mobile_layout_supported": true,
+    "no_private_workspace_leak": true,
+    "replay_export_available": true,
+    "tick": 300,
+    "visible_feedback_panel": true
+  },
+  "vertical_slice_session": {
+    "all_core_loops_present": true,
+    "audit_key": "audit:v60:tick:00300:resident:tovan",
+    "avatar_room": "river gate",
+    "boundary_visible": true,
+    "day": 17,
+    "debt_name": "route warning",
+    "memory_key": "v60:tovan:route_warning:d017:s12",
+    "phase": "consequence",
+    "save_restore_key": "ssrm:v60:snapshot:d017:t00300",
+    "schedule_state": "dry cloaks",
+    "selected_resident": "Tovan",
+    "slot": 12,
+    "tick": 300,
+    "user_action": "talk",
+    "visible_consequence": "state observed without history rewrite"
+  },
+  "visible_consequence": {
+    "affected_resident": "Tovan",
+    "affected_resource": "water",
+    "audit_link": "audit:v60:tick:00300:resident:tovan",
+    "cause_action": "talk",
+    "consequence_visible_in_ui": true,
+    "day": 17,
+    "delayed_feedback": "visible after return and in audit replay",
+    "immediate_feedback": "state observed without history rewrite",
+    "recoverable": true,
+    "recovery_action": "wait",
+    "tick": 300
+  }
+}</pre>
+    </aside>
+  </div>
+</main>
+<script>
+const SAMPLE = {"bounded_conversation": {"day": 17, "debt_reference": "route warning", "memory_reference": "v60:tovan:route_warning:d017:s12", "no_autonomous_language_claim": true, "no_llm_call": true, "phrase_key": "offer_help", "private_workspace_hidden": true, "reply_text": "Tovan explains debt; phrase=offer_help; no generated open chat.", "resident": "Tovan", "resident_reply_key": "explains_debt", "schedule_reference": "dry cloaks", "tick": 300}, "offscreen_return": {"absent_ticks": 27, "changed_without_avatar": true, "day": 17, "offscreen_task": "dry cloaks", "progress_after": 0.456728, "progress_before": 0.448728, "resident": "Tovan", "resource_delta": 0, "tick": 300, "visible_on_return": true}, "playable_arrival_movement": {"avatar_room": "river gate", "avatar_x": 105, "avatar_y": 456, "collision_or_boundary": "soft room boundary", "day": 17, "entered_world": true, "movement_command": "wait", "nearby_resident": "Tovan", "playable_input_bound": true, "tick": 300, "visible_scene_changed": true}, "save_restore_audit_replay": {"audit_scrub_ready": true, "day": 17, "localstorage_backed": true, "replay_rows": 220, "restored_debt_name": "route warning", "restored_memory_key": "v60:tovan:route_warning:d017:s12", "restored_ok": true, "restored_resident": "Tovan", "restored_room": "river gate", "snapshot_key": "ssrm:v60:snapshot:d017:t00300", "tick": 300}, "schedule_debt_memory": {"day": 17, "debt_after": 0.079866, "debt_before": 0.081866, "history_not_erased": true, "memory_note": "talk linked to v60:tovan:route_warning:d017:s12; prehistory remains locked", "non_magical_trust_repair": true, "resident": "Tovan", "schedule_after": "dry cloaks", "schedule_before": "carry water", "tick": 300, "trust_after": 0.352576, "trust_before": 0.334576}, "usable_interface": {"active_panel": "consequence", "control_group": "offscreen", "day": 17, "debug_toggle_available": true, "keyboard_hint": "Tab", "mobile_layout_supported": true, "no_private_workspace_leak": true, "replay_export_available": true, "tick": 300, "visible_feedback_panel": true}, "vertical_slice_session": {"all_core_loops_present": true, "audit_key": "audit:v60:tick:00300:resident:tovan", "avatar_room": "river gate", "boundary_visible": true, "day": 17, "debt_name": "route warning", "memory_key": "v60:tovan:route_warning:d017:s12", "phase": "consequence", "save_restore_key": "ssrm:v60:snapshot:d017:t00300", "schedule_state": "dry cloaks", "selected_resident": "Tovan", "slot": 12, "tick": 300, "user_action": "talk", "visible_consequence": "state observed without history rewrite"}, "visible_consequence": {"affected_resident": "Tovan", "affected_resource": "water", "audit_link": "audit:v60:tick:00300:resident:tovan", "cause_action": "talk", "consequence_visible_in_ui": true, "day": 17, "delayed_feedback": "visible after return and in audit replay", "immediate_feedback": "state observed without history rewrite", "recoverable": true, "recovery_action": "wait", "tick": 300}};
+const COUNTS = {"bounded_conversation_frames": 5400, "browser_buttons": 180, "browser_ticks": 5400, "core_loop_count": 8, "live_days": 300, "offscreen_return_frames": 5400, "playable_arrival_movement_frames": 5400, "resident_count": 6, "save_restore_audit_replay_frames": 5400, "schedule_debt_memory_frames": 5400, "ticks_per_day": 18, "usable_interface_frames": 5400, "vertical_slice_session_frames": 5400, "visible_consequence_frames": 5400};
+const BOUNDARY = "Deterministic browser-local consolidated playable vertical-slice prototype only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, production persistence, finished gameplay, complete 3D engine, or metaphysical frequency claim.";
+const stateKey = 'ssrm_v60_vertical_slice_world';
+const replayKey = 'ssrm_v60_vertical_slice_replay';
+let world = JSON.parse(localStorage.getItem(stateKey) || JSON.stringify({
+  entered: false,
+  tick: 0,
+  avatar: { room: 'arrival court', x: 180, y: 260 },
+  selected: 'Ari',
+  audit: false,
+  residents: {
+    Ari: { trust: 0.58, debt: 1, schedule: 'repair awning', memory: 'met avatar at arrival court', progress: 0.36 },
+    Fay: { trust: 0.63, debt: 0, schedule: 'sort herbs', memory: 'warned about wet route', progress: 0.50 },
+    Milo: { trust: 0.48, debt: 2, schedule: 'carry water', memory: 'tool loan pending', progress: 0.24 },
+    Sera: { trust: 0.54, debt: 1, schedule: 'dry cloaks', memory: 'asked for quiet', progress: 0.42 }
+  },
+  resources: { water: 12, fiber: 10, wood: 17, care: 6 },
+  replay: []
+}));
+const canvas = document.getElementById('world');
+const ctx = canvas.getContext('2d');
+const trace = document.getElementById('trace');
+function clamp(v) { return Math.max(0, Math.min(1, v)); }
+function currentResident() { return world.residents[world.selected]; }
+function log(event, payload) {
+  const row = { event, tick: world.tick++, selected: world.selected, room: world.avatar.room, payload };
+  world.replay.push(row);
+  if (world.replay.length > 220) world.replay.shift();
+  localStorage.setItem(stateKey, JSON.stringify(world));
+  localStorage.setItem(replayKey, JSON.stringify(world.replay));
+  render();
+}
+function mutate(name, delta) {
+  const r = world.residents[name] || currentResident();
+  r.trust = clamp(r.trust + (delta.trust || 0));
+  r.debt = Math.max(0, r.debt + (delta.debt || 0));
+  r.progress = clamp(r.progress + (delta.progress || 0));
+  if (delta.schedule) r.schedule = delta.schedule;
+  if (delta.memory) r.memory = delta.memory;
+}
+function enterWorld(i) { world.entered = true; world.avatar.room = 'arrival court'; log('enterWorld', { boundary: BOUNDARY }); }
+function moveNorth(i) { world.avatar.y = Math.max(52, world.avatar.y - 32); log('moveNorth', { y: world.avatar.y }); }
+function moveSouth(i) { world.avatar.y = Math.min(560, world.avatar.y + 32); log('moveSouth', { y: world.avatar.y }); }
+function moveEast(i) { world.avatar.x = Math.min(970, world.avatar.x + 32); world.avatar.room = ['arrival court','tool alcove','rain court','fiber loft'][Math.floor(world.avatar.x / 250) % 4]; log('moveEast', { x: world.avatar.x, room: world.avatar.room }); }
+function moveWest(i) { world.avatar.x = Math.max(52, world.avatar.x - 32); world.avatar.room = ['arrival court','tool alcove','rain court','fiber loft'][Math.floor(world.avatar.x / 250) % 4]; log('moveWest', { x: world.avatar.x, room: world.avatar.room }); }
+function talkBounded(i) { const phrase = document.getElementById('phrase').value; mutate(world.selected, { trust: 0.012, memory: 'heard bounded phrase ' + phrase }); log('talkBounded', { phrase, noLLM: true }); }
+function askSchedule(i) { log('askSchedule', { schedule: currentResident().schedule, reply: 'bounded schedule line' }); }
+function offerHelp(i) { mutate(world.selected, { trust: 0.024, debt: -1, progress: 0.035, memory: 'avatar helped with ' + currentResident().schedule }); world.resources.care = Math.max(0, world.resources.care - 1); log('offerHelp', { care: world.resources.care }); }
+function borrowTool(i) { mutate(world.selected, { trust: -0.018, debt: 1, memory: 'avatar borrowed tool' }); log('borrowTool', { consequence: 'debt increases' }); }
+function returnTool(i) { mutate(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); log('returnTool', { consequence: 'trust repair partial' }); }
+function waitOffscreen(i) { Object.keys(world.residents).forEach((name, n) => mutate(name, { progress: 0.018 + n*0.003, trust: n % 2 ? 0.002 : -0.001 })); log('waitOffscreen', { offscreenLife: true }); }
+function inspectDebt(i) { log('inspectDebt', { debt: currentResident().debt }); }
+function inspectMemory(i) { log('inspectMemory', { memory: currentResident().memory, privateWorkspaceHidden: true }); }
+function applyConsequence(i) { mutate(world.selected, { trust: i % 2 ? 0.011 : -0.012, progress: i % 2 ? 0.018 : -0.006 }); log('applyConsequence', { visible: true }); }
+function repairTrust(i) { mutate(world.selected, { trust: 0.018, debt: -1, memory: 'trust repaired non-magically' }); log('repairTrust', { nonMagical: true }); }
+function saveWorld(i) { localStorage.setItem(stateKey, JSON.stringify(world)); log('saveWorld', { saved: true }); }
+function restoreWorld(i) { world = JSON.parse(localStorage.getItem(stateKey) || JSON.stringify(world)); log('restoreWorld', { restored: true }); }
+function scrubReplay(i) { const idx = Math.max(0, Math.min(world.replay.length - 1, i % Math.max(1, world.replay.length))); log('scrubReplay', { index: idx, row: world.replay[idx] || null }); }
+function toggleAudit(i) { world.audit = !world.audit; log('toggleAudit', { audit: world.audit }); }
+function exportReplay(i) { const blob = new Blob([JSON.stringify(world.replay, null, 2)], {type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='report_300_v60_vertical_slice_replay.json'; a.click(); log('exportReplay', { rows: world.replay.length }); }
+function render() {
+  const r = currentResident();
+  document.getElementById('room').textContent = world.avatar.room + (world.entered ? ' / entered' : ' / not entered');
+  document.getElementById('resident').textContent = world.selected + ' trust ' + r.trust.toFixed(3);
+  document.getElementById('schedule').textContent = r.schedule + ' / progress ' + r.progress.toFixed(3);
+  document.getElementById('memory').textContent = 'debt ' + r.debt + ' / ' + r.memory;
+  trace.textContent = JSON.stringify({ world, latest: world.replay[world.replay.length - 1] || null, sample: SAMPLE.vertical_slice_session }, null, 2);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  grad.addColorStop(0, '#12231d'); grad.addColorStop(1, '#5b4428');
+  ctx.fillStyle = grad; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = 'rgba(249,235,201,0.14)';
+  for (let x=70; x<canvas.width; x+=120) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,canvas.height); ctx.stroke(); }
+  for (let y=70; y<canvas.height; y+=100) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(canvas.width,y); ctx.stroke(); }
+  ctx.fillStyle = '#d69b32'; ctx.beginPath(); ctx.arc(world.avatar.x, world.avatar.y, 24, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle = '#121816'; ctx.fillText('You', world.avatar.x - 11, world.avatar.y + 4);
+  Object.entries(world.residents).forEach(([name, rr], idx) => {
+    const x = 160 + idx * 205;
+    const y = 170 + ((world.tick * (idx + 2) + idx * 89) % 330);
+    ctx.fillStyle = name === world.selected ? '#f0c35b' : '#aad0c3';
+    ctx.beginPath(); ctx.arc(x, y, 23 + rr.trust * 7, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#121816'; ctx.fillText(name, x - 12, y + 4);
+    ctx.fillStyle = '#f9ebc9'; ctx.fillText(rr.schedule, x - 42, y + 42);
+  });
+  if (world.audit) {
+    ctx.fillStyle = 'rgba(18,24,22,0.78)'; ctx.fillRect(34, 430, 450, 140);
+    ctx.fillStyle = '#f9ebc9'; ctx.fillText('AUDIT: replay rows ' + world.replay.length + ' / private workspace hidden / localStorage backed', 54, 462);
+    ctx.fillText('Latest key: ' + ((world.replay[world.replay.length - 1] || {}).event || 'none'), 54, 494);
+  }
+  ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary: deterministic prototype only; no consciousness, LLM, or finished-product claim.', 32, canvas.height - 24);
+}
+canvas.addEventListener('click', ev => { const rect = canvas.getBoundingClientRect(); world.avatar.x = Math.round((ev.clientX - rect.left) * canvas.width / rect.width); world.avatar.y = Math.round((ev.clientY - rect.top) * canvas.height / rect.height); log('canvasMove', { x: world.avatar.x, y: world.avatar.y }); });
+render();
+</script>
+</body>
+</html>

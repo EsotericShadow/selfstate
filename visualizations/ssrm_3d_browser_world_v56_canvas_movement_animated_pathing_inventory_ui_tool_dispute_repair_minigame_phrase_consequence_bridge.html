@@ -1,0 +1,395 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SSRM-3D Browser World v56 Canvas Movement Bridge</title>
+<style>
+:root { --ink:#10110e; --ember:#c56f48; --moss:#9cc78b; --water:#6da9c4; --paper:#f8efdf; --line:rgba(248,239,223,.25); }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--paper); background: radial-gradient(circle at 15% 15%, rgba(197,111,72,.34), transparent 27%), radial-gradient(circle at 86% 16%, rgba(109,169,196,.25), transparent 30%), linear-gradient(135deg, #10110e, #243620 48%, #2e2639); }
+main { display:grid; grid-template-columns: minmax(320px, 1.1fr) minmax(300px, .9fr); gap:16px; padding:20px; }
+section { border:1px solid var(--line); border-radius:22px; padding:16px; background:rgba(16,17,14,.78); box-shadow:0 22px 60px rgba(0,0,0,.38); }
+button { margin:4px; border:1px solid var(--line); border-radius:999px; background:rgba(197,111,72,.18); color:var(--paper); padding:8px 11px; }
+canvas { width:100%; max-width:640px; height:360px; border-radius:20px; background:linear-gradient(135deg, rgba(156,199,139,.18), rgba(109,169,196,.16)); border:1px solid var(--line); }
+pre { min-height:72px; padding:12px; border-radius:16px; background:rgba(0,0,0,.24); white-space:pre-wrap; }
+.flower { width:150px; height:150px; border-radius:50%; background: repeating-radial-gradient(circle, rgba(248,239,223,.32) 0 7px, transparent 8px 15px), conic-gradient(from 90deg, rgba(156,199,139,.45), rgba(109,169,196,.42), rgba(197,111,72,.42), rgba(156,199,139,.45)); }
+.notice { grid-column:1/-1; color:#f9d8bd; }
+</style>
+</head>
+<body>
+<main>
+<section id="canvas-movement-panel"><h2>Pointer/click canvas movement</h2><canvas id="world-canvas" width="640" height="360"></canvas><pre id="canvas-log"></pre></section>
+<section id="animated-pathing-panel"><h2>Animated resident pathing</h2><p>Resident sprites move through path frames with sensory overlays.</p><pre id="path-log"></pre></section>
+<section id="inventory-ui-panel"><h2>Inventory UI mutation</h2><p>Resource widgets mutate in localStorage and render visible deltas.</p><pre id="inventory-log"></pre></section>
+<section id="tool-dispute-panel"><h2>Tool ownership disputes</h2><p>Tools can be claimed, refused, deferred, or handed off without avatar override.</p><pre id="tool-log"></pre></section>
+<section id="repair-minigame-panel"><h2>Multi-step repair minigame</h2><p>Repair steps require align, press, bind, and inspect controls with recoverable failure.</p></section>
+<section id="phrase-consequence-panel"><h2>Saved-session phrase consequences</h2><p>Bounded phrasebook choices alter visible trust/proximity consequences across sessions.</p></section>
+<section id="reload-panel"><h2>Save, restore, replay</h2><p>Canvas, inventory, disputes, minigame, phrase consequences, and replay export are browser-local.</p></section>
+<section id="frequency-flower-panel"><h2>Frequency / flower timing</h2><div class="flower"></div><p>flower phase and canvas frequency are deterministic timing/rate metadata, not a metaphysical frequency claim.</p></section>
+<section class="notice"><strong>Boundary:</strong> no subjective consciousness claim, no real consent claim, no autonomous natural language claim, no moral patienthood claim, no complete 3D engine, no LLM call.</section>
+<section class="notice" id="controls"><h2>Controls</h2>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">canvas click movement</button>
+<button data-action="moveAvatarSprite" onclick="moveAvatarSprite('canvas')">move avatar sprite</button>
+<button data-action="animateResidentPath" onclick="animateResidentPath('path')">animate resident path</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">show sensory overlay</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">mutate inventory UI</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">render resource widgets</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">resolve tool dispute</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">show tool boundary</button>
+<button data-action="deferToolHandoff" onclick="deferToolHandoff('tool')">defer tool handoff</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">advance repair minigame</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">show repair step</button>
+<button data-action="recoverMinigameFailure" onclick="recoverMinigameFailure('repair')">recover minigame failure</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply phrase consequence</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">show phrase consequence</button>
+<button data-action="showNoLanguageClaim" onclick="showNoLanguageClaim('phrase')">show no language claim</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">restore canvas session</button>
+<button data-action="saveWorldState" onclick="saveWorldState('reload')">save world state</button>
+<button data-action="restoreWorldState" onclick="restoreWorldState('reload')">restore world state</button>
+<button data-action="exportReplay" onclick="exportReplay('reload')">export replay</button>
+<button data-action="showFlowerPhase" onclick="showFlowerPhase('frequency')">show flower phase</button>
+<button data-action="showCanvasFrequency" onclick="showCanvasFrequency('frequency')">show canvas frequency</button>
+<button data-action="showRateBoundary" onclick="showRateBoundary('frequency')">show rate boundary</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click moss_ward</button>
+<button data-action="animateResidentPath" onclick="animateResidentPath('path')">animate Ari</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">inventory reed bundle</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">tool reed knife</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair drain rain path</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">phrase path dry</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">restore moss_ward</button>
+<button data-action="showCanvasFrequency" onclick="showCanvasFrequency('frequency')">frequency moss_ward</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click rain_gate</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay rain_gate</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click blanket_room</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay blanket_room</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click root_alcove</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay root_alcove</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume reed bundle</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget reed bundle</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume dry clay</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget dry clay</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume moss cord</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget moss cord</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume charcoal mark</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget charcoal mark</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute reed knife</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary reed knife</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute loom hook</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary loom hook</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute ledger awl</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary ledger awl</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame drain rain path</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step drain rain path</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame patch blanket loom</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step patch blanket loom</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame copy root ledger</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step copy root ledger</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame raise warm-cup shelf</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step raise warm-cup shelf</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply path dry</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence path dry</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply loom wait</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence loom wait</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply ledger no touch</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence ledger no touch</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click glass_harbor</button>
+<button data-action="animateResidentPath" onclick="animateResidentPath('path')">animate Nia</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">inventory lamp oil</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">tool wick clamp</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair relight public lamp</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">phrase lamp bright</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">restore glass_harbor</button>
+<button data-action="showCanvasFrequency" onclick="showCanvasFrequency('frequency')">frequency glass_harbor</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click lamp_pier</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay lamp_pier</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click net_room</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay net_room</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click fog_rail</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay fog_rail</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume lamp oil</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget lamp oil</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume glass bead</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget glass bead</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume net fiber</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget net fiber</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume salt chalk</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget salt chalk</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute wick clamp</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary wick clamp</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute net shuttle</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary net shuttle</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute rope gauge</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary rope gauge</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame relight public lamp</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step relight public lamp</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame mend fog net</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step mend fog net</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame seal fog catcher</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step seal fog catcher</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame mark crossing rope</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step mark crossing rope</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply lamp bright</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence lamp bright</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply net keeper</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence net keeper</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply tea first</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence tea first</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click cinder_garden</button>
+<button data-action="animateResidentPath" onclick="animateResidentPath('path')">animate Juno</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">inventory shade reed</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">tool shade mallet</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair shade seed rows</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">phrase seed sleep</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">restore cinder_garden</button>
+<button data-action="showCanvasFrequency" onclick="showCanvasFrequency('frequency')">frequency cinder_garden</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click seed_shelf</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay seed_shelf</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click ash_path</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay ash_path</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click shade_tent</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay shade_tent</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume shade reed</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget shade reed</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume ember basket</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget ember basket</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume cool stone</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget cool stone</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume seed ink</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget seed ink</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute shade mallet</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary shade mallet</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute basket hook</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary basket hook</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute calendar stylus</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary calendar stylus</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame shade seed rows</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step shade seed rows</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame sort ember fruit</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step sort ember fruit</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame cool ash path</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step cool ash path</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame repair seed calendar</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step repair seed calendar</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply seed sleep</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence seed sleep</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply shade first</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence shade first</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply cool hand</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence cool hand</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click lichen_bridge</button>
+<button data-action="animateResidentPath" onclick="animateResidentPath('path')">animate Kio</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">inventory rope fiber</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">tool tension peg</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair test rope bridge</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">phrase rope safe</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">restore lichen_bridge</button>
+<button data-action="showCanvasFrequency" onclick="showCanvasFrequency('frequency')">frequency lichen_bridge</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click rope_bridge</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay rope_bridge</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click signal_post</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay signal_post</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click meal_room</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay meal_room</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume rope fiber</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget rope fiber</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume bell tin</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget bell tin</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume meal token</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget meal token</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume lichen glue</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget lichen glue</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute tension peg</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary tension peg</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute bell file</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary bell file</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute ledger punch</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary ledger punch</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame test rope bridge</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step test rope bridge</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame weave spare rope</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step weave spare rope</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame mark signal bell</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step mark signal bell</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame repair meal ledger</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step repair meal ledger</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply rope safe</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence rope safe</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply signal hush</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence signal hush</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply bowl shared</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence bowl shared</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click orchid_engine</button>
+<button data-action="animateResidentPath" onclick="animateResidentPath('path')">animate Bea</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">inventory valve grease</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">tool valve key</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair listen to valve pulse</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">phrase valve wait</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">restore orchid_engine</button>
+<button data-action="showCanvasFrequency" onclick="showCanvasFrequency('frequency')">frequency orchid_engine</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click engine_ring</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay engine_ring</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click gear_wash</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay gear_wash</button>
+<button data-action="handleCanvasClick" onclick="handleCanvasClick('canvas')">click orchid_bay</button>
+<button data-action="showSensoryOverlay" onclick="showSensoryOverlay('path')">overlay orchid_bay</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume valve grease</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget valve grease</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume gear cloth</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget gear cloth</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume orchid oil</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget orchid oil</button>
+<button data-action="mutateInventoryUI" onclick="mutateInventoryUI('inventory')">consume steam seal</button>
+<button data-action="renderResourceWidgets" onclick="renderResourceWidgets('inventory')">widget steam seal</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute valve key</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary valve key</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute gear brush</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary gear brush</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute lamp tongs</button>
+<button data-action="showToolBoundary" onclick="showToolBoundary('tool')">boundary lamp tongs</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame listen to valve pulse</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step listen to valve pulse</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame clean gear wash</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step clean gear wash</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame tend orchid lamp</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step tend orchid lamp</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">minigame stabilize steam kettle</button>
+<button data-action="showRepairStep" onclick="showRepairStep('repair')">step stabilize steam kettle</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply valve wait</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence valve wait</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply gear lane</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence gear lane</button>
+<button data-action="applyPhraseConsequence" onclick="applyPhraseConsequence('phrase')">apply orchid rest</button>
+<button data-action="showPhraseConsequence" onclick="showPhraseConsequence('phrase')">consequence orchid rest</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair align</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute align</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair press</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute press</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair bind</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute bind</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair inspect</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute inspect</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair ask first</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute ask first</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair wait turn</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute wait turn</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair use spare</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute use spare</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair defer task</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute defer task</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair resident leads</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute resident leads</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair pointer</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute pointer</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair animation</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute animation</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair inventory</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute inventory</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair ownership</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute ownership</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair failure</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute failure</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair phrase</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute phrase</button>
+<button data-action="advanceRepairMinigame" onclick="advanceRepairMinigame('repair')">repair session</button>
+<button data-action="resolveToolDispute" onclick="resolveToolDispute('tool')">dispute session</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload canvas</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload animation</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload inventory</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload dispute</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload minigame</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload phrase</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload history</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload no LLM</button>
+<button data-action="restoreCanvasSession" onclick="restoreCanvasSession('reload')">reload private boundary</button>
+</section>
+</main>
+<script>
+const stateKey = 'ssrm.v56.canvas.world';
+const canvas = document.getElementById('world-canvas');
+const ctx = canvas.getContext('2d');
+function readState() {
+  return JSON.parse(localStorage.getItem(stateKey) || '{"events":[],"avatar":{"x":40,"y":40},"residents":{},"inventory":{},"tools":{},"repair":{},"phrases":{}}');
+}
+function writeState(state) {
+  localStorage.setItem(stateKey, JSON.stringify(state));
+  return state;
+}
+function pushTrace(action, scope) {
+  const state = readState();
+  state.events.push({ action, scope, t: state.events.length, note: 'browser-local deterministic canvas trace; no LLM call' });
+  return writeState(state);
+}
+function drawWorld(state) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'rgba(156,199,139,.20)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = '#f8efdf'; ctx.beginPath(); ctx.arc(state.avatar.x, state.avatar.y, 9, 0, Math.PI * 2); ctx.fill();
+  Object.values(state.residents).forEach((r) => { ctx.fillStyle = '#c56f48'; ctx.fillRect(r.x - 6, r.y - 10, 12, 20); });
+  return state;
+}
+function renderLogs(state) {
+  drawWorld(state);
+  const canvasLog = document.getElementById('canvas-log');
+  const pathLog = document.getElementById('path-log');
+  const inventoryLog = document.getElementById('inventory-log');
+  const toolLog = document.getElementById('tool-log');
+  if (canvasLog) canvasLog.textContent = JSON.stringify(state.events.slice(-5), null, 2);
+  if (pathLog) pathLog.textContent = JSON.stringify(state.residents, null, 2);
+  if (inventoryLog) inventoryLog.textContent = JSON.stringify({ inventory: state.inventory, repair: state.repair, phrases: state.phrases }, null, 2);
+  if (toolLog) toolLog.textContent = JSON.stringify(state.tools, null, 2);
+  return state;
+}
+function handleCanvasClick(scope, event) {
+  const state = pushTrace('handleCanvasClick', scope);
+  const rect = canvas.getBoundingClientRect();
+  const x = event ? Math.round((event.clientX - rect.left) * canvas.width / rect.width) : (state.avatar.x + 24) % canvas.width;
+  const y = event ? Math.round((event.clientY - rect.top) * canvas.height / rect.height) : (state.avatar.y + 18) % canvas.height;
+  state.avatar = { x, y, scope };
+  return renderLogs(writeState(state));
+}
+function moveAvatarSprite(scope) { return handleCanvasClick(scope); }
+function animateResidentPath(scope) {
+  const state = pushTrace('animateResidentPath', scope);
+  const prior = state.residents[scope] || { x: 80, y: 80 };
+  state.residents[scope] = { x: (prior.x + 18) % 640, y: (prior.y + 12) % 360, pose: 'walking', sensory: scope };
+  return renderLogs(writeState(state));
+}
+function showSensoryOverlay(scope) { return renderLogs(pushTrace('showSensoryOverlay', scope)); }
+function mutateInventoryUI(scope) {
+  const state = pushTrace('mutateInventoryUI', scope);
+  state.inventory[scope] = Math.max(0, (state.inventory[scope] ?? 9) - 1);
+  return renderLogs(writeState(state));
+}
+function renderResourceWidgets(scope) { return renderLogs(pushTrace('renderResourceWidgets', scope)); }
+function resolveToolDispute(scope) {
+  const state = pushTrace('resolveToolDispute', scope);
+  state.tools[scope] = { boundaryVisible: true, refusalPossible: true, avatarCanOverride: false, resolution: 'ask-first-or-defer' };
+  return renderLogs(writeState(state));
+}
+function showToolBoundary(scope) { return renderLogs(pushTrace('showToolBoundary', scope)); }
+function deferToolHandoff(scope) { return renderLogs(pushTrace('deferToolHandoff', scope)); }
+function advanceRepairMinigame(scope) {
+  const state = pushTrace('advanceRepairMinigame', scope);
+  state.repair[scope] = { step: ((state.repair[scope]?.step || 0) + 1) % 4, recoverable: true };
+  return renderLogs(writeState(state));
+}
+function showRepairStep(scope) { return renderLogs(pushTrace('showRepairStep', scope)); }
+function recoverMinigameFailure(scope) { return renderLogs(pushTrace('recoverMinigameFailure', scope)); }
+function applyPhraseConsequence(scope) {
+  const state = pushTrace('applyPhraseConsequence', scope);
+  state.phrases[scope] = { used: (state.phrases[scope]?.used || 0) + 1, consequenceSaved: true, boundedPhrasebook: true };
+  return renderLogs(writeState(state));
+}
+function showPhraseConsequence(scope) { return renderLogs(pushTrace('showPhraseConsequence', scope)); }
+function showNoLanguageClaim(scope) { return renderLogs(pushTrace('showNoLanguageClaim', scope)); }
+function restoreCanvasSession(scope) { return renderLogs(readState()); }
+function saveWorldState(scope) { return renderLogs(pushTrace('saveWorldState', scope)); }
+function restoreWorldState(scope) { return restoreCanvasSession(scope); }
+function exportReplay(scope) { return JSON.stringify(readState()); }
+function showFlowerPhase(scope) { return renderLogs(pushTrace('showFlowerPhase', scope)); }
+function showCanvasFrequency(scope) { return renderLogs(pushTrace('showCanvasFrequency', scope)); }
+function showRateBoundary(scope) { return renderLogs(pushTrace('showRateBoundary', scope)); }
+canvas.addEventListener('click', (event) => handleCanvasClick('canvas-pointer', event));
+renderLogs(readState());
+</script>
+</body>
+</html>

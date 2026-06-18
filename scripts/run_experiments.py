@@ -2286,6 +2286,36 @@ COMMANDS: List[List[str]] = [
     ],
     [
         sys.executable,
+        "experiments/ssrm_3d_browser_world_v56_canvas_movement_animated_pathing_inventory_ui_tool_dispute_repair_minigame_phrase_consequence_bridge.py",
+        "--seed",
+        "20270407",
+    ],
+    [
+        sys.executable,
+        "experiments/ssrm_3d_browser_world_v57_live_conversation_sensory_overlay_gesture_inventory_minigame_failure_multiagent_consequence_bridge.py",
+        "--seed",
+        "20270421",
+    ],
+    [
+        sys.executable,
+        "experiments/ssrm_3d_browser_world_v58_consolidated_playable_consequence_loop_bridge.py",
+        "--seed",
+        "20270505",
+    ],
+    [
+        sys.executable,
+        "experiments/ssrm_3d_browser_world_v59_debug_replay_audit_layer_bridge.py",
+        "--seed",
+        "20270519",
+    ],
+    [
+        sys.executable,
+        "experiments/ssrm_3d_browser_world_v60_consolidated_playable_vertical_slice_build.py",
+        "--seed",
+        "20270602",
+    ],
+    [
+        sys.executable,
         "experiments/ssrm_3d_learned_multiday_maturation_controller.py",
         "--train-seeds",
         "20260911,20260912,20260913,20260914,20260915,20260916",

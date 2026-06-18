@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Report 297 - Browser World v57 Live Conversation Sensory Overlay Bridge</title>
+<style>
+:root {
+  --ink: #1d211a;
+  --paper: #f3ead6;
+  --moss: #405b3a;
+  --river: #2f6f73;
+  --ember: #b75f35;
+  --field: #d7c58a;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(183,95,53,0.18), transparent 28%),
+    radial-gradient(circle at 80% 8%, rgba(47,111,115,0.22), transparent 30%),
+    linear-gradient(135deg, #f6efd9 0%, #cfd7b6 54%, #9fb7a5 100%);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+h1 { font-size: clamp(2rem, 5vw, 4.6rem); line-height: 0.92; margin: 0 0 12px; }
+.boundary { border-left: 8px solid var(--ember); padding: 12px 16px; background: rgba(255,255,255,0.58); }
+.grid { display: grid; grid-template-columns: minmax(320px, 1fr) 360px; gap: 20px; align-items: start; }
+canvas { width: 100%; min-height: 520px; border: 5px solid var(--ink); background: #18231d; box-shadow: 0 20px 60px rgba(20,30,20,0.35); }
+.panel { background: rgba(255,255,255,0.68); border: 1px solid rgba(29,33,26,0.2); padding: 14px; border-radius: 16px; }
+#controls { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; max-height: 390px; overflow: auto; }
+button { border: 0; border-radius: 999px; padding: 8px 9px; background: var(--moss); color: #fff7df; cursor: pointer; font-size: 12px; }
+button:nth-child(3n) { background: var(--river); }
+button:nth-child(5n) { background: var(--ember); }
+pre { white-space: pre-wrap; max-height: 360px; overflow: auto; background: rgba(29,33,26,0.86); color: #f6efd9; padding: 12px; border-radius: 12px; }
+.status-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
+.status-row span { background: rgba(255,255,255,0.64); border: 1px solid rgba(29,33,26,0.18); padding: 8px 10px; border-radius: 999px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } #controls { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Browser World v57: live phrasebook conversation bound to the canvas body.</h1>
+  <p class="boundary">Deterministic browser-local live-conversation/sensory-overlay/gesture/inventory-widget/minigame-failure/multiagent-consequence scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim.</p>
+  <div class="status-row">
+    <span>live conversation frames: 4320</span>
+    <span>sensory overlays: 4320</span>
+    <span>gesture frames: 4320</span>
+    <span>buttons: 254</span>
+  </div>
+  <div class="grid">
+    <section>
+      <canvas id="world" width="960" height="560" aria-label="deterministic browser world canvas"></canvas>
+      <div class="panel">
+        <label for="utterance">Phrasebook route</label>
+        <select id="utterance">
+          <option value="ask-help">ask help</option>
+          <option value="offer-tool">offer tool</option>
+          <option value="apologize">apologize</option>
+          <option value="ask-sense">ask about smell/sound</option>
+          <option value="request-space">request space</option>
+        </select>
+        <input id="typed" value="bounded local utterance only" />
+        <button type="button" onclick="sendCanvasDialogue(297)">send phrasebook line</button>
+      </div>
+      <pre id="trace"></pre>
+    </section>
+    <aside class="panel">
+      <h2>Controls</h2>
+      <div id="controls"><button type="button" onclick="sendCanvasDialogue(0)">dialogue 000</button>
+<button type="button" onclick="routePhrasebookReply(1)">route 001</button>
+<button type="button" onclick="renderSensoryOverlay(2)">sensory 002</button>
+<button type="button" onclick="showGestureState(3)">gesture 003</button>
+<button type="button" onclick="mutateResourceWidget(4)">inventory 004</button>
+<button type="button" onclick="animateMinigameFailure(5)">failure 005</button>
+<button type="button" onclick="applyMultiAgentConsequence(6)">consequence 006</button>
+<button type="button" onclick="showFlowerPhase(7)">flower 007</button>
+<button type="button" onclick="showSensoryFrequency(8)">frequency 008</button>
+<button type="button" onclick="showNoLanguageClaim(9)">boundary 009</button>
+<button type="button" onclick="sendCanvasDialogue(10)">dialogue 010</button>
+<button type="button" onclick="routePhrasebookReply(11)">route 011</button>
+<button type="button" onclick="renderSensoryOverlay(12)">sensory 012</button>
+<button type="button" onclick="showGestureState(13)">gesture 013</button>
+<button type="button" onclick="mutateResourceWidget(14)">inventory 014</button>
+<button type="button" onclick="animateMinigameFailure(15)">failure 015</button>
+<button type="button" onclick="applyMultiAgentConsequence(16)">consequence 016</button>
+<button type="button" onclick="showFlowerPhase(17)">flower 017</button>
+<button type="button" onclick="showSensoryFrequency(18)">frequency 018</button>
+<button type="button" onclick="showNoLanguageClaim(19)">boundary 019</button>
+<button type="button" onclick="sendCanvasDialogue(20)">dialogue 020</button>
+<button type="button" onclick="routePhrasebookReply(21)">route 021</button>
+<button type="button" onclick="renderSensoryOverlay(22)">sensory 022</button>
+<button type="button" onclick="showGestureState(23)">gesture 023</button>
+<button type="button" onclick="mutateResourceWidget(24)">inventory 024</button>
+<button type="button" onclick="animateMinigameFailure(25)">failure 025</button>
+<button type="button" onclick="applyMultiAgentConsequence(26)">consequence 026</button>
+<button type="button" onclick="showFlowerPhase(27)">flower 027</button>
+<button type="button" onclick="showSensoryFrequency(28)">frequency 028</button>
+<button type="button" onclick="showNoLanguageClaim(29)">boundary 029</button>
+<button type="button" onclick="sendCanvasDialogue(30)">dialogue 030</button>
+<button type="button" onclick="routePhrasebookReply(31)">route 031</button>
+<button type="button" onclick="renderSensoryOverlay(32)">sensory 032</button>
+<button type="button" onclick="showGestureState(33)">gesture 033</button>
+<button type="button" onclick="mutateResourceWidget(34)">inventory 034</button>
+<button type="button" onclick="animateMinigameFailure(35)">failure 035</button>
+<button type="button" onclick="applyMultiAgentConsequence(36)">consequence 036</button>
+<button type="button" onclick="showFlowerPhase(37)">flower 037</button>
+<button type="button" onclick="showSensoryFrequency(38)">frequency 038</button>
+<button type="button" onclick="showNoLanguageClaim(39)">boundary 039</button>
+<button type="button" onclick="sendCanvasDialogue(40)">dialogue 040</button>
+<button type="button" onclick="routePhrasebookReply(41)">route 041</button>
+<button type="button" onclick="renderSensoryOverlay(42)">sensory 042</button>
+<button type="button" onclick="showGestureState(43)">gesture 043</button>
+<button type="button" onclick="mutateResourceWidget(44)">inventory 044</button>
+<button type="button" onclick="animateMinigameFailure(45)">failure 045</button>
+<button type="button" onclick="applyMultiAgentConsequence(46)">consequence 046</button>
+<button type="button" onclick="showFlowerPhase(47)">flower 047</button>
+<button type="button" onclick="showSensoryFrequency(48)">frequency 048</button>
+<button type="button" onclick="showNoLanguageClaim(49)">boundary 049</button>
+<button type="button" onclick="sendCanvasDialogue(50)">dialogue 050</button>
+<button type="button" onclick="routePhrasebookReply(51)">route 051</button>
+<button type="button" onclick="renderSensoryOverlay(52)">sensory 052</button>
+<button type="button" onclick="showGestureState(53)">gesture 053</button>
+<button type="button" onclick="mutateResourceWidget(54)">inventory 054</button>
+<button type="button" onclick="animateMinigameFailure(55)">failure 055</button>
+<button type="button" onclick="applyMultiAgentConsequence(56)">consequence 056</button>
+<button type="button" onclick="showFlowerPhase(57)">flower 057</button>
+<button type="button" onclick="showSensoryFrequency(58)">frequency 058</button>
+<button type="button" onclick="showNoLanguageClaim(59)">boundary 059</button>
+<button type="button" onclick="sendCanvasDialogue(60)">dialogue 060</button>
+<button type="button" onclick="routePhrasebookReply(61)">route 061</button>
+<button type="button" onclick="renderSensoryOverlay(62)">sensory 062</button>
+<button type="button" onclick="showGestureState(63)">gesture 063</button>
+<button type="button" onclick="mutateResourceWidget(64)">inventory 064</button>
+<button type="button" onclick="animateMinigameFailure(65)">failure 065</button>
+<button type="button" onclick="applyMultiAgentConsequence(66)">consequence 066</button>
+<button type="button" onclick="showFlowerPhase(67)">flower 067</button>
+<button type="button" onclick="showSensoryFrequency(68)">frequency 068</button>
+<button type="button" onclick="showNoLanguageClaim(69)">boundary 069</button>
+<button type="button" onclick="sendCanvasDialogue(70)">dialogue 070</button>
+<button type="button" onclick="routePhrasebookReply(71)">route 071</button>
+<button type="button" onclick="renderSensoryOverlay(72)">sensory 072</button>
+<button type="button" onclick="showGestureState(73)">gesture 073</button>
+<button type="button" onclick="mutateResourceWidget(74)">inventory 074</button>
+<button type="button" onclick="animateMinigameFailure(75)">failure 075</button>
+<button type="button" onclick="applyMultiAgentConsequence(76)">consequence 076</button>
+<button type="button" onclick="showFlowerPhase(77)">flower 077</button>
+<button type="button" onclick="showSensoryFrequency(78)">frequency 078</button>
+<button type="button" onclick="showNoLanguageClaim(79)">boundary 079</button>
+<button type="button" onclick="sendCanvasDialogue(80)">dialogue 080</button>
+<button type="button" onclick="routePhrasebookReply(81)">route 081</button>
+<button type="button" onclick="renderSensoryOverlay(82)">sensory 082</button>
+<button type="button" onclick="showGestureState(83)">gesture 083</button>
+<button type="button" onclick="mutateResourceWidget(84)">inventory 084</button>
+<button type="button" onclick="animateMinigameFailure(85)">failure 085</button>
+<button type="button" onclick="applyMultiAgentConsequence(86)">consequence 086</button>
+<button type="button" onclick="showFlowerPhase(87)">flower 087</button>
+<button type="button" onclick="showSensoryFrequency(88)">frequency 088</button>
+<button type="button" onclick="showNoLanguageClaim(89)">boundary 089</button>
+<button type="button" onclick="sendCanvasDialogue(90)">dialogue 090</button>
+<button type="button" onclick="routePhrasebookReply(91)">route 091</button>
+<button type="button" onclick="renderSensoryOverlay(92)">sensory 092</button>
+<button type="button" onclick="showGestureState(93)">gesture 093</button>
+<button type="button" onclick="mutateResourceWidget(94)">inventory 094</button>
+<button type="button" onclick="animateMinigameFailure(95)">failure 095</button>
+<button type="button" onclick="applyMultiAgentConsequence(96)">consequence 096</button>
+<button type="button" onclick="showFlowerPhase(97)">flower 097</button>
+<button type="button" onclick="showSensoryFrequency(98)">frequency 098</button>
+<button type="button" onclick="showNoLanguageClaim(99)">boundary 099</button>
+<button type="button" onclick="sendCanvasDialogue(100)">dialogue 100</button>
+<button type="button" onclick="routePhrasebookReply(101)">route 101</button>
+<button type="button" onclick="renderSensoryOverlay(102)">sensory 102</button>
+<button type="button" onclick="showGestureState(103)">gesture 103</button>
+<button type="button" onclick="mutateResourceWidget(104)">inventory 104</button>
+<button type="button" onclick="animateMinigameFailure(105)">failure 105</button>
+<button type="button" onclick="applyMultiAgentConsequence(106)">consequence 106</button>
+<button type="button" onclick="showFlowerPhase(107)">flower 107</button>
+<button type="button" onclick="showSensoryFrequency(108)">frequency 108</button>
+<button type="button" onclick="showNoLanguageClaim(109)">boundary 109</button>
+<button type="button" onclick="sendCanvasDialogue(110)">dialogue 110</button>
+<button type="button" onclick="routePhrasebookReply(111)">route 111</button>
+<button type="button" onclick="renderSensoryOverlay(112)">sensory 112</button>
+<button type="button" onclick="showGestureState(113)">gesture 113</button>
+<button type="button" onclick="mutateResourceWidget(114)">inventory 114</button>
+<button type="button" onclick="animateMinigameFailure(115)">failure 115</button>
+<button type="button" onclick="applyMultiAgentConsequence(116)">consequence 116</button>
+<button type="button" onclick="showFlowerPhase(117)">flower 117</button>
+<button type="button" onclick="showSensoryFrequency(118)">frequency 118</button>
+<button type="button" onclick="showNoLanguageClaim(119)">boundary 119</button>
+<button type="button" onclick="sendCanvasDialogue(120)">dialogue 120</button>
+<button type="button" onclick="routePhrasebookReply(121)">route 121</button>
+<button type="button" onclick="renderSensoryOverlay(122)">sensory 122</button>
+<button type="button" onclick="showGestureState(123)">gesture 123</button>
+<button type="button" onclick="mutateResourceWidget(124)">inventory 124</button>
+<button type="button" onclick="animateMinigameFailure(125)">failure 125</button>
+<button type="button" onclick="applyMultiAgentConsequence(126)">consequence 126</button>
+<button type="button" onclick="showFlowerPhase(127)">flower 127</button>
+<button type="button" onclick="showSensoryFrequency(128)">frequency 128</button>
+<button type="button" onclick="showNoLanguageClaim(129)">boundary 129</button>
+<button type="button" onclick="sendCanvasDialogue(130)">dialogue 130</button>
+<button type="button" onclick="routePhrasebookReply(131)">route 131</button>
+<button type="button" onclick="renderSensoryOverlay(132)">sensory 132</button>
+<button type="button" onclick="showGestureState(133)">gesture 133</button>
+<button type="button" onclick="mutateResourceWidget(134)">inventory 134</button>
+<button type="button" onclick="animateMinigameFailure(135)">failure 135</button>
+<button type="button" onclick="applyMultiAgentConsequence(136)">consequence 136</button>
+<button type="button" onclick="showFlowerPhase(137)">flower 137</button>
+<button type="button" onclick="showSensoryFrequency(138)">frequency 138</button>
+<button type="button" onclick="showNoLanguageClaim(139)">boundary 139</button>
+<button type="button" onclick="sendCanvasDialogue(140)">dialogue 140</button>
+<button type="button" onclick="routePhrasebookReply(141)">route 141</button>
+<button type="button" onclick="renderSensoryOverlay(142)">sensory 142</button>
+<button type="button" onclick="showGestureState(143)">gesture 143</button>
+<button type="button" onclick="mutateResourceWidget(144)">inventory 144</button>
+<button type="button" onclick="animateMinigameFailure(145)">failure 145</button>
+<button type="button" onclick="applyMultiAgentConsequence(146)">consequence 146</button>
+<button type="button" onclick="showFlowerPhase(147)">flower 147</button>
+<button type="button" onclick="showSensoryFrequency(148)">frequency 148</button>
+<button type="button" onclick="showNoLanguageClaim(149)">boundary 149</button>
+<button type="button" onclick="sendCanvasDialogue(150)">dialogue 150</button>
+<button type="button" onclick="routePhrasebookReply(151)">route 151</button>
+<button type="button" onclick="renderSensoryOverlay(152)">sensory 152</button>
+<button type="button" onclick="showGestureState(153)">gesture 153</button>
+<button type="button" onclick="mutateResourceWidget(154)">inventory 154</button>
+<button type="button" onclick="animateMinigameFailure(155)">failure 155</button>
+<button type="button" onclick="applyMultiAgentConsequence(156)">consequence 156</button>
+<button type="button" onclick="showFlowerPhase(157)">flower 157</button>
+<button type="button" onclick="showSensoryFrequency(158)">frequency 158</button>
+<button type="button" onclick="showNoLanguageClaim(159)">boundary 159</button>
+<button type="button" onclick="sendCanvasDialogue(160)">dialogue 160</button>
+<button type="button" onclick="routePhrasebookReply(161)">route 161</button>
+<button type="button" onclick="renderSensoryOverlay(162)">sensory 162</button>
+<button type="button" onclick="showGestureState(163)">gesture 163</button>
+<button type="button" onclick="mutateResourceWidget(164)">inventory 164</button>
+<button type="button" onclick="animateMinigameFailure(165)">failure 165</button>
+<button type="button" onclick="applyMultiAgentConsequence(166)">consequence 166</button>
+<button type="button" onclick="showFlowerPhase(167)">flower 167</button>
+<button type="button" onclick="showSensoryFrequency(168)">frequency 168</button>
+<button type="button" onclick="showNoLanguageClaim(169)">boundary 169</button>
+<button type="button" onclick="sendCanvasDialogue(170)">dialogue 170</button>
+<button type="button" onclick="routePhrasebookReply(171)">route 171</button>
+<button type="button" onclick="renderSensoryOverlay(172)">sensory 172</button>
+<button type="button" onclick="showGestureState(173)">gesture 173</button>
+<button type="button" onclick="mutateResourceWidget(174)">inventory 174</button>
+<button type="button" onclick="animateMinigameFailure(175)">failure 175</button>
+<button type="button" onclick="applyMultiAgentConsequence(176)">consequence 176</button>
+<button type="button" onclick="showFlowerPhase(177)">flower 177</button>
+<button type="button" onclick="showSensoryFrequency(178)">frequency 178</button>
+<button type="button" onclick="showNoLanguageClaim(179)">boundary 179</button>
+<button type="button" onclick="sendCanvasDialogue(180)">dialogue 180</button>
+<button type="button" onclick="routePhrasebookReply(181)">route 181</button>
+<button type="button" onclick="renderSensoryOverlay(182)">sensory 182</button>
+<button type="button" onclick="showGestureState(183)">gesture 183</button>
+<button type="button" onclick="mutateResourceWidget(184)">inventory 184</button>
+<button type="button" onclick="animateMinigameFailure(185)">failure 185</button>
+<button type="button" onclick="applyMultiAgentConsequence(186)">consequence 186</button>
+<button type="button" onclick="showFlowerPhase(187)">flower 187</button>
+<button type="button" onclick="showSensoryFrequency(188)">frequency 188</button>
+<button type="button" onclick="showNoLanguageClaim(189)">boundary 189</button>
+<button type="button" onclick="sendCanvasDialogue(190)">dialogue 190</button>
+<button type="button" onclick="routePhrasebookReply(191)">route 191</button>
+<button type="button" onclick="renderSensoryOverlay(192)">sensory 192</button>
+<button type="button" onclick="showGestureState(193)">gesture 193</button>
+<button type="button" onclick="mutateResourceWidget(194)">inventory 194</button>
+<button type="button" onclick="animateMinigameFailure(195)">failure 195</button>
+<button type="button" onclick="applyMultiAgentConsequence(196)">consequence 196</button>
+<button type="button" onclick="showFlowerPhase(197)">flower 197</button>
+<button type="button" onclick="showSensoryFrequency(198)">frequency 198</button>
+<button type="button" onclick="showNoLanguageClaim(199)">boundary 199</button>
+<button type="button" onclick="sendCanvasDialogue(200)">dialogue 200</button>
+<button type="button" onclick="routePhrasebookReply(201)">route 201</button>
+<button type="button" onclick="renderSensoryOverlay(202)">sensory 202</button>
+<button type="button" onclick="showGestureState(203)">gesture 203</button>
+<button type="button" onclick="mutateResourceWidget(204)">inventory 204</button>
+<button type="button" onclick="animateMinigameFailure(205)">failure 205</button>
+<button type="button" onclick="applyMultiAgentConsequence(206)">consequence 206</button>
+<button type="button" onclick="showFlowerPhase(207)">flower 207</button>
+<button type="button" onclick="showSensoryFrequency(208)">frequency 208</button>
+<button type="button" onclick="showNoLanguageClaim(209)">boundary 209</button>
+<button type="button" onclick="sendCanvasDialogue(210)">dialogue 210</button>
+<button type="button" onclick="routePhrasebookReply(211)">route 211</button>
+<button type="button" onclick="renderSensoryOverlay(212)">sensory 212</button>
+<button type="button" onclick="showGestureState(213)">gesture 213</button>
+<button type="button" onclick="mutateResourceWidget(214)">inventory 214</button>
+<button type="button" onclick="animateMinigameFailure(215)">failure 215</button>
+<button type="button" onclick="applyMultiAgentConsequence(216)">consequence 216</button>
+<button type="button" onclick="showFlowerPhase(217)">flower 217</button>
+<button type="button" onclick="showSensoryFrequency(218)">frequency 218</button>
+<button type="button" onclick="showNoLanguageClaim(219)">boundary 219</button>
+<button type="button" onclick="sendCanvasDialogue(220)">dialogue 220</button>
+<button type="button" onclick="routePhrasebookReply(221)">route 221</button>
+<button type="button" onclick="renderSensoryOverlay(222)">sensory 222</button>
+<button type="button" onclick="showGestureState(223)">gesture 223</button>
+<button type="button" onclick="mutateResourceWidget(224)">inventory 224</button>
+<button type="button" onclick="animateMinigameFailure(225)">failure 225</button>
+<button type="button" onclick="applyMultiAgentConsequence(226)">consequence 226</button>
+<button type="button" onclick="showFlowerPhase(227)">flower 227</button>
+<button type="button" onclick="showSensoryFrequency(228)">frequency 228</button>
+<button type="button" onclick="showNoLanguageClaim(229)">boundary 229</button>
+<button type="button" onclick="sendCanvasDialogue(230)">dialogue 230</button>
+<button type="button" onclick="routePhrasebookReply(231)">route 231</button>
+<button type="button" onclick="renderSensoryOverlay(232)">sensory 232</button>
+<button type="button" onclick="showGestureState(233)">gesture 233</button>
+<button type="button" onclick="mutateResourceWidget(234)">inventory 234</button>
+<button type="button" onclick="animateMinigameFailure(235)">failure 235</button>
+<button type="button" onclick="applyMultiAgentConsequence(236)">consequence 236</button>
+<button type="button" onclick="showFlowerPhase(237)">flower 237</button>
+<button type="button" onclick="showSensoryFrequency(238)">frequency 238</button>
+<button type="button" onclick="showNoLanguageClaim(239)">boundary 239</button>
+<button type="button" onclick="sendCanvasDialogue(240)">dialogue 240</button>
+<button type="button" onclick="routePhrasebookReply(241)">route 241</button>
+<button type="button" onclick="renderSensoryOverlay(242)">sensory 242</button>
+<button type="button" onclick="showGestureState(243)">gesture 243</button>
+<button type="button" onclick="mutateResourceWidget(244)">inventory 244</button>
+<button type="button" onclick="animateMinigameFailure(245)">failure 245</button>
+<button type="button" onclick="applyMultiAgentConsequence(246)">consequence 246</button>
+<button type="button" onclick="showFlowerPhase(247)">flower 247</button>
+<button type="button" onclick="showSensoryFrequency(248)">frequency 248</button>
+<button type="button" onclick="showNoLanguageClaim(249)">boundary 249</button>
+<button type="button" onclick="saveWorldState()">save world</button>
+<button type="button" onclick="restoreWorldState()">restore world</button>
+<button type="button" onclick="restoreLiveSession()">restore live session</button>
+<button type="button" onclick="exportReplay()">export replay</button></div>
+      <h2>Counts</h2>
+      <pre>{
+  "browser_buttons": 254,
+  "browser_ticks": 4320,
+  "gesture_body_language_frames": 4320,
+  "inventory_resource_widget_frames": 4320,
+  "live_conversation_frames": 4320,
+  "live_days": 240,
+  "live_session_reload_probes": 571,
+  "minigame_failure_animation_frames": 4320,
+  "multiagent_consequence_frames": 4320,
+  "sensory_overlay_frames": 4320,
+  "ticks_per_day": 18
+}</pre>
+    </aside>
+  </div>
+</main>
+<script>
+const SAMPLE = {
+  "gesture_body_language": {
+    "body_state_public": "steady",
+    "day": 8,
+    "facing": "avatar",
+    "gaze": "toward tool",
+    "gesture": "points to shelf",
+    "gesture_visible": true,
+    "posture": "alert half-turn",
+    "private_workspace_not_leaked": true,
+    "proximity_after": 1.216,
+    "proximity_before": 1.426,
+    "resident": "Milo",
+    "tick": 137,
+    "trust_after": 0.665548,
+    "trust_before": 0.659548
+  },
+  "inventory_resource_widget": {
+    "day": 8,
+    "item_after": 2,
+    "item_before": 1,
+    "item_name": "sealed jar",
+    "localstorage_written": true,
+    "resident": "Milo",
+    "resource_after": 30,
+    "resource_before": 31,
+    "resource_name": "herb",
+    "tick": 137,
+    "visible_delta": "herb:-1; sealed jar:+1",
+    "widget_patch": "{\"after\": 30, \"before\": 31, \"item\": \"sealed jar\", \"itemAfter\": 2, \"resource\": \"herb\"}"
+  },
+  "live_conversation": {
+    "avatar_utterance_key": "ask_help",
+    "conversation_attached_to_canvas": true,
+    "conversation_context": "quiet rest",
+    "day": 8,
+    "no_autonomous_language_claim": true,
+    "no_llm_call": true,
+    "phrasebook_route": "canvas:glasshouse:resident:Milo:phrase:ask_help",
+    "private_workspace_sealed": true,
+    "resident": "Milo",
+    "resident_reply_key": "offers_phrase_repair",
+    "session_id": "v57-d008-s11",
+    "settlement": "Willow Exchange",
+    "slot": 11,
+    "tick": 137,
+    "visible_reply": "Milo routes ask_help to offers_phrase_repair in quiet rest; no LLM text is generated."
+  },
+  "minigame_failure": {
+    "action": "Milo attempts bind while avatar route is ask_help",
+    "day": 8,
+    "failure_animation": "sparks fade",
+    "failure_cause": "misaligned brace",
+    "minigame_id": "repair-08-milo",
+    "progress_after": 0.739111,
+    "progress_before": 0.771111,
+    "recoverable": true,
+    "resident": "Milo",
+    "retry_visible": true,
+    "step": "bind",
+    "tick": 137
+  },
+  "multiagent_consequence": {
+    "action": "comfort after failure",
+    "bystander": "Sera",
+    "bystander_trust_delta": 0.006,
+    "consequence": "trust warms",
+    "day": 8,
+    "group_mood_after": 0.681662,
+    "group_mood_before": 0.667462,
+    "listener": "Fay",
+    "listener_trust_delta": 0.014,
+    "not_overdriven": true,
+    "replayable": true,
+    "speaker": "Milo",
+    "speaker_trust_delta": 0.018,
+    "tick": 137
+  },
+  "sensory_overlay": {
+    "day": 8,
+    "fatigue_signal": 0.50155,
+    "flower_phase": "leaf",
+    "light_level": 0.858289,
+    "overlay_intensity": 0.361135,
+    "overlay_visible": true,
+    "pain_signal": 0.060517,
+    "resident": "Milo",
+    "room": "glasshouse",
+    "sensory_frequency_hz": 3.531,
+    "smell_strength": 0.383094,
+    "sound_level": 0.312036,
+    "temperature_c": 22.02,
+    "tick": 137,
+    "wetness": 0.051325
+  }
+};
+const canvas = document.getElementById('world');
+const ctx = canvas.getContext('2d');
+const trace = document.getElementById('trace');
+const stateKey = 'ssrm_v57_live_world_state';
+const replayKey = 'ssrm_v57_live_replay';
+const resourceKey = 'ssrm_v57_resource_widget';
+let world = JSON.parse(localStorage.getItem(stateKey) || '{"tick":0,"trust":0.58,"resources":{"water":12,"fiber":8,"wood":16},"replay":[]}');
+function log(event, payload) {
+  const row = {event, tick: world.tick++, payload};
+  world.replay.push(row);
+  if (world.replay.length > 80) world.replay.shift();
+  trace.textContent = JSON.stringify({latest: row, world}, null, 2);
+  localStorage.setItem(stateKey, JSON.stringify(world));
+  localStorage.setItem(replayKey, JSON.stringify(world.replay));
+  draw();
+}
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  grad.addColorStop(0, '#1b2f2b'); grad.addColorStop(1, '#594733');
+  ctx.fillStyle = grad; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = 'rgba(246,239,217,0.18)';
+  for (let x = 40; x < canvas.width; x += 80) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke(); }
+  for (let y = 40; y < canvas.height; y += 80) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
+  const residents = ['Ari','Fay','Milo','Sera','Tovan','Nia'];
+  residents.forEach((name, i) => {
+    const x = 130 + ((world.tick * 7 + i * 113) % 720);
+    const y = 110 + ((world.tick * 5 + i * 79) % 340);
+    ctx.fillStyle = i % 2 ? '#d7c58a' : '#9bc6bd';
+    ctx.beginPath(); ctx.arc(x, y, 22, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#101510'; ctx.fillText(name, x - 14, y + 4);
+  });
+  ctx.fillStyle = 'rgba(183,95,53,0.8)';
+  ctx.fillRect(38, 42, 110 + world.trust * 180, 18);
+  ctx.fillStyle = '#f6efd9'; ctx.fillText('trust / consequence trace', 42, 36);
+}
+canvas.addEventListener('click', event => {
+  const rect = canvas.getBoundingClientRect();
+  log('canvas pointer move', {x: Math.round(event.clientX - rect.left), y: Math.round(event.clientY - rect.top)});
+});
+function sendCanvasDialogue(i) {
+  const utterance = document.getElementById('utterance').value;
+  const typed = document.getElementById('typed').value;
+  log('sendCanvasDialogue', {i, utterance, typed, noLLM: true, autonomousLanguageClaim: false});
+}
+function routePhrasebookReply(i) { log('routePhrasebookReply', {i, reply: SAMPLE.live_conversation.visible_reply, route: SAMPLE.live_conversation.phrasebook_route}); }
+function renderSensoryOverlay(i) { log('renderSensoryOverlay', {i, sensory: SAMPLE.sensory_overlay}); }
+function showGestureState(i) { log('showGestureState', {i, gesture: SAMPLE.gesture_body_language}); }
+function mutateResourceWidget(i) {
+  world.resources.water = (world.resources.water || 0) + (i % 3) - 1;
+  world.resources.fiber = (world.resources.fiber || 0) + (i % 2);
+  localStorage.setItem(resourceKey, JSON.stringify(world.resources));
+  log('mutateResourceWidget', {i, resources: world.resources});
+}
+function animateMinigameFailure(i) { log('animateMinigameFailure', {i, minigame: SAMPLE.minigame_failure, retryVisible: true, recoverable: true}); }
+function applyMultiAgentConsequence(i) {
+  world.trust = Math.max(0, Math.min(1, world.trust + ((i % 4) - 1) * 0.015));
+  log('applyMultiAgentConsequence', {i, consequence: SAMPLE.multiagent_consequence, trust: world.trust});
+}
+function restoreLiveSession() { world = JSON.parse(localStorage.getItem(stateKey) || JSON.stringify(world)); log('restoreLiveSession', {restored: true}); }
+function saveWorldState() { localStorage.setItem(stateKey, JSON.stringify(world)); log('saveWorldState', {saved: true}); }
+function restoreWorldState() { world = JSON.parse(localStorage.getItem(stateKey) || JSON.stringify(world)); log('restoreWorldState', {restored: true}); }
+function exportReplay() {
+  const blob = new Blob([JSON.stringify(world.replay, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'report_297_v57_replay.json'; a.click();
+  log('exportReplay', {rows: world.replay.length});
+}
+function showFlowerPhase(i) { log('showFlowerPhase', {i, phase: SAMPLE.sensory_overlay.flower_phase}); }
+function showSensoryFrequency(i) { log('showSensoryFrequency', {i, hz: SAMPLE.sensory_overlay.sensory_frequency_hz}); }
+function showNoLanguageClaim(i) { log('showNoLanguageClaim', {i, boundary: 'Deterministic browser-local live-conversation/sensory-overlay/gesture/inventory-widget/minigame-failure/multiagent-consequence scaffold only; no LLM call, subjective consciousness, real consent, autonomous natural language, moral patienthood, complete gameplay, complete 3D engine, or metaphysical frequency claim.'}); }
+draw();
+showNoLanguageClaim(0);
+</script>
+</body>
+</html>

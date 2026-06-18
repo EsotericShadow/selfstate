@@ -574,7 +574,7 @@ function runReviewerLandingPass() {
   return log('runReviewerLandingPass', {
     reviewerFocus: reviewerFocusEnabled(),
     corePanels: ['boundary', 'sessionTranscriptOut', 'continuityLoopOut', 'scenarioReceiptOut', 'observationTriageOut'],
-    deepPanelsOptional: true
+    deepPanelsOptional: true, returnToLauncherHandoff: true
   });
 }
 function filterReceiptObservations(filter = readObservationFilter()) {
@@ -595,12 +595,13 @@ function formatReviewerLanding() {
   return `Reviewer landing: ${missing.length ? 'READY_FOR_RUN' : 'PASSABLE_REVIEW_PATH'}
 Boundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.
 Focus mode: ${focus ? 'core panels only' : 'deep panels visible'}
-Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage
+Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage -> Return to launcher handoff
 Receipt: ${receipt.passCount}/${receipt.fieldCount} pass
 Observation triage: ${observationRows.length} observations / active filter ${readObservationFilter()}
 Missing reviewer-pass events: ${missing.length ? missing.join(', ') : 'none'}
 Actionable failure map:
 ${reviewerFailureActions(receipt).join('\n')}
+Next step: use Return to launcher handoff when the receipt is all pass.
 Deep diagnostics: ${focus ? 'hidden by default; use Toggle deep panels only when an action remains unclear' : 'visible for trace, checkpoints, history, and QA manifest'}`;
 }
 function formatScenarioReceipt() {

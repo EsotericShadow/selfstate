@@ -214,7 +214,7 @@ def _app_html() -> str:
     </section>
 
     <section class="trace-grid">
-      <article class="panel reviewer-landing"><h2>Reviewer landing</h2><div class="reviewer-actions"><button data-action="runReviewerLandingPass">Run reviewer pass</button><button data-action="auditLandingFailures">Audit failures</button><button data-action="toggleDeepPanels">Toggle deep panels</button></div><pre id="reviewerLandingOut"></pre></article>
+      <article class="panel reviewer-landing"><h2>Reviewer landing</h2><div class="reviewer-actions"><button data-action="runReviewerLandingPass">Run reviewer pass</button><button data-action="auditLandingFailures">Audit failures</button><button data-action="toggleDeepPanels">Toggle deep panels</button><a id="returnLauncherHandoffLink" class="handoff-return" href="../ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist">Return to launcher handoff</a></div><pre id="reviewerLandingOut"></pre></article>
       <article class="panel deep-panel"><h2>Trace</h2><pre id="traceOut"></pre></article>
       <article class="panel"><h2>Session transcript</h2><pre id="sessionTranscriptOut"></pre></article>
       <article class="panel deep-panel"><h2>Checkpoints</h2><pre id="checkpointOut"></pre></article>
@@ -286,7 +286,9 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .receipt-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 10px; }
 .observation-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
 .triage-actions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
-.reviewer-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.reviewer-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.handoff-return { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; border-radius: 999px; padding: 9px 10px; color: #fff6de; background: #111816; text-align: center; text-decoration: none; font-weight: 800; }
+.handoff-return:focus, .handoff-return:hover { outline: 3px solid rgba(213, 161, 58, 0.72); outline-offset: 2px; }
 .reviewer-landing { grid-column: 1 / -1; border: 2px solid rgba(183, 93, 57, 0.58); }
 body.reviewer-focus .deep-panel { display: none; }
 @media (max-width: 980px) {
@@ -869,7 +871,7 @@ function runReviewerLandingPass() {{
   return log('runReviewerLandingPass', {{
     reviewerFocus: reviewerFocusEnabled(),
     corePanels: ['boundary', 'sessionTranscriptOut', 'continuityLoopOut', 'scenarioReceiptOut', 'observationTriageOut'],
-    deepPanelsOptional: true
+    deepPanelsOptional: true, returnToLauncherHandoff: true
   }});
 }}
 function filterReceiptObservations(filter = readObservationFilter()) {{
@@ -890,12 +892,13 @@ function formatReviewerLanding() {{
   return `Reviewer landing: ${{missing.length ? 'READY_FOR_RUN' : 'PASSABLE_REVIEW_PATH'}}
 Boundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.
 Focus mode: ${{focus ? 'core panels only' : 'deep panels visible'}}
-Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage
+Core path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage -> Return to launcher handoff
 Receipt: ${{receipt.passCount}}/${{receipt.fieldCount}} pass
 Observation triage: ${{observationRows.length}} observations / active filter ${{readObservationFilter()}}
 Missing reviewer-pass events: ${{missing.length ? missing.join(', ') : 'none'}}
 Actionable failure map:
 ${{reviewerFailureActions(receipt).join('\\n')}}
+Next step: use Return to launcher handoff when the receipt is all pass.
 Deep diagnostics: ${{focus ? 'hidden by default; use Toggle deep panels only when an action remains unclear' : 'visible for trace, checkpoints, history, and QA manifest'}}`;
 }}
 function formatScenarioReceipt() {{

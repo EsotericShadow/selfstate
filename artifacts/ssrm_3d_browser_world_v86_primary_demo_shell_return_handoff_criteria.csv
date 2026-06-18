@@ -1,0 +1,11 @@
+channel,passed,score,evidence,failure_if_false
+shell_return_link_visible,True,1.0,maintained shell contains a visible return link to the launcher checklist/handoff anchor,reviewers can finish the shell pass but have no obvious return path to the handoff export
+generator_preserves_return_link,True,1.0,Report 301 shell generator preserves the return affordance,future regeneration would erase the shell return path
+return_link_styled_as_reviewer_action,True,1.0,"return link is styled as a first-class reviewer action, not hidden prose",cold reviewers may miss the return link after the pass
+reviewer_landing_names_next_step,True,1.0,reviewer landing text and payload name the shell-to-launcher next step,the link exists but the pass summary does not explain what to do next
+browser_return_link_visible_after_pass,True,1.0,text=Return to launcher handoff; passable=true; allPass=true; landingNamesReturn=true,browser pass did not expose the return link after reviewer pass
+browser_return_link_href_correct,True,1.0,http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist,return link does not target the launcher checklist/handoff anchor
+browser_return_navigation_reaches_launcher,True,1.0,url=http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist; hash=#outsideReviewChecklist; hasChecklist=true,clicking return link did not bring reviewer back to the launcher checklist
+browser_handoff_prepares_after_return,True,1.0,status=Outside-review handoff payload visible below.; shellEvidence=true; reviewerPassSeen=true; receiptAllPass=true,reviewer could return to launcher but could not refresh evidence and prepare visible handoff payload
+browser_no_console_errors,True,1.0,browser console error count was 0,return handoff flow produced console errors
+boundary_preserved,True,1.0,"Deterministic browser-local shell-to-launcher handoff only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The return link is reviewer workflow hardening, not external validation or evidence of inner experience.",report boundary implies more than browser-local reviewer workflow hardening

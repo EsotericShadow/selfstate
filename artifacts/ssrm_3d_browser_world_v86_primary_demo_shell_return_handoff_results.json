@@ -1,0 +1,196 @@
+{
+  "artifacts": {
+    "browser_evidence": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_browser_evidence.json",
+    "criteria": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_criteria.csv",
+    "report": "docs/326_ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_report.md",
+    "results": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_results.json",
+    "state": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_state.json",
+    "summary": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_summary.csv",
+    "verdict": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_verdict.csv"
+  },
+  "boundary": "Deterministic browser-local shell-to-launcher handoff only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The return link is reviewer workflow hardening, not external validation or evidence of inner experience.",
+  "browser_evidence": {
+    "all_pass": true,
+    "console_error_entries": [],
+    "console_errors": 0,
+    "errors": [],
+    "handoff_after_return_evidence": "status=Outside-review handoff payload visible below.; shellEvidence=true; reviewerPassSeen=true; receiptAllPass=true",
+    "handoff_prepares_after_return": true,
+    "report": 326,
+    "return_link_href_correct": true,
+    "return_link_href_evidence": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+    "return_link_visible_after_pass": true,
+    "return_link_visible_after_pass_evidence": "text=Return to launcher handoff; passable=true; allPass=true; landingNamesReturn=true",
+    "return_navigation_evidence": "url=http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist; hash=#outsideReviewChecklist; hasChecklist=true",
+    "return_navigation_reaches_launcher": true,
+    "steps": {
+      "clear_outside_review_count": 1,
+      "handoff_after_return": {
+        "outStart": "{\n  \"reportIntroduced\": 323,\n  \"checklistState\": {\n    \"items\": {},\n    \"updatedAt\": null\n  },\n  \"handoff\": {\n    \"kind\": \"clean\",\n    \"report\": 303,\n    \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"recordedAt\": \"2026-06-18T08:40:51.764Z\",\n    \"boundary\": \"primary-demo-launcher-only\"\n  },\n  \"shellEvidence\": {\n    \"reportIntroduced\": 324,\n    \"handoff\": {\n      \"kind\": \"clean\",\n      \"report\": 303,\n      \"target\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n      \"recordedAt\": \"2026-06-18T08:40:51.764Z\",\n      \"boundary\": \"primary-demo-launcher-only\"\n    },\n    \"replayRows\": 16,\n    \"reviewerPassSeen\": true,\n    \"receiptAllPass\": true,\n    \"receipt\": {\n      \"passCount\": 9,\n      \"fieldCount\": 9\n    },\n    \"observationRows\": 0,\n    \"blockingObservationRows\": 0,\n    \"checkpointRows\": 7,\n    \"replayExportReady\": true,\n    \"deepPanelsRevealed\": false,\n    \"targetShell\": \"../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html\",\n    \"boundary\": \"outside-review-shell-evidence-public-local-only\"\n  },\n  \"manualRecords\": [],\n  \"defects\": [],\n  \"recorderExportPrepared\": false,\n  \"targetShell\": \"../ssrm_3d_browser_world_v6",
+        "parsed": {
+          "boundary": "outside-review-handoff-public-local-only",
+          "checklistState": {
+            "items": {},
+            "updatedAt": null
+          },
+          "defects": [],
+          "handoff": {
+            "boundary": "primary-demo-launcher-only",
+            "kind": "clean",
+            "recordedAt": "2026-06-18T08:40:51.764Z",
+            "report": 303,
+            "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "launchUrl": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+          "manualRecords": [],
+          "recorderExportPrepared": false,
+          "reportIntroduced": 323,
+          "shellEvidence": {
+            "blockingObservationRows": 0,
+            "boundary": "outside-review-shell-evidence-public-local-only",
+            "checkpointRows": 7,
+            "deepPanelsRevealed": false,
+            "handoff": {
+              "boundary": "primary-demo-launcher-only",
+              "kind": "clean",
+              "recordedAt": "2026-06-18T08:40:51.764Z",
+              "report": 303,
+              "target": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+            },
+            "observationRows": 0,
+            "receipt": {
+              "fieldCount": 9,
+              "passCount": 9
+            },
+            "receiptAllPass": true,
+            "replayExportReady": true,
+            "replayRows": 16,
+            "reportIntroduced": 324,
+            "reviewerPassSeen": true,
+            "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+          },
+          "targetShell": "../ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html"
+        },
+        "status": "Outside-review handoff payload visible below.",
+        "url": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+      },
+      "launch_clean_demo_count": 1,
+      "launcher_after_return": {
+        "handoffOut": "No outside-review handoff export prepared yet.",
+        "handoffStatus": "No outside-review handoff export prepared yet.",
+        "hasChecklist": true,
+        "hash": "#outsideReviewChecklist",
+        "title": "SSRM-3D Primary Browser World Demo",
+        "url": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+      },
+      "prepare_handoff_after_return_count": 1,
+      "refresh_shell_evidence_after_return_count": 1,
+      "return_launcher_handoff_link_count": 1,
+      "run_reviewer_pass_count": 1,
+      "shell_after_pass": {
+        "bodyClass": "reviewer-focus",
+        "landingHasAllPass": true,
+        "landingHasPassable": true,
+        "landingNamesReturn": true,
+        "landingTextStart": "Reviewer landing: PASSABLE_REVIEW_PATH\nBoundary: deterministic browser-local public state only; no consciousness, no autonomous language, no moral patienthood.\nFocus mode: core panels only\nCore path: boundary -> Run reviewer pass -> session transcript -> integrated receipt -> observation triage -> Return to launcher handoff\nReceipt: 9/9 pass\nObservation triage: 0 observations / active filter all\nMissing reviewer-pass events: none\nActionable failure map:\nAll receipt fields currently pass. Keep deep panels optional unless a reviewer wants trace detail.\nNext step: use Return to launcher handoff when the receipt is all pass.\nDeep diagnostics: hidden by default; use Toggle deep panels only when an action remains unclear",
+        "linkHref": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+        "linkText": "Return to launcher handoff",
+        "linkVisibleByDom": true,
+        "title": "SSRM-3D v61 Vertical Slice App Shell",
+        "url": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&source=primary-demo-v63"
+      }
+    },
+    "target": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html"
+  },
+  "browser_evidence_path": "artifacts/ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff_browser_evidence.json",
+  "criteria": [
+    {
+      "channel": "shell_return_link_visible",
+      "evidence": "maintained shell contains a visible return link to the launcher checklist/handoff anchor",
+      "failure_if_false": "reviewers can finish the shell pass but have no obvious return path to the handoff export",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator_preserves_return_link",
+      "evidence": "Report 301 shell generator preserves the return affordance",
+      "failure_if_false": "future regeneration would erase the shell return path",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "return_link_styled_as_reviewer_action",
+      "evidence": "return link is styled as a first-class reviewer action, not hidden prose",
+      "failure_if_false": "cold reviewers may miss the return link after the pass",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "reviewer_landing_names_next_step",
+      "evidence": "reviewer landing text and payload name the shell-to-launcher next step",
+      "failure_if_false": "the link exists but the pass summary does not explain what to do next",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_return_link_visible_after_pass",
+      "evidence": "text=Return to launcher handoff; passable=true; allPass=true; landingNamesReturn=true",
+      "failure_if_false": "browser pass did not expose the return link after reviewer pass",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_return_link_href_correct",
+      "evidence": "http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist",
+      "failure_if_false": "return link does not target the launcher checklist/handoff anchor",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_return_navigation_reaches_launcher",
+      "evidence": "url=http://127.0.0.1:8786/visualizations/ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist; hash=#outsideReviewChecklist; hasChecklist=true",
+      "failure_if_false": "clicking return link did not bring reviewer back to the launcher checklist",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_handoff_prepares_after_return",
+      "evidence": "status=Outside-review handoff payload visible below.; shellEvidence=true; reviewerPassSeen=true; receiptAllPass=true",
+      "failure_if_false": "reviewer could return to launcher but could not refresh evidence and prepare visible handoff payload",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser_no_console_errors",
+      "evidence": "browser console error count was 0",
+      "failure_if_false": "return handoff flow produced console errors",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "boundary_preserved",
+      "evidence": "Deterministic browser-local shell-to-launcher handoff only; no LLM calls, no subjective consciousness, no autonomous natural language, no moral patienthood, no production persistence, no complete 3D engine, and no finished gameplay claim. The return link is reviewer workflow hardening, not external validation or evidence of inner experience.",
+      "failure_if_false": "report boundary implies more than browser-local reviewer workflow hardening",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "metrics": {
+    "browser_return_score": 1.0,
+    "console_errors": 0,
+    "criterion_count": 10,
+    "readiness": 1.0,
+    "return_source_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-326: run the full outside-review loop end-to-end from clean launcher through shell pass, return, checklist completion, evidence refresh, visible payload preview, and defect-recorder export; fix the next concrete comprehension or state-continuity defect in the same launcher/shell path",
+  "prefix": "ssrm_3d_browser_world_v86_primary_demo_shell_return_handoff",
+  "report": 326,
+  "required_link_terms": [
+    "returnLauncherHandoffLink",
+    "Return to launcher handoff",
+    "../ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist"
+  ],
+  "seed": 20270724,
+  "verdict": "pass"
+}

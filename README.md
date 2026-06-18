@@ -62,6 +62,7 @@ That claim does not define consciousness and does not require that the self be m
 - [Primary demo lifecycle smoke runner report](docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md): turns the lifecycle contract into one reusable deterministic smoke command so future handoff changes exercise fresh, stale, repair, and post-repair paths without adding another one-off bridge report.
 - [Primary demo entrypoint lifecycle smoke-runner wiring report](docs/343_ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring_report.md): wires the reusable lifecycle smoke runner into the primary launcher, manual playtest script, and entrypoint generator so the playable surface itself points future handoff work at one maintained gate.
 - [Primary demo lifecycle preflight status panel report](docs/344_ssrm_3d_browser_world_v104_primary_demo_lifecycle_preflight_status_panel_report.md): makes the smoke-runner wiring browser-visible with a launcher preflight panel showing runner freshness, lifecycle phase statuses, and the current blocking phase.
+- [Primary demo lifecycle preflight packet export report](docs/345_ssrm_3d_browser_world_v105_primary_demo_lifecycle_preflight_packet_export_report.md): adds browser-local prepare/copy/download actions for the lifecycle preflight packet so outside reviewers can attach one compact smoke-status receipt.
 
 
 - [Research brief](docs/01_research_brief.md): current strongest falsifiable explanation.

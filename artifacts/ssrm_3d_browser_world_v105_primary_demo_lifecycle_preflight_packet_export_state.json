@@ -1,0 +1,52 @@
+{
+  "export_packet_contract": {
+    "blocking_phase": "none",
+    "boundary": "lifecycle-preflight-packet-browser-local-artifact-status-only",
+    "browser_actions": {
+      "copy": "copyLifecyclePreflightPacket",
+      "download_link": "preparedLifecyclePreflightPacket",
+      "prepare": "prepareLifecyclePreflightPacket",
+      "preview": "lifecyclePreflightPacketOut",
+      "status": "lifecyclePreflightExportStatus"
+    },
+    "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "download_name": "ssrm_primary_demo_lifecycle_preflight_packet.json",
+    "export_key": "ssrm_primary_demo_lifecycle_preflight_packet",
+    "phase_statuses": {
+      "closed_origin_tab_continuity": "pass",
+      "cross_tab_prepared_resume_visible": "pass",
+      "hard_reload_continuity": "pass",
+      "repaired_continue_return_refresh": "pass",
+      "stale_reprepare_repair": "pass",
+      "stale_supersession_calibration": "pass"
+    },
+    "report": 345,
+    "sources": {
+      "entrypoint_html": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "generator": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+      "manual_playtest": "visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md",
+      "runner_manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+      "runner_results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+      "wiring_results": "artifacts/ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring_results.json"
+    }
+  },
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "blocking_phase_count": 0,
+    "browser_behavior_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 12,
+    "entrypoint_controls_score": 1.0,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "packet_contract_score": 1.0,
+    "phase_count": 6,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-345: connect the exported lifecycle preflight packet to the outside-review handoff payload so reviewers get one combined handoff receipt covering shell evidence, manual notes, defects, and lifecycle smoke status",
+  "report": 345,
+  "seed": 20270743,
+  "verdict": "pass"
+}

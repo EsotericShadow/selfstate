@@ -2,6 +2,7 @@ const HANDOFF_KEY = 'ssrm_primary_demo_handoff';
 const MANUAL_RECORD_KEY = 'ssrm_primary_demo_manual_pass_records';
 const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
 const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
+const LIFECYCLE_PREFLIGHT_EXPORT_KEY = 'ssrm_primary_demo_lifecycle_preflight_packet';
 const OUTSIDE_REVIEW_KEY = 'ssrm_primary_demo_outside_review_checklist';
 const OUTSIDE_REVIEW_EXPORT_KEY = 'ssrm_primary_demo_outside_review_handoff';
 const SHELL_STATE_KEY = 'ssrm_v61_app_shell_world';
@@ -382,6 +383,91 @@ function renderOutsideReviewHandoffPreview(message) {
   return payload;
 }
 
+function lifecyclePreflightPhaseStatuses() {
+  const rows = Array.from(document.querySelectorAll('[data-lifecycle-preflight-phase]'));
+  return rows.reduce((accumulator, row) => {
+    accumulator[row.dataset.lifecyclePreflightPhase] = row.dataset.lifecyclePreflightStatus || 'unknown';
+    return accumulator;
+  }, {});
+}
+
+function readLifecyclePreflightPacket() {
+  const text = localStorage.getItem(LIFECYCLE_PREFLIGHT_EXPORT_KEY) || '';
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    return { parseError: true, raw: text, boundary: 'lifecycle-preflight-packet-preview-public-local-only' };
+  }
+}
+
+function buildLifecyclePreflightPacket(action = 'prepare') {
+  const sourceNode = document.getElementById('lifecycleSmokePreflight');
+  const phaseStatuses = lifecyclePreflightPhaseStatuses();
+  return {
+    reportIntroduced: 345,
+    action,
+    command: document.getElementById('lifecycleSmokeRunnerCommand')?.textContent || '',
+    policy: document.getElementById('lifecycleSmokeRunnerPolicy')?.textContent || '',
+    freshness: (document.getElementById('lifecycleSmokeFreshness')?.textContent || '').replace('Runner freshness: ', ''),
+    blockingPhase: sourceNode?.dataset.lifecyclePreflightBlockingPhase || 'unknown',
+    phaseStatuses,
+    phaseCount: Object.keys(phaseStatuses).length,
+    sources: {
+      sourceMarker: sourceNode?.dataset.lifecyclePreflightSource || 'unknown',
+      report: document.getElementById('lifecycleSmokeRunnerReport')?.getAttribute('href') || '',
+      results: document.getElementById('lifecycleSmokeRunnerResults')?.getAttribute('href') || '',
+      manifest: document.getElementById('lifecycleSmokeRunnerManifest')?.getAttribute('href') || ''
+    },
+    preparedAt: new Date().toISOString(),
+    boundary: 'lifecycle-preflight-packet-browser-local-artifact-status-only'
+  };
+}
+
+function renderLifecyclePreflightPacket(message) {
+  const packet = readLifecyclePreflightPacket();
+  const status = document.getElementById('lifecyclePreflightExportStatus');
+  if (status) status.textContent = message || (packet ? `Lifecycle preflight packet prepared at ${packet.preparedAt}; blocking phase ${packet.blockingPhase}.` : 'No lifecycle preflight packet prepared yet.');
+  const out = document.getElementById('lifecyclePreflightPacketOut');
+  if (out) out.textContent = packet ? JSON.stringify(packet, null, 2) : 'No lifecycle preflight packet prepared yet.';
+  return packet;
+}
+
+function prepareLifecyclePreflightPacket(action = 'prepare') {
+  const packet = buildLifecyclePreflightPacket(action);
+  const text = JSON.stringify(packet, null, 2);
+  localStorage.setItem(LIFECYCLE_PREFLIGHT_EXPORT_KEY, text);
+  let link = document.getElementById('preparedLifecyclePreflightPacket');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedLifecyclePreflightPacket';
+    link.className = 'button';
+    link.download = 'ssrm_primary_demo_lifecycle_preflight_packet.json';
+    link.textContent = 'Download lifecycle preflight packet JSON';
+    document.getElementById('lifecyclePreflightPacketActions')?.appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderLifecyclePreflightPacket(`Lifecycle preflight packet prepared; blocking phase ${packet.blockingPhase}.`);
+  return packet;
+}
+
+async function copyLifecyclePreflightPacket() {
+  const packet = prepareLifecyclePreflightPacket('copy');
+  const text = JSON.stringify(packet, null, 2);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      renderLifecyclePreflightPacket(`Lifecycle preflight packet copied; blocking phase ${packet.blockingPhase}.`);
+      return packet;
+    } catch (error) {
+      renderLifecyclePreflightPacket(`Clipboard copy blocked; download link prepared instead. Blocking phase ${packet.blockingPhase}.`);
+      return packet;
+    }
+  }
+  renderLifecyclePreflightPacket(`Clipboard unavailable; download link prepared instead. Blocking phase ${packet.blockingPhase}.`);
+  return packet;
+}
+
 function recordStep(stepId, result) {
   const rows = readList(MANUAL_RECORD_KEY);
   rows.push({
@@ -497,6 +583,8 @@ document.querySelectorAll('[data-record-step]').forEach(button => {
 document.getElementById('recordDefect')?.addEventListener('click', recordDefectNote);
 document.getElementById('resolveLatestDefect')?.addEventListener('click', resolveLatestDefect);
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
+document.getElementById('prepareLifecyclePreflightPacket')?.addEventListener('click', () => prepareLifecyclePreflightPacket());
+document.getElementById('copyLifecyclePreflightPacket')?.addEventListener('click', () => { copyLifecyclePreflightPacket(); });
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
 document.querySelectorAll('[data-outside-review-item]').forEach(button => {
   button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
@@ -508,4 +596,5 @@ document.getElementById('clearOutsideReview')?.addEventListener('click', clearOu
 renderOutsideReviewChecklist();
 renderOutsideReviewEvidence();
 renderOutsideReviewHandoffPreview();
+renderLifecyclePreflightPacket();
 renderRecorder();

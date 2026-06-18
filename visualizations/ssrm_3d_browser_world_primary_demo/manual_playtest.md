@@ -66,6 +66,12 @@ Lifecycle phases shown in the preflight panel:
 - `stale_reprepare_repair`: pass (stale mismatch clean reprepare repair)
 - `repaired_continue_return_refresh`: pass (repaired continue-return-refresh freshness)
 
+Browser-local packet action:
+
+- Use `Prepare preflight packet` to create a downloadable `ssrm_primary_demo_lifecycle_preflight_packet.json` receipt.
+- Use `Copy preflight packet` to attempt clipboard copy; if clipboard permission is unavailable, the download link and visible JSON preview remain the fallback.
+- The packet is browser-local review evidence only and does not make a live hosted browser E2E claim.
+
 ## Outside-review checklist
 
 The launcher also includes an outside-review checklist covering boundary, clean launch, reviewer pass, receipt, observation triage, optional diagnostics, manual notes, and exportable handoff evidence. Checklist progress stays in browser-local public state under `ssrm_primary_demo_outside_review_checklist`.

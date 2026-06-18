@@ -1,0 +1,152 @@
+{
+  "boundaries": [
+    "browser-local preflight packet prepare/copy/download wiring only",
+    "artifact-backed status receipt only",
+    "clipboard success is attempted but not claimed by deterministic source verification",
+    "no live hosted URL claim",
+    "no live browser automation claim",
+    "no production persistence claim",
+    "no autonomous natural-language claim",
+    "no subjective-consciousness claim",
+    "no moral-patienthood claim",
+    "no complete 3D engine claim",
+    "no finished gameplay claim"
+  ],
+  "criteria": [
+    {
+      "channel": "artifact source",
+      "detail": "Report 344 preflight results and packet exist and pass.",
+      "name": "preflight_artifacts_available_and_passing",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "artifact source",
+      "detail": "Source preflight packet has all lifecycle phases and no blocking phase.",
+      "name": "preflight_source_phase_set_complete",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "entrypoint controls",
+      "detail": "Primary launcher exposes prepare/copy controls, status line, and JSON preview for the preflight packet.",
+      "name": "launcher_exposes_packet_actions",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Launcher JS defines storage key, phase reader, packet reader, packet builder, renderer, prepare, and copy functions.",
+      "name": "javascript_defines_packet_storage_and_builders",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Launcher JS attempts clipboard copy but prepares a downloadable JSON fallback and visible preview.",
+      "name": "javascript_defines_clipboard_fallback_and_download",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "browser behavior",
+      "detail": "Prepare and copy buttons are wired to browser-local packet actions.",
+      "name": "javascript_wires_packet_buttons",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "manual path",
+      "detail": "Manual playtest script explains prepare, copy, fallback, and review-evidence semantics.",
+      "name": "manual_documents_packet_action",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator preserves the packet action controls and preview/status nodes.",
+      "name": "generator_preserves_packet_export_controls",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "generator durability",
+      "detail": "v63 generator preserves packet JS behavior and manual documentation.",
+      "name": "generator_preserves_packet_export_behavior",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "packet contract",
+      "detail": "Report 345 emits a compact packet contract matching the browser download payload.",
+      "name": "export_packet_is_compact_and_attachable",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "runner index",
+      "detail": "Experiment runner index includes the Report 345 verifier module.",
+      "name": "experiment_index_includes_packet_export_report",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "channel": "claim hygiene",
+      "detail": "Boundary rejects clipboard-success overclaiming, hosted URL, live E2E, production persistence, consciousness, moral patienthood, complete engine, and finished gameplay claims.",
+      "name": "claim_boundary_preserved",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "export_packet_contract": {
+    "blocking_phase": "none",
+    "boundary": "lifecycle-preflight-packet-browser-local-artifact-status-only",
+    "browser_actions": {
+      "copy": "copyLifecyclePreflightPacket",
+      "download_link": "preparedLifecyclePreflightPacket",
+      "prepare": "prepareLifecyclePreflightPacket",
+      "preview": "lifecyclePreflightPacketOut",
+      "status": "lifecyclePreflightExportStatus"
+    },
+    "command": "python3 -m experiments.ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner",
+    "download_name": "ssrm_primary_demo_lifecycle_preflight_packet.json",
+    "export_key": "ssrm_primary_demo_lifecycle_preflight_packet",
+    "phase_statuses": {
+      "closed_origin_tab_continuity": "pass",
+      "cross_tab_prepared_resume_visible": "pass",
+      "hard_reload_continuity": "pass",
+      "repaired_continue_return_refresh": "pass",
+      "stale_reprepare_repair": "pass",
+      "stale_supersession_calibration": "pass"
+    },
+    "report": 345,
+    "sources": {
+      "entrypoint_html": "visualizations/ssrm_3d_browser_world_primary_demo/index.html",
+      "generator": "experiments/ssrm_3d_browser_world_v63_primary_demo_entrypoint_manual_playtest_package.py",
+      "manual_playtest": "visualizations/ssrm_3d_browser_world_primary_demo/manual_playtest.md",
+      "runner_manifest": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json",
+      "runner_results": "artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json",
+      "wiring_results": "artifacts/ssrm_3d_browser_world_v103_primary_demo_entrypoint_lifecycle_smoke_runner_wiring_results.json"
+    }
+  },
+  "metrics": {
+    "artifact_source_score": 1.0,
+    "blocking_phase_count": 0,
+    "browser_behavior_score": 1.0,
+    "claim_hygiene_score": 1.0,
+    "criterion_count": 12,
+    "entrypoint_controls_score": 1.0,
+    "generator_durability_score": 1.0,
+    "manual_path_score": 1.0,
+    "packet_contract_score": 1.0,
+    "phase_count": 6,
+    "readiness": 1.0,
+    "runner_index_score": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-345: connect the exported lifecycle preflight packet to the outside-review handoff payload so reviewers get one combined handoff receipt covering shell evidence, manual notes, defects, and lifecycle smoke status",
+  "prefix": "ssrm_3d_browser_world_v105_primary_demo_lifecycle_preflight_packet_export",
+  "report": 345,
+  "seed": 20270743,
+  "verdict": "pass"
+}

@@ -320,6 +320,12 @@ def _html() -> str:
         <li data-lifecycle-preflight-phase=\"stale_reprepare_repair\" data-lifecycle-preflight-status=\"pass\"><strong>stale mismatch clean reprepare repair</strong>: pass</li>
         <li data-lifecycle-preflight-phase=\"repaired_continue_return_refresh\" data-lifecycle-preflight-status=\"pass\"><strong>repaired continue-return-refresh freshness</strong>: pass</li>
         </ul>
+        <div class=\"actions compact\" id=\"lifecyclePreflightPacketActions\" aria-label=\"Lifecycle preflight packet actions\">
+          <button id=\"prepareLifecyclePreflightPacket\" type=\"button\">Prepare preflight packet</button>
+          <button id=\"copyLifecyclePreflightPacket\" type=\"button\">Copy preflight packet</button>
+        </div>
+        <p id=\"lifecyclePreflightExportStatus\">No lifecycle preflight packet prepared yet.</p>
+        <pre id=\"lifecyclePreflightPacketOut\"></pre>
       </div>
       <ul>
         <li><a id=\"lifecycleSmokeRunnerReport\" href=\"{LIFECYCLE_SMOKE_RUNNER_REPORT_REL}\">Report 342 lifecycle smoke runner</a></li>
@@ -696,6 +702,7 @@ def _js() -> str:
 const MANUAL_RECORD_KEY = 'ssrm_primary_demo_manual_pass_records';
 const DEFECT_LEDGER_KEY = 'ssrm_primary_demo_defect_ledger';
 const RECORDER_EXPORT_KEY = 'ssrm_primary_demo_recorder_export';
+const LIFECYCLE_PREFLIGHT_EXPORT_KEY = 'ssrm_primary_demo_lifecycle_preflight_packet';
 const OUTSIDE_REVIEW_KEY = 'ssrm_primary_demo_outside_review_checklist';
 const OUTSIDE_REVIEW_EXPORT_KEY = 'ssrm_primary_demo_outside_review_handoff';
 const SHELL_STATE_KEY = 'ssrm_v61_app_shell_world';
@@ -1076,6 +1083,91 @@ function renderOutsideReviewHandoffPreview(message) {
   return payload;
 }
 
+function lifecyclePreflightPhaseStatuses() {
+  const rows = Array.from(document.querySelectorAll('[data-lifecycle-preflight-phase]'));
+  return rows.reduce((accumulator, row) => {
+    accumulator[row.dataset.lifecyclePreflightPhase] = row.dataset.lifecyclePreflightStatus || 'unknown';
+    return accumulator;
+  }, {});
+}
+
+function readLifecyclePreflightPacket() {
+  const text = localStorage.getItem(LIFECYCLE_PREFLIGHT_EXPORT_KEY) || '';
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    return { parseError: true, raw: text, boundary: 'lifecycle-preflight-packet-preview-public-local-only' };
+  }
+}
+
+function buildLifecyclePreflightPacket(action = 'prepare') {
+  const sourceNode = document.getElementById('lifecycleSmokePreflight');
+  const phaseStatuses = lifecyclePreflightPhaseStatuses();
+  return {
+    reportIntroduced: 345,
+    action,
+    command: document.getElementById('lifecycleSmokeRunnerCommand')?.textContent || '',
+    policy: document.getElementById('lifecycleSmokeRunnerPolicy')?.textContent || '',
+    freshness: (document.getElementById('lifecycleSmokeFreshness')?.textContent || '').replace('Runner freshness: ', ''),
+    blockingPhase: sourceNode?.dataset.lifecyclePreflightBlockingPhase || 'unknown',
+    phaseStatuses,
+    phaseCount: Object.keys(phaseStatuses).length,
+    sources: {
+      sourceMarker: sourceNode?.dataset.lifecyclePreflightSource || 'unknown',
+      report: document.getElementById('lifecycleSmokeRunnerReport')?.getAttribute('href') || '',
+      results: document.getElementById('lifecycleSmokeRunnerResults')?.getAttribute('href') || '',
+      manifest: document.getElementById('lifecycleSmokeRunnerManifest')?.getAttribute('href') || ''
+    },
+    preparedAt: new Date().toISOString(),
+    boundary: 'lifecycle-preflight-packet-browser-local-artifact-status-only'
+  };
+}
+
+function renderLifecyclePreflightPacket(message) {
+  const packet = readLifecyclePreflightPacket();
+  const status = document.getElementById('lifecyclePreflightExportStatus');
+  if (status) status.textContent = message || (packet ? `Lifecycle preflight packet prepared at ${packet.preparedAt}; blocking phase ${packet.blockingPhase}.` : 'No lifecycle preflight packet prepared yet.');
+  const out = document.getElementById('lifecyclePreflightPacketOut');
+  if (out) out.textContent = packet ? JSON.stringify(packet, null, 2) : 'No lifecycle preflight packet prepared yet.';
+  return packet;
+}
+
+function prepareLifecyclePreflightPacket(action = 'prepare') {
+  const packet = buildLifecyclePreflightPacket(action);
+  const text = JSON.stringify(packet, null, 2);
+  localStorage.setItem(LIFECYCLE_PREFLIGHT_EXPORT_KEY, text);
+  let link = document.getElementById('preparedLifecyclePreflightPacket');
+  if (!link) {
+    link = document.createElement('a');
+    link.id = 'preparedLifecyclePreflightPacket';
+    link.className = 'button';
+    link.download = 'ssrm_primary_demo_lifecycle_preflight_packet.json';
+    link.textContent = 'Download lifecycle preflight packet JSON';
+    document.getElementById('lifecyclePreflightPacketActions')?.appendChild(link);
+  }
+  link.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  renderLifecyclePreflightPacket(`Lifecycle preflight packet prepared; blocking phase ${packet.blockingPhase}.`);
+  return packet;
+}
+
+async function copyLifecyclePreflightPacket() {
+  const packet = prepareLifecyclePreflightPacket('copy');
+  const text = JSON.stringify(packet, null, 2);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      renderLifecyclePreflightPacket(`Lifecycle preflight packet copied; blocking phase ${packet.blockingPhase}.`);
+      return packet;
+    } catch (error) {
+      renderLifecyclePreflightPacket(`Clipboard copy blocked; download link prepared instead. Blocking phase ${packet.blockingPhase}.`);
+      return packet;
+    }
+  }
+  renderLifecyclePreflightPacket(`Clipboard unavailable; download link prepared instead. Blocking phase ${packet.blockingPhase}.`);
+  return packet;
+}
+
 function recordStep(stepId, result) {
   const rows = readList(MANUAL_RECORD_KEY);
   rows.push({
@@ -1191,6 +1283,8 @@ document.querySelectorAll('[data-record-step]').forEach(button => {
 document.getElementById('recordDefect')?.addEventListener('click', recordDefectNote);
 document.getElementById('resolveLatestDefect')?.addEventListener('click', resolveLatestDefect);
 document.getElementById('exportRecorder')?.addEventListener('click', exportRecorder);
+document.getElementById('prepareLifecyclePreflightPacket')?.addEventListener('click', () => prepareLifecyclePreflightPacket());
+document.getElementById('copyLifecyclePreflightPacket')?.addEventListener('click', () => { copyLifecyclePreflightPacket(); });
 document.getElementById('clearRecorder')?.addEventListener('click', clearRecorder);
 document.querySelectorAll('[data-outside-review-item]').forEach(button => {
   button.addEventListener('click', () => markOutsideReviewItem(button.dataset.outsideReviewItem));
@@ -1202,6 +1296,7 @@ document.getElementById('clearOutsideReview')?.addEventListener('click', clearOu
 renderOutsideReviewChecklist();
 renderOutsideReviewEvidence();
 renderOutsideReviewHandoffPreview();
+renderLifecyclePreflightPacket();
 renderRecorder();
 """
 
@@ -1235,6 +1330,39 @@ Boundary: {BOUNDARY}
 ## Scope guards
 
 {guards}
+
+## Maintained lifecycle smoke runner
+
+Future primary-demo handoff changes should run one maintained gate before adding another lifecycle variant report.
+
+Command: `{LIFECYCLE_SMOKE_RUNNER_COMMAND}`
+
+Artifacts:
+
+- Report: `docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md`
+- Results: `artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_results.json`
+- Manifest: `artifacts/ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_runner_manifest.json`
+
+Preflight status visible in the launcher:
+
+- Runner freshness: Report 342 runner results pass; Report 343 entrypoint wiring pass
+- Blocking lifecycle phase: none
+- Boundary: {LIFECYCLE_SMOKE_PREFLIGHT_BOUNDARY}
+
+Lifecycle phases shown in the preflight panel:
+
+- `cross_tab_prepared_resume_visible`: pass (fresh cross-tab prepared resume)
+- `closed_origin_tab_continuity`: pass (closed-origin continuity)
+- `hard_reload_continuity`: pass (hard-reload continuity)
+- `stale_supersession_calibration`: pass (stale prepared-handoff calibration)
+- `stale_reprepare_repair`: pass (stale mismatch clean reprepare repair)
+- `repaired_continue_return_refresh`: pass (repaired continue-return-refresh freshness)
+
+Browser-local packet action:
+
+- Use `Prepare preflight packet` to create a downloadable `ssrm_primary_demo_lifecycle_preflight_packet.json` receipt.
+- Use `Copy preflight packet` to attempt clipboard copy; if clipboard permission is unavailable, the download link and visible JSON preview remain the fallback.
+- The packet is browser-local review evidence only and does not make a live hosted browser E2E claim.
 
 ## Outside-review checklist
 

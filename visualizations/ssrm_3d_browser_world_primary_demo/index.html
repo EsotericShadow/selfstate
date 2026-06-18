@@ -65,6 +65,12 @@
         <li data-lifecycle-preflight-phase="stale_reprepare_repair" data-lifecycle-preflight-status="pass"><strong>stale mismatch clean reprepare repair</strong>: pass</li>
         <li data-lifecycle-preflight-phase="repaired_continue_return_refresh" data-lifecycle-preflight-status="pass"><strong>repaired continue-return-refresh freshness</strong>: pass</li>
         </ul>
+        <div class="actions compact" id="lifecyclePreflightPacketActions" aria-label="Lifecycle preflight packet actions">
+          <button id="prepareLifecyclePreflightPacket" type="button">Prepare preflight packet</button>
+          <button id="copyLifecyclePreflightPacket" type="button">Copy preflight packet</button>
+        </div>
+        <p id="lifecyclePreflightExportStatus">No lifecycle preflight packet prepared yet.</p>
+        <pre id="lifecyclePreflightPacketOut"></pre>
       </div>
       <ul>
         <li><a id="lifecycleSmokeRunnerReport" href="../../docs/342_ssrm_3d_browser_world_v102_primary_demo_lifecycle_smoke_runner_report.md">Report 342 lifecycle smoke runner</a></li>

@@ -1,0 +1,13 @@
+name,passed,score,channel,detail
+preflight_artifacts_available_and_passing,True,1.0,artifact source,Report 344 preflight results and packet exist and pass.
+preflight_source_phase_set_complete,True,1.0,artifact source,Source preflight packet has all lifecycle phases and no blocking phase.
+launcher_exposes_packet_actions,True,1.0,entrypoint controls,"Primary launcher exposes prepare/copy controls, status line, and JSON preview for the preflight packet."
+javascript_defines_packet_storage_and_builders,True,1.0,browser behavior,"Launcher JS defines storage key, phase reader, packet reader, packet builder, renderer, prepare, and copy functions."
+javascript_defines_clipboard_fallback_and_download,True,1.0,browser behavior,Launcher JS attempts clipboard copy but prepares a downloadable JSON fallback and visible preview.
+javascript_wires_packet_buttons,True,1.0,browser behavior,Prepare and copy buttons are wired to browser-local packet actions.
+manual_documents_packet_action,True,1.0,manual path,"Manual playtest script explains prepare, copy, fallback, and review-evidence semantics."
+generator_preserves_packet_export_controls,True,1.0,generator durability,v63 generator preserves the packet action controls and preview/status nodes.
+generator_preserves_packet_export_behavior,True,1.0,generator durability,v63 generator preserves packet JS behavior and manual documentation.
+export_packet_is_compact_and_attachable,True,1.0,packet contract,Report 345 emits a compact packet contract matching the browser download payload.
+experiment_index_includes_packet_export_report,True,1.0,runner index,Experiment runner index includes the Report 345 verifier module.
+claim_boundary_preserved,True,1.0,claim hygiene,"Boundary rejects clipboard-success overclaiming, hosted URL, live E2E, production persistence, consciousness, moral patienthood, complete engine, and finished gameplay claims."

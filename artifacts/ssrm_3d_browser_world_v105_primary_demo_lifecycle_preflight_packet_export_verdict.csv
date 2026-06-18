@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,blocking_phase_count,next_gate
+345,pass,1.0,0,"post-345: connect the exported lifecycle preflight packet to the outside-review handoff payload so reviewers get one combined handoff receipt covering shell evidence, manual notes, defects, and lifecycle smoke status"

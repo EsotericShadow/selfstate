@@ -1,0 +1,57 @@
+seed,action_id,action,resident,source_schedule_id,schedule,ordinary_action
+36217,36217-LIV-01,askSchedule,Fay,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36217,36217-LIV-02,borrowTool,Milo,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36217,36217-LIV-03,offerHelp,Sera,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36217,36217-LIV-04,runScheduledAnomalyInvestigation,Tovan,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36217,36217-LIV-05,askSchedule,Nia,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36217,36217-LIV-06,offerHelp,Ari,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36217,36217-LIV-07,askSchedule,Fay,36217-SCH-01,archiving failed smoke-bound/quiet-doubt,True
+36231,36231-LIV-01,askSchedule,Sera,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36231,36231-LIV-02,borrowTool,Tovan,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36231,36231-LIV-03,offerHelp,Nia,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36231,36231-LIV-04,runScheduledAnomalyInvestigation,Ari,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36231,36231-LIV-05,askSchedule,Fay,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36231,36231-LIV-06,offerHelp,Milo,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36231,36231-LIV-07,askSchedule,Sera,36231-SCH-01,archiving failed missing-repeat/quiet-doubt,True
+36247,36247-LIV-01,askSchedule,Fay,36247-SCH-01,safety custom for grain pull/water-hush,True
+36247,36247-LIV-02,borrowTool,Milo,36247-SCH-01,safety custom for grain pull/water-hush,True
+36247,36247-LIV-03,offerHelp,Sera,36247-SCH-01,safety custom for grain pull/water-hush,True
+36247,36247-LIV-04,runScheduledAnomalyInvestigation,Tovan,36247-SCH-01,safety custom for grain pull/water-hush,True
+36247,36247-LIV-05,askSchedule,Nia,36247-SCH-01,safety custom for grain pull/water-hush,True
+36247,36247-LIV-06,offerHelp,Ari,36247-SCH-01,safety custom for grain pull/water-hush,True
+36247,36247-LIV-07,askSchedule,Fay,36247-SCH-01,safety custom for grain pull/water-hush,True
+36263,36263-LIV-01,askSchedule,Nia,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36263,36263-LIV-02,borrowTool,Ari,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36263,36263-LIV-03,offerHelp,Fay,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36263,36263-LIV-04,runScheduledAnomalyInvestigation,Milo,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36263,36263-LIV-05,askSchedule,Sera,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36263,36263-LIV-06,offerHelp,Tovan,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36263,36263-LIV-07,askSchedule,Nia,36263-SCH-01,arguing rival theory quiet sting/quiet-doubt,True
+36281,36281-LIV-01,askSchedule,Nia,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36281,36281-LIV-02,borrowTool,Ari,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36281,36281-LIV-03,offerHelp,Fay,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36281,36281-LIV-04,runScheduledAnomalyInvestigation,Milo,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36281,36281-LIV-05,askSchedule,Sera,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36281,36281-LIV-06,offerHelp,Tovan,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36281,36281-LIV-07,askSchedule,Nia,36281-SCH-01,arguing rival theory edge-shame/quiet-doubt,True
+36307,36307-LIV-01,askSchedule,Fay,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36307,36307-LIV-02,borrowTool,Milo,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36307,36307-LIV-03,offerHelp,Sera,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36307,36307-LIV-04,runScheduledAnomalyInvestigation,Tovan,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36307,36307-LIV-05,askSchedule,Nia,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36307,36307-LIV-06,offerHelp,Ari,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36307,36307-LIV-07,askSchedule,Fay,36307-SCH-01,arguing rival theory safe-gap/half-sign,True
+36319,36319-LIV-01,askSchedule,Fay,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36319,36319-LIV-02,borrowTool,Milo,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36319,36319-LIV-03,offerHelp,Sera,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36319,36319-LIV-04,runScheduledAnomalyInvestigation,Tovan,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36319,36319-LIV-05,askSchedule,Nia,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36319,36319-LIV-06,offerHelp,Ari,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36319,36319-LIV-07,askSchedule,Fay,36319-SCH-01,bench practice for fiber-rise/edge-shame,True
+36343,36343-LIV-01,askSchedule,Fay,36343-SCH-01,archiving failed smoke-bound/tool-anger,True
+36343,36343-LIV-02,borrowTool,Milo,36343-SCH-01,archiving failed smoke-bound/tool-anger,True
+36343,36343-LIV-03,offerHelp,Sera,36343-SCH-01,archiving failed smoke-bound/tool-anger,True
+36343,36343-LIV-04,runScheduledAnomalyInvestigation,Tovan,36343-SCH-01,archiving failed smoke-bound/tool-anger,True
+36343,36343-LIV-05,askSchedule,Nia,36343-SCH-01,archiving failed smoke-bound/tool-anger,True
+36343,36343-LIV-06,offerHelp,Ari,36343-SCH-01,archiving failed smoke-bound/tool-anger,True
+36343,36343-LIV-07,askSchedule,Fay,36343-SCH-01,archiving failed smoke-bound/tool-anger,True

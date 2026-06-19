@@ -1,0 +1,17 @@
+concern_id,resident,problem,source_practice_id,urgency,who_felt_this,avatar_direct_control
+VBC-001,Fay,maintenance for smoke-bound/quiet-doubt safety limit practice,36217-EPG-001,high,Fay,False
+VBC-002,Tovan,maintenance for smoke-bound/quiet-doubt schedule conflict practice,36217-EPG-002,medium,Tovan,False
+VBC-003,Sera,maintenance for missing-repeat/quiet-doubt safety limit practice,36231-EPG-003,high,Sera,False
+VBC-004,Milo,maintenance for missing-repeat/quiet-doubt schedule conflict practice,36231-EPG-004,medium,Milo,False
+VBC-005,Sera,maintenance for grain pull/water-hush safety limit practice,36247-EPG-005,medium,Sera,False
+VBC-006,Ari,maintenance for grain pull/water-hush schedule conflict practice,36247-EPG-006,medium,Ari,False
+VBC-007,Fay,maintenance for quiet sting/quiet-doubt safety limit practice,36263-EPG-007,high,Fay,False
+VBC-008,Milo,maintenance for quiet sting/quiet-doubt schedule conflict practice,36263-EPG-008,medium,Milo,False
+VBC-009,Sera,maintenance for edge-shame/quiet-doubt safety limit practice,36281-EPG-009,high,Sera,False
+VBC-010,Ari,maintenance for edge-shame/quiet-doubt schedule conflict practice,36281-EPG-010,medium,Ari,False
+VBC-011,Nia,maintenance for safe-gap/half-sign safety limit practice,36307-EPG-011,high,Nia,False
+VBC-012,Tovan,maintenance for safe-gap/half-sign schedule conflict practice,36307-EPG-012,medium,Tovan,False
+VBC-013,Nia,maintenance for fiber-rise/edge-shame safety limit practice,36319-EPG-013,high,Nia,False
+VBC-014,Milo,maintenance for fiber-rise/edge-shame schedule conflict practice,36319-EPG-014,medium,Milo,False
+VBC-015,Sera,maintenance for smoke-bound/tool-anger safety limit practice,36343-EPG-015,high,Sera,False
+VBC-016,Tovan,maintenance for smoke-bound/tool-anger schedule conflict practice,36343-EPG-016,medium,Tovan,False

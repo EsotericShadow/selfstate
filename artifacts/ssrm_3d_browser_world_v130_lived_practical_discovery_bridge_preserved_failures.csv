@@ -1,0 +1,9 @@
+seed,test_id,proposal_id,resident,materials,visible_observation,failure,preserved_failure,repeated_evidence,candidate_label,source_belief_id,wrong_belief_still_useful,stochastic_seeded,hidden_law_exposed_to_resident
+36217,36217-PDT-03,36217-PDP-03,Sera,reed_fiber+wet_wood,paused for safety boundary,True,True,1,smoke-bound/quiet-doubt safety limit practice,36217-BEL-004,True,False,False
+36231,36231-PDT-03,36231-PDP-03,Nia,reed_fiber+wet_wood,paused for safety boundary,True,True,1,missing-repeat/quiet-doubt safety limit practice,36231-BEL-004,True,True,False
+36247,36247-PDT-03,36247-PDP-03,Sera,reed_fiber+wet_wood,paused for safety boundary,True,True,1,grain pull/water-hush safety limit practice,36247-BEL-004,True,False,False
+36263,36263-PDT-03,36263-PDP-03,Fay,reed_fiber+wet_wood,paused for safety boundary,True,True,1,quiet sting/quiet-doubt safety limit practice,36263-BEL-004,True,False,False
+36281,36281-PDT-03,36281-PDP-03,Fay,reed_fiber+wet_wood,paused for safety boundary,True,True,1,edge-shame/quiet-doubt safety limit practice,36281-BEL-004,True,False,False
+36307,36307-PDT-03,36307-PDP-03,Sera,reed_fiber+wet_wood,paused for safety boundary,True,True,1,safe-gap/half-sign safety limit practice,36307-BEL-004,True,False,False
+36319,36319-PDT-03,36319-PDP-03,Sera,reed_fiber+wet_wood,paused for safety boundary,True,True,1,fiber-rise/edge-shame safety limit practice,36319-BEL-004,True,False,False
+36343,36343-PDT-03,36343-PDP-03,Sera,reed_fiber+wet_wood,paused for safety boundary,True,True,1,smoke-bound/tool-anger safety limit practice,36343-BEL-004,True,False,False

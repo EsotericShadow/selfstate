@@ -1336,3 +1336,11 @@ The improvement is not that the world is complete. The improvement is that cultu
 
 Next gate: make practical discovery emerge from repeated lived browser actions rather than from report artifacts.
 
+
+## Report 370: SSRM-3D Emergent Practice Graph and Reality Constraint Bridge
+
+Report 370 implements the first explicit practice-graph layer. Practice nodes are not pre-authored technologies; they are created after resident actions expose bottlenecks, residents generate local proposals, tests run, failed ancestors remain visible, repeated evidence accumulates, and social memory mutates the local name. The shell now has visible `Emergent Practices`, `Village Board`, and `Reality Constraint Ledger` surfaces.
+
+The village board keeps management diegetic: residents post concerns and project proposal cards, while the avatar can support, ask, suggest, or wait but cannot force obedience. The reality ledger adds causal discipline: material sources, transformations, time/work costs, tool wear, resident effort, maintenance obligations, conservation checks, hidden-law audit rows, and public resident interpretations.
+
+Next gate: let successful local practices alter resident roles, reputation, and multi-household diffusion over return sessions without becoming a fixed technology tree.

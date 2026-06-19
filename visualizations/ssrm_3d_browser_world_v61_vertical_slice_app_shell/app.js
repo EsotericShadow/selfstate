@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -77,6 +77,10 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   stochasticHistoryInfluence: null,
   stochasticOrdinaryAffordance: null,
   civilizationPressure: null,
+  practicalDiscovery: null,
+  emergentPracticeGraph: null,
+  villageBoard: null,
+  realityConstraintLedger: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -1985,6 +1989,10 @@ function runStateBoundaryAudit() {
     stochasticHistoryInfluence: world.stochasticHistoryInfluence,
     stochasticOrdinaryAffordance: world.stochasticOrdinaryAffordance,
     civilizationPressure: world.civilizationPressure,
+    practicalDiscovery: world.practicalDiscovery,
+    emergentPracticeGraph: world.emergentPracticeGraph,
+    villageBoard: world.villageBoard,
+    realityConstraintLedger: world.realityConstraintLedger,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2675,7 +2683,14 @@ function describeReplayRow(row) {
     runStochasticHistoryInfluenceLoop: `stochastic history influence choices=${payload.choices ? payload.choices.length : 0} echo=${payload.echo}`,
     runOrdinaryAffordanceInfluenceLoop: `ordinary affordance influence actions=${payload.actionsAdded} blocked=${payload.blockedCount}`,
     runCivilizationPressureStep: `civilization pressure ${payload.pressureType} resident=${payload.resident} schedule=${payload.schedule}`,
-    runCivilizationPressureLoop: `civilization pressure loop steps=${payload.stepsAdded} schedules=${payload.scheduleRewrites}`
+    runCivilizationPressureLoop: `civilization pressure loop steps=${payload.stepsAdded} schedules=${payload.scheduleRewrites}`,
+    runPracticalDiscoveryStep: `practical discovery ${payload.action} bottleneck=${payload.bottleneckType} candidate=${payload.practiceCandidate}`,
+    runPracticalDiscoveryLoop: `practical discovery loop actions=${payload.livedActions} candidates=${payload.practiceCandidates} adopted=${payload.practiceAdoptions}`,
+    runVillageBoardLoop: `village board concerns=${payload.concerns} proposals=${payload.proposals} support=${payload.supportEvents}`,
+    supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
+    askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
+    waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
+    runRealityConstraintAudit: `reality constraint audit pass=${payload.pass === true} rows=${payload.rows}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -2733,6 +2748,10 @@ function render() {
   renderStochasticHistoryInfluence();
   renderStochasticOrdinaryAffordance();
   renderCivilizationPressure();
+  renderPracticalDiscovery();
+  renderEmergentPracticeGraph();
+  renderVillageBoard();
+  renderRealityConstraintLedger();
   draw();
 }
 function draw() {
@@ -2904,6 +2923,459 @@ function renderCivilizationPressure() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+function ensurePracticalDiscovery() {
+  if (!world.civilizationPressure) runCivilizationPressureLoop();
+  if (!world.practicalDiscovery) {
+    world.practicalDiscovery = {
+      reportIntroduced: 370,
+      boundary: 'browser-local-lived-practical-discovery-only; no LLM call, no subjective consciousness, no moral patienthood, no predeclared invention list',
+      discoveryPolicy: 'ordinary actions create bottlenecks; residents propose tests from those bottlenecks; repeated evidence can stabilize a local practice without installing a correct concept',
+      livedActions: [],
+      bottlenecks: [],
+      residentProposals: [],
+      practicalTests: [],
+      preservedFailures: [],
+      practiceCandidates: [],
+      practiceAdoptions: [],
+      sourceLedger: []
+    };
+  }
+  return world.practicalDiscovery;
+}
+
+function latestCivilizationSourceFor(resident) {
+  const pressure = ensureCivilizationPressure();
+  return pressure.pressureLedger.slice().reverse().find(row => row.resident === resident)
+    || pressure.pressureLedger[pressure.pressureLedger.length - 1]
+    || { sourceBeliefId: `${resident}:unsettled-sign`, sourceBeliefLabel: 'unsettled sign', pressureType: 'schedule_rewrite' };
+}
+
+function livedBottleneckFor(action, resident) {
+  const source = latestCivilizationSourceFor(resident);
+  const schedule = world.residents[resident].schedule;
+  let type = 'schedule_conflict';
+  let detail = `${resident} is doing ${schedule}`;
+  if (action === 'borrowTool' || /hauling|route/.test(schedule)) {
+    type = 'material_shortage';
+    detail = `materials shifted around ${source.sourceBeliefLabel}`;
+  } else if (action === 'offerHelp' && (/safe|checking|boundary/.test(schedule) || source.pressureType === 'safety_custom')) {
+    type = 'safety_limit';
+    detail = `help must respect a safety custom around ${source.sourceBeliefLabel}`;
+  } else if (/teaching/.test(schedule)) {
+    type = 'apprenticeship_gap';
+    detail = `teaching needs a repeatable practice for ${source.sourceBeliefLabel}`;
+  } else if (world.resources.care < 3) {
+    type = 'care_shortage';
+    detail = 'care is scarce after ordinary help actions';
+  }
+  return { type, detail, source };
+}
+
+function materialsForBottleneck(type, label) {
+  const materials = ['reed_fiber', 'dry_resin'];
+  if (/red|bite|carry/.test(label)) materials[0] = 'red_scrap';
+  if (/wet|water|safe|boundary/.test(label) || type === 'safety_limit') materials[1] = 'wet_wood';
+  if (/jar|archive|school/.test(label) || type === 'apprenticeship_gap') materials[1] = 'clay_jar';
+  if (/route|grain|hauling/.test(label) || type === 'material_shortage') materials[0] = 'iron_sand';
+  return materials;
+}
+
+function runPracticalDiscoveryStep(action = 'lived_pressure') {
+  const discovery = ensurePracticalDiscovery();
+  const resident = world.selected;
+  const bottleneck = livedBottleneckFor(action, resident);
+  const source = bottleneck.source;
+  const sequence = discovery.practicalTests.length + 1;
+  const materials = materialsForBottleneck(bottleneck.type, source.sourceBeliefLabel);
+  const repeatedEvidence = discovery.practicalTests.filter(row => row.sourceBeliefId === source.sourceBeliefId && row.bottleneckType === bottleneck.type).length + 1;
+  const failure = bottleneck.type === 'safety_limit' && repeatedEvidence < 2;
+  const outcome = failure
+    ? `test paused because ${bottleneck.detail}`
+    : `repeatable workaround for ${bottleneck.detail}`;
+  const candidateLabel = `${source.sourceBeliefLabel} ${bottleneck.type.replace('_', ' ')} practice`;
+  const actionRow = { id: `LIV-${String(discovery.livedActions.length + 1).padStart(2, '0')}`, action, resident, schedule: world.residents[resident].schedule, resources: { ...world.resources }, ordinaryAction: true };
+  const bottleneckRow = { id: `BOT-${String(discovery.bottlenecks.length + 1).padStart(2, '0')}`, actionId: actionRow.id, resident, bottleneckType: bottleneck.type, detail: bottleneck.detail, sourceBeliefId: source.sourceBeliefId, sourceBeliefLabel: source.sourceBeliefLabel };
+  const proposal = { id: `PDP-${String(discovery.residentProposals.length + 1).padStart(2, '0')}`, resident, sourceBottleneckId: bottleneckRow.id, sourceBeliefId: source.sourceBeliefId, materials, question: `try a local workaround for ${bottleneck.type}`, residentGenerated: true, avatarAnswer: false, predeclaredInvention: false };
+  const test = { id: `PDT-${String(sequence).padStart(2, '0')}`, proposalId: proposal.id, resident, materials, outcome, failure, preservedFailure: failure, repeatedEvidence, candidateLabel, sourceBeliefId: source.sourceBeliefId, bottleneckType: bottleneck.type, noCorrectConceptInstalled: true };
+  discovery.livedActions.push(actionRow);
+  discovery.bottlenecks.push(bottleneckRow);
+  discovery.residentProposals.push(proposal);
+  discovery.practicalTests.push(test);
+  if (failure) discovery.preservedFailures.push(test);
+  if (repeatedEvidence >= 2 && !failure) {
+    const existing = discovery.practiceCandidates.find(row => row.label === candidateLabel);
+    const candidate = existing || { id: `PDC-${String(discovery.practiceCandidates.length + 1).padStart(2, '0')}`, label: candidateLabel, sourceBeliefId: source.sourceBeliefId, bottleneckType: bottleneck.type, evidenceCount: 0, adopted: false, predeclaredInvention: false };
+    candidate.evidenceCount += 1;
+    if (!existing) discovery.practiceCandidates.push(candidate);
+    if (candidate.evidenceCount >= 2 && !candidate.adopted) {
+      candidate.adopted = true;
+      const adoption = { id: `PDA-${String(discovery.practiceAdoptions.length + 1).padStart(2, '0')}`, resident, practiceCandidateId: candidate.id, label: candidate.label, sourceBeliefId: source.sourceBeliefId, changedSchedule: true, changedMemory: true, predeclaredInvention: false };
+      discovery.practiceAdoptions.push(adoption);
+      mutateResident(resident, { progress: 0.012, trust: 0.006, schedule: `using ${candidate.label}`, memory: `adopted local practice ${candidate.label}`, historyEvent: 'practical discovery adoption', historyDetail: `${candidate.label} from ${source.sourceBeliefId}` });
+    }
+  }
+  discovery.sourceLedger.push({ id: test.id, sourceBeliefId: source.sourceBeliefId, sourceBottleneckId: bottleneckRow.id, ordinaryAction: action, hiddenLawExposed: false, avatarAnswer: false });
+  updateEmergentPracticeGraphFromTest(test, proposal, bottleneckRow, source);
+  recordRealityConstraint('practical_test', {
+    resident,
+    sourceBeliefId: source.sourceBeliefId,
+    materials,
+    publicObservation: outcome,
+    residentInterpretation: candidateLabel,
+    materialTransformation: failure ? 'materials handled then test paused' : 'materials combined into repeatable local practice attempt',
+    timeCost: 1,
+    workCost: bottleneck.type === 'material_shortage' ? 2 : 1,
+    toolWear: materials.includes('iron_sand') ? 1 : 0,
+    maintenanceObligation: repeatedEvidence >= 2 ? `keep checking ${candidateLabel}` : 'none',
+    unintendedConsequence: failure ? 'safety caution increased' : 'none',
+    hiddenLawInvolved: source.sourceBeliefLabel,
+    conservationCheck: true
+  });
+  return log('runPracticalDiscoveryStep', { action, resident, bottleneckType: bottleneck.type, sourceBeliefId: source.sourceBeliefId, proposal: proposal.id, test: test.id, failure, repeatedEvidence, practiceCandidate: candidateLabel, adoptedCount: discovery.practiceAdoptions.length });
+}
+
+function runPracticalDiscoveryLoop() {
+  const discovery = ensurePracticalDiscovery();
+  const before = discovery.practicalTests.length;
+  const actions = [
+    ['askSchedule', () => askSchedule()],
+    ['borrowTool', () => borrowTool()],
+    ['offerHelp', () => offerHelp()],
+    ['runScheduledAnomalyInvestigation', () => runScheduledAnomalyInvestigation()],
+    ['askSchedule', () => askSchedule()],
+    ['offerHelp', () => offerHelp()]
+  ];
+  actions.forEach(([name, fn]) => {
+    fn();
+    runPracticalDiscoveryStep(name);
+  });
+  return log('runPracticalDiscoveryLoop', {
+    livedActions: discovery.livedActions.length,
+    stepsAdded: discovery.practicalTests.length - before,
+    bottlenecks: discovery.bottlenecks.length,
+    residentProposals: discovery.residentProposals.length,
+    practicalTests: discovery.practicalTests.length,
+    preservedFailures: discovery.preservedFailures.length,
+    practiceCandidates: discovery.practiceCandidates.length,
+    practiceAdoptions: discovery.practiceAdoptions.length,
+    boundary: discovery.boundary
+  });
+}
+
+function renderPracticalDiscovery() {
+  const summaryNode = document.getElementById('practicalDiscoverySummaryOut');
+  const detailNode = document.getElementById('practicalDiscoveryOut');
+  const discovery = world.practicalDiscovery;
+  if (summaryNode) {
+    summaryNode.textContent = discovery
+      ? `${discovery.livedActions.length} lived actions / ${discovery.practiceCandidates.length} candidates / ${discovery.practiceAdoptions.length} adopted`
+      : 'No practical discovery yet.';
+  }
+  if (!detailNode) return;
+  if (!discovery) {
+    detailNode.textContent = 'No practical discovery yet. Run lived action loop after civilization pressure exists.';
+    return;
+  }
+  const bottlenecks = discovery.bottlenecks.slice(-6).map(row => `${row.id}: ${row.resident} ${row.bottleneckType} from ${row.sourceBeliefLabel}`);
+  const proposals = discovery.residentProposals.slice(-6).map(row => `${row.id}: ${row.resident} tries ${row.materials.join(' + ')} / ${row.question}`);
+  const tests = discovery.practicalTests.slice(-6).map(row => `${row.id}: repeated=${row.repeatedEvidence} failure=${row.failure} candidate=${row.candidateLabel}`);
+  const adoptions = discovery.practiceAdoptions.slice(-4).map(row => `${row.id}: ${row.resident} adopted ${row.label}`);
+  detailNode.textContent = [
+    `Boundary: ${discovery.boundary}`,
+    `Policy: ${discovery.discoveryPolicy}`,
+    'Bottlenecks from lived actions:',
+    ...(bottlenecks.length ? bottlenecks : ['none']),
+    'Resident-generated proposals:',
+    ...(proposals.length ? proposals : ['none']),
+    'Practical tests:',
+    ...(tests.length ? tests : ['none']),
+    'Practice adoptions:',
+    ...(adoptions.length ? adoptions : ['none'])
+  ].join('\n');
+}
+
+function ensureEmergentPracticeGraph() {
+  if (!world.emergentPracticeGraph) {
+    world.emergentPracticeGraph = {
+      reportIntroduced: 370,
+      boundary: 'browser-local-emergent-practice-graph-only; graph generated after history, not before action',
+      nodes: [],
+      edges: [],
+      auditSplit: 'normal view shows local names and resident beliefs; audit view may show hidden material properties',
+      noPredefinedTechTree: true
+    };
+  }
+  return world.emergentPracticeGraph;
+}
+
+function updateEmergentPracticeGraphFromTest(test, proposal, bottleneck, source) {
+  const graph = ensureEmergentPracticeGraph();
+  if (test.repeatedEvidence < 2 && !test.failure) return null;
+  const existing = graph.nodes.find(row => row.local_name === test.candidateLabel);
+  const failedAncestors = (world.practicalDiscovery ? world.practicalDiscovery.preservedFailures : [])
+    .filter(row => row.sourceBeliefId === source.sourceBeliefId)
+    .map(row => row.id);
+  const status = test.failure ? 'taboo' : test.repeatedEvidence >= 4 ? 'institutionalized' : test.repeatedEvidence >= 3 ? 'practical' : 'emerging';
+  const node = existing || {
+    practice_id: `EPG-${String(graph.nodes.length + 1).padStart(2, '0')}`,
+    local_name: test.candidateLabel,
+    origin_tick: world.tick,
+    origin_resident: test.resident,
+    origin_household: `${test.resident}-household`,
+    origin_event: test.id,
+    problem_pressure: bottleneck.bottleneckType,
+    materials_used: proposal.materials,
+    observations_supporting: [],
+    failed_ancestor_tests: [],
+    beliefs_involved: [],
+    social_transmission_path: [],
+    mutation_variants: [],
+    adoption_count: 0,
+    adoption_households: [],
+    practical_score: 0,
+    ritual_score: 0,
+    taboo_score: 0,
+    dispute_score: 0,
+    maintenance_cost: proposal.materials.length + 1,
+    risk_flags: [],
+    generations_survived: 0,
+    status,
+    avatar_role: 'witness_or_supporter',
+    hidden_properties_audit_only: true
+  };
+  node.observations_supporting = Array.from(new Set(node.observations_supporting.concat([test.outcome])));
+  node.failed_ancestor_tests = Array.from(new Set(node.failed_ancestor_tests.concat(failedAncestors)));
+  node.beliefs_involved = Array.from(new Set(node.beliefs_involved.concat([source.sourceBeliefId])));
+  node.social_transmission_path = Array.from(new Set(node.social_transmission_path.concat([`${test.resident}->${world.selected}`])));
+  node.mutation_variants = Array.from(new Set(node.mutation_variants.concat([test.candidateLabel, source.sourceBeliefLabel])));
+  node.adoption_count += test.failure ? 0 : 1;
+  node.adoption_households = Array.from(new Set(node.adoption_households.concat([`${test.resident}-household`])));
+  node.practical_score = Number(Math.min(1, node.practical_score + (test.failure ? 0 : 0.24)).toFixed(3));
+  node.ritual_score = Number(Math.min(1, node.ritual_score + (bottleneck.bottleneckType === 'safety_limit' ? 0.18 : 0.04)).toFixed(3));
+  node.taboo_score = Number(Math.min(1, node.taboo_score + (test.failure ? 0.28 : 0.02)).toFixed(3));
+  node.dispute_score = Number(Math.min(1, node.dispute_score + (test.repeatedEvidence < 3 ? 0.12 : 0.03)).toFixed(3));
+  node.risk_flags = Array.from(new Set(node.risk_flags.concat(test.failure ? ['failed ancestor'] : bottleneck.bottleneckType === 'safety_limit' ? ['safety custom'] : [])));
+  node.generations_survived = Math.max(node.generations_survived, Math.floor(test.repeatedEvidence / 2));
+  node.status = status;
+  if (!existing) graph.nodes.push(node);
+  graph.edges.push({ from: source.sourceBeliefId, to: node.practice_id, event: test.id, relation: test.failure ? 'failed_into_safety_memory' : 'repeated_use_into_practice', hiddenLawExposed: false });
+  return node;
+}
+
+function ensureVillageBoard() {
+  if (!world.villageBoard) {
+    world.villageBoard = {
+      reportIntroduced: 370,
+      boundary: 'diegetic-village-board-only; avatar supports conditions, residents decide',
+      concerns: [],
+      projectProposals: [],
+      supportEvents: [],
+      councilNotes: [],
+      avatarCannotForce: true
+    };
+  }
+  return world.villageBoard;
+}
+
+function villageConcernFromState(index) {
+  const graph = ensureEmergentPracticeGraph();
+  const node = graph.nodes[index % Math.max(1, graph.nodes.length)] || null;
+  const pressure = world.civilizationPressure ? world.civilizationPressure.pressureLedger[index % Math.max(1, world.civilizationPressure.pressureLedger.length)] : null;
+  const resident = pressure ? pressure.resident : Object.keys(world.residents)[index % Object.keys(world.residents).length];
+  const problem = node ? `maintenance for ${node.local_name}` : pressure ? `schedule strain around ${pressure.sourceBeliefLabel}` : 'fiber stores strained';
+  return {
+    concern_id: `VBC-${String(index + 1).padStart(2, '0')}`,
+    resident,
+    problem,
+    source: node ? node.practice_id : pressure ? pressure.sourceBeliefId : 'resource commons',
+    urgency: node && node.status === 'taboo' ? 'high' : world.resources.fiber < 8 ? 'medium' : 'low',
+    who_felt_this: resident,
+    avatar_direct_control: false
+  };
+}
+
+function projectProposalFromConcern(concern) {
+  const resident = world.residents[concern.resident] || currentResident();
+  return {
+    proposal_id: `VBP-${String(world.villageBoard.projectProposals.length + 1).padStart(2, '0')}`,
+    proposer: concern.resident,
+    problem_addressed: concern.problem,
+    materials_needed: concern.urgency === 'high' ? ['fiber', 'wood', 'care'] : ['fiber', 'care'],
+    likely_helpers: Object.keys(world.residents).filter(name => name !== concern.resident).slice(0, 2),
+    resident_willingness: Number(Math.max(0.12, Math.min(0.92, resident.trust - resident.debt * 0.06)).toFixed(3)),
+    known_objections: concern.urgency === 'high' ? ['fear of repeating failed test'] : ['ordinary work delay'],
+    risk: concern.urgency,
+    maintenance_cost: concern.urgency === 'high' ? 2 : 1,
+    related_memories: [resident.memory],
+    related_practice_nodes: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.slice(-2).map(row => row.practice_id) : [],
+    possible_failure_modes: ['materials run short', 'resident refuses', 'weather interrupts'],
+    current_support_level: 0,
+    avatar_can_force: false,
+    status: 'resident proposed'
+  };
+}
+
+function runVillageBoardLoop() {
+  const board = ensureVillageBoard();
+  if (!world.practicalDiscovery || !world.practicalDiscovery.practicalTests.length) runPracticalDiscoveryLoop();
+  const before = board.concerns.length;
+  for (let i = 0; i < 3; i += 1) {
+    const concern = villageConcernFromState(board.concerns.length);
+    const proposal = projectProposalFromConcern(concern);
+    board.concerns.push(concern);
+    board.projectProposals.push(proposal);
+    recordRealityConstraint('village_board_proposal', {
+      resident: concern.resident,
+      sourceBeliefId: concern.source,
+      materials: proposal.materials_needed,
+      publicObservation: concern.problem,
+      residentInterpretation: proposal.status,
+      materialTransformation: 'proposal only; no construction without support and material cost',
+      timeCost: 1,
+      workCost: 1,
+      toolWear: 0,
+      maintenanceObligation: `maintain proposal ${proposal.proposal_id}`,
+      unintendedConsequence: 'ordinary work may be delayed',
+      hiddenLawInvolved: 'audit only if related practice node exists',
+      conservationCheck: true
+    });
+  }
+  return log('runVillageBoardLoop', { concerns: board.concerns.length, proposals: board.projectProposals.length, supportEvents: board.supportEvents.length, addedConcerns: board.concerns.length - before, avatarCannotForce: board.avatarCannotForce });
+}
+
+function supportVillageProposal() {
+  const board = ensureVillageBoard();
+  if (!board.projectProposals.length) runVillageBoardLoop();
+  const proposal = board.projectProposals.find(row => row.status !== 'accepted' && row.status !== 'refused') || board.projectProposals[board.projectProposals.length - 1];
+  const accepted = proposal.resident_willingness + proposal.current_support_level >= 0.48;
+  proposal.current_support_level = Number(Math.min(1, proposal.current_support_level + 0.25).toFixed(3));
+  proposal.status = accepted ? 'accepted' : 'resident still considering';
+  if (accepted) {
+    world.resources.fiber = Math.max(0, world.resources.fiber - 1);
+    world.resources.care = Math.max(0, world.resources.care - 1);
+    mutateResident(proposal.proposer, { trust: 0.006, progress: 0.008, memory: `felt supported on ${proposal.problem_addressed}`, historyEvent: 'village board support', historyDetail: proposal.proposal_id });
+  }
+  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false });
+  recordRealityConstraint('proposal_support', {
+    resident: proposal.proposer,
+    sourceBeliefId: proposal.proposal_id,
+    materials: proposal.materials_needed,
+    publicObservation: proposal.problem_addressed,
+    residentInterpretation: accepted ? 'support accepted' : 'support not enough yet',
+    materialTransformation: accepted ? 'fiber and care consumed as support' : 'no material consumed yet',
+    timeCost: 1,
+    workCost: accepted ? 2 : 1,
+    toolWear: 0,
+    maintenanceObligation: accepted ? `follow through ${proposal.proposal_id}` : 'none',
+    unintendedConsequence: accepted ? 'resource commons reduced' : 'resident autonomy preserved',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return log('supportVillageProposal', { proposalId: proposal.proposal_id, accepted, support: proposal.current_support_level, resident: proposal.proposer });
+}
+
+function askVillageBoardQuestion() {
+  const board = ensureVillageBoard();
+  if (!board.projectProposals.length) runVillageBoardLoop();
+  const proposal = board.projectProposals[board.projectProposals.length - 1];
+  board.councilNotes.push({ proposalId: proposal.proposal_id, note: `${proposal.proposer} explains ${proposal.problem_addressed} without giving hidden law`, avatarQuestion: true, directCommand: false });
+  return log('askVillageBoardQuestion', { proposalId: proposal.proposal_id, proposer: proposal.proposer, directCommand: false });
+}
+
+function waitOnVillageBoard() {
+  const board = ensureVillageBoard();
+  if (!board.projectProposals.length) runVillageBoardLoop();
+  board.projectProposals.forEach(proposal => {
+    if (proposal.status === 'resident proposed' && proposal.resident_willingness < 0.42) proposal.status = 'delayed by resident schedule';
+  });
+  return log('waitOnVillageBoard', { proposals: board.projectProposals.length, delayed: board.projectProposals.filter(row => /delayed/.test(row.status)).length });
+}
+
+function ensureRealityConstraintLedger() {
+  if (!world.realityConstraintLedger) {
+    world.realityConstraintLedger = {
+      reportIntroduced: 370,
+      boundary: 'audit-causal-ledger-only; normal residents see observations and beliefs, not hidden simulator law',
+      rows: [],
+      invariants: ['no effect without cause', 'no material without source', 'no work without time', 'no knowledge without observation or teaching', 'no recovery without cost or time']
+    };
+  }
+  return world.realityConstraintLedger;
+}
+
+function recordRealityConstraint(event, detail) {
+  const ledger = ensureRealityConstraintLedger();
+  const row = {
+    id: `RCL-${String(ledger.rows.length + 1).padStart(2, '0')}`,
+    event,
+    material_sources: detail.materials || [],
+    material_transformations: detail.materialTransformation || 'none',
+    energy_work_time_cost: { time: detail.timeCost || 0, work: detail.workCost || 0 },
+    tool_wear: detail.toolWear || 0,
+    resident_effort_fatigue: detail.workCost || 0,
+    weather_moisture_heat_effects: detail.materials && detail.materials.includes('wet_wood') ? 'wet material changed interpretation' : 'none modeled',
+    hidden_law_involved: detail.hiddenLawInvolved || 'audit only',
+    public_observation: detail.publicObservation || 'none',
+    resident_interpretation: detail.residentInterpretation || 'none',
+    conservation_check: detail.conservationCheck !== false,
+    maintenance_obligation_created: detail.maintenanceObligation || 'none',
+    unintended_consequence: detail.unintendedConsequence || 'none',
+    source_belief_id: detail.sourceBeliefId || 'none',
+    normal_view_hidden_law_exposed: false
+  };
+  ledger.rows.push(row);
+  return row;
+}
+
+function runRealityConstraintAudit() {
+  const ledger = ensureRealityConstraintLedger();
+  const pass = ledger.rows.every(row => row.conservation_check && row.energy_work_time_cost.time >= 0 && row.normal_view_hidden_law_exposed === false);
+  return log('runRealityConstraintAudit', { pass, rows: ledger.rows.length, invariants: ledger.invariants.length });
+}
+
+function renderEmergentPracticeGraph() {
+  const summaryNode = document.getElementById('emergentPracticeGraphSummaryOut');
+  const detailNode = document.getElementById('emergentPracticeGraphOut');
+  const graph = world.emergentPracticeGraph;
+  if (summaryNode) summaryNode.textContent = graph ? `${graph.nodes.length} nodes / ${graph.edges.length} edges` : 'No practice graph yet.';
+  if (!detailNode) return;
+  if (!graph) {
+    detailNode.textContent = 'No emergent practice graph yet. Run practical discovery loop.';
+    return;
+  }
+  const nodes = graph.nodes.slice(-6).map(row => `${row.practice_id}: ${row.local_name} / status=${row.status} / origin=${row.origin_resident} / materials=${row.materials_used.join(' + ')} / avatar=${row.avatar_role}`);
+  detailNode.textContent = [`Boundary: ${graph.boundary}`, `Audit split: ${graph.auditSplit}`, 'Practice nodes:', ...(nodes.length ? nodes : ['none'])].join('\n');
+}
+
+function renderVillageBoard() {
+  const summaryNode = document.getElementById('villageBoardSummaryOut');
+  const detailNode = document.getElementById('villageBoardOut');
+  const board = world.villageBoard;
+  if (summaryNode) summaryNode.textContent = board ? `${board.concerns.length} concerns / ${board.projectProposals.length} proposals / ${board.supportEvents.length} support events` : 'No village board yet.';
+  if (!detailNode) return;
+  if (!board) {
+    detailNode.textContent = 'No village board yet. Run board loop to let residents post concerns.';
+    return;
+  }
+  const concerns = board.concerns.slice(-6).map(row => `${row.concern_id}: ${row.resident} feels ${row.problem} urgency=${row.urgency}`);
+  const proposals = board.projectProposals.slice(-6).map(row => `${row.proposal_id}: ${row.proposer} proposes ${row.problem_addressed} support=${row.current_support_level} status=${row.status} force=${row.avatar_can_force}`);
+  detailNode.textContent = [`Boundary: ${board.boundary}`, 'Resident concerns:', ...(concerns.length ? concerns : ['none']), 'Project proposals:', ...(proposals.length ? proposals : ['none'])].join('\n');
+}
+
+function renderRealityConstraintLedger() {
+  const summaryNode = document.getElementById('realityConstraintLedgerSummaryOut');
+  const detailNode = document.getElementById('realityConstraintLedgerOut');
+  const ledger = world.realityConstraintLedger;
+  if (summaryNode) summaryNode.textContent = ledger ? `${ledger.rows.length} causal rows` : 'No causal rows yet.';
+  if (!detailNode) return;
+  if (!ledger) {
+    detailNode.textContent = 'No reality constraint ledger yet. Practical discovery or village board actions will write causal rows.';
+    return;
+  }
+  const rows = ledger.rows.slice(-8).map(row => `${row.id}: ${row.event} / materials=${row.material_sources.join('+') || 'none'} / time=${row.energy_work_time_cost.time} work=${row.energy_work_time_cost.work} / conservation=${row.conservation_check} / hiddenShown=${row.normal_view_hidden_law_exposed}`);
+  detailNode.textContent = [`Boundary: ${ledger.boundary}`, `Invariants: ${ledger.invariants.join('; ')}`, 'Recent causal rows:', ...(rows.length ? rows : ['none'])].join('\n');
+}
+
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

@@ -1,0 +1,57 @@
+seed,bottleneck_id,action_id,resident,bottleneck_type,detail,source_belief_id,source_label
+36217,36217-BOT-01,36217-LIV-01,Fay,schedule_conflict,ordinary schedule keeps returning to smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36217,36217-BOT-02,36217-LIV-02,Milo,material_shortage,materials needed for smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36217,36217-BOT-03,36217-LIV-03,Sera,safety_limit,help pauses around smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36217,36217-BOT-04,36217-LIV-04,Tovan,test_time_conflict,scheduled test competes with archiving failed smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36217,36217-BOT-05,36217-LIV-05,Nia,schedule_conflict,ordinary schedule keeps returning to smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36217,36217-BOT-06,36217-LIV-06,Ari,schedule_conflict,ordinary schedule keeps returning to smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36217,36217-BOT-07,36217-LIV-07,Fay,schedule_conflict,ordinary schedule keeps returning to smoke-bound/quiet-doubt,36217-BEL-004,smoke-bound/quiet-doubt
+36231,36231-BOT-01,36231-LIV-01,Sera,schedule_conflict,ordinary schedule keeps returning to missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36231,36231-BOT-02,36231-LIV-02,Tovan,material_shortage,materials needed for missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36231,36231-BOT-03,36231-LIV-03,Nia,safety_limit,help pauses around missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36231,36231-BOT-04,36231-LIV-04,Ari,test_time_conflict,scheduled test competes with archiving failed missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36231,36231-BOT-05,36231-LIV-05,Fay,schedule_conflict,ordinary schedule keeps returning to missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36231,36231-BOT-06,36231-LIV-06,Milo,schedule_conflict,ordinary schedule keeps returning to missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36231,36231-BOT-07,36231-LIV-07,Sera,schedule_conflict,ordinary schedule keeps returning to missing-repeat/quiet-doubt,36231-BEL-004,missing-repeat/quiet-doubt
+36247,36247-BOT-01,36247-LIV-01,Fay,schedule_conflict,ordinary schedule keeps returning to grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36247,36247-BOT-02,36247-LIV-02,Milo,material_shortage,materials needed for grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36247,36247-BOT-03,36247-LIV-03,Sera,safety_limit,help pauses around grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36247,36247-BOT-04,36247-LIV-04,Tovan,test_time_conflict,scheduled test competes with safety custom for grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36247,36247-BOT-05,36247-LIV-05,Nia,schedule_conflict,ordinary schedule keeps returning to grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36247,36247-BOT-06,36247-LIV-06,Ari,safety_limit,help pauses around grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36247,36247-BOT-07,36247-LIV-07,Fay,schedule_conflict,ordinary schedule keeps returning to grain pull/water-hush,36247-BEL-004,grain pull/water-hush
+36263,36263-BOT-01,36263-LIV-01,Nia,schedule_conflict,ordinary schedule keeps returning to quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36263,36263-BOT-02,36263-LIV-02,Ari,material_shortage,materials needed for quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36263,36263-BOT-03,36263-LIV-03,Fay,safety_limit,help pauses around quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36263,36263-BOT-04,36263-LIV-04,Milo,test_time_conflict,scheduled test competes with arguing rival theory quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36263,36263-BOT-05,36263-LIV-05,Sera,schedule_conflict,ordinary schedule keeps returning to quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36263,36263-BOT-06,36263-LIV-06,Tovan,schedule_conflict,ordinary schedule keeps returning to quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36263,36263-BOT-07,36263-LIV-07,Nia,schedule_conflict,ordinary schedule keeps returning to quiet sting/quiet-doubt,36263-BEL-004,quiet sting/quiet-doubt
+36281,36281-BOT-01,36281-LIV-01,Nia,schedule_conflict,ordinary schedule keeps returning to edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36281,36281-BOT-02,36281-LIV-02,Ari,material_shortage,materials needed for edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36281,36281-BOT-03,36281-LIV-03,Fay,safety_limit,help pauses around edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36281,36281-BOT-04,36281-LIV-04,Milo,test_time_conflict,scheduled test competes with arguing rival theory edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36281,36281-BOT-05,36281-LIV-05,Sera,schedule_conflict,ordinary schedule keeps returning to edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36281,36281-BOT-06,36281-LIV-06,Tovan,schedule_conflict,ordinary schedule keeps returning to edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36281,36281-BOT-07,36281-LIV-07,Nia,schedule_conflict,ordinary schedule keeps returning to edge-shame/quiet-doubt,36281-BEL-004,edge-shame/quiet-doubt
+36307,36307-BOT-01,36307-LIV-01,Fay,schedule_conflict,ordinary schedule keeps returning to safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36307,36307-BOT-02,36307-LIV-02,Milo,material_shortage,materials needed for safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36307,36307-BOT-03,36307-LIV-03,Sera,safety_limit,help pauses around safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36307,36307-BOT-04,36307-LIV-04,Tovan,test_time_conflict,scheduled test competes with arguing rival theory safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36307,36307-BOT-05,36307-LIV-05,Nia,schedule_conflict,ordinary schedule keeps returning to safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36307,36307-BOT-06,36307-LIV-06,Ari,schedule_conflict,ordinary schedule keeps returning to safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36307,36307-BOT-07,36307-LIV-07,Fay,schedule_conflict,ordinary schedule keeps returning to safe-gap/half-sign,36307-BEL-004,safe-gap/half-sign
+36319,36319-BOT-01,36319-LIV-01,Fay,schedule_conflict,ordinary schedule keeps returning to fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36319,36319-BOT-02,36319-LIV-02,Milo,material_shortage,materials needed for fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36319,36319-BOT-03,36319-LIV-03,Sera,safety_limit,help pauses around fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36319,36319-BOT-04,36319-LIV-04,Tovan,test_time_conflict,scheduled test competes with bench practice for fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36319,36319-BOT-05,36319-LIV-05,Nia,schedule_conflict,ordinary schedule keeps returning to fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36319,36319-BOT-06,36319-LIV-06,Ari,schedule_conflict,ordinary schedule keeps returning to fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36319,36319-BOT-07,36319-LIV-07,Fay,schedule_conflict,ordinary schedule keeps returning to fiber-rise/edge-shame,36319-BEL-004,fiber-rise/edge-shame
+36343,36343-BOT-01,36343-LIV-01,Fay,schedule_conflict,ordinary schedule keeps returning to smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger
+36343,36343-BOT-02,36343-LIV-02,Milo,material_shortage,materials needed for smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger
+36343,36343-BOT-03,36343-LIV-03,Sera,safety_limit,help pauses around smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger
+36343,36343-BOT-04,36343-LIV-04,Tovan,test_time_conflict,scheduled test competes with archiving failed smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger
+36343,36343-BOT-05,36343-LIV-05,Nia,schedule_conflict,ordinary schedule keeps returning to smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger
+36343,36343-BOT-06,36343-LIV-06,Ari,schedule_conflict,ordinary schedule keeps returning to smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger
+36343,36343-BOT-07,36343-LIV-07,Fay,schedule_conflict,ordinary schedule keeps returning to smoke-bound/tool-anger,36343-BEL-004,smoke-bound/tool-anger

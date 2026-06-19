@@ -2170,3 +2170,7 @@ Report 368 shifts the non-scripted anomaly line toward one world, many seeds, an
 
 Report 369 makes long-horizon belief lineage affect ordinary civilization surfaces instead of remaining only artifact history. The maintained shell now exposes `civilizationPressure`, where source-traced anomaly beliefs can rewrite resident schedules, create apprenticeships, shift trade/resource routes, establish safety customs, and affect bounded ordinary choices while preserving no-LLM/no-consciousness/no-device-tree boundaries.
 
+
+### Report 370: SSRM-3D Emergent Practice Graph and Reality Constraint Bridge
+
+Report 370 adds the first explicit emergent practice graph, diegetic village board, and reality constraint ledger. Practice nodes are generated after repeated resident actions, bottlenecks, evidence, failed tests, social mutation, and remembered use; the village board exposes resident concerns and proposal cards without direct avatar control; the reality ledger records material sources, transformations, time/work costs, tool wear, maintenance obligations, conservation checks, and the hidden-law/resident-belief split. No pre-authored tech tree or instant unlock path is introduced.

@@ -1,0 +1,26 @@
+criterion,passed,score,evidence
+report_369_civilization_pressure_gate_passing,True,1.0,Report 369 verdict=pass weakest=1.0
+runner_includes_report_370,True,1.0,scripts/run_experiments.py includes Report 370 module
+artifact_set_written,True,1.0,all Report 370 artifacts exist
+practice_node_emerges_from_repetition,True,1.0,metric=1.0
+no_predefined_tech_unlock,True,1.0,metric=1.0
+failed_tests_can_become_safety_rules,True,1.0,metric=1.0
+wrong_belief_can_stabilize_practice,True,1.0,metric=1.0
+practice_social_mutation,True,1.0,metric=1.0
+adoption_without_modern_name,True,1.0,metric=1.0
+material_constraint_binding,True,1.0,metric=1.0
+stochastic_history_can_seed_practice,True,1.0,metric=1.0
+avatar_not_direct_source_of_correct_concept,True,1.0,metric=1.0
+hidden_law_resident_belief_split,True,1.0,metric=1.0
+multi_seed_practice_divergence,True,1.0,metric=1.0
+practice_can_die_or_become_taboo,True,1.0,metric=1.0
+village_board_diegetic_management,True,1.0,metric=1.0
+reality_constraint_ledger_integrity,True,1.0,metric=1.0
+audit_trace_integrity,True,1.0,metric=1.0
+shell_practice_graph_wired,True,1.0,metric=1.0
+shell_village_board_wired,True,1.0,metric=1.0
+shell_reality_ledger_wired,True,1.0,metric=1.0
+browser_surface_wired,True,1.0,metric=1.0
+browser_smoke_visible,True,1.0,metric=1.0
+ablations_degrade_relevant_channels,True,1.0,"ablations=[{'ablation': 'no_repeated_use_requirement', 'mean_score': 0.9, 'degraded_metrics': 'multi_seed_practice_divergence;browser_smoke_visible'}, {'ablation': 'no_failed_ancestor_memory', 'mean_score': 0.9, 'degraded_metrics': 'failed_tests_can_become_safety_rules;browser_smoke_visible'}, {'ablation': 'no_material_constraints', 'mean_score': 0.85, 'degraded_metrics': 'failed_tests_can_become_safety_rules;multi_seed_practice_divergence;browser_smoke_visible'}, {'ablation': 'no_resident_proposals', 'mean_score': 0.45, 'degraded_metrics': 'practice_node_emerges_from_repetition;failed_tests_can_become_safety_rules;wrong_belief_can_stabilize_practice;practice_social_mutation;adoption_without_modern_name;stochastic_history_can_seed_practice;multi_seed_practice_divergence;practice_can_die_or_become_taboo;village_board_diegetic_management;reality_constraint_ledger_integrity;browser_smoke_visible'}, {'ablation': 'no_avatar_boundary', 'mean_score': 0.9, 'degraded_metrics': 'avatar_not_direct_source_of_correct_concept;browser_smoke_visible'}, {'ablation': 'no_practice_decay', 'mean_score': 0.95, 'degraded_metrics': 'browser_smoke_visible'}, {'ablation': 'no_audit_split', 'mean_score': 0.9, 'degraded_metrics': 'hidden_law_resident_belief_split;browser_smoke_visible'}, {'ablation': 'forced_tech_tree_unlock', 'mean_score': 0.45, 'degraded_metrics': 'practice_node_emerges_from_repetition;no_predefined_tech_unlock;failed_tests_can_become_safety_rules;wrong_belief_can_stabilize_practice;practice_social_mutation;adoption_without_modern_name;material_constraint_binding;avatar_not_direct_source_of_correct_concept;multi_seed_practice_divergence;practice_can_die_or_become_taboo;browser_smoke_visible'}]"
+boundary_preserved,True,1.0,"Browser-local emergent practice graph, diegetic village-board, and reality-constraint bridge only. Practices are generated after repeated resident action, bottleneck pressure, evidence, failures, and social memory. No LLM call, no subjective-consciousness claim, no moral-patienthood claim, no real science claim, no real civilization claim, and no pre-authored tech tree."

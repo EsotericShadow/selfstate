@@ -589,3 +589,7 @@ Report 368 moves the browser-world research line toward a small civilization his
 
 Report 369 moves belief lineage out of report-only history and into ordinary browser-world surfaces. Source-traced resident beliefs can now rewrite schedules, create apprenticeships, shift trade/resource routes, establish safety customs, and affect bounded normal choices. This remains a deterministic local simulation scaffold with explicit no-LLM, no subjective-consciousness, no moral-patienthood, and no predeclared-device-tree boundaries.
 
+
+## Report 370 public note: emergent practices, village board, and causal ledger
+
+Report 370 adds a first emergent practice graph generated after resident actions, bottlenecks, repeated tests, failed ancestors, social mutation, and remembered evidence. It also adds a diegetic Village Board where residents post concerns and proposals without direct avatar control, plus a Reality Constraint Ledger for material sources, transformations, time/work costs, maintenance, conservation checks, and hidden-law/public-belief separation. Boundary remains deterministic local scaffolding: no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no real science/civilization claim, and no pre-authored tech tree.

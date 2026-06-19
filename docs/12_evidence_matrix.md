@@ -1610,3 +1610,11 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 | Cultural pressure can create apprenticeships, routes, and safety customs. | Apprenticeship, trade-route, safety-custom, ordinary-choice, and source-link artifacts record lineage-to-civilization pressure. | No LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no predeclared device tree. |
 | The same hidden-law lineage still produces divergent civilization pressure. | Civilization outcome artifacts preserve one law hash, multiple history signatures, and multiple outcome classes. | Deterministic per seed and inspectable, not open-ended anthropology. |
 
+
+## Report 370: SSRM-3D Emergent Practice Graph and Reality Constraint Bridge
+
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| Practice nodes emerge after history, not before it. | `artifacts/ssrm_3d_browser_world_v130_lived_practical_discovery_bridge_emergent_practice_nodes.csv` and edge/source artifacts record local names, origins, materials, observations, failed ancestors, social paths, adoption, risk, cost, generations, and status. | Browser-local scaffold; no real invention, science, or civilization claim. |
+| Management is diegetic rather than god-game control. | Village-board concerns and project-proposal artifacts record resident proposers, willingness, objections, risks, maintenance costs, support level, and `avatar_can_force=false`. | The avatar supports conditions and asks questions; it does not assign jobs or force obedience. |
+| Reality-like causal constraints are audited. | `artifacts/ssrm_3d_browser_world_v130_lived_practical_discovery_bridge_reality_constraint_ledger.csv` records material sources, transformations, time/labor costs, tool wear, conservation checks, maintenance obligations, and hidden-law/public-belief separation. | No hidden law in normal resident view, no resource spawning, no free recovery, and no pre-authored tech tree. |

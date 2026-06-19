@@ -139,3 +139,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. The receipt checks visuals, save/return, autonomous residents, causal ledger, emergent practice graph, village proposals, million-year survival path, ordinary-play tests, readable behavior, and game-build mode.
 4. The receipt is stored locally and exported as JSON for durable playtest evidence.
 
+
+## Player guide loop
+
+1. The shell derives the current phase from existing village state, not from a scripted mission flag.
+2. The guide suggests one player action and explains why it matters to the living loop.
+3. The suggestion updates after normal actions, resident autonomy, save/return, QA, or acceptance export.
+4. The guide remains advisory: it helps the player navigate the prototype without overriding resident autonomy.
+

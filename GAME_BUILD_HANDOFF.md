@@ -112,3 +112,8 @@ Residents now expose public body-language cues derived from existing needs and a
 
 The shell now exports a browser-local `Game Prototype v0` acceptance receipt. Exporting acceptance runs or consumes Prototype QA, ensures a prototype save/return path exists, evaluates the current playable foundation against concrete requirements, stores the receipt in localStorage, and prepares a JSON download. This is a hardening artifact for game-build evidence, not production certification or a new research report.
 
+
+## Prototype v0 player guide update
+
+The prototype surface now includes a derived `Player guide` card. It reads the current state and suggests the next concrete action in the first playable loop: arrival, world pressure, ordinary play, village board, autonomy, deep time, return proof, QA, acceptance, or watch/compare. The guide is advisory only; it does not command residents or create scripted outcomes.
+

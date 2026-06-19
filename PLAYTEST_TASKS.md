@@ -24,3 +24,5 @@
 16. Run Resident season or Auto burst and confirm residents show readable public behavior cues on the canvas and in the Readable behavior card without exposing hidden/private state.
 
 17. Export acceptance and confirm the Acceptance receipt card reports pass/fail checks for visuals, save/return, autonomy, causality, practices, proposals, million-year survival, ordinary-play tests, readable behavior, QA, and game-build mode.
+
+18. Use the Player guide from a fresh or reset run and confirm it advances through arrival, pressure, ordinary play, board/proposal, autonomy, deep time, return proof, QA, acceptance, and watch/compare phases as state changes.

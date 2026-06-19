@@ -102,3 +102,11 @@
 4. Audit survival and causal ledger state.
 5. Save, mutate, restore, and confirm core prototype state still exists.
 6. Show pass/fail checks in the player-facing prototype QA card.
+
+## Auto-simulation loop
+
+1. The player starts or bursts the local simulation clock.
+2. Every step advances autonomous resident behavior.
+3. Periodic steps support proposals, advance deep-time epochs, audit survival, and save the world.
+4. The player can pause at any time and inspect residents, practices, proposals, causality, survival, and replay.
+5. The clock is browser-local and does not run as a hidden server process.

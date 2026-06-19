@@ -12,3 +12,5 @@
 10. Return after hint divergence and confirm a branch persisted, burdened someone, was forgotten, or revived.
 
 11. Run Prototype QA and confirm the visible receipt passes core checks for entry, residents, autonomy, practice, proposals, deep time, survival audit, causal ledger, save/return, and game-build mode.
+
+12. Start auto sim, watch several resident/deep-time steps occur, pause it, and confirm residents, proposals, survival status, and save state changed visibly.

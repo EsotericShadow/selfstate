@@ -84,3 +84,7 @@ Residents now have an autonomous stochastic tick loop. `Resident tick` advances 
 ## Prototype v0 QA smoke update
 
 The maintained shell now includes a player-facing `Prototype QA` control. It executes the current playable loop, autonomous resident season, million-year deep-time run, survival audit, causal audit, and save/restore preservation check, then writes a visible `gamePrototypeQA` receipt. This is not production certification; it is an in-shell hardening gate for the playable prototype branch.
+
+## Prototype v0 auto-simulation update
+
+The prototype now includes a browser-local auto-simulation clock. `Start auto sim` advances resident ticks on a timer; `Pause auto sim` stops it; `Auto burst` runs twenty inspected steps. The cadence advances resident autonomy every step, supports proposals periodically, runs deep-time epochs, audits survival, and saves on schedule. This makes the prototype watchable without manually pressing every subsystem button.

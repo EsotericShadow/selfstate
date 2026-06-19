@@ -256,6 +256,12 @@ Routine context now affects resident body physics. When a resident tick or body-
 
 This keeps the visible dashed worksite cues honest: resident bodies are not only connected to worksites graphically; the stochastic body simulation now steps toward those physical places with fatigue, footing, contact, and recovery costs.
 
+## Prototype v0 worksite proximity update
+
+Resident work now depends on physical proximity. Autonomous repair, proposal work, practice maintenance, and safety repair actions compute distance to the routine target before applying component effects. Close work can reduce damage, improve stability, or dry/maintain a component; distant work becomes partial or blocked evidence instead of magically changing the world.
+
+Resident project construction also records proposer distance to the target component. That distance changes project progress and construction repair scale, so project labor is coupled to the body-position simulation rather than a detached progress bar.
+
 ## Prototype v0 deep-time stochastic physics update
 
 Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.

@@ -8479,6 +8479,7 @@ function ensureAutonomousResidents() {
       careLedger: [],
       expressionLedger: [],
       routineContextLedger: [],
+      worksiteProximityLedger: [],
       entropyLedger: [],
       boundary: {
         noDirectPlayerCommand: true,
@@ -8486,6 +8487,7 @@ function ensureAutonomousResidents() {
         actionsCostTimeAndNeed: true,
         expressionsArePublicCuesOnly: true,
         routinesUsePhysicalContext: true,
+        worksiteProximityAffectsWork: true,
         stochasticButAudited: true,
       },
     };
@@ -8493,8 +8495,10 @@ function ensureAutonomousResidents() {
   if (!world.autonomousResidents.boundary) world.autonomousResidents.boundary = {};
   if (!world.autonomousResidents.expressionLedger) world.autonomousResidents.expressionLedger = [];
   if (!world.autonomousResidents.routineContextLedger) world.autonomousResidents.routineContextLedger = [];
+  if (!world.autonomousResidents.worksiteProximityLedger) world.autonomousResidents.worksiteProximityLedger = [];
   if (!world.autonomousResidents.boundary.expressionsArePublicCuesOnly) world.autonomousResidents.boundary.expressionsArePublicCuesOnly = true;
   if (!world.autonomousResidents.boundary.routinesUsePhysicalContext) world.autonomousResidents.boundary.routinesUsePhysicalContext = true;
+  if (!world.autonomousResidents.boundary.worksiteProximityAffectsWork) world.autonomousResidents.boundary.worksiteProximityAffectsWork = true;
   return world.autonomousResidents;
 }
 
@@ -10391,6 +10395,126 @@ function latestRoutineContextFor(residentName) {
   return sim.routineContextLedger.slice().reverse().find(row => row.resident === residentName) || null;
 }
 
+function worksiteProximityForBodyStep(residentName, action, bodyRow, routineContextRow) {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const components = materialWorld && materialWorld.components ? materialWorld.components : [];
+  const component = bodyRow && bodyRow.target_component_id && bodyRow.target_component_id !== 'none'
+    ? components.find(row => row.component_id === bodyRow.target_component_id)
+    : null;
+  const distanceAfter = bodyRow ? Number(bodyRow.distance_to_target_after || 999) : 999;
+  const distanceBefore = bodyRow ? Number(bodyRow.distance_to_target_before || 999) : 999;
+  const contact = Boolean(component && bodyRow && (bodyRow.component_contacts || []).includes(component.component_id));
+  const nearEnough = Boolean(component && (distanceAfter <= 14 || contact));
+  const actionable = ['physics_repair', 'proposal_work', 'practice_maintenance', 'repair_safety'].includes(action);
+  return {
+    resident: residentName,
+    action,
+    body_step_id: bodyRow ? bodyRow.body_step_id : 'none',
+    routine_context_id: routineContextRow ? routineContextRow.context_id : 'none',
+    target_component_id: component ? component.component_id : 'none',
+    target_project_visual_id: bodyRow ? bodyRow.target_project_visual_id || 'none' : 'none',
+    target_practice_id: bodyRow ? bodyRow.target_practice_id || 'none' : 'none',
+    distance_before: Number(distanceBefore.toFixed(3)),
+    distance_after: Number(distanceAfter.toFixed(3)),
+    moved_toward_target: bodyRow ? bodyRow.moved_toward_target === true : false,
+    contact,
+    actionable,
+    near_enough: nearEnough,
+    effect_scale: actionable ? (nearEnough ? 1 : distanceAfter <= 28 ? 0.35 : 0) : 0,
+    blocked_by_distance: actionable && component && !nearEnough && distanceAfter > 28,
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+  };
+}
+
+function applyResidentWorksiteComponentEffect(proximity, materialCost = []) {
+  const sim = ensureAutonomousResidents();
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const component = materialWorld && materialWorld.components && proximity.target_component_id !== 'none'
+    ? materialWorld.components.find(row => row.component_id === proximity.target_component_id)
+    : null;
+  const before = component ? {
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    moisture: Number(component.moisture || 0),
+  } : null;
+  const deltasByAction = {
+    physics_repair: { damage: -0.035, stability: 0.045, moisture: -0.01 },
+    proposal_work: { damage: -0.014, stability: 0.024, moisture: -0.006 },
+    practice_maintenance: { damage: -0.008, stability: 0.016, moisture: -0.025 },
+    repair_safety: { damage: -0.004, stability: 0.012, moisture: -0.004 },
+  };
+  const base = deltasByAction[proximity.action] || { damage: 0, stability: 0, moisture: 0 };
+  const scale = Number(proximity.effect_scale || 0);
+  const damageDelta = Number((base.damage * scale).toFixed(3));
+  const stabilityDelta = Number((base.stability * scale).toFixed(3));
+  const moistureDelta = Number((base.moisture * scale).toFixed(3));
+  if (component && scale > 0) {
+    component.damage = Number(clamp(Number(component.damage || 0) + damageDelta).toFixed(3));
+    component.stability = Number(clamp(Number(component.stability || 0) + stabilityDelta).toFixed(3));
+    component.moisture = Number(clamp(Number(component.moisture || 0) + moistureDelta).toFixed(3));
+    component.last_worksite_effect = `WPE-${String(sim.worksiteProximityLedger.length + 1).padStart(3, '0')}`;
+  }
+  const after = component ? {
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    moisture: Number(component.moisture || 0),
+  } : null;
+  const row = {
+    worksite_effect_id: `WPE-${String(sim.worksiteProximityLedger.length + 1).padStart(3, '0')}`,
+    day: sim.day,
+    season: sim.season,
+    ...proximity,
+    material_cost: materialCost.slice(),
+    effect_applied: Boolean(component && scale > 0),
+    component_before: before,
+    component_after: after,
+    damage_delta: before && after ? Number((after.damage - before.damage).toFixed(3)) : 0,
+    stability_delta: before && after ? Number((after.stability - before.stability).toFixed(3)) : 0,
+    moisture_delta: before && after ? Number((after.moisture - before.moisture).toFixed(3)) : 0,
+  };
+  sim.worksiteProximityLedger.push(row);
+  sim.worksiteProximityLedger = sim.worksiteProximityLedger.slice(-120);
+  recordRealityConstraint('resident_worksite_proximity', {
+    resident: row.resident,
+    sourceBeliefId: row.worksite_effect_id,
+    materials: row.target_component_id === 'none' ? materialCost : [row.target_component_id, ...materialCost],
+    publicObservation: row.effect_applied ? `${row.resident} worked close enough to affect ${row.target_component_id}` : `${row.resident} was not close enough to affect ${row.target_component_id}`,
+    residentInterpretation: row.effect_applied ? 'being at the worksite made the work take' : 'distance made the work partial or blocked',
+    materialTransformation: row.effect_applied ? `component ${row.target_component_id} damage ${before.damage}->${after.damage}, stability ${before.stability}->${after.stability}, moisture ${before.moisture}->${after.moisture}` : 'no component transformation from distance-gated work',
+    timeCost: row.actionable ? 1 : 0,
+    workCost: row.actionable ? 1 : 0,
+    toolWear: row.effect_applied ? 1 : 0,
+    maintenanceObligation: row.blocked_by_distance ? `move closer to ${row.target_component_id}` : 'none',
+    unintendedConsequence: row.effect_applied ? 'nearby work changed component state' : 'work intent did not become physical effect',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
+}
+
+function projectWorksiteProximityForProposal(proposal, component) {
+  const bodies = ensureResidentBodies();
+  const body = bodies.bodies[proposal.proposer] || Object.values(bodies.bodies)[0] || null;
+  const target = component && component.position3d ? component.position3d : { x: 0, y: 0, z: 0 };
+  const dx = body ? Number(target.x || 0) - Number(body.position3d.x || 0) : 999;
+  const dy = body ? Number(target.y || 0) - Number(body.position3d.y || 0) : 999;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  const nearEnough = Boolean(component && distance <= 16);
+  return {
+    proposer: proposal.proposer,
+    target_component_id: component ? component.component_id : 'none',
+    resident_position3d: body ? { ...body.position3d } : null,
+    target_position3d: component ? { ...component.position3d } : null,
+    distance: Number(distance.toFixed(3)),
+    near_enough: nearEnough,
+    progress_modifier: nearEnough ? 0.05 : distance <= 32 ? -0.06 : -0.18,
+    construction_scale: nearEnough ? 1 : distance <= 32 ? 0.4 : 0.15,
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+  };
+}
+
 function clampNeed(value) {
   return Math.max(0, Math.min(1, Number(value || 0)));
 }
@@ -10565,6 +10689,7 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
   const needs = driftResidentNeeds(sim.needState[residentName], entropy, action);
   const routineTarget = residentBodyTargetFromRoutineContext(routineContextRow);
   const bodyPhysicsRow = applyResidentBodyPhysics(residentName, action, entropy, 'autonomous_resident_action', routineTarget);
+  const worksiteProximity = worksiteProximityForBodyStep(residentName, action, bodyPhysicsRow, routineContextRow);
   const resident = world.residents[residentName];
   const board = ensureVillageBoard();
   const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
@@ -10604,23 +10729,28 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     if (ecology.harvested > 0) world.resources.fiber = Math.min(99, world.resources.fiber + 1);
     progressDelta = 0.006;
   } else if (action === 'proposal_work' && proposal) {
+    const supportGain = Math.max(0.02, 0.08 + (worksiteProximity.near_enough ? 0.03 : worksiteProximity.blocked_by_distance ? -0.04 : -0.01));
     schedule = routineContext.latest_project_visual_id !== 'none'
       ? `${routineContext.schedule_hint}: ${proposal.problem_addressed}`
       : `works on ${proposal.problem_addressed}`;
-    memory = `worked on resident proposal ${proposal.proposal_id}; ${routineContext.pressure_reason}`;
+    memory = worksiteProximity.near_enough
+      ? `worked near ${worksiteProximity.target_component_id} on resident proposal ${proposal.proposal_id}`
+      : `tried proposal ${proposal.proposal_id} but distance made the work partial`;
     materialCost = proposal.materials_needed.slice(0, 2);
     world.resources.fiber = Math.max(0, world.resources.fiber - (materialCost.includes('fiber') ? 1 : 0));
     world.resources.care = Math.max(0, world.resources.care - (materialCost.includes('care') ? 1 : 0));
-    proposal.current_support_level = Number(Math.min(1, proposal.current_support_level + 0.08).toFixed(3));
-    progressDelta = 0.012;
-    trustDelta = 0.003;
+    proposal.current_support_level = Number(Math.min(1, proposal.current_support_level + supportGain).toFixed(3));
+    progressDelta = worksiteProximity.near_enough ? 0.014 : 0.006;
+    trustDelta = worksiteProximity.near_enough ? 0.004 : -0.001;
   } else if (action === 'practice_maintenance' && practice) {
     const practiceName = routineContext.resident_term !== 'none' ? routineContext.resident_term : practice.local_name || practice.practice_id;
     schedule = routineContext.practice_id !== 'none' ? routineContext.schedule_hint : `maintains ${practiceName}`;
-    memory = `kept practice ${practice.practice_id || practice.local_name} from decaying; ${routineContext.pressure_reason}`;
+    memory = worksiteProximity.near_enough
+      ? `kept practice ${practice.practice_id || practice.local_name} physically usable at ${worksiteProximity.target_component_id}`
+      : `remembered ${practice.practice_id || practice.local_name} but was not close enough for full upkeep`;
     materialCost = ['fiber'];
     world.resources.fiber = Math.max(0, world.resources.fiber - 1);
-    progressDelta = 0.009;
+    progressDelta = worksiteProximity.near_enough ? 0.01 : 0.003;
   } else if (action === 'physics_repair') {
     const materialWorld = ensurePrototype3DWorld();
     const weak = materialWorld.components
@@ -10628,21 +10758,26 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
       .sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)))[0];
     const term = materialWorld.language.terms.find(row => row.term_id === (weak ? weak.resident_term_id : 'TERM-TAKU-REN')) || materialWorld.language.terms[0];
     const spentFiber = Number(world.resources.fiber || 0) > 0;
+    const repairScale = Number(worksiteProximity.effect_scale || 0);
     schedule = routineContext.schedule_hint !== 'ordinary route check'
       ? routineContext.schedule_hint
       : `checks ${term ? term.resident_word : 'local support'} after physical strain`;
-    memory = spentFiber ? `retied ${term ? term.resident_word : 'raised support'} after ${routineContext.pressure_reason}` : `noticed ${term ? term.resident_word : 'raised support'} strain but lacked fiber`;
+    memory = spentFiber && repairScale > 0.6
+      ? `retied ${term ? term.resident_word : 'raised support'} close enough for repair`
+      : spentFiber
+        ? `used fiber near ${term ? term.resident_word : 'raised support'} but distance made repair partial`
+        : `noticed ${term ? term.resident_word : 'raised support'} strain but lacked fiber`;
     materialCost = spentFiber ? ['fiber'] : [];
     if (spentFiber) world.resources.fiber = Math.max(0, world.resources.fiber - 1);
-    if (weak && spentFiber) {
-      weak.damage = Number(clamp(Number(weak.damage || 0) - 0.07).toFixed(3));
-      weak.stability = Number(clamp(Number(weak.stability || 0) + 0.08).toFixed(3));
+    if (weak && spentFiber && repairScale > 0) {
+      weak.damage = Number(clamp(Number(weak.damage || 0) - 0.07 * repairScale).toFixed(3));
+      weak.stability = Number(clamp(Number(weak.stability || 0) + 0.08 * repairScale).toFixed(3));
     }
-    if (materialWorld.structures && materialWorld.structures[0] && spentFiber) {
-      materialWorld.structures[0].stability = Number(clamp(Number(materialWorld.structures[0].stability || 0) + 0.04).toFixed(3));
+    if (materialWorld.structures && materialWorld.structures[0] && spentFiber && repairScale > 0) {
+      materialWorld.structures[0].stability = Number(clamp(Number(materialWorld.structures[0].stability || 0) + 0.04 * repairScale).toFixed(3));
     }
-    progressDelta = spentFiber ? 0.011 : 0.003;
-    trustDelta = spentFiber ? 0.003 : -0.001;
+    progressDelta = spentFiber ? (repairScale > 0.6 ? 0.011 : 0.004) : 0.003;
+    trustDelta = spentFiber && repairScale > 0.6 ? 0.003 : -0.001;
   } else if (action === 'teach' && practice) {
     schedule = `teaches ${practice.local_name || practice.practice_id}`;
     memory = `taught a local variant without naming hidden law`;
@@ -10659,6 +10794,9 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     schedule = 'observes village pressure';
     memory = 'noticed pressure without acting yet';
   }
+  const worksiteEffect = worksiteProximity.actionable && worksiteProximity.target_component_id !== 'none'
+    ? applyResidentWorksiteComponentEffect(worksiteProximity, materialCost)
+    : null;
   mutateResident(residentName, {
     trust: trustDelta,
     progress: progressDelta,
@@ -10696,11 +10834,17 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     body_target_source: bodyPhysicsRow.target_source,
     body_moved_toward_routine: bodyPhysicsRow.moved_toward_target,
     body_distance_to_routine_after: bodyPhysicsRow.distance_to_target_after,
+    worksite_effect_id: worksiteEffect ? worksiteEffect.worksite_effect_id : 'none',
+    worksite_near_enough: worksiteProximity.near_enough,
+    worksite_blocked_by_distance: worksiteProximity.blocked_by_distance,
+    worksite_effect_applied: worksiteEffect ? worksiteEffect.effect_applied : false,
+    worksite_target_component_id: worksiteProximity.target_component_id,
     body_fatigue_after: bodyPhysicsRow.after.fatigue,
     body_footing: bodyPhysicsRow.after.footing,
     body_contacts: bodyPhysicsRow.collision_count,
   };
   sim.actionLog.push(row);
+  if (worksiteEffect) worksiteEffect.action_id = row.action_id;
   const expression = recordVisibleResidentExpression(residentName, action, needs);
   row.visible_expression_id = expression.expression_id;
   sim.careLedger.push({ action_id: row.action_id, resident: residentName, energy: needs.energy, hunger: needs.hunger, safety: needs.safety, autonomy: needs.autonomy });
@@ -11015,7 +11159,7 @@ function formatPrototypeMaterialWorld() {
 	  const latestPhysics = physics.latestStep;
 	  const board = world.villageBoard || null;
 	  const physicsProposals = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).slice(-4).map(row => `${row.proposal_id}: ${row.problem_addressed}; status=${row.status}; materials=${(row.materials_needed || []).join('+')}`) : [];
-  const constructionRows = (sim.constructionLedger || []).slice(-5).map(row => `${row.construction_id}: ${row.proposal_id}; visual=${row.visual_id || 'none'}; added=${row.components_added.length}; repaired=${row.components_repaired.length}; term=${row.resident_term}; practice=${row.practice_id || 'none'}/${row.practice_status_after || 'none'}; stability=${row.structure_stability_after}`);
+  const constructionRows = (sim.constructionLedger || []).slice(-5).map(row => `${row.construction_id}: ${row.proposal_id}; visual=${row.visual_id || 'none'}; added=${row.components_added.length}; repaired=${row.components_repaired.length}; distance=${row.worksite_distance ?? 'n/a'}; scale=${row.construction_scale ?? 'n/a'}; term=${row.resident_term}; practice=${row.practice_id || 'none'}/${row.practice_status_after || 'none'}; stability=${row.structure_stability_after}`);
 		  return [
     `Runs: material=${sim.runCount} / physics=${physics.step || 0}`,
     `Boundary: ${sim.boundary}`,
@@ -11547,11 +11691,12 @@ function formatPrototypeResidentBodies() {
 function formatPrototypeAutonomousResidents() {
   const sim = world.autonomousResidents;
   if (!sim) return 'No autonomous resident ticks yet. Run Resident tick or Resident season.';
-  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}`);
+  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}; ctx=${row.routine_context_id || 'none'}${row.physical_context ? `/${row.physical_context.suggested_action}` : ''}; worksite=${row.worksite_effect_id || 'none'}/${row.worksite_effect_applied ? 'applied' : row.worksite_blocked_by_distance ? 'blocked' : 'none'}`);
   const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
   const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
   const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
   const routineContexts = (sim.routineContextLedger || []).slice(-6).map(row => `${row.context_id}: ${row.resident} ${row.action}; suggested=${row.suggested_action || 'none'}; visual=${row.latest_project_visual_id}; component=${row.latest_component_id}; practice=${row.practice_id}; hint=${row.schedule_hint}`);
+  const worksiteRows = (sim.worksiteProximityLedger || []).slice(-6).map(row => `${row.worksite_effect_id}: ${row.resident} ${row.action}; component=${row.target_component_id}; distance=${row.distance_before}->${row.distance_after}; near=${row.near_enough}; applied=${row.effect_applied}; blocked=${row.blocked_by_distance}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
@@ -11559,6 +11704,8 @@ function formatPrototypeAutonomousResidents() {
     ...(actions.length ? actions : ['none']),
     'Routine physical context:',
     ...(routineContexts.length ? routineContexts : ['none']),
+    'Worksite proximity effects:',
+    ...(worksiteRows.length ? worksiteRows : ['none']),
     'Visible expression cues:',
     ...(expressions.length ? expressions : ['none']),
     'Refusals:',
@@ -12511,6 +12658,10 @@ function buildPrototypeAcceptanceReceipt() {
   const routineActionLinks = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.routine_context_id && row.physical_context).length : 0;
   const routineCanvasCueRows = worldStage && worldStage.canvasCueLedger ? worldStage.canvasCueLedger.filter(row => row.routine_context_id && row.routine_context_id !== 'none' && (row.cues || []).some(cue => /routine context/.test(cue))).length : 0;
   const routineDirectedBodyRows = residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.filter(row => row.target_source === 'routine_context' && row.routine_context_id && row.routine_context_id !== 'none' && row.moved_toward_target === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
+  const worksiteProximityRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.length : 0;
+  const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
+  const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
+  const projectProximityRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.target_component_id && row.target_component_id !== 'none' && typeof row.worksite_distance === 'number' && row.avatar_direct_command === false).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -12559,6 +12710,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'resident_routines_use_physical_context', pass: Boolean(autonomous && routineContextRows > 0 && routinePhysicalRows > 0 && routineActionLinks > 0 && autonomous.routineContextLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineContextRows} routine context row(s), ${routinePhysicalRows} physical context row(s), ${routineActionLinks} action link(s)` },
 	    { id: 'routine_context_visible_on_canvas', pass: Boolean(worldStage && routineCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.routine_context_id !== 'none' && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: `${routineCanvasCueRows} routine canvas cue row(s), latest=${worldStage && worldStage.latestSnapshot ? worldStage.latestSnapshot.routine_context_id : 'none'}` },
 	    { id: 'routine_context_moves_resident_bodies', pass: Boolean(residentBodies && routineDirectedBodyRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineDirectedBodyRows} routine-directed body step(s)` },
+	    { id: 'worksite_proximity_affects_component_work', pass: Boolean(autonomous && worksiteProximityRows > 0 && worksiteEffectRows > 0 && projectProximityRows > 0 && autonomous.worksiteProximityLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${worksiteProximityRows} proximity row(s), ${worksiteEffectRows} effect row(s), ${worksiteBlockedRows} blocked row(s), ${projectProximityRows} project proximity row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
@@ -14784,13 +14936,14 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
   const sim = ensurePrototype3DWorld();
   const structure = sim.structures[0];
   const term = structure ? sim.language.terms.find(row => row.term_id === structure.resident_term_id) : sim.language.terms[0];
+  const constructionScale = Math.max(0.1, Math.min(1, Number(projectRow.construction_scale || 1)));
   const weakComponents = sim.components
     .filter(component => Number(component.stability || 1) < 0.74 || Number(component.damage || 0) > 0.12)
     .sort((a, b) => Number(a.stability || 1) - Number(b.stability || 1));
   const repaired = weakComponents.slice(0, projectRow.completed ? 3 : 1).map(component => {
-    component.damage = Number(clamp(Number(component.damage || 0) - (projectRow.completed ? 0.11 : 0.05)).toFixed(3));
-    component.stability = Number(clamp(Number(component.stability || 0) + (projectRow.completed ? 0.12 : 0.055)).toFixed(3));
-    component.moisture = Number(clamp(Number(component.moisture || 0) - 0.025).toFixed(3));
+    component.damage = Number(clamp(Number(component.damage || 0) - (projectRow.completed ? 0.11 : 0.05) * constructionScale).toFixed(3));
+    component.stability = Number(clamp(Number(component.stability || 0) + (projectRow.completed ? 0.12 : 0.055) * constructionScale).toFixed(3));
+    component.moisture = Number(clamp(Number(component.moisture || 0) - 0.025 * constructionScale).toFixed(3));
     component.repaired_by_project = proposal.proposal_id;
     return component.component_id;
   });
@@ -14832,8 +14985,8 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
     });
   }
   if (structure) {
-    structure.stability = Number(clamp(Number(structure.stability || 0) + repaired.length * 0.025 + added.length * 0.018).toFixed(3));
-    structure.moisture_risk = Number(clamp(Number(structure.moisture_risk || 0) - repaired.length * 0.012).toFixed(3));
+    structure.stability = Number(clamp(Number(structure.stability || 0) + repaired.length * 0.025 * constructionScale + added.length * 0.018).toFixed(3));
+    structure.moisture_risk = Number(clamp(Number(structure.moisture_risk || 0) - repaired.length * 0.012 * constructionScale).toFixed(3));
     structure.maintenance_cost = Math.max(1, Number(structure.maintenance_cost || 1) + (added.length ? 1 : 0));
     structure.status = projectRow.completed ? 'resident-reinforced practical structure' : 'under resident repair';
     structure.risk_flags = Array.from(new Set([...(structure.risk_flags || []), ...(added.length ? ['new reinforcement adds maintenance burden'] : ['repair remains partial'])]));
@@ -14848,6 +15001,9 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
     resident_term: term ? term.resident_word : 'taku-ren',
     player_gloss: term ? term.player_gloss : 'raised dry vessel practice',
     completed: projectRow.completed === true,
+    worksite_distance: projectRow.worksite_distance,
+    worksite_near_enough: projectRow.worksite_near_enough,
+    construction_scale: constructionScale,
     materials_consumed: { ...(consumed || {}) },
     components_added: added,
     components_repaired: repaired,
@@ -14877,7 +15033,7 @@ function applyProjectConstructionToMaterialWorld(proposal, projectRow, consumed)
     materials: Object.keys(consumed || {}),
     publicObservation: construction.problem_addressed,
 	    residentInterpretation: projectRow.completed ? `resident work changed the physical structure and shaped ${practiceNode ? practiceNode.local_name : 'a local practice'}` : `resident work repaired physical strain and added evidence to ${practiceNode ? practiceNode.local_name : 'a local practice'}`,
-    materialTransformation: `${added.length} component(s) added, ${repaired.length} component(s) repaired from consumed project materials`,
+    materialTransformation: `${added.length} component(s) added, ${repaired.length} component(s) repaired from consumed project materials at proximity scale ${constructionScale}`,
     timeCost: 1,
     workCost: Object.values(consumed || {}).reduce((sum, count) => sum + Number(count || 0), 0) + repaired.length,
     toolWear: added.length + repaired.length ? 1 : 0,
@@ -14982,11 +15138,12 @@ function advanceVillageProject() {
   const targetComponent = materialWorld && materialWorld.components
     ? materialWorld.components.find(component => Number(component.stability || 1) < 0.75 || Number(component.damage || 0) > 0.12) || materialWorld.components[0]
     : null;
+  const projectProximity = projectWorksiteProximityForProposal(proposal, targetComponent);
   const toolUse = applyToolPhysicsUse(proposal.proposer, 'project_work', targetComponent, 'village_project_work');
   proposal.project_work_ticks = Number(proposal.project_work_ticks || 0) + 1;
   const previousProgress = Number(proposal.project_progress || 0);
   const toolModifier = toolUse.action_blocked ? -0.22 : (toolUse.failed ? -0.08 : Math.min(0.08, Number(toolUse.fit || 0) * 0.08));
-  const progressGain = Math.max(0.08, 0.36 + Math.min(0.14, Number(proposal.current_support_level || 0) * 0.12) + (proposal.resident_willingness > 0.62 ? 0.04 : 0) + toolModifier);
+  const progressGain = Math.max(0.05, 0.36 + Math.min(0.14, Number(proposal.current_support_level || 0) * 0.12) + (proposal.resident_willingness > 0.62 ? 0.04 : 0) + toolModifier + projectProximity.progress_modifier);
   proposal.project_progress = Number(Math.min(1, previousProgress + progressGain).toFixed(3));
   const completed = proposal.project_progress >= 1;
   proposal.status = completed ? 'completed' : 'in progress';
@@ -15005,6 +15162,11 @@ function advanceVillageProject() {
     tool_failed: toolUse.failed,
     tool_repaired: toolUse.repaired,
     tool_blocked: toolUse.action_blocked,
+    target_component_id: projectProximity.target_component_id,
+    worksite_distance: projectProximity.distance,
+    worksite_near_enough: projectProximity.near_enough,
+    worksite_progress_modifier: projectProximity.progress_modifier,
+    construction_scale: projectProximity.construction_scale,
     progress_before: previousProgress,
     progress: proposal.project_progress,
     status: proposal.status,
@@ -15061,18 +15223,18 @@ function advanceVillageProject() {
     sourceBeliefId: proposal.proposal_id,
     materials,
     publicObservation: proposal.problem_addressed,
-    residentInterpretation: proposal.status,
-    materialTransformation: `consumed ${Object.entries(consumed).map(([material, count]) => `${count} ${material}`).join(', ')} into resident project work; construction ${construction.construction_id} added ${construction.components_added.length} component(s) and repaired ${construction.components_repaired.length}`,
+    residentInterpretation: `${proposal.status}; worksite distance ${projectProximity.distance}`,
+    materialTransformation: `consumed ${Object.entries(consumed).map(([material, count]) => `${count} ${material}`).join(', ')} into resident project work; construction ${construction.construction_id} added ${construction.components_added.length} component(s) and repaired ${construction.components_repaired.length} at proximity scale ${projectProximity.construction_scale}`,
     timeCost: 1,
     workCost: materials.length + 1,
     toolWear: Number(toolUse.wear_delta || 0),
     maintenanceObligation: toolUse.action_blocked ? `repair ${toolUse.tool_id}` : completed ? `maintain completed ${proposal.proposal_id}` : `continue ${proposal.proposal_id}`,
-    unintendedConsequence: toolUse.action_blocked ? 'tool failure slowed resident project work' : completed ? 'new maintenance burden exists' : 'ordinary schedules delayed by project work',
+    unintendedConsequence: toolUse.action_blocked ? 'tool failure slowed resident project work' : !projectProximity.near_enough ? 'distance reduced resident work effect' : completed ? 'new maintenance burden exists' : 'ordinary schedules delayed by project work',
 	    hiddenLawInvolved: proposal.related_practice_nodes && proposal.related_practice_nodes.length ? 'related practice and component physics remain audit-only' : 'component physics audit-only',
 	    conservationCheck: true
 	  });
-	  recordPrototypeMilestone('village-project-progress', `${proposal.proposal_id} ${proposal.status} at ${proposal.project_progress}; construction ${construction.construction_id}; tool ${toolUse.tool_id}`);
-	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, visualId: visualCue.visual_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed, toolBlocked: toolUse.action_blocked });
+	  recordPrototypeMilestone('village-project-progress', `${proposal.proposal_id} ${proposal.status} at ${proposal.project_progress}; construction ${construction.construction_id}; distance ${projectProximity.distance}; tool ${toolUse.tool_id}`);
+	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, visualId: visualCue.visual_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed, toolBlocked: toolUse.action_blocked, worksiteDistance: projectProximity.distance, worksiteNearEnough: projectProximity.near_enough, constructionScale: projectProximity.construction_scale });
 }
 
 function ensurePrototypeCommonsSupport() {

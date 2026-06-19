@@ -17,6 +17,7 @@
 - One resident body physics layer for position, velocity, footing, load, fatigue, contact, slip risk, and bounded recovery.
 - One resident physical material-handling loop for carry, drop, stack, tie, dry, wet-test, and test actions.
 - One resident physical routine-context loop that links autonomous schedules to construction, components, project visuals, and practice sites.
+- One worksite proximity loop that makes component repair/build effects depend on resident body position.
 - One stochastic consequence and recovery loop.
 - One save/return loop.
 - One audit/replay mode.
@@ -200,6 +201,22 @@ Required evidence:
 - hidden simulator law remains out of normal view
 
 This gate makes resident routine context embodied instead of only visual or textual.
+
+## Added scope gate: Worksite proximity affects component work
+
+`worksite_proximity_affects_component_work` is part of the first playable prototype scope.
+
+Required evidence:
+
+- autonomous resident work records a worksite proximity row
+- at least one nearby work row changes component damage, stability, or moisture
+- distant work can be recorded as partial or blocked instead of changing matter at a distance
+- project progress rows record target component distance
+- project construction uses proximity scale when repairing components
+- no direct player command is introduced
+- hidden simulator law remains out of normal view
+
+This gate prevents resident schedules, movement, and project progress from becoming disconnected systems.
 
 ## Added scope gate: Playable Village Day 0-3
 

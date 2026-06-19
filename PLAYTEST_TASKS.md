@@ -208,6 +208,11 @@
 116. Confirm a routine-directed body row reports distance before/after and `moved=true`.
 117. Inspect the canvas after the body step and confirm the resident marker has shifted toward the linked worksite or component.
 118. Export acceptance and confirm `routine_context_moves_resident_bodies` appears as a prototype requirement.
+119. Run `Resident tick` until an actionable routine context appears and confirm Autonomous residents shows a `WPE-...` worksite effect.
+120. Confirm a nearby worksite effect changes component damage, stability, or moisture instead of only changing schedule text.
+121. Confirm distant work records partial or blocked proximity evidence instead of changing a component at a distance.
+122. Advance a Village Board project and confirm the project row records target component distance, near/far status, and construction scale.
+123. Export acceptance and confirm `worksite_proximity_affects_component_work` appears as a prototype requirement.
 
 ## Physics-to-practice slice playtests
 

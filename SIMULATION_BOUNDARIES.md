@@ -41,3 +41,7 @@ Audit view may show hidden laws, source links, causal ledger entries, and simula
 The prototype may compress thousands or millions of years into inspectable epoch records. This is a game abstraction for long-horizon lineage evolution. It is not a full civilization simulator, population model, geology model, physics engine, or historical claim.
 
 Deep-time effects must still follow the existing boundaries: no predeclared tech tree, no avatar-installed concepts, no resource changes without pressure or ledger explanation, and no hidden law exposed to residents in normal view.
+
+## Survivability boundary
+
+Long-run survival is a compressed game-state metric, not proof of real civilization modeling. A civilization may flourish, fragment, survive as trace memory, or collapse into trace memory. These outcomes are generated from stochastic pressure and lineage state; they are not authored endings or moral claims.

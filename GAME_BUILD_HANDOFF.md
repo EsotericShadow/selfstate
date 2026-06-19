@@ -72,3 +72,7 @@ This is a game prototype mechanic, not a new research report. It lets effects em
 ## Prototype v0 deep-time village feedback update
 
 Deep-time epochs now feed back into ordinary village play. Each emergent effect can change a resident schedule and memory, create a Village Board concern/proposal, and write a Reality Constraint Ledger row. The player-facing `Apply effect` control is guarded against duplicating the same effect if an epoch already applied it.
+
+## Prototype v0 survivability update
+
+Deep time now tracks civilization survivability, not just effects. The prototype records a survival ledger with continuity score, active lineages, trace lineages, resource total, average memory, burden, recovery potential, and whether the culture remains million-year capable. The `Ten-million-year sim` control runs compressed long-horizon evolution until ten million years or collapse into trace memory.

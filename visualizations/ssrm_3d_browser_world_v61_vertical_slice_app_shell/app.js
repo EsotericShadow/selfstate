@@ -2170,6 +2170,15 @@ function ensureDeepTimeCivilization() {
       villageConsequences: [],
       boardLinks: [],
       extinctions: [],
+      survivalLedger: [],
+      civilizationState: {
+        status: 'young',
+        continuityScore: 0.5,
+        activeLineages: 0,
+        traceLineages: 0,
+        resourceTotal: Object.values(world.resources || {}).reduce((sum, value) => sum + Number(value || 0), 0),
+        millionYearCapable: false,
+      },
       pressureLedger: [],
       entropyLedger: [],
       boundary: {
@@ -2301,8 +2310,61 @@ function runCivilizationDeepTimeEpoch(yearOverride) {
     lineage_statuses: lineages.map(row => `${row.lineage_id}:${row.status}`).join(';'),
     effect_id: effect.effect_id,
   });
+  evaluateCivilizationSurvival(pressure);
   recordPrototypeMilestone('deep-time-epoch', `+${years} years; ${pressure}; effect ${effect.effect_id}`);
   return log('runCivilizationDeepTimeEpoch', { yearsAdvanced: years, year: sim.year, pressure, lineages: lineages.length, effects: sim.emergentEffects.length, entropy });
+}
+
+function evaluateCivilizationSurvival(pressure = 'manual audit') {
+  const sim = ensureDeepTimeCivilization();
+  const lineages = seedDeepTimeLineages();
+  const activeLineages = lineages.filter(row => row.status !== 'forgotten').length;
+  const traceLineages = lineages.length - activeLineages;
+  const resourceTotal = Object.values(world.resources || {}).reduce((sum, value) => sum + Number(value || 0), 0);
+  const averageMemory = lineages.length ? lineages.reduce((sum, row) => sum + Number(row.memory_strength || 0), 0) / lineages.length : 0;
+  const totalBurden = lineages.reduce((sum, row) => sum + Number(row.maintenance_burden || 0), 0);
+  const recoveryPotential = Number(((world.resources.care || 0) + activeLineages + sim.villageConsequences.length * 0.08).toFixed(3));
+  const continuityScore = clamp((activeLineages / Math.max(1, lineages.length)) * 0.42 + averageMemory * 0.28 + Math.min(1, resourceTotal / 36) * 0.18 + Math.min(1, recoveryPotential / 12) * 0.12 - Math.min(0.3, totalBurden / 80));
+  let status = 'flourishing';
+  if (continuityScore < 0.18 || activeLineages === 0) status = 'collapsed into trace memory';
+  else if (continuityScore < 0.34) status = 'trace-memory survival';
+  else if (continuityScore < 0.52) status = 'fragmented survival';
+  else if (continuityScore < 0.72) status = 'strained continuity';
+  const survivalRow = {
+    audit_id: `DTS-${String(sim.survivalLedger.length + 1).padStart(3, '0')}`,
+    epoch: sim.epoch,
+    year: sim.year,
+    pressure,
+    status,
+    continuity_score: Number(continuityScore.toFixed(3)),
+    active_lineages: activeLineages,
+    trace_lineages: traceLineages,
+    resource_total: resourceTotal,
+    average_memory: Number(averageMemory.toFixed(3)),
+    total_burden: totalBurden,
+    recovery_potential: recoveryPotential,
+    million_year_capable: sim.year >= 1000000 && activeLineages > 0 && continuityScore >= 0.18,
+    emerged_without_intent: true,
+  };
+  sim.civilizationState = {
+    status,
+    continuityScore: survivalRow.continuity_score,
+    activeLineages,
+    traceLineages,
+    resourceTotal,
+    averageMemory: survivalRow.average_memory,
+    totalBurden,
+    recoveryPotential,
+    millionYearCapable: survivalRow.million_year_capable,
+  };
+  sim.survivalLedger.push(survivalRow);
+  return survivalRow;
+}
+
+function runCivilizationSurvivalAudit() {
+  const row = evaluateCivilizationSurvival('player survival audit');
+  recordPrototypeMilestone('survival-audit', `${row.status}; continuity ${row.continuity_score}; active lineages ${row.active_lineages}`);
+  return log('runCivilizationSurvivalAudit', { status: row.status, continuityScore: row.continuity_score, activeLineages: row.active_lineages, millionYearCapable: row.million_year_capable });
 }
 
 function applyDeepTimeEffectToVillage(effect, resourceDelta = null) {
@@ -2400,7 +2462,21 @@ function runCivilizationMillionYearSim() {
     runCivilizationDeepTimeEpoch(50000);
   }
   recordPrototypeMilestone('million-year-sim', `${sim.year} compressed years across ${sim.epoch} epoch(s); ${sim.emergentEffects.length} emergent effect(s)`);
-  return log('runCivilizationMillionYearSim', { year: sim.year, epochs: sim.epoch, effects: sim.emergentEffects.length, extinctions: sim.extinctions.length });
+  const survival = evaluateCivilizationSurvival('million-year survival audit');
+  return log('runCivilizationMillionYearSim', { year: sim.year, epochs: sim.epoch, effects: sim.emergentEffects.length, extinctions: sim.extinctions.length, survivalStatus: survival.status, continuityScore: survival.continuity_score });
+}
+
+function runCivilizationTenMillionYearSim() {
+  ensureGamePrototype();
+  const sim = ensureDeepTimeCivilization();
+  const startEpoch = sim.epoch;
+  while (sim.year < 10000000 && sim.epoch - startEpoch < 220) {
+    runCivilizationDeepTimeEpoch(50000);
+    if (sim.civilizationState && sim.civilizationState.status === 'collapsed into trace memory' && sim.epoch - startEpoch > 20) break;
+  }
+  const survival = evaluateCivilizationSurvival('ten-million-year survival audit');
+  recordPrototypeMilestone('ten-million-year-sim', `${sim.year} compressed years; ${survival.status}; continuity ${survival.continuity_score}`);
+  return log('runCivilizationTenMillionYearSim', { year: sim.year, epochs: sim.epoch, effects: sim.emergentEffects.length, extinctions: sim.extinctions.length, survivalStatus: survival.status, continuityScore: survival.continuity_score });
 }
 
 function formatPrototypeVillageState() {
@@ -2426,12 +2502,13 @@ function formatPrototypePublicOutcomes() {
   const latestBranch = branchRows ? world.hintBranchPersistence.continuityRows[world.hintBranchPersistence.continuityRows.length - 1] : null;
   const deepTime = world.deepTimeCivilization;
   const consequenceCount = deepTime && deepTime.villageConsequences ? deepTime.villageConsequences.length : 0;
+  const survivalStatus = deepTime && deepTime.civilizationState ? deepTime.civilizationState.status : 'not audited';
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
     `Reality ledger: ${ledgerRows} causal row(s)`,
     `Return branches: ${branchRows} continuity row(s)${latestBranch ? ` / latest ${latestBranch.return_status}` : ''}`,
-    `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s)` : 'not started'}`,
+    `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s) / ${survivalStatus}` : 'not started'}`,
     `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
@@ -2454,11 +2531,14 @@ function formatPrototypeDeepTime() {
   const latestTimeline = sim.timeline.slice(-6).map(row => `epoch ${row.epoch}: year ${row.year}, ${row.pressure}, effect=${row.effect_id}`);
   const latestEffects = sim.emergentEffects.slice(-6).map(row => `${row.effect_id}: ${row.local_name} -> ${row.outcome}`);
   const latestConsequences = (sim.villageConsequences || []).slice(-6).map(row => `${row.consequence_id}: ${row.effect_id} changed ${row.resident} schedule via ${row.proposal_id}`);
+  const latestSurvival = (sim.survivalLedger || []).slice(-6).map(row => `${row.audit_id}: year ${row.year}, ${row.status}, score=${row.continuity_score}, active=${row.active_lineages}`);
   const lineageRows = sim.lineages.slice(0, 6).map(row => `${row.lineage_id}: ${row.local_name}; status=${row.status}; age=${row.age_years}; memory=${row.memory_strength.toFixed(2)}; burden=${row.maintenance_burden}`);
+  const state = sim.civilizationState || {};
   return [
     `Compressed year: ${sim.year}`,
     `Epochs: ${sim.epoch}`,
     `Extinctions: ${sim.extinctions.length}`,
+    `Civilization status: ${state.status || 'unknown'} / continuity=${state.continuityScore ?? 'n/a'} / million-year capable=${state.millionYearCapable ? 'yes' : 'not yet'}`,
     `Boundary: no intentional tech tree; hidden laws audit-only; effects emerge from pressure.`,
     'Lineages:',
     ...(lineageRows.length ? lineageRows : ['none']),
@@ -2468,6 +2548,8 @@ function formatPrototypeDeepTime() {
     ...(latestEffects.length ? latestEffects : ['none']),
     'Village consequences:',
     ...(latestConsequences.length ? latestConsequences : ['none']),
+    'Survival ledger:',
+    ...(latestSurvival.length ? latestSurvival : ['none']),
   ].join('\n');
 }
 
@@ -3125,6 +3207,8 @@ function describeReplayRow(row) {
     runCivilizationDeepTimeEpoch: `deep-time epoch +${payload.yearsAdvanced} years pressure=${payload.pressure} lineages=${payload.lineages}`,
     applyLatestDeepTimeEffectToVillage: `deep-time effect applied resident=${payload.resident} proposal=${payload.proposalId}`,
     runCivilizationMillionYearSim: `million-year sim year=${payload.year} epochs=${payload.epochs} effects=${payload.effects}`,
+    runCivilizationTenMillionYearSim: `ten-million-year sim year=${payload.year} status=${payload.survivalStatus}`,
+    runCivilizationSurvivalAudit: `survival audit ${payload.status} score=${payload.continuityScore}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
@@ -4305,6 +4389,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

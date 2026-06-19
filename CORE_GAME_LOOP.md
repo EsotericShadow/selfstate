@@ -76,3 +76,11 @@
 3. The Village Board receives a concern and proposal tied to the effect.
 4. The Reality Constraint Ledger records the effect as an obligation, not free construction.
 5. The player can support, question, wait, or ignore the resulting proposal.
+
+## Survivability loop
+
+1. Advance deep-time epochs through stochastic pressure.
+2. Mutate lineages, resources, burdens, memories, and village consequences.
+3. Audit survival from active lineages, trace lineages, memory, resources, burden, and recovery potential.
+4. Classify the civilization as flourishing, strained continuity, fragmented survival, trace-memory survival, or collapsed into trace memory.
+5. Keep collapsed or trace states inspectable rather than treating them as failure to simulate.

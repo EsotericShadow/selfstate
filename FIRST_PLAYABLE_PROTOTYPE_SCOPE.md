@@ -214,7 +214,7 @@ This is the first single-receipt proof that the prototype has a coherent playabl
 
 Required evidence:
 
-- all six normal verbs used at least once
+- all normal verbs are used at least once, including Talk and Objects
 - options shown in player language
 - action rows remain non-commanding
 - hidden law is not exposed in normal view
@@ -309,7 +309,7 @@ Required evidence:
 
 - the normal rail exposes a Session action
 - the prototype action grid exposes Play session
-- the session runs Player mode, Look, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
+- the session runs Player mode, Look, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
 - each session step records a player-facing row and snapshot
 - proposal, practice, worksite, return journal, save, and return evidence are linked from the same receipt
 - every row records no direct resident command
@@ -336,3 +336,21 @@ Required evidence:
 - component changes are caused by the existing material manipulation/physics system
 
 This milestone makes the physics substrate playable from ordinary UI. It does not create free-form construction or direct object placement by the player.
+
+## Prototype v0 milestone: Bounded Resident Encounter
+
+`player_resident_encounter` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal rail exposes a Talk action
+- Player Mode includes a Resident encounter card
+- the card shows selected resident cue, posture, schedule, memory, active proposal, active practice, and active object context
+- the response is deterministic and phrasebook-bounded
+- the row records no LLM and no open-ended language
+- source history is preserved
+- every row records no direct resident command
+- hidden simulator law remains out of normal view
+- no step installs a tech-tree unlock or correct resident concept
+
+This milestone makes resident continuity readable during ordinary play. It does not add an open-ended language system.

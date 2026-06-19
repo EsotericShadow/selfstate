@@ -2227,7 +2227,7 @@ The browser shell now includes `First playable` and `Export walkthrough`. This c
 
 ## Game prototype v0 update: Normal Play Action Rail
 
-The browser shell now includes a normal play rail: Look, Ask, Support, Wait, Return, and Save. These player-language actions drive the existing village systems and produce `normal_play_action_rail` acceptance evidence.
+The browser shell now includes a normal play rail: Look, Ask, Talk, Objects, Support, Wait, Return, and Save. These player-language actions drive the existing village systems and produce `normal_play_action_rail` acceptance evidence.
 
 ## Game prototype v0 update: Player Mode Interface
 
@@ -2251,7 +2251,7 @@ The browser shell now includes a player-facing return journal. `Journal` records
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Objects, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt.
+The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt.
 
 The receipt is intentionally a game-build bridge, not a new research report. It proves the ordinary player surface can drive the existing village systems as one sequence while preserving resident autonomy, no hidden-law normal view, no direct command, and no tech-tree unlock boundaries.
 
@@ -2260,3 +2260,9 @@ The receipt is intentionally a game-build bridge, not a new research report. It 
 The browser shell now includes an `Objects` normal rail action and `Physical object interaction` Player Mode card. The player can inspect a real simulated component, see the resident term and imperfect gloss, and route the moment through resident-chosen material handling rather than commanding an object action directly.
 
 This moves physics out of debug-only panels and into ordinary play. The interaction records component state, resident handling, manipulation evidence, physics links, practice links, and boundary flags for no direct command, no hidden-law normal view, and no tech-tree unlock.
+
+## Game prototype v0 update: Bounded Resident Encounter
+
+The browser shell now includes a `Talk` normal rail action and `Resident encounter` Player Mode card. The encounter creates a deterministic, phrasebook-bounded resident response from current memory, schedule, visible cue, proposal context, practice context, and object context.
+
+This is not open-ended language and does not call an LLM. It makes residents more readable during normal play while preserving source history, no direct command, no hidden-law normal view, and no tech-tree unlock boundaries.

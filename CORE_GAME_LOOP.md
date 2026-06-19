@@ -513,13 +513,14 @@ The shell now has one player-facing session loop:
 
 1. Enter Player mode.
 2. Look at the village through the normal play surface.
-3. Inspect physical objects through resident-local terms and imperfect glosses.
-4. Open resident proposals.
-5. Run the lived practice loop.
-6. Watch resident worksite consequences.
-7. Open the return journal.
-8. Save the prototype state.
-9. Return after away time.
+3. Talk to the selected resident through bounded phrasebook dialogue.
+4. Inspect physical objects through resident-local terms and imperfect glosses.
+5. Open resident proposals.
+6. Run the lived practice loop.
+7. Watch resident worksite consequences.
+8. Open the return journal.
+9. Save the prototype state.
+10. Return after away time.
 
 Each step records a session row and snapshot. The loop does not add world law; it sequences the existing systems into one playable proof that the player can move from observation to proposals, practice, work, continuity, save, and return without using debug-only subsystem panels.
 
@@ -536,3 +537,17 @@ The normal player loop now includes object interaction:
 7. Hidden simulator law remains audit-only.
 
 The player inspects and asks; residents handle. This keeps the 3D physics substrate playable without turning the avatar into a direct object controller.
+
+## Bounded resident encounter loop
+
+The normal player loop now includes bounded resident encounters:
+
+1. The player chooses `Talk`.
+2. The shell samples selected resident memory, trust, schedule, visible body cue, proposal context, practice context, and object context.
+3. Existing bounded talk and schedule hooks run.
+4. A deterministic phrasebook response is assembled from source-traced state.
+5. The resident may become slightly more trusting, guarded, or cautious through existing ordinary-action influence.
+6. The encounter writes a receipt row and causal ledger row.
+7. No LLM or open-ended resident language is introduced.
+
+The goal is readable continuity: the resident response should reflect what happened in the village without pretending to be autonomous free-form conversation.

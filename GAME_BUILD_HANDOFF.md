@@ -356,10 +356,12 @@ The acceptance gate is `first_playable_walkthrough`. This is the first durable r
 
 ## Prototype v0 milestone: Normal Play Action Rail
 
-The shell now includes a normal player-facing action rail with six verbs:
+The shell now includes a normal player-facing action rail with eight verbs:
 
 - Look
 - Ask
+- Talk
+- Objects
 - Support
 - Wait
 - Return
@@ -411,7 +413,7 @@ This closes a major player-facing continuity gap: the prototype can now show wha
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return.
+The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Talk, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return.
 
 The acceptance gate is `first_playable_session`. It records step rows and snapshots while preserving no direct command, no hidden-law exposure in normal view, and no tech-tree unlock. This is the first receipt for the player-facing session itself rather than another subsystem panel.
 
@@ -424,3 +426,11 @@ The browser shell now includes an `Objects` normal rail action, `Object interact
 The acceptance gate is `player_object_interaction`. It records component state before/after, resident action, manipulation id, physics step, practice link, and boundary flags. The player does not pick up, place, repair, or command the object directly; the avatar creates attention and residents decide what handling is possible under mass, moisture, stability, tool, labor, and resource constraints.
 
 This makes the 3D physics substrate playable through ordinary UI instead of leaving it as a debug panel.
+
+## Game prototype v0 update: Bounded Resident Encounter
+
+The browser shell now includes a `Talk` normal rail action, `Resident encounter` prototype action, and `Resident encounter` player-mode card. It turns the selected resident into a readable game interaction without adding open-ended language.
+
+The acceptance gate is `player_resident_encounter`. It records resident cue, posture, schedule, memory, active proposal, active practice, active object, trust before/after, and a deterministic bounded response. The response is assembled from existing state and phrasebook hooks; no LLM is called and no autonomous natural-language system is introduced.
+
+This makes resident continuity visible in normal play. The player talks and listens; the resident response remains source-traced, bounded, and tied to actual simulation state.

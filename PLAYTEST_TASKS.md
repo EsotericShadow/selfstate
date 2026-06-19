@@ -220,15 +220,15 @@
 
 ## Normal play action rail playtests
 
-- Use Look, Ask, Support, Wait, Return, and Save from the normal action rail.
+- Use Look, Ask, Talk, Objects, Support, Wait, Return, and Save from the normal action rail.
 - Confirm each action creates a row in the `Normal play action rail` card.
 - Confirm Support is recorded as condition support, not direct job assignment.
 - Confirm Save links to a prototype save slot after the normal action flow.
-- Export acceptance and confirm `normal_play_action_rail` appears as a passing requirement after all six verbs run.
+- Export acceptance and confirm `normal_play_action_rail` appears as a passing requirement after all normal verbs run.
 
 ## Player mode interface playtests
 
-- Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Ask, Support, Wait, Return, Save, and Player mode remain reachable.
+- Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Ask, Talk, Objects, Support, Wait, Return, Save, and Player mode remain reachable.
 - Confirm the canvas, player guide, primary play surface, normal action rail, public outcomes, and Player mode interface card remain visible.
 - Confirm Player mode records a session row with no direct resident command and no hidden-law exposure in normal view.
 - Leave Player mode and confirm audit/reviewer surfaces are still recoverable explicitly.
@@ -269,11 +269,20 @@
 ## First playable session playtests
 
 - Run `Session` from the normal rail and confirm the `Play session receipt` card appears in Player mode.
-- Confirm the receipt records Player mode, Look, Objects, Proposals, Practice, Worksite, Journal, Save, and Return steps.
+- Confirm the receipt records Player mode, Look, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return steps.
 - Confirm the receipt links proposal, practice, worksite, return journal, save, and return evidence from one player-facing sequence.
 - Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
 - Confirm the session still has its earlier step rows after the Journal step performs save-slot restoration.
 - Export acceptance and confirm `first_playable_session` appears as a requirement after the session loop runs.
+
+## Bounded resident encounter playtests
+
+- Run `Talk` from the normal rail and confirm the `Resident encounter` card appears in Player Mode.
+- Confirm the card shows selected resident cue, posture, schedule, memory, active proposal, active practice, and active object context.
+- Confirm the response is deterministic and source-traced from existing state.
+- Confirm the row records no LLM, phrasebook-only, no open-ended language, and source history preserved.
+- Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
+- Export acceptance and confirm `player_resident_encounter` appears as a requirement after the encounter loop runs.
 
 ## Physical object interaction playtests
 

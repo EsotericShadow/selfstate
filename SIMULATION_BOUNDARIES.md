@@ -35,3 +35,9 @@ The system should preserve these invariants:
 ## Audit boundary
 
 Audit view may show hidden laws, source links, causal ledger entries, and simulator invariants. Normal resident view should show local names, observations, beliefs, visible behavior, and public consequences.
+
+## Deep-time boundary
+
+The prototype may compress thousands or millions of years into inspectable epoch records. This is a game abstraction for long-horizon lineage evolution. It is not a full civilization simulator, population model, geology model, physics engine, or historical claim.
+
+Deep-time effects must still follow the existing boundaries: no predeclared tech tree, no avatar-installed concepts, no resource changes without pressure or ledger explanation, and no hidden law exposed to residents in normal view.

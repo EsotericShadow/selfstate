@@ -62,3 +62,9 @@ The first game-build branch is `game-prototype-v0`. It starts from the `research
 ## Research arc closure rule
 
 The current research/report arc is complete after the terminal closure report. Future work should be game/app implementation work unless the user explicitly requests another research report.
+
+## Prototype v0 deep-time update
+
+`game-prototype-v0` now includes a compressed deep-time civilization surface in the maintained shell. The controls `Deep-time epoch` and `Million-year sim` advance practice lineages through stochastic pressures such as drought, wet storage decay, route drift, material exhaustion, memory compression, floods, tool wear, and abundance intervals.
+
+This is a game prototype mechanic, not a new research report. It lets effects emerge without a scripted tech tree by mutating local practice lineages from pressure, entropy, material drift, memory strength, usefulness, maintenance burden, forgetting, and adaptation. The active village remains small; deep time is represented as lineage history rather than a full population or region simulator.

@@ -59,3 +59,12 @@
 2. Restore without erasing branch history.
 3. Return sessions show what residents still carry.
 4. Practices can persist, burden, be forgotten, or revive.
+
+## Deep-time civilization loop
+
+1. Seed lineages from practices that emerged in normal play.
+2. Advance a compressed epoch using runtime entropy.
+3. Apply a world pressure such as drought, storage decay, route drift, material exhaustion, memory compression, flood, tool wear, or abundance.
+4. Mutate resources and practice lineages through usefulness, memory strength, maintenance burden, adaptation, or forgetting.
+5. Record emergent effects without assigning intent or unlocking a named technology.
+6. Keep hidden laws audit-only and preserve the timeline for save/return.

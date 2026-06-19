@@ -56,6 +56,14 @@
       "js_function": "toggleAudit",
       "stores_result_key": "ssrm_v61_app_shell_world",
       "target": "audit panel"
+    },
+    {
+      "assertion": "browser QA readiness is inspectable without executing Prototype QA",
+      "browser_executable": true,
+      "hook_id": "QA-08",
+      "js_function": "runFirstPlayableBrowserQaReadiness",
+      "stores_result_key": "ssrm_v61_app_shell_world",
+      "target": "first playable browser QA readiness"
     }
   ],
   "source_v60": "artifacts/ssrm_3d_browser_world_v60_consolidated_playable_vertical_slice_build_results.json",

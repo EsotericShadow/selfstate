@@ -49,6 +49,8 @@
 
 29. Toggle audit and confirm engine concepts and hidden material/physics laws are audit-only while resident-facing language remains local terms plus imperfect player glosses.
 
+30. Use QA readiness before running Prototype QA and confirm it reports normal player surface, canvas cues, first-playable session evidence, lived-action physics visibility, save/return continuity, causal-ledger boundaries, and that QA was not executed.
+
 30. Use End day and confirm the Day cycle recap includes a physics step, and the Village Board can receive a physics-linked concern/proposal without the avatar commanding it.
 
 31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.

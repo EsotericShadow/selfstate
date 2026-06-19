@@ -2265,6 +2265,12 @@ The browser shell now includes a `Session` normal rail action and `Play session`
 
 The receipt is intentionally a game-build bridge, not a new research report. It proves the ordinary player surface can drive the existing village systems as one sequence while preserving resident autonomy, no hidden-law normal view, no direct command, and no tech-tree unlock boundaries.
 
+## Game prototype v0 update: Browser QA Readiness
+
+The browser shell now includes a `QA readiness` action and card. It inspects the current browser state for normal player surface, primary canvas cues, first-playable session evidence, lived-action physics visibility, save/return continuity, and causal-ledger boundaries.
+
+This is a preflight surface, not a validation run. It records whether the shell is ready for an explicitly authorized Prototype QA/browser pass without running Prototype QA, exporting acceptance, or claiming completion.
+
 ## Game prototype v0 update: Physical Object Interaction
 
 The browser shell now includes an `Objects` normal rail action and `Physical object interaction` Player Mode card. The player can inspect a real simulated component, see the resident term and imperfect gloss, and route the moment through resident-chosen material handling rather than commanding an object action directly.

@@ -9,4 +9,9 @@ Boundary: Deterministic browser-local hardened vertical-slice app shell only; no
 
 Open `index.html` in a browser. Use the built-in controls to enter the world,
 move, talk through bounded phrases, alter debt/trust, wait offscreen, save/restore,
-run QA hooks, and export replay JSON.
+run QA hooks, inspect browser QA readiness, and export replay JSON.
+
+`QA readiness` is a non-running preflight. It checks whether the current browser
+state has a normal player surface, canvas cues, a first-playable session,
+lived-action physics visibility, save/return continuity, and causal-ledger
+boundaries before an explicitly authorized Prototype QA/browser pass.

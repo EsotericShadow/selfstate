@@ -329,6 +329,20 @@ The first playable prototype now requires a movement receipt. The player must be
 
 This milestone is the first coherent game-session receipt. It does not add a new simulation system; it proves the existing systems can be driven from the player-facing surface.
 
+## Prototype v0 milestone: Browser QA Readiness
+
+`first_playable_browser_qa_readiness` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the prototype action grid exposes a QA readiness action
+- the visible card reports readiness without running Prototype QA
+- readiness checks cover normal player surface, primary canvas cues, first-playable session evidence, lived-action physics visibility, save/return continuity, and causal-ledger boundaries
+- the receipt explicitly marks that QA was not executed
+- the next action remains an explicitly authorized Prototype QA/browser pass
+
+This milestone keeps the handoff honest: readiness is not completion, and validation is not claimed before it is run.
+
 ## Prototype v0 milestone: Physical Object Interaction
 
 `player_object_interaction` is now part of first playable prototype scope.

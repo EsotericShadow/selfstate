@@ -136,6 +136,13 @@
 5. Save, mutate, restore, and confirm core prototype state still exists.
 6. Show pass/fail checks in the player-facing prototype QA card.
 
+## Browser QA readiness loop
+
+1. Inspect the current browser state without running Prototype QA.
+2. Check whether Player mode, the canvas surface, first-playable session evidence, lived-action physics cues, save/return continuity, and causal-ledger boundaries are present.
+3. Report readiness blockers and the next authorized validation action.
+4. Preserve the distinction between readiness evidence and completed QA evidence.
+
 ## Auto-simulation loop
 
 1. The player starts or bursts the local simulation clock.

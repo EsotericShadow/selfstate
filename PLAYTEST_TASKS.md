@@ -22,3 +22,5 @@
 15. After seeding public pressure, ask a resident schedule twice and confirm Practical discovery shows ordinary play feed rows plus an auto-generated resident test.
 
 16. Run Resident season or Auto burst and confirm residents show readable public behavior cues on the canvas and in the Readable behavior card without exposing hidden/private state.
+
+17. Export acceptance and confirm the Acceptance receipt card reports pass/fail checks for visuals, save/return, autonomy, causality, practices, proposals, million-year survival, ordinary-play tests, readable behavior, QA, and game-build mode.

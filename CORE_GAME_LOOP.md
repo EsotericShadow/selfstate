@@ -131,3 +131,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. The canvas shows simple body-language markers so the player can read state without debug tables.
 4. The expression ledger remains public-cue-only and does not expose hidden resident workspace.
 
+
+## Prototype acceptance receipt loop
+
+1. The player runs or exports the acceptance receipt from the prototype surface.
+2. The shell runs Prototype QA if needed and ensures a real save/return event exists.
+3. The receipt checks visuals, save/return, autonomous residents, causal ledger, emergent practice graph, village proposals, million-year survival path, ordinary-play tests, readable behavior, and game-build mode.
+4. The receipt is stored locally and exported as JSON for durable playtest evidence.
+

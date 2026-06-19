@@ -137,3 +137,15 @@ The ground should be simulated, not just painted. Terrain ledger rows should pre
 - Hidden-law audit separation from resident normal view.
 
 This lets routes, work yards, storage ground, and shelter ground become physical conditions that residents can adapt to, repair, avoid, ritualize, or misunderstand.
+
+## Tool/work physics ledger rows
+
+Tool work must satisfy:
+
+- no work without a physical tool or embodied handling path
+- no tool use without wear pressure
+- no repair without material cost
+- no blocked project without a recorded cause
+- no hidden-law exposure in normal player view
+
+Ledger rows now include `tool_work_physics`, with tool fit, wear delta, damage delta, failure probability, stochastic threshold, repair status, and conservation flags.

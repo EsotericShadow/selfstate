@@ -231,3 +231,11 @@ The village ground is now part of the simulation substrate. The shell adds terra
 Terrain affects both residents and structures. Resident bodies read cell walkability as footing and slip pressure; components lose stability or gain damage when the ground below them becomes weak or wet. `Terrain physics` and `Terrain loop` expose this directly, while `End day` and auto sim advance terrain as part of ordinary time passage.
 
 The canvas now overlays terrain cells, and save/return, QA, acceptance, replay, and the Reality Constraint Ledger preserve terrain rows. This makes the world less like a background map and more like a physical place residents must cross, maintain, avoid, and remember.
+
+## Prototype v0 tool/work physics update
+
+The prototype now treats tools as physical objects inside the stochastic physics loop. Resident work routes through tool fit, wear, damage, moisture, edge integrity, binding strength, stochastic failure, and repair cost instead of abstract success flags.
+
+Game-build consequence: projects and material handling can slow down or create maintenance obligations because the physical tool failed, not because a scripted outcome demanded it.
+
+Boundary: this is still browser-local prototype physics. It is not production-grade rigid-body simulation, but it preserves the rule that work requires bodies, tools, material contact, time, wear, and recoverable maintenance.

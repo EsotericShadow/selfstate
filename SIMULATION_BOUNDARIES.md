@@ -71,3 +71,11 @@ Long-run survival is a compressed game-state metric, not proof of real civilizat
 ## Autonomous resident boundary
 
 Autonomous resident actions are stochastic game mechanics. They are not autonomous language, consciousness, or moral patienthood. They must remain bounded, inspectable, and causally grounded: no direct player command, no free work, no hidden-law knowledge in normal view, and no resource changes without ledger explanation.
+
+## Stochastic physics boundary for Prototype v0
+
+The prototype direction is physics-first: terrain, bodies, materials, tools, work, structures, decay, repair, and deep-time consequences should all be modeled as stochastic causal systems.
+
+This does not claim perfect real-world physics. The requirement is stricter than a scripted state machine and narrower than a full physics engine: every visible effect should have a causal trail through material state, resident action, tool state, time, labor, energy/work cost, resource conservation, or stochastic environmental pressure.
+
+Normal player view should show outcomes, resident terms, and imperfect glosses. Audit view may expose hidden law, stochastic thresholds, and conservation details.

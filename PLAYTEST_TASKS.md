@@ -116,3 +116,12 @@
 62. Save after terrain rows exist, mutate the world, return the slot, and confirm Save / return preserves terrain step/flow/support counts.
 
 63. Export acceptance and confirm terrain physics is required as a substrate gate before resident body physics and material handling can be considered complete.
+
+## Tool/work physics playtests
+
+64. Use `Tool physics` and confirm a tool-use row appears with fit, wear, damage, failure, and hidden-law boundary evidence.
+65. Use `Tool loop` and confirm repeated tool use creates wear rows and may create failure or repair rows.
+66. Use `Resident handling` after tool physics and confirm the handling row links to a physical tool-use id.
+67. Use `Advance project` and confirm project progress includes tool id, fit, failure, repair, and blocked-work evidence.
+68. Save and return after tool work, then confirm saved slot summaries preserve tool-use, failure, and repair counts.
+69. Export acceptance and confirm `tool_work_physics` is part of the prototype acceptance requirements.

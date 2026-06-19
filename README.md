@@ -2190,3 +2190,7 @@ Report 373 closes the current emergent-civilization research/report arc and hand
 Game Prototype v0 now treats stochastic physics as the simulation substrate. The maintained shell tracks component-built 3D structures, material properties, gravity/support/contact/friction, stochastic physical fields for moisture/heat/wind/decay/stress, field and energy ledgers, resident effort/safety coupling, construction-linked practice language, and deep-time physical heritage. This remains browser-local prototype work, not a new research-report chain or a production-certified physics claim.
 
 The prototype also includes resident material handling: residents can carry, drop, stack, tie, dry, wet-test, or test simulated components under mass, resource, moisture, stability, and carry-capacity constraints. Handling changes physical component state, writes causal ledger rows, creates visible canvas markers, can preserve failed handling as warning evidence, and can feed emergent practice nodes without a predeclared tech tree.
+
+## Game Prototype v0 physics direction
+
+The active game-prototype branch is physics-first. The browser shell now models terrain, 3D materials, resident bodies, tools, work, project construction, save/return, and deep-time consequences as stochastic causal systems. Visuals remain basic, but the simulation should avoid sticker-map shortcuts, fixed building assets, instant tech unlocks, or resource-free repair.

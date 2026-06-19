@@ -47,3 +47,16 @@ The first prototype may include a compressed million-year simulation as long as 
 Deep-time continuity should remain physically grounded: construction-linked lineages, component heritage, field pressure, stability, damage, maintenance burden, and resident repair practices should affect whether a lineage survives as living practice, costly habit, trace memory, or forgotten evidence.
 
 Deep-time history should not be accepted as only a narrative/culture ledger. The prototype should preserve physics epoch rows and material flux rows showing what happened to components before residents reinterpret the result.
+
+## Included prototype physics layer: tools and work
+
+Prototype v0 includes a minimal physical tool/work subsystem:
+
+- local resident tool terms and player glosses
+- tool mass, hardness, leverage, edge integrity, binding, moisture, wear, and damage
+- stochastic use/failure rows
+- repair rows that consume real resources
+- coupling into resident material handling and village project progress
+- save/return and acceptance counters for tool use, wear, failure, and repair
+
+This remains intentionally simple visually, but it is part of the serious simulation substrate.

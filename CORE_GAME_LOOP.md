@@ -309,3 +309,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. The avatar returns to the arrival court without restoring an old state.
 4. Residents remember the absence, resource deltas remain, and replay records absence/return receipts.
 5. QA and acceptance treat this as forward persistence, separate from explicit save-slot rollback.
+
+## Tool/work physics loop
+
+Resident and project work now follows:
+
+world pressure -> resident/project action -> physical tool selection -> tool fit check -> wear/damage/moisture update -> stochastic failure or repair -> causal ledger row -> resident memory/progress effect -> visible prototype panel.
+
+The player can observe or support conditions, but cannot bypass wear, material shortages, repair cost, or resident willingness.

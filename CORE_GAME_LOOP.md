@@ -280,6 +280,17 @@ The first playable loop includes a direct save/return pass: enter the village, l
 7. Resident terms and visible behavior drift from the manipulation history.
 8. QA, acceptance, save/return, canvas overlays, and the Reality Constraint Ledger preserve manipulation evidence.
 
+## Resident body physics loop
+
+1. Each resident has a simple physical capsule with mass, radius, height, 3D position, velocity, carried load, fatigue, balance, footing, and recovery debt.
+2. Autonomous actions produce a physical movement target such as shelter rest, work yard project, storage practice, route marker, commons path, or teaching place.
+3. Terrain moisture, field stress, load, carry capacity, fatigue, friction, resident contact, component contact, and stochastic slip risk affect movement.
+4. Movement changes body position, velocity, energy, safety, fatigue, balance, and recovery pressure.
+5. Slips, overloads, or collisions create bounded recovery rows instead of permanent punishment.
+6. Body physics writes Reality Constraint Ledger evidence and visible body cues.
+7. The canvas draws residents from body positions when initialized, so movement is physical state rather than a fixed decorative marker.
+8. QA, acceptance, save/return, replay, and playtests preserve body physics rows.
+
 
 ## Return-later loop
 

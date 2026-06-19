@@ -215,3 +215,11 @@ Compressed civilization history now starts with stochastic physics, not only lin
 Lineages inherit pressure from the components they depend on. If the physical structure decays, a practice can become burdened, forgotten, or harder to maintain; if it remains stable, usefulness can improve. Save slots, QA, acceptance receipts, and the Deep-time civilization card now expose physics epoch counts, material flux rows, mass retention, physical continuity, and lineage pressure links.
 
 The goal is still not production-certified physics. The important game rule is stricter: long-run culture must pass through material physics before it becomes practice survival, village memory, proposal burden, or historical continuity.
+
+## Prototype v0 resident body physics update
+
+Residents now have physical bodies in the prototype shell. Each resident carries a simple capsule state with 3D position, velocity, mass, radius, height, carried load, carry capacity, fatigue, balance, footing, slip risk, and bounded recovery debt.
+
+Autonomous actions and the `Body physics` controls move residents through physical targets such as shelter rest, work yard project space, storage practice, route markers, commons paths, and teaching areas. Movement is affected by terrain moisture, field stress, friction, load, fatigue, body contact, component contact, and stochastic slip risk. Slips and overloads create bounded recovery rows instead of permanent punishment.
+
+The canvas now draws residents from body positions when initialized, and QA, acceptance, save/return, replay, and the Reality Constraint Ledger preserve body physics rows. This moves residents closer to embodied simulation: action choices must be paid for by bodies moving through a physical world.

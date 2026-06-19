@@ -94,3 +94,13 @@
 51. Inspect the Reality Constraint Ledger after a physics epoch and confirm it records material transformation, time cost, work/tool burden, conservation, no resource spawning, and hidden-law separation.
 
 52. Export acceptance and confirm deep-time stochastic physics epochs are required separately from physical heritage and component-effect rows.
+
+53. Use Body physics and confirm the Resident body physics card shows resident position, velocity, footing, load, fatigue, contacts, slip risk, and bounded recovery state.
+
+54. Run Body loop and confirm autonomous resident actions create body physics rows without direct player body commands.
+
+55. Inspect the canvas after Body loop and confirm resident circles move from body positions rather than fixed decorative coordinates.
+
+56. Save after body physics rows exist, mutate the world, return the slot, and confirm Save / return preserves resident body step/contact/recovery counts.
+
+57. Export acceptance and confirm resident body physics is required as a physics-first gate separate from material handling.

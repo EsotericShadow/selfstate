@@ -106,3 +106,19 @@ Compressed history must still obey material causality. A deep-time epoch should 
 - Hidden-law audit separation from resident belief and player normal view.
 
 Long-run civilization survival should read from these rows. A culture cannot remain viable merely because a lineage says it survived; its materials, structures, maintenance burden, and recovery capacity must also survive or leave trace evidence.
+
+## Resident body physics ledger rows
+
+Residents should not be weightless action labels. When a resident moves, works, rests, carries, tests, or avoids, the ledger should be able to preserve:
+
+- Resident body step ID.
+- Resident, action, and source.
+- Body position, velocity, fatigue, balance, footing, load, carry capacity, and recovery debt before/after.
+- Terrain moisture, field stress, friction, slope, and target location.
+- Component contacts and resident contacts.
+- Slip risk, slip event, overload, fatigue delta, and safety delta.
+- Bounded recovery path when slips, overload, or fatigue accumulate.
+- Confirmation that the player did not directly command the body.
+- Hidden-law audit separation from resident normal view.
+
+This keeps resident motion grounded in physics. Body language should be visible expression of position, effort, load, footing, and safety pressure, not a detached animation toggle.

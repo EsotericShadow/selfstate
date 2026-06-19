@@ -47,10 +47,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runDeepTimePhysicsEpoch']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -101,6 +101,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
 		  gamePrototypeReturnLater: null,
 		  gamePrototype3DWorld: null,
 		  gamePrototypeMaterialManipulation: null,
+		  gamePrototypeResidentBodies: null,
 		  promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -4353,6 +4354,321 @@ function ensureAutonomousResidents() {
   return world.autonomousResidents;
 }
 
+function residentBodyInitialPosition(index) {
+  const anchors = [
+    { x: 14, y: 16, z: 0 },
+    { x: 45, y: 14, z: 0 },
+    { x: 76, y: 16, z: 0 },
+    { x: 20, y: 58, z: 0 },
+    { x: 56, y: 62, z: 0 },
+    { x: 92, y: 58, z: 0 },
+  ];
+  return { ...anchors[index % anchors.length] };
+}
+
+function ensureResidentBodies() {
+  if (!world.gamePrototypeResidentBodies) {
+    world.gamePrototypeResidentBodies = {
+      runCount: 0,
+      bodies: {},
+      bodyLedger: [],
+      contactLedger: [],
+      fatigueLedger: [],
+      recoveryLedger: [],
+      boundary: {
+        residentsArePhysicalCapsules: true,
+        stochasticBodyPhysics: true,
+        noDirectPlayerBodyCommand: true,
+        movementCostsEnergyAndSafety: true,
+        collisionAndFootingAudited: true,
+        recoveryIsBounded: true,
+      },
+    };
+  }
+  const sim = world.gamePrototypeResidentBodies;
+  if (!sim.bodies) sim.bodies = {};
+  if (!Array.isArray(sim.bodyLedger)) sim.bodyLedger = [];
+  if (!Array.isArray(sim.contactLedger)) sim.contactLedger = [];
+  if (!Array.isArray(sim.fatigueLedger)) sim.fatigueLedger = [];
+  if (!Array.isArray(sim.recoveryLedger)) sim.recoveryLedger = [];
+  Object.keys(world.residents).forEach((name, index) => {
+    if (!sim.bodies[name]) {
+      sim.bodies[name] = {
+        body_id: `RB-${name}`,
+        resident: name,
+        position3d: residentBodyInitialPosition(index),
+        velocity: { x: 0, y: 0, z: 0 },
+        radius: 3.2 + index * 0.05,
+        height: 9.4,
+        mass: 46 + index * 2,
+        carry_capacity: 9 + (index % 3) * 1.5,
+        carried_load: 0,
+        fatigue: 0.18 + index * 0.02,
+        balance: 0.72,
+        footing: 0.76,
+        recovery_debt: 0,
+        slip_risk: 0,
+        contact_count: 0,
+        last_action: 'initialized',
+        hidden_law_normal_view: false,
+      };
+    }
+  });
+  return sim;
+}
+
+function residentBodyTargetForAction(residentName, action) {
+  const index = Object.keys(world.residents).indexOf(residentName);
+  const offset = Math.max(0, index);
+  const targets = {
+    rest: { x: 12 + offset * 2, y: 12, z: 0, label: 'shelter rest ground' },
+    refuse: { x: 18 + offset * 2, y: 38, z: 0, label: 'autonomy distance' },
+    repair_safety: { x: 32 + offset * 3, y: 66, z: 0, label: 'route marker' },
+    forage: { x: 86, y: 74 - offset * 2, z: 0, label: 'commons route' },
+    proposal_work: { x: 70 + offset, y: 18 + offset, z: 0, label: 'work yard project' },
+    practice_maintenance: { x: 43 + offset, y: 18, z: 0, label: 'practice storage' },
+    physics_repair: { x: 50 + offset, y: 17 + offset, z: 0, label: 'strained physical support' },
+    material_manipulation: { x: 52 + offset, y: 20 + offset, z: 0, label: 'handled component' },
+    teach: { x: 94, y: 20 + offset, z: 0, label: 'board teaching place' },
+    experiment: { x: 66 + offset, y: 26 + offset, z: 0, label: 'small test surface' },
+    observe: { x: 36 + offset * 4, y: 42, z: 0, label: 'watching place' },
+  };
+  return targets[action] || targets.observe;
+}
+
+function residentBodyTerrainAt(body) {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const field = materialWorld && materialWorld.physics ? materialWorld.physics.environment || {} : {};
+  const position = body.position3d || { x: 0, y: 0, z: 0 };
+  const routeWetness = position.y > 56 ? 0.18 : 0.04;
+  const workYardRoughness = position.x > 58 && position.y < 36 ? 0.12 : 0.05;
+  const moisture = clampNeed(Number(field.moisture || 0.24) + routeWetness);
+  const stress = clampNeed(Number(field.stress || 0.16) + workYardRoughness);
+  const friction = clampNeed(0.82 - moisture * 0.28 - stress * 0.12);
+  return {
+    moisture,
+    stress,
+    friction,
+    slope: position.y > 62 ? 0.14 : 0.04,
+    label: position.y > 56 ? 'wet route edge' : position.x > 58 && position.y < 36 ? 'busy work yard' : 'packed village ground',
+  };
+}
+
+function carriedLoadForResident(residentName, action) {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  const carriedMass = materialWorld && materialWorld.components
+    ? materialWorld.components
+      .filter(component => component.carried_by === residentName)
+      .reduce((sum, component) => sum + Number(component.mass || 1), 0)
+    : 0;
+  const actionLoad = action === 'forage' ? 2.4 : action === 'proposal_work' ? 3.2 : action === 'physics_repair' || action === 'material_manipulation' ? 1.8 : action === 'practice_maintenance' ? 1.3 : 0;
+  return Number((carriedMass + actionLoad).toFixed(3));
+}
+
+function residentBodyComponentContacts(body, materialWorld) {
+  if (!materialWorld || !materialWorld.components) return [];
+  const position = body.position3d || {};
+  return materialWorld.components
+    .filter(component => {
+      const componentPosition = component.position3d || {};
+      const dx = Number(componentPosition.x || 0) - Number(position.x || 0);
+      const dy = Number(componentPosition.y || 0) - Number(position.y || 0);
+      const dz = Math.abs(Number(componentPosition.z || 0) - Number(position.z || 0));
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      const contactRadius = Number(body.radius || 3) + Math.max(3, Number(component.dimensions && component.dimensions.x || 6) * 0.08);
+      return distance < contactRadius && dz < Number(body.height || 9);
+    })
+    .slice(0, 4);
+}
+
+function residentBodyResidentContacts(residentName, body, bodies) {
+  const position = body.position3d || {};
+  return Object.entries(bodies)
+    .filter(([name]) => name !== residentName)
+    .filter(([, other]) => {
+      const otherPosition = other.position3d || {};
+      const dx = Number(otherPosition.x || 0) - Number(position.x || 0);
+      const dy = Number(otherPosition.y || 0) - Number(position.y || 0);
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      return distance < Number(body.radius || 3) + Number(other.radius || 3) + 1.4;
+    })
+    .map(([name]) => name)
+    .slice(0, 3);
+}
+
+function applyResidentBodyPhysics(residentName, action = 'observe', entropy = deepTimeEntropyByte(), source = 'autonomous_action') {
+  const sim = ensureResidentBodies();
+  const autonomous = ensureAutonomousResidents();
+  const materialWorld = ensurePrototype3DWorld();
+  const body = sim.bodies[residentName] || Object.values(sim.bodies)[0];
+  const needs = autonomous.needState[residentName] || { energy: 0.5, safety: 0.5 };
+  const before = {
+    position3d: { ...body.position3d },
+    velocity: { ...body.velocity },
+    fatigue: Number(body.fatigue || 0),
+    balance: Number(body.balance || 0),
+    footing: Number(body.footing || 0),
+    recovery_debt: Number(body.recovery_debt || 0),
+  };
+  const target = residentBodyTargetForAction(residentName, action);
+  const terrain = residentBodyTerrainAt(body);
+  const load = carriedLoadForResident(residentName, action);
+  const overload = Math.max(0, load - Number(body.carry_capacity || 8));
+  const dx = Number(target.x || 0) - Number(body.position3d.x || 0);
+  const dy = Number(target.y || 0) - Number(body.position3d.y || 0);
+  const distance = Math.max(0.001, Math.sqrt(dx * dx + dy * dy));
+  const energyFactor = clampNeed(Number(needs.energy || 0.5) + 0.2 - Number(body.fatigue || 0) * 0.25);
+  const loadFactor = clampNeed(1 - load / Math.max(1, Number(body.carry_capacity || 8)) * 0.32);
+  const maxSpeed = Math.max(0.18, 2.4 * terrain.friction * energyFactor * loadFactor);
+  const desired = {
+    x: (dx / distance) * Math.min(maxSpeed, distance),
+    y: (dy / distance) * Math.min(maxSpeed, distance),
+  };
+  const jitter = ((entropy % 9) - 4) * 0.018;
+  body.velocity.x = Number((Number(body.velocity.x || 0) * 0.42 + desired.x * 0.58 + jitter).toFixed(3));
+  body.velocity.y = Number((Number(body.velocity.y || 0) * 0.42 + desired.y * 0.58 - jitter).toFixed(3));
+  body.velocity.z = Number((Number(body.velocity.z || 0) - (Number(body.position3d.z || 0) > 0 ? 0.42 : 0)).toFixed(3));
+  body.position3d.x = Number(Math.max(0, Math.min(120, Number(body.position3d.x || 0) + body.velocity.x)).toFixed(3));
+  body.position3d.y = Number(Math.max(0, Math.min(90, Number(body.position3d.y || 0) + body.velocity.y)).toFixed(3));
+  body.position3d.z = Number(Math.max(0, Number(body.position3d.z || 0) + body.velocity.z).toFixed(3));
+  if (body.position3d.z <= 0) body.velocity.z = Number((Number(body.velocity.z || 0) * -0.08).toFixed(3));
+  const componentContacts = residentBodyComponentContacts(body, materialWorld);
+  const residentContacts = residentBodyResidentContacts(residentName, body, sim.bodies);
+  const collisionCount = componentContacts.length + residentContacts.length;
+  if (collisionCount > 0) {
+    body.velocity.x = Number((body.velocity.x * 0.35).toFixed(3));
+    body.velocity.y = Number((body.velocity.y * 0.35).toFixed(3));
+  }
+  const speed = Math.sqrt(body.velocity.x * body.velocity.x + body.velocity.y * body.velocity.y);
+  const slipRisk = clampNeed((1 - terrain.friction) * 0.32 + overload * 0.04 + collisionCount * 0.035 + Math.max(0, speed - 1.8) * 0.04 + terrain.slope * 0.2);
+  const slipThreshold = ((entropy + sim.bodyLedger.length * 17) % 100) / 100;
+  const slipEvent = slipThreshold < slipRisk;
+  const fatigueDelta = Math.max(0, speed * 0.018 + load * 0.006 + terrain.stress * 0.018 + collisionCount * 0.016 + (slipEvent ? 0.06 : 0) - (action === 'rest' ? 0.09 : 0));
+  const safetyDelta = Math.max(0, slipRisk * 0.08 + collisionCount * 0.012 + overload * 0.01);
+  body.carried_load = load;
+  body.footing = Number(terrain.friction.toFixed(3));
+  body.slip_risk = Number(slipRisk.toFixed(3));
+  body.balance = Number(clampNeed(Number(body.balance || 0.7) - safetyDelta + (action === 'rest' ? 0.04 : 0)).toFixed(3));
+  body.fatigue = Number(clampNeed(Number(body.fatigue || 0) + fatigueDelta).toFixed(3));
+  body.recovery_debt = Number(clampNeed(Number(body.recovery_debt || 0) + (slipEvent ? 0.08 : 0) + overload * 0.015 - (action === 'rest' ? 0.05 : 0)).toFixed(3));
+  body.contact_count += collisionCount;
+  body.last_action = action;
+  needs.energy = clampNeed(Number(needs.energy || 0.5) - fatigueDelta * 0.55);
+  needs.safety = clampNeed(Number(needs.safety || 0.5) - safetyDelta + (action === 'rest' ? 0.02 : 0));
+  const row = {
+    body_step_id: `RBP-${String(sim.bodyLedger.length + 1).padStart(3, '0')}`,
+    resident: residentName,
+    action,
+    source,
+    entropy,
+    target: target.label,
+    before,
+    after: {
+      position3d: { ...body.position3d },
+      velocity: { ...body.velocity },
+      fatigue: body.fatigue,
+      balance: body.balance,
+      footing: body.footing,
+      recovery_debt: body.recovery_debt,
+    },
+    speed: Number(speed.toFixed(3)),
+    carried_load: load,
+    carry_capacity: Number(body.carry_capacity || 0),
+    overload: Number(overload.toFixed(3)),
+    terrain,
+    component_contacts: componentContacts.map(component => component.component_id),
+    resident_contacts: residentContacts,
+    collision_count: collisionCount,
+    slip_risk: body.slip_risk,
+    slip_event: slipEvent,
+    fatigue_delta: Number(fatigueDelta.toFixed(3)),
+    safety_delta: Number(safetyDelta.toFixed(3)),
+    no_direct_player_command: true,
+    hidden_law_normal_view: false,
+  };
+  sim.bodyLedger.push(row);
+  sim.bodyLedger = sim.bodyLedger.slice(-160);
+  if (collisionCount > 0 || slipEvent) {
+    sim.contactLedger.push({
+      contact_id: `RBC-${String(sim.contactLedger.length + 1).padStart(3, '0')}`,
+      body_step_id: row.body_step_id,
+      resident: residentName,
+      component_contacts: row.component_contacts,
+      resident_contacts: residentContacts,
+      slip_event: slipEvent,
+      recovery_debt_after: body.recovery_debt,
+    });
+    sim.contactLedger = sim.contactLedger.slice(-120);
+  }
+  sim.fatigueLedger.push({
+    fatigue_id: `RBF-${String(sim.fatigueLedger.length + 1).padStart(3, '0')}`,
+    body_step_id: row.body_step_id,
+    resident: residentName,
+    fatigue_delta: row.fatigue_delta,
+    fatigue_after: body.fatigue,
+    energy_after: Number(needs.energy.toFixed(3)),
+    footing: body.footing,
+  });
+  sim.fatigueLedger = sim.fatigueLedger.slice(-160);
+  if (body.recovery_debt > 0.35 || slipEvent) {
+    sim.recoveryLedger.push({
+      recovery_id: `RBR-${String(sim.recoveryLedger.length + 1).padStart(3, '0')}`,
+      body_step_id: row.body_step_id,
+      resident: residentName,
+      reason: slipEvent ? 'slip event during movement' : 'accumulated body recovery debt',
+      bounded: true,
+      recovery_path: 'rest, lighter load, safer footing, or help',
+      recovery_debt_after: body.recovery_debt,
+    });
+    sim.recoveryLedger = sim.recoveryLedger.slice(-80);
+  }
+  recordRealityConstraint('resident_body_physics', {
+    resident: residentName,
+    sourceBeliefId: row.body_step_id,
+    materials: row.component_contacts,
+    publicObservation: `${residentName} moved toward ${target.label} with footing ${body.footing}`,
+    residentInterpretation: slipEvent ? 'route or load felt unsafe' : 'movement cost changed body state',
+    materialTransformation: `body position ${before.position3d.x},${before.position3d.y}->${body.position3d.x},${body.position3d.y}; load=${load}; contacts=${collisionCount}`,
+    timeCost: 1,
+    workCost: row.fatigue_delta,
+    toolWear: collisionCount > 0 ? 1 : 0,
+    maintenanceObligation: body.recovery_debt > 0.35 ? 'resident needs bounded rest or safer route' : 'none',
+    unintendedConsequence: slipEvent ? 'slip created recovery debt' : (collisionCount ? 'contact changed movement' : 'ordinary body energy spent'),
+    hiddenLawInvolved: world.audit ? 'body mass, friction, contact, footing, load, and stochastic slip' : 'audit only',
+    conservationCheck: true
+  });
+  return row;
+}
+
+function runResidentBodyPhysicsStep() {
+  ensureGamePrototype();
+  const sim = ensureResidentBodies();
+  const entropy = deepTimeEntropyByte();
+  const residentNames = Object.keys(world.residents);
+  const residentName = residentNames[(entropy + sim.bodyLedger.length) % residentNames.length];
+  const action = chooseAutonomousResidentAction(residentName, entropy);
+  const row = applyResidentBodyPhysics(residentName, action, entropy, 'player_observed_body_physics');
+  mutateResident(residentName, {
+    trust: row.slip_event ? -0.002 : 0.001,
+    progress: row.slip_event ? 0.001 : 0.004,
+    schedule: row.slip_event ? `recovers footing near ${row.target}` : `moves through ${row.target}`,
+    memory: row.slip_event ? `remembered a slip risk near ${row.target}` : `felt the cost of moving through ${row.target}`,
+    historyEvent: 'resident body physics',
+    historyDetail: `${row.body_step_id}; fatigue ${row.after.fatigue}; footing ${row.after.footing}; direct command no`
+  });
+  recordVisibleResidentExpression(residentName, 'body_physics', ensureAutonomousResidents().needState[residentName]);
+  sim.runCount += 1;
+  recordPrototypeMilestone('resident-body-physics', `${residentName} ${action}; fatigue ${row.after.fatigue}; contacts ${row.collision_count}`);
+  return log('runResidentBodyPhysicsStep', { bodyStepId: row.body_step_id, resident: residentName, action, fatigue: row.after.fatigue, footing: row.after.footing, contacts: row.collision_count, slip: row.slip_event });
+}
+
+function runResidentBodyPhysicsLoop() {
+  const before = ensureResidentBodies().bodyLedger.length;
+  for (let i = 0; i < 10; i += 1) runResidentBodyPhysicsStep();
+  const sim = ensureResidentBodies();
+  return log('runResidentBodyPhysicsLoop', { stepsAdded: sim.bodyLedger.length - before, totalSteps: sim.bodyLedger.length, contacts: sim.contactLedger.length, recoveries: sim.recoveryLedger.length });
+}
+
 function currentPhysicsPressure() {
   const sim = world.gamePrototype3DWorld || null;
   if (!sim || !sim.physics) return null;
@@ -4465,12 +4781,18 @@ function deriveVisibleResidentExpression(residentName, action = 'observe', needs
 	    gazeCue = 'looks along contact points';
 	    marker = 'repairing';
 	    reason = 'physical support pressure';
-	  } else if (action === 'material_manipulation') {
+  } else if (action === 'material_manipulation') {
 	    posture = 'hands on material';
 	    movementCue = 'tests weight and surface';
 	    gazeCue = 'checks the part that moved';
 	    marker = 'handling';
 	    reason = 'resident physical manipulation';
+		  } else if (action === 'body_physics') {
+	    posture = 'weight shifted into footing';
+	    movementCue = 'paces by load and ground';
+	    gazeCue = 'checks route underfoot';
+	    marker = 'moving';
+	    reason = 'body physics pressure';
 		  } else if (action === 'teach') {
     posture = 'open teaching stance';
     movementCue = 'small demonstration';
@@ -4534,6 +4856,7 @@ function latestVisibleExpressionFor(residentName) {
 function applyAutonomousResidentAction(residentName, action, entropy) {
   const sim = ensureAutonomousResidents();
   const needs = driftResidentNeeds(sim.needState[residentName], entropy, action);
+  const bodyPhysicsRow = applyResidentBodyPhysics(residentName, action, entropy, 'autonomous_resident_action');
   const resident = world.residents[residentName];
   const board = ensureVillageBoard();
   const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
@@ -4636,6 +4959,10 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     schedule,
     memory,
     no_direct_player_command: true,
+    body_physics_step_id: bodyPhysicsRow.body_step_id,
+    body_fatigue_after: bodyPhysicsRow.after.fatigue,
+    body_footing: bodyPhysicsRow.after.footing,
+    body_contacts: bodyPhysicsRow.collision_count,
   };
   sim.actionLog.push(row);
   const expression = recordVisibleResidentExpression(residentName, action, needs);
@@ -4694,7 +5021,9 @@ function formatPrototypeVillageState() {
     .slice(0, 6)
     .map(([name, row]) => {
       const expression = latestVisibleExpressionFor(name);
-      return `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; cue=${expression.marker}/${expression.posture}; memory=${row.memory}`;
+      const body = world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodies ? world.gamePrototypeResidentBodies.bodies[name] : null;
+      const bodyText = body ? `body=(${body.position3d.x},${body.position3d.y}) fatigue=${body.fatigue} footing=${body.footing}` : 'body=not initialized';
+      return `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; cue=${expression.marker}/${expression.posture}; ${bodyText}; memory=${row.memory}`;
     });
   const resources = Object.entries(world.resources).map(([key, value]) => `${key}=${value}`).join(', ');
   return [
@@ -4733,6 +5062,7 @@ function formatPrototypePublicOutcomes() {
 	  const materialPhysics = materialWorld && materialWorld.physics ? materialWorld.physics.latestStep : null;
 	  const latestTerm = materialWorld && materialWorld.language && materialWorld.language.terms.length ? materialWorld.language.terms[0] : null;
   const manipulation = world.gamePrototypeMaterialManipulation;
+  const residentBodies = world.gamePrototypeResidentBodies;
 	  const constructionPracticeCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
@@ -4748,9 +5078,10 @@ function formatPrototypePublicOutcomes() {
     `Commons support: ${commonsSupport ? `${commonsSupport.supportLedger.length} support row(s), recoveries=${commonsSupport.recoveryLedger.length}` : 'not supported'}`,
     `Nearby actions: ${nearby ? `${nearby.actionLedger.length} location action(s), last=${nearby.lastPlan ? nearby.lastPlan.label + ' -> ' + nearby.lastPlan.action : 'none'}` : 'not used'}`,
     `Village days: ${dayCycle ? `${dayCycle.day} day(s), weather rows=${dayCycle.weatherLedger.length}, recaps=${dayCycle.recapLedger.length}` : 'not advanced'}`,
-	    `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
+    `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
 	    `3D material physics: ${materialWorld ? `${materialWorld.components.length} component(s), ${materialWorld.structures.length} structure(s), term=${latestTerm ? latestTerm.resident_word + ' / ' + latestTerm.player_gloss : 'none'}, physics=${materialPhysics ? `${materialPhysics.step_id} field=${materialPhysics.field_id || 'none'} stress=${materialPhysics.field_stress || 'n/a'}` : 'not stepped'}` : 'not initialized'}`,
     `Resident material handling: ${manipulation ? `${manipulation.actionLedger.length} action(s), practice links=${manipulation.practiceLinks.length}, failures=${manipulation.failureLedger.length}` : 'not started'}`,
+    `Resident body physics: ${residentBodies ? `${residentBodies.bodyLedger.length} body step(s), contacts=${residentBodies.contactLedger.length}, recoveries=${residentBodies.recoveryLedger.length}` : 'not started'}`,
     `Construction practices: ${constructionPracticeCount} construction row(s) linked to practice graph`,
 	    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
@@ -5124,10 +5455,30 @@ function formatPrototypeDeepTime() {
   ].join('\n');
 }
 
+function formatPrototypeResidentBodies() {
+  const sim = world.gamePrototypeResidentBodies || ensureResidentBodies();
+  const bodyRows = Object.values(sim.bodies).map(body => `${body.resident}: pos=(${body.position3d.x},${body.position3d.y},${body.position3d.z}) vel=(${body.velocity.x},${body.velocity.y},${body.velocity.z}) fatigue=${body.fatigue} footing=${body.footing} load=${body.carried_load}/${body.carry_capacity} balance=${body.balance} recovery=${body.recovery_debt} action=${body.last_action}`);
+  const steps = sim.bodyLedger.slice(-8).map(row => `${row.body_step_id}: ${row.resident} ${row.action}; target=${row.target}; speed=${row.speed}; load=${row.carried_load}; contacts=${row.collision_count}; slip=${row.slip_event}; fatigueDelta=${row.fatigue_delta}`);
+  const contacts = sim.contactLedger.slice(-5).map(row => `${row.contact_id}: ${row.resident}; components=${row.component_contacts.join(',') || 'none'} residents=${row.resident_contacts.join(',') || 'none'} slip=${row.slip_event}`);
+  const recoveries = sim.recoveryLedger.slice(-5).map(row => `${row.recovery_id}: ${row.resident}; ${row.reason}; path=${row.recovery_path}; debt=${row.recovery_debt_after}`);
+  return [
+    `Runs: ${sim.runCount} / body steps=${sim.bodyLedger.length} / contacts=${sim.contactLedger.length} / recoveries=${sim.recoveryLedger.length}`,
+    `Boundary: physical resident capsules; stochastic footing/contact/load/fatigue; no direct player body command.`,
+    'Resident bodies:',
+    ...(bodyRows.length ? bodyRows : ['none']),
+    'Recent body steps:',
+    ...(steps.length ? steps : ['none']),
+    'Contact/slip ledger:',
+    ...(contacts.length ? contacts : ['none']),
+    'Bounded recovery rows:',
+    ...(recoveries.length ? recoveries : ['none']),
+  ].join('\n');
+}
+
 function formatPrototypeAutonomousResidents() {
   const sim = world.autonomousResidents;
   if (!sim) return 'No autonomous resident ticks yet. Run Resident tick or Resident season.';
-  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}`);
+  const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}; body=${row.body_physics_step_id || 'none'}`);
   const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
   const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
   const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
@@ -5174,6 +5525,7 @@ function runPrototypeQASmoke() {
   supportResourceCommons();
   advanceVillageProject();
   runAutonomousResidentSeason();
+  runResidentBodyPhysicsLoop();
   runCivilizationMillionYearSim();
   runCivilizationSurvivalAudit();
   runRealityConstraintAudit();
@@ -5211,6 +5563,10 @@ function runPrototypeQASmoke() {
 	    manipulationRows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
 	    manipulationPracticeLinks: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
 	    manipulationFailures: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.failureLedger ? world.gamePrototypeMaterialManipulation.failureLedger.length : 0,
+	    bodyPhysicsRows: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodyLedger ? world.gamePrototypeResidentBodies.bodyLedger.length : 0,
+	    bodyContactRows: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.contactLedger ? world.gamePrototypeResidentBodies.contactLedger.length : 0,
+	    bodyFatigueRows: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.fatigueLedger ? world.gamePrototypeResidentBodies.fatigueLedger.length : 0,
+	    bodyRecoveryRows: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.recoveryLedger ? world.gamePrototypeResidentBodies.recoveryLedger.length : 0,
 	    constructionRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
 	    projectBuiltComponents: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
 	    constructionPracticeLinks: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
@@ -5241,8 +5597,9 @@ function runPrototypeQASmoke() {
     { id: 'location-sensitive-play', pass: Boolean(world.gamePrototypeNearbyActions && savedCounts.nearbyActions > 0 && world.gamePrototypeNearbyActions.actionLedger.every(row => row.avatar_direct_command === false)), evidence: `${savedCounts.nearbyActions} nearby action row(s)` },
 	    { id: 'village-day-cycle', pass: Boolean(world.gamePrototypeDayCycle && savedCounts.villageDays > 0 && savedCounts.weatherRows > 0 && world.gamePrototypeDayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: `${savedCounts.villageDays} day row(s), ${savedCounts.weatherRows} weather row(s)` },
 	    { id: 'return-later-forward-persistence', pass: Boolean(world.gamePrototypeReturnLater && savedCounts.returnLaterRows > 0 && world.gamePrototypeReturnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: `${savedCounts.returnLaterRows} return-later row(s)` },
-		    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && savedCounts.fieldRows > 0 && savedCounts.energyRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s), ${savedCounts.fieldRows} field row(s), ${savedCounts.energyRows} energy row(s)` },
+	    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && savedCounts.fieldRows > 0 && savedCounts.energyRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s), ${savedCounts.fieldRows} field row(s), ${savedCounts.energyRows} energy row(s)` },
 	    { id: 'resident-material-manipulation', pass: Boolean(world.gamePrototypeMaterialManipulation && savedCounts.manipulationRows > 0 && savedCounts.manipulationPracticeLinks > 0 && world.gamePrototypeMaterialManipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${savedCounts.manipulationRows} handling row(s), ${savedCounts.manipulationPracticeLinks} practice link(s), ${savedCounts.manipulationFailures} preserved failure(s)` },
+	    { id: 'resident-body-physics', pass: Boolean(world.gamePrototypeResidentBodies && savedCounts.bodyPhysicsRows > 0 && savedCounts.bodyFatigueRows > 0 && world.gamePrototypeResidentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${savedCounts.bodyPhysicsRows} body step(s), ${savedCounts.bodyContactRows} contact row(s), ${savedCounts.bodyRecoveryRows} recovery row(s)` },
 	    { id: 'physics-influences-village', pass: Boolean(savedCounts.physicsProposals > 0 && world.villageBoard.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${savedCounts.physicsProposals} physics proposal(s), ${savedCounts.physicsRepairActions} repair action(s)` },
     { id: 'projects-change-physical-world', pass: Boolean(savedCounts.constructionRows > 0 && savedCounts.projectBuiltComponents > 0 && world.gamePrototype3DWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${savedCounts.constructionRows} construction row(s), ${savedCounts.projectBuiltComponents} project-built component(s)` },
 	    { id: 'construction-feeds-practice-language', pass: Boolean(savedCounts.constructionPracticeLinks > 0 && savedCounts.constructionPracticeNodes > 0 && world.gamePrototype3DWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${savedCounts.constructionPracticeLinks} construction-practice link(s), ${savedCounts.constructionPracticeNodes} construction practice node(s)` },
@@ -5386,6 +5743,9 @@ function saveSlotSummary(slot) {
 	    physical_energy_rows: slot.physical_energy_rows,
 	    material_manipulation_rows: slot.material_manipulation_rows,
 	    material_manipulation_practice_links: slot.material_manipulation_practice_links,
+	    resident_body_steps: slot.resident_body_steps,
+	    resident_body_contacts: slot.resident_body_contacts,
+	    resident_body_recoveries: slot.resident_body_recoveries,
 	    deep_time_physics_epochs: slot.deep_time_physics_epochs,
 	    deep_time_material_flux_rows: slot.deep_time_material_flux_rows,
 	    deep_time_physical_effects: slot.deep_time_physical_effects,
@@ -5455,6 +5815,9 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    physical_energy_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.energyLedger ? world.gamePrototype3DWorld.physics.energyLedger.length : 0,
 	    material_manipulation_rows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
 	    material_manipulation_practice_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
+	    resident_body_steps: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodyLedger ? world.gamePrototypeResidentBodies.bodyLedger.length : 0,
+	    resident_body_contacts: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.contactLedger ? world.gamePrototypeResidentBodies.contactLedger.length : 0,
+	    resident_body_recoveries: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.recoveryLedger ? world.gamePrototypeResidentBodies.recoveryLedger.length : 0,
 	    construction_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
 	    project_built_components: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
 	    construction_practice_links: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
@@ -5537,10 +5900,11 @@ function buildPrototypeAcceptanceReceipt() {
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
   const nearby = world.gamePrototypeNearbyActions || null;
 	  const dayCycle = world.gamePrototypeDayCycle || null;
-		  const returnLater = world.gamePrototypeReturnLater || null;
+	  const returnLater = world.gamePrototypeReturnLater || null;
 		  const materialWorld = world.gamePrototype3DWorld || null;
 		  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
 	  const manipulation = world.gamePrototypeMaterialManipulation || null;
+	  const residentBodies = world.gamePrototypeResidentBodies || null;
 	  const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
 	  const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
 	  const projectBuiltComponentCount = materialWorld && materialWorld.components ? materialWorld.components.filter(component => component.project_built === true).length : 0;
@@ -5550,6 +5914,10 @@ function buildPrototypeAcceptanceReceipt() {
 		  const energyRows = physics && physics.energyLedger ? physics.energyLedger.length : 0;
 	  const manipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.length : 0;
 	  const manipulationPracticeLinks = manipulation && manipulation.practiceLinks ? manipulation.practiceLinks.length : 0;
+	  const residentBodyRows = residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.length : 0;
+	  const residentBodyFatigueRows = residentBodies && residentBodies.fatigueLedger ? residentBodies.fatigueLedger.length : 0;
+	  const residentBodyContactRows = residentBodies && residentBodies.contactLedger ? residentBodies.contactLedger.length : 0;
+	  const residentBodyRecoveryRows = residentBodies && residentBodies.recoveryLedger ? residentBodies.recoveryLedger.length : 0;
 	  const physicalHeritageRows = deepTime && deepTime.physicalHeritageLedger ? deepTime.physicalHeritageLedger.length : 0;
 	  const deepPhysicalEffectRows = deepTime && deepTime.componentEffectLedger ? deepTime.componentEffectLedger.length : 0;
 	  const deepPhysicsEpochRows = deepTime && deepTime.physicsEpochLedger ? deepTime.physicsEpochLedger.length : 0;
@@ -5574,8 +5942,9 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'location_sensitive_play', pass: Boolean(nearby && nearby.actionLedger.length > 0 && nearby.actionLedger.every(row => row.avatar_direct_command === false)), evidence: nearby ? `${nearby.actionLedger.length} nearby action row(s), last=${nearby.lastPlan ? nearby.lastPlan.label + '->' + nearby.lastPlan.action : 'none'}` : 'not used' },
     { id: 'village_day_cycle', pass: Boolean(dayCycle && dayCycle.dayLedger.length > 0 && dayCycle.weatherLedger.length > 0 && dayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: dayCycle ? `${dayCycle.dayLedger.length} day row(s), ${dayCycle.weatherLedger.length} weather row(s), day=${dayCycle.day}` : 'not advanced' },
 	    { id: 'return_later_forward_persistence', pass: Boolean(returnLater && returnLater.returnLedger.length > 0 && returnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used' },
-		    { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && fieldRows > 0 && energyRows > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}, fields=${fieldRows}, energy=${energyRows}` : 'not initialized' },
+	    { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && fieldRows > 0 && energyRows > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}, fields=${fieldRows}, energy=${energyRows}` : 'not initialized' },
 	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s)` },
+	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
@@ -5652,7 +6021,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
@@ -5701,6 +6070,7 @@ function renderGamePrototypeSurface() {
   const guideNode = document.getElementById('gamePrototypeGuideOut');
   const loopNode = document.getElementById('gamePrototypeLoopOut');
   const deepTimeNode = document.getElementById('gamePrototypeDeepTimeOut');
+  const residentBodiesNode = document.getElementById('gamePrototypeResidentBodiesOut');
   const autonomousNode = document.getElementById('gamePrototypeAutonomousOut');
   const expressionNode = document.getElementById('gamePrototypeExpressionOut');
   const qaNode = document.getElementById('gamePrototypeQAOut');
@@ -5723,6 +6093,7 @@ function renderGamePrototypeSurface() {
   if (guideNode) guideNode.textContent = formatPrototypePlayerGuide();
   if (loopNode) loopNode.textContent = formatPrototypeLoopReceipt();
   if (deepTimeNode) deepTimeNode.textContent = formatPrototypeDeepTime();
+  if (residentBodiesNode) residentBodiesNode.textContent = formatPrototypeResidentBodies();
   if (autonomousNode) autonomousNode.textContent = formatPrototypeAutonomousResidents();
   if (expressionNode) expressionNode.textContent = formatPrototypeReadableBehavior();
   if (qaNode) qaNode.textContent = formatPrototypeQA();
@@ -6387,6 +6758,8 @@ function describeReplayRow(row) {
     leaveAndReturnLater: `left and returned after ${payload.daysAway} day(s), day ${payload.dayBefore}->${payload.dayAfter}, restoredOld=${payload.restoredOldState === true}`,
     runPrototypeMaterialWorldStep: `material world step components=${payload.components} structures=${payload.structures} residentTerms=${payload.residentTerms} stability=${payload.stability} proposal=${payload.physicsProposalId || 'none'}`,
     runPrototypePhysicsStep: `physics step ${payload.stepId} support=${payload.supportChecks} collisions=${payload.collisions} failures=${payload.failures} proposal=${payload.proposalId || 'none'}`,
+    runResidentBodyPhysicsStep: `resident body physics ${payload.resident} ${payload.action} fatigue=${payload.fatigue} footing=${payload.footing} contacts=${payload.contacts} slip=${payload.slip === true}`,
+    runResidentBodyPhysicsLoop: `resident body physics loop steps=${payload.stepsAdded} contacts=${payload.contacts} recoveries=${payload.recoveries}`,
     runDeepTimePhysicsEpoch: `deep-time physics epoch ${payload.physicsEpochId} pressure=${payload.pressure} mass=${payload.massBefore}->${payload.massAfter}`,
     runCivilizationDeepTimeEpoch: `deep-time epoch +${payload.yearsAdvanced} years pressure=${payload.pressure} lineages=${payload.lineages}`,
     applyLatestDeepTimeEffectToVillage: `deep-time effect applied resident=${payload.resident} proposal=${payload.proposalId}`,
@@ -6601,12 +6974,13 @@ function draw() {
   Object.entries(world.residents).forEach(([name, resident], index) => {
     const needs = world.autonomousResidents && world.autonomousResidents.needState ? world.autonomousResidents.needState[name] : null;
     const expression = latestVisibleExpressionFor(name);
-    const x = 130 + (index % 3) * 275;
-    const y = 275 + Math.floor(index / 3) * 150;
+    const body = world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodies ? world.gamePrototypeResidentBodies.bodies[name] : null;
+    const x = body ? Math.max(58, Math.min(982, 86 + Number(body.position3d.x || 0) * 7.4)) : 130 + (index % 3) * 275;
+    const y = body ? Math.max(230, Math.min(520, 220 + Number(body.position3d.y || 0) * 3.2 - Number(body.position3d.z || 0) * 5)) : 275 + Math.floor(index / 3) * 150;
     const energy = needs ? needs.energy : resident.progress;
     const safety = needs ? needs.safety : resident.trust;
     const radius = 20 + Math.round(resident.trust * 10);
-	    const expressionColor = expression.marker === 'boundary' ? '#b75d39' : expression.marker === 'tired' ? '#8aa1b1' : expression.marker === 'working' || expression.marker === 'maintaining' || expression.marker === 'handling' ? '#9fca77' : expression.marker === 'testing' ? '#d5a13a' : '#aad0c3';
+	    const expressionColor = expression.marker === 'boundary' ? '#b75d39' : expression.marker === 'tired' ? '#8aa1b1' : expression.marker === 'working' || expression.marker === 'maintaining' || expression.marker === 'handling' || expression.marker === 'moving' ? '#9fca77' : expression.marker === 'testing' ? '#d5a13a' : '#aad0c3';
     ctx.fillStyle = name === world.selected ? '#f0c35b' : (safety < 0.45 ? '#d98d69' : expressionColor);
     ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
     ctx.strokeStyle = '#111816'; ctx.lineWidth = 3; ctx.stroke();
@@ -6633,9 +7007,13 @@ function draw() {
     ctx.fillText(schedule, x - 62, y + 45);
     ctx.fillStyle = expression.marker === 'boundary' || expression.marker === 'guarded' ? '#f0c35b' : '#aad0c3';
     ctx.fillText(`${expression.marker}: ${expression.movementCue}`.slice(0, 36), x - 62, y + 62);
+    if (body) {
+      ctx.fillStyle = body.slip_risk > 0.24 ? '#f0c35b' : '#9fca77';
+      ctx.fillText(`body f${body.fatigue} foot${body.footing}`.slice(0, 34), x - 62, y + 78);
+    }
     if (needs && needs.autonomy > 0.7) {
       ctx.fillStyle = '#b75d39';
-      ctx.fillText('autonomy high', x - 30, y + 78);
+      ctx.fillText('autonomy high', x - 30, y + (body ? 94 : 78));
     }
   });
 
@@ -8431,6 +8809,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

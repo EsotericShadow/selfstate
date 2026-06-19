@@ -13,6 +13,7 @@
 - One or two emergent practice chains.
 - One Village Board.
 - One resident proposal/project loop.
+- One resident body physics layer for position, velocity, footing, load, fatigue, contact, slip risk, and bounded recovery.
 - One resident physical material-handling loop for carry, drop, stack, tie, dry, wet-test, and test actions.
 - One stochastic consequence and recovery loop.
 - One save/return loop.

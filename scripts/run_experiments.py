@@ -4081,6 +4081,7 @@ COMMANDS: List[List[str]] = [
         "experiments.ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge",
         "experiments.ssrm_3d_browser_world_v130_lived_practical_discovery_bridge",
         "experiments.ssrm_3d_browser_world_v131_avatar_hint_divergence_bridge",
+        "experiments.ssrm_3d_browser_world_v132_hint_branch_return_persistence_bridge",
         "--seed",
         "20270732",
     ],

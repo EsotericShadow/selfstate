@@ -597,3 +597,11 @@ Report 370 adds a first emergent practice graph generated after resident actions
 ## Report 371 public note: avatar hints diverge through households
 
 Report 371 keeps the emergent-practice line from collapsing into avatar-authored teaching. The avatar can ask, warn, demonstrate, offer material, or wait, but households must interpret the hint through their own trust, fear, material limits, maintenance burden, and practice memory. The same hidden-law situation can become a useful habit, ritual, taboo, dispute, or rejection without naming a modern concept or creating a uniform unlock. Boundary remains browser-local deterministic scaffolding: no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no real science/civilization claim, and no fixed technology tree.
+
+## Report 372 public note: hint branches survive return sessions
+
+Report 372 makes avatar-hint divergence persist across returns. Branches can now survive, burden a household, shift reputation, be forgotten recoverably, or revive with evidence and cost. Save/return snapshot rows, source links, causal ledger rows, and expression markers keep the result inspectable. Boundary remains browser-local scaffolding with no LLM call, no consciousness claim, no moral-patienthood claim, no real civilization claim, and no uniform unlock.
+
+## Report 373 public note: research arc closure and game handoff
+
+Report 373 closes the current emergent-civilization research/report arc. The next phase is game development: build the first playable prototype from the maintained shell, with one village, six residents maximum, one anomaly family, one or two emergent practice chains, a Village Board, recovery, save/return, and audit/replay. No more research reports should be added by default unless explicitly requested.

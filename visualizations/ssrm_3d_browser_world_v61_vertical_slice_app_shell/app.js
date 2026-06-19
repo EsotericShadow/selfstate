@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -82,6 +82,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   villageBoard: null,
   realityConstraintLedger: null,
   avatarHintDivergence: null,
+  hintBranchPersistence: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -1995,6 +1996,7 @@ function runStateBoundaryAudit() {
     villageBoard: world.villageBoard,
     realityConstraintLedger: world.realityConstraintLedger,
     avatarHintDivergence: world.avatarHintDivergence,
+    hintBranchPersistence: world.hintBranchPersistence,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2692,6 +2694,10 @@ function describeReplayRow(row) {
     introduceAvatarHint: `avatar hint ${payload.hintId} type=${payload.hintType} direct=${payload.directInstall === true}`,
     runHintDivergenceInterpretation: `hint interpretations=${payload.interpretations} branches=${payload.branches} uniform=${payload.uniform === true}`,
     runAvatarHintDivergenceLoop: `hint divergence hints=${payload.hints} branches=${payload.branches} mutations=${payload.mutations}`,
+    runHintBranchReturnSession: `hint branch return session=${payload.session} persisted=${payload.persisted} forgotten=${payload.forgotten} revived=${payload.revived}`,
+    maintainHintBranchPractice: `maintained hint branch ${payload.branchId} cost=${payload.maintenanceCost}`,
+    reviveForgottenHintPractice: `revived hint branch ${payload.branchId} success=${payload.revived === true}`,
+    runHintBranchPersistenceLoop: `hint branch persistence sessions=${payload.sessions} continuity=${payload.continuityRows}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
@@ -2758,6 +2764,7 @@ function render() {
   renderVillageBoard();
   renderRealityConstraintLedger();
   renderAvatarHintDivergence();
+  renderHintBranchPersistence();
   draw();
 }
 function draw() {
@@ -3599,6 +3606,277 @@ function renderAvatarHintDivergence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+function ensureHintBranchPersistence() {
+  if (!world.hintBranchPersistence) {
+    world.hintBranchPersistence = {
+      returnSessions: [],
+      continuityRows: [],
+      householdReputation: [],
+      maintenanceBurden: [],
+      forgettingEvents: [],
+      revivalEvents: [],
+      sourceLinks: [],
+      boundary: {
+        branchesPersistWithoutReset: true,
+        maintenanceHasCost: true,
+        forgettingAllowed: true,
+        revivalRequiresEvidence: true,
+        uniformUnlocksAllowed: false,
+      },
+    };
+  }
+  return world.hintBranchPersistence;
+}
+
+function currentHintBranchesForReturn() {
+  if (!world.avatarHintDivergence || !world.avatarHintDivergence.branches.length) runAvatarHintDivergenceLoop();
+  const hints = ensureAvatarHintDivergence();
+  return hints.branches.slice(-6);
+}
+
+function branchReturnStatus(branch, sessionIndex, offset) {
+  if (branch.branch_status === 'taboo') return sessionIndex % 2 === 0 ? 'warning_persisted' : 'ritual_warning';
+  if (branch.branch_status === 'ritualized') return offset % 3 === 0 ? 'burdened_ritual' : 'remembered_ritual';
+  if (branch.branch_status === 'disputed') return sessionIndex > 1 ? 'forgotten' : 'still_disputed';
+  if (branch.branch_status === 'rejected') return 'forgotten';
+  if (branch.branch_status === 'useful_practice') return offset % 4 === 0 && sessionIndex > 1 ? 'needs_maintenance' : 'persisted';
+  return 'still_carried';
+}
+
+function runHintBranchReturnSession() {
+  const persistence = ensureHintBranchPersistence();
+  const branches = currentHintBranchesForReturn();
+  const sessionIndex = persistence.returnSessions.length + 1;
+  const session = {
+    session_id: `HRS-${String(sessionIndex).padStart(2, '0')}`,
+    tick: world.tick || world.replay.length,
+    branches_seen: branches.length,
+    avatar_action: 'returned and asked what residents still carry',
+    direct_reset: false,
+  };
+  persistence.returnSessions.push(session);
+  let persisted = 0;
+  let forgotten = 0;
+  let revived = 0;
+  branches.forEach((branch, offset) => {
+    const status = branchReturnStatus(branch, sessionIndex, offset);
+    const maintenanceCost = status === 'needs_maintenance' || status === 'burdened_ritual' ? 2 : (status.includes('ritual') ? 1 : 0);
+    const reputationDelta = status === 'persisted' || status === 'warning_persisted' ? 0.04 : (status === 'forgotten' ? -0.03 : 0.01);
+    const continuity = {
+      continuity_id: `HRC-${String(persistence.continuityRows.length + 1).padStart(2, '0')}`,
+      session_id: session.session_id,
+      branch_id: branch.branch_id,
+      hint_id: branch.hint_id,
+      household: branch.household,
+      resident: branch.resident,
+      prior_status: branch.branch_status,
+      return_status: status,
+      maintenance_cost: maintenanceCost,
+      reputation_delta: reputationDelta,
+      expression_marker: status === 'forgotten' ? 'looks unsure and asks another resident' : (status.includes('warning') ? 'keeps distance and points to the old place' : (maintenanceCost ? 'moves slowly while carrying upkeep material' : 'faces the avatar and names the remembered branch')),
+      avatar_commanded: false,
+      source_practice_id: branch.source_practice_id,
+    };
+    persistence.continuityRows.push(continuity);
+    persistence.householdReputation.push({
+      session_id: session.session_id,
+      household: branch.household,
+      resident: branch.resident,
+      branch_id: branch.branch_id,
+      reputation_delta: reputationDelta,
+      reason: status,
+    });
+    if (maintenanceCost > 0) {
+      persistence.maintenanceBurden.push({
+        session_id: session.session_id,
+        branch_id: branch.branch_id,
+        household: branch.household,
+        material_cost: maintenanceCost,
+        labor_cost: 1,
+        created_obligation: `${status} upkeep for ${branch.branch_status}`,
+      });
+      world.resources.fiber = Math.max(0, world.resources.fiber - maintenanceCost);
+    }
+    if (status === 'forgotten') {
+      forgotten += 1;
+      persistence.forgettingEvents.push({
+        session_id: session.session_id,
+        branch_id: branch.branch_id,
+        household: branch.household,
+        reason: 'low trust, disputed value, or higher priority work',
+        recoverable: true,
+      });
+    } else {
+      persisted += 1;
+    }
+    if (sessionIndex >= 3 && status === 'forgotten' && offset % 2 === 0) {
+      revived += 1;
+      persistence.revivalEvents.push({
+        session_id: session.session_id,
+        branch_id: branch.branch_id,
+        household: branch.household,
+        evidence: 'older resident repeats the remembered counterexample',
+        cost: 1,
+        revived_as: 'cautious retry',
+      });
+      world.resources.care = Math.max(0, world.resources.care - 1);
+    }
+    persistence.sourceLinks.push({
+      session_id: session.session_id,
+      branch_id: branch.branch_id,
+      hint_id: branch.hint_id,
+      source_practice_id: branch.source_practice_id,
+      avatar_commanded: false,
+      hidden_law_exposed: false,
+    });
+    recordRealityConstraint('hint_branch_return_persistence', {
+      materialSources: maintenanceCost ? ['fiber', 'care'] : [],
+      materialTransformation: maintenanceCost ? 'upkeep consumed material and attention' : 'memory carried without material transformation',
+      timeCost: 1,
+      laborCost: 1,
+      toolWear: 0,
+      residentEffort: 1,
+      hiddenLawInvolved: 'audit-only material law',
+      publicObservation: status,
+      residentInterpretation: `${branch.resident} carries ${branch.branch_status} as ${status}`,
+      resourcesBefore: 10,
+      resourcesAfter: 10 - maintenanceCost,
+      conservationCheck: true,
+      maintenanceObligationCreated: maintenanceCost ? continuity.continuity_id : 'none',
+      unintendedConsequence: status === 'forgotten' ? 'recoverable forgetting' : 'ongoing social memory',
+    });
+  });
+  return log('runHintBranchReturnSession', { session: session.session_id, persisted, forgotten, revived, branches: branches.length });
+}
+
+function maintainHintBranchPractice() {
+  const persistence = ensureHintBranchPersistence();
+  if (!persistence.continuityRows.length) runHintBranchReturnSession();
+  const target = [...persistence.continuityRows].reverse().find(row => row.return_status !== 'forgotten') || persistence.continuityRows[persistence.continuityRows.length - 1];
+  const maintenanceCost = Math.max(1, Number(target.maintenance_cost || 0) + 1);
+  persistence.maintenanceBurden.push({
+    session_id: target.session_id,
+    branch_id: target.branch_id,
+    household: target.household,
+    material_cost: maintenanceCost,
+    labor_cost: 1,
+    created_obligation: 'avatar-supported upkeep offer, resident still decides',
+  });
+  persistence.householdReputation.push({
+    session_id: target.session_id,
+    household: target.household,
+    resident: target.resident,
+    branch_id: target.branch_id,
+    reputation_delta: 0.05,
+    reason: 'maintained_with_cost',
+  });
+  world.resources.fiber = Math.max(0, world.resources.fiber - maintenanceCost);
+  recordRealityConstraint('hint_branch_maintenance', {
+    materialSources: ['fiber'],
+    materialTransformation: 'fiber spent on upkeep',
+    timeCost: 1,
+    laborCost: 1,
+    toolWear: 1,
+    residentEffort: 1,
+    hiddenLawInvolved: 'audit-only material law',
+    publicObservation: 'maintenance helped a remembered branch',
+    residentInterpretation: 'support helped, but did not command adoption',
+    resourcesBefore: 10,
+    resourcesAfter: 10 - maintenanceCost,
+    conservationCheck: true,
+    maintenanceObligationCreated: target.branch_id,
+    unintendedConsequence: 'upkeep burden remains visible',
+  });
+  return log('maintainHintBranchPractice', { branchId: target.branch_id, maintenanceCost, avatarCommanded: false });
+}
+
+function reviveForgottenHintPractice() {
+  const persistence = ensureHintBranchPersistence();
+  if (!persistence.forgettingEvents.length) runHintBranchReturnSession();
+  const target = persistence.forgettingEvents[persistence.forgettingEvents.length - 1];
+  if (!target) return log('reviveForgottenHintPractice', { branchId: 'none', revived: false });
+  persistence.revivalEvents.push({
+    session_id: target.session_id,
+    branch_id: target.branch_id,
+    household: target.household,
+    evidence: 'resident asks whether the old branch should be tried again',
+    cost: 1,
+    revived_as: 'bounded revival proposal',
+  });
+  persistence.continuityRows.push({
+    continuity_id: `HRC-${String(persistence.continuityRows.length + 1).padStart(2, '0')}`,
+    session_id: target.session_id,
+    branch_id: target.branch_id,
+    hint_id: 'from-forgetting-event',
+    household: target.household,
+    resident: 'household',
+    prior_status: 'forgotten',
+    return_status: 'revived_as_disputed_memory',
+    maintenance_cost: 1,
+    reputation_delta: 0.02,
+    avatar_commanded: false,
+    source_practice_id: 'source-linked-in-branch-ledger',
+  });
+  world.resources.care = Math.max(0, world.resources.care - 1);
+  recordRealityConstraint('hint_branch_revival', {
+    materialSources: ['care'],
+    materialTransformation: 'attention spent on revival discussion',
+    timeCost: 1,
+    laborCost: 1,
+    toolWear: 0,
+    residentEffort: 1,
+    hiddenLawInvolved: 'audit-only material law',
+    publicObservation: 'forgotten branch revived as disputed memory',
+    residentInterpretation: 'old branch may matter again',
+    resourcesBefore: 10,
+    resourcesAfter: 9,
+    conservationCheck: true,
+    maintenanceObligationCreated: target.branch_id,
+    unintendedConsequence: 'revival remains disputed',
+  });
+  return log('reviveForgottenHintPractice', { branchId: target.branch_id, revived: true, avatarCommanded: false });
+}
+
+function runHintBranchPersistenceLoop() {
+  const persistence = ensureHintBranchPersistence();
+  runHintBranchReturnSession();
+  maintainHintBranchPractice();
+  runHintBranchReturnSession();
+  runHintBranchReturnSession();
+  reviveForgottenHintPractice();
+  return log('runHintBranchPersistenceLoop', {
+    sessions: persistence.returnSessions.length,
+    continuityRows: persistence.continuityRows.length,
+    maintenanceRows: persistence.maintenanceBurden.length,
+    forgettingRows: persistence.forgettingEvents.length,
+    revivalRows: persistence.revivalEvents.length,
+  });
+}
+
+function renderHintBranchPersistence() {
+  const summaryNode = document.getElementById('hintBranchPersistenceSummaryOut');
+  const detailNode = document.getElementById('hintBranchPersistenceOut');
+  const persistence = world.hintBranchPersistence;
+  if (summaryNode) summaryNode.textContent = persistence ? `${persistence.returnSessions.length} sessions / ${persistence.continuityRows.length} continuity / ${persistence.forgettingEvents.length} forgotten / ${persistence.revivalEvents.length} revived` : 'No branch returns yet.';
+  if (!detailNode) return;
+  if (!persistence) {
+    detailNode.textContent = 'No hint branch persistence yet. Run a return session after avatar hint divergence.';
+    return;
+  }
+  const sessions = persistence.returnSessions.slice(-4).map(row => `${row.session_id}: branches=${row.branches_seen} reset=${row.direct_reset}`);
+  const continuity = persistence.continuityRows.slice(-8).map(row => `${row.continuity_id}: ${row.branch_id} ${row.prior_status}->${row.return_status} cost=${row.maintenance_cost} expression=${row.expression_marker || 'none'}`);
+  const revivals = persistence.revivalEvents.slice(-4).map(row => `${row.branch_id}: ${row.revived_as} cost=${row.cost}`);
+  detailNode.textContent = [
+    'Boundary: branches persist, decay, burden, or revive across returns; the avatar cannot reset them into a uniform unlock.',
+    'Return sessions:',
+    ...(sessions.length ? sessions : ['none']),
+    'Continuity:',
+    ...(continuity.length ? continuity : ['none']),
+    'Revivals:',
+    ...(revivals.length ? revivals : ['none']),
+  ].join('\n');
+}
+
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

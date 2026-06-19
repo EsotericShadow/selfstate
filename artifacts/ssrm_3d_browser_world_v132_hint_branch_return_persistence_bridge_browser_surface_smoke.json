@@ -1,0 +1,11 @@
+{
+  "actions_present": true,
+  "detail_present": true,
+  "kind": "static_browser_surface_smoke",
+  "panel_present": true,
+  "reason": "Report 372 checks shell wiring and generated persistence evidence; terminal handoff should decide whether to run a live browser pass.",
+  "render_wired": true,
+  "runtime_browser_exercised": false,
+  "state_wired": true,
+  "summary_present": true
+}

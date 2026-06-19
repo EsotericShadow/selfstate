@@ -1,0 +1,145 @@
+seed,continuity_id,resident,return_status,visible_expression,debug_table_required
+36217,36217-HRC-01-01,Milo,warning_persisted,keeps distance and points to the old place,False
+36217,36217-HRC-01-02,Sera,forgotten,looks unsure and asks another resident,False
+36217,36217-HRC-01-03,Tovan,remembered_ritual,moves slowly while carrying upkeep material,False
+36217,36217-HRC-01-04,Sera,still_disputed,hesitates before repeating the branch story,False
+36217,36217-HRC-01-05,Tovan,persisted,faces the avatar and names the remembered branch,False
+36217,36217-HRC-01-06,Nia,warning_persisted,keeps distance and points to the old place,False
+36217,36217-HRC-02-01,Milo,ritual_warning,keeps distance and points to the old place,False
+36217,36217-HRC-02-02,Sera,forgotten,looks unsure and asks another resident,False
+36217,36217-HRC-02-03,Tovan,remembered_ritual,moves slowly while carrying upkeep material,False
+36217,36217-HRC-02-04,Sera,forgotten,looks unsure and asks another resident,False
+36217,36217-HRC-02-05,Tovan,needs_maintenance,moves slowly while carrying upkeep material,False
+36217,36217-HRC-02-06,Nia,ritual_warning,keeps distance and points to the old place,False
+36217,36217-HRC-03-01,Milo,warning_persisted,keeps distance and points to the old place,False
+36217,36217-HRC-03-02,Sera,forgotten,looks unsure and asks another resident,False
+36217,36217-HRC-03-03,Tovan,remembered_ritual,moves slowly while carrying upkeep material,False
+36217,36217-HRC-03-04,Sera,forgotten,looks unsure and asks another resident,False
+36217,36217-HRC-03-05,Tovan,needs_maintenance,moves slowly while carrying upkeep material,False
+36217,36217-HRC-03-06,Nia,warning_persisted,keeps distance and points to the old place,False
+36231,36231-HRC-01-01,Ari,still_disputed,hesitates before repeating the branch story,False
+36231,36231-HRC-01-02,Fay,persisted,faces the avatar and names the remembered branch,False
+36231,36231-HRC-01-03,Milo,warning_persisted,keeps distance and points to the old place,False
+36231,36231-HRC-01-04,Fay,forgotten,looks unsure and asks another resident,False
+36231,36231-HRC-01-05,Milo,remembered_ritual,moves slowly while carrying upkeep material,False
+36231,36231-HRC-01-06,Sera,still_disputed,hesitates before repeating the branch story,False
+36231,36231-HRC-02-01,Ari,forgotten,looks unsure and asks another resident,False
+36231,36231-HRC-02-02,Fay,persisted,faces the avatar and names the remembered branch,False
+36231,36231-HRC-02-03,Milo,ritual_warning,keeps distance and points to the old place,False
+36231,36231-HRC-02-04,Fay,forgotten,looks unsure and asks another resident,False
+36231,36231-HRC-02-05,Milo,remembered_ritual,moves slowly while carrying upkeep material,False
+36231,36231-HRC-02-06,Sera,forgotten,looks unsure and asks another resident,False
+36231,36231-HRC-03-01,Ari,forgotten,looks unsure and asks another resident,False
+36231,36231-HRC-03-02,Fay,persisted,faces the avatar and names the remembered branch,False
+36231,36231-HRC-03-03,Milo,warning_persisted,keeps distance and points to the old place,False
+36231,36231-HRC-03-04,Fay,forgotten,looks unsure and asks another resident,False
+36231,36231-HRC-03-05,Milo,remembered_ritual,moves slowly while carrying upkeep material,False
+36231,36231-HRC-03-06,Sera,forgotten,looks unsure and asks another resident,False
+36247,36247-HRC-01-01,Ari,burdened_ritual,moves slowly while carrying upkeep material,False
+36247,36247-HRC-01-02,Fay,still_disputed,hesitates before repeating the branch story,False
+36247,36247-HRC-01-03,Milo,persisted,faces the avatar and names the remembered branch,False
+36247,36247-HRC-01-04,Fay,warning_persisted,keeps distance and points to the old place,False
+36247,36247-HRC-01-05,Milo,forgotten,looks unsure and asks another resident,False
+36247,36247-HRC-01-06,Sera,remembered_ritual,moves slowly while carrying upkeep material,False
+36247,36247-HRC-02-01,Ari,burdened_ritual,moves slowly while carrying upkeep material,False
+36247,36247-HRC-02-02,Fay,forgotten,looks unsure and asks another resident,False
+36247,36247-HRC-02-03,Milo,persisted,faces the avatar and names the remembered branch,False
+36247,36247-HRC-02-04,Fay,ritual_warning,keeps distance and points to the old place,False
+36247,36247-HRC-02-05,Milo,forgotten,looks unsure and asks another resident,False
+36247,36247-HRC-02-06,Sera,remembered_ritual,moves slowly while carrying upkeep material,False
+36247,36247-HRC-03-01,Ari,burdened_ritual,moves slowly while carrying upkeep material,False
+36247,36247-HRC-03-02,Fay,forgotten,looks unsure and asks another resident,False
+36247,36247-HRC-03-03,Milo,persisted,faces the avatar and names the remembered branch,False
+36247,36247-HRC-03-04,Fay,warning_persisted,keeps distance and points to the old place,False
+36247,36247-HRC-03-05,Milo,forgotten,looks unsure and asks another resident,False
+36247,36247-HRC-03-06,Sera,remembered_ritual,moves slowly while carrying upkeep material,False
+36263,36263-HRC-01-01,Ari,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-01-02,Fay,remembered_ritual,moves slowly while carrying upkeep material,False
+36263,36263-HRC-01-03,Milo,still_disputed,hesitates before repeating the branch story,False
+36263,36263-HRC-01-04,Fay,persisted,faces the avatar and names the remembered branch,False
+36263,36263-HRC-01-05,Milo,warning_persisted,keeps distance and points to the old place,False
+36263,36263-HRC-01-06,Sera,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-02-01,Ari,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-02-02,Fay,remembered_ritual,moves slowly while carrying upkeep material,False
+36263,36263-HRC-02-03,Milo,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-02-04,Fay,persisted,faces the avatar and names the remembered branch,False
+36263,36263-HRC-02-05,Milo,ritual_warning,keeps distance and points to the old place,False
+36263,36263-HRC-02-06,Sera,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-03-01,Ari,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-03-02,Fay,remembered_ritual,moves slowly while carrying upkeep material,False
+36263,36263-HRC-03-03,Milo,forgotten,looks unsure and asks another resident,False
+36263,36263-HRC-03-04,Fay,persisted,faces the avatar and names the remembered branch,False
+36263,36263-HRC-03-05,Milo,warning_persisted,keeps distance and points to the old place,False
+36263,36263-HRC-03-06,Sera,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-01-01,Milo,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-01-02,Sera,remembered_ritual,moves slowly while carrying upkeep material,False
+36281,36281-HRC-01-03,Tovan,still_disputed,hesitates before repeating the branch story,False
+36281,36281-HRC-01-04,Sera,persisted,faces the avatar and names the remembered branch,False
+36281,36281-HRC-01-05,Tovan,warning_persisted,keeps distance and points to the old place,False
+36281,36281-HRC-01-06,Nia,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-02-01,Milo,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-02-02,Sera,remembered_ritual,moves slowly while carrying upkeep material,False
+36281,36281-HRC-02-03,Tovan,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-02-04,Sera,persisted,faces the avatar and names the remembered branch,False
+36281,36281-HRC-02-05,Tovan,ritual_warning,keeps distance and points to the old place,False
+36281,36281-HRC-02-06,Nia,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-03-01,Milo,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-03-02,Sera,remembered_ritual,moves slowly while carrying upkeep material,False
+36281,36281-HRC-03-03,Tovan,forgotten,looks unsure and asks another resident,False
+36281,36281-HRC-03-04,Sera,persisted,faces the avatar and names the remembered branch,False
+36281,36281-HRC-03-05,Tovan,warning_persisted,keeps distance and points to the old place,False
+36281,36281-HRC-03-06,Nia,forgotten,looks unsure and asks another resident,False
+36307,36307-HRC-01-01,Ari,warning_persisted,keeps distance and points to the old place,False
+36307,36307-HRC-01-02,Fay,forgotten,looks unsure and asks another resident,False
+36307,36307-HRC-01-03,Milo,remembered_ritual,moves slowly while carrying upkeep material,False
+36307,36307-HRC-01-04,Fay,still_disputed,hesitates before repeating the branch story,False
+36307,36307-HRC-01-05,Milo,persisted,faces the avatar and names the remembered branch,False
+36307,36307-HRC-01-06,Sera,warning_persisted,keeps distance and points to the old place,False
+36307,36307-HRC-02-01,Ari,ritual_warning,keeps distance and points to the old place,False
+36307,36307-HRC-02-02,Fay,forgotten,looks unsure and asks another resident,False
+36307,36307-HRC-02-03,Milo,remembered_ritual,moves slowly while carrying upkeep material,False
+36307,36307-HRC-02-04,Fay,forgotten,looks unsure and asks another resident,False
+36307,36307-HRC-02-05,Milo,needs_maintenance,moves slowly while carrying upkeep material,False
+36307,36307-HRC-02-06,Sera,ritual_warning,keeps distance and points to the old place,False
+36307,36307-HRC-03-01,Ari,warning_persisted,keeps distance and points to the old place,False
+36307,36307-HRC-03-02,Fay,forgotten,looks unsure and asks another resident,False
+36307,36307-HRC-03-03,Milo,remembered_ritual,moves slowly while carrying upkeep material,False
+36307,36307-HRC-03-04,Fay,forgotten,looks unsure and asks another resident,False
+36307,36307-HRC-03-05,Milo,needs_maintenance,moves slowly while carrying upkeep material,False
+36307,36307-HRC-03-06,Sera,warning_persisted,keeps distance and points to the old place,False
+36319,36319-HRC-01-01,Milo,burdened_ritual,moves slowly while carrying upkeep material,False
+36319,36319-HRC-01-02,Sera,still_disputed,hesitates before repeating the branch story,False
+36319,36319-HRC-01-03,Tovan,persisted,faces the avatar and names the remembered branch,False
+36319,36319-HRC-01-04,Sera,warning_persisted,keeps distance and points to the old place,False
+36319,36319-HRC-01-05,Tovan,forgotten,looks unsure and asks another resident,False
+36319,36319-HRC-01-06,Nia,remembered_ritual,moves slowly while carrying upkeep material,False
+36319,36319-HRC-02-01,Milo,burdened_ritual,moves slowly while carrying upkeep material,False
+36319,36319-HRC-02-02,Sera,forgotten,looks unsure and asks another resident,False
+36319,36319-HRC-02-03,Tovan,persisted,faces the avatar and names the remembered branch,False
+36319,36319-HRC-02-04,Sera,ritual_warning,keeps distance and points to the old place,False
+36319,36319-HRC-02-05,Tovan,forgotten,looks unsure and asks another resident,False
+36319,36319-HRC-02-06,Nia,remembered_ritual,moves slowly while carrying upkeep material,False
+36319,36319-HRC-03-01,Milo,burdened_ritual,moves slowly while carrying upkeep material,False
+36319,36319-HRC-03-02,Sera,forgotten,looks unsure and asks another resident,False
+36319,36319-HRC-03-03,Tovan,persisted,faces the avatar and names the remembered branch,False
+36319,36319-HRC-03-04,Sera,warning_persisted,keeps distance and points to the old place,False
+36319,36319-HRC-03-05,Tovan,forgotten,looks unsure and asks another resident,False
+36319,36319-HRC-03-06,Nia,remembered_ritual,moves slowly while carrying upkeep material,False
+36343,36343-HRC-01-01,Tovan,warning_persisted,keeps distance and points to the old place,False
+36343,36343-HRC-01-02,Nia,forgotten,looks unsure and asks another resident,False
+36343,36343-HRC-01-03,Ari,remembered_ritual,moves slowly while carrying upkeep material,False
+36343,36343-HRC-01-04,Nia,still_disputed,hesitates before repeating the branch story,False
+36343,36343-HRC-01-05,Ari,persisted,faces the avatar and names the remembered branch,False
+36343,36343-HRC-01-06,Fay,warning_persisted,keeps distance and points to the old place,False
+36343,36343-HRC-02-01,Tovan,ritual_warning,keeps distance and points to the old place,False
+36343,36343-HRC-02-02,Nia,forgotten,looks unsure and asks another resident,False
+36343,36343-HRC-02-03,Ari,remembered_ritual,moves slowly while carrying upkeep material,False
+36343,36343-HRC-02-04,Nia,forgotten,looks unsure and asks another resident,False
+36343,36343-HRC-02-05,Ari,needs_maintenance,moves slowly while carrying upkeep material,False
+36343,36343-HRC-02-06,Fay,ritual_warning,keeps distance and points to the old place,False
+36343,36343-HRC-03-01,Tovan,warning_persisted,keeps distance and points to the old place,False
+36343,36343-HRC-03-02,Nia,forgotten,looks unsure and asks another resident,False
+36343,36343-HRC-03-03,Ari,remembered_ritual,moves slowly while carrying upkeep material,False
+36343,36343-HRC-03-04,Nia,forgotten,looks unsure and asks another resident,False
+36343,36343-HRC-03-05,Ari,needs_maintenance,moves slowly while carrying upkeep material,False
+36343,36343-HRC-03-06,Fay,warning_persisted,keeps distance and points to the old place,False

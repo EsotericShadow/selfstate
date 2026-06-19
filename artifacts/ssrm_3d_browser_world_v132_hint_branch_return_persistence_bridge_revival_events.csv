@@ -1,0 +1,20 @@
+seed,session_id,branch_id,household,evidence,cost,revived_as,avatar_commanded
+36217,36217-HRS-03,36217-AHB-001-2,house_2,older resident repeats the remembered counterexample,1,cautious retry,False
+36217,36217-HRS-03,36217-AHB-002-1,house_1,older resident repeats the remembered counterexample,1,cautious retry,False
+36231,36231-HRS-03,36231-AHB-003-1,house_3,older resident repeats the remembered counterexample,1,cautious retry,False
+36231,36231-HRS-03,36231-AHB-004-1,house_3,older resident repeats the remembered counterexample,1,cautious retry,False
+36231,36231-HRS-03,36231-AHB-004-3,house_1,older resident repeats the remembered counterexample,1,cautious retry,False
+36247,36247-HRS-03,36247-AHB-005-2,house_0,older resident repeats the remembered counterexample,1,cautious retry,False
+36247,36247-HRS-03,36247-AHB-006-2,house_0,older resident repeats the remembered counterexample,1,cautious retry,False
+36263,36263-HRS-03,36263-AHB-007-1,house_3,older resident repeats the remembered counterexample,1,cautious retry,False
+36263,36263-HRS-03,36263-AHB-007-3,house_1,older resident repeats the remembered counterexample,1,cautious retry,False
+36263,36263-HRS-03,36263-AHB-008-3,house_1,older resident repeats the remembered counterexample,1,cautious retry,False
+36281,36281-HRS-03,36281-AHB-009-1,house_1,older resident repeats the remembered counterexample,1,cautious retry,False
+36281,36281-HRS-03,36281-AHB-009-3,house_3,older resident repeats the remembered counterexample,1,cautious retry,False
+36281,36281-HRS-03,36281-AHB-010-3,house_3,older resident repeats the remembered counterexample,1,cautious retry,False
+36307,36307-HRS-03,36307-AHB-011-2,house_0,older resident repeats the remembered counterexample,1,cautious retry,False
+36307,36307-HRS-03,36307-AHB-012-1,house_3,older resident repeats the remembered counterexample,1,cautious retry,False
+36319,36319-HRS-03,36319-AHB-013-2,house_0,older resident repeats the remembered counterexample,1,cautious retry,False
+36319,36319-HRS-03,36319-AHB-014-2,house_0,older resident repeats the remembered counterexample,1,cautious retry,False
+36343,36343-HRS-03,36343-AHB-015-2,house_0,older resident repeats the remembered counterexample,1,cautious retry,False
+36343,36343-HRS-03,36343-AHB-016-1,house_3,older resident repeats the remembered counterexample,1,cautious retry,False

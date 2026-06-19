@@ -1,0 +1,145 @@
+seed,continuity_id,session_id,branch_id,hint_id,household,resident,prior_status,return_status,maintenance_cost,avatar_commanded,source_practice_id,ordinary_action_affected,expression_marker
+36217,36217-HRC-01-01,36217-HRS-01,36217-AHB-001-1,36217-AHD-001,house_1,Milo,taboo,warning_persisted,0,False,36217-EPG-001,schedule_mentions_branch,keeps distance and points to the old place
+36217,36217-HRC-01-02,36217-HRS-01,36217-AHB-001-2,36217-AHD-001,house_2,Sera,rejected,forgotten,0,False,36217-EPG-001,schedule_mentions_branch,looks unsure and asks another resident
+36217,36217-HRC-01-03,36217-HRS-01,36217-AHB-001-3,36217-AHD-001,house_3,Tovan,ritualized,remembered_ritual,1,False,36217-EPG-001,schedule_mentions_branch,moves slowly while carrying upkeep material
+36217,36217-HRC-01-04,36217-HRS-01,36217-AHB-002-1,36217-AHD-002,house_1,Sera,disputed,still_disputed,0,False,36217-EPG-002,schedule_mentions_branch,hesitates before repeating the branch story
+36217,36217-HRC-01-05,36217-HRS-01,36217-AHB-002-2,36217-AHD-002,house_2,Tovan,useful_practice,persisted,0,False,36217-EPG-002,schedule_mentions_branch,faces the avatar and names the remembered branch
+36217,36217-HRC-01-06,36217-HRS-01,36217-AHB-002-3,36217-AHD-002,house_3,Nia,taboo,warning_persisted,0,False,36217-EPG-002,schedule_mentions_branch,keeps distance and points to the old place
+36217,36217-HRC-02-01,36217-HRS-02,36217-AHB-001-1,36217-AHD-001,house_1,Milo,taboo,ritual_warning,1,False,36217-EPG-001,help_prioritizes_upkeep,keeps distance and points to the old place
+36217,36217-HRC-02-02,36217-HRS-02,36217-AHB-001-2,36217-AHD-001,house_2,Sera,rejected,forgotten,0,False,36217-EPG-001,help_prioritizes_upkeep,looks unsure and asks another resident
+36217,36217-HRC-02-03,36217-HRS-02,36217-AHB-001-3,36217-AHD-001,house_3,Tovan,ritualized,remembered_ritual,1,False,36217-EPG-001,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36217,36217-HRC-02-04,36217-HRS-02,36217-AHB-002-1,36217-AHD-002,house_1,Sera,disputed,forgotten,0,False,36217-EPG-002,help_prioritizes_upkeep,looks unsure and asks another resident
+36217,36217-HRC-02-05,36217-HRS-02,36217-AHB-002-2,36217-AHD-002,house_2,Tovan,useful_practice,needs_maintenance,2,False,36217-EPG-002,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36217,36217-HRC-02-06,36217-HRS-02,36217-AHB-002-3,36217-AHD-002,house_3,Nia,taboo,ritual_warning,1,False,36217-EPG-002,help_prioritizes_upkeep,keeps distance and points to the old place
+36217,36217-HRC-03-01,36217-HRS-03,36217-AHB-001-1,36217-AHD-001,house_1,Milo,taboo,warning_persisted,0,False,36217-EPG-001,help_prioritizes_upkeep,keeps distance and points to the old place
+36217,36217-HRC-03-02,36217-HRS-03,36217-AHB-001-2,36217-AHD-001,house_2,Sera,rejected,forgotten,0,False,36217-EPG-001,help_prioritizes_upkeep,looks unsure and asks another resident
+36217,36217-HRC-03-03,36217-HRS-03,36217-AHB-001-3,36217-AHD-001,house_3,Tovan,ritualized,remembered_ritual,1,False,36217-EPG-001,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36217,36217-HRC-03-04,36217-HRS-03,36217-AHB-002-1,36217-AHD-002,house_1,Sera,disputed,forgotten,0,False,36217-EPG-002,help_prioritizes_upkeep,looks unsure and asks another resident
+36217,36217-HRC-03-05,36217-HRS-03,36217-AHB-002-2,36217-AHD-002,house_2,Tovan,useful_practice,needs_maintenance,2,False,36217-EPG-002,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36217,36217-HRC-03-06,36217-HRS-03,36217-AHB-002-3,36217-AHD-002,house_3,Nia,taboo,warning_persisted,0,False,36217-EPG-002,help_prioritizes_upkeep,keeps distance and points to the old place
+36231,36231-HRC-01-01,36231-HRS-01,36231-AHB-003-1,36231-AHD-003,house_3,Ari,disputed,still_disputed,0,False,36231-EPG-003,schedule_mentions_branch,hesitates before repeating the branch story
+36231,36231-HRC-01-02,36231-HRS-01,36231-AHB-003-2,36231-AHD-003,house_0,Fay,useful_practice,persisted,0,False,36231-EPG-003,schedule_mentions_branch,faces the avatar and names the remembered branch
+36231,36231-HRC-01-03,36231-HRS-01,36231-AHB-003-3,36231-AHD-003,house_1,Milo,taboo,warning_persisted,0,False,36231-EPG-003,schedule_mentions_branch,keeps distance and points to the old place
+36231,36231-HRC-01-04,36231-HRS-01,36231-AHB-004-1,36231-AHD-004,house_3,Fay,rejected,forgotten,0,False,36231-EPG-004,schedule_mentions_branch,looks unsure and asks another resident
+36231,36231-HRC-01-05,36231-HRS-01,36231-AHB-004-2,36231-AHD-004,house_0,Milo,ritualized,remembered_ritual,1,False,36231-EPG-004,schedule_mentions_branch,moves slowly while carrying upkeep material
+36231,36231-HRC-01-06,36231-HRS-01,36231-AHB-004-3,36231-AHD-004,house_1,Sera,disputed,still_disputed,0,False,36231-EPG-004,schedule_mentions_branch,hesitates before repeating the branch story
+36231,36231-HRC-02-01,36231-HRS-02,36231-AHB-003-1,36231-AHD-003,house_3,Ari,disputed,forgotten,0,False,36231-EPG-003,help_prioritizes_upkeep,looks unsure and asks another resident
+36231,36231-HRC-02-02,36231-HRS-02,36231-AHB-003-2,36231-AHD-003,house_0,Fay,useful_practice,persisted,0,False,36231-EPG-003,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36231,36231-HRC-02-03,36231-HRS-02,36231-AHB-003-3,36231-AHD-003,house_1,Milo,taboo,ritual_warning,1,False,36231-EPG-003,help_prioritizes_upkeep,keeps distance and points to the old place
+36231,36231-HRC-02-04,36231-HRS-02,36231-AHB-004-1,36231-AHD-004,house_3,Fay,rejected,forgotten,0,False,36231-EPG-004,help_prioritizes_upkeep,looks unsure and asks another resident
+36231,36231-HRC-02-05,36231-HRS-02,36231-AHB-004-2,36231-AHD-004,house_0,Milo,ritualized,remembered_ritual,1,False,36231-EPG-004,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36231,36231-HRC-02-06,36231-HRS-02,36231-AHB-004-3,36231-AHD-004,house_1,Sera,disputed,forgotten,0,False,36231-EPG-004,help_prioritizes_upkeep,looks unsure and asks another resident
+36231,36231-HRC-03-01,36231-HRS-03,36231-AHB-003-1,36231-AHD-003,house_3,Ari,disputed,forgotten,0,False,36231-EPG-003,help_prioritizes_upkeep,looks unsure and asks another resident
+36231,36231-HRC-03-02,36231-HRS-03,36231-AHB-003-2,36231-AHD-003,house_0,Fay,useful_practice,persisted,0,False,36231-EPG-003,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36231,36231-HRC-03-03,36231-HRS-03,36231-AHB-003-3,36231-AHD-003,house_1,Milo,taboo,warning_persisted,0,False,36231-EPG-003,help_prioritizes_upkeep,keeps distance and points to the old place
+36231,36231-HRC-03-04,36231-HRS-03,36231-AHB-004-1,36231-AHD-004,house_3,Fay,rejected,forgotten,0,False,36231-EPG-004,help_prioritizes_upkeep,looks unsure and asks another resident
+36231,36231-HRC-03-05,36231-HRS-03,36231-AHB-004-2,36231-AHD-004,house_0,Milo,ritualized,remembered_ritual,1,False,36231-EPG-004,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36231,36231-HRC-03-06,36231-HRS-03,36231-AHB-004-3,36231-AHD-004,house_1,Sera,disputed,forgotten,0,False,36231-EPG-004,help_prioritizes_upkeep,looks unsure and asks another resident
+36247,36247-HRC-01-01,36247-HRS-01,36247-AHB-005-1,36247-AHD-005,house_3,Ari,ritualized,burdened_ritual,1,False,36247-EPG-005,schedule_mentions_branch,moves slowly while carrying upkeep material
+36247,36247-HRC-01-02,36247-HRS-01,36247-AHB-005-2,36247-AHD-005,house_0,Fay,disputed,still_disputed,0,False,36247-EPG-005,schedule_mentions_branch,hesitates before repeating the branch story
+36247,36247-HRC-01-03,36247-HRS-01,36247-AHB-005-3,36247-AHD-005,house_1,Milo,useful_practice,persisted,0,False,36247-EPG-005,schedule_mentions_branch,faces the avatar and names the remembered branch
+36247,36247-HRC-01-04,36247-HRS-01,36247-AHB-006-1,36247-AHD-006,house_3,Fay,taboo,warning_persisted,0,False,36247-EPG-006,schedule_mentions_branch,keeps distance and points to the old place
+36247,36247-HRC-01-05,36247-HRS-01,36247-AHB-006-2,36247-AHD-006,house_0,Milo,rejected,forgotten,0,False,36247-EPG-006,schedule_mentions_branch,looks unsure and asks another resident
+36247,36247-HRC-01-06,36247-HRS-01,36247-AHB-006-3,36247-AHD-006,house_1,Sera,ritualized,remembered_ritual,1,False,36247-EPG-006,schedule_mentions_branch,moves slowly while carrying upkeep material
+36247,36247-HRC-02-01,36247-HRS-02,36247-AHB-005-1,36247-AHD-005,house_3,Ari,ritualized,burdened_ritual,1,False,36247-EPG-005,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36247,36247-HRC-02-02,36247-HRS-02,36247-AHB-005-2,36247-AHD-005,house_0,Fay,disputed,forgotten,0,False,36247-EPG-005,help_prioritizes_upkeep,looks unsure and asks another resident
+36247,36247-HRC-02-03,36247-HRS-02,36247-AHB-005-3,36247-AHD-005,house_1,Milo,useful_practice,persisted,0,False,36247-EPG-005,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36247,36247-HRC-02-04,36247-HRS-02,36247-AHB-006-1,36247-AHD-006,house_3,Fay,taboo,ritual_warning,1,False,36247-EPG-006,help_prioritizes_upkeep,keeps distance and points to the old place
+36247,36247-HRC-02-05,36247-HRS-02,36247-AHB-006-2,36247-AHD-006,house_0,Milo,rejected,forgotten,0,False,36247-EPG-006,help_prioritizes_upkeep,looks unsure and asks another resident
+36247,36247-HRC-02-06,36247-HRS-02,36247-AHB-006-3,36247-AHD-006,house_1,Sera,ritualized,remembered_ritual,1,False,36247-EPG-006,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36247,36247-HRC-03-01,36247-HRS-03,36247-AHB-005-1,36247-AHD-005,house_3,Ari,ritualized,burdened_ritual,1,False,36247-EPG-005,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36247,36247-HRC-03-02,36247-HRS-03,36247-AHB-005-2,36247-AHD-005,house_0,Fay,disputed,forgotten,0,False,36247-EPG-005,help_prioritizes_upkeep,looks unsure and asks another resident
+36247,36247-HRC-03-03,36247-HRS-03,36247-AHB-005-3,36247-AHD-005,house_1,Milo,useful_practice,persisted,0,False,36247-EPG-005,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36247,36247-HRC-03-04,36247-HRS-03,36247-AHB-006-1,36247-AHD-006,house_3,Fay,taboo,warning_persisted,0,False,36247-EPG-006,help_prioritizes_upkeep,keeps distance and points to the old place
+36247,36247-HRC-03-05,36247-HRS-03,36247-AHB-006-2,36247-AHD-006,house_0,Milo,rejected,forgotten,0,False,36247-EPG-006,help_prioritizes_upkeep,looks unsure and asks another resident
+36247,36247-HRC-03-06,36247-HRS-03,36247-AHB-006-3,36247-AHD-006,house_1,Sera,ritualized,remembered_ritual,1,False,36247-EPG-006,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36263,36263-HRC-01-01,36263-HRS-01,36263-AHB-007-1,36263-AHD-007,house_3,Ari,rejected,forgotten,0,False,36263-EPG-007,schedule_mentions_branch,looks unsure and asks another resident
+36263,36263-HRC-01-02,36263-HRS-01,36263-AHB-007-2,36263-AHD-007,house_0,Fay,ritualized,remembered_ritual,1,False,36263-EPG-007,schedule_mentions_branch,moves slowly while carrying upkeep material
+36263,36263-HRC-01-03,36263-HRS-01,36263-AHB-007-3,36263-AHD-007,house_1,Milo,disputed,still_disputed,0,False,36263-EPG-007,schedule_mentions_branch,hesitates before repeating the branch story
+36263,36263-HRC-01-04,36263-HRS-01,36263-AHB-008-1,36263-AHD-008,house_3,Fay,useful_practice,persisted,0,False,36263-EPG-008,schedule_mentions_branch,faces the avatar and names the remembered branch
+36263,36263-HRC-01-05,36263-HRS-01,36263-AHB-008-2,36263-AHD-008,house_0,Milo,taboo,warning_persisted,0,False,36263-EPG-008,schedule_mentions_branch,keeps distance and points to the old place
+36263,36263-HRC-01-06,36263-HRS-01,36263-AHB-008-3,36263-AHD-008,house_1,Sera,rejected,forgotten,0,False,36263-EPG-008,schedule_mentions_branch,looks unsure and asks another resident
+36263,36263-HRC-02-01,36263-HRS-02,36263-AHB-007-1,36263-AHD-007,house_3,Ari,rejected,forgotten,0,False,36263-EPG-007,help_prioritizes_upkeep,looks unsure and asks another resident
+36263,36263-HRC-02-02,36263-HRS-02,36263-AHB-007-2,36263-AHD-007,house_0,Fay,ritualized,remembered_ritual,1,False,36263-EPG-007,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36263,36263-HRC-02-03,36263-HRS-02,36263-AHB-007-3,36263-AHD-007,house_1,Milo,disputed,forgotten,0,False,36263-EPG-007,help_prioritizes_upkeep,looks unsure and asks another resident
+36263,36263-HRC-02-04,36263-HRS-02,36263-AHB-008-1,36263-AHD-008,house_3,Fay,useful_practice,persisted,0,False,36263-EPG-008,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36263,36263-HRC-02-05,36263-HRS-02,36263-AHB-008-2,36263-AHD-008,house_0,Milo,taboo,ritual_warning,1,False,36263-EPG-008,help_prioritizes_upkeep,keeps distance and points to the old place
+36263,36263-HRC-02-06,36263-HRS-02,36263-AHB-008-3,36263-AHD-008,house_1,Sera,rejected,forgotten,0,False,36263-EPG-008,help_prioritizes_upkeep,looks unsure and asks another resident
+36263,36263-HRC-03-01,36263-HRS-03,36263-AHB-007-1,36263-AHD-007,house_3,Ari,rejected,forgotten,0,False,36263-EPG-007,help_prioritizes_upkeep,looks unsure and asks another resident
+36263,36263-HRC-03-02,36263-HRS-03,36263-AHB-007-2,36263-AHD-007,house_0,Fay,ritualized,remembered_ritual,1,False,36263-EPG-007,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36263,36263-HRC-03-03,36263-HRS-03,36263-AHB-007-3,36263-AHD-007,house_1,Milo,disputed,forgotten,0,False,36263-EPG-007,help_prioritizes_upkeep,looks unsure and asks another resident
+36263,36263-HRC-03-04,36263-HRS-03,36263-AHB-008-1,36263-AHD-008,house_3,Fay,useful_practice,persisted,0,False,36263-EPG-008,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36263,36263-HRC-03-05,36263-HRS-03,36263-AHB-008-2,36263-AHD-008,house_0,Milo,taboo,warning_persisted,0,False,36263-EPG-008,help_prioritizes_upkeep,keeps distance and points to the old place
+36263,36263-HRC-03-06,36263-HRS-03,36263-AHB-008-3,36263-AHD-008,house_1,Sera,rejected,forgotten,0,False,36263-EPG-008,help_prioritizes_upkeep,looks unsure and asks another resident
+36281,36281-HRC-01-01,36281-HRS-01,36281-AHB-009-1,36281-AHD-009,house_1,Milo,rejected,forgotten,0,False,36281-EPG-009,schedule_mentions_branch,looks unsure and asks another resident
+36281,36281-HRC-01-02,36281-HRS-01,36281-AHB-009-2,36281-AHD-009,house_2,Sera,ritualized,remembered_ritual,1,False,36281-EPG-009,schedule_mentions_branch,moves slowly while carrying upkeep material
+36281,36281-HRC-01-03,36281-HRS-01,36281-AHB-009-3,36281-AHD-009,house_3,Tovan,disputed,still_disputed,0,False,36281-EPG-009,schedule_mentions_branch,hesitates before repeating the branch story
+36281,36281-HRC-01-04,36281-HRS-01,36281-AHB-010-1,36281-AHD-010,house_1,Sera,useful_practice,persisted,0,False,36281-EPG-010,schedule_mentions_branch,faces the avatar and names the remembered branch
+36281,36281-HRC-01-05,36281-HRS-01,36281-AHB-010-2,36281-AHD-010,house_2,Tovan,taboo,warning_persisted,0,False,36281-EPG-010,schedule_mentions_branch,keeps distance and points to the old place
+36281,36281-HRC-01-06,36281-HRS-01,36281-AHB-010-3,36281-AHD-010,house_3,Nia,rejected,forgotten,0,False,36281-EPG-010,schedule_mentions_branch,looks unsure and asks another resident
+36281,36281-HRC-02-01,36281-HRS-02,36281-AHB-009-1,36281-AHD-009,house_1,Milo,rejected,forgotten,0,False,36281-EPG-009,help_prioritizes_upkeep,looks unsure and asks another resident
+36281,36281-HRC-02-02,36281-HRS-02,36281-AHB-009-2,36281-AHD-009,house_2,Sera,ritualized,remembered_ritual,1,False,36281-EPG-009,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36281,36281-HRC-02-03,36281-HRS-02,36281-AHB-009-3,36281-AHD-009,house_3,Tovan,disputed,forgotten,0,False,36281-EPG-009,help_prioritizes_upkeep,looks unsure and asks another resident
+36281,36281-HRC-02-04,36281-HRS-02,36281-AHB-010-1,36281-AHD-010,house_1,Sera,useful_practice,persisted,0,False,36281-EPG-010,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36281,36281-HRC-02-05,36281-HRS-02,36281-AHB-010-2,36281-AHD-010,house_2,Tovan,taboo,ritual_warning,1,False,36281-EPG-010,help_prioritizes_upkeep,keeps distance and points to the old place
+36281,36281-HRC-02-06,36281-HRS-02,36281-AHB-010-3,36281-AHD-010,house_3,Nia,rejected,forgotten,0,False,36281-EPG-010,help_prioritizes_upkeep,looks unsure and asks another resident
+36281,36281-HRC-03-01,36281-HRS-03,36281-AHB-009-1,36281-AHD-009,house_1,Milo,rejected,forgotten,0,False,36281-EPG-009,help_prioritizes_upkeep,looks unsure and asks another resident
+36281,36281-HRC-03-02,36281-HRS-03,36281-AHB-009-2,36281-AHD-009,house_2,Sera,ritualized,remembered_ritual,1,False,36281-EPG-009,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36281,36281-HRC-03-03,36281-HRS-03,36281-AHB-009-3,36281-AHD-009,house_3,Tovan,disputed,forgotten,0,False,36281-EPG-009,help_prioritizes_upkeep,looks unsure and asks another resident
+36281,36281-HRC-03-04,36281-HRS-03,36281-AHB-010-1,36281-AHD-010,house_1,Sera,useful_practice,persisted,0,False,36281-EPG-010,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36281,36281-HRC-03-05,36281-HRS-03,36281-AHB-010-2,36281-AHD-010,house_2,Tovan,taboo,warning_persisted,0,False,36281-EPG-010,help_prioritizes_upkeep,keeps distance and points to the old place
+36281,36281-HRC-03-06,36281-HRS-03,36281-AHB-010-3,36281-AHD-010,house_3,Nia,rejected,forgotten,0,False,36281-EPG-010,help_prioritizes_upkeep,looks unsure and asks another resident
+36307,36307-HRC-01-01,36307-HRS-01,36307-AHB-011-1,36307-AHD-011,house_3,Ari,taboo,warning_persisted,0,False,36307-EPG-011,schedule_mentions_branch,keeps distance and points to the old place
+36307,36307-HRC-01-02,36307-HRS-01,36307-AHB-011-2,36307-AHD-011,house_0,Fay,rejected,forgotten,0,False,36307-EPG-011,schedule_mentions_branch,looks unsure and asks another resident
+36307,36307-HRC-01-03,36307-HRS-01,36307-AHB-011-3,36307-AHD-011,house_1,Milo,ritualized,remembered_ritual,1,False,36307-EPG-011,schedule_mentions_branch,moves slowly while carrying upkeep material
+36307,36307-HRC-01-04,36307-HRS-01,36307-AHB-012-1,36307-AHD-012,house_3,Fay,disputed,still_disputed,0,False,36307-EPG-012,schedule_mentions_branch,hesitates before repeating the branch story
+36307,36307-HRC-01-05,36307-HRS-01,36307-AHB-012-2,36307-AHD-012,house_0,Milo,useful_practice,persisted,0,False,36307-EPG-012,schedule_mentions_branch,faces the avatar and names the remembered branch
+36307,36307-HRC-01-06,36307-HRS-01,36307-AHB-012-3,36307-AHD-012,house_1,Sera,taboo,warning_persisted,0,False,36307-EPG-012,schedule_mentions_branch,keeps distance and points to the old place
+36307,36307-HRC-02-01,36307-HRS-02,36307-AHB-011-1,36307-AHD-011,house_3,Ari,taboo,ritual_warning,1,False,36307-EPG-011,help_prioritizes_upkeep,keeps distance and points to the old place
+36307,36307-HRC-02-02,36307-HRS-02,36307-AHB-011-2,36307-AHD-011,house_0,Fay,rejected,forgotten,0,False,36307-EPG-011,help_prioritizes_upkeep,looks unsure and asks another resident
+36307,36307-HRC-02-03,36307-HRS-02,36307-AHB-011-3,36307-AHD-011,house_1,Milo,ritualized,remembered_ritual,1,False,36307-EPG-011,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36307,36307-HRC-02-04,36307-HRS-02,36307-AHB-012-1,36307-AHD-012,house_3,Fay,disputed,forgotten,0,False,36307-EPG-012,help_prioritizes_upkeep,looks unsure and asks another resident
+36307,36307-HRC-02-05,36307-HRS-02,36307-AHB-012-2,36307-AHD-012,house_0,Milo,useful_practice,needs_maintenance,2,False,36307-EPG-012,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36307,36307-HRC-02-06,36307-HRS-02,36307-AHB-012-3,36307-AHD-012,house_1,Sera,taboo,ritual_warning,1,False,36307-EPG-012,help_prioritizes_upkeep,keeps distance and points to the old place
+36307,36307-HRC-03-01,36307-HRS-03,36307-AHB-011-1,36307-AHD-011,house_3,Ari,taboo,warning_persisted,0,False,36307-EPG-011,help_prioritizes_upkeep,keeps distance and points to the old place
+36307,36307-HRC-03-02,36307-HRS-03,36307-AHB-011-2,36307-AHD-011,house_0,Fay,rejected,forgotten,0,False,36307-EPG-011,help_prioritizes_upkeep,looks unsure and asks another resident
+36307,36307-HRC-03-03,36307-HRS-03,36307-AHB-011-3,36307-AHD-011,house_1,Milo,ritualized,remembered_ritual,1,False,36307-EPG-011,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36307,36307-HRC-03-04,36307-HRS-03,36307-AHB-012-1,36307-AHD-012,house_3,Fay,disputed,forgotten,0,False,36307-EPG-012,help_prioritizes_upkeep,looks unsure and asks another resident
+36307,36307-HRC-03-05,36307-HRS-03,36307-AHB-012-2,36307-AHD-012,house_0,Milo,useful_practice,needs_maintenance,2,False,36307-EPG-012,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36307,36307-HRC-03-06,36307-HRS-03,36307-AHB-012-3,36307-AHD-012,house_1,Sera,taboo,warning_persisted,0,False,36307-EPG-012,help_prioritizes_upkeep,keeps distance and points to the old place
+36319,36319-HRC-01-01,36319-HRS-01,36319-AHB-013-1,36319-AHD-013,house_3,Milo,ritualized,burdened_ritual,1,False,36319-EPG-013,schedule_mentions_branch,moves slowly while carrying upkeep material
+36319,36319-HRC-01-02,36319-HRS-01,36319-AHB-013-2,36319-AHD-013,house_0,Sera,disputed,still_disputed,0,False,36319-EPG-013,schedule_mentions_branch,hesitates before repeating the branch story
+36319,36319-HRC-01-03,36319-HRS-01,36319-AHB-013-3,36319-AHD-013,house_1,Tovan,useful_practice,persisted,0,False,36319-EPG-013,schedule_mentions_branch,faces the avatar and names the remembered branch
+36319,36319-HRC-01-04,36319-HRS-01,36319-AHB-014-1,36319-AHD-014,house_3,Sera,taboo,warning_persisted,0,False,36319-EPG-014,schedule_mentions_branch,keeps distance and points to the old place
+36319,36319-HRC-01-05,36319-HRS-01,36319-AHB-014-2,36319-AHD-014,house_0,Tovan,rejected,forgotten,0,False,36319-EPG-014,schedule_mentions_branch,looks unsure and asks another resident
+36319,36319-HRC-01-06,36319-HRS-01,36319-AHB-014-3,36319-AHD-014,house_1,Nia,ritualized,remembered_ritual,1,False,36319-EPG-014,schedule_mentions_branch,moves slowly while carrying upkeep material
+36319,36319-HRC-02-01,36319-HRS-02,36319-AHB-013-1,36319-AHD-013,house_3,Milo,ritualized,burdened_ritual,1,False,36319-EPG-013,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36319,36319-HRC-02-02,36319-HRS-02,36319-AHB-013-2,36319-AHD-013,house_0,Sera,disputed,forgotten,0,False,36319-EPG-013,help_prioritizes_upkeep,looks unsure and asks another resident
+36319,36319-HRC-02-03,36319-HRS-02,36319-AHB-013-3,36319-AHD-013,house_1,Tovan,useful_practice,persisted,0,False,36319-EPG-013,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36319,36319-HRC-02-04,36319-HRS-02,36319-AHB-014-1,36319-AHD-014,house_3,Sera,taboo,ritual_warning,1,False,36319-EPG-014,help_prioritizes_upkeep,keeps distance and points to the old place
+36319,36319-HRC-02-05,36319-HRS-02,36319-AHB-014-2,36319-AHD-014,house_0,Tovan,rejected,forgotten,0,False,36319-EPG-014,help_prioritizes_upkeep,looks unsure and asks another resident
+36319,36319-HRC-02-06,36319-HRS-02,36319-AHB-014-3,36319-AHD-014,house_1,Nia,ritualized,remembered_ritual,1,False,36319-EPG-014,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36319,36319-HRC-03-01,36319-HRS-03,36319-AHB-013-1,36319-AHD-013,house_3,Milo,ritualized,burdened_ritual,1,False,36319-EPG-013,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36319,36319-HRC-03-02,36319-HRS-03,36319-AHB-013-2,36319-AHD-013,house_0,Sera,disputed,forgotten,0,False,36319-EPG-013,help_prioritizes_upkeep,looks unsure and asks another resident
+36319,36319-HRC-03-03,36319-HRS-03,36319-AHB-013-3,36319-AHD-013,house_1,Tovan,useful_practice,persisted,0,False,36319-EPG-013,help_prioritizes_upkeep,faces the avatar and names the remembered branch
+36319,36319-HRC-03-04,36319-HRS-03,36319-AHB-014-1,36319-AHD-014,house_3,Sera,taboo,warning_persisted,0,False,36319-EPG-014,help_prioritizes_upkeep,keeps distance and points to the old place
+36319,36319-HRC-03-05,36319-HRS-03,36319-AHB-014-2,36319-AHD-014,house_0,Tovan,rejected,forgotten,0,False,36319-EPG-014,help_prioritizes_upkeep,looks unsure and asks another resident
+36319,36319-HRC-03-06,36319-HRS-03,36319-AHB-014-3,36319-AHD-014,house_1,Nia,ritualized,remembered_ritual,1,False,36319-EPG-014,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36343,36343-HRC-01-01,36343-HRS-01,36343-AHB-015-1,36343-AHD-015,house_3,Tovan,taboo,warning_persisted,0,False,36343-EPG-015,schedule_mentions_branch,keeps distance and points to the old place
+36343,36343-HRC-01-02,36343-HRS-01,36343-AHB-015-2,36343-AHD-015,house_0,Nia,rejected,forgotten,0,False,36343-EPG-015,schedule_mentions_branch,looks unsure and asks another resident
+36343,36343-HRC-01-03,36343-HRS-01,36343-AHB-015-3,36343-AHD-015,house_1,Ari,ritualized,remembered_ritual,1,False,36343-EPG-015,schedule_mentions_branch,moves slowly while carrying upkeep material
+36343,36343-HRC-01-04,36343-HRS-01,36343-AHB-016-1,36343-AHD-016,house_3,Nia,disputed,still_disputed,0,False,36343-EPG-016,schedule_mentions_branch,hesitates before repeating the branch story
+36343,36343-HRC-01-05,36343-HRS-01,36343-AHB-016-2,36343-AHD-016,house_0,Ari,useful_practice,persisted,0,False,36343-EPG-016,schedule_mentions_branch,faces the avatar and names the remembered branch
+36343,36343-HRC-01-06,36343-HRS-01,36343-AHB-016-3,36343-AHD-016,house_1,Fay,taboo,warning_persisted,0,False,36343-EPG-016,schedule_mentions_branch,keeps distance and points to the old place
+36343,36343-HRC-02-01,36343-HRS-02,36343-AHB-015-1,36343-AHD-015,house_3,Tovan,taboo,ritual_warning,1,False,36343-EPG-015,help_prioritizes_upkeep,keeps distance and points to the old place
+36343,36343-HRC-02-02,36343-HRS-02,36343-AHB-015-2,36343-AHD-015,house_0,Nia,rejected,forgotten,0,False,36343-EPG-015,help_prioritizes_upkeep,looks unsure and asks another resident
+36343,36343-HRC-02-03,36343-HRS-02,36343-AHB-015-3,36343-AHD-015,house_1,Ari,ritualized,remembered_ritual,1,False,36343-EPG-015,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36343,36343-HRC-02-04,36343-HRS-02,36343-AHB-016-1,36343-AHD-016,house_3,Nia,disputed,forgotten,0,False,36343-EPG-016,help_prioritizes_upkeep,looks unsure and asks another resident
+36343,36343-HRC-02-05,36343-HRS-02,36343-AHB-016-2,36343-AHD-016,house_0,Ari,useful_practice,needs_maintenance,2,False,36343-EPG-016,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36343,36343-HRC-02-06,36343-HRS-02,36343-AHB-016-3,36343-AHD-016,house_1,Fay,taboo,ritual_warning,1,False,36343-EPG-016,help_prioritizes_upkeep,keeps distance and points to the old place
+36343,36343-HRC-03-01,36343-HRS-03,36343-AHB-015-1,36343-AHD-015,house_3,Tovan,taboo,warning_persisted,0,False,36343-EPG-015,help_prioritizes_upkeep,keeps distance and points to the old place
+36343,36343-HRC-03-02,36343-HRS-03,36343-AHB-015-2,36343-AHD-015,house_0,Nia,rejected,forgotten,0,False,36343-EPG-015,help_prioritizes_upkeep,looks unsure and asks another resident
+36343,36343-HRC-03-03,36343-HRS-03,36343-AHB-015-3,36343-AHD-015,house_1,Ari,ritualized,remembered_ritual,1,False,36343-EPG-015,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36343,36343-HRC-03-04,36343-HRS-03,36343-AHB-016-1,36343-AHD-016,house_3,Nia,disputed,forgotten,0,False,36343-EPG-016,help_prioritizes_upkeep,looks unsure and asks another resident
+36343,36343-HRC-03-05,36343-HRS-03,36343-AHB-016-2,36343-AHD-016,house_0,Ari,useful_practice,needs_maintenance,2,False,36343-EPG-016,help_prioritizes_upkeep,moves slowly while carrying upkeep material
+36343,36343-HRC-03-06,36343-HRS-03,36343-AHB-016-3,36343-AHD-016,house_1,Fay,taboo,warning_persisted,0,False,36343-EPG-016,help_prioritizes_upkeep,keeps distance and points to the old place

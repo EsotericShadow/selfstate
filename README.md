@@ -2178,3 +2178,11 @@ Report 370 adds the first explicit emergent practice graph, diegetic village boa
 ### Report 371: SSRM-3D Avatar Hint Divergence Bridge
 
 Report 371 adds ambiguous avatar hints that can influence inquiry without directly installing a correct concept or a uniform unlock. Households reinterpret questions, warnings, demonstrations, material offers, and waiting through trust, fear, material cost, existing practice memory, and village-board concerns, producing divergent branches such as useful local habits, rituals, taboos, disputes, or rejection. This keeps technology/practice history resident-owned rather than avatar-authored.
+
+### Report 372: SSRM-3D Hint Branch Return Persistence Bridge
+
+Report 372 completes the return-session persistence gap for avatar-hint divergence. Branches now survive into later return sessions with source IDs, maintenance burden, household reputation effects, recoverable forgetting, evidence-based revival, save/restore snapshot rows, and visible expression markers. The avatar still cannot reset the branch into a uniform unlock or command resident adoption.
+
+### Report 373: SSRM-3D Game Foundation Handoff / Research Arc Closure
+
+Report 373 closes the current emergent-civilization research/report arc and hands the project to game development. The repository now includes `GAME_BUILD_HANDOFF.md`, `CORE_GAME_LOOP.md`, `SIMULATION_BOUNDARIES.md`, `EMERGENT_PRACTICE_GRAPH.md`, `REALITY_CONSTRAINT_LEDGER.md`, `FIRST_PLAYABLE_PROTOTYPE_SCOPE.md`, and `PLAYTEST_TASKS.md`. No more research reports should be added by default unless explicitly requested; future work should be concrete game build, interface, QA, playtest, and prototype tasks.

@@ -1,0 +1,9 @@
+ablation,expected_failed_metric,failed_as_expected,weakest_channel_score
+no_return_persistence,return_session_persistence,True,0.0
+no_maintenance_cost,maintenance_burden_has_cost,True,0.0
+no_forgetting,forgetting_is_recoverable,True,0.0
+no_revival_evidence,revival_requires_evidence_and_cost,True,0.0
+no_source_trace,source_trace_integrity,True,0.0
+no_save_restore_state,save_restore_preserves_branch_state,True,0.0
+uniform_reset,no_uniform_history_reset,True,0.0
+no_reality_cost,reality_causal_ledger_integrity,True,0.0

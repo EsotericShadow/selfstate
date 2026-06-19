@@ -1626,3 +1626,19 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 | Avatar hints do not directly install correct concepts. | `artifacts/ssrm_3d_browser_world_v131_avatar_hint_divergence_bridge_hint_events.csv` records hint kind, source practice, material/time cost, `correct_explanation_given=false`, `future_use_named=false`, and `resident_must_interpret=true`. | Browser-local scaffold; no autonomous teaching, LLM, or scientific concept transfer claim. |
 | The same hint can diverge by household. | Household interpretation, divergence branch, negotiation, mutation, and seed-outcome artifacts record useful, ritualized, taboo, disputed, and rejected branches from shared hidden law. | Divergence is deterministic per seed and traceable, not open-ended anthropology. |
 | Hints remain causally grounded and village-coupled. | Reality ledger, village-board coupling, and source-link artifacts preserve source practice IDs, resident-generated board items, conservation checks, costs, hidden-law/public-belief separation, and avatar-not-commanding flags. | The avatar influences conditions; it does not assign jobs, force adoption, or expose hidden law in normal view. |
+
+## Report 372: SSRM-3D Hint Branch Return Persistence Bridge
+
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| Hint-derived branches persist across return sessions. | `artifacts/ssrm_3d_browser_world_v132_hint_branch_return_persistence_bridge_return_sessions.csv`, branch-continuity, save-return snapshot, and source-link artifacts preserve branch IDs, hint IDs, source practice IDs, and state keys across three return sessions. | Browser-local scaffold; no production persistence claim. |
+| Persistence has cost, decay, and recovery. | Maintenance-burden, forgetting-event, revival-event, reputation, and reality-ledger artifacts record upkeep cost, recoverable forgetting, evidence-based revival, household reputation deltas, and conservation checks. | No free recovery, no permanent punishment loop, and no avatar-forced adoption. |
+| Return history becomes visible in normal play. | Expression-marker artifacts and shell `hintBranchPersistence` rendering show body/readability markers alongside ordinary action effects such as schedule mentions and help prioritizing upkeep. | Readability markers are functional browser state, not subjective feeling claims. |
+
+## Report 373: SSRM-3D Game Foundation Handoff / Research Arc Closure
+
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| The current research arc is closed. | `docs/373_ssrm_3d_game_foundation_handoff_research_arc_closure_report.md` declares the arc complete and tells future work to default to game development rather than new research reports. | New reports should only be added if explicitly requested. |
+| The project has a first playable prototype handoff. | `GAME_BUILD_HANDOFF.md`, `CORE_GAME_LOOP.md`, `FIRST_PLAYABLE_PROTOTYPE_SCOPE.md`, and `PLAYTEST_TASKS.md` define the build target, loops, scope, and playtest tasks. | Handoff docs are not a finished game. |
+| Simulation boundaries are explicit. | `SIMULATION_BOUNDARIES.md`, `EMERGENT_PRACTICE_GRAPH.md`, and `REALITY_CONSTRAINT_LEDGER.md` define no-consciousness, no-LLM, no-tech-tree, causal-grounding, and audit boundaries. | The system remains browser-local scaffolding with audit/replay. |

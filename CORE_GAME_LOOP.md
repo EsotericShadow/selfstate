@@ -1,0 +1,61 @@
+# Core Game Loop
+
+## Player loop
+
+1. Enter or return to the village.
+2. Move near residents, objects, routes, or public boards.
+3. Ask questions, offer help, provide material support, suggest priorities, demonstrate a local effect, warn, or wait.
+4. Observe resident responses, refusals, delays, disagreements, and visible expressions.
+5. Support a proposal or step back.
+6. Return later and see what persisted, decayed, burdened, or changed.
+
+## Resident loop
+
+1. Follow ordinary needs, schedules, relationships, and current obligations.
+2. Notice world pressure or anomaly observations through local perception.
+3. Form partial beliefs, not hidden-law knowledge.
+4. Propose or choose tests from bottlenecks.
+5. Preserve failures as evidence.
+6. Repeat useful behavior when it helps a recurring problem.
+7. Teach, mutate, ritualize, dispute, forget, or revive practices.
+
+## World loop
+
+1. Apply stable hidden material laws.
+2. Apply weather, moisture, material, time, labor, tool wear, storage, and maintenance constraints.
+3. Generate stochastic events with causal trace.
+4. Require recovery to consume time, care, cost, or stabilization.
+5. Preserve public observations separately from hidden simulator law.
+
+## Emergent practice loop
+
+1. Resident experiences a recurring problem.
+2. Resident tries or proposes a local behavior using available materials.
+3. The test succeeds, fails, or produces ambiguous evidence.
+4. Repeated useful behavior creates a practice node.
+5. Social transmission spreads and mutates it.
+6. Maintenance cost, risk, usefulness, and belief determine survival.
+
+## Recovery loop
+
+1. A stochastic event, social injury, failed test, resource loss, or unsafe condition occurs.
+2. The system creates a bounded recovery path.
+3. Residents may accept help, refuse, delay, or ask for support.
+4. Recovery costs time, care, labor, material, trust, or stabilization.
+5. Source history remains visible after recovery.
+
+## Management/proposal loop
+
+1. Residents post concerns to the Village Board.
+2. Residents propose projects with materials, helpers, willingness, objections, risk, and maintenance cost.
+3. The avatar can ask, support, suggest, warn, wait, or provide material.
+4. Residents negotiate or refuse.
+5. Projects consume resources and time.
+6. Outcomes affect memory, trust, schedules, practices, and future proposals.
+
+## Save/return loop
+
+1. Save the world state with residents, practices, village board, reality ledger, hint branches, and source IDs.
+2. Restore without erasing branch history.
+3. Return sessions show what residents still carry.
+4. Practices can persist, burden, be forgotten, or revive.

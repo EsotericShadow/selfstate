@@ -1352,3 +1352,15 @@ Report 371 prevents the avatar from becoming a knowledge-installation shortcut. 
 The result is divergent history rather than a deterministic unlock. The same hint can become a useful local habit, a ritual, a taboo, a dispute, or a rejection. The boundary remains explicit: browser-local scaffolding, no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no real science/civilization claim, and no fixed technology tree.
 
 Next gate: make hint-divergent branches persist across return sessions and compete through household reputation, upkeep burden, forgetting, and revived practice memory.
+
+## Report 372: SSRM-3D Hint Branch Return Persistence Bridge
+
+Report 372 finishes the persistence gap left after avatar hint divergence. Hint-derived branches now carry into later return sessions instead of resetting after a panel event. Branches can persist, create maintenance burden, change household reputation, be forgotten recoverably, revive with evidence and cost, and show readable expression markers in the maintained shell.
+
+This keeps the emergent-practice arc tied to normal play: return sessions, ask-schedule/help actions, save/restore snapshots, and source links all preserve the branch history. The avatar can support maintenance or revival, but cannot reset history, force adoption, or install a uniform unlock.
+
+## Report 373: SSRM-3D Game Foundation Handoff / Research Arc Closure
+
+Report 373 caps the current research/report arc. The accumulated work now forms a finite first game prototype foundation: one village, up to six residents, hidden-law observations, resident-generated tests, persistent failures, emergent practice graph, village board, reality constraint ledger, stochastic recovery, hint divergence, return-session persistence, and audit/replay.
+
+The next phase should be game development, not more conceptual bridge reports. Future default work should convert the maintained shell into a playable prototype with a normal player-facing interface, preserved audit mode, concrete playtest tasks, and scoped build milestones.

@@ -2283,6 +2283,12 @@ The browser shell now includes a `Handling` normal rail action and keeps `Reside
 
 First-playable session receipts now include material-handling row deltas and latest manipulation IDs, so resident physical work is visible as part of the playable path instead of buried in debug physics panels.
 
+## Game prototype v0 update: Embodied Handling Cues
+
+Resident material handling now couples to resident body physics. Each handling row records a body step, carried load, fatigue/contact/slip evidence, embodied distance, and a canvas cue. The play canvas draws dashed resident-to-object handling lines and carried-object markers so moving, tying, drying, testing, and carrying read as resident body actions.
+
+This keeps the renderer simple while making the simulation more physical: residents have bodies that move toward components, incur load/fatigue, and visibly relate to the object they handled.
+
 ## Game prototype v0 update: Bounded Resident Encounter
 
 The browser shell now includes a `Talk` normal rail action and `Resident encounter` Player Mode card. The encounter creates a deterministic, phrasebook-bounded resident response from current memory, schedule, visible cue, proposal context, practice context, and object context.

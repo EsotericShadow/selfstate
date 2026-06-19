@@ -53,6 +53,8 @@
 
 31. Use Handling from the normal rail and confirm a resident-chosen material manipulation changes or fails against a real component, appears in Player Mode, and is recorded in the first-playable session as handling evidence rather than a direct command.
 
+32. After using Handling, inspect the canvas and first-playable session receipt: confirm a resident-to-object handling line, carried-object marker when applicable, body step ID, embodied distance, load/fatigue/contact evidence, and no direct player body command.
+
 30. Use End day and confirm the Day cycle recap includes a physics step, and the Village Board can receive a physics-linked concern/proposal without the avatar commanding it.
 
 31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.

@@ -110,6 +110,12 @@ The maintained shell now exposes resident material handling as a normal player-f
 
 The first-playable session receipt records material-handling deltas and latest manipulation IDs. The Player Mode surface keeps the resident material-handling card visible so physical work is readable during ordinary play rather than isolated in debug controls.
 
+## Prototype v0 embodied handling update
+
+Resident material handling now emits resident body-physics links. The same handling event records the component manipulation and a resident body step with load, fatigue, contact/slip, target, and embodied distance.
+
+The canvas now draws resident-to-object handling links and carried-object markers. This is still placeholder rendering, but it makes physical work legible as body-mediated action rather than an abstract receipt.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

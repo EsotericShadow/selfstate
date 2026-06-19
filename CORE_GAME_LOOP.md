@@ -142,8 +142,10 @@
 2. The resident chooses a material manipulation action rather than receiving a direct object command.
 3. The shell applies carry capacity, tool use, resource cost, moisture, support, stress, and hidden-law boundaries.
 4. The 3D component state changes through position, moisture, damage, stability, field stress, or preserved failure evidence.
-5. The result can update resident memory, visible expression, Reality Constraint Ledger rows, and emergent practice links.
-6. First-playable session rows record handling deltas so the physical work is part of ordinary play evidence.
+5. The resident body moves toward the handled component through body physics, with load, fatigue, footing, contacts, slip risk, and recovery evidence.
+6. The canvas draws the resident-to-object handling cue and any carried-object marker.
+7. The result can update resident memory, visible expression, Reality Constraint Ledger rows, and emergent practice links.
+8. First-playable session rows record handling deltas and body-link evidence so the physical work is part of ordinary play evidence.
 
 ## Browser QA readiness loop
 

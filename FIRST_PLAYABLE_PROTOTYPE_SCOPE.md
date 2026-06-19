@@ -358,6 +358,21 @@ Required evidence:
 
 This milestone makes physical work part of the player-facing game loop.
 
+## Prototype v0 milestone: Embodied Handling Cues
+
+`embodied_handling_cues` is now part of first playable prototype scope.
+
+Required evidence:
+
+- resident material-handling rows include body step IDs
+- the body step records load, fatigue, contact/slip, target, and no direct player body command
+- first-playable session receipts count body-linked handling rows
+- the canvas draws resident-to-object handling cues
+- carried components are visually attached to the resident marker when applicable
+- hidden simulator law remains out of normal view
+
+This milestone makes the placeholder renderer express the physical coupling between resident bodies and handled components.
+
 ## Prototype v0 milestone: Physical Object Interaction
 
 `player_object_interaction` is now part of first playable prototype scope.

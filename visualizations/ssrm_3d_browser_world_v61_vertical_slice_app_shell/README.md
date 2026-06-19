@@ -12,6 +12,10 @@ move, talk through bounded phrases, inspect objects, watch resident material
 handling, alter debt/trust, wait offscreen, save/restore, run QA hooks, inspect
 browser QA readiness, and export replay JSON.
 
+Resident material handling is coupled to body physics. Handling rows include body
+step IDs, load/fatigue/contact evidence, embodied distance, and canvas cues that
+draw resident-to-object links plus carried-object markers when applicable.
+
 `QA readiness` is a non-running preflight. It checks whether the current browser
 state has a normal player surface, canvas cues, a first-playable session,
 lived-action physics visibility, save/return continuity, and causal-ledger

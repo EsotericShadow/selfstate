@@ -2686,6 +2686,7 @@ function runResidentMaterialManipulationStep(actionOverride = 'resident_choice')
     resident_chosen: true,
     hidden_law_normal_view: false,
   };
+  const bodyStep = coupleResidentBodyToMaterialHandling(row, component, entropy);
   loop.runCount += 1;
   loop.actionLedger.push(row);
   loop.observationLedger.push({ observation_id: `GPO-${String(loop.observationLedger.length + 1).padStart(3, '0')}`, manipulation_id: row.manipulation_id, public_observation: publicObservation, resident_interpretation: residentInterpretation, hidden_law_visible_normal_view: false });
@@ -2719,7 +2720,7 @@ function runResidentMaterialManipulationStep(actionOverride = 'resident_choice')
     conservationCheck: true
   });
   recordPrototypeMilestone('resident-material-manipulation', `${row.manipulation_id}: ${residentName} ${plan.action} ${component.component_id}; success=${success}`);
-  return log('runResidentMaterialManipulationStep', { manipulationId: row.manipulation_id, resident: residentName, action: plan.action, componentId: component.component_id, success, practiceId: linkedPractice ? linkedPractice.practice_id : null, physicsStepId: physicsStep.step_id, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed });
+  return log('runResidentMaterialManipulationStep', { manipulationId: row.manipulation_id, resident: residentName, action: plan.action, componentId: component.component_id, success, practiceId: linkedPractice ? linkedPractice.practice_id : null, physicsStepId: physicsStep.step_id, bodyStepId: bodyStep.body_step_id, embodiedDistance: row.embodied_distance, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed });
 }
 
 function runResidentMaterialManipulationLoop() {
@@ -7344,6 +7345,8 @@ function firstPlayableSessionSnapshot(label) {
   const returnLater = world.gamePrototypeReturnLater || null;
   const manipulationLoop = world.gamePrototypeMaterialManipulation || null;
   const latestManipulation = manipulationLoop && manipulationLoop.actionLedger.length ? manipulationLoop.actionLedger[manipulationLoop.actionLedger.length - 1] : null;
+  const residentBodies = world.gamePrototypeResidentBodies || null;
+  const latestBodyStep = residentBodies && residentBodies.bodyLedger && residentBodies.bodyLedger.length ? residentBodies.bodyLedger[residentBodies.bodyLedger.length - 1] : null;
   return {
     label,
     tick: world.tick,
@@ -7367,6 +7370,10 @@ function firstPlayableSessionSnapshot(label) {
     latest_material_handling_action: latestManipulation ? latestManipulation.action : 'none',
     latest_material_handling_resident: latestManipulation ? latestManipulation.resident : 'none',
     latest_material_handling_success: latestManipulation ? latestManipulation.success === true : false,
+    material_handling_body_links: manipulationLoop && manipulationLoop.actionLedger ? manipulationLoop.actionLedger.filter(row => row.body_step_id).length : 0,
+    resident_body_steps: residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.length : 0,
+    latest_resident_body_step_id: latestBodyStep ? latestBodyStep.body_step_id : 'none',
+    latest_resident_body_source: latestBodyStep ? latestBodyStep.source : 'none',
     worksite_ready: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     return_journal_ready: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     save_slots: saves ? saves.slots.length : 0,
@@ -7401,6 +7408,7 @@ function updateFirstPlayableSessionAcceptance() {
     world.gamePrototypeLivedPractice.physicalCausalityReady === true &&
     world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length > 0 &&
     world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger && world.gamePrototypeMaterialManipulation.actionLedger.length > 0 &&
+    world.gamePrototypeMaterialManipulation.actionLedger.some(row => row.body_step_id) &&
     world.gamePrototypeWorksite && world.gamePrototypeWorksite.acceptanceReady === true &&
     world.gamePrototypeReturnJournal && world.gamePrototypeReturnJournal.acceptanceReady === true &&
     world.gamePrototypeSaves && world.gamePrototypeSaves.slots.length > 0 &&
@@ -7419,6 +7427,7 @@ function updateFirstPlayableSessionAcceptance() {
     latest_lived_practice_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
     material_handling_rows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
     material_handling_practice_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
+    material_handling_body_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.filter(row => row.body_step_id).length : 0,
     latest_material_handling_id: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger && world.gamePrototypeMaterialManipulation.actionLedger.length ? world.gamePrototypeMaterialManipulation.actionLedger[world.gamePrototypeMaterialManipulation.actionLedger.length - 1].manipulation_id : 'none',
     boundary: session.boundary,
   };
@@ -7443,8 +7452,11 @@ function recordFirstPlayableSessionStep(stepId, actionLabel, actionFn) {
     latest_lived_practice_physics_id: after.latest_lived_practice_physics_id || 'none',
     material_handling_before: before.material_handling_rows || 0,
     material_handling_after: after.material_handling_rows || 0,
+    material_handling_body_links_after: after.material_handling_body_links || 0,
     latest_material_handling_id: after.latest_material_handling_id || 'none',
     latest_material_handling_action: after.latest_material_handling_action || 'none',
+    latest_resident_body_step_id: after.latest_resident_body_step_id || 'none',
+    latest_resident_body_source: after.latest_resident_body_source || 'none',
     player_facing: true,
     avatar_direct_command: false,
     hidden_law_normal_view: false,
@@ -7493,7 +7505,7 @@ function runFirstPlayableSessionLoop() {
 function formatFirstPlayableSession() {
   const session = world.gamePrototypePlaySession || ensureFirstPlayableSession();
   const latest = session.snapshotLedger.length ? session.snapshotLedger[session.snapshotLedger.length - 1].snapshot : firstPlayableSessionSnapshot('current');
-  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'}`);
+  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}; handling=${row.material_handling_before || 0}->${row.material_handling_after || 0}/${row.latest_material_handling_id || 'none'} body=${row.latest_resident_body_step_id || 'none'}`);
   return [
     `Acceptance ready: ${session.acceptanceReady ? 'yes' : 'no'}`,
     `Runs: ${session.runCount} / steps=${session.stepLedger.length}/${session.requiredSteps.length} / snapshots=${session.snapshotLedger.length}`,
@@ -7501,7 +7513,8 @@ function formatFirstPlayableSession() {
     `Latest room: ${latest.room}; guide=${latest.guide_phase}->${latest.guide_action}`,
     `Ready: move=${latest.movement_route_ready}; talk=${latest.resident_encounter_ready}; proposal=${latest.proposal_deck_ready}; practice=${latest.lived_practice_ready}; worksite=${latest.worksite_ready}; journal=${latest.return_journal_ready}`,
     `Lived physics: ready=${latest.lived_practice_physical_causality_ready}; rows=${latest.lived_practice_physics_rows || 0}; latest=${latest.latest_lived_practice_physics_id || 'none'}`,
-    `Material handling: rows=${latest.material_handling_rows || 0}; practiceLinks=${latest.material_handling_practice_links || 0}; latest=${latest.latest_material_handling_id || 'none'} / ${latest.latest_material_handling_action || 'none'} by ${latest.latest_material_handling_resident || 'none'}`,
+    `Material handling: rows=${latest.material_handling_rows || 0}; practiceLinks=${latest.material_handling_practice_links || 0}; bodyLinks=${latest.material_handling_body_links || 0}; latest=${latest.latest_material_handling_id || 'none'} / ${latest.latest_material_handling_action || 'none'} by ${latest.latest_material_handling_resident || 'none'}`,
+    `Resident body: steps=${latest.resident_body_steps || 0}; latest=${latest.latest_resident_body_step_id || 'none'} / ${latest.latest_resident_body_source || 'none'}`,
     `Save/return: slots=${latest.save_slots}; saveReturns=${latest.save_returns}; forwardReturns=${latest.forward_returns}`,
     `No direct command: ${session.noDirectCommand ? 'yes' : 'no'} / no hidden law normal view: ${session.noHiddenLawNormalView ? 'yes' : 'no'} / no tech tree: ${session.noTechTreeUnlock ? 'yes' : 'no'}`,
     'Recent session steps:',
@@ -8538,6 +8551,54 @@ function carriedLoadForResident(residentName, action) {
     : 0;
   const actionLoad = action === 'forage' ? 2.4 : action === 'proposal_work' ? 3.2 : action === 'physics_repair' || action === 'material_manipulation' ? 1.8 : action === 'practice_maintenance' ? 1.3 : 0;
   return Number((carriedMass + actionLoad).toFixed(3));
+}
+
+function bodyTargetForHandledComponent(component, action) {
+  const pos = component && component.position3d ? component.position3d : { x: 44, y: 28, z: 0 };
+  const offset = action === 'carry' ? 1.5 : action === 'tie' ? -2.5 : action === 'dry' ? -4 : action === 'wet_test' ? 3 : 0;
+  return {
+    x: Number(Math.max(0, Math.min(120, Number(pos.x || 0) + offset)).toFixed(3)),
+    y: Number(Math.max(0, Math.min(90, Number(pos.y || 0) + offset * 0.4)).toFixed(3)),
+    z: 0,
+    label: `${action.replace('_', ' ')} ${component ? component.component_id : 'component'}`,
+  };
+}
+
+function coupleResidentBodyToMaterialHandling(row, component, entropy) {
+  const target = bodyTargetForHandledComponent(component, row.action);
+  const bodyStep = applyResidentBodyPhysics(row.resident, 'material_manipulation', entropy, 'resident_material_manipulation', target);
+  const body = ensureResidentBodies().bodies[row.resident];
+  if (row.success && row.action === 'carry' && body && component && component.position3d) {
+    component.carried_by = row.resident;
+    component.position3d.x = Number(Math.max(0, Math.min(120, Number(body.position3d.x || 0) + 1.6)).toFixed(3));
+    component.position3d.y = Number(Math.max(0, Math.min(90, Number(body.position3d.y || 0) + 0.9)).toFixed(3));
+    component.position3d.z = Number(Math.max(Number(component.position3d.z || 0), Number(body.position3d.z || 0) + 3).toFixed(3));
+  }
+  const afterPosition = component && component.position3d ? component.position3d : { x: 0, y: 0, z: 0 };
+  const bodyPosition = body && body.position3d ? body.position3d : { x: 0, y: 0, z: 0 };
+  const dx = Number(afterPosition.x || 0) - Number(bodyPosition.x || 0);
+  const dy = Number(afterPosition.y || 0) - Number(bodyPosition.y || 0);
+  row.body_step_id = bodyStep.body_step_id;
+  row.body_target = bodyStep.target;
+  row.body_before = bodyStep.before;
+  row.body_after = bodyStep.after;
+  row.body_load = bodyStep.carried_load;
+  row.body_fatigue_delta = bodyStep.fatigue_delta;
+  row.body_contact_count = bodyStep.collision_count;
+  row.body_slip_event = bodyStep.slip_event;
+  row.embodied_distance = Number(Math.sqrt(dx * dx + dy * dy).toFixed(3));
+  row.canvas_cue = `${row.resident} ${row.action.replace('_', ' ')} ${row.component_id} with body step ${bodyStep.body_step_id}`;
+  if (component) {
+    row.after = {
+      position3d: { ...(component.position3d || {}) },
+      moisture: Number(component.moisture || 0),
+      damage: Number(component.damage || 0),
+      stability: Number(component.stability || 0),
+      field_stress: Number(component.field_stress || 0),
+      carried_by: component.carried_by || null,
+    };
+  }
+  return bodyStep;
 }
 
 function ensurePrototypeTerrain() {
@@ -9937,7 +9998,7 @@ function residentBodyResidentContacts(residentName, body, bodies) {
     .slice(0, 3);
 }
 
-function applyResidentBodyPhysics(residentName, action = 'observe', entropy = deepTimeEntropyByte(), source = 'autonomous_action') {
+function applyResidentBodyPhysics(residentName, action = 'observe', entropy = deepTimeEntropyByte(), source = 'autonomous_action', targetOverride = null) {
   const sim = ensureResidentBodies();
   const autonomous = ensureAutonomousResidents();
   const materialWorld = ensurePrototype3DWorld();
@@ -9951,7 +10012,7 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
     footing: Number(body.footing || 0),
     recovery_debt: Number(body.recovery_debt || 0),
   };
-  const target = residentBodyTargetForAction(residentName, action);
+  const target = targetOverride || residentBodyTargetForAction(residentName, action);
   const terrain = residentBodyTerrainAt(body);
   const load = carriedLoadForResident(residentName, action);
   const overload = Math.max(0, load - Number(body.carry_capacity || 8));
@@ -10003,6 +10064,7 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
     source,
     entropy,
     target: target.label,
+    target_position3d: { x: Number(target.x || 0), y: Number(target.y || 0), z: Number(target.z || 0) },
     before,
     after: {
       position3d: { ...body.position3d },
@@ -10830,7 +10892,7 @@ function formatPrototypeMaterialStatePhysics() {
 
 function formatPrototypeMaterialManipulation() {
   const loop = world.gamePrototypeMaterialManipulation || ensureMaterialManipulationLoop();
-  const actions = loop.actionLedger.slice(-8).map(row => `${row.manipulation_id}: ${row.resident} ${row.action} ${row.component_id}/${row.resident_term}; success=${row.success}; tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true}; cost=${Object.entries(row.resource_cost || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'}; physics=${row.physics_step_id}`);
+  const actions = loop.actionLedger.slice(-8).map(row => `${row.manipulation_id}: ${row.resident} ${row.action} ${row.component_id}/${row.resident_term}; success=${row.success}; body=${row.body_step_id || 'none'} dist=${row.embodied_distance ?? 'n/a'}; tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true}; cost=${Object.entries(row.resource_cost || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'}; physics=${row.physics_step_id}`);
   const observations = loop.observationLedger.slice(-5).map(row => `${row.observation_id}: ${row.public_observation} -> ${row.resident_interpretation}`);
   const failures = loop.failureLedger.slice(-5).map(row => `${row.manipulation_id}: ${row.failure_reason}; recoverable=${row.recoverable}`);
   const links = loop.practiceLinks.slice(-6).map(row => `${row.manipulation_id}->${row.practice_id} (${row.relation})`);
@@ -11234,7 +11296,7 @@ function formatPrototypeDeepTime() {
 function formatPrototypeResidentBodies() {
   const sim = world.gamePrototypeResidentBodies || ensureResidentBodies();
   const bodyRows = Object.values(sim.bodies).map(body => `${body.resident}: pos=(${body.position3d.x},${body.position3d.y},${body.position3d.z}) vel=(${body.velocity.x},${body.velocity.y},${body.velocity.z}) fatigue=${body.fatigue} footing=${body.footing} load=${body.carried_load}/${body.carry_capacity} balance=${body.balance} recovery=${body.recovery_debt} action=${body.last_action}`);
-  const steps = sim.bodyLedger.slice(-8).map(row => `${row.body_step_id}: ${row.resident} ${row.action}; target=${row.target}; speed=${row.speed}; load=${row.carried_load}; contacts=${row.collision_count}; slip=${row.slip_event}; fatigueDelta=${row.fatigue_delta}`);
+  const steps = sim.bodyLedger.slice(-8).map(row => `${row.body_step_id}: ${row.resident} ${row.action}; source=${row.source}; target=${row.target}; speed=${row.speed}; load=${row.carried_load}; contacts=${row.collision_count}; slip=${row.slip_event}; fatigueDelta=${row.fatigue_delta}`);
   const contacts = sim.contactLedger.slice(-5).map(row => `${row.contact_id}: ${row.resident}; components=${row.component_contacts.join(',') || 'none'} residents=${row.resident_contacts.join(',') || 'none'} slip=${row.slip_event}`);
   const recoveries = sim.recoveryLedger.slice(-5).map(row => `${row.recovery_id}: ${row.resident}; ${row.reason}; path=${row.recovery_path}; debt=${row.recovery_debt_after}`);
   return [
@@ -11990,6 +12052,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    ecology_safety_rows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.safetyLedger ? world.gamePrototypeEcologyPhysics.safetyLedger.length : 0,
 	    material_manipulation_rows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
 	    material_manipulation_practice_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
+	    material_manipulation_body_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.filter(row => row.body_step_id).length : 0,
 	    resident_body_steps: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodyLedger ? world.gamePrototypeResidentBodies.bodyLedger.length : 0,
 	    resident_body_contacts: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.contactLedger ? world.gamePrototypeResidentBodies.contactLedger.length : 0,
 	    resident_body_recoveries: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.recoveryLedger ? world.gamePrototypeResidentBodies.recoveryLedger.length : 0,
@@ -12101,6 +12164,7 @@ function buildPrototypeAcceptanceReceipt() {
   const ecologyPhysics = world.gamePrototypeEcologyPhysics || null;
 		  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
 	  const manipulation = world.gamePrototypeMaterialManipulation || null;
+	  const embodiedManipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.filter(row => row.body_step_id).length : 0;
 	  const residentBodies = world.gamePrototypeResidentBodies || null;
 	  const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
 	  const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
@@ -12238,7 +12302,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'thermal_fire_physics', pass: Boolean(thermalPhysics && thermalHeatRows > 0 && thermalFuelRows > 0 && thermalSmokeRows > 0 && thermalPhysics.heatLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${thermalHeatRows} heat step(s), ${thermalFuelRows} fuel row(s), ${thermalSmokeRows} smoke row(s), ${thermalSafetyRows} safety row(s)` },
 	    { id: 'water_fluid_physics', pass: Boolean(waterPhysics && waterFlowRows > 0 && waterRouteRows > 0 && waterQualityRows > 0 && waterPhysics.flowLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${waterFlowRows} flow row(s), ${waterLeakRows} leak row(s), ${waterRouteRows} route row(s), ${waterQualityRows} quality row(s), ${waterSafetyRows} safety row(s)` },
 	    { id: 'ecology_food_physics', pass: Boolean(ecologyPhysics && ecologyGrowthRows > 0 && ecologyHarvestRows > 0 && ecologySpoilageRows > 0 && ecologyHungerRows > 0 && ecologyPhysics.growthLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${ecologyGrowthRows} growth row(s), ${ecologyHarvestRows} harvest row(s), ${ecologySpoilageRows} spoilage row(s), ${ecologyHungerRows} hunger row(s), ${ecologySafetyRows} safety row(s)` },
-	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s)` },
+	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && embodiedManipulationRows > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s), ${embodiedManipulationRows} body-linked row(s)` },
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
@@ -13157,7 +13221,7 @@ function describeReplayRow(row) {
     runPlayerMovementRouteLoop: `movement ready=${payload.ready === true} rows=${payload.rows} direction=${payload.direction} zone=${payload.zone}`,
     runPlayerResidentEncounterLoop: `resident encounter ready=${payload.ready === true} rows=${payload.rows} resident=${payload.resident} noLLM=${payload.noLLM === true}`,
     runPlayerObjectInteractionLoop: `object interaction ready=${payload.ready === true} rows=${payload.rows} component=${payload.componentId} handling=${payload.manipulationId}`,
-    runResidentMaterialManipulationStep: `resident handling ${payload.manipulationId || 'none'} ${payload.resident || 'none'} ${payload.action || 'none'} component=${payload.componentId || 'none'} success=${payload.success === true}`,
+    runResidentMaterialManipulationStep: `resident handling ${payload.manipulationId || 'none'} ${payload.resident || 'none'} ${payload.action || 'none'} component=${payload.componentId || 'none'} body=${payload.bodyStepId || 'none'} distance=${payload.embodiedDistance ?? 'n/a'} success=${payload.success === true}`,
     runResidentMaterialManipulationLoop: `resident handling loop +${payload.actionsAdded || 0} actions=${payload.totalActions || 0} practiceLinks=${payload.practiceLinks || 0}`,
     runPlayerProposalDeckLoop: `proposal deck ready=${payload.ready === true} cards=${payload.cards} actions=${payload.actions}`,
     supportPlayerProposalDeck: `proposal deck support ${payload.proposalId} ready=${payload.ready === true}`,
@@ -13438,6 +13502,32 @@ function draw() {
       const component = materialWorld.components.find(item => item.component_id === row.component_id);
       if (!component) return;
       const point = project3D(component.position3d || {});
+      const body = world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodies ? world.gamePrototypeResidentBodies.bodies[row.resident] : null;
+      if (body) {
+        const bodyX = Math.max(58, Math.min(982, 86 + Number(body.position3d.x || 0) * 7.4));
+        const bodyY = Math.max(230, Math.min(520, 220 + Number(body.position3d.y || 0) * 3.2 - Number(body.position3d.z || 0) * 5));
+        ctx.save();
+        ctx.strokeStyle = row.success ? 'rgba(240,195,91,0.82)' : 'rgba(183,93,57,0.88)';
+        ctx.lineWidth = 2;
+        ctx.setLineDash([6, 5]);
+        ctx.beginPath();
+        ctx.moveTo(bodyX, bodyY);
+        ctx.lineTo(point.x, point.y);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = 'rgba(17,24,22,0.72)';
+        ctx.fillRect((bodyX + point.x) / 2 - 26, (bodyY + point.y) / 2 - 15, 82, 20);
+        ctx.fillStyle = '#f9ebc9';
+        ctx.font = '10px Optima, sans-serif';
+        ctx.fillText(`${row.body_step_id || 'body'} ${row.action}`.slice(0, 16), (bodyX + point.x) / 2 - 20, (bodyY + point.y) / 2 - 1);
+        if (component.carried_by === row.resident) {
+          ctx.fillStyle = '#d5a13a';
+          ctx.fillRect(bodyX + 22, bodyY - 18, 16, 12);
+          ctx.strokeStyle = '#111816';
+          ctx.strokeRect(bodyX + 22, bodyY - 18, 16, 12);
+        }
+        ctx.restore();
+      }
       ctx.strokeStyle = row.success ? '#f0c35b' : '#b75d39';
       ctx.lineWidth = 3;
       ctx.beginPath();
@@ -13501,6 +13591,17 @@ function draw() {
     ctx.fillStyle = expression.marker === 'boundary' || expression.marker === 'guarded' ? '#f0c35b' : '#aad0c3';
     ctx.fillText(`${expression.marker}: ${expression.movementCue}`.slice(0, 36), x - 62, y + 62);
     if (body) {
+      const materialWorldForResidents = world.gamePrototype3DWorld || null;
+      const carriedComponents = materialWorldForResidents && materialWorldForResidents.components ? materialWorldForResidents.components.filter(component => component.carried_by === name) : [];
+      if (carriedComponents.length) {
+        ctx.fillStyle = '#d5a13a';
+        ctx.fillRect(x + radius + 6, y - radius - 2, 18, 14);
+        ctx.strokeStyle = '#111816';
+        ctx.strokeRect(x + radius + 6, y - radius - 2, 18, 14);
+        ctx.fillStyle = '#f9ebc9';
+        ctx.font = '10px Optima, sans-serif';
+        ctx.fillText(`carrying ${carriedComponents[0].component_id}`.slice(0, 22), x + radius + 28, y - radius + 9);
+      }
       ctx.fillStyle = body.slip_risk > 0.24 ? '#f0c35b' : '#9fca77';
       ctx.fillText(`body f${body.fatigue} foot${body.footing}`.slice(0, 34), x - 62, y + 78);
     }

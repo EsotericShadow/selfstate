@@ -262,3 +262,7 @@ The event must show that the loop consumed time/work, preserved material/source 
 ## Primary play-surface ledger event
 
 The primary play surface records `primary_play_surface` as a ledger event. The event is non-material: it summarizes existing state without spawning resources, changing resident knowledge, or exposing hidden laws in normal view.
+
+## First playable walkthrough ledger event
+
+The walkthrough records `first_playable_walkthrough` as a causal ledger event. It is a sequencing receipt over existing systems, not a source of new material, new knowledge, or a forced resident command.

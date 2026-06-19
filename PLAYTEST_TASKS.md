@@ -208,3 +208,12 @@
 - Confirm the highlighted object corresponds to an actual simulated component when one is available.
 - Confirm panels are still present but the canvas alone gives enough information to take the next action.
 - Export acceptance and confirm `primary_play_surface` appears as a passing requirement after the stage loop runs.
+
+## First playable walkthrough playtests
+
+- Run `First playable` and inspect the `First playable walkthrough` card.
+- Confirm all nine walkthrough steps appear in order.
+- Confirm the receipt links proposal, practice, physical component, physics row, save slot, and return evidence.
+- Confirm support is recorded as conditions support, not direct resident command.
+- Use `Export walkthrough` and confirm a downloadable walkthrough receipt is prepared.
+- Export acceptance and confirm `first_playable_walkthrough` appears as a passing requirement after the walkthrough runs.

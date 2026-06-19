@@ -411,3 +411,19 @@ The prototype now exposes a player-facing world stage loop:
 4. Keep panels available for inspection, but treat them as secondary to the canvas.
 
 This loop is accepted only when the surface has repeated focus rows, canvas cue rows, and action prompt rows that include proposal, practice, and physical component context without exposing hidden law in normal view.
+
+## First playable walkthrough loop
+
+The prototype now has a single walkthrough path:
+
+1. `enter_village`
+2. `inspect_world_stage`
+3. `observe_physical_bottleneck`
+4. `resident_proposal_or_test`
+5. `support_conditions`
+6. `resident_work_or_recovery`
+7. `return_session`
+8. `save_state`
+9. `acceptance_snapshot`
+
+Each row records player action, resident mediation, world evidence, proposal/practice/component/physics links, save links, return links, and boundary flags.

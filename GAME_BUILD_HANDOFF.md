@@ -335,3 +335,21 @@ The surface summarizes, in one place:
 - resource pressure
 
 The acceptance gate is `primary_play_surface`. This does not make the visual layer final art; it makes the existing primitive 3D/canvas shell function as a playable interface instead of only a debug dashboard.
+
+## Prototype v0 milestone: First Playable Walkthrough
+
+The shell now includes a `First playable` walkthrough action and exportable walkthrough receipt.
+
+The walkthrough sequences the current game foundation into one player-facing path:
+
+- enter the village
+- inspect the primary world stage
+- observe a physical bottleneck
+- let residents produce or test a proposal/practice path
+- support conditions without direct command
+- wait through resident work or recovery
+- leave and return with continuity
+- save the state
+- build an acceptance snapshot
+
+The acceptance gate is `first_playable_walkthrough`. This is the first durable receipt that the shell can be played as a coherent path instead of only as individual subsystem buttons.

@@ -187,3 +187,23 @@ Required evidence:
 - no direct resident command
 
 This is the bridge from proof shell to playable shell.
+
+## Added scope gate: First Playable Walkthrough
+
+`first_playable_walkthrough` is now part of the first playable prototype scope.
+
+Required evidence:
+
+- all nine walkthrough steps present
+- proposal evidence linked
+- practice evidence linked
+- physical component evidence linked
+- physics evidence linked
+- save evidence linked
+- return-session evidence linked
+- resident-mediated action preserved
+- no hidden law in normal view
+- no direct command
+- no tech-tree unlock
+
+This is the first single-receipt proof that the prototype has a coherent playable path.

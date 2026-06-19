@@ -129,3 +129,9 @@ It must preserve the same boundary as the rest of the project: the player influe
 The primary play surface is a readability layer over existing browser-local state. It must not expose hidden simulator laws in normal view and must not convert resident proposals into player commands.
 
 The canvas may show audit-linked IDs only as normal-view summaries, not as resident knowledge. The player sees a practical gloss and next action, not omniscient truth.
+
+## Boundary: First Playable Walkthrough
+
+The first playable walkthrough is a browser-local receipt. It sequences existing systems; it does not add new world law, new consciousness claims, new tech-tree logic, or direct job assignment.
+
+The walkthrough must remain honest: if proposal, practice, component, physics, save, or return evidence is missing, the receipt should show that gap instead of pretending the game is complete.

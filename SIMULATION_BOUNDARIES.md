@@ -79,3 +79,9 @@ The prototype direction is physics-first: terrain, bodies, materials, tools, wor
 This does not claim perfect real-world physics. The requirement is stricter than a scripted state machine and narrower than a full physics engine: every visible effect should have a causal trail through material state, resident action, tool state, time, labor, energy/work cost, resource conservation, or stochastic environmental pressure.
 
 Normal player view should show outcomes, resident terms, and imperfect glosses. Audit view may expose hidden law, stochastic thresholds, and conservation details.
+
+## Resource-stock physics boundary
+
+Resources should be treated as stored stocks, not free counters. The prototype can still show simple numbers for readability, but every stock change should be explainable through source, use, storage condition, decay, weather, fatigue, rest, trust, or stochastic field pressure.
+
+Care is not material. It is an embodied/social capacity proxy and must remain bounded by resident fatigue, recovery, trust, and time.

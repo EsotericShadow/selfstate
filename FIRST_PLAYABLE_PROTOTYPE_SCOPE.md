@@ -60,3 +60,15 @@ Prototype v0 includes a minimal physical tool/work subsystem:
 - save/return and acceptance counters for tool use, wear, failure, and repair
 
 This remains intentionally simple visually, but it is part of the serious simulation substrate.
+
+## Included prototype physics layer: resource stocks
+
+Prototype v0 includes a minimal resource-stock subsystem:
+
+- stored water jars, fiber bundles, rough wood stack, and embodied care/attention reserve
+- stock capacity, moisture, temperature, decay, contamination, and storage context
+- stochastic stock, transform, loss, gain, and sync ledgers
+- coupling to weather, terrain/material fields, vessel damage, resident fatigue, rest, and trust
+- save/return and acceptance counters for stock steps, resource transformations, losses, and gains
+
+This replaces pure resource-counter behavior with causal stock pressure while preserving simple player readability.

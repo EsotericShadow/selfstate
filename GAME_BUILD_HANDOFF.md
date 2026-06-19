@@ -239,3 +239,11 @@ The prototype now treats tools as physical objects inside the stochastic physics
 Game-build consequence: projects and material handling can slow down or create maintenance obligations because the physical tool failed, not because a scripted outcome demanded it.
 
 Boundary: this is still browser-local prototype physics. It is not production-grade rigid-body simulation, but it preserves the rule that work requires bodies, tools, material contact, time, wear, and recoverable maintenance.
+
+## Prototype v0 resource-stock physics update
+
+Village resources now have a browser-local stochastic stock model. Water, fiber, wood, and care/attention are tracked as stored stocks with capacity, storage context, moisture/temperature exposure, decay or contamination pressure, source history, and per-step loss/gain ledgers.
+
+Game-build consequence: resources are no longer just counters. Weather, terrain field state, vessel damage, resident fatigue, trust/rest, storage limits, and stochastic pressure can change stocks and constrain projects.
+
+Boundary: care is modeled as embodied attention/recovery capacity, not a physical commodity. It still obeys time, fatigue, rest, trust, and bounded recovery constraints.

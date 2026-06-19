@@ -125,3 +125,11 @@
 67. Use `Advance project` and confirm project progress includes tool id, fit, failure, repair, and blocked-work evidence.
 68. Save and return after tool work, then confirm saved slot summaries preserve tool-use, failure, and repair counts.
 69. Export acceptance and confirm `tool_work_physics` is part of the prototype acceptance requirements.
+
+## Resource-stock physics playtests
+
+70. Use `Resource physics` and confirm water, fiber, wood, and care stocks show quantity, storage, moisture, temperature, decay, and causal deltas.
+71. Use `Resource loop` and confirm stock steps create transform rows plus loss or gain rows without hidden-law exposure in normal view.
+72. Change village state with `End day`, `Body loop`, or `Terrain loop`, then use `Resource physics` and confirm weather/field/fatigue terms affect stock changes.
+73. Save and return after resource physics, then confirm saved slot summaries preserve resource-stock, loss, and gain counts.
+74. Export acceptance and confirm `resource_stock_physics` is part of the prototype acceptance requirements.

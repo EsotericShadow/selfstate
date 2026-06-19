@@ -149,3 +149,15 @@ Tool work must satisfy:
 - no hidden-law exposure in normal player view
 
 Ledger rows now include `tool_work_physics`, with tool fit, wear delta, damage delta, failure probability, stochastic threshold, repair status, and conservation flags.
+
+## Resource-stock physics ledger rows
+
+Resource stock work must satisfy:
+
+- no resource without a source or stored stock
+- no resource loss without weather, storage, decay, leak, fatigue, or use pressure
+- no care recovery without rest, trust, or reduced fatigue
+- no stock change without a transform row
+- no hidden-law exposure in normal player view
+
+Ledger rows now include `resource_stock_physics`, with stock before/after quantities, weather, field values, causal terms, stochastic term, loss/gain rows, conservation flags, and resident-facing interpretation.

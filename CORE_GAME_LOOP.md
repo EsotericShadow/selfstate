@@ -317,3 +317,11 @@ Resident and project work now follows:
 world pressure -> resident/project action -> physical tool selection -> tool fit check -> wear/damage/moisture update -> stochastic failure or repair -> causal ledger row -> resident memory/progress effect -> visible prototype panel.
 
 The player can observe or support conditions, but cannot bypass wear, material shortages, repair cost, or resident willingness.
+
+## Resource-stock physics loop
+
+Resource changes now follow:
+
+external gameplay use/source -> stock sync -> weather/terrain/body field read -> storage loss or recovery -> world resource counter update -> causal ledger row -> project/commons consequences.
+
+This keeps village resources causal. Water can evaporate or leak; fiber and wood can decay; care recovers or strains through bodies, fatigue, trust, and rest.

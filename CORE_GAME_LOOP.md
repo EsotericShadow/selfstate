@@ -147,6 +147,16 @@
 7. The result can update resident memory, visible expression, Reality Constraint Ledger rows, and emergent practice links.
 8. First-playable session rows record handling deltas and body-link evidence so the physical work is part of ordinary play evidence.
 
+## Visible project construction loop
+
+1. The player supports or watches a resident proposal without assigning jobs.
+2. Residents advance project work only if willingness, materials, tools, and time allow it.
+3. The project consumes resources and records a construction row.
+4. The construction row repairs existing components or adds project-built components when the project completes.
+5. A visual construction row records progress before/after, affected component IDs, resident term, and canvas cue.
+6. The canvas draws project progress bars and rings around repaired or newly added components.
+7. The resulting structure remains a set of simulated physical components, not a fixed building asset.
+
 ## Browser QA readiness loop
 
 1. Inspect the current browser state without running Prototype QA.

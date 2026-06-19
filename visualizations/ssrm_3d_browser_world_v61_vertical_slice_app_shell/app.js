@@ -6434,6 +6434,7 @@ function residentWorksiteSnapshot() {
   const activeProposal = board && board.projectProposals ? board.projectProposals.find(row => !row.project_completed) || board.projectProposals[board.projectProposals.length - 1] : null;
   const materialWorld = world.gamePrototype3DWorld || null;
   const latestConstruction = materialWorld && materialWorld.constructionLedger && materialWorld.constructionLedger.length ? materialWorld.constructionLedger[materialWorld.constructionLedger.length - 1] : null;
+  const latestVisual = projects.visualLedger && projects.visualLedger.length ? projects.visualLedger[projects.visualLedger.length - 1] : null;
   return {
     active_proposal: activeProposal ? activeProposal.proposal_id : 'none',
     proposer: activeProposal ? activeProposal.proposer : 'none',
@@ -6447,8 +6448,11 @@ function residentWorksiteSnapshot() {
     latest_stall: latestStall ? latestStall.stalled_reason : 'none',
     latest_completion: latestCompletion ? latestCompletion.completion_id : 'none',
     construction_id: latestConstruction ? latestConstruction.construction_id : 'none',
+    construction_visual_id: latestVisual ? latestVisual.visual_id : 'none',
+    construction_stage: latestVisual ? latestVisual.stage : 'none',
     components_added: latestConstruction ? latestConstruction.components_added.length : 0,
     components_repaired: latestConstruction ? latestConstruction.components_repaired.length : 0,
+    construction_visual_rows: projects.visualLedger ? projects.visualLedger.length : 0,
     maintenance_cost_after: latestConstruction ? latestConstruction.maintenance_cost_after : null,
     resident_term: latestConstruction ? latestConstruction.resident_term : 'none',
     practice_id: latestConstruction && latestConstruction.practice_id ? latestConstruction.practice_id : 'none',
@@ -6479,8 +6483,11 @@ function updateResidentWorksiteAcceptance() {
     watch_rows: worksite.watchLedger.length,
     active_proposal: snapshot.active_proposal,
     construction_id: snapshot.construction_id,
+    construction_visual_id: snapshot.construction_visual_id,
+    construction_stage: snapshot.construction_stage,
     components_added: snapshot.components_added,
     components_repaired: snapshot.components_repaired,
+    construction_visual_rows: snapshot.construction_visual_rows,
     stalls: snapshot.stalls,
     boundary: worksite.boundary,
   };
@@ -6571,15 +6578,16 @@ function runResidentWorksiteLoop() {
 function formatResidentWorksite() {
   const worksite = world.gamePrototypeWorksite || ensureResidentWorksite();
   const snapshot = worksite.snapshotLedger.length ? worksite.snapshotLedger[worksite.snapshotLedger.length - 1].snapshot : residentWorksiteSnapshot();
-  const watchRows = worksite.watchLedger.slice(-8).map(row => `${row.watch_id}: ${row.proposal_id} ${row.status} progress=${row.progress}; construction+${row.constructions_added}; added=${row.components_added}; repaired=${row.components_repaired}; direct=${row.avatar_direct_command}`);
+  const watchRows = worksite.watchLedger.slice(-8).map(row => `${row.watch_id}: ${row.proposal_id} ${row.status} progress=${row.progress}; visual=${row.construction_visual_id || 'none'} ${row.construction_stage || 'none'}; construction+${row.constructions_added}; added=${row.components_added}; repaired=${row.components_repaired}; direct=${row.avatar_direct_command}`);
   return [
     `Acceptance ready: ${worksite.acceptanceReady ? 'yes' : 'no'}`,
     `Watch rows: ${worksite.watchLedger.length} / snapshots=${worksite.snapshotLedger.length}`,
     `Boundary: ${worksite.boundary}`,
     `Active proposal: ${snapshot.active_proposal} / ${snapshot.problem}`,
     `Resident: ${snapshot.proposer}; status=${snapshot.status}; progress=${snapshot.progress}`,
-    `Construction: ${snapshot.construction_id}; term=${snapshot.resident_term}; practice=${snapshot.practice_id}`,
+    `Construction: ${snapshot.construction_id}; visual=${snapshot.construction_visual_id}; stage=${snapshot.construction_stage}; term=${snapshot.resident_term}; practice=${snapshot.practice_id}`,
     `Components added/repaired: ${snapshot.components_added}/${snapshot.components_repaired}`,
+    `Visible construction rows: ${snapshot.construction_visual_rows || 0}`,
     `Maintenance after: ${snapshot.maintenance_cost_after === null ? 'none' : snapshot.maintenance_cost_after}`,
     `Stalls: ${snapshot.stalls}; latest=${snapshot.latest_stall}`,
     `No direct command: ${worksite.noDirectCommand ? 'yes' : 'no'} / no resource spawning: ${worksite.noResourceSpawning ? 'yes' : 'no'}`,
@@ -10787,7 +10795,7 @@ function formatPrototypeMaterialWorld() {
 	  const latestPhysics = physics.latestStep;
 	  const board = world.villageBoard || null;
 	  const physicsProposals = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).slice(-4).map(row => `${row.proposal_id}: ${row.problem_addressed}; status=${row.status}; materials=${(row.materials_needed || []).join('+')}`) : [];
-  const constructionRows = (sim.constructionLedger || []).slice(-5).map(row => `${row.construction_id}: ${row.proposal_id}; added=${row.components_added.length}; repaired=${row.components_repaired.length}; term=${row.resident_term}; practice=${row.practice_id || 'none'}/${row.practice_status_after || 'none'}; stability=${row.structure_stability_after}`);
+  const constructionRows = (sim.constructionLedger || []).slice(-5).map(row => `${row.construction_id}: ${row.proposal_id}; visual=${row.visual_id || 'none'}; added=${row.components_added.length}; repaired=${row.components_repaired.length}; term=${row.resident_term}; practice=${row.practice_id || 'none'}/${row.practice_status_after || 'none'}; stability=${row.structure_stability_after}`);
 		  return [
     `Runs: material=${sim.runCount} / physics=${physics.step || 0}`,
     `Boundary: ${sim.boundary}`,
@@ -11043,16 +11051,19 @@ function formatPrototypeProjects() {
     ? board.projectProposals.filter(row => !row.project_completed).slice(-5)
     : [];
   const activeRows = active.map(row => `${row.proposal_id}: ${row.proposer} / ${row.status} / progress=${Number(row.project_progress || 0).toFixed(2)} / materials=${(row.materials_needed || []).join('+')}`);
-  const workRows = projects.projectLedger.slice(-6).map(row => `${row.project_id}: ${row.proposal_id} ${row.status} progress=${row.progress} tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true} consumed=${Object.entries(row.materials_consumed || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'} construction=${row.construction_id || 'none'} added=${row.components_added ? row.components_added.length : 0} repaired=${row.components_repaired ? row.components_repaired.length : 0}`);
+  const workRows = projects.projectLedger.slice(-6).map(row => `${row.project_id}: ${row.proposal_id} ${row.status} progress=${row.progress_before ?? 'n/a'}->${row.progress} tool=${row.tool_id || 'none'} fit=${row.tool_fit || 0} failed=${row.tool_failed === true} consumed=${Object.entries(row.materials_consumed || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'} construction=${row.construction_id || 'none'} visual=${row.visual_id || 'none'} added=${row.components_added ? row.components_added.length : 0} repaired=${row.components_repaired ? row.components_repaired.length : 0}`);
   const completionRows = projects.completionLedger.slice(-4).map(row => `${row.completion_id}: ${row.proposal_id} completed ${row.problem_addressed}; construction=${row.construction_id || 'none'} added=${row.components_added ? row.components_added.length : 0}; maintenance=${row.maintenance_cost}`);
   const stalledRows = projects.stalledLedger.slice(-4).map(row => `${row.project_id}: ${row.proposal_id} stalled because ${row.stalled_reason}; progress=${row.progress}`);
+  const visualRows = (projects.visualLedger || []).slice(-6).map(row => `${row.visual_id}: ${row.proposal_id} ${row.stage}; progress=${row.progress_before ?? 'n/a'}->${row.progress_after}; affected=${row.affected_component_ids.join(',') || 'none'}; cue=${row.canvas_cue}`);
   return [
-    `Runs: ${projects.runCount} / work rows=${projects.projectLedger.length} / completed=${projects.completionLedger.length} / stalled=${projects.stalledLedger.length}`,
+    `Runs: ${projects.runCount} / work rows=${projects.projectLedger.length} / visuals=${projects.visualLedger ? projects.visualLedger.length : 0} / completed=${projects.completionLedger.length} / stalled=${projects.stalledLedger.length}`,
     `Boundary: ${projects.boundary}`,
     'Active resident proposals:',
     ...(activeRows.length ? activeRows : ['none']),
     'Recent project work:',
     ...(workRows.length ? workRows : ['none']),
+    'Visible construction cues:',
+    ...(visualRows.length ? visualRows : ['none']),
     'Completions:',
     ...(completionRows.length ? completionRows : ['none']),
     'Stalls:',
@@ -12171,6 +12182,7 @@ function buildPrototypeAcceptanceReceipt() {
 	  const projectBuiltComponentCount = materialWorld && materialWorld.components ? materialWorld.components.filter(component => component.project_built === true).length : 0;
 	  const constructionPracticeLinks = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
 	  const constructionPracticeNodes = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0;
+	  const projectVisualRows = projects && projects.visualLedger ? projects.visualLedger.length : 0;
 	  const fieldRows = physics && physics.fieldLedger ? physics.fieldLedger.length : 0;
 		  const energyRows = physics && physics.energyLedger ? physics.energyLedger.length : 0;
   const structuralLoadRows = physics && physics.loadPathLedger ? physics.loadPathLedger.length : 0;
@@ -12305,7 +12317,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && embodiedManipulationRows > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s), ${embodiedManipulationRows} body-linked row(s)` },
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
-		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
+		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
 	    { id: 'deep_time_stochastic_physics_epochs', pass: Boolean(deepPhysicsEpochRows > 0 && deepMaterialFluxRows > 0 && deepTime.physicsEpochLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${deepPhysicsEpochRows} physics epoch(s), ${deepMaterialFluxRows} material flux row(s)` },
 	    { id: 'deep_time_uses_physical_heritage', pass: Boolean(physicalHeritageRows > 0 && deepPhysicalEffectRows > 0 && deepPhysicsEpochRows > 0 && constructionLineageCount > 0 && deepTime && deepTime.civilizationState && Number(deepTime.civilizationState.physicalContinuity || 0) > 0), evidence: `${physicalHeritageRows} heritage row(s), ${deepPhysicalEffectRows} deep physical effect(s), ${deepPhysicsEpochRows} physics epoch(s), ${constructionLineageCount} construction lineage(s)` },
@@ -13408,7 +13420,7 @@ function draw() {
       const alpha = Math.max(0.38, 0.92 - damage * 0.6);
       ctx.globalAlpha = alpha;
       ctx.fillStyle = color;
-      ctx.strokeStyle = damage > 0.18 ? '#f0c35b' : '#111816';
+      ctx.strokeStyle = component.project_built ? '#aad0c3' : damage > 0.18 ? '#f0c35b' : '#111816';
       ctx.lineWidth = 2;
       if (component.shape === 'cylinder') {
         ctx.beginPath();
@@ -13536,6 +13548,41 @@ function draw() {
       ctx.fillStyle = '#f9ebc9';
       ctx.font = '11px Optima, sans-serif';
       ctx.fillText(`${row.action} ${row.resident}`.slice(0, 22), point.x + 18, point.y - 18 - index * 4);
+    });
+    const projects = world.gamePrototypeProjects || null;
+    const projectVisualRows = projects && projects.visualLedger ? projects.visualLedger.slice(-5) : [];
+    projectVisualRows.forEach((row, index) => {
+      const cueColor = row.stage && row.stage.includes('completed') ? '#9fca77' : '#f0c35b';
+      const progress = Math.max(0, Math.min(1, Number(row.progress_after || 0)));
+      const barX = 702;
+      const barY = 326 + index * 32;
+      ctx.save();
+      ctx.fillStyle = 'rgba(17,24,22,0.76)';
+      ctx.fillRect(barX, barY, 282, 24);
+      ctx.fillStyle = 'rgba(249,235,201,0.18)';
+      ctx.fillRect(barX + 8, barY + 14, 116, 6);
+      ctx.fillStyle = cueColor;
+      ctx.fillRect(barX + 8, barY + 14, 116 * progress, 6);
+      ctx.fillStyle = '#f9ebc9';
+      ctx.font = '11px Optima, sans-serif';
+      ctx.fillText(`${row.visual_id}: ${row.proposal_id} ${Math.round(progress * 100)}%`.slice(0, 34), barX + 8, barY + 10);
+      ctx.fillText((row.stage || 'construction').slice(0, 26), barX + 132, barY + 19);
+      (row.affected_component_ids || []).forEach((componentId, componentIndex) => {
+        const component = materialWorld.components.find(item => item.component_id === componentId);
+        if (!component) return;
+        const point = project3D(component.position3d || {});
+        ctx.strokeStyle = row.components_added && row.components_added.includes(componentId) ? '#aad0c3' : cueColor;
+        ctx.lineWidth = 4;
+        ctx.setLineDash(row.components_added && row.components_added.includes(componentId) ? [] : [4, 4]);
+        ctx.beginPath();
+        ctx.rect(point.x - 20 - componentIndex * 2, point.y - 20 - componentIndex * 2, 40 + componentIndex * 4, 40 + componentIndex * 4);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = '#f9ebc9';
+        ctx.font = '10px Optima, sans-serif';
+        ctx.fillText(row.visual_id, point.x + 24, point.y - 18 - componentIndex * 4);
+      });
+      ctx.restore();
     });
 	    const term = materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms[0] : null;
     const latestPhysics = materialWorld.physics ? materialWorld.physics.latestStep : null;
@@ -14336,10 +14383,48 @@ function ensurePrototypeProjects() {
       projectLedger: [],
       completionLedger: [],
       stalledLedger: [],
+      visualLedger: [],
       boundary: 'diegetic resident project work only; avatar supports conditions, residents choose and labor costs are audited',
     };
   }
+  if (!Array.isArray(world.gamePrototypeProjects.visualLedger)) world.gamePrototypeProjects.visualLedger = [];
   return world.gamePrototypeProjects;
+}
+
+function recordProjectConstructionVisualCue(proposal, projectRow, construction) {
+  const projects = ensurePrototypeProjects();
+  const affected = Array.from(new Set([...(construction.components_added || []), ...(construction.components_repaired || [])]));
+  const stage = projectRow.completed
+    ? 'completed visible reinforcement'
+    : affected.length
+      ? 'visible repair work in progress'
+      : 'visible planning only';
+  const row = {
+    visual_id: `GPV-${String(projects.visualLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    proposal_id: proposal.proposal_id,
+    project_id: projectRow.project_id,
+    construction_id: construction.construction_id,
+    proposer: proposal.proposer,
+    problem_addressed: proposal.problem_addressed,
+    progress_before: projectRow.progress_before,
+    progress_after: projectRow.progress,
+    stage,
+    components_added: construction.components_added || [],
+    components_repaired: construction.components_repaired || [],
+    affected_component_ids: affected,
+    resident_term: construction.resident_term,
+    player_gloss: construction.player_gloss,
+    no_fixed_asset: true,
+    no_resource_spawning: true,
+    hidden_law_normal_view: false,
+    canvas_cue: `${proposal.proposer} ${stage} on ${construction.resident_term}; ${Math.round(Number(projectRow.progress || 0) * 100)}%`,
+  };
+  projects.visualLedger.push(row);
+  projects.visualLedger = projects.visualLedger.slice(-80);
+  construction.visual_id = row.visual_id;
+  projectRow.visual_id = row.visual_id;
+  return row;
 }
 
 function resourceShortagesFor(materials) {
@@ -14622,6 +14707,7 @@ function advanceVillageProject() {
     tool_failed: toolUse.failed,
     tool_repaired: toolUse.repaired,
     tool_blocked: toolUse.action_blocked,
+    progress_before: previousProgress,
     progress: proposal.project_progress,
     status: proposal.status,
     completed,
@@ -14631,7 +14717,9 @@ function advanceVillageProject() {
 	  };
 	  projects.projectLedger.push(row);
   const construction = applyProjectConstructionToMaterialWorld(proposal, row, consumed);
+  const visualCue = recordProjectConstructionVisualCue(proposal, row, construction);
   row.construction_id = construction.construction_id;
+  row.visual_id = visualCue.visual_id;
   row.components_added = construction.components_added;
   row.components_repaired = construction.components_repaired;
 	  if (completed && !proposal.project_completed) {
@@ -14686,7 +14774,7 @@ function advanceVillageProject() {
 	    conservationCheck: true
 	  });
 	  recordPrototypeMilestone('village-project-progress', `${proposal.proposal_id} ${proposal.status} at ${proposal.project_progress}; construction ${construction.construction_id}; tool ${toolUse.tool_id}`);
-	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed, toolBlocked: toolUse.action_blocked });
+	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, visualId: visualCue.visual_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed, toolBlocked: toolUse.action_blocked });
 }
 
 function ensurePrototypeCommonsSupport() {

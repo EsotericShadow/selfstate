@@ -373,6 +373,21 @@ Required evidence:
 
 This milestone makes the placeholder renderer express the physical coupling between resident bodies and handled components.
 
+## Prototype v0 milestone: Visible Project Construction
+
+`visible_project_construction` is now part of first playable prototype scope.
+
+Required evidence:
+
+- resident project work records visual construction rows
+- visual rows include proposal ID, construction ID, progress before/after, affected component IDs, resident term, and canvas cue
+- repaired and newly added components are drawn as physical components on the canvas
+- project progress appears as a visible bar instead of only text in a receipt
+- project-built components preserve no-fixed-asset and no-resource-spawning boundaries
+- acceptance evidence counts construction rows, visual rows, and project-built components
+
+This milestone makes resident proposals visibly assemble or repair the world over time.
+
 ## Prototype v0 milestone: Physical Object Interaction
 
 `player_object_interaction` is now part of first playable prototype scope.

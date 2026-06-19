@@ -116,6 +116,12 @@ Resident material handling now emits resident body-physics links. The same handl
 
 The canvas now draws resident-to-object handling links and carried-object markers. This is still placeholder rendering, but it makes physical work legible as body-mediated action rather than an abstract receipt.
 
+## Prototype v0 visible project-construction update
+
+Resident project work now has a visual construction ledger. Each project advance records progress before/after, affected components, construction IDs, resident terms, canvas cue text, and no-fixed-asset/no-resource-spawning boundaries.
+
+The canvas draws project progress bars and highlights repaired or newly added components. The visual result remains component-based: proposals change simulated posts, beams, lashings, vessels, and repair patches rather than spawning a building asset.
+
 ## Prototype v0 save-slot update
 
 The game prototype shell now includes browser-local prototype save slots. The player can save a slot, advance the autonomous simulation, return to the saved slot, and export a save receipt. This is intentionally scoped as prototype persistence evidence: it preserves meaningful village state, practice/proposal summaries, deep-time year, autonomous day, return log, and replay row counts without claiming production persistence.

@@ -16,6 +16,10 @@ Resident material handling is coupled to body physics. Handling rows include bod
 step IDs, load/fatigue/contact evidence, embodied distance, and canvas cues that
 draw resident-to-object links plus carried-object markers when applicable.
 
+Resident project work has visible construction cues. Project rows create progress
+bars and highlight repaired or newly added component IDs on the canvas without
+spawning fixed building assets.
+
 `QA readiness` is a non-running preflight. It checks whether the current browser
 state has a normal player surface, canvas cues, a first-playable session,
 lived-action physics visibility, save/return continuity, and causal-ledger

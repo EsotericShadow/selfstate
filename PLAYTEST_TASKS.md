@@ -55,6 +55,8 @@
 
 32. After using Handling, inspect the canvas and first-playable session receipt: confirm a resident-to-object handling line, carried-object marker when applicable, body step ID, embodied distance, load/fatigue/contact evidence, and no direct player body command.
 
+33. Support or watch a resident project until construction advances, then confirm the canvas shows a project progress bar plus rings around repaired or newly added physical components rather than a fixed building asset.
+
 30. Use End day and confirm the Day cycle recap includes a physics step, and the Village Board can receive a physics-linked concern/proposal without the avatar commanding it.
 
 31. Run Auto burst after physics pressure exists and confirm at least one resident can choose a repairing cue/action tied to component support or damage, consuming fiber when available.

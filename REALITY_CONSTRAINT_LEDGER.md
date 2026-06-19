@@ -74,3 +74,22 @@ When a resident project changes a structure, the ledger should preserve:
 - Resident term and player gloss.
 - Maintenance obligation created.
 - Confirmation that no fixed building asset or resource spawning occurred.
+
+## Resident manipulation ledger rows
+
+When a resident physically handles a component, the ledger should preserve:
+
+- Manipulation row ID.
+- Resident who handled the component.
+- Action attempted: carry, drop, stack, tie, dry, wet-test, or test.
+- Component ID, material ID, resident term, player gloss, and affordance.
+- Mass and carry capacity when movement is attempted.
+- Resource cost such as water or fiber.
+- Before/after position, moisture, temperature, damage, stability, stress, and carried-by state.
+- Whether the action succeeded or failed.
+- Failed handling reason and recoverability.
+- Public observation and resident interpretation.
+- Linked physics step.
+- Practice node link if repeated handling stabilized into evidence.
+
+This prevents handling from becoming animation-only. A resident touching the world must leave material, social, and audit traces.

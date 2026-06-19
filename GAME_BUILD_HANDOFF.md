@@ -198,3 +198,12 @@ Physics is now the simulation substrate rather than a side panel. The maintained
 Resident state now reacts to physical pressure: heat, moisture, weak supports, and structural stress increase effort or safety pressure, while `physics_repair` consumes fiber and repairs actual component damage/stability. Deep-time survival also depends on physical continuity: construction-linked lineages, physical heritage rows, component effect rows, average stability, average damage, and physical burden feed the continuity score.
 
 This is still a browser-local prototype and not production-certified physical accuracy. The design direction is nevertheless strict: world change should route through stochastic physics, materials, resident labor, component state, and causal ledgers before it becomes culture, language, practice, or long-run survival.
+
+
+## Prototype v0 resident material manipulation update
+
+Residents can now physically handle simulated components instead of only reacting to abstract physics pressure. The shell adds `Resident handling` and `Handling loop` controls. A resident chooses from constrained actions such as carry, drop, stack, tie, dry, wet-test, or test based on current material state, carry capacity, resources, and stochastic pressure.
+
+Handling actions mutate actual components: position, carried-by state, moisture, temperature, damage, stability, and field stress. They consume water or fiber where relevant, preserve failed handling as warning evidence, write Reality Constraint Ledger rows, update resident memory and visible body cues, and can create or refine Emergent Practice Graph nodes after repeated useful handling or recoverable failure.
+
+The avatar still does not assign object work directly. The game loop exposes resident physical manipulation as a living-world consequence: residents try, fail, remember, teach, rename, and stabilize handling practices from material contact.

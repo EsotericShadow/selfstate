@@ -258,6 +258,18 @@ The first playable loop includes a direct save/return pass: enter the village, l
 8. QA, acceptance, save/return, material-world view, deep-time view, and the Reality Constraint Ledger all preserve the physical trace.
 
 
+## Resident material manipulation loop
+
+1. The world selects a resident and component from current physical pressure, not from direct player assignment.
+2. The resident attempts a constrained physical action: carry, drop, stack, tie, dry, wet-test, or test.
+3. Carry capacity, mass, water/fiber availability, material properties, field stress, moisture, and stability determine success or failure.
+4. Successful handling mutates actual component state and may consume resources.
+5. Failed handling is preserved as warning evidence instead of being erased.
+6. Repeated useful handling or failed safety evidence can create or refine an Emergent Practice Graph node.
+7. Resident terms and visible behavior drift from the manipulation history.
+8. QA, acceptance, save/return, canvas overlays, and the Reality Constraint Ledger preserve manipulation evidence.
+
+
 ## Return-later loop
 
 1. The avatar leaves the village for several offscreen days.

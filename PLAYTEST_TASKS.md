@@ -74,3 +74,13 @@
 41. Save after field rows and deep-time physical effects exist, mutate the world, return the slot, and confirm Save / return preserves physics field, energy, physical heritage, and deep-time physical effect counts.
 
 42. Export acceptance and confirm physics-first checks include component-built structures, field rows, energy rows, construction components, construction-practice language, and deep-time physical heritage.
+
+43. Use Resident handling and confirm the Resident material handling card records a resident-chosen carry, drop, stack, tie, dry, wet-test, or test action with component ID, resident term, resource cost, success/failure, and physics step.
+
+44. Run Handling loop and confirm at least one handling row links into the Emergent Practice Graph without creating a modern English technology name.
+
+45. Inspect the canvas after handling and confirm recent manipulated components show handling markers around actual primitive components.
+
+46. Save after resident material handling, mutate the world, return the slot, and confirm Save / return preserves material handling and handling-practice counts.
+
+47. Export acceptance and confirm the receipt includes resident material manipulation as a required physics-first gate.

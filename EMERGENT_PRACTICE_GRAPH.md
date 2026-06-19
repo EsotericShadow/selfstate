@@ -73,6 +73,24 @@ Construction-derived practice nodes should link:
 
 This is still not a tech tree. A useful repair/build habit becomes a node because residents performed it, saw it work or fail, remembered it, and kept using or teaching it.
 
+## Material manipulation evidence
+
+Resident handling can also become practice evidence. A resident may carry, drop, stack, tie, dry, wet-test, or test a component because the material state creates pressure or opportunity. The player may trigger the simulation step, but the avatar does not assign the object task.
+
+Manipulation-derived practice nodes should link:
+
+- Manipulation row IDs.
+- Resident and household of origin.
+- Component ID, material ID, affordance, and resident term.
+- Before/after component position, moisture, damage, stability, and stress.
+- Resource costs such as water or fiber.
+- Carry-capacity or mass failures.
+- Public observations and resident interpretations.
+- Failed handling rows that became warning evidence.
+- Practice links created by repeated useful handling.
+
+This makes the invented practice graph emerge from contact with matter, not from abstract unlock logic.
+
 ## Physical heritage and deep time
 
 Practice nodes that originate from construction should remain tied to component IDs, field pressure, repair history, and material stability. When the compressed deep-time loop carries a practice forward, it should inherit physical evidence rather than becoming abstract lore.

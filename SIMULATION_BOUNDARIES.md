@@ -40,6 +40,8 @@ The current prototype can use bounded discrete approximations instead of a produ
 
 The corrected game-build direction is stronger than "basic physics as flavor." The whole simulation should route through stochastic physics where possible: resident effort, structure failure, repair opportunity, resource strain, practice formation, language drift, project work, and deep-time survival should be consequences of material state, physical fields, labor, memory, and social transmission.
 
+Resident physical handling is also bounded. The player may trigger a resident-handling simulation step, but the avatar should not directly assign a specific resident to obey a specific object command. Handling should remain resident-chosen, resource-constrained, and traceable through component state.
+
 Minimum physics separation:
 
 - Hidden physical state: material properties, forces, support, failure probabilities, and engine concepts.

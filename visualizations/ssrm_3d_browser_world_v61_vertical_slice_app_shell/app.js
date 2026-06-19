@@ -47,10 +47,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -97,10 +97,11 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   gamePrototypeProjects: null,
   gamePrototypeCommonsSupport: null,
 	  gamePrototypeNearbyActions: null,
-	  gamePrototypeDayCycle: null,
-	  gamePrototypeReturnLater: null,
-	  gamePrototype3DWorld: null,
-	  promiseFollowUp: null,
+		  gamePrototypeDayCycle: null,
+		  gamePrototypeReturnLater: null,
+		  gamePrototype3DWorld: null,
+		  gamePrototypeMaterialManipulation: null,
+		  promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
   debtLedger: [],
@@ -1595,7 +1596,325 @@ function runPrototypeMaterialWorldStep() {
 	  });
 	  recordPrototypeMilestone('3d-material-language', `${structure.engine_concept} rendered from ${sim.components.length} components as ${term ? term.resident_word : 'local term'}`);
 	  return log('runPrototypeMaterialWorldStep', { components: sim.components.length, structures: sim.structures.length, residentTerms: sim.language.terms.length, stability: structure.stability, repairCost, physicsStepId: physicsStep.step_id, physicsProposalId: consequence && consequence.proposal ? consequence.proposal.proposal_id : null, hiddenLawNormalView: false });
-	}
+		}
+
+function ensureMaterialManipulationLoop() {
+  if (!world.gamePrototypeMaterialManipulation) {
+    world.gamePrototypeMaterialManipulation = {
+      runCount: 0,
+      actionLedger: [],
+      observationLedger: [],
+      practiceLinks: [],
+      failureLedger: [],
+      boundary: 'resident-chosen physical manipulation only; avatar supports conditions and cannot command object handling',
+    };
+  }
+  ['actionLedger', 'observationLedger', 'practiceLinks', 'failureLedger'].forEach(key => {
+    if (!Array.isArray(world.gamePrototypeMaterialManipulation[key])) world.gamePrototypeMaterialManipulation[key] = [];
+  });
+  return world.gamePrototypeMaterialManipulation;
+}
+
+function residentCarryCapacity(residentName) {
+  const autonomous = world.autonomousResidents || null;
+  const needs = autonomous && autonomous.needState ? autonomous.needState[residentName] : null;
+  const energy = needs ? Number(needs.energy || 0.5) : Number((world.residents[residentName] || {}).progress || 0.45);
+  const hunger = needs ? Number(needs.hunger || 0.2) : 0.2;
+  return Number(Math.max(1.2, 2.2 + energy * 3.4 - hunger * 0.6).toFixed(3));
+}
+
+function residentForMaterialManipulation(entropy) {
+  const names = Object.keys(world.residents);
+  if (world.selected && entropy % 4 !== 0) return world.selected;
+  return names[(entropy + ensureMaterialManipulationLoop().actionLedger.length) % names.length];
+}
+
+function componentForManipulation(sim, action, residentName, entropy) {
+  const carried = sim.components.find(component => component.carried_by === residentName);
+  if (action === 'drop' && carried) return carried;
+  const weak = sim.components
+    .filter(component => Number(component.stability || 1) < 0.74 || Number(component.damage || 0) > 0.14 || Number(component.field_stress || 0) > 0.18)
+    .sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)))[0];
+  const damp = sim.components
+    .filter(component => Number(component.moisture || 0) > 0.34)
+    .sort((a, b) => Number(b.moisture || 0) - Number(a.moisture || 0))[0];
+  if (action === 'tie' && weak) return weak;
+  if (action === 'dry' && damp) return damp;
+  if (action === 'wet_test' && damp) return damp;
+  if (action === 'carry') return sim.components.filter(component => Number(component.mass || 1) <= residentCarryCapacity(residentName)).sort((a, b) => Number(b.moisture || 0) - Number(a.moisture || 0))[0] || sim.components[entropy % sim.components.length];
+  if (action === 'stack' && weak) return weak;
+  return sim.components[(entropy + ensureMaterialManipulationLoop().actionLedger.length) % sim.components.length];
+}
+
+function chooseMaterialManipulationPlan(residentName, entropy, actionOverride = null) {
+  const sim = ensurePrototype3DWorld();
+  const loop = ensureMaterialManipulationLoop();
+  const carried = sim.components.find(component => component.carried_by === residentName);
+  const weak = sim.components.some(component => Number(component.stability || 1) < 0.72 || Number(component.damage || 0) > 0.18 || Number(component.field_stress || 0) > 0.2);
+  const damp = sim.components.some(component => Number(component.moisture || 0) > 0.36);
+  const sequence = loop.actionLedger.length + entropy;
+  let action = actionOverride;
+  if (!action || action === 'auto' || action === 'resident_choice') {
+    if (carried && sequence % 3 === 0) action = 'drop';
+    else if (weak && Number(world.resources.fiber || 0) > 0) action = 'tie';
+    else if (damp && sequence % 2 === 0) action = 'dry';
+    else if (sequence % 7 === 0) action = 'wet_test';
+    else if (sequence % 5 === 0) action = 'stack';
+    else if (sequence % 3 === 0) action = 'carry';
+    else action = 'test';
+  }
+  const component = componentForManipulation(sim, action, residentName, entropy);
+  const term = sim.language.terms.find(row => row.term_id === (component ? component.resident_term_id : 'TERM-TAKU-REN')) || sim.language.terms[0];
+  return { action, residentName, component, term, capacity: residentCarryCapacity(residentName) };
+}
+
+function updatePracticeFromMaterialManipulation(row, term) {
+  const loop = ensureMaterialManipulationLoop();
+  const graph = ensureEmergentPracticeGraph();
+  const repeated = loop.actionLedger.filter(existing => existing.action === row.action && existing.material_id === row.material_id && existing.success).length;
+  const shouldCreate = row.success ? repeated >= 2 || row.action === 'test' : true;
+  if (!shouldCreate) return null;
+  const localVerb = row.action.replace('_', ' ');
+  const localName = `${term ? term.resident_word : 'local'} ${localVerb} handling habit`;
+  const existing = graph.nodes.find(node => node.local_name === localName);
+  const node = existing || {
+    practice_id: `EPG-${String(graph.nodes.length + 1).padStart(2, '0')}`,
+    local_name: localName,
+    resident_term: term ? term.resident_word : 'local',
+    player_gloss: `${term ? term.player_gloss : 'local material'} ${localVerb} practice`,
+    engine_concept: 'resident_physical_material_manipulation',
+    origin_tick: world.tick,
+    origin_resident: row.resident,
+    origin_household: `${row.resident}-household`,
+    origin_event: row.manipulation_id,
+    problem_pressure: row.failure_reason || row.action,
+    materials_used: [row.material_id],
+    observations_supporting: [],
+    failed_ancestor_tests: [],
+    beliefs_involved: [],
+    social_transmission_path: [],
+    mutation_variants: [],
+    adoption_count: 0,
+    adoption_households: [],
+    practical_score: 0,
+    ritual_score: 0,
+    taboo_score: 0,
+    dispute_score: 0,
+    maintenance_cost: row.resource_cost && row.resource_cost.fiber ? row.resource_cost.fiber : 1,
+    risk_flags: [],
+    generations_survived: 0,
+    status: 'emerging',
+    avatar_role: 'witness_or_condition_supporter',
+    hidden_properties_audit_only: true,
+    source_manipulation_rows: [],
+    construction_component_ids: [],
+    component_affordances: [],
+    language_term_id: term ? term.term_id : null,
+    translation_confidence: term ? term.translation_confidence : 0.5,
+  };
+  node.source_manipulation_rows = Array.from(new Set((node.source_manipulation_rows || []).concat([row.manipulation_id])));
+  node.construction_component_ids = Array.from(new Set((node.construction_component_ids || []).concat([row.component_id])));
+  node.component_affordances = Array.from(new Set((node.component_affordances || []).concat([row.affordance])));
+  node.observations_supporting = Array.from(new Set((node.observations_supporting || []).concat([row.public_observation])));
+  node.failed_ancestor_tests = Array.from(new Set((node.failed_ancestor_tests || []).concat(row.success ? [] : [row.manipulation_id])));
+  node.beliefs_involved = Array.from(new Set((node.beliefs_involved || []).concat([row.component_id, row.action])));
+  node.social_transmission_path = Array.from(new Set((node.social_transmission_path || []).concat([`${row.resident}->${row.resident_term}`])));
+  node.mutation_variants = Array.from(new Set((node.mutation_variants || []).concat([localName, row.resident_interpretation])));
+  node.adoption_count += row.success ? 1 : 0;
+  node.adoption_households = Array.from(new Set((node.adoption_households || []).concat([`${row.resident}-household`])));
+  node.practical_score = Number(clamp(Number(node.practical_score || 0) + (row.success ? 0.12 : 0)).toFixed(3));
+  node.ritual_score = Number(clamp(Number(node.ritual_score || 0) + (row.action === 'test' || !row.success ? 0.04 : 0.01)).toFixed(3));
+  node.taboo_score = Number(clamp(Number(node.taboo_score || 0) + (row.success ? 0.01 : 0.18)).toFixed(3));
+  node.dispute_score = Number(clamp(Number(node.dispute_score || 0) + (row.success ? 0.03 : 0.16)).toFixed(3));
+  node.risk_flags = Array.from(new Set((node.risk_flags || []).concat(row.success ? ['material handling maintenance'] : ['failed manipulation warning'])));
+  node.generations_survived = Math.max(Number(node.generations_survived || 0), Math.floor(node.adoption_count / 2));
+  node.status = !row.success ? 'disputed' : node.adoption_count >= 4 && node.practical_score > 0.4 ? 'practical' : 'emerging';
+  if (!existing) graph.nodes.push(node);
+  graph.edges.push({ from: row.manipulation_id, to: node.practice_id, event: row.action, relation: row.success ? 'repeated_handling_into_practice' : 'failed_handling_into_warning', hiddenLawExposed: false });
+  loop.practiceLinks.push({ manipulation_id: row.manipulation_id, practice_id: node.practice_id, relation: row.success ? 'evidence' : 'warning', resident: row.resident });
+  if (loop.practiceLinks.length > 80) loop.practiceLinks.shift();
+  if (term) {
+    term.adoption_count += row.success ? 1 : 0;
+    term.practical_score = Number(clamp(Number(term.practical_score || 0) + (row.success ? 0.012 : 0)).toFixed(3));
+    term.dispute_score = Number(clamp(Number(term.dispute_score || 0) + (row.success ? 0 : 0.02)).toFixed(3));
+    term.meaning_drift = term.meaning_drift || [];
+    const drift = row.success ? `${term.resident_word} includes ${localVerb} handling` : `${term.resident_word} carries a ${localVerb} warning`;
+    if (!term.meaning_drift.includes(drift)) term.meaning_drift.push(drift);
+    if (term.adoption_count >= 8 && !term.variants.includes(`${term.resident_word}-ko`)) term.variants.push(`${term.resident_word}-ko`);
+  }
+  return node;
+}
+
+function runResidentMaterialManipulationStep(actionOverride = 'resident_choice') {
+  ensureGamePrototype();
+  const loop = ensureMaterialManipulationLoop();
+  const sim = ensurePrototype3DWorld();
+  if (!sim.physics || !sim.physics.latestStep) applyPrototypePhysicsStep('resident manipulation precheck');
+  const entropy = deepTimeEntropyByte();
+  const residentName = residentForMaterialManipulation(entropy);
+  const plan = chooseMaterialManipulationPlan(residentName, entropy, actionOverride);
+  const component = plan.component;
+  if (!component) return log('runResidentMaterialManipulationStep', { manipulated: false, reason: 'no component available' });
+  const material = sim.materialCatalog[component.material_id] || {};
+  const before = {
+    position3d: { ...(component.position3d || {}) },
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    field_stress: Number(component.field_stress || 0),
+    carried_by: component.carried_by || null,
+  };
+  const resourceCost = {};
+  let success = true;
+  let failureReason = null;
+  let publicObservation = `${residentName} handled ${plan.term ? plan.term.resident_word : component.material_id}`;
+  let residentInterpretation = `${plan.action.replace('_', ' ')} seemed worth remembering`;
+  const mass = Number(component.mass || material.mass || 1);
+  if (['carry', 'stack'].includes(plan.action) && mass > plan.capacity) {
+    success = false;
+    failureReason = `too heavy for ${residentName}`;
+  }
+  if (plan.action === 'tie' && Number(world.resources.fiber || 0) <= 0) {
+    success = false;
+    failureReason = 'no fiber for tying';
+  }
+  if (plan.action === 'wet_test' && Number(world.resources.water || 0) <= 0) {
+    success = false;
+    failureReason = 'no water for wet test';
+  }
+  if (success && plan.action === 'carry') {
+    component.carried_by = residentName;
+    component.position3d.x = Number(Math.max(0, Math.min(120, Number(component.position3d.x || 0) + 10)).toFixed(3));
+    component.position3d.y = Number(Math.max(0, Math.min(90, Number(component.position3d.y || 0) + 8)).toFixed(3));
+    component.field_stress = Number(clamp(Number(component.field_stress || 0) + mass * 0.012).toFixed(3));
+    publicObservation = `${residentName} carried ${plan.term ? plan.term.resident_word : component.material_id} without naming an engine concept`;
+    residentInterpretation = mass > plan.capacity * 0.75 ? 'heavy things need two pauses' : 'this piece can be moved by one resident';
+  } else if (success && plan.action === 'drop') {
+    component.carried_by = null;
+    component.position3d.z = Number(Math.max(0, Number(component.position3d.z || 0) - 4).toFixed(3));
+    component.damage = Number(clamp(Number(component.damage || 0) + 0.006).toFixed(3));
+    publicObservation = `${residentName} set ${plan.term ? plan.term.resident_word : component.material_id} down near the work edge`;
+    residentInterpretation = 'setting it down changed the support feel';
+  } else if (success && plan.action === 'tie') {
+    resourceCost.fiber = 1;
+    world.resources.fiber = Math.max(0, Number(world.resources.fiber || 0) - 1);
+    component.damage = Number(clamp(Number(component.damage || 0) - 0.045).toFixed(3));
+    component.stability = Number(clamp(Number(component.stability || 0) + 0.085).toFixed(3));
+    component.field_stress = Number(clamp(Number(component.field_stress || 0) - 0.04).toFixed(3));
+    publicObservation = `${residentName} retied ${plan.term ? plan.term.resident_word : component.material_id} with fiber`;
+    residentInterpretation = 'tight binding makes the support less nervous';
+  } else if (success && plan.action === 'dry') {
+    component.moisture = Number(clamp(Number(component.moisture || 0) - 0.085).toFixed(3));
+    component.temperature = Number(clamp(Number(component.temperature || 0.45) + 0.025).toFixed(3));
+    component.position3d.y = Number(Math.max(0, Number(component.position3d.y || 0) - 6).toFixed(3));
+    publicObservation = `${residentName} moved ${plan.term ? plan.term.resident_word : component.material_id} toward dry air`;
+    residentInterpretation = 'dry handling calmed the damp part';
+  } else if (success && plan.action === 'wet_test') {
+    resourceCost.water = 1;
+    world.resources.water = Math.max(0, Number(world.resources.water || 0) - 1);
+    component.moisture = Number(clamp(Number(component.moisture || 0) + 0.09).toFixed(3));
+    component.damage = Number(clamp(Number(component.damage || 0) + (1 - Number(material.water_resistance || 0.5)) * 0.025).toFixed(3));
+    publicObservation = `${residentName} wet-tested ${plan.term ? plan.term.resident_word : component.material_id}`;
+    residentInterpretation = Number(material.water_resistance || 0.5) < 0.4 ? 'water made it less trustworthy' : 'water did not ruin it immediately';
+  } else if (success && plan.action === 'stack') {
+    component.position3d.z = Number(Math.min(96, Number(component.position3d.z || 0) + 6).toFixed(3));
+    component.field_stress = Number(clamp(Number(component.field_stress || 0) + 0.035).toFixed(3));
+    component.stability = Number(clamp(Number(component.stability || 0) - 0.015 + Number(material.compression_strength || 0.3) * 0.02).toFixed(3));
+    publicObservation = `${residentName} stacked or leaned ${plan.term ? plan.term.resident_word : component.material_id}`;
+    residentInterpretation = 'height helps only if the lower pieces hold';
+  } else if (success) {
+    component.field_stress = Number(clamp(Number(component.field_stress || 0) + 0.02).toFixed(3));
+    component.damage = Number(clamp(Number(component.damage || 0) + Number(material.brittleness || 0.3) * 0.006).toFixed(3));
+    publicObservation = `${residentName} tested ${plan.term ? plan.term.resident_word : component.material_id} by touch and weight`;
+    residentInterpretation = 'small test added evidence, not certainty';
+  }
+  if (!success) {
+    publicObservation = `${residentName} failed to ${plan.action.replace('_', ' ')} ${plan.term ? plan.term.resident_word : component.material_id}: ${failureReason}`;
+    residentInterpretation = 'failed handling became a warning';
+    component.field_stress = Number(clamp(Number(component.field_stress || 0) + 0.012).toFixed(3));
+  }
+  const structure = sim.structures && sim.structures[0] ? sim.structures[0] : null;
+  if (structure) {
+    const linked = sim.components.filter(row => structure.component_ids.includes(row.component_id));
+    structure.stability = Number(clamp(linked.reduce((sum, row) => sum + Number(row.stability || 0), 0) / Math.max(1, linked.length)).toFixed(3));
+    structure.moisture_risk = Number(clamp(linked.reduce((sum, row) => sum + Number(row.moisture || 0), 0) / Math.max(1, linked.length)).toFixed(3));
+  }
+  const physicsStep = applyPrototypePhysicsStep('resident material manipulation');
+  const row = {
+    manipulation_id: `GPM-${String(loop.actionLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    resident: residentName,
+    action: plan.action,
+    component_id: component.component_id,
+    material_id: component.material_id,
+    affordance: component.affordance,
+    resident_term: plan.term ? plan.term.resident_word : component.resident_term_id,
+    player_gloss: plan.term ? plan.term.player_gloss : component.material_id,
+    mass,
+    carry_capacity: plan.capacity,
+    resource_cost: resourceCost,
+    success,
+    failure_reason: failureReason,
+    public_observation: publicObservation,
+    resident_interpretation: residentInterpretation,
+    before,
+    after: {
+      position3d: { ...(component.position3d || {}) },
+      moisture: Number(component.moisture || 0),
+      damage: Number(component.damage || 0),
+      stability: Number(component.stability || 0),
+      field_stress: Number(component.field_stress || 0),
+      carried_by: component.carried_by || null,
+    },
+    physics_step_id: physicsStep.step_id,
+    avatar_direct_command: false,
+    resident_chosen: true,
+    hidden_law_normal_view: false,
+  };
+  loop.runCount += 1;
+  loop.actionLedger.push(row);
+  loop.observationLedger.push({ observation_id: `GPO-${String(loop.observationLedger.length + 1).padStart(3, '0')}`, manipulation_id: row.manipulation_id, public_observation: publicObservation, resident_interpretation: residentInterpretation, hidden_law_visible_normal_view: false });
+  if (!success) loop.failureLedger.push({ manipulation_id: row.manipulation_id, resident: residentName, component_id: component.component_id, failure_reason: failureReason, recoverable: true });
+  loop.actionLedger = loop.actionLedger.slice(-120);
+  loop.observationLedger = loop.observationLedger.slice(-120);
+  loop.failureLedger = loop.failureLedger.slice(-80);
+  const linkedPractice = updatePracticeFromMaterialManipulation(row, plan.term);
+  mutateResident(residentName, {
+    trust: success ? 0.002 : -0.001,
+    progress: success ? 0.008 : 0.002,
+    schedule: success ? `${plan.action.replace('_', ' ')} ${row.resident_term}` : `warns about ${row.resident_term}`,
+    memory: residentInterpretation,
+    historyEvent: 'resident material manipulation',
+    historyDetail: `${row.manipulation_id} ${plan.action} ${component.component_id}`
+  });
+  if (world.autonomousResidents) recordVisibleResidentExpression(residentName, success ? 'material_manipulation' : 'experiment', world.autonomousResidents.needState[residentName]);
+  recordRealityConstraint('resident_material_manipulation', {
+    resident: residentName,
+    sourceBeliefId: row.manipulation_id,
+    materials: [component.material_id].concat(Object.keys(resourceCost)),
+    publicObservation,
+    residentInterpretation,
+    materialTransformation: success ? `${plan.action.replace('_', ' ')} changed component position/moisture/damage/stability/stress` : 'failed manipulation preserved as warning evidence',
+    timeCost: 1,
+    workCost: success ? 2 : 1,
+    toolWear: ['tie', 'stack', 'wet_test', 'test'].includes(plan.action) ? 1 : 0,
+    maintenanceObligation: linkedPractice ? linkedPractice.practice_id : 'watch material handling evidence',
+    unintendedConsequence: success ? 'resident handling can become practice evidence' : 'handling failure can become safety rule',
+    hiddenLawInvolved: world.audit ? 'material mass, carry capacity, support, moisture, stress, and water resistance' : 'audit only',
+    conservationCheck: true
+  });
+  recordPrototypeMilestone('resident-material-manipulation', `${row.manipulation_id}: ${residentName} ${plan.action} ${component.component_id}; success=${success}`);
+  return log('runResidentMaterialManipulationStep', { manipulationId: row.manipulation_id, resident: residentName, action: plan.action, componentId: component.component_id, success, practiceId: linkedPractice ? linkedPractice.practice_id : null, physicsStepId: physicsStep.step_id });
+}
+
+function runResidentMaterialManipulationLoop() {
+  ensureGamePrototype();
+  const loop = ensureMaterialManipulationLoop();
+  const before = loop.actionLedger.length;
+  ['carry', 'dry', 'tie', 'wet_test', 'stack', 'test'].forEach(action => runResidentMaterialManipulationStep(action));
+  recordPrototypeMilestone('resident-material-manipulation-loop', `${loop.actionLedger.length - before} resident physical handling action(s)`);
+  return log('runResidentMaterialManipulationLoop', { actionsAdded: loop.actionLedger.length - before, totalActions: loop.actionLedger.length, practiceLinks: loop.practiceLinks.length });
+}
 
 function buildBoundedEchoConversation(phrase) {
   const echo = world.accountabilitySocialEcho;
@@ -3913,13 +4232,19 @@ function deriveVisibleResidentExpression(residentName, action = 'observe', needs
 	    gazeCue = 'watches stored materials';
 	    marker = 'maintaining';
 	    reason = 'practice upkeep';
-  } else if (action === 'physics_repair') {
-    posture = 'braced beside strained support';
-    movementCue = 'careful retie and weight check';
-    gazeCue = 'looks along contact points';
-    marker = 'repairing';
-    reason = 'physical support pressure';
-	  } else if (action === 'teach') {
+	  } else if (action === 'physics_repair') {
+	    posture = 'braced beside strained support';
+	    movementCue = 'careful retie and weight check';
+	    gazeCue = 'looks along contact points';
+	    marker = 'repairing';
+	    reason = 'physical support pressure';
+	  } else if (action === 'material_manipulation') {
+	    posture = 'hands on material';
+	    movementCue = 'tests weight and surface';
+	    gazeCue = 'checks the part that moved';
+	    marker = 'handling';
+	    reason = 'resident physical manipulation';
+		  } else if (action === 'teach') {
     posture = 'open teaching stance';
     movementCue = 'small demonstration';
     gazeCue = 'faces a nearby resident';
@@ -4180,7 +4505,8 @@ function formatPrototypePublicOutcomes() {
 	  const materialWorld = world.gamePrototype3DWorld;
 	  const materialPhysics = materialWorld && materialWorld.physics ? materialWorld.physics.latestStep : null;
 	  const latestTerm = materialWorld && materialWorld.language && materialWorld.language.terms.length ? materialWorld.language.terms[0] : null;
-  const constructionPracticeCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
+  const manipulation = world.gamePrototypeMaterialManipulation;
+	  const constructionPracticeCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
@@ -4197,6 +4523,7 @@ function formatPrototypePublicOutcomes() {
     `Village days: ${dayCycle ? `${dayCycle.day} day(s), weather rows=${dayCycle.weatherLedger.length}, recaps=${dayCycle.recapLedger.length}` : 'not advanced'}`,
 	    `Return later: ${returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used'}`,
 	    `3D material physics: ${materialWorld ? `${materialWorld.components.length} component(s), ${materialWorld.structures.length} structure(s), term=${latestTerm ? latestTerm.resident_word + ' / ' + latestTerm.player_gloss : 'none'}, physics=${materialPhysics ? `${materialPhysics.step_id} field=${materialPhysics.field_id || 'none'} stress=${materialPhysics.field_stress || 'n/a'}` : 'not stepped'}` : 'not initialized'}`,
+    `Resident material handling: ${manipulation ? `${manipulation.actionLedger.length} action(s), practice links=${manipulation.practiceLinks.length}, failures=${manipulation.failureLedger.length}` : 'not started'}`,
     `Construction practices: ${constructionPracticeCount} construction row(s) linked to practice graph`,
 	    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
@@ -4362,9 +4689,29 @@ function formatPrototypeMaterialWorld() {
 	    ...(physicsProposals.length ? physicsProposals : ['none']),
     'Resident construction:',
     ...(constructionRows.length ? constructionRows : ['none']),
-		    'Normal view hidden law exposed: no / fixed building asset: no / English resident tech label: no',
-	  ].join('\n');
-	}
+			    'Normal view hidden law exposed: no / fixed building asset: no / English resident tech label: no',
+		  ].join('\n');
+		}
+
+function formatPrototypeMaterialManipulation() {
+  const loop = world.gamePrototypeMaterialManipulation || ensureMaterialManipulationLoop();
+  const actions = loop.actionLedger.slice(-8).map(row => `${row.manipulation_id}: ${row.resident} ${row.action} ${row.component_id}/${row.resident_term}; success=${row.success}; cost=${Object.entries(row.resource_cost || {}).map(([key, value]) => `${key}:${value}`).join('+') || 'none'}; physics=${row.physics_step_id}`);
+  const observations = loop.observationLedger.slice(-5).map(row => `${row.observation_id}: ${row.public_observation} -> ${row.resident_interpretation}`);
+  const failures = loop.failureLedger.slice(-5).map(row => `${row.manipulation_id}: ${row.failure_reason}; recoverable=${row.recoverable}`);
+  const links = loop.practiceLinks.slice(-6).map(row => `${row.manipulation_id}->${row.practice_id} (${row.relation})`);
+  return [
+    `Runs: ${loop.runCount} / actions=${loop.actionLedger.length} / observations=${loop.observationLedger.length} / practiceLinks=${loop.practiceLinks.length}`,
+    `Boundary: ${loop.boundary}`,
+    'Resident physical handling:',
+    ...(actions.length ? actions : ['none']),
+    'Public observations:',
+    ...(observations.length ? observations : ['none']),
+    'Failures preserved:',
+    ...(failures.length ? failures : ['none']),
+    'Practice links:',
+    ...(links.length ? links : ['none']),
+  ].join('\n');
+}
 
 function formatPrototypeProjects() {
   const projects = world.gamePrototypeProjects || ensurePrototypeProjects();
@@ -4411,10 +4758,13 @@ function derivePrototypePlayerGuide() {
   if (!world.gamePrototypeReturnLater || !world.gamePrototypeReturnLater.returnLedger.length) {
     return { ...guide, phase: 'return later', nextAction: 'Return later', why: 'leave the village, advance offscreen days, and return with consequences instead of restoring an old state', button: 'leaveAndReturnLater' };
   }
-  if (!world.gamePrototype3DWorld || !world.gamePrototype3DWorld.physics || !world.gamePrototype3DWorld.physics.latestStep) {
-    return { ...guide, phase: 'stochastic physics', nextAction: 'Physics step', why: 'advance gravity, support, collision/contact, friction, material fatigue, and resident-local language/gloss grounding', button: 'runPrototypePhysicsStep' };
+	  if (!world.gamePrototype3DWorld || !world.gamePrototype3DWorld.physics || !world.gamePrototype3DWorld.physics.latestStep) {
+	    return { ...guide, phase: 'stochastic physics', nextAction: 'Physics step', why: 'advance gravity, support, collision/contact, friction, material fatigue, and resident-local language/gloss grounding', button: 'runPrototypePhysicsStep' };
+	  }
+  if (!world.gamePrototypeMaterialManipulation || !world.gamePrototypeMaterialManipulation.actionLedger.length) {
+    return { ...guide, phase: 'material handling', nextAction: 'Resident handling', why: 'let residents physically move, tie, dry, wet-test, stack, or test components through material constraints', button: 'runResidentMaterialManipulationStep' };
   }
-  if (!world.anomalyDiscovery || !world.civilizationPressure) {
+	  if (!world.anomalyDiscovery || !world.civilizationPressure) {
     return { ...guide, phase: 'world pressure', nextAction: 'Practice + proposal', why: 'create public observations, pressure, resident tests, and the first proposal without a tech-tree unlock', button: 'runPrototypePracticeChain' };
   }
   if (!world.practicalDiscovery || !(world.practicalDiscovery.autoGeneratedTests || []).length) {
@@ -4582,9 +4932,10 @@ function runPrototypeQASmoke() {
   performNearbyAction();
   endVillageDay();
   leaveAndReturnLater();
-  runPrototypeMaterialWorldStep();
-  runPrototypePhysicsStep();
-  advanceVillageProject();
+	  runPrototypeMaterialWorldStep();
+	  runPrototypePhysicsStep();
+	  runResidentMaterialManipulationLoop();
+	  advanceVillageProject();
   advanceVillageProject();
   advanceVillageProject();
   supportResourceCommons();
@@ -4624,6 +4975,9 @@ function runPrototypeQASmoke() {
 	    forceRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics ? world.gamePrototype3DWorld.physics.forceLedger.length : 0,
 	    fieldRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.fieldLedger ? world.gamePrototype3DWorld.physics.fieldLedger.length : 0,
 	    energyRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.energyLedger ? world.gamePrototype3DWorld.physics.energyLedger.length : 0,
+	    manipulationRows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
+	    manipulationPracticeLinks: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
+	    manipulationFailures: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.failureLedger ? world.gamePrototypeMaterialManipulation.failureLedger.length : 0,
 	    constructionRows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
 	    projectBuiltComponents: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
 	    constructionPracticeLinks: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
@@ -4653,7 +5007,8 @@ function runPrototypeQASmoke() {
 	    { id: 'village-day-cycle', pass: Boolean(world.gamePrototypeDayCycle && savedCounts.villageDays > 0 && savedCounts.weatherRows > 0 && world.gamePrototypeDayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: `${savedCounts.villageDays} day row(s), ${savedCounts.weatherRows} weather row(s)` },
 	    { id: 'return-later-forward-persistence', pass: Boolean(world.gamePrototypeReturnLater && savedCounts.returnLaterRows > 0 && world.gamePrototypeReturnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: `${savedCounts.returnLaterRows} return-later row(s)` },
 		    { id: 'stochastic-physics-substrate', pass: Boolean(world.gamePrototype3DWorld && savedCounts.materialComponents > 0 && savedCounts.residentTerms > 0 && savedCounts.physicsSteps > 0 && savedCounts.supportRows > 0 && savedCounts.forceRows > 0 && savedCounts.fieldRows > 0 && savedCounts.energyRows > 0 && world.gamePrototype3DWorld.noFixedBuildingAssets === true && world.gamePrototype3DWorld.noEnglishResidentTechLabels === true), evidence: `${savedCounts.materialComponents} component(s), ${savedCounts.residentTerms} term(s), ${savedCounts.physicsSteps} physics step(s), ${savedCounts.fieldRows} field row(s), ${savedCounts.energyRows} energy row(s)` },
-    { id: 'physics-influences-village', pass: Boolean(savedCounts.physicsProposals > 0 && world.villageBoard.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${savedCounts.physicsProposals} physics proposal(s), ${savedCounts.physicsRepairActions} repair action(s)` },
+	    { id: 'resident-material-manipulation', pass: Boolean(world.gamePrototypeMaterialManipulation && savedCounts.manipulationRows > 0 && savedCounts.manipulationPracticeLinks > 0 && world.gamePrototypeMaterialManipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${savedCounts.manipulationRows} handling row(s), ${savedCounts.manipulationPracticeLinks} practice link(s), ${savedCounts.manipulationFailures} preserved failure(s)` },
+	    { id: 'physics-influences-village', pass: Boolean(savedCounts.physicsProposals > 0 && world.villageBoard.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${savedCounts.physicsProposals} physics proposal(s), ${savedCounts.physicsRepairActions} repair action(s)` },
     { id: 'projects-change-physical-world', pass: Boolean(savedCounts.constructionRows > 0 && savedCounts.projectBuiltComponents > 0 && world.gamePrototype3DWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${savedCounts.constructionRows} construction row(s), ${savedCounts.projectBuiltComponents} project-built component(s)` },
 	    { id: 'construction-feeds-practice-language', pass: Boolean(savedCounts.constructionPracticeLinks > 0 && savedCounts.constructionPracticeNodes > 0 && world.gamePrototype3DWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${savedCounts.constructionPracticeLinks} construction-practice link(s), ${savedCounts.constructionPracticeNodes} construction practice node(s)` },
 	    { id: 'deep-time-uses-physical-heritage', pass: Boolean(savedCounts.physicalHeritageRows > 0 && savedCounts.componentEffectRows > 0 && savedCounts.constructionLineages > 0 && world.deepTimeCivilization && world.deepTimeCivilization.civilizationState && Number(world.deepTimeCivilization.civilizationState.physicalContinuity || 0) > 0), evidence: `${savedCounts.physicalHeritageRows} heritage row(s), ${savedCounts.componentEffectRows} deep physical effect(s), ${savedCounts.constructionLineages} construction lineage(s)` },
@@ -4705,10 +5060,14 @@ function runPrototypeAutoStep() {
   if (!world.entered) runPrototypeOpening();
 	  clock.step += 1;
 	  runAutonomousResidentTick();
-  const materialResult = runPrototypeMaterialWorldStep().payload;
-	  let action = `resident tick + stochastic physics ${materialResult.physicsStepId || 'none'}`;
-  if (materialResult.physicsProposalId) action += ` + physics proposal ${materialResult.physicsProposalId}`;
-  if (clock.step % 6 === 0) {
+	  const materialResult = runPrototypeMaterialWorldStep().payload;
+		  let action = `resident tick + stochastic physics ${materialResult.physicsStepId || 'none'}`;
+	  if (materialResult.physicsProposalId) action += ` + physics proposal ${materialResult.physicsProposalId}`;
+  if (clock.step % 3 === 0) {
+    const manipulation = runResidentMaterialManipulationStep().payload;
+    action += ` + handling ${manipulation.manipulationId || 'none'}`;
+  }
+	  if (clock.step % 6 === 0) {
     supportVillageProposal();
     action += ' + proposal support';
   }
@@ -4789,6 +5148,8 @@ function saveSlotSummary(slot) {
 	    return_later_rows: slot.return_later_rows,
 	    physical_field_rows: slot.physical_field_rows,
 	    physical_energy_rows: slot.physical_energy_rows,
+	    material_manipulation_rows: slot.material_manipulation_rows,
+	    material_manipulation_practice_links: slot.material_manipulation_practice_links,
 	    deep_time_physical_effects: slot.deep_time_physical_effects,
 	    physical_heritage_rows: slot.physical_heritage_rows,
 	  };
@@ -4854,6 +5215,8 @@ function savePrototypeSlot(label = 'manual prototype save') {
 		    physics_linked_proposals: world.villageBoard && world.villageBoard.projectProposals ? world.villageBoard.projectProposals.filter(row => row.related_physics_step).length : 0,
 	    physical_field_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.fieldLedger ? world.gamePrototype3DWorld.physics.fieldLedger.length : 0,
 	    physical_energy_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.physics && world.gamePrototype3DWorld.physics.energyLedger ? world.gamePrototype3DWorld.physics.energyLedger.length : 0,
+	    material_manipulation_rows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
+	    material_manipulation_practice_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
 	    construction_rows: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.length : 0,
 	    project_built_components: world.gamePrototype3DWorld && world.gamePrototype3DWorld.components ? world.gamePrototype3DWorld.components.filter(component => component.project_built === true).length : 0,
 	    construction_practice_links: world.gamePrototype3DWorld && world.gamePrototype3DWorld.constructionLedger ? world.gamePrototype3DWorld.constructionLedger.filter(row => row.practice_id).length : 0,
@@ -4933,17 +5296,20 @@ function buildPrototypeAcceptanceReceipt() {
   const projects = world.gamePrototypeProjects || null;
   const commonsSupport = world.gamePrototypeCommonsSupport || null;
   const nearby = world.gamePrototypeNearbyActions || null;
-  const dayCycle = world.gamePrototypeDayCycle || null;
-	  const returnLater = world.gamePrototypeReturnLater || null;
-	  const materialWorld = world.gamePrototype3DWorld || null;
-	  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
-  const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
+	  const dayCycle = world.gamePrototypeDayCycle || null;
+		  const returnLater = world.gamePrototypeReturnLater || null;
+		  const materialWorld = world.gamePrototype3DWorld || null;
+		  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
+	  const manipulation = world.gamePrototypeMaterialManipulation || null;
+	  const physicsProposalCount = board && board.projectProposals ? board.projectProposals.filter(row => row.related_physics_step).length : 0;
 	  const constructionCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.length : 0;
 	  const projectBuiltComponentCount = materialWorld && materialWorld.components ? materialWorld.components.filter(component => component.project_built === true).length : 0;
 	  const constructionPracticeLinks = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
 	  const constructionPracticeNodes = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.filter(row => row.source_construction_rows && row.source_construction_rows.length).length : 0;
 	  const fieldRows = physics && physics.fieldLedger ? physics.fieldLedger.length : 0;
-	  const energyRows = physics && physics.energyLedger ? physics.energyLedger.length : 0;
+		  const energyRows = physics && physics.energyLedger ? physics.energyLedger.length : 0;
+	  const manipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.length : 0;
+	  const manipulationPracticeLinks = manipulation && manipulation.practiceLinks ? manipulation.practiceLinks.length : 0;
 	  const physicalHeritageRows = deepTime && deepTime.physicalHeritageLedger ? deepTime.physicalHeritageLedger.length : 0;
 	  const deepPhysicalEffectRows = deepTime && deepTime.componentEffectLedger ? deepTime.componentEffectLedger.length : 0;
 	  const constructionLineageCount = deepTime && deepTime.lineages ? deepTime.lineages.filter(row => row.component_ids && row.component_ids.length).length : 0;
@@ -4967,7 +5333,8 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'village_day_cycle', pass: Boolean(dayCycle && dayCycle.dayLedger.length > 0 && dayCycle.weatherLedger.length > 0 && dayCycle.dayLedger.every(row => row.direct_player_command === false)), evidence: dayCycle ? `${dayCycle.dayLedger.length} day row(s), ${dayCycle.weatherLedger.length} weather row(s), day=${dayCycle.day}` : 'not advanced' },
 	    { id: 'return_later_forward_persistence', pass: Boolean(returnLater && returnLater.returnLedger.length > 0 && returnLater.returnLedger.every(row => row.restored_old_state === false && row.direct_reset === false && row.continuity_preserved === true)), evidence: returnLater ? `${returnLater.returnLedger.length} return(s), latest=${returnLater.latestReceipt ? returnLater.latestReceipt.return_id : 'none'}` : 'not used' },
 		    { id: 'physics_first_3d_material_world', pass: Boolean(materialWorld && physics && materialWorld.components.length > 0 && materialWorld.structures.length > 0 && materialWorld.language.terms.length > 0 && physics.latestStep && physics.supportLedger.length > 0 && physics.forceLedger.length > 0 && fieldRows > 0 && energyRows > 0 && materialWorld.noFixedBuildingAssets === true && materialWorld.noEnglishResidentTechLabels === true), evidence: materialWorld && physics ? `${materialWorld.components.length} component(s), ${materialWorld.language.terms.length} term(s), physics step=${physics.latestStep ? physics.latestStep.step_id : 'none'}, fields=${fieldRows}, energy=${energyRows}` : 'not initialized' },
-	    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
+	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s)` },
+		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true)), evidence: `${constructionCount} construction row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
 	    { id: 'deep_time_uses_physical_heritage', pass: Boolean(physicalHeritageRows > 0 && deepPhysicalEffectRows > 0 && constructionLineageCount > 0 && deepTime && deepTime.civilizationState && Number(deepTime.civilizationState.physicalContinuity || 0) > 0), evidence: `${physicalHeritageRows} heritage row(s), ${deepPhysicalEffectRows} deep physical effect(s), ${constructionLineageCount} construction lineage(s)` },
@@ -5042,7 +5409,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physical_effects || 0}/${slot.physical_heritage_rows || 0}; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physical_effects || 0}/${slot.physical_heritage_rows || 0}; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
@@ -5103,8 +5470,9 @@ function renderGamePrototypeSurface() {
   const commonsSupportNode = document.getElementById('gamePrototypeCommonsSupportOut');
   const nearbyNode = document.getElementById('gamePrototypeNearbyOut');
   const dayCycleNode = document.getElementById('gamePrototypeDayCycleOut');
-  const returnLaterNode = document.getElementById('gamePrototypeReturnLaterOut');
-  const materialWorldNode = document.getElementById('gamePrototypeMaterialWorldOut');
+	  const returnLaterNode = document.getElementById('gamePrototypeReturnLaterOut');
+	  const materialWorldNode = document.getElementById('gamePrototypeMaterialWorldOut');
+  const materialManipulationNode = document.getElementById('gamePrototypeMaterialManipulationOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
@@ -5124,8 +5492,9 @@ function renderGamePrototypeSurface() {
   if (commonsSupportNode) commonsSupportNode.textContent = formatPrototypeCommonsSupport();
   if (nearbyNode) nearbyNode.textContent = formatPrototypeNearbyActions();
   if (dayCycleNode) dayCycleNode.textContent = formatPrototypeDayCycle();
-  if (returnLaterNode) returnLaterNode.textContent = formatPrototypeReturnLater();
-  if (materialWorldNode) materialWorldNode.textContent = formatPrototypeMaterialWorld();
+	  if (returnLaterNode) returnLaterNode.textContent = formatPrototypeReturnLater();
+	  if (materialWorldNode) materialWorldNode.textContent = formatPrototypeMaterialWorld();
+  if (materialManipulationNode) materialManipulationNode.textContent = formatPrototypeMaterialManipulation();
 }
 
 function bindControls() {
@@ -5951,10 +6320,25 @@ function draw() {
       } else {
         ctx.fillRect(point.x - 18, point.y - 7, 36, 14);
         ctx.strokeRect(point.x - 18, point.y - 7, 36, 14);
-      }
-      ctx.globalAlpha = 1;
+	      }
+	      ctx.globalAlpha = 1;
+	    });
+    const manipulation = world.gamePrototypeMaterialManipulation;
+    const manipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.slice(-4) : [];
+    manipulationRows.forEach((row, index) => {
+      const component = materialWorld.components.find(item => item.component_id === row.component_id);
+      if (!component) return;
+      const point = project3D(component.position3d || {});
+      ctx.strokeStyle = row.success ? '#f0c35b' : '#b75d39';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(point.x, point.y - 18 - index * 4, 12 + index * 3, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = '#f9ebc9';
+      ctx.font = '11px Optima, sans-serif';
+      ctx.fillText(`${row.action} ${row.resident}`.slice(0, 22), point.x + 18, point.y - 18 - index * 4);
     });
-    const term = materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms[0] : null;
+	    const term = materialWorld.language && materialWorld.language.terms ? materialWorld.language.terms[0] : null;
     const latestPhysics = materialWorld.physics ? materialWorld.physics.latestStep : null;
     ctx.fillStyle = 'rgba(17,24,22,0.78)';
     ctx.fillRect(294, 210, 300, 58);
@@ -5978,7 +6362,7 @@ function draw() {
     const energy = needs ? needs.energy : resident.progress;
     const safety = needs ? needs.safety : resident.trust;
     const radius = 20 + Math.round(resident.trust * 10);
-    const expressionColor = expression.marker === 'boundary' ? '#b75d39' : expression.marker === 'tired' ? '#8aa1b1' : expression.marker === 'working' || expression.marker === 'maintaining' ? '#9fca77' : expression.marker === 'testing' ? '#d5a13a' : '#aad0c3';
+	    const expressionColor = expression.marker === 'boundary' ? '#b75d39' : expression.marker === 'tired' ? '#8aa1b1' : expression.marker === 'working' || expression.marker === 'maintaining' || expression.marker === 'handling' ? '#9fca77' : expression.marker === 'testing' ? '#d5a13a' : '#aad0c3';
     ctx.fillStyle = name === world.selected ? '#f0c35b' : (safety < 0.45 ? '#d98d69' : expressionColor);
     ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
     ctx.strokeStyle = '#111816'; ctx.lineWidth = 3; ctx.stroke();
@@ -5986,7 +6370,7 @@ function draw() {
       ctx.strokeStyle = '#b75d39';
       ctx.lineWidth = 4;
       ctx.beginPath(); ctx.moveTo(x - radius - 16, y - radius - 10); ctx.lineTo(x - radius - 4, y + radius + 12); ctx.stroke();
-	    } else if (expression.marker === 'working' || expression.marker === 'maintaining' || expression.marker === 'repairing') {
+	    } else if (expression.marker === 'working' || expression.marker === 'maintaining' || expression.marker === 'repairing' || expression.marker === 'handling') {
       ctx.fillStyle = '#5b4428';
       ctx.fillRect(x + radius - 3, y - 6, 26, 12);
     } else if (expression.marker === 'teaching') {
@@ -7803,6 +8187,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

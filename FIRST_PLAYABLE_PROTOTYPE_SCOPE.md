@@ -12,6 +12,7 @@
 - One or two emergent practice chains.
 - One Village Board.
 - One resident proposal/project loop.
+- One resident physical material-handling loop for carry, drop, stack, tie, dry, wet-test, and test actions.
 - One stochastic consequence and recovery loop.
 - One save/return loop.
 - One audit/replay mode.

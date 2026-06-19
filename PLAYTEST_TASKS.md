@@ -26,3 +26,5 @@
 17. Export acceptance and confirm the Acceptance receipt card reports pass/fail checks for visuals, save/return, autonomy, causality, practices, proposals, million-year survival, ordinary-play tests, readable behavior, QA, and game-build mode.
 
 18. Use the Player guide from a fresh or reset run and confirm it advances through arrival, pressure, ordinary play, board/proposal, autonomy, deep time, return proof, QA, acceptance, and watch/compare phases as state changes.
+
+19. Use Compare seeds and confirm the Seed divergence card shows multiple branches sharing one hidden-law seed while producing different local practice histories, statuses, or material burdens.

@@ -117,3 +117,8 @@ The shell now exports a browser-local `Game Prototype v0` acceptance receipt. Ex
 
 The prototype surface now includes a derived `Player guide` card. It reads the current state and suggests the next concrete action in the first playable loop: arrival, world pressure, ordinary play, village board, autonomy, deep time, return proof, QA, acceptance, or watch/compare. The guide is advisory only; it does not command residents or create scripted outcomes.
 
+
+## Prototype v0 seed-divergence update
+
+The prototype now includes a `Compare seeds` action and `Seed divergence` card. It holds the hidden material-law seed fixed while running multiple deterministic social/history branches, then compares local practice names, statuses, material burdens, safety rules, and risk profiles. The goal is to show divergent practice histories from the same law without a hidden tech tree or direct installation of a correct concept.
+

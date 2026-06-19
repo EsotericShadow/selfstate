@@ -147,3 +147,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. The suggestion updates after normal actions, resident autonomy, save/return, QA, or acceptance export.
 4. The guide remains advisory: it helps the player navigate the prototype without overriding resident autonomy.
 
+
+## Seed divergence loop
+
+1. Keep the hidden material-law seed fixed.
+2. Vary only social/history seeds that affect residents, pressures, materials, beliefs, and repeated tests.
+3. Generate branch-local practice histories after simulated observations and tests.
+4. Compare practice/status signatures to confirm divergence without modern naming or a deterministic tech tree.
+

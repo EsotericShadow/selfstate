@@ -47,10 +47,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -92,6 +92,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   prototypeClock: null,
   gamePrototypeSaves: null,
   gamePrototypeAcceptance: null,
+  gamePrototypeDivergence: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -2170,6 +2171,128 @@ function runFirstPlayablePrototypeLoop() {
   });
 }
 
+function chooseDivergenceStatus(observation, repeated, rng) {
+  if (/smoke|cracked/.test(observation.effect)) return repeated > 1 && rng() > 0.34 ? 'taboo' : 'disputed';
+  if (/dulled|nothing/.test(observation.effect)) return repeated > 2 ? 'safety rule' : 'disputed';
+  if (/jumped|carried|crawled/.test(observation.effect)) return repeated > 2 ? 'practical' : 'emerging';
+  return rng() > 0.66 ? 'ritualized' : 'emerging';
+}
+
+function simulateDivergentPracticeHistory(baseLawSeed, historySeed, branchIndex) {
+  const law = generateHiddenWorldLaw(baseLawSeed);
+  const rng = seededAnomalyRng(baseLawSeed * 37 + historySeed * 101 + branchIndex * 503);
+  const names = Object.keys(world.residents);
+  const materialSets = [
+    ['dry_resin', 'reed_fiber'],
+    ['red_scrap', 'dry_resin'],
+    ['wet_wood', 'dry_resin'],
+    ['iron_sand', 'red_scrap'],
+    ['clay_jar', 'reed_fiber'],
+    ['ash_glass', 'reed_fiber'],
+  ];
+  const pressureKinds = ['roof leak', 'strained fiber stores', 'unsafe route', 'wet storage problem', 'tool wear', 'food spoilage risk'];
+  const branch = {
+    branch_id: `GPD-${String(branchIndex + 1).padStart(2, '0')}`,
+    base_law_seed: baseLawSeed,
+    history_seed: historySeed,
+    hidden_law_shared: true,
+    avatar_installed_correct_concept: false,
+    tests: [],
+    practice_history: [],
+    safety_rules: [],
+    material_burdens: [],
+  };
+  const repeated = {};
+  for (let step = 0; step < 8; step += 1) {
+    const resident = names[(Math.floor(rng() * names.length) + step + branchIndex) % names.length];
+    const materials = materialSets[(Math.floor(rng() * materialSets.length) + step + branchIndex) % materialSets.length];
+    const observation = observationForMaterials(law, materials, resident, `divergent branch ${branch.branch_id}`);
+    const pressure = pressureKinds[(Math.floor(rng() * pressureKinds.length) + step) % pressureKinds.length];
+    const localBelief = `${residentAnomalyVocabulary(resident, rng)} ${pressure.split(' ')[0]}`;
+    const key = `${materials.join('+')}:${pressure}`;
+    repeated[key] = (repeated[key] || 0) + 1;
+    const status = chooseDivergenceStatus(observation, repeated[key], rng);
+    const practiceName = `${localBelief} ${status === 'safety rule' ? 'rule' : 'habit'}`;
+    const test = {
+      id: `${branch.branch_id}-T${String(step + 1).padStart(2, '0')}`,
+      resident,
+      pressure,
+      materials,
+      observation: observation.effect,
+      local_belief: localBelief,
+      repeated_count: repeated[key],
+      hidden_law_exposed: false,
+    };
+    branch.tests.push(test);
+    if (status === 'safety rule') branch.safety_rules.push(`${practiceName} from ${test.id}`);
+    if (status === 'taboo' || status === 'practical' || status === 'ritualized' || repeated[key] > 1) {
+      branch.practice_history.push({
+        practice_id: `${branch.branch_id}-P${String(branch.practice_history.length + 1).padStart(2, '0')}`,
+        local_name: practiceName,
+        status,
+        origin_resident: resident,
+        problem_pressure: pressure,
+        materials_used: materials,
+        evidence: [observation.effect],
+        maintenance_cost: materials.includes('iron_sand') || materials.includes('clay_jar') ? 2 : 1,
+        risk: /smoke|cracked|dulled/.test(observation.effect) ? 'caution' : 'ordinary',
+      });
+    }
+    if (materials.includes('iron_sand') || materials.includes('clay_jar')) {
+      branch.material_burdens.push(`${materials.join('+')} burden at ${test.id}`);
+    }
+  }
+  if (!branch.practice_history.length) {
+    const fallback = branch.tests[branch.tests.length - 1];
+    branch.practice_history.push({
+      practice_id: `${branch.branch_id}-P01`,
+      local_name: `${fallback.local_belief} watch habit`,
+      status: 'emerging',
+      origin_resident: fallback.resident,
+      problem_pressure: fallback.pressure,
+      materials_used: fallback.materials,
+      evidence: [fallback.observation],
+      maintenance_cost: 1,
+      risk: 'ordinary',
+    });
+  }
+  branch.practice_signature = branch.practice_history.map(row => `${row.local_name}:${row.status}`).join('|');
+  branch.status_signature = Array.from(new Set(branch.practice_history.map(row => row.status))).sort().join(',');
+  branch.material_signature = Array.from(new Set(branch.practice_history.flatMap(row => row.materials_used))).sort().join(',');
+  return branch;
+}
+
+function comparePrototypeDivergenceSeeds() {
+  ensureGamePrototype();
+  const baseLawSeed = world.anomalyDiscovery ? world.anomalyDiscovery.seed : anomalySeed();
+  const branches = [0, 1, 2].map(index => simulateDivergentPracticeHistory(baseLawSeed, baseLawSeed + 17 + index * 41 + world.tick, index));
+  const uniquePracticeSignatures = new Set(branches.map(row => row.practice_signature)).size;
+  const uniqueStatusSignatures = new Set(branches.map(row => row.status_signature)).size;
+  const allHiddenLawShared = branches.every(row => row.hidden_law_shared && row.base_law_seed === baseLawSeed);
+  const noCorrectConceptInstalled = branches.every(row => row.avatar_installed_correct_concept === false);
+  world.gamePrototypeDivergence = {
+    comparison_id: `GPD-CMP-${String((world.gamePrototypeDivergence ? world.gamePrototypeDivergence.runCount || 0 : 0) + 1).padStart(2, '0')}`,
+    runCount: (world.gamePrototypeDivergence ? world.gamePrototypeDivergence.runCount || 0 : 0) + 1,
+    base_law_seed: baseLawSeed,
+    branches,
+    unique_practice_signatures: uniquePracticeSignatures,
+    unique_status_signatures: uniqueStatusSignatures,
+    diverged: uniquePracticeSignatures > 1 || uniqueStatusSignatures > 1,
+    all_hidden_law_shared: allHiddenLawShared,
+    no_correct_concept_installed: noCorrectConceptInstalled,
+    boundary: 'browser-local seed comparison; same hidden law, different social/history seeds; no deterministic tech tree',
+  };
+  recordPrototypeMilestone('prototype-seed-divergence', `${branches.length} branches; diverged=${world.gamePrototypeDivergence.diverged}; base law ${baseLawSeed}`);
+  return log('comparePrototypeDivergenceSeeds', {
+    comparisonId: world.gamePrototypeDivergence.comparison_id,
+    branches: branches.length,
+    diverged: world.gamePrototypeDivergence.diverged,
+    uniquePracticeSignatures,
+    uniqueStatusSignatures,
+    baseLawSeed,
+  });
+}
+
 function deepTimeEntropyByte() {
   const bytes = new Uint8Array(1);
   if (window.crypto && window.crypto.getRandomValues) {
@@ -2831,6 +2954,7 @@ function formatPrototypePublicOutcomes() {
   const survivalStatus = deepTime && deepTime.civilizationState ? deepTime.civilizationState.status : 'not audited';
   const autonomous = world.autonomousResidents;
   const saves = world.gamePrototypeSaves;
+  const divergence = world.gamePrototypeDivergence;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
     `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
@@ -2839,6 +2963,7 @@ function formatPrototypePublicOutcomes() {
     `Deep time: ${deepTime ? `${deepTime.year} years / ${deepTime.emergentEffects.length} emergent effect(s) / ${consequenceCount} village consequence(s) / ${survivalStatus}` : 'not started'}`,
     `Autonomous residents: ${autonomous ? `${autonomous.day} day(s) / ${autonomous.actionLog.length} action(s) / ${autonomous.refusalLog.length} refusal(s)` : 'not started'}`,
     `Save slots: ${saves ? `${saves.slots.length} slot(s) / active ${saves.activeSlotId || 'none'} / returns ${saves.returnLog.length}` : 'none'}`,
+    `Seed divergence: ${divergence ? `${divergence.branches.length} branch(es), diverged=${divergence.diverged}, base law ${divergence.base_law_seed}` : 'not compared'}`,
     `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
 }
@@ -2878,6 +3003,9 @@ function derivePrototypePlayerGuide() {
   if (!world.gamePrototypeAcceptance || !world.gamePrototypeAcceptance.pass) {
     return { ...guide, phase: 'acceptance', nextAction: 'Export acceptance', why: 'produce durable JSON evidence for the current playable foundation', button: 'exportPrototypeAcceptanceReceipt' };
   }
+  if (!world.gamePrototypeDivergence || !world.gamePrototypeDivergence.diverged) {
+    return { ...guide, phase: 'seed comparison', nextAction: 'Compare seeds', why: 'check whether the same hidden law can produce different practice histories under different social/history seeds', button: 'comparePrototypeDivergenceSeeds' };
+  }
   return {
     phase: 'watch or compare',
     nextAction: 'Auto burst',
@@ -2899,6 +3027,7 @@ function formatPrototypePlayerGuide() {
     `Selected resident: ${world.selected}; cue=${selectedExpression.marker}; schedule=${currentResident().schedule}`,
     `Latest proposal: ${latestProposal ? `${latestProposal.proposal_id} / ${latestProposal.status} / ${latestProposal.problem_addressed}` : 'none'}`,
     `Latest practice: ${latestPractice ? `${latestPractice.practice_id} / ${latestPractice.status} / ${latestPractice.local_name}` : 'none'}`,
+    `Seed divergence: ${world.gamePrototypeDivergence ? `${world.gamePrototypeDivergence.branches.length} branch(es), diverged=${world.gamePrototypeDivergence.diverged}` : 'not compared'}`,
     `Caution: ${guide.caution}`,
   ].join('\n');
 }
@@ -2987,6 +3116,7 @@ function runPrototypeQASmoke() {
   runRealityConstraintAudit();
   askSchedule();
   askSchedule();
+  comparePrototypeDivergenceSeeds();
   saveWorld();
   const savedCounts = {
     autonomousActions: world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0,
@@ -2996,6 +3126,7 @@ function runPrototypeQASmoke() {
     ordinaryPlayFeed: world.practicalDiscovery && world.practicalDiscovery.ordinaryPlayFeed ? world.practicalDiscovery.ordinaryPlayFeed.length : 0,
     autoGeneratedTests: world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests ? world.practicalDiscovery.autoGeneratedTests.length : 0,
     visibleExpressions: world.autonomousResidents && world.autonomousResidents.expressionLedger ? world.autonomousResidents.expressionLedger.length : 0,
+    divergenceCompared: world.gamePrototypeDivergence ? world.gamePrototypeDivergence.diverged : false,
   };
   runAutonomousResidentTick();
   restoreWorld();
@@ -3007,6 +3138,7 @@ function runPrototypeQASmoke() {
     { id: 'ordinary-play-generates-tests', pass: Boolean(world.practicalDiscovery && world.practicalDiscovery.ordinaryPlayFeed && world.practicalDiscovery.ordinaryPlayFeed.length >= savedCounts.ordinaryPlayFeed && savedCounts.ordinaryPlayFeed > 0 && world.practicalDiscovery.autoGeneratedTests && world.practicalDiscovery.autoGeneratedTests.length >= savedCounts.autoGeneratedTests && savedCounts.autoGeneratedTests > 0), evidence: `${savedCounts.ordinaryPlayFeed} feed row(s), ${savedCounts.autoGeneratedTests} auto test(s)` },
     { id: 'visible-body-expression', pass: Boolean(world.autonomousResidents && world.autonomousResidents.expressionLedger && world.autonomousResidents.expressionLedger.length >= savedCounts.visibleExpressions && savedCounts.visibleExpressions > 0 && world.autonomousResidents.expressionLedger.every(row => row.publicCueOnly === true && row.hiddenStateExposed === false)), evidence: `${savedCounts.visibleExpressions} expression cue(s)` },
     { id: 'player-guide-available', pass: Boolean(derivePrototypePlayerGuide().nextAction && derivePrototypePlayerGuide().button), evidence: `${derivePrototypePlayerGuide().phase}: ${derivePrototypePlayerGuide().nextAction}` },
+    { id: 'seed-divergence', pass: Boolean(world.gamePrototypeDivergence && world.gamePrototypeDivergence.diverged && world.gamePrototypeDivergence.all_hidden_law_shared && world.gamePrototypeDivergence.no_correct_concept_installed), evidence: world.gamePrototypeDivergence ? `${world.gamePrototypeDivergence.branches.length} branch(es), unique practices=${world.gamePrototypeDivergence.unique_practice_signatures}` : 'not compared' },
     { id: 'village-proposals', pass: Boolean(world.villageBoard && world.villageBoard.projectProposals.length > 0), evidence: `${world.villageBoard ? world.villageBoard.projectProposals.length : 0} proposal(s)` },
     { id: 'deep-time-million-year', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.year >= 1000000), evidence: `${world.deepTimeCivilization ? world.deepTimeCivilization.year : 0} years` },
     { id: 'survival-audited', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.survivalLedger && world.deepTimeCivilization.survivalLedger.length > 0), evidence: world.deepTimeCivilization && world.deepTimeCivilization.civilizationState ? world.deepTimeCivilization.civilizationState.status : 'none' },
@@ -3239,6 +3371,7 @@ function buildPrototypeAcceptanceReceipt() {
   const ledger = world.realityConstraintLedger || null;
   const saves = world.gamePrototypeSaves || null;
   const guide = derivePrototypePlayerGuide();
+  const divergence = world.gamePrototypeDivergence || null;
   const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -3250,6 +3383,7 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'ordinary_play_can_seed_tests', pass: Boolean(world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests && world.practicalDiscovery.autoGeneratedTests.length > 0), evidence: world.practicalDiscovery ? `${world.practicalDiscovery.autoGeneratedTests.length} auto-generated test(s)` : 'no practical discovery' },
     { id: 'readable_public_behavior', pass: Boolean(autonomous && autonomous.expressionLedger && autonomous.expressionLedger.length > 0 && autonomous.expressionLedger.every(row => row.publicCueOnly === true && row.hiddenStateExposed === false)), evidence: autonomous && autonomous.expressionLedger ? `${autonomous.expressionLedger.length} expression cue(s)` : 'no expression ledger' },
     { id: 'player_guide_available', pass: Boolean(guide.nextAction && guide.button && guide.caution), evidence: `${guide.phase}: ${guide.nextAction}` },
+    { id: 'multi_seed_practice_divergence', pass: Boolean(divergence && divergence.diverged && divergence.all_hidden_law_shared && divergence.no_correct_concept_installed), evidence: divergence ? `${divergence.branches.length} branch(es), unique practices=${divergence.unique_practice_signatures}` : 'not compared' },
     { id: 'prototype_qa_passes', pass: Boolean(qa && qa.pass === true), evidence: qa ? `${qa.passed}/${qa.total} QA checks` : 'QA not run' },
     { id: 'research_arc_closed_mode', pass: Boolean(prototype.noMoreResearchReportsByDefault && prototype.mode === 'game-prototype-v0'), evidence: `${prototype.mode}, reports default=${prototype.noMoreResearchReportsByDefault ? 'off' : 'on'}` },
   ];
@@ -3346,6 +3480,23 @@ function formatPrototypeAcceptance() {
   ].join('\n');
 }
 
+function formatPrototypeDivergence() {
+  const comparison = world.gamePrototypeDivergence || null;
+  if (!comparison) return 'No seed comparison yet. Use Compare seeds after or during a prototype run.';
+  const branches = comparison.branches.map(branch => {
+    const practices = branch.practice_history.slice(0, 3).map(row => `${row.local_name}/${row.status}`).join('; ');
+    return `${branch.branch_id}: historySeed=${branch.history_seed}; practices=${branch.practice_history.length}; statuses=${branch.status_signature}; sample=${practices}`;
+  });
+  return [
+    `${comparison.comparison_id}: diverged=${comparison.diverged} / hidden law seed=${comparison.base_law_seed}`,
+    `Unique practice signatures: ${comparison.unique_practice_signatures}`,
+    `Unique status signatures: ${comparison.unique_status_signatures}`,
+    `Boundary: ${comparison.boundary}`,
+    'Branches:',
+    ...branches,
+  ].join('\n');
+}
+
 function renderGamePrototypeSurface() {
   const objectiveNode = document.getElementById('gamePrototypeObjectiveOut');
   const villageNode = document.getElementById('gamePrototypeVillageOut');
@@ -3359,6 +3510,7 @@ function renderGamePrototypeSurface() {
   const clockNode = document.getElementById('gamePrototypeClockOut');
   const saveNode = document.getElementById('gamePrototypeSaveOut');
   const acceptanceNode = document.getElementById('gamePrototypeAcceptanceOut');
+  const divergenceNode = document.getElementById('gamePrototypeDivergenceOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
@@ -3372,6 +3524,7 @@ function renderGamePrototypeSurface() {
   if (clockNode) clockNode.textContent = formatPrototypeClock();
   if (saveNode) saveNode.textContent = formatPrototypeSaves();
   if (acceptanceNode) acceptanceNode.textContent = formatPrototypeAcceptance();
+  if (divergenceNode) divergenceNode.textContent = formatPrototypeDivergence();
 }
 
 function bindControls() {
@@ -4011,6 +4164,7 @@ function describeReplayRow(row) {
     runPrototypePracticeChain: `prototype practice chain practices=${payload.practiceCount} proposals=${payload.proposalCount}`,
     runPrototypeReturnProof: `prototype return proof branches=${payload.branchRows} revivals=${payload.revivalRows}`,
     runFirstPlayablePrototypeLoop: `first playable prototype milestones=${payload.milestones} branches=${payload.branchContinuity}`,
+    comparePrototypeDivergenceSeeds: `seed comparison diverged=${payload.diverged === true} branches=${payload.branches} baseLaw=${payload.baseLawSeed}`,
     runCivilizationDeepTimeEpoch: `deep-time epoch +${payload.yearsAdvanced} years pressure=${payload.pressure} lineages=${payload.lineages}`,
     applyLatestDeepTimeEffectToVillage: `deep-time effect applied resident=${payload.resident} proposal=${payload.proposalId}`,
     runCivilizationMillionYearSim: `million-year sim year=${payload.year} epochs=${payload.epochs} effects=${payload.effects}`,
@@ -5380,6 +5534,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, runCivilizationDeepTimeEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

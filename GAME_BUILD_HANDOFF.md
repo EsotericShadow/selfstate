@@ -136,3 +136,8 @@ The prototype now includes a `Guide step` action. It reads the current Player gu
 ## Prototype v0 resident project update
 
 The prototype now includes a diegetic resident project progress loop. Accepted Village Board proposals can advance into material-consuming work, stall under scarcity or resident unreadiness, complete with a new maintenance burden, update resident memory, and write Reality Constraint Ledger rows. The avatar still supports conditions rather than assigning jobs: project rows explicitly record no direct command, consumed materials, time/work cost, stalls, completion, and who felt the consequence.
+
+
+## Prototype v0 resource commons support update
+
+The prototype now includes a `Support commons` loop for recovering low resources or stalled projects without a god-game resource grant. Commons support picks a shortage or low reserve, ties it to a named source such as well carry, reed bundles, fallen branch salvage, or shared care work, spends resident time/labor, updates memory, and writes a Reality Constraint Ledger row. If a source is capped or a resident is too tired, the action records a blocked support row instead of spawning resources.

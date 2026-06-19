@@ -180,3 +180,13 @@ The first playable loop includes a direct save/return pass: enter the village, l
 4. Work consumes commons resources, writes a causal ledger row, updates resident memory, and can refine related practice nodes.
 5. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
 6. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.
+
+
+## Resource commons support loop
+
+1. The shell detects a stalled project shortage or low commons reserve.
+2. The player supports conditions through a named source, such as well carry, reed bundles, fallen branch salvage, or shared care work.
+3. A resident spends time and labor; the resource increases only up to a local cap.
+4. If the source is capped or the resident is too tired, the support row is blocked rather than creating free resources.
+5. Resolved shortages can reopen stalled proposals, and every support or block writes Reality Constraint Ledger evidence.
+6. Save/return, QA, acceptance, and replay preserve commons support rows as part of the playable foundation.

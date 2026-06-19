@@ -257,3 +257,11 @@
 - Confirm the card shows proposal, resident, status, progress, construction id, resident term, linked practice, components added/repaired, stalls, and maintenance cost.
 - Confirm rows record no direct command, no hidden-law exposure, and no resource spawning.
 - Export acceptance and confirm `resident_worksite` appears as a requirement after the worksite loop runs.
+
+## Return journal playtests
+
+- Run `Journal` from the normal rail and confirm the `Return journal` card appears in Player mode.
+- Confirm the card shows before-save, after-away, and after-save-slot-return evidence.
+- Confirm forward return sessions are distinct from save-slot restoration.
+- Confirm remembered residents, days away, save slot, restored year/day, and resource totals are visible.
+- Export acceptance and confirm `return_journal` appears as a requirement after the journal loop runs.

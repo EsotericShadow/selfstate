@@ -285,3 +285,18 @@ Required evidence:
 - construction remains component-based, not fixed building assets
 
 This milestone makes project consequences visible as gameplay. The player watches and supports conditions; residents still perform the work.
+
+## Prototype v0 milestone: Return Journal
+
+`return_journal` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the normal rail exposes a Journal action
+- the journal records a before-save snapshot, an after-away snapshot, and an after-save-slot-return snapshot
+- forward return sessions remain distinct from save-slot restoration
+- the visible card shows days away, remembered residents, resource totals before/after/restore, save slot, restored year/day, and source history
+- the journal records no direct reset and no hidden-law exposure in normal view
+- return evidence is player-facing instead of buried in debug panels
+
+This milestone makes save/return and away-time continuity readable during play.

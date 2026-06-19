@@ -400,3 +400,11 @@ The browser shell now includes a `Worksite` normal rail action, `Worksite loop` 
 The loop preserves project autonomy. Work can stall on resident readiness or resource scarcity, consume materials, wear tools, repair simulated components, add component-built structure pieces, complete, or create future maintenance obligations. Acceptance evidence is recorded as `resident_worksite`.
 
 This moves the prototype toward a playable village-management loop without turning it into job assignment or a fixed building-placement game.
+
+## Game prototype v0 update: Return Journal
+
+The browser shell now includes a `Journal` normal rail action, `Return journal` prototype action, and `Return journal` player-mode card. The journal wraps existing forward return sessions and prototype save-slot restoration into one readable player surface.
+
+Each run records a before-save snapshot, an after-away snapshot, and an after-save-slot-return snapshot. The card shows days away, remembered residents, resource totals before/after/restore, active save slot, restored year/day, forward return id, and source-history boundary flags. Acceptance evidence is recorded as `return_journal`.
+
+This closes a major player-facing continuity gap: the prototype can now show what happened while the avatar was gone and what a saved return restored without conflating away-time persistence with rollback.

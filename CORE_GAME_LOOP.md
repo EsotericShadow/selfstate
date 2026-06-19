@@ -492,3 +492,17 @@ The first playable loop now has a player-facing worksite path:
 6. The avatar watches and supports conditions but does not assign jobs or spawn resources.
 
 This is the practical management bridge from proposals into visible physical world change.
+
+## Return journal loop
+
+The first playable loop now has a player-facing return journal:
+
+1. The player opens Journal from the normal rail.
+2. The prototype captures the current state into a save slot.
+3. The avatar leaves and returns after offscreen days.
+4. The journal records what changed during away time and who remembered the absence.
+5. The prototype returns to the saved slot and records what was restored.
+6. The Journal card separates forward continuity from rollback restoration.
+7. Hidden law remains audit-only and the normal view preserves source history.
+
+This loop makes persistence understandable as gameplay, not just a storage receipt.

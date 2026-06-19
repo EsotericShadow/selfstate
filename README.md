@@ -2244,3 +2244,7 @@ The browser shell now includes a player-facing lived practice loop. `Practice` r
 ## Game prototype v0 update: Resident Worksite
 
 The browser shell now includes a player-facing resident worksite loop. `Worksite` advances and watches resident project work through the existing project system, showing progress, stalls, material consequences, component repairs/additions, construction ids, resident terms, practice links, and maintenance burden while preserving no-direct-command, no-resource-spawning, and audit-only hidden-law boundaries.
+
+## Game prototype v0 update: Return Journal
+
+The browser shell now includes a player-facing return journal. `Journal` records before-save, after-away, and after-save-slot-return snapshots so Player mode can show what changed while the avatar was away and what a save-slot return restored. The journal keeps forward persistence separate from rollback restoration and preserves no-direct-reset and no-hidden-law-normal-view boundaries.

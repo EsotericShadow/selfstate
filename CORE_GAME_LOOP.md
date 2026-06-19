@@ -452,3 +452,17 @@ The prototype now has a normal player-facing mode:
 5. Entering or leaving Player mode records a receipt row but does not alter resident decisions, spawn resources, unlock technology, or expose hidden simulator law.
 
 This loop is an interface constraint, not a new simulation organ. It keeps the first playable path readable while preserving the audit split.
+
+## Resident proposal deck loop
+
+The normal player loop now includes a proposal deck:
+
+1. Residents post concerns and project proposals through the Village Board.
+2. The deck turns those resident proposals into readable player cards.
+3. The player can Ask, Support, or Wait.
+4. Ask records a council question without revealing hidden simulator law.
+5. Support offers conditions through the existing proposal system; residents may accept, consider, refuse, stall, or consume scarce resources.
+6. Wait lets resident schedules and willingness remain consequential.
+7. Every deck action records no direct command, no tech-tree unlock, and no hidden-law exposure in normal view.
+
+This is the diegetic management bridge: the player supports village conditions without assigning jobs.

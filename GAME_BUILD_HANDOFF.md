@@ -376,3 +376,11 @@ The browser shell now includes a `Player mode` toggle and `Player mode loop` mil
 While player mode is active, debug-heavy controls, subsystem action grids, QA manifest, deep traces, and hidden-law audit panels are hidden by default. They remain available by leaving player mode or using explicit audit/reviewer controls. The mode records `player_mode_interface` acceptance evidence without spawning resources, commanding residents, exposing hidden simulator law, or adding a tech-tree shortcut.
 
 This is game-build interface work, not a research report. The goal is to make the existing village prototype playable before adding more systems.
+
+## Game prototype v0 update: Resident Proposal Deck
+
+The browser shell now includes a `Proposals` rail action, `Proposal deck` prototype action, and `Resident proposal deck` player-mode card. The deck reads existing Village Board proposals and exposes them as player-facing cards with proposer, problem, materials, willingness/support, status, risk, objections, related practice nodes, and possible failure modes.
+
+Player deck actions are limited to Ask, Support, and Wait. They route through the existing Village Board functions, preserve resident autonomy, record causal ledger rows, and can still produce delay, refusal, resource cost, or stalled work. The acceptance gate is `resident_proposal_deck`.
+
+This moves the prototype closer to a real village-management loop while preserving the rule that the avatar influences conditions rather than commanding people.

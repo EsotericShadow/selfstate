@@ -233,3 +233,11 @@
 - Confirm Player mode records a session row with no direct resident command and no hidden-law exposure in normal view.
 - Leave Player mode and confirm audit/reviewer surfaces are still recoverable explicitly.
 - Export acceptance and confirm `player_mode_interface` appears as a requirement after the Player mode loop runs.
+
+## Resident proposal deck playtests
+
+- Run `Proposals` from the normal rail and confirm the `Resident proposal deck` card appears in Player mode.
+- Confirm proposal cards come from Village Board proposals, not fixed job assignments.
+- Confirm Ask, Support, and Wait create deck action rows with no direct command and no hidden-law exposure.
+- Confirm Support can consume scarce resources only through the resident proposal system.
+- Export acceptance and confirm `resident_proposal_deck` appears as a requirement after the proposal deck loop runs.

@@ -238,3 +238,19 @@ Required evidence:
 - player-visible labels remain glosses and player-language verbs, not resident omniscience or tech-tree terms
 
 This is the first interface narrowing milestone after the normal action rail. It does not add new world law; it makes the existing prototype playable from the normal surface.
+
+## Prototype v0 milestone: Resident Proposal Deck
+
+`resident_proposal_deck` is now part of first playable prototype scope.
+
+Required evidence:
+
+- proposal cards are derived from resident-generated Village Board proposals
+- each card shows proposer, problem, materials, willingness/support, status, risk, objections, and possible failure modes in player-facing language
+- the player can Ask, Support, or Wait from the deck
+- deck actions record no direct resident command
+- hidden simulator law remains out of normal view
+- support routes through the existing resident proposal system and may still be refused, delayed, stalled, or resource-constrained
+- no proposal card installs a technology concept or unlocks a tech tree
+
+This milestone turns resident proposals into a playable surface. It does not create a god-game task assignment panel.

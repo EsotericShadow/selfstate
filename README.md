@@ -2232,3 +2232,7 @@ The browser shell now includes a normal play rail: Look, Ask, Support, Wait, Ret
 ## Game prototype v0 update: Player Mode Interface
 
 The browser shell now includes a `Player mode` toggle and `Player mode loop`. Player mode foregrounds the canvas, resident cue, player guide, primary play surface, normal action rail, public outcomes, and player-mode receipt while hiding debug-heavy controls and deep audit panels by default. Audit access remains explicit and recoverable. This is game-build interface work, not a new research report.
+
+## Game prototype v0 update: Resident Proposal Deck
+
+The browser shell now includes a player-facing resident proposal deck. `Proposals` presents resident-generated Village Board proposals as cards and lets the player Ask, Support, or Wait without assigning jobs. Deck actions write acceptance and causal evidence while preserving resident autonomy, resource constraints, hidden-law separation, and the no-tech-tree boundary.

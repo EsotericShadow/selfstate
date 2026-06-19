@@ -6,6 +6,7 @@
 - Six residents maximum.
 - Small map around shelter, storage, work area, route, and board.
 - Physics-first 3D simulation state for physical components, materials, stochastic fields, support, collision/contact, heat/moisture, decay, energy/work proxies, and stochastic failure.
+- Terrain physics cells for height, slope, moisture, compaction, erosion, vegetation, walkability, support, drainage, body footing, and component support.
 - Deep-time stochastic physics epochs that mutate actual component mass, moisture, damage, stability, settlement, ruined traces, lineage pressure, and material flux evidence.
 - Simple primitive rendering of simulated objects.
 - Small resource set: water, fiber, wood, care, and one or two special materials.

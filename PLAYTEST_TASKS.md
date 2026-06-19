@@ -104,3 +104,15 @@
 56. Save after body physics rows exist, mutate the world, return the slot, and confirm Save / return preserves resident body step/contact/recovery counts.
 
 57. Export acceptance and confirm resident body physics is required as a physics-first gate separate from material handling.
+
+58. Use Terrain physics and confirm the Terrain physics card shows terrain cells with moisture, compaction, erosion, walkability, support capacity, and weak-cell pressure.
+
+59. Run Terrain loop and confirm flow rows, support rows, and resource pressure rows accumulate without resource spawning.
+
+60. Use End day or Auto burst and confirm terrain physics advances during ordinary play, not only through the manual Terrain button.
+
+61. Inspect the canvas after Terrain loop and confirm terrain cells are drawn behind residents/materials with weak or wet cells visibly marked.
+
+62. Save after terrain rows exist, mutate the world, return the slot, and confirm Save / return preserves terrain step/flow/support counts.
+
+63. Export acceptance and confirm terrain physics is required as a substrate gate before resident body physics and material handling can be considered complete.

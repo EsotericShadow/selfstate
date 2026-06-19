@@ -268,6 +268,16 @@ The first playable loop includes a direct save/return pass: enter the village, l
 7. Deep time carries physical heritage forward so lineages survive or fail partly through component stability and damage.
 8. QA, acceptance, save/return, material-world view, deep-time view, and the Reality Constraint Ledger all preserve the physical trace.
 
+## Terrain physics loop
+
+1. The village ground is divided into terrain cells with height, slope, moisture, compaction, erosion, vegetation, walkability, support capacity, and drainage.
+2. Weather, neighbor moisture, slope drainage, resident body pressure, and component mass update the cells stochastically.
+3. Terrain cells feed resident body footing, slip risk, movement cost, and recovery pressure.
+4. Terrain support affects component stability and damage when the ground is wet, eroded, or weak.
+5. Terrain resource pressure can change water, fiber, or care only through named weather/erosion causes.
+6. End day and auto sim advance terrain physics as part of ordinary time passage.
+7. QA, acceptance, save/return, terrain view, canvas overlay, replay, and the Reality Constraint Ledger preserve terrain evidence.
+
 
 ## Resident material manipulation loop
 

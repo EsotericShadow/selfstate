@@ -223,3 +223,11 @@ Residents now have physical bodies in the prototype shell. Each resident carries
 Autonomous actions and the `Body physics` controls move residents through physical targets such as shelter rest, work yard project space, storage practice, route markers, commons paths, and teaching areas. Movement is affected by terrain moisture, field stress, friction, load, fatigue, body contact, component contact, and stochastic slip risk. Slips and overloads create bounded recovery rows instead of permanent punishment.
 
 The canvas now draws residents from body positions when initialized, and QA, acceptance, save/return, replay, and the Reality Constraint Ledger preserve body physics rows. This moves residents closer to embodied simulation: action choices must be paid for by bodies moving through a physical world.
+
+## Prototype v0 terrain physics update
+
+The village ground is now part of the simulation substrate. The shell adds terrain cells with height, slope, moisture, compaction, erosion, vegetation, walkability, support capacity, and drainage. Terrain changes from weather, neighbor moisture flow, resident body pressure, and component mass.
+
+Terrain affects both residents and structures. Resident bodies read cell walkability as footing and slip pressure; components lose stability or gain damage when the ground below them becomes weak or wet. `Terrain physics` and `Terrain loop` expose this directly, while `End day` and auto sim advance terrain as part of ordinary time passage.
+
+The canvas now overlays terrain cells, and save/return, QA, acceptance, replay, and the Reality Constraint Ledger preserve terrain rows. This makes the world less like a background map and more like a physical place residents must cross, maintain, avoid, and remember.

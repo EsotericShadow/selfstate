@@ -122,3 +122,18 @@ Residents should not be weightless action labels. When a resident moves, works, 
 - Hidden-law audit separation from resident normal view.
 
 This keeps resident motion grounded in physics. Body language should be visible expression of position, effort, load, footing, and safety pressure, not a detached animation toggle.
+
+## Terrain physics ledger rows
+
+The ground should be simulated, not just painted. Terrain ledger rows should preserve:
+
+- Terrain step ID and source.
+- Cell moisture, slope, drainage, compaction, erosion, vegetation, walkability, support capacity, and height.
+- Weather input, evaporation, neighbor moisture flow, body pressure, and component pressure.
+- Which cells became weak, wet, hard to walk, or structurally poor.
+- Resource pressure caused by weather or terrain, not resource spawning.
+- Component stability or damage changes caused by weak/wet ground.
+- Resident body footing and slip-risk changes caused by terrain.
+- Hidden-law audit separation from resident normal view.
+
+This lets routes, work yards, storage ground, and shelter ground become physical conditions that residents can adapt to, repair, avoid, ritualize, or misunderstand.

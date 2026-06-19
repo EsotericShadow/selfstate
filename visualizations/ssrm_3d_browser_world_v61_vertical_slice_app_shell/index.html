@@ -116,6 +116,32 @@
       </aside>
     </section>
 
+    <section class="game-prototype" aria-label="first playable prototype surface">
+      <article class="prototype-card prototype-hero-card">
+        <p class="eyebrow">Game Prototype v0</p>
+        <h2>One village, six residents, one living loop.</h2>
+        <p id="gamePrototypeObjectiveOut"></p>
+        <div class="prototype-actions" role="group" aria-label="first playable prototype actions">
+          <button data-action="runPrototypeOpening">Opening loop</button>
+          <button data-action="runPrototypePracticeChain">Practice + proposal</button>
+          <button data-action="runPrototypeReturnProof">Save / return proof</button>
+          <button data-action="runFirstPlayablePrototypeLoop">Run first playable loop</button>
+        </div>
+      </article>
+      <article class="prototype-card">
+        <h3>Village state</h3>
+        <pre id="gamePrototypeVillageOut"></pre>
+      </article>
+      <article class="prototype-card">
+        <h3>Public outcomes</h3>
+        <pre id="gamePrototypePublicOut"></pre>
+      </article>
+      <article class="prototype-card">
+        <h3>Prototype loop receipt</h3>
+        <pre id="gamePrototypeLoopOut"></pre>
+      </article>
+    </section>
+
     <section class="trace-grid">
       <article class="panel reviewer-landing"><h2>Reviewer landing</h2><div class="reviewer-actions"><button data-action="runReviewerLandingPass">Run reviewer pass</button><button data-action="auditLandingFailures">Audit failures</button><button data-action="toggleDeepPanels">Toggle deep panels</button><a id="returnLauncherHandoffLink" class="handoff-return" href="../ssrm_3d_browser_world_primary_demo/index.html#outsideReviewChecklist">Return to launcher handoff</a></div><pre id="reviewerLandingOut"></pre></article>
       <article class="panel deep-panel"><h2>Trace</h2><pre id="traceOut"></pre></article>

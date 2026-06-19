@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -83,6 +83,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   realityConstraintLedger: null,
   avatarHintDivergence: null,
   hintBranchPersistence: null,
+  gamePrototype: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -2065,6 +2066,143 @@ function runPlaytestChecklist() {
 }
 function runAllQAHooks() { runStateBoundaryAudit(); runSaveRestoreSmoke(); runAuditAfterRollbackCheck(); runPlaytestChecklist(); return log('runAllQAHooks', { hooks: qaManifest.directHooks.length }); }
 
+function ensureGamePrototype() {
+  if (!world.gamePrototype) {
+    world.gamePrototype = {
+      mode: 'game-prototype-v0',
+      objective: 'Enter the village, learn a resident concern, support without commanding, observe practice formation, save, return, and see history still matter.',
+      milestones: [],
+      lastLoop: null,
+      noMoreResearchReportsByDefault: true,
+      scope: {
+        village: 'one village',
+        residentsMaximum: 6,
+        anomalyFamilies: 1,
+        practiceChains: 'one or two',
+        interfaceGoal: 'normal player-facing interface plus optional audit mode',
+      },
+    };
+  }
+  return world.gamePrototype;
+}
+
+function recordPrototypeMilestone(step, detail) {
+  const prototype = ensureGamePrototype();
+  prototype.milestones.push({
+    step,
+    detail,
+    tick: world.tick,
+    replayRows: world.replay.length,
+    selected: world.selected,
+    room: world.avatar.room,
+  });
+  prototype.lastLoop = step;
+  return prototype;
+}
+
+function runPrototypeOpening() {
+  ensureGamePrototype();
+  enterWorld();
+  askSchedule();
+  talkBounded();
+  recordPrototypeMilestone('opening', `${world.selected} visible in ${world.avatar.room}; schedule ${currentResident().schedule}; memory ${currentResident().memory}`);
+  return log('runPrototypeOpening', { entered: world.entered, selected: world.selected, schedule: currentResident().schedule, milestones: world.gamePrototype.milestones.length });
+}
+
+function runPrototypePracticeChain() {
+  ensureGamePrototype();
+  runPracticalDiscoveryLoop();
+  runVillageBoardLoop();
+  supportVillageProposal();
+  runRealityConstraintAudit();
+  const practiceCount = world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0;
+  const proposalCount = world.villageBoard ? world.villageBoard.projectProposals.length : 0;
+  recordPrototypeMilestone('practice-and-proposal', `${practiceCount} practice node(s), ${proposalCount} proposal(s), avatar support remains non-commanding`);
+  return log('runPrototypePracticeChain', { practiceCount, proposalCount, realityRows: world.realityConstraintLedger ? world.realityConstraintLedger.rows.length : 0 });
+}
+
+function runPrototypeReturnProof() {
+  ensureGamePrototype();
+  saveWorld();
+  waitOffscreen();
+  enterWorld();
+  runAvatarHintDivergenceLoop();
+  runHintBranchPersistenceLoop();
+  saveWorld();
+  const branchRows = world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0;
+  const revivalRows = world.hintBranchPersistence ? world.hintBranchPersistence.revivalEvents.length : 0;
+  recordPrototypeMilestone('save-return-history', `${branchRows} branch continuity row(s), ${revivalRows} revival row(s), saved after return`);
+  return log('runPrototypeReturnProof', { branchRows, revivalRows, saved: true, entered: world.entered });
+}
+
+function runFirstPlayablePrototypeLoop() {
+  ensureGamePrototype();
+  runPrototypeOpening();
+  runPrototypePracticeChain();
+  runPrototypeReturnProof();
+  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, audit, save, return, and branch persistence executed from one game surface');
+  return log('runFirstPlayablePrototypeLoop', {
+    milestones: world.gamePrototype.milestones.length,
+    practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
+    proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
+    branchContinuity: world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0,
+  });
+}
+
+function formatPrototypeVillageState() {
+  const residentLines = Object.entries(world.residents)
+    .slice(0, 6)
+    .map(([name, row]) => `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; memory=${row.memory}`);
+  const resources = Object.entries(world.resources).map(([key, value]) => `${key}=${value}`).join(', ');
+  return [
+    `Entered: ${world.entered ? 'yes' : 'no'} / room: ${world.avatar.room} / selected: ${world.selected}`,
+    `Resources: ${resources}`,
+    'Residents:',
+    ...residentLines,
+  ].join('\n');
+}
+
+function formatPrototypePublicOutcomes() {
+  const practiceCount = world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0;
+  const latestPractice = practiceCount ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
+  const boardCount = world.villageBoard ? world.villageBoard.projectProposals.length : 0;
+  const latestProposal = boardCount ? world.villageBoard.projectProposals[world.villageBoard.projectProposals.length - 1] : null;
+  const ledgerRows = world.realityConstraintLedger ? world.realityConstraintLedger.rows.length : 0;
+  const branchRows = world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0;
+  const latestBranch = branchRows ? world.hintBranchPersistence.continuityRows[world.hintBranchPersistence.continuityRows.length - 1] : null;
+  return [
+    `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
+    `Village board: ${boardCount} proposal(s)${latestProposal ? ` / latest ${latestProposal.problem_addressed || latestProposal.proposal_id}` : ''}`,
+    `Reality ledger: ${ledgerRows} causal row(s)`,
+    `Return branches: ${branchRows} continuity row(s)${latestBranch ? ` / latest ${latestBranch.return_status}` : ''}`,
+    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
+  ].join('\n');
+}
+
+function formatPrototypeLoopReceipt() {
+  const prototype = world.gamePrototype || ensureGamePrototype();
+  const milestones = prototype.milestones.slice(-8).map(row => `${row.step}: ${row.detail} [room=${row.room}, replay=${row.replayRows}]`);
+  return [
+    `Mode: ${prototype.mode}`,
+    `No more research reports by default: ${prototype.noMoreResearchReportsByDefault ? 'yes' : 'no'}`,
+    `Last loop: ${prototype.lastLoop || 'not started'}`,
+    'Milestones:',
+    ...(milestones.length ? milestones : ['none yet']),
+  ].join('\n');
+}
+
+function renderGamePrototypeSurface() {
+  const objectiveNode = document.getElementById('gamePrototypeObjectiveOut');
+  const villageNode = document.getElementById('gamePrototypeVillageOut');
+  const publicNode = document.getElementById('gamePrototypePublicOut');
+  const loopNode = document.getElementById('gamePrototypeLoopOut');
+  const prototype = world.gamePrototype || ensureGamePrototype();
+  if (objectiveNode) objectiveNode.textContent = prototype.objective;
+  if (villageNode) villageNode.textContent = formatPrototypeVillageState();
+  if (publicNode) publicNode.textContent = formatPrototypePublicOutcomes();
+  if (loopNode) loopNode.textContent = formatPrototypeLoopReceipt();
+}
+
 function bindControls() {
   document.querySelectorAll('[data-action]').forEach(button => {
     button.addEventListener('click', () => {
@@ -2698,6 +2836,10 @@ function describeReplayRow(row) {
     maintainHintBranchPractice: `maintained hint branch ${payload.branchId} cost=${payload.maintenanceCost}`,
     reviveForgottenHintPractice: `revived hint branch ${payload.branchId} success=${payload.revived === true}`,
     runHintBranchPersistenceLoop: `hint branch persistence sessions=${payload.sessions} continuity=${payload.continuityRows}`,
+    runPrototypeOpening: `prototype opening selected=${payload.selected} entered=${payload.entered}`,
+    runPrototypePracticeChain: `prototype practice chain practices=${payload.practiceCount} proposals=${payload.proposalCount}`,
+    runPrototypeReturnProof: `prototype return proof branches=${payload.branchRows} revivals=${payload.revivalRows}`,
+    runFirstPlayablePrototypeLoop: `first playable prototype milestones=${payload.milestones} branches=${payload.branchContinuity}`,
     supportVillageProposal: `supported village proposal ${payload.proposalId} accepted=${payload.accepted}`,
     askVillageBoardQuestion: `asked village board question ${payload.proposalId}`,
     waitOnVillageBoard: `waited on village board proposals=${payload.proposals}`,
@@ -2754,6 +2896,7 @@ function render() {
   document.getElementById('observationTriageOut').textContent = formatObservationTriage();
   document.getElementById('taskList').innerHTML = playtestTasks.map(task => `<li><strong>${task.id}</strong>: ${task.title}<br><span>${task.expected}</span></li>`).join('');
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
+  renderGamePrototypeSurface();
   renderStochasticConsequencePulse();
   renderStochasticRecoveryLoop();
   renderStochasticHistoryInfluence();
@@ -3877,6 +4020,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

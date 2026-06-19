@@ -55,6 +55,10 @@ This is not a finished game. It is the foundation for building one.
 6. Make save/restore and return-session persistence part of the first playable loop.
 7. Only add mechanics that improve the first village prototype.
 
+## Prototype branch
+
+The first game-build branch is `game-prototype-v0`. It starts from the `research-arc-closed-v373` tag and adds a `Game Prototype v0` surface to the maintained shell. That surface is the intended starting point for the first playable loop: opening, practice/proposal, save-return proof, and public outcome summaries.
+
 ## Research arc closure rule
 
 The current research/report arc is complete after the terminal closure report. Future work should be game/app implementation work unless the user explicitly requests another research report.

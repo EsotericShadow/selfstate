@@ -80,6 +80,7 @@
 2. Restore without erasing branch history.
 3. Return sessions show what residents still carry.
 4. Practices can persist, burden, be forgotten, or revive.
+5. Lived-action physics row counts and latest physics IDs persist so ordinary-action material consequences survive return.
 
 ## Deep-time civilization loop
 
@@ -506,6 +507,7 @@ The first playable loop now has a player-facing return journal:
 5. The prototype returns to the saved slot and records what was restored.
 6. The Journal card separates forward continuity from rollback restoration.
 7. Hidden law remains audit-only and the normal view preserves source history.
+8. Lived-action physics counts are shown before save, after away time, and after restore.
 
 This loop makes persistence understandable as gameplay, not just a storage receipt.
 
@@ -526,6 +528,8 @@ The shell now has one player-facing session loop:
 11. Return after away time.
 
 Each step records a session row and snapshot. The loop does not add world law; it sequences the existing systems into one playable proof that the player can move from observation to proposals, practice, work, continuity, save, and return without using debug-only subsystem panels.
+
+The session rows also preserve lived-action physics continuity. The Practice step creates the rows; later Journal, Save, and Return steps must keep those counts and latest physics IDs visible.
 
 ## Player movement route loop
 

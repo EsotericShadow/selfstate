@@ -266,6 +266,7 @@ Required evidence:
 - lived-practice rows trace back to ordinary pressure feed, movement, or object-interaction evidence
 - lived-practice actions apply bounded physical deltas to real 3D components
 - physics rows record no resource spawning, material conservation, work/time/tool burden, and hidden-law separation
+- save/return and first-playable session receipts preserve lived-action physics row counts and latest physics IDs
 - the visible card shows local practice name, status, materials, observations, failed ancestors, adoption count, and maintenance burden
 - actions remain player-language actions, not subsystem-only buttons
 - the avatar does not directly command residents
@@ -313,6 +314,7 @@ Required evidence:
 - the normal rail exposes a Session action
 - the prototype action grid exposes Play session
 - the session runs Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
+- lived-action physics rows remain visible through Journal, Save, and Return steps
 
 ## Prototype v0 milestone: Player Movement Route
 

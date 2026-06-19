@@ -249,6 +249,7 @@
 - Confirm lived-practice rows show ordinary feed, component, movement, or object-interaction evidence rather than an isolated report-only receipt.
 - Confirm lived-practice rows include physics row IDs with component moisture/damage/stability/stress deltas.
 - Confirm the Reality Constraint Ledger includes `lived_action_physics_causality` rows with no resource spawning and conservation checks.
+- Save and return after the practice loop, then confirm the Save / return card preserves lived-action physics counts and latest physics ID.
 - Confirm the card shows a local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost.
 - Confirm rows record no direct command, no hidden-law exposure, no tech-tree unlock, and no correct concept installation.
 - Export acceptance and confirm `lived_practice_loop` appears as a requirement after the practice loop runs.
@@ -267,12 +268,14 @@
 - Confirm the card shows before-save, after-away, and after-save-slot-return evidence.
 - Confirm forward return sessions are distinct from save-slot restoration.
 - Confirm remembered residents, days away, save slot, restored year/day, and resource totals are visible.
+- Confirm lived-action physics counts are visible before save, after away time, and after save-slot restoration.
 - Export acceptance and confirm `return_journal` appears as a requirement after the journal loop runs.
 
 ## First playable session playtests
 
 - Run `Session` from the normal rail and confirm the `Play session receipt` card appears in Player mode.
 - Confirm the receipt records Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return steps.
+- Confirm the receipt preserves lived-action physics counts and latest physics ID after Practice, Journal, Save, and Return.
 
 ## Player movement route playtests
 

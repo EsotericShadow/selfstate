@@ -392,7 +392,7 @@ This moves the prototype closer to a real village-management loop while preservi
 
 The browser shell now includes a `Practice` normal rail action, `Practice loop` prototype action, and `Lived practice loop` player-mode card. The loop now uses ordinary Move, Objects, Support, and Wait actions, routes them through practical discovery, records source ordinary-pressure feed rows, applies bounded physical deltas to real 3D components, and surfaces the resulting emergent practice as a normal gameplay object.
 
-The card shows local practice name, status, materials, supporting observations, failed ancestors, adoption count, maintenance cost, ordinary feed count, and physics rows. Acceptance evidence is recorded as `lived_practice_loop`. The loop preserves the no-command, no-hidden-law-normal-view, no-correct-concept-installed, no-resource-spawning, conservation, and no-predeclared-tech-tree boundaries.
+The card shows local practice name, status, materials, supporting observations, failed ancestors, adoption count, maintenance cost, ordinary feed count, and physics rows. Save slots, return logs, return journal rows, and first-playable session rows now preserve the lived-action physics count and latest physics ID. Acceptance evidence is recorded as `lived_practice_loop`. The loop preserves the no-command, no-hidden-law-normal-view, no-correct-concept-installed, no-resource-spawning, conservation, and no-predeclared-tech-tree boundaries.
 
 This is a key game-foundation step: practice formation is now visible from normal play instead of existing only as a debug panel or research receipt.
 
@@ -408,13 +408,13 @@ This moves the prototype toward a playable village-management loop without turni
 
 The browser shell now includes a `Journal` normal rail action, `Return journal` prototype action, and `Return journal` player-mode card. The journal wraps existing forward return sessions and prototype save-slot restoration into one readable player surface.
 
-Each run records a before-save snapshot, an after-away snapshot, and an after-save-slot-return snapshot. The card shows days away, remembered residents, resource totals before/after/restore, active save slot, restored year/day, forward return id, and source-history boundary flags. Acceptance evidence is recorded as `return_journal`.
+Each run records a before-save snapshot, an after-away snapshot, and an after-save-slot-return snapshot. The card shows days away, remembered residents, resource totals before/after/restore, active save slot, restored year/day, forward return id, lived-action physics rows before/after/restore, and source-history boundary flags. Acceptance evidence is recorded as `return_journal`.
 
 This closes a major player-facing continuity gap: the prototype can now show what happened while the avatar was gone and what a saved return restored without conflating away-time persistence with rollback.
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Move, Talk, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return.
+The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Move, Talk, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return. It also records lived-action physics continuity for the session steps.
 
 ## Game prototype v0 update: Player Movement Route
 

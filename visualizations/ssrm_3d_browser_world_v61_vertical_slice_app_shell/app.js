@@ -5250,6 +5250,8 @@ function latestWalkthroughEvidence() {
   const slice = world.gamePrototypePlayableSlice || null;
   const materialWorld = world.gamePrototype3DWorld || null;
   const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
+  const livedPractice = world.gamePrototypeLivedPractice || null;
+  const livedPhysics = livedPractice && livedPractice.physicsLedger && livedPractice.physicsLedger.length ? livedPractice.physicsLedger[livedPractice.physicsLedger.length - 1] : null;
   return {
     room: world.avatar.room,
     entered: world.entered === true,
@@ -5263,6 +5265,7 @@ function latestWalkthroughEvidence() {
     slice_ready: slice ? slice.acceptanceReady === true : false,
     component_id: materialWorld && materialWorld.components && materialWorld.components.length ? materialWorld.components[materialWorld.components.length - 1].component_id : 'none',
     physics_id: physics && physics.latestStep ? physics.latestStep.step_id : (physics && physics.latestMaterialStateStep ? physics.latestMaterialStateStep.step_id : 'none'),
+    lived_practice_physics_id: livedPhysics ? livedPhysics.physics_id : 'none',
     save_slot_id: saves && saves.slots && saves.slots.length ? saves.slots[saves.slots.length - 1].slot_id : 'none',
     return_id: returnLater && returnLater.returnLedger && returnLater.returnLedger.length ? returnLater.returnLedger[returnLater.returnLedger.length - 1].return_id : 'none',
     acceptance_pass: world.gamePrototypeAcceptance ? world.gamePrototypeAcceptance.pass === true : false,
@@ -6601,6 +6604,8 @@ function returnJournalSnapshot(label) {
     practice_nodes: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
     proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
     worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
+    lived_practice_physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
+    latest_lived_practice_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
     save_slots: saves.slots.length,
     active_slot: saves.activeSlotId || 'none',
     latest_slot: latestSlot ? latestSlot.slot_id : 'none',
@@ -6613,6 +6618,7 @@ function returnJournalSnapshot(label) {
     latest_restore_slot: latestRestore ? latestRestore.slot_id : 'none',
     latest_restore_year: latestRestore ? latestRestore.restored_year : 'none',
     latest_restore_day: latestRestore ? latestRestore.restored_autonomous_day : 'none',
+    latest_slot_lived_practice_physics_rows: latestSlot ? Number(latestSlot.lived_practice_physics_rows || 0) : 0,
     no_direct_reset: true,
     hidden_law_normal_view: false,
   };
@@ -6701,6 +6707,10 @@ function runReturnJournalLoop() {
     resource_total_after_restore: afterRestore.resource_total,
     practices_before: before.practice_nodes,
     practices_after_away: afterAway.practice_nodes,
+    lived_practice_physics_before: before.lived_practice_physics_rows,
+    lived_practice_physics_after_away: afterAway.lived_practice_physics_rows,
+    lived_practice_physics_after_restore: afterRestore.lived_practice_physics_rows,
+    latest_lived_practice_physics_id: afterRestore.latest_lived_practice_physics_id,
     worksite_rows_before: before.worksite_rows,
     worksite_rows_after_away: afterAway.worksite_rows,
     restore_slot: afterRestore.latest_restore_slot,
@@ -6716,10 +6726,10 @@ function runReturnJournalLoop() {
   recordRealityConstraint('return_journal', {
     resident: world.selected,
     sourceBeliefId: row.journal_id,
-    materials: ['saved_state', 'away_time', 'resident_memory'],
+    materials: ['saved_state', 'away_time', 'resident_memory', 'lived_practice_physics'],
     publicObservation: `away ${row.days_away} day(s), restored ${row.restore_slot}`,
-    residentInterpretation: `${row.remembered_residents.length} resident(s) remembered the absence`,
-    materialTransformation: 'return journal recorded continuity evidence only; no material resource spawned',
+    residentInterpretation: `${row.remembered_residents.length} resident(s) remembered the absence; lived physics rows ${row.lived_practice_physics_before}->${row.lived_practice_physics_after_restore}`,
+    materialTransformation: 'return journal recorded continuity and lived-action physics evidence only; no material resource spawned',
     timeCost: row.days_away,
     workCost: 0,
     toolWear: 0,
@@ -6742,7 +6752,7 @@ function runReturnJournalLoop() {
 function formatReturnJournal() {
   const journal = world.gamePrototypeReturnJournal || ensureReturnJournal();
   const latest = journal.snapshotLedger.length ? journal.snapshotLedger[journal.snapshotLedger.length - 1].snapshot : returnJournalSnapshot('current');
-  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}`);
+  const rows = journal.journalLedger.slice(-6).map(row => `${row.journal_id}: forward=${row.forward_return_id} away=${row.days_away}d remembered=${row.remembered_residents.join('+') || 'none'} restored=${row.restore_slot}; resources ${row.resource_total_before}->${row.resource_total_after_away}->${row.resource_total_after_restore}; livedPhysics ${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after_restore || 0}`);
   return [
     `Acceptance ready: ${journal.acceptanceReady ? 'yes' : 'no'}`,
     `Rows: ${journal.journalLedger.length} / snapshots=${journal.snapshotLedger.length}`,
@@ -6750,6 +6760,7 @@ function formatReturnJournal() {
     `Forward returns: ${latest.forward_returns}; latest=${latest.latest_forward_return}; restoredOld=${latest.latest_forward_restored_old_state}`,
     `Save slots: ${latest.save_slots}; active=${latest.active_slot}; save returns=${latest.save_returns}`,
     `Latest restore: slot=${latest.latest_restore_slot}; year=${latest.latest_restore_year}; day=${latest.latest_restore_day}`,
+    `Lived physics rows: current=${latest.lived_practice_physics_rows || 0}; slot=${latest.latest_slot_lived_practice_physics_rows || 0}; latest=${latest.latest_lived_practice_physics_id || 'none'}`,
     `Remembered residents: ${latest.latest_forward_remembered.join(', ') || 'none'}`,
     `No direct reset in normal view: ${journal.noDirectReset ? 'yes' : 'no'}`,
     'Recent return journal rows:',
@@ -7326,6 +7337,9 @@ function firstPlayableSessionSnapshot(label) {
     resident_encounter_ready: world.gamePrototypeResidentEncounter ? world.gamePrototypeResidentEncounter.acceptanceReady === true : false,
     proposal_deck_ready: world.gamePrototypeProposalDeck ? world.gamePrototypeProposalDeck.acceptanceReady === true : false,
     lived_practice_ready: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.acceptanceReady === true : false,
+    lived_practice_physical_causality_ready: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.physicalCausalityReady === true : false,
+    lived_practice_physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
+    latest_lived_practice_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
     worksite_ready: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     return_journal_ready: world.gamePrototypeReturnJournal ? world.gamePrototypeReturnJournal.acceptanceReady === true : false,
     save_slots: saves ? saves.slots.length : 0,
@@ -7357,6 +7371,8 @@ function updateFirstPlayableSessionAcceptance() {
     world.gamePrototypeResidentEncounter && world.gamePrototypeResidentEncounter.acceptanceReady === true &&
     world.gamePrototypeProposalDeck && world.gamePrototypeProposalDeck.acceptanceReady === true &&
     world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.acceptanceReady === true &&
+    world.gamePrototypeLivedPractice.physicalCausalityReady === true &&
+    world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length > 0 &&
     world.gamePrototypeWorksite && world.gamePrototypeWorksite.acceptanceReady === true &&
     world.gamePrototypeReturnJournal && world.gamePrototypeReturnJournal.acceptanceReady === true &&
     world.gamePrototypeSaves && world.gamePrototypeSaves.slots.length > 0 &&
@@ -7371,6 +7387,8 @@ function updateFirstPlayableSessionAcceptance() {
     snapshots: session.snapshotLedger.length,
     required_steps: session.requiredSteps.length,
     completed_steps: Array.from(completed),
+    lived_practice_physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
+    latest_lived_practice_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
     boundary: session.boundary,
   };
   return session.acceptanceReady;
@@ -7389,6 +7407,9 @@ function recordFirstPlayableSessionStep(stepId, actionLabel, actionFn) {
     tick: world.tick,
     before,
     after,
+    lived_practice_physics_before: before.lived_practice_physics_rows || 0,
+    lived_practice_physics_after: after.lived_practice_physics_rows || 0,
+    latest_lived_practice_physics_id: after.latest_lived_practice_physics_id || 'none',
     player_facing: true,
     avatar_direct_command: false,
     hidden_law_normal_view: false,
@@ -7436,13 +7457,14 @@ function runFirstPlayableSessionLoop() {
 function formatFirstPlayableSession() {
   const session = world.gamePrototypePlaySession || ensureFirstPlayableSession();
   const latest = session.snapshotLedger.length ? session.snapshotLedger[session.snapshotLedger.length - 1].snapshot : firstPlayableSessionSnapshot('current');
-  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}`);
+  const steps = session.stepLedger.slice(-8).map(row => `${row.step_id}: ${row.action_label}; event=${row.result_event}; room=${row.after.room}; proposal=${row.after.latest_proposal}; practice=${row.after.latest_practice}; livedPhysics=${row.lived_practice_physics_before || 0}->${row.lived_practice_physics_after || 0}`);
   return [
     `Acceptance ready: ${session.acceptanceReady ? 'yes' : 'no'}`,
     `Runs: ${session.runCount} / steps=${session.stepLedger.length}/${session.requiredSteps.length} / snapshots=${session.snapshotLedger.length}`,
     `Boundary: ${session.boundary}`,
     `Latest room: ${latest.room}; guide=${latest.guide_phase}->${latest.guide_action}`,
     `Ready: move=${latest.movement_route_ready}; talk=${latest.resident_encounter_ready}; proposal=${latest.proposal_deck_ready}; practice=${latest.lived_practice_ready}; worksite=${latest.worksite_ready}; journal=${latest.return_journal_ready}`,
+    `Lived physics: ready=${latest.lived_practice_physical_causality_ready}; rows=${latest.lived_practice_physics_rows || 0}; latest=${latest.latest_lived_practice_physics_id || 'none'}`,
     `Save/return: slots=${latest.save_slots}; saveReturns=${latest.save_returns}; forwardReturns=${latest.forward_returns}`,
     `No direct command: ${session.noDirectCommand ? 'yes' : 'no'} / no hidden law normal view: ${session.noHiddenLawNormalView ? 'yes' : 'no'} / no tech tree: ${session.noTechTreeUnlock ? 'yes' : 'no'}`,
     'Recent session steps:',
@@ -11402,6 +11424,8 @@ function runPrototypeQASmoke() {
     livedPracticeReady: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.acceptanceReady === true : false,
     livedPracticeRows: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.actionLedger.length : 0,
     livedPracticeSnapshots: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.practiceSnapshots.length : 0,
+    livedPracticePhysicsRows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
+    livedPracticePhysicalCausalityReady: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.physicalCausalityReady === true : false,
     worksiteReady: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     worksiteRows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
     worksiteSnapshots: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.snapshotLedger.length : 0,
@@ -11444,7 +11468,7 @@ function runPrototypeQASmoke() {
     { id: 'player-resident-encounter', pass: Boolean(world.gamePrototypeResidentEncounter && savedCounts.residentEncounterReady && savedCounts.residentEncounterRows > 0 && savedCounts.residentEncounterSnapshots > 0 && world.gamePrototypeResidentEncounter.encounterLedger.every(row => row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true)), evidence: `${savedCounts.residentEncounterRows} resident encounter row(s), ${savedCounts.residentEncounterSnapshots} snapshot(s)` },
     { id: 'player-object-interaction', pass: Boolean(world.gamePrototypeObjectInteraction && savedCounts.objectInteractionReady && savedCounts.objectInteractionRows > 0 && savedCounts.objectInteractionSnapshots > 0 && world.gamePrototypeObjectInteraction.interactionLedger.every(row => row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.objectInteractionRows} object interaction row(s), ${savedCounts.objectInteractionSnapshots} snapshot(s)` },
     { id: 'resident-proposal-deck', pass: Boolean(world.gamePrototypeProposalDeck && savedCounts.proposalDeckReady && savedCounts.proposalDeckCards > 0 && savedCounts.proposalDeckActions >= 3 && world.gamePrototypeProposalDeck.avatarCannotForce === true && world.gamePrototypeProposalDeck.noDirectCommand === true && world.gamePrototypeProposalDeck.noHiddenLawNormalView === true), evidence: `${savedCounts.proposalDeckCards} card snapshot(s), ${savedCounts.proposalDeckActions} deck action(s)` },
-    { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s)` },
+    { id: 'lived-practice-loop', pass: Boolean(world.gamePrototypeLivedPractice && savedCounts.livedPracticeReady && savedCounts.livedPracticeRows >= 4 && savedCounts.livedPracticeSnapshots > 0 && savedCounts.livedPracticePhysicsRows >= 4 && savedCounts.livedPracticePhysicalCausalityReady && world.gamePrototypeLivedPractice.noDirectCommand === true && world.gamePrototypeLivedPractice.noHiddenLawNormalView === true && world.gamePrototypeLivedPractice.noPredeclaredTechTree === true), evidence: `${savedCounts.livedPracticeRows} lived action row(s), ${savedCounts.livedPracticeSnapshots} practice snapshot(s), ${savedCounts.livedPracticePhysicsRows} lived physics row(s)` },
     { id: 'resident-worksite', pass: Boolean(world.gamePrototypeWorksite && savedCounts.worksiteReady && savedCounts.worksiteRows >= 2 && savedCounts.worksiteSnapshots > 0 && world.gamePrototypeWorksite.avatarCannotAssignJobs === true && world.gamePrototypeWorksite.noDirectCommand === true && world.gamePrototypeWorksite.noHiddenLawNormalView === true && world.gamePrototypeWorksite.noResourceSpawning === true), evidence: `${savedCounts.worksiteRows} worksite watch row(s), ${savedCounts.worksiteSnapshots} snapshot(s)` },
     { id: 'return-journal', pass: Boolean(world.gamePrototypeReturnJournal && savedCounts.returnJournalReady && savedCounts.returnJournalRows > 0 && savedCounts.returnJournalSnapshots >= 3 && world.gamePrototypeReturnJournal.forwardReturnVisible === true && world.gamePrototypeReturnJournal.saveRestoreVisible === true && world.gamePrototypeReturnJournal.noDirectReset === true && world.gamePrototypeReturnJournal.noHiddenLawNormalView === true), evidence: `${savedCounts.returnJournalRows} journal row(s), ${savedCounts.returnJournalSnapshots} snapshot(s)` },
     { id: 'first-playable-session', pass: Boolean(world.gamePrototypePlaySession && savedCounts.playSessionReady && savedCounts.playSessionSteps >= world.gamePrototypePlaySession.requiredSteps.length && savedCounts.playSessionSnapshots >= world.gamePrototypePlaySession.requiredSteps.length && world.gamePrototypePlaySession.stepLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false)), evidence: `${savedCounts.playSessionSteps} session step(s), ${savedCounts.playSessionSnapshots} snapshot(s)` },
@@ -11465,7 +11489,7 @@ function runPrototypeQASmoke() {
     { id: 'deep-time-million-year', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.year >= 1000000), evidence: `${world.deepTimeCivilization ? world.deepTimeCivilization.year : 0} years` },
     { id: 'survival-audited', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.survivalLedger && world.deepTimeCivilization.survivalLedger.length > 0), evidence: world.deepTimeCivilization && world.deepTimeCivilization.civilizationState ? world.deepTimeCivilization.civilizationState.status : 'none' },
     { id: 'causal-ledger', pass: Boolean(world.realityConstraintLedger && world.realityConstraintLedger.rows.length > 0), evidence: `${world.realityConstraintLedger ? world.realityConstraintLedger.rows.length : 0} row(s)` },
-    { id: 'save-return-preserved', pass: Boolean(world.deepTimeCivilization && world.autonomousResidents && world.gamePrototype), evidence: `saved actions=${savedCounts.autonomousActions}, saved year=${savedCounts.deepTimeYear}` },
+    { id: 'save-return-preserved', pass: Boolean(world.deepTimeCivilization && world.autonomousResidents && world.gamePrototype && world.gamePrototypeSaves && world.gamePrototypeSaves.slots.some(slot => Number(slot.lived_practice_physics_rows || 0) > 0)), evidence: `saved actions=${savedCounts.autonomousActions}, saved year=${savedCounts.deepTimeYear}, lived physics=${savedCounts.livedPracticePhysicsRows}` },
     { id: 'no-research-report-mode', pass: Boolean(world.gamePrototype && world.gamePrototype.noMoreResearchReportsByDefault), evidence: 'game build branch' },
   ];
   const passed = checks.filter(row => row.pass).length;
@@ -11626,6 +11650,9 @@ function saveSlotSummary(slot) {
     normal_play_action_rail_ready: slot.normal_play_action_rail_ready,
     normal_play_action_rows: slot.normal_play_action_rows,
     normal_play_option_rows: slot.normal_play_option_rows,
+    lived_practice_physics_rows: slot.lived_practice_physics_rows,
+    lived_practice_latest_physics_id: slot.lived_practice_latest_physics_id,
+    lived_practice_physical_causality_ready: slot.lived_practice_physical_causality_ready,
 	    physical_field_rows: slot.physical_field_rows,
 	    physical_energy_rows: slot.physical_energy_rows,
     structural_load_rows: slot.structural_load_rows,
@@ -11764,6 +11791,9 @@ function savePrototypeSlot(label = 'manual prototype save') {
     lived_practice_loop_ready: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.acceptanceReady === true : false,
     lived_practice_loop_rows: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.actionLedger.length : 0,
     lived_practice_loop_snapshots: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.practiceSnapshots.length : 0,
+    lived_practice_physical_causality_ready: world.gamePrototypeLivedPractice ? world.gamePrototypeLivedPractice.physicalCausalityReady === true : false,
+    lived_practice_physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
+    lived_practice_latest_physics_id: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger && world.gamePrototypeLivedPractice.physicsLedger.length ? world.gamePrototypeLivedPractice.physicsLedger[world.gamePrototypeLivedPractice.physicsLedger.length - 1].physics_id : 'none',
     resident_worksite_ready: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.acceptanceReady === true : false,
     resident_worksite_rows: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.watchLedger.length : 0,
     resident_worksite_snapshots: world.gamePrototypeWorksite ? world.gamePrototypeWorksite.snapshotLedger.length : 0,
@@ -11836,7 +11866,7 @@ function savePrototypeSlot(label = 'manual prototype save') {
   persistPrototypeSaves();
   recordPrototypeMilestone('prototype-save-slot', `${slot.slot_id} saved year ${slot.year}, day ${slot.autonomous_day}`);
   recordCheckpoint(`prototype save ${slot.slot_id}`);
-  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals });
+  return log('savePrototypeSlot', { slotId: slot.slot_id, year: slot.year, autonomousDay: slot.autonomous_day, practices: slot.practices, proposals: slot.proposals, livedPhysicsRows: slot.lived_practice_physics_rows });
 }
 
 function returnPrototypeSlot() {
@@ -11849,6 +11879,8 @@ function returnPrototypeSlot() {
     returned_from_replay_rows: world.replay.length,
     restored_year: slot.year,
     restored_autonomous_day: slot.autonomous_day,
+    restored_lived_practice_physics_rows: slot.lived_practice_physics_rows || 0,
+    restored_lived_practice_latest_physics_id: slot.lived_practice_latest_physics_id || 'none',
   };
   const nextWorld = JSON.parse(slot.snapshot);
   saves.returnLog.push(returnEntry);
@@ -11976,6 +12008,7 @@ function buildPrototypeAcceptanceReceipt() {
   const proposalDeckActions = proposalDeck ? proposalDeck.actionLedger.length : 0;
   const livedPracticeRows = livedPractice ? livedPractice.actionLedger.length : 0;
   const livedPracticeSnapshots = livedPractice ? livedPractice.practiceSnapshots.length : 0;
+  const livedPracticePhysicsRows = livedPractice && livedPractice.physicsLedger ? livedPractice.physicsLedger.length : 0;
   const worksiteRows = worksite ? worksite.watchLedger.length : 0;
   const worksiteSnapshots = worksite ? worksite.snapshotLedger.length : 0;
   const returnJournalRows = returnJournal ? returnJournal.journalLedger.length : 0;
@@ -12051,10 +12084,10 @@ function buildPrototypeAcceptanceReceipt() {
     { id: 'player_resident_encounter', pass: Boolean(residentEncounter && residentEncounter.acceptanceReady && residentEncounterRows > 0 && residentEncounterSnapshots > 0 && residentEncounter.encounterLedger.every(row => row.player_facing === true && row.no_llm === true && row.phrasebook_only === true && row.open_ended_language === false && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.source_history_preserved === true) && residentEncounter.noOpenEndedLanguage === true && residentEncounter.noDirectCommand === true), evidence: residentEncounter ? `rows=${residentEncounterRows}, snapshots=${residentEncounterSnapshots}` : 'not run' },
     { id: 'player_object_interaction', pass: Boolean(objectInteraction && objectInteraction.acceptanceReady && objectInteractionRows > 0 && objectInteractionSnapshots > 0 && objectInteraction.interactionLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.resident_chosen === true && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && objectInteraction.noDirectCommand === true && objectInteraction.noHiddenLawNormalView === true), evidence: objectInteraction ? `rows=${objectInteractionRows}, snapshots=${objectInteractionSnapshots}` : 'not run' },
     { id: 'resident_proposal_deck', pass: Boolean(proposalDeck && proposalDeck.acceptanceReady && proposalDeckCards > 0 && proposalDeckActions >= 3 && proposalDeck.avatarCannotForce === true && proposalDeck.noDirectCommand === true && proposalDeck.noHiddenLawNormalView === true && proposalDeck.playerGlossesOnly === true), evidence: proposalDeck ? `cardSnapshots=${proposalDeckCards}, actions=${proposalDeckActions}` : 'not run' },
-    { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}` : 'not run' },
+    { id: 'lived_practice_loop', pass: Boolean(livedPractice && livedPractice.acceptanceReady && livedPracticeRows >= 4 && livedPracticeSnapshots > 0 && livedPracticePhysicsRows >= 4 && livedPractice.physicalCausalityReady === true && livedPractice.noDirectCommand === true && livedPractice.noHiddenLawNormalView === true && livedPractice.noPredeclaredTechTree === true && livedPractice.noCorrectConceptInstalled === true), evidence: livedPractice ? `actions=${livedPracticeRows}, snapshots=${livedPracticeSnapshots}, livedPhysics=${livedPracticePhysicsRows}` : 'not run' },
     { id: 'resident_worksite', pass: Boolean(worksite && worksite.acceptanceReady && worksiteRows >= 2 && worksiteSnapshots > 0 && worksite.avatarCannotAssignJobs === true && worksite.noDirectCommand === true && worksite.noHiddenLawNormalView === true && worksite.noResourceSpawning === true), evidence: worksite ? `watchRows=${worksiteRows}, snapshots=${worksiteSnapshots}` : 'not run' },
     { id: 'return_journal', pass: Boolean(returnJournal && returnJournal.acceptanceReady && returnJournalRows > 0 && returnJournalSnapshots >= 3 && returnJournal.forwardReturnVisible === true && returnJournal.saveRestoreVisible === true && returnJournal.noDirectReset === true && returnJournal.noHiddenLawNormalView === true), evidence: returnJournal ? `rows=${returnJournalRows}, snapshots=${returnJournalSnapshots}` : 'not run' },
-    { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}` : 'not run' },
+    { id: 'first_playable_session', pass: Boolean(playSession && playSession.acceptanceReady && playSessionSteps >= playSession.requiredSteps.length && playSessionSnapshots >= playSession.requiredSteps.length && livedPracticePhysicsRows > 0 && playSession.stepLedger.every(row => row.player_facing === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.tech_tree_unlock === false) && playSession.noDirectCommand === true && playSession.noHiddenLawNormalView === true && playSession.noTechTreeUnlock === true), evidence: playSession ? `steps=${playSessionSteps}/${playSession.requiredSteps.length}, snapshots=${playSessionSnapshots}, livedPhysics=${livedPracticePhysicsRows}` : 'not run' },
     { id: 'terrain_physics_substrate', pass: Boolean(terrain && terrainRows > 0 && terrainFlowRows > 0 && terrainSupportRows > 0 && terrain.terrainLedger.every(row => row.no_effect_without_cause === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${terrainRows} terrain step(s), ${terrainFlowRows} flow row(s), ${terrainSupportRows} support row(s)` },
 	    { id: 'tool_work_physics', pass: Boolean(tools && toolUseRows > 0 && toolWearRows > 0 && tools.useLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${toolUseRows} use row(s), ${toolWearRows} wear row(s), ${toolFailureRows} failure row(s), ${toolRepairRows} repair row(s)` },
 	    { id: 'resource_stock_physics', pass: Boolean(resourcePhysics && resourceStockRows > 0 && resourceTransformRows >= resourceStockRows && resourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${resourceStockRows} stock step(s), ${resourceTransformRows} transform row(s), ${resourceLossRows} loss row(s), ${resourceGainRows} gain row(s)` },
@@ -12139,8 +12172,8 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
-  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; livedPhysics=${slot.lived_practice_physics_rows || 0}/${slot.lived_practice_latest_physics_id || 'none'}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; structural=${slot.structural_stress_rows || 0} stress/${slot.structural_deformation_rows || 0} deform/${slot.structural_repair_rows || 0} repair; constraints=${slot.contact_constraint_rows || 0} contact/${slot.joint_constraint_rows || 0} joints/${slot.constraint_repair_rows || 0} repair; materialState=${slot.material_state_rows || 0} state/${slot.phase_change_rows || 0} phase/${slot.property_drift_rows || 0} props; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, livedPhysics=${row.restored_lived_practice_physics_rows || 0}/${row.restored_lived_practice_latest_physics_id || 'none'}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
     `Boundary: ${saves.boundary}`,

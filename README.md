@@ -2247,17 +2247,19 @@ The browser shell now includes a player-facing lived practice loop. `Practice` n
 
 Each lived-practice action now writes a `lived_action_physics_causality` ledger row. The row records the component, material, moisture/damage/stability/stress deltas, time/work/tool burden, conservation check, and no-resource-spawning boundary so practice evidence comes from physical state change rather than a report-only receipt.
 
+Save/return and first-playable session receipts now preserve those lived-action physics rows. Prototype save slots, return logs, the return journal, and the session receipt show lived-practice physics counts and latest physics IDs so ordinary action consequences remain visible after restore.
+
 ## Game prototype v0 update: Resident Worksite
 
 The browser shell now includes a player-facing resident worksite loop. `Worksite` advances and watches resident project work through the existing project system, showing progress, stalls, material consequences, component repairs/additions, construction ids, resident terms, practice links, and maintenance burden while preserving no-direct-command, no-resource-spawning, and audit-only hidden-law boundaries.
 
 ## Game prototype v0 update: Return Journal
 
-The browser shell now includes a player-facing return journal. `Journal` records before-save, after-away, and after-save-slot-return snapshots so Player mode can show what changed while the avatar was away and what a save-slot return restored. The journal keeps forward persistence separate from rollback restoration and preserves no-direct-reset and no-hidden-law-normal-view boundaries.
+The browser shell now includes a player-facing return journal. `Journal` records before-save, after-away, and after-save-slot-return snapshots so Player mode can show what changed while the avatar was away and what a save-slot return restored. The journal keeps forward persistence separate from rollback restoration, preserves lived-action physics counts across return, and keeps no-direct-reset and no-hidden-law-normal-view boundaries.
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt.
+The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt with lived-action physics continuity.
 
 The receipt is intentionally a game-build bridge, not a new research report. It proves the ordinary player surface can drive the existing village systems as one sequence while preserving resident autonomy, no hidden-law normal view, no direct command, and no tech-tree unlock boundaries.
 

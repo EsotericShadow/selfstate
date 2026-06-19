@@ -155,3 +155,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. Generate branch-local practice histories after simulated observations and tests.
 4. Compare practice/status signatures to confirm divergence without modern naming or a deterministic tech tree.
 
+
+## Commons causality loop
+
+1. Resident actions, proposal support, practice maintenance, recovery, and deep-time effects update resources or ledger rows.
+2. The commons audit derives resource pressure, work/time cost, tool wear, maintenance burden, and conservation/hidden-law flags.
+3. The Player guide can point to commons audit when the rest of the first playable path is seeded.
+4. Prototype QA and acceptance receipts include commons causal health as a hardening check.
+

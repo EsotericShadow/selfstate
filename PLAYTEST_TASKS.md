@@ -28,3 +28,5 @@
 18. Use the Player guide from a fresh or reset run and confirm it advances through arrival, pressure, ordinary play, board/proposal, autonomy, deep time, return proof, QA, acceptance, and watch/compare phases as state changes.
 
 19. Use Compare seeds and confirm the Seed divergence card shows multiple branches sharing one hidden-law seed while producing different local practice histories, statuses, or material burdens.
+
+20. Use Audit commons after resident seasons, proposal support, or practice maintenance and confirm the Commons / causality card reports resources, work/time cost, tool wear, maintenance burden, conservation issues, and hidden-law exposure without revealing hidden simulator law.

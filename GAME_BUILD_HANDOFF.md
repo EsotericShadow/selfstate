@@ -122,3 +122,8 @@ The prototype surface now includes a derived `Player guide` card. It reads the c
 
 The prototype now includes a `Compare seeds` action and `Seed divergence` card. It holds the hidden material-law seed fixed while running multiple deterministic social/history branches, then compares local practice names, statuses, material burdens, safety rules, and risk profiles. The goal is to show divergent practice histories from the same law without a hidden tech tree or direct installation of a correct concept.
 
+
+## Prototype v0 commons causality update
+
+The prototype now includes an `Audit commons` action and `Commons / causality` card. It summarizes resources, low-resource pressure, work/time cost, tool wear, maintenance obligations, practice burden, accepted proposals, conservation flags, and hidden-law exposure flags from existing world state and the Reality Constraint Ledger. This makes causal health visible during play without adding a god-game resource spreadsheet or exposing hidden simulator law in normal view.
+

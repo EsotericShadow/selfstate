@@ -19,6 +19,7 @@
         <canvas id="world" width="1040" height="620" aria-label="browser-local playable world canvas"></canvas>
         <div class="normal-play-rail" role="group" aria-label="normal play controls">
           <button data-action="runNormalPlayLook">Look</button>
+          <button data-action="runNormalPlayMove">Move</button>
           <button data-action="runNormalPlayAsk">Ask</button>
           <button data-action="runNormalPlayTalk">Talk</button>
           <button data-action="runNormalPlaySupport">Support</button>
@@ -192,6 +193,7 @@
           <button data-action="exportFirstPlayableWalkthrough">Export walkthrough</button>
           <button data-action="runNormalPlayActionRailLoop">Normal play loop</button>
           <button data-action="runPlayerModeInterfaceLoop">Player mode loop</button>
+          <button data-action="runPlayerMovementRouteLoop">Movement route</button>
           <button data-action="runPlayerResidentEncounterLoop">Resident encounter</button>
           <button data-action="runPlayerObjectInteractionLoop">Object interaction</button>
           <button data-action="runPlayerProposalDeckLoop">Proposal deck</button>
@@ -246,6 +248,10 @@
       <article class="prototype-card player-mode-keep">
         <h3>Player mode interface</h3>
         <pre id="gamePrototypePlayerModeOut"></pre>
+      </article>
+      <article class="prototype-card player-mode-keep">
+        <h3>Movement route</h3>
+        <pre id="gamePrototypeMovementRouteOut"></pre>
       </article>
       <article class="prototype-card player-mode-keep">
         <h3>Resident encounter</h3>

@@ -220,7 +220,7 @@
 
 ## Normal play action rail playtests
 
-- Use Look, Ask, Talk, Objects, Support, Wait, Return, and Save from the normal action rail.
+- Use Look, Move, Ask, Talk, Objects, Support, Wait, Return, and Save from the normal action rail.
 - Confirm each action creates a row in the `Normal play action rail` card.
 - Confirm Support is recorded as condition support, not direct job assignment.
 - Confirm Save links to a prototype save slot after the normal action flow.
@@ -228,7 +228,7 @@
 
 ## Player mode interface playtests
 
-- Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Ask, Talk, Objects, Support, Wait, Return, Save, and Player mode remain reachable.
+- Toggle `Player mode` from the normal action rail and confirm debug-heavy controls disappear while Look, Move, Ask, Talk, Objects, Support, Wait, Return, Save, and Player mode remain reachable.
 - Confirm the canvas, player guide, primary play surface, normal action rail, public outcomes, and Player mode interface card remain visible.
 - Confirm Player mode records a session row with no direct resident command and no hidden-law exposure in normal view.
 - Leave Player mode and confirm audit/reviewer surfaces are still recoverable explicitly.
@@ -269,7 +269,13 @@
 ## First playable session playtests
 
 - Run `Session` from the normal rail and confirm the `Play session receipt` card appears in Player mode.
-- Confirm the receipt records Player mode, Look, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return steps.
+- Confirm the receipt records Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return steps.
+
+## Player movement route playtests
+
+- Use `Move` from the normal rail and confirm the avatar changes village zone without direct resident command.
+- Inspect the movement route card and confirm nearby residents, materials, and practices update from the new position.
+- Save, return, and confirm the movement route remains part of the first playable session receipt.
 - Confirm the receipt links proposal, practice, worksite, return journal, save, and return evidence from one player-facing sequence.
 - Confirm rows record no direct resident command, no hidden-law exposure in normal view, and no tech-tree unlock.
 - Confirm the session still has its earlier step rows after the Journal step performs save-slot restoration.

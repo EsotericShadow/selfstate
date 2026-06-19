@@ -214,7 +214,7 @@ This is the first single-receipt proof that the prototype has a coherent playabl
 
 Required evidence:
 
-- all normal verbs are used at least once, including Talk and Objects
+- all normal verbs are used at least once, including Move, Talk, and Objects
 - options shown in player language
 - action rows remain non-commanding
 - hidden law is not exposed in normal view
@@ -309,7 +309,11 @@ Required evidence:
 
 - the normal rail exposes a Session action
 - the prototype action grid exposes Play session
-- the session runs Player mode, Look, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
+- the session runs Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return as one sequence
+
+## Prototype v0 milestone: Player Movement Route
+
+The first playable prototype now requires a movement receipt. The player must be able to move through bounded village space, update nearby affordances from the current zone, and leave a source-traced movement record that can participate in save/return continuity and later practice formation.
 - each session step records a player-facing row and snapshot
 - proposal, practice, worksite, return journal, save, and return evidence are linked from the same receipt
 - every row records no direct resident command

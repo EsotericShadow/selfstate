@@ -2227,7 +2227,11 @@ The browser shell now includes `First playable` and `Export walkthrough`. This c
 
 ## Game prototype v0 update: Normal Play Action Rail
 
-The browser shell now includes a normal play rail: Look, Ask, Talk, Objects, Support, Wait, Return, and Save. These player-language actions drive the existing village systems and produce `normal_play_action_rail` acceptance evidence.
+The browser shell now includes a normal play rail: Look, Move, Ask, Talk, Objects, Support, Wait, Return, and Save. These player-language actions drive the existing village systems and produce `normal_play_action_rail` acceptance evidence.
+
+## Game prototype v0 update: Player Movement Route
+
+The browser shell now includes a player-facing `Move` action and movement-route receipt. Movement advances the avatar through village zones, updates nearby residents/materials/practices, records distance and zone changes, and preserves the rule that the avatar influences conditions by moving through space rather than teleporting or directly commanding residents.
 
 ## Game prototype v0 update: Player Mode Interface
 
@@ -2251,7 +2255,7 @@ The browser shell now includes a player-facing return journal. `Journal` records
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt.
+The browser shell now includes a `Session` normal rail action and `Play session` prototype action. This runs one coherent player-facing sequence across Player mode, Look, Move, Talk, Objects, Proposals, Practice, Worksite, Journal, Save, and Return, then records a first playable session receipt.
 
 The receipt is intentionally a game-build bridge, not a new research report. It proves the ordinary player surface can drive the existing village systems as one sequence while preserving resident autonomy, no hidden-law normal view, no direct command, and no tech-tree unlock boundaries.
 

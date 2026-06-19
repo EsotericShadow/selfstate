@@ -513,16 +513,24 @@ The shell now has one player-facing session loop:
 
 1. Enter Player mode.
 2. Look at the village through the normal play surface.
-3. Talk to the selected resident through bounded phrasebook dialogue.
-4. Inspect physical objects through resident-local terms and imperfect glosses.
-5. Open resident proposals.
-6. Run the lived practice loop.
-7. Watch resident worksite consequences.
-8. Open the return journal.
-9. Save the prototype state.
-10. Return after away time.
+3. Move through the village route.
+4. Talk to the selected resident through bounded phrasebook dialogue.
+5. Inspect physical objects through resident-local terms and imperfect glosses.
+6. Open resident proposals.
+7. Run the lived practice loop.
+8. Watch resident worksite consequences.
+9. Open the return journal.
+10. Save the prototype state.
+11. Return after away time.
 
 Each step records a session row and snapshot. The loop does not add world law; it sequences the existing systems into one playable proof that the player can move from observation to proposals, practice, work, continuity, save, and return without using debug-only subsystem panels.
+
+## Player movement route loop
+
+1. The avatar moves through bounded village space instead of teleporting.
+2. The current zone, nearby residents, nearby materials, and nearby practices update from position.
+3. Movement produces a causal ledger entry with before/after zone and distance.
+4. The route becomes first-playable ready only after repeated movement snapshots show spatial continuity and nearby affordances.
 
 ## Physical object interaction loop
 

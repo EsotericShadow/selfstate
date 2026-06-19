@@ -356,9 +356,10 @@ The acceptance gate is `first_playable_walkthrough`. This is the first durable r
 
 ## Prototype v0 milestone: Normal Play Action Rail
 
-The shell now includes a normal player-facing action rail with eight verbs:
+The shell now includes a normal player-facing action rail with nine verbs:
 
 - Look
+- Move
 - Ask
 - Talk
 - Objects
@@ -413,7 +414,11 @@ This closes a major player-facing continuity gap: the prototype can now show wha
 
 ## Game prototype v0 update: First Playable Session Receipt
 
-The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Talk, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return.
+The browser shell now includes a `Session` normal rail action, `Play session` prototype action, and `Play session receipt` player-mode card. The session receipt sequences the already-built player surfaces as one coherent playable pass: Player mode, Look, Move, Talk, Objects, resident proposals, lived practice, resident worksite, return journal, Save, and Return.
+
+## Game prototype v0 update: Player Movement Route
+
+The shell now includes a `Move` normal rail action, `Movement route` prototype action, and `Movement route` player-mode card. The movement route keeps the prototype spatial: the avatar changes village zones through bounded movement, the interface records nearby residents/materials/practices after each move, and the reality ledger records that movement as a causal spatial action rather than an instant command or abstract menu choice.
 
 The acceptance gate is `first_playable_session`. It records step rows and snapshots while preserving no direct command, no hidden-law exposure in normal view, and no tech-tree unlock. This is the first receipt for the player-facing session itself rather than another subsystem panel.
 

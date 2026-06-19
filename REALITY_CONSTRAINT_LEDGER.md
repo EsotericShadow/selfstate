@@ -93,3 +93,16 @@ When a resident physically handles a component, the ledger should preserve:
 - Practice node link if repeated handling stabilized into evidence.
 
 This prevents handling from becoming animation-only. A resident touching the world must leave material, social, and audit traces.
+
+## Deep-time stochastic physics ledger rows
+
+Compressed history must still obey material causality. A deep-time epoch should preserve:
+
+- Physical substeps linked to support, contact, gravity, field stress, and stochastic fatigue.
+- Material flux rows for mass loss, moisture shift, heat shift, damage, stability, settlement, and ruined traces.
+- Resource pressure caused by drought, wetness, decay, wear, or ruined components.
+- Lineage pressure created by the physical components a practice depends on.
+- No-effect-without-cause and no-resource-spawning flags.
+- Hidden-law audit separation from resident belief and player normal view.
+
+Long-run civilization survival should read from these rows. A culture cannot remain viable merely because a lineage says it survived; its materials, structures, maintenance burden, and recovery capacity must also survive or leave trace evidence.

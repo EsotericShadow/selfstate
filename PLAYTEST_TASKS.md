@@ -84,3 +84,13 @@
 46. Save after resident material handling, mutate the world, return the slot, and confirm Save / return preserves material handling and handling-practice counts.
 
 47. Export acceptance and confirm the receipt includes resident material manipulation as a required physics-first gate.
+
+48. Use Physics epoch and confirm the Deep-time civilization card shows a stochastic physics epoch with mass before/after, damage, stability, ruined traces, and lineage pressure links.
+
+49. Run Million-year sim and confirm deep-time history includes physics epoch rows and material flux rows before practice survival or village consequences are interpreted.
+
+50. Save after a physics epoch, mutate the world, return the slot, and confirm Save / return preserves deep-time physics epoch and material flux counts.
+
+51. Inspect the Reality Constraint Ledger after a physics epoch and confirm it records material transformation, time cost, work/tool burden, conservation, no resource spawning, and hidden-law separation.
+
+52. Export acceptance and confirm deep-time stochastic physics epochs are required separately from physical heritage and component-effect rows.

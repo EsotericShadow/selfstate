@@ -85,10 +85,21 @@
 
 1. Seed lineages from practices that emerged in normal play.
 2. Advance a compressed epoch using runtime entropy.
-3. Apply a world pressure such as drought, storage decay, route drift, material exhaustion, memory compression, flood, tool wear, or abundance.
-4. Mutate resources and practice lineages through usefulness, memory strength, maintenance burden, adaptation, or forgetting.
-5. Record emergent effects without assigning intent or unlocking a named technology.
-6. Keep hidden laws audit-only and preserve the timeline for save/return.
+3. Run a stochastic physics epoch against actual material components.
+4. Apply a world pressure such as drought, storage decay, route drift, material exhaustion, memory compression, flood, tool wear, or abundance.
+5. Mutate resources and practice lineages through physical mass loss, moisture, damage, stability, usefulness, memory strength, maintenance burden, adaptation, or forgetting.
+6. Record emergent effects without assigning intent or unlocking a named technology.
+7. Keep hidden laws audit-only and preserve the timeline for save/return.
+
+## Deep-time stochastic physics epoch loop
+
+1. Advance several physical substeps for support, contact, gravity, field stress, and stochastic fatigue.
+2. Apply compressed long-horizon material flux: moisture, heat, decay, mass loss, settlement, damage, and stability drift.
+3. Mark ruined traces when components lose practical affordance.
+4. Bind component pressure back to the lineages and practices that depend on those components.
+5. Create resource pressure only through named physical causes, never free spawning.
+6. Write Reality Constraint Ledger rows for mass, time, work, tool wear, maintenance, conservation, and hidden-law separation.
+7. Let later village proposals, resident schedules, and practice survival inherit those physical consequences.
 
 ## Deep-time to village feedback loop
 

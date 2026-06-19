@@ -207,3 +207,11 @@ Residents can now physically handle simulated components instead of only reactin
 Handling actions mutate actual components: position, carried-by state, moisture, temperature, damage, stability, and field stress. They consume water or fiber where relevant, preserve failed handling as warning evidence, write Reality Constraint Ledger rows, update resident memory and visible body cues, and can create or refine Emergent Practice Graph nodes after repeated useful handling or recoverable failure.
 
 The avatar still does not assign object work directly. The game loop exposes resident physical manipulation as a living-world consequence: residents try, fail, remember, teach, rename, and stabilize handling practices from material contact.
+
+## Prototype v0 deep-time stochastic physics update
+
+Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.
+
+Lineages inherit pressure from the components they depend on. If the physical structure decays, a practice can become burdened, forgotten, or harder to maintain; if it remains stable, usefulness can improve. Save slots, QA, acceptance receipts, and the Deep-time civilization card now expose physics epoch counts, material flux rows, mass retention, physical continuity, and lineage pressure links.
+
+The goal is still not production-certified physics. The important game rule is stricter: long-run culture must pass through material physics before it becomes practice survival, village memory, proposal burden, or historical continuity.

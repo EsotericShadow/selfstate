@@ -6,6 +6,7 @@
 - Six residents maximum.
 - Small map around shelter, storage, work area, route, and board.
 - Physics-first 3D simulation state for physical components, materials, stochastic fields, support, collision/contact, heat/moisture, decay, energy/work proxies, and stochastic failure.
+- Deep-time stochastic physics epochs that mutate actual component mass, moisture, damage, stability, settlement, ruined traces, lineage pressure, and material flux evidence.
 - Simple primitive rendering of simulated objects.
 - Small resource set: water, fiber, wood, care, and one or two special materials.
 - One anomaly family.
@@ -42,3 +43,5 @@ A new player can enter the village, learn that residents have their own concerns
 The first prototype may include a compressed million-year simulation as long as it remains tied to the one-village playable loop. Deep-time effects should become resident schedules, memories, public proposals, and audit rows rather than detached lore text.
 
 Deep-time continuity should remain physically grounded: construction-linked lineages, component heritage, field pressure, stability, damage, maintenance burden, and resident repair practices should affect whether a lineage survives as living practice, costly habit, trace memory, or forgotten evidence.
+
+Deep-time history should not be accepted as only a narrative/culture ledger. The prototype should preserve physics epoch rows and material flux rows showing what happened to components before residents reinterpret the result.

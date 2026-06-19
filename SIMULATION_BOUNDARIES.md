@@ -105,3 +105,7 @@ Structural stress is browser-local stochastic simulation scaffolding. It is inte
 ## Contact/joint constraint boundary
 
 Contact and joint constraints are bounded stochastic prototype physics. They are intended to make component assemblies physically consequential, not to provide exact rigid-body, rope, or contact simulation. Slips and failed joints must remain traceable, bounded, repairable, and resident-visible only as local effects.
+
+## Material-state physics boundary
+
+Material-state physics is bounded stochastic prototype scaffolding. It models state drift and effective property changes for gameplay causality, not real chemistry or certified material science. Phase changes must remain traceable, bounded, repairable, and separate from resident belief.

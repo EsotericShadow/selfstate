@@ -2206,3 +2206,5 @@ Ecology/food physics is now part of Prototype v0: edible patches grow or rot fro
 Structural-stress physics now extends the game prototype shell with load paths, support margin, bending stress, anchor slip, deformation/sag, partial collapse rows, and resident repair pressure for component-built structures.
 
 Contact/joint constraint physics now extends the prototype with friction limits, impulse transfer, joint demand/strength, slipping contacts, failed bindings, and constraint repair pressure for component-built structures.
+
+Material-state physics now gives components bounded saturation, drying, rot, char, sealing, cracking, hardening, and effective-property drift with reality-ledger traceability.

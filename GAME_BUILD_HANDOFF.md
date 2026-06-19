@@ -283,3 +283,9 @@ This remains a bounded prototype solver, not certified engineering physics. It s
 The prototype shell now models touching and bound components with a bounded stochastic contact-constraint layer. Structures can accumulate contact rows, joint rows, friction rows, impulse transfer rows, failed-joint rows, and constraint repair pressure.
 
 This keeps the simulation direction physical without claiming production-grade rigid-body accuracy: components are conserved, resident-visible effects stay local and imperfect, and hidden friction/joint calculations remain audit-only.
+
+## Prototype v0 material-state physics update
+
+The prototype shell now gives each physical component a bounded material-state model. Components can accumulate saturation, dryness, rot, char, seal, cracking, softening, hardening, and effective property drift from heat, moisture, time, decay pressure, and stochastic material variation.
+
+This keeps the direction physics-first: resident-built objects do not merely have labels or static material IDs. Their material condition changes over time and can create repair pressure without spawning or deleting matter.

@@ -174,3 +174,11 @@
 98. End several village days and confirm constraint rows accumulate through ordinary time/weather progression.
 99. Inspect the Reality Constraint Ledger for `contact_constraint_physics` with hidden-law separation and conservation checks.
 100. Save and return after constraint rows accumulate; confirm contact/joint counters persist in the save panel.
+
+## Material-state physics playtests
+
+101. Run `Material state` and inspect state, phase, property, and repair rows.
+102. Run `State loop` after water/thermal changes and confirm material states drift without spawning resources.
+103. End several village days and confirm material-state rows accumulate through ordinary weather/time progression.
+104. Inspect the Reality Constraint Ledger for `material_state_physics` with conservation and hidden-law separation.
+105. Save and return after material-state rows accumulate; confirm state/phase/property counters persist in the save panel.

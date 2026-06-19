@@ -365,3 +365,11 @@ Structural stress now feeds a contact-constraint pass:
 component state -> likely contacts and bindings -> friction limit -> impulse transfer -> slip probability -> joint strength/demand -> component wear/slip -> resident repair pressure.
 
 This makes resident-built objects behave more like assemblies. Branches, bindings, covers, and vessels can touch, slip, hold, or need retying through ordinary time and weather.
+
+## Material-state physics loop
+
+The material loop now runs as:
+
+weather/thermal/water/component state -> saturation/drying/heat/decay calculation -> phase drift -> effective property drift -> component stability/damage update -> resident-visible material cue -> repair pressure if risky.
+
+This lets ordinary time, wetness, heat, sealing, rot, cracking, and hardening change future handling, stress, contact, and practice formation.

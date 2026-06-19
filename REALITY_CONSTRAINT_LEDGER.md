@@ -221,3 +221,16 @@ Contact physics follows the same causal rules:
 - no hidden friction/joint calculations in normal resident view
 
 The current shell records `contact_constraint_physics` rows with contact counts, joint counts, slip counts, failed joints, repair pressure, and conservation checks.
+
+## Material-state physics ledger rows
+
+Material-state physics follows causal constraints:
+
+- no rot without moisture, decay pressure, organic material, or time
+- no char without heat, flammability, and stochastic exposure
+- no cracking without brittleness, heat/moisture stress, or material state
+- no sealing without resin-like material/state and heat/work context
+- no property drift without a recorded material-state cause
+- no material spawning during phase drift
+
+The shell records `material_state_physics` rows with state counts, phase changes, risky components, repair pressure, hidden-law separation, and conservation checks.

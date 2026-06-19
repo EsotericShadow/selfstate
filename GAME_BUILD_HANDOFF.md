@@ -268,6 +268,12 @@ Avatar presence now affects cooperation as a condition, not a command. When the 
 
 This lets the player help by being present near the work, but the simulation still records `avatar_direct_command: false`. Presence alone never transforms material; it only changes social/attention conditions around resident-chosen work.
 
+## Prototype v0 presence comfort/boundary update
+
+Repeated avatar presence now has social memory pressure. Respectful repeated presence near a worksite can improve comfort and familiarity. Crowded or repeatedly intrusive presence raises boundary pressure and refusal risk. Residents expose this through public cues such as guarded stance, boundary posture, and refusal rows.
+
+This keeps proximity meaningful without making residents obedient. Being nearby can help, crowd, or annoy depending on distance and history.
+
 ## Prototype v0 deep-time stochastic physics update
 
 Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.

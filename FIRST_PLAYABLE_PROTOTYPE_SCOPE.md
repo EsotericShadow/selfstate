@@ -19,6 +19,7 @@
 - One resident physical routine-context loop that links autonomous schedules to construction, components, project visuals, and practice sites.
 - One worksite proximity loop that makes component repair/build effects depend on resident body position.
 - One avatar worksite-presence loop that affects cooperation/trust/willingness without commanding residents.
+- One presence comfort/boundary loop where repeated or crowded presence changes comfort, boundaries, and refusal risk.
 - One stochastic consequence and recovery loop.
 - One save/return loop.
 - One audit/replay mode.
@@ -235,6 +236,22 @@ Required evidence:
 - hidden simulator law remains out of normal view
 
 This gate makes player presence socially meaningful without turning the prototype into a god-game control surface.
+
+## Added scope gate: Avatar presence affects comfort and refusal
+
+`avatar_presence_affects_comfort_and_refusal` is part of the first playable prototype scope.
+
+Required evidence:
+
+- avatar presence rows track repeated nearby presence and crowding
+- presence comfort rows record comfort before/after
+- nearby presence can change comfort, boundary pressure, or refusal risk
+- resident visible cues can show guarded or boundary state from presence pressure
+- resident refusal remains possible and source-traced
+- presence does not directly command work or transform material
+- hidden simulator law remains out of normal view
+
+This gate prevents player proximity from being a one-way positive buff.
 
 ## Added scope gate: Playable Village Day 0-3
 

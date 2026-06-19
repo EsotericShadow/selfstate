@@ -219,6 +219,11 @@
 127. Confirm avatar presence alone does not transform material without resident work.
 128. Run `World stage` after a presence row exists and confirm the primary surface includes an avatar-presence cue.
 129. Export acceptance and confirm `avatar_presence_influences_worksite_cooperation` appears as a prototype requirement.
+130. Stay near the same worksite through repeated support/project/resident ticks and confirm presence rows show repeated nearby count.
+131. Move very close to the worksite and confirm crowding raises boundary pressure or refusal risk.
+132. Inspect Village state and confirm residents show comfort, boundary, and refusal values.
+133. Run Resident tick after repeated/crowded presence and confirm refusal or guarded public cue can trace back to presence pressure.
+134. Export acceptance and confirm `avatar_presence_affects_comfort_and_refusal` appears as a prototype requirement.
 
 ## Physics-to-practice slice playtests
 

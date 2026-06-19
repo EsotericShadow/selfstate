@@ -213,6 +213,12 @@
 121. Confirm distant work records partial or blocked proximity evidence instead of changing a component at a distance.
 122. Advance a Village Board project and confirm the project row records target component distance, near/far status, and construction scale.
 123. Export acceptance and confirm `worksite_proximity_affects_component_work` appears as a prototype requirement.
+124. Move the avatar near a worksite component, then support or advance a proposal and confirm an `AWP-...` avatar-presence row appears.
+125. Confirm the presence row records distance, near/crowding state, cooperation modifier, trust delta, willingness delta, and `avatar_direct_command=false`.
+126. Confirm nearby presence can improve support/project cooperation while resident refusal remains possible.
+127. Confirm avatar presence alone does not transform material without resident work.
+128. Run `World stage` after a presence row exists and confirm the primary surface includes an avatar-presence cue.
+129. Export acceptance and confirm `avatar_presence_influences_worksite_cooperation` appears as a prototype requirement.
 
 ## Physics-to-practice slice playtests
 

@@ -18,6 +18,7 @@
 - One resident physical material-handling loop for carry, drop, stack, tie, dry, wet-test, and test actions.
 - One resident physical routine-context loop that links autonomous schedules to construction, components, project visuals, and practice sites.
 - One worksite proximity loop that makes component repair/build effects depend on resident body position.
+- One avatar worksite-presence loop that affects cooperation/trust/willingness without commanding residents.
 - One stochastic consequence and recovery loop.
 - One save/return loop.
 - One audit/replay mode.
@@ -217,6 +218,23 @@ Required evidence:
 - hidden simulator law remains out of normal view
 
 This gate prevents resident schedules, movement, and project progress from becoming disconnected systems.
+
+## Added scope gate: Avatar presence influences worksite cooperation
+
+`avatar_presence_influences_worksite_cooperation` is part of the first playable prototype scope.
+
+Required evidence:
+
+- avatar presence rows record distance to a physical worksite component
+- nearby avatar presence can change cooperation, trust, or willingness as a bounded condition
+- resident can still refuse
+- presence does not transform material by itself
+- project/support/autonomous rows can link to a presence ID
+- primary play-surface cues expose the presence link in normal view
+- no direct player command is introduced
+- hidden simulator law remains out of normal view
+
+This gate makes player presence socially meaningful without turning the prototype into a god-game control surface.
 
 ## Added scope gate: Playable Village Day 0-3
 

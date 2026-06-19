@@ -715,6 +715,93 @@ function ensurePrototypeNearbyActions() {
   return world.gamePrototypeNearbyActions;
 }
 
+function ensureAvatarWorksitePresence() {
+  if (!world.gamePrototypeAvatarPresence) {
+    world.gamePrototypeAvatarPresence = {
+      runCount: 0,
+      presenceLedger: [],
+      boundary: 'avatar presence can influence conditions, trust, and willingness near a physical worksite, but cannot assign labor or install decisions',
+    };
+  }
+  if (!Array.isArray(world.gamePrototypeAvatarPresence.presenceLedger)) world.gamePrototypeAvatarPresence.presenceLedger = [];
+  return world.gamePrototypeAvatarPresence;
+}
+
+function componentCanvasPoint(component) {
+  const pos = component && component.position3d ? component.position3d : { x: 0, y: 0, z: 0 };
+  const origin = { x: 356, y: 202 };
+  return {
+    x: origin.x + Number(pos.x || 0) * 1.05 - Number(pos.y || 0) * 0.55,
+    y: origin.y + Number(pos.y || 0) * 0.52 - Number(pos.z || 0) * 0.72,
+  };
+}
+
+function projectTargetComponentForProposal() {
+  const materialWorld = world.gamePrototype3DWorld || ensurePrototype3DWorld();
+  if (!materialWorld || !materialWorld.components || !materialWorld.components.length) return null;
+  return materialWorld.components.find(component => Number(component.stability || 1) < 0.75 || Number(component.damage || 0) > 0.12)
+    || materialWorld.components.find(component => component.project_built === true)
+    || materialWorld.components[0];
+}
+
+function recordAvatarWorksitePresence(residentName, component, source = 'worksite_presence', sourceId = 'none') {
+  const sim = ensureAvatarWorksitePresence();
+  const zone = locationZoneForAvatar();
+  const point = component ? componentCanvasPoint(component) : { x: Number(world.avatar.x || 0), y: Number(world.avatar.y || 0) };
+  const dx = Number(world.avatar.x || 0) - Number(point.x || 0);
+  const dy = Number(world.avatar.y || 0) - Number(point.y || 0);
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  const nearWorksite = Boolean(component && distance <= 150);
+  const crowding = Boolean(component && distance <= 38);
+  const alignedZone = zone.zone_id === 'work_yard' || zone.zone_id === 'storage' || zone.zone_id === 'village_board';
+  const cooperationModifier = nearWorksite ? (alignedZone ? 0.035 : 0.018) - (crowding ? 0.012 : 0) : 0;
+  const trustDelta = nearWorksite ? (crowding ? 0.001 : 0.004) : 0;
+  const willingnessDelta = nearWorksite ? (alignedZone ? 0.012 : 0.006) - (crowding ? 0.006 : 0) : 0;
+  const row = {
+    presence_id: `AWP-${String(sim.presenceLedger.length + 1).padStart(3, '0')}`,
+    tick: world.tick,
+    resident: residentName,
+    source,
+    source_id: sourceId,
+    component_id: component ? component.component_id : 'none',
+    component_gloss: component ? (component.player_gloss || component.material_id || component.component_id) : 'none',
+    avatar_room: world.avatar.room,
+    zone_id: zone.zone_id,
+    avatar_position: { x: Number(world.avatar.x || 0), y: Number(world.avatar.y || 0) },
+    worksite_canvas_position: point,
+    distance_to_worksite: Number(distance.toFixed(3)),
+    near_worksite: nearWorksite,
+    crowding,
+    aligned_zone: alignedZone,
+    cooperation_modifier: Number(cooperationModifier.toFixed(3)),
+    trust_delta: Number(trustDelta.toFixed(3)),
+    willingness_delta: Number(willingnessDelta.toFixed(3)),
+    influence_type: nearWorksite ? 'condition_presence' : 'witness_only',
+    avatar_direct_command: false,
+    resident_can_refuse: true,
+    hidden_law_normal_view: false,
+  };
+  sim.runCount += 1;
+  sim.presenceLedger.push(row);
+  sim.presenceLedger = sim.presenceLedger.slice(-120);
+  recordRealityConstraint('avatar_worksite_presence', {
+    resident: residentName,
+    sourceBeliefId: row.presence_id,
+    materials: component ? [component.component_id] : [],
+    publicObservation: nearWorksite ? `avatar was nearby while ${residentName} worked near ${row.component_id}` : `avatar was away from ${residentName}'s worksite`,
+    residentInterpretation: nearWorksite ? 'presence may feel like help, attention, or crowding' : 'avatar presence did not change worksite conditions',
+    materialTransformation: 'no material transformed by avatar presence alone',
+    timeCost: 0,
+    workCost: 0,
+    toolWear: 0,
+    maintenanceObligation: nearWorksite ? `respect ${residentName}'s work boundary near ${row.component_id}` : 'none',
+    unintendedConsequence: crowding ? 'close presence may crowd the resident' : nearWorksite ? 'nearby presence can shift trust or willingness' : 'no cooperation change',
+    hiddenLawInvolved: 'none in normal view',
+    conservationCheck: true
+  });
+  return row;
+}
+
 function nearbyActionPlan() {
   const zone = locationZoneForAvatar();
   let action = zone.defaultAction;
@@ -5058,6 +5145,9 @@ function currentPrimaryPlaySurfaceSnapshot() {
   const autonomous = world.autonomousResidents || null;
   const routineRows = autonomous && autonomous.routineContextLedger ? autonomous.routineContextLedger : [];
   const latestRoutine = routineRows.length ? routineRows[routineRows.length - 1] : null;
+  const avatarPresence = world.gamePrototypeAvatarPresence || null;
+  const presenceRows = avatarPresence && avatarPresence.presenceLedger ? avatarPresence.presenceLedger : [];
+  const latestPresence = presenceRows.length ? presenceRows[presenceRows.length - 1] : null;
   const selected = world.residents[world.selected] || currentResident();
   const latestProposal = board && board.projectProposals && board.projectProposals.length ? board.projectProposals[board.projectProposals.length - 1] : null;
   const latestPractice = graph && graph.nodes && graph.nodes.length ? graph.nodes[graph.nodes.length - 1] : null;
@@ -5105,6 +5195,13 @@ function currentPrimaryPlaySurfaceSnapshot() {
     routine_context_source: latestRoutine ? (latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id) : 'none',
     routine_context_hint: latestRoutine ? latestRoutine.schedule_hint : 'none',
     routine_context_rows: routineRows.length,
+    avatar_presence_id: latestPresence ? latestPresence.presence_id : 'none',
+    avatar_presence_resident: latestPresence ? latestPresence.resident : 'none',
+    avatar_presence_component_id: latestPresence ? latestPresence.component_id : 'none',
+    avatar_presence_distance: latestPresence ? latestPresence.distance_to_worksite : null,
+    avatar_presence_influence: latestPresence ? latestPresence.influence_type : 'none',
+    avatar_presence_near_worksite: latestPresence ? latestPresence.near_worksite : false,
+    avatar_presence_rows: presenceRows.length,
     resource_pressure: resourcePressure,
     canvas_cues: [
       'look at the highlighted village problem band',
@@ -5113,6 +5210,7 @@ function currentPrimaryPlaySurfaceSnapshot() {
       latestComponent ? `component ${latestComponent.component_id}` : 'physical components not initialized',
       latestLivedPhysics ? `lived physics ${latestLivedPhysics.physics_id} on ${latestLivedPhysics.component_id}` : 'lived-action physics not visible yet',
       latestRoutine ? `routine context ${latestRoutine.context_id} ${latestRoutine.resident} -> ${latestRoutine.suggested_action || latestRoutine.action} near ${latestRoutine.latest_project_visual_id !== 'none' ? latestRoutine.latest_project_visual_id : latestRoutine.latest_component_id !== 'none' ? latestRoutine.latest_component_id : latestRoutine.practice_id}` : 'routine context not visible yet',
+      latestPresence ? `avatar presence ${latestPresence.presence_id} ${latestPresence.influence_type} near=${latestPresence.near_worksite} component=${latestPresence.component_id}` : 'avatar presence not linked to worksite yet',
     ],
     hidden_law_normal_view: false,
     avatar_direct_command: false,
@@ -5136,6 +5234,7 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     component_id: snapshot.active_component_id,
     routine_context_id: snapshot.routine_context_id,
     routine_context_source: snapshot.routine_context_source,
+    avatar_presence_id: snapshot.avatar_presence_id,
     reason,
     canvas_first: true,
   });
@@ -5144,6 +5243,7 @@ function recordPrimaryPlaySurfaceSnapshot(reason = 'player requested primary pla
     snapshot_id: snapshot.snapshot_id,
     cues: snapshot.canvas_cues,
     routine_context_id: snapshot.routine_context_id,
+    avatar_presence_id: snapshot.avatar_presence_id,
     normal_view_hidden_law_exposed: false,
   });
   surface.actionPromptLedger.push({
@@ -5241,6 +5341,7 @@ function formatPrimaryPlaySurface() {
     `Latest physics: ${snapshot.latest_physics_id}`,
     `Latest lived physics: ${snapshot.latest_lived_physics_id} / component=${snapshot.latest_lived_physics_component_id} / rows=${snapshot.lived_physics_rows}`,
     `Routine context: ${snapshot.routine_context_id} / ${snapshot.routine_context_resident} -> ${snapshot.routine_context_suggested_action} / source=${snapshot.routine_context_source}`,
+    `Avatar presence: ${snapshot.avatar_presence_id} / ${snapshot.avatar_presence_resident} near=${snapshot.avatar_presence_near_worksite} / component=${snapshot.avatar_presence_component_id} / influence=${snapshot.avatar_presence_influence}`,
     `Resource pressure: ${snapshot.resource_pressure.length ? snapshot.resource_pressure.join(', ') : 'none'}`,
     `Rows: focus=${surface.focusLedger.length}, cues=${surface.canvasCueLedger.length}, prompts=${surface.actionPromptLedger.length}`,
     `Boundary: ${surface.boundary}`,
@@ -10797,6 +10898,20 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
   const worksiteEffect = worksiteProximity.actionable && worksiteProximity.target_component_id !== 'none'
     ? applyResidentWorksiteComponentEffect(worksiteProximity, materialCost)
     : null;
+  const targetComponentForPresence = worksiteProximity.target_component_id && worksiteProximity.target_component_id !== 'none'
+    ? (world.gamePrototype3DWorld || ensurePrototype3DWorld()).components.find(component => component.component_id === worksiteProximity.target_component_id)
+    : null;
+  const avatarPresence = worksiteProximity.actionable && targetComponentForPresence
+    ? recordAvatarWorksitePresence(residentName, targetComponentForPresence, 'autonomous_resident_worksite', routineContextRow.context_id)
+    : null;
+  if (avatarPresence && avatarPresence.near_worksite) {
+    trustDelta += avatarPresence.trust_delta;
+    progressDelta += Math.max(0, avatarPresence.cooperation_modifier * 0.18);
+    if (proposal && action === 'proposal_work') {
+      proposal.current_support_level = Number(Math.min(1, Number(proposal.current_support_level || 0) + Math.max(0, avatarPresence.cooperation_modifier * 0.45)).toFixed(3));
+      proposal.resident_willingness = Number(clamp(Number(proposal.resident_willingness || 0) + avatarPresence.willingness_delta).toFixed(3));
+    }
+  }
   mutateResident(residentName, {
     trust: trustDelta,
     progress: progressDelta,
@@ -10839,6 +10954,9 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     worksite_blocked_by_distance: worksiteProximity.blocked_by_distance,
     worksite_effect_applied: worksiteEffect ? worksiteEffect.effect_applied : false,
     worksite_target_component_id: worksiteProximity.target_component_id,
+    avatar_presence_id: avatarPresence ? avatarPresence.presence_id : 'none',
+    avatar_near_worksite: avatarPresence ? avatarPresence.near_worksite : false,
+    avatar_presence_influence: avatarPresence ? avatarPresence.influence_type : 'none',
     body_fatigue_after: bodyPhysicsRow.after.fatigue,
     body_footing: bodyPhysicsRow.after.footing,
     body_contacts: bodyPhysicsRow.collision_count,
@@ -11697,6 +11815,7 @@ function formatPrototypeAutonomousResidents() {
   const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
   const routineContexts = (sim.routineContextLedger || []).slice(-6).map(row => `${row.context_id}: ${row.resident} ${row.action}; suggested=${row.suggested_action || 'none'}; visual=${row.latest_project_visual_id}; component=${row.latest_component_id}; practice=${row.practice_id}; hint=${row.schedule_hint}`);
   const worksiteRows = (sim.worksiteProximityLedger || []).slice(-6).map(row => `${row.worksite_effect_id}: ${row.resident} ${row.action}; component=${row.target_component_id}; distance=${row.distance_before}->${row.distance_after}; near=${row.near_enough}; applied=${row.effect_applied}; blocked=${row.blocked_by_distance}`);
+  const presenceRows = (world.gamePrototypeAvatarPresence && world.gamePrototypeAvatarPresence.presenceLedger ? world.gamePrototypeAvatarPresence.presenceLedger : []).slice(-6).map(row => `${row.presence_id}: ${row.resident}; component=${row.component_id}; distance=${row.distance_to_worksite}; near=${row.near_worksite}; influence=${row.influence_type}; command=${row.avatar_direct_command}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
@@ -11706,6 +11825,8 @@ function formatPrototypeAutonomousResidents() {
     ...(routineContexts.length ? routineContexts : ['none']),
     'Worksite proximity effects:',
     ...(worksiteRows.length ? worksiteRows : ['none']),
+    'Avatar worksite presence:',
+    ...(presenceRows.length ? presenceRows : ['none']),
     'Visible expression cues:',
     ...(expressions.length ? expressions : ['none']),
     'Refusals:',
@@ -12662,6 +12783,10 @@ function buildPrototypeAcceptanceReceipt() {
   const worksiteEffectRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.effect_applied === true && row.target_component_id !== 'none' && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const worksiteBlockedRows = autonomous && autonomous.worksiteProximityLedger ? autonomous.worksiteProximityLedger.filter(row => row.blocked_by_distance === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
   const projectProximityRows = projects && projects.projectLedger ? projects.projectLedger.filter(row => row.target_component_id && row.target_component_id !== 'none' && typeof row.worksite_distance === 'number' && row.avatar_direct_command === false).length : 0;
+  const avatarPresence = world.gamePrototypeAvatarPresence || null;
+  const avatarPresenceRows = avatarPresence && avatarPresence.presenceLedger ? avatarPresence.presenceLedger.length : 0;
+  const avatarInfluenceRows = avatarPresence && avatarPresence.presenceLedger ? avatarPresence.presenceLedger.filter(row => row.near_worksite === true && row.avatar_direct_command === false && row.hidden_law_normal_view === false && (Number(row.cooperation_modifier || 0) !== 0 || Number(row.trust_delta || 0) !== 0 || Number(row.willingness_delta || 0) !== 0)).length : 0;
+  const avatarPresenceCueRows = worldStage && worldStage.canvasCueLedger ? worldStage.canvasCueLedger.filter(row => row.avatar_presence_id && row.avatar_presence_id !== 'none' && (row.cues || []).some(cue => /avatar presence/.test(cue))).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -12711,6 +12836,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'routine_context_visible_on_canvas', pass: Boolean(worldStage && routineCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.routine_context_id !== 'none' && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: `${routineCanvasCueRows} routine canvas cue row(s), latest=${worldStage && worldStage.latestSnapshot ? worldStage.latestSnapshot.routine_context_id : 'none'}` },
 	    { id: 'routine_context_moves_resident_bodies', pass: Boolean(residentBodies && routineDirectedBodyRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineDirectedBodyRows} routine-directed body step(s)` },
 	    { id: 'worksite_proximity_affects_component_work', pass: Boolean(autonomous && worksiteProximityRows > 0 && worksiteEffectRows > 0 && projectProximityRows > 0 && autonomous.worksiteProximityLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${worksiteProximityRows} proximity row(s), ${worksiteEffectRows} effect row(s), ${worksiteBlockedRows} blocked row(s), ${projectProximityRows} project proximity row(s)` },
+	    { id: 'avatar_presence_influences_worksite_cooperation', pass: Boolean(avatarPresence && avatarPresenceRows > 0 && avatarInfluenceRows > 0 && avatarPresenceCueRows > 0 && avatarPresence.presenceLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false && row.resident_can_refuse === true)), evidence: `${avatarPresenceRows} presence row(s), ${avatarInfluenceRows} influence row(s), ${avatarPresenceCueRows} canvas cue row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },
@@ -14780,33 +14906,36 @@ function supportVillageProposal() {
   const board = ensureVillageBoard();
   if (!board.projectProposals.length) runVillageBoardLoop();
   const proposal = board.projectProposals.find(row => row.status !== 'accepted' && row.status !== 'refused' && row.status !== 'completed' && !row.project_completed) || board.projectProposals[board.projectProposals.length - 1];
-  const accepted = proposal.resident_willingness + proposal.current_support_level >= 0.48;
-  proposal.current_support_level = Number(Math.min(1, proposal.current_support_level + 0.25).toFixed(3));
+  const targetComponent = projectTargetComponentForProposal(proposal);
+  const avatarPresence = recordAvatarWorksitePresence(proposal.proposer, targetComponent, 'proposal_support', proposal.proposal_id);
+  const accepted = proposal.resident_willingness + proposal.current_support_level + avatarPresence.cooperation_modifier >= 0.48;
+  proposal.current_support_level = Number(Math.min(1, proposal.current_support_level + 0.25 + avatarPresence.cooperation_modifier).toFixed(3));
+  proposal.resident_willingness = Number(clamp(Number(proposal.resident_willingness || 0) + avatarPresence.willingness_delta).toFixed(3));
   proposal.status = accepted ? 'accepted' : 'resident still considering';
   proposal.project_progress = Number(proposal.project_progress || 0);
   proposal.project_work_ticks = Number(proposal.project_work_ticks || 0);
   if (accepted) {
     world.resources.fiber = Math.max(0, world.resources.fiber - 1);
     world.resources.care = Math.max(0, world.resources.care - 1);
-    mutateResident(proposal.proposer, { trust: 0.006, progress: 0.008, memory: `felt supported on ${proposal.problem_addressed}`, historyEvent: 'village board support', historyDetail: proposal.proposal_id });
+    mutateResident(proposal.proposer, { trust: 0.006 + avatarPresence.trust_delta, progress: 0.008, memory: avatarPresence.near_worksite ? `felt supported nearby on ${proposal.problem_addressed}` : `felt supported on ${proposal.problem_addressed}`, historyEvent: 'village board support', historyDetail: `${proposal.proposal_id}; presence ${avatarPresence.presence_id}` });
   }
-  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false });
+  board.supportEvents.push({ proposalId: proposal.proposal_id, accepted, avatarAction: 'support conditions', whoFeltThis: proposal.proposer, forced: false, avatar_presence_id: avatarPresence.presence_id, near_worksite: avatarPresence.near_worksite });
   recordRealityConstraint('proposal_support', {
     resident: proposal.proposer,
     sourceBeliefId: proposal.proposal_id,
     materials: proposal.materials_needed,
     publicObservation: proposal.problem_addressed,
-    residentInterpretation: accepted ? 'support accepted' : 'support not enough yet',
+    residentInterpretation: accepted ? `support accepted; presence ${avatarPresence.influence_type}` : `support not enough yet; presence ${avatarPresence.influence_type}`,
     materialTransformation: accepted ? 'fiber and care consumed as support' : 'no material consumed yet',
     timeCost: 1,
     workCost: accepted ? 2 : 1,
     toolWear: 0,
     maintenanceObligation: accepted ? `follow through ${proposal.proposal_id}` : 'none',
-    unintendedConsequence: accepted ? 'resource commons reduced' : 'resident autonomy preserved',
+    unintendedConsequence: avatarPresence.crowding ? 'nearby support risked crowding' : accepted ? 'resource commons reduced' : 'resident autonomy preserved',
     hiddenLawInvolved: 'none in normal view',
     conservationCheck: true
   });
-  return log('supportVillageProposal', { proposalId: proposal.proposal_id, accepted, support: proposal.current_support_level, resident: proposal.proposer });
+  return log('supportVillageProposal', { proposalId: proposal.proposal_id, accepted, support: proposal.current_support_level, resident: proposal.proposer, avatarPresenceId: avatarPresence.presence_id, nearWorksite: avatarPresence.near_worksite, avatarDirectCommand: false });
 }
 
 function askVillageBoardQuestion() {
@@ -15135,15 +15264,14 @@ function advanceVillageProject() {
   }
   const consumed = consumeProjectMaterials(materials);
   const materialWorld = world.gamePrototype3DWorld || ensurePrototype3DWorld();
-  const targetComponent = materialWorld && materialWorld.components
-    ? materialWorld.components.find(component => Number(component.stability || 1) < 0.75 || Number(component.damage || 0) > 0.12) || materialWorld.components[0]
-    : null;
+  const targetComponent = projectTargetComponentForProposal(proposal);
   const projectProximity = projectWorksiteProximityForProposal(proposal, targetComponent);
+  const avatarPresence = recordAvatarWorksitePresence(proposal.proposer, targetComponent, 'village_project_work', proposal.proposal_id);
   const toolUse = applyToolPhysicsUse(proposal.proposer, 'project_work', targetComponent, 'village_project_work');
   proposal.project_work_ticks = Number(proposal.project_work_ticks || 0) + 1;
   const previousProgress = Number(proposal.project_progress || 0);
   const toolModifier = toolUse.action_blocked ? -0.22 : (toolUse.failed ? -0.08 : Math.min(0.08, Number(toolUse.fit || 0) * 0.08));
-  const progressGain = Math.max(0.05, 0.36 + Math.min(0.14, Number(proposal.current_support_level || 0) * 0.12) + (proposal.resident_willingness > 0.62 ? 0.04 : 0) + toolModifier + projectProximity.progress_modifier);
+  const progressGain = Math.max(0.05, 0.36 + Math.min(0.14, Number(proposal.current_support_level || 0) * 0.12) + (proposal.resident_willingness > 0.62 ? 0.04 : 0) + toolModifier + projectProximity.progress_modifier + avatarPresence.cooperation_modifier);
   proposal.project_progress = Number(Math.min(1, previousProgress + progressGain).toFixed(3));
   const completed = proposal.project_progress >= 1;
   proposal.status = completed ? 'completed' : 'in progress';
@@ -15167,6 +15295,11 @@ function advanceVillageProject() {
     worksite_near_enough: projectProximity.near_enough,
     worksite_progress_modifier: projectProximity.progress_modifier,
     construction_scale: projectProximity.construction_scale,
+    avatar_presence_id: avatarPresence.presence_id,
+    avatar_near_worksite: avatarPresence.near_worksite,
+    avatar_worksite_distance: avatarPresence.distance_to_worksite,
+    avatar_cooperation_modifier: avatarPresence.cooperation_modifier,
+    avatar_direct_command: false,
     progress_before: previousProgress,
     progress: proposal.project_progress,
     status: proposal.status,
@@ -15211,9 +15344,11 @@ function advanceVillageProject() {
     }
   }
   mutateResident(proposal.proposer, {
-    trust: completed ? 0.012 : 0.006,
+    trust: (completed ? 0.012 : 0.006) + avatarPresence.trust_delta,
     progress: completed ? 0.02 : 0.01,
-    memory: completed ? `completed ${proposal.problem_addressed}` : `worked on ${proposal.problem_addressed}`,
+    memory: avatarPresence.near_worksite
+      ? (completed ? `completed ${proposal.problem_addressed} while Gabriel was nearby` : `worked on ${proposal.problem_addressed} with nearby attention`)
+      : completed ? `completed ${proposal.problem_addressed}` : `worked on ${proposal.problem_addressed}`,
     historyEvent: completed ? 'project completed' : 'project advanced',
     historyDetail: proposal.proposal_id
   });
@@ -15223,18 +15358,18 @@ function advanceVillageProject() {
     sourceBeliefId: proposal.proposal_id,
     materials,
     publicObservation: proposal.problem_addressed,
-    residentInterpretation: `${proposal.status}; worksite distance ${projectProximity.distance}`,
+    residentInterpretation: `${proposal.status}; worksite distance ${projectProximity.distance}; avatar presence ${avatarPresence.influence_type}`,
     materialTransformation: `consumed ${Object.entries(consumed).map(([material, count]) => `${count} ${material}`).join(', ')} into resident project work; construction ${construction.construction_id} added ${construction.components_added.length} component(s) and repaired ${construction.components_repaired.length} at proximity scale ${projectProximity.construction_scale}`,
     timeCost: 1,
     workCost: materials.length + 1,
     toolWear: Number(toolUse.wear_delta || 0),
     maintenanceObligation: toolUse.action_blocked ? `repair ${toolUse.tool_id}` : completed ? `maintain completed ${proposal.proposal_id}` : `continue ${proposal.proposal_id}`,
-    unintendedConsequence: toolUse.action_blocked ? 'tool failure slowed resident project work' : !projectProximity.near_enough ? 'distance reduced resident work effect' : completed ? 'new maintenance burden exists' : 'ordinary schedules delayed by project work',
+    unintendedConsequence: toolUse.action_blocked ? 'tool failure slowed resident project work' : avatarPresence.crowding ? 'avatar presence risked crowding work' : !projectProximity.near_enough ? 'distance reduced resident work effect' : completed ? 'new maintenance burden exists' : 'ordinary schedules delayed by project work',
 	    hiddenLawInvolved: proposal.related_practice_nodes && proposal.related_practice_nodes.length ? 'related practice and component physics remain audit-only' : 'component physics audit-only',
 	    conservationCheck: true
 	  });
-	  recordPrototypeMilestone('village-project-progress', `${proposal.proposal_id} ${proposal.status} at ${proposal.project_progress}; construction ${construction.construction_id}; distance ${projectProximity.distance}; tool ${toolUse.tool_id}`);
-	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, visualId: visualCue.visual_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed, toolBlocked: toolUse.action_blocked, worksiteDistance: projectProximity.distance, worksiteNearEnough: projectProximity.near_enough, constructionScale: projectProximity.construction_scale });
+	  recordPrototypeMilestone('village-project-progress', `${proposal.proposal_id} ${proposal.status} at ${proposal.project_progress}; construction ${construction.construction_id}; distance ${projectProximity.distance}; avatar ${avatarPresence.presence_id}; tool ${toolUse.tool_id}`);
+	  return log('advanceVillageProject', { proposalId: proposal.proposal_id, status: proposal.status, stalled: false, completed, progress: proposal.project_progress, materials: Object.keys(consumed).join(','), constructionId: construction.construction_id, visualId: visualCue.visual_id, componentsAdded: construction.components_added.length, componentsRepaired: construction.components_repaired.length, practiceId: construction.practice_id || null, practiceStatus: construction.practice_status_after || null, toolUseId: toolUse.tool_use_id, toolFailed: toolUse.failed, toolBlocked: toolUse.action_blocked, worksiteDistance: projectProximity.distance, worksiteNearEnough: projectProximity.near_enough, constructionScale: projectProximity.construction_scale, avatarPresenceId: avatarPresence.presence_id, avatarNearWorksite: avatarPresence.near_worksite, avatarDirectCommand: false });
 }
 
 function ensurePrototypeCommonsSupport() {

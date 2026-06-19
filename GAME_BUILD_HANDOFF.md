@@ -262,6 +262,12 @@ Resident work now depends on physical proximity. Autonomous repair, proposal wor
 
 Resident project construction also records proposer distance to the target component. That distance changes project progress and construction repair scale, so project labor is coupled to the body-position simulation rather than a detached progress bar.
 
+## Prototype v0 avatar worksite-presence update
+
+Avatar presence now affects cooperation as a condition, not a command. When the avatar is near a physical worksite, support/project/autonomous work rows can record a bounded presence influence: cooperation modifier, trust delta, willingness delta, distance, crowding, and whether the resident can still refuse.
+
+This lets the player help by being present near the work, but the simulation still records `avatar_direct_command: false`. Presence alone never transforms material; it only changes social/attention conditions around resident-chosen work.
+
 ## Prototype v0 deep-time stochastic physics update
 
 Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.

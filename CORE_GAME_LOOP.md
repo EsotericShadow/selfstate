@@ -138,9 +138,10 @@
 6. The body step records distance before/after, fatigue, footing, contacts, slip risk, and whether the resident moved toward the target.
 7. Worksite proximity decides whether repair, proposal work, practice maintenance, or safety work changes a nearby component.
 8. Distant work records partial or blocked effort instead of changing matter at a distance.
-9. The primary canvas draws the public resident-to-worksite link using simple dashed cues.
-10. Normal village state shows the public routine link while hidden laws remain audit-only.
-11. Acceptance requires routine rows, body movement, worksite effects, and canvas cues to stay no-direct-command and normal-view safe.
+9. Avatar presence near the worksite can influence trust, willingness, and cooperation as a condition, not as a command.
+10. The primary canvas draws the public resident-to-worksite link using simple dashed cues.
+11. Normal village state shows the public routine link while hidden laws remain audit-only.
+12. Acceptance requires routine rows, body movement, worksite effects, avatar-presence influence, and canvas cues to stay no-direct-command and normal-view safe.
 
 ## Prototype QA loop
 
@@ -263,10 +264,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 2. The avatar may support conditions, ask, wait, or offer material help, but cannot assign labor directly.
 3. Accepted proposals advance through project work only when materials, time, and resident willingness are available.
 4. Work consumes commons resources, checks proposer distance to the target component, writes a causal ledger row, updates resident memory, and repairs physical components when relevant.
-5. Completed projects can add new resident-built components into an existing structure through affordances such as support, span, binding, cover, or container.
-6. Distance affects progress and repair scale; the body-position simulation is allowed to make project work slower or partial.
-7. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
-8. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.
+5. Avatar presence near the worksite can add a small cooperation modifier while preserving resident refusal.
+6. Completed projects can add new resident-built components into an existing structure through affordances such as support, span, binding, cover, or container.
+7. Distance affects progress and repair scale; the body-position simulation is allowed to make project work slower or partial.
+8. Scarcity or unreadiness creates a stalled project row instead of spawning resources or forcing obedience.
+9. Completed projects create maintenance obligations and become part of save/return, QA, acceptance, and replay evidence.
 
 ## Project-to-component construction loop
 

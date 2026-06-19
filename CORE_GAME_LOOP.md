@@ -115,3 +115,11 @@
 
 The first playable loop includes a direct save/return pass: enter the village, let residents and pressures move, save a prototype slot, continue simulation, then return to the slot. The return path restores the saved world snapshot while preserving a return log so later sessions can audit what was restored and from which replay depth.
 
+
+## Ordinary play to practice loop
+
+1. The player performs normal village actions such as talk, ask schedule, help, borrow, or return.
+2. The shell records the action as ordinary pressure, including resident, bottleneck type, and source belief if public pressure exists.
+3. Repeated ordinary actions can trigger a resident-generated practical test.
+4. Successful or failed tests feed the emergent practice graph, causal ledger, and resident memory without installing a correct modern concept.
+

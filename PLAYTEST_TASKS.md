@@ -18,3 +18,5 @@
 13. Run Auto burst and confirm the canvas visibly changes: resident schedules/markers, proposal squares, practice markers, deep-time effect dots, resource row, and survival bar should reflect the simulation state.
 
 14. Save a prototype slot, run Auto burst, return the slot, and confirm the Save / return card restores year/day/practice/proposal summaries and can export a receipt.
+
+15. After seeding public pressure, ask a resident schedule twice and confirm Practical discovery shows ordinary play feed rows plus an auto-generated resident test.

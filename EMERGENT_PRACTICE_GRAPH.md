@@ -8,7 +8,7 @@ A practice node should only appear when a repeated resident behavior solves or m
 
 ## Practice node ingredients
 
-- Local name.
+- Resident term and imperfect player gloss.
 - Origin event.
 - Origin resident or household.
 - Problem pressure.
@@ -19,6 +19,7 @@ A practice node should only appear when a repeated resident behavior solves or m
 - Failed ancestor tests.
 - Social transmission path.
 - Mutation variants.
+- Sound roots, term drift, household variants, and translation confidence where language is involved.
 - Adoption level.
 - Maintenance cost.
 - Risk flags.
@@ -42,3 +43,15 @@ The same hidden law can produce different local histories:
 ## Avatar boundary
 
 The avatar may introduce an anomaly, question, warning, demonstration, material, or hint. The avatar may not install the correct explanation, name a future technology, command adoption, or guarantee an unlock.
+
+## Engine concept, resident term, player gloss
+
+Practice nodes should keep three language layers separate:
+
+- Engine concept: stable internal simulation/audit identifier.
+- Resident term: local word cultivated from grounded sound roots, repeated use, social transmission, risk, usefulness, ritual, or taboo.
+- Player gloss: imperfect readability translation that does not give residents the hidden engine truth.
+
+A practice should not become "storage," "electricity," "agriculture," "plank," or another English technology label just because the engine can classify it. If residents have not discovered and transmitted a matching concept, the visible term should remain local, partial, and historically grounded.
+
+Component structures should likewise emerge from affordances and material physics. A raised dry vessel practice is a history of supports, bindings, vessels, moisture, repeated failures, resident language, and maintenance, not a fixed storage-building asset.

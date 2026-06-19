@@ -40,3 +40,11 @@
 24. Move or click into different village zones, use Nearby action, and confirm the action changes by place while the Nearby card, replay, and causal ledger preserve zone, resident, result, and no direct command.
 
 25. Use End day and confirm the Day cycle card, canvas top bar, replay, and Reality Constraint Ledger show weather/resource pressure, autonomous resident actions, project or commons follow-through, and no free time skip.
+
+26. Use Return later and confirm the village advances forward while the avatar is away, then returns with resident memory, resource deltas, replay rows, and no old-state reset.
+
+27. Use Material step and Physics step, then confirm the 3D stochastic physics card shows component-built structures, forces/support/contact/failure rows, resident terms, imperfect glosses, and no fixed building asset.
+
+28. Inspect the canvas after a physics step and confirm the raised storage practice is drawn from physical components such as rough branch supports, fiber bindings, reed cover, and clay vessels rather than a storage-building sprite.
+
+29. Toggle audit and confirm engine concepts and hidden material/physics laws are audit-only while resident-facing language remains local terms plus imperfect player glosses.

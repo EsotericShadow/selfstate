@@ -4,7 +4,7 @@
 
 1. Enter or return to the village.
 2. Move near residents, objects, routes, or public boards.
-3. Ask questions, offer help, provide material support, suggest priorities, demonstrate a local effect, warn, or wait.
+3. Ask questions, offer help, provide material support, suggest priorities, demonstrate a local effect, warn, inspect physical objects, or wait.
 4. Observe resident responses, refusals, delays, disagreements, and visible expressions.
 5. Support a proposal or step back.
 6. Return later and see what persisted, decayed, burdened, or changed.
@@ -23,9 +23,19 @@
 
 1. Apply stable hidden material laws.
 2. Apply weather, moisture, material, time, labor, tool wear, storage, and maintenance constraints.
-3. Generate stochastic events with causal trace.
-4. Require recovery to consume time, care, cost, or stabilization.
-5. Preserve public observations separately from hidden simulator law.
+3. Advance stochastic physics: mass, gravity, support, contact/collision, friction, fatigue, decay, and material transformation.
+4. Generate stochastic events with causal trace.
+5. Require recovery to consume time, care, cost, or stabilization.
+6. Preserve public observations separately from hidden simulator law.
+
+## 3D stochastic physics/material loop
+
+1. The world stores objects as physical components with 3D position, dimensions, mass, material, moisture, damage, stability, and affordance.
+2. Each physics step applies gravity, support checks, normal force, friction, contact/collision checks, and stochastic material fatigue.
+3. Unsupported or overloaded components shift, fall, accumulate damage, or create maintenance burden.
+4. Structures are derived from components and affordances, not fixed building assets.
+5. The renderer projects the physical state with simple primitives while audit records the hidden physical cause.
+6. Resident observations and language update from what happened, not from engine concept labels.
 
 ## Emergent practice loop
 
@@ -35,6 +45,15 @@
 4. Repeated useful behavior creates a practice node.
 5. Social transmission spreads and mutates it.
 6. Maintenance cost, risk, usefulness, and belief determine survival.
+
+## Resident language/gloss loop
+
+1. Residents repeatedly attend to a material, action, place, risk, or useful practice.
+2. Grounded sound roots attach to shared attention, gesture, usefulness, danger, repair, ritual, or taboo.
+3. Roots compound into resident terms carried by households and practices.
+4. Terms drift, shorten, split into variants, become practical or taboo, or disappear.
+5. The player sees imperfect glosses for readability.
+6. Audit view may reveal engine concepts, but residents do not speak hidden simulator truth.
 
 ## Recovery loop
 
@@ -136,7 +155,7 @@ The first playable loop includes a direct save/return pass: enter the village, l
 
 1. The player runs or exports the acceptance receipt from the prototype surface.
 2. The shell runs Prototype QA if needed and ensures a real save/return event exists.
-3. The receipt checks visuals, save/return, autonomous residents, causal ledger, emergent practice graph, village proposals, million-year survival path, ordinary-play tests, readable behavior, and game-build mode.
+3. The receipt checks visuals, save/return, autonomous residents, causal ledger, emergent practice graph, village proposals, million-year survival path, ordinary-play tests, readable behavior, stochastic physics substrate, resident language/gloss separation, and game-build mode.
 4. The receipt is stored locally and exported as JSON for durable playtest evidence.
 
 
@@ -210,3 +229,12 @@ The first playable loop includes a direct save/return pass: enter the village, l
 4. Accepted project work may advance, and low or stalled commons may receive source-traced support.
 5. The day recap records weather, resident actions, resources after, project result, commons result, and causal ledger evidence.
 6. Save/return, QA, acceptance, replay, and the canvas top bar preserve day-cycle history.
+
+
+## Return-later loop
+
+1. The avatar leaves the village for several offscreen days.
+2. The world advances forward through day-cycle pressure, resident autonomy, projects, commons, resources, and physics where available.
+3. The avatar returns to the arrival court without restoring an old state.
+4. Residents remember the absence, resource deltas remain, and replay records absence/return receipts.
+5. QA and acceptance treat this as forward persistence, separate from explicit save-slot rollback.

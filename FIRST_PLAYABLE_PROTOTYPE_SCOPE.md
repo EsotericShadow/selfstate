@@ -5,6 +5,8 @@
 - One village.
 - Six residents maximum.
 - Small map around shelter, storage, work area, route, and board.
+- Basic 3D simulation state for physical components, materials, support, collision/contact, decay, and stochastic failure.
+- Simple primitive rendering of simulated objects.
 - Small resource set: water, fiber, wood, care, and one or two special materials.
 - One anomaly family.
 - One or two emergent practice chains.
@@ -14,6 +16,7 @@
 - One save/return loop.
 - One audit/replay mode.
 - One normal player-facing interface.
+- One bounded resident language/gloss layer for local terms that emerge from grounded practice history.
 
 ## First prototype success condition
 
@@ -29,7 +32,8 @@ A new player can enter the village, learn that residents have their own concerns
 - Large tech trees.
 - Open-ended LLM dialogue.
 - New consciousness/metaphysics mechanics.
-- Full 3D engine replacement.
+- Polished 3D engine/art pipeline.
+- Production-certified physical accuracy.
 - Production backend persistence.
 
 ## Deep-time prototype target

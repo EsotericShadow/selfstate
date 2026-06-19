@@ -19,12 +19,15 @@ This is not a finished game. It is the foundation for building one.
 - Reality Constraint Ledger for material sources, time/work cost, tool wear, maintenance, conservation, and hidden-law/belief separation.
 - Avatar hint divergence where households reinterpret questions, warnings, demonstrations, or materials differently.
 - Hint branch return persistence with upkeep burden, reputation effects, recoverable forgetting, revival, and visible expression markers.
+- Physics-first 3D material substrate in the prototype shell: component objects carry mass, support, collision/contact, friction, moisture, decay, damage, and stochastic failure state.
+- Resident local-language layer for practices and materials: engine concepts remain internal, resident terms emerge from grounded sound roots, and the player sees imperfect glosses.
 
 ## First game build should include
 
 - One village.
 - Up to six named residents.
-- A small walkable browser world using the maintained shell as the starting point.
+- A small walkable 3D-simulation browser world using the maintained shell as the starting point.
+- Simple primitive rendering of actual simulated components, not decorative fixed building sprites.
 - A normal player interface for entering, moving, asking, helping, waiting, supporting proposals, and inspecting public outcomes.
 - One anomaly family with hidden laws and resident-visible observations.
 - One or two emergent practice chains.
@@ -38,7 +41,8 @@ This is not a finished game. It is the foundation for building one.
 - No consciousness claim.
 - No moral patienthood claim.
 - No LLM dependency for resident behavior.
-- No full physics engine.
+- No production-certified physical accuracy or polished physics tooling yet.
+- No polished 3D art pipeline.
 - No region-scale civilization simulation.
 - No combat, war, economy, or population-growth systems.
 - No deterministic or pre-authored technology tree.
@@ -54,6 +58,7 @@ This is not a finished game. It is the foundation for building one.
 5. Use Village Board proposals as the player's main management surface.
 6. Make save/restore and return-session persistence part of the first playable loop.
 7. Only add mechanics that improve the first village prototype.
+8. Keep physics as the substrate: material, support, time, labor, collision/contact, decay, and stochastic failure should explain world change.
 
 ## Prototype branch
 
@@ -151,3 +156,17 @@ The prototype now includes a `Nearby action` control tied to the avatar's curren
 ## Prototype v0 village day-cycle update
 
 The prototype now includes an `End day` loop. One button advances weather/resource pressure, several autonomous resident actions, accepted project work when possible, commons recovery when needed, and a readable day recap. Weather changes are bounded and causal: drizzle can damp fiber while adding water, dry wind can reduce water while helping fiber, cold can consume care, fallen branches can add wood, and storage damp can decay stored material. Each day writes weather, resident, project, commons, and causal ledger evidence instead of skipping time for free.
+
+
+## Prototype v0 return-later update
+
+The prototype now includes a `Return later` loop separate from save-slot rollback. Leaving the village advances several offscreen days, lets weather/resources/resident actions continue, returns the avatar to the arrival court, and writes absence plus return receipts. This proves forward return-session persistence instead of restoring an old snapshot: residents remember the absence, resources may change, and the replay records that no direct reset occurred.
+
+
+## Prototype v0 3D stochastic physics and language update
+
+The prototype direction is now physics-first 3D simulation with basic visual presentation. The shell includes a component-built material world where a raised storage practice is assembled from rough branches, fiber bindings, reed cover, and clay vessels. These are simulated components with 3D positions, mass, material properties, support roles, moisture, damage, and stability. The canvas projects those components as simple primitives.
+
+The physics step applies gravity, support checks, contact/collision checks, friction, stochastic fatigue/failure probability, material transformation, and causal ledger rows. This is the intended substrate for the game. It is not a claim of production-certified physical accuracy.
+
+Residents do not receive English technology labels. The shell now tracks grounded sound roots and resident terms such as `ta`, `ku`, `ren`, and `taku-ren`, with origin events, adoption, drift, variants, and imperfect player glosses. Engine concepts remain audit/internal terms.

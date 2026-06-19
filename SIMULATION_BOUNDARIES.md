@@ -4,10 +4,10 @@
 
 - No subjective-consciousness claim.
 - No moral-patienthood claim.
-- No autonomous language claim.
+- No open-ended autonomous natural-language claim.
 - No real science claim.
 - No complete civilization simulator claim.
-- No full physics engine claim.
+- No production-certified physical accuracy claim.
 - No production persistence claim.
 
 ## Dependency boundary
@@ -32,9 +32,27 @@ The system should preserve these invariants:
 - No avatar-installed correct concept.
 - No permanent punishment loops.
 
+## Physics boundary
+
+Physics is the intended substrate of the game simulation. World changes should be explained through stochastic physical state: matter, mass, support, gravity, contact/collision, friction, moisture, heat where modeled, decay, tool wear, distance, work, fatigue, failure, and repair.
+
+The current prototype can use bounded discrete approximations instead of a production-grade solver, but it should not fall back to a fantasy state machine where effects happen only because a script says so.
+
+Minimum physics separation:
+
+- Hidden physical state: material properties, forces, support, failure probabilities, and engine concepts.
+- Public observation: what residents can notice.
+- Resident belief and resident word: local interpretation, possibly wrong or partial.
+- Player gloss: imperfect translation for readability.
+- Audit view: hidden simulator terms and causal trace.
+
 ## Audit boundary
 
 Audit view may show hidden laws, source links, causal ledger entries, and simulator invariants. Normal resident view should show local names, observations, beliefs, visible behavior, and public consequences.
+
+## Resident language boundary
+
+Resident local vocabulary is a bounded simulation mechanic, not an open-ended language claim. Terms should emerge from grounded sound roots, repeated attention, social transmission, danger, usefulness, ritual, taboo, and practice history. Player glosses may aid readability, but resident terms must not equal hidden engine concepts or modern English technology names by default.
 
 ## Deep-time boundary
 

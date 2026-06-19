@@ -99,3 +99,17 @@ Prototype v0 includes a minimal water/fluid subsystem:
 - save/return and acceptance counters for flow, leak, vessel, quality, route, and safety rows
 
 This is bounded causal fluid gameplay, not a full CFD simulation.
+
+## Included prototype physics layer: ecology/food
+
+Prototype v0 includes a minimal ecology/food subsystem:
+
+- small edible patches with biomass, carrying capacity, regrowth, and rot sensitivity
+- growth coupling to terrain moisture, thermal state, water route stress, and stochastic pressure
+- harvest rows that add food only from patch biomass
+- spoilage rows for stored food
+- hunger rows that consume stored food to reduce resident hunger
+- recoverable resident proposals for food pressure, spoilage, or overharvest risk
+- save/return and acceptance counters for growth, harvest, spoilage, hunger, and safety rows
+
+This is bounded survival ecology, not an agriculture tech tree.

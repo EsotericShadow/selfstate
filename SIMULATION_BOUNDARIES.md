@@ -93,3 +93,7 @@ Thermal simulation should support warmth, drying, smoke, bounded ignition risk, 
 ## Water/fluid physics boundary
 
 Water should behave like a bounded physical substance. It can be stored, leak, evaporate, pool, flow through a simple channel, contaminate, and alter routes. It should not teleport, spawn, vanish without a cause, or create unrecoverable punishment loops.
+
+## Ecology/food physics boundary
+
+Food should behave like a bounded ecological product. It must grow, be harvested, spoil, and be consumed. The first prototype should not introduce a deterministic agriculture tech tree, population expansion, or abstract hunger slider detached from material food.

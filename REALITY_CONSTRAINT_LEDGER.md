@@ -185,3 +185,15 @@ Water movement must satisfy:
 - no hidden-law exposure in normal player view
 
 Ledger rows now include `water_fluid_physics`, with flow rows, leak rows, vessel state, quality rows, route pressure, safety proposal links, conservation flags, and resident-facing interpretation.
+
+## Ecology/food physics ledger rows
+
+Food work must satisfy:
+
+- no food without growth, harvest, storage, or source-traced commons support
+- no hunger relief without food consumption or an audited harvest path
+- no spoilage without heat, moisture, contamination, storage, or time pressure
+- no overharvest without reducing patch biomass
+- no hidden-law exposure in normal player view
+
+Ledger rows now include `ecology_food_physics`, with patch growth rows, harvest rows, spoilage rows, hunger rows, proposal links, conservation flags, and resident-facing interpretation.

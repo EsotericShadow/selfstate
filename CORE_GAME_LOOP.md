@@ -341,3 +341,11 @@ Water movement now follows:
 weather/resource stock -> vessel/container sync -> terrain slope and moisture -> evaporation/leakage/flow -> route pressure and walkability -> resident safety or project proposal -> causal ledger row.
 
 This keeps water as a physical substance with volume, containment, quality, and consequences rather than a pure counter.
+
+## Ecology/food physics loop
+
+Food now follows:
+
+terrain/water/heat state -> patch growth or rot -> cautious harvest -> spoilable stored food -> resident hunger relief -> overharvest/spoilage proposal if needed -> causal ledger row.
+
+The forage action can reduce hunger only through stored food or a successful ecology/harvest path.

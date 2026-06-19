@@ -47,10 +47,10 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, PROTOTYPE_SAVE_KEY, PROTOTYPE_ACCEPTANCE_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'practicalDiscovery', 'emergentPracticeGraph', 'villageBoard', 'realityConstraintLedger', 'avatarHintDivergence', 'hintBranchPersistence', 'gamePrototype', 'deepTimeCivilization', 'autonomousResidents', 'gamePrototypeQA', 'prototypeClock', 'gamePrototypeSaves', 'gamePrototypeAcceptance', 'gamePrototypeDivergence', 'gamePrototypeCommons', 'gamePrototypeProjects', 'gamePrototypeCommonsSupport', 'gamePrototypeNearbyActions', 'gamePrototypeDayCycle', 'gamePrototypeReturnLater', 'gamePrototype3DWorld', 'gamePrototypeMaterialManipulation', 'gamePrototypeResidentBodies', 'gamePrototypeTerrain', 'gamePrototypeTools', 'gamePrototypeResourcePhysics', 'gamePrototypeThermalPhysics', 'gamePrototypeWaterPhysics', 'gamePrototypeEcologyPhysics', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
-  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
+  directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay', 'exportPrototypeAcceptanceReceipt', 'comparePrototypeDivergenceSeeds', 'auditPrototypeCommons', 'runPrototypeGuidedStep', 'advanceVillageProject', 'supportResourceCommons', 'performNearbyAction', 'endVillageDay', 'leaveAndReturnLater', 'runPrototypeMaterialWorldStep', 'runPrototypePhysicsStep', 'runTerrainPhysicsStep', 'runTerrainPhysicsLoop', 'runToolPhysicsStep', 'runToolPhysicsLoop', 'runResourcePhysicsStep', 'runResourcePhysicsLoop', 'runThermalPhysicsStep', 'runThermalPhysicsLoop', 'runWaterPhysicsStep', 'runWaterPhysicsLoop', 'runEcologyPhysicsStep', 'runEcologyPhysicsLoop', 'runResidentMaterialManipulationStep', 'runResidentMaterialManipulationLoop', 'runResidentBodyPhysicsStep', 'runResidentBodyPhysicsLoop', 'runDeepTimePhysicsEpoch']
 };
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -65,7 +65,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   selected: 'Ari',
   audit: false,
   residents,
-  resources: { water: 12, fiber: 10, wood: 17, care: 6 },
+  resources: { water: 12, fiber: 10, wood: 17, care: 6, food: 7 },
   replay: [],
   returnContinuity: null,
   returnGreetingContinuity: null,
@@ -107,6 +107,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
       gamePrototypeResourcePhysics: null,
       gamePrototypeThermalPhysics: null,
       gamePrototypeWaterPhysics: null,
+      gamePrototypeEcologyPhysics: null,
 		  promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -856,6 +857,7 @@ function endVillageDay(options = {}) {
   const resourceResult = runResourcePhysicsStep('village day resource stock').payload;
   const thermalResult = runThermalPhysicsStep('village day watched warmth').payload;
   const waterResult = runWaterPhysicsStep('village day water movement').payload;
+  const ecologyResult = runEcologyPhysicsStep('village day ecology').payload;
 	  const beforeActions = world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0;
   const residentActionIds = [];
   for (let i = 0; i < 4; i += 1) {
@@ -880,6 +882,7 @@ function endVillageDay(options = {}) {
     resource_result: resourceResult ? { stepId: resourceResult.stepId || 'none', resources: resourceResult.resources || { ...world.resources }, losses: resourceResult.losses || 0, gains: resourceResult.gains || 0 } : null,
     thermal_result: thermalResult ? { stepId: thermalResult.stepId || 'none', smoke: thermalResult.totalSmoke || 0, heat: thermalResult.maxHeat || 0, hazard: thermalResult.hazard === true } : null,
     water_result: waterResult ? { stepId: waterResult.stepId || 'none', leaks: waterResult.leaks || 0, routePressure: waterResult.routePressure || 0, water: waterResult.water || world.resources.water } : null,
+    ecology_result: ecologyResult ? { stepId: ecologyResult.stepId || 'none', harvested: ecologyResult.harvested || 0, fed: ecologyResult.fed || 0, food: ecologyResult.food || world.resources.food } : null,
 	    resident_actions_added: (world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0) - beforeActions,
     resident_action_sample: residentActionIds,
     project_result: projectResult ? { proposalId: projectResult.proposalId || 'none', status: projectResult.status || projectResult.reason || 'none', completed: projectResult.completed === true } : null,
@@ -892,11 +895,11 @@ function endVillageDay(options = {}) {
   cycle.recapLedger.push({
     recap_id: `GPDR-${String(cycle.recapLedger.length + 1).padStart(3, '0')}`,
     day: dayNumber,
-	    summary: `${offscreen ? 'offscreen ' : ''}${weather.weather}; physics ${dayRow.physics_result ? dayRow.physics_result.stepId : 'none'}; resources ${dayRow.resource_result ? dayRow.resource_result.stepId : 'none'}; thermal ${dayRow.thermal_result ? dayRow.thermal_result.stepId : 'none'}; water ${dayRow.water_result ? dayRow.water_result.stepId : 'none'}; ${dayRow.resident_actions_added} resident action(s); project ${dayRow.project_result ? dayRow.project_result.status : 'none'}; commons ${dayRow.commons_result ? dayRow.commons_result.resource : 'none'}`,
+	    summary: `${offscreen ? 'offscreen ' : ''}${weather.weather}; physics ${dayRow.physics_result ? dayRow.physics_result.stepId : 'none'}; resources ${dayRow.resource_result ? dayRow.resource_result.stepId : 'none'}; thermal ${dayRow.thermal_result ? dayRow.thermal_result.stepId : 'none'}; water ${dayRow.water_result ? dayRow.water_result.stepId : 'none'}; ecology ${dayRow.ecology_result ? dayRow.ecology_result.stepId : 'none'}; ${dayRow.resident_actions_added} resident action(s); project ${dayRow.project_result ? dayRow.project_result.status : 'none'}; commons ${dayRow.commons_result ? dayRow.commons_result.resource : 'none'}`,
 	  });
   world.gamePrototypeCommons = null;
   recordPrototypeMilestone('village-day-ended', `day ${dayNumber}: ${weather.weather}, ${dayRow.resident_actions_added} resident action(s)`);
-	  return log('endVillageDay', { day: dayNumber, weather: weather.weather, physicsStepId: dayRow.physics_result ? dayRow.physics_result.stepId : null, physicsProposalId: dayRow.physics_result ? dayRow.physics_result.proposalId : null, resourceStepId: dayRow.resource_result ? dayRow.resource_result.stepId : null, thermalStepId: dayRow.thermal_result ? dayRow.thermal_result.stepId : null, waterStepId: dayRow.water_result ? dayRow.water_result.stepId : null, actionsAdded: dayRow.resident_actions_added, projectStatus: dayRow.project_result ? dayRow.project_result.status : 'none', commonsResource: dayRow.commons_result ? dayRow.commons_result.resource : 'none', offscreen, directCommand: false });
+	  return log('endVillageDay', { day: dayNumber, weather: weather.weather, physicsStepId: dayRow.physics_result ? dayRow.physics_result.stepId : null, physicsProposalId: dayRow.physics_result ? dayRow.physics_result.proposalId : null, resourceStepId: dayRow.resource_result ? dayRow.resource_result.stepId : null, thermalStepId: dayRow.thermal_result ? dayRow.thermal_result.stepId : null, waterStepId: dayRow.water_result ? dayRow.water_result.stepId : null, ecologyStepId: dayRow.ecology_result ? dayRow.ecology_result.stepId : null, actionsAdded: dayRow.resident_actions_added, projectStatus: dayRow.project_result ? dayRow.project_result.status : 'none', commonsResource: dayRow.commons_result ? dayRow.commons_result.resource : 'none', offscreen, directCommand: false });
 	}
 
 function ensurePrototypeReturnLater() {
@@ -3402,6 +3405,7 @@ function ensureGamePrototype() {
     };
   }
   if (!world.gamePrototype.guideHistory) world.gamePrototype.guideHistory = [];
+  if (world.resources && world.resources.food == null) world.resources.food = 7;
   return world.gamePrototype;
 }
 
@@ -3464,8 +3468,9 @@ function runFirstPlayablePrototypeLoop() {
   runResourcePhysicsLoop();
   runThermalPhysicsLoop();
   runWaterPhysicsLoop();
+  runEcologyPhysicsLoop();
   runPrototypeReturnProof();
-  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, audit, save, return, and branch persistence executed from one game surface');
+  recordPrototypeMilestone('first-playable-loop-complete', 'opening, practice, proposal, tool physics, resource physics, thermal physics, water physics, ecology physics, audit, save, return, and branch persistence executed from one game surface');
   return log('runFirstPlayablePrototypeLoop', {
     milestones: world.gamePrototype.milestones.length,
     practices: world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0,
@@ -3474,6 +3479,7 @@ function runFirstPlayablePrototypeLoop() {
     resourceSteps: world.gamePrototypeResourcePhysics ? world.gamePrototypeResourcePhysics.stockLedger.length : 0,
     thermalSteps: world.gamePrototypeThermalPhysics ? world.gamePrototypeThermalPhysics.heatLedger.length : 0,
     waterFlows: world.gamePrototypeWaterPhysics ? world.gamePrototypeWaterPhysics.flowLedger.length : 0,
+    ecologyGrowth: world.gamePrototypeEcologyPhysics ? world.gamePrototypeEcologyPhysics.growthLedger.length : 0,
     branchContinuity: world.hintBranchPersistence ? world.hintBranchPersistence.continuityRows.length : 0,
   });
 }
@@ -4931,6 +4937,7 @@ function ensurePrototypeResourcePhysics() {
         { stock_id: 'RSP-water-jars', resource: 'water', resident_term: 'ku-wa', player_gloss: 'stored water jars', engine_concept: 'water_stock_in_vessels', quantity: Number(world.resources.water || 0), capacity: 18, mass_per_unit: 1, storage: 'clay vessels near raised dry storage', moisture: 1, temperature: 0.42, contamination: 0.08, decay: 0.02, source: 'well carry and rain catch', location3d: { x: 30, y: 24, z: 78 } },
         { stock_id: 'RSP-fiber-bundles', resource: 'fiber', resident_term: 'ren', player_gloss: 'fiber bundles', engine_concept: 'fiber_stock_binding_material', quantity: Number(world.resources.fiber || 0), capacity: 16, mass_per_unit: 0.22, storage: 'covered bundle rack', moisture: 0.32, temperature: 0.39, contamination: 0.04, decay: 0.06, source: 'reed collection and drying', location3d: { x: 52, y: 32, z: 48 } },
         { stock_id: 'RSP-wood-stack', resource: 'wood', resident_term: 'mor', player_gloss: 'rough wood stack', engine_concept: 'wood_stock_structural_material', quantity: Number(world.resources.wood || 0), capacity: 24, mass_per_unit: 2.4, storage: 'ground stack under cover edge', moisture: 0.28, temperature: 0.37, contamination: 0.03, decay: 0.035, source: 'fallen branch gathering', location3d: { x: 62, y: 50, z: 16 } },
+        { stock_id: 'RSP-food-cache', resource: 'food', resident_term: 'nam', player_gloss: 'stored edible cache', engine_concept: 'food_stock_spoilable_cache', quantity: Number(world.resources.food || 0), capacity: 16, mass_per_unit: 0.35, storage: 'cool raised basket near shade', moisture: 0.26, temperature: 0.34, contamination: 0.06, decay: 0.08, source: 'nearby patches and careful gathering', location3d: { x: 38, y: 36, z: 54 } },
         { stock_id: 'RSP-care-attention', resource: 'care', resident_term: 'num', player_gloss: 'available care and attention', engine_concept: 'embodied_attention_recovery_stock', quantity: Number(world.resources.care || 0), capacity: 12, mass_per_unit: 0, storage: 'resident rest and mutual attention', moisture: 0, temperature: 0.4, contamination: 0, decay: 0.04, source: 'rest, trust, and low fatigue', location3d: { x: 44, y: 44, z: 0 } },
       ],
       stockLedger: [],
@@ -4952,6 +4959,9 @@ function ensurePrototypeResourcePhysics() {
   ['stocks', 'stockLedger', 'transformLedger', 'lossLedger', 'gainLedger', 'syncLedger'].forEach(key => {
     if (!Array.isArray(sim[key])) sim[key] = [];
   });
+  if (!sim.stocks.some(stock => stock.resource === 'food')) {
+    sim.stocks.push({ stock_id: 'RSP-food-cache', resource: 'food', resident_term: 'nam', player_gloss: 'stored edible cache', engine_concept: 'food_stock_spoilable_cache', quantity: Number(world.resources.food || 0), capacity: 16, mass_per_unit: 0.35, storage: 'cool raised basket near shade', moisture: 0.26, temperature: 0.34, contamination: 0.06, decay: 0.08, source: 'nearby patches and careful gathering', location3d: { x: 38, y: 36, z: 54 } });
+  }
   if (!sim.lastWorldResources) sim.lastWorldResources = { ...world.resources };
   return sim;
 }
@@ -5033,6 +5043,16 @@ function runResourcePhysicsStep(source = 'manual resource physics') {
       stock.moisture = Number(Math.max(0, Math.min(1, Number(stock.moisture || 0) + (fieldMoisture - Number(stock.moisture || 0)) * 0.05)).toFixed(3));
       stock.decay = Number(Math.max(0, Math.min(1, Number(stock.decay || 0) + (rot + splitting) * 0.025)).toFixed(3));
       cause = `woodRot=${rot.toFixed(2)}, splitting=${splitting.toFixed(2)}`;
+    } else if (stock.resource === 'food') {
+      const heatSpoil = Math.max(0, fieldHeat - 0.42) * 0.42;
+      const dampSpoil = Math.max(0, fieldMoisture - 0.34) * 0.34 + (wetWeather ? 0.12 : 0);
+      const dryPreserve = dryWeather ? Math.min(0.16, fieldWind * 0.18 + Math.max(0, fieldHeat - 0.38) * 0.08) : 0;
+      const spoilage = Math.max(0, heatSpoil + dampSpoil + Number(stock.contamination || 0) * 0.12 - dryPreserve);
+      delta = -spoilage + stochastic * 0.08;
+      stock.moisture = Number(Math.max(0, Math.min(1, Number(stock.moisture || 0) + (fieldMoisture - Number(stock.moisture || 0)) * 0.06 - dryPreserve * 0.05)).toFixed(3));
+      stock.contamination = Number(Math.max(0, Math.min(1, Number(stock.contamination || 0) + spoilage * 0.035 - dryPreserve * 0.012)).toFixed(3));
+      stock.decay = Number(Math.max(0, Math.min(1, Number(stock.decay || 0) + spoilage * 0.03)).toFixed(3));
+      cause = `foodSpoilage=${spoilage.toFixed(2)}, dryPreserve=${dryPreserve.toFixed(2)}`;
     } else {
       const fatigueCost = averageFatigue * 0.35 + Number(field.stress || 0) * 0.12;
       const restRecovery = averageFatigue < 0.32 ? 0.42 : 0.16;
@@ -5629,6 +5649,238 @@ function runWaterPhysicsLoop() {
   return log('runWaterPhysicsLoop', { stepsAdded: sim.flowLedger.length - before, totalFlows: sim.flowLedger.length, leaks: sim.leakLedger.length, routeRows: sim.routeLedger.length, safetyRows: sim.safetyLedger.length, water: world.resources.water });
 }
 
+function ensurePrototypeEcologyPhysics() {
+  if (!world.gamePrototypeEcologyPhysics) {
+    world.gamePrototypeEcologyPhysics = {
+      runCount: 0,
+      patches: [
+        { patch_id: 'ECO-reed-edge', resident_term: 'ren-nam', player_gloss: 'reed-edge edible shoots', engine_concept: 'wet_edge_edible_shoot_patch', terrain_cell: 'TERR-west-low', biomass: 4.2, carrying_capacity: 8, water_need: 0.55, heat_preference: 0.42, rot_sensitivity: 0.38, regrowth_rate: 0.18, harvest_difficulty: 0.32, status: 'recovering' },
+        { patch_id: 'ECO-shade-berries', resident_term: 'ta-nam', player_gloss: 'shade berry patch', engine_concept: 'shade_fruit_food_patch', terrain_cell: 'TERR-storage-rise', biomass: 3.1, carrying_capacity: 6, water_need: 0.42, heat_preference: 0.38, rot_sensitivity: 0.52, regrowth_rate: 0.12, harvest_difficulty: 0.28, status: 'small fruit' },
+        { patch_id: 'ECO-root-bank', resident_term: 'dum-nam', player_gloss: 'low-bank roots', engine_concept: 'root_food_bank_patch', terrain_cell: 'TERR-low-crossing', biomass: 5.4, carrying_capacity: 9, water_need: 0.48, heat_preference: 0.36, rot_sensitivity: 0.44, regrowth_rate: 0.1, harvest_difficulty: 0.48, status: 'hidden roots' },
+      ],
+      growthLedger: [],
+      harvestLedger: [],
+      spoilageLedger: [],
+      hungerLedger: [],
+      seedLedger: [],
+      safetyLedger: [],
+      boundary: {
+        foodRequiresGrowthHarvestAndStorage: true,
+        noFoodSpawning: true,
+        harvestCostsLaborAndRouteRisk: true,
+        spoilageDependsOnHeatMoistureAndStorage: true,
+        hungerReliefConsumesFood: true,
+        hiddenLawNormalView: false,
+      },
+    };
+  }
+  const sim = world.gamePrototypeEcologyPhysics;
+  ['patches', 'growthLedger', 'harvestLedger', 'spoilageLedger', 'hungerLedger', 'seedLedger', 'safetyLedger'].forEach(key => {
+    if (!Array.isArray(sim[key])) sim[key] = [];
+  });
+  return sim;
+}
+
+function addEcologyProposal(safetyRow) {
+  if (!world.villageBoard || !world.villageBoard.projectProposals) runVillageBoardLoop();
+  if (!world.villageBoard || !world.villageBoard.projectProposals) return null;
+  const existing = world.villageBoard.projectProposals.find(row => row.origin_event === safetyRow.safety_id && !row.project_completed);
+  if (existing) return existing.proposal_id;
+  const proposal = {
+    proposal_id: `GPB-ECO-${String(world.villageBoard.projectProposals.length + 1).padStart(3, '0')}`,
+    proposer: safetyRow.resident || 'Fay',
+    problem_addressed: safetyRow.problem,
+    materials_needed: safetyRow.required_materials || ['water', 'care'],
+    likely_helpers: ['Milo', 'Nia'],
+    resident_willingness: 0.55,
+    known_objections: ['do not overharvest the patch before it recovers'],
+    risk: safetyRow.risk,
+    maintenance_cost: 0.06,
+    related_memories: [safetyRow.public_observation],
+    related_practice_nodes: [],
+    possible_failure_modes: ['patch overharvested', 'stored food spoils', 'route too wet'],
+    current_support_level: 0.33,
+    status: 'posted',
+    origin_event: safetyRow.safety_id,
+    avatar_can_force: false,
+    project_progress: 0,
+  };
+  world.villageBoard.projectProposals.push(proposal);
+  return proposal.proposal_id;
+}
+
+function runEcologyPhysicsStep(source = 'manual ecology physics') {
+  ensureGamePrototype();
+  const sim = ensurePrototypeEcologyPhysics();
+  const terrain = ensurePrototypeTerrain();
+  const materialWorld = ensurePrototype3DWorld();
+  const resourceSim = world.gamePrototypeResourcePhysics || null;
+  const waterSim = world.gamePrototypeWaterPhysics || null;
+  const thermalSim = world.gamePrototypeThermalPhysics || null;
+  const autonomous = ensureAutonomousResidents();
+  const field = materialWorld.physics && materialWorld.physics.environment ? materialWorld.physics.environment : { moisture: 0.31, heat: 0.46, wind: 0.18, decayPressure: 0.22, stress: 0.16 };
+  const entropy = deepTimeEntropyByte();
+  const stepId = `ECO-${String(sim.growthLedger.length + 1).padStart(3, '0')}`;
+  const thermalHeat = thermalSim && thermalSim.heatLedger.length ? Number(thermalSim.heatLedger[thermalSim.heatLedger.length - 1].max_heat || 0) : Number(field.heat || 0.46);
+  const waterPressure = waterSim && waterSim.routeLedger.length ? Number(waterSim.routeLedger[waterSim.routeLedger.length - 1].pressure || 0) : 0;
+  const foodStock = resourceSim && resourceSim.stocks ? resourceSim.stocks.find(stock => stock.resource === 'food') : null;
+  const foodBefore = Number(world.resources.food || 0);
+  const patchRows = sim.patches.map((patch, index) => {
+    const cell = terrain.cells.find(row => row.cell_id === patch.terrain_cell) || terrain.cells[index % terrain.cells.length];
+    const before = Number(patch.biomass || 0);
+    const moistureFit = 1 - Math.min(1, Math.abs(Number(cell.moisture || 0.35) - Number(patch.water_need || 0.45)) * 2.2);
+    const heatFit = 1 - Math.min(1, Math.abs(thermalHeat - Number(patch.heat_preference || 0.4)) * 1.8);
+    const routeStress = Math.max(0, waterPressure - 1.8) * 0.035 + Number(cell.erosion || 0) * 0.05;
+    const rot = Math.max(0, Number(cell.moisture || 0) - 0.62) * Number(patch.rot_sensitivity || 0.4) + Math.max(0, thermalHeat - 0.66) * 0.18;
+    const stochastic = (((entropy + index * 31 + sim.runCount * 11) % 17) - 8) / 100;
+    const growth = Math.max(-0.32, Number(patch.regrowth_rate || 0.1) * moistureFit * heatFit - rot - routeStress + stochastic * 0.18);
+    patch.biomass = Number(Math.max(0, Math.min(Number(patch.carrying_capacity || 8), before + growth)).toFixed(3));
+    patch.status = patch.biomass < 1.2 ? 'thin and recovering' : patch.biomass > patch.carrying_capacity * 0.72 ? 'ready but not infinite' : 'growing';
+    return {
+      growth_id: `${stepId}-${patch.patch_id}`,
+      step_id: stepId,
+      patch_id: patch.patch_id,
+      resident_term: patch.resident_term,
+      player_gloss: patch.player_gloss,
+      terrain_cell: cell.cell_id,
+      biomass_before: before,
+      biomass_after: patch.biomass,
+      moisture_fit: Number(moistureFit.toFixed(3)),
+      heat_fit: Number(heatFit.toFixed(3)),
+      rot: Number(rot.toFixed(3)),
+      route_stress: Number(routeStress.toFixed(3)),
+      growth_delta: Number((patch.biomass - before).toFixed(3)),
+      hidden_law_normal_view: false,
+      no_resource_spawning: true,
+    };
+  });
+  const hungryResidents = Object.entries(autonomous.needState)
+    .filter(([, needs]) => Number(needs.hunger || 0) > 0.55)
+    .map(([name]) => name);
+  const readyPatch = sim.patches
+    .slice()
+    .sort((a, b) => Number(b.biomass || 0) - Number(a.biomass || 0))[0];
+  let harvested = 0;
+  let overharvestRisk = 0;
+  if (readyPatch && readyPatch.biomass > 1.4 && hungryResidents.length) {
+    const capacityLimited = Math.min(2, Math.floor(Number(readyPatch.biomass || 0)));
+    const routePenalty = waterPressure > 2.4 ? 1 : 0;
+    harvested = Math.max(0, capacityLimited - routePenalty);
+    if (harvested > 0) {
+      readyPatch.biomass = Number(Math.max(0, Number(readyPatch.biomass || 0) - harvested * 0.72).toFixed(3));
+      world.resources.food = Math.min(99, Number(world.resources.food || 0) + harvested);
+      if (foodStock) foodStock.quantity = Number(Math.min(Number(foodStock.capacity || 16), Number(foodStock.quantity || 0) + harvested).toFixed(3));
+    }
+    overharvestRisk = Number(Math.max(0, harvested * 0.2 - Number(readyPatch.regrowth_rate || 0.1)).toFixed(3));
+  }
+  const foodAfterHarvest = Number(world.resources.food || 0);
+  const fedResidents = [];
+  hungryResidents.slice(0, Math.max(0, Math.min(Number(world.resources.food || 0), 2))).forEach(name => {
+    if (Number(world.resources.food || 0) <= 0) return;
+    world.resources.food = Math.max(0, Number(world.resources.food || 0) - 1);
+    const needs = autonomous.needState[name];
+    needs.hunger = clampNeed(Number(needs.hunger || 0) - 0.28);
+    needs.energy = clampNeed(Number(needs.energy || 0) + 0.08);
+    fedResidents.push(name);
+    mutateResident(name, { trust: 0.002, progress: 0.002, memory: 'ate from stored food after patch work', historyEvent: 'ecology food relief', historyDetail: stepId });
+  });
+  const spoilage = foodStock
+    ? Math.max(0, Number(foodStock.decay || 0) * 0.18 + Number(foodStock.contamination || 0) * 0.12 + Math.max(0, thermalHeat - 0.58) * 0.14 + Math.max(0, Number(field.moisture || 0) - 0.58) * 0.1)
+    : 0;
+  const spoiledUnits = Math.min(Number(world.resources.food || 0), spoilage > 0.18 ? 1 : 0);
+  if (spoiledUnits > 0) {
+    world.resources.food = Math.max(0, Number(world.resources.food || 0) - spoiledUnits);
+    if (foodStock) foodStock.quantity = Math.max(0, Number(foodStock.quantity || 0) - spoiledUnits);
+  } else if (foodStock) {
+    foodStock.quantity = Number(world.resources.food || 0);
+  }
+  if (resourceSim) resourceSim.lastWorldResources = { ...world.resources };
+  const harvestRow = {
+    harvest_id: `EHAR-${String(sim.harvestLedger.length + 1).padStart(3, '0')}`,
+    step_id: stepId,
+    source,
+    patch_id: readyPatch ? readyPatch.patch_id : 'none',
+    harvested,
+    food_before: foodBefore,
+    food_after_harvest: foodAfterHarvest,
+    food_after_feeding: Number(world.resources.food || 0),
+    fed_residents: fedResidents,
+    overharvest_risk: overharvestRisk,
+    no_resource_spawning: true,
+    hidden_law_normal_view: false,
+  };
+  const spoilageRow = {
+    spoilage_id: `ESPOIL-${String(sim.spoilageLedger.length + 1).padStart(3, '0')}`,
+    step_id: stepId,
+    spoilage_pressure: Number(spoilage.toFixed(3)),
+    spoiled_units: spoiledUnits,
+    food_after: Number(world.resources.food || 0),
+    hidden_law_normal_view: false,
+  };
+  const hungerRow = {
+    hunger_id: `EHUN-${String(sim.hungerLedger.length + 1).padStart(3, '0')}`,
+    step_id: stepId,
+    hungry_before: hungryResidents,
+    fed_residents: fedResidents,
+    hunger_remaining: Object.entries(autonomous.needState).filter(([, needs]) => Number(needs.hunger || 0) > 0.55).map(([name]) => name),
+    food_after: Number(world.resources.food || 0),
+    hidden_law_normal_view: false,
+  };
+  sim.growthLedger.push(...patchRows);
+  sim.harvestLedger.push(harvestRow);
+  sim.spoilageLedger.push(spoilageRow);
+  sim.hungerLedger.push(hungerRow);
+  let safetyProposalId = null;
+  if (hungerRow.hunger_remaining.length >= 2 || overharvestRisk > 0.24 || spoiledUnits > 0) {
+    const safetyRow = {
+      safety_id: `ECO-SAFE-${String(sim.safetyLedger.length + 1).padStart(3, '0')}`,
+      step_id: stepId,
+      resident: 'Fay',
+      risk: hungerRow.hunger_remaining.length >= 2 ? 'food pressure' : spoiledUnits > 0 ? 'spoilage pressure' : 'overharvest risk',
+      problem: hungerRow.hunger_remaining.length >= 2 ? 'protect food route and avoid overharvest' : spoiledUnits > 0 ? 'move food to cooler drier storage' : 'let patch recover before next harvest',
+      required_materials: ['care', 'water'],
+      public_observation: hungryResidents.length ? 'residents checked food stores and nearby patches' : 'food patches changed with weather and water',
+      recoverable: true,
+      no_permanent_punishment: true,
+    };
+    safetyProposalId = addEcologyProposal(safetyRow);
+    safetyRow.proposal_id = safetyProposalId;
+    sim.safetyLedger.push(safetyRow);
+  }
+  sim.runCount += 1;
+  sim.growthLedger = sim.growthLedger.slice(-180);
+  sim.harvestLedger = sim.harvestLedger.slice(-120);
+  sim.spoilageLedger = sim.spoilageLedger.slice(-120);
+  sim.hungerLedger = sim.hungerLedger.slice(-120);
+  sim.seedLedger = sim.seedLedger.slice(-120);
+  sim.safetyLedger = sim.safetyLedger.slice(-120);
+  world.gamePrototypeCommons = null;
+  recordRealityConstraint('ecology_food_physics', {
+    resident: 'village',
+    sourceBeliefId: stepId,
+    materials: ['food', 'water', 'soil', 'heat', 'care'],
+    publicObservation: harvestRow.harvested ? `${harvestRow.harvested} food gathered from ${harvestRow.patch_id}` : 'food patches grew, thinned, or spoiled without harvest',
+    residentInterpretation: fedResidents.length ? `${fedResidents.join(', ')} ate from stored food` : 'food pressure remains observable and recoverable',
+    materialTransformation: `growthRows=${patchRows.length}; harvested=${harvested}; spoiled=${spoiledUnits}; food ${foodBefore}->${world.resources.food}`,
+    timeCost: 1,
+    workCost: harvested ? 2 : 1,
+    toolWear: harvested ? 1 : 0,
+    maintenanceObligation: safetyProposalId || 'watch food patches and storage',
+    unintendedConsequence: safetyProposalId ? 'food ecology created a resident proposal' : 'food stock and hunger changed through ecology',
+    hiddenLawInvolved: world.audit ? 'biomass, moisture, heat, route stress, spoilage, hunger, and stochastic growth' : 'audit only',
+    conservationCheck: true
+  });
+  recordPrototypeMilestone('ecology-food-physics', `${stepId}: harvested=${harvested}, fed=${fedResidents.length}, food=${world.resources.food}`);
+  return log('runEcologyPhysicsStep', { stepId, harvested, fed: fedResidents.length, food: world.resources.food, growthRows: patchRows.length, safetyProposalId });
+}
+
+function runEcologyPhysicsLoop() {
+  const before = ensurePrototypeEcologyPhysics().growthLedger.length;
+  ['morning growth', 'forage route', 'storage check', 'evening hunger'].forEach(source => runEcologyPhysicsStep(source));
+  const sim = ensurePrototypeEcologyPhysics();
+  return log('runEcologyPhysicsLoop', { stepsAdded: sim.growthLedger.length - before, growthRows: sim.growthLedger.length, harvestRows: sim.harvestLedger.length, spoilageRows: sim.spoilageLedger.length, hungerRows: sim.hungerLedger.length, food: world.resources.food });
+}
+
 function residentBodyComponentContacts(body, materialWorld) {
   if (!materialWorld || !materialWorld.components) return [];
   const position = body.position3d || {};
@@ -5867,8 +6119,9 @@ function driftResidentNeeds(needs, entropy, action) {
   const fieldStress = physicsPressure ? Number(physicsPressure.fieldStress || 0) : 0;
   const effort = (['proposal_work', 'practice_maintenance', 'experiment', 'forage', 'physics_repair'].includes(action) ? 0.12 : 0.04) + physicsEffort + Math.max(0, fieldHeat - 0.55) * 0.05;
   const stress = (entropy % 7 === 0 ? 0.08 : 0.02) + fieldStress * 0.08 + Math.max(0, fieldMoisture - 0.5) * 0.04;
+  const foodBackedRelief = action === 'forage' && Number(world.resources.food || 0) > 0 ? 0.24 : action === 'forage' ? 0.04 : 0;
   needs.energy = clampNeed(needs.energy - effort + (action === 'rest' ? 0.22 : 0));
-  needs.hunger = clampNeed(needs.hunger + effort * 0.6 - (action === 'forage' ? 0.12 : 0));
+  needs.hunger = clampNeed(needs.hunger + effort * 0.6 - foodBackedRelief);
   needs.attention = clampNeed(needs.attention - effort * 0.8 + (action === 'teach' ? 0.04 : 0));
   needs.safety = clampNeed(needs.safety - stress + (action === 'repair_safety' ? 0.14 : 0) + (action === 'physics_repair' ? 0.05 : 0));
   needs.autonomy = clampNeed(needs.autonomy + (action === 'refuse' ? 0.08 : -0.015));
@@ -5881,7 +6134,7 @@ function chooseAutonomousResidentAction(residentName, entropy) {
   const board = world.villageBoard;
   const hasProposal = Boolean(board && board.projectProposals && board.projectProposals.length);
   const hasPractice = Boolean(world.emergentPracticeGraph && world.emergentPracticeGraph.nodes && world.emergentPracticeGraph.nodes.length);
-  const lowResource = (world.resources.water || 0) < 5 || (world.resources.fiber || 0) < 5 || (world.resources.care || 0) < 3;
+  const lowResource = (world.resources.water || 0) < 5 || (world.resources.fiber || 0) < 5 || (world.resources.care || 0) < 3 || (world.resources.food || 0) < 3;
   const physicsPressure = currentPhysicsPressure();
   if (needs.energy < 0.22 || needs.hunger > 0.78) return 'rest';
   if (needs.autonomy > 0.74 && entropy % 5 === 0) return 'refuse';
@@ -6048,9 +6301,16 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     progressDelta = 0.008;
   } else if (action === 'forage') {
     schedule = 'forages for strained commons';
-    memory = 'brought back small supplies under pressure';
-    world.resources.water = Math.min(99, world.resources.water + 1);
-    world.resources.fiber = Math.min(99, world.resources.fiber + 1);
+    const ecology = runEcologyPhysicsStep('autonomous forage').payload;
+    const ateFood = Number(world.resources.food || 0) > 0;
+    if (ateFood) world.resources.food = Math.max(0, Number(world.resources.food || 0) - 1);
+    if (world.gamePrototypeResourcePhysics && world.gamePrototypeResourcePhysics.stocks) {
+      const stock = world.gamePrototypeResourcePhysics.stocks.find(row => row.resource === 'food');
+      if (stock) stock.quantity = Number(world.resources.food || 0);
+      world.gamePrototypeResourcePhysics.lastWorldResources = { ...world.resources };
+    }
+    memory = ateFood ? 'ate after checking nearby food patches' : 'checked patches but food pressure remained';
+    if (ecology.harvested > 0) world.resources.fiber = Math.min(99, world.resources.fiber + 1);
     progressDelta = 0.006;
   } else if (action === 'proposal_work' && proposal) {
     schedule = `works on ${proposal.problem_addressed}`;
@@ -6234,6 +6494,7 @@ function formatPrototypePublicOutcomes() {
   const resourcePhysics = world.gamePrototypeResourcePhysics;
   const thermalPhysics = world.gamePrototypeThermalPhysics;
   const waterPhysics = world.gamePrototypeWaterPhysics;
+  const ecologyPhysics = world.gamePrototypeEcologyPhysics;
 	  const constructionPracticeCount = materialWorld && materialWorld.constructionLedger ? materialWorld.constructionLedger.filter(row => row.practice_id).length : 0;
   return [
     `Practice graph: ${practiceCount} node(s)${latestPractice ? ` / latest ${latestPractice.local_name || latestPractice.practice_id}` : ''}`,
@@ -6258,6 +6519,7 @@ function formatPrototypePublicOutcomes() {
     `Resource stock physics: ${resourcePhysics ? `${resourcePhysics.stockLedger.length} stock step(s), losses=${resourcePhysics.lossLedger.length}, gains=${resourcePhysics.gainLedger.length}` : 'not started'}`,
     `Thermal/fire physics: ${thermalPhysics ? `${thermalPhysics.heatLedger.length} heat step(s), smoke=${thermalPhysics.smokeLedger.length}, safety=${thermalPhysics.safetyLedger.length}` : 'not started'}`,
     `Water/fluid physics: ${waterPhysics ? `${waterPhysics.flowLedger.length} flow row(s), leaks=${waterPhysics.leakLedger.length}, route=${waterPhysics.routeLedger.length}` : 'not started'}`,
+    `Ecology/food physics: ${ecologyPhysics ? `${ecologyPhysics.growthLedger.length} growth row(s), harvest=${ecologyPhysics.harvestLedger.length}, hunger=${ecologyPhysics.hungerLedger.length}` : 'not started'}`,
     `Construction practices: ${constructionPracticeCount} construction row(s) linked to practice graph`,
 	    `Audit mode: ${world.audit ? 'on' : 'off'} / hidden law normal view: no`,
   ].join('\n');
@@ -6321,7 +6583,7 @@ function formatPrototypeCommons() {
   const audit = world.gamePrototypeCommons || buildPrototypeCommonsAudit();
   return [
     `${audit.audit_id}: ${audit.pass ? 'PASS' : 'WATCH'} / pressure=${audit.pressure_level}`,
-    `Resources: water=${audit.resources.water} fiber=${audit.resources.fiber} wood=${audit.resources.wood} care=${audit.resources.care} / total=${audit.resource_total}`,
+    `Resources: water=${audit.resources.water} fiber=${audit.resources.fiber} wood=${audit.resources.wood} care=${audit.resources.care} food=${audit.resources.food || 0} / total=${audit.resource_total}`,
     `Costs: work=${audit.work_cost} time=${audit.time_cost} toolWear=${audit.tool_wear}`,
     `Maintenance: obligations=${audit.maintenance_obligations} practiceBurden=${audit.practice_maintenance_burden} acceptedProposals=${audit.accepted_proposals}`,
     `Commons support: rows=${audit.commons_support_rows || 0} recoveries=${audit.commons_recoveries || 0}`,
@@ -6361,7 +6623,7 @@ function formatPrototypeNearbyActions() {
 
 function formatPrototypeDayCycle() {
   const cycle = world.gamePrototypeDayCycle || ensurePrototypeDayCycle();
-  const days = cycle.dayLedger.slice(-6).map(row => `${row.day_id}: day ${row.day}, ${row.weather}; resources=${row.resource_result ? row.resource_result.stepId : 'none'}; thermal=${row.thermal_result ? row.thermal_result.stepId : 'none'}; water=${row.water_result ? row.water_result.stepId : 'none'}; residentActions=${row.resident_actions_added}; project=${row.project_result ? row.project_result.status : 'none'}; commons=${row.commons_result ? row.commons_result.resource : 'none'}`);
+  const days = cycle.dayLedger.slice(-6).map(row => `${row.day_id}: day ${row.day}, ${row.weather}; resources=${row.resource_result ? row.resource_result.stepId : 'none'}; thermal=${row.thermal_result ? row.thermal_result.stepId : 'none'}; water=${row.water_result ? row.water_result.stepId : 'none'}; ecology=${row.ecology_result ? row.ecology_result.stepId : 'none'}; residentActions=${row.resident_actions_added}; project=${row.project_result ? row.project_result.status : 'none'}; commons=${row.commons_result ? row.commons_result.resource : 'none'}`);
   const weather = cycle.weatherLedger.slice(-6).map(row => `${row.weather_id}: ${row.weather}; ${row.effect}; deltas=${JSON.stringify(row.resource_deltas)}`);
   const recaps = cycle.recapLedger.slice(-5).map(row => `${row.recap_id}: ${row.summary}`);
   return [
@@ -6569,6 +6831,33 @@ function formatPrototypeWaterPhysics() {
     'Safety rows:',
     ...(safety.length ? safety : ['none']),
     'Normal view hidden law exposed: no / no resource spawning: yes',
+  ].join('\n');
+}
+
+function formatPrototypeEcologyPhysics() {
+  const sim = world.gamePrototypeEcologyPhysics || ensurePrototypeEcologyPhysics();
+  const patches = sim.patches.map(patch => `${patch.patch_id}: ${patch.resident_term} / ${patch.player_gloss}; biomass=${Number(patch.biomass || 0).toFixed(2)}/${patch.carrying_capacity}; cell=${patch.terrain_cell}; status=${patch.status}`);
+  const growth = sim.growthLedger.slice(-8).map(row => `${row.growth_id}: ${row.patch_id}; biomass ${row.biomass_before}->${row.biomass_after}; moistureFit=${row.moisture_fit}; heatFit=${row.heat_fit}; rot=${row.rot}; route=${row.route_stress}`);
+  const harvest = sim.harvestLedger.slice(-5).map(row => `${row.harvest_id}: patch=${row.patch_id}; harvested=${row.harvested}; fed=${row.fed_residents.join(',') || 'none'}; food=${row.food_before}->${row.food_after_feeding}; overharvest=${row.overharvest_risk}`);
+  const spoilage = sim.spoilageLedger.slice(-5).map(row => `${row.spoilage_id}: pressure=${row.spoilage_pressure}; spoiled=${row.spoiled_units}; food=${row.food_after}`);
+  const hunger = sim.hungerLedger.slice(-5).map(row => `${row.hunger_id}: hungry=${row.hungry_before.join(',') || 'none'}; fed=${row.fed_residents.join(',') || 'none'}; remaining=${row.hunger_remaining.join(',') || 'none'}; food=${row.food_after}`);
+  const safety = sim.safetyLedger.slice(-5).map(row => `${row.safety_id}: ${row.risk}; proposal=${row.proposal_id || 'none'}; recoverable=${row.recoverable}`);
+  return [
+    `Runs: ${sim.runCount} / growth=${sim.growthLedger.length} / harvest=${sim.harvestLedger.length} / spoilage=${sim.spoilageLedger.length} / hunger=${sim.hungerLedger.length} / safety=${sim.safetyLedger.length}`,
+    `Boundary: food requires growth, harvest, storage, spoilage pressure, and hunger consumption; no free food.`,
+    'Food patches:',
+    ...(patches.length ? patches : ['none']),
+    'Growth rows:',
+    ...(growth.length ? growth : ['none']),
+    'Harvest rows:',
+    ...(harvest.length ? harvest : ['none']),
+    'Spoilage rows:',
+    ...(spoilage.length ? spoilage : ['none']),
+    'Hunger rows:',
+    ...(hunger.length ? hunger : ['none']),
+    'Safety rows:',
+    ...(safety.length ? safety : ['none']),
+    'Normal view hidden law exposed: no / no food spawning: yes',
   ].join('\n');
 }
 
@@ -6824,6 +7113,7 @@ function runPrototypeQASmoke() {
   runResourcePhysicsLoop();
   runThermalPhysicsLoop();
   runWaterPhysicsLoop();
+  runEcologyPhysicsLoop();
 	  runResidentMaterialManipulationLoop();
 	  advanceVillageProject();
   advanceVillageProject();
@@ -6887,6 +7177,11 @@ function runPrototypeQASmoke() {
     waterRouteRows: world.gamePrototypeWaterPhysics && world.gamePrototypeWaterPhysics.routeLedger ? world.gamePrototypeWaterPhysics.routeLedger.length : 0,
     waterQualityRows: world.gamePrototypeWaterPhysics && world.gamePrototypeWaterPhysics.qualityLedger ? world.gamePrototypeWaterPhysics.qualityLedger.length : 0,
     waterSafetyRows: world.gamePrototypeWaterPhysics && world.gamePrototypeWaterPhysics.safetyLedger ? world.gamePrototypeWaterPhysics.safetyLedger.length : 0,
+    ecologyGrowthRows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.growthLedger ? world.gamePrototypeEcologyPhysics.growthLedger.length : 0,
+    ecologyHarvestRows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.harvestLedger ? world.gamePrototypeEcologyPhysics.harvestLedger.length : 0,
+    ecologySpoilageRows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.spoilageLedger ? world.gamePrototypeEcologyPhysics.spoilageLedger.length : 0,
+    ecologyHungerRows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.hungerLedger ? world.gamePrototypeEcologyPhysics.hungerLedger.length : 0,
+    ecologySafetyRows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.safetyLedger ? world.gamePrototypeEcologyPhysics.safetyLedger.length : 0,
 	    manipulationRows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
 	    manipulationPracticeLinks: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
 	    manipulationFailures: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.failureLedger ? world.gamePrototypeMaterialManipulation.failureLedger.length : 0,
@@ -6930,6 +7225,7 @@ function runPrototypeQASmoke() {
     { id: 'resource-stock-physics', pass: Boolean(world.gamePrototypeResourcePhysics && savedCounts.resourceStockRows > 0 && savedCounts.resourceTransformRows >= savedCounts.resourceStockRows && world.gamePrototypeResourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.resourceStockRows} stock step(s), ${savedCounts.resourceTransformRows} transform row(s), ${savedCounts.resourceLossRows} loss row(s), ${savedCounts.resourceGainRows} gain row(s)` },
     { id: 'thermal-fire-physics', pass: Boolean(world.gamePrototypeThermalPhysics && savedCounts.thermalHeatRows > 0 && savedCounts.thermalFuelRows > 0 && savedCounts.thermalSmokeRows > 0 && world.gamePrototypeThermalPhysics.heatLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.thermalHeatRows} heat step(s), ${savedCounts.thermalFuelRows} fuel row(s), ${savedCounts.thermalSmokeRows} smoke row(s), ${savedCounts.thermalSafetyRows} safety row(s)` },
     { id: 'water-fluid-physics', pass: Boolean(world.gamePrototypeWaterPhysics && savedCounts.waterFlowRows > 0 && savedCounts.waterRouteRows > 0 && savedCounts.waterQualityRows > 0 && world.gamePrototypeWaterPhysics.flowLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.waterFlowRows} flow row(s), ${savedCounts.waterLeakRows} leak row(s), ${savedCounts.waterRouteRows} route row(s), ${savedCounts.waterQualityRows} quality row(s), ${savedCounts.waterSafetyRows} safety row(s)` },
+    { id: 'ecology-food-physics', pass: Boolean(world.gamePrototypeEcologyPhysics && savedCounts.ecologyGrowthRows > 0 && savedCounts.ecologyHarvestRows > 0 && savedCounts.ecologySpoilageRows > 0 && savedCounts.ecologyHungerRows > 0 && world.gamePrototypeEcologyPhysics.growthLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${savedCounts.ecologyGrowthRows} growth row(s), ${savedCounts.ecologyHarvestRows} harvest row(s), ${savedCounts.ecologySpoilageRows} spoilage row(s), ${savedCounts.ecologyHungerRows} hunger row(s), ${savedCounts.ecologySafetyRows} safety row(s)` },
 	    { id: 'resident-material-manipulation', pass: Boolean(world.gamePrototypeMaterialManipulation && savedCounts.manipulationRows > 0 && savedCounts.manipulationPracticeLinks > 0 && world.gamePrototypeMaterialManipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${savedCounts.manipulationRows} handling row(s), ${savedCounts.manipulationPracticeLinks} practice link(s), ${savedCounts.manipulationFailures} preserved failure(s)` },
 	    { id: 'resident-body-physics', pass: Boolean(world.gamePrototypeResidentBodies && savedCounts.bodyPhysicsRows > 0 && savedCounts.bodyFatigueRows > 0 && world.gamePrototypeResidentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${savedCounts.bodyPhysicsRows} body step(s), ${savedCounts.bodyContactRows} contact row(s), ${savedCounts.bodyRecoveryRows} recovery row(s)` },
 	    { id: 'physics-influences-village', pass: Boolean(savedCounts.physicsProposals > 0 && world.villageBoard.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${savedCounts.physicsProposals} physics proposal(s), ${savedCounts.physicsRepairActions} repair action(s)` },
@@ -6991,7 +7287,8 @@ function runPrototypeAutoStep() {
   const resourceResult = runResourcePhysicsStep('auto sim resource stock').payload;
   const thermalResult = runThermalPhysicsStep('auto sim thermal').payload;
   const waterResult = runWaterPhysicsStep('auto sim water').payload;
-		  let action = `resident tick + stochastic physics ${materialResult.physicsStepId || 'none'} + terrain ${terrainResult.terrainStepId || 'none'} + tool ${toolResult.toolUseId || 'none'} + resources ${resourceResult.stepId || 'none'} + thermal ${thermalResult.stepId || 'none'} + water ${waterResult.stepId || 'none'}`;
+  const ecologyResult = runEcologyPhysicsStep('auto sim ecology').payload;
+		  let action = `resident tick + stochastic physics ${materialResult.physicsStepId || 'none'} + terrain ${terrainResult.terrainStepId || 'none'} + tool ${toolResult.toolUseId || 'none'} + resources ${resourceResult.stepId || 'none'} + thermal ${thermalResult.stepId || 'none'} + water ${waterResult.stepId || 'none'} + ecology ${ecologyResult.stepId || 'none'}`;
 	  if (materialResult.physicsProposalId) action += ` + physics proposal ${materialResult.physicsProposalId}`;
   if (clock.step % 3 === 0) {
     const manipulation = runResidentMaterialManipulationStep().payload;
@@ -7098,6 +7395,11 @@ function saveSlotSummary(slot) {
     water_route_rows: slot.water_route_rows,
     water_quality_rows: slot.water_quality_rows,
     water_safety_rows: slot.water_safety_rows,
+    ecology_growth_rows: slot.ecology_growth_rows,
+    ecology_harvest_rows: slot.ecology_harvest_rows,
+    ecology_spoilage_rows: slot.ecology_spoilage_rows,
+    ecology_hunger_rows: slot.ecology_hunger_rows,
+    ecology_safety_rows: slot.ecology_safety_rows,
 	    material_manipulation_rows: slot.material_manipulation_rows,
 	    material_manipulation_practice_links: slot.material_manipulation_practice_links,
 	    resident_body_steps: slot.resident_body_steps,
@@ -7190,6 +7492,11 @@ function savePrototypeSlot(label = 'manual prototype save') {
 	    water_route_rows: world.gamePrototypeWaterPhysics && world.gamePrototypeWaterPhysics.routeLedger ? world.gamePrototypeWaterPhysics.routeLedger.length : 0,
 	    water_quality_rows: world.gamePrototypeWaterPhysics && world.gamePrototypeWaterPhysics.qualityLedger ? world.gamePrototypeWaterPhysics.qualityLedger.length : 0,
 	    water_safety_rows: world.gamePrototypeWaterPhysics && world.gamePrototypeWaterPhysics.safetyLedger ? world.gamePrototypeWaterPhysics.safetyLedger.length : 0,
+	    ecology_growth_rows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.growthLedger ? world.gamePrototypeEcologyPhysics.growthLedger.length : 0,
+	    ecology_harvest_rows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.harvestLedger ? world.gamePrototypeEcologyPhysics.harvestLedger.length : 0,
+	    ecology_spoilage_rows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.spoilageLedger ? world.gamePrototypeEcologyPhysics.spoilageLedger.length : 0,
+	    ecology_hunger_rows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.hungerLedger ? world.gamePrototypeEcologyPhysics.hungerLedger.length : 0,
+	    ecology_safety_rows: world.gamePrototypeEcologyPhysics && world.gamePrototypeEcologyPhysics.safetyLedger ? world.gamePrototypeEcologyPhysics.safetyLedger.length : 0,
 	    material_manipulation_rows: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.actionLedger ? world.gamePrototypeMaterialManipulation.actionLedger.length : 0,
 	    material_manipulation_practice_links: world.gamePrototypeMaterialManipulation && world.gamePrototypeMaterialManipulation.practiceLinks ? world.gamePrototypeMaterialManipulation.practiceLinks.length : 0,
 	    resident_body_steps: world.gamePrototypeResidentBodies && world.gamePrototypeResidentBodies.bodyLedger ? world.gamePrototypeResidentBodies.bodyLedger.length : 0,
@@ -7284,6 +7591,7 @@ function buildPrototypeAcceptanceReceipt() {
   const resourcePhysics = world.gamePrototypeResourcePhysics || null;
   const thermalPhysics = world.gamePrototypeThermalPhysics || null;
   const waterPhysics = world.gamePrototypeWaterPhysics || null;
+  const ecologyPhysics = world.gamePrototypeEcologyPhysics || null;
 		  const physics = materialWorld && materialWorld.physics ? materialWorld.physics : null;
 	  const manipulation = world.gamePrototypeMaterialManipulation || null;
 	  const residentBodies = world.gamePrototypeResidentBodies || null;
@@ -7314,6 +7622,11 @@ function buildPrototypeAcceptanceReceipt() {
   const waterRouteRows = waterPhysics && waterPhysics.routeLedger ? waterPhysics.routeLedger.length : 0;
   const waterQualityRows = waterPhysics && waterPhysics.qualityLedger ? waterPhysics.qualityLedger.length : 0;
   const waterSafetyRows = waterPhysics && waterPhysics.safetyLedger ? waterPhysics.safetyLedger.length : 0;
+  const ecologyGrowthRows = ecologyPhysics && ecologyPhysics.growthLedger ? ecologyPhysics.growthLedger.length : 0;
+  const ecologyHarvestRows = ecologyPhysics && ecologyPhysics.harvestLedger ? ecologyPhysics.harvestLedger.length : 0;
+  const ecologySpoilageRows = ecologyPhysics && ecologyPhysics.spoilageLedger ? ecologyPhysics.spoilageLedger.length : 0;
+  const ecologyHungerRows = ecologyPhysics && ecologyPhysics.hungerLedger ? ecologyPhysics.hungerLedger.length : 0;
+  const ecologySafetyRows = ecologyPhysics && ecologyPhysics.safetyLedger ? ecologyPhysics.safetyLedger.length : 0;
 	  const manipulationRows = manipulation && manipulation.actionLedger ? manipulation.actionLedger.length : 0;
 	  const manipulationPracticeLinks = manipulation && manipulation.practiceLinks ? manipulation.practiceLinks.length : 0;
 	  const residentBodyRows = residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.length : 0;
@@ -7350,6 +7663,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'resource_stock_physics', pass: Boolean(resourcePhysics && resourceStockRows > 0 && resourceTransformRows >= resourceStockRows && resourcePhysics.stockLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${resourceStockRows} stock step(s), ${resourceTransformRows} transform row(s), ${resourceLossRows} loss row(s), ${resourceGainRows} gain row(s)` },
 	    { id: 'thermal_fire_physics', pass: Boolean(thermalPhysics && thermalHeatRows > 0 && thermalFuelRows > 0 && thermalSmokeRows > 0 && thermalPhysics.heatLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${thermalHeatRows} heat step(s), ${thermalFuelRows} fuel row(s), ${thermalSmokeRows} smoke row(s), ${thermalSafetyRows} safety row(s)` },
 	    { id: 'water_fluid_physics', pass: Boolean(waterPhysics && waterFlowRows > 0 && waterRouteRows > 0 && waterQualityRows > 0 && waterPhysics.flowLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${waterFlowRows} flow row(s), ${waterLeakRows} leak row(s), ${waterRouteRows} route row(s), ${waterQualityRows} quality row(s), ${waterSafetyRows} safety row(s)` },
+	    { id: 'ecology_food_physics', pass: Boolean(ecologyPhysics && ecologyGrowthRows > 0 && ecologyHarvestRows > 0 && ecologySpoilageRows > 0 && ecologyHungerRows > 0 && ecologyPhysics.growthLedger.every(row => row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${ecologyGrowthRows} growth row(s), ${ecologyHarvestRows} harvest row(s), ${ecologySpoilageRows} spoilage row(s), ${ecologyHungerRows} hunger row(s), ${ecologySafetyRows} safety row(s)` },
 	    { id: 'resident_material_manipulation', pass: Boolean(manipulation && manipulationRows > 0 && manipulationPracticeLinks > 0 && manipulation.actionLedger.every(row => row.avatar_direct_command === false && row.hidden_law_normal_view === false)), evidence: `${manipulationRows} handling row(s), ${manipulationPracticeLinks} practice link(s)` },
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
@@ -7428,7 +7742,7 @@ function formatPrototypeClock() {
 
 function formatPrototypeSaves() {
   const saves = world.gamePrototypeSaves || ensurePrototypeSaves();
-  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
+  const slots = saves.slots.slice(-4).map(slot => `${slot.slot_id}: ${slot.label}; year=${slot.year}; day=${slot.autonomous_day}; practices=${slot.practices}; proposals=${slot.proposals}; projects=${slot.project_completions || 0}; commonsSupport=${slot.commons_support_rows || 0}; nearby=${slot.nearby_action_rows || 0}; villageDays=${slot.village_day_rows || 0}; returns=${slot.return_later_rows || 0}; physics=${slot.physics_steps || 0}/${slot.physics_linked_proposals || 0} proposals/${slot.physical_field_rows || 0} fields/${slot.physical_energy_rows || 0} energy; terrain=${slot.terrain_steps || 0} steps/${slot.terrain_flow_rows || 0} flow/${slot.terrain_support_rows || 0} support; tools=${slot.tool_use_rows || 0} uses/${slot.tool_failure_rows || 0} failures/${slot.tool_repair_rows || 0} repairs; resources=${slot.resource_stock_rows || 0} steps/${slot.resource_loss_rows || 0} losses/${slot.resource_gain_rows || 0} gains; thermal=${slot.thermal_heat_rows || 0} heat/${slot.thermal_smoke_rows || 0} smoke/${slot.thermal_safety_rows || 0} safety; water=${slot.water_flow_rows || 0} flows/${slot.water_leak_rows || 0} leaks/${slot.water_safety_rows || 0} safety; ecology=${slot.ecology_growth_rows || 0} growth/${slot.ecology_harvest_rows || 0} harvest/${slot.ecology_hunger_rows || 0} hunger; manipulation=${slot.material_manipulation_rows || 0}/${slot.material_manipulation_practice_links || 0} practice links; bodies=${slot.resident_body_steps || 0} steps/${slot.resident_body_contacts || 0} contacts/${slot.resident_body_recoveries || 0} recoveries; construction=${slot.construction_rows || 0}/${slot.project_built_components || 0} components/${slot.construction_practice_links || 0} practice links; deepPhysics=${slot.deep_time_physics_epochs || 0} epochs/${slot.deep_time_material_flux_rows || 0} flux/${slot.deep_time_physical_effects || 0} effects/${slot.physical_heritage_rows || 0} heritage; survival=${slot.survival_status}`);
   const returns = saves.returnLog.slice(-5).map(row => `${row.slot_id}: restored year=${row.restored_year}, day=${row.restored_autonomous_day}, from replay=${row.returned_from_replay_rows}`);
   return [
     `Active slot: ${saves.activeSlotId || 'none'}`,
@@ -7498,6 +7812,7 @@ function renderGamePrototypeSurface() {
   const resourcePhysicsNode = document.getElementById('gamePrototypeResourcePhysicsOut');
   const thermalPhysicsNode = document.getElementById('gamePrototypeThermalPhysicsOut');
   const waterPhysicsNode = document.getElementById('gamePrototypeWaterPhysicsOut');
+  const ecologyPhysicsNode = document.getElementById('gamePrototypeEcologyPhysicsOut');
   const prototype = world.gamePrototype || ensureGamePrototype();
   if (objectiveNode) objectiveNode.textContent = prototype.objective;
   if (villageNode) villageNode.textContent = formatPrototypeVillageState();
@@ -7526,6 +7841,7 @@ function renderGamePrototypeSurface() {
   if (resourcePhysicsNode) resourcePhysicsNode.textContent = formatPrototypeResourcePhysics();
   if (thermalPhysicsNode) thermalPhysicsNode.textContent = formatPrototypeThermalPhysics();
   if (waterPhysicsNode) waterPhysicsNode.textContent = formatPrototypeWaterPhysics();
+  if (ecologyPhysicsNode) ecologyPhysicsNode.textContent = formatPrototypeEcologyPhysics();
 }
 
 function bindControls() {
@@ -8044,7 +8360,7 @@ function runDashboardResidentAction(name, action) {
 }
 function formatResidentDashboard() {
   const history = readResidentHistory();
-  const header = `Resources: water ${world.resources.water} / fiber ${world.resources.fiber} / wood ${world.resources.wood} / care ${world.resources.care}`;
+  const header = `Resources: water ${world.resources.water} / fiber ${world.resources.fiber} / wood ${world.resources.wood} / care ${world.resources.care} / food ${world.resources.food || 0}`;
   const rows = Object.keys(world.residents).map(name => {
     const resident = world.residents[name];
     const marker = name === world.selected ? '*' : ' ';
@@ -8129,6 +8445,8 @@ function describeReplayRow(row) {
     runThermalPhysicsLoop: `thermal physics loop steps=${payload.totalSteps || 0} smokeRows=${payload.smokeRows || 0} safety=${payload.safetyRows || 0}`,
     runWaterPhysicsStep: `water physics ${payload.stepId || 'none'} flows=${payload.flows || 0} leaks=${payload.leaks || 0} route=${payload.routePressure || 0}`,
     runWaterPhysicsLoop: `water physics loop flows=${payload.totalFlows || 0} leaks=${payload.leaks || 0} safety=${payload.safetyRows || 0}`,
+    runEcologyPhysicsStep: `ecology physics ${payload.stepId || 'none'} harvested=${payload.harvested || 0} fed=${payload.fed || 0} food=${payload.food || 0}`,
+    runEcologyPhysicsLoop: `ecology physics loop growth=${payload.growthRows || 0} harvest=${payload.harvestRows || 0} hunger=${payload.hungerRows || 0}`,
     exportReplay: `prepared replay export rows=${payload.rows} bytes=${payload.bytes}`,
     runSocialMemoryPulse: `ran resident-to-resident social memory pulse pairs=${payload.pairCount}`,
     settleSelectedRelationship: `settled resident-to-resident obligation ${payload.from} -> ${payload.to} debt=${payload.debt} trust=${payload.trust}`,
@@ -9562,6 +9880,7 @@ function commonsSourceForResource(resource) {
     water: { source: 'west well carry', resident: 'Milo', materialSource: 'well water already present in village map', labor: 'carry and store jars', cap: 18 },
     fiber: { source: 'reed bundles near drying path', resident: 'Sera', materialSource: 'cut reed fiber from known path edge', labor: 'cut, dry, and sort fiber', cap: 18 },
     wood: { source: 'fallen branch salvage', resident: 'Tovan', materialSource: 'storm-fallen branch pile', labor: 'carry, split, and stack wood', cap: 24 },
+    food: { source: 'nearby patch tending', resident: 'Fay', materialSource: 'recovering edible patches and stored basket', labor: 'check patches, gather carefully, and dry/store food', cap: 16 },
     care: { source: 'shared rest and herb tending', resident: 'Fay', materialSource: 'time, attention, and stored herbs', labor: 'prepare rest space and simple care kit', cap: 12 },
   };
   return sources[resource] || { source: 'ordinary commons sorting', resident: world.selected, materialSource: `known ${resource} store`, labor: `sort ${resource}`, cap: 12 };
@@ -10271,6 +10590,6 @@ function renderHintBranchPersistence() {
   ].join('\n');
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, runPracticalDiscoveryStep, runPracticalDiscoveryLoop, runVillageBoardLoop, supportVillageProposal, askVillageBoardQuestion, waitOnVillageBoard, advanceVillageProject, supportResourceCommons, performNearbyAction, endVillageDay, leaveAndReturnLater, runPrototypeMaterialWorldStep, runPrototypePhysicsStep, runTerrainPhysicsStep, runTerrainPhysicsLoop, runToolPhysicsStep, runToolPhysicsLoop, runResourcePhysicsStep, runResourcePhysicsLoop, runThermalPhysicsStep, runThermalPhysicsLoop, runWaterPhysicsStep, runWaterPhysicsLoop, runEcologyPhysicsStep, runEcologyPhysicsLoop, runResidentMaterialManipulationStep, runResidentMaterialManipulationLoop, runResidentBodyPhysicsStep, runResidentBodyPhysicsLoop, runRealityConstraintAudit, introduceAvatarHint, runHintDivergenceInterpretation, runAvatarHintDivergenceLoop, runHintBranchReturnSession, maintainHintBranchPractice, reviveForgottenHintPractice, runHintBranchPersistenceLoop, runPrototypeOpening, runPrototypeGuidedStep, runPrototypePracticeChain, runPrototypeReturnProof, runFirstPlayablePrototypeLoop, comparePrototypeDivergenceSeeds, auditPrototypeCommons, runCivilizationDeepTimeEpoch, runDeepTimePhysicsEpoch, applyLatestDeepTimeEffectToVillage, runCivilizationMillionYearSim, runCivilizationTenMillionYearSim, runCivilizationSurvivalAudit, runAutonomousResidentTick, runAutonomousResidentSeason, runPrototypeQASmoke, runPrototypeAutoStep, startPrototypeAutoSim, pausePrototypeAutoSim, runPrototypeAutoBurst, savePrototypeSlot, returnPrototypeSlot, exportPrototypeSaveReceipt, exportPrototypeAcceptanceReceipt, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

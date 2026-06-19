@@ -263,3 +263,11 @@ The prototype now models bounded water/fluid physics. Stored jar water, low wet 
 Game-build consequence: water is no longer only a resource number or terrain moisture color. It can leak from damaged vessels, evaporate, pool on low routes, flow through a channel, affect walkability, sync back into stored water, and create resident proposals without direct player command.
 
 Boundary: this is not full fluid dynamics. It is a causal gameplay layer that preserves volume, containment, slope, resistance, route pressure, and auditability.
+
+## Prototype v0 ecology/food physics update
+
+The prototype now has bounded ecology and food physics. Nearby food patches track biomass, carrying capacity, moisture fit, heat fit, rot pressure, route stress, regrowth, harvest difficulty, stored food, spoilage, hunger relief, and recoverable food-pressure proposals.
+
+Game-build consequence: hunger is no longer relieved by a magic forage action. Food must grow, be gathered, survive storage, and be consumed. Weather, terrain moisture, water route pressure, heat, spoilage, and resident hunger now affect ordinary survival and scheduling.
+
+Boundary: this is not a farming tech tree or population-growth system. It is a small causal ecology loop for the first village prototype.

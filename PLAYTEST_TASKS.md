@@ -149,3 +149,12 @@
 82. Use `End day` and confirm the day-cycle row includes a water step alongside weather, terrain, resources, and thermal physics.
 83. Save and return after water physics, then confirm saved slot summaries preserve flow, leak, and safety counts.
 84. Export acceptance and confirm `water_fluid_physics` is part of the prototype acceptance requirements.
+
+## Ecology/food physics playtests
+
+85. Use `Ecology physics` and confirm food patches show biomass, growth fit, rot, harvest, spoilage, hunger, and hidden-law boundary evidence.
+86. Use `Ecology loop` and confirm repeated ecology steps create growth, harvest, spoilage, and hunger rows without food spawning.
+87. Use `End day` and confirm the day-cycle row includes an ecology step alongside weather, terrain, resources, thermal, and water physics.
+88. Force or wait for hunger pressure, then confirm resident foraging consumes stored food or records continued pressure instead of magically clearing hunger.
+89. Save and return after ecology physics, then confirm saved slot summaries preserve growth, harvest, and hunger counts.
+90. Export acceptance and confirm `ecology_food_physics` is part of the prototype acceptance requirements.

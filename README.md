@@ -2200,3 +2200,5 @@ The prototype also now includes resource-stock physics: water, fiber, wood, and 
 Thermal/fire physics is now part of Prototype v0: watched heat sources consume fuel, transfer heat, dry or damage materials, produce smoke rows, affect resident safety/comfort, and create bounded safety proposals when needed.
 
 Water/fluid physics is now part of Prototype v0: contained jar water, puddles, and small runoff channels track volume, leaks, evaporation, route pressure, quality, resident footing effects, and recoverable safety proposals.
+
+Ecology/food physics is now part of Prototype v0: edible patches grow or rot from terrain/water/heat pressure, harvest creates stored food, food can spoil, hunger relief consumes food, and food pressure can create recoverable resident proposals.

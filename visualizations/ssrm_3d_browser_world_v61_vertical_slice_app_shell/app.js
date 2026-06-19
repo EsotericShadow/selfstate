@@ -3661,20 +3661,102 @@ function draw() {
   ctx.strokeStyle = 'rgba(249,235,201,0.14)';
   for (let x = 70; x < canvas.width; x += 120) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke(); }
   for (let y = 70; y < canvas.height; y += 100) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
+  const zones = [
+    { name: 'Shelter', x: 70, y: 72, w: 210, h: 118, color: 'rgba(213,161,58,0.18)' },
+    { name: 'Storage', x: 315, y: 72, w: 210, h: 118, color: 'rgba(47,113,123,0.18)' },
+    { name: 'Work yard', x: 560, y: 72, w: 210, h: 118, color: 'rgba(183,93,57,0.18)' },
+    { name: 'Village board', x: 805, y: 72, w: 170, h: 118, color: 'rgba(245,232,199,0.16)' },
+  ];
+  zones.forEach(zone => {
+    ctx.fillStyle = zone.color;
+    ctx.fillRect(zone.x, zone.y, zone.w, zone.h);
+    ctx.strokeStyle = 'rgba(249,235,201,0.28)';
+    ctx.strokeRect(zone.x, zone.y, zone.w, zone.h);
+    ctx.fillStyle = '#f9ebc9';
+    ctx.font = '18px Optima, sans-serif';
+    ctx.fillText(zone.name, zone.x + 14, zone.y + 30);
+  });
+
+  const resources = Object.entries(world.resources).map(([key, value]) => `${key}:${value}`).join('  ');
+  const clock = world.prototypeClock || { running: false, step: 0, lastAction: 'not started' };
+  const deepTime = world.deepTimeCivilization;
+  const survival = deepTime && deepTime.civilizationState ? deepTime.civilizationState : null;
+  ctx.fillStyle = 'rgba(17,24,22,0.72)';
+  ctx.fillRect(28, 22, 984, 36);
+  ctx.fillStyle = '#f9ebc9';
+  ctx.font = '16px Optima, sans-serif';
+  ctx.fillText(`Resources ${resources}  |  auto ${clock.running ? 'running' : 'paused'} step ${clock.step}  |  year ${deepTime ? deepTime.year : 0}`, 42, 46);
+  const survivalScore = survival ? Number(survival.continuityScore || 0) : 0;
+  ctx.fillStyle = 'rgba(249,235,201,0.16)';
+  ctx.fillRect(730, 35, 250, 10);
+  ctx.fillStyle = survivalScore > 0.65 ? '#9fca77' : survivalScore > 0.34 ? '#d5a13a' : '#b75d39';
+  ctx.fillRect(730, 35, 250 * survivalScore, 10);
+
   ctx.fillStyle = '#d5a13a'; ctx.beginPath(); ctx.arc(world.avatar.x, world.avatar.y, 24, 0, Math.PI * 2); ctx.fill();
   ctx.fillStyle = '#111816'; ctx.fillText('You', world.avatar.x - 11, world.avatar.y + 4);
   Object.entries(world.residents).forEach(([name, resident], index) => {
-    const x = 150 + index * 145;
-    const y = 160 + ((world.tick * (index + 2) + index * 73) % 350);
-    ctx.fillStyle = name === world.selected ? '#f0c35b' : '#aad0c3';
-    ctx.beginPath(); ctx.arc(x, y, 22 + resident.trust * 7, 0, Math.PI * 2); ctx.fill();
-    ctx.fillStyle = '#111816'; ctx.fillText(name, x - 12, y + 4);
-    ctx.fillStyle = '#f9ebc9'; ctx.fillText(resident.schedule, x - 42, y + 42);
+    const needs = world.autonomousResidents && world.autonomousResidents.needState ? world.autonomousResidents.needState[name] : null;
+    const x = 130 + (index % 3) * 275;
+    const y = 275 + Math.floor(index / 3) * 150;
+    const energy = needs ? needs.energy : resident.progress;
+    const safety = needs ? needs.safety : resident.trust;
+    const radius = 20 + Math.round(resident.trust * 10);
+    ctx.fillStyle = name === world.selected ? '#f0c35b' : (safety < 0.45 ? '#d98d69' : '#aad0c3');
+    ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = '#111816'; ctx.lineWidth = 3; ctx.stroke();
+    ctx.fillStyle = 'rgba(249,235,201,0.24)';
+    ctx.beginPath(); ctx.arc(x, y, radius + 8, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * energy); ctx.strokeStyle = '#9fca77'; ctx.lineWidth = 5; ctx.stroke();
+    ctx.fillStyle = '#111816'; ctx.font = '16px Optima, sans-serif'; ctx.fillText(name, x - 14, y + 5);
+    ctx.fillStyle = '#f9ebc9'; ctx.font = '13px Optima, sans-serif';
+    const schedule = resident.schedule.length > 34 ? resident.schedule.slice(0, 34) + '...' : resident.schedule;
+    ctx.fillText(schedule, x - 62, y + 45);
+    if (needs && needs.autonomy > 0.7) {
+      ctx.fillStyle = '#b75d39';
+      ctx.fillText('boundary', x - 30, y + 62);
+    }
   });
+
+  const board = world.villageBoard;
+  const proposals = board && board.projectProposals ? board.projectProposals.slice(-4) : [];
+  proposals.forEach((proposal, index) => {
+    const x = 825;
+    const y = 218 + index * 38;
+    ctx.fillStyle = proposal.status === 'accepted' ? '#9fca77' : '#d5a13a';
+    ctx.fillRect(x, y, 20, 20);
+    ctx.fillStyle = '#f9ebc9';
+    ctx.font = '13px Optima, sans-serif';
+    const label = `${proposal.proposal_id}: ${proposal.problem_addressed}`.slice(0, 42);
+    ctx.fillText(label, x + 28, y + 15);
+  });
+
+  const practiceGraph = world.emergentPracticeGraph;
+  const practices = practiceGraph && practiceGraph.nodes ? practiceGraph.nodes.slice(-5) : [];
+  practices.forEach((practice, index) => {
+    const x = 82 + index * 150;
+    const y = 555;
+    ctx.fillStyle = practice.status === 'taboo' ? '#b75d39' : practice.status === 'forgotten' ? '#777' : '#2f717b';
+    ctx.beginPath(); ctx.rect(x, y, 18, 18); ctx.fill();
+    ctx.fillStyle = '#f9ebc9';
+    ctx.font = '12px Optima, sans-serif';
+    ctx.fillText((practice.local_name || practice.practice_id || 'practice').slice(0, 20), x + 24, y + 14);
+  });
+
+  const effects = deepTime && deepTime.emergentEffects ? deepTime.emergentEffects.slice(-3) : [];
+  effects.forEach((effect, index) => {
+    const x = 735;
+    const y = 500 + index * 28;
+    ctx.fillStyle = '#d5a13a';
+    ctx.beginPath(); ctx.arc(x, y, 8, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#f9ebc9';
+    ctx.font = '12px Optima, sans-serif';
+    ctx.fillText(`${effect.effect_id}: ${effect.outcome}`.slice(0, 42), x + 18, y + 4);
+  });
+
   if (world.audit) {
     ctx.fillStyle = 'rgba(17,24,22,0.78)'; ctx.fillRect(34, 430, 520, 142);
     ctx.fillStyle = '#f9ebc9'; ctx.fillText('AUDIT: localStorage-backed state, replay export, private workspace hidden', 54, 462);
     ctx.fillText('Replay rows: ' + world.replay.length + ' / QA rows: ' + world.lastQA.length, 54, 494);
+    ctx.fillText('Ledger rows: ' + (world.realityConstraintLedger ? world.realityConstraintLedger.rows.length : 0) + ' / survival: ' + (survival ? survival.status : 'not audited'), 54, 526);
   }
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }

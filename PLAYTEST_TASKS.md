@@ -14,3 +14,5 @@
 11. Run Prototype QA and confirm the visible receipt passes core checks for entry, residents, autonomy, practice, proposals, deep time, survival audit, causal ledger, save/return, and game-build mode.
 
 12. Start auto sim, watch several resident/deep-time steps occur, pause it, and confirm residents, proposals, survival status, and save state changed visibly.
+
+13. Run Auto burst and confirm the canvas visibly changes: resident schedules/markers, proposal squares, practice markers, deep-time effect dots, resource row, and survival bar should reflect the simulation state.

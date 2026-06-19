@@ -131,3 +131,22 @@ Out of scope for v0: full continuous collision detection, exact rigid-body stack
 Prototype v0 now includes bounded material state and phase drift. Included states are saturation, dryness, rot, char, seal, crack, softening, hardening, effective hardness, brittleness, water resistance, and workability drift.
 
 Out of scope for v0: real chemistry, molecular simulation, detailed combustion, full fermentation, exact drying models, and production-grade material science.
+
+## Added scope gate: physics-to-practice playable slice
+
+The first playable prototype includes one named acceptance gate for lived discovery:
+
+`physics_to_practice_playable_slice`
+
+Required evidence:
+
+- linked physics rows from material state, structural/contact constraints, or resource stock
+- one resident-generated proposal related to that pressure
+- one resident-mediated material action/test
+- one emergent practice mutation with local resident term and imperfect player gloss
+- one save/return proof row linking the practice and proposal to a saved slot
+- no direct player command
+- no predeclared invention list
+- no installed correct modern concept
+
+This is the preferred next milestone for prototype work. Do not add new research reports to satisfy it; improve the playable shell.

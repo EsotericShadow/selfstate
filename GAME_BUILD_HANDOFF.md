@@ -289,3 +289,19 @@ This keeps the simulation direction physical without claiming production-grade r
 The prototype shell now gives each physical component a bounded material-state model. Components can accumulate saturation, dryness, rot, char, seal, cracking, softening, hardening, and effective property drift from heat, moisture, time, decay pressure, and stochastic material variation.
 
 This keeps the direction physics-first: resident-built objects do not merely have labels or static material IDs. Their material condition changes over time and can create repair pressure without spawning or deleting matter.
+
+## Prototype v0 playable physics-to-practice slice
+
+The current game build now has a named playable milestone: `physics_to_practice_playable_slice`.
+
+The slice is not a new research report. It is a browser-shell game loop that connects existing systems:
+
+- 3D material/structural/contact/resource physics produce grounded evidence.
+- Residents interpret the evidence as a local storage/repair concern, not as a modern technical concept.
+- A resident proposal appears on the village board without direct avatar command.
+- A resident material action/test links the proposal to repeated practice evidence.
+- The emergent practice graph records a local term, `taku-ren`, with roots, drift, failed ancestors, materials, risks, and maintenance cost.
+- A prototype save slot records the slice state so return sessions can preserve the linked physics/proposal/practice evidence.
+- QA and acceptance receipts now include `physics_to_practice_playable_slice` as a named gate.
+
+Player-facing target: enter the village, run `Playable slice`, inspect the new card, and confirm that physics evidence can become a resident-mediated practice without a tech-tree unlock.

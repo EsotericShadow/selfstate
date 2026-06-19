@@ -182,3 +182,12 @@
 103. End several village days and confirm material-state rows accumulate through ordinary weather/time progression.
 104. Inspect the Reality Constraint Ledger for `material_state_physics` with conservation and hidden-law separation.
 105. Save and return after material-state rows accumulate; confirm state/phase/property counters persist in the save panel.
+
+## Physics-to-practice slice playtests
+
+- Run `Playable slice` from a fresh village and inspect whether the card reaches `Acceptance ready: yes`.
+- Confirm the village board contains a resident proposal linked to a physics row, not a direct player order.
+- Inspect the emergent practice graph and find `taku-ren` as a local term/gloss, not an English technology label.
+- Export acceptance and confirm `physics_to_practice_playable_slice` appears as a passing requirement after the slice runs.
+- Save the prototype after the slice and confirm the save receipt contains playable slice counts.
+- Return from the saved slot and confirm linked proposal/practice state remains in the browser-local world.

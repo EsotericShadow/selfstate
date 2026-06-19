@@ -2208,3 +2208,7 @@ Structural-stress physics now extends the game prototype shell with load paths, 
 Contact/joint constraint physics now extends the prototype with friction limits, impulse transfer, joint demand/strength, slipping contacts, failed bindings, and constraint repair pressure for component-built structures.
 
 Material-state physics now gives components bounded saturation, drying, rot, char, sealing, cracking, hardening, and effective-property drift with reality-ledger traceability.
+
+## Game prototype v0 update
+
+The browser shell now includes a `Physics-to-practice playable slice` action/card. It connects 3D physics evidence, a resident proposal, resident material testing, emergent practice mutation, and prototype save/return persistence into one game-build milestone. This is part of the prototype implementation path, not a new research-report chain.

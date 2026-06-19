@@ -234,3 +234,21 @@ Material-state physics follows causal constraints:
 - no material spawning during phase drift
 
 The shell records `material_state_physics` rows with state counts, phase changes, risky components, repair pressure, hidden-law separation, and conservation checks.
+
+## Physics-to-practice slice ledger requirement
+
+The playable slice records a `physics_to_practice_playable_slice` ledger row whenever it connects physical evidence to a resident proposal and practice mutation.
+
+The row must preserve:
+
+- material sources from existing village objects or commons
+- material transformation or repair attention
+- time/work/resident effort cost
+- hidden physical law as audit-only
+- public observation separated from resident interpretation
+- conservation check
+- maintenance obligation
+- unintended consequence risk
+- explicit `avatar_direct_command: false`
+
+This ledger row exists to prevent a fake unlock path. The player may support conditions, but the practice must remain grounded in resident action, material constraints, and observed consequences.

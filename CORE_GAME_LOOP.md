@@ -373,3 +373,19 @@ The material loop now runs as:
 weather/thermal/water/component state -> saturation/drying/heat/decay calculation -> phase drift -> effective property drift -> component stability/damage update -> resident-visible material cue -> repair pressure if risky.
 
 This lets ordinary time, wetness, heat, sealing, rot, cracking, and hardening change future handling, stress, contact, and practice formation.
+
+## Playable physics-to-practice loop
+
+Prototype v0 now includes a concrete loop for the next playable milestone:
+
+1. Player enters the village.
+2. Existing 3D physics advances material state, support/stress, contact constraints, and resource stock.
+3. The shell summarizes a village problem from those physical signals.
+4. Residents frame the problem as a local storage/repair concern.
+5. The village board receives a resident proposal; the avatar can support conditions but cannot command acceptance.
+6. A resident performs a material handling/test action.
+7. Repeated evidence mutates an emergent practice node with local resident language.
+8. The state is saved into a prototype slot for return-session continuity.
+9. QA and acceptance receipts check the full path.
+
+This loop is deliberately small. It proves the game foundation can connect ordinary play, physics, resident interpretation, proposals, practice formation, and persistence before expanding the prototype.

@@ -109,3 +109,11 @@ Contact and joint constraints are bounded stochastic prototype physics. They are
 ## Material-state physics boundary
 
 Material-state physics is bounded stochastic prototype scaffolding. It models state drift and effective property changes for gameplay causality, not real chemistry or certified material science. Phase changes must remain traceable, bounded, repairable, and separate from resident belief.
+
+## Boundary: playable physics-to-practice slice
+
+The playable slice is browser-local prototype evidence. It does not claim real science, consciousness, moral patienthood, or complete civilization simulation.
+
+It also does not add a hidden technology tree. The engine may use `physics_to_practice_playable_slice` as an internal acceptance concept, but residents only receive local observations, local terms, proposal history, and imperfect glosses.
+
+The correct player role remains: influence conditions, offer support, ask, wait, and observe. The avatar cannot directly install the right explanation or force resident adoption.

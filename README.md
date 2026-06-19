@@ -2151,3 +2151,7 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 365: SSRM-3D Stochastic Recovery Loop Bridge
 
 [Stochastic recovery loop report](docs/365_ssrm_3d_stochastic_recovery_loop_bridge_report.md): turns stochastic surprise into bounded recovery queues, relationship repairs, resource tradeoffs, and schedule repair notes so random shocks affect later state without becoming permanent damage.
+
+### Report 366: SSRM-3D Stochastic History Influence Bridge
+
+[Stochastic history influence report](docs/366_ssrm_3d_stochastic_history_influence_bridge_report.md): makes recovered, pending, and stabilized stochastic recovery histories affect later bounded choices, refusals, and social echoes while preserving source IDs and no-permanent-punishment flags.

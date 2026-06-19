@@ -570,3 +570,7 @@ The maintained browser-world shell now has a bounded stochastic pulse that can a
 ## Report 365 Public Note: Recoverable Stochastic Consequences
 
 The browser-world shell now requires stochastic shocks to feed a bounded recovery path. Pulses can still create damage, delay, or social disagreement, but recovery rows can be planned and resolved with visible resource costs, resident memory updates, relationship repairs, and schedule repair notes. This keeps nondeterminism useful without making the simulation a permanent punishment loop or a suffering claim.
+
+## Report 366 Public Note: Stochastic History Changes Later Behavior
+
+The maintained shell now carries stochastic recovery history into later resident choices and social memory. Recovered shocks can support help, pending shocks can create bounded refusal until recovery is handled, and stabilized shocks can produce cautious help with limits. The system records source recovery IDs and no-permanent-punishment flags so surprise creates continuity without turning into random behavior or permanent blame.

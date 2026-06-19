@@ -1,0 +1,97 @@
+seed,ledger_id,type,source_id,summary
+36217,36217-SHC-01-choice,choice,36217-SHC-01,Milo chose bounded_refusal_until_recovery from pending
+36217,36217-SHE-01-echo,social_echo,36217-SHE-01,Milo echoed history influence to Sera
+36217,36217-SHC-02-choice,choice,36217-SHC-02,Sera chose accept_recovery_informed_help from resolved
+36217,36217-SHE-02-echo,social_echo,36217-SHE-02,Sera echoed history influence to Nia
+36217,36217-SHC-03-choice,choice,36217-SHC-03,Milo chose accept_recovery_informed_help from resolved
+36217,36217-SHE-03-echo,social_echo,36217-SHE-03,Milo echoed history influence to Nia
+36217,36217-SHC-04-choice,choice,36217-SHC-04,Tovan chose accept_recovery_informed_help from resolved
+36217,36217-SHE-04-echo,social_echo,36217-SHE-04,Tovan echoed history influence to Milo
+36217,36217-SHC-05-choice,choice,36217-SHC-05,Ari chose accept_recovery_informed_help from resolved
+36217,36217-SHE-05-echo,social_echo,36217-SHE-05,Ari echoed history influence to Nia
+36217,36217-SHC-06-choice,choice,36217-SHC-06,Ari chose bounded_refusal_until_recovery from pending
+36217,36217-SHE-06-echo,social_echo,36217-SHE-06,Ari echoed history influence to Ari
+36217,36217-SHC-07-choice,choice,36217-SHC-07,Fay chose accept_recovery_informed_help from resolved
+36217,36217-SHE-07-echo,social_echo,36217-SHE-07,Fay echoed history influence to Milo
+36217,36217-SHC-08-choice,choice,36217-SHC-08,Milo chose cautious_help_with_limits from stabilized without materials
+36217,36217-SHE-08-echo,social_echo,36217-SHE-08,Milo echoed history influence to Tovan
+36231,36231-SHC-01-choice,choice,36231-SHC-01,Tovan chose bounded_refusal_until_recovery from pending
+36231,36231-SHE-01-echo,social_echo,36231-SHE-01,Tovan echoed history influence to Nia
+36231,36231-SHC-02-choice,choice,36231-SHC-02,Fay chose accept_recovery_informed_help from resolved
+36231,36231-SHE-02-echo,social_echo,36231-SHE-02,Fay echoed history influence to Sera
+36231,36231-SHC-03-choice,choice,36231-SHC-03,Milo chose accept_recovery_informed_help from resolved
+36231,36231-SHE-03-echo,social_echo,36231-SHE-03,Milo echoed history influence to Nia
+36231,36231-SHC-04-choice,choice,36231-SHC-04,Milo chose accept_recovery_informed_help from resolved
+36231,36231-SHE-04-echo,social_echo,36231-SHE-04,Milo echoed history influence to Ari
+36231,36231-SHC-05-choice,choice,36231-SHC-05,Ari chose accept_recovery_informed_help from resolved
+36231,36231-SHE-05-echo,social_echo,36231-SHE-05,Ari echoed history influence to Nia
+36231,36231-SHC-06-choice,choice,36231-SHC-06,Tovan chose bounded_refusal_until_recovery from pending
+36231,36231-SHE-06-echo,social_echo,36231-SHE-06,Tovan echoed history influence to Tovan
+36231,36231-SHC-07-choice,choice,36231-SHC-07,Sera chose accept_recovery_informed_help from resolved
+36231,36231-SHE-07-echo,social_echo,36231-SHE-07,Sera echoed history influence to Tovan
+36231,36231-SHC-08-choice,choice,36231-SHC-08,Fay chose cautious_help_with_limits from stabilized without materials
+36231,36231-SHE-08-echo,social_echo,36231-SHE-08,Fay echoed history influence to Sera
+36247,36247-SHC-01-choice,choice,36247-SHC-01,Milo chose bounded_refusal_until_recovery from pending
+36247,36247-SHE-01-echo,social_echo,36247-SHE-01,Milo echoed history influence to Sera
+36247,36247-SHC-02-choice,choice,36247-SHC-02,Fay chose accept_recovery_informed_help from resolved
+36247,36247-SHE-02-echo,social_echo,36247-SHE-02,Fay echoed history influence to Sera
+36247,36247-SHC-03-choice,choice,36247-SHC-03,Fay chose accept_recovery_informed_help from resolved
+36247,36247-SHE-03-echo,social_echo,36247-SHE-03,Fay echoed history influence to Tovan
+36247,36247-SHC-04-choice,choice,36247-SHC-04,Ari chose accept_recovery_informed_help from resolved
+36247,36247-SHE-04-echo,social_echo,36247-SHE-04,Ari echoed history influence to Tovan
+36247,36247-SHC-05-choice,choice,36247-SHC-05,Fay chose accept_recovery_informed_help from resolved
+36247,36247-SHE-05-echo,social_echo,36247-SHE-05,Fay echoed history influence to Ari
+36247,36247-SHC-06-choice,choice,36247-SHC-06,Ari chose bounded_refusal_until_recovery from pending
+36247,36247-SHE-06-echo,social_echo,36247-SHE-06,Ari echoed history influence to Ari
+36247,36247-SHC-07-choice,choice,36247-SHC-07,Tovan chose accept_recovery_informed_help from resolved
+36247,36247-SHE-07-echo,social_echo,36247-SHE-07,Tovan echoed history influence to Nia
+36247,36247-SHC-08-choice,choice,36247-SHC-08,Tovan chose cautious_help_with_limits from stabilized without materials
+36247,36247-SHE-08-echo,social_echo,36247-SHE-08,Tovan echoed history influence to Ari
+36263,36263-SHC-01-choice,choice,36263-SHC-01,Fay chose bounded_refusal_until_recovery from pending
+36263,36263-SHE-01-echo,social_echo,36263-SHE-01,Fay echoed history influence to Milo
+36263,36263-SHC-02-choice,choice,36263-SHC-02,Milo chose accept_recovery_informed_help from resolved
+36263,36263-SHE-02-echo,social_echo,36263-SHE-02,Milo echoed history influence to Tovan
+36263,36263-SHC-03-choice,choice,36263-SHC-03,Fay chose accept_recovery_informed_help from resolved
+36263,36263-SHE-03-echo,social_echo,36263-SHE-03,Fay echoed history influence to Tovan
+36263,36263-SHC-04-choice,choice,36263-SHC-04,Fay chose accept_recovery_informed_help from resolved
+36263,36263-SHE-04-echo,social_echo,36263-SHE-04,Fay echoed history influence to Nia
+36263,36263-SHC-05-choice,choice,36263-SHC-05,Milo chose accept_recovery_informed_help from resolved
+36263,36263-SHE-05-echo,social_echo,36263-SHE-05,Milo echoed history influence to Fay
+36263,36263-SHC-06-choice,choice,36263-SHC-06,Ari chose bounded_refusal_until_recovery from pending
+36263,36263-SHE-06-echo,social_echo,36263-SHE-06,Ari echoed history influence to Ari
+36263,36263-SHC-07-choice,choice,36263-SHC-07,Sera chose accept_recovery_informed_help from resolved
+36263,36263-SHE-07-echo,social_echo,36263-SHE-07,Sera echoed history influence to Tovan
+36263,36263-SHC-08-choice,choice,36263-SHC-08,Sera chose cautious_help_with_limits from stabilized without materials
+36263,36263-SHE-08-echo,social_echo,36263-SHE-08,Sera echoed history influence to Nia
+36281,36281-SHC-01-choice,choice,36281-SHC-01,Fay chose bounded_refusal_until_recovery from pending
+36281,36281-SHE-01-echo,social_echo,36281-SHE-01,Fay echoed history influence to Milo
+36281,36281-SHC-02-choice,choice,36281-SHC-02,Tovan chose accept_recovery_informed_help from resolved
+36281,36281-SHE-02-echo,social_echo,36281-SHE-02,Tovan echoed history influence to Ari
+36281,36281-SHC-03-choice,choice,36281-SHC-03,Fay chose accept_recovery_informed_help from resolved
+36281,36281-SHE-03-echo,social_echo,36281-SHE-03,Fay echoed history influence to Tovan
+36281,36281-SHC-04-choice,choice,36281-SHC-04,Milo chose accept_recovery_informed_help from resolved
+36281,36281-SHE-04-echo,social_echo,36281-SHE-04,Milo echoed history influence to Ari
+36281,36281-SHC-05-choice,choice,36281-SHC-05,Fay chose accept_recovery_informed_help from resolved
+36281,36281-SHE-05-echo,social_echo,36281-SHE-05,Fay echoed history influence to Ari
+36281,36281-SHC-06-choice,choice,36281-SHC-06,Tovan chose bounded_refusal_until_recovery from pending
+36281,36281-SHE-06-echo,social_echo,36281-SHE-06,Tovan echoed history influence to Tovan
+36281,36281-SHC-07-choice,choice,36281-SHC-07,Sera chose accept_recovery_informed_help from resolved
+36281,36281-SHE-07-echo,social_echo,36281-SHE-07,Sera echoed history influence to Tovan
+36281,36281-SHC-08-choice,choice,36281-SHC-08,Tovan chose cautious_help_with_limits from stabilized without materials
+36281,36281-SHE-08-echo,social_echo,36281-SHE-08,Tovan echoed history influence to Ari
+36307,36307-SHC-01-choice,choice,36307-SHC-01,Fay chose bounded_refusal_until_recovery from pending
+36307,36307-SHE-01-echo,social_echo,36307-SHE-01,Fay echoed history influence to Milo
+36307,36307-SHC-02-choice,choice,36307-SHC-02,Sera chose accept_recovery_informed_help from resolved
+36307,36307-SHE-02-echo,social_echo,36307-SHE-02,Sera echoed history influence to Nia
+36307,36307-SHC-03-choice,choice,36307-SHC-03,Fay chose accept_recovery_informed_help from resolved
+36307,36307-SHE-03-echo,social_echo,36307-SHE-03,Fay echoed history influence to Tovan
+36307,36307-SHC-04-choice,choice,36307-SHC-04,Milo chose accept_recovery_informed_help from resolved
+36307,36307-SHE-04-echo,social_echo,36307-SHE-04,Milo echoed history influence to Ari
+36307,36307-SHC-05-choice,choice,36307-SHC-05,Sera chose accept_recovery_informed_help from resolved
+36307,36307-SHE-05-echo,social_echo,36307-SHE-05,Sera echoed history influence to Milo
+36307,36307-SHC-06-choice,choice,36307-SHC-06,Tovan chose bounded_refusal_until_recovery from pending
+36307,36307-SHE-06-echo,social_echo,36307-SHE-06,Tovan echoed history influence to Tovan
+36307,36307-SHC-07-choice,choice,36307-SHC-07,Milo chose accept_recovery_informed_help from resolved
+36307,36307-SHE-07-echo,social_echo,36307-SHE-07,Milo echoed history influence to Sera
+36307,36307-SHC-08-choice,choice,36307-SHC-08,Tovan chose cautious_help_with_limits from stabilized without materials
+36307,36307-SHE-08-echo,social_echo,36307-SHE-08,Tovan echoed history influence to Ari

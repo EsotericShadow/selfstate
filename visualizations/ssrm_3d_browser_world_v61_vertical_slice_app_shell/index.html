@@ -37,6 +37,7 @@
           <button data-action="runScheduledAnomalyInvestigation">Run scheduled test</button>
           <button data-action="runStochasticConsequencePulse">Stochastic pulse</button>
           <button data-action="runStochasticRecoveryLoop">Recover pulse</button>
+          <button data-action="runStochasticHistoryInfluenceLoop">History influence</button>
           <button data-action="repairTrust">Repair trust</button>
           <button data-action="advancePromiseFollowUp">Advance follow-up</button>
           <button data-action="toggleAudit">Audit</button>
@@ -68,6 +69,7 @@
           <article><strong>Anomaly schedule</strong><span id="anomalyInvestigationScheduleSummaryOut"></span></article>
           <article><strong>Stochastic consequences</strong><span id="stochasticConsequencePulseSummaryOut"></span></article>
           <article><strong>Stochastic recovery</strong><span id="stochasticRecoveryLoopSummaryOut"></span></article>
+          <article><strong>History influence</strong><span id="stochasticHistoryInfluenceSummaryOut"></span></article>
           <article><strong>Follow-up</strong><span id="promiseFollowUpOut"></span></article>
           <article><strong>Absent time</strong><span id="absentTimeSummaryOut"></span></article>
           <article><strong>Absent choice</strong><span id="absentTimeChoiceOut"></span></article>
@@ -115,6 +117,7 @@
       <article class="panel"><h2>Scheduled anomaly investigation</h2><div class="anomaly-schedule-actions"><button data-action="planAnomalyInvestigationSchedule">Plan schedule</button><button data-action="runScheduledAnomalyInvestigation">Run next slot</button></div><pre id="anomalyInvestigationScheduleOut"></pre></article>
       <article class="panel"><h2>Stochastic consequence pulse</h2><div class="stochastic-actions"><button data-action="runStochasticConsequencePulse">Run pulse</button><button data-action="runStochasticConsequenceBurst">Run burst</button></div><pre id="stochasticConsequencePulseOut"></pre></article>
       <article class="panel"><h2>Stochastic recovery loop</h2><div class="stochastic-recovery-actions"><button data-action="planStochasticRecoveryLoop">Plan recovery</button><button data-action="resolveStochasticRecoveryStep">Resolve step</button><button data-action="runStochasticRecoveryLoop">Run recovery loop</button></div><pre id="stochasticRecoveryLoopOut"></pre></article>
+      <article class="panel"><h2>Stochastic history influence</h2><div class="stochastic-history-actions"><button data-action="runStochasticHistoryChoice">Run choice</button><button data-action="runStochasticHistorySocialEcho">Run social echo</button><button data-action="runStochasticHistoryInfluenceLoop">Run influence loop</button></div><pre id="stochasticHistoryInfluenceOut"></pre></article>
       <article class="panel"><h2>Integrated scenario receipt</h2><div class="receipt-actions"><button data-action="generateScenarioReceipt">Generate receipt</button></div><pre id="scenarioReceiptOut"></pre></article>
       <article class="panel deep-panel"><h2>Receipt observations</h2><div class="observation-actions"><select id="receiptFieldSelect" aria-label="Receipt field"></select><select id="receiptSeveritySelect" aria-label="Observation severity"><option value="watch">watch</option><option value="minor">minor</option><option value="blocking">blocking</option></select><button data-action="logReceiptObservation">Log observation</button><button data-action="resolveLatestObservation">Resolve latest</button></div><pre id="receiptObservationOut"></pre></article>
       <article class="panel"><h2>Observation triage</h2><div class="triage-actions"><button data-action="setObservationFilterAll">All</button><button data-action="setObservationFilterOpen">Open</button><button data-action="setObservationFilterWatch">Watch</button><button data-action="setObservationFilterResolved">Resolved</button><button data-action="setObservationFilterBlocking">Blocking</button></div><pre id="observationTriageOut"></pre></article>

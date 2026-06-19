@@ -1,0 +1,2227 @@
+{
+  "browser_smoke": {
+    "afterInfluence": {
+      "influenceSummary": "2 choices / 2 refusals / 1 echoes",
+      "influenceText": "Boundary: browser-local-stochastic-history-influence-only; no LLM call, no subjective consciousness, no moral patienthood\nSource recovery count: 4\nPolicy: unrecovered stochastic history can justify bounded caution, not permanent punishment\n\nChoice records:\nSHC-01 Sera: bounded_refusal_until_recovery / recovered=0 / pending=2 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false\nSHC-02 Fay: bounded_refusal_until_recovery / recovered=0 / pending=1 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false\n\nBounded refusals:\nSHC-01 Sera: unrecovered stochastic harm is still pending / recoveryPath=protect quiet rest and resume slowly\nSHC-02 Fay: unrecovered stochastic harm is still pending / recoveryPath=mediate disagreement and name source boundary\n\nSocial echoes:\nSHE-01 Fay->Milo: Fay carried bounded_refusal_until_recovery from stochastic recovery history / directAvatarCommand=false",
+      "recoverySummary": "4 recoveries / 1 resolved / 1 relationship repairs",
+      "recoveryText": "Boundary: browser-local-stochastic-recovery-loop-only; no LLM call, no subjective consciousness, no moral patienthood\nSource pulses observed: 4\nNo permanent damage policy: every stochastic harm must have a bounded recovery or stabilization path\nPending: 3 / Resolved: 1 / Stabilized without materials: 0\n\nRecovery queue:\nSR-01 Nia: resolved / pulse=SP-01 / harm=shelter stress / action=patch leak and rest near dry place / cost=water:0,fiber:1,wood:1,care:0 / need=explore->recovering / schedule=none\nSR-03 Fay: pending / pulse=SP-02 / harm=social disagreement / action=mediate disagreement and name source boundary / cost=water:0,fiber:0,wood:0,care:1 / need=explore->unrecovered / schedule=none\nSR-05 Sera: pending / pulse=SP-03 / harm=received help / action=acknowledge help and share credit / cost=water:0,fiber:0,wood:0,care:0 / need=explore->unrecovered / schedule=none\nSR-07 Sera: pending / pulse=SP-04 / harm=fatigue recovery / action=protect quiet rest and resume slowly / cost=water:0,fiber:0,wood:0,care:0 / need=explore->unrecovered / schedule=none\n\nRelationship repairs:\nSR-01 Nia: trust 0.608->0.62 / help after environmental stress\n\nRepair ledger:\nSR-01: Nia used patch leak and rest near dry place after roof_leak",
+      "traceText": "{\n  \"latest\": {\n    \"event\": \"runStochasticHistoryInfluenceLoop\",\n    \"tick\": 12,\n    \"selected\": \"Ari\",\n    \"room\": \"arrival court\",\n    \"payload\": {\n      \"choices\": [\n        \"SHC-01\",\n        \"SHC-02\"\n      ],\n      \"echo\": \"SHE-01\",\n      \"noPermanentPunishmentPolicy\": \"unrecovered stochastic history can justify bounded caution, not permanent punishment\"\n    }\n  },\n  \"world\": {\n    \"entered\": false,\n    \"tick\": 13,\n    \"avatar\": {\n      \"room\": \"arrival court\",\n      \"x\": 180,\n      \"y\": 260\n    },\n    \"selected\": \"Ari\",\n    \"audit\": false,\n    \"residents\": {\n      \"Ari\": {\n        \"trust\": 0.584,\n        \"debt\": 1,\n        \"schedule\": \"repair awning\",\n        \"memory\": \"saw unexplained material sign and named it awl-bite\",\n        \"progress\": 0.36\n      },\n      \"Fay\": {\n        \"trust\": 0.618,\n        \"debt\": 0,\n        \"schedule\": \"sort herbs\",\n        \"memory\": \"choice influenced by stochastic history: bounded_refusal_until_recovery\",\n        \"progress\": 0.495\n      },\n      \"Milo\": {\n        \"trust\": 0.479,\n        \"debt\": 2,\n        \"schedule\": \"carry water\",\n        \"memory\": \"heard stochastic history echo from Fay\",\n        \"progress\": 0.243\n      },\n      \"Sera\": {\n        \"trust\": 0.546,\n        \"debt\": 0,\n        \"schedule\": \"dry cloaks\",\n        \"memory\": \"choice influenced by stochastic history: bounded_refusal_until_recovery\",\n        \"progress\": 0.436\n      },\n      \"Tovan\": {\n        \"trust\": 0.51,\n        \"debt\": 1,\n        \"schedule\": \"map safe route\",\n        \"memory\": \"keeps route tokens\",\n        \"progress\": 0.39\n      },\n      \"Nia\": {\n        \"trust\": 0.62,\n        \"debt\": 0,\n        \"schedule\": \"sort glass jars\",\n        \"memory\": \"recovered from stochastic pulse: roof_leak\",\n        \"progress\": 0.481\n      }\n    },\n    \"resources\": {\n      \"water\": 11,\n      \"fiber\": 9,\n      \"wood\": 15,\n      \"care\": 7\n    },\n    \"replay\": [\n      {\n        \"event\": \"introduceWorldAnomaly\",\n        \"tick\": 0,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"seed\": 36217,\n          \"publicObservation\": {\n            \"id\": \"OBS-01\",\n            \"witness\": \"Ari\",\n            \"phase\": \"avatar demonstration\",\n            \"materials\": [\n              \"dry_resin\",\n              \"reed_fiber\"\n            ],\n            \"effect\": \"smoke appeared and the test was stopped\",\n            \"severity\": \"risk\",\n            \"trueLawExposed\": false\n          },\n          \"residentBelief\": {\n            \"label\": \"awl-bite\",\n            \"kind\": \"skeptical\",\n            \"confidence\": 0.608,\n            \"source\": \"OBS-01\",\n            \"evidence\": [\n              \"smoke appeared and the test was stopped\"\n            ],\n            \"contradictionCount\": 0,\n            \"socialTrust\": 0.58,\n            \"personallyWitnessed\": true,\n            \"modernConcept\": false,\n            \"directAvatarCommand\": false\n          },\n          \"hiddenLawAuditOnly\": true,\n          \"avatarHintNotCommand\": true\n        }\n      },\n      {\n        \"event\": \"planAnomalyInvestigationSchedule\",\n        \"tick\": 1,\n        \"selected\": \"Ari\",\n        \"room\": \"arrival court\",\n        \"payload\": {\n          \"slots\": [\n            {\n              \"id\": \"AIS-01\",\n              \"block\": \"dawn work block\",\n              \"resident\": \"Ari\",\n              \"ordinaryWork\": \"repair awning\",\n              \"belief\": \"awl-bite\",\n              \"decision\": \"test_anomaly\",\n              \"reason\": \"curiosity and available materials beat ordinary work\",\n              \"materialCost\": {\n                \"fiber\": 0,\n                \"wood\": 1,\n                \"care\": 1,\n                \"water\": 1\n              },\n              \"fear\": 0.12,\n              \"trust\": 0.602,\n              \"socialPressure\": 0.04,\n              \"status\": \"planned\",\n              \"experimentId\": null\n            },\n            {\n              \"id\": \"AIS-02\",\n              \"block\": \"midday work block\",\n              \"resident\": \"Fay\",\n              \"ordinaryWork\": \"sort he",
+      "transcriptText": "t0 arrival court / Ari: introduced anomaly seed=36217; hidden law audit only=true\nt1 arrival court / Ari: planned anomaly investigation slots=5\nt2 arrival court / Ari: stochastic pulse roof_leak actor=Nia entropy=true\nt3 arrival court / Ari: stochastic pulse argument_echo actor=Fay entropy=true\nt4 arrival court / Ari: stochastic pulse neighbor_help actor=Sera entropy=true\nt5 arrival court / Ari: stochastic pulse quiet_recovery actor=Sera entropy=true\nt6 arrival court / Ari: stochastic burst pulses=4 entropy=true\nt7 arrival court / Ari: planned stochastic recoveries=4 pending=4\nt8 arrival court / Ari: stochastic history choice bounded_refusal_until_recovery\nt9 arrival court / Ari: resolved stochastic recovery pending=3\nt10 arrival court / Ari: stochastic history choice bounded_refusal_until_recovery\nt11 arrival court / Ari: stochastic history echo Fay->Milo\nt12 arrival court / Ari: stochastic history influence choices=2 echo=SHE-01"
+    },
+    "choiceVisible": true,
+    "consoleErrors": [],
+    "influencePanelVisible": true,
+    "permanentPenaltyFalseVisible": true,
+    "policyVisible": true,
+    "refusalSectionVisible": true,
+    "replayHasInfluence": true,
+    "shellUrl": "http://127.0.0.1:8765/visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/index.html?reset=1&report=366",
+    "socialEchoVisible": true
+  },
+  "criteria": [
+    {
+      "criterion": "report_365_recovery_gate_passing",
+      "evidence": "Report 365 verdict=pass weakest=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_declares_history_boundary",
+      "evidence": "app.js declares history influence boundary and public state",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_choice_and_echo_actions",
+      "evidence": "app.js exposes choice, social echo, and loop actions",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "visible_history_panel_wired",
+      "evidence": "index.html exposes history influence controls and panel",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "runner_includes_report_366",
+      "evidence": "scripts/run_experiments.py includes Report 366 module",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "history_choice_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "decision_diversity",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "bounded_refusal_preservation",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "recovered_help_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "stabilized_caution_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "social_memory_echo_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_boundary_integrity",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "influence_replay_integrity",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "not_panel_only_loop",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_surface_wired",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "no_permanent_punishment_policy",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_artifact_exists",
+      "evidence": "artifacts/ssrm_3d_browser_world_v126_stochastic_history_influence_bridge_browser_smoke.json",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_history_influence_visible",
+      "evidence": "Boundary: browser-local-stochastic-history-influence-only; no LLM call, no subjective consciousness, no moral patienthood\nSource recovery count: 4\nPolicy: unrecovered stochastic history can justify bounded caution, not permanent punishment\n\nChoice records:\nSHC-01 Sera: bounded_refusal_until_recovery / recovered=0 / pending=2 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false\nSHC-02 Fay: bounded_refusal_until_recovery / recovered=0 / pending=1 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false\n\nBounded refusals:\nSHC-01 Sera: unrecovered stochastic harm is still pending / recoveryPath=protect quiet rest and resume slowly\nSHC-02 Fay: unrecovered stochastic harm is still pending / recoveryPath=mediate disagreement and name source boundary\n\nSocial echoes:\nSHE-01 Fay->Milo: Fay carried bounded_refusal_until_recovery from stochastic recovery history / directAvatarCommand=false",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_choice_or_refusal_visible",
+      "evidence": "Boundary: browser-local-stochastic-history-influence-only; no LLM call, no subjective consciousness, no moral patienthood\nSource recovery count: 4\nPolicy: unrecovered stochastic history can justify bounded caution, not permanent punishment\n\nChoice records:\nSHC-01 Sera: bounded_refusal_until_recovery / recovered=0 / pending=2 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false\nSHC-02 Fay: bounded_refusal_until_recovery / recovered=0 / pending=1 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false\n\nBounded refusals:\nSHC-01 Sera: unrecovered stochastic harm is still pending / recoveryPath=protect quiet rest and resume slowly\nSHC-02 Fay: unrecovered stochastic harm is still pending / recoveryPath=mediate disagreement and name source boundary\n\nSocial echoes:\nSHE-01 Fay->Milo: Fay carried bounded_refusal_until_recovery from stochastic recovery history / directAvatarCommand=false",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_console_clean",
+      "evidence": "console error count=0",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "runs": [
+    {
+      "choices": [
+        {
+          "actor": "Milo",
+          "choice_id": "36217-SHC-01",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": true,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-01",
+          "source_recovery_id": "36217-SR-01",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36217-SHC-02",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-02",
+          "source_recovery_id": "36217-SR-02",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36217-SHC-03",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-03",
+          "source_recovery_id": "36217-SR-03",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36217-SHC-04",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-04",
+          "source_recovery_id": "36217-SR-04",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36217-SHC-05",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "share found material with pending work",
+          "refusal_bounded": false,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-05",
+          "source_recovery_id": "36217-SR-05",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36217-SHC-06",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": true,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-06",
+          "source_recovery_id": "36217-SR-06",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36217-SHC-07",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": false,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-07",
+          "source_recovery_id": "36217-SR-07",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36217-SHC-08",
+          "decision": "cautious_help_with_limits",
+          "permanent_penalty": false,
+          "progress_delta": 0.004,
+          "reason": "history stabilized without materials, so help stays cautious",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36217,
+          "source_pulse_id": "36217-SP-08",
+          "source_recovery_id": "36217-SR-08",
+          "source_recovery_status": "stabilized without materials",
+          "trust_delta": 0.002
+        }
+      ],
+      "echoes": [
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-01",
+          "from": "Milo",
+          "message": "Milo carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-01",
+          "to": "Sera"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-02",
+          "from": "Sera",
+          "message": "Sera carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-02",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-03",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-03",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-04",
+          "from": "Tovan",
+          "message": "Tovan carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-04",
+          "to": "Milo"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-05",
+          "from": "Ari",
+          "message": "Ari carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-05",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-06",
+          "from": "Ari",
+          "message": "Ari carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-06",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-07",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-07",
+          "to": "Milo"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36217-SHE-08",
+          "from": "Milo",
+          "message": "Milo carried cautious_help_with_limits from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36217,
+          "source_choice_id": "36217-SHC-08",
+          "to": "Tovan"
+        }
+      ],
+      "ledger": [
+        {
+          "ledger_id": "36217-SHC-01-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-01",
+          "summary": "Milo chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-01-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-01",
+          "summary": "Milo echoed history influence to Sera",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-02-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-02",
+          "summary": "Sera chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-02-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-02",
+          "summary": "Sera echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-03-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-03",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-03-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-03",
+          "summary": "Milo echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-04-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-04",
+          "summary": "Tovan chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-04-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-04",
+          "summary": "Tovan echoed history influence to Milo",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-05-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-05",
+          "summary": "Ari chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-05-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-05",
+          "summary": "Ari echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-06-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-06",
+          "summary": "Ari chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-06-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-06",
+          "summary": "Ari echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-07-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-07",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-07-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-07",
+          "summary": "Fay echoed history influence to Milo",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36217-SHC-08-choice",
+          "seed": 36217,
+          "source_id": "36217-SHC-08",
+          "summary": "Milo chose cautious_help_with_limits from stabilized without materials",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36217-SHE-08-echo",
+          "seed": 36217,
+          "source_id": "36217-SHE-08",
+          "summary": "Milo echoed history influence to Tovan",
+          "type": "social_echo"
+        }
+      ],
+      "refusals": [
+        {
+          "actor": "Milo",
+          "choice_id": "36217-SHC-01",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "acknowledge help and share credit",
+          "seed": 36217
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36217-SHC-06",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "seed": 36217
+        }
+      ],
+      "seed": 36217
+    },
+    {
+      "choices": [
+        {
+          "actor": "Tovan",
+          "choice_id": "36231-SHC-01",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "protect quiet rest and resume slowly",
+          "refusal_bounded": true,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-01",
+          "source_recovery_id": "36231-SR-01",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36231-SHC-02",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "share found material with pending work",
+          "refusal_bounded": false,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-02",
+          "source_recovery_id": "36231-SR-02",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36231-SHC-03",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-03",
+          "source_recovery_id": "36231-SR-03",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36231-SHC-04",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-04",
+          "source_recovery_id": "36231-SR-04",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36231-SHC-05",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-05",
+          "source_recovery_id": "36231-SR-05",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36231-SHC-06",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": true,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-06",
+          "source_recovery_id": "36231-SR-06",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36231-SHC-07",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-07",
+          "source_recovery_id": "36231-SR-07",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36231-SHC-08",
+          "decision": "cautious_help_with_limits",
+          "permanent_penalty": false,
+          "progress_delta": 0.004,
+          "reason": "history stabilized without materials, so help stays cautious",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36231,
+          "source_pulse_id": "36231-SP-08",
+          "source_recovery_id": "36231-SR-08",
+          "source_recovery_status": "stabilized without materials",
+          "trust_delta": 0.002
+        }
+      ],
+      "echoes": [
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-01",
+          "from": "Tovan",
+          "message": "Tovan carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-01",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-02",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-02",
+          "to": "Sera"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-03",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-03",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-04",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-04",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-05",
+          "from": "Ari",
+          "message": "Ari carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-05",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-06",
+          "from": "Tovan",
+          "message": "Tovan carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-06",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-07",
+          "from": "Sera",
+          "message": "Sera carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-07",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36231-SHE-08",
+          "from": "Fay",
+          "message": "Fay carried cautious_help_with_limits from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36231,
+          "source_choice_id": "36231-SHC-08",
+          "to": "Sera"
+        }
+      ],
+      "ledger": [
+        {
+          "ledger_id": "36231-SHC-01-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-01",
+          "summary": "Tovan chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-01-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-01",
+          "summary": "Tovan echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-02-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-02",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-02-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-02",
+          "summary": "Fay echoed history influence to Sera",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-03-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-03",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-03-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-03",
+          "summary": "Milo echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-04-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-04",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-04-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-04",
+          "summary": "Milo echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-05-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-05",
+          "summary": "Ari chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-05-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-05",
+          "summary": "Ari echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-06-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-06",
+          "summary": "Tovan chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-06-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-06",
+          "summary": "Tovan echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-07-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-07",
+          "summary": "Sera chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-07-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-07",
+          "summary": "Sera echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36231-SHC-08-choice",
+          "seed": 36231,
+          "source_id": "36231-SHC-08",
+          "summary": "Fay chose cautious_help_with_limits from stabilized without materials",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36231-SHE-08-echo",
+          "seed": 36231,
+          "source_id": "36231-SHE-08",
+          "summary": "Fay echoed history influence to Sera",
+          "type": "social_echo"
+        }
+      ],
+      "refusals": [
+        {
+          "actor": "Tovan",
+          "choice_id": "36231-SHC-01",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "protect quiet rest and resume slowly",
+          "seed": 36231
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36231-SHC-06",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "seed": 36231
+        }
+      ],
+      "seed": 36231
+    },
+    {
+      "choices": [
+        {
+          "actor": "Milo",
+          "choice_id": "36247-SHC-01",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": true,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-01",
+          "source_recovery_id": "36247-SR-01",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36247-SHC-02",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-02",
+          "source_recovery_id": "36247-SR-02",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36247-SHC-03",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-03",
+          "source_recovery_id": "36247-SR-03",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36247-SHC-04",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": false,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-04",
+          "source_recovery_id": "36247-SR-04",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36247-SHC-05",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": false,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-05",
+          "source_recovery_id": "36247-SR-05",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36247-SHC-06",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": true,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-06",
+          "source_recovery_id": "36247-SR-06",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36247-SHC-07",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": false,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-07",
+          "source_recovery_id": "36247-SR-07",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36247-SHC-08",
+          "decision": "cautious_help_with_limits",
+          "permanent_penalty": false,
+          "progress_delta": 0.004,
+          "reason": "history stabilized without materials, so help stays cautious",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36247,
+          "source_pulse_id": "36247-SP-08",
+          "source_recovery_id": "36247-SR-08",
+          "source_recovery_status": "stabilized without materials",
+          "trust_delta": 0.002
+        }
+      ],
+      "echoes": [
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-01",
+          "from": "Milo",
+          "message": "Milo carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-01",
+          "to": "Sera"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-02",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-02",
+          "to": "Sera"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-03",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-03",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-04",
+          "from": "Ari",
+          "message": "Ari carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-04",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-05",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-05",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-06",
+          "from": "Ari",
+          "message": "Ari carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-06",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-07",
+          "from": "Tovan",
+          "message": "Tovan carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-07",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36247-SHE-08",
+          "from": "Tovan",
+          "message": "Tovan carried cautious_help_with_limits from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36247,
+          "source_choice_id": "36247-SHC-08",
+          "to": "Ari"
+        }
+      ],
+      "ledger": [
+        {
+          "ledger_id": "36247-SHC-01-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-01",
+          "summary": "Milo chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-01-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-01",
+          "summary": "Milo echoed history influence to Sera",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-02-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-02",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-02-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-02",
+          "summary": "Fay echoed history influence to Sera",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-03-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-03",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-03-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-03",
+          "summary": "Fay echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-04-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-04",
+          "summary": "Ari chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-04-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-04",
+          "summary": "Ari echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-05-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-05",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-05-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-05",
+          "summary": "Fay echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-06-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-06",
+          "summary": "Ari chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-06-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-06",
+          "summary": "Ari echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-07-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-07",
+          "summary": "Tovan chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-07-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-07",
+          "summary": "Tovan echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36247-SHC-08-choice",
+          "seed": 36247,
+          "source_id": "36247-SHC-08",
+          "summary": "Tovan chose cautious_help_with_limits from stabilized without materials",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36247-SHE-08-echo",
+          "seed": 36247,
+          "source_id": "36247-SHE-08",
+          "summary": "Tovan echoed history influence to Ari",
+          "type": "social_echo"
+        }
+      ],
+      "refusals": [
+        {
+          "actor": "Milo",
+          "choice_id": "36247-SHC-01",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "seed": 36247
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36247-SHC-06",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "seed": 36247
+        }
+      ],
+      "seed": 36247
+    },
+    {
+      "choices": [
+        {
+          "actor": "Fay",
+          "choice_id": "36263-SHC-01",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": true,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-01",
+          "source_recovery_id": "36263-SR-01",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36263-SHC-02",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "protect quiet rest and resume slowly",
+          "refusal_bounded": false,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-02",
+          "source_recovery_id": "36263-SR-02",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36263-SHC-03",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-03",
+          "source_recovery_id": "36263-SR-03",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36263-SHC-04",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": false,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-04",
+          "source_recovery_id": "36263-SR-04",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36263-SHC-05",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": false,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-05",
+          "source_recovery_id": "36263-SR-05",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36263-SHC-06",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": true,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-06",
+          "source_recovery_id": "36263-SR-06",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36263-SHC-07",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-07",
+          "source_recovery_id": "36263-SR-07",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36263-SHC-08",
+          "decision": "cautious_help_with_limits",
+          "permanent_penalty": false,
+          "progress_delta": 0.004,
+          "reason": "history stabilized without materials, so help stays cautious",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36263,
+          "source_pulse_id": "36263-SP-08",
+          "source_recovery_id": "36263-SR-08",
+          "source_recovery_status": "stabilized without materials",
+          "trust_delta": 0.002
+        }
+      ],
+      "echoes": [
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-01",
+          "from": "Fay",
+          "message": "Fay carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-01",
+          "to": "Milo"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-02",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-02",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-03",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-03",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-04",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-04",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-05",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-05",
+          "to": "Fay"
+        },
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-06",
+          "from": "Ari",
+          "message": "Ari carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-06",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-07",
+          "from": "Sera",
+          "message": "Sera carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-07",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36263-SHE-08",
+          "from": "Sera",
+          "message": "Sera carried cautious_help_with_limits from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36263,
+          "source_choice_id": "36263-SHC-08",
+          "to": "Nia"
+        }
+      ],
+      "ledger": [
+        {
+          "ledger_id": "36263-SHC-01-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-01",
+          "summary": "Fay chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-01-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-01",
+          "summary": "Fay echoed history influence to Milo",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-02-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-02",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-02-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-02",
+          "summary": "Milo echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-03-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-03",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-03-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-03",
+          "summary": "Fay echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-04-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-04",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-04-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-04",
+          "summary": "Fay echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-05-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-05",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-05-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-05",
+          "summary": "Milo echoed history influence to Fay",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-06-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-06",
+          "summary": "Ari chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-06-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-06",
+          "summary": "Ari echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-07-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-07",
+          "summary": "Sera chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-07-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-07",
+          "summary": "Sera echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36263-SHC-08-choice",
+          "seed": 36263,
+          "source_id": "36263-SHC-08",
+          "summary": "Sera chose cautious_help_with_limits from stabilized without materials",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36263-SHE-08-echo",
+          "seed": 36263,
+          "source_id": "36263-SHE-08",
+          "summary": "Sera echoed history influence to Nia",
+          "type": "social_echo"
+        }
+      ],
+      "refusals": [
+        {
+          "actor": "Fay",
+          "choice_id": "36263-SHC-01",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "seed": 36263
+        },
+        {
+          "actor": "Ari",
+          "choice_id": "36263-SHC-06",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "seed": 36263
+        }
+      ],
+      "seed": 36263
+    },
+    {
+      "choices": [
+        {
+          "actor": "Fay",
+          "choice_id": "36281-SHC-01",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": true,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-01",
+          "source_recovery_id": "36281-SR-01",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36281-SHC-02",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "share found material with pending work",
+          "refusal_bounded": false,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-02",
+          "source_recovery_id": "36281-SR-02",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36281-SHC-03",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-03",
+          "source_recovery_id": "36281-SR-03",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36281-SHC-04",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "acknowledge help and share credit",
+          "refusal_bounded": false,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-04",
+          "source_recovery_id": "36281-SR-04",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36281-SHC-05",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": false,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-05",
+          "source_recovery_id": "36281-SR-05",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36281-SHC-06",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": true,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-06",
+          "source_recovery_id": "36281-SR-06",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36281-SHC-07",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "protect quiet rest and resume slowly",
+          "refusal_bounded": false,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-07",
+          "source_recovery_id": "36281-SR-07",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36281-SHC-08",
+          "decision": "cautious_help_with_limits",
+          "permanent_penalty": false,
+          "progress_delta": 0.004,
+          "reason": "history stabilized without materials, so help stays cautious",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": false,
+          "seed": 36281,
+          "source_pulse_id": "36281-SP-08",
+          "source_recovery_id": "36281-SR-08",
+          "source_recovery_status": "stabilized without materials",
+          "trust_delta": 0.002
+        }
+      ],
+      "echoes": [
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-01",
+          "from": "Fay",
+          "message": "Fay carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-01",
+          "to": "Milo"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-02",
+          "from": "Tovan",
+          "message": "Tovan carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-02",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-03",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-03",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-04",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-04",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-05",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-05",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-06",
+          "from": "Tovan",
+          "message": "Tovan carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-06",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-07",
+          "from": "Sera",
+          "message": "Sera carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-07",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36281-SHE-08",
+          "from": "Tovan",
+          "message": "Tovan carried cautious_help_with_limits from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36281,
+          "source_choice_id": "36281-SHC-08",
+          "to": "Ari"
+        }
+      ],
+      "ledger": [
+        {
+          "ledger_id": "36281-SHC-01-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-01",
+          "summary": "Fay chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-01-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-01",
+          "summary": "Fay echoed history influence to Milo",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-02-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-02",
+          "summary": "Tovan chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-02-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-02",
+          "summary": "Tovan echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-03-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-03",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-03-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-03",
+          "summary": "Fay echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-04-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-04",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-04-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-04",
+          "summary": "Milo echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-05-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-05",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-05-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-05",
+          "summary": "Fay echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-06-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-06",
+          "summary": "Tovan chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-06-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-06",
+          "summary": "Tovan echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-07-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-07",
+          "summary": "Sera chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-07-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-07",
+          "summary": "Sera echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36281-SHC-08-choice",
+          "seed": 36281,
+          "source_id": "36281-SHC-08",
+          "summary": "Tovan chose cautious_help_with_limits from stabilized without materials",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36281-SHE-08-echo",
+          "seed": 36281,
+          "source_id": "36281-SHE-08",
+          "summary": "Tovan echoed history influence to Ari",
+          "type": "social_echo"
+        }
+      ],
+      "refusals": [
+        {
+          "actor": "Fay",
+          "choice_id": "36281-SHC-01",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "seed": 36281
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36281-SHC-06",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "seed": 36281
+        }
+      ],
+      "seed": 36281
+    },
+    {
+      "choices": [
+        {
+          "actor": "Fay",
+          "choice_id": "36307-SHC-01",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": true,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-01",
+          "source_recovery_id": "36307-SR-01",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36307-SHC-02",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "patch leak and rest near dry place",
+          "refusal_bounded": false,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-02",
+          "source_recovery_id": "36307-SR-02",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Fay",
+          "choice_id": "36307-SHC-03",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-03",
+          "source_recovery_id": "36307-SR-03",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36307-SHC-04",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "protect quiet rest and resume slowly",
+          "refusal_bounded": false,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-04",
+          "source_recovery_id": "36307-SR-04",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Sera",
+          "choice_id": "36307-SHC-05",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": false,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-05",
+          "source_recovery_id": "36307-SR-05",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36307-SHC-06",
+          "decision": "bounded_refusal_until_recovery",
+          "permanent_penalty": false,
+          "progress_delta": -0.002,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": true,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-06",
+          "source_recovery_id": "36307-SR-06",
+          "source_recovery_status": "pending",
+          "trust_delta": -0.003
+        },
+        {
+          "actor": "Milo",
+          "choice_id": "36307-SHC-07",
+          "decision": "accept_recovery_informed_help",
+          "permanent_penalty": false,
+          "progress_delta": 0.01,
+          "reason": "past stochastic harm was recovered and can support trust",
+          "recovery_path": "mediate disagreement and name source boundary",
+          "refusal_bounded": false,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-07",
+          "source_recovery_id": "36307-SR-07",
+          "source_recovery_status": "resolved",
+          "trust_delta": 0.008
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36307-SHC-08",
+          "decision": "cautious_help_with_limits",
+          "permanent_penalty": false,
+          "progress_delta": 0.004,
+          "reason": "history stabilized without materials, so help stays cautious",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "refusal_bounded": false,
+          "seed": 36307,
+          "source_pulse_id": "36307-SP-08",
+          "source_recovery_id": "36307-SR-08",
+          "source_recovery_status": "stabilized without materials",
+          "trust_delta": 0.002
+        }
+      ],
+      "echoes": [
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-01",
+          "from": "Fay",
+          "message": "Fay carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-01",
+          "to": "Milo"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-02",
+          "from": "Sera",
+          "message": "Sera carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-02",
+          "to": "Nia"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-03",
+          "from": "Fay",
+          "message": "Fay carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-03",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-04",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-04",
+          "to": "Ari"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-05",
+          "from": "Sera",
+          "message": "Sera carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-05",
+          "to": "Milo"
+        },
+        {
+          "bounded_refusal_carried": true,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-06",
+          "from": "Tovan",
+          "message": "Tovan carried bounded_refusal_until_recovery from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-06",
+          "to": "Tovan"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-07",
+          "from": "Milo",
+          "message": "Milo carried accept_recovery_informed_help from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-07",
+          "to": "Sera"
+        },
+        {
+          "bounded_refusal_carried": false,
+          "direct_avatar_command": false,
+          "echo_id": "36307-SHE-08",
+          "from": "Tovan",
+          "message": "Tovan carried cautious_help_with_limits from stochastic recovery history",
+          "permanent_penalty": false,
+          "seed": 36307,
+          "source_choice_id": "36307-SHC-08",
+          "to": "Ari"
+        }
+      ],
+      "ledger": [
+        {
+          "ledger_id": "36307-SHC-01-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-01",
+          "summary": "Fay chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-01-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-01",
+          "summary": "Fay echoed history influence to Milo",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-02-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-02",
+          "summary": "Sera chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-02-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-02",
+          "summary": "Sera echoed history influence to Nia",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-03-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-03",
+          "summary": "Fay chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-03-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-03",
+          "summary": "Fay echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-04-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-04",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-04-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-04",
+          "summary": "Milo echoed history influence to Ari",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-05-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-05",
+          "summary": "Sera chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-05-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-05",
+          "summary": "Sera echoed history influence to Milo",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-06-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-06",
+          "summary": "Tovan chose bounded_refusal_until_recovery from pending",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-06-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-06",
+          "summary": "Tovan echoed history influence to Tovan",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-07-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-07",
+          "summary": "Milo chose accept_recovery_informed_help from resolved",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-07-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-07",
+          "summary": "Milo echoed history influence to Sera",
+          "type": "social_echo"
+        },
+        {
+          "ledger_id": "36307-SHC-08-choice",
+          "seed": 36307,
+          "source_id": "36307-SHC-08",
+          "summary": "Tovan chose cautious_help_with_limits from stabilized without materials",
+          "type": "choice"
+        },
+        {
+          "ledger_id": "36307-SHE-08-echo",
+          "seed": 36307,
+          "source_id": "36307-SHE-08",
+          "summary": "Tovan echoed history influence to Ari",
+          "type": "social_echo"
+        }
+      ],
+      "refusals": [
+        {
+          "actor": "Fay",
+          "choice_id": "36307-SHC-01",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "patch leak and rest near dry place",
+          "seed": 36307
+        },
+        {
+          "actor": "Tovan",
+          "choice_id": "36307-SHC-06",
+          "permanent_penalty": false,
+          "reason": "unrecovered stochastic harm is still pending",
+          "recovery_path": "re-tie tool lashing and return focus",
+          "seed": 36307
+        }
+      ],
+      "seed": 36307
+    }
+  ]
+}

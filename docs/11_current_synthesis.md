@@ -1305,3 +1305,9 @@ The evaluator uses seeded entropy streams for reproducible evidence. Boundary re
 Report 365 adds the recovery layer that Report 364 deliberately left open. Stochastic pulses now create recovery rows with harm type, repair action, resource cost, relationship note, and schedule coupling. The maintained shell can plan recovery, resolve one step, or run a bounded recovery loop that mutates resident memory/trust/progress/debt and records relationship repairs.
 
 The key integration move is that nondeterminism is no longer just a one-shot perturbation. It becomes a recoverable consequence path: surprise can hurt or delay, but every stochastic harm has a bounded recovery or stabilization route. This remains browser-local scaffolding, not a suffering model, consciousness claim, autonomous language system, or finished game.
+
+### Report 366: SSRM-3D Stochastic History Influence Bridge
+
+Report 366 makes recovered and unrecovered stochastic history affect later bounded behavior. A resident with recovered stochastic harm can accept recovery-informed help, pending recovery can produce a bounded refusal until repair is handled, and stabilized-without-materials history can produce cautious help with limits. The shell also propagates this through social echoes with direct-avatar-command set to false.
+
+The integration gain is continuity across stochastic event, recovery, later choice, and resident-to-resident memory. The guardrail is explicit: unrecovered history can justify bounded caution, not permanent punishment. This remains browser-local scaffolding, not autonomous language, subjective consciousness, a suffering model, moral patienthood, or finished gameplay.

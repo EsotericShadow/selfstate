@@ -1,0 +1,47 @@
+criterion,passed,score,evidence
+report_365_recovery_gate_passing,True,1.0,Report 365 verdict=pass weakest=1.0
+source_declares_history_boundary,True,1.0,app.js declares history influence boundary and public state
+source_choice_and_echo_actions,True,1.0,"app.js exposes choice, social echo, and loop actions"
+visible_history_panel_wired,True,1.0,index.html exposes history influence controls and panel
+runner_includes_report_366,True,1.0,scripts/run_experiments.py includes Report 366 module
+history_choice_binding,True,1.0,metric=1.0
+decision_diversity,True,1.0,metric=1.0
+bounded_refusal_preservation,True,1.0,metric=1.0
+recovered_help_binding,True,1.0,metric=1.0
+stabilized_caution_binding,True,1.0,metric=1.0
+social_memory_echo_binding,True,1.0,metric=1.0
+source_boundary_integrity,True,1.0,metric=1.0
+influence_replay_integrity,True,1.0,metric=1.0
+not_panel_only_loop,True,1.0,metric=1.0
+browser_surface_wired,True,1.0,metric=1.0
+no_permanent_punishment_policy,True,1.0,metric=1.0
+browser_smoke_artifact_exists,True,1.0,artifacts/ssrm_3d_browser_world_v126_stochastic_history_influence_bridge_browser_smoke.json
+browser_history_influence_visible,True,1.0,"Boundary: browser-local-stochastic-history-influence-only; no LLM call, no subjective consciousness, no moral patienthood
+Source recovery count: 4
+Policy: unrecovered stochastic history can justify bounded caution, not permanent punishment
+
+Choice records:
+SHC-01 Sera: bounded_refusal_until_recovery / recovered=0 / pending=2 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false
+SHC-02 Fay: bounded_refusal_until_recovery / recovered=0 / pending=1 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false
+
+Bounded refusals:
+SHC-01 Sera: unrecovered stochastic harm is still pending / recoveryPath=protect quiet rest and resume slowly
+SHC-02 Fay: unrecovered stochastic harm is still pending / recoveryPath=mediate disagreement and name source boundary
+
+Social echoes:
+SHE-01 Fay->Milo: Fay carried bounded_refusal_until_recovery from stochastic recovery history / directAvatarCommand=false"
+browser_choice_or_refusal_visible,True,1.0,"Boundary: browser-local-stochastic-history-influence-only; no LLM call, no subjective consciousness, no moral patienthood
+Source recovery count: 4
+Policy: unrecovered stochastic history can justify bounded caution, not permanent punishment
+
+Choice records:
+SHC-01 Sera: bounded_refusal_until_recovery / recovered=0 / pending=2 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false
+SHC-02 Fay: bounded_refusal_until_recovery / recovered=0 / pending=1 / stabilized=0 / reason=unrecovered stochastic harm is still pending / permanentPenalty=false
+
+Bounded refusals:
+SHC-01 Sera: unrecovered stochastic harm is still pending / recoveryPath=protect quiet rest and resume slowly
+SHC-02 Fay: unrecovered stochastic harm is still pending / recoveryPath=mediate disagreement and name source boundary
+
+Social echoes:
+SHE-01 Fay->Milo: Fay carried bounded_refusal_until_recovery from stochastic recovery history / directAvatarCommand=false"
+browser_console_clean,True,1.0,console error count=0

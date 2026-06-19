@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -74,6 +74,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   anomalyInvestigationSchedule: null,
   stochasticConsequencePulse: null,
   stochasticRecoveryLoop: null,
+  stochasticHistoryInfluence: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -338,6 +339,45 @@ function renderStochasticRecoveryLoop() {
     '',
     'Repair ledger:',
     ...(ledgerLines.length ? ledgerLines : ['No repair ledger rows yet.'])
+  ].join('\n');
+}
+function renderStochasticHistoryInfluence() {
+  const summaryNode = document.getElementById('stochasticHistoryInfluenceSummaryOut');
+  const detailNode = document.getElementById('stochasticHistoryInfluenceOut');
+  const influence = world.stochasticHistoryInfluence;
+  if (summaryNode) {
+    summaryNode.textContent = influence
+      ? `${influence.choiceRecords.length} choices / ${influence.refusalRecords.length} refusals / ${influence.socialEchoes.length} echoes`
+      : 'No stochastic history influence yet.';
+  }
+  if (!detailNode) return;
+  if (!influence) {
+    detailNode.textContent = 'No stochastic history influence yet. Run influence after stochastic recovery to make recovered and unrecovered histories affect later bounded choices.';
+    return;
+  }
+  const choices = influence.choiceRecords.slice(-8).map(row => [
+    `${row.id} ${row.actor}: ${row.decision}`,
+    `recovered=${row.recoveredCount}`,
+    `pending=${row.pendingCount}`,
+    `stabilized=${row.stabilizedCount}`,
+    `reason=${row.reason}`,
+    `permanentPenalty=${row.permanentPenalty}`
+  ].join(' / '));
+  const refusals = influence.refusalRecords.slice(-6).map(row => `${row.id} ${row.actor}: ${row.reason} / recoveryPath=${row.recoveryPath}`);
+  const echoes = influence.socialEchoes.slice(-8).map(row => `${row.id} ${row.from}->${row.to}: ${row.message} / directAvatarCommand=${row.directAvatarCommand}`);
+  detailNode.textContent = [
+    `Boundary: ${influence.boundary}`,
+    `Source recovery count: ${influence.sourceRecoveryCount}`,
+    `Policy: ${influence.noPermanentPunishmentPolicy}`,
+    '',
+    'Choice records:',
+    ...(choices.length ? choices : ['No choice records yet.']),
+    '',
+    'Bounded refusals:',
+    ...(refusals.length ? refusals : ['No bounded refusals yet.']),
+    '',
+    'Social echoes:',
+    ...(echoes.length ? echoes : ['No social echoes yet.'])
   ].join('\n');
 }
 function renderPromiseFollowUp() {
@@ -1218,6 +1258,151 @@ function runStochasticRecoveryLoop() {
   const after = loop.resolvedCount + loop.stabilizedWithoutMaterials;
   return log('runStochasticRecoveryLoop', { recoveredThisRun: after - before, pendingCount: loop.pendingCount, relationshipRepairs: loop.relationshipRepairs.length, noPermanentDamagePolicy: loop.noPermanentDamagePolicy });
 }
+function ensureStochasticHistoryInfluence() {
+  if (!world.stochasticHistoryInfluence) {
+    world.stochasticHistoryInfluence = {
+      reportIntroduced: 366,
+      sourceRecoveryCount: 0,
+      choiceRecords: [],
+      refusalRecords: [],
+      socialEchoes: [],
+      influenceLedger: [],
+      noPermanentPunishmentPolicy: 'unrecovered stochastic history can justify bounded caution, not permanent punishment',
+      boundary: 'browser-local-stochastic-history-influence-only; no LLM call, no subjective consciousness, no moral patienthood'
+    };
+  }
+  return world.stochasticHistoryInfluence;
+}
+function stochasticRecoveryStats(actor) {
+  if (!world.stochasticRecoveryLoop || !world.stochasticRecoveryLoop.recoveryQueue.length) {
+    runStochasticConsequenceBurst();
+    planStochasticRecoveryLoop();
+    resolveStochasticRecoveryStep();
+  }
+  const loop = ensureStochasticRecoveryLoop();
+  const rows = loop.recoveryQueue.filter(row => row.actor === actor);
+  const recovered = rows.filter(row => row.status === 'resolved').length;
+  const pending = rows.filter(row => row.status === 'pending').length;
+  const stabilized = rows.filter(row => row.status === 'stabilized without materials').length;
+  const recent = rows[rows.length - 1] || null;
+  return { rows, recovered, pending, stabilized, recent };
+}
+function chooseHistoryInfluenceActor() {
+  const names = Object.keys(world.residents);
+  const influence = ensureStochasticHistoryInfluence();
+  const scored = names.map(name => ({ name, stats: stochasticRecoveryStats(name) }))
+    .sort((left, right) => (right.stats.pending + right.stats.recovered + right.stats.stabilized) - (left.stats.pending + left.stats.recovered + left.stats.stabilized));
+  const offset = influence.choiceRecords.length % Math.max(1, scored.length);
+  return scored[offset] && scored[offset].stats.rows.length ? scored[offset].name : world.selected;
+}
+function runStochasticHistoryChoice() {
+  const influence = ensureStochasticHistoryInfluence();
+  const actor = chooseHistoryInfluenceActor();
+  const stats = stochasticRecoveryStats(actor);
+  const resident = world.residents[actor];
+  let decision = 'wait_for_more_context';
+  let reason = 'history is too thin to change action';
+  let trustDelta = 0.001;
+  let progressDelta = 0.002;
+  let refusalBounded = false;
+  if (stats.pending > stats.recovered) {
+    decision = 'bounded_refusal_until_recovery';
+    reason = 'unrecovered stochastic harm is still pending';
+    trustDelta = -0.003;
+    progressDelta = -0.002;
+    refusalBounded = true;
+  } else if (stats.stabilized > 0 && stats.recovered === 0) {
+    decision = 'cautious_help_with_limits';
+    reason = 'history stabilized without materials, so help stays cautious';
+    trustDelta = 0.002;
+    progressDelta = 0.004;
+  } else if (stats.recovered > 0) {
+    decision = 'accept_recovery_informed_help';
+    reason = 'past stochastic harm was recovered and can support trust';
+    trustDelta = 0.008;
+    progressDelta = 0.01;
+  }
+  mutateResident(actor, {
+    trust: trustDelta,
+    progress: progressDelta,
+    memory: `choice influenced by stochastic history: ${decision}`,
+    historyEvent: 'stochastic history choice',
+    historyDetail: `${actor} chose ${decision} because ${reason}`
+  });
+  const sourceRecoveryIds = stats.rows.slice(-4).map(row => row.id);
+  const row = {
+    id: `SHC-${String(influence.choiceRecords.length + 1).padStart(2, '0')}`,
+    actor,
+    decision,
+    reason,
+    recoveredCount: stats.recovered,
+    pendingCount: stats.pending,
+    stabilizedCount: stats.stabilized,
+    sourceRecoveryIds,
+    refusalBounded,
+    recoveryPath: stats.recent ? stats.recent.repairAction : 'plan recovery first',
+    permanentPenalty: false,
+    trust: Number(resident.trust.toFixed(3))
+  };
+  influence.choiceRecords.push(row);
+  if (influence.choiceRecords.length > 30) influence.choiceRecords.shift();
+  if (refusalBounded) {
+    influence.refusalRecords.push({ id: row.id, actor, reason, recoveryPath: row.recoveryPath, permanentPenalty: false });
+    if (influence.refusalRecords.length > 20) influence.refusalRecords.shift();
+  }
+  influence.sourceRecoveryCount = world.stochasticRecoveryLoop ? world.stochasticRecoveryLoop.recoveryQueue.length : 0;
+  influence.influenceLedger.push({ type: 'choice', id: row.id, actor, decision, sourceRecoveryIds });
+  if (influence.influenceLedger.length > 40) influence.influenceLedger.shift();
+  recordCheckpoint('stochastic history choice');
+  return log('runStochasticHistoryChoice', { choice: row, noPermanentPunishmentPolicy: influence.noPermanentPunishmentPolicy });
+}
+function runStochasticHistorySocialEcho() {
+  const influence = ensureStochasticHistoryInfluence();
+  if (!influence.choiceRecords.length) runStochasticHistoryChoice();
+  const choice = influence.choiceRecords[influence.choiceRecords.length - 1];
+  const names = Object.keys(world.residents);
+  const fromIndex = names.indexOf(choice.actor);
+  const target = names[(fromIndex + 1 + influence.socialEchoes.length) % names.length] || world.selected;
+  const message = `${choice.actor} carried ${choice.decision} from stochastic recovery history`;
+  mutateResident(target, {
+    trust: choice.refusalBounded ? -0.001 : 0.003,
+    progress: 0.003,
+    memory: `heard stochastic history echo from ${choice.actor}`,
+    historyEvent: 'stochastic history social echo',
+    historyDetail: message
+  });
+  const row = {
+    id: `SHE-${String(influence.socialEchoes.length + 1).padStart(2, '0')}`,
+    from: choice.actor,
+    to: target,
+    message,
+    sourceChoiceId: choice.id,
+    directAvatarCommand: false,
+    boundedRefusalCarried: choice.refusalBounded,
+    permanentPenalty: false
+  };
+  influence.socialEchoes.push(row);
+  if (influence.socialEchoes.length > 24) influence.socialEchoes.shift();
+  influence.influenceLedger.push({ type: 'social_echo', id: row.id, from: row.from, to: row.to, sourceChoiceId: row.sourceChoiceId });
+  if (influence.influenceLedger.length > 40) influence.influenceLedger.shift();
+  recordCheckpoint('stochastic history social echo');
+  return log('runStochasticHistorySocialEcho', { echo: row, sourceChoice: choice });
+}
+function runStochasticHistoryInfluenceLoop() {
+  if (!world.stochasticRecoveryLoop || !world.stochasticRecoveryLoop.recoveryQueue.length) {
+    runStochasticConsequenceBurst();
+    planStochasticRecoveryLoop();
+  }
+  const firstChoice = runStochasticHistoryChoice();
+  resolveStochasticRecoveryStep();
+  const secondChoice = runStochasticHistoryChoice();
+  const echo = runStochasticHistorySocialEcho();
+  return log('runStochasticHistoryInfluenceLoop', {
+    choices: [firstChoice.payload.choice.id, secondChoice.payload.choice.id],
+    echo: echo.payload.echo.id,
+    noPermanentPunishmentPolicy: ensureStochasticHistoryInfluence().noPermanentPunishmentPolicy
+  });
+}
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
   const offscreenObligation = runOffscreenResidentObligationPulse();
@@ -1630,6 +1815,7 @@ function runStateBoundaryAudit() {
     anomalyInvestigationSchedule: world.anomalyInvestigationSchedule,
     stochasticConsequencePulse: world.stochasticConsequencePulse,
     stochasticRecoveryLoop: world.stochasticRecoveryLoop,
+    stochasticHistoryInfluence: world.stochasticHistoryInfluence,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2314,7 +2500,10 @@ function describeReplayRow(row) {
     runStochasticConsequenceBurst: `stochastic burst pulses=${payload.pulsesAdded} entropy=${payload.replayableEntropy === true}`,
     planStochasticRecoveryLoop: `planned stochastic recoveries=${payload.planned} pending=${payload.pending}`,
     resolveStochasticRecoveryStep: `resolved stochastic recovery pending=${payload.pendingCount}`,
-    runStochasticRecoveryLoop: `ran stochastic recovery loop recovered=${payload.recoveredThisRun} pending=${payload.pendingCount}`
+    runStochasticRecoveryLoop: `ran stochastic recovery loop recovered=${payload.recoveredThisRun} pending=${payload.pendingCount}`,
+    runStochasticHistoryChoice: `stochastic history choice ${payload.choice ? payload.choice.decision : ''}`,
+    runStochasticHistorySocialEcho: `stochastic history echo ${payload.echo ? payload.echo.from : ''}->${payload.echo ? payload.echo.to : ''}`,
+    runStochasticHistoryInfluenceLoop: `stochastic history influence choices=${payload.choices ? payload.choices.length : 0} echo=${payload.echo}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -2369,6 +2558,7 @@ function render() {
   document.getElementById('qaManifestOut').textContent = JSON.stringify(qaManifest, null, 2);
   renderStochasticConsequencePulse();
   renderStochasticRecoveryLoop();
+  renderStochasticHistoryInfluence();
   draw();
 }
 function draw() {
@@ -2397,6 +2587,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

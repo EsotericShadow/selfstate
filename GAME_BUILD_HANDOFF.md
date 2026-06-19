@@ -250,6 +250,12 @@ Routine context is now visible on the primary player canvas. The stage header sh
 
 This is intentionally simple placeholder rendering, but it moves the prototype closer to the game target: residents appear to orbit, repair, maintain, or watch actual physical places rather than only carrying abstract schedule text.
 
+## Prototype v0 routine-directed body movement update
+
+Routine context now affects resident body physics. When a resident tick or body-physics step has a physical routine target, the body target resolves to the linked component, project visual, or practice anchor. Body rows record the routine-context ID, target source, target component, distance before/after, and whether the resident moved toward the target.
+
+This keeps the visible dashed worksite cues honest: resident bodies are not only connected to worksites graphically; the stochastic body simulation now steps toward those physical places with fatigue, footing, contact, and recovery costs.
+
 ## Prototype v0 deep-time stochastic physics update
 
 Compressed civilization history now starts with stochastic physics, not only lineage mutation. Each deep-time epoch writes a physics epoch row and material flux rows before cultural consequences are interpreted. The epoch pass advances physical substeps, then applies long-horizon moisture, heat, decay, settlement, mass loss, stability drift, and ruined-trace state to actual components.

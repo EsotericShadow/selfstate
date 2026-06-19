@@ -162,6 +162,8 @@ Required evidence:
 - routine context rows reference physical state such as visible construction, construction rows, weak components, project-built components, carried components, or practice nodes
 - routine context can suggest repair, proposal work, practice maintenance, or observation
 - resident needs and autonomy can still override the suggestion
+- resident body physics can resolve the routine context into a physical target
+- body rows record distance before/after and whether the resident moved toward that target
 - normal village state exposes only public worksite/component/practice context
 - the primary canvas draws a resident-to-worksite routine cue
 - hidden simulator law remains out of normal view
@@ -182,6 +184,22 @@ Required evidence:
 - acceptance can prove the cue after save/return and autonomous resident activity
 
 This gate keeps routine context visible in the player's world, not hidden in debug ledgers.
+
+## Added scope gate: Routine context moves resident bodies
+
+`routine_context_moves_resident_bodies` is part of the first playable prototype scope.
+
+Required evidence:
+
+- at least one resident body step uses `target_source=routine_context`
+- the body row links to a non-empty routine-context ID
+- the row records target component or practice/source context
+- distance-to-target decreases during the step
+- movement still pays fatigue, footing, contact, and recovery costs
+- no direct player body command is introduced
+- hidden simulator law remains out of normal view
+
+This gate makes resident routine context embodied instead of only visual or textual.
 
 ## Added scope gate: Playable Village Day 0-3
 

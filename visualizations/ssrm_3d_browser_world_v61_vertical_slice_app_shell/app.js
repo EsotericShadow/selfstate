@@ -8525,6 +8525,7 @@ function ensureResidentBodies() {
         noDirectPlayerBodyCommand: true,
         movementCostsEnergyAndSafety: true,
         collisionAndFootingAudited: true,
+        routineContextCanSetTargets: true,
         recoveryIsBounded: true,
       },
     };
@@ -8535,6 +8536,8 @@ function ensureResidentBodies() {
   if (!Array.isArray(sim.contactLedger)) sim.contactLedger = [];
   if (!Array.isArray(sim.fatigueLedger)) sim.fatigueLedger = [];
   if (!Array.isArray(sim.recoveryLedger)) sim.recoveryLedger = [];
+  if (!sim.boundary) sim.boundary = {};
+  if (!sim.boundary.routineContextCanSetTargets) sim.boundary.routineContextCanSetTargets = true;
   Object.keys(world.residents).forEach((name, index) => {
     if (!sim.bodies[name]) {
       sim.bodies[name] = {
@@ -8554,6 +8557,7 @@ function ensureResidentBodies() {
         slip_risk: 0,
         contact_count: 0,
         last_action: 'initialized',
+        last_routine_context_id: 'none',
         hidden_law_normal_view: false,
       };
     }
@@ -8578,6 +8582,36 @@ function residentBodyTargetForAction(residentName, action) {
     observe: { x: 36 + offset * 4, y: 42, z: 0, label: 'watching place' },
   };
   return targets[action] || targets.observe;
+}
+
+function residentBodyTargetFromRoutineContext(routineContext) {
+  const materialWorld = world.gamePrototype3DWorld || null;
+  if (!routineContext || !materialWorld || !materialWorld.components) return null;
+  let component = routineContext.latest_component_id && routineContext.latest_component_id !== 'none'
+    ? materialWorld.components.find(row => row.component_id === routineContext.latest_component_id)
+    : null;
+  if (!component && routineContext.latest_project_visual_id && routineContext.latest_project_visual_id !== 'none') {
+    const visualRows = world.gamePrototypeProjects && world.gamePrototypeProjects.visualLedger ? world.gamePrototypeProjects.visualLedger : [];
+    const visual = visualRows.find(row => row.visual_id === routineContext.latest_project_visual_id);
+    const componentId = visual && visual.affected_component_ids && visual.affected_component_ids.length ? visual.affected_component_ids[0] : null;
+    component = componentId ? materialWorld.components.find(row => row.component_id === componentId) : null;
+  }
+  if (!component && routineContext.practice_id && routineContext.practice_id !== 'none') {
+    component = materialWorld.components.find(row => row.project_built === true) || materialWorld.components[0];
+  }
+  if (!component || !component.position3d) return null;
+  return {
+    x: Number(component.position3d.x || 0),
+    y: Number(component.position3d.y || 0),
+    z: Number(component.position3d.z || 0),
+    label: `routine ${routineContext.context_id || 'context'} ${routineContext.suggested_action || routineContext.action || 'work'} at ${component.component_id}`,
+    source: 'routine_context',
+    routine_context_id: routineContext.context_id || 'none',
+    component_id: component.component_id,
+    project_visual_id: routineContext.latest_project_visual_id || 'none',
+    practice_id: routineContext.practice_id || 'none',
+    resident_term: routineContext.resident_term || 'none',
+  };
 }
 
 function residentBodyTerrainAt(body) {
@@ -10100,6 +10134,9 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
   body.position3d.y = Number(Math.max(0, Math.min(90, Number(body.position3d.y || 0) + body.velocity.y)).toFixed(3));
   body.position3d.z = Number(Math.max(0, Number(body.position3d.z || 0) + body.velocity.z).toFixed(3));
   if (body.position3d.z <= 0) body.velocity.z = Number((Number(body.velocity.z || 0) * -0.08).toFixed(3));
+  const afterDx = Number(target.x || 0) - Number(body.position3d.x || 0);
+  const afterDy = Number(target.y || 0) - Number(body.position3d.y || 0);
+  const afterDistance = Math.max(0, Math.sqrt(afterDx * afterDx + afterDy * afterDy));
   const componentContacts = residentBodyComponentContacts(body, materialWorld);
   const residentContacts = residentBodyResidentContacts(residentName, body, sim.bodies);
   const collisionCount = componentContacts.length + residentContacts.length;
@@ -10121,6 +10158,7 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
   body.recovery_debt = Number(clampNeed(Number(body.recovery_debt || 0) + (slipEvent ? 0.08 : 0) + overload * 0.015 - (action === 'rest' ? 0.05 : 0)).toFixed(3));
   body.contact_count += collisionCount;
   body.last_action = action;
+  body.last_routine_context_id = target.routine_context_id || 'none';
   needs.energy = clampNeed(Number(needs.energy || 0.5) - fatigueDelta * 0.55);
   needs.safety = clampNeed(Number(needs.safety || 0.5) - safetyDelta + (action === 'rest' ? 0.02 : 0));
   const row = {
@@ -10130,7 +10168,15 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
     source,
     entropy,
     target: target.label,
+    target_source: target.source || 'action_default',
+    routine_context_id: target.routine_context_id || 'none',
+    target_component_id: target.component_id || 'none',
+    target_project_visual_id: target.project_visual_id || 'none',
+    target_practice_id: target.practice_id || 'none',
     target_position3d: { x: Number(target.x || 0), y: Number(target.y || 0), z: Number(target.z || 0) },
+    distance_to_target_before: Number(distance.toFixed(3)),
+    distance_to_target_after: Number(afterDistance.toFixed(3)),
+    moved_toward_target: afterDistance <= distance,
     before,
     after: {
       position3d: { ...body.position3d },
@@ -10177,6 +10223,8 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
     fatigue_after: body.fatigue,
     energy_after: Number(needs.energy.toFixed(3)),
     footing: body.footing,
+    routine_context_id: row.routine_context_id,
+    moved_toward_target: row.moved_toward_target,
   });
   sim.fatigueLedger = sim.fatigueLedger.slice(-160);
   if (body.recovery_debt > 0.35 || slipEvent) {
@@ -10197,7 +10245,7 @@ function applyResidentBodyPhysics(residentName, action = 'observe', entropy = de
     materials: row.component_contacts,
     publicObservation: `${residentName} moved toward ${target.label} with footing ${body.footing}`,
     residentInterpretation: slipEvent ? 'route or load felt unsafe' : 'movement cost changed body state',
-    materialTransformation: `body position ${before.position3d.x},${before.position3d.y}->${body.position3d.x},${body.position3d.y}; load=${load}; contacts=${collisionCount}`,
+    materialTransformation: `body position ${before.position3d.x},${before.position3d.y}->${body.position3d.x},${body.position3d.y}; distance ${row.distance_to_target_before}->${row.distance_to_target_after}; load=${load}; contacts=${collisionCount}`,
     timeCost: 1,
     workCost: row.fatigue_delta,
     toolWear: collisionCount > 0 ? 1 : 0,
@@ -10216,14 +10264,17 @@ function runResidentBodyPhysicsStep() {
   const residentNames = Object.keys(world.residents);
   const residentName = residentNames[(entropy + sim.bodyLedger.length) % residentNames.length];
   const action = chooseAutonomousResidentAction(residentName, entropy);
-  const row = applyResidentBodyPhysics(residentName, action, entropy, 'player_observed_body_physics');
+  const routineContext = deriveResidentPhysicalRoutineContext(residentName, entropy);
+  const routineContextRow = recordResidentRoutineContext(residentName, action, routineContext, entropy);
+  const routineTarget = residentBodyTargetFromRoutineContext(routineContextRow);
+  const row = applyResidentBodyPhysics(residentName, action, entropy, 'player_observed_body_physics', routineTarget);
   mutateResident(residentName, {
     trust: row.slip_event ? -0.002 : 0.001,
     progress: row.slip_event ? 0.001 : 0.004,
     schedule: row.slip_event ? `recovers footing near ${row.target}` : `moves through ${row.target}`,
     memory: row.slip_event ? `remembered a slip risk near ${row.target}` : `felt the cost of moving through ${row.target}`,
     historyEvent: 'resident body physics',
-    historyDetail: `${row.body_step_id}; fatigue ${row.after.fatigue}; footing ${row.after.footing}; direct command no`
+    historyDetail: `${row.body_step_id}; fatigue ${row.after.fatigue}; footing ${row.after.footing}; routine ${row.routine_context_id}; direct command no`
   });
   recordVisibleResidentExpression(residentName, 'body_physics', ensureAutonomousResidents().needState[residentName]);
   sim.runCount += 1;
@@ -10509,14 +10560,15 @@ function latestVisibleExpressionFor(residentName) {
 
 function applyAutonomousResidentAction(residentName, action, entropy) {
   const sim = ensureAutonomousResidents();
+  const routineContext = deriveResidentPhysicalRoutineContext(residentName, entropy);
+  const routineContextRow = recordResidentRoutineContext(residentName, action, routineContext, entropy);
   const needs = driftResidentNeeds(sim.needState[residentName], entropy, action);
-  const bodyPhysicsRow = applyResidentBodyPhysics(residentName, action, entropy, 'autonomous_resident_action');
+  const routineTarget = residentBodyTargetFromRoutineContext(routineContextRow);
+  const bodyPhysicsRow = applyResidentBodyPhysics(residentName, action, entropy, 'autonomous_resident_action', routineTarget);
   const resident = world.residents[residentName];
   const board = ensureVillageBoard();
   const proposal = board.projectProposals[board.projectProposals.length - 1] || null;
   const practice = world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length ? world.emergentPracticeGraph.nodes[world.emergentPracticeGraph.nodes.length - 1] : null;
-  const routineContext = deriveResidentPhysicalRoutineContext(residentName, entropy);
-  const routineContextRow = recordResidentRoutineContext(residentName, action, routineContext, entropy);
   let schedule = resident.schedule;
   let memory = resident.memory;
   let materialCost = [];
@@ -10641,6 +10693,9 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
       schedule_hint: routineContext.schedule_hint,
     },
     body_physics_step_id: bodyPhysicsRow.body_step_id,
+    body_target_source: bodyPhysicsRow.target_source,
+    body_moved_toward_routine: bodyPhysicsRow.moved_toward_target,
+    body_distance_to_routine_after: bodyPhysicsRow.distance_to_target_after,
     body_fatigue_after: bodyPhysicsRow.after.fatigue,
     body_footing: bodyPhysicsRow.after.footing,
     body_contacts: bodyPhysicsRow.collision_count,
@@ -11471,8 +11526,8 @@ function formatPrototypeDeepTime() {
 
 function formatPrototypeResidentBodies() {
   const sim = world.gamePrototypeResidentBodies || ensureResidentBodies();
-  const bodyRows = Object.values(sim.bodies).map(body => `${body.resident}: pos=(${body.position3d.x},${body.position3d.y},${body.position3d.z}) vel=(${body.velocity.x},${body.velocity.y},${body.velocity.z}) fatigue=${body.fatigue} footing=${body.footing} load=${body.carried_load}/${body.carry_capacity} balance=${body.balance} recovery=${body.recovery_debt} action=${body.last_action}`);
-  const steps = sim.bodyLedger.slice(-8).map(row => `${row.body_step_id}: ${row.resident} ${row.action}; source=${row.source}; target=${row.target}; speed=${row.speed}; load=${row.carried_load}; contacts=${row.collision_count}; slip=${row.slip_event}; fatigueDelta=${row.fatigue_delta}`);
+  const bodyRows = Object.values(sim.bodies).map(body => `${body.resident}: pos=(${body.position3d.x},${body.position3d.y},${body.position3d.z}) vel=(${body.velocity.x},${body.velocity.y},${body.velocity.z}) fatigue=${body.fatigue} footing=${body.footing} load=${body.carried_load}/${body.carry_capacity} balance=${body.balance} recovery=${body.recovery_debt} action=${body.last_action} routine=${body.last_routine_context_id || 'none'}`);
+  const steps = sim.bodyLedger.slice(-8).map(row => `${row.body_step_id}: ${row.resident} ${row.action}; source=${row.source}; target=${row.target}; routine=${row.routine_context_id || 'none'}; moved=${row.moved_toward_target}; distance=${row.distance_to_target_before}->${row.distance_to_target_after}; speed=${row.speed}; load=${row.carried_load}; contacts=${row.collision_count}; slip=${row.slip_event}; fatigueDelta=${row.fatigue_delta}`);
   const contacts = sim.contactLedger.slice(-5).map(row => `${row.contact_id}: ${row.resident}; components=${row.component_contacts.join(',') || 'none'} residents=${row.resident_contacts.join(',') || 'none'} slip=${row.slip_event}`);
   const recoveries = sim.recoveryLedger.slice(-5).map(row => `${row.recovery_id}: ${row.resident}; ${row.reason}; path=${row.recovery_path}; debt=${row.recovery_debt_after}`);
   return [
@@ -12455,6 +12510,7 @@ function buildPrototypeAcceptanceReceipt() {
     : 0;
   const routineActionLinks = autonomous && autonomous.actionLog ? autonomous.actionLog.filter(row => row.routine_context_id && row.physical_context).length : 0;
   const routineCanvasCueRows = worldStage && worldStage.canvasCueLedger ? worldStage.canvasCueLedger.filter(row => row.routine_context_id && row.routine_context_id !== 'none' && (row.cues || []).some(cue => /routine context/.test(cue))).length : 0;
+  const routineDirectedBodyRows = residentBodies && residentBodies.bodyLedger ? residentBodies.bodyLedger.filter(row => row.target_source === 'routine_context' && row.routine_context_id && row.routine_context_id !== 'none' && row.moved_toward_target === true && row.no_direct_player_command === true && row.hidden_law_normal_view === false).length : 0;
 	  const requirements = [
     { id: 'basic_visual_surface', pass: Boolean(world.entered && Object.keys(world.residents).length <= 6), evidence: `${Object.keys(world.residents).length} resident(s), room=${world.avatar.room}` },
     { id: 'persistent_save_return', pass: Boolean(saves && saves.slots && saves.slots.length > 0 && saves.returnLog && saves.returnLog.length > 0), evidence: saves ? `${saves.slots.length} slot(s), ${saves.returnLog.length} return(s)` : 'no prototype saves' },
@@ -12502,6 +12558,7 @@ function buildPrototypeAcceptanceReceipt() {
 	    { id: 'resident_body_physics', pass: Boolean(residentBodies && residentBodyRows > 0 && residentBodyFatigueRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false && row.fatigue_delta >= 0)), evidence: `${residentBodyRows} body step(s), ${residentBodyContactRows} contact row(s), ${residentBodyRecoveryRows} recovery row(s)` },
 	    { id: 'resident_routines_use_physical_context', pass: Boolean(autonomous && routineContextRows > 0 && routinePhysicalRows > 0 && routineActionLinks > 0 && autonomous.routineContextLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineContextRows} routine context row(s), ${routinePhysicalRows} physical context row(s), ${routineActionLinks} action link(s)` },
 	    { id: 'routine_context_visible_on_canvas', pass: Boolean(worldStage && routineCanvasCueRows > 0 && worldStage.latestSnapshot && worldStage.latestSnapshot.routine_context_id !== 'none' && worldStage.noHiddenLawInNormalView === true && worldStage.noDirectCommand === true), evidence: `${routineCanvasCueRows} routine canvas cue row(s), latest=${worldStage && worldStage.latestSnapshot ? worldStage.latestSnapshot.routine_context_id : 'none'}` },
+	    { id: 'routine_context_moves_resident_bodies', pass: Boolean(residentBodies && routineDirectedBodyRows > 0 && residentBodies.bodyLedger.every(row => row.no_direct_player_command === true && row.hidden_law_normal_view === false)), evidence: `${routineDirectedBodyRows} routine-directed body step(s)` },
 		    { id: 'physics_consequences_reach_residents', pass: Boolean(physicsProposalCount > 0 && board.projectProposals.some(row => row.related_physics_step && row.avatar_can_force === false)), evidence: `${physicsProposalCount} physics-linked proposal(s)` },
 		    { id: 'projects_construct_physical_components', pass: Boolean(constructionCount > 0 && projectVisualRows > 0 && projectBuiltComponentCount > 0 && materialWorld.constructionLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true) && projects.visualLedger.every(row => row.no_fixed_asset === true && row.no_resource_spawning === true && row.hidden_law_normal_view === false)), evidence: `${constructionCount} construction row(s), ${projectVisualRows} visual row(s), ${projectBuiltComponentCount} project-built component(s)` },
 	    { id: 'construction_evolves_practice_language', pass: Boolean(constructionPracticeLinks > 0 && constructionPracticeNodes > 0 && materialWorld.language.terms.some(row => (row.meaning_drift || []).some(text => /repair|reinforced|retie/.test(text)))), evidence: `${constructionPracticeLinks} construction-practice link(s), ${constructionPracticeNodes} construction practice node(s)` },

@@ -204,6 +204,10 @@
 112. Inspect the canvas and confirm a dashed line links the resident body marker to a physical component, project visual, or practice anchor.
 113. Confirm resident labels show the routine target in normal view without exposing hidden simulator law.
 114. Export acceptance and confirm `routine_context_visible_on_canvas` appears as a prototype requirement.
+115. Run `Body physics` or `Resident tick` after routine context exists and confirm Resident body physics shows `routine=ARC-...`.
+116. Confirm a routine-directed body row reports distance before/after and `moved=true`.
+117. Inspect the canvas after the body step and confirm the resident marker has shifted toward the linked worksite or component.
+118. Export acceptance and confirm `routine_context_moves_resident_bodies` appears as a prototype requirement.
 
 ## Physics-to-practice slice playtests
 

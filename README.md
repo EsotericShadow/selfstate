@@ -2243,7 +2243,9 @@ The browser shell now includes a player-facing resident proposal deck. `Proposal
 
 ## Game prototype v0 update: Lived Practice Loop
 
-The browser shell now includes a player-facing lived practice loop. `Practice` now routes ordinary Move, Objects, Support, and Wait actions through resident practical discovery, records the ordinary pressure feed that triggered the evidence, and displays the resulting emergent practice node in Player mode with local name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance burden. This makes practice formation part of gameplay rather than a report-only artifact.
+The browser shell now includes a player-facing lived practice loop. `Practice` now routes ordinary Move, Objects, Support, and Wait actions through resident practical discovery, records the ordinary pressure feed that triggered the evidence, applies bounded physical deltas to real 3D components, and displays the resulting emergent practice node in Player mode with local name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance burden. This makes practice formation part of gameplay rather than a report-only artifact.
+
+Each lived-practice action now writes a `lived_action_physics_causality` ledger row. The row records the component, material, moisture/damage/stability/stress deltas, time/work/tool burden, conservation check, and no-resource-spawning boundary so practice evidence comes from physical state change rather than a report-only receipt.
 
 ## Game prototype v0 update: Resident Worksite
 

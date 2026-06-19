@@ -264,6 +264,8 @@ Required evidence:
 - repeated normal player actions can drive practical discovery, including Move, Objects, Support, and Wait
 - the loop creates practical test rows and emergent practice snapshots
 - lived-practice rows trace back to ordinary pressure feed, movement, or object-interaction evidence
+- lived-practice actions apply bounded physical deltas to real 3D components
+- physics rows record no resource spawning, material conservation, work/time/tool burden, and hidden-law separation
 - the visible card shows local practice name, status, materials, observations, failed ancestors, adoption count, and maintenance burden
 - actions remain player-language actions, not subsystem-only buttons
 - the avatar does not directly command residents

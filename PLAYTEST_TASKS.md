@@ -247,6 +247,8 @@
 - Run `Practice` from the normal rail and confirm the `Lived practice loop` card appears in Player mode.
 - Confirm Move, Objects, Support, and Wait create lived-practice action rows and practice snapshots.
 - Confirm lived-practice rows show ordinary feed, component, movement, or object-interaction evidence rather than an isolated report-only receipt.
+- Confirm lived-practice rows include physics row IDs with component moisture/damage/stability/stress deltas.
+- Confirm the Reality Constraint Ledger includes `lived_action_physics_causality` rows with no resource spawning and conservation checks.
 - Confirm the card shows a local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost.
 - Confirm rows record no direct command, no hidden-law exposure, no tech-tree unlock, and no correct concept installation.
 - Export acceptance and confirm `lived_practice_loop` appears as a requirement after the practice loop runs.

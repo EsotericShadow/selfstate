@@ -390,9 +390,9 @@ This moves the prototype closer to a real village-management loop while preservi
 
 ## Game prototype v0 update: Lived Practice Loop
 
-The browser shell now includes a `Practice` normal rail action, `Practice loop` prototype action, and `Lived practice loop` player-mode card. The loop now uses ordinary Move, Objects, Support, and Wait actions, routes them through practical discovery, records source ordinary-pressure feed rows, and surfaces the resulting emergent practice as a normal gameplay object.
+The browser shell now includes a `Practice` normal rail action, `Practice loop` prototype action, and `Lived practice loop` player-mode card. The loop now uses ordinary Move, Objects, Support, and Wait actions, routes them through practical discovery, records source ordinary-pressure feed rows, applies bounded physical deltas to real 3D components, and surfaces the resulting emergent practice as a normal gameplay object.
 
-The card shows local practice name, status, materials, supporting observations, failed ancestors, adoption count, and maintenance cost. Acceptance evidence is recorded as `lived_practice_loop`. The loop preserves the no-command, no-hidden-law-normal-view, no-correct-concept-installed, and no-predeclared-tech-tree boundaries.
+The card shows local practice name, status, materials, supporting observations, failed ancestors, adoption count, maintenance cost, ordinary feed count, and physics rows. Acceptance evidence is recorded as `lived_practice_loop`. The loop preserves the no-command, no-hidden-law-normal-view, no-correct-concept-installed, no-resource-spawning, conservation, and no-predeclared-tech-tree boundaries.
 
 This is a key game-foundation step: practice formation is now visible from normal play instead of existing only as a debug panel or research receipt.
 

@@ -474,10 +474,11 @@ The first playable loop now has a player-facing practice path:
 1. The player uses ordinary actions from the normal rail.
 2. Movement, object handling, support, and waiting create resident-observed bottlenecks through the practical discovery system.
 3. Each lived-practice row traces back to the ordinary pressure feed, movement route, or object interaction evidence that created it.
-4. Residents generate local tests from those bottlenecks.
-5. Repeated evidence can create or strengthen an emergent practice node.
-6. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, and maintenance burden.
-7. Hidden law remains audit-only, and the avatar does not install the correct explanation.
+4. Each lived action applies bounded physics to one real component: moisture, damage, stability, field stress, time/work cost, and tool burden.
+5. Residents generate local tests from those bottlenecks.
+6. Repeated evidence can create or strengthen an emergent practice node.
+7. The Lived practice card shows the local name, status, materials, supporting observations, failed ancestors, adoption, maintenance burden, and physics rows.
+8. Hidden law remains audit-only, and the avatar does not install the correct explanation.
 
 This is the bridge from ordinary play into invented practice history.
 

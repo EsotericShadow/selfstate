@@ -6007,10 +6007,13 @@ function ensureLivedPracticeLoop() {
       runCount: 0,
       actionLedger: [],
       practiceSnapshots: [],
+      physicsLedger: [],
       receipt: null,
       acceptanceReady: false,
+      physicalCausalityReady: false,
       playerFacing: true,
       repeatedOrdinaryActions: true,
+      realityLikePhysics: true,
       noDirectCommand: true,
       noHiddenLawNormalView: true,
       noPredeclaredTechTree: true,
@@ -6018,6 +6021,7 @@ function ensureLivedPracticeLoop() {
       boundary: 'player-facing lived practice loop; repeated normal actions can stabilize a resident practice from observed bottlenecks',
     };
   }
+  if (!Array.isArray(world.gamePrototypeLivedPractice.physicsLedger)) world.gamePrototypeLivedPractice.physicsLedger = [];
   return world.gamePrototypeLivedPractice;
 }
 
@@ -6040,6 +6044,7 @@ function livedPracticeSnapshot() {
     practical_tests: discovery ? discovery.practicalTests.length : 0,
     lived_actions: discovery ? discovery.livedActions.length : 0,
     ordinary_feed: discovery && discovery.ordinaryPlayFeed ? discovery.ordinaryPlayFeed.length : 0,
+    physics_rows: world.gamePrototypeLivedPractice && world.gamePrototypeLivedPractice.physicsLedger ? world.gamePrototypeLivedPractice.physicsLedger.length : 0,
     hidden_law_normal_view: false,
     direct_command: false,
     predeclared_tech_tree: false,
@@ -6050,9 +6055,14 @@ function updateLivedPracticeAcceptance() {
   const loop = ensureLivedPracticeLoop();
   const snapshot = livedPracticeSnapshot();
   const graph = world.emergentPracticeGraph || null;
+  loop.physicalCausalityReady = Boolean(
+    loop.physicsLedger.length >= 4 &&
+    loop.physicsLedger.every(row => row.no_resource_spawning === true && row.material_conservation === true && row.hidden_law_normal_view === false && row.cause_chain)
+  );
   loop.acceptanceReady = Boolean(
     loop.actionLedger.length >= 4 &&
     loop.practiceSnapshots.length > 0 &&
+    loop.physicalCausalityReady === true &&
     graph && graph.nodes.length > 0 &&
     snapshot.practice_id !== 'none' &&
     snapshot.practical_tests >= 4 &&
@@ -6071,14 +6081,158 @@ function updateLivedPracticeAcceptance() {
     local_name: snapshot.local_name,
     status: snapshot.status,
     practical_tests: snapshot.practical_tests,
+    physics_rows: loop.physicsLedger.length,
+    physical_causality_ready: loop.physicalCausalityReady,
     boundary: loop.boundary,
   };
   return loop.acceptanceReady;
 }
 
+function livedPracticePhysicalTarget(playerVerb) {
+  const sim = ensurePrototype3DWorld();
+  const latestObject = world.gamePrototypeObjectInteraction && world.gamePrototypeObjectInteraction.interactionLedger.length
+    ? world.gamePrototypeObjectInteraction.interactionLedger[world.gamePrototypeObjectInteraction.interactionLedger.length - 1]
+    : null;
+  const stage = world.gamePrototypeWorldStage && world.gamePrototypeWorldStage.latestSnapshot ? world.gamePrototypeWorldStage.latestSnapshot : currentPrimaryPlaySurfaceSnapshot();
+  let component = null;
+  if (playerVerb === 'Objects' && latestObject) component = sim.components.find(row => row.component_id === latestObject.component_id) || null;
+  if (!component && stage && stage.active_component_id) component = sim.components.find(row => row.component_id === stage.active_component_id) || null;
+  if (!component) {
+    component = sim.components.slice().sort((a, b) => (Number(a.stability || 1) - Number(b.stability || 1)) || (Number(b.damage || 0) - Number(a.damage || 0)) || (Number(b.moisture || 0) - Number(a.moisture || 0)))[0] || sim.components[0];
+  }
+  const material = component ? sim.materialCatalog[component.material_id] || {} : {};
+  return { sim, component, material };
+}
+
+function deterministicPhysicsJitter(componentId, ordinal) {
+  const raw = Math.sin((world.tick + 1) * 12.9898 + (ordinal + 1) * 78.233 + String(componentId || 'none').length * 37.719) * 43758.5453;
+  return raw - Math.floor(raw);
+}
+
+function applyLivedActionPhysics(playerVerb, discoveryAction, context = {}) {
+  const loop = ensureLivedPracticeLoop();
+  const target = livedPracticePhysicalTarget(playerVerb);
+  if (!target.component) return null;
+  const component = target.component;
+  const material = target.material || {};
+  const ordinal = loop.physicsLedger.length + 1;
+  const jitter = deterministicPhysicsJitter(component.component_id, ordinal);
+  const movementDistance = context.latestMovementRow ? Number(context.latestMovementRow.distance || 0) : 0;
+  const objectSuccess = context.latestObjectRow ? context.latestObjectRow.success === true : false;
+  const before = {
+    mass: Number(component.mass || 0),
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    field_stress: Number(component.field_stress || 0),
+    position3d: component.position3d ? { ...component.position3d } : null,
+  };
+  let moistureDelta = 0;
+  let damageDelta = 0;
+  let stabilityDelta = 0;
+  let stressDelta = 0;
+  let workCost = 1;
+  let timeCost = 1;
+  let toolWear = 0;
+  if (playerVerb === 'Move') {
+    stressDelta = 0.008 + movementDistance / 900 + jitter * 0.006;
+    damageDelta = stressDelta * Math.max(0.2, 1 - Number(material.compression_strength || 0.4)) * 0.18;
+    stabilityDelta = -stressDelta * 0.1;
+    workCost = Math.max(1, movementDistance / 40);
+  } else if (playerVerb === 'Objects') {
+    stressDelta = objectSuccess ? -0.012 : 0.018 + jitter * 0.006;
+    damageDelta = objectSuccess ? -0.018 : 0.014 + jitter * 0.01;
+    stabilityDelta = objectSuccess ? 0.024 : -0.018;
+    toolWear = objectSuccess ? 0.02 : 0.05;
+  } else if (playerVerb === 'Support') {
+    moistureDelta = -0.012 * Number(material.water_resistance || 0.4);
+    damageDelta = -0.01;
+    stabilityDelta = 0.018;
+    stressDelta = -0.006;
+    toolWear = 0.03;
+  } else if (playerVerb === 'Wait') {
+    const env = target.sim.physics.environment || {};
+    moistureDelta = Number(env.moisture || 0.3) * Math.max(0.1, 1 - Number(material.water_resistance || 0.4)) * 0.035;
+    damageDelta = Number(material.decay_rate || 0.02) + jitter * 0.005;
+    stabilityDelta = -damageDelta * 0.45;
+    stressDelta = Number(env.stress || 0.1) * 0.02;
+    workCost = 0;
+  }
+  const clamp01 = value => Math.max(0, Math.min(1, Number(value || 0)));
+  component.moisture = clamp01(before.moisture + moistureDelta);
+  component.damage = clamp01(before.damage + damageDelta);
+  component.stability = clamp01(before.stability + stabilityDelta);
+  component.field_stress = clamp01(before.field_stress + stressDelta);
+  component.lived_action_physics_count = Number(component.lived_action_physics_count || 0) + 1;
+  const after = {
+    mass: Number(component.mass || 0),
+    moisture: Number(component.moisture || 0),
+    damage: Number(component.damage || 0),
+    stability: Number(component.stability || 0),
+    field_stress: Number(component.field_stress || 0),
+    position3d: component.position3d ? { ...component.position3d } : null,
+  };
+  const physicsRow = {
+    physics_id: `LAP-${String(ordinal).padStart(2, '0')}`,
+    tick: world.tick,
+    player_verb: playerVerb,
+    discovery_action: discoveryAction,
+    component_id: component.component_id,
+    material_id: component.material_id,
+    resident_term_id: component.resident_term_id,
+    movement_distance: movementDistance,
+    object_success: objectSuccess,
+    stochastic_jitter: Number(jitter.toFixed(4)),
+    before,
+    after,
+    deltas: {
+      moisture: Number((after.moisture - before.moisture).toFixed(4)),
+      damage: Number((after.damage - before.damage).toFixed(4)),
+      stability: Number((after.stability - before.stability).toFixed(4)),
+      field_stress: Number((after.field_stress - before.field_stress).toFixed(4)),
+    },
+    time_cost: Number(timeCost.toFixed(3)),
+    work_cost: Number(workCost.toFixed(3)),
+    tool_wear: Number(toolWear.toFixed(3)),
+    no_resource_spawning: true,
+    material_conservation: Math.abs(after.mass - before.mass) < 0.0001,
+    hidden_law_normal_view: false,
+    cause_chain: `normal ${playerVerb} -> ${component.component_id} ${component.material_id} physical delta -> resident-visible practice evidence`,
+  };
+  loop.physicsLedger.push(physicsRow);
+  if (loop.physicsLedger.length > 60) loop.physicsLedger.shift();
+  if (target.sim.physics && Array.isArray(target.sim.physics.transformationLedger)) {
+    target.sim.physics.transformationLedger.push({
+      id: `G3PT-${String(target.sim.physics.transformationLedger.length + 1).padStart(3, '0')}`,
+      source: physicsRow.physics_id,
+      component_id: component.component_id,
+      material_id: component.material_id,
+      deltas: physicsRow.deltas,
+      no_resource_spawning: true,
+      hidden_law_normal_view: false,
+    });
+    if (target.sim.physics.transformationLedger.length > 80) target.sim.physics.transformationLedger.shift();
+  }
+  recordRealityConstraint('lived_action_physics_causality', {
+    resident: world.selected,
+    sourceBeliefId: physicsRow.physics_id,
+    materials: [component.component_id, component.material_id],
+    publicObservation: `${playerVerb} changed ${component.component_id}: moisture ${physicsRow.deltas.moisture}, damage ${physicsRow.deltas.damage}, stability ${physicsRow.deltas.stability}`,
+    residentInterpretation: `ordinary action left physical evidence for ${discoveryAction}`,
+    materialTransformation: physicsRow.cause_chain,
+    timeCost: physicsRow.time_cost,
+    workCost: physicsRow.work_cost,
+    toolWear: physicsRow.tool_wear,
+    maintenanceObligation: after.damage > 0.18 || after.stability < 0.65 ? `inspect ${component.component_id}` : 'none',
+    unintendedConsequence: after.stability < before.stability ? 'ordinary play added stress that residents may later repair' : 'ordinary play stabilized or observed material state',
+    hiddenLawInvolved: 'audit only',
+    conservationCheck: physicsRow.material_conservation
+  });
+  return physicsRow;
+}
+
 function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTests, beforeNodes, context = {}) {
   const loop = ensureLivedPracticeLoop();
-  const snapshot = livedPracticeSnapshot();
   const rail = world.gamePrototypeActionRail || null;
   const latestRailRow = rail && rail.actionLedger.length ? rail.actionLedger[rail.actionLedger.length - 1] : null;
   const movement = world.gamePrototypeMovementRoute || null;
@@ -6086,6 +6240,8 @@ function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTe
   const objectInteraction = world.gamePrototypeObjectInteraction || null;
   const latestObjectRow = objectInteraction && objectInteraction.interactionLedger.length ? objectInteraction.interactionLedger[objectInteraction.interactionLedger.length - 1] : null;
   const pressureResult = context.pressureResult || {};
+  const physicsRow = applyLivedActionPhysics(playerVerb, discoveryAction, { ...context, latestMovementRow, latestObjectRow });
+  const snapshot = livedPracticeSnapshot();
   const row = {
     action_id: `LPA-${String(loop.actionLedger.length + 1).padStart(2, '0')}`,
     tick: world.tick,
@@ -6106,6 +6262,11 @@ function recordLivedPracticeAction(playerVerb, discoveryAction, result, beforeTe
     component_id: latestObjectRow ? latestObjectRow.component_id : (latestRailRow ? latestRailRow.component_id : 'none'),
     material_id: latestObjectRow && latestObjectRow.after ? latestObjectRow.after.material_id : 'none',
     resident_term: latestObjectRow ? latestObjectRow.resident_term : 'none',
+    physics_row_id: physicsRow ? physicsRow.physics_id : 'none',
+    physical_component_id: physicsRow ? physicsRow.component_id : 'none',
+    physical_deltas: physicsRow ? physicsRow.deltas : null,
+    no_resource_spawning: physicsRow ? physicsRow.no_resource_spawning : true,
+    material_conservation: physicsRow ? physicsRow.material_conservation : true,
     practice_id: snapshot.practice_id,
     local_name: snapshot.local_name,
     status: snapshot.status,
@@ -6200,10 +6361,11 @@ function runLivedPracticeLoop() {
 function formatLivedPracticeLoop() {
   const loop = world.gamePrototypeLivedPractice || ensureLivedPracticeLoop();
   const snapshot = loop.practiceSnapshots.length ? loop.practiceSnapshots[loop.practiceSnapshots.length - 1].snapshot : livedPracticeSnapshot();
-  const actionRows = loop.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_verb}->${row.discovery_action}; feed+${row.ordinary_feed_added || 0}; tests+${row.tests_added}; component=${row.component_id || 'none'}; practice=${row.practice_id}; status=${row.status}; direct=${row.avatar_direct_command}`);
+  const latestPhysics = loop.physicsLedger.length ? loop.physicsLedger[loop.physicsLedger.length - 1] : null;
+  const actionRows = loop.actionLedger.slice(-8).map(row => `${row.action_id}: ${row.player_verb}->${row.discovery_action}; feed+${row.ordinary_feed_added || 0}; tests+${row.tests_added}; physics=${row.physics_row_id || 'none'}; component=${row.physical_component_id || row.component_id || 'none'}; practice=${row.practice_id}; status=${row.status}; direct=${row.avatar_direct_command}`);
   return [
     `Acceptance ready: ${loop.acceptanceReady ? 'yes' : 'no'}`,
-    `Actions: ${loop.actionLedger.length} / snapshots=${loop.practiceSnapshots.length}`,
+    `Actions: ${loop.actionLedger.length} / snapshots=${loop.practiceSnapshots.length} / physics rows=${loop.physicsLedger.length}`,
     `Boundary: ${loop.boundary}`,
     `Current practice: ${snapshot.practice_id} / ${snapshot.local_name} / status=${snapshot.status}`,
     `Materials: ${snapshot.materials_used.join(' + ') || 'none'}`,
@@ -6211,6 +6373,8 @@ function formatLivedPracticeLoop() {
     `Failed ancestors: ${snapshot.failed_ancestor_tests.join(', ') || 'none'}`,
     `Adoption count: ${snapshot.adoption_count}; maintenance=${snapshot.maintenance_cost}`,
     `Ordinary feed: ${snapshot.ordinary_feed}; lived tests=${snapshot.practical_tests}`,
+    `Physical causality ready: ${loop.physicalCausalityReady ? 'yes' : 'no'}`,
+    `Latest physics: ${latestPhysics ? `${latestPhysics.physics_id} ${latestPhysics.player_verb} ${latestPhysics.component_id} deltas=${JSON.stringify(latestPhysics.deltas)} noSpawn=${latestPhysics.no_resource_spawning}` : 'none'}`,
     `No hidden law in normal view: ${loop.noHiddenLawNormalView ? 'yes' : 'no'}`,
     'Recent lived practice actions:',
     ...(actionRows.length ? actionRows : ['No lived practice actions yet.'])

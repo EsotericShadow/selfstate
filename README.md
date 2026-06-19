@@ -2228,3 +2228,7 @@ The browser shell now includes `First playable` and `Export walkthrough`. This c
 ## Game prototype v0 update: Normal Play Action Rail
 
 The browser shell now includes a normal play rail: Look, Ask, Support, Wait, Return, and Save. These player-language actions drive the existing village systems and produce `normal_play_action_rail` acceptance evidence.
+
+## Game prototype v0 update: Player Mode Interface
+
+The browser shell now includes a `Player mode` toggle and `Player mode loop`. Player mode foregrounds the canvas, resident cue, player guide, primary play surface, normal action rail, public outcomes, and player-mode receipt while hiding debug-heavy controls and deep audit panels by default. Audit access remains explicit and recoverable. This is game-build interface work, not a new research report.

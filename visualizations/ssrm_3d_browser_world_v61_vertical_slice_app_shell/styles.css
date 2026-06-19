@@ -25,6 +25,9 @@ body {
 .world-panel, .side-panel, .panel { background: var(--panel); border: 1px solid rgba(17, 24, 22, 0.2); border-radius: 20px; padding: 14px; }
 canvas { width: 100%; min-height: 600px; border: 5px solid var(--ink); background: #12231d; box-shadow: 0 24px 80px rgba(17, 24, 22, 0.34); }
 .quickbar, .qa-buttons { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+.normal-play-rail { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+.normal-play-rail button { background: #111816; border: 1px solid rgba(249, 235, 201, 0.28); }
+.normal-play-rail button:last-child { background: var(--gold); color: var(--ink); }
 button { border: 0; border-radius: 999px; padding: 9px 10px; color: #fff6de; background: var(--moss); cursor: pointer; font-weight: 700; }
 button:nth-child(4n) { background: var(--water); }
 button:nth-child(5n) { background: var(--clay); }
@@ -74,8 +77,35 @@ pre { white-space: pre-wrap; overflow: auto; max-height: 360px; border-radius: 1
 .handoff-return:focus, .handoff-return:hover { outline: 3px solid rgba(213, 161, 58, 0.72); outline-offset: 2px; }
 .reviewer-landing { grid-column: 1 / -1; border: 2px solid rgba(183, 93, 57, 0.58); }
 body.reviewer-focus .deep-panel { display: none; }
+body.player-mode-active .quickbar,
+body.player-mode-active .qa-buttons,
+body.player-mode-active .obligation-actions,
+body.player-mode-active .prototype-actions,
+body.player-mode-active .trace-grid .deep-panel,
+body.player-mode-active .trace-grid .reviewer-landing { display: none; }
+body.player-mode-active .normal-play-rail {
+  position: sticky;
+  top: 8px;
+  z-index: 4;
+  padding: 10px;
+  border-radius: 18px;
+  background: rgba(17, 24, 22, 0.88);
+  box-shadow: 0 12px 46px rgba(17, 24, 22, 0.32);
+}
+body.player-mode-active .side-panel .dashboard {
+  grid-template-columns: 1fr;
+}
+body.player-mode-active .game-prototype {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+body.player-mode-active .prototype-card:not(.player-mode-keep) {
+  display: none;
+}
+body.player-mode-active .prototype-card pre {
+  max-height: 320px;
+}
 @media (max-width: 980px) {
   .layout, .trace-grid, .game-prototype { grid-template-columns: 1fr; }
-  .quickbar, .qa-buttons, .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quickbar, .qa-buttons, .dashboard, .normal-play-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .prototype-hero-card { grid-row: auto; }
 }

@@ -368,3 +368,11 @@ The shell now includes a normal player-facing action rail with six verbs:
 These actions map onto existing systems while preserving resident mediation. The acceptance gate is `normal_play_action_rail`.
 
 This moves the prototype closer to a playable interface: the player no longer needs to understand subsystem names to drive the first playable path.
+
+## Game prototype v0 update: Player Mode Interface
+
+The browser shell now includes a `Player mode` toggle and `Player mode loop` milestone. Player mode foregrounds the actual play surface: canvas, normal action rail, selected resident cue, current problem, player guide, primary play surface, walkthrough state, normal action receipt, and public outcomes.
+
+While player mode is active, debug-heavy controls, subsystem action grids, QA manifest, deep traces, and hidden-law audit panels are hidden by default. They remain available by leaving player mode or using explicit audit/reviewer controls. The mode records `player_mode_interface` acceptance evidence without spawning resources, commanding residents, exposing hidden simulator law, or adding a tech-tree shortcut.
+
+This is game-build interface work, not a research report. The goal is to make the existing village prototype playable before adding more systems.

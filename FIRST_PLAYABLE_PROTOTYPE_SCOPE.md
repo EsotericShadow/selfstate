@@ -222,3 +222,19 @@ Required evidence:
 - no tech-tree unlock
 
 This is the main player-facing control layer for the first playable shell.
+
+## Prototype v0 milestone: Player Mode Interface
+
+`player_mode_interface` is now part of first playable prototype scope.
+
+Required evidence:
+
+- the shell can enter a normal player-facing mode
+- the canvas, resident cue, player guide, primary play surface, normal action rail, and public outcomes remain visible
+- debug-heavy panels and subsystem action grids are hidden by default while player mode is active
+- audit access is preserved as an explicit mode, not mixed into normal play
+- the mode records a session row without directly commanding residents
+- hidden simulator law remains out of normal view
+- player-visible labels remain glosses and player-language verbs, not resident omniscience or tech-tree terms
+
+This is the first interface narrowing milestone after the normal action rail. It does not add new world law; it makes the existing prototype playable from the normal surface.

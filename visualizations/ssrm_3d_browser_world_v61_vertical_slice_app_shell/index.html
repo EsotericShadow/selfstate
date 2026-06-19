@@ -24,6 +24,7 @@
           <button data-action="runNormalPlayWait">Wait</button>
           <button data-action="runNormalPlayReturn">Return</button>
           <button data-action="runNormalPlaySave">Save</button>
+          <button data-action="togglePlayerMode">Player mode</button>
         </div>
         <div class="quickbar" role="group" aria-label="core controls">
           <button data-action="enterWorld">Enter</button>
@@ -127,7 +128,7 @@
     </section>
 
     <section class="game-prototype" aria-label="first playable prototype surface">
-      <article class="prototype-card prototype-hero-card">
+      <article class="prototype-card prototype-hero-card player-mode-keep">
         <p class="eyebrow">Game Prototype v0</p>
         <h2>One village, six residents, one living loop.</h2>
         <p id="gamePrototypeObjectiveOut"></p>
@@ -183,6 +184,7 @@
           <button data-action="runFirstPlayableWalkthrough">First playable</button>
           <button data-action="exportFirstPlayableWalkthrough">Export walkthrough</button>
           <button data-action="runNormalPlayActionRailLoop">Normal play loop</button>
+          <button data-action="runPlayerModeInterfaceLoop">Player mode loop</button>
           <button data-action="runPrototypeQASmoke">Prototype QA</button>
           <button data-action="startPrototypeAutoSim">Start auto sim</button>
           <button data-action="pausePrototypeAutoSim">Pause auto sim</button>
@@ -195,15 +197,15 @@
           <button data-action="auditPrototypeCommons">Audit commons</button>
         </div>
       </article>
-      <article class="prototype-card">
+      <article class="prototype-card player-mode-keep">
         <h3>Village state</h3>
         <pre id="gamePrototypeVillageOut"></pre>
       </article>
-      <article class="prototype-card">
+      <article class="prototype-card player-mode-keep">
         <h3>Public outcomes</h3>
         <pre id="gamePrototypePublicOut"></pre>
       </article>
-      <article class="prototype-card">
+      <article class="prototype-card player-mode-keep">
         <h3>Player guide</h3>
         <pre id="gamePrototypeGuideOut"></pre>
       </article>
@@ -215,17 +217,21 @@
         <h3>Playable Village Day 0-3</h3>
         <pre id="gamePrototypeVillageDay03Out"></pre>
       </article>
-      <article class="prototype-card">
+      <article class="prototype-card player-mode-keep">
         <h3>Primary play surface</h3>
         <pre id="gamePrototypePrimarySurfaceOut"></pre>
       </article>
-      <article class="prototype-card">
+      <article class="prototype-card player-mode-keep">
         <h3>First playable walkthrough</h3>
         <pre id="gamePrototypeWalkthroughOut"></pre>
       </article>
-      <article class="prototype-card">
+      <article class="prototype-card player-mode-keep">
         <h3>Normal play action rail</h3>
         <pre id="gamePrototypeActionRailOut"></pre>
+      </article>
+      <article class="prototype-card player-mode-keep">
+        <h3>Player mode interface</h3>
+        <pre id="gamePrototypePlayerModeOut"></pre>
       </article>
       <article class="prototype-card">
         <h3>Nearby action</h3>

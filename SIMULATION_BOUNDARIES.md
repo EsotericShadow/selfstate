@@ -139,3 +139,9 @@ The walkthrough must remain honest: if proposal, practice, component, physics, s
 ## Boundary: Normal Play Action Rail
 
 The normal action rail is a player-interface simplification. It must not erase resident autonomy, hide missing evidence, expose hidden laws, or install correct concepts. It maps simple player verbs to existing causal systems and receipts.
+
+## Boundary: Player Mode Interface
+
+Player mode is an interface narrowing layer. It may hide debug-heavy controls and audit panels from the normal view, but it must not remove the audit path, change hidden simulator laws, install resident knowledge, command residents directly, create resources, or turn subsystem receipts into player-facing truth.
+
+Normal view should show player-language verbs, public resident cues, local glosses, and visible world consequences. Audit view may show hidden law and causal ledgers. These views must remain separate.

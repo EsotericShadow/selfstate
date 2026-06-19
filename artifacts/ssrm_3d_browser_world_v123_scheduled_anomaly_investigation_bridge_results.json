@@ -1,0 +1,148 @@
+{
+  "artifacts": {
+    "browser_smoke": "artifacts/ssrm_3d_browser_world_v123_scheduled_anomaly_investigation_bridge_browser_smoke.json",
+    "resource_tradeoffs": "artifacts/ssrm_3d_browser_world_v123_scheduled_anomaly_investigation_bridge_resource_tradeoffs.csv",
+    "schedule_execution": "artifacts/ssrm_3d_browser_world_v123_scheduled_anomaly_investigation_bridge_schedule_execution.csv",
+    "schedule_plans": "artifacts/ssrm_3d_browser_world_v123_scheduled_anomaly_investigation_bridge_schedule_plans.csv"
+  },
+  "boundary": "Browser-local scheduled anomaly investigation only; residents may schedule, defer, refuse, or run anomaly tests around ordinary work and scarce materials, but this is deterministic per seed and remains no LLM call, no autonomous natural language, no subjective consciousness, no real science, no real consent, no moral patienthood, no production persistence, no hosted URL proof, no complete 3D engine, no finished gameplay, and no hard-coded technology tree.",
+  "criteria": [
+    {
+      "criterion": "report_362_anomaly_gate_passing",
+      "evidence": "Report 362 verdict=pass weakest=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_exposes_schedule_state",
+      "evidence": "app.js exposes scheduled anomaly investigation state/render/boundary",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_plans_and_runs_schedule",
+      "evidence": "app.js plans and executes resident schedule slots",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "visible_schedule_panel_wired",
+      "evidence": "index.html exposes schedule controls and panel",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "runner_includes_report_363",
+      "evidence": "scripts/run_experiments.py includes Report 363 module",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "schedule_competition_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "resource_scarcity_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "fear_trust_social_pressure_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "resident_chosen_test_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "ordinary_work_tradeoff",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "refusal_or_defer_preservation",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "scheduled_failure_preservation",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "not_panel_only_loop",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "schedule_replay_integrity",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_smoke_artifact_exists",
+      "evidence": "artifacts/ssrm_3d_browser_world_v123_scheduled_anomaly_investigation_bridge_browser_smoke.json",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_schedule_competition_visible",
+      "evidence": "Schedule seed: 36231\nBoundary: browser-local-scheduled-anomaly-investigation-only\nResources before: {\"water\":12,\"fiber\":10,\"wood\":17,\"care\":6}\nResources now: {\"water\":11,\"fiber\":9,\"wood\":16,\"care\":4}\nMaterial scarcity blocks: 0\nOrdinary work delayed: 2\nRefusals/deferments: 2\n\nScheduled slots:\ndawn work block Ari: test_anomaly / work=repair awning / belief=roof-snap / cost=fiber:0,wood:1,care:1,water:1 / fear=0.12 / trust=0.584 / pressure=0.12 / status=test completed / reason=curiosity and available materials beat ordinary work\nmidday work block Fay: argue_before_test / work=sort herbs / belief=quiet sting-warning-craft / cost=fiber:0,wood:2,care:0,water:1 / fear=0.42 / trust=0.631 / pressure=0.48 / status=deferred by disagreement / reason=social disagreement delays the test\nrain pause Milo: argue_before_test / work=carry water / belief=quiet sting-warning / cost=fiber:0,wood:2,care:0,water:1 / fear=0.28 / trust=0.483 / pressure=0.48 / status=deferred by disagreement / reason=social disagreement delays the test\nevening repair Sera: test_anomaly / work=dry cloaks / belief=smoke warning / cost=fiber:1,wood:0,care:1,water:0 / fear=0.26 / trust=0.54 / pressure=0.12 / status=failed test preserved / reason=curiosity and available materials beat ordinary work\nmarket gossip Tovan: test_anomaly / work=map safe route / belief=safe-gap / cost=fiber:1,wood:1,care:0,water:0 / fear=0.42 / trust=0.51 / pressure=0.12 / status=planned / reason=curiosity and available materials beat ordinary work\n\nExecution log:\nAIS-01 Ari: Ari delayed repair awning, spent scheduled materials, and got loose fiber jumped after rubbing\nAIS-02 Fay: Fay kept sort herbs ahead of anomaly testing because social disagreement delays the test\nAIS-03 Milo: Milo kept carry water ahead of anomaly testing because social disagreement delays the test\nAIS-04 Sera: Sera delayed dry cloaks, spent scheduled materials, and got smoke appeared and the test was stopped",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_execution_tradeoff_visible",
+      "evidence": "Schedule seed: 36231\nBoundary: browser-local-scheduled-anomaly-investigation-only\nResources before: {\"water\":12,\"fiber\":10,\"wood\":17,\"care\":6}\nResources now: {\"water\":11,\"fiber\":9,\"wood\":16,\"care\":4}\nMaterial scarcity blocks: 0\nOrdinary work delayed: 2\nRefusals/deferments: 2\n\nScheduled slots:\ndawn work block Ari: test_anomaly / work=repair awning / belief=roof-snap / cost=fiber:0,wood:1,care:1,water:1 / fear=0.12 / trust=0.584 / pressure=0.12 / status=test completed / reason=curiosity and available materials beat ordinary work\nmidday work block Fay: argue_before_test / work=sort herbs / belief=quiet sting-warning-craft / cost=fiber:0,wood:2,care:0,water:1 / fear=0.42 / trust=0.631 / pressure=0.48 / status=deferred by disagreement / reason=social disagreement delays the test\nrain pause Milo: argue_before_test / work=carry water / belief=quiet sting-warning / cost=fiber:0,wood:2,care:0,water:1 / fear=0.28 / trust=0.483 / pressure=0.48 / status=deferred by disagreement / reason=social disagreement delays the test\nevening repair Sera: test_anomaly / work=dry cloaks / belief=smoke warning / cost=fiber:1,wood:0,care:1,water:0 / fear=0.26 / trust=0.54 / pressure=0.12 / status=failed test preserved / reason=curiosity and available materials beat ordinary work\nmarket gossip Tovan: test_anomaly / work=map safe route / belief=safe-gap / cost=fiber:1,wood:1,care:0,water:0 / fear=0.42 / trust=0.51 / pressure=0.12 / status=planned / reason=curiosity and available materials beat ordinary work\n\nExecution log:\nAIS-01 Ari: Ari delayed repair awning, spent scheduled materials, and got loose fiber jumped after rubbing\nAIS-02 Fay: Fay kept sort herbs ahead of anomaly testing because social disagreement delays the test\nAIS-03 Milo: Milo kept carry water ahead of anomaly testing because social disagreement delays the test\nAIS-04 Sera: Sera delayed dry cloaks, spent scheduled materials, and got smoke appeared and the test was stopped",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_console_clean",
+      "evidence": "console error count=0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "claim_boundary_preserved",
+      "evidence": "Browser-local scheduled anomaly investigation only; residents may schedule, defer, refuse, or run anomaly tests around ordinary work and scarce materials, but this is deterministic per seed and remains no LLM call, no autonomous natural language, no subjective consciousness, no real science, no real consent, no moral patienthood, no production persistence, no hosted URL proof, no complete 3D engine, no finished gameplay, and no hard-coded technology tree.",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "generated_at": "2026-06-19T01:37:04.587437+00:00",
+  "metrics": {
+    "console_error_count": 0,
+    "criterion_count": 19,
+    "executed_test_count": 19,
+    "fear_trust_social_pressure_binding": 1.0,
+    "not_panel_only_loop": 1.0,
+    "ordinary_work_tradeoff": 1.0,
+    "readiness": 1.0,
+    "refusal_or_defer_count": 11,
+    "refusal_or_defer_preservation": 1.0,
+    "resident_chosen_test_binding": 1.0,
+    "resource_scarcity_binding": 1.0,
+    "schedule_competition_binding": 1.0,
+    "schedule_replay_integrity": 1.0,
+    "scheduled_failure_preservation": 1.0,
+    "slot_count": 30,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-363: make scheduled anomaly investigation create longer-run relationship consequences when residents disagree about risk, resource use, or whether ordinary work should be delayed",
+  "report": 363,
+  "slug": "ssrm_3d_browser_world_v123_scheduled_anomaly_investigation_bridge",
+  "verdict": "pass"
+}

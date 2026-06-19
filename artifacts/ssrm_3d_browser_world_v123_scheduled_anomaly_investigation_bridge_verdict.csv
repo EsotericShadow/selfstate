@@ -1,0 +1,2 @@
+report,verdict,weakest_channel_score,readiness,next_gate
+363,pass,1.0,1.0,"post-363: make scheduled anomaly investigation create longer-run relationship consequences when residents disagree about risk, resource use, or whether ordinary work should be delayed"

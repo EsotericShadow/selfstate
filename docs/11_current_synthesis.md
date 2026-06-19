@@ -1287,3 +1287,9 @@ This is still deterministic browser-local state. The important change is that re
 Report 362 pivots the browser-world line away from scripted outcome bridges. The maintained v61 shell now includes a non-scripted anomaly discovery panel where the simulator creates hidden material properties, residents see only effects, resident beliefs stay partial and local, experiments consume materials/time, failed tests remain visible, social transmission mutates beliefs, and cultural memory records divergent interpretations.
 
 The report also adds a deterministic multi-seed evaluator. Different seeds can lead to practical discovery, ritualization, fear/taboo, stalled investigation, or useful wrong theories without giving residents a modern term or a pre-authored technology unlock. Hidden laws are audit-visible but not resident knowledge, and the avatar remains a trigger for observation rather than the direct source of a correct concept.
+
+### Report 363: SSRM-3D Scheduled Anomaly Investigation Bridge
+
+Report 363 moves anomaly discovery out of a panel-only loop and into resident scheduling. The maintained shell now lets residents plan anomaly investigation slots around ordinary work, material costs, fear, trust, and social disagreement. Running scheduled slots can execute a resident-owned test, consume scarce materials, delay ordinary work, preserve a failed test, or record a refusal/deferment.
+
+This remains deterministic browser-local scaffolding. The integration gain is that discovery no longer advances simply because the reviewer presses the next anomaly button; anomaly work now competes with the same visible resource/schedule pressures that make the browser world feel less like a scripted diorama.

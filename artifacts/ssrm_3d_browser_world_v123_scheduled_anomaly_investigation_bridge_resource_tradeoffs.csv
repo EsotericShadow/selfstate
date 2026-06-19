@@ -1,0 +1,31 @@
+seed,slot_id,resident,tradeoff,ordinary_work_delayed,material_scarcity,reason
+36217,36217-AIS-01,Ari,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36217,36217-AIS-02,Fay,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36217,36217-AIS-03,Milo,defer_for_materials,False,True,ordinary work keeps scarce material
+36217,36217-AIS-04,Sera,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36217,36217-AIS-05,Tovan,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36231,36231-AIS-01,Ari,argue_before_test,False,False,social disagreement delays the test
+36231,36231-AIS-02,Fay,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36231,36231-AIS-03,Milo,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36231,36231-AIS-04,Sera,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36231,36231-AIS-05,Tovan,defer_for_materials,False,True,ordinary work keeps scarce material
+36247,36247-AIS-01,Ari,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36247,36247-AIS-02,Fay,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36247,36247-AIS-03,Milo,defer_for_materials,False,True,ordinary work keeps scarce material
+36247,36247-AIS-04,Sera,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36247,36247-AIS-05,Tovan,refuse_test,False,False,fear and contradictions outweigh trust
+36263,36263-AIS-01,Ari,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36263,36263-AIS-02,Fay,argue_before_test,False,False,social disagreement delays the test
+36263,36263-AIS-03,Milo,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36263,36263-AIS-04,Sera,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36263,36263-AIS-05,Tovan,argue_before_test,False,False,social disagreement delays the test
+36281,36281-AIS-01,Ari,argue_before_test,False,False,social disagreement delays the test
+36281,36281-AIS-02,Fay,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36281,36281-AIS-03,Milo,argue_before_test,False,False,social disagreement delays the test
+36281,36281-AIS-04,Sera,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36281,36281-AIS-05,Tovan,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36307,36307-AIS-01,Ari,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36307,36307-AIS-02,Fay,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36307,36307-AIS-03,Milo,defer_for_materials,False,True,ordinary work keeps scarce material
+36307,36307-AIS-04,Sera,ordinary_work_delayed_for_test,True,False,curiosity and available materials beat ordinary work
+36307,36307-AIS-05,Tovan,argue_before_test,False,False,social disagreement delays the test

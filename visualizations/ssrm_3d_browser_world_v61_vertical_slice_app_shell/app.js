@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -71,6 +71,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   boundedEchoConversation: null,
   echoInfluencedChoiceReceipt: null,
   anomalyDiscovery: null,
+  anomalyInvestigationSchedule: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -217,6 +218,48 @@ function renderAnomalyDiscovery() {
     ...auditLines
   ].join('\n');
 }
+function renderAnomalyInvestigationSchedule() {
+  const summaryNode = document.getElementById('anomalyInvestigationScheduleSummaryOut');
+  const detailNode = document.getElementById('anomalyInvestigationScheduleOut');
+  const schedule = world.anomalyInvestigationSchedule;
+  if (summaryNode) {
+    summaryNode.textContent = schedule
+      ? `${schedule.slots.length} slots / ${schedule.testsRun} tests / ${schedule.refusals} refusals / ${schedule.ordinaryWorkDelayed} work delays`
+      : 'No anomaly investigation schedule yet.';
+  }
+  if (!detailNode) return;
+  if (!schedule) {
+    detailNode.textContent = 'No anomaly investigation schedule yet. Plan investigation after introducing an anomaly.';
+    return;
+  }
+  const slotLines = schedule.slots.map(slot => [
+    `${slot.block} ${slot.resident}: ${slot.decision}`,
+    `work=${slot.ordinaryWork}`,
+    `belief=${slot.belief}`,
+    `cost=${Object.entries(slot.materialCost).map(([key, value]) => `${key}:${value}`).join(',')}`,
+    `fear=${slot.fear}`,
+    `trust=${slot.trust}`,
+    `pressure=${slot.socialPressure}`,
+    `status=${slot.status}`,
+    `reason=${slot.reason}`
+  ].join(' / '));
+  const executionLines = schedule.executionLog.slice(-8).map(row => `${row.slotId} ${row.resident}: ${row.outcome}`);
+  detailNode.textContent = [
+    `Schedule seed: ${schedule.seed}`,
+    `Boundary: ${schedule.boundary}`,
+    `Resources before: ${JSON.stringify(schedule.resourcesBefore)}`,
+    `Resources now: ${JSON.stringify(world.resources)}`,
+    `Material scarcity blocks: ${schedule.materialScarcityBlocks}`,
+    `Ordinary work delayed: ${schedule.ordinaryWorkDelayed}`,
+    `Refusals/deferments: ${schedule.refusals}`,
+    '',
+    'Scheduled slots:',
+    ...slotLines,
+    '',
+    'Execution log:',
+    ...(executionLines.length ? executionLines : ['No scheduled slots executed yet.'])
+  ].join('\n');
+}
 function renderPromiseFollowUp() {
   const node = document.getElementById('promiseFollowUpOut');
   if (!node) return;
@@ -324,6 +367,7 @@ function log(event, payload) {
   renderBoundedEchoConversation();
   renderEchoInfluencedChoiceReceipt();
   renderAnomalyDiscovery();
+  renderAnomalyInvestigationSchedule();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -600,10 +644,10 @@ function introduceWorldAnomaly() {
   mutateResident(world.selected, { trust: 0.004, memory: `saw unexplained material sign and named it ${beliefs[world.selected].label}`, historyEvent: 'anomaly observation', historyDetail: observation.effect });
   return log('introduceWorldAnomaly', { seed, publicObservation: observation, residentBelief: beliefs[world.selected], hiddenLawAuditOnly: true, avatarHintNotCommand: true });
 }
-function chooseAnomalyTest(discovery) {
+function chooseAnomalyTest(discovery, forcedActor) {
   const rng = seededAnomalyRng(discovery.seed + discovery.experiments.length * 97 + world.tick);
   const names = Object.keys(world.residents);
-  const actor = names[(discovery.experiments.length + Math.floor(rng() * names.length)) % names.length];
+  const actor = forcedActor || names[(discovery.experiments.length + Math.floor(rng() * names.length)) % names.length];
   const belief = discovery.residentBeliefs[actor] || generateInitialBelief(actor, discovery.observations[0], rng, true);
   discovery.residentBeliefs[actor] = belief;
   const candidateTests = [
@@ -617,10 +661,10 @@ function chooseAnomalyTest(discovery) {
   const offset = Math.floor((belief.confidence + belief.socialTrust + rng()) * candidateTests.length) % candidateTests.length;
   return { actor, belief, ...candidateTests[offset] };
 }
-function runAnomalyExperiment() {
+function runAnomalyExperiment(forcedActor) {
   if (!world.anomalyDiscovery) introduceWorldAnomaly();
   const discovery = world.anomalyDiscovery;
-  const test = chooseAnomalyTest(discovery);
+  const test = chooseAnomalyTest(discovery, forcedActor);
   const observation = observationForMaterials(discovery.hiddenWorldLaw, test.materials, test.actor, 'resident experiment');
   const failure = /nothing|dulled|cracked|smoke/.test(observation.effect);
   const belief = discovery.residentBeliefs[test.actor];
@@ -652,7 +696,7 @@ function runAnomalyExperiment() {
     { type: 'private_belief', summary: `${experiment.actor} confidence now ${belief.confidence}; contradictions ${belief.contradictionCount}`, auditOnly: false }
   );
   mutateResident(test.actor, { progress: failure ? 0.004 : 0.014, trust: failure ? -0.002 : 0.006, memory: `tested ${belief.label}: ${observation.effect}`, historyEvent: failure ? 'failed anomaly experiment' : 'anomaly experiment', historyDetail: `${experiment.id} ${test.materials.join(' + ')} -> ${observation.effect}` });
-  return log('runAnomalyExperiment', { experiment, observation, belief, failedExperimentPreserved: failure, materialConstraintBinding: true });
+  return log('runAnomalyExperiment', { experiment, observation, belief, failedExperimentPreserved: failure, materialConstraintBinding: true, scheduledResident: forcedActor || null });
 }
 function spreadAnomalyBelief() {
   if (!world.anomalyDiscovery) introduceWorldAnomaly();
@@ -704,6 +748,123 @@ function spreadAnomalyBelief() {
   );
   mutateResident(to, { trust: 0.003, progress: 0.006, memory: `heard anomaly belief ${after} from ${from}`, historyEvent: 'anomaly social transmission', historyDetail: `${row.channel}: ${row.before} -> ${row.after}` });
   return log('spreadAnomalyBelief', { transmission: row, transmittedBelief: discovery.residentBeliefs[to], culturalMemory: discovery.culturalMemory.slice(-1)[0], socialTransmissionMutation: true, avatarHintNotCommand: true });
+}
+function anomalySlotMaterialCost(resident, index) {
+  const costs = [
+    { fiber: 1, wood: 1, care: 0, water: 0 },
+    { fiber: 0, wood: 1, care: 1, water: 1 },
+    { fiber: 1, wood: 0, care: 1, water: 0 },
+    { fiber: 0, wood: 2, care: 0, water: 1 }
+  ];
+  const offset = (resident.charCodeAt(0) + index) % costs.length;
+  return costs[offset];
+}
+function hasResourcesFor(cost) {
+  return Object.entries(cost).every(([key, value]) => (world.resources[key] || 0) >= value);
+}
+function applyResourceCost(cost) {
+  Object.entries(cost).forEach(([key, value]) => {
+    world.resources[key] = Math.max(0, (world.resources[key] || 0) - value);
+  });
+}
+function planAnomalyInvestigationSchedule() {
+  if (!world.anomalyDiscovery) introduceWorldAnomaly();
+  const discovery = world.anomalyDiscovery;
+  const residentsToPlan = Object.keys(world.residents).slice(0, 5);
+  const blocks = ['dawn work block', 'midday work block', 'rain pause', 'evening repair', 'market gossip'];
+  const beliefKinds = new Set(Object.values(discovery.residentBeliefs).map(belief => belief.kind));
+  const slots = residentsToPlan.map((resident, index) => {
+    const rng = seededAnomalyRng(discovery.seed + index * 211 + world.tick);
+    const baseObservation = discovery.observations[0];
+    if (!discovery.residentBeliefs[resident]) {
+      discovery.residentBeliefs[resident] = generateInitialBelief(resident, baseObservation, rng, true);
+    }
+    const belief = discovery.residentBeliefs[resident];
+    const materialCost = anomalySlotMaterialCost(resident, index);
+    const scarce = !hasResourcesFor(materialCost);
+    const fear = Number(Math.min(1, (belief.kind === 'fearful' ? 0.42 : 0.12) + belief.contradictionCount * 0.16 + (belief.kind === 'ritualized' ? 0.14 : 0)).toFixed(3));
+    const trust = Number((world.residents[resident].trust || 0.5).toFixed(3));
+    const socialPressure = Number(Math.min(1, discovery.socialTransmissions.filter(row => row.from === resident || row.to === resident).length * 0.18 + beliefKinds.size * 0.04).toFixed(3));
+    let decision = 'test_anomaly';
+    let reason = 'curiosity and available materials beat ordinary work';
+    if (scarce) {
+      decision = 'defer_for_materials';
+      reason = 'ordinary work keeps scarce material';
+    } else if (fear > trust + 0.18) {
+      decision = 'refuse_test';
+      reason = 'fear and contradictions outweigh trust';
+    } else if (socialPressure > 0.42 && belief.confidence < 0.48) {
+      decision = 'argue_before_test';
+      reason = 'social disagreement delays the test';
+    }
+    return {
+      id: `AIS-${String(index + 1).padStart(2, '0')}`,
+      block: blocks[index],
+      resident,
+      ordinaryWork: world.residents[resident].schedule,
+      belief: belief.label,
+      decision,
+      reason,
+      materialCost,
+      fear,
+      trust,
+      socialPressure,
+      status: 'planned',
+      experimentId: null
+    };
+  });
+  world.anomalyInvestigationSchedule = {
+    reportIntroduced: 363,
+    seed: discovery.seed,
+    resourcesBefore: { ...world.resources },
+    slots,
+    testsRun: 0,
+    refusals: 0,
+    ordinaryWorkDelayed: 0,
+    materialScarcityBlocks: slots.filter(slot => slot.decision === 'defer_for_materials').length,
+    socialDisagreementKinds: beliefKinds.size,
+    executionLog: [],
+    noPanelOnlyLoop: true,
+    boundary: 'browser-local-scheduled-anomaly-investigation-only'
+  };
+  discovery.auditReplay.push({ type: 'schedule_tradeoff', summary: `planned ${slots.length} anomaly investigation slots against ordinary resident work`, auditOnly: false });
+  recordCheckpoint('anomaly schedule planned');
+  return log('planAnomalyInvestigationSchedule', { slots, resourcesBefore: world.anomalyInvestigationSchedule.resourcesBefore, noPanelOnlyLoop: true, socialDisagreementKinds: beliefKinds.size });
+}
+function runScheduledAnomalyInvestigation() {
+  if (!world.anomalyInvestigationSchedule) planAnomalyInvestigationSchedule();
+  const schedule = world.anomalyInvestigationSchedule;
+  const slot = schedule.slots.find(item => item.status === 'planned');
+  if (!slot) return log('runScheduledAnomalyInvestigation', { complete: true, testsRun: schedule.testsRun, refusals: schedule.refusals, ordinaryWorkDelayed: schedule.ordinaryWorkDelayed });
+  if (slot.decision !== 'test_anomaly') {
+    slot.status = slot.decision === 'argue_before_test' ? 'deferred by disagreement' : 'refused or deferred';
+    schedule.refusals += 1;
+    const outcome = `${slot.resident} kept ${slot.ordinaryWork} ahead of anomaly testing because ${slot.reason}`;
+    schedule.executionLog.push({ slotId: slot.id, resident: slot.resident, outcome, decision: slot.decision });
+    world.anomalyDiscovery.auditReplay.push({ type: 'schedule_tradeoff', summary: outcome, auditOnly: false });
+    mutateResident(slot.resident, { trust: slot.decision === 'refuse_test' ? -0.003 : 0.001, progress: 0.006, memory: `deferred anomaly test: ${slot.reason}`, historyEvent: 'anomaly schedule tradeoff', historyDetail: outcome });
+    return log('runScheduledAnomalyInvestigation', { slot, executedTest: false, scheduleTradeoff: true, resources: world.resources });
+  }
+  if (!hasResourcesFor(slot.materialCost)) {
+    slot.status = 'blocked by scarce materials';
+    schedule.materialScarcityBlocks += 1;
+    schedule.refusals += 1;
+    const outcome = `${slot.resident} could not test ${slot.belief}; resources were too scarce`;
+    schedule.executionLog.push({ slotId: slot.id, resident: slot.resident, outcome, decision: 'blocked_by_scarcity' });
+    world.anomalyDiscovery.auditReplay.push({ type: 'schedule_tradeoff', summary: outcome, auditOnly: false });
+    return log('runScheduledAnomalyInvestigation', { slot, executedTest: false, materialScarcityBlock: true, resources: world.resources });
+  }
+  applyResourceCost(slot.materialCost);
+  schedule.ordinaryWorkDelayed += 1;
+  const experimentRow = runAnomalyExperiment(slot.resident);
+  const experiment = experimentRow.payload.experiment;
+  slot.status = experiment.failure ? 'failed test preserved' : 'test completed';
+  slot.experimentId = experiment.id;
+  schedule.testsRun += 1;
+  const outcome = `${slot.resident} delayed ${slot.ordinaryWork}, spent scheduled materials, and got ${experiment.outcome}`;
+  schedule.executionLog.push({ slotId: slot.id, resident: slot.resident, outcome, decision: slot.decision, experimentId: experiment.id, failure: experiment.failure });
+  world.anomalyDiscovery.auditReplay.push({ type: 'schedule_tradeoff', summary: outcome, auditOnly: false });
+  return log('runScheduledAnomalyInvestigation', { slot, executedTest: true, experiment, resources: world.resources, ordinaryWorkDelayed: schedule.ordinaryWorkDelayed });
 }
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
@@ -1114,6 +1275,7 @@ function runStateBoundaryAudit() {
     boundedEchoConversation: world.boundedEchoConversation,
     echoInfluencedChoiceReceipt: world.echoInfluencedChoiceReceipt,
     anomalyDiscovery: world.anomalyDiscovery,
+    anomalyInvestigationSchedule: world.anomalyInvestigationSchedule,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -1223,6 +1385,7 @@ function bindControls() {
   renderBoundedEchoConversation();
   renderEchoInfluencedChoiceReceipt();
   renderAnomalyDiscovery();
+  renderAnomalyInvestigationSchedule();
   renderPromiseFollowUp();
   renderObligationList();
   renderScheduleDebtIntegration();
@@ -1790,7 +1953,9 @@ function describeReplayRow(row) {
     ,
     introduceWorldAnomaly: `introduced anomaly seed=${payload.seed}; hidden law audit only=${payload.hiddenLawAuditOnly === true}`,
     runAnomalyExperiment: `anomaly experiment ${payload.experiment ? payload.experiment.id : ''} failed=${payload.failedExperimentPreserved === true}`,
-    spreadAnomalyBelief: `spread anomaly belief mutation=${payload.socialTransmissionMutation === true}`
+    spreadAnomalyBelief: `spread anomaly belief mutation=${payload.socialTransmissionMutation === true}`,
+    planAnomalyInvestigationSchedule: `planned anomaly investigation slots=${payload.slots ? payload.slots.length : 0}`,
+    runScheduledAnomalyInvestigation: `scheduled anomaly investigation executed=${payload.executedTest === true} tradeoff=${payload.scheduleTradeoff === true}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -1871,6 +2036,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

@@ -1,0 +1,2 @@
+report,verdict,readiness,weakest_channel_score,next_gate
+367,pass,1.0,1.0,"post-367: make ordinary-affordance influence persist across save/restore and return sessions, then surface it through resident body language instead of only text panels"

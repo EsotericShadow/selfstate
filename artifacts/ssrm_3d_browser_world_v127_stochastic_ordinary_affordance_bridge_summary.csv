@@ -1,0 +1,17 @@
+metric,value
+ordinary_action_binding,1.0
+offer_help_influence,1.0
+talk_influence,1.0
+schedule_influence,1.0
+movement_influence,1.0
+bounded_refusal_blocks_help,1.0
+source_link_integrity,1.0
+no_permanent_penalty,1.0
+not_panel_only_loop,1.0
+browser_surface_wired,1.0
+ordinary_action_count,192
+source_link_count,192
+console_error_count,0
+criterion_count,19
+readiness,1.0
+weakest_channel_score,1.0

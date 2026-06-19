@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -75,6 +75,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   stochasticConsequencePulse: null,
   stochasticRecoveryLoop: null,
   stochasticHistoryInfluence: null,
+  stochasticOrdinaryAffordance: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -380,6 +381,42 @@ function renderStochasticHistoryInfluence() {
     ...(echoes.length ? echoes : ['No social echoes yet.'])
   ].join('\n');
 }
+function renderStochasticOrdinaryAffordance() {
+  const summaryNode = document.getElementById('stochasticOrdinaryAffordanceSummaryOut');
+  const detailNode = document.getElementById('stochasticOrdinaryAffordanceOut');
+  const affordance = world.stochasticOrdinaryAffordance;
+  if (summaryNode) {
+    summaryNode.textContent = affordance
+      ? `${affordance.actionRecords.length} normal actions / ${affordance.blockedCount} bounded blocks / ${affordance.movementBiasCount} movement biases`
+      : 'No ordinary-affordance influence yet.';
+  }
+  if (!detailNode) return;
+  if (!affordance) {
+    detailNode.textContent = 'No ordinary-affordance influence yet. Use normal actions after stochastic history influence to see Talk, Help, Schedule, and Movement change from recovery history.';
+    return;
+  }
+  const actionLines = affordance.actionRecords.slice(-10).map(row => [
+    `${row.id} ${row.actor}: ${row.action}`,
+    `decision=${row.sourceDecision}`,
+    `outcome=${row.outcome}`,
+    `blocked=${row.blocked}`,
+    `moveScale=${row.movementScale}`,
+    `source=${row.sourceChoiceId || 'none'}`,
+    `permanentPenalty=${row.permanentPenalty}`
+  ].join(' / '));
+  const sourceLines = affordance.sourceLedger.slice(-8).map(row => `${row.actionId}: ${row.sourceChoiceId} -> ${row.normalAction}`);
+  detailNode.textContent = [
+    `Boundary: ${affordance.boundary}`,
+    `Policy: ${affordance.normalPlayPolicy}`,
+    `Source history choices: ${affordance.sourceChoiceCount}`,
+    '',
+    'Normal action records:',
+    ...(actionLines.length ? actionLines : ['No normal actions influenced yet.']),
+    '',
+    'Source ledger:',
+    ...(sourceLines.length ? sourceLines : ['No source links recorded yet.'])
+  ].join('\n');
+}
 function renderPromiseFollowUp() {
   const node = document.getElementById('promiseFollowUpOut');
   if (!node) return;
@@ -565,10 +602,32 @@ function applyAccountabilityReturnGreeting(replayRowsBeforeReturn) {
   };
   return world.returnGreetingContinuity;
 }
-function moveNorth() { world.avatar.y = Math.max(52, world.avatar.y - 34); return log('moveNorth', { y: world.avatar.y }); }
-function moveSouth() { world.avatar.y = Math.min(560, world.avatar.y + 34); return log('moveSouth', { y: world.avatar.y }); }
-function moveWest() { world.avatar.x = Math.max(52, world.avatar.x - 34); updateRoom(); return log('moveWest', { x: world.avatar.x, room: world.avatar.room }); }
-function moveEast() { world.avatar.x = Math.min(970, world.avatar.x + 34); updateRoom(); return log('moveEast', { x: world.avatar.x, room: world.avatar.room }); }
+function moveNorth() {
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveNorth', world.selected);
+  const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
+  world.avatar.y = Math.max(52, world.avatar.y - step);
+  return log('moveNorth', { y: world.avatar.y, step, ordinaryInfluence });
+}
+function moveSouth() {
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveSouth', world.selected);
+  const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
+  world.avatar.y = Math.min(560, world.avatar.y + step);
+  return log('moveSouth', { y: world.avatar.y, step, ordinaryInfluence });
+}
+function moveWest() {
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveWest', world.selected);
+  const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
+  world.avatar.x = Math.max(52, world.avatar.x - step);
+  updateRoom();
+  return log('moveWest', { x: world.avatar.x, room: world.avatar.room, step, ordinaryInfluence });
+}
+function moveEast() {
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('moveEast', world.selected);
+  const step = Math.max(8, Math.round(34 * ordinaryInfluence.movementScale));
+  world.avatar.x = Math.min(970, world.avatar.x + step);
+  updateRoom();
+  return log('moveEast', { x: world.avatar.x, room: world.avatar.room, step, ordinaryInfluence });
+}
 function updateRoom() { world.avatar.room = ['arrival court', 'tool alcove', 'rain court', 'fiber loft'][Math.floor(world.avatar.x / 250) % 4]; }
 function buildBoundedEchoConversation(phrase) {
   const echo = world.accountabilitySocialEcho;
@@ -597,9 +656,12 @@ function buildBoundedEchoConversation(phrase) {
 function talkBounded() {
   const phrase = phraseSelect.value;
   const boundedEchoConversation = buildBoundedEchoConversation(phrase);
-  const memory = boundedEchoConversation ? `bounded echo reply referenced ${boundedEchoConversation.sourceEchoId}` : 'heard bounded phrase ' + phrase;
-  mutateResident(world.selected, { trust: 0.012, memory });
-  return log('talkBounded', { phrase, boundedEchoConversation, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('talkBounded', world.selected);
+  const memory = boundedEchoConversation
+    ? `bounded echo reply referenced ${boundedEchoConversation.sourceEchoId}`
+    : `${ordinaryInfluence.talkTone}: heard bounded phrase ${phrase}`;
+  mutateResident(world.selected, { trust: ordinaryInfluence.trustDelta, progress: ordinaryInfluence.progressDelta, memory });
+  return log('talkBounded', { phrase, boundedEchoConversation, ordinaryInfluence, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
 }
 function applyEchoInfluencedChoiceReceipt(action) {
   const conversation = world.boundedEchoConversation;
@@ -633,13 +695,20 @@ function applyEchoInfluencedChoiceReceipt(action) {
   recordResidentHistory(conversation.resident, 'echo-influenced choice/refusal', `${visibleStatus}; no LLM true; recoverable true`);
   return world.echoInfluencedChoiceReceipt;
 }
-function askSchedule() { return log('askSchedule', { schedule: currentResident().schedule }); }
+function askSchedule() {
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('askSchedule', world.selected);
+  const schedule = ordinaryInfluence.blocked ? 'schedule answer bounded by pending recovery' : currentResident().schedule;
+  return log('askSchedule', { schedule, ordinaryInfluence });
+}
 function offerHelp() {
   const echoInfluencedChoiceReceipt = applyEchoInfluencedChoiceReceipt('offer_help');
-  const memory = echoInfluencedChoiceReceipt ? `accepted source-bounded help for ${echoInfluencedChoiceReceipt.sourceEchoId}; refused history rewrite` : 'avatar helped with ' + currentResident().schedule;
-  mutateResident(world.selected, { trust: 0.024, debt: -1, progress: 0.035, memory });
-  world.resources.care = Math.max(0, world.resources.care - 1);
-  return log('offerHelp', { care: world.resources.care, echoInfluencedChoiceReceipt, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
+  const ordinaryInfluence = applyStochasticHistoryToOrdinaryAction('offerHelp', world.selected);
+  const memory = ordinaryInfluence.blocked
+    ? `bounded refusal from stochastic history: ${ordinaryInfluence.outcome}`
+    : (echoInfluencedChoiceReceipt ? `accepted source-bounded help for ${echoInfluencedChoiceReceipt.sourceEchoId}; refused history rewrite` : `${ordinaryInfluence.outcome} with ${currentResident().schedule}`);
+  mutateResident(world.selected, { trust: ordinaryInfluence.trustDelta, debt: ordinaryInfluence.debtDelta, progress: ordinaryInfluence.progressDelta, memory });
+  world.resources.care = Math.max(0, world.resources.care - ordinaryInfluence.careCost);
+  return log('offerHelp', { care: world.resources.care, helped: !ordinaryInfluence.blocked, echoInfluencedChoiceReceipt, ordinaryInfluence, noLLM: true, autonomousLanguage: false, phrasebookOnly: true });
 }
 function borrowTool() { mutateResident(world.selected, { trust: -0.018, debt: 1, memory: 'avatar borrowed tool' }); return log('borrowTool', { consequence: 'debt increases' }); }
 function returnTool() { mutateResident(world.selected, { trust: 0.022, debt: -1, memory: 'avatar returned tool' }); return log('returnTool', { consequence: 'trust repairs partially' }); }
@@ -1403,6 +1472,103 @@ function runStochasticHistoryInfluenceLoop() {
     noPermanentPunishmentPolicy: ensureStochasticHistoryInfluence().noPermanentPunishmentPolicy
   });
 }
+function ensureStochasticOrdinaryAffordance() {
+  if (!world.stochasticOrdinaryAffordance) {
+    world.stochasticOrdinaryAffordance = {
+      reportIntroduced: 367,
+      sourceChoiceCount: 0,
+      actionRecords: [],
+      sourceLedger: [],
+      blockedCount: 0,
+      movementBiasCount: 0,
+      normalPlayPolicy: 'stochastic history may bias ordinary actions, but normal play keeps source IDs and recovery paths visible',
+      boundary: 'browser-local-stochastic-ordinary-affordance-only; no LLM call, no subjective consciousness, no moral patienthood'
+    };
+  }
+  return world.stochasticOrdinaryAffordance;
+}
+function latestHistoryChoiceFor(actor) {
+  const influence = ensureStochasticHistoryInfluence();
+  if (!influence.choiceRecords.length) runStochasticHistoryInfluenceLoop();
+  const refreshed = ensureStochasticHistoryInfluence();
+  const choices = refreshed.choiceRecords.filter(row => row.actor === actor);
+  return choices[choices.length - 1] || refreshed.choiceRecords[refreshed.choiceRecords.length - 1] || null;
+}
+function applyStochasticHistoryToOrdinaryAction(action, actor) {
+  const affordance = ensureStochasticOrdinaryAffordance();
+  const choice = latestHistoryChoiceFor(actor);
+  let outcome = 'normal action unchanged by stochastic history';
+  let blocked = false;
+  let movementScale = 1;
+  let careCost = action === 'offerHelp' ? 1 : 0;
+  let trustDelta = 0.004;
+  let progressDelta = 0.004;
+  let debtDelta = 0;
+  let talkTone = 'plain bounded reply';
+  const decision = choice ? choice.decision : 'none';
+  if (decision === 'bounded_refusal_until_recovery') {
+    if (action === 'offerHelp' || action === 'askSchedule') blocked = true;
+    movementScale = action.startsWith('move') ? 0.5 : 1;
+    careCost = blocked ? 0 : careCost;
+    trustDelta = action === 'offerHelp' ? -0.004 : -0.001;
+    progressDelta = blocked ? 0 : 0.001;
+    talkTone = 'guarded bounded reply';
+    outcome = 'pending recovery creates bounded caution';
+  } else if (decision === 'cautious_help_with_limits') {
+    movementScale = action.startsWith('move') ? 0.75 : 1;
+    trustDelta = action === 'offerHelp' ? 0.008 : 0.004;
+    progressDelta = action === 'offerHelp' ? 0.014 : 0.004;
+    talkTone = 'careful bounded reply';
+    outcome = 'stabilized history allows cautious action';
+  } else if (decision === 'accept_recovery_informed_help') {
+    trustDelta = action === 'offerHelp' ? 0.02 : 0.01;
+    progressDelta = action === 'offerHelp' ? 0.028 : 0.006;
+    debtDelta = action === 'offerHelp' ? -1 : 0;
+    talkTone = 'warm recovery-informed reply';
+    outcome = 'recovered history supports ordinary action';
+  }
+  const row = {
+    id: `SOA-${String(affordance.actionRecords.length + 1).padStart(2, '0')}`,
+    action,
+    actor,
+    sourceChoiceId: choice ? choice.id : '',
+    sourceDecision: decision,
+    outcome,
+    blocked,
+    movementScale,
+    careCost,
+    trustDelta,
+    progressDelta,
+    debtDelta,
+    talkTone,
+    recoveryPath: choice ? choice.recoveryPath : '',
+    permanentPenalty: false,
+    normalAffordance: true
+  };
+  affordance.actionRecords.push(row);
+  if (affordance.actionRecords.length > 36) affordance.actionRecords.shift();
+  affordance.sourceChoiceCount = ensureStochasticHistoryInfluence().choiceRecords.length;
+  if (blocked) affordance.blockedCount += 1;
+  if (action.startsWith('move') && movementScale !== 1) affordance.movementBiasCount += 1;
+  affordance.sourceLedger.push({ actionId: row.id, sourceChoiceId: row.sourceChoiceId, normalAction: action, outcome });
+  if (affordance.sourceLedger.length > 40) affordance.sourceLedger.shift();
+  return row;
+}
+function runOrdinaryAffordanceInfluenceLoop() {
+  if (!world.stochasticHistoryInfluence || !world.stochasticHistoryInfluence.choiceRecords.length) runStochasticHistoryInfluenceLoop();
+  const before = ensureStochasticOrdinaryAffordance().actionRecords.length;
+  talkBounded();
+  askSchedule();
+  offerHelp();
+  moveEast();
+  const affordance = ensureStochasticOrdinaryAffordance();
+  return log('runOrdinaryAffordanceInfluenceLoop', {
+    actionsAdded: affordance.actionRecords.length - before,
+    blockedCount: affordance.blockedCount,
+    movementBiasCount: affordance.movementBiasCount,
+    normalPlayPolicy: affordance.normalPlayPolicy
+  });
+}
 function waitOffscreen() {
   Object.keys(world.residents).forEach((name, index) => mutateResident(name, { progress: 0.018 + index * 0.003, trust: index % 2 ? 0.002 : -0.001 }));
   const offscreenObligation = runOffscreenResidentObligationPulse();
@@ -1816,6 +1982,7 @@ function runStateBoundaryAudit() {
     stochasticConsequencePulse: world.stochasticConsequencePulse,
     stochasticRecoveryLoop: world.stochasticRecoveryLoop,
     stochasticHistoryInfluence: world.stochasticHistoryInfluence,
+    stochasticOrdinaryAffordance: world.stochasticOrdinaryAffordance,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2465,7 +2632,7 @@ function describeReplayRow(row) {
     moveEast: `moved east to ${payload.room || row.room}`,
     talkBounded: `bounded phrase "${payload.phrase}"; noLLM=${payload.noLLM === true}`,
     askSchedule: `asked schedule: ${payload.schedule}`,
-    offerHelp: `helped with work; care left=${payload.care}`,
+    offerHelp: `help action helped=${payload.helped !== false} care left=${payload.care}`,
     borrowTool: 'borrowed tool; debt increases',
     returnTool: 'returned tool; trust repairs partially',
     waitOffscreen: 'waited offscreen; resident progress advanced',
@@ -2503,7 +2670,8 @@ function describeReplayRow(row) {
     runStochasticRecoveryLoop: `ran stochastic recovery loop recovered=${payload.recoveredThisRun} pending=${payload.pendingCount}`,
     runStochasticHistoryChoice: `stochastic history choice ${payload.choice ? payload.choice.decision : ''}`,
     runStochasticHistorySocialEcho: `stochastic history echo ${payload.echo ? payload.echo.from : ''}->${payload.echo ? payload.echo.to : ''}`,
-    runStochasticHistoryInfluenceLoop: `stochastic history influence choices=${payload.choices ? payload.choices.length : 0} echo=${payload.echo}`
+    runStochasticHistoryInfluenceLoop: `stochastic history influence choices=${payload.choices ? payload.choices.length : 0} echo=${payload.echo}`,
+    runOrdinaryAffordanceInfluenceLoop: `ordinary affordance influence actions=${payload.actionsAdded} blocked=${payload.blockedCount}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -2559,6 +2727,7 @@ function render() {
   renderStochasticConsequencePulse();
   renderStochasticRecoveryLoop();
   renderStochasticHistoryInfluence();
+  renderStochasticOrdinaryAffordance();
   draw();
 }
 function draw() {
@@ -2587,6 +2756,6 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

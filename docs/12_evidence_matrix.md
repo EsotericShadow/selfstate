@@ -1583,3 +1583,12 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 - Evidence: `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js`, `artifacts/ssrm_3d_browser_world_v126_stochastic_history_influence_bridge_history_choices.csv`, `artifacts/ssrm_3d_browser_world_v126_stochastic_history_influence_bridge_bounded_refusals.csv`, `artifacts/ssrm_3d_browser_world_v126_stochastic_history_influence_bridge_social_echoes.csv`, `artifacts/ssrm_3d_browser_world_v126_stochastic_history_influence_bridge_browser_smoke.json`, and `docs/366_ssrm_3d_stochastic_history_influence_bridge_report.md`.
 - Browser result: the maintained shell shows choice records, bounded refusals, social echoes, source recovery IDs, direct-avatar-command false, and no-permanent-punishment policy text with zero console errors.
 - Boundary: browser-local stochastic history influence scaffolding only; no LLM call, autonomous natural language, subjective consciousness, suffering model, moral patienthood, production persistence, hosted URL proof, complete 3D engine, or finished-game claim.
+
+## Report 367: SSRM-3D Stochastic Ordinary Affordance Bridge
+
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| Stochastic history now affects ordinary affordances. | `experiments/ssrm_3d_browser_world_v127_stochastic_ordinary_affordance_bridge.py` generates normal action/source-link artifacts for help, talk, schedule, and movement. | Browser-local deterministic-per-seed scaffold; no LLM calls and no consciousness claim. |
+| Normal play is not panel-only. | `visualizations/ssrm_3d_browser_world_v61_vertical_slice_app_shell/app.js` calls `applyStochasticHistoryToOrdinaryAction` from existing ordinary actions. | Influence is bounded and traceable rather than open-ended agency. |
+| Suspicious or pending histories do not create permanent punishment. | Generated criteria check source links, recovery paths, and `permanent_penalty=False`. | This is welfare-style bounded recovery scaffolding, not subjective distress. |
+

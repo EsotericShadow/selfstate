@@ -2155,3 +2155,8 @@ Report 307 upgrades the primary-demo recorder from raw defect notes into a small
 ### Report 366: SSRM-3D Stochastic History Influence Bridge
 
 [Stochastic history influence report](docs/366_ssrm_3d_stochastic_history_influence_bridge_report.md): makes recovered, pending, and stabilized stochastic recovery histories affect later bounded choices, refusals, and social echoes while preserving source IDs and no-permanent-punishment flags.
+
+### Report 367: SSRM-3D Stochastic Ordinary Affordance Bridge
+
+Report 367 moves stochastic history influence out of a dedicated panel-only loop and into ordinary browser actions: `Offer help`, `Talk`, `Ask schedule`, and movement now consult recovered, pending, or stabilized stochastic recovery history before changing resident state. The bridge keeps source choice IDs, recovery paths, no-permanent-penalty flags, and the browser-local/no-consciousness/no-LLM boundary visible.
+

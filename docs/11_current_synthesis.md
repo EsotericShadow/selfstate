@@ -1311,3 +1311,10 @@ The key integration move is that nondeterminism is no longer just a one-shot per
 Report 366 makes recovered and unrecovered stochastic history affect later bounded behavior. A resident with recovered stochastic harm can accept recovery-informed help, pending recovery can produce a bounded refusal until repair is handled, and stabilized-without-materials history can produce cautious help with limits. The shell also propagates this through social echoes with direct-avatar-command set to false.
 
 The integration gain is continuity across stochastic event, recovery, later choice, and resident-to-resident memory. The guardrail is explicit: unrecovered history can justify bounded caution, not permanent punishment. This remains browser-local scaffolding, not autonomous language, subjective consciousness, a suffering model, moral patienthood, or finished gameplay.
+
+## Report 367: SSRM-3D Stochastic Ordinary Affordance Bridge
+
+Report 367 tests whether stochastic history influence can affect ordinary player affordances instead of remaining a special evaluator-only path. The shell now routes normal help, talk, schedule, and movement actions through stochastic history choices while preserving source links and recovery boundaries. This makes resident behavior less toy-like without claiming autonomous language, subjective consciousness, moral patienthood, or a finished game engine.
+
+Next gate: persist ordinary-affordance influence through save/restore and returning sessions, then express the influence through readable resident body language instead of only text panels.
+

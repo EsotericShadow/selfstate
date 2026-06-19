@@ -574,3 +574,8 @@ The browser-world shell now requires stochastic shocks to feed a bounded recover
 ## Report 366 Public Note: Stochastic History Changes Later Behavior
 
 The maintained shell now carries stochastic recovery history into later resident choices and social memory. Recovered shocks can support help, pending shocks can create bounded refusal until recovery is handled, and stabilized shocks can produce cautious help with limits. The system records source recovery IDs and no-permanent-punishment flags so surprise creates continuity without turning into random behavior or permanent blame.
+
+## Report 367 public note: stochastic history in ordinary affordances
+
+Report 367 keeps the non-scripted discovery line moving by making stochastic history influence ordinary browser actions instead of only a dedicated review panel. The public boundary remains unchanged: browser-local, deterministic per seed, inspectable, no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, and no finished game-engine claim.
+

@@ -1,0 +1,26 @@
+{
+  "boundary": "Browser-local stochastic ordinary-affordance influence only. Recovered, pending, and stabilized stochastic history can bias normal actions such as Offer help, Talk, Ask schedule, and Movement while preserving source choice IDs, recovery paths, no-permanent-penalty flags, and no-LLM/no-consciousness boundaries.",
+  "generated_at": "2026-06-19T05:44:17.285838+00:00",
+  "metrics": {
+    "bounded_refusal_blocks_help": 1.0,
+    "browser_surface_wired": 1.0,
+    "console_error_count": 0,
+    "criterion_count": 19,
+    "movement_influence": 1.0,
+    "no_permanent_penalty": 1.0,
+    "not_panel_only_loop": 1.0,
+    "offer_help_influence": 1.0,
+    "ordinary_action_binding": 1.0,
+    "ordinary_action_count": 192,
+    "readiness": 1.0,
+    "schedule_influence": 1.0,
+    "source_link_count": 192,
+    "source_link_integrity": 1.0,
+    "talk_influence": 1.0,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-367: make ordinary-affordance influence persist across save/restore and return sessions, then surface it through resident body language instead of only text panels",
+  "report": 367,
+  "slug": "ssrm_3d_browser_world_v127_stochastic_ordinary_affordance_bridge",
+  "verdict": "pass"
+}

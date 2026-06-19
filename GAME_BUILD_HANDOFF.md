@@ -102,3 +102,8 @@ The game prototype shell now includes browser-local prototype save slots. The pl
 
 Normal player actions now feed the practical discovery loop. Talking, asking schedules, offering help, borrowing tools, and returning tools record ordinary pressure. Once public village pressure exists, repeated ordinary actions can trigger resident-generated tests and emergent practice candidates. This keeps practice formation inside lived play instead of requiring a separate report-style panel loop.
 
+
+## Prototype v0 readable behavior update
+
+Residents now expose public body-language cues derived from existing needs and actions. Autonomous ticks write a visible expression ledger with posture, movement, gaze, marker, and reason. The canvas draws those cues as simple readable markers, and the prototype surface includes a `Readable behavior` card. This is public behavior expression only, not private workspace exposure or subjective feeling.
+

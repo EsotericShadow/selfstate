@@ -20,3 +20,5 @@
 14. Save a prototype slot, run Auto burst, return the slot, and confirm the Save / return card restores year/day/practice/proposal summaries and can export a receipt.
 
 15. After seeding public pressure, ask a resident schedule twice and confirm Practical discovery shows ordinary play feed rows plus an auto-generated resident test.
+
+16. Run Resident season or Auto burst and confirm residents show readable public behavior cues on the canvas and in the Readable behavior card without exposing hidden/private state.

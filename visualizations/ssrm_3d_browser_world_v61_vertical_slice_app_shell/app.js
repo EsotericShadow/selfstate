@@ -2516,15 +2516,19 @@ function ensureAutonomousResidents() {
       actionLog: [],
       refusalLog: [],
       careLedger: [],
+      expressionLedger: [],
       entropyLedger: [],
       boundary: {
         noDirectPlayerCommand: true,
         residentsCanRefuse: true,
         actionsCostTimeAndNeed: true,
+        expressionsArePublicCuesOnly: true,
         stochasticButAudited: true,
       },
     };
   }
+  if (!world.autonomousResidents.expressionLedger) world.autonomousResidents.expressionLedger = [];
+  if (!world.autonomousResidents.boundary.expressionsArePublicCuesOnly) world.autonomousResidents.boundary.expressionsArePublicCuesOnly = true;
   return world.autonomousResidents;
 }
 
@@ -2558,6 +2562,111 @@ function chooseAutonomousResidentAction(residentName, entropy) {
   if (hasPractice && entropy % 4 === 0) return 'practice_maintenance';
   if (hasPractice && entropy % 4 === 1) return 'teach';
   return entropy % 2 === 0 ? 'experiment' : 'observe';
+}
+
+function deriveVisibleResidentExpression(residentName, action = 'observe', needsOverride = null) {
+  const sim = world.autonomousResidents;
+  const needs = needsOverride || (sim && sim.needState ? sim.needState[residentName] : null);
+  const resident = world.residents[residentName] || {};
+  let posture = 'upright and available';
+  let movementCue = 'steady';
+  let gazeCue = 'looks toward current work';
+  let marker = 'available';
+  let reason = resident.schedule || 'ordinary village state';
+  if (needs && needs.energy < 0.28) {
+    posture = 'low rest posture';
+    movementCue = 'slow steps';
+    gazeCue = 'looks for a quiet place';
+    marker = 'tired';
+    reason = 'low energy';
+  } else if (needs && needs.hunger > 0.74) {
+    posture = 'leaning toward commons';
+    movementCue = 'searching path';
+    gazeCue = 'checks stores';
+    marker = 'hungry';
+    reason = 'food pressure';
+  } else if (needs && needs.safety < 0.45) {
+    posture = 'guarded stance';
+    movementCue = 'short careful steps';
+    gazeCue = 'scans route edges';
+    marker = 'guarded';
+    reason = 'low safety';
+  } else if ((needs && needs.autonomy > 0.70) || action === 'refuse') {
+    posture = 'turned half-away';
+    movementCue = 'keeps distance';
+    gazeCue = 'checks for pressure';
+    marker = 'boundary';
+    reason = 'autonomy pressure';
+  } else if (action === 'proposal_work') {
+    posture = 'carrying work bundle';
+    movementCue = 'purposeful';
+    gazeCue = 'checks board and helpers';
+    marker = 'working';
+    reason = 'resident proposal work';
+  } else if (action === 'practice_maintenance') {
+    posture = 'hands near practice materials';
+    movementCue = 'careful repeat';
+    gazeCue = 'watches stored materials';
+    marker = 'maintaining';
+    reason = 'practice upkeep';
+  } else if (action === 'teach') {
+    posture = 'open teaching stance';
+    movementCue = 'small demonstration';
+    gazeCue = 'faces a nearby resident';
+    marker = 'teaching';
+    reason = 'social transmission';
+  } else if (action === 'experiment') {
+    posture = 'careful crouch';
+    movementCue = 'measured handling';
+    gazeCue = 'watches materials';
+    marker = 'testing';
+    reason = 'resident-chosen test';
+  } else if (action === 'forage') {
+    posture = 'forward carrying stance';
+    movementCue = 'route-bound';
+    gazeCue = 'checks commons';
+    marker = 'foraging';
+    reason = 'resource pressure';
+  } else if (action === 'rest') {
+    posture = 'seated near familiar work';
+    movementCue = 'still';
+    gazeCue = 'softly watches safe people';
+    marker = 'resting';
+    reason = 'recovery';
+  }
+  return {
+    resident: residentName,
+    posture,
+    movementCue,
+    gazeCue,
+    marker,
+    reason,
+    publicCueOnly: true,
+    hiddenStateExposed: false,
+  };
+}
+
+function recordVisibleResidentExpression(residentName, action, needs) {
+  const sim = ensureAutonomousResidents();
+  const expression = deriveVisibleResidentExpression(residentName, action, needs);
+  const row = {
+    expression_id: `VBE-${String(sim.expressionLedger.length + 1).padStart(3, '0')}`,
+    day: sim.day,
+    action,
+    ...expression,
+  };
+  sim.expressionLedger.push(row);
+  if (sim.expressionLedger.length > 80) sim.expressionLedger.shift();
+  return row;
+}
+
+function latestVisibleExpressionFor(residentName) {
+  const sim = world.autonomousResidents;
+  if (sim && sim.expressionLedger) {
+    const existing = sim.expressionLedger.slice().reverse().find(row => row.resident === residentName);
+    if (existing) return existing;
+  }
+  return deriveVisibleResidentExpression(residentName);
 }
 
 function applyAutonomousResidentAction(residentName, action, entropy) {
@@ -2647,6 +2756,8 @@ function applyAutonomousResidentAction(residentName, action, entropy) {
     no_direct_player_command: true,
   };
   sim.actionLog.push(row);
+  const expression = recordVisibleResidentExpression(residentName, action, needs);
+  row.visible_expression_id = expression.expression_id;
   sim.careLedger.push({ action_id: row.action_id, resident: residentName, energy: needs.energy, hunger: needs.hunger, safety: needs.safety, autonomy: needs.autonomy });
   recordRealityConstraint('autonomous_resident_action', {
     resident: residentName,
@@ -2692,7 +2803,10 @@ function runAutonomousResidentSeason() {
 function formatPrototypeVillageState() {
   const residentLines = Object.entries(world.residents)
     .slice(0, 6)
-    .map(([name, row]) => `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; memory=${row.memory}`);
+    .map(([name, row]) => {
+      const expression = latestVisibleExpressionFor(name);
+      return `${name}: ${row.schedule}; trust=${row.trust.toFixed(2)} debt=${row.debt} progress=${row.progress.toFixed(2)}; cue=${expression.marker}/${expression.posture}; memory=${row.memory}`;
+    });
   const resources = Object.entries(world.resources).map(([key, value]) => `${key}=${value}`).join(', ');
   return [
     `Entered: ${world.entered ? 'yes' : 'no'} / room: ${world.avatar.room} / selected: ${world.selected}`,
@@ -2773,15 +2887,33 @@ function formatPrototypeAutonomousResidents() {
   const actions = sim.actionLog.slice(-8).map(row => `${row.action_id}: day ${row.day}, ${row.resident} chose ${row.action}; energy=${row.needs.energy.toFixed(2)} hunger=${row.needs.hunger.toFixed(2)} safety=${row.needs.safety.toFixed(2)}`);
   const refusals = sim.refusalLog.slice(-4).map(row => `day ${row.day}: ${row.resident} refused because ${row.reason}`);
   const care = sim.careLedger.slice(-6).map(row => `${row.action_id}: ${row.resident} energy=${row.energy.toFixed(2)} hunger=${row.hunger.toFixed(2)} autonomy=${row.autonomy.toFixed(2)}`);
+  const expressions = (sim.expressionLedger || []).slice(-8).map(row => `${row.expression_id}: ${row.resident} ${row.marker}; posture=${row.posture}; movement=${row.movementCue}; gaze=${row.gazeCue}`);
   return [
     `Day: ${sim.day} / season: ${sim.season}`,
     `Boundary: stochastic autonomous actions; no direct player command; actions cost time/needs/materials.`,
     'Recent actions:',
     ...(actions.length ? actions : ['none']),
+    'Visible expression cues:',
+    ...(expressions.length ? expressions : ['none']),
     'Refusals:',
     ...(refusals.length ? refusals : ['none']),
     'Care ledger:',
     ...(care.length ? care : ['none']),
+  ].join('\n');
+}
+
+function formatPrototypeReadableBehavior() {
+  const names = Object.keys(world.residents).slice(0, 6);
+  const rows = names.map(name => {
+    const expression = latestVisibleExpressionFor(name);
+    return `${name}: ${expression.marker}; posture=${expression.posture}; movement=${expression.movementCue}; gaze=${expression.gazeCue}; reason=${expression.reason}`;
+  });
+  const ledgerCount = world.autonomousResidents && world.autonomousResidents.expressionLedger ? world.autonomousResidents.expressionLedger.length : 0;
+  return [
+    `Public cue ledger: ${ledgerCount} row(s)`,
+    'Boundary: readable behavior is public body-language state only; no hidden/private workspace exposed.',
+    'Resident cues:',
+    ...rows,
   ].join('\n');
 }
 
@@ -2801,6 +2933,7 @@ function runPrototypeQASmoke() {
     proposals: world.villageBoard ? world.villageBoard.projectProposals.length : 0,
     ordinaryPlayFeed: world.practicalDiscovery && world.practicalDiscovery.ordinaryPlayFeed ? world.practicalDiscovery.ordinaryPlayFeed.length : 0,
     autoGeneratedTests: world.practicalDiscovery && world.practicalDiscovery.autoGeneratedTests ? world.practicalDiscovery.autoGeneratedTests.length : 0,
+    visibleExpressions: world.autonomousResidents && world.autonomousResidents.expressionLedger ? world.autonomousResidents.expressionLedger.length : 0,
   };
   runAutonomousResidentTick();
   restoreWorld();
@@ -2810,6 +2943,7 @@ function runPrototypeQASmoke() {
     { id: 'autonomous-actions', pass: Boolean(world.autonomousResidents && world.autonomousResidents.actionLog.length >= savedCounts.autonomousActions && savedCounts.autonomousActions > 0), evidence: `${world.autonomousResidents ? world.autonomousResidents.actionLog.length : 0} action(s)` },
     { id: 'emergent-practice', pass: Boolean(world.emergentPracticeGraph && world.emergentPracticeGraph.nodes.length > 0), evidence: `${world.emergentPracticeGraph ? world.emergentPracticeGraph.nodes.length : 0} node(s)` },
     { id: 'ordinary-play-generates-tests', pass: Boolean(world.practicalDiscovery && world.practicalDiscovery.ordinaryPlayFeed && world.practicalDiscovery.ordinaryPlayFeed.length >= savedCounts.ordinaryPlayFeed && savedCounts.ordinaryPlayFeed > 0 && world.practicalDiscovery.autoGeneratedTests && world.practicalDiscovery.autoGeneratedTests.length >= savedCounts.autoGeneratedTests && savedCounts.autoGeneratedTests > 0), evidence: `${savedCounts.ordinaryPlayFeed} feed row(s), ${savedCounts.autoGeneratedTests} auto test(s)` },
+    { id: 'visible-body-expression', pass: Boolean(world.autonomousResidents && world.autonomousResidents.expressionLedger && world.autonomousResidents.expressionLedger.length >= savedCounts.visibleExpressions && savedCounts.visibleExpressions > 0 && world.autonomousResidents.expressionLedger.every(row => row.publicCueOnly === true && row.hiddenStateExposed === false)), evidence: `${savedCounts.visibleExpressions} expression cue(s)` },
     { id: 'village-proposals', pass: Boolean(world.villageBoard && world.villageBoard.projectProposals.length > 0), evidence: `${world.villageBoard ? world.villageBoard.projectProposals.length : 0} proposal(s)` },
     { id: 'deep-time-million-year', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.year >= 1000000), evidence: `${world.deepTimeCivilization ? world.deepTimeCivilization.year : 0} years` },
     { id: 'survival-audited', pass: Boolean(world.deepTimeCivilization && world.deepTimeCivilization.survivalLedger && world.deepTimeCivilization.survivalLedger.length > 0), evidence: world.deepTimeCivilization && world.deepTimeCivilization.civilizationState ? world.deepTimeCivilization.civilizationState.status : 'none' },
@@ -3080,6 +3214,7 @@ function renderGamePrototypeSurface() {
   const loopNode = document.getElementById('gamePrototypeLoopOut');
   const deepTimeNode = document.getElementById('gamePrototypeDeepTimeOut');
   const autonomousNode = document.getElementById('gamePrototypeAutonomousOut');
+  const expressionNode = document.getElementById('gamePrototypeExpressionOut');
   const qaNode = document.getElementById('gamePrototypeQAOut');
   const clockNode = document.getElementById('gamePrototypeClockOut');
   const saveNode = document.getElementById('gamePrototypeSaveOut');
@@ -3090,6 +3225,7 @@ function renderGamePrototypeSurface() {
   if (loopNode) loopNode.textContent = formatPrototypeLoopReceipt();
   if (deepTimeNode) deepTimeNode.textContent = formatPrototypeDeepTime();
   if (autonomousNode) autonomousNode.textContent = formatPrototypeAutonomousResidents();
+  if (expressionNode) expressionNode.textContent = formatPrototypeReadableBehavior();
   if (qaNode) qaNode.textContent = formatPrototypeQA();
   if (clockNode) clockNode.textContent = formatPrototypeClock();
   if (saveNode) saveNode.textContent = formatPrototypeSaves();
@@ -3860,23 +3996,42 @@ function draw() {
   ctx.fillStyle = '#111816'; ctx.fillText('You', world.avatar.x - 11, world.avatar.y + 4);
   Object.entries(world.residents).forEach(([name, resident], index) => {
     const needs = world.autonomousResidents && world.autonomousResidents.needState ? world.autonomousResidents.needState[name] : null;
+    const expression = latestVisibleExpressionFor(name);
     const x = 130 + (index % 3) * 275;
     const y = 275 + Math.floor(index / 3) * 150;
     const energy = needs ? needs.energy : resident.progress;
     const safety = needs ? needs.safety : resident.trust;
     const radius = 20 + Math.round(resident.trust * 10);
-    ctx.fillStyle = name === world.selected ? '#f0c35b' : (safety < 0.45 ? '#d98d69' : '#aad0c3');
+    const expressionColor = expression.marker === 'boundary' ? '#b75d39' : expression.marker === 'tired' ? '#8aa1b1' : expression.marker === 'working' || expression.marker === 'maintaining' ? '#9fca77' : expression.marker === 'testing' ? '#d5a13a' : '#aad0c3';
+    ctx.fillStyle = name === world.selected ? '#f0c35b' : (safety < 0.45 ? '#d98d69' : expressionColor);
     ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
     ctx.strokeStyle = '#111816'; ctx.lineWidth = 3; ctx.stroke();
+    if (expression.marker === 'boundary' || expression.marker === 'guarded') {
+      ctx.strokeStyle = '#b75d39';
+      ctx.lineWidth = 4;
+      ctx.beginPath(); ctx.moveTo(x - radius - 16, y - radius - 10); ctx.lineTo(x - radius - 4, y + radius + 12); ctx.stroke();
+    } else if (expression.marker === 'working' || expression.marker === 'maintaining') {
+      ctx.fillStyle = '#5b4428';
+      ctx.fillRect(x + radius - 3, y - 6, 26, 12);
+    } else if (expression.marker === 'teaching') {
+      ctx.strokeStyle = '#f9ebc9';
+      ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(x + radius + 10, y - 12, 8, 0, Math.PI * 2); ctx.stroke();
+    } else if (expression.marker === 'testing') {
+      ctx.fillStyle = '#f9ebc9';
+      ctx.beginPath(); ctx.arc(x + radius + 8, y + 8, 5, 0, Math.PI * 2); ctx.fill();
+    }
     ctx.fillStyle = 'rgba(249,235,201,0.24)';
     ctx.beginPath(); ctx.arc(x, y, radius + 8, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * energy); ctx.strokeStyle = '#9fca77'; ctx.lineWidth = 5; ctx.stroke();
     ctx.fillStyle = '#111816'; ctx.font = '16px Optima, sans-serif'; ctx.fillText(name, x - 14, y + 5);
     ctx.fillStyle = '#f9ebc9'; ctx.font = '13px Optima, sans-serif';
     const schedule = resident.schedule.length > 34 ? resident.schedule.slice(0, 34) + '...' : resident.schedule;
     ctx.fillText(schedule, x - 62, y + 45);
+    ctx.fillStyle = expression.marker === 'boundary' || expression.marker === 'guarded' ? '#f0c35b' : '#aad0c3';
+    ctx.fillText(`${expression.marker}: ${expression.movementCue}`.slice(0, 36), x - 62, y + 62);
     if (needs && needs.autonomy > 0.7) {
       ctx.fillStyle = '#b75d39';
-      ctx.fillText('boundary', x - 30, y + 62);
+      ctx.fillText('autonomy high', x - 30, y + 78);
     }
   });
 

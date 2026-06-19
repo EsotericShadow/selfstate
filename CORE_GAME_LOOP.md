@@ -123,3 +123,11 @@ The first playable loop includes a direct save/return pass: enter the village, l
 3. Repeated ordinary actions can trigger a resident-generated practical test.
 4. Successful or failed tests feed the emergent practice graph, causal ledger, and resident memory without installing a correct modern concept.
 
+
+## Readable behavior loop
+
+1. Resident needs and autonomous actions update as part of the world loop.
+2. Each autonomous action derives a public expression cue: posture, movement, gaze, marker, and reason.
+3. The canvas shows simple body-language markers so the player can read state without debug tables.
+4. The expression ledger remains public-cue-only and does not expose hidden resident workspace.
+

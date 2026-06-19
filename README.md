@@ -2224,3 +2224,7 @@ The browser shell now includes `World stage` and `Stage loop` actions plus a `Pr
 ## Game prototype v0 update: First Playable Walkthrough
 
 The browser shell now includes `First playable` and `Export walkthrough`. This creates a receipt for the coherent path from entering the village through world-stage inspection, physical bottleneck observation, resident proposal/testing, condition support, resident work/recovery, return continuity, save state, and acceptance snapshot.
+
+## Game prototype v0 update: Normal Play Action Rail
+
+The browser shell now includes a normal play rail: Look, Ask, Support, Wait, Return, and Save. These player-language actions drive the existing village systems and produce `normal_play_action_rail` acceptance evidence.

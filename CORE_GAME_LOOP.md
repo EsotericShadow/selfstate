@@ -427,3 +427,16 @@ The prototype now has a single walkthrough path:
 9. `acceptance_snapshot`
 
 Each row records player action, resident mediation, world evidence, proposal/practice/component/physics links, save links, return links, and boundary flags.
+
+## Normal play action rail loop
+
+The player-facing loop now has six normal verbs:
+
+1. `Look`: refresh the primary world-stage readout.
+2. `Ask`: ask the selected resident about schedule/context.
+3. `Support`: offer material support without assigning a job.
+4. `Wait`: let residents/world systems advance.
+5. `Return`: leave and return with continuity.
+6. `Save`: save the current prototype state.
+
+Each action records a row linking player intent to proposal, practice, component, physics, save, and return evidence where available.

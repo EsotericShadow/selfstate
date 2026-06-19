@@ -353,3 +353,18 @@ The walkthrough sequences the current game foundation into one player-facing pat
 - build an acceptance snapshot
 
 The acceptance gate is `first_playable_walkthrough`. This is the first durable receipt that the shell can be played as a coherent path instead of only as individual subsystem buttons.
+
+## Prototype v0 milestone: Normal Play Action Rail
+
+The shell now includes a normal player-facing action rail with six verbs:
+
+- Look
+- Ask
+- Support
+- Wait
+- Return
+- Save
+
+These actions map onto existing systems while preserving resident mediation. The acceptance gate is `normal_play_action_rail`.
+
+This moves the prototype closer to a playable interface: the player no longer needs to understand subsystem names to drive the first playable path.

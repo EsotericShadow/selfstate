@@ -17,6 +17,14 @@
     <section class="layout" aria-label="playable vertical slice">
       <section class="world-panel">
         <canvas id="world" width="1040" height="620" aria-label="browser-local playable world canvas"></canvas>
+        <div class="normal-play-rail" role="group" aria-label="normal play controls">
+          <button data-action="runNormalPlayLook">Look</button>
+          <button data-action="runNormalPlayAsk">Ask</button>
+          <button data-action="runNormalPlaySupport">Support</button>
+          <button data-action="runNormalPlayWait">Wait</button>
+          <button data-action="runNormalPlayReturn">Return</button>
+          <button data-action="runNormalPlaySave">Save</button>
+        </div>
         <div class="quickbar" role="group" aria-label="core controls">
           <button data-action="enterWorld">Enter</button>
           <button data-action="moveNorth">North</button>
@@ -174,6 +182,7 @@
           <button data-action="runPrimaryPlaySurfaceLoop">Stage loop</button>
           <button data-action="runFirstPlayableWalkthrough">First playable</button>
           <button data-action="exportFirstPlayableWalkthrough">Export walkthrough</button>
+          <button data-action="runNormalPlayActionRailLoop">Normal play loop</button>
           <button data-action="runPrototypeQASmoke">Prototype QA</button>
           <button data-action="startPrototypeAutoSim">Start auto sim</button>
           <button data-action="pausePrototypeAutoSim">Pause auto sim</button>
@@ -213,6 +222,10 @@
       <article class="prototype-card">
         <h3>First playable walkthrough</h3>
         <pre id="gamePrototypeWalkthroughOut"></pre>
+      </article>
+      <article class="prototype-card">
+        <h3>Normal play action rail</h3>
+        <pre id="gamePrototypeActionRailOut"></pre>
       </article>
       <article class="prototype-card">
         <h3>Nearby action</h3>

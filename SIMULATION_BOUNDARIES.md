@@ -135,3 +135,7 @@ The canvas may show audit-linked IDs only as normal-view summaries, not as resid
 The first playable walkthrough is a browser-local receipt. It sequences existing systems; it does not add new world law, new consciousness claims, new tech-tree logic, or direct job assignment.
 
 The walkthrough must remain honest: if proposal, practice, component, physics, save, or return evidence is missing, the receipt should show that gap instead of pretending the game is complete.
+
+## Boundary: Normal Play Action Rail
+
+The normal action rail is a player-interface simplification. It must not erase resident autonomy, hide missing evidence, expose hidden laws, or install correct concepts. It maps simple player verbs to existing causal systems and receipts.

@@ -217,3 +217,11 @@
 - Confirm support is recorded as conditions support, not direct resident command.
 - Use `Export walkthrough` and confirm a downloadable walkthrough receipt is prepared.
 - Export acceptance and confirm `first_playable_walkthrough` appears as a passing requirement after the walkthrough runs.
+
+## Normal play action rail playtests
+
+- Use Look, Ask, Support, Wait, Return, and Save from the normal action rail.
+- Confirm each action creates a row in the `Normal play action rail` card.
+- Confirm Support is recorded as condition support, not direct job assignment.
+- Confirm Save links to a prototype save slot after the normal action flow.
+- Export acceptance and confirm `normal_play_action_rail` appears as a passing requirement after all six verbs run.

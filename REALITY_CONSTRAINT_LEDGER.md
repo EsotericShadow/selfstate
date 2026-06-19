@@ -266,3 +266,7 @@ The primary play surface records `primary_play_surface` as a ledger event. The e
 ## First playable walkthrough ledger event
 
 The walkthrough records `first_playable_walkthrough` as a causal ledger event. It is a sequencing receipt over existing systems, not a source of new material, new knowledge, or a forced resident command.
+
+## Normal play action rail ledger event
+
+The normal action rail records `normal_play_action_rail` ledger rows. The rail does not spawn resources or command residents; it maps simple player verbs to existing causal systems and keeps hidden laws out of normal view.

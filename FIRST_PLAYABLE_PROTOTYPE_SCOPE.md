@@ -207,3 +207,18 @@ Required evidence:
 - no tech-tree unlock
 
 This is the first single-receipt proof that the prototype has a coherent playable path.
+
+## Added scope gate: Normal Play Action Rail
+
+`normal_play_action_rail` is now part of first playable prototype scope.
+
+Required evidence:
+
+- all six normal verbs used at least once
+- options shown in player language
+- action rows remain non-commanding
+- hidden law is not exposed in normal view
+- actions link to proposal/practice/component/physics/save/return evidence when available
+- no tech-tree unlock
+
+This is the main player-facing control layer for the first playable shell.

@@ -72,3 +72,17 @@ Prototype v0 includes a minimal resource-stock subsystem:
 - save/return and acceptance counters for stock steps, resource transformations, losses, and gains
 
 This replaces pure resource-counter behavior with causal stock pressure while preserving simple player readability.
+
+## Included prototype physics layer: thermal/fire
+
+Prototype v0 includes a minimal thermal/fire subsystem:
+
+- watched heat nodes and warm surfaces
+- fuel consumption and ash/smoke state
+- ventilation, moisture, heat transfer, drying, and material burn risk
+- stochastic ignition rows that remain recoverable
+- resident comfort/safety effects
+- safety proposals for smoke or heat risk
+- save/return and acceptance counters for heat, fuel, smoke, ignition, and safety rows
+
+This is bounded utility physics, not disaster spectacle.

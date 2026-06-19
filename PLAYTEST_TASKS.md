@@ -133,3 +133,11 @@
 72. Change village state with `End day`, `Body loop`, or `Terrain loop`, then use `Resource physics` and confirm weather/field/fatigue terms affect stock changes.
 73. Save and return after resource physics, then confirm saved slot summaries preserve resource-stock, loss, and gain counts.
 74. Export acceptance and confirm `resource_stock_physics` is part of the prototype acceptance requirements.
+
+## Thermal/fire physics playtests
+
+75. Use `Thermal physics` and confirm heat, fuel, smoke, containment, ventilation, and hidden-law boundary evidence appear.
+76. Use `Thermal loop` and confirm repeated heat steps create fuel rows, smoke rows, and bounded safety rows if risk rises.
+77. Use `End day` and confirm the day-cycle row includes a thermal step alongside weather, terrain, and resources.
+78. Save and return after thermal physics, then confirm saved slot summaries preserve heat, smoke, and safety counts.
+79. Export acceptance and confirm `thermal_fire_physics` is part of the prototype acceptance requirements.

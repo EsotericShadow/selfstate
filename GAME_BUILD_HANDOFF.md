@@ -247,3 +247,11 @@ Village resources now have a browser-local stochastic stock model. Water, fiber,
 Game-build consequence: resources are no longer just counters. Weather, terrain field state, vessel damage, resident fatigue, trust/rest, storage limits, and stochastic pressure can change stocks and constrain projects.
 
 Boundary: care is modeled as embodied attention/recovery capacity, not a physical commodity. It still obeys time, fatigue, rest, trust, and bounded recovery constraints.
+
+## Prototype v0 thermal/fire physics update
+
+The prototype now has bounded thermal/fire physics. Watched heat sources track fuel, heat, ash, smoke, containment, ventilation, heat transfer by distance, material flammability, moisture, stochastic ignition risk, resident comfort/safety effects, and recoverable safety proposals.
+
+Game-build consequence: warmth, drying, smoke, and bounded hazard are causal simulation state. Fire does not appear without fuel, heat, and air-like exposure; smoke creates care and safety work rather than spectacle.
+
+Boundary: this is not a disaster/combat branch. Hazards must remain bounded, recoverable, inspectable, and tied to fuel, material, resident, and safety ledgers.

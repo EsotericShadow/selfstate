@@ -85,3 +85,7 @@ Normal player view should show outcomes, resident terms, and imperfect glosses. 
 Resources should be treated as stored stocks, not free counters. The prototype can still show simple numbers for readability, but every stock change should be explainable through source, use, storage condition, decay, weather, fatigue, rest, trust, or stochastic field pressure.
 
 Care is not material. It is an embodied/social capacity proxy and must remain bounded by resident fatigue, recovery, trust, and time.
+
+## Thermal/fire physics boundary
+
+Thermal simulation should support warmth, drying, smoke, bounded ignition risk, resident comfort, and safety work. It must not become spectacle, combat, or unrecoverable disaster. Every heat or smoke effect needs fuel, material, air-like exposure, moisture, distance, time, and a causal ledger row.

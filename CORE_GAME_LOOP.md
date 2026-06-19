@@ -325,3 +325,11 @@ Resource changes now follow:
 external gameplay use/source -> stock sync -> weather/terrain/body field read -> storage loss or recovery -> world resource counter update -> causal ledger row -> project/commons consequences.
 
 This keeps village resources causal. Water can evaporate or leak; fiber and wood can decay; care recovers or strains through bodies, fatigue, trust, and rest.
+
+## Thermal/fire physics loop
+
+Thermal changes now follow:
+
+fuel/heat source -> ventilation and moisture check -> heat transfer to nearby components -> drying or damage -> smoke/ignition risk -> resident comfort or safety pressure -> safety proposal if needed -> causal ledger row.
+
+The loop supports useful warmth and drying while preserving the rule that fire requires fuel, heat, air-like exposure, material properties, time, and recovery paths.

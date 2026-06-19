@@ -2196,3 +2196,5 @@ The prototype also includes resident material handling: residents can carry, dro
 The active game-prototype branch is physics-first. The browser shell now models terrain, 3D materials, resident bodies, tools, work, project construction, save/return, and deep-time consequences as stochastic causal systems. Visuals remain basic, but the simulation should avoid sticker-map shortcuts, fixed building assets, instant tech unlocks, or resource-free repair.
 
 The prototype also now includes resource-stock physics: water, fiber, wood, and care/attention have stock ledgers, storage pressure, stochastic loss/gain rows, and save/acceptance evidence.
+
+Thermal/fire physics is now part of Prototype v0: watched heat sources consume fuel, transfer heat, dry or damage materials, produce smoke rows, affect resident safety/comfort, and create bounded safety proposals when needed.

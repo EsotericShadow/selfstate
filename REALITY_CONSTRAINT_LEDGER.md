@@ -161,3 +161,15 @@ Resource stock work must satisfy:
 - no hidden-law exposure in normal player view
 
 Ledger rows now include `resource_stock_physics`, with stock before/after quantities, weather, field values, causal terms, stochastic term, loss/gain rows, conservation flags, and resident-facing interpretation.
+
+## Thermal/fire physics ledger rows
+
+Thermal work must satisfy:
+
+- no fire without fuel, heat, and air-like exposure
+- no heat transfer without distance, material, and field terms
+- no smoke without fuel/moisture/ventilation terms
+- no hazard without a recoverable safety path
+- no hidden-law exposure in normal player view
+
+Ledger rows now include `thermal_fire_physics`, with fuel use, heat transfer, smoke rows, ignition risk, resident comfort/safety effects, safety proposal links, conservation flags, and resident-facing interpretation.

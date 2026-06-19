@@ -1,0 +1,33 @@
+seed,choice_id,resident,action,source_belief_id,effect,bounded_refusal_allowed,ordinary_affordance,direct_avatar_command
+36217,36217-CHO-01,Fay,askSchedule,36217-BEL-004,archiving failed smoke-bound/quiet-doubt,False,True,False
+36217,36217-CHO-02,Milo,offerHelp,36217-BEL-005,arguing rival theory quiet-doubt/fiber-rise,False,True,False
+36217,36217-CHO-03,Sera,askSchedule,36217-BEL-006,archiving failed fiber-rise/bench-tool-anger,False,True,False
+36217,36217-CHO-04,Tovan,offerHelp,36217-BEL-007,bench practice for bench-tool-anger/route-fiber-rise,False,True,False
+36231,36231-CHO-01,Sera,askSchedule,36231-BEL-004,archiving failed missing-repeat/quiet-doubt,False,True,False
+36231,36231-CHO-02,Tovan,offerHelp,36231-BEL-005,arguing rival theory quiet-doubt/red-call,False,True,False
+36231,36231-CHO-03,Nia,askSchedule,36231-BEL-006,archiving failed red-call/roof-tool-anger,True,True,False
+36231,36231-CHO-04,Ari,offerHelp,36231-BEL-007,archiving failed roof-tool-anger/route-quiet-doubt,False,True,False
+36247,36247-CHO-01,Fay,askSchedule,36247-BEL-004,safety custom for grain pull/water-hush,True,True,False
+36247,36247-CHO-02,Milo,offerHelp,36247-BEL-005,safety custom for water-hush/rain-fail,True,True,False
+36247,36247-CHO-03,Sera,askSchedule,36247-BEL-006,safety custom for rain-fail/jar-rub-sign,True,True,False
+36247,36247-CHO-04,Tovan,offerHelp,36247-BEL-007,safety custom for jar-rub-sign/school-rub-sign,True,True,False
+36263,36263-CHO-01,Nia,askSchedule,36263-BEL-004,arguing rival theory quiet sting/quiet-doubt,False,True,False
+36263,36263-CHO-02,Ari,offerHelp,36263-BEL-005,archiving failed quiet-doubt/ash-fear,False,True,False
+36263,36263-CHO-03,Fay,askSchedule,36263-BEL-006,archiving failed ash-fear/jar-quiet-doubt,False,True,False
+36263,36263-CHO-04,Milo,offerHelp,36263-BEL-007,archiving failed jar-quiet-doubt/roof-quiet-doubt,False,True,False
+36281,36281-CHO-01,Nia,askSchedule,36281-BEL-004,arguing rival theory edge-shame/quiet-doubt,False,True,False
+36281,36281-CHO-02,Ari,offerHelp,36281-BEL-005,teaching lineage quiet-doubt/dry-jump,False,True,False
+36281,36281-CHO-03,Fay,askSchedule,36281-BEL-006,bench practice for dry-jump/school-dark-crawl,False,True,False
+36281,36281-CHO-04,Milo,offerHelp,36281-BEL-007,teaching lineage school-dark-crawl/school-dark-crawl,False,True,False
+36307,36307-CHO-01,Fay,askSchedule,36307-BEL-004,arguing rival theory safe-gap/half-sign,False,True,False
+36307,36307-CHO-02,Milo,offerHelp,36307-BEL-005,archiving failed half-sign/half-sign,False,True,False
+36307,36307-CHO-03,Sera,askSchedule,36307-BEL-006,arguing rival theory half-sign/jar-rub-sign,False,True,False
+36307,36307-CHO-04,Tovan,offerHelp,36307-BEL-007,bench practice for jar-rub-sign/route-red-call,False,True,False
+36319,36319-CHO-01,Fay,askSchedule,36319-BEL-004,bench practice for fiber-rise/edge-shame,True,True,False
+36319,36319-CHO-02,Milo,offerHelp,36319-BEL-005,arguing rival theory edge-shame/missing-repeat,False,True,False
+36319,36319-CHO-03,Sera,askSchedule,36319-BEL-006,arguing rival theory missing-repeat/route-half-sign,False,True,False
+36319,36319-CHO-04,Tovan,offerHelp,36319-BEL-007,archiving failed route-half-sign/roof-ash-fear,True,True,False
+36343,36343-CHO-01,Fay,askSchedule,36343-BEL-004,archiving failed smoke-bound/tool-anger,False,True,False
+36343,36343-CHO-02,Milo,offerHelp,36343-BEL-005,archiving failed tool-anger/ash-fear,False,True,False
+36343,36343-CHO-03,Sera,askSchedule,36343-BEL-006,arguing rival theory ash-fear/bench-fiber-rise,False,True,False
+36343,36343-CHO-04,Tovan,offerHelp,36343-BEL-007,arguing rival theory bench-fiber-rise/roof-red-call,False,True,False

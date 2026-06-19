@@ -1,0 +1,24 @@
+seed,custom_id,resident,source_belief_id,custom,refusal_allowed,recovery_path,archived_failure_preserved,direct_avatar_command
+36217,36217-SAF-01,Tovan,36217-BEL-001,ask before repeating herb-jump/half-sign,True,teach safe boundary then retry,True,False
+36217,36217-SAF-02,Nia,36217-BEL-003,ask before repeating dry-jump/smoke-bound,True,teach safe boundary then retry,True,False
+36217,36217-SAF-03,Ari,36217-BEL-004,ask before repeating smoke-bound/quiet-doubt,True,teach safe boundary then retry,True,False
+36231,36231-SAF-01,Ari,36231-BEL-002,ask before repeating quiet sting/quiet-doubt,True,teach safe boundary then retry,True,False
+36231,36231-SAF-02,Fay,36231-BEL-003,ask before repeating jar omen/missing-repeat,True,teach safe boundary then retry,True,False
+36231,36231-SAF-03,Milo,36231-BEL-004,ask before repeating missing-repeat/quiet-doubt,True,teach safe boundary then retry,True,False
+36247,36247-SAF-01,Tovan,36247-BEL-001,ask before repeating jar omen/half-sign,True,teach safe boundary then retry,True,False
+36247,36247-SAF-02,Nia,36247-BEL-002,ask before repeating half-sign/ash-fear,True,teach safe boundary then retry,True,False
+36247,36247-SAF-03,Ari,36247-BEL-003,ask before repeating safe-gap/ash-fear,True,teach safe boundary then retry,True,False
+36263,36263-SAF-01,Milo,36263-BEL-001,ask before repeating glass sleep/missing-repeat,True,teach safe boundary then retry,True,False
+36263,36263-SAF-02,Sera,36263-BEL-004,ask before repeating quiet sting/quiet-doubt,True,teach safe boundary then retry,True,False
+36263,36263-SAF-03,Tovan,36263-BEL-005,ask before repeating quiet-doubt/ash-fear,True,teach safe boundary then retry,True,False
+36281,36281-SAF-01,Milo,36281-BEL-003,ask before repeating storm crumb/edge-shame,True,teach safe boundary then retry,True,False
+36281,36281-SAF-02,Sera,36281-BEL-004,ask before repeating edge-shame/quiet-doubt,True,teach safe boundary then retry,True,False
+36307,36307-SAF-01,Tovan,36307-BEL-003,ask before repeating handspan bite/missing-repeat,True,teach safe boundary then retry,True,False
+36307,36307-SAF-02,Nia,36307-BEL-004,ask before repeating safe-gap/half-sign,True,teach safe boundary then retry,True,False
+36307,36307-SAF-03,Ari,36307-BEL-005,ask before repeating half-sign/half-sign,True,teach safe boundary then retry,True,False
+36319,36319-SAF-01,Tovan,36319-BEL-004,ask before repeating fiber-rise/edge-shame,True,teach safe boundary then retry,True,False
+36319,36319-SAF-02,Nia,36319-BEL-005,ask before repeating edge-shame/missing-repeat,True,teach safe boundary then retry,True,False
+36319,36319-SAF-03,Ari,36319-BEL-006,ask before repeating missing-repeat/route-half-sign,True,teach safe boundary then retry,True,False
+36343,36343-SAF-01,Tovan,36343-BEL-003,ask before repeating grain-follow/smoke-bound,True,teach safe boundary then retry,True,False
+36343,36343-SAF-02,Nia,36343-BEL-004,ask before repeating smoke-bound/tool-anger,True,teach safe boundary then retry,True,False
+36343,36343-SAF-03,Ari,36343-BEL-005,ask before repeating tool-anger/ash-fear,True,teach safe boundary then retry,True,False

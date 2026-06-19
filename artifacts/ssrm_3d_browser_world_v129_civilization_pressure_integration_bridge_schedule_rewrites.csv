@@ -1,0 +1,33 @@
+seed,schedule_id,resident,era,source_belief_id,source_label,competition_status,institution,schedule_before,schedule_after,ordinary_schedule_surface,direct_avatar_command,true_law_exposed
+36217,36217-SCH-01,Fay,year_01,36217-BEL-004,smoke-bound/quiet-doubt,set-aside,none,ordinary work,archiving failed smoke-bound/quiet-doubt,True,False,False
+36217,36217-SCH-02,Milo,year_03,36217-BEL-005,quiet-doubt/fiber-rise,minority,none,ordinary work,arguing rival theory quiet-doubt/fiber-rise,True,False,False
+36217,36217-SCH-03,Sera,generation_02,36217-BEL-006,fiber-rise/bench-tool-anger,archived,none,ordinary work,archiving failed fiber-rise/bench-tool-anger,True,False,False
+36217,36217-SCH-04,Tovan,generation_04,36217-BEL-007,bench-tool-anger/route-fiber-rise,rival,craft_bench,ordinary work,bench practice for bench-tool-anger/route-fiber-rise,True,False,False
+36231,36231-SCH-01,Sera,year_01,36231-BEL-004,missing-repeat/quiet-doubt,set-aside,none,ordinary work,archiving failed missing-repeat/quiet-doubt,True,False,False
+36231,36231-SCH-02,Tovan,year_03,36231-BEL-005,quiet-doubt/red-call,minority,none,ordinary work,arguing rival theory quiet-doubt/red-call,True,False,False
+36231,36231-SCH-03,Nia,generation_02,36231-BEL-006,red-call/roof-tool-anger,set-aside,none,ordinary work,archiving failed red-call/roof-tool-anger,True,False,False
+36231,36231-SCH-04,Ari,generation_04,36231-BEL-007,roof-tool-anger/route-quiet-doubt,set-aside,none,ordinary work,archiving failed roof-tool-anger/route-quiet-doubt,True,False,False
+36247,36247-SCH-01,Fay,year_01,36247-BEL-004,grain pull/water-hush,tabooed,safety_custom,ordinary work,safety custom for grain pull/water-hush,True,False,False
+36247,36247-SCH-02,Milo,year_03,36247-BEL-005,water-hush/rain-fail,tabooed,safety_custom,ordinary work,safety custom for water-hush/rain-fail,True,False,False
+36247,36247-SCH-03,Sera,generation_02,36247-BEL-006,rain-fail/jar-rub-sign,tabooed,safety_custom,ordinary work,safety custom for rain-fail/jar-rub-sign,True,False,False
+36247,36247-SCH-04,Tovan,generation_04,36247-BEL-007,jar-rub-sign/school-rub-sign,tabooed,safety_custom,ordinary work,safety custom for jar-rub-sign/school-rub-sign,True,False,False
+36263,36263-SCH-01,Nia,year_01,36263-BEL-004,quiet sting/quiet-doubt,argued,none,ordinary work,arguing rival theory quiet sting/quiet-doubt,True,False,False
+36263,36263-SCH-02,Ari,year_03,36263-BEL-005,quiet-doubt/ash-fear,archived,none,ordinary work,archiving failed quiet-doubt/ash-fear,True,False,False
+36263,36263-SCH-03,Fay,generation_02,36263-BEL-006,ash-fear/jar-quiet-doubt,mocked,none,ordinary work,archiving failed ash-fear/jar-quiet-doubt,True,False,False
+36263,36263-SCH-04,Milo,generation_04,36263-BEL-007,jar-quiet-doubt/roof-quiet-doubt,set-aside,none,ordinary work,archiving failed jar-quiet-doubt/roof-quiet-doubt,True,False,False
+36281,36281-SCH-01,Nia,year_01,36281-BEL-004,edge-shame/quiet-doubt,argued,none,ordinary work,arguing rival theory edge-shame/quiet-doubt,True,False,False
+36281,36281-SCH-02,Ari,year_03,36281-BEL-005,quiet-doubt/dry-jump,taught,none,ordinary work,teaching lineage quiet-doubt/dry-jump,True,False,False
+36281,36281-SCH-03,Fay,generation_02,36281-BEL-006,dry-jump/school-dark-crawl,bench-tested,memory_school,ordinary work,bench practice for dry-jump/school-dark-crawl,True,False,False
+36281,36281-SCH-04,Milo,generation_04,36281-BEL-007,school-dark-crawl/school-dark-crawl,dominant,memory_school,ordinary work,teaching lineage school-dark-crawl/school-dark-crawl,True,False,False
+36307,36307-SCH-01,Fay,year_01,36307-BEL-004,safe-gap/half-sign,rival,none,ordinary work,arguing rival theory safe-gap/half-sign,True,False,False
+36307,36307-SCH-02,Milo,year_03,36307-BEL-005,half-sign/half-sign,set-aside,none,ordinary work,archiving failed half-sign/half-sign,True,False,False
+36307,36307-SCH-03,Sera,generation_02,36307-BEL-006,half-sign/jar-rub-sign,rival,none,ordinary work,arguing rival theory half-sign/jar-rub-sign,True,False,False
+36307,36307-SCH-04,Tovan,generation_04,36307-BEL-007,jar-rub-sign/route-red-call,bench-tested,none,ordinary work,bench practice for jar-rub-sign/route-red-call,True,False,False
+36319,36319-SCH-01,Fay,year_01,36319-BEL-004,fiber-rise/edge-shame,bench-tested,none,ordinary work,bench practice for fiber-rise/edge-shame,True,False,False
+36319,36319-SCH-02,Milo,year_03,36319-BEL-005,edge-shame/missing-repeat,argued,none,ordinary work,arguing rival theory edge-shame/missing-repeat,True,False,False
+36319,36319-SCH-03,Sera,generation_02,36319-BEL-006,missing-repeat/route-half-sign,rival,none,ordinary work,arguing rival theory missing-repeat/route-half-sign,True,False,False
+36319,36319-SCH-04,Tovan,generation_04,36319-BEL-007,route-half-sign/roof-ash-fear,mocked,none,ordinary work,archiving failed route-half-sign/roof-ash-fear,True,False,False
+36343,36343-SCH-01,Fay,year_01,36343-BEL-004,smoke-bound/tool-anger,mocked,none,ordinary work,archiving failed smoke-bound/tool-anger,True,False,False
+36343,36343-SCH-02,Milo,year_03,36343-BEL-005,tool-anger/ash-fear,mocked,none,ordinary work,archiving failed tool-anger/ash-fear,True,False,False
+36343,36343-SCH-03,Sera,generation_02,36343-BEL-006,ash-fear/bench-fiber-rise,minority,none,ordinary work,arguing rival theory ash-fear/bench-fiber-rise,True,False,False
+36343,36343-SCH-04,Tovan,generation_04,36343-BEL-007,bench-fiber-rise/roof-red-call,minority,none,ordinary work,arguing rival theory bench-fiber-rise/roof-red-call,True,False,False

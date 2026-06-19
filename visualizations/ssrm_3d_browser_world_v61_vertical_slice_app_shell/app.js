@@ -45,7 +45,7 @@ const receiptFieldIds = ['entry_and_movement', 'schedule_visibility', 'debt_cons
 
 const qaManifest = {
   stateKeys: [STATE_KEY, REPLAY_KEY, QA_KEY, EXPORT_KEY, SAVE_SNAPSHOT_KEY, CHECKPOINT_KEY, HISTORY_KEY, RELATION_KEY, RECEIPT_OBSERVATION_KEY, OBSERVATION_FILTER_KEY],
-  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
+  publicState: ['avatar', 'selected', 'residents', 'resources', 'replay', 'returnContinuity', 'returnGreetingContinuity', 'accountabilitySocialEcho', 'boundedEchoConversation', 'echoInfluencedChoiceReceipt', 'anomalyDiscovery', 'anomalyInvestigationSchedule', 'stochasticConsequencePulse', 'stochasticRecoveryLoop', 'stochasticHistoryInfluence', 'stochasticOrdinaryAffordance', 'civilizationPressure', 'promiseFollowUp', 'obligationLedger', 'scheduleQueue', 'debtLedger', 'offscreenObligationEvents', 'absentTimeSummary', 'absentTimeThreads', 'absentTimeChoiceReceipt', 'avatarAbsenceAccountabilityReceipt'],
   forbiddenPublicState: ['privateWorkspace', 'subjectiveFeeling', 'llmTranscript'],
   boundary: BOUNDARY,
   directHooks: ['runPlaytestChecklist', 'runStateBoundaryAudit', 'runSaveRestoreSmoke', 'runAuditAfterRollbackCheck', 'runAllQAHooks', 'toggleAudit', 'exportReplay']
@@ -76,6 +76,7 @@ let world = JSON.parse(localStorage.getItem(STATE_KEY) || JSON.stringify({
   stochasticRecoveryLoop: null,
   stochasticHistoryInfluence: null,
   stochasticOrdinaryAffordance: null,
+  civilizationPressure: null,
   promiseFollowUp: null,
   obligationLedger: [],
   scheduleQueue: [],
@@ -1983,6 +1984,7 @@ function runStateBoundaryAudit() {
     stochasticRecoveryLoop: world.stochasticRecoveryLoop,
     stochasticHistoryInfluence: world.stochasticHistoryInfluence,
     stochasticOrdinaryAffordance: world.stochasticOrdinaryAffordance,
+    civilizationPressure: world.civilizationPressure,
     promiseFollowUp: world.promiseFollowUp,
     obligationLedger: world.obligationLedger,
     scheduleQueue: world.scheduleQueue,
@@ -2671,7 +2673,9 @@ function describeReplayRow(row) {
     runStochasticHistoryChoice: `stochastic history choice ${payload.choice ? payload.choice.decision : ''}`,
     runStochasticHistorySocialEcho: `stochastic history echo ${payload.echo ? payload.echo.from : ''}->${payload.echo ? payload.echo.to : ''}`,
     runStochasticHistoryInfluenceLoop: `stochastic history influence choices=${payload.choices ? payload.choices.length : 0} echo=${payload.echo}`,
-    runOrdinaryAffordanceInfluenceLoop: `ordinary affordance influence actions=${payload.actionsAdded} blocked=${payload.blockedCount}`
+    runOrdinaryAffordanceInfluenceLoop: `ordinary affordance influence actions=${payload.actionsAdded} blocked=${payload.blockedCount}`,
+    runCivilizationPressureStep: `civilization pressure ${payload.pressureType} resident=${payload.resident} schedule=${payload.schedule}`,
+    runCivilizationPressureLoop: `civilization pressure loop steps=${payload.stepsAdded} schedules=${payload.scheduleRewrites}`
   };
   return `${prefix}: ${descriptions[row.event] || row.event}`;
 }
@@ -2728,6 +2732,7 @@ function render() {
   renderStochasticRecoveryLoop();
   renderStochasticHistoryInfluence();
   renderStochasticOrdinaryAffordance();
+  renderCivilizationPressure();
   draw();
 }
 function draw() {
@@ -2756,6 +2761,149 @@ function draw() {
   ctx.fillStyle = '#f9ebc9'; ctx.fillText('Boundary visible: deterministic prototype only; no consciousness or LLM claim.', 32, canvas.height - 24);
 }
 
-Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
+function ensureCivilizationPressure() {
+  if (!world.anomalyDiscovery) introduceWorldAnomaly();
+  if (!world.anomalyInvestigationSchedule) planAnomalyInvestigationSchedule();
+  if (!world.civilizationPressure) {
+    world.civilizationPressure = {
+      reportIntroduced: 369,
+      boundary: 'browser-local-civilization-pressure-only; no LLM call, no subjective consciousness, no moral patienthood, no predeclared device tree',
+      lineagePolicy: 'belief lineage can rewrite ordinary schedules, apprenticeships, trade routes, safety customs, and later resident choices while preserving source belief IDs',
+      scheduleRewrites: [],
+      apprenticeships: [],
+      tradeRoutes: [],
+      safetyCustoms: [],
+      ordinaryChoiceEffects: [],
+      pressureLedger: [],
+      sourceLedger: []
+    };
+  }
+  return world.civilizationPressure;
+}
+
+function civilizationBeliefEntries() {
+  if (!world.anomalyDiscovery) introduceWorldAnomaly();
+  const entries = Object.entries(world.anomalyDiscovery.residentBeliefs || {});
+  if (entries.length >= 4) return entries;
+  while (Object.keys(world.anomalyDiscovery.residentBeliefs || {}).length < 4) spreadAnomalyBelief();
+  return Object.entries(world.anomalyDiscovery.residentBeliefs || {});
+}
+
+function civilizationPressureType(index, belief) {
+  const cycle = ['schedule_rewrite', 'apprenticeship', 'trade_route', 'safety_custom'];
+  if (belief && (belief.contradictionCount > 1 || belief.kind === 'fearful')) return 'safety_custom';
+  return cycle[index % cycle.length];
+}
+
+function scheduleTextForCivilizationPressure(type, belief) {
+  const label = belief ? belief.label : 'unsettled sign';
+  if (type === 'apprenticeship') return `teaching ${label}`;
+  if (type === 'trade_route') return `hauling material for ${label}`;
+  if (type === 'safety_custom') return `checking safe boundary for ${label}`;
+  return `arguing schedule around ${label}`;
+}
+
+function runCivilizationPressureStep() {
+  const pressure = ensureCivilizationPressure();
+  const entries = civilizationBeliefEntries();
+  const index = pressure.pressureLedger.length;
+  const [resident, belief] = entries[index % entries.length];
+  const schedule = world.anomalyInvestigationSchedule;
+  const slot = schedule && Array.isArray(schedule.slots) ? schedule.slots.find(item => item.resident === resident) || schedule.slots[index % schedule.slots.length] : null;
+  const pressureType = civilizationPressureType(index, belief);
+  const newSchedule = scheduleTextForCivilizationPressure(pressureType, belief);
+  const sourceBeliefId = `${resident}:${belief.label}`;
+  const row = {
+    id: `CIV-${String(index + 1).padStart(2, '0')}`,
+    tick: world.tick,
+    resident,
+    pressureType,
+    sourceBeliefId,
+    sourceBeliefLabel: belief.label,
+    sourceBeliefKind: belief.kind,
+    sourceSlotId: slot ? slot.id : 'none',
+    scheduleBefore: world.residents[resident].schedule,
+    scheduleAfter: newSchedule,
+    directAvatarCommand: false,
+    trueLawExposed: false,
+    ordinarySurface: true
+  };
+  world.residents[resident].schedule = newSchedule;
+  world.scheduleQueue.push({ id: row.id, resident, task: newSchedule, status: 'civilization_pressure', sourceBeliefId, source: 'belief_lineage_pressure', tick: world.tick });
+  pressure.scheduleRewrites.push(row);
+  if (pressureType === 'apprenticeship') {
+    const apprentice = Object.keys(world.residents)[(Object.keys(world.residents).indexOf(resident) + 1) % Object.keys(world.residents).length];
+    pressure.apprenticeships.push({ id: row.id, mentor: resident, apprentice, sourceBeliefId, practice: belief.label, ordinaryScheduleChanged: true });
+  }
+  if (pressureType === 'trade_route') {
+    const before = { ...world.resources };
+    world.resources.fiber += 1;
+    world.resources.wood = Math.max(0, world.resources.wood - 1);
+    pressure.tradeRoutes.push({ id: row.id, resident, route: `route for ${belief.label}`, sourceBeliefId, resourcesBefore: before, resourcesAfter: { ...world.resources }, ordinaryResourcesChanged: true });
+  }
+  if (pressureType === 'safety_custom') {
+    pressure.safetyCustoms.push({ id: row.id, resident, custom: `ask before repeating ${belief.label}`, sourceBeliefId, refusalAllowed: true, recoverable: true });
+  }
+  pressure.ordinaryChoiceEffects.push({ id: row.id, resident, action: pressureType === 'safety_custom' ? 'offerHelp_may_refuse' : 'askSchedule_mentions_lineage', sourceBeliefId, scheduleAfter: newSchedule, bounded: true });
+  pressure.sourceLedger.push({ id: row.id, sourceBeliefId, sourceSlotId: row.sourceSlotId, publicResidentKnowledgeOnly: true, hiddenLawExposed: false });
+  pressure.pressureLedger.push(row);
+  mutateResident(resident, { progress: 0.008, trust: pressureType === 'safety_custom' ? 0.001 : 0.004, memory: `civilization pressure from ${belief.label}: ${newSchedule}`, historyEvent: 'civilization pressure', historyDetail: `${pressureType} from ${sourceBeliefId}` });
+  recordCheckpoint('civilization pressure applied');
+  return log('runCivilizationPressureStep', { pressureType, resident, sourceBeliefId, schedule: newSchedule, sourceSlotId: row.sourceSlotId, ordinarySurface: true });
+}
+
+function runCivilizationPressureLoop() {
+  const pressure = ensureCivilizationPressure();
+  const before = pressure.pressureLedger.length;
+  for (let i = 0; i < 4; i += 1) runCivilizationPressureStep();
+  const after = pressure.pressureLedger.length;
+  return log('runCivilizationPressureLoop', {
+    stepsAdded: after - before,
+    scheduleRewrites: pressure.scheduleRewrites.length,
+    apprenticeships: pressure.apprenticeships.length,
+    tradeRoutes: pressure.tradeRoutes.length,
+    safetyCustoms: pressure.safetyCustoms.length,
+    ordinaryChoiceEffects: pressure.ordinaryChoiceEffects.length,
+    sourceLedger: pressure.sourceLedger.length,
+    boundary: pressure.boundary
+  });
+}
+
+function renderCivilizationPressure() {
+  const summaryNode = document.getElementById('civilizationPressureSummaryOut');
+  const detailNode = document.getElementById('civilizationPressureOut');
+  const pressure = world.civilizationPressure;
+  if (summaryNode) {
+    summaryNode.textContent = pressure
+      ? `${pressure.scheduleRewrites.length} schedules / ${pressure.apprenticeships.length} apprenticeships / ${pressure.tradeRoutes.length} routes / ${pressure.safetyCustoms.length} safety customs`
+      : 'No civilization pressure yet.';
+  }
+  if (!detailNode) return;
+  if (!pressure) {
+    detailNode.textContent = 'No civilization pressure yet. Run pressure loop after anomaly beliefs exist.';
+    return;
+  }
+  const schedules = pressure.scheduleRewrites.slice(-6).map(row => `${row.id}: ${row.resident} ${row.scheduleBefore} -> ${row.scheduleAfter} from ${row.sourceBeliefLabel}`);
+  const apprenticeships = pressure.apprenticeships.slice(-4).map(row => `${row.id}: ${row.mentor} teaches ${row.apprentice} practice=${row.practice}`);
+  const routes = pressure.tradeRoutes.slice(-4).map(row => `${row.id}: ${row.route} resources ${JSON.stringify(row.resourcesBefore)} -> ${JSON.stringify(row.resourcesAfter)}`);
+  const safety = pressure.safetyCustoms.slice(-4).map(row => `${row.id}: ${row.resident} custom=${row.custom} refusalAllowed=${row.refusalAllowed}`);
+  const choices = pressure.ordinaryChoiceEffects.slice(-6).map(row => `${row.id}: ${row.action} for ${row.resident} source=${row.sourceBeliefId}`);
+  detailNode.textContent = [
+    `Boundary: ${pressure.boundary}`,
+    `Policy: ${pressure.lineagePolicy}`,
+    'Schedule rewrites:',
+    ...(schedules.length ? schedules : ['none']),
+    'Apprenticeships:',
+    ...(apprenticeships.length ? apprenticeships : ['none']),
+    'Trade routes:',
+    ...(routes.length ? routes : ['none']),
+    'Safety customs:',
+    ...(safety.length ? safety : ['none']),
+    'Ordinary choice effects:',
+    ...(choices.length ? choices : ['none'])
+  ].join('\n');
+}
+
+Object.assign(window, { enterWorld, moveNorth, moveSouth, moveWest, moveEast, talkBounded, askSchedule, offerHelp, borrowTool, returnTool, waitOffscreen, introduceWorldAnomaly, runAnomalyExperiment, spreadAnomalyBelief, planAnomalyInvestigationSchedule, runScheduledAnomalyInvestigation, runStochasticConsequencePulse, runStochasticConsequenceBurst, planStochasticRecoveryLoop, resolveStochasticRecoveryStep, runStochasticRecoveryLoop, runStochasticHistoryChoice, runStochasticHistorySocialEcho, runStochasticHistoryInfluenceLoop, runOrdinaryAffordanceInfluenceLoop, runCivilizationPressureStep, runCivilizationPressureLoop, repairTrust, saveWorld, restoreWorld, toggleAudit, exportReplay, runPlaytestChecklist, runStateBoundaryAudit, runSaveRestoreSmoke, runAuditAfterRollbackCheck, runAllQAHooks, runDashboardResidentAction, interruptWork, apologizeToResident, giveSpace, completeTrustRepair, runContinuityLoop, runSocialMemoryPulse, settleSelectedRelationship, generateScenarioReceipt, logReceiptObservation, resolveLatestObservation, setObservationFilter, setObservationFilterAll, setObservationFilterOpen, setObservationFilterWatch, setObservationFilterResolved, setObservationFilterBlocking, auditLandingFailures, toggleDeepPanels, runReviewerLandingPass });
 bindControls();
 render();

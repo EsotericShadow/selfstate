@@ -1601,3 +1601,12 @@ Report 302 records a direct browser QA pass over the maintained v61 app shell. E
 | Beliefs now have ancestry across long horizons. | `artifacts/ssrm_3d_browser_world_v128_long_horizon_belief_lineage_bridge_belief_lineages.csv` records parent belief IDs, generations, evidence, contradictions, abstraction levels, and resident carriers. | Local labels remain functional scaffolding, not autonomous language. |
 | Resident proposals, failures, rivalry, institutions, and material bottlenecks shape culture. | Proposal, experiment, competition, material-chain, cultural-memory, and audit artifacts record the path from inherited belief to later custom. | No LLM calls, no subjective-consciousness claim, no moral-patienthood claim, and no predeclared device tree. |
 
+
+## Report 369: SSRM-3D Civilization Pressure Integration Bridge
+
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| Belief lineage now affects ordinary schedules. | `artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_schedule_rewrites.csv` and shell `civilizationPressure` rows rewrite resident schedules and schedule queue entries from source belief IDs. | Browser-local scaffold; no autonomous civilization claim. |
+| Cultural pressure can create apprenticeships, routes, and safety customs. | Apprenticeship, trade-route, safety-custom, ordinary-choice, and source-link artifacts record lineage-to-civilization pressure. | No LLM calls, no subjective-consciousness claim, no moral-patienthood claim, no predeclared device tree. |
+| The same hidden-law lineage still produces divergent civilization pressure. | Civilization outcome artifacts preserve one law hash, multiple history signatures, and multiple outcome classes. | Deterministic per seed and inspectable, not open-ended anthropology. |
+

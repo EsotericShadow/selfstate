@@ -1,0 +1,16 @@
+seed,apprenticeship_id,mentor,apprentice,source_belief_id,practice,institution,schedule_changed,predeclared_device
+36217,36217-APP-01,Fay,Milo,36217-BEL-007,bench-tool-anger/route-fiber-rise,craft_bench,True,False
+36231,36231-APP-01,Sera,Tovan,36231-BEL-006,red-call/roof-tool-anger,informal_teaching,True,False
+36231,36231-APP-02,Tovan,Nia,36231-BEL-007,roof-tool-anger/route-quiet-doubt,informal_teaching,True,False
+36247,36247-APP-01,Fay,Milo,36247-BEL-006,rain-fail/jar-rub-sign,safety_custom,True,False
+36247,36247-APP-02,Milo,Sera,36247-BEL-007,jar-rub-sign/school-rub-sign,safety_custom,True,False
+36263,36263-APP-01,Nia,Ari,36263-BEL-003,dry-jump/fiber-rise,informal_teaching,True,False
+36281,36281-APP-01,Nia,Ari,36281-BEL-002,red-call/dry-jump,informal_teaching,True,False
+36281,36281-APP-02,Ari,Fay,36281-BEL-005,quiet-doubt/dry-jump,informal_teaching,True,False
+36281,36281-APP-03,Fay,Milo,36281-BEL-006,dry-jump/school-dark-crawl,memory_school,True,False
+36307,36307-APP-01,Fay,Milo,36307-BEL-002,smoke warning/fiber-rise,informal_teaching,True,False
+36307,36307-APP-02,Milo,Sera,36307-BEL-007,jar-rub-sign/route-red-call,informal_teaching,True,False
+36319,36319-APP-01,Fay,Milo,36319-BEL-002,rub-sign/dry-jump,informal_teaching,True,False
+36319,36319-APP-02,Milo,Sera,36319-BEL-003,quiet sting/fiber-rise,informal_teaching,True,False
+36319,36319-APP-03,Sera,Tovan,36319-BEL-004,fiber-rise/edge-shame,informal_teaching,True,False
+36343,36343-APP-01,Fay,Milo,36343-BEL-002,dry-path/grain-follow,informal_teaching,True,False

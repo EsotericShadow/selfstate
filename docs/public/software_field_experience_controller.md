@@ -584,3 +584,8 @@ Report 367 keeps the non-scripted discovery line moving by making stochastic his
 
 Report 368 moves the browser-world research line toward a small civilization history rather than another scripted unlock. The same hidden material law is held fixed across seeds while residents inherit and mutate labels, propose tests, preserve failures, compete over theories, create safety customs or institutions, and diverge into different histories over weeks, years, and generations. Boundary remains narrow: deterministic local simulation, inspectable artifacts, no LLM calls, no subjective-consciousness claim, no moral-patienthood claim, and no finished civilization engine.
 
+
+## Report 369 public note: lineage pressure reaches everyday life
+
+Report 369 moves belief lineage out of report-only history and into ordinary browser-world surfaces. Source-traced resident beliefs can now rewrite schedules, create apprenticeships, shift trade/resource routes, establish safety customs, and affect bounded normal choices. This remains a deterministic local simulation scaffold with explicit no-LLM, no subjective-consciousness, no moral-patienthood, and no predeclared-device-tree boundaries.
+

@@ -1327,3 +1327,12 @@ This is still an algorithmic scaffold, not an autonomous civilization. The impro
 
 Next gate: move lineage pressure into everyday browser behavior: scheduling, apprenticeship, trade routes, safety customs, and ordinary resident choices.
 
+
+## Report 369: SSRM-3D Civilization Pressure Integration Bridge
+
+Report 369 integrates Report 368's lineage pressure into ordinary browser-world behavior. Belief descendants and theory competition now map into schedule rewrites, apprenticeships, trade routes, safety customs, source ledgers, and bounded ordinary-choice effects. In the shell this appears as `civilizationPressure`, schedule queue rows, resident schedule changes, resource shifts, replay rows, and a visible pressure panel.
+
+The improvement is not that the world is complete. The improvement is that cultural history now pushes on everyday life: who teaches whom, which materials move, what gets treated as risky, and what a resident is doing right now.
+
+Next gate: make practical discovery emerge from repeated lived browser actions rather than from report artifacts.
+

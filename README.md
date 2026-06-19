@@ -2165,3 +2165,8 @@ Report 367 moves stochastic history influence out of a dedicated panel-only loop
 
 Report 368 shifts the non-scripted anomaly line toward one world, many seeds, and different histories. It keeps one shared hidden-law layer fixed across deterministic seeds, then tracks resident-generated experiment proposals, belief descendants, rival theory status, preserved failures, material bottlenecks, institutions, safety customs, trade shifts, and cultural memory across weeks, months, years, and generations. The point is not another panel or a pre-authored unlock; it is inspectable divergence from the same world law.
 
+
+### Report 369: SSRM-3D Civilization Pressure Integration Bridge
+
+Report 369 makes long-horizon belief lineage affect ordinary civilization surfaces instead of remaining only artifact history. The maintained shell now exposes `civilizationPressure`, where source-traced anomaly beliefs can rewrite resident schedules, create apprenticeships, shift trade/resource routes, establish safety customs, and affect bounded ordinary choices while preserving no-LLM/no-consciousness/no-device-tree boundaries.
+

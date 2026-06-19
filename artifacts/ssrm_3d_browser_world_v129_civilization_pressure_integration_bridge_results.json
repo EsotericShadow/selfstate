@@ -1,0 +1,153 @@
+{
+  "artifacts": {
+    "ablations": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_ablations.csv",
+    "apprenticeships": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_apprenticeships.csv",
+    "civilization_outcomes": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_civilization_outcomes.csv",
+    "ordinary_choice_pressure": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_ordinary_choice_pressure.csv",
+    "safety_customs": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_safety_customs.csv",
+    "schedule_rewrites": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_schedule_rewrites.csv",
+    "source_links": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_source_links.csv",
+    "trade_routes": "artifacts/ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge_trade_routes.csv"
+  },
+  "boundary": "Browser-local civilization-pressure integration only. Long-horizon belief lineage may rewrite ordinary schedules, apprenticeships, trade routes, safety customs, resources, and bounded resident choices while preserving source belief IDs. No LLM call, no subjective-consciousness claim, no moral-patienthood claim, no real civilization claim, and no predeclared device tree.",
+  "criteria": [
+    {
+      "criterion": "report_368_lineage_gate_passing",
+      "evidence": "Report 368 verdict=pass weakest=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "runner_includes_report_369",
+      "evidence": "scripts/run_experiments.py includes Report 369 module",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "artifact_set_written",
+      "evidence": "all Report 369 artifacts exist",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "lineage_to_schedule_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "lineage_to_apprenticeship_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "lineage_to_trade_route_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "lineage_to_safety_custom_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "ordinary_affordance_pressure_binding",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "same_law_divergent_civilization_pressure",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "source_trace_integrity",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "no_predeclared_device_tree",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "archived_failure_affects_safety",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_shell_state_wired",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_shell_not_panel_only",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "browser_index_wired",
+      "evidence": "metric=1.0",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "ablations_degrade_relevant_channels",
+      "evidence": "ablations=[{'ablation': 'no_schedule_rewrite', 'mean_score': 0.833333, 'degraded_metrics': 'lineage_to_schedule_binding;ordinary_affordance_pressure_binding'}, {'ablation': 'no_apprenticeship', 'mean_score': 0.916667, 'degraded_metrics': 'lineage_to_apprenticeship_binding'}, {'ablation': 'no_trade_routes', 'mean_score': 0.916667, 'degraded_metrics': 'lineage_to_trade_route_binding'}, {'ablation': 'no_safety_customs', 'mean_score': 0.833333, 'degraded_metrics': 'lineage_to_safety_custom_binding;archived_failure_affects_safety'}, {'ablation': 'no_ordinary_choice', 'mean_score': 0.916667, 'degraded_metrics': 'ordinary_affordance_pressure_binding'}, {'ablation': 'no_source_links', 'mean_score': 0.916667, 'degraded_metrics': 'source_trace_integrity'}, {'ablation': 'no_lineage_divergence', 'mean_score': 0.916667, 'degraded_metrics': 'same_law_divergent_civilization_pressure'}]",
+      "passed": true,
+      "score": 1.0
+    },
+    {
+      "criterion": "boundary_preserved",
+      "evidence": "Browser-local civilization-pressure integration only. Long-horizon belief lineage may rewrite ordinary schedules, apprenticeships, trade routes, safety customs, resources, and bounded resident choices while preserving source belief IDs. No LLM call, no subjective-consciousness claim, no moral-patienthood claim, no real civilization claim, and no predeclared device tree.",
+      "passed": true,
+      "score": 1.0
+    }
+  ],
+  "generated_at": "2026-06-19T05:57:03.995010+00:00",
+  "metrics": {
+    "apprenticeship_count": 15,
+    "archived_failure_affects_safety": 1.0,
+    "browser_index_wired": 1.0,
+    "browser_shell_not_panel_only": 1.0,
+    "browser_shell_state_wired": 1.0,
+    "criterion_count": 17,
+    "lineage_to_apprenticeship_binding": 1.0,
+    "lineage_to_safety_custom_binding": 1.0,
+    "lineage_to_schedule_binding": 1.0,
+    "lineage_to_trade_route_binding": 1.0,
+    "no_predeclared_device_tree": 1.0,
+    "ordinary_affordance_pressure_binding": 1.0,
+    "ordinary_choice_count": 32,
+    "outcome_diversity": 5,
+    "readiness": 1.0,
+    "safety_custom_count": 23,
+    "same_law_divergent_civilization_pressure": 1.0,
+    "schedule_rewrite_count": 32,
+    "seed_count": 8,
+    "source_trace_integrity": 1.0,
+    "trade_route_count": 24,
+    "weakest_channel_score": 1.0
+  },
+  "next_gate": "post-369: make practical discovery emerge from repeated lived browser actions instead of report artifacts, with residents proposing new tests from everyday bottlenecks and no predeclared invention list",
+  "outcome_counts": {
+    "archive_school_lineage": 1,
+    "material_route_shift": 1,
+    "safety_taboo_lineage": 1,
+    "stalled_rival_theories": 3,
+    "useful_wrong_custom": 2
+  },
+  "report": 369,
+  "slug": "ssrm_3d_browser_world_v129_civilization_pressure_integration_bridge",
+  "verdict": "pass"
+}
